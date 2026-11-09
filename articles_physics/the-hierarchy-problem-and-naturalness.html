@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hierarchy Problem and Naturalness — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hierarchy-problem-and-naturalness"><strong>The Hierarchy Problem and Naturalness</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The standing of this article.</strong> Standard physics, and one of the two places where the model is widely agreed to be incomplete from the inside. Nothing here is a framework result. The framework's contribution is stated in one section and consists of a <em>reason for silence</em>, which is worth having only because it is exact.</p>
+<p><strong>The problem in one sentence.</strong> The Higgs mass is the only dimensionful parameter in the model that is not protected by a symmetry, so every heavy particle that couples to the Higgs shifts its mass by an amount proportional to the heavy particle's mass squared, and the measured value requires those shifts to cancel against the bare parameter to one part in $3.0\times10^{32}$ if the cutoff is the Planck scale.</p>
+<p><strong>Three things this article will not do.</strong></p>
+<ul>
+<li>It will not present the quadratic divergence as the problem. The divergence is a regulator artefact: in dimensional regularisation the Standard Model has no quadratic divergence in the scalar mass at all, because there is no gauge-invariant dimension-two operator other than the $\mu^2$ term itself. The physical problem is <strong>sensitivity</strong>, not divergence, and the two are different statements. Section <em>The Divergence Is a Convention</em> separates them.</li>
+<li>It will not claim the framework has a solution. It does not, and section <em>What the Algebra Says</em> gives the exact reason rather than a lament.</li>
+<li>It will not treat naturalness as a theorem. It is a heuristic with one success and at least one conspicuous failure, and section <em>Naturalness Is Not a Theorem</em> states both.</li>
+</ul>
+<p><strong>The four results.</strong></p>
+<ul>
+<li><strong>The sensitivity is real and it is quadratic.</strong> The one-loop shift is $\delta m_H^2=\frac{\Lambda^2}{16\pi^2}(2.49)$, the coefficient being the sum of a gauge part $0.239$, a top part $1.476$ and a quartic part $0.774$. The top dominates, as it does everywhere in the scalar sector.</li>
+<li><strong>The tuning is $\Lambda^2$-scaled and the stable window is narrow.</strong> $\Lambda=1$ TeV costs nothing; $\Lambda=10$ TeV costs a factor $10^2$; $\Lambda=M_{\mathrm{Pl}}$ costs $10^{32}$. Radiative stability requires new physics within about $8$ Higgs masses, that is around $1$ TeV.</li>
+<li><strong>Three standard responses exist, and each has a measured cost.</strong> Supersymmetry needs stops below about $1$ TeV to keep the tuning under $10\%$, and the LHC has not found them. Compositeness needs $f\lesssim1$ TeV for the same, and has not been found either. The landscape needs no new physics and cannot be tested by the same means.</li>
+<li><strong>The framework's answer is that it has no cutoff, and therefore no quadratic sensitivity, and therefore nothing to say.</strong> That is not a solution; it is a statement that the problem is imported whole. But it comes with one structural observation that is worth the section: a dimensionless algebra cannot generate a dimensionful parameter by itself, which is exactly the statement <a href="hadron-structure-from-qcd-the-bound-state-problem.html">the hadron article</a> made about $\Lambda_{\mathrm{QCD}}$ — and there, the mechanism exists and is non-perturbative, while here it does not exist at all.</li>
+</ul>
+<p><strong>The order.</strong> The sensitivity, then the divergence convention, then the tuning, then the stability window, then why only the scalar, then the three responses, then the fourth that failed, then what the algebra says, then the status of naturalness, then what a solution would look like, then the ledger.</p>
+<h2 id="the-quadratic-sensitivity">The Quadratic Sensitivity</h2>
+<p><strong>The one-loop result.</strong> Couple the Higgs to a heavy state of mass $M$ with coupling $c$. The diagram that renormalises the Higgs mass gives</p>
+<p>$$
+\delta m_H^2=\frac{c}{16\pi^2}\left[\Lambda^2-2M^2\ln\frac{\Lambda}{M}+\dots\right] ,
+$$</p>
+<p>and the same result is obtained by computing the heavy state's contribution to the vacuum energy and differentiating twice with respect to the Higgs field. The quadratic term is the problem, and the logarithmic term is the part that survives in a cutoff-free scheme.</p>
+<p><strong>The three contributions in the Standard Model, with coefficients.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Coupling</th>
+<th>Coefficient $c$</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gauge bosons</td>
+<td>$\tfrac94 g^2$</td>
+<td>$0.239$</td>
+<td>$9.6\%$</td>
+</tr>
+<tr>
+<td>Top quark</td>
+<td>$3y_t^2$</td>
+<td>$1.476$</td>
+<td>$59.3\%$</td>
+</tr>
+<tr>
+<td>Higgs quartic</td>
+<td>$6\lambda$</td>
+<td>$0.774$</td>
+<td>$31.1\%$</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>—</td>
+<td>$2.489$</td>
+<td>$100\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The coefficients use $g=0.652$, $y_t=m_t/v=172.7/246.22=0.7014$ and $\lambda=0.1291$. The top's contribution is $59\%$ of the total, which is the same fact as in the running of $\lambda$ and in the vacuum stability condition: the top coupling dominates every question about the scalar sector.</p>
+<p><strong>The physical reading, without a cutoff.</strong> Take the Standard Model to be valid up to a scale $\Lambda$ and ask what happens to the Higgs mass when a state of mass $M\sim\Lambda$ is integrated out. The answer is a shift of order $\Lambda^2/16\pi^2$, whatever the regularisation. So the question "why is the Higgs mass so much smaller than the scale of whatever comes next" is a question about <strong>heavy states</strong>, not about infinities.</p>
+<p><strong>The statement in the framework's language, stated early so it is not mistaken for a result.</strong> A mass shift proportional to $\Lambda^2$ is a statement about a <em>cutoff</em>, and a cutoff is a property of a regularisation. The algebra has no measure on field space and therefore no cutoff. So the calculation above cannot be performed inside the framework at all. That is not an evasion: it means the framework is a language for the theory below the cutoff, and the problem lives in the relation between that theory and whatever is above it.</p>
+<h2 id="the-divergence-is-a-convention-the-sensitivity-is-not">The Divergence Is a Convention; the Sensitivity Is Not</h2>
+<p><strong>The distinction, which popular accounts usually lose.</strong> Compute the one-loop scalar mass in dimensional regularisation:</p>
+<p>$$
+\delta m_H^2=\frac{c}{16\pi^2}M^2\left[\frac{2}{\epsilon}-\gamma+\ln\frac{4\pi\mu^2}{M^2}\right] ,
+$$</p>
+<p>with <strong>no $\Lambda^2$ term at all</strong>. The reason is structural: the only gauge-invariant operator of dimension two that can renormalise the Higgs mass is $\phi^{\dagger}\phi$ itself, so the divergence must be proportional to $\mu^2$ and not to a cutoff. In a cutoff scheme the quadratic term appears; in dim reg it does not; and the two schemes describe the same physics.</p>
+<p><strong>So what is the problem?</strong> Two things, and neither is the divergence.</p>
+<ul>
+<li><strong>Sensitivity.</strong> If a heavy particle of mass $M$ couples to the Higgs with coupling $c$, the physical Higgs mass is $m_H^2=m_{H,0}^2+\frac{c}{16\pi^2}M^2+\dots$, and the heavy scale must cancel against the bare parameter. This statement is scheme-independent: it is about the <em>derivative</em> of the Higgs mass with respect to a heavy mass, and that derivative is legitimately large.</li>
+<li><strong>The naturalness criterion.</strong> A theory is natural if $\delta m_H^2\lesssim m_H^2$ for all states that are actually integrated out. This is a criterion on the <em>spectrum</em>, not on a divergence.</li>
+</ul>
+<p><strong>Why the distinction matters for this article.</strong> An article that presented the quadratic divergence as the problem would be making a statement that a dim-reg calculation refutes, and the corpus's discipline forbids that. The honest form is: the divergence is a convention, the sensitivity is a fact about heavy states, and the fact is what generates the tuning numbers below.</p>
+<p><strong>The one place the cutoff reappears.</strong> If gravity is included, the Planck scale is a physical cutoff, and the quadratic term becomes physical because Planck-scale states couple to the Higgs with gravitational strength. Then $\Lambda=M_{\mathrm{Pl}}$ is not a convention. This is why the problem is usually stated with the Planck scale rather than with an arbitrary $\Lambda$, and it is the version this article quotes.</p>
+<p><strong>A note on the standard statement's size.</strong> With the total coefficient $2.489$,</p>
+<p>$$
+\delta m_H^2=\frac{2.489}{16\pi^2}\left(1.22\times10^{19}\right)^2=2.35\times10^{36}\ \mathrm{GeV}^2 ,
+$$</p>
+<p>against $m_H^2/2=7.82\times10^{3}\ \mathrm{GeV}^2$. The ratio is $3.0\times10^{32}$.</p>
+<h2 id="the-fine-tuning-stated-exactly">The Fine Tuning, Stated Exactly</h2>
+<p><strong>The definition.</strong> With $\Delta$ the tuning,</p>
+<p>$$
+\Delta=\frac{\lvert\delta m_H^2\rvert}{m_H^2} ,
+\qquad
+\text{tuning fraction}=\frac{1}{\Delta} .
+$$</p>
+<p><strong>The table, which is the article's central computation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\Lambda$</th>
+<th>$\Lambda^2$ (GeV$^2$)</th>
+<th>$\delta m_H^2$ (GeV$^2$)</th>
+<th>$\delta m_H^2/m_H^2$</th>
+<th>$1/\Delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$ TeV</td>
+<td>$1.0\times10^{6}$</td>
+<td>$1.58\times10^{4}$</td>
+<td>$1.01$</td>
+<td>$0.99$</td>
+</tr>
+<tr>
+<td>$2$ TeV</td>
+<td>$4.0\times10^{6}$</td>
+<td>$6.30\times10^{4}$</td>
+<td>$4.03$</td>
+<td>$0.25$</td>
+</tr>
+<tr>
+<td>$5$ TeV</td>
+<td>$2.5\times10^{7}$</td>
+<td>$3.94\times10^{5}$</td>
+<td>$25.2$</td>
+<td>$0.040$</td>
+</tr>
+<tr>
+<td>$10$ TeV</td>
+<td>$1.0\times10^{8}$</td>
+<td>$1.58\times10^{6}$</td>
+<td>$101$</td>
+<td>$9.9\times10^{-3}$</td>
+</tr>
+<tr>
+<td>$10^{5}$ GeV</td>
+<td>$1.0\times10^{10}$</td>
+<td>$1.58\times10^{8}$</td>
+<td>$1.01\times10^{4}$</td>
+<td>$9.9\times10^{-5}$</td>
+</tr>
+<tr>
+<td>$10^{11}$ GeV</td>
+<td>$1.0\times10^{22}$</td>
+<td>$1.58\times10^{20}$</td>
+<td>$1.01\times10^{16}$</td>
+<td>$9.9\times10^{-17}$</td>
+</tr>
+<tr>
+<td>$M_{\mathrm{Pl}}$</td>
+<td>$1.49\times10^{38}$</td>
+<td>$2.35\times10^{36}$</td>
+<td>$1.50\times10^{32}$</td>
+<td>$6.7\times10^{-33}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How to read it.</strong> The first row is the statement that new physics at $1$ TeV costs nothing: the shift is the same size as the mass. The fourth row is the statement that new physics at $10$ TeV costs one part in a hundred. The seventh is one part in $3\times10^{32}$.</p>
+<p><strong>What the tuning is not.</strong> It is not a probability. A small $\Delta$ does not mean the value is unlikely; it means that a small change in the input produces a large change in the output, and that a theory which produces $m_H$ from a cancellation is one whose parameters must be tuned. The distinction matters for the landscape discussion below, where the same number is read as a selection effect.</p>
+<p><strong>The comparison with the other fine tuning.</strong> The cosmological constant requires $10^{120}$; this requires $10^{32}$. Both are "fine tunings", and the corpus records them as different problems with different orders of magnitude rather than as one problem, because the mechanisms proposed for the two are not the same.</p>
+<h2 id="the-radiative-stability-criterion">The Radiative Stability Criterion</h2>
+<p><strong>The question.</strong> At what $\Lambda$ does the shift equal the mass itself?</p>
+<p>$$
+\frac{2.489}{16\pi^2}\Lambda^2=m_H^2
+\quad\Longrightarrow\quad
+\Lambda=\sqrt{\frac{16\pi^2}{2.489}}\,m_H=8.0\,m_H=996\ \mathrm{GeV}=4.05\,v .
+$$</p>
+<p><strong>The window, and its narrowness.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>$\Lambda$</th>
+<th>Physical statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta m_H^2=m_H^2/10$</td>
+<td>$315$ GeV</td>
+<td>Uncomfortably close to $m_H$</td>
+</tr>
+<tr>
+<td>$\delta m_H^2=m_H^2$</td>
+<td>$996$ GeV</td>
+<td>The stability edge</td>
+</tr>
+<tr>
+<td>$\delta m_H^2=10\,m_H^2$</td>
+<td>$3.15$ TeV</td>
+<td>One part in ten tuning</td>
+</tr>
+<tr>
+<td>$\delta m_H^2=100\,m_H^2$</td>
+<td>$9.96$ TeV</td>
+<td>One part in a hundred</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the statement is: <strong>new physics should be within a factor of four of the weak scale</strong>, and a $10\%$ tuning allows at most a factor of thirteen.</p>
+<p><strong>Why this is the number the LHC was built to test.</strong> The window is above the reach of LEP (which excluded new physics below $100$ GeV by the $Z$ width) and below a few TeV (which the LHC reaches). The LHC found the Higgs and found nothing else. So the natural window is now <em>closed to the extent that no new state couples to the Higgs above about $1$–$2$ TeV</em>, and that is the precise form of the hierarchy problem as it stands in 2026.</p>
+<p><strong>What could still be there.</strong> States with small couplings to the Higgs — a hidden sector, a heavy singlet, a state whose coupling is suppressed by a symmetry — shift the mass less than the estimate and are not excluded. This is a real loophole and it is why the problem is stated as a tension rather than a refutation.</p>
+<h2 id="why-only-the-scalar">Why Only the Scalar</h2>
+<p><strong>The three cases, compared.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field type</th>
+<th>Mass term</th>
+<th>Protected by</th>
+<th>Shift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fermion</td>
+<td>$m\bar\psi\psi$</td>
+<td>Chiral symmetry</td>
+<td>$\delta m\propto m\ln\Lambda$ — proportional to the mass</td>
+</tr>
+<tr>
+<td>Gauge boson</td>
+<td>$\tfrac12m^2A_\mu A^\mu$</td>
+<td>Gauge symmetry</td>
+<td>Forbidden while massless; protected after breaking</td>
+</tr>
+<tr>
+<td>Scalar</td>
+<td>$m^2\phi^{\dagger}\phi$</td>
+<td>Nothing</td>
+<td>$\delta m^2\propto\Lambda^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mechanism of protection, stated once.</strong> A symmetry that forbids the mass term also forbids its radiative correction, because the correction must respect the symmetry of the Lagrangian. Chiral symmetry forbids $m\bar\psi\psi$ for a massless fermion, so the correction must be proportional to the mass — a fermion mass is <em>technically natural</em>: setting it to zero is stable under renormalisation. Gauge symmetry forbids $m^2A^2$, so a gauge boson mass is natural in the same sense.</p>
+<p><strong>The scalar has no such protection.</strong> $\phi^{\dagger}\phi$ is a singlet under every symmetry of the Standard Model, so no symmetry forbids it, and no symmetry can forbid its correction. This is the whole content of the hierarchy problem: it is a statement about the absence of a symmetry, and it is exact in that form.</p>
+<p><strong>The framework's reading, which is a real observation and a small one.</strong> The algebra distinguishes the three cases in a way that matches: the fermion mass is a parameter of a chiral pair's mixing, and the mixing is what chiral symmetry forbids; the vector mass is a parameter of the metric structure, and the massless case is the natural one; the scalar mass is a parameter of a potential, and a potential is the one object with no derivational origin in the algebra at all. So the framework exhibits the asymmetry — it does not explain it.</p>
+<h2 id="response-one-supersymmetry">Response One: Supersymmetry</h2>
+<p><strong>The idea.</strong> Pair every Standard Model state with a superpartner of the opposite statistics. The scalar's quadratic shift from a loop of fermions is then cancelled by the loop of the corresponding scalars, because the coupling is the same and the sign is opposite.</p>
+<p><strong>The cancellation, in one line.</strong> For each multiplet,</p>
+<p>$$
+\delta m_H^2\propto\left(m_B^2-m_F^2\right) ,
+$$</p>
+<p>so the shift vanishes exactly when supersymmetry is unbroken. Breaking it at scale $M_{\mathrm{SUSY}}$ leaves $\delta m_H^2\sim\frac{c}{16\pi^2}\left(M_{\mathrm{SUSY}}^2-m_{\mathrm{SM}}^2\right)$: the tuning is now a tuning on the <em>superpartner</em> masses.</p>
+<p><strong>The numbers, and the two problems.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$m_{\tilde t}$</th>
+<th>$\delta m_H^2$ (GeV$^2$)</th>
+<th>$\Delta$</th>
+<th>$1/\Delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$500$ GeV</td>
+<td>$1.40\times10^{4}$</td>
+<td>$0.89$</td>
+<td>$1.12$</td>
+</tr>
+<tr>
+<td>$750$ GeV</td>
+<td>$2.72\times10^{4}$</td>
+<td>$1.74$</td>
+<td>$0.58$</td>
+</tr>
+<tr>
+<td>$1$ TeV</td>
+<td>$4.30\times10^{4}$</td>
+<td>$2.75$</td>
+<td>$0.36$</td>
+</tr>
+<tr>
+<td>$2$ TeV</td>
+<td>$1.20\times10^{5}$</td>
+<td>$7.69$</td>
+<td>$0.13$</td>
+</tr>
+<tr>
+<td>$5$ TeV</td>
+<td>$3.24\times10^{5}$</td>
+<td>$20.7$</td>
+<td>$0.048$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So a stop below $1$ TeV keeps the tuning under $30\%$, and a stop at $5$ TeV costs a factor of twenty. The LHC's stop searches reach about $1.2$–$1.3$ TeV in favourable topologies and have found nothing, so the natural region is excluded for the simplest models.</p>
+<p><strong>The second problem, which is independent.</strong> In the minimal supersymmetric Standard Model the quartic is fixed by the gauge couplings,</p>
+<p>$$
+m_h^2=M_Z^2\cos^2 2\beta
+\quad\Longrightarrow\quad
+m_h\le M_Z=91.2\ \mathrm{GeV}\ \text{at tree level},
+$$</p>
+<p>against a measured $125.09$ GeV. So the model requires large loop corrections from heavy stops to reach the measured mass, and those corrections are exactly the ones that reintroduce the tuning. The two requirements pull in opposite directions: <em>raise</em> $m_h$ needs heavy stops, <em>naturalness</em> needs light ones. This tension, not the absence of a discovery by itself, is what has made minimal supersymmetry uncomfortable.</p>
+<p><strong>What survives.</strong> Split supersymmetry, in which the scalars are heavy and the gauginos light, gives up naturalness for the scalar mass and keeps the gauge-coupling unification and the dark matter candidate. It is a coherent position and it concedes the point.</p>
+<h2 id="response-two-compositeness-and-the-pseudo-goldstone">Response Two: Compositeness and the Pseudo-Goldstone</h2>
+<p><strong>The idea.</strong> If the Higgs is not elementary but a bound state of a new strong interaction at scale $f$, then its mass is not a fundamental parameter: it is generated by the strong dynamics, in the same way that the pion mass is generated by the quark masses and the nucleon mass by $\Lambda_{\mathrm{QCD}}$. The quadratic sensitivity is then cut off at $f$, and the Higgs is a light composite because it is a pseudo-Goldstone boson of an approximate symmetry.</p>
+<p><strong>Why pseudo-Goldstone is the load-bearing part.</strong> A generic composite scalar has mass of order $f$, which is too heavy. A Goldstone boson has mass exactly zero, protected by the shift symmetry; breaking the symmetry explicitly and weakly gives a mass suppressed by the breaking, and the Standard Model's $v/f$ plays the role of that suppression:</p>
+<p>$$
+m_H^2\sim\frac{g_{\mathrm{strong}}^2}{16\pi^2}f^2\times\left(\frac{v}{f}\right)^{2}\quad\text{in the little-Higgs form,}
+\qquad
+\Delta\sim\left(\frac{f}{v}\right)^{2} .
+$$</p>
+<p><strong>The numbers.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$f$</th>
+<th>$v/f$</th>
+<th>$\Delta=(f/v)^2$</th>
+<th>$1/\Delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$500$ GeV</td>
+<td>$0.492$</td>
+<td>$4.1$</td>
+<td>$0.24$</td>
+</tr>
+<tr>
+<td>$800$ GeV</td>
+<td>$0.308$</td>
+<td>$10.6$</td>
+<td>$0.095$</td>
+</tr>
+<tr>
+<td>$1$ TeV</td>
+<td>$0.246$</td>
+<td>$16.5$</td>
+<td>$0.061$</td>
+</tr>
+<tr>
+<td>$3$ TeV</td>
+<td>$0.082$</td>
+<td>$148$</td>
+<td>$0.007$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So $f$ must be within a factor of two of the weak scale for a $10\%$ tuning, and the LHC's exclusion of vector-like quarks and of $W'$-like resonances below about $1.5$–$2$ TeV pushes $f$ up. The same tension as supersymmetry: the natural region is the excluded region.</p>
+<p><strong>The connection to this corpus, stated because it is exact.</strong> Compositeness is precisely the mechanism <a href="hadron-structure-from-qcd-the-bound-state-problem.html">the hadron article</a> described for the proton: a mass generated by strong dynamics, non-perturbatively, with no dimensionful parameter in the Lagrangian. The difference is that the QCD case has a known dynamics and the electroweak case does not. The framework hosts the QCD mechanism in principle and does not host a second strong sector, which is the subject of the next section.</p>
+<h2 id="response-three-the-landscape">Response Three: The Landscape</h2>
+<p><strong>The idea.</strong> If the underlying theory has many vacua with different values of the Higgs mass parameter, and if the value is selected by the requirement that structure forms, then the smallness is a selection effect and not a cancellation.</p>
+<p><strong>The argument's form.</strong> Weinberg's original version was for the cosmological constant: a universe with a much larger vacuum energy does not form galaxies, so observers find themselves in a small one. The Higgs version is the same: a much larger $m_H^2$ means a much larger $v$, and a $v$ far above the weak scale gives a universe with no stable nuclei or no atoms.</p>
+<p><strong>What makes it different from the other two.</strong> It predicts no new particles. So it cannot be tested by the LHC, and the three responses are not three candidate theories competing on the same data — two predict new states and one does not. That asymmetry is the reason the field's disagreement is not resolvable by the next collider alone.</p>
+<p><strong>The honest assessment, in three parts.</strong></p>
+<ul>
+<li>The landscape is <strong>not</strong> excluded. If the string landscape exists, the number $10^{32}$ is not a tuning but a probability, and the corpus has no argument against it.</li>
+<li>The landscape is <strong>not</strong> a solution in the sense the other two are: it does not explain <em>why</em> $m_H$ has its value, it explains why we see it.</li>
+<li>The landscape requires the anthropic step, and the anthropic step requires a measure on the space of vacua. The measure is not known, and without it the argument does not make quantitative predictions that could fail.</li>
+</ul>
+<p><strong>Why this belongs in a corpus about an algebra.</strong> Because the framework has no measure either, and for the same reason: a measure requires a space to integrate over, and neither the algebra nor the landscape argument supplies one. Two positions that share a defect are not thereby both right, but the parallel is worth stating: the framework's silence on $m_H$ and the landscape's answer to it come from the same missing object.</p>
+<h2 id="a-fourth-that-failed-the-veltman-condition">A Fourth That Failed: the Veltman Condition</h2>
+<p><strong>The idea.</strong> If the sum of the coefficients of the quadratic divergences vanishes, the quadratic sensitivity cancels among Standard Model states and no new physics is needed.</p>
+<p><strong>The condition and its value.</strong></p>
+<p>$$
+\sum_i c_i=0 ,
+$$</p>
+<p>and from the table above the sum is $2.489$, which is not zero. The condition would be satisfied if the top's contribution were opposite and equal to the rest, which requires</p>
+<p>$$
+3y_t^2=0.239+0.774=1.013
+\quad\Longrightarrow\quad
+m_t=143\ \mathrm{GeV},
+$$</p>
+<p>against a measured $172.7$ GeV. The condition fails by $20\%$ in the mass, that is by $45\%$ in the squared coupling.</p>
+<p><strong>Why the failure is informative rather than embarrassing.</strong> It shows that the quadratic terms do not cancel accidentally in the Standard Model, so there is no hidden mechanism already present. It also shows that the condition is a <em>fine tuning of a different kind</em>: it is one equation on the parameters, and it is not satisfied. A framework that wanted to solve the hierarchy problem by a cancellation among Standard Model states would have to explain why this particular combination vanishes, and nothing does.</p>
+<p><strong>The general lesson.</strong> Naturalness conditions are equations, and equations can be checked. The Veltman condition is the cleanest case in the corpus of a naturalness proposal that is <em>arithmetically</em> refuted rather than merely unfound, and it is worth keeping for that reason.</p>
+<h2 id="what-the-algebra-says">What the Algebra Says</h2>
+<p><strong>The answer, in one sentence, then the reason.</strong> It says nothing about the tuning, and the reason it says nothing is exact: the quadratic sensitivity is a statement about a cutoff, a cutoff is a property of a regularisation, the algebra has no measure on field space, and therefore the framework has no cutoff to be sensitive.</p>
+<p><strong>The three parts of that statement, separated.</strong></p>
+<ul>
+<li><strong>No measure.</strong> <a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The gauge-group ceiling article</a> and <a href="lattice-gauge-theory-and-the-biquaternion-path-integral.html">the lattice article</a> record between them that the path integral over $\mathbb{B}$-valued fields is a formal object, that the fermionic measure is not an algebraic operation, and that a cutoff is imposed from outside. So the framework's loop integrals are not defined and the quadratic term cannot be computed in it.</li>
+<li><strong>No second strong sector.</strong> Compositeness requires a new confining dynamics at $f\sim1$ TeV. The framework has exactly one strong sector available — the imported $SU(3)$ — and no second one. <a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The ceiling</a> is the reason: no compact gauge algebra of dimension above four, so no second confining group.</li>
+<li><strong>No vacuum selection.</strong> A landscape requires a space of vacua with a measure. The algebra has one vacuum, the identity of the field algebra, and no family of them.</li>
+</ul>
+<p><strong>The one structural observation that is not silence.</strong> A dimensionless algebra cannot generate a dimensionful parameter by itself. <a href="hadron-structure-from-qcd-the-bound-state-problem.html">The hadron article</a> established this and then established the resolution: QCD generates $\Lambda_{\mathrm{QCD}}$ non-perturbatively, by dimensional transmutation, with an essential singularity at $\alpha_s=0$. The electroweak sector has the same logical gap and no such mechanism. The Higgs mass is a <em>parameter</em>, not an anomaly's matrix element, and no trace anomaly generates it.</p>
+<p><strong>Why the contrast is the article's one real contribution.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Dimensionful quantity</th>
+<th>Origin</th>
+<th>Framework's role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QCD</td>
+<td>$\Lambda_{\mathrm{QCD}}=195$ MeV</td>
+<td>Dimensional transmutation, non-perturbative</td>
+<td>Hosts the mechanism; cannot compute it</td>
+</tr>
+<tr>
+<td>Electroweak</td>
+<td>$v=246$ GeV</td>
+<td>A parameter of a potential, tuned</td>
+<td>Hosts the potential; has no mechanism</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two look like the same problem and are not. QCD's scale <em>is</em> generated and the generation is understood in principle. The electroweak scale is <em>not</em> generated, and the tuning is the statement that the model provides no generation. That is a sharper statement of the hierarchy problem than "the scalar mass is quadratically divergent", and it is the one the framework's structure makes visible.</p>
+<h2 id="naturalness-is-not-a-theorem">Naturalness Is Not a Theorem</h2>
+<p><strong>The status of the criterion.</strong> Naturalness is a heuristic: it asserts that dimensionless ratios should not be much smaller than the loop factors that generate them. It is not a theorem, it is not a symmetry, and it does not follow from any axiom.</p>
+<p><strong>The one clear success.</strong> <a href="meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html">The closure article</a> records it: GIM is a naturalness argument in a different guise. A loop of generation-universal couplings had to cancel, and the cancellation required a fourth quark with a specified coupling pattern. The prediction was right. This is the strongest evidence that the heuristic works.</p>
+<p><strong>The one clear failure.</strong> Supersymmetry at the weak scale was the prediction of the same heuristic applied to the scalar mass. The LHC did not find it. So the heuristic has been right once and wrong once, and the score is $1$–$1$ rather than decisive.</p>
+<p><strong>Two ways it could be wrong in principle.</strong></p>
+<ul>
+<li><strong>Selection.</strong> If there are many vacua, a small ratio is not tuned, it is selected. The heuristic then has no force because the ensemble is not the one it assumes.</li>
+<li><strong>Structure.</strong> The criterion assumes that the parameters are independent inputs. If the underlying theory relates them — if $m_H$ is a function of the same quantity that sets $M_{\mathrm{Pl}}$ — then the ratio is not tuned but computed, and the heuristic is measuring the wrong thing.</li>
+</ul>
+<p><strong>The corpus's position.</strong> Record the tension, state the criterion's status, and do not use naturalness as evidence for or against anything. <a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The parameter-count article</a> already established that the framework's defence is geometric rather than numerical; a naturalness argument would be a numerical defence, and the framework cannot mount one.</p>
+<p><strong>Why this section is necessary rather than decorative.</strong> A reader who has been told that the hierarchy problem is "the deepest problem in physics" will read a framework that is silent on it as deficient. The honest answer is that a heuristic is silent because it is a heuristic, and that the corpus's own standard — state the number, state its error, do not narrate — applies to naturalness as much as to a rare-decay anomaly.</p>
+<h2 id="what-a-solution-would-look-like">What a Solution Would Look Like</h2>
+<p><strong>Three grades, matching the framework the parameter-count article established.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Criterion</th>
+<th>Would it settle the problem?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A mechanism</td>
+<td>A symmetry, a dynamics or a selection principle that fixes $m_H/v$</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>A relation</td>
+<td>$m_H$ computed from another parameter</td>
+<td>Yes, if the relation is measured</td>
+</tr>
+<tr>
+<td>A cancellation</td>
+<td>An arithmetic condition satisfied by the spectrum</td>
+<td>Only if a reason for it is given</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four candidate mechanisms, and their measured status.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Predicts</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supersymmetry</td>
+<td>Superpartners below $\sim1$ TeV</td>
+<td>Not found; natural region excluded for minimal models</td>
+</tr>
+<tr>
+<td>Compositeness</td>
+<td>Resonances at $f\lesssim1$ TeV</td>
+<td>Not found; $f$ pushed above $1.5$–$2$ TeV</td>
+</tr>
+<tr>
+<td>Extra dimensions</td>
+<td>Kaluza–Klein states</td>
+<td>Not found</td>
+</tr>
+<tr>
+<td>Landscape</td>
+<td>Nothing</td>
+<td>Untestable at colliders</td>
+</tr>
+<tr>
+<td>Veltman</td>
+<td>$m_t=143$ GeV</td>
+<td>Refuted, $m_t=172.7$ GeV</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the corpus would accept as a solution.</strong> A statement that makes $m_H/v$ a function of quantities already in the nineteen, at the second grade, with a measured consequence. No such statement exists, in the framework or outside it, and the article says so in the same register it uses for the $\varepsilon'/\varepsilon$ tension: this is open, it is not a scandal, and it is not the framework's fault or its merit.</p>
+<p><strong>What would change the picture.</strong> A new state coupled to the Higgs below a few TeV, which would reopen the natural window. Or a demonstration that the landscape measure exists and is calculable, which would close the question in the other direction. Neither is in hand.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<p><strong>One structural contrast and a declared silence.</strong></p>
+<p><strong>Supplied.</strong> The observation that the electroweak scale and the QCD scale are different <em>kinds</em> of problem: the first is generated and the second is not, and the framework's structure makes the distinction visible because it hosts the first mechanism (dimensional transmutation, per <a href="hadron-structure-from-qcd-the-bound-state-problem.html">the hadron article</a>) and has no counterpart of it for the second. The observation that the scalar is the only field type whose mass term has no symmetry to forbid it, which the algebra's own organisation reproduces without explaining.</p>
+<p><strong>Not supplied, by declaration.</strong> No cutoff, because no measure. No second confining sector, because of the ceiling. No family of vacua, because the algebra has one. No mechanism relating $m_H$ to any other parameter.</p>
+<p><strong>The ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta m_H^2=\frac{c}{16\pi^2}\Lambda^2$</td>
+<td><strong>Imported</strong> one-loop result</td>
+</tr>
+<tr>
+<td>The coefficients $0.239$, $1.476$, $0.774$, sum $2.489$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The divergence-against-sensitivity distinction</td>
+<td><strong>This article's</strong> argument; the dim-reg statement imported</td>
+</tr>
+<tr>
+<td>$\delta m_H^2=2.35\times10^{36}$ GeV$^2$ at $M_{\mathrm{Pl}}$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The tuning table, $10^{32}$ at $M_{\mathrm{Pl}}$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>$\Lambda_{\mathrm{stable}}=996$ GeV $=8.0\,m_H$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>Chiral and gauge protection of fermion and vector masses</td>
+<td><strong>Imported</strong></td>
+</tr>
+<tr>
+<td>The MSSM bound $m_h\le M_Z$</td>
+<td><strong>Imported</strong>; the number $91.2$ GeV quoted</td>
+</tr>
+<tr>
+<td>The stop-tuning table</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The composite tuning $(f/v)^2$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The landscape argument</td>
+<td><strong>Imported</strong>; its status assessed here</td>
+</tr>
+<tr>
+<td>The Veltman condition and $m_t=143$ GeV</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The QCD-versus-electroweak contrast</td>
+<td><strong>Framework</strong> reading, resting on the hadron article</td>
+</tr>
+<tr>
+<td>Naturalness as a heuristic, $1$–$1$</td>
+<td><strong>This article's</strong> assessment</td>
+</tr>
+<tr>
+<td>A mechanism for $m_H/v$</td>
+<td><strong>Not available</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this article does not do.</strong> It does not compute a two-loop shift, does not survey supersymmetric models, does not evaluate a landscape measure, and does not propose a solution. It computes the tuning, states the criterion's status, and gives the exact reason for the framework's silence.</p>
+<h2 id="summary">Summary</h2>
+<p>The Higgs mass is the only dimensionful parameter with no symmetry to protect it. Every heavy state coupled to the Higgs shifts it by $\frac{c}{16\pi^2}\Lambda^2$, with coefficients $0.239$ from gauge bosons, $1.476$ from the top and $0.774$ from the quartic, summing to $2.489$.</p>
+<p>The divergence is a convention — dimensional regularisation gives no quadratic term at all — but the sensitivity is not. It is a statement about heavy states, and it produces the tuning: $\Lambda=1$ TeV costs nothing, $10$ TeV costs one part in a hundred, $M_{\mathrm{Pl}}$ costs one part in $3.0\times10^{32}$.</p>
+<p>Radiative stability requires new physics within $8.0$ Higgs masses, that is $996$ GeV or $4.05\,v$, and the LHC's null results have closed that window for states with Standard-Model-like couplings.</p>
+<p>Fermion and gauge masses are protected because a symmetry forbids the mass term and hence its correction. The scalar has no such symmetry, and that is the whole content of the problem.</p>
+<p>Three responses: supersymmetry needs stops below $1$ TeV for $30\%$ tuning, and its tree-level bound $m_h\le91.2$ GeV pulls the other way; compositeness needs $f\lesssim1$ TeV, and its tuning is $(f/v)^2=16.5$ at $f=1$ TeV; the landscape needs no new physics and makes no collider prediction. A fourth, the Veltman condition, is arithmetically refuted: it requires $m_t=143$ GeV against a measured $172.7$.</p>
+<p>The framework has no cutoff — no measure — so the quadratic term cannot be computed in it, and it has no second confining sector and no family of vacua. Its one contribution is the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, and the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have.</p>
+<p>Naturalness is a heuristic with one success (GIM) and one failure (weak-scale supersymmetry). It is recorded as a heuristic, and the tension is recorded as open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$</td>
+<td>Cutoff, or the scale of new physics</td>
+</tr>
+<tr>
+<td>$\delta m_H^2$</td>
+<td>One-loop shift of the Higgs mass squared</td>
+</tr>
+<tr>
+<td>$c_i$</td>
+<td>Coefficient of the quadratic divergence from source $i$</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>Tuning, $\lvert\delta m_H^2\rvert/m_H^2$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>Higgs quartic, $0.1291$</td>
+</tr>
+<tr>
+<td>$y_t$</td>
+<td>Top Yukawa, $0.7014$</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>Higgs expectation value, $246.22$ GeV</td>
+</tr>
+<tr>
+<td>$f$</td>
+<td>Compositeness scale</td>
+</tr>
+<tr>
+<td>$M_{\mathrm{SUSY}}$, $m_{\tilde t}$</td>
+<td>Supersymmetry breaking scale, stop mass</td>
+</tr>
+<tr>
+<td>$M_{\mathrm{Pl}}$</td>
+<td>Planck mass, $1.22\times10^{19}$ GeV</td>
+</tr>
+<tr>
+<td>$\Lambda_{\mathrm{QCD}}$</td>
+<td>Strong-interaction scale, $\approx195$ MeV</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="hadron-structure-from-qcd-the-bound-state-problem.html">Hadron Structure from QCD: the Bound-State Problem</a>. The other end of the contrast: a scale that <em>is</em> generated, non-perturbatively, with no dimensionful parameter in the Lagrangian.</li>
+<li><a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html">Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge Boson Masses</a>. The potential whose two parameters carry the tuning.</li>
+<li><a href="the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a>. What the framework does represent of the scalar sector, and what it does not.</li>
+<li><a href="electroweak-precision-observables-the-oblique-parameters-s-t-u.html">Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$</a>. How the scalar mass and any new heavy state enter the fit, and why $T$ is the observable that measures them.</li>
+<li><a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. Where $v$ and $M_H$ appear as two of the nineteen, both in the group with no arena.</li>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a>. The running that makes the QCD scale possible, and the contrast the framework's silence on $v$ is measured against.</li>
+<li><a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</a>. Why no second confining sector is available, and hence why compositeness cannot be built here.</li>
+<li><a href="meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html">Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test</a>. GIM as the naturalness argument that worked, and the standard for what "worked" means.</li>
+<li><a href="the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</a>. The top Yukawa that dominates the coefficient.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

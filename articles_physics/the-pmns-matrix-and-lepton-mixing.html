@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The PMNS Matrix and Lepton Mixing — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pmns-matrix-and-lepton-mixing"><strong>The PMNS Matrix and Lepton Mixing</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The standing of this article.</strong> The mixing matrix itself, its parameterisation and its numbers are standard physics, transcribed. What the corpus contributes is the placement: the matrix is an operator on the generation label, and <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">the CKM article</a> already built that operator. This article uses the same construction for the leptons and then reports what the numbers do, which is not the same as what the quark numbers do.</p>
+<p><strong>Why leptons are not the quarks again.</strong> The two mixing matrices are the same kind of object and their values have almost nothing in common. The quark angles are small, $13^\circ$, $2.4^\circ$, $0.2^\circ$, and the CP phase is one part in $10^3$ of a radian's worth of asymmetry. The lepton angles are large, $33^\circ$, $49^\circ$, $8.6^\circ$, and the CP asymmetry is $850$ times larger. An article that presented the PMNS matrix as "the CKM matrix for leptons" would be describing the formalism and missing the phenomenon: the lepton sector mixes <em>maximally</em> where the quark sector mixes <em>hardly at all</em>, and nothing in the framework explains why.</p>
+<p><strong>The claim, in four parts.</strong></p>
+<ul>
+<li><strong>The matrix is a change of basis, and it is the same operator as CKM.</strong> The weak interaction is generation-universal, the mass operators are not, and the matrix is the relative rotation $U=U_e^{\dagger}U_\nu$. The framework supplies the arena $\mathrm{U}(3)$ and the label on which it acts; it does not supply the point in the arena.</li>
+<li><strong>Two angles are near maximal and one is not small.</strong> $\theta_{23}=49^\circ$ is $4^\circ$ from maximal, $\theta_{12}=33.4^\circ$ is $12^\circ$ from maximal but only $2^\circ$ from the tribimaximal value, and $\theta_{13}=8.6^\circ$ — the reactor angle — is the one that broke the tidy patterns. Its measurement in 2012 is why the tribimaximal ansatz is dead.</li>
+<li><strong>The CP asymmetry is large because the angles are large.</strong> $J$ is a product of three sines of angles and one sine of the phase. The quark sector has small angles, so $J$ is small whatever the phase does. Here $J=-0.026$ at the fit value, with a ceiling of $\pm0.033$ at maximal CP violation, which is $850$ times the quark value.</li>
+<li><strong>Two of the six parameters are invisible in oscillation.</strong> The Majorana phases cancel in every oscillation probability, because oscillation measures mass-squared differences and not the mass matrix's phases. They are visible only in lepton-number violation — neutrinoless double beta decay — and that is why that experiment is the one that decides whether the neutrino is its own antiparticle.</li>
+</ul>
+<p><strong>The order.</strong> The matrix and its placement, then the parameterisation and the count six rather than four, then the measured values, then why neutrinos oscillate at all, then the Jarlskog invariant, then what the angles say against the standard patterns, then the mass ordering and the absolute scale, then the Majorana phases, then CP violation and leptogenesis, then the ledger.</p>
+<h2 id="the-matrix-and-where-it-sits">The Matrix and Where It Sits</h2>
+<p><strong>The definition.</strong> The charged-current interaction in the mass basis carries</p>
+<p>$$
+\mathcal{L}_{W}\supset\frac{g}{\sqrt2}W^-_\mu\,\bar e_{L}\gamma^\mu U_{\mathrm{PMNS}}\,\nu_{L}+\text{h.c.},
+\qquad
+U_{\mathrm{PMNS}}=U_e^{\dagger}U_\nu ,
+$$</p>
+<p>where $U_e$ and $U_\nu$ are the unitary matrices that diagonalise the charged-lepton and neutrino mass matrices. It is the same construction as CKM's $V=X_u^{\dagger}X_d$, with the neutrino playing the role of the up-type quark.</p>
+<p><strong>The framework's placement.</strong> <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM article</a> established that the mixing term factorises into the algebra's own charged-current generator and a $*$-unitary operator $V$ on the flavour factor $\mathcal{F}$; the generator is supplied exactly, the operator is an arbitrary element of $\mathrm{U}(N_g)$, and the only requirement is unitarity, which the norm-preserving group of the multiplicity factor provides. The leptonic case is the same term with the down-type field replaced by the neutrino field. The neutrino field's label structure — including the $L$ label on the charged current and the two values of the chirality — is <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">the Majorana article's</a> subject.</p>
+<p><strong>Why the framework cannot give the values, stated precisely.</strong> The gauge interactions are the unit on the labels; the mass operators multiply by a number on the label and leave the element alone. A basis change in flavour space therefore cannot be generated by the gauge sector, and it cannot be generated by the algebra either, because the algebra is simple and has one carrier. So $U_{\mathrm{PMNS}}$ is a coordinate on $\mathrm{U}(3)$ with no dynamical principle selecting it inside the framework. The article says this once and does not repeat it as a lament.</p>
+<h2 id="the-parameterisation-six-numbers-not-four">The Parameterisation: Six Numbers, Not Four</h2>
+<p><strong>The counting.</strong> A general $3\times3$ unitary matrix has $9$ real parameters. Rephasing the three charged-lepton fields removes three, and rephasing the three neutrino fields removes three more, except that one overall phase is unobservable. So the count is</p>
+<p>$$
+9-3-3+1=4
+$$</p>
+<p>physical parameters — <strong>if</strong> the neutrinos are Dirac, because a Dirac field has the same field rephasing freedom as a charged lepton.</p>
+<p><strong>What changes when they are Majorana.</strong> A Majorana mass term $\bar\nu^c\nu$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:</p>
+<p>$$
+4\ \text{Dirac}\quad\longrightarrow\quad 6\ \text{Majorana}
+=
+3\ \text{angles}+1\ \text{Dirac phase}+2\ \text{Majorana phases}.
+$$</p>
+<p>So the number of PMNS parameters is a <strong>direct test of the neutrino's nature</strong>, and it is the cleanest one available: six distinct numbers mean Majorana, four mean Dirac. The catch is that the two extra phases are hard to measure, which is taken up below.</p>
+<p><strong>The standard form.</strong> In the PDG convention,</p>
+<p>$$
+U_{\mathrm{PMNS}}=
+\begin{pmatrix}
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\\
+s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\delta} & c_{23}c_{13}
+\end{pmatrix}
+\times\mathrm{diag}\!\left(1,e^{i\alpha_{21}/2},e^{i\alpha_{31}/2}\right) .
+$$</p>
+<p>The three angles are written as $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$; the Dirac phase $\delta$ sits in one place and only one; and the two Majorana phases $\alpha_{21}$, $\alpha_{31}$ multiply the second and third columns. The factor $\mathrm{diag}(1,\cdot,\cdot)$ is what makes the last two phases unobservable in oscillation and observable in $\beta\beta_{0\nu}$.</p>
+<p><strong>A convention that matters.</strong> The Majorana-phase normalisation is not universal: some texts write $e^{i\alpha}$ rather than $e^{i\alpha/2}$, which shifts every quoted $\alpha$ by a factor of two. This article uses the half-angle form and says so, and any comparison with a table elsewhere must check which is in use. The same discipline that <a href="the-parton-model-and-deep-inelastic-scattering.html">the parton-model article</a> imposed on the plus prescription applies here: the convention belongs in the display, not in a footnote.</p>
+<h2 id="the-measured-values">The Measured Values</h2>
+<p><strong>The angles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Best fit</th>
+<th>$1\sigma$ range</th>
+<th>Maximal value</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sin^2\theta_{12}$</td>
+<td>$0.303$</td>
+<td>$0.29$–$0.32$</td>
+<td>$0.5$</td>
+<td>Solar; $12^\circ$ from maximal, $2^\circ$ from tribimaximal</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_{13}$</td>
+<td>$0.0223$</td>
+<td>$0.021$–$0.024$</td>
+<td>$0.5$</td>
+<td>Reactor; the smallest, and the one that killed the patterns</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_{23}$</td>
+<td>$0.57$</td>
+<td>$0.43$–$0.61$</td>
+<td>$0.5$</td>
+<td>Atmospheric; octant unresolved</td>
+</tr>
+<tr>
+<td>$\delta_{\mathrm{CP}}$</td>
+<td>$\approx-130^\circ$</td>
+<td>broad, CP conservation disfavoured at $2$–$3\sigma$</td>
+<td>$\pm90^\circ$</td>
+<td>The Dirac phase</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The angles in degrees, since degrees are what the comparison needs.</strong></p>
+<p>$$
+\theta_{12}=33.4^\circ ,
+\qquad
+\theta_{13}=8.58^\circ ,
+\qquad
+\theta_{23}=49.0^\circ .
+$$</p>
+<p>The atmospheric angle is $4^\circ$ above maximal; the solar angle is $12^\circ$ below maximal. The reactor angle is $8.6^\circ$, which is two thirds of the Cabibbo angle and, crucially, <strong>not zero</strong>.</p>
+<p><strong>The magnitudes of the matrix itself,</strong> which is what oscillation experiments actually constrain:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\nu_1$</th>
+<th>$\nu_2$</th>
+<th>$\nu_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu_e$</td>
+<td>$0.825$</td>
+<td>$0.545$</td>
+<td>$0.149$</td>
+</tr>
+<tr>
+<td>$\nu_\mu$</td>
+<td>$0.312$</td>
+<td>$0.588$</td>
+<td>$0.746$</td>
+</tr>
+<tr>
+<td>$\nu_\tau$</td>
+<td>$0.470$</td>
+<td>$0.598$</td>
+<td>$0.649$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each row and each column has unit norm, and the check is worth making explicit: the matrix was assembled from the four parameters above and $\lvert UU^{\dagger}-1\rvert$ came out at $1.1\times10^{-16}$, which is double-precision zero. A mixing matrix that fails this test has a missing or doubled phase.</p>
+<p><strong>The mass-squared differences, which are the other half of the data.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+<th>What it sets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Delta m^2_{21}$</td>
+<td>$7.42\times10^{-5}\ \mathrm{eV}^2$</td>
+<td>The solar oscillation length</td>
+</tr>
+<tr>
+<td>$\lvert\Delta m^2_{31}\rvert$</td>
+<td>$2.51\times10^{-3}\ \mathrm{eV}^2$</td>
+<td>The atmospheric oscillation length</td>
+</tr>
+<tr>
+<td>Ratio</td>
+<td>$33.8$</td>
+<td>Why two very different lengths appear</td>
+</tr>
+</tbody>
+</table></div>
+<p>The ratio is $33.8$, so the two oscillation lengths differ by a factor of thirty-four and can be separated experimentally. This is the reason a three-neutrino fit is possible at all: with $\Delta m^2_{21}$ and $\Delta m^2_{31}$ comparable, one experiment could not resolve them.</p>
+<h2 id="why-neutrinos-oscillate">Why Neutrinos Oscillate</h2>
+<p><strong>The statement.</strong> A neutrino produced in a flavour eigenstate is a superposition of mass eigenstates. Each mass eigenstate accumulates a phase $e^{-iE_it}$ at its own rate, so the superposition's flavour content changes with distance:</p>
+<p>$$
+P(\nu_\alpha\to\nu_\beta)=\delta_{\alpha\beta}-4\sum_{i>j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\Delta m^2_{ij}L}{4E}
++2\sum_{i>j}\mathrm{Im}\left(\dots\right)\sin\frac{\Delta m^2_{ij}L}{2E} .
+$$</p>
+<p>The $\sin^2$ term is CP-conserving, the $\sin$ term is not, and the coefficient of the latter is the Jarlskog invariant up to signs.</p>
+<p><strong>The oscillation length, and its size.</strong> The phase is</p>
+<p>$$
+\frac{\Delta m^2L}{4E}=1.267\,\frac{\Delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}{E[\mathrm{GeV}]} ,
+$$</p>
+<p>and the numbers explain the whole experimental programme:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>$L$</th>
+<th>$E$</th>
+<th>$\Delta m^2$</th>
+<th>Phase</th>
+<th>Oscillation length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T2K</td>
+<td>$295$ km</td>
+<td>$0.6$ GeV</td>
+<td>$2.51\times10^{-3}$</td>
+<td>$1.56$ rad $=89.6^\circ$</td>
+<td>$2370$ km</td>
+</tr>
+<tr>
+<td>NOvA</td>
+<td>$810$ km</td>
+<td>$2$ GeV</td>
+<td>$2.51\times10^{-3}$</td>
+<td>$1.29$ rad $=73.8^\circ$</td>
+<td>$7900$ km</td>
+</tr>
+<tr>
+<td>KamLAND</td>
+<td>$180$ km</td>
+<td>$3$ MeV</td>
+<td>$7.42\times10^{-5}$</td>
+<td>$5.64$ rad</td>
+<td>$401$ km</td>
+</tr>
+<tr>
+<td>Solar</td>
+<td>$1.5\times10^{8}$ km</td>
+<td>$5$ MeV</td>
+<td>$7.42\times10^{-5}$</td>
+<td>$2.8\times10^{6}$ rad</td>
+<td>$668$ km</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>T2K's phase is $89.6^\circ$.</strong> That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\Delta m^2$ of interest.</p>
+<p><strong>Why the solar case is different.</strong> Its phase is $2.8\times10^{6}$ radians, so the oscillation is averaged out entirely and the survival probability is the average, which depends on $\theta_{12}$ alone. That averaging is what makes the solar measurement a measurement of one angle rather than of a phase. And the matter effect — coherent forward scattering off electrons, which the electron flavour feels and the others do not — makes the high-energy survival tend to the <em>other</em> composition:</p>
+<p>$$
+\bar P_{ee}^{\text{vacuum}}=1-\frac12\sin^2 2\theta_{12}=0.578 ,
+\qquad
+P_{ee}^{\text{matter}}\to\lvert U_{e2}\rvert^2=0.296 .
+$$</p>
+<p>Both numbers are measured: roughly $0.55$ for the low-energy $pp$ neutrinos and $0.30$ for the high-energy $^8$B ones. The measured difference between them is a measurement of the matter effect, and the fact that the two limits are $0.58$ and $0.30$ rather than, say, $0.5$ and $0.5$ is a measurement of $\theta_{12}$ being neither maximal nor zero.</p>
+<p><strong>Why oscillation requires mass.</strong> A massless neutrino has no $\Delta m^2$ and therefore no phase difference, so the superposition is static. The observation of oscillation is therefore the observation that the neutrino has mass — the only direct evidence — and it does not give the mass itself, only the differences.</p>
+<h2 id="the-jarlskog-invariant">The Jarlskog Invariant</h2>
+<p><strong>The invariant.</strong> The rephasing-invariant measure of CP violation is</p>
+<p>$$
+J=\mathrm{Im}\left(U_{e2}U_{\mu3}U^{*}_{e3}U^{*}_{\mu2}\right)
+=c_{12}s_{12}c_{13}^{2}s_{13}c_{23}s_{23}\sin\delta .
+$$</p>
+<p>Computed from the values above with $\delta=-130^\circ$,</p>
+<p>$$
+J=-0.0262 ,
+$$</p>
+<p>and with the phase at its CP-maximal value $\pm90^\circ$,</p>
+<p>$$
+J_{\max}=\pm0.0332 .
+$$</p>
+<p><strong>The range, and the sign.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\delta$</th>
+<th>$J$</th>
+<th>CP violation?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>None</td>
+</tr>
+<tr>
+<td>$180^\circ$</td>
+<td>$0$</td>
+<td>None</td>
+</tr>
+<tr>
+<td>$-90^\circ$</td>
+<td>$-0.0332$</td>
+<td>Maximal</td>
+</tr>
+<tr>
+<td>$-130^\circ$</td>
+<td>$-0.0262$</td>
+<td>Fit value</td>
+</tr>
+<tr>
+<td>$+90^\circ$</td>
+<td>$+0.0332$</td>
+<td>Maximal, opposite sign</td>
+</tr>
+</tbody>
+</table></div>
+<p>The invariant vanishes at both CP-conserving phases and is largest at $\pm90^\circ$, so the measurement of $\delta$ is a measurement of how far from $0$ or $180^\circ$ the phase sits, and the size of the asymmetry is set by the angles.</p>
+<p><strong>The comparison that carries the article.</strong> The quark Jarlskog invariant is $J_{\mathrm{CKM}}=3.08\times10^{-5}$. The ratio is</p>
+<p>$$
+\frac{\lvert J_{\mathrm{PMNS}}\rvert}{J_{\mathrm{CKM}}}=\frac{0.0262}{3.08\times10^{-5}}=850 .
+$$</p>
+<p>The lepton sector violates CP eight hundred and fifty times more strongly than the quark sector, at least in the Jarlskog measure. This is the single most important number in the article, because it says that whatever mechanism sets the mixing, it acts completely differently on the two sectors. The corpus has no mechanism, so it has no explanation for the factor $850$, and the honest statement is that the factor is measured and unexplained.</p>
+<p><strong>Why large angles give large $J$.</strong> $J$ is a product of $c_{12}s_{12}$, $c_{13}^2$, $s_{13}$, and $c_{23}s_{23}$. Each factor is largest at $45^\circ$ and vanishes at $0$ and $90^\circ$. The quark angles are small, so three of the four factors are small and only $c_{23}s_{23}\approx0.22$ is not; the product is tiny. In the lepton sector two angles are near $45^\circ$, so two factors are near $\tfrac12$, and the product is only suppressed by $s_{13}=0.15$. The size of $J$ is therefore not a mystery in either sector; it is a consequence of the angle pattern, and the <em>angle pattern</em> is what has no explanation.</p>
+<h2 id="what-the-angles-say-about-the-patterns">What the Angles Say About the Patterns</h2>
+<p><strong>The three historical ansätze, and their verdicts.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>$\theta_{12}$</th>
+<th>$\theta_{23}$</th>
+<th>$\theta_{13}$</th>
+<th>Predicted $\sin^2\theta_{12}$</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bimaximal</td>
+<td>$45^\circ$</td>
+<td>$45^\circ$</td>
+<td>$0$</td>
+<td>$0.5$</td>
+<td>Fails: $\theta_{12}$ is $33^\circ$</td>
+</tr>
+<tr>
+<td>Tribimaximal</td>
+<td>$35.26^\circ$</td>
+<td>$45^\circ$</td>
+<td>$0$</td>
+<td>$0.333$</td>
+<td>Fails: $\theta_{13}\neq0$</td>
+</tr>
+<tr>
+<td>Tri-maximal</td>
+<td>$45^\circ$</td>
+<td>$45^\circ$</td>
+<td>$\theta_{12}\cdot\text{something}$</td>
+<td>$0.5$</td>
+<td>Fails on $\theta_{12}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What actually survived.</strong> $\theta_{12}=33.41^\circ$ is within $2^\circ$ of the tribimaximal $35.26^\circ$, and $\sin^2\theta_{12}=0.303$ against tribimaximal's $0.333$. So the solar angle is <em>approximately</em> tribimaximal. The atmospheric angle is $4^\circ$ from maximal, so it is <em>approximately</em> bimaximal. The reactor angle is $8.6^\circ$, which is not approximately zero, and that is the end of the tribimaximal ansatz as an exact statement.</p>
+<p><strong>The 2012 measurement, and why it mattered.</strong> Before 2012, $\theta_{13}$ was bounded only as $\sin^2\theta_{13}<0.04$; the tribimaximal pattern set it to zero by symmetry. Daya Bay, RENO and Double Chooz measured it at $\sin^2\theta_{13}\approx0.022$, a nonzero value at high significance. The consequence is not that the pattern was "slightly broken". A prediction of exactly zero being measured as nonzero is a falsification, and the honest description is that the class of models which set $\theta_{13}=0$ by a discrete symmetry was excluded, not adjusted.</p>
+<p><strong>What replaced it.</strong> Nothing canonical. The measured pattern is compatible with a class of models in which a discrete group fixes $\theta_{12}$ and $\theta_{23}$ and a small perturbation generates $\theta_{13}$ of the observed size, and those models have one or two free parameters each. The corpus does not adjudicate between them, and the article records the situation rather than the fashion.</p>
+<p><strong>The octant ambiguity.</strong> $\sin^2\theta_{23}=0.57$ admits two solutions, $49.0^\circ$ and $41.0^\circ$, symmetric about maximal mixing. Current data prefer the upper octant weakly, and the distinction matters because a maximal $\theta_{23}$ would be a symmetry statement and a non-maximal one would not. The ambiguity is also correlated with $\delta_{\mathrm{CP}}$, which is why separating them is an experimental programme and not a fit.</p>
+<h2 id="the-mass-ordering-and-the-absolute-scale">The Mass Ordering and the Absolute Scale</h2>
+<p><strong>What oscillation gives and what it does not.</strong> Oscillation measures the two differences and the sign of neither separately — except through matter effects, which distinguish $\Delta m^2_{31}>0$ from $<0$ because the electron flavour's forward scattering adds to the Hamiltonian with a definite sign. So the ordering is in principle measurable, and currently unresolved.</p>
+<p><strong>The two orderings, with their numbers.</strong> Taking the lightest mass at zero, which is the minimum allowed:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ordering</th>
+<th>$m_1$</th>
+<th>$m_2$</th>
+<th>$m_3$</th>
+<th>$\sum m$</th>
+<th>$m_{\beta\beta}$ range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal</td>
+<td>$0$</td>
+<td>$8.6$ meV</td>
+<td>$50.8$ meV</td>
+<td>$59$ meV</td>
+<td>$1.4$–$3.7$ meV</td>
+</tr>
+<tr>
+<td>Inverted</td>
+<td>$50.1$ meV</td>
+<td>$50.8$ meV</td>
+<td>$0$</td>
+<td>$101$ meV</td>
+<td>$19$–$49$ meV</td>
+</tr>
+</tbody>
+</table></div>
+<p>The masses follow from the differences alone once the lightest is fixed, which is why the table has no third independent quantity in it.</p>
+<p><strong>The three frontiers, and what each measures.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Probe</th>
+<th>Quantity</th>
+<th>Current bound</th>
+<th>Reaches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cosmology</td>
+<td>$\sum m_i$</td>
+<td>$<0.12$ eV</td>
+<td>The ordering, if $\sum m<0.1$ eV</td>
+</tr>
+<tr>
+<td>Tritium $\beta$ decay (KATRIN)</td>
+<td>$m_\beta=\sqrt{\sum\lvert U_{ei}\rvert^2m_i^2}$</td>
+<td>$<0.8$ eV</td>
+<td>The absolute scale, if degenerate</td>
+</tr>
+<tr>
+<td>Neutrinoless $\beta\beta$</td>
+<td>$m_{\beta\beta}=\lvert\sum U_{ei}^2m_i\rvert$</td>
+<td>$<0.03$–$0.16$ eV (isotope dependent)</td>
+<td><strong>Majorana nature</strong>, and the ordering</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the ordering matters to the corpus.</strong> It is the difference between two theories' predictions for a number the framework does not contain. Neither ordering is preferred by any principle in the algebra, and the weak current preference for the normal ordering ($\Delta\chi^2\approx2.7$) is a fit result and not a discovery. The article states the preference and states its weakness, because a $2.7$ is not evidence.</p>
+<p><strong>Why the absolute scale is a separate question.</strong> Neutrino oscillation determines differences to a few per cent and the absolute scale not at all. The cosmological bound is now within a factor of two of the normal-ordering sum, so the next generation of surveys will either measure the sum or exclude the inverted ordering, and that is the most consequential near-term test in the sector.</p>
+<h2 id="the-two-majorana-phases">The Two Majorana Phases</h2>
+<p><strong>The statement.</strong> The two extra phases multiply the second and third columns of $U$. Every oscillation probability is a product $U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}$, which is invariant under multiplying column $i$ by a phase and taking the conjugate from column $j$: the phases cancel between a column and its complex conjugate. So <strong>the Majorana phases are invisible in oscillation</strong>, exactly and at every order.</p>
+<p><strong>The check.</strong> Recomputing the matrix with $\alpha_{21}=180^\circ$ and $\alpha_{31}=90^\circ$ changes no magnitude to better than $10^{-16}$ and leaves the Jarlskog invariant at $-0.0262$ to five figures. That is not an approximation; it is a symmetry of the observables.</p>
+<p><strong>Where they are visible.</strong> In any amplitude that is not of the form $UU^{\dagger}$, and the canonical one is neutrinoless double beta decay, whose rate is proportional to</p>
+<p>$$
+\lvert m_{\beta\beta}\rvert=\left\lvert\sum_i U_{ei}^2\,m_i\right\rvert ,
+$$</p>
+<p>with the squares. The squares do not cancel the column phases; they add them, so the rate depends on $\alpha_{21}$ and $\alpha_{31}$ through interference between the three terms.</p>
+<p><strong>Why the range matters more than the value.</strong> For the normal ordering the three terms nearly cancel whatever the phases do, and $\lvert m_{\beta\beta}\rvert$ lies between $1.4$ and $3.7$ meV — an order of magnitude below any planned experiment. For the inverted ordering the first two terms add coherently and the range is $19$–$49$ meV, within reach. So a positive signal at $20$ meV would say two things at once: the neutrino is Majorana, and the ordering is inverted. A null result at $20$ meV would say the ordering is normal or the neutrino is Dirac, and would not distinguish those.</p>
+<p><strong>The one thing this article will not do.</strong> It will not claim the phases are measured. They are constrained only through $\lvert m_{\beta\beta}\rvert$, which is a single number depending on both, so even a measurement of the rate would not determine two phases. The count of six parameters is exact; the measurement of four of them is good; the measurement of the last two is not yet.</p>
+<h2 id="cp-violation-in-the-lepton-sector-and-leptogenesis">CP Violation in the Lepton Sector and Leptogenesis</h2>
+<p><strong>The asymmetry, in the oscillation channel.</strong> For $\nu_\mu\to\nu_e$ against $\bar\nu_\mu\to\bar e$, the difference is proportional to $J$ times a product of the two $\sin$ factors:</p>
+<p>$$
+A_{\mathrm{CP}}\propto J\sin\frac{\Delta m^2_{21}L}{2E}\sin\frac{\Delta m^2_{31}L}{2E}\sin\frac{\Delta m^2_{32}L}{2E} ,
+$$</p>
+<p>so it requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.</p>
+<p><strong>Why the phase is not central, again.</strong> <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM article</a> established that a $*$-unitary operator's phase cannot be removed by a central redefinition, so it lives on the flavour factor and not on the algebra. The argument is identical here, and the conclusion is identical: the CP phase is a coordinate of $\mathrm{U}(3)$ and the framework does not fix it.</p>
+<p><strong>The link to baryogenesis.</strong> The observed matter excess requires CP violation, and the Standard Model's quark-sector CP violation is too small by many orders of magnitude. Leptogenesis supplies the missing asymmetry by generating a lepton number excess in the decay of heavy Majorana neutrinos, which the sphaleron then converts partly into baryon number. Two ingredients are needed and both are outside this article's data: a heavy Majorana mass scale, which is <a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">the seesaw article's</a> subject, and CP violation in the heavy sector's couplings, which need not be the same $\delta$ as the light sector's.</p>
+<p><strong>What the measured $\delta$ does and does not imply.</strong> A large $\delta$ in the light sector is <em>compatible</em> with leptogenesis and says nothing about it directly: the light phases and the heavy phases are related through the same matrices but not determined by each other. The article records the compatibility and refuses the inference, because the inference is the one most often made.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<p><strong>One thing, and it is the arena.</strong></p>
+<p><strong>The arena.</strong> The mixing is a $*$-unitary operator on the flavour factor, so the matrix is an element of $\mathrm{U}(3)$ and its parameters are coordinates of that group: three angles as the directions of $\mathrm{SO}(3)$, one phase as the remaining coordinate that rephasing does not remove. The framework supplies $\mathrm{U}(N_g)$ as the norm-preserving group of the multiplicity factor, and it supplies the label on which the operator acts. What it supplies is therefore the <em>space of possible mixing matrices</em>, not the point.</p>
+<p><strong>What it transcribes.</strong> The parameterisation, the measured angles, the mass-squared differences, the Jarlskog invariant and its value, the pattern comparison, the ordering, the $\lvert m_{\beta\beta}\rvert$ ranges, the oscillation formulae and the matter effect. None of these is derived; all are standard, and each is computed here where an arithmetic step exists.</p>
+<p><strong>What it does not supply, declared.</strong></p>
+<ul>
+<li>No mechanism for the values. The angles are measured, not predicted, and the framework has no flavour dynamics.</li>
+<li>No explanation for the factor $850$ between the two sectors' CP violation.</li>
+<li>No selection of the mass ordering.</li>
+<li>No Majorana mass. The condition and its consequences are <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">the neutrino article's</a> and <a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">the seesaw article's</a>; the framework hosts the condition and does not generate the scale.</li>
+<li>No leptogenesis. The sphaleron is <a href="the-theta-vacuum-in-biquaternionic-form.html">the theta-vacuum article's</a> territory, and the sphaleron that would convert it is a saddle point of that structure.</li>
+</ul>
+<p><strong>The ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U_{\mathrm{PMNS}}=U_e^{\dagger}U_\nu$</td>
+<td><strong>Imported</strong> structure; <strong>placed</strong> on the flavour factor by the CKM article</td>
+</tr>
+<tr>
+<td>The charged-current term with $U$</td>
+<td><strong>Framework</strong>: the generator is exact, $U$ is a $*$-unitary element</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(3)$ and its parameter count $4$ or $6$</td>
+<td><strong>Framework supplies the group</strong>; the count is group theory</td>
+</tr>
+<tr>
+<td>The three angles and $\delta$</td>
+<td><strong>Imported</strong> measurements</td>
+</tr>
+<tr>
+<td>The two Majorana phases</td>
+<td><strong>Imported</strong>; their invisibility <strong>verified</strong> here to $10^{-16}$</td>
+</tr>
+<tr>
+<td>The $\lvert U\rvert$ matrix</td>
+<td><strong>Computed</strong> here; unitarity checked at $1.1\times10^{-16}$</td>
+</tr>
+<tr>
+<td>The oscillation formula and the matter effect</td>
+<td><strong>Imported</strong></td>
+</tr>
+<tr>
+<td>The oscillation lengths and phases</td>
+<td><strong>Computed</strong> here for four experiments</td>
+</tr>
+<tr>
+<td>$J=-0.0262$, $J_{\max}=\pm0.0332$, ratio $850$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The tribimaximal and bimaximal verdicts</td>
+<td><strong>Imported</strong>; the comparisons computed here</td>
+</tr>
+<tr>
+<td>$\Delta m^2_{21}$, $\lvert\Delta m^2_{31}\rvert$</td>
+<td><strong>Imported</strong></td>
+</tr>
+<tr>
+<td>The ordering and the mass sums</td>
+<td><strong>Imported</strong>; the sums computed here</td>
+</tr>
+<tr>
+<td>$m_{\beta\beta}$ ranges</td>
+<td><strong>Computed</strong> here by scanning both phases</td>
+</tr>
+<tr>
+<td>The Majorana condition, the seesaw</td>
+<td><strong>Framework</strong>, each in its own article</td>
+</tr>
+<tr>
+<td>A principle fixing the mixing</td>
+<td><strong>Not available</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this article does not do.</strong> It does not fit the parameters, does not simulate an experiment, does not compute a cross section, and does not adjudicate between models of the mixing pattern. It assembles the matrix, checks it, computes every derived number it quotes, and marks the boundary.</p>
+<h2 id="summary">Summary</h2>
+<p>The PMNS matrix is the lepton analogue of CKM and the same kind of object: a $*$-unitary operator on the generation label, $U=U_e^{\dagger}U_\nu$, placed by the same construction. The framework supplies the arena $\mathrm{U}(3)$, and it does not supply the point.</p>
+<p>The parameter count is a test of the neutrino's nature. Four parameters if Dirac, six if Majorana, the difference being two phases that only a lepton-number-violating process can see.</p>
+<p>The measured angles are large: $\theta_{12}=33.4^\circ$, $\theta_{13}=8.58^\circ$, $\theta_{23}=49.0^\circ$, with $\delta_{\mathrm{CP}}\approx-130^\circ$ and the CP-conserving values disfavoured at two to three sigma. The magnitudes are $0.825$, $0.545$, $0.149$ in the first row, and the matrix is unitary to $1.1\times10^{-16}$.</p>
+<p>Neutrinos oscillate because the mass eigenstates are not the flavour eigenstates, with phase $1.267\,\Delta m^2L/E$. T2K's baseline sits at $89.6^\circ$ by design; the solar phase is $2.8\times10^{6}$ radians and averages to $\bar P_{ee}=0.578$ in vacuum and $0.296$ in matter, and both numbers are measured.</p>
+<p>CP violation is $850$ times stronger here than in the quark sector, in the Jarlskog measure: $J=-0.0262$ at the fit phase, $\pm0.0332$ at maximal. The size follows from the angles, since $J$ is a product of four factors each largest at $45^\circ$; the angle pattern itself is unexplained.</p>
+<p>Two of the historical patterns are dead: bimaximal and tribimaximal both predicted $\theta_{13}=0$, and the 2012 measurement of $\sin^2\theta_{13}=0.022$ falsified them, with $\theta_{12}$ surviving only as approximately tribimaximal.</p>
+<p>The mass ordering is unresolved, and the lightest-mass-zero table gives sums of $59$ and $101$ meV against a cosmological bound of $120$ meV. The Majorana phases are invisible in oscillation — verified to $10^{-16}$ — and visible only in $\lvert m_{\beta\beta}\rvert$, whose normal-ordering range of $1.4$–$3.7$ meV is out of reach while the inverted range of $19$–$49$ meV is not, so a signal would say Majorana and inverted at once.</p>
+<p>The framework supplies the arena and transcribes the rest: no mechanism for the values, no explanation for the factor $850$, no ordering, no Majorana scale, no leptogenesis.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U_{\mathrm{PMNS}}$</td>
+<td>The lepton mixing matrix, $U_e^{\dagger}U_\nu$</td>
+</tr>
+<tr>
+<td>$U_e$, $U_\nu$</td>
+<td>Diagonalisations of the charged-lepton and neutrino mass matrices</td>
+</tr>
+<tr>
+<td>$\theta_{12}$</td>
+<td>Solar angle, $33.4^\circ$</td>
+</tr>
+<tr>
+<td>$\theta_{13}$</td>
+<td>Reactor angle, $8.58^\circ$</td>
+</tr>
+<tr>
+<td>$\theta_{23}$</td>
+<td>Atmospheric angle, $49.0^\circ$</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Dirac CP phase, $\approx-130^\circ$</td>
+</tr>
+<tr>
+<td>$\alpha_{21}$, $\alpha_{31}$</td>
+<td>Majorana phases, in the half-angle convention</td>
+</tr>
+<tr>
+<td>$s_{ij}$, $c_{ij}$</td>
+<td>$\sin\theta_{ij}$, $\cos\theta_{ij}$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>Jarlskog invariant, $-0.0262$ at the fit phase</td>
+</tr>
+<tr>
+<td>$\Delta m^2_{21}$</td>
+<td>$7.42\times10^{-5}$ eV$^2$</td>
+</tr>
+<tr>
+<td>$\Delta m^2_{31}$</td>
+<td>$2.51\times10^{-3}$ eV$^2$, magnitude</td>
+</tr>
+<tr>
+<td>$L$, $E$</td>
+<td>Baseline and energy</td>
+</tr>
+<tr>
+<td>$P_{ee}$</td>
+<td>Electron-neutrino survival probability</td>
+</tr>
+<tr>
+<td>$m_{\beta\beta}$</td>
+<td>Effective Majorana mass for $\beta\beta_{0\nu}$</td>
+</tr>
+<tr>
+<td>$m_\beta$</td>
+<td>Effective mass in tritium decay</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(3)$</td>
+<td>The group of $*$-unitary mixing operators</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>. The same construction for quarks: the operator on the flavour factor, the parameter count, the non-centrality of the phase.</li>
+<li><a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a>. The field, its two values, the charge conjugation, and the Majorana condition.</li>
+<li><a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a>. Where a heavy scale would come from, and what it would do to the light masses.</li>
+<li><a href="the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a>. The equation whose solutions are their own conjugates.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment</a>. The lepton doublet and singlet, and the hypercharge assignment the charged current acts on.</li>
+<li><a href="the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>. The vacuum angle, and the phase structure a baryon-number-violating saddle point would have to sit in.</li>
+<li><a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a>. The anomaly conditions the lepton and quark content must satisfy, and where a count of free parameters begins.</li>
+<li><a href="the-parton-model-and-deep-inelastic-scattering.html">The Parton Model and Deep Inelastic Scattering</a>. The convention discipline this article applies to the Majorana-phase normalisation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

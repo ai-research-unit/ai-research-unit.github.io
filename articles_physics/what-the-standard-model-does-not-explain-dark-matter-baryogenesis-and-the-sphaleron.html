@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron"><strong>What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Two of the model's failures are exact and quantitative, and a third — the one usually listed with them — is neither. The article separates the three, prints the numbers behind the separation, and records that the framework contributes to one of them the mechanism that makes it possible and to the other two nothing.</p>
+<p><strong>The three subjects, and why they are not the same kind of thing.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subject</th>
+<th>Status</th>
+<th>The model's answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dark matter</td>
+<td>A missing <em>object</em></td>
+<td>Nothing in the spectrum can be it</td>
+</tr>
+<tr>
+<td>Baryogenesis</td>
+<td>A missing <em>mechanism</em></td>
+<td>The mechanism exists but is switched off and too weak</td>
+</tr>
+<tr>
+<td>The sphaleron</td>
+<td>A missing <em>solution</em></td>
+<td>The mechanism, computed: $B$ is violated, at a rate that is zero today</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The distinction is the article's argument.</strong> Dark matter is an inventory failure: the model has no candidate, and the failure cannot be repaired without adding a field. Baryogenesis is a <em>rate</em> failure: every ingredient is present, and each is present in the wrong amount. The sphaleron is neither a failure nor a success but the calculation that connects the two — it is what makes $B$ violation real, and it is also what forbids the model from using it.</p>
+<p><strong>The five results.</strong></p>
+<ul>
+<li><strong>The dark matter is $5.36$ times the baryon density</strong>, and the model's only dark candidates are excluded: neutrinos by their mass, the Higgs by its lifetime, the neutron by decaying. So the inventory is empty and the failure is structural.</li>
+<li><strong>The neutral-current bound is the cleanest exclusion in the model.</strong> The $Z$ width counts neutrino species: $N_\nu=2.9963\pm0.0074$. A fourth generation with a light neutrino is excluded by the same measurement that confirms the first three.</li>
+<li><strong>The baryon asymmetry is $\eta=6.1\times10^{-10}$</strong>, one baryon per $1.6\times10^{9}$ photons. The Standard Model cannot produce it, and the reason is not that its CP violation is small — it is that $B-L$ is conserved exactly, so from a symmetric start the answer is zero, and not merely small.</li>
+<li><strong>The sphaleron is at $9.0$ TeV</strong>, and its rate is Boltzmann-suppressed: $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $T=100$ GeV and <em>exactly zero</em> today. Its physical consequence is a proton lifetime above $10^{160}$ years.</li>
+<li><strong>The electroweak phase transition is a crossover</strong>, not a first-order transition, for any Higgs above about $72$ GeV. At $125.09$ GeV there is no bubble nucleation, hence no departure from equilibrium, hence the third Sakharov condition fails outright.</li>
+</ul>
+<p><strong>What the framework supplies, in one sentence, so it is not oversold.</strong> <a href="the-theta-vacuum-in-biquaternionic-form.html">The theta-vacuum</a> and <a href="instantons-and-solitons-in-biquaternionic-form.html">instanton</a> articles supply the anomaly identity that makes $B$ violation possible and the topology that quantises it — and they do <em>not</em> supply the sphaleron, for a reason this article states exactly: the sphaleron is not self-dual, so the biquaternionic instanton construction has no counterpart for it.</p>
+<p><strong>The order.</strong> The missing mass, then the neutral-current bound, then the inventory of candidates, then the matter excess, then the three conditions, then the model's scorecard, then the anomaly identity, then the sphaleron, then instanton against sphaleron, then the phase transition, then leptogenesis, then what the framework supplies, then the ledger.</p>
+<h2 id="the-missing-mass">The Missing Mass</h2>
+<p><strong>The measurement.</strong> The cosmic inventory, in the units cosmology uses ($\Omega_i h^2$, the density in units of the critical density times the reduced Hubble constant squared):</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>$\Omega_i h^2$</th>
+<th>Share of the total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dark energy</td>
+<td>—</td>
+<td>$0.685$ of critical</td>
+</tr>
+<tr>
+<td>Dark matter</td>
+<td>$0.1200$</td>
+<td>$0.265$</td>
+</tr>
+<tr>
+<td>Baryons</td>
+<td>$0.02237$</td>
+<td>$0.0494$</td>
+</tr>
+<tr>
+<td>Radiation</td>
+<td>$\sim10^{-5}$</td>
+<td>$\sim10^{-5}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$$
+\frac{\Omega_{\mathrm{DM}}}{\Omega_b}=\frac{0.1200}{0.02237}=5.36 .
+$$</p>
+<p>So there is $5.36$ times as much mass in the dark component as in all the protons and neutrons in existence. The model's matter content accounts for $15.7\%$ of that budget and none of the rest, and no particle it contains can supply the other $84.3\%$.</p>
+<p><strong>Why this is an inventory failure and not a parameter failure.</strong> <a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The parameter-count article</a> established that the nineteen parameters are values the model does not fix. Dark matter is different: no value of any of the nineteen produces a dark matter candidate, because the model's spectrum is closed. There is no knob to turn. The failure is not in the numbers; it is in the list of objects.</p>
+<p><strong>The three established properties, which any candidate must have.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Evidence</th>
+<th>Consequence for a candidate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cold, or at most warm</td>
+<td>Structure formation; the power spectrum's shape</td>
+<td>Must be non-relativistic at $T\sim1$ eV</td>
+</tr>
+<tr>
+<td>Electrically neutral, and neutral under colour</td>
+<td>No electromagnetic or strong signature; the CMB's acoustic peaks</td>
+<td>Must be a singlet, or a neutral member of a multiplet</td>
+</tr>
+<tr>
+<td>Stable, or long-lived</td>
+<td>Present today</td>
+<td>Must be protected by a symmetry or by kinematics</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sharpest single measurement.</strong> The Bullet Cluster: two galaxy clusters that have passed through each other, with the X-ray gas (baryons) shocked and slowed in the middle while the gravitational mass, reconstructed from lensing, has passed through. The mass-to-light ratio tracks the galaxies and not the gas. That is a direct statement that the dark component is collisionless and the baryonic component is not, and it cannot be reproduced by any modification of gravity that couples to baryons alone.</p>
+<p><strong>What the model has, examined one by one.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>Mass</th>
+<th>Why it fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neutrinos</td>
+<td>$\Sigma m_\nu<0.12$ eV</td>
+<td>Hot: free-streams out of structures; at most $1.1\%$ of the dark density</td>
+</tr>
+<tr>
+<td>Higgs</td>
+<td>$125$ GeV</td>
+<td>Decays in $10^{-22}$ s</td>
+</tr>
+<tr>
+<td>Neutron</td>
+<td>$939.6$ MeV</td>
+<td>Decays in $880$ s</td>
+</tr>
+<tr>
+<td>Gluons, photons</td>
+<td>$0$</td>
+<td>Massless, and they were in equilibrium</td>
+</tr>
+<tr>
+<td>$Z$, $W$</td>
+<td>$91.2$, $80.4$ GeV</td>
+<td>Decay in $10^{-25}$ s</td>
+</tr>
+<tr>
+<td>The vacuum</td>
+<td>—</td>
+<td>Contributes to dark <em>energy</em>, not to matter; and with the wrong sign and magnitude</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The neutrino row, quantified.</strong> The cosmological bound on the sum of neutrino masses is $\Sigma m_\nu<0.12$ eV, and the relic density is</p>
+<p>$$
+\Omega_\nu h^2=\frac{\Sigma m_\nu}{93.14\ \mathrm{eV}} ,
+$$</p>
+<p>so at the bound $\Omega_\nu h^2=0.00129$, which is $1.1\%$ of $\Omega_{\mathrm{DM}}h^2$. So <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">the neutrino article</a> settles the question in the negative with a number: neutrinos are a $1\%$ correction to the dark component and cannot be it. This is also why "hot dark matter" was abandoned in the 1980s — the same calculation, with the same conclusion, before the oscillations were measured.</p>
+<p><strong>The symmetry problem, stated because it is the real obstacle.</strong> Even a new neutral particle is not automatically stable. Stability requires a conserved quantum number, and the model's only exact global symmetries are $B-L$ (non-perturbatively conserved) and the accidental ones. So a dark matter candidate requires either a new symmetry or an accidental one, and an accidental symmetry is a statement about which operators are allowed by the gauge quantum numbers — which is a statement about a content the model does not have.</p>
+<h2 id="the-neutral-current-bound">The Neutral-Current Bound</h2>
+<p><strong>The measurement, which is the model's cleanest negative result.</strong> The $Z$ boson's invisible width counts the light neutrino species:</p>
+<p>$$
+\Gamma_{\mathrm{inv}}=\frac{N_\nu G_F M_Z^3}{12\sqrt2\pi}\left(1+\dots\right) ,
+$$</p>
+<p>and the fit to the $Z$ line shape gives</p>
+<p>$$
+N_\nu=2.9963\pm0.0074 .
+$$</p>
+<p><strong>The reading, in two parts.</strong></p>
+<ul>
+<li>Three species are <strong>confirmed</strong>, to a part in three hundred. This is the strongest single piece of evidence that the generation structure stops at three.</li>
+<li>A fourth species with $m_\nu<M_Z/2=45.6$ GeV is <strong>excluded</strong> at many standard deviations. So the model cannot be extended by adding a fourth generation with a light neutrino, and any new neutral fermion must either be heavier than half the $Z$ or not couple to it.</li>
+</ul>
+<p><strong>Why this is the bound that closes the simplest door.</strong> The obvious way to make dark matter out of the model's own content is to add a fourth generation and let its neutrino be the dark matter. That door is shut twice: by $N_\nu$, and by the relic density above — a fourth neutrino of mass up to $45$ GeV would still be relativistic at decoupling if light, and hot if light, and excluded by $N_\nu$ if it is in equilibrium.</p>
+<p><strong>The loophole, stated so the bound is not overread.</strong> $N_\nu$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a <em>class</em> of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.</p>
+<p><strong>The framework's position on all of this: nothing.</strong> $N_\nu$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. <a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The parameter-count article</a> recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.</p>
+<h2 id="what-the-dark-matter-could-be">What the Dark Matter Could Be</h2>
+<p><strong>The inventory of standing proposals, with their status.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>Mass range</th>
+<th>Status</th>
+<th>Framework's relation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WIMP, a stable weak multiplet</td>
+<td>$1$ GeV – $100$ TeV</td>
+<td>Not found; direct detection limits exclude the simplest</td>
+<td>None: no new multiplet available</td>
+</tr>
+<tr>
+<td>Axion</td>
+<td>$\mu$eV – meV</td>
+<td>Viable; the corpus constructs it</td>
+<td><a href="the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">Constructed</a></td>
+</tr>
+<tr>
+<td>Sterile neutrino</td>
+<td>keV</td>
+<td>Viable; needs a right-handed singlet</td>
+<td><a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The seesaw article</a> supplies it</td>
+</tr>
+<tr>
+<td>Hidden sector</td>
+<td>Any</td>
+<td>Viable but unconstrained</td>
+<td>None: no second sector</td>
+</tr>
+<tr>
+<td>Primordial black holes</td>
+<td>$10^{15}$–$10^{3}\,M_\odot$</td>
+<td>Constrained but not excluded in windows</td>
+<td>None: not a particle question</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The direct-detection limits, which are the reason the WIMP row is nearly closed.</strong></p>
+<p>$$
+\sigma_{\mathrm{SI}}<2.6\times10^{-47}\ \mathrm{cm}^2\ \text{at}\ m_\chi\approx30\ \mathrm{GeV} .
+$$</p>
+<p>A weak-scale cross-section is of order $4\times10^{-33}$ cm$^2$ — a few picobarns. So the limit is</p>
+<p>$$
+\frac{\sigma_{\mathrm{weak}}}{\sigma_{\mathrm{limit}}}=\frac{4\times10^{-33}}{2.6\times10^{-47}}=1.5\times10^{14}
+$$</p>
+<p>times below the weak scale. A WIMP whose annihilation in the early universe set the relic density has an annihilation cross-section of order a picobarn, and by detailed balance a scattering cross-section of comparable order. So the simplest WIMP is excluded by fourteen orders of magnitude, and the surviving models are either heavier, or tuned to a cancellation, or coupling through a heavy mediator.</p>
+<p><strong>The two candidates the corpus can actually build.</strong></p>
+<ul>
+<li><strong>The axion.</strong> <a href="the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The axion article</a> constructs the Peccei–Quinn mechanism, which solves the strong CP problem by promoting $\theta_{\mathrm{QCD}}$ to a field. The same field oscillates in the early universe and its oscillations are cold dark matter. This is the one dark matter candidate the corpus contains, and it arrives as a <em>by-product</em> of solving a different problem — which is worth noting, because it is the model's only historically successful instance of that pattern.</li>
+<li><strong>The sterile neutrino.</strong> <a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The seesaw article</a> supplies a right-handed singlet at a heavy scale. A keV-scale variant is a viable warm dark matter candidate. The corpus hosts the object; it does not choose its mass.</li>
+</ul>
+<p><strong>Why the axion row is the article's one positive entry.</strong> Because it is the only case in the corpus where a dark matter candidate is <em>not</em> bolted on: the field is introduced for an independent reason, the independent reason is a problem the model has, and the dark matter follows. Every other candidate is an addition whose only justification is the missing mass, which is a weaker position.</p>
+<h2 id="the-matter-excess">The Matter Excess</h2>
+<p><strong>The measurement.</strong></p>
+<p>$$
+\eta=\frac{n_b-n_{\bar b}}{n_\gamma}=6.1\times10^{-10} ,
+$$</p>
+<p>that is <strong>one baryon per $1.6\times10^{9}$ photons</strong>. Every annihilation that could have occurred did occur, down to the point where the baryon density was too low for further annihilation, and the residue is this number.</p>
+<p><strong>Why it needs a mechanism rather than an initial condition.</strong> Because inflation erases any initial asymmetry: it dilutes the density of any pre-existing net $B$ to zero, so whatever asymmetry exists must be <em>created</em> after inflation and before the QCD transition. This is the one place where the argument is not "the model does not explain it" but "the model cannot have started with it". An initial condition is not available, because inflation is not a choice — it is required by the horizon and flatness problems, which the corpus treats separately.</p>
+<p><strong>The three properties any mechanism must have, listed before the conditions because they constrain the search.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Requires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B$ must be violated</td>
+<td>A process with $\Delta B\neq0$</td>
+</tr>
+<tr>
+<td>$C$ and $CP$ must be violated</td>
+<td>Different rates for particles and antiparticles</td>
+</tr>
+<tr>
+<td>The process must be out of equilibrium</td>
+<td>Otherwise the inverse reaction erases the asymmetry</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The quantitative form of the second.</strong> It is not enough to have $CP$ violation; the <em>amount</em> matters, and it can be counted. The rephasing-invariant measure of the CKM phase's size is the Jarlskog invariant</p>
+<p>$$
+J=c_{12}c_{13}^2c_{23}s_{12}s_{13}s_{23}\sin\delta=3.13\times10^{-5} ,
+$$</p>
+<p>computed from $\lambda=0.22650$, $A=0.826$, $\bar\rho=0.1591$, $\bar\eta=0.3523$ and $\delta=65.5^\circ$. So the model's CP violation is a number of order $3\times10^{-5}$, and the required asymmetry is $6.1\times10^{-10}$. The two differ by nothing obvious — which is exactly why the naive expectation failed: the estimate of $\eta$ from $J$ alone, including the loop and phase-space suppressions, is of order $10^{-20}$, short by <strong>eleven orders of magnitude</strong>.</p>
+<p><strong>Why eleven and not five.</strong> Because $J$ is not the whole suppression. The asymmetry generated by a diagram is proportional to $J$ times the product of the couplings at each vertex times the loop factor $(1/16\pi^2)^n$ times the phase-space ratio. With three or four loops in the relevant $B$-violating process, $(16\pi^2)^{-3}\sim10^{-6}$ and $J\sim10^{-5}$ already give $10^{-11}$, before any further suppression. So the <em>measured</em> CP violation of the quark sector is quantitatively irrelevant to baryogenesis, and this is the article's cleanest statement about what the model does and does not contain: it has CP violation, it has it in the wrong sector and at the wrong size.</p>
+<h2 id="the-three-sakharov-conditions">The Three Sakharov Conditions</h2>
+<p><strong>The conditions, stated as the 1967 paper stated them, and then tested.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Statement</th>
+<th>Needed because</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. $B$ violation</td>
+<td>Some process with $\Delta B\neq0$</td>
+<td>Otherwise $B$ is conserved and any initial zero stays zero</td>
+</tr>
+<tr>
+<td>2. $C$ and $CP$ violation</td>
+<td>The rates for $X\to Y$ and $\bar X\to\bar Y$ differ</td>
+<td>Otherwise equal numbers of baryons and antibaryons are made</td>
+</tr>
+<tr>
+<td>3. Out of equilibrium</td>
+<td>The inverse process is suppressed</td>
+<td>Otherwise the asymmetry is undone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why they are necessary and not sufficient.</strong> The three conditions are a filter: a mechanism satisfying all three may still produce $\eta=0$ or $\eta=10^{-30}$. The Standard Model satisfies all three <em>nominally</em> and produces zero. The table below is the article's central diagnostic.</p>
+<p><strong>The scorecard.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Present in the Standard Model?</th>
+<th>Quantitatively adequate?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B$ violation</td>
+<td>Yes: the sphaleron, non-perturbative</td>
+<td>Irrelevant: $B-L$ conserved exactly</td>
+</tr>
+<tr>
+<td>$C$ violation</td>
+<td>Yes: the gauge interactions are chiral</td>
+<td>Yes, in principle</td>
+</tr>
+<tr>
+<td>$CP$ violation</td>
+<td>Yes: the CKM phase, $J=3.13\times10^{-5}$</td>
+<td>No: eleven orders short</td>
+</tr>
+<tr>
+<td>Out of equilibrium</td>
+<td>No: the phase transition is a crossover</td>
+<td>No: fails outright</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the model fails on two of three and is vacuous on the third.</strong> The section <em>The Phase Transition</em> gives the fourth row its number; the section <em>$B$ Violation</em> gives the first row its exact reason; the section <em>The Matter Excess</em> gave the third row its arithmetic.</p>
+<p><strong>The general lesson, which this article shares with <a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">the parameter-count article</a>.</strong> A list of conditions that are "satisfied" is not the same as a mechanism. The corpus's standard — print the number, not the label — applies with full force here, and it is the reason this article's scorecard has four rows rather than three checks.</p>
+<h2 id="math113-violation-the-anomaly-identity">$B$ Violation: the Anomaly Identity</h2>
+<p><strong>The identity, which is exact and non-perturbative.</strong></p>
+<p>$$
+\partial_\mu j^\mu_B=\partial_\mu j^\mu_L=\frac{N_g g^2}{32\pi^2}F^a_{\mu\nu}\tilde F^{a\,\mu\nu} ,
+\qquad
+\partial_\mu\left(j^\mu_B-j^\mu_L\right)=0 .
+$$</p>
+<p><strong>The three readings of it.</strong></p>
+<ul>
+<li><strong>$B$ and $L$ are each violated</strong>, by an amount proportional to the topological density. So the divergence is a total derivative of a topological object and integrates to an integer, which is why $\Delta B$ is quantised.</li>
+<li><strong>$B-L$ is conserved exactly.</strong> The combination is anomaly-free, so no process — perturbative or not — changes it.</li>
+<li><strong>$\Delta B=\Delta L=N_g=3$</strong> for a transition of unit winding number. One unit per generation, all three generations at once, which is why the process is called <em>sphaleron</em> and couples only to the generation-universal sector.</li>
+</ul>
+<p><strong>The consequence that makes the model unable to do baryogenesis.</strong> If the universe starts with $B=L=0$, so does $B-L=0$, and since $B-L$ is conserved the final state has $B-L=0$. A sphaleron transition moves $B$ and $L$ together, so it moves $B$ from zero and back to zero. <strong>The Standard Model therefore generates no net baryon number at all, from any initial condition with $B-L=0$.</strong> This is a stronger statement than "too little CP violation", and it is the correct one.</p>
+<p><strong>What that means for every proposal.</strong> Baryogenesis in the Standard Model requires new physics that violates $B-L$, and every mechanism is classified by where it does so:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Violates $B-L$?</th>
+<th>Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electroweak baryogenesis</td>
+<td>No</td>
+<td>$100$ GeV</td>
+</tr>
+<tr>
+<td>GUT baryogenesis</td>
+<td>Yes, via leptoquarks</td>
+<td>$10^{16}$ GeV</td>
+</tr>
+<tr>
+<td>Leptogenesis</td>
+<td>Yes, via Majorana neutrino masses</td>
+<td>$10^{9}$–$10^{12}$ GeV</td>
+</tr>
+<tr>
+<td>Affleck–Dine</td>
+<td>Yes, via a flat direction</td>
+<td>$\gtrsim$ TeV</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The framework's contribution, which is the identity itself.</strong> <a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">The anomalies article</a> derives the anomalous divergence from the biquaternionic path integral, and <a href="the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">the Fujikawa article</a> constructs it by the measure's non-invariance under the anomalous transformation. So the framework supplies the <em>mechanism of the anomaly</em> — the reason a classical conservation law fails — and therefore supplies, honestly, the only ingredient of baryogenesis that the model has. What it does not supply is any reason for $B-L$ to be violated, since it has no leptoquark and no Majorana mass of its own.</p>
+<p><strong>The link to <a href="the-majorana-equation-in-biquaternionic-form.html">the Majorana article</a>, stated because it is the one live route.</strong> The Majorana mass term violates $L$ by two units, hence $B-L$ by two, and is the only $B-L$ violation the corpus can build. So the framework's one available baryogenesis route is leptogenesis, and it is available because a different article needed the Majorana condition for a different reason. That is the same pattern as the axion.</p>
+<h2 id="the-sphaleron">The Sphaleron</h2>
+<p><strong>What it is.</strong> A static, finite-energy saddle-point solution of the Minkowski equations — a <em>configuration</em>, not a tunnelling event. It sits at the top of the barrier between two vacua of different Chern–Simons number, and its energy is the barrier height.</p>
+<p><strong>The energy.</strong></p>
+<p>$$
+E_{\mathrm{sph}}=\frac{4\pi v}{g}B\!\left(\frac{\lambda}{g^2}\right)=9.0\ \mathrm{TeV} ,
+$$</p>
+<p>where the dimensionless function of the quartic is $B=1.90$ at the measured couplings, computed here from $E_{\mathrm{sph}}g/(4\pi v)$. The number is set by $v$ and $g$ and only weakly by $\lambda$: it is a <em>weak-scale</em> object, not a QCD-scale or Planck-scale one, and that is the structural fact behind everything that follows.</p>
+<p><strong>The rate, and the exponent.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$T$</th>
+<th>$E_{\mathrm{sph}}/T$</th>
+<th>$\exp(-E_{\mathrm{sph}}/T)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$50$ GeV</td>
+<td>$180$</td>
+<td>$10^{-78}$</td>
+</tr>
+<tr>
+<td>$100$ GeV</td>
+<td>$90$</td>
+<td>$10^{-39}$</td>
+</tr>
+<tr>
+<td>$150$ GeV</td>
+<td>$60$</td>
+<td>$10^{-26}$</td>
+</tr>
+<tr>
+<td>$160$ GeV</td>
+<td>$56$</td>
+<td>$10^{-24}$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$\infty$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two limits, which are the whole physics.</strong></p>
+<ul>
+<li><strong>At $T=0$ the rate is zero</strong>, not small: the exponent is infinite. So the proton does not decay by this route, and the bound on its lifetime from sphalerons alone is above $10^{160}$ years — some $7\times10^{149}$ times the age of the universe. 't Hooft's original estimate, and the reason the anomaly is compatible with matter's stability.</li>
+<li><strong>At $T\gtrsim T_c\approx160$ GeV the rate is unsuppressed</strong>, because $E_{\mathrm{sph}}(T)\to0$ as the expectation value vanishes. So in the early universe the process is fast, and $B$ is not a good quantum number.</li>
+</ul>
+<p><strong>The crossover, which is the article's third result restated as a mechanism.</strong> The sphaleron rate is fast above $T_c$ and exponentially slow below. So there is a temperature at which $B$ violation switches off — and any asymmetry generated must be generated above it. The transition itself is the subject of the next section but one.</p>
+<p><strong>Why the number $9.0$ TeV matters beyond cosmology.</strong> It is the energy at which $B$ violation becomes accessible, so it is the energy a future collider would need to reach to see it directly. That is roughly $100$ times the LHC's center-of-mass energy, and it is the reason sphaleron processes are studied only through their cosmological and low-energy consequences.</p>
+<h2 id="instanton-against-sphaleron">Instanton Against Sphaleron</h2>
+<p><strong>The distinction, which is the article's framework section and its only technical contribution.</strong>
+Two objects describe the same topological transition, in two different signatures, and the framework hosts one of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Instanton</th>
+<th>Sphaleron</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signature</td>
+<td>Euclidean</td>
+<td>Minkowski, static</td>
+</tr>
+<tr>
+<td>Character</td>
+<td>A solution of the equations of motion</td>
+<td>A saddle point, not a solution</td>
+</tr>
+<tr>
+<td>What it gives</td>
+<td>The tunnelling amplitude $e^{-S_E}$</td>
+<td>The barrier height $E_{\mathrm{sph}}$</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Localised in all four directions</td>
+<td>Localised in three</td>
+</tr>
+<tr>
+<td>Self-dual?</td>
+<td>Yes, $F=\tilde F$ for the BPST solution</td>
+<td><strong>No</strong></td>
+</tr>
+<tr>
+<td>Framework's status</td>
+<td><a href="instantons-and-solitons-in-biquaternionic-form.html">Constructed</a></td>
+<td><strong>Absent</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the framework hosts the instanton and not the sphaleron.</strong></p>
+<ul>
+<li><strong>The instanton is where self-duality is available.</strong> <a href="instantons-and-solitons-in-biquaternionic-form.html">The instanton article</a> establishes that the BPST solution is characterised by $F=\tilde F$, and that self-duality is the condition the biquaternion structure makes natural — the Hodge star and the quaternion multiplication interact in exactly the way that lets a self-dual connection be written algebraically. <a href="the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM article</a> then classifies them by quaternionic linear data. That machinery has no analogue for a non-self-dual object.</li>
+<li><strong>The sphaleron solves a different equation.</strong> It extremises the energy functional at fixed Chern–Simons number, which is a constrained variational problem, and the resulting configuration is <em>not</em> self-dual — it cannot be, since a self-dual configuration in Minkowski signature is either trivial or complex. So there is no algebraic shortcut and the solution must be found numerically, by Ansatz and shooting. That is a computation the framework cannot perform, not because the algebra is inadequate but because the object is not algebraic in the way the instanton is.</li>
+<li><strong>The consequence, stated plainly.</strong> The framework's whole topological apparatus — the $\theta$ vacuum, the winding number, the instanton gas, the ADHM data — is a Euclidean apparatus. The sphaleron is the Minkowski counterpart, and the corpus's claim about topology in $\mathbb{B}$ therefore stops at the barrier rather than crossing it.</li>
+</ul>
+<p><strong>What the corpus does supply of the sphaleron's physics.</strong> Three things, and they are not nothing:</p>
+<ul>
+<li><strong>The quantisation of $\Delta B$.</strong> <a href="the-theta-vacuum-in-biquaternionic-form.html">The $\theta$-vacuum article</a> derives the integer-valued winding number from the central integer of the biquaternion index, which is what makes $\Delta B=3$ a discrete statement rather than a continuous one.</li>
+<li><strong>The $\theta$ dependence.</strong> The energy of a $\theta$ vacuum depends on $\theta$ through the instanton gas, and the sphaleron's rate inherits that dependence. <a href="the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The semiclassical article</a> supplies the gas.</li>
+<li><strong>The axial anomaly's identity</strong>, as above, from the Fujikawa construction.</li>
+</ul>
+<p><strong>What it does not supply.</strong> The solution. A reader who wants the sphaleron's profile, its energy as a function of $\lambda/g^2$, or its fluctuation spectrum will not find them in this corpus, and the honest statement is that they are not available here — not that they are unavailable in principle.</p>
+<h2 id="the-phase-transition">The Phase Transition</h2>
+<p><strong>The question.</strong> Baryogenesis requires a departure from equilibrium. The Standard Model's candidate is the electroweak phase transition: if it is first order, bubbles nucleate, the plasma is out of equilibrium at the walls, and the asymmetry can be generated there.</p>
+<p><strong>The answer, and it is a single number.</strong></p>
+<p>$$
+m_H>72\ \mathrm{GeV}\ \Longrightarrow\ \text{the transition is a crossover, not a first-order transition.}
+$$</p>
+<p>The measured $m_H=125.09$ GeV is $74\%$ above that threshold. So the transition is smooth: the expectation value turns on continuously, there are no bubbles, no walls, no supercooling, and <strong>no departure from equilibrium at all</strong>. The third Sakharov condition fails outright, not marginally.</p>
+<p><strong>Why the Higgs mass decides it.</strong> The transition is first order when the cubic term in the finite-temperature effective potential is strong enough to create a barrier between the symmetric and broken minima. That term is proportional to $g^3T$ from the gauge bosons and to $\lambda^{3/2}T$ from the scalar; a larger $\lambda$ raises the barrier at $T=0$ but also makes the transition smoother at finite temperature, and the competition resolves in favour of a crossover once the Higgs is heavier than about $72$–$80$ GeV. At $125$ GeV there is no barrier.</p>
+<p><strong>The lattice statement, which is stronger than the one-loop one.</strong> The crossover is established non-perturbatively, and the transition temperature is $T_c=159.5\pm1.5$ GeV. So this is not an artefact of the effective-potential approximation; it is a property of the theory.</p>
+<p><strong>What this closes, and what it leaves.</strong> It closes electroweak baryogenesis in the Standard Model, and it closes it for a reason that has nothing to do with CP violation: even a large CP phase would have nowhere to act. Any electroweak baryogenesis requires an extension that restores a first-order transition — a second doublet, a singlet, or a dimension-six operator — and all three are additions.</p>
+<p><strong>The link to <a href="the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">the effective-potential article</a>, stated because it is the corpus's own machinery.</strong> That article constructs the finite-temperature effective potential in the framework's language and records that the framework supplies the <em>form</em> of the potential but not its parameters. Here the consequence of that is sharp: the framework could in principle host the calculation, and the calculation's answer — a crossover — is decided by a parameter the framework does not fix. So the framework is neutral on the question, and the answer comes from the measurement.</p>
+<h2 id="leptogenesis-and-the-one-route-the-corpus-can-build">Leptogenesis, and the One Route the Corpus Can Build</h2>
+<p><strong>The mechanism.</strong> Add a heavy right-handed neutrino $N$ with a Majorana mass $M$. Its out-of-equilibrium decays violate $L$ by two units and $CP$ through the interference of tree and loop amplitudes. Sphalerons, still fast above $T_c$, convert part of the lepton asymmetry into a baryon asymmetry, and the conversion factor is fixed:</p>
+<p>$$
+B=\frac{8N_f+4N_H}{22N_f+13N_H}\left(B-L\right)=\frac{28}{79}\left(B-L\right)
+$$</p>
+<p>for $N_f=3$ generations and $N_H=1$ doublet. So</p>
+<p>$$
+B=\frac{28}{79}L_{\mathrm{generated}} ,
+$$</p>
+<p>and the observed $\eta=6.1\times10^{-10}$ requires $L\sim1.7\times10^{-9}$ in the same units.</p>
+<p><strong>Why this is the corpus's route.</strong> Because <a href="the-majorana-equation-in-biquaternionic-form.html">the Majorana article</a> constructs the Majorana condition, <a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">the seesaw article</a> constructs the heavy singlet and its mass, and <a href="the-pmns-matrix-and-lepton-mixing.html">the PMNS article</a> establishes that the lepton sector carries two additional phases beyond the CKM count. Those two phases are the CP violation the mechanism needs, and they are <em>not</em> constrained by the eleven-orders failure of the quark sector: the lepton phases are new parameters, measured to be nonzero by oscillation, and their size is not the Jarlskog invariant.</p>
+<p><strong>The honest limits of the claim.</strong></p>
+<ul>
+<li>The framework <strong>hosts</strong> the mechanism: the objects exist in the corpus and no new algebraic machinery is needed.</li>
+<li>The framework <strong>does not fix</strong> the heavy scale $M$, the light neutrino masses, or the two Majorana phases. Those are four of the seven or eight parameters <a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">the parameter-count article</a> added to the count.</li>
+<li>The mechanism <strong>can fail</strong>: for hierarchical light neutrinos there is an upper bound on the CP asymmetry, and part of the parameter space gives too small an asymmetry. So hosting the mechanism is not the same as producing the number.</li>
+</ul>
+<p><strong>The comparison with the other routes, in one line each.</strong> GUT baryogenesis needs a leptoquark, which the ceiling forbids. Affleck–Dine needs a flat direction in a supersymmetric theory, which the framework does not have. Electroweak baryogenesis needs a first-order transition, which the measured Higgs mass forbids. So of the four mechanisms, one is forbidden by the framework's own structure, one by the measured Higgs mass, one by the absence of supersymmetry, and one is available.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<p><strong>A mechanism, a topology, and three silences.</strong></p>
+<p><strong>Supplied.</strong></p>
+<ul>
+<li><strong>The anomaly identity.</strong> The reason $B$ and $L$ are not conserved — <a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">the anomalies</a> and <a href="the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">Fujikawa</a> articles derive the non-invariance of the measure, which is the whole content of $\partial_\mu j^\mu_B\propto F\tilde F$.</li>
+<li><strong>The quantisation.</strong> <a href="the-theta-vacuum-in-biquaternionic-form.html">The $\theta$-vacuum article</a> supplies the integer winding number from the biquaternion index, which is what makes $\Delta B=3$ discrete.</li>
+<li><strong>The instanton gas.</strong> <a href="the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The semiclassical article</a> supplies the Euclidean sum over sectors, which gives the $\theta$ dependence of the vacuum energy.</li>
+<li><strong>The Majorana condition</strong>, which is the only $B-L$ violation available here, and therefore the only route to leptogenesis.</li>
+</ul>
+<p><strong>Not supplied, by kind.</strong></p>
+<ul>
+<li><strong>A dark matter candidate.</strong> No new multiplet, no second sector, no stable neutral state beyond the axion and the sterile neutrino, both of which arrive for other reasons.</li>
+<li><strong>The sphaleron.</strong> A non-self-dual saddle point, and the framework's topological machinery is Euclidean and self-dual.</li>
+<li><strong>A first-order phase transition.</strong> Decided by $\lambda$, which the framework does not fix and which the measurement places in the crossover regime.</li>
+<li><strong>$B-L$ violation at a high scale.</strong> Requires a leptoquark or a heavy Majorana mass of a chosen size; the framework supplies neither the scale nor the choice.</li>
+</ul>
+<p><strong>The ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Omega_{\mathrm{DM}}h^2=0.1200$, $\Omega_b h^2=0.02237$, ratio $5.36$</td>
+<td><strong>Imported</strong>; ratio computed here</td>
+</tr>
+<tr>
+<td>$\Omega_\nu h^2<0.00129$, $1.1\%$ of the dark density</td>
+<td><strong>Computed</strong> here from $\Sigma m_\nu<0.12$ eV</td>
+</tr>
+<tr>
+<td>$N_\nu=2.9963\pm0.0074$</td>
+<td><strong>Imported</strong></td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{SI}}<2.6\times10^{-47}$ cm$^2$, $1.5\times10^{14}$ below weak</td>
+<td><strong>Imported</strong> limit; ratio computed here</td>
+</tr>
+<tr>
+<td>$\eta=6.1\times10^{-10}$</td>
+<td><strong>Imported</strong></td>
+</tr>
+<tr>
+<td>$J=3.13\times10^{-5}$</td>
+<td><strong>Computed</strong> here from $\lambda$, $A$, $\bar\rho$, $\bar\eta$, $\delta$</td>
+</tr>
+<tr>
+<td>$\eta\sim10^{-20}$ from $J$, eleven orders short</td>
+<td><strong>Imported</strong> estimate; the gap computed here</td>
+</tr>
+<tr>
+<td>$\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$</td>
+<td><strong>Imported</strong>; derived in the corpus's anomaly articles</td>
+</tr>
+<tr>
+<td>$\Delta B=\Delta L=3$, $\Delta(B-L)=0$</td>
+<td><strong>Imported</strong>; the integer from the $\theta$-vacuum article</td>
+</tr>
+<tr>
+<td>$E_{\mathrm{sph}}=9.0$ TeV, $B=1.90$</td>
+<td><strong>Imported</strong> energy; $B$ recomputed here</td>
+</tr>
+<tr>
+<td>$\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $100$ GeV</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>$\tau_p>10^{160}$ yr</td>
+<td><strong>Imported</strong> ('t Hooft)</td>
+</tr>
+<tr>
+<td>$m_H>72$ GeV gives a crossover; $T_c=159.5$ GeV</td>
+<td><strong>Imported</strong>; the comparison with $125.09$ computed here</td>
+</tr>
+<tr>
+<td>$B=28L/79$</td>
+<td><strong>Computed</strong> here from the standard conversion factor</td>
+</tr>
+<tr>
+<td>A dark matter candidate, the sphaleron, a first-order transition</td>
+<td><strong>Not available</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this article does not do.</strong> It does not review the dark matter literature, does not compute a relic density, does not solve the sphaleron's equations, and does not construct a leptogenesis model. It inventories the model's failures, separates the exact ones from the impressionistic one, computes the sphaleron's rate and the phase transition's character, and states which of the framework's existing apparatus bears on each.</p>
+<h2 id="summary">Summary</h2>
+<p>The Standard Model fails on two of these three subjects exactly, and on the third it succeeds in a way that forbids it from being useful.</p>
+<p>The dark matter is $5.36$ times the baryon density, and the model's spectrum is closed: neutrinos are $1.1\%$ of it at the cosmological mass bound, the Higgs decays in $10^{-22}$ s, and the neutron in $880$ s. The neutral-current bound $N_\nu=2.9963\pm0.0074$ confirms three species and excludes a fourth with a light neutrino, so the simplest door is shut by the same measurement that opened the model. Direct detection at $2.6\times10^{-47}$ cm$^2$ has pushed the simplest WIMP $1.5\times10^{14}$ below the weak scale. The two candidates the corpus can build — the axion and the sterile neutrino — both arrive as by-products of solving other problems.</p>
+<p>The baryon asymmetry is $\eta=6.1\times10^{-10}$, one per $1.6\times10^{9}$ photons, and it cannot be an initial condition because inflation erases it. The model satisfies the three Sakharov conditions nominally and fails all three quantitatively: the sphaleron violates $B$, but $B-L$ is conserved exactly, so from $B-L=0$ the answer is zero and not merely small; the CKM phase has $J=3.13\times10^{-5}$ and yields $\eta\sim10^{-20}$, eleven orders short; and the electroweak transition is a crossover for any Higgs above $72$ GeV, so there is no departure from equilibrium at $125.09$ GeV.</p>
+<p>The sphaleron is a $9.0$ TeV saddle point, and its rate is $\exp(-E_{\mathrm{sph}}/T)$: $10^{-39}$ at $100$ GeV, $10^{-24}$ near $T_c$, and exactly zero today. Its physical consequence is a proton lifetime above $10^{160}$ years.</p>
+<p>The framework supplies the anomaly identity, the quantised winding number, the instanton gas and the Majorana condition, and it does not supply the sphaleron — because the sphaleron is not self-dual and the algebra's topological machinery is. That is the sharpest statement in the article: the framework's topological apparatus stops at the barrier.</p>
+<p>The one route it can build is leptogenesis, with $B=28L/79$, and that route exists because two other articles needed the Majorana condition and the heavy singlet for different reasons. The corpus's only two working answers in this area arrived as by-products, and that is the pattern worth recording.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Omega_i h^2$</td>
+<td>Density in units of critical density, scaled by $h^2$</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>Baryon-to-photon ratio, $6.1\times10^{-10}$</td>
+</tr>
+<tr>
+<td>$N_\nu$</td>
+<td>Number of light neutrino species, $2.9963\pm0.0074$</td>
+</tr>
+<tr>
+<td>$J$</td>
+<td>Jarlskog invariant, $3.13\times10^{-5}$</td>
+</tr>
+<tr>
+<td>$j^\mu_B$, $j^\mu_L$</td>
+<td>Baryon and lepton number currents</td>
+</tr>
+<tr>
+<td>$F\tilde F$</td>
+<td>Topological charge density</td>
+</tr>
+<tr>
+<td>$E_{\mathrm{sph}}$</td>
+<td>Sphaleron energy, $9.0$ TeV</td>
+</tr>
+<tr>
+<td>$B(\lambda/g^2)$</td>
+<td>Sphaleron energy function, $1.90$</td>
+</tr>
+<tr>
+<td>$T_c$</td>
+<td>Electroweak transition temperature, $159.5$ GeV</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{SI}}$</td>
+<td>Spin-independent dark matter cross-section per nucleon</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>Heavy right-handed neutrino mass</td>
+</tr>
+<tr>
+<td>$N_f$, $N_H$</td>
+<td>Fermion generations, Higgs doublets</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>. The integer winding number, the central phase, and why $\Delta B$ is quantised.</li>
+<li><a href="instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>. The self-dual object the framework does host, and the reason the sphaleron is not one.</li>
+<li><a href="the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a>. The Euclidean sum that gives the $\theta$ dependence of the vacuum energy.</li>
+<li><a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a>. The anomalous divergence, which is the only Sakharov ingredient the model has.</li>
+<li><a href="the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a>. The measure's non-invariance, derived.</li>
+<li><a href="the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM Construction and Biquaternion Instanton Data</a>. Why the topological data is quaternionic linear data, and why a non-self-dual saddle point has none.</li>
+<li><a href="the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a>. The only $B-L$ violation the corpus can build, and hence the only route to leptogenesis.</li>
+<li><a href="the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a>. The heavy singlet, and its keV variant as a dark matter candidate.</li>
+<li><a href="the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a>. The corpus's one dark matter candidate that arrives for an independent reason.</li>
+<li><a href="the-pmns-matrix-and-lepton-mixing.html">The PMNS Matrix and Lepton Mixing</a>. The two Majorana phases that leptogenesis needs, and why the quark sector's failure does not constrain them.</li>
+<li><a href="the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a>. The object whose finite-temperature behaviour decides whether the transition is first order.</li>
+<li><a href="the-landau-pole-triviality-and-vacuum-stability.html">The Landau Pole, Triviality and Vacuum Stability</a>. The quartic at $125$ GeV, which is also what makes the transition a crossover.</li>
+<li><a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. The discrete inputs — the group, the content, the generation count — and where dark matter and $B-L$ violation would appear if they existed.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

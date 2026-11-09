@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Parton Model and Deep Inelastic Scattering — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-parton-model-and-deep-inelastic-scattering"><strong>The Parton Model and Deep Inelastic Scattering</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The standing of this article.</strong> Everything quantitative below is standard theory, written in the corpus's coordinates and notation. It is <strong>standard input</strong>, not a framework result.</p>
+<p><strong>The one thing that is different about this article.</strong> Elsewhere in this series the corpus imports <em>numbers</em>: the coupling at one scale, the value of $N_c$, the mass of the top. Here it imports <em>functions</em>. The parton densities $q(x,Q^2)$ and $g(x,Q^2)$ are not parameters of any Lagrangian and are not computable in perturbation theory; they are non-perturbative functions of one variable, and they are obtained by fitting data. That is a different kind of import, and it is the honest characterisation of the parton model: it is a factorisation statement, not a theory of the proton. <a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">The article on confinement</a> already established that the partonic description is not a description of a hadron but a description at a resolution; this article works out what that description can predict once the resolution is fixed.</p>
+<p><strong>The claim.</strong> Deep inelastic scattering measures two dimensionless functions of two variables, and the whole of the parton model is the statement that at large $Q^2$ those two functions collapse to functions of one variable, which are sums of parton densities weighted by charge squared.</p>
+<p>$$
+F_2(x,Q^2)\;\longrightarrow\;\sum_f e_f^2\,x\left[q_f(x)+\bar q_f(x)\right] .
+$$</p>
+<p>Four things follow, and they organise the article.</p>
+<ul>
+<li><strong>Two structure functions reduce to one relation.</strong> $F_2=2xF_1$ for spin-$\tfrac12$ constituents, and the derivation is three lines of Dirac trace. It is violated in proportion to the constituents' spin and transverse momentum, and the measured violation is small.</li>
+<li><strong>The one-variable functions are densities.</strong> They obey sum rules: momentum, baryon number, and the Gottfried relation. Two of the three hold; the third fails, and the failure is a measurement of $\bar d-\bar u$.</li>
+<li><strong>The residual two-variable dependence is the running coupling.</strong> The breaking of scaling is not a new interaction. It is $\alpha_s(Q^2)$ appearing where the naive model put zero, and its coefficient is a computable anomalous dimension.</li>
+<li><strong>One sum rule measures the coupling directly.</strong> The Gross–Llewellyn Smith sum rule is the cleanest instance in the whole of QCD where an integral over data returns $\alpha_s$.</li>
+</ul>
+<p><strong>The order.</strong> Kinematics, then the tensor decomposition, then scaling, then the parton model, then the spin relation and its violation, then the densities, then the sum rules and their two verdicts, then the gluon, then scaling violations with the anomalous dimensions computed and checked, then the coupling from the sum rule, then factorisation and the ledger.</p>
+<h2 id="kinematics-what-is-measured">Kinematics: What Is Measured</h2>
+<p><strong>The process and the variables.</strong> An electron of momentum $k$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries</p>
+<p>$$
+q=k-k' ,
+\qquad
+Q^2=-q^2>0 ,
+\qquad
+\nu=\frac{p\cdot q}{M} ,
+\qquad
+x=\frac{Q^2}{2\,p\cdot q}=\frac{Q^2}{2M\nu} ,
+\qquad
+y=\frac{p\cdot q}{p\cdot k} .
+$$</p>
+<p>Two of these are independent. The pair $(x,Q^2)$ is the conventional choice; $(x,y)$ is the experimental one, since $y$ is the fractional energy loss of the lepton, and</p>
+<p>$$
+Q^2=2MExy
+$$</p>
+<p>with $E$ the beam energy. The relation is worth keeping in mind because it is why a fixed-$x$ scan is a scan in $y$: raising $Q^2$ at fixed $x$ means raising the energy loss, and the kinematic ceiling is $y\le1$, hence $Q^2\le2MEx$.</p>
+<p><strong>Why $x$ is a fraction of null momentum.</strong> Write the momenta in light-cone components, $p^\pm=(p^0\pm p^3)/\sqrt2$. A boost along the collision axis sends $p^+\to\lambda p^+$, $p^-\to\lambda^{-1}p^-$, and leaves $p\cdot q=p^+q^-+p^-q^+-\vec p_\perp\!\cdot\vec q_\perp$ unchanged. So $Q^2$ and the denominator $2p\cdot q$, and therefore $x$, are <strong>invariant under the collinear boost</strong>: $x$ does not care how fast the proton moves along the beam. That is the formal reason the parton picture is frame-independent, and the statement the parton model needs is that in a frame where $p^+$ is large, the struck parton carries a fraction $x$ of it,</p>
+<p>$$
+k^+=x\,p^+ ,
+\qquad\text{with}\qquad k^2\approx0 ,
+$$</p>
+<p>so that $(k+q)^2=0$ reads $2xp\cdot q=Q^2$, which is the definition of $x$. The variable is not a bookkeeping device; it is the fraction of null momentum, and the elastic condition on a massless constituent fixes it uniquely.</p>
+<p><strong>The measured range.</strong> At HERA, $E_e=27.5$ GeV against $E_p=920$ GeV gives $s=4E_eE_p=1.01\times10^5$ GeV$^2$, that is $\sqrt s=318$ GeV, and the reach is $Q^2$ up to $s$ and $x$ down to $Q^2/s\approx10^{-5}$ at $Q^2=1$ GeV$^2$. The range matters: the small-$x$ region is where the gluon dominates and where the rise of $F_2$ is seen, and it is a region that only a collider reaches.</p>
+<h2 id="the-hadronic-tensor-and-the-two-structure-functions">The Hadronic Tensor and the Two Structure Functions</h2>
+<p><strong>The cross section factorises into a lepton tensor and a hadron tensor.</strong> With $L_{\mu\nu}=2\left(k_\mu k'_\nu+k_\nu k'_\mu-g_{\mu\nu}k\cdot k'\right)$ for an unpolarised lepton, the cross section is the contraction of $L$ with $W$, and carrying out the contraction leaves two independent coefficients:</p>
+<p>$$
+\frac{d^2\sigma}{dx\,dQ^2}=\frac{4\pi\alpha^2}{xQ^4}\left[\left(1-y-\frac{M^2x^2y^2}{Q^2}\right)F_2(x,Q^2)+y^2x\,F_1(x,Q^2)\right] ,
+$$</p>
+<p>and the two coefficients are what the experiment separates. The combination in brackets is the reason a measurement at one $y$ cannot give both functions: two energies are needed, and that is why the Rosenbluth separation exists in elastic scattering and its analogue in deep inelastic scattering is a scan in $y$.</p>
+<p><strong>The tensor decomposition.</strong> Lorentz invariance and parity fix the hadronic tensor to two independent structures for an unpolarised target:</p>
+<p>$$
+W_{\mu\nu}=-W_1\left(g_{\mu\nu}-\frac{q_\mu q_\nu}{q^2}\right)+\frac{W_2}{M^2}\left(p_\mu-\frac{p\cdot q}{q^2}q_\mu\right)\left(p_\nu-\frac{p\cdot q}{q^2}q_\nu\right) ,
+$$</p>
+<p>with the two scalar functions $W_1$ and $W_2$. The reason there are exactly two is a count: the available vectors are $p$ and $q$, the metric is one more tensor, and the antisymmetric $\epsilon$ is excluded by parity for an unpolarised target. Two structures, two functions, and no more.</p>
+<p><strong>The dimensionless versions.</strong></p>
+<p>$$
+F_1(x,Q^2)=M\,W_1 ,
+\qquad
+F_2(x,Q^2)=\nu\,W_2 ,
+$$</p>
+<p>and the factors of $M$ and $\nu$ are chosen so that both are dimensionless and, in the scaling limit, functions of $x$ alone. A third function $F_3$ exists and is measured with neutrinos; it is parity-odd and requires a weak exchange, which is <a href="the-weinberg-angle-the-neutral-current-and-the-z-coupling.html">the neutral-current article's</a> territory rather than this one's.</p>
+<h2 id="bjorken-scaling">Bjorken Scaling</h2>
+<p><strong>The statement.</strong> In the limit $Q^2\to\infty$ with $x$ fixed,</p>
+<p>$$
+F_1(x,Q^2)\to F_1(x) ,
+\qquad
+F_2(x,Q^2)\to F_2(x) ,
+$$</p>
+<p>with no residual $Q^2$ dependence at all. This is Bjorken scaling, and its content is that the probe resolves <em>pointlike, non-interacting</em> constituents: if the constituents were extended objects with a form factor, $F_2$ would fall with $Q^2$ the way the elastic form factor does, and if they interacted during the collision the impulse approximation would fail and the $Q^2$ dependence would be strong.</p>
+<p><strong>The measured statement, stated carefully.</strong> Scaling holds to within about ten per cent over the range $2\lesssim Q^2\lesssim 20$ GeV$^2$, and it fails logarithmically outside it. The word <em>logarithmically</em> is the whole of the next-to-last section: the violations are not power-law, they are slow, and a slow violation is the signature of a dimensionless coupling that runs rather than of a length scale that is being resolved.</p>
+<p><strong>Why scaling is a statement about dimension counting and not about dynamics.</strong> If the constituents are pointlike and free, the only scale in the problem is $Q$, so a dimensionless cross section can depend on $Q^2$ only through the ratio $Q^2/\mu^2$ with $\mu$ any other scale; with no other scale, there is nothing to form a ratio with, and the cross section must be $Q^2$-independent. The argument is dimensional analysis, and it is why scaling's failure <em>is</em> the discovery of a scale: the violations measure $\Lambda_{\mathrm{QCD}}$ in the same way that a form factor measures a radius.</p>
+<h2 id="the-parton-model-the-impulse-approximation">The Parton Model: The Impulse Approximation</h2>
+<p><strong>The three assumptions, named.</strong> The parton model is not a theory; it is a truncation, and its content is three separate assumptions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Assumption</th>
+<th>What it says</th>
+<th>What it costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Infinite momentum frame</td>
+<td>A frame exists in which the proton's partons are frozen over the collision time</td>
+<td>Corrections of order $M^2/Q^2$</td>
+</tr>
+<tr>
+<td>Impulse approximation</td>
+<td>The struck parton is free during the hard collision</td>
+<td>Corrections of order $\alpha_s$; these are the scaling violations</td>
+</tr>
+<tr>
+<td>Coherence</td>
+<td>The partons are incoherent, so probabilities add and amplitudes do not</td>
+<td>Corrections of order $\alpha_s$; the same ones</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The cross section as a convolution.</strong> With $f_i(\xi)$ the probability density for parton $i$ to carry fraction $\xi$,</p>
+<p>$$
+F_2(x,Q^2)=\sum_i e_i^2\,x\,f_i(x)\quad\text{at leading order,}
+$$</p>
+<p>and the reason the struck parton's fraction equals $x$ is the elastic condition computed above: only a parton with $\xi=x$ can absorb the photon and remain on shell. The delta function $\delta(\xi-x)$ that the convolution would carry is what collapses the integral to a point, and that collapse is the origin of scaling.</p>
+<p><strong>What the model predicts and what it does not.</strong> It predicts the <em>shape</em> of $F_2$ in $x$ only in the sense of being consistent with any shape; it predicts the <em>relations</em> between different processes, which is where its power lies. Neutrino and antineutrino scattering, the $W$ asymmetry, the Drell–Yan cross section and the $Z$ pole all use the same densities, and the consistency of all of them with one set of functions is the evidence that the densities are real objects rather than fit parameters.</p>
+<h2 id="callangross-derived-in-three-lines">Callan–Gross, Derived in Three Lines</h2>
+<p><strong>The partonic tensor.</strong> For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $k$,</p>
+<p>$$
+W^{(0)}_{\mu\nu}=e^2\,\delta\!\left((k+q)^2\right)\mathrm{Tr}\!\left[\not k\,\gamma_\mu(\not k+\not q)\gamma_\nu\right] ,
+$$</p>
+<p>up to an overall constant. The trace is standard,</p>
+<p>$$
+\mathrm{Tr}\!\left[\not k\,\gamma_\mu\not l\,\gamma_\nu\right]=4\left[k_\mu l_\nu+k_\nu l_\mu-g_{\mu\nu}\,k\cdot l\right] ,
+\qquad
+l=k+q .
+$$</p>
+<p><strong>The three lines.</strong> Contract with $q^\mu$, and use $k^2=l^2=0$ together with $l=k+q$:</p>
+<p>$$
+q\cdot k=\frac{l^2-k^2-q^2}{2}=\frac{Q^2}{2} ,
+\qquad
+q\cdot l=\frac{l^2+q^2-k^2}{2}=-\frac{Q^2}{2} ,
+\qquad
+k\cdot l=k\cdot q=\frac{Q^2}{2} ,
+$$</p>
+<p>so that</p>
+<p>$$
+q^\mu W^{(0)}_{\mu\nu}\propto 4\left[\frac{Q^2}{2}l_\nu-\frac{Q^2}{2}k_\nu-\frac{Q^2}{2}q_\nu\right]=\frac{4Q^2}{2}\left[l_\nu-k_\nu-q_\nu\right]=0 .
+$$</p>
+<p><strong>What the vanishing means.</strong> The partonic tensor is transverse to $q$, so it contains no longitudinal structure, so the coefficient of the $q$-longitudinal projector vanishes, so $W_2=2xW_1$ in the scaling limit — which is</p>
+<p>$$
+F_2(x)=2xF_1(x) ,
+$$</p>
+<p>the Callan–Gross relation. It is not an extra assumption about the proton. It is the Dirac trace of a massless spin-$\tfrac12$ line, and it holds whenever the struck object has spin $\tfrac12$, is massless, and is on shell.</p>
+<p><strong>The contrast with spin zero, which is the reason the relation is a spin measurement.</strong> For a scalar constituent the electromagnetic vertex is $(2k+q)_\mu$ and the tensor is proportional to $(2k+q)_\mu(2k+q)_\nu$. That tensor has no transverse part at all — $W_1=0$ and $W_2\neq0$ — so $F_1=0$ and the Callan–Gross relation fails maximally. A measurement of the ratio of the two structure functions is therefore a measurement of the constituents' spin, and the fact that the ratio comes out $\tfrac12$ is the discovery that the charged constituents of the proton have spin $\tfrac12$.</p>
+<h2 id="r-and-what-its-nonzero-value-says">R, and What Its Nonzero Value Says</h2>
+<p><strong>The ratio.</strong> The longitudinal-to-transverse ratio is</p>
+<p>$$
+R=\frac{\sigma_L}{\sigma_T}=\frac{F_2\left(1+\dfrac{4M^2x^2}{Q^2}\right)-2xF_1}{2xF_1} ,
+$$</p>
+<p>and the Callan–Gross relation is $R=0$. The kinematic factor $4M^2x^2/Q^2$ is the target-mass correction and is negligible over most of the measured range.</p>
+<p><strong>The measurement.</strong> $R$ is not zero. It is about $0.18$ at small $x$ and $Q^2\sim5$ GeV$^2$, falling toward $0.05$ at larger $x$. The size is the content: a value near one would say the constituents are scalars; a value of $0.18$ says the spin-$\tfrac12$ picture is right and the deviation is a correction.</p>
+<p><strong>Where the deviation comes from.</strong> Two sources, both of order $\alpha_s$. The gluon, once it is resolved, contributes a longitudinal coupling through the $g\to q\bar q$ splitting, and the splitting function's longitudinal part is not zero. The quarks' intrinsic transverse momentum does the same thing by giving the struck quark a virtuality. Both are corrections to the impulse approximation, and the fact that $R$ is small is the quantitative statement that the approximation is good at the scales where it is used.</p>
+<h2 id="the-parton-densities">The Parton Densities</h2>
+<p><strong>The definitions.</strong> For each flavour,</p>
+<p>$$
+q_f(x,Q^2)\,\text{and}\, \bar q_f(x,Q^2) ,
+\qquad
+g(x,Q^2) ,
+$$</p>
+<p>with $q_f(x)dx$ the number of quarks of flavour $f$ carrying a fraction between $x$ and $x+dx$. Six flavours and the gluon, at a scale, and the scale is part of the definition: a density without a $Q^2$ is not a density.</p>
+<p><strong>What is known and what is fitted.</strong> The densities are not predicted. They are parameterised at a low scale — typically a form like $x^{a}(1-x)^{b}(1+c\sqrt x)$ with a normalisation — and the parameters are fitted to several thousand data points spanning many processes, then evolved to other scales with the equations of the next-to-last section. The procedure is the opposite of a derivation: the theory supplies the evolution, the data supply the input, and the fit is where the two meet.</p>
+<p><strong>The gross shape, and why the shape is not arbitrary.</strong> At $Q^2\sim$ few GeV$^2$ the valence distributions peak around $x\approx0.15$ and vanish at both ends: $x\to0$ because a quark cannot carry zero fraction and still be a constituent in the counting, and $x\to1$ because a single quark cannot carry all the momentum without the others being absent. The sea is concentrated at small $x$ and rises as $x$ falls. The gluon is concentrated at small $x$ more strongly than the sea. Those three statements are qualitative, they are what any sensible parameterisation must reproduce, and they are the whole of what can be said without data.</p>
+<h2 id="the-sum-rules">The Sum Rules</h2>
+<p><strong>Three integrals, two verdicts.</strong> Each sum rule is an exact statement of the parton model, and each is a test.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sum rule</th>
+<th>Statement</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Momentum</td>
+<td>$\displaystyle\int_0^1 x\Big[\sum_f\left(q_f+\bar q_f\right)+g\Big]dx=1$</td>
+<td>Holds, by construction of the fit</td>
+</tr>
+<tr>
+<td>Baryon number</td>
+<td>$\displaystyle\int_0^1\left(u-\bar u\right)dx=2,\quad \int_0^1\left(d-\bar d\right)dx=1$</td>
+<td>Holds to the accuracy of the fit</td>
+</tr>
+<tr>
+<td>Gottfried</td>
+<td>$\displaystyle\int_0^1\frac{dx}{x}\left(F_2^{p}-F_2^{n}\right)=\frac13$</td>
+<td><strong>Fails</strong>: $0.235\pm0.026$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The momentum sum rule is the one that is not a test.</strong> It says that the momentum fractions add to one, and it is imposed on the fit rather than checked by it. What it does is fix the gluon's normalisation once the quark densities are known, which is why the gluon density at a low scale is determined indirectly: no leading-order process measures it directly, and the momentum sum rule is what pins it down.</p>
+<p><strong>The Gottfried sum rule, and its failure.</strong> In the naive parton model</p>
+<p>$$
+\int_0^1\frac{dx}{x}\left(F_2^{p}-F_2^{n}\right)=\frac13+\frac23\int_0^1\left(\bar u-\bar d\right)dx ,
+$$</p>
+<p>which equals $\tfrac13$ if the sea is flavour-symmetric, $\bar u=\bar d$. The measured value is $S_G=0.235\pm0.026$, so</p>
+<p>$$
+\int_0^1\left(\bar u-\bar d\right)dx=\frac32\left(S_G-\frac13\right)=-0.147\pm0.039 ,
+$$</p>
+<p>that is, there is an excess of $\bar d$ over $\bar u$ of about $0.147$. This is a real result and not a failure of QCD: the asymmetry is what pion cloud models predict, since the proton can emit a $\pi^+$ (giving $\bar d$) more readily than a $\pi^-$ (giving $\bar u$). What fails is the <em>assumption</em> that the sea is symmetric, and the sum rule is the measurement that assumption was never entitled to.</p>
+<p><strong>What a failed sum rule is worth.</strong> The Gottfried failure is the most useful kind of negative result: it does not weaken the framework, it measures a quantity the framework had assumed away. The article states it rather than quoting only the two sum rules that hold, because a list of confirmed predictions is not evidence unless the unconfirmed ones are listed beside them.</p>
+<h2 id="the-gluon-which-nothing-couples-to-at-leading-order">The Gluon, Which Nothing Couples to at Leading Order</h2>
+<p><strong>The problem.</strong> The photon couples to charge, and the gluon carries none. So at leading order the gluon density appears in no deep inelastic cross section at all, and yet it carries about half the proton's momentum at $Q^2\sim$ few GeV$^2$. The gluon is the largest single component of the proton and is invisible to the cleanest probe of the proton's structure.</p>
+<p><strong>The three ways it is reached.</strong> Through the momentum sum rule, which fixes its normalisation. Through the scaling violations, since $\partial F_2/\partial\ln Q^2$ at small $x$ is dominated by $g\to q\bar q$ and is therefore proportional to the gluon density. And through processes where it couples at tree level: dijet and photon-plus-jet production in the hadron collider, and the longitudinal structure function $F_L$.</p>
+<p><strong>Why this belongs in this article.</strong> The gluon's invisibility at leading order is the sharpest example of a general point: a density is defined by the operator that measures it, and different processes measure different combinations. The parton model's power is that finitely many densities, measured in finitely many processes, describe infinitely many cross sections; the price is that some densities require indirect routes.</p>
+<h2 id="scaling-violations-as-the-running-coupling">Scaling Violations as the Running Coupling</h2>
+<p><strong>The equation.</strong> At leading order the non-singlet density evolves by</p>
+<p>$$
+\frac{\partial q(x,Q^2)}{\partial\ln Q^2}=\frac{\alpha_s(Q^2)}{2\pi}\int_x^1\frac{dz}{z}\,P_{qq}(z)\,q\!\left(\frac{x}{z},Q^2\right) ,
+\qquad
+P_{qq}(z)=C_F\left(\frac{1+z^2}{1-z}\right)_+ ,
+$$</p>
+<p>which is the Dokshitzer–Gribov–Lipatov–Altarelli–Parisi equation for the quark-to-quark splitting, with $C_F=\tfrac43$ from <a href="the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html">the QCD article</a>. The plus prescription is written here in the form that subtracts the value at $z=1$, so that $\int_0^1[g(z)]_+dz=0$ for any $g$; many texts carry an extra $+\tfrac32\delta(1-z)$ together with a subtraction defined differently. The two conventions differ, and the test that decides which is in use is $A_1=0$ below: quark number does not run, in either convention, and a formula that gives $A_1\neq0$ has the delta term and the subtraction mismatched.</p>
+<p><strong>Its content in one sentence.</strong> The right side is the statement that a quark which carried fraction $x/z$ can be found at fraction $x$ after radiating a gluon that took away fraction $1-z$, and the plus prescription is the statement that the radiation is a <em>loss</em>: the virtual term is what keeps the quark number fixed while moving the momentum.</p>
+<p><strong>The moments, which are exact.</strong> Define $q_n=\int_0^1x^{n-1}q(x)dx$. Multiplying the equation by $x^{n-1}$ and integrating (with $x=zy$ in the convolution) turns it into an ordinary differential equation,</p>
+<p>$$
+\frac{dq_n}{d\ln Q^2}=\frac{\alpha_s}{2\pi}\,A_n\,q_n ,
+\qquad
+A_n=\int_0^1dz\,z^{n-1}P_{qq}(z)=C_F\int_0^1dz\,\frac{1+z^2}{1-z}\left(z^{n-1}-1\right).
+$$</p>
+<p>The integral is elementary because $\frac{1+z^2}{1-z}=-(1+z)+\frac{2}{1-z}$, and the result is</p>
+<p>$$
+\boxed{\;A_n=C_F\left[\frac32-\frac1n-\frac1{n+1}-2\sum_{j=1}^{n-1}\frac1j\right]\;}
+$$</p>
+<p>with the empty sum at $n=1$ taken as zero.</p>
+<p><strong>This formula was checked against direct quadrature.</strong> Evaluating the integral numerically with four million points and the integrand $(z^{n-1}-1)(1+z^2)/(1-z)$, which is finite at $z=1$, reproduces the closed form for $n=1,\dots,7$ to better than $2\times10^{-6}$ in absolute value, the residual being the quadrature error of the near-singular integrand rather than a discrepancy.</p>
+<p><strong>Two of its values carry the physics.</strong></p>
+<p>$$
+A_1=0\qquad\text{exactly, because}\qquad \frac32-1-\frac12-0=0 ,
+$$</p>
+<p>which is <strong>quark number conservation</strong>: the $n=1$ moment is the integral of the density, and it does not run. This is not an accident of the arithmetic; it is the statement that the plus prescription was built to conserve the number, and the formula reproduces that construction. And</p>
+<p>$$
+A_2=C_F\left[\frac32-\frac12-\frac13-2\right]=\frac43\times\left(-\frac43\right)=-\frac{16}{9}=-1.7778 ,
+$$</p>
+<p>which is the momentum sum's coefficient. That $A_2$ is negative is the statement that a quark <em>loses</em> momentum to its own radiation; that $A_1$ vanishes and $A_2$ does not is the statement that the loss is a redistribution and not a disappearance.</p>
+<p><strong>The solution, and the exponent that measures the coupling.</strong> Solving the two equations together,</p>
+<p>$$
+q_n(Q^2)=q_n(Q_0^2)\left[\frac{\alpha_s(Q^2)}{\alpha_s(Q_0^2)}\right]^{d_n} ,
+\qquad
+d_n=-\frac{A_n}{b_0} ,
+$$</p>
+<p>with $b_0$ the coefficient of <a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">the running article</a>. So the violation of scaling is not a new effect with a new parameter: it is $\alpha_s$ appearing in a power, and the power is a number the splitting function computes.</p>
+<p><strong>The numbers, with $N_f=4$ held fixed across the interval.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$A_n$</th>
+<th>$d_n$</th>
+<th>$M_n$ change, $2\to20$ GeV$^2$</th>
+<th>$M_n$ change, $2\to100$ GeV$^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0.0\%$</td>
+<td>$0.0\%$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$-1.7778$</td>
+<td>$0.2133$</td>
+<td>$-12.0\%$</td>
+<td>$-16.9\%$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$-2.7778$</td>
+<td>$0.3333$</td>
+<td>$-18.0\%$</td>
+<td>$-25.2\%$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$-3.4889$</td>
+<td>$0.4187$</td>
+<td>$-22.1\%$</td>
+<td>$-30.5\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of the exponents are exact rationals, and it is worth seeing them: $d_2=\tfrac{16}{75}$ and $d_3=\tfrac13$, both following from $A_2=-\tfrac{16}{9}$, $A_3=-\tfrac{25}{9}$ and $b_0=\tfrac{25}{3}$ at four flavours. The changes are computed from the one-loop coupling with $N_f=4$ held across the interval so that the comparison tests the exponent and not the threshold bookkeeping; changing $b_0$ at each threshold moves them by a few per cent.</p>
+<p><strong>What the table says, and it says something a table of $F_2$ would not.</strong> Every moment falls, and the higher moments fall faster. A distribution whose high moments fall faster than its low ones is a distribution whose large-$x$ region is being depleted and whose small-$x$ region is being filled: $x^n$ weights large $x$ more heavily as $n$ grows, so a faster fall at large $n$ is a faster loss where $x$ is large. That is the softening of the parton distribution, and it follows from the monotonicity of $A_n$ in $n$ alone, with no further computation.</p>
+<p><strong>The singlet, which this section has avoided.</strong> The measured $F_2$ does not fall at small $x$; it <em>rises</em>, by a large factor over the HERA range. That rise is not in the table, and the reason is that the table is the non-singlet sector. The full evolution mixes the quark singlet with the gluon, the mixing matrix has a positive eigenvalue, and the $g\to q\bar q$ feed at small $x$ beats the quark's own loss. The article states the mixing and does not compute it: the two-by-two matrix and its eigenvectors are a separate calculation, and the qualitative claim that the small-$x$ rise is a gluon effect is what the data actually establishes.</p>
+<h2 id="the-one-sum-rule-that-measures-the-coupling">The One Sum Rule That Measures the Coupling</h2>
+<p><strong>Gross–Llewellyn Smith.</strong> For neutrino and antineutrino scattering on an isoscalar target, the first moment of the parity-odd structure function is predicted to all orders:</p>
+<p>$$
+\int_0^1\left[F_3^{\nu p}(x,Q^2)+F_3^{\bar\nu p}(x,Q^2)\right]dx=3\left[1-\frac{\alpha_s}{\pi}-c_2\left(\frac{\alpha_s}{\pi}\right)^2-\dots\right] ,
+$$</p>
+<p>with the leading correction fixed and computable. The prefactor three is the number of valence quarks, that is $N_c$ read as a baryon number, and the correction is the same $\alpha_s$ that runs.</p>
+<p><strong>The arithmetic, and the size of the truncation.</strong> At $\alpha_s=0.2336$, the value at $3.2$ GeV with four flavours, the one-loop prediction is</p>
+<p>$$
+3\left(1-\frac{0.2336}{\pi}\right)=3(1-0.0744)=2.777 ,
+$$</p>
+<p>against a measured $2.50\pm0.08$. The gap is $0.28$, and the one-loop term itself is $3\times0.0744=0.223$, so the one-loop correction accounts for four fifths of the distance from $3$ and leaves $0.28$ unexplained. Closing that residual requires the coefficient of $(\alpha_s/\pi)^2$ to be about $16.7$ in the normalisation above — a large coefficient, and large coefficients are what asymptotic series have. The honest reading is that the sum rule determines $\alpha_s$ only once the two- and three-loop terms are included, which is why the extraction is quoted at next-to-next-to-leading order. The published next-to-next-to-leading-order analysis of the same data gives $\alpha_s(M_Z)=0.119\pm0.005$, consistent with the $Z$-pole value of $0.1179$ of the running article.</p>
+<p><strong>Why this is the cleanest coupling determination.</strong> The first moment is protected against the parton densities: whatever the densities are, their integral is fixed by the valence count, so the sum rule has no density uncertainty. What is left is the coefficient, which is a pure perturbative calculation. Every other determination convolves a hard coefficient with densities that must be fitted; this one does not, and that is why it is quoted as a test of the coupling rather than a test of the densities.</p>
+<h2 id="factorisation-and-the-two-scales">Factorisation and the Two Scales</h2>
+<p><strong>The theorem, stated and not proved.</strong> The cross section factorises:</p>
+<p>$$
+F_2(x,Q^2)=\sum_i C_i\!\left(x,\frac{Q^2}{\mu_F^2},\alpha_s(\mu_R)\right)\otimes f_i\!\left(x,\mu_F^2\right) ,
+$$</p>
+<p>a convolution of a hard coefficient, computable in perturbation theory, with a density, which is not. The two scales $\mu_R$ and $\mu_F$ are the renormalisation and factorisation scales, both arbitrary, and the statement of the theorem is that the dependence cancels order by order.</p>
+<p><strong>Why two scales and not one.</strong> $\mu_R$ is where $\alpha_s$ is evaluated; $\mu_F$ is where the density is defined, that is, the boundary between "short distance, computed" and "long distance, fitted". They are conceptually distinct and are often set equal by convenience. The residual dependence on either, at a finite order, is the truncation error, and it is the reason every extracted $\alpha_s$ carries a scale as part of its specification — the same discipline <a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">the running article</a> imposes on $\alpha_s$ determinations at different scales.</p>
+<p><strong>The scheme, in one line.</strong> Changing the scheme moves a finite piece from the coefficient into the density, and leaves the product unchanged. So the densities are scheme-dependent objects, like $\Lambda$, and for the same reason: they are defined by a subtraction, not by a measurement.</p>
+<p><strong>What factorisation does not say.</strong> It does not say the densities exist as probability densities in a frame-independent sense — that reading is the parton model's extra assumption, valid at leading order and in the infinite-momentum frame. It does not apply to the whole cross section: hadrons in the final state, and the region where two hard scales compete, need generalised versions. And it is a theorem about the leading power in $1/Q^2$, with the corrections being the higher-twist terms this article does not compute.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<p><strong>Three things, and two of them are negative.</strong></p>
+<p><strong>One: the null direction exists in the algebra.</strong> The whole construction rests on a light-cone decomposition, and a light-cone decomposition rests on a null direction. In $\mathbb{B}$ the null objects are the nilpotent elements, $\vec\Upsilon^2=0$, and their exponentials are exact unipotent elements, $\exp(r_t\vec\Upsilon)=e_t+r_t\vec\Upsilon$ — the null rotations of <a href="the-photon-in-biquaternionic-form.html">the photon article</a>. So the algebra contains the collinear structure the parton model needs, and $x$, being a ratio of null components, is invariant under the unipotent boost because the boost is an element of the algebra's own group. This is a real statement and it is small: the algebra hosts the kinematics.</p>
+<p><strong>Two, negative: it does not supply the constituents.</strong> The triplet does not exist in $\mathbb{B}$, as <a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">the ceiling article</a> established and the QCD article restated. So the partons whose densities this article fits are not objects of the algebra at all. The densities are functions on $x$ that describe the distribution of things the algebra cannot host.</p>
+<p><strong>Three, negative: it does not supply the densities.</strong> Nothing in $\mathbb{B}$ produces $q(x)$. The densities come from data, and no amount of algebra will replace them, for the same reason that no amount of algebra produces the proton mass: they are non-perturbative. The only framework object that touches them is the scale at which they are defined, and that scale is the running coupling's.</p>
+<p><strong>The ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q^2$, $x$, $y$, $\nu$ and their relations</td>
+<td><strong>Standard kinematics</strong>, and invariant under the algebra's unipotent boost</td>
+</tr>
+<tr>
+<td>The null direction and its unipotent exponential</td>
+<td><strong>Derived in the algebra</strong>; the light-cone structure's carrier</td>
+</tr>
+<tr>
+<td>The two-structure decomposition of $W_{\mu\nu}$</td>
+<td><strong>Imported.</strong> Lorentz invariance and parity</td>
+</tr>
+<tr>
+<td>Bjorken scaling</td>
+<td><strong>Imported.</strong> Dimensional analysis plus pointlike constituents</td>
+</tr>
+<tr>
+<td>The impulse approximation and the infinite-momentum frame</td>
+<td><strong>Imported.</strong> An approximation, with $\alpha_s$ corrections</td>
+</tr>
+<tr>
+<td>$F_2=2xF_1$</td>
+<td><strong>Derived here</strong> from the Dirac trace of a massless spin-$\tfrac12$ line</td>
+</tr>
+<tr>
+<td>The parton densities $q_f$, $\bar q_f$, $g$</td>
+<td><strong>Imported from data.</strong> Functions, not parameters</td>
+</tr>
+<tr>
+<td>The momentum and baryon-number sum rules</td>
+<td><strong>Imported</strong>; imposed on the fit</td>
+</tr>
+<tr>
+<td>The Gottfried sum rule and its failure</td>
+<td><strong>Imported</strong>, measured, and it fails: $\int(\bar d-\bar u)=0.147$</td>
+</tr>
+<tr>
+<td>$P_{qq}$ and $A_n$</td>
+<td><strong>Imported</strong> splitting function; $A_n$ <strong>derived</strong> here and checked against quadrature</td>
+</tr>
+<tr>
+<td>The DGLAP equation</td>
+<td><strong>Imported</strong>; its moment solution <strong>derived here</strong></td>
+</tr>
+<tr>
+<td>The exponents $d_n=-A_n/b_0$</td>
+<td><strong>Derived</strong> here, with $b_0$ from the running article</td>
+</tr>
+<tr>
+<td>The Gross–Llewellyn Smith sum rule</td>
+<td><strong>Imported</strong>, and its one-loop arithmetic done here</td>
+</tr>
+<tr>
+<td>Factorisation</td>
+<td><strong>Imported theorem</strong>, not proved</td>
+</tr>
+<tr>
+<td>The triplet, the octet, the number three</td>
+<td><strong>Not available in $\mathbb{B}$</strong>, per the ceiling</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this article does not do.</strong> It does not compute a cross section, does not fit a density, does not solve the singlet evolution, and does not prove factorisation. It states what is measured, derives the two relations that can be derived from a trace and an integral, and marks the rest.</p>
+<h2 id="summary">Summary</h2>
+<p>Deep inelastic scattering measures two functions of two variables, and the parton model is the statement that at large $Q^2$ they collapse to functions of one: $F_2(x)=\sum_fe_f^2x(q_f+\bar q_f)$. The collapse is dimensional analysis plus the elastic condition $2xp\cdot q=Q^2$, and the variable $x$ is the fraction of null momentum, invariant under the collinear boost because the denominator $2p\cdot q$ is.</p>
+<p>The two structure functions are related by the Dirac trace. Contracting the massless spin-$\tfrac12$ partonic tensor with $q^\mu$ gives zero, using $q\cdot k=Q^2/2$, $q\cdot l=-Q^2/2$ and $k\cdot l=Q^2/2$, so the tensor is purely transverse and $F_2=2xF_1$. For a scalar constituent the tensor has no transverse part at all and $F_1=0$, so the ratio is a spin measurement. The measured $R\approx0.18$ says the spin-$\tfrac12$ picture is right and the deviation is an $\alpha_s$ correction.</p>
+<p>The densities are functions, not numbers: this is the one place in the series where the corpus imports something it cannot even in principle compute. Three sum rules test them. Momentum and baryon number hold, and the first is imposed rather than tested. Gottfried fails: $0.235\pm0.026$ against $\tfrac13$, which measures an excess of $\bar d$ over $\bar u$ of $0.147\pm0.039$.</p>
+<p>The residual $Q^2$ dependence is the running coupling. The moment eigenvalues of the splitting function are $A_n=C_F[\tfrac32-\tfrac1n-\tfrac1{n+1}-2H_{n-1}]$, checked against four-million-point quadrature to $2\times10^{-6}$; $A_1=0$ exactly, which is quark number conservation; $A_2=-\tfrac{16}{9}$; and the moments evolve as $\alpha_s^{d_n}$ with $d_2=\tfrac{16}{75}$ and $d_3=\tfrac13$. Every moment falls and the higher ones fall faster, so the distribution softens, and the measured small-$x$ rise is the singlet and gluon sector that this article names and does not compute.</p>
+<p>One sum rule measures the coupling without densities: Gross–Llewellyn Smith, $3(1-\alpha_s/\pi)=2.777$ at $\alpha_s=0.2336$ against a measured $2.50$, with the gap being the higher-order terms, and an NNLO analysis giving $\alpha_s(M_Z)=0.119\pm0.005$.</p>
+<p>The framework supplies the null direction and the unipotent boost that make the light-cone construction available. It does not supply the triplet, the constituents, or the densities, and the ledger says so line by line.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$, $k'$</td>
+<td>Initial and final lepton momenta</td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>Target momentum; $M$ the target mass</td>
+</tr>
+<tr>
+<td>$q=k-k'$</td>
+<td>Momentum transfer</td>
+</tr>
+<tr>
+<td>$Q^2=-q^2$</td>
+<td>Virtuality of the exchange, positive</td>
+</tr>
+<tr>
+<td>$\nu=p\cdot q/M$</td>
+<td>Energy transfer in the target rest frame</td>
+</tr>
+<tr>
+<td>$x=Q^2/(2p\cdot q)$</td>
+<td>Bjorken variable; the parton's fraction of null momentum</td>
+</tr>
+<tr>
+<td>$y=p\cdot q/(p\cdot k)$</td>
+<td>Inelasticity, $Q^2=2MExy$</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}$</td>
+<td>Hadronic tensor</td>
+</tr>
+<tr>
+<td>$W_1$, $W_2$</td>
+<td>Its two scalar coefficients</td>
+</tr>
+<tr>
+<td>$F_1=MW_1$, $F_2=\nu W_2$</td>
+<td>Dimensionless structure functions</td>
+</tr>
+<tr>
+<td>$F_3$</td>
+<td>Parity-odd structure function, measured with neutrinos</td>
+</tr>
+<tr>
+<td>$R=\sigma_L/\sigma_T$</td>
+<td>Longitudinal-to-transverse ratio; zero for spin-$\tfrac12$</td>
+</tr>
+<tr>
+<td>$q_f(x,Q^2)$, $\bar q_f$, $g$</td>
+<td>Parton densities</td>
+</tr>
+<tr>
+<td>$P_{qq}(z)$</td>
+<td>Quark-to-quark splitting function</td>
+</tr>
+<tr>
+<td>$A_n$</td>
+<td>Its $n$-th moment, $C_F[\tfrac32-\tfrac1n-\tfrac1{n+1}-2H_{n-1}]$</td>
+</tr>
+<tr>
+<td>$d_n=-A_n/b_0$</td>
+<td>Exponent of $\alpha_s$ in the moment's evolution</td>
+</tr>
+<tr>
+<td>$S_G$</td>
+<td>Gottfried sum, measured $0.235\pm0.026$</td>
+</tr>
+<tr>
+<td>$\mu_R$, $\mu_F$</td>
+<td>Renormalisation and factorisation scales</td>
+</tr>
+<tr>
+<td>$s=4E_eE_p$</td>
+<td>Centre-of-mass energy squared</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a>. $b_0$, $\alpha_s(Q^2)$ and the numbers the exponents here are built from.</li>
+<li><a href="the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html">The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules</a>. $C_F=\tfrac43$, the vertices the splitting functions are computed from.</li>
+<li><a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a>. Why the partonic description is a description at a resolution, and what confinement does to it.</li>
+<li><a href="the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a>. The spin-$\tfrac12$ carrier, and what the algebra does and does not say about compositeness.</li>
+<li><a href="the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a>. The null direction and the exact unipotent null rotations that the light-cone construction uses.</li>
+<li><a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</a>. The reason the constituents are not objects of the algebra.</li>
+<li><a href="the-weinberg-angle-the-neutral-current-and-the-z-coupling.html">The Weinberg Angle, the Neutral Current and the $Z$ Coupling</a>. The $Z$ exchange that corrects the photon-only cross section, and $F_3$'s parity-odd partner.</li>
+<li><a href="lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a>. The method that computes what the densities can only be fitted to.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

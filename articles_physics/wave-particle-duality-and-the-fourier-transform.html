@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave–Particle Duality and the Fourier Transform — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="waveparticle-duality-and-the-fourier-transform"><strong>Wave–Particle Duality and the Fourier Transform</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The paradox is a change of basis mistaken for a change of object.</strong> A quantum object is said to behave sometimes as a wave and sometimes as a particle. The two descriptions are Fourier transforms of each other, and a Fourier transform is unitary. Nothing is created and nothing is destroyed when a state is written one way or the other, so there is nothing for an object to switch between. There is one object and two bases.</p>
+<p><strong>This article is the general statement, and that is why it sits in the framework section and not inside a quantum one.</strong> It contains no result about any particular particle. It states the property that the particle articles use, and it says where in the algebra the property comes from. It is filed above both quantum sections because its two cleanest instances sit on either side of the split: the Schrödinger equation is non-relativistic and the Klein–Gordon equation is not, and the transform treats them alike.</p>
+<p><strong>What is standard.</strong> The position–momentum Fourier pair, the de Broglie identification $p=\hbar k$, the uncertainty relation as a bandwidth theorem, the plane wave and the delta function as the two extremes, and the diagonalisation of the derivative by the transform are textbook material and are flagged as such throughout. They are given in <em>Derivatives, Fields and Transforms</em>, which owns the transform and its symbol, and they are not re-derived here.</p>
+<p><strong>What is the algebra's.</strong> The textbook has two quadratic structures as well — the inner product on Hilbert space and the dispersion relation on momentum space. In the textbook the two live on different spaces and are related by Plancherel, which is the statement that the inner product of two states equals the inner product of their transforms; the textbook compares two spaces and never presents the inner product and the dispersion relation as two forms on one object. Here it does: both are defined on every element of $\mathbb{B}$, and both can be evaluated on the same element. That is what makes the comparison possible, and it is not idle: the first is positive definite on the state module while the second vanishes there identically, so the two arms cannot rest on one form. <strong>That distinctness, on a single algebra, is the structural content the corpus adds</strong>, and it is what makes the duality two readings of two forms rather than two readings of one.</p>
+<p><strong>The transform is the switch between them, and the switch is exact.</strong> The arithmetic below closes at $4.4\times10^{-17}$ and the operator identity at $1.0\times10^{-13}$.</p>
+<p><strong>Why the corpus needs the statement.</strong> Every article of the corpus writes its equations in wave numbers: $\tilde K_{\Phi}$, $k_{t}^{\prime}$, $k_{\Phi}$, $k_{m}$, $s$. A reader is entitled to ask whether the wave-number form is a derivation or a transcription. The answer given here is that it is a transcription of a differential equation that the transform licenses, that the licence has an exact condition, and that the condition is the centrality of the coefficients.</p>
+<h2 id="the-general-property">The General Property</h2>
+<p><strong>Differentiation is infinitesimal translation, and the exponential basis is the basis in which translation is diagonal.</strong> A derivative does not belong to a function. It belongs to the pair of a function and a basis. Change to the basis whose elements are the characters of translation, and the derivative becomes the multiplication operator carried by the character's label. In one dimension,</p>
+<p>$$
+\partial_{x}\longmapsto i\,k ,
+\qquad
+\partial_{x}^{2}+a\,\partial_{x}+b\longmapsto -k^{2}+i\,a\,k+b .
+$$</p>
+<p><strong>A constant-coefficient linear equation is therefore two equations.</strong> It is a differential equation in the position basis and an algebraic equation in the wave-number basis. The two are the same equation, and the map between them is unitary, so norms, inner products and expectation values cross unchanged.</p>
+<p><strong>In this algebra the label is an element, not a number.</strong> On the material sector the gradient becomes multiplication by the wave-number element,</p>
+<p>$$
+\tilde\nabla\longmapsto i\,\tilde K_{\Phi},
+\qquad
+\tilde K_{\Phi}=i\,k_{t}^{\prime}e_{t}+\vec k_{\Phi},
+\qquad
+\tilde K_{\Phi}^{\natural}=i\,k_{t}^{\prime}e_{t}-\vec k_{\Phi},
+$$</p>
+<p>and the d'Alembertian becomes a scalar because the product $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is the quaternion norm, which is central:</p>
+<p>$$
+\tilde\nabla\tilde\nabla^{\natural}=\Box\longmapsto -s ,
+\qquad
+s:=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
+$$</p>
+<p><strong>The identification is exact up to the constant and the sign of the transform convention</strong>, which is the hedge <em>Derivatives, Fields and Transforms</em> states for the symbol and does not attempt to remove: the same transform written with $2\pi$ and with the opposite exponent moves the constant and flips the sign, and none of the statements below depends on which is chosen.</p>
+<p><strong>The whole of the corpus's wave-number notation rests on that one centrality.</strong> $s$ is a number at each wave number, so a differential equation whose only non-constant object is $\Box$ becomes an equation between numbers. Centrality, however, is not the boundary of the method; constancy is. A constant coefficient passes through the transform whether it is central or not, and the norm of the resulting multiplier is central even when the multiplier is not, so a constant non-central potential translates the shell instead of destroying the algebra. The boundary is stated in the section <em>Where the Transcription Stops</em>.</p>
+<p><strong>Two qualifications, both standard.</strong> A coefficient that varies in space has a convolution for an image, and that is the limit of the method rather than a defect of it. And the transform is not a dynamics: it carries an equation to an equivalent equation, and it says nothing about which of the two descriptions a laboratory realises.</p>
+<h2 id="two-forms-two-descriptions">Two Forms, Two Descriptions</h2>
+<p><strong>The algebra carries two quadratic structures, and they are distinct objects.</strong> That distinctness is what makes this a claim rather than a definition. The textbook has the transform and the dispersion relation. The algebra has, in addition, a definite form on the field itself, and it also has a form on the derivative whose level sets are the dispersion surfaces.</p>
+<p><strong>The words particle and wave are names for the two arms, and nothing more.</strong> The particle arm is a conserved count; the wave arm is a fixed level set. Neither name is a claim about what a particle or a wave is. The names are kept because they are the ones the reader already has, and the Limits section at the end states what each of them does not mean.</p>
+<h3 id="the-element-form-and-the-count">The element form and the count</h3>
+<p><strong>The element form here is the Hermitian form, and it must be.</strong> For a field $\tilde\Xi$ in the state module the density is</p>
+<p>$$
+\rho=\mathrm{Tr}\!\left(\tilde\Xi^{\dagger}\tilde\Xi\right),
+$$</p>
+<p>and the current is the antisymmetric bilinear carrying one gradient,</p>
+<p>$$
+\vec J=\frac{c}{2\,k_{m}\,i}\,\mathrm{Tr}\!\left(\tilde\Xi^{\dagger}\vec\nabla\tilde\Xi-\left(\vec\nabla\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
+$$</p>
+<p>The pair satisfies</p>
+<p>$$
+c\,\partial_{r_{t}^{\prime}}\rho+\vec\nabla\cdot\vec J=0 ,
+$$</p>
+<p>with $r_{t}^{\prime}=c\,t$ a length, as the corpus's phase $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r_{t}^{\prime}/c)\bigr)$ requires. The factor $c$ in front of the time derivative is not decoration: $r_{t}^{\prime}$ is a length, so $c\,\partial_{r_{t}^{\prime}}$ is a time derivative, and with $\vec J$ carrying a velocity beside $\rho$ both terms come out as $\lvert\tilde\Xi\rvert^{2}$ per unit time. Articles that absorb the $c$ into $\vec J$ write the law without it in front of the derivative; the identity in the next section is the same either way, because it is the statement that the current is orthogonal to the four-wave-number and does not depend on how the current is normalised.</p>
+<p><strong>It cannot be the quaternion norm, because the quaternion norm vanishes on the state module.</strong> The state module lies on the zero-divisor cone, so $\langle\tilde\Xi\rangle_{\natural}=0$ for every state while $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)>0$. Checked on the idempotent $\tilde\Pi_1$ and on $\tilde\Pi_1(1+a\tilde e_x)$: the determinant, which is the quaternion norm, is $0$ in both cases, while the trace is $1.000000$, $1.090000$ and $3.890000$ at $a=0,\ 0.3,\ 1.7$. <strong>A count built on the quaternion norm would count nothing</strong>, and that is the precise sense in which the two arms of the duality rest on two different forms.</p>
+<p><strong>The number of derivatives in the density is the order of the equation in time, minus one.</strong> The Schrödinger and Dirac densities carry none and their currents carry one. The Klein–Gordon density carries one,</p>
+<p>$$
+\rho=\frac{i}{2\,k_{m}}\left(\tilde\Xi^{*}\partial_{r_{t}^{\prime}}\tilde\Xi-\tilde\Xi\,\partial_{r_{t}^{\prime}}\tilde\Xi^{*}\right),
+$$</p>
+<p>and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{\omega}{c\,k_{m}}\lvert N\rvert^{2}$.</p>
+<p><strong>Why the density uses $\dagger$ and this one uses $*$, and why the indefiniteness is not the conjugation's fault.</strong> The state module is a minimal left ideal, $\mathbb{B}\tilde\Pi$ for an idempotent $\tilde\Pi$, and a left ideal is a subspace of a matrix algebra on which the pairing that is always available is the trace of the adjoint, $\mathrm{Tr}(\tilde Q_1^{\dagger}\tilde Q_2)$. That pairing is positive definite on $\mathbb{B}\tilde\Pi$ and this needs no argument beyond the idempotent: writing $\tilde Q=\tilde M\tilde\Pi$, one has $\mathrm{Tr}(\tilde\Pi\tilde M^{\dagger}\tilde M\tilde\Pi)=\lVert\tilde M\tilde\Pi\rVert^{2}\ge0$, with equality only at $\tilde Q=0$. So the density is $\tilde\Xi^{\dagger}\tilde\Xi$ because the carrier is that ideal, not because a choice was made among forms. In the full algebra the pairing is the algebra's own conjugation, and there $\tilde\Xi^{*}\tilde\Xi=a^{2}+\lvert\vec v\rvert^{2}$ is a central scalar that is real only on the real slice, so it is no longer a modulus. But that is not what makes the Klein–Gordon density indefinite: the <strong>derivative</strong> is. The bracket $\tilde\Xi^{*}\partial\tilde\Xi-\tilde\Xi\,\partial\tilde\Xi^{*}$ is a Wronskian, antisymmetric in the two solutions, so it changes sign when the frequency does. A second-order equation needs two initial data, and a Wronskian is the only bilinear available; no single-element form can be its conserved count. The corpus's Klein–Gordon article states the negative-probability problem as a property of the current and not of the notation, and this is why.</p>
+<p><strong>That equation is the particle statement.</strong> It says that a number is conserved: whatever leaves one region enters the next, and none is created. The number is the count of the thing the field describes, and the count is what a detector registers. Nothing in the equation refers to a wavelength, a phase or an interference pattern. The density is Hermitian and lies in $\mathbb{B}_{\Psi}$; the current is a real spatial vector and lies in $\mathbb{B}_{\Phi}$.</p>
+<p><strong>For a first-order equation it is the norm-preservation theorem written locally.</strong> <em>Unitarity from Centrality</em> proves the global form: a dynamics generated by a Hermitian element preserves the Hermitian norm, and the unit of that flow is forced into the centre. The continuity equation is that fact differentiated at each point, and the divergence theorem connects the two. For a second-order equation the global statement is not norm preservation, because there is no positive norm to preserve.</p>
+<h3 id="the-gradient-form-and-the-level-set">The gradient form and the level set</h3>
+<p><strong>The gradient form assigns a number to the derivative, and it is the operator that acts on the field.</strong> The product with the conjugate is the d'Alembertian outright, not merely its scalar part, because the product of an element and its quaternion conjugate is central:</p>
+<p>$$
+\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box ,
+$$</p>
+<p>and its symbol is $-s$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:</p>
+<p>$$
+\left(\Box-k_{m}^{2}\right)\tilde F=0
+\quad\longleftrightarrow\quad
+s=-k_{m}^{2}
+\quad\longleftrightarrow\quad
+k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_{m}^{2}.
+$$</p>
+<p><strong>That equation is the wave statement.</strong> It fixes a surface in wave-number space and says the field lives on it. The surface is the mass shell, its zero level is the light cone, and a field on it is a superposition of the plane waves whose labels lie on it. Nothing in the equation counts anything.</p>
+<p><strong>The level set is a norm's level set only where the symbol is homogeneous of degree two.</strong> That holds for the second-order relativistic equations, whose symbol is $-s$, and it fails for the Schrödinger equation, whose symbol is affine. The wave arm therefore reads <em>a fixed level set of the symbol</em>; the identity of that level set with a norm is a property of the equation, not of the transform, and the next-but-one section states the exception rather than hiding it.</p>
+<h3 id="the-two-side-by-side">The two side by side</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>element form</th>
+<th>gradient form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>object</td>
+<td>$ \tilde\Xi^{\dagger}\tilde\Xi $</td>
+<td>$ \tilde\nabla\tilde\nabla^{\natural} $</td>
+</tr>
+<tr>
+<td>what it is</td>
+<td>the Hermitian form</td>
+<td>the quaternion norm</td>
+</tr>
+<tr>
+<td>on the state module</td>
+<td>positive definite</td>
+<td>identically zero</td>
+</tr>
+<tr>
+<td>differential statement</td>
+<td>$ c\,\partial_{r_{t}^{\prime}}\rho+\vec\nabla\cdot\vec J=0 $</td>
+<td>$ \left(\Box-k_{m}^{2}\right)\tilde F=0 $</td>
+</tr>
+<tr>
+<td>transformed statement</td>
+<td>$ \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 $</td>
+<td>$ s=-k_{m}^{2} $</td>
+</tr>
+<tr>
+<td>what it names</td>
+<td>a conserved count</td>
+<td>a fixed surface</td>
+</tr>
+<tr>
+<td>what it counts</td>
+<td>particles</td>
+<td>wave crests</td>
+</tr>
+<tr>
+<td>its limit</td>
+<td>a second-order equation has no such density</td>
+<td>a level with no real preimage</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last line names the two limits.</strong> A second-order equation in time carries no positive conserved density of the single-element kind, which is the Klein–Gordon defect. A level $s=-k_{m}^{2}$ with no real wave number is the evanescent region. Neither limit is a defect of the transform; both are properties of the forms.</p>
+<p><strong>Read together, the table is the duality.</strong> One form gives a number that is conserved in space and time. The other gives a number that is constant in wave-number space. The first is what a particle is, in this algebra: a conserved count. The second is what a wave is: a fixed surface of labels. The transform is the map between the statements, and it is exact because both are statements about numbers the transform preserves. The two numbers are not the same number, and that is why the map has content.</p>
+<h2 id="the-switch">The Switch</h2>
+<p><strong>The transform carries one row of the table to the other in one step.</strong> Take the continuity equation and transform in space and time together. In the kernel of <em>Derivatives, Fields and Transforms</em>, the derivatives become $-i\omega$ and $+i\vec k_{\Phi}$, so</p>
+<p>$$
+c\,\partial_{r_{t}^{\prime}}\rho+\vec\nabla\cdot\vec J=0
+\quad\longmapsto\quad
+-i\omega\,\tilde\rho+i\vec k_{\Phi}\cdot\tilde{\vec J}=0
+\quad\Longleftrightarrow\quad
+\omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 .
+$$</p>
+<p><strong>The sign is the corpus's phase, and it is worth naming because the other choice is common.</strong> A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r_{t}^{\prime}/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\omega t)$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; <em>Derivatives, Fields and Transforms</em> states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.</p>
+<p><strong>The image carries the frequency $\omega$, not $k_{t}^{\prime}$.</strong> The conjugate of $r_{t}^{\prime}$ is $k_{t}^{\prime}=\omega/c$, and the $c$ in front of the derivative is what turns it into $\omega$; the intermediate display above keeps both factors so that the bookkeeping is visible. In four-vector form the statement is that the current is orthogonal to $(\omega,\vec k_{\Phi})$, the four-wave-number written with each component in its own units.</p>
+<p><strong>The derivative has become a dot product.</strong> The transformed continuity equation says that the four-current $(\tilde\rho,\tilde{\vec J})$ is orthogonal to the four-wave-number $(\omega,\vec k_{\Phi})$ in the metric of signature $(+1,-1,-1,-1)$, at each point of the wave-number plane separately. Written as a ratio it is $\omega\tilde\rho=\vec k_{\Phi}\cdot\tilde{\vec J}$, or $\tilde{\vec J}=\tilde\rho\,(\omega/\lvert\vec k_{\Phi}\rvert^{2})\vec k_{\Phi}$ on a single mode, which is the statement that the current follows the wave at the phase velocity. There is no derivative left and no integral left. Take the wave equation and transform it, and</p>
+<p>$$
+\left(\Box-k_{m}^{2}\right)\tilde F=0
+\quad\longmapsto\quad
+\left(-s-k_{m}^{2}\right)\tilde F=0 .
+$$</p>
+<p><strong>The operator has become a number.</strong> The bracket multiplies; it does not differentiate. On shell the bracket vanishes and the equation holds for every value of $\tilde F$, which is the algebraic form of the statement that the field is a superposition of on-shell plane waves.</p>
+<p><strong>Neither image is an equation for the state on its own.</strong> This is the objection to name, because a reader who knows that a density is bilinear will raise it. The transform of $\rho$ is not the product of the transforms of $\tilde\Xi$ and $\tilde\Xi^{\dagger}$; it is their convolution. So the algebraic continuity equation is linear in $\tilde\rho$ and $\tilde{\vec J}$ as fields in their own right, and quadratic in the modes of $\tilde\Xi$. The two statements are consistent and they are not the same statement. The algebra is exact where it is claimed, and the claim is narrow: it is an algebra for the current, not for the state.</p>
+<p><strong>Numerical check, on periodic data so that the spectral derivatives are exact.</strong> On a torus of side $2\pi$ with $N=64$ samples and $\hbar=m=1$, take the superposition of two modes of the free Schrödinger equation with $k=2$ and $k=6$, and form $\rho$ and $\vec J$ from it. The continuity equation holds pointwise to $1.7\times10^{-13}$ relative, and its two-dimensional transform satisfies $|\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}|=0$ to $4.4\times10^{-17}$ of $|\omega\tilde\rho|$ on every mode that carries weight, and on the two modes that carry it the ratio $\omega\tilde\rho/(\vec k_{\Phi}\cdot\tilde{\vec J})$ is $1.000000$. With $\hbar=m=c=1$ the transform variable is the frequency itself, so this is the identification $\omega\leftrightarrow k_{t}^{\prime}$ in the units of the check. The derivative and the dot product agree to machine precision, which is what the switch claims.</p>
+<p><strong>The switch is not a physical process.</strong> No measurement performs it, and no time evolution is involved. It is the statement that two descriptions of one state are related by a unitary map, and the physical content of the map is that neither description is privileged. That is the content of the word duality here, and it is why the word is defensible.</p>
+<h2 id="worked-case-the-schrodinger-equation">Worked Case: The Schrödinger Equation</h2>
+<p><strong>One substitution turns the quantum equation into the classical relation.</strong> In the corpus's form the equation is</p>
+<p>$$
+\frac{m\,c^{2}i}{k_{m}}\partial_{r_{t}^{\prime}}\tilde\Xi_{\mathrm{sp}}=\tilde R_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
+$$</p>
+<p>which with $r_{t}^{\prime}=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,</p>
+<p>$$
+i\hbar\,\partial_{t}\psi=-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi
+\quad\longmapsto\quad
+\hbar\,\omega=\frac{\hbar^{2}k^{2}}{2m}+V .
+$$</p>
+<p><strong>Divide by $\hbar$ and the quantum has disappeared from the equation.</strong> What is left is</p>
+<p>$$
+E=\frac{p^{2}}{2m}+V ,
+$$</p>
+<p>the classical energy–momentum relation, with $E=\hbar\omega$ and $p=\hbar k$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=E/(\hbar c)$, which includes the rest energy, the same symbol reads</p>
+<p>$$
+k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
+\quad\longleftrightarrow\quad
+E-m\,c^{2}=\frac{p^{2}}{2m}+V ,
+$$</p>
+<p>the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-ik_{m}r_{t}^{\prime}}\chi$. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.</p>
+<p><strong>This is the one place in the corpus where the wave arm is not a level set of a norm.</strong> The symbol above is affine: one term linear in $k_{t}^{\prime}$ beside a term quadratic in $k_{\Phi}$. Every quaternion norm is homogeneous of degree two in all four slots, so no element of $\mathbb{B}$ has that symbol as its norm, and the Schrödinger operator cannot be written as $\tilde K\tilde K^{\natural}$ for any single $\tilde K$. The exact root of the relativistic condition is $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$, and the parabola touches the hyperbola to second order with the quartic error $-k_{\Phi}^{4}/(8k_{m}^{3})$: at $k_{\Phi}/k_{m}=0.01$ the exact difference is $-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$ from the leading term, a relative agreement of $5\times10^{-5}$. The surface is therefore strictly timelike and touches the light cone nowhere. <strong>The particle arm survives untouched; the wave arm becomes a level set of an affine symbol, and reading that level set as a mass shell is an approximation whose first correction is quartic.</strong></p>
+<p><strong>The statement is exact and it is also a warning.</strong> The relation $E=p^{2}/(2m)+V$ is true of a classical particle, of a plane wave, and of every mode of the quantum field. What distinguishes the quantum case is not the relation but what the relation constrains: a single point in one case, a field carrying a superposition in the other. The relation is the alphabet, not the sentence.</p>
+<p><strong>Three checks, on periodic data with $N=64$ samples and the modes $k=2$ and $k=6$.</strong> The equation $i\partial_{t}\psi+\tfrac{1}{2}\partial_{x}^{2}\psi=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}k^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $k_{0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=k_{0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial k=k_{0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.</p>
+<p><strong>One check with the mass kept, on a torus where the three numbers are commensurate.</strong> Take $k_{m}=4$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ is on shell, and the symbol of $\Box-k_{m}^{2}$ vanishes on it exactly: $s=-16$, so $-s-k_{m}^{2}=0$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box-k_{m}^{2}$ on it, while its own $s$ is $-7$. The same holds at $k_{\Phi}=6$, $k_{t}^{\prime}=10$, $k_{m}=8$, where $s=-64$ and $-s-k_{m}^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.</p>
+<p><strong>The last check is the classical relation in motion.</strong> The centroid moves at the group velocity because the dispersion relation is quadratic, and a quadratic dispersion relation is the statement $E=p^{2}/(2m)$ differentiated. A reader who wants the classical equation back does not need to take a limit; the derivation is one differentiation of the algebraic relation the transform already produced.</p>
+<p><strong>The relativistic case is the same move with a different symbol, and it is the cleanest instance of the gradient arm.</strong> Take the Klein–Gordon equation $\left(\Box-k_{m}^{2}\right)\tilde\Xi=0$. The gradient's form is $-s$ and the fixed level is $-k_{m}^{2}$, so the transform gives one equation between numbers,</p>
+<p>$$
+-s=k_{m}^{2}
+\quad\Longleftrightarrow\quad
+k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_{m}^{2},
+$$</p>
+<p>and that is the whole of the dispersion theory of the free field. Nothing is expanded, nothing is truncated, and no limit is taken: the hyperbola is the level set, exactly, at every value of the wave number.</p>
+<p><strong>Putting $E$, $\vec p$ and $m$ back gives the mass shell, and the only work is clearing $\hbar^{2}$ and $c^{2}$.</strong> With $k_{t}^{\prime}=E/(\hbar c)$ and $\vec k_{\Phi}=\vec p/\hbar$ the display becomes</p>
+<p>$$
+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}
+\quad\Longleftrightarrow\quad
+E^{2}-\lvert\vec p\rvert^{2}c^{2}=m^{2}c^{4}.
+$$</p>
+<p><strong>The same triangle is obtained from the other side, and the two derivations share no step.</strong> <em>The Three Wavenumbers of a Particle</em> divides the four-momentum by $\hbar$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and reads the three numbers off the quotient: the coordinates are $E/(\hbar c)$ and $\vec p/\hbar$, and the third is the value the element's norm must take, $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$. That is the particle arm computing $s$, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.</p>
+<p><strong>The three numbers are the same kind of number, which is the point of writing them as one element.</strong> $k_{t}^{\prime}$, $\lvert\vec k_{\Phi}\rvert$ and $k_{m}$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $\hbar$ and $c$ back rescales the coordinates — $k_{t}^{\prime}$ becomes $E/(\hbar c)$, $\lvert\vec k_{\Phi}\rvert$ becomes $\lvert\vec p\rvert/\hbar$ — and leaves the form $s=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.</p>
+<h2 id="where-the-transcription-stops">Where the Transcription Stops</h2>
+<p><strong>The algebra is algebraic exactly when the coefficients are constant, and centrality is a separate question.</strong> The kernel is a scalar, so a constant left multiplier passes through the transform whether it is central or not. Centrality buys not the algebra but the <em>scalarity</em> of the algebra: a central symbol is a number at each wave number and may be divided by, while a non-central one leaves an equation in the algebra, solved by inverting the element, whose solvability is a determinant condition. The norm of a non-central multiplier is central all the same, so a constant non-central potential translates the shell instead of complicating it:</p>
+<p>$$
+s(\tilde K_{\Phi}+\kappa\tilde A_{\Phi})=s(\tilde K_{\Phi})+2\kappa\,\mathrm{Sc}\bigl(\tilde K_{\Phi}\tilde A_{\Phi}^{\natural}\bigr)+\kappa^{2}s(\tilde A_{\Phi}),
+$$</p>
+<p>verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre $-\kappa\tilde A_{\Phi}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coefficient</th>
+<th>image of the operator</th>
+<th>what the equation becomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>constant and central</td>
+<td>a number</td>
+<td>a scalar algebraic equation</td>
+</tr>
+<tr>
+<td>constant and non-central</td>
+<td>an element whose norm is a number</td>
+<td>an algebraic equation; the shell is translated, not destroyed</td>
+</tr>
+<tr>
+<td>varying in space</td>
+<td>a convolution</td>
+<td>no multiplier, so no algebraic form</td>
+</tr>
+<tr>
+<td>periodic in space</td>
+<td>a finite matrix</td>
+<td>an algebraic eigenvalue problem</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is the boundary of the method, and it is a boundary rather than a defect.</strong> A field strength is a derivative of a potential, so it is the varying case, and the transform has no multiplier to offer for it. That is why the transform cannot produce a Lorentz force, and why the corpus sends uniform data to the transform and varying data to the eikonal. The first two rows are its ordinary case: the mass is central, the potential in the examples is constant, and the field strength, where it appears in an equation rather than as a source, is a constant element.</p>
+<p><strong>The fourth row is the useful one.</strong> A coefficient periodic with period $q$ cells does not produce a convolution of unbounded support; it produces a $q\times q$ matrix, because the periodicity folds the wave number onto a finite set of representatives. That is why lattice problems stay solvable in wave-number space and why the reciprocal lattice is finite at each flux. It is the place where a varying coefficient still gives a finite algebraic problem rather than a convolution, and it is the reason the corpus can treat a lattice at all.</p>
+<h2 id="when-the-wave-dies">When the Wave Dies</h2>
+<p><strong>If the gradient description is switched off, the element description is left intact, and that is a derivation of particle conservation from the other side.</strong> <em>The Non-Quantum Limit of the Biquaternion Model</em> writes the state as an amplitude and a phase, $\tilde\Xi_{\mathrm{sp}}=A\exp\left(k_{m}iS/(m\,c)\right)\xi$, and substitutes. Two real equations follow and the article states their status plainly: neither is an approximation. The first is the Hamilton–Jacobi equation once its quantum term is dropped. The second is the continuity equation, and the article says of it that it was never approximated.</p>
+<p><strong>That asymmetry is the point of this article.</strong> The wave equation degrades: dropping the quantum potential $Q$ turns a second-order equation into a first-order one, and the parameter that measures the degradation is $\epsilon=1/(k_{\Phi}L)$. The conservation law does not degrade at all. It was not an approximation of the wave description; it was the element description, and the element description does not depend on the phase.</p>
+<p><strong>So the non-quantum limit obtains particle conservation a second time, by a different route.</strong> One route is the flow of the exact continuity equation, which the limit does not touch. The other is the ray picture, in which trajectories are the characteristics of that flow. The article records that a trajectory is a single characteristic of the flow rather than the flow itself, which is the same statement: the count survives the limit and the phase does not.</p>
+<p><strong>The numbers are the article's own.</strong> For the electron at $\beta=0.01$ the mass wave number is $k_{m}=2.589605\times10^{12}\ \mathrm{m^{-1}}$ and the momentum wave number is $k_{\Phi}=2.589735\times10^{10}\ \mathrm{m^{-1}}$, so at $L=1\ \mathrm{nm}$ the parameter is $\epsilon=3.86\times10^{-2}$. The Gaussian ratio agrees with a fourth-order difference of the quantum term at one hundred values to $1.4\times10^{-6}$, so the term that is dropped is measured rather than asserted.</p>
+<p><strong>One caution, because the two words are not synonyms, and the corpus is careful about it.</strong> The non-quantum article states the two removals as one: the limit takes a wave to its rays <em>and the second partition with it</em>, so the removal belongs to the propagation rather than to the description. <em>The Quantum–Classical Divide in the Biquaternion Framework</em> supplies the count that the removal matches — two projective measurements for the quantum case, one measurement plus one $*$-unitary filtering for the classical one — and it says nothing about wavelengths. This article does not derive either statement from the other, and it does not need to, because the two are separate. One distinction is worth making explicit here: <strong>the identity is exact on both sides of the limit, and the physical realisation is not.</strong> The transform relation between the two forms holds whatever the state, before and after the limit, because it is an algebraic identity and no limit touches it. What the limit changes is which arm a state occupies: a ray sits on the particle arm with no wave arm in reach. So the exactness claimed throughout this article is the exactness of the identity, and it should not be read as the claim that a classical ray still carries both arms.</p>
+<h2 id="where-the-duality-lands">Where the Duality Lands</h2>
+<p><strong>Each article of the corpus occupies one side of the table, or the switch between the sides.</strong> That is the reason the general statement is filed before them and above both quantum sections: every one of them is a particular instance of it, on one side of the non-relativistic/relativistic split or the other.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>which arm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Derivatives, Fields and Transforms</em></td>
+<td>the switch itself: the kernel, the symbol, the root</td>
+</tr>
+<tr>
+<td><em>The Three Wavenumbers of a Particle</em></td>
+<td>the label: the four-momentum divided by $\hbar$</td>
+</tr>
+<tr>
+<td><em>The Schrödinger Equation in Biquaternionic Form</em></td>
+<td>the element arm: the state and its norm</td>
+</tr>
+<tr>
+<td><em>The Free Particle and Wave Packets in Biquaternionic Form</em></td>
+<td>both arms at once, on one packet</td>
+</tr>
+<tr>
+<td><em>The Biquaternion d'Alembertian and Its Green's Functions</em></td>
+<td>the gradient arm: the operator and its inverse</td>
+</tr>
+<tr>
+<td><em>Maxwell's Equations in the Biquaternionic Formulation</em></td>
+<td>the gradient arm, first order: the symbol is the element $i\tilde K_{\Phi}$ itself, so the equation is inverted off the cone and constrains its source on it</td>
+</tr>
+<tr>
+<td><em>Unitarity from Centrality</em></td>
+<td>the element arm, globally: norm preservation</td>
+</tr>
+<tr>
+<td><em>Noether's Theorem in Biquaternionic Form</em></td>
+<td>the element arm, from symmetry: the current</td>
+</tr>
+<tr>
+<td><em>Hamiltonian Field Theory in Biquaternionic Form</em></td>
+<td>the element arm, for energy: the continuity equation</td>
+</tr>
+<tr>
+<td><em>One-Dimensional Scattering in Biquaternionic Form</em></td>
+<td>both arms: flux against the level set</td>
+</tr>
+<tr>
+<td><em>The Non-Quantum Limit of the Biquaternion Model</em></td>
+<td>the switch-off: the gradient arm withdrawn</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.</strong> Transforming $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\hat{\tilde F}=-\sqrt{\mu}\,\hat{\tilde J}_{\Phi}$, an equation in the algebra with the symbol as the coefficient. There is no number to set a level on: the symbol is an element, and the equation is solved by <strong>inverting</strong> it, $\hat{\tilde F}=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\hat{\tilde J}_{\Phi}$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor: left multiplication by it drops from rank $8$ to rank $4$, checked on the $3/3$ and $4/4$ pairs, and its determinant vanishes. The equation then has a solution only for the sources that lie in that image. The corpus's integrability condition — that the scalar part of $\tilde\nabla^{\natural}\tilde J_{\Phi}$ vanish, so that the right-hand side is a pure vector — is the one-component shadow of that requirement and not the requirement itself: it holds on the image, to $2.8\times10^{-15}$ on $2000$ sources, while a random source violates it by up to $13$. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.</p>
+<p><strong>The pattern is not a coincidence of organisation.</strong> In each row the object on the left of the transform is a differential statement and the object on the right is a number or a matrix. The table is the corpus's list of contents read as a table of forms.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The transform is a change of basis and nothing more.</strong> It does not select a description, predict a measurement, or supply a dynamics. Every claim in this article is an identity, and an identity cannot be wrong about nature; it can only be irrelevant to a question. The question it answers is which of two descriptions a given equation is written in.</p>
+<p><strong>Constant coefficients are required for the algebraic interpretation.</strong> The rows of the table in <em>Where the Transcription Stops</em> that are not algebraic are not failures of the transform, they are the transform's honest output. A reader who applies the algebraic interpretation to a varying coefficient will get a convolution and should expect one.</p>
+<p><strong>The element arm is bilinear, so it does not diagonalise.</strong> The transform of a density is a convolution, and no amount of algebra removes that. The conservation law is algebraic in the density and the current as separate fields, which is weaker than being algebraic in the state.</p>
+<p><strong>The count is a count of charge, not of probability, in the second-order case.</strong> The Klein–Gordon density is indefinite, so the word particle in this article means a conserved quantum number. Where the count is a probability, it is because the equation is first order in time and the Hermitian form is definite on the state module; the corpus's Klein–Gordon article states the distinction and the resolution, which is field quantisation and not a change of algebra.</p>
+<p><strong>The word particle means a conserved count, not a trajectory.</strong> A trajectory needs the ray limit and the ray limit needs $\epsilon$ small, which is a condition on the state and not on the algebra. The word is used in the counting sense throughout, and <em>When the Wave Dies</em> is where the two senses meet.</p>
+<p><strong>The indefinite signature is posited, not derived.</strong> The form $s=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ has the Minkowski sign because the material sector is defined that way. The duality does not depend on the sign; the identification of the zero level with the light cone does.</p>
+<p><strong>No claim of novelty in physics.</strong> The Fourier pair, the bandwidth theorem, the diagonalisation of the derivative and the mass shell are standard. The organisation into two forms and the interpretation of the two as the two arms of one duality are the corpus's, and they are an interpretation of identities, not a new identity.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The duality is a change of basis.</strong> A Fourier transform is unitary, so the wave description and the particle description carry the same content, and there is nothing for an object to switch between.</p>
+<p><strong>The algebra supplies the two descriptions as two quadratic structures, and they are different structures.</strong> The Hermitian form on the state gives a density whose local conservation is the continuity equation: that is the particle arm, a conserved count. The quaternion norm of the gradient gives the d'Alembertian, whose fixed level is the wave equation: that is the wave arm, a fixed surface in wave-number space. The first is definite on the state module and the second vanishes there, so the two arms cannot rest on one form.</p>
+<p><strong>The density carries as many derivatives as the equation has time derivatives, minus one.</strong> None for Schrödinger and Dirac, one for Klein–Gordon, and the Klein–Gordon one is indefinite, which is why a second-order equation has no positive single-element count.</p>
+<p><strong>The transform is the switch between them.</strong> It turns the divergence into the dot product $\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0$, verified to $4.4\times10^{-17}$, and it turns the operator into the number $-s-k_{m}^{2}$, verified to $1.0\times10^{-13}$ on the massless cone and exactly on the commensurate modes $3,4,5$.</p>
+<p><strong>The Schrödinger case is the elementary instance, and the one exception.</strong> One substitution gives $E=p^{2}/(2m)+V$ from $i\hbar\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.</p>
+<p><strong>The transcription is algebraic exactly when the coefficients are constant.</strong> Constancy, not centrality, is the boundary: a constant non-central potential passes through and merely translates the shell, a varying coefficient gives a convolution and no multiplier, and a periodic one gives a finite matrix.</p>
+<p><strong>The checks, in one place.</strong> Each residual below verifies one claim, and the claim it verifies is named. The article does not repeat a check that adds nothing to a named claim; the elementary cases are given because they are the ones a reader can redo by hand.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what is checked</th>
+<th>how</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the density is not the quaternion norm</td>
+<td>determinant against trace on the state module</td>
+<td>$0$ against $1.000000$ to $3.890000$</td>
+</tr>
+<tr>
+<td>the continuity equation, pointwise</td>
+<td>two Schrödinger modes, $N=64$</td>
+<td>$1.7\times10^{-13}$</td>
+</tr>
+<tr>
+<td>its transform, the dot product</td>
+<td>the same data, in $k$</td>
+<td>$4.4\times10^{-17}$</td>
+</tr>
+<tr>
+<td>$\Box\mapsto-s$</td>
+<td>massless cone, random modes</td>
+<td>$1.0\times10^{-13}$</td>
+</tr>
+<tr>
+<td>the level set itself</td>
+<td>$3,4,5$ with $k_{m}=4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>a constant non-central potential</td>
+<td>translated shell</td>
+<td>$5.6\times10^{-17}$</td>
+</tr>
+<tr>
+<td>the Schrödinger operator identity</td>
+<td>$k=2,6$, periodic</td>
+<td>$4.1\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the group velocity</td>
+<td>packet centroid, one width of travel</td>
+<td>$6.3\times10^{-12}$</td>
+</tr>
+<tr>
+<td>the affine correction</td>
+<td>$k_{\Phi}/k_{m}=0.01$</td>
+<td>$-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Withdrawing the wave arm leaves the particle arm exact.</strong> The non-quantum limit drops the quantum potential and keeps the continuity equation unapproximated, which is why that limit obtains particle conservation a second time, by a different route.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ \tilde\Xi $</td>
+<td>a field, an element of $\mathbb{B}$ or of a sector</td>
+</tr>
+<tr>
+<td>$ \tilde\Xi^{\dagger} $</td>
+<td>the adjoint on the state module, used to build the density</td>
+</tr>
+<tr>
+<td>$ \tilde\Xi^{*} $</td>
+<td>the algebra's Hermitian conjugation, used in the current and in the Klein–Gordon density</td>
+</tr>
+<tr>
+<td>$ \tilde\Xi^{\natural} $</td>
+<td>the quaternion conjugate, used to build the norm</td>
+</tr>
+<tr>
+<td>$ \mathbb{B} $</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$ \tilde\nabla $</td>
+<td>the gradient, the time derivative plus the three spatial ones</td>
+</tr>
+<tr>
+<td>$ \tilde\nabla^{\natural} $</td>
+<td>its conjugate, whose product with it is $\Box$</td>
+</tr>
+<tr>
+<td>$ \Box $</td>
+<td>the d'Alembertian in the material coordinates</td>
+</tr>
+<tr>
+<td>$ \tilde K_{\Phi} $</td>
+<td>the wave-number element $i k_{t}^{\prime}e_{t}+\vec k_{\Phi}$</td>
+</tr>
+<tr>
+<td>$ k_{t}^{\prime} $</td>
+<td>energy wave number, $E/(\hbar c)=\omega/c$</td>
+</tr>
+<tr>
+<td>$ \omega $</td>
+<td>angular frequency, the transform variable conjugate to $t$</td>
+</tr>
+<tr>
+<td>$ \vec k_{\Phi} $</td>
+<td>momentum wave number, $\vec p/\hbar$</td>
+</tr>
+<tr>
+<td>$ k_{\Phi} $</td>
+<td>its modulus</td>
+</tr>
+<tr>
+<td>$ k_{m} $</td>
+<td>mass wave number, $m\,c/\hbar$</td>
+</tr>
+<tr>
+<td>$ s $</td>
+<td>$ \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2} $</td>
+</tr>
+<tr>
+<td>$ \rho $</td>
+<td>density of the element form</td>
+</tr>
+<tr>
+<td>$ \vec J $</td>
+<td>current of the element form, one gradient, in $\mathbb{B}_{\Phi}$</td>
+</tr>
+<tr>
+<td>$ \epsilon $</td>
+<td>$ 1/(k_{\Phi}L) $, the non-quantum parameter</td>
+</tr>
+<tr>
+<td>$ L $</td>
+<td>the length over which the amplitude varies</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, for the kernel, the root, the transform pair, the symbol and the vanishing-norm obstruction used in the section on the switch.</li>
+<li><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a>, for the division of the four-momentum by $\hbar$ that gives the label of the transform.</li>
+<li><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a>, for the element arm in its own right.</li>
+<li><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets in Biquaternionic Form</a>, for both arms on one packet, the case the third check of this article samples.</li>
+<li><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion d'Alembertian and Its Green's Functions</a>, for the gradient arm and its inverse.</li>
+<li><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a>, for the global form of the element arm and the centrality of the unit.</li>
+<li><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a>, for the current whose divergence is the conservation law.</li>
+<li><a href="../articles_physics/the-non-quantum-limit-of-the-biquaternion-model.html">The Non-Quantum Limit of the Biquaternion Model</a>, for the withdrawal of the wave arm and the exact survival of the continuity equation.</li>
+<li><a href="../articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.html">The Quantum–Classical Divide in the Biquaternion Framework</a>, for the count that separates the two words and why wave phenomena are not it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

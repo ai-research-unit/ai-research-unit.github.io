@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Parameter Count as the Measure of the Framework's Boundary — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-parameter-count-as-the-measure-of-the-frameworks-boundary"><strong>The Parameter Count as the Measure of the Framework's Boundary</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim of this article, in one sentence.</strong> The Standard Model has nineteen free parameters, the framework fixes none of them, and this article turns that sentence into a number, a classification and a test.</p>
+<p><strong>Why a count is the right measure.</strong> A framework can be judged in two ways: by what it derives, or by what it leaves open. The corpus has spent fifteen articles on the first question and has produced a short list. The second question has a precise answer, because "what is left open" is a finite list that someone else has already written down, and each entry can be examined one at a time.</p>
+<p><strong>The three grades of "fixing", and why the distinction is not pedantry.</strong> Saying that a framework "does not derive the electron mass" lumps together three very different failures:</p>
+<ul>
+<li><strong>A value.</strong> A principle that returns $m_e=0.511$ MeV. No framework in existence does this for any fermion mass, so the failure is universal and uninformative.</li>
+<li><strong>A relation.</strong> A principle that makes one parameter a function of another, reducing the count by one. This is a weaker claim and a much more interesting one, because it is achievable and because it is falsifiable.</li>
+<li><strong>A constraint.</strong> A principle that forbids a region, such as $\theta_{\mathrm{QCD}}=0$ or $m_\nu=0$. Also achievable, and the corpus has two examples.</li>
+</ul>
+<p>An article that reported only the first grade would be reporting a failure shared by every competitor. Reporting all three is what makes the count a measure rather than a complaint.</p>
+<p><strong>The four results.</strong></p>
+<ul>
+<li><strong>Nineteen, and the list is robust.</strong> Three conventions give $18$, $19$ and $19$; the differences are bookkeeping and the core is stable. One unit is arbitrary, so the physical content is <strong>eighteen dimensionless numbers</strong>.</li>
+<li><strong>A typology, and it is not uniform.</strong> Eight of the nineteen are coordinates on a group the algebra supplies, nine are eigenvalues of an operator it represents but cannot diagonalise from first principles, and two — the electroweak scale and the scalar mass — it cannot represent at all.</li>
+<li><strong>The framework's own list is three, and it does not overlap.</strong> The charge parameter, the mass, and the constant of the massive equation. So the honest total is twenty-two, of which the framework contributes none of the nineteen, and the imported share is $86.4\%$.</li>
+<li><strong>The count is a test that can be run on any proposal.</strong> For any claimed derivation, ask which of the nineteen it fixes and by which of the three grades. The article ends with the table that question produces for the corpus's own proposals.</li>
+</ul>
+<p><strong>The order.</strong> The list, then the definition of fixing, then the typology, then the three groups, then the framework's own count, then the one unit and the eighteen ratios, then the neutrino addition, then the over-determination, then the test applied to the corpus, then what would have to be true for the count to fall, then the ledger.</p>
+<h2 id="the-nineteen-itemised">The Nineteen, Itemised</h2>
+<p><strong>The list, quoted from the source of record.</strong> <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The content article</a> prints it with values and schemes; the table is repeated here without the values, because this article's argument is about kinds and not magnitudes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Symbol</th>
+<th>Kind of object</th>
+<th>Sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–3</td>
+<td>$m_e$, $m_\mu$, $m_\tau$</td>
+<td>Charged-lepton masses</td>
+<td>Flavour</td>
+</tr>
+<tr>
+<td>4–9</td>
+<td>$m_u$, $m_d$, $m_s$, $m_c$, $m_b$, $m_t$</td>
+<td>Quark masses</td>
+<td>Flavour</td>
+</tr>
+<tr>
+<td>10–12</td>
+<td>$\theta_{12}$, $\theta_{23}$, $\theta_{13}$</td>
+<td>CKM angles</td>
+<td>Flavour</td>
+</tr>
+<tr>
+<td>13</td>
+<td>$\delta$</td>
+<td>CKM phase</td>
+<td>Flavour</td>
+</tr>
+<tr>
+<td>14</td>
+<td>$g_{\mathrm Y}$</td>
+<td>Hypercharge coupling</td>
+<td>Gauge</td>
+</tr>
+<tr>
+<td>15</td>
+<td>$g$</td>
+<td>Weak coupling</td>
+<td>Gauge</td>
+</tr>
+<tr>
+<td>16</td>
+<td>$g_s$</td>
+<td>Strong coupling</td>
+<td>Gauge</td>
+</tr>
+<tr>
+<td>17</td>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>Vacuum angle</td>
+<td>Gauge</td>
+</tr>
+<tr>
+<td>18</td>
+<td>$v$</td>
+<td>Higgs expectation value</td>
+<td>Scalar</td>
+</tr>
+<tr>
+<td>19</td>
+<td>$M_H$</td>
+<td>Higgs mass</td>
+<td>Scalar</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sector sums.</strong></p>
+<p>$$
+\underbrace{13}_{\text{flavour}}+\underbrace{3}_{\text{couplings}}+\underbrace{1}_{\theta_{\mathrm{QCD}}}+\underbrace{2}_{\text{scalar}}=19 .
+$$</p>
+<p>The flavour block is $13$ of $19$, that is $68.4\%$. Two thirds of the model's freedom sits in the sector the framework says the least about, which is the first quantitative statement of this article: the boundary is not spread evenly, it is concentrated where the algebra is emptiest.</p>
+<p><strong>The regrouping, and why it does not change the count.</strong> The scalar pair can be written $(v,M_H)$ or $(\mu^2,\lambda)$, related by $v^2=\mu^2/\lambda$ and $M_H^2=2\lambda v^2$. Recomputing from the quoted values,</p>
+<p>$$
+\lambda=\frac{M_H^2}{2v^2}=\frac{(125.09)^2}{2(246.22)^2}=0.1291 ,
+\qquad
+\mu=\frac{M_H}{\sqrt2}=88.5\ \mathrm{GeV} .
+$$</p>
+<p>Two numbers either way. The count is invariant under the choice, which is what makes it a property of the model rather than of the notation.</p>
+<p><strong>The conventions that give 18 or 19.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Convention</th>
+<th>Count</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$ set to zero by a mechanism</td>
+<td>$18$</td>
+<td>The axion removes one entry</td>
+</tr>
+<tr>
+<td>Neutrinos massless, as in the minimal content</td>
+<td>$19$</td>
+<td>The baseline</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$ retained as a parameter</td>
+<td>$19$</td>
+<td>Baseline with the small bound</td>
+</tr>
+<tr>
+<td>$v$ and $M_H$ counted as $\mu^2$ and $\lambda$</td>
+<td>$19$</td>
+<td>Regrouping only</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the count is $18$ or $19$ depending on whether the strong CP problem is solved, and never $17$ or $20$ on any convention in use. That is a stable list.</p>
+<p><strong>What the count is not.</strong> It is not a count of measurements. The model predicts far more than nineteen numbers, so the count of parameters and the count of observables are different quantities — and the gap between them is the model's testability, taken up below.</p>
+<h2 id="what-fixing-a-parameter-would-mean">What "Fixing" a Parameter Would Mean</h2>
+<p><strong>Three grades, defined exactly.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Criterion</th>
+<th>Reduces the count?</th>
+<th>Falsifiable how?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>A principle returns the measured number</td>
+<td>No</td>
+<td>Any other number refutes it</td>
+</tr>
+<tr>
+<td>Relation</td>
+<td>One parameter becomes a function of another</td>
+<td>Yes, by one</td>
+<td>The relation is measured and can fail</td>
+</tr>
+<tr>
+<td>Constraint</td>
+<td>A region is forbidden</td>
+<td>No, but it explains why a bound holds</td>
+<td>The bound is measured and can fail</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the grades must be kept apart.</strong> A framework that fixes zero values but produces one relation has done something real: it has reduced the model's freedom by one, and it has made a statement that a measurement can contradict. A framework that produces no relation but does explain why $\theta_{\mathrm{QCD}}<10^{-10}$ has also done something real. An article that reported "zero of nineteen" without the grades would be accurate and uninformative, in the way that "zero of nineteen" is uninformative about any framework that is not a theory of everything.</p>
+<p><strong>The measure this article will use.</strong> Not "how many values are derived", which is zero everywhere, but:</p>
+<p>$$
+\text{arena}+\text{relations}+\text{constraints} ,
+$$</p>
+<p>three separate counts, each of which can be nonzero. The rest of the article computes them.</p>
+<h2 id="the-typology-five-kinds-of-number">The Typology: Five Kinds of Number</h2>
+<p><strong>The classification.</strong> Each of the nineteen is one of five kinds of mathematical object, and the kinds are not interchangeable because they require different machinery to fix.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>What it is</th>
+<th>Which entries</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group coordinate</td>
+<td>A point in a parameter space the algebra supplies</td>
+<td>10–13</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Connection normalisation</td>
+<td>The size of a coupling in a covariant derivative</td>
+<td>14–16</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Central phase</td>
+<td>The phase of a topological term</td>
+<td>17</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Eigenvalue</td>
+<td>A mass, that is a spectrum of an operator</td>
+<td>1–9, 19</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>The one dimensionful normalisation</td>
+<td>18</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The counts add to nineteen,</strong> and the classification is exhaustive: a number in a Lagrangian is a coupling, a phase, an eigenvalue, or a scale, and the mixing angles are coordinates with no other home.</p>
+<p><strong>Why the kinds matter more than the sectors.</strong> The sector split (flavour $13$, gauge $4$, scalar $2$) is about physics. The kind split is about <strong>what would have to be built</strong>. A group coordinate needs a group and a selection principle; a connection normalisation needs a connection and a normalisation principle; a central phase needs a topology and a value; an eigenvalue needs an operator and a spectral principle; a scale needs a mechanism that breaks dilatation invariance. Those are five different machines, and the framework has some of them and not others.</p>
+<h2 id="eight-with-an-arena-nine-with-an-eigenvalue-two-with-nothing">Eight With an Arena, Nine With an Eigenvalue, Two With Nothing</h2>
+<p><strong>The three groups, by what the framework can represent.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Entries</th>
+<th>Count</th>
+<th>What the framework has</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arena</strong></td>
+<td>10–17</td>
+<td>$8$</td>
+<td>The group, the connection, the phase: represented, value free</td>
+</tr>
+<tr>
+<td><strong>Eigenvalue only</strong></td>
+<td>1–9</td>
+<td>$9$</td>
+<td>A mass term, but no spectral principle</td>
+</tr>
+<tr>
+<td><strong>Nothing</strong></td>
+<td>18, 19</td>
+<td>$2$</td>
+<td>No scale mechanism, no scalar mass principle</td>
+</tr>
+</tbody>
+</table></div>
+<p>The shares are $42.1\%$, $47.4\%$ and $10.5\%$.</p>
+<p><strong>One entry is in two groups, and the reason is exact.</strong> $M_H$ is an eigenvalue by kind, since a scalar mass is a spectrum of a mass operator, and it is in the "nothing" group by arena, because the operator it is a spectrum of belongs to a scalar sector the framework does not host. For entries 1–9 the framework does host the operator — the Dirac mass term and the Yukawa matrices — and lacks only the principle that picks the eigenvalues. For $M_H$ it lacks the operator as well. The kind and the arena are therefore two different questions, and $M_H$ is the one entry where the answers differ.</p>
+<p><strong>The arena group, entry by entry.</strong></p>
+<ul>
+<li><strong>The four mixing parameters (10–13).</strong> A $3\times3$ unitary matrix has nine real parameters; rephasing five away leaves four. The framework supplies $\mathrm{U}(3)$ as the norm-preserving group of the flavour factor and the elements on which it acts, so the <em>space</em> is supplied. <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM article</a> supplies the necessity of the phase not being removable. The point in the space is measured.</li>
+<li><strong>The three couplings (14–16).</strong> Each is the normalisation of a connection in a covariant derivative. The framework's gauge principle produces exactly this object and records that its normalisation is a free parameter $ϙ$; a second coupling is a second free parameter with no relation to the first. So the arena is supplied — and supplied <em>with the same freedom</em>, which is why this is arena and not derivation.</li>
+<li><strong>The vacuum angle (17).</strong> A phase of a central term, which <a href="the-theta-vacuum-in-biquaternionic-form.html">the theta-vacuum article</a> constructs. The arena is supplied; the smallness is not explained.</li>
+</ul>
+<p><strong>The eigenvalue group, and the precise gap.</strong> A mass is an eigenvalue of a mass operator, and the framework represents the operator: the mass term in the Dirac equation, the mass matrices in the Yukawa sector. What it does not have is a principle that selects the eigenvalues. Two statements must be kept apart:</p>
+<ul>
+<li>The framework <strong>represents</strong> $m_e$ as a parameter of a mass term. True, and cheap.</li>
+<li>The framework <strong>does not determine</strong> $m_e$. Also true, and this is the gap.</li>
+</ul>
+<p>The one proposal in the corpus that touches this group, <a href="the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html">the spin–mass formula</a>, makes masses proportional to representation dimensions normalised to the electron. That fixes <strong>ratios</strong>, not the scale, and a mass parameter <em>is</em> a scale. So it is a relation of a restricted kind — a relation among the nine holding one of them fixed — and not a value.</p>
+<p><strong>The two with nothing, and why they are the hardest.</strong> The electroweak scale $v$ and the scalar mass $M_H$ both require a mechanism that the algebra does not contain:</p>
+<ul>
+<li>$v$ is generated by a potential's curvature going negative, which is a statement about a <em>dynamical</em> choice of vacuum. <a href="hadron-structure-from-qcd-the-bound-state-problem.html">The strong-coupling article</a> showed what such a generation looks like in QCD, where the scale is non-perturbative and no finite order produces it. The electroweak scale has the same logical shape and the framework has no counterpart of the mechanism.</li>
+<li>$M_H$ is a scalar mass, which is the quantity with the quadratic sensitivity that the next article takes up. Nothing in the algebra cuts off a quadratic divergence, because a cutoff is a property of a regularisation and the algebra has no measure.</li>
+</ul>
+<p>So the two entries with no arena are the two that require machinery from outside both the model and the algebra, and that is not a coincidence: they are the entries whose values are set by the vacuum rather than by a structure.</p>
+<h2 id="the-frameworks-own-parameters-counted-the-same-way">The Framework's Own Parameters, Counted the Same Way</h2>
+<p><strong>The list.</strong> The corpus's own constructions carry three continuous parameters:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Where it appears</th>
+<th>Fixed by the algebra?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$ϙ$</td>
+<td>The central charge of the gauge principle</td>
+<td>No</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>The mass in the massive field equation</td>
+<td>No</td>
+</tr>
+<tr>
+<td>$k_m$</td>
+<td>The constant of the massive equation</td>
+<td>No</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The honest total.</strong> If a reader counts "framework plus Standard Model" as one theory, the count is</p>
+<p>$$
+19+3=22 ,
+$$</p>
+<p>and the imported share is $19/22=86.4\%$. So the framework is not more parsimonious than the model it reformulates. It has a different list, and it adds a short one to a long one.</p>
+<p><strong>Why this comparison is the right one and not a rhetorical one.</strong> A reformulation that added parameters without fixing any would be a strictly worse description on the counting measure, and saying so is the discipline the corpus has imposed on itself throughout. The defence of the reformulation is not that it is smaller; it is that its objects are <em>geometric</em> — that a coupling is a connection coefficient, that a mass is an eigenvalue, that a phase is a central term — and that geometry is worth something even when it fixes nothing.</p>
+<p><strong>The one place the framework's parameters could bite.</strong> If $ϙ$ were related to one of the three gauge couplings by a structural argument, the count would fall by one and the claim would be grade two — a relation. No such argument exists in the corpus, and the gauge article records that no relation binds $ϙ$ to a second coupling. So the relation count is zero, and this article states it as zero.</p>
+<p><strong>The three counts, assembled.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Values derived</td>
+<td>$0$ of $19$</td>
+</tr>
+<tr>
+<td>Relations produced</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Constraints explained</td>
+<td>$2$ of $2$ in scope: $\lvert\theta_{\mathrm{QCD}}\rvert<10^{-10}$ has a mechanism available (the axion), and $m_\nu=0$ is <em>excluded</em> by oscillation</td>
+</tr>
+<tr>
+<td>Arena supplied</td>
+<td>$8$ of $19$</td>
+</tr>
+<tr>
+<td>Own parameters added</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The constraint row deserves a note. The framework does not <em>explain</em> why $\theta_{\mathrm{QCD}}$ is small; it constructs the angle and records that its smallness is a separate problem with a proposed solution. And the massless-neutrino constraint is not explained either — it is refuted, which is what <a href="the-pmns-matrix-and-lepton-mixing.html">the PMNS article</a> records.</p>
+<h2 id="one-unit-and-eighteen-ratios">One Unit and Eighteen Ratios</h2>
+<p><strong>The statement.</strong> A parameter count is only meaningful once units are fixed. With $\hbar=c=1$ the model has one dimensionful unit, and choosing it removes one parameter from the physical content:</p>
+<p>$$
+19\ \text{parameters}-1\ \text{unit}=18\ \text{dimensionless numbers}.
+$$</p>
+<p>Any one of the nineteen can be taken as the unit; the eighteen ratios are what a measurement determines. This is not a bookkeeping trick, because the choice is unobservable: a universe with all masses doubled is the same universe.</p>
+<p><strong>What survives the choice.</strong> The eighteen dimensionless combinations include $\lambda=0.1291$, the mass ratios $m_\mu/m_e=206.8$ and $m_t/m_e=3.4\times10^{5}$, the three couplings, the four mixing parameters, and $\theta_{\mathrm{QCD}}$. Taking $v$ as the unit, the ratio $M_H/v=0.5080$ is one of the eighteen, and it is the one that sets the electroweak hierarchy problem's scale.</p>
+<p><strong>Why the nineteen are not nineteen independent measurements.</strong> Three of them are not measured directly at all: $\theta_{\mathrm{QCD}}$ is bounded rather than measured, the three couplings are extracted from a fit to many observables, and the mixing parameters are fit outputs. So the count of <em>directly measured</em> parameters is smaller than nineteen, and the count of <em>fitted</em> ones is larger. Both facts are worth stating before the count is used as a measure.</p>
+<p><strong>The scale hierarchy, which the ratios expose.</strong> Two ratios of the eighteen are the corpus's remaining embarrassments:</p>
+<p>$$
+\frac{m_t}{m_e}=3.4\times10^{5}\ (5.53\ \text{orders}) ,
+\qquad
+\frac{v}{M_{\mathrm{Pl}}}=2.0\times10^{-17}\ (-16.7\ \text{orders}) .
+$$</p>
+<p>The first is a flavour puzzle; the second is the hierarchy problem. Both are statements about the eighteen ratios, and neither has an explanation in the framework. They are the subject of the next two articles. <a href="electroweak-precision-observables-the-oblique-parameters-s-t-u.html">The precision-observables article</a> records how the second is already visible in the fit.</p>
+<h2 id="what-a-neutrino-mass-costs">What a Neutrino Mass Costs</h2>
+<p><strong>The addition.</strong> The minimal content has no right-handed neutrino, so the count is nineteen. Oscillation requires mass, and <a href="the-pmns-matrix-and-lepton-mixing.html">the PMNS article</a> established the parameter count of the lepton mixing matrix:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Addition</th>
+<th>Count</th>
+<th>Running total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Three neutrino masses</td>
+<td>$3$</td>
+<td>$22$</td>
+</tr>
+<tr>
+<td>Three lepton mixing angles</td>
+<td>$3$</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>One Dirac phase</td>
+<td>$1$</td>
+<td>$26$</td>
+</tr>
+<tr>
+<td>Two Majorana phases, if Majorana</td>
+<td>$2$</td>
+<td>$27$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The convention and the two totals.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Count</th>
+<th>With $\theta_{\mathrm{QCD}}=0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dirac neutrinos</td>
+<td>$26$</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>Majorana neutrinos</td>
+<td>$27$</td>
+<td>$26$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the model's parameter count is $26$ or $27$, and the difference is exactly the question of the neutrino's nature. This is the sharpest case in the corpus where a <em>count</em> is a physical discriminator: the two numbers are not conventions, they are two different theories, and the measurement of $m_{\beta\beta}$ distinguishes them.</p>
+<p><strong>What the addition costs the framework.</strong> Nothing and everything. Nothing, because the framework already hosts the Majorana condition — <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">the neutrino article</a> constructs it — so no new algebraic machinery is needed. Everything, because seven or eight new numbers are added to a list the framework fixes none of, taking the imported share from $86.4\%$ to $19/25=76\%$ or $19/26=73\%$ <em>of the model's own count</em>, while the framework's three stay three.</p>
+<p><strong>The right way to state the comparison.</strong> Not "the framework fixes none of twenty-seven" but "the framework fixes none of nineteen, and the seven that the neutrino adds are also unfixed, and their number is itself an open question." The second sentence carries information the first does not.</p>
+<h2 id="the-over-determination-quantified">The Over-determination, Quantified</h2>
+<p><strong>The gap between parameters and observables.</strong> Nineteen parameters, and the model survives a number of measurements far larger than nineteen. That gap is the model's testability, and it can be measured in a specific case: <a href="meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html">the closure article</a> used <strong>five</strong> independent measurements to determine <strong>two</strong> parameters $(\bar\rho,\bar\eta)$ of the unitarity triangle, leaving <strong>three</strong> degrees of freedom. Three over-determination is what made the closure test a test.</p>
+<p><strong>The general shape.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parameters of the model</td>
+<td>$19$</td>
+</tr>
+<tr>
+<td>Parameters of the flavour block</td>
+<td>$13$</td>
+</tr>
+<tr>
+<td>Independent measurements constraining them</td>
+<td>several hundred</td>
+</tr>
+<tr>
+<td>Degrees of over-determination</td>
+<td>the difference</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why over-determination is the framework's problem and not the model's.</strong> A model with more parameters than measurements is unfalsifiable. The Standard Model is the opposite: it has nineteen parameters and is constrained from every side, which is why a $0.3\%$ closure in $R_t$ is informative. Any framework that wants to replace it must do better on the same measurements, and "better" is measured in the same currency: a smaller count with the same predictions, or the same count with more predictions.</p>
+<p><strong>The measure this article proposes.</strong> For any candidate framework, print two numbers: how many parameters it has, and how many of its predictions are not shared with the Standard Model. The corpus's answer for the biquaternionic framework is uncomfortable and exact:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>Parameters</th>
+<th>Predictions not shared with the Standard Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Model</td>
+<td>$19$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Biquaternionic framework</td>
+<td>$19+3=22$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>That table is the boundary in one line. The framework's value is not in the second column; it is in the <em>derivability structure</em> of the first, and a reader who wants a predictive rival will not find one here.</p>
+<h2 id="the-test-applied-to-the-corpuss-own-proposals">The Test Applied to the Corpus's Own Proposals</h2>
+<p><strong>The question the article exists to make askable.</strong> For every proposal in the corpus that touches a parameter, which of the nineteen does it fix, and at which grade?</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Proposal</th>
+<th>Entry touched</th>
+<th>Grade claimed</th>
+<th>Grade justified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The spin–mass formula</td>
+<td>1–9</td>
+<td>Relation</td>
+<td>Relation among ratios, scale free; not a value</td>
+</tr>
+<tr>
+<td>The gauge principle's $ϙ$</td>
+<td>14–16</td>
+<td>Arena</td>
+<td>Arena; no relation to a second coupling</td>
+</tr>
+<tr>
+<td>The theta-vacuum construction</td>
+<td>17</td>
+<td>Arena</td>
+<td>Arena; no value, no mechanism for smallness</td>
+</tr>
+<tr>
+<td>The CKM as a flavour-factor operator</td>
+<td>10–13</td>
+<td>Arena</td>
+<td>Arena; the group and the phase's necessity, not the point</td>
+</tr>
+<tr>
+<td>The PMNS as the same operator</td>
+<td>10–13 (leptons)</td>
+<td>Arena</td>
+<td>Arena; and the count $4$ or $6$ as a discriminator</td>
+</tr>
+<tr>
+<td>The condensate and the trace anomaly</td>
+<td>18</td>
+<td>None</td>
+<td>No scale mechanism; the QCD case is imported</td>
+</tr>
+<tr>
+<td>The Skyrme soliton</td>
+<td>1–9</td>
+<td>None</td>
+<td>Ratios within a truncation, not parameters</td>
+</tr>
+<tr>
+<td>The ceiling</td>
+<td>—</td>
+<td>Constraint</td>
+<td>Forbids a $\mathbb{B}$ colour triplet, which forbids nothing among the nineteen</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table shows.</strong> One relation, of a restricted kind. Five arenas. Zero values. And one constraint that constrains the framework rather than the model. The table is the honest answer to "what does the framework fix", and it is the table the three agendas could not print before the nineteen articles existed.</p>
+<p><strong>The row that deserves a second look.</strong> The ceiling row is the only one where the framework <em>forbids</em> something, and what it forbids is a representation, not a number. That is worth stating precisely, because a constraint that forbids no parameter is not a constraint on the model: the model's nineteen numbers are untouched by the absence of a $\mathbb{B}$ triplet. The ceiling is a statement about what the framework can build, and the building it forbids is one the model does not require.</p>
+<h2 id="what-would-have-to-be-true-for-the-count-to-fall">What Would Have to Be True for the Count to Fall</h2>
+<p><strong>The four machines, and which are missing.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Machine</th>
+<th>Would fix</th>
+<th>Present?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A spectral principle</td>
+<td>Entries 1–9, 19 ($10$ of $19$)</td>
+<td>No. The operators exist; the spectrum does not follow</td>
+</tr>
+<tr>
+<td>A scale-generating mechanism</td>
+<td>Entry 18</td>
+<td>No. The QCD case is imported and non-perturbative</td>
+</tr>
+<tr>
+<td>A flavour principle</td>
+<td>Entries 10–13 ($4$)</td>
+<td>No. The group is supplied; the point is measured</td>
+</tr>
+<tr>
+<td>A coupling relation</td>
+<td>Entries 14–16 ($3$)</td>
+<td>No. $ϙ$ is free and single</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The largest prize is the spectral one.</strong> A principle fixing the ten mass-like entries would take the count from $19$ to $9$ — a reduction of more than half — and it would be the single most consequential result available to any framework. It is also the hardest, for a reason the corpus has already established: a spectrum is a property of an operator on an infinite-dimensional space, and <a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">the ceiling article</a> established that the algebra's modules have dimensions the physics does not use. A spectral principle would have to live somewhere the algebra does not reach.</p>
+<p><strong>The cheapest prize is the coupling relation.</strong> Three couplings, one of which is the algebra's own $ϙ$. A relation $g_{\mathrm Y}=f(g)$ would be grade two, would reduce the count by one, and would be testable at the per-mille level by the electroweak fit. No such relation exists in the corpus, and the gauge article states why: the central charge is free and nothing binds it to a second one.</p>
+<p><strong>What the corpus should not claim.</strong> That any of the four machines is "almost" there. The four are absent, and the honest form of the sentence is: the framework supplies the <em>arena</em> for four of the nineteen, the <em>operator</em> for nine more, and nothing for two, and the fixing of any of them requires machinery the articles have named and not built.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<p><strong>The arena, the operator, and the ledger.</strong></p>
+<p><strong>Supplied.</strong> The group $\mathrm{U}(3)$ on the flavour factor, with the count $4$ following from it. The connection and a free normalisation $ϙ$, which is the shape of a coupling. The central phase, which is the shape of $\theta_{\mathrm{QCD}}$. The mass operator and the mass matrices, which are the shape of an eigenvalue. Five arenas, and the count of arenas is the framework's one positive number in this article.</p>
+<p><strong>Not supplied, by kind.</strong> A spectral principle. A scale-generating mechanism. A flavour principle. A coupling relation. These are the four machines, and all four are missing.</p>
+<p><strong>The ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The nineteen, with values and schemes</td>
+<td><strong>Imported</strong> from the content article; regrouped and re-typed here</td>
+</tr>
+<tr>
+<td>The sector split $13+3+1+2$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The share $13/19=68.4\%$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>$\lambda=0.1291$, $\mu=88.5$ GeV</td>
+<td><strong>Computed</strong> here from $M_H$ and $v$</td>
+</tr>
+<tr>
+<td>The typology into five kinds</td>
+<td><strong>This article's</strong> classification</td>
+</tr>
+<tr>
+<td>The counts $8$, $9$, $2$ and their shares</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The framework's three parameters</td>
+<td><strong>Imported</strong> from the gauge and massive-equation articles</td>
+</tr>
+<tr>
+<td>$19+3=22$, imported share $86.4\%$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The one unit and the eighteen ratios</td>
+<td><strong>This article's</strong> counting argument</td>
+</tr>
+<tr>
+<td>$m_t/m_e=3.4\times10^{5}$, $v/M_{\mathrm{Pl}}=2.0\times10^{-17}$</td>
+<td><strong>Computed</strong> here</td>
+</tr>
+<tr>
+<td>The neutrino addition, $26$ or $27$</td>
+<td><strong>Imported</strong> count from the PMNS article; the totals computed here</td>
+</tr>
+<tr>
+<td>The three grades of fixing</td>
+<td><strong>This article's</strong> framework of analysis</td>
+</tr>
+<tr>
+<td>The over-determination, five measurements for two parameters</td>
+<td><strong>Imported</strong> from the closure article; the degrees of freedom counted here</td>
+</tr>
+<tr>
+<td>The four machines</td>
+<td><strong>This article's</strong> classification</td>
+</tr>
+<tr>
+<td>A spectral, scale, flavour or coupling principle</td>
+<td><strong>Not available</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What this article does not do.</strong> It does not derive a parameter, does not propose a mechanism for any of the four machines, and does not argue that the count should be different. It classifies, counts, and states the boundary in numbers that a reader can check against the source articles.</p>
+<h2 id="summary">Summary</h2>
+<p>The Standard Model has nineteen free parameters: nine fermion masses, four mixing parameters, three gauge couplings, the vacuum angle, the electroweak scale and the scalar mass. Three conventions give $18$, $19$, $19$; the list is stable. One unit is unobservable, so the physical content is <strong>eighteen dimensionless ratios</strong>.</p>
+<p>The framework fixes <strong>none</strong> of the nineteen values, produces <strong>one</strong> relation of a restricted kind (ratios of masses, scale free), and supplies the <strong>arena</strong> for eight — the four mixing coordinates, the three coupling normalisations, the one central phase. Nine more are eigenvalues of operators it represents but cannot diagonalise, and two, $v$ and $M_H$, have no arena at all.</p>
+<p>The shares are $42.1\%$ arena, $47.4\%$ eigenvalue, $10.5\%$ nothing. Flavour is $68.4\%$ of the count, so the boundary is concentrated where the algebra is emptiest.</p>
+<p>The framework's own list is three — $ϙ$, $m$, $k_m$ — and it overlaps none of the nineteen. The total is twenty-two and the imported share $86.4\%$. A reformulation that adds parameters and fixes none is not more parsimonious; its defence is that its objects are geometric, not that its list is short.</p>
+<p>A neutrino mass costs seven or eight, taking the count to $26$ or $27$, and that difference is a physical discriminator rather than a convention.</p>
+<p>The model is over-determined — nineteen parameters against several hundred measurements, and a closure test with three degrees of freedom — which is why the frame can be tested at all. The framework's own score on the same measure is twenty-two parameters and zero predictions not shared with the model.</p>
+<p>Four machines would reduce the count: a spectral principle (ten entries), a scale mechanism (one), a flavour principle (four), a coupling relation (three). All four are absent, and each has been named.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$v$</td>
+<td>Higgs expectation value, $246.22$ GeV</td>
+</tr>
+<tr>
+<td>$M_H$</td>
+<td>Higgs mass, $125.09$ GeV</td>
+</tr>
+<tr>
+<td>$\mu^2$, $\lambda$</td>
+<td>The two parameters of the scalar potential</td>
+</tr>
+<tr>
+<td>$g_{\mathrm Y}$, $g$, $g_s$</td>
+<td>The three gauge couplings</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>The QCD vacuum angle</td>
+</tr>
+<tr>
+<td>$\theta_{ij}$, $\delta$</td>
+<td>CKM angles and phase</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>The framework's central charge parameter</td>
+</tr>
+<tr>
+<td>$m$, $k_m$</td>
+<td>Mass and constant of the massive field equation</td>
+</tr>
+<tr>
+<td>$M_{\mathrm{Pl}}$</td>
+<td>Planck mass, $1.22\times10^{19}$ GeV</td>
+</tr>
+<tr>
+<td>$\bar\rho$, $\bar\eta$</td>
+<td>The two parameters of the unitarity triangle</td>
+</tr>
+<tr>
+<td>$m_{\beta\beta}$</td>
+<td>Effective Majorana mass</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The table this article takes as its input, with values and schemes.</li>
+<li><a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>. The arena for four of the nineteen, and why the phase cannot be removed.</li>
+<li><a href="the-pmns-matrix-and-lepton-mixing.html">The PMNS Matrix and Lepton Mixing</a>. The seven or eight that a neutrino mass adds, and the count as a discriminator.</li>
+<li><a href="meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html">Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test</a>. The over-determination measured: five measurements, two parameters.</li>
+<li><a href="the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html">The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</a>. The corpus's one attempt at the spectral machine, and its restriction to ratios.</li>
+<li><a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</a>. Why a spectral principle would have to live outside the algebra.</li>
+<li><a href="hadron-structure-from-qcd-the-bound-state-problem.html">Hadron Structure from QCD: the Bound-State Problem</a>. What a scale-generation mechanism looks like, and why no finite order produces one.</li>
+<li><a href="electroweak-precision-observables-the-oblique-parameters-s-t-u.html">Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$</a>. How the scalar mass enters a fit, and why $T$ is the parameter that measures the scale hierarchy.</li>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a>. What happens to a coupling at high scale, where the count meets its own consistency conditions.</li>
+<li><a href="the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a>. Entry 17 constructed, and why its smallness is a separate problem.</li>
+<li><a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a>. The conditions the content must satisfy, which constrain the entries the count does not contain.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
