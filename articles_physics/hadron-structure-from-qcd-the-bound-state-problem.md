@@ -1,0 +1,352 @@
+# __Hadron Structure from QCD: the Bound-State Problem__
+
+## Introduction
+
+**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. Colour is the sharpest declared boundary in this corpus: by [The Gauge Group Ceiling](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), no compact gauge algebra inside $\mathbb{B}$ has real dimension above four and no $\mathbb{B}$-module has odd complex dimension, so neither $SU(3)$ nor a triplet is available. The strong sector is transcribed, and the article says so before it computes anything.
+
+**What this article is actually about.** The previous four articles computed things that perturbation theory can reach: a running coupling, a set of densities, a set of cross sections. This one computes the one number that perturbation theory cannot reach, and it explains why. The proton's mass is the cleanest demonstration in physics that a quantum field theory can generate a scale it does not contain — and the demonstration is not a metaphor, it is a computation that agrees with the measured number to one per cent.
+
+**The claim, in four parts.**
+
+- **The mass is not a sum of masses.** The current masses of the two up quarks and the down quark in the proton total $9.0$ MeV. The proton weighs $938.3$ MeV. The difference is not a correction; it is the whole phenomenon, and no accounting in terms of the Lagrangian's parameters reaches it.
+- **The mass is the trace anomaly.** A classical theory with no dimensionful parameter has a traceless energy–momentum tensor. The quantum theory does not: the trace is proportional to the beta function, and the proton's mass is the matrix element of that trace in the proton state. The coefficient that makes the coupling run is the coefficient that makes the proton heavy.
+- **The mass is therefore non-perturbative in a precise sense.** $\Lambda_{\mathrm{QCD}}$ depends on the coupling as $e^{-2\pi/b_0\alpha_s}$, which has an essential singularity at $\alpha_s=0$. No finite order, and no sum of finitely many orders, can produce it. This is why an article about the bound-state problem cannot be an article about Feynman diagrams.
+- **What "the spin of the proton" means is a decomposition, not a fact.** $\tfrac12=\tfrac12\Delta\Sigma+L_q+J_g$, and the measured $\Delta\Sigma$ is about $0.32$, so two thirds of the proton's spin is not carried by quark spin. That is a measurement, not a paradox, and the article states it as one.
+
+**The order.** The counting problem, then the trace anomaly and the decomposition of the mass, then the non-analyticity, then the chiral limit, then the three routes to the number, then how the lattice computation works, then the spin decomposition, then the Bjorken sum rule as the spin analogue of the previous article's coupling determination, then what "solving" would mean, then the ledger.
+
+## The Counting Problem
+
+**The arithmetic that fails.** Take the quark content $uud$ and add the current masses, $\overline{\mathrm{MS}}$ at $2$ GeV:
+
+$$
+2m_u+m_d=2(2.16)+4.67=8.99\ \mathrm{MeV},
+\qquad
+\frac{8.99}{938.27}=0.96\% .
+$$
+
+One per cent. The remaining ninety-nine per cent has no home in the quark masses, and adding the strange quark does not help: $m_u+m_d+m_s=100$ MeV is still $10.7\%$, and the proton carries no net strangeness at all.
+
+**The escape that does not work.** The constituent quark model assigns each quark a mass of about $M_N/3=313$ MeV and then obtains $M_N=3\times313$ MeV. The arithmetic is exact and it is empty: the constituent mass was defined by dividing the nucleon mass by three. The independent handle is the magnetic moment, which gives a constituent mass of about $336$ MeV — and compared with the current mass of the up quark that is a factor
+
+$$
+\frac{336}{2.16}=156 ,
+$$
+
+so $99.4\%$ of a constituent quark's mass is not the quark's mass. A constituent quark is a quark plus its share of the colour field, and the model has renamed the binding energy as a mass.
+
+**The statement the numbers force.** The proton's mass is the energy of its own field configuration, and the only reason it is a *mass* rather than an energy is that special relativity converts field energy into rest mass. This is not a poetic reading; it is what the trace of the energy–momentum tensor says, and the next section makes it an equation.
+
+**The one number that does have a home in the Lagrangian.** The neutron–proton splitting,
+
+$$
+m_n-m_p=1.2933\ \mathrm{MeV},
+\qquad
+\frac{1.2933}{938.27}=0.138\% ,
+$$
+
+is a genuine quark-mass effect. It is the difference of two competing contributions: the quark mass difference $m_d-m_u=2.51$ MeV enters with a coefficient of order one, and the electromagnetic self-energy enters with the opposite sign and a magnitude of about $1$ MeV. A lattice calculation must resolve $1$ MeV inside $939$ MeV to get this right, and it does. That is the precision at which the bound-state problem is now solved.
+
+## The Trace Anomaly, and Where the Mass Sits
+
+**The classical statement.** For massless quarks the classical QCD Lagrangian has no dimensionful parameter, and the energy–momentum tensor is traceless:
+
+$$
+T^\mu_{\ \ \mu}=0\quad\text{classically, for }m_q=0 .
+$$
+
+A traceless conserved $T_{\mu\nu}$ is the statement that the theory is invariant under dilatations. The invariance is exact classically and it is not a symmetry of the world: the proton has a mass, and a mass term breaks it.
+
+**The quantum statement.** The regularised trace is not zero, and its value is fixed by the same coefficient that governs the running:
+
+$$
+T^\mu_{\ \ \mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^{a\,\mu\nu}
+=-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^{a\,\mu\nu}
++\sum_f m_f\,\bar q_f q_f ,
+$$
+
+with $b_0=11-\tfrac23N_f$ from [the running article](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The first term is the anomaly, and it survives in the chiral limit; the second is the explicit breaking by the quark masses, and it vanishes with them. [The trace anomaly article](the-trace-anomaly-in-biquaternionic-form.html) established the framework's reading of the first term — the central scalar coefficient multiplying the curvature invariant, distinguished there from the phase of the $\theta$ term.
+
+**The mass as a matrix element.** In the standard relativistic normalisation,
+
+$$
+m_p=\frac{1}{2m_p}\langle p|T^\mu_{\ \ \mu}|p\rangle ,
+$$
+
+so the mass is not a parameter of the Lagrangian: it is the expectation value of the trace in the proton state. This is the sentence that resolves the counting problem. The proton's mass is a property of a *state*, not of a term in a Lagrangian, and that is why the Lagrangian's parameters do not add up to it.
+
+**The decomposition, with numbers.** Splitting the matrix element into the two pieces of the trace, the standard decomposition gives
+
+| Piece | Value | Share of $m_p$ |
+|---|---|---|
+| Light-quark sigma term $\sigma_{\pi N}$ | $\approx45$ MeV | $4.8\%$ |
+| Strange sigma term $\sigma_s$ | $\approx40$ MeV | $4.3\%$ |
+| Remainder: gluon field energy and anomaly | $\approx853$ MeV | $90.9\%$ |
+
+The quark-mass contribution to the mass is about $9\%$, not $1\%$, and the difference between the two numbers is itself informative: $\sigma_{\pi N}/(m_u+m_d)\approx6.4$, because the matrix element $\langle\bar qq\rangle$ is enhanced by the condensate. A light quark propagating in the QCD vacuum is not a light quark propagating in empty space, and the enhancement factor is a direct measure of [the chiral condensate](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html). The $9\%$ figure carries a real uncertainty: $\sigma_{\pi N}$ is quoted between $40$ and $60$ MeV depending on whether it comes from $\pi N$ scattering or from the lattice, and $\sigma_s$ between $20$ and $60$ MeV. The anomaly's share is $91\%$ with an error of a few per cent, and no reasonable variation of the inputs brings it near zero.
+
+**What the two per cent statements are.** The running article recorded that about one per cent of the nucleon mass comes from the light quark masses. That is the statement about the *masses*; the table above is the statement about the *matrix elements*. Both are correct, they answer different questions, and the gap between them is the condensate.
+
+## Why No Finite Order Can Produce It
+
+**The mechanism, in one line.** Dimensional transmutation turns the dimensionless coupling into a dimensionful scale:
+
+$$
+\Lambda=\mu\exp\left[-\frac{2\pi}{b_0\,\alpha_s(\mu)}\right] ,
+$$
+
+with $b_0=9$ at three flavours. The same formula is [the running article's](asymptotic-freedom-and-the-running-of-the-strong-coupling.html); what this article does with it is examine its analytic structure.
+
+**The values, at three scales.** Choosing $(\mu,\alpha_s)$ pairs that lie on one running curve:
+
+| $\mu$ | $\alpha_s(\mu)$ | $2\pi/(b_0\alpha_s)$ | $\Lambda$ |
+|---|---|---|---|
+| $1$ GeV | $0.45$ | $1.551$ | $212$ MeV |
+| $2$ GeV | $0.30$ | $2.327$ | $195$ MeV |
+| $4$ GeV | $0.22$ | $3.173$ | $167$ MeV |
+
+The three values agree to within the accuracy of a one-loop treatment: the residual drift from $212$ to $167$ MeV is the size of the two-loop correction, not evidence of an inconsistency. The physical statement is that one number replaces one dimensionless coupling and one scale, and neither of the latter two survives on its own.
+
+**The essential singularity.** The function $e^{-c/\alpha_s}$ with $c=2\pi/b_0$ vanishes at $\alpha_s=0$ faster than any power. The test is the effective coefficient needed if the exponential is to be imitated by a polynomial term $\alpha_s^{n}$:
+
+| $\alpha_s$ | $e^{-c/\alpha_s}$ | $\alpha_s^{10}$ | implied coefficient |
+|---|---|---|---|
+| $0.30$ | $9.76\times10^{-2}$ | $5.91\times10^{-6}$ | $1.7\times10^{4}$ |
+| $0.20$ | $3.05\times10^{-2}$ | $1.02\times10^{-7}$ | $3.0\times10^{5}$ |
+| $0.15$ | $9.53\times10^{-3}$ | $5.77\times10^{-9}$ | $1.7\times10^{6}$ |
+| $0.10$ | $9.29\times10^{-4}$ | $1.00\times10^{-10}$ | $9.3\times10^{6}$ |
+
+The coefficient grows without bound as the coupling falls, by a factor of thirty when $\alpha_s$ halves from $0.20$ to $0.10$. That divergence is the definition of an essential singularity, and its consequence is exact: the Taylor series of $e^{-c/\alpha_s}$ about $\alpha_s=0$ is identically zero, so *the perturbative expansion knows the scale exists and assigns it the value zero at every order*.
+
+**What this forbids, stated plainly.** No calculation at any finite order in $\alpha_s$ can produce a proton mass. Not because the calculation is hard, but because the answer is not in the space of functions that finite-order perturbation theory spans. The mass is the first quantity in this series whose existence is a statement about the failure of the expansion rather than about a coefficient in it.
+
+**What it does not forbid.** It does not forbid a numerical evaluation of the path integral, because the path integral is not an expansion in $\alpha_s$. That is the lattice, and it is why the lattice is not an optional refinement of the perturbative programme — it is the only route to the number that does not begin by assuming the answer is analytic.
+
+## The Chiral Limit
+
+**The limit, defined.** Send $m_u,m_d\to0$ holding $\Lambda$ fixed. The Lagrangian acquires an exact $SU(2)_L\times SU(2)_R$ symmetry, and the vacuum breaks it to the diagonal $SU(2)_V$. Goldstone's theorem then gives three massless bosons: the pions.
+
+**The relation that measures the breaking.** At leading order in the quark mass,
+
+$$
+m_\pi^2f_\pi^2=-\left(m_u+m_d\right)\langle\bar qq\rangle ,
+$$
+
+the Gell-Mann–Oakes–Renner relation, which [the pion article](the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) derives from the chiral Lagrangian in the corpus's variables. With that article's inputs, $m_\pi=139.6$ MeV, $f_\pi=92.1$ MeV and $m_u+m_d=7.0$ MeV, it gives $B_0=2.783$ GeV and
+
+$$
+\left(-\langle\bar qq\rangle\right)^{1/3}=286.8\ \mathrm{MeV},
+$$
+
+which is the standard range and is the consistency the relation is meant to express: the pion mass vanishes with the quark masses because the condensate does not.
+
+**What happens to the nucleon.** Almost nothing. The nucleon mass in the chiral limit is not zero, because the nucleon is not a Goldstone boson; it is a soliton-like bound state whose mass is set by $\Lambda$ and not by the symmetry-breaking. Lattice extrapolations give
+
+$$
+m_N(m_\pi\to0)\approx0.88\ \mathrm{GeV},
+$$
+
+about $6\%$ below the physical $0.94$ GeV. So the pion mass moves from $140$ MeV to $0$ and the nucleon moves by $60$ MeV. The sensitivity is $\partial m_N/\partial m_\pi^2\approx\sigma_{\pi N}/m_\pi^2$-like, and it is small because $\sigma_{\pi N}$ is $5\%$ of the mass.
+
+**Why this is the right diagnostic.** A bound state whose mass vanished in the chiral limit would be a Goldstone boson. A bound state whose mass did not move at all would be decoupled from the symmetry breaking. The nucleon is neither, and the size of its movement, $6\%$, is a measurement of $\sigma_{\pi N}$. The chiral limit is therefore not a formal device here: it is the axis along which the bound-state problem is calibrated.
+
+**The two limits that must not be confused.** $m_q\to0$ with $\Lambda$ fixed is the chiral limit, and it makes the pion massless. $\Lambda\to0$ with $m_q$ fixed is the trivial theory, and it makes everything massless. The proton mass is a function of both, and the statement $m_p\sim\Lambda$ means that the $\Lambda$ dependence is the leading one.
+
+## Three Routes to the Same Number
+
+**The comparison.** The proton mass is the most over-determined number in strong-interaction physics: three entirely different methods reach it, and their accuracy differs by two orders of magnitude.
+
+| Route | Method | Result | Accuracy | Inputs |
+|---|---|---|---|---|
+| Lattice QCD | Numerical path integral on a grid | $938$ MeV | $\sim1\%$ | $\alpha_s$, $m_q$ |
+| Chiral effective theory | Extrapolation in $m_\pi$ with fitted low-energy constants | $938$ MeV | few $\%$ | $\sigma_{\pi N}$, $f_\pi$, $\Lambda$ |
+| Skyrme model | Soliton of the pion effective theory | $\sim1.1$–$1.3$ GeV | $20$–$40\%$ | $f_\pi$, $e$, $N_c$ |
+| Constituent quark model | $3\times m_{\text{const}}$ | $938$ MeV | by construction | the nucleon mass |
+
+**What the table's last row is doing there.** It is there to be identified as circular. The constituent mass has no independent definition that does not use a baryon mass, so the model's success is a consistency check on its bookkeeping and not a prediction. The magnetic moment gives an independent handle at $336$ MeV, and it agrees — which is a real, if weak, success.
+
+**What the Skyrme number means.** The skyrmion mass is proportional to $f_\pi/e$ times a pure number from the profile, and with the physical $f_\pi$ and the standard $e$ it comes out some $20$–$40\%$ high. [The Skyrme article](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) records this and records why the framework does not supply the model's dynamical hypothesis. The $30\%$ error is not a defect of the method; it is the expected size of a leading-order truncation of the derivative expansion, and it is why the model is used for ratios and quantum numbers rather than for masses.
+
+**Why the lattice wins.** It is the only route that does not truncate. The path integral is evaluated with a gauge-invariant regulator, the continuum limit is taken, the volume is taken large, and the only inputs are the two quantities that must be measured elsewhere: the coupling and the quark masses. Everything else — the binding, the condensate, the anomaly's matrix element, the spin decomposition — comes out of the same computation.
+
+## How the Lattice Computation Works
+
+**The four steps, named.** Discretise the path integral on a four-dimensional grid with spacing $a$; evaluate it by Monte Carlo with importance sampling; extrapolate $a\to0$ and $V\to\infty$; extrapolate in the quark masses to the physical point.
+
+**Where the scale enters.** A lattice calculation produces dimensionless numbers: $m_pa$, the proton mass times the grid spacing. To convert to MeV one needs $a$, which is fixed by matching some dimensionful quantity to its measured value — a hadron mass, a decay constant, or the $\Upsilon$ spectrum. That matching is where $\Lambda$ enters, and it is the reason the calculation is a prediction of *ratios* and of $m_p$ given one scale. Nothing about this is a weakness: the theory has one dimensionful parameter, so one measured number must fix it, and every other mass is then a prediction.
+
+**The error budget, and its shape.**
+
+| Source | Size | How it is controlled |
+|---|---|---|
+| Gauge coupling and quark masses | $\sim1\%$ | Measured inputs, propagated |
+| Lattice spacing $a\to0$ | $\sim1\%$ | Several spacings, extrapolation in $a^2$ |
+| Finite volume | $<1\%$ | $m_\pi L>4$ |
+| Chiral extrapolation | $\sim1\%$ | Several $m_\pi$, chiral perturbation theory |
+| Statistical | $<1\%$ | Ensemble size |
+
+**The output that matters.** The calculation reproduces $m_p$ and $m_n$ to about one per cent, and it reproduces the $1.29$ MeV splitting — a $0.14\%$ effect — because the two contributions to it are separately computable. That is the sense in which the bound-state problem is solved: not that there is a formula, but that there is an algorithm whose error is under control and which uses no parameter that is not measured independently.
+
+**What the lattice does not give.** It does not give a wavefunction in the sense of a few-body quantum mechanics; the proton on a lattice is a correlation function with a tower of excited states, and the ground-state projection is a numerical procedure. It does not give an analytic understanding of why the mass is $938$ rather than $900$; it gives the number and the decomposition.
+
+## The Spin Decomposition
+
+**The sum rule.** The proton has spin $\tfrac12$, and the angular momentum sum rule partitions it:
+
+$$
+\frac12=\frac12\Delta\Sigma+L_q+J_g ,
+$$
+
+where $\Delta\Sigma=\sum_f(\Delta u_f+\Delta d_f+\Delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
+
+**The numbers.**
+
+| Quantity | Value at $Q^2\approx3$ GeV$^2$ | Share of $\tfrac12$ |
+|---|---|---|
+| $\Delta\Sigma$ | $0.32\pm0.02$ | $32\%$ |
+| $J_g$ | $\approx0.25$ (DVCS and lattice) | $50\%$ |
+| $L_q$ | $\approx0.09$ (by subtraction) | $18\%$ |
+| Sum | $0.50$ | $100\%$ |
+
+**What was surprising, and what was not.** The 1988 EMC measurement found $\Delta\Sigma=0.12\pm0.09\pm0.14$, consistent with zero, which would have said that essentially none of the proton's spin is quark spin. The modern value is $0.32$: the quark spin carries about a third, the gluon and the orbital motion carry the rest. The historical episode is worth recording because the reaction to it was a category error — the sum rule was never in doubt, only the value of one of its terms, and a term of a sum rule cannot "violate" the sum rule.
+
+**Why the decomposition is hard.** $L_q$ is not directly measurable. It is defined by a matrix element of an operator whose quark–gluon separation depends on the scheme, and different decompositions — Ji's, Jaffe–Manohar's — attribute different pieces to "orbital" and "spin". The sum, $\tfrac12$, is scheme-independent; the split is not. An article that quoted $L_q=0.09$ without saying so would be over-claiming, and the number above is marked as a subtraction rather than a measurement.
+
+**What the axial charges say.** The same quark spin densities appear in the axial charges, which are measured in $\beta$ decay and in polarised deep inelastic scattering:
+
+$$
+g_A=\Delta u-\Delta d=1.2754 ,
+\qquad
+\Delta u\approx0.82 ,
+\qquad
+\Delta d\approx-0.44 ,
+\qquad
+\Delta s\approx-0.03 .
+$$
+
+The sum is $0.35$, consistent with the $0.32$ above within the different $Q^2$. Note what $g_A=1.28$ rather than $1$ means: the naive quark-model value of $5/3$ is a constituent-quark statement, and the measured value is neither $1$ nor $5/3$, because the axial charge is renormalised by the same strong dynamics that binds.
+
+## The Bjorken Sum Rule
+
+**The rule.** The first moment of the difference of the two spin structure functions is predicted to all orders:
+
+$$
+\int_0^1\left[g_1^p(x,Q^2)-g_1^n(x,Q^2)\right]dx=\frac{g_A}{6}\left[1-\frac{\alpha_s}{\pi}-3.58\left(\frac{\alpha_s}{\pi}\right)^2-20.2\left(\frac{\alpha_s}{\pi}\right)^3-\dots\right] .
+$$
+
+This is the spin analogue of [the previous article's](the-parton-model-and-deep-inelastic-scattering.html) Gross–Llewellyn Smith sum rule: a first moment, protected against the parton densities, with a purely perturbative coefficient.
+
+**The series, term by term.** With $g_A/6=0.2126$:
+
+| $Q$ | $\alpha_s$ | $\alpha_s/\pi$ | term 1 | term 2 | term 3 | Series | Prediction |
+|---|---|---|---|---|---|---|---|
+| $3$ GeV | $0.24$ | $0.0764$ | $0.0764$ | $0.0209$ | $0.0090$ | $0.894$ | $0.190$ |
+| $5$ GeV | $0.20$ | $0.0637$ | $0.0637$ | $0.0145$ | $0.0052$ | $0.917$ | $0.195$ |
+| $M_Z$ | $0.1179$ | $0.0375$ | $0.0375$ | $0.0050$ | $0.0011$ | $0.956$ | $0.203$ |
+
+**The comparison with the measurement.** At $Q^2=3$ GeV$^2$ the measured value is
+
+$$
+\Gamma_1^{p-n}=0.192\pm0.004 ,
+$$
+
+against the predicted $0.190$. The agreement is at the level of the experimental error, and the table shows why it is not an accident: the three corrections are $0.076$, $0.021$ and $0.009$, each about a third of the one before, so the fourth term is expected at $0.003$ — the size of the measurement error. The series is asymptotic, converging usefully for three terms and then stopping, which is the behaviour [the running article](asymptotic-freedom-and-the-running-of-the-strong-coupling.html) described for the coupling itself.
+
+**Why this belongs here rather than in the previous article.** Because it is a statement about the proton's *spin*, and the spin is the part of the bound-state problem that the decomposition above organises. It also makes the sharpest point in the article: a quantity defined by the bound state's internal structure, integrated over all $x$, is predicted by a perturbative coefficient with no model of the bound state at all. That is factorisation, and it is the reason the bound-state problem is tractable at all — not because the bound state is understood, but because its *moments* are not sensitive to the details.
+
+## What "Solving" the Bound-State Problem Would Mean
+
+**Three grades of answer, and which is available.**
+
+| Grade | Criterion | Status |
+|---|---|---|
+| Numerical | A controlled algorithm that reproduces the mass with a stated error | **Achieved**: lattice, $\sim1\%$ |
+| Structural | The decomposition into terms, each computable or measurable | **Achieved**: the trace anomaly decomposition |
+| Analytic | A closed expression in $\Lambda$, $N_c$ and the quark masses | **Not achieved, and not expected** |
+
+**Why the third grade is not expected.** QCD at long distance is a strongly coupled theory with no small parameter. The only known expansions are the large-$N_c$ limit, which is qualitatively right and quantitatively $30\%$ off, and the derivative expansion of the chiral effective theory, which is an expansion in $m_\pi/\Lambda$ and not in the coupling. Neither is a route to a closed form. The absence is a statement about the theory's structure, not about the state of the art.
+
+**Why the second grade is the informative one.** The decomposition says *where* the mass is: $91\%$ in the gluon field, $9\%$ in the quark mass terms, with the split measurable. That is more useful than a fit, because it tells you which knob moves the number and by how much. It is what allows a statement such as "varying the light quark masses by $10\%$ moves the proton by $0.5\%$" to be a prediction rather than an extrapolation.
+
+**The one structural question the decomposition raises.** The anomaly's matrix element $\langle p|G^2|p\rangle$ is a property of the proton state, and the proton state is a solution of the theory. So the decomposition is exact and not yet an explanation: it says the mass is the gluon energy, and it does not say why the gluon energy has the value it does. That gap is where the lattice does its work, and it is honest to call it a gap.
+
+## What the Framework Supplies
+
+**Declared, item by item.** The framework's contribution to this article is representation, not derivation, and the boundary is stated before the list.
+
+**What it supplies.** The proton as an effective spin-$\tfrac12$ field of $\mathbb{B}$, established in [The Proton](the-proton-in-biquaternionic-form.html) and [The Neutron](the-neutron-in-biquaternionic-form.html): a Dirac field whose charge operator and magnetic moment are computed, and whose compositeness is absorbed into imported parameters. The chiral condensate as an order parameter with a gap equation and a critical coupling, in [the condensate article](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html). The trace anomaly as a central scalar coefficient of the determinant, in [the trace anomaly article](the-trace-anomaly-in-biquaternionic-form.html). The group manifold on which a winding number lives, in [the Skyrme article](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html). And the lattice formulation itself, in [the lattice article](lattice-gauge-theory-and-the-biquaternion-path-integral.html), which is where the numerical route of this article is set out.
+
+**What it does not supply, stated as a declaration.** No colour triplet, so no quarks in the algebraic sense. No gluon. No Wilson loop, no area law, no string tension. No many-body bound-state formalism. No measure on which $\int d^3p/2E$ is an algebraic operation. The bound-state problem of this article is therefore entirely standard physics, transcribed into the corpus's notation, and the framework's role is to say what it can represent and to say so plainly.
+
+**The ledger.**
+
+| Item | Status |
+|---|---|
+| $2m_u+m_d=9.0$ MeV, $0.96\%$ of $m_p$ | **Imported** quark masses; arithmetic here |
+| The constituent mass and its factor $156$ | **Imported** model; the factor computed here |
+| $T^\mu_{\ \ \mu}=\frac{\beta}{2g}G^2+\sum m_f\bar q_fq_f$ | **Imported.** The anomaly's framework reading is in the trace-anomaly article |
+| $m_p=\langle p\vert T^\mu_{\ \ \mu}\vert p\rangle/(2m_p)$ | **Imported** |
+| $\sigma_{\pi N}\approx45$ MeV, $\sigma_s\approx40$ MeV | **Imported**; the shares computed here |
+| $\Lambda=\mu e^{-2\pi/(b_0\alpha_s)}$ | **Imported**; the three values and the singularity table computed here |
+| $m_\pi^2f_\pi^2=-(m_u+m_d)\langle\bar qq\rangle$ | **Imported**; the numerical check in the pion article |
+| $m_N(m_\pi\to0)\approx0.88$ GeV | **Imported** lattice extrapolation |
+| The lattice computation and its error budget | **Imported**; the framework hosts the formulation |
+| $\tfrac12=\tfrac12\Delta\Sigma+L_q+J_g$ and the values | **Imported** measurements |
+| $g_A=1.2754$ and the axial charges | **Imported** |
+| The Bjorken sum rule and its series | **Imported**; the three-term table computed here |
+| The proton as an effective $\mathbb{B}$ field | **Framework**: represented, not composed |
+| The condensate, the anomaly's central term, the winding number | **Framework**: each in its own article |
+| Colour, confinement, the string tension, a many-body formalism | **Not available**, per the ceiling |
+
+**What this article does not do.** It does not compute a lattice correlator, does not solve the Skyrme profile, does not fit $\sigma_{\pi N}$, and does not prove the spin sum rule's scheme independence. It states the decomposition, computes every arithmetic consequence it quotes, and marks the boundary.
+
+## Summary
+
+The proton's current quark masses total $9.0$ MeV, $0.96\%$ of its $938.3$ MeV. The constituent quark mass of $336$ MeV is $156$ times the up quark's, so $99.4\%$ of it is binding energy under another name. The mass is the matrix element of the trace of the energy–momentum tensor, and that trace is the beta function: $91\%$ of the mass is gluon field energy and anomaly, $9\%$ is the quark mass terms, and the gap between the $1\%$ of the masses and the $9\%$ of the matrix elements is the chiral condensate, with $\sigma_{\pi N}/(m_u+m_d)=6.4$.
+
+The mass is $\Lambda$ up to a coefficient, and $\Lambda=\mu e^{-2\pi/(b_0\alpha_s)}$ has an essential singularity at $\alpha_s=0$. Three running pairs give $212$, $195$ and $167$ MeV, agreeing within one-loop accuracy, and the coefficient needed to imitate the exponential with $\alpha_s^{10}$ grows from $1.7\times10^{4}$ to $9.3\times10^{6}$ as the coupling falls from $0.30$ to $0.10$. So no finite order can produce the mass, and the lattice is not a refinement of the perturbative programme but the only route that does not assume the answer is analytic.
+
+In the chiral limit the pion becomes massless and the nucleon moves to $0.88$ GeV, $6\%$ below its physical value, which is a measurement of $\sigma_{\pi N}$. Three routes reach the mass: the lattice to $1\%$, chiral effective theory to a few per cent, the Skyrme model to $20$–$40\%$, and the constituent model by construction. The lattice reproduces $m_p$, $m_n$ and the $1.29$ MeV splitting with no parameter that is not measured independently.
+
+The spin decomposes as $\tfrac12=\tfrac12(0.32)+0.09+0.25$: a third from quark spin, half from the gluon's total angular momentum, the rest from quark orbital motion, with $L_q$ a subtraction rather than a measurement. The Bjorken sum rule turns that structure into a perturbative number, $g_A/6=0.2126$ corrected by $0.076$, $0.021$ and $0.009$, giving $0.190$ against a measured $0.192\pm0.004$ — a bound-state quantity predicted by a coefficient with no model of the bound state.
+
+The second grade of answer is achieved: a numerical algorithm with a controlled error and a structural decomposition of the mass. The third is not, and is not expected, because QCD at long distance has no small parameter.
+
+The framework represents the proton, the condensate, the anomaly and the winding number, and it declares that it does not supply colour, confinement or a many-body formalism. The bound-state problem is standard physics, transcribed.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $m_p$, $m_n$ | Proton and neutron masses |
+| $m_u$, $m_d$, $m_s$ | Current quark masses, $\overline{\mathrm{MS}}$ at $2$ GeV |
+| $T_{\mu\nu}$, $T^\mu_{\ \ \mu}$ | Energy–momentum tensor and its trace |
+| $\beta_{g_s}$, $b_0$ | Beta function and its one-loop coefficient, $11-\tfrac23N_f$ |
+| $G^a_{\mu\nu}$ | Gluon field strength |
+| $\Lambda$, $\Lambda_{\mathrm{QCD}}$ | The scale generated by dimensional transmutation |
+| $\sigma_{\pi N}$ | Light-quark sigma term, $\approx45$ MeV |
+| $\sigma_s$ | Strange sigma term, $\approx40$ MeV |
+| $m_\pi$, $f_\pi$ | Pion mass and decay constant |
+| $\langle\bar qq\rangle$ | Chiral condensate |
+| $B_0=-\langle\bar qq\rangle/f_\pi^2$ | Condensate scale, $2.783$ GeV |
+| $\Delta\Sigma$ | Quark spin fraction, $0.32$ |
+| $L_q$, $J_g$ | Quark orbital and gluon total angular momentum |
+| $g_A$ | Axial charge, $1.2754$ |
+| $\Gamma_1^{p-n}$ | First moment of $g_1^p-g_1^n$ |
+| $a$ | Lattice spacing |
+| $m_{\text{const}}$ | Constituent quark mass, $\approx336$ MeV |
+
+## Further Reading
+
+- [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_0$, dimensional transmutation, the trace anomaly's first appearance, and where perturbation theory dies.
+- [The Trace Anomaly in Biquaternionic Form](the-trace-anomaly-in-biquaternionic-form.html). The central scalar coefficient and its determinant reading.
+- [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html). The order parameter, the gap equation, the critical coupling.
+- [The Pion and the Chiral Lagrangian in Biquaternionic Form](the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html). Gell-Mann–Oakes–Renner and the numerical check of the condensate.
+- [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html). The effective field, the charge operator, and the compositeness the framework does not represent.
+- [The Neutron in Biquaternionic Form](the-neutron-in-biquaternionic-form.html). Neutrality, the magnetic moment, and the accounting.
+- [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html). The soliton route and its $30\%$ truncation error.
+- [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The formulation behind the numerical route.
+- [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The Gross–Llewellyn Smith sum rule, whose spin analogue is the Bjorken rule here.
+- [Jets, the QCD Cross Section and the Infrared Structure](jets-the-qcd-cross-section-and-the-infrared-structure.html). $\alpha_s$ from event shapes at the $Z$, and the resummation the moments do not need.
+- [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). The Lagrangian whose trace is the anomaly.
+- [The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The bound behind every "not available" row of the ledger.
