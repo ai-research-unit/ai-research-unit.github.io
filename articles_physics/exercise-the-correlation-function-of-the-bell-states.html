@@ -88,7 +88,7 @@ $$</p>
 <p>where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1, and $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ acts on particle 2.</p>
 <p>Compute $E(\vec u_x, \vec u_y)$ for each of the four Bell states. Express the result in the form</p>
 <p>$$
-E(\vec u_x, \vec u_y) = \sum_{j,k=1}^{3} a_j\,T_{jk}\,b_k = \vec u_x^T T\, \vec u_y,
+E(\vec u_x, \vec u_y) = \sum_{j,\eta =1}^{3} a_j\,T_{j\eta}\,b_k = \vec u_x^T T\, \vec u_y,
 $$</p>
 <p>and identify the $3\times 3$ matrix $T$ for each Bell state.</p>
 <h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
@@ -113,17 +113,17 @@ $$</p>
 <h3 id="step-2-the-correlation-matrix">Step 2: The correlation matrix</h3>
 <p>The correlation function is the expectation of the tensor-product observable $\vec u_x\cdot\boldsymbol{\sigma}_1\otimes\vec u_y\cdot\boldsymbol{\sigma}_2$:</p>
 <p>$$
-E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_\eta I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,k} a_j b_\eta\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
+E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_\eta I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,\eta} a_j b_\eta\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
 $$</p>
 <p>So the correlation function is determined by the $3\times 3$ matrix</p>
 <p>$$
-T_{jk} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle = \mathrm{Tr}\!\left(|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|\cdot\sigma_j\otimes\sigma_\eta\right).
+T_{j\eta} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle = \mathrm{Tr}\!\left(|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|\cdot\sigma_j\otimes\sigma_\eta\right).
 $$</p>
 <p>Because the Pauli strings are trace-orthogonal, the projector admits the expansion</p>
 <p>$$
-|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}| = \tfrac{1}{4}\sum_{j,k} T_{jk}\,\sigma_j\otimes\sigma_\eta,
+|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}| = \tfrac{1}{4}\sum_{j,\eta} T_{j\eta}\,\sigma_j\otimes\sigma_\eta,
 $$</p>
-<p>and $T_{jk}$ can be read off directly as the coefficient of $\sigma_j\otimes\sigma_\eta$ inside the bracket. The off-diagonal entries vanish because the Bell projectors contain only the diagonal Pauli strings $\sigma_x\otimes\sigma_x$, $\sigma_y\otimes\sigma_y$, $\sigma_z\otimes\sigma_z$.</p>
+<p>and $T_{j\eta}$ can be read off directly as the coefficient of $\sigma_j\otimes\sigma_\eta$ inside the bracket. The off-diagonal entries vanish because the Bell projectors contain only the diagonal Pauli strings $\sigma_x\otimes\sigma_x$, $\sigma_y\otimes\sigma_y$, $\sigma_z\otimes\sigma_z$.</p>
 <h3 id="step-3-computing-math42-for-each-bell-state">Step 3: Computing $T$ for each Bell state</h3>
 <p><strong>Singlet $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$.</strong> The projector is</p>
 <p>$$
@@ -131,7 +131,7 @@ $$</p>
 $$</p>
 <p>Reading off the coefficients:</p>
 <p>$$
-T_{11} = T_{22} = T_{33} = -1, \qquad T_{jk} = 0 \text{ for } j \neq k.
+T_{11} = T_{22} = T_{33} = -1, \qquad T_{j\eta} = 0 \text{ for } j \neq k.
 $$</p>
 <p>So $T_{\mathrm{sp}^-} = -\mathrm{diag}(1,1,1)$, and $E = -\vec u_x\cdot\vec u_y$. This reproduces the result of Exercise: Two Spins in the Singlet State.</p>
 <p><strong>State $|Ξ^{+}\rangle$.</strong> The projector is</p>
@@ -140,7 +140,7 @@ $$</p>
 $$</p>
 <p>Reading off the coefficients:</p>
 <p>$$
-T_{11} = +1, \quad T_{22} = -1, \quad T_{33} = +1, \qquad T_{jk} = 0 \text{ for } j \neq k.
+T_{11} = +1, \quad T_{22} = -1, \quad T_{33} = +1, \qquad T_{j\eta} = 0 \text{ for } j \neq k.
 $$</p>
 <p>So $T_{Ξ^+} = \mathrm{diag}(1,-1,1)$, and $E = a_1 b_1 - a_2 b_2 + a_3 b_3$.</p>
 <p><strong>State $|Ξ^{-}\rangle$.</strong> The projector is</p>
@@ -276,7 +276,7 @@ $$</p>
 <p>$$
 e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
 $$</p>
-<p>using $e_m \vec u_x = -a_m e_t + \sum_{k \neq m} a_k e_m \vec e_\eta$. The scalar part is $-i a_m$, so</p>
+<p>using $e_m \vec u_x = -a_m e_t + \sum_\eta \neq m} a_k e_m \vec e_\eta$. The scalar part is $-i a_m$, so</p>
 <p>$$
 \mathrm{Tr}_\mathbb{B}(e_m \cdot i\vec u_x) = -2 i a_m,
 $$</p>
@@ -328,7 +328,7 @@ $$</p>
 <p>These match the standard results exactly.</p>
 <h2 id="limiting-cases">Limiting Cases</h2>
 <p>Both formulations give the same results, and both give the same limits. The cleanest way to read the table is by the direction of the measurements.</p>
-<p><strong>Parallel measurements along a coordinate axis.</strong> Set $\vec u_x = \vec u_y = \vec u_\eta$; the correlation is the diagonal entry $T_{kk}$:</p>
+<p><strong>Parallel measurements along a coordinate axis.</strong> Set $\vec u_x = \vec u_y = \vec u_\eta$; the correlation is the diagonal entry $T_{\eta \eta}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -505,7 +505,7 @@ $$</p>
 <td>Correlation function</td>
 </tr>
 <tr>
-<td>$T_{jk} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle$</td>
+<td>$T_{j\eta} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle$</td>
 <td>Correlation matrix</td>
 </tr>
 <tr>

@@ -83,7 +83,7 @@ $$
 $$
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value; the numerical instance is in vacuum, $c = c_0$.</p>
 <p><strong>What is to be shown.</strong> The problems are: (1) the four-wavevector, its null biquaternion norm, its invariant phase, and an invariant expression for the frequency an observer measures; (2) the boost of the four-wavevector and the general Doppler formula; (3) the longitudinal case; (4) the transverse case — which is in fact <em>two</em> inequivalent cases; (5) aberration and the forward cone; (6) a numerical instance and the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.</p>
-<p><strong>Notation for the problem.</strong> A <strong>source</strong> is at rest in the <em>source frame</em> and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_{t}^{\prime} = (\omega_0/c)\vec {u_k}_0$. An <strong>observer</strong> is at rest in the <em>observer frame</em>, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured <strong>in the source frame</strong> between $\vec v_b$ and the propagation direction $\vec {u_k}_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.</p>
+<p><strong>Notation for the problem.</strong> A <strong>source</strong> is at rest in the <em>source frame</em> and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_{t}^{\prime} = (\omega_0/c)\vec u_\eta_0$. An <strong>observer</strong> is at rest in the <em>observer frame</em>, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured <strong>in the source frame</strong> between $\vec v_b$ and the propagation direction $\vec u_\eta_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.</p>
 <h2 id="problem-1-the-four-wavevector-the-phase-and-the-frequency-invariant">Problem 1: The Four-Wavevector, the Phase, and the Frequency Invariant</h2>
 <p><strong>Statement.</strong> (a) Write $\tilde P_{\Phi}$ and show that light has $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$. (b) Define the phase of the plane wave and show that it is invariant under a rotor conjugation. (c) Show that an observer of four-velocity $\tilde{V}_{\Phi}$ measures the frequency
 $$
@@ -94,7 +94,7 @@ and check the formula both in the observer's rest frame and in the source frame.
 $$
 \tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k_\Phi,
 \qquad
-\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
+\vec k_\Phi = k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z,
 \qquad
 k_\Phi = |\vec k_\Phi| .
 $$
@@ -189,7 +189,7 @@ $$
 = i\gamma\left(a - \beta A_\parallel\right),
 $$
 since the scalar part of $\vec A\vec u$ is $-\vec A\cdot\vec u = -A_\parallel$. This is the first of the component equations; the remaining two are obtained from the same multiplication and reproduce the standard Lorentz boost.</p>
-<p><strong>Solution (b).</strong> Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_{t}^{\prime} = (\omega_0/c)\vec {u_k}_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
+<p><strong>Solution (b).</strong> Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_{t}^{\prime} = (\omega_0/c)\vec u_\eta_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
 $$
 \frac{\omega_2}{c} = \gamma\left(\frac{\omega_0}{c} - \beta\frac{\omega_0}{c}\cos\theta\right)
 \quad\Longrightarrow\quad
@@ -200,7 +200,7 @@ $$
 k_{2,\parallel} = \gamma\left(\frac{\omega_0}{c}\cos\theta - \beta\frac{\omega_0}{c}\right)
 = \frac{\omega_0}{c}\,\gamma\left(\cos\theta - \beta\right),
 \qquad
-\vec k_{2,\perp} = \frac{\omega_0}{c}\,\vec {u_k}_{0\perp} .
+\vec k_{2,\perp} = \frac{\omega_0}{c}\,\vec u_\eta_{0\perp} .
 $$
 In the longitudinal case $\theta = 0$ or $\pi$ the transverse part vanishes; in general a ray that is transverse in one frame acquires a longitudinal component in the other, which is the aberration of Problem 5.</p>
 <p><strong>Solution (c).</strong> The biquaternion norm is preserved because $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$:
@@ -474,16 +474,16 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 <td>Observer-frame velocity relative to the source frame</td>
 </tr>
 <tr>
-<td>$\vec {u_k}_0$</td>
+<td>$\vec u_\eta_0$</td>
 <td>Source-frame propagation direction</td>
 </tr>
 <tr>
 <td>$\theta$</td>
-<td>Source-frame angle between $\vec v_b$ and $\vec {u_k}_0$</td>
+<td>Source-frame angle between $\vec v_b$ and $\vec u_\eta_0$</td>
 </tr>
 <tr>
 <td>$\theta_2$</td>
-<td>Observer-frame angle between $\vec v_b$ and $\vec {u_k}_2$</td>
+<td>Observer-frame angle between $\vec v_b$ and $\vec u_\eta_2$</td>
 </tr>
 <tr>
 <td>$\omega_0$, $\omega_2$</td>

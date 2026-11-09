@@ -171,9 +171,9 @@ $$</p>
 \boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\nabla\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,
 $$</p>
 <p>$$
-T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
+T_{t\eta} = T_{\eta t} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
 \qquad
-T_{jk} = T_{kj} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
+T_{j\eta} = T_{\eta j} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
 + \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12(k_m)^{2}\xi^2\right) .
 $$</p>
 <p>For a right-moving massless wave, $\xi=f(x-r'_{t})$, these reduce to $T_{tt}=T_{xx}=(\partial\xi/\partial r_x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.</p>
@@ -189,7 +189,7 @@ $$</p>
 <p>is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.</p>
 <p>As a check, consider the superposition</p>
 <p>$$
-\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_1r_x-\omega_1r'_t/c\right) + 0.6\cos\!\left(k_2r_y-\omega_2r'_t/c\right),
+\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_{\Phi x}r_x-\omega_1r'_t/c\right) + 0.6\cos\!\left(k_{\Phi y}r_y-\omega_2r'_t/c\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad
@@ -213,11 +213,11 @@ $$</p>
 \qquad
 \mathsf{T}_{j0} = -\frac{1}{c}S_j,
 \qquad
-\mathsf{T}_{jk} = -\sigma_{jk},
+\mathsf{T}_{j\eta} = -\sigma_{j\eta},
 $$</p>
 <p>with the Maxwell stress</p>
 <p>$$
-\sigma_{jk} = \epsilon\,E_jE_\eta + \mu\,H_jH_\eta - W\,\delta_{j\eta},
+\sigma_{j\eta} = \epsilon\,E_jE_\eta + \mu\,H_jH_\eta - W\,\delta_{j\eta},
 \qquad
 W = \tfrac12\left(\epsilon\vec E^2+\mu\vec H^2\right),
 \qquad
@@ -229,14 +229,14 @@ T_{tt} = W,
 \qquad
 T_{tj} = T_{jt} = \frac{1}{c}S_j,
 \qquad
-T_{jk} = -\sigma_{jk} = W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
+T_{j\eta} = -\sigma_{j\eta} = W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
 $$</p>
-<p>which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{jk}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the factor $-i$ of the time index, between the energy flux and the momentum density, and it disappears once the column is read in the real coordinate.</p>
+<p>which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{j\eta}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the factor $-i$ of the time index, between the energy flux and the momentum density, and it disappears once the column is read in the real coordinate.</p>
 <p><strong>Tracelessness.</strong> The trace in the unit metric, with the time term carrying the minus of $i^2$, is</p>
 <p>$$
-\sum_\mu T_{Q_\mu Q_\mu} = -T_{tt}+T_{kk} = -W - \sigma_{kk} = -W + W = 0 ,
+\sum_\mu T_{Q_\mu Q_\mu} = -T_{tt}+T_{\eta \eta} = -W - \sigma_{\eta \eta} = -W + W = 0 ,
 $$</p>
-<p>because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.</p>
+<p>because $\sigma_{\eta \eta} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.</p>
 <p><strong>Conservation.</strong> The divergence of the tensor is the Lorentz four-force density. The tensor is defined by</p>
 <p>$$
 \mathsf{T}_{\mu\nu} = \tfrac12\,\mathrm{Sc}\!\left(\tilde F\,\mathcal E_\mu\,\tilde F^{*}\,\mathcal E_\nu\right) ,
@@ -344,7 +344,7 @@ T_{tt}=W,
 \quad
 T_{tj}=\frac1cS_j,
 \quad
-T_{jk}=W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
+T_{j\eta}=W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
 $$</p>
 <p>symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_\mu\partial/\partial R_\mu T_{\mathrm{em},\mu\nu}=-f_\nu$ and $\sum_\mu\partial/\partial R_\mu T_{\mathrm{matter},\mu\nu}=+f_\nu$, so the total tensor is conserved; the $\nu=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -413,7 +413,7 @@ $$</p>
 <td>Energy density; Poynting vector</td>
 </tr>
 <tr>
-<td>$\sigma_{jk}=\epsilon E_jE_\eta+\mu H_jH_\eta-W\delta_{j\eta}$</td>
+<td>$\sigma_{j\eta}=\epsilon E_jE_\eta+\mu H_jH_\eta-W\delta_{j\eta}$</td>
 <td>Maxwell stress</td>
 </tr>
 <tr>
@@ -421,15 +421,15 @@ $$</p>
 <td>Electromagnetic stress–energy, bigeneral quaternionic bilinear</td>
 </tr>
 <tr>
-<td>$\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{jk}=-\sigma_{jk}$</td>
+<td>$\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{j\eta}=-\sigma_{j\eta}$</td>
 <td>Mixed components</td>
 </tr>
 <tr>
-<td>$T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{jk}=-\sigma_{jk}$</td>
+<td>$T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{j\eta}=-\sigma_{j\eta}$</td>
 <td>Symmetric components; the time column is read in the real coordinate</td>
 </tr>
 <tr>
-<td>$\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{kk}=0$</td>
+<td>$\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{\eta \eta}=0$</td>
 <td>Tracelessness</td>
 </tr>
 <tr>

@@ -115,13 +115,13 @@ F_{\mu\nu} =
 -iE_z/c & B_y & -B_x & 0
 \end{pmatrix},
 $$</p>
-<p>that is, $F_{0k} = iE_\eta/c$ and $F_{jk} = \epsilon_{j\eta l}B_l$. The time component of the contraction is</p>
+<p>that is, $F_{0\eta} = iE_\eta/c$ and $F_{j\eta} = \epsilon_{j\eta l}B_l$. The time component of the contraction is</p>
 <p>$$
-K_0 = ϙ\,F_{0k}u_k = ϙ\,\frac{iE_\eta}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
+K_0 = ϙ\,F_{0\eta}u_k = ϙ\,\frac{iE_\eta}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
 $$</p>
 <p>and the spatial components are</p>
 <p>$$
-B_{\mathrm{boost},k} = ϙ\,F_{k0}u_0 + ϙ\,F_{kj}u_j
+B_{\mathrm{boost},k} = ϙ\,F_{\eta0}u_0 + ϙ\,F_{\eta j}u_j
 = ϙ\left(-\frac{iE_\eta}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\eta jl}B_l\,\gamma v_j
 = \gamma ϙ\,E_\eta + \gamma ϙ\left(\vec v\times\vec B\right)_k,
 $$</p>
@@ -383,11 +383,11 @@ $$</p>
 $$</p>
 <p>In the frame in which $\vec E$ and $\vec B$ are parallel these reduce to $\lambda = \pm E_0/c$ and $\lambda = \pm iB_0$. Two familiar cases are immediate. A pure magnetic field ($I_1 < 0$, $I_2 = 0$, frame with $\vec E = 0$) gives eigenvalues $\pm iB$ and the cyclotron frequency $\omega = ϙB/m$: uniform circular motion, with constant energy. A pure electric field ($I_2 = 0$, $I_1 > 0$, frame with $\vec B = 0$) gives eigenvalues $\pm E/c$ and hyperbolic (uniformly accelerated) motion. The field invariants, not the field components, are the Lorentz-invariant data that fix these rates.</p>
 <h3 id="a-null-field-invariant">A null-field invariant</h3>
-<p>One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $k$ (the propagation direction), satisfying $\sum_\mu k_\mu F_{\mu\nu} = 0$. Then</p>
+<p>One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $k$ (the propagation direction), satisfying $\sum_\mu k_{\Phi,\mu} F_{\mu\nu} = 0$. Then</p>
 <p>$$
 \frac{d}{d\tau}\left(k\cdot P\right)
-= \sum_\mu k_\mu\,\frac{dP_\mu}{d\tau}
-= \frac{ϙ}{m}\sum_{\mu,\nu}k_\mu F_{\mu\nu}P_\nu = 0,
+= \sum_\mu k_{\Phi,\mu}\,\frac{dP_\mu}{d\tau}
+= \frac{ϙ}{m}\sum_{\mu,\nu}k_{\Phi,\mu} F_{\mu\nu}P_\nu = 0,
 $$</p>
 <p>so $k\cdot P$ is constant along the worldline. This is the invariant of the motion associated with the degenerate (radiative) type of the field, and it exists precisely when $I_1 = I_2 = 0$. For non-null fields the mass shell is the only invariant of this simple kind.</p>
 <p><strong>The exponentials are themselves a Lorentz transformation, and the invariants fix its type.</strong> The field is an element of the Lorentz Lie algebra, so its matrix image $F_{\mu\nu}$, scaled by the scalar $ϙ/m$, generates a one-parameter subgroup: $\exp((ϙ/m)\tau F_{\mu\nu})$ is a Lorentz transformation, and the four cases of the eigenvalues above are its four types — a boost for the electric type, a rotation for the magnetic type, a null rotation for the null type, and a boost composed with a rotation for the generic one. The classification, the two rates that the trace of the flow displays, and the boundary between this flow and the field it exponentiates are recorded in <em>The Field-Strength Biquaternion and Its Invariants</em>, §<em>The Flow the Field Generates: The Four Types</em>.</p>

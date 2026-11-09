@@ -77,7 +77,7 @@ $$</p>
 <p>with $\mathfrak{Z}$ the nuclear charge number (written $Z$ in the non-relativistic companion, and $\mathfrak{Z}$ here so that it cannot be read as a spatial index). It is the relativistic completion of the problem treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde R_\Psi = r_t\,e_t$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $s_{\mathrm{tot}}$.</p>
 <p>The article asks what the biquaternion framework contributes to this problem, and the honest answer is stated before the derivation.</p>
 <ul>
-<li><strong>Algebraic, and recomputed here.</strong> The total angular momentum $\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},k} e_t + \tilde S_{\Psi,\eta}$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$ is a Hermitian element of the informational sector $\mathbb{B}_{\Psi}$; it commutes with $\tilde S_{\Psi,\mathrm{tot},\eta}$, but not with $L_{\mathrm{orb},k}$ or $\tilde S_{\Psi,\eta}$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,s_{\mathrm{tot}})$ and not by $(n,l)$: at fixed $n$ the states of different $s_{\mathrm{tot}}$ separate in energy, and of the non-relativistic $l$-degeneracy there survives only the pair $l = s_{\mathrm{tot}}\mp\tfrac12$ at fixed $s_{\mathrm{tot}}<n-\tfrac12$. All of this is checked below.</li>
+<li><strong>Algebraic, and recomputed here.</strong> The total angular momentum $\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},\eta} e_t + \tilde S_{\Psi,\eta}$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ is a Hermitian element of the informational sector $\mathbb{B}_{\Psi}$; it commutes with $\tilde S_{\Psi,\mathrm{tot},\eta}$, but not with $L_{\mathrm{orb},\eta}$ or $\tilde S_{\Psi,\eta}$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,s_{\mathrm{tot}})$ and not by $(n,l)$: at fixed $n$ the states of different $s_{\mathrm{tot}}$ separate in energy, and of the non-relativistic $l$-degeneracy there survives only the pair $l = s_{\mathrm{tot}}\mp\tfrac12$ at fixed $s_{\mathrm{tot}}<n-\tfrac12$. All of this is checked below.</li>
 <li><strong>Transcribed, not derived.</strong> The exact bound-state energies are the standard Sommerfeld–Dirac spectrum, quoted in full in its place. The transcription reproduces them and predicts no deviation. Its non-relativistic limit and fine structure are worked through in the companion article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em> and its exercise, which is where the elimination of the small component lives; the exact bound-state solution itself is the standard radial Dirac–Coulomb one, and the corpus carries a <em>transcription</em> of it — the radial system and its Laguerre solution rewritten in the algebra's notation — in the companion article <em>Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</em>, but no derivation of it from the algebra's own equation. No independent biquaternionic derivation is claimed.</li>
 <li><strong>Gap, left visible.</strong> The corpus's biquaternion Dirac equation carries the <strong>linear</strong>, chirality-off-diagonal mass pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, and in the algebra reading this mass term passes through a local central phase: the vector $\mathrm{U}(1)$ (fermion number) is exact for the massive field, and the symmetry the mass breaks is the axial one. On the operator-frame-frame reading of the element the same left multiplication is the axial rotation, so the choice is the matter-representation question recorded in the minimal-coupling article. The algebra-level electromagnetic coupling is therefore available in the massive case in the algebra reading, and its precise form is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra; the Coulomb field is introduced here in the <strong>operator-frame-frame transcription</strong>, which is the form in which the standard Dirac–Coulomb solution is known, and the spectrum is transcribed. This is the gap that remains, and it is not closed by notation.</li>
 <li><strong>Conditional, and input.</strong> The transcription is written for continuous functions, and a numerical realization of it needs a finite basis, which the corpus does not carry. The framework puts one condition on that basis — the small part must be generated from the large by the framework's own action — and the condition is the non-relativistic relation of the companion exercise read the other way round; with a field present the covariance identity forces the covariant version of the action and the phase of the basis. The basis sets themselves, and the variational argument that makes the condition necessary, are input.</li>
@@ -138,34 +138,34 @@ $$</p>
 <p>with $\vec\pi = \vec p - ϙ\vec A$ the kinetic momentum, whose last three terms are the relativistic kinetic correction, the Darwin term, and the spin–orbit coupling. It is derived in the companion exercise on the Pauli equation, which checks the coefficients against the exact spectrum; it is quoted here only for its structure. The <strong>spin–orbit</strong> term is the one that changes the character of the Hamiltonian. For a central potential it reads</p>
 <p>$$
 -\frac{ϙ}{2m^2c^2}\sum_\eta (\vec E\times\vec\pi)_k\tilde S_{\Psi,\eta}
-= \frac{1}{2m^2c^2}\frac{1}{r}\frac{dV}{dr}\,\sum_\eta L_{\mathrm{orb},k}\tilde S_{\Psi,\eta} ,
+= \frac{1}{2m^2c^2}\frac{1}{r}\frac{dV}{dr}\,\sum_\eta L_{\mathrm{orb},\eta}\tilde S_{\Psi,\eta} ,
 $$</p>
 <p>and in the framework's operators the coupling is</p>
 <p>$$
-\boxed{\;\sum_\eta  (L_{\mathrm{orb},k} e_t)\tilde S_{\Psi,\eta} =\frac{m\,c\,i}{2\,k_m}\,\sum_\eta  L_{\mathrm{orb},k} \vec e_\eta \in  \mathbb{B}_{\Psi}\;}
+\boxed{\;\sum_\eta  (L_{\mathrm{orb},\eta} e_t)\tilde S_{\Psi,\eta} =\frac{m\,c\,i}{2\,k_m}\,\sum_\eta  L_{\mathrm{orb},\eta} \vec e_\eta \in  \mathbb{B}_{\Psi}\;}
 $$</p>
-<p>where $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ and the single $i$ is the central imaginary. This is a Hermitian element of the informational sector: its scalar part vanishes and its vector part is purely imaginary. It is therefore <strong>not central</strong> — a central element lies in the complex line $\mathbb{B}_{C}$, and $\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$ has a nonzero imaginary vector part whenever the orbital motion is non-trivial. The relativistic Coulomb Hamiltonian is not a scalar multiple of $e_t$.</p>
+<p>where $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ and the single $i$ is the central imaginary. This is a Hermitian element of the informational sector: its scalar part vanishes and its vector part is purely imaginary. It is therefore <strong>not central</strong> — a central element lies in the complex line $\mathbb{B}_{C}$, and $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ has a nonzero imaginary vector part whenever the orbital motion is non-trivial. The relativistic Coulomb Hamiltonian is not a scalar multiple of $e_t$.</p>
 <p><strong>The spin is no longer a spectator.</strong> The algebraic statement of this is the commutator structure of the spin–orbit operator. It is rotationally invariant,</p>
 <p>$$
-\bigl[\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta},\ \tilde S_{\Psi,\mathrm{tot},j}\bigr] = 0,
+\bigl[\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta},\ \tilde S_{\Psi,\mathrm{tot},j}\bigr] = 0,
 $$</p>
 <p>so that the total angular momentum remains conserved, but it does not commute with the orbital or the spin operators separately,</p>
 <p>$$
-\bigl[\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta},\ L_{\mathrm{orb},j}\bigr] \neq 0, \qquad
-\bigl[\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta},\ \tilde S_{\Psi,j}\bigr] \neq 0 .
+\bigl[\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta},\ L_{\mathrm{orb},j}\bigr] \neq 0, \qquad
+\bigl[\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta},\ \tilde S_{\Psi,j}\bigr] \neq 0 .
 $$</p>
 <p>The two failures are not the same failure, and neither is the one that removes $l$. The second, $[\,\cdot,\tilde S_{\Psi,j}]\neq0$, is the statement that the spin has become dynamical: the spin–orbit part of the Hamiltonian does not commute with $\tilde S_{\Psi,j}$, so $m_s$ is not separately conserved. The first says the same for the orbital magnetic number: $m_l$ is lost, and only $m_j = m_l+m_s$ survives, which is why the coupled basis is the one that diagonalises the problem. Neither removes $l$ itself, because $\vec L\cdot\vec S$ is a scalar under simultaneous rotations of the two factors and so commutes with both Casimirs:</p>
 <p>$$
-\bigl[\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta},\ \bigl(L_{\mathrm{orb}}\bigr)^2\bigr] = 0,
+\bigl[\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta},\ \bigl(L_{\mathrm{orb}}\bigr)^2\bigr] = 0,
 \qquad
-\bigl[\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta},\ \tilde S_{\Psi}^2\bigr] = 0 .
+\bigl[\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta},\ \tilde S_{\Psi}^2\bigr] = 0 .
 $$</p>
 <p>What removes $l$ is the Dirac structure, and only in the exact problem. In a Dirac–Coulomb eigenstate the upper and lower components carry the two different orbital quantum numbers $l = j\mp\tfrac12$, so $L^2$ has no single eigenvalue on the state and $l$ cannot label it; the state is labelled by $(n,j,\pi)$, the two $l$ values being degenerate in energy. On the non-relativistic fine-structure Hamiltonian, which acts on the upper component alone, $L^2$ is still good, and the degeneracy of the two $l$ at fixed $j$ there is the residual Coulomb degeneracy rather than a rotational one.</p>
-<p>All three statements were recomputed from the commutators of the three operators on the coupled states, where $\tilde S_{\Psi,\mathrm{tot},i}$ and $\tilde S_{\Psi,\mathrm{tot},j}$ close on $\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$, the operator $\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$ commutes with every $\tilde S_{\Psi,\mathrm{tot},j}$, with $(L_{\mathrm{orb}})^2$ and with $(\tilde S_{\Psi})^2$, and its commutators with $L_{\mathrm{orb},j}$ and $\tilde S_{\Psi,j}$ are nonzero; at $l=1$ the eigenvalues of $\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$ are the two values $+\frac{m^{2}\,c^{2}}{2\,k_m^{2}}$ and $-\frac{m^{2}\,c^{2}}{k_m^{2}}$, for $s_{\mathrm{tot}} = \tfrac32$ and $s_{\mathrm{tot}} = \tfrac12$ respectively, in agreement with the general formula below.</p>
+<p>All three statements were recomputed from the commutators of the three operators on the coupled states, where $\tilde S_{\Psi,\mathrm{tot},i}$ and $\tilde S_{\Psi,\mathrm{tot},j}$ close on $\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$, the operator $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ commutes with every $\tilde S_{\Psi,\mathrm{tot},j}$, with $(L_{\mathrm{orb}})^2$ and with $(\tilde S_{\Psi})^2$, and its commutators with $L_{\mathrm{orb},j}$ and $\tilde S_{\Psi,j}$ are nonzero; at $l=1$ the eigenvalues of $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ are the two values $+\frac{m^{2}\,c^{2}}{2\,k_m^{2}}$ and $-\frac{m^{2}\,c^{2}}{k_m^{2}}$, for $s_{\mathrm{tot}} = \tfrac32$ and $s_{\mathrm{tot}} = \tfrac12$ respectively, in agreement with the general formula below.</p>
 <h2 id="total-angular-momentum-and-the-good-quantum-numbers">Total Angular Momentum and the Good Quantum Numbers</h2>
 <p>The <strong>total angular-momentum operator</strong> is the sum of the orbital and spin parts,</p>
 <p>$$
-\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},k} e_t + \tilde S_{\Psi,\eta} ,
+\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},\eta} e_t + \tilde S_{\Psi,\eta} ,
 $$</p>
 <p>Because the two parts commute and each satisfies the angular-momentum algebra, so does the sum:</p>
 <p>$$
@@ -227,7 +227,7 @@ $$</p>
 \Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12} - \frac{3}{4n}\right),
 $$</p>
 <p>whose $s_{\mathrm{tot}}$-dependence is the $l$-splitting read off the exact formula. The expansion was recomputed exactly, in rational arithmetic, for every $n \le 6$ and every $s_{\mathrm{tot}}$ allowed at that $n$, and again in closed form for general $n$ at $s_{\mathrm{tot}} = \tfrac12, \tfrac32, \tfrac52$: the coefficient of $(\mathfrak{Z}\alpha)^2$ is $-1/(2n^2)$ and the coefficient of $(\mathfrak{Z}\alpha)^4$ is $-\tfrac{1}{2n^3}(\tfrac{1}{s_{\mathrm{tot}}+1/2}-\tfrac{3}{4n})$ in every case, with no discrepancy.</p>
-<p>The fine-structure shift decomposes into three physical contributions — the relativistic kinetic correction, the spin–orbit term, and the Darwin term — which the companion exercise obtains from the Foldy–Wouthuysen expansion. Their sum equals the exact $(\mathfrak{Z}\alpha)^4$ coefficient for every level with $n \le 6$, which was rechecked here in exact rational arithmetic; that agreement is the quantitative sense in which the framework's spin–orbit operator $\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$ carries the right coupling. The Darwin term is a pure scalar, and it is a contact term: $\nabla^2(1/r) = -4\pi\delta(\vec r)$ makes it act on $s$ states alone. The kinetic term is scalar too; only the spin–orbit term is a non-central $\mathbb{B}_{\Psi}$ observable, which is why the spin-dependent splitting is the part of the spectrum that the sector structure makes visible.</p>
+<p>The fine-structure shift decomposes into three physical contributions — the relativistic kinetic correction, the spin–orbit term, and the Darwin term — which the companion exercise obtains from the Foldy–Wouthuysen expansion. Their sum equals the exact $(\mathfrak{Z}\alpha)^4$ coefficient for every level with $n \le 6$, which was rechecked here in exact rational arithmetic; that agreement is the quantitative sense in which the framework's spin–orbit operator $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ carries the right coupling. The Darwin term is a pure scalar, and it is a contact term: $\nabla^2(1/r) = -4\pi\delta(\vec r)$ makes it act on $s$ states alone. The kinetic term is scalar too; only the spin–orbit term is a non-central $\mathbb{B}_{\Psi}$ observable, which is why the spin-dependent splitting is the part of the spectrum that the sector structure makes visible.</p>
 <h3 id="degeneracy-and-its-redistribution">Degeneracy and its redistribution</h3>
 <p>The relativistic spectrum has the same <strong>total</strong> state count at each $n$ as the non-relativistic one, redistributed across the new labels. At fixed $n$ the values of $s_{\mathrm{tot}}$ are $\tfrac12, \tfrac32, \dots, n-\tfrac12$. For each $s_{\mathrm{tot}} < n - \tfrac12$ there are two orbital values $l = s_{\mathrm{tot}} \mp \tfrac12$ and $2s_{\mathrm{tot}}+1$ magnetic values; for $s_{\mathrm{tot}} = n-\tfrac12$ only $l = n-1$ is available. Counting,</p>
 <p>$$
@@ -330,7 +330,7 @@ $$</p>
 <td>$\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ in the vector slots; quaternion product</td>
 </tr>
 <tr>
-<td>Spin–orbit operator $\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$ and its eigenvalues</td>
+<td>Spin–orbit operator $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ and its eigenvalues</td>
 <td>Algebraic (inherited, rechecked)</td>
 <td>$[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$; Casimir identity</td>
 </tr>
@@ -474,7 +474,7 @@ $$</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>The relativistic hydrogen atom in biquaternionic form is the Dirac–Coulomb problem, and what the framework contributes to it is algebraic. The total angular momentum $\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},k} e_t + \tilde S_{\Psi,\eta}$ has its orbital part in the scalar slot and its spin part in the vector slots, and it closes on $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$ with $\tilde S_{\Psi,\mathrm{tot}}^{\,2} \to \frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)}{k_m^{2}}$. The spin–orbit operator $\sum_\eta  (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta} =\frac{m\,c\,i}{2\,k_m} \sum_\eta  L_{\mathrm{orb},k}\vec e_\eta$ is a Hermitian element of $\mathbb{B}_{\Psi}$; it commutes with $\tilde S_{\Psi,\mathrm{tot},j}$ but not with $L_{\mathrm{orb},j}$ or $\tilde S_{\Psi,j}$, which is the algebraic content of "the spin is no longer a spectator". The relativistic level is labelled by $(n,s_{\mathrm{tot}},s_{\mathrm{tot},z})$; the degeneracy in $l$ at fixed $n$ is broken down to the pair $l = s_{\mathrm{tot}}\mp\tfrac12$ at fixed $s_{\mathrm{tot}}<n-\tfrac12$, two states of opposite parity at one energy, and the total count $2n^2$ is unchanged.</p>
+<p>The relativistic hydrogen atom in biquaternionic form is the Dirac–Coulomb problem, and what the framework contributes to it is algebraic. The total angular momentum $\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},\eta} e_t + \tilde S_{\Psi,\eta}$ has its orbital part in the scalar slot and its spin part in the vector slots, and it closes on $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$ with $\tilde S_{\Psi,\mathrm{tot}}^{\,2} \to \frac{m^{2}\,c^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)}{k_m^{2}}$. The spin–orbit operator $\sum_\eta  (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta} =\frac{m\,c\,i}{2\,k_m} \sum_\eta  L_{\mathrm{orb},\eta}\vec e_\eta$ is a Hermitian element of $\mathbb{B}_{\Psi}$; it commutes with $\tilde S_{\Psi,\mathrm{tot},j}$ but not with $L_{\mathrm{orb},j}$ or $\tilde S_{\Psi,j}$, which is the algebraic content of "the spin is no longer a spectator". The relativistic level is labelled by $(n,s_{\mathrm{tot}},s_{\mathrm{tot},z})$; the degeneracy in $l$ at fixed $n$ is broken down to the pair $l = s_{\mathrm{tot}}\mp\tfrac12$ at fixed $s_{\mathrm{tot}}<n-\tfrac12$, two states of opposite parity at one energy, and the total count $2n^2$ is unchanged.</p>
 <p>The exact bound-state energies are the Sommerfeld–Dirac formula</p>
 <p>$$
 E_{n s_{\mathrm{tot}}} = mc^2\left[1 + \frac{(\mathfrak{Z}\alpha)^2}{\bigl(n-\delta_{s_{\mathrm{tot}}}\bigr)^2}\right]^{-1/2},
@@ -585,11 +585,11 @@ $$</p>
 <td>Fine-structure constant</td>
 </tr>
 <tr>
-<td>$L_{\mathrm{orb},k} = -\frac{m\,c\,i\,\epsilon_{\eta lm}\,x_{l}}{k_m}\partial/\partial x_m$</td>
+<td>$L_{\mathrm{orb},\eta} = -\frac{m\,c\,i\,\epsilon_{\eta lm}\,x_{l}}{k_m}\partial/\partial x_m$</td>
 <td>Orbital angular momentum</td>
 </tr>
 <tr>
-<td>$L_{\mathrm{orb},k} e_t$</td>
+<td>$L_{\mathrm{orb},\eta} e_t$</td>
 <td>Orbital operators, scalar slot, in $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
@@ -597,11 +597,11 @@ $$</p>
 <td>Spin operators, vector slots, in $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
-<td>$\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},k} e_t + \tilde S_{\Psi,\eta}$</td>
+<td>$\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},\eta} e_t + \tilde S_{\Psi,\eta}$</td>
 <td>Total angular momentum; $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$</td>
 </tr>
 <tr>
-<td>$\sum_\eta (L_{\mathrm{orb},k}e_t)\tilde S_{\Psi,\eta}$</td>
+<td>$\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$</td>
 <td>Spin–orbit operator, in $\mathbb{B}_{\Psi}$; eigenvalues $\frac{m^{2}\,c^{2}}{2\,k_m^{2}}[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34]$</td>
 </tr>
 <tr>

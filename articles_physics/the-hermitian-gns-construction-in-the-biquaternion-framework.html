@@ -162,7 +162,7 @@ $$
 $$
 It is convenient to compute the Gram matrix of the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$,
 $$
-G_{jk} = \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\eta\big),
+G_{j\eta} = \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\eta\big),
 $$
 with $e_j,\vec e_\eta$ ranging over the basis; its rank is $\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$.</p>
 <p><strong>The vacuum state.</strong> Take $\tilde{Ϛ}_{\Psi} = \tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, the state of the previous article. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Then for any $\tilde Q_3$, using $\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi}^2$,
@@ -194,7 +194,7 @@ $$
 \boxed{\;\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}_{\Psi}} = 4 - 2(2-\mathrm{rank}\,\tilde{Ϛ}_{\Psi}) = 2\,\mathrm{rank}\,\tilde{Ϛ}_{\Psi}\;}
 $$
 so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.</p>
-<p><strong>Numerical check.</strong> Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{jk}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\eta)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.</p>
+<p><strong>Numerical check.</strong> Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{j\eta}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\eta)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.</p>
 <p>Three structural consequences follow, and they are the content of the construction for this framework.</p>
 <p><strong>The vacuum's GNS space is the one-particle space.</strong> For the vacuum state the GNS Hilbert space is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, the minimal left ideal here, of dimension two. This is the same module that <em>The Biquaternion Vacuum as a Minimal Idempotent</em> identified as the one-particle spinor space, now recovered from the state alone. The GNS theorem is thus the precise sense in which <strong>the vacuum state determines the one-particle module</strong>.</p>
 <p><strong>Purity is irreducibility.</strong> The vacuum state is pure, so its GNS representation is irreducible: the only subspaces of $\mathbb{C}^2$ invariant under left multiplication by all of $\mathbb{B}$ are $0$ and $\mathbb{C}^2$. The trace state is mixed, and its representation is reducible — indeed $\pi_{\mathrm{tr}}$ is a direct sum of two equivalent two-dimensional representations. This is the operator-algebraic interpretation of the Bloch-sphere/Bloch-ball distinction: the boundary of the ball gives irreducible representations, the interior gives reducible ones.</p>
@@ -291,7 +291,7 @@ Every other state lies between them in the Bloch ball; the GNS dimension is two 
 <p>Every state of this article has been written down as a density matrix. For a translation-invariant theory a state has a second description, arriving from harmonic analysis rather than from the algebra, and it is the description the field states of the framework actually use.</p>
 <p><strong>The classical statement.</strong> Let $G$ be a locally compact abelian group with dual group $G^{\vee}$ and characters $\xi$. A continuous function $\xi_{\mathrm{scl}} : G \to \mathbb{C}$ is <strong>positive definite</strong> when</p>
 <p>$$
-\sum_{k,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_\eta - g_l) \ge 0
+\sum_\eta,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_\eta - g_l) \ge 0
 $$</p>
 <p>for every finite set of points and coefficients, and <strong>normalised</strong> when $\xi_{\mathrm{scl}}(0)=1$. The theorem of Bochner states that a continuous, normalised, positive-definite $\xi_{\mathrm{scl}}$ is the Fourier transform of a unique probability measure on the dual group:</p>
 <p>$$

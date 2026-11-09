@@ -95,7 +95,7 @@ $$</p>
 <p>For a non-relativistic particle of mass $m$ in a potential $V$, the path integral is the continuum limit of a product of short-time kernels. Over a stretch $T=r'_{t,f}-r'_{t,i}$ of the material coordinate, divided into $N$ steps of length $\varepsilon=T/N$ — the step is a length along $r'_t$, so the corresponding duration is $\varepsilon/c$ —</p>
 <p>$$
 G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})
-=\lim_{N\to\infty}\int\prod_{k=1}^{N-1}dx_k\;\prod_{k=0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{k+1},x_k),
+=\lim_{N\to\infty}\int\prod_{\eta =1}^{N-1}dx_k\;\prod_{\eta =0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{\eta +1},x_k),
 $$</p>
 <p>with the single-step kernel</p>
 <p>$$
@@ -111,7 +111,7 @@ This is the statement that the sum over paths is a sum over the intermediate poi
 $$\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})=2\cos\!\Big(\frac{k_m\,\Delta\,S}{2\,m\,c}\Big)\exp(\frac{k_m\,i\,\bar{S}}{m\,c}),
 \qquad \bar S=\tfrac12(S_1+S_2),$$
 so the intensity has fringes with complete destructive nodes at $\Delta S=\frac{m\,c\,(2n+1)\,\pi}{k_m}$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
-$$\Big|\sum_{k=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
+$$\Big|\sum_\eta=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
 The phase is therefore the entire dynamical content of the sum: the measure counts paths, and the phase makes them interfere.</p>
 <p><strong>Classical limit.</strong> In the limit $\hbar\to0$ the stationary-phase approximation retains only the paths with $\delta S=0$, i.e. the classical trajectories, and the leading correction is the Gaussian integral over the fluctuations. The biquaternion framework does not change this; it changes only what the symbol $i$ in the exponent denotes, which is the subject of the next section.</p>
 <h2 id="the-biquaternion-phase">The Biquaternion Phase</h2>
@@ -255,7 +255,7 @@ $$</p>
 $$
 r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
-is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\hbar/m$ read in the other variable — the two orderings are
+is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,\eta})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\hbar/m$ read in the other variable — the two orderings are
 $$
 \frac{1}{\varepsilon}\big\langle x_j(x_{j+1}-x_j)\big\rangle=0,
 \qquad
@@ -390,7 +390,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 <td>Maslov phase; $\nu$ the number of conjugate points (caustics)</td>
 </tr>
 <tr>
-<td>$\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$</td>
+<td>$\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,\eta})$</td>
 <td>Free Euclidean two-point function; contact term $\frac{1}{k_m}$</td>
 </tr>
 <tr>

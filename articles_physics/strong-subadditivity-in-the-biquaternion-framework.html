@@ -320,9 +320,9 @@ with $h(p)=-p\log p-(1-p)\log(1-p)$ the binary entropy. Both sides of the inequa
 <h2 id="the-equality-condition">The Equality Condition</h2>
 <p>The equality case is completely characterized, and the characterization is worth stating because the framework's Markov examples are its instances.</p>
 <blockquote>
-<p><strong>Theorem (Hayden–Jozsa–Petz–Winter).</strong> Strong subadditivity is saturated for $\rho_{ABC}$ if and only if the Hilbert space of $B$ decomposes as $\mathcal H_B=\bigoplus_k\mathcal H_{b_k^L}\otimes\mathcal H_{b_k^R}$ in such a way that
+<p><strong>Theorem (Hayden–Jozsa–Petz–Winter).</strong> Strong subadditivity is saturated for $\rho_{ABC}$ if and only if the Hilbert space of $B$ decomposes as $\mathcal H_B=\bigoplus_k\mathcal H_{b_\eta ^L}\otimes\mathcal H_{b_\eta ^R}$ in such a way that
 $$
-> \rho_{ABC}=\bigoplus_k p_\eta\ \rho_{A b_k^L}\otimes\rho_{b_k^R C},
+> \rho_{ABC}=\bigoplus_k p_\eta\ \rho_{A b_\eta ^L}\otimes\rho_{b_\eta ^R C},
 > \qquad p_\eta\ge0,\quad \sum_\eta p_\eta=1 .
 > $$
 The state is then a <strong>quantum Markov chain</strong>: $B$ is a "bridge" whose left part $b_k^L$ carries the correlation to $A$ and whose right part $b_k^R$ carries it to $C$, with no correlation between $A$ and $C$ conditional on $B$.</p>
@@ -415,7 +415,7 @@ The state is then a <strong>quantum Markov chain</strong>: $B$ is a "bridge" who
 <td>Completely positive trace-preserving map (e.g. $\mathrm{Tr}_C$)</td>
 </tr>
 <tr>
-<td>$\rho_{ABC}=\bigoplus_k p_\eta\,\rho_{Ab_k^L}\otimes\rho_{b_k^R C}$</td>
+<td>$\rho_{ABC}=\bigoplus_k p_\eta\,\rho_{Ab_\eta ^L}\otimes\rho_{b_\eta ^R C}$</td>
 <td>Quantum Markov chain (equality case)</td>
 </tr>
 </tbody>

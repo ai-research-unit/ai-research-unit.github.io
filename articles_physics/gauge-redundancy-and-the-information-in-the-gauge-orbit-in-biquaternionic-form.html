@@ -111,7 +111,7 @@ $$</p>
 <h3 id="the-orbit-in-fourier-space">The Orbit in Fourier Space</h3>
 <p>The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_{t}^{\prime},k_1,k_2,k_3)$ on the $i r'_t$ coordinates, so that a gradient acts as left multiplication by $iK$ with</p>
 <p>$$
-K = \sum_{\mu\in\{t,x,y,z\}}k_\mu e_\mu .
+K = \sum_{\mu\in\{t,x,y,z\}}k_{\Phi,\mu} e_\mu .
 $$</p>
 <p>A pure-gauge mode with real scalar amplitude $g$ contributes $iKg$, so its image is the <strong>real line spanned by $iK$</strong> inside the four-dimensional fibre. The linear map from gauge functions to connections therefore has rank one per mode (rank zero only for the constant mode $k = 0$, on which there is no gauge freedom). This was checked numerically: for generic wavevectors and a generic real amplitude, the four ratios of the components of $iKg$ to those of $K$ agreed to $2\times10^{-16}$.</p>
 <p>The rank is the count of gauge directions per mode, and subtracting it from the four components of the connection gives the count of physical directions. That count is taken up in the next section.</p>
@@ -372,7 +372,7 @@ $$</p>
 <td>Group of real gauge functions modulo constants; the orbit's torsor group</td>
 </tr>
 <tr>
-<td>$K = \sum_\mu k_\mu e_\mu$</td>
+<td>$K = \sum_\mu k_{\Phi,\mu} e_\mu$</td>
 <td>Wavevector biquaternion of the mode $k = (k_{t}^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$</td>
 </tr>
 <tr>

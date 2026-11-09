@@ -84,7 +84,7 @@ $$</p>
 <ul>
 <li><strong>Established, and recomputed below.</strong> A metric perturbation $h_{\mu\nu}$ is carried by a frame perturbation $\delta\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ through
   $h_{\mu\nu} = \langle \varepsilon_\mu, \delta\tilde{E}_{\Phi}_\nu\rangle_{\natural} + \langle \delta\tilde{E}_{\Phi}_\mu, \varepsilon_\nu\rangle_{\natural}$,
-  and every symmetric $h_{\mu\nu}$ arises this way. The sixteen frame components split as $16 = 10 + 6$, the six-dimensional kernel being the infinitesimal local Lorentz transformations. The linearized gauge transformation $\delta\tilde{E}_{\Phi}_\mu \mapsto \delta\tilde{E}_{\Phi}_\mu - \partial/\partial x_\mu\,\tilde Q_{\Phi,\mathrm d}$ with $\tilde Q_{\Phi,\mathrm d} \in \mathbb{B}_{\Phi}$ reproduces $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\zeta_\nu - \partial/\partial x_\nu\,\zeta_\mu$. The trace-reversal $\bar{h}_{00}=h_{00}+\tfrac{1}{2}h$, $\bar{h}_{0k}=h_{0k}$ and $\bar{h}_{kl}=h_{kl}-\tfrac{1}{2}h\,\delta_{\eta l}$ is carried by the frame shift $\bar{\delta\tilde{E}_{\Phi}}_\mu = \delta\tilde{E}_{\Phi}_\mu - \tfrac{1}{4}h\,\varepsilon_\mu$ with $h = 2\sum_\nu\langle\varepsilon_{\mathrm{du},\nu}, \delta\tilde{E}_{\Phi}_\nu\rangle_{\natural}$, and the linearized Riemann tensor is invariant under the gauge transformation. In harmonic gauge the linearized vacuum equation is $\Box\bar{h}_{\mu\nu} = 0$, and a transverse-traceless plane wave satisfies it with nonvanishing Riemann curvature.</li>
+  and every symmetric $h_{\mu\nu}$ arises this way. The sixteen frame components split as $16 = 10 + 6$, the six-dimensional kernel being the infinitesimal local Lorentz transformations. The linearized gauge transformation $\delta\tilde{E}_{\Phi}_\mu \mapsto \delta\tilde{E}_{\Phi}_\mu - \partial/\partial x_\mu\,\tilde Q_{\Phi,\mathrm d}$ with $\tilde Q_{\Phi,\mathrm d} \in \mathbb{B}_{\Phi}$ reproduces $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\zeta_\nu - \partial/\partial x_\nu\,\zeta_\mu$. The trace-reversal $\bar{h}_{00}=h_{00}+\tfrac{1}{2}h$, $\bar{h}_{0\eta}=h_{0\eta}$ and $\bar{h}_{\eta l}=h_{\eta l}-\tfrac{1}{2}h\,\delta_{\eta l}$ is carried by the frame shift $\bar{\delta\tilde{E}_{\Phi}}_\mu = \delta\tilde{E}_{\Phi}_\mu - \tfrac{1}{4}h\,\varepsilon_\mu$ with $h = 2\sum_\nu\langle\varepsilon_{\mathrm{du},\nu}, \delta\tilde{E}_{\Phi}_\nu\rangle_{\natural}$, and the linearized Riemann tensor is invariant under the gauge transformation. In harmonic gauge the linearized vacuum equation is $\Box\bar{h}_{\mu\nu} = 0$, and a transverse-traceless plane wave satisfies it with nonvanishing Riemann curvature.</li>
 <li><strong>The structural finding.</strong> The metric perturbation is <strong>not</strong> an element of the material sector $\mathbb{B}_{\Phi}$, and not a single biquaternion at all. The natural single-biquaternion carrier of a symmetric $h_{\mu\nu}$,
   $\sum_{\mu\nu} h_{\mu\nu}\,\varepsilon_\mu\varepsilon_\nu^{\natural}$, equals $h\,e_t$, with $h$ the trace of $h_{\mu\nu}$: it is blind to the traceless part of $h$, which is exactly the part that carries the gravitational-wave polarizations. A biquaternion has eight real dimensions and a symmetric rank-two tensor in four dimensions has ten components, so no single biquaternion can be $h_{\mu\nu}$. The field lives in the frame perturbation — an $\mathbb{B}_{\Phi}$-valued one-form — not in one algebra element.</li>
 <li><strong>Interpretation and gap, left visible.</strong> The algebra supplies no action and no field equation, so the wave equation is transcribed, not derived; it supplies no representation of diffeomorphism invariance, so the gauge freedom's <em>origin</em> is outside the framework even though its <em>form</em> can be written in the framework's notation. The coupling to matter, whose source is the symmetric rank-two energy–momentum tensor, is not derived, and the coupling constant $8\pi G/c^4$ is not fixed by the algebra. These are labelled as gaps in the sections where they arise.</li>
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \Box = \partial^2/\partial R_t^2 + \Delta = -\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
 $$</p>
-<p>A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_1r_x+k_2r_y+k_3r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i r'_t$.</p>
+<p>A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_{\Phi x}r_x+k_{\Phi y}r_y+k_{\Phi z}r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i r'_t$.</p>
 <h2 id="linearized-gravity-in-standard-form">Linearized Gravity in Standard Form</h2>
 <p>This section fixes the target. It is the standard linear theory, written in the coordinate convention named above, and every formula displayed here was checked by direct computation. Nothing in the section is biquaternionic; it is the theory that the next sections try to write in the framework's notation.</p>
 <h3 id="the-gauge-freedom">The Gauge Freedom</h3>
@@ -110,7 +110,7 @@ $$</p>
 <p>$$
 \begin{aligned}
 \Gamma_{0\mu\nu} &= -\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu 0} + \partial/\partial x_\nu h_{\mu 0} - \partial/\partial x_0 h_{\mu\nu}\right),\\[2pt]
-\Gamma_{k\mu\nu} &= +\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu k} + \partial/\partial x_\nu h_{\mu k} - \partial/\partial r_\eta h_{\mu\nu}\right),
+\Gamma_{\eta \mu\nu} &= +\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu \eta} + \partial/\partial x_\nu h_{\mu \eta} - \partial/\partial r_\eta h_{\mu\nu}\right),
 \end{aligned}
 $$</p>
 <p>where the first slot is the connection's upper slot, written low in the all-low labelling of this article; the two lines are the one contraction, with the minus of the interval on the time row. The Riemann tensor is</p>
@@ -123,29 +123,29 @@ $$</p>
 \mathrm{Ric}_{\mu\nu} &= \tfrac{1}{2}\Bigl(\partial/\partial x_\mu\,D_\nu
 +\partial/\partial x_\nu\,D_\mu
 -\Box h_{\mu\nu}-\partial^2/\partial x_\mu\partial x_\nu h\Bigr),
-\qquad D_\nu = -\partial/\partial x_0 h_{0\nu}+\sum_\eta\partial/\partial r_\eta h_{k\nu},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
+\qquad D_\nu = -\partial/\partial x_0 h_{0\nu}+\sum_\eta\partial/\partial r_\eta h_{\eta \nu},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
 \end{aligned}
 $$</p>
 <p>and the Ricci scalar is</p>
 <p>$$
 \mathrm{Ric} = -\mathrm{Ric}_{00}+\mathrm{Ric}_{11}+\mathrm{Ric}_{22}+\mathrm{Ric}_{33}
-= \partial^2/\partial x_0^2\,h_{00}-\sum_\eta\left(\partial^2/\partial x_0\partial r_\eta\,h_{k0}+\partial^2/\partial r_\eta\partial x_0\,h_{0k}\right)+\sum_{k,l}\partial^2/\partial r_\eta\partial x_l\,h_{lk}-\Box h .
+= \partial^2/\partial x_0^2\,h_{00}-\sum_\eta\left(\partial^2/\partial x_0\partial r_\eta\,h_{\eta0}+\partial^2/\partial r_\eta\partial x_0\,h_{0\eta}\right)+\sum_\eta,l}\partial^2/\partial r_\eta\partial x_l\,h_{l\eta}-\Box h .
 $$</p>
 <p>The Riemann tensor is gauge invariant, and therefore so are $\mathrm{Ric}_{\mu\nu}$ and $\mathrm{Ric}$: they are constructed from the metric perturbation in a way that the relabelling leaves invariant.</p>
 <h3 id="the-trace-reversal-and-the-field-equation">The Trace-Reversal and the Field Equation</h3>
 <p>The <strong>trace-reversed</strong> perturbation is</p>
 <p>$$
-\bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0k} = h_{0k}, \qquad \bar{h}_{kl} = h_{kl} - \tfrac{1}{2}h\,\delta_{\eta l}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
+\bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0\eta} = h_{0\eta}, \qquad \bar{h}_{\eta l} = h_{\eta l} - \tfrac{1}{2}h\,\delta_{\eta l}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
 $$</p>
-<p>so that the map is its own inverse, $\bar{\bar h}_{\mu\nu} = h_{\mu\nu}$, and only the trace changes sign: $h_{00} = \bar{h}_{00} - \tfrac{1}{2}\bar{h}$, $h_{0k}=\bar{h}_{0k}$ and $h_{kl} = \bar{h}_{kl} - \tfrac{1}{2}\bar{h}\,\delta_{\eta l}$. In terms of $\bar{h}_{\mu\nu}$ the linearized Einstein tensor takes the compact form</p>
+<p>so that the map is its own inverse, $\bar{\bar h}_{\mu\nu} = h_{\mu\nu}$, and only the trace changes sign: $h_{00} = \bar{h}_{00} - \tfrac{1}{2}\bar{h}$, $h_{0\eta}=\bar{h}_{0\eta}$ and $h_{\eta l} = \bar{h}_{\eta l} - \tfrac{1}{2}\bar{h}\,\delta_{\eta l}$. In terms of $\bar{h}_{\mu\nu}$ the linearized Einstein tensor takes the compact form</p>
 <p>$$
 \begin{aligned}
 G_{00} = \mathrm{Ric}_{00} + \tfrac{1}{2}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_0+\partial/\partial x_0\,\bar{D}_0-\Box\bar{h}_{00}+\bar{S}\Bigr),\\[2pt]
-G_{0k} = \mathrm{Ric}_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial r_\eta\,\bar{D}_0-\Box\bar{h}_{0k}\Bigr),\\[2pt]
-G_{kl} = \mathrm{Ric}_{kl} - \tfrac{1}{2}\delta_{\eta l}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{kl}-\delta_{\eta l}\bar{S}\Bigr).
+G_{0\eta} = \mathrm{Ric}_{0\eta} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial r_\eta\,\bar{D}_0-\Box\bar{h}_{0\eta}\Bigr),\\[2pt]
+G_{\eta l} = \mathrm{Ric}_{\eta l} - \tfrac{1}{2}\delta_{\eta l}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{\eta l}-\delta_{\eta l}\bar{S}\Bigr).
 \end{aligned}
 $$</p>
-<p>with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_\eta\partial/\partial r_\eta\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_\eta(\partial^2/\partial x_0\partial r_\eta\bar{h}_{k0}+\partial^2/\partial r_\eta\partial x_0\bar{h}_{0k})+\sum_{k,l}\partial^2/\partial r_\eta\partial r_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.</p>
+<p>with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_\eta\partial/\partial r_\eta\bar{h}_{\eta \nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_\eta(\partial^2/\partial x_0\partial r_\eta\bar{h}_{\eta0}+\partial^2/\partial r_\eta\partial x_0\bar{h}_{0\eta})+\sum_\eta,l}\partial^2/\partial r_\eta\partial r_l\bar{h}_{l\eta}$; the minus on the time row of each contraction is the one minus of the interval.</p>
 <p>The <strong>harmonic gauge</strong> is the condition</p>
 <p>$$
 -\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial r_x\bar{h}_{1\nu}+\partial/\partial r_y\bar{h}_{2\nu}+\partial/\partial r_z\bar{h}_{3\nu} = 0,
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad -k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0,
 $$</p>
-<p>with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in <strong>transverse-traceless</strong> form, in which $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$ and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$, and the two independent amplitudes are the <strong>plus</strong> polarization, $A_{11} = -A_{22} \ne 0$, and the <strong>cross</strong> polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.</p>
+<p>with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in <strong>transverse-traceless</strong> form, in which $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$ and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. For propagation in the $+z$ direction, $k_{\Phi,\mu} = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$, and the two independent amplitudes are the <strong>plus</strong> polarization, $A_{11} = -A_{22} \ne 0$, and the <strong>cross</strong> polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.</p>
 <p>This is the theory that the framework's frame route will now be asked to contain.</p>
 <h2 id="the-frame-route-where-the-perturbation-lives">The Frame Route: Where the Perturbation Lives</h2>
 <p>The parent article's frame route writes the metric as $g_{\mu\nu} = \langle \tilde{E}_{\Phi}_\mu, \tilde{E}_{\Phi}_\nu\rangle_{\natural}$ with $\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$. Linearize it around the flat basis $\varepsilon_\mu$:</p>
@@ -233,7 +233,7 @@ $$</p>
 <p>$$
 \boxed{\;\tilde R_\Psi = h\,e_t\;},
 $$</p>
-<p>a real multiple of the identity carrying only the <strong>trace</strong> $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_\eta h_{kk}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.</p>
+<p>a real multiple of the identity carrying only the <strong>trace</strong> $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_\eta h_{\eta \eta}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.</p>
 <p>This is the precise sense in which the graviton is not a material biquaternion, and the obstacle is sharper than the observation that $h$ is not in $\mathbb{B}_{\Phi}$.</p>
 <ul>
 <li>It is not a four-vector, so there is no packaging of it as an element of the material sector: $\mathbb{B}_{\Phi}$ is the four-vector representation $(\tfrac12,\tfrac12)$, of dimension $4$, while $h$ is a symmetric rank-two object, $(1,1)\oplus(0,0)$, of dimension $10$.</li>
@@ -502,7 +502,7 @@ $$</p>
 <td>Trace of the metric perturbation</td>
 </tr>
 <tr>
-<td>$\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$</td>
+<td>$\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$</td>
 <td>Trace-reversed perturbation; here the overbar marks trace reversal, not complex conjugation</td>
 </tr>
 <tr>
