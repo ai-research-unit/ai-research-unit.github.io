@@ -6,13 +6,13 @@
 
 **This article is the general statement, and that is why it sits in the framework section and not inside a quantum one.** It contains no result about any particular particle. It states the property that the particle articles use, and it says where in the algebra the property comes from. It is filed above both quantum sections because its two cleanest instances sit on either side of the split: the Schrödinger equation is non-relativistic and the Klein–Gordon equation is not, and the transform treats them alike.
 
-**What is standard.** The position–momentum Fourier pair, the de Broglie identification $p=\hbar k$, the uncertainty relation as a bandwidth theorem, the plane wave and the delta function as the two extremes, and the diagonalisation of the derivative by the transform are textbook material and are flagged as such throughout. They are given in *Derivatives, Fields and Transforms*, which owns the transform and its symbol, and they are not re-derived here.
+**What is standard.** The position–momentum Fourier pair, the de Broglie identification $p=\hbar k_{\Phi}$, the uncertainty relation as a bandwidth theorem, the plane wave and the delta function as the two extremes, and the diagonalisation of the derivative by the transform are textbook material and are flagged as such throughout. They are given in *Derivatives, Fields and Transforms*, which owns the transform and its symbol, and they are not re-derived here.
 
 **What is the algebra's.** The textbook has two quadratic structures as well — the inner product on Hilbert space and the dispersion relation on momentum space. In the textbook the two live on different spaces and are related by Plancherel, which is the statement that the inner product of two states equals the inner product of their transforms; the textbook compares two spaces and never presents the inner product and the dispersion relation as two forms on one object. Here it does: both are defined on every element of $\mathbb{B}$, and both can be evaluated on the same element. That is what makes the comparison possible, and it is not idle: the first is positive definite on the state module while the second vanishes there identically, so the two arms cannot rest on one form. **That distinctness, on a single algebra, is the structural content the corpus adds**, and it is what makes the duality two readings of two forms rather than two readings of one.
 
 **The transform is the switch between them, and the switch is exact.** The arithmetic below closes at $4.4\times10^{-17}$ and the operator identity at $1.0\times10^{-13}$.
 
-**Why the corpus needs the statement.** Every article of the corpus writes its equations in wave numbers: $\tilde K_{\Phi}$, $k_{t}^{\prime}$, $k_{\Phi}$, $k_{m}$, $s$. A reader is entitled to ask whether the wave-number form is a derivation or a transcription. The answer given here is that it is a transcription of a differential equation that the transform licenses, that the licence has an exact condition, and that the condition is the centrality of the coefficients.
+**Why the corpus needs the statement.** Every article of the corpus writes its equations in wave numbers: $\tilde K_{\Phi}$, $k_{t}^{\prime}$, $k_{\Phi}$, $k_{m}$. A reader is entitled to ask whether the wave-number form is a derivation or a transcription. The answer given here is that it is a transcription of a differential equation that the transform licenses, that the licence has an exact condition, and that the condition is the constancy of the coefficients. Centrality enters one step later, when the transformed equation is read as an equation between numbers.
 
 ## The General Property
 
@@ -39,20 +39,24 @@ $$
 and the d'Alembertian becomes a scalar because the product $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is the quaternion norm, which is central:
 
 $$
-\tilde\nabla\tilde\nabla^{\natural}=\Box\longmapsto -s ,
+\tilde\nabla\tilde\nabla^{\natural}=\Box\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
 \qquad
-s:=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
 $$
+
+**On a particle the norm is $-k_{m}^{2}$.** *The Three Wavenumbers of a Particle* writes the same identity as $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_{m}^{2}$, that is $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$, the mass shell read as a right triangle. Off shell the product is another number — at $k_{\Phi}=3$, $k_{t}^{\prime}=4$ it is $-7$ — so the article writes $-k_{m}^{2}$ exactly where the field is on shell and keeps the quadratic form elsewhere.
 
 **The identification is exact up to the constant and the sign of the transform convention**, which is the hedge *Derivatives, Fields and Transforms* states for the symbol and does not attempt to remove: the same transform written with $2\pi$ and with the opposite exponent moves the constant and flips the sign, and none of the statements below depends on which is chosen.
 
-**The whole of the corpus's wave-number notation rests on that one centrality.** $s$ is a number at each wave number, so a differential equation whose only non-constant object is $\Box$ becomes an equation between numbers. Centrality, however, is not the boundary of the method; constancy is. A constant coefficient passes through the transform whether it is central or not, and the norm of the resulting multiplier is central even when the multiplier is not, so a constant non-central potential translates the shell instead of destroying the algebra. The boundary is stated in the section *Where the Transcription Stops*.
+**The whole of the corpus's wave-number notation rests on that one centrality.** $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is a number at each wave number, so a differential equation whose only non-constant object is $\Box$ becomes an equation between numbers. Centrality, however, is not the boundary of the method; constancy is. A constant coefficient passes through the transform whether it is central or not, and the norm of the resulting multiplier is central even when the multiplier is not, so a constant non-central potential translates the shell instead of destroying the algebra. The boundary is stated in the section *Where the Transcription Stops*.
 
 **Two qualifications, both standard.** A coefficient that varies in space has a convolution for an image, and that is the limit of the method rather than a defect of it. And the transform is not a dynamics: it carries an equation to an equivalent equation, and it says nothing about which of the two descriptions a laboratory realises.
 
 ## Two Forms, Two Descriptions
 
 **The algebra carries two quadratic structures, and they are distinct objects.** That distinctness is what makes this a claim rather than a definition. The textbook has the transform and the dispersion relation. The algebra has, in addition, a definite form on the field itself, and it also has a form on the derivative whose level sets are the dispersion surfaces.
+
+**The distinctness runs both ways.** The quaternion norm vanishes on the state module, so it cannot carry the particle arm. The Hermitian form cannot carry the wave arm: on the same wave-number element it reads $k_{t}^{\prime\,2}+k_{\Phi}^{2}$ while the norm reads $-k_{t}^{\prime\,2}+k_{\Phi}^{2}$, so its level sets are spheres and the norm's are hyperboloids, and only the second terminate on the mass shell. On the mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ the two numbers are $34$ and $-16$; the second is the level $-k_{m}^{2}$, and it fixes $k_{m}=4$ for that mode.
 
 **The words particle and wave are names for the two arms, and nothing more.** The particle arm is a conserved count; the wave arm is a fixed level set. Neither name is a claim about what a particle or a wave is. The names are kept because they are the ones the reader already has, and the Limits section at the end states what each of them does not mean.
 
@@ -102,19 +106,19 @@ $$
 \tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box ,
 $$
 
-and its symbol is $-s$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:
+and its symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:
 
 $$
 \left(\Box-k_{m}^{2}\right)\tilde F=0
 \quad\longleftrightarrow\quad
-s=-k_{m}^{2}
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}
 \quad\longleftrightarrow\quad
 k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_{m}^{2}.
 $$
 
 **That equation is the wave statement.** It fixes a surface in wave-number space and says the field lives on it. The surface is the mass shell, its zero level is the light cone, and a field on it is a superposition of the plane waves whose labels lie on it. Nothing in the equation counts anything.
 
-**The level set is a norm's level set only where the symbol is homogeneous of degree two.** That holds for the second-order relativistic equations, whose symbol is $-s$, and it fails for the Schrödinger equation, whose symbol is affine. The wave arm therefore reads *a fixed level set of the symbol*; the identity of that level set with a norm is a property of the equation, not of the transform, and the next-but-one section states the exception rather than hiding it.
+**The level set is a norm's level set only where the symbol is homogeneous of degree two.** That holds for the second-order relativistic equations, whose symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, and it fails for the Schrödinger equation, whose symbol is affine. The wave arm therefore reads *a fixed level set of the symbol*; the identity of that level set with a norm is a property of the equation, not of the transform, and the next-but-one section states the exception rather than hiding it.
 
 ### The two side by side
 
@@ -124,12 +128,12 @@ $$
 | what it is | the Hermitian form | the quaternion norm |
 | on the state module | positive definite | identically zero |
 | differential statement | $ c\,\partial_{r_{t}^{\prime}}\rho+\vec\nabla\cdot\vec J=0 $ | $ \left(\Box-k_{m}^{2}\right)\tilde F=0 $ |
-| transformed statement | $ \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 $ | $ s=-k_{m}^{2} $ |
+| transformed statement | $ \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 $ | $ \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2} $ |
 | what it names | a conserved count | a fixed surface |
 | what it counts | particles | wave crests |
 | its limit | a second-order equation has no such density | a level with no real preimage |
 
-**The last line names the two limits.** A second-order equation in time carries no positive conserved density of the single-element kind, which is the Klein–Gordon defect. A level $s=-k_{m}^{2}$ with no real wave number is the evanescent region. Neither limit is a defect of the transform; both are properties of the forms.
+**The last line names the two limits.** A second-order equation in time carries no positive conserved density of the single-element kind, which is the Klein–Gordon defect. A level $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}$ with no real wave number is the evanescent region. Neither limit is a defect of the transform; both are properties of the forms.
 
 **Read together, the table is the duality.** One form gives a number that is conserved in space and time. The other gives a number that is constant in wave-number space. The first is what a particle is, in this algebra: a conserved count. The second is what a wave is: a fixed surface of labels. The transform is the map between the statements, and it is exact because both are statements about numbers the transform preserves. The two numbers are not the same number, and that is why the map has content.
 
@@ -154,14 +158,14 @@ $$
 $$
 \left(\Box-k_{m}^{2}\right)\tilde F=0
 \quad\longmapsto\quad
-\left(-s-k_{m}^{2}\right)\tilde F=0 .
+\left(-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}\right)\tilde F=0 .
 $$
 
 **The operator has become a number.** The bracket multiplies; it does not differentiate. On shell the bracket vanishes and the equation holds for every value of $\tilde F$, which is the algebraic form of the statement that the field is a superposition of on-shell plane waves.
 
 **Neither image is an equation for the state on its own.** This is the objection to name, because a reader who knows that a density is bilinear will raise it. The transform of $\rho$ is not the product of the transforms of $\tilde\Xi$ and $\tilde\Xi^{\dagger}$; it is their convolution. So the algebraic continuity equation is linear in $\tilde\rho$ and $\tilde{\vec J}$ as fields in their own right, and quadratic in the modes of $\tilde\Xi$. The two statements are consistent and they are not the same statement. The algebra is exact where it is claimed, and the claim is narrow: it is an algebra for the current, not for the state.
 
-**Numerical check, on periodic data so that the spectral derivatives are exact.** On a torus of side $2\pi$ with $N=64$ samples and $\hbar=m=1$, take the superposition of two modes of the free Schrödinger equation with $k=2$ and $k=6$, and form $\rho$ and $\vec J$ from it. The continuity equation holds pointwise to $1.7\times10^{-13}$ relative, and its two-dimensional transform satisfies $|\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}|=0$ to $4.4\times10^{-17}$ of $|\omega\tilde\rho|$ on every mode that carries weight, and on the two modes that carry it the ratio $\omega\tilde\rho/(\vec k_{\Phi}\cdot\tilde{\vec J})$ is $1.000000$. With $\hbar=m=c=1$ the transform variable is the frequency itself, so this is the identification $\omega\leftrightarrow k_{t}^{\prime}$ in the units of the check. The derivative and the dot product agree to machine precision, which is what the switch claims.
+**Numerical check, on periodic data so that the spectral derivatives are exact.** On a torus of side $2\pi$ with $N=64$ samples and $\hbar=m=1$, take the superposition of two modes of the free Schrödinger equation with $k_{\Phi}=2$ and $k_{\Phi}=6$, and form $\rho$ and $\vec J$ from it. The continuity equation holds pointwise to $1.7\times10^{-13}$ relative, and its two-dimensional transform satisfies $|\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}|=0$ to $4.4\times10^{-17}$ of $|\omega\tilde\rho|$ on every mode that carries weight, and on the two modes that carry it the ratio $\omega\tilde\rho/(\vec k_{\Phi}\cdot\tilde{\vec J})$ is $1.000000$. With $\hbar=m=c=1$ the transform variable is the frequency itself, so this is the identification $\omega\leftrightarrow k_{t}^{\prime}$ in the units of the check. The derivative and the dot product agree to machine precision, which is what the switch claims.
 
 **The switch is not a physical process.** No measurement performs it, and no time evolution is involved. It is the statement that two descriptions of one state are related by a unitary map, and the physical content of the map is that neither description is privileged. That is the content of the word duality here, and it is why the word is defensible.
 
@@ -187,7 +191,7 @@ $$
 E=\frac{p^{2}}{2m}+V ,
 $$
 
-the classical energy–momentum relation, with $E=\hbar\omega$ and $p=\hbar k$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=E/(\hbar c)$, which includes the rest energy, the same symbol reads
+the classical energy–momentum relation, with $E=\hbar\omega$ and $p=\hbar k_{\Phi}$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=E/(\hbar c)$, which includes the rest energy, the same symbol reads
 
 $$
 k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
@@ -201,16 +205,16 @@ the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-
 
 **The statement is exact and it is also a warning.** The relation $E=p^{2}/(2m)+V$ is true of a classical particle, of a plane wave, and of every mode of the quantum field. What distinguishes the quantum case is not the relation but what the relation constrains: a single point in one case, a field carrying a superposition in the other. The relation is the alphabet, not the sentence.
 
-**Three checks, on periodic data with $N=64$ samples and the modes $k=2$ and $k=6$.** The equation $i\partial_{t}\psi+\tfrac{1}{2}\partial_{x}^{2}\psi=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}k^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $k_{0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=k_{0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial k=k_{0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.
+**Three checks, on periodic data with $N=64$ samples and the modes $k_{\Phi}=2$ and $k_{\Phi}=6$.** The equation $i\partial_{t}\psi+\tfrac{1}{2}\partial_{x}^{2}\psi=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}k_{\Phi}^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $k_{\Phi,0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=k_{\Phi,0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial k_{\Phi}=k_{\Phi,0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.
 
-**One check with the mass kept, on a torus where the three numbers are commensurate.** Take $k_{m}=4$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ is on shell, and the symbol of $\Box-k_{m}^{2}$ vanishes on it exactly: $s=-16$, so $-s-k_{m}^{2}=0$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box-k_{m}^{2}$ on it, while its own $s$ is $-7$. The same holds at $k_{\Phi}=6$, $k_{t}^{\prime}=10$, $k_{m}=8$, where $s=-64$ and $-s-k_{m}^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.
+**One check with the mass kept, on a torus where the three numbers are commensurate.** Take $k_{m}=4$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ is on shell, and the symbol of $\Box-k_{m}^{2}$ vanishes on it exactly: $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-16=-k_{m}^{2}$, so $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box-k_{m}^{2}$ on it, while the mode's own norm is $-7$. The same holds at $k_{\Phi}=6$, $k_{t}^{\prime}=10$, $k_{m}=8$, where $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-64$ and $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.
 
 **The last check is the classical relation in motion.** The centroid moves at the group velocity because the dispersion relation is quadratic, and a quadratic dispersion relation is the statement $E=p^{2}/(2m)$ differentiated. A reader who wants the classical equation back does not need to take a limit; the derivation is one differentiation of the algebraic relation the transform already produced.
 
-**The relativistic case is the same move with a different symbol, and it is the cleanest instance of the gradient arm.** Take the Klein–Gordon equation $\left(\Box-k_{m}^{2}\right)\tilde\Xi=0$. The gradient's form is $-s$ and the fixed level is $-k_{m}^{2}$, so the transform gives one equation between numbers,
+**The relativistic case is the same move with a different symbol, and it is the cleanest instance of the gradient arm.** Take the Klein–Gordon equation $\left(\Box-k_{m}^{2}\right)\tilde\Xi=0$. The gradient's form is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ and the fixed level is $-k_{m}^{2}$, so the transform gives one equation between numbers,
 
 $$
--s=k_{m}^{2}
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}
 \quad\Longleftrightarrow\quad
 k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_{m}^{2},
 $$
@@ -225,9 +229,9 @@ $$
 E^{2}-\lvert\vec p\rvert^{2}c^{2}=m^{2}c^{4}.
 $$
 
-**The same triangle is obtained from the other side, and the two derivations share no step.** *The Three Wavenumbers of a Particle* divides the four-momentum by $\hbar$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and reads the three numbers off the quotient: the coordinates are $E/(\hbar c)$ and $\vec p/\hbar$, and the third is the value the element's norm must take, $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$. That is the particle arm computing $s$, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.
+**The same triangle is obtained from the other side, and the two derivations share no step.** *The Three Wavenumbers of a Particle* divides the four-momentum by $\hbar$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and reads the three numbers off the quotient: the coordinates are $E/(\hbar c)$ and $\vec p/\hbar$, and the third is the value the element's norm must take, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}$. That is the particle arm computing the norm, and it lands on the same hyperbola the wave arm fixes. The two derivations meet because they are the two arms of one identity, and the meeting is what this article is about.
 
-**The three numbers are the same kind of number, which is the point of writing them as one element.** $k_{t}^{\prime}$, $\lvert\vec k_{\Phi}\rvert$ and $k_{m}$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $\hbar$ and $c$ back rescales the coordinates — $k_{t}^{\prime}$ becomes $E/(\hbar c)$, $\lvert\vec k_{\Phi}\rvert$ becomes $\lvert\vec p\rvert/\hbar$ — and leaves the form $s=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.
+**The three numbers are the same kind of number, which is the point of writing them as one element.** $k_{t}^{\prime}$, $\lvert\vec k_{\Phi}\rvert$ and $k_{m}$ are all inverse lengths, all coordinates or coefficients of one element of $\mathbb{B}$, and the mass shell is the statement that the first two form a right triangle with the third. Putting $\hbar$ and $c$ back rescales the coordinates — $k_{t}^{\prime}$ becomes $E/(\hbar c)$, $\lvert\vec k_{\Phi}\rvert$ becomes $\lvert\vec p\rvert/\hbar$ — and leaves the form $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ exactly as it was. A reader who expects the structure to change with the units will look for it in the wrong place.
 
 ## Where the Transcription Stops
 
@@ -280,13 +284,15 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 | *One-Dimensional Scattering in Biquaternionic Form* | both arms: flux against the level set |
 | *The Non-Quantum Limit of the Biquaternion Model* | the switch-off: the gradient arm withdrawn |
 
-**The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.** Transforming $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\hat{\tilde F}=-\sqrt{\mu}\,\hat{\tilde J}_{\Phi}$, an equation in the algebra with the symbol as the coefficient. There is no number to set a level on: the symbol is an element, and the equation is solved by **inverting** it, $\hat{\tilde F}=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\hat{\tilde J}_{\Phi}$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor and the map loses rank, from three complex dimensions to two, checked on the $3/3$ and $4/4$ pairs.
+**The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.** Transforming $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\,\mathcal{F}[\tilde F]=-\sqrt{\mu}\,\mathcal{F}[\tilde J_{\Phi}]$, an equation in the algebra with the symbol as the coefficient. The transform of a field is written $\mathcal{F}[\tilde F]$, as *Biquaternion Continuous Harmonic Analysis* writes it, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction. There is no number to set a level on: the symbol is an element, and the equation is solved by **inverting** it, $\mathcal{F}[\tilde F]=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\mathcal{F}[\tilde J_{\Phi}]$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor and the map loses rank, from three complex dimensions to two, checked on the $3/3$ and $4/4$ pairs.
 
-**The constraint the corpus prints is the cokernel of that map, and it is also the transformed continuity equation.** Because the field is a pure vector, the symbol carries three complex dimensions into four, so off the cone it has a cokernel of exactly one complex dimension. The functional that spans it is $\hat{\tilde J}_{\Phi}\mapsto\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\hat{\tilde J}_{\Phi})$, which is the symbol of $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$ — the corpus's integrability condition, term for term, and it annihilates the image to $10^{-15}$ while the unconjugated functional does not. Evaluated on $\tilde J_{\Phi}=ic\rho\,e_{t}+\vec J$ it reads $\vec k_{\Phi}\cdot\hat{\vec J}=k_{t}^{\prime}\,\widehat{c\rho}$, which with $k_{t}^{\prime}=\omega/c$ is $\omega\hat{\rho}=\vec k_{\Phi}\cdot\hat{\vec J}$: the transformed continuity equation of this article, to the identity. **Charge conservation is not a second law standing beside the field equation. It is the compatibility of the field equation, and the transform shows the two statements are the same one.** On the cone the rank drops and the cokernel becomes two-dimensional; that is the wave-number form of the statement that a front carries an extra condition. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.
+**The constraint the corpus prints is the cokernel of that map, and it is also the transformed continuity equation.** Because the field is a pure vector, the symbol carries three complex dimensions into four, so off the cone it has a cokernel of exactly one complex dimension. The functional that spans it is $\mathcal{F}[\tilde J_{\Phi}]\mapsto i\,\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\mathcal{F}[\tilde J_{\Phi}])$, which is the symbol of $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$ — the corpus's integrability condition, term for term, and it annihilates the image to $10^{-15}$ while the unconjugated functional does not. Evaluated on $\tilde J_{\Phi}=ic\rho\,e_{t}+\vec J$ it reads $\vec k_{\Phi}\cdot\mathcal{F}[\vec J]=k_{t}^{\prime}\,\mathcal{F}[c\rho]$, which with $k_{t}^{\prime}=\omega/c$ is $\omega\,\mathcal{F}[\rho]=\vec k_{\Phi}\cdot\mathcal{F}[\vec J]$: the transformed continuity equation of this article, to the identity. **Charge conservation is not a second law standing beside the field equation. It is the compatibility of the field equation, and the transform shows the two statements are the same one.** On the cone the rank drops and the cokernel becomes two-dimensional; that is the wave-number form of the statement that a front carries an extra condition. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.
 
 **The pattern is not a coincidence of organisation.** In each row the object on the left of the transform is a differential statement and the object on the right is a number or a matrix. The table is the corpus's list of contents read as a table of forms.
 
 ## Limits
+
+**The unitarity is asserted on a domain the corpus has not closed.** *Derivatives, Fields and Transforms* states the transform pair as invertible on functions of non-vanishing norm, sufficient on $\mathbb{B}_{H}$, exact on $\mathbb{B}_{\Phi}$ away from the cone, and open for a function that takes zero-divisor values on a set of positive measure. The state module is that open case: every state of the corpus is a zero divisor. So the unitarity used here is exact wherever the two descriptions are related by a transform pair, and on the states themselves it is a stated hypothesis and not a theorem. No display below leans on the difference, because each is an identity between numbers on the modes that carry weight, and a mode is a character, whose own transform is a delta.
 
 **The transform is a change of basis and nothing more.** It does not select a description, predict a measurement, or supply a dynamics. Every claim in this article is an identity, and an identity cannot be wrong about nature; it can only be irrelevant to a question. The question it answers is which of two descriptions a given equation is written in.
 
@@ -298,7 +304,7 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 
 **The word particle means a conserved count, not a trajectory.** A trajectory needs the ray limit and the ray limit needs $\epsilon$ small, which is a condition on the state and not on the algebra. The word is used in the counting sense throughout, and *When the Wave Dies* is where the two senses meet.
 
-**The indefinite signature is posited, not derived.** The form $s=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ has the Minkowski sign because the material sector is defined that way. The duality does not depend on the sign; the identification of the zero level with the light cone does.
+**The indefinite signature is posited, not derived.** The form $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ has the Minkowski sign because the material sector is defined that way. The duality does not depend on the sign; the identification of the zero level with the light cone does.
 
 **No claim of novelty in physics.** The Fourier pair, the bandwidth theorem, the diagonalisation of the derivative and the mass shell are standard. The organisation into two forms and the interpretation of the two as the two arms of one duality are the corpus's, and they are an interpretation of identities, not a new identity.
 
@@ -310,7 +316,7 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 
 **The density carries as many derivatives as the equation has time derivatives, minus one.** None for Schrödinger and Dirac, one for Klein–Gordon, and the Klein–Gordon one is indefinite, which is why a second-order equation has no positive single-element count.
 
-**The transform is the switch between them.** It turns the divergence into the dot product $\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0$, verified to $4.4\times10^{-17}$, and it turns the operator into the number $-s-k_{m}^{2}$, verified to $1.0\times10^{-13}$ on the massless cone and exactly on the commensurate modes $3,4,5$.
+**The transform is the switch between them.** It turns the divergence into the dot product $\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0$, verified to $4.4\times10^{-17}$, and it turns the operator into the number $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}$, verified to $1.0\times10^{-13}$ on the massless cone and exactly on the commensurate modes $3,4,5$.
 
 **The Schrödinger case is the elementary instance, and the one exception.** One substitution gives $E=p^{2}/(2m)+V$ from $i\hbar\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
 
@@ -322,11 +328,11 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 |---|---|---|
 | the density is not the quaternion norm | determinant against trace on the state module | $0$ against $1.000000$ to $3.890000$ |
 | the continuity equation, pointwise | two Schrödinger modes, $N=64$ | $1.7\times10^{-13}$ |
-| its transform, the dot product | the same data, in $k$ | $4.4\times10^{-17}$ |
-| $\Box\mapsto-s$ | massless cone, random modes | $1.0\times10^{-13}$ |
+| its transform, the dot product | the same data, in $k_{\Phi}$ | $4.4\times10^{-17}$ |
+| $\Box\mapsto-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ | massless cone, random modes | $1.0\times10^{-13}$ |
 | the level set itself | $3,4,5$ with $k_{m}=4$ | exact |
 | a constant non-central potential | translated shell | $5.6\times10^{-17}$ |
-| the Schrödinger operator identity | $k=2,6$, periodic | $4.1\times10^{-14}$ |
+| the Schrödinger operator identity | $k_{\Phi}=2,6$, periodic | $4.1\times10^{-14}$ |
 | the group velocity | packet centroid, one width of travel | $6.3\times10^{-12}$ |
 | the affine correction | $k_{\Phi}/k_{m}=0.01$ | $-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$ |
 
@@ -350,7 +356,7 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 | $ \vec k_{\Phi} $ | momentum wave number, $\vec p/\hbar$ |
 | $ k_{\Phi} $ | its modulus |
 | $ k_{m} $ | mass wave number, $m\,c/\hbar$ |
-| $ s $ | $ \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2} $ |
+| $ \tilde K_{\Phi}\tilde K_{\Phi}^{\natural} $ | the quaternion norm of the wave number, $ -k_{t}^{\prime\,2}+k_{\Phi}^{2} $, and $ -k_{m}^{2} $ on shell; the symbol of the d'Alembertian |
 | $ \rho $ | density of the element form |
 | $ \vec J $ | current of the element form, one gradient, in $\mathbb{B}_{\Phi}$ |
 | $ \epsilon $ | $ 1/(k_{\Phi}L) $, the non-quantum parameter |

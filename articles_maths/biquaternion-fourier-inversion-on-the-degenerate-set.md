@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article computes the inversion of the biquaternion Fourier transform at the frequencies where the symbol is **not a unit**, and it does so in a frame in which the algebra becomes two-by-two complex matrices. **The frame is the Peirce frame of a complete pair of idempotents, and in it the symbol is a matrix, the norm is its determinant, and the inversion is the adjugate.** That is the first half of the article. The second half is negative: the route through the exponential, which is the route of *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, closes before it reaches the degenerate set, and the article proves the closure in all three cases of the closed form rather than asserting it.
+This article inverts the biquaternion Fourier transform at the frequencies where the symbol is **not a unit**, and it does so inside the algebra. **The work is done inside the algebra and nowhere else**: no two-by-two array appears, no array of operators is written, and no statement is carried by a determinant or an adjugate of an array. The objects are elements of $\mathbb{B}$, the operator of left multiplication, and subspaces of the algebra read as a module over itself. The word *coordinates* is used in one sense only, the four Peirce components of an element, and those components stay in their four subspaces and are never assembled into an array.
 
-**The status of each part, stated once.** §*The Peirce Frame of the Algebra* and §*The Degenerate Set in Coordinates* are proved, from the frame outwards, with no appeal beyond the matrix units. §*Inversion in Peirce Coordinates* is proved, the only quoted ingredient being the Plancherel theorem of *The Inverse Fourier Transform of a Symbol*. §*The Exponential on the Degenerate Set* quotes the three closed forms of *Biquaternion Elementary Functions*, §*The Closed Form*, with their hypotheses, and proves the corollary that follows. §*The Generalised Inverse* is proved, the existence of the Moore–Penrose inverse in a finite-dimensional inner-product space being standard and quoted as such. §*Inversion When the Symbol Is Nowhere a Unit* is proved for the two model families in which the symbol is a fixed null element times a scalar function, and the general case is labelled **open** there, with the specific obstacle named. **No part of the article is a programme**: where a statement is not proved, it says so.
+**Status.** §*The Algebra, the Conjugate and the Norm* and §*The Degenerate Set and the Rank of Left Multiplication* are proved from the eight-coordinate product; the determinant of the regular representation and the three values of the rank are quoted from *The Fourier Transform and the Symbol of a Differential Operator*, where they are proved. §*Inversion in the Algebra* is proved, quoting Plancherel with its constant from *The Inverse Fourier Transform of a Symbol*. §*Two Generalised Inverses* is proved, the existence of the Moore–Penrose inverse in a finite-dimensional inner-product space being standard and quoted as such. §*The Exponential on the Degenerate Set* quotes the three closed forms of *Biquaternion Elementary Functions* with their hypotheses and proves everything else. §*Inversion When the Symbol Is Nowhere a Unit* is proved for the two families whose null element is fixed up to a scalar, and the remaining case is labelled **open** with its obstacle named. **No part of the article is a programme.**
 
 **The equation.** Let $P(D)=\sum_{\lvert\alpha\rvert\le m}a_\alpha D^\alpha$ have constant coefficients in $\mathbb{B}$ and symbol $\sigma_P(\zeta)=\sum a_\alpha(i\zeta)^\alpha$, with $\zeta\in\mathbb{R}^n$ and $n$ the number of variables, as in *The Fourier Transform and the Symbol of a Differential Operator*. The equation to invert is
 
@@ -12,222 +12,197 @@ $$
 P(D)f=g ,
 $$
 
-understood as an equation in $L^2(\mathbb{R}^n,\mathbb{B})$, with $P(D)$ the Fourier multiplier by $\sigma_P$. **The whole of the inversion is pointwise in $\zeta$**, so the biquaternion structure and the number of variables are separate questions: what follows holds for every $n$, and the one-variable kernel $W(t,\omega)$ of *Biquaternion Continuous Harmonic Analysis* is the case $n=1$.
+understood in $L^2(\mathbb{R}^n,\mathbb{B})$, with $P(D)$ the multiplier by $\sigma_P$. **The inversion is pointwise in $\zeta$**, so the algebra and the number of variables are separate questions.
 
-**Boundaries.** The zero set $Z(P)$ and the determinant of the regular representation are *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*; the rank and the two annihilators on the null set are *The Biquaternion Fourier Transform: Support and Rank*; the placement of the kernel, which must be fixed before any formula is written, is *The Three Kernel Placements of the Biquaternion Fourier Transform*, and this article uses the **left** placement throughout; the two forms that measure an element are *The Biquaternion Fourier Transform and the Two Quadratic Forms*; the Peirce vocabulary is *Special Element and Peirce Conventions*; and the exponential is *Biquaternion Elementary Functions*.
+**Boundaries.** The zero set, the determinant of the regular representation and the rank on the null set are *The Fourier Transform and the Symbol of a Differential Operator*; the placement of the kernel is *The Three Kernel Placements of the Biquaternion Fourier Transform*, and this article uses the **left** placement throughout, so the symbol multiplies on the left; the Peirce vocabulary is *Special Element and Peirce Conventions*, which fixes no pair of idempotents and prefers none; the forms that measure an element are *Norm and Unitary Conventions* and *Product and Form Conventions*; the exponential is *Biquaternion Elementary Functions*.
 
-## The Peirce Frame of the Algebra
+## The Algebra, the Conjugate and the Norm
 
-### The Frame and Its Units
+### The Product, the Conjugate and the Norm
 
-**Definition (the frame).** Put
-
-$$
-\tilde\Pi_1=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad \tilde\Pi_2=\tfrac12\bigl(e_t-i\vec e_z\bigr),\qquad \vec\Upsilon_{12}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad \vec\Upsilon_{21}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr).
-$$
-
-**The pair is the Peirce pair of a root of one.** With $\tilde{Ζ}=i\vec e_z$, a pure root of $1$ in the sense of *Biquaternion Continuous Harmonic Analysis*, the two idempotents are $\tilde\Pi_1=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_2=\tfrac12(e_t-\tilde{Ζ})$, so the frame below is the frame $\Pi_\pm(\tilde{Ζ})$ of *Special Element and Peirce Conventions*, at one particular root; the root is fixed here once, and every formula below is read at that root.
-
-**The two mixed units are the $\vec\Upsilon_\pm$ of *Special Element and Peirce Conventions***, §*The Biquaternion Peirce Convention*, where the assignment of a sign to an index is not fixed. **The assignment above is the one that makes the matrix-unit identities hold**, and it is the reverse of the alphabetical reading: a computation, not a convention, checked below.
-
-**Proposition (the four units are matrix units).** With $E_{11}=\tilde\Pi_1$, $E_{12}=\vec\Upsilon_{12}$, $E_{21}=\vec\Upsilon_{21}$ and $E_{22}=\tilde\Pi_2$,
+Write $Q=Q_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, the product being fixed by $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$ for the three units, with the scalar $i$ central. The **conjugate** is
 
 $$
-E_{ij}E_{jq}=E_{iq},\qquad E_{11}+E_{22}=e_t,\qquad \vec\Upsilon_{12}^{\ 2}=\vec\Upsilon_{21}^{\ 2}=0 .
+\tilde Q=Q_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z ,
 $$
 
-*Proof.* Each identity is a product of two elements written out in the four coordinates. The products reduce to the quaternion products of the units: $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, with a minus sign on the reversed order, and $i$ central. For instance $\tilde\Pi_1\vec\Upsilon_{12}=\tfrac14(i\vec e_x-\vec e_y+i\vec e_z\vec e_x-i\vec e_z\vec e_y)=\tfrac14(i\vec e_x-\vec e_y+i\vec e_y+i\vec e_x)=\tfrac12(i\vec e_x-\vec e_y)=\vec\Upsilon_{12}$, and $\vec\Upsilon_{12}\vec\Upsilon_{21}=\tfrac14(i\vec e_x-\vec e_y)(i\vec e_x+\vec e_y)=\tfrac14(-\vec e_t-\vec e_z+\vec e_z+\vec e_t)$... the two cross terms cancel and the two diagonal terms give $-\tfrac14+\tfrac14$ on the vector part and $\tfrac14+\tfrac14$ on the scalar part, that is $\tfrac12(e_t+i\vec e_z)=\tilde\Pi_1$. The remaining identities are the same computation with the units permuted.
+and the **algebraic norm** is $N(Q)=Q\tilde Q$. Both are elements of the commutative algebra generated by $Q_t$ and the vector part $Q_v$, which is why the next statement has no order condition.
 
-**Remark (what a wrong assignment costs, and why the determinant does not detect it).** With the other sign assignment each product comes out as half the expected unit, so the product rule fails by the factor two, while the determinant formula still holds, because a uniform rescaling of two units multiplies the determinant by a constant. **A check of the determinant alone therefore passes with the wrong frame**, and the eigenvalues read from it are wrong. Every identity above was checked one by one.
-
-### Coordinates, the Product and the Norm
-
-**Definition (Peirce coordinates).** For $Q\in\mathbb{B}$ the four complex numbers $Q_{ij}$ are defined by
+**Theorem (the conjugate and the norm).** For all $Q,R\in\mathbb{B}$ the conjugate reverses products, $\widetilde{QR}=\tilde R\tilde Q$, and
 
 $$
-Q=Q_{11}\tilde\Pi_1+Q_{12}\vec\Upsilon_{12}+Q_{21}\vec\Upsilon_{21}+Q_{22}\tilde\Pi_2 ,
+Q\tilde Q=\tilde QQ=N(Q)e_t,\qquad N(QR)=N(Q)N(R),\qquad N(e_t)=1 .
 $$
 
-and $\Sigma(Q)$ is the two-by-two complex matrix with entries $Q_{ij}$, the left index first.
+*Proof.* Both $Q$ and $\tilde Q$ lie in the commutative subalgebra generated by $Q_t$ and $Q_v$, so the two products agree and equal $Q_t^{2}-Q_v^{2}$. Now $Q_v=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ has $Q_v^{2}=-(Q_x^{2}+Q_y^{2}+Q_z^{2})e_t$, because the three units anticommute and each has second power $-e_t$; hence $Q_t^{2}-Q_v^{2}=(Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2})e_t=N(Q)e_t$. The reversal is read off the three product rules, which change sign when the order is exchanged. For multiplicativity, $N(QR)e_t=(QR)\widetilde{(QR)}=QR\tilde R\tilde Q=QN(R)e_t\tilde Q=N(R)N(Q)e_t$, and $N(e_t)=1$ is the definition. **The norm is central and $\mathbb{C}$-valued**: it is a complex number times $e_t$, and it is not the coefficient norm of §*The Projection Carried by a Null Symbol*.
 
-**Theorem (the coordinates are a matrix representation).** The map $Q\mapsto\Sigma(Q)$ is an isomorphism of real algebras from $\mathbb{B}$ onto $M_2(\mathbb{C})$, and
+### The Unit Criterion
 
-$$
-\Sigma(QR)=\Sigma(Q)\Sigma(R),\qquad \Sigma(Q^*)=\Sigma(Q)^{*},\qquad N(Q)=\det\Sigma(Q).
-$$
-
-Consequently the spectrum of $Q$ is the spectrum of $\Sigma(Q)$, and $Q$ is a unit exactly when $\Sigma(Q)$ is invertible.
-
-*Proof.* The four units of §*The Frame and Its Units* are a basis: they are linearly independent by inspection of their coordinates, and $\mathbb{B}$ has real dimension eight, which is the real dimension of four complex parameters. On that basis the product rule $E_{ij}E_{jq}=E_{iq}$ is the matrix product rule, so the map is multiplicative; it is additive and real-linear by construction, and injective and surjective by the dimension count. For the star, $\tilde\Pi_i^*=\tilde\Pi_i$ because $\vec e_z$ is reversed twice by the two conjugations of the star, and $\vec\Upsilon_{12}^*=\vec\Upsilon_{21}$ by the same computation with one reversal; these are the conjugate-transpose relations of the four units, and multiplicativity extends them. For the determinant, $\det\Sigma=Q_{11}Q_{22}-Q_{12}Q_{21}$ is multiplicative and agrees with $N$ on the four units and on sums, and both are quadratic forms on the same eight real coordinates, so they agree everywhere.
-
-**Remark (the matrix model of the earlier article is this matrix, read with the indices exchanged).** The model $\mathsf M(Q)=\begin{pmatrix}Q_t+iQ_z&Q_y+iQ_x\\-Q_y+iQ_x&Q_t-iQ_z\end{pmatrix}$ of *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set* sends $\tilde\Pi_1$ to $E_{22}$ and not to $E_{11}$. **The two matrices are similar, by the matrix that exchanges the two indices**, so the determinant and the spectrum agree and the individual entries do not. A statement about $N$ may be carried from one to the other without care; a statement about a coordinate, an eigenvector or a Peirce index may not.
-
-### The Star, the Trace and the Hilbert–Schmidt Form
-
-**Definition (the trace and the Hilbert–Schmidt form).** For $X,Y\in\mathbb{B}$ put $\mathrm{tr}\,X=\tilde X_{11}+\tilde X_{22}$ and $\langle X,Y\rangle_{\mathrm{HS}}=\mathrm{tr}(X^*Y)$, a positive definite Hermitian form on the eight real coordinates.
-
-**Proposition (the trace is twice the scalar part, and the form is twice the coefficient norm).** For every $Q$,
+**Theorem (a unit is exactly an element of nonzero norm).** $\sigma\in\mathbb{B}$ is a unit if and only if $N(\sigma)\neq0$, and then
 
 $$
-\mathrm{tr}\,Q=2Q_t,\qquad \langle Q,Q\rangle_{\mathrm{HS}}=\mathrm{tr}(Q^*Q)=2\lVert Q\rVert_E^2 ,
+\sigma^{-1}=\frac{\tilde\sigma}{N(\sigma)} .
 $$
 
-where $\lVert Q\rVert_E^2=\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ is the coefficient norm.
+*Proof.* If $N(\sigma)\neq0$ the displayed element is an inverse, by the theorem above. If $\sigma$ has an inverse $\tau$, then $N(\sigma)N(\tau)=N(\sigma\tau)=N(e_t)=1$, so $N(\sigma)\neq0$. **The inverse is the conjugate divided by the norm**, and no determinant of any array enters: the numerator is an element of the algebra and the denominator is a complex number.
 
-*Proof.* The trace is the trace of the representing matrix, hence equal to the sum of its eigenvalues, and in the model of the remark above the two eigenvalues are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; their sum is $2Q_t$. For the form, $\mathrm{tr}(Q^*Q)$ is the sum of the absolute values of the four entries of the representing matrix, which is $\lvert Q_t+iQ_z\rvert^2+\lvert Q_y+iQ_x\rvert^2+\lvert-Q_y+iQ_x\rvert^2+\lvert Q_t-iQ_z\rvert^2$, and each pair contributes twice a modulus, giving $2\sum_\mu\lvert Q_\mu\rvert^2$.
+### The Quadratic Identity and the Two Halves
 
-**Remark (the two forms are not the same form).** The form $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ is positive definite; the algebraic norm $N$ is not, and is isotropic on the null set. **The factor two between the trace and the scalar part enters every formula below**, and a reader who replaces $\mathrm{tr}$ by the scalar part will be wrong by it in a way no homogeneous formula reveals.
-
-## The Degenerate Set in Coordinates
-
-### Rank One, and the Two Kinds of Null Element
-
-**The degenerate set** is $Z=\{\zeta:N(\sigma(\zeta))=0\}$, the set where the symbol is not a unit, as in *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*. **In coordinates its definition is one determinant**, and the determinant of a two-by-two matrix has a normal form.
-
-**Proposition (null means rank at most one).** For $\sigma\in\mathbb{B}$, $N(\sigma)=0$ exactly when $\Sigma(\sigma)$ has rank at most one; and for $\sigma\neq0$ the rank is exactly one, so that $\Sigma(\sigma)=uv^{\mathsf T}$ for a pair of nonzero columns $u,v\in\mathbb{C}^2$.
-
-*Proof.* The determinant is the product of the eigenvalues, so it vanishes exactly when one eigenvalue vanishes, which for a two-by-two matrix is the rank-at-most-one condition; a nonzero matrix of rank at most one has rank one, and a rank-one matrix is the product of a column and a row by definition of rank.
-
-**Theorem (the two halves of the degenerate set).** Let $\sigma\neq0$ with $N(\sigma)=0$. Then exactly one of the following holds.
-
-- $\mathrm{tr}\,\sigma=2\sigma_t\neq0$, and $\sigma=(\mathrm{tr}\,\sigma)\,\tilde\Pi$ with $\tilde\Pi$ a nonzero idempotent.
-- $\mathrm{tr}\,\sigma=2\sigma_t=0$, and $\sigma^2=0$: the element is nilpotent.
-
-*Proof.* By Cayley–Hamilton for a two-by-two matrix, $\Sigma^2-(\mathrm{tr}\,\Sigma)\Sigma+(\det\Sigma)e_t=0$; and $\det\Sigma=N(\sigma)=0$, so $\Sigma^2=(\mathrm{tr}\,\Sigma)\Sigma$. If $\mathrm{tr}\,\Sigma\neq0$, the element $\Pi=\Sigma/\mathrm{tr}\,\Sigma$ satisfies $\Pi^2=\Pi$ and is nonzero because $\sigma\neq0$. If $\mathrm{tr}\,\Sigma=0$, the same display reads $\Sigma^2=0$, and a nonzero element whose second power vanishes is nilpotent and is not diagonalisable.
-
-**Remark (this is the correct form of the two halves, and it is cut by the trace).** The degenerate set splits into the nonzero-trace half, where the element is a scalar multiple of an idempotent, and the zero-trace half, where it is nilpotent. **The cut is by $\sigma_t$, which is half the trace, and not by any idempotent.** The reason is structural and is stated in §*What the Central Idempotents Do and Do Not Give*. What the split does give is a complete answer to the question the inversion asks: on the first half the element has one eigenvalue that vanishes and one that does not, and on the second both eigenvalues vanish and the element has no eigenvector basis at all.
-
-**Corollary (the idempotent half carries its projection).** If $\sigma=(\mathrm{tr}\,\sigma)\tilde\Pi$ with $\tilde\Pi^*=\tilde\Pi$, then $\sigma$ has eigenvalues $\mathrm{tr}\,\sigma$ and $0$, the projection onto the surviving part is $\tilde\Pi$, and $\sigma$ acts on $\mathbb{B}$ by left multiplication with image $\mathbb{B}\tilde\Pi$.
-
-*Proof.* $\tilde\Pi^2=\tilde\Pi$ gives $\sigma\tilde\Pi=\sigma$ and $\sigma(e_t-\tilde\Pi)=0$, so the eigenvalues are as stated and the image is contained in $\mathbb{B}\tilde\Pi$; the image is exactly that ideal because $\sigma$ acts as the identity on it up to the scalar.
-
-### The Two-Quaternion Reading
-
-**Definition (the two quaternions of an element).** Write the four complex coordinates of $Q$ as $Q_\mu=a_\mu+ib_\mu$ with $a_\mu,b_\mu$ real, and put
+**Theorem (the identity of an element with its two coefficients).** For every $Q\in\mathbb{B}$,
 
 $$
-q_0=a_te_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z,\qquad q_1=b_te_t+b_x\vec e_x+b_y\vec e_y+b_z\vec e_z ,
+Q^{2}-2Q_tQ+N(Q)e_t=0 .
 $$
 
-so that $Q=q_0+iq_1$ with $q_0,q_1\in\mathbb{H}$ and $i$ the central scalar imaginary.
+*Proof.* Write $Q=Q_t+Q_v$ and expand: $Q^{2}=Q_t^{2}+2Q_tQ_v+Q_v^{2}$. The last term is $-(Q_x^{2}+Q_y^{2}+Q_z^{2})e_t=-(N(Q)-Q_t^{2})e_t$, and substituting $Q_v=Q-Q_t$ in the middle term gives the identity.
 
-**Proposition (the null condition links the two quaternions).** For $Q=q_0+iq_1$,
+**Corollary (the two halves of the degenerate set).** Let $\sigma\neq0$ with $N(\sigma)=0$. Then exactly one of the following holds: either $\sigma_t\neq0$ and $\sigma=2\sigma_t\Pi$ with $\Pi$ a nonzero idempotent, or $\sigma_t=0$ and $\sigma^{2}=0$.
 
-$$
-N(Q)=\lvert q_0\rvert^2-\lvert q_1\rvert^2+2i\langle q_0,q_1\rangle ,
-$$
+*Proof.* The identity reads $\sigma^{2}=2\sigma_t\sigma$ when $N(\sigma)=0$. If $\sigma_t\neq0$, put $\Pi=\sigma/(2\sigma_t)$; then $\Pi^{2}=\sigma^{2}/(4\sigma_t^{2})=2\sigma_t\sigma/(4\sigma_t^{2})=\Pi$, and $\Pi\neq0$ because $\sigma\neq0$. If $\sigma_t=0$ the same display reads $\sigma^{2}=0$.
 
-where $\lvert\cdot\rvert$ is the quaternion norm and $\langle\cdot,\cdot\rangle$ the real inner product of the four coefficients. Hence $Q$ is null exactly when $\lvert q_0\rvert=\lvert q_1\rvert$ and $\langle q_0,q_1\rangle=0$; and then either $q_0=q_1=0$, or $q_0\neq0$ and $q_1=q_0r$ for a real pure unit quaternion $r$, so that
+**Remark (where the cut is made, and how the identity is read).** The identity is the minimal polynomial of $\sigma$ over the commutative algebra it generates, of degree at most two, and **the cut between the two halves is the scalar part, which is half the trace of left multiplication**. On the first half the element is a complex multiple of an idempotent and the two eigenvalues of left multiplication are $2\sigma_t$ and $0$; on the second both eigenvalues vanish. **No central idempotent makes that cut**: a split into two algebras belongs to the split-biquaternion layer and not here.
 
-$$
-Q=q_0\bigl(e_t+ir\bigr),\qquad r^2=-e_t .
-$$
+## The Degenerate Set and the Rank of Left Multiplication
 
-*Proof.* Expand $N(Q)=\sum_\mu(a_\mu+ib_\mu)^2$ into its real and imaginary parts: the real part is $\sum a_\mu^2-\sum b_\mu^2$ and the imaginary part is $2\sum a_\mu b_\mu$. The two vanishing conditions are the two equations of the display. If $q_0\neq0$ the second gives that $r=q_0^{-1}q_1$ has zero real part and norm one, since $\langle q_0,q_1\rangle=0$ and $\lvert q_1\rvert=\lvert q_0\rvert$; and $q_0=0$ forces $\lvert q_1\rvert=0$.
+### The Set, and What Is Quoted From the Sibling Article
 
-**Remark (what the reading does and does not say).** The two quaternions are **not independent**: the null condition is two real equations linking them, and it is the statement that one is obtained from the other by left multiplication by a pure unit. **Neither quaternion may vanish except at the origin**, since $q_0=0$ forces $Q=0$. The reading is nevertheless the right one for a computation, because it exhibits the real dimension of the degenerate set: four parameters in $q_0$ and two in $r$, hence six real dimensions in eight, the codimension two of *The Biquaternion Fourier Transform: Support and Rank*.
-
-### What the Central Idempotents Do and Do Not Give
-
-**Proposition (the algebra has no nontrivial central idempotent).** The only idempotents of $\mathbb{B}$ that commute with every element are $0$ and $e_t$.
-
-*Proof.* A central idempotent generates a two-sided ideal, and a two-sided ideal of a full matrix algebra is $0$ or the whole algebra; the corresponding idempotent is then $0$ or $e_t$.
-
-**Remark (where a split by central idempotents does exist, and why it is not this algebra).** A split into two algebras by central idempotents exists in the **split-biquaternion** layer, whose centre is the split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$: the two central idempotents $\tfrac12(e_t\pm j)$ split it as $\mathbb{H}\oplus\mathbb{H}$, by *Split-Biquaternion Algebra*, §*The Algebra Structure*, and each half is a quaternion algebra. There the null condition separates into one condition per half, and one half may vanish while the other does not. **Nothing of that kind is available in $\mathbb{B}$**, which is simple, and a statement about the two halves of a null biquaternion that invokes central idempotents has imported the split layer. The correct statements for $\mathbb{B}$ are the trace cut of §*Rank One, and the Two Kinds of Null Element* and the two-quaternion reading of §*The Two-Quaternion Reading*, and both are proved above.
-
-## Inversion in Peirce Coordinates
-
-### The Pointwise System
-
-**The transform used here is the left placement**: the symbol acts by left multiplication, and $\widehat{P(D)f}=\sigma_P\hat f$ with the product in $\mathbb{B}$, as in *The Fourier Transform and the Symbol of a Differential Operator*. **The right placement transposes every statement below**, by *The Three Kernel Placements of the Biquaternion Fourier Transform*, and is not written out.
-
-**Theorem (the equation is a family of two-by-two systems).** For $f,g\in L^2(\mathbb{R}^n,\mathbb{B})$ the equation $P(D)f=g$ holds exactly when
+**Definition (the degenerate set and the rank).** For $\sigma\in\mathbb{B}$ let $L_\sigma$ be left multiplication, $X\mapsto\sigma X$, on the eight real dimensions of $\mathbb{B}$, and let $\operatorname{rank}L_\sigma$ be its rank as a real linear map. The **degenerate set** of a symbol is
 
 $$
-\Sigma\bigl(\sigma_P(\zeta)\bigr)\,\Sigma\bigl(\hat f(\zeta)\bigr)=\Sigma\bigl(\hat g(\zeta)\bigr)
+Z=\{\zeta\in\mathbb{R}^n : N(\sigma_P(\zeta))=0\} .
 $$
 
-for almost every $\zeta$, where the product is the matrix product.
+**Proposition (the set is the set of non-units).** $Z=\{\zeta:\sigma_P(\zeta)\ \text{is not a unit}\}=\{\zeta:\det L_{\sigma_P(\zeta)}=0\}$.
 
-*Proof.* The transform is an isometry onto $L^2$ by Plancherel for $\mathbb{B}$-valued functions, quoted from *The Inverse Fourier Transform of a Symbol* with its constant; it intertwines $P(D)$ with the multiplier $\sigma_P$; the coordinates are a multiplicative isomorphism by §*Coordinates, the Product and the Norm*; and a matrix equation holds exactly when its four entries do. **All four statements are pointwise in $\zeta$**, so the equation is equivalent to the displayed system at each frequency separately.
+*Proof.* The first equality is the unit criterion of §*The Unit Criterion*. The second is the identity $\det L_Q=\lvert N(Q)\rvert^{4}$ of *The Fourier Transform and the Symbol of a Differential Operator*, proved there from the regular representation; a determinant vanishes exactly when the map is singular.
 
-**Corollary (the degenerate set is four real equations at each of its points).** At a frequency where $\sigma_P(\zeta)$ is null and nonzero, the range of the pointwise operator has real dimension four in eight, so the system is solvable exactly on a real four-dimensional subspace of the eight coordinates of $\hat g(\zeta)$.
-
-*Proof.* The rank of left multiplication by a nonzero null element is four, by *The Biquaternion Fourier Transform: Support and Rank*; the range is the image, of real dimension four; and a linear system is solvable exactly on the image.
-
-### The Adjugate Off the Degenerate Set
-
-**Theorem (the inverse is the adjugate).** Let $\sigma$ be a unit, with coordinate matrix $\Sigma=\begin{pmatrix}\tilde\sigma_{11}&\tilde\sigma_{12}\\ \tilde\sigma_{21}&\tilde\sigma_{22}\end{pmatrix}$ and determinant $N(\sigma)$. Then
+**Quoted facts, with their source.** From the same article, and used below without recomputation: $\det L_Q=\lvert N(Q)\rvert^{4}$, so that the degree of $\det L_{\sigma_P}$ in $\zeta$ is $dm$ for a symbol of order $m$ in $d=8$ real dimensions; and
 
 $$
-\sigma^{-1}=\frac{1}{N(\sigma)}\Bigl(\tilde\sigma_{22}\tilde\Pi_1-\tilde\sigma_{12}\vec\Upsilon_{12}-\tilde\sigma_{21}\vec\Upsilon_{21}+\tilde\sigma_{11}\tilde\Pi_2\Bigr).
+\operatorname{rank}L_\sigma=
+\begin{cases}
+8, & N(\sigma)\neq0,\\
+4, & N(\sigma)=0,\ \sigma\neq0,\\
+0, & \sigma=0 .
+\end{cases}
 $$
 
-*Proof.* The inverse of a two-by-two matrix is the adjugate divided by the determinant, and the coordinates are multiplicative; the adjugate has entries $\tilde\sigma_{22},-\tilde\sigma_{12},-\tilde\sigma_{21},\tilde\sigma_{11}$ in the order of the four units, and the display is that matrix written in the algebra.
+**Remark (the modulus, and the reason it is a modulus).** The determinant is a real determinant and the fourth power removes the sign of $N$, so the two agree for a real symbol and differ by a sign for a complex one. **The rank statement is the one used below**, and the determinant enters only through the degree count.
 
-**Corollary (the inverse is rational in the frequency, with denominator $N(\sigma)$).** The inverse symbol is a quotient of a polynomial of degree at most $m$ in $\zeta$ by the determinant of degree $dm$, and the inversion off the degenerate set is
+### The Peirce Corners
 
-$$
-f=\mathcal F^{-1}\bigl[\sigma^{-1}\hat g\bigr],\qquad f(x)=\int e^{i\zeta\cdot x}\,\sigma(\zeta)^{-1}\hat g(\zeta)\,d\zeta .
-$$
-
-*Proof.* $\sigma_P$ is a polynomial of degree $m$ in $\zeta$ with coefficients in $\mathbb{B}$; $N(\sigma_P)$ is a polynomial of degree $dm$ by *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*, which computes the degree; the adjugate has entries that are polynomials of degree at most $m$; and the inversion formula is that of *The Fourier Transform and the Symbol of a Differential Operator* applied to the multiplier $\sigma^{-1}$, valid under the integrability of $\sigma^{-1}\hat g$.
-
-**Remark (the degree is not the pole order, and the two are confused in print).** The determinant has degree $dm$ and the inverse has a pole where the determinant vanishes, but **the order of the pole is the multiplicity of the factor and not the degree of the determinant**; that distinction is the subject of *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails* and is not repeated here. What the adjugate adds is the numerator: at a null point of $\sigma$ the adjugate does not vanish, so the pole of the inverse is of the same order as the zero of $N(\sigma)$, and not higher.
-
-### Solvability and the Minimal-Norm Solution
-
-**Theorem (what the degenerate set costs).** Let $\sigma_P$ be the symbol of $P(D)$ and suppose $N(\sigma_P)$ is not identically zero. Then $Z$ has Lebesgue measure zero, and for every $g\in L^2$ there is an $f\in L^2$ with $P(D)f=g$. The solution is not unique, the ambiguity at each point of $Z$ being the four real dimensions of the kernel of left multiplication by $\sigma_P(\zeta)$, and the solution of least norm is
+**Definition (the Peirce decomposition of one idempotent).** Let $\Pi$ be an idempotent, $\Pi^{2}=\Pi$, $\Pi\neq0$, and put $f=e_t-\Pi$, which is an idempotent with $\Pi f=f\Pi=0$ and $\Pi+f=e_t$. Every $X\in\mathbb{B}$ has one expansion
 
 $$
-\hat f(\zeta)=\sigma_P(\zeta)^{+}\,\hat g(\zeta),\qquad f=\mathcal F^{-1}\bigl[\sigma_P^{+}\hat g\bigr],
+X=\Pi X\Pi+\Pi Xf+fX\Pi+fXf ,
 $$
 
-where $\sigma^+$ is the Moore–Penrose inverse of the element, computed in §*The Formulas on the Degenerate Set*.
+whose four terms lie in the four **corners** $\Pi\mathbb{B}\Pi$, $\Pi\mathbb{B}f$, $f\mathbb{B}\Pi$ and $f\mathbb{B}f$.
 
-*Proof.* $N(\sigma_P)$ is a polynomial, real-analytic; if it is not identically zero its zero set has empty interior and measure zero. Off $Z$ the symbol is a unit and $\hat f=\sigma^{-1}\hat g$ solves the equation; on $Z$, a set of measure zero, define $\hat f$ to be zero. The resulting function is in $L^2$, so a solution exists for every $g$. At a point of $Z$ the solutions of the pointwise system differ by the kernel, of real dimension four, and the least-norm choice is the Moore–Penrose solution, which is characterised by lying in the orthogonal complement of the kernel.
+**Proposition (each corner is a complex line).** The diagonal corners are $\Pi\mathbb{B}\Pi=\mathbb{C}\Pi$ and $f\mathbb{B}f=\mathbb{C}f$, and the two mixed corners are complex lines, so that the **Peirce coordinates** of $X$ are four complex numbers.
 
-**Remark (the degenerate set obstructs uniqueness and boundedness, not existence).** This is the point at which the phrase "inversion on the degenerate set" is usually misread. **A set of measure zero cannot obstruct the solvability of an $L^2$ equation**, because the values of $\hat f$ on it are irrelevant to the norm and to the transform. What the set does obstruct is the uniqueness of the solution and the boundedness of the inverse: $\sigma^{+}$ is bounded exactly when $\sigma$ is bounded away from zero, that is, when $\inf_\zeta\lVert\sigma(\zeta)\rVert>0$, which for a symbol of positive order fails at the origin and at every zero of $\sigma$. The genuine obstruction is the case $N(\sigma_P)\equiv0$, treated in §*Inversion When the Symbol Is Nowhere a Unit*.
+*Proof.* A nonzero idempotent of $\mathbb{B}$ is primitive, so $\Pi\mathbb{B}\Pi$ is a division algebra over $\mathbb{C}$ by *Primitive Idempotents and Minimal Left Ideals*, and being finite-dimensional over the algebraically closed field $\mathbb{C}$ it is $\mathbb{C}\Pi$; the same argument gives the other diagonal corner. The corner $\Pi\mathbb{B}f$ is a module over $\Pi\mathbb{B}\Pi=\mathbb{C}\Pi$, hence a complex vector space; it is nonzero, since $\Pi\mathbb{B}f=0$ would give $\Pi\mathbb{B}=\Pi\mathbb{B}\Pi=\mathbb{C}\Pi$ of real dimension two, against $\operatorname{rank}L_\Pi=4$ for the null idempotent $\Pi$; and the real dimension of the two mixed corners together is $8-2-2=4$, so each is one complex line.
 
-**Remark (the adjugate and the Moore–Penrose inverse agree off the degenerate set).** Where $\sigma$ is a unit the two formulas coincide, since $\sigma^{+}=\sigma^{-1}$ there; the two differ only on $Z$, where the adjugate formula has no meaning and the generalised inverse is the only one available. **The inversion is therefore continuous in the symbol away from $Z$**, across which the algebraic inverse blows up and the generalised inverse does not.
+**Remark (how far the word coordinates reaches).** The four numbers are the components in the four lines, they are what the title of the article calls Peirce coordinates, and **they are never written as an array and never multiplied as one**: the product of two elements is read from the Peirce rule, which sends a product of corner elements to the corner named by the two indices, and everything below is stated in the algebra. **No pair of idempotents is preferred**, by *Special Element and Peirce Conventions*, and the one idempotent used in an example is declared where it is used.
 
-## The Exponential on the Degenerate Set
+### The Image and the Kernel on Each Half
 
-### The Three Cases of the Closed Form
-
-**The three closed forms are quoted, not proved here.** They are those of *Biquaternion Elementary Functions*, §*The Closed Form*, with the hypothesis that $\mathbb{C}[S]$ be the span of $e_t$ and a single element, that is, that $S$ be one biquaternion; and they read, with $B^2=S_x^2+S_y^2+S_z^2$ and $\vec U=\vec S/B$,
+**Theorem (the idempotent half).** Let $\sigma=2\sigma_t\Pi$ with $\sigma_t\neq0$ and $\Pi$ a nonzero idempotent. Then
 
 $$
-\exp S=\begin{cases}\exp(S_t)\bigl(\cos B\,e_t+\sin B\,\vec U\bigr), & B^2\neq0,\\[2pt] \exp(S_t)\bigl(e_t+\vec S\bigr), & B^2=0,\ \vec S\neq0,\\[2pt] \exp(S_t)\,e_t, & \vec S=0.\end{cases}
+\operatorname{im}L_\sigma=2\sigma_t\,\Pi\mathbb{B},\qquad \ker L_\sigma=f\mathbb{B},\qquad \mathbb{B}=\operatorname{im}L_\sigma\oplus\ker L_\sigma ,
 $$
 
-**Proposition (each closed form is a unit).** In all three cases $N(\exp S)=\exp(2S_t)$, which is never zero.
+both summands of real dimension four, and $L_\sigma/(2\sigma_t)$ is the idempotent operator $L_\Pi$.
 
-*Proof.* The norm is multiplicative, so $N(\exp S)=\exp(2S_t)N(\exp\vec S)$, and it remains to compute the second factor. In the first case $N(\vec U)=-1$ for a pure unit and the closed form gives $\cos^{2}B+\sin^{2}B=1$. In the second case $\vec S^{2}=0$ and $N(e_t+\vec S)=(e_t+\vec S)(e_t-\vec S)=e_t-\vec S^{2}=e_t$, the conjugate of a pure element being its negative. In the third case the factor is $N(e_t)=1$.
+*Proof.* $\sigma X=2\sigma_t\Pi X$ gives the image, and $\Pi X=0$ is equivalent to $X=fX$, which gives the kernel. The two are complementary because $X=\Pi X+fX$ and the two terms lie in the two subspaces; the dimensions are four each by the quoted rank. Finally $L_\Pi^{2}=L_{\Pi^{2}}=L_\Pi$.
 
-### Why No Nonzero Null Element Is an Exponential
+**Theorem (the nilpotent half).** Let $\sigma\neq0$ with $\sigma^{2}=0$. Then
 
-**Theorem (the degenerate set is outside the image of the exponential).** Let $\sigma\neq0$ with $N(\sigma)=0$. Then there is no $S\in\mathbb{B}$ with $\exp S=\sigma$.
+$$
+\operatorname{im}L_\sigma=\ker L_\sigma=\sigma\mathbb{B},
+$$
 
-*Proof.* The image of the exponential is the group of units, a statement of *Biquaternion Elementary Functions* whose hypothesis is that the element be a biquaternion and whose proof is the surjectivity of the logarithm onto the units; a nonzero null element is not a unit, by the definition of the null set as the complement of the units; so it is not in the image. **The three cases of §*The Three Cases of the Closed Form* give the same conclusion a second way**, and the second way is the informative one: each closed form is a unit, so no value of the closed form can be null.
+both of real dimension four, and $L_\sigma$ is not diagonalisable.
 
-**Corollary (the route through the exponential closes exactly on the degenerate set).** The inverse kernel of the transform is an exponential because the frequency enters it through a unit, and the inversion of *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails* is a residue calculus in the variable that carries that exponential. **At a point where the symbol is not a unit there is no exponential to take a residue of**, and the calculus has no object to act on. This is not a defect of that article; it is the reason the present one works in coordinates instead.
+*Proof.* $\sigma(\sigma X)=\sigma^{2}X=0$ gives $\sigma\mathbb{B}\subseteq\ker L_\sigma$. The image has real dimension four by the quoted rank, and the kernel has real dimension $8-4=4$ by rank and nullity, so the two subspaces coincide. For the last claim, $L_\sigma^{2}=0$ while $L_\sigma\neq0$, so the minimal polynomial is $t^{2}$ and the operator is not diagonalisable.
 
-**Remark (how the three cases sit on the degenerate set, and why none of them reaches it).** The three cases are cut by $B^2$, not by the norm, and their intersections with $Z\setminus\{0\}$ are as follows.
+**Remark (the whole difference between the halves, in one line).** On the idempotent half the image and the kernel are **complementary**, and the operator behaves as a projection after a scalar; on the nilpotent half they **coincide**, and the operator carries the image into the kernel. **That is the precise sense in which the second half is the degenerate one**, and it is read off the product alone.
 
-| Case of the closed form | Condition | Intersection with the null set | Why the closed form misses it |
-|---|---|---|---|
-| $B^2\neq0$ | the vector part is not isotropic | $\sigma=2\sigma_t\tilde\Pi$, one eigenvalue $0$ | $\exp$ of it has eigenvalues $\exp(2\sigma_t)$ and $1$, neither zero |
-| $B^2=0$, $\vec S\neq0$ | the vector part is isotropic and nonzero | $\sigma_t=0$, so $\sigma$ is nilpotent | $\exp$ of a nilpotent is unipotent, hence a unit |
-| $\vec S=0$ | the element is central | $\sigma=0$ only | the scalar exponential never vanishes |
+### The Two-Quaternion Form, and the Dimension of the Set
 
-**Corollary (nilpotence is invisible to the exponential).** For $\vec S\neq0$ with $\vec S^2=0$ and $S_t=0$, the element is nilpotent and $\exp S=e_t+\vec S$ is unipotent: it is a unit, and it is the identity plus the nilpotent. **The exponential therefore maps the nilpotent ray to a line of units and never returns to the null set**, which is the exact sense in which the exponential parametrisation cannot reach the degenerate half on which the inversion has to be done.
+**Proposition (one real quaternion multiplied by a unit).** Write $Q_\mu=a_\mu+ib_\mu$ with $a_\mu,b_\mu$ real and put $q_0=a_\mu e_\mu$, $q_1=b_\mu e_\mu$, so that $Q=q_0+iq_1$ with real quaternions $q_0,q_1$. Then
 
-## The Generalised Inverse
+$$
+N(Q)=\lvert q_0\rvert^{2}-\lvert q_1\rvert^{2}+2i\langle q_0,q_1\rangle ,
+$$
 
-### Three Inverses and Their Axioms
+so $Q$ is null exactly when $\lvert q_0\rvert=\lvert q_1\rvert$ and $\langle q_0,q_1\rangle=0$; and every nonzero null element has the form $Q=q_0(e_t+ir)$ with $r$ a real pure unit, that is $Q=2q_0\Pi_r$ with $\Pi_r=\tfrac12(e_t+ir)$ an idempotent.
 
-**Definition (the Moore–Penrose inverse).** For a linear map between finite-dimensional inner-product spaces the **Moore–Penrose inverse** is the unique map $T^{+}$ satisfying the four Penrose equations
+*Proof.* Expanding $N(Q)=\sum_\mu(a_\mu+ib_\mu)^{2}$ gives the two parts as stated. If $q_0\neq0$ the two conditions give that $r=q_0^{-1}q_1$ is real, pure and of unit norm; and $q_0=0$ forces $q_1=0$. Finally $(e_t+ir)^{2}=e_t+2ir-r^{2}=2(e_t+ir)$, since $r^{2}=-e_t$.
+
+**Remark (the dimension, and the one thing the reading does not say).** The parameters are four in $q_0$ and two in $r$, so the null set has **real dimension six in eight**, the codimension two of *The Fourier Transform and the Symbol of a Differential Operator*. **The reading is a factorisation and not a product decomposition**: $q_0$ and $r$ do not commute in general, and $Q=2q_0\Pi_r$ is a left multiple of an idempotent, not a scalar multiple of one.
+## Inversion in the Algebra
+
+### The Inverse Is the Conjugate Over the Norm
+
+**Corollary (the inversion formula off the set).** Off $Z$ the symbol is a unit and the solution is
+
+$$
+f=\mathcal{F}^{-1}\bigl[\sigma^{-1}\mathcal{F}[g]\bigr],\qquad \sigma^{-1}(\zeta)=\frac{\tilde\sigma_P(\zeta)}{N(\sigma_P(\zeta))} ,
+$$
+
+where $\mathcal{F}$ is the transform of *The Inverse Fourier Transform of a Symbol* and the product is the product in $\mathbb{B}$.
+
+*Proof.* The unit criterion gives the second formula; the first is the inversion formula of *The Fourier Transform and the Symbol of a Differential Operator* applied to the multiplier $\sigma^{-1}$, valid under the integrability of $\sigma^{-1}\mathcal{F}[g]$; and $\mathcal{F}[P(D)f]=\sigma_P\mathcal{F}[f]$ is the intertwining of that article.
+
+**Remark (the numerator is an element, and the denominator is a complex number).** In a coordinate model the same statement reads as an adjugate over a determinant, and the adjugate is an array. **Here the numerator is $\tilde\sigma$, the conjugate of the element**, which is a polynomial in $\zeta$ of degree at most $m$ with coefficients in $\mathbb{B}$, and the denominator is $N(\sigma_P)$, of degree $dm$. **The order of the pole is the multiplicity of the factor in $N(\sigma_P)$ and not the degree of the determinant**; that distinction is the subject of *Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set*, and the numerator contributes no pole at all, since $\tilde\sigma$ does not vanish where $\sigma$ does not.
+
+### What the Set Costs
+
+**Theorem (existence holds, uniqueness and boundedness fail).** Suppose $N(\sigma_P)$ is not identically zero. Then $Z$ has Lebesgue measure zero and for every $g\in L^2$ there is $f\in L^2$ with $P(D)f=g$ almost everywhere. The solution is not unique: at each point of $Z$ the ambiguity is the kernel of $L_{\sigma_P(\zeta)}$, of real dimension four. The solution of least norm is
+
+$$
+\mathcal{F}[f](\zeta)=\sigma_P(\zeta)^{+}\mathcal{F}[g](\zeta) ,
+$$
+
+with $\sigma^{+}$ the Moore–Penrose inverse of §*The Moore–Penrose Inverse*; and the inverse is unbounded whenever $\sigma$ is not bounded away from zero.
+
+*Proof.* $N(\sigma_P)$ is a polynomial, so if it is not identically zero its zero set has empty interior and measure zero. Off $Z$ set $\mathcal{F}[f]=\sigma^{-1}\mathcal{F}[g]$, and on $Z$ set it to zero: the result is in $L^2$ and solves the equation, so a solution exists for every $g$. At a point of $Z$ the solutions differ by the kernel, of real dimension four by the theorems above, and the least-norm choice is the one in the orthogonal complement of the kernel, which is the Moore–Penrose solution. Boundedness fails because $\sigma^{+}=\sigma^{*}/(2\lVert\sigma\rVert^{2})$ grows like $1/\lVert\sigma\rVert$ as $\sigma\to0$.
+
+**Remark (the phrase inversion on the set is usually read wrongly).** **A set of measure zero cannot obstruct the solvability of an $L^2$ equation**, since the values of $\mathcal{F}[f]$ on $Z$ are irrelevant to the norm and to the transform. What the set obstructs is uniqueness and boundedness. **The genuine obstruction is the case $N(\sigma_P)\equiv0$**, treated in §*Inversion When the Symbol Is Nowhere a Unit*.
+
+## Two Generalised Inverses
+
+### The Projection Carried by a Null Symbol
+
+**Definition (the coefficient norm).** For $X\in\mathbb{B}$ put $\lVert X\rVert^{2}=\sum_\mu\lvert X_\mu\rvert^{2}$, the sum of the eight second powers of the moduli, and write $X^{*}=\overline{\tilde X}$ for the star, quaternion conjugation followed by complex conjugation.
+
+**Theorem (a null symbol carries an Hermitian idempotent).** Let $\sigma\neq0$ with $N(\sigma)=0$, written $\sigma=2q_0\Pi_r$ as in §*The Two-Quaternion Form, and the Dimension of the Set*, and put $s=q_0r\tilde q_0/\lvert q_0\rvert^{2}$. Then $s$ is a real pure unit, $\Pi_\sigma=\tfrac12(e_t+is)$ is an Hermitian idempotent, and
+
+$$
+\sigma\sigma^{*}=2\lVert\sigma\rVert^{2}\Pi_\sigma,\qquad \Pi_\sigma\sigma=\sigma,\qquad \operatorname{im}L_{\Pi_\sigma}=\operatorname{im}L_\sigma .
+$$
+
+*Proof.* The element $s$ is the conjugate of the pure unit $r$ by the unit $q_0/\lvert q_0\rvert$, so it is a real pure unit; hence $(e_t+is)^{2}=2(e_t+is)$ and $\Pi_\sigma$ is an idempotent, and it is Hermitian because $i^{*}=-i$ and $s^{*}=-s$ give $\Pi_\sigma^{*}=\Pi_\sigma$. For the product, $\sigma^{*}=\tilde q_0+ir\tilde q_0$, since the conjugate reverses the order and $r$ is real; then
+
+$$
+\sigma\sigma^{*}=2\lvert q_0\rvert^{2}+2iq_0r\tilde q_0=2\lvert q_0\rvert^{2}(e_t+is)=4\lvert q_0\rvert^{2}\Pi_\sigma ,
+$$
+
+and $\lVert\sigma\rVert^{2}=\lvert q_0\rvert^{2}+\lvert q_1\rvert^{2}=2\lvert q_0\rvert^{2}$ gives the first display. Multiplying by $\sigma$ on the right of it and using $\lVert\sigma\rVert^{2}\sigma=2\lvert q_0\rvert^{2}\sigma$ gives $\Pi_\sigma\sigma=\sigma$, and then $\operatorname{im}L_\sigma\subseteq\operatorname{im}L_{\Pi_\sigma}$, with equality of the real dimensions four and four by the quoted rank.
+
+**Corollary (the three products that carry the inverse).** With $\sigma$ null and nonzero,
+
+$$
+\sigma\sigma^{*}\sigma=2\lVert\sigma\rVert^{2}\sigma,\qquad \sigma^{*}\sigma\sigma^{*}=2\lVert\sigma\rVert^{2}\sigma^{*},\qquad (\sigma\sigma^{*})^{*}=\sigma\sigma^{*} .
+$$
+
+*Proof.* The first is the theorem multiplied by $\sigma$ on the right; the second is the star of the first, using that $\lVert\sigma\rVert^{2}$ is real; the third is immediate from the definition of the star.
+
+### The Moore–Penrose Inverse
+
+**Definition (the Moore–Penrose inverse).** For a linear map between finite-dimensional inner-product spaces the **Moore–Penrose inverse** is the unique map $T^{+}$ with
 
 $$
 TT^{+}T=T,\qquad T^{+}TT^{+}=T^{+},\qquad (TT^{+})^{*}=TT^{+},\qquad (T^{+}T)^{*}=T^{+}T ,
@@ -235,89 +210,112 @@ $$
 
 and its existence and uniqueness in that setting are standard and quoted as such.
 
-**Definition (the Drazin inverse).** For a two-by-two matrix $T$ the **Drazin inverse** is the unique matrix $T^{D}$ commuting with $T$ with $T^{D}TT^{D}=T^{D}$ and $T^{k+1}T^{D}=T^{k}$ for all $k$ at least the index of $T$, the index being the least $k$ with $\operatorname{rank}T^{k+1}=\operatorname{rank}T^{k}$.
-
-**Remark (the two inverses answer different questions, and the difference is the star).** The Moore–Penrose inverse uses the star and the inner product, so it is the answer to the least-norm question; the Drazin inverse uses only the product, so it is the answer to the algebraic question, and it is a polynomial in $T$. **On the degenerate set the two diverge**, and they diverge in a way that §*Which Inverse Belongs to Which Question* turns into a statement about the inversion.
-
-### The Formulas on the Degenerate Set
-
-**Theorem (the Moore–Penrose inverse of a null element).** Let $\sigma\neq0$ with $N(\sigma)=0$. Then
+**Theorem (the inverse on the degenerate set).** Let $\sigma\neq0$ with $N(\sigma)=0$. Then the Moore–Penrose inverse of $L_\sigma$ is left multiplication by
 
 $$
-\sigma^{+}=\frac{\sigma^{*}}{\mathrm{tr}(\sigma\sigma^{*})}=\frac{\sigma^{*}}{2\lVert\sigma\rVert_E^{2}} .
+\sigma^{+}=\frac{\sigma^{*}}{2\lVert\sigma\rVert^{2}} .
 $$
 
-*Proof.* In coordinates $\Sigma=uv^{\mathsf T}$ is of rank one by §*Rank One, and the Two Kinds of Null Element*, and $\Sigma^{*}=\bar vu^{*}$. Then $\Sigma\Sigma^{*}\Sigma=\lVert u\rVert^{2}\lVert v\rVert^{2}\Sigma=\mathrm{tr}(\Sigma^{*}\Sigma)\Sigma$ and $\Sigma^{*}\Sigma\Sigma^{*}=\mathrm{tr}(\Sigma^{*}\Sigma)\Sigma^{*}$, because the two scalar factors are the same; dividing by that trace gives the first Penrose equation and the second, and the products $\Sigma\Sigma^{*}$ and $\Sigma^{*}\Sigma$ are Hermitian after the division, which gives the third and the fourth. **The four equations hold in the algebra and not merely on the operator**, since the coordinates are multiplicative. The trace is computed by §*The Star, the Trace and the Hilbert–Schmidt Form*.
+*Proof.* Four equations, each read in the algebra. The first is the corollary above; the second is its star; the third holds because $\sigma\sigma^{*}$ is Hermitian and $2\lVert\sigma\rVert^{2}$ is real; the fourth holds because $(\sigma^{+}\sigma)^{*}=\sigma^{*}\sigma/(2\lVert\sigma\rVert^{2})$ and $\sigma^{*}\sigma$ is Hermitian. **The four hold as identities in $\mathbb{B}$ and not merely on the operator**, since left multiplication is injective.
 
-**Corollary (the two halves in closed form).** On the idempotent half, with $\sigma=c\tilde\Pi$ and $\tilde\Pi=\tilde\Pi^{*}$ an idempotent and $c\in\mathbb{C}^{\times}$, $\sigma^{+}=c^{-1}\tilde\Pi$. On the nilpotent half $\sigma^{+}=\sigma^{*}/\lVert\sigma\rVert_{\mathrm{HS}}^{2}$.
+**Corollary (the two products are the two projections).** On the degenerate set, $\sigma\sigma^{+}=\Pi_\sigma$ is the orthogonal projection onto $\operatorname{im}L_\sigma$, and $\sigma^{+}\sigma$ is the orthogonal projection onto the orthogonal complement of $\ker L_\sigma$.
 
-*Proof.* For the idempotent half, $\sigma\sigma^{*}=\lvert c\rvert^{2}\tilde\Pi$, whose trace is $\lvert c\rvert^{2}$ because a rank-one Hermitian idempotent has trace one; the formula then gives $\sigma^{*}/\lvert c\rvert^{2}=\bar c\tilde\Pi/\lvert c\rvert^{2}=c^{-1}\tilde\Pi$. On the nilpotent half the trace is the Hilbert–Schmidt norm of the element, and nothing cancels.
+*Proof.* The first is the theorem above. For the second, $\sigma^{+}\sigma=\sigma^{*}\sigma/(2\lVert\sigma\rVert^{2})$ is Hermitian and idempotent by the same two computations, and its kernel is $\ker L_\sigma$.
 
-**Remark (the idempotent must be Hermitian, and this is not a formality).** For a **non-Hermitian** idempotent the formula gives $\tilde\Pi^{*}/\mathrm{tr}(\tilde\Pi\tilde\Pi^{*})$, which is not $\tilde\Pi$; the Moore–Penrose inverse of an oblique projection is not the projection. **The pair $\tilde\Pi_1,\tilde\Pi_2$ of the frame is Hermitian and the mixed units are exchanged by the star**, so the two objects that occur in the frame are of the good kind; a computation that uses an arbitrary idempotent read off a symbol is not.
+**Remark (the inverse is not the algebraic inverse off the set, and the two must not be confused).** For the unit $\sigma=2e_t+i\vec e_x$ the algebraic inverse is $\tilde\sigma/3=(2e_t-i\vec e_x)/3$ while the element $\sigma^{*}/(2\lVert\sigma\rVert^{2})$ is $\sigma/10$. **The second is the Moore–Penrose inverse of the operator and not an inverse of the element**, and on the degenerate set the distinction disappears, since there the first does not exist and the second does.
 
-**Theorem (the Drazin inverse on the two halves).** On the idempotent half, with $\sigma=c\tilde\Pi$ and $\tilde\Pi^2=\tilde\Pi$ and $c\neq0$, $\sigma^{D}=c^{-1}\tilde\Pi$; on the nilpotent half $\sigma^{D}=0$.
+### The Drazin Inverse
 
-*Proof.* For the idempotent half, $\sigma\sigma^{D}=\tilde\Pi=\sigma^{D}\sigma$ and $\sigma^{2}\sigma^{D}=\sigma$, so the index is one and the defining equations hold. For the nilpotent half, $\sigma^{2}=0$ and the index is two; the third requirement at $k=2$ reads $0=\sigma^{2}$, which holds, and at $k=1$ reads $0=\sigma$, which forces $\sigma^{D}=0$ because $\sigma^{D}$ commutes with $\sigma$ and $\sigma\sigma^{D}\sigma=\sigma$ would give $\sigma=0$.
+**Definition (the Drazin inverse).** For $T$ with index $k$, the least $k$ with $\operatorname{rank}T^{k+1}=\operatorname{rank}T^{k}$, the **Drazin inverse** $T^{D}$ is the unique map commuting with $T$ with $T^{D}TT^{D}=T^{D}$ and $T^{k+1}T^{D}=T^{k}$.
 
-### Which Inverse Belongs to Which Question
+**Theorem (the Drazin inverse on the two halves).** On the idempotent half, with $\sigma=c\Pi$, $\Pi^{2}=\Pi$ and $c\neq0$, $\sigma^{D}=\Pi/c$, of index one. On the nilpotent half $\sigma^{D}=0$, of index two.
 
-**Theorem (the two inverses agree on the idempotent half and differ on the nilpotent half).** For $\sigma=c\tilde\Pi$ with $\tilde\Pi$ Hermitian and $c\neq0$, $\sigma^{+}=\sigma^{D}=\tilde\Pi/c$. For $\sigma$ nilpotent and nonzero, $\sigma^{+}=\sigma^{*}/2\lVert\sigma\rVert_E^{2}\neq0$ while $\sigma^{D}=0$.
+*Proof.* For the first, $\sigma^{2}\sigma^{D}=c^{2}\Pi\cdot\Pi/c=c\Pi=\sigma$, so the index is one and the defining equations hold with $\sigma^{D}$ commuting with $\sigma$. For the second, $\sigma^{2}=0$ gives index two, since $\operatorname{rank}L_{\sigma}=4$ and $\operatorname{rank}L_{\sigma}^{2}=0$; the element $\sigma^{D}=0$ satisfies the three equations at $k=2$, and uniqueness of the Drazin inverse gives the claim.
 
-*Proof.* The first statement is the two corollaries above. For the second, $\sigma^{+}$ is a nonzero multiple of $\sigma^{*}$, which is nonzero, and $\sigma^{D}=0$; so the two differ, and they differ by the whole of the nilpotent direction.
+**Remark (which inverse answers which question).** The Moore–Penrose inverse uses the star, so it answers the least-norm question and its multiplier is $\sigma^{*}/2\lVert\sigma\rVert^{2}$, which reflects the frequency whenever the star does. **The Drazin inverse uses only the product, so it answers the algebraic question and its multiplier is again a function of the symbol alone**; the price is that it kills the nilpotent direction. **The star of the symbol at $\zeta$ is the symbol of the operator with starred coefficients at $-\zeta$**, so a Moore–Penrose inversion reflects the argument and a Drazin inversion does not; the choice is a choice of purpose and not a correction of one by the other.
+## The Exponential on the Degenerate Set
 
-**Corollary (which to use for the inversion).** The Moore–Penrose inverse is the one that selects the solution of least norm, so it is the one that gives an inversion bounded by $\lVert\sigma^{+}\rVert$ and preserves the $L^2$ estimate of §*Solvability and the Minimal-Norm Solution*. The Drazin inverse is the one that commutes with $\sigma$ and is therefore the one for which the inverted multiplier is again a function of the symbol alone, with no conjugate and no reflection of the frequency.
+### The Three Closed Forms
 
-**Remark (the reflection is not a defect).** The star of an element is not a function of the element alone, and in the frequency variable it reflects the argument, because the star of $P(D)$ is $P(-D)$ with conjugated coefficients. **A Drazin inversion avoids that reflection at the price of killing the nilpotent direction**, so the choice is a choice of purpose: a least-norm solution, or a multiplier algebraic in the symbol.
+**The three closed forms are quoted, not proved here.** They are those of *Biquaternion Elementary Functions*, §*The Closed Form*, in the form of its table; the quadratic identity of §*The Quadratic Identity and the Two Halves* is what makes the spectral reduction apply to every $S\in\mathbb{B}$, since $\mathbb{C}[S]$ is then spanned by $e_t$ and $S$ itself. With $B^{2}=S_x^{2}+S_y^{2}+S_z^{2}$ and $\vec U=\vec S/B$ they read
+
+$$
+\exp S=\begin{cases}\exp(S_t)\bigl(\cos B\,e_t+\sin B\,\vec U\bigr), & B^{2}\neq0,\\[2pt] \exp(S_t)\bigl(e_t+\vec S\bigr), & B^{2}=0,\ \vec S\neq0,\\[2pt] \exp(S_t)\,e_t, & \vec S=0.\end{cases}
+$$
+
+**Proposition (each closed form is a unit).** In all three cases $N(\exp S)=\exp(2S_t)$, which is never zero.
+
+*Proof.* The norm is multiplicative, so $N(\exp S)=\exp(2S_t)N(\exp\vec S)$ and it remains to compute the second factor. In the first case $N(\vec U)=-1$ for a pure unit and the closed form gives $\cos^{2}B+\sin^{2}B=1$. In the second case $\vec S^{2}=0$, so $N(e_t+\vec S)=(e_t+\vec S)(e_t-\vec S)=e_t$, the conjugate of a pure element being its negative. In the third case the factor is $N(e_t)=1$.
+
+### No Nonzero Null Element Is an Exponential
+
+**Theorem (the degenerate set is outside the image of the exponential).** Let $\sigma\neq0$ with $N(\sigma)=0$. Then there is no $S\in\mathbb{B}$ with $\exp S=\sigma$.
+
+*Proof.* The image of the exponential is the group of units, a statement of *Biquaternion Elementary Functions* whose hypothesis is that the element be one biquaternion and whose proof is the surjectivity of the logarithm onto the units. A nonzero null element is not a unit by the unit criterion, so it is not in the image. The three closed forms give the same conclusion a second way, each of them producing a unit.
+
+**Remark (why the inversion is done in the algebra).** The inverse kernel of the transform is an exponential because the frequency enters it through a unit, and the inversion of *Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set* is a residue calculus in the variable that carries that exponential. **At a point where the symbol is not a unit there is no exponential to take a residue of**, so the calculus has no object to act on; that is not a defect of that article but the reason this one works with the element and its conjugate.
+
+### The Three Cases Against the Set
+
+**Remark (how the three cases sit, and why none of them reaches the set).** The cases are cut by $B^{2}$ and not by the norm, and their intersections with $Z\setminus\{0\}$ are as follows.
+
+| Case of the closed form | Condition | Intersection with the null set | Why the closed form misses it |
+|---|---|---|---|
+| $B^{2}\neq0$ | the vector part is not isotropic | $\sigma=2\sigma_t\Pi$, one eigenvalue $0$ | $\exp$ of it has eigenvalues $\exp(2\sigma_t)$ and $1$, neither zero |
+| $B^{2}=0$, $\vec S\neq0$ | the vector part is isotropic and nonzero | $\sigma_t=0$, so $\sigma^{2}=0$ | $\exp$ of a nilpotent is unipotent, hence a unit |
+| $\vec S=0$ | the element is central | $\sigma=0$ only | the scalar exponential never vanishes |
+
+**Corollary (the nilpotent ray is carried to a line of units).** For $\vec S\neq0$ with $\vec S^{2}=0$ and $S_t=0$ the element $\vec S$ is nilpotent and $\exp\vec S=e_t+\vec S$ is unipotent: a unit, the identity plus the nilpotent. **The exponential therefore never returns to the nilpotent half**, which is the exact sense in which its parametrisation cannot reach the half on which the inversion has to be done.
 
 ## Inversion When the Symbol Is Nowhere a Unit
 
 ### The Two Model Families
 
-**The case that is genuinely obstructed is $N(\sigma_P)\equiv0$.** Then the symbol is null at every frequency and the pointwise system is singular everywhere; the set is no longer of measure zero, and the range is a proper subspace at every point.
+**The case that is genuinely obstructed is $N(\sigma_P)\equiv0$.** The symbol is then null at every frequency, the pointwise system is singular everywhere, and the range is a proper subspace at every point.
 
-**Theorem (a fixed null coefficient).** Let $S\neq0$ be null and let $\sigma_P(\zeta)=\mu(\zeta)S$ with $\mu$ a scalar polynomial that vanishes only at $\zeta=0$. Then $P(D)f=g$ has a solution exactly when
+**Theorem (a fixed null coefficient).** Let $S\neq0$ be null and $\sigma_P(\zeta)=\mu(\zeta)S$ with $\mu$ a scalar polynomial vanishing only at $\zeta=0$. Then $P(D)f=g$ has a solution exactly when
 
 $$
 SS^{+}g=g ,
 $$
 
-that is, exactly when $g(x)$ lies in the fixed real subspace $\mathrm{im}L_S$ for almost every $x$; and the solution of least norm is $f=\mathcal F^{-1}\bigl[\mu^{+}S^{+}\hat g\bigr]$.
+that is, exactly when $g(x)$ lies in the image of left multiplication by $S$ for almost every $x$; and the solution of least norm is $f=\mathcal{F}^{-1}\bigl[\mu^{+}S^{+}\mathcal{F}[g]\bigr]$.
 
-*Proof.* The pointwise system reads $\mu(\zeta)\Sigma(S)\hat F=\hat G$. For $\zeta\neq0$ the scalar is nonzero, so solvability is $\hat G\in\mathrm{im}L_{\Sigma(S)}$, which is equivalent to $\Sigma(S)\Sigma(S)^{+}\hat G=\hat G$ because the latter is the orthogonal projection onto the image. Both sides are constant in $\zeta$ except through $\hat G$, so the condition is a condition on $g$ alone, and it is exactly $SS^{+}g=g$. The least-norm solution at each frequency is $\mu^{+}\Sigma(S)^{+}\hat G$, and $\mu^{+}$ is $1/\mu$ off the origin and $0$ at the origin.
+*Proof.* The pointwise system reads $\mu(\zeta)L_S\mathcal{F}[f]=\mathcal{F}[g]$. For $\zeta\neq0$ the scalar is nonzero, so solvability is $\mathcal{F}[g]\in\operatorname{im}L_S$, which is equivalent to $SS^{+}\mathcal{F}[g]=\mathcal{F}[g]$ because $SS^{+}$ is the orthogonal projection onto that image by §*The Moore–Penrose Inverse*. Both sides are constant in $\zeta$ except through $\mathcal{F}[g]$, so the condition is a condition on $g$ alone, and it is exactly $SS^{+}g=g$. The least-norm solution at each frequency is $\mu^{+}S^{+}\mathcal{F}[g]$, and $\mu^{+}$ is $1/\mu$ off the origin and $0$ at the origin.
 
-**Example (the nilpotent family).** Let $N_0=\vec e_x+i\vec e_y$, which is nilpotent, and $P(D)=N_0\Delta$. Its symbol is $\sigma_P(\zeta)=-\lvert\zeta\rvert^{2}N_0$, and $N(\sigma_P)=-\lvert\zeta\rvert^{2}N(N_0)=0$ at every $\zeta$. In coordinates $N_0$ is the matrix with a single entry, so $\mathrm{im}L_{N_0}$ is the set of matrices whose columns lie in one fixed complex line, a real four-dimensional subspace; and the solvability condition $N_0N_0^{+}g=g$ reads $N_0^{*}g=0$ because $N_0^{+}$ is a nonzero multiple of $N_0^{*}$.
+**Example (the nilpotent family).** Let $N_0=\vec e_x+i\vec e_y$, which is nilpotent, and $P(D)=N_0\Delta$. Its symbol is $\sigma_P(\zeta)=-\lvert\zeta\rvert^{2}N_0$, null at every $\zeta$, so $\operatorname{im}L_{N_0}$ is a real four-dimensional subspace at every frequency and the condition is that $g$ take values in it. The projection is computed from the formulas above:
 
 $$
-N_0=\vec e_x+i\vec e_y,\qquad N_0^{2}=0,\qquad P(D)f=N_0\,\Delta f .
+N_0^{+}=-\frac{N_0^{*}}{4},\qquad N_0N_0^{+}=\tfrac12\bigl(e_t+i\vec e_z\bigr).
 $$
 
-**Example (the idempotent family).** Let $P(D)=\tilde\Pi_1\Delta$. Its symbol is $-\lvert\zeta\rvert^{2}\tilde\Pi_1$, null at every frequency, and the solvability condition is $\tilde\Pi_1 g=g$: **the data must take values in the left ideal $\mathbb{B}\tilde\Pi_1$ at every point**. The solution of least norm is $f=-\Delta^{-1}\tilde\Pi_1 g$, and the whole of the inversion is the ordinary Laplacian inversion followed by a projection.
+**Example (the idempotent family).** Let $P(D)=\Pi\Delta$ with $\Pi=\tfrac12(e_t+i\vec e_z)$, an Hermitian idempotent. Its symbol is $-\lvert\zeta\rvert^{2}\Pi$, null everywhere, and by §*The Moore–Penrose Inverse* the generalised inverse of the element is $\Pi$ itself, so the condition is $\Pi g=g$: **the data must take values in the image of left multiplication by $\Pi$ at every point**. The solution of least norm is $f=-\Delta^{-1}\Pi g$, the ordinary inversion followed by a projection.
 
-**Remark (the two conditions are one condition).** In both families the condition is $SS^{+}g=g$, and the two differ only in what the projection is: $N_0N_0^{+}$ projects onto a minimal left ideal reached through a nilpotent, and $\tilde\Pi_1$ projects onto a minimal left ideal reached through an idempotent. **The trace cut of §*Rank One, and the Two Kinds of Null Element* is therefore visible in the inversion as the difference between a projection $PP^{*}$ and a projection $P$**, which is the same difference as the one between the two generalised inverses of §*Which Inverse Belongs to Which Question*.
+**Remark (the two examples are one computation).** In both the condition is $SS^{+}g=g$, and the two differ only in which four-dimensional subspace the projection selects: **the nilpotent one reaches its subspace through the second power of the element, the idempotent one is already the projection.** That is the same difference as the one between image-equals-kernel and image-complementary-kernel in §*The Image and the Kernel on Each Half*.
 
 ### What Remains Open
 
-**The open case, stated precisely.** Let $\sigma_P$ be a polynomial symbol with $N(\sigma_P)\equiv0$ and with the null element $\sigma_P(\zeta)$ **not** of the form $\mu(\zeta)S$ for a fixed null $S$. Then the range at each frequency is a four-dimensional subspace depending on $\zeta$, and the solvability condition is that $\hat g(\zeta)$ lie in that subspace for almost every $\zeta$. **The following are open here and are labelled as such.**
+**The open case, stated precisely.** Let $N(\sigma_P)\equiv0$ with the null element $\sigma_P(\zeta)$ **not** of the form $\mu(\zeta)S$ for a fixed null $S$. The image of $L_{\sigma_P(\zeta)}$ is then a four-dimensional subspace depending on $\zeta$, and solvability requires $\mathcal{F}[g](\zeta)$ to lie in it for almost every $\zeta$. **The following are open here.**
 
-- Whether the pointwise conditions are simultaneously satisfiable by the transform of a single function, that is, whether the range of $P(D)$ is closed in $L^2$.
-- Whether the spectral projection onto the range varies measurably in $\zeta$ and whether the resulting family defines a bounded projection on $L^2$.
-- The description of the kernel of $P(D)$ when the null element varies, which is infinite-dimensional in the two model families and is not described in general.
+- Whether the pointwise conditions are simultaneously satisfiable by the transform of one function, that is, whether the range of $P(D)$ is closed in $L^2$.
+- Whether the projection $\sigma_P(\zeta)\sigma_P(\zeta)^{+}$ onto that image varies measurably in $\zeta$, and whether the resulting family defines a bounded projection on $L^2$.
+- The kernel of $P(D)$ when the null element varies, which is infinite-dimensional in the two model families and undescribed in general.
 
-**Remark (why the constant-coefficient case is not a formality).** In the two model families the projection is constant, so the pointwise conditions assemble into one condition on $g$ and the inversion reduces to a scalar operator after a fixed projection. **When the null element varies, so does the projection, and a family of projections that does not commute with the multiplier need not integrate to a projection on $L^2$**; that is the obstacle, not a gap in technique.
+**Remark (why the constant-coefficient case is not a formality).** In the two families the projection is constant, so the pointwise conditions assemble into one condition on $g$. **When the null element varies, so does the projection, and a family of projections that does not commute with the multiplier need not integrate to a projection on $L^2$**; that is the obstacle, not a gap in technique.
 
-**Remark (what the frame does and does not settle).** Every statement about a single frequency becomes two-by-two linear algebra, settled completely above. **It does not turn a family of frequencies into one matrix problem**: the coordinates of $\sigma_P(\zeta)$ vary with $\zeta$, and the projectors $SS^{+}$ at the null points need not be the coordinate projectors of the frame. The frame serves the pointwise algebra; it is not a diagonalisation of the operator.
+**Remark (what the algebra does and does not settle).** Every statement about a single frequency is a statement about one element and its conjugate, settled completely above. **It does not turn a family of frequencies into one problem in the algebra**: the elements $\sigma_P(\zeta)$ vary with $\zeta$, and the projections at the null frequencies need not be the idempotents met above.
 
 ## Summary
 
-The Peirce frame of the pair $\tilde\Pi_1,\tilde\Pi_2$ turns the biquaternion algebra into the two-by-two complex matrices: the four units multiply as matrix units, the coordinates are multiplicative, the star is the conjugate transpose, the trace is twice the scalar part, and the algebraic norm is the determinant. **In that frame the whole of the pointwise inversion is two-by-two linear algebra.**
+The inversion is carried out in the algebra, on elements and their conjugates. **The conjugate gives the inverse and the norm gives the denominator**: for $\sigma$ a unit, $\sigma^{-1}=\tilde\sigma/N(\sigma)$, and the quadratic identity $\sigma^{2}-2\sigma_t\sigma+N(\sigma)e_t=0$ cuts the degenerate set into two halves, a nonzero-trace half where the element is twice its scalar part times an idempotent and a zero-trace half where the second power vanishes.
 
-The degenerate set is the zero set of the determinant, and on it a nonzero symbol has rank one. It splits by the trace into two halves: a nonzero-trace element is a scalar multiple of an idempotent, with one eigenvalue zero and one not, and a zero-trace element is nilpotent, with both eigenvalues zero. **The split is cut by the scalar part, which is half the trace, and by nothing else**; the algebra has no nontrivial central idempotent, and a split into two quaternion halves belongs to the split-biquaternion layer. The two-quaternion reading gives the same set in another form: $Q=q_0+iq_1$ is null exactly when $q_1=q_0r$ with $r$ a real pure unit.
+On the idempotent half the image and the kernel of left multiplication are complementary, of four real dimensions each; on the nilpotent half they coincide, and the operator is not diagonalisable. **That coincidence is the whole of the degeneracy**, and it is read off the product. In Peirce coordinates the four components of an element are four complex numbers in four complex lines, and the corners are never assembled into an array.
 
-Off the degenerate set the inverse is the adjugate divided by the determinant, and the inversion is the Fourier integral of the inverse symbol. On it the Moore–Penrose inverse is $\sigma^{*}/\mathrm{tr}(\sigma\sigma^{*})$, one formula covering both halves, reducing to $\tilde\Pi/c$ on the Hermitian idempotent half and to the normalised conjugate on the nilpotent half. **When the determinant is not identically zero the degenerate set obstructs uniqueness and boundedness but not existence**, because it has measure zero; the least-norm solution is the generalised-inverse one, and the algebraic inverse blows up there while the generalised inverse stays bounded.
+The generalised inverse on the set is a single formula, $\sigma^{+}=\sigma^{*}/(2\lVert\sigma\rVert^{2})$, valid on both halves, and it is the Moore–Penrose inverse of left multiplication: its two products $\sigma\sigma^{+}$ and $\sigma^{+}\sigma$ are the orthogonal projections onto the image and onto the orthogonal complement of the kernel. The Drazin inverse answers the other question and kills the nilpotent direction. **When the norm is not identically zero the set costs uniqueness and boundedness but not existence**, because it has measure zero.
 
-The route through the exponential closes before it reaches the set. Each of the three closed forms produces a unit, so no nonzero null element is an exponential of anything, and a residue calculus has no object at a null frequency. **That holds in all three cases at once, and it is why the inversion is done in coordinates.**
+The route through the exponential closes before it reaches the set: each of the three closed forms produces a unit, so no nonzero null element is an exponential, and a residue calculus has no object at a null frequency.
 
-When the determinant vanishes identically the obstruction is real: the range is proper at every frequency, the solvability condition is $SS^{+}g=g$, and the inversion is a scalar inversion after a fixed projection. That is proved for the two families in which the null element is fixed up to a scalar; the case of a null element varying with the frequency is open, with the failure of the pointwise projections to integrate named as the obstacle.
+When the norm vanishes identically the obstruction is real: the range is proper at every frequency, the condition is $SS^{+}g=g$, and the inversion is a scalar inversion after a fixed projection. That is proved for the two families whose null element is fixed up to a scalar; a null element varying with the frequency is open, with the failure of the pointwise projections to integrate named as the obstacle.
 
 ## Summary of Notation
 
@@ -327,54 +325,48 @@ When the determinant vanishes identically the obstruction is real: the range is 
 | $e_t$ | The scalar unit |
 | $\vec e_x,\vec e_y,\vec e_z$ | The three vector units, each with second power $-e_t$ |
 | $i$ | The central scalar imaginary |
-| $\tilde\Pi_1,\tilde\Pi_2$ | The complete pair $\tfrac12(e_t\pm i\vec e_z)$, Hermitian idempotents |
-| $\vec\Upsilon_{12},\vec\Upsilon_{21}$ | The mixed units $\tfrac12(i\vec e_x\mp\vec e_y)$, nilpotent |
-| $E_{ij}$ | The four units, a Peirce basis of $\mathbb{B}$ |
-| $Q_{ij}$ | A Peirce coordinate of $Q$, the entry of $\Sigma(Q)$ at row $i$ and column $j$, left index first; the element is written $Q$ here, not $\tilde Q$ |
-| $\Sigma(Q)$ | The coordinate matrix with entries $Q_{ij}$ |
-| $u,v$ | The two columns of a rank-one coordinate matrix |
-| $\star$, $Q^{*}$ | The star of the algebra, quaternion conjugation followed by complex conjugation |
-| $\mathrm{tr}$ | The matrix trace, equal to $2Q_t$ |
-| $\langle\cdot,\cdot\rangle_{\mathrm{HS}}$ | The Hilbert–Schmidt form $\mathrm{tr}(X^{*}Y)$ |
-| $\lVert\cdot\rVert_E$ | The coefficient norm on the eight real coordinates |
-| $\lVert\cdot\rVert_{\mathrm{HS}}$ | The norm of the Hilbert–Schmidt form |
-| $N$ | The algebraic norm, equal to $\det\Sigma$ |
+| $d$ | The real dimension of the algebra, $8$ |
+| $Q_t$ | The scalar part of $Q$; $Q_v$ its vector part |
+| $\tilde Q$ | The conjugate, $Q_t-Q_v$, an anti-automorphism |
+| $Q^{*}$ | The star, $\overline{\tilde Q}$, quaternion conjugation followed by complex conjugation |
+| $N$ | The algebraic norm $Q\tilde Q$, central and $\mathbb{C}$-valued, equal to $\det L_Q$ up to the fourth power |
+| $\lVert X\rVert$ | The coefficient norm, the root of the sum of the eight second powers of the moduli |
+| $L_\sigma$ | Left multiplication, $X\mapsto\sigma X$ |
+| $\det L_\sigma$ | The determinant of the regular representation, equal to $\lvert N(\sigma)\rvert^{4}$ |
+| $\Pi$ | A nonzero idempotent, and $f=e_t-\Pi$ its complement |
+| $\Pi_\sigma$ | The Hermitian idempotent carried by a null $\sigma$, $\tfrac12(e_t+is)$ |
+| $\Pi_r$ | The idempotent $\tfrac12(e_t+ir)$ carried by a pure unit $r$ |
+| $s$ | The real pure unit $q_0r\tilde q_0/\lvert q_0\rvert^{2}$ |
 | $q_0,q_1$ | The two real quaternions of $Q=q_0+iq_1$ |
-| $r$ | A real pure unit quaternion, $r^2=-e_t$ |
-| $j$ | The split central unit with $j^{2}=e_t$, used once in a boundary remark |
-| $\mathbb{B}_{\mathrm{spl}}$ | The split-biquaternion algebra, mentioned only as a boundary |
-| $P(D)$ | A constant-coefficient differential operator with coefficients in $\mathbb{B}$ |
-| $\Delta$ | The Laplacian, used as the scalar factor of the two model families |
+| $r$ | A real pure unit quaternion, $r^{2}=-e_t$ |
+| $Z$ | The degenerate set, $\{\zeta:N(\sigma_P(\zeta))=0\}$ |
+| $P(D)$ | A constant-coefficient operator with coefficients in $\mathbb{B}$ |
 | $\sigma_P$, $\sigma$ | Its symbol, $\sum a_\alpha(i\zeta)^\alpha$ |
 | $m$ | The total order of $P(D)$ |
-| $d$ | The real dimension of the algebra, $8$ for $\mathbb{B}$ |
 | $\zeta$ | The frequency, in $\mathbb{R}^n$ |
-| $\omega$ | The real frequency in one variable, used once for the kernel $W(t,\omega)$ |
 | $n$ | The number of variables |
-| $Z$ | The degenerate set, $\{\zeta:N(\sigma_P(\zeta))=0\}$ |
+| $\mathcal{F}$, $\mathcal{F}^{-1}$ | The biquaternion Fourier transform and its inverse, left placement |
 | $f,g$ | The unknown and the data, $L^2$ functions with values in $\mathbb{B}$ |
-| $\hat f,\hat g$ | Their transforms |
-| $\mathcal F$, $\mathcal F^{-1}$ | The biquaternion Fourier transform and its inverse, left placement |
-| $L_\sigma$ | Left multiplication by $\sigma$ |
-| $\sigma^{+}$ | The Moore–Penrose inverse of the element $\sigma$ |
-| $\sigma^{D}$ | The Drazin inverse of the element $\sigma$ |
-| $T^{+}$, $T^{D}$ | The Moore–Penrose and Drazin inverses of a linear map or a matrix |
-| $S$, $N_0$ | A fixed nonzero null element used as a model coefficient |
+| $\sigma^{+}$ | The Moore–Penrose inverse, $\sigma^{*}/(2\lVert\sigma\rVert^{2})$ on the set |
+| $\sigma^{D}$ | The Drazin inverse |
+| $T^{+}$, $T^{D}$ | The Moore–Penrose and Drazin inverses of a linear map |
+| $k$ | The index of a linear map, the least $k$ with $\operatorname{rank}T^{k+1}=\operatorname{rank}T^{k}$ |
+| $S$, $N_0$ | Fixed nonzero null elements used as model coefficients |
 | $\mu$ | A scalar polynomial multiplier in the model families |
-| $B$ | The value with $B^2=S_x^2+S_y^2+S_z^2$ |
-| $\vec U$ | The axis $\vec S/B$ when $B^2\neq0$ |
+| $\Delta$ | The Laplacian, the scalar factor of the two families |
+| $B$ | The value with $B^{2}=S_x^{2}+S_y^{2}+S_z^{2}$ in the closed forms |
+| $\vec U$ | The normalised vector part $\vec S/B$ when $B^{2}\neq0$ |
 | $\mathbb{H}$ | The real quaternion algebra |
-| $\lvert\cdot\rvert$ | The quaternion norm on $q_0$ and $q_1$, and the modulus of a complex frequency |
-| $\langle q_0,q_1\rangle$ | The real inner product of the coefficients of two quaternions |
+| $\lvert\cdot\rvert$ | The quaternion norm on $q_0,q_1$; the modulus on $\mathbb{C}$ |
+| $\langle q_0,q_1\rangle$ | The real inner product of the four coefficients |
 
 ## Further Reading
 
-- *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*, for the symbol, the block form of left multiplication and the determinant whose zero set is inverted here.
-- *The Biquaternion Fourier Transform: Support and Rank*, for the rank four on the null set, the two annihilators and the codimension of the cone; those numbers are used here, not recomputed.
-- *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, for the residue inversion in a plane of the root, which is the route that closes at the degenerate set.
-- *Biquaternion Elementary Functions*, for the three closed forms of the exponential and for the image of the exponential, both quoted here with hypotheses.
-- *Special Element and Peirce Conventions*, for the Peirce vocabulary, the case rule of the layer, and the two mixed units whose index assignment is fixed here by computation.
-- *The Biquaternion Fourier Transform and the Two Quadratic Forms*, for the positive definite form and the isotropic norm, and for why the two must not be identified; the trace form of §*The Star, the Trace and the Hilbert–Schmidt Form* is the form of that article up to the constant computed here.
-- *The Three Kernel Placements of the Biquaternion Fourier Transform*, for the placement of the kernel, which is fixed to the left here and which transposes every formula of §*Inversion in Peirce Coordinates*.
-- *The Inverse Fourier Transform of a Symbol*, for Plancherel with its constant, used once and quoted.
-- *The Fourier Transform and the Symbol of a Differential Operator*, for the correspondence between the operator and its symbol, and for the inversion formula off the degenerate set.
+- *The Fourier Transform and the Symbol of a Differential Operator*, for the operator and its symbol, the determinant $\lvert N\rvert^{4}$ of the regular representation, the three values of the rank, and the codimension of the null cone.
+- *The Inverse Fourier Transform of a Symbol*, for the transform and its glyph, for Plancherel with its constant, and for the distinction between the pole order and the degree.
+- *Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set*, for the residue inversion in a plane of the root, which is the route that closes before the degenerate set.
+- *Biquaternion Elementary Functions*, for the three closed forms of the exponential and for the image of the exponential, both quoted with hypotheses.
+- *The Three Kernel Placements of the Biquaternion Fourier Transform*, for the left placement, which transposes every formula of §*Inversion in the Algebra*.
+- *Special Element and Peirce Conventions*, for the Peirce vocabulary and for the statement that no pair of idempotents is preferred.
+- *Primitive Idempotents and Minimal Left Ideals* and *Off-Diagonal Peirce Components and Noncentral Idempotents*, for the division property of a diagonal corner and the product rule of the corners.
+- *Norm and Unitary Conventions* and *Product and Form Conventions*, for the forms of the algebra and their letters, and for why the positive definite form and the isotropic norm must not be identified.

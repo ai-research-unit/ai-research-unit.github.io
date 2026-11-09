@@ -216,10 +216,10 @@ The mass term is a multiple of the identity on the two slots and cannot move bet
 
 ### The determinant
 
-On a plane wave the two lines are the block matrix with $\ell_{-i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and the determinant of that matrix with $-k_m$ on the diagonal is
+On a plane wave the two lines are the block matrix with $\ell_{i\tilde K_{\Phi}}$ and $\ell_{i\tilde K_{\Phi}^{\natural}}$ off the diagonal, where $\ell_M$ is left multiplication by $M$, and the determinant of that matrix with $-k_m$ on the diagonal is
 
 $$
-\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2}\right)
+\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2}\right)
 =\left(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2-k_m^{2}\right)^4 ,
 $$
 
@@ -260,8 +260,8 @@ The identities were recomputed before they were written. The algebra multiplicat
 | rank and kernel of $\ell_{-i\tilde K_{\Phi}}$ at five null wave covectors | rank $2$, kernel $2$ (exact) |
 | the same off the cone, at $k=(2,1,0,0)$ | rank $4$ |
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
-| $\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-\Box$ on the eight slots | $1.8\times10^{-15}$ |
-| $\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2}\right)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
+| $\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-\Box$ on the eight slots | $1.8\times10^{-15}$ |
+| $\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2}\right)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
 | the elimination, $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of the two lines, $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2})$, is $16$.
