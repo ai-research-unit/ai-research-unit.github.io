@@ -99,12 +99,12 @@ $$</p>
 <p>Three facts are used below, and each is transcribed from the standard theory rather than re-derived.</p>
 <p><strong>Divergence and volume.</strong> The sum of the exponents is the average rate of change of the volume element,</p>
 <p>$$
-\sum_\eta \lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\left|\det D\xi_{\mathrm{flw},r'_{t}}\right| = \left\langle \nabla\cdot f\right\rangle ,
+\sum_k \lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\left|\det D\xi_{\mathrm{flw},r'_{t}}\right| = \left\langle \nabla\cdot f\right\rangle ,
 $$</p>
 <p>where $f$ is the vector field of the flow. For a Hamiltonian flow the divergence vanishes, the flow is volume-preserving, and the exponents come in pairs $\pm\lambda$ with the total zero. For a dissipative flow the sum is negative and the volume contracts.</p>
 <p><strong>Pesin's formula.</strong> For a smooth flow with an invariant measure, the Kolmogorov–Sinai entropy equals the sum of the positive exponents,</p>
 <p>$$
-h_{\rm KS} = \sum_{\lambda_\eta >0}\lambda_k .
+h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k .
 $$</p>
 <p>This is the precise sense in which positive Lyapunov exponents are the rate of <em>information production</em> of a chaotic flow: they are the rate at which the flow generates new distinctions.</p>
 <p><strong>Two-dimensional Hamiltonian flows are integrable.</strong> On a two-dimensional symplectic manifold the Hamiltonian is the only independent invariant, its level sets are curves, and the motion is periodic or quasi-periodic on them. Every Lyapunov exponent of such a flow vanishes. For a Hamiltonian flow, chaos — and with it a positive exponent — requires a phase space of dimension four or more: in two dimensions the energy surface is one-dimensional, so the motion is periodic or quasi-periodic and every exponent vanishes. The restriction to Hamiltonian flows matters: a dissipative flow need not pair its exponents, and three dimensions already suffice for chaos there.</p>
@@ -177,7 +177,7 @@ $$</p>
 $$</p>
 <p>The zero exponent is the pointer axis, along which the state is unchanged; the two negative exponents are the transverse directions, in which distinctions decay at rate $\Gamma$. The sum of the exponents gives the volume contraction,</p>
 <p>$$
-\sum_\eta\lambda_k = -2\Gamma = \frac{d}{dr'_t}\log\det L(r'_t),
+\sum_k\lambda_k = -2\Gamma = \frac{d}{dr'_t}\log\det L(r'_t),
 $$</p>
 <p>so the Bloch ball shrinks in volume at rate $2\Gamma$ and the state is driven onto the pointer diameter.</p>
 <h3 id="the-biquaternion-norm-exponent">The Biquaternion-Norm Exponent</h3>
@@ -211,7 +211,7 @@ $$</p>
 <p>$$
 \frac{d\mathcal{S}}{dr'_t} = -\mathrm{artanh}\,r \cdot \frac{d r}{dr'_t},
 $$</p>
-<p>and $dr/dr'_t$ is the rate of the tangent flow along the radius, which is a weighted average of the exponents: since $r = |\vec r(r'_t)|$ and $\partial/\partial R_i r = \vec{u_r}_i$, with $\vec u_r = \vec r(r'_t)/r(r'_t)$ the <strong>instantaneous</strong> direction, the chain rule gives $dr/dr'_t = r\sum_\eta\lambda_k\vec{u_r}_k^2$ in the dephasing case, so the weights are the instantaneous squared components of $\vec u_r$, and the result is the formula above. The information loss of the flow is therefore the negative exponents <strong>weighted by how much of the state lies in the directions they contract</strong>, not the bare sum of the exponents. The two are different objects: the bare sum $\sum_\eta\lambda_k = -2\Gamma$ is the volume contraction, a constant of the semigroup and independent of the state, while the weighted sum $\sum_\eta\lambda_k\vec{u_r}_k^2 = -\Gamma(\vec{u_r}_1^2+\vec{u_r}_2^2)$, in the frame above, whose first two directions are transverse to the pointer axis, is state-dependent, is carried entirely by the directions with negative exponents, and vanishes on the pointer axis, where the weights of the contracting pair are zero.</p>
+<p>and $dr/dr'_t$ is the rate of the tangent flow along the radius, which is a weighted average of the exponents: since $r = |\vec r(r'_t)|$ and $\partial/\partial R_i r = \vec{u_r}_i$, with $\vec u_r = \vec r(r'_t)/r(r'_t)$ the <strong>instantaneous</strong> direction, the chain rule gives $dr/dr'_t = r\sum_k\lambda_k\vec{u_r}_k^2$ in the dephasing case, so the weights are the instantaneous squared components of $\vec u_r$, and the result is the formula above. The information loss of the flow is therefore the negative exponents <strong>weighted by how much of the state lies in the directions they contract</strong>, not the bare sum of the exponents. The two are different objects: the bare sum $\sum_k\lambda_k = -2\Gamma$ is the volume contraction, a constant of the semigroup and independent of the state, while the weighted sum $\sum_k\lambda_k\vec{u_r}_k^2 = -\Gamma(\vec{u_r}_1^2+\vec{u_r}_2^2)$, in the frame above, whose first two directions are transverse to the pointer axis, is state-dependent, is carried entirely by the directions with negative exponents, and vanishes on the pointer axis, where the weights of the contracting pair are zero.</p>
 <h2 id="positive-exponents-where-they-cannot-come-from">Positive Exponents: Where They Cannot Come From</h2>
 <p>The framework's linear dynamics has no positive exponent, and it is worth being precise about why, and about what would be needed.</p>
 <p><strong>Contraction forbids them for channels.</strong> The trace-distance contractivity of completely positive trace-preserving maps gives $\sigma_1(L(r'_t))\le1$ and hence $\lambda_k\le0$ for every exponent, without exception. A hypothetical positive exponent would require a map that increases the trace distance, and no completely positive trace-preserving map does. A positive exponent therefore cannot be manufactured from a channel, however the channel is chosen; the loss of information is forced.</p>
@@ -220,7 +220,7 @@ $$</p>
 <p>The last point locates the boundary precisely. Positive Lyapunov exponents are a property of a <strong>nonlinear</strong> flow on a <strong>sufficiently large</strong> phase space; the framework's single-qubit informational sector is linear and small, and its information loss is therefore contraction rather than chaos. A nonlinear Hamiltonian on a larger algebra, or on the four-dimensional material sector, can in principle have positive exponents, but that is a statement about the particular Hamiltonian, not about the biquaternion algebra. The algebra supplies the biquaternion norm with which the exponents are measured; it does not supply the nonlinearity. By Pesin's formula the Kolmogorov–Sinai entropy of every flow considered here is zero, so the framework's linear classical dynamics generates no information by chaos — a point to keep distinct from the entropy it produces by coarse-graining.</p>
 <h2 id="what-is-derived-and-what-is-imported">What Is Derived and What Is Imported</h2>
 <p><strong>Derived from the algebra.</strong> The invariance of the biquaternion norm and the trace pairing under rotor conjugation, and therefore the vanishing of every Lyapunov exponent of a reversible flow — this is proved directly from the multiplicativity of the biquaternion norm, not assumed; the affine Bloch action of a channel semigroup and the identification of its exponents with the singular values of $L(r'_t)$; the dephasing spectrum $\{0,-\Gamma,-\Gamma\}$ and the volume contraction rate $2\Gamma$; the relation between the decay of the quadratic biquaternion norm and the vector exponent, including the exact factor of two between them; the identity $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$; and the entropy production rate of the dephasing semigroup. The numerical checks use the four-complex-coefficient representation of $\mathbb{B}$ and a transverse tangent vector, that is, a superposition-level object rather than a single plane wave.</p>
-<p><strong>Imported from standard dynamical-systems theory.</strong> The definition of the Lyapunov exponent and the multiplicative ergodic theorem; the divergence identity $\sum_\eta\lambda_k = \langle\nabla\cdot f\rangle_{*}$; Pesin's formula $h_{\rm KS} = \sum_{\lambda_\eta >0}\lambda_k$; the integrability of two-dimensional Hamiltonian flows; and the trace-distance contractivity of completely positive trace-preserving maps. These are transcribed as standard.</p>
+<p><strong>Imported from standard dynamical-systems theory.</strong> The definition of the Lyapunov exponent and the multiplicative ergodic theorem; the divergence identity $\sum_k\lambda_k = \langle\nabla\cdot f\rangle_{*}$; Pesin's formula $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$; the integrability of two-dimensional Hamiltonian flows; and the trace-distance contractivity of completely positive trace-preserving maps. These are transcribed as standard.</p>
 <p><strong>Not supplied.</strong> The framework does not derive the dephasing rate $\Gamma$; it does not select which channel is realised; it has no positive exponent and therefore no chaos in its linear sector; and it makes no prediction that differs from the standard Lyapunov analysis of a two-level system. What it supplies is the geometric quantity — the biquaternion norm — in terms of which the exponents and the entropy production are one accounting.</p>
 <h2 id="summary">Summary</h2>
 <p>The Lyapunov exponent of a tangent vector of the informational sector is measured by the sector's biquaternion norm,</p>
@@ -321,7 +321,7 @@ $$</p>
 <td>Dephasing Lyapunov spectrum</td>
 </tr>
 <tr>
-<td>$\sum_\eta\lambda_k = -2\Gamma$</td>
+<td>$\sum_k\lambda_k = -2\Gamma$</td>
 <td>Volume contraction rate</td>
 </tr>
 <tr>
@@ -333,7 +333,7 @@ $$</p>
 <td>Entropy production rate (instantaneous $r_\perp$)</td>
 </tr>
 <tr>
-<td>$h_{\rm KS} = \sum_{\lambda_\eta >0}\lambda_k$</td>
+<td>$h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$</td>
 <td>Pesin's formula (standard)</td>
 </tr>
 <tr>

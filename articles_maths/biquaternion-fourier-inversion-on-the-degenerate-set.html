@@ -92,17 +92,17 @@ $$</p>
 <p><em>Proof.</em> Each identity is a product of two elements written out in the four coordinates. The products reduce to the quaternion products of the units: $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, with a minus sign on the reversed order, and $i$ central. For instance $\tilde\Pi_1\vec\Upsilon_{12}=\tfrac14(i\vec e_x-\vec e_y+i\vec e_z\vec e_x-i\vec e_z\vec e_y)=\tfrac14(i\vec e_x-\vec e_y+i\vec e_y+i\vec e_x)=\tfrac12(i\vec e_x-\vec e_y)=\vec\Upsilon_{12}$, and $\vec\Upsilon_{12}\vec\Upsilon_{21}=\tfrac14(i\vec e_x-\vec e_y)(i\vec e_x+\vec e_y)=\tfrac14(-\vec e_t-\vec e_z+\vec e_z+\vec e_t)$... the two cross terms cancel and the two diagonal terms give $-\tfrac14+\tfrac14$ on the vector part and $\tfrac14+\tfrac14$ on the scalar part, that is $\tfrac12(e_t+i\vec e_z)=\tilde\Pi_1$. The remaining identities are the same computation with the units permuted.</p>
 <p><strong>Remark (what a wrong assignment costs, and why the determinant does not detect it).</strong> With the other sign assignment each product comes out as half the expected unit, so the product rule fails by the factor two, while the determinant formula still holds, because a uniform rescaling of two units multiplies the determinant by a constant. <strong>A check of the determinant alone therefore passes with the wrong frame</strong>, and the eigenvalues read from it are wrong. Every identity above was checked one by one.</p>
 <h3 id="coordinates-the-product-and-the-norm">Coordinates, the Product and the Norm</h3>
-<p><strong>Definition (Peirce coordinates).</strong> For $Q\in\mathbb{B}$ the four complex numbers $\tilde Q_{ij}$ are defined by</p>
+<p><strong>Definition (Peirce coordinates).</strong> For $Q\in\mathbb{B}$ the four complex numbers $Q_{ij}$ are defined by</p>
 <p>$$
-Q=\tilde Q_{11}\tilde\Pi_1+\tilde Q_{12}\vec\Upsilon_{12}+\tilde Q_{21}\vec\Upsilon_{21}+\tilde Q_{22}\tilde\Pi_2 ,
+Q=Q_{11}\tilde\Pi_1+Q_{12}\vec\Upsilon_{12}+Q_{21}\vec\Upsilon_{21}+Q_{22}\tilde\Pi_2 ,
 $$</p>
-<p>and $\Sigma(Q)$ is the two-by-two complex matrix with entries $\tilde Q_{ij}$, the left index first.</p>
+<p>and $\Sigma(Q)$ is the two-by-two complex matrix with entries $Q_{ij}$, the left index first.</p>
 <p><strong>Theorem (the coordinates are a matrix representation).</strong> The map $Q\mapsto\Sigma(Q)$ is an isomorphism of real algebras from $\mathbb{B}$ onto $M_2(\mathbb{C})$, and</p>
 <p>$$
 \Sigma(QR)=\Sigma(Q)\Sigma(R),\qquad \Sigma(Q^*)=\Sigma(Q)^{*},\qquad N(Q)=\det\Sigma(Q).
 $$</p>
 <p>Consequently the spectrum of $Q$ is the spectrum of $\Sigma(Q)$, and $Q$ is a unit exactly when $\Sigma(Q)$ is invertible.</p>
-<p><em>Proof.</em> The four units of §<em>The Frame and Its Units</em> are a basis: they are linearly independent by inspection of their coordinates, and $\mathbb{B}$ has real dimension eight, which is the real dimension of four complex parameters. On that basis the product rule $E_{ij}E_{jq}=E_{iq}$ is the matrix product rule, so the map is multiplicative; it is additive and real-linear by construction, and injective and surjective by the dimension count. For the star, $\tilde\Pi_i^*=\tilde\Pi_i$ because $\vec e_z$ is reversed twice by the two conjugations of the star, and $\vec\Upsilon_{12}^*=\vec\Upsilon_{21}$ by the same computation with one reversal; these are the conjugate-transpose relations of the four units, and multiplicativity extends them. For the determinant, $\det\Sigma=\tilde Q_{11}\tilde Q_{22}-\tilde Q_{12}\tilde Q_{21}$ is multiplicative and agrees with $N$ on the four units and on sums, and both are quadratic forms on the same eight real coordinates, so they agree everywhere.</p>
+<p><em>Proof.</em> The four units of §<em>The Frame and Its Units</em> are a basis: they are linearly independent by inspection of their coordinates, and $\mathbb{B}$ has real dimension eight, which is the real dimension of four complex parameters. On that basis the product rule $E_{ij}E_{jq}=E_{iq}$ is the matrix product rule, so the map is multiplicative; it is additive and real-linear by construction, and injective and surjective by the dimension count. For the star, $\tilde\Pi_i^*=\tilde\Pi_i$ because $\vec e_z$ is reversed twice by the two conjugations of the star, and $\vec\Upsilon_{12}^*=\vec\Upsilon_{21}$ by the same computation with one reversal; these are the conjugate-transpose relations of the four units, and multiplicativity extends them. For the determinant, $\det\Sigma=Q_{11}Q_{22}-Q_{12}Q_{21}$ is multiplicative and agrees with $N$ on the four units and on sums, and both are quadratic forms on the same eight real coordinates, so they agree everywhere.</p>
 <p><strong>Remark (the matrix model of the earlier article is this matrix, read with the indices exchanged).</strong> The model $\mathsf M(Q)=\begin{pmatrix}Q_t+iQ_z&Q_y+iQ_x\\-Q_y+iQ_x&Q_t-iQ_z\end{pmatrix}$ of <em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em> sends $\tilde\Pi_1$ to $E_{22}$ and not to $E_{11}$. <strong>The two matrices are similar, by the matrix that exchanges the two indices</strong>, so the determinant and the spectrum agree and the individual entries do not. A statement about $N$ may be carried from one to the other without care; a statement about a coordinate, an eigenvector or a Peirce index may not.</p>
 <h3 id="the-star-the-trace-and-the-hilbertschmidt-form">The Star, the Trace and the Hilbert–Schmidt Form</h3>
 <p><strong>Definition (the trace and the Hilbert–Schmidt form).</strong> For $X,Y\in\mathbb{B}$ put $\mathrm{tr}\,X=\tilde X_{11}+\tilde X_{22}$ and $\langle X,Y\rangle_{\mathrm{HS}}=\mathrm{tr}(X^*Y)$, a positive definite Hermitian form on the eight real coordinates.</p>
@@ -316,12 +316,12 @@ $$</p>
 <td>The four units, a Peirce basis of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde Q_{ij}$</td>
-<td>A Peirce coordinate of $Q$, left index first</td>
+<td>$Q_{ij}$</td>
+<td>A Peirce coordinate of $Q$, the entry of $\Sigma(Q)$ at row $i$ and column $j$, left index first; the element is written $Q$ here, not $\tilde Q$</td>
 </tr>
 <tr>
 <td>$\Sigma(Q)$</td>
-<td>The coordinate matrix with entries $\tilde Q_{ij}$</td>
+<td>The coordinate matrix with entries $Q_{ij}$</td>
 </tr>
 <tr>
 <td>$u,v$</td>
@@ -464,7 +464,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>, for the symbol, the block form of left multiplication and the determinant whose zero set is inverted here.</li>
-<li><em>The Biquaternion Fourier Transform: Support and Rank</em>, for the rank four on the null set, the two annihilators, and the codimension of the cone; the present article uses those numbers and does not recompute them.</li>
+<li><em>The Biquaternion Fourier Transform: Support and Rank</em>, for the rank four on the null set, the two annihilators and the codimension of the cone; those numbers are used here, not recomputed.</li>
 <li><em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>, for the residue inversion in a plane of the root, which is the route that closes at the degenerate set.</li>
 <li><em>Biquaternion Elementary Functions</em>, for the three closed forms of the exponential and for the image of the exponential, both quoted here with hypotheses.</li>
 <li><em>Special Element and Peirce Conventions</em>, for the Peirce vocabulary, the case rule of the layer, and the two mixed units whose index assignment is fixed here by computation.</li>
