@@ -84,6 +84,7 @@ $$</p>
 <p>$$
 \tilde\Pi_1=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad \tilde\Pi_2=\tfrac12\bigl(e_t-i\vec e_z\bigr),\qquad \vec\Upsilon_{12}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad \vec\Upsilon_{21}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr).
 $$</p>
+<p><strong>The pair is the Peirce pair of a root of one.</strong> With $\tilde{Ζ}=i\vec e_z$, a pure root of $1$ in the sense of <em>Biquaternion Continuous Harmonic Analysis</em>, the two idempotents are $\tilde\Pi_1=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_2=\tfrac12(e_t-\tilde{Ζ})$, so the frame below is the frame $\Pi_\pm(\tilde{Ζ})$ of <em>Special Element and Peirce Conventions</em>, at one particular root; the root is fixed here once, and every formula below is read at that root.</p>
 <p><strong>The two mixed units are the $\vec\Upsilon_\pm$ of <em>Special Element and Peirce Conventions</em></strong>, §<em>The Biquaternion Peirce Convention</em>, where the assignment of a sign to an index is not fixed. <strong>The assignment above is the one that makes the matrix-unit identities hold</strong>, and it is the reverse of the alphabetical reading: a computation, not a convention, checked below.</p>
 <p><strong>Proposition (the four units are matrix units).</strong> With $E_{11}=\tilde\Pi_1$, $E_{12}=\vec\Upsilon_{12}$, $E_{21}=\vec\Upsilon_{21}$ and $E_{22}=\tilde\Pi_2$,</p>
 <p>$$
@@ -251,12 +252,12 @@ $$</p>
 <h2 id="inversion-when-the-symbol-is-nowhere-a-unit">Inversion When the Symbol Is Nowhere a Unit</h2>
 <h3 id="the-two-model-families">The Two Model Families</h3>
 <p><strong>The case that is genuinely obstructed is $N(\sigma_P)\equiv0$.</strong> Then the symbol is null at every frequency and the pointwise system is singular everywhere; the set is no longer of measure zero, and the range is a proper subspace at every point.</p>
-<p><strong>Theorem (a fixed null coefficient).</strong> Let $S\neq0$ be null and let $\sigma_P(\zeta)=\rho(\zeta)S$ with $\rho$ a scalar polynomial that vanishes only at $\zeta=0$. Then $P(D)f=g$ has a solution exactly when</p>
+<p><strong>Theorem (a fixed null coefficient).</strong> Let $S\neq0$ be null and let $\sigma_P(\zeta)=\mu(\zeta)S$ with $\mu$ a scalar polynomial that vanishes only at $\zeta=0$. Then $P(D)f=g$ has a solution exactly when</p>
 <p>$$
 SS^{+}g=g ,
 $$</p>
-<p>that is, exactly when $g(x)$ lies in the fixed real subspace $\mathrm{im}L_S$ for almost every $x$; and the solution of least norm is $f=\mathcal F^{-1}\bigl[\rho^{+}S^{+}\hat g\bigr]$.</p>
-<p><em>Proof.</em> The pointwise system reads $\rho(\zeta)\Sigma(S)\hat F=\hat G$. For $\zeta\neq0$ the scalar is nonzero, so solvability is $\hat G\in\mathrm{im}L_{\Sigma(S)}$, which is equivalent to $\Sigma(S)\Sigma(S)^{+}\hat G=\hat G$ because the latter is the orthogonal projection onto the image. Both sides are constant in $\zeta$ except through $\hat G$, so the condition is a condition on $g$ alone, and it is exactly $SS^{+}g=g$. The least-norm solution at each frequency is $\rho^{+}\Sigma(S)^{+}\hat G$, and $\rho^{+}$ is $1/\rho$ off the origin and $0$ at the origin.</p>
+<p>that is, exactly when $g(x)$ lies in the fixed real subspace $\mathrm{im}L_S$ for almost every $x$; and the solution of least norm is $f=\mathcal F^{-1}\bigl[\mu^{+}S^{+}\hat g\bigr]$.</p>
+<p><em>Proof.</em> The pointwise system reads $\mu(\zeta)\Sigma(S)\hat F=\hat G$. For $\zeta\neq0$ the scalar is nonzero, so solvability is $\hat G\in\mathrm{im}L_{\Sigma(S)}$, which is equivalent to $\Sigma(S)\Sigma(S)^{+}\hat G=\hat G$ because the latter is the orthogonal projection onto the image. Both sides are constant in $\zeta$ except through $\hat G$, so the condition is a condition on $g$ alone, and it is exactly $SS^{+}g=g$. The least-norm solution at each frequency is $\mu^{+}\Sigma(S)^{+}\hat G$, and $\mu^{+}$ is $1/\mu$ off the origin and $0$ at the origin.</p>
 <p><strong>Example (the nilpotent family).</strong> Let $N_0=\vec e_x+i\vec e_y$, which is nilpotent, and $P(D)=N_0\Delta$. Its symbol is $\sigma_P(\zeta)=-\lvert\zeta\rvert^{2}N_0$, and $N(\sigma_P)=-\lvert\zeta\rvert^{2}N(N_0)=0$ at every $\zeta$. In coordinates $N_0$ is the matrix with a single entry, so $\mathrm{im}L_{N_0}$ is the set of matrices whose columns lie in one fixed complex line, a real four-dimensional subspace; and the solvability condition $N_0N_0^{+}g=g$ reads $N_0^{*}g=0$ because $N_0^{+}$ is a nonzero multiple of $N_0^{*}$.</p>
 <p>$$
 N_0=\vec e_x+i\vec e_y,\qquad N_0^{2}=0,\qquad P(D)f=N_0\,\Delta f .
@@ -264,7 +265,7 @@ $$</p>
 <p><strong>Example (the idempotent family).</strong> Let $P(D)=\tilde\Pi_1\Delta$. Its symbol is $-\lvert\zeta\rvert^{2}\tilde\Pi_1$, null at every frequency, and the solvability condition is $\tilde\Pi_1 g=g$: <strong>the data must take values in the left ideal $\mathbb{B}\tilde\Pi_1$ at every point</strong>. The solution of least norm is $f=-\Delta^{-1}\tilde\Pi_1 g$, and the whole of the inversion is the ordinary Laplacian inversion followed by a projection.</p>
 <p><strong>Remark (the two conditions are one condition).</strong> In both families the condition is $SS^{+}g=g$, and the two differ only in what the projection is: $N_0N_0^{+}$ projects onto a minimal left ideal reached through a nilpotent, and $\tilde\Pi_1$ projects onto a minimal left ideal reached through an idempotent. <strong>The trace cut of §<em>Rank One, and the Two Kinds of Null Element</em> is therefore visible in the inversion as the difference between a projection $PP^{*}$ and a projection $P$</strong>, which is the same difference as the one between the two generalised inverses of §<em>Which Inverse Belongs to Which Question</em>.</p>
 <h3 id="what-remains-open">What Remains Open</h3>
-<p><strong>The open case, stated precisely.</strong> Let $\sigma_P$ be a polynomial symbol with $N(\sigma_P)\equiv0$ and with the null element $\sigma_P(\zeta)$ <strong>not</strong> of the form $\rho(\zeta)S$ for a fixed null $S$. Then the range at each frequency is a four-dimensional subspace depending on $\zeta$, and the solvability condition is that $\hat g(\zeta)$ lie in that subspace for almost every $\zeta$. <strong>The following are open here and are labelled as such.</strong></p>
+<p><strong>The open case, stated precisely.</strong> Let $\sigma_P$ be a polynomial symbol with $N(\sigma_P)\equiv0$ and with the null element $\sigma_P(\zeta)$ <strong>not</strong> of the form $\mu(\zeta)S$ for a fixed null $S$. Then the range at each frequency is a four-dimensional subspace depending on $\zeta$, and the solvability condition is that $\hat g(\zeta)$ lie in that subspace for almost every $\zeta$. <strong>The following are open here and are labelled as such.</strong></p>
 <ul>
 <li>Whether the pointwise conditions are simultaneously satisfiable by the transform of a single function, that is, whether the range of $P(D)$ is closed in $L^2$.</li>
 <li>Whether the spectral projection onto the range varies measurably in $\zeta$ and whether the resulting family defines a bounded projection on $L^2$.</li>
@@ -436,7 +437,7 @@ $$</p>
 <td>A fixed nonzero null element used as a model coefficient</td>
 </tr>
 <tr>
-<td>$\rho$</td>
+<td>$\mu$</td>
 <td>A scalar polynomial multiplier in the model families</td>
 </tr>
 <tr>
