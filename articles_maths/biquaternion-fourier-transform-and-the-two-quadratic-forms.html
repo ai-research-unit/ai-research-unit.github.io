@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Fourier Transform and the Two Quadratic Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-fourier-transform-and-the-two-quadratic-forms"><strong>The Biquaternion Fourier Transform and the Two Quadratic Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries two quadratic forms that agree in nothing but their domain, and this article separates them. The first is definite and carries the topology; the second is multiplicative and decides invertibility. <strong>No single form can do both</strong>, because the algebra has zero divisors, and the whole of the biquaternion Fourier analysis depends on which one a formula is using.</p>
+<p><strong>The two forms, first sight.</strong> On $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the two are</p>
+<p>$$
+H(\tilde Q)=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2},\qquad N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2} .
+$$</p>
+<p>The first is real and positive definite on the eight real coordinates; the second is complex-valued, central, and multiplicative. The corpus of <em>Norm and Unitary Conventions</em> calls them the Hermitian norm and the quaternionic norm, and it gives them the letters $H$ and $N$; the other two brackets of that article, the plain $P$ and the Krein $\mathrm{Kr}$, appear below only in the table of §<em>The Four Brackets</em>.</p>
+<p><strong>What is proved.</strong> That $H$ is positive definite and is the real part of a trace form (§<em>The Definite Form</em>). That $N$ is complex-valued and central, that its realified signature is $(4,4)$, and that its zero set is the union of the origin with the cone of zero divisors, of real dimension six in eight (§<em>The Multiplicative Form</em>). That no form is both definite and multiplicative (§<em>Two Forms, Two Roles</em>). That the polarised form of $N$ is the quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, so that the two <em>bilinear</em> forms are $\mathrm{Re}\,H$ and $\langle\cdot,\cdot\rangle_{\natural}$ and not $H$ and $N$ (§<em>The Polarised Norm Is the Quaternionic Form</em>). That one derivative of a homogeneous symbol of degree $m$ is the polarised form at one slot, multiplied by $m$, so the derivative determines the form exactly when $m=2$ (§<em>The Gap of One Derivative</em>). And that $\lvert N\rvert\le H$ always, with equality exactly when the matrix model has equal singular values, so the ratio ranges over the closed interval from $0$ to $1$ and both ends are attained (§<em>The Two Forms in the Transform</em>).</p>
+<p><strong>The trap, stated at once.</strong> The two forms do not live on the same object. $H$ and $N$ are functions on the algebra; $\sigma_P$ is a function on the frequency space $\mathbb{R}^n$; and the only bridge between them is the substitution of a frequency into the algebra, which needs the root $\rho$ and the convention of the transform. <strong>A formula that polarises the symbol on one side and composes forms on the other will be wrong by a factor, and sometimes by more than a factor</strong>, and §<em>The Composition of Forms</em> computes exactly how much.</p>
+<p><strong>Boundaries.</strong> The symbol, its zero set and the block determinant are <em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>; the rank of the symbol on the null set is <em>The Biquaternion Fourier Transform: Support and Rank</em>; the reciprocal and its poles are <em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>; the general theory of the four brackets and their norms is <em>Product and Form Conventions</em> and <em>Norm and Unitary Conventions</em>. This article assumes all of them and adds only the comparison of the two forms and the polarisation of the symbol.</p>
+<h2 id="the-two-forms-and-their-letters">The Two Forms and Their Letters</h2>
+<h3 id="the-definite-form">The Definite Form</h3>
+<p><strong>Definition (the Hermitian form and its real part).</strong> For $\tilde Q,\tilde R\in\mathbb{B}$ the <strong>Hermitian form</strong> is</p>
+<p>$$
+H(\tilde Q,\tilde R)=\mathrm{Sc}\bigl(\tilde Q\,\tilde R^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu\,\overline{R_\mu} ,
+$$</p>
+<p>where the star is the composite of the quaternion conjugation and the complex conjugation, and $H(\tilde Q)=H(\tilde Q,\tilde Q)$. Its real part is written $\mathrm{Re}\,H$.</p>
+<p><strong>Proposition (the real part is a trace form).</strong> For all $\tilde Q,\tilde R\in\mathbb{B}$,</p>
+<p>$$
+\mathrm{Re}\,H(\tilde Q,\tilde R)=\tfrac12\,\mathrm{Re}\,\operatorname{tr}\bigl(\mathsf M(\tilde Q)\mathsf M(\tilde R)^{*}\bigr),
+$$</p>
+<p>where $\mathsf M$ is the matrix model $\mathbb{B}\to M_2(\mathbb{C})$. Consequently $\mathrm{Re}\,H$ is a real inner product, and $H(\tilde Q)=\tfrac12\lVert\mathsf M(\tilde Q)\rVert^{2}$ in the Hilbert–Schmidt norm.</p>
+<p><em>Proof.</em> In the model, $\mathsf M(\tilde Q)=\begin{pmatrix}Q_t+iQ_z&Q_y+iQ_x\\-Q_y+iQ_x&Q_t-iQ_z\end{pmatrix}$ and the star of the algebra corresponds to the conjugate transpose of the matrix. The diagonal entries of $\mathsf M(\tilde Q)\mathsf M(\tilde R)^{*}$ sum to $\lvert Q_t+iQ_z\rvert^{2}$-type terms; expanding the four entries gives $\operatorname{tr}=\sum_\mu Q_\mu\overline{R_\mu}+\sum_\mu Q_\mu\overline{R_\mu}=2H(\tilde Q,\tilde R)$, since each of the four coordinates appears in exactly two entries. Taking real parts gives the identity, and the Hilbert–Schmidt statement is the case $\tilde R=\tilde Q$.</p>
+<p><strong>Proposition (the definite form is positive definite, and its signature is $(8,0)$).</strong> $\mathrm{Re}\,H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ is a sum of eight terms $q_\mu^{2}$ and $q'_\mu{}^{2}$ in the real coordinates, and it vanishes only at $\tilde Q=0$.</p>
+<p><em>Proof.</em> Write $Q_\mu=q_\mu+iq'_\mu$ with real $q_\mu,q'_\mu$; then $\lvert Q_\mu\rvert^{2}=q_\mu^{2}+q'_\mu{}^{2}$, and the total is the sum of the eight terms $q_\mu^{2}$ and $q'_\mu{}^{2}$ over the eight real coordinates $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$. A sum of terms $x^{2}$ over real $x$ vanishes only when every $x$ vanishes.</p>
+<p><strong>Remark (the definite form is not multiplicative).</strong> Take $\tilde Q=e_t+i\vec e_y$, whose form is $2$. Then $\tilde Q^{2}=e_t+2i\vec e_y+(i\vec e_y)^{2}=e_t+2i\vec e_y+e_t=2e_t+2i\vec e_y$, whose form is $4+4=8$. So $H(\tilde Q^{2})=8$ while $H(\tilde Q)^{2}=4$, and the two differ. <strong>A definite form cannot be multiplicative in this algebra</strong>, and the reason is the next proposition.</p>
+<p><strong>Proposition (definite and multiplicative are incompatible).</strong> Let $\mu:\mathbb{B}\to\mathbb{R}$ be multiplicative, $\mu(\tilde Q\tilde R)=\mu(\tilde Q)\mu(\tilde R)$, and positive definite. Then $\mu$ does not exist.</p>
+<p><em>Proof.</em> The elements $e_t+i\vec e_y$ and $e_t-i\vec e_y$ are nonzero and their product is $e_t-(i\vec e_y)^{2}=e_t-e_t=0$. Multiplicativity gives $\mu(e_t+i\vec e_y)\mu(e_t-i\vec e_y)=\mu(0)=0$, while definiteness gives both factors strictly positive. Their product is then strictly positive, a contradiction.</p>
+<p><strong>Remark (the counting of the two roles).</strong> The proposition says that the topology and the invertibility criterion cannot be carried by one bracket, and the rest of the article is the bookkeeping of which bracket carries which. <strong>The definite form carries the topology and the multiplicative form carries invertibility</strong>, and the corpus states the same division for $\mathbb{B}$ in the table of <em>Norm and Unitary Conventions</em>.</p>
+<h3 id="the-multiplicative-form">The Multiplicative Form</h3>
+<p><strong>Definition (the algebraic norm).</strong> The <strong>quaternionic form</strong> is</p>
+<p>$$
+N(\tilde Q,\tilde R)=\mathrm{Sc}\bigl(\tilde Q^{\natural}\tilde R\bigr),\qquad N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2} ,
+$$</p>
+<p>with $\natural$ the quaternion conjugation that fixes the scalar part and negates the vector part.</p>
+<p><strong>Proposition (the norm is central and complex-valued).</strong> $N(\tilde Q)$ lies in $\mathbb{C}e_t$, and $N(\tilde Q\tilde R)=N(\tilde Q)N(\tilde R)$.</p>
+<p><em>Proof.</em> The norm is $\tilde Q\tilde Q^{\natural}$, and the conjugation is an antiautomorphism with $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$; the product is therefore fixed by the conjugation, hence has zero vector part, hence is a complex multiple of $e_t$. Multiplicativity follows from $(\tilde Q\tilde R)^{\natural}=\tilde R^{\natural}\tilde Q^{\natural}$ and the centrality: $N(\tilde Q\tilde R)=\tilde Q\tilde R\tilde R^{\natural}\tilde Q^{\natural}=\tilde QN(\tilde R)\tilde Q^{\natural}=N(\tilde R)\tilde Q\tilde Q^{\natural}=N(\tilde Q)N(\tilde R)$.</p>
+<p><strong>Remark (the norm is genuinely complex, and it is not a modulus).</strong> For $\tilde Q=(1+i)e_t$ the norm is $(1+i)^{2}=2i$, which is not real and not non-negative. <strong>The norm of a biquaternion has a phase</strong>, and the phase is the reason the block determinant of the regular representation is $\lvert N\rvert^{4}$ and not $N^{4}$, as <em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em> shows.</p>
+<p><strong>Proposition (the norm is the determinant in the model).</strong> $\det\mathsf M(\tilde Q)=N(\tilde Q)$ for every $\tilde Q$.</p>
+<p><em>Proof.</em> Expanding the determinant of the displayed matrix gives $(Q_t+iQ_z)(Q_t-iQ_z)-(Q_y+iQ_x)(-Q_y+iQ_x)=Q_t^{2}+Q_z^{2}+Q_y^{2}+Q_x^{2}$, using $i^{2}=-1$ twice.</p>
+<h3 id="isotropy-and-the-null-cone">Isotropy and the Null Cone</h3>
+<p><strong>Definition (the null set).</strong> $\mathcal N=\{\tilde Q:N(\tilde Q)=0\}$, the <strong>null set</strong> of the algebra.</p>
+<p><strong>Proposition (the null set is the origin together with the zero divisors).</strong> $\mathcal N=\{0\}\cup\{\tilde Q:\tilde Q\text{ is a zero divisor}\}$, and each element of $\mathcal N$ other than $0$ is both a left and a right zero divisor.</p>
+<p><em>Proof.</em> The model is the full matrix algebra $M_2(\mathbb{C})$, in which an element is invertible exactly when its determinant does not vanish, and a non-invertible nonzero element has rank one, hence has a nonzero kernel and a nonzero cokernel, hence is a two-sided zero divisor. The determinant is $N$ by the previous proposition.</p>
+<p><strong>Proposition (the null set has real dimension six, and its real part has signature $(4,4)$).</strong> Writing $Q_\mu=q_\mu+iq'_\mu$, the real and imaginary parts of $N$ are</p>
+<p>$$
+\operatorname{Re}N=\sum_\mu\bigl(q_\mu^{2}-q'_\mu{}^{2}\bigr),\qquad \operatorname{Im}N=2\sum_\mu q_\mu q'_\mu ,
+$$</p>
+<p>both nondegenerate forms of signature $(4,4)$; the two real equations $\operatorname{Re}N=0$ and $\operatorname{Im}N=0$ cut the null set, of real dimension six in eight.</p>
+<p><em>Proof.</em> Each complex coordinate contributes $q_\mu^{2}-q'_\mu{}^{2}$ to the real part, giving four positive and four negative directions. The imaginary part is a sum of four products of independent real coordinates, whose realified matrix has four positive and four negative eigenvalues. The two gradients, in the eight real coordinates, are $2(q_t,q_x,q_y,q_z,-q'_t,-q'_x,-q'_y,-q'_z)$ and $2(q'_t,q'_x,q'_y,q'_z,q_t,q_x,q_y,q_z)$; they are proportional only if $q'=\lambda q$ and $q=-\lambda q'$ for a real $\lambda$, which forces $\lambda^{2}=-1$ and then $q=q'=0$. So they are independent at every point of the null set other than the origin, and two independent real equations in eight variables leave dimension six.</p>
+<p><strong>Remark (the definite form is strictly positive on the null set away from the origin).</strong> Since $H$ vanishes only at $0$ and $N$ vanishes on the whole cone, <strong>every sphere of $H$ meets the null set</strong>, in a set of real dimension five. That single sentence is the geometric content of "the two forms are not comparable from below", and it becomes the inequality of §<em>The Two Forms in the Transform</em>.</p>
+<h2 id="which-form-is-definite-where">Which Form Is Definite Where</h2>
+<h3 id="the-four-brackets">The Four Brackets</h3>
+<p><strong>Definition (the four brackets).</strong> With the plain bracket $\langle\tilde Q,\tilde R\rangle=\mathrm{Sc}(\tilde Q\tilde R)$, the quaternionic $\langle\tilde Q,\tilde R\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde R)$, the Hermitian $\langle\tilde Q,\tilde R\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde R^{*})$ and the Krein $\langle\tilde Q,\tilde R\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde R^{*})$, the four algebraic norms are the brackets at two equal arguments; they carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$.</p>
+<p><strong>Proposition (the four signatures, computed).</strong> Realified on the eight real coordinates, the four forms have the following signatures and values at a general element.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Algebraic norm</th>
+<th>Value</th>
+<th>Realified signature</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>$\mathrm{Sc}(\tilde Q^{2})$</td>
+<td>$Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$</td>
+<td>$(4,4)$</td>
+<td>complex, indefinite</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>$\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)$</td>
+<td>$Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>$(4,4)$</td>
+<td>multiplicative, isotropic</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$\mathrm{Sc}(\tilde Q\tilde Q^{*})$</td>
+<td>$\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$</td>
+<td>$(8,0)$</td>
+<td>definite, topological</td>
+</tr>
+<tr>
+<td>$\mathrm{Kr}$</td>
+<td>$\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})$</td>
+<td>$\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}$</td>
+<td>$(2,6)$</td>
+<td>real, indefinite</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Each is a quadratic form in the eight real coordinates. For $P$ the term in $Q_t$ contributes the positive direction $q_t$ and the negative $q'_t$, while each of the three terms $-Q_k^{2}$ contributes the negative $q_k$ and the positive $q'_k$: four positive and four negative. For $N$ all four terms carry the plus sign, so each contributes one direction of each kind: again four and four. For $H$ the value is a sum of moduli and every one of the eight directions is positive. For $\mathrm{Kr}$ the scalar term contributes two positive directions and the three vector terms six negative.</p>
+<p><strong>Remark (only one of the four is definite, and only one is multiplicative).</strong> The table has one definite row and one multiplicative row, and they are different rows. <strong>That is the entire content of the choice of letter in a formula</strong>: $H$ when a bound or a topology is wanted, $N$ when an inverse or a zero set is wanted.</p>
+<h3 id="the-definite-form-on-subspaces">The Definite Form on Subspaces</h3>
+<p><strong>Proposition (the norm on three real planes).</strong> The restriction of $N$ to a real two-plane is positive definite on $\Pi=\mathrm{span}_{\mathbb{R}}\{e_t,\rho\}$, negative definite on $\Pi=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y\}$, and of real signature $(1,1)$ on $\Pi=\mathrm{span}_{\mathbb{R}}\{\vec e_x,i\vec e_x\}$; <strong>so a real two-plane can carry a definite norm, a definite negative norm, or neither.</strong></p>
+<p><em>Proof.</em> On the first plane, $\tilde Q=ae_t+b\rho$ with real $a,b$ gives $N=a^{2}+b^{2}$ because $\rho^{2}=-e_t$. On the second, $\tilde Q=a\vec e_x+b\vec e_y$ gives $N=-a^{2}-b^{2}$. On the third, $\tilde Q=(q+iq')\vec e_x$ gives $N=-(q+iq')^{2}=-(q^{2}-q'^{2})-2iqq'$, which is not real, and its real part $q'^{2}-q^{2}$ has signature $(1,1)$.</p>
+<p><strong>Remark (why the first plane behaves like the complex numbers).</strong> On $\mathrm{span}_{\mathbb{R}}\{e_t,\rho\}$ the norm is $a^{2}+b^{2}$ and the product is the product of $\mathbb{C}$, with $\rho$ playing the role of $i$. <strong>That is the plane in which the one-variable residue theory of <em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em> is carried out</strong>, and the definiteness of $N$ there is why a pole in that plane can be isolated.</p>
+<p><strong>Proposition (a real plane on which the norm vanishes identically).</strong> Let $q\in\mathcal N$ with $q\ne0$. Then the real two-plane $\mathbb{C}q=\{aq+ibq:a,b\in\mathbb{R}\}$ lies in the null set, and $N$ vanishes identically on it.</p>
+<p><em>Proof.</em> $N(aq+ibq)=(a+ib)^{2}N(q)=0$ by the multiplicativity and the centrality of the norm.</p>
+<p><strong>Remark (the norm vanishes on no hyperplane).</strong> A real hyperplane through the origin has dimension seven, and the null set has dimension six; the two cannot contain one another. <strong>So there is no real linear functional whose vanishing is the null condition</strong>, and no single real quadratic form whose zero set is the cone. What exists is what the table shows: a complex-valued norm, two real equations, and linear pieces of dimension four inside the cone, which are the Peirce planes of <em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>.</p>
+<h3 id="two-forms-two-roles">Two Forms, Two Roles</h3>
+<p><strong>Proposition (the two roles cannot be exchanged).</strong> $H$ is not multiplicative and $N$ does not bound anything from below: for every $\epsilon>0$ there is $\tilde Q\ne0$ with $\lvert N(\tilde Q)\rvert<\epsilon H(\tilde Q)$.</p>
+<p><em>Proof.</em> The first is the example $\tilde Q=e_t+i\vec e_y$ of §<em>The Definite Form</em>. For the second take $\tilde Q_\epsilon=e_t+i(1-\epsilon)\vec e_y$, whose norm is $1-(1-\epsilon)^{2}=2\epsilon-\epsilon^{2}$ and whose form is $1+(1-\epsilon)^{2}\ge1$; the ratio tends to zero with $\epsilon$, and at $\epsilon=0$ it is exactly zero.</p>
+<p><strong>Remark (both statements are needed for the transform).</strong> The support theorem of <em>The Biquaternion Fourier Transform: Support and Rank</em> uses the null set, hence $N$; the bounds on a solution and the size of a kernel use a topology, hence $H$. <strong>A proof that uses one where the other is meant is not a proof with a gap, it is a proof of a false statement</strong>, and the failure is exactly the failure of the comparison the proposition denies.</p>
+<h2 id="the-element-and-the-symbol">The Element and the Symbol</h2>
+<h3 id="the-frequency-is-not-an-element">The Frequency Is Not an Element</h3>
+<p><strong>Remark (two different domains).</strong> $N$ and $H$ are functions on $\mathbb{B}$, an eight-dimensional real algebra. The symbol $\sigma_P$ is a function on $\mathbb{R}^n$, the frequency space, with values in $\mathbb{B}$. <strong>They are not the same kind of object even when their formulas look identical</strong>, and the biquaternion case makes the difference visible because the frequency is a real vector of dimension four while the algebra is complex of dimension four.</p>
+<p><strong>Definition (the substitution).</strong> Let $\rho$ be a pure root of $-e_t$. The <strong>frequency substitution</strong> is the real-linear injection</p>
+<p>$$
+\zeta:\mathbb{R}^{n}\to\mathbb{B}^{n},\qquad \omega\mapsto\zeta(\omega)=-2\pi i\,\rho\,\omega ,
+$$</p>
+<p>read componentwise, so that $\zeta_k(\omega)=-2\pi i\rho\omega_k$, and its image is the plane $(-2\pi i\rho\mathbb{R})^n$. It is the substitution that produces the eigenvalue: since $i\zeta_k(\omega)=2\pi\rho\omega_k$, the symbol read at $\zeta(\omega)$ is $\Sigma_P(\omega)$. <strong>The two functions $\sigma_P$ on the algebra and $\Sigma_P$ on the frequency space are the same polynomial read through this map and no other.</strong></p>
+<p><strong>Proposition (the substitution composes the two forms into forms on the frequency space).</strong> With $\Sigma_P(\omega)=\sigma_P(\zeta(\omega))=\sum_\alpha a_\alpha\prod_k(2\pi\rho\omega_k)^{\alpha_k}$ the eigenvalue of the transform, the composites</p>
+<p>$$
+\omega\mapsto N\bigl(\Sigma_P(\omega)\bigr),\qquad \omega\mapsto H\bigl(\Sigma_P(\omega)\bigr)
+$$</p>
+<p>are real quadratic forms on $\mathbb{R}^n$ when $\Sigma_P$ is linear in $\omega$, and forms of degree $2m$ otherwise.</p>
+<p><em>Proof.</em> Each is a composition of a quadratic form with the polynomial map $\Sigma_P$; the degree of the composite is twice the degree of the map, and the map is linear exactly when the operator has order one.</p>
+<p><strong>Example (the gradient, computed).</strong> For $P(D)=e_t\partial_0+\vec e_x\partial_1+\vec e_y\partial_2+\vec e_z\partial_3$ with $\rho=\vec e_x$ the eigenvalue is $\Sigma_\nabla(\omega)=2\pi\sum_k\omega_k\vec e_k\vec e_x$, and the two composites are</p>
+<p>$$
+N\bigl(\Sigma_\nabla(\omega)\bigr)=4\pi^{2}\bigl(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2}\bigr),\qquad H\bigl(\Sigma_\nabla(\omega)\bigr)=4\pi^{2}\bigl(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2}\bigr).
+$$</p>
+<p><em>Proof.</em> The products on the right are $\vec e_t\vec e_x=\vec e_x$, $\vec e_x\vec e_x=-e_t$, $\vec e_y\vec e_x=-\vec e_z$ and $\vec e_z\vec e_x=\vec e_y$, so the eigenvalue is $2\pi\bigl(\omega_0\vec e_x-\omega_1e_t-\omega_2\vec e_z+\omega_3\vec e_y\bigr)$, whose four coefficients are real. The norm of a real element is the sum of the products of its coefficients with the norms of the units, each unit having norm one, hence $4\pi^{2}\sum_k\omega_k^{2}$; the same read with moduli gives the second identity. Both are positive definite, and this is the atypical case in which the two forms agree on the image of the symbol.</p>
+<p><strong>Remark (the coincidence is not general).</strong> The two composites agree above because the image of $\Sigma_\nabla$ is the four-dimensional real subspace spanned by the four units, on which the norm is positive definite because each unit has norm one. <strong>For a symbol with a nonzero scalar part or with complex coefficients the two composites separate</strong>, and the separation is measured by the inequality of §<em>The Two Forms in the Transform</em>.</p>
+<h3 id="the-composition-of-forms">The Composition of Forms</h3>
+<p><strong>Proposition (polarisation commutes with a linear substitution).</strong> Let $L:\mathbb{R}^n\to\mathbb{B}$ be real-linear and let $f$ be a quadratic form on $\mathbb{B}$ with polarisation $\beta_f$. Then the polarisation of $f\circ L$ is $\beta_f(Lu,Lv)$.</p>
+<p><em>Proof.</em> $\tfrac12\bigl(f(Lu+Lv)-f(Lu)-f(Lv)\bigr)=\tfrac12\bigl(f(L(u+v))-f(Lu)-f(Lv)\bigr)$, and $L(u+v)=Lu+Lv$ by linearity; the bracket is $\beta_f(Lu,Lv)$.</p>
+<p><strong>Proposition (polarisation does not commute with a quadratic substitution).</strong> Let $g(\tilde Q)=N(\tilde Q)^{2}$, the composite of $N$ with itself. Then, writing $U=N(u)$, $V=N(v)$ and $b=\beta_N(u,v)$,</p>
+<p>$$
+\beta_g(u,v)=UV+2b\,(U+V)+2b^{2},
+$$</p>
+<p>which is not $\beta_N\bigl(N(u),N(v)\bigr)=UV$ unless $b\,(U+V)+b^{2}=0$.</p>
+<p><em>Proof.</em> $N(u+v)=U+V+2b$ by the definition of the polarisation; multiplying out and subtracting $U^{2}+V^{2}$ gives $2UV+4b(U+V)+4b^{2}$, and halving gives the displayed expression. The value $\beta_N(N(u),N(v))$ is $\mathrm{Sc}\bigl(N(u)^{\natural}N(v)\bigr)=N(u)N(v)$, since the norm is central.</p>
+<p><strong>Remark (what the failure costs).</strong> The failure is a sum of three terms, and the middle one is linear in the polarisation while the last is quadratic in it. <strong>A computation that polarises the algebra form and then substitutes the symbol is wrong by those terms</strong>, and the error vanishes only on pairs whose polarisation vanishes.</p>
+<h2 id="the-polarised-symbol">The Polarised Symbol</h2>
+<h3 id="polarisation-and-its-expansion">Polarisation and Its Expansion</h3>
+<p><strong>Definition (the polarised form).</strong> Let $\sigma$ be a polynomial on $\mathbb{R}^{n}$ with values in $\mathbb{B}$ and let $u,v\in\mathbb{R}^{n}$. The <strong>polarisation</strong> of $\sigma$ is</p>
+<p>$$
+\beta_\sigma(u,v)=\tfrac12\bigl(\sigma(u+v)-\sigma(u)-\sigma(v)\bigr),
+$$</p>
+<p>and for homogeneous $\sigma$ of degree $m$ the <strong>$m$-linear polarisation</strong> $\beta^{(m)}_\sigma$ is defined by the expansion of the next proposition.</p>
+<p><strong>Proposition (the expansion of a homogeneous symbol along a line).</strong> Let $\sigma$ be homogeneous of degree $m$ and let $p(t)=\sigma(u+tv)$. Then $p$ is a polynomial of degree $m$ and</p>
+<p>$$
+p(t)=\sum_{j=0}^{m}\binom{m}{j}\,t^{j}\,\beta^{(m)}_\sigma\bigl(u,\dots,u,v,\dots,v\bigr),
+$$</p>
+<p>with $m-j$ copies of $u$ and $j$ copies of $v$; in particular $\beta^{(m)}_\sigma(u,\dots,u)=\sigma(u)$ and $\beta^{(1)}_\sigma$ is the derivative.</p>
+<p><em>Proof.</em> Each monomial of $\sigma$ is a product of $m$ linear factors, and substituting $u+tv$ expands by the binomial theorem into terms with $j$ factors of $v$ and $m-j$ of $u$; collecting the terms with the same $j$ gives the binomial coefficient and the symmetrised $m$-linear form. The value at $t=1$ is $\sigma(u+v)$, which is the expansion, and the two stated specialisations follow at $j=0$ and at $m=1$.</p>
+<p><strong>Corollary (the quadratic case, in full).</strong> For homogeneous $\sigma$ of degree two, $p(t)=\sigma(u)+2t\beta_\sigma(u,v)+t^{2}\sigma(v)$.</p>
+<p><em>Proof.</em> Put $m=2$ in the expansion.</p>
+<h3 id="the-polarised-norm-is-the-quaternionic-form">The Polarised Norm Is the Quaternionic Form</h3>
+<p><strong>Theorem (the polarised norm).</strong> For all $\tilde Q,\tilde R\in\mathbb{B}$,</p>
+<p>$$
+N(\tilde Q+\tilde R)=N(\tilde Q)+N(\tilde R)+\mathrm{Sc}\bigl(\tilde Q\tilde R^{\natural}\bigr)+\mathrm{Sc}\bigl(\tilde R\tilde Q^{\natural}\bigr),
+$$</p>
+<p>so that $\beta_N(\tilde Q,\tilde R)=\mathrm{Sc}\bigl(\tilde Q^{\natural}\tilde R\bigr)=\langle\tilde Q,\tilde R\rangle_{\natural}$.</p>
+<p><em>Proof.</em> Expand $N(\tilde Q+\tilde R)=(\tilde Q+\tilde R)(\tilde Q+\tilde R)^{\natural}$ and use the antiautomorphism property $(\tilde Q+\tilde R)^{\natural}=\tilde Q^{\natural}+\tilde R^{\natural}$; the cross terms are $\tilde Q\tilde R^{\natural}$ and $\tilde R\tilde Q^{\natural}$, and their scalar parts are equal because $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$; finally $\mathrm{Sc}(X)=\mathrm{Sc}(X^{\natural})$, so $\mathrm{Sc}(\tilde Q\tilde R^{\natural})=\mathrm{Sc}(\tilde R\tilde Q^{\natural})=\mathrm{Sc}(\tilde Q^{\natural}\tilde R)$.</p>
+<p><strong>Remark (which of the four brackets the polarisation is).</strong> The polarised form of $N$ is the <strong>quaternionic</strong> bracket and not the Hermitian one: it is complex-valued, it is not definite because $N$ vanishes on the whole null cone, and its isotropic elements are exactly the null elements. <strong>The two bilinear forms of the article are therefore $\mathrm{Re}\,H$, the real inner product, and $\langle\cdot,\cdot\rangle_{\natural}$, the complex bilinear form of which $N$ is the diagonal.</strong></p>
+<p><strong>Remark (the polarisation of the definite form).</strong> The polarisation of $H$ is $\mathrm{Re}\,H(\tilde Q,\tilde R)$ itself, the real inner product of the trace formula. <strong>So the pair of forms is $(\mathrm{Re}\,H,\langle\cdot,\cdot\rangle_{\natural})$</strong>, and the statement of positive definiteness is a statement about the first member only.</p>
+<h2 id="the-gap-of-one-derivative">The Gap of One Derivative</h2>
+<h3 id="the-derivative-is-one-slot-short">The Derivative Is One Slot Short</h3>
+<p><strong>Theorem (the derivative at one slot).</strong> Let $\sigma$ be homogeneous of degree $m$ and let $d\sigma(u)[v]$ be the derivative at $u$ in the direction $v$. Then</p>
+<p>$$
+d\sigma(u)[v]=m\,\beta^{(m)}_\sigma\bigl(u,\dots,u,v\bigr),
+$$</p>
+<p>with $m-1$ copies of $u$.</p>
+<p><em>Proof.</em> Differentiate the expansion of §<em>Polarisation and Its Expansion</em> at $t=0$: only the term with $j=1$ survives, and its coefficient is $\binom{m}{1}=m$ times the $m$-linear form with one slot filled by $v$.</p>
+<p><strong>Corollary (the quadratic case).</strong> For homogeneous $\sigma$ of degree two, $d\sigma(u)[v]=2\beta_\sigma(u,v)$; in particular $dN(u)[v]=2\langle u,v\rangle_{\natural}$.</p>
+<p><em>Proof.</em> Put $m=2$ and use the theorem of §<em>The Polarised Norm Is the Quaternionic Form</em>.</p>
+<p><strong>Remark (the factor two is the whole gap, in degree two).</strong> One derivative of a quadratic symbol is twice the polarised form at the same pair. <strong>A reader who writes $dN(u)[v]=\beta_N(u,v)$ is wrong by exactly a factor of two</strong>, and the factor is not a convention: it is the binomial coefficient $\binom{2}{1}$.</p>
+<p><strong>Example (the gap in degree three).</strong> Let $\sigma(\tilde Q)=Q_t^{3}$, homogeneous of degree three. Then $d\sigma(u)[v]=3u_t^{2}v_t$ while</p>
+<p>$$
+\beta_\sigma(u,v)=\tfrac32\bigl(u_t^{2}v_t+u_tv_t^{2}\bigr),
+$$</p>
+<p>and the two differ by more than a factor: the derivative sees $v_t^{2}$ not at all.</p>
+<p><em>Proof.</em> Expand $(u_t+tv_t)^{3}$: the coefficient of $t$ is $3u_t^{2}v_t$ and the coefficient of $t^{2}$ is $3u_tv_t^{2}$, so the polarisation, which is the half-sum of the two cross coefficients with the binomial weights, is the displayed expression.</p>
+<p><strong>Remark (why the gap is structural and not an accident).</strong> The derivative fills one slot of the multilinear form; the polarised quadratic form needs two slots filled, or one slot filled twice. <strong>A single derivative can therefore determine the polarisation only when the form has exactly two slots</strong>, that is only for a symbol of degree two, and even then only up to the factor $m=2$.</p>
+<h3 id="the-euler-contraction">The Euler Contraction</h3>
+<p><strong>Proposition (Euler, and the diagonal of the form).</strong> For homogeneous $\sigma$ of degree $m$,</p>
+<p>$$
+\sum_{k=1}^{n}\zeta_k\,\partial_k\sigma(\zeta)=m\,\sigma(\zeta),\qquad\text{that is}\qquad \sum_{k=1}^{n}\zeta_k\,d\sigma(\zeta)[e_k]=m\,\beta^{(m)}_\sigma(\zeta,\dots,\zeta).
+$$</p>
+<p><em>Proof.</em> Both statements are Euler's identity for a homogeneous polynomial, the second being the first read through the theorem of §<em>The Derivative Is One Slot Short</em>: the derivative at $\zeta$ in the direction $e_k$, contracted with $\zeta_k$ and summed, is $m$ times the form at $m$ equal slots, which is $\sigma(\zeta)$ by the expansion.</p>
+<p><strong>Remark (the second reading of the gap).</strong> The identity says that contracting the derivative with the frequency gives $m$ times the form on the diagonal, so <strong>the derivative carries the diagonal information and nothing else</strong>: the off-diagonal $\beta^{(m)}_\sigma(u,\dots,u,v)$ for $v$ not proportional to $u$ is not seen by the Euler contraction. A single derivative of the symbol therefore determines the form only after the contraction and only on the diagonal, which in degree two is the statement that the derivative at $u$ in the direction $u$ is $2\sigma(u)$.</p>
+<p><strong>Remark (the derivative of a symbol is the symbol of a smaller operator).</strong> Differentiating $\sigma_P$ once in each frequency lowers the degree by one, so the derivative is the symbol of an operator of order $m-1$; the polarised form takes two frequency vectors and is homogeneous of degree $m$ in each. <strong>They belong to different operators</strong>, and identifying them is the confusion that the trap of the Introduction warns against.</p>
+<h2 id="the-two-forms-in-the-transform">The Two Forms in the Transform</h2>
+<h3 id="the-eigenvalue-read-through-each-form">The Eigenvalue Read Through Each Form</h3>
+<p><strong>Proposition (which form answers which question at a frequency).</strong> At a frequency $\omega$ the equation is solvable for every right-hand side exactly when $N(\Sigma_P(\omega))\ne0$; the entries of the reciprocal are bounded by the quotient $2H(\Sigma_P(\omega))\big/\lvert N(\Sigma_P(\omega))\rvert$; and the two forms are related by the inequality of the next theorem.</p>
+<p><em>Proof.</em> The first is the theorem of <em>The Fourier Transform and the Symbol of a Differential Operator</em>, that the equation is solvable for every right-hand side exactly when the symbol is a unit, together with the identification of the units as the elements of nonzero norm in <em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>. The second is the definition of $H$ as the Hilbert–Schmidt norm of the model: it bounds every entry of the matrix, and the entries of the reciprocal are the entries of the adjugate over $N$, each adjugate entry being a sum of two products of entries and hence of modulus at most $2H$. <strong>So the reciprocal is bounded by $2H/\lvert N\rvert$, a quotient of the two forms</strong>, and neither form alone controls it.</p>
+<p><strong>Theorem (the definite form dominates the modulus of the norm).</strong> For every $\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\lvert N(\tilde Q)\rvert\le H(\tilde Q),
+$$</p>
+<p>with equality exactly when the two singular values of $\mathsf M(\tilde Q)$ are equal.</p>
+<p><em>Proof.</em> In the model, $\lvert N\rvert=\lvert\det\mathsf M\rvert$ and $H=\tfrac12\lVert\mathsf M\rVert^{2}=\tfrac12(\sigma_1^{2}+\sigma_2^{2})$ with $\sigma_1,\sigma_2$ the singular values. The determinant's modulus is $\sigma_1\sigma_2$, and $\sigma_1\sigma_2\le\tfrac12(\sigma_1^{2}+\sigma_2^{2})$ is the arithmetic–geometric inequality, with equality exactly when $\sigma_1=\sigma_2$.</p>
+<p><strong>Corollary (the ratio, and both ends attained).</strong> The ratio $\lvert N\rvert/H$ takes every value in $[0,1]$. It is $1$ exactly on the set $\{\tilde Q:\mathsf M(\tilde Q)^{*}\mathsf M(\tilde Q)=\lambda I\text{ for some }\lambda\ge0\}$, of real dimension five, and it is $0$ exactly on the null set.</p>
+<p><em>Proof.</em> The upper end is the equality case of the theorem; the lower end is the null set away from the origin, where $H>0$ by definiteness, so the ratio is defined and zero. The set of matrices with equal singular values is $\{cU:c\ge0,\ U\in\mathrm{U}(2)\}$, of real dimension $1+4=5$, and it meets the algebra in the stated set because $\mathsf M$ is an isomorphism. For the intermediate values, take the path $\tilde Q_s=e_t+s\,i\vec e_y$ from $s=0$ to $s=1$: its form is $1+s^{2}$, never zero, its norm is $1-s^{2}$, never negative there, and the ratio $\lvert 1-s^{2}\rvert/(1+s^{2})$ is continuous and runs from $1$ to $0$; so every value between is attained.</p>
+<p><strong>Remark (the equality set, described without matrices).</strong> An element has equal singular values exactly when its model is a non-negative scalar times a unitary matrix; equivalently when $\tilde Q^{*}\tilde Q=H(\tilde Q)\,e_t$, since $\mathsf M(\tilde Q)^{*}\mathsf M(\tilde Q)=\mathsf M(\tilde Q^{*}\tilde Q)$. <strong>On that set the two forms agree in modulus</strong>, and the phase of the norm is the determinant of the unitary factor.</p>
+<p><strong>Remark (the invariance of the ratio).</strong> The ratio is unchanged under left and right multiplication by elements whose models are unitary, because $\mathsf M(a\tilde Qb)=\mathsf M(a)\mathsf M(\tilde Q)\mathsf M(b)$ and a unitary factor leaves both the Hilbert–Schmidt norm and the modulus of the determinant unchanged. <strong>The pair of forms is therefore a pair of invariants of the same equivalence relation</strong>, and the inequality compares them on each class.</p>
+<h3 id="the-inequality-and-the-zero-set">The Inequality and the Zero Set</h3>
+<p><strong>Remark (what the inequality says about the cone).</strong> The null set is where $\lvert N\rvert/H$ attains $0$, and the equality set is where it attains $1$. <strong>The two forms are as far apart as possible on the cone and as close as possible on the conformal set</strong>, and the cone has real codimension two because $\lvert N\rvert$ vanishes where one complex equation holds, not one real equation.</p>
+<p><strong>Remark (why no lower bound can exist).</strong> The proposition of §<em>Two Forms, Two Roles</em> gives the family $\tilde Q_\epsilon$ with ratio tending to zero, so no inequality of the form $\lvert N\rvert\ge c\,H$ holds with $c>0$. <strong>The two forms are comparable in one direction only</strong>, and every estimate in this subject that needs a lower bound must get it from something else: from a distance to the null set, as in <em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>, and not from the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra carries a definite form $H$ and a multiplicative form $N$. The definite one is the real part of a trace form, it is the sum of the eight terms $q_\mu^{2}+q'_\mu{}^{2}$, its realified signature is $(8,0)$, and it is not multiplicative because the algebra has zero divisors whose product vanishes while both factors are of positive form. The multiplicative one is complex-valued and central, it is the determinant in the matrix model, its realified signature is $(4,4)$, and its zero set is the origin together with the cone of zero divisors, of real dimension six in eight. Of the four brackets of the corpus only $H$ is definite and only $N$ is multiplicative, and the two roles cannot be carried by one bracket.</p>
+<p>The polarisation of $N$ is the quaternionic bilinear form, so the two bilinear forms of the subject are the real inner product $\mathrm{Re}\,H$ and the complex bilinear $\langle\cdot,\cdot\rangle_{\natural}$ whose diagonal is $N$. The polarisation of a homogeneous symbol of degree $m$ expands along a line with binomial coefficients, and the derivative at one slot is that form with one slot filled and the factor $m$ in front; the derivative therefore determines the polarisation exactly in degree two, and then only up to the factor two, while in higher degree it determines the diagonal and nothing else, by Euler's identity.</p>
+<p>The two forms do not live on the same object: $H$ and $N$ are functions on the algebra, the symbol is a function on the frequency space, and the substitution of the frequency into the algebra is a real-linear injection that exists only after a root $\rho$ and a convention are fixed. Polarisation commutes with a linear substitution and not with a quadratic one, and the failure is computed term by term.</p>
+<p>In the transform the two forms answer two questions: $N$ decides whether the equation is solvable at a frequency, and $H$ measures the size of what solves it. The definite form dominates the modulus of the norm, with equality exactly on the elements whose model has equal singular values, and the ratio attains both ends, so no lower bound exists and the cone is where the two forms are farthest apart.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension $8$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>The units, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>The central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\tilde Q,\tilde R$</td>
+<td>Elements of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$Q_t,Q_x,Q_y,Q_z$</td>
+<td>The four complex coordinates, $Q_\mu=q_\mu+iq'_\mu$</td>
+</tr>
+<tr>
+<td>$q_\mu,q'_\mu$</td>
+<td>The eight real coordinates</td>
+</tr>
+<tr>
+<td>$^{\natural}$</td>
+<td>The quaternion conjugation, scalar part fixed and vector part negated</td>
+</tr>
+<tr>
+<td>$^{*}$</td>
+<td>The composite of the quaternion conjugation and the complex conjugation</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>The plain form $\mathrm{Sc}(\tilde Q\tilde R)$ and its norm</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>The quaternionic form $\mathrm{Sc}(\tilde Q^{\natural}\tilde R)$; the algebraic norm</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>The Hermitian form $\mathrm{Sc}(\tilde Q\tilde R^{*})$; the algebraic norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Kr}$</td>
+<td>The Krein form $\mathrm{Sc}(\tilde Q^{\natural}\tilde R^{*})$ and its norm</td>
+</tr>
+<tr>
+<td>$\mathsf M(\tilde Q)$</td>
+<td>The matrix model in $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\lVert\cdot\rVert$</td>
+<td>The Hilbert–Schmidt norm on $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2$</td>
+<td>The singular values of $\mathsf M(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\mathcal N$</td>
+<td>The null set $\{N=0\}$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>A pure root of $-e_t$</td>
+</tr>
+<tr>
+<td>$\zeta(\omega)$</td>
+<td>The frequency substitution $-2\pi i\rho\omega$</td>
+</tr>
+<tr>
+<td>$\Sigma_P(\omega)$</td>
+<td>The eigenvalue $\sum_\alpha a_\alpha\prod_k(2\pi\rho\omega_k)^{\alpha_k}$</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>The order of the operator, and the degree of its symbol</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>The number of frequency variables</td>
+</tr>
+<tr>
+<td>$L$</td>
+<td>A real-linear map $\mathbb{R}^{n}\to\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>The algebra of two-by-two complex matrices</td>
+</tr>
+<tr>
+<td>$\beta_\sigma$</td>
+<td>The polarisation $\tfrac12(\sigma(u+v)-\sigma(u)-\sigma(v))$</td>
+</tr>
+<tr>
+<td>$\beta^{(m)}_\sigma$</td>
+<td>The $m$-linear polarisation of a symbol of degree $m$</td>
+</tr>
+<tr>
+<td>$d\sigma(u)[v]$</td>
+<td>The derivative at $u$ in the direction $v$</td>
+</tr>
+<tr>
+<td>$p(t)$</td>
+<td>The restriction $\sigma(u+tv)$ along a line</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>A real two-plane in $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)$</td>
+<td>The unitary group of order two</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Product and Form Conventions</em>, for the four products, the four forms and the letters $P$, $N$, $H$, $\mathrm{Kr}$ as fixed in the corpus.</li>
+<li><em>Norm and Unitary Conventions</em>, for the layer tables of the four norms, the realified signatures, and the distinction between norm one and unitary.</li>
+<li><em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>, for the block determinant $\lvert N\rvert^{4}$, the null cone and the five cases of the symbol; the present article is that article's algebra read one level up.</li>
+<li><em>The Biquaternion Fourier Transform: Support and Rank</em>, cited here by its leading title because its full title also names the microlocal reading, which this article does not use; for the frequency set, which is the zero set of the composite of $N$ with the symbol, and for the rank of left multiplication that the definite form bounds.</li>
+<li><em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>, for the plane of $e_t$ and $\rho$ on which the norm is positive definite, and for the distance that replaces the lower bound the present article proves cannot exist.</li>
+<li><em>The Fourier Transform and the Symbol of a Differential Operator</em>, for the determinant of the regular representation and the order against the degree, which are the two facts that make $N$ and not $H$ the invertibility criterion.</li>
+<li><em>Biquaternion Fourier Inversion on the Degenerate Set</em>, for the case in which the symbol stays on the cone and the multiplicative form gives nothing at any frequency.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
