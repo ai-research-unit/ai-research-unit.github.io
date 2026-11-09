@@ -74,7 +74,7 @@ $$
 \boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
 $$
 
-and it is the quaternionic norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$. An element is $N$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$, if and only if it is invertible. The $N$-regular set is the group of units $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.
+and it is the quaternionic norm of the algebra, the determinant of the $2\times2$ representation $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_\eta Q_\eta\sigma_\eta$. An element is $N$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$, if and only if it is invertible. The $N$-regular set is the group of units $\{\langle\tilde Q\rangle_{\natural}\neq0\}$; its subgroup $\{\langle\tilde Q\rangle_{\natural}=1\}$ is a non-compact real six-manifold homotopy equivalent to $S^{3}$.
 
 **No function is both definite and multiplicative.** The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors non-zero and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1-1=0$. A multiplicative function that is not constant has $\xi(0)=0$, so it would give $\xi(e_t+i\vec e_x)\xi(e_t-i\vec e_x)=\xi(0)=0$; one value would vanish on a non-zero element, and a definite function is non-zero off the origin. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra. The four normed division algebras of the Hurwitz theorem are exactly the ones in which the two senses coincide.
 
@@ -248,7 +248,7 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 | $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{B}_{\Psi}$, in the same order |
 | $\mathcal{N}$, $\mathcal{K}$ | the $N$-degenerate set, the zero-divisor cone, and the Krein cone |
 | $\lVert\tilde Q\rVert_E$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
-| $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
+| $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_\eta Q_\eta\sigma_\eta$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde R_\Phi$, $\tilde R_\Psi$ | the material and informational parts, $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$ |
 

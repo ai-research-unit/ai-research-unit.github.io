@@ -170,13 +170,13 @@ $$
 \{\gamma_\mu[\mathbb{B}_{\Phi}],\gamma_\nu[\mathbb{B}_{\Phi}]\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm I_4,\qquad
 \varepsilon=(1,-1,-1,-1),$$
 
-so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_k[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.
+so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_\eta[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.
 
 In the Pauli display of the previous section the five become
 
 $$
 \gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\\ \mathrm I_2&0\end{pmatrix},\qquad
-\gamma_k[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_k\\ -\sigma_k&0\end{pmatrix},\qquad
+\gamma_\eta[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_\eta\\ -\sigma_\eta&0\end{pmatrix},\qquad
 \gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\\ 0&\mathrm I_2\end{pmatrix}.
 $$
 
@@ -256,7 +256,7 @@ The argument would be worthless if it condemned every frame, and it does not. A 
 
 A measurement supplies one. A Stern–Gerlach apparatus has an axis, and the axis is in the laboratory, not in the notation. An experiment on a beam has a beam axis. A scattering process has a plane, and the plane has a normal. A background field breaks isotropy, and its direction is part of the solution. In each of these cases a frame is a physical datum, and the correct practice is to name it, use it, and say that the result is about that frame.
 
-The squares of the units supply one, and it is a different kind of direction. Time is distinguished from space by the sign, $e_t^2=e_t$ and $\vec e_k^2=-e_t$, and that asymmetry is carried by the units themselves. Every formula inherits it automatically and correctly, with no sentence and no declaration, because it lives in an object and not in a layout. That is the model: an asymmetry that the physics has should be carried by an object of the algebra, where a reader can see it and where it cannot be lost.
+The squares of the units supply one, and it is a different kind of direction. Time is distinguished from space by the sign, $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$, and that asymmetry is carried by the units themselves. Every formula inherits it automatically and correctly, with no sentence and no declaration, because it lives in an object and not in a layout. That is the model: an asymmetry that the physics has should be carried by an object of the algebra, where a reader can see it and where it cannot be lost.
 
 The defect is the third case, which is neither of these: a direction that the problem does not supply, that the notation supplies anyway, that is used in every formula of the article, and that is never named.
 
@@ -266,7 +266,7 @@ The test of a displayed statement is mechanical. Apply the automorphism, re-read
 
 The statement
 $$
-\vec e_k^2=-e_t
+\vec e_\eta^2=-e_t
 $$
 returns itself, with $k$ renamed. It is a fact about $\mathbb{B}$.
 
@@ -436,7 +436,7 @@ $$
 The signs are the squares of the units, and no separate metric is needed:
 
 $$
-e_t^2=e_t,\qquad \vec e_k^2=-e_t,\qquad
+e_t^2=e_t,\qquad \vec e_\eta^2=-e_t,\qquad
 \mathrm{Sc}\bigl(\tilde Q^2\bigr)=Q_t^2-Q_x^2-Q_y^2-Q_z^2.
 $$
 
@@ -448,7 +448,7 @@ Two consequences follow, and both are properties of the algebra rather than of a
 
 The split of the algebra into its two sectors is the conjugation $\natural$, and it is carried by the algebra. A column of $\mathbb{C}^4$ carries no conjugation of its own, and a display in columns must import the split as extra structure.
 
-The five gammas belong to a frame and not to the algebra. In the intrinsic form they are written out as the basis operators they are, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$, and a reader sees the three spatial units in three different jobs on the same line. That is the defect of §*The Three Spatial Units Have Three Different Jobs* made visible at the place where it enters, which is the most a notation can do about it.
+The five gammas belong to a frame and not to the algebra. In the intrinsic form they are written out as the basis operators they are, $iR_{\vec e_x}$, $iL_{\vec e_\eta}R_{\vec e_y}$ and $-iR_{\vec e_z}$, and a reader sees the three spatial units in three different jobs on the same line. That is the defect of §*The Three Spatial Units Have Three Different Jobs* made visible at the place where it enters, which is the most a notation can do about it.
 
 ### When a Matrix Is Still Needed
 
@@ -502,7 +502,7 @@ The three passes need a table, and one table serves all three. Each row gives th
 | the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}$ |
 | the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
 | $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
-| $\gamma_k[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_k}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
+| $\gamma_\eta[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_\eta}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
 | $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
 | the mass term | $k_mL_{e_t}R_{e_t}$ | $k_m\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto k_m\tilde{Ξ}_{\mathrm{sp}}$ |
 | the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\bigr)$ |
@@ -529,7 +529,7 @@ A migration that has been done once already leaves a record of what went wrong, 
 
 The transpose rule. It holds in $\mathrm{axf}$, $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$, and it does not hold in the Pauli display. A proof that uses it is a proof about the axis-free frame, and it must be stated as such or re-proved.
 
-The blocks. The two identical blocks of the Pauli array are the statement that left multiplication preserves the two Peirce components. In $\mathrm{axf}$ there are no blocks, and the same content is the statement that the right slot of the basis operator $L_{\vec e_k}R_{\vec e_y}$ does not move. A sentence about "the blocks" has to be rewritten as a sentence about the ideal.
+The blocks. The two identical blocks of the Pauli array are the statement that left multiplication preserves the two Peirce components. In $\mathrm{axf}$ there are no blocks, and the same content is the statement that the right slot of the basis operator $L_{\vec e_\eta}R_{\vec e_y}$ does not move. A sentence about "the blocks" has to be rewritten as a sentence about the ideal.
 
 The diagonal member. In the Pauli display one spatial unit sits on the diagonal, and a sentence about "the diagonal entry" is a sentence about that unit. In $\mathrm{axf}$ every diagonal basis operator is a square, and the entry says nothing about any unit. A sentence of that kind must be rewritten with the unit named.
 
@@ -597,7 +597,7 @@ The migration has three passes — arrays to basis operators, basis operators to
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, complex dimension four |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t^2=e_t$ and $\vec e_k^2=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$ |
 | the four squares | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$; the diagonal basis operators of the coefficient basis, a set unchanged by a permutation of the three spatial units |
 | $L_a$, $R_b$ | left and right multiplication, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ |
 | $L_aR_b$ | the two-sided operator, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$ |
@@ -608,7 +608,7 @@ The migration has three passes — arrays to basis operators, basis operators to
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the idempotents of the root, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$ |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the mixed Peirce units, defined up to $\vec\Upsilon_+\mapsto\lambda\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\lambda^{-1}\vec\Upsilon_-$ |
 | $\vec{Ζ}=i\vec e_z$ | the root, of square $e_t$; the direction the Peirce frame fixes |
-| $\gamma_\mu[\mathbb{B}_{\Phi}]$ | the five frame basis operators, $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{B}_{\Phi}$ and the index is low |
+| $\gamma_\mu[\mathbb{B}_{\Phi}]$ | the five frame basis operators, $iR_{\vec e_x}$, $iL_{\vec e_\eta}R_{\vec e_y}$ and $-iR_{\vec e_z}$; the frame is $\mathbb{B}_{\Phi}$ and the index is low |
 | $\mathrm{axf}$ | the label of the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
 | $\mathrm{pau}$ | the label of the Pauli display, the Peirce frame of the root $i\vec e_z$ |
 | $\langle\tilde Q\rangle_\natural$ | the quaternion norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$; its square is the determinant of the left array |

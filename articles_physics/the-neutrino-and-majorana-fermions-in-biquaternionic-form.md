@@ -59,7 +59,7 @@ a pure right multiplier, so it is an example of the right slot and never its def
 
 $$
 c_0:\tilde{Ξ}_{\mathrm{sp}}\longmapsto\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x,\qquad
-c_k:\tilde{Ξ}_{\mathrm{sp}}\longmapsto\vec e_k\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y,\quad k=x,y,z .
+c_k:\tilde{Ξ}_{\mathrm{sp}}\longmapsto\vec e_\eta\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y,\quad k=x,y,z .
 $$
 
 The four are real: the coefficient conjugation fixes each of them, because it fixes the units and negates only $i$, and none of the four carries an $i$. Two squares and six anticommutators are all that is used below,
@@ -68,9 +68,9 @@ $$
 c_0^{2}=-1,\qquad c_k^{2}=+1,\qquad \{c_\mu,c_\nu\}=0\quad(\mu\neq\nu),
 $$
 
-and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_k^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
+and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_\eta^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
 
-**The operator.** With $x_0=r'_t$ and $x_k$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_k=x_k$ the material reading of the four coordinates,
+**The operator.** With $x_0=r'_t$ and $x_k$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_\eta=x_k$ the material reading of the four coordinates,
 
 $$
 D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
@@ -206,10 +206,10 @@ The vanishing of the vector current is the statement that a self-conjugate field
 
 | Conjugation | Action on the units and on $i$ | Type |
 |---|---|---|
-| ${}^{\natural}$ quaternion | $\vec e_k\mapsto-\vec e_k$, $i\mapsto i$, $e_t\mapsto e_t$ | $\mathbb{C}$-linear antiautomorphism |
+| ${}^{\natural}$ quaternion | $\vec e_\eta\mapsto-\vec e_\eta$, $i\mapsto i$, $e_t\mapsto e_t$ | $\mathbb{C}$-linear antiautomorphism |
 | $\bar{\cdot}$ complex | units fixed, $i\mapsto-i$ | conjugate-linear **automorphism** |
-| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ Hermitian | $\vec e_k\mapsto-\vec e_k$, $i\mapsto-i$ | conjugate-linear antiautomorphism |
-| $\flat=-{}^{*}$ | $\vec e_k\mapsto\vec e_k$, $i\mapsto i$, $e_t\mapsto-e_t$ | conjugate-linear, order-reversing with a sign |
+| ${}^{*}={}^{\natural}\circ\bar{\cdot}$ Hermitian | $\vec e_\eta\mapsto-\vec e_\eta$, $i\mapsto-i$ | conjugate-linear antiautomorphism |
+| $\flat=-{}^{*}$ | $\vec e_\eta\mapsto\vec e_\eta$, $i\mapsto i$, $e_t\mapsto-e_t$ | conjugate-linear, order-reversing with a sign |
 
 **The criterion is automorphism against antiautomorphism.** A conjugation that is to be a real structure on the field must commute with the algebra's action on it, and on the regular element the action is left multiplication. Commuting with the order of a product is what an automorphism does and what an antiautomorphism reverses:
 
@@ -314,7 +314,7 @@ The framework transcribes both facts, and neither is a derivation.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In basis operators they are
 
@@ -333,7 +333,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -380,7 +380,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex and Hermitian conjugations |
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
-| $c_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $c_k:\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
+| $c_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $c_k:\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
 | $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
 | $\Box=\sum_\mu\partial^2/\partial R_\mu^2=-\partial^2/\partial {r'_{t}}^2+\Delta$ | d'Alembertian; $\Delta$ is the spatial Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |

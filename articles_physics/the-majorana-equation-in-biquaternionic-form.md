@@ -9,7 +9,7 @@ This article asks what the biquaternion framework supplies for that equation, in
 The presentation is organized around one question — *where can the mass term sit?* — and the answer is split, at the outset, into the three categories the corpus uses.
 
 - **Established, and recomputed below.** The equation is one element equation, with the derivative from the left and the mass from the right, through $\vec e_z$ and the coefficient conjugation,
-$$i\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}-k_mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z=0 .$$
+$$i\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}-k_mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z=0 .$$
 This is the corpus's two-sided form, the dictionary of Kravchenko used throughout the series (*The Dirac Equation in Biquaternionic Form*). Its plane waves sit on the ordinary shell, $k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$; the warrant is the nullity table of §*Why the Mass Sits on the Right*, which also shows that the two obvious alternatives — the mass as a bare conjugation, and the mass through the star — put their solutions on the spacelike locus instead.
 - **Sharpened here.** The mass is on the right because a letter cannot be moved from the left: left multiplication keeps the letter of its operand, so a mass inside the left slot applies one factor to both letters and couples nothing. The mass term of an $L$ part is an $R$ element, and the same display read on its two letters is a pair of equations, each carrying the conjugate of the other letter. That is the biquaternionic form of the chiral pair, with one field and no second one.
 - **Gap, left visible.** Equality with the conjugate is a reality condition, and the algebra's conjugations are classified here: the coefficient conjugation and the star are involutions with four-real-dimensional fixed spaces, and the unit-conjugated conjugations that exchange the two letters are involutions of the same size. None of them commutes with the equation — the sixteen bar-two-sided-operatored forms were tested — so the condition is not propagated at the level of the algebra, and the physical Majorana field is defined by the construction of *The Neutrino and Majorana Fermions in Biquaternionic Form*. The companion *Antilinear Structure and the Two Kinds of Mass* owns the diagnosis, and the present article states only its algebraic content.
@@ -54,7 +54,7 @@ The equation is one equation, and the three forms of the literature are three re
 **The element form.** The equation is
 
 $$
-i\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}-k_mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z=0 ,
+i\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}-k_mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z=0 ,
 $$
 
 which is the corpus's two-sided form on the algebra: the derivative from the left, and the mass from the right through the spatial unit. Three actions sit in it, and none is decoration.
@@ -214,7 +214,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -238,7 +238,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 ## Summary
 
 The Majorana equation is the relativistic equation of a field equal to its own conjugate, and its biquaternionic form is one element equation: the derivative acts from the left, and the mass from the right, through the spatial unit $\vec e_z$ and the coefficient conjugation,
-$$i\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}-k_mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z=0 .$$
+$$i\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}-k_mi\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z=0 .$$
 The three forms of the literature are three readings of it and not three laws. Read on the two letters it is a pair, each member acting on one letter and carrying the conjugate of the other, which is the chiral pair with one field and no second one. Read on the fixed space of the coefficient bar it is a real equation on four real coefficients.
 
 The mass sits in the right slot and not in the left, and that is a statement about letters: left multiplication keeps the letter of its operand, so a mass written as a left action is diagonal on the letters and couples nothing; a right multiplication takes the letter of its factor and couples them. The nullity table is the measurement: the mass from the right has eight real solutions on the timelike shell and none on the spacelike one, a bare conjugation has none on the timelike shell and eight on the spacelike one, and the star has none and four.

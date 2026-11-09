@@ -174,7 +174,7 @@ $$
 \tilde\Pi_-^2=\tilde\Pi_-\;}
 $$
 
-so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\frac{m\,c}{k_m}$, $\tilde S_{\Psi,+}=\frac{m\,c}{2\,k_m}(i\vec e_x-\vec e_y)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ they have the images
+so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\frac{m\,c}{k_m}$, $\tilde S_{\Psi,+}=\frac{m\,c}{2\,k_m}(i\vec e_x-\vec e_y)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ they have the images
 
 $$
 \mathsf{M}_2(\vec\Upsilon_x)=|0\rangle\langle1|,\qquad
@@ -294,12 +294,12 @@ The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mat
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
-| $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
+| $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
 | $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ | Annihilation and creation operators (general) |
 | $N=\sum_ia_{\mathrm{fop},i}^{\dagger}a_{\mathrm{fop},i}$ | Number operator |

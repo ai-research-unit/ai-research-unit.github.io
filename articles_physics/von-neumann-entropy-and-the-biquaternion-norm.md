@@ -37,7 +37,7 @@ The article proceeds as follows. The state, its purity, and the biquaternion nor
 A state of the informational sector is an element of the Hermitian subspace
 
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_k\in\mathbb{R},
+\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_\eta\in\mathbb{R},
 $$
 
 normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$. Its matrix image is
@@ -280,7 +280,7 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\tilde\Pi_{1,2}(\vec u_r) = \tfrac12(e_t\pm i\vec u_r)$ | Spectral idempotents of the state |

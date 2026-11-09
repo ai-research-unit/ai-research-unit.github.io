@@ -42,7 +42,7 @@ $$
 \qquad\Longleftrightarrow\qquad
 \tilde{P}_{\Phi,\rm in} - \tilde{P}_{\Phi,\rm out} = 0 .
 $$
-Write the difference as $i\Delta_0\,e_t + \vec\Delta$, with $\Delta_0$ real and $\vec\Delta = \sum_k\Delta_k \vec e_k$ a real three-vector, by the membership condition of $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{B}_{\Phi}$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
+Write the difference as $i\Delta_0\,e_t + \vec\Delta$, with $\Delta_0$ real and $\vec\Delta = \sum_\eta\Delta_k \vec e_\eta$ a real three-vector, by the membership condition of $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{B}_{\Phi}$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
 $$
 \mathrm{Sc}\!\left(\tilde{P}_{\Phi,\rm in}-\tilde{P}_{\Phi,\rm out}\right) = 0
 \iff \sum_a E_a = \sum_f E_f,
@@ -387,7 +387,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector): real scalar, imaginary vector |

@@ -126,10 +126,10 @@ $$
 \boxed{\;\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr)=\tfrac12\qquad(b\ne b_2)\;}.
 $$
 
-**Interpretation.** The three coordinate measurements are the three unbiased bases, and their completeness is the tomographic statement that three outcome probabilities determine the Bloch vector. The outcome probabilities in the basis along $\vec e_k$ are
+**Interpretation.** The three coordinate measurements are the three unbiased bases, and their completeness is the tomographic statement that three outcome probabilities determine the Bloch vector. The outcome probabilities in the basis along $\vec e_\eta$ are
 
 $$
-p_k(\pm)=\tfrac12(1\pm r_k),\qquad r_k=p_k(+)-p_k(-),
+p_\eta(\pm)=\tfrac12(1\pm r_\eta),\qquad r_\eta=p_\eta(+)-p_\eta(-),
 $$
 
 so the three bases reconstruct the state. The algebra's three imaginary units are the three bases; mutual unbiasedness is the anticommutation of the units seen through the trace.
@@ -146,7 +146,7 @@ $$
 \qquad \epsilon_1\epsilon_2\epsilon_3=+1\;}.
 $$
 
-Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is $*$-unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.
+Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_\eta^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is $*$-unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.
 
 The protocol uses three qubits. Alice holds the unknown state, the pair is in the state $\tilde\Pi_{Ξ^+}$, she measures the Bell basis on her two qubits, and the four outcomes occur with probability $\tfrac14$. Each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, and the correction is one of the four Pauli gates $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, up to a phase. With the outcome record and the correction, the net map is the identity channel; without the record, Bob's state is $\tfrac12e_t$ and nothing is transferred. Alice's two qubits are left in a Bell state, so each of her qubits is maximally mixed and no copy of the unknown state survives.
 

@@ -156,7 +156,7 @@ $$
 \Delta\Psi + 2\langle\nabla\zeta,\nabla\Psi\rangle = 0,
 $$
 
-equivalently $\operatorname{div}(\exp(2\zeta)\nabla\Psi) = 0$. The first form is the **transport equation** of the ray method, which appears paired with the eikonal equation in the short-wavelength approximation of the wave equation; the second is the equation of electrostatics with $\exp(2\zeta)$ as the dielectric permeability, and the continuity equation of a steady flow with $\exp(2\zeta)$ as the density. The classical first theorem is the case $\vec h = 0$.
+equivalently $\operatorname{div}(\exp(2\zeta)\nabla\Psi) = 0$. The first form is the **transport equation** of the ray method, which appears paired with the eikonal equation in the ray approximation of a linear equation; the second is the continuity equation of a steady flow with $\exp(2\zeta)$ as the density. The classical first theorem is the case $\vec h = 0$.
 
 **Proposition (the second theorem, lifted).** Let $\vec h_1 = \operatorname{grad}\zeta_1$ and $\vec h_2 = \operatorname{grad}\zeta_2$ be two particular solutions. Then
 
@@ -312,7 +312,7 @@ where $\vartheta_{\mathrm{thf}}$ is the Riemann theta function of the hyperellip
 
 **Remark (the role of the Riemann surface).** The finite-gap construction turns the integrable equation into a problem in the geometry of a compact Riemann surface: the flow of KdV is the straight-line motion of the divisor of the Baker–Akhiezer function on the Jacobian of the curve, and the quasi-periodicity is the projection of a linear flow on a torus. The soliton is the degenerate case $g=1$ in which the curve is singular and the theta function degenerates to a hyperbolic function; the reflectionless $N$-soliton is the limit in which all the bands but finitely many collapse to points.
 
-**Definition.** The **Painlevé test** for an evolution equation requires that every solution of the equation, continued around a movable singularity in the complex time plane, be single-valued: the solution must have the form $(t-t_0)^{\alpha}$ times an analytic function of $(t-t_0)$, with $\alpha$ rational and the expansion free of movable branch points. An equation passing the test is **of Painlevé type**, and for integrable equations the test is expected to succeed.
+**Definition.** The **Painlevé test** for an evolution equation requires that every solution of the equation, continued around a movable singularity in the complex $t$-plane, be single-valued: the solution must have the form $(t-t_0)^{\alpha}$ times an analytic function of $(t-t_0)$, with $\alpha$ rational and the expansion free of movable branch points. An equation passing the test is **of Painlevé type**, and for integrable equations the test is expected to succeed.
 
 **Theorem (Weiss–Tabor–Carnevale).** The KdV equation passes the Painlevé test; the expansion of a solution about a movable singular manifold $\phi(x,t)=x-x_0(t)$ takes the form $w = -2\partial^2/\partial x^2\,\log\phi + w_0 + w_1\phi + \dots$, with the recursion for the coefficients obstructed only at the resonances, and the obstruction conditions are satisfied identically.
 
@@ -348,7 +348,7 @@ The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v
 | $\mathcal{P}_1$, $\mathcal{P}_2$ | Compatible Hamiltonian (Poisson) structures |
 | $H$, $H_1$, $H_2$ | Hamiltonian functionals, $\delta H/\delta w$ the variational derivative |
 | $\psi_\pm$, $a$, $b$, $r$ | Jost solutions, transmission and reflection data |
-| $\kappa_n$, $c_n$ | Bound-state wavenumbers and norming constants |
+| $\kappa_n$, $c_n$ | Bound-state parameters, the eigenvalues being $-\kappa_n^2$, and norming constants |
 | $K(x,y)$, $B$ | Gelfand–Levitan–Marchenko kernel and its data |
 | $\kappa$, $x_0$ | Soliton parameter and centre |
 | $\Theta$, $\lambda_j$ | Riemann theta function and band edges; $g$ the genus |

@@ -189,7 +189,7 @@ $$
 \exp(\frac{k_m\,\vec u\,S}{m\,c}) = \cos\!\Big(\frac{k_m\,S}{m\,c}\Big)e_t + \sin\!\Big(\frac{k_m\,S}{m\,c}\Big)\vec{u},
 $$
 
-which is $*$-unitary, $(\exp(\frac{k_m\,\vec u\,S}{m\,c}))(\exp(\frac{k_m\,\vec u\,S}{m\,c}))^\dagger = e_t$, and whose exponent $\frac{k_m\,\vec u\,S}{m\,c}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_k \mapsto -i\sigma_k$ with $\vec{u} = \vec e_z$ it maps to
+which is $*$-unitary, $(\exp(\frac{k_m\,\vec u\,S}{m\,c}))(\exp(\frac{k_m\,\vec u\,S}{m\,c}))^\dagger = e_t$, and whose exponent $\frac{k_m\,\vec u\,S}{m\,c}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
 \exp(\frac{k_m\,\vec e_{z}\,S}{m\,c}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-\frac{k_m\,i\,S}{m\,c}),\, \exp(+\frac{k_m\,i\,S}{m\,c})\bigr),
@@ -308,7 +308,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; home of the path phase |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

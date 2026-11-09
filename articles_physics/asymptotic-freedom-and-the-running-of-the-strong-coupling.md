@@ -10,7 +10,7 @@
 - **The running is a straight line.** At one loop $1/\alpha_s$ is linear in $\ln\mu$, with slope $b_0/2\pi$. Every number in this article follows from that line.
 - **The coupling is traded for a scale.** The classical theory has a dimensionless coupling and no scale; the quantum theory has a scale $\Lambda$ and no free dimensionless coupling. That trade is dimensional transmutation, and it is why QCD can predict dimensionless ratios absolutely and cannot predict its own overall scale.
 
-**Why this article is not the renormalization-group article.** The group article derives the beta function in its general form, treats the scalar quartic coupling beside the gauge coupling, and finds the Wilson–Fisher and Banks–Zaks fixed points. This article does none of that. It takes the coefficient as given, solves the equation, and follows the solution to the numbers — $\alpha_s(M_Z)=0.1179$, $\Lambda_5=87$ MeV, the coupling at every scale from $1.5$ GeV to $10$ TeV — and then states where the truncation stops being trustworthy. The division of labour is deliberate and the two articles should be read in that order.
+**Why this article is not the renormalization-group article.** The group article derives the beta function in its general form, treats the scalar quartic coupling beside the gauge coupling, and finds the Wilson–Fisher and Banks–Zaks fixed points. This article does none of that. It quotes the fixed-point value once, in the section on the edge of the theory, and derives nothing there. It takes the coefficient as given, solves the equation, and follows the solution to the numbers — $\alpha_s(M_Z)=0.1179$, $\Lambda_5=87$ MeV, the coupling at every scale from $1.5$ GeV to $10$ TeV — and then states where the truncation stops being trustworthy. The division of labour is deliberate and the two articles should be read in that order.
 
 ## The Coefficient and Its Three Contributions
 
@@ -30,7 +30,7 @@ $$
 
 The conversion between the two is one line of algebra and is worth stating because the two forms are both in circulation: $d\alpha_s/d\ln\mu=(g_s/2\pi)\beta_{g_s}$, and $(g_s/2\pi)\left(-b_0g_s^3/16\pi^2\right)=-b_0g_s^4/32\pi^3=-b_0\alpha_s^2/2\pi$.
 
-**The three contributions, named.** The coefficient is a sum of three diagram classes, and the colour factors $C_A=3$ and $T_R=1/2$ were computed from explicit Gell-Mann matrices in the QCD article.
+**The three contributions, named.** The coefficient is a sum of three diagram classes, which the table below groups into two lines because only their sum enters; the colour factors $C_A=3$ and $T_R=1/2$ were computed from explicit Gell-Mann matrices in the QCD article.
 
 | Contribution | Colour factor | Its term in $b_0$ | At $N_c=3$ |
 |---|---|---|---|
@@ -59,9 +59,9 @@ The agreement is exact but the two bookkeepings diverge the moment a theory has 
 
 ## Why the Sign Is Negative
 
-**The count.** The gluon's antiscreening carries weight $11$ and each quark's screening carries $-\tfrac23$. Six quarks remove four units, leaving seven. Asymptotic freedom is the statement $11>\tfrac23N_f$, and at $N_f=6$ the margin is a factor of nearly three.
+**The count.** The gauge sector's antiscreening carries weight $11$ — the gluon and ghost loops together, not the gluon alone — and each quark's screening carries $-\tfrac23$. Six quarks remove four units, leaving seven. Asymptotic freedom is the statement $11>\tfrac23N_f$, and at $N_f=6$ the margin is a factor of nearly three.
 
-**The physical picture, and what it is worth.** A colour charge placed in the vacuum polarises it: virtual $q\bar q$ pairs screen the charge the way a dielectric screens an electric charge, which is the QED behaviour and would make the coupling grow with distance. The gluon carries colour itself, so the virtual gluons are not a dielectric but a paramagnet, and their contribution has the opposite sign: the charge appears to *grow* as the probe approaches, so the coupling falls with increasing $Q$. That is the picture, and it is correct as far as it goes. It is worth less than the calculation: the picture explains the sign but not the size, and the size — $11$ against $\tfrac23$ per flavour — is the content. The word *antiscreening* names a result; it does not produce one.
+**The physical picture, and what it is worth.** A colour charge placed in the vacuum polarises it: virtual $q\bar q$ pairs screen the charge the way a dielectric screens an electric charge, which is the QED behaviour and would make the coupling grow with distance. The gluon carries colour itself, so the virtual gluons are not a dielectric but a paramagnet, and their contribution has the opposite sign: the charge appears to *grow* as the probe recedes, so the coupling falls as $Q$ rises. The direction is worth stating twice, because it is the one place the analogy is easy to invert: screening makes the charge grow as the probe approaches, antiscreening makes it shrink, and it is the second that QCD does. That is the picture, and it is correct as far as it goes. It is worth less than the calculation: the picture explains the sign but not the size, and the size — $11$ against $\tfrac23$ per flavour — is the content. The word *antiscreening* names a result; it does not produce one.
 
 **What the sign actually says.** In the ultraviolet, $g_s\to0$ and the partonic description becomes exact. In the infrared, $g_s$ grows without bound in perturbation theory and the expansion dies. Both halves matter, and only the first is under control: asymptotic freedom is a statement about short distances that is *derived*, and confinement is a statement about long distances that is *not* derived from the same information, even though it is the natural continuation of the same sign. This article is about the derived half.
 
@@ -108,15 +108,15 @@ against $b_0/2\pi=7.667/6.283=1.220$. The agreement is not a coincidence and not
 | $10$ | $5$ | $5.785$ | $0.1729$ | $0.1776$ |
 | $30$ | $5$ | $7.125$ | $0.1403$ | $0.1417$ |
 | $91.19$ | $5$ | $8.482$ | $0.1179$ | $0.1179$ |
-| $200$ | $6$ | $9.440$ | $0.1059$ | $0.1055$ |
-| $1000$ | $6$ | $11.404$ | $0.0877$ | $0.0868$ |
-| $10000$ | $6$ | $14.214$ | $0.0704$ | $0.0694$ |
+| $200$ | $6$ | $9.425$ | $0.1061$ | $0.1057$ |
+| $1000$ | $6$ | $11.218$ | $0.0891$ | $0.0884$ |
+| $10000$ | $6$ | $13.783$ | $0.0726$ | $0.0718$ |
 
 **What the table shows and what it does not.** It shows the coupling falling by a factor of four between $1.5$ GeV and $10$ TeV, and it shows the one- and two-loop columns converging as the scale rises: the difference is ten per cent at $2$ GeV and one per cent at $30$ GeV. What it does not show is an observable. $\alpha_s$ is a parameter of a renormalisation scheme, not a number that any detector reads; the section *Where Perturbation Theory Dies* returns to this.
 
-**The measured values.** The world average at the $Z$ pole is $\alpha_s(M_Z)=0.1179\pm0.0009$, and the same coupling extracted at other scales is consistent with it once the running is applied: about $0.30$ at $2$ GeV, $0.331\pm0.013$ at the $\tau$ mass, and $0.088$ at $1$ TeV from the one-loop line. The agreement across three orders of magnitude, from $\tau$ decays to the $Z$ pole to jet production at the LHC, is the strongest quantitative evidence that the coefficient is what the group theory says it is. That it is *evidence* rather than *proof* matters: a different coefficient would have produced a different set of numbers, but the numbers are fitted at one scale and predicted at all others, which is the structure of the test.
+**The measured values.** The world average at the $Z$ pole is $\alpha_s(M_Z)=0.1179\pm0.0009$, and the same coupling extracted at other scales agrees with it once the running is applied, to within the truncation error discussed below: about $0.30$ at $2$ GeV, $0.331\pm0.013$ at the $\tau$ mass, and $0.089$ at $1$ TeV from the one-loop line. The agreement across three orders of magnitude, from $\tau$ decays to the $Z$ pole to jet production at the LHC, is the strongest quantitative evidence that the coefficient is what the group theory says it is. That it is *evidence* rather than *proof* matters: a different coefficient would have produced a different set of numbers, but the numbers are fitted at one scale and predicted at all others, which is the structure of the test.
 
-**Why the thresholds are not optional.** Using $N_f=3$ at all scales instead of four at $2$ GeV gives $0.332$ rather than $0.267$, an error of a quarter. The reason is that $b_0$ sits in the exponent-like denominator: a change of $\tfrac23$ in a coefficient of $8$ to $9$ is a few per cent, but it accumulates over the whole logarithm. A heavy quark that is kinematically absent must be removed from the running, and the removal is not a detail.
+**Why the thresholds are not optional.** Using $N_f=3$ at all scales instead of four at $2$ GeV gives $0.332$ rather than $0.267$, an error of a quarter. The reason is that $b_0$ sits in the exponent-like denominator: a change of $\tfrac23$ in a coefficient of $8$ is eight per cent of it, and it multiplies the whole logarithm, so eight per cent of the coefficient becomes a quarter of the answer. A heavy quark that is kinematically absent must be removed from the running, and the removal is not a detail.
 
 ## Lambda and Dimensional Transmutation
 
@@ -132,7 +132,7 @@ $$
 \alpha_s(\mu)=\frac{2\pi}{b_0\ln(\mu/\Lambda)} .
 $$
 
-**The formula is scale-invariant by construction, and that was checked.** Evaluating $\Lambda$ at three different scales with the one-loop solution gives the same number to five digits: $0.087311$ GeV from $\mu=91.19$, from $\mu=50$ and from $\mu=200$ GeV. The check is trivial algebra — $\ln\Lambda=\ln\mu_0-2\pi/(b_0\alpha_s(\mu_0))$ and the right side is $\mu$-independent because that is exactly what the running equation says — but it is the property that makes $\Lambda$ a parameter at all, and it is worth seeing.
+**The formula is scale-invariant by construction, and that was checked.** Evaluating $\Lambda$ at different scales *with the flavour number held fixed* gives the same number to four digits: $0.0873$ GeV from $\mu=91.19$ and from $\mu=50$ GeV, both with five flavours, and $0.0424$ GeV from $\mu=200$ GeV once the top is counted and $b_0=7$. The invariance is per flavour number and does not survive a threshold — the third scale is a different $\Lambda$, not the same one re-expressed, which is why every $\Lambda$ below carries a subscript. The check is trivial algebra — $\ln\Lambda=\ln\mu_0-2\pi/(b_0\alpha_s(\mu_0))$ and the right side is $\mu$-independent because that is exactly what the running equation says — but it is the property that makes $\Lambda$ a parameter at all, and it is worth seeing.
 
 **The numbers.**
 
@@ -164,7 +164,7 @@ $$
 
 so the uncertainty $\delta\alpha_s(M_Z)=0.0009$ becomes $\delta\Lambda/\Lambda=5.3$ per cent, about $\pm5$ MeV on $87$. A one per cent error in the coupling at the $Z$ pole is a five per cent error in the only scale of the strong interaction, and that amplification is the reason $\alpha_s(M_Z)$ is measured as hard as it is.
 
-**It is not the vacuum energy, though it sits in the same place.** The natural size of the QCD vacuum energy density is $\Lambda^4\approx4\times10^{-4}$ GeV$^4$. That is $1.6\times10^{43}$ times the observed dark-energy density of $2.5\times10^{-47}$ GeV$^4$. The two numbers are computed from the same theory and differ by forty-three orders of magnitude; the discrepancy is the cosmological constant problem, and this article names it and does not solve it.
+**It is not the vacuum energy, though it sits in the same place.** The natural size of the QCD vacuum energy density is $\Lambda_3^4\approx4\times10^{-4}$ GeV$^4$ for $\Lambda_3=142$ MeV, and a factor of seven smaller if $\Lambda_5$ is used instead — the estimate is an order of magnitude, but it needs a subscript like every other $\Lambda$ in this article. That is $1.6\times10^{43}$ times the observed dark-energy density of $2.5\times10^{-47}$ GeV$^4$. The two numbers are computed from the same theory and differ by forty-three orders of magnitude; the discrepancy is the cosmological constant problem, and this article names it and does not solve it.
 
 ## Where Perturbation Theory Dies
 
@@ -182,7 +182,7 @@ The two-loop value lands within two per cent of the measured one and the one-loo
 
 **The scale at which the expansion dies.** Setting $\alpha_s=1$ in the solution with three flavours gives $\mu=285$ MeV; with five flavours, $198$ MeV. Below about $300$ MeV the coupling is of order one, every term of the series is as large as the last, and the perturbative description of the vacuum has nothing to say. The calculated value of $\alpha_s$ at $1$ GeV is $0.357$, which is already large enough that a two-loop number there should be quoted with a warning.
 
-**What replaces it, and what does not.** Below that scale the relevant description is the lattice, where the coupling is defined at a finite lattice spacing and the continuum limit is taken; the hadron spectrum is computed there to per cent accuracy. What is *not* available is a derivation of confinement from the beta function. The running was derived; the area law was not. The next article in this series starts from the partonic description that asymptotic freedom licenses, and the one after that returns to the infrared from the other side.
+**What replaces it, and what does not.** Below that scale the relevant description is the lattice, where the coupling is defined at a finite lattice spacing and the continuum limit is taken; the hadron spectrum is computed there to per cent accuracy. What is *not* available is a derivation of confinement from the beta function. The running was derived; the area law was not. [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html) starts from the partonic description that asymptotic freedom licenses, and [Jets, the QCD Cross Section and the Infrared Structure](jets-the-qcd-cross-section-and-the-infrared-structure.html) returns to the infrared from the other side.
 
 **The discipline this imposes.** Because $\alpha_s$ is scheme-dependent and the series is asymptotic, no $\alpha_s$ determination is quoted here without a scale and a scheme, and no comparison between two determinations is made without running both to a common scale. A number like "$\alpha_s$ measured in $\tau$ decays" is shorthand for a scheme, an order, and a scale; the shorthand is universal in the literature and it is worth knowing that it is one.
 
@@ -190,7 +190,7 @@ The two-loop value lands within two per cent of the measured one and the one-loo
 
 **The sign change.** $b_0$ vanishes between $N_f=16$ and $N_f=17$: at $N_f=16$ it is $\tfrac13$ and at $N_f=17$ it is $-\tfrac13$. So QCD with seventeen Dirac flavours is not asymptotically free — the coupling grows in the ultraviolet — and the boundary is exactly $N_f=\tfrac{33}{2}$. Six flavours is comfortably inside; fifteen is barely inside, with $b_0=1$.
 
-**The window below the boundary.** For $N_f$ just below the critical value the two-loop coefficient is negative, and the two terms of the beta function balance at a fixed point. The group article computed the case $N_f=16$: $b_0=\tfrac13$, $b_1=-\tfrac{302}{3}$, and
+**The window below the boundary.** For $N_f$ just below the critical value the two-loop coefficient is negative, and the two terms of the beta function balance at a fixed point. [The group article](the-renormalization-group-in-biquaternionic-form.html) computed the case $N_f=16$: $b_0=\tfrac13$, $b_1=-\tfrac{302}{3}$, and
 
 $$
 \alpha_s^*=\frac{g^{*2}}{4\pi}\approx0.0416 ,
@@ -198,9 +198,9 @@ $$
 
 a fixed point small enough for perturbation theory to be meaningful. For $N_f$ between about $8$ and $16$ the theory is believed to be conformal in the infrared — the *conformal window* — and the fixed point moves to stronger coupling as $N_f$ falls, until perturbation theory loses control and the window's lower edge is a lattice question.
 
-**Why this matters for the real theory.** The Standard Model has six flavours, all of which are active above the top mass, and $b_0=7$ there. The theory is therefore far from the edge, and the large margin is what allows perturbation theory to be useful over four orders of magnitude in energy. A world with thirteen light flavours would have been a qualitatively different place: the coupling would have run slowly, $b_0$ would have been $\tfrac13$, and the confinement scale would have sat exponentially close to the ultraviolet rather than five orders of magnitude below it.
+**Why this matters for the real theory.** The Standard Model has six flavours, all of which are active above the top mass, and $b_0=7$ there. The theory is therefore far from the edge, and the large margin is what allows perturbation theory to be useful over four orders of magnitude in energy. A world with sixteen light flavours would have been a qualitatively different place: the coupling would have run slowly, $b_0$ would have been $\tfrac13$, and the confinement scale would have sat exponentially further below the ultraviolet — the formula gives of order $10^{-68}$ GeV — rather than the factor of $10^{3}$ that separates $\Lambda_5$ from $M_Z$.
 
-**The abelian contrast, in the same language.** QED has $b_0=-\tfrac43$ and no adjoint contribution, so there is no window and no fixed point at one loop: $1/\alpha$ falls steadily and would reach zero at $\exp(3\pi/2\alpha)\approx10^{277}$ GeV. That scale is called the Landau pole and is far beyond any physics that is meant to be described by QED; the point of quoting it is the order of magnitude, not the number. The sign of the beta function decides whether a theory has an ultraviolet problem or an infrared one, and QCD has the second.
+**The abelian contrast, in the same language.** QED has $b_0=-\tfrac43$ and no adjoint contribution, so there is no window and no fixed point at one loop: $1/\alpha$ falls steadily and would reach zero at $\exp(3\pi/2\alpha)\approx10^{280}$ GeV. That scale is called the Landau pole and is far beyond any physics that is meant to be described by QED; the point of quoting it is the order of magnitude, not the number. The sign of the beta function decides whether a theory has an ultraviolet problem or an infrared one, and QCD has the second.
 
 ## Two Routes to One Number
 
@@ -216,7 +216,7 @@ $$
 
 so $\alpha_s(M_Z)=0.1239$ against the measured $0.1179$ — five per cent high.
 
-**What the two numbers mean together.** The two routes miss the measured value in the same direction and by comparable amounts, and the size of the miss is the size of the truncation error at $2$ GeV, not a discrepancy between two measurements. Upward, the error is diluted by the logarithm: an eleven per cent error at $2$ GeV becomes five per cent at $M_Z$, because the same absolute error in $1/\alpha_s$ is a smaller fraction of a larger $1/\alpha_s$. That dilution is why a low-scale determination is worth having and why it must be quoted with its scale.
+**What the two numbers mean together.** The two routes miss in *opposite* directions in $\alpha_s$ — eleven per cent low at $2$ GeV, five per cent high at $M_Z$ — and that pattern is the signature of one defect rather than two: the one-loop line is too shallow between the two scales. In $1/\alpha_s$ the miss is the same absolute $0.41$ at both ends. The size of it is the size of the truncation error at $2$ GeV, not a discrepancy between two measurements. Upward, the error is diluted by the logarithm: an eleven per cent error at $2$ GeV becomes five per cent at $M_Z$, because the same absolute error in $1/\alpha_s$ is a smaller fraction of a larger $1/\alpha_s$. That dilution is why a low-scale determination is worth having and why it must be quoted with its scale.
 
 **The consistency statement, in one line.** Two determinations of $\alpha_s$ at different scales, run to a common scale and compared, test the coefficient; two determinations at the same scale, compared, test the measurements. This article has done the first and has not done the second, and the reason is that the second requires cross sections.
 
@@ -234,13 +234,13 @@ $$
 m_p=\frac{1}{2m_p}\langle p|T^\mu_{\ \ \mu}|p\rangle .
 $$
 
-**The number, and what it denies.** Lattice QCD gives about one per cent of the nucleon mass from the light quark masses and the remaining ninety-nine per cent from the gluon field energy, that is from the anomaly. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that converts that energy into a mass is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_p/\Lambda_3=938/142=6.6$ is a number the lattice computes rather than a coincidence.
+**The number, and what it denies.** Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $938$ MeV — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the trace anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_p/\Lambda_3=938/142=6.6$ is a number the lattice computes rather than a coincidence.
 
-**Why this belongs in this article rather than the next.** The running and the mass gap are two readings of one coefficient. The next article takes the partonic description that asymptotic freedom licenses and computes cross sections in it; this one closes by noting that the same coefficient which makes the partons free at short distance is the one that makes the proton heavy at long distance.
+**Why this belongs in this article and not the next two.** The running and the mass gap are two readings of one coefficient. [The parton article](the-parton-model-and-deep-inelastic-scattering.html) takes the partonic description that asymptotic freedom licenses and computes structure functions in it, and [the jets article](jets-the-qcd-cross-section-and-the-infrared-structure.html) computes the cross sections. This one closes by noting that the same coefficient which makes the partons free at short distance is the one that makes the proton heavy at long distance.
 
 ## What the Group Article Already Did
 
-**The division, stated plainly.** [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) established: the Wilsonian effective action and its flow equation; the regulator and the momentum shell; the one-loop bubble and its $1/8\pi^2$; the beta functions of the quartic, abelian and non-abelian couplings with their signs; the adjoint Casimir checked for $SU(2)$ and $SU(3)$; the threshold $N_f\le16$ verified on $N_f=16$ and $N_f=17$; and both non-trivial fixed points with their stability. It also recorded the framework-specific obstruction: the regulator the algebra most naturally hosts is a sharp cutoff on the biquaternion norm, and that regulator breaks gauge invariance, while the regulator that preserves it — dimensional regularisation — is not a four-dimensional biquaternion object. The running of a non-abelian coupling therefore has to be computed in a scheme the algebra does not supply.
+**The division, stated plainly.** [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) established: the Wilsonian effective action and its flow equation; the regulator and the momentum shell; the one-loop bubble and its $1/8\pi^2$; the beta functions of the quartic, abelian and non-abelian couplings with their signs; the adjoint Casimir checked for $SU(2)$ and $SU(3)$; the threshold $N_f\le16$ verified on $N_f=16$ and $N_f=17$; and both non-trivial fixed points with their stability. It also recorded where the algebra stops: the regulator the algebra most naturally hosts is a sharp cutoff on the biquaternion norm, and gauge invariance forbids it, while the regulator that preserves gauge invariance — dimensional regularisation — is not a four-dimensional biquaternion object. The running of a non-abelian coupling therefore has to be computed in a scheme the algebra does not supply.
 
 **What this article adds.** The coefficient written in the colour factors rather than in the Casimirs, with the ghost split out of the eleven; the Dirac–Weyl conversion; the solution of the equation rather than its coefficient; the threshold matching; the numbers at the scales where the coupling is measured, at one and at two loops; $\Lambda$ with its scheme, order and flavour dependence; the sensitivity of $\Lambda$ to $\alpha_s$; the scale at which the expansion dies; and the parameter-count statement that turns the running into a prediction.
 
@@ -253,7 +253,7 @@ $$
 | Item | Status |
 |---|---|
 | The beta function and its one-loop coefficient | **Imported.** Standard theory; the group article's formula, used here |
-| The colours factors $C_A=3$, $T_R=1/2$ | **Derived** in the QCD article from explicit matrices, given $N_c=3$ |
+| The colour factors $C_A=3$, $T_R=1/2$ | **Derived** in the QCD article from explicit matrices, given $N_c=3$ |
 | $N_f\le16$ | **Derived** from the coefficient, given the particle content |
 | The solution of the running equation | **Derived here**, by separation of variables |
 | $\Lambda$ and dimensional transmutation | **Imported** in concept, **evaluated** here |
@@ -268,15 +268,15 @@ $$
 
 The strong coupling runs, and one coefficient decides how. $b_0=11-\tfrac23N_f$ is positive for every $N_f\le16$, it is the sum of $+11$ from the gluon and ghost loops and $-\tfrac23$ per quark flavour, and its positivity is asymptotic freedom. The two ways of counting the quark term — $-\tfrac23\sum_{\text{Weyl}}T(r)$ and $-\tfrac43T_RN_f$ — agree exactly, and both were written out.
 
-At one loop $1/\alpha_s$ is a straight line in $\ln\mu$ with slope $b_0/2\pi$, verified from the article's own table at $1.220$ against $1.220$. Every number follows from that line: $\alpha_s$ falls from $0.2975$ at $1.5$ GeV to $0.0704$ at $10$ TeV, with the flavour number changed at each quark threshold, and the one- and two-loop values converge from ten per cent apart at $2$ GeV to one per cent at $30$ GeV.
+At one loop $1/\alpha_s$ is a straight line in $\ln\mu$ with slope $b_0/2\pi$, verified from the article's own table at $1.220$ against $1.220$. Every number follows from that line: $\alpha_s$ falls from $0.2975$ at $1.5$ GeV to $0.0726$ at $10$ TeV, with the flavour number changed at each quark threshold, and the one- and two-loop values converge from ten per cent apart at $2$ GeV to one per cent at $30$ GeV.
 
-The coupling is traded for a scale. $\Lambda_5=87$ MeV, $\Lambda_4=119$ MeV, $\Lambda_3=142$ MeV, $\Lambda_6=42$ MeV, computed from the same coupling at different flavour numbers; $\Lambda$ is scale-invariant by construction, which was checked to five digits at three scales. It is not a mass, not scheme-independent, and not well determined: $\delta\alpha_s=0.0009$ becomes $\delta\Lambda/\Lambda=5.3$ per cent.
+The coupling is traded for a scale. $\Lambda_5=87$ MeV, $\Lambda_4=119$ MeV, $\Lambda_3=142$ MeV, $\Lambda_6=42$ MeV, computed from the same coupling at different flavour numbers; $\Lambda$ is scale-invariant by construction at fixed $N_f$, which was checked to four digits. It is not a mass, not scheme-independent, and not well determined: $\delta\alpha_s=0.0009$ becomes $\delta\Lambda/\Lambda=5.3$ per cent.
 
 The expansion dies below about $300$ MeV, where $\alpha_s=1$. At $2$ GeV the one-loop value is $0.267$, the two-loop value $0.296$, the measured value about $0.30$ — the series is converging there and the honest reading is convergence, not exactness.
 
 The theory has an edge at $N_f=16.5$ and a conformal window below it; the Standard Model sits far inside, with $b_0=7$ at six flavours, and that margin is why perturbation theory works over four orders of magnitude. QED sits on the other side of the same sign with a Landau pole, and the difference is the adjoint Casimir.
 
-Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the trace anomaly, with $m_p=938$ MeV of which about one per cent comes from quark masses and the rest from colour-field energy.
+Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the trace anomaly, with $m_p=938$ MeV of which a few per cent comes from the quark masses and the rest from colour-field energy.
 
 The framework supplies the sign rule and the colour factors and nothing else. The beta function is imported, the regulator is imported, and the value of $\Lambda$ is supplied by nothing at all.
 
@@ -295,6 +295,14 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $\Lambda$ | The strong-interaction scale, $\Lambda_{N_f}$ for $N_f$ flavours |
 | $m_t$, $m_b$, $m_c$ | Thresholds $172.69$, $4.18$, $1.27$ GeV |
 | $\alpha_s^*$ | Fixed-point coupling of the conformal window |
+| $g_s$ | The coupling itself, $\alpha_s=g_s^2/4\pi$; the beta function is written for $g_s$ |
+| $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
+| $m_p$ | Proton mass, $938$ MeV, the matrix element of the trace anomaly |
+| $\sigma$ | String tension; $m_p/\sqrt\sigma$ is a pure number the theory predicts |
+| $T^\mu_{\ \ \mu}$ | Trace of the energy–momentum tensor, proportional to $G^a_{\mu\nu}G^a_{\mu\nu}$ with coefficient $b_0$ |
+| $G^a_{\mu\nu}$ | Gluon field strength, $a=1,\dots,8$; the operator of the trace anomaly |
+| $\alpha$ | Fine-structure constant, $\alpha(0)=1/137.036$; used only in the QED contrast |
+| $\delta\alpha_s$, $\delta\Lambda$ | The uncertainties, and their propagation from $M_Z$ to $\Lambda$ |
 
 ## Further Reading
 
@@ -304,4 +312,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 - [The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The dimension bound behind the ledger's first row.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where $\alpha_s$ sits among the parameters, and at which scale.
 - [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The description that takes over below $300$ MeV.
+- [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The article that uses the asymptotically free description, and the structure functions it computes.
+- [Jets, the QCD Cross Section and the Infrared Structure](jets-the-qcd-cross-section-and-the-infrared-structure.html). Where the cross sections the parton model needs are computed, and where the infrared end of the running is met again.
+- [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). The area law that this article says the beta function does not give.
 - [Quantum Chromodynamics under the Biquaternion Framework: A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html). The classification that the ledger follows.

@@ -10,7 +10,7 @@ The article establishes three things. First, the module category of the algebra 
 
 The article closes with the algebra-level version of the same statement. The tensor powers of the algebra are matrix algebras whose defining modules are the tensor powers of the defining module, so spin $s$ requires the $2s$-th tensor power of the algebra before it can appear even as a pure carrier. This is the precise sense in which the framework does not put higher spin in the algebra: higher spin lives in the algebra's tensor powers and in their modules, and the constraints are what select it.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$; its centre is the complex scalar subspace $\mathbb{B}_{C} = \{Q_te_t\}$; its material and informational sectors are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$; and the defining, or spinor, module is written $S$, of complex dimension two. The finite-dimensional irreducible representations of the Lorentz group are labelled $(s,s_{\mathrm R})$, with $s$ the left-handed and $s_{\mathrm R}$ the right-handed label, and restriction to the rotation subgroup is written $\cdot|_{SU(2)}$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, and central scalar imaginary $i$; its centre is the complex scalar subspace $\mathbb{B}_{C} = \{Q_te_t\}$; its material and informational sectors are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$; and the defining, or spinor, module is written $S$, of complex dimension two. The finite-dimensional irreducible representations of the Lorentz group are labelled $(s,s_{\mathrm R})$, with $s$ the left-handed and $s_{\mathrm R}$ the right-handed label, and restriction to the rotation subgroup is written $\cdot|_{SU(2)}$.
 
 ## The Algebra and Its Defining Module
 
@@ -242,7 +242,7 @@ The reason is that $\mathbb{B}$ is a **simple** algebra, and a simple algebra ha
 
 ### The adjoint action and the appearance of a spin-one algebra
 
-The companion spin-one article exhibits a spin-one algebra inside $\mathbb{B}$: the inner derivations $D_k = \tfrac12\mathrm{ad}_{\vec e_k}$, with $\mathrm{ad}_{\vec e_k}(\tilde{Q})=[\vec e_k,\tilde{Q}]$, act on the traceless part of the algebra as a three-dimensional angular momentum. It is worth seeing why this does not contradict the ceiling, because the point is exactly the distinction between a module and a tensor product.
+The companion spin-one article exhibits a spin-one algebra inside $\mathbb{B}$: the inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\et}a$, with $\mathrm{ad}_{\vec e_\et}a(\tilde{Q})=[\vec e_\eta,\tilde{Q}]$, act on the traceless part of the algebra as a three-dimensional angular momentum. It is worth seeing why this does not contradict the ceiling, because the point is exactly the distinction between a module and a tensor product.
 
 The traceless part of $\mathbb{B}$ is a three-dimensional complex space, and under **conjugation** by the rotation subgroup, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ with $\tilde U\in G$, it is invariant and transforms in the adjoint representation, which is spin one. But it is not a submodule of $\mathbb{B}$ under left multiplication: the product of an arbitrary element with a traceless element is not traceless, so left multiplication does not preserve the space, and the traceless part is not closed under the action that a module structure requires. The conjugation action is a **bimodule** action, $\tilde{U}\tilde{Q}\tilde{U}^{*}$, and a bimodule over $\mathbb{B}$ is a module over $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$, not over $\mathbb{B}$. Correspondingly, the traceless part is the product $S\otimes\bar S$ with its trivial summand removed, which is why it carries spin one. The spin-one algebra is therefore present in the framework, but it is a tensor-product structure and not a left-module structure, and the ceiling statement is untouched.
 
@@ -303,7 +303,7 @@ The ceiling is therefore a statement about the module category and not about the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra, simple, centre the complex scalars |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Central scalar imaginary, the algebra's central phase |
 | $S$ | Defining (spinor) module, $\dim_\mathbb{C}S=2$, $S|_{SU(2)}=\tfrac12$ |
 | $S^{\oplus k}$ | General module; every module is of this form |

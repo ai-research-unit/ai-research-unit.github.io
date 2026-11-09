@@ -26,13 +26,13 @@ Second, the word "rotor conjugation" is used for the gate action, and it must be
 
 The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde Q_{\mathrm{Had}}\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde Q_{\mathrm{Had}}\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
 
 $$
 e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto i I_2 ,
 $$
 
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Under it, $\sigma_k$ is the image of $i \vec e_k$, and the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ is the spin-up pure state along $\vec u$.
+with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Under it, $\sigma_\eta$ is the image of $i \vec e_\eta$, and the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ is the spin-up pure state along $\vec u$.
 
 ## The Gate Group
 
@@ -148,7 +148,7 @@ A caution about representatives. A gate is a coset $\tilde Q\cdot \mathrm{U}(1)$
 
 ## The Standard Single-Qubit Gate Set
 
-Under the isomorphism $\vec e_k \mapsto -i\sigma_k$, the image of $i \vec e_k$ is $\sigma_k$. The standard gate set therefore reads as follows. In each row the second column is a biquaternion representative; a representative differing by a central phase gives the same gate.
+Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$, the image of $i \vec e_\eta$ is $\sigma_\eta$. The standard gate set therefore reads as follows. In each row the second column is a biquaternion representative; a representative differing by a central phase gives the same gate.
 
 | Gate | Biquaternion representative | Matrix image | Action on $\vec r=(r_1,r_2,r_3)$ |
 |---|---|---|---|
@@ -270,7 +270,7 @@ Non-commuting gates give distinct circuits. For example, the two orderings of a 
 The **single-qubit Pauli group** is the sixteen-element set
 
 $$
-\mathcal{P} = \{\pm e_t,\ \pm i e_t,\ \pm \vec e_k,\ \pm i \vec e_k : k=1,2,3\},
+\mathcal{P} = \{\pm e_t,\ \pm i e_t,\ \pm \vec e_\eta,\ \pm i \vec e_\eta : \eta = 1, 2, 3\},
 $$
 
 which is closed under the biquaternion product and is the image of the standard Pauli group $\langle X,Y,Z\rangle$ under the isomorphism. The **Clifford group** is its normaliser in the gate group,
@@ -293,7 +293,7 @@ $$
 \mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}),
 $$
 
-with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_{\mathbb{B}}(x)\cdot\mathrm{Tr}_{\mathbb{B}}(y)$, where $\mathrm{Tr}_{\mathbb{B}}(e_t)=2$ and $\mathrm{Tr}_{\mathbb{B}}(\vec e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. A **gate** is a $*$-unitary element of $\mathbb{B}^{\otimes n}$, acting on states (Hermitian, positive, trace-one elements of $\mathbb{B}_{\Psi}^{\otimes n}$) by conjugation. The elementary gates of a circuit are of two kinds: **local gates** $\tilde Q_1\otimes\tilde Q_2\otimes\cdots$ on the factors, and **entangling gates**, which are not tensor products.
+with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_{\mathbb{B}}(x)\cdot\mathrm{Tr}_{\mathbb{B}}(y)$, where $\mathrm{Tr}_{\mathbb{B}}(e_t)=2$ and $\mathrm{Tr}_{\mathbb{B}}(\vec e_\eta)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. A **gate** is a $*$-unitary element of $\mathbb{B}^{\otimes n}$, acting on states (Hermitian, positive, trace-one elements of $\mathbb{B}_{\Psi}^{\otimes n}$) by conjugation. The elementary gates of a circuit are of two kinds: **local gates** $\tilde Q_1\otimes\tilde Q_2\otimes\cdots$ on the factors, and **entangling gates**, which are not tensor products.
 
 Local gates on different factors commute, $(\tilde Q_{\mathrm{gate},1}\otimes e_t)(e_t\otimes \tilde Q_{\mathrm{gate},2}) = (e_t\otimes \tilde Q_{\mathrm{gate},2})(\tilde Q_{\mathrm{gate},1}\otimes e_t) = \tilde Q_{\mathrm{gate},1}\otimes \tilde Q_{\mathrm{gate},2}$, so the order of operations on disjoint wires is immaterial — the algebraic statement of the fact that commuting gates may be drawn in either order.
 
@@ -333,9 +333,9 @@ With the control axis $\vec u_z$ — the $|0\rangle/|1\rangle$ basis of the cont
 |---|---|---|
 | $\mathrm{CNOT}$ | $\tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x)$ | $\lvert 0\rangle\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_1$ |
 | $\mathrm{CZ}$ | $\tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_z)$ | $\lvert 0\rangle_{*}\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_3$ |
-| $\mathrm{SWAP}$ | $\dfrac{1}{2}\left(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right)$ | $\tfrac{1}{2}\left(I_4 + \sum_k \sigma_k\otimes\sigma_k\right)$ |
+| $\mathrm{SWAP}$ | $\dfrac{1}{2}\left(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right)$ | $\tfrac{1}{2}\left(I_4 + \sum_\eta \sigma_\eta\otimes\sigma_\eta\right)$ |
 
-All three were verified to be $*$-unitary, Hermitian, and involutive. The CNOT is the controlled-$X$; the CZ is the controlled-$Z$. The SWAP form follows from the standard identity $\mathrm{SWAP} = \tfrac{1}{2}(I\otimes I + \sum_k\sigma_k\otimes\sigma_k)$ together with $\vec e_k\otimes \vec e_k = -(i\vec e_k)\otimes(i\vec e_k) = -\sigma_k\otimes\sigma_k$ under the isomorphism. The SWAP is not a controlled gate but a permutation of the two factors, and it satisfies the standard factor-exchange relation
+All three were verified to be $*$-unitary, Hermitian, and involutive. The CNOT is the controlled-$X$; the CZ is the controlled-$Z$. The SWAP form follows from the standard identity $\mathrm{SWAP} = \tfrac{1}{2}(I\otimes I + \sum_\eta\sigma_\eta\otimes\sigma_\eta)$ together with $\vec e_\eta\otimes \vec e_\eta = -(i\vec e_\eta)\otimes(i\vec e_\eta) = -\sigma_\eta\otimes\sigma_\eta$ under the isomorphism. The SWAP is not a controlled gate but a permutation of the two factors, and it satisfies the standard factor-exchange relation
 
 $$
 (\tilde{Q}_{12})\,\mathrm{SWAP} = \mathrm{SWAP}\,(\tilde{Q}_{21}),
@@ -492,7 +492,7 @@ A gate in the biquaternion framework is a **$*$-unitary element** $\tilde Q\in\m
 
 The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$; the Hadamard is $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\theta_{\mathrm{pha}})(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
-**Composition** is the algebra product: applying $\tilde Q_{\mathrm{gate},1}$ then $\tilde Q_{\mathrm{gate},2}$ gives $\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
+**Composition** is the algebra product: applying $\tilde Q_{\mathrm{gate},1}$ then $\tilde Q_{\mathrm{gate},2}$ gives $\tilde Q_{\mathrm{gate},2}\tilde Q_{\mathrm{gate},1}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_\eta,\pm i\vec e_\eta\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 
 In the **multi-qubit** arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{Q}_{\tilde Q} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes\tilde Q$, $*$-unitary by the complementarity of the idempotents and the unitarity of $\tilde Q$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.
 
@@ -507,7 +507,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $\mathbb{B}_{C}$ | Complex subspace (centre); home of the global phase |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace (rotation rotors, $SU(2)$) |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | State of a qubit |
 | $\tilde\Pi_{1,2}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | Complementary idempotents |
@@ -519,10 +519,10 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$ | Hadamard gate |
 | $\tilde Q_{\mathrm{ph}}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde Q_{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |
 | $\tilde u_{\mathrm r}(\theta)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$ | General rotation gate |
-| $\mathcal{P}=\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$ | Pauli group (16 elements) |
+| $\mathcal{P}=\{\pm e_t,\pm ie_t,\pm \vec e_\eta,\pm i\vec e_\eta\}$ | Pauli group (16 elements) |
 | $\tilde{Q}_{\tilde Q}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde Q$ | Controlled gate |
 | $\mathrm{CNOT}=\tilde\Pi_1(\vec u_z)\otimes e_t+\tilde\Pi_2(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |
-| $\mathrm{SWAP}=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Swap gate |
+| $\mathrm{SWAP}=\tfrac12(e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Swap gate |
 | $Ξ(\tilde{Ϛ}_{\Psi})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel (irreversible, not a gate) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

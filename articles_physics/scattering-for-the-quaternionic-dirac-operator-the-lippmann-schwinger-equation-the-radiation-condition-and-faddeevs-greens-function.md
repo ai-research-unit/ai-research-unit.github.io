@@ -4,7 +4,7 @@
 
 The corpus's quaternionic function theory is a theory of the **direct** problem. *Biquaternion Regular Functions* states the shifted operator $D_\alpha = D + R_\alpha$, its three parameter branches and its four integral theorems; *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* uses them to solve the boundary-value problem of a bounded scatterer. In both, the data are given on a closed surface: a Hölder field on $\Gamma$ is the trace of a solution of $D_\alpha g = 0$ in the domain if and only if $P_\alpha f = f$. Nothing in the corpus answers the question optics actually asks, which is the other way round: **given a medium that scatters a wave, what does the field far from it say about the medium?**
 
-This article states the three-dimensional scattering theory of the same operator. The source is a short research paper of the quaternionic-analysis school, Swanhild Bernstein, *Seeing the Invisible and Maxwell's Equations*, written for a volume on inverse problems and motivated by **optical coherence tomography**. Its subject is the operator $D_3 + R_k$ with a **quaternionic, compactly supported potential** $m(x)$, and its tools are of two kinds. The first kind the corpus already owns: the Helmholtz fundamental solution, the outgoing radiation condition, the factorisation of the Laplacian, the zero-divisor cone. The second kind it does not: the **Lippmann–Schwinger** integral equation and its equivalence with the differential problem, the **unique continuation principle** that closes the Fredholm argument, and **Faddeev's Green's function** with the plane-wave substitution that produces it. The second kind is the substance of this article.
+This article states the three-dimensional scattering theory of the same operator. The source is a short research paper of the quaternionic-analysis school, Swanhild Bernstein, *Seeing the Invisible and Maxwell's Equations*, written for a volume on inverse problems and motivated by **optical coherence tomography**. Its subject is the operator $D_3 + R_\eta$ with a **quaternionic, compactly supported potential** $m(x)$, and its tools are of two kinds. The first kind the corpus already owns: the Helmholtz fundamental solution, the outgoing radiation condition, the factorisation of the Laplacian, the zero-divisor cone. The second kind it does not: the **Lippmann–Schwinger** integral equation and its equivalence with the differential problem, the **unique continuation principle** that closes the Fredholm argument, and **Faddeev's Green's function** with the plane-wave substitution that produces it. The second kind is the substance of this article.
 
 The article is organised as follows. A first section fixes the three-dimensional setting and the two one-sided multiplications, which are the source's notational pivot. A second recalls how Maxwell's equations become a Dirac-type system in a medium and states the force-free case. A third gives the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one. A fourth states the outgoing fundamental solution of the Helmholtz operator, the boundary representation it gives, and the radiation condition, including the zero-divisor caveat recorded beside that condition in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. A fifth states the scattering problem and the integral equation equivalent to it. A sixth assembles the two inputs of the uniqueness theorem. A seventh gives Faddeev's Green's function. A closing section separates what the source establishes from what it transcribes, and lists the open questions.
 
@@ -31,10 +31,10 @@ so that the scalar part of $D_3u$ is minus the divergence and its vector part is
 Because $\mathbb{B}$ is not commutative, a shift by an element of the algebra must say which side it multiplies on. The corpus names the two multipliers $L$ and $R$ (*Operator Family Conventions*, §*The Slots*), and this article writes
 
 $$
-L_k q = kq \quad(\text{left multiplication}), \qquad R_k q = qk \quad(\text{right multiplication}), \qquad q\in\mathbb{B}.
+L_\eta q = kq \quad(\text{left multiplication}), \qquad R_\eta q = qk \quad(\text{right multiplication}), \qquad q\in\mathbb{B}.
 $$
 
-The source writes the same pair with a single letter $M$, the side carried by the height: a superscript for the left multiplier and a subscript for the right one. The corpus's own shift is the right one: the $\alpha$-shift of *Biquaternion Regular Functions* is $q\mapsto q\alpha$, written $R_\alpha$ here. The distinction matters twice in what follows. It matters algebraically, because the two operators have different symbols and different kernels; and it matters in the factorisations below, where the *same* second-order operator is produced by either side, so that a source that switches between the two sides without comment is not in error, only terse. The source does switch: its section on the factorisation writes the vector shift with the left multiplier $L_k$, and its scattering problem is posed on $D_3+R_k$, and both are correct because a constant parameter commutes with $D_3$. What the two sides genuinely do not share is the fate of a *variable* coefficient: right multiplication by a function of $x$ does not commute with $\partial/\partial R_\mu$, and the force-free case below is of that kind.
+The source writes the same pair with a single letter $M$, the side carried by the height: a superscript for the left multiplier and a subscript for the right one. The corpus's own shift is the right one: the $\alpha$-shift of *Biquaternion Regular Functions* is $q\mapsto q\alpha$, written $R_\alpha$ here. The distinction matters twice in what follows. It matters algebraically, because the two operators have different symbols and different kernels; and it matters in the factorisations below, where the *same* second-order operator is produced by either side, so that a source that switches between the two sides without comment is not in error, only terse. The source does switch: its section on the factorisation writes the vector shift with the left multiplier $L_\eta$, and its scattering problem is posed on $D_3+R_\eta$, and both are correct because a constant parameter commutes with $D_3$. What the two sides genuinely do not share is the fate of a *variable* coefficient: right multiplication by a function of $x$ does not commute with $\partial/\partial R_\mu$, and the force-free case below is of that kind.
 
 ### Notation for the function spaces
 
@@ -113,7 +113,7 @@ the scalar shift of *Biquaternion Regular Functions* with its two branches $D_{3
 There is a second factorisation, and it is the one the scattering theory needs. With the parameter a **vector** $k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z$ and either multiplication,
 
 $$
-(D_3+L_k)(D_3-L_k) = (D_3-L_k)(D_3+L_k) = -\Delta - k^2 = -\Delta + \lvert k\rvert^2 ,
+(D_3+L_\eta)(D_3-L_\eta) = (D_3-L_\eta)(D_3+L_\eta) = -\Delta - k^2 = -\Delta + \lvert k\rvert^2 ,
 $$
 
 $$
@@ -129,14 +129,14 @@ where $k^2 = -k\cdot k = -\lvert k\rvert^2$ is the quaternion square of the vect
 The fundamental solution of the Helmholtz equation used throughout is the corpus's $\mathrm{Sd}_\alpha$ at $\alpha=k$,
 
 $$
-F_k(x-y) := -\frac{\exp(ik\lvert x-y\rvert)}{4\pi\lvert x-y\rvert}, \qquad x,y\in\mathbb{R}^3,\ x\ne y .
+F_\eta(x-y) := -\frac{\exp(ik\lvert x-y\rvert)}{4\pi\lvert x-y\rvert}, \qquad x,y\in\mathbb{R}^3,\ x\ne y .
 $$
 
 It solves $\Delta u+k^2u=0$ away from $y$, and its far-field behaviour is
 
 $$
-F_k(x-y) = -\frac{\exp(ik\lvert x\rvert)}{4\pi\lvert x\rvert}\,\exp(-ik\vec u_x\cdot y) + O(\lvert x\rvert^{-2}), \qquad
-D_3 F_k(x-y) = \bigl(D_3F_k\bigr)(x)\,\exp(-ik\vec u_x\cdot y) + O(\lvert x\rvert^{-2}),
+F_\eta(x-y) = -\frac{\exp(ik\lvert x\rvert)}{4\pi\lvert x\rvert}\,\exp(-ik\vec u_x\cdot y) + O(\lvert x\rvert^{-2}), \qquad
+D_3 F_\eta(x-y) = \bigl(D_3F_\eta\bigr)(x)\,\exp(-ik\vec u_x\cdot y) + O(\lvert x\rvert^{-2}),
 $$
 
 uniformly in the direction $\vec u_x$ and in $y$ in a bounded set. The source's Proposition 7.1 attributes this. The first two terms are what will make every integral of the theory an **outgoing** field, and the $O(\lvert x\rvert^{-2})$ is what will make it satisfy the radiation condition with room to spare.
@@ -146,8 +146,8 @@ uniformly in the direction $\vec u_x$ and in $y$ in a bounded set. The source's 
 Applying the shifted operator to the Helmholtz kernel gives the fundamental solution of the Dirac-type equation,
 
 $$
--D_{-k}F_k = C_k, \qquad
-C_k(\vec r) = \left(k+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-ik\vec u_x\right)\frac{\exp(ik\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert)}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
+-D_{-k}F_\eta = C_\eta, \qquad
+C_\eta(\vec r) = \left(k+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-ik\vec u_x\right)\frac{\exp(ik\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert)}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
 $$
 
 obtained, the source says, in the Kravchenko–Shapiro paper on the generalised Cauchy–Riemann system with a quaternionic parameter. Its bracket is exactly the bracket of the corpus's kernel in *Electromagnetism in Media — The Local Complex Structure at Work*,
@@ -156,20 +156,20 @@ $$
 \mathcal V_{\mathrm{vek},\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
 $$
 
-read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\mathrm{Sd}_k=\mathcal{V}_{\mathrm{vek},+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
+read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_\eta=-(D_3-k)\mathrm{Sd}_k=\mathcal{V}_{\mathrm{vek},+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_\eta$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_\eta$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
 
 ### The boundary representation
 
 The fundamental solution gives a representation of the solutions of the first-order equation by their boundary values, the source's Proposition 7.2. Let $G$ be a bounded Lipschitz domain with boundary $\partial G$ and outward unit normal $n$, and let $u\in H^1(G)$. If $u\in\ker(D_3+k)$ and $\operatorname{Im}(k)\ge0$, then
 
 $$
-u(r_x) = -\int_{\partial G} C_k(r_x-r_y)\,n(r_y)\,u(r_y)\,dy ,
+u(r_x) = -\int_{\partial G} C_\eta(r_x-r_y)\,n(r_y)\,u(r_y)\,dy ,
 $$
 
 and if $u$ lies in the kernel of the shifted operator — the source writes the two kernels as equal for the scalar $k$ of the proposition, where the two sides of the multiplication coincide — then
 
 $$
-u(r_x) = -\int_{\partial G}\Bigl[(-D_3F_k)(r_x-r_y)\,n(r_y)u(r_y) + n(r_y)u(r_y)\,F_k(r_x-r_y)\,k\Bigr]dy ,
+u(r_x) = -\int_{\partial G}\Bigl[(-D_3F_\eta)(r_x-r_y)\,n(r_y)u(r_y) + n(r_y)u(r_y)\,F_\eta(r_x-r_y)\,k\Bigr]dy ,
 $$
 
 with $k=\sqrt{k^2}$ chosen so that $\operatorname{Im}(k)\ge0$. The two statements are the same Cauchy-type formula the corpus states on $\mathbb{B}_{H}$ in *Biquaternion Regular Functions* and quotes for the shifted family in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*; what is new here is only that the kernel is the **outgoing** one and that the representation is used, below, to force a field to vanish at infinity.
@@ -182,13 +182,13 @@ $$
 \Bigl(k-\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}+ik\vec u_x\Bigr)f(\vec r) = o(r^{-1}) \qquad (r\to\infty),
 $$
 
-then $f = -C_k[f]$ for every $x\in G^{c}$, the middle bracket being a two-line fraction in the printed text. If instead $f$ lies in the kernel of the shifted operator and satisfies
+then $f = -C_\eta[f]$ for every $x\in G^{c}$, the middle bracket being a two-line fraction in the printed text. If instead $f$ lies in the kernel of the shifted operator and satisfies
 
 $$
 k\,f(\vec r) + \frac{i\vec r}{r}\,f(\vec r)\,k = o(r^{-1}) \qquad (r\to\infty),
 $$
 
-with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$, then again $f=-C_k[f]$ on $G^{c}$; and **if $k$ is a zero divisor the source assumes in addition $f(\vec r)=o(r^{-1})$**. The second form is the quaternionic radiation condition of the corpus's chiral-media article, the one whose scalar part is the Sommerfeld condition and whose vector part is the condition of Colton and Kress, and the extra hypothesis for the zero-divisor case is the caveat recorded beside it there: the element $1+i\vec u_x$ is a non-pure zero divisor, so the condition may not be divided by it and implies no decay rate on its own. The source records the same fact in a remark of its own — for a scalar $k$ the term $\vec u_x/\lvert x\rvert^{2}$ "can be written" away, "which apparently gives a faster decay", and this is "not true because $1+i\vec u_x$ is a zero divisor" — and the reduction of the second condition to the first is exactly where the two $O(\lvert x\rvert^{-2})$ and $o(\lvert x\rvert^{-1})$ estimates of the previous sections have to be used with care.
+with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$, then again $f=-C_\eta[f]$ on $G^{c}$; and **if $k$ is a zero divisor the source assumes in addition $f(\vec r)=o(r^{-1})$**. The second form is the quaternionic radiation condition of the corpus's chiral-media article, the one whose scalar part is the Sommerfeld condition and whose vector part is the condition of Colton and Kress, and the extra hypothesis for the zero-divisor case is the caveat recorded beside it there: the element $1+i\vec u_x$ is a non-pure zero divisor, so the condition may not be divided by it and implies no decay rate on its own. The source records the same fact in a remark of its own — for a scalar $k$ the term $\vec u_x/\lvert x\rvert^{2}$ "can be written" away, "which apparently gives a faster decay", and this is "not true because $1+i\vec u_x$ is a zero divisor" — and the reduction of the second condition to the first is exactly where the two $O(\lvert x\rvert^{-2})$ and $o(\lvert x\rvert^{-1})$ estimates of the previous sections have to be used with care.
 
 The source adds one restriction that the corpus should note, because it is easy to lose: its Proposition 7.5 says the representation behind the proposition is true for quaternion-valued functions, but that the paper restricts itself to **vector** fields, quaternion-valued functions with vanishing scalar part. A general quaternion-valued field, and in particular one with a non-zero scalar part, is only partly covered, and this is a real limitation of the chapter rather than a notational preference: the scalar part of the field is what the divergence condition constrains in the Maxwell interpretation.
 
@@ -212,14 +212,14 @@ $$
 k\,u_{\mathrm{sc}}(x) + \frac{ix}{\lvert x\rvert}\,u_{\mathrm{sc}}(x)\,k = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty), \tag{8.4}
 $$
 
-and if $k$ is a zero divisor, the additional hypothesis $u_{\mathrm{sc}}(x)=o(1)$. The multiplication is on the **right** throughout, as the displayed equations (8.2) and (8.4) show; the source's prose names the same operator once as $D+k$ and once with the right multiplier $R_k$, and its reduction of the next section prints the left multiplier $L_k$ instead, so the side has to be read from the equations rather than from the symbols. For a scalar $k$ the two sides agree and the point is moot; for the vector $k$ of the scattering problem they do not: a constant $k$ still commutes with $D_3$, so the two agree to second order, but the first-order operators differ by the bracket $q\mapsto kq-qk$, which need not vanish. The potential may be scalar, vector or quaternion-valued; the source writes $m$ for all three and says so, and this is what makes the problem a scattering problem for a **medium** rather than for a scalar obstacle. In the optical interpretation of the Introduction, $m$ is the contrast of the medium and the right-hand side $umk$ is the Born-type source of the scattered field.
+and if $k$ is a zero divisor, the additional hypothesis $u_{\mathrm{sc}}(x)=o(1)$. The multiplication is on the **right** throughout, as the displayed equations (8.2) and (8.4) show; the source's prose names the same operator once as $D+k$ and once with the right multiplier $R_\eta$, and its reduction of the next section prints the left multiplier $L_\eta$ instead, so the side has to be read from the equations rather than from the symbols. For a scalar $k$ the two sides agree and the point is moot; for the vector $k$ of the scattering problem they do not: a constant $k$ still commutes with $D_3$, so the two agree to second order, but the first-order operators differ by the bracket $q\mapsto kq-qk$, which need not vanish. The potential may be scalar, vector or quaternion-valued; the source writes $m$ for all three and says so, and this is what makes the problem a scattering problem for a **medium** rather than for a scalar obstacle. In the optical interpretation of the Introduction, $m$ is the contrast of the medium and the right-hand side $umk$ is the Born-type source of the scattered field.
 
 ### The integral equation and its equivalence with the problem
 
 The source's Theorem 8.2 states that the differential problem and an integral equation of Lippmann–Schwinger type have the same solutions. If $u$ solves (8.1)–(8.4), then $u$ restricted to $G$ solves
 
 $$
-\boxed{\;u(x) = u_{\mathrm{inc}}(x) - \int_G \Bigl[(-D_3F_k)(x-y)\,u(y)\,m(y)\,k + u(y)\,m(y)\,k\,F_k(x-y)\,k\Bigr] dy , \tag{8.5}\;}
+\boxed{\;u(x) = u_{\mathrm{inc}}(x) - \int_G \Bigl[(-D_3F_\eta)(x-y)\,u(y)\,m(y)\,k + u(y)\,m(y)\,k\,F_\eta(x-y)\,k\Bigr] dy , \tag{8.5}\;}
 $$
 
 and conversely every solution of (8.5) solves the scattering problem. The equivalence is not a formality, and its two halves are computed in the source. In the forward direction one forms the integral $b$ on the right of (8.5); since the kernel of the Helmholtz operator is a fundamental solution, $b$ solves the same inhomogeneous equation as $u$, so $w=u-b$ solves the **homogeneous** equation $D_3w+wk=0$; and because each kernel decays like $\lvert x\rvert^{-2}$ and $u,m$ have compact support, $w$ is an outgoing solution of the homogeneous equation, whence $w=0$ by the representation of the radiation-condition proposition. That is, the integral equation is the differential problem with the radiation condition solved out, and the forcing term is the potential. In the other direction the same computation is read backwards, and the source notes that the region of integration may be replaced by any domain containing the support of $m$, which is what makes the equation a Fredholm equation on a bounded domain.
@@ -241,8 +241,8 @@ The existence of a solution to (8.5) is obtained by the Fredholm alternative, an
 **Compactness** comes from the weak singularity of the kernels. The source's Lemma 8.4 states
 
 $$
-\lvert F_k(x-y)\rvert \le \frac{c}{\lvert x-y\rvert}, \qquad
-\lvert D_3F_k(x-y)\rvert \le \frac{c_1}{\lvert x-y\rvert^{2}} + \frac{c_2}{\lvert x-y\rvert} ,
+\lvert F_\eta(x-y)\rvert \le \frac{c}{\lvert x-y\rvert}, \qquad
+\lvert D_3F_\eta(x-y)\rvert \le \frac{c_1}{\lvert x-y\rvert^{2}} + \frac{c_2}{\lvert x-y\rvert} ,
 $$
 
 so the kernels of the Lippmann–Schwinger equation are weakly singular, hence the integral operators are **compact** as maps on spaces of continuous functions and on $L^p$, $1<p<\infty$, for bounded domains. This is the classical route, and the corpus's scattering articles use it in the same form; it is worth noting that it needs the *boundedness* of the domain, which is why the integration is over $G$ and not over $\mathbb{R}^3$.
@@ -253,7 +253,7 @@ $$
 \lvert\Delta u_p\rvert \le c\sum_{q=1}^{P}\bigl\{\lvert u_q\rvert+\lvert\operatorname{grad}u_q\rvert\bigr\} \qquad \text{in } G, \qquad p=1,\dots,P ,
 $$
 
-for some constant $c$. If every $u_p$ vanishes in a neighbourhood of some point $x_0\in G$, then every $u_p$ is identically zero in $G$. To reach this hypothesis from the equation, the source applies $D_3$ to the homogeneous form of (8.2), $(D_3+R_k)u-m(x)uk=0$ — the source prints the left multiplier $L_k$ in this one line, which is a different operator from the right multiplier $R_k$ of its scattering problem when $k$ is a vector — obtaining
+for some constant $c$. If every $u_p$ vanishes in a neighbourhood of some point $x_0\in G$, then every $u_p$ is identically zero in $G$. To reach this hypothesis from the equation, the source applies $D_3$ to the homogeneous form of (8.2), $(D_3+R_\eta)u-m(x)uk=0$ — the source prints the left multiplier $L_\eta$ in this one line, which is a different operator from the right multiplier $R_\eta$ of its scattering problem when $k$ is a vector — obtaining
 
 $$
 \Delta u = (D_3u)k - D_3\bigl(m(x)uk\bigr),
@@ -360,12 +360,12 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Transcribed from the corpus's own materials.**
 
-- The three-dimensional setting, the operator $D_3$ and the identification $D_3u=-\operatorname{div}u+\operatorname{curl}u$; the Helmholtz kernel $\mathrm{Sd}_k=F_k$ and the shifted kernels $\mathcal V_{\mathrm{vek},\pm k}$; the zero-divisor structure of the radiation condition. All of these are in *Biquaternion Regular Functions*, *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Electromagnetism in Media — The Local Complex Structure at Work*, and this article adds no formula to them.
+- The three-dimensional setting, the operator $D_3$ and the identification $D_3u=-\operatorname{div}u+\operatorname{curl}u$; the Helmholtz kernel $\mathrm{Sd}_k=F_\eta$ and the shifted kernels $\mathcal V_{\mathrm{vek},\pm k}$; the zero-divisor structure of the radiation condition. All of these are in *Biquaternion Regular Functions*, *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Electromagnetism in Media — The Local Complex Structure at Work*, and this article adds no formula to them.
 - The Maxwell reduction and the quaternionic reformulation in inhomogeneous media, which the corpus's electromagnetic articles own.
 
 **Transcribed from the source, not derived here.**
 
-- The outgoing kernel $C_k=-D_{-k}F_k$, its far-field asymptotics and the boundary representation of Proposition 7.2.
+- The outgoing kernel $C_\eta=-D_{-k}F_\eta$, its far-field asymptotics and the boundary representation of Proposition 7.2.
 - The radiation condition of Proposition 7.3 in both forms, and the additional decay hypothesis in the zero-divisor case.
 - The Lippmann–Schwinger equation (8.5) and its equivalence with the differential problem.
 - The weak-singularity bounds, the compactness they give, the unique continuation principle and the uniqueness theorem.
@@ -373,8 +373,8 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Established, in the sense that it was recomputed here.**
 
-- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_k)(D_3\mp R_k)=-\Delta+\lvert k\rvert^2$ and the same with $ik$, both orderings; $(D_3-L_{ik})(\exp(ik\cdot x)b)=\exp(ik\cdot x)D_3b$; and $kb+bk=-2k\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_k$ and $R_k$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
-- The identification $C_k=\mathcal{V}_{\mathrm{vek},+k}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.
+- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta+\lvert k\rvert^2$ and the same with $ik$, both orderings; $(D_3-L_{ik})(\exp(ik\cdot x)b)=\exp(ik\cdot x)D_3b$; and $kb+bk=-2k\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
+- The identification $C_\eta=\mathcal{V}_{\mathrm{vek},+k}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.
 
 **Not established, and left visible.**
 
@@ -397,7 +397,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 ## Summary
 
-The corpus's theory of the shifted operator $D_\alpha$ is a direct theory: it decides boundary-value problems. This article states the scattering theory of the same operator, in the three-dimensional spatial setting, as it stands in a short paper of the quaternionic-analysis school. The subject is the operator $D_3+R_k$ with a compactly supported quaternionic potential $m(x)$, and the objects that make the theory work are three.
+The corpus's theory of the shifted operator $D_\alpha$ is a direct theory: it decides boundary-value problems. This article states the scattering theory of the same operator, in the three-dimensional spatial setting, as it stands in a short paper of the quaternionic-analysis school. The subject is the operator $D_3+R_\eta$ with a compactly supported quaternionic potential $m(x)$, and the objects that make the theory work are three.
 
 The **Lippmann–Schwinger equation** is equivalent to the differential problem with the outgoing radiation condition: the total field $u=u_{\mathrm{inc}}+u_{\mathrm{sc}}$ satisfies the integral equation exactly when it satisfies $D_3u+uk=umk$ and $u_{\mathrm{sc}}$ is outgoing. The equivalence is the radiation condition solved out, and the source's proof uses the $O(\lvert x\rvert^{-2})$ decay of the kernels to show that the integral is outgoing.
 
@@ -409,16 +409,16 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 
 | Symbol | Meaning |
 |---|---|
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Basis of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; $\vec e_k^2=-e_t$; central scalar imaginary $i$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Basis of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; $\vec e_\eta^2=-e_t$; central scalar imaginary $i$ |
 | $D_3=\sum_{\mu=1}^3 \vec e_\mu\,\partial/\partial R_\mu$ | Spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*; $D_3^2=-\Delta$; the source's $D$ |
 | $D=iD_3$ | The corpus's other square root of the Laplacian, $D^2=\Delta$; distinct from the source's $D$ |
 | $D_3u=-\operatorname{div}u+\operatorname{curl}u$ | The action on a pure-vector field, the bridge to Maxwell's equations |
 | $L_kq=kq$, $R_kq=qk$ | Left and right multiplication; the letter names the side |
 | $D_\alpha=D_3+R_\alpha$ | The corpus's shift, constant parameter; a different object from the gradient-coefficient $D_\alpha=D_3+\operatorname{grad}\log\sqrt{\alpha}$ of the electromagnetic articles |
 | $k$ | Wave vector, identified with $k_1\vec e_x+k_2\vec e_y+k_3\vec e_z$; $k=\sqrt{k^2}$, $\operatorname{Im}(k)\ge0$; $k^2=-k\cdot k$ |
-| $\mathrm{Sd}_\alpha=-\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_k$ at $\alpha=k$ |
-| $\mathcal V_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solutions of the shifted family; the source's $C_k$ is $\mathcal{V}_{\mathrm{vek},+k}$ |
-| $C_k=-D_{-k}F_k$ | Cauchy-type kernel of the Dirac-type operator, $(k+\vec u_x/\lvert x\rvert-ik\vec u_x)\exp(ik\lvert x\rvert)/(4\pi)$ |
+| $\mathrm{Sd}_\alpha=-\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_\eta$ at $\alpha=k$ |
+| $\mathcal V_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solutions of the shifted family; the source's $C_\eta$ is $\mathcal{V}_{\mathrm{vek},+k}$ |
+| $C_\eta=-D_{-k}F_\eta$ | Cauchy-type kernel of the Dirac-type operator, $(k+\vec u_x/\lvert x\rvert-ik\vec u_x)\exp(ik\lvert x\rvert)/(4\pi)$ |
 | $k f+\vec u_x fk=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\vec u_x$ is a zero divisor |
 | $m(x)$ | Quaternion-valued potential with compact support $G$ |
 | $u_{\mathrm{inc}},u_{\mathrm{sc}},u=u_{\mathrm{inc}}+u_{\mathrm{sc}}$ | Incident, scattered and total field |
@@ -434,7 +434,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 - Swanhild Bernstein, "Seeing the Invisible and Maxwell's Equations", chapter, DOI 10.1007/978-3-0348-0603-9_13 (2013), the source of this article: the factorisations of the Helmholtz equation, the Lippmann–Schwinger equation for a quaternionic potential, the radiation condition with its zero-divisor remark, the uniqueness theorem, and Faddeev's Green's function. The scattering half of the same author's work; her 1996 and 1999 papers on the Riccati form of the factorisation, cited by *Electromagnetism in Media — The Local Complex Structure at Work*, are different papers.
 - D. Colton and R. Kress, *Inverse Acoustic and Electromagnetic Scattering Theory*, Applied Mathematical Sciences 93 (Springer, 1992), for the Lippmann–Schwinger equation, the weak singularity of its kernel and the unique continuation principle (their Lemma, used as the source's Lemma 8.5).
 - V. V. Kravchenko and R. P. Castillo, "An analogue of the Sommerfeld radiation condition for the Dirac operator", *Mathematical Methods in the Applied Sciences* **25** (2002) 1383–1394, for the two forms of the radiation condition used here.
-- V. V. Kravchenko and M. V. Shapiro, "On a generalized system of Cauchy–Riemann equations with a quaternionic parameter", *Russian Academy of Sciences, Doklady* **47** (1993) 315–319, for the kernel $C_k=-D_{-k}F_k$.
+- V. V. Kravchenko and M. V. Shapiro, "On a generalized system of Cauchy–Riemann equations with a quaternionic parameter", *Russian Academy of Sciences, Doklady* **47** (1993) 315–319, for the kernel $C_\eta=-D_{-k}F_\eta$.
 - L. D. Faddeev, "Increasing solutions of the Schrödinger equation", *Doklady Akademii Nauk SSSR* **165** (1965) 514–517, for the exponentially growing Green's function and the plane-wave substitution.
 - S. Bernstein, "Lippmann–Schwinger's integral equation for quaternionic Dirac operators", online (2003), the earlier paper by the same author in which the Lippmann–Schwinger equation for the quaternionic Dirac operator is announced; the chapter of the Further Reading above carries it further and cites it as [4].
 - H. Isozaki, "Inverse scattering theory for Dirac operators", *Annales de l'Institut Henri Poincaré, section A* **66** (1997) 237–270, for Faddeev's Green's operator $g_\gamma$, its bounds and their use in the inverse problem, quoted in the last section.

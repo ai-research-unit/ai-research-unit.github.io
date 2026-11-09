@@ -126,7 +126,7 @@ $$
 \boxed{\;\mathbb{B} \;\cong\; M_2(\mathbb{C})\;},
 $$
 
-realized by sending the quaternion units to $-i$ times the Pauli matrices, $\vec e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
+realized by sending the quaternion units to $-i$ times the Pauli matrices, $\vec e_\eta \mapsto -i\sigma_\eta$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
 
 $$
 \boxed{\;SL(2,\mathbb{C}) = \{\tilde U \in \mathbb{B} : \tilde U\tilde U^{\natural} = e_t\}\;}
@@ -176,7 +176,7 @@ are idempotent, with $\Pi_x\Pi_y = 0$; multiplication by $\Pi_x$ picks out the r
 
 **The algebra is the split-biquaternions.** The paper's "biquaternion" is therefore the quaternions extended by one central element of square $+1$: the **split-biquaternion** algebra $\mathbb{B}_{\mathrm{spl}}$, isomorphic to $\mathbb{H}\oplus\mathbb{H}$, with the idempotents $\Pi_x$ and $\Pi_y$ exhibiting the splitting. It is not Hamilton's biquaternion, the quaternions with complex coefficients, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ — the algebra this article and the corpus call the biquaternions — and Clifford's own note on the point records the collision: Hamilton's biquaternion is a quaternion with complex coefficients, and since the word was "no longer wanted in its old meaning" he had "made bold to use it in a new one". The naming collision this article warns about is thus the paper's own and deliberate, and a reader meeting a nineteenth-century "biquaternion" has three algebras to choose from. The algebra of the paper has been known since as the **elliptic biquaternions**, a name that records the geometry; the later literature calls it the Clifford biquaternion or the dyquaternion, or writes it $\mathbb{H}\oplus\mathbb{H}$. The quaternions with **dual**-number coefficients, $\mathbb{N}\otimes_\mathbb{R}\mathbb{H}$ with $\varepsilon^{2} = 0$, are the parabolic case and belong to a later line, McAulay's and Study's; they are the algebra of the rigid motions of Euclidean space, and the screw motions, the double cover of $SE(3)$ and the motor calculus built on them are the subject of the companion article *Projective Geometric Algebra and Dual Quaternions*.
 
-**The geometric constructions.** The last section of the paper turns the algebra back on the geometry, in five constructions, all in the elliptic case and all expressed with the **position-rotor**, the rotor drawn from the origin to a point. Relative to a quadrantal tetrahedron $1234$ with the origin at the vertex $4$, the equation of the absolute being $\sum_k x_k^{2} = 0$, the position-rotor of the point $x$ is
+**The geometric constructions.** The last section of the paper turns the algebra back on the geometry, in five constructions, all in the elliptic case and all expressed with the **position-rotor**, the rotor drawn from the origin to a point. Relative to a quadrantal tetrahedron $1234$ with the origin at the vertex $4$, the equation of the absolute being $\sum_\eta x_k^{2} = 0$, the position-rotor of the point $x$ is
 
 $$
 \rho = \vec e_x\frac{x_1}{x_4} + \vec e_y\frac{x_2}{x_4} + \vec e_z\frac{x_3}{x_4} ,
@@ -305,7 +305,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra (complex quaternions) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ (Hamilton's $h$) |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{B}_{C}$ | Complex subspace (complex scalars; centre of $\mathbb{B}$) |
@@ -313,7 +313,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector; norm $(1,3)$) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector; norm $(3,1)$) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$) |
-| $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ |
+| $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(\vec e_\eta) = -i\sigma_\eta$ |
 | $SL(2,\mathbb{C}) = \{\tilde U : \tilde U\tilde U^{\natural} = e_t\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation on $\mathbb{B}_{\Phi}$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of $\mathbb{B}_{\Psi}$) |

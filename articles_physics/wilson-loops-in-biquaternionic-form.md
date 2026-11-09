@@ -15,7 +15,7 @@ The article is organized as follows. The holonomy is defined for the abelian and
 
 ## The Holonomy of the Connection
 
-Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_k A_k\,dx_k$. Every exponent below carries the factor $\frac{k_m\,ϙ}{m\,c}$, the product of the charge $ϙ$ and the inverse action $1/\hbar=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.
+Throughout, $\varepsilon=(1,-1,-1,-1)$ is the plain weight of the algebra, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$, and a paired index is written low with its weight: $\sum_\mu\varepsilon_\mu A_\mu dx_\mu$ is the one-form $A_0\,dx_0-\sum_\eta A_\eta\,dx_k$. Every exponent below carries the factor $\frac{k_m\,ϙ}{m\,c}$, the product of the charge $ϙ$ and the inverse action $1/\hbar=k_m/(m\,c)$, so that the exponential of a loop integral is a phase and each exponent is a pure number on its own; no unit and no charge is set to one.
 
 ### The Abelian Wilson Loop
 
@@ -89,13 +89,13 @@ $$
 
 in the abelian case, and in the non-abelian case as $W=1+i\ell^2\sum_a F_{\mu\nu a}T_a+O(\ell^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $\ell=10^{-3}$: the ratio of the deviation of the plaquette from unity to $\ell^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
 
-Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, its square is a central element,
+Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, its square is a central element,
 
 $$
 \boxed{\;\tilde{F}^2 = \left(|\vec E|^2-|\vec H|^2\right)e_t + 2i\,\vec E\cdot\vec H\,e_t\;},
 $$
 
-so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $\vec e_k=-i\sigma_k$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.
+so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $\vec e_\eta=-i\sigma_\eta$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.
 
 ### The Constant Field
 
@@ -254,7 +254,7 @@ The Wilson loop is the trace of the holonomy of the gauge connection around a cl
 
 For the abelian theory the loop is $\exp(\frac{k_m\,ϙ}{m\,c}\oint \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
 
-For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, the square of the field strength is central,
+For a small loop the holonomy expands as $W=1+i\ell^2F_{\mu\nu}+O(\ell^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$, the square of the field strength is central,
 
 $$
 \tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_t+2i\,\vec E\cdot\vec H\,e_t ,
@@ -276,7 +276,7 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
 | $\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu=\frac12\int_S \sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}d\Sigma_{\mu\nu}$ | Stokes' theorem; loop equals enclosed flux |
 | $W=1+i \ell^2F_{\mu\nu}+O(\ell^4)$ | Small-loop expansion; exponentiated field strength |
-| $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$ | Field strength biquaternion |
+| $\tilde{F}=\sum_\eta(iE_\eta-H_\eta)\vec e_\eta$ | Field strength biquaternion |
 | $\tilde{F}^2=(E^2-H^2)e_t+2i(E\cdot H)e_t$ | Central element; its two scalar parts are the Maxwell invariants (verified) |
 | $\langle W(C)\rangle\sim \exp(-\kappa\,\mathrm{perim})$ / $\exp(-\sigma\,\mathrm{area})$ | Perimeter law (screening) / area law (confinement) |
 | $\sigma$ | String tension |

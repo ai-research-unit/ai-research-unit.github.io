@@ -12,7 +12,7 @@ The article states the correspondence and reads its invariants: the trace as the
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, the isomorphism and the inverse map | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
+| The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$, the isomorphism and the inverse map | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The Hermitian subspace $\mathbb{B}_{\Psi}$ as the Hermitian matrices, the anti-Hermitian $\mathbb{B}_{\Phi}$ as the anti-Hermitian matrices, and $\mathbb{B}_{\Phi}=i\mathbb{B}_{\Psi}$ | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The regular image $\mathsf M_{4L}(\tilde Q)$, its trace and determinant, and the block splitting | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
@@ -46,7 +46,7 @@ $$
 \begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}\;}.
 $$
 
-The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=r_t$ is real and $Q_k=i r'_k$ with $r'_k$ real, the same formula reads
+The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t=r_t$ is real and $Q_\eta=i r'_k$ with $r'_k$ real, the same formula reads
 
 $$
 \mathsf M_2(\tilde R_\Psi)=r_t\,\mathrm I_2+r'_x\sigma_1+r'_y\sigma_2+r'_z\sigma_3 ,
@@ -56,7 +56,7 @@ with no factor and no sign. The four real numbers of a Hermitian element are the
 
 ### The Hermitian Units
 
-The three elements $i\vec e_k$ are Hermitian, and so are their images $\sigma_k$. The three elements $\vec e_k$ are anti-Hermitian, and so are their images $-i\sigma_k$. Hermitian conjugation on the algebra becomes the conjugate transpose on the matrices,
+The three elements $i\vec e_\eta$ are Hermitian, and so are their images $\sigma_\eta$. The three elements $\vec e_\eta$ are anti-Hermitian, and so are their images $-i\sigma_\eta$. Hermitian conjugation on the algebra becomes the conjugate transpose on the matrices,
 
 $$
 \mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger},
@@ -66,11 +66,11 @@ so the fixed space of ${}^{*}$ is carried onto the fixed space of the dagger. Th
 
 ### The Factor $i$ Is the Complex Structure
 
-The factor is forced. A $2\times2$ matrix with real entries and square $-\mathrm I_2$ defines a complex structure on $\mathbb R^2$; three of them, anticommuting, define the quaternionic structure. The algebra in which $\vec e_k^2=-e_t$ holds is the complexified one, and the coefficient field supplies the $i$ that turns $\sigma_k$ into $-i\sigma_k$. With the assignment $\vec e_k\mapsto\sigma_k$ the square would be $+\mathrm I_2$, which is the split-quaternion sign, not the quaternion one.
+The factor is forced. A $2\times2$ matrix with real entries and square $-\mathrm I_2$ defines a complex structure on $\mathbb R^2$; three of them, anticommuting, define the quaternionic structure. The algebra in which $\vec e_\eta^2=-e_t$ holds is the complexified one, and the coefficient field supplies the $i$ that turns $\sigma_\eta$ into $-i\sigma_\eta$. With the assignment $\vec e_\eta\mapsto\sigma_\eta$ the square would be $+\mathrm I_2$, which is the split-quaternion sign, not the quaternion one.
 
-The sign is then forced. The alternative assignment $\vec e_k\mapsto-\mathsf M_2(\vec e_k)$ preserves the squares and fails the products: $\vec e_x\vec e_y=\vec e_z$ becomes $(-\mathsf M_2(\vec e_x))(-\mathsf M_2(\vec e_y))=\mathsf M_2(\vec e_z)$, which is minus the image of $\vec e_z$ under that assignment. Two lines of matrix multiplication fix the sign.
+The sign is then forced. The alternative assignment $\vec e_\eta\mapsto-\mathsf M_2(\vec e_\eta)$ preserves the squares and fails the products: $\vec e_x\vec e_y=\vec e_z$ becomes $(-\mathsf M_2(\vec e_x))(-\mathsf M_2(\vec e_y))=\mathsf M_2(\vec e_z)$, which is minus the image of $\vec e_z$ under that assignment. Two lines of matrix multiplication fix the sign.
 
-The interpretation is that the factor $i$ is not a bookkeeping convention. It is the statement that the three directions of the algebra are generators of rotations and not observables: $\vec e_k$ is anti-Hermitian and generates, $i\vec e_k$ is Hermitian and is measured. The two roles differ by the factor that the complexification supplies.
+The interpretation is that the factor $i$ is not a bookkeeping convention. It is the statement that the three directions of the algebra are generators of rotations and not observables: $\vec e_\eta$ is anti-Hermitian and generates, $i\vec e_\eta$ is Hermitian and is measured. The two roles differ by the factor that the complexification supplies.
 
 The boundary is that this explains why the factor is present in the model. It does not say that nature is complex, and it does not derive the complex numbers from anything physical.
 
@@ -132,8 +132,8 @@ The determinant of the matrix is the quaternionic norm, $\det\mathsf M_2(\tilde 
 
 | sector | element | determinant | signature |
 | --- | --- | --- | --- |
-| material | $i r'_t e_t+\sum_k r_k\vec e_k$ | $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
-| informational | $r_t e_t+i r'_k\vec e_k$ | $r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$ | $(1,3)$ |
+| material | $i r'_t e_t+\sum_\eta r_\eta\vec e_\eta$ | $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
+| informational | $r_t e_t+i r'_k\vec e_\eta$ | $r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$ | $(1,3)$ |
 | state slice | $\tfrac12(e_t+i\vec r)$ | $\tfrac14(1-\lvert\vec r\rvert^2)$ | positivity |
 
 The same algebraic function is the interval on the material sector, the causal type and the positivity test on the informational sector, and the mixedness on the trace-one slice. The zero set is one object in the three readings: the light cone, the boundary of the state space, and the set of pure states.
@@ -198,10 +198,10 @@ The boundary is that the word *observable* uses the involution ${}^{*}$, which b
 
 ### The Three Directions Are the Three Spin Axes
 
-A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ the matrix is $\frac{m\,c}{2\,k_m}\sigma_k$, and the commutator
+A traceless Hermitian element is $\tilde R_\Psi=i\vec r_\Psi$ with $\vec r_\Psi\in\mathbb R^3$, and its matrix is $\vec r_\Psi\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$ the matrix is $\frac{m\,c}{2\,k_m}\sigma_\eta$, and the commutator
 
 $$
-[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$$
+[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}}{k_m}$$
 
 is the angular-momentum algebra. The three directions close under the commutator into $\mathfrak{su}(2)$, and the exponentials are the rotations of the state space.
 
@@ -334,7 +334,7 @@ Read together, the three readings say what a matrix image can carry: a norm, a f
 
 ## Physical Interpretations
 
-- **The three Hermitian units are the three Pauli matrices.** The correspondence is the identity $\mathsf M_2(i\vec e_k)=\sigma_k$; the factor $i$ is the complex structure that turns generators into observables.
+- **The three Hermitian units are the three Pauli matrices.** The correspondence is the identity $\mathsf M_2(i\vec e_\eta)=\sigma_\eta$; the factor $i$ is the complex structure that turns generators into observables.
 - **The Hermitian elements are the observables.** $\mathbb{B}_{\Psi}$ is carried onto the Hermitian matrices; the spectral theorem gives the outcomes, and the trace gives the expectation.
 - **The three directions are the spin axes.** The traceless Hermitian elements close under the commutator into $\mathfrak{su}(2)$; the exponentials are the rotations of the state space.
 - **The trace is the weight.** $\operatorname{Tr}=2Q_t$; the factor two is the dimension of the spinor module.
@@ -361,7 +361,7 @@ The correspondence does not say that nature is complex, and it does not derive t
 
 ## Summary
 
-- The $2\times2$ image is the Pauli correspondence: $e_t\mapsto\mathrm I_2$ and $\vec e_k\mapsto-i\sigma_k$, so $i\vec e_k\mapsto\sigma_k$.
+- The $2\times2$ image is the Pauli correspondence: $e_t\mapsto\mathrm I_2$ and $\vec e_\eta\mapsto-i\sigma_\eta$, so $i\vec e_\eta\mapsto\sigma_\eta$.
 - The factor $i$ is the complex structure that separates the generators from the observables; it is forced by the squares and the products.
 - The element matrix has trace $2Q_t$ and determinant $N$; the regular image has trace $4Q_t$ and determinant $N^{2}$; the two-sided operator has trace $4\lvert Q_t\rvert^{2}$ and determinant $\lvert N\rvert^{4}$. Only the vanishing set is common.
 - The eigenvalues are $\lambda_\pm=Q_t\pm iB$; their product is the determinant and their sum twice the trace.

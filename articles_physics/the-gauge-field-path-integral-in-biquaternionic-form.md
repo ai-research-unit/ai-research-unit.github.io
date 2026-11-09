@@ -51,10 +51,10 @@ The measure is a product over the four material components. Because the material
 $$
 \mathcal{D}\tilde{A}_{\Phi} = \mathcal{D}A_0\;\mathcal{D}\vec A,
 \qquad
-\tilde{A}_{\Phi} = iA_0e_t+\sum_{k=1}^{3}A_k\vec e_k ,
+\tilde{A}_{\Phi} = iA_0e_t+\sum_{\eta=1}^{3}A_\eta\vec e_\eta ,
 $$
 
-with $A_0$ and $A_k$ the real component fields, the coefficients being $Q_t=i r'_t$ and $Q_k=x_k$. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_k\vec e_k\,\partial/\partial R_k\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_\eta$ the real component fields, the coefficients being $Q_t=i r'_t$ and $Q_\eta=x_k$. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 

@@ -52,7 +52,7 @@ $$
 \mathbb{B}_{\Psi}=\bigl\{x\in\mathbb B:x^{*}=x\bigr\}=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($\vec e_k\mapsto-\vec e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, $*$-unitary direction: exponentiating it gives the $*$-unitary group of the defining module,
+of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($\vec e_\eta\mapsto-\vec e_\eta$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, $*$-unitary direction: exponentiating it gives the $*$-unitary group of the defining module,
 
 $$
 \boxed{\;\exp\bigl(\mathbb{B}_{\Phi}\bigr)=\mathrm{U}(2),
@@ -212,7 +212,7 @@ The ceiling is passed by enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\m
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ | Centre; $\mathrm{U}(1)$ factor; fixed space of $\tilde Q^{\natural}$ |
 | $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Anti-Hermitian, compact sector; $\mathrm{U}(2)$; fixed space of $\flat$ |

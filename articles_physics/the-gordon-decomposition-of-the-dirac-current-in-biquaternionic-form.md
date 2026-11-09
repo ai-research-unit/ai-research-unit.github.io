@@ -8,7 +8,7 @@ The decomposition is **on shell**. It uses the Dirac equation for the field and 
 
 The field of this article is an element of $\mathbb{B}$ at each point, and its four coefficients are its four components. The current is the **pairing** of the field with the element the generator carries into it, $j_\mu=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}$, where the pairing $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ is a scalar part of a product of elements. No carrier is added to the algebra and no list of components is used: an element, a product and its scalar part.
 
-This article states the identity, proves it, gives its momentum-space form and its massless limit, and reports the two companion objects — the angular-momentum (Belinfante–Rosenfeld) split and the stress tensor. It then gives the biquaternion reading. The contribution here is a matter of **naming the two structures**: the split of a product of two generators into its symmetric part, which is the central direction of the algebra, and its antisymmetric part, which is a bivector and lies in the algebra's six directions $\vec e_k$ and $i\vec e_k$. The convection current is the central direction; the spin current is the bivector. What the framework does **not** supply is a bilinear in the field and its conjugate alone: the current is a scalar part of three factors, and the third, the frame's unit $\vec e_{\nu(\mu)}$, is not carried by the field. The older spelling hides that datum in the adjoint; written as a pairing it is visible as the last factor.
+This article states the identity, proves it, gives its momentum-space form and its massless limit, and reports the two companion objects — the angular-momentum (Belinfante–Rosenfeld) split and the stress tensor. It then gives the biquaternion reading. The contribution here is a matter of **naming the two structures**: the split of a product of two generators into its symmetric part, which is the central direction of the algebra, and its antisymmetric part, which is a bivector and lies in the algebra's six directions $\vec e_\eta$ and $i\vec e_\eta$. The convection current is the central direction; the spin current is the bivector. What the framework does **not** supply is a bilinear in the field and its conjugate alone: the current is a scalar part of three factors, and the third, the frame's unit $\vec e_{\nu(\mu)}$, is not carried by the field. The older spelling hides that datum in the adjoint; written as a pairing it is visible as the last factor.
 
 The article is organised as follows. The next section fixes the conventions: the field and its value, the frame, the pairing, the two Dirac equations and the current. The section after it states the identity and proves it. A section gives the momentum-space form used in scattering. A section reads the two terms physically. A section gives the massless limit and says what survives it. A section records the angular-momentum and stress-tensor relatives and the electromagnetic consequence. A section gives the biquaternion reading. The closing sections are the open questions, the standard Greek names of the same objects, the summary, the notation table and the literature.
 
@@ -72,7 +72,7 @@ Every factor is written out: the derivative acts on the field, the unit $e_\mu$ 
 The component form displays the two families at once, because the temporal generator is a single right multiplication and the three spatial generators share their right multiplier:
 
 $$
-\sum_k\vec e_k\,\partial_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y-\partial_t\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x=k_m\,\tilde{Ξ}_{\mathrm{sp}} .
+\sum_\eta\vec e_\eta\,\partial_k\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y-\partial_t\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x=k_m\,\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 Each of the four terms exchanges the value, while the mass term keeps it: the equation pairs the two halves of the field, and the mass is what pairs them.
@@ -115,7 +115,7 @@ $$
 j_0=\operatorname{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\big)=\lvert\tilde{Ξ}_{\mathrm{sp},t}\rvert^2+\lvert\tilde{Ξ}_{\mathrm{sp},x}\rvert^2+\lvert\tilde{Ξ}_{\mathrm{sp},y}\rvert^2+\lvert\tilde{Ξ}_{\mathrm{sp},z}\rvert^2 .
 $$
 
-That is why the density is positive rather than a sign of the frame. The three spatial components are $j_k=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. The index $\mu$ labels the four generators; it is not the index of one object inside the algebra, and the four components are four pairings rather than four slots of a single element. For a solution the four are real, and $j_0$ is positive.
+That is why the density is positive rather than a sign of the frame. The three spatial components are $j_k=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. The index $\mu$ labels the four generators; it is not the index of one object inside the algebra, and the four components are four pairings rather than four slots of a single element. For a solution the four are real, and $j_0$ is positive.
 
 ## The Identity
 
@@ -360,9 +360,9 @@ The same strategy — split a conserved density into a transport part and a curl
 
 ### The split is central versus bivector
 
-The one algebraic structure that the decomposition exhibits is the split of a product of two generators into its symmetric and antisymmetric parts: the **symmetric** part, one number per pair of indices, and in the algebra's terms the central direction; and the **bivector** part, antisymmetric, and in the algebra's terms the six directions $\vec e_k$ and $i\vec e_k$. The Gordon decomposition says that on shell the current splits in exactly this way. The convection term is the central direction, and the spin term is the bivector direction. This is the same identification the companion article on the anomalous magnetic moment records: the anomaly multiplies a bivector and is therefore an informational-sector object, while the tree-level convection term is central.
+The one algebraic structure that the decomposition exhibits is the split of a product of two generators into its symmetric and antisymmetric parts: the **symmetric** part, one number per pair of indices, and in the algebra's terms the central direction; and the **bivector** part, antisymmetric, and in the algebra's terms the six directions $\vec e_\eta$ and $i\vec e_\eta$. The Gordon decomposition says that on shell the current splits in exactly this way. The convection term is the central direction, and the spin term is the bivector direction. This is the same identification the companion article on the anomalous magnetic moment records: the anomaly multiplies a bivector and is therefore an informational-sector object, while the tree-level convection term is central.
 
-The comparison map of *Matrix Representations Conventions* reads the eight real units against the graded products of the algebra, and it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones. The **rotation-type** generators — the magnetic, spin-like ones, which are the timelike bivectors — sit therefore at the elements $i\vec e_k$, in the informational sector $\mathbb{B}_{\Psi}$, and the **boost-type** generators, the spacelike bivectors, at the vector units $\vec e_k$, in the material sector $\mathbb{B}_{\Phi}$. The frame of this article carries the right multiplier $\vec e_y$ in place of $e_t$, and that is a change of frame and not a change of the comparison map. The magnetic part of the Gordon split is therefore an $\mathbb{B}_{\Psi}$ structure, the same sector as the spin itself, and the convection part is the central direction. The sector labels are not decoration: they are the algebraic form of the statement that the convection term is the orbital transport and the spin term is the intrinsic moment.
+The comparison map of *Matrix Representations Conventions* reads the eight real units against the graded products of the algebra, and it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones. The **rotation-type** generators — the magnetic, spin-like ones, which are the timelike bivectors — sit therefore at the elements $i\vec e_\eta$, in the informational sector $\mathbb{B}_{\Psi}$, and the **boost-type** generators, the spacelike bivectors, at the vector units $\vec e_\eta$, in the material sector $\mathbb{B}_{\Phi}$. The frame of this article carries the right multiplier $\vec e_y$ in place of $e_t$, and that is a change of frame and not a change of the comparison map. The magnetic part of the Gordon split is therefore an $\mathbb{B}_{\Psi}$ structure, the same sector as the spin itself, and the convection part is the central direction. The sector labels are not decoration: they are the algebraic form of the statement that the convection term is the orbital transport and the spin term is the intrinsic moment.
 
 ### What the framework does not supply
 
@@ -386,7 +386,7 @@ What the algebra does supply is the location of the two terms: the convection te
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section, and only this section, names the generator basis operators and the chirality basis operator by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the basis operator spelling.
 
@@ -447,7 +447,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | Symbol | Meaning |
 |---|---|
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; the value is the subscript, $L$ the minus one and $R$ the plus one |
-| $e_\mu$, $\varepsilon_\mu$, $\delta_{\mu\nu}$ | The four units, $e_t$ and $\vec e_k$; the plain weight of the conventions, and the Kronecker delta |
+| $e_\mu$, $\varepsilon_\mu$, $\delta_{\mu\nu}$ | The four units, $e_t$ and $\vec e_\eta$; the plain weight of the conventions, and the Kronecker delta |
 | $\vec e_{\nu(\mu)}$ | The frame's right multipliers, with $\nu(t)=x$ and $\nu(k)=y$ |
 | $ie_\mu\,\cdot\,\vec e_{\nu(\mu)}$, the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | The four generators of the frame; each exchanges the value |
 | $-i\,\cdot\,\vec e_z$, the action $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The chirality basis operator, named once; it keeps the value |

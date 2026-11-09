@@ -464,9 +464,9 @@ The truncation is the same fact from the other side. The algebra is the endomorp
 
 ### What the Algebra Does Not Determine
 
-**Which structure a particle uses.** The algebra carries both lists. It does not say that the electron uses the left module and the photon the adjoint; that assignment is physics.
+**Which structure a given object uses.** The algebra carries both lists. It does not say which object uses the left module and which the adjoint; that assignment lies outside the algebra.
 
-**No dynamics.** The Casimir is a kinematical label. No mass, no Hamiltonian and no equation of motion follow from it.
+**No dynamics.** The Casimir is a label of the carrier. No generator of evolution and no equation of motion follow from it.
 
 **No statistics.** The algebraic split matches the two integrality classes. The spin–statistics theorem is not proved by the algebra.
 

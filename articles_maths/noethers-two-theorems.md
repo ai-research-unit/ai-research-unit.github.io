@@ -10,7 +10,7 @@ The terminology is Hermann Weyl's, and it is easy to reverse. A symmetry of the 
 
 Two consequences of the second theorem organise every field theory that carries a local symmetry. First, the field equations are subject to identities, so the number of independent equations is smaller than the number of equations, and a gauge condition must be added before the initial-value problem is well posed. Second, the identity constrains the source: when the equations are sourced, the divergence of the identity forces the source to be conserved, and the conservation of the charge is then an **integrability condition** on the equations rather than an independent law.
 
-The article is confined to a Lagrangian field theory with finitely many fields on a flat space, which is the setting in which the two theorems are used in this series. It first fixes the fundamental variation identity from which both theorems follow, then derives the first theorem and its current, then proves the second theorem and reads what it says, then works the two standard examples — the Maxwell field, whose local symmetry is a pure one of the second kind, and a Stueckelberg-type field, whose local symmetry contains a rigid subgroup — then counts the conservation laws against the identities, and closes with the relation to the Hamiltonian form and with the naming.
+The article is confined to a Lagrangian field theory with finitely many fields on a flat space, which is the setting in which the two theorems are used in this series. It first fixes the fundamental variation identity from which both theorems follow, then derives the first theorem and its current, then proves the second theorem and reads what it says, then works the two standard examples — an abelian gauge field, whose local symmetry is a pure one of the second kind, and a redundant vector field, whose local symmetry contains a rigid subgroup — then counts the conservation laws against the identities, and closes with the relation to the Hamiltonian form and with the naming.
 
 ## The Setting and the Fundamental Identity
 
@@ -129,7 +129,7 @@ $$
 \sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\phi\,\Box\phi^* - \bar{\phi}\Box\phi\bigr),
 $$
 
-which is precisely $-E_\phi\zeta_\phi - E_{\bar{\phi}}\zeta_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell plane waves with null wave vectors, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the electric four-current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
+which is precisely $-E_\phi\zeta_\phi - E_{\bar{\phi}}\zeta_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell exponential solutions of null four-vector, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the conserved four-vector current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
 
 ## The Second Theorem
 
@@ -177,11 +177,11 @@ Three features of the theorem are worth stating before the examples, because eac
 
 **It says the equations are not independent.** If the $N$ fields are subject to $q$ identities of the second kind, then at most $N-q$ of the equations are independent. The system is degenerate; the solution set is a union of orbits of the local symmetry, and a gauge condition — a further condition that selects one representative from each orbit — is needed before a unique evolution is determined by initial data.
 
-**It makes the local symmetry carry no charge.** A local symmetry generally contains no rigid subgroup, because a transformation whose parameter is a function $\varepsilon(x)$ need not survive when $\varepsilon$ is restricted to a constant. When it does survive — when the algebraic part $b_{i\alpha}$ is nonzero — the rigid subgroup is a genuine first-kind symmetry and has its own conservation law, and the $\varepsilon$-coefficient of the identity is the statement that a certain total divergence vanishes off shell: the rigid current corrected by the term $\sum_{i,\mu}a_{i\mu\alpha} E_i$. That remark is made precise in the Stueckelberg example below. But when $b_{i\alpha}$ vanishes, the local symmetry has no rigid subgroup and produces no conservation law whatsoever. This is the case for the Maxwell field, and it is the reason a gauge transformation is not a source of new charges.
+**It makes the local symmetry carry no charge.** A local symmetry generally contains no rigid subgroup, because a transformation whose parameter is a function $\varepsilon(x)$ need not survive when $\varepsilon$ is restricted to a constant. When it does survive — when the algebraic part $b_{i\alpha}$ is nonzero — the rigid subgroup is a genuine first-kind symmetry and has its own conservation law, and the $\varepsilon$-coefficient of the identity is the statement that a certain total divergence vanishes off shell: the rigid current corrected by the term $\sum_{i,\mu}a_{i\mu\alpha} E_i$. That remark is made precise in the second example below. But when $b_{i\alpha}$ vanishes, the local symmetry has no rigid subgroup and produces no conservation law whatsoever. This is the case for the abelian gauge field, and it is the reason a gauge transformation is not a source of new currents.
 
-## Worked Example: the Maxwell Field
+## Worked Example: the Abelian Gauge Field
 
-The Maxwell field is the original illustration of the second theorem and the one the corpus uses.
+A field of four components with an antisymmetric two-form is the classical illustration of the second theorem, and it is the one the corpus uses.
 
 **The variational problem.** Let the field be the four-potential $A_\nu$ and the density be
 
@@ -197,7 +197,7 @@ $$
 E_\nu = \frac{\partial \mathcal{L}}{\partial A_\nu} - \sum_\mu\partial/\partial x_\mu\,\frac{\partial \mathcal{L}}{\partial(\partial/\partial x_\mu A_\nu)} = \sum_\mu\partial/\partial x_\mu F_{\mu\nu} ,
 $$
 
-the source-free side of the inhomogeneous Maxwell equations.
+the left-hand side of the field equations.
 
 **The local symmetry.** The transformation $A_\nu\mapsto A_\nu+\partial/\partial x_\nu\,\varepsilon$ leaves $F_{\mu\nu}$, and hence the density, exactly invariant: $F$ is unchanged, so $\delta \mathcal{L} = 0$ and $F_\mu=0$ in the notation above. In the standard form the transformation is $\delta A_\nu = \sum_\mu a_{\nu\mu}\partial/\partial x_\mu\,\varepsilon$ with $a_{\nu\mu} = \delta_{\nu\mu}$ and $b_\nu=0$. The parameters are the four functions $A_\nu$ and the arbitrary function $\varepsilon$, so $q=1$, and the algebraic part vanishes. The symmetry is a pure second-kind symmetry with no rigid subgroup.
 
@@ -215,7 +215,7 @@ $$
 
 which is the antisymmetry of $F_{\mu\nu}$ contracted with the symmetric pair $\partial^2/\partial x_\nu\partial x_\mu$.
 
-**What the identity does.** The four equations $E_\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the component $\nu=0$ is the constraint, an equation with no derivative in $x_0$, and the remaining components are the evolution equations; the identity is what ties the derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's *Canonical Quantization of the Biquaternion Maxwell Field* reproduces from the constraint algebra.
+**What the identity does.** The four equations $E_\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the component $\nu=0$ is the constraint, an equation with no derivative in $x_0$, and the remaining components are the evolution equations; the identity is what ties the derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two degrees of freedom of the sourceless field, which is the count that the constraint algebra also gives.
 
 **The source is forced to be conserved.** Sourcing the equation, $E_\nu = j_\nu$, and taking the divergence, gives
 
@@ -223,11 +223,11 @@ $$
 \sum_\nu\partial/\partial x_\nu j_\nu = \sum_\nu\partial/\partial x_\nu E_\nu \equiv 0 .
 $$
 
-The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ requires $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expands to $\partial/\partial x_t\,\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
+The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to the conservation of the source. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ requires $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expands to $\partial/\partial x_t\,\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
 
 ## Worked Example: a Local Symmetry with a Rigid Subgroup
 
-The Maxwell local symmetry has no algebraic part, so it carries no charge at all. The opposite case is a local symmetry that does contain a rigid subgroup, and it shows how the identity and the first theorem coexist.
+The abelian gauge symmetry has no algebraic part, so it carries no conserved current at all. The opposite case is a local symmetry that does contain a rigid subgroup, and it shows how the identity and the first theorem coexist.
 
 **The variational problem.** Let the fields be $A_\mu$ and a scalar $B$, and let the density be
 
@@ -235,7 +235,7 @@ $$
 \mathcal{L} = -\tfrac14\sum_{\mu,\nu} F_{\mu\nu}F_{\mu\nu} + \frac{m^2}{2}\sum_\mu\bigl(A_\mu + \partial/\partial x_\mu B\bigr)\bigl(A_\mu + \partial/\partial x_\mu B\bigr),
 $$
 
-the Stueckelberg form of the massive vector field, in which the mass term is written so that a local symmetry survives.
+a redundant form of the vector field with a parameter $m$, in which the term of order $m^2$ is written so that a local symmetry survives.
 
 **The local symmetry.** Under
 
@@ -261,7 +261,7 @@ $$
 
 whose divergence vanishes identically by the antisymmetry of $F$. So the second-theorem identity is exactly the statement that the rigid current, corrected by the term proportional to the other equation, is divergence-free **off shell**; on shell the correction term vanishes and the first theorem's conservation law stands alone.
 
-**The role of the mass.** In the limit $m\to0$ the density reduces to the Maxwell density of the previous section, written in a redundant way, and the identity reduces to the Maxwell identity. The example therefore displays the two theorems as one mechanism at two values of a parameter, which is the reason it is worth keeping beside the Maxwell case.
+**The role of the parameter.** In the limit $m\to0$ the density reduces to the density of the previous section, written in a redundant way, and the identity reduces to the identity of the previous section. The example therefore displays the two theorems as one mechanism at two values of a parameter, which is the reason it is worth keeping beside the earlier case.
 
 ## Counting: Conservation Laws against Identities
 
@@ -276,10 +276,10 @@ The two theorems are best kept apart by what they count.
 | Conclusion | $k$ currents, $\sum_\mu\partial/\partial x_\mu j_{\mu a}=0$ on shell | $q$ identities, $\equiv0$ off shell |
 | On shell | new conserved charges | empty |
 | Effect on the equations | none | $N-q$ independent equations, gauge freedom |
-| Maxwell case | none (no rigid subgroup) | one identity, source conservation |
-| Stueckelberg case | one rigid shift, one current | one identity, one constraint |
+| Abelian gauge case | none (no rigid subgroup) | one identity, source conservation |
+| Redundant form | one rigid shift, one current | one identity, one constraint |
 
-The distinction is not a matter of taste, and the count of the degrees of freedom makes it explicit. A first-kind symmetry adds no condition to the equations and yields one integral of the motion per parameter. A second-kind symmetry adds one differential identity per arbitrary function, removes that many independent equations, and opens the same number of gauge directions; it yields no integral of the motion unless it happens to contain a rigid subgroup, in which case the rigid part is governed by the first theorem and the local part by the second, as in the Stueckelberg example.
+The distinction is not a matter of taste, and the count of the degrees of freedom makes it explicit. A first-kind symmetry adds no condition to the equations and yields one integral of the motion per parameter. A second-kind symmetry adds one differential identity per arbitrary function, removes that many independent equations, and opens the same number of gauge directions; it yields no integral of the motion unless it happens to contain a rigid subgroup, in which case the rigid part is governed by the first theorem and the local part by the second, as in the second example.
 
 ## The Hamiltonian Form
 
@@ -289,13 +289,13 @@ The corpus also states Noether's theorem on the Hamiltonian side, and the relati
 
 **Definition (Weyl).** A symmetry is of the **first kind** when its parameters are constants, and of the **second kind** when its parameters are functions of the coordinates. Equivalently, a first-kind symmetry is a rigid subgroup of the symmetry group of the action, and a second-kind symmetry is the local, or gauge, part.
 
-The names are frequently reversed in the literature and in informal use. The reversal is worth naming because it changes the theorem that is being invoked. A transformation written with an arbitrary function of position is **of the second kind**, and invoking "Noether's theorem" on it yields the second theorem, an identity, not a conservation law. A transformation written with a constant parameter is of the first kind, and only then does "Noether's theorem" yield a conserved current. The corpus's own gauge articles are of the second kind throughout: the localisation of the central $\mathrm{U}(1)$ in *The Gauge Principle in Biquaternionic Form* produces the connection and the covariant derivative — the degeneracy described by the second theorem — and not a new conserved charge.
+The names are frequently reversed in the literature and in informal use. The reversal is worth naming because it changes the theorem that is being invoked. A transformation written with an arbitrary function of position is **of the second kind**, and invoking "Noether's theorem" on it yields the second theorem, an identity, not a conservation law. A transformation written with a constant parameter is of the first kind, and only then does "Noether's theorem" yield a conserved current. The corpus's own gauge articles are of the second kind throughout: the localisation of the central $\mathrm{U}(1)$ in *The Gauge Principle in Biquaternionic Form* produces the connection and the covariant derivative — the degeneracy described by the second theorem — and not a new conserved current.
 
 ## Summary
 
 Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j_{\mu a} = \sum_i \mathcal{L}_{\mu i}\zeta_{ia} - F_{\mu a}$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
 
-Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u_i + \sum_\mu\partial/\partial x_\mu(\sum_i \mathcal{L}_{\mu i}\delta u_i)$, read with the two kinds of variation. The identity of the second theorem, $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ in the first-order case, is checked on the Maxwell field, where it is $\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}\equiv0$ with residual exactly zero, and on a Stueckelberg-type field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The Maxwell identity forces the source to be conserved, $\sum_\nu\partial/\partial x_\nu j_\nu=0$, turning charge conservation into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b_i$ of its transformation does not vanish.
+Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u_i + \sum_\mu\partial/\partial x_\mu(\sum_i \mathcal{L}_{\mu i}\delta u_i)$, read with the two kinds of variation. The identity of the second theorem, $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ in the first-order case, is checked on the abelian gauge field, where it is $\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}\equiv0$ with residual exactly zero, and on a field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The identity forces the source to be conserved, $\sum_\nu\partial/\partial x_\nu j_\nu=0$, turning the conservation of the source into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b_i$ of its transformation does not vanish.
 
 ## Summary of Notation
 

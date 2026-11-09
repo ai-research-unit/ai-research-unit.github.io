@@ -53,9 +53,9 @@ $$
 The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
 
 $$
-F_{tk}=\frac{E_k}{c},
+F_{tk}=\frac{E_\eta}{c},
 \qquad
-F_{jk}=\epsilon_{jkl}B_l
+F_{jk}=\epsilon_{j\eta l}B_l
 \qquad\text{(real components)},
 $$
 
@@ -178,7 +178,7 @@ $$
 
 The orthogonality of the spin and the four-velocity is thus preserved **identically**, for every field, by a one-parameter family of covariant equations; the second coefficient is not independent.
 
-**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v_k=0$ and $\tilde{S}_{\Psi}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{kt}=-E_k/c$ and $F_{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
+**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v_\eta=0$ and $\tilde{S}_{\Psi}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{kt}=-E_\eta/c$ and $F_{kj}=\epsilon_{\eta jl}B_l$. The spatial equation is therefore
 
 $$
 \frac{ds_k}{d\tau}
@@ -211,7 +211,7 @@ $$
 
 the anti-Hermitian projection of the product of the material element $\tilde{V}_{\Phi}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V}_{\Phi})$ lies in the material sector is immediate, since the projection is onto $\mathbb{B}_{\Phi}$ by construction; that its four-vector components are the contraction $\sum_\nu F_{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
 
-**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$, one has
+**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F_{tk}=E_\eta/c$, $F_{jk}=\epsilon_{j\eta l}B_l$, one has
 
 $$
 \mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
@@ -220,7 +220,7 @@ $$
 W_\mu=\sum_\nu F_{\mu\nu}V_\nu .
 $$
 
-The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}_{\Phi}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ at $\epsilon_r=\mu_r=1$; repeating at $\epsilon_r=2,\mu_r=3$ and at $\epsilon_r=0.7,\mu_r=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}_{\Phi}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_\nu F_{\mu\nu}V_\nu$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
+The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}_{\Phi}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ at $\epsilon_r=\mu_r=1$; repeating at $\epsilon_r=2,\mu_r=3$ and at $\epsilon_r=0.7,\mu_r=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}_{\Phi}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $\sum_\nu F_{\mu\nu}V_\nu$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
 
 The second structure is the **invariant pairing**
 
@@ -254,7 +254,7 @@ $$
 =\left(\frac{\vec E\cdot\vec s}{c},\ \vec s\times\vec B\right),
 $$
 
-because $F_{tk}S_k=(E_k/c)s_k$ and $F_{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF_{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
+because $F_{tk}S_\eta=(E_\eta/c)s_k$ and $F_{jk}S_\eta=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF_{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{kt}=-E_\eta/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
 \boxed{\ \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
@@ -292,7 +292,7 @@ $$
 The map $\tilde{Q}\mapsto (ϙ/m)F_{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F_{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
 
 $$
-\frac{dX_k}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_k ,
+\frac{dX_\eta}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_k ,
 $$
 
 where $\vec X$ is the spatial part of the four-vector in question. Thus $S_{\rm vec}$ and $\gamma\vec v$ precess about $\vec B$ at the same proper-time rate, of magnitude $|ϙ||\vec B|/m$, and a spin whose spatial part is initially parallel to the velocity remains parallel: **the spin follows the velocity**. This is the classical statement that there is **no anomalous precession** at $g=2$: the spin's laboratory precession exactly follows the momentum's, and the kinematic (Thomas) rotation of the rest frame is already contained in the common transport. The $g=2$ identity was verified by recomputation on random fields and velocities: the spatial right-hand sides of the two equations for $S_{\rm vec}$ and $\gamma\vec v$ agree identically, so a spin initially parallel to the velocity remains parallel.
@@ -442,7 +442,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $F_{tk}=E_k/c$, $F_{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $i r'_t$: $F_{tk}=iE_k/c$) |
+| $F_{tk}=E_\eta/c$, $F_{jk}=\epsilon_{j\eta l}B_l$ | Field tensor components (real time; $i r'_t$: $F_{tk}=iE_\eta/c$) |
 | $\mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}P_{\mathbb{B}_{\Phi}}(\tilde{V}_{\Phi}\tilde{F})$ | Field action, components $\sum_\nu F_{\mu\nu}V_\nu$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
 | $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$ | Spin–field–velocity invariant |

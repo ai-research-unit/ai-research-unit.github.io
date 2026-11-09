@@ -24,7 +24,7 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The field, the chirality and the lattice
 
-**The field.** The field is the biquaternion $\tilde{Ξ}_{\mathrm{sp}}$, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp}}$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=i r'_t$ and $Q_k=q_k$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
+**The field.** The field is the biquaternion $\tilde{Ξ}_{\mathrm{sp}}$, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp}}$ is its four-component coordinate column where a column is needed. Its coordinates are the four coordinates of the $\mathbb{B}$ frame, $Q_t,Q_x,Q_y,Q_z$, which on the material sector read $Q_t=i r'_t$ and $Q_\eta=q_\eta$ (*Frame and Metric Conventions*). Here $i$ is the scalar imaginary, $i^2=-1$.
 
 **The dynamics is the chiral pair of the gradient**,
 
@@ -34,7 +34,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with massless limit $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}_{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with massless limit $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}_{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality is a right action.** $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.
 
@@ -107,7 +107,7 @@ where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. Taking the zone as 
 The doubling also shows in the dispersion relation. In lattice units $a=1$, the pole condition with $p_t=i\omega$ gives
 
 $$
-\sinh^2\omega(\vec p) = m^2 + \sum_{k=1}^3\sin^2 p_k .
+\sinh^2\omega(\vec p) = m^2 + \sum_{\eta=1}^3\sin^2 p_\eta .
 $$
 
 Its minima sit at the zeros of the spatial sines, eight in all. The temporal direction doubles each of them: $\sin^2(p_ta)$ has period $\pi/a$, so $p_t=0$ and $p_t=\pi/a$ give the same branch, and the sixteen poles are the eight spatial corners times the two temporal choices.
@@ -128,7 +128,7 @@ $$
 
 so the shift reverses the sign of some of the four units and does nothing else.
 
-**Which sign patterns the algebra supplies.** Conjugation by the unit $\vec e_k$, the map $x\mapsto\vec e_k x\vec e_k^{-1}$ — the only two-sided product in the article, and it acts on the units, never on the field or on a derivative — reverses the two spatial units perpendicular to it and fixes the other two: $\vec e_z x\vec e_z^{-1}$ sends $\vec e_x,\vec e_y$ to their negatives and fixes $\vec e_z$. So the four even sign patterns on the three spatial units are realized by inner automorphisms of $\mathbb{B}$. The quaternion conjugation $\natural$ reverses all three spatial units and supplies the four odd patterns. The temporal unit is central: no automorphism of $\mathbb{B}$ reverses it, and no element anticommutes with all four units — verified, the null space of the four equations $e_\mu a=-ae_\mu$ is zero. The temporal sign is reached by the shift alone.
+**Which sign patterns the algebra supplies.** Conjugation by the unit $\vec e_\eta$, the map $x\mapsto\vec e_\eta x\vec e_\eta^{-1}$ — the only two-sided product in the article, and it acts on the units, never on the field or on a derivative — reverses the two spatial units perpendicular to it and fixes the other two: $\vec e_z x\vec e_z^{-1}$ sends $\vec e_x,\vec e_y$ to their negatives and fixes $\vec e_z$. So the four even sign patterns on the three spatial units are realized by inner automorphisms of $\mathbb{B}$. The quaternion conjugation $\natural$ reverses all three spatial units and supplies the four odd patterns. The temporal unit is central: no automorphism of $\mathbb{B}$ reverses it, and no element anticommutes with all four units — verified, the null space of the four equations $e_\mu a=-ae_\mu$ is zero. The temporal sign is reached by the shift alone.
 
 **What follows.** The sixteen poles are exactly degenerate in the free theory, and the degeneracy is a property of the difference operator, not of the algebra. They cannot be discarded in an interacting theory: the lattice conserves momentum only modulo $2\pi/a$, so a hard virtual gauge boson can transfer $\pi/a$ and connect the tastes.
 
@@ -187,7 +187,7 @@ What survives all of this is the part with experimental consequences: the correc
 The framework's gradient is $\tilde{\nabla}$, the one of *Operator and Calculus Conventions*, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial R_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
 
 $$
-\boxed{\;\tilde{\nabla} \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{k=x,y,z}\vec e_k\,\frac{i\sin(p_ka)}{a}\;},
+\boxed{\;\tilde{\nabla} \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{\eta=x,y,z}\vec e_\eta\,\frac{i\sin(p_ka)}{a}\;},
 $$
 
 that is, $i\tilde K_{\Phi}(p)$ with $\tilde K_{\Phi}$ of §*The propagator and the doubler poles*. The denominator of the lattice propagator is then the scalar $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\sum_\mu\sin^2(p_\mu a)/a^2$, which has the sixteen zeros identified above.

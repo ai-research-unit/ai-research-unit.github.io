@@ -89,7 +89,7 @@ The identification is now direct. The gradient is the first-order operator of th
 
 Three objects are held apart here. The nilpotent half is one member of the pair: applied where it lands, it annihilates, because the other member carries the field back. The pair is two lines, and each line composed with its partner is central. And $m$ is a number: it multiplies the field in $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, and it becomes a term of the operator only when the same equation is written as a Schrödinger problem, where it multiplies the time basis operator of the frame. The two readings are one statement, that the mass is the term which pairs the two values.
 
-**One sign, recorded once.** With respect to the sesquilinear form of the algebra the adjoint of the gradient is minus its quaternion conjugate, $(\tilde{\nabla})^{\dagger} = -\tilde{\nabla}^{\natural}$: the derivative contributes a minus, and the units contribute $e_t^{*}=e_t$ and $\vec e_k^{*}=-\vec e_k$, so the two minus signs cancel on the spatial part and the timelike term keeps its own. Each line of the pair is therefore anti-Hermitian, the derivative it carries is anti-Hermitian, and the factor of $i$ that repairs it is the one that also appears in the momentum of the coordinate form; multiplying a line by $i$ repairs its Hermiticity and multiplies its composition with its partner by $-1$. The algebra is unaffected. Multiplying an anti-Hermitian operator by $i$ multiplies its square by $-1$, so the anticommutator of the repaired pair is $-\Box$ while the algebra's pairing is $+\Box$. The two differ by that one sign, which is the price of Hermiticity. The sign that does move is the one inside the d'Alembertian: on the material sector, where $Q_t=i r'_t$, the d'Alembertian changes by the one sign of $i^2=-1$.
+**One sign, recorded once.** With respect to the sesquilinear form of the algebra the adjoint of the gradient is minus its quaternion conjugate, $(\tilde{\nabla})^{\dagger} = -\tilde{\nabla}^{\natural}$: the derivative contributes a minus, and the units contribute $e_t^{*}=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$, so the two minus signs cancel on the spatial part and the timelike term keeps its own. Each line of the pair is therefore anti-Hermitian, the derivative it carries is anti-Hermitian, and the factor of $i$ that repairs it is the one that also appears in the momentum of the coordinate form; multiplying a line by $i$ repairs its Hermiticity and multiplies its composition with its partner by $-1$. The algebra is unaffected. Multiplying an anti-Hermitian operator by $i$ multiplies its square by $-1$, so the anticommutator of the repaired pair is $-\Box$ while the algebra's pairing is $+\Box$. The two differ by that one sign, which is the price of Hermiticity. The sign that does move is the one inside the d'Alembertian: on the material sector, where $Q_t=i r'_t$, the d'Alembertian changes by the one sign of $i^2=-1$.
 
 **The superpotential is the mass.** For a constant mass the parameter is an eigenvalue and the two partners coincide. For a position-dependent mass, $m\to W(Q_x)$, the mass is no longer an eigenvalue but a term of the operator, and the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial R_x^2 + W^2 \mp dW/dx$. The superpotential is thus the possibly position-dependent mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two parts named by the subscript. This is the biquaternion form of the standard claim that the superpotential is the "potential" of the supersymmetric system: here the potential is a mass.
 
@@ -145,7 +145,7 @@ $$
 
 A basis operator that commutes with the chirality basis operator carries each of the two values to itself, and a basis operator that anticommutes with it exchanges them. That is the whole content of the anticommutator, and it is why the two gradings sort every operator differently.
 
-They sort the same Hamiltonian differently, and the sorting is complementary. Write the free Hamiltonian in the basis operators of the frame: its mass term is $mc^2$ times the time basis operator $iR_{\vec e_x}$, and its kinetic term is the sum $c\sum_k p_k\,(L_{\vec e_k}R_{\vec e_z})$ of the three velocity basis operators. The time basis operator anticommutes with the chirality basis operator, so the mass term exchanges the two values; the velocity basis operators commute with it, because a left multiplier commutes with a right one, and the kinetic term therefore carries each value to itself. Each grading therefore splits the Hamiltonian into one preserved and one exchanged piece, and the two gradings swap the pieces. Neither grading makes the whole of $H$ exchange the values, and that is not a defect of the notation but the reason the two are distinguished. The non-relativistic reduction removes the term that the frame grading exchanges, and the supersymmetry pairs the two values that the subscript separates.
+They sort the same Hamiltonian differently, and the sorting is complementary. Write the free Hamiltonian in the basis operators of the frame: its mass term is $mc^2$ times the time basis operator $iR_{\vec e_x}$, and its kinetic term is the sum $c\sum_\eta p_\eta\,(L_{\vec e_\eta}R_{\vec e_z})$ of the three velocity basis operators. The time basis operator anticommutes with the chirality basis operator, so the mass term exchanges the two values; the velocity basis operators commute with it, because a left multiplier commutes with a right one, and the kinetic term therefore carries each value to itself. Each grading therefore splits the Hamiltonian into one preserved and one exchanged piece, and the two gradings swap the pieces. Neither grading makes the whole of $H$ exchange the values, and that is not a defect of the notation but the reason the two are distinguished. The non-relativistic reduction removes the term that the frame grading exchanges, and the supersymmetry pairs the two values that the subscript separates.
 
 The supercharge carries no mass. The pair of the previous sections has no mass term in either line, each line composed with its partner is the scalar $\Box$, and the mass enters only as the eigenvalue of the pair, $k_m=mc/\hbar$, where it is the pairing of the two values. The pair (an operator whose two members name the two values, a central square) is exactly what the supersymmetry needs, and the label it needs is the subscript and not the frame grading. A reader who imports the frame intuition into the supersymmetry will expect the kinetic term to be the graded object and the mass the ungraded one, and will then read the supercharge as the wrong operator.
 
@@ -184,9 +184,9 @@ The exactly solvable relativistic model of the companion article *The Dirac Osci
 That article eliminated the second value of the field and produced two conjugate first-order actions, written there $\mathcal{Q}_\pm$ and called $A_\omega,A_\omega^\dagger$ here so as not to collide with the supercharge:
 
 $$
-A_\omega: Q\longmapsto\sum_k\vec e_k\,\bigl(p_k-im\omega Q_k\bigr)\,Q\,\vec e_z,
+A_\omega: Q\longmapsto\sum_\eta\vec e_\eta\,\bigl(p_\eta-im\omega Q_\eta\bigr)\,Q\,\vec e_z,
 \qquad
-A_\omega^\dagger: Q\longmapsto\sum_k\vec e_k\,\bigl(p_k+im\omega Q_k\bigr)\,Q\,\vec e_z .
+A_\omega^\dagger: Q\longmapsto\sum_\eta\vec e_\eta\,\bigl(p_\eta+im\omega Q_\eta\bigr)\,Q\,\vec e_z .
 $$
 
 Their products are the exact operator identities of that article,
@@ -201,7 +201,7 @@ and
 $$
 A_\omega A_\omega^\dagger =\frac{2\,m^{2}\,c\,\omega}{k_m}\left(N + 3 +\frac{k_m\,S}{m\,c}\right),
 \qquad
-S=\sum_k  L_{\mathrm{orb},k}\,\tilde S_{\Psi,k} ,
+S=\sum_\eta  L_{\mathrm{orb},k}\,\tilde S_{\Psi,\eta} ,
 $$
 
 where $N$ is the oscillator number operator and $S$ is the spin–orbit element. The constant terms differ, $-\frac{3\,m^{2}\,c\,\omega}{k_m}$ against $+\frac{3\,m^{2}\,c\,\omega}{k_m}$, and the two products differ by their commutator, which carries the constant and twice the spin–orbit term. The commutator is not central, and the two operators are nevertheless isospectral away from zero, because $A_\omega$ intertwines them: $A_\omega(A_\omega^\dagger A_\omega) = (A_\omega A_\omega^\dagger)A_\omega$. Both identities were checked on the truncated oscillator space of the states with $N\le4$ (thirty-five bosonic states, seventy with the spin), where they held to $10^{-15}$ in the bulk of the basis, that is for every state with $N\le2$; the deviation in the outermost shell is the expected artefact of a truncation that realises the commutator of the ladder only below its ceiling. $A_\omega$ annihilates the vacuum exactly.
@@ -253,7 +253,7 @@ In the biquaternion framework shape invariance has a direct interpretation. The 
 **The isospectral family.** The partner pair is the corpus's simplest isospectral family: $H_+=A^{\dagger}A$ and $H_-=AA^{\dagger}$ agree away from zero, differ at zero where the Witten index counts the imbalance, and are carried into one another by the change of the mass profile that shape invariance describes. The element-level version of the same statement, with the mass as a root of a general element, is [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html).
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and a basis operator is $L_{a}R_{b}$.
 
@@ -275,7 +275,7 @@ $$
 \end{aligned}
 $$
 
-The squares follow from $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$: $\gamma_0^2=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ and $\gamma_k^2=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$, so the four carry $\varepsilon=(1,-1,-1,-1)$, and $\{L_{a}R_{b},L_{c}R_{d}\}=L_{ac}R_{db}+L_{ca}R_{bd}$. A basis operator is a pure tensor in $\mathrm{End}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, and the basis operators span the whole operator algebra over $\mathbb{C}$, so every operator on the module is a finite sum of basis operators. A single basis operator is not a projection: $L_{a}R_{b}$ is invertible whenever $a$ and $b$ are invertible, so it has rank four, and the operators of this article are written as short sums of basis operators rather than as one.
+The squares follow from $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$ and $\vec e_\eta^2=-e_t$: $\gamma_0^2=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ and $\gamma_\eta^2=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$, so the four carry $\varepsilon=(1,-1,-1,-1)$, and $\{L_{a}R_{b},L_{c}R_{d}\}=L_{ac}R_{db}+L_{ca}R_{bd}$. A basis operator is a pure tensor in $\mathrm{End}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, and the basis operators span the whole operator algebra over $\mathbb{C}$, so every operator on the module is a finite sum of basis operators. A single basis operator is not a projection: $L_{a}R_{b}$ is invertible whenever $a$ and $b$ are invertible, so it has rank four, and the operators of this article are written as short sums of basis operators rather than as one.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality and $\gamma_0$ the reference-frame time basis operator, and two identifications close the article. The chirality sign of the previous sections, $\xi=\mathrm{diag}(-I_2,I_2)$ on $\Delta$, has $\gamma_5$ as its basis operator: the basis operator and the array are the same operator in the two representations, while the central sign $\xi_{\mathrm{ad}}=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\xi_{\mathrm{ad}}^2=e_t$ — is the algebra's definition of it. And $\gamma_0$ is off-diagonal on the Dirac module, so the frame grading $\beta$ of §*The Two Gradings Must Not Be Conflated* is $\gamma_0$. The anticommutation that separates the two gradings is then a one-line computation on the basis operators,
 
@@ -311,7 +311,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
-| $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, with $i^2=-1$ |
+| $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, with $i^2=-1$ |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts named by the subscript; the chirality basis operator returns the minus value on one and the plus value on the other |
 | $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | One basis operator that carries the split, a pure right multiplier and hence an example of the right slot, whose two values the subscript takes |
 | $iR_{\vec e_x}$ | The time basis operator of the frame, the frame grading |
@@ -326,13 +326,13 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $V_\pm = W^2 \mp dW/dx$ | Partner potentials |
 | $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = 0$ | Supersymmetry algebra (nilpotent supercharge) |
 | — | The pair carries no letter: it is $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, each line composed with its partner being $\Box$ |
-| $a^{*}$, $a^{\natural}$, $\bar a$ | Conjugate for the adjoint ($i^{*}=-i$, $\vec e_k^{*}=-\vec e_k$), order-reversing conjugate, coefficient conjugate |
+| $a^{*}$, $a^{\natural}$, $\bar a$ | Conjugate for the adjoint ($i^{*}=-i$, $\vec e_\eta^{*}=-\vec e_\eta$), order-reversing conjugate, coefficient conjugate |
 | $(-1)^F$ | Grading operator |
 | $\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
 | $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
 | $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{B}_{\Psi}$ remainder) |
 | $A_\omega$, $A_\omega^\dagger$ | Oscillator pair (written $\mathcal{Q}_\pm$ in the companion article) |
-| $S=\sum_k L_{\mathrm{orb},k}\tilde S_{\Psi,k}$ | Spin–orbit element of the oscillator, with the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ |
+| $S=\sum_\eta L_{\mathrm{orb},k}\tilde S_{\Psi,\eta}$ | Spin–orbit element of the oscillator, with the two values $\frac{m\,c\,l}{k_m}$ and $-\frac{m\,c\,(l+1)}{k_m}$ |
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.

@@ -23,13 +23,13 @@ with the elements $\mathfrak D$ and $\tilde A_{\Phi}$ of §*The Daviau Equation*
 **The three vectors.** The source takes three vectors of three-dimensional Euclidean space with
 
 $$
-(i\vec e_j)(i\vec e_k)+(i\vec e_k)(i\vec e_j)=2\delta_{jk}\,e_t .
+(i\vec e_j)(i\vec e_\eta)+(i\vec e_\eta)(i\vec e_j)=2\delta_{j\eta}\,e_t .
 $$
 
-This is a derived form. It follows from the multiplication table of the units (*Algebra and Element Conventions*, §*The Algebra and Its Basis*) read on the three Hermitian units. At $j=k$ it reads $(i\vec e_k)^2=e_t$, since $i$ is central and $\vec e_k^2=-e_t$:
+This is a derived form. It follows from the multiplication table of the units (*Algebra and Element Conventions*, §*The Algebra and Its Basis*) read on the three Hermitian units. At $j=k$ it reads $(i\vec e_\eta)^2=e_t$, since $i$ is central and $\vec e_\eta^2=-e_t$:
 
 $$
-(i\vec e_k)^2=i^2\vec e_k^2=(-1)(-e_t)=e_t .
+(i\vec e_\eta)^2=i^2\vec e_\eta^2=(-1)(-e_t)=e_t .
 $$
 
 Two distinct space vectors anticommute, since two distinct quaternion units do.
@@ -65,7 +65,7 @@ $$
 (i\vec e_x)(i\vec e_y)=-\vec e_z,\qquad (i\vec e_y)(i\vec e_z)=-\vec e_x,\qquad (i\vec e_z)(i\vec e_x)=-\vec e_y .
 $$
 
-Each is $i$ times a space vector as well, $i\,(i\vec e_k)=-\vec e_k$, and that is the line that pairs each space vector with one quaternion unit.
+Each is $i$ times a space vector as well, $i\,(i\vec e_\eta)=-\vec e_\eta$, and that is the line that pairs each space vector with one quaternion unit.
 
 **The dictionary is a reading.** It carries one algebra into two spellings, and it compares no two algebras. The corpus's matrix model of $\mathbb{B}$ is fixed once, in *Matrix Representations Conventions*, and its arrays are not used here: every statement below is a statement about elements and their products.
 
@@ -169,7 +169,7 @@ in which the gradient multiplies on the left in each line and the mass is the ce
 
 $$
 \mathcal NF=\Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F-k_mi\,\overline{F}\,\vec e_z,\qquad
-D_3=\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k},
+D_3=\sum_{\eta\in\{x,r_y,r_z\}}\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
 where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i r'_t$ on the material sector. The time derivative and the spatial gradient multiply on the left, the mass multiplies on the right by the fixed direction $\vec e_z$, and the conjugation supplies the conjugate-linear part. This is the two-sided equation of the corpus: two sides, one field, no split into two values.
@@ -195,8 +195,8 @@ The other formulation writes the Dirac equation for a field of the algebra of fo
 
 $$
 \frac{\partial}{\partial R_t}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
-+\sum_{k\in\{x,r_y,r_z\}}\vec e_k\frac{\partial}{\partial R_k}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
-=-k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\Bigl(A_t+\sum_{k\in\{x,r_y,r_z\}}A_k\vec e_k\Bigr)\tilde{Ξ}_{\mathrm{sp}} .
++\sum_{\eta\in\{x,r_y,r_z\}}\vec e_\eta\frac{\partial}{\partial R_\eta}\tilde{Ξ}_{\mathrm{sp}}\,(i\vec e_z)
+=-k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\Bigl(A_t+\sum_{\eta\in\{x,r_y,r_z\}}A_\eta\vec e_\eta\Bigr)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The time derivative carries no space vector in either formulation, and that is what puts the two equations in the same shape.
@@ -207,7 +207,7 @@ $$
 z(\vec e_x)=\vec e_z,\qquad z(\vec e_z)=\vec e_y,\qquad z(\vec e_y)=\vec e_x,
 $$
 
-with $r_z(e_t)=e_t$ and $z(i)=i$. It extends to an automorphism of $\mathbb{B}$: it permutes the three vector units cyclically, so it preserves $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; it satisfies $z^3=\mathrm{id}$ and $z^{-1}=z^2$; and it commutes with the complex conjugation, because it fixes $i$ and permutes the units with real coefficients. Applying $z^{-1}$ to the spacetime equation and flipping the sign of the mass yields the Daviau equation, and conversely $z$ and the reverse flip recover the other. The two formulations differ, therefore, only by the sign of the mass, the cyclic relabelling of the three space directions, and the star.
+with $r_z(e_t)=e_t$ and $z(i)=i$. It extends to an automorphism of $\mathbb{B}$: it permutes the three vector units cyclically, so it preserves $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; it satisfies $z^3=\mathrm{id}$ and $z^{-1}=z^2$; and it commutes with the complex conjugation, because it fixes $i$ and permutes the units with real coefficients. Applying $z^{-1}$ to the spacetime equation and flipping the sign of the mass yields the Daviau equation, and conversely $z$ and the reverse flip recover the other. The two formulations differ, therefore, only by the sign of the mass, the cyclic relabelling of the three space directions, and the star.
 
 *Proof sketch (transcription of Fauser's argument).* The two equations are written term by term, the images of the four kinds of element are matched with the Daviau gradient and potential, and the two fields are identified by $z^{-1}$. The mass signs are opposite because the two equations put the mass in different slots: a right multiplication by the time vector there, the conjugation here. The star is the same conjugation in both, and $z$ carries it to itself, $z(\overline{\tilde{Ξ}_{\mathrm{sp}}})=\overline{z(\tilde{Ξ}_{\mathrm{sp}})}$. The three operations are read off from the two displayed equations.
 
@@ -259,7 +259,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The formulation writes the Dirac equation as one equation for a general element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$: a cyclically permuted gradient, a potential in the same basis, a fixed right bivector and a conjugate-linear mass. The three space vectors of the source are the Hermitian units $i\vec e_x$, $i\vec e_y$, $i\vec e_z$; their product is the central imaginary $i$; and the eight real functions of the source's field are the eight real coordinates of $\tilde{Ξ}_{\mathrm{sp}}$ on the real basis $e_t$, $i\vec e_k$, $\vec e_k$, $i$. The map is exact and carries no free choice.
+The formulation writes the Dirac equation as one equation for a general element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$: a cyclically permuted gradient, a potential in the same basis, a fixed right bivector and a conjugate-linear mass. The three space vectors of the source are the Hermitian units $i\vec e_x$, $i\vec e_y$, $i\vec e_z$; their product is the central imaginary $i$; and the eight real functions of the source's field are the eight real coordinates of $\tilde{Ξ}_{\mathrm{sp}}$ on the real basis $e_t$, $i\vec e_\eta$, $\vec e_\eta$, $i$. The map is exact and carries no free choice.
 
 The star of the source is the corpus's complex conjugation $\bar{\cdot}$, not the Hermitian conjugation ${}^{*}$. On the eight real units it fixes $e_t,\vec e_x,\vec e_y,\vec e_z$ and negates $i,i\vec e_x,i\vec e_y,i\vec e_z$, which is the definition of the complex conjugation. It is outer, and no multiplication by a fixed element implements it. This is the article's main algebraic point, and it is exact.
 
@@ -273,7 +273,7 @@ The formulation is an equivalent rewriting and carries no new physics. Its value
 |---|---|
 | $i\vec e_x$, $i\vec e_y$, $i\vec e_z$ | The three space vectors of the formulation; squares $+e_t$, pairwise anticommuting |
 | $i$ | The pseudoscalar of the formulation; the corpus's central imaginary |
-| $e_t$, $i\vec e_k$, $\vec e_k$, $i$ | The eight real units the map uses |
+| $e_t$, $i\vec e_\eta$, $\vec e_\eta$, $i$ | The eight real units the map uses |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | The field, a general element of $\mathbb{B}$ |
 | $a,\dots,h$ | The eight real functions of the field |
 | $\tilde{Ξ}_{\mathrm{sp}}=a\,e_t+d\,i\vec e_x+b\,i\vec e_y+c\,i\vec e_z-e\,\vec e_x+f\,\vec e_y-g\,\vec e_z+h\,i$ | The Daviau map, on the eight real units |

@@ -37,7 +37,7 @@ A second, less comfortable point belongs in the introduction. Almost every state
 | Mass | the coefficient $m_e$ of the chirality-off-diagonal pair |
 | Charge | the coupling $ϙ=-e$ in the gauge-covariant derivative (see below) |
 | Spin state | the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ along a declared unit direction $\vec u$ |
-| Spin observables | Hermitian elements $\tilde R_\Psi = i \sum_k h_k\vec e_k\in\mathbb{B}_{\Psi}$ |
+| Spin observables | Hermitian elements $\tilde R_\Psi = i \sum_\eta h_\eta\vec e_\eta\in\mathbb{B}_{\Psi}$ |
 | Conserved current | $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j\in\mathbb{B}_{\Phi}$, with $j_0\ge0$ |
 | Chirality parts | the parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, the two components of the pair |
 
@@ -116,9 +116,9 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible left action, on a complex space of dimension two, and the group of unit elements of the quaternionic norm is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group (*Norm and Pairing Conventions*). A field in that space carries the representation $(\tfrac12,0)$; the field of this article splits by the chirality into two such parts and carries $(\tfrac12,0)\oplus(0,\tfrac12)$. In either case the spin is $\tfrac12$: a rotation by $2\pi$ acts as $-e_t$ on the two-dimensional space and as $+e_t$ on the four-vectors of $\mathbb{B}_{\Phi}$. The twofold, double-valued character of electron spin is therefore a consequence of where the field lives, not an independent postulate. The spin rotations are the real unit quaternions, forming $SU(2)$.
 
-**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_k h_k\vec e_k\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde R_\Psi = i\sum_k h_k\vec e_k$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
+**Derived: the state and observable structure.** The electron's spin state along a declared unit direction $\vec u$ is the state $\tilde{Ϛ}_{\Psi}(\vec u)\in\mathbb{B}_{\Psi}$ of *Algebra and Element Conventions*, and its spin observables are the Hermitian elements $i \sum_\eta h_\eta\vec e_\eta\in\mathbb{B}_{\Psi}$. With the Born pairing of *Norm and Pairing Conventions* the state along $\vec u$ returns the weight $n_\nu h_\nu$ on $\tilde R_\Psi = i\sum_\eta h_\eta\vec e_\eta$; in particular the state along $\vec e_z$ returns $1$ on $i\vec e_z$ and $0$ on $i\vec e_x$, the values the spin along $z$ requires.
 
-**Inserted: the magnitude.** The spin element is $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}(i\vec e_k)$. The element $i\vec e_k$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{m\,c}{2\,k_m}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{m\,c}{k_m}$ is physics inserted from outside.
+**Inserted: the magnitude.** The spin element is $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}(i\vec e_\eta)$. The element $i\vec e_\eta$ is Hermitian and squares to $+e_t$, so it is the algebra's spin component and has the two eigenvalues $\pm1$. The factor $\frac{m\,c}{2\,k_m}$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\frac{m\,c}{k_m}$ is physics inserted from outside.
 
 ## The Dirac Description of the Electron
 
@@ -156,7 +156,7 @@ $$
 -\tilde{\nabla}^{\natural}F - k_m\,i\,\overline{F}\,\vec e_z = 0
 $$
 
-with $\vec\nabla = \sum_k\vec e_k\,\partial/\partial R_k$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
+with $\vec\nabla = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
@@ -177,7 +177,7 @@ $$
 -\frac{ϙ c1/k_{m_e}}{2}\,i\,\vec B \in \mathbb{B}_{\Psi} .
 $$
 
-Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
+Writing the coupling as $-\vec\mu\cdot\vec B$ identifies $\vec\mu = (ϙ/m_e)\vec S$, with the spin components $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, which is $\vec\mu = g\,(ϙ/2m_e)\vec S$ with
 
 $$
 g = 2 .
@@ -232,7 +232,7 @@ Two facts about products carry the whole structure, and they are stated in words
 |---|---|---|
 | Spin-$\tfrac{1}{2}$ representation content | Derived | $\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible action on a space of dimension two; $SL(2,\mathbb{C})$ double cover |
 | Spin states, observables, expectation values | Derived | the state of $\mathbb{B}_{\Psi}$ and the Born pairing of *Norm and Pairing Conventions* |
-| Spin magnitude $\frac{m\,c}{2\,k_m}$ | Represented | normalisation of $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ |
+| Spin magnitude $\frac{m\,c}{2\,k_m}$ | Represented | normalisation of $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m_e$ coefficient from the mass term plus minimal coupling |
 | Conservation of the current, $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$ | Derived | the law $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde{J}_{\Phi}) = 0$; the bilinear itself is the older display's, in the companion article's closing section |
 | Coulomb field $\tilde{F}\in\mathbb{B}_{\Psi}$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
@@ -277,7 +277,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -310,7 +310,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 
 | Symbol | Meaning |
 |---|---|
-| $Q_t=i r'_t$, $Q_k=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
+| $Q_t=i r'_t$, $Q_\eta=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The four units of the coefficient basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
@@ -331,7 +331,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde K_{\Phi} = i(\omega/c)\,e_t + \vec k_\Phi$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\frac{m\,c}{k_m}$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
-| $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_k\vec e_k\partial/\partial R_k$ | Two-sided Dirac equation of the dictionary form |
+| $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_\eta\vec e_\eta\partial/\partial R_\eta$ | Two-sided Dirac equation of the dictionary form |
 | $g$, $\mu_B = ec\dfrac{1}{2\,k_{m_e}}$ | Gyromagnetic factor; Bohr magneton |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\Gamma = -iR_{\mathrm{axf},\vec e_z}$ | Central chirality grading and its representative; closing section |
 | $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their basis operator; closing section |

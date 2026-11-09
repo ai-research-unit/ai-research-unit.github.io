@@ -43,10 +43,10 @@ On the material sector $Q_t=i r'_t$ the time derivative is $\partial/\partial R_
 **The square of the gradient is not scalar.** The product $\tilde\nabla\tilde\nabla$ is
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
 
-because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_k$ is $e_te_k-\vec e_ke_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
+because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla\tilde\nabla^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_k-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
 **The wave element.** A plane wave is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{\mathrm{sp},0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
@@ -261,13 +261,13 @@ So the labels are locked to the members: **the field annihilated by $\tilde\nabl
 **The position-space reading.** On the material sector the free member reads
 
 $$
--i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k}=0 .
+-i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}=0 .
 $$
 
 The same line is read for $\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t$:
 
 $$
-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}=-i\sum_k\vec e_k\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_k},
+\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}=-i\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta},
 $$
 
 one equation on the element, whose two solutions are the two locked states above. The magnitude $\lvert\vec p\rvert$, which the energy carries at $m=0$, is part of the right-hand side and cannot be dropped.
@@ -400,7 +400,7 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | Symbol | Meaning |
 |+-|+-|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial R_\mu$, four components |
 | $\tilde\nabla^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |

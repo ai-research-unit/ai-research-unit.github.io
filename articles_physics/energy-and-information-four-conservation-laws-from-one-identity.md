@@ -22,14 +22,14 @@ $$
 \tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z,\qquad Q_\mu\in\mathbb{C},
 $$
 
-with $e_t=1$ and $\vec e_k^2=-e_t$. The algebra attaches two numbers to it. The **trace** is twice the scalar part, and the **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:
+with $e_t=1$ and $\vec e_\eta^2=-e_t$. The algebra attaches two numbers to it. The **trace** is twice the scalar part, and the **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:
 
 $$
 \operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q=2Q_t,\qquad
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
 
-In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$, the trace is the matrix trace and the quaternionic norm is the determinant:
+In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$, the trace is the matrix trace and the quaternionic norm is the determinant:
 
 $$
 \operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t,\qquad \det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_\natural .
@@ -261,7 +261,7 @@ checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_
 
 One level up, the question is about maps rather than elements. *The Exponential, the Logarithm and the Generator* records that an irreversible completely positive trace-preserving map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.
 
-The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. *Exceptional Points and the Nilpotent Regime* treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_kQ_k^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_kq_k^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.
+The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. *Exceptional Points and the Nilpotent Regime* treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_\eta Q_\eta^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_kq_\eta^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.
 
 **Where a falling $P$ comes from: a channel that was eliminated.** The mechanism is in *The Unstable State and the Complex Energy Pole*. Split the module into the slot under study and the rest, and integrate the rest out. The Green's function of the watched slot becomes
 
@@ -309,7 +309,7 @@ The shorthand must not be read as a new element of the algebra. It is the reduce
 $$
 \frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
 =-\frac{k_m\,i}{m\,c}\,[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]
-+\sum_k\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
++\sum_\eta\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 -\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}_{\Psi}\}\right).
 $$
 
@@ -317,10 +317,10 @@ The trace is preserved, $\frac{d}{dr'_t}\operatorname{Tr}\tilde{Ϛ}_{\Psi}=0$ by
 
 $$
 i\,\partial_{r'_t}\tilde{Ξ}_{\mathrm{nj}}
-=\Bigl(\tilde R_\Psi-\frac{i}{2}\sum_k\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\Bigr)\tilde{Ξ}_{\mathrm{nj}},
+=\Bigl(\tilde R_\Psi-\frac{i}{2}\sum_\eta\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\Bigr)\tilde{Ξ}_{\mathrm{nj}},
 \qquad
 \frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*
-=-\sum_k\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*\le0 .
+=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*\le0 .
 $$
 
 The lost norm is exactly the probability that a jump has occurred, checked to $1.0\times10^{-11}$ on a hundred random triples of jump operators. That is the precise content of the anti-Hermitian part of an effective Hamiltonian: it describes the branch where nothing has happened yet, and the rate it carries is the jump rate.
@@ -769,7 +769,7 @@ What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The
 | an anti-Hermitian element generates a $*$-unitary flow | established | $\exp(-r'_t\tilde Q)\exp(r'_t\tilde Q)=e_t$; checked |
 | no element of either sector has a decay rate in the corpus convention, which carries the $-i$ | established | $\operatorname{Re}Q_t=0$ on $\mathbb{B}_{\Phi}$; the $-i$ moves $Q_t$ to the frequency slot on $\mathbb{B}_{\Psi}$; both norms identically $1$, checked to $10^{-14}$ |
 | the norm of the exponential is fixed by three numbers | established | the law of *Relations between the Biquaternion Exponential and the Fourier Kernel*; checked to $1.4\times10^{-15}$ |
-| the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_kQ_k^2\ge0$ for a real vector part, $-\sum_kq_k^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
+| the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_\eta Q_\eta^2\ge0$ for a real vector part, $-\sum_kq_\eta^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
 | a survival probability can fall while the total is conserved | established | band model, 2000 levels: $P_0$ falls $1\to0.135$, total norm $1.000000000$; checked |
 | the survival probability leaves one quadratically | corpus result | $P=1-\frac{k_m^{2}\,\Delta^{2}\,\tilde{R}_{\Psi}^{2}\,{r'_{t}}^{2}}{m^{2}\,c^{2}}+O(r'^4_t)$; band model $(1-P)/r'^2_t=0.800$ vs $g^2N=0.8$ |
 | the exponential is an intermediate-time fit, not the law | corpus result | quadratic start, power-law tail; deficit ratio $6287$ at $r'_t=10^{-4}$ |
@@ -778,7 +778,7 @@ What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The
 | the effective anti-Hermitian part decays the norm at rate $\tilde\Gamma$ | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*$; checked on 100 elements |
 | the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-i(w/(\hbar c))r'_t}v\rVert^2=e^{2\operatorname{Im}(w)r'_t/(\hbar c)}$; checked to $7.8\times10^{-16}$ |
 | the Lindblad flow preserves the trace | established | cyclicity; checked to $1.8\times10^{-15}$ |
-| the norm lost on the no-jump branch is the total jump probability | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_k\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked |
+| the norm lost on the no-jump branch is the total jump probability | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked |
 | the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form | established | the adjoint is its negative; residual $0$ |
 | the entropy is a function of the quaternionic norm | corpus result | *Von Neumann Entropy and the Biquaternion Norm* |
 | the entropy increases under coarse-graining | corpus result | *Coarse-Graining and the Biquaternion Entropy Functional* |

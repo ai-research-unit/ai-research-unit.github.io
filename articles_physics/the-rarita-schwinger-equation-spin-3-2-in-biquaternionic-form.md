@@ -24,13 +24,13 @@ The computation is a derived form of this article. It says that $\tilde\nabla^2$
 **The second and third statements are the two constraints.** The first is the **trace constraint**, one element equation in which the three spatial directions multiply their component on the left and the axis $\vec e_z$ on the right; the second is the **divergence constraint**,
 $$
 \begin{aligned}
-\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\\
+\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\\
 \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}&=0,
 \end{aligned}
 $$
 with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the frame, as fixed in *Index and Notation Conventions*, §*The Subscripts*. The source states the three statements as one antisymmetrized equation; the algebra states them as the pair and the two constraints, and the translation between the two writings is made once, in §*The Field in the Biquaternion Framework*.
 
-**In the rest frame the pair leaves four complex parameters, and they are the quartet.** The pair forces the time component of the family to vanish, the three spatial components satisfy one vector condition, $\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}=0$, and the surviving space is exactly four-dimensional. It carries the spin-$\tfrac32$ quartet, and the condition on the vector index acts on the three directions as the transverse map of §*The Transverse Condition on the Vector Index*.
+**In the rest frame the pair leaves four complex parameters, and they are the quartet.** The pair forces the time component of the family to vanish, the three spatial components satisfy one vector condition, $\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}=0$, and the surviving space is exactly four-dimensional. It carries the spin-$\tfrac32$ quartet, and the condition on the vector index acts on the three directions as the transverse map of §*The Transverse Condition on the Vector Index*.
 
 **Two features of the standard theory are recorded and read in the algebra.** First, in the massless case the system has a gauge freedom $\tilde{Ξ}_{\mathrm{sp},\mu}\to\tilde{Ξ}_{\mathrm{sp},\mu}+\partial/\partial x_\mu\,\epsilon$, with $\epsilon$ an arbitrary Dirac field; the freedom removes the spin-$\tfrac12$ branches that the representation theory places in the field, leaving the two helicities $\pm\tfrac32$. Second, in the massive case the constraint structure is more rigid and the minimal coupling is known to be inconsistent: the field propagates acausally in an external electromagnetic background, the Velo–Zwanziger obstruction, and a consistent interacting theory requires either a gravitational background or a gauge principle. The framework represents these facts; it does not remove them.
 
@@ -58,7 +58,7 @@ The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangi
 
 ### The constraint and the reduction
 
-**The massive equation implies the trace in two contractions**, and the same two contractions deliver the reduced dynamics. Write $\tilde S_{\Psi}:=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ for the trace element of the family. The first contraction is the divergence of the equation: the kinetic structure is antisymmetric in its first and third indices, so the divergence kills it, and what survives is the divergence of the trace. The second is the contraction with the raised direction, which turns the equation into the trace element itself. In the algebra the two results are the two constraints of the framework, and for $m\neq0$ both hold as consequences and not as conditions:
+**The massive equation implies the trace in two contractions**, and the same two contractions deliver the reduced dynamics. Write $\tilde S_{\Psi}:=\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ for the trace element of the family. The first contraction is the divergence of the equation: the kinetic structure is antisymmetric in its first and third indices, so the divergence kills it, and what survives is the divergence of the trace. The second is the contraction with the raised direction, which turns the equation into the trace element itself. In the algebra the two results are the two constraints of the framework, and for $m\neq0$ both hold as consequences and not as conditions:
 $$
 \tilde S_{\Psi}=0,\qquad \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}=0 ,
 $$
@@ -116,7 +116,7 @@ that is, a family of four elements of the algebra, one for each spacetime index.
 
 **The source's equation is transcribed component by component**, and the transcription is one linear map. The source contracts its four-vector index with four generators; the algebra's four units that square to $+e_t$ carry the same index, as fixed in *Algebra and Element Conventions*, §*The Algebra and Its Basis*. Write $E_\mu$ for the source's generator with index $\mu$, an object of the display and not an element of $\mathbb{B}$, and assign
 $$
-E_\mu \;\longmapsto\; e_t \ (\mu=0), \qquad E_\mu \;\longmapsto\; i\vec e_k \ (\mu=k).
+E_\mu \;\longmapsto\; e_t \ (\mu=0), \qquad E_\mu \;\longmapsto\; i\vec e_\eta \ (\mu=k).
 $$
 From the span of the four generators onto $\mathbb{B}$ this is a complex-linear isomorphism, and the two sides are different kinds of object throughout: an object of the display on the left, an element on the right. It carries the index and nothing else. It is not multiplicative, and no product of images is used below: the equation needs two structures only, the gradient for the kinetic term and one element of $\mathbb{B}$ for each index pair of the mass term.
 
@@ -124,7 +124,7 @@ From the span of the four generators onto $\mathbb{B}$ this is a complex-linear 
 
 **The mass structure is an element.** The antisymmetrized pair of the source is, in the algebra, left multiplication by an element of $\mathbb{B}$,
 $$
-\Gamma_{\mu\nu}\longmapsto \Gamma_{0k}=i\vec e_k,\quad \Gamma_{k0}=-i\vec e_k,\quad \Gamma_{jk}=\pm\vec e_l,\quad \Gamma_{00}=0,
+\Gamma_{\mu\nu}\longmapsto \Gamma_{0k}=i\vec e_\eta,\quad \Gamma_{k0}=-i\vec e_\eta,\quad \Gamma_{jk}=\pm\vec e_l,\quad \Gamma_{00}=0,
 $$
 with the sign of $\Gamma_{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$ and $\vec e_l$ the remaining direction. The six entries with one time index are imaginary multiples of a spatial unit and square to $+e_t$; the six entries with two spatial indices are spatial units and square to $-e_t$. All twelve were checked, and the orientation $\vec e_x\vec e_y=\vec e_z$ gives $\Gamma_{12}=\vec e_z$, $\Gamma_{23}=\vec e_x$ and $\Gamma_{31}=\vec e_y$. The mass term of the $\mu$-th equation is $\sum_\nu\Gamma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp},\nu}$, left multiplication by an element contracted with the corresponding component of the field. Nothing of the source's pair survives beyond this element, and the element is frame-free: it is written in the units and carries no reference to a frame.
 
@@ -143,7 +143,7 @@ together with the two constraints,
 $$
 \boxed{\;
 \begin{aligned}
-\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\\
+\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\\
 \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}&=0,
 \end{aligned}\;}
 $$
@@ -153,7 +153,7 @@ where the first line of the second display is the algebra reading of the source'
 
 **The trace in the algebra.** The source's trace contracts the family with the four directions. Each of the three spatial components is multiplied by its direction on the left and by $\vec e_z$ on the right, the time component by neither, and the four results are added into one element of $\mathbb{B}$,
 $$
-\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z ,
+\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z ,
 $$
 so the source's condition is equivalent to $\tilde S_{\Psi}=0$. The two forms carry the same four complex conditions, and the map from the sixteen complex components to those four has rank four, checked exactly. The right multiplier $\vec e_z$ is what the three spatial directions leave behind, and it is not decoration: without it the condition is a different map of the same rank, with a different kernel, checked. The condition is frame-free: both sides are elements of $\mathbb{B}$, and no frame enters.
 
@@ -171,11 +171,11 @@ so the source's condition is equivalent to $\tilde S_{\Psi}=0$. The two forms ca
 
 **The trace constraint is one element equation, and at rest it reads on the components.** With the components of the form above,
 $$
-\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z=0 .
+\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\vec e_z=0 .
 $$
 Read on the family it says two things. The time component vanishes, $\tilde{Ξ}_{\mathrm{sp},0}=0$. The three spatial components satisfy the single vector condition
 $$
-\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}=0,
+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}=0,
 $$
 which is the algebraic form of the transverse condition on the three spatial amplitudes. Both statements were checked on the whole solution space and not on a single wavefunction: the time component vanishes identically, and the vector condition cuts the six complex parameters of the three spatial components to four.
 
@@ -207,21 +207,21 @@ and the vector condition removes exactly the spin-$\tfrac12$ piece of dimension 
 
 *In the algebra*: the trace map has rank four on the sixteen complex components. On a null momentum the symbol of the gradient, $i\hbar\tilde K_{\Phi}=-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$, is a zero divisor. The null condition is its quaternion norm, $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\hbar^{2}\bigl(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}\bigr)=0$, which is $k_{t}^{\prime\,2}=\lvert\vec k_\Phi\rvert^{2}$, that is $\varpi^{2}=c^{2}\vec k_\Phi^{\,2}$ at $k_m=0$, and not $k_{t}^{\prime\,2}=-\lvert\vec k_\Phi\rvert^{2}$. Then left multiplication by $i\hbar\tilde K_{\Phi}$ has rank two and a two-dimensional kernel, checked on four independent null momenta. On a non-null momentum the same left multiplication has rank four and no kernel. That kernel is where the two helicities live, and it is the algebraic reason the massless count is the count it is.
 
-*The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\xi_k=\vec e_k\tilde\zeta$, it fixes every family with $\sum_k\vec e_k\tilde\xi_k=0$, and its rank over the vector index is two.
+*The transverse map.* The map $T$ of §*The Transverse Condition on the Vector Index* was checked on fifty generic families of three components: it is unchanged by a second application to $3\times10^{-16}$, it annihilates every longitudinal family $\tilde\xi_k=\vec e_\eta\tilde\zeta$, it fixes every family with $\sum_\eta\vec e_\eta\tilde\xi_k=0$, and its rank over the vector index is two.
 
 ## The Transverse Condition on the Vector Index
 
-**The vector condition acts on the three directions through one map.** The spatial components are an element each and a direction each, so the condition $\sum_k\vec e_k\tilde\xi_k=0$ singles out a subspace of the six complex parameters they carry. The map that produces it is written with the units alone,
+**The vector condition acts on the three directions through one map.** The spatial components are an element each and a direction each, so the condition $\sum_\eta\vec e_\eta\tilde\xi_k=0$ singles out a subspace of the six complex parameters they carry. The map that produces it is written with the units alone,
 $$
-T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_k\sum_j\vec e_j\tilde\xi_j .
-$$
-
-**The map is unchanged by a second application.** The contraction of its output vanishes, because $\sum_k\vec e_k\vec e_k=-3e_t$:
-$$
-\sum_k\vec e_k\,T(\tilde\xi)_k=\sum_k\vec e_k\tilde\xi_k+\tfrac13\Bigl(\sum_k\vec e_k\vec e_k\Bigr)\sum_j\vec e_j\tilde\xi_j=\sum_k\vec e_k\tilde\xi_k-\sum_j\vec e_j\tilde\xi_j=0 .
+T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_\eta\sum_j\vec e_j\tilde\xi_j .
 $$
 
-**Its kernel is the longitudinal family, and its fixed families are the constrained ones.** The equation $T(\tilde\xi)=0$ reads $\tilde\xi_k=-\tfrac13\vec e_k\sum_j\vec e_j\tilde\xi_j$, which is the longitudinal family $\tilde\xi_k=\vec e_k\tilde\zeta$ with one element $\tilde\zeta$ for the three directions, the spin-$\tfrac12$ admixture; and every family that satisfies the condition is carried into itself. Its rank over the vector index is $3-1=2$, so it keeps two of the three directions, and with the two complex parameters of each it leaves the four states of spin $\tfrac32$.
+**The map is unchanged by a second application.** The contraction of its output vanishes, because $\sum_\eta\vec e_\eta\vec e_\eta=-3e_t$:
+$$
+\sum_\eta\vec e_\eta\,T(\tilde\xi)_k=\sum_\eta\vec e_\eta\tilde\xi_k+\tfrac13\Bigl(\sum_\eta\vec e_\eta\vec e_\eta\Bigr)\sum_j\vec e_j\tilde\xi_j=\sum_\eta\vec e_\eta\tilde\xi_k-\sum_j\vec e_j\tilde\xi_j=0 .
+$$
+
+**Its kernel is the longitudinal family, and its fixed families are the constrained ones.** The equation $T(\tilde\xi)=0$ reads $\tilde\xi_k=-\tfrac13\vec e_\eta\sum_j\vec e_j\tilde\xi_j$, which is the longitudinal family $\tilde\xi_k=\vec e_\eta\tilde\zeta$ with one element $\tilde\zeta$ for the three directions, the spin-$\tfrac12$ admixture; and every family that satisfies the condition is carried into itself. Its rank over the vector index is $3-1=2$, so it keeps two of the three directions, and with the two complex parameters of each it leaves the four states of spin $\tfrac32$.
 
 **The covariant form refers the same map to the four-momentum.** The standard transverse condition of the theory is the condition above with the fixed direction replaced by the four-momentum $p_\mu$; at $p_\mu=(m,0,0,0)$ the two agree. In the biquaternion framework a boost is a rotor conjugation, so the covariant form is the rotor conjugate of the rest-frame map, and the algebra supplies the boost without a separate construction.
 
@@ -255,7 +255,7 @@ left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in 
 $$
 \tilde{Ξ}_{\mathrm{sp},\mu} = \tilde{Ξ}_{\mathrm{sp},\mu,0}\,\exp(\,i\,\mathrm{Sc}\frac{k_m\,\tilde{P}_{\Phi}\,\tilde{Q}^{\natural}}{m\,c}),
 $$
-with $\tilde Q=x_0e_t+\sum_k x_k\vec e_k$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_k p_k\vec e_k$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
+with $\tilde Q=x_0e_t+\sum_\eta x_k\vec e_\eta$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_\eta p_\eta\vec e_\eta$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
 \frac{\varpi^2}{c^2} - \vec k_\Phi^2 = k_m^{2},
 \qquad\text{i.e.}\qquad
@@ -281,7 +281,7 @@ In each row the physical component count is $2s+1$ for the particle, and the equ
 
 **The standard part.** The vector-valued field, the antisymmetrized equation, the trace constraint, the gauge freedom, the reduction to the Dirac equation, the spin-$\tfrac32$ content, and the Velo–Zwanziger difficulty are all standard and are transcribed here. The representation-theory count $2\times\tfrac32\oplus4\times\tfrac12$ and the reduction $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ are standard.
 
-**The algebra's part.** Three statements are the framework's. First, the natural carrier of the field is the family of biquaternion-valued components $\tilde{Ξ}_{\mathrm{sp},\mu}$, and the two structural conditions of the free theory, the chiral pair on each component and the trace constraint $\tilde S_{\Psi}=0$, are each single algebraic statements in $\mathbb{B}$ rather than lists of component equations. The antisymmetrized equation is a transcription of the pair, not a third condition. Second, the source's $i$ is the right multiplier $\omega=-\vec e_z$, whose square is $-e_t$; it commutes with the trace map and with the pair, so the structure of the field's two values needs no operator beyond the units the algebra already has. Third, the condition $\sum_k\vec e_k\tilde\xi_k=0$ gives the transverse map $T$ by elementary algebra, and its boosted form is the rotor conjugate of the rest-frame map, so the covariant condition is available without a separate construction.
+**The algebra's part.** Three statements are the framework's. First, the natural carrier of the field is the family of biquaternion-valued components $\tilde{Ξ}_{\mathrm{sp},\mu}$, and the two structural conditions of the free theory, the chiral pair on each component and the trace constraint $\tilde S_{\Psi}=0$, are each single algebraic statements in $\mathbb{B}$ rather than lists of component equations. The antisymmetrized equation is a transcription of the pair, not a third condition. Second, the source's $i$ is the right multiplier $\omega=-\vec e_z$, whose square is $-e_t$; it commutes with the trace map and with the pair, so the structure of the field's two values needs no operator beyond the units the algebra already has. Third, the condition $\sum_\eta\vec e_\eta\tilde\xi_k=0$ gives the transverse map $T$ by elementary algebra, and its boosted form is the rotor conjugate of the rest-frame map, so the covariant condition is available without a separate construction.
 
 **What is imported.** The identification of the field with a spin-$\tfrac32$ particle, the value of the mass, the existence of a consistent interaction, and the resolution of the Velo–Zwanziger problem are inputs beyond the free algebra. The canonical quantisation of the field and its propagator belong to the field-theoretic companion subcategory.
 
@@ -299,14 +299,14 @@ In each row the physical component count is $2s+1$ for the particle, and the equ
 The Rarita–Schwinger field is a four-vector whose components are Dirac fields, of sixteen complex components. Its equation, in the source's writing, is one antisymmetrized equation; in the algebra it is the chiral pair on each component together with the two constraints
 
 $$
-\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z=0,
+\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z=0,
 \qquad
 \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}=0,
 $$
 
 with the mass as the pairing of the two values and the mass term of each component a left multiplication by the element $\Gamma_{\mu\nu}$. In the massive case both constraints are consequences of the equation: the solution space is four-dimensional and the trace and the divergence vanish on it. In the massless case the divergence is still a consequence and the trace is not; the gauge freedom $\tilde{Ξ}_{\mathrm{sp},\mu}\to\tilde{Ξ}_{\mathrm{sp},\mu}+\partial/\partial x_\mu\,\epsilon$ shifts the trace by exactly the two-dimensional space the trace values occupy, so the trace is a complete gauge choice.
 
-In the rest frame the system forces the time component to vanish and the three spatial components to satisfy $\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}=0$. The surviving space is four-dimensional and carries the spin-$\tfrac32$ quartet; the map onto it is $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_k\sum_j\vec e_j\tilde\xi_j$, unchanged by a second application and of vector-index rank two. The representation content $2\times\tfrac32\oplus4\times\tfrac12$ loses its four spin-$\tfrac12$ multiplets to the constraint and the gauge freedom, and the massless field retains the two helicities $\pm\tfrac32$.
+In the rest frame the system forces the time component to vanish and the three spatial components to satisfy $\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}=0$. The surviving space is four-dimensional and carries the spin-$\tfrac32$ quartet; the map onto it is $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_\eta\sum_j\vec e_j\tilde\xi_j$, unchanged by a second application and of vector-index rank two. The representation content $2\times\tfrac32\oplus4\times\tfrac12$ loses its four spin-$\tfrac12$ multiplets to the constraint and the gauge freedom, and the massless field retains the two helicities $\pm\tfrac32$.
 
 The field is a tensor product of the algebra's four-vector structure and its Dirac-field structure, so spin $\tfrac32$ is not native to the algebra. The free equation is represented faithfully; the known difficulty of the interacting theory, the Velo–Zwanziger acausal propagation under minimal coupling, is a property of the coupling and is not removed by the rewriting.
 
@@ -315,7 +315,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | Symbol | Meaning |
 |+-|+-|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
@@ -323,21 +323,21 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
 | $i\hbar\tilde K_{\Phi}$ | Symbol of the gradient, $-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
-| $e_t$, $i\vec e_k$ | The four units that square to $+e_t$; the images of the source's four generators |
+| $e_t$, $i\vec e_\eta$ | The four units that square to $+e_t$; the images of the source's four generators |
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\in\mathbb{B}$ | Biquaternion-valued components of the field, $\mu=0,1,2,3$ |
 | $\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | The two values of a component |
 | $\epsilon$ | Dirac-field parameter of the massless shift symmetry |
-| $\Gamma_{0k}=i\vec e_k$, $\Gamma_{k0}=-i\vec e_k$, $\Gamma_{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$; the mass term is left multiplication by $\Gamma_{\mu\nu}$ |
+| $\Gamma_{0k}=i\vec e_\eta$, $\Gamma_{k0}=-i\vec e_\eta$, $\Gamma_{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$; the mass term is left multiplication by $\Gamma_{\mu\nu}$ |
 | $\varepsilon_\mu=-g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
-| $\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
+| $\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
 | $\operatorname{div}\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}$ | Covariant divergence; a consequence of the equation for every $m$ |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Chiral pair on each component; the dynamics |
 | $\tilde\xi_k$ | The three spatial components at rest |
-| $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_k\sum_j\vec e_j\tilde\xi_j$ | The transverse map on the vector index; unchanged by a second application, of rank two |
+| $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_\eta\sum_j\vec e_j\tilde\xi_j$ | The transverse map on the vector index; unchanged by a second application, of rank two |
 | $T_{\mu\nu\rho}$, $h_{\mu\nu}$ | The source's antisymmetrized triple and pair, objects of one display; kinetic and mass structures |
 | $E_\mu$ | The source's generator with index $\mu$, an object of the display and not an element of $\mathbb{B}$ |
 | $\varpi$ | Angular frequency of a plane wave; not $\omega$ |
-| $\tilde Q$, $\tilde P_{\Phi}$ | Coordinate and momentum elements of a plane wave, $\tilde Q=x_0e_t+\sum_kx_k\vec e_k$ |
+| $\tilde Q$, $\tilde P_{\Phi}$ | Coordinate and momentum elements of a plane wave, $\tilde Q=x_0e_t+\sum_\eta x_k\vec e_\eta$ |
 | $2\times\tfrac32\oplus4\times\tfrac12$ | $SU(2)$ content of the field |
 
 ## Further Reading

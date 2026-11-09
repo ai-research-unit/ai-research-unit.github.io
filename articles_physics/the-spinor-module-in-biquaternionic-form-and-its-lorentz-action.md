@@ -346,9 +346,9 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-Each is a one-basis operator product, and each satisfies the anticommutation relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality basis operator $\Gamma=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ of §*The Two Chiral Halves* — one operator, written once as a basis operator and once as a matrix of the frame. The algebra element behind the basis operator is the central grading $\xi$ of the complexification, which is not a gamma matrix; the body of the article uses $\xi$ and never needs a gamma symbol.
+Each is a one-basis operator product, and each satisfies the anticommutation relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_\eta^2=-I_4$ for $\eta=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality basis operator $\Gamma=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ of §*The Two Chiral Halves* — one operator, written once as a basis operator and once as a matrix of the frame. The algebra element behind the basis operator is the central grading $\xi$ of the complexification, which is not a gamma matrix; the body of the article uses $\xi$ and never needs a gamma symbol.
 
-A single basis operator $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure basis operators form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two basis operators multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame basis operators $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
+A single basis operator $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure basis operators form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two basis operators multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame basis operators $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_\eta^2=-e_t$: for instance
 
 $$
 \gamma_0\gamma_1=i^2L_{\mathrm{pau},e_t\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y\vec e_x}=L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},
@@ -385,7 +385,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\bar{\tilde{Q}}$, $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}$ | Coefficientwise complex, quaternion, and Hermitian conjugates; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian and Hermitian sectors; material and informational |

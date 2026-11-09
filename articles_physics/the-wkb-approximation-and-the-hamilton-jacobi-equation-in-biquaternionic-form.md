@@ -53,7 +53,7 @@ so, separating the real phase gradient from the $\frac{m\,c}{k_m}$-suppressed am
 $$
 \tilde p\,\tilde{Ξ}_{\mathrm{sp}} = \Big[\,\nabla  S -\frac{m\,c\,i}{k_m}\nabla\ln  A\,\Big]\tilde{Ξ}_{\mathrm{sp}},
 \qquad
-\nabla  S = \sum_k  (\partial S/\partial R_k)\,\vec e_k .
+\nabla  S = \sum_\eta  (\partial S/\partial R_\eta)\,\vec e_\eta .
 $$
 
 The leading term $\nabla S$ is a **real quaternion**, an element of the algebra's spatial-vector subspace $\mathbb{B}_{H}$; the correction is imaginary-scalar times a real vector, and is the first term of the expansion in $\frac{m\,c}{k_m}$. At leading order the state is an approximate eigenstate of the momentum with the real eigenvalue $\nabla S$, which is the classical momentum of the trajectory through the point.
@@ -143,20 +143,20 @@ S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_
 E =\frac{|\vec p|^2 c}{2\,m\,c},
 $$
 
-whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
+whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_\eta S_\eta(x_k)$, and each $S_\eta$ obeys
 
-$$\frac{1}{2\,m}\left(\frac{dS_k}{dx_k}\right)^2 + V_k(x_k) = E_k,
+$$\frac{1}{2\,m}\left(\frac{dS_\eta}{dx_k}\right)^2 + V_\eta(x_k) = E_\eta,
 \qquad
-\sum_k  E_k = E ,
+\sum_\eta  E_\eta = E ,
 $$
 
 so that
 
 $$
-S_k(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_k - V_k(\zeta)\right)}\;d\zeta .
+S_\eta(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_\eta - V_\eta(\zeta)\right)}\;d\zeta .
 $$
 
-The signs are the two directions of motion, and the biquaternion-norm interpretation applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_k = V_k$ are where the radicand vanishes and the two branches meet.
+The signs are the two directions of motion, and the biquaternion-norm interpretation applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_\eta = V_\eta$ are where the radicand vanishes and the two branches meet.
 
 ## The Amplitude and the Transport Equation
 

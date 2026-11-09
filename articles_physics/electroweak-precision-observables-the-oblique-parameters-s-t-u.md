@@ -134,7 +134,7 @@ $$
 
 The verification is direct: $\rho-1$ is the mismatch of the two normalisations, and $T$ is that mismatch divided by $\alpha$ so as to be dimensionless and of order one for a typical heavy sector. **$T$ is the oblique parameter of $\rho$, and $\rho$ is the tree-level value of $T$'s numerator.** For the measured $T=0.05$, $\rho-1=3.6\times10^{-4}$: the custodial relation holds to four parts in ten thousand.
 
-**$S$ is the mixing meter.** Written in the neutral self-energies the combination is a difference of slopes, and the subtraction is what removes the piece a pure isospin sector would contribute; what is left is the $W^3$–$B$ mixing. So $S$ is non-zero only for a sector whose $W^3$–$B$ two-point function is non-zero, which requires the multiplet to couple to both factors with strengths whose product does not cancel over the multiplet. A vector-like singlet fails that test and a state coupling only to hypercharge fails it too; a doublet whose two members are degenerate fails it as well, because $\sum_iT^3_iY_i=0$ identically. The standard order-of-magnitude estimate quoted for a chiral doublet, $1/(6\pi)$ per colour, is a large-$N$ estimate of the surviving difference and not a statement about exact degeneracy.
+**$S$ is the mixing meter, and the name is half the story.** Written in the neutral self-energies the combination is a difference of slopes, and the subtraction is what removes the piece a pure isospin sector would contribute; what is left is the $W^3$–$B$ mixing. But $S$ is not the $W^3$–$B$ function alone. In the definition it appears with the coefficient $-(c_W^2-s_W^2)/(s_Wc_W)$ against $\Pi'_{Z\gamma}$ and with $-1$ against $\Pi'_{\gamma\gamma}$, so a sector whose $\Pi_{3Y}$ vanishes still contributes through $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$, which is proportional to $\Pi'_{33}-\Pi'_{YY}$. A **vector-like** singlet or doublet has equal left and right couplings, so those weights cancel and $S=0$; a **chiral** doublet does not, and it keeps $S=N_c/(6\pi)$ even when its two members are exactly degenerate. That number, $0.053$ for a lepton doublet and $0.16$ for a quark one, is the whole reason a fourth chiral generation is excluded, and it is the value at degeneracy, not away from it. What degeneracy removes is $\Pi_{3Y}$ — the trace $\sum_iT^3_iY_i$ vanishes for any doublet with a common hypercharge — and with it the $Z\gamma$ mixing, not $S$.
 
 **$U$ and why it is small.** $U$ is the same kind of difference, taken in the derivative. For a heavy sector it is suppressed relative to $S$ by $M_Z^2/M^2$, because the difference of the derivatives brings down a factor of the inverse mass squared. That is why the pairing $S$–$T$ carries nearly all the information and $U$ is quoted last, with the largest relative uncertainty.
 
@@ -152,16 +152,17 @@ identically, so $T=0$ at tree level in the reference theory. That is not a predi
 
 **What breaks it and by how much.** Hypercharge breaks the custodial symmetry explicitly, because it gauges one direction of $SU(2)_R$ and not the other two. The breaking is a loop effect in the reference theory and a tree-level effect for any new sector with a mass splitting inside a multiplet.
 
-**The three ways a sector can sit in this classification.**
+**Five ways a sector can sit in this classification, and only one silence in it comes from degeneracy.**
 
 | Sector | $S$ | $T$ | $U$ |
 |---|---|---|---|
-| degenerate doublet, custodial | $0$ | $0$ | $0$ |
-| doublet with a mass splitting | logarithmic in the splitting | $\Delta\rho/\alpha$ | small |
+| strictly degenerate **chiral** doublet, custodial | $N_c/(6\pi)$ | $0$ | $0$ |
+| chiral doublet with a mass splitting | $N_c/(6\pi)$ at degeneracy, smaller as the splitting grows | $\Delta\rho/\alpha$ | small |
+| vector-like doublet, degenerate (left and right couplings equal) | $0$ | $0$ | $0$ |
 | vector-like singlet | $0$ | $0$ | $0$ |
 | state with hypercharge and no isospin | $0$ | $0$ | $0$ |
 
-**The bottom three rows are the useful ones.** A vector-like singlet has no isospin, so it cannot break a relation about isospin, and it is invisible to all three parameters at leading order: it only renormalises the three inputs, which is to say it is absorbed into $\alpha$, $G_F$ and $M_Z$ and leaves no trace. The last row says the same about hypercharge alone: with no isospin there is nothing for the hypercharge to mix with. And the first row is the sharpest case of all: an *exactly* degenerate doublet has $T=0$ by custodial symmetry and $S=0$ because the mixing cancels between the two members. **$S$, $T$ and $U$ measure multiplet structure and its breaking, not the existence of new particles.** That is the sharpest thing that can be said about them, and it is why a sector can be heavy, present, and still consistent with $(0,0,0)$.
+**The rows are ordered by what survives, and the order is the point.** A vector-like singlet has no isospin, so it cannot break a relation about isospin, and it is invisible to all three parameters at leading order: it only renormalises the three inputs, which is to say it is absorbed into $\alpha$, $G_F$ and $M_Z$ and leaves no trace. The last row says the same about hypercharge alone: with no isospin there is nothing for the hypercharge to mix with. A vector-like doublet is invisible for the other reason — its left and right couplings are equal, so the weights that make $S$ cancel — and that is the row the word "degenerate" used to be attached to. **Degeneracy is not silence.** An exactly degenerate *chiral* doublet has $T=U=0$ by custodial symmetry and $S=N_c/(6\pi)$ at its full value, which is why a degenerate fourth generation is excluded by $S$ alone. **$S$, $T$ and $U$ measure the vector-like or chiral character of a multiplet and the breaking of its custodial relation, not merely the existence of new particles** — and a sector can be heavy, chiral, present, and still consistent with $(0,0,0)$ only if it is vector-like, which is the sharpest thing that can be said about them.
 
 ## What a Heavy Sector Would Shift
 
@@ -178,13 +179,13 @@ The bracket $f$ vanishes identically at $m_1=m_2$, which is the check that it mu
 **Two limits, and they are different in kind.** The bracket has two regimes.
 
 - **One mass much lighter.** With $m_2\to0$ the bracket tends to $m_1^2$, so $\Delta\rho=N_cG_Fm_1^2/(8\sqrt2\pi^2)$. The top–bottom pair is in this regime, and the number is the classical one: with $m_t=172.69$ GeV the bracket is $2.98\times10^{4}$ GeV$^2$ and $\Delta\rho=9.3\times10^{-3}$, that is $T=1.27$.
-- **Near-degenerate.** With $m_2=m_1+\delta m$ the bracket tends to $(\Delta m^2)^2/(3m^2)$ with $\Delta m^2=m_2^2-m_1^2$, which is **quartic** in the splitting. A heavy pair is therefore far safer than a quadratic estimate suggests, and the popular formula $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ is not valid here: it overestimates by two orders of magnitude in the near-degenerate regime.
+- **Near-degenerate.** With $m_2=m_1+\delta m$ the bracket tends to $(\Delta m^2)^2/(3m^2)$ with $\Delta m^2=m_2^2-m_1^2$, which is **quadratic in $\Delta m^2$** where the popular estimate is linear. A heavy pair is therefore far safer than the linear estimate suggests, and the popular formula $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ is not valid here: it overestimates by more than two orders of magnitude in the near-degenerate regime.
 
 **The table, exact against the quadratic estimate.**
 
-| $m_1/m_2$ (GeV) | $N_c$ | $\Delta\rho$ exact | $T$ exact | $T$ from the $\Delta m^2$ estimate |
+| $m_1$, $m_2$ (GeV) | $N_c$ | $\Delta\rho$ exact | $T$ exact | $T$ from the linear $\Delta m^2$ estimate |
 |---|---|---|---|---|
-| $300/301$ | $3$ | $4.2\times10^{-7}$ | $0.00006$ | $0.003$ |
+| $300/301$ | $3$ | $4.2\times10^{-7}$ | $0.00006$ | $0.026$ |
 | $300/310$ | $3$ | $4.2\times10^{-5}$ | $0.006$ | $0.26$ |
 | $300/400$ | $3$ | $4.2\times10^{-3}$ | $0.57$ | $3.0$ |
 | $500/510$ | $3$ | $4.2\times10^{-5}$ | $0.006$ | $0.43$ |
@@ -210,8 +211,8 @@ The third digit is not meaningful, and the numbers move in the third digit betwe
 
 **The correlation is large and it matters.** $S$ and $T$ are quoted with a correlation close to $+0.9$, and the correlations involving $U$ are smaller and negative. Two consequences follow, and both are routinely ignored.
 
-- **The errors are not independent.** Adding $\pm0.07$ and $\pm0.06$ in quadrature is wrong. The ellipse is long and thin, and its axes are computable: with those two uncertainties and that correlation, the combination $S-1.2\,T$ is measured to $\pm0.020$ while the orthogonal one is measured only to $\pm0.090$, a factor of four.
-- **A sector that moves along the long axis is not excluded.** A heavy scalar doublet moves $S$ up and $T$ down, which is close to that long axis, so it is far less constrained than the two individual bounds suggest.
+- **The errors are not independent.** Adding $\pm0.07$ and $\pm0.06$ in quadrature is wrong. The ellipse is long and thin, and its axes are computable: with those two uncertainties and that correlation, the combination $S-1.2\,T$ is measured to $\pm0.020$ while the orthogonal one, $S+0.84\,T$, is measured only to $\pm0.090$ — a factor of four and a half.
+- **Which axis a sector sits on decides its bound, and the two axes are not the ones the individual numbers suggest.** A heavy scalar doublet raises $S$ and lowers $T$, so it moves along $S-1.2T$: the *tight* direction, at $\pm0.020$. Such doublets are therefore among the most strongly constrained sectors in the classification, which is why the mass limits on them are tight. The direction that hides is the other one, $S$ and $T$ rising together, which is where a sector with both mixing and custodial violation of the same sign sits.
 
 **The ellipse in one sentence.** One direction in the $S$–$T$ plane is measured to $0.02$ and the other only to $0.09$, and the well-measured one is the combination the $Z$-pole couplings fix directly; the poorly measured one is where a sector can hide.
 
@@ -271,7 +272,9 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 
 **What does *not* depend on the scheme.** The physical predictions: $M_W$, the $Z$-pole asymmetries and the cross sections. The parameters are coordinates on the space of heavy sectors, and coordinates move when the axes do, which is why the scheme column exists in the table of article 1 and why this article repeats the discipline.
 
-**One convention the corpus fixes.** $\alpha$ here is $\alpha(M_Z)$ unless stated, matching article 5's $\overline{\mathrm{MS}}$ angle at $M_Z$, because a parameter defined at the $Z$ pole should use the coupling at the $Z$ pole. The $\alpha(0)$ values in the literature are then related by the $91.0/97.4$ ratio, and a reader comparing two tables must check which one is in use before comparing digits.
+**Which $\alpha$ this article's numbers actually use, and why the answer is $\alpha(0)$.** Every number here is normalised with $\alpha(0)=1/137.036$, not $\alpha(M_Z)$. That is not a slip of the same kind the table above warns about; it is the convention the definitions were written in, and it is visible in two of the article's own numbers. $T=\Delta\rho/\alpha$ at the top row gives $1.27$ with $\alpha(0)$ and $1.19$ with $\alpha(M_Z)$. And $\alpha T=\rho-1$ at $T=0.05$ gives $3.6\times10^{-4}$ with $\alpha(0)$ and $3.9\times10^{-4}$ with $\alpha(M_Z)$. Using $\alpha(M_Z)$ throughout would rescale $S$ and $T$ by $0.934$ — the $7$ per cent of the table, and nothing else changes.
+
+**The corpus's own convention is $\alpha(M_Z)$, and the two must be kept apart.** Article 5 states its angle at $M_Z$ in the $\overline{\mathrm{MS}}$ scheme, articles 4 and 5 use the couplings at $M_Z$, and the corpus is consistent in doing so. The oblique parameters are the exception, because their normalisation is inherited from Peskin and Takeuchi and is a statement about the reference theory rather than about the $Z$ pole. So this article uses $\alpha(0)$ inside $S$, $T$ and $U$ and says so once here, and a reader comparing with a table that used $\alpha(M_Z)$ must accept the $7$ per cent before comparing digits. A statement of the form "$S=0.00$" without an $\alpha$ is not a number, and neither is "$T=1.27$".
 
 ## What the Framework Supplies
 
@@ -285,7 +288,7 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 | The custodial relation $\Pi_{WW}=\Pi_{W^3W^3}$ and its $q^2=0$ case | article 3's group, article 4's masses |
 | The definitions of $S$, $T$, $U$ | imported, Peskin–Takeuchi |
 | The measured values | imported, PDG |
-| The one-loop Veltman bracket, and the estimate $N_c/(6\pi)$ | imported |
+| The one-loop Veltman bracket, and the estimate $N_c/(6\pi)$ for a degenerate chiral doublet | imported |
 | The particle content that fixes $N_c$ and the multiplicities | imported; a *no route yet* row of the agenda |
 
 **What the algebra contributes that is not a transcription.** Two things, and they are the reason the article can be written in this language at all.
@@ -303,11 +306,11 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 
 Three numbers summarise heavy new physics in the gauge sector, and their number is forced: four self-energy functions with value and slope give eight numbers, two vanish by electromagnetic gauge invariance, three are absorbed by the measured inputs $\alpha$, $G_F$ and $M_Z$, and three survive. The count is $8-2-3=3$ and it is a dimension, not a convention.
 
-$T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0.05$ the custodial relation holds to $3.6\times10^{-4}$. $S$ is the coefficient of the $W^3$–$B$ mixing, and $U$ is the same kind of difference taken in the derivative, which is why $U$ is the smallest and the least measured. A custodially invariant sector has $T=U=0$ exactly, and the statement is the value and the derivative of one relation, $\Pi_{WW}(q^2)=\Pi_{W^3W^3}(q^2)$, whose $q^2=0$ case is $M_W=M_Zc_W$.
+$T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0.05$ the custodial relation holds to $3.6\times10^{-4}$. $S$ is what survives the subtraction in the neutral sector — the $W^3$–$B$ mixing together with the difference $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$ — and it is largest for a degenerate chiral doublet, at $N_c/(6\pi)$; $U$ is the same kind of difference taken in the derivative, which is why $U$ is the smallest and the least measured. A custodially invariant sector has $T=U=0$ exactly, and the statement is the value and the derivative of one relation, $\Pi_{WW}(q^2)=\Pi_{W^3W^3}(q^2)$, whose $q^2=0$ case is $M_W=M_Zc_W$.
 
 The measured values are $S=0.00\pm0.07$, $T=0.05\pm0.06$ and $U=0.02\pm0.06$, with an $S$–$T$ correlation near $+0.9$. The strong correlation is not a detail: it means the two uncertainties cannot be combined in quadrature and that a sector moving along the ellipse is less constrained than either bound suggests.
 
-A mass splitting shifts $T$ through the Veltman bracket, which is quartic in the splitting for a near-degenerate pair and quadratic in the heavy mass for a hierarchical one; the popular quadratic estimate $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ overestimates the near-degenerate case by two orders of magnitude, and the table above shows the exact values beside it. The top–bottom pair contributes $T=1.27$ and sits inside the reference, which is what the subtraction means. An exactly degenerate pair shifts nothing: $T=0$ by custodial symmetry and $S=0$ because the $W^3$–$B$ mixing cancels between the two members, which is why $S$ is a meter of multiplet structure and not of particle count.
+A mass splitting shifts $T$ through the Veltman bracket, which is quadratic in $\Delta m^2$ for a near-degenerate pair and linear in the heavy mass for a hierarchical one; the popular linear estimate $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ overestimates the near-degenerate case by more than two orders of magnitude, and the table above shows the exact values beside it. The top–bottom pair contributes $T=1.27$ and sits inside the reference, which is what the subtraction means. An exactly degenerate *chiral* pair has $T=U=0$ by custodial symmetry and $S=N_c/(6\pi)$ at full strength; it is the vector-like pair, with equal left and right couplings, that vanishes from all three. $S$ is therefore a meter of chiral versus vector-like structure, not of particle count.
 
 The standard large-$N$ estimate for a chiral doublet's contribution to $S$, $N_c/(6\pi)=0.053$, is the size of the experimental uncertainty. That coincidence is what makes the sector a precision test: one chiral doublet at the electroweak scale would be visible, and none is. A vector-like singlet, and any state with no isospin, shifts nothing at leading order, so the parameters measure multiplet structure and its breaking rather than the presence of heavy states. The oblique description is itself a hypothesis, tested by the fit's residuals, with a date on it.
 
@@ -322,7 +325,11 @@ The framework supplies the transversality of the self-energy through article 7's
 | $P_{\mu\nu}$, $L_{\mu\nu}$ | Article 7's transverse and longitudinal projectors |
 | $\Pi$ | $-\sum_\mu q_\mu q_\mu$, the positive momentum invariant |
 | $s_W$, $c_W$ | $\sin\theta_W$, $\cos\theta_W$, article 5 |
-| $\alpha$ | $\alpha(M_Z)=1/127.95$ unless stated |
+| $\alpha$ | $1/137.036$ inside $S$, $T$ and $U$ — the definitions' normalisation; $\alpha(M_Z)=1/127.95$ elsewhere in the corpus |
+| $\rho$ | $M_W^2/(M_Z^2c_W^2)$, equal to $1+\alpha T$ at leading order |
+| $\Pi_{33}$, $\Pi_{3Y}$, $\Pi_{YY}$ | The $W^3W^3$, $W^3B$ and $BB$ self-energies, in terms of which $\Pi_{ZZ}$, $\Pi_{Z\gamma}$ and $\Pi_{\gamma\gamma}$ are written |
+| $q^2$ | The momentum transfer squared of the self-energy |
+| $M_W$, $M_Z$ | $80.377$ and $91.1876$ GeV |
 | $G_F$ | $1.1664\times10^{-5}$ GeV$^{-2}$ |
 | $S$ | The $W^3$–$B$ mixing parameter |
 | $T$ | The custodial-breaking value parameter, $\alpha T=\rho-1$ |
@@ -342,4 +349,5 @@ The framework supplies the transversality of the self-energy through article 7's
 - [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The sign rule that puts a corpus action beside a standard one.
 - [The Standard Model under the Biquaternion Framework: A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The classification that the last section uses.
 
-The companions of this series not yet in the corpus — the QCD Lagrangian, the flavour-changing neutral currents and the precision Higgs couplings — are named in the sections above and are linked when they are written.
+- [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). The strong sector that fixes $N_c$ in the bracket of §*What a Heavy Sector Would Shift*, and the colour factor that makes a quark doublet three times a leptonic one.
+- [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). The top mass that sets the reference subtraction, and the Higgs coupling whose scale dependence is the other half of the scheme question.

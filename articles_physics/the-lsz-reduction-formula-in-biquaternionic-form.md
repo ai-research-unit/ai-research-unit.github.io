@@ -159,13 +159,13 @@ The two cases differ in exactly one place: whether the amputation is a scalar or
 
 **Spin case: the action, and which Dirac equation.** For a field with spin the amputation is not a scalar: it is an action on the element, and the reduction must name the equation whose action it is. Write the two multiplications of $\mathbb{B}$ out, $a\tilde{Ξ}_{\mathrm{sp}}$ on the left and $\tilde{Ξ}_{\mathrm{sp}} b$ on the right. The **momentum action** $\mathcal{A}_p$ is the element formula
 $$
-\mathcal{A}_p\,\tilde{Ξ}_{\mathrm{sp}}=i p_0\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x-\sum_{k=x,y,z}i p_k\,\vec e_k\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y ,
+\mathcal{A}_p\,\tilde{Ξ}_{\mathrm{sp}}=i p_0\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x-\sum_{\eta=x,y,z}i p_\eta\,\vec e_\eta\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_y ,
 \qquad
 \mathcal{A}_p^2\tilde{Ξ}_{\mathrm{sp}}=p^2\,\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad
 p^2=p_0^2-\vec p^{\,2},
 $$
-where the left factor of the energy term is $e_t$ and is not written. It is the momentum symbol of the pair of *Operator and Calculus Conventions*, in the second of the two writings that the propagator article distinguishes: the two lines read that symbol on the two parts of the element and the action reads it on the element itself, the two are not the same map, and each squares to multiplication by $p^2$, so the pole set is common. The action $\mathcal{A}_p-mc$ is the symbol of the inverse propagator. The energy enters as the coefficient $p_0=E/c$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy term squares to $+p_0^2$ because the central $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial term squares to $-p_k^2$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.
+where the left factor of the energy term is $e_t$ and is not written. It is the momentum symbol of the pair of *Operator and Calculus Conventions*, in the second of the two writings that the propagator article distinguishes: the two lines read that symbol on the two parts of the element and the action reads it on the element itself, the two are not the same map, and each squares to multiplication by $p^2$, so the pole set is common. The action $\mathcal{A}_p-mc$ is the symbol of the inverse propagator. The energy enters as the coefficient $p_0=E/c$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy term squares to $+p_0^2$ because the central $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial term squares to $-p_\eta^2$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.
 
 **The two Dirac equations.** The corpus carries two, and they are not the same operator (see *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The **one-sided** form is the pair
 $$
@@ -314,7 +314,7 @@ $$
 
 The frame is the body's basis operators renamed. The momentum basis operator is the contraction
 $$
-\slashed p=\gamma_0p_0-\sum_{k=x,y,z}\gamma_kp_k ,
+\slashed p=\gamma_0p_0-\sum_{\eta=x,y,z}\gamma_kp_\eta ,
 \qquad
 (\slashed p)^2=p^2\,\mathbf 1 ,
 $$
@@ -322,7 +322,7 @@ the mass-shell operator is minus the product of the two shifted basis operators,
 $$
 \mathcal{M}(\tilde P_{\Phi})=-\big(\slashed p-m\big)\big(\slashed p+m\big)=m^{2}\,c^{2}-p^2 ,
 $$
-a multiple of the identity basis operator, and the residue of the spinor propagator is the basis operator $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r \tilde W_{\Psi}^{(r)}\bar{\tilde W}_{\Psi}^{(r)}$. The mass is the identity basis operator, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. Each square is a basis operator sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial basis operators, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining. Those squares are the weight, $\gamma_\mu^2=\varepsilon_\mu\mathbf 1$, so the contraction gives $\slashed p^{\,2}=\varepsilon_0p_0^2+\sum_{k=x,y,z}\varepsilon_kp_k^2=p_0^2-\vec p^{\,2}$, which is $p^2$, the d'Alembertian's symbol in the $i r'_t$ coordinate, rather than $-p^2$.
+a multiple of the identity basis operator, and the residue of the spinor propagator is the basis operator $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r \tilde W_{\Psi}^{(r)}\bar{\tilde W}_{\Psi}^{(r)}$. The mass is the identity basis operator, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. Each square is a basis operator sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_\eta)^2=-\mathbf 1$ for the three spatial basis operators, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining. Those squares are the weight, $\gamma_\mu^2=\varepsilon_\mu\mathbf 1$, so the contraction gives $\slashed p^{\,2}=\varepsilon_0p_0^2+\sum_{\eta=x,y,z}\varepsilon_kp_\eta^2=p_0^2-\vec p^{\,2}$, which is $p^2$, the d'Alembertian's symbol in the $i r'_t$ coordinate, rather than $-p^2$.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity basis operator, anticommutes with every $\gamma_\mu$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum basis operator is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.
 
@@ -366,7 +366,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}^{\natural}\tilde R_\Phi)/\hbar)=\exp(-ip\cdot x/\hbar)$ | Central-phase plane wave (external leg), the positive-frequency mode; complex central, not real |
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; an element of $\mathbb{B}$ bound here, with a complex scalar part, hence the majuscule |
 | $L_a$, $R_b$, $L_aR_b$ | Left multiplication, right multiplication and the basis operator (closing section only) |
-| $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=i p_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_k i p_k\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | Momentum action, the second writing of the momentum symbol of the pair; $\mathcal{A}_p^2\tilde{Ξ}_{\mathrm{sp}}=p^2\tilde{Ξ}_{\mathrm{sp}}$ |
+| $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=i p_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta i p_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | Momentum action, the second writing of the momentum symbol of the pair; $\mathcal{A}_p^2\tilde{Ξ}_{\mathrm{sp}}=p^2\tilde{Ξ}_{\mathrm{sp}}$ |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box$ |
 | $L$, $R$ | The two values of the chirality subscript; $L$ the minus value, $R$ the plus one |
 | $\tilde W_{\Psi}^{(r)},\tilde V_{\Phi}^{(r)}$ | External spin amplitudes, elements of $\mathbb{B}$; $\sum_r \tilde W_{\Psi}^{(r)}\bar{\tilde W}_{\Psi}^{(r)}=\mathcal{A}_p+mc$ and $\sum_r \tilde V_{\Phi}^{(r)}\bar{\tilde V}_{\Phi}^{(r)}=\mathcal{A}_p-mc$ on the shell, each product read as the action $\tilde{Ξ}_{\mathrm{sp}}\mapsto \tilde W_{\Psi}\tilde{Ξ}_{\mathrm{sp}}\bar{\tilde W}_{\Psi}$ |

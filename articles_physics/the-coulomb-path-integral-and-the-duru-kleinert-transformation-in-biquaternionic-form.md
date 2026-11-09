@@ -152,7 +152,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate; $r=\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb parameter |
 | $\tilde V_{\Phi}=-(\kappa/r)e_t\in\mathbb{B}_{C}$ | Coulomb potential; a central scalar |

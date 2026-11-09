@@ -32,7 +32,7 @@ $$
 $$
 and then $\vec H_0 = Z^{-1}\,\vec u_k\times\vec E_0$, with $\vec u_k = \vec k_\Phi/|\vec k_\Phi|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
 $$
-\langle\tilde{F}_0\rangle_{\natural} = \sum_{k=1}^{3}(F_{tk})^2 = 0,
+\langle\tilde{F}_0\rangle_{\natural} = \sum_{\eta=1}^{3}(F_{tk})^2 = 0,
 $$
 so a free plane wave in a medium is $N$-degenerate, a zero divisor of $\mathbb{B}$, exactly as the parent states.
 
@@ -75,7 +75,7 @@ $$
 \boxed{\;\tilde P_{\Phi}\,\tilde{F}_0 = 0\;}.
 $$
 
-**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_k$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec k_\Phi\tilde{F}_0 = -\vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0$. Thus
+**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_\eta$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec k_\Phi\tilde{F}_0 = -\vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0$. Thus
 $$
 \tilde P_{\Phi}\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - \vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0 .
 $$
@@ -142,7 +142,7 @@ $$
 \qquad
 \vec N_0 = \vec E_0 + i\,\vec u_k\times\vec E_0 ,
 $$
-which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the general plain bilinear form $\langle\tilde{F}_0\rangle_{\natural} = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_k F_{tk}^2$, and $\langle i\sqrt{\epsilon}\vec N_0\rangle_{\natural} = (i\sqrt{\epsilon})^2\vec N_0\cdot\vec N_0 = -\epsilon\,\vec N_0\cdot\vec N_0$. Expand the complex dot product:
+which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the general plain bilinear form $\langle\tilde{F}_0\rangle_{\natural} = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_\eta F_{tk}^2$, and $\langle i\sqrt{\epsilon}\vec N_0\rangle_{\natural} = (i\sqrt{\epsilon})^2\vec N_0\cdot\vec N_0 = -\epsilon\,\vec N_0\cdot\vec N_0$. Expand the complex dot product:
 $$
 \vec N_0\cdot\vec N_0 = \vec E_0^2 - (\vec u_k\times\vec E_0)^2 + 2i\,\vec E_0\cdot(\vec u_k\times\vec E_0).
 $$
@@ -363,7 +363,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_j \vec e_k = -\delta_{jk}e_t + \epsilon_{jkm}\vec e_m$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_j \vec e_\eta = -\delta_{j\eta}e_t + \epsilon_{j\eta m}\vec e_m$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |

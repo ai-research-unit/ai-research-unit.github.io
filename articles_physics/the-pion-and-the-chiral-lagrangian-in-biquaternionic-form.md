@@ -7,7 +7,7 @@ The **pion** is the lightest hadron and the clearest realisation in nature of a 
 This article constructs the pion and the chiral Lagrangian in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The framework's available compact group is the group of unit quaternions, the elements $\tilde u$ with $\langle\tilde u\rangle_\natural = e_t$, isomorphic to $SU(2)$ and to $\mathbb{S}^3$, and the pion triplet is naturally carried by the adjoint of its Lie algebra, which lies in the material sector:
 
 $$
-\vec\pi = \sum_k\pi_k\vec e_k \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} , \qquad k = 1,2,3 ,
+\vec\pi = \sum_\eta\pi_\eta\vec e_\eta \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} , \qquad \eta = 1, 2, 3 ,
 $$
 
 an isovector whose three components are simultaneously the three components of a material-sector vector. The chiral field is the unit element
@@ -20,11 +20,11 @@ and the chiral Lagrangian is the sum of the Hermitian norms of its four derivati
 
 The findings are the following.
 
-- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_k) = -\delta_{jk}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$; from them the generators $T_k = \tfrac{i}{2}\vec e_k$ satisfy $\mathrm{Sc}(T_jT_k) = \tfrac14\delta_{jk}$, equivalently $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$, and $[T_j,T_k] = i\sum_l\epsilon_{jkl}T_l$. Expanding the biquaternion chiral Lagrangian,
+- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$; from them the generators $T_\eta = \tfrac{i}{2}\vec e_\eta$ satisfy $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, equivalently $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, and $[T_j,T_\eta] = i\sum_l\epsilon_{j\eta l}T_l$. Expanding the biquaternion chiral Lagrangian,
 $$
 \mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right),
 $$
-gives the canonical pion kinetic term $\tfrac12\sum_k\big((\partial\pi_k/\partial r'_t)^2-(\nabla\pi_k)^2\big)$ with coefficient exactly one. The mass term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
+gives the canonical pion kinetic term $\tfrac12\sum_\eta\big((\partial\pi_\eta/\partial r'_t)^2-(\nabla\pi_\eta)^2\big)$ with coefficient exactly one. The mass term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
 - **Interpretation.** Interpreting the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
 - **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but no axial generator of the centre acts on the triplet. The fifth basis operator of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can carry the axial vertex but does not generate a chiral symmetry. The axial currents, the anomaly and the Wess–Zumino–Witten term therefore belong to the fermion and general-gauge sectors. The chiral Lagrangian is realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
@@ -70,10 +70,10 @@ and Goldstone's theorem gives three massless scalars, which are the three pions 
 
 The pion's three charges under isospin are those of the adjoint representation, and the framework's material sector contains exactly such a triplet.
 
-An element of the compact subalgebra is $\vec\pi = \sum_k\pi_k\vec e_k$, with $\pi_k$ real. The commutator
+An element of the compact subalgebra is $\vec\pi = \sum_\eta\pi_\eta\vec e_\eta$, with $\pi_\eta$ real. The commutator
 
 $$
-\left[\vec e_j, \vec e_k\right] = 2\sum_l\epsilon_{jkl}\vec e_l
+\left[\vec e_j, \vec e_\eta\right] = 2\sum_l\epsilon_{j\eta l}\vec e_l
 $$
 
 shows that the span of the three units closes on itself, and the adjoint action of the rotor $\tilde u = \exp(\vec\alpha/2)$ rotates the triplet,
@@ -85,9 +85,9 @@ $$
 which is the isospin rotation of an isovector. The bilinear invariant is the plain form,
 
 $$
-\mathrm{Sc}\!\left(\vec\pi^2\right) = -\,\sum_k\pi_k\pi_k ,
+\mathrm{Sc}\!\left(\vec\pi^2\right) = -\,\sum_\eta\pi_\eta\pi_\eta ,
 \qquad
-\mathrm{Sc}\!\left(\vec\pi^{\natural}\vec\pi\right) = \sum_k\pi_k\pi_k ,
+\mathrm{Sc}\!\left(\vec\pi^{\natural}\vec\pi\right) = \sum_\eta\pi_\eta\pi_\eta ,
 $$
 
 so the triplet's invariant length is the quaternion norm, the same norm that the free-field articles use. The pions are therefore carried by the material sector $\mathbb{B}_{\Phi}$, exactly as the framework's four-current and its gauge fields are, and the assignment is
@@ -102,25 +102,25 @@ $$
 
 The last identity is the statement that the pion triplet has no central component: it is a pure element with real coefficients, which is what makes it an isovector rather than a mixture with the singlet. A would-be flavour-singlet scalar would instead be central, $\propto e_t$ or $\propto ie_t$; the pion is not, and this is the algebraic content of "the pion is an isovector".
 
-**The normalisation.** The generators of the triplet are $T_k = \tfrac{i}{2}\vec e_k$, and their normalisation is the plain weight of the units:
+**The normalisation.** The generators of the triplet are $T_\eta = \tfrac{i}{2}\vec e_\eta$, and their normalisation is the plain weight of the units:
 
 $$
-\mathrm{Sc}\!\left(T_jT_k\right) = \tfrac14\delta_{jk} ,
+\mathrm{Sc}\!\left(T_jT_\eta\right) = \tfrac14\delta_{j\eta} ,
 \qquad
-\mathrm{Sc}\!\left(\vec e_j\vec e_k\right) = -\delta_{jk} ,
+\mathrm{Sc}\!\left(\vec e_j\vec e_\eta\right) = -\delta_{j\eta} ,
 \qquad
-\mathrm{Sc}\!\left(\vec e_j^{\natural}\vec e_k\right) = \delta_{jk} ,
+\mathrm{Sc}\!\left(\vec e_j^{\natural}\vec e_\eta\right) = \delta_{j\eta} ,
 \qquad
-\mathrm{Sc}\!\left(T_j\{\!T_k,T_l\!\}\right) = 0 ,
+\mathrm{Sc}\!\left(T_j\{\!T_\eta,T_l\!\}\right) = 0 ,
 $$
 
 with the commutator
 
 $$
-\left[T_j,T_k\right] = i\sum_l\epsilon_{jkl}T_l .
+\left[T_j,T_\eta\right] = i\sum_l\epsilon_{j\eta l}T_l .
 $$
 
-The last vanishing is the statement that the symmetric symbol of $SU(2)$ vanishes: the symmetrised product of two vector units is central, and the third unit has no scalar part to meet it. The algebra trace reads the same identities with the factor two of its own normalisation, $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$ and $\mathrm{Tr}(\vec e_j\vec e_k) = -2\delta_{jk}$. The factor $i$ in $T_k$ makes the generators Hermitian, and the units are anti-Hermitian, $\vec e_k^{*} = -\vec e_k$.
+The last vanishing is the statement that the symmetric symbol of $SU(2)$ vanishes: the symmetrised product of two vector units is central, and the third unit has no scalar part to meet it. The algebra trace reads the same identities with the factor two of its own normalisation, $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$ and $\mathrm{Tr}(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$. The factor $i$ in $T_\eta$ makes the generators Hermitian, and the units are anti-Hermitian, $\vec e_\eta^{*} = -\vec e_\eta$.
 
 ## The Chiral Lagrangian
 
@@ -137,7 +137,7 @@ which is $*$-unitary because $\vec\pi$ is anti-Hermitian, and which may be writt
 $$
 \tilde U = \cos\frac{|\pi|}{f_\pi}\,e_t + \frac{\sin(|\pi|/f_\pi)}{|\pi|}\,\vec\pi ,
 \qquad
-|\pi| = \sqrt{\sum_k\pi_k\pi_k} .
+|\pi| = \sqrt{\sum_\eta\pi_\eta\pi_\eta} .
 $$
 
 Under the chiral group the field transforms by one left and one right factor,
@@ -161,17 +161,17 @@ the second form reading the same term as the Hermitian norm of each derivative, 
 $$
 \frac{\partial\tilde U}{\partial R_\mu} = \frac{1}{f_\pi}\frac{\partial\vec\pi}{\partial R_\mu} + O(\pi^2),
 \qquad
-\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\frac{\partial\tilde U}{\partial R_\mu}\right) = \frac{1}{f_\pi^2}\,\sum_k\frac{\partial\pi_k}{\partial R_\mu}\frac{\partial\pi_k}{\partial R_\mu} + O(\pi^4),
+\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\frac{\partial\tilde U}{\partial R_\mu}\right) = \frac{1}{f_\pi^2}\,\sum_\eta\frac{\partial\pi_\eta}{\partial R_\mu}\frac{\partial\pi_\eta}{\partial R_\mu} + O(\pi^4),
 $$
 
-using $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$, which follows from $\vec e_k^{\natural} = -\vec e_k$ and $\mathrm{Sc}(\vec e_j\vec e_k) = -\delta_{jk}$; the two minus signs cancel. Hence
+using $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$, which follows from $\vec e_\eta^{\natural} = -\vec e_\eta$ and $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$; the two minus signs cancel. Hence
 
 $$
-\mathcal{L}_\pi^{(2)} = -\frac12\sum_\mu\sum_k\frac{\partial\pi_k}{\partial R_\mu}\frac{\partial\pi_k}{\partial R_\mu} + O(\pi^4)
-= \frac12\,\sum_k\left[\left(\frac{\partial\pi_k}{\partial r'_t}\right)^2-\sum_j\left(\frac{\partial\pi_k}{\partial R_j}\right)^2\right] + O(\pi^4) ,
+\mathcal{L}_\pi^{(2)} = -\frac12\sum_\mu\sum_\eta\frac{\partial\pi_\eta}{\partial R_\mu}\frac{\partial\pi_\eta}{\partial R_\mu} + O(\pi^4)
+= \frac12\,\sum_\eta\left[\left(\frac{\partial\pi_\eta}{\partial r'_t}\right)^2-\sum_j\left(\frac{\partial\pi_\eta}{\partial R_j}\right)^2\right] + O(\pi^4) ,
 $$
 
-the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The last step uses $\partial/\partial R_t = -i\,\partial/\partial r'_t$, so that the time term contributes $-(\partial\pi_k/\partial r'_t)^2$ before the overall minus, and no value of $c$ is needed. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
+the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The last step uses $\partial/\partial R_t = -i\,\partial/\partial r'_t$, so that the time term contributes $-(\partial\pi_\eta/\partial r'_t)^2$ before the overall minus, and no value of $c$ is needed. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
 
 **Why two factors.** The chiral action needs two independent rotations, and one factor cannot carry them. A single rotor has three real parameters, and $SU(2)_L\times SU(2)_R$ has six; with $g_L=g_R$ only the diagonal isospin survives. The second factor is the axial direction: without it there is no axial current, no Goldstone coset and no breaking pattern. On the unit quaternions the star is the inverse, so the pair $g_L\tilde U g_R^{*}$ is the usual left-right action, written by one product and with no operator inverse. Each factor acts alone on one of the two currents of the nonlinear sigma model: $\tilde U^{\natural}\,\partial_\mu\tilde U$ is carried by the right factor and $\partial_\mu\tilde U\,\tilde U^{\natural}$ by the left, and the target is $SU(2)_L\times SU(2)_R/SU(2)_V$. The diagonal leaves the isospin-singlet vacuum fixed and ties the $W$ and $Z$ masses, so that the custodial parameter is one at tree level with hypercharge off.
 
@@ -205,7 +205,7 @@ the vector part of $M$ does not enter the mass term at all, at any order in $|\p
 
 $$
 \mathcal{L}_\pi^{\text{mass}} = 2f_\pi^2 B_0\,\mathrm{Sc}(M)\cos\frac{|\pi|}{f_\pi}
-= f_\pi^2 B_0\left(m_u+m_d\right) - \frac{B_0\left(m_u+m_d\right)}{2}\,\sum_k\pi_k\pi_k + \cdots ,
+= f_\pi^2 B_0\left(m_u+m_d\right) - \frac{B_0\left(m_u+m_d\right)}{2}\,\sum_\eta\pi_\eta\pi_\eta + \cdots ,
 $$
 
 and the three physical pion masses are exactly degenerate at this order, all three given by the one number
@@ -235,11 +235,11 @@ The chiral Lagrangian's currents are what couple the pions to the rest of the St
 **The vector current.** The unbroken isospin current is the Noether current of the diagonal $SU(2)_V$ acting as $\tilde U\mapsto g_V\tilde U g_V^{*}$. It is built from the Maurer–Cartan form of the companion article, and at lowest order it is
 
 $$
-j_{\mu k} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\left[\vec e_k,\tilde U\right]\right) + \cdots
-= -\sum_{j,l}\epsilon_{kjl}\,\pi_j\,\frac{\partial\pi_l}{\partial R_\mu} + \cdots ,
+j_{\mu k} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\left[\vec e_\eta,\tilde U\right]\right) + \cdots
+= -\sum_{j,l}\epsilon_{\eta jl}\,\pi_j\,\frac{\partial\pi_l}{\partial R_\mu} + \cdots ,
 $$
 
-the standard isovector current of the pion triplet. The quaternion conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_k)=-\delta_{jk}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
+the standard isovector current of the pion triplet. The quaternion conjugation on the derivative is the one that fixes the sign: with $\partial\tilde U^{\natural}/\partial R_\mu=-\partial\tilde U/\partial R_\mu$ and $\mathrm{Sc}(\vec e_j\vec e_\eta)=-\delta_{j\eta}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
 **The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the product of elements that carries the vertex. The frame basis operator of the coordinate $x_\mu$ multiplies on the left by $e_\mu$ and on the right by $\vec e_{\nu(\mu)}$, with the phase $i$,
 
@@ -265,7 +265,7 @@ $$
 The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $k$ is that product read on the quark field, with the isospin generator:
 
 $$
-j_{5\mu k} = \bar q\,C_\mu\xi\,T_k\,q .
+j_{5\mu k} = \bar q\,C_\mu\xi\,T_\eta\,q .
 $$
 
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
@@ -282,15 +282,15 @@ In the isospin limit the divergence is the mass bilinear,
 
 $$
 \langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural}
-= \frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_k\,q ,
+= \frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_\eta\,q ,
 $$
 
 the basis operator $i\xi$ being the right multiplication by $\vec e_z$, the phase $i$ cancelling the $-i$ of the fifth basis operator, and at the level of the chiral Lagrangian it is proportional to the pion field itself,
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_k + \cdots ,
+\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_\eta + \cdots ,
 \qquad
-\langle 0|j_{5\mu k}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{kl} ,
+\langle 0|j_{5\mu k}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{\eta l} ,
 $$
 
 which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{B}_{C}$. The fifth basis operator belongs to the frame and not to the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
@@ -307,11 +307,11 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## The Biquaternion Reading
 
-**The pion is a material-sector adjoint.** The framework's pion field is $\vec\pi = \sum_k\pi_k\vec e_k$, an element of the compact subalgebra $\mathfrak{su}(2)$ that lies in $\mathbb{B}_{\Phi}$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\vec\pi^{\natural}\vec\pi)=-\mathrm{Sc}(\vec\pi^2)=\sum_k\pi_k\pi_k$ is the quaternion norm. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
+**The pion is a material-sector adjoint.** The framework's pion field is $\vec\pi = \sum_\eta\pi_\eta\vec e_\eta$, an element of the compact subalgebra $\mathfrak{su}(2)$ that lies in $\mathbb{B}_{\Phi}$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\vec\pi^{\natural}\vec\pi)=-\mathrm{Sc}(\vec\pi^2)=\sum_\eta\pi_\eta\pi_\eta$ is the quaternion norm. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
 
 **The chiral field is a rotor.** The unit real quaternion $\tilde U = \exp(\vec\pi/f_\pi)$ is the framework's rotation element, and the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{*}$ is one left multiplication and one right multiplication. The unbroken isospin is the diagonal, conjugation by a single rotor, and the pion field is the logarithm of the rotor. This is the same geometric identification that the nonlinear-sigma-model article makes, specialised to $SU(2)$ and to the pion triplet, and it is exact as a statement about the framework's group manifold.
 
-**The plain form fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Sc}(T_jT_k)=\tfrac14\delta_{jk}$, and the framework's plain form, read on the units, supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the plain form plays in every bilinear of the series.
+**The plain form fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Sc}(T_jT_\eta)=\tfrac14\delta_{j\eta}$, and the framework's plain form, read on the units, supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the plain form plays in every bilinear of the series.
 
 **The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator of the centre acting on the pion triplet. The isospin $SU(2)_V$ is realised as the diagonal of the two-sided action, conjugation by a single rotor; the axial $SU(2)_A$ is not. The fifth basis operator of the frame is the right multiplication by $-i\vec e_z$, an operator of the frame and not an element of the centre, so it can represent the axial vertex but does not generate a symmetry. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta_{\mathrm s}$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the fermion sector, seen here from the pion side.
 
@@ -349,14 +349,14 @@ $$
 
 The four frame basis operators multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\xi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\xi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth basis operator is one of the body's own, not a sixth one.
 
-Each of the four is one factor of $i$ times a bare basis operator of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the fifth basis operator itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own basis operators with the $i$ made explicit. The bare basis operators anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per basis operator flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per basis operator, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+Each of the four is one factor of $i$ times a bare basis operator of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the fifth basis operator itself, $\gamma_5=\xi=-iR_{\mathrm{pau},\vec e_z}$. Nothing in the body needs the gammas: they are its own basis operators with the $i$ made explicit. The bare basis operators anticommute with the body's weight, $\{\beta_a,\beta_b\}=2(-\varepsilon_a\delta_{ab})I_4$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per basis operator flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per basis operator, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_\eta^2=-e_t$. The central grading $\xi_{\mathrm{ad}}:=i\tilde{Ζ}_{\mathrm{ad}}$ — with $\tilde{Ζ}_{\mathrm{ad}}$ a central root of $-e_t$, so $\xi_{\mathrm{ad}}^2=i^2\tilde{Ζ}_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -381,11 +381,11 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 The pion is the pseudo-Goldstone boson of the two-flavour chiral symmetry $SU(2)_L\times SU(2)_R$ spontaneously broken to isospin $SU(2)_V$, with three components transforming in the adjoint and a decay constant $f_\pi$. In the biquaternion framework the pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector,
 
 $$
-\vec\pi = \sum_k\pi_k\vec e_k \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
+\vec\pi = \sum_\eta\pi_\eta\vec e_\eta \in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi} ,
 \qquad
-\left[\vec e_j,\vec e_k\right] = 2\sum_l\epsilon_{jkl}\vec e_l ,
+\left[\vec e_j,\vec e_\eta\right] = 2\sum_l\epsilon_{j\eta l}\vec e_l ,
 \qquad
-\mathrm{Sc}\!\left(\vec\pi^2\right) = -\sum_k\pi_k\pi_k ,
+\mathrm{Sc}\!\left(\vec\pi^2\right) = -\sum_\eta\pi_\eta\pi_\eta ,
 $$
 
 the chiral field is the unit real quaternion
@@ -400,10 +400,10 @@ and the leading chiral Lagrangian is the Hermitian norm of its derivative,
 
 $$
 \boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right)
-= \frac12\left[\sum_k\left(\frac{\partial\pi_k}{\partial r'_t}\right)^2-\sum_k\sum_j\left(\frac{\partial\pi_k}{\partial R_j}\right)^2\right] + O(\pi^4)\;},
+= \frac12\left[\sum_\eta\left(\frac{\partial\pi_\eta}{\partial r'_t}\right)^2-\sum_\eta\sum_j\left(\frac{\partial\pi_\eta}{\partial R_j}\right)^2\right] + O(\pi^4)\;},
 $$
 
-with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_k) = \tfrac14\delta_{jk}$ for $T_k = \tfrac{i}{2}\vec e_k$, equivalently $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$ with $\mathrm{Tr}(\vec e_j\vec e_k) = -2\delta_{jk}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.
+with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$ for $T_\eta = \tfrac{i}{2}\vec e_\eta$, equivalently $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$ with $\mathrm{Tr}(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.
 
 The quark mass element adds the symmetry-breaking term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives the degenerate $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.
 
@@ -414,16 +414,16 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Coefficient basis, $\vec e_k^2 = -e_t$, $\vec e_j\vec e_k = -\delta_{jk}e_t+\sum_l\epsilon_{jkl}\vec e_l$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Coefficient basis, $\vec e_\eta^2 = -e_t$, $\vec e_j\vec e_\eta = -\delta_{j\eta}e_t+\sum_l\epsilon_{j\eta l}\vec e_l$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathrm{Sc}$, ${}^{\natural}$, ${}^{*}$ | Scalar part, intrinsic conjugation, Hermitian conjugation; $\vec e_k^{\natural} = \vec e_k^{*} = -\vec e_k$, $\mathrm{Sc}(\vec e_j\vec e_k) = -\delta_{jk}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$ |
+| $\mathrm{Sc}$, ${}^{\natural}$, ${}^{*}$ | Scalar part, intrinsic conjugation, Hermitian conjugation; $\vec e_\eta^{\natural} = \vec e_\eta^{*} = -\vec e_\eta$, $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real quaternions; the unit elements are those with $\langle\tilde u\rangle_\natural = e_t$, $\cong SU(2)\cong\mathbb{S}^3$ |
 | $\mathbb{B}_{C}$ | Centre; home of the condensate and of every scalar singlet |
-| $\vec\pi = \sum_k\pi_k\vec e_k\in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ | Pion triplet; isovector adjoint |
-| $[\vec e_j,\vec e_k] = 2\sum_l\epsilon_{jkl}\vec e_l$ | Compact algebra of the framework |
-| $T_k = \tfrac{i}{2}\vec e_k$ | Hermitian generators of the triplet |
-| $\mathrm{Sc}(T_jT_k) = \tfrac14\delta_{jk}$, $\mathrm{Tr}(T_jT_k) = \tfrac12\delta_{jk}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_k) = \delta_{jk}$ | The identities fixing the normalisation |
+| $\vec\pi = \sum_\eta\pi_\eta\vec e_\eta\in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ | Pion triplet; isovector adjoint |
+| $[\vec e_j,\vec e_\eta] = 2\sum_l\epsilon_{j\eta l}\vec e_l$ | Compact algebra of the framework |
+| $T_\eta = \tfrac{i}{2}\vec e_\eta$ | Hermitian generators of the triplet |
+| $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$ | The identities fixing the normalisation |
 | $\tilde U = \exp(\vec\pi/f_\pi)$, $\langle\tilde U\rangle_\natural = e_t$ | Chiral field (unit real quaternion) |
 | $\tilde u = \exp(\vec\alpha/2)$ | Adjoint rotation element (isospin rotor) |
 | $\tilde U\mapsto g_L\tilde U g_R^{*}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
@@ -437,11 +437,11 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $j_{\mu k}$, $j_{5\mu k}$ | Isospin (vector) and axial currents |
 | $C_\mu$, $\xi$ | Frame basis operator of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
-| $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{kl}$ | Defining matrix element of $f_\pi$ |
-| $\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_k$ | PCAC |
+| $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{\eta l}$ | Defining matrix element of $f_\pi$ |
+| $\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, used for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the weight with the opposite sign, $-\varepsilon_\mu\delta_{\mu\nu}$ |
-| $\mathrm{Tr}$ | The trace of the algebra, used in $\mathrm{Tr}(T_jT_k)=\tfrac12\delta_{jk}$ (§*Norm and Pairing Conventions*) |
+| $\mathrm{Tr}$ | The trace of the algebra, used in $\mathrm{Tr}(T_jT_\eta)=\tfrac12\delta_{j\eta}$ (§*Norm and Pairing Conventions*) |
 | $j,k,l$ | Triplet indices, written low; every contraction over them is an explicit sum |
 
 ## Further Reading

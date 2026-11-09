@@ -156,7 +156,7 @@ $$
 
 **Corollary (which reflection carries which sign).** On the timelike generator $q=+1$ and the two-sided operator is the reflection itself; on each spatial generator $q=-1$ and the two-sided operator is minus the reflection. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the worked case below, where two odd steps compose to a rotation.
 
-**Remark (the same statement on the algebra).** The algebra carries a Euclidean quadratic structure of its own on the three Hermitian elements $i\vec e_k$ of the informational sector, each of which squares to $+e_t$; there the vector identity reads $\mathrm{Sd}_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the two-sided operator with a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
+**Remark (the same statement on the algebra).** The algebra carries a Euclidean quadratic structure of its own on the three Hermitian elements $i\vec e_\eta$ of the informational sector, each of which squares to $+e_t$; there the vector identity reads $\mathrm{Sd}_{i\vec e_\et}a=-q(i\vec e_\eta)\rho_{i\vec e_\et}a=-\rho_{i\vec e_\et}a$ with $q(i\vec e_\eta)=+1$, so on the algebra the two-sided operator with a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
 ## What the Grading Does and Does Not Explain
 
@@ -180,11 +180,11 @@ The sector row is the Hermitian structure of the algebra and not a grading, and 
 
 ### The Dagger on the Basis
 
-The Hermitian conjugation of the basis elements is the basis table of *Biquaternion Versors and the Orthogonal Group*, read off the star of the algebra: the quaternion units are anti-Hermitian, the complex unit is anti-Hermitian, the boosts $i\vec e_k$ are Hermitian. That is why $\mathbb{B}_{\Psi}$ is spanned by $e_t$ and the boosts and $\mathbb{B}_{\Phi}$ by $i$ and the quaternion units, and the whole article is the interpretation of it. The parity of the basis elements — all even, since they are elements of the algebra — is untouched by the dagger, as the proposition above says.
+The Hermitian conjugation of the basis elements is the basis table of *Biquaternion Versors and the Orthogonal Group*, read off the star of the algebra: the quaternion units are anti-Hermitian, the complex unit is anti-Hermitian, the boosts $i\vec e_\eta$ are Hermitian. That is why $\mathbb{B}_{\Psi}$ is spanned by $e_t$ and the boosts and $\mathbb{B}_{\Phi}$ by $i$ and the quaternion units, and the whole article is the interpretation of it. The parity of the basis elements — all even, since they are elements of the algebra — is untouched by the dagger, as the proposition above says.
 
 ### The Two Slices of the Algebra: $*$-Unitary and Inverse
 
-The $*$-unitary slice $\mathcal{U}=\{x:x^{*}x=e_t\}$ of the dagger is a group: a left inverse in a finite-dimensional algebra is an inverse, so $x^{*}x=e_t$ gives $x^{-1}=x^{*}$ and the slice is closed under multiplication. It contains more than the unit quaternions: the unit quaternions (real coefficients with $\langle x\rangle_{\natural}=1$), the unit complex scalars of the centre, and the boosts $i\vec e_k$ all satisfy $x^{*}x=e_t$. Its Lie algebra, by the sector decomposition, is $\mathbb{B}_{\Phi}$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $\mathcal{U}$, because $(\exp u)^{*}=\exp(u^{*})=\exp(-u)=\exp(u)^{-1}$.
+The $*$-unitary slice $\mathcal{U}=\{x:x^{*}x=e_t\}$ of the dagger is a group: a left inverse in a finite-dimensional algebra is an inverse, so $x^{*}x=e_t$ gives $x^{-1}=x^{*}$ and the slice is closed under multiplication. It contains more than the unit quaternions: the unit quaternions (real coefficients with $\langle x\rangle_{\natural}=1$), the unit complex scalars of the centre, and the boosts $i\vec e_\eta$ all satisfy $x^{*}x=e_t$. Its Lie algebra, by the sector decomposition, is $\mathbb{B}_{\Phi}$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $\mathcal{U}$, because $(\exp u)^{*}=\exp(u^{*})=\exp(-u)=\exp(u)^{-1}$.
 
 The slice is compact, and the algebra says so without a matrix: on it the scalar part of $x^{*}x$ is fixed, and $\mathrm{Sc}(x^{*}x)=\sum_\mu\lvert Q_\mu\rvert^{2}$, so $x^{*}x=e_t$ forces $\sum_\mu\lvert Q_\mu\rvert^{2}=1$ and the four complex coefficients lie on the unit sphere of $\mathbb{C}^{4}$; a closed subset of a compact set is compact. Its real dimension is four — the eight real coordinates less the four real conditions of $x^{*}x=e_t$, which are independent at a regular point of the slice. The **inverse** slice is the other one, the group of units of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of units, and the Lorentz group of the corpus is reached by the inverse.
 
@@ -207,7 +207,7 @@ so the two odd parameters have multiplied to the even element $\vec e_z$, and th
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -232,7 +232,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
@@ -258,7 +258,7 @@ $$
 \sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A ,
 $$
 
-The metric sits in the raised index and nowhere else: with every index low the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0$.
+The metric sits in the raised index and nowhere else: with every index low the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

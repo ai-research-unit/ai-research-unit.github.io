@@ -38,7 +38,7 @@ Three remarks make the criterion usable.
 
 The base $\mathcal{S}$ consists of two posits.
 
-**(B1) The quaternion algebra.** The real algebra $\mathbb{H}$: a four-dimensional associative unital algebra with unit $e_t$, a basis $\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_k^2=-e_t$, and the cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. Its multiplication is posited. As a real division algebra it carries its standard involution ${}^{\natural}$, the unique linear map with $e_t$ fixed and $\vec e_x,\vec e_y,\vec e_z$ negated; this is intrinsic to $\mathbb{H}$ and is not an extra posit.
+**(B1) The quaternion algebra.** The real algebra $\mathbb{H}$: a four-dimensional associative unital algebra with unit $e_t$, a basis $\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_\eta^2=-e_t$, and the cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. Its multiplication is posited. As a real division algebra it carries its standard involution ${}^{\natural}$, the unique linear map with $e_t$ fixed and $\vec e_x,\vec e_y,\vec e_z$ negated; this is intrinsic to $\mathbb{H}$ and is not an extra posit.
 
 **(B2) The complexification.** A central element $i$ with $i^2=-e_t$ that commutes with every element of $\mathbb{H}$; equivalently, the complexified algebra
 
@@ -148,7 +148,7 @@ $$
 Q_{1t}^{*}e_t-Q_{1x}^{*}\vec e_x-Q_{1y}^{*}\vec e_y-Q_{1z}^{*}\vec e_z=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z.
 $$
 
-Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_k^{*}=-Q_k$ for $k=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and
+Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_\eta^{*}=-Q_\eta$ for $\eta=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and
 
 $$
 \mathbb{B}_{\Psi}=\{r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_k\in\mathbb{R}\}.
@@ -163,7 +163,7 @@ $$
 so $Q_{1t}$ is purely imaginary and the vector coefficients are real:
 
 $$
-\mathbb{B}_{\Phi}=\{i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_k\in\mathbb{R}\}.
+\mathbb{B}_{\Phi}=\{i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\ :\ r'_t,r_\eta\in\mathbb{R}\}.
 $$
 
 Each is a real vector space of dimension $4$, and since ${}^{*}$ has eigenvalues $\pm1$ only,
@@ -262,7 +262,7 @@ Thus the pair $\{i,-i\}$ is rigidly derived from the algebra, while each of the 
 
 **The sign is presentational.** The two choices are exchanged by the real structure itself: $\bar{\cdot}(i)=-i$. Since $\bar{\cdot}$ is an automorphism of the base, no structure distinguishes $i$ from $-i$, and the framework may fix the sign by convention. It never needs to.
 
-**The non-central roots do not play $i$'s role.** The equation $\tilde{Ζ}^2=-e_t$ has, besides $\pm i$, a four-real-dimensional family of non-central solutions, of which $\vec e_k$ is the simplest ($\vec e_k^2=-e_t$). These are derived as well (they solve an equation with coefficients in the base), but they are not central, so they do not define the complex scalar structure of $\mathbb{B}$ and cannot replace $i$ in the complex-polar form. Their existence is a genuine feature of the algebra and is why two polar forms exist; it is not evidence that $i$ is fundamental.
+**The non-central roots do not play $i$'s role.** The equation $\tilde{Ζ}^2=-e_t$ has, besides $\pm i$, a four-real-dimensional family of non-central solutions, of which $\vec e_\eta$ is the simplest ($\vec e_\eta^2=-e_t$). These are derived as well (they solve an equation with coefficients in the base), but they are not central, so they do not define the complex scalar structure of $\mathbb{B}$ and cannot replace $i$ in the complex-polar form. Their existence is a genuine feature of the algebra and is why two polar forms exist; it is not evidence that $i$ is fundamental.
 
 **Verdict.** Relative to the framework's base — the complexified algebra $\mathbb{B}$ together with its real structure — the scalar imaginary is **derived**, up to the presentational sign. It is not an independent fundamental element. It is the certificate of the complexification: the posit is "adjoin a central square root of $-1$," and once that is done the square roots are the derived objects. The only honest qualification is that this is base-relative: if one insisted on a base of $\mathbb{H}$ alone, the complexification could not be derived and $i$ would be counted fundamental. The framework does not use that base, and this article does not either.
 

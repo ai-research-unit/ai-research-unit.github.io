@@ -25,7 +25,7 @@ with $\tilde Z_k=i\vec e_z$ the parity of site $k$ and the spin-down value $\til
 
 ## The One-Site Case
 
-The chain's algebra contains a fermionic mode, and it contains it with no string and no extension. The spin of a site is $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$, the element the conventions fix (*Algebra and Element Conventions*, §*The Observables, the States and the Quantum Objects*), and the ladder is the derived pair
+The chain's algebra contains a fermionic mode, and it contains it with no string and no extension. The spin of a site is $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, the element the conventions fix (*Algebra and Element Conventions*, §*The Observables, the States and the Quantum Objects*), and the ladder is the derived pair
 
 $$
 \tilde S_{\Psi,+}=\tilde S_{\Psi,x}+i\tilde S_{\Psi,y}=\frac{m\,c}{2\,k_m}\bigl(i\vec e_x-\vec e_y\bigr) ,
@@ -377,7 +377,7 @@ The transformation is a change of generators of one algebra — both lists gener
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp\vec e_y)$ | Spin of a site; the ladder is derived from it |
+| $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp\vec e_y)$ | Spin of a site; the ladder is derived from it |
 | $\tilde S_{\Psi,\pm}^2=0$, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$, $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}$ | Canonical anticommutator inside the algebra; the commutator is not central |
 | $\tilde Z_j=i\vec e_z$ at site $j$ | Parity of a site, $=\frac{2\,k_m\,\tilde{S}_{\Psi,z,j}}{m\,c}=(-1)^{n_j}$ |
 | $\tilde Z_{<j}=\prod_{k<j}\tilde Z_k$ | The string, $e_t$ at $j=1$; Hermitian, of square $e_t$ |

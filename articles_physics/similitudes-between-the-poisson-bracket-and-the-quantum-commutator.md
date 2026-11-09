@@ -127,43 +127,43 @@ which is the form in which the $\frac{m\,c\,i}{k_m}$ and the order are both mani
 The components of orbital angular momentum are
 
 $$
-L_{\mathrm{orb},i} = \epsilon_{ijk}\,q_j\,p_k,
+L_{\mathrm{orb},i} = \epsilon_{ij\eta}\,q_j\,p_\eta,
 $$
 
-with $\epsilon_{ijk}$ the Levi-Civita symbol and summation over repeated indices understood. Each $L_{\mathrm{orb},i}$ is a product of a coordinate and a momentum, so this test uses the multiplicative structure of the algebra and is independent of the canonical test above.
+with $\epsilon_{ij\eta}$ the Levi-Civita symbol and summation over repeated indices understood. Each $L_{\mathrm{orb},i}$ is a product of a coordinate and a momentum, so this test uses the multiplicative structure of the algebra and is independent of the canonical test above.
 
 **Classical side.** From the definition of the Poisson bracket and $\{q_i,p_j\}=\delta_{ij}$ one computes
 
 $$
-\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}\,L_{\mathrm{orb},k},
+\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}\,L_{\mathrm{orb},k},
 $$
 
 and, for the brackets with the coordinates and momenta,
 
 $$
-\{L_{\mathrm{orb},i},q_j\} = \epsilon_{ijk}\,q_k, \qquad \{L_{\mathrm{orb},i},p_j\} = \epsilon_{ijk}\,p_k.
+\{L_{\mathrm{orb},i},q_j\} = \epsilon_{ij\eta}\,q_\eta, \qquad \{L_{\mathrm{orb},i},p_j\} = \epsilon_{ij\eta}\,p_\eta.
 $$
 
-**Quantum side.** With $L_{\mathrm{orb},i} = \epsilon_{ijk}\,q_j\,p_k$ and the canonical commutators, the same computation gives
+**Quantum side.** With $L_{\mathrm{orb},i} = \epsilon_{ij\eta}\,q_j\,p_\eta$ and the canonical commutators, the same computation gives
 
 $$
-[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] =\frac{m\,c\,i\,\epsilon_{ijk}\,L_{\mathrm{orb},k}}{k_m},
+[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},k}}{k_m},
 $$
 
 so that
 
-$$\frac{k_m}{m\,c\,i}[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = \epsilon_{ijk}\,L_{\mathrm{orb},k},
+$$\frac{k_m}{m\,c\,i}[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = \epsilon_{ij\eta}\,L_{\mathrm{orb},k},
 $$
 
-which is the operator image of $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$. The correspondence holds on this pair as well.
+which is the operator image of $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$. The correspondence holds on this pair as well.
 
 | Classical | Quantum | $(\frac{k_m}{m\,c\,i})\times$ Quantum |
 |---|---|---|
-| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ | $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,L_{\mathrm{orb},k}}{k_m}$ | $\epsilon_{ijk}L_{\mathrm{orb},k}$ |
-| $\{L_{\mathrm{orb},i},q_j\}=\epsilon_{ijk}q_k$ | $[L_{\mathrm{orb},i},q_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,q_{k}}{k_m}$ | $\epsilon_{ijk}q_k$ |
-| $\{L_{\mathrm{orb},i},p_j\}=\epsilon_{ijk}p_k$ | $[L_{\mathrm{orb},i},p_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,p_{k}}{k_m}$ | $\epsilon_{ijk}p_k$ |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},k}}{k_m}$ | $\epsilon_{ij\eta}L_{\mathrm{orb},k}$ |
+| $\{L_{\mathrm{orb},i},q_j\}=\epsilon_{ij\eta}q_\eta$ | $[L_{\mathrm{orb},i},q_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,q_{\eta}}{k_m}$ | $\epsilon_{ij\eta}q_\eta$ |
+| $\{L_{\mathrm{orb},i},p_j\}=\epsilon_{ij\eta}p_\eta$ | $[L_{\mathrm{orb},i},p_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,p_{\eta}}{k_m}$ | $\epsilon_{ij\eta}p_\eta$ |
 
-**What the resemblance here is.** Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_{\mathrm{orb},i}$, and on the quantum side the commutator algebra of the $L_{\mathrm{orb},i}$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.
+**What the resemblance here is.** Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_{\mathrm{orb},i}$, and on the quantum side the commutator algebra of the $L_{\mathrm{orb},i}$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ij\eta}$ after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.
 
 ## Where the Resemblance Holds
 
@@ -286,7 +286,7 @@ where $\operatorname{weyl}^{-1}$ is the Weyl symbol, read off the operator, and 
 **Relation to the correspondence principle.** Bohr's correspondence principle states that quantum predictions merge with classical ones in the appropriate limit. The bracket correspondence is its infinitesimal, kinematic part: it matches the local structure of the two theories at a point of phase space. The order-$\frac{m^{2}\,c^{2}}{k_m^{2}}$ terms are why the merge is asymptotic rather than exact, and they are why taking the classical limit of a quantum system requires a limit of states or quantum numbers, not merely the substitution of brackets. Two familiar qualifications make the point.
 
 - **Ehrenfest.** The exact quantum statement is $d\langle  A\rangle/dr'_t = (\frac{k_m}{m\,c\,i})\langle[A,H]\rangle$. Replacing the right side by the classical bracket $\{A,H\}$ evaluated on the mean values is legitimate only to leading order; the corrections involve the higher moments of the state (the wave-packet spread) and vanish only in the regime in which that spread is negligible.
-- **Spin.** For angular momentum the bracket correspondence is exact, but the limit is nonetheless degenerate: with $S_k=(\frac{m\,c}{2\,k_m})\sigma_k$ for spin-$\tfrac12$, sending $\hbar\to0$ at fixed spin quantum number sends every spin observable to zero. A classical spin vector emerges only in the limit of large quantum number with $\frac{m\,c\,j}{k_m}$ held fixed. The bracket that matched exactly does not by itself produce a classical limit.
+- **Spin.** For angular momentum the bracket correspondence is exact, but the limit is nonetheless degenerate: with $S_\eta=(\frac{m\,c}{2\,k_m})\sigma_\eta$ for spin-$\tfrac12$, sending $\hbar\to0$ at fixed spin quantum number sends every spin observable to zero. A classical spin vector emerges only in the limit of large quantum number with $\frac{m\,c\,j}{k_m}$ held fixed. The bracket that matched exactly does not by itself produce a classical limit.
 
 ## The Resemblance in the Biquaternion Framework
 
@@ -300,18 +300,18 @@ of the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B}=\mathbb{B}_{\Psi
 $$
 \boxed{\;[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}] = -2\,(\vec r_{\Psi,1}\times\vec r_{\Psi,2})\;},
 $$
-a pure real quaternion lying in $\mathbb{B}_{\Phi}\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\frac{m\,c}{k_m}$.** The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
+a pure real quaternion lying in $\mathbb{B}_{\Phi}\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\frac{m\,c}{k_m}$.** The quaternion product rule $\vec e_j \vec e_\eta=\epsilon_{j\eta l}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
 
 **The angular-momentum resemblance, made exact.** The spin observables are the Hermitian elements
 $$
-\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}\,i\,\vec e_k \in  \mathbb{B}_{\Psi} \quad(\text{spin-}\tfrac12),
+\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}\,i\,\vec e_\eta \in  \mathbb{B}_{\Psi} \quad(\text{spin-}\tfrac12),
 $$
-whose matrix images under $\vec e_k\mapsto-i\sigma_k$ are $S_k=(\frac{m\,c}{2\,k_m})\sigma_k$. Direct computation from the commutator of two Hermitian elements gives
+whose matrix images under $\vec e_\eta\mapsto-i\sigma_\eta$ are $S_\eta=(\frac{m\,c}{2\,k_m})\sigma_\eta$. Direct computation from the commutator of two Hermitian elements gives
 $$
-[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] =\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m},
-\qquad\text{so}\qquad\frac{k_m}{m\,c\,i}[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] = \epsilon_{ijk}\,\tilde S_{\Psi,k},
+[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}}{k_m},
+\qquad\text{so}\qquad\frac{k_m}{m\,c\,i}[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] = \epsilon_{ij\eta}\,\tilde S_{\Psi,\eta},
 $$
-which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$. The parallel is exact here: after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\frac{m\,c}{k_m}$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(\frac{m\,c\,i}{k_m})$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$, and the sign is fixed by the orientation of the cross product.
+which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$. The parallel is exact here: after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ij\eta}$. The $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\frac{m\,c}{k_m}$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_\eta$ into a physical spin. In this realization the normalization factor $1/(\frac{m\,c\,i}{k_m})$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_{\Psi,\eta}=(\frac{m\,c}{2\,k_m})i\vec e_\eta$, and the sign is fixed by the orientation of the cross product.
 
 **Where the framework breaks the correspondence.** The canonical pair cannot be realized this way. The relation
 $$
@@ -326,7 +326,7 @@ The Poisson bracket and the normalized commutator have the same Lie-algebraic sh
 $$
 \{f,g\}\frac{k_m\,\longleftrightarrow}{m\,c\,i}[f,g]
 $$
-is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=\frac{m\,c\,i\,\delta_{ij}}{k_m}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ against $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,L_{\mathrm{orb},k}}{k_m}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
+is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=\frac{m\,c\,i\,\delta_{ij}}{k_m}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ against $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},k}}{k_m}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
 
 It is **not an isomorphism**, and this is the article's thesis. The Poisson bracket is a derivation of a commutative algebra and the commutator is a derivation of a noncommutative one; no product-preserving map can send one to the other, because the classical algebra commutes and the quantum algebra does not. The failure is explicit: $\operatorname{weyl}(q)\,\operatorname{weyl}(p)-\operatorname{weyl}(qp)=\frac{m\,c\,i}{2\,k_m}$, and in general $\operatorname{weyl}(f)\,\operatorname{weyl}(g)=\operatorname{weyl}(fg)+(\frac{m\,c\,i}{2\,k_m})\operatorname{weyl}(\{f,g\})+O(\frac{m^{2}\,c^{2}}{k_m^{2}})$. What replaces the isomorphism is a **deformation**: the star product deforms the commutative product, its antisymmetrization is the Moyal bracket, and
 $$
@@ -338,7 +338,7 @@ $$
 $$
 so that the sum over the three components lies $\tfrac32\frac{m^{2}\,c^{2}}{k_m^{2}}$ below the Weyl image of $L^2$; no bracket detects the shift, because a constant has zero bracket with everything. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
 
-In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{B}_{\Psi}$ and the commutator is the $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\frac{m\,c}{k_m}$ entering through the identification $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\frac{m\,c\,i\,e_{t}}{k_m}$ has no solution in $\mathbb{B}_{\Psi}$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
+In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{B}_{\Psi}$ and the commutator is the $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$. The framework realizes the angular-momentum correspondence exactly, with $\frac{m\,c}{k_m}$ entering through the identification $\tilde S_{\Psi,\eta}=(\frac{m\,c}{2\,k_m})i\vec e_\eta$, and it cannot realize the canonical one, because the relation $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\frac{m\,c\,i\,e_{t}}{k_m}$ has no solution in $\mathbb{B}_{\Psi}$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
 
 ## Summary of Notation
 
@@ -348,30 +348,30 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $[f,g]$ | Commutator of quantum observables |
 | $\frac{m\,c}{k_m}$ | Reduced Planck constant (dimensionful; $\hbar\to0$ is formal) |
 | $q_i, p_j$ | Canonical coordinates and momenta |
-| $\delta_{ij}, \epsilon_{ijk}$ | Kronecker delta; Levi-Civita symbol |
-| $L_{\mathrm{orb},i}=\epsilon_{ijk}q_jp_k$ | Orbital angular momentum components |
+| $\delta_{ij}, \epsilon_{ij\eta}$ | Kronecker delta; Levi-Civita symbol |
+| $L_{\mathrm{orb},i}=\epsilon_{ij\eta}q_jp_\eta$ | Orbital angular momentum components |
 | $q_i, p_j=-\frac{m\,c\,i}{k_m}\partial/\partial q_j$ | Position and momentum operators |
 | $\operatorname{weyl}(f)$ | Quantization map (Weyl ordering) |
 | $\operatorname{weyl}^{-1}$ | Its inverse, the Weyl symbol of an operator |
-| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ | Classical angular-momentum Poisson algebra |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | Classical angular-momentum Poisson algebra |
 | $L^2=\sum_i(L_{\mathrm{orb},i})^2$ | Squared orbital angular momentum |
 | $\star$ | Star product (deformation of the pointwise product) |
 | $\Lambda[f,g]=\sum_i(\partial f/\partial q_i\,\partial g/\partial p_i-\partial f/\partial p_i\,\partial g/\partial q_i)$ | Bidifferential operator of the star product, applied slot by slot |
 | $\{\{f,g\}\}=(\frac{k_m}{m\,c\,i})(f\star g-g\star f)$ | Moyal bracket |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_k^2=-e_t$); scalar imaginary ($i^2=-1$) |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion basis ($\vec e_\eta^2=-e_t$); scalar imaginary ($i^2=-1$) |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian (observables) and anti-Hermitian (generators) subspaces |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian observable |
 | $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Biquaternion commutator ($\frac{m\,c}{k_m}$-free) |
-| $\tilde S_{\Psi,k}=(\frac{m\,c}{2\,k_m})i\vec e_k$ | Spin-$\tfrac12$ observables |
+| $\tilde S_{\Psi,\eta}=(\frac{m\,c}{2\,k_m})i\vec e_\eta$ | Spin-$\tfrac12$ observables |
 | $\mathrm{Tr}(\tilde Q\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde Q\tilde R_\Psi)$ | Trace formula |
 
 ## Further Reading
 
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ and the spin relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ijk}\,\tilde{S}_{\Psi,k}}{k_m}$ used in the framework section.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ and the spin relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}}{k_m}$ used in the framework section.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the observables in $\mathbb{B}_{\Psi}$, the trace formula, and the dynamics that supply the quantum side of the correspondence.
-- [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), for the identification of $\mathbb{B}_{\Psi}$ with the qubit observables and the isomorphism $\vec e_k\mapsto-i\sigma_k$ used throughout the framework section.
+- [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), for the identification of $\mathbb{B}_{\Psi}$ with the qubit observables and the isomorphism $\vec e_\eta\mapsto-i\sigma_\eta$ used throughout the framework section.
 - [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the proof that $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\frac{m\,c\,i\,e_{t}}{k_m}$ has no solution in $\mathbb{B}_{\Psi}$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.
 - [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html), for the algebra-level meaning of "derivation" and for the inner derivations $\mathrm{ad}_a=[a,\cdot]$, the biquaternion instance of the commutator-as-derivation used in the article.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the role of $\mathbb{B}_{\Psi}$ as the operator space and the reversible/irreversible dichotomy.

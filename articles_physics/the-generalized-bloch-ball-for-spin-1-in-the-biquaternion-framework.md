@@ -49,24 +49,24 @@ For spin $1$ the first fails because there is no relevant four-dimensional cone,
 The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
 
 $$
-\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=[\tilde S_{\Psi,k},ie_l]=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m},
+\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=[\tilde S_{\Psi,\eta},ie_l]=\frac{m\,c\,i\,\epsilon_{\eta lm}\,ie_{m}}{k_m},
 $$
 
-so that $\tilde S_{\Psi,\mathrm{adj},k}=\mathrm{ad}_{\tilde S_{\Psi,k}}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
+so that $\tilde S_{\Psi,\mathrm{adj},\eta}=\mathrm{ad}_{\tilde S_{\Psi,\eta}}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
 
 $$
-[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m},\qquad  F_1^2+F_2^2+F_3^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}},
+[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,F_{\eta}}{k_m},\qquad  F_1^2+F_2^2+F_3^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}},
 $$
 
-with eigenvalues of each $F_k$ equal to $\frac{m\,c}{k_m}$ times $\{+1,0,-1\}$.
+with eigenvalues of each $F_\eta$ equal to $\frac{m\,c}{k_m}$ times $\{+1,0,-1\}$.
 
 A second and equivalent construction uses two fundamental factors,
 
 $$
-\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
+\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}=\frac{m\,c}{2\,k_m}\left(i\vec e_\eta\otimes e_t+e_t\otimes i\vec e_\eta\right),
 $$
 
-which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
+which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta\vec e_\eta\otimes \vec e_\eta)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
 
 ### The sector where the states live
 
@@ -76,7 +76,7 @@ $$
 \tilde{Ϛ}_{\Psi}\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde{Ϛ}_{\Psi})=1,\qquad \tilde\Pi_{\mathrm{asym}}\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{\mathrm{asym}}=0 ,
 $$
 
-where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k\vec e_k\otimes \vec e_k)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric idempotent**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
+where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta\vec e_\eta\otimes \vec e_\eta)$ is the singlet idempotent. The last condition says that the support of $\tilde{Ϛ}_{\Psi}$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric idempotent**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
 
 For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -274,7 +274,7 @@ The generalized Bloch ball for spin $1$ is the largest ball of states inside the
 
 The article established the following.
 
-- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_{\Psi,k}}(ie_l)=\frac{m\,c\,i\,\epsilon_{klm}\,ie_{m}}{k_m}$, and the symmetric combination $\tilde F_k=\tilde S_{\Psi,k}^{(1)}+\tilde S_{\Psi,k}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ and $\sum_k F_k^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}}$.
+- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=\frac{m\,c\,i\,\epsilon_{\eta lm}\,ie_{m}}{k_m}$, and the symmetric combination $\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,F_{\eta}}{k_m}$ and $\sum_\eta F_\eta^2=\frac{2\,m^{2}\,c^{2}\,I_{3}}{k_m^{2}}$.
 - **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
 - **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.
@@ -293,8 +293,8 @@ The article established the following.
 | $\langle\tilde R_\Psi\rangle_{\natural}=r_t^2-\lvert\vec r_\Psi\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
-| $F_k$ | Spin-$1$ operators, $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ijk}\,F_{k}}{k_m}$ |
-| $\mathrm{ad}_{\tilde S_{\Psi,k}}$ | Adjoint action on the traceless part $W$ |
+| $F_\eta$ | Spin-$1$ operators, $[F_i,F_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,F_{\eta}}{k_m}$ |
+| $\mathrm{ad}_{\tilde S_{\Psi,\eta}}$ | Adjoint action on the traceless part $W$ |
 | $\lambda_a$, $a=1,\dots,8$ | Gell-Mann basis, $\mathrm{Tr}(\lambda_a\lambda_b)=2\delta_{ab}$ |
 | $\rho=\tfrac13I+\tfrac{1}{\sqrt3}b_a\lambda_a$ | Qutrit state, generalized Bloch vector $\vec b$ |
 | $\mathrm{Tr}(\rho^2)=\tfrac13(1+2\lvert\vec b\rvert^2)$ | Purity invariant |

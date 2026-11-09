@@ -33,7 +33,7 @@ The condition that the variation vanish on the boundary is what makes the princi
 
 The Lagrangian must be a **real scalar**, and this is a statement about the algebra, not a convenience. A biquaternion
 $$
-\mathcal{L} = \mathcal{L}_0e_t + \mathcal{L}_k\vec e_k \in \mathbb{B}
+\mathcal{L} = \mathcal{L}_0e_t + \mathcal{L}_k\vec e_\eta \in \mathbb{B}
 $$
 carries eight real numbers, and only its scalar part, and only the real part of that, is invariant under the central phase and compatible with the Lorentz action. The framework therefore builds its Lagrangians from two pairings, both supplied by the involution lattice:
 $$
@@ -150,7 +150,7 @@ S[\tilde{Ξ}] = \int\mathcal{L}\,d^4r ,
 $$
 the form fixed by the companion *Noether's Theorem in Biquaternionic Form* and the companion *The Klein–Gordon Equation in Biquaternionic Form*. Expanding the scalar parts,
 $$
-\mathcal{L} = -\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi) - \sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi) - (mc/\hbar)^{2}\,\xi^*\xi ,
+\mathcal{L} = -\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi) - \sum_\eta(\partial/\partial R_\eta\,\xi^*)(\partial/\partial R_\eta\,\xi) - (mc/\hbar)^{2}\,\xi^*\xi ,
 \qquad \hbar/(mc) ,
 $$
 which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $i r'_t$ convention gives it. Its Euler–Lagrange equation is
@@ -183,7 +183,7 @@ $$
 \qquad
 T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}\!\left(e_\mu e_\rho e_\nu e_\sigma\right) ,
 $$
-with $\sigma_0 = +1$, $\sigma_k = -1$. The tensor is **not** $\delta_{\mu\nu}\delta_{\rho\sigma}$: exactly one $\sigma$ gives a nonvanishing coefficient for each triple $(\mu,\rho,\nu)$, so it has $64$ nonzero entries of $256$, and $48$ of them carry $\rho \neq \sigma$ and therefore couple different components of the field.
+with $\sigma_0 = +1$, $\sigma_\eta = -1$. The tensor is **not** $\delta_{\mu\nu}\delta_{\rho\sigma}$: exactly one $\sigma$ gives a nonvanishing coefficient for each triple $(\mu,\rho,\nu)$, so it has $64$ nonzero entries of $256$, and $48$ of them carry $\rho \neq \sigma$ and therefore couple different components of the field.
 
 The components therefore decouple for exactly the fields that are **central**. For $\tilde{Ξ} = \xi\,e_t$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
 $$
@@ -327,7 +327,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | External four-potential |
 | $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
 | $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})] - (k_m)^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar field Lagrangian |
-| $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_k=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |
+| $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_\eta=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |
 | $(\Box - (k_m)^{2})\tilde{Ξ} = 0$, $\hbar/(mc)$ | Klein–Gordon equation from the variation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |

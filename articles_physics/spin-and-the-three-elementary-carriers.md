@@ -37,7 +37,7 @@ The article has two theses. First, the **three carrier types are the elementary 
 | $S_-=\mathbb{B}\tilde\Pi_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | the second copy |
 | $V=\ker\operatorname{tr}$ | $\operatorname{ad}$ | $3$ | $+1,0,-1$ | $1$ | vector, three polarisations |
 
-Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element the contraction $\vec u\cdot\vec S=u_k\tilde S_{\Psi,k}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\vec{Ζ}$ and triple $(\vec u\cdot\vec S,\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\vec u\cdot\vec S,\vec\Upsilon_-]=\vec\Upsilon_-$, $[\vec u\cdot\vec S,\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\,\vec u\cdot\vec S$. The frame root is $\vec{Ζ}=2\,\vec u\cdot\vec S$, pure and therefore arrowed without a tilde. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
+Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element the contraction $\vec u\cdot\vec S=u_k\tilde S_{\Psi,\eta}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\vec{Ζ}$ and triple $(\vec u\cdot\vec S,\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\vec u\cdot\vec S,\vec\Upsilon_-]=\vec\Upsilon_-$, $[\vec u\cdot\vec S,\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\,\vec u\cdot\vec S$. The frame root is $\vec{Ζ}=2\,\vec u\cdot\vec S$, pure and therefore arrowed without a tilde. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
 
 ## Why There Is No Fourth
 
@@ -126,7 +126,7 @@ L_{\vec\Upsilon_x}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
 L_{\vec\Upsilon_y}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 $$
 
-the matrices of $\mathsf M_2(\mathbb{C})$ in the model $\mathsf M_2(\vec e_k)=-i\sigma_k$. The module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication.
+the matrices of $\mathsf M_2(\mathbb{C})$ in the model $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$. The module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication.
 
 Three module-theoretic facts carry the reading.
 
@@ -187,7 +187,7 @@ $$
 =\mathbb{C}\tilde\Pi_-\oplus\mathbb{C}\vec\Upsilon_x\;}.
 $$
 
-In the matrix model $\mathsf M_2(\vec e_k)=-i\sigma_k$ the four elements are the matrix units
+In the matrix model $\mathsf M_2(\vec e_\eta)=-i\sigma_\eta$ the four elements are the matrix units
 
 $$
 \tilde\Pi_+\leftrightarrow E_{11},\quad
@@ -370,7 +370,7 @@ The physics corpus states the same three values through different constructions.
 | reading | construction | carrier | value |
 |---|---|---|---|
 | the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
-| the adjoint integer | the halved inner derivations $\tilde S_{\Psi,\mathrm{adj},k}=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
+| the adjoint integer | the halved inner derivations $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\et}a$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
 | the scalar | the rotations act trivially on the centre | $\mathbb{B}_{C}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
 | the tensor powers of the spinor | the symmetric part of $S^{\otimes 2s}$ | $S^{\otimes 2s}$ | $s$ |

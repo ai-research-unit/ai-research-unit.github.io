@@ -307,7 +307,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | notation | meaning |
 | --- | --- |
 | $\mathbb{B}$ | the biquaternion algebra |
-| $e_t,\vec e_k$ | the identity and the three vector units |
+| $e_t,\vec e_\eta$ | the identity and the three vector units |
 | $\tilde{Ζ}$ | a root of $\tilde Q$ |
 | $\tilde Q$ | a radicand |
 | $B$ | the square root of the vector-part square, $B^2=(\vec Q,\vec Q)$ |

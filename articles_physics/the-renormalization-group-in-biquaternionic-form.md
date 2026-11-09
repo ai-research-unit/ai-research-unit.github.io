@@ -16,24 +16,24 @@ The article is organized as follows. The next section fixes what the RG is and s
 
 ## The Scale Dependence of the Effective Action
 
-The **effective action** $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (Euclidean signature throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the **Wilsonian** effective action $\Gamma_k$, defined at a sliding scale $k$: $\Gamma_k$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_k$ on $k$ is what the RG computes.
+The **effective action** $\Gamma[\xi]$ is the generating functional of one-particle-irreducible correlation functions: with $Z[J] = \int\mathcal{D}\xi\, \exp(-S[\xi] + \int J\xi)$ and $W[J] = \log Z[J]$ (Euclidean signature throughout this article), $\Gamma$ is the Legendre transform of $W$. Its expansion in powers of the field and of derivatives defines the couplings of the theory. In this article we work with the **Wilsonian** effective action $\Gamma_\eta$, defined at a sliding scale $k$: $\Gamma_\eta$ is obtained from the microscopic action by integrating out all modes with Euclidean momenta larger than $k$. The dependence of $\Gamma_\eta$ on $k$ is what the RG computes.
 
 The exact statement of that dependence is the **Wetterich equation**,
 
 $$
-\boxed{\;\partial/\partial r'_t \Gamma_k[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\xi] + R_k\Big)^{-1}\,\partial/\partial r'_t R_k\right],
+\boxed{\;\partial/\partial r'_t \Gamma_\eta[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_\eta^{(2)}[\xi] + R_\eta\Big)^{-1}\,\partial/\partial r'_t R_\eta\right],
 \qquad r'_t = \log\frac{k}{\Lambda}\;},
 $$
 
-where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\xi$, $R_k$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
+where $\Gamma_\eta^{(2)}$ is the second functional derivative of $\Gamma_\eta$ with respect to $\xi$, $R_\eta$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
 
 1. **The trace is a functional trace.** The symbol $\mathrm{Tr}$ here is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{(2\pi\hbar)^4}\sum_{\text{internal indices}}$ with the argument evaluated on the field configuration. It is **not** the biquaternion trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list. The biquaternion trace is taken over the two-dimensional fiber of $\mathbb{B}$; the functional trace is taken over the space of modes. They must not be conflated, and when the flow equation is read in the biquaternion framework the two appear side by side: the *fiber* trace is the algebra's, and the *mode* trace is analytic.
-2. **The regulator is an input.** The equation is exact for any admissible $R_k$, but $R_k$ is not determined by the theory. Different choices give different *trajectories* $\Gamma_k$ and the same *physics* at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.
+2. **The regulator is an input.** The equation is exact for any admissible $R_\eta$, but $R_\eta$ is not determined by the theory. Different choices give different *trajectories* $\Gamma_\eta$ and the same *physics* at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.
 
-If $\Gamma_k$ is expanded in a basis of local operators with couplings $g_i(k)$,
+If $\Gamma_\eta$ is expanded in a basis of local operators with couplings $g_i(k)$,
 
 $$
-\Gamma_k[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
+\Gamma_\eta[\xi] = \int d^4r \sum_i g_i(k)\, \mathcal{O}_i[\xi],
 $$
 
 then the flow equation is equivalent to a set of ordinary differential equations,
@@ -351,7 +351,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; home of the scale, couplings, and beta functions |
@@ -363,9 +363,9 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $k_{\mathrm{eu}}^2 = \langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$ (Euclidean) | Euclidean momentum squared; the two routes agree |
 | $\Lambda$, $b$, $\delta\ell = \log b$ | Cutoff, shell ratio, RG step toward the IR |
 | $\mu$ | Renormalization scale |
-| $\Gamma_k[\xi]$, $\Gamma_k^{(2)}$ | Wilsonian effective action and its second functional derivative |
-| $R_k$ | Regulator function |
-| $\partial/\partial r'_t\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial r'_t R_k]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
+| $\Gamma_\eta[\xi]$, $\Gamma_\eta^{(2)}$ | Wilsonian effective action and its second functional derivative |
+| $R_\eta$ | Regulator function |
+| $\partial/\partial r'_t\,\Gamma_\eta = \tfrac12\mathrm{Tr}[(\Gamma_\eta^{(2)}+R_\eta)^{-1}\partial/\partial r'_t R_\eta]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Biquaternion trace (fiber trace), distinct from the functional trace |
 | $\beta_i = \mu\,dg_i/d\mu$ | Beta function |
 | $g^*$ | Fixed point, $\beta(g^*) = 0$ |

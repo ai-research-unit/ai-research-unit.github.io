@@ -111,7 +111,7 @@ and on a fixed energy shell $E$ the second is a relation among the squares. The 
 The Poisson brackets of the six generators close on themselves:
 
 $$
-\boxed{\;\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}\;}.
+\boxed{\;\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, A_j\} = \epsilon_{ij\eta}A_\eta, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k}\;}.
 $$
 
 The first is the angular-momentum algebra; the second says that $\vec A$ transforms as a vector under rotations; the third is the new relation, and its coefficient depends on the energy. All three were verified by numerical differentiation of the phase-space functions at several representative bound phase-space points, with the maximum deviation from the stated right-hand sides of order $10^{-11}$.
@@ -126,7 +126,7 @@ $$
 \vec D = \frac{\vec A}{\sqrt{-2mE}} ,
 $$
 
-so that $\{D_i, D_j\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ and $\{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
+so that $\{D_i, D_j\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}$ and $\{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ij\eta}D_\eta$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
 
 $$
 \vec S^{\pm}_{\mathrm{tot}} = \frac{1}{2}\left(\vec L \pm \vec D\right) .
@@ -135,7 +135,7 @@ $$
 Using the brackets,
 
 $$
-\boxed{\;\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i}, \tilde S_{\Psi}^{+}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{+}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{-}_{\mathrm{tot},i}, \tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{-}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{+}_{\mathrm{tot},i}, \tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0\;},
+\boxed{\;\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i}, \tilde S_{\Psi}^{+}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{+}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{-}_{\mathrm{tot},i}, \tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{-}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{+}_{\mathrm{tot},i}, \tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0\;},
 $$
 
 so that $\mathrm{SO}(4) \cong \mathrm{SU}(2)\oplus\mathrm{SU}(2)$ with generators $\vec S^+_{\mathrm{tot}}$ and $\vec S^-_{\mathrm{tot}}$. The numerical check confirms all three relations, and the two Casimirs are equal:
@@ -151,12 +151,12 @@ where the last equality uses $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$. For the repres
 For $E > 0$ the third bracket changes sign. Defining $\vec D = \vec A/\sqrt{2mE}$ gives
 
 $$
-\{D_i, D_j\} = -\epsilon_{ijk}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ijk}D_k ,
+\{D_i, D_j\} = -\epsilon_{ij\eta}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ij\eta}D_\eta ,
 $$
 
 which is the algebra $\mathrm{SO}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\vec L\cdot\vec D$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.
 
-At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_{\mathrm{orb},i},D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.
+At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_{\mathrm{orb},i},D_j\} = \epsilon_{ij\eta}D_\eta$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.
 
 | Energy | Rescaled vector | Algebra | Group |
 |---|---|---|---|
@@ -168,7 +168,7 @@ The bound case is the one that bears on the hydrogen spectrum, and it is the cas
 
 ### Numerical Checks
 
-The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_{\mathrm{orb},k}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S_{\Psi}^{\pm}_{\mathrm{tot},i},\tilde S_{\Psi}^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
+The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ij\eta}A_\eta$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S_{\Psi}^{\pm}_{\mathrm{tot},i},\tilde S_{\Psi}^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
 
 The algebra statements of the closing section were checked at the same time on the elements themselves. The material sector was confirmed closed under the commutator, with $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}] \subseteq \mathbb{B}_{\Phi}$ and every element of $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]$ again anti-Hermitian; the traceless part was confirmed to close exactly on
 
@@ -178,7 +178,7 @@ $$
 \left[\tfrac{i\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = -\epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2} ;
 $$
 
-The six maps $q\mapsto\vec e_kq$ and $q\mapsto q\vec e_k$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$. The commutator of two left maps is $2\epsilon_{ijk}$ times the third left map, the commutator of two right maps is $-2\epsilon_{ijk}$ times the third right map, and a left map commutes with a right map. Applying the three left maps in turn and summing sends every element of $\mathbb{H}$ to $-3$ times itself, and the same holds for the three right maps. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.
+The six maps $q\mapsto\vec e_\eta q$ and $q\mapsto q\vec e_\eta$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$. The commutator of two left maps is $2\epsilon_{ij\eta}$ times the third left map, the commutator of two right maps is $-2\epsilon_{ij\eta}$ times the third right map, and a left map commutes with a right map. Applying the three left maps in turn and summing sends every element of $\mathbb{H}$ to $-3$ times itself, and the same holds for the three right maps. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.
 
 ## The Classical Origin of the Degeneracy
 
@@ -242,7 +242,7 @@ The biquaternion algebra contains the following objects of the Coulomb problem.
 
 ### The Symmetry of the Algebra on Itself
 
-There is one place where a six-dimensional rotation algebra arises from the algebra alone, and recording it fixes the boundary exactly. The left and right multiplications by a unit real quaternion are isometries of $\mathbb{H} \cong \mathbb{R}^4$: the three maps $q \mapsto \vec e_k q$ and the three maps $q \mapsto q\vec e_k$ are antisymmetric there. The commutator of two left maps is $2\epsilon_{ijk}$ times the third left map, the commutator of two right maps is $-2\epsilon_{ijk}$ times the third right map, and a left map commutes with a right map. The six maps therefore span a six-dimensional space, and as a Lie algebra it is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.
+There is one place where a six-dimensional rotation algebra arises from the algebra alone, and recording it fixes the boundary exactly. The left and right multiplications by a unit real quaternion are isometries of $\mathbb{H} \cong \mathbb{R}^4$: the three maps $q \mapsto \vec e_\eta q$ and the three maps $q \mapsto q\vec e_\eta$ are antisymmetric there. The commutator of two left maps is $2\epsilon_{ij\eta}$ times the third left map, the commutator of two right maps is $-2\epsilon_{ij\eta}$ times the third right map, and a left map commutes with a right map. The six maps therefore span a six-dimensional space, and as a Lie algebra it is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.
 
 Under this action $\mathbb{B}$ is a single balanced representation. The two Casimirs are equal: applying the three left maps in turn and summing sends every element of $\mathbb{H}$ to $-3$ times itself, and the same holds for the three right maps — the balance condition that the bound-state multiplicity requires. The complex dimension is four, the value of $n^2$ at $n = 2$. The lowest shell of the degeneracy therefore has an image in the algebra, as the balanced $(\tfrac12,\tfrac12)$; the shells $n \geq 3$, of dimensions $9, 16, \dots$, have none, because the self-action of a four-dimensional algebra carries only one balanced representation. The boundary is consequently sharper than a dimension count: the algebra is not foreign to the symmetry — it carries the symmetry's lowest carrier, with the balance the multiplicity needs — but it cannot carry the tower, and it does not derive the dynamics that selects the inverse-square force. Whether the matching at $n = 2$ has dynamical content is not established here, and the degeneracy's algebraic origin remains the open question it was.
 
@@ -276,7 +276,7 @@ $$
 \end{aligned}
 $$
 
-**The reach, in gamma language.** The three left multipliers are exactly the spacelike bivectors, so the rotations $\vec e_k/2$ are $\tfrac12\gamma_2\gamma_3$, $\tfrac12\gamma_3\gamma_1$, $\tfrac12\gamma_1\gamma_2$, that is $\sigma_{23}$, $\sigma_{31}$, $\sigma_{12}$, and the boosts $i\vec e_k/2$ are $i$ times them. The six generators are therefore those three and $i$ times them; their real span is six-dimensional and closed under the commutator, so as a Lie algebra it is $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, that is $\mathrm{so}(3,1)$. The compact form would be $\mathrm{so}(4)$; these six matrices close on the non-compact one, which is the boundary the symmetry section states.
+**The reach, in gamma language.** The three left multipliers are exactly the spacelike bivectors, so the rotations $\vec e_\eta/2$ are $\tfrac12\gamma_2\gamma_3$, $\tfrac12\gamma_3\gamma_1$, $\tfrac12\gamma_1\gamma_2$, that is $\sigma_{23}$, $\sigma_{31}$, $\sigma_{12}$, and the boosts $i\vec e_\eta/2$ are $i$ times them. The six generators are therefore those three and $i$ times them; their real span is six-dimensional and closed under the commutator, so as a Lie algebra it is $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, that is $\mathrm{so}(3,1)$. The compact form would be $\mathrm{so}(4)$; these six matrices close on the non-compact one, which is the boundary the symmetry section states.
 
 **The boundary the gammas make plain.** The $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ of the symmetry section is the pair of multipliers, left against right, and the gamma dictionary shows that the two copies are of different kinds: the left multipliers are bivectors, and the right ones are not, $R_{\vec e_x}$ being the vector $\gamma_0$ up to $-i$, $R_{\vec e_y}$ a trivector and $R_{\vec e_z}$ the product of all four. The bivector space is six-dimensional over $\mathbb{C}$ and closed under the commutator, so the two $\mathrm{su}(2)$'s are not its self-dual and anti-self-dual halves; reading them so replaces the action of the algebra on itself by a split of the Lorentz generators, which is a different object. What the algebra reaches is the $\mathrm{so}(3,1)$ of its bivectors together with the $\mathrm{so}(4)$ of its own module structure, and the hidden symmetry of the Coulomb problem is in neither.
 
@@ -297,13 +297,13 @@ The particle is structureless and carries no intrinsic magnetic moment; its orbi
 The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\vec u_r$ with $|\vec A| = m|\kappa|e$. The six generators close under the Poisson bracket:
 
 $$
-\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ijk}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i},A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_{\mathrm{orb},k} .
+\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i},A_j\} = \epsilon_{ij\eta}A_\eta, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k} .
 $$
 
 Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$, the generators satisfy
 
 $$
-\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{+}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{+}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{-}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S_{\Psi}^{-}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0,
+\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{+}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{+}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{-}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{-}_{\mathrm{tot},k}, \qquad \{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0,
 $$
 
 so that the symmetry algebra is $\mathrm{SO}(4)\cong\mathrm{SU}(2)\oplus\mathrm{SU}(2)$, with equal Casimirs
@@ -333,9 +333,9 @@ The framework supplies the real three-space in which all six generators take the
 | $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector |
 | $|\vec A| = m|\kappa|e$; $\vec A\cdot\vec L = 0$ | Magnitude and orthogonality |
 | $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ | Magnitude identity |
-| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ijk}L_{\mathrm{orb},k}$ | Angular-momentum bracket |
-| $\{L_{\mathrm{orb},i},A_j\}=\epsilon_{ijk}A_k$ | Vector transformation of $\vec A$ |
-| $\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_{\mathrm{orb},k}$ | Energy-dependent bracket |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | Angular-momentum bracket |
+| $\{L_{\mathrm{orb},i},A_j\}=\epsilon_{ij\eta}A_\eta$ | Vector transformation of $\vec A$ |
+| $\{A_i,A_j\}=-2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | Energy-dependent bracket |
 | $\vec D = \vec A/\sqrt{-2mE}$ $(E<0)$ | Rescaled generator |
 | $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$ | $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ generators |
 | $(\vec S^\pm_{\mathrm{tot}})^2 = m\kappa^2/(8|E|)$ | Equal Casimirs |

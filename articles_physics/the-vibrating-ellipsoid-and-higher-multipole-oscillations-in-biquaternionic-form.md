@@ -14,7 +14,7 @@ The biquaternion conventions are those of the companion articles:
 - Companion article *Algebra and Element Conventions*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Rigid-Body Rotor
 
@@ -250,7 +250,7 @@ $$
 \mathrm{Sc}\!\left(\vec\nabla\vec v\right) = -\sum_\mu\partial/\partial R_\mu\,v_\mu = -\vec\nabla\cdot\vec v,
 $$
 
-obtained from $\vec\nabla\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/\partial R_\mu\,v_\nu$: only the terms with $\mu = \nu$ contribute to the centre, and $\vec e_k^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla\vec v$, a scalar statement, while the remainder of $\vec\nabla\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
+obtained from $\vec\nabla\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/\partial R_\mu\,v_\nu$: only the terms with $\mu = \nu$ contribute to the centre, and $\vec e_\eta^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla\vec v$, a scalar statement, while the remainder of $\vec\nabla\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ used in these manipulations.
 
 ### The Energy of a Mode
@@ -300,7 +300,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |

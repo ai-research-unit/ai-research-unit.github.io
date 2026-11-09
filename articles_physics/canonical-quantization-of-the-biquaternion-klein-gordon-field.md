@@ -33,7 +33,7 @@ with $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mat
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
 -k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
-=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi .
+=-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_\eta(\partial/\partial R_\eta\,\xi^*)(\partial/\partial R_\eta\,\xi)-k_m^{2}\xi^*\xi .
 $$
 
 Because $\partial/\partial R_t=-i\partial/\partial r'_t$, the Lagrangian written in the physical time is
@@ -239,7 +239,7 @@ Because the question addressed here is the second-quantization question of the f
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_k(\partial/\partial R_k\,\xi^*)(\partial/\partial R_k\,\xi)-k_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
+- The Lagrangian $\mathcal{L}=-(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_\eta(\partial/\partial R_\eta\,\xi^*)(\partial/\partial R_\eta\,\xi)-k_m^{2}\xi^*\xi$, the conjugate momentum $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, and the regular Legendre transform.
 - The equal-time commutators, imposed and verified, and the three reasons the bracket is a commutator rather than an anticommutator.
 - The mode expansion in the parent's plane waves, the mode commutators, and the recovery of the equal-time relation.
 - The symmetric Fock space, the occupation basis, the vacuum, and the number operator.

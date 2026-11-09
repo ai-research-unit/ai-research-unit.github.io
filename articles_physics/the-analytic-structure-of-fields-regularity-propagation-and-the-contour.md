@@ -36,7 +36,7 @@ On a four-dimensional real subspace $V\subset\mathbb{B}$ with complex coordinate
 $$
 D=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-D^{\natural}=e_t\frac{\partial}{\partial R_t}-\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k}.
+D^{\natural}=e_t\frac{\partial}{\partial R_t}-\sum_{\eta=1}^{3}\vec e_\eta\frac{\partial}{\partial R_\eta}.
 $$
 
 The units satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural}=2\delta_{\mu\nu}e_t$, so the cross terms cancel:
@@ -129,7 +129,7 @@ The shifted operator is
 $$
 D_\alpha=D_{\mathrm s}+M_\alpha,
 \qquad
-D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial R_k},
+D_{\mathrm s}=i\sum_{\eta=1}^{3}\vec e_\eta\frac{\partial}{\partial R_\eta},
 \qquad
 D_{\mathrm s}^{2}=\Delta,
 \qquad
@@ -202,7 +202,7 @@ The shifted operator's parameter is not necessarily a physical mass. It is an el
 | $D^{\natural}$ | its quaternion conjugate |
 | $\Box=DD^{\natural}$ | the d'Alembertian |
 | $G=Q^{\natural}/\lVert Q\rVert_E^4$ | the fundamental solution |
-| $D_{\mathrm s}=i\sum_{k=1}^{3}\vec e_k\partial/\partial R_k$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
+| $D_{\mathrm s}=i\sum_{\eta=1}^{3}\vec e_\eta\partial/\partial R_\eta$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
 | $D_\alpha=D_{\mathrm s}+M_\alpha$ | the shifted operator |
 | $\alpha$ | the shift, a mass or chemical potential |
 | $\Pi_{\pm\alpha}$ | the Helmholtz projectors |

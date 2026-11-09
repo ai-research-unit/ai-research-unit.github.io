@@ -16,7 +16,7 @@ The article reads the consequence twice. Read on the **material** sector, where 
 
 The two halves of the article are of different standing, and the difference is kept throughout. The algebraic facts — that $e_t$ is the identity, that the temporal direction is the centre, that the material coefficient is imaginary and the informational one real — are established and are verified in the companion articles. The material reading is the interpretation already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The **storage reading** of $r_t$ is an interpretation offered here, subject to the standing hypothesis that the informational sector is physically realised, and it is stated as a reading and not as a result.
 
-The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$; the conjugations are the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. The biquaternionic gradient is $\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial R_\mu$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$.
+The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\eta^2 = -e_t$; the conjugations are the complex conjugation $\bar{\cdot}$, the quaternion conjugation ${}^{\natural}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and the anti-Hermitian conjugation ${}^{\flat} = -{}^{*}$. The biquaternionic gradient is $\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial R_\mu$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$.
 
 ## The Unit That Is the Identity
 
@@ -36,7 +36,7 @@ $$
 e_t^{\natural} = \bar{e_t} = e_t^{*} = e_t ,
 $$
 
-while each of the three vector units changes sign under the quaternion conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction fixed by the quaternion, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
+while each of the three vector units changes sign under the quaternion conjugation, $\vec e_\eta^{\natural} = -\vec e_\eta$. The temporal direction is the direction fixed by the quaternion, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
 
 **It is the direction the rotations fix and the boosts move.** The Lorentz action is rotor conjugation, $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$ for $\tilde U$ in the norm-one group $\mathbb{B}^\times_1 = \{\tilde U : \langle\tilde U\rangle_{\natural} = e_t\}$. A **rotation** is a unit real quaternion, an element of $Sp(1) \subset \mathbb{B}^\times_1$, and it fixes the temporal unit,
 
@@ -82,7 +82,7 @@ $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_k^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_k$ contribute $Q_k^2$.
+a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_\eta^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_\eta$ contribute $Q_\eta^2$.
 
 The four statements are one statement: **time is the scalar dimension.** It is the direction of the identity, the direction whose coefficient is the scalar part of the element, the direction the rotations fix and the boosts mix with space; and what the action carries is the norm of the four coefficients, while what carries the signature is the value placed on the temporal coefficient.
 
@@ -118,7 +118,7 @@ The three real coefficients $r_x, r_y, r_z$ are the directions in which a materi
 
 The one imaginary coefficient $i r'_t$ is the direction the object does not extend along. A material body has a position in time but no size in it; it is *at* a time, not *in* time the way it is in space. The imaginary character of the coefficient is the algebraic mark of that difference: the coordinate exists, it is written in the same element and it enters the same norm, but it is not a coordinate a body occupies. Time is measured — by the change of the other coordinates, by the rate at which things happen — but it is measured and not touched. It cannot be held, it cannot be displaced along, and it cannot be revisited. **Measured but not touched** is the material reading of the $i$ on $r'_{t}$.
 
-The reading is an interpretation, and the mathematics beneath it is only the placement of one letter: the coefficient of $e_t$ in the material sector carries $i$ and the coefficients of the $\vec e_k$ do not. Whether the placement *explains* the difference between time and space is a further step, taken by the article that owns the interpretation and repeated here because the second reading of this article is built on it.
+The reading is an interpretation, and the mathematics beneath it is only the placement of one letter: the coefficient of $e_t$ in the material sector carries $i$ and the coefficients of the $\vec e_\eta$ do not. Whether the placement *explains* the difference between time and space is a further step, taken by the article that owns the interpretation and repeated here because the second reading of this article is built on it.
 
 ## The Second Temporal Coefficient
 
@@ -208,7 +208,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 
 | Symbol | Meaning |
 |---|---|
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The quaternion base; the temporal unit is the identity, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The quaternion base; the temporal unit is the identity, $\vec e_\eta^2 = -e_t$ |
 | $\mathbb{B}_{C} = \{Q_te_t\} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra, the complex time sector; parameters $r_t = ct$ and $r'_t = r'_t$ |
 | $Q_t = r_t + i r'_t$ | The central coordinate, the coefficient of $Q_te_t$: real part the informational time $r_t$, imaginary part the material time $i r'_t$ |
 | $\tilde Q_- = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material element, $\mathbb{B}_{\Phi}$: imaginary scalar coefficient, real vector coefficients |

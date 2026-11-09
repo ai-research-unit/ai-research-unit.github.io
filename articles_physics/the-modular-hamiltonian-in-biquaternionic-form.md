@@ -212,7 +212,7 @@ which is the generator identity of the definition. So the $\tilde H_{\Psi,\mathr
 
 ## Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow
 
-The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
+The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
 \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
 \qquad |\vec r|^2=\tfrac{29}{100},
@@ -310,7 +310,7 @@ $$
 \Delta=\exp(-2\pi G),
 $$
 where $G$ is the generator of the boosts that preserve the wedge, normalized to the boost parameter. The modular flow is the boost flow, by rapidity $2\pi s$ in the modular parameter; equivalently $\tilde H_{\Psi,\mathrm{modular},V}=2\pi G$. This is the one case in which $\tilde H_{\Psi,\mathrm{modular},V}$ is independently known, and the biquaternion framework houses it, as the next subsection shows.
-- **Balls and spheres: the conformal extension.** For a conformal field theory and a ball, the modular Hamiltonian is the generator of the conformal transformations that preserve the ball — a combination of the dilation and a special conformal transformation — and is again a local geometric operator. This is the Hislop–Longo theorem. The biquaternion framework does **not** house this case, because only the Lorentz generators $\vec e_k$, $B_{\mathrm{boost},k}=i\vec e_k$ and the (non-unit) dilation are elements of $\mathbb{B}$, while the special conformal generators are not elements of the algebra at all, as the conformal-group companion establishes. The ball case's $\tilde H_{\Psi,\mathrm{modular},V}$ has a part that the algebra cannot represent.
+- **Balls and spheres: the conformal extension.** For a conformal field theory and a ball, the modular Hamiltonian is the generator of the conformal transformations that preserve the ball — a combination of the dilation and a special conformal transformation — and is again a local geometric operator. This is the Hislop–Longo theorem. The biquaternion framework does **not** house this case, because only the Lorentz generators $\vec e_\eta$, $B_{\mathrm{boost},k}=i\vec e_\eta$ and the (non-unit) dilation are elements of $\mathbb{B}$, while the special conformal generators are not elements of the algebra at all, as the conformal-group companion establishes. The ball case's $\tilde H_{\Psi,\mathrm{modular},V}$ has a part that the algebra cannot represent.
 - **Intervals in two dimensions.** For the vacuum of a chiral or massless field on an interval, the modular Hamiltonian is again local, an integral of the stress tensor against a specific weight vanishing at the endpoints. This is a one-dimensional geometric case and is consistent with the conformal picture above.
 
 So "$\tilde H_{\Psi,\mathrm{modular}}$ is local exactly when the modular flow is geometric" is the structural statement, and the geometric cases are the wedges and balls (and their lower-dimensional analogues). The modular Hamiltonian is a local operator only in those cases; everywhere else it is the nonlocal modular Hamiltonian of the region.
@@ -421,7 +421,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
@@ -456,7 +456,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 - Companion article [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
 - Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, the four-vectors, and the zero-divisor cone.
 - Companion article [The Conformal Group in Biquaternionic Form](the-conformal-group-in-biquaternionic-form.html), for the boundary that the special conformal generators are not elements of $\mathbb{B}$.
-- Companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the boost generators $B_{\mathrm{boost},k}=i\vec e_k$ whose $k=1$ case is the wedge modular Hamiltonian.
+- Companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the boost generators $B_{\mathrm{boost},k}=i\vec e_\eta$ whose $k=1$ case is the wedge modular Hamiltonian.
 - Companion article [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor and the subspaces its generators lie in.
 - Companion article [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the two-sided rotor action that the boost requires.
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode and the parity $(-1)^F$.

@@ -325,7 +325,7 @@ Combined with $\vec r\cdot\vec s \geq -|\vec r|\,|\vec s| \geq -1$, every inequa
 
 We have worked six problems on the geometry of the qubit state space, using only the state-space results of the parent article.
 
-**Parametrisation.** A state is $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ with $|\vec r| \leq 1$; the components of $\vec r$ are the single-qubit expectation values $r_k = \langle\sigma_k\rangle$, and a measurement along $\vec u$ has outcomes $\tfrac12(1 \pm \vec u\cdot\vec r)$.
+**Parametrisation.** A state is $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ with $|\vec r| \leq 1$; the components of $\vec r$ are the single-qubit expectation values $r_\eta = \langle\sigma_\eta\rangle$, and a measurement along $\vec u$ has outcomes $\tfrac12(1 \pm \vec u\cdot\vec r)$.
 
 **Purity and entropy.** Purity, linear entropy, and von Neumann entropy are functions of the radius alone: $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac12(1+|\vec r|^2)$, $S_{\mathrm{lin}} = \tfrac12(1-|\vec r|^2)$, and $S = -\sum_\pm\lambda_\pm\log\lambda_\pm$ with $\lambda_\pm = \tfrac12(1\pm|\vec r|)$.
 

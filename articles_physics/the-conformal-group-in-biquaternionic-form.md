@@ -34,9 +34,9 @@ The generators fall into four families, fifteen in all. Here $x$ and $a$ are the
 | Dilation | $D$ | 1 | $x\mapsto\lambda x$ |
 | Special conformal | $\mathcal{K}_\mu$ | 4 | $x\mapsto\dfrac{x+a\,x^2}{1+2a\cdot x+a^2x^2}$ |
 
-The symbol $\mathcal{K}_\mu$ is used for the special conformal generator because the literature's usual $K_\mu$ is taken in this series by the boost generator $B_{\mathrm{boost},k}=i\vec e_k$ of the Lorentz-group companion, which carries a spatial index and is an element of the algebra. The distinction is not merely typographical below.
+The symbol $\mathcal{K}_\mu$ is used for the special conformal generator because the literature's usual $K_\mu$ is taken in this series by the boost generator $B_{\mathrm{boost},k}=i\vec e_\eta$ of the Lorentz-group companion, which carries a spatial index and is an element of the algebra. The distinction is not merely typographical below.
 
-A concrete realization of the fifteen generators is by vector fields on the coordinates. Because the generators are operators on spacetime and not elements of $\mathbb{B}$, the display is written on the coordinates: $Q_\mu$ are the coordinates, $Q_t=i r'_t$ and $Q_k=r_k$, the derivatives are written $\partial/\partial R_\mu$, a repeated index is summed, and no index is raised or lowered. The algebra element of $\mathbb{B}_{\Phi}$ is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$.
+A concrete realization of the fifteen generators is by vector fields on the coordinates. Because the generators are operators on spacetime and not elements of $\mathbb{B}$, the display is written on the coordinates: $Q_\mu$ are the coordinates, $Q_t=i r'_t$ and $Q_\eta=r_\eta$, the derivatives are written $\partial/\partial R_\mu$, a repeated index is summed, and no index is raised or lowered. The algebra element of $\mathbb{B}_{\Phi}$ is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$.
 
 $$
 P_\mu=\partial/\partial R_\mu,\qquad D=\sum_\mu Q_\mu\partial/\partial R_\mu,\qquad
@@ -45,7 +45,7 @@ $$
 $$
 \mathcal{K}_\mu=2Q_\mu\sum_\nu Q_\nu\partial/\partial R_\nu-x^2\partial/\partial R_\mu,
 $$
-with $x^2=\sum_\mu Q_\mu^2=-{r'_{t}}^2+\vec r^2$. In this basis the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[\vec e_j,\vec e_k]=2\epsilon_{jkl}\vec e_l$, $[\vec e_j,B_{\mathrm{boost},k}]=2\epsilon_{jkl}B_{\mathrm{boost},l}$, $[B_{\mathrm{boost},j},B_{\mathrm{boost},k}]=-2\epsilon_{jkl}\vec e_l$ for $\vec e_k$, $B_{\mathrm{boost},k}=i\vec e_k$. The brackets are
+with $x^2=\sum_\mu Q_\mu^2=-{r'_{t}}^2+\vec r^2$. In this basis the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[\vec e_j,\vec e_\eta]=2\epsilon_{j\eta l}\vec e_l$, $[\vec e_j,B_{\mathrm{boost},k}]=2\epsilon_{j\eta l}B_{\mathrm{boost},l}$, $[B_{\mathrm{boost},j},B_{\mathrm{boost},k}]=-2\epsilon_{j\eta l}\vec e_l$ for $\vec e_\eta$, $B_{\mathrm{boost},k}=i\vec e_\eta$. The brackets are
 $$
 [D,P_\mu]=-P_\mu,\qquad [D,\mathcal{K}_\mu]=\mathcal{K}_\mu,
 \qquad [D,M_{\mu\nu}]=0,
@@ -61,7 +61,7 @@ $$
 $$
 together with the standard Lorentz brackets for $[M_{\mu\nu},M_{\rho\sigma}]$.
 
-**Where the generators live.** The Lorentz generators $\vec e_k$ and $B_{\mathrm{boost},k}=i\vec e_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.
+**Where the generators live.** The Lorentz generators $\vec e_\eta$ and $B_{\mathrm{boost},k}=i\vec e_\eta$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.
 
 ### How the Group Entered Physics
 
@@ -320,7 +320,7 @@ and every derivative in it is the gradient defined in the introduction. This is 
 
 The mass cannot be a term of the same kind. The square of the gradient is not scalar: the unit $e_t$ is the identity of the algebra, so it commutes with the three spatial units, and the two orders of a mixed derivative add, not cancel,
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\,\partial R_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\,\partial R_\eta},
 $$
 while the product with the conjugate is scalar,
 $$

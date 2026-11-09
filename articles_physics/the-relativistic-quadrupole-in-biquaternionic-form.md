@@ -109,7 +109,7 @@ The first-order term is the interesting one, because it carries two different mu
 $$
 \tfrac{1}{2}\left(S_{ij}+S_{ji}\right) = -\frac{i\omega}{2}\,D_{ij} ,
 \qquad
-\tfrac{1}{2}\left(S_{ij}-S_{ji}\right) = \epsilon_{ijk}\,m_k ,
+\tfrac{1}{2}\left(S_{ij}-S_{ji}\right) = \epsilon_{ij\eta}\,m_\eta ,
 $$
 
 where
@@ -120,7 +120,7 @@ D_{ij} = \int\rho\,x_{i,2}x_{j,2}\,d^3r_2 ,
 \vec m = \frac{1}{2}\int (r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\times\vec J\,d^3r_2
 $$
 
-are the second moment of the charge and the magnetic dipole moment. The first identity follows from $\int\partial/\partial x_{k,2}(x_{i,2}x_{j,2}J_k)\,d^3r_2 = 0$, which gives $\int(x_{i,2}J_j + x_{j,2}J_i) = -i\omega\int x_{i,2}x_{j,2}\rho$, and the second is the definition of $\vec m$. Hence
+are the second moment of the charge and the magnetic dipole moment. The first identity follows from $\int\partial/\partial x_{k,2}(x_{i,2}x_{j,2}J_\eta)\,d^3r_2 = 0$, which gives $\int(x_{i,2}J_j + x_{j,2}J_i) = -i\omega\int x_{i,2}x_{j,2}\rho$, and the second is the definition of $\vec m$. Hence
 
 $$
 \int(\vec u\cdot(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z))\vec J\,d^3r_2 = -\vec u\times\vec m - \frac{i\omega}{2}\,\vec D(\vec u) ,
@@ -262,7 +262,7 @@ $$
 \oint\left|\vec u\times\vec{\mathcal{Q}}(\vec u)\right|^2d\Omega = \frac{4\pi}{5}\,\mathcal{Q}_{ij}\mathcal{Q}_{ij} ,
 $$
 
-a consequence of the tracelessness of $\mathcal{Q}$ and of the elementary angular averages $\oint n_in_j\,d\Omega = \tfrac{4\pi}{3}\delta_{ij}$ and $\oint n_in_jn_kn_l\,d\Omega = \tfrac{4\pi}{15}(\delta_{ij}\delta_{kl}+\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk})$. The total radiated power is therefore
+a consequence of the tracelessness of $\mathcal{Q}$ and of the elementary angular averages $\oint n_in_j\,d\Omega = \tfrac{4\pi}{3}\delta_{ij}$ and $\oint n_in_jn_kn_l\,d\Omega = \tfrac{4\pi}{15}(\delta_{ij}\delta_{\eta l}+\delta_{i\eta}\delta_{jl}+\delta_{il}\delta_{j\eta})$. The total radiated power is therefore
 
 $$
 \boxed{\;P_{E2} = \frac{\mu_0\,\omega^6}{1440\,\pi\,c^3}\,\mathcal{Q}_{ij}\mathcal{Q}_{ij}

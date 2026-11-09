@@ -69,7 +69,7 @@ Two derived forms are used below, both read off the frame basis operators at the
 $$
 w = q_t e_t + i q_x\vec e_x + i q_y\vec e_y + i q_z\vec e_z ,
 \qquad
-iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_k q_k\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} ,
+iR_{\mathrm{axf},\vec e_x}\times(\text{image of } w) = q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_\eta q_\eta\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y} ,
 $$
 and a trivector is the frame basis operator applied after the image of an element of $\mathbb{B}_{\Phi}$, up to a sign that depends on the orientation chosen for each trivector.
 
@@ -77,7 +77,7 @@ The decisive consequence concerns the **metric**. The biquaternion norm is the s
 
 The same fact appears in the square of a vector. For $w$ as above,
 $$
-\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_k q_k\, iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}\Bigr)^2
+\Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_\eta q_\eta\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}\Bigr)^2
 = \bigl(q_t^2 - q_x^2 - q_y^2 - q_z^2\bigr)\,I_4 ,
 $$
 with no relative sign between the square of the basis operator and the biquaternion norm. The absence of that sign is the signature showing through.
@@ -91,7 +91,7 @@ $$
 $$
 where $\bar{\tilde Q}$ is the conjugation of the coefficients, $i\mapsto -i$, with the units $e_t,\vec e_x,\vec e_y,\vec e_z$ fixed. That map fixes $\mathbb{B}_{H}$ and negates $\mathbb{B}_{iH}$, so the identity says that **conjugation by the frame basis operator is the bar**: it is the spacetime-side avatar of the split into the quaternion sector and its imaginary multiple. It preserves each of the two sectors, because it commutes with the Hermitian conjugation whose fixed spaces they are; the sector exchange is multiplication by $i$, not a conjugation.
 
-Among the four generators, the frame basis operator is unique in being the bar itself. Conjugation by any of the four reverses the imaginary basis operator, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.
+Among the four generators, the frame basis operator is unique in being the bar itself. Conjugation by any of the four reverses the imaginary basis operator, since the image of $i$ is $L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ and every generator anticommutes with it, so all four carry the scalar imaginary $i$ to $-i$ and act on the biquaternions as conjugate-linear maps rather than $\mathbb{C}$-linear ones. Only the time one leaves the quaternion units alone. Conjugation by a spatial generator is the bar composed with a sign change of two units: it fixes $\vec e_\eta$ and negates the two units $\vec e_j$ with $j\neq k$, and the bar then flips the imaginary multiples the other way round. The spatial generators reflect the quaternion units; the time one conjugates them without a reflection.
 
 The frame basis operator completes the reading of the three conjugations of $\mathbb{B}$, and the three can be written together. Reversal, $\mathrm{rev}$, is the anti-automorphism that reverses the order of the factors in a product: on an array it is the transpose, and on the biquaternions it is quaternion conjugation. The image does not carry one of the two into the other, because it sends the scalar $i$ to a right multiplication rather than to a scalar, and the frame basis operator is exactly the difference. Of the three conjugations, the bar and the quaternion conjugation each carry one factor of the frame, and the composite carries none:
 $$
@@ -114,7 +114,7 @@ With the split in hand, the two sets can be described, and they are not of the s
 $$
 SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\},
 $$
-a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_k$ and $i\vec e_k$, $k=1,2,3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on the elements in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
+a group of real dimension six, the double cover of the restricted Lorentz group. The sign of the norm is the time orientation: an even unit element with $\langle\tilde U\rangle_{\natural}=+1$ is orthochronous, and one with $\langle\tilde U\rangle_{\natural}=-1$ reverses time, which is why the group defined here is the restricted one. Its Lie algebra is spanned by the six bivectors, the images of the six directions $\vec e_\eta$ and $i\vec e_\eta$, $\eta = 1, 2, 3$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on the elements in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
 
 Two subfamilies are worth separating, because the series uses them differently:
 
@@ -194,11 +194,11 @@ the time axis boosted by **half** the rapidity. The boost is therefore the refle
 
 A spatial rotation in the plane spanned by two spatial generators is $iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v$ with the vector basis operator
 $$
-v = -\cos\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y} + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} , \qquad v^2 = -I_4 ,
+v = -\cos\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y} + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y} , \qquad v^2 = -I_4 ,
 $$
 so that
 $$
-iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v = \cos\frac{\theta}{2}\,I_4 + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y} .
+iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,v = \cos\frac{\theta}{2}\,I_4 + \sin\frac{\theta}{2}\,iL_{\mathrm{axf},\vec e_j}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y} .
 $$
 For the plane $(x,y)$ the right-hand side is the image of $\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec e_z$, the rotation about $\vec e_z$, and the other coordinate planes follow by relabelling. A generic Lorentz transformation fixes no plane at all, so it needs four reflections, the maximum.
 
@@ -300,7 +300,7 @@ The claims of this article, in order.
 | $\langle\tilde Q\rangle_\natural$, $Q_t=i r'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
 | $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}} = a\tilde{Ξ}_{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | image of $\tilde Q$ | The $\mathbb{R}$-linear comparison with the even half, per *Matrix Representations Conventions*; named, never written as a symbol |
-| the four frame basis operators | The generator basis operators: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $k=1,2,3$ |
+| the four frame basis operators | The generator basis operators: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\eta = 1, 2, 3$ |
 | $\omega = iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Pseudoscalar, $\omega^2 = -I_4$; its four factors of $i$ multiply to $i^4=1$ |
 | $-iR_{\mathrm{axf},\vec e_z} = i\omega = -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Chirality basis operator, $(-iR_{\mathrm{axf},\vec e_z})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality basis operator |

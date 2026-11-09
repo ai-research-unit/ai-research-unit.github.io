@@ -8,7 +8,7 @@ $$
 \mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\,\xi^a\right)^2-\frac{1}{2\zeta}\left(\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_\mu\frac{\partial A_\mu}{\partial R_\mu}\right)^2 .
 $$
 
-**The parameter's name.** The gauges are called $R_\xi$ in the literature and the title keeps the name. The corpus writes the gauge parameter $\zeta$, as *BRST Symmetry in Biquaternionic Form* and *The Yang–Mills Path Integral and the Faddeev–Popov Procedure* do, and this article does the same, because article 4 has already spent $\xi^a$ on the three would-be Goldstone fields. A reader comparing with a textbook should read $\xi_{\text{there}}=\zeta_{\text{here}}$, and the Goldstone fields of article 4 are unchanged.
+**The parameter's name.** The gauges are called $R_\xi$ in the literature and the title keeps the name. The corpus writes the gauge parameter $\zeta$, as *BRST Symmetry in Biquaternionic Form* and *The Yang–Mills Path Integral and the Faddeev–Popov Procedure* do, and this article does the same, because article 4 has already spent $\xi$ on the three would-be Goldstone fields, there written $\xi_a$ with the index down. A reader comparing with a textbook should read $\xi_{\text{there}}=\zeta_{\text{here}}$, and the Goldstone fields of article 4 are unchanged; the index position differs and nothing else does.
 
 **Why a whole article.** Because gauge fixing is where three separate statements meet, and each is usually made in a different place. The quadratic form is degenerate, and the degeneracy is not a technicality: it *is* the gauge symmetry, seen at the level of the free theory. The Goldstones become massive, and their mass is not a physical mass but a coordinate-dependent one. The ghosts appear, and they carry a minus sign that has to be tracked. And the equivalence theorem, which is the physical content of the whole construction, follows from one property of the longitudinal polarisation vector.
 
@@ -100,7 +100,7 @@ $$
 | $A_\mu\partial^\mu\xi$ | $-M\xi\,\partial\cdot A$ | $+M\xi\,\partial\cdot A$ | $0$ |
 | $\xi^2$ | $0$ | $-\frac{\zeta M^2}{2}\xi^2$ | $-\frac{\zeta M^2}{2}\xi^2$ |
 
-**Why the cross term has to cancel.** If it does not, the Goldstone propagator carries a numerator proportional to $p_\mu p_\nu$ that grows with energy, and the theory loses manifest power counting even though it remains formally gauge invariant. Cancelling it is what makes every field's propagator fall as $1/\Pi$, and that is the subject of §*Power Counting*.
+**Why the cross term has to cancel.** If it does not, the Goldstone propagator carries a numerator proportional to $p_\mu p_\nu$ that grows with energy, and the theory loses manifest power counting even though it remains formally gauge invariant. Cancelling it is what makes every field's propagator fall as $1/\Pi$, and that is the subject of §*Power Counting and the Renormalisability Argument*.
 
 **The same statement as a determinant.** Before gauge fixing the quadratic form is degenerate, so its determinant vanishes identically. After gauge fixing the determinant is a product of the blocks, and each block is invertible. What the functional does is factorise a degenerate form into invertible factors, which is the precise sense in which it "fixes" anything.
 
@@ -200,7 +200,7 @@ $$
 **Its verification.** $D$ is the inverse of the kernel
 
 $$
-K_{\mu\nu}=\left(\Pi-M^2\right)\delta_{\mu\nu}+\left(\frac{1}{\zeta}-1\right)p_\mu p_\nu ,
+K_{\mu\nu}=\left(\Pi-M^2\right)\delta_{\mu\nu}+\left(1-\frac{1}{\zeta}\right)p_\mu p_\nu ,
 $$
 
 and the product $KD$ deviates from $\delta_{\mu\nu}$ by at most $2.2\times10^{-16}$ at $\zeta=0.5$, $1$, $2$ and $3$ on a generic off-shell momentum. The term $-\frac{1}{\zeta}p_\mu p_\nu$ in $K$ is exactly what the functional contributes: $K$ is the Proca kernel $(\Pi-M^2)\delta_{\mu\nu}+p_\mu p_\nu$ minus $\frac{1}{\zeta}p_\mu p_\nu$, and at $\zeta\to\infty$ it is the Proca kernel again.
@@ -219,9 +219,9 @@ and the product $KD$ deviates from $\delta_{\mu\nu}$ by at most $2.2\times10^{-1
 
 - **$\zeta=1$.** $\frac{P+L}{\Pi-M^2}=\frac{\delta_{\mu\nu}}{\Pi-M^2}$. The propagator is diagonal in the Lorentz indices, the Goldstone and ghost have mass $M$, and the $\zeta$-cancellation is between fields of equal mass. This is the Feynman–'t Hooft gauge.
 - **$\zeta=0$.** $\frac{P_{\mu\nu}}{\Pi-M^2}$, which is regular: the second term is $\zeta L_{\mu\nu}/\Pi$ to leading order and vanishes with $\zeta$. The longitudinal term is absent, and the Goldstone and ghost become massless, their poles moving to $\Pi=0$. This is the Landau gauge: the best gauge for ultraviolet questions and the one in which the infrared structure of the Goldstone and ghost contributions has to be cancelled between them.
-- **$\zeta\to\infty$.** $\frac{P_{\mu\nu}}{\Pi-M^2}+\frac{L_{\mu\nu}}{M^2}$, whose numerator is $\delta_{\mu\nu}+p_\mu p_\nu/M^2$ on the pole, the Proca form. The Goldstone and ghost masses diverge and those fields decouple. This is the unitary gauge, and it is the same object as the Proca field of the companion article.
+- **$\zeta\to\infty$.** $\frac{P_{\mu\nu}}{\Pi-M^2}-\frac{L_{\mu\nu}}{M^2}$, which is $\frac{\delta_{\mu\nu}+p_\mu p_\nu/M^2}{\Pi-M^2}$, the Proca form. The sign of the second term flips in the limit, because $\Pi-\zeta M^2\to-\zeta M^2$ and the whole term tends to $-L/M^2$; the two forms then add to the transverse-plus-longitudinal numerator that *Canonical Quantization of the Biquaternion Proca Field* displays. The Goldstone and ghost masses diverge and those fields decouple. This is the unitary gauge, and it is the same object as the Proca field of the companion article.
 
-**The unitary limit, verified.** The numerator $\frac{P}{\Pi-M^2}+\frac{L}{M^2}$ differs from $\frac{\delta_{\mu\nu}+p_\mu p_\nu/M^2}{\Pi-M^2}$ by an amount proportional to the off-shellness, $2.9\times10^{-9}$ at an off-shellness of $10^{-9}$, and the deviation vanishes with it. The Proca propagator is therefore the $\zeta\to\infty$ limit and not a separate object.
+**The unitary limit, verified.** $\frac{P_{\mu\nu}}{\Pi-M^2}-\frac{L_{\mu\nu}}{M^2}$ equals $\frac{\delta_{\mu\nu}+p_\mu p_\nu/M^2}{\Pi-M^2}$ identically, entry by entry, and the reason is one line: $p_\mu p_\nu=-\Pi L_{\mu\nu}$, so $\frac{\delta+pp/M^2}{\Pi-M^2}=\frac{P}{\Pi-M^2}+\frac{L+pp/M^2}{\Pi-M^2}=\frac{P}{\Pi-M^2}-\frac{L}{M^2}$. The cancellation is algebraic and holds at every momentum, on shell or off. At finite $\zeta$ the deviation from the Proca form is $\frac{\Pi\,L_{\mu\nu}}{M^2\left(\Pi-\zeta M^2\right)}$, of order $1/\zeta$ and not of order of the off-shellness: $2.0\times10^{-9}$ at $\Pi=2M^2$ and $\zeta=10^{9}$. The Proca propagator is therefore the $\zeta\to\infty$ limit and not a separate object.
 
 **Why the third limit is not free.** $\zeta\to\infty$ is not a gauge in which one can compute loops: the vector propagator tends to a constant, which is the subject of the next section but one. It is the right gauge for tree-level questions about the physical spectrum, and the wrong gauge for everything else. That asymmetry is the reason the $R_\xi$ family is used at all: it contains both limits and a good gauge in between.
 
@@ -251,7 +251,7 @@ $$
 D\le 4 .
 $$
 
-**The unitary gauge does not have this property.** At $\zeta\to\infty$ the vector propagator tends to $\frac{L_{\mu\nu}}{M^2}$, a constant, so an internal vector line contributes $\Pi^{0}$ instead of $\Pi^{-1}$, and the bound becomes $D\le 4+2I_V$ with $I_V$ the number of internal vector lines. The theory is not manifestly renormalisable in that gauge, although its $S$-matrix is the same.
+**The unitary gauge does not have this property.** At $\zeta\to\infty$ the vector propagator tends to $-\frac{L_{\mu\nu}}{M^2}$, a constant, so an internal vector line contributes $\Pi^{0}$ instead of $\Pi^{-1}$, and the bound becomes $D\le 4+2I_V$ with $I_V$ the number of internal vector lines. The theory is not manifestly renormalisable in that gauge, although its $S$-matrix is the same.
 
 | Gauge | Vector propagator at large $\Pi$ | Bound on $D$ | Manifest renormalisability |
 |---|---|---|---|
@@ -286,7 +286,9 @@ and it satisfies $\sum_\mu p_\mu\epsilon_L^\mu=0$ and $\sum_\mu\epsilon_{L,\mu}\
 $$
 \epsilon_L^\mu=\frac{p^\mu}{M}+\eta^\mu ,
 \qquad
-\eta^0=-\eta^3=-\frac{E-\lvert\vec p\rvert}{M} ,
+\eta^0=-\frac{E-\lvert\vec p\rvert}{M} ,
+\qquad
+\eta^3=+\frac{E-\lvert\vec p\rvert}{M} ,
 \qquad
 \frac{E-\lvert\vec p\rvert}{E}=\frac{M^2}{E\left(E+\lvert\vec p\rvert\right)}\to\frac{M^2}{2E^2} .
 $$
@@ -315,7 +317,7 @@ With the scalar present, the $s/v^2$ growth cancels against the scalar exchange 
 
 ## The Numbers
 
-**The masses used.** $M_W=80.377$ GeV and $M_Z=91.1876$ GeV. The tree-level values from the couplings in article 5 are $80.24$ and $91.51$; the difference is the radiative correction and is not a gauge effect.
+**The masses used.** $M_W=80.377$ GeV and $M_Z=91.1876$ GeV. The tree-level values from the couplings of article 4, $g=0.65174$ and $g_{\mathrm Y}=0.3574$, are $80.24$ and $91.51$ GeV; the difference is the radiative correction and is not a gauge effect.
 
 **The Goldstone and ghost masses at the three standard gauges.**
 
@@ -333,7 +335,9 @@ With the scalar present, the $s/v^2$ growth cancels against the scalar exchange 
 
 ## What the Framework Supplies
 
-**The row the agenda calls a known route, and its status.** The research agenda's table classifies the gauge-fixing principle as *known route in standard field theory, no framework realisation*, with the settling computation named as "reproduce the Faddeev–Popov or BV procedure in the algebra". That computation is in the corpus: *The Yang–Mills Path Integral and the Faddeev–Popov Procedure* derives the determinant, the ghost action and the gauge-fixed propagator in the algebra, and *BRST Symmetry in Biquaternionic Form* constructs the nilpotent derivation and the gauge-fixing fermion. **The row is discharged at the level of the procedure.** The agenda's table predates the two companion articles and its entry for this row should now be read as discharged, in the sense just stated and not beyond it. What this article adds is the electroweak completion of the procedure, and the completion's status is different.
+**The row the agenda calls a known route, and its status.** *The Standard Model under the Biquaternion Framework: A Research Agenda* classifies the gauge-fixing principle as *known route in standard field theory, no framework realisation*, with the settling computation named as "reproduce the Faddeev–Popov or BV procedure in the algebra, or prove a no-go". That computation is in the corpus: *The Yang–Mills Path Integral and the Faddeev–Popov Procedure* derives the determinant, the ghost action and the gauge-fixed propagator in the algebra, and *BRST Symmetry in Biquaternionic Form* constructs the nilpotent derivation and the gauge-fixing fermion. **The row is discharged at the level of the procedure**, and the agenda's table predates the two companion articles.
+
+**Two agendas disagree about this row, and the disagreement is worth naming.** *Electroweak Theory under the Biquaternion Framework: A Research Agenda* carries the same item in its own ledger as **no route yet**, with the settling item "a biquaternionic gauge-fixing functional selecting a section, or a proof that physical content is orbit-invariant". Both labels were defensible when they were written and only one question separates them: the standard-model agenda asks whether a route exists, the electroweak one asks whether a section has been selected. After the two companion articles a route exists and a procedure is realised, so the first label is now stale; but no algebraic section has been produced, and this article supplies only the abelian half of the second — §*What the Parameter Cannot Change* shows the drift test, which is a statement about amplitudes and not a construction of a section. The honest reading is therefore three-part: the procedure is discharged, the label in the standard-model ledger is stale, and the label in the electroweak ledger still stands in the part that matters to that article. What this article adds is the electroweak completion of the procedure, and the completion's status is different.
 
 **What the framework supplies here, item by item.**
 
@@ -359,13 +363,13 @@ The $R_\xi$ functional $G^a=\partial\cdot W^a-\zeta M_W\xi^a$, with the analogou
 
 The ghosts come from the Faddeev–Popov determinant, have the mass of the Goldstone of their direction, and carry three weights: $\det M$ in the measure, $-1$ per closed loop, and ghost number $\pm1$. The neutral ghost mass matrix has determinant zero for every $\zeta$, and the zero eigenvalue is the photon's ghost, which exists because $\mathrm{U}(1)_{\mathrm{em}}$ is unbroken.
 
-One propagator formula covers the family, $D_{\mu\nu}=\frac{P_{\mu\nu}}{\Pi-M^2}+\frac{\zeta L_{\mu\nu}}{\Pi-\zeta M^2}$, verified against the kernel $K_{\mu\nu}=(\Pi-M^2)\delta_{\mu\nu}+(\frac{1}{\zeta}-1)p_\mu p_\nu$ to $2.2\times10^{-16}$. It gives the Feynman–'t Hooft propagator at $\zeta=1$, the transverse-only propagator at $\zeta=0$, and the Proca propagator at $\zeta\to\infty$, the last to the order of the off-shellness.
+One propagator formula covers the family, $D_{\mu\nu}=\frac{P_{\mu\nu}}{\Pi-M^2}+\frac{\zeta L_{\mu\nu}}{\Pi-\zeta M^2}$, verified against the kernel $K_{\mu\nu}=(\Pi-M^2)\delta_{\mu\nu}+(1-\frac{1}{\zeta})p_\mu p_\nu$ to $2.2\times10^{-16}$. It gives the Feynman–'t Hooft propagator at $\zeta=1$, the transverse-only propagator at $\zeta=0$, and the Proca propagator at $\zeta\to\infty$, the last to order $1/\zeta$ and algebraically exact in the limit.
 
 The parameter changes nothing observable: the residue at the physical pole is $P_{\mu\nu}$ and carries no $\zeta$, and a conserved current is blind to the parameter, drifting by $4.5\times10^{-16}$ across five gauges while a non-conserved current drifts by $0.78$. Every $R_\xi$ propagator falls as $1/\Pi$, so the superficial degree of divergence is bounded by four independently of the number of loops; the unitary gauge loses that property, which is why renormalisability is proved in the family and not at its endpoint.
 
 The equivalence theorem follows from $\epsilon_L^\mu=p^\mu/M+O(M^2/E^2)$, since $p^\mu/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.
 
-The framework discharges the gauge-fixing row of its own agenda at the level of the procedure, and transcribes the electroweak instantiation, which needs the group, the representation and the scalar that the agenda classifies as having no route yet. The parameter $\zeta$ is a coordinate and is not derivable in principle.
+The framework discharges the gauge-fixing row of the standard-model agenda at the level of the procedure — and not the electroweak agenda's stronger item, which asks for a section rather than a route — and transcribes the electroweak instantiation, which needs the group, the representation and the scalar that both agendas classify as unreached. The parameter $\zeta$ is a coordinate and is not derivable in principle.
 
 ## Summary of Notation
 
@@ -373,14 +377,20 @@ The framework discharges the gauge-fixing row of its own agenda at the level of 
 |---|---|
 | $\zeta$ | The gauge parameter; $\xi$ of the literature |
 | $\zeta_A$ | The gauge parameter of the photon's functional |
-| $\xi^a$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4 |
+| $\xi^a$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
+| $W^a_\mu$, $Z_\mu$, $A_\mu$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
+| $\varphi$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
+| $v$ | $246.22$ GeV, the vacuum expectation value, entering $M_W=gv/2$ |
+| $g$, $g_{\mathrm Y}$ | The $SU(2)_L$ and $\mathrm U(1)_{\mathrm Y}$ couplings |
+| $M_W$, $M_Z$, $M_H$ | $80.377$, $91.1876$ and $125.09$ GeV, the measured boson masses |
+| $M_Y$ | $g_{\mathrm Y}v/2$, the hypercharge partner in the unbroken-basis functional |
 | $G^a$, $G^Z$, $G^A$ | The gauge-fixing functionals |
 | $B^a$ | The Nakanishi–Lautrup auxiliary field |
 | $\tilde\Xi_{\mathrm{sp}}$ | The gauge-fixing fermion, $s$-exact |
 | $\Pi$ | $-\sum_\mu p_\mu p_\mu$, positive, equal to $M^2$ on shell |
 | $P_{\mu\nu}$, $L_{\mu\nu}$ | Transverse and longitudinal projectors, traces $3$ and $1$ |
 | $D_{\mu\nu}(p)$ | The gauge-field propagator |
-| $K_{\mu\nu}$ | Its kernel, $(\Pi-M^2)\delta_{\mu\nu}+(\tfrac1\zeta-1)p_\mu p_\nu$ |
+| $K_{\mu\nu}$ | Its kernel, $(\Pi-M^2)\delta_{\mu\nu}+(1-\tfrac1\zeta)p_\mu p_\nu$ |
 | $M_{\xi}$ | $\sqrt{\zeta}\,M$, the Goldstone mass |
 | $M_{\mathrm{gh}}$ | The ghost mass, equal to $M_\xi$ |
 | $M_a$ | The Goldstone mass of direction $a$, entering the ghost operator |
@@ -402,4 +412,5 @@ The framework discharges the gauge-fixing row of its own agenda at the level of 
 - [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The gauge-fixed action as the sum this article separates.
 - [The Standard Model under the Biquaternion Framework: A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The three-way classification the last section uses, and the gauge-fixing row it discharges.
 
-The companions of this series not yet in the corpus — the QCD Lagrangian and the precision electroweak observables, where the $\zeta$-dependent cancellations are used at two loops — are named in the sections above and are linked when they are written.
+- [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). The two-point functions built from the projectors of §*The Propagators and the Three Limits*, and the gauge invariance that fixes their transverse structure.
+- [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). The same functional in the unbroken non-abelian case, where the coupling is in the derivative and the ghost sector is the whole of the difference between the classical and the quantum action.

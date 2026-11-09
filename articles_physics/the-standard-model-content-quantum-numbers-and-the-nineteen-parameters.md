@@ -185,7 +185,7 @@ The three Goldstone fields are the two real components of $\varphi^+$ and the im
 | 7 | $m_c$ | charm quark mass | $1.27$ GeV | $\overline{\mathrm{MS}}$, $\mu=m_c$ |
 | 8 | $m_b$ | bottom quark mass | $4.18$ GeV | $\overline{\mathrm{MS}}$, $\mu=m_b$ |
 | 9 | $m_t$ | top quark mass | $172.69$ GeV | on shell, direct measurement |
-| 10 | $\theta_{12}$ | CKM angle | $13.1^\circ$ | global fit |
+| 10 | $\theta_{12}$ | CKM angle | $13.0^\circ$ | global fit |
 | 11 | $\theta_{23}$ | CKM angle | $2.4^\circ$ | global fit |
 | 12 | $\theta_{13}$ | CKM angle | $0.2^\circ$ | global fit |
 | 13 | $\delta$ | CKM phase | $\simeq1.14$ rad, $65^\circ$ | global fit |

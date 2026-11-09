@@ -98,7 +98,7 @@ $$
 
 by the Cauchy–Schwarz inequality, with equality exactly when $r$ and $\ell$ are proportional. The factor is therefore one precisely in the normal case, and it grows as the two bases turn away from each other. It is the standard measure of the excess of a non-normal mode over an orthogonal one.
 
-**Proposition (the Petermann factor is the norm deficit).** Let $B\neq0$, let $\rho=\vec Q/B$, and put $\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$. Then the two projectors have the same factor,
+**Proposition (the Petermann factor is the norm deficit).** Let $B\neq0$, let $\rho=\vec Q/B$, and put $\lVert\rho\rVert^2=\sum_\eta\lvert\rho_\eta\rvert^2$. Then the two projectors have the same factor,
 
 $$
 \kappa_+=\kappa_-=\frac{1+\lVert\rho\rVert^2}{2}=1+\frac{\lVert\rho\rVert^2-1}{2}.
@@ -111,11 +111,11 @@ $$
 =\tfrac14\left(e_t\mp i(\rho+\bar\rho)-\bar\rho\rho\right).
 $$
 
-The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{k,l}\bar\rho_k\rho_le_ke_l$, and only $k=l$ contributes to the scalar part, with $e_k^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_k\lvert\rho_k\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_\pm^*\tilde\Pi_\pm)=\tfrac14(1+\lVert\rho\rVert^2)$ for either sign. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence the common $\kappa=2\operatorname{Sc}(\tilde\Pi_\pm^*\tilde\Pi_\pm)=\tfrac12(1+\lVert\rho\rVert^2)$.
+The term $\rho+\bar\rho$ is a vector, of zero scalar part. For the last term, $\bar\rho\rho=\sum_{k,l}\bar\rho_\eta\rho_le_ke_l$, and only $k=l$ contributes to the scalar part, with $e_k^2=-e_t$; hence $\operatorname{Sc}(\bar\rho\rho)=-\sum_k\lvert\rho_\eta\rvert^2=-\lVert\rho\rVert^2$. Therefore $\operatorname{Sc}(\tilde\Pi_\pm^*\tilde\Pi_\pm)=\tfrac14(1+\lVert\rho\rVert^2)$ for either sign. The functional $2\operatorname{Sc}$ is the trace of $\mathbb{B}$, since $2\operatorname{Sc}(XY)=2\operatorname{Sc}(YX)$ and $2\operatorname{Sc}(e_t)=2$; hence the common $\kappa=2\operatorname{Sc}(\tilde\Pi_\pm^*\tilde\Pi_\pm)=\tfrac12(1+\lVert\rho\rVert^2)$.
 
 The excess Petermann factor is therefore half the norm deficit $\lVert\rho\rVert^2-1$ of *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*Normality, Unitarity and the Hermitian Norm of the Flow*. The same distance from normality is read twice: as the amplitude $\lVert\rho\rVert^2$ of the oscillating term in the flow, and as the factor $(1+\lVert\rho\rVert^2)/2$ of the projectors. The factor is one exactly when $\lVert\rho\rVert^2=1$, that is exactly when $\rho$ is real, which is the normality criterion of *The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*. It is a factor, not a rate: it does not set the growth of the flow, which is carried by $Q_t$ and $B$.
 
-**Corollary (the factor in coordinates, and the Gram form).** Put $\lVert\vec Q\rVert^2=\sum_k\lvert Q_k\rvert^2$, the Euclidean square of the complex vector, and let $\lvert B^2\rvert$ be the modulus of the complex number $B^2$. Since $\rho_k=Q_k/B$, one has $\lVert\rho\rVert^2=\lVert\vec Q\rVert^2/\lvert B^2\rvert$, and therefore
+**Corollary (the factor in coordinates, and the Gram form).** Put $\lVert\vec Q\rVert^2=\sum_\eta\lvert Q_\eta\rvert^2$, the Euclidean square of the complex vector, and let $\lvert B^2\rvert$ be the modulus of the complex number $B^2$. Since $\rho_\eta=Q_\eta/B$, one has $\lVert\rho\rVert^2=\lVert\vec Q\rVert^2/\lvert B^2\rvert$, and therefore
 
 $$
 \kappa=\frac{\lVert\vec Q\rVert^2+\lvert B^2\rvert}{2\lvert B^2\rvert},
@@ -123,7 +123,7 @@ $$
 \kappa-1=\frac{\lVert\vec Q\rVert^2-\lvert B^2\rvert}{2\lvert B^2\rvert}.
 $$
 
-Hence $\kappa\ge1$ is the triangle inequality $\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the $Q_k^2$ have one argument, that is, exactly when $\rho$ is real. This is a second proof of the bound, independent of Cauchy–Schwarz.
+Hence $\kappa\ge1$ is the triangle inequality $\lvert\sum_\eta Q_\eta^2\rvert\le\sum_\eta\lvert Q_\eta\rvert^2$, with equality exactly when the $Q_\eta^2$ have one argument, that is, exactly when $\rho$ is real. This is a second proof of the bound, independent of Cauchy–Schwarz.
 
 The cross term is the same number. From $\tilde\Pi_+^*\tilde\Pi_-=\tfrac14\bigl(e_t+i(\rho-\bar\rho)+\bar\rho\rho\bigr)$ and $\operatorname{Sc}(\bar\rho\rho)=-\lVert\rho\rVert^2$,
 
@@ -241,8 +241,8 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 | --- | --- |
 | $\tilde Q=Q_te_t+\vec Q$ | a general biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^3$ |
 | $B^2=(\vec Q,\vec Q)$ | the complex norm squared of the vector part |
-| $\rho=\vec Q/B$ | the root of $-1$ supplied by the element, $\lVert\rho\rVert^2=\sum_k\lvert\rho_k\rvert^2$ |
-| $\lVert\vec Q\rVert^2=\sum_k\lvert Q_k\rvert^2$ | the Euclidean square of the complex vector part |
+| $\rho=\vec Q/B$ | the root of $-1$ supplied by the element, $\lVert\rho\rVert^2=\sum_\eta\lvert\rho_\eta\rvert^2$ |
+| $\lVert\vec Q\rVert^2=\sum_\eta\lvert Q_\eta\rvert^2$ | the Euclidean square of the complex vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, $\vec{Ζ}=-i\vec Q/B$ |
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ matrix image |

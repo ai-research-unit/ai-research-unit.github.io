@@ -116,7 +116,7 @@ $$
 =i\big[\log\tilde{Ϛ}_{\Psi},\tilde Q_2\big]
 =-i\big[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_2\big],
 $$
-and it is worth recording where each object lives. The direction $\gamma=\vec u_r\cdot\mathbf e$ is a sum of the anti-Hermitian basis elements $\vec e_k$ and therefore lies in the material sector $\mathbb{B}_{\Phi}$. The modular Hamiltonian
+and it is worth recording where each object lives. The direction $\gamma=\vec u_r\cdot\mathbf e$ is a sum of the anti-Hermitian basis elements $\vec e_\eta$ and therefore lies in the material sector $\mathbb{B}_{\Phi}$. The modular Hamiltonian
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}
 =\tfrac12\log\frac{4}{1-r^2}\,e_t-i\,b\,\gamma
@@ -232,7 +232,7 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |

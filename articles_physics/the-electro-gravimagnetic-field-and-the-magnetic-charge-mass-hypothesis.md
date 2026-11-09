@@ -365,7 +365,7 @@ For a Gaussian mass density of unit total mass, the Newtonian potential $\xi_{\m
 Summing the second-law equations over $M$ interacting fields cancels the force terms pairwise, because each pair contributes a force and its reaction. The total charge–current therefore satisfies
 
 $$
-D^-\Big(\sum_{k=1}^{M}\tilde J_{\Phi,\mathrm{eg},k}\Big) \equiv 0,
+D^-\Big(\sum_{k=1}^{M}\tilde J_{\Phi,\mathrm{eg},\eta}\Big) \equiv 0,
 $$
 
 so the **combined field is free**: all forces are internal, exactly as in the mechanics of interacting bodies. The author calls this the law of the single field.
@@ -373,11 +373,11 @@ so the **combined field is free**: all forces are internal, exactly as in the me
 The energy–momentum of the combined field separates the same way. With the energy–momentum biquaternion of each field written $\tilde{\Pi}_k$,
 
 $$
-\tilde{\Pi} = \sum_{k}\tilde{\Pi}_k + \delta\tilde{\Pi},
+\tilde{\Pi} = \sum_{\eta}\tilde{\Pi}_k + \delta\tilde{\Pi},
 \qquad
 \delta\tilde{\Pi} = \sum_{k\ne l}\tilde{\Pi}_{kl},
 \qquad
-\tilde{\Pi}_{kl} = \tfrac{1}{2}\left(\tilde F_k\circ\tilde F_l^* + \tilde F_l\circ\tilde F_k^*\right),
+\tilde{\Pi}_{kl} = \tfrac{1}{2}\left(\tilde F_\eta\circ\tilde F_l^* + \tilde F_l\circ\tilde F_\eta^*\right),
 $$
 
 where $\tilde{\Pi}_{kl}$ is the **interaction energy–momentum** of the pair and the star is the source's conjugation, defined in the 2007 paper by $F^* = \bar f - \bar F$ (the corpus's ${}^{*}$, not the coefficient conjugate of the energy display; see the notational warning above). Its scalar part $\delta W$ is the interaction energy and its vector part the interaction momentum, tied to the change of the Poynting vector. Since the total energy $W$ is real and non-negative, $\delta W > 0$ is energy released and $\delta W < 0$ is energy absorbed in the interaction, and $\delta\tilde\Pi = 0$ means the pair conserves energy–momentum exactly. This is a clean statement of "interaction = exchange of energy–momentum between fields" in a single algebraic form, and it is the programme's most transferable contribution to the corpus's conservation-law material.
@@ -385,25 +385,25 @@ where $\tilde{\Pi}_{kl}$ is the **interaction energy–momentum** of the pair an
 **The 2009 revision moves the same construction from the strengths to the sources.** The 2007 paper forms the interaction energy–momentum from the field strengths, as above; the 2009 paper keeps the same definition and applies it to the charge–current biquaternions instead,
 
 $$
-\tilde{\Sigma}_{\Psi,kl} = \tfrac{1}{2}\left(\tilde J_{\Phi,\mathrm{eg},k}\circ\tilde J_{\Phi,\mathrm{eg},l}^* + \tilde J_{\Phi,\mathrm{eg},l}\circ\tilde J_{\Phi,\mathrm{eg},k}^*\right),
+\tilde{\Sigma}_{\Psi,kl} = \tfrac{1}{2}\left(\tilde J_{\Phi,\mathrm{eg},\eta}\circ\tilde J_{\Phi,\mathrm{eg},l}^* + \tilde J_{\Phi,\mathrm{eg},l}\circ\tilde J_{\Phi,\mathrm{eg},\eta}^*\right),
 \qquad
-\tilde{\Sigma}_{\Psi} = \sum_k\tilde{\Sigma}_{\Psi,k} + \sum_{k\ne l}\tilde{\Sigma}_{\Psi,kl},
+\tilde{\Sigma}_{\Psi} = \sum_\eta\tilde{\Sigma}_{\Psi,\eta} + \sum_{k\ne l}\tilde{\Sigma}_{\Psi,kl},
 $$
 
 so that the total energy–momentum of the combined source separates into per-field pieces and pair terms.
 
 $$
 \tilde{\Sigma}_{\Psi,kl}
-= \tfrac{1}{2}\left(\rho_k\rho_l^* + \rho_l\rho_k^*\right)
-- \tfrac{1}{2}\left[\left(\vec J_k,\vec J_l^*\right) + \left(\vec J_l,\vec J_k^*\right)\right]
-+ \tfrac{1}{2}i\left(\rho_k\vec J_l^* + \rho_l\vec J_k^* - \rho_l^*\vec J_k - \rho_k^*\vec J_l\right)
-+ \tfrac{1}{2}\left(\left[\vec J_k,\vec J_l^*\right] + \left[\vec J_l,\vec J_k^*\right]\right),
+= \tfrac{1}{2}\left(\rho_\eta\rho_l^* + \rho_l\rho_\eta^*\right)
+- \tfrac{1}{2}\left[\left(\vec J_\eta,\vec J_l^*\right) + \left(\vec J_l,\vec J_\eta^*\right)\right]
++ \tfrac{1}{2}i\left(\rho_\eta\vec J_l^* + \rho_l\vec J_\eta^* - \rho_l^*\vec J_\eta - \rho_\eta^*\vec J_l\right)
++ \tfrac{1}{2}\left(\left[\vec J_\eta,\vec J_l^*\right] + \left[\vec J_l,\vec J_\eta^*\right]\right),
 $$
 
 and it has a simplifying property worth recording: **for a purely electric charge and current, $\rho_H = 0$ and $\vec j_H = 0$ in both fields, the vector part vanishes identically and the pair term is the central real scalar**
 
 $$
-\boxed{\;\tilde{\Sigma}_{\Psi,kl} = \rho_k\rho_l - \left(\vec J_k,\vec J_l\right)\;}
+\boxed{\;\tilde{\Sigma}_{\Psi,kl} = \rho_\eta\rho_l - \left(\vec J_\eta,\vec J_l\right)\;}
 $$
 
 the Minkowski pairing of the two charge–current four-vectors under the signature $(+,-,-,-)$ — the same bilinear pairing that the algebra's pseudonorm is built from. The interaction energy of a pair of sources is thus the pairing of the sources, with the central scalar that the algebra's own bilinear form supplies and no new object. With magnetic charge present the cancellation fails and the pair term carries a vector part; the corpus records the general form above and the central special case, which was verified exactly.
@@ -444,9 +444,9 @@ The corpus's own conserved currents and their integral forms are in *Stress–En
 The 2009 paper reads its own second law as a momentum balance of a continuum. It introduces a **stress pseudotensor** for each half of the field,
 
 $$
-\sigma^{H}_{ik} = -\,\kappa\,\frac{\rho_H}{\sqrt{\mu}}\,\delta_{ik} + \sqrt{\mu}\,\vec j^E_l\,\epsilon_{ikl},
+\sigma^{H}_{ik} = -\,\kappa\,\frac{\rho_H}{\sqrt{\mu}}\,\delta_{i\eta} + \sqrt{\mu}\,\vec j^E_l\,\epsilon_{i\eta l},
 \qquad
-\sigma^{E}_{ik} = -\,\kappa\,\frac{\rho_E}{\sqrt{\epsilon}}\,\delta_{ik} - \sqrt{\epsilon}\,\vec j^H_l\,\epsilon_{ikl},
+\sigma^{E}_{ik} = -\,\kappa\,\frac{\rho_E}{\sqrt{\epsilon}}\,\delta_{i\eta} - \sqrt{\epsilon}\,\vec j^H_l\,\epsilon_{i\eta l},
 \qquad i,k,l = 1,2,3,
 $$
 
@@ -463,7 +463,7 @@ with the density of mass forces $F^H$ the four-term half of the power–force bi
 The first is that it is **not symmetric**. The isotropic term is symmetric, and the antisymmetric part is entirely the current term,
 
 $$
-\tfrac{1}{2}\left(\sigma^{H}_{ik} - \sigma^{H}_{ki}\right) = \sqrt{\mu}\,\vec j^E_l\,\epsilon_{ikl},
+\tfrac{1}{2}\left(\sigma^{H}_{ik} - \sigma^{H}_{ki}\right) = \sqrt{\mu}\,\vec j^E_l\,\epsilon_{i\eta l},
 $$
 
 so the asymmetry is dual to a vector: the paper records only that the object is the analogue of the stress tensor of a liquid and that the traditional index symmetry $\sigma_{ik} \ne \sigma_{ki}$ fails, and the continuum-mechanics interpretation of the antisymmetric part is the corpus's — in a medium, an antisymmetric stress is the **torque (couple) density**, and a pseudotensor of this shape is the stress of a medium with couple stresses rather than of a simple fluid. The corpus's own electromagnetic stress–energy tensor, by contrast, is the *improved* one and is symmetric and traceless, so this object is not that tensor and cannot be obtained from it: it is a medium stress built from the charges and currents rather than from the field strengths, and the antisymmetric piece is what the improvement discards.
@@ -591,7 +591,7 @@ The programme's later formulation goes further and reads the **monochromatic** s
 
 ## Summary
 
-The programme recorded here reads the field strength of the biquaternionic Maxwell equation as an electro-gravimagnetic field, under a hypothesis of its author: that magnetic charge density and gravitational mass density are the same thing. The interpretation gives the potential part of $\vec H$ to gravity and its solenoidal part to magnetism, and it is a hypothesis, not a consequence of the algebra. On that hypothesis the programme constructs a law structure: mutual complex gradients $D^\pm = \partial/\partial \tau \pm i\nabla$, which are the corpus gradient in the $i r'_t$ convention up to $i$ and a sign; field analogues of Newton's three laws, with a free field whose charges disperse, an interaction equation whose right side is the force from the other field, and a third law whose scalar part equates two power densities and is compared to Betti's reciprocity identity; a thermodynamic analogue for the current field with density $\mathcal{Q} = \tfrac{1}{2}\|\vec J\|^2$ and flux $\vec P_J = \tfrac{1}{2}i\,\vec J\times\vec J^*$, which in the free field becomes the decay $\partial/\partial \tau \mathcal{Q} = -\mathcal U$ with the source's asserted $\mathcal U \geq 0$; and a law of the single field, in which the sum of interacting fields is free and their interaction energy–momentum is the pairwise sum $\tilde{\Pi}_{kl} = \tfrac{1}{2}(\tilde F_k\circ\tilde F_l^* + \tilde F_l\circ\tilde F_k^*)$ (star = the source's conjugation $F^* = \bar f - \bar F$, the corpus's ${}^{*}$; the energy display's coefficient conjugate is a second use of the same symbol, and the two conventions must not be mixed). The 2009 revision moves that construction to the sources, $\tilde{\Sigma}_{\Psi,kl} = \tfrac{1}{2}(\tilde J_{\Phi,\mathrm{eg},k}\circ\tilde J_{\Phi,\mathrm{eg},l}^* + \tilde J_{\Phi,\mathrm{eg},l}\circ\tilde J_{\Phi,\mathrm{eg},k}^*)$, where for a purely electric charge and current the pair term collapses to the central scalar $\rho_k\rho_l - (\vec J_k,\vec J_l)$, the Minkowski pairing of the two four-currents. The charge–current field also has shock waves, generally non-transverse, with the longitudinal current jump equal to the charge jump; and its solution theory is short — the first-order operator $D^\pm$ is inverted by $D^\mp$ followed by convolution with the simple layer on the light cone, and the interaction becomes a system of integral equations. The 2009 paper's continuum reading of the second law, with its non-symmetric stress pseudotensor whose antisymmetric part is dual to the electric current, is recorded with its structure but not with its coefficients, which do not close.
+The programme recorded here reads the field strength of the biquaternionic Maxwell equation as an electro-gravimagnetic field, under a hypothesis of its author: that magnetic charge density and gravitational mass density are the same thing. The interpretation gives the potential part of $\vec H$ to gravity and its solenoidal part to magnetism, and it is a hypothesis, not a consequence of the algebra. On that hypothesis the programme constructs a law structure: mutual complex gradients $D^\pm = \partial/\partial \tau \pm i\nabla$, which are the corpus gradient in the $i r'_t$ convention up to $i$ and a sign; field analogues of Newton's three laws, with a free field whose charges disperse, an interaction equation whose right side is the force from the other field, and a third law whose scalar part equates two power densities and is compared to Betti's reciprocity identity; a thermodynamic analogue for the current field with density $\mathcal{Q} = \tfrac{1}{2}\|\vec J\|^2$ and flux $\vec P_J = \tfrac{1}{2}i\,\vec J\times\vec J^*$, which in the free field becomes the decay $\partial/\partial \tau \mathcal{Q} = -\mathcal U$ with the source's asserted $\mathcal U \geq 0$; and a law of the single field, in which the sum of interacting fields is free and their interaction energy–momentum is the pairwise sum $\tilde{\Pi}_{kl} = \tfrac{1}{2}(\tilde F_\eta\circ\tilde F_l^* + \tilde F_l\circ\tilde F_\eta^*)$ (star = the source's conjugation $F^* = \bar f - \bar F$, the corpus's ${}^{*}$; the energy display's coefficient conjugate is a second use of the same symbol, and the two conventions must not be mixed). The 2009 revision moves that construction to the sources, $\tilde{\Sigma}_{\Psi,kl} = \tfrac{1}{2}(\tilde J_{\Phi,\mathrm{eg},\eta}\circ\tilde J_{\Phi,\mathrm{eg},l}^* + \tilde J_{\Phi,\mathrm{eg},l}\circ\tilde J_{\Phi,\mathrm{eg},\eta}^*)$, where for a purely electric charge and current the pair term collapses to the central scalar $\rho_\eta\rho_l - (\vec J_\eta,\vec J_l)$, the Minkowski pairing of the two four-currents. The charge–current field also has shock waves, generally non-transverse, with the longitudinal current jump equal to the charge jump; and its solution theory is short — the first-order operator $D^\pm$ is inverted by $D^\mp$ followed by convolution with the simple layer on the light cone, and the interaction becomes a system of integral equations. The 2009 paper's continuum reading of the second law, with its non-symmetric stress pseudotensor whose antisymmetric part is dual to the electric current, is recorded with its structure but not with its coefficients, which do not close.
 
 The 2017 paper completes the programme's relativistic treatment on the equation side. It proves the charges–currents interaction system invariant under the Poincaré–Lorentz group and derives the four-vector transformation of the charge–current and of the power–force biquaternion, from which the electric and gravimagnetic density and current formulae follow. The invariance is of the *equations* and is compatible with the non-invariance of the *closedness condition* recorded in the revision, since the two are statements about different objects; whether the invariance theorem is meant for the modified, open system the paper does not say, and the corpus leaves the question open. The same paper imposes the Lorentz condition on the potential rather than treating it as a gauge choice, a difference of logical role from the corpus's own Maxwell article that is recorded above and not resolved.
 

@@ -30,7 +30,7 @@ There are two senses of "first-order root", and the article separates them. A **
 
 Three results:
 
-- **The root is a pair, not an operator.** The product $\tilde\nabla\tilde\nabla^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\partial^2/\partial r'_t\,\partial q_k$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
+- **The root is a pair, not an operator.** The product $\tilde\nabla\tilde\nabla^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
 - **The free equation is first order in one field.** $\tilde\nabla\tilde{Ξ}=0$ implies $\Box\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.
 - **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$.
 
@@ -38,7 +38,7 @@ The four components are the four coefficients of a biquaternion. The count of si
 
 ## The Equation
 
-$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_k$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_k=r_k$. Derived from that relation, its Lorentz form is
+$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_\eta$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_\eta=r_\eta$. Derived from that relation, its Lorentz form is
 
 $$
 \Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta ,
@@ -55,16 +55,16 @@ Throughout, $c$ is the speed of light in the medium and $\frac{m\,c}{k_m}$ the r
 The first-order operator of the series is the gradient, and it is not a root. The reason is visible in its square. Because the partial derivatives commute,
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\,\partial R_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\,\partial R_\eta},
 $$
 
 and on the material sector, where $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the same operator is
 
 $$
-\tilde\nabla^2=\Box-2\Delta-2i\sum_k\vec e_k\frac{\partial^2}{\partial r'_t\,\partial q_k}.
+\tilde\nabla^2=\Box-2\Delta-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial q_\eta}.
 $$
 
-The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.
+The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_\eta$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.
 
 The product with the conjugate is scalar. Read on the units, the two operators differ only by the sign of the three spatial terms, and the product is central because $\varepsilon_\mu e_\mu^2=\varepsilon_\mu^2e_t=e_t$ for every $\mu$:
 
@@ -74,10 +74,10 @@ $$
 
 ### The symbol and the mass shell
 
-On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_k\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
+On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_\eta\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_k\vec e_k k_k,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_\eta\vec e_\eta k_k,
 \qquad
 (-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 ,
 $$
@@ -195,7 +195,7 @@ The factorisation is not available on one field, and the reason is the same vect
 $$
 \left(\tilde\nabla^{\natural}-k_m\right)\left(\tilde\nabla+k_m\right)
 =\Box+k_m\left(\tilde\nabla^{\natural}-\tilde\nabla\right)-k_m^{2}
-=\Box-2k_m\sum_k\vec e_k\frac{\partial}{\partial R_k}-k_m^{2} ,
+=\Box-2k_m\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta}-k_m^{2} ,
 $$
 
 which is not scalar. The two cross terms do not cancel, because they are different operators. Only the pair removes them, by substituting one member into the other.

@@ -21,7 +21,7 @@ The results used are these.
 
 ### The Space
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight, on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic. A general element is
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight, on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic. A general element is
 
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
@@ -71,9 +71,9 @@ Four maps act on the algebra: the complex conjugation $\bar{\cdot}$, the quatern
 | Map | Formula | $\mathbb{C}$-linearity | What it touches | Fixed space | Anti-fixed space |
 | --- | --- | --- | --- | --- | --- |
 | $\bar{\cdot}$ | $Q_\mu\mapsto\bar Q_\mu$ | antilinear | the complex coefficients | $\mathbb{B}_{H}$ | $\mathbb{B}_{iH}$ |
-| ${}^{\natural}$ | $Q_te_t-\sum_k Q_k\vec e_k$ | linear | the quaternion directions | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
-| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_k \bar Q_k\vec e_k$ | antilinear | both | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
-| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_k \bar Q_k\vec e_k$ | antilinear | both, with a sign | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
+| ${}^{\natural}$ | $Q_te_t-\sum_\eta Q_\eta\vec e_\eta$ | linear | the quaternion directions | $\mathbb{B}_{C}$ | $\mathbb{B}_{V}$ |
+| ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | $\bar Q_te_t-\sum_\eta \bar Q_\eta\vec e_\eta$ | antilinear | both | $\mathbb{B}_{\Psi}$ | $\mathbb{B}_{\Phi}$ |
+| $\flat=-{}^{*}$ | $-\bar Q_te_t+\sum_\eta \bar Q_\eta\vec e_\eta$ | antilinear | both, with a sign | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 
 Each map is an involution, so each cuts the algebra into a fixed space and an anti-fixed space. The six distinct spaces so obtained are the six remarkable subspaces. Each of the four maps preserves every remarkable subspace: no conjugation carries an element out of a subspace into another one.
 
@@ -225,7 +225,7 @@ The first four rows are the group; the fifth is the fourth non-trivial sign patt
 
 **Three corrections belong with the table.** First, $\flat$ is the fourth non-trivial **sign pattern**, not a fourth conjugation: it differs from ${}^{*}$ by the central sign, and the group has four elements and not five. Second, $\flat$ carries the **shape** of the charge-conjugation pairing. The operation called charge conjugation belongs to the Dirac module; the twisted Clifford-algebra map is its counterpart, and the module real structure is $\bar{\cdot}$. The four levels of the name are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. Third, parity exchanges the two conjugate spinor modules $S$ and $\bar S$, so the character label and the chirality action are not independent.
 
-**The second dictionary.** The Clifford-algebra literature attaches the names to the same maps in the transpose order: with the generators $i\vec e_k$, the grade involution is $\bar{\cdot}$, the reversion is ${}^{*}$ and the Clifford conjugation is ${}^{\natural}$, so that dictionary reads $P=\bar{\cdot}$, $T={}^{*}$ and $PT={}^{\natural}$. Both dictionaries are labelled and neither is proved. The table is the fact; the naming is the interpretation, and the interpretation above is the one whose parity fixes time and negates space.
+**The second dictionary.** The Clifford-algebra literature attaches the names to the same maps in the transpose order: with the generators $i\vec e_\eta$, the grade involution is $\bar{\cdot}$, the reversion is ${}^{*}$ and the Clifford conjugation is ${}^{\natural}$, so that dictionary reads $P=\bar{\cdot}$, $T={}^{*}$ and $PT={}^{\natural}$. Both dictionaries are labelled and neither is proved. The table is the fact; the naming is the interpretation, and the interpretation above is the one whose parity fixes time and negates space.
 
 **The boundary.** The assignment is a labelled speculation, not a theorem. It is offered because it makes the four characters carry four physical names and because the linearity of each map matches the linearity of the symmetry it names. It does not derive the discrete symmetries, their conservation or their violation.
 

@@ -83,7 +83,7 @@ $$
 \qquad S(\tilde{Ϛ}_{\Psi,A}) = S(\tilde{Ϛ}_{\Psi,B}) = 1\ \text{bit},
 $$
 
-because the trace of every $i\vec e_k$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
+because the trace of every $i\vec e_\eta$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $\tilde\Pi_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
 
 $$
 \boxed{\;S(\tilde{Ϛ}_{\Psi,AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
@@ -123,7 +123,7 @@ $$
 D(A|B) = I(A:B) - \max_{\vec u} J(A|B)_{\vec u} .
 $$
 
-By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the **quantum-classical states** $\tilde{Ϛ}_{\Psi,AB} = \sum_k p_k\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde{\Pi}_k$.
+By construction $D(A|B)\geq0$, because the measurement defines a channel on $B$ and the data-processing inequality bounds $J$ by $I$. Discord vanishes exactly for the states for which some measurement on $B$ extracts all of the mutual information, i.e. the **quantum-classical states** $\tilde{Ϛ}_{\Psi,AB} = \sum_\eta p_\eta\,\tilde{Ϛ}_{\Psi,A}^{(k)}\otimes\tilde{\Pi}_k$.
 
 ### Asymmetry
 

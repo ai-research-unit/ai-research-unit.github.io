@@ -6,7 +6,7 @@ A bounded source — a charge distribution, a mass distribution, a deformed body
 
 This article develops the multipole expansion in the biquaternion framework and treats the **quadrupole interaction** as the first order above the dipole. The treatment is **non-relativistic** and classical throughout: the sources are at rest or move slowly compared with the speed of light, the fields are computed in the static or quasi-static limit, and neither retardation nor the relativistic multipole structure enters. The relativistic quadrupole is a separate subject.
 
-The biquaternion framework is set in the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, over complex coefficients, and central scalar imaginary $i$, $i^2 = -1$. The material sector is the anti-Hermitian subspace
+The biquaternion framework is set in the algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, over complex coefficients, and central scalar imaginary $i$, $i^2 = -1$. The material sector is the anti-Hermitian subspace
 
 $$
 \mathbb{B}_{\Phi} = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
@@ -356,7 +356,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |

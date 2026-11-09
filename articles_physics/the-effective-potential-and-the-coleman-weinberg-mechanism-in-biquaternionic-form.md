@@ -298,11 +298,11 @@ The loop integral, its regularization and its renormalization are standard and a
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{\nabla} = e_t\,\partial/\partial R_t + \sum_k\,\vec e_k\,\partial/\partial R_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
+| $\tilde{\nabla} = e_t\,\partial/\partial R_t + \sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar |
 | $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J_{\Phi}$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
 | $\delta\tilde{Ξ}$ | Fluctuation about the background, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |

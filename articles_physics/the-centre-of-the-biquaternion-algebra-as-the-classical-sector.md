@@ -31,7 +31,7 @@ Z(\mathbb{B})=\bigl\{\tilde{Q}\in\mathbb{B}:\ \tilde{Q}\tilde{Q}_1=\tilde{Q}_1\t
 $$
 Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_t,\vec e_x,\vec e_y,\vec e_z,i$, an element is central if and only if it commutes with $\vec e_x,\vec e_y,\vec e_z$ and with $i$; commutation with $i$ is automatic because $i$ is central, and commutation with $e_t$ is automatic because $e_t$ is the unit.
 
-**Computation.** Write $\tilde{Q}=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. For $k=1,2,3$,
+**Computation.** Write $\tilde{Q}=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. For $\eta=1,2,3$,
 $$
 [\tilde{Q},\vec e_\mu]=[\vec Q,\vec e_\mu]=2\,\vec Q\times \vec e_\mu ,
 $$

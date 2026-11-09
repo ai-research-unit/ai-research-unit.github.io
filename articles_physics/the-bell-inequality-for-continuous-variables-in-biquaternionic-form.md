@@ -18,7 +18,7 @@ and the sign of the cross term is the point at which the quadrature convention m
 
 **Third, to say honestly what the biquaternion framework does here.** The framework supplies the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$, and the idempotent algebra of the informational sector $\mathbb{B}_{\Psi}$, and a dichotomic observable is a fair translation target for those tools. But the states and observables of the continuous-variable problem are **not elements of $\mathbb{B}$**. A quadrature has continuous spectrum, and no element of $\mathbb{B}\cong M_2(\mathbb{C})$ or of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ has one; a bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$ on an infinite-dimensional module, and the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* already proves that no such pair exists in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The framework can restate the *bound* — which is a fact about $\pm1$ spectra — but it cannot represent the *state*, and it therefore has no natural handle on the continuous-spectrum case. This is recorded below as a gap, not smoothed into an analogy.
 
-The conventions are those of the companion articles: the algebra, the sectors, the units, the trace and the dictionary $\mathsf{M}_2$ are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Matrix Representations Conventions*, and none is restated here. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*, whose image of $i\vec e_k$ is $\sigma_k$. The two-qubit arena of the discrete exercise is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The field-theoretic companion's result on the bosonic obstruction is inherited and used, not rederived.
+The conventions are those of the companion articles: the algebra, the sectors, the units, the trace and the dictionary $\mathsf{M}_2$ are those of *Algebra and Element Conventions*, *Norm and Pairing Conventions* and *Matrix Representations Conventions*, and none is restated here. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*, whose image of $i\vec e_\eta$ is $\sigma_\eta$. The two-qubit arena of the discrete exercise is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The field-theoretic companion's result on the bosonic obstruction is inherited and used, not rederived.
 
 ## Two Inequalities, Not One
 
@@ -252,7 +252,7 @@ well below $2\sqrt{2}$. Different observable families give different boundaries;
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | Complex subspace (complex scalars, centre); real-quaternion subspace |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$ | Trace reading at normalisation (Born rule) |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product arena of the discrete exercise |

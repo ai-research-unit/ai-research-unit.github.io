@@ -233,11 +233,11 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | Symbol | Meaning | Introduced or inherited |
 |---|---|---|
 | $\mathbb{B}$ | $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the biquaternion algebra | inherited |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^2 = -e_t$ | inherited |
-| $i$ | scalar imaginary, commuting with every $\vec e_k$ | inherited |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_\eta^2 = -e_t$ | inherited |
+| $i$ | scalar imaginary, commuting with every $\vec e_\eta$ | inherited |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | informational and material sectors, $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | inherited |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace | inherited |
-| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$ | inherited |
+| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_\eta$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = -\varepsilon_\mu\delta_{\mu\nu}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace reading, a **fibre** trace over $\mathbb{C}^2$ | inherited |

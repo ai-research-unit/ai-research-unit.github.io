@@ -57,7 +57,7 @@ $$
 
 and both signs were recomputed directly from the definition $(\star F)_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ by applying it twice to each of the six basis two-forms. The consequences are the two facts that organise this article.
 
-- **Euclidean.** Because $\star^2=+1$, the projectors $\tfrac12(1\pm\star)$ split the two-forms into a **self-dual** three-dimensional half and an **anti-self-dual** three-dimensional half, both real. The condition $F=\pm\star F$ is a real, first-order, non-trivial condition. In the component description with $F_{4k}=E_k$ and $F_{jk}=\epsilon_{jkl}B_l$ it reads simply
+- **Euclidean.** Because $\star^2=+1$, the projectors $\tfrac12(1\pm\star)$ split the two-forms into a **self-dual** three-dimensional half and an **anti-self-dual** three-dimensional half, both real. The condition $F=\pm\star F$ is a real, first-order, non-trivial condition. In the component description with $F_{4k}=E_\eta$ and $F_{jk}=\epsilon_{j\eta l}B_l$ it reads simply
 $$
 \text{self-dual} \iff \vec B=+\vec E,
 \qquad
@@ -274,7 +274,7 @@ $$
 r^2=x_4^2+x_1^2+x_2^2+x_3^2\;},
 $$
 
-where $\eta_{\mu\nu a}$ are the self-dual 't Hooft symbols ($\eta_{jka}=\epsilon_{ajk}$ for spatial indices, $\eta_{4ka}=\delta_{ak}$, $\eta_{k4a}=-\delta_{ak}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}_{jka}=\epsilon_{ajk}$, $\bar{\eta}_{4ka}=-\delta_{ak}$, $\bar{\eta}_{k4a}=\delta_{ak}$) gives the anti-instanton.
+where $\eta_{\mu\nu a}$ are the self-dual 't Hooft symbols ($\eta_{jka}=\epsilon_{aj\eta}$ for spatial indices, $\eta_{4ka}=\delta_{a\eta}$, $\eta_{k4a}=-\delta_{a\eta}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}_{jka}=\epsilon_{aj\eta}$, $\bar{\eta}_{4ka}=-\delta_{a\eta}$, $\bar{\eta}_{k4a}=\delta_{a\eta}$) gives the anti-instanton.
 
 The configuration was checked by substitution, not quoted. At a generic point $x=(0.4,-1.2,0.7,1.5)$ with $\rho=0.6$, the curvature was formed by central finite differences and contracted with the epsilon symbol. The results are:
 
@@ -363,7 +363,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb R}\mathbb{H}$ | The biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}$ | Material sector, anti-Hermitian, signature $(3,1)$ |
 | $\mathbb{B}_{\Psi}$ | Informational sector, Hermitian, signature $(1,3)$ |

@@ -50,12 +50,12 @@ so the current is a density of the field and not a derivative of it.
 The axial bilinear is the vector bilinear with the right unit displaced. Where the vector reads $\vec e_{\nu(\mu)}$ in the right slot, the axial reads the product $\vec e_z\vec e_{\nu(\mu)}$ and drops the factor $i$.
 
 The tensor bilinear completes the list. Its element is the antisymmetric composite of two slot actions, which is a derived form of the two actions above and is written here in the element language of the body:
-$$T_{0k}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x\bigr),
+$$T_{0k}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x\bigr),
 \qquad
-T_{jk}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\quad(j\ne k),
+T_{jk}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\quad(j\ne k),
 \qquad
 T_{\mu\mu}=0 .$$
-The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_k$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_k$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\mu\nu}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0k}$ and the three $T_{jk}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.
+The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_\eta$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_\eta$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\mu\nu}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0k}$ and the three $T_{jk}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.
 
 ### The Two Writings of the Free Equation
 
@@ -69,10 +69,10 @@ The **two-sided** writing is the action
 $$\tilde Q\longmapsto \sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
 and it is the one this article needs, because every bilinear above carries a right slot as well as a left one. The two writings describe one dynamics, and each is first order.
 
-The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_\mu$ on the left and $\vec e_{\nu(\mu)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box$ and not $\Box$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_k^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
+The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_\mu$ on the left and $\vec e_{\nu(\mu)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box$ and not $\Box$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_\eta^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
 $$\tilde Q\longmapsto\Box\tilde Q,
 \qquad
-\Box=\sum_k\frac{\partial^2}{\partial x_k^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta,$$
+\Box=\sum_\eta\frac{\partial^2}{\partial x_k^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta,$$
 which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}_{\mathrm{sp}}$ squares to $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.
 
 ### The Two Values and the Axial Bilinear
@@ -152,10 +152,10 @@ $$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_k\vec e_k(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_k\varepsilon_k A_k\,\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
+$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_\eta\vec e_\eta(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_k A_\eta\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
 with $A_0=0$, and the two parts are read separately.
 
-**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_k\partial_k^2=\Delta$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
+**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_k^2=\Delta$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
 
 ## The Local Channels and Their Sectors
 
@@ -167,8 +167,8 @@ The five bilinears, with the element at which the pairing is read, and with the 
 |---|---|---|---|
 | $S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ | $\tilde{Ξ}_{\mathrm{sp}}$ | scalar | even |
 | $P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$ | $\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ | pseudoscalar | odd |
-| $V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$ | $ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$ | vector | $V_0$ even, $V_k$ odd |
-| $A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$ | $e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$ | axial vector | $A_0$ odd, $A_k$ even |
+| $V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$ | $ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$ | vector | $V_0$ even, $V_\eta$ odd |
+| $A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$ | $e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$ | axial vector | $A_0$ odd, $A_\eta$ even |
 | $T_{\mu\nu}$ | the antisymmetric composite of two slot actions, read on $\tilde{Ξ}_{\mathrm{sp}}$ | antisymmetric tensor | $T_{0k}$ odd, $T_{jk}$ even |
 
 The Lorentz-type column is the classification of the sources, recorded here and not derived: the algebra fixes which element each bilinear reads, and the sources fix which Lorentz type that element carries.
@@ -254,7 +254,7 @@ The duality is the exact reason the two-dimensional model has one coupling. It i
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section writes the same basis operators in the $\gamma$ notation, so that each formula the sources state can be checked against the basis operator it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -292,7 +292,7 @@ The identities the literature quotes were written in the $\gamma$ notation, and 
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -344,7 +344,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_\eta^2 = -e_t$, central $i$ |
 | $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | Slot action of the index $\mu$; $\nu(t)=x$, $\nu(k)=y$ |
 | $\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$ | Two-sided Dirac action; composed with itself it is $\Box$ |
 | $\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr)$ | The bilinear form; every density below is this scalar part read at one element $X$ |
@@ -352,7 +352,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | $P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$ | Pseudoscalar density, the parity-odd partner of $S_{\mathrm d}$; the quaternion representative $P=S_{\mathrm d}\vec e_z$ has $P\cdot P=-S_{\mathrm d}^2$, a different object from the density square $P_5^2$ |
 | $V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$ | Vector current (material sector in the framework); $V_0=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ |
 | $A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$ | Axial current (channel broken by the mass); in two dimensions built with the plane's insertions and the factor $i$ kept |
-| $T_{\mu\nu}$ | Tensor bilinear; $T_{0k}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$, $T_{jk}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$ |
+| $T_{\mu\nu}$ | Tensor bilinear; $T_{0k}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$, $T_{jk}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$ |
 | $\varepsilon_\mu = -g_{\mu\mu}$ | Signature sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |

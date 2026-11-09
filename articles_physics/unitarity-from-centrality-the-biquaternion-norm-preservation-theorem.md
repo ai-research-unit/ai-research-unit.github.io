@@ -294,7 +294,7 @@ G^{*}=-\frac{k_m\,\tilde{R}_{\Psi}\,\tilde{Ζ}^{\dagger}}{m\,c^{2}},
 \qquad
 -G=+\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}},
 $$
-so the hypothesis reads $-\tilde R_\Psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\Psi$ for every Hermitian $\tilde R_\Psi$. Evaluating it at $\tilde R_\Psi=e_t$ gives $\tilde{Ζ}^\dagger=-\tilde{Ζ}$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde R_\Psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\Psi$. This must hold for every Hermitian $\tilde R_\Psi$. The Hermitian elements span $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $\tilde{Ζ}$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $\tilde{Ζ}$ is central. The centre is $\mathbb{B}_{C}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $\tilde{Ζ}^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $\tilde{Ζ}=\pm i$ the generator $G=\mp\frac{k_m\,i\,\tilde{R}_{\Psi}}{m\,c^{2}}$ is anti-Hermitian because $\tilde R_\Psi$ Hermitian implies $i\tilde R_\Psi$ anti-Hermitian, and the exponential $\exp(Gr'_t)$ is $*$-unitary.
+so the hypothesis reads $-\tilde R_\Psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\Psi$ for every Hermitian $\tilde R_\Psi$. Evaluating it at $\tilde R_\Psi=e_t$ gives $\tilde{Ζ}^\dagger=-\tilde{Ζ}$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde R_\Psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\Psi$. This must hold for every Hermitian $\tilde R_\Psi$. The Hermitian elements span $\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $\tilde{Ζ}$ commutes with $e_t$ and with every $i\vec e_\eta$, it commutes with every element of $\mathbb{B}$, i.e. $\tilde{Ζ}$ is central. The centre is $\mathbb{B}_{C}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $\tilde{Ζ}^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $\tilde{Ζ}=\pm i$ the generator $G=\mp\frac{k_m\,i\,\tilde{R}_{\Psi}}{m\,c^{2}}$ is anti-Hermitian because $\tilde R_\Psi$ Hermitian implies $i\tilde R_\Psi$ anti-Hermitian, and the exponential $\exp(Gr'_t)$ is $*$-unitary.
 
 **Where the centrality is used.** The hypothesis "for every Hermitian $\tilde R_\Psi$" is what forces $\tilde{Ζ}$ into the centre, and it is not a technical convenience. Physically, a dynamics must be norm-preserving for the whole class of Hamiltonians the theory admits, not merely for one particular $\tilde R_\Psi$; the theory admits every Hermitian element as a possible generator. Mathematically, one non-central root is enough to violate the norm, and Example 3 exhibits the violation: with $\vec{Ζ}=\vec e_z$ and $\tilde R_\Psi=i\vec e_x$, the generator is Hermitian rather than anti-Hermitian, so the exponential is not $*$-unitary.
 
@@ -335,7 +335,7 @@ The centrality theme is carried by the defect $\tilde Q_4=\tilde Q^{*}\tilde Q$.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
@@ -350,7 +350,7 @@ The centrality theme is carried by the defect $\tilde Q_4=\tilde Q^{*}\tilde Q$.
 | $G_N=\{\tilde Q:|\langle\tilde Q\rangle_{\natural}|=1\}=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |
 | $\tilde{Ζ}$ | Root of $-e_t$, $\tilde{Ζ}^2=-e_t$ |
 | $G=-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}}$ | Generator of the state-vector flow |
-| $M(\tilde Q_1)$ | $2\times2$ matrix model, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathbb{C}$-linear |
+| $M(\tilde Q_1)$ | $2\times2$ matrix model, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathbb{C}$-linear |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on the diagonal $\langle\tilde Q_2,\tilde Q_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 

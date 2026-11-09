@@ -12,7 +12,7 @@ Three features distinguish the non-abelian procedure from the abelian one, and t
 
 The algebra contributes at three points, and they are the reason the construction is not merely a transcription. The gauge algebra is realized by the quaternion commutator inside the material sector, so the structure constants $f_{abc}$ are read off from $\varepsilon_{abc}$ and the Jacobi identity that closes the Slavnov–Taylor and BRST algebras is a consequence of the associativity of $\mathbb{B}$. The Faddeev–Popov operator is a material-sector differential operator twisted by the informational adjoint action — the same adjoint action that *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* identifies as the spin-one representation — so the operator that the ghosts invert is, on its internal indices, a spin-one object. And the ghosts themselves lie outside $\mathbb{B}$: the algebra is ungraded, every element of it is even, and no product of two elements of $\mathbb{B}$ is odd, so the determinant lives in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, exactly as the fermionic Gaussian integral requires.
 
-We use the conventions of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j\vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, and central scalar imaginary $i$. The material and informational sectors are
+We use the conventions of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\varepsilon_{j\eta l}\vec e_l$, and central scalar imaginary $i$. The material and informational sectors are
 $$
 \mathbb{B}_{\Phi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 \qquad
@@ -20,7 +20,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi} ,
 $$
-and the centre is $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; the material reading is $Q_t=i r'_t$ with $Q_k=x_k$, so that the interval $\sum_\mu Q_\mu^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; the material reading is $Q_t=i r'_t$ with $Q_\eta=x_k$, so that the interval $\sum_\mu Q_\mu^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 \qquad
@@ -277,7 +277,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j\vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\varepsilon_{j\eta l}\vec e_l$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; abelian factor |

@@ -174,7 +174,7 @@ For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\na
 $$
 \partial/\partial R_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
 \qquad
-\partial/\partial R_k s = k_k ,
+\partial/\partial R_\eta s = k_k ,
 $$
 
 so that
@@ -232,7 +232,7 @@ Two consequences are worth stating because they are the reason the cone is a phy
 The same set appears wherever the biquaternion norm is evaluated, and three guises are worth naming, because they show that the cone is one object seen in different variables.
 
 - **Momentum space.** The four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p$ is null when $E = c|\vec p|$: the massless shell. The zero-divisor condition on momentum is the statement that the particle is massless, and for a massive particle $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2 < 0$ keeps the momentum strictly timelike.
-- **Field space.** The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure vector $(F_0 = 0)$, so its biquaternion norm is $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_k F_k^2$, and it vanishes exactly for a **null (radiative) field**: $\vec E\perp\vec H$ and $|\vec E| = c|\vec B|$. This is the zero-divisor cone realized inside the six-dimensional complex vector space of the field strength, and it is developed in the companion article *The Field-Strength Biquaternion and Its Invariants*. The energy–momentum tensor of such a field has rank one, as the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor* shows.
+- **Field space.** The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure vector $(F_0 = 0)$, so its biquaternion norm is $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_\eta F_\eta^2$, and it vanishes exactly for a **null (radiative) field**: $\vec E\perp\vec H$ and $|\vec E| = c|\vec B|$. This is the zero-divisor cone realized inside the six-dimensional complex vector space of the field strength, and it is developed in the companion article *The Field-Strength Biquaternion and Its Invariants*. The energy–momentum tensor of such a field has rank one, as the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor* shows.
 - **Wave space.** The four-wavevector $\tilde P_{\Phi}$ is null when the plane wave is dispersionless, as derived above.
 
 In each case the statement is the same: a physically distinguished class of objects — massless particles, radiative fields, dispersionless waves — is exactly the class on which the algebra's biquaternion norm vanishes, and the class is closed under the Lorentz group.

@@ -256,7 +256,7 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; carries the Peccei–Quinn $\mathrm{U}(1)$ |
 | $\mathrm{U}(1)_{\mathbb{B}} = \{\exp(i\alpha)e_t\}$ | Central phase group; the Peccei–Quinn symmetry |

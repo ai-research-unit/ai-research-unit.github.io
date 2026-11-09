@@ -32,7 +32,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)} .
 $$
 
-The basis operator of the time component is therefore the single right multiplier $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$, and the basis operator of a spatial component is the two-sided action $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_k\tilde{Ξ}_{\mathrm{sp}}\vec e_y$. The label of a basis operator is the coordinate index of its left multiplier, and it is written low. The four actions anticommute up to the sign vector: two of them composed in the two orders multiply the left factors and the right factors in opposite orders, so the two compositions add to $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity action, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the product. The two imaginary units of a pair of basis operators are multiplied to $-1$ wherever a pair is composed, so the displays below carry the product of the units and never a double $i$. No index is raised, and every contraction of two low indices carries the sign vector.
+The basis operator of the time component is therefore the single right multiplier $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$, and the basis operator of a spatial component is the two-sided action $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$. The label of a basis operator is the coordinate index of its left multiplier, and it is written low. The four actions anticommute up to the sign vector: two of them composed in the two orders multiply the left factors and the right factors in opposite orders, so the two compositions add to $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity action, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the product. The two imaginary units of a pair of basis operators are multiplied to $-1$ wherever a pair is composed, so the displays below carry the product of the units and never a double $i$. No index is raised, and every contraction of two low indices carries the sign vector.
 
 Two composites recur often enough to name once. They are sums and contractions rather than single basis operators, so they carry letters where no frame basis operator does. The first is the **Dirac contraction**, the pair of *Operator and Calculus Conventions* read on the module, written for the derivative and for the momentum,
 
@@ -80,7 +80,7 @@ $$
 
 The constraint is not an equation of motion; it removes the spin-$\tfrac12$ components that a bare vector-spinor would contain. The fully antisymmetric form of the Rarita–Schwinger equation — the antisymmetrized triple contracted with the derivative and the antisymmetrized pair multiplying the mass — is the Lagrangian origin of the system. For $m\neq0$ it implies the component equation and the trace constraint, and the pair and the constraint displayed above are the reduced form; the companion article gives the reduction. For quantization the pair and the constraint are the starting point.
 
-In the algebra the weighted trace is one element: multiplying it on the left by the invertible basis operator $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ gives $\tilde{Ξ}_{\mathrm{sp},0}-\sum_k\vec e_k\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$, so the constraint is that single element, and the element needs no frame once the frame has been used to state it. The weight is not optional: the projector below annihilates the weighted contraction, and the same sum without the sign vector is not annihilated by it.
+In the algebra the weighted trace is one element: multiplying it on the left by the invertible basis operator $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ gives $\tilde{Ξ}_{\mathrm{sp},0}-\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$, so the constraint is that single element, and the element needs no frame once the frame has been used to state it. The weight is not optional: the projector below annihilates the weighted contraction, and the same sum without the sign vector is not annihilated by it.
 
 ### Transversality from the Constraint
 
@@ -302,7 +302,7 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are the frame basis operators of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -320,7 +320,7 @@ $$
 \gamma_5:=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
 
-that is $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_k=iL_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\vec e_y}$ for $k=1,2,3$. No display of the body uses the letter: there the basis operators are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+that is $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_\eta=iL_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y}$ for $\eta = 1, 2, 3$. No display of the body uses the letter: there the basis operators are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 The basis operator is $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, which the reference frame's display writes $\gamma_5$, and it is a pure right multiplier: the side, not the array, is the chirality. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. It anticommutes with each of the four frame basis operators and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the basis operator that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -404,7 +404,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 |---|---|
 | $\tilde{Ξ}_{\mathrm{sp},\mu}$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
 | $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$ | The action a display writes; a basis operator $L_{a}R_{b}$ is named only where the operator itself is the subject |
-| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame basis operator of the coordinate $x_\mu$, acting as $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$: $iR_{\mathrm{axf},\vec e_x}$ for $\mu=t$, $iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
+| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame basis operator of the coordinate $x_\mu$, acting as $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$: $iR_{\mathrm{axf},\vec e_x}$ for $\mu=t$, $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
 | $2\varepsilon_\mu\delta_{\mu\nu}$ on the identity action | The sum of the two compositions of two frame basis operators; their two imaginary units multiply to $-1$ |
 | $\varepsilon_\mu=-g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$ | Sign vector; every contraction of two low indices carries it |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Field equation as the chiral pair; the two Dirac equations |

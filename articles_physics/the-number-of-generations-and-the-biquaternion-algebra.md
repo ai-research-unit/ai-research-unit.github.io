@@ -8,7 +8,7 @@ This article asks what the biquaternion framework says about the number. The ans
 
 - **Established.** The framework carries a generation index as a **multiplicity factor**: a spectrum of $N_g$ generations is a module $\Delta\otimes\mathbb{C}^{N_g}$ (or a direct sum of $N_g$ copies of $\Delta$), on which the algebra acts as $\mathbb{B}$ on the module factor and trivially on the multiplicity factor. The algebra's invariants — its dimension, its centre, its trace, its sectors — are independent of $N_g$, and so are the anomaly cancellation conditions.
 - **Not established.** The algebra does not fix $N_g$. Its representation theory has no room for a preferred integer; the number appears only as the dimension of a multiplicity space on which the algebra acts trivially, and nothing in $\mathbb{B}$, in its modules, or in its real structure selects $3$. The framework accommodates the three generations; it does not explain them.
-- **A false lead, addressed.** The algebra has three imaginary units $\vec e_x,\vec e_y,\vec e_z$, and it is tempting to identify them with the three generations. The article explains why that identification is not available: the $\vec e_k$ are the spatial directions (and the $\mathrm{SU}(2)$ generators), they transform under the Lorentz and gauge groups, and a generation label must be inert under them. The three units and the three generations are different threes.
+- **A false lead, addressed.** The algebra has three imaginary units $\vec e_x,\vec e_y,\vec e_z$, and it is tempting to identify them with the three generations. The article explains why that identification is not available: the $\vec e_\eta$ are the spatial directions (and the $\mathrm{SU}(2)$ generators), they transform under the Lorentz and gauge groups, and a generation label must be inert under them. The three units and the three generations are different threes.
 
 The article is organised as follows. A section recalls how the Standard Model counts generations. A section shows how the framework carries a generation index. A section exhibits the invariants that are $N_g$-independent and concludes that the algebra does not fix the number. A section collects the constraints that do touch $N_g$. A section disposes of the "three imaginary units" identification. A closing section separates what is supplied, transcribed, and missing.
 
@@ -171,13 +171,13 @@ and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$
 
 ## The Three Imaginary Units Are Not Three Generations
 
-**The temptation.** The algebra has three imaginary units $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ (cyclic), and the Standard Model has three generations. The temptation is to identify them. The identification is not available, for reasons that are worth stating precisely, because the same temptation appears in any quaternionic framework.
+**The temptation.** The algebra has three imaginary units $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ (cyclic), and the Standard Model has three generations. The temptation is to identify them. The identification is not available, for reasons that are worth stating precisely, because the same temptation appears in any quaternionic framework.
 
-**The $\vec e_k$ are the spatial and gauge directions.** The imaginary units are the generators of the spatial rotations and of the $\mathrm{SU}(2)$ structure that the framework's gauge sector is built on. They transform as a **vector** under the Lorentz group and are rotated into one another by spatial rotations; a generation label, by contrast, must be inert under the Lorentz group and must not be rotated by it. Two objects with different transformation properties cannot be identified. The framework's own gauge articles use the $\vec e_k$ as the connection directions, which fixes their transformation character and excludes the identification.
+**The $\vec e_\eta$ are the spatial and gauge directions.** The imaginary units are the generators of the spatial rotations and of the $\mathrm{SU}(2)$ structure that the framework's gauge sector is built on. They transform as a **vector** under the Lorentz group and are rotated into one another by spatial rotations; a generation label, by contrast, must be inert under the Lorentz group and must not be rotated by it. Two objects with different transformation properties cannot be identified. The framework's own gauge articles use the $\vec e_\eta$ as the connection directions, which fixes their transformation character and excludes the identification.
 
 **The counting does not match.** Even setting the transformation properties aside, the counts differ in a decisive way. The three generations are three copies of the **same** module with the same quantum numbers, whereas $\vec e_x,\vec e_y,\vec e_z$ are three different elements of the algebra that are rotated among themselves; identifying them with generations would make the generations rotate under a symmetry of the spectrum, which is not what is observed. A generation symmetry, if it exists, is a flavour symmetry acting on $\mathcal{F}$, not the spatial rotation group acting on the module.
 
-**What the "three" correctly describes.** The number three in the framework belongs to the spatial dimensions (three $\vec e_k$) and to the dimension of the $\mathrm{SU}(2)$ algebra (three generators). It is the number of the Lorentz vector's components and the number of the gauge algebra's generators. It is not the generation number, and the framework's use of the number three in those places is correct and unrelated to the flavour puzzle.
+**What the "three" correctly describes.** The number three in the framework belongs to the spatial dimensions (three $\vec e_\eta$) and to the dimension of the $\mathrm{SU}(2)$ algebra (three generators). It is the number of the Lorentz vector's components and the number of the gauge algebra's generators. It is not the generation number, and the framework's use of the number three in those places is correct and unrelated to the flavour puzzle.
 
 **Why the negative result is the honest one.** A framework that claimed to derive the three generations from the three imaginary units would be making the identification just excluded. The honest statement is that the framework's algebra has three imaginary units for the spatial and weak directions, that the generation number is a multiplicity with no algebraic origin, and that the coincidence of the two threes is a coincidence of the small integers that appear in any four-dimensional algebraic framework.
 
@@ -241,7 +241,7 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 | The $Z$-width determination $N_\nu=2.984\pm0.008$ | **Transcribed**; standard |
 | CP violation requiring $N_g\ge3$, and the parameter count $(N_g-1)^2$ | **Transcribed**; standard |
 | A derivation of $N_g=3$ | **Not supplied**; the algebra has no index, no internal space, and no dynamics |
-| An identification of $\vec e_x,\vec e_y,\vec e_z$ with the generations | **Excluded**; the $\vec e_k$ transform as a Lorentz vector, the generations do not |
+| An identification of $\vec e_x,\vec e_y,\vec e_z$ with the generations | **Excluded**; the $\vec e_\eta$ transform as a Lorentz vector, the generations do not |
 | The fermion masses and mixing angles | **Not supplied**; empirical |
 
 ## Open Questions
@@ -265,7 +265,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ cyclic |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ cyclic |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors, each $\dim_{\mathbb{R}}=4$ |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of the algebra |
 | $S=\mathbb{C}^2=(\tfrac12,0)$ | The algebra's irrep; left-handed Weyl module |

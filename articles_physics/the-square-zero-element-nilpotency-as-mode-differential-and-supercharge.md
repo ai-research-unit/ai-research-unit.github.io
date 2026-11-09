@@ -463,7 +463,7 @@ the vacuum state plus $\varkappa$ times the occupied state. The label is odd and
 In the semiclassical approximation the leading-order momentum is the phase gradient, the real quaternion
 
 $$
-\nabla S=\sum_k\frac{\partial S}{\partial R_k}\vec e_k .
+\nabla S=\sum_\eta\frac{\partial S}{\partial R_\eta}\vec e_\eta .
 $$
 
 The Hamilton–Jacobi equation fixes its norm to the energy defect,
@@ -606,7 +606,7 @@ The article adds no dynamics, no mass, no coupling and no empirical prediction. 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in basis operators.
 
@@ -622,12 +622,12 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-The frame is a Clifford frame. Using $i^2=-1$, the basis operator rule and $\vec e_k^2=-e_t$, the squares are
+The frame is a Clifford frame. Using $i^2=-1$, the basis operator rule and $\vec e_\eta^2=-e_t$, the squares are
 
 $$
 \gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^2}=(-1)\bigl(-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\bigr)=+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 \qquad
-\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^2}R_{\mathrm{pau},\vec e_y^2}=(-1)\bigl(+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\bigr)=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
+\gamma_\eta^2=i^2L_{\mathrm{pau},\vec e_\eta^2}R_{\mathrm{pau},\vec e_y^2}=(-1)\bigl(+L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}\bigr)=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t},
 $$
 
 In the axis-free display:
@@ -635,10 +635,10 @@ In the axis-free display:
 $$
 \gamma_0^2=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x^2}=(-1)\bigl(-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}\bigr)=+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 \qquad
-\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^2}R_{\mathrm{axf},\vec e_y^2}=(-1)\bigl(+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}\bigr)=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
+\gamma_\eta^2=i^2L_{\mathrm{axf},\vec e_\eta^2}R_{\mathrm{axf},\vec e_y^2}=(-1)\bigl(+L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}\bigr)=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t},
 $$
 
-for $k=1,2,3$, and the mixed anticommutators vanish: for $\{\gamma_0,\gamma_j\}$ the left factors commute and the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, while for $\{\gamma_i,\gamma_j\}$ the left factors anticommute and the common right factor $\vec e_y^2$ is central. The product of the four is
+for $\eta=1,2,3$, and the mixed anticommutators vanish: for $\{\gamma_0,\gamma_j\}$ the left factors commute and the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, while for $\{\gamma_i,\gamma_j\}$ the left factors anticommute and the common right factor $\vec e_y^2$ is central. The product of the four is
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3
@@ -717,7 +717,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | biquaternion algebra |
-| $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $X$ | a nilpotent, $X^2=0$, $X\neq0$; pure when it has no scalar part |
 | $\tilde\Pi$ | a state, $\tilde\Pi^2=\tilde\Pi$ |

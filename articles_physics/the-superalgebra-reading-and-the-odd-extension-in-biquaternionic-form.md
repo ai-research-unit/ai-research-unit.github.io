@@ -275,21 +275,21 @@ $$
 \end{aligned}
 $$
 
-The four $\gamma_\mu$ are the images of the frame vectors $v_\mu$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_k^2=-e_t$,
+The four $\gamma_\mu$ are the images of the frame vectors $v_\mu$ in the representation, and $\gamma_5$ is not a fifth frame vector but the image of their product, the pseudoscalar: $\gamma_5=i\omega$ with $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The squares follow from $(L_aR_b)^2=L_{a^2}R_{b^2}$ and $\vec e_\eta^2=-e_t$,
 
 $$
 \gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^{2}}=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I_4,\qquad
-\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^{2}}R_{\mathrm{pau},\vec e_y^{2}}=i^2L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t}=-I_4 .
+\gamma_\eta^2=i^2L_{\mathrm{pau},\vec e_\eta^{2}}R_{\mathrm{pau},\vec e_y^{2}}=i^2L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t}=-I_4 .
 $$
 
 In the axis-free display:
 
 $$
 \gamma_0^2=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x^{2}}=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},-e_t}=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}=I_4,\qquad
-\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^{2}}R_{\mathrm{axf},\vec e_y^{2}}=i^2L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t}=-I_4 .
+\gamma_\eta^2=i^2L_{\mathrm{axf},\vec e_\eta^{2}}R_{\mathrm{axf},\vec e_y^{2}}=i^2L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t}=-I_4 .
 $$
 
-Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and
+Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_\eta$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
@@ -319,7 +319,7 @@ $$
 
 by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\xi)$. The sign $\xi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
@@ -331,7 +331,7 @@ two fields, both equations acting from the left, the chirality carried by the tw
 $$
 \left(i\frac{\partial}{\partial r'_t}+D_3\right)F-k_m\,i\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
+D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
 with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. Since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads

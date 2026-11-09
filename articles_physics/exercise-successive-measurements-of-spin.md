@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats **successive measurements**: what happens when a spin state is measured twice in a row, along different directions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 ## The Exercise
 
@@ -238,12 +238,12 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\tilde\Pi_z = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
-| $\tilde\Pi_{n_k} = \tfrac{1}{2}(e_t + i\vec u_k)$ | Idempotent along direction $\vec u_k$ |
-| $\vec u_k = \sin\theta_k\,\vec e_x + \cos\theta_k\,\vec e_z$ | Unit vector for the $k$-th direction |
+| $\tilde\Pi_{n_k} = \tfrac{1}{2}(e_t + i\vec u_\eta)$ | Idempotent along direction $\vec u_\eta$ |
+| $\vec u_\eta = \sin\theta_k\,\vec e_x + \cos\theta_k\,\vec e_z$ | Unit vector for the $k$-th direction |
 | $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ | Transition probability between idempotents |
 
 ## Further Reading

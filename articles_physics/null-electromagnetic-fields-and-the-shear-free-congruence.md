@@ -13,7 +13,7 @@ The recomputations are these: the closure of $C$, both invariants, the duality r
 The conventions are those of the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central $i$ with $i^2=-1$; the field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$; the two invariants are $I_1=\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $I_2=\vec E\cdot\vec B$. Throughout this article the vacuum is used, $\epsilon_r=\mu_r=1$ with the absolute $\epsilon_0$ and $\mu_0$ carried so that $c=1/\sqrt{\epsilon_0\mu_0}$ stands, and the coordinates are $(r'_t,r_x,r_y,r_z)$ with the material time $r'_t$ and the interval $-\Delta r'_t^2+\Delta r_x^2+\Delta r_y^2+\Delta r_z^2$, whose one minus is the square of the $i$ in $Q_t=ir'_t$; that minus enters only through the signs written out in $\star$. A two-form $C$ on the real coordinates $(x_0,x_1,x_2,x_3)=(r'_t,r_x,r_y,r_z)$ carries the parts
 
 $$
-E_k=-C_{0k},\qquad B_k=\tfrac12\sum_{j,l}\varepsilon_{jkl}C_{jl},
+E_\eta=-C_{0k},\qquad B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl},
 $$
 
 with $\varepsilon_{123}=+1$ and $\varepsilon_{0123}=-1$. That last sign is fixed by the dual, which is the Hodge dual of the field-strength article, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, with $\star^2=-1$: the contraction $\tfrac12\varepsilon_{\mu\nu\rho\sigma}C^{\rho\sigma}$ with $\varepsilon_{0123}=-1$ reproduces exactly this pair. With the other sign of $\varepsilon_{0123}$ the same contraction returns $-\star C$, which exchanges the two names below and leaves every equation otherwise intact. **The corpus's articles attach the name "self-dual" to opposite signs.** The programme writes $\vec E+i\vec H=0$ and calls that condition weakly (anti)self-dual; the split article and the invariants article call $\star=-i$, that is $\vec E-i\vec B=0$, the self-dual half. The names are fixed in the next section, and every statement below carries its equation.
@@ -56,7 +56,7 @@ $$
 \partial\alpha\cdot\partial\alpha=0,\qquad \partial\beta\cdot\partial\beta=0,\qquad \partial\alpha\cdot\partial\beta=0,
 $$
 
-where the product is $\partial\alpha\cdot\partial\beta=\sum_\mu\partial/\partial R_\mu\alpha\,\partial/\partial R_\mu\beta$, that is $-\partial\alpha/\partial r'_t\,\partial\beta/\partial r'_t+\sum_k\partial\alpha/\partial x_k\,\partial\beta/\partial x_k$, the minus being the square of the $i$ in $Q_t=ir'_t$. The **Bateman field** is the exterior product of the two gradients,
+where the product is $\partial\alpha\cdot\partial\beta=\sum_\mu\partial/\partial R_\mu\alpha\,\partial/\partial R_\mu\beta$, that is $-\partial\alpha/\partial r'_t\,\partial\beta/\partial r'_t+\sum_\eta\partial\alpha/\partial x_k\,\partial\beta/\partial x_k$, the minus being the square of the $i$ in $Q_t=ir'_t$. The **Bateman field** is the exterior product of the two gradients,
 
 $$
 C=d\alpha\wedge d\beta,\qquad C_{\mu\nu}=\frac{\partial\alpha}{\partial x_\mu}\frac{\partial\beta}{\partial x_\nu}-\frac{\partial\alpha}{\partial x_\nu}\frac{\partial\beta}{\partial x_\mu}.
@@ -92,7 +92,7 @@ for every $\mu$, as one line of algebra shows: each term contains either $k_\alp
 
 **Why it holds.** The proof is a computation in the spin-coefficient form of Maxwell's equations. In a null tetrad whose first null leg is the principal direction, three of the four Maxwell scalars vanish and only one survives; call it $Ξ_2$, the standard name. Two of the four Newman–Penrose field equations then have vanishing left-hand sides, and they read $\kappaΞ_2=0$ and $\sigmaΞ_2=0$. Since $Ξ_2\ne0$, both spin coefficients vanish: $\kappa=0$ is the statement that the congruence is geodesic, and $\sigma=0$ that it is shear-free. The remaining two equations propagate $Ξ_2$ along the two null directions, and the expansion $\rho$ enters them only as a coefficient, so the theorem constrains the congruence without fixing its expansion. The corpus's Newman–Penrose article names the twelve spin coefficients, $\kappa$ and $\sigma$ among them; it does not carry these four equations, and this article records the theorem rather than deriving it.
 
-**The direction field, explicitly.** The principal direction is carried by a spinor, and the unit three-vector it defines is the Bloch vector of that spinor: its components are $n_k=\zeta^{\dagger}\sigma_k\zeta/(\zeta^{\dagger}\zeta)$, with $\lvert\vec n\rvert=1$. It is the same map that carries a spin-$\tfrac12$ state to the Bloch sphere in *The Majorana Representation in Biquaternionic Form*, where it is written $\vec u_x$ with the stereographic coordinate $\varkappa_{\mathrm{stg}}$. In the eikonal chart $\zeta=(1,G)$, so that $\zeta^{\dagger}\zeta=1+\lvert G\rvert^2$, the map reads
+**The direction field, explicitly.** The principal direction is carried by a spinor, and the unit three-vector it defines is the Bloch vector of that spinor: its components are $n_k=\zeta^{\dagger}\sigma_\eta\zeta/(\zeta^{\dagger}\zeta)$, with $\lvert\vec n\rvert=1$. It is the same map that carries a spin-$\tfrac12$ state to the Bloch sphere in *The Majorana Representation in Biquaternionic Form*, where it is written $\vec u_x$ with the stereographic coordinate $\varkappa_{\mathrm{stg}}$. In the eikonal chart $\zeta=(1,G)$, so that $\zeta^{\dagger}\zeta=1+\lvert G\rvert^2$, the map reads
 
 $$
 \vec n=\frac{1}{1+\lvert G\rvert^2}\bigl(G+\bar G,\;-i(G-\bar G),\;1-\lvert G\rvert^2\bigr),
@@ -160,7 +160,7 @@ the energy density is $W=|\lambda|^2$, and $|\vec S|=cW$ pointwise — the radia
 
 ## Summary
 
-A null field and a shear-free geodesic null congruence are two descriptions of one object in linear Maxwell theory. Bateman's representation writes a real null field as the real part of $C=d\alpha\wedge d\beta$, built from two eikonal functions that are mutually orthogonal; closure is then automatic, the eikonal conditions make $C$ null and duality-pure, and the Maxwell equations hold because $dC=0$ and $\star C$ is a constant multiple of $C$. The principal null direction annihilates the field and is unique for a real field; the Mariot–Robinson theorem states that it is tangent to a congruence that is geodesic and shear-free, and that every such congruence arises this way. In coordinates the direction is the Bloch vector of the congruence's spinor, $n_k=\zeta^{\dagger}\sigma_k\zeta/(\zeta^{\dagger}\zeta)$, which in the eikonal chart is the inverse stereographic map from $G$ to $S^2$; geodesy is the transport equation $\partial\vec n/\partial r'_t+(\vec n\cdot\nabla)\vec n=0$.
+A null field and a shear-free geodesic null congruence are two descriptions of one object in linear Maxwell theory. Bateman's representation writes a real null field as the real part of $C=d\alpha\wedge d\beta$, built from two eikonal functions that are mutually orthogonal; closure is then automatic, the eikonal conditions make $C$ null and duality-pure, and the Maxwell equations hold because $dC=0$ and $\star C$ is a constant multiple of $C$. The principal null direction annihilates the field and is unique for a real field; the Mariot–Robinson theorem states that it is tangent to a congruence that is geodesic and shear-free, and that every such congruence arises this way. In coordinates the direction is the Bloch vector of the congruence's spinor, $n_k=\zeta^{\dagger}\sigma_\eta\zeta/(\zeta^{\dagger}\zeta)$, which in the eikonal chart is the inverse stereographic map from $G$ to $S^2$; geodesy is the transport equation $\partial\vec n/\partial r'_t+(\vec n\cdot\nabla)\vec n=0$.
 
 Nullness and duality-purity are different conditions. Duality-purity is $\vec E\pm i\vec B=0$ with three complex conditions, nullness has two, and neither implies the other: duality-purity forces $I_1^2+4I_2^2=0$ and nullness adds $\vec E\cdot\vec E=0$, while a null field with a spacelike second leg is not duality-pure at all. On the $+i$ sign, which is the sign of the worked example, the field strength vanishes identically and the field is carried by the real pair that the programme's relations single out.
 
@@ -175,12 +175,12 @@ The worked example, $C=dG\wedge d\beta$ with $G$ the stereographic coordinate an
 | $k_\alpha$, $k_\beta$ | The two null vectors obtained from their gradients; the legs of $C$, whose directions are its null directions |
 | $Ξ_2$, $\kappa$, $\sigma$ | The one surviving Maxwell scalar in a tetrad adapted to the principal direction, and the spin coefficients of geodesy and shear |
 | duality-pure | $\star C=\pm iC$, that is $\vec E\pm i\vec B=0$; not the same condition as nullness |
-| $\vec E$, $\vec B$ | The electric and magnetic parts of $C$, $E_k=-C_{0k}$ and $B_k=\tfrac12\sum_{j,l}\varepsilon_{jkl}C_{jl}$ |
+| $\vec E$, $\vec B$ | The electric and magnetic parts of $C$, $E_\eta=-C_{0k}$ and $B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl}$ |
 | $I_1$, $I_2$ | The invariants $\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $\vec E\cdot\vec B$ |
 | $\vec N=\vec E+ic\vec B$ | The Riemann–Silberstein vector; its vanishing of norm is nullness |
 | $\star$ | The dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$ |
 | $G$ | The stereographic coordinate $(x+iy)/(z+r)=\tan(\theta/2)e^{i\theta_{\mathrm{azm}}}$ |
-| $\zeta$, $\vec n$ | The spinor of the congruence and its Bloch vector $n_k=\zeta^{\dagger}\sigma_k\zeta/(\zeta^{\dagger}\zeta)$, the principal null direction |
+| $\zeta$, $\vec n$ | The spinor of the congruence and its Bloch vector $n_k=\zeta^{\dagger}\sigma_\eta\zeta/(\zeta^{\dagger}\zeta)$, the principal null direction |
 | $\lambda$ | The coefficient $e^{i\theta_{\mathrm{azm}}}/(2r\cos^2(\theta/2))$ of $dG=\lambda(\vec u_\theta+i\vec u_{\mathrm{azm}})$ |
 | $r'_t$, $x$, $y$, $z$ | The material coordinates; $r$ their spatial radius; $\theta$, $\theta_{\mathrm{azm}}$ the polar angles |
 | $\vec u_t$, $\vec u_r$, $\vec u_\theta$, $\vec u_{\mathrm{azm}}$ | The orthonormal frame adapted to the spherical coordinates |

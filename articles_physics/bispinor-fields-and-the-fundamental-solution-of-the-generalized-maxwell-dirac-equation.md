@@ -39,7 +39,7 @@ with the property the source announces as the Dirac property, $\sum_m D_{mj}D_{j
 
 Three facts follow, and each is worth stating because the source's wording invites a stronger interpretation than the algebra supports.
 
-- **The three spacelike matrices close on $\mathrm{Cl}_{3,0}$, not on $\mathrm{Cl}_{1,3}$.** Left multiplications by $ie_j$ and $i\vec e_k$, $j\neq k$, anticommute, $\{D_j,D_k\} = 0$, exactly, since $e_j\vec e_k = -\vec e_ke_j$. So the three of them are a Clifford set with all positive squares.
+- **The three spacelike matrices close on $\mathrm{Cl}_{3,0}$, not on $\mathrm{Cl}_{1,3}$.** Left multiplications by $ie_j$ and $i\vec e_\eta$, $j\neq k$, anticommute, $\{D_j,D_\eta\} = 0$, exactly, since $e_j\vec e_\eta = -\vec e_\eta e_j$. So the three of them are a Clifford set with all positive squares.
 - **The fourth is not part of that set.** $D^0 = I$ commutes with everything, so $\{D_0,D_j\} = 2D_j \neq 0$: the source's index identity is a statement about each matrix with itself, not an anticommutation over four indices. The corpus's own Dirac dictionary supplies a genuine Clifford set through the matrix image $Ξ$; the two objects are different and must not be conflated.
 - **The "matrix Dirac operator" is the regular representation of the gradient.** Since $D = \partial/\partial\tau I + \sum_j D_j\partial/\partial R_j$ is the matrix of $\partial/\partial\tau + i\nabla = \nabla^+$, the matrix form of the source's first-order equation is the matrix form of left multiplication by a biquaternion — no more and no less. The corpus's Dirac dictionary says the same thing from the other side: $\mathbb{B} = \mathrm{End}(S)$, and every complex-linear operator on the spinor module is some biquaternion.
 

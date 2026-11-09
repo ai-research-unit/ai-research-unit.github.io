@@ -22,7 +22,7 @@ $$
 
 That form gives back the familiar Clifford metric, and it is the language of the textbooks. It is not an error: it is the same geometry with the $i$ moved. The series does not write it, and the decision is stated here once, with its price. **The metric stays $1,1,1,1$, and the $i$ of $i r'_t$ and of $i r'_{x_k}$ stays in the coordinate, separate and explicit.**
 
-The conventions are those of [Frame and Metric Conventions](frame-and-metric-conventions.html) and [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html): the base is $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, a frame is named on the coordinate, and $c$ is the speed of light in the medium.
+The conventions are those of [Frame and Metric Conventions](frame-and-metric-conventions.html) and [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html): the base is $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the norm is $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, a frame is named on the coordinate, and $c$ is the speed of light in the medium.
 
 ## What the Unit Metric Is
 
@@ -44,7 +44,7 @@ $$
 \langle e_\mu\rangle_\natural=e_\mu e_\mu^\natural=+1,\qquad \mu\in\{t,x,y,z\}.
 $$
 
-The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_k\vec e_k^\natural=\vec e_k(-\vec e_k)=-\vec e_k^2=+1$. No sign is inserted anywhere, because the quaternion conjugation supplies the sign and the square supplies it back.
+The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_\eta\vec e_\eta^\natural=\vec e_\eta(-\vec e_\eta)=-\vec e_\eta^2=+1$. No sign is inserted anywhere, because the quaternion conjugation supplies the sign and the square supplies it back.
 
 **That one line is the metric.** The Gram matrix of the quaternionic form on the base is
 
@@ -99,7 +99,7 @@ One formula, every reading. The formula is the same in all of them, because the 
 
 ### The material reading
 
-With $Q_t=i r'_t$ and $Q_k=x_k$, for $r'_t,r_x,r_y,r_z$ real,
+With $Q_t=i r'_t$ and $Q_\eta=x_k$, for $r'_t,r_x,r_y,r_z$ real,
 
 $$
 \bigl\langle\tilde Q_-\bigr\rangle_\natural=(i r'_t)^2+r_x^2+r_y^2+r_z^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2 .
@@ -109,7 +109,7 @@ This is the Minkowski interval. The minus is $i^2=-1$: it appears at the squarin
 
 ### The informational reading
 
-With $Q_t=r_t$ and $Q_k=i r'_{x_k}$,
+With $Q_t=r_t$ and $Q_\eta=i r'_{x_k}$,
 
 $$
 \bigl\langle\tilde Q_+\bigr\rangle_\natural=r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2 .
@@ -125,8 +125,8 @@ On $\mathbb{B}$ the four coefficients are complex and the value of the norm is c
 |---|---|---|---|
 | $\mathbb{B}$ | $Q_\mu\in\mathbb{C}$ | complex in general | none until a sector is imposed |
 | $\mathbb{B}_{H}$ | $q_\mu\in\mathbb{R}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ |
-| $\mathbb{B}_{\Phi}$ | $Q_t=i r'_t$, $Q_k=x_k$ | $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
-| $\mathbb{B}_{\Psi}$ | $Q_t=r_t$, $Q_k=i r'_{x_k}$ | $r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | $(1,3)$ |
+| $\mathbb{B}_{\Phi}$ | $Q_t=i r'_t$, $Q_\eta=x_k$ | $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$ |
+| $\mathbb{B}_{\Psi}$ | $Q_t=r_t$, $Q_\eta=i r'_{x_k}$ | $r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | $(1,3)$ |
 
 **The metric did not move.** In all four rows the coefficient tuple is $\delta_{\mu\nu}=(1,1,1,1)$; the column that changes is the coordinate. So the answer to the question *how does a metric of $1,1,1,1$ give $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$* is: it gives the four coefficients $+1$, and the sign is delivered by the coordinate. The metric does its work as a coefficient, and the $i$ does the rest.
 
@@ -174,7 +174,7 @@ The two schemes write the minus in the same number of places, and the count is n
 **The move.** Take the real coordinate and put the minus in a metric:
 
 $$
-x_0=r'_{t},\qquad x_k=r_k,\qquad -{r'_{t}}^2+r_x^2+r_y^2+r_z^2=g_{\mu\nu}x_\mu x_\nu,\qquad g=\mathrm{diag}(-1,1,1,1).
+x_0=r'_{t},\qquad x_k=r_\eta,\qquad -{r'_{t}}^2+r_x^2+r_y^2+r_z^2=g_{\mu\nu}x_\mu x_\nu,\qquad g=\mathrm{diag}(-1,1,1,1).
 $$
 
 The $i$ has left the coordinate. What it leaves behind in the metric is the minus it produced, and the $i$ itself reappears, if it is kept at all, only in the rescaled generators, $\gamma'_\mu=i\gamma_\mu$. That is what *absorbing* means, and it can be done.
@@ -275,12 +275,12 @@ The series therefore keeps the metric $1,1,1,1$ and keeps the $i$ of $i r'_t$ an
 | $\langle\tilde Q_1,\tilde Q_2\rangle_\natural=\mathrm{Sc}\bigl(\tilde Q_1^\natural\tilde Q_2\bigr)$ | The quaternionic form; Gram matrix $\delta_{\mu\nu}$ on the base |
 | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | The plain form; $\varepsilon_\mu\delta_{\mu\nu}$ on the base |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, the square of the units; not a metric |
-| $Q_t=i r'_t$, $Q_k=x_k$ | The material coordinate; the source of the minus of the interval |
-| $Q_t=r_t$, $Q_k=i r'_{x_k}$ | The informational coordinate; the $i$ on the three space slots |
+| $Q_t=i r'_t$, $Q_\eta=x_k$ | The material coordinate; the source of the minus of the interval |
+| $Q_t=r_t$, $Q_\eta=i r'_{x_k}$ | The informational coordinate; the $i$ on the three space slots |
 | $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | The material interval, signature $(3,1)$ |
 | $r_t^2-(r'_{x})^2-(r'_{y})^2-(r'_{z})^2$ | The informational interval, signature $(1,3)$ |
 | $g=\mathrm{diag}(-1,1,1,1)$ | The absorbed metric of the rejected alternative; equal to $-\varepsilon_\mu\delta_{\mu\nu}$ |
-| $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | The Clifford map of the series; $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$ |
+| $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | The Clifford map of the series; $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$ |
 | $\gamma'_\mu=i\gamma_\mu$ | The generators that give $+2g_{\mu\nu}$; the $i$ inside the array |
 | $B=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | Boost rotor; it preserves the norm with no metric entering |
 

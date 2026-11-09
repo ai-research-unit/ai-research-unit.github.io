@@ -220,7 +220,7 @@ $$
 =\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}\in[0,1]\;},
 $$
 
-which is the standard formula. The factor $2$ is the dimension of the image and cancels in the ratio; it is not a normalisation constant of the form. Traciality, $\operatorname{Tr}(\tilde Q\tilde Q_1)=\operatorname{Tr}(\tilde Q_1\tilde Q)$, is the symmetry of the form on Hermitian arguments, $\mathrm{Sc}(\tilde Q\tilde Q_1)=Q_tQ_{1t}-\sum_kQ_kQ_{1k}$. The star is retained because it names the pairing that is positive definite on the whole algebra, and because it cannot be dropped when one factor is not Hermitian, as in the Kraus form.
+which is the standard formula. The factor $2$ is the dimension of the image and cancels in the ratio; it is not a normalisation constant of the form. Traciality, $\operatorname{Tr}(\tilde Q\tilde Q_1)=\operatorname{Tr}(\tilde Q_1\tilde Q)$, is the symmetry of the form on Hermitian arguments, $\mathrm{Sc}(\tilde Q\tilde Q_1)=Q_tQ_{1t}-\sum_\eta Q_kQ_{1k}$. The star is retained because it names the pairing that is positive definite on the whole algebra, and because it cannot be dropped when one factor is not Hermitian, as in the Kraus form.
 
 ### What Is Derived Here
 
@@ -253,13 +253,13 @@ $$
 \tilde{E}_{\Psi}_+^2-\tilde{E}_{\Psi}_+=\tfrac14(\eta^2-1)e_t .
 $$
 
-The **trine measurement**, with three unit vectors $\vec u_k$ at $120^\circ$ (so $\sum_k\vec u_k=0$), is
+The **trine measurement**, with three unit vectors $\vec u_\eta$ at $120^\circ$ (so $\sum_\eta\vec u_\eta=0$), is
 
 $$
 \tilde{E}_{\Psi}_k=\tfrac13(e_t+i\vec u_k)=\tfrac23\tilde\Pi_1(\vec u_k),\qquad k=0,1,2 .
 $$
 
-Each is an effect, they sum to $e_t$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\vec u_k\cdot\vec r)$ with $\sum_kp_k=1$. The normalised Hermitian form thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
+Each is an effect, they sum to $e_t$, and no two are orthogonal; the probabilities are $p_\eta=\tfrac13(1+\vec u_\eta\cdot\vec r)$ with $\sum_\eta p_\eta=1$. The normalised Hermitian form thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
 
 The normalised Hermitian form gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde M_{\mathrm{kraus},i}$ with $\sum_i\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
 

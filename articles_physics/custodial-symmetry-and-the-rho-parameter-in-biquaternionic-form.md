@@ -99,7 +99,7 @@ The structure above is a left and a right multiplication of a two-by-two matrix,
 
 $$
 \tilde Q = Q_t\,e_t + Q_x\,\vec e_x + Q_y\,\vec e_y + Q_z\,\vec e_z \in \mathbb{B}_{H} ,
-\qquad Q_k\in\mathbb{R},
+\qquad Q_\eta\in\mathbb{R},
 $$
 
 on which the unit real quaternions act on the left and on the right,
@@ -283,13 +283,13 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{H}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)$ |
 | $\mathbb{B}_{C}$ | Centre; home of the central vacuum |
 | $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ | Standard Hermitian generators of the compact group |
-| $\tilde Q = Q_te_t + \sum_k Q_k\vec e_k\in\mathbb{B}_{H}$ | Quaternion-valued scalar (carrier of the custodial action) |
+| $\tilde Q = Q_te_t + \sum_\eta Q_\eta\vec e_\eta\in\mathbb{B}_{H}$ | Quaternion-valued scalar (carrier of the custodial action) |
 | $\tilde Q\mapsto g_L\tilde Q g_R^{*}$ | Left–right $SU(2)_L\times SU(2)_R$ action |
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |

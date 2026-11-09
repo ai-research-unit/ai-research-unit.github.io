@@ -200,7 +200,7 @@ is the biquaternion Fourier kernel of *Biquaternion Continuous Harmonic Analysis
 
 ### The Norm of the Flow and the Three Rates
 
-The flow has a Hermitian norm, and its formula separates the three data. With $\rho=\vec Q/B$ and $\lVert\rho\rVert_E^2=\sum_k\lvert\rho_k\rvert^2$ — the Euclidean modulus sum, not the bilinear form $(\rho,\rho)=-1$ —
+The flow has a Hermitian norm, and its formula separates the three data. With $\rho=\vec Q/B$ and $\lVert\rho\rVert_E^2=\sum_\eta\lvert\rho_\eta\rvert^2$ — the Euclidean modulus sum, not the bilinear form $(\rho,\rho)=-1$ —
 
 $$
 \langle e^{\theta\tilde Q}\rangle_*
@@ -598,7 +598,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ |
 | $J_{\tilde Q}=L_{\vec Q}/B$ | the internal complex structure, defined for $B^2\neq0$ |
 | $\rho=\vec Q/B$ | the pure root of $-1$ of the regular case, $\rho^2=-e_t$ |
-| $\lVert\rho\rVert_E^2=\sum_k\lvert\rho_k\rvert^2$ | Euclidean square of the root, $\ge1$; not the bilinear form $(\rho,\rho)=-1$ |
+| $\lVert\rho\rVert_E^2=\sum_\eta\lvert\rho_\eta\rvert^2$ | Euclidean square of the root, $\ge1$; not the bilinear form $(\rho,\rho)=-1$ |
 | $W(t,\omega)=\exp(-2\pi\rho\omega t)$ | the biquaternion Fourier kernel |
 | $N_{\tilde Q}=L_{\vec Q}$ | the nilpotent part of the operator, $N_{\tilde Q}^2=0$ when $B^2=0$ |
 | $\vec{Ζ}=-i\vec Q/B$ | the root of $+1$ of the regular case, $\vec{Ζ}^2=e_t$ |

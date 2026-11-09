@@ -79,7 +79,7 @@ i.e. $E^2 = \vec p^2c^2 + m^2c^4$. Here $k_{\Phi}=\frac{k_m\,p}{m\,c}$ and $k_{t
 **The second Dirac equation.** Two equations carry the name, and they must not be read as one. The pair above is the **one-sided** form of the equation: both gradients act by left multiplication, the field is one element, and the mass is the coupling between the two values. The **two-sided** form of the equation is a single field equation on $F\in\mathbb{B}$, Kravchenko's form,
 
 $$
-\left(i\frac{\partial}{\partial r'_t}+D_3\right)F - mi\,\bar F\,\vec u = 0, \qquad D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
+\left(i\frac{\partial}{\partial r'_t}+D_3\right)F - mi\,\bar F\,\vec u = 0, \qquad D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
 in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by the declared unit $\vec u$. At $\vec u=\vec e_z$ this is the form the parent article prints. The two equations are related by the dictionary and are not the same operator: the mass of the pair is the coupling of one value to the other; the mass of the two-sided equation is a conjugation together with a direction. Chirality is why the second side is needed at all: left multiplication preserves each value, so no left multiplication, and no sum of left multiplications, carries one value into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression.
@@ -290,11 +290,11 @@ On the chiral pair $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$, wi
 
 $$
 \gamma_0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix},\qquad
-\gamma_k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix},\qquad
+\gamma_\eta=\begin{pmatrix}0&\sigma_\eta\\-\sigma_\eta&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-I_2&0\\0&I_2\end{pmatrix},
 $$
 
-where $\sigma_k$ is the matrix of $i\vec e_k$, and these are the Peirce arrays. In the axis-free display, which is the display of the body, the same five are
+where $\sigma_\eta$ is the matrix of $i\vec e_\eta$, and these are the Peirce arrays. In the axis-free display, which is the display of the body, the same five are
 $$
 \gamma_0=\begin{pmatrix}0&-i&0&0\\i&0&0&0\\0&0&0&i\\0&0&-i&0\end{pmatrix},\qquad
 \gamma_1=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\i&0&0&0\end{pmatrix},
@@ -304,7 +304,7 @@ $$
 \gamma_3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
 $$
-the signed permutations $\gamma_0=iR_{\mathrm{axf},\vec e_x}$ and $\gamma_k=iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_{\nu(k)}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate basis operators of the display, $\gamma_0=C_t$ and $\gamma_k=C_k$, together with the chirality basis operator $\gamma_5$.
+the signed permutations $\gamma_0=iR_{\mathrm{axf},\vec e_x}$ and $\gamma_\eta=iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_{\nu(k)}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate basis operators of the display, $\gamma_0=C_t$ and $\gamma_\eta=C_\eta$, together with the chirality basis operator $\gamma_5$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -316,7 +316,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -350,7 +350,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $\mathbb{B}_{C}, \mathbb{B}_{H}$ | Complex subspace (centre), real-quaternion subspace |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material), Hermitian (informational) subspaces |
 | $\langle X\rangle_{\natural} = XX^{\natural}$ | Biquaternion norm; $\langle X,Y\rangle_{\natural}=\mathrm{Sc}(X^{\natural}Y)$ its form |
@@ -360,7 +360,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field, of values $-1$ and $+1$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $D_3=\sum_k\vec e_k\,\partial/\partial R_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
+| $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |
 | $\bar{\tilde U}=(\tilde U^{*})^{-1}$ | The conjugate action for a unit element |

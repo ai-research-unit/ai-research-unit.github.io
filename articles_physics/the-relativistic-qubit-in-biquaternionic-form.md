@@ -265,19 +265,19 @@ The frame dependence of everything that follows enters through the momentum argu
 
 **Observables.** The observables of the qubit are the Hermitian elements $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$, with the spin operators
 $$
-\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}\,i \vec e_k , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,k}] =\frac{m\,c\,i\,\epsilon_{jkl}\,\tilde{S}_{\Psi,l}}{k_m},
+\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}\,i \vec e_\eta , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,\eta}] =\frac{m\,c\,i\,\epsilon_{j\eta l}\,\tilde{S}_{\Psi,l}}{k_m},
 $$
 and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$. The four-momentum is the material element $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}\in\mathbb{B}_{\Phi}$, with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$; it is not an observable but the frame datum that labels which little-group qubit is in question.
 
 **Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
 $$
-\tfrac12 \vec e_k\in\mathbb{B}_{\Phi}^{0},
+\tfrac12 \vec e_\eta\in\mathbb{B}_{\Phi}^{0},
 $$
 and the boost generators are the traceless Hermitian ones, the pure elements
 $$
-\tfrac12 i \vec e_k\in\mathbb{B}_{\Psi}^{0},
+\tfrac12 i \vec e_\eta\in\mathbb{B}_{\Psi}^{0},
 $$
-and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's *observables* are the Hermitian elements of $\mathbb{B}_{\Psi}$ and its *frame generators* are the Hermitian traceless elements of the same sector, while its *rotations* — the compact operations and the material generators — lie in $\mathbb{B}_{\Phi}$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.
+and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_\eta] = -\epsilon_{j\eta l}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's *observables* are the Hermitian elements of $\mathbb{B}_{\Psi}$ and its *frame generators* are the Hermitian traceless elements of the same sector, while its *rotations* — the compact operations and the material generators — lie in $\mathbb{B}_{\Phi}$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.
 
 ## Summary
 
@@ -300,7 +300,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix model, $\vec e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$ |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix model, $\vec e_\eta\mapsto-i\sigma_\eta$, $i\mapsto iI_2$ |
 | $S = \mathbb{C}^2$ | Defining (spinor) module, the qubit carrier |
 | $|u\rangle\in S$ | State vector (spinor) |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\leq1$ |
@@ -314,9 +314,9 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\mathrm{Little}(\tilde{V}_{\Phi})$ | Stabilizer of $\tilde{V}_{\Phi}$: $\mathrm{U}(2)$ massive, $E(2)$ massless |
 | $\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}$ | Standard boost carrying $\tilde{V}_{\Phi}$ to rest |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}$ | Wigner rotation, $\in SU(2)$ |
-| $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin operators |
-| $\tfrac12\vec e_k\in\mathbb{B}_{\Phi}^{0}$ | Rotation generators (pure elements, material, compact) |
-| $\tfrac12 i\vec e_k\in\mathbb{B}_{\Psi}^{0}$ | Boost generators (pure elements, informational) |
+| $\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ | Spin operators |
+| $\tfrac12\vec e_\eta\in\mathbb{B}_{\Phi}^{0}$ | Rotation generators (pure elements, material, compact) |
+| $\tfrac12 i\vec e_\eta\in\mathbb{B}_{\Psi}^{0}$ | Boost generators (pure elements, informational) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

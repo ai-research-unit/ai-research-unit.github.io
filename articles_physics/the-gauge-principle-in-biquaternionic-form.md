@@ -121,10 +121,10 @@ The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ mov
 **The gauge function must have constant imaginary part to preserve $\mathbb{B}_{\Phi}$.** If $\tilde{A}_{\Phi} \in \mathbb{B}_{\Phi}$ — the parent's assignment, with $A_0 = i\,a'_t$ purely imaginary and $\vec A$ real — then $\tilde{A}_{\Phi,2}$ is again in $\mathbb{B}_{\Phi}$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
-\tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{k=1}^{3}\,\vec e_k\,\partial/\partial R_k\,\Gamma,
+\tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \sum_{\eta=1}^{3}\,\vec e_\eta\,\partial/\partial R_\eta\,\Gamma,
 $$
 
-and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -i\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
+and for real $\Gamma$ the scalar coefficient $\partial/\partial R_t\,\Gamma = -i\partial/\partial r'_t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial R_\eta\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{B}_{\Phi}$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
 
 **The coupling constant.** The number $ϙ$ is the charge of the field. It is introduced by the principle as a parameter; the algebra does not supply its value. Setting $ϙ = 0$ restores the global theory. The minimal-coupling form of the standard Dirac equation is recovered in this sense, as a biquaternionic statement whose representation conventions the Dirac article left open.
 
@@ -136,7 +136,7 @@ $$
 D\tilde{Ξ}_{\mathrm{sp}} = \sum_{\mu\in\{t,x,y,z\}}  e_\mu\,D_\mu\tilde{Ξ}_{\mathrm{sp}}, \qquad D_\mu = \partial/\partial R_\mu +\frac{k_m\,i\,ϙ}{m\,c}A_\mu,
 $$
 
-where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_k = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.
+where $\partial/\partial R_t = \partial/\partial(i r'_t)$ and $\partial/\partial R_\eta = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below.
 
 The following properties are immediate from the definitions and are worth recording, because they are the properties that make $D$ a covariant derivative rather than an arbitrary operator.
 
@@ -161,7 +161,7 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 The covariant derivative packages the connection. The curvature is built from the connection by differentiation. In the biquaternion algebra the natural first derivative of the connection is the product $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$, and its scalar and vector parts separate cleanly. A direct computation gives
 
 $$
-\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{k=1}^{3}\left(\partial/\partial R_t\,A_k - \partial/\partial R_k A_0\right)\vec e_k - \mathrm{rot}\,\vec A.
+\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{\eta=1}^{3}\left(\partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0\right)\vec e_\eta - \mathrm{rot}\,\vec A.
 $$
 
 The scalar part is the **gauge scalar** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ of the Maxwell article, which transforms as $S_2 = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
@@ -174,7 +174,7 @@ With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\ep
 
 ### The curvature identity
 
-Write $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_t = e_t$, $\bar{e}_k = -\vec e_k$ be the conjugate basis of *Algebra and Element Conventions*. Then
+Write $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_t = e_t$, $\bar{e}_k = -\vec e_\eta$ be the conjugate basis of *Algebra and Element Conventions*. Then
 
 $$
 \boxed{\ \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}} F_{\mu\nu}\,\bar{e}_\mu e_\nu\ }
@@ -208,7 +208,7 @@ The field strength is the **commutator of two covariant derivatives**, contracte
 
 ### The homogeneous equations are an identity, not an equation of motion
 
-Because $\tilde{F}$ is *constructed* from $\tilde{A}_{\Phi}$ — its electric components are $F_{0k} = \partial/\partial R_t\,A_k - \partial/\partial R_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.
+Because $\tilde{F}$ is *constructed* from $\tilde{A}_{\Phi}$ — its electric components are $F_{0k} = \partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.
 
 ## The Gauge Principle and the Maxwell Field
 
@@ -353,14 +353,14 @@ The factors of $i$ are reduced before the squares are read, $i^2=-1$:
 
 $$
 \gamma_0^2=i^2L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x^2}=(-1)(+1)(-1)I_4=I_4,\qquad
-\gamma_k^2=i^2L_{\mathrm{pau},\vec e_k^2}R_{\mathrm{pau},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
+\gamma_\eta^2=i^2L_{\mathrm{pau},\vec e_\eta^2}R_{\mathrm{pau},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
 $$
 
 In the axis-free display:
 
 $$
 \gamma_0^2=i^2L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x^2}=(-1)(+1)(-1)I_4=I_4,\qquad
-\gamma_k^2=i^2L_{\mathrm{axf},\vec e_k^2}R_{\mathrm{axf},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
+\gamma_\eta^2=i^2L_{\mathrm{axf},\vec e_\eta^2}R_{\mathrm{axf},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
 $$
 
 so the frame carries the Lorentzian signature. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five basis operators satisfy
@@ -421,7 +421,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra of *Algebra and Element Conventions*, the carrier of every element of this article |
-| $e_t, \vec e_x, \vec e_y, \vec e_z$ | the units of the algebra; $e_t$ is the unit, $\vec e_k^2 = -\vec e_t$ |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | the units of the algebra; $e_t$ is the unit, $\vec e_\eta^2 = -\vec e_t$ |
 | $i$ | the scalar imaginary, $i^2 = -1$ |
 | $\tilde Q$ | a generic element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}, \tilde{Ξ}$ | biquaternion-valued fields: the Dirac pair and the complex scalar |
@@ -431,7 +431,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | the material and informational sectors |
 | $\mathbb{B}_{C}$ | the complex scalar subspace, the centre of the algebra |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | the biquaternionic gradient, its quaternion conjugate, the d'Alembertian |
-| $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_k$ |
+| $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_\eta$ |
 | $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ | the local central phase; $\Gamma$ a real scalar |
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |

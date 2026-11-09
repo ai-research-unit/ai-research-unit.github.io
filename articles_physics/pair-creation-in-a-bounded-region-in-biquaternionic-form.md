@@ -14,7 +14,7 @@ Three statements organise the article.
 
 The article derives the matching, the threshold and the two tables of numbers. It does not derive the second-quantized statements: the pair number, the Bogoliubov mixing and the vacuum persistence amplitude are those of *Scalar Pair Creation in Biquaternionic Form*, the operator content of the sea is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*, and the mode count of a cavity is that of *The Vacuum State and the Casimir Effect in Biquaternionic Form*. What the framework supplies is the location of the threshold on the mass shell, and the criterion that separates a confining model which can create pairs from one which cannot.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i r'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_k\vec e_k\,\partial/\partial R_k$; the Dirac equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla$ by $D=\tilde\nabla+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$. No array and no column is written below.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i r'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla$ by $D=\tilde\nabla+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$. No array and no column is written below.
 
 ## The Well and the Gap
 
@@ -239,7 +239,7 @@ $$
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
 
 $$
-\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-\frac{3\,m^{2}c\,\omega}{k_m}-2m\omega\sum_k L_{\mathrm{orb},k}\,i\vec e_k ,
+\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-\frac{3\,m^{2}c\,\omega}{k_m}-2m\omega\sum_\eta L_{\mathrm{orb},k}\,i\vec e_\eta ,
 \qquad
 E^{2}=m^{2}c^{4}+c^{2}\,\mathcal Q_{+}\mathcal Q_{-}.
 $$
@@ -281,7 +281,7 @@ The mass step is the bag-model mechanism of Bardeen, Chanowitz, Drell, Weinstein
 - **The fermionic pair source.** The companion article's first open question is the biquaternion form of the step as a pair source, with the anomalous occupation of the two roots. The bounded case does not close it: here the source is stationary and there is no flux to compute, so the question becomes the occupation of one level, and that is not a one-particle statement either.
 - **The thickness of the wall.** A wall smoothed over a Compton wavelength is the bounded analogue of Sauter's smoothed step. Whether the smoothing moves the threshold, or only turns the crossing into a resonance of finite width, is not worked out; the companion article records the same question for the step.
 - **The width of a crossed level.** The one-particle operator here is Hermitian and its spectrum is real, so it has no width to give. A level embedded in the continuum must acquire one, and whether the second-quantized decay can be written as a complex shift of $k_{t}^{\prime}$ in the algebra, or only as a decay rate of an occupation, is not settled.
-- **The spin count.** The factor of two in three dimensions is a spin degeneracy, and the framework's spin is the Hermitian element $\tilde S_{\Psi,k}$ of the informational sector. Whether the sector supplies the counting or merely accommodates it is the same question the spin articles leave open, and it is not decided by anything in this article.
+- **The spin count.** The factor of two in three dimensions is a spin degeneracy, and the framework's spin is the Hermitian element $\tilde S_{\Psi,\eta}$ of the informational sector. Whether the sector supplies the counting or merely accommodates it is the same question the spin articles leave open, and it is not decided by anything in this article.
 - **The closed cavity.** A cavity with a discrete spectrum on both sides of the gap has no asymptotic region for the positron, and the charge bookkeeping then involves the walls themselves. Whether the algebra can state the difference between the two idealisations — a well in empty space and a closed cavity — is not shown, and the question has no counterpart in the step.
 
 ## Summary
@@ -305,9 +305,9 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | Quaternion units, $\vec e_k^{2}=-e_t$ |
+| $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | Quaternion units, $\vec e_\eta^{2}=-e_t$ |
 | $\mathbb{B}_{\Phi}$ | Material sector, with $Q_t=i r'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$ |
-| $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_k\vec e_k\,\partial/\partial R_k$ | Biquaternionic gradient |
+| $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\tilde{Ξ}_{\mathrm{sp},1}$, $\tilde{Ξ}_{\mathrm{sp},2}$ | The two components of the reduced spinor |
 | $V_0$, $L$, $a=L/2$ | Well depth, width, and half-width |
 | $ϙ\xi(r_x)=-V_0$ inside the well | Electrostatic potential energy |

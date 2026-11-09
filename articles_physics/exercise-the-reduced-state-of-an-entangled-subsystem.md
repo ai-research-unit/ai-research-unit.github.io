@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The earlier exercises treated single measurements, time evolution, successive measurements, and entangled measurements of two spins. This exercise treats a complementary aspect of entanglement: the **state of one subsystem** when the joint system is in an entangled state. This introduces the **reduced density matrix**, and with it the concept of a **mixed state**.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$. Throughout, $\log$ denotes the natural logarithm.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$. Throughout, $\log$ denotes the natural logarithm.
 
 ## The Exercise
 
@@ -140,13 +140,13 @@ $$
 \mathrm{Tr}_2\!\left(\frac{1}{4}e_t\otimes e_t\right) = \frac{1}{4}e_t \cdot \mathrm{Tr}_\mathbb{B}(e_t) = \frac{1}{4}e_t \cdot 2 = \frac{1}{2}e_t.
 $$
 
-**Remaining terms.** For $k \in \{x,y,z\}$, the term $\frac{1}{4}\vec e_k\otimes \vec e_k$ contributes
+**Remaining terms.** For $k \in \{x,y,z\}$, the term $\frac{1}{4}\vec e_\eta\otimes \vec e_\eta$ contributes
 
 $$
-\mathrm{Tr}_2\!\left(\frac{1}{4}\vec e_k\otimes \vec e_k\right) = \frac{1}{4}\vec e_k \cdot \mathrm{Tr}_\mathbb{B}(\vec e_k) = \frac{1}{4}\vec e_k \cdot 0 = 0,
+\mathrm{Tr}_2\!\left(\frac{1}{4}\vec e_\eta\otimes \vec e_\eta\right) = \frac{1}{4}\vec e_\eta \cdot \mathrm{Tr}_\mathbb{B}(\vec e_\eta) = \frac{1}{4}\vec e_\eta \cdot 0 = 0,
 $$
 
-since $\mathrm{Tr}_\mathbb{B}(\vec e_k) = 2\,\mathrm{Sc}(\vec e_k) = 0$ for the pure quaternion units.
+since $\mathrm{Tr}_\mathbb{B}(\vec e_\eta) = 2\,\mathrm{Sc}(\vec e_\eta) = 0$ for the pure quaternion units.
 
 Summing the contributions,
 
@@ -237,7 +237,7 @@ The contrast is the operational signature of entanglement: **product states have
 
 **2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.
 
-**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_k\otimes \vec e_k$ with $k \in \{x,y,z\}$, and none of the form $\vec e_k\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_k\otimes e_t$ are present, and they carry the pure reduced state.
+**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_\eta\otimes \vec e_\eta$ with $k \in \{x,y,z\}$, and none of the form $\vec e_\eta\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_\eta\otimes e_t$ are present, and they carry the pure reduced state.
 
 **4. The purity and entropy are natural functions on $\mathbb{B}_{\Psi}$.** Both the purity $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2)$ and the entropy $-\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$ are expressed in terms of the trace on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.
 
@@ -274,10 +274,10 @@ The comparison with a product state — where the reduced state is pure — illu
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ | Singlet state |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\tilde{Ϛ}_{\Psi,1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}})$ | Reduced state of particle 1 |
 | $\frac{1}{2}e_t$ | Maximally mixed state of a qubit |

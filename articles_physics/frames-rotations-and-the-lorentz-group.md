@@ -133,7 +133,7 @@ is two-to-one.
 
 **The boundary of the period interpretation.** The algebra supplies the sign and the two periods; it does not supply the spin-statistics theorem. The distinction is a property of the representations, not a derivation of the statistics of a particle.
 
-**The rotation acts on the complexified vector space.** Because the central imaginary $i$ commutes with the rotor, the real vector part $\vec e_k$ and the imaginary vector part $i\vec e_k$ rotate by the same angle. Interpreted physically, the six-real-dimensional vector subspace carries one complex-linear rotation, not two independent ones; the imaginary half is not a separate spatial space.
+**The rotation acts on the complexified vector space.** Because the central imaginary $i$ commutes with the rotor, the real vector part $\vec e_\eta$ and the imaginary vector part $i\vec e_\eta$ rotate by the same angle. Interpreted physically, the six-real-dimensional vector subspace carries one complex-linear rotation, not two independent ones; the imaginary half is not a separate spatial space.
 
 **The boundary of the interpretations.** The algebra supplies the rotor and the double cover; it does not supply the quantisation of the angle or a dynamics. The identification of the sign with a physical spinor phase is an interpretation of the representation, not a derivation of the spin of a particle.
 

@@ -30,7 +30,7 @@ An item enters this catalogue only if it satisfies three conditions, and the con
 
 **1. The statement is purely algebraic.** It says that no element, subspace, or operation of $\mathbb{B}$ has a stated property. Statements about what a human has not yet computed, or about what a particular writing of the algebra does not exhibit, do not qualify; the obstruction must be a property of the algebra itself.
 
-**2. The proof is from the algebra's defining relations.** The relations are $\vec e_k^2=-e_t$ for $k=x,y,z$, $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\neq j$ in $\{x,y,z\}$, and the centrality of $i$. Every proof below uses these, together with standard facts about finite-dimensional simple algebras — the transitivity of the $*$-unitary group on the directions, the tensor-dimension count, the innerness of the derivations of a central simple algebra, the cyclicity of the trace, and the Bures/Fisher metric — each of which is identified as standard at the point where it is used.
+**2. The proof is from the algebra's defining relations.** The relations are $\vec e_\eta^2=-e_t$ for $\eta=x,y,z$, $\vec e_i \vec e_j=\epsilon_{ij\eta}\vec e_\eta$ for $i\neq j$ in $\{x,y,z\}$, and the centrality of $i$. Every proof below uses these, together with standard facts about finite-dimensional simple algebras — the transitivity of the $*$-unitary group on the directions, the tensor-dimension count, the innerness of the derivations of a central simple algebra, the cyclicity of the trace, and the Bures/Fisher metric — each of which is identified as standard at the point where it is used.
 
 **3. The consequence and the remedy are both stated.** An obstruction without a consequence is idle, and an obstruction without a remedy is a counsel of despair. Each item therefore names what must be adjoined, chosen, or imported for the framework to proceed: a maximal commutative subalgebra, an extension to a space of functions, a statistical metric, or a physical posit.
 
@@ -102,7 +102,7 @@ so the solutions are exactly $0$ and $e_t$. A direct sum decomposition would nee
 $$
 \bigl\langle\tilde\Pi(\vec u)\bigr\rangle_{\natural}=\tilde\Pi(\vec u)\,\tilde\Pi^{\natural}(\vec u)=\tfrac14(e_t+i\vec u)(e_t-i\vec u)=\tfrac14\bigl(e_t+\vec u^2\bigr)=0
 $$
-for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde\Pi^2=\tilde\Pi$ together with $\tilde\Pi\tilde\Pi^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_k$ are null non-zero elements for $k=x,y,z$, since $\langle e_t\pm i\vec e_k\rangle_{\natural}=(1-1)e_t=0$.
+for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde\Pi^2=\tilde\Pi$ together with $\tilde\Pi\tilde\Pi^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\eta$ are null non-zero elements for $\eta=x,y,z$, since $\langle e_t\pm i\vec e_\eta\rangle_{\natural}=(1-1)e_t=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value.
 
@@ -206,7 +206,7 @@ and the dimension of the tensor square is the product of the two dimensions.
 
 **Proof.** The generator is $-\frac{k_m\,\tilde{Ζ}\,\tilde{R}_{\Psi}}{m\,c^{2}}$, so its Hermitian conjugate is $-\frac{k_m\,\tilde{R}_{\Psi}\,\tilde{Ζ}^{\dagger}}{m\,c^{2}}$; anti-Hermiticity of the generator for all Hermitian $\tilde R_\Psi$ therefore reads $-\tilde R_\Psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde R_\Psi$ for all Hermitian $\tilde R_\Psi$, which at $\tilde R_\Psi=e_t$ forces $\tilde{Ζ}^\dagger=-\tilde{Ζ}$ (so a general root of $-e_t$, which need not be anti-Hermitian, is excluded) and then requires $\tilde R_\Psi\tilde{Ζ}=\tilde{Ζ}\tilde R_\Psi$ for all Hermitian $\tilde R_\Psi$, hence $\tilde{Ζ}$ central. The central roots of $-e_t$ are $\pm i e_t$. The non-central root $\vec{Ζ}=\vec e_z$ with $\tilde R_\Psi=i\vec e_x$ gives the generator $-\frac{k_m\,i\,\vec e_{y}}{m\,c^{2}}$, which is Hermitian and generates a non-$*$-unitary flow.
 
-**Consequence.** The framework cannot realise a genuinely "biquaternionic" quantum physics whose evolution preserves the norm for the full class of Hermitian generators: that demand collapses the scalar field to the centre $\mathbb{C}$, and the algebra acts as an algebra of operators over that field. A non-central unit is not excluded outright, but its reach is exactly its commutant: $\vec{Ζ}=\vec e_x$ gives $-\frac{k_m\,\vec e_{x}\,\tilde{R}_{\Psi}}{m\,c^{2}}$, which is anti-Hermitian for precisely those Hermitian $\tilde R_\Psi$ commuting with $\vec e_x$, and Hermitian — hence norm-violating — for $\tilde R_\Psi=i\vec e_y$, say. The alternative units $\vec e_x,\vec e_y,\vec e_z$, and more generally the unit pure quaternions, are roots of $-e_t$ and are available as algebraic structures, but not as units of a norm-preserving dynamics; the elements $i\vec e_k$ are not roots of $-e_t$ at all, since $(i\vec e_k)^2=+e_t$.
+**Consequence.** The framework cannot realise a genuinely "biquaternionic" quantum physics whose evolution preserves the norm for the full class of Hermitian generators: that demand collapses the scalar field to the centre $\mathbb{C}$, and the algebra acts as an algebra of operators over that field. A non-central unit is not excluded outright, but its reach is exactly its commutant: $\vec{Ζ}=\vec e_x$ gives $-\frac{k_m\,\vec e_{x}\,\tilde{R}_{\Psi}}{m\,c^{2}}$, which is anti-Hermitian for precisely those Hermitian $\tilde R_\Psi$ commuting with $\vec e_x$, and Hermitian — hence norm-violating — for $\tilde R_\Psi=i\vec e_y$, say. The alternative units $\vec e_x,\vec e_y,\vec e_z$, and more generally the unit pure quaternions, are roots of $-e_t$ and are available as algebraic structures, but not as units of a norm-preserving dynamics; the elements $i\vec e_\eta$ are not roots of $-e_t$ at all, since $(i\vec e_\eta)^2=+e_t$.
 
 **Remedy.** Either give up norm preservation — which departs from quantum physics — or restrict the class of generators to those commuting with the chosen $\tilde{Ζ}$ — which singles out a subtheory. The framework's own choice is the third: accept that the scalar field is $\mathbb{C}$, and read $\mathbb{B}$ as an algebra of operators over it, which is what makes the state space, the plain form and the unitarity group work.
 
@@ -238,7 +238,7 @@ the last two verified numerically on random elements of each sector. The commuta
 
 **Statement.** Multiplication by $i$ exchanges the two sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so $\mathbb{B}_{\Psi}$ is not a complex vector space. The Hermitian elements cannot be a complex Hilbert space in their own right.
 
-**Proof.** For every basis element of $\mathbb{B}_{\Psi}$, $i(i\vec e_k)=-\vec e_k$ for $k=x,y,z$ and $i e_t=ie_t$, so
+**Proof.** For every basis element of $\mathbb{B}_{\Psi}$, $i(i\vec e_\eta)=-\vec e_\eta$ for $\eta=x,y,z$ and $i e_t=ie_t$, so
 $$
 \boxed{\;i\mathbb{B}_{\Psi}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{B}_{\Phi}\;}.
 $$
@@ -285,7 +285,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** The algebra contains no scale: it is invariant under the simultaneous rescaling of all its elements, and it admits no relation that could fix a mass, a length, or an energy.
 
-**Proof.** Every defining relation $\vec e_k^2=-e_t$ for $k=x,y,z$, $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\neq j$ in $\{x,y,z\}$, $i^2=-1$ is scale-free. A central element $\lambda e_t$ satisfies no equation with a numerical solution by O4; and the biquaternion norm is quadratic, so it rescales by the square of the element. No combination of the relations produces a number with the dimensions of a physical scale.
+**Proof.** Every defining relation $\vec e_\eta^2=-e_t$ for $\eta=x,y,z$, $\vec e_i \vec e_j=\epsilon_{ij\eta}\vec e_\eta$ for $i\neq j$ in $\{x,y,z\}$, $i^2=-1$ is scale-free. A central element $\lambda e_t$ satisfies no equation with a numerical solution by O4; and the biquaternion norm is quadratic, so it rescales by the square of the element. No combination of the relations produces a number with the dimensions of a physical scale.
 
 **Consequence.** The framework cannot explain the origin of mass or of any dimensionful parameter; masses enter through central coefficients such as $m e_t$.
 
@@ -413,7 +413,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ for $k=x,y,z$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ for $\eta=x,y,z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |

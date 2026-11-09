@@ -40,13 +40,13 @@ Two features are used constantly. First, a state that carries a pure state is a 
 
 ### The Left Action Carries Spin One-Half
 
-The rotation subgroup acts on a state by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde r\tilde{Ξ}_{\mathrm{sp}}$, with $\tilde r$ a unit real quaternion. Its generators are $\tilde S_{\Psi,k}$, and the sum of their squares in the algebra is
+The rotation subgroup acts on a state by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde r\tilde{Ξ}_{\mathrm{sp}}$, with $\tilde r$ a unit real quaternion. Its generators are $\tilde S_{\Psi,\eta}$, and the sum of their squares in the algebra is
 
 $$
 \tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2=\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}\,e_t .
 $$
 
-The computation is one line from the squares of the generators, $\vec e_k^2=-e_t$; the value was checked by recomputation and is exact.
+The computation is one line from the squares of the generators, $\vec e_\eta^2=-e_t$; the value was checked by recomputation and is exact.
 
 Left multiplication by a central element is the identity map of $\mathbb{B}$. The left action of the Casimir is therefore multiplication by $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}$ on every element, and on every irreducible piece of the left action the spin convention gives $s(s+1)=\tfrac34$, hence $s=\tfrac12$. The L part is stable under left multiplication and carries the same Casimir, so its pieces carry $s=\tfrac12$. The carrier of states carries spin one-half.
 
@@ -115,13 +115,13 @@ The carrier of states cannot host a spin-$0$ field for three reasons, one for ea
 
 ### No One-Dimensional Carrier
 
-Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}_{\mathrm{sp}}$ in it. Then $\tilde{Q}\tilde{Ξ}_{\mathrm{sp}}=\lambda(\tilde{Q})\tilde{Ξ}_{\mathrm{sp}}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_k^2=-e_t$,
+Suppose a one-dimensional subspace is carried into itself by every left multiplication. Choose a nonzero $\tilde{Ξ}_{\mathrm{sp}}$ in it. Then $\tilde{Q}\tilde{Ξ}_{\mathrm{sp}}=\lambda(\tilde{Q})\tilde{Ξ}_{\mathrm{sp}}$ for every $\tilde{Q}$, with $\lambda(\tilde{Q})$ a complex number. The map $\lambda$ is multiplicative, $\lambda(\tilde{Q}_1\tilde{Q}_2)=\lambda(\tilde{Q}_1)\lambda(\tilde{Q}_2)$, and $\lambda(e_t)=1$. From $\vec e_\eta^2=-e_t$,
 
 $$
-\lambda(\vec e_k)^2=-1,
+\lambda(\vec e_\eta)^2=-1,
 $$
 
-so $\lambda(\vec e_k)=\pm i$ for each spatial direction. From $\vec e_x\vec e_y=\vec e_z$,
+so $\lambda(\vec e_\eta)=\pm i$ for each spatial direction. From $\vec e_x\vec e_y=\vec e_z$,
 
 $$
 \lambda(\vec e_x)\lambda(\vec e_y)=\lambda(\vec e_z).
@@ -296,7 +296,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_{\Psi,k}$ has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.
+A scalar field carries the trivial action of the Lorentz group: the transformation moves the argument and leaves the value alone. The carrier of states in the biquaternion framework is an element of $\mathbb{B}$, split into an L part and an R part by a label that takes two values; left multiplication keeps the label, and the L part is a carrier of the left action. The left action of the rotation generators $\tilde S_{\Psi,\eta}$ has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ on every element, so every irreducible piece of the left action carries spin $\tfrac{1}{2}$. No nonzero state is rotation-invariant: the rotation by $-e_t$ negates it.
 
 The rotationally invariant subspace of largest dimension in $\mathbb{B}$ is the centre $\mathbb{B}_{C}$, obtained as the centralizer of the quaternion units: $[\vec e_\nu,\tilde{Q}]=0$ for $\nu\in\{x,y,z\}$ forces $\tilde{Q}=Q_te_t$. The centre is a subalgebra isomorphic to $\mathbb{C}$, it is not stable under left multiplication, and it meets the states only at zero. This gives three reasons why the spin-$0$ value escapes the carrier of states. No one-dimensional subspace is carried into itself by every left multiplication, so the trivial action has no carrier. The rotationally invariant elements are exactly the central ones, so the scalar's value space is forced to be the centre. And the trivial action is not a part of either label: under the rotation subgroup it appears in the product of the two labels, while the Lorentz-scalar channels are the antisymmetric pairing of two states of one label and the mixed pairing of two states of opposite labels. A scalar is a product of two states, not a value of the state action.
 
@@ -314,7 +314,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{B}_{C}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | A state and its two labelled parts |
 | $\tilde\Pi(\vec u)$ | Pure state carrying the unit direction $\vec u$ |
-| $\tilde S_{\Psi,k}$ | Rotation generator; the left action has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ |
+| $\tilde S_{\Psi,\eta}$ | Rotation generator; the left action has Casimir $\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}e_t$ |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}} e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\xi_{\mathrm{scl}}=\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2}$ | Complex scalar coefficient |
 | $H=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\tilde\xi^{*}+\tilde\xi\tilde{Ξ}_{\mathrm{sp}}^*)$ | Hermitian product of two states, in $\mathbb{B}_{\Psi}$ |

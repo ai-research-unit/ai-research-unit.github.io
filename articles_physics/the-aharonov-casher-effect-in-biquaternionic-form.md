@@ -14,11 +14,11 @@ This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mat
 
 1. **The AC phase is a holonomy of the spinor.** It is the integral of a spin-space connection whose values are Hermitian elements of $\mathbb{B}_{\Psi}$ built from the electric field and the spin operator. It is therefore the same kind of object as the Berry and Aharonov–Anandan phases of non-relativistic spin.
 2. **The coupling is a rest-frame magnetic field.** A magnetic dipole moving through an electric field sees, in its rest frame, the effective magnetic field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$; the AC phase is the first-order term in $v/c$ of the Zeeman coupling to that field. The derivation uses only the first-order rest-frame transformation, which is the non-relativistic approximation; the exact treatment belongs to the relativistic series.
-3. **For a spin-1/2 the connection is an $SU(2)$ connection.** With $\vec\mu = \gamma\vec S$ and $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, the connection is proportional to the spin operator, and its holonomy is a rotor in $\mathbb{B}_{H}$ together with a central phase — the same two faces as the geometric phase of non-relativistic spin.
+3. **For a spin-1/2 the connection is an $SU(2)$ connection.** With $\vec\mu = \gamma\vec S$ and $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, the connection is proportional to the spin operator, and its holonomy is a rotor in $\mathbb{B}_{H}$ together with a central phase — the same two faces as the geometric phase of non-relativistic spin.
 4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{k_m\,ϙ}{m\,c}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{k_m}{m\,c^{3}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
 5. **The phase is measurable and has been measured.** Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, with $\mathbf e=(\vec e_x,\vec e_y,\vec e_z)$ the vector of quaternion units, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, with $\mathbf e=(\vec e_x,\vec e_y,\vec e_z)$ the vector of quaternion units, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the phase from the action and the Lagrangian route.
@@ -82,7 +82,7 @@ $$
 \boxed{\;\mathcal{A}_{AC} = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r\;},
 $$
 
-a one-form with values in the Hermitian subspace $\mathbb{B}_{\Psi}$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
+a one-form with values in the Hermitian subspace $\mathbb{B}_{\Psi}$ (the spin components $i \vec e_\eta$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
 
 $$
 \theta_{\mathrm{pha},AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
@@ -251,7 +251,7 @@ The geometric character of the phase is established by the **reversal tests**. R
 **What the algebra organises.**
 
 - **A common holonomy language.** The AC phase is the integral of an $\mathbb{B}_{\Psi}$-valued connection, exactly as the Berry and Aharonov–Anandan phases of the preceding article are integrals of a spinor connection. The three are the same kind of object, distinguished by which field couples to the spin.
-- **The spin-1/2 $SU(2)$ structure.** With $\vec\mu = \gamma\vec S$ and $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, the AC connection is proportional to the spin operator, so its holonomy is a rotor in $\mathbb{B}_{H}$ and its abelian part is the central phase. The abelian/non-abelian distinction is the eigenstate/superposition distinction, as in the geometric-phase article.
+- **The spin-1/2 $SU(2)$ structure.** With $\vec\mu = \gamma\vec S$ and $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, the AC connection is proportional to the spin operator, so its holonomy is a rotor in $\mathbb{B}_{H}$ and its abelian part is the central phase. The abelian/non-abelian distinction is the eigenstate/superposition distinction, as in the geometric-phase article.
 - **The dual triangle is visible.** AB, AC and HMW all have the form of a coupling constant times a field integral; the algebra collects them as integrals of connections built from the field and the appropriate moment operator.
 - **Parity selects the coupling.** A bare spin-1/2 has a magnetic moment but no electric dipole; hence it exhibits AC and not HMW. The selection is the parity argument of the Zeeman–Stark article.
 
@@ -295,11 +295,11 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of the AC connection |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the holonomy rotors |
-| $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | Spin-1/2 operator |
+| $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ | Spin-1/2 operator |
 | $\vec\mu = \gamma\vec S$ | Magnetic dipole moment |
 | $\vec B_2 = \vec B - \tfrac{1}{c^2}\vec v\times\vec E$ | Rest-frame magnetic field (first order in $v/c$) |
 | $\theta_{\mathrm{pha},AC} =\frac{k_m}{m\,c^{3}}\oint(\vec E\times\vec\mu)\cdot d\vec r$ | Aharonov–Casher phase |

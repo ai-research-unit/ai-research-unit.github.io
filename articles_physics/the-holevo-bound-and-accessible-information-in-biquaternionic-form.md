@@ -302,7 +302,7 @@ its proof being the data-processing inequality applied to the measurement channe
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and effects) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde{Ϛ}_{\Psi,x} = \tfrac12(e_t + i\vec r_x)$ | Ensemble state |
 | $\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\tilde{Ϛ}_{\Psi,x}$ | Average state |

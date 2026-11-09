@@ -169,7 +169,7 @@ with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^
 
 ## The Eigenframe
 
-The eigenspinor carries the rest frame of the particle, so its images of the rest-frame axes are the particle's own frame in the laboratory. With $\mathcal{E}_0 = ie_t$ and $\mathcal{E}_k = \vec e_k$ the basis of $\mathbb{B}_{\Phi}$,
+The eigenspinor carries the rest frame of the particle, so its images of the rest-frame axes are the particle's own frame in the laboratory. With $\mathcal{E}_0 = ie_t$ and $\mathcal{E}_k = \vec e_\eta$ the basis of $\mathbb{B}_{\Phi}$,
 
 $$
 \tilde{E}_{\Psi,(\mu)}(\tau) = \tilde U(\tau)\,\mathcal{E}_\mu\,\tilde U(\tau)^{*} \in \mathbb{B}_{\Phi} ,

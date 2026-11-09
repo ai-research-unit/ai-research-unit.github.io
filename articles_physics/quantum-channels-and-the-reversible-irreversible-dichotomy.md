@@ -12,7 +12,7 @@ The relation to the two subspaces is the conceptual thread. States live in $\mat
 
 Two cautionary notes, in the spirit of the companion articles. First, the mathematics is **standard quantum information theory** transcribed into biquaternion notation; no result below depends on the physical hypothesis that $\mathbb{B}_{\Psi}$ is a distinct sector of the world. Second, the reformulation **reframes** the dichotomy without resolving the conceptual problems that attend it in standard quantum physics — the position taken in *Entangled Subsystems in the Biquaternion Framework*, that the framework changes the language and not the physics, applies here too.
 
-The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}$; and the trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$.
+The conventions are those of the companion articles: the quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the central scalar imaginary $i$; the fixed-point subspaces $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian); a general element $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}$; and the trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$.
 
 ## The State Space and the Plain Form
 
@@ -169,7 +169,7 @@ for an isometry $\tilde{V}_{\Phi}$ into the system tensor an environment, with $
 
 Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\vec r \mapsto M\vec r + \vec r_t$. The $*$-unitary channels are the rotations $M \in SO(3)$, $\vec t = 0$. Two canonical types are distinguished by whether the origin is fixed:
 
-- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\Delta_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec r \mapsto (1-p)\vec r$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_k)^{*}(i\vec e_k) = e_t$.
+- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\Delta_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec r \mapsto (1-p)\vec r$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_\eta)^{*}(i\vec e_\eta) = e_t$.
 - **Non-unital channels** have $\vec t \neq 0$ and move the maximally mixed state off centre. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(r_1, r_2, r_3) \mapsto (\sqrt{1-\gamma}\,r_1,\ \sqrt{1-\gamma}\,r_2,\ \gamma + (1-\gamma)r_3)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.
 
 Dephasing, treated next, is unital: it contracts the ball toward an *axis* rather than its centre.
@@ -181,7 +181,7 @@ The infinitesimal version of the dichotomy is the **Lindblad equation** (the Gor
 $$
 \boxed{\;\frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
 = -\frac{k_m\,i}{m\,c^{2}}\,[H, \tilde{Ϛ}_{\Psi}]
-+ \sum_k  \left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
++ \sum_\eta  \left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 - \tfrac{1}{2}\left\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}, \tilde{Ϛ}_{\Psi}\right\}\right)\;},
 $$
 
@@ -319,7 +319,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $\mathbb{B}_{C}$ | Complex subspace (centre); trace part of a Hamiltonian |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace (rotation rotors) |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State of the informational sector |
 | $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ | Observable / Hamiltonian |

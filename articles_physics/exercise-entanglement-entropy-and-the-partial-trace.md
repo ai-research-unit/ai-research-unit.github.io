@@ -134,7 +134,7 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 ### The biquaternion form of the worked family
 
-The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.
+The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$. Equivalently, $\sigma_\eta\mapsto i \vec e_\eta$.
 
 For the state $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
 
@@ -164,7 +164,7 @@ $$
 =2\,\delta_{\nu t}\,e_\mu,
 $$
 
-because $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$ for $k\in\{x,y,z\}$. Term by term:
+because $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0$ for $k\in\{x,y,z\}$. Term by term:
 
 - $\tfrac14 e_t\otimes e_t\mapsto\tfrac14\cdot 2\,e_t=\tfrac12 e_t$;
 - $-\tfrac14 \vec e_z\otimes \vec e_z\mapsto 0$;
@@ -387,16 +387,16 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector) |
-| $\mathrm{Tr}_\mathbb{B}$ | Trace on one factor: $\mathrm{Tr}_\mathbb{B}(e_t)=2$, $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$ |
+| $\mathrm{Tr}_\mathbb{B}$ | Trace on one factor: $\mathrm{Tr}_\mathbb{B}(e_t)=2$, $\mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0$ |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $\mathrm{Tr}_1,\mathrm{Tr}_2$ | Partial traces: $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace equals twice the scalar part |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Single-qubit idempotents |
-| $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
+| $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_\eta\epsilon_k \vec e_\eta\otimes \vec e_\eta)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $\tilde\Pi_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | General state of $\mathbb{B}_{\Psi}$, $|\vec r|\le1$ |

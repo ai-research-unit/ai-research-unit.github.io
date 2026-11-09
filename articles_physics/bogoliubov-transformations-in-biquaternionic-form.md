@@ -54,7 +54,7 @@ m_{\mathrm{fop},2i-1} = a_{\mathrm{fop},i} + a_{\mathrm{fop},i}^{\dagger},
 \qquad
 m_{\mathrm{fop},2i} = -i\big(a_{\mathrm{fop},i} - a_{\mathrm{fop},i}^{\dagger}\big) ,
 \qquad
-\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\} = 2\delta_{kl}e_t ,
+\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\} = 2\delta_{\eta l}e_t ,
 $$
 the Bogoliubov transformation is an orthogonal transformation $m_{\mathrm{fop},k}\mapsto\sum_l O_{kl}m_{\mathrm{fop},l}$ with $O\in O(2n)$, and the canonical conditions above are the statement that $O$ preserves the Majorana metric. This is the form in which the group structure is transparent:
 
@@ -82,7 +82,7 @@ $$
 $$
 This is the $n=1$ instance of the general parametrization, and both $\vec b$ and $\vec b^{*}$ are elements of $\mathbb{B}$ for every $\alpha,\beta$.
 
-**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\}=2\delta_{kl}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
+**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
 
 **The first anticommutator.** Using $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\{\vec\Upsilon_x,\vec\Upsilon_x\}=\{\vec\Upsilon_y,\vec\Upsilon_y\}=0$,
 $$
@@ -263,7 +263,7 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Single-mode ladder |
 | $a_{\mathrm{fop}}$, $b_{\mathrm{fop}}$ | Abstract ladder and its Bogoliubov transform, $b_{\mathrm{fop}}=u\,a_{\mathrm{fop}}+v\,a_{\mathrm{fop}}^{\dagger}$ |
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Number operator |
@@ -274,7 +274,7 @@ Fermionic squeezing requires at least two modes. For $n$ modes the Bogoliubov gr
 | $\{\vec b,\vec b\}=2\alpha\beta e_t$ | Second anticommutator (forces $\alpha\beta=0$) |
 | $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$ | One-mode Bogoliubov group (phases and particle–hole) |
 | $u,v$ | General Bogoliubov matrices, $uu^\dagger+vv^\dagger=I$, $uv^T+vu^T=0$ |
-| $m_{\mathrm{fop},k}$ | Majorana operators, $\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\}=2\delta_{kl}e_t$; for one mode the basis operators $iL_x$, $iL_y$ |
+| $m_{\mathrm{fop},k}$ | Majorana operators, $\{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$; for one mode the basis operators $iL_x$, $iL_y$ |
 | $O(2n)$, $\mathrm{U}(n)$, $O(2n)/\mathrm{U}(n)$ | Bogoliubov group, Fock subgroup, squeezing coset (discrete at $n=1$) |
 | $n(n-1)$, $n(n+1)$ | Squeezing-coset dimensions (fermion, boson) |
 | $|u|^2=(1+\exp(-\beta\omega))^{-1}$, $|v|^2=(\exp(\beta\omega)+1)^{-1}$ | Thermal fermionic coefficients |

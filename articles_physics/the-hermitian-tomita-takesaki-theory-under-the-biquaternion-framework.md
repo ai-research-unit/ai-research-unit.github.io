@@ -151,7 +151,7 @@ Identifying the vector $\pi(\tilde{Q}_3)\Omega=\tilde{Q}_3e_t$ with the algebra 
 $$
 S_0(\tilde{Q}_3) = \tilde{Q}_3^{*} .
 $$
-**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{Q}_3=\sum_\mu Q_\mu e_\mu$ one has $\tilde{Q}_3^{*}=\bar Q_te_t-\sum_{k=1}^{3}\bar Q_k\vec e_k$, using $e_t^\dagger=e_t$ and $\vec e_k^{*}=-\vec e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
+**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{Q}_3=\sum_\mu Q_\mu e_\mu$ one has $\tilde{Q}_3^{*}=\bar Q_te_t-\sum_{\eta=1}^{3}\bar Q_\eta\vec e_\eta$, using $e_t^\dagger=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
@@ -305,7 +305,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |

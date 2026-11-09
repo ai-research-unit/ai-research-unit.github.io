@@ -214,7 +214,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$ |
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace; Euclidean slice $\mathbb R^4$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary |
 | $x=x_4e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$ | Quaternionic coordinate |
 | $z_1=x_2+ix_1,\ z_2=x_4+ix_3$ | Complex coordinates, defining module $\mathbb C^2$ |

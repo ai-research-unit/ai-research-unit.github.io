@@ -130,7 +130,7 @@ $$
 so the Lyapunov exponents of the tangent dynamics are read from $L(r'_t)$. Writing $\sigma_1\ge\sigma_2\ge\sigma_3$ for the singular values of $L(r'_t)$, the exponents are
 
 $$
-\lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\sigma_k\!\left(L(r'_t)\right),
+\lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\sigma_\eta\!\left(L(r'_t)\right),
 $$
 
 and for a semigroup $L(r'_t) = \exp(r'_t A)$, $\lambda_k$ are the real parts of the eigenvalues of the generator $A$.
@@ -280,7 +280,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $\tilde{Ϛ}_{\Psi}\mapsto\tilde u\tilde{Ϛ}_{\Psi}\tilde u^{*}$ | Rotor conjugation; isometry, $\lambda_k=0$ |
 | $Ξ_{r'_{t}}$, $L(r'_t)$, $\vec r_t(r'_t)$ | Channel semigroup and its affine Bloch action |
 | $\vec r\mapsto L(r'_t)\vec r+\vec r_t(r'_t)$ | Affine Bloch action of a channel |
-| $\sigma_k(L(r'_t))$ | Singular values; $\lambda_k = \lim_t\tfrac{1}{r'_{t}}\log\sigma_k$ |
+| $\sigma_\eta(L(r'_t))$ | Singular values; $\lambda_k = \lim_t\tfrac{1}{r'_{t}}\log\sigma_\eta$ |
 | $\sigma_1(L(r'_t))\le1$ | Contraction (trace-distance contractivity of CPTP maps) |
 | $\lambda_k\le0$ | No positive exponent for a channel semigroup |
 | $L(r'_t) = \mathrm{diag}(\exp(-\Gamma r'_t),\exp(-\Gamma r'_t),1)$ | Dephasing semigroup |

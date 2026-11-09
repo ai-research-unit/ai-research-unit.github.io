@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 Earlier exercises treated a single qubit: a single measurement (Exercise: Measuring Spin Along an Arbitrary Direction), time evolution (Exercise: Spin Precession in a Magnetic Field), and successive measurements (Exercise: Successive Measurements of Spin). This exercise treats a **two-qubit system**, and introduces the first genuinely quantum-mechanical correlation: **entanglement**.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The trace on $\mathbb{B}\otimes\mathbb{B}$ is the tensor product of the traces on each factor: $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The trace on $\mathbb{B}\otimes\mathbb{B}$ is the tensor product of the traces on each factor: $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
 ## The Exercise
 
@@ -71,7 +71,7 @@ The four expectation values in the singlet state are:
 - $\langle\vec u_b\cdot\boldsymbol{\sigma}_2\rangle = 0$, by the same argument.
 - $\langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,k}a_j b_k\langle\sigma_{1j}\sigma_{2k}\rangle = -\sum_j a_j b_j = -\vec u_a\cdot\vec u_b$.
 
-The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2k}\rangle = -\delta_{jk}$.
+The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2k}\rangle = -\delta_{j\eta}$.
 
 Substituting,
 
@@ -111,7 +111,7 @@ $$
 
 For the diagonal pairs $\mu = \nu$, the product $e_\mu\circ e_\mu$ equals $e_t$ for $\mu = t$ and $-e_t$ for $\mu\in\{x,y,z\}$. In both cases the tensor product $(e_\mu\circ e_\mu)\otimes(e_\mu\circ e_\mu)$ equals $e_t\otimes e_t$, so the four diagonal terms contribute $4\,e_t\otimes e_t$ in total.
 
-For the off-diagonal pairs $\mu \neq \nu$, the twelve ordered pairs $(\mu,\nu)$ with $\mu \neq \nu$ group into six unordered pairs $\{\mu,\nu\}$. Each unordered pair contributes two terms to the sum, and in every case the two terms are equal: for pairs involving the identity (of the form $\{t,\nu\}$), the products $e_t \vec e_\nu$ and $\vec e_\nu e_t$ are both equal to $\vec e_\nu$, so the two terms $\vec e_\nu\otimes \vec e_\nu$ coincide; for pairs not involving the identity (of the form $\{\mu,\nu\}$ with $\mu, \nu \in \{x,y,z\}$), the products $e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda} e_\lambda$ and $\vec e_\nu e_\mu = -\epsilon_{\mu\nu\lambda} e_\lambda$ are opposites, and the tensor product squares the sign, so again the two terms $e_\lambda\otimes e_\lambda$ coincide. Concretely, the three pairs involving $e_t$ contribute $2\,\vec e_k\otimes \vec e_k$ for $k = 1, 2, 3$, and the three pairs not involving $e_t$ contribute $2\,e_\lambda\otimes e_\lambda$ for $\lambda$ equal to the remaining index. Summing, each of $\vec e_x\otimes \vec e_x$, $\vec e_y\otimes \vec e_y$, $\vec e_z\otimes \vec e_z$ appears four times, and the off-diagonal terms contribute
+For the off-diagonal pairs $\mu \neq \nu$, the twelve ordered pairs $(\mu,\nu)$ with $\mu \neq \nu$ group into six unordered pairs $\{\mu,\nu\}$. Each unordered pair contributes two terms to the sum, and in every case the two terms are equal: for pairs involving the identity (of the form $\{t,\nu\}$), the products $e_t \vec e_\nu$ and $\vec e_\nu e_t$ are both equal to $\vec e_\nu$, so the two terms $\vec e_\nu\otimes \vec e_\nu$ coincide; for pairs not involving the identity (of the form $\{\mu,\nu\}$ with $\mu, \nu \in \{x,y,z\}$), the products $e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda} e_\lambda$ and $\vec e_\nu e_\mu = -\epsilon_{\mu\nu\lambda} e_\lambda$ are opposites, and the tensor product squares the sign, so again the two terms $e_\lambda\otimes e_\lambda$ coincide. Concretely, the three pairs involving $e_t$ contribute $2\,\vec e_\eta\otimes \vec e_\eta$ for $\eta = 1, 2, 3$, and the three pairs not involving $e_t$ contribute $2\,e_\lambda\otimes e_\lambda$ for $\lambda$ equal to the remaining index. Summing, each of $\vec e_x\otimes \vec e_x$, $\vec e_y\otimes \vec e_y$, $\vec e_z\otimes \vec e_z$ appears four times, and the off-diagonal terms contribute
 
 $$
 4\left(\vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
@@ -215,7 +215,7 @@ $$
 
 the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_k \vec e_k\otimes \vec e_k$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_\eta \vec e_\eta\otimes \vec e_\eta$ in the singlet idempotent, which couple the two qubits.
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -250,11 +250,11 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ | Singlet state |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
 | $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
 | $\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint idempotent |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |

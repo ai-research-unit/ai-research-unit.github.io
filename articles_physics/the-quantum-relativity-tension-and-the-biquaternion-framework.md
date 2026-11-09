@@ -218,12 +218,12 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| ${}^{*}$ | Hermitian conjugation ($\vec e_k^{*}=-\vec e_k$, $i^{*}=-i$) |
-| ${\natural}$ | Quaternion conjugation ($\vec e_k^{\natural}=-\vec e_k$, $i^{\natural}=i$) |
-| $\bar{\cdot}$ | Coefficient conjugation, $\bar{\cdot}=\natural\,{}^{*}$ (negates $i$, fixes $\vec e_k$) |
+| ${}^{*}$ | Hermitian conjugation ($\vec e_\eta^{*}=-\vec e_\eta$, $i^{*}=-i$) |
+| ${\natural}$ | Quaternion conjugation ($\vec e_\eta^{\natural}=-\vec e_\eta$, $i^{\natural}=i$) |
+| $\bar{\cdot}$ | Coefficient conjugation, $\bar{\cdot}=\natural\,{}^{*}$ (negates $i$, fixes $\vec e_\eta$) |
 | $\flat=-{}^{*}$ | Real structure with fixed space $\mathbb{B}_{\Phi}$; not an involution of the ring |
 | $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ | The central element exchanges the sectors |
 | $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Trace; $\mathrm{Tr}(e_t)=2$ |
@@ -241,7 +241,7 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\tilde{Q}_2\tilde{Q}_2^{*}=e_t$ | $*$-Unitary element (reversible evolution); $\langle\tilde{Q}_2\tilde{Q}_1\tilde{Q}_2^{*}\rangle_{\natural}=\langle\tilde{Q}_1\rangle_{\natural}$ |
 | $\tilde{Q}_2^2=\tilde{Q}_2=\tilde{Q}_2^{*}$ | Idempotent element (measurement update) |
 | $\tilde{U}\tilde{U}^{\natural}=e_t$ | Lorentz rotor (unit-norm biquaternion), group $SL(2,\mathbb{C})$; the $*$-unitary and unit-norm classes meet in $SU(2)$ |
-| $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Electromagnetic field-strength bivector, in $\mathrm{span}_\mathbb{R}\{\vec e_k,i\vec e_k\}$, in neither sector |
+| $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Electromagnetic field-strength bivector, in $\mathrm{span}_\mathbb{R}\{\vec e_\eta,i\vec e_\eta\}$, in neither sector |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra of Programme 4 |
 | $c$, $c_0$ | Speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and its vacuum value |
 | $\frac{m\,c}{k_m}$ | Reduced Planck constant (in the path-integral weight $\exp(\frac{k_m\,i\,S}{m\,c})$) |

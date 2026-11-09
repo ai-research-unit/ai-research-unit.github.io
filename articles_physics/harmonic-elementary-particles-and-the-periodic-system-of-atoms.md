@@ -180,7 +180,7 @@ so the density falls as $r^{-1}$ and the energy as $r^{-2}$. One numerical detai
 
 Two structural facts about the radial profile are worth extracting, since they are what the "atom" section uses.
 
-- **The charge density has nodal spheres, the energy density has none.** Setting $j_0(\omega r) = 0$ gives the spherical nodes of the density at $r_k = \pi k/\omega$, $k = 1,2,3,\dots$, verified for $k = 1,\dots,4$. The energy density, however, is $\tfrac12\omega^2(j_0^2+j_1^2)$, which is strictly positive: clearing denominators writes the node condition as $x^2 + \sin^2x - x\sin 2x = 0$ with $x = \omega r$, and that function is positive for every $x > 0$. The energy density of a spherical harmonic pulsar therefore has no nodes at all.
+- **The charge density has nodal spheres, the energy density has none.** Setting $j_0(\omega r) = 0$ gives the spherical nodes of the density at $r_\eta = \pi k/\omega$, $\eta = 1, 2, 3,\dots$, verified for $k = 1,\dots,4$. The energy density, however, is $\tfrac12\omega^2(j_0^2+j_1^2)$, which is strictly positive: clearing denominators writes the node condition as $x^2 + \sin^2x - x\sin 2x = 0$ with $x = \omega r$, and that function is positive for every $x > 0$. The energy density of a spherical harmonic pulsar therefore has no nodes at all.
 - **The source's own node equation is mis-signed but reaches the same conclusion.** The paper prints the condition as $x^2 + x\sin 2x - \sin^2x = 0$, which is the negative of the two terms beyond $x^2$; the derived equation is $x^2 + \sin^2x - x\sin 2x = 0$. Both were scanned numerically on a fine grid, and neither has a positive real root, so the conclusion the paper draws — no nodal spheres in the energy — survives the slip.
 
 ## The Spherical Spinor
@@ -192,7 +192,7 @@ $$
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
-r_{,k} = \frac{r_k}{r},$$
+r_{,k} = \frac{r_\eta}{r},$$
 
 so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\vec u_e$ the derived form is
 
@@ -206,7 +206,7 @@ and the paper's stated general form, its equation (4.4), carries the opposite si
 The energy density is the same function of the Bessel functions as the pulsar's. Because the scalar and vector parts contribute with the weights $r_{,1}^2$ and $r_{,2}^2 + r_{,3}^2$, and because
 
 $$
-\sum_{k=1}^{3} r_{,k}^2 = 1
+\sum_{\eta=1}^{3} r_{,k}^2 = 1
 $$
 
 identically, the two contributions complete to
@@ -271,7 +271,7 @@ $$
 = \omega_0\left(j_0(\omega_0 r) + j_1(\omega_0 r)\vec u_x\right)\exp(-i\omega_0\tau).
 $$
 
-Everything in the preceding sections applies to it without change: the charge density at the centre is $\omega_0$, the density falls as $r^{-1}$, the energy density as $r^{-2}$, the energy density has no nodal spheres, the charge density has them at $r_k = \pi k/\omega_0$, and the energy flux vanishes identically — which the paper reads as the statement that the atom does not radiate.
+Everything in the preceding sections applies to it without change: the charge density at the centre is $\omega_0$, the density falls as $r^{-1}$, the energy density as $r^{-2}$, the energy density has no nodal spheres, the charge density has them at $r_\eta = \pi k/\omega_0$, and the energy flux vanishes identically — which the paper reads as the statement that the atom does not radiate.
 
 Two comparisons must be made, and both are about what the object is not. It is **not** the hydrogen atom of the corpus. *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* and its relativistic companion solve the Coulomb two-body problem: a potential is inserted, the bound-state eigenvalue problem is set up, separated in spherical coordinates, and solved for the Rydberg spectrum. Here no potential is inserted, no two-body problem is posed, and no eigenvalue problem is solved: the object is a single monochromatic standing wave of the charge–current field, and its frequency is a free parameter. The two constructions share the spherical harmonics and the letter $\omega$ and nothing else. The programme's atom has no proton, no electron, no Coulomb field and no Rydberg series.
 
@@ -290,9 +290,9 @@ $$
 and each successive octave doubles the previous one, so that the frequency of the $k$-th tone in the $n$-th octave is
 
 $$
-\omega_{nk} = 2^n\gamma_k\,\omega,
+\omega_{nk} = 2^n\gamma_\eta\,\omega,
 \qquad
-\gamma_k \in \left\{1, \tfrac98, \tfrac54, \tfrac43, \tfrac32, \tfrac53, \tfrac{15}{8}, 2\right\},
+\gamma_\eta \in \left\{1, \tfrac98, \tfrac54, \tfrac43, \tfrac32, \tfrac53, \tfrac{15}{8}, 2\right\},
 $$
 
 where $\omega$ is the fundamental. The hydrogen atom is the tone *do* of the first octave. All the ratios were verified as stated: they are the classical just scale, they are rational, and consecutive octaves differ by the factor $2$.
@@ -301,10 +301,10 @@ The argument for a *pure* scale rather than the familiar twelve-tone equal tempe
 
 Two limits on the argument must be stated with it. First, the reasoning is about **commensurability**, which is a statement about superposition, not about atoms; nothing in the model couples an atom to another atom's tone, so the harmony that the argument establishes has nothing to act on. Second, the mapping from tones to elements is never fixed. The paper says only that the frequency, and hence the mass, increases with the tone, that the number of tones in an octave can grow with the octave, and that the previous octave's tones must be present. That leaves the assignment of an element to a tone free, and it does not touch the actual row lengths of the periodic table — $2, 8, 8, 18, 18, 32, 32$ — which the just scale's eight tones per octave do not produce.
 
-Since the one quantitative prediction the programme makes is that atomic masses stand in the ratios $2^n\gamma_k$, it is worth testing. It fails as stated, and it fails in the two ways such tests usually fail.
+Since the one quantitative prediction the programme makes is that atomic masses stand in the ratios $2^n\gamma_\eta$, it is worth testing. It fails as stated, and it fails in the two ways such tests usually fail.
 
 - **Read in mass order, it is wrong immediately.** With the lightest atoms assigned to the tones of the first octave in order, the mass of helium should be $\tfrac98$ of hydrogen's, whereas the measured ratio is about $3.97$.
-- **Read with a free octave for each element, it is vacuous.** If each element may sit on any tone of any octave, then all but lithium and nitrogen among the eight lightest atomic weights lie within about one per cent of some $2^n\gamma_k$ — but so they must, because the scale's ratios are ratios of small integers and atomic weights are close to integers, the mass number dominating the atomic weight. The test is not whether a weight is near a simple rational, which is nearly always true, but whether the simple rational is *predicted*; and the counterexample is lithium, whose weight ratio $6.885$ is not near any $2^n\gamma_k$ while being within $1.6$ per cent of the plain integer $7$, which is not in the scale at all.
+- **Read with a free octave for each element, it is vacuous.** If each element may sit on any tone of any octave, then all but lithium and nitrogen among the eight lightest atomic weights lie within about one per cent of some $2^n\gamma_\eta$ — but so they must, because the scale's ratios are ratios of small integers and atomic weights are close to integers, the mass number dominating the atomic weight. The test is not whether a weight is near a simple rational, which is nearly always true, but whether the simple rational is *predicted*; and the counterexample is lithium, whose weight ratio $6.885$ is not near any $2^n\gamma_\eta$ while being within $1.6$ per cent of the plain integer $7$, which is not in the scale at all.
 
 The programme's own admission is worth recording in its own words: it says that its model is "completely different, deterministic, based on the definition of real physical characteristics of elementary particles and atoms, not probabilistic". That is a statement of what the author intends the model to be. It is not an argument against the quantum theory, because it does not engage with the reasons that theory is probabilistic — the violation of the Bell inequalities, which the corpus treats in its own articles — and a deterministic model that reproduces no quantum number cannot displace a stochastic one that reproduces millions of them.
 
@@ -319,7 +319,7 @@ Established, and verified above by recomputation.
 3. The spherical spinor has the closed form $- \omega j_1 r_{,1} + \omega(j_0\vec e_x + j_1(r_{,3}\vec e_y-r_{,2}\vec e_z))$, the **same** energy density as the pulsar, and vanishing Poynting biquaternion.
 4. The vanishing Poynting biquaternion is a general property of standing monochromatic solutions with real amplitude components, not a special feature of these two.
 5. The central charge density is $\omega$ for the spherically symmetric pulsar and zero for every spinor and every pulsar with $n\geq1$, by the Bessel asymptotics.
-6. The charge density of the spherical pulsar has nodal spheres at $r_k = \pi k/\omega$; its energy density has no nodes.
+6. The charge density of the spherical pulsar has nodal spheres at $r_\eta = \pi k/\omega$; its energy density has no nodes.
 7. The just scale's ratios are rational and octave-doubled as stated.
 8. **Convolution with any structural biquaternion $K$ preserves solutions**, because differentiation passes through a convolution; the shift identity $D(S_{\vec s}f) = S_{\vec s}(Df)$ holds exactly; and taking $K$ to be a lattice of shifted $\delta$-functions therefore gives a lattice of shifted harmonic particles that is again a monochromatic solution — the paper's crystal construction.
 
@@ -339,7 +339,7 @@ The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)\vec u_
 
 The one construction in the paper that the corpus did not already have is the **convolution**: since a constant-coefficient differential operator commutes with convolution, convolving any monochromatic solution with an arbitrary structural biquaternion $K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ yields another solution, and choosing $K$ to be an inhomogeneous lattice of shifted $\delta$-functions produces a lattice of shifted harmonic pulsars — the paper's crystal, body, tissue and filament construction. This part is algebra and it was verified; the naming of the products as crystals is interpretation, and the lattice steps, weights and frequencies are free parameters, as everything else discrete in the programme is.
 
-What the algebra does not supply is everything the particle interpretation needs. The Helmholtz equation carries no boundary condition, so no frequency is selected and there is no spectrum; the identification of frequency with mass carries no constant, so no mass is predicted; the algebra has no spin or statistics, so the quantum names are labels on a heavy/light split; and the "hydrogen atom" shares nothing with the corpus's hydrogen articles but the spherical harmonics. The periodic system is placed on the just-intonation scale by hand, and its one testable consequence — that atomic masses stand in the ratios $2^n\gamma_k$ — fails in mass order (helium would be $\tfrac98$ of hydrogen, and is $3.97$ times it) and is vacuous when the octave is free, since the scale's ratios are simple rationals and atomic weights are near integers. The argument that the pure scale is required for commensurability is correct in itself and has nothing in the model to act on.
+What the algebra does not supply is everything the particle interpretation needs. The Helmholtz equation carries no boundary condition, so no frequency is selected and there is no spectrum; the identification of frequency with mass carries no constant, so no mass is predicted; the algebra has no spin or statistics, so the quantum names are labels on a heavy/light split; and the "hydrogen atom" shares nothing with the corpus's hydrogen articles but the spherical harmonics. The periodic system is placed on the just-intonation scale by hand, and its one testable consequence — that atomic masses stand in the ratios $2^n\gamma_\eta$ — fails in mass order (helium would be $\tfrac98$ of hydrogen, and is $3.97$ times it) and is vacuous when the octave is free, since the scale's ratios are simple rationals and atomic weights are near integers. The argument that the pure scale is required for commensurability is correct in itself and has nothing in the model to act on.
 
 The corpus's relation to this part of the programme is therefore the same as to the rest of it, and the same verdict applies with less to be said in praise of the additions: the monochromatic algebra — the factorisation, the Helmholtz correspondence, the pulsar and spinor closed forms, and the convolution that builds periodic structures from a single solution — is a genuine and reusable piece of the biquaternion formalism, and the particle, atom, crystal and periodic-system interpretations built on it are choices, none of which is forced by that algebra.
 
@@ -368,14 +368,14 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\tilde{Ξ}_{\mathrm{sp},nm}$ | Pulsar (scalar potential) |
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\tilde{Ξ}_{\mathrm{sp},nm}\vec e_\mu)$ | Spinor (vector potential) |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |
-| $r_{,k} = r_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
+| $r_{,k} = r_\eta/r$ | Direction cosines; $\sum_\eta r_{,k}^2 = 1$ |
 | $\tilde{\Sigma}_{\Psi} = \tfrac12\tilde J_{\Phi,\mathrm{eg}}\circ\tilde J_{\Phi,\mathrm{eg}}^{*}$ | Energy–momentum biquaternion |
 | $\tilde J_{\Phi,\mathrm{eg}}^{*} = \bar s - \bar{\vec V}$ | Vector-negating, coefficient-conjugating conjugation |
 | $W = \tfrac12(|s|^2 + \|\vec V\|^2)$ | Energy density (scalar part of $\tilde{\Sigma}_{\Psi}$) |
 | $\vec P$ | Poynting analogue (vector part of $\tilde{\Sigma}_{\Psi}$) |
 | $\omega_0$ | Frequency of the "elementary hydrogen atom" |
-| $\gamma_k$ | Just-scale ratios $\{1,\tfrac98,\tfrac54,\tfrac43,\tfrac32,\tfrac53,\tfrac{15}{8},2\}$ |
-| $\omega_{nk} = 2^n\gamma_k\omega$ | Frequency of tone $k$ in octave $n$ |
+| $\gamma_\eta$ | Just-scale ratios $\{1,\tfrac98,\tfrac54,\tfrac43,\tfrac32,\tfrac53,\tfrac{15}{8},2\}$ |
+| $\omega_{nk} = 2^n\gamma_\eta\omega$ | Frequency of tone $k$ in octave $n$ |
 
 ## Further Reading
 

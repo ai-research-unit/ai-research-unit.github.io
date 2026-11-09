@@ -242,7 +242,7 @@ The abelian check therefore passes for a reason unrelated to the non-abelian sta
 
 The gauge principle article left open "the sense in which a single biquaternion equation carries" the Bianchi identity, and the covariant-derivative article recorded the negative result that the one-line equation $\tilde{\nabla}\tilde{F}=0$ is the full source-free Maxwell system and not the Bianchi identity. That negative result is confirmed here by recomputation, and the reason is visible.
 
-For the abelian field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \vec F = \sum_k F_k \vec e_k$, direct computation with the quaternion product gives the exact identities
+For the abelian field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \vec F = \sum_\eta F_\eta \vec e_\eta$, direct computation with the quaternion product gives the exact identities
 
 $$
 \tilde{\nabla}^{\natural}\tilde{F}
@@ -252,7 +252,7 @@ $$
 = -\mathrm{div}(\vec F)\,e_t + \partial/\partial R_t\,\vec F + \mathrm{curl}\,\vec F,
 $$
 
-where $\vec F = \sum_k F_k \vec e_k$ and $\mathrm{div},\mathrm{curl}$ are the three-dimensional operators acting on the coefficient triple, each exactly as displayed, with no residual. The zero set of either equation is eight real equations: a scalar constraint, which for $\tilde{\nabla}\tilde{F}=0$ reads $\mathrm{div}\,\vec E = 0$ and $\mathrm{div}\,\vec H = 0$, together with the six real components of a vector equation, $\partial/\partial R_t\,\vec F = -\mathrm{curl}\,\vec F$. The Bianchi identity in the abelian sector, by contrast, is the four real equations $\mathrm{div}\,\vec B = 0$ and $\partial/\partial r'_t\vec B + \mathrm{curl}\,\vec E = 0$. Eight equations are not four, and the scalar constraint has no counterpart in a three-index antisymmetric identity; the parent's negative result — that the one-line equation $\tilde{\nabla}\tilde{F}=0$ is the source-free field system and not the Bianchi identity — therefore stands, and the recomputation here confirms the structural reason rather than merely inheriting the verdict.
+where $\vec F = \sum_\eta F_\eta \vec e_\eta$ and $\mathrm{div},\mathrm{curl}$ are the three-dimensional operators acting on the coefficient triple, each exactly as displayed, with no residual. The zero set of either equation is eight real equations: a scalar constraint, which for $\tilde{\nabla}\tilde{F}=0$ reads $\mathrm{div}\,\vec E = 0$ and $\mathrm{div}\,\vec H = 0$, together with the six real components of a vector equation, $\partial/\partial R_t\,\vec F = -\mathrm{curl}\,\vec F$. The Bianchi identity in the abelian sector, by contrast, is the four real equations $\mathrm{div}\,\vec B = 0$ and $\partial/\partial r'_t\vec B + \mathrm{curl}\,\vec E = 0$. Eight equations are not four, and the scalar constraint has no counterpart in a three-index antisymmetric identity; the parent's negative result — that the one-line equation $\tilde{\nabla}\tilde{F}=0$ is the source-free field system and not the Bianchi identity — therefore stands, and the recomputation here confirms the structural reason rather than merely inheriting the verdict.
 
 The structural reason is that the Bianchi identity is a three-index antisymmetric statement — a $3$-form — whereas a biquaternion product of the gradient (one index) with the curvature (a two-index algebra element) contracts its indices through the algebra, producing the scalar and vector combinations displayed above rather than the cyclic sum over three distinct indices. Contracting the Bianchi identity with the totally antisymmetric symbol does convert it into a four-component vector equation, $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu} = 0$. But the antisymmetric symbol is extra structure: it is not contained in the algebra product, and this is a rewriting of the four contracted equations rather than an algebra-intrinsic one-line Bianchi. **This is a gap, and it is recorded as one:** the framework does not, without extra structure, supply a single biquaternion equation carrying the Bianchi identity.
 
@@ -301,7 +301,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
@@ -321,7 +321,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $D_\lambda \tilde{Q} = \partial/\partial R_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu}=0$ | Bianchi identity (cyclic order as shown) |
 | $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ | Contracted form of the Bianchi identity |
-| $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Abelian field-strength biquaternion, $\vec F=\sum_kF_k\vec e_k$ |
+| $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Abelian field-strength biquaternion, $\vec F=\sum_\eta F_\eta\vec e_\eta$ |
 | $\mathrm{div}(\vec F),\ \mathrm{curl}\,\vec F$ | Three-dimensional operators on the coefficient triple |
 | $-\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$ | Gauge-invariant Yang–Mills density (matrix trace) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |

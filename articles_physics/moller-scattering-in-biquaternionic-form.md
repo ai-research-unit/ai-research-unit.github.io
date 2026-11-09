@@ -20,7 +20,7 @@ Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electro
 
 $$
 Ξ_t:\ Q\mapsto iQ\vec e_x,\qquad
-Ξ_k:\ Q\mapsto i\vec e_kQ\vec e_y\quad(k=1,2,3),
+Ξ_k:\ Q\mapsto i\vec e_\eta Q\vec e_y\quad(\eta=1,2,3),
 $$
 
 with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_k$ is minus the identity, and $Ξ_\muΞ_\nu+Ξ_\nuΞ_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
@@ -28,7 +28,7 @@ with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion
 **The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
 $$
-P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y ,
+P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{\eta=1}^3 p_\eta\,i\vec e_\eta Q\vec e_y ,
 $$
 
 which is the four-momentum contracted with the insertions of the preceding paragraph. Its square is $(p_0^2-\vec p^2)$ times the identity, and the mass-shell condition is $p_0^2-\vec p^{\,2}=m^{2}c^{2}$.
@@ -111,11 +111,11 @@ $$
 with $Ξ_\mu$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,Ξ_\mu\tilde{Ξ}_{\mathrm{sp}}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
-\mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{k=1}^3 J_k(p_3,p_1)J_k(p_4,p_2)\Bigr],
+\mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{\eta=1}^3 J_\eta(p_3,p_1)J_\eta(p_4,p_2)\Bigr],
 $$
 
 $$
-\mathcal M_u=\frac{e^2}{u}\Bigl[J_t(p_3,p_2)J_t(p_4,p_1)-\sum_{k=1}^3 J_k(p_3,p_2)J_k(p_4,p_1)\Bigr].
+\mathcal M_u=\frac{e^2}{u}\Bigl[J_t(p_3,p_2)J_t(p_4,p_1)-\sum_{\eta=1}^3 J_\eta(p_3,p_2)J_\eta(p_4,p_1)\Bigr].
 $$
 
 The two brackets differ by the exchange of the two electron lines: $\mathcal M_u$ is obtained from $\mathcal M_t$ by swapping the initial momenta, $p_1\leftrightarrow p_2$, or equivalently the final momenta, $p_3\leftrightarrow p_4$. Because the two electrons are identical, the exchange costs a minus sign, and the total amplitude is
@@ -139,7 +139,7 @@ $$
 the sum of the two rank-one products being the action
 
 $$
-D(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y+m\,Q ,
+D(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{\eta=1}^3 p_\eta\,i\vec e_\eta Q\vec e_y+m\,Q ,
 $$
 
 that is, the momentum insertion $P(p)$ plus the scalar $m$. The mass term is a scalar multiple of the unit and therefore acts on the right and on the left alike. This identity is what turns a sum over the spins of a product of two vertex currents into a trace of the corresponding composite, and it is the only place where the two external elements enter the squared amplitude.
@@ -338,7 +338,7 @@ The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
+(\gamma_\eta)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
@@ -392,10 +392,10 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
 | $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
 | $\theta$ | Centre-of-mass scattering angle |
-| $Ξ_t:\ Q\mapsto iQ\vec e_x$, $Ξ_k:\ Q\mapsto i\vec e_kQ\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
+| $Ξ_t:\ Q\mapsto iQ\vec e_x$, $Ξ_k:\ Q\mapsto i\vec e_\eta Q\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
 | $Ξ^{t}=Ξ_t$, $Ξ^{k}=-Ξ_k$ | Raised insertions |
 | $Q\mapsto-iQ\vec e_z$ | Chirality action |
-| $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_kp_ki\vec e_kQ\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
+| $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_\eta p_ki\vec e_\eta Q\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
 | $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |
 | $\tilde{Ξ}_{\mathrm{sp}}^{(r)}(p)$, $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |

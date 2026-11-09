@@ -58,8 +58,8 @@ The real part of the scalar coefficient is the informational time and the imagin
 
 | Sector | Condition on the coefficients | Four-vector | Physical object |
 | --- | --- | --- | --- |
-| Material $\mathbb{B}_{\Phi}$ | $Q_t$ purely imaginary, $Q_k$ real | $(i r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
-| Informational $\mathbb{B}_{\Psi}$ | $Q_t$ real, $Q_k$ purely imaginary | $(c t, i r'_{x}, i r'_{y}, i r'_{z})$ | state, observable, field strength |
+| Material $\mathbb{B}_{\Phi}$ | $Q_t$ purely imaginary, $Q_\eta$ real | $(i r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
+| Informational $\mathbb{B}_{\Psi}$ | $Q_t$ real, $Q_\eta$ purely imaginary | $(c t, i r'_{x}, i r'_{y}, i r'_{z})$ | state, observable, field strength |
 | Real quaternion $\mathbb{B}_{H}$ | all four coefficients real | $(q_t, q_x, q_y, q_z)$ | rotor, scale, ordinary quaternion |
 
 The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{B}_{\Phi}$ and to its negative on $\mathbb{B}_{\Psi}$.
@@ -396,7 +396,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, with $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ |
 | $Q_\mu$, $Q_t$, $\vec Q$ | the four complex coefficients, the scalar coefficient and the vector part |
 | $N=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm, central and multiplicative |
 | $\mathsf{M}_2(\tilde Q)$ | the $2\times2$ matrix, $\operatorname{Tr}=2Q_t$, $\det=N$ |

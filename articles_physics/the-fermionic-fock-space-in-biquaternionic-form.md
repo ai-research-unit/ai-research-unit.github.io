@@ -213,7 +213,7 @@ $$
 
 and the trace reading of the same ratio is the one the conventions fix, since the scalar part and the trace are one reading of the form; the number is a probability, by the positivity of the form. Two remarks fix the interpretation.
 
-First, the state and the observable are both in $\mathbb{B}_{\Psi}$; the material sector $\mathbb{B}_{\Phi}$ carries the anti-Hermitian Lie-algebra generators, the $\vec e_k$ and their multiples, and it carries the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it, mode by mode.
+First, the state and the observable are both in $\mathbb{B}_{\Psi}$; the material sector $\mathbb{B}_{\Phi}$ carries the anti-Hermitian Lie-algebra generators, the $\vec e_\eta$ and their multiples, and it carries the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it, mode by mode.
 
 Second, the trace reading is the *algebraic* trace on $\mathbb{B}$, which for the one-mode Fock space is the Hilbert-space trace of the two-dimensional space. For the four-dimensional $\Lambda S$ the state is not an element of $\mathbb{B}$, and the biquaternion formula applies after restriction to a mode. For the field's Fock space the identification is formal — the Hilbert space is infinite-dimensional and the algebraic trace is not defined — and the framework's finite-algebra formulas are used mode by mode, where the algebra is finite-dimensional. The companion article *The KMS Condition and the Biquaternion Framework* discusses the thermal state on that passage, and the algebraic completion of a finite Fock space is the standard GNS construction; here the finite one-mode statement is what is used.
 
@@ -255,12 +255,12 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-Each generator is $i$ times a real basis operator, and multiplying by $i$ trades it back: $i\gamma_0=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ and $i\gamma_k=-L_{\mathrm{pau},\vec e_k}R_{\mathrm{pau},\vec e_y}$. Because $i^2=-1$, the square of a generator is minus the square of its basis operator, $(iL_aR_b)^2=-L_{a^2}R_{b^2}$, and with $e_t^2=e_t$ and $\vec e_k^2=-e_t$ that one line gives both signs of the frame,
+Each generator is $i$ times a real basis operator, and multiplying by $i$ trades it back: $i\gamma_0=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$ and $i\gamma_\eta=-L_{\mathrm{pau},\vec e_\eta}R_{\mathrm{pau},\vec e_y}$. Because $i^2=-1$, the square of a generator is minus the square of its basis operator, $(iL_aR_b)^2=-L_{a^2}R_{b^2}$, and with $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$ that one line gives both signs of the frame,
 
 $$
 \gamma_0^2=-L_{\mathrm{pau},e_t^2}R_{\mathrm{pau},\vec e_x^2}=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},-e_t}=+I_4,
 \qquad
-\gamma_k^2=-L_{\mathrm{pau},\vec e_k^2}R_{\mathrm{pau},\vec e_y^2}=-L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t}=-I_4,
+\gamma_\eta^2=-L_{\mathrm{pau},\vec e_\eta^2}R_{\mathrm{pau},\vec e_y^2}=-L_{\mathrm{pau},-e_t}R_{\mathrm{pau},-e_t}=-I_4,
 $$
 
 In the axis-free display:
@@ -268,7 +268,7 @@ In the axis-free display:
 $$
 \gamma_0^2=-L_{\mathrm{axf},e_t^2}R_{\mathrm{axf},\vec e_x^2}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},-e_t}=+I_4,
 \qquad
-\gamma_k^2=-L_{\mathrm{axf},\vec e_k^2}R_{\mathrm{axf},\vec e_y^2}=-L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t}=-I_4,
+\gamma_\eta^2=-L_{\mathrm{axf},\vec e_\eta^2}R_{\mathrm{axf},\vec e_y^2}=-L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t}=-I_4,
 $$
 
 and $\gamma_5^2=-L_{\mathrm{pau},e_t^2}R_{\mathrm{pau},\vec e_z^2}=+I_4$. They obey the anticommutation relations of the frame,

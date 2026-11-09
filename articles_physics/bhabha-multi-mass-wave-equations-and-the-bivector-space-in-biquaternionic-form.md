@@ -244,7 +244,7 @@ and the same step on the other member gives $\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^
 **Why one equation will not do.** A single gradient does not square to the scalar $\Box$. Its square is a derived form of this section, read from the multiplication of the units,
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial R_t\partial R_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
 
 because the time unit commutes with the three spatial units and the mixed derivatives survive. So a first-order equation on one value cannot be turned into the Klein–Gordon equation by squaring it, and the first-order operator whose square is $\Box$ needs both values. This is why the massive equation is a pair, while the massless equation stays first order, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.
@@ -286,7 +286,7 @@ First, the **fundamental doublet's factor** is the biquaternion algebra. $\mathb
 
 Second, the **bivector space** is the corpus's field-strength space. The six-dimensional space of antisymmetric two-tensors is, after the electric–magnetic split, a pair of a vector and an axial vector, and in the corpus's notation it is the field-strength biquaternion $\vec E+i\vec B$ with six real components. The mapping $g_{ab}\to g_{\alpha\beta\gamma\delta}$ gives the metric of the six-dimensional space on which the corpus's two invariants live: the first, $\vec E^2-\vec B^2$, is the quadratic form of that metric, and the second, $\vec E\cdot\vec B$, is the pairing of $\vec E$ with $\vec B$ through the duality of the same space. The programme's $\mathbb{C}^3$ is then the complex form in which $\vec B$ and $\vec E$ are the two halves of one complex vector. This is a genuine agreement of objects, and the article records it as one.
 
-Third, the **equations** themselves are the corpus's Dirac–Maxwell package in the programme's form. The Dirac limit's generators are the three elements $i\vec e_k$ of the algebra, and the massless limit of the pair is the Weyl pair, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; the Maxwell field as the programme writes it is the companion identification, and the corpus's *Bispinor Fields* derives the Maxwell–Dirac solution in its own form. The two are related and not identical, and the relation is cited rather than re-derived here. The higher chain members are the multi-mass generalisations, and they lie outside $\mathbb{B}$ exactly as the companion articles say.
+Third, the **equations** themselves are the corpus's Dirac–Maxwell package in the programme's form. The Dirac limit's generators are the three elements $i\vec e_\eta$ of the algebra, and the massless limit of the pair is the Weyl pair, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; the Maxwell field as the programme writes it is the companion identification, and the corpus's *Bispinor Fields* derives the Maxwell–Dirac solution in its own form. The two are related and not identical, and the relation is cited rather than re-derived here. The higher chain members are the multi-mass generalisations, and they lie outside $\mathbb{B}$ exactly as the companion articles say.
 
 ## What the Framework Establishes, Transcribes, and Does Not
 
@@ -295,7 +295,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit: the product $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, the non-scalar square $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial R_t\partial R_k$, and the elimination of the pair by which each value obeys $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
+- The Dirac limit: the product $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, the non-scalar square $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, and the elimination of the pair by which each value obeys $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**

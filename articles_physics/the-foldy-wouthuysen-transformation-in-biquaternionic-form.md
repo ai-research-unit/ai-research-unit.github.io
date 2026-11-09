@@ -20,7 +20,7 @@ $$
 \varepsilon=(1,-1,-1,-1),
 $$
 
-with $e_t$ the identity of the algebra and $e_x,e_y,e_z$ the three pure units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$ and cyclic, so that $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$. Its norm is the d'Alembertian
+with $e_t$ the identity of the algebra and $e_x,e_y,e_z$ the three pure units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$ and cyclic, so that $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$. Its norm is the d'Alembertian
 
 $$
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
@@ -35,10 +35,10 @@ $$
 \qquad
 \Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{\partial^2}{\partial {r'_t}^2},
 \qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial q_k}.
+D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial q_\eta}.
 $$
 
-Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iϙA_{\mu}}{m\,c}$, so the pure part becomes $D_3^A=\sum_k\vec e_k(\partial/\partial q_k-\frac{k_m\,iϙA_{k}}{m\,c})$, and $\sum_k\vec e_k\pi_k=-\frac{m\,c\,i\,D_{3}^{A}}{k_m}$ with $\pi_k=p_k-ϙA_k$ and $p_k=-\frac{m\,c\,i}{k_m}\partial/\partial q_k$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
+Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{k_m\,iϙA_{\mu}}{m\,c}$, so the pure part becomes $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial q_\eta-\frac{k_m\,iϙA_{\eta}}{m\,c})$, and $\sum_\eta\vec e_\eta\pi_\eta=-\frac{m\,c\,i\,D_{3}^{A}}{k_m}$ with $\pi_\eta=p_\eta-ϙA_\eta$ and $p_\eta=-\frac{m\,c\,i}{k_m}\partial/\partial q_\eta$. The charge is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$.
 
 **The two involutions.** The reduction needs two right multiplications of the algebra, written by position. The **mass grading** and the **chirality** are
 
@@ -52,7 +52,7 @@ $$
 \omega^2=-e_t,
 $$
 
-with $\omega$ the pseudoscalar of the frame; the $i$ in front of $\omega$ is the central scalar of the algebra and not $\omega$. Both square to the identity, $\beta^2=\Gamma^2=e_t$; they anticommute, $\beta\Gamma=-\Gamma\beta$; and both commute with the gradient, which acts on the other side. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Every operator in this article is an action on the field and its side is written out: the gradient, its pure part $D_3$ and multiplication by a scalar act on the left, $\beta$ and $\Gamma$ act on the right, and the kinetic operator $O$, the generators $S_1$ and $S_2$, the free-particle involution $A$ and the mean position $X_k$ act on both sides, with both elements displayed wherever they appear.
+with $\omega$ the pseudoscalar of the frame; the $i$ in front of $\omega$ is the central scalar of the algebra and not $\omega$. Both square to the identity, $\beta^2=\Gamma^2=e_t$; they anticommute, $\beta\Gamma=-\Gamma\beta$; and both commute with the gradient, which acts on the other side. The side is position: the chirality acts as $F\mapsto-iF\vec e_z$, and the left action $F\mapsto-i\vec e_zF$ is a different element, never used here. Every operator in this article is an action on the field and its side is written out: the gradient, its pure part $D_3$ and multiplication by a scalar act on the left, $\beta$ and $\Gamma$ act on the right, and the kinetic operator $O$, the generators $S_1$ and $S_2$, the free-particle involution $A$ and the mean position $X_\eta$ act on both sides, with both elements displayed wherever they appear.
 
 **The equation.** The pair is
 
@@ -72,7 +72,7 @@ $$\frac{m\,c^{2}\,i}{k_m}\frac{\partial  F}{\partial  r'_t}=HF,
 \qquad
 HF=\beta mc^2F+OF+ϙA_0F,
 \qquad
-OF=c\sum_k\vec e_k\pi_kF\vec e_z=c\,(\vec\pi F)\vec e_z .
+OF=c\sum_\eta\vec e_\eta\pi_kF\vec e_z=c\,(\vec\pi F)\vec e_z .
 $$
 
 The mass term is the grading itself multiplied by the mass, and the kinetic term is the pure part of the gauged gradient followed by the chirality's own right multiplication; that last factor is what makes $O$ carry the opposite sign on the two components of the pair, which is the sign the pair gives them. The relations used below are five:
@@ -89,7 +89,7 @@ O=O^{\dagger},
 \beta=\beta^{\dagger},
 $$
 
-so that $O$ is odd, $ϙA_0$ is even, and $H$ is Hermitian. At zero potential $H^2=m^2c^4+O^2$, and the free $O^2=c^2\vec p^2$, so the eigenvalues are $\pm\sqrt{m^2c^4+c^2\vec p^2}$, which is the mass shell of the pair. With a field $O^2/c^2=\vec\pi^2-\frac{m\,c\,ϙ\,i\,\vec B}{k_m}$, so the two branches are split by the Zeeman term, computed below. The square is scalar because $\beta$ anticommutes with $O$ and because the pure units multiply as $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, the antisymmetric part of which cancels between the two orderings of a mixed derivative.
+so that $O$ is odd, $ϙA_0$ is even, and $H$ is Hermitian. At zero potential $H^2=m^2c^4+O^2$, and the free $O^2=c^2\vec p^2$, so the eigenvalues are $\pm\sqrt{m^2c^4+c^2\vec p^2}$, which is the mass shell of the pair. With a field $O^2/c^2=\vec\pi^2-\frac{m\,c\,ϙ\,i\,\vec B}{k_m}$, so the two branches are split by the Zeeman term, computed below. The square is scalar because $\beta$ anticommutes with $O$ and because the pure units multiply as $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$, the antisymmetric part of which cancels between the two orderings of a mixed derivative.
 
 The Hamiltonian splits into an **even** part and an **odd** part,
 
@@ -116,7 +116,7 @@ Nor is the frame grading the subscript. The basis operator is the right multipli
 $$
 O=\beta(\beta O),
 \qquad
-\beta O=c\sum_k\vec e_k\pi_k(\cdot)\vec e_y ,
+\beta O=c\sum_\eta\vec e_\eta\pi_\eta(\cdot)\vec e_y ,
 $$
 
 and $\beta O$ is the same two-sided action as $O$, with $\vec e_y$ in place of $\vec e_z$. The Hamiltonian is therefore the mass grading applied to a bracket of two pieces, $H=\beta\bigl(mc^2+\beta O\bigr)$, one even and one odd: the mass is frame-even, and $\beta O$ is frame-odd. Multiplying the even piece by the grading leaves it even; multiplying the odd piece gives back $O$ itself. After the transformation the Hamiltonian is the grading times the energy alone, so the frame-odd piece is gone from it, and that is the algebraic content of the diagonalisation.
@@ -143,7 +143,7 @@ $$
 \boxed{\;
 S_1=-\frac{i}{2\,m\,c^{2}}\,\beta O,
 \qquad
-S_1F=\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_kF\vec e_y
+S_1F=\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_kF\vec e_y
 \;}
 $$
 
@@ -155,7 +155,7 @@ $$
 =\frac{1}{2\,m\,c}\,\vec\pi F\vec e_y .
 $$
 
-Indeed $[S_1,\beta]=\frac{i}{mc^2}O$, because the right multiplication by $\vec e_y$ gives $[\vec e_k(\cdot)\vec e_y,\beta]=2i\vec e_k(\cdot)\vec e_z$ term by term, whence $i[S_1,\beta mc^2]=-O$. The remaining term is evaluated with the same anticommutation:
+Indeed $[S_1,\beta]=\frac{i}{mc^2}O$, because the right multiplication by $\vec e_y$ gives $[\vec e_\eta(\cdot)\vec e_y,\beta]=2i\vec e_\eta(\cdot)\vec e_z$ term by term, whence $i[S_1,\beta mc^2]=-O$. The remaining term is evaluated with the same anticommutation:
 
 $$
 i[S_1,O]=\frac{\beta O^2}{mc^2},
@@ -253,7 +253,7 @@ $$
 H=\beta mc^2+c|\vec p|\,\beta A=\beta\,(mc^2+c|\vec p|A),
 $$
 
-where $c|\vec p|\,\beta A=c\sum_k\vec e_kp_k(\cdot)\vec e_z=O$ follows from $p_k=|\vec p|u_k$ and $\beta A=\sum_k\vec e_ku_k(\cdot)\vec e_z$, one has
+where $c|\vec p|\,\beta A=c\sum_\eta\vec e_\eta p_\eta(\cdot)\vec e_z=O$ follows from $p_\eta=|\vec p|u_k$ and $\beta A=\sum_\eta\vec e_\eta u_k(\cdot)\vec e_z$, one has
 
 $$
 H=\beta E(\cos\theta+A\sin\theta)=\beta E\exp(A\theta),
@@ -298,7 +298,7 @@ non-zero at every $x\neq0$ and decaying only over the reduced Compton wavelength
 
 ## The Mean Position Operator
 
-The transformation does more than diagonalise the Hamiltonian: it also changes which operator plays the role of position. Write the position as the material vector $\vec q=\sum_kQ_k\vec e_k$, with $Q_k$ the operator of multiplication by the coordinate. In the transformed frame that multiplication is the coordinate, so the operator carrying it back to the original frame is obtained by conjugating with $U^\dagger$, not with $U$:
+The transformation does more than diagonalise the Hamiltonian: it also changes which operator plays the role of position. Write the position as the material vector $\vec q=\sum_\eta Q_\eta\vec e_\eta$, with $Q_\eta$ the operator of multiplication by the coordinate. In the transformed frame that multiplication is the coordinate, so the operator carrying it back to the original frame is obtained by conjugating with $U^\dagger$, not with $U$:
 
 $$
 \vec X=U^\dagger\vec q\,U=\vec q-i[S_1,\vec q]-\frac{1}{2}[S_1,[S_1,\vec q]]+\cdots .
@@ -306,24 +306,24 @@ $$
 
 The direction of the conjugation is the content of the definition. The other ordering, $U\vec q\,U^\dagger$, is the original coordinate read in the transformed frame, and it keeps the trembling; $U^\dagger\vec q\,U$ is the coordinate whose image in the transformed frame is plain multiplication.
 
-The correction to each component is fixed by one commutator with the momentum. Since the right multiplication by $\vec e_y$ commutes with multiplication by a coordinate and $[\pi_k,Q_k]=-\frac{m\,c\,i}{k_m}$,
+The correction to each component is fixed by one commutator with the momentum. Since the right multiplication by $\vec e_y$ commutes with multiplication by a coordinate and $[\pi_\eta,Q_\eta]=-\frac{m\,c\,i}{k_m}$,
 
 $$
-[S_1,Q_k]F=-\frac{i}{2\,k_m}\,\vec e_kF\vec e_y,
+[S_1,Q_\eta]F=-\frac{i}{2\,k_m}\,\vec e_\eta F\vec e_y,
 \qquad
--i[S_1,Q_k]F=\frac{i^{2}}{2\,k_m}\,\vec e_kF\vec e_y
-=-\dfrac{1}{2\,k_m}\,\vec e_kF\vec e_y,
+-i[S_1,Q_\eta]F=\frac{i^{2}}{2\,k_m}\,\vec e_\eta F\vec e_y
+=-\dfrac{1}{2\,k_m}\,\vec e_\eta F\vec e_y,
 $$
 
 where $i\cdot i=-1$ once more. Hence
 
 $$
-\vec X=\sum_kX_k\vec e_k,
+\vec X=\sum_\eta X_\eta\vec e_\eta,
 \qquad
-X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_kF\vec e_y+\cdots .
+X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_\eta F\vec e_y+\cdots .
 $$
 
-The correction is of the order of the half reduced Compton wavelength $\dfrac{1}{2\,k_m}$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_k(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
+The correction is of the order of the half reduced Compton wavelength $\dfrac{1}{2\,k_m}$ — the Zitterbewegung amplitude — and the next correction is of order $1/m^2$. The exact closed form of the previous section gives the same leading term: differentiating $\theta$ and differentiating $\vec u_p$ contribute two pieces whose dependence on $\vec u_p$ cancels, so the sum is the single operator $\vec e_\eta(\cdot)\vec e_y$, and the residual against $U^\dagger\vec q\,U$ is of order $1/m^2$. The operator $\vec X$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
 \frac{d\vec X}{dr'_t}=\frac{k_m\,i}{m\,c}[H,\vec X]=U^\dagger\Bigl(\beta\frac{\vec pc^2}{E}\Bigr)U,
@@ -332,14 +332,14 @@ $$
 commutes with $H$ and therefore has no oscillatory part: in the transformed frame it is exactly the classical drift $\beta\vec pc^2/E$, and the rapid trembling of the ordinary position operator is entirely contained in the difference
 
 $$
-\vec q-\vec X=\dfrac{1}{2\,k_m}\sum_k\vec e_k(\cdot)\vec e_y+\cdots .
+\vec q-\vec X=\dfrac{1}{2\,k_m}\sum_\eta\vec e_\eta(\cdot)\vec e_y+\cdots .
 $$
 
 The step in the middle is one line: $UHU^\dagger=\beta E$ makes $[H,\vec X]=U^\dagger[\beta E,\vec q]U$, and $[E(\vec p),\vec q]=-\frac{m\,c^{3}\,i\,\vec p}{k_m\,E}$ on a function of the momentum alone, so no derivative of the field enters. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 
-The correction $\dfrac{1}{2\,k_m}\vec e_k(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
+The correction $\dfrac{1}{2\,k_m}\vec e_\eta(\cdot)\vec e_y$ is itself worth reading in the algebra. It is a frame-odd displacement: it anticommutes with $\beta$, as the generator does, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
@@ -354,10 +354,10 @@ The transformation can now be located in the two splits of the algebra, and the 
 $$
 \Gamma^{\mathrm{FW}}=U\Gamma U^\dagger=\Gamma\cos\theta-C\sin\theta,
 \qquad
-C=\Gamma A=\sum_k\vec e_ku_k(\cdot)\vec e_x .
+C=\Gamma A=\sum_\eta\vec e_\eta u_k(\cdot)\vec e_x .
 $$
 
-$C$ is even, and on the $+1$ part of $\beta$ it is $-i\sum_k\vec e_ku_k$, so the even part of the chirality reads $i\sin\theta\sum_k\vec e_ku_k$ — the helicity, with $\sin\theta=|\vec p|c/E$: the value for a massless field, reduced by that factor for a massive one. The part that anticommutes with $\beta$ is $\Gamma\cos\theta=(mc^2/E)\Gamma$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the mass grading, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $\beta$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $\Gamma$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because $\beta\Gamma=-\Gamma\beta$. The two splits are complementary, and the mass is the object that measures their incompatibility.
+$C$ is even, and on the $+1$ part of $\beta$ it is $-i\sum_\eta\vec e_\eta u_k$, so the even part of the chirality reads $i\sin\theta\sum_\eta\vec e_\eta u_k$ — the helicity, with $\sin\theta=|\vec p|c/E$: the value for a massless field, reduced by that factor for a massive one. The part that anticommutes with $\beta$ is $\Gamma\cos\theta=(mc^2/E)\Gamma$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the mass grading, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $\beta$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $\Gamma$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because $\beta\Gamma=-\Gamma\beta$. The two splits are complementary, and the mass is the object that measures their incompatibility.
 
 **The generator is frame-odd.** The FW generator $S_1=-\frac{i}{2\,m\,c^{2}}\beta O$ is the kinetic operator preceded by the grading, and it anticommutes with $\beta$. Conjugation by $\beta$ therefore reverses the sign of $S_1$, and the generator does not leave the grading fixed: since $U=\exp(iS_1)$,
 
@@ -369,10 +369,10 @@ The biquaternion content it carries is not a new rotation of the frame but the i
 
 ## The Pauli Limit and the Residual Terms
 
-With an external electromagnetic field, $\pi_k=p_k-ϙA_k$, and the FW-transformed Hamiltonian acquires the standard non-relativistic terms. The kinetic term is where the spin enters, through the product of the pure units combined with the non-commutativity of the momentum components. Two pure units multiply into a scalar and a spin element,
+With an external electromagnetic field, $\pi_\eta=p_\eta-ϙA_\eta$, and the FW-transformed Hamiltonian acquires the standard non-relativistic terms. The kinetic term is where the spin enters, through the product of the pure units combined with the non-commutativity of the momentum components. Two pure units multiply into a scalar and a spin element,
 
 $$
-\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l ,
+\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l ,
 $$
 
 and the antisymmetric part contracts with the commutator of the momenta and survives:
@@ -380,7 +380,7 @@ and the antisymmetric part contracts with the commutator of the momenta and surv
 $$
 O^2=c^2\bigl(\vec\pi^2-\frac{m\,c\,ϙ\,i\,\vec B}{k_m}\bigr),
 \qquad
-[\pi_j,\pi_k]=\frac{m\,c\,i\,ϙ\,\epsilon_{jkl}\,B_{l}}{k_m},
+[\pi_j,\pi_\eta]=\frac{m\,c\,i\,ϙ\,\epsilon_{j\eta l}\,B_{l}}{k_m},
 \qquad
 \vec B=\sum_l B_l\vec e_l .
 $$
@@ -434,7 +434,7 @@ and $O$ odd under conjugation by the mass grading $\beta F=iF\vec e_x$, the lead
 $$
 S_1=-\frac{i}{2\,m\,c^{2}}\beta O,
 \qquad
-S_1F=\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_kF\vec e_y,
+S_1F=\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_kF\vec e_y,
 $$
 
 and the transformed Hamiltonian through order $v^2/c^2$ is
@@ -460,9 +460,9 @@ $$
 checked to machine precision by direct computation. The mean position is the operator whose image in the transformed frame is multiplication by the coordinate,
 
 $$
-\vec X=U^\dagger\vec q\,U=\sum_kX_k\vec e_k,
+\vec X=U^\dagger\vec q\,U=\sum_\eta X_\eta\vec e_\eta,
 \qquad
-X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_kF\vec e_y+\cdots ,
+X_kF=Q_kF-\dfrac{1}{2\,k_m}\,\vec e_\eta F\vec e_y+\cdots ,
 $$
 
 whose Heisenberg velocity commutes with the Hamiltonian and so has no trembling term; the Zitterbewegung resides in the difference $\vec q-\vec X$.
@@ -478,7 +478,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector |
-| $D_3=\sum_k\vec e_k\partial/\partial q_k$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
+| $D_3=\sum_\eta\vec e_\eta\partial/\partial q_\eta$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |
 | $\Gamma F=-iF\vec e_z=iF\omega$ | Chirality, the right multiplication by $-i\vec e_z$; $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$ |
 | $\beta\Gamma=-\Gamma\beta$ | The two involutions anticommute; no $*$-unitary diagonalises both |
@@ -486,14 +486,14 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathcal{E}=ϙA_0$ | Even part; left multiplication by the scalar $ϙA_0$ |
 | $H = \beta mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $U = \exp(iS)$ | Foldy–Wouthuysen $*$-unitary |
-| $S_1=-\frac{i}{2\,m\,c^{2}}\beta O$ | Leading FW generator; its action is $\frac{1}{2\,m\,c}\sum_k\vec e_k\pi_kF\vec e_y$ |
+| $S_1=-\frac{i}{2\,m\,c^{2}}\beta O$ | Leading FW generator; its action is $\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_kF\vec e_y$ |
 | $O_1 = i[S_1,\mathcal{E}]$ | Odd remainder after the first step |
 | $S_2 = -\frac{i}{2\,m\,c^{2}}\beta O_1$ | Second generator; odd, like every generator |
 | $H_2 = UHU^\dagger -\frac{m\,c\,i\,U}{k_m}\partial/\partial r'_t\,U^\dagger$ | Transformed Hamiltonian |
 | $AF=i\vec u_pF\vec e_y$ | Free-particle involution, $A^2=-e_t$, $\beta A=-A\beta$ |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
-| $\vec q = \sum_kQ_k\vec e_k$ | Material position |
-| $X_kF = Q_kF-\dfrac{1}{2\,k_m}\vec e_kF\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
+| $\vec q = \sum_\eta Q_\eta\vec e_\eta$ | Material position |
+| $X_kF = Q_kF-\dfrac{1}{2\,k_m}\vec e_\eta F\vec e_y+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
 | $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$ | Fixed $*$-unitary of the frame, the right multiplication $F\mapsto Fw$; $w^2=e_t$, and $w\beta w=\Gamma$ |
 
 ## Further Reading

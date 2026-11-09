@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=r_t+i r'_t$ and $Q_k=x_k+i r'_{x_k}$. The reading used below is the material one, $Q_t=i r'_t$ and $Q_k=x_k$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=r_t+i r'_t$ and $Q_\eta=x_k+i r'_{x_k}$. The reading used below is the material one, $Q_t=i r'_t$ and $Q_\eta=x_k$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -102,7 +102,7 @@ $$
 \qquad
 P_{ij,kl}\left(k_k\zeta_l+k_l\zeta_k\right) = 0 ,
 \qquad
-P_{ij,kl}\,\delta_{kl} = 0\;},
+P_{ij,kl}\,\delta_{\eta l} = 0\;},
 $$
 
 idempotent, of trace two, and annihilating both the pure-gauge modes $k_i\zeta_j+k_j\zeta_i$ and the trace mode $\delta_{ij}$. The rank of the space spanned by the pure-gauge modes and the trace was computed to be four, so that the transverse-traceless complement has dimension
@@ -221,7 +221,7 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 
 ### The Trace-Free Square in Components
 
-The split is explicit in components. Write a material vector as $u=\sum_k u_k\vec e_k$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
+The split is explicit in components. Write a material vector as $u=\sum_\eta u_k\vec e_\eta$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
 \langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,
@@ -230,7 +230,7 @@ $$
 which for the symmetric square is $|\vec u|^2$, and the trace-free part is
 
 $$
-T_{jk}-\tfrac13\delta_{jk}\sum_l T_{ll} ,
+T_{jk}-\tfrac13\delta_{j\eta}\sum_l T_{ll} ,
 $$
 
 of dimension five. The decomposition $6=1+5$ is therefore the statement that the trace direction is one-dimensional and its complement is five-dimensional, and both are determined once the bilinear form is fixed, with no further postulate. This is what the rank computation of the transverse-traceless sector reproduces: the trace direction contributes one to the four-dimensional space of gauge and trace modes that the physical projector annihilates, and the remaining three are the gauge modes of helicity $\pm1$ and $0$. The framework's spin-two field is thus the trace-free symmetric square, and its five components are the massive spin-two carrier; the gauge removes three of them, leaving the two of the massless graviton.

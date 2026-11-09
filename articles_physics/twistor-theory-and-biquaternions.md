@@ -193,7 +193,7 @@ $$
 \qquad \vec\zeta \neq E ,
 $$
 
-a complex-vector-valued field on Minkowski space. Writing $\|\tilde{Q}\|^2 = \sum_\mu |Q_\mu|^2$ for the Euclidean norm of a biquaternion, so that its **Euclidean difference** is $|Q_t|^2 - \sum_k |Q_k|^2$, the elementary twistor is characterised by the two invariants
+a complex-vector-valued field on Minkowski space. Writing $\|\tilde{Q}\|^2 = \sum_\mu |Q_\mu|^2$ for the Euclidean norm of a biquaternion, so that its **Euclidean difference** is $|Q_t|^2 - \sum_\eta |Q_\eta|^2$, the elementary twistor is characterised by the two invariants
 
 $$
 \|\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm}\| = 1 ,
@@ -307,9 +307,9 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ (read list) |
+| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ (read list) |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector), fixed points of $\flat$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector), fixed points of ${}^{*}$ |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, fixed points of complex conjugation |
@@ -338,7 +338,7 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $\nabla^{\pm}=\partial/\partial \tau\pm i\nabla$ | Mutual bigradients of the biwave equation; $\Box_A=\partial^2/\partial \tau^2-\Delta$ is minus this series' $\Box$ |
 | $\tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm},\ \tilde{Ξ}_{\mathrm{sp},\vec\zeta}^{\pm}$ | Elementary $\vec\zeta$-twistor's generating scalar potential and the twistor itself |
 | $Ζ=\tilde{Ξ}_{\mathrm{sp}}\circ\tilde{Ξ}_{\mathrm{sp}}^*=W+iP$ | Energy–momentum biquaternion of a twistor |
-| $\lVert\tilde{Q}\rVert^2$ | Euclidean norm $\sum_\mu \lvert Q_\mu\rvert^2$; the Euclidean difference $\lvert Q_t\rvert^2 - \sum_k \lvert Q_k\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_k \lvert Q_k\rvert^2 - \lvert Q_t\rvert^2}$ |
+| $\lVert\tilde{Q}\rVert^2$ | Euclidean norm $\sum_\mu \lvert Q_\mu\rvert^2$; the Euclidean difference $\lvert Q_t\rvert^2 - \sum_\eta \lvert Q_\eta\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_\eta \lvert Q_\eta\rvert^2 - \lvert Q_t\rvert^2}$ |
 | $\tilde{\Pi}_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Rank-one Hermitian idempotents; the $H$-twistor's amplitude is a real multiple of one |
 | $Z(\kappa)$, $\kappa\in\mathbb{C}$ | World line of the "virtual" charge generating a shear-free null congruence (Kassandrov) |
 | $\{\zeta,\tau\}$, $(Z-\mathcal{Z}(\kappa))\zeta=0$, $\tau=Z\zeta$ | Twistor field of the congruence; the Penrose incidence relation over complexified Minkowski space |

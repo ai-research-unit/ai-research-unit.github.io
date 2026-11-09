@@ -16,33 +16,33 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 $$\bar w_2\,X:=\mathrm{Sc}\big(w_2^{*}\,i\,X\,\vec e_x\big),$$
 a scalar part of a product of three factors, written here as in the companion *The Gordon Decomposition of the Dirac Current in Biquaternionic Form*. The one datum of the frame it carries is the right multiplier $\vec e_x$, the adjoint's unit. Plane waves are $e^{+i(p\cdot x)/\hbar}$, so the on-shell condition below carries the sign it carries; a change of that convention flips the sign of the mass in the second display of §*The Vertex Function and the Form Factors* and the sign of the bivector term with it.
 
-**The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $k$ carries it to $i\vec e_kX\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over $\nu$ carries $\varepsilon_\nu$, and no index is ever raised.
+**The directions.** A direction of the frame acts on a state by a product on both sides. That is a derived form of the frame's four directions of *Matrix Representations Conventions*, used throughout: the timelike direction carries $X$ to $iX\vec e_x$, and the direction $k$ carries it to $i\vec e_\eta X\vec e_y$. The two multipliers are $\vec e_x$ and $\vec e_y$, and $\vec e_z$ is their product, $\vec e_x\vec e_y=\vec e_z$; the frame is the canonical one of the companion articles, and the two multipliers are what declares it. The weight is $\varepsilon=(1,-1,-1,-1)$, one and the same for the directions and for the states: a paired index is written low and carries that weight, so a contraction over $\nu$ carries $\varepsilon_\nu$, and no index is ever raised.
 
 **The factor $i$ and the two signs.** Every direction carries one factor $i$, and the two families square to opposite signs on a state:
-$$\big(i\,X\,\vec e_x\big)^2=+X ,\qquad \big(i\,\vec e_k\,X\,\vec e_y\big)^2=-X .$$
-The first square has two minus signs, one from $i^2=-1$ and one from $\vec e_x^2=-e_t$; the second has three, the third from $\vec e_k^2=-e_t$. Nothing else produces the two signs, and nothing else is needed: the weight $\varepsilon$ is the statement that the timelike direction is the one whose square on a state is positive.
+$$\big(i\,X\,\vec e_x\big)^2=+X ,\qquad \big(i\,\vec e_\eta\,X\,\vec e_y\big)^2=-X .$$
+The first square has two minus signs, one from $i^2=-1$ and one from $\vec e_x^2=-e_t$; the second has three, the third from $\vec e_\eta^2=-e_t$. Nothing else produces the two signs, and nothing else is needed: the weight $\varepsilon$ is the statement that the timelike direction is the one whose square on a state is positive.
 
 **Products of two directions.** A product of two directions is again a single product of elements, and the metric part is visible in it. Two spacelike directions give a left multiplication,
-$$i\vec e_j\big(i\vec e_kX\vec e_y\big)\vec e_y=+\vec e_j\vec e_kX ,$$
+$$i\vec e_j\big(i\vec e_\eta X\vec e_y\big)\vec e_y=+\vec e_j\vec e_\eta X ,$$
 a timelike direction followed by a spacelike one gives a product on both sides,
-$$i\big(i\vec e_kX\vec e_y\big)\vec e_x=+\vec e_kX\vec e_z ,$$
+$$i\big(i\vec e_\eta X\vec e_y\big)\vec e_x=+\vec e_\eta X\vec e_z ,$$
 and the reverse order gives the opposite sign,
-$$i\vec e_k\big(iX\vec e_x\big)\vec e_y=-\vec e_kX\vec e_z .$$
+$$i\vec e_\eta\big(iX\vec e_x\big)\vec e_y=-\vec e_\eta X\vec e_z .$$
 Two minus signs cancel in the second display, one from $i^2$ and one from $\vec e_y\vec e_x=-\vec e_z$; the third display carries one of them. The product of a direction with itself is the metric, $+e_t$ or $-e_t$; the product of two distinct directions has no metric part, and what is left is the bivector.
 
 **The propagator.** The conventions of the internal fermion line are those of the companion *The Feynman Propagator in Biquaternionic Form*, and there it is written as an action on a state,
-$$S_F(p):\quad w\,\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_k  p_k\,\vec e_k\,w\,\vec e_y+im\,w}{p^2-m^{2}\,c^{2}+i\epsilon} ,$$
-with $p^2=p_0^2-\sum_kp_k^2$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $p^2-m^{2}\,c^{2}$ is $-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}-m^2$ for the wave biquaternion $\tilde P_{\Phi}=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$.
+$$S_F(p):\quad w\,\longmapsto\frac{-p_0\,w\,\vec e_x+\sum_\eta  p_\eta\,\vec e_\eta\,w\,\vec e_y+im\,w}{p^2-m^{2}\,c^{2}+i\epsilon} ,$$
+with $p^2=p_0^2-\sum_\eta p_\eta^2$. The factor $i$ of the numerator is what shortens it: distributing the outer $i$ of the companion's display turns $i\cdot i$ into $-1$ in each of the first two terms and leaves $i\,m$ in the third. The denominator $p^2-m^{2}\,c^{2}$ is $-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}-m^2$ for the wave biquaternion $\tilde P_{\Phi}=ip_0e_t+\vec p$ of that companion, whose norm is $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$.
 
 **The traces.** Two traces are used, and they are not the same one. On the algebra the trace of a product is twice the scalar part, $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the plain form. On the operators the trace is four-by-four and factorizes, $\mathrm{tr}(L_aR_b)=4\mathrm{Sc}(a)\mathrm{Sc}(b)$, the two multipliers contributing separately; both are conventions of *Matrix Representations Conventions* and are cited, not derived. The fine-structure constant is $\alpha=e^2/(\frac{4\,m\,c^{2}\,\pi\,\epsilon_{0}}{k_m})$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
 ## The Vertex Function and the Form Factors
 
 **The vertex.** The electromagnetic vertex is the one-particle-irreducible three-point function, written $-ie\Gamma_\mu(p_2,p)$, with $p$ the incoming and $p_2$ the outgoing fermion momentum and $k=p_2-p$ the momentum transferred by the photon. Lorentz invariance, the on-shell condition of the state,
-$$i\,p_0\,w\,\vec e_x-\sum_k i\,p_k\,\vec e_k\,w\,\vec e_y=m\,w ,$$
+$$i\,p_0\,w\,\vec e_x-\sum_\eta i\,p_\eta\,\vec e_\eta\,w\,\vec e_y=m\,w ,$$
 the same condition carried by the adjoint, whose equation the companion writes with the mass on the other side, and the discrete symmetries reduce $\Gamma_\mu$ to two independent structures multiplied by functions of the single invariant $k^2$. The timelike and the spacelike components are written separately, because they act differently:
-$$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k^2)+\frac{1}{2\,m\,c}\sum_k  k_k\,\vec e_k\,w\,\vec e_z\,F_2(k^2) ,$$
-$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k^2)+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_k\,w\Big)F_2(k^2) .$$
+$$\Gamma_0\,w=i\,w\,\vec e_x\,F_1(k^2)+\frac{1}{2\,m\,c}\sum_\eta  k_k\,\vec e_\eta\,w\,\vec e_z\,F_2(k^2) ,$$
+$$\Gamma_j\,w=i\,\vec e_j\,w\,\vec e_y\,F_1(k^2)+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_\eta\,w\Big)F_2(k^2) .$$
 The first term of each line is the direction $\mu$ acting on the state; the second is the bivector of the pair $(\mu,\nu)$, and its shape is the content of the Gordon decomposition below.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -53,19 +53,19 @@ $$\boxed{\;g=2\big(F_1(0)+F_2(0)\big)=2\big(1+F_2(0)\big),
 a=\frac{g-2}{2}=F_2(0)\;}.$$
 At tree level only the first term of each line is present, so $F_1=1$, $F_2=0$ and $g=2$: the Dirac value, which is one-particle physics and is settled in the companion article. What this article computes is the correction to it.
 
-**Why two structures.** The two are distinguished by symmetry, and that is where the interpretation begins. At $\mu=0$ the direction acts by a single right multiplication, by $i\vec e_x$; at $\mu=k$ it acts by a left multiplication, by $i\vec e_k$, and a right one, by $\vec e_y$. The bivector is $i$ times the product of two directions, so it carries one factor of $i$ more than the direction does. The vertex is therefore the sum of a structure with a single factor of $i$ and a structure with two, and only the second carries the spin-magnetic coupling.
+**Why two structures.** The two are distinguished by symmetry, and that is where the interpretation begins. At $\mu=0$ the direction acts by a single right multiplication, by $i\vec e_x$; at $\mu=k$ it acts by a left multiplication, by $i\vec e_\eta$, and a right one, by $\vec e_y$. The bivector is $i$ times the product of two directions, so it carries one factor of $i$ more than the direction does. The vertex is therefore the sum of a structure with a single factor of $i$ and a structure with two, and only the second carries the spin-magnetic coupling.
 
 The split is a property of the product of two directions. Two distinct directions multiply to a single direction of the algebra, the signs from $i^2$ and from $\vec e_y^2$ combining to $+$,
-$$i\vec e_j\big(i\vec e_kX\vec e_y\big)\vec e_y=\vec e_j\vec e_kX ,\qquad \vec e_j\vec e_k=\pm\vec e_m ,$$
+$$i\vec e_j\big(i\vec e_\eta X\vec e_y\big)\vec e_y=\vec e_j\vec e_\eta X ,\qquad \vec e_j\vec e_\eta=\pm\vec e_m ,$$
 and the bivector of the pair is that product with one further factor $i$. For a pair of two spatial directions it is the single element $i\vec e_m$, a left multiplication; for a timelike pair it is two-sided, because the timelike direction supplies a right multiplier $\vec e_x$ and the spatial one supplies $\vec e_y$, whose product is the third unit. Nothing else appears in the product: the metric part is $\varepsilon_\mu$ on the diagonal, it is zero off it, and it is the central direction $e_t$, one number per pair.
 
 **The Gordon decomposition.** Write $w$ for the incoming state and $w_2$ for the outgoing one, both on shell, and write $\mathcal G_{\mu\nu}:=-i\,c_\mu c_\nu$ for the bivector of the pair, $c_\mu$ being the direction $\mu$; the minus is the reversal of the right multipliers, $\vec e_y\vec e_x=-\vec e_z$, and it is the whole of the sign. The identity is
 $$\bar w_2\big(c_\mu w\big)=\frac{(p+p_2)_{\mu}}{2m\,c}\,\bar w_2w+\frac{i}{2\,m\,c}\sum_{\nu\neq\mu}\varepsilon_\nu\,k_\nu\,\bar w_2\big(\mathcal  G_{\mu\nu}w\big),$$
 the coefficient of the second term carrying the $i$ by which the bivector differs from the plain product of its two directions. Written out in the two families it reads, for the timelike component,
-$$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_{0}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\sum_k  k_k\,\bar w_2\big(\vec e_k\,w\,\vec e_z\big),$$
+$$\bar w_2\big(i\,w\,\vec e_x\big)=\frac{(p+p_2)_{0}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\sum_\eta  k_k\,\bar w_2\big(\vec e_\eta\,w\,\vec e_z\big),$$
 and for the spacelike component $j$,
-$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_{j}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{k\ne j} k_k\,\bar w_2\big(\vec e_j\vec e_k\,w\big)\Big),$$
-where the $i$ of the generic form has been absorbed: $\frac{i}{2\,m\,c}\varepsilon_k\mathcal  G_{0k}=\frac{1}{2\,m\,c}\vec e_k$ on the right, and $\frac{i}{2\,m\,c}\varepsilon_k\mathcal  G_{jk}=\frac{1}{2\,m\,c}\vec e_j\vec e_k$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.
+$$\bar w_2\big(i\,\vec e_j\,w\,\vec e_y\big)=\frac{(p+p_2)_{j}}{2m\,c}\,\bar w_2w+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\bar w_2\big(\vec e_j\,w\,\vec e_z\big)+\sum_{k\ne j} k_k\,\bar w_2\big(\vec e_j\vec e_\eta\,w\big)\Big),$$
+where the $i$ of the generic form has been absorbed: $\frac{i}{2\,m\,c}\varepsilon_k\mathcal  G_{0k}=\frac{1}{2\,m\,c}\vec e_\eta$ on the right, and $\frac{i}{2\,m\,c}\varepsilon_k\mathcal  G_{jk}=\frac{1}{2\,m\,c}\vec e_j\vec e_\eta$. The three were verified on random on-shell pairs at $m=0.7$, with a deviation of order $10^{-15}$.
 
 Read the right-hand sides. The first term is the convection: the momentum sum $(p+p_2)_\mu$ multiplies the central direction, and it is the term the charge multiplies. The second is the bivector: the momentum difference $k_\nu$ multiplies a product of two directions, and it is the term the magnetic moment multiplies. There is no third term, and the split is exact, not an approximation.
 
@@ -76,13 +76,13 @@ The coefficient $1/2mc$ is the same one that fixes $g=2$ at the tree level, and 
 ## The Six Directions
 
 **The bivectors.** The six bivectors are $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu$: $i$ times the product of the two directions, with the sign that the reversed right multipliers give. On a state the two families act differently, and the difference is the frame's:
-$$X\longmapsto i\vec e_m\,X\quad\text{(rotations)},\qquad X\longmapsto i\vec e_k\,X\,\vec e_z\quad\text{(boosts)} ,$$
-with $\vec e_m$ the third spatial unit of the pair $\{j,k\}$, $\vec e_j\vec e_k=\pm\vec e_m$, and $\vec e_x\vec e_y=\vec e_z$ supplying the right multiplier of a timelike pair. The rotation bivector is a left multiplication by one direction; the boost bivector is a left multiplication by one direction and a right multiplication by the third. All six were verified direction by direction, and none of the six is a single element except the three rotations.
+$$X\longmapsto i\vec e_m\,X\quad\text{(rotations)},\qquad X\longmapsto i\vec e_\eta\,X\,\vec e_z\quad\text{(boosts)} ,$$
+with $\vec e_m$ the third spatial unit of the pair $\{j,k\}$, $\vec e_j\vec e_\eta=\pm\vec e_m$, and $\vec e_x\vec e_y=\vec e_z$ supplying the right multiplier of a timelike pair. The rotation bivector is a left multiplication by one direction; the boost bivector is a left multiplication by one direction and a right multiplication by the third. All six were verified direction by direction, and none of the six is a single element except the three rotations.
 
-**The sector reading.** A left multiplication is Hermitian exactly when its multiplier is, and the rotation bivector multiplies by $i\vec e_m$, which is fixed by the star, $(i\vec e_m)^{*}=i\vec e_m$. The rotation bivectors therefore lie in the informational sector $\mathbb{B}_{\Psi}$. A timelike bivector multiplies by $i\vec e_k$ on the left and by $\vec e_z$ on the right, and the star reverses the order and conjugates each factor, $(aQb)^{*}=b^{*}Q^{*}a^{*}$; with $(i\vec e_k)^{*}=i\vec e_k$ and $\vec e_z^{*}=-\vec e_z$ the two classes are opposite, so the insertion is anti-Hermitian and lies in the material sector $\mathbb{B}_{\Phi}$. The rule is the one of the companion *The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure*, where the four insertions are classified by it:
+**The sector reading.** A left multiplication is Hermitian exactly when its multiplier is, and the rotation bivector multiplies by $i\vec e_m$, which is fixed by the star, $(i\vec e_m)^{*}=i\vec e_m$. The rotation bivectors therefore lie in the informational sector $\mathbb{B}_{\Psi}$. A timelike bivector multiplies by $i\vec e_\eta$ on the left and by $\vec e_z$ on the right, and the star reverses the order and conjugates each factor, $(aQb)^{*}=b^{*}Q^{*}a^{*}$; with $(i\vec e_\eta)^{*}=i\vec e_\eta$ and $\vec e_z^{*}=-\vec e_z$ the two classes are opposite, so the insertion is anti-Hermitian and lies in the material sector $\mathbb{B}_{\Phi}$. The rule is the one of the companion *The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure*, where the four insertions are classified by it:
 $$\boxed{\;\text{magnetic: }i\vec e_m\in\mathbb{B}_{\Psi}\ \text{(Hermitian, informational)},
 \qquad
-\text{electric: }i\vec e_k(\cdot)\vec e_z\in\mathbb{B}_{\Phi}\ \text{(anti-Hermitian, material)}\;}.$$
+\text{electric: }i\vec e_\eta(\cdot)\vec e_z\in\mathbb{B}_{\Phi}\ \text{(anti-Hermitian, material)}\;}.$$
 Both classes were verified: $(i\vec e_m)^{*}=i\vec e_m$ and $\vec e_z^{*}=-\vec e_z$, and the products of the two classes come out opposite.
 
 The magnetic coupling to an external field is a rotation-type structure, and its direction $i\vec e_m$ is the very object that carries the spin, $\tilde S_{\Psi,m}=\frac{m\,c}{2\,k_m}i\vec e_m$, in the companion *Angular Momentum and Spin in Biquaternionic Form*. The anomaly, being a correction to the magnetic structure, is an $\mathbb{B}_{\Psi}$ effect: the same sector as the observable it corrects. The electric (boost-type) structure is the material-sector one, and the convection (metric) part is central, in neither sector.
@@ -152,7 +152,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 
 **The algebra's own.**
 
-- *The sector placement of the two vertex structures.* The magnetic (bivector, rotation-type) structure is the $\mathbb{B}_{\Psi}$ direction $i\vec e_m$, the same sector as the spin generators $\tilde S_{\Psi,m}=\frac{m\,c}{2\,k_m}i\vec e_m$; the electric (timelike-pair) structure is the two-sided insertion $i\vec e_k(\cdot)\vec e_z$, anti-Hermitian, in $\mathbb{B}_{\Phi}$; the convection (metric) structure is central.
+- *The sector placement of the two vertex structures.* The magnetic (bivector, rotation-type) structure is the $\mathbb{B}_{\Psi}$ direction $i\vec e_m$, the same sector as the spin generators $\tilde S_{\Psi,m}=\frac{m\,c}{2\,k_m}i\vec e_m$; the electric (timelike-pair) structure is the two-sided insertion $i\vec e_\eta(\cdot)\vec e_z$, anti-Hermitian, in $\mathbb{B}_{\Phi}$; the convection (metric) structure is central.
 - *The Gordon split as the symmetric/antisymmetric split of a product of two directions*, done in the algebra's own objects.
 - *The six bivectors.* Three are single elements, $i\vec e_m$, and three are two-sided; the class of each names its sector.
 
@@ -173,10 +173,10 @@ All numerics are machine-precision arithmetic in the biquaternion algebra, with 
 
 | Claim | Value / result |
 |---|---|
-| Squares of the directions | $(iX\vec e_x)^2=+X$, $(i\vec e_kX\vec e_y)^2=-X$: residual $0$ |
-| Mixed products | $i(i\vec e_kX\vec e_y)\vec e_x=+\vec e_kX\vec e_z$ and $i\vec e_k(iX\vec e_x)\vec e_y=-\vec e_kX\vec e_z$: residual $0$ |
-| Product of two spacelike directions | $i\vec e_j(i\vec e_kX\vec e_y)\vec e_y=+\vec e_j\vec e_kX$, with $\vec e_x\vec e_y=\vec e_z$: residual $0$ |
-| On-shell condition | $ip_0w\vec e_x-\sum_kip_k\vec e_kw\vec e_y=mw$ on states built as $w=i\,p_0\,w_0\vec e_x-\sum_ki\,p_k\,\vec e_k\,w_0\vec e_y+m\,w_0$: residual $\sim10^{-16}$ |
+| Squares of the directions | $(iX\vec e_x)^2=+X$, $(i\vec e_\eta X\vec e_y)^2=-X$: residual $0$ |
+| Mixed products | $i(i\vec e_\eta X\vec e_y)\vec e_x=+\vec e_\eta X\vec e_z$ and $i\vec e_\eta(iX\vec e_x)\vec e_y=-\vec e_\eta X\vec e_z$: residual $0$ |
+| Product of two spacelike directions | $i\vec e_j(i\vec e_\eta X\vec e_y)\vec e_y=+\vec e_j\vec e_\eta X$, with $\vec e_x\vec e_y=\vec e_z$: residual $0$ |
+| On-shell condition | $ip_0w\vec e_x-\sum_\eta ip_\eta\vec e_kw\vec e_y=mw$ on states built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\vec e_\eta\,w_0\vec e_y+m\,w_0$: residual $\sim10^{-16}$ |
 | Pairing | $\bar wX=\mathrm{Sc}(w^{*}iX\vec e_x)$: linear in $X$ and conjugate-linear in $w$, residual $0$; the bra mass relation needs the frame multipliers moved, so it is not restated here |
 | Vertex | the two lines of §*The Vertex Function and the Form Factors* against the direction plus the bivector sums: residual $\sim10^{-16}$ |
 | Gordon identity | the generic form with $\mathcal G_{\mu\nu}$ and the two branches, over thirty random on-shell momentum pairs at $m=0.7$: deviation $\le4\times10^{-15}$ |
@@ -192,7 +192,7 @@ All numerics are machine-precision arithmetic in the biquaternion algebra, with 
 | Two-loop anomaly | $a_e=1.1596374278\times10^{-3}$ |
 | Three-loop anomaly | $a_e=1.1596522320\times10^{-3}$ against the measured $1.15965218073\times10^{-3}$ |
 
-The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_ki\,p_k\,\vec e_k\,w_0\vec e_y+m\,w_0$ for a random $w_0$, which produces positive-energy solutions automatically; the momenta were on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
+The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\vec e_\eta\,w_0\vec e_y+m\,w_0$ for a random $w_0$, which produces positive-energy solutions automatically; the momenta were on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
 
 ## Companion Articles
 
@@ -206,15 +206,15 @@ The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_ki\,p_k\,\vec e_k\
 
 **The older names.** A reader of the gamma literature meets the same operators under other names, and the translation is worth one paragraph, here, in the one place where this article writes them. The four directions of the frame are the four gammas of *Frame and Metric Conventions*, $\gamma_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, and the chirality basis operator is $\gamma_5=-iR_{\vec e_z}$; the arrays themselves are printed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and this article prints none, because the object is the operator and the array is one display of it.
 
-**The normalisation of the bivector.** The conventions article writes the Lorentz generator as half the commutator of the two basis operators, $\sigma_{\mu\nu}=\tfrac14\big[\gamma_\mu,\gamma_\nu\big]=\tfrac12c_\mu c_\nu$, and it takes twice that for the bivector of the pair. This article writes $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu=-2i\,\sigma_{\mu\nu}$ and $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\,\sigma_{\mu\nu}$: the conventions' objects times $-2i$ and $-i$, the minus being the reversal of the two right multipliers. What the factor buys is the Hermiticity of the class, $\mathcal G_{jk}=i\vec e_m$ fixed by the star, and it is what fixes the sign of the closure in §*The Reduction of a Numerator*. The two tables of six entries are one table read twice, the arithmetic of §*The Six Directions* reading the rotations against $i\vec e_m$ and the timelike pairs against $i\vec e_k$ on the left and $\vec e_z$ on the right.
+**The normalisation of the bivector.** The conventions article writes the Lorentz generator as half the commutator of the two basis operators, $\sigma_{\mu\nu}=\tfrac14\big[\gamma_\mu,\gamma_\nu\big]=\tfrac12c_\mu c_\nu$, and it takes twice that for the bivector of the pair. This article writes $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu=-2i\,\sigma_{\mu\nu}$ and $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\,\sigma_{\mu\nu}$: the conventions' objects times $-2i$ and $-i$, the minus being the reversal of the two right multipliers. What the factor buys is the Hermiticity of the class, $\mathcal G_{jk}=i\vec e_m$ fixed by the star, and it is what fixes the sign of the closure in §*The Reduction of a Numerator*. The two tables of six entries are one table read twice, the arithmetic of §*The Six Directions* reading the rotations against $i\vec e_m$ and the timelike pairs against $i\vec e_\eta$ on the left and $\vec e_z$ on the right.
 
 **Why the display is not used.** The reason is the one given in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*: the gammas are a frame of one display and not a second algebra, the four directions are elements of one algebra, and every identity of this article is an identity of that algebra, unchanged by the display the reader writes it in.
 
 ## Summary
 
 The anomalous magnetic moment in biquaternion form is the coefficient $F_2(0)=a$ of the bivector structure of the electromagnetic vertex,
-$$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{1}{2\,m\,c}\sum_k k_k\,\vec e_k\,w\,\vec e_zF_2 ,\qquad
-\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_k\,w\Big)F_2 ,$$
+$$\Gamma_0w=i\,w\,\vec e_xF_1+\frac{1}{2\,m\,c}\sum_\eta k_k\,\vec e_\eta\,w\,\vec e_zF_2 ,\qquad
+\Gamma_jw=i\,\vec e_j\,w\,\vec e_yF_1+\frac{1}{2\,m\,c}\Big(k_{t}^{\prime}\,\vec e_j\,w\,\vec e_z+\sum_{k\ne j} k_k\,\vec e_j\vec e_\eta\,w\Big)F_2 ,$$
 $$g=2\big(1+F_2(0)\big),\qquad a=F_2(0)=\frac{g-2}{2} ,$$
 with the tree-level $g=2$ taken from the one-particle theory. The two vertex structures are the symmetric and antisymmetric parts of a product of two directions, the metric part and the bivector; the Gordon decomposition exhibits the split on shell and was verified with a deviation of order $10^{-15}$ on on-shell states. Of the six bivectors, the three rotations are the single elements $i\vec e_m$, in the informational sector $\mathbb{B}_{\Psi}$, the same sector as the spin, and the three timelike pairs are two-sided insertions, anti-Hermitian, in the material sector $\mathbb{B}_{\Phi}$. The convection structure is central.
 
@@ -229,14 +229,14 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $w$, $w_2$ | Incoming and outgoing state, elements of $\mathbb{B}$ |
 | $\bar wX=\mathrm{Sc}(w^{*}iX\vec e_x)$ | The pairing: an amplitude is $\bar w_2X$, a scalar part of three factors; the right multiplier $\vec e_x$ is the adjoint's unit |
 | $p$, $p_2$, $k=p_2-p$ | Incoming momentum, outgoing momentum, momentum transfer |
-| $iX\vec e_x$, $i\vec e_kX\vec e_y$ | The direction $t$ and the direction $k$ acting on a state $X$ |
-| $(iX\vec e_x)^2=+X$, $(i\vec e_kX\vec e_y)^2=-X$ | The two signs of the frame, from $i^2=-1$ and $\vec e_x^2=\vec e_k^2=\vec e_y^2=-e_t$ |
+| $iX\vec e_x$, $i\vec e_\eta X\vec e_y$ | The direction $t$ and the direction $k$ acting on a state $X$ |
+| $(iX\vec e_x)^2=+X$, $(i\vec e_\eta X\vec e_y)^2=-X$ | The two signs of the frame, from $i^2=-1$ and $\vec e_x^2=\vec e_\eta^2=\vec e_y^2=-e_t$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the index rule; no index is raised |
 | $\Gamma_\mu(p_2,p)$ | Electromagnetic vertex; $-ie\Gamma_\mu$ is the amplitude |
 | $F_1(k^2),F_2(k^2)$ | Charge and magnetic form factors |
 | $g=2(1+F_2(0))$, $a=F_2(0)=(g-2)/2$ | Gyromagnetic ratio and anomaly |
-| $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu$ | Bivector of the pair $(\mu,\nu)$: $i$ times the product of the two directions, with the sign of the reversed right multipliers. $\mathcal G_{jk}$ is left multiplication by $i\vec e_m$; $\mathcal G_{0k}$ is two-sided, $i\vec e_k$ left and $\vec e_z$ right. $\mathcal G_{\mu\nu}=-2i\sigma_{\mu\nu}$ |
-| $X\mapsto i\vec e_mX$, $X\mapsto i\vec e_kX\vec e_z$ | The two actions of the six bivectors, rotations and timelike pairs |
+| $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu$ | Bivector of the pair $(\mu,\nu)$: $i$ times the product of the two directions, with the sign of the reversed right multipliers. $\mathcal G_{jk}$ is left multiplication by $i\vec e_m$; $\mathcal G_{0k}$ is two-sided, $i\vec e_\eta$ left and $\vec e_z$ right. $\mathcal G_{\mu\nu}=-2i\sigma_{\mu\nu}$ |
+| $X\mapsto i\vec e_mX$, $X\mapsto i\vec e_\eta X\vec e_z$ | The two actions of the six bivectors, rotations and timelike pairs |
 | $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\sigma_{\mu\nu}$ | Lorentz generator of the pair, half the bivector; the six close on the Lorentz algebra |
 | Product of two directions | the metric $\varepsilon_\mu$ on the diagonal and nothing off it, plus the bivector |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The two sectors, and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ |

@@ -40,7 +40,7 @@ The singlet is $(0,0)$, degree $1$; the fundamental triplet is $(1,0)$, degree $
 
 ## The Okubo Basis and the Three SU(2) Subalgebras
 
-To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A_{ik}$ ($i,k=1,2,3$) of $\mathfrak{su}(3)$, with
+To fix a subalgebra $\mathfrak{su}(2)\subset\mathfrak{su}(3)$ it is convenient to use Okubo's basis $A_{ik}$ ($i,\eta = 1, 2, 3$) of $\mathfrak{su}(3)$, with
 
 $$
 A_{11}=\mathrm{diag}\bigl(\tfrac23,-\tfrac13,-\tfrac13\bigr),\quad
@@ -48,16 +48,16 @@ A_{22}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
 A_{33}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
 $$
 
-the off-diagonal units $A_{ik}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_k A_{kk}$, the matrix product $\sum_k A_{ik}A_{kl}$ and the invariant mixed delta $\delta_{ik}$, which is not a metric. The commutation relations are
+the off-diagonal units $A_{ik}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_\eta A_{kk}$, the matrix product $\sum_\eta A_{ik}A_{kl}$ and the invariant mixed delta $\delta_{i\eta}$, which is not a metric. The commutation relations are
 
 $$
-\bigl[A_{ik},A_{lm}\bigr] = \delta_{im}A_{lk}-\delta_{lk}A_{im}.
+\bigl[A_{ik},A_{lm}\bigr] = \delta_{im}A_{lk}-\delta_{l\eta}A_{im}.
 $$
 
 This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives
 
 $$
-a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_k A_{kk},
+a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_\eta A_{kk},
 $$
 
 whose units satisfy the $\mathfrak{su}(2)$ relations, so **I-spin** is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A_{11}$ and $A_{33}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins
@@ -135,7 +135,7 @@ $$
 where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = \sum_{i,k}D_{ik}Z_{ki}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
 
 $$
-D_{ik} = \lambda\delta_{ik}\mathbf{1}+\mu A_{ik}+\nu\sum_l A_{il}A_{lk}+\dots,
+D_{ik} = \lambda\delta_{i\eta}\mathbf{1}+\mu A_{ik}+\nu\sum_l A_{il}A_{lk}+\dots,
 $$
 
 $$

@@ -20,7 +20,7 @@ This article is an explicit study of that resemblance, of the place where it is 
 
 The article is organized as follows. First the two constructions are set down in the notation of the companion articles. Then the generator-level correspondence is stated, and it is verified on two independent Hamiltonians on the spin (coadjoint) orbit; the rotor normalisation $\langle R\rangle_{\natural} = e_t$ is checked alongside. Then the failures are collected and each is verified: the different carriers and dimensions, a non-linear Hamiltonian that is not a rotor, the boost sector, and free motion. The article closes with a precise statement of what the similitude does and does not assert.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_j \vec e_k = \varepsilon_{jkl} \vec e_l$ for $j \neq k$, the scalar imaginary is $i$, and the two four-dimensional real subspaces are the anti-Hermitian material space $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector) and the Hermitian informational space $\mathbb{B}_{\Psi}$ (real scalar, imaginary vector). The real quaternion subspace is $\mathbb{B}_{H}$, the centre (the complex scalars) is $\mathbb{B}_{C}$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The rotor is fixed by the convention $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and $\tilde Q_3$ in the title map stands for $R^{*}$. For the boost, we use the **positive-rapidity convention**: the rotor built with $+V$ carries the laboratory frame to the moving frame, so that
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_j \vec e_\eta = \varepsilon_{j\eta l} \vec e_l$ for $j \neq k$, the scalar imaginary is $i$, and the two four-dimensional real subspaces are the anti-Hermitian material space $\mathbb{B}_{\Phi}$ (imaginary scalar, real vector) and the Hermitian informational space $\mathbb{B}_{\Psi}$ (real scalar, imaginary vector). The real quaternion subspace is $\mathbb{B}_{H}$, the centre (the complex scalars) is $\mathbb{B}_{C}$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The rotor is fixed by the convention $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and $\tilde Q_3$ in the title map stands for $R^{*}$. For the boost, we use the **positive-rapidity convention**: the rotor built with $+V$ carries the laboratory frame to the moving frame, so that
 
 $$
 \Lambda = \exp\!\left(+\frac{\theta_{\mathrm{rpd}}}{2}\,i\vec u_{\mathrm b}\right)
@@ -83,7 +83,7 @@ and its flow ${\xi_{\mathrm{flw}}}_{r'_{t}}^H$ is a one-parameter group of canon
 The phase space relevant to the biquaternion rotor is the **coadjoint orbit of the symmetry group**. For the compact case take $\vec S = S_1 \vec e_x + S_2 \vec e_y + S_3 \vec e_z$, a real pure quaternion, with the Lie–Poisson bracket
 
 $$
-\{S_i, S_j\} \;=\; \sum_k \varepsilon_{ijk}\, S_k ,
+\{S_i, S_j\} \;=\; \sum_\eta \varepsilon_{ij\eta}\, S_\eta ,
 $$
 
 whose Casimir is $S_1^2 + S_2^2 + S_3^2$. The orbits are the spheres $|\vec S| = \text{const}$ (the Bloch sphere $|\vec S| = 1$ being the pure-state orbit), and every Hamiltonian preserves $\vec S^2$ automatically. This is the classical phase space whose quantum counterpart is the spin-$\tfrac12$ system of the companion articles, and it is the setting in which the resemblance is sharpest.
@@ -264,7 +264,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real quaternion subspace; centre (complex scalars) |
@@ -278,7 +278,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 | $\{\cdot,\cdot\}$, $\tilde{Q}_H = \{\cdot,H\}$ | Poisson bracket; Hamiltonian vector field |
 | $H$, ${\xi_{\mathrm{flw}}}_{r'_{t}}^H$ | Hamiltonian; its flow |
 | $D_H = \{\cdot,H\}$ | Hamiltonian (Poisson) derivation |
-| $\vec S$, $\{S_i,S_j\} = \varepsilon_{ijk}S_k$ | Coadjoint-orbit coordinate; Lie–Poisson bracket |
+| $\vec S$, $\{S_i,S_j\} = \varepsilon_{ij\eta}S_\eta$ | Coadjoint-orbit coordinate; Lie–Poisson bracket |
 | $H_G = 2G\cdot\vec S$ | Hamiltonian generating the rotor flow $G$ |
 | $\Lambda = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor (positive rapidity, laboratory to moving frame) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
@@ -292,7 +292,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the unit-norm condition, and the relation $\langle R\rangle_{\natural} = e_t$.
 - [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html), for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the evolution operator $T(r'_t) = \exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$, the Lie algebra $\mathbb{B}_{\Phi}$, and the distinction between unitarity and the biquaternion norm.
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the rotation generators $g_k = -\tfrac12 \vec e_k$ and the half-angle exponential that produces the factor $2$ of the double cover.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the rotation generators $g_\eta = -\tfrac12 \vec e_\eta$ and the half-angle exponential that produces the factor $2$ of the double cover.
 - [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html), for the Hamiltonian of a spin in a field and the precession it generates.
 - [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the phase plane, the squeezing-as-boost correspondence, and the caution that identifying the phase plane with a plane of $\mathbb{B}_{\Phi}$ is an additional step.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the translation generator, the central phase, and the conserved four-momentum.

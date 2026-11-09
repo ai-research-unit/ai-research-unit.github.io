@@ -11,7 +11,7 @@ This article writes that protocol in the biquaternion language of the companion 
 - the **Bell measurement** is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;
 - the **corrections** are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are *not* idempotents.
 
-The protocol is therefore a controlled collision between two kinds of object that the framework elsewhere keeps apart: the idempotents that resolve a measurement, and the unitaries that generate reversible motion. The distinction does real work in the correction table, where the same elements $\vec e_x,\vec e_y,\vec e_z$ enter the resource idempotent as $\vec e_k\otimes \vec e_k$ and the correction gates as $i\vec e_k$, and the two kinds of object behave quite differently.
+The protocol is therefore a controlled collision between two kinds of object that the framework elsewhere keeps apart: the idempotents that resolve a measurement, and the unitaries that generate reversible motion. The distinction does real work in the correction table, where the same elements $\vec e_x,\vec e_y,\vec e_z$ enter the resource idempotent as $\vec e_\eta\otimes \vec e_\eta$ and the correction gates as $i\vec e_\eta$, and the two kinds of object behave quite differently.
 
 **Established, and recomputed below.** The shared Bell idempotent $\tilde\Pi_{Ξ^+}$ resolves the initial three-qubit state into four orthogonal branches, one per Bell outcome; each branch is the product of the outcome idempotent with a single conjugation of the unknown state; each outcome occurs with probability $\tfrac14$; and the correction equal to the (Hermitian, involutive) Pauli gate $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ restores the state exactly. Averaged over the outcomes without the classical record, Bob's qubit is the maximally mixed state $\tfrac12 e_t$ — the protocol transfers nothing on its own — and with the record and the correction the net state map on the teleported qubit is the identity channel, a gate of Kraus rank one, realised through a measurement of Kraus rank four. Alice's qubit is left maximally mixed, so no copy survives. Each of the four identities was recomputed separately, on input states other than the $Ξ^{+}$ case that fixes the labelling.
 
@@ -33,7 +33,7 @@ The arena is therefore $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, with the tr
 $$
 \tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12\left(e_t+i\vec r\right),
 \qquad
-\vec r=\sum_{k=1}^{3}r_k\,\vec e_k,\qquad |\vec r|\leq 1 ,
+\vec r=\sum_{\eta=1}^{3}r_\eta\,\vec e_\eta,\qquad |\vec r|\leq 1 ,
 $$
 
 with $|\vec r|=1$ exactly when the state is pure and $\vec r=0$ when it is maximally mixed. The initial three-qubit state is the single element
@@ -343,10 +343,10 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$ | Three-qubit arena |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec r)$ | Unknown single-qubit state |
-| $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
+| $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_\eta\epsilon_k \vec e_\eta\otimes \vec e_\eta)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $\tilde\Pi_{Ξ^+}$, $\epsilon=(-1,+1,-1)$ | Shared resource (Bell idempotent) |
 | $S_1=-\vec e_x\otimes \vec e_x$, $S_3=-\vec e_z\otimes \vec e_z$ | Stabiliser involutions; $(s_1,s_3)=(-\epsilon_1,-\epsilon_3)$ |
 | $\tilde\Pi_\epsilon^{(12)}=\tilde\Pi_\epsilon\otimes e_t$ | Bell measurement idempotent on qubits $(1,2)$ |

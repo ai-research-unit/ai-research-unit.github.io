@@ -10,7 +10,7 @@ The distinction between one Kraus operator, an instrument, and a channel is the 
 
 This article is the pilot of the polar programme in the physics corpus: the object is the Kraus operator of a measurement outcome, the examples are two-dimensional, and every numerical claim is checked in the matrix model. It does not derive the measurement postulate or classify channels; it tests the grammar of the generalized Cartan pairing on the object where that grammar has the most work to do.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{B}_{\Psi}$, the anti-Hermitian subspace is $\mathbb{B}_{\Phi}$. A state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde M_{\mathrm{kraus},H}$ and the partial isometry $\tilde M_{\mathrm{kraus},0}$; they are the $\tilde M_{\mathrm{kraus},H}$ and $\tilde M_{\mathrm{kraus},0}$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{R}_{\Psi,R}$ and the $*$-unitary element $\tilde M_{\mathrm{kraus},0}$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{B}_{\Psi}$, the anti-Hermitian subspace is $\mathbb{B}_{\Phi}$. A state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde M_{\mathrm{kraus},H}$ and the partial isometry $\tilde M_{\mathrm{kraus},0}$; they are the $\tilde M_{\mathrm{kraus},H}$ and $\tilde M_{\mathrm{kraus},0}$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{R}_{\Psi,R}$ and the $*$-unitary element $\tilde M_{\mathrm{kraus},0}$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
 
 ## The Results It Uses
 
@@ -394,7 +394,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^{2}=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_\eta^{2}=-e_t$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | state, $\lvert\vec r\rvert\leq1$ |
 | $\tilde M_{\mathrm{kraus}}$, $\tilde M_{\mathrm{kraus},y}$, $\tilde M_{\mathrm{kraus},l}$ | Kraus operator, one outcome, one term of a channel |
 | $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}}$ | positive (strength) factor of the Kraus operator |

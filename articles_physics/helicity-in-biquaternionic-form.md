@@ -20,7 +20,7 @@ $$
 
 be the unit along it, a pure real quaternion of square $-e_t$. The axis is **declared**: it is a datum of the state and not a property of the algebra, and no statement below is about the algebra until an axis is named.
 
-Let $\vec S$ be the rotation generator on the carrier of the state, read as one vector, so that its components are $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ on the fundamental carrier (*Angular Momentum and Spin in Biquaternionic Form*, §*The Spin Operators Under the Isomorphism*) and the corresponding generator on any other.
+Let $\vec S$ be the rotation generator on the carrier of the state, read as one vector, so that its components are $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$ on the fundamental carrier (*Angular Momentum and Spin in Biquaternionic Form*, §*The Spin Operators Under the Isomorphism*) and the corresponding generator on any other.
 
 **Definition (helicity).** With the axis $\vec u_p$ declared, the **helicity operator** is the projection
 
@@ -55,11 +55,11 @@ $$
 
 In the algebra this is one line. The orbital operator is the vector part of the quaternionic product of position and momentum, $\vec L=\mathrm{Vect}(\vec r\,\tilde p)$ with $\tilde p=-\frac{m\,c\,i}{k_m}\nabla$ (*Angular Momentum and Spin in Biquaternionic Form*, §*The Orbital Angular Momentum Operator*), and the scalar triple product carrying $\vec p$ twice vanishes identically. The projection of $\vec J$ on $\vec u_p$ is therefore the projection of $\vec S$, which is why the quantity has a name of its own and is not called one component of the total angular momentum.
 
-**The consequence for the slots.** The orbital part occupies the central scalar slot $e_t$ and the spin part the vector slots $i\vec e_k$, the asymmetry that article records. The vanishing above is what makes the asymmetry harmless for this one projection: the orbital slot contributes nothing to it, so the projection of $\vec J$ on $\vec u_p$ is the projection of $\vec S$ alone.
+**The consequence for the slots.** The orbital part occupies the central scalar slot $e_t$ and the spin part the vector slots $i\vec e_\eta$, the asymmetry that article records. The vanishing above is what makes the asymmetry harmless for this one projection: the orbital slot contributes nothing to it, so the projection of $\vec J$ on $\vec u_p$ is the projection of $\vec S$ alone.
 
 ## The Fundamental Carrier
 
-On the spin-$\tfrac12$ carrier the generator is $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$, so the operator is the left multiplication by
+On the spin-$\tfrac12$ carrier the generator is $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, so the operator is the left multiplication by
 
 $$
 \lambda=\frac{m\,c}{2\,k_m}\,i\vec u_p\in\mathbb{B}_{\Psi} .
@@ -294,7 +294,7 @@ At $m=0$ a second description opens. The null momentum is a zero divisor, hence 
 | $\vec u_p=\vec p/\lvert\vec p\rvert$ | The unit along the momentum, declared; a pure real quaternion, $\vec u_p^2=-e_t$ |
 | $\vec u_k=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | The unit along the wave vector; the same element as $\vec u_p$, since $\vec p=\frac{m\,c\,\vec k_\Phi}{k_m}$ |
 | $\lambda=\vec u_p\cdot\vec S$ | The helicity operator, $\in\mathbb{B}_{\Psi}$, acting by left multiplication; $\frac{m\,c}{k_m}$ times the dimensionless $\tfrac{i}{2}\mathrm{ad}_{\vec u_p}$ on the adjoint |
-| $\vec S$ | The rotation generator read as one vector, $\tilde S_{\Psi,k}=\frac{m\,c}{2\,k_m}i\vec e_k$ on the fundamental carrier |
+| $\vec S$ | The rotation generator read as one vector, $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$ on the fundamental carrier |
 | $\tilde\Pi_\pm(\vec u_p)=\tfrac12(e_t\pm i\vec u_p)$ | The idempotents at the momentum axis; $\tilde\Pi_+$ is the vector of the value $+\frac{m\,c}{2\,k_m}$ in $S_+(\vec u_p)$ |
 | $S_\pm(\vec u_p)=\mathbb{B}\tilde\Pi_\pm(\vec u_p)$ | The minimal left ideals at the axis; an elementary spinor is an element of one of them |
 | $\tilde{Ζ}=i\vec u_p$ | The root of $+1$ on the fundamental carrier; $\lambda=\frac{m\,c}{2\,k_m}\tilde{Ζ}$ |

@@ -62,7 +62,7 @@ $$
 **The symbol, and the square.** The principal symbol at a covector $\zeta$ is the left multiplication by $\sum_\mu\zeta_\mu e_\mu$. That element is invertible for every real $\zeta\neq0$, because its norm is $\sum_\mu\zeta_\mu^2$ and that is nonzero; so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. The square of the symbol is not a multiple of the identity,
 
 $$
-\Bigl(\sum_\mu\zeta_\mu e_\mu\Bigr)^2=\zeta_t^2-\sum_k\zeta_k^2+2\zeta_t\sum_k\zeta_k\vec e_k ,
+\Bigl(\sum_\mu\zeta_\mu e_\mu\Bigr)^2=\zeta_t^2-\sum_\eta\zeta_k^2+2\zeta_t\sum_\eta\zeta_k\vec e_\eta ,
 $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
@@ -175,7 +175,7 @@ $$
 
 a surface integral over the three-sphere at infinity. The coefficient $\tfrac23 i\kappa$ is the one that makes the identity exact: the derivative of the cubic term contributes $3\cdot\tfrac23 i\kappa=2i\kappa$ times $\mathrm{Tr}(d\mathcal A\wedge\mathcal A\wedge\mathcal A)$, which is the cross term of $\mathrm{Tr}(F\wedge F)$, and the quartic term $\mathrm{Tr}(\mathcal A^4)$ vanishes — the trace is cyclic and the wedge is graded antisymmetric, so moving one of the four factors past the other three multiplies the term by the sign of a four-cycle, and that sign is $-1$. The index theorem's integral and the instanton's charge are therefore the same integral, computed in two ways: as the integral of the index density over the bulk, and as the Chern–Simons flux through the boundary. They agree in the defining representation, and differ by the Dynkin factor $2T(R)$ otherwise.
 
-In the abelian case the density collapses to the framework's second invariant. Every index in these displays is written low and the four labels are summed explicitly. The alternating symbol is the orientation density: in the Lorentzian ordering $(Q_t,Q_x,Q_y,Q_z)$ it is fixed by $\epsilon_{0123}=+1$, and in the Euclidean ordering $(x_4,x_1,x_2,x_3)$ by $\epsilon_{4123}=+1$; no index is raised, so no metric sign enters it. With the components $F_{0k}=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$ in the Lorentzian case, and $F_{4k}=E_k$ and $F_{jk}=\epsilon_{jkl}B_l$ in the Euclidean one, the contraction reads
+In the abelian case the density collapses to the framework's second invariant. Every index in these displays is written low and the four labels are summed explicitly. The alternating symbol is the orientation density: in the Lorentzian ordering $(Q_t,Q_x,Q_y,Q_z)$ it is fixed by $\epsilon_{0123}=+1$, and in the Euclidean ordering $(x_4,x_1,x_2,x_3)$ by $\epsilon_{4123}=+1$; no index is raised, so no metric sign enters it. With the components $F_{0k}=iE_\eta/c$ and $F_{jk}=\epsilon_{j\eta l}B_l$ in the Lorentzian case, and $F_{4k}=E_\eta$ and $F_{jk}=\epsilon_{j\eta l}B_l$ in the Euclidean one, the contraction reads
 
 $$
 \frac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
@@ -251,7 +251,7 @@ The index density is a total derivative whose integral equals the instanton char
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |

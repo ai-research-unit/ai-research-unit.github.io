@@ -94,7 +94,7 @@ $$
 
 **Their commutation relations were recomputed and hold exactly.** $[S_x,S_y] =\frac{m\,c\,i\,S_{z}}{k_m}$, $[S_y,S_z] =\frac{m\,c\,i\,S_{x}}{k_m}$ and $[S_z,S_x] =\frac{m\,c\,i\,S_{y}}{k_m}$, with no residual term. So the three elements satisfy the angular-momentum algebra of spin $\tfrac12$ in the algebra's own product, and that part of the source needs no correction.
 
-**The corpus's operators are $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$, and the source's are the corpus's in another labelling**: $S_x = -\tilde S_{\Psi,3}$, $S_y = -\tilde S_{\Psi,2}$ and $S_z = -\tilde S_{\Psi,1}$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.
+**The corpus's operators are $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, and the source's are the corpus's in another labelling**: $S_x = -\tilde S_{\Psi,3}$, $S_y = -\tilde S_{\Psi,2}$ and $S_z = -\tilde S_{\Psi,1}$. The two triples are equal as algebras and different as identifications of the three directions, and the exchange is the one the table of the four values shows. Neither is wrong; what the page does not say is which of the two it uses.
 
 ### The States
 
@@ -177,7 +177,7 @@ $$
 **The component along the axis is invariant and the two transverse components rotate into one another** in the standard sense; the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17),
 
 $$
-D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{m\,c}{2\,k_m}\left(q_j\cos\theta+q_k\sin\theta\right),
+D^{*}(n_a,\theta)S_jD(n_a,\theta)=\frac{m\,c}{2\,k_m}\left(q_j\cos\theta+q_\eta\sin\theta\right),
 $$
 
 where $q_j=-i\vec e_j$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the plus sign belongs to $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is not covered by the pattern at all.
@@ -306,7 +306,7 @@ its equation (30). **As printed, the parameter $q_7$ appears in two coefficients
 
 **The second short section writes four $4\times4$ arrays in element form and attributes the representation to Silvis (2010)**; that attribution is the only place in this corpus where Silvis is named. Two things are visible on the page without any reconstruction. The first array, with $1,1,-1,-1$ on its diagonal, is sent to the two diagonal places both carrying $e_t$, which is the identity: the second of the two is printed with $e_t$ where the minus of the $4\times4$ array should stand, so that as printed the image of that array is the identity and not the pair $(e_t,-e_t)$. The three places off the diagonal are printed with $-i\vec e_x$ above and $i\vec e_x$ below, and the same with $\vec e_z$ and with $\vec e_y$.
 
-**The corpus's side of the same correspondence is in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation***, in the mostly-minus convention: a timelike generator off the diagonal with $e_t$ in both places, and three spacelike generators off the diagonal with $i\vec e_k$ above and $-i\vec e_k$ below. The two sets differ in two ways and agree in the algebra: the source's first array is diagonal where the corpus's timelike generator is off-diagonal, and the source's three spacelike places are the negatives of the corpus's, a sign that flips all three odd elements at once and therefore leaves every product unchanged. Which elements carry which axes is again the source's own table.
+**The corpus's side of the same correspondence is in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation***, in the mostly-minus convention: a timelike generator off the diagonal with $e_t$ in both places, and three spacelike generators off the diagonal with $i\vec e_\eta$ above and $-i\vec e_\eta$ below. The two sets differ in two ways and agree in the algebra: the source's first array is diagonal where the corpus's timelike generator is off-diagonal, and the source's three spacelike places are the negatives of the corpus's, a sign that flips all three odd elements at once and therefore leaves every product unchanged. Which elements carry which axes is again the source's own table.
 
 ## What Is Verified and What Is Not
 
@@ -346,7 +346,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_k\vec e_k\partial/\partial R_k$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
@@ -358,7 +358,7 @@ two fields, both equations acting from the left, the chirality carried by the tw
 $$
 \left(i\frac{\partial}{\partial r'_t}+D_3\right)F-k_mi\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_k\vec e_k\frac{\partial}{\partial R_k},
+D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
 with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. The two are one operator read from two sides: since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads
@@ -403,7 +403,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 | $\lvert q\rvert^2 = \sum_\mu\lvert q_\mu\rvert^2$ | The source's square, the Hermitian norm $H$; $1$ on both states |
 | $q_1, q_3$ | The source's coefficient labels, $q_x$ and $q_z$ |
 | $S_x, S_y, S_z$ | The source's spin operators; equal to $-\tilde S_{\Psi,3}, -\tilde S_{\Psi,2}, -\tilde S_{\Psi,1}$ |
-| $\tilde S_{\Psi,k} =\frac{m\,c}{2\,k_m}i\vec e_k$ | The corpus's spin operators |
+| $\tilde S_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ | The corpus's spin operators |
 | $q_+ = \tfrac{1}{\sqrt2}(e_t - i\vec e_x)$, $q_- = \tfrac{1}{\sqrt2}(-\vec e_y - i\vec e_z)$ | The source's two states |
 | $\tfrac12(e_t \pm i\vec e_x)$ | The two pure states along $\vec e_x$; the minus member is $q_+/\sqrt2$ |
 | $\tfrac12(-\vec e_y - i\vec e_z)$ | The square-zero element $q_-/\sqrt2$ |

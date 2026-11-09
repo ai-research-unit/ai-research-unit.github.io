@@ -203,7 +203,7 @@ $$
 \mathcal{F}_{2,\mu\nu} = \mathcal{F}_{\mu\nu} - \left(\partial^2/\partial R_\mu\partial R_\nu\alpha - \partial^2/\partial R_\nu\partial R_\mu\alpha\right) = \mathcal{F}_{\mu\nu} .
 $$
 
-This is the same abelian curvature $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ that appears in the gauge-principle article as the field strength of the connection, now on parameter space rather than on spacetime. For a three-dimensional parameter space, as here, the curvature is naturally a vector via the Hodge dual, $\mathcal{F}_k = \tfrac12\epsilon_{kij}\mathcal{F}_{ij}$.
+This is the same abelian curvature $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ that appears in the gauge-principle article as the field strength of the connection, now on parameter space rather than on spacetime. For a three-dimensional parameter space, as here, the curvature is naturally a vector via the Hodge dual, $\mathcal{F}_k = \tfrac12\epsilon_{\eta ij}\mathcal{F}_{ij}$.
 
 **The two routes to the phase.** For a closed loop $\mathcal{C} = \partial\mathcal{S}$ bounding a surface $\mathcal{S}$ on which the connection is smooth, Stokes' theorem gives
 
@@ -362,7 +362,7 @@ make $\pi_z$ a $k$-plane bundle wherever it is defined, and the existence questi
 **The three cross-sections.** The composite splits into two, and a further one is needed for an eigenvector field, so the existence question splits into three.
 
 1. **$s_1 : B \to L_1$, a continuous eigenvalue branch.** A cross-section $s_1(b) = (b, \lambda(b))$ exists exactly when there is a continuous function $\lambda : B \to K$ whose every value is an eigenvalue of $Ξ(b)$ whose eigenspace has dimension $\ge k$. It fails when the eigenvalue branch cannot be continued — the elementary example is a field of real rotation matrices, which has no real eigenvalue at all over part of the base, or an eigenvalue crossing at which two branches exchange.
-2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\lambda(b),W_b)$ is a continuous map $B \to G_k(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
+2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\lambda(b),W_b)$ is a continuous map $B \to G_\eta(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
 3. **$s_3$, a nowhere-zero eigenvector field.** Given the first two, the spectral bundle $\pi_z$ restricts to a $k$-plane bundle over $B$, and a nowhere-zero cross-section of it is a nowhere-zero eigenvector field. Its existence is the vanishing question for that bundle, and the Chern number computed above is its invariant.
 
 So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = r_t \pm \lvert\vec r_\Psi\rvert$ are continuous and exchange only where $|\vec r_\Psi| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
@@ -471,7 +471,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\Delta = R$ | Spectral gap; closes at $\vec R = 0$ |
 | $C_\pm = \mp 1$ | First Chern numbers of the two bands over $S^2$ |
 | $B$, $Ξ : B \to \operatorname{End}(V)$, $V$ | Base (parameter) space, matrix field, fibre $V$ of dimension $n$ |
-| $L_1 \subset B\times K$, $L_2 \subset B\times K\times G_k(V)$, $L_3$ | Eigenvalue, eigenspace and eigenvector incidence spaces of the field |
+| $L_1 \subset B\times K$, $L_2 \subset B\times K\times G_\eta(V)$, $L_3$ | Eigenvalue, eigenspace and eigenvector incidence spaces of the field |
 | $s_1, s_2, s_3$ | The three cross-sections: continuous eigenvalue branch, continuous $k$-plane selection, nowhere-zero eigenvector field |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | Gauge-principle connection and its transformation (for contrast) |
 

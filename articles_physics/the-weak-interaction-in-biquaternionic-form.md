@@ -12,10 +12,10 @@ This article treats the process level, and not the bosons. The companion *The W 
 
 The article is organised as follows. The next section transcribes the process, the contact and the rates. A section then writes the charged current as a basis operator, derives the multiplier table, and proves the square identity and the nilpotency criterion. A section turns the criterion on the neutral current and shows that the measured $Z$ coupling sits away from the null point, with the parity-violating asymmetry as the size of the departure. A section treats parity, the mass bilinear and what nilpotency means for a fermion line. A closing section separates what the framework supplies from what it imports, and names the one gauge construction that would close the gap. The summary, the notation table and the literature follow.
 
-Throughout, the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the three spatial units, and central $i$ with $i^2=-1$. A two-sided multiplication on the Dirac module $\mathbb{C}^4$ is a **basis operator**, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$, and applying a basis operator twice gives $a^2\tilde{Ξ}_{\mathrm{sp}} b^2$. The frame basis operators and the chirality basis operator are those of the companions,
+Throughout, the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\sum_l\varepsilon_{j\eta l}\vec e_l$ on the three spatial units, and central $i$ with $i^2=-1$. A two-sided multiplication on the Dirac module $\mathbb{C}^4$ is a **basis operator**, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$, and applying a basis operator twice gives $a^2\tilde{Ξ}_{\mathrm{sp}} b^2$. The frame basis operators and the chirality basis operator are those of the companions,
 
 $$
-\Gamma_t:=iR_{\mathrm{axf},\vec e_x},\qquad \Gamma_k:=iL_{\mathrm{axf},\vec e_k}R_{\mathrm{axf},\vec e_y},\qquad \xi:=-iR_{\mathrm{axf},\vec e_z}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
+\Gamma_t:=iR_{\mathrm{axf},\vec e_x},\qquad \Gamma_\eta:=iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y},\qquad \xi:=-iR_{\mathrm{axf},\vec e_z}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
 
 the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{B}_{\Phi}$ throughout**, the material frame with $x_0=r'_{t}$, and no formula below crosses into the $\mathbb{B}$ frame. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\xi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\xi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\xi)$ and $P_R=\tfrac12(I_4+\xi)$, and the Dirac adjoint is $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same basis operators in this same frame, $\gamma_\mu=\Gamma_\mu$ and $\gamma_5=\xi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
@@ -71,7 +71,7 @@ against the measured $1.2300\times10^{-4}$, which is $0.958$ times the tree-leve
 ## The Charged Current as an Operator
 ### The vector and the axial vertex
 
-The vector vertex is one basis operator, $\Gamma_\mu$, and it is the corpus's frame basis operator: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The axial vertex is the same basis operator followed by the chirality basis operator, and the product of two basis operators is a basis operator, so $\Gamma_\mu\xi$ is a basis operator as well; explicitly $\Gamma_t\xi=R_{\vec e_y}$ and $\Gamma_k\xi=-L_{\vec e_k}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\xi)^2=-\varepsilon_\mu I_4$, both verified exactly.
+The vector vertex is one basis operator, $\Gamma_\mu$, and it is the corpus's frame basis operator: $\Gamma_t=iR_{\vec e_x}$ and $\Gamma_\eta=iL_{\vec e_\eta}R_{\vec e_y}$. The axial vertex is the same basis operator followed by the chirality basis operator, and the product of two basis operators is a basis operator, so $\Gamma_\mu\xi$ is a basis operator as well; explicitly $\Gamma_t\xi=R_{\vec e_y}$ and $\Gamma_\eta\xi=-L_{\vec e_\eta}R_{\vec e_x}$. Neither multiplier is nilpotent, and the square of neither vanishes: $\Gamma_\mu^2=\varepsilon_\mu I_4$ and $(\Gamma_\mu\xi)^2=-\varepsilon_\mu I_4$, both verified exactly.
 
 The object the weak interaction uses is neither of these but their difference. It is a basis operator as well, this time by linearity of the right factor rather than by the product rule,
 
@@ -106,7 +106,7 @@ $$
 (g_Vi\vec e_x-g_A\vec e_y)^2=-g_V^2\vec e_x^2+g_A^2\vec e_y^2=g_V^2-g_A^2 ,
 $$
 
-the cross term vanishing because distinct quaternion units anticommute. The same computation in a spatial component, with right multiplier $g_Vi\vec e_y+g_A\vec e_x$, gives the same value $g_V^2-g_A^2$, the difference between the two cases being carried by $\Gamma_k^2=-I_4$. Hence
+the cross term vanishing because distinct quaternion units anticommute. The same computation in a spatial component, with right multiplier $g_Vi\vec e_y+g_A\vec e_x$, gives the same value $g_V^2-g_A^2$, the difference between the two cases being carried by $\Gamma_\eta^2=-I_4$. Hence
 
 $$
 \big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu\,(g_V^2-g_A^2)\,I_4 ,
@@ -122,7 +122,7 @@ $$
 \Gamma_\mu P_L\,\Gamma_\nu P_L=\Gamma_\mu\Gamma_\nu P_RP_L=0 ,
 $$
 
-verified for all sixteen pairs $(\mu,\nu)$ and likewise for $P_R$. The index plays no part; what does the work is the chirality flip, one projector at each vertex. The prohibition is therefore about **adjacency**. Anything between the two vertices removes it, and a single propagator is enough, because the momentum basis operator $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ anticommutes with $\xi$ and turns the projector back: with $p=(1,0.3,-0.2,0.1)$ the chain was $1.1$ in every component. A box diagram is unaffected for that reason, its two vertices standing at the two ends of one propagator rather than beside each other. This is the helicity selection rule read on one line rather than on one decay, and it is the same flip that the pion ratio measures.
+verified for all sixteen pairs $(\mu,\nu)$ and likewise for $P_R$. The index plays no part; what does the work is the chirality flip, one projector at each vertex. The prohibition is therefore about **adjacency**. Anything between the two vertices removes it, and a single propagator is enough, because the momentum basis operator $P=p_0\Gamma_t-\sum_\eta p_\eta\Gamma_\eta$ anticommutes with $\xi$ and turns the projector back: with $p=(1,0.3,-0.2,0.1)$ the chain was $1.1$ in every component. A box diagram is unaffected for that reason, its two vertices standing at the two ends of one propagator rather than beside each other. This is the helicity selection rule read on one line rather than on one decay, and it is the same flip that the pion ratio measures.
 
 **The identity is Dirac's, and the framework says why.** A reader who knows the Dirac algebra will recognise $(g_V^2-g_A^2)\Gamma_\mu^2$ as the statement that the axial matrix anticommutes with the vector one, $\Gamma_\mu\xi=-\xi\Gamma_\mu$, so that $\Gamma_\mu(g_V-g_A\xi)=(g_V+g_A\xi)\Gamma_\mu$ and the axial half reverses its sign as the vector passes through it; the square then returns $g_V^2-g_A^2$ times $\Gamma_\mu^2$. The framework's version of the reason is arithmetic on the units. The right multipliers of the vector and the axial vertex are $i\vec e_x$ and $\vec e_y$, two orthogonal quaternion units, so the cross terms of the square cancel whatever the weight. The squares themselves are $+1$ and $-1$: the first is positive because the central $i$ contributes $i^2=-1$ against $\vec e_x^2=-1$, and the second is negative because $\vec e_y^2=-1$ stands alone. The two contributions therefore carry opposite signs by construction, and they cancel exactly when the weights are equal in magnitude.
 
@@ -161,10 +161,10 @@ The framework's parity operation reverses the three spatial directions and fixes
 $$
 \eta_P\,\Gamma_t(g_V-g_A\xi)\,\eta_P=\Gamma_t(g_V+g_A\xi),
 \qquad
-\eta_P\,\Gamma_k(g_V-g_A\xi)\,\eta_P=-\Gamma_k(g_V+g_A\xi),
+\eta_P\,\Gamma_\eta(g_V-g_A\xi)\,\eta_P=-\Gamma_\eta(g_V+g_A\xi),
 $$
 
-both verified exactly. Parity **reverses the axial weight**, $g_A\mapsto-g_A$, and the sign on the spatial components is the vector's own sign flip, $\Gamma_t\mapsto+\Gamma_t$ and $\Gamma_k\mapsto-\Gamma_k$. It does not annihilate a chiral vertex; it exchanges $V-A$ with $V+A$.
+both verified exactly. Parity **reverses the axial weight**, $g_A\mapsto-g_A$, and the sign on the spatial components is the vector's own sign flip, $\Gamma_t\mapsto+\Gamma_t$ and $\Gamma_\eta\mapsto-\Gamma_\eta$. It does not annihilate a chiral vertex; it exchanges $V-A$ with $V+A$.
 
 A theory is parity invariant when its vertex is its own image, which requires $g_A=0$: the pure vector, which is Fermi's original coupling. Any $g_A\ne0$ is parity-odd, and **maximal** violation is the weight $|g_A|=|g_V|$, where the two halves enter with equal magnitude and opposite sign, so the parity-odd admixture is as large as the form admits. That weight is also the null one, and the coincidence is one fact rather than two: the squares of the two contributions, $+1$ and $-1$, are what make the magnitudes equal and what make them cancel.
 
@@ -212,7 +212,7 @@ $$
 \big(\Gamma_\mu(g_V-g_A\xi)\big)^2=\varepsilon_\mu(g_V^2-g_A^2)I_4 ,
 $$
 
-verified to $2.3\times10^{-16}$, so the chiral vertex is nilpotent if and only if $|g_A|=|g_V|$ and invertible otherwise. With the right multiplier normalised to the Peirce pair, the left multipliers are the informational-sector frame, $e_t$ and $-i\vec e_k$ for $P_L$ against $e_t$ and $+i\vec e_k$ for $P_R$, and the two chiralities differ only by the sign of that multiplier. The $V-A$ structure, which the Standard Model takes as input, is therefore exactly the condition that the weak vertex be null, and the identity it satisfies is Dirac's, derived here from the nilpotency of the Peirce element.
+verified to $2.3\times10^{-16}$, so the chiral vertex is nilpotent if and only if $|g_A|=|g_V|$ and invertible otherwise. With the right multiplier normalised to the Peirce pair, the left multipliers are the informational-sector frame, $e_t$ and $-i\vec e_\eta$ for $P_L$ against $e_t$ and $+i\vec e_\eta$ for $P_R$, and the two chiralities differ only by the sign of that multiplier. The $V-A$ structure, which the Standard Model takes as input, is therefore exactly the condition that the weak vertex be null, and the identity it satisfies is Dirac's, derived here from the nilpotency of the Peirce element.
 
 The neutral current does not sit at the null point: its weight ratio is $(1-4\sin^2\theta_W)^{-1}=13.3$, and the smallness of the parity-violating asymmetry in Møller scattering is the measured face of that distance. Parity reverses the sign of the axial weight, $g_A\mapsto-g_A$, so it exchanges $V-A$ with $V+A$ and leaves only the pure vector self-conjugate; maximal violation is $|g_A|=|g_V|$, where the two halves enter with equal magnitude. The mass bilinear is chirality-odd, and the identity $P_LR_{\vec e_x}=R_{\vec e_x}P_R$ is what makes it vanish on a field of definite chirality. Two adjacent weak vertices on one line annihilate for every pair of indices, and a propagator between them revives the product; that is the chirality flip, and the pion ratio measures the same flip on one decay.
 
@@ -223,11 +223,11 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\sum_l\varepsilon_{jkl}\vec e_l$ on the spatial units |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ and $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\sum_l\varepsilon_{j\eta l}\vec e_l$ on the spatial units |
 | $i$ | Central imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors |
 | $L_aR_b$ | Basis operator, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$; applying it twice gives $a^2\tilde{Ξ}_{\mathrm{sp}} b^2$ |
-| $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame basis operators, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
+| $\Gamma_t=iR_{\vec e_x}$, $\Gamma_\eta=iL_{\vec e_\eta}R_{\vec e_y}$ | Frame basis operators, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
 | $\xi=-iR_{\vec e_z}$ | Chirality basis operator, $\xi^2=I_4$, the image of $\gamma_5$ |
 | $P_L=\tfrac12(I_4-\xi)$, $P_R=\tfrac12(I_4+\xi)$ | Chiral projectors, $P_LP_R=0$ |
 | $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Upsilon_a^2=0$; they are the canonical frame's $\vec\Upsilon_-$ and $\vec\Upsilon_+$ |

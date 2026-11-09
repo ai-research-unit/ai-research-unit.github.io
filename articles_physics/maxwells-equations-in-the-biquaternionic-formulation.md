@@ -122,7 +122,7 @@ $$
 
 The computation is three steps, and the normalisation constant is fixed in the third.
 
-**Step 1: the product.** With $\tilde A_{\Phi} = A_0 + \vec A$ and $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_k\partial/\partial R_k$, the four products give
+**Step 1: the product.** With $\tilde A_{\Phi} = A_0 + \vec A$ and $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_\eta\partial/\partial R_\eta$, the four products give
 
 $$
 \mathrm{Sc}\bigl(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\bigr)=\frac{\partial A_0}{\partial R_t}+\mathrm{div}\,\vec A,
@@ -132,7 +132,7 @@ $$
 \mathrm{Vect}\bigl(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\bigr)=\frac{\partial \vec A}{\partial R_t}-\nabla A_0-\mathrm{rot}\,\vec A .
 $$
 
-The scalar part comes from $e_te_t=e_t$ and from the minus in $\tilde{\nabla}^{\natural}$ against $\vec e_k\vec e_k=-e_t$; the rotation is the antisymmetric part of $\vec e_k\vec e_j$.
+The scalar part comes from $e_te_t=e_t$ and from the minus in $\tilde{\nabla}^{\natural}$ against $\vec e_\eta\vec e_\eta=-e_t$; the rotation is the antisymmetric part of $\vec e_\eta\vec e_j$.
 
 **Step 2: the fields.** In the $i r'_t$ convention $\partial/\partial R_t = -i\,\partial/\partial r'_t$, and the two derivative terms become
 
@@ -175,7 +175,7 @@ $$
 F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu ,
 $$
 
-antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(c\,\partial A_k/\partial r'_t+\partial \xi_{\mathrm{scp}}/\partial r_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
+antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, with $F_{0k}=-(i/c)(c\,\partial A_\eta/\partial r'_t+\partial \xi_{\mathrm{scp}}/\partial r_\eta)=iE_\eta/c$ and $F_{jk}=\epsilon_{j\eta l}B_l$. The six independent components are the six of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
 
 The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector** $\vec N = \vec E + ic\vec B$. The biquaternionic field strength is that vector with one constant phase and one normalisation,
 
@@ -836,7 +836,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-Every generator carries exactly one factor of $i$, so $(iL_aR_b)^2=-L_{a^2}R_{b^2}$ and all the signs are fixed by $i^2=-1$ together with $\vec e_k^2=-e_t$:
+Every generator carries exactly one factor of $i$, so $(iL_aR_b)^2=-L_{a^2}R_{b^2}$ and all the signs are fixed by $i^2=-1$ together with $\vec e_\eta^2=-e_t$:
 
 $$
 \gamma_0^2=+I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=+I_4,
@@ -872,7 +872,7 @@ $$
 
 $\gamma_5$ is the reference-frame basis operator of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-**The two-sided structure, and the two Dirac equations.** The basis operators come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{\mathrm{pau},e_t}\partial/\partial r'_t\,F+\sum_kL_{\mathrm{pau},\vec e_k}\partial/\partial R_k\,F-mi\,R_{\mathrm{pau},\vec e_z}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right basis operator acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one basis operator from each family, antisymmetrised. In this article the field equation is written with the element; the operators of *The Field Bivector and the Field Operator* above are written as actions on an argument, and the gamma names are attached to the frame basis operators here and nowhere else. Here $\hbar/(mc)$ is the mass length.
+**The two-sided structure, and the two Dirac equations.** The basis operators come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{\mathrm{pau},e_t}\partial/\partial r'_t\,F+\sum_\eta L_{\mathrm{pau},\vec e_\et}a\partial/\partial R_\eta\,F-mi\,R_{\mathrm{pau},\vec e_z}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right basis operator acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one basis operator from each family, antisymmetrised. In this article the field equation is written with the element; the operators of *The Field Bivector and the Field Operator* above are written as actions on an argument, and the gamma names are attached to the frame basis operators here and nowhere else. Here $\hbar/(mc)$ is the mass length.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
