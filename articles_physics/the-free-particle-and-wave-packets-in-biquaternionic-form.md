@@ -114,7 +114,7 @@ The momentum acts on the plane wave as a left multiplication by a fixed algebra 
 
 $$
 \tilde p\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \sum_\eta  \vec e_\eta p_\eta \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
-=\frac{m\,c}{k_m}\sum_\eta  k_k \vec e_\eta\, \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
+=\frac{m\,c}{k_m}\sum_\eta  k_{\Phi\eta} \vec e_\eta\, \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
 =\frac{m\,c\,\vec k_\Phi\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m},
 $$
 

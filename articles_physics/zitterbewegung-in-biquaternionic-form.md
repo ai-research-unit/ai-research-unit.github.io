@@ -20,13 +20,13 @@ $$
 
 (*The Dirac Equation in Biquaternionic Form*, §*Statement*). The standard picture, which this section follows, reads the equation first order in time,
 
-$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{\eta=x,y,z} p_\eta\,\alpha_k + \beta\,mc^2,
+$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{\eta=x,y,z} p_\eta\,\alpha_\eta + \beta\,mc^2,
 $$
 
 with $p_\eta=-\frac{m\,c\,i}{k_m}\partial/\partial r_\eta$ and the two maps
 
 $$
-\alpha_k:\ \tilde Q\mapsto\vec e_\eta\,\tilde Q\,\vec e_z, \qquad \beta:\ \tilde Q\mapsto i\,\tilde Q\,\vec e_x .
+\alpha_\eta:\ \tilde Q\mapsto\vec e_\eta\,\tilde Q\,\vec e_z, \qquad \beta:\ \tilde Q\mapsto i\,\tilde Q\,\vec e_x .
 $$
 
 The composition of two such maps is that of *Operator Family Conventions*, §*The Slots*, and is not restated here. The map $\beta$ multiplies on the right only: the time unit it would carry on the left adds nothing. The maps satisfy
@@ -35,15 +35,15 @@ $$
 \{\alpha_j,\alpha_\eta\} = 2\delta_{j\eta}\,\mathrm{id}, \qquad \{\alpha_\eta,\beta\} = 0, \qquad (\alpha_\eta)^2 = \mathrm{id},
 $$
 
-so the velocity $c\alpha_k$ has eigenvalues $\pm c$ and the Hamiltonian has eigenvalues $\pm E$ with $E = \sqrt{\vec p^2c^2 + m^2c^4}$.
+so the velocity $c\alpha_\eta$ has eigenvalues $\pm c$ and the Hamiltonian has eigenvalues $\pm E$ with $E = \sqrt{\vec p^2c^2 + m^2c^4}$.
 
-The oscillation follows from the Heisenberg equation. Because $\{\alpha_k,H\} = 2cp_\eta\,\mathrm{id}$, the velocity in the Heisenberg picture has the exact form, with $\frac{m\,c}{k_m}$ kept explicit
+The oscillation follows from the Heisenberg equation. Because $\{\alpha_\eta,H\} = 2cp_\eta\,\mathrm{id}$, the velocity in the Heisenberg picture has the exact form, with $\frac{m\,c}{k_m}$ kept explicit
 
 $$
-\boxed{\;\alpha_k(r'_t) = \frac{cp_\eta}{H} + \exp(\frac{k_m\,i\,H\,r'_{t}}{m\,c^{2}})\Big(\alpha_k(0) - \frac{cp_\eta}{H}\Big)\exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c^{2}})\;},
+\boxed{\;\alpha_\eta(r'_t) = \frac{cp_\eta}{H} + \exp(\frac{k_m\,i\,H\,r'_{t}}{m\,c^{2}})\Big(\alpha_\eta(0) - \frac{cp_\eta}{H}\Big)\exp(-\frac{k_m\,i\,H\,r'_{t}}{m\,c^{2}})\;},
 $$
 
-in which the first term is the constant drift velocity and the second is the *trembling* term; $cp_\eta/H$ is the operator $cp_kH^{-1} = cp_kH/E^2$. Write $A_\eta=\alpha_k(0)-cp_\eta/H$. Because $A_\eta$ anticommutes with $H$, the second term can be written in either of the equivalent forms
+in which the first term is the constant drift velocity and the second is the *trembling* term; $cp_\eta/H$ is the operator $cp_kH^{-1} = cp_kH/E^2$. Write $A_\eta=\alpha_\eta(0)-cp_\eta/H$. Because $A_\eta$ anticommutes with $H$, the second term can be written in either of the equivalent forms
 
 $$
 \exp(\frac{k_m\,iHr'_{t}}{m\,c^{2}})\,A_\eta\,\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})=A_\eta\,\exp(-\frac{2\,k_m\,iHr'_{t}}{m\,c^{2}})=\exp(\frac{2\,k_m\,iHr'_{t}}{m\,c^{2}})\,A_\eta,
@@ -112,7 +112,7 @@ $$
 \{iR_{\mathrm{axf},\vec e_x},\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}\} = 0,
 $$
 
-so the four maps carry the sign pattern of the frame, $\varepsilon=(1,-1,-1,-1)$. The product of the time map with a spatial map is the map $\alpha_k$ of the Hamiltonian. It is one line, the two factors $i$ and the order of the two spatial units,
+so the four maps carry the sign pattern of the frame, $\varepsilon=(1,-1,-1,-1)$. The product of the time map with a spatial map is the map $\alpha_\eta$ of the Hamiltonian. It is one line, the two factors $i$ and the order of the two spatial units,
 
 $$
 \beta\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}
@@ -123,9 +123,9 @@ $$
 
 because $\vec e_y\vec e_x=-\vec e_z$ and a basis operator is linear in its second multiplier; the last basis operator is the map $\alpha_\eta$ of *The Standard Picture*. The relations $\{\alpha_j,\alpha_\eta\} = 2\delta_{j\eta}\,\mathrm{id}$, $\{\alpha_\eta,\beta\} = 0$ and $H^2 = E^2\,\mathrm{id}$ all follow, and each was checked numerically.
 
-The identity boxed in *The Standard Picture* is exact, and $cp_\eta/H$ in it denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is an operator and not a scalar. The three equivalent forms of that section rest on $\{\alpha_k-cp_\eta/H,\,H\}=0$, which the relations above give.
+The identity boxed in *The Standard Picture* is exact, and $cp_\eta/H$ in it denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is an operator and not a scalar. The three equivalent forms of that section rest on $\{\alpha_\eta-cp_\eta/H,\,H\}=0$, which the relations above give.
 
-The identity was checked by direct computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $r'_t = 0.017, 0.05, 0.23$ in units of $1/k_m/c$. The left side $\exp(\frac{k_m\,iHr'_{t}}{m\,c^{2}})\alpha_k \exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ and both equivalent forms on the right agreed to machine precision, the largest coefficient of the difference below $10^{-15}$ over all three components and all times. The integrated position formula was checked the same way, against a direct integration of $c\alpha_k(r'_t)$ from the eigen-decomposition of $H$; the largest coefficient of the difference was below $5\times10^{-16}$. The rest case is then a consequence, $E = mc^2$, not an input.
+The identity was checked by direct computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $r'_t = 0.017, 0.05, 0.23$ in units of $1/k_m/c$. The left side $\exp(\frac{k_m\,iHr'_{t}}{m\,c^{2}})\alpha_\eta \exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ and both equivalent forms on the right agreed to machine precision, the largest coefficient of the difference below $10^{-15}$ over all three components and all times. The integrated position formula was checked the same way, against a direct integration of $c\alpha_\eta(r'_t)$ from the eigen-decomposition of $H$; the largest coefficient of the difference was below $5\times10^{-16}$. The rest case is then a consequence, $E = mc^2$, not an input.
 
 The frequency is $2c\,k_{t}^{\prime}$ on general grounds and $2c\,k_m$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\frac{m\,c}{k_m}= 6.582119569\times10^{-22}$ MeV s, are
 
@@ -202,7 +202,7 @@ The Zitterbewegung is usually introduced as a property of the electron, and a [c
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of the basis operator algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the basis operators $\beta$ and $\alpha_k$.
+The gammas are a frame of the basis operator algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the basis operators $\beta$ and $\alpha_\eta$.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -236,7 +236,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_k(r'_t) = cp_\eta/H + \exp(\frac{k_m\,iHr'_{t}}{m\,c^{2}})(\alpha_k(0)-cp_\eta/H)\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$, checked at momentum $|\vec p| = 0.374\,mc$ and three times, to machine precision (the largest coefficient of the difference below $10^{-15}$); the integrated position formula was checked against a direct integration on the same case, with the largest coefficient of the difference below $5\times10^{-16}$. The oscillating term has frequency $2c\,k_{t}^{\prime}$, equal to $2c\,k_m$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\dfrac{1}{2\,k_m} = 193.1$ fm were confirmed.
+The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha_\eta(r'_t) = cp_\eta/H + \exp(\frac{k_m\,iHr'_{t}}{m\,c^{2}})(\alpha_\eta(0)-cp_\eta/H)\exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$, checked at momentum $|\vec p| = 0.374\,mc$ and three times, to machine precision (the largest coefficient of the difference below $10^{-15}$); the integrated position formula was checked against a direct integration on the same case, with the largest coefficient of the difference below $5\times10^{-16}$. The oscillating term has frequency $2c\,k_{t}^{\prime}$, equal to $2c\,k_m$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\dfrac{1}{2\,k_m} = 193.1$ fm were confirmed.
 
 The genuinely algebraic content is that the mass is the central coefficient that couples the two components of the pair, that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-i r'_t\,k_m) = \cos(r'_t\,k_m)e_t - \sin(r'_t\,k_m)(ie_t)$ rotates the two sectors into one another at $c\,k_m$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
@@ -260,9 +260,9 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $L_{a}R_{b}$ | A two-sided basis operator; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |
 | $\mathrm{id}$ | The identity map |
 | $\beta:\tilde Q\mapsto i\tilde Q\vec e_x$ | The time map, one right multiplication |
-| $\alpha_k:\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$ | The three spatial maps |
-| $H = c\sum_\eta p_\eta\,\alpha_k + \beta mc^2$ | Hamiltonian, $H^2 = E^2\,\mathrm{id}$ |
-| $A_\eta = \alpha_k(0) - cp_\eta/H$ | Anticommuting part of the velocity, $\{A_\eta,H\}=0$ |
+| $\alpha_\eta:\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$ | The three spatial maps |
+| $H = c\sum_\eta p_\eta\,\alpha_\eta + \beta mc^2$ | Hamiltonian, $H^2 = E^2\,\mathrm{id}$ |
+| $A_\eta = \alpha_\eta(0) - cp_\eta/H$ | Anticommuting part of the velocity, $\{A_\eta,H\}=0$ |
 | $\omega_Z = 2c\,k_{t}^{\prime}$ | Zitterbewegung angular frequency |
 | $\dfrac{1}{2\,k_m}$ | Zitterbewegung amplitude (order) |
 | $c(M)$, $\ell(M)$ | Coefficient matrix of an element in the sixteen products, and its rank (length) |

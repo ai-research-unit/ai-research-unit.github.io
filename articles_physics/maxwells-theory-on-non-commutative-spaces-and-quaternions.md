@@ -291,7 +291,7 @@ $$
 \boxed{\;\nabla F + \tfrac12\left(\nabla G + \bigl(\nabla^{\natural}\bar G\bigr)^{\natural}\right) = -J\;},
 $$
 
-where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_\eta+iB_\eta$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. **The third term is the paper's right-derivative term, $G^+$ with the derivative taken on its right and then the frame on the right.** By the anti-automorphism of $\natural$, $(G^+)^{\natural}=\bar G$ and $(ab)^{\natural}=b^{\natural}a^{\natural}$, so that right derivative equals a left derivative on $\bar G$, followed by $\natural$:
+where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_\eta = D_\eta+iB_\eta$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. **The third term is the paper's right-derivative term, $G^+$ with the derivative taken on its right and then the frame on the right.** By the anti-automorphism of $\natural$, $(G^+)^{\natural}=\bar G$ and $(ab)^{\natural}=b^{\natural}a^{\natural}$, so that right derivative equals a left derivative on $\bar G$, followed by $\natural$:
 
 $$
 \sum_\mu \bigl(\partial G^+/\partial x_\mu\bigr)\tau_\mu = \Bigl(\sum_\mu \tau_\mu^{\natural}\,\partial \bar G/\partial x_\mu\Bigr)^{\natural},
@@ -307,7 +307,7 @@ $$
 
 which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau_\mu$, which reproduces $F_{\mu\nu}=\partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\kappa_{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
 
-The transformation properties close the section. Under $X_{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm{lor}} = L^+\nabla L$, $F_{\mathrm{lor}} = L^{-1}FL$, $J_{\mathrm{lor}} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\kappa$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_\eta=i\tau_k$, with $e_4^2=1$ and $\vec e_\eta^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
+The transformation properties close the section. Under $X_{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm{lor}} = L^+\nabla L$, $F_{\mathrm{lor}} = L^{-1}FL$, $J_{\mathrm{lor}} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\kappa$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_\eta=i\tau_\eta$, with $e_4^2=1$ and $\vec e_\eta^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
 
 ## Status, Contrasts, and Boundaries
 
@@ -358,7 +358,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\mathcal E,\vec P$ | Deformed energy density and momentum density; $P_\mu=(\vec P,i\mathcal E)$ |
 | $T_{\mathrm{can},\mu\nu}$, $T_{\mathrm{sym},\mu\nu}$ | Canonical (conservative) and symmetric (not conserved on the deformed arena) stress tensors |
 | $T_\mu{}_\mu$ | Classical trace anomaly, $\propto(\vec\kappa\cdot\vec B)(\vec E^2-\vec B^2)-2(\vec\kappa\cdot\vec E)(\vec E\cdot\vec B)$; doubles for the symmetric tensor |
-| $\tau_\mu=(\tau_k,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $\vec e_\eta=i\tau_k$ |
+| $\tau_\mu=(\tau_\eta,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $\vec e_\eta=i\tau_\eta$ |
 | $F=f_\mu\tau_\mu$, $G=g_m\tau_m$ | Spin-tensor (quaternion) field and correction; $f_k=D_\eta+iB_\eta$, $g_m=d_m+ih_m$ |
 
 ## Further Reading

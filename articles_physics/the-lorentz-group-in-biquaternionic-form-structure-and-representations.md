@@ -219,7 +219,7 @@ $$
 
 The complexification of the real Lie algebra $\mathrm{G}$ splits. Let $\mathsf{i}$ denote the **complexification unit**, which is a formal scalar and is not the scalar imaginary $i\in\mathbb{B}$. Define
 $$
-N_k^{\pm}=\frac{1}{2}\bigl(\vec e_\eta\pm \mathsf{i}\,B_{\mathrm{boost},\eta}\bigr)
+N_\eta^{\pm}=\frac{1}{2}\bigl(\vec e_\eta\pm \mathsf{i}\,B_{\mathrm{boost},\eta}\bigr)
 =\frac{1}{2}\bigl(\vec e_\eta\pm \mathsf{i}\,(i \vec e_\eta)\bigr),\qquad \eta = 1, 2, 3 .
 $$
 A direct computation using the commutation relations above gives

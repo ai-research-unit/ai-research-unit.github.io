@@ -312,7 +312,7 @@ $$
 \qquad
 \langle\tilde{Ϛ}_{\Psi,e}\rangle_{\natural} = \tfrac14\bigl(1 - \lvert\vec s\rvert^2\bigr) ,
 \qquad
-\vec s = \sum_\eta s_k\vec e_\eta ,
+\vec s = \sum_\eta s_\eta\vec e_\eta ,
 $$
 the $i$ being what puts the vector part in the imaginary-vector direction that membership in $\mathbb{B}_{\Psi}$ requires, and with the normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,e}) = \tfrac12$ that a density matrix carries. At $\lvert\vec s\rvert = 1$ it is a pure state, the idempotent the cone carries along its own axis; so the identification here is the companion article's, read on the spin instead of on the boost. Here $\vec s$ is the Bloch vector of the spin; the pure spin states have $|\vec s| = 1$ and lie on the biquaternion-norm cone of $\mathbb{B}_{\Psi}$, the mixed states fill the interior, and the spin-up and spin-down states along any axis are the two idempotents on the cone. The structure is formally identical to the coherence biquaternion of the beam: $\tilde{Ϛ}_{\Psi}$ and $\tilde{Ϛ}_{\Psi,e}$ are both elements of $\mathbb{B}_{\Psi}$ whose biquaternion norm measures purity, the Stokes vector playing the role of the Bloch vector. The photon's *polarization* states, by contrast, are vectors of $\mathbb{B}_{\Phi}$; the spin-$\tfrac12$ *states* are elements of $\mathbb{B}_{\Psi}$. The scattering problem therefore pairs an element of $\mathbb{B}_{\Phi}$ (the photon polarization) with an element of $\mathbb{B}_{\Psi}$ (the electron spin), and the amplitude is a pairing across the two sectors — a structural feature that index notation hides, because an index carries no sector.
 
@@ -578,8 +578,8 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $\vec s\cdot(\vec u_\Phi\times\vec u_{\mathrm{out},\eta})$ | Electron-spin asymmetry (magnetic Compton) |
 | $\tilde{Ϛ}_{\Psi,e} = \frac12(e_t+i\vec s)\in\mathbb{B}_{\Psi}$ | Electron spin biquaternion; $\langle\tilde{Ϛ}_{\Psi,e}\rangle_{\natural} = \frac14(1-\lvert\vec s\rvert^2)$ |
 | $D(p)$ | The shell action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$; the spin sum $\sum_r\tilde w^{(r)}\langle\tilde w^{(r)},\cdot\rangle_{\mathrm D}$, a projection of rank two when divided by $2m\,c$ |
-| $\Sigma_s$ | Spin action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto is_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta is_k\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$; the shell's pattern with $s$ in place of $p$ and no mass term |
-| $B_s$ | The bracket of the split, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}+s_0\tilde{Ξ}_{\mathrm{sp}}\vec e_y+\sum_\eta s_k\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; half of it is a projection, and $B_s+B_{-s}$ is twice the identity action |
+| $\Sigma_s$ | Spin action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto is_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta is_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$; the shell's pattern with $s$ in place of $p$ and no mass term |
+| $B_s$ | The bracket of the split, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}+s_0\tilde{Ξ}_{\mathrm{sp}}\vec e_y+\sum_\eta s_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; half of it is a projection, and $B_s+B_{-s}$ is twice the identity action |
 | $D_s(p)$ | The resolved shell, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12 D(p)(B_s\tilde{Ξ}_{\mathrm{sp}})$; $\frac{1}{2\,m}D_s$ is a projection of rank one, and $D_s+D_{-s}=D(p)$ |
 | $s$, $s\cdot p=0$, $s^2=-1$ | Spin four-vector of the target; rest frame $(0,\vec s)$, with $\vec s$ the Bloch vector of the state |
 | $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ |

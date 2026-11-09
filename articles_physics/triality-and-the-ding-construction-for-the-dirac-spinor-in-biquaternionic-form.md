@@ -33,7 +33,7 @@ $$
 with $\tilde B$ and $\tilde N$ real quaternions and $a_\mu$ the four units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$. The complex four-vector $G_\mu=B_\mu+iN_\mu$ is the **s-vector**, the coefficient vector of $\tilde{Ξ}_{\mathrm{sp}}$ in those units. The neutral vector is timelike, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=1$; in the source's frame $k=(1,0,0,0)$.
 
 ### The Generator Operators
-Each four-vector index carries a left unit and a right unit, $a_0=e_t$, $a_k=\vec e_\eta$ and $b_0=\vec e_x$, $b_k=\vec e_y$. A **basis operator** is a pair of multipliers, acting by $Q\mapsto cQd$, and the four **generator basis operators** are the four maps
+Each four-vector index carries a left unit and a right unit, $a_0=e_t$, $a_\eta=\vec e_\eta$ and $b_0=\vec e_x$, $b_k=\vec e_y$. A **basis operator** is a pair of multipliers, acting by $Q\mapsto cQd$, and the four **generator basis operators** are the four maps
 $$
 C_\mu:\ Q\longmapsto i\,a_\mu\,Q\,b_\mu,\qquad \mu=t,x,y,z .
 $$

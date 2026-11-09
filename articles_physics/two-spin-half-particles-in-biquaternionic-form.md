@@ -317,7 +317,7 @@ since $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_\pm)=\tfrac{1}{2}\mathrm{Tr}_\mathbb{B}(
 For the two diagonal-form idempotents the computation is a single line. Because $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ are sums of diagonal tensor terms,
 
 $$
-\mathrm{Tr}_2\!\left(\tilde\Pi_{1,0}\right)=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)e_t+\sum_{\eta=1}^{3}\epsilon_k\,\mathrm{Tr}_\mathbb{B}(\vec e_\eta)\vec e_\eta\right)=\tfrac{1}{4}\cdot 2\,e_t=\tfrac{1}{2}\,e_t ,
+\mathrm{Tr}_2\!\left(\tilde\Pi_{1,0}\right)=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)e_t+\sum_{\eta=1}^{3}\epsilon_\eta\,\mathrm{Tr}_\mathbb{B}(\vec e_\eta)\vec e_\eta\right)=\tfrac{1}{4}\cdot 2\,e_t=\tfrac{1}{2}\,e_t ,
 $$
 
 and likewise $\mathrm{Tr}_2(\tilde\Pi_{0,0})=\mathrm{Tr}_1(\tilde\Pi_{0,0})=\tfrac12 e_t$ and $\mathrm{Tr}_1(\tilde\Pi_{1,0})=\tfrac12 e_t$. The reduced state of both $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ is the **maximally mixed** state of the one-particle system, the centre of the Bloch ball, of purity

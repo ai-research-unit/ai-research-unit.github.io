@@ -151,16 +151,16 @@ For a given angular-velocity history this is a linear equation for $\tilde u$, a
 The inertia tensor is a symmetric positive-definite operator on the real vector part. In the principal body frame it acts as
 
 $$
-I(\vec\omega_b)=\sum_{\eta=1}^{3}I_\eta\,\omega_k\,\vec e_\eta ,
+I(\vec\omega_b)=\sum_{\eta=1}^{3}I_\eta\,\omega_\eta\,\vec e_\eta ,
 $$
 
 and the kinetic energy and angular momentum are
 
 $$
 \boxed{\;T=-\tfrac12\,\mathrm{Sc}\!\left(\vec\omega_b\,\vec L_b\right)
-=\tfrac12\sum_\eta I_\eta\omega_k^2 ,
+=\tfrac12\sum_\eta I_\eta\omega_\eta^2 ,
 \qquad
-\vec L_b=I(\vec\omega_b)=\sum_\eta I_\eta\omega_k \vec e_\eta\;},
+\vec L_b=I(\vec\omega_b)=\sum_\eta I_\eta\omega_\eta \vec e_\eta\;},
 $$
 
 using $\mathrm{Sc}(\vec a\vec b)=-\vec a\cdot\vec b$ for pure real quaternions. The quadratic form $\mathrm{Sc}(\vec\omega_b\vec L_b)$ is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.
@@ -270,7 +270,7 @@ $$
 \omega_3=c\,d\theta_{\mathrm{prc}}/dr'_t\cos\theta+c\,d\theta_{\mathrm{eul}}/dr'_t ,
 $$
 
-where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\theta_{\mathrm{prc}},\theta,\theta_{\mathrm{eul}})$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_\eta I_\eta\omega_k^2$ with these $\omega_k$, which is the standard Euler-angle Lagrangian of the rigid body.
+where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\theta_{\mathrm{prc}},\theta,\theta_{\mathrm{eul}})$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_\eta I_\eta\omega_\eta^2$ with these $\omega_\eta$, which is the standard Euler-angle Lagrangian of the rigid body.
 
 ## The Heavy Symmetric Top
 
@@ -349,7 +349,7 @@ The rigid body is described in the biquaternion algebra as follows.
 | $\vec e_{\eta,b}=\tilde u\vec e_\eta\tilde u^{*}$ | Body axes |
 | $\vec\omega_b=+2c\,\tilde u^{\natural}d\tilde u/dr'_t$ | Body-frame angular velocity |
 | $\vec\omega_s=+2c\,d\tilde u/dr'_t\tilde u^{\natural}=\tilde u\vec\omega_b\tilde u^{*}$ | Space-frame angular velocity |
-| $I(\vec\omega_b)=\sum_\eta I_\eta\omega_k\vec e_\eta$ | Inertia operator (principal frame) |
+| $I(\vec\omega_b)=\sum_\eta I_\eta\omega_\eta\vec e_\eta$ | Inertia operator (principal frame) |
 | $\vec L_b=I(\vec\omega_b)$ | Body-frame angular momentum |
 | $T=-\frac12\mathrm{Sc}(\vec\omega_b\vec L_b)$ | Rotational kinetic energy |
 | $c\,d\vec L_{b}/dr'_t=\frac12[\vec L_b,\vec\omega_b]+\vec\tau$ | Euler's equation (body frame) |

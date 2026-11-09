@@ -26,7 +26,7 @@ $$
 u^{\dagger}C_0u = 1, \qquad v^{\dagger}C_0v = -1, \qquad u^{\dagger}C_0v = 0,
 $$
 
-where $C_0$ multiplies on the right by $i\vec e_x$ and $\dagger$ is Liu's adjoint of the field, so that $u^{\dagger}C_0u$ above is his scalar bilinear of the neutral element $u$. The article keeps his letters for that bilinear, which is the object his dictionary reproduces, and it writes the same pairing for any two elements as $\tilde{Ξ}_{\mathrm{sp},1}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp},2}$. Write $a_0=e_t$, $a_k=\vec e_\eta$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator** of index $\mu$ is the action
+where $C_0$ multiplies on the right by $i\vec e_x$ and $\dagger$ is Liu's adjoint of the field, so that $u^{\dagger}C_0u$ above is his scalar bilinear of the neutral element $u$. The article keeps his letters for that bilinear, which is the object his dictionary reproduces, and it writes the same pairing for any two elements as $\tilde{Ξ}_{\mathrm{sp},1}^{\dagger}C_0\tilde{Ξ}_{\mathrm{sp},2}$. Write $a_0=e_t$, $a_\eta=\vec e_\eta$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator** of index $\mu$ is the action
 $$
 C_\mu:\tilde{Ξ}_{\mathrm{sp}}\longmapsto i a_\mu\tilde{Ξ}_{\mathrm{sp}} b_\mu .
 $$

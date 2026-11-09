@@ -212,7 +212,7 @@ $$
 $$
 \gamma_0^{2}=i^{2}(R_{\mathrm{pau},\vec e_x})^{2}=(-1)(-I_4)=I_4,
 \qquad
-\gamma_\eta^{2}=i^{2}(L_{\mathrm{pau},\vec e_\et}a)^{2}(R_{\mathrm{pau},\vec e_y})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(\eta=1,2,3).
+\gamma_\eta^{2}=i^{2}(L_{\mathrm{pau},\vec e_\eta}a)^{2}(R_{\mathrm{pau},\vec e_y})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(\eta=1,2,3).
 $$
 
 In the axis-free display:
@@ -220,7 +220,7 @@ In the axis-free display:
 $$
 \gamma_0^{2}=i^{2}(R_{\mathrm{axf},\vec e_x})^{2}=(-1)(-I_4)=I_4,
 \qquad
-\gamma_\eta^{2}=i^{2}(L_{\mathrm{axf},\vec e_\et}a)^{2}(R_{\mathrm{axf},\vec e_y})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(\eta=1,2,3).
+\gamma_\eta^{2}=i^{2}(L_{\mathrm{axf},\vec e_\eta}a)^{2}(R_{\mathrm{axf},\vec e_y})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(\eta=1,2,3).
 $$
 
 The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.

@@ -77,7 +77,7 @@ $$
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_\eta\vec e_\eta k_k ,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_\eta\vec e_\eta k_{\Phi\eta} ,
 $$
 
 so the equation is $-i\tilde K_{\Phi}f=0$. Applying $i\tilde K_{\Phi}^{\natural}$ on the left gives $i\tilde K_{\Phi}^{\natural}\cdot(-i\tilde K_{\Phi})f=-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}f=(k_{t}^{\prime\,2}-|\vec k_\Phi|^2)f=0$, and the propagation vector is **null**,

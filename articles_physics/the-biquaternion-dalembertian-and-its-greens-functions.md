@@ -87,7 +87,7 @@ On a plane wave
 $$
 \tilde{Ξ} = \tilde{Ξ}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))
 $$
-the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to ik_k$, so
+the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to i k_{\Phi\eta}$, so
 $$
 \partial^2/\partial R_t^2 \to \frac{\omega^2}{c^2}, \qquad \Delta \to -\vec k_\Phi^2,
 \qquad

@@ -2,13 +2,33 @@
 
 ## Introduction
 
-This article treats the Fourier transform of a biquaternion-valued sequence, that is, of a function on the finite group $\mathbb{Z}/N$ with values in $\mathbb{B}$. It is read after *Biquaternion Continuous Harmonic Analysis*, not beside it: **the kernel, the classification of the roots of $-1$, the count of the complex transforms and the vanishing-norm phenomenon are that article's and are cited here, not restated.** A finite index set adds three things. The transform is a finite sum, hence algebraic, with no convergence hypothesis, and its inversion is an identity rather than a limit. The convolution theorem becomes one-sided, the kernel sitting on one side of the sample where a central kernel would be needed on both. And the infinite sequence brings the Z transform, whose region of convergence is decided by a multiplicative norm that vanishes on the zero divisors.
+This article treats the Fourier transform of a biquaternion-valued sequence, that is, of a function on the finite group $\mathbb{Z}/N$ with values in $\mathbb{B}$. It is read after *Biquaternion Continuous Harmonic Analysis*: the kernel, the classification of the roots of $1$, the count of the complex transforms and the vanishing-norm phenomenon are that article's and are cited here, not restated.
 
-The results proved here are the inversion, the conjugate symmetry for real scalar values, the factorisation into four complex transforms of the same length, and the one-sided convolution theorem; the Z transform follows, with its rules, table and recurrences.
+**The root of the kernel is a root of $1$.** The kernel is built from an element whose square is the unit, and from the complex scalar $i$ beside it,
 
-The condition under which the transform stays invertible when some sample is a zero divisor is left open, and is marked where it arises.
+$$
+W_N(n,\ell)=\exp\left(-2\pi i\,\tilde{Ζ}\,\frac{n\ell}{N}\right),\qquad \tilde{Ζ}^2=e_t .
+$$
 
-**Boundaries.** The continuous transform, the root classification and the factorisation are *Biquaternion Continuous Harmonic Analysis*; the exponential and the de Moivre formula are *Biquaternion Elementary Functions*; the zero divisors and the roots of $-1$ are the division theory article. The commutative case, in which the phenomena of this article disappear, is *Reduced Biquaternion Discrete Harmonic Analysis*, compared with this one in §*The Commutative Alternative: The Reduced Biquaternion Transform*.
+The element that the exponent needs is $i\tilde{Ζ}$, whose square is $-e_t$; the sign of a Fourier kernel is therefore carried by the scalar $i$, and no element whose square is $-1$ is ever named. This is more than a change of letter, for three reasons.
+
+**The classification becomes a dichotomy.** The roots of $1$ of the plain product are the central pair $\pm e_t$ and the pure elements $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=-1$. That is one theorem, quoted below, and its statement contains no condition of the form $b^2-d^2=1$: a root is central or it is pure, and the pure condition is a single complex equation on the vector part.
+
+**The root is a pair of idempotents.** The halving map sends a root to an idempotent and back, and the two members of the pair are $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$. A root of $1$ is therefore a complete pair of orthogonal idempotents, which is an object the corpus uses throughout, and the transform is indexed by that pair rather than by a root picked from a conic.
+
+**The transform splits into two transforms over the two ideals of the pair.** Because $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$, the kernel is a pair of conjugate unit complex numbers, one attached to each idempotent,
+
+$$
+W_N(n,\ell)=e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_- .
+$$
+
+The two Peirce ideals $\tilde\Pi_+\mathbb{B}$ and $\tilde\Pi_-\mathbb{B}$ are each a complex plane, so the transform is a pair of ordinary complex transforms on those planes, and its factorization into scalar complex transforms is the transform read in the coordinates that the root itself supplies. No change of basis has to be chosen: the root supplies it.
+
+The transform pair, the inversion, the factorization and the one-sided convolution theorem are proved here; the Z transform follows, with its rules, table and recurrences.
+
+**Inversion is unconditional.** The inverse needs no hypothesis on the samples. What a zero divisor blocks is the division of a spectrum by itself, and the condition under which a spectrum avoids the zero divisors is not settled here.
+
+**Boundaries.** The continuous transform, the classification of the roots of $1$ and the Peirce form of the kernel are *Biquaternion Continuous Harmonic Analysis*. The exponential and the de Moivre formula are *Biquaternion Elementary Functions*. The root glyph and the Peirce vocabulary are *Special Element and Peirce Conventions*. The commutative case, in which the phenomena of this article disappear, is *Reduced Biquaternion Discrete Harmonic Analysis*, compared with this one in §*The Commutative Alternative*.
 
 Throughout, a biquaternion is written
 
@@ -22,55 +42,113 @@ $$
 \tilde{Q} = Q_t e_t + \vec Q, \qquad \vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$, a complex scalar.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, the coefficient conjugate is $\bar{\cdot}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$, a complex scalar.
 
-**Notation.** To avoid collision with the basis units and with the scalar imaginary $i$, the root of $-1$ used in the kernel is denoted $\rho$ throughout.
+**Notation.** The root of $1$ is written $\tilde{Ζ}$, and a pure root $\vec{Ζ}$, the arrow taking priority over the tilde. Every root other than $\pm e_t$ is pure, so the arrow is written wherever purity is used; the letters $e_t$ and $i$ are the unit and the scalar imaginary.
 
 ## The Fourier Kernel
 
+### The Root of One and Its Pair
+
+**Definition (the root of one).** An element $\tilde{Ζ}\in\mathbb{B}$ is a **root of $1$** when $\tilde{Ζ}^2=e_t$, the square being taken in the algebra product.
+
+**Theorem (the halving map; quoted).** Let $\tilde\Pi\in\mathbb{B}$ and put $\tilde{Ζ}=2\tilde\Pi-e_t$. Then $\tilde\Pi^{2}=\tilde\Pi$ exactly when $\tilde{Ζ}^{2}=e_t$, and the two maps $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi\mapsto2\tilde\Pi-e_t$ are inverse to each other. The source is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotents*.
+
+The theorem is the reason the root of $1$ is the right object for a kernel: it is an idempotent read in another coordinate. The pair attached to a root is
+
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ}),\qquad \tilde\Pi_\pm^{2}=\tilde\Pi_\pm,\qquad \tilde\Pi_+\tilde\Pi_-=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t ,
+$$
+
+a complete family of orthogonal idempotents in the sense of *Special Element and Peirce Conventions*, §*The General Peirce Convention*, and the root is recovered from the pair as $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. The two members are exchanged by the sign of the root and by nothing else: the root is the pair, read with a sign.
+
+**Remark (the $i$ is a scalar and not an element).** The generator of the kernel is $-2\pi i\tilde{Ζ}/N$; its algebra part is $\tilde{Ζ}$, a root of $1$, and the factor $i$ is the complex scalar that supplies the minus sign. An element whose square is $-e_t$ serves the same purpose and is the same object as $i\tilde{Ζ}$; the convention of this article is to keep the $i$ outside and to name only the root of $1$, so that the classification of the algebra elements used is the classification of the roots of $1$, the dichotomy of §*The Classification*.
+
 ### Definition and the Closed Form
 
-Fix a root of $-1$, that is, an element $\rho \in \mathbb{B}$ with $\rho^2 = -e_t$. The **biquaternion Fourier kernel** of length $N$ is the biquaternion
+**Definition (the discrete kernel).** Fix a root of $1$ once and for all. The **biquaternion Fourier kernel** of length $N$ is
 
 $$
-W_N(n, \ell) = \exp\left(-2\pi \rho \frac{n\ell}{N}\right), \qquad n, \ell \in \{0, 1, \ldots, N-1\}.
+W_N(n, \ell) = \exp\left(-2\pi i\,\tilde{Ζ}\,\frac{n\ell}{N}\right), \qquad n, \ell \in \{0, 1, \ldots, N-1\}.
 $$
 
-Because $\rho^2 = -e_t$ the powers of the argument alternate in pairs, so the de Moivre formula collapses the exponential and the kernel has the closed form
+**Proposition (the closed form).** With $\theta=2\pi n\ell/N$,
 
 $$
-W_N(n, \ell) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t - \sin\left(2\pi \frac{n\ell}{N}\right) \rho ,
+W_N(n, \ell) = \cos\theta\, e_t - i\sin\theta\,\tilde{Ζ} .
 $$
 
-where the cosine and the sine are the ordinary trigonometric functions of the real argument. Two properties follow from this display.
+*Proof.* The powers of $\tilde{Ζ}$ alternate in pairs, $\tilde{Ζ}^{2k}=e_t$ and $\tilde{Ζ}^{2k+1}=\tilde{Ζ}$, so the exponential series splits into the even part $\cos\theta\,e_t$ and the odd part $-i\sin\theta\,\tilde{Ζ}$, the cosine and the sine being the ordinary functions of the real argument.
 
-**The kernel is a unit, at every root and every pair of indices.** By the multiplicativity of the norm and $\rho^{2}=-e_t$, its norm is the sum of the squares of the two coefficients,
-
-$$
-\langle W_N(n, \ell)\rangle_{\natural} = \cos^2\left(2\pi \frac{n\ell}{N}\right) + \sin^2\left(2\pi \frac{n\ell}{N}\right) = 1,
-$$
-
-so the kernel is invertible whatever $\rho$ is, and its inverse is read off the closed form by the sign of the sine term:
+**The kernel is a unit, at every root and every pair of indices.** Both factors of the closed form lie in $\mathbb{C}[\tilde{Ζ}]$, which is commutative, and their product is $(\cos^2\theta+\sin^2\theta)e_t$; the inverse is the closed form with the sign of the sine reversed,
 
 $$
-W_N(n, \ell)^{-1} = W_N(n, \ell)^{\natural} = \cos\left(2\pi \frac{n\ell}{N}\right) e_t + \sin\left(2\pi \frac{n\ell}{N}\right) \rho .
+W_N(n, \ell)^{-1} = \cos\theta\, e_t + i\sin\theta\,\tilde{Ζ} = W_N(n, -\ell).
 $$
 
-**The kernel is periodic in the frequency index.** The argument depends on $\ell$ only through the product $n\ell$ modulo $N$, so $W_N(n, \ell + N) = W_N(n, \ell)$ for every $n$ and $\ell$. **The frequency index is an element of $\mathbb{Z}/N$ and not of $\mathbb{Z}$**: on the line it is a real variable, and here it is a residue class.
+**The inverse is the kernel at the negated frequency index.** That statement carries no case distinction: it holds for the central roots, for the Hermitian roots and for the non-Hermitian pure roots alike, because it is an identity in the commutative algebra $\mathbb{C}[\tilde{Ζ}]$ and uses nothing else.
 
-### The Root, and What the Finite Index Set Does to It
-
-The classification of the roots of $-1$ is the continuous article's §*The Condition on the Root*, quoted here: $\rho^2 = -e_t$ holds exactly when $\rho$ is $\pm i$, or a unit pure real quaternion, or of the form $b\mu + d\nu i$ with $\mu$ and $\nu$ perpendicular unit pure real quaternions and $b^2 - d^2 = 1$.
-
-The four cases of §*The Choice of Root* carry over with one substitution: "complex Fourier transform" is read as "complex DFT of length $N$". The reduction is an algebraic decomposition of $\mathbb{B}$ into complex lines, which does not see the index set, so the count is the same integer. The scalar imaginary gives four complex DFTs on the four coefficients; a unit pure real quaternion gives the quaternion DFT, with its left, right or two-sided convention; a non-trivial root gives two when the values lie in $\mathbb{B}_{H}$ or $i\mathbb{B}_{H}$ and four in general.
-
-What the finite index set does change is the identification of the roots. Replacing $\rho$ by $-\rho$ reverses the sign of the sine term,
+**Whether the inverse is a conjugation depends on the root.** For a pure root the quaternion conjugation reverses the vector part, $\vec{Ζ}^{\natural}=-\vec{Ζ}$, and therefore
 
 $$
-W_N(n, \ell; -\rho) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t + \sin\left(2\pi \frac{n\ell}{N}\right) \rho ,
+W_N(n, \ell)^{\natural} = \cos\theta\, e_t + i\sin\theta\,\vec{Ζ} = W_N(n, \ell)^{-1}, \qquad \langle W_N(n, \ell)\rangle_{\natural} = e_t .
 $$
 
-which is the quaternion conjugate of $W_N(n, \ell; \rho)$ when $\rho$ is pure and the complex conjugate when $\rho = i$. **The two transforms carry the same information**: the image of the transform at $\rho$ under that conjugation is the transform of the image of the sequence at $-\rho$, with the kernel on the right, which is the same statement the article makes for the placement. The sign of the root is a convention, and the choice made in §*Definition and the Closed Form* is kept to the end.
+The kernel is then on the natural unit sphere, and its norm is the unit. **At the central roots $\tilde{Ζ}=\pm e_t$ this fails**: the kernel is the complex scalar $e^{\mp 2\pi i n\ell/N}e_t$, which the natural conjugation fixes rather than inverts, $W_N^{\natural}=W_N$, while the inverse is the coefficient conjugate $\overline{W_N}$. The natural norm there is
+
+$$
+\langle W_N(n, \ell)\rangle_{\natural} = W_N^{2} = e^{\mp 4\pi i n\ell/N} e_t ,
+$$
+
+a unit and not $e_t$. So the kernel is a unit at every root, and what fails at the central root is the identification of the inverse with a conjugation, not the invertibility.
+
+### The Peirce Form of the Kernel
+
+Substituting $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$ in the closed form, or applying the exponential to each idempotent, gives the form the rest of the article uses.
+
+**Proposition (the Peirce form).** For every $n$ and $\ell$,
+
+$$
+W_N(n, \ell) = e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_- .
+$$
+
+*Proof.* The two idempotents are orthogonal and their sum is the unit, so the exponential acts on each by the scalar attached to it, $\exp(-2\pi i\theta\tilde{Ζ})\tilde\Pi_\pm=\exp(\mp 2\pi i\theta)\tilde\Pi_\pm$, because $\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm$; the two terms add.
+
+Three consequences are read off at once. **The kernel is a pair of conjugate unit complex numbers**, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_+$ and its conjugate on the component of $\tilde\Pi_-$, which is the form in which the transform factorizes. **The kernel is never a zero divisor**, since each of its two Peirce coordinates is a nonzero complex number: it stays a unit and never approaches the null cone, at any root and any index.
+
+## The Roots of One
+
+### The Classification
+
+The classification is quoted, because it belongs to the root theory and not to harmonic analysis.
+
+**Theorem (the roots of one; quoted).** In the plain product the roots of $+1$ are the central pair $\pm e_t$ and the pure elements $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=-1$, a family of real dimension four. Writing $\vec{Ζ}=\vec p+i\vec p'$ over two real vectors, the pure roots are the pairs with $\vec p^{2}-\vec p'^{2}=-1$ and $\vec p\cdot\vec p'=0$, and they contain the purely imaginary unit vectors $i\vec u$ over the real unit vectors $\vec u$. The source is *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Value One in the Four General Products* and §*The Two Families of the Plain Reduction*.
+
+**Corollary (a root is central or pure).** A root of $1$ has either a vanishing vector part, and is then $\pm e_t$, or a vanishing scalar part; no root has both parts non-zero.
+
+*Proof.* The square is $\tilde{Ζ}^{2}=\bigl(Q_t^{2}-(\vec{Ζ},\vec{Ζ})\bigr)e_t+2Q_t\vec{Ζ}$. A square that is central has a vanishing vector part, so $2Q_t\vec{Ζ}=0$, and either $Q_t=0$ or $\vec{Ζ}=0$.
+
+The two families are disjoint and exhaustive, so a statement that holds for every root has two cases and no third.
+
+### The Hermitian Root
+
+**Definition.** A root is **Hermitian** when $\tilde{Ζ}^{*}=\tilde{Ζ}$, the star being the Hermitian conjugation $\bar{\cdot}\circ{}^{\natural}$ of *Conventions in Mathematics*, §*The Conjugations*.
+
+**Proposition (the Hermitian roots).** The Hermitian roots of $1$ are the central pair $\pm e_t$ and the purely imaginary unit vectors $\pm i\vec u$ over the real unit vectors $\vec u$.
+
+*Proof.* A pure root has $\vec{Ζ}=\vec p+i\vec p'$ and $\tilde{Ζ}^{*}=\bar{\tilde{Ζ}}^{\natural}=-\bar{\tilde{Ζ}}=-\vec p+i\vec p'$, so the Hermitian condition is $\vec p=0$; the root condition $\vec p^{2}-\vec p'^{2}=-1$ then gives $\lvert\vec p'\rvert=1$. The central roots are fixed by the star.
+
+For these roots the pair is a pair of Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, that is, a pair of pure states, and the kernel is unitary for the Hermitian form, by §*Definition and the Closed Form* read with the star.
+
+### The Sign of the Root
+
+Replacing $\tilde{Ζ}$ by $-\tilde{Ζ}$ exchanges the two members of the Peirce pair, $\tilde\Pi_+\leftrightarrow\tilde\Pi_-$, and conjugates the two coordinates of the kernel:
+
+$$
+W_N(n, \ell; -\tilde{Ζ}) = \cos\theta\, e_t + i\sin\theta\,\tilde{Ζ} .
+$$
+
+For a pure root this is the natural conjugate of $W_N(n,\ell;\tilde{Ζ})$, and for the central root it is the coefficient conjugate. **The two transforms carry the same information.**
 
 ## The Discrete Transform Pair
 
@@ -82,179 +160,117 @@ $$
 F[\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) f[n], \qquad \ell \in \{0, 1, \ldots, N-1\},
 $$
 
-where $W_N(n, \ell)$ is the kernel defined above. The **inverse transform** is
+and the **inverse transform** is
 
 $$
-f[n] = \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{-1} F[\ell], \qquad n \in \{0, 1, \ldots, N-1\}.
+f[n] = \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, -\ell) F[\ell], \qquad n \in \{0, 1, \ldots, N-1\}.
 $$
 
-Since the kernel is a unit biquaternion, its inverse is its quaternion conjugate:
+The inverse kernel is the kernel at the negated frequency index, which is its inverse by §*Definition and the Closed Form*; written as a conjugation it is $W_N^{\natural}$ for a pure root and $\overline{W_N}$ at the central root.
 
-$$
-W_N(n, \ell)^{-1} = W_N(n, \ell)^{\natural} = \cos\left(2\pi \frac{n\ell}{N}\right) e_t + \sin\left(2\pi \frac{n\ell}{N}\right) \rho.
-$$
-
-So the inverse transform is
-
-$$
-f[n] = \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} F[\ell], \qquad n \in \{0, 1, \ldots, N-1\}.
-$$
-
-The placement of the kernel on the **left** of $f[n]$ is a choice. An alternative transform has the kernel on the right:
+The placement of the kernel on the **left** of $f[n]$ is a choice; with the kernel on the right,
 
 $$
 F[\ell] = \sum_{n=0}^{N-1} f[n] \, W_N(n, \ell).
 $$
 
-The two transforms are closely related: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $(W_N(n,\ell) f[n])^{\natural} = f[n]^{\natural} W_N(n,\ell)^{\natural}$.)
+The two are related by conjugation: the natural conjugate of the left-kernel transform of $f$ is the right-kernel transform of $f^{\natural}$, the order reversing under $\natural$.
 
 ### Invertibility
 
-The invertibility of the transform depends on the properties of the kernel and of the values.
+**Theorem (inversion).** For every sequence $f$ and every root of $1$, the inverse formula reproduces $f[n]$. No hypothesis on the samples is needed.
 
-**The kernel has unit norm.** For every $n$ and $\ell$, the kernel $W_N(n, \ell)$ satisfies $\langle W_N(n, \ell)\rangle_{\natural} = e_t$, as shown above. So the kernel is always invertible.
-
-**A sample may have vanishing norm.** If a sample $f[n]$ has vanishing norm, $\langle f[n]\rangle_{\natural} = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
-
-**Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
-
-*Proof.* Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:
+*Proof.* Split the sequence into its left Peirce components, $f[n]=\tilde\Pi_+f[n]+\tilde\Pi_-f[n]$, which is the identity $e_t=\tilde\Pi_++\tilde\Pi_-$ applied on the left. The kernel commutes with the two idempotents and acts on them by the two characters, so the transform is
 
 $$
-\frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} F[\ell] = \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} \sum_{m=0}^{N-1} W_N(m, \ell) f[m] = \frac{1}{N} \sum_{m=0}^{N-1} \left(\sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} W_N(m, \ell)\right) f[m].
+F[\ell] = \sum_{n=0}^{N-1} e^{-2\pi i n\ell/N}\,\tilde\Pi_+ f[n] + \sum_{n=0}^{N-1} e^{+2\pi i n\ell/N}\,\tilde\Pi_- f[n],
 $$
 
-The inner sum is the standard orthogonality relation:
+a pair of ordinary complex discrete transforms, the second taken at the frequency $-\ell$. Applying the inverse formula, the two sums separate in the same way and each is inverted by the standard orthogonality of the $N$-th roots of unity, giving $\tilde\Pi_+f[n]+\tilde\Pi_-f[n]=f[n]$.
+
+The orthogonality relation the proof uses is
 
 $$
-\boxed{\; \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} W_N(m, \ell) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases} \;}
+\sum_{\ell=0}^{N-1} W_N(n, -\ell) W_N(m, \ell) = N\,\delta_{n,m}\, e_t,
 $$
 
-which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
+an identity in $\mathbb{C}[\tilde{Ζ}]$: the product is $W_N(m-n,\ell)$, which reads $\exp(2\pi i(m-n)\ell/N)$ in each Peirce coordinate, and the sum of the $N$-th roots of unity is $N$ at $n=m$ and $0$ otherwise.
 
-**The transform is not invertible on sequences containing zero-divisor samples.** If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a sequence with zero-divisor samples is not known; it depends on the cancellations in the sum.
+**The inversion is unconditional.** Nothing in the proof uses the invertibility of a sample, so a sample of vanishing norm is recovered exactly. What a zero divisor obstructs is division, the subject of §*The Vanishing-Norm Issue*.
 
 ### Symmetry of the Spectrum
 
-For a real scalar-valued sequence and a root $\rho$, the spectrum satisfies a **conjugate symmetry** analogous to the Hermitian symmetry of the ordinary Fourier transform of a real sequence.
+For a real scalar-valued sequence the spectrum satisfies a **conjugate symmetry**, as in the ordinary theory, and which conjugation appears is decided by the root.
 
-**Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{R}e_t$ be a real scalar-valued sequence, and let $F$ be its discrete biquaternion Fourier transform with respect to a root $\rho$. Then
-
-$$
-F[N-\ell] = F[\ell]^{\natural}, \qquad \ell = 1, \ldots, N-1.
-$$
-
-*Proof.* The proof uses the reality of $f$, i.e., $f[n]^{\natural} = f[n]$ for every $n$, and the identity
+**Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{R}e_t$ be a real scalar-valued sequence, and let $F$ be its transform with respect to the root $\tilde{Ζ}$. Then
 
 $$
-W_N(n, N-\ell)^{\natural} = W_N(n, \ell),
+F[N-\ell] = F[\ell]^{\natural}, \qquad \ell = 1, \ldots, N-1,
 $$
 
-which follows from the closed form of the kernel and the parity of the cosine and sine. Then
+for a pure root, and
 
 $$
-F[N-\ell] = \sum_{n=0}^{N-1} W_N(n, N-\ell) f[n] = \sum_{n=0}^{N-1} W_N(n, \ell)^{\natural} f[n] = \sum_{n=0}^{N-1} \left(W_N(n, \ell) f[n]\right)^{\natural} = \left(\sum_{n=0}^{N-1} W_N(n, \ell) f[n]\right)^{\natural} = F[\ell]^{\natural}.
+F[N-\ell] = \overline{F[\ell]}, \qquad \ell = 1, \ldots, N-1,
 $$
 
-The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell] = F[\ell]^*$ of the ordinary Fourier transform of a real sequence. It is the basis for reconstructing a real sequence from half of its spectrum, and it is the reason the standard techniques of real-valued analysis extend to the biquaternion setting, provided the values are real scalar. For a general real quaternion-valued sequence the identity fails, because quaternion conjugation does not fix an element with a vector part and it reverses the order of the factors.
+at the central root.
 
-## Factorization into Four Complex Fourier Transforms
-
-### The Change of Basis
-
-Let $\rho$ be the root of $-1$ used in the kernel. Choose two other unit pure biquaternions $\nu$ and $\zeta$ such that
+*Proof.* The kernel satisfies $W_N(n, N-\ell)=W_N(n, -\ell)$ for every root, because the argument changes by the integer multiple $2\pi n$ of the period. Hence
 
 $$
-\rho \perp \nu, \qquad \nu \perp \zeta, \qquad \zeta \perp \rho, \qquad \rho \nu = \zeta.
+F[N-\ell] = \sum_{n=0}^{N-1} W_N(n, -\ell) f[n] = \sum_{n=0}^{N-1} W_N(n, \ell)^{-1} f[n].
 $$
 
-The four elements $\{e_t, \rho, \nu, \zeta\}$ form a **complex orthonormal basis** of $\mathbb{B}$. Any biquaternion can be written in this basis as
+For a pure root the inverse is the natural conjugate, and $\natural$ is an anti-automorphism fixing the real scalars, so the last sum is $\bigl(\sum_n W_N(n,\ell)f[n]\bigr)^{\natural}=F[\ell]^{\natural}$. At the central root the kernel is a complex scalar and the coefficient conjugate is the inverse, so the last sum is $\overline{F[\ell]}$.
+
+The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell]=F[\ell]^{*}$ of the ordinary transform of a real sequence. For a quaternion-valued sequence the first identity fails, because $\natural$ neither fixes the values nor preserves the order.
+
+## Factorization into Complex Fourier Transforms
+
+### The Peirce Coordinates
+
+Let $\tilde{Ζ}$ be the root and $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ its pair. The two left ideals
 
 $$
-\tilde{Q} = Q_t e_t + Q_\rho \rho + Q_\nu \nu + Q_\zeta \zeta,
+\tilde\Pi_+\mathbb{B}=\{\tilde\Pi_+X : X\in\mathbb{B}\}, \qquad \tilde\Pi_-\mathbb{B}=\{\tilde\Pi_-X : X\in\mathbb{B}\}
 $$
 
-with $Q_t, Q_\rho, Q_\nu, Q_\zeta \in \mathbb{C}$.
-
-The coefficients are obtained by resolving the vector part of the biquaternion in the three complex directions defined by the new basis. If the vector part of a biquaternion is $\vec v = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_x, Q_y, Q_z \in \mathbb{C}$, then the coefficients are
+are complementary, $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$, and each is a complex plane: an idempotent has rank one in the matrix model $\mathbb{B}=M_2(\mathbb{C})$, so each ideal has complex dimension two. Every sequence splits accordingly,
 
 $$
-Q_\rho = \langle \rho, \vec v \rangle, \qquad Q_\nu = \langle \nu, \vec v \rangle, \qquad Q_\zeta = \langle \zeta, \vec v \rangle,
+f[n] = f_+[n] + f_-[n], \qquad f_\pm[n] = \tilde\Pi_\pm f[n] \in \tilde\Pi_\pm\mathbb{B},
 $$
 
-where the pairing is the complex bilinear dot product $\sum_k Q_k P_k$ defined in *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The General Plain Bilinear Product $\tilde Q_1\tilde Q_2$* (the polar form of the biquaternion norm, not the Hermitian inner product). The scalar coefficient $Q_t$ is unchanged.
+and the split is canonical: it is fixed by the root and by nothing else.
 
 ### The Factorization
 
-Writing each sample $f[n]$ in the new basis,
+Substituting the Peirce form of the kernel and the split of the sequence,
 
 $$
-f[n] = w[n] e_t + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\zeta[n] \zeta,
+F[\ell] = \sum_{n=0}^{N-1} \left(e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_-\right)\left(f_+[n]+f_-[n]\right).
 $$
 
-and substituting into the transform with the closed form of the kernel,
+Each of the four products lands in a Peirce plane and the two planes do not mix, so the sum separates into two independent transforms:
 
 $$
-F[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, e_t - \sin\theta_n \, \rho\right) \left(w[n] e_t + Q_\rho[n] \rho + Q_\nu[n] \nu + Q_\zeta[n] \zeta\right),
+F_+[\ell] = \sum_{n=0}^{N-1} e^{-2\pi i n\ell/N} f_+[n], \qquad F_-[\ell] = \sum_{n=0}^{N-1} e^{+2\pi i n\ell/N} f_-[n].
 $$
 
-where $\theta_n = 2\pi n\ell/N$.
-
-Expanding the product and using the multiplication rules of the basis $\{e_t, \rho, \nu, \zeta\}$:
+**Proposition (the factorization).** For every root of $1$ and every sequence,
 
 $$
-e_t e_t = e_t, \quad e_t \rho = \rho, \quad e_t \nu = \nu, \quad e_t \zeta = \zeta,
+F[\ell] = F_+[\ell] + F_-[\ell],
 $$
 
-$$
-\rho e_t = \rho, \quad \rho \rho = -e_t, \quad \rho \nu = \zeta, \quad \rho \zeta = -\nu,
-$$
+where $F_+$ is the ordinary complex discrete transform of $f_+$ and $F_-$ is the ordinary complex transform of $f_-$ at the negated frequency; the two displays above are the proof, since $f_\pm$ already lies in the image of $\tilde\Pi_\pm$.
 
-and collecting terms by basis element, we obtain four sums:
+### The Count
 
-$$
-F[\ell] = F_0[\ell] e_t + F_\rho[\ell] \rho + F_\nu[\ell] \nu + F_\zeta[\ell] \zeta,
-$$
+Each of the two Peirce planes is $\mathbb{C}^{2}$, so writing $f_\pm$ in a complex basis of its plane turns each of the two transforms into two scalar complex transforms. **The full transform is therefore four scalar complex discrete transforms of length $N$**, a count that does not depend on the root and needs no case distinction: at the central root one idempotent vanishes, one plane carries the whole algebra, and the same two complex coordinates are transformed, which is again four scalar transforms.
 
-where
-
-$$
-F_0[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, w[n] + \sin\theta_n \, Q_\rho[n]\right),
-$$
-
-$$
-F_\rho[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\rho[n] - \sin\theta_n \, w[n]\right),
-$$
-
-$$
-F_\nu[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\nu[n] + \sin\theta_n \, Q_\zeta[n]\right),
-$$
-
-$$
-F_\zeta[\ell] = \sum_{n=0}^{N-1} \left(\cos\theta_n \, Q_\zeta[n] - \sin\theta_n \, Q_\nu[n]\right).
-$$
-
-### The Complex Fourier Transforms
-
-Each of the four sums has the form $\sum_{n=0}^{N-1}(C_\bullet[n]\cos\theta_n + S_\bullet[n]\sin\theta_n)$ with $\theta_n = 2\pi n\ell/N$, where $C_\bullet$ and $S_\bullet$ are the cosine and sine coefficients of that sum. Let $\hat{C}_\bullet[\ell]=\sum_n C_\bullet[n]e^{-2\pi i n\ell/N}$ and likewise for $S_\bullet$. Since $\cos\theta=(e^{i\theta}+e^{-i\theta})/2$, $\sin\theta=(e^{i\theta}-e^{-i\theta})/(2i)$ and $\sum_n C_\bullet[n]e^{\pm2\pi i n\ell/N}=\hat{C}_\bullet[N\mp\ell]$, each sum is
-
-$$
-F_\bullet[\ell] = \frac{1}{2}\left(\hat{C}_\bullet[\ell] + \hat{C}_\bullet[N-\ell]\right) + \frac{1}{2i}\left(\hat{S}_\bullet[N-\ell] - \hat{S}_\bullet[\ell]\right).
-$$
-
-For $F_0$ one has $C_0 = w$ and $S_0 = Q_\rho$; the other three follow from their displayed sums. The pairs $(C_\bullet,S_\bullet)$ are, up to signs, the four coefficient sequences $w,Q_\rho,Q_\nu,Q_\zeta$, so four complex transforms suffice. The precise form depends on the pairing of the real and imaginary parts.
-
-Concretely, the factorization is the following algorithm:
-
-1. **Change of basis.** For each $n$, write the sample $f[n]$ in the basis $\{e_t, \rho, \nu, \zeta\}$, obtaining four complex coefficients $w[n], Q_\rho[n], Q_\nu[n], Q_\zeta[n]$.
-2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four coefficient sequences $w, Q_\rho, Q_\nu, Q_\zeta$. The result is four complex spectra.
-3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F[\ell]$.
-
-The result is a fast algorithm for the discrete biquaternion Fourier transform, using existing complex FFT libraries. The cost is four complex FFTs of size $N$, which is $O(N \log N)$, as opposed to the naive evaluation of the transform, which is $O(N^2)$.
-
-### Why This Matters
-
-The factorization is a computational result, but it also has a structural meaning. It shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied entrywise to the coefficients, dressed in biquaternion language. The non-trivial content is the **choice of root** and the **basis change** that it induces. Everything else is ordinary harmonic analysis.
+The result is a fast algorithm: four complex FFTs of size $N$, so $O(N\log N)$ against $O(N^2)$ for the naive evaluation. Everything non-trivial is in the root, which supplies the pair of planes.
 
 ## The Convolution Theorem
 
@@ -266,17 +282,11 @@ $$
 (f * g)[n] = \sum_{m \in \mathbb{Z}} f[m] g[n - m].
 $$
 
-The convolution is **not commutative** in general, because the biquaternion product is not commutative. The order of the factors matters.
+The convolution is **not commutative** in general, because the biquaternion product is not commutative; the order of the factors matters.
 
 ### The Convolution Theorem
 
-**Theorem (convolution theorem).** Let $f, g$ be biquaternion-valued sequences with finite support, and let $\mathcal{F}$ denote the discrete biquaternion Fourier transform with the kernel on the left:
-
-$$
-\mathcal{F}[f][\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) f[n].
-$$
-
-Assume the kernel is central on the values, $W_N(n,\ell)a = aW_N(n,\ell)$ for every sample $a$ of $f$ and $g$ and all $n,\ell$; this holds in particular for the complex root $\rho=\pm i$, whose kernel is a complex scalar. Then
+**Theorem (convolution theorem).** Let $f, g$ be biquaternion-valued sequences with finite support, and let $\mathcal{F}$ denote the discrete biquaternion Fourier transform with the kernel on the left. Assume the kernel is **central on the values**, $W_N(n,\ell)a = aW_N(n,\ell)$ for every sample $a$ of $f$ and $g$ and all $n,\ell$; this holds in particular for the central root $\tilde{Ζ}=\pm e_t$, whose kernel is a complex scalar, and for every sequence whose values lie in $\mathbb{C}[\tilde{Ζ}]$. Then
 
 $$
 \boxed{\; \mathcal{F}[f * g][\ell] = \mathcal{F}[f][\ell] \cdot \mathcal{F}[g][\ell] \;},
@@ -290,15 +300,15 @@ $$
 \mathcal{F}[f * g][\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) \sum_{m=0}^{N-1} f[m] g[n-m] = \sum_{m=0}^{N-1} \sum_{n=0}^{N-1} W_N(n, \ell) f[m] g[n-m].
 $$
 
-Change variables $n = m + k$, so that $W_N(n, \ell) = W_N(m + k, \ell) = W_N(m, \ell) W_N(k, \ell)$ (the kernel is multiplicative in the index because the exponential is). Then
+Change variables $n = m + k$, so that $W_N(n, \ell) = W_N(m, \ell) W_N(k, \ell)$, the kernel being multiplicative in the index because the exponential is. Then
 
 $$
-\mathcal{F}[f * g][\ell] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, \ell) W_N(k, \ell) f[m] g[k] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, \ell) f[m] W_N(k, \ell) g[k],
+\mathcal{F}[f * g][\ell] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, \ell) f[m]\, W_N(k, \ell) g[k],
 $$
 
-where the second equality moves $W_N(k,\ell)$ past $f[m]$, which the hypothesis permits. The double sum then factors as $\mathcal{F}[f][\ell] \cdot \mathcal{F}[g][\ell]$.
+where the passage from the previous display moves $W_N(k,\ell)$ past $f[m]$, which the hypothesis permits. The double sum then factors as $\mathcal{F}[f][\ell]\cdot\mathcal{F}[g][\ell]$.
 
-**Remark (a non-central root).** For a root with non-central kernel the hypothesis fails and the theorem is false as stated. At $n=m+k$ a term of the sum is $W_N(m,\ell)W_N(k,\ell)f[m]g[k]$, which equals $W_N(n,\ell)\,W_N(k,\ell)^{-1} f[m] W_N(k,\ell) g[k]$ because $W_N(m,\ell)W_N(k,\ell)=W_N(n,\ell)$. The factor $W_N(k,\ell)^{-1}f[m]W_N(k,\ell)$ depends on $k$ and $\ell$, so it cannot be absorbed into a coefficient $h[n]$. The sequence
+**Remark (a genuine root).** For a root other than $\pm e_t$ the kernel is not central and the hypothesis fails for arbitrary values, so the theorem is false as stated. At $n=m+k$ a term of the sum is $W_N(m,\ell)W_N(k,\ell)f[m]g[k]$, which equals $W_N(n,\ell)\,W_N(k,\ell)^{-1} f[m] W_N(k,\ell) g[k]$; the factor $W_N(k,\ell)^{-1}f[m]W_N(k,\ell)$ depends on $k$ and $\ell$ and cannot be absorbed into a coefficient $h[n]$. The sequence
 
 $$
 h_\ell[n] = \sum_{m+k=n} W_N(k,\ell)^{-1} f[m] W_N(k,\ell) g[k]
@@ -312,58 +322,50 @@ $$
 \mathcal{F}_{\text{right}}[f * g][\ell] = \mathcal{F}_{\text{right}}[f][\ell] \cdot \mathcal{F}_{\text{right}}[g][\ell].
 $$
 
-The order is not reversed: the same computation moves the kernel past $g$ and leaves $f$ in front. Without the hypothesis neither the left-kernel nor the right-kernel statement holds in general for a non-central root.
+The order is not reversed: the same computation moves the kernel past $g$ and leaves $f$ in front. Without the hypothesis neither the left-kernel nor the right-kernel statement holds in general.
 
 ### Consequences
 
-Under the same hypothesis, the convolution theorem says that convolution in the index domain becomes **biquaternion multiplication** in the frequency domain. This is the basis for filtering: a biquaternion-valued filter can be applied by pointwise multiplication in the frequency domain.
-
-It also implies that the convolution is:
-
-- **Associative:** $(f * g) * h = f * (g * h)$.
-- **Distributive over addition:** $f * (g + h) = f * g + f * h$.
-- **Not commutative:** $f * g \neq g * f$ in general.
-
-The non-commutativity is a genuinely biquaternionic feature of the harmonic analysis. The complex case is commutative, the quaternion case is not, and the biquaternion case is a natural extension.
+Under the same hypothesis, convolution in the index domain is **biquaternion multiplication** in the frequency domain. The convolution is associative and distributive over addition, and not commutative: the complex case is commutative, the quaternion case is not, and the biquaternion case is the natural extension.
 
 ## The Vanishing-Norm Issue
 
 ### Samples of Vanishing Norm
 
-A sample $f[n]$ with $\langle f[n]\rangle_{\natural} = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.
+A sample $f[n]$ with $\langle f[n]\rangle_{\natural}=0$ is a zero divisor, and by the inversion theorem of §*Invertibility* it is still recovered exactly. What the vanishing norm costs is arithmetic with the spectrum, not the transform.
 
-More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion $\tilde{Q}_2$ with $f[n] \circ \tilde{Q}_2 = 0$ or $\tilde{Q}_2 \circ f[n] = 0$. The kernel is invertible, so multiplying $f[n]$ by the kernel gives another zero divisor, and the sum over $n$ may or may not preserve the information of $f[n]$.
+**The natural norm is a seminorm.** It vanishes on the null cone, a real quadric of codimension two, so it cannot measure a spectrum and no Parseval identity can be stated in it. A zero-divisor entry also has no inverse, so such a spectrum cannot be divided by pointwise.
+
+The kernel is never on the cone: its two Peirce coordinates are unit complex numbers, so the transform never loses rank for lack of a kernel, whatever the root.
 
 ### Consequences for the Transform
 
-- **The transform is not necessarily invertible on sequences containing zero-divisor samples.** The inverse transform may not recover the vanished information.
-- **The transform is invertible on sequences of non-vanishing norm.** If every sample has non-vanishing norm, the transform is invertible (Theorem above).
+- **The transform is a bijection, at every root and for every sequence.** The inverse formula is an identity in the algebra and uses no hypothesis on the samples.
+- **Pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone.** A convolution is undone by dividing the transform pointwise by the transform of the kernel, and that division exists at the frequency $\ell$ exactly when $F[\ell]$ is a unit.
 
 ### Structural Interpretation
 
-The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras: every nonzero element has an inverse. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.
-
-The issue can be avoided by restricting the values to a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{B}_{H}$. On $\mathbb{B}_{H}$, every nonzero sample is invertible, and the transform is invertible on every sequence. On the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the samples with vanishing norm lie on a cone, and the transform is invertible only for sequences whose samples lie off this cone.
+The vanishing norm is a genuinely biquaternionic feature: it does not arise in the complex or quaternion transforms, whose algebras are division algebras, and in $\mathbb{B}$ the units are the complement of the null cone, so division is available off the cone and nowhere on it.
 
 ### The Open Question
 
-The precise condition under which the transform is invertible on a sequence with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, \ell) f[n]$, and it is not determined by the biquaternion norms of the samples alone. This is one of the open questions listed below.
+Which sequences have a spectrum free of zero divisors is not decided by the norms of the samples. Each Peirce coordinate of $F[\ell]$ is a complex discrete transform, so $\ell\mapsto\langle F[\ell]\rangle_{\natural}$ is one trigonometric polynomial in $\omega=e^{2\pi i\ell/N}$, of degree at most $2(N-1)$; the question is a count of its real zeros, and it is not settled here.
 
 ## The Two-Dimensional Transform
 
 ### Definition
 
-For a biquaternion-valued image $f : \{0, 1, \ldots, M-1\} \times \{0, 1, \ldots, N-1\} \to \mathbb{B}$, the **two-dimensional discrete biquaternion Fourier transform** is
+For a biquaternion-valued array $f : \{0, 1, \ldots, M-1\} \times \{0, 1, \ldots, N-1\} \to \mathbb{B}$, the **two-dimensional discrete biquaternion Fourier transform** is
 
 $$
 F[\ell, v] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} W_M(m, \ell) \, f[m, n] \, W_N(n, v),
 $$
 
-where $W_M$ and $W_N$ are the one-dimensional kernels of lengths $M$ and $N$, respectively. The two kernels can also be placed both on the left, or both on the right, depending on the convention.
+where $W_M$ and $W_N$ are the one-dimensional kernels of lengths $M$ and $N$, taken for the same root.
 
 ### Factorization
 
-The two-dimensional transform factorizes into four two-dimensional complex transforms, just as in the one-dimensional case. The change of basis is the same: write each sample in the basis $\{e_t, \rho, \nu, \zeta\}$, apply the two-dimensional complex transform to the four complex sequences, and reassemble.
+The two-dimensional transform factorizes through the same Peirce pair: writing $f = f_+ + f_-$ with $f_\pm = \tilde\Pi_\pm f$, each component is a $\mathbb{C}^2$-valued array, transformed by the ordinary two-dimensional complex transform, the second at the negated frequency in both indices.
 
 ### Separability
 
@@ -373,25 +375,23 @@ $$
 W_{M \times N}((m, n), (\ell, v)) = W_M(m, \ell) \, W_N(n, v).
 $$
 
-This follows from the multiplicativity of the exponential. The separability is what allows the two-dimensional transform to be computed as a sequence of one-dimensional transforms.
+This follows from the multiplicativity of the exponential in the time index and the additivity of the exponent. The separability is what allows the two-dimensional transform to be computed as a sequence of one-dimensional transforms.
 
 ## Higher-Dimensional Transforms
 
-The generalization to higher dimensions is straightforward. The transform of a biquaternion-valued function on $\{0, 1, \ldots, N_1 - 1\} \times \cdots \times \{0, 1, \ldots, N_d - 1\}$ is defined by $d$ kernels, one for each dimension. The transform factorizes into $4$ complex transforms per biquaternion component, in the fully general case, or fewer in the degenerate cases.
-
-The higher-dimensional transform is separable, and it can be computed by applying one-dimensional transforms along each dimension in turn.
+The generalization is by $d$ kernels, one for each dimension, all for the same root. The transform of a biquaternion-valued function on $\{0, 1, \ldots, N_1 - 1\} \times \cdots \times \{0, 1, \ldots, N_d - 1\}$ factorizes into four scalar complex transforms per Peirce coordinate, and it is separable, so it is computed along the axes in turn.
 
 ## The Z Transform
 
 ### Definition
 
-The transform pair above analyses a finite sequence; the transform of this section analyses an infinite one, and it is the discrete analogue of the Laplace transform rather than of the Fourier transform. Let $f = \{f_n\}_{n \ge 0}$ be a biquaternion-valued sequence. Its **Z transform** is
+The transform above analyses a finite sequence; this one analyses an infinite sequence, and it is the discrete analogue of the Laplace transform rather than of the Fourier transform. Let $f = \{f_n\}_{n \ge 0}$ be a biquaternion-valued sequence. Its **Z transform** is
 
 $$
 \mathcal{X}[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
 $$
 
-the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the degenerate case $\rho = i$ of the transform pair above.
+the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the central root $\tilde{Ζ}=e_t$ of the transform pair above.
 
 The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $\tilde{Q}$ through the sequence, and with the variable placed on the left the $\tilde A$-scaling rule would require every sample to commute with $\tilde A$. The two conventions are interconverted by the quaternion conjugate. Writing
 
@@ -523,68 +523,72 @@ $$
 
 An inhomogeneous recurrence is treated in the same way: the transform of the known right-hand side is inserted, the resulting equation for $\mathcal{X}[f]$ is decomposed in powers of $\tilde{Q}^{-1}$, and each term is read off the table.
 
+
 ## The Commutative Alternative: The Reduced Biquaternion Transform
 
 Everything in this article is the transform of $\mathbb{B}$, whose product is non-commutative and whose convolution theorem therefore fixes the kernel to one side. A commutative four-dimensional algebra has a discrete transform of its own, due to Pei, Chang and Ding, and it is the corpus's only worked instance of a discrete hypercomplex transform over a commutative algebra; it is recorded here because it is the case in which the phenomena of the previous sections disappear.
 
-The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*, and the transform is the **discrete reduced biquaternion Fourier transform** (DRBFT). The paper distinguishes two kernel conventions: **type 1**, with two imaginary units, whose advantage is that the even-even, even-odd, odd-even and odd-odd components of a real sequence separate in the frequency domain, and **type 2**, with one imaginary unit, chosen for its similarity to the ordinary complex transform. Both are implemented by the reduction of *Harmonic Analysis over Hypercomplex Systems*: the sequence is split by the idempotents into two complex sequences, and the transform is then a pair of complex two-dimensional transforms, so a DRBFT of either type costs two complex DFTs, the same count the quaternion Fourier transform costs. The convolution is implemented with six complex two-dimensional transforms, and one convolution in this algebra equals two conventional ones.
+The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*, and the transform is the **discrete reduced biquaternion Fourier transform**. Two kernel conventions are used, with two imaginary units or with one; the sequence is split by the idempotents into two complex sequences, so either type costs two complex DFTs, the same count the quaternion transform costs.
 
-The convolution theorem is the sharpest contrast with the theorem of this article. The convolution here is commutative, the kernel needs no side convention, and the product in the frequency domain is the transform of the convolution whichever DRBFT type is used; the paper reports that for the quaternion transform the corresponding identity holds only in a restricted one-side form, which is consistent with the one-sided theorem proved above for $\mathbb{B}$ and with its loss of commutativity. Two consequences of the commutative product are the ones the paper emphasises: a cascade of linear time-invariant filters multiplies in the frequency domain exactly as in the complex case, whereas the paper reports the cascade of quaternion filters to be difficult to analyse; and the **correlation** is a special case of the convolution, so the convolution algorithms serve it, with the **phase-only correlation** obtained by normalising the phase in the frequency domain, the paper's discrete definition of which uses the binary exclusive-or operation.
+The convolution theorem is the sharpest contrast with the theorem of this article. The convolution here is commutative, the kernel needs no side convention, and the product in the frequency domain is the transform of the convolution for either type; the paper reports that for the quaternion transform the corresponding identity holds only in a restricted one-side form, which is consistent with the one-sided theorem proved above for $\mathbb{B}$ and with its loss of commutativity.
 
-The price is the vanishing-norm phenomenon of the previous section, which the commutative algebra has as well: the norm is the determinant, it vanishes on two ideals, and so the transform has no single magnitude to be stationary in. The applications are to colour. A colour image is represented in the brightness–hue–saturation space, and the correlation and phase-only correlation are used for colour template matching and colour-sensitive edge detection. The colour space is three-dimensional and the algebra four-dimensional, so the representation is not unique; the paper removes the redundancy with a **simplified polar form**, treated with the other polar forms of the family in *The Polar Decomposition of an N-Regular Biquaternion*.
+The price is the vanishing-norm phenomenon of the previous section, which the commutative algebra has as well: the norm is the determinant, it vanishes on two ideals, and the transform has no single magnitude to be stationary in. The applications the paper gives are to colour, where the four dimensions are matched to a three-dimensional colour space; the redundancy is removed by a **simplified polar form**, treated with the other polar forms of the family in *The Polar Decomposition of an N-Regular Biquaternion*.
+
 
 ## Open Questions
 
-1. **A kernel from a non-central root.** For a non-central root no frequency-independent convolution reproduces the product of the transforms. Whether a twisted product, or a convolution carrying the root as data, repairs this is not known.
+1. **A kernel from a genuine root.** For a root other than $\pm e_t$ no frequency-independent convolution reproduces the product of the transforms, by the remark of §*The Convolution Theorem*. Whether a twisted product, or a convolution carrying the root as data, repairs this is not known.
 
-2. **Time-frequency analysis.** Can a biquaternion time-frequency distribution (Wigner, spectrogram, etc.) be defined, and what are its properties?
+2. **Frequency analysis of a sequence.** Can a biquaternion distribution of a sequence over the index and the frequency be defined, what are its invariance properties, and does the choice of root enter it?
 
 3. **Non-commutative convolution.** What are the implications of the non-commutativity of the biquaternion product for the convolution theorem? Convolution is not commutative, and the classical convolution theorem assumes commutativity.
 
-4. **The spectrum and vanishing norms.** It is not known whether the spectrum of a biquaternion Fourier transform of a real or imaginary quaternion sequence can have samples with vanishing norm. If it can occur, it would mean that the transform is not invertible on such sequences.
+4. **The spectrum and vanishing norms.** Whether a spectrum can meet the null cone is not settled here. The transform is a bijection regardless, so the question is whether a convolution can be undone pointwise, and it is a question about the zeros of one trigonometric polynomial, as §*The Open Question* states.
 
-5. **The precise invertibility condition.** Under what conditions on the zero-divisor samples is the transform invertible? The answer is not known.
-
-6. **The relation to the continuous transform.** How does the discrete transform relate to the continuous transform of the companion article? The sampling and periodization theorems should be stated.
-
-7. **The Clifford algebra framework.** How does the biquaternion discrete Fourier transform fit into the general theory of Clifford algebra Fourier transforms?
+5. **The relation to the continuous transform.** How does the discrete transform relate to the continuous transform of the companion article? The sampling and periodization theorems should be stated in the Peirce coordinates, where they are statements about two complex sequences.
 
 ## Summary
 
-The discrete biquaternion Fourier transform is defined by the kernel $W_N(n, \ell) = \exp(-2\pi \rho n\ell/N)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
+The discrete biquaternion Fourier transform is defined by the kernel $W_N(n, \ell) = \exp(-2\pi i\tilde{Ζ} n\ell/N)$, where $\tilde{Ζ}$ is a root of $1$ in $\mathbb{B}$. The root of $1$ is the parameter, not a root of $-1$: the complex scalar $i$ in the exponent supplies the sign, and the algebra element carries only the square $e_t$.
 
-The transform is invertible on sequences of non-vanishing norm, and it satisfies the conjugate symmetry for real scalar sequences. It factorizes into four complex Fourier transforms, which gives a fast algorithm using existing complex FFT libraries. The convolution theorem holds when the kernel commutes with the samples, in particular for the complex root; for a non-central root no frequency-independent convolution reproduces the product of transforms.
+The root is an idempotent pair. The halving map $\tilde{Ζ}\mapsto\tfrac12(e_t+\tilde{Ζ})$ is a bijection between the roots of $1$ and the idempotents, and the kernel is a pair of conjugate unit complex numbers, one on each Peirce ideal $\tilde\Pi_\pm\mathbb{B}$. The transform is the pair of ordinary complex transforms on those ideals, that is four scalar complex transforms of length $N$, which gives a fast algorithm.
 
-The vanishing-norm issue is a genuinely biquaternionic feature: sequences containing zero-divisor samples are not necessarily recoverable from their transform, and the precise invertibility condition is not known.
+The transform is invertible at every root and for every sequence, by the orthogonality of the inverse kernel. That inverse is the kernel at the negated frequency index, at every root without exception; it is the natural conjugate for every pure root and the coefficient conjugate at the central roots $\pm e_t$. The conjugate symmetry for real scalar sequences carries the same dichotomy. The convolution theorem holds when the kernel commutes with the samples, in particular at the central root; for a genuine root no frequency-independent convolution reproduces the product of the transforms.
 
-The discrete transform relates to the continuous transform of the companion article as the DFT relates to the Fourier integral, and it is the discrete counterpart of every construction there.
-
-The infinite-sequence analogue is the **biquaternion Z transform**, $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_+$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
+The vanishing norm does not obstruct inversion; it obstructs division, and the sequences whose spectrum avoids the null cone are exactly those whose convolutions can be undone pointwise.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
-|---|---|
-| $\mathbb{B}$ | Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $f : \{0,\dots,N-1\} \to \mathbb{B}$ | Biquaternion-valued sequence |
-| $F[\ell]$ | Discrete biquaternion Fourier transform of $f$, defined by $F[\ell] = \sum_n W_N(n,\ell)f[n]$ |
-| $W_N(n,\ell) = \exp(-2\pi\rho n\ell/N)$ | Discrete Fourier kernel, placed on the left of $f$; $W_N(n,\ell)^{\natural}$ gives the inverse transform |
-| $\rho$ | Root of $-1$ in $\mathbb{B}$; the degenerate roots give the complex or quaternion transform, the non-trivial roots a genuinely biquaternionic one |
-| $N$ | Number of samples, in the kernel $W_N$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; not to be confused with the sample count $N$ |
-| $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | Vector part of a biquaternion |
-| $\exp(\rho\theta) = \cos\theta\,e_t + \sin\theta\,\rho$ | de Moivre formula, valid for every root $\rho$ of $-1$ |
-| $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$ | Biquaternion Z transform of a sequence, the variable on the right of the sample |
-| $\mathcal{Y}[f](\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^{-n}f_n$ | The Z transform with the variable on the left; $(\mathcal{X}[f](\tilde{Q}))^{\natural} = \mathcal{Y}[f^{\natural}](\tilde{Q}^{\natural})$ |
-| $\tilde{Q} \in \mathbb{B}^{\times}$ | The variable of the Z transform, a unit of the algebra |
-| $r(\tilde{Q}) = \sqrt{\lvert \langle\tilde{Q}\rangle_{\natural}\rvert}$ | The multiplicative real norm; a seminorm on $\mathbb{B}$, vanishing on the zero divisors |
-| $\sigma_f$ | Radius of convergence of the Z transform, the geometric growth rate of $r(f_n)$ |
+| --- | --- |
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, $M_2(\mathbb{C})$ as a complex algebra |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | the unit and the three vector units, with $\vec e_k^{2}=-e_t$ |
+| $i$ | the complex scalar imaginary, commuting with the units |
+| $\tilde{Ζ}$ | a root of $1$, $\tilde{Ζ}^{2}=e_t$ |
+| $\vec{Ζ}$ | a pure root of $1$, $(\vec{Ζ},\vec{Ζ})=-1$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ | the idempotent pair of the root, $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$ |
+| $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$ | the Peirce decomposition into two complex planes |
+| $W_N(n,\ell) = \exp(-2\pi i\tilde{Ζ} n\ell/N)$ | the discrete Fourier kernel, placed on the left of $f[n]$ |
+| $\cos\theta\,e_t - i\sin\theta\,\tilde{Ζ}$ | the closed form of the kernel, $\theta=2\pi n\ell/N$ |
+| $W_N(n,-\ell)=W_N(n,\ell)^{-1}$ | the inverse kernel, at every root |
+| $F[\ell]$ | the transform of the sequence $f[n]$ |
+| $f = f_+ + f_-$ | the split into the two Peirce components |
+| $\mathcal{F}[f * g] = \mathcal{F}[f]\,\mathcal{F}[g]$ | the convolution theorem, under the centrality hypothesis |
+| $\natural$ | the quaternion conjugation, $e_t\mapsto e_t$, $\vec e_k\mapsto-\vec e_k$ |
+| $*$ | the Hermitian conjugation, $\bar{\cdot}\circ\natural$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | the natural norm, a complex scalar |
+| $\overline{W_N}$ | the coefficient conjugate of the kernel |
+| $N$ | the length of the transform |
+| $\mathbb{Z}/N$ | the index group |
 
 ## Further Reading
 
-- [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the continuous transform, the classification of the roots of $-1$, the factorisation into complex transforms and the vanishing-norm phenomenon, all cited here rather than restated; its bibliography carries the papers on the complexified quaternion transform, the roots of $-1$ and the zero divisors, not repeated below.
-- [Reduced Biquaternion Discrete Harmonic Analysis](reduced-biquaternion-discrete-harmonic-analysis.html), for the commutative four-dimensional algebra and its transform, the case in which the one-sided convolution theorem of this article becomes two-sided.
-- [Three Kernel Placements of the Biquaternion Fourier Transform](three-kernel-placements-of-the-biquaternion-fourier-transform.html), for the left, right and two-sided placements, which is the choice the phrase "the kernel on the left of the sample" fixes here.
-- [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as the kernel at negative time, and for the root that an element supplies.
-- W. Bi, Z.-F. Cai, and K. I. Kou, "Biquaternion Z transform", arXiv:2108.02975 (2021), for the biquaternion Z transform, its calculation rules, its table of elementary transforms and its solution of biquaternion recurrence relations.
-- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012-2022, for the reduced biquaternion algebra, the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, and for the discrete transform over it, its convolution and correlation theorems, its phase-only correlation and its colour-image applications.
+- [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the continuous kernel, the classification of the roots of $1$ and the Peirce form behind every statement here.
+- [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the de Moivre formula and the idempotents of the biquaternion algebra.
+- *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the classification of the roots of $1$ and the halving map.
+- [Special Element and Peirce Conventions](special-element-and-peirce-conventions.html), for the root glyph, the idempotent family and the Peirce table.
+- [Reduced Biquaternion Discrete Harmonic Analysis](reduced-biquaternion-discrete-harmonic-analysis.html), for the commutative case and its four-dimensional discrete transform.
+- [Harmonic Analysis over Hypercomplex Systems](harmonic-analysis-over-hypercomplex-systems.html), for the place of the transform among the eight systems.
+- [Quaternion Fourier Transform: Properties and Convolution Theorems](quaternion-fourier-transform-properties-and-convolution-theorems.html), for the quaternion case and the one-sided form of its convolution theorem.
+- *Commutative Reduced Biquaternions and Their Fourier Transform*, for the reduced biquaternion transform and the two kernel conventions of the commutative case.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the units, the conjugations and the norms.

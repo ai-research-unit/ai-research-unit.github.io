@@ -176,7 +176,7 @@ An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm
 | $\mathsf{V}_{\mathrm{vol}}$ | The chirality basis operator of a frame, $-iR_{\vec e_z}$ in the axis-free frame, a pure right multiplier; the gamma display writes it $\gamma_5$ |
 | $\tilde Q_L$, $\tilde Q_R$ | The two parts of an element named by the subscript; the value is returned by the chirality basis operator |
 | $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$ | The generator of the rotation algebra |
-| $\vec S$ | The generator read as one vector, $\vec u\cdot\vec S=u_k\tilde S_{\Psi,\eta}$; pure, so arrowed and without the tilde |
+| $\vec S$ | The generator read as one vector, $\vec u\cdot\vec S=u_\eta\tilde S_{\Psi,\eta}$; pure, so arrowed and without the tilde |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | An elementary spinor's carrier, a minimal left ideal of complex dimension two |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The idempotents of the two carriers, at the declared axis $\vec u$ |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | A Dirac spinor and its two parts, the $L$ part in $S_+$ and the $R$ part in $S_-$ |

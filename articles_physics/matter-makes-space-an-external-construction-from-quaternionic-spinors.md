@@ -188,7 +188,7 @@ $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}-i\sum_\eta C_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}
 =-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}\vec e_x+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}\vec e_y ,
 $$
-where $C^a=g^{ab}C_b$, so that $C^k=-C_\eta$, and the unit $i$ of the operator cancels the unit of the action once in each term. It is **two-sided**: the time derivative acts by right multiplication alone, because the left multiplier of $C_t$ is the identity of the algebra, the three spatial derivatives act by a left and a right multiplication, and the mass acts by left multiplication. Its square is minus the flat d'Alembertian of $g$, because the four actions anticommute on distinct indices and square to $\pm1$,
+where $C^a=g^{ab}C_b$, so that $C^\eta=-C_\eta$, and the unit $i$ of the operator cancels the unit of the action once in each term. It is **two-sided**: the time derivative acts by right multiplication alone, because the left multiplier of $C_t$ is the identity of the algebra, the three spatial derivatives act by a left and a right multiplication, and the mass acts by left multiplication. Its square is minus the flat d'Alembertian of $g$, because the four actions anticommute on distinct indices and square to $\pm1$,
 $$
 \bigl(iC^a\frac{\partial}{\partial x_a}\bigr)^2
 =-\varepsilon_\mu\frac{\partial^2}{\partial x_\mu^2}

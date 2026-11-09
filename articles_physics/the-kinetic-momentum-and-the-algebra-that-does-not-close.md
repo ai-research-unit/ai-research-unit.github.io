@@ -85,12 +85,12 @@ $$
 The same shift by a function of position gives
 
 $$
-[p_j+f_j,\,p_\eta+f_k]=i\hbar\left(\partial_k f_j-\partial_j f_k\right).
+[p_j+f_j,\,p_\eta+f_\eta]=i\hbar\left(\partial_\eta f_j-\partial_j f_\eta\right).
 $$
 
 The right-hand side is the antisymmetrised derivative of the shift. It vanishes exactly when the shift is a gradient.
 
-Minimal coupling takes $f_k=-ϙA_\eta$ and the right-hand side becomes the field strength:
+Minimal coupling takes $f_\eta=-ϙA_\eta$ and the right-hand side becomes the field strength:
 
 $$
 [\pi_j,\pi_\eta]=i\hbar\,ϙ\,\varepsilon_{j\eta l}B_l=\frac{m\,c\,i\,ϙ}{k_m}\,\varepsilon_{j\eta l}B_l .

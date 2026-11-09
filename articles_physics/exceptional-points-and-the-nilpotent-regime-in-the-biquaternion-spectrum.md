@@ -39,7 +39,7 @@ The scalar part decides which degeneracy lies there.
 | $B=0$ | $\vec Q=0$ | $X-Q_t$ | $\operatorname{diag}(Q_t,Q_t)$ | diabolic |
 | $B=0$ | $\vec Q\neq0$ | $(X-Q_t)^2$ | $\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$ | exceptional |
 
-A real vector part has $(\vec Q,\vec Q)=\sum_\eta Q_\eta^2$, which vanishes only at $\vec Q=0$. A Hermitian element has $\vec Q=i\vec q$ with $\vec q$ real, and $(\vec Q,\vec Q)=-\sum_kq_\eta^2$, which also vanishes only at $\vec Q=0$. The exceptional locus therefore contains no real vector part and no Hermitian element: **an exceptional point needs complex, non-Hermitian coefficients.** That is the algebraic reason the phenomenon belongs to the non-Hermitian programme and not to the Hermitian spectral theorem.
+A real vector part has $(\vec Q,\vec Q)=\sum_\eta Q_\eta^2$, which vanishes only at $\vec Q=0$. A Hermitian element has $\vec Q=i\vec q$ with $\vec q$ real, and $(\vec Q,\vec Q)=-\sum_\eta q_\eta^2$, which also vanishes only at $\vec Q=0$. The exceptional locus therefore contains no real vector part and no Hermitian element: **an exceptional point needs complex, non-Hermitian coefficients.** That is the algebraic reason the phenomenon belongs to the non-Hermitian programme and not to the Hermitian spectral theorem.
 
 ## The Exceptional Point
 

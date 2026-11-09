@@ -174,7 +174,7 @@ For a plane wave $Ξ = f(s)$ with $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\na
 $$
 \partial/\partial R_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
 \qquad
-\partial/\partial R_\eta s = k_k ,
+\partial/\partial R_\eta s = k_{\Phi\eta} ,
 $$
 
 so that

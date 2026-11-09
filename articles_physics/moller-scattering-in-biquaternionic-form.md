@@ -23,7 +23,7 @@ $$
 Ξ_k:\ Q\mapsto i\vec e_\eta Q\vec e_y\quad(\eta=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_k$ is minus the identity, and $Ξ_\muΞ_\nu+Ξ_\nuΞ_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $Ξ^{2}_t$ is the identity, $Ξ^{2}_\eta$ is minus the identity, and $Ξ_\muΞ_\nu+Ξ_\nuΞ_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
 
 **The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
@@ -151,7 +151,7 @@ $$
 =4\,\mathrm{Sc}\bigl(a_1a_2\cdots a_n\bigr)\,\mathrm{Sc}\bigl(b_n\cdots b_2b_1\bigr),
 $$
 
-the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^{k}=-Ξ_k$, the three trace combinations are
+the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $Ξ^{t}=Ξ_t$ and $Ξ^{\eta}=-Ξ_\eta$, the three trace combinations are
 
 $$
 L_t:=\operatorname{tr}\bigl[Ξ^{\mu} D(p_1)Ξ^{\nu} D(p_3)\bigr]\,
@@ -393,7 +393,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
 | $\theta$ | Centre-of-mass scattering angle |
 | $Ξ_t:\ Q\mapsto iQ\vec e_x$, $Ξ_k:\ Q\mapsto i\vec e_\eta Q\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
-| $Ξ^{t}=Ξ_t$, $Ξ^{k}=-Ξ_k$ | Raised insertions |
+| $Ξ^{t}=Ξ_t$, $Ξ^{\eta}=-Ξ_\eta$ | Raised insertions |
 | $Q\mapsto-iQ\vec e_z$ | Chirality action |
 | $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_\eta p_ki\vec e_\eta Q\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
 | $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |

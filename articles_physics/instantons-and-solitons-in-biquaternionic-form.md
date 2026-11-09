@@ -274,7 +274,7 @@ $$
 r^2=x_4^2+x_1^2+x_2^2+x_3^2\;},
 $$
 
-where $\eta_{\mu\nu a}$ are the self-dual 't Hooft symbols ($\eta_{j\eta a}=\epsilon_{aj\eta}$ for spatial indices, $\eta_{4\eta a}=\delta_{a\eta}$, $\eta_{\eta 4a}=-\delta_{a\eta}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}_{jka}=\epsilon_{aj\eta}$, $\bar{\eta}_{4ka}=-\delta_{a\eta}$, $\bar{\eta}_{k4a}=\delta_{a\eta}$) gives the anti-instanton.
+where $\eta_{\mu\nu a}$ are the self-dual 't Hooft symbols ($\eta_{j\eta a}=\epsilon_{aj\eta}$ for spatial indices, $\eta_{4\eta a}=\delta_{a\eta}$, $\eta_{\eta 4a}=-\delta_{a\eta}$), $\rho>0$ is the instanton radius, and $x_4=c\tau$ is the Euclidean time. Replacing $\eta$ by the anti-self-dual symbols $\bar{\eta}$ ($\bar{\eta}_{j\eta a}=\epsilon_{aj\eta}$, $\bar{\eta}_{4\eta a}=-\delta_{a\eta}$, $\bar{\eta}_{\eta 4a}=\delta_{a\eta}$) gives the anti-instanton.
 
 The configuration was checked by substitution, not quoted. At a generic point $x=(0.4,-1.2,0.7,1.5)$ with $\rho=0.6$, the curvature was formed by central finite differences and contracted with the epsilon symbol. The results are:
 

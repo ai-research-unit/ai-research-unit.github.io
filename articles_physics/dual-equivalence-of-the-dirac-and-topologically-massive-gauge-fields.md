@@ -22,7 +22,7 @@ with no sum on $\mu$, the two projecting onto the slice orthogonal to $j$ and on
 
 **The generators.** Every operator below is a map of the algebra to itself, and each is written as an action with its side in the display. The generator of index $\mu$ is the map
 $$
-C_\mu:\;\tilde{Ξ}_{\mathrm{sp}}\longmapsto a_\mu\tilde{Ξ}_{\mathrm{sp}} b_\mu,\qquad a_0=e_t,\quad a_k=\vec e_\eta,\qquad b_0=\vec e_x,\quad b_k=\vec e_y ,
+C_\mu:\;\tilde{Ξ}_{\mathrm{sp}}\longmapsto a_\mu\tilde{Ξ}_{\mathrm{sp}} b_\mu,\qquad a_0=e_t,\quad a_\eta=\vec e_\eta,\qquad b_0=\vec e_x,\quad b_k=\vec e_y ,
 $$
 so that $C_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ acts on the right alone — its left factor is $e_t$, the identity of the algebra — while $C_1,C_2,C_3$ act on both sides. The four obey $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}$ as operators, with no sum on $\mu$: the weight sits inside the generator, and it is what the sums below carry. The operator that carries the split is $-iR_{\vec e_z}$, a pure right multiplier and therefore an example of the right slot, and it acts by right multiplication,
 $$
@@ -317,7 +317,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 
 | Symbol | Meaning |
 |---|---|
-| $C_\mu:\tilde{Ξ}_{\mathrm{sp}}\mapsto a_\mu\tilde{Ξ}_{\mathrm{sp}} b_\mu$ | Generator of index $\mu$; $a_0=e_t$, $a_k=\vec e_\eta$, $b_0=\vec e_x$, $b_k=\vec e_y$. Two-sided for $\mu=1,2,3$, a right action alone for $\mu=0$, whose left factor is the identity |
+| $C_\mu:\tilde{Ξ}_{\mathrm{sp}}\mapsto a_\mu\tilde{Ξ}_{\mathrm{sp}} b_\mu$ | Generator of index $\mu$; $a_0=e_t$, $a_\eta=\vec e_\eta$, $b_0=\vec e_x$, $b_k=\vec e_y$. Two-sided for $\mu=1,2,3$, a right action alone for $\mu=0$, whose left factor is the identity |
 | $iC_\mu$ | The central $i$ times that generator; the same sides; $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\Gamma:\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z=\tilde{Ξ}_{\mathrm{sp}}(i\omega)$ | Chirality, a right action alone; $\Gamma^2=\mathrm{id}$; $\Gamma=i\,(C_0C_1C_2C_3)$, whose left factors cancel in pairs |
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |

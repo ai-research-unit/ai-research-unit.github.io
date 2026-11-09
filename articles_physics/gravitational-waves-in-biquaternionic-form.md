@@ -32,7 +32,7 @@ G_{\eta l} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\eta\,\bar{D}_l+\partial/\pa
 \end{aligned}
 $$
 
-with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_{\eta=1}^{3}\partial/\partial x_\eta\bar{h}_{\eta\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\eta=1}^{3}(\partial^2/\partial x_0\partial x_\eta\bar{h}_{\eta 0}+\partial^2/\partial x_\eta\partial x_0\bar{h}_{0\eta})+\sum_{k,l=1}^{3}\partial^2/\partial x_\eta\partial x_l\bar{h}_{l\eta}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_{\eta=1}^{3}\partial/\partial x_\eta\bar{h}_{\eta\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\eta=1}^{3}(\partial^2/\partial x_0\partial x_\eta\bar{h}_{\eta 0}+\partial^2/\partial x_\eta\partial x_0\bar{h}_{0\eta})+\sum_{\eta,l=1}^{3}\partial^2/\partial x_\eta\partial x_l\bar{h}_{l\eta}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** condition is
 

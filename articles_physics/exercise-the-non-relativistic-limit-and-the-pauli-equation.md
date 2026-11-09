@@ -247,7 +247,7 @@ O^2=c^2\sum_{j,\eta}\vec e_j\vec e_\eta\,\pi_j\pi_\eta\,\vec e_y\vec e_y
 =-c^2\sum_{j,\eta}\vec e_j\vec e_\eta\,\pi_j\pi_\eta .
 $$
 
-The product identity of the algebra, $\vec e_j\vec e_\eta=-\delta_{j\eta}+\epsilon_{j\eta l}\vec e_l$, splits the sum into a symmetric and an antisymmetric part. The symmetric part is $-\vec\pi^2$. The antisymmetric part is the commutator, the ordering being kept since $\vec p$ and $\vec A$ do not commute: with $[\pi_j,\pi_\eta]=\frac{m\,c\,i\,q\,\epsilon_{j\eta l}\,B_{l}}{k_m}$ and $\sum_{j<k}\epsilon_{j\eta l}\vec e_j\vec e_\eta=\vec e_l$, it gives $\frac{m\,c\,i\,q\,\vec B}{k_m}$. Hence
+The product identity of the algebra, $\vec e_j\vec e_\eta=-\delta_{j\eta}+\epsilon_{j\eta l}\vec e_l$, splits the sum into a symmetric and an antisymmetric part. The symmetric part is $-\vec\pi^2$. The antisymmetric part is the commutator, the ordering being kept since $\vec p$ and $\vec A$ do not commute: with $[\pi_j,\pi_\eta]=\frac{m\,c\,i\,q\,\epsilon_{j\eta l}\,B_{l}}{k_m}$ and $\sum_{j<\eta}\epsilon_{j\eta l}\vec e_j\vec e_\eta=\vec e_l$, it gives $\frac{m\,c\,i\,q\,\vec B}{k_m}$. Hence
 
 $$
 O^2=c^2\left(\vec\pi^2-\frac{m\,c\,i\,q\,\vec B}{k_m}\right),
@@ -305,7 +305,7 @@ Equivalently, $p\times\vec A+\vec A\times p=-\frac{m\,c\,i\,\vec B}{k_m}$; the t
 *Step 3: the square of the gradient's pure part.* The product identity of the algebra is the product of two pure elements,
 
 $$
-\Bigl(\sum_\eta\vec e_\eta a_k\Bigr)\Bigl(\sum_\eta\vec e_\eta b_k\Bigr)
+\Bigl(\sum_\eta\vec e_\eta a_\eta\Bigr)\Bigl(\sum_\eta\vec e_\eta b_\eta\Bigr)
 =-\vec a\cdot\vec b\,e_t+\sum_l\epsilon_{lj\eta}a_jb_k\,\vec e_l ,
 $$
 

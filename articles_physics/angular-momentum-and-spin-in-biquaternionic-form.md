@@ -301,7 +301,7 @@ They are **nilpotent**, and they are **zero divisors** of $\mathbb{B}$ — indee
 Two independent angular momenta $\vec S^{(1)}$ and $\vec S^{(2)}$, acting on different factors of a tensor product, combine by
 
 $$
-\tilde S_{\Psi,\mathrm{tot},\eta} = \tilde S_{\Psi}^{(1)}_k + \tilde S_{\Psi}^{(2)}_k,
+\tilde S_{\Psi,\mathrm{tot},\eta} = \tilde S_{\Psi}^{(1)}_\eta + \tilde S_{\Psi}^{(2)}_k,
 $$
 
 with each factor satisfying its own commutation relations and cross-commutators vanishing. The total operator again satisfies $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{k_m}$, and the coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ are the eigenvectors of $\tilde S_{\Psi,\mathrm{tot}}^2$ and $\tilde S_{\Psi,\mathrm{tot},3}$.

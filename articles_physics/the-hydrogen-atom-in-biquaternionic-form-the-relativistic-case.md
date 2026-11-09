@@ -54,26 +54,26 @@ It is a pair, not one equation, and the two-sided operator structure is why. The
 
 A second form, Kravchenko's two-sided equation, is a change of representation rather than a second definition — the derivatives act from the left and the mass from the right through a conjugation — and it is not used here because it carries no continuous central phase to gauge (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*).
 
-Read in the basis operator frame, where a basis operator acts on the element as $\tilde Q\mapsto a\tilde Qb$, the pair becomes the standard Dirac–Coulomb equation. Write $\beta$ for the basis operator $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\alpha_k$ for the basis operator $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$. Then
+Read in the basis operator frame, where a basis operator acts on the element as $\tilde Q\mapsto a\tilde Qb$, the pair becomes the standard Dirac–Coulomb equation. Write $\beta$ for the basis operator $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\alpha_\eta$ for the basis operator $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$. Then
 
 $$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t}
 = -\frac{m\,c^{2}\,i}{k_m}\sum_\eta  \vec e_\eta\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}\,\vec e_z
 + i mc^2\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x + V(r)\,\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
-with $V(r) = ϙ\xi_{\mathrm{scl}} = -\kappa/r$. The basis operator $\beta$ acts on one side only — its left factor is the time unit, which multiplies as the identity — while the three $\alpha_k$ act on both sides. What the equation uses is their algebra: each squares to the identity action, and distinct ones anticommute,
+with $V(r) = ϙ\xi_{\mathrm{scl}} = -\kappa/r$. The basis operator $\beta$ acts on one side only — its left factor is the time unit, which multiplies as the identity — while the three $\alpha_\eta$ act on both sides. What the equation uses is their algebra: each squares to the identity action, and distinct ones anticommute,
 
 $$
-\alpha_k^2 = \beta^2 = 1 ,
+\alpha_\eta^2 = \beta^2 = 1 ,
 \qquad
 \alpha_i\alpha_j+\alpha_j\alpha_i = 0 \ \ (i\neq j),
 \qquad
-\alpha_k\beta+\beta\alpha_k = 0 ,
+\alpha_\eta\beta+\beta\alpha_\eta = 0 ,
 $$
 
-the anticommutators because $\vec e_i\vec e_j=-\vec e_j\vec e_i$ with $\vec e_z\vec e_z=-e_t$ common to both terms, and because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. So that $(c\sum_\eta\alpha_k p_\eta+\beta mc^2)^2 = c^2\vec p^{\,2}+m^2c^4$ on the free field.
+the anticommutators because $\vec e_i\vec e_j=-\vec e_j\vec e_i$ with $\vec e_z\vec e_z=-e_t$ common to both terms, and because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. So that $(c\sum_\eta\alpha_\eta p_\eta+\beta mc^2)^2 = c^2\vec p^{\,2}+m^2c^4$ on the free field.
 
-In this frame the four generators have the Euclidean sign pattern, every square being the identity action. Multiplying the three $\alpha_k$ by $\beta$ on both sides flips them, $\beta\alpha_k\beta=-\alpha_k$, so the four generators
+In this frame the four generators have the Euclidean sign pattern, every square being the identity action. Multiplying the three $\alpha_\eta$ by $\beta$ on both sides flips them, $\beta\alpha_\eta\beta=-\alpha_\eta$, so the four generators
 
 $$
 \beta,\quad \beta\alpha_1,\quad \beta\alpha_2,\quad \beta\alpha_3
@@ -292,7 +292,7 @@ $$
 \sum_\mu\epsilon_\mu\,\frac{\partial j_{5\mu}}{\partial R_\mu} = 2im\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\bigl(-iR_{\mathrm{axf},\vec e_z}\bigr)\tilde{Ξ}_{\mathrm{sp}} ,
 $$
 
-with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\mathrm{axf},\vec e_z}$ the chirality basis operator — the representative on the field of the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\natural}G_\mu(-iR_{\mathrm{axf},\vec e_z})\tilde{Ξ}_{\mathrm{sp}}$, where $G_\mu$ are the four basis operator generators of *Noether's Theorem in Biquaternionic Form*: $G_t$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$ and $G_\eta$ as $\tilde Q\mapsto i\vec e_\eta\tilde Q\vec e_y$. These are the frame elements of *The Legacy Pauli Gamma Formulation*: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_\eta$ is $\beta\alpha_k$, the Hamiltonian's $\alpha_k$ preceded by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
+with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\mathrm{axf},\vec e_z}$ the chirality basis operator — the representative on the field of the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\natural}G_\mu(-iR_{\mathrm{axf},\vec e_z})\tilde{Ξ}_{\mathrm{sp}}$, where $G_\mu$ are the four basis operator generators of *Noether's Theorem in Biquaternionic Form*: $G_t$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$ and $G_\eta$ as $\tilde Q\mapsto i\vec e_\eta\tilde Q\vec e_y$. These are the frame elements of *The Legacy Pauli Gamma Formulation*: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_\eta$ is $\beta\alpha_\eta$, the Hamiltonian's $\alpha_\eta$ preceded by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
 
 The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t\to\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t-ϙ\xi_{\mathrm{scl}}$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
 
@@ -309,7 +309,7 @@ $$
 \bigl(\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}+\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}\bigr).
 $$
 
-Substituting, cancelling the common phase and projecting onto the two eigenspaces gives the coupled pair; the projection is what puts the momentum term off-diagonal, since $\alpha_k$ carries one eigenspace into the other by $\alpha_k\beta=-\beta\alpha_k$,
+Substituting, cancelling the common phase and projecting onto the two eigenspaces gives the coupled pair; the projection is what puts the momentum term off-diagonal, since $\alpha_\eta$ carries one eigenspace into the other by $\alpha_\eta\beta=-\beta\alpha_\eta$,
 
 $$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}}{\partial  r'_t}
 = c\sum_\eta  \pi_\eta\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}\,\vec e_z + V\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}} ,
@@ -549,7 +549,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\mathbb{B}_{C} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra |
 | $\mathsf{M}_2$ | The isomorphism with $M_2(\mathbb{C})$, named where a display is compared; no formula is used in this article |
 | $L_{a}R_{b}$ | Two-sided multiplication by the pair $(a,b)$, written in the body as the action $\tilde Q\mapsto a\tilde Qb$; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
-| $\beta$, $\alpha_k$ | Basis operators of the frame: $\beta$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$, $\alpha_k$ as $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$; $\alpha$ without a subscript is the fine-structure constant |
+| $\beta$, $\alpha_\eta$ | Basis operators of the frame: $\beta$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$, $\alpha_\eta$ as $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$; $\alpha$ without a subscript is the fine-structure constant |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the field by the chirality basis operator $-iR_{\mathrm{axf},\vec e_z}$ |
 | $Q_t = i r'_t$, $Q_\eta = x_\eta$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
 | $\tilde\nabla = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |

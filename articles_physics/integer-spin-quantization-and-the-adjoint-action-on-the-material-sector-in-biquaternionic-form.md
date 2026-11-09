@@ -27,23 +27,23 @@ $$
 R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{*}.
 $$
 
-It is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$: the Hermitian pair preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_\eta/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
+It is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$: the Hermitian pair preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_\eta/2)$ with $\theta$ the rotation angle about the $\eta$-th axis, the infinitesimal generator of the map is the inner derivation
 
 $$
-\delta_k\tilde{Q} = \tfrac{\theta}{2}\,[\vec e_\eta,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{\vec e_\et}a\tilde{Q} .
+\delta_\eta\tilde{Q} = \tfrac{\theta}{2}\,[\vec e_\eta,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{\vec e_\eta}a\tilde{Q} .
 $$
 
-The three derivations $\mathrm{ad}_{\vec e_\et}a$ span the Lie algebra of the rotation group, and the Hermitian angular-momentum operator is the corresponding anti-Hermitian generator multiplied by $i$:
+The three derivations $\mathrm{ad}_{\vec e_\eta}a$ span the Lie algebra of the rotation group, and the Hermitian angular-momentum operator is the corresponding anti-Hermitian generator multiplied by $i$:
 
 $$
-\boxed{\;\tilde S_{\Psi,\mathrm{adj},\eta} = \tfrac12\,\mathrm{ad}_{i\vec e_\et}a = \tfrac{i}{2}\,\mathrm{ad}_{\vec e_\et}a\;}.
+\boxed{\;\tilde S_{\Psi,\mathrm{adj},\eta} = \tfrac12\,\mathrm{ad}_{i\vec e_\eta}a = \tfrac{i}{2}\,\mathrm{ad}_{\vec e_\eta}a\;}.
 $$
 
 The factor $i$ is the usual one that turns the anti-Hermitian generator $\vec e_\eta$ of the $*$-unitary rotation into a Hermitian observable. The three $\tilde S_{\Psi,\mathrm{adj},\eta}$ act on the material sector by bracketing, $\tilde{Q}\mapsto[\tilde S_{\Psi,\mathrm{adj},\eta},\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
 
 ### The Adjoint Action Preserves the Material Sector
 
-A short computation fixes the action on the basis. Since $ie_t$ is central, $\mathrm{ad}_{i\vec e_\et}a(ie_t)=0$: the imaginary scalar direction is invariant. On the vector units the multiplication rule gives
+A short computation fixes the action on the basis. Since $ie_t$ is central, $\mathrm{ad}_{i\vec e_\eta}a(ie_t)=0$: the imaginary scalar direction is invariant. On the vector units the multiplication rule gives
 
 $$
 \mathrm{ad}_{\vec e_z}(\vec e_x)=2\vec e_y,\qquad
@@ -93,9 +93,9 @@ $$
 \tilde S_{\Psi,\mathrm{adj},3}=\begin{pmatrix}0&-i&0\\i&0&0\\0&0&0\end{pmatrix}.
 $$
 
-Each was obtained by applying $\tfrac12\mathrm{ad}_{i\vec e_\et}a$ to the basis units and reading the coefficients of $\vec e_x,\vec e_y,\vec e_z$, and the matrices agree with the standard spin-one representation in the Cartesian basis. They are Hermitian and traceless, and the trace vanishing is the statement that the weights of the triplet sum to zero. The deeper distinction between integer and half-integer spin is visible in the weight set itself: for integer $s$ the weights are $-s,\dots,0,\dots,s$ and include $s_z=0$, so the multiplet dimension $2s+1$ is odd and the minimal polynomial of $\tilde S_{\Psi,\mathrm{adj},3}$ has odd degree; for half-integer $s$ the weights are $\pm\tfrac12,\pm\tfrac32,\dots$, no weight vanishes, and the dimension is even. The adjoint action produces only the first case, because its representation space is a subspace of the algebra and the algebra is built from integer weights.
+Each was obtained by applying $\tfrac12\mathrm{ad}_{i\vec e_\eta}a$ to the basis units and reading the coefficients of $\vec e_x,\vec e_y,\vec e_z$, and the matrices agree with the standard spin-one representation in the Cartesian basis. They are Hermitian and traceless, and the trace vanishing is the statement that the weights of the triplet sum to zero. The deeper distinction between integer and half-integer spin is visible in the weight set itself: for integer $s$ the weights are $-s,\dots,0,\dots,s$ and include $s_z=0$, so the multiplet dimension $2s+1$ is odd and the minimal polynomial of $\tilde S_{\Psi,\mathrm{adj},3}$ has odd degree; for half-integer $s$ the weights are $\pm\tfrac12,\pm\tfrac32,\dots$, no weight vanishes, and the dimension is even. The adjoint action produces only the first case, because its representation space is a subspace of the algebra and the algebra is built from integer weights.
 
-The factor $\tfrac12$ in $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\et}a$ is the Hermitian normalisation, not a half-angle. Since $\mathrm{ad}_{\vec e_\et}a$ acts as $v\mapsto2\vec e_\eta\times v$, the factor $2$ cancels it and the weights of the adjoint action are integers. The half-angle belongs to the one-sided exponent of a unit rotor, not to this generator.
+The factor $\tfrac12$ in $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\eta}a$ is the Hermitian normalisation, not a half-angle. Since $\mathrm{ad}_{\vec e_\eta}a$ acts as $v\mapsto2\vec e_\eta\times v$, the factor $2$ cancels it and the weights of the adjoint action are integers. The half-angle belongs to the one-sided exponent of a unit rotor, not to this generator.
 
 ## The Spin-One Multiplet and Its Weight Basis
 
@@ -178,7 +178,7 @@ $$
 \qquad
 \tilde L_\eta=(\vec r\times\vec p)_k,
 \qquad
-\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\et}a,
+\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\eta}a,
 $$
 
 with $\tilde L_\eta$ acting on the argument and $\tilde S_{\Psi,\eta}$ on the value. The two commute, because they act on different slots, and the total generators satisfy the same algebra. The scalar field of the companion spin-$0$ subcategory has $\tilde S_{\Psi,\eta}=0$ because its values lie in the centre; the spin-$\tfrac12$ field has $\tilde S_{\Psi,\eta}$ equal to the left-ideal action of the companion subcategory. The integer-spin field of spin one is the first case in which the internal action is the adjoint action, $\tilde S_{\Psi,\eta}=\tilde S_{\Psi,\mathrm{adj},\eta}$, and the reason is that the field is a material **vector**, the representation of $\mathbb{B}$ that the algebra naturally acts on by bracketing.
@@ -190,7 +190,7 @@ The decomposition of the material sector, $\mathbb{B}_{\Phi}=\mathrm{span}_{\mat
 For spin $s$ the carrier is the space of symmetric traceless rank-$s$ tensors of the material vector space $V$, of complex dimension $2s+1$. In biquaternion terms this is the symmetric traceless part of the $s$-fold tensor power of the vector part, and the angular momentum operator is the sum of the adjoint actions on the factors, by the Leibniz rule,
 
 $$
-\tilde S_{\Psi}^{(s)}_k = \sum_{a=1}^{s}\underbrace{I\otimes\cdots\otimes\tfrac12\mathrm{ad}_{i\vec e_\et}a\otimes\cdots\otimes I}_{s\ \text{factors}} .
+\tilde S_{\Psi}^{(s)}_k = \sum_{a=1}^{s}\underbrace{I\otimes\cdots\otimes\tfrac12\mathrm{ad}_{i\vec e_\eta}a\otimes\cdots\otimes I}_{s\ \text{factors}} .
 $$
 
 The trace removal is what reduces the tensor power to the irreducible spin-$s$ piece; it can be imposed by the metric pairing $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$ between factors, which is an operation the algebra already provides. The integer-spin representations are thus all constructed from the adjoint action, the tensor product, the symmetry projector, and the trace removal, and no new algebraic input is required.
@@ -248,7 +248,7 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The inner derivations $\mathrm{ad}_{i\vec e_\et}a$ as the rotation generators, and the fact that they preserve the material sector; the invariant vector part $V$ and the scalar direction $ie_t$, giving the internal decomposition $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$; the commutation relations $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ij\eta}\tilde S_{\Psi,\mathrm{adj},\eta}$; the Casimir eigenvalue $\tilde S_{\Psi,\mathrm{adj}}^2=2I$, which is the algebraic statement of spin one; the weight basis $\varepsilon_\pm,\varepsilon_0$ and the ladder structure $\tilde S_{\Psi,\mathrm{adj},\pm}$; the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3=\tilde S_{\Psi,\mathrm{adj},3}$; the tensor-power construction of the higher integer-spin carriers, with the trace removal supplied by the algebra's bilinear form.
+**Supplied by the algebra, and recomputed here.** The inner derivations $\mathrm{ad}_{i\vec e_\eta}a$ as the rotation generators, and the fact that they preserve the material sector; the invariant vector part $V$ and the scalar direction $ie_t$, giving the internal decomposition $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$; the commutation relations $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ij\eta}\tilde S_{\Psi,\mathrm{adj},\eta}$; the Casimir eigenvalue $\tilde S_{\Psi,\mathrm{adj}}^2=2I$, which is the algebraic statement of spin one; the weight basis $\varepsilon_\pm,\varepsilon_0$ and the ladder structure $\tilde S_{\Psi,\mathrm{adj},\pm}$; the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3=\tilde S_{\Psi,\mathrm{adj},3}$; the tensor-power construction of the higher integer-spin carriers, with the trace removal supplied by the algebra's bilinear form.
 
 **Imported, and left visible.** The Wigner classification and the little-group analysis; the bosonic oscillator algebra and the Fock construction; the normal-ordering and positivity arguments; the spin–statistics theorem, cited to the companion article; the Clebsch–Gordan series used to identify the content of the rank-two tensor; and the identification of the adjoint action's triplet with the polarizations of the massive vector field, which is a **physical interpretation** of an algebraic fact.
 
@@ -272,7 +272,7 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 ## Summary
 
-Integer-spin quantization in the biquaternion framework rests on an identification: the adjoint action of the rotation algebra on the vector part of the material sector **is** the spin-one representation. The rotation generators are the inner derivations $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\et}a$, the vector part $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is invariant, and the imaginary scalar direction $ie_t$ is fixed, so that $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$ decomposes into an internal spin-$0$ and spin-$1$ piece.
+Integer-spin quantization in the biquaternion framework rests on an identification: the adjoint action of the rotation algebra on the vector part of the material sector **is** the spin-one representation. The rotation generators are the inner derivations $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\eta}a$, the vector part $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is invariant, and the imaginary scalar direction $ie_t$ is fixed, so that $\mathbb{B}_{\Phi}=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$ decomposes into an internal spin-$0$ and spin-$1$ piece.
 
 The representation was computed explicitly: $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ij\eta}\tilde S_{\Psi,\mathrm{adj},\eta}$ with residual zero, the Casimir $\tilde S_{\Psi,\mathrm{adj}}^2=2I$ with residual zero, the weight basis $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$ and $\varepsilon_0=\vec e_z$ with $\tilde S_{\Psi,\mathrm{adj},3}$ eigenvalues $\pm1,0$, and the identity $(\tilde S_{\Psi,\mathrm{adj},3})^3-\tilde S_{\Psi,\mathrm{adj},3}=0$ that characterizes the triple. The ladder operators $\tilde S_{\Psi,\mathrm{adj},\pm}=\tilde S_{\Psi,\mathrm{adj},1}\pm i\tilde S_{\Psi,\mathrm{adj},2}$ shift between the weights with matrix element $\sqrt2$. The triplet is the polarization triad of the massive vector field, and the massless theory retains the two helicity states $\pm1$ while the gauge structure removes the $\lambda=0$ state.
 
@@ -290,7 +290,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Vector part of the material sector; spin-one carrier |
 | $\mathrm{ad}_{\tilde{Q}}\tilde{Q}_3=[\tilde{Q},\tilde{Q}_3]$ | Inner derivation (adjoint action) |
 | $R_Q(\tilde{Q})=Q\tilde{Q}Q^{*}$ | Inner automorphism; rotation for $Q=\exp(\theta \vec e_\eta/2)$ |
-| $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\et}a$ | Hermitian angular-momentum (spin) generator |
+| $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\eta}a$ | Hermitian angular-momentum (spin) generator |
 | $\tilde L_\eta$, $\tilde S_{\Psi,\eta}=\tilde S_{\Psi,\mathrm{adj},\eta}$ | Orbital and internal parts; $\tilde S_{\Psi,\mathrm{tot},\eta}=\tilde L_\eta+\tilde S_{\Psi,\eta}$ |
 | $[\tilde S_{\Psi,\mathrm{adj},i},\tilde S_{\Psi,\mathrm{adj},j}]=i\varepsilon_{ij\eta}\tilde S_{\Psi,\mathrm{adj},\eta}$ | Rotation algebra (verified, residual zero) |
 | $\tilde S_{\Psi,\mathrm{adj}}^2=(\tilde S_{\Psi,\mathrm{adj},1})^2+(\tilde S_{\Psi,\mathrm{adj},2})^2+(\tilde S_{\Psi,\mathrm{adj},3})^2=2I$ | Casimir; $2=s(s+1)$ at $s=1$ |

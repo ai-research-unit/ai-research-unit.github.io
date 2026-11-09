@@ -74,10 +74,10 @@ $$
 
 ### The symbol and the mass shell
 
-On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_\eta\mapsto-ik_k$, so the gradient becomes one fixed element of the algebra,
+On a plane wave $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec r)}$ every derivative is a multiple of the wave. The substitution is $\partial/\partial R_t\mapsto k_{t}^{\prime}$ and $\partial/\partial R_\eta\mapsto-i k_{\Phi\eta}$, so the gradient becomes one fixed element of the algebra,
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_\eta\vec e_\eta k_k,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\sum_\eta\vec e_\eta k_{\Phi\eta},
 \qquad
 (-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2 ,
 $$

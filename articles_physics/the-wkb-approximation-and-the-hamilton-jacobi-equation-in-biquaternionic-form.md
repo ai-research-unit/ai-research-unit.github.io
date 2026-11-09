@@ -143,9 +143,9 @@ S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_
 E =\frac{|\vec p|^2 c}{2\,m\,c},
 $$
 
-whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_\eta S_\eta(x_k)$, and each $S_\eta$ obeys
+whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_\eta S_\eta(x_\eta)$, and each $S_\eta$ obeys
 
-$$\frac{1}{2\,m}\left(\frac{dS_\eta}{dx_k}\right)^2 + V_\eta(x_k) = E_\eta,
+$$\frac{1}{2\,m}\left(\frac{dS_\eta}{dx_\eta}\right)^2 + V_\eta(x_\eta) = E_\eta,
 \qquad
 \sum_\eta  E_\eta = E ,
 $$
@@ -153,7 +153,7 @@ $$
 so that
 
 $$
-S_\eta(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_\eta - V_\eta(\zeta)\right)}\;d\zeta .
+S_\eta(x_\eta) = \pm\int^{x_\eta}\sqrt{2m\left(E_\eta - V_\eta(\zeta)\right)}\;d\zeta .
 $$
 
 The signs are the two directions of motion, and the biquaternion-norm interpretation applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_\eta = V_\eta$ are where the radicand vanishes and the two branches meet.

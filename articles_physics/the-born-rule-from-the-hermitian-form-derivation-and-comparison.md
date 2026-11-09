@@ -261,7 +261,7 @@ $$
 
 Each is an effect, they sum to $e_t$, and no two are orthogonal; the probabilities are $p_\eta=\tfrac13(1+\vec u_\eta\cdot\vec r)$ with $\sum_\eta p_\eta=1$. The normalised Hermitian form thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
 
-The normalised Hermitian form gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde M_{\mathrm{kraus},i}$ with $\sum_i\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2\eta}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
+The normalised Hermitian form gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde M_{\mathrm{kraus},i}$ with $\sum_i\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
 
 ## Comparison with the Hilbert-Space Statement
 

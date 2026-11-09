@@ -313,7 +313,7 @@ $$
 $$
 with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nu E_\mu + \mu H_\nu H_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Multiplying the time column by $i^2=-1$ gives the symmetric standard tensor, $T_{00} = W$, $T_{0j} = T_{j0} = \frac{1}{c}S_j$, $T_{j\eta} = -\sigma_{j\eta}$.
 
-The tensor is traceless, $\sum_\mu\Pi_{\mu\mu} = -W - \sum_\eta\sigma_{\eta\eta} = 0$, and it is conserved: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\eta} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\mu\nu}\propto k_{\Phi,\mu} k_{\Phi,\nu}$.
+The tensor is traceless, $\sum_\mu\Pi_{\mu\mu} = -W - \sum_\eta\sigma_{\eta\eta} = 0$, and it is conserved: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\eta} = -(\rho\vec E + \vec J\times\vec B)_\eta$, equivalently $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\mu\nu}\propto k_{\Phi,\mu} k_{\Phi,\nu}$.
 
 The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W_{\Psi} = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W_{\Psi} = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial R_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial r'_t\,W$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{B}_{\Psi}$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 
@@ -339,7 +339,7 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu}$ | Divergence of the energy–momentum tensor |
 | $T_{\mu\nu}$ | Symmetric energy–momentum tensor, $\Pi$ with its time column multiplied by $i^2$ |
 | $\delta_{\mu\nu} = (1,1,1,1)$ | The unit metric, the one metric of the series |
-| $f_0 = -\frac{1}{c}\vec E\cdot\vec J$, $f_k = (\rho\vec E+\vec J\times\vec B)_k$ | Four-force density, lower components |
+| $f_0 = -\frac{1}{c}\vec E\cdot\vec J$, $f_\eta = (\rho\vec E+\vec J\times\vec B)_\eta$ | Four-force density, lower components |
 | $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural}$ | Biquaternion norm (vanishes for a null field) |
 | $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})$ | Trace formula |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

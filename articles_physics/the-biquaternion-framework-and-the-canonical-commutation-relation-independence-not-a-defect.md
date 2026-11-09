@@ -205,7 +205,7 @@ The claim must not be overread, and the following are not asserted.
 | Finite Weyl pair at $N>2$ | Outside $\mathbb{B}$; requires $M_N(\mathbb{C})$ |
 | Canonical relation as an axiom | Postulated, not derived; its consequences are tested |
 | First half, $[r_j,p_\eta+f_\eta(\vec r)]=\frac{m\,c\,i}{k_m}\delta_{j\eta}$ | Blind to every shift by a function of position, gradient or not; carries no field |
-| Second half, $[p_j+f_j,p_\eta+f_k]=\frac{m\,c\,i}{k_m}(\partial_kf_j-\partial_jf_k)$ | Not blind; vanishes for gradients and equals the field strength for minimal coupling |
+| Second half, $[p_j+f_j,p_\eta+f_\eta]=\frac{m\,c\,i}{k_m}(\partial_\eta f_j-\partial_jf_k)$ | Not blind; vanishes for gradients and equals the field strength for minimal coupling |
 | Field strength as an algebra element | Central multiple of $e_t$, so nameable in $\mathbb{B}$; not generable, since the trace theorem forbids the pair |
 | Nature's realisation of the relation at all scales | Not established by the framework; an empirical question the framework cannot address |
 

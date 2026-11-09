@@ -153,7 +153,7 @@ $$
 
 and the massive equation stays the pair above. The second-order consequence is the d'Alembertian $\Box$ of *Operator and Calculus Conventions*, §*The Gradient*.
 
-The square of the gradient is not that operator. $e_t$ commutes with the three spatial units, so the mixed derivatives survive: on a plane wave, where the symbol of the gradient is $k_{t}^{\prime}e_t-i\vec k_\Phi$ with $\vec k_\Phi=\sum_\eta\vec e_\eta k_k$,
+The square of the gradient is not that operator. $e_t$ commutes with the three spatial units, so the mixed derivatives survive: on a plane wave, where the symbol of the gradient is $k_{t}^{\prime}e_t-i\vec k_\Phi$ with $\vec k_\Phi=\sum_\eta\vec e_\eta k_{\Phi\eta}$,
 
 $$
 (k_{t}^{\prime}e_t-i\vec k_\Phi)^{2}=(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^{2})e_t-2ik_{t}^{\prime}\vec k_\Phi,

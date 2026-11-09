@@ -117,7 +117,7 @@ Both the eigenvalue relation and the circular completeness relation were checked
 
 ## Helicity as an Observable in the Informational Sector
 
-The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, the spin-one carrier is the imaginary quaternions under the adjoint action, and its spin is $s=1$: the rotation generators are the real pure quaternions $\vec e_\eta\in\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$, acting by $\mathrm{ad}_{\vec e_\et}a/2 = \vec e_\eta\times$ (the angular-momentum article normalizes the same generators as $g_\eta=-\tfrac12 \vec e_\eta$, so its generator is $-\vec e_\eta/2$ where this section uses $\vec e_\eta$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\frac{m\,c}{2\,k_m}i\vec e_\eta$ in the angular-momentum article. The helicity observable is therefore
+The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, the spin-one carrier is the imaginary quaternions under the adjoint action, and its spin is $s=1$: the rotation generators are the real pure quaternions $\vec e_\eta\in\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$, acting by $\mathrm{ad}_{\vec e_\eta}a/2 = \vec e_\eta\times$ (the angular-momentum article normalizes the same generators as $g_\eta=-\tfrac12 \vec e_\eta$, so its generator is $-\vec e_\eta/2$ where this section uses $\vec e_\eta$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\frac{m\,c}{2\,k_m}i\vec e_\eta$ in the angular-momentum article. The helicity observable is therefore
 
 $$
 \lambda = \frac{i}{2}\,\mathrm{ad}_{\vec u_\Phi} = i\,\mathrm{Vect}(\vec u_\Phi\,\cdot\,) = \vec u_\Phi\cdot\vec S,

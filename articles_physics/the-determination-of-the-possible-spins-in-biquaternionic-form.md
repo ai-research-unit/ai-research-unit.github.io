@@ -118,7 +118,7 @@ $$
 
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.
 
-**The operators.** With $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_\et}a$,
+**The operators.** With $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_\eta}a$,
 
 $$
 \tilde S_{\Psi,\mathrm{adj}}^2=2\hbar^2\operatorname{id}_V,\qquad
@@ -231,7 +231,7 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
 | $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$ | The spin-half operators |
-| $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_\et}a$ | The spin-one generators |
+| $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_\eta}a$ | The spin-one generators |
 | $C=\tilde S_{\Psi,\mathrm{adj}}^2$ | The Casimir, $\sum_\eta(\tilde S_{\Psi,\mathrm{adj},\eta})^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |

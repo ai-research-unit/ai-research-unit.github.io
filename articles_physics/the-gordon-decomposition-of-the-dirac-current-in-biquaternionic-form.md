@@ -115,7 +115,7 @@ $$
 j_0=\operatorname{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\big)=\lvert\tilde{Ξ}_{\mathrm{sp},t}\rvert^2+\lvert\tilde{Ξ}_{\mathrm{sp},x}\rvert^2+\lvert\tilde{Ξ}_{\mathrm{sp},y}\rvert^2+\lvert\tilde{Ξ}_{\mathrm{sp},z}\rvert^2 .
 $$
 
-That is why the density is positive rather than a sign of the frame. The three spatial components are $j_k=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. The index $\mu$ labels the four generators; it is not the index of one object inside the algebra, and the four components are four pairings rather than four slots of a single element. For a solution the four are real, and $j_0$ is positive.
+That is why the density is positive rather than a sign of the frame. The three spatial components are $j_\eta=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. The index $\mu$ labels the four generators; it is not the index of one object inside the algebra, and the four components are four pairings rather than four slots of a single element. For a solution the four are real, and $j_0$ is positive.
 
 ## The Identity
 

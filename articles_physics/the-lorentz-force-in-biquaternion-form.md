@@ -72,7 +72,7 @@ $$
 that is, $F_{0\eta} = iE_\eta/c$ and $F_{j\eta} = \epsilon_{j\eta l}B_l$. The time component of the contraction is
 
 $$
-K_0 = ϙ\,F_{0\eta}u_k = ϙ\,\frac{iE_\eta}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
+K_0 = ϙ\,F_{0\eta}u_\eta = ϙ\,\frac{iE_\eta}{c}\,\gamma v_\eta = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
 $$
 
 and the spatial components are
