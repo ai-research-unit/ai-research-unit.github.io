@@ -23,9 +23,9 @@ with $\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde
 
 $$
 \tilde U(R)\,T^{(k)}_\mu\,\tilde U(R)^\dagger
-=\sum_{\mu_2=-k}^{k}\mathcal{D}^{(k)}_{\mu_2\mu}(R)\,T^{(k)}_{\mu_2},
+=\sum_{\mu_2=-\eta}^{k}\mathcal{D}^{(k)}_{\mu_2\mu}(R)\,T^{(k)}_{\mu_2},
 \qquad
-\tilde U(R)=\exp\!\left(-\frac{k_m\,i}{m\,c}\theta\,\vec u_k\tilde S_{\Psi,\mathrm{tot},\eta}\right),
+\tilde U(R)=\exp\!\left(-\frac{k_m\,i}{m\,c}\theta\,\vec u_\eta\tilde S_{\Psi,\mathrm{tot},\eta}\right),
 $$
 
 where $\mathcal{D}^{(k)}$ is the $(2k+1)$-dimensional rotation matrix of spin $k$. A **scalar operator** is a rank-$0$ tensor operator, $[\tilde S_{\Psi,\mathrm{tot},\eta},T^{(0)}]=0$; a **vector operator** is a rank-$1$ tensor operator, with $[T_i,\tilde S_{\Psi,\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,T_{\eta}}{k_m}$ as its defining relation.

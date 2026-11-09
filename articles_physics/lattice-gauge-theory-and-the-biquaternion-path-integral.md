@@ -166,9 +166,9 @@ $$
 \qquad
 \int dU\,\tilde U_{ij}=0,
 \qquad
-\int dU\,\tilde U_{ij}\tilde U_{kl}=0\ \ (N\ge3),
+\int dU\,\tilde U_{ij}\tilde U_{\eta l}=0\ \ (N\ge3),
 \qquad
-\int dU\,\tilde U_{ij}\tilde U^\dagger_{kl}=\frac{1}{N}\delta_{il}\delta_{j\eta},
+\int dU\,\tilde U_{ij}\tilde U^\dagger_{\eta l}=\frac{1}{N}\delta_{il}\delta_{j\eta},
 $$
 the last of which is the statement that only a link and its conjugate, paired between a fundamental and an antifundamental index, contribute. The third identity is the one that distinguishes the groups: for $N\ge3$ the antisymmetric square of the fundamental contains no singlet and the two-fundamental integral vanishes, whereas for $N=2$ the singlet $\epsilon_{i\eta}\epsilon_{jl}$ makes it nonzero and supplies the additional contribution responsible for the real-fundamental special case below. The consequence is that the strong-coupling expansion is a **tiling expansion**: a Wilson loop receives contributions from the plaquettes that tile its interior, and the leading contribution is the tiling of smallest area.
 

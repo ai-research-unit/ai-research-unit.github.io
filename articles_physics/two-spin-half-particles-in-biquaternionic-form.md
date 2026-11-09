@@ -42,10 +42,10 @@ The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\m
 A state of the pair is a Hermitian, positive element of $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Sc}=2^{-2}$ (trace one in the $4\times4$ image), and an observable is a Hermitian element. The pure product states are the idempotents
 
 $$
-\tilde\Pi(\vec u_m)\otimes \tilde\Pi(\vec u)=\tfrac{1}{4}\left(e_t\otimes e_t+i\vec u_{m,k}\vec e_\eta\otimes e_t+i e_t\otimes\vec u_le_l-\vec u_{m,k}\vec u_l\,\vec e_\eta\otimes e_l\right),
+\tilde\Pi(\vec u_m)\otimes \tilde\Pi(\vec u)=\tfrac{1}{4}\left(e_t\otimes e_t+i\vec u_{m,\eta}\vec e_\eta\otimes e_t+i e_t\otimes\vec u_le_l-\vec u_{m,\eta}\vec u_l\,\vec e_\eta\otimes e_l\right),
 $$
 
-where $\tilde\Pi(\vec u_m)=\tfrac12(e_t+i\vec u_{m,k}\vec e_\eta)$ is a one-particle idempotent. The **partial traces** are
+where $\tilde\Pi(\vec u_m)=\tfrac12(e_t+i\vec u_{m,\eta}\vec e_\eta)$ is a one-particle idempotent. The **partial traces** are
 
 $$
 \mathrm{Tr}_2(x\otimes y)=x\,\mathrm{Tr}_\mathbb{B}(y),\qquad

@@ -30,9 +30,9 @@ and, for a nonzero field, these force the dispersion relation
 $$
 \vec k_\Phi^2 = \omega^2\epsilon\mu = \frac{\omega^2}{c^2}
 $$
-and then $\vec H_0 = Z^{-1}\,\vec u_k\times\vec E_0$, with $\vec u_k = \vec k_\Phi/|\vec k_\Phi|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
+and then $\vec H_0 = Z^{-1}\,\vec u_\eta\times\vec E_0$, with $\vec u_\eta = \vec k_\Phi/|\vec k_\Phi|$. The amplitude satisfies $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\,\vec E_0$ and $-\sqrt{\mu}\,\vec H_0$ have equal magnitude, and the field-strength amplitude is null,
 $$
-\langle\tilde{F}_0\rangle_{\natural} = \sum_{\eta=1}^{3}(F_{tk})^2 = 0,
+\langle\tilde{F}_0\rangle_{\natural} = \sum_{\eta=1}^{3}(F_{t\eta})^2 = 0,
 $$
 so a free plane wave in a medium is $N$-degenerate, a zero divisor of $\mathbb{B}$, exactly as the parent states.
 
@@ -60,7 +60,7 @@ using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial 
 $$
 \tilde{\nabla}\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k_\Phi\right)\tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
 \qquad
-\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z .
+\vec k_\Phi = k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z .
 $$
 The bracket is $i\tilde P_{\Phi}$, where
 $$
@@ -75,7 +75,7 @@ $$
 \boxed{\;\tilde P_{\Phi}\,\tilde{F}_0 = 0\;}.
 $$
 
-**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{tk}\vec e_\eta$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec k_\Phi\tilde{F}_0 = -\vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0$. Thus
+**Solution (b).** Write $\tilde{F}_0 = F_{tx}\vec e_x + F_{ty}\vec e_y + F_{tz}\vec e_z$. Because $\tilde P_{\Phi}$ has a scalar part and $\tilde{F}_0$ is a pure vector, the product separates by parts. For a scalar $\kappa$ and a vector $\vec q$, $\kappa\tilde{F}_0 = \kappa F_{t\eta}\vec e_\eta$ distributes over components, while the vector part of $\tilde P_{\Phi}$ multiplies by the quaternion rule $\vec k_\Phi\tilde{F}_0 = -\vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0$. Thus
 $$
 \tilde P_{\Phi}\tilde{F}_0 = \frac{i\omega}{c}\,\tilde{F}_0 - \vec k_\Phi\cdot\tilde{F}_0 + \vec k_\Phi\times\tilde{F}_0 .
 $$
@@ -108,11 +108,11 @@ $$
 $$
 for a nonzero field. This is the medium dispersion relation, and it is a consequence of the annihilation condition, not an extra assumption.
 
-**Solution (c).** From $\vec k_\Phi\times\vec E_0 = \omega\mu\vec H_0$ and $\vec k_\Phi = k_\Phi\vec u_k$ with $k_\Phi = \omega/c$,
+**Solution (c).** From $\vec k_\Phi\times\vec E_0 = \omega\mu\vec H_0$ and $\vec k_\Phi = k_\Phi\vec u_\eta$ with $k_\Phi = \omega/c$,
 $$
-\vec H_0 = \frac{1}{\omega\mu}\,\vec k_\Phi\times\vec E_0 = \frac{k_\Phi}{\omega\mu}\,\vec u_k\times\vec E_0 = \frac{1}{Z}\,\vec u_k\times\vec E_0,
+\vec H_0 = \frac{1}{\omega\mu}\,\vec k_\Phi\times\vec E_0 = \frac{k_\Phi}{\omega\mu}\,\vec u_\eta\times\vec E_0 = \frac{1}{Z}\,\vec u_\eta\times\vec E_0,
 $$
-since $\frac{k_\Phi}{\omega\mu} = \frac{\sqrt{\epsilon\mu}}{\mu} = \sqrt{\frac{\epsilon}{\mu}} = \frac{1}{Z}$. Because $\vec E_0$ is transverse to the unit vector $\vec u_k$, the cross product has the same modulus: $|\vec u_k\times\vec E_0| = |\vec E_0|$. Hence
+since $\frac{k_\Phi}{\omega\mu} = \frac{\sqrt{\epsilon\mu}}{\mu} = \sqrt{\frac{\epsilon}{\mu}} = \frac{1}{Z}$. Because $\vec E_0$ is transverse to the unit vector $\vec u_\eta$, the cross product has the same modulus: $|\vec u_\eta\times\vec E_0| = |\vec E_0|$. Hence
 $$
 |\vec H_0| = \frac{1}{Z}|\vec E_0|,
 \qquad
@@ -122,9 +122,9 @@ because $\frac{\mu}{Z} = \mu\sqrt{\frac{\epsilon}{\mu}} = \sqrt{\epsilon\mu} = \
 $$
 |\vec E_0| = Z\,|\vec H_0| = c\,|\vec B_0|,
 $$
-which is the parent's amplitude statement, now derived. The last relation also shows $\vec E_0\cdot\vec B_0 = 0$: since $\vec B_0 = \mu\vec H_0 = \frac{1}{c}\vec u_k\times\vec E_0$,
+which is the parent's amplitude statement, now derived. The last relation also shows $\vec E_0\cdot\vec B_0 = 0$: since $\vec B_0 = \mu\vec H_0 = \frac{1}{c}\vec u_\eta\times\vec E_0$,
 $$
-\vec E_0\cdot\vec B_0 = \frac{1}{c}\,\vec E_0\cdot(\vec u_k\times\vec E_0) = 0 .
+\vec E_0\cdot\vec B_0 = \frac{1}{c}\,\vec E_0\cdot(\vec u_\eta\times\vec E_0) = 0 .
 $$
 So both classical invariants of the amplitude vanish, $I_1 = \vec E_0^2 - c^2\vec B_0^2 = 0$ and $I_2 = \vec E_0\cdot\vec B_0 = 0$. That is the statement whose algebraic form is the next problem.
 
@@ -132,29 +132,29 @@ So both classical invariants of the amplitude vanish, $I_1 = \vec E_0^2 - c^2\ve
 
 **Statement.** (a) Show that the field-strength amplitude is null, $\langle\tilde{F}_0\rangle_{\natural} = 0$, hence that $\tilde{F}_0$ is $N$-degenerate, a zero divisor of $\mathbb{B}$. (b) Show that $\tilde P_{\Phi}$ is itself null and that it annihilates $\tilde{F}_0$ from the left. (c) Show by contrast that a standing wave in the same medium is not null, so that nullness is a property of the single running plane wave rather than of the Maxwell field in general.
 
-**Solution (a).** Factor out the electric half. From $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$,
+**Solution (a).** Factor out the electric half. From $\vec H_0 = Z^{-1}\vec u_\eta\times\vec E_0$,
 $$
--\sqrt{\mu}\,\vec H_0 = -\frac{\sqrt{\mu}}{Z}\,\vec u_k\times\vec E_0 = -\sqrt{\epsilon}\,\vec u_k\times\vec E_0 = i\sqrt{\epsilon}\left(i\,\vec u_k\times\vec E_0\right),
+-\sqrt{\mu}\,\vec H_0 = -\frac{\sqrt{\mu}}{Z}\,\vec u_\eta\times\vec E_0 = -\sqrt{\epsilon}\,\vec u_\eta\times\vec E_0 = i\sqrt{\epsilon}\left(i\,\vec u_\eta\times\vec E_0\right),
 $$
 because $\frac{\sqrt{\mu}}{Z} = \sqrt{\epsilon}$. Therefore
 $$
-\tilde{F}_0 = i\sqrt{\epsilon}\left(\vec E_0 + i\,\vec u_k\times\vec E_0\right) = i\sqrt{\epsilon}\,\vec N_0,
+\tilde{F}_0 = i\sqrt{\epsilon}\left(\vec E_0 + i\,\vec u_\eta\times\vec E_0\right) = i\sqrt{\epsilon}\,\vec N_0,
 \qquad
-\vec N_0 = \vec E_0 + i\,\vec u_k\times\vec E_0 ,
+\vec N_0 = \vec E_0 + i\,\vec u_\eta\times\vec E_0 ,
 $$
-which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the general plain bilinear form $\langle\tilde{F}_0\rangle_{\natural} = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_\eta F_{tk}^2$, and $\langle i\sqrt{\epsilon}\vec N_0\rangle_{\natural} = (i\sqrt{\epsilon})^2\vec N_0\cdot\vec N_0 = -\epsilon\,\vec N_0\cdot\vec N_0$. Expand the complex dot product:
+which is the parent's form of the amplitude. For a pure-vector biquaternion the biquaternion norm is the general plain bilinear form $\langle\tilde{F}_0\rangle_{\natural} = \tilde{F}_0\tilde{F}^{\natural}_0 = \sum_\eta F_{t\eta}^2$, and $\langle i\sqrt{\epsilon}\vec N_0\rangle_{\natural} = (i\sqrt{\epsilon})^2\vec N_0\cdot\vec N_0 = -\epsilon\,\vec N_0\cdot\vec N_0$. Expand the complex dot product:
 $$
-\vec N_0\cdot\vec N_0 = \vec E_0^2 - (\vec u_k\times\vec E_0)^2 + 2i\,\vec E_0\cdot(\vec u_k\times\vec E_0).
+\vec N_0\cdot\vec N_0 = \vec E_0^2 - (\vec u_\eta\times\vec E_0)^2 + 2i\,\vec E_0\cdot(\vec u_\eta\times\vec E_0).
 $$
-The last term vanishes identically, and the first two cancel because for a unit $\vec u_k$ and a transverse $\vec E_0$,
+The last term vanishes identically, and the first two cancel because for a unit $\vec u_\eta$ and a transverse $\vec E_0$,
 $$
-(\vec u_k\times\vec E_0)^2 = (\vec u_k\cdot\vec u_k)\,\vec E_0^2 - (\vec u_k\cdot\vec E_0)^2 = \vec E_0^2,
+(\vec u_\eta\times\vec E_0)^2 = (\vec u_\eta\cdot\vec u_\eta)\,\vec E_0^2 - (\vec u_\eta\cdot\vec E_0)^2 = \vec E_0^2,
 $$
-using the complex-bilinear identity $(\vec a\times\vec b)\cdot(\vec a\times\vec c) = (\vec a\cdot\vec a)(\vec b\cdot\vec c) - (\vec a\cdot\vec c)(\vec a\cdot\vec b)$ with $\vec a = \vec u_k$, $\vec b = \vec c = \vec E_0$, and $\vec u_k\cdot\vec u_k = 1$, $\vec u_k\cdot\vec E_0 = 0$. Hence
+using the complex-bilinear identity $(\vec a\times\vec b)\cdot(\vec a\times\vec c) = (\vec a\cdot\vec a)(\vec b\cdot\vec c) - (\vec a\cdot\vec c)(\vec a\cdot\vec b)$ with $\vec a = \vec u_\eta$, $\vec b = \vec c = \vec E_0$, and $\vec u_\eta\cdot\vec u_\eta = 1$, $\vec u_\eta\cdot\vec E_0 = 0$. Hence
 $$
 \boxed{\;\langle\tilde{F}_0\rangle_{\natural} = -\epsilon\,\vec N_0\cdot\vec N_0 = 0\;}.
 $$
-Since $\tilde{F}_0$ is a pure vector, $\tilde{F}_0^2 = -\vec F_0\cdot\vec F_0 = -\langle\tilde{F}_0\rangle_{\natural} = 0$: the amplitude is **nilpotent**, and a nonzero nilpotent element of $\mathbb{B}$ is a zero divisor. This is the algebra of a nonzero null field, and it holds for every polarisation, linear or elliptical, because the argument used only $\vec u_k\cdot\vec E_0 = 0$.
+Since $\tilde{F}_0$ is a pure vector, $\tilde{F}_0^2 = -\vec F_0\cdot\vec F_0 = -\langle\tilde{F}_0\rangle_{\natural} = 0$: the amplitude is **nilpotent**, and a nonzero nilpotent element of $\mathbb{B}$ is a zero divisor. This is the algebra of a nonzero null field, and it holds for every polarisation, linear or elliptical, because the argument used only $\vec u_\eta\cdot\vec E_0 = 0$.
 
 **Solution (b).** The four-wavevector is null as well. Its biquaternion norm is
 $$
@@ -182,7 +182,7 @@ using $c^2\mu^2/Z^2 = c^2\epsilon\mu = 1$. This is not identically zero: at $k_\
 
 ## Problem 3: Energy, Flux, and the Energy–Momentum Biquaternion
 
-**Statement.** (a) For the running wave, compute the instantaneous energy density $W$ and Poynting vector $\vec S$ and show $\vec S = cW\vec u_k$. (b) Compute the time averages $\langle W\rangle$ and $\langle\vec S\rangle$ and verify $|\langle\vec S\rangle| = c\langle W\rangle$. (c) Compute the energy–momentum biquaternion $\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*}$ for the wave, and show that it is conserved, $\tilde{\nabla}\tilde{W}_{\Psi} = 0$, and that it is itself null.
+**Statement.** (a) For the running wave, compute the instantaneous energy density $W$ and Poynting vector $\vec S$ and show $\vec S = cW\vec u_\eta$. (b) Compute the time averages $\langle W\rangle$ and $\langle\vec S\rangle$ and verify $|\langle\vec S\rangle| = c\langle W\rangle$. (c) Compute the energy–momentum biquaternion $\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*}$ for the wave, and show that it is conserved, $\tilde{\nabla}\tilde{W}_{\Psi} = 0$, and that it is itself null.
 
 **Solution (a).** In terms of the real instantaneous fields,
 $$
@@ -190,7 +190,7 @@ W = \frac{1}{2}\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right),
 \qquad
 \vec S = \vec E\times\vec H.
 $$
-Because $\vec H = Z^{-1}\vec u_k\times\vec E$ holds instantaneously for a single running wave (the relation is linear with the real coefficient $Z^{-1}$ and the phase factors cancel), the field vectors are mutually orthogonal in the sense of real 3-vectors: $\vec H\perp\vec E$, $\vec H\perp\vec u_k$, and
+Because $\vec H = Z^{-1}\vec u_\eta\times\vec E$ holds instantaneously for a single running wave (the relation is linear with the real coefficient $Z^{-1}$ and the phase factors cancel), the field vectors are mutually orthogonal in the sense of real 3-vectors: $\vec H\perp\vec E$, $\vec H\perp\vec u_\eta$, and
 $$
 |\vec H| = \frac{1}{Z}|\vec E|,
 \qquad
@@ -198,9 +198,9 @@ $$
 $$
 Hence $\mu\vec H^2 = \frac{\mu}{Z^2}\vec E^2 = \epsilon\vec E^2$, so $W = \epsilon\vec E^2$, and
 $$
-\vec S = \vec E\times\vec H = \vec E\times\left(\frac{1}{Z}\vec u_k\times\vec E\right)
-= \frac{1}{Z}\left[\vec u_k\,\vec E^2 - \vec E(\vec E\cdot\vec u_k)\right]
-= \frac{\vec E^2}{Z}\,\vec u_k = \frac{W}{\epsilon Z}\,\vec u_k = cW\,\vec u_k,
+\vec S = \vec E\times\vec H = \vec E\times\left(\frac{1}{Z}\vec u_\eta\times\vec E\right)
+= \frac{1}{Z}\left[\vec u_\eta\,\vec E^2 - \vec E(\vec E\cdot\vec u_\eta)\right]
+= \frac{\vec E^2}{Z}\,\vec u_\eta = \frac{W}{\epsilon Z}\,\vec u_\eta = cW\,\vec u_\eta,
 $$
 using $\epsilon Z = \epsilon\sqrt{\mu/\epsilon} = \sqrt{\epsilon\mu} = 1/c$. So the energy flows along the wavevector with speed $c$, and $|\vec S| = cW$ at every instant.
 
@@ -210,13 +210,13 @@ $$
 \qquad
 \langle\vec S\rangle = \frac{1}{2}\,\mathrm{Re}\!\left(\vec E_0\times\vec H_0^*\right).
 $$
-The first follows from $\langle\vec E^2\rangle = \frac{1}{2}|\vec E_0|^2$ and the analogous magnetic average. For the second, substitute $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$:
+The first follows from $\langle\vec E^2\rangle = \frac{1}{2}|\vec E_0|^2$ and the analogous magnetic average. For the second, substitute $\vec H_0 = Z^{-1}\vec u_\eta\times\vec E_0$:
 $$
-\vec E_0\times\vec H_0^* = \frac{1}{Z}\,\vec E_0\times\left(\vec u_k\times\vec E_0^*\right)
-= \frac{1}{Z}\left[\vec u_k\,(\vec E_0\cdot\vec E_0^*) - \vec E_0^*(\vec E_0\cdot\vec u_k)\right]
-= \frac{|\vec E_0|^2}{Z}\,\vec u_k,
+\vec E_0\times\vec H_0^* = \frac{1}{Z}\,\vec E_0\times\left(\vec u_\eta\times\vec E_0^*\right)
+= \frac{1}{Z}\left[\vec u_\eta\,(\vec E_0\cdot\vec E_0^*) - \vec E_0^*(\vec E_0\cdot\vec u_\eta)\right]
+= \frac{|\vec E_0|^2}{Z}\,\vec u_\eta,
 $$
-which is already real, so $\langle\vec S\rangle = \frac{|\vec E_0|^2}{2Z}\vec u_k$. Meanwhile
+which is already real, so $\langle\vec S\rangle = \frac{|\vec E_0|^2}{2Z}\vec u_\eta$. Meanwhile
 $$
 \langle W\rangle = \frac{1}{4}\left(\epsilon|\vec E_0|^2 + \mu\frac{|\vec E_0|^2}{Z^2}\right)
 = \frac{|\vec E_0|^2}{4}\left(\epsilon + \frac{\mu}{Z^2}\right)
@@ -224,29 +224,29 @@ $$
 $$
 because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\epsilon|\vec E_0|^2}{2} = \frac{|\vec E_0|^2}{2Z} = |\langle\vec S\rangle|$, since $c\epsilon = 1/Z$. This verifies the parent's relation $|\langle\vec S\rangle| = c\langle W\rangle$.
 
-**Solution (c).** The energy–momentum biquaternion is the halved Hermitian form. Substituting $\vec S = cW\vec u_k$ into the general identity $\tilde{F}\tilde{F}^{*} = 2We_t + \frac{2i}{c}\vec S$ gives
+**Solution (c).** The energy–momentum biquaternion is the halved Hermitian form. Substituting $\vec S = cW\vec u_\eta$ into the general identity $\tilde{F}\tilde{F}^{*} = 2We_t + \frac{2i}{c}\vec S$ gives
 $$
-\boxed{\;\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_k\right)\;}.
+\boxed{\;\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W\left(e_t + i\vec u_\eta\right)\;}.
 $$
-This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_k$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}_{\Psi}$, write $\theta_{\mathrm{pha}} = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P_{\Phi}$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P_{\Phi}$. Since $e_t + i\vec u_k$ is constant,
+This is an element of $\mathbb{B}_{\Psi}$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\vec u_\eta$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}_{\Psi}$, write $\theta_{\mathrm{pha}} = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $W = W(\theta_{\mathrm{pha}})$, the general form, which reduces to $W = W_0\cos^2\theta_{\mathrm{pha}}$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}$, with $W_{\mathrm{pha},\theta} = \partial/\partial\theta_{\mathrm{pha}}\,W$ and $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\theta_{\mathrm{pha}})$, the exponentials $\exp(\pm 2i\theta_{\mathrm{pha}})$ are eigenfunctions with eigenvalues $\pm 2i\tilde P_{\Phi}$, and their combination reproduces $W_{\mathrm{pha},\theta}\tilde P_{\Phi}$. Since $e_t + i\vec u_\eta$ is constant,
 $$
-\tilde{\nabla}\tilde{W}_{\Psi} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_k\right)
-= W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}\left(e_t + i\vec u_k\right).
+\tilde{\nabla}\tilde{W}_{\Psi} = \left(\tilde{\nabla}W\right)\left(e_t + i\vec u_\eta\right)
+= W_{\mathrm{pha},\theta}\,\tilde P_{\Phi}\left(e_t + i\vec u_\eta\right).
 $$
-Evaluating the product with $\vec k_\Phi = k_\Phi\vec u_k$, $k_\Phi = \omega/c$, and $\vec u_k^2 = -e_t$:
+Evaluating the product with $\vec k_\Phi = k_\Phi\vec u_\eta$, $k_\Phi = \omega/c$, and $\vec u_\eta^2 = -e_t$:
 $$
-\tilde P_{\Phi}\left(e_t + i\vec u_k\right)
-= \left(\frac{i\omega}{c}e_t + \vec k_\Phi\right)\left(e_t + i\vec u_k\right)
-= \frac{i\omega}{c}e_t - \frac{\omega}{c}\vec u_k + \vec k_\Phi + i\,\vec k_\Phi\vec u_k
-= i\left(\frac{\omega}{c} - k_\Phi\right)e_t + \left(\vec k_\Phi - \frac{\omega}{c}\vec u_k\right) = 0,
+\tilde P_{\Phi}\left(e_t + i\vec u_\eta\right)
+= \left(\frac{i\omega}{c}e_t + \vec k_\Phi\right)\left(e_t + i\vec u_\eta\right)
+= \frac{i\omega}{c}e_t - \frac{\omega}{c}\vec u_\eta + \vec k_\Phi + i\,\vec k_\Phi\vec u_\eta
+= i\left(\frac{\omega}{c} - k_\Phi\right)e_t + \left(\vec k_\Phi - \frac{\omega}{c}\vec u_\eta\right) = 0,
 $$
-using $\vec k_\Phi\vec u_k = -k_\Phi e_t$. So $\tilde{\nabla}\tilde{W}_{\Psi} = 0$: the energy–momentum biquaternion of a free plane wave is conserved, which is the source-free case of the parent's law $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$ with $\tilde{\mathcal F} = 0$.
+using $\vec k_\Phi\vec u_\eta = -k_\Phi e_t$. So $\tilde{\nabla}\tilde{W}_{\Psi} = 0$: the energy–momentum biquaternion of a free plane wave is conserved, which is the source-free case of the parent's law $\tilde{\nabla}\tilde{W}_{\Psi} = -\tilde{\mathcal F}$ with $\tilde{\mathcal F} = 0$.
 
 Finally, the biquaternion norm of $\tilde{W}_{\Psi}$ is
 $$
-\langle\tilde{W}_{\Psi}\rangle_{\natural} = W^2\left(1 + (i\vec u_k)^2\right) = W^2\left(1 - \vec u_k\cdot\vec u_k\right) = W^2\left(1 - 1\right) = 0 .
+\langle\tilde{W}_{\Psi}\rangle_{\natural} = W^2\left(1 + (i\vec u_\eta)^2\right) = W^2\left(1 - \vec u_\eta\cdot\vec u_\eta\right) = W^2\left(1 - 1\right) = 0 .
 $$
-So the energy–momentum biquaternion of the wave is itself a **zero divisor**, on the null cone of $\mathbb{B}_{\Psi}$. The wave is null in the field strength and null in its energy–momentum simultaneously, and this is a consequence of the single null direction $\vec u_k$ that the plane wave carries.
+So the energy–momentum biquaternion of the wave is itself a **zero divisor**, on the null cone of $\mathbb{B}_{\Psi}$. The wave is null in the field strength and null in its energy–momentum simultaneously, and this is a consequence of the single null direction $\vec u_\eta$ that the plane wave carries.
 
 ## Problem 4: Dispersion and the Spectral Complex Structure
 
@@ -274,7 +274,7 @@ $$
 $$
 an envelope $\cos(\Delta k_\Phi\,r_z-\Delta\omega\,r'_t/c)$ modulating the carrier. The envelope's speed is $\Delta\omega/\Delta k_\Phi$, which tends to $v_g = d\omega/dk_\Phi$ as $\Delta\omega\to0$. This shows that in a dispersive medium the physically transported energy moves at the group velocity, while the phase of the carrier moves at the phase velocity — a distinction the single-frequency statements of Problems 1–3 cannot display.
 
-**Solution (c).** In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k_\Phi^2 = \omega^2/c_0^2$, the impedance relation becomes $\vec H_0 = Z_0^{-1}\vec u_k\times\vec E_0$, the amplitude relation becomes $|\vec E_0| = Z_0|\vec H_0| = c_0|\vec B_0|$, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.
+**Solution (c).** In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k_\Phi^2 = \omega^2/c_0^2$, the impedance relation becomes $\vec H_0 = Z_0^{-1}\vec u_\eta\times\vec E_0$, the amplitude relation becomes $|\vec E_0| = Z_0|\vec H_0| = c_0|\vec B_0|$, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.
 
 ## Problem 5: The Monochromatic and Stationary Field
 
@@ -342,7 +342,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 **6. A wave packet and the group velocity.** Construct a normalised Gaussian superposition of plane waves around $\omega_0$ in a medium with a prescribed $n(\omega)$, compute the envelope motion to first order in the bandwidth, and check that it travels at $v_g$. Then ask whether the spectral family of embeddings $r'_t \mapsto i\,c(\omega)\,r'_t$ has any content beyond the bookkeeping of a family of distinct monochromatic problems.
 
-**7. The chiral medium and the two wavenumbers.** Replace the constitutive relations of Problem 1 by the Drude–Born–Fedorov form $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ of the parent's section *A Chiral Medium*. Show that a circularly polarized plane wave with $\vec u\times\vec E_0=-is\,\vec E_0$, $s=\pm1$, satisfies the two curl equations for the single wavenumber $k_\Phi^{s}=k_\Phi/(1-s k_\Phi\beta)$, so that the two handednesses carry the two refractive indices $n_s=1/(1-s\beta\omega/c)$, that is $k_\Phi^{s}=n_s\,\omega/c$, with $s=+1$ the branch $k_\Phi^-$ and $s=-1$ the branch $k_\Phi^+$ of *Maxwell’s Equations in Chiral Media*; the medium is then circularly birefringent; check that at $\beta=0$ the two branches collapse to Problem 1. Then diagonalize the system by setting $Ξ=\vec E/\sqrt{\mu}+i\vec H/\sqrt{\epsilon}$ and $\tilde{Ξ}_{\mathrm{sp}}=\vec E/\sqrt{\mu}-i\vec H/\sqrt{\epsilon}$: show that $Ξ$ and $\tilde{Ξ}_{\mathrm{sp}}$ are the field strength $\tilde F$ and its complex conjugate $\tilde F^{*}$ up to one constant, that they solve $(D_3-k_\Phi^-)Ξ=0$ and $(D_3+k_\Phi^+)\tilde{Ξ}_{\mathrm{sp}}=0$ with $k_\Phi^+=k_\Phi/(1+k_\Phi\beta)$, $k_\Phi^-=k_\Phi/(1-k_\Phi\beta)$, and that each is divergence-free and an eigenvector of the curl. Finally determine which of the plane-wave conclusions of Problems 1–3 survive the change of constitutive relations: the transversality conditions are unchanged, the nullness $\langle\tilde F_0\rangle_{\natural}=0$ survives for each circular polarization, and the impedance relation $\vec H_0=Z^{-1}\vec u_k\times\vec E_0$ is replaced by a handedness-dependent one.
+**7. The chiral medium and the two wavenumbers.** Replace the constitutive relations of Problem 1 by the Drude–Born–Fedorov form $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ of the parent's section *A Chiral Medium*. Show that a circularly polarized plane wave with $\vec u\times\vec E_0=-is\,\vec E_0$, $s=\pm1$, satisfies the two curl equations for the single wavenumber $k_\Phi^{s}=k_\Phi/(1-s k_\Phi\beta)$, so that the two handednesses carry the two refractive indices $n_s=1/(1-s\beta\omega/c)$, that is $k_\Phi^{s}=n_s\,\omega/c$, with $s=+1$ the branch $k_\Phi^-$ and $s=-1$ the branch $k_\Phi^+$ of *Maxwell’s Equations in Chiral Media*; the medium is then circularly birefringent; check that at $\beta=0$ the two branches collapse to Problem 1. Then diagonalize the system by setting $Ξ=\vec E/\sqrt{\mu}+i\vec H/\sqrt{\epsilon}$ and $\tilde{Ξ}_{\mathrm{sp}}=\vec E/\sqrt{\mu}-i\vec H/\sqrt{\epsilon}$: show that $Ξ$ and $\tilde{Ξ}_{\mathrm{sp}}$ are the field strength $\tilde F$ and its complex conjugate $\tilde F^{*}$ up to one constant, that they solve $(D_3-k_\Phi^-)Ξ=0$ and $(D_3+k_\Phi^+)\tilde{Ξ}_{\mathrm{sp}}=0$ with $k_\Phi^+=k_\Phi/(1+k_\Phi\beta)$, $k_\Phi^-=k_\Phi/(1-k_\Phi\beta)$, and that each is divergence-free and an eigenvector of the curl. Finally determine which of the plane-wave conclusions of Problems 1–3 survive the change of constitutive relations: the transversality conditions are unchanged, the nullness $\langle\tilde F_0\rangle_{\natural}=0$ survives for each circular polarization, and the impedance relation $\vec H_0=Z^{-1}\vec u_\eta\times\vec E_0$ is replaced by a handedness-dependent one.
 
 ## Summary
 
@@ -352,9 +352,9 @@ $$
 \qquad
 \vec k_\Phi\times\vec H_0 = -\omega\epsilon\,\vec E_0,
 $$
-from which the transversality conditions $\vec k_\Phi\cdot\vec E_0 = \vec k_\Phi\cdot\vec H_0 = 0$ and the dispersion relation $k_\Phi = \omega/c$ follow. The impedance relation $\vec H_0 = Z^{-1}\vec u_k\times\vec E_0$ gives $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\vec E_0$ and $-\sqrt{\mu}\vec H_0$ have equal magnitude, and the amplitude is the null combination $\tilde{F}_0 = i\sqrt{\epsilon}(\vec E_0 + i\vec u_k\times\vec E_0)$.
+from which the transversality conditions $\vec k_\Phi\cdot\vec E_0 = \vec k_\Phi\cdot\vec H_0 = 0$ and the dispersion relation $k_\Phi = \omega/c$ follow. The impedance relation $\vec H_0 = Z^{-1}\vec u_\eta\times\vec E_0$ gives $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$, the two normalised halves $i\sqrt{\epsilon}\vec E_0$ and $-\sqrt{\mu}\vec H_0$ have equal magnitude, and the amplitude is the null combination $\tilde{F}_0 = i\sqrt{\epsilon}(\vec E_0 + i\vec u_\eta\times\vec E_0)$.
 
-The amplitude is a zero divisor: $\langle\tilde{F}_0\rangle_{\natural} = -\epsilon\,\vec N_0\cdot\vec N_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde P_{\Phi}\tilde{F}_0 = 0$, with $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\vec S = cW\vec u_k$ and, on time average, $|\langle\vec S\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W}_{\Psi} = W(e_t + i\vec u_k)$, it is conserved, $\tilde{\nabla}\tilde{W}_{\Psi} = 0$, and it is itself null, $\langle\tilde{W}_{\Psi}\rangle_{\natural} = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement. Problem 5 extends the same complex vector to harmonic and static fields: the complex amplitude obeys a Helmholtz equation with the radiating kernel $\exp(ik_\Phi R)/R$, its static limit is the Poisson equation solved by Newton potentials, and throughout the medium enters only through $k_\Phi = \omega/c$ — the "single constant $c$" interpretation made concrete.
+The amplitude is a zero divisor: $\langle\tilde{F}_0\rangle_{\natural} = -\epsilon\,\vec N_0\cdot\vec N_0 = 0$ and $\tilde{F}_0^2 = 0$, and the null four-wavevector annihilates it, $\tilde P_{\Phi}\tilde{F}_0 = 0$, with $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$. A standing wave in the same medium is not null, so the nullness is specific to the single running plane wave. The energy density and flux satisfy $\vec S = cW\vec u_\eta$ and, on time average, $|\langle\vec S\rangle| = c\langle W\rangle$; the energy–momentum biquaternion is $\tilde{W}_{\Psi} = W(e_t + i\vec u_\eta)$, it is conserved, $\tilde{\nabla}\tilde{W}_{\Psi} = 0$, and it is itself null, $\langle\tilde{W}_{\Psi}\rangle_{\natural} = 0$. In a dispersive medium the temporal eigenvalue of the gradient is $-\omega/c(\omega)$, the phase velocity is $c(\omega)$, the group velocity is $c_0/(n + \omega\,dn/d\omega)$, and the vacuum limit $c\to c_0$, $Z\to Z_0$, $n\to1$ recovers every statement. Problem 5 extends the same complex vector to harmonic and static fields: the complex amplitude obeys a Helmholtz equation with the radiating kernel $\exp(ik_\Phi R)/R$, its static limit is the Poisson equation solved by Newton potentials, and throughout the medium enters only through $k_\Phi = \omega/c$ — the "single constant $c$" interpretation made concrete.
 
 The exercise confirms the parent's plane-wave results on cases the parent did not use, and it reports the parent's gaps rather than closing them: the conditions are derived here but asserted there; the absorbing case lies outside the real normalisation; the energy density used is non-dispersive; and the "Lorentz invariant" label of the notation table is inherited from the vacuum setting and is not established for a medium.
 
@@ -376,7 +376,7 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $Z = \sqrt{\mu/\epsilon}$, $Z_0$ | Wave impedance of the medium; in vacuum |
 | $n(\omega) = c_0/c(\omega)$ | Refractive index |
-| $\vec k_\Phi, \omega, \vec u_k = \vec k_\Phi/\lvert\vec k_\Phi\rvert$ | Wavevector, angular frequency, unit wavevector |
+| $\vec k_\Phi, \omega, \vec u_\eta = \vec k_\Phi/\lvert\vec k_\Phi\rvert$ | Wavevector, angular frequency, unit wavevector |
 | $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |
 | $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ | Complex current of the field equation |

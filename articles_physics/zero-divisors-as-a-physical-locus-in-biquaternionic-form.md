@@ -95,13 +95,13 @@ $$
 
 which is the threshold at which the non-relativistic kinetic description meets the relativistic energy scale. In this precise sense the locus is the momentum-space boundary of the non-relativistic theory: the theory is consistent on the spacelike side and touches the cone exactly where it is about to fail.
 
-It is worth recording what the locus is **not**. A classically forbidden region has an imaginary momentum, $\vec p=i\kappa\vec u$ with $\kappa$ real and $E$ real, and the on-shell element has
+It is worth recording what the locus is **not**. A classically forbidden region has an imaginary momentum, $\vec p=ip_{\Phi,\mathrm{ev}}\vec u$ with $p_{\Phi,\mathrm{ev}}$ real and $E$ real, and the on-shell element has
 
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{E^2}{c^2}+(i\kappa)^2=-\frac{E^2}{c^2}-\kappa^2<0 ,
+\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{E^2}{c^2}+(ip_{\Phi,\mathrm{ev}})^2=-\frac{E^2}{c^2}-p_{\Phi,\mathrm{ev}}^2<0 ,
 $$
 
-which is strictly timelike, not null. Tunnelling therefore does not put the particle on the zero divisor locus; the evanescent region sits well inside the timelike cone. Genuinely null momenta require complex components in more than one direction: for example $p_1=\kappa$, $p_2=i\kappa$, $p_3=0$ with $E=0$ gives $N=p_1^2+p_2^2=\kappa^2-\kappa^2=0$. Such complex null momenta are algebraic zero divisors, and they are not realised by a simple evanescent wave; they belong to the complex-momentum constructions of scattering theory, where they are the momenta of the Regge and geometric-optics descriptions. The physical locus, in the non-relativistic setting, is the real null shell at $p=2mc$ and the complex null cone of the more elaborate constructions, not the tunnelling momentum.
+which is strictly timelike, not null. Tunnelling therefore does not put the particle on the zero divisor locus; the evanescent region sits well inside the timelike cone. Genuinely null momenta require complex components in more than one direction: for example $p_1=p_{\Phi,\mathrm{ev}}$, $p_2=ip_{\Phi,\mathrm{ev}}$, $p_3=0$ with $E=0$ gives $N=p_1^2+p_2^2=p_{\Phi,\mathrm{ev}}^2-p_{\Phi,\mathrm{ev}}^2=0$. Such complex null momenta are algebraic zero divisors, and they are not realised by a simple evanescent wave; they belong to the complex-momentum constructions of scattering theory, where they are the momenta of the Regge and geometric-optics descriptions. The physical locus, in the non-relativistic setting, is the real null shell at $p=2mc$ and the complex null cone of the more elaborate constructions, not the tunnelling momentum.
 
 ## The Locus in Configuration Space
 

@@ -16,23 +16,23 @@ The findings are worth separating at the outset, because one of them is negative
 
 This section fixes the target. It is standard linearized gravity, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation.
 
-The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$ and the real coordinates $x_\mu=(r'_{t}, r_x, r_y, r_z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i r'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_1x_1+k_2x_2+k_3x_3$, not a sum of like components. The **trace-reversed** perturbation is
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{B}_{\Phi}$ and the real coordinates $x_\mu=(r'_{t}, r_x, r_y, r_z)$ of the material frame are those of *Frame and Metric Conventions*, and the biquaternionic d'Alembertian $\Box$ is that of *Operator and Calculus Conventions*. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$; the material interval is that form read on $Q_t=i r'_t$, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, and its one minus is the square of the $i$. The linearized metric is the flat interval plus the perturbation $h_{\mu\nu}$, with $|h_{\mu\nu}| \ll 1$, and every contraction below is written out in the real coordinates, where the minus on the time row is that one minus. A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_{\Phi x}x_1+k_{\Phi y}x_2+k_{\Phi z}x_3$, not a sum of like components. The **trace-reversed** perturbation is
 
 $$
-\bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0k} = h_{0k}, \qquad \bar{h}_{kl} = h_{kl} - \tfrac{1}{2}h\,\delta_{\eta l}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
+\bar{h}_{00} = h_{00} + \tfrac{1}{2}h, \qquad \bar{h}_{0\eta} = h_{0\eta}, \qquad \bar{h}_{\eta l} = h_{\eta l} - \tfrac{1}{2}h\,\delta_{\eta l}, \qquad \bar{h} = -\bar{h}_{00}+\bar{h}_{11}+\bar{h}_{22}+\bar{h}_{33} = -h,
 $$
 
-with $h = -h_{00}+h_{11}+h_{22}+h_{33}$, so that the operation is an involution up to sign, $h_{00} = \bar{h}_{00} + \tfrac{1}{2}\bar{h}$, $h_{0k}=\bar{h}_{0k}$ and $h_{kl} = \bar{h}_{kl} - \tfrac{1}{2}\bar{h}\,\delta_{\eta l}$. In these variables the linearized Einstein tensor is
+with $h = -h_{00}+h_{11}+h_{22}+h_{33}$, so that the operation is an involution up to sign, $h_{00} = \bar{h}_{00} + \tfrac{1}{2}\bar{h}$, $h_{0\eta}=\bar{h}_{0\eta}$ and $h_{\eta l} = \bar{h}_{\eta l} - \tfrac{1}{2}\bar{h}\,\delta_{\eta l}$. In these variables the linearized Einstein tensor is
 
 $$
 \begin{aligned}
 G_{00} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_0+\partial/\partial x_0\,\bar{D}_0-\Box\bar{h}_{00}+\bar{S}\Bigr),\\[2pt]
-G_{0k} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial x_\eta\,\bar{D}_0-\Box\bar{h}_{0k}\Bigr),\\[2pt]
-G_{kl} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{kl}-\delta_{\eta l}\bar{S}\Bigr),
+G_{0\eta} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial x_\eta\,\bar{D}_0-\Box\bar{h}_{0\eta}\Bigr),\\[2pt]
+G_{\eta l} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{\eta l}-\delta_{\eta l}\bar{S}\Bigr),
 \end{aligned}
 $$
 
-with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_{\eta=1}^{3}\partial/\partial x_\eta\bar{h}_{k\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\eta=1}^{3}(\partial^2/\partial x_0\partial x_\eta\bar{h}_{k0}+\partial^2/\partial x_\eta\partial x_0\bar{h}_{0k})+\sum_{k,l=1}^{3}\partial^2/\partial x_\eta\partial x_l\bar{h}_{lk}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_{\eta=1}^{3}\partial/\partial x_\eta\bar{h}_{\eta \nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_{\eta=1}^{3}(\partial^2/\partial x_0\partial x_\eta\bar{h}_{\eta0}+\partial^2/\partial x_\eta\partial x_0\bar{h}_{0\eta})+\sum_\eta,l=1}^{3}\partial^2/\partial x_\eta\partial x_l\bar{h}_{l\eta}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** condition is
 
@@ -79,8 +79,8 @@ and the trace-reversed perturbation changes by
 $$
 \begin{aligned}
 \bar{h}_{00} &\;\longmapsto\; \bar{h}_{00} - 2\partial/\partial x_0\zeta_0 - D,\\[2pt]
-\bar{h}_{0k} &\;\longmapsto\; \bar{h}_{0k} - \partial/\partial x_0\zeta_k - \partial/\partial x_\eta\zeta_0,\\[2pt]
-\bar{h}_{kl} &\;\longmapsto\; \bar{h}_{kl} - \partial/\partial x_\eta\zeta_l - \partial/\partial x_l\zeta_k + \delta_{\eta l}D,
+\bar{h}_{0\eta} &\;\longmapsto\; \bar{h}_{0\eta} - \partial/\partial x_0\zeta_k - \partial/\partial x_\eta\zeta_0,\\[2pt]
+\bar{h}_{\eta l} &\;\longmapsto\; \bar{h}_{\eta l} - \partial/\partial x_\eta\zeta_l - \partial/\partial x_l\zeta_k + \delta_{\eta l}D,
 \end{aligned}
 $$
 
@@ -140,7 +140,7 @@ $$
 -k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0 \qquad\text{and}\qquad -A_{00}+A_{11}+A_{22}+A_{33} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $(\omega/c)(r_z - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k_{\Phi,\mu} = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $(\omega/c)(r_z - r'_t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 
@@ -211,10 +211,10 @@ $$
 with the same traceless quadrupole moment. The power is quadratic in the **third** derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3r$,
 
 $$
-P = \frac{G}{5c^5}\left\langle \,d^3I_{ij}/d{r'_{t}}^3 d^3I_{ij}/d{r'_{t}}^3 - \tfrac{1}{3}\left(d^3I_{kk}/d{r'_{t}}^3\right)^2 \right\rangle,
+P = \frac{G}{5c^5}\left\langle \,d^3I_{ij}/d{r'_{t}}^3 d^3I_{ij}/d{r'_{t}}^3 - \tfrac{1}{3}\left(d^3I_{\eta \eta}/d{r'_{t}}^3\right)^2 \right\rangle,
 $$
 
-which reduces to the traceless form because $I_{ij} = \mathcal{Q}_{ij} + \tfrac13\delta_{ij}I_{kk}$.
+which reduces to the traceless form because $I_{ij} = \mathcal{Q}_{ij} + \tfrac13\delta_{ij}I_{\eta \eta}$.
 
 **The prefactor, verified on the binary.** The equal-mass circular binary is the standard check. Two masses $m$ in a circular orbit of radius $R$ (separation $d = 2R$) at angular frequency $\omega$ have the traceless quadrupole
 
@@ -306,7 +306,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 Gravitational radiation in the linearized theory has been written in the biquaternion framework, and each step has been identified as either framework content or transcribed standard theory.
 
-The trace-reversed perturbation $\bar{h}_{00} = h_{00}+\tfrac12h$ and $\bar{h}_{kl} = h_{kl}-\tfrac12h\,\delta_{\eta l}$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}_{\Phi}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\zeta_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
+The trace-reversed perturbation $\bar{h}_{00} = h_{00}+\tfrac12h$ and $\bar{h}_{\eta l} = h_{\eta l}-\tfrac12h\,\delta_{\eta l}$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}_{\Phi}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\zeta_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
 
 The framework's reach was drawn. It supplies the wave operator and its null cone; the carrier of the wave as an $\mathbb{B}_{\Phi}$-valued one-form; the gauge transformation whose residual part is the kernel of $\Box$ on $\mathbb{B}_{\Phi}$; the count $16 = 10 + 6$ and the removal of the four gauge directions from the ten; and the bivector packaging of the curvature, whose values lie in the complex pure-vector subspace and so in neither sector. It does not supply the dynamics that selects two of the six harmonic-gauge components: the framework has no natural handle on the polarization count, and the number two is inherited. The physical polarization amplitudes are exactly the components the algebra's natural single-biquaternion packaging annihilates, as is the traceless quadrupole moment, and the energy–momentum source is the rank-two object no single biquaternion carries. The quadrupole formula, and the coupling constant within it, are therefore transcribed rather than derived. The distinction between the electromagnetic field strength, which is a bivector outside $\mathbb{B}_{\Phi}$ despite the material potential it comes from, and the graviton, which is a symmetric rank-two object belonging to no sector at all, has been kept explicit; the two are not to be identified by the accident that both field strengths leave the material sector.
 
@@ -324,14 +324,14 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{B}_{\Phi}$, $Q_t=i r'_t$ and $Q_\eta=x_\eta$; $x_\mu=(r'_{t}, r_x, r_y, r_z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = -h_{00}+h_{11}+h_{22}+h_{33}$ | Metric perturbation and its trace |
-| $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0k}=h_{0k}$, $\bar{h}_{kl}=h_{kl}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$ | Trace-reversed perturbation |
+| $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0\eta}=h_{0\eta}$, $\bar{h}_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$ | Trace-reversed perturbation |
 | $\delta\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ | Frame perturbation carrying $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_{\Phi}_\mu,\varepsilon_\nu\rangle_{\natural}$ |
 | $\bar{\delta\tilde{E}_{\Phi}}_\mu = \delta\tilde{E}_{\Phi}_\mu - \tfrac14 h\,\varepsilon_\mu$ | Trace-reversed frame perturbation |
 | $\tilde Q_{\Phi,\mathrm d} \in \mathbb{B}_{\Phi}$ | Gauge four-vector, $\delta\tilde{E}_{\Phi}_\mu \mapsto \delta\tilde{E}_{\Phi}_\mu - \partial/\partial x_\mu\tilde Q_{\Phi,\mathrm d}$ |
 | $-\partial/\partial x_0\bar{h}_{0\nu}+\partial/\partial x_1\bar{h}_{1\nu}+\partial/\partial x_2\bar{h}_{2\nu}+\partial/\partial x_3\bar{h}_{3\nu} = 0$, $\Box\zeta_\nu = 0$ | Harmonic (Lorenz, de Donder) gauge and its residual gauge freedom |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$; $A_{xx} = -A_{yy}$, $A_{xy} = A_{yx}$ | Plane-wave amplitude; the plus and cross polarizations |
-| $k_\mu = (\omega/c)(1,0,0,1)$, $-k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0$ | Wave vector along $+z$ and its null condition |
+| $k_{\Phi,\mu} = (\omega/c)(1,0,0,1)$, $-k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0$ | Wave vector along $+z$ and its null condition |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$, $\mathrm{Ric}_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Riemann, Ricci, and Einstein tensors |
 | $\tilde{Q}_{3,\mu\nu} = \tfrac12\sum_{\rho,\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
 | $\mathcal{Q}_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3r$ | Traceless (reduced) quadrupole moment |

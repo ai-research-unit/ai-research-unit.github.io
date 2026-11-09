@@ -30,15 +30,15 @@ $$
 $$
 so that the electric and magnetic fields are the real and imaginary parts of the same quaternion. Transversality is the condition
 $$
-\vec u_k\cdot\vec\varepsilon = 0 ,
+\vec u_\eta\cdot\vec\varepsilon = 0 ,
 $$
 i.e. the polarization lies in the plane of the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction. Two real orthonormal vectors $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$ span that plane, and the **linear polarizations** are their real combinations. The **circular polarizations** are
 $$
 \varepsilon_{\mathrm{fop},\pm} = \frac{\varepsilon_{\mathrm{fop},1} \pm i\varepsilon_{\mathrm{fop},2}}{\sqrt{2}} ,
 $$
-complex combinations that lie in the complexification of the vector part of $\mathbb{B}$ but not in $\mathbb{B}_{\Phi}$ itself. Their defining algebraic property is that they diagonalise left multiplication by the propagation direction, taken as the real unit vector $\vec u_k$ along $\vec k_\Phi$:
+complex combinations that lie in the complexification of the vector part of $\mathbb{B}$ but not in $\mathbb{B}_{\Phi}$ itself. Their defining algebraic property is that they diagonalise left multiplication by the propagation direction, taken as the real unit vector $\vec u_\eta$ along $\vec k_\Phi$:
 $$
-\vec u_k\,\varepsilon_{\mathrm{fop},\pm} = \mp i\,\varepsilon_{\mathrm{fop},\pm} ,
+\vec u_\eta\,\varepsilon_{\mathrm{fop},\pm} = \mp i\,\varepsilon_{\mathrm{fop},\pm} ,
 $$
 and they are null and mutually normalised under the complex-bilinear dot product,
 $$
@@ -48,19 +48,19 @@ $$
 $$
 The two signs are the two helicities, the two senses of rotation about the propagation axis. The companion photon article draws the representation-theoretic consequences — the helicity operator, whose spectral values on the complexified vector part are $\{+1,0,-1\}$, and the fact that the polarization *states* are not idempotents of $\mathbb{B}_{\Psi}$ and are not elements of it, even though the helicity *observable* has its representative there. The operator is
 $$
-\lambda = \vec u_k\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_k} ,
+\lambda = \vec u_\eta\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_\eta} ,
 \qquad
-\lambda\varepsilon = \mathrm{Vect}\bigl(i\vec u_k\varepsilon\bigr) ,
+\lambda\varepsilon = \mathrm{Vect}\bigl(i\vec u_\eta\varepsilon\bigr) ,
 $$
-with the spin measured in units of $\hbar$ and the spin-one generators $\vec S_\eta = i\vec e_\eta$, so that the three expressions agree on the transverse plane; the identity $\tfrac{i}{2}\mathrm{ad}_{\vec u_k}\varepsilon = i\vec u_k\varepsilon$ holds because $\mathrm{ad}_{\vec u_k}\varepsilon = 2\vec u_k\varepsilon$ for a transverse $\varepsilon$. Its representative in $\mathbb{B}_{\Psi}$ is the element $i\vec u_k$: left multiplication by that element, followed by the vector part, has eigenvalues $\pm1$ on $\varepsilon_{\mathrm{fop},\pm}$ and annihilates the longitudinal direction. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
+with the spin measured in units of $\hbar$ and the spin-one generators $\vec S_\eta = i\vec e_\eta$, so that the three expressions agree on the transverse plane; the identity $\tfrac{i}{2}\mathrm{ad}_{\vec u_\eta}\varepsilon = i\vec u_\eta\varepsilon$ holds because $\mathrm{ad}_{\vec u_\eta}\varepsilon = 2\vec u_\eta\varepsilon$ for a transverse $\varepsilon$. Its representative in $\mathbb{B}_{\Psi}$ is the element $i\vec u_\eta$: left multiplication by that element, followed by the vector part, has eigenvalues $\pm1$ on $\varepsilon_{\mathrm{fop},\pm}$ and annihilates the longitudinal direction. Here the relation is used as the algebraic definition of circular polarization and as the reason the polarization sums are geometric.
 
 ### The polarization sum
 
 For any two orthonormal vectors spanning the transverse plane, the completeness relation is the transverse projector,
 $$
-\sum_{\lambda=1,2}\varepsilon_{\mathrm{fop},i}^{(\lambda)}\varepsilon_{\mathrm{fop},j}^{(\lambda)} = \delta_{ij} - \vec{u_k}_i\vec{u_k}_j ,
+\sum_{\lambda=1,2}\varepsilon_{\mathrm{fop},i}^{(\lambda)}\varepsilon_{\mathrm{fop},j}^{(\lambda)} = \delta_{ij} - \vec u_\eta_i\vec u_\eta_j ,
 $$
-and the circular pair obeys the same sum. In the framework this projector is native: the orthogonal complement of $\vec u_k$ inside the vector part of $\mathbb{B}_{\Phi}$ is defined by the algebra's own biquaternion norm, and the companion photon article checks the same identity on the rational directions $(3,4,0)/5$ and $(1,2,2)/3$.
+and the circular pair obeys the same sum. In the framework this projector is native: the orthogonal complement of $\vec u_\eta$ inside the vector part of $\mathbb{B}_{\Phi}$ is defined by the algebra's own biquaternion norm, and the companion photon article checks the same identity on the rational directions $(3,4,0)/5$ and $(1,2,2)/3$.
 
 ### The coherence biquaternion and the Stokes parameters
 
@@ -168,7 +168,7 @@ $$
 $$
 The identities were verified on six scattering angles: the ratio of the two amplitudes reproduced $(1-\cos\theta)/(1+\cos\theta)$ exactly, and the sum of their squares reproduced $(1+\cos^2\theta)/2$ to machine precision. The physical content is the forward **helicity conservation** of light scattering: at $\theta = 0$ the flip amplitude vanishes and the scattering preserves helicity, while at $\theta = \pi$ the roles reverse and only the flip amplitude survives. This is the algebraic counterpart of the statement that a circularly polarized wave scattered forward keeps its sense of rotation, and the self-dual split of the previous subsection is its structural basis: the conserving amplitude leaves the field in its own helicity half, and the flipping amplitude transfers it to the other.
 
-The two helicity amplitudes are not an extra structure imposed on the scattering; they are the two components of the polarization biquaternion in the basis that the algebra's multiplication by $\vec u_k$ diagonalises. The circular basis is the eigenbasis of that multiplication, the amplitudes are the pairings in that basis, and the helicity-conserving and helicity-flipping processes are the diagonal and off-diagonal entries. The angular functions $(1\pm\cos\theta)/2$ follow from the geometry of the transverse plane, i.e. from the biquaternion norm, and are the amplitudes of the two channels, whose squares are their weights.
+The two helicity amplitudes are not an extra structure imposed on the scattering; they are the two components of the polarization biquaternion in the basis that the algebra's multiplication by $\vec u_\eta$ diagonalises. The circular basis is the eigenbasis of that multiplication, the amplitudes are the pairings in that basis, and the helicity-conserving and helicity-flipping processes are the diagonal and off-diagonal entries. The angular functions $(1\pm\cos\theta)/2$ follow from the geometry of the transverse plane, i.e. from the biquaternion norm, and are the amplitudes of the two channels, whose squares are their weights.
 
 ### The unpolarized cross-section and its integral
 
@@ -240,7 +240,7 @@ The shift is one half of the kinematics; the other half is the recoil. In the la
 $$
 \tan\theta_{\mathrm{azm},e} = \frac{\omega_{\mathrm{out}}\sin\theta}{\omega - \omega_{\mathrm{out}}\cos\theta} ,
 $$
-which in the Thomson limit $\omega_{\mathrm{out}}\to\omega$ is $\theta_{\mathrm{azm},e} = 90^\circ - \theta/2$; so the electron and the scattered photon separate by $90^\circ+\theta/2$, verified at five angles, and the electron recoils at right angles to the incident direction only in the forward limit. The reconstruction is the numerical check of the previous subsection; what matters for the polarization algebra is that the electron recoils along $\vec u_k - \vec u_{\mathrm{out},k}$, in the scattering plane, while the axial direction of the spin asymmetry is the normal to that plane, $\vec u_k\times\vec u_{\mathrm{out},k}$. Both are material-sector vectors, so the spin asymmetry pairs two objects of the same sector. The electron's recoil is also what distinguishes the quantum from the classical problem: in the Thomson limit the recoil momentum is negligible and the electron remains effectively at rest, while in the Compton regime the recoil carries away the energy difference $\frac{m\,c\,(\omega - \omega_{\mathrm{out}})}{k_m}$, and this recoil is the physical origin of the dimensionless scale $x$.
+which in the Thomson limit $\omega_{\mathrm{out}}\to\omega$ is $\theta_{\mathrm{azm},e} = 90^\circ - \theta/2$; so the electron and the scattered photon separate by $90^\circ+\theta/2$, verified at five angles, and the electron recoils at right angles to the incident direction only in the forward limit. The reconstruction is the numerical check of the previous subsection; what matters for the polarization algebra is that the electron recoils along $\vec u_\eta - \vec u_{\mathrm{out},k}$, in the scattering plane, while the axial direction of the spin asymmetry is the normal to that plane, $\vec u_\eta\times\vec u_{\mathrm{out},k}$. Both are material-sector vectors, so the spin asymmetry pairs two objects of the same sector. The electron's recoil is also what distinguishes the quantum from the classical problem: in the Thomson limit the recoil momentum is negligible and the electron remains effectively at rest, while in the Compton regime the recoil carries away the energy difference $\frac{m\,c\,(\omega - \omega_{\mathrm{out}})}{k_m}$, and this recoil is the physical origin of the dimensionless scale $x$.
 
 ### The Klein–Nishina cross-section
 
@@ -298,7 +298,7 @@ Two checks fix the formula. Averaging over $\theta_{\mathrm{azm}}$ returns the u
 
 **The spin asymmetry.** If the electron is polarized, the cross-section acquires a term odd in the electron spin, of the form
 $$
-\Delta\frac{d\sigma_{\mathrm{KN}}}{d\Omega} \propto \vec s\cdot\bigl(\vec u_k\times\vec u_{\mathrm{out},k}\bigr)\,f(\omega,\theta) ,
+\Delta\frac{d\sigma_{\mathrm{KN}}}{d\Omega} \propto \vec s\cdot\bigl(\vec u_\eta\times\vec u_{\mathrm{out},k}\bigr)\,f(\omega,\theta) ,
 $$
 the magnetic Compton asymmetry; the electron spin enters through the spin-dependent part of the Dirac current, and the geometric factor is the normal to the scattering plane. The precise coefficients of the Klein–Nishina polarized cross-section are the standard Heitler result and are cited rather than re-derived; the next section states how the spin is encoded in the algebra.
 
@@ -360,7 +360,7 @@ The identity was verified at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$, with $s$ a uni
 
 Two further features of the split are properties of the algebra. Each term of $D(p)$ is a state multiplied by one unit on each side, and multiplying the state once more on either side composes the units of that side and multiplies the coefficients; the result is again a term of that shape. A split built from such multiplications therefore stays inside the algebra's own multiplication, and each resolved sum is a sum of terms shaped like the shell's three. And the cross-section difference between the two is twice the part of the squared amplitude that changes sign with $s$, which is why the asymmetry is a spin observable and why the photon's circular polarization and the electron's spin enter through the same axial direction.
 
-That difference is the magnetic Compton asymmetry of the previous section, and its geometric factor is the normal to the scattering plane, $\vec u_k\times\vec u_{\mathrm{out},k}$, an element of the material sector. The axial direction of the split is what turns the two transverse photon directions into a vector, and the spin contracts with it; the asymmetry vanishes when the electron spin is not resolved, and it is the observable that polarized-target Compton experiments measure. In the framework the geometric factor and the photon polarization are elements of the same sector, and the spin biquaternion is the element of the other sector that the asymmetry pairs with; the structure of the spin-dependent cross-section is thus the same trilinear pattern — two material-sector vectors and one informational-sector element — that the photon polarimetry exhibits with the coherence biquaternion.
+That difference is the magnetic Compton asymmetry of the previous section, and its geometric factor is the normal to the scattering plane, $\vec u_\eta\times\vec u_{\mathrm{out},k}$, an element of the material sector. The axial direction of the split is what turns the two transverse photon directions into a vector, and the spin contracts with it; the asymmetry vanishes when the electron spin is not resolved, and it is the observable that polarized-target Compton experiments measure. In the framework the geometric factor and the photon polarization are elements of the same sector, and the spin biquaternion is the element of the other sector that the asymmetry pairs with; the structure of the spin-dependent cross-section is thus the same trilinear pattern — two material-sector vectors and one informational-sector element — that the photon polarimetry exhibits with the coherence biquaternion.
 
 ## The Polarization Algebra in One Place
 
@@ -370,22 +370,22 @@ The **photon polarization** is a pure vector of $\mathbb{B}_{\Phi}$, either real
 
 The **coherence biquaternion** $\tilde{Ϛ}_{\Psi}$ **is an element of $\mathbb{B}_{\Psi}$** — the state element whose direction is the normalised Stokes vector and whose scale is the intensity $S_0$ — and it is the object that carries the beam's polarization state including partial coherence. Its biquaternion norm is the mass-shell-like invariant $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \frac14(S_0^2-|\vec S|^2)$, so the polarized states are the cone and the unpolarized state is the axis. The beam's coherence therefore lives on the same cone as the framework's spin-$\tfrac12$ idempotents and as the electron's spin biquaternion of the previous section — the Stokes vector playing the role of the Bloch vector — while the photon's own polarization vectors stay in $\mathbb{B}_{\Phi}$. That is the structural reason the Stokes algebra and the biquaternion-norm algebra agree.
 
-The **helicity operator** is $\lambda = \tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, the action $\lambda\varepsilon = \mathrm{Vect}(i\vec u_k\varepsilon)$, represented in $\mathbb{B}_{\Psi}$ by $i\vec u_k \in \mathbb{B}_{\Psi}$; the two physical polarizations are its $\pm1$ eigenvectors and the longitudinal direction is its zero eigenvector, and it is the generator of the circular-to-linear geometry: the azimuthal modulation $\cos2\theta_{\mathrm{azm}}$ of the Compton cross-section is a statement about this operator's eigenspaces.
+The **helicity operator** is $\lambda = \tfrac{i}{2}\mathrm{ad}_{\vec u_\eta}$, the action $\lambda\varepsilon = \mathrm{Vect}(i\vec u_\eta\varepsilon)$, represented in $\mathbb{B}_{\Psi}$ by $i\vec u_\eta \in \mathbb{B}_{\Psi}$; the two physical polarizations are its $\pm1$ eigenvectors and the longitudinal direction is its zero eigenvector, and it is the generator of the circular-to-linear geometry: the azimuthal modulation $\cos2\theta_{\mathrm{azm}}$ of the Compton cross-section is a statement about this operator's eigenspaces.
 
-The **geometric factor** of the scattering is the transverse projector $\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$, which is the polarization sum, and the cross-section's polarization dependence is the pairing $|\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon)|^2$ of two material-sector vectors. The unpolarized average replaces the squared pairing by the product of two projectors, $\tfrac{r_e^2}{2}P'_{ij}P_{ij}$ with $P'$ the incident and $P$ the outgoing transverse projector, and the integral of that product over the sphere is the total cross-section. For an incident beam along $\vec e_z$ the product is $P'_{ij}P_{ij} = 1+\cos^2\theta$, whose integral is $16\pi/3$, so the cross-section is $\tfrac{r_e^2}{2}\cdot\tfrac{16\pi}{3} = \tfrac{8\pi}{3}r_e^2$; it is the integral of the product of the two projectors, not of either trace alone.
+The **geometric factor** of the scattering is the transverse projector $\delta_{ij}-\vec u_\eta_i\vec u_\eta_j$, which is the polarization sum, and the cross-section's polarization dependence is the pairing $|\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon)|^2$ of two material-sector vectors. The unpolarized average replaces the squared pairing by the product of two projectors, $\tfrac{r_e^2}{2}P'_{ij}P_{ij}$ with $P'$ the incident and $P$ the outgoing transverse projector, and the integral of that product over the sphere is the total cross-section. For an incident beam along $\vec e_z$ the product is $P'_{ij}P_{ij} = 1+\cos^2\theta$, whose integral is $16\pi/3$, so the cross-section is $\tfrac{r_e^2}{2}\cdot\tfrac{16\pi}{3} = \tfrac{8\pi}{3}r_e^2$; it is the integral of the product of the two projectors, not of either trace alone.
 
 Assembled, the amplitude of the Thomson process is a pairing of two material-sector vectors,
 $$
 \mathcal{M}\bigl(\vec\varepsilon_{\mathrm{out}},\vec\varepsilon\bigr)
 = \mathrm{Sc}\bigl(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon\bigr) ,
 $$
-the photon polarizations entering through this pairing and the electron spin through the trace part of its informational-sector element; when the spin is resolved the amplitude acquires the spin term and becomes trilinear in $(\vec\varepsilon,\vec\varepsilon_{\mathrm{out}},\vec s)$. The differential cross-section is the squared modulus of $\mathcal{M}$, summed over final and averaged over initial states exactly as in the operator formalism, and the sums are the two completeness relations the algebra supplies: the transverse projector $\delta_{ij}-\vec u_{k,i}\vec u_{k,j}$ for the photon, and the action $D(p)$ of §*The resolved spin* for the electron, replaced by the pair $D_{\pm s}(p)$ when the spin is resolved. This is the sense in which the polarization algebra of photon–electron scattering is a single algebraic object: the external states are the two sectors' elements, the free propagation supplies the two projectors, and the dynamics — the magnitude $r_e$ and the recoil factor $(\omega_{\mathrm{out}}/\omega)^2$ — is the standard field theory's contribution.
+the photon polarizations entering through this pairing and the electron spin through the trace part of its informational-sector element; when the spin is resolved the amplitude acquires the spin term and becomes trilinear in $(\vec\varepsilon,\vec\varepsilon_{\mathrm{out}},\vec s)$. The differential cross-section is the squared modulus of $\mathcal{M}$, summed over final and averaged over initial states exactly as in the operator formalism, and the sums are the two completeness relations the algebra supplies: the transverse projector $\delta_{ij}-\vec u_{\eta ,i}\vec u_{\eta ,j}$ for the photon, and the action $D(p)$ of §*The resolved spin* for the electron, replaced by the pair $D_{\pm s}(p)$ when the spin is resolved. This is the sense in which the polarization algebra of photon–electron scattering is a single algebraic object: the external states are the two sectors' elements, the free propagation supplies the two projectors, and the dynamics — the magnitude $r_e$ and the recoil factor $(\omega_{\mathrm{out}}/\omega)^2$ — is the standard field theory's contribution.
 
 ## The Biquaternion Structure of the Scattering
 
 Four statements say what the framework contributes, and a fifth what it does not.
 
-The polarization **states are native**: the transverse plane is the orthogonal complement of the propagation direction in the vector part of $\mathbb{B}_{\Phi}$, defined by the algebra's own biquaternion norm, and the circular basis is the eigenbasis of left multiplication by $\vec u_k$. This is not a reinterpretation of an external structure; it is the algebra's multiplication acting on its own vectors.
+The polarization **states are native**: the transverse plane is the orthogonal complement of the propagation direction in the vector part of $\mathbb{B}_{\Phi}$, defined by the algebra's own biquaternion norm, and the circular basis is the eigenbasis of left multiplication by $\vec u_\eta$. This is not a reinterpretation of an external structure; it is the algebra's multiplication acting on its own vectors.
 
 The polarization **purity is the biquaternion norm**: $P^2 = 1-\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})^2$, the pure states are the cone, and depolarization is the interior. The beam's coherence and the framework's indefinite form are therefore the same object.
 
@@ -557,9 +557,9 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $\tilde P_{\Phi,\mathrm{ph}} = i(\omega/c)e_t+\vec k_\Phi$ | Photon wave biquaternion; $\langle\tilde P_{\Phi,\mathrm{ph}}\rangle_{\natural} = 0$ |
 | $\tilde P_{\Phi,e}$ | Electron four-momentum; $\langle\tilde P_{\Phi,e}\rangle_{\natural} = -m^2c^2$; at rest $\tilde P_{\Phi,e} = imc\,e_t$ |
 | $\varepsilon_{\mathrm{fop}}, \varepsilon_{\mathrm{fop},\mathrm{out}}$ | Incident and outgoing linear polarization unit vectors |
-| $\varepsilon_{\mathrm{fop},\pm} = (\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt2$ | Circular polarizations; $\vec u_k\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$ |
-| $\lambda = \vec u_k\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, with $\lambda\varepsilon = \mathrm{Vect}(i\vec u_k\varepsilon)$ | Helicity operator; spectral values $\{+1,0,-1\}$, representative $i\vec u_k\in\mathbb{B}_{\Psi}$ |
-| $\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse projector; the polarization sum |
+| $\varepsilon_{\mathrm{fop},\pm} = (\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt2$ | Circular polarizations; $\vec u_\eta\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$ |
+| $\lambda = \vec u_\eta\cdot\vec S = \tfrac{i}{2}\mathrm{ad}_{\vec u_\eta}$, with $\lambda\varepsilon = \mathrm{Vect}(i\vec u_\eta\varepsilon)$ | Helicity operator; spectral values $\{+1,0,-1\}$, representative $i\vec u_\eta\in\mathbb{B}_{\Psi}$ |
+| $\delta_{ij}-\vec u_\eta_i\vec u_\eta_j$ | Transverse projector; the polarization sum |
 | $S_0,\vec S$ | Stokes parameters |
 | $\tilde{Ϛ}_{\Psi}$ | Coherence biquaternion, the state element of $\mathbb{B}_{\Psi}$ scaled by the intensity $S_0$; $\vec S=\sum_\eta S_\eta\vec e_\eta$ is its vector part |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \frac14(S_0^2-\lvert\vec S\rvert^2)$ | Purity; the degree of polarization is $P = \lvert\vec S\rvert/S_0$ |
@@ -575,7 +575,7 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $d\sigma_{\mathrm{KN}}/d\Omega$ | Klein–Nishina differential cross-section |
 | $\sigma_{\mathrm{KN}}(x)\to\sigma_T$ | Thomson limit |
 | $A(\omega,\theta)+B(\omega,\theta)\cos2\theta_{\mathrm{azm}}$ | Azimuthal modulation for a linearly polarized incident beam; $\lvert B/A\rvert$ is the analysing power |
-| $\vec s\cdot(\vec u_k\times\vec u_{\mathrm{out},k})$ | Electron-spin asymmetry (magnetic Compton) |
+| $\vec s\cdot(\vec u_\eta\times\vec u_{\mathrm{out},k})$ | Electron-spin asymmetry (magnetic Compton) |
 | $\tilde{Ϛ}_{\Psi,e} = \frac12(e_t+i\vec s)\in\mathbb{B}_{\Psi}$ | Electron spin biquaternion; $\langle\tilde{Ϛ}_{\Psi,e}\rangle_{\natural} = \frac14(1-\lvert\vec s\rvert^2)$ |
 | $D(p)$ | The shell action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$; the spin sum $\sum_r\tilde w^{(r)}\langle\tilde w^{(r)},\cdot\rangle_{\mathrm D}$, a projection of rank two when divided by $2m\,c$ |
 | $\Sigma_s$ | Spin action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto is_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta is_k\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$; the shell's pattern with $s$ in place of $p$ and no mass term |

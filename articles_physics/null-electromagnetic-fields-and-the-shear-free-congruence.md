@@ -13,7 +13,7 @@ The recomputations are these: the closure of $C$, both invariants, the duality r
 The conventions are those of the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central $i$ with $i^2=-1$; the field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$; the two invariants are $I_1=\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $I_2=\vec E\cdot\vec B$. Throughout this article the vacuum is used, $\epsilon_r=\mu_r=1$ with the absolute $\epsilon_0$ and $\mu_0$ carried so that $c=1/\sqrt{\epsilon_0\mu_0}$ stands, and the coordinates are $(r'_t,r_x,r_y,r_z)$ with the material time $r'_t$ and the interval $-\Delta r'_t^2+\Delta r_x^2+\Delta r_y^2+\Delta r_z^2$, whose one minus is the square of the $i$ in $Q_t=ir'_t$; that minus enters only through the signs written out in $\star$. A two-form $C$ on the real coordinates $(x_0,x_1,x_2,x_3)=(r'_t,r_x,r_y,r_z)$ carries the parts
 
 $$
-E_\eta=-C_{0k},\qquad B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl},
+E_\eta=-C_{0\eta},\qquad B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl},
 $$
 
 with $\varepsilon_{123}=+1$ and $\varepsilon_{0123}=-1$. That last sign is fixed by the dual, which is the Hodge dual of the field-strength article, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, with $\star^2=-1$: the contraction $\tfrac12\varepsilon_{\mu\nu\rho\sigma}C^{\rho\sigma}$ with $\varepsilon_{0123}=-1$ reproduces exactly this pair. With the other sign of $\varepsilon_{0123}$ the same contraction returns $-\star C$, which exchanges the two names below and leaves every equation otherwise intact. **The corpus's articles attach the name "self-dual" to opposite signs.** The programme writes $\vec E+i\vec H=0$ and calls that condition weakly (anti)self-dual; the split article and the invariants article call $\star=-i$, that is $\vec E-i\vec B=0$, the self-dual half. The names are fixed in the next section, and every statement below carries its equation.
@@ -175,7 +175,7 @@ The worked example, $C=dG\wedge d\beta$ with $G$ the stereographic coordinate an
 | $k_\alpha$, $k_\beta$ | The two null vectors obtained from their gradients; the legs of $C$, whose directions are its null directions |
 | $Ξ_2$, $\kappa$, $\sigma$ | The one surviving Maxwell scalar in a tetrad adapted to the principal direction, and the spin coefficients of geodesy and shear |
 | duality-pure | $\star C=\pm iC$, that is $\vec E\pm i\vec B=0$; not the same condition as nullness |
-| $\vec E$, $\vec B$ | The electric and magnetic parts of $C$, $E_\eta=-C_{0k}$ and $B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl}$ |
+| $\vec E$, $\vec B$ | The electric and magnetic parts of $C$, $E_\eta=-C_{0\eta}$ and $B_\eta=\tfrac12\sum_{j,l}\varepsilon_{j\eta l}C_{jl}$ |
 | $I_1$, $I_2$ | The invariants $\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $\vec E\cdot\vec B$ |
 | $\vec N=\vec E+ic\vec B$ | The Riemann–Silberstein vector; its vanishing of norm is nullness |
 | $\star$ | The dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$ |

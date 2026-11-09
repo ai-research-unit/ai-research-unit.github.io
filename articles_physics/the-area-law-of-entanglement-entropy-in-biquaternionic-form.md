@@ -128,7 +128,7 @@ A state of the same four sites drawn at random would have $S_A\simeq\min(|A|,4-|
 
 The discrete area law is visible already at the level of the replica moments of the preceding article. A region that cuts $c$ dimers has reduced state
 $$
-\rho_A=\bigotimes_{k=1}^{c}\frac{1}{2}I_2
+\rho_A=\bigotimes_{\eta =1}^{c}\frac{1}{2}I_2
 =2^{-c}\,I_{2^c},
 $$
 a maximally mixed state of $2^c$ levels, because each cut dimer leaves a maximally mixed qubit behind and the dimers are uncorrelated. The replica moments are therefore

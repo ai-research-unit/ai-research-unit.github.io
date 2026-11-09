@@ -225,7 +225,7 @@ $$
 \mathcal{O}^2\tilde{Ξ}=-\vec\pi^2\,\tilde{Ξ}+iϙ\,\vec B\,\tilde{Ξ} ,
 $$
 
-with $\vec B=\nabla\times\vec A$. The first term is the symmetrized sum, $\tfrac12\sum_{j,k}\{\pi_j,\pi_\eta\}\vec e_j\vec e_\eta=-\vec\pi^2$, and the second is the commutator, $\sum_{j<k}[\pi_j,\pi_\eta]\vec e_j\vec e_\eta$, evaluated with $[\pi_j,\pi_\eta]=iϙ\epsilon_{j\eta l}B_l$ and $\sum_{j<k}\epsilon_{j\eta l}\vec e_j\vec e_\eta=\vec e_l$, which gives $iϙ\vec B$. The operator ordering is kept throughout, since $\vec p$ and $\vec A$ do not commute, and the magnetic term is exactly what survives it.
+with $\vec B=\nabla\times\vec A$. The first term is the symmetrized sum, $\tfrac12\sum_{j,\eta}\{\pi_j,\pi_\eta\}\vec e_j\vec e_\eta=-\vec\pi^2$, and the second is the commutator, $\sum_{j<\eta}[\pi_j,\pi_\eta]\vec e_j\vec e_\eta$, evaluated with $[\pi_j,\pi_\eta]=iϙ\epsilon_{j\eta l}B_l$ and $\sum_{j<\eta}\epsilon_{j\eta l}\vec e_j\vec e_\eta=\vec e_l$, which gives $iϙ\vec B$. The operator ordering is kept throughout, since $\vec p$ and $\vec A$ do not commute, and the magnetic term is exactly what survives it.
 
 With $E\to \frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t$ and the rest energy factored out by $\tilde{Ξ}=e^{-ir'_t/(c/k_m)}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
 

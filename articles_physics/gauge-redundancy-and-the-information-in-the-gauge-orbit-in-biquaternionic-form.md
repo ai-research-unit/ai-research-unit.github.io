@@ -65,7 +65,7 @@ These two facts are the whole geometry of the orbit: it is a flat affine space m
 The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_{t}^{\prime},k_1,k_2,k_3)$ on the $i r'_t$ coordinates, so that a gradient acts as left multiplication by $iK$ with
 
 $$
-K = \sum_{\mu\in\{t,x,y,z\}}k_\mu e_\mu .
+K = \sum_{\mu\in\{t,x,y,z\}}k_{\Phi,\mu} e_\mu .
 $$
 
 A pure-gauge mode with real scalar amplitude $g$ contributes $iKg$, so its image is the **real line spanned by $iK$** inside the four-dimensional fibre. The linear map from gauge functions to connections therefore has rank one per mode (rank zero only for the constant mode $k = 0$, on which there is no gauge freedom). This was checked numerically: for generic wavevectors and a generic real amplitude, the four ratios of the components of $iKg$ to those of $K$ agreed to $2\times10^{-16}$.
@@ -319,7 +319,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\kappa =\frac{k_m\,ϙ}{m\,c}$ | Coupling |
 | $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde{\nabla}\Gamma\}$ | The gauge orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real gauge functions modulo constants; the orbit's torsor group |
-| $K = \sum_\mu k_\mu e_\mu$ | Wavevector biquaternion of the mode $k = (k_{t}^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
+| $K = \sum_\mu k_{\Phi,\mu} e_\mu$ | Wavevector biquaternion of the mode $k = (k_{t}^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$ | Gauge scalar, pure gauge: $S_2 = S - \Box\Gamma$ |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | Abelian curvature components |

@@ -36,7 +36,7 @@ F_{r'_t i}=E_i,
 F_{ij}=\epsilon_{ij\eta}B_\eta ,
 $$
 
-the magnetic sign being the one the field-strength article states explicitly, $F_{jk}=\epsilon_{j\eta l}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i r'_t$ frame, where $Q_t=i r'_t$ and $F_{Q_t k}=iE_\eta/c$, and dropping the $i/c$ returns the real-time $F_{r'_t k}=E_\eta$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
+the magnetic sign being the one the field-strength article states explicitly, $F_{j\eta}=\epsilon_{j\eta l}B_l$. The only frame-dependent component is the time one: the algebra is written in the $i r'_t$ frame, where $Q_t=i r'_t$ and $F_{Q_t \eta}=iE_\eta/c$, and dropping the $i/c$ returns the real-time $F_{r'_t \eta}=E_\eta$. All densities below are evaluated in the real-time components. For the non-abelian factor the components are those of the companion article on non-abelian gauge fields,
 $$
 F_{\mu\nu}=\frac{\partial\mathcal{A}_\nu}{\partial R_\mu}-\frac{\partial\mathcal{A}_\mu}{\partial R_\nu}+i\kappa\,[\mathcal{A}_\mu,\mathcal{A}_\nu],
 \qquad
@@ -150,7 +150,7 @@ $$
 
 so the boxed equation with its minus in the lower-index notation *is* the standard equation, with its plus in the upper-index notation. The density $-\frac{e^2}{2\pi^2}I_2$ is the textbook value, and what does not depend on the notation is the physics: the magnitude, the parity, and the proportionality to $I_2$ hold either way, and the overall sign is fixed by the convention that the basis operator calls the value $+1$ right-handed.
 
-**The biquaternion form of the density.** The companion article on instantons computes the same density and finds it a function of $I_2$ alone. Its quoted values are $\frac{2i}{c}I_2$ in the $i r'_t$ frame and $2I_2$ in the Euclidean continuation, for the quarter-density $\frac14\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; the real-time value here is $2I_2$, and the $i r'_t$ value follows from it by the single factor $i/c$ that the substitution $F_{r'_t k}=iE_\eta/c$ contributes — each nonzero term of the contraction carries exactly one time index. The proportionality to $I_2$ is therefore the same statement in the three frames, and it is frame-independent: the anomalous divergence carries the axial current into the framework's own pseudoscalar invariant.
+**The biquaternion form of the density.** The companion article on instantons computes the same density and finds it a function of $I_2$ alone. Its quoted values are $\frac{2i}{c}I_2$ in the $i r'_t$ frame and $2I_2$ in the Euclidean continuation, for the quarter-density $\frac14\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; the real-time value here is $2I_2$, and the $i r'_t$ value follows from it by the single factor $i/c$ that the substitution $F_{r'_t \eta}=iE_\eta/c$ contributes — each nonzero term of the contraction carries exactly one time index. The proportionality to $I_2$ is therefore the same statement in the three frames, and it is frame-independent: the anomalous divergence carries the axial current into the framework's own pseudoscalar invariant.
 
 Three structural remarks follow. First, the density is a **pseudoscalar** — parity-odd, as $I_2$ is — which is why it can stand on the right-hand side of the divergence of an axial, parity-odd current. Second, it is a **total derivative** in the abelian case,
 

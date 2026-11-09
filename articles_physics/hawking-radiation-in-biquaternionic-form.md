@@ -260,9 +260,9 @@ The in-vacuum $|0_{\mathrm{in}}\rangle$ is defined by $a_i|0_{\mathrm{in}}\rangl
 The Bogoliubov transformation is a canonical transformation, and the requirement that the out operators satisfy the canonical brackets fixes the coefficients. Two relations follow, and they are the only algebraic input of this section:
 
 $$
-[b_j,b_\eta^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{ki}-\beta_{ji}\beta^*_{ki}\right)=\delta_{j\eta},
+[b_j,b_\eta^\dagger]=\sum_i\left(\alpha_{ji}\alpha^*_{\eta i}-\beta_{ji}\beta^*_{\eta i}\right)=\delta_{j\eta},
 \qquad
-[b_j,b_k]=\sum_i\left(\beta_{ji}\alpha_{ki}-\alpha_{ji}\beta_{ki}\right)=0 .
+[b_j,b_k]=\sum_i\left(\beta_{ji}\alpha_{\eta i}-\alpha_{ji}\beta_{\eta i}\right)=0 .
 $$
 
 In matrix form, with $\alpha=(\alpha_{ji})$ and $\beta=(\beta_{ji})$,
@@ -369,7 +369,7 @@ Both identities were checked symbolically and numerically for several values of 
 The dimensionless exponent is
 
 $$
-\frac{2\pi\omega}{\kappa}\Big|_{\hbar=c=k_B=1}
+\frac{2\pi\omega}{\kappa}\Big|_{\hbar=c=\eta _B=1}
 \quad\longleftrightarrow\quad
 \frac{\hbar\omega}{k_B T},
 $$

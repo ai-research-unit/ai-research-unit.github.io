@@ -178,7 +178,7 @@ in agreement with the measured values. The triangle closes as a consequence of u
 
 ## The Jarlskog Area and the Six Triangles
 
-**The triangles from unitarity.** The section above used one orthogonality relation of $V$, that of the first and third columns, already rescaled to the $(\bar\rho,\bar\eta)$ triangle. Unitarity gives six such relations — three from the columns and three from the rows — each of the form $V_{ij}V_{ik}^{*}+V_{lj}V_{lk}^{*}+V_{nj}V_{nk}^{*}=0$, and each defines a triangle in the complex plane. The unscaled sides of the one above are
+**The triangles from unitarity.** The section above used one orthogonality relation of $V$, that of the first and third columns, already rescaled to the $(\bar\rho,\bar\eta)$ triangle. Unitarity gives six such relations — three from the columns and three from the rows — each of the form $V_{ij}V_{i\eta}^{*}+V_{lj}V_{l\eta}^{*}+V_{nj}V_{n\eta}^{*}=0$, and each defines a triangle in the complex plane. The unscaled sides of the one above are
 
 $$
 V_{ud}V_{ub}^{*}+V_{cd}V_{cb}^{*}+V_{td}V_{tb}^{*}=0 ,

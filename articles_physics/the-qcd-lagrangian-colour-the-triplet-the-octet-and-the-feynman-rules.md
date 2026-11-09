@@ -303,7 +303,7 @@ with the first term from the gluon and ghost loops, the second from the quark lo
 | $\sum_aT^aT^a=C_FI$ with $C_F=4/3$ | $2.2\times10^{-16}$ |
 | $\sum_{c,e}f^{ace}f^{bce}=3\delta^{ab}$ | $1.3\times10^{-15}$ |
 | $\mathrm{Tr}\left(T^aT^bT^c\right)=\frac14\left(d^{abc}+if^{abc}\right)$ | $0$ |
-| $T^a_{ij}T^a_{kl}=\frac12\left(\delta_{il}\delta_{j\eta}-\frac13\delta_{ij}\delta_{\eta l}\right)$ | $5.6\times10^{-17}$ |
+| $T^a_{ij}T^a_{\eta l}=\frac12\left(\delta_{il}\delta_{j\eta}-\frac13\delta_{ij}\delta_{\eta l}\right)$ | $5.6\times10^{-17}$ |
 | $\sum_{abc}\left(f^{abc}\right)^2=24$ | exact |
 | $\sum_{abc}\left(d^{abc}\right)^2=40/3$ | exact |
 | $\left[D_\mu,D_\nu\right]=-ig_sG^a_{\mu\nu}T^a$ | $4.4\times10^{-16}$ |
@@ -315,10 +315,10 @@ with the first term from the gluon and ghost loops, the second from the quark lo
 **The Fierz identity is the one worth singling out.** The row for the product of two generators,
 
 $$
-\sum_aT^a_{ij}T^a_{kl}=\frac12\left(\delta_{il}\delta_{j\eta}-\frac13\delta_{ij}\delta_{\eta l}\right) ,
+\sum_aT^a_{ij}T^a_{\eta l}=\frac12\left(\delta_{il}\delta_{j\eta}-\frac13\delta_{ij}\delta_{\eta l}\right) ,
 $$
 
-is what makes colour summing mechanical: a gluon exchanged between two quark lines contracts two generator matrices into a Kronecker delta minus a trace. It is the $SU(3)$ analogue of the $SU(2)$ identity $\sum_a\sigma^a_{ij}\sigma^a_{kl}=2\delta_{il}\delta_{j\eta}-\delta_{ij}\delta_{\eta l}$ for the Pauli matrices, generalised to $-\delta_{ij}\delta_{\eta l}/N$ in place of the second term; the coefficient $1/N$ of that term is why the $1/N$ expansion of the strong interaction exists at all.
+is what makes colour summing mechanical: a gluon exchanged between two quark lines contracts two generator matrices into a Kronecker delta minus a trace. It is the $SU(3)$ analogue of the $SU(2)$ identity $\sum_a\sigma^a_{ij}\sigma^a_{\eta l}=2\delta_{il}\delta_{j\eta}-\delta_{ij}\delta_{\eta l}$ for the Pauli matrices, generalised to $-\delta_{ij}\delta_{\eta l}/N$ in place of the second term; the coefficient $1/N$ of that term is why the $1/N$ expansion of the strong interaction exists at all.
 
 **The two quadratic Casimir invariants.** From the explicit matrices, $\sum_aT^aT^a=\frac43I$ and $\sum_{c,e}f^{ace}f^{bce}=3\delta^{ab}$; both are properties of $SU(3)$ and both were reproduced from the matrices rather than assumed. The three numbers of the colour-factor table are therefore not three independent inputs: $T_R$ is a normalisation, $C_A=N$ follows from $N=3$ alone and is untouched by the rescaling, and $C_F=T_R(N^2-1)/N$ is the one combination that carries $T_R$.
 

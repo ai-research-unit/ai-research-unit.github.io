@@ -93,7 +93,7 @@ $$
 \xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k_\Phi \in \mathbb{R}^3,
 $$
 
-so that $\vec k_\Phi = k_1 \vec e_x + k_2 \vec e_y + k_3 \vec e_z$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives
+so that $\vec k_\Phi = k_{\Phi x} \vec e_x + k_{\Phi y} \vec e_y + k_{\Phi z} \vec e_z$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives
 
 $$\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\frac{m\,c\,\omega\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m},
 \qquad
@@ -301,7 +301,7 @@ $$
 the stationary condition is
 
 $$
-\nabla_{\vec k_\Phi}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k_\Phi/k_mr'_t = 0
+\nabla_{\vec \eta _\Phi}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k_\Phi/k_mr'_t = 0
 \qquad\Longrightarrow\qquad
 (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k_\Phi/k_mr'_t = \vec v_g r'_t .
 $$

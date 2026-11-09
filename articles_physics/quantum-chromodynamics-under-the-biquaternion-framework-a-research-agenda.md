@@ -122,7 +122,7 @@ Two further results of that article are the ones that bear on QCD.
     $$
     j_{50}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\,(-i\vec e_z)\bigr),
     \qquad
-    j_{5k}=\mathrm{Sc}\bigl(i\tilde{Ξ}_{\mathrm{sp}}^*\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\bigr),
+    j_{5\eta}=\mathrm{Sc}\bigl(i\tilde{Ξ}_{\mathrm{sp}}^*\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\bigr),
     $$
 
     the time component multiplying on the right and the three spatial ones on the left, and

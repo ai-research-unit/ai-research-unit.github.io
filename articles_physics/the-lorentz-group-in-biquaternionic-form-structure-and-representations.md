@@ -289,7 +289,7 @@ i.e. $3\oplus1$: under spatial rotations the four-vector splits into a spatial v
 
 **Complete reducibility and tensor products.** Every finite-dimensional representation is a direct sum of irreducibles, and the tensor product of two irreducibles decomposes by the product of the two $\mathrm{SU}(2)$ Clebsch–Gordan rules:
 $$
-(m,n)\otimes(m_2,n_2)\;\cong\;\bigoplus_{k=0}^{2\min(m,m_2)}\ \bigoplus_{k_2=0}^{2\min(n,n_2)}\bigl(m+m_2-k,\,n+n_2-k_2\bigr),
+(m,n)\otimes(m_2,n_2)\;\cong\;\bigoplus_{\eta =0}^{2\min(m,m_2)}\ \bigoplus_{k_2=0}^{2\min(n,n_2)}\bigl(m+m_2-k,\,n+n_2-k_2\bigr),
 $$
 the sums running over integer steps. For instance,
 $$
@@ -305,9 +305,9 @@ complexifying the Lie algebra and exponentiating; the two sides are parameterise
 
 **Tensor powers of the spinor.** Iterating the Clebsch–Gordan rule decomposes the $N$-fold tensor power of the defining module,
 $$
-V_{1/2}^{\otimes N}\cong\bigoplus_{k=0}^{\lfloor N/2\rfloor}\left[\binom Nk-\binom N{k-1}\right]V_{N/2-k},
+V_{1/2}^{\otimes N}\cong\bigoplus_{\eta =0}^{\lfloor N/2\rfloor}\left[\binom Nk-\binom N{k-1}\right]V_{N/2-\eta},
 $$
-the multiplicity of $V_{N/2-k}$ being the ballot (Catalan-triangle) number $\binom Nk-\binom N{k-1}$.
+the multiplicity of $V_{N/2-\eta}$ being the ballot (Catalan-triangle) number $\binom Nk-\binom N{k-1}$.
 
 **Physical interpretation: addition of angular momenta.** The Clebsch–Gordan rule is the quantum rule for combining two angular momenta: $V_s\otimes V_\eta$ is the state space of a composite system whose parts carry spins $s$ and $k$, and the decomposition lists its total-spin sectors. The case $V_{1/2}\otimes V_{1/2}\cong V_1\oplus V_0$ is the addition of two spin-$\tfrac12$ particles into a triplet and a singlet, and $V_{1/2}^{\otimes3}\cong V_{3/2}\oplus2V_{1/2}$ is the quartet and the two doublets of three; the ballot numbers are the multiplicities with which each total spin occurs. The invariant $\varepsilon$ that produces the scalar $V_0$ is the antisymmetric two-particle state, the singlet of the framework.
 
@@ -406,15 +406,15 @@ $$
 $$
 which satisfies
 $$
-\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_{k,l}\varepsilon_{ij\eta}\,\eta^{(1,2)}_{kl}\,\varsigma_l
+\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_\eta,l}\varepsilon_{ij\eta}\,\eta^{(1,2)}_{\eta l}\,\varsigma_l
 $$
-(verified here, as is the Hermiticity of $\sigma_3\varsigma_i$). The signs of the contraction are carried by $\eta^{(1,2)}_{kl}$, so the sum is written out; the vector maps are
+(verified here, as is the Hermiticity of $\sigma_3\varsigma_i$). The signs of the contraction are carried by $\eta^{(1,2)}_{\eta l}$, so the sum is written out; the vector maps are
 $$
 v_i=\langle z|\sigma_i|z\rangle\ \text{for }S^2,\qquad
 v_i=\tfrac12\,\langle z|\sigma_3\varsigma_i|z\rangle\ \text{for }H^\pm,\qquad
 v_i=\langle z_2|\sigma_3\varsigma_i|z_1\rangle\ \text{for }H^{sl},
 $$
-the first from one Weyl spinor with the definite pairing, the second from one Weyl spinor with the indefinite pairing, and the third from a **pair** of Majorana spinors with a real structure commuting with $SU(1,1)$ in place of the complex conjugation of the other two. The bilinears close, under a symplectic form on the spinor space, into the Poisson algebra of $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$, with the paper's form $\{v_i,v_j\}=-\sum_{k,l}\varepsilon_{ij\eta}\eta_{kl}v_l$; the closure was recomputed here on generic elements.
+the first from one Weyl spinor with the definite pairing, the second from one Weyl spinor with the indefinite pairing, and the third from a **pair** of Majorana spinors with a real structure commuting with $SU(1,1)$ in place of the complex conjugation of the other two. The bilinears close, under a symplectic form on the spinor space, into the Poisson algebra of $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$, with the paper's form $\{v_i,v_j\}=-\sum_\eta,l}\varepsilon_{ij\eta}\eta_{\eta l}v_l$; the closure was recomputed here on generic elements.
 
 **Physical interpretation: the group a boundary triangle sees.** The distinction matters because the causal character of a triangle and of its tetrahedron selects the subgroup of the local Lorentz group in which the triangle's holonomy lies. A space-like triangle of a space-like tetrahedron gives the compact $SU(2)$ and a discrete spin label; the two time-like cases give $SU(1,1)$ and a label drawn from the discrete or the continuous series. A compact group has finite-dimensional $*$-unitary multiplets and a non-compact one does not, so it is exactly the non-compact case that carries an infinite-dimensional boundary label — which is why the time-like triangle is the difficult one in the spinfoam programme.
 
@@ -469,7 +469,7 @@ The group that carries the transformations is represented as follows. The group 
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Subgroup fixing a space-like direction; double cover of $SO(1,2)$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere, two-sheeted time-like hyperboloid, one-sheeted hyperboloid |
 | $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |
-| $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$ | Triple of $SU(1,1)$ generators; $\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_{k,l}\varepsilon_{ij\eta}\eta^{(1,2)}_{kl}\varsigma_l$ |
+| $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$ | Triple of $SU(1,1)$ generators; $\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_\eta,l}\varepsilon_{ij\eta}\eta^{(1,2)}_{\eta l}\varsigma_l$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 

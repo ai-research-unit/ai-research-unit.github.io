@@ -306,7 +306,7 @@ $$
 
 so the spin term is a curl in the massless case exactly as it is in the massive one. What changes is the coefficient: $1/m$ in the massive identity, and $1/E$ in the massless regime, where $E$ is the only scale that can multiply a density to give a current.
 
-For a massless particle of one value the spin is locked to the direction $\vec u_k$ of the kinetic momentum, and the moment reads $\vec\mu=(e/E)(\frac{m\,c\,\vec u_{k}}{2\,k_m})$: the massless limit removes the separation scale $m$ in favour of the energy $E$, and it does not remove the spin current. The rest-frame statement, where $E=m$ and the coefficient of the curl is $1/m$, is the one that fixes $g=2$, and it is the statement of the previous section.
+For a massless particle of one value the spin is locked to the direction $\vec u_\eta$ of the kinetic momentum, and the moment reads $\vec\mu=(e/E)(\frac{m\,c\,\vec u_{k}}{2\,k_m})$: the massless limit removes the separation scale $m$ in favour of the energy $E$, and it does not remove the spin current. The rest-frame statement, where $E=m$ and the coefficient of the curl is $1/m$, is the one that fixes $g=2$, and it is the statement of the previous section.
 
 ## The Angular-Momentum and Stress-Tensor Relatives
 

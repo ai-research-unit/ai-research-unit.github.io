@@ -120,7 +120,7 @@ The limits are stated in the order in which they were raised. The first three co
 
 **What genuinely remains is three points, and all three concern conventions and choices rather than existence.**
 
-- **The diagonal is forced to be real.** The Hermitian condition $H_{jk}=H_{kj}^{*}$ forces every diagonal entry to be a real quaternion. This is a constraint the complex theory does not carry.
+- **The diagonal is forced to be real.** The Hermitian condition $H_{j\eta}=H_{\eta j}^{*}$ forces every diagonal entry to be a real quaternion. This is a constraint the complex theory does not carry.
 - **The eigenvalue equation needs a side.** The equations $Av=v\lambda$ and $Av=\lambda v$ are different over $\mathbb{H}$, and the left and right spectra need not agree. A convention is required before a spectrum can be written down at all.
 - **The spectrum of a general operator is a set of classes.** For a non-normal quaternionic operator the eigenvalues are quaternions, and the eigenvalue set is closed under conjugation by units. For the $1\times1$ matrix whose entry is $1+2i$, the eigenvalues are exactly the conjugates $uqu^{-1}$. Over one hundred random unit quaternions $u$, the real part stayed at $1$ and the imaginary norm stayed at $2$ to machine precision, while the imaginary part spread over the sphere. An eigenvalue is a **conjugacy class**, a two-sphere, and not a number.
 

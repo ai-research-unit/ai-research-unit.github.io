@@ -63,7 +63,7 @@ This has been verified numerically: for $\theta(r'_t)$ increasing at rate $\omeg
 The quadrupole moment is a rank-two symmetric traceless tensor, and it transforms under the rotation as a bilinear form rather than as a vector. Writing $\mathcal{Q}^{(b)}$ for the body-frame components, the lab-frame components are
 
 $$
-\mathcal{Q}^{(lab)}_{ij} = R_{ik}R_{jl}\mathcal{Q}^{(b)}_{kl} ,
+\mathcal{Q}^{(lab)}_{ij} = R_{i\eta}R_{jl}\mathcal{Q}^{(b)}_{\eta l} ,
 $$
 
 equivalently $\mathcal{Q}^{(lab)} = R\,\mathcal{Q}^{(b)}R^{\mathsf{T}}$. In rotor language the same statement is that the associated bilinear form is evaluated on body-frame components,
@@ -183,7 +183,7 @@ verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishi
 A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
 
 $$
-\mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{ik}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{kl},
+\mathcal{Q}^{(lab)}_{ij}(r'_t) = R_{i\eta}(r'_t)\,R_{jl}(r'_t)\,\mathcal{Q}^{(b)}_{\eta l},
 \qquad
 \tilde U(r'_t) = \cos\frac{\Omega r'_t}{2} + \sin\frac{\Omega r'_t}{2}\,\vec e_z .
 $$
@@ -271,7 +271,7 @@ It is worth stating exactly where the tower sits in the framework, because this 
 
 ### Time-Dependent Multipole Fields
 
-The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{ijk}(r'_t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
+The moments $\mathrm{Sd}_{ij}(r'_t)$, $\mathrm{Sd}_{ij\eta}(r'_t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
 
 ### Power Scaling
 

@@ -124,9 +124,9 @@ From the span of the four generators onto $\mathbb{B}$ this is a complex-linear 
 
 **The mass structure is an element.** The antisymmetrized pair of the source is, in the algebra, left multiplication by an element of $\mathbb{B}$,
 $$
-\Gamma_{\mu\nu}\longmapsto \Gamma_{0k}=i\vec e_\eta,\quad \Gamma_{k0}=-i\vec e_\eta,\quad \Gamma_{jk}=\pm\vec e_l,\quad \Gamma_{00}=0,
+\Gamma_{\mu\nu}\longmapsto \Gamma_{0\eta}=i\vec e_\eta,\quad \Gamma_{\eta0}=-i\vec e_\eta,\quad \Gamma_{j\eta}=\pm\vec e_l,\quad \Gamma_{00}=0,
 $$
-with the sign of $\Gamma_{jk}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$ and $\vec e_l$ the remaining direction. The six entries with one time index are imaginary multiples of a spatial unit and square to $+e_t$; the six entries with two spatial indices are spatial units and square to $-e_t$. All twelve were checked, and the orientation $\vec e_x\vec e_y=\vec e_z$ gives $\Gamma_{12}=\vec e_z$, $\Gamma_{23}=\vec e_x$ and $\Gamma_{31}=\vec e_y$. The mass term of the $\mu$-th equation is $\sum_\nu\Gamma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp},\nu}$, left multiplication by an element contracted with the corresponding component of the field. Nothing of the source's pair survives beyond this element, and the element is frame-free: it is written in the units and carries no reference to a frame.
+with the sign of $\Gamma_{j\eta}$ fixed by the orientation $\vec e_x\vec e_y=\vec e_z$ and $\vec e_l$ the remaining direction. The six entries with one time index are imaginary multiples of a spatial unit and square to $+e_t$; the six entries with two spatial indices are spatial units and square to $-e_t$. All twelve were checked, and the orientation $\vec e_x\vec e_y=\vec e_z$ gives $\Gamma_{12}=\vec e_z$, $\Gamma_{23}=\vec e_x$ and $\Gamma_{31}=\vec e_y$. The mass term of the $\mu$-th equation is $\sum_\nu\Gamma_{\mu\nu}\tilde{Ξ}_{\mathrm{sp},\nu}$, left multiplication by an element contracted with the corresponding component of the field. Nothing of the source's pair survives beyond this element, and the element is frame-free: it is written in the units and carries no reference to a frame.
 
 ### The equivalent constraint form
 
@@ -327,7 +327,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\in\mathbb{B}$ | Biquaternion-valued components of the field, $\mu=0,1,2,3$ |
 | $\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | The two values of a component |
 | $\epsilon$ | Dirac-field parameter of the massless shift symmetry |
-| $\Gamma_{0k}=i\vec e_\eta$, $\Gamma_{k0}=-i\vec e_\eta$, $\Gamma_{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$; the mass term is left multiplication by $\Gamma_{\mu\nu}$ |
+| $\Gamma_{0\eta}=i\vec e_\eta$, $\Gamma_{\eta0}=-i\vec e_\eta$, $\Gamma_{j\eta}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$; the mass term is left multiplication by $\Gamma_{\mu\nu}$ |
 | $\varepsilon_\mu=-g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
 | $\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
 | $\operatorname{div}\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}$ | Covariant divergence; a consequence of the equation for every $m$ |

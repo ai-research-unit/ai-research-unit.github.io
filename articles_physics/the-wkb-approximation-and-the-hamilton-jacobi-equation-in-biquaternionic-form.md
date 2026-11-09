@@ -183,7 +183,7 @@ which is the WKB amplitude: the wave function is large where the particle moves 
 In three dimensions the transport equation is solved by the **van Vleck determinant**,
 
 $$
-\boxed{\;A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}\;}
+\boxed{\;A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,\eta}\,\partial x_{f,l}}\right)_{\eta ,l=1}^{3}\right|^{1/2}\;}
 $$
 
 which measures the focusing of the ray congruence: $A^2$ is the density of trajectories, and the determinant is the Jacobian of the map from initial to final positions. This is the same object that the path-integral article extracts from the Gaussian fluctuation determinant of the semiclassical kernel; the transport equation and the stationary-phase evaluation of the path integral give the same amplitude, as they must, since both are the leading order of the same expansion.

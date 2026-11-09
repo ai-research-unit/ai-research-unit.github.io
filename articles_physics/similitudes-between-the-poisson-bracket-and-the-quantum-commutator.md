@@ -135,7 +135,7 @@ with $\epsilon_{ij\eta}$ the Levi-Civita symbol and summation over repeated indi
 **Classical side.** From the definition of the Poisson bracket and $\{q_i,p_j\}=\delta_{ij}$ one computes
 
 $$
-\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}\,L_{\mathrm{orb},k},
+\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}\,L_{\mathrm{orb},\eta},
 $$
 
 and, for the brackets with the coordinates and momenta,
@@ -147,19 +147,19 @@ $$
 **Quantum side.** With $L_{\mathrm{orb},i} = \epsilon_{ij\eta}\,q_j\,p_\eta$ and the canonical commutators, the same computation gives
 
 $$
-[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},k}}{k_m},
+[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},\eta}}{k_m},
 $$
 
 so that
 
-$$\frac{k_m}{m\,c\,i}[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = \epsilon_{ij\eta}\,L_{\mathrm{orb},k},
+$$\frac{k_m}{m\,c\,i}[L_{\mathrm{orb},i},L_{\mathrm{orb},j}] = \epsilon_{ij\eta}\,L_{\mathrm{orb},\eta},
 $$
 
-which is the operator image of $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$. The correspondence holds on this pair as well.
+which is the operator image of $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$. The correspondence holds on this pair as well.
 
 | Classical | Quantum | $(\frac{k_m}{m\,c\,i})\times$ Quantum |
 |---|---|---|
-| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},k}}{k_m}$ | $\epsilon_{ij\eta}L_{\mathrm{orb},k}$ |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ | $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},\eta}}{k_m}$ | $\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ |
 | $\{L_{\mathrm{orb},i},q_j\}=\epsilon_{ij\eta}q_\eta$ | $[L_{\mathrm{orb},i},q_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,q_{\eta}}{k_m}$ | $\epsilon_{ij\eta}q_\eta$ |
 | $\{L_{\mathrm{orb},i},p_j\}=\epsilon_{ij\eta}p_\eta$ | $[L_{\mathrm{orb},i},p_j]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,p_{\eta}}{k_m}$ | $\epsilon_{ij\eta}p_\eta$ |
 
@@ -311,7 +311,7 @@ $$
 [\tilde S_{\Psi,i},\tilde S_{\Psi,j}] =\frac{m\,c\,i\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}}{k_m},
 \qquad\text{so}\qquad\frac{k_m}{m\,c\,i}[\tilde S_{\Psi,i},\tilde S_{\Psi,j}] = \epsilon_{ij\eta}\,\tilde S_{\Psi,\eta},
 $$
-which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$. The parallel is exact here: after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ij\eta}$. The $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\frac{m\,c}{k_m}$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_\eta$ into a physical spin. In this realization the normalization factor $1/(\frac{m\,c\,i}{k_m})$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_{\Psi,\eta}=(\frac{m\,c}{2\,k_m})i\vec e_\eta$, and the sign is fixed by the orientation of the cross product.
+which is term for term the operator image of the classical bracket $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$. The parallel is exact here: after the factor $1/(\frac{m\,c\,i}{k_m})$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ij\eta}$. The $\frac{m\,c}{k_m}$-free algebraic bracket $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\frac{m\,c}{k_m}$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_\eta$ into a physical spin. In this realization the normalization factor $1/(\frac{m\,c\,i}{k_m})$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_{\Psi,\eta}=(\frac{m\,c}{2\,k_m})i\vec e_\eta$, and the sign is fixed by the orientation of the cross product.
 
 **Where the framework breaks the correspondence.** The canonical pair cannot be realized this way. The relation
 $$
@@ -326,7 +326,7 @@ The Poisson bracket and the normalized commutator have the same Lie-algebraic sh
 $$
 \{f,g\}\frac{k_m\,\longleftrightarrow}{m\,c\,i}[f,g]
 $$
-is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=\frac{m\,c\,i\,\delta_{ij}}{k_m}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ against $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},k}}{k_m}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
+is correct as a **leading-order correspondence**. It was verified here on two independent pairs: the canonical pair, $\{q_i,p_j\}=\delta_{ij}$ against $[q_i,p_j]=\frac{m\,c\,i\,\delta_{ij}}{k_m}$, with the normalization and the sign checked explicitly; and the components of angular momentum, $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ against $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,L_{\mathrm{orb},\eta}}{k_m}$. Both match exactly, and the reason is structural: both pairs consist of observables at most quadratic in the canonical variables, and for such observables the correspondence is exact.
 
 It is **not an isomorphism**, and this is the article's thesis. The Poisson bracket is a derivation of a commutative algebra and the commutator is a derivation of a noncommutative one; no product-preserving map can send one to the other, because the classical algebra commutes and the quantum algebra does not. The failure is explicit: $\operatorname{weyl}(q)\,\operatorname{weyl}(p)-\operatorname{weyl}(qp)=\frac{m\,c\,i}{2\,k_m}$, and in general $\operatorname{weyl}(f)\,\operatorname{weyl}(g)=\operatorname{weyl}(fg)+(\frac{m\,c\,i}{2\,k_m})\operatorname{weyl}(\{f,g\})+O(\frac{m^{2}\,c^{2}}{k_m^{2}})$. What replaces the isomorphism is a **deformation**: the star product deforms the commutative product, its antisymmetrization is the Moyal bracket, and
 $$
@@ -353,7 +353,7 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $q_i, p_j=-\frac{m\,c\,i}{k_m}\partial/\partial q_j$ | Position and momentum operators |
 | $\operatorname{weyl}(f)$ | Quantization map (Weyl ordering) |
 | $\operatorname{weyl}^{-1}$ | Its inverse, the Weyl symbol of an operator |
-| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | Classical angular-momentum Poisson algebra |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ | Classical angular-momentum Poisson algebra |
 | $L^2=\sum_i(L_{\mathrm{orb},i})^2$ | Squared orbital angular momentum |
 | $\star$ | Star product (deformation of the pointwise product) |
 | $\Lambda[f,g]=\sum_i(\partial f/\partial q_i\,\partial g/\partial p_i-\partial f/\partial p_i\,\partial g/\partial q_i)$ | Bidifferential operator of the star product, applied slot by slot |

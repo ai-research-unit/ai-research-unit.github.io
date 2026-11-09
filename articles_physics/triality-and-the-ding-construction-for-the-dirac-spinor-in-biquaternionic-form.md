@@ -4,7 +4,7 @@
 
 The triality of $\mathrm{Spin}(8)$ is the striking fact that the spin group of eight-dimensional Euclidean space has **three** eight-dimensional irreducible real representations — the vector $8_v$ and the two representations $8_s$ and $8_c$ beside it — and that an outer automorphism of order three permutes them cyclically. The associated invariant is a symmetric trilinear form, the composition law of the octonions, and the whole structure exists only in dimension eight. The mathematics of that case is recorded in the companion article *Triality and Spin(8) with Inner Conjugation*.
 
-In four-dimensional Minkowski space the three spaces do not coincide. A Lorentz vector has four real components and each of the two representations beside it has four, but they carry inequivalent representations and no outer automorphism permutes them. Liu Yu-Fen's observation is that a **trilinear** form nevertheless exists on the triple (Lorentz vector) $\times$ (first four-vector) $\times$ (second four-vector), built from the four generator basis operators and the timelike neutral vector $k_\mu$, and that the resulting construction — which he calls a **ding** — is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions. The order-three permutation is still there. What replaces the coincidence of the three eight-dimensional representations is the coincidence of the three real dimensions in $1+3$.
+In four-dimensional Minkowski space the three spaces do not coincide. A Lorentz vector has four real components and each of the two representations beside it has four, but they carry inequivalent representations and no outer automorphism permutes them. Liu Yu-Fen's observation is that a **trilinear** form nevertheless exists on the triple (Lorentz vector) $\times$ (first four-vector) $\times$ (second four-vector), built from the four generator basis operators and the timelike neutral vector $u_\mu$, and that the resulting construction — which he calls a **ding** — is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions. The order-three permutation is still there. What replaces the coincidence of the three eight-dimensional representations is the coincidence of the three real dimensions in $1+3$.
 
 Two invariants come out of the construction and they are not the same object. The **trilinear form** $\varepsilon$ takes three arguments, one in each space, and is linear in each. The **cubic form** $C$ takes one vector and one field, is quadratic in the field, and splits into a quadratic part and the trilinear part. The source exhibits them together; this article keeps them apart, because the first is the triality invariant and the second is the interaction the dictionary of the companion article uses.
 
@@ -30,7 +30,7 @@ The two four-vectors $B_\mu$ and $N_\mu$ are the real and the imaginary coeffici
 $$
 \tilde{Ξ}_{\mathrm{sp}}=\tilde B+i\tilde N,\qquad \tilde B=\sum_\mu B_\mu a_\mu,\qquad \tilde N=\sum_\mu N_\mu a_\mu,
 $$
-with $\tilde B$ and $\tilde N$ real quaternions and $a_\mu$ the four units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$. The complex four-vector $G_\mu=B_\mu+iN_\mu$ is the **s-vector**, the coefficient vector of $\tilde{Ξ}_{\mathrm{sp}}$ in those units. The neutral vector is timelike, $\sum_\mu\varepsilon_\mu k_\mu k_\mu=1$; in the source's frame $k=(1,0,0,0)$.
+with $\tilde B$ and $\tilde N$ real quaternions and $a_\mu$ the four units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$. The complex four-vector $G_\mu=B_\mu+iN_\mu$ is the **s-vector**, the coefficient vector of $\tilde{Ξ}_{\mathrm{sp}}$ in those units. The neutral vector is timelike, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=1$; in the source's frame $k=(1,0,0,0)$.
 
 ### The Generator Operators
 Each four-vector index carries a left unit and a right unit, $a_0=e_t$, $a_k=\vec e_\eta$ and $b_0=\vec e_x$, $b_k=\vec e_y$. A **basis operator** is a pair of multipliers, acting by $Q\mapsto cQd$, and the four **generator basis operators** are the four maps
@@ -82,7 +82,7 @@ The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ ca
 
 Evaluated on the field rather than on a triple, the same basis operators give the cubic form of the interaction. This object is quadratic in $\tilde B$ and $\tilde N$ and linear in $A$, and in the frame $k=(1,0,0,0)$ it is read on the elements alone:
 $$
-C = \Bigl(\sum_\mu A_\mu k_\mu\Bigr)\,\mathrm{Sc}\bigl(\tilde B^2+\tilde N^2\bigr) + \varepsilon(A,B,N),
+C = \Bigl(\sum_\mu A_\mu u_\mu\Bigr)\,\mathrm{Sc}\bigl(\tilde B^2+\tilde N^2\bigr) + \varepsilon(A,B,N),
 $$
 a derived form: the basis operator $C_\mu$ puts $a_\mu$ on the left and $b_\mu$ on the right, the $t$ slot collapses because $e_t$ is the unit, and the two spatial units that remain carry the field back onto $e_t$. Written on the four-index tensors the same object is
 $$
@@ -221,7 +221,7 @@ $$
 $$
 alternating in its three arguments and equal to twice the determinant of the three spatial parts in a frame where $k=(1,0,0,0)$; its evaluation on the field is the cubic form
 $$
-C = \Bigl(\sum_\mu A_\mu k_\mu\Bigr)\mathrm{Sc}\bigl(\tilde B^2+\tilde N^2\bigr) + \varepsilon(A,B,N)
+C = \Bigl(\sum_\mu A_\mu u_\mu\Bigr)\mathrm{Sc}\bigl(\tilde B^2+\tilde N^2\bigr) + \varepsilon(A,B,N)
 = A_\mu t_{\mu\nu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,E_{\nu\mu\lambda}B_\nu N_\lambda,
 $$
 with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three spaces have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$; their product is $q_xq_y = J^2$, so the order-three and the order-four moves generate one group, of order $24$, and the word $q_xq_yq_yq_x = q_y^2$ leaves the cubic form invariant — "Dirac's game".
@@ -237,7 +237,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $B_\mu$, $N_\mu$ | The real and the imaginary coefficient four-vectors of the field |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde B+i\tilde N$ | The field, an element of $\mathbb{B}$ |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector |
-| $k_\mu$ | Timelike neutral vector, $\sum_\mu\varepsilon_\mu k_\mu k_\mu = 1$; $k=(1,0,0,0)$ in the source's frame |
+| $u_\mu$ | Timelike neutral vector, $\sum_\mu\varepsilon_\mu u_\mu u_\mu = 1$; $k=(1,0,0,0)$ in the source's frame |
 | $\tilde U$ | Unit biquaternion of the Lorentz group |
 | $S_1(\tilde U)$, $S_2(\tilde U)$, $\Lambda(\tilde U)$ | Left, right and mixed actions of $\tilde U$ |
 | $a_\mu$, $b_\mu$ | Left and right units of the index: $a_0 = e_t$, $a_k = \vec e_\eta$, $b_0 = \vec e_x$, $b_k = \vec e_y$ |
@@ -248,7 +248,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $E_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol of the generators, $E_{0123} = 1$ |
 | $t_{\mu\nu\lambda}$, $E_{\nu\mu\lambda}$ | The same tensors contracted with $k_\sigma$ |
 | $\varepsilon(A,B,N) = 2A_\mu\,E_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$ | Order-three ding (the invariant trilinear form) |
-| $C = \bigl(\sum_\mu A_\mu k_\mu\bigr)\mathrm{Sc}(\tilde B^2+\tilde N^2) + \varepsilon(A,B,N)$ | Cubic form |
+| $C = \bigl(\sum_\mu A_\mu u_\mu\bigr)\mathrm{Sc}(\tilde B^2+\tilde N^2) + \varepsilon(A,B,N)$ | Cubic form |
 | $J : A \mapsto B \mapsto N \mapsto A$ | Order-three ding map (the four-dimensional triality) |
 | $q_x : (A,B,N)\mapsto(-B,A,N)$, $q_y : (A,B,N)\mapsto(A,-N,B)$ | Order-four braid maps |
 ## Further Reading

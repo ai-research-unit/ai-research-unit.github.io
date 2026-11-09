@@ -69,9 +69,9 @@ The four expectation values in the singlet state are:
 - $\langle I\rangle = 1$.
 - $\langle\vec u_a\cdot\boldsymbol{\sigma}_1\rangle = \sum_j a_j\langle\sigma_{1j}\rangle = 0$, because the singlet is rotationally invariant and $\langle\sigma_{1j}\rangle = 0$ for all $j$.
 - $\langle\vec u_b\cdot\boldsymbol{\sigma}_2\rangle = 0$, by the same argument.
-- $\langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,k}a_j b_k\langle\sigma_{1j}\sigma_{2k}\rangle = -\sum_j a_j b_j = -\vec u_a\cdot\vec u_b$.
+- $\langle(\vec u_a\cdot\boldsymbol{\sigma}_1)(\vec u_b\cdot\boldsymbol{\sigma}_2)\rangle = \sum_{j,\eta}a_j b_k\langle\sigma_{1j}\sigma_{2\eta}\rangle = -\sum_j a_j b_j = -\vec u_a\cdot\vec u_b$.
 
-The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2k}\rangle = -\delta_{j\eta}$.
+The last equality uses the standard singlet correlation $\langle\sigma_{1j}\sigma_{2\eta}\rangle = -\delta_{j\eta}$.
 
 Substituting,
 

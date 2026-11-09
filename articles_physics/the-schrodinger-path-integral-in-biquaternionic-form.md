@@ -120,8 +120,8 @@ $$
 G_{\mathrm{prop}}(\vec r_f,r'_t;\vec r_i,0)
 =\lim_{N\to\infty}
 \left(\frac{k_m}{2\pi i\varepsilon}\right)^{3N/2}
-\int\prod_{k=1}^{N-1} d^3r_\eta\;
-\exp\left[\frac{k_m\,i}{m\,c}\sum_{k=0}^{N-1}\left(\frac{m\,c|\vec r_{k+1}-\vec r_k|^{2}}{2\varepsilon}-\frac{\varepsilon\,V(\vec r_\eta)}{c}\right)\right]e_t,
+\int\prod_{\eta =1}^{N-1} d^3r_\eta\;
+\exp\left[\frac{k_m\,i}{m\,c}\sum_\eta=0}^{N-1}\left(\frac{m\,c|\vec r_{\eta +1}-\vec r_k|^{2}}{2\varepsilon}-\frac{\varepsilon\,V(\vec r_\eta)}{c}\right)\right]e_t,
 $$
 
 with $\varepsilon=r'_t/N$, $\vec r_0=\vec r_i$, $\vec r_N=\vec r_f$. In the continuum limit the sum in the exponent becomes the action $S[\vec r]=\int_0^{r'_{t}} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
@@ -285,7 +285,7 @@ $$
 \boxed{\;G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})
 \ \approx\
 \left(\frac{k_m}{2\,m\,c\,\pi\,i}\right)^{3/2}
-\left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,k}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}
+\left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,\eta}\,\partial x_{f,l}}\right)_{\eta ,l=1}^{3}\right|^{1/2}
 \exp\left(\frac{k_m\,i}{m\,c}S_{\mathrm{cl}}\right)
 \ =\ A_{\mathrm{wkb}}\,\exp(\,\frac{k_m\,iS_{\mathrm{cl}}}{m\,c})\;},
 $$

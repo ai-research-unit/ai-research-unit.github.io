@@ -107,7 +107,7 @@ $$
 
 and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\tilde{Ξ}_{\mathrm{sp}}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}/2$.
 
-**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{R}_{\Psi,\eta}=\frac{\tilde{Ξ}_{\mathrm{sp},k}}{2}i\vec u_k$,
+**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{R}_{\Psi,\eta}=\frac{\tilde{Ξ}_{\mathrm{sp},k}}{2}i\vec u_\eta$,
 
 $$
 \operatorname{Log}\bigl(\exp\tilde{R}_{\Psi,2}\exp\tilde{R}_{\Psi,1}\bigr)

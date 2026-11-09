@@ -69,16 +69,16 @@ F_{\mu\nu} =
 \end{pmatrix},
 $$
 
-that is, $F_{0k} = iE_\eta/c$ and $F_{jk} = \epsilon_{j\eta l}B_l$. The time component of the contraction is
+that is, $F_{0\eta} = iE_\eta/c$ and $F_{j\eta} = \epsilon_{j\eta l}B_l$. The time component of the contraction is
 
 $$
-K_0 = ϙ\,F_{0k}u_k = ϙ\,\frac{iE_\eta}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
+K_0 = ϙ\,F_{0\eta}u_k = ϙ\,\frac{iE_\eta}{c}\,\gamma v_k = i\,\frac{\gamma ϙ}{c}\,\vec E\cdot\vec v,
 $$
 
 and the spatial components are
 
 $$
-B_{\mathrm{boost},k} = ϙ\,F_{k0}u_0 + ϙ\,F_{kj}u_j
+B_{\mathrm{boost},k} = ϙ\,F_{\eta0}u_0 + ϙ\,F_{\eta j}u_j
 = ϙ\left(-\frac{iE_\eta}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\eta jl}B_l\,\gamma v_j
 = \gamma ϙ\,E_\eta + \gamma ϙ\left(\vec v\times\vec B\right)_k,
 $$
@@ -459,12 +459,12 @@ In the frame in which $\vec E$ and $\vec B$ are parallel these reduce to $\lambd
 
 ### A null-field invariant
 
-One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $k$ (the propagation direction), satisfying $\sum_\mu k_\mu F_{\mu\nu} = 0$. Then
+One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $k$ (the propagation direction), satisfying $\sum_\mu k_{\Phi,\mu} F_{\mu\nu} = 0$. Then
 
 $$
 \frac{d}{d\tau}\left(k\cdot P\right)
-= \sum_\mu k_\mu\,\frac{dP_\mu}{d\tau}
-= \frac{ϙ}{m}\sum_{\mu,\nu}k_\mu F_{\mu\nu}P_\nu = 0,
+= \sum_\mu k_{\Phi,\mu}\,\frac{dP_\mu}{d\tau}
+= \frac{ϙ}{m}\sum_{\mu,\nu}k_{\Phi,\mu} F_{\mu\nu}P_\nu = 0,
 $$
 
 so $k\cdot P$ is constant along the worldline. This is the invariant of the motion associated with the degenerate (radiative) type of the field, and it exists precisely when $I_1 = I_2 = 0$. For non-null fields the mass shell is the only invariant of this simple kind.

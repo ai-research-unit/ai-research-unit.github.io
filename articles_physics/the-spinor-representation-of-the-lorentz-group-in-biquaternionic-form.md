@@ -64,7 +64,7 @@ They are **inequivalent**. To see this without appealing to the label, complexif
 
 $$
 N_k^{+}\mapsto 0, \qquad N_k^{-}\mapsto -i\sigma_\eta,
-\qquad \text{so} \qquad C_+ = \sum_{k}(N_k^{+})^2 \mapsto 0, \quad C_-=\sum_{k}(N_k^{-})^2 \mapsto -3I_2 .
+\qquad \text{so} \qquad C_+ = \sum_\eta(N_k^{+})^2 \mapsto 0, \quad C_-=\sum_\eta(N_k^{-})^2 \mapsto -3I_2 .
 $$
 
 On the conjugate module the two Casimirs are interchanged, $C_+\mapsto-3I_2$, $C_-\mapsto0$. Since $C_+$ and $C_-$ are invariants, the ordered pair of eigenvalues is an invariant; $(0,-3)$ and $(-3,0)$ differ, so $S$ and $\bar{S}$ are not isomorphic:
@@ -229,7 +229,7 @@ The higher representations are $(s,s_2)=V_s\boxtimes V_{s_2}$, $\dim=(2s+1)(2s_2
 | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$ | Lorentz action on the spinor module (left multiplication) |
 | $g^{T}\epsilon g=\epsilon$ | Invariance of the symplectic form; $S^{*}\cong S$ |
 | $N_k^{\pm}=\tfrac12(\vec e_\eta\pm\mathsf{i}\,i\vec e_\eta)$ | Generators of the two $\mathrm{SU}(2)$ halves ($\mathsf{i}$ = complexification unit) |
-| $\Omega_\pm=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
+| $\Omega_\pm=\sum_\eta(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
 | $(s,s_2)=V_s\boxtimes V_{s_2}$ | Irreducible representation, $\dim=(2s+1)(2s_2+1)$ |
 | $\operatorname{sym}^{2s}(S)\otimes\operatorname{sym}^{2s_2}(\bar{S})$ | Carrier of $(s,s_2)$ from symmetric powers of the spinor |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |

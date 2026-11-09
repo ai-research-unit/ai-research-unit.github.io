@@ -2,19 +2,13 @@
 
 ## Introduction
 
-This article introduces harmonic analysis for biquaternion-valued sequences. It follows the elementary functions article, which defined the biquaternion exponential, and it uses the division theory article, which characterized the zero divisors and the roots of $-1$.
+This article treats the Fourier transform of a biquaternion-valued sequence, that is, of a function on the finite group $\mathbb{Z}/N$ with values in $\mathbb{B}$. It is read after *Biquaternion Continuous Harmonic Analysis*, not beside it: **the kernel, the classification of the roots of $-1$, the count of the complex transforms and the vanishing-norm phenomenon are that article's and are cited here, not restated.** A finite index set adds three things. The transform is a finite sum, hence algebraic, with no convergence hypothesis, and its inversion is an identity rather than a limit. The convolution theorem becomes one-sided, the kernel sitting on one side of the sample where a central kernel would be needed on both. And the infinite sequence brings the Z transform, whose region of convergence is decided by a multiplicative norm that vanishes on the zero divisors.
 
-The treatment is purely mathematical. The goal is to define the discrete biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The transform of an infinite sequence, the **biquaternion Z transform**, is treated at the end of the article; it is the discrete analogue of the Laplace transform and the tool for linear recurrences with constant biquaternion coefficients. The continuous analogue is the subject of the companion article on biquaternion continuous harmonic analysis.
+The results proved here are the inversion, the conjugate symmetry for real scalar values, the factorisation into four complex transforms of the same length, and the one-sided convolution theorem; the Z transform follows, with its rules, table and recurrences.
 
-The key structural fact is that the Fourier kernel is a biquaternion exponential, and the exponential is defined by a **root of $-1$**. The roots of $-1$ in $\mathbb{B}$ come in two families: the **degenerate roots** (the scalar imaginary $i$, and the unit pure real quaternions), and the **non-trivial roots** (the elements of the form $b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$). The choice of root determines the nature of the transform. The degenerate roots give the ordinary complex or quaternion Fourier transform; the non-trivial roots give a genuinely biquaternionic transform.
+The condition under which the transform stays invertible when some sample is a zero divisor is left open, and is marked where it arises.
 
-A root of $-1$ is required because of the **de Moivre formula**: the identity
-
-$$
-\exp(\rho\theta) = \cos\theta \, e_t + \sin\theta \, \rho, \qquad \rho^2 = -e_t,
-$$
-
-holds for any root $\rho$ of $-1$, as a consequence of the alternating structure of the powers of $\rho$ and the power series of the exponential, cosine, and sine. A Fourier transform analyses a signal into sinusoidal components, and the sinusoids are the real and scalar multiples of the exponential of the root.
+**Boundaries.** The continuous transform, the root classification and the factorisation are *Biquaternion Continuous Harmonic Analysis*; the exponential and the de Moivre formula are *Biquaternion Elementary Functions*; the zero divisors and the roots of $-1$ are the division theory article. The commutative case, in which the phenomena of this article disappear, is *Reduced Biquaternion Discrete Harmonic Analysis*, compared with this one in §*The Commutative Alternative: The Reduced Biquaternion Transform*.
 
 Throughout, a biquaternion is written
 
@@ -28,71 +22,55 @@ $$
 \tilde{Q} = Q_t e_t + \vec Q, \qquad \vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$, a complex scalar.
 
-**Notation.** To avoid collision with the standard basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
+**Notation.** To avoid collision with the basis units and with the scalar imaginary $i$, the root of $-1$ used in the kernel is denoted $\rho$ throughout.
 
 ## The Fourier Kernel
 
-### Definition
+### Definition and the Closed Form
 
-Fix a root $\rho$ of $-1$, i.e., an element $\rho \in \mathbb{B}$ with
-
-$$
-\rho^2 = -e_t.
-$$
-
-The **biquaternion Fourier kernel** of length $N$ is the function
+Fix a root of $-1$, that is, an element $\rho \in \mathbb{B}$ with $\rho^2 = -e_t$. The **biquaternion Fourier kernel** of length $N$ is the biquaternion
 
 $$
 W_N(n, \ell) = \exp\left(-2\pi \rho \frac{n\ell}{N}\right), \qquad n, \ell \in \{0, 1, \ldots, N-1\}.
 $$
 
-Because $\rho^2 = -e_t$, the kernel takes the closed form
+Because $\rho^2 = -e_t$ the powers of the argument alternate in pairs, so the de Moivre formula collapses the exponential and the kernel has the closed form
 
 $$
-\boxed{\; W_N(n, \ell) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t - \sin\left(2\pi \frac{n\ell}{N}\right) \rho \;},
+W_N(n, \ell) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t - \sin\left(2\pi \frac{n\ell}{N}\right) \rho ,
 $$
 
-where the cosine and sine are the ordinary complex trigonometric functions applied to the real argument $2\pi n\ell/N$. The kernel is therefore a unit biquaternion in the sense that its biquaternion norm is $e_t$:
+where the cosine and the sine are the ordinary trigonometric functions of the real argument. Two properties follow from this display.
+
+**The kernel is a unit, at every root and every pair of indices.** By the multiplicativity of the norm and $\rho^{2}=-e_t$, its norm is the sum of the squares of the two coefficients,
 
 $$
-\langle W_N(n, \ell)\rangle_{\natural} = \cos^2\left(2\pi \frac{n\ell}{N}\right) + \sin^2\left(2\pi \frac{n\ell}{N}\right) = 1, \qquad \langle W_N(n, \ell)\rangle_{\natural} = e_t.
+\langle W_N(n, \ell)\rangle_{\natural} = \cos^2\left(2\pi \frac{n\ell}{N}\right) + \sin^2\left(2\pi \frac{n\ell}{N}\right) = 1,
 $$
 
-In particular, the kernel is always invertible, regardless of the choice of root and the values of $n, \ell$.
-
-### The Condition on the Root
-
-A biquaternion $\rho$ satisfies $\rho^2 = -e_t$ if and only if it is a pure biquaternion (i.e., its scalar part vanishes) and
+so the kernel is invertible whatever $\rho$ is, and its inverse is read off the closed form by the sign of the sine term:
 
 $$
-\Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\|^2 - \|\Im(\rho)\|^2 = 1,
+W_N(n, \ell)^{-1} = W_N(n, \ell)^{\natural} = \cos\left(2\pi \frac{n\ell}{N}\right) e_t + \sin\left(2\pi \frac{n\ell}{N}\right) \rho .
 $$
 
-where $\Re(\rho)$ and $\Im(\rho)$ are the real and imaginary quaternion parts of $\rho$, the orthogonality is with respect to the inner product on $\mathbb{H}$, and $\|\cdot\|$ is the norm on $\mathbb{H}$. This is the content of the classification of the biquaternion roots of $-1$ given in the division theory article.
+**The kernel is periodic in the frequency index.** The argument depends on $\ell$ only through the product $n\ell$ modulo $N$, so $W_N(n, \ell + N) = W_N(n, \ell)$ for every $n$ and $\ell$. **The frequency index is an element of $\mathbb{Z}/N$ and not of $\mathbb{Z}$**: on the line it is a real variable, and here it is a residue class.
 
-The classification yields three families:
+### The Root, and What the Finite Index Set Does to It
 
-1. **Degenerate root of the first kind:** $\rho = \pm i$, the scalar imaginary.
-2. **Degenerate root of the second kind:** $\rho = \pm \mu_{\mathbb{R}}$, a unit pure real quaternion.
-3. **Non-trivial roots:** $\rho = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.
+The classification of the roots of $-1$ is the continuous article's §*The Condition on the Root*, quoted here: $\rho^2 = -e_t$ holds exactly when $\rho$ is $\pm i$, or a unit pure real quaternion, or of the form $b\mu + d\nu i$ with $\mu$ and $\nu$ perpendicular unit pure real quaternions and $b^2 - d^2 = 1$.
 
-The three families are distinct, and the choice of root determines the nature of the transform.
+The four cases of §*The Choice of Root* carry over with one substitution: "complex Fourier transform" is read as "complex DFT of length $N$". The reduction is an algebraic decomposition of $\mathbb{B}$ into complex lines, which does not see the index set, so the count is the same integer. The scalar imaginary gives four complex DFTs on the four coefficients; a unit pure real quaternion gives the quaternion DFT, with its left, right or two-sided convention; a non-trivial root gives two when the values lie in $\mathbb{B}_{H}$ or $i\mathbb{B}_{H}$ and four in general.
 
-### The Choice of Root
+What the finite index set does change is the identification of the roots. Replacing $\rho$ by $-\rho$ reverses the sign of the sine term,
 
-The choice of the root $\rho$ is not neutral. The four cases are the following.
+$$
+W_N(n, \ell; -\rho) = \cos\left(2\pi \frac{n\ell}{N}\right) e_t + \sin\left(2\pi \frac{n\ell}{N}\right) \rho ,
+$$
 
-**Scalar imaginary, $\rho = i$.** The kernel reduces to the ordinary complex exponential, and the transform is the ordinary complex Fourier transform applied to each of the four complex coefficients of the signal.
-
-**Unit pure real quaternion, $\rho = \mu_{\mathbb{R}}$.** The kernel is a real quaternion exponential, and the transform is the ordinary quaternion Fourier transform. The quaternion Fourier transform itself has several conventions (left, right, two-sided), and the choice of convention must be stated.
-
-**Non-trivial root, signal in a subspace.** If $\rho$ is a non-trivial root and the signal takes values in the real quaternion subspace $\mathbb{B}_{H}$ or in the imaginary translate $\mathbb{B}_{iH}$, the transform reduces to **two** ordinary complex Fourier transforms. The two complex transforms are coupled by the real and imaginary parts of the signal.
-
-**Non-trivial root, fully biquaternion signal.** If $\rho$ is a non-trivial root and the signal takes values in the full biquaternion algebra, the transform requires **four** ordinary complex Fourier transforms. This is the generic case.
-
-The non-trivial roots exist because the biquaternion algebra is not a division algebra: the equation $\rho^2 = -e_t$ has solutions beyond the degenerate ones. This is the first place where the biquaternion structure enters the harmonic analysis in an essential way.
+which is the quaternion conjugate of $W_N(n, \ell; \rho)$ when $\rho$ is pure and the complex conjugate when $\rho = i$. **The two transforms carry the same information**: the image of the transform at $\rho$ under that conjugation is the transform of the image of the sequence at $-\rho$, with the kernel on the right, which is the same statement the article makes for the placement. The sign of the root is a convention, and the choice made in §*Definition and the Closed Form* is kept to the end.
 
 ## The Discrete Transform Pair
 
@@ -604,12 +582,9 @@ The infinite-sequence analogue is the **biquaternion Z transform**, $\mathcal{X}
 
 ## Further Reading
 
-- S. Said, N. Le Bihan, S. J. Sangwine, "Fast complexified quaternion Fourier transform", *IEEE Transactions on Signal Processing* **56** (2008) 1522–1531, for the definition and factorization of the biquaternion Fourier transform.
-- S. J. Sangwine and T. A. Ell, "Complexification of the quaternion roots of $-1$", arXiv:math.RA/0506190 (2005), for the classification of the biquaternion roots of $-1$.
-- S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors.
-- N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", *Signal Processing* **84** (2004) 1177–1199, for the quaternion signal processing background.
-- T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", *IEEE Transactions on Image Processing* **16** (2007) 22–35, for the quaternion Fourier transform and its applications.
-- W. R. Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.
-- W. Bi, Z.-F. Cai, and K. I. Kou, "Biquaternion Z transform", arXiv:2108.02975 (2021), for the biquaternion Z transform, its calculation rules and its table of elementary transforms, and the solution of biquaternion recurrence relations.
-
-- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra — the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the double-complex, tessarine or commutative hypercomplex algebra — and for the discrete reduced biquaternion Fourier transform, its convolution and correlation theorems, its phase-only correlation and its colour-image applications.
+- [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the continuous transform, the classification of the roots of $-1$, the factorisation into complex transforms and the vanishing-norm phenomenon, all cited here rather than restated; its bibliography carries the papers on the complexified quaternion transform, the roots of $-1$ and the zero divisors, not repeated below.
+- [Reduced Biquaternion Discrete Harmonic Analysis](reduced-biquaternion-discrete-harmonic-analysis.html), for the commutative four-dimensional algebra and its transform, the case in which the one-sided convolution theorem of this article becomes two-sided.
+- [Three Kernel Placements of the Biquaternion Fourier Transform](three-kernel-placements-of-the-biquaternion-fourier-transform.html), for the left, right and two-sided placements, which is the choice the phrase "the kernel on the left of the sample" fixes here.
+- [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as the kernel at negative time, and for the root that an element supplies.
+- W. Bi, Z.-F. Cai, and K. I. Kou, "Biquaternion Z transform", arXiv:2108.02975 (2021), for the biquaternion Z transform, its calculation rules, its table of elementary transforms and its solution of biquaternion recurrence relations.
+- Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012-2022, for the reduced biquaternion algebra, the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, and for the discrete transform over it, its convolution and correlation theorems, its phase-only correlation and its colour-image applications.

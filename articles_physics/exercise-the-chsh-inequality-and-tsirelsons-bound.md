@@ -79,7 +79,7 @@ so that $S=\langle S\rangle$. Every property of $S$ below is a property of the s
 Equivalently, one may expand in the Pauli-string basis. With the correlation matrix
 
 $$
-T_{jk} = \langle \sigma_j\otimes\sigma_\eta\rangle = \mathrm{Tr}\!\left(\rho\,\sigma_j\otimes\sigma_\eta\right),
+T_{j\eta} = \langle \sigma_j\otimes\sigma_\eta\rangle = \mathrm{Tr}\!\left(\rho\,\sigma_j\otimes\sigma_\eta\right),
 $$
 
 the correlation function is the bilinear form $E(\vec a_1,\vec b_1)=\vec a_1^T T\,\vec b_1$, and the CHSH combination is a quadratic expression in the four directions.
@@ -178,7 +178,7 @@ $$
 \vec b_1=\frac{\vec u_j+\vec u_\eta}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_\eta}{\sqrt{2}} .
 $$
 
-Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{kk}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
+Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{\eta \eta}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
 
 ### Step 5: Tsirelson's bound
 
@@ -461,7 +461,7 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $A_1=\vec a_1\cdot\boldsymbol{\sigma},\ A_2=\vec a_2\cdot\boldsymbol{\sigma},\ B_1=\vec b_1\cdot\boldsymbol{\sigma},\ B_2=\vec b_2\cdot\boldsymbol{\sigma}$ | Single-qubit observables, spectrum $\{\pm1\}$ |
 | $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_j\epsilon_j\,\vec e_j\otimes\vec e_j)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\,((i\vec a_1)\otimes(i\vec b_1)))=-\sum_j\epsilon_j a_{1j}b_{1j}$ | Correlation function |
-| $T_{jk}=\langle\sigma_j\otimes\sigma_\eta\rangle=-\epsilon_j\delta_{j\eta}$ | Correlation matrix of a Bell state |
+| $T_{j\eta}=\langle\sigma_j\otimes\sigma_\eta\rangle=-\epsilon_j\delta_{j\eta}$ | Correlation matrix of a Bell state |
 | $S=E(\vec a_1,\vec b_1)-E(\vec a_1,\vec b_2)+E(\vec a_2,\vec b_1)+E(\vec a_2,\vec b_2)$ | CHSH combination |
 | $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$ | Bell operator |
 | $S^2=4I+[A_1,A_2]\otimes[B_1,B_2]=4I-4(u\cdot\boldsymbol{\sigma})\otimes(v\cdot\boldsymbol{\sigma})$ | Operator identity behind the bound |

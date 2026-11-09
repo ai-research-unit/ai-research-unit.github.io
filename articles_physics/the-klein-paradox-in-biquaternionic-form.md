@@ -49,7 +49,7 @@ in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the p
 On the incident side, $x < 0$, the potential vanishes and the momentum is
 
 $$
-k =\frac{\sqrt{E^2 -m^{2}\,c^{4}}}{\frac{m\,c^{2}}{k_m}},
+k_\Phi =\frac{\sqrt{E^2 -m^{2}\,c^{4}}}{\frac{m\,c^{2}}{k_m}},
 $$
 
 which is real for $E > mc^2$. The solution is an incident wave plus a reflected wave,
@@ -126,7 +126,7 @@ The free mass shell is
 $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2},
 \qquad
-\tilde K_{\Phi} = i\frac{\omega}{c}e_t + \vec e_x k ,
+\tilde K_{\Phi} = i\frac{\omega}{c}e_t + \vec e_x k_\Phi ,
 $$
 
 whose two roots $\omega = \pm\sqrt{k^2c^2 +m^{2}\,c^{4}}\frac{k_m}{m\,c}$ are the two frequency branches of the parent: the particle and the antiparticle. Under the central shift the covariant wave biquaternion acquires the constant shift from the potential, and the on-shell condition reads, on each half-line, the same relation with the frequency measured from the local potential. On the incident side the incident wave lies on the positive root. On the far side of a Klein step the same wave has $E - V_0 < -mc^2$, so it lies on the **negative root** of the local mass shell. The step has taken the propagating branch and exchanged it with its conjugate:
@@ -141,12 +141,12 @@ This is the algebraic content of the phrase "the far side is reached by an antip
 
 **The step and the well are one mechanism.** In the step the exchanged branch belongs to a scattering state, and the pair it signals leaves the step for infinity. Confine the strong-potential region instead, and the exchange becomes a statement about a **bound level**: the level descends as the well deepens, and at a definite depth it reaches the lower edge of the gap, $E=-mc^{2}$. That depth is exact and elementary, and it is the one-particle face of the threshold computed here. The second-quantized reading, including the charged vacuum that the emission leaves behind, is that of *Pair Creation in a Bounded Region in Biquaternionic Form*; here only the level is computed.
 
-**The well and its two conditions.** Take $ϙ\xi(r_x)=-V_0$ for $\lvert r_x\rvert<L/2$ and zero outside, and write $a=L/2$. On each region the reduced pair of §*Reduction along one axis* holds with $E\to E+V_0$ inside the well, so the solution is oscillatory there with the wave number $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and evanescent outside with the decay constant $\kappa=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$. Continuity of the ratio of the two components at the wall gives, for the even and the odd solution,
+**The well and its two conditions.** Take $ϙ\xi(r_x)=-V_0$ for $\lvert r_x\rvert<L/2$ and zero outside, and write $a=L/2$. On each region the reduced pair of §*Reduction along one axis* holds with $E\to E+V_0$ inside the well, so the solution is oscillatory there with the wave number $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and evanescent outside with the decay constant $k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$. Continuity of the ratio of the two components at the wall gives, for the even and the odd solution,
 
 $$
-\frac{\kappa}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
 \qquad
-\frac{\kappa}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}},
 $$
 
 which is the continuity statement that this article writes for the transmitted amplitude, read at a wall instead of at a discontinuity, with the exponential tail kept. No approximation enters.
@@ -220,13 +220,13 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $D = \tilde\nabla +\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$ | Covariant derivative (minimal coupling) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t$ | Electrostatic potential biquaternion |
 | $V_0$, $ϙ\xi(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ | Step height and potential energy |
-| $E$, $k$, $k_2$ | Energy, incident momentum, transmitted momentum |
+| $E$, $k_\Phi$, $k_{\Phi,2}$ | Energy, incident momentum, transmitted momentum |
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |
 | $\tilde K_{\Phi}$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Wave biquaternion and mass shell |
 | $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}\,]$ | Depth at which a bound level of a well of width $L$ reaches $E=-mc^{2}$ |
-| $n_{\mathrm{w}}$, $k_{\Phi,\mathrm{w}}$, $\kappa$ | Half-wavelengths across the well; wave number in the well; decay constant outside it |
+| $n_{\mathrm{w}}$, $k_{\Phi,\mathrm{w}}$, $k_{\Phi,\mathrm{ev}}$ | Half-wavelengths across the well; wave number in the well; decay constant outside it |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; home of the current |
 
 ## Further Reading

@@ -120,10 +120,10 @@ Two subfamilies are worth separating, because the series uses them differently:
 
 | subfamily | condition | biquaternion form | character |
 |---|---|---|---|
-| spatial rotations | $\tilde u_{\mathrm r}$ a real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{jk}$ | the group $SU(2)$ |
+| spatial rotations | $\tilde u_{\mathrm r}$ a real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{j\eta}$ | the group $SU(2)$ |
 | pure boosts | $\tilde U_{\Psi,\mathrm b}$ Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$ | $\cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ | a symmetric submanifold, not a group |
 
-The boosts do not close under multiplication — the product of two non-collinear boosts is a boost and a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are the exponentials of the two sector algebras: the boosts of elements of $\mathbb{B}_{\Psi}$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{B}_{H}$, namely the spacelike bivectors $\vec u_{jk}$.
+The boosts do not close under multiplication — the product of two non-collinear boosts is a boost and a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are the exponentials of the two sector algebras: the boosts of elements of $\mathbb{B}_{\Psi}$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{B}_{H}$, namely the spacelike bivectors $\vec u_{j\eta}$.
 
 **The reflections.** A reflection is an odd basis operator of unit norm, and its data is its **normal**, a unit vector. Writing the vectors as the frame basis operator applied after the image of $w$ with $w\in\mathbb{B}_{\Psi}$, the unit normals are those $w$ of norm $+1$ or $-1$, the timelike ones for $\langle w\rangle_{\natural}=+1$ and the spacelike ones for $\langle w\rangle_{\natural}=-1$. The canonical reflection is the frame basis operator itself, and its normal is the time axis: the vector basis operator $iR_{\mathrm{axf},\vec e_x}$ is the frame basis operator applied to the image of $e_t$, which is the identity basis operator $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$.
 

@@ -66,7 +66,7 @@ and the anomaly is the statement that this is non-zero for a classically Weyl-in
 
 **The heat-kernel origin.** Regulating the determinant with a proper-time cutoff, the trace of the heat kernel has the small-$r'_t$ expansion
 $$
-\mathrm{Tr}\,\exp(-r'_t\,S^{(2)})\;\sim\;\frac{1}{(4\pi r'_t)^{d/2}}\sum_{k\ge0}{r'_{t}}^{k}\int d^dx\,\sqrt{|g|}\,a_k ,
+\mathrm{Tr}\,\exp(-r'_t\,S^{(2)})\;\sim\;\frac{1}{(4\pi r'_t)^{d/2}}\sum_\eta\ge0}{r'_{t}}^{k}\int d^dx\,\sqrt{|g|}\,a_k ,
 $$
 where $a_k$ is the Seeley–DeWitt coefficient of order $k$, the first being $a_0=1$. The term that survives renormalisation is $a_{d/2}$, because ${r'_{t}}^{k-d/2}$ is logarithmically divergent exactly at $k=d/2$. The conformal variation of the regularised determinant is
 $$

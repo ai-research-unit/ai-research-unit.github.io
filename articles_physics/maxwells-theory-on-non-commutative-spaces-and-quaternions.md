@@ -82,13 +82,13 @@ $$
 \mathcal L = -\frac14 F_{\mu\nu}^2 + \frac18\kappa_{\alpha\beta}F_{\alpha\beta}F_{\mu\nu}^2 - \frac12\kappa_{\alpha\beta}F_{\mu\alpha}F_{\nu\beta}F_{\mu\nu} + O(\kappa^2) + \sum_\mu A_\mu J_\mu,
 $$
 
-which the source recasts, with $E_i = iF_{i4}$ and $B_i = \epsilon_{ij\eta}F_{jk}$, as
+which the source recasts, with $E_i = iF_{i4}$ and $B_i = \epsilon_{ij\eta}F_{j\eta}$, as
 
 $$
 \mathcal L = \frac12\left(\vec E^2 - \vec B^2\right)\left[1 + \vec\kappa\cdot\vec B\right] - (\vec\kappa\cdot\vec E)(\vec E\cdot\vec B) + O(\kappa^2) + \sum_\mu A_\mu J_\mu ,
 $$
 
-where $\kappa_i = \tfrac12\epsilon_{ij\eta}\kappa_{jk}$ and $\kappa_{i4}=0$. At $\vec\kappa=0$ this is the Maxwell Lagrangian. The $\vec\kappa$-terms are **odd under $CP$**, which is the source's first structural remark. The corpus's *The Field-Strength Biquaternion and Its Invariants* works with the two invariants $\vec E^2-\vec B^2$ and $\vec E\cdot\vec B$, and they appear here multiplied by the two $\vec\kappa$-scalars $\vec\kappa\cdot\vec B$ and $\vec\kappa\cdot\vec E$ — which is exactly why the deformation cannot preserve every symmetry those invariants otherwise carry.
+where $\kappa_i = \tfrac12\epsilon_{ij\eta}\kappa_{j\eta}$ and $\kappa_{i4}=0$. At $\vec\kappa=0$ this is the Maxwell Lagrangian. The $\vec\kappa$-terms are **odd under $CP$**, which is the source's first structural remark. The corpus's *The Field-Strength Biquaternion and Its Invariants* works with the two invariants $\vec E^2-\vec B^2$ and $\vec E\cdot\vec B$, and they appear here multiplied by the two $\vec\kappa$-scalars $\vec\kappa\cdot\vec B$ and $\vec\kappa\cdot\vec E$ — which is exactly why the deformation cannot preserve every symmetry those invariants otherwise carry.
 
 The two forms are the same quantity: the $\kappa$-part of the four-index expression reproduces the three-vector expression identically (checked numerically on random fields for the companion `.context`).
 
@@ -145,14 +145,14 @@ The time derivative in front of the two rotation terms belongs there: it is what
 The striking result is that the **plane electromagnetic wave is still a solution**. With the usual ansatz
 
 $$
-\vec E = \vec E_0\,\exp(ik_\mu x_\mu),
+\vec E = \vec E_0\,\exp(ik_{\Phi,\mu} x_\mu),
 \qquad
-\vec B = (\vec u\times\vec E_0)\,\exp(ik_\mu x_\mu),
+\vec B = (\vec u\times\vec E_0)\,\exp(ik_{\Phi,\mu} x_\mu),
 \qquad
 \vec u = \vec k_\Phi/|\vec k_\Phi|,
 $$
 
-the non-linear terms arrange themselves to cancel, and the plane wave solves the deformed equations exactly as it solves the linear ones. The cancellation is worth one line of algebra because it is not an accident: for a vacuum plane wave $\vec E^2=\vec B^2$, so the last term of $\vec h$ drops; $\vec d$ and $\vec h$ become the transverse pair multiplying the single phase $\exp(2ik_\mu x_\mu)$; the double-frequency phase squares the wave vector, and the vacuum dispersion $k^2=0$ makes the deformed contributions vanish identically, for every $\vec\kappa$ (checked for the companion `.context`, where dropping the two time derivatives — as the column layout invites — makes the same test fail). Two consequences follow. First, **"plane wave" does not imply "linear theory"**: non-linearity does not by itself destroy plane-wave propagation, and the corpus's *Exercise: Plane-Wave Propagation in a Medium* is, in this picture, the **linear limit** of a one-parameter family. Second, the deformation is nonetheless physically present, because it does affect the **speed**. The source cites the result that for propagation **transverse to a background magnetic induction** the velocity differs from $c$ — a birefringence-like effect that is a direct consequence of the non-linearity and that is **very small**, being suppressed by $\vec\kappa$.
+the non-linear terms arrange themselves to cancel, and the plane wave solves the deformed equations exactly as it solves the linear ones. The cancellation is worth one line of algebra because it is not an accident: for a vacuum plane wave $\vec E^2=\vec B^2$, so the last term of $\vec h$ drops; $\vec d$ and $\vec h$ become the transverse pair multiplying the single phase $\exp(2ik_{\Phi,\mu} x_\mu)$; the double-frequency phase squares the wave vector, and the vacuum dispersion $k^2=0$ makes the deformed contributions vanish identically, for every $\vec\kappa$ (checked for the companion `.context`, where dropping the two time derivatives — as the column layout invites — makes the same test fail). Two consequences follow. First, **"plane wave" does not imply "linear theory"**: non-linearity does not by itself destroy plane-wave propagation, and the corpus's *Exercise: Plane-Wave Propagation in a Medium* is, in this picture, the **linear limit** of a one-parameter family. Second, the deformation is nonetheless physically present, because it does affect the **speed**. The source cites the result that for propagation **transverse to a background magnetic induction** the velocity differs from $c$ — a birefringence-like effect that is a direct consequence of the non-linearity and that is **very small**, being suppressed by $\vec\kappa$.
 
 The honest interpretation is therefore: the plane-wave solution is exact, and the deviation from $c$ is a computable consequence of a specified deformation, not a new free parameter. The source attributes both the plane-wave observation and the transverse-velocity result to Guralnik, Jackiw, Pi and Polychronakos, and reports them rather than deriving them. The corpus's empirical-agenda standard applies — the effect is real but $\kappa$-suppressed, so nothing here is a candidate signature.
 
@@ -347,11 +347,11 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $x_\mu$, $x_\mu$ | Non-commuting coordinate operator and its commutative image |
 | $\kappa_{\mu\nu}$ | Constant antisymmetric deformation tensor, dimension $(\text{length})^2$ |
 | $\Lambda_{NC}$, $\epsilon_{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\kappa_{\mu\nu}=\epsilon_{\mu\nu}/\Lambda_{NC}^2$ |
-| $\kappa_i$ | Three-vector of the deformation, $\kappa_i=\tfrac12\epsilon_{ij\eta}\kappa_{jk}$, $\kappa_{i4}=0$ |
+| $\kappa_i$ | Three-vector of the deformation, $\kappa_i=\tfrac12\epsilon_{ij\eta}\kappa_{j\eta}$, $\kappa_{i4}=0$ |
 | $[x_\mu,x_\nu]=i\kappa_{\mu\nu}$ | The defining commutator; the corpus's "$i r'_t$" convention is kept for time |
 | $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu})$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
-| $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ij\eta}F_{jk}$ |
+| $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ij\eta}F_{j\eta}$ |
 | $\vec D,\vec H$ | Displacement and magnetic fields; $\vec D=\vec E+\vec d$, $\vec H=\vec B+\vec h$ |
 | $\vec d,\vec h$ | Field-quadratic $\vec\kappa$-corrections of eqs. (18), (19) — the non-linear constitutive relations |
 | $\vec v=\vec E+i\vec B$ | Riemann–Silberstein vector; the non-linearity is $\vec g\propto\vec\kappa\vec v^2$ |

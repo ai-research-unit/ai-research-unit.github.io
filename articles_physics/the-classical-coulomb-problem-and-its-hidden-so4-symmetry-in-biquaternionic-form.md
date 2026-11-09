@@ -111,7 +111,7 @@ and on a fixed energy shell $E$ the second is a relation among the squares. The 
 The Poisson brackets of the six generators close on themselves:
 
 $$
-\boxed{\;\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, A_j\} = \epsilon_{ij\eta}A_\eta, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k}\;}.
+\boxed{\;\{L_{\mathrm{orb},i}, L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}, \qquad \{L_{\mathrm{orb},i}, A_j\} = \epsilon_{ij\eta}A_\eta, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},\eta}\;}.
 $$
 
 The first is the angular-momentum algebra; the second says that $\vec A$ transforms as a vector under rotations; the third is the new relation, and its coefficient depends on the energy. All three were verified by numerical differentiation of the phase-space functions at several representative bound phase-space points, with the maximum deviation from the stated right-hand sides of order $10^{-11}$.
@@ -126,7 +126,7 @@ $$
 \vec D = \frac{\vec A}{\sqrt{-2mE}} ,
 $$
 
-so that $\{D_i, D_j\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}$ and $\{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ij\eta}D_\eta$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
+so that $\{D_i, D_j\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ and $\{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ij\eta}D_\eta$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
 
 $$
 \vec S^{\pm}_{\mathrm{tot}} = \frac{1}{2}\left(\vec L \pm \vec D\right) .
@@ -151,7 +151,7 @@ where the last equality uses $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$. For the repres
 For $E > 0$ the third bracket changes sign. Defining $\vec D = \vec A/\sqrt{2mE}$ gives
 
 $$
-\{D_i, D_j\} = -\epsilon_{ij\eta}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ij\eta}D_\eta ,
+\{D_i, D_j\} = -\epsilon_{ij\eta}L_{\mathrm{orb},\eta}, \qquad \{L_{\mathrm{orb},i}, D_j\} = \epsilon_{ij\eta}D_\eta ,
 $$
 
 which is the algebra $\mathrm{SO}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\vec L\cdot\vec D$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.
@@ -168,7 +168,7 @@ The bound case is the one that bears on the hydrogen spectrum, and it is the cas
 
 ### Numerical Checks
 
-The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ij\eta}A_\eta$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S_{\Psi}^{\pm}_{\mathrm{tot},i},\tilde S_{\Psi}^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
+The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$, $\{L_{\mathrm{orb},i},A_j\} = \epsilon_{ij\eta}A_\eta$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S_{\Psi}^{\pm}_{\mathrm{tot},i},\tilde S_{\Psi}^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ij\eta}\tilde S_{\Psi}^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S_{\Psi}^{+}_{\mathrm{tot},i},\tilde S_{\Psi}^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
 
 The algebra statements of the closing section were checked at the same time on the elements themselves. The material sector was confirmed closed under the commutator, with $[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}] \subseteq \mathbb{B}_{\Phi}$ and every element of $[\mathbb{B}_{\Phi},\mathbb{B}_{\Phi}]$ again anti-Hermitian; the traceless part was confirmed to close exactly on
 
@@ -297,7 +297,7 @@ The particle is structureless and carries no intrinsic magnetic moment; its orbi
 The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\vec u_r$ with $|\vec A| = m|\kappa|e$. The six generators close under the Poisson bracket:
 
 $$
-\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},k}, \qquad \{L_{\mathrm{orb},i},A_j\} = \epsilon_{ij\eta}A_\eta, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k} .
+\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\} = \epsilon_{ij\eta}L_{\mathrm{orb},\eta}, \qquad \{L_{\mathrm{orb},i},A_j\} = \epsilon_{ij\eta}A_\eta, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},\eta} .
 $$
 
 Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$, the generators satisfy
@@ -333,9 +333,9 @@ The framework supplies the real three-space in which all six generators take the
 | $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector |
 | $|\vec A| = m|\kappa|e$; $\vec A\cdot\vec L = 0$ | Magnitude and orthogonality |
 | $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ | Magnitude identity |
-| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | Angular-momentum bracket |
+| $\{L_{\mathrm{orb},i},L_{\mathrm{orb},j}\}=\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ | Angular-momentum bracket |
 | $\{L_{\mathrm{orb},i},A_j\}=\epsilon_{ij\eta}A_\eta$ | Vector transformation of $\vec A$ |
-| $\{A_i,A_j\}=-2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},k}$ | Energy-dependent bracket |
+| $\{A_i,A_j\}=-2mE\,\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$ | Energy-dependent bracket |
 | $\vec D = \vec A/\sqrt{-2mE}$ $(E<0)$ | Rescaled generator |
 | $\vec S^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$ | $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ generators |
 | $(\vec S^\pm_{\mathrm{tot}})^2 = m\kappa^2/(8|E|)$ | Equal Casimirs |

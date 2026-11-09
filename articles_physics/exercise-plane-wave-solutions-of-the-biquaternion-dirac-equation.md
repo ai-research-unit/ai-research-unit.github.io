@@ -310,7 +310,7 @@ The two values are unchanged, the two bases move with the reading, and no deriva
 **Solution.** The plane-wave ansatz carries the wave biquaternion
 
 $$
-\tilde K_{\Phi}=\frac{i\omega}{c}\,e_t+\vec k_\Phi,\qquad \vec k_\Phi=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z ,
+\tilde K_{\Phi}=\frac{i\omega}{c}\,e_t+\vec k_\Phi,\qquad \vec k_\Phi=k_{\Phi x}\vec e_x+k_{\Phi y}\vec e_y+k_{\Phi z}\vec e_z ,
 $$
 
 an element of the material sector $\mathbb{B}_{\Phi}$: imaginary scalar part and real vector part. Its quaternionic norm is the norm of *Algebra and Element Conventions*, §*The Conjugations*, so

@@ -92,7 +92,7 @@ $$
 \tilde{Ϛ}_{\Psi} = \frac{\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})},
 $$
 
-and the entries are, with $\rho_{jk}$ the matrix elements in the path basis,
+and the entries are, with $\rho_{j\eta}$ the matrix elements in the path basis,
 
 $$
 \rho_{11} = \frac{|A_1|^2}{|A_1|^2 + |A_2|^2}, \qquad
@@ -203,7 +203,7 @@ $$
 \mathrm{Tr}\!\bigl((\tilde Q_{\mathrm{amp}}s)^\dagger(\tilde Q_{\mathrm{amp}}s)\bigr) = \mathrm{Tr}\bigl(s^\dagger \tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}}s\bigr) = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}\,\mathrm{Tr}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
 $$
 
-because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_k a_k\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_k a_k\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
+because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_\eta a_k\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_\eta a_k\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
 
 So the *spin-summed* two-slit intensity, for a common spin state, is **root-independent**; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the *type* of the amplitude and the *action* of the phase:
 

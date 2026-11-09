@@ -50,12 +50,12 @@ In tensor language the same object is the antisymmetric rank-two tensor
 $$
 F_{\mu\nu} = \frac{\partial A_\nu}{\partial R_\mu} - \frac{\partial A_\mu}{\partial R_\nu},
 \qquad
-F_{0k} = \frac{iE_\eta}{c},
+F_{0\eta} = \frac{iE_\eta}{c},
 \qquad
-F_{jk} = \epsilon_{j\eta l}B_l .
+F_{j\eta} = \epsilon_{j\eta l}B_l .
 $$
 
-It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\eta$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0k}$ sit on the planes that contain the time direction and the three $F_{jk}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\nabla\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\eta = i\sqrt{\epsilon}E_\eta - \sqrt{\mu}H_\eta$ are then the same statement read component by component.
+It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\eta$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0\eta}$ sit on the planes that contain the time direction and the three $F_{j\eta}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\nabla\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\eta = i\sqrt{\epsilon}E_\eta - \sqrt{\mu}H_\eta$ are then the same statement read component by component.
 
 ## The Place of the Field Strength in the Algebra
 
@@ -110,9 +110,9 @@ The scalar subspace $\mathbb{B}_{C}$ receives no contribution, which is again $\
 **The biparavector interpretation: the field as two families of planes.** The two halves just separated are not merely subspaces; each is a **family of planes**. The separation of the field into an electric and a magnetic part is the separation of the biparavector into a timelike and a spacelike part. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime. With the paravector directions $i\vec e_\eta$ there are six independent planes,
 
 $$
-\{e_t\,i\vec e_\eta\}_{k=x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
+\{e_t\,i\vec e_\eta\}_{\eta =x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
-\{(i\vec e_j)(i\vec e_\eta)\}_{(j,k)=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
+\{(i\vec e_j)(i\vec e_\eta)\}_{(j,\eta )=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
 $$
 
 using $(i\vec e_j)(i\vec e_\eta)=-\vec e_j\vec e_\eta$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_\eta = i\vec e_\eta$ and are the pure **imaginary** vectors, that is the real span of $\{i\vec e_\eta\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_\eta)$ and are the pure **real** vectors, that is the real span of $\{\vec e_\eta\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Phi}$.
@@ -347,7 +347,7 @@ $$
 
 with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\vec N$ part ($\star F = -iF$) is the **self-dual** half and the $\vec N^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\vec N^*$ adds no new data: $\vec N$ alone already carries the six real field components of $(\vec E,\vec B)$. On the complexified field space they are instead independent, and each carries one of the two three-dimensional complex representations of the Lorentz group, one at each value read by the test of an element, $L$ and $R$. The biquaternion proof uses the antisymmetric-tensor action of the Lorentz group, not the four-vector rotor conjugation.
 
-*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\mu\nu\rho\sigma}\mapsto-\epsilon_{\mu\nu\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0k}=B_\eta$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
+*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\mu\nu\rho\sigma}\mapsto-\epsilon_{\mu\nu\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0\eta}=B_\eta$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
 
 ## Duality Rotation
 

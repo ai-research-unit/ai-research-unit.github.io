@@ -192,7 +192,7 @@ $$
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
-r_{,k} = \frac{r_\eta}{r},$$
+r_{,\eta} = \frac{r_\eta}{r},$$
 
 so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\vec u_e$ the derived form is
 
@@ -206,7 +206,7 @@ and the paper's stated general form, its equation (4.4), carries the opposite si
 The energy density is the same function of the Bessel functions as the pulsar's. Because the scalar and vector parts contribute with the weights $r_{,1}^2$ and $r_{,2}^2 + r_{,3}^2$, and because
 
 $$
-\sum_{\eta=1}^{3} r_{,k}^2 = 1
+\sum_{\eta=1}^{3} r_{,\eta}^2 = 1
 $$
 
 identically, the two contributions complete to
@@ -290,7 +290,7 @@ $$
 and each successive octave doubles the previous one, so that the frequency of the $k$-th tone in the $n$-th octave is
 
 $$
-\omega_{nk} = 2^n\gamma_\eta\,\omega,
+\omega_{n\eta} = 2^n\gamma_\eta\,\omega,
 \qquad
 \gamma_\eta \in \left\{1, \tfrac98, \tfrac54, \tfrac43, \tfrac32, \tfrac53, \tfrac{15}{8}, 2\right\},
 $$
@@ -375,7 +375,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\vec P$ | Poynting analogue (vector part of $\tilde{\Sigma}_{\Psi}$) |
 | $\omega_0$ | Frequency of the "elementary hydrogen atom" |
 | $\gamma_\eta$ | Just-scale ratios $\{1,\tfrac98,\tfrac54,\tfrac43,\tfrac32,\tfrac53,\tfrac{15}{8},2\}$ |
-| $\omega_{nk} = 2^n\gamma_\eta\omega$ | Frequency of tone $k$ in octave $n$ |
+| $\omega_{n\eta} = 2^n\gamma_\eta\omega$ | Frequency of tone $k$ in octave $n$ |
 
 ## Further Reading
 

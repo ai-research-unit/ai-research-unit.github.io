@@ -242,7 +242,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\tilde\Pi_z = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
-| $\tilde\Pi_{n_k} = \tfrac{1}{2}(e_t + i\vec u_\eta)$ | Idempotent along direction $\vec u_\eta$ |
+| $\tilde\Pi_{n_\eta} = \tfrac{1}{2}(e_t + i\vec u_\eta)$ | Idempotent along direction $\vec u_\eta$ |
 | $\vec u_\eta = \sin\theta_k\,\vec e_x + \cos\theta_k\,\vec e_z$ | Unit vector for the $k$-th direction |
 | $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ | Transition probability between idempotents |
 

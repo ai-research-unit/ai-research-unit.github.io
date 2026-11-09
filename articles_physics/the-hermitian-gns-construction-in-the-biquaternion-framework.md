@@ -103,7 +103,7 @@ $$
 $$
 It is convenient to compute the Gram matrix of the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$,
 $$
-G_{jk} = \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\eta\big),
+G_{j\eta} = \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\eta\big),
 $$
 with $e_j,\vec e_\eta$ ranging over the basis; its rank is $\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$.
 
@@ -139,7 +139,7 @@ $$
 $$
 so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
 
-**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{jk}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\eta)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.
+**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{j\eta}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\eta)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.
 
 Three structural consequences follow, and they are the content of the construction for this framework.
 
@@ -256,7 +256,7 @@ Every state of this article has been written down as a density matrix. For a tra
 **The classical statement.** Let $G$ be a locally compact abelian group with dual group $G^{\vee}$ and characters $\xi$. A continuous function $\xi_{\mathrm{scl}} : G \to \mathbb{C}$ is **positive definite** when
 
 $$
-\sum_{k,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_\eta - g_l) \ge 0
+\sum_\eta,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_\eta - g_l) \ge 0
 $$
 
 for every finite set of points and coefficients, and **normalised** when $\xi_{\mathrm{scl}}(0)=1$. The theorem of Bochner states that a continuous, normalised, positive-definite $\xi_{\mathrm{scl}}$ is the Fourier transform of a unique probability measure on the dual group:

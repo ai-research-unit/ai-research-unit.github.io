@@ -57,21 +57,21 @@ $$
 the momentum wave number of the parent read at the shifted frequency, and outside the well the solution decays with
 
 $$
-\kappa=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c},
+k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c},
 $$
 
 which is real in the gap and is the inverse of the decay length. Both are inverse lengths: the first is a wave number and the second a decay constant, and it is the second that vanishes at the threshold.
 
-Take the even solution, $\tilde{Ξ}_{\mathrm{sp},1}=\cos(k_{\Phi,\mathrm{w}}r_x)$ inside and $\tilde{Ξ}_{\mathrm{sp},1}=\exp(-\kappa r_x)$ outside. The second line of the pair fixes the other component in each region, and continuity of the ratio $\tilde{Ξ}_{\mathrm{sp},1}/\tilde{Ξ}_{\mathrm{sp},2}$ at the wall $r_x=a=L/2$ gives
+Take the even solution, $\tilde{Ξ}_{\mathrm{sp},1}=\cos(k_{\Phi,\mathrm{w}}r_x)$ inside and $\tilde{Ξ}_{\mathrm{sp},1}=\exp(-k_{\Phi,\mathrm{ev}} r_x)$ outside. The second line of the pair fixes the other component in each region, and continuity of the ratio $\tilde{Ξ}_{\mathrm{sp},1}/\tilde{Ξ}_{\mathrm{sp},2}$ at the wall $r_x=a=L/2$ gives
 
 $$
-\frac{\kappa}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan\bigl(k_{\Phi,\mathrm{w}}a\bigr)}{E+V_0+mc^{2}},
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan\bigl(k_{\Phi,\mathrm{w}}a\bigr)}{E+V_0+mc^{2}},
 $$
 
 and the same statement for the odd solution, $\tilde{Ξ}_{\mathrm{sp},1}=\sin(k_{\Phi,\mathrm{w}}r_x)$ inside, gives
 
 $$
-\frac{\kappa}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot\bigl(k_{\Phi,\mathrm{w}}a\bigr)}{E+V_0+mc^{2}}.
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot\bigl(k_{\Phi,\mathrm{w}}a\bigr)}{E+V_0+mc^{2}}.
 $$
 
 The two lines are the whole of the problem. Each is the continuity of one ratio at one wall, the same statement the companion article writes for the transmitted amplitude at a step, with the discontinuity replaced by a wall and the exponential tail kept. No approximation enters: the potential is constant on each region, so the solutions are exact there, and the conditions are transcendental only because the wave number inside depends on the energy that is being solved for.
@@ -80,10 +80,10 @@ The two lines are the whole of the problem. Each is the continuity of one ratio 
 
 ### The condition at the lower edge
 
-Let the energy approach the lower edge of the gap, $E\to-mc^{2}$ from above. The decay constant vanishes there, $\kappa\to0$, but the factor $E+mc^{2}$ vanishes faster, since
+Let the energy approach the lower edge of the gap, $E\to-mc^{2}$ from above. The decay constant vanishes there, $k_{\Phi,\mathrm{ev}}\to0$, but the factor $E+mc^{2}$ vanishes faster, since
 
 $$
-\frac{\kappa}{E+mc^{2}}=\frac{1}{\hbar c}\sqrt{\frac{mc^{2}-E}{mc^{2}+E}}\;\longrightarrow\;\frac{1}{\hbar c}\sqrt{\frac{2mc^{2}}{\varepsilon}},
+\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{1}{\hbar c}\sqrt{\frac{mc^{2}-E}{mc^{2}+E}}\;\longrightarrow\;\frac{1}{\hbar c}\sqrt{\frac{2mc^{2}}{\varepsilon}},
 \qquad
 \varepsilon=E+mc^{2},
 $$
@@ -155,7 +155,7 @@ The second table follows the lowest even level of a well of width $k_mL=10$ as t
 | $0.001$ | $-0.999185$ | $8.149\times10^{-4}$ |
 | $0.0003$ | $-0.999793$ | $2.067\times10^{-4}$ |
 
-The level descends monotonically to the edge and does not jump: at $V_0^{\mathrm{cr}}$ the even condition vanishes at $E=-mc^{2}$ to $3\times10^{-10}$, and the three conditions of the threshold hold together — $\kappa=0$, $\cos(k_{\Phi,\mathrm{w}}a)=0$ to $-5\times10^{-15}$, and $V_0$ at its formula value. Above the threshold no even level remains in the gap: at $V_0=V_0^{\mathrm{cr}}+10^{-3}mc^{2}$ the lowest even level in the gap is $E=-0.697067\,mc^{2}$, which is the next state up, and the tracked level has left the gap for the lower continuum. The odd level behaves identically at $n_{\mathrm{w}}=2$, reaching $E=-0.999489\,mc^{2}$ at $V_0^{\mathrm{cr}}-10^{-3}mc^{2}$ with $V_0^{\mathrm{cr}}=2.181010\,mc^{2}$.
+The level descends monotonically to the edge and does not jump: at $V_0^{\mathrm{cr}}$ the even condition vanishes at $E=-mc^{2}$ to $3\times10^{-10}$, and the three conditions of the threshold hold together — $k_{\Phi,\mathrm{ev}}=0$, $\cos(k_{\Phi,\mathrm{w}}a)=0$ to $-5\times10^{-15}$, and $V_0$ at its formula value. Above the threshold no even level remains in the gap: at $V_0=V_0^{\mathrm{cr}}+10^{-3}mc^{2}$ the lowest even level in the gap is $E=-0.697067\,mc^{2}$, which is the next state up, and the tracked level has left the gap for the lower continuum. The odd level behaves identically at $n_{\mathrm{w}}=2$, reaching $E=-0.999489\,mc^{2}$ at $V_0^{\mathrm{cr}}-10^{-3}mc^{2}$ with $V_0^{\mathrm{cr}}=2.181010\,mc^{2}$.
 
 **What the crossing means.** Below the threshold the level is a normalizable state of the well, and its energy is a property of the well. At the threshold it is degenerate with the lower continuum; above it there is no normalizable state of that parity in the gap at all. The one-particle equation has not failed: it still has solutions. What has failed is that any of them is normalisable, and that the one which was normalisable is the ground state of one electron. The level has dissolved into the lower continuum, and the failure is the same one the companion article finds at the step. The difference is bookkeeping: at the step the pair leaves as a current and the account is closed at infinity, and here the positron leaves while the electron is held, so the account is closed by the charge of the region.
 
@@ -239,7 +239,7 @@ $$
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
 
 $$
-\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-\frac{3\,m^{2}c\,\omega}{k_m}-2m\omega\sum_\eta L_{\mathrm{orb},k}\,i\vec e_\eta ,
+\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-\frac{3\,m^{2}c\,\omega}{k_m}-2m\omega\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta ,
 \qquad
 E^{2}=m^{2}c^{4}+c^{2}\,\mathcal Q_{+}\mathcal Q_{-}.
 $$
@@ -286,7 +286,7 @@ The mass step is the bag-model mechanism of Bardeen, Chanowitz, Drell, Weinstein
 
 ## Summary
 
-A well of depth $V_0$ and width $L$ in the electrostatic potential is the Klein step with a finite region. The reduced Dirac pair is matched at the two walls, and the even and odd conditions are $\frac{\kappa}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$ and $\frac{\kappa}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$, with $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and $\kappa=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$.
+A well of depth $V_0$ and width $L$ in the electrostatic potential is the Klein step with a finite region. The reduced Dirac pair is matched at the two walls, and the even and odd conditions are $\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$ and $\frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot(k_{\Phi,\mathrm{w}}a)}{E+V_0+mc^{2}}$, with $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ and $k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$.
 
 At the lower edge of the gap the left side diverges and the conditions reduce to $\cos(k_{\Phi,\mathrm{w}}a)=0$ and $\sin(k_{\Phi,\mathrm{w}}a)=0$, that is $k_{\Phi,\mathrm{w}}a=n_{\mathrm{w}}\pi/2$, and the threshold depth is
 
@@ -313,7 +313,7 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $ϙ\xi(r_x)=-V_0$ inside the well | Electrostatic potential energy |
 | $E$, $mc^{2}$, $(-mc^{2},mc^{2})$ | Total energy, rest energy, and the gap |
 | $k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c}$ | Wave number inside the well |
-| $\kappa=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$ | Decay constant outside the well; $1/\kappa$ the decay length |
+| $k_{\Phi,\mathrm{ev}}=\frac{\sqrt{m^{2}c^{4}-E^{2}}}{\hbar c}$ | Decay constant outside the well; $1/k_{\Phi,\mathrm{ev}}$ the decay length |
 | $n_{\mathrm{w}}=1,2,3,\dots$ | Half-wavelengths across the well; odd is the even solution |
 | $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}]$ | Threshold depth of the $n_{\mathrm{w}}$-th level |
 | $N(V_0,L)=\lfloor\frac{k_mL}{\pi}\sqrt{(V_0/mc^{2}-1)^{2}-1}\rfloor$ | Number of levels that have crossed into the lower continuum; zero for $V_0\le2mc^{2}$ |

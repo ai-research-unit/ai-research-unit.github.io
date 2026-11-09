@@ -42,7 +42,7 @@ For a non-relativistic particle of mass $m$ in a potential $V$, the path integra
 
 $$
 G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})
-=\lim_{N\to\infty}\int\prod_{k=1}^{N-1}dx_k\;\prod_{k=0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{k+1},x_k),
+=\lim_{N\to\infty}\int\prod_{\eta =1}^{N-1}dx_k\;\prod_{\eta =0}^{N-1}G_{\mathrm{prop},\varepsilon}(x_{\eta +1},x_k),
 $$
 
 with the single-step kernel
@@ -64,7 +64,7 @@ This is the statement that the sum over paths is a sum over the intermediate poi
 $$\exp(\frac{k_m\,iS_{1}}{m\,c})+\exp(\frac{k_m\,iS_{2}}{m\,c})=2\cos\!\Big(\frac{k_m\,\Delta\,S}{2\,m\,c}\Big)\exp(\frac{k_m\,i\,\bar{S}}{m\,c}),
 \qquad \bar S=\tfrac12(S_1+S_2),$$
 so the intensity has fringes with complete destructive nodes at $\Delta S=\frac{m\,c\,(2n+1)\,\pi}{k_m}$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
-$$\Big|\sum_{k=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
+$$\Big|\sum_\eta=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
 The phase is therefore the entire dynamical content of the sum: the measure counts paths, and the phase makes them interfere.
 
 **Classical limit.** In the limit $\hbar\to0$ the stationary-phase approximation retains only the paths with $\delta S=0$, i.e. the classical trajectories, and the leading correction is the Gaussian integral over the fluctuations. The biquaternion framework does not change this; it changes only what the symbol $i$ in the exponent denotes, which is the subject of the next section.
@@ -276,7 +276,7 @@ The sum over paths integrates over trajectories $r_x(r'_t)$ that are ordinary co
 $$
 r_x\,dr_x/dr'_t=\lim_{\varepsilon\to0}r_x(r'_t)\frac{r_x(r'_t)-r_x(r'_t-\varepsilon)}{\varepsilon}
 $$
-is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\hbar/m$ read in the other variable — the two orderings are
+is therefore ambiguous: the two orderings of the numerator differ by a term that does not vanish as $\varepsilon\to0$. Writing the discrete two-point function of the free Euclidean particle as $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,\eta})$ — the diffusion coefficient of the coordinate $r'_t$, the duration coefficient $\hbar/m$ read in the other variable — the two orderings are
 $$
 \frac{1}{\varepsilon}\big\langle x_j(x_{j+1}-x_j)\big\rangle=0,
 \qquad
@@ -378,7 +378,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
 | $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{wkb}}$ |
 | $\exp(-i\pi\nu/2)$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
-| $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,k})$ | Free Euclidean two-point function; contact term $\frac{1}{k_m}$ |
+| $\langle  x_jx_\eta\rangle=(\frac{1}{k_m})\min(r'_{t,j},r'_{t,\eta})$ | Free Euclidean two-point function; contact term $\frac{1}{k_m}$ |
 | $[x,p]=\frac{m\,c\,i}{k_m}$ | Canonical commutator; the value $\frac{m\,c\,i}{k_m}$ is central and in $\mathbb{B}_{\Phi}$ |
 | $[p,[p,g]]=-\frac{m^{2}\,c^{2}\,d\,g}{k_m^{2}\,x^{2}}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |

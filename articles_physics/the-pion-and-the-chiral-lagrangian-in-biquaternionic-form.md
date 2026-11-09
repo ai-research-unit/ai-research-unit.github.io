@@ -235,7 +235,7 @@ The chiral Lagrangian's currents are what couple the pions to the rest of the St
 **The vector current.** The unbroken isospin current is the Noether current of the diagonal $SU(2)_V$ acting as $\tilde U\mapsto g_V\tilde U g_V^{*}$. It is built from the Maurer–Cartan form of the companion article, and at lowest order it is
 
 $$
-j_{\mu k} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\left[\vec e_\eta,\tilde U\right]\right) + \cdots
+j_{\mu \eta} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\left[\vec e_\eta,\tilde U\right]\right) + \cdots
 = -\sum_{j,l}\epsilon_{\eta jl}\,\pi_j\,\frac{\partial\pi_l}{\partial R_\mu} + \cdots ,
 $$
 
@@ -265,7 +265,7 @@ $$
 The axial vertex is therefore the frame basis operator with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives. The vertex of the axial current in the direction $k$ is that product read on the quark field, with the isospin generator:
 
 $$
-j_{5\mu k} = \bar q\,C_\mu\xi\,T_\eta\,q .
+j_{5\mu \eta} = \bar q\,C_\mu\xi\,T_\eta\,q .
 $$
 
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
@@ -290,7 +290,7 @@ the basis operator $i\xi$ being the right multiplication by $\vec e_z$, the phas
 $$
 \langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_\eta + \cdots ,
 \qquad
-\langle 0|j_{5\mu k}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{\eta l} ,
+\langle 0|j_{5\mu \eta}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{\eta l} ,
 $$
 
 which is the partially conserved axial current (PCAC) and the defining matrix element of the decay constant. The framework does not produce this current as the Noether current of a symmetry of its centre: the centre is vector-like, and no axial generator exists in $\mathbb{B}_{C}$. The fifth basis operator belongs to the frame and not to the centre; it can carry the axial vertex, but it does not generate a chiral symmetry of the algebra. The axial current, its anomaly and the Wess–Zumino–Witten term are therefore imported from the fermion and general-gauge sectors, and the framework's contribution is the geometric field and its normalisation.
@@ -434,10 +434,10 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\bar q,q$ | Quark fields; the condensate and the axial current belong to the fermion sector |
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
-| $j_{\mu k}$, $j_{5\mu k}$ | Isospin (vector) and axial currents |
+| $j_{\mu \eta}$, $j_{5\mu \eta}$ | Isospin (vector) and axial currents |
 | $C_\mu$, $\xi$ | Frame basis operator of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
-| $\langle0\vert j_{5\mu k}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{\eta l}$ | Defining matrix element of $f_\pi$ |
+| $\langle0\vert j_{5\mu \eta}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{\eta l}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{\Phi,5k}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, used for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the weight with the opposite sign, $-\varepsilon_\mu\delta_{\mu\nu}$ |

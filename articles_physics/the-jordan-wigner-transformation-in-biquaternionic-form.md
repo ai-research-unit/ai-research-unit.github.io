@@ -7,7 +7,7 @@ A spin-$\tfrac12$ chain and a chain of fermionic modes obey different commutatio
 This article establishes:
 
 - **The one-site case is the algebra's own identity.** The ladder of a site is nilpotent, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$ and $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}$, so a one-site spin ladder *is* a fermionic mode with no string attached. There is nothing to transform at one site.
-- **The string.** For $N$ sites the extension must carry a string, and the string is the tensor product of the one-site parities, $\prod_{k<j}i\vec e_z=\prod_{k<j}(-1)^{n_k}$. It lies in $\bigotimes_j\mathbb{B}_j$ and not in $\mathbb{B}$, and at one site it is the empty product, the identity.
+- **The string.** For $N$ sites the extension must carry a string, and the string is the tensor product of the one-site parities, $\prod_{\eta <j}i\vec e_z=\prod_{\eta <j}(-1)^{n_k}$. It lies in $\bigotimes_j\mathbb{B}_j$ and not in $\mathbb{B}$, and at one site it is the empty product, the identity.
 - **The transformation, its parity and its nonlocality.** The two lists generate one algebra, of complex dimension $4^N$, and the change between them is the transformation. It respects the parity, which is one element on both lists, and it is not local: a one-site element of the spin list becomes a string-laden element of the mode list. The transformation is a choice of square root of the chain algebra, and the ordering of the sites is the branch.
 - **The consequences.** The hopping identity, the number and parity identities, the inverse map, the free solution of the XY chain, and the boundary term that distinguishes the two parity sectors.
 
@@ -16,7 +16,7 @@ The standard material is transcribed with explicit signs; the biquaternion conte
 $$
 \boxed{\;\tilde C_j=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{m\,c} ,
 \qquad
-\tilde Z_{<j}=\prod_{k<j}\tilde Z_k ,
+\tilde Z_{<j}=\prod_{\eta <j}\tilde Z_k ,
 \qquad
 \tilde S_{\Psi,\pm,j}=\tilde S_{\Psi,x,j}\pm  i\tilde S_{\Psi,y,j}\;},
 $$
@@ -92,12 +92,12 @@ Let the chain carry $N$ sites, with chain algebra $\bigotimes_{j=1}^N\mathbb{B}_
 **The mode and its star.** Define, for $j=1,\dots,N$,
 
 $$
-\tilde C_j=\Bigl(\prod_{k<j}\tilde Z_k\Bigr)\frac{k_m\,\tilde{S}_{\Psi,+,j}}{m\,c} ,
+\tilde C_j=\Bigl(\prod_{\eta <j}\tilde Z_k\Bigr)\frac{k_m\,\tilde{S}_{\Psi,+,j}}{m\,c} ,
 \qquad
-\tilde C_j^{*}=\Bigl(\prod_{k<j}\tilde Z_k\Bigr)\frac{k_m\,\tilde{S}_{\Psi,-,j}}{m\,c} ,
+\tilde C_j^{*}=\Bigl(\prod_{\eta <j}\tilde Z_k\Bigr)\frac{k_m\,\tilde{S}_{\Psi,-,j}}{m\,c} ,
 $$
 
-with $\tilde Z_{<j}=\prod_{k<j}\tilde Z_k$ the string of site $j$ and $\tilde Z_{<1}=e_t$. The second is the star of the first, because $\tilde Z_k^{*}=\tilde Z_k$ and $\tilde S_{\Psi,+,j}^{*}=\tilde S_{\Psi,-,j}$. The string is a product of parities, hence Hermitian and of square the identity,
+with $\tilde Z_{<j}=\prod_{\eta <j}\tilde Z_k$ the string of site $j$ and $\tilde Z_{<1}=e_t$. The second is the star of the first, because $\tilde Z_k^{*}=\tilde Z_k$ and $\tilde S_{\Psi,+,j}^{*}=\tilde S_{\Psi,-,j}$. The string is a product of parities, hence Hermitian and of square the identity,
 
 $$
 \tilde Z_{<j}^{*}=\tilde Z_{<j} ,
@@ -152,7 +152,7 @@ Both were verified bond by bond and site by site on the four-site chain. The inv
 The string is not a novel object. It is the product of the parities of the sites to its left,
 
 $$
-\tilde Z_{<j}=\prod_{k<j}\tilde Z_k=\prod_{k<j}(-1)^{n_k} ,
+\tilde Z_{<j}=\prod_{\eta <j}\tilde Z_k=\prod_{\eta <j}(-1)^{n_k} ,
 \qquad
 (-1)^{n}=i\vec e_z=\frac{2\,k_m\,\tilde{S}_{\Psi,z}}{m\,c} ,
 $$
@@ -160,7 +160,7 @@ $$
 the one-site factor being the parity element the parents isolate in $\mathbb{B}_{\Psi}$. The Jordan–Wigner string is therefore the tensor product of the one-site biquaternion parities,
 
 $$
-\tilde Z_{<j}\;\in\;\bigotimes_{k=1}^{j-1}\mathbb{B}_k ,
+\tilde Z_{<j}\;\in\;\bigotimes_{\eta =1}^{j-1}\mathbb{B}_k ,
 $$
 
 one factor of $i\vec e_z$ per site to the left. This is the biquaternion content of the transformation, and it explains both of its structural features at once.
@@ -170,7 +170,7 @@ one factor of $i\vec e_z$ per site to the left. This is the biquaternion content
 
 ## The Map as a Change of Generators and Its Grading
 
-**The two lists generate one algebra.** The $3N$ spin elements $\tilde S_{\Psi,k,j}$ generate the chain algebra, and so do the $2N$ elements $\tilde C_j,\tilde C_j^{*}$: each mode is a product of spin elements, and the inverse above returns the spin elements from the modes. The chain algebra has complex dimension $4^N$, the dimension of $N$ copies of $\mathbb{B}$, and the generation was verified by rank computation for $N=1$ (dimension $4$) and $N=2$ (dimension $16$). The transformation is the change from the first list to the second, inside one algebra; it is invertible and it is unital.
+**The two lists generate one algebra.** The $3N$ spin elements $\tilde S_{\Psi,\eta ,j}$ generate the chain algebra, and so do the $2N$ elements $\tilde C_j,\tilde C_j^{*}$: each mode is a product of spin elements, and the inverse above returns the spin elements from the modes. The chain algebra has complex dimension $4^N$, the dimension of $N$ copies of $\mathbb{B}$, and the generation was verified by rank computation for $N=1$ (dimension $4$) and $N=2$ (dimension $16$). The transformation is the change from the first list to the second, inside one algebra; it is invertible and it is unital.
 
 **It respects the parity and it does not preserve locality.** The whole-chain parity is the product of the site parities,
 
@@ -209,12 +209,12 @@ are one element, with spectrum $\{-2J,0,0,+2J\}$ — a non-degenerate lowest val
 
 ### The String as a Cocycle
 
-The string has one more structural property that the spin language hides and the mode language makes plain: it is a multiplicative one-cocycle of the site ordering. With $\tilde Z_{<j}=\prod_{k<j}\tilde Z_k$, the increment from one site to the next is that site's own parity,
+The string has one more structural property that the spin language hides and the mode language makes plain: it is a multiplicative one-cocycle of the site ordering. With $\tilde Z_{<j}=\prod_{\eta <j}\tilde Z_k$, the increment from one site to the next is that site's own parity,
 
 $$
 \tilde Z_{<j+1}=\tilde Z_{<j}\tilde Z_j ,
 \qquad
-\tilde Z_{<j}\tilde Z_{<i}^{-1}=\prod_{i\le k<j}\tilde Z_k\quad(i<j) ,
+\tilde Z_{<j}\tilde Z_{<i}^{-1}=\prod_{i\le \eta <j}\tilde Z_k\quad(i<j) ,
 $$
 
 so the relative string of two sites is the parity of the interval between them. Three things follow. The modes anticommute, $\tilde C_i\tilde C_j=-\tilde C_j\tilde C_i$ for $i\ne j$, and the sign is the single element $\tilde Z_i$ that the longer string carries beside a raising element. Each mode is defined only relative to the ordering, since $\tilde C_j$ carries the parity of every site to its left. And the transformation is nonlocal for a reason the cochain makes visible: an element supported on one site of the spin list is supported on that site and on every site to its left in the mode list.
@@ -232,7 +232,7 @@ The biquaternion reading is the same as before: the increments of the cochain ar
 **The algebra's own.**
 
 - *The one-site identity.* The ladder of a site is a pair of nilpotents with $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$ inside $\mathbb{B}$, and the transformation has a one-site fixed point.
-- *The string as the product of one-site parities.* $\prod_{k<j}\tilde Z_k$, with $\tilde Z_k=i\vec e_z$ the parity element of a site. The string is the tensor product of the parities of the algebra, and its non-diagonality is the external grading the spin–statistics companion records.
+- *The string as the product of one-site parities.* $\prod_{\eta <j}\tilde Z_k$, with $\tilde Z_k=i\vec e_z$ the parity element of a site. The string is the tensor product of the parities of the algebra, and its non-diagonality is the external grading the spin–statistics companion records.
 - *The parity statement.* The parity is one element, $\prod_j\tilde Z_j$, on both lists, and the transformation respects it: the site parities are even and the modes are odd. What the transformation does not preserve is the site structure, since a one-site spin element becomes a string-laden mode element.
 - *The declared axis.* The parity is diagonal in the frame built on the declared unit and not in the coefficient basis, and the diagonal products of the two bases are different fours. The axis is a property of the basis, and no unit is privileged by the algebra.
 
@@ -369,7 +369,7 @@ $$
 =-\tfrac12\bigl((\vec e_x)_j(\vec e_x)_{j+1}+(\vec e_y)_j(\vec e_y)_{j+1}\bigr) ,
 $$
 
-all verified with zero error on chains of up to four sites. The string is the product of the one-site parities, $\prod_{k<j}\tilde Z_k=\prod_{k<j}(-1)^{n_k}$, each factor being the parity element $i\vec e_z$; it is the identity at one site and non-diagonal beyond, which is the same externality of the grading that the spin–statistics companion records for the field.
+all verified with zero error on chains of up to four sites. The string is the product of the one-site parities, $\prod_{\eta <j}\tilde Z_k=\prod_{\eta <j}(-1)^{n_k}$, each factor being the parity element $i\vec e_z$; it is the identity at one site and non-diagonal beyond, which is the same externality of the grading that the spin–statistics companion records for the field.
 
 The transformation is a change of generators of one algebra — both lists generate the whole algebra, of complex dimension $4^N$, verified by rank computation for $N=1,2$ — it respects the parity, and it is not local: a one-site spin element becomes a string-laden mode element, the modes are the odd elements whose products span the even part, and the ordering of the sites is the branch. The consequences are the standard ones: the XY chain becomes free modes, the whole-chain parity $\prod_j\tilde Z_j$ labels the two boundary-condition sectors, and the near-degeneracy of the ordered phase appears as the standard $\mathbb{Z}_2$ structure.
 
@@ -380,7 +380,7 @@ The transformation is a change of generators of one algebra — both lists gener
 | $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp\vec e_y)$ | Spin of a site; the ladder is derived from it |
 | $\tilde S_{\Psi,\pm}^2=0$, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$, $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}$ | Canonical anticommutator inside the algebra; the commutator is not central |
 | $\tilde Z_j=i\vec e_z$ at site $j$ | Parity of a site, $=\frac{2\,k_m\,\tilde{S}_{\Psi,z,j}}{m\,c}=(-1)^{n_j}$ |
-| $\tilde Z_{<j}=\prod_{k<j}\tilde Z_k$ | The string, $e_t$ at $j=1$; Hermitian, of square $e_t$ |
+| $\tilde Z_{<j}=\prod_{\eta <j}\tilde Z_k$ | The string, $e_t$ at $j=1$; Hermitian, of square $e_t$ |
 | $\tilde C_j=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{m\,c}$, $\tilde C_j^{*}=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,-,j}}{m\,c}$ | Mode and its star |
 | $\{\tilde C_i,\tilde C_j\}=0$, $\{\tilde C_i,\tilde C_j^{*}\}=\delta_{ij}e_t$ | Canonical anticommutators (verified, error $0$) |
 | $\tilde N_j=\tilde C_j^{*}\tilde C_j=\tfrac12(e_t-\tilde Z_j)$ | Occupation of a site |

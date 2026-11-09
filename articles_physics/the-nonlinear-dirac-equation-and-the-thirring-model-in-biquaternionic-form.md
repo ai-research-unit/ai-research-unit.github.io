@@ -50,12 +50,12 @@ so the current is a density of the field and not a derivative of it.
 The axial bilinear is the vector bilinear with the right unit displaced. Where the vector reads $\vec e_{\nu(\mu)}$ in the right slot, the axial reads the product $\vec e_z\vec e_{\nu(\mu)}$ and drops the factor $i$.
 
 The tensor bilinear completes the list. Its element is the antisymmetric composite of two slot actions, which is a derived form of the two actions above and is written here in the element language of the body:
-$$T_{0k}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x\bigr),
+$$T_{0\eta}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x\bigr),
 \qquad
-T_{jk}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\quad(j\ne k),
+T_{j\eta}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\quad(j\ne k),
 \qquad
 T_{\mu\mu}=0 .$$
-The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_\eta$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_\eta$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\mu\nu}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0k}$ and the three $T_{jk}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.
+The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_\eta$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_\eta$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\mu\nu}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0\eta}$ and the three $T_{j\eta}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.
 
 ### The Two Writings of the Free Equation
 
@@ -169,7 +169,7 @@ The five bilinears, with the element at which the pairing is read, and with the 
 | $P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$ | $\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ | pseudoscalar | odd |
 | $V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$ | $ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$ | vector | $V_0$ even, $V_\eta$ odd |
 | $A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$ | $e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$ | axial vector | $A_0$ odd, $A_\eta$ even |
-| $T_{\mu\nu}$ | the antisymmetric composite of two slot actions, read on $\tilde{Ξ}_{\mathrm{sp}}$ | antisymmetric tensor | $T_{0k}$ odd, $T_{jk}$ even |
+| $T_{\mu\nu}$ | the antisymmetric composite of two slot actions, read on $\tilde{Ξ}_{\mathrm{sp}}$ | antisymmetric tensor | $T_{0\eta}$ odd, $T_{j\eta}$ even |
 
 The Lorentz-type column is the classification of the sources, recorded here and not derived: the algebra fixes which element each bilinear reads, and the sources fix which Lorentz type that element carries.
 
@@ -212,7 +212,7 @@ Two further limits are inherited from other gaps. The Einstein–Cartan route ne
 
 ## Verified Two-Dimensional Relations
 
-The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_k=-g_{kk}=-1$ on the spatial ones.
+The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_k=-g_{\eta \eta}=-1$ on the spatial ones.
 
 ### The Two Slot Actions
 
@@ -352,7 +352,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | $P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$ | Pseudoscalar density, the parity-odd partner of $S_{\mathrm d}$; the quaternion representative $P=S_{\mathrm d}\vec e_z$ has $P\cdot P=-S_{\mathrm d}^2$, a different object from the density square $P_5^2$ |
 | $V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$ | Vector current (material sector in the framework); $V_0=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ |
 | $A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$ | Axial current (channel broken by the mass); in two dimensions built with the plane's insertions and the factor $i$ kept |
-| $T_{\mu\nu}$ | Tensor bilinear; $T_{0k}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$, $T_{jk}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$ |
+| $T_{\mu\nu}$ | Tensor bilinear; $T_{0\eta}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$, $T_{j\eta}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$ |
 | $\varepsilon_\mu = -g_{\mu\mu}$ | Signature sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |

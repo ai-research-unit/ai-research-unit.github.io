@@ -60,7 +60,7 @@ and it is the **laboratory-to-rest** rotor. The four-velocity fixes the Hermitia
 Let
 
 $$
-\tilde U_{\mathrm{lor},k}=\cosh\frac{\theta_{\mathrm{rpd},k}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},k}}{2}\,\vec u_k,
+\tilde U_{\mathrm{lor},k}=\cosh\frac{\theta_{\mathrm{rpd},k}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},k}}{2}\,\vec u_\eta,
 \qquad k=1,2,
 $$
 

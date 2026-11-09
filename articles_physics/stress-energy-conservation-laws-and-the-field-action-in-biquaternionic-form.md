@@ -150,9 +150,9 @@ $$
 $$
 
 $$
-T_{tk} = T_{kt} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
+T_{t\eta} = T_{\eta t} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
 \qquad
-T_{jk} = T_{kj} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
+T_{j\eta} = T_{\eta j} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
 + \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12(k_m)^{2}\xi^2\right) .
 $$
 
@@ -176,7 +176,7 @@ is time-independent, which follows by integrating the conservation law over a sp
 As a check, consider the superposition
 
 $$
-\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_1r_x-\omega_1r'_t/c\right) + 0.6\cos\!\left(k_2r_y-\omega_2r'_t/c\right),
+\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \cos\!\left(k_{\Phi x}r_x-\omega_1r'_t/c\right) + 0.6\cos\!\left(k_{\Phi y}r_y-\omega_2r'_t/c\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad
@@ -206,13 +206,13 @@ $$
 \qquad
 \mathsf{T}_{j0} = -\frac{1}{c}S_j,
 \qquad
-\mathsf{T}_{jk} = -\sigma_{jk},
+\mathsf{T}_{j\eta} = -\sigma_{j\eta},
 $$
 
 with the Maxwell stress
 
 $$
-\sigma_{jk} = \epsilon\,E_jE_\eta + \mu\,H_jH_\eta - W\,\delta_{j\eta},
+\sigma_{j\eta} = \epsilon\,E_jE_\eta + \mu\,H_jH_\eta - W\,\delta_{j\eta},
 \qquad
 W = \tfrac12\left(\epsilon\vec E^2+\mu\vec H^2\right),
 \qquad
@@ -226,18 +226,18 @@ T_{tt} = W,
 \qquad
 T_{tj} = T_{jt} = \frac{1}{c}S_j,
 \qquad
-T_{jk} = -\sigma_{jk} = W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
+T_{j\eta} = -\sigma_{j\eta} = W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
 $$
 
-which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{jk}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the factor $-i$ of the time index, between the energy flux and the momentum density, and it disappears once the column is read in the real coordinate.
+which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{j\eta}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the factor $-i$ of the time index, between the energy flux and the momentum density, and it disappears once the column is read in the real coordinate.
 
 **Tracelessness.** The trace in the unit metric, with the time term carrying the minus of $i^2$, is
 
 $$
-\sum_\mu T_{Q_\mu Q_\mu} = -T_{tt}+T_{kk} = -W - \sigma_{kk} = -W + W = 0 ,
+\sum_\mu T_{Q_\mu Q_\mu} = -T_{tt}+T_{\eta \eta} = -W - \sigma_{\eta \eta} = -W + W = 0 ,
 $$
 
-because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
+because $\sigma_{\eta \eta} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
 
 **Conservation.** The divergence of the tensor is the Lorentz four-force density. The tensor is defined by
 
@@ -375,7 +375,7 @@ T_{tt}=W,
 \quad
 T_{tj}=\frac1cS_j,
 \quad
-T_{jk}=W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
+T_{j\eta}=W\delta_{j\eta}-\epsilon E_jE_\eta-\mu H_jH_\eta ,
 $$
 
 symmetric, traceless, and conserved source-free — all verified by direct computation and by a superposition of two plane waves. With matter included, $\sum_\mu\partial/\partial R_\mu T_{\mathrm{em},\mu\nu}=-f_\nu$ and $\sum_\mu\partial/\partial R_\mu T_{\mathrm{matter},\mu\nu}=+f_\nu$, so the total tensor is conserved; the $\nu=0$ component is the Poynting theorem. The same action that defines the fields and the causal cone of the algebra defines the bookkeeping of their energy and momentum.
@@ -398,11 +398,11 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4r$ | Electromagnetic action |
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$; $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell system |
 | $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$; $\vec S=\vec E\times\vec H$ | Energy density; Poynting vector |
-| $\sigma_{jk}=\epsilon E_jE_\eta+\mu H_jH_\eta-W\delta_{j\eta}$ | Maxwell stress |
+| $\sigma_{j\eta}=\epsilon E_jE_\eta+\mu H_jH_\eta-W\delta_{j\eta}$ | Maxwell stress |
 | $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |
-| $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{jk}=-\sigma_{jk}$ | Mixed components |
-| $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{jk}=-\sigma_{jk}$ | Symmetric components; the time column is read in the real coordinate |
-| $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{kk}=0$ | Tracelessness |
+| $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{j\eta}=-\sigma_{j\eta}$ | Mixed components |
+| $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{j\eta}=-\sigma_{j\eta}$ | Symmetric components; the time column is read in the real coordinate |
+| $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{\eta \eta}=0$ | Tracelessness |
 | $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $i r'_t$ coordinates $Q_t=i r'_t$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$ | Scalar stress–energy |
 | $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2$ | Scalar energy density, positive |

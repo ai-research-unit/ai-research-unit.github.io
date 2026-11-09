@@ -193,19 +193,19 @@ $\|\vec k_\Phi\| = \omega$ and $e_t = 1$, the programme's four modes are, in the
 notation and recomputed exactly,
 
 $$
-\boxed{\;\tilde{Ξ}_{\vec k_\Phi0} = \omega\,\xi\left(1 + i\,\vec u_k\right),
+\boxed{\;\tilde{Ξ}_{\vec \eta _\Phi0} = \omega\,\xi\left(1 + i\,\vec u_\eta\right),
 \qquad
-\tilde{Ξ}_{\vec kj} = \xi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k_\Phi,\vec e_{j}]\right),
+\tilde{Ξ}_{\vec \eta j} = \xi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k_\Phi,\vec e_{j}]\right),
 \qquad j = 1,2,3\;}
 $$
 
-with $\xi = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ and $\vec u_k = \vec k_\Phi/\omega$. All four
+with $\xi = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ and $\vec u_\eta = \vec k_\Phi/\omega$. All four
 satisfy the free equation, and their content differs in a way the programme reads as physics.
 
 - **The scalar-potential mode is longitudinal and has the two field vectors parallel.** For
   $j = 0$ the mode has
-  $\vec E = -(\omega\sin\theta/\sqrt{\epsilon})\,\vec u_k$ and
-  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_k$ with $\theta = (\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
+  $\vec E = -(\omega\sin\theta/\sqrt{\epsilon})\,\vec u_\eta$ and
+  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\vec u_\eta$ with $\theta = (\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$,
   so both fields lie along the wave vector and are parallel up to a relative sign set by the phase —
   recomputed. No other mode of the construction is of this kind: a potential axis along
   $\vec k_\Phi$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
@@ -225,7 +225,7 @@ satisfy the free equation, and their content differs in a way the programme read
   construction, and the corpus does not count them twice.
 - **The energy density is $\omega^{2}$ and the flux is along the wave vector.** With the corpus's
   ${}^{*}$, the biquaternion $\tfrac12\tilde{Ξ}\tilde{Ξ}^{*}$ has the real scalar part
-  $\omega^{2}$, independent of position, for every mode, and vector part $i\omega^{2}\vec u_k$;
+  $\omega^{2}$, independent of position, for every mode, and vector part $i\omega^{2}\vec u_\eta$;
   both are recomputed. The paper's own display instead places the vector-potential modes' flux along
   their polarisation axis, $\omega^{2}\cos\gamma_{j}\,\vec e_{j}$, vanishing for the tensional wave, and
   that form does not reproduce from the paper's own amplitude formula. The corpus carries the
@@ -234,7 +234,7 @@ satisfy the free equation, and their content differs in a way the programme read
 
 One structural remark belongs here, because the paper presents the four modes as four independent
 polarisations. They are not. The free plane equation is an equation of eigenvectors,
-$\tilde{Ξ} = i\vec u_k\tilde{Ξ}$, whose solution space is **two complex dimensions**; the
+$\tilde{Ξ} = i\vec u_\eta\tilde{Ξ}$, whose solution space is **two complex dimensions**; the
 four modes span it twice over. The rank of the four amplitudes was computed and is two, so two of the
 four complex coefficients are redundant: the programme's four polarisations carry four real
 parameters, not eight.
@@ -262,8 +262,8 @@ and the free-photon cloud is the same construction with the four plane modes wei
 
 $$
 \mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\omega\tau)
-\left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k_\Phi\|=\omega} b_{j}(\vec k_\Phi,\omega)\,
-\tilde{Ξ}_{\vec kj}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k_\Phi)\right\} d\omega ,
+\left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec \eta _\Phi\|=\omega} b_{j}(\vec k_\Phi,\omega)\,
+\tilde{Ξ}_{\vec \eta j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k_\Phi)\right\} d\omega ,
 \qquad
 \tilde{\Sigma}_{\Psi,\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
 $$
@@ -382,7 +382,7 @@ $\tilde{Ξ}_{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the *
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives **free photons** as the four plane modes
-$\omega\xi(1+i\vec u_k)$ and $\xi(\omega \vec e_{j}-ik_{j}+i[\vec k_\Phi,\vec e_{j}])$, of which
+$\omega\xi(1+i\vec u_\eta)$ and $\xi(\omega \vec e_{j}-ik_{j}+i[\vec k_\Phi,\vec e_{j}])$, of which
 the first is longitudinal with the two field vectors parallel and the others are transverse exactly
 when their potentials are; and a source's field is the source convolved with the elementary photon,
 which the paper reads as light, a cloud of elementary photons over a visible band.
@@ -418,8 +418,8 @@ clearest statement of what the programme assumes.
 | $\tilde{Ξ}_{\mathrm{sp}} = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\tilde{Ξ}_{\mathrm{sp}} = \delta$ |
 | $\tilde{Ξ}^{0}$ | Elementary photon, the kernel of the source-to-field map |
 | $\alpha_{0}$, $\tilde F_{0}$ | Scalar amplitude and field-strength amplitude of the elementary photon (the paper writes $\rho_{0}$ and $\|Ξ_{0}\|$) |
-| $\tilde{Ξ}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |
-| $\vec u_k = \vec k_\Phi/\omega$ | Unit wave direction, $\|\vec k_\Phi\| = \omega$ |
+| $\tilde{Ξ}_{\vec \eta j}$ | Free plane modes, $j = 0,1,2,3$ |
+| $\vec u_\eta = \vec k_\Phi/\omega$ | Unit wave direction, $\|\vec k_\Phi\| = \omega$ |
 | $\xi = \exp(\,i(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ | Plane Helmholtz potential |
 | $\alpha = -k_{j}\xi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k_\Phi$ |
 | $\vec u_x = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Radial unit vector |

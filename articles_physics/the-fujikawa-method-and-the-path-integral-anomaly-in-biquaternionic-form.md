@@ -211,7 +211,7 @@ and it is quoted from the literature of §*Further Reading*, not re-derived here
 
 ## The Symbol, the Cone and the Null Bivectors
 
-**The symbol.** Replacing each derivative of the gradient by $ik_\mu$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)}$ with $x_0=r'_{t}$, the substitution gives
+**The symbol.** Replacing each derivative of the gradient by $ik_{\Phi,\mu}$ turns the operator into an element, its *symbol*. On the material sector, where $\partial/\partial R_t=-i\partial/\partial r'_t$ and a plane wave carries $e^{i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)}$ with $x_0=r'_{t}$, the substitution gives
 $$
 -i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=k_{t}^{\prime}-i\,(k_x\vec e_x+k_y\vec e_y+k_z\vec e_z),
 \qquad

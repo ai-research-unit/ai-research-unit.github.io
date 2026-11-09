@@ -233,13 +233,13 @@ The Larmor precession is the rotor conjugation
 $$
 \boxed{\;\vec\mu(r'_t) = \tilde u_L(r'_t)\,\vec\mu(0)\,\tilde u_L(r'_t)^{*},
 \qquad
-\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2\,c}\,\vec u_{B,k} \vec e_\eta\right)\;},
+\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2\,c}\,\vec u_{B,\eta} \vec e_\eta\right)\;},
 $$
 
 with $\vec u_B = \vec B/B$ the field direction. Differentiating the rotor gives
 
 $$
-c\,d\tilde u_L/dr'_t = -\,\frac{\gamma B}{2}\,\vec u_{B,k} \vec e_\eta\,\tilde u_L
+c\,d\tilde u_L/dr'_t = -\,\frac{\gamma B}{2}\,\vec u_{B,\eta} \vec e_\eta\,\tilde u_L
 = -\,\frac{1}{2}\,\vec\omega_G\,\tilde u_L,
 \qquad \vec\omega_G = \gamma\,\vec B,
 $$
@@ -264,7 +264,7 @@ The rotor $\tilde u_L(r'_t)$ rotates by the angle $-\gamma B r'_t$ about $\vec u
 
 ### The Rotating Frame
 
-The precession law has a second interpretation, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\vec\Omega$ with respect to the laboratory, and let $\vec\mu_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\vec\mu = \tilde u_\Omega\,\vec\mu_{\rm rot}\,\tilde u_\Omega^{*}$ with $\tilde u_\Omega = \exp(\tfrac{\Omega r'_t}{2\,c}\,\vec u_{\Omega,k} \vec e_\eta)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
+The precession law has a second interpretation, which is the content of the **Larmor theorem**. Consider a frame rotating with angular velocity $\vec\Omega$ with respect to the laboratory, and let $\vec\mu_{\rm rot}$ be the moment as seen in that frame. The moment in the laboratory is obtained by the rotor of the frame, $\vec\mu = \tilde u_\Omega\,\vec\mu_{\rm rot}\,\tilde u_\Omega^{*}$ with $\tilde u_\Omega = \exp(\tfrac{\Omega r'_t}{2\,c}\,\vec u_{\Omega,\eta} \vec e_\eta)$, and the derivative separates into the frame's own rotation and the additional motion seen in the frame,
 
 $$
 d\vec\mu/dr'_t = \tfrac{1}{2c}\left[\vec\Omega,\vec\mu\right]
@@ -329,7 +329,7 @@ For a rigid rotor with proportional charge and mass densities, the moment and th
 
 The precession of a spin-$\tfrac{1}{2}$ in a magnetic field is treated in the sibling quantum category, in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*. There the state is an idempotent $P = \tfrac{1}{2}(e_t + i\vec u)$ of $\mathbb{B}_{\Psi}$, the Hamiltonian is the Hermitian element $\tilde R_\Psi = -\gamma B_0\tilde{S}_{\Psi,z}$ with $\tilde{S}_{\Psi,z} =\frac{m\,c}{2\,k_m}i\vec e_z$, the evolution is the rotor conjugation $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde{U}(r'_t)^{*}$ with $\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$, and the expectation value is the normalised Hermitian form $\langle\tilde{S}_{\Psi,x}\rangle=\langle\tilde{Ϛ}_{\Psi},\tilde S_{\Psi,x}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{S}_{\Psi,x}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{S}_{\Psi,x}^{*})$. The star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real; it is non-negative only when $\tilde S_{\Psi,x}\ge0$. The evolved Bloch vector is $\vec r(r'_t) = \cos(\gamma B r'_t)\vec e_x - \sin(\gamma B r'_t)\vec e_y$, which is the precession derived here, with the same frequency and the same sense.
 
-The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{B}_{H}$ as a real pure quaternion and is rotated by $\tilde u_L(r'_t) = \exp(-\tfrac{1}{2}\gamma B r'_t\,\vec u_{B,k} \vec e_\eta)$; the quantum state lives in $\mathbb{B}_{\Psi}$ and is rotated by $\tilde{U}(r'_t)$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
+The two treatments agree because they are the same rotor. The classical moment of this article lives in $\mathbb{B}_{H}$ as a real pure quaternion and is rotated by $\tilde u_L(r'_t) = \exp(-\tfrac{1}{2}\gamma B r'_t\,\vec u_{B,\eta} \vec e_\eta)$; the quantum state lives in $\mathbb{B}_{\Psi}$ and is rotated by $\tilde{U}(r'_t)$, whose vector part is the same unit real quaternion. The factor $i$ that separates the two representatives is the sector exchange, not a physical difference. What the quantum treatment adds is the Born rule and the state; what this article adds is that the precession needs neither, because the moment of a classical current distribution obeys the same Larmor equation as the mean spin. The two are different derivations of one motion, and the classical one is the subject of this subcategory.
 
 ## Summary
 
@@ -360,7 +360,7 @@ The equation is solved by the **rotor conjugation**
 $$
 \vec\mu(r'_t) = \tilde u_L(r'_t)\,\vec\mu(0)\,\tilde u_L(r'_t)^{*},
 \qquad
-\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2\,c}\,\vec u_{B,k} \vec e_\eta\right),
+\tilde u_L(r'_t) = \exp\!\left(-\,\frac{\gamma B r'_t}{2\,c}\,\vec u_{B,\eta} \vec e_\eta\right),
 $$
 
 with $\tilde u_L$ a unit real quaternion; the moment turns through $\gamma B r'_t$ while the rotor turns through half that angle, the double-cover half-angle of the algebra. The biquaternion norm $\langle\vec\mu\rangle_{\natural}$ and the energy $E$ are conserved, so the moment precesses on a cone about the field at the Larmor frequency $\omega_L = |\gamma|B$. The **Larmor theorem** states that in a frame rotating at $\vec\Omega = -\gamma\vec B$ the moment is at rest; the generator of the motion in that frame is the sum $\vec\omega_G + \vec\Omega$ of the Larmor and frame generators, whose corresponding angular velocity is the difference $\vec\omega_L - \vec\Omega$, and the theorem is exact for a single moment in a uniform field.

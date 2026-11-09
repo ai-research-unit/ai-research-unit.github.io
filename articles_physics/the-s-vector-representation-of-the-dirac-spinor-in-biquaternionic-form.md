@@ -6,7 +6,7 @@ Cartan observed that the spin group $\mathrm{Spin}(8)$ has three eight-dimension
 
 In four-dimensional Minkowski space the three spaces do have dimensions four, four and four — a Lorentz vector, and the two four-real-component parts into which the Dirac field of the older literature decomposes — but $\mathrm{Spin}(1,3)$ has no order-three outer automorphism, so the coincidence of dimensions buys nothing on its own. Liu Yu-Fen asked whether a permutation can be built anyway, from extra data, and constructed what he calls a *ding* construction: an order-three map $J$ on $\mathbb{M}^{1+3}\times S_1\times S_2$ built from a triple of neutral elements, under which the Dirac field becomes a complex four-vector. The composition law it defines is that of the algebra of complexified quaternions — the biquaternion algebra — so the *vector representation of the field* is the same thing as a biquaternionic representation of it. This article records that construction, its bosonic rewriting of the Dirac Lagrangian, and the self-dual form the massive Dirac equation takes in it.
 
-The construction is a companion to the corpus's articles on the Dirac field. There, the field is an element of $\mathbb{B}$ and the Lorentz group acts on it by left multiplication; here, a *different* linear representation of the same group — on a complex four-vector $G_\mu$ — carries the same field, and the two representations are related by fixed neutral elements. What is gained is a dictionary in which every Dirac bilinear becomes a bilinear in $G$ and its conjugate; what is paid is a preferred timelike direction, the neutral element $k_\mu$, which the dictionary needs and the metric does not supply.
+The construction is a companion to the corpus's articles on the Dirac field. There, the field is an element of $\mathbb{B}$ and the Lorentz group acts on it by left multiplication; here, a *different* linear representation of the same group — on a complex four-vector $G_\mu$ — carries the same field, and the two representations are related by fixed neutral elements. What is gained is a dictionary in which every Dirac bilinear becomes a bilinear in $G$ and its conjugate; what is paid is a preferred timelike direction, the neutral element $u_\mu$, which the dictionary needs and the metric does not supply.
 
 The frame is $\mathbb{B}_{\Phi}$ and the metric is $\delta_{\mu\nu}=(1,1,1,1)$; the source writes $\eta_{\mu\nu}$ for the same form read in its real coordinate, whose tuple is $-\varepsilon$. Where the source contracts with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$, and no index is raised in this article. The only operator that differentiates the field is the gradient $\tilde\nabla$ of *Operator and Calculus Conventions*, with its conjugate $\tilde\nabla^\natural$ and the d'Alembertian $\Box$; the source's $\partial/\partial x_\mu$ keep the source's index and metric. The four generators are the four actions of §The Neutral Elements, and their legacy arrays are printed once in §The Legacy Pauli Gamma Formulation. Because $e_t$ commutes with the spatial units, $\tilde\nabla^2$ keeps the mixed time–space derivatives and is not scalar, so the mass enters through the pair of §The Chiral Pair and not through the square of one first-order derivative operator.
 
@@ -14,10 +14,10 @@ The frame is $\mathbb{B}_{\Phi}$ and the metric is $\delta_{\mu\nu}=(1,1,1,1)$; 
 
 ### The Neutral Elements
 
-Chevalley's name for the units a representation is built on is *neutral elements*. The construction needs four of them: a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$ orthogonal to it, and two neutral elements $u$ and $v$ of $\mathbb{B}$. They are normalized so that
+Chevalley's name for the units a representation is built on is *neutral elements*. The construction needs four of them: a timelike unit vector $u_\mu$, a spacelike unit vector $j_\mu$ orthogonal to it, and two neutral elements $u$ and $v$ of $\mathbb{B}$. They are normalized so that
 
 $$
-k_\mu g_{\mu\nu}k_\nu = 1, \qquad j_\mu g_{\mu\nu}j_\nu = -1, \qquad k_\mu g_{\mu\nu}j_\nu = 0,
+u_\mu g_{\mu\nu}u_\nu = 1, \qquad j_\mu g_{\mu\nu}j_\nu = -1, \qquad u_\mu g_{\mu\nu}j_\nu = 0,
 $$
 
 and
@@ -52,7 +52,7 @@ The two neutral elements are therefore the two eigenvectors of $\mathcal{D}(k)$ 
 It is often convenient to pass to the null basis
 
 $$
-r = u + i v, \qquad l = u - i v, \qquad k_\pm{}_\mu = \tfrac12(k_\mu \pm j_\mu),
+r = u + i v, \qquad l = u - i v, \qquad k_\pm{}_\mu = \tfrac12(u_\mu \pm j_\mu),
 $$
 
 for which
@@ -138,7 +138,7 @@ The sign of the second identity is the sign difference between the timelike and 
 The composition is associative and non-commutative, and $k$ is its two-sided unit:
 
 $$
-(G\otimes H)\otimes K = G\otimes(H\otimes K), \qquad \sum_{\mu,\lambda}\epsilon_\mu\epsilon_\lambda\, k_\mu c_{\mu\nu\lambda} G_\lambda = G_\nu .
+(G\otimes H)\otimes K = G\otimes(H\otimes K), \qquad \sum_{\mu,\lambda}\epsilon_\mu\epsilon_\lambda\, u_\mu c_{\mu\nu\lambda} G_\lambda = G_\nu .
 $$
 
 Its realisation is the quaternion algebra. The four directions are read with $e_0=k$ as the unit, $k$ being the algebra's identity, and $e_k=i\vec e_\eta$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$ cyclically: the factor $i$, through $i^2=-1$, flips both signs of the quaternion law, and those are the relations of the realisation, not of the biquaternion units themselves. The unarrowed $e_k$ is this rescaled direction, not the quaternion unit $\vec e_\eta$, whose square is $-e_t$ and whose product is $\vec e_x\vec e_y=+\vec e_z$. The neutral vector $k$ is hidden inside $c$: it is the unit element of the composition, the preferred time direction of the algebra.
@@ -270,7 +270,7 @@ $$
 
 since $\tilde\nabla^\natural\tilde\nabla=\tilde\nabla\tilde\nabla^\natural=\Box$ is scalar. Each value obeys the Klein–Gordon equation, and the first-order system is the pair, not the square root of a scalar operator. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The bosonization is not canonical. It depends on the choice of the neutral elements $j_\mu$ and $k_\mu$: the Lagrangian is built from $\check c$, and $\check c$ is built from $j$. Any orthogonal pair with $k\cdot k = -j\cdot j = 1$ serves, they are arbitrary but must be fixed; the remaining symbols $c_{\mu\nu\lambda}$, $c_5{}_{\rho\sigma}$ and the rest are reconstructed once $j$ and $k$ are chosen.
+The bosonization is not canonical. It depends on the choice of the neutral elements $j_\mu$ and $u_\mu$: the Lagrangian is built from $\check c$, and $\check c$ is built from $j$. Any orthogonal pair with $k\cdot k = -j\cdot j = 1$ serves, they are arbitrary but must be fixed; the remaining symbols $c_{\mu\nu\lambda}$, $c_5{}_{\rho\sigma}$ and the rest are reconstructed once $j$ and $k$ are chosen.
 
 ## The Two Equations and the Self-Dual Form
 
@@ -415,7 +415,7 @@ leaves the quadratic form $k_m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}C_0\tilde{Ξ}_{\
 
 **It supplies** a genuine, verified linear equivalence between the field and a complex four-vector, with the whole bilinear dictionary, a bosonic form of the Lagrangian, and a self-dual form of the massive equation. The central algebraic identities quoted above — the normed condition, associativity, the unit, the four-index traces $r'_t$ and $\varepsilon$, the reality of the two four-vectors, the recovery of $k$ and $j$ from $c$ and $\check c$, the mass, chiral and vector bilinears, the anti-self-duality of $H_{[\mu\nu]}$, and the trilinear form — were recomputed on the corpus's convention and hold. Where the source's printed sign differs, the difference is the slot order of $c$ and $\varepsilon$, not the identity; the De Moivre theorem follows from $(c_5)^2=1$.
 
-**It does not supply** a Lorentz-covariant construction. The neutral elements $j_\mu$ and $k_\mu$ are *extra structure*: they are not determined by the metric, they are the two directions the construction singles out, and the algebra's unit is $k$. The source is explicit that this is a defect of the incomplete algorithm and, in the same breath, a virtue: the structure constants *do* return the neutral vectors by contraction,
+**It does not supply** a Lorentz-covariant construction. The neutral elements $j_\mu$ and $u_\mu$ are *extra structure*: they are not determined by the metric, they are the two directions the construction singles out, and the algebra's unit is $k$. The source is explicit that this is a defect of the incomplete algorithm and, in the same breath, a virtue: the structure constants *do* return the neutral vectors by contraction,
 $$
 \sum_\mu\epsilon_\mu\,c_{\mu\mu\lambda}=4k_\lambda,
 \qquad
@@ -427,13 +427,13 @@ so the preferred frame is not put in by hand in the final form, it is the algebr
 
 ## Open Questions
 
-1. **The preferred frame.** Is the neutral vector $k_\mu$ a genuine extra structure, or is it fixed by the algebra as the source claims? The corpus's *Algebra and Element Conventions* already distinguishes the algebra from the spacetime it is applied to; the question is whether $k$ is a fact about the algebra or a fact about the embedding.
+1. **The preferred frame.** Is the neutral vector $u_\mu$ a genuine extra structure, or is it fixed by the algebra as the source claims? The corpus's *Algebra and Element Conventions* already distinguishes the algebra from the spacetime it is applied to; the question is whether $k$ is a fact about the algebra or a fact about the embedding.
 
 2. **The relation to the corpus's carrier of the field.** In the corpus the field is an element of $\mathbb{B}$ and the Lorentz group acts on it by left multiplication; here it is a complex four-vector. Both are four-complex-dimensional and carry the same left action of $\mathbb{B}$, so as modules they are equivalent, and the neutral elements give the explicit intertwiner. What is not settled is which basis makes the dictionary readable: the equivalence of the modules does not by itself select the trinomial unit basis.
 
 3. **The lattice consequence.** The source suggests, as "further speculation", that because the dualized Dirac equation is second order, and second-order Lagrangians have no fermion-doubling problem, the vector representation offers a route around the Nielsen–Ninomiya obstruction. The corpus's *Fermion Doubling and the Nielsen–Ninomiya Theorem* treats that obstruction as a lattice statement; whether the s-vector representation evades its hypotheses, or merely restates them in a different field variable, is open.
 
-4. **The interaction with a preferred frame.** If $k_\mu$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ a gauge artifact of the description? The source does not say.
+4. **The interaction with a preferred frame.** If $u_\mu$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ a gauge artifact of the description? The source does not say.
 
 5. **Extension beyond four dimensions.** The construction uses the Lorentzian four-dimensional signature essentially — the source notes that a biquaternion description would not work if the dimension and signature were different. What happens at the next triality dimension, eight, where the algebra is the octonions and the vector and the two part spaces coincide, is the Cartan case the corpus records in *Triality and Spin(8) with Inner Conjugation*.
 
@@ -457,11 +457,11 @@ $\gamma_5$ is the reference-frame representative of the chirality: the ordered p
 
 ## Summary
 
-The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\tilde{Ξ}_{\mathrm{sp},1} = \mathcal{R}(B^\flat)v$ and $\tilde{Ξ}_{\mathrm{sp},2} = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\tilde{Ξ}_{\mathrm{sp}} \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({r'_{t}}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $r'_t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_k=i\vec e_\eta$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+The field of four-dimensional Minkowski space decomposes into two parts, and each part is a **real four-vector**: $\tilde{Ξ}_{\mathrm{sp},1} = \mathcal{R}(B^\flat)v$ and $\tilde{Ξ}_{\mathrm{sp},2} = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\tilde{Ξ}_{\mathrm{sp}} \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $u_\mu$, a spacelike unit vector $j_\mu$, and two neutral elements $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({r'_{t}}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $r'_t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its realisation is the quaternion algebra read with $e_0=k$ and $e_k=i\vec e_\eta$, so that $e_k^2=e_t$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two parts while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
 The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the mass that relates the two parts of the field in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu + imj_\mu G^{*}_{\mu}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\alpha-ic_5\sin\alpha)G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the field, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
-What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $k_\mu$ and $j_\mu$ are a preferred frame. They are not determined by the metric; the contractions $\sum_\mu\epsilon_\mu c_{\mu\mu\lambda}=4k_\lambda$ and $\sum_\mu\epsilon_\mu\check c_{\mu\mu\lambda}=-4j_\lambda$ return them from the structure constants, so the frame is the algebra's own, but it is still a frame, and the corpus records the question as open. The triality map is not a symmetry; it maps one description to another description of the same theory.
+What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $u_\mu$ and $j_\mu$ are a preferred frame. They are not determined by the metric; the contractions $\sum_\mu\epsilon_\mu c_{\mu\mu\lambda}=4k_\lambda$ and $\sum_\mu\epsilon_\mu\check c_{\mu\mu\lambda}=-4j_\lambda$ return them from the structure constants, so the frame is the algebra's own, but it is still a frame, and the corpus records the question as open. The triality map is not a symmetry; it maps one description to another description of the same theory.
 
 ## Summary of Notation
 
@@ -470,10 +470,10 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $\mu, \nu, \lambda, \rho$ | Ordinary Minkowski four-vector indices, $0,1,2,3$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity in the four-index space; no index is raised anywhere. The source's $\eta$ is the same form in the real coordinate, tuple $-\varepsilon$ |
 | $V\cdot W$ | Minkowski pairing of two four-vectors, the sign vector $\epsilon$ supplying the signs |
-| $k_\mu, j_\mu$ | Timelike and spacelike unit neutral vectors, $k\cdot k = -j\cdot j = 1$, $k\cdot j = 0$ |
+| $u_\mu, j_\mu$ | Timelike and spacelike unit neutral vectors, $k\cdot k = -j\cdot j = 1$, $k\cdot j = 0$ |
 | $u, v$ | The two neutral elements of $\mathbb{B}$, $u^{\dagger}C_0u = 1$, $v^{\dagger}C_0v = -1$, $u^{\dagger}C_0v = 0$ |
 | $r = u+iv$, $l = u-iv$ | The two null elements, $r^{\dagger}C_0l = l^{\dagger}C_0r = 2$ |
-| $k_\pm{}_\mu = \tfrac12(k_\mu\pm j_\mu)$ | Null vectors formed from the neutral pair |
+| $k_\pm{}_\mu = \tfrac12(u_\mu\pm j_\mu)$ | Null vectors formed from the neutral pair |
 | $e_t, \vec e_\eta$ | The four units of $\mathbb{B}$ |
 | $a\tilde{Ξ}_{\mathrm{sp}} b$ | An action of the algebra on itself, $a$ on the left and $b$ on the right (see *Operator and Calculus Conventions*) |
 | $\tilde\nabla$, $\tilde\nabla^\natural$, $\Box$ | The gradient, its conjugate and the d'Alembertian of *Operator and Calculus Conventions*, with $\varepsilon=(1,-1,-1,-1)$ |

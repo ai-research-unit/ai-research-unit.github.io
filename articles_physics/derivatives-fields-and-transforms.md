@@ -178,14 +178,14 @@ Two features of the transform are genuinely biquaternionic. The first is the **v
 The second is the **positivity of the transform of a measure**. For a finite positive measure $\mu$, a pure root $\rho$ and central coefficients $A_\eta$, the transform $G(\omega)=\int\xi_\omega\,d\mu$, with $\xi_\omega$ the kernel at frequency $\omega$, satisfies the quadratic identity
 
 $$
-\sum_{k,l}A_kA_l\,G(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu,\qquad
-Z=\sum_kA_k\xi_{\omega_k},
+\sum_\eta,l}A_kA_l\,G(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu,\qquad
+Z=\sum_kA_k\xi_{\omega_\eta},
 $$
 
 with the biquaternion norm on the right. At $A_1=i$ the left-hand side is $i^2\mu(\mathbb{R}^n)e_t=-\mu(\mathbb{R}^n)e_t$, negative for every non-zero measure, because $\langle i\rangle_{\natural}=-1$: the norm pairing is not positive. With the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and a root with $\rho^{*}=-\rho$, the quadratic form satisfies
 
 $$
-\sum_{k,l}A_\eta\,G(\omega_k-\omega_l)\,A_l^{*}=\int ZZ^{*}d\mu
+\sum_\eta,l}A_\eta\,G(\omega_k-\omega_l)\,A_l^{*}=\int ZZ^{*}d\mu
 $$
 
 and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\vec u_\mu$. For a genuinely complex root the identity fails, because $\xi_\omega^{*}\neq\xi_{-\omega}$, and the positivity fails with it. The two failures are different: the norm failure is root-independent and belongs to the indefinite interval; the positivity failure is root-dependent and belongs to the character.

@@ -221,7 +221,7 @@ $$
 
 **From the indefinite metric.** In the covariant mode algebra the four polarisations carry the metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\sigma_{\mathrm{met},r}\,\tfrac12\frac{m\,c\,\omega}{k_m}=2\cdot\tfrac12\frac{m\,c\,\omega}{k_m}$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\frac{m\,c\,\omega}{k_m}$, **double** the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.
 
-**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\sigma_{\mathrm{met}}$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{B}_{\Phi}$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
+**From the algebra.** Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\sigma_{\mathrm{met}}$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{B}_{\Phi}$, as *The Photon in Biquaternionic Form* establishes. The **two physical polarisations** are the plane in the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction $\vec u_\eta$, with projector $P_{ij}=\delta_{ij}-\vec u_\eta_i\vec u_\eta_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is **not** native is the **removal** of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.
 
 The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\sigma_{\mathrm{met},r}=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.
 
@@ -259,7 +259,7 @@ Both routes give $-\frac{m\,c^{2}\,\pi^{2}}{240\,k_m\,a^{4}}$, and both were rec
 | Vacuum expectation values (one mode) | Native | $\langle\tilde R_\Psi\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde R_\Psi^{*})$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=i\vec e_z$ |
 | Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde R_\Psi$; commutes |
-| Two physical transverse polarisations | Native | $\vec u_k$-orthogonal plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ |
+| Two physical transverse polarisations | Native | $\vec u_\eta$-orthogonal plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ |
 | Indefinite metric $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Native | biquaternion norm of $\mathbb{B}_{\Phi}$ |
 | Factor of two (EM vs Dirichlet scalar) | Native | $\sum_r\sigma_{\mathrm{met},r}=2$; two transverse polarisations |
 | Photon Fock vacuum | Imported | no bosonic ladder in $\mathbb{B}$ |
@@ -330,7 +330,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\vert 0\rangle_{*}$ | Field vacuum, degree-zero term of the Fock space |
 | $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$, $\epsilon^{(r)}_\mu$ | Covariant mode operators and polarization vectors |
 | $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ | Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_t^2$ of $\mathbb{B}_{\Phi}$ |
-| $\vec u_k$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$ |
+| $\vec u_\eta$ | Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec u_\eta_i\vec u_\eta_j$ |
 | $a$, $A$ | Plate separation and area |
 | $a,n,k_3=\pi n/a$ | Plate separation; mode index; quantized longitudinal wavevector |
 | $\vec k_\perp$ | Continuous transverse wavevector |

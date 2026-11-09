@@ -18,7 +18,7 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 
 **What is to be shown.** The problems are: (1) the four-wavevector, its null biquaternion norm, its invariant phase, and an invariant expression for the frequency an observer measures; (2) the boost of the four-wavevector and the general Doppler formula; (3) the longitudinal case; (4) the transverse case — which is in fact *two* inequivalent cases; (5) aberration and the forward cone; (6) a numerical instance and the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
 
-**Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_{t}^{\prime} = (\omega_0/c)\vec {u_k}_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec {u_k}_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
+**Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_{t}^{\prime} = (\omega_0/c)\vec u_\eta_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec u_\eta_0$. Quantities with subscript $2$ refer to the observer frame, $\mathcal O_2$. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
 
 ## Problem 1: The Four-Wavevector, the Phase, and the Frequency Invariant
 
@@ -32,7 +32,7 @@ and check the formula both in the observer's rest frame and in the source frame.
 $$
 \tilde P_{\Phi} = \frac{i\omega}{c}\,e_t + \vec k_\Phi,
 \qquad
-\vec k_\Phi = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
+\vec k_\Phi = k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z,
 \qquad
 k_\Phi = |\vec k_\Phi| .
 $$
@@ -134,7 +134,7 @@ $$
 $$
 since the scalar part of $\vec A\vec u$ is $-\vec A\cdot\vec u = -A_\parallel$. This is the first of the component equations; the remaining two are obtained from the same multiplication and reproduce the standard Lorentz boost.
 
-**Solution (b).** Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_{t}^{\prime} = (\omega_0/c)\vec {u_k}_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
+**Solution (b).** Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_{t}^{\prime} = (\omega_0/c)\vec u_\eta_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
 $$
 \frac{\omega_2}{c} = \gamma\left(\frac{\omega_0}{c} - \beta\frac{\omega_0}{c}\cos\theta\right)
 \quad\Longrightarrow\quad
@@ -145,7 +145,7 @@ $$
 k_{2,\parallel} = \gamma\left(\frac{\omega_0}{c}\cos\theta - \beta\frac{\omega_0}{c}\right)
 = \frac{\omega_0}{c}\,\gamma\left(\cos\theta - \beta\right),
 \qquad
-\vec k_{2,\perp} = \frac{\omega_0}{c}\,\vec {u_k}_{0\perp} .
+\vec k_{2,\perp} = \frac{\omega_0}{c}\,\vec u_\eta_{0\perp} .
 $$
 In the longitudinal case $\theta = 0$ or $\pi$ the transverse part vanishes; in general a ray that is transverse in one frame acquires a longitudinal component in the other, which is the aberration of Problem 5.
 
@@ -347,9 +347,9 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}} = v_b/c$ |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\vec v_b$ | Observer-frame velocity relative to the source frame |
-| $\vec {u_k}_0$ | Source-frame propagation direction |
-| $\theta$ | Source-frame angle between $\vec v_b$ and $\vec {u_k}_0$ |
-| $\theta_2$ | Observer-frame angle between $\vec v_b$ and $\vec {u_k}_2$ |
+| $\vec u_\eta_0$ | Source-frame propagation direction |
+| $\theta$ | Source-frame angle between $\vec v_b$ and $\vec u_\eta_0$ |
+| $\theta_2$ | Observer-frame angle between $\vec v_b$ and $\vec u_\eta_2$ |
 | $\omega_0$, $\omega_2$ | Source-frame and observer-frame angular frequency |
 | $z = (\lambda_2-\lambda_0)/\lambda_0$ | Redshift |
 

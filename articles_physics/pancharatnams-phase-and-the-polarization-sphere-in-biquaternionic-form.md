@@ -220,7 +220,7 @@ $$
 
 along the transport. A family of states satisfying this condition is **horizontal** for the connection: it is the family obtained by Pancharatnam transport, and the prescription is the optical analogue of parallel transport. The connection $\mathcal A=i\langle J|dJ\rangle$ is the one-form whose integral gives the residual phase when the states are compared in a fixed gauge rather than along the horizontal transport.
 
-The residual phase is a property of closed circuits only. If the representatives are changed, $|J_\eta\rangle\to \exp(i\xi_k)|J_\eta\rangle$, the overlaps change by $\exp(i(\xi_{k+1}-\xi_k))$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is gauge invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is gauge dependent, the loop integral is not.
+The residual phase is a property of closed circuits only. If the representatives are changed, $|J_\eta\rangle\to \exp(i\xi_k)|J_\eta\rangle$, the overlaps change by $\exp(i(\xi_{\eta +1}-\xi_k))$, and the product around a closed sequence is unchanged because the phases telescope. Hence the Pancharatnam phase of a circuit is gauge invariant, while the phase $\arg\langle A|B\rangle$ of a pair is not: the physical content of a pair of states is the interference visibility $|\langle A|B\rangle|$, and the physical content of a circuit is the closed-loop phase. This is the same distinction that the symplectic article draws between the potential and the symplectic form: the local object is gauge dependent, the loop integral is not.
 
 ### The Curvature and the Half-Solid-Angle Rule
 
@@ -254,7 +254,7 @@ $$
 =-\tfrac12\,\theta_{\mathrm{sol}} ,
 $$
 
-with $\theta_{\mathrm{sol}}=2\pi(1-\cos\theta_0)$ the solid angle of the cap. Numerically, accumulating the discrete overlaps $\langle J(\theta_0,\theta_{\mathrm{azm},k})|J(\theta_0,\theta_{\mathrm{azm},k+1})\rangle$ around the circle reproduces $\pm\theta_{\mathrm{sol}}/2$ precisely; the sign is the one fixed by the convention $\gamma_{\mathrm{Panch}}=-\arg\prod_k\langle J_\eta|J_{k+1}\rangle$.
+with $\theta_{\mathrm{sol}}=2\pi(1-\cos\theta_0)$ the solid angle of the cap. Numerically, accumulating the discrete overlaps $\langle J(\theta_0,\theta_{\mathrm{azm},k})|J(\theta_0,\theta_{\mathrm{azm},k+1})\rangle$ around the circle reproduces $\pm\theta_{\mathrm{sol}}/2$ precisely; the sign is the one fixed by the convention $\gamma_{\mathrm{Panch}}=-\arg\prod_k\langle J_\eta|J_{\eta +1}\rangle$.
 
 **Spherical triangle.** For three states $A,B,C$, the discrete product
 

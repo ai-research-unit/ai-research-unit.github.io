@@ -56,7 +56,7 @@ m_{\mathrm{fop},2i} = -i\big(a_{\mathrm{fop},i} - a_{\mathrm{fop},i}^{\dagger}\b
 \qquad
 \{m_{\mathrm{fop},k},m_{\mathrm{fop},l}\} = 2\delta_{\eta l}e_t ,
 $$
-the Bogoliubov transformation is an orthogonal transformation $m_{\mathrm{fop},k}\mapsto\sum_l O_{kl}m_{\mathrm{fop},l}$ with $O\in O(2n)$, and the canonical conditions above are the statement that $O$ preserves the Majorana metric. This is the form in which the group structure is transparent:
+the Bogoliubov transformation is an orthogonal transformation $m_{\mathrm{fop},k}\mapsto\sum_l O_{\eta l}m_{\mathrm{fop},l}$ with $O\in O(2n)$, and the canonical conditions above are the statement that $O$ preserves the Majorana metric. This is the form in which the group structure is transparent:
 
 | object | group | meaning |
 |---|---|---|

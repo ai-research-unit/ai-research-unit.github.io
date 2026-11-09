@@ -32,7 +32,7 @@ Displayed formulae are written with their imaginary units reduced whenever the a
 A representation of $\mathrm{SL}(2,\mathbb{C})$ is carried by a **spintensor** with $k$ unbarred and $r$ barred indices,
 
 $$
-S = s_{\alpha_1\alpha_2\dots\alpha_k\bar\alpha_1\bar\alpha_2\dots\bar\alpha_r},
+S = s_{\alpha_1\alpha_2\dots\alpha_\eta \bar\alpha_1\bar\alpha_2\dots\bar\alpha_r},
 $$
 
 a polynomial in the products of the unbarred and barred letters $s_\alpha$ and $s_{\bar\alpha}$, with $\alpha,\bar\alpha=1,2$. The representation is $\tau^{l\bar l}$ with
@@ -344,7 +344,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 
 | Symbol | Meaning |
 |---|---|
-| $s_{\alpha_1\dots\alpha_k\bar\alpha_1\dots\bar\alpha_r}$ | Spintensor of the representation $\tau^{l\bar l}$ |
+| $s_{\alpha_1\dots\alpha_\eta \bar\alpha_1\dots\bar\alpha_r}$ | Spintensor of the representation $\tau^{l\bar l}$ |
 | $l=k/2$, $\bar l=r/2$ | Lorentz labels from the numbers of unbarred/barred indices |
 | $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
 | $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |
