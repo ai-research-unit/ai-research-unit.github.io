@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave–Particle Duality and the Three Positions of One Zero: Bound States, Resonances and Decay — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="waveparticle-duality-and-the-three-positions-of-one-zero-bound-states-resonances-and-decay"><strong>Wave–Particle Duality and the Three Positions of One Zero: Bound States, Resonances and Decay</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A bound state, a resonance and a decay are not three equations.</strong> They are one equation solved at three places. The equation is the vanishing of the symbol, the places are three regions of the complexified frequency, and the three names record the region and nothing else. This article states the partition, shows that exactly three positions can hold a mode that deserves the name of a state, and records what each position does to the space and to the time.</p>
+<p><strong>The zero is a graph, so there is one zero per frequency.</strong> Solve $\sigma_{\mathcal{P}}=0$ for the invariant $k_{\Phi}^{2}=\vec k_\Phi\cdot\vec k_\Phi$ and nothing remains to solve:</p>
+<p>$$
+k_{\Phi}^{2}=k_{t}^{\prime\,2}-k_m^{2}.
+$$</p>
+<p>For every complex frequency there is exactly one complex number $k_{\Phi}^{2}$. The zero set of the symbol is therefore the graph of that function, and it is one object, not two. That is the "one zero" of the title: the article never compares two zeros, because the symbol never has two, and the three names are three addresses on one curve.</p>
+<p><strong>The partition is decided by two questions and by no others.</strong> Is the frequency real? Is the momentum squared real? The answers give five rows in all: three positions, one mode that is not stationary, and one combination that cannot occur. Nothing in the equation changes between the positions. What changes is where the point sits, and with it the two exponents that make the mode: one in space and one in time.</p>
+<p><strong>The three names are three grades of the word "state", and the grade is a number.</strong> A propagating mode is normalisable in neither variable. A bound mode is normalisable in space and stationary in time, so its probability density does not depend on the time. A decaying mode is normalisable in time on the retarded interval and not in space, because its spatial part is a purely outgoing wave. The ratio of the real coordinate of the zero to twice its distance from the real axis is the number of oscillations the mode survives, and that ratio separates a resonance from a decay with no oscillation at all. <strong>So the word "state" is not a property of the equation. It is a property of the position, and it degrades continuously as the position moves.</strong></p>
+<p><strong>The strongest objection is that this is a taxonomy, and that the physics lives in the potential and in the self-energy.</strong> The objection is right about the potential and wrong about the taxonomy. The potential does not create the positions; it selects one. What the taxonomy supplies is the three exact boundaries between the positions, and each is realised: the edge of the gap at $\lvert k_{t}^{\prime}\rvert=k_m$, where the propagating description hands over to the bound one; the lower edge at $k_{t}^{\prime}=-k_m$, at which a level dives into the continuum; and the impossibility of a complex frequency at real momentum, which is the theorem behind the statement that a decay needs a continuum. None of those three is bookkeeping.</p>
+<p><strong>What is used and what is new.</strong> <em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> derives the width from the self-energy, places the pole on the second sheet, and proves that the pole is central. That article answers <em>how a lifetime arises</em>. This one answers <em>what the lifetime is a coordinate of</em>, and it does not re-derive the self-energy. <em>One-Dimensional Scattering in Biquaternionic Form</em> supplies the matching conditions, the transfer matrix and the amplitude $t=(1+i\beta)^{-1}$ whose zeros and poles this article reads. <em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em> supplies the exact spectrum whose endpoint is the ceiling below. What is new here is the partition, the circle on which the bound positions lie, the ceiling that circle imposes, the impossible cell, and the reading of the width as the imaginary part of a position rather than as the output of an integral.</p>
+<h2 id="the-one-zero">The One Zero</h2>
+<h3 id="the-symbol-solved-once">The symbol, solved once</h3>
+<p><strong>A mode is a character, and the symbol says whether it solves the equation.</strong> Write the mode</p>
+<p>$$
+\tilde\Xi=\xi\,e^{-i\bigl(k_{t}^{\prime}r_{t}^{\prime}-\vec k_\Phi\cdot\vec r\bigr)},
+$$</p>
+<p>with $\xi$ a fixed element of the state module. The gradient brings down $i\tilde K_\Phi$, and the Klein–Gordon operator brings down its norm, so the equation $\mathcal{P}\tilde\Xi=0$ holds on the mode exactly when</p>
+<p>$$
+\sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}=0 .
+$$</p>
+<p>That is the whole of the equation's content on a mode, and the article needs nothing else. The function $\sigma_{\mathcal{P}}$ is a complex number, not an element, because the norm of a quaternion is central; <em>Wave–Particle Duality and the Galilean Limit</em> uses that fact for the degree argument, and this article uses it for a different purpose: <strong>a central symbol has a zero set that is a locus of complex numbers, and a locus of complex numbers can be drawn on a plane.</strong></p>
+<p><strong>Solving for the invariant turns the surface into a graph.</strong> The symbol depends on the momentum only through $k_{\Phi}^{2}$, so the equation determines $k_{\Phi}^{2}$ as a function of the frequency and stops:</p>
+<p>$$
+\boxed{\;k_{\Phi}^{2}=k_{t}^{\prime\,2}-k_m^{2}\;}
+$$</p>
+<p><strong>One frequency, one momentum squared, one point.</strong> The zero set is a graph over the frequency plane, hence a copy of that plane, and it is a curve rather than a surface, with the count taken in the invariant: a momentum of a given invariant is a sphere of directions and not a point. In the two invariants $(k_{t}^{\prime},k_{\Phi}^{2})$ the real part of the zero set is the parabola $s=k_{t}^{\prime\,2}-k_m^{2}$, and every statement in this article is a statement about where the graph sits relative to the real axis of each of the two variables.</p>
+<h3 id="the-invariant-and-not-the-vector">The invariant, and not the vector</h3>
+<p><strong>The name of a position is decided by $k_{\Phi}^{2}$ and not by $\vec k_\Phi$.</strong> For complex $\vec k_\Phi=\vec a+i\vec b$ the quadratic invariant is</p>
+<p>$$
+k_{\Phi}^{2}=\lvert\vec a\rvert^{2}-\lvert\vec b\rvert^{2}+2i\,\vec a\cdot\vec b ,
+$$</p>
+<p>which is not the modulus squared of anything. A complex vector with $\lvert\vec a\rvert=\lvert\vec b\rvert$ and $\vec a\perp\vec b$ is a null vector with $k_{\Phi}^{2}=0$, and it is neither real nor imaginary in any coordinate. <strong>So the classification cannot be made component by component.</strong> It has to be made on the invariant, and the invariant is what the symbol sees.</p>
+<p><strong>Every invariant is realised by a vector of the simplest form, so nothing is lost by working with numbers.</strong> A complex orthogonal transformation of $\mathbb{C}^{3}$ preserves $\vec k_\Phi\cdot\vec k_\Phi$, and it carries any vector with $k_{\Phi}^{2}=s\ne0$ to $\vec k_\Phi=\sqrt{s}\,\vec n$ for a fixed unit $\vec n$. When $s>0$ that is a real vector, when $s<0$ it is $i\sqrt{\lvert s\rvert}\,\vec n$, and when $s$ is non-real it is neither. <strong>The three positions are therefore three kinds of number, and a reader who wants the vector back can rotate one into place.</strong></p>
+<h3 id="conjugation">Conjugation</h3>
+<p><strong>The symbol has real coefficients, so its zero set is invariant under conjugation.</strong> With $k_m$ real, $\overline{\sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)}=\sigma_{\mathcal{P}}(\overline{k_{t}^{\prime}},\overline{\vec k_\Phi})$, so $(k_{t}^{\prime},k_{\Phi}^{2})\mapsto(\overline{k_{t}^{\prime}},\overline{k_{\Phi}^{2}})$ carries zeros to zeros. <strong>A complex position therefore comes with its conjugate, and the algebra alone cannot prefer one of the two.</strong> One of the pair has $\Im k_{t}^{\prime}<0$ and decays, the other grows. The choice between them is not algebraic, and §<em>Position Three</em> says what makes it.</p>
+<h2 id="what-the-frequency-and-the-momentum-can-and-cannot-be">What the Frequency and the Momentum Can and Cannot Be</h2>
+<h3 id="the-two-questions-and-the-table">The two questions, and the table</h3>
+<p><strong>Ask whether each of the two numbers on the graph is real, and the table writes itself.</strong> The frequency $k_{t}^{\prime}$ is real or not; the momentum squared $k_{\Phi}^{2}$ is real or not. Each mode is one row of the following table, and the last column is the only thing the row decides.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k_{t}^{\prime}$</th>
+<th>$k_{\Phi}^{2}$</th>
+<th>the mode</th>
+<th>the name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real, $\lvert k_{t}^{\prime}\rvert\ge k_m$</td>
+<td>real, $\ge0$</td>
+<td>oscillates in space, oscillates in time</td>
+<td>propagating</td>
+</tr>
+<tr>
+<td>real, $\lvert k_{t}^{\prime}\rvert<k_m$</td>
+<td>real, $<0$</td>
+<td>falls off in space, oscillates in time</td>
+<td>bound</td>
+</tr>
+<tr>
+<td>purely imaginary</td>
+<td>real, $<-k_m^{2}$</td>
+<td>falls off on one side of the origin and grows on the other, grows or falls in time</td>
+<td>no stationary state</td>
+</tr>
+<tr>
+<td>genuinely complex</td>
+<td>non-real</td>
+<td>both exponents complex</td>
+<td>decaying</td>
+</tr>
+<tr>
+<td>real</td>
+<td>non-real</td>
+<td>—</td>
+<td>impossible</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The second column is not independent of the first, and that is the whole content of the graph.</strong> $k_{\Phi}^{2}=k_{t}^{\prime\,2}-k_m^{2}$, so the reality of one number constrains the other. Three of the five rows describe a state of some kind. One describes a mode that is not a state. One cannot be reached at all.</p>
+<h3 id="the-cell-that-cannot-be-reached">The cell that cannot be reached</h3>
+<p><strong>A real frequency forces a real momentum squared, so the combination "real frequency, complex momentum" is empty.</strong> The proof is one line: if $k_{t}^{\prime}$ is real then $k_{t}^{\prime\,2}$ is real, and $k_m^{2}$ is real, so $k_{\Phi}^{2}=k_{t}^{\prime\,2}-k_m^{2}$ is real. <strong>There is no mode of this equation that oscillates in time and is neither a plane wave nor an exponential in space.</strong> The zero set, being a graph with real coefficients, has no point in that cell.</p>
+<p><strong>The same argument run backwards is the theorem about decay.</strong> A genuinely complex frequency requires a non-real $k_{\Phi}^{2}$, because if $k_{\Phi}^{2}$ were real then $k_{t}^{\prime\,2}$ would be real, and a complex number whose square is real is either real or purely imaginary. Write $k_{t}^{\prime}=a+ib$; its square is $a^{2}-b^{2}+2iab$, which is real exactly when $ab=0$. <strong>So with real parameters the symbol's zero can produce a real frequency or a purely imaginary one, and never a genuinely complex one.</strong> A decaying position is therefore unreachable from the free equation with real coefficients, and this is not an accident of the algebra: it is the statement that a decay needs something the free equation does not have. That something is a continuum, or an absorbing medium, and §<em>Position Three</em> says how each supplies it.</p>
+<h3 id="the-cell-that-holds-no-state">The cell that holds no state</h3>
+<p><strong>A purely imaginary frequency is reachable, and it is reachable in one way only.</strong> Put $k_{t}^{\prime}=i\zeta$ with $\zeta$ real. Then $k_{t}^{\prime\,2}=-\zeta^{2}$ and</p>
+<p>$$
+k_{\Phi}^{2}=-\bigl(\zeta^{2}+k_m^{2}\bigr)<-k_m^{2},
+$$</p>
+<p>so the momentum is imaginary with $\kappa=\sqrt{-k_{\Phi}^{2}}=\sqrt{\zeta^{2}+k_m^{2}}$, which exceeds $k_m$ strictly. The mode is $e^{\pm\vec\kappa\cdot\vec r}e^{\pm\zeta r_{t}^{\prime}}$, and the two signs are independent. One choice of the spatial sign decays in the half-space $\vec\kappa\cdot\vec r>0$ and grows in the other, so the mode is square-integrable in neither half-space; one of the two temporal signs grows without bound. <strong>This is the position a bound state takes when the localisation asked of it would need $\kappa>k_m$.</strong> It is not a fourth position, because nothing is stationary in it; it is where the second position goes when it is pushed past its ceiling, and the next section shows the ceiling is the edge of the gap.</p>
+<p><strong>So the count is three, and the three are the first, second and fourth rows.</strong> The third row is the failure of the second, and the fifth is empty. <strong>That is the sense in which there are three positions of one zero:</strong> three rows hold a mode that can be called a state, with the word degrading from one row to the next.</p>
+<h2 id="position-one-on-the-real-axis">Position One: On the Real Axis</h2>
+<h3 id="the-propagating-mode-and-why-it-is-not-a-state">The propagating mode, and why it is not a state</h3>
+<p><strong>The first position has both numbers real and the frequency outside the gap.</strong> Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{i(\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r_{t}^{\prime})}$. <strong>It is a solution everywhere and a state nowhere</strong>, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.</p>
+<p><strong>The particle arm of the duality therefore needs a second operation here, and the operation is the packet.</strong> <em>The Free Particle and Wave Packets in Biquaternionic Form</em> superposes modes of this position over a range of wave numbers, and the superposition is what is normalisable. The single zero is the building block and not the object. <strong>This is the only position at which the duality demands a superposition before it has anything to be dual to</strong>, and the reason is exactly the modulus: a plane wave's two arms are both delocalised, and neither is a particle until the packet localises it.</p>
+<p><strong>The boundary of the position is the rest point.</strong> At $\lvert k_{t}^{\prime}\rvert=k_m$ the momentum squared vanishes and the mode is uniform in space: the particle at rest, with its phase turning at the rest frequency. <strong>That point is the edge of this row and the limit of the next</strong>, and it is the only point that is both. It is the threshold at which a state is born and at which a level is absorbed, and the two descriptions meet there.</p>
+<h3 id="two-branches-and-the-label-on-each">Two branches, and the label on each</h3>
+<p><strong>The equation is quadratic in the frequency, so every position on the real axis comes twice.</strong> $k_{t}^{\prime}=\pm\sqrt{k_{\Phi}^{2}+k_m^{2}}$, and the two signs are the two branches of the hyperbola. The symbol is even in $k_{t}^{\prime}$, so the pair is a symmetry of the equation and not an accident of the solution.</p>
+<p><strong>The corpus reads the two branches as the particle and the antiparticle, and the reading is a labelling and not a second object.</strong> The mode with $k_{t}^{\prime}<0$ has the same momentum and the opposite frequency; it is the same zero of the same symbol on the other branch. A real field contains both, which is why a real field is not a particle. <strong>The label is fixed by the sign of the frequency and by nothing else</strong>, and the position does not distinguish the branches: both are propagating, both are non-normalisable, and both sit on the real axis.</p>
+<h2 id="position-two-on-the-imaginary-line">Position Two: On the Imaginary Line</h2>
+<h3 id="the-circle-of-radius-math75">The circle of radius $k_m$</h3>
+<p><strong>Real frequency inside the gap forces an imaginary momentum, and the two are tied to a circle.</strong> Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert<k_m$ and write $\vec k_\Phi=i\vec\kappa$ with $\kappa=\sqrt{-k_{\Phi}^{2}}>0$. The graph gives</p>
+<p>$$
+k_{t}^{\prime\,2}+\kappa^{2}=k_m^{2},
+$$</p>
+<p>so <strong>the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant</strong>, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-ik_{t}^{\prime}r_{t}^{\prime}}$: exponential in space, oscillatory in time, normalisable in both. <strong>This is the only position at which a mode is a state in the strict sense.</strong></p>
+<p><strong>The circle is exact, and it is not a dispersion relation in disguise.</strong> It is the graph restricted to the imaginary-momentum line, which is to say it is nothing but $\sigma_{\mathcal{P}}=0$ with two substitutions. Its exactness is checkable: for a Klein–Gordon square well of width $2/k_m$ in units where $k_m=1$, the ground-state frequency was computed at twelve depths from $v=-0.05\,k_m$ to $v=-1.6\,k_m$ by bisection on the matching condition, and the quantity $k_{t}^{\prime\,2}+\kappa^{2}$ deviated from $k_m^{2}$ by at most $2.2\times10^{-16}$ over the twelve, which is round-off. <strong>The circle is not an approximation that the well spoils; the well only chooses the point.</strong></p>
+<p><strong>The two halves of the arc are the two halves of the gap.</strong> Deepening the well moves the point along the arc: the frequency falls and the decay constant rises, reaches its maximum $k_m$ at $k_{t}^{\prime}=0$, and then falls again as the frequency goes negative. <strong>The midpoint of the gap is where the tail falls off fastest</strong>, and a reader who expects the fastest fall-off at the deepest binding will find it at zero energy instead.</p>
+<h3 id="the-ceiling-is-the-compton-wavelength">The ceiling is the Compton wavelength</h3>
+<p><strong>Since $\kappa^{2}=k_m^{2}-k_{t}^{\prime\,2}$, the decay constant cannot exceed the mass wave number.</strong> Therefore</p>
+<p>$$
+\boxed{\;\kappa\le k_m,\qquad\text{with equality exactly at }k_{t}^{\prime}=0\;}
+$$</p>
+<p>and the decay length of the asymptotic tail $1/\kappa$ cannot be shorter than $1/k_m=\hbar/(mc)$. <strong>The tail of a bound state of this equation cannot fall off faster than one reduced Compton wavelength, and the bound is saturated at zero frequency.</strong> The statement is about the tail and not about the support: a wavefunction has structure inside the well that may be narrower than that, and only its exponential fall-off is bounded. For the electron that length is $3.8616\times10^{-13}\ \mathrm{m}$.</p>
+<p><strong>This is the strongest statement the position makes, and it is not a statement about a potential.</strong> No well, however deep, can push a bound position off the circle, and no well can push it past $\kappa=k_m$ without the frequency ceasing to be real. <strong>A would-be state that needs $\kappa>k_m$ does not become a tighter bound state; it leaves the real-frequency slice altogether and lands in the third row of the table</strong>, where nothing is stationary. The ceiling is therefore a statement about the equation, not about the well.</p>
+<p><strong>Hydrogen realises the ceiling exactly.</strong> For the Dirac ground state the decay constant of the upper component is $\kappa=k_m\mathfrak Z\alpha$, and the corpus's exact spectrum gives $E=mc^{2}\sqrt{1-(\mathfrak Z\alpha)^{2}}$; the two satisfy</p>
+<p>$$
+E^{2}+\hbar^{2}c^{2}\kappa^{2}=m^{2}c^{4}
+$$</p>
+<p>identically, which is the circle with the factors restored. The ceiling $\kappa=k_m$ is then $\mathfrak Z\alpha=1$, and that is exactly the endpoint at which the corpus's hydrogen formula returns $E=0$ and loses its branch. <strong>The dive that article describes and the ceiling this one describes are one statement</strong>, and the circle is what makes them one.</p>
+<h3 id="the-non-relativistic-line-has-no-ceiling">The non-relativistic line has no ceiling</h3>
+<p><strong>The Galilean symbol replaces the circle with a parabola.</strong> In the non-relativistic variable the condition $\sigma_{\mathrm{s}}=0$ reads $k_{\mathrm{s}}=k_{\Phi}^{2}/(2k_m)$, so at $\vec k_\Phi=i\vec\kappa$,</p>
+<p>$$
+k_{\mathrm{s}}=-\frac{\kappa^{2}}{2k_m},
+$$</p>
+<p>which is a downward parabola in the plane of $k_{\mathrm{s}}$ against $\kappa$, and not a closed circle. <strong>It has no ceiling:</strong> the parabola has no end, so as the binding deepens, $\kappa$ grows without bound and the localisation length shrinks without bound.</p>
+<p><strong>The two statements agree in the limit and differ in what they keep.</strong> Sending $c\to\infty$ sends $k_m\to\infty$, so the ceiling $\kappa\le k_m$ recedes to infinity and the circle opens into the parabola, to leading order in $\kappa/k_m$: the circle $\kappa^{2}=k_m^{2}-k_{t}^{\prime\,2}$ with $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ gives $\kappa^{2}=-2k_mk_{\mathrm{s}}-k_{\mathrm{s}}^{2}$, whose leading term is the half-line. <strong>The ceiling is a relativistic fact and the Galilean limit destroys it</strong>, which is the same thing <em>Wave–Particle Duality and the Galilean Limit</em> says about the second sheet: the limit truncates a degree, and a bound on the spectrum is what the truncated degree can no longer express.</p>
+<p><strong>A well shows the difference at once.</strong> The non-relativistic attractive delta potential of strength $\lambda<0$ has one bound state with $\kappa=k_m^{2}\lvert\lambda\rvert/(mc^{2})$, so $k_{\mathrm{s}}$ falls as $-\lvert\lambda\rvert^{2}$ and the binding strengthens without limit as the coupling grows. The same formula has no relativistic counterpart with a real frequency beyond $\kappa=k_m$, and the corpus's one-dimensional scattering article records the non-relativistic pole as the zero of $1+i\beta$ at $\beta=i$. <strong>The delta well is the cleanest place to see that the ceiling is a property of the relativistic symbol and not of the potential.</strong></p>
+<h2 id="position-three-off-both-axes">Position Three: Off Both Axes</h2>
+<h3 id="what-a-complex-frequency-requires">What a complex frequency requires</h3>
+<p><strong>A genuinely complex frequency is not reachable from the free equation with real coefficients, and §<em>The cell that cannot be reached</em> proved it.</strong> So the third position has to be supplied from outside, and there are exactly two things that supply it: a medium, and a matching condition.</p>
+<p><strong>A medium supplies it by making the wave number complex.</strong> In an absorbing medium the momentum wave number itself is complex, $\vec k_\Phi=\vec k_R-i\vec\alpha$, so the invariant $k_{\Phi}^{2}$ is non-real and the graph hands back a non-real frequency, $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$. <strong>The form of the equation is untouched and only its coefficients are complex</strong>, so the symbol is the same function of a complex argument and the zero has simply moved off the real axis.</p>
+<p><strong>A matching condition supplies it by asking the exterior mode for a complex wave number.</strong> In a piecewise-constant potential the mode in each region is a free mode, so it must satisfy the graph with that region's wave numbers. Continuity across the junctions then leaves one condition on the exterior wave number, and its zeros are the physical positions. <strong>For a bounded potential with a continuum outside, the zero that survives the condition is complex</strong>, because the outgoing condition is not Hermitian. That is the origin of the third position for a real potential, and it is why the corpus's scattering article finds poles of $t$ off the real axis at all.</p>
+<p><strong>The local statement and the global statement are cleanly separated, and this is worth stating once because the article leans on it.</strong> The graph is the local condition: it says which wave numbers a free mode may have. The determinant is the global condition: it says which of those the potential admits. <strong>The position is a property of the graph; the selection is a property of the determinant.</strong> So a claim about positions is a claim about the equation, and a claim about which positions a given well realises is a claim about the well.</p>
+<h3 id="the-conjugate-and-which-member-is-physical">The conjugate, and which member is physical</h3>
+<p><strong>For the symbol the pairing is conjugation, and for the determinant it is a reflection.</strong> The symbol's zero set is invariant under $(k_{t}^{\prime},k_{\Phi}^{2})\mapsto(\overline{k_{t}^{\prime}},\overline{k_{\Phi}^{2}})$, as §<em>Conjugation</em> recorded. The determinant of the one-dimensional problem carries the stronger and more useful symmetry</p>
+<p>$$
+D(-\overline{k})=\overline{D(k)},
+$$</p>
+<p><strong>checked numerically at one hundred random complex wave numbers for a square well of $\eta=10$, where the largest deviation was exactly zero</strong>, while $D(\overline{k})=\overline{D(k)}$ failed by up to $13.2$. The reflection $k\mapsto-\overline{k}$ is a reflection in the imaginary axis, so <strong>its fixed locus is the imaginary axis itself.</strong></p>
+<p><strong>That one sentence is the structure of this whole article.</strong> A bound position is a zero of the determinant that lies on the fixed locus of the pairing, so it is its own partner. A decaying position is a zero off the fixed locus, so it comes in a pair, one on each side, and the two have conjugate frequencies: one decays, the other grows. <strong>A bound state is a resonance that has been folded onto the axis, and a resonance is a bound state that has been unfolded off it.</strong> No equation differs between them; the pairing does.</p>
+<p><strong>The choice between the two members of a pair is the boundary condition, and it is not algebraic.</strong> The determinant's single zero off the axis is not enough: the retarded condition selects the member whose spatial part carries flux away from the interaction region, and that is the member with $\Im k_{t}^{\prime}<0$. <strong>This is the same selection that <em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> describes as the choice of sheet</strong>, and the present article adds only that the choice is a choice between two positions of one zero rather than between two sheets of one pole.</p>
+<h3 id="one-determinant-both-positions">One determinant, both positions</h3>
+<p><strong>A single well realises both positions, and the same analytic function holds them.</strong> For a square well of depth $V_0$ and width $a$, with $\eta=a\sqrt{2mV_0}/\hbar$ and $q^{2}=k^{2}+2mV_0/\hbar^{2}$, the outgoing condition is</p>
+<p>$$
+D(k)=\cos(qa)-\frac{i}{2}\bigl(\frac{q}{k}+\frac{k}{q}\bigr)\sin(qa)=0 ,
+$$</p>
+<p>which is the reciprocal of the transmission amplitude up to a phase, and whose zeros are the poles of $S$. <strong>At $\eta=10$ the zeros fall in both positions</strong>, and none of them is an approximation:</p>
+<p>| the zero | $ka$ | $E/V_0$ | $\lvert\Im E\rvert/V_0$ | $\Gamma/V_0$ | $Q$ |
+|---|---|---|---|---|
+| bound, first | $1.92693\,i$ | $-0.0371$ | — | — | $\infty$ |
+| bound, second | $6.41057\,i$ | $-0.4110$ | — | — | $\infty$ |
+| bound, third | $8.54684\,i$ | $-0.7305$ | — | — | $\infty$ |
+| bound, fourth | $9.65261\,i$ | $-0.9317$ | — | — | $\infty$ |
+| resonance, first | $7.21923-2.29987\,i$ | $0.4683-0.3321\,i$ | $0.3321$ | $0.6641$ | $0.705$ |
+| resonance, second | $11.79105-2.64226\,i$ | $1.3205-0.6231\,i$ | $0.6231$ | $1.2462$ | $1.060$ |
+| resonance, third | $15.68456-2.93694\,i$ | $2.3738-0.9213\,i$ | $0.9213$ | $1.8426$ | $1.288$ |
+| resonance, fourth | $19.31210-3.19542\,i$ | $3.6275-1.2342\,i$ | $1.2342$ | $2.4684$ | $1.470$ |
+| resonance, fifth | $22.79971-3.42551\,i$ | $5.0809-1.5620\,i$ | $1.5620$ | $3.1240$ | $1.626$ |</p>
+<p><strong>The bound rows are on the axis and the resonance rows are off it, and both are zeros of the same $D$.</strong> The frequencies are given by $E/V_0=(ka)^{2}/\eta^{2}$, so the bound entries are real and negative and the resonance entries are complex with a negative imaginary part; the decay constant is $\alpha=-\Im k$ and the width is $\Gamma=2\hbar v\alpha$ with $v=\hbar\Re k/m$. <strong>The table separates the two halves of that factor of two</strong>: the column $\lvert\Im E\rvert/V_0$ is half the width and the column $\Gamma/V_0$ is the width, so the entries stand in the ratio $1:2$ by construction and a reader who takes the smaller one for $\Gamma$ will be off by exactly that factor. <strong>The four bound zeros are the four standing waves the well supports</strong>, and their count is $\lfloor\eta/\pi\rfloor+1=4$.</p>
+<p><strong>Two checks that the table is not a coincidence.</strong> First, every bound entry satisfies $\kappa a<\eta$, which is the statement that the binding cannot exceed the depth; the deepest is $9.65$ against a depth of $10$, so the well's own edge is what stops it, and no relativistic ceiling is in play here because this determinant is non-relativistic. Second, the resonance frequencies are all above the continuum edge: $\Re E>0$ for each, so no resonance in the table is below threshold. <strong>Both facts are identities of the same graph</strong> — the graph in the non-relativistic variable is $k_{\mathrm{s}}=k_{\Phi}^{2}/(2k_m)$, so $\Re k_{\mathrm{s}}>0$ is $\lvert\Re\vec k_\Phi\rvert^{2}>\lvert\Im\vec k_\Phi\rvert^{2}$, and that inequality is what the table's resonances satisfy.</p>
+<h2 id="the-width-is-a-coordinate">The Width Is a Coordinate</h2>
+<h3 id="two-expressions-one-identity">Two expressions, one identity</h3>
+<p><strong>The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.</strong> The pole contributes the amplitude $e^{-ik_{t}^{\prime}r_{t}^{\prime}}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir_{t}^{\prime}}$. Since $r_{t}^{\prime}=ct$ and the probability is $e^{-\Gamma t/\hbar}$,</p>
+<p>$$
+\boxed{\;\Gamma=2\hbar c\,\lvert\Im k_{t}^{\prime}\rvert\;}
+$$</p>
+<p><strong>A width is a distance from the real axis, measured in energy.</strong> Nothing in the definition mentions an integral, a density of states, or a continuum; the Golden Rule is how the width is <em>computed</em>, and this is what the computed number <em>is</em>.</p>
+<p><strong>In the non-relativistic variable the identity acquires a second form, and the second form is exact.</strong> With $k_{\mathrm{s}}=k_{\Phi}^{2}/(2k_m)$ and $k_\Phi=k_R-i\alpha$,</p>
+<p>$$
+\Im k_{\mathrm{s}}=\frac{\Re k_\Phi\,\Im k_\Phi}{k_m}=-\frac{k_R\alpha}{k_m},
+$$</p>
+<p>so $\Gamma=2\hbar c k_R\alpha/k_m=2\hbar v\alpha$ with $v=\hbar k_R/m$. <strong>The width is twice the momentum times the attenuation</strong>, which is the statement that a wave attenuated by $e^{-\alpha x}$ loses its probability over a length $1/(2\alpha)$, and the two forms are the same because $k_{\mathrm{s}}=k^{2}/(2k_m)$ is a polynomial in $k$. <strong>Verified on the table's first resonance: $\Gamma=2(7.21923)(2.29987)$ in units of $\hbar^{2}/(ma^{2})$ and $\lvert\Im(ka)^{2}\rvert$ agree to a relative difference of exactly zero</strong>, as they must, since $\Im(k^{2})=2\Re k\,\Im k$ identically, and dividing by $\eta^{2}=100$ gives the table's $\Gamma/V_0=0.6641$, which is twice its $\lvert\Im E\rvert/V_0=0.3321$.</p>
+<p><strong>In the relativistic variable the second form holds to first order, and the order is measured.</strong> With $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_m^{2}}$ the chain rule gives $\Im k_{t}^{\prime}\approx(\Re k_\Phi/k_{t}^{\prime\,0})\Im k_\Phi$, hence $\Gamma\approx2\hbar v_g\alpha$ with $v_g=c\Re k_\Phi/k_{t}^{\prime\,0}$. At $k_\Phi=k_m$ and $\alpha=10^{-2}$ the exact imaginary part is $-7.071156\times10^{-3}$ against the first-order $-7.071068\times10^{-3}$, a relative difference of $1.25\times10^{-5}$; at $\alpha=10^{-3}$ the same quotient is $1.25\times10^{-7}$ and at $10^{-4}$ it is $1.25\times10^{-9}$. <strong>The error falls as $\alpha^{2}$, which is what a second-order term should do</strong>, and the exact form is the one without a small parameter.</p>
+<h3 id="the-quality-factor-and-the-grade-of-the-state">The quality factor, and the grade of the state</h3>
+<p><strong>The ratio of the two coordinates is the number of oscillations the mode survives.</strong> With $E$ the energy of the mode, define</p>
+<p>$$
+Q=\frac{\Re E}{2\lvert\Im E\rvert}=\frac{\Re E}{\Gamma}.
+$$</p>
+<p><strong>The ratio has to be taken on the energy measured from the rest energy and not on the total.</strong> Relativistically $E=\hbar c\,k_{t}^{\prime}$, so $Q=\Re k_{t}^{\prime}/(2\lvert\Im k_{t}^{\prime}\rvert)$ outright; in the Galilean variable the total is $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and the rest term $k_m$ is a real constant that neither oscillates nor decays, so the ratio is $Q=\Re k_{\mathrm{s}}/(2\lvert\Im k_{\mathrm{s}}\rvert)$ and $k_m$ cancels nothing because it is never there. <strong>The table below uses the Galilean form</strong>, and the two definitions differ by the factor $(\Re^{2}+\Im^{2})/\Re^{2}$ of the frequency: $0.705$ against $1.570$ for the table's first resonance. They agree for a narrow resonance and part company for a broad one, and the first row of the table is broad.</p>
+<p>Over one period $2\pi/\Re k_{\mathrm{s}}$ the amplitude falls by $e^{-\pi/Q}$, so $Q$ counts cycles per e-fold up to a factor $\pi$. <strong>$Q$ is infinite on the real axis and finite off it</strong>, so it separates the third position from the other two and says nothing about which of them a point occupies. What it does say is how far the third position is from being a state: $Q\gg1$ is a resonance that oscillates many times before it decays, $Q\ll1$ is a decay that never completes a cycle.</p>
+<p><strong>The table's ladder is the measure of that distance.</strong> $Q=0.705$ for the first resonance, $1.060$ for the second, $1.288$, $1.470$, $1.626$ for the fifth, in the Galilean form: <strong>the first is below one and does not complete a cycle, and the ladder rises slowly toward the values a narrow resonance would have.</strong> A reader who calls all five "resonances" is using one word for objects that differ by a factor of two in how much of a state they are.</p>
+<p><strong>The ladder's slow rise is the well's fault and not the equation's.</strong> A deeper well makes narrower resonances, because the escape is through a thicker barrier; the width is set by the overlap with the continuum, which <em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> computes as $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$. <strong>This article's contribution is only that the same number appears as a coordinate</strong>, and that a whole ladder of them is a ladder of distances from one real line.</p>
+<h2 id="decay">Decay</h2>
+<h3 id="the-two-exponentials-and-why-they-cancel">The two exponentials, and why they cancel</h3>
+<p><strong>The third position produces one exponential in time and one in space, and the identity of the previous section makes them cancel along the outgoing ray.</strong> The mode is $e^{i(k_\Phi x-k_{t}^{\prime}r_{t}^{\prime})}$ with $k_\Phi=k_R-i\alpha$ and $k_{t}^{\prime}=k_R^{\prime}-ik_I$. Its squared modulus is</p>
+<p>$$
+\bigl\lvert e^{i(k_\Phi x-k_{t}^{\prime}r_{t}^{\prime})}\bigr\rvert^{2}=e^{2\alpha x}\,e^{-2k_Ir_{t}^{\prime}} .
+$$</p>
+<p>Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\Gamma=2\hbar v_g\alpha$ says exactly that the bracket vanishes. <strong>So the probability density of a resonance mode is constant along the outgoing ray, and falls only at fixed position.</strong> That is what a decaying source looks like from outside: a steady flux whose amplitude is set by the source's remaining probability, and not a wave that fades as it travels.</p>
+<p><strong>The factor of two between the width and the imaginary part is the standard one and not a slip.</strong> <em>The Three Wavenumbers of a Particle</em> records $k_{t}^{\prime}(\Gamma)=k_m\Gamma/(mc^{2})=\Gamma/(\hbar c)=1/(c\tau)$ as the wave number of the width, and this article's $\lvert\Im k_{t}^{\prime}\rvert=\Gamma/(2\hbar c)$ is half of it. The reason is that the amplitude carries half the width and the probability carries all of it, which is the same reason the pole is written $E-i\Gamma/2$. <strong>Both numbers are correct and they name different things</strong>: one is the wave number of the width, the other the imaginary part of the frequency.</p>
+<p><strong>The lifetime is the inverse of the width in the corpus's own units.</strong> $\tau=\hbar/\Gamma=mc/(k_m\Gamma)$, which is the expression <em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> uses, and it agrees with the definition here because $\hbar=mc/k_m$. <strong>No new parameter enters</strong>: the lifetime is the reciprocal of the distance from the real axis.</p>
+<h3 id="where-the-exponential-stops">Where the exponential stops</h3>
+<p><strong>The exponential is exact for the pole's contribution and approximate for the state.</strong> The survival amplitude is a transform over the continuum and the pole is one term of it. The term is exactly exponential; the sum is not, and the difference is measurable at both ends of the time interval. <strong>At short times the sum is quadratic in the time</strong>, and the corpus's unstable-state article records that law and its consequence that no pure exponential satisfies it. This article does not re-derive either; it records that the position supplies the rate and says nothing about the correction.</p>
+<p><strong>The correction's size is the third position's distance from the axis.</strong> A pole far from the axis has a wide term, and a wide term is a poor substitute for a sum of many nearby terms; the same $Q$ that counts cycles per e-fold measures, inversely, how well the single pole describes the state. <strong>That is why $Q<1$ in the table's first resonance is a warning and not a detail</strong>: the first resonance is a position, but it is not an object a single-pole description can carry.</p>
+<p><strong>A decay with a real momentum wave number is impossible, and the graph says so.</strong> Decay in time needs $k_{t}^{\prime}$ off the real axis, which needs $k_{\Phi}^{2}$ non-real, which needs a complex wave number somewhere. <strong>So an isolated system with a real Hamiltonian and no continuum does not decay, and the algebra establishes it before any dynamical argument does.</strong> That is the strongest consequence of the partition, and it is the premise the corpus's unstable-state article states when it says that a state decays once the Hamiltonian couples it to a continuum.</p>
+<h2 id="what-the-three-positions-do-to-the-duality">What the Three Positions Do to the Duality</h2>
+<p><strong>At the first position the two arms are both infinite and the duality is an identity between two delocalised descriptions.</strong> The wave arm is a plane wave and the particle arm is a flux; neither is an object, and the transform that relates them is exact on the modes. <strong>The position contributes nothing but the setting</strong>: what the duality relates here are two idealisations, and the physical object appears only after the packet.</p>
+<p><strong>At the second position the particle arm becomes discrete and the wave arm becomes a standing wave.</strong> The bound zeros of the determinant are the count, and the count is an integer: four for the well of the table, $\lfloor\eta/\pi\rfloor+1$ in general. <strong>The quantisation is a count of positions on the imaginary axis, not a count of wavelengths</strong>, although the two counts agree in the semiclassical limit, as <em>The Three Wavenumbers of a Particle</em> records for the Bohr condition. The wave arm is the superposition of the two momenta $\pm i\kappa$ that make the real exponential, and it is a standing wave because the two directions carry equal weight.</p>
+<p><strong>At the third position the two arms differ in kind, and this is the position at which the word "duality" strains.</strong> The wave arm is a purely outgoing mode, not normalisable and growing in space; the particle arm is not an object at all but a rate. <strong>What the duality relates here is a mode to a lifetime</strong>, and the relation is exact in the sense that both are read from one complex number. It is not exact in the sense that a state answers to a state, and no amount of algebra will make it so: a decaying object has no stationary description, and the position is the reason.</p>
+<p><strong>So the three positions give the three answers to the question the series asks.</strong> The duality relates two descriptions of one object; at the first position the object is ideal on both sides, at the second it is discrete on both, and at the third it is a mode on one side and a decay on the other. <strong>The word "state" does different work in the three sentences, and the position is what tells a reader which work it is doing.</strong></p>
+<h2 id="the-position-is-central">The Position Is Central</h2>
+<p><strong>The symbol is central, so the zero is a complex number of the centre $\mathbb{B}_{C}=\mathbb{C}e_{t}$.</strong> Every statement in this article is a statement about one scalar, and the partition is a partition of the centre rather than of the algebra. <strong>A central symbol cannot have a non-central zero</strong>, so no non-central part of a Hamiltonian can move a position off the circle, off the axis or off the real line. It can move the zero along the locus the scalar defines and nowhere else.</p>
+<p><strong>This is the centrality the corpus proves twice, from two directions.</strong> <em>Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</em> shows that a dynamics preserving the Hermitian norm for every Hermitian generator forces its unit into the centre; <em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> shows that the displaced pole is central whatever the direction of the non-central part, because the trace over the module is central. <strong>This article uses the consequence and does not re-prove the theorem</strong>: the three positions are three regions of the centre, and the width, the lifetime, the decay constant and the localisation length are four names for coordinates of one central point.</p>
+<p><strong>The counterweight is that the selection is not obviously central.</strong> The determinant that picks one position out of the graph is a scalar in every case treated here, because the potential is central in the module and the matching is componentwise. <strong>Whether a non-central potential leaves the determinant scalar is a question this article does not answer</strong>, and it is the natural place for the centrality argument to fail. The graph would survive; the selection might not.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The positions are properties of constant coefficients.</strong> The graph is written for a region in which $k_m$ and the potential are constant, and every use of it here is a use inside such a region. A varying coefficient turns the graph into a condition on a symbol that depends on position, and the position of a zero then depends on where it is asked for. <strong>No display in this article leans on the difference</strong>, because each is an identity between numbers in one region.</p>
+<p><strong>The graph is local and the determinant is global, and the article keeps them apart on purpose.</strong> A claim that a position exists is a claim about the symbol and holds for every potential; a claim that a well realises a position is a claim about that well and is checked one well at a time. <strong>The table for $\eta=10$ is one well and its numbers are not universal.</strong> What is universal is the partition, the circle, the ceiling and the identity for the width.</p>
+<p><strong>The word "state" is graded here, and a reader who wants it strict should keep only the second position.</strong> A propagating mode is normalisable in neither variable and a decaying mode is normalisable in time but not in space; calling either a state is a convenience that the position quantifies. <strong>The quantification is $Q$</strong>, and the table's first resonance at $Q=0.705$ is the case in which the convenience is worst.</p>
+<p><strong>The dive lies outside the one-particle description.</strong> The circle continues past $k_{t}^{\prime}=-k_m$ into the lower continuum, and there the one-particle equation stops describing anything: the level is degenerate with the continuum, the vacuum carries charge, and <em>Pair Creation in a Bounded Region in Biquaternionic Form</em> takes over. <strong>The ceiling is the boundary of this article's own validity</strong>, and the article says so rather than continuing the circle by hand.</p>
+<p><strong>The first-order root of the Klein–Gordon operator has the same zero set, so the partition is not special to the second-order equation.</strong> The root is the first-order operator whose square is $\Box-k_m^{2}$, mass term included, and its block determinant on a plane wave is $\sigma_{\mathcal{P}}^{4}$, as <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em> shows when it computes $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2})=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2})^{4}$. <strong>A fourth power vanishes exactly where the scalar does</strong>, so the zero set is one set. <strong>The bare symbol $i\tilde K_{\Phi}$ does not have that zero set</strong>: its determinant is the light cone $k_{t}^{\prime\,2}-k_{\Phi}^{2}=0$, which is the massless locus and not the mass shell. <strong>The spin multiplies the multiplicity of each position and adds no position.</strong> A reader who expects the Dirac equation to introduce a fourth kind of zero will not find one.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One zero, three positions.</strong> The zero set of the symbol is the graph $k_{\Phi}^{2}=k_{t}^{\prime\,2}-k_m^{2}$, so there is exactly one zero per frequency. Its position relative to the real axis in each variable decides everything else, and the decision is exhaustive: a real frequency with real momentum propagates, a real frequency with imaginary momentum binds, and a non-real frequency decays.</p>
+<p><strong>Two questions, and one combination that cannot occur.</strong> A real frequency forces a real momentum squared, so no mode oscillates in time while being neither a plane wave nor an exponential in space. <strong>The consequence is the theorem about decay</strong>: with real parameters the zero is real or purely imaginary and never genuinely complex, so a decaying position needs a medium or a continuum. A purely imaginary frequency is reachable and holds nothing stationary; it is where the second position goes when its localisation would need $\kappa>k_m$.</p>
+<p><strong>The bound positions lie on a circle of radius $k_m$.</strong> Verified to $2.2\times10^{-16}$ over twelve depths of a Klein–Gordon well, the circle says that the decay constant is bounded by the mass wave number and that the bound is saturated at zero frequency. <strong>So the tail of a bound state cannot fall off faster than one reduced Compton wavelength</strong>, which is a statement about the equation and not about the well. The Galilean symbol replaces the circle by a parabola and destroys the ceiling, and hydrogen realises the ceiling exactly at $\mathfrak Z\alpha=1$, the endpoint of the corpus's exact spectrum.</p>
+<p><strong>The resonance is the same zero off the axis.</strong> A determinant with the reflection symmetry $D(-\overline{k})=\overline{D(k)}$ has its bound zeros on the fixed locus and its resonance zeros in pairs across it; one well of $\eta=10$ has four of the first and a ladder of the second, all zeros of one analytic function. <strong>The retarded condition selects the decaying member</strong>, and that selection is the choice of sheet the corpus's unstable-state article describes, seen here as a choice between two positions of one zero rather than between two sheets of one pole.</p>
+<p><strong>The width is a coordinate and not an integral.</strong> $\Gamma=2\hbar c\lvert\Im k_{t}^{\prime}\rvert$ by definition, $2\hbar v\alpha$ exactly in the non-relativistic variable, and $2\hbar v_g\alpha$ to first order relativistically with the error falling as $\alpha^{2}$. The two exponentials of a resonance cancel along the outgoing ray, so the probability density is steady in space and falls in time. <strong>The quality factor $\Re E/(2\lvert\Im E\rvert)=\Re E/\Gamma$ measures how much of a state the position is</strong>, and the table's ladder from $0.705$ to $1.626$ is a ladder of that measure.</p>
+<p><strong>The partition is a partition of the centre.</strong> The symbol is central, so its zero is a complex number of $\mathbb{B}_{C}$, and the three names denote a central point. What the algebra adds is that nothing non-central can move the point off its locus; what it does not add is the selection, which the potential makes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma_{\mathcal{P}}$</td>
+<td>the symbol of the Klein–Gordon operator, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a central complex number</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{s}}$</td>
+<td>the Schrödinger symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; affine in the energy</td>
+</tr>
+<tr>
+<td>$k_{t}^{\prime}$</td>
+<td>the energy wave number, $E/(\hbar c)$; the frequency of a mode</td>
+</tr>
+<tr>
+<td>$k_{\Phi}^{2}$</td>
+<td>the quadratic invariant $\vec k_\Phi\cdot\vec k_\Phi$, complex bilinear and not a modulus squared</td>
+</tr>
+<tr>
+<td>$k_{\mathrm{s}}$</td>
+<td>the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})/(\hbar c)$</td>
+</tr>
+<tr>
+<td>$k_m$</td>
+<td>the mass wave number, $mc/\hbar$; the radius of the circle, and the ceiling on $\kappa$</td>
+</tr>
+<tr>
+<td>$\vec\kappa$</td>
+<td>the decay vector, $\vec k_\Phi=i\vec\kappa$, with $\kappa=\sqrt{-k_{\Phi}^{2}}>0$ in the bound position</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>the well strength, $a\sqrt{2mV_0}/\hbar$; dimensionless, and the count of bound zeros is $\lfloor\eta/\pi\rfloor+1$</td>
+</tr>
+<tr>
+<td>$D(k)$</td>
+<td>the determinant of the outgoing matching condition; its zeros are the poles of $S$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the attenuation, $-\Im k_\Phi$; a decay constant in space</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>the width, $2\hbar c\lvert\Im k_{t}^{\prime}\rvert$; a decay constant in energy</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>the quality factor, $\Re E/(2\lvert\Im E\rvert)=\Re E/\Gamma$, taken on the energy above rest; cycles per e-fold up to a factor $\pi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><em>One-Dimensional Scattering in Biquaternionic Form</em> for the matching conditions, the transfer matrix, the flux, and the amplitude $t=(1+i\beta)^{-1}$ whose poles are the positions of this article.</p>
+<p><em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em> for the self-energy, the Golden Rule width, the second sheet, the centrality of the pole and the short-time law.</p>
+<p><em>Wave–Particle Duality and the Galilean Limit</em> for the affine symbol, the degree in the energy, and what the limit truncates.</p>
+<p><em>The Three Wavenumbers of a Particle</em> for $k_{t}^{\prime}$, $k_{\Phi}$ and $k_m$, for the decay wave number, and for bound states as standing waves.</p>
+<p><em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em> for the exact spectrum whose endpoint at $E=0$ is the ceiling, and for the dive at the lower continuum.</p>
+<p><em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em> for the root whose square is $\Box-k_m^{2}$ and for the block determinant that makes it scalar, and hence for the same zero set.</p>
+<p><em>The Free Particle and Wave Packets in Biquaternionic Form</em> for the packet that the first position requires before it holds a state.</p>
+<p><em>Pair Creation in a Bounded Region in Biquaternionic Form</em> for what the circle does past $k_{t}^{\prime}=-k_m$.</p>
+<p>R. G. Newton, <em>Scattering Theory of Waves and Particles</em> (McGraw-Hill, 1966; Dover, 2002), for the analytic structure of the $S$-matrix and the poles in the complex wave-number plane.</p>
+<p>J. R. Taylor, <em>Scattering Theory</em> (Wiley, 1972), for the bound, virtual and resonance zeros of one determinant, which is the translation this article reads as three positions of one zero.</p>
+<p>N. N. Moiseyev, <em>Non-Hermitian Quantum Mechanics</em> (Cambridge University Press, 2011), for resonances as complex eigenvalues and for the outgoing boundary condition that selects them.</p>
+<p>W. Greiner, <em>Relativistic Quantum Mechanics: Wave Equations</em> (Springer, third edition, 2000), for the Klein–Gordon square well, the threshold at twice the rest energy, and the diving of levels.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

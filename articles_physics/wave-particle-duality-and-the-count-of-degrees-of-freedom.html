@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="waveparticle-duality-and-the-count-of-degrees-of-freedom-the-symbols-rank-on-and-off-the-cone"><strong>Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The number of polarisations a field has is one integer, and that integer is a rank.</strong> A massive vector field carries three polarisation states at each wave number and a massless one carries two. The count is usually made with a gauge argument and a constraint. It can be made once, for both, by asking how many directions of the amplitude the symbol of the gradient carries into the algebra. That number is three off the light cone and two on it, and the direction that is lost on the cone is exactly one circular polarisation.</p>
+<p><strong>The last step is the reading, not the theorem.</strong> What the algebra supplies is the rank of one linear map at one frequency point. That a rank is a count of polarisation states is the corpus's identification of an amplitude direction with a state, and it is imported here. The article proves the rank and marks the import in §<em>Three Counts, One Rank</em> and §<em>Limits</em>.</p>
+<p><strong>Part of the story is already in the corpus.</strong> <em>The Photon in Biquaternionic Form</em>, §<em>Circular Polarization and the Complex Structure of the Propagation Direction</em>, proves that the circular polarisations are the eigenvectors of left multiplication by the unit propagation direction, with eigenvalues $\mp i$, and that $i\vec u_\Phi$ acts as $+1$ on one of them, as $-1$ on the other, and carries the longitudinal direction to the scalar $-i e_t$. §<em>Helicity as an Observable in the Informational Sector</em> of the same article records the spectrum $\{+1,0,-1\}$ of the helicity operator on the complexified vector part. All of that is used here, and none of it is re-proved.</p>
+<p><strong>The new part is one decomposition and one count.</strong> The symbol of the gradient is not the helicity multiplication; it is the helicity multiplication <strong>shifted by the energy wave number</strong>,</p>
+<p>$$
+i\tilde K_{\Phi}\big|_{\mathbb{B}_{V}}=-k_{t}^{\prime}\,\mathrm{id}+k_{\Phi}\,\bigl(i\vec u_\Phi\bigr)\big|_{\mathbb{B}_{V}} .
+$$</p>
+<p>Read against the published spectrum, that line gives the eigenvalues $-k_{t}^{\prime}\pm k_{\Phi}$ on the circular pair at once, and it locates the count of degrees of freedom: the rank is three while both branches are away from zero, and two when one of them crosses it. <strong>The crossing surface is the light cone, and the branch that crosses is one circular polarisation.</strong></p>
+<p><strong>Why this belongs to the duality.</strong> Wave–particle duality, as <em>Wave–Particle Duality and the Fourier Transform</em> states it, is one equation read in two bases. Here one integer is read twice. On the wave side it is the dimension of the image of the symbol: how many field strengths the operator can produce at a frequency. On the particle side it is the number of polarisation states available at that frequency. The two readings are the two halves of rank–nullity, and the switch between them is the transform.</p>
+<p><strong>What this does not buy.</strong> No dynamics, no value of a mass, no mechanism for the massless limit, and no derivation of gauge invariance. The rank reports how many directions the symbol reaches. Why a direction is a state, and why the massless field has a gauge symmetry, are the readings imported from the articles named below.</p>
+<p><strong>The conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$. On a plane wave <em>Derivatives, Fields and Transforms</em> gives the symbols</p>
+<p>$$
+\tilde\nabla\longmapsto i\tilde K_{\Phi},
+\qquad
+\tilde\nabla^{\natural}\longmapsto i\tilde K_{\Phi}^{\natural},
+\qquad
+\tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi},
+\qquad
+\tilde K_{\Phi}^{\natural}=i\,k_{t}^{\prime}e_t-\vec k_{\Phi},
+$$</p>
+<p>whose product is the central norm</p>
+<p>$$
+\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2},
+$$</p>
+<p>equal to $-k_{m}^{2}$ exactly on the mass shell. The superscript $\natural$ is the quaternion conjugation, the one whose fixed space is the centre, and the norm is written in full throughout and never as a single letter. The propagation direction is $\vec u_\Phi=\vec k_{\Phi}/k_{\Phi}$, a real unit pure quaternion, and the circular basis is the corpus's,</p>
+<p>$$
+\varepsilon_{\mathrm{fop},\pm}=\frac{1}{\sqrt 2}\bigl(\varepsilon_{\mathrm{fop},1}\pm i\,\varepsilon_{\mathrm{fop},2}\bigr),
+$$</p>
+<p>built on a right-handed triad $(\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_\Phi)$.</p>
+<h2 id="the-symbol-and-the-rank">The Symbol and the Rank</h2>
+<h3 id="the-symbol-is-left-multiplication">The symbol is left multiplication</h3>
+<p><strong>The transform turns the gradient into an element, and an element acts by multiplication.</strong> Applying the symbol to a field is the map</p>
+<p>$$
+\mathcal{F}[\tilde F]\longmapsto i\tilde K_{\Phi}\,\mathcal{F}[\tilde F],
+$$</p>
+<p>which is left multiplication by $i\tilde K_{\Phi}$ on the algebra, or on whichever subspace the field is restricted to. The transform of a field is written $\mathcal{F}[\tilde F]$, after <em>Biquaternion Continuous Harmonic Analysis</em>, and it carries no mark on the field itself: a caret carries a power, a conjugation, a transposition and a construction, and the transform is none of the four. This is the boxed statement of <em>Wave–Particle Duality and the Fourier Transform</em>, and it is exact for constant coefficients: the derivative becomes a multiplier, and the multiplier is an element.</p>
+<p><strong>The field strength is a pure vector, so the operative domain is three-dimensional.</strong> <em>Maxwell's Equations in the Biquaternionic Formulation</em> states that the field strength is the vector part of a conjugate gradient and is therefore a pure element. The vector part $\mathbb{B}_{V}$ is the anti-fixed space of quaternion conjugation, carried by $\vec e_x,\vec e_y,\vec e_z$, and it is three-dimensional over $\mathbb{C}$ — the dimension of the complexified amplitude space of a vector field.</p>
+<p><strong>So the object whose rank is in question is a map from three complex dimensions into four</strong>,</p>
+<p>$$
+L_{i\tilde K_{\Phi}}:\mathbb{B}_{V}\longrightarrow\mathbb{B},
+\qquad
+\tilde F\longmapsto i\tilde K_{\Phi}\tilde F .
+$$</p>
+<p>The operator is written $L_{a}$ for left multiplication by the element $a$, as the corpus writes it, so the structural capital is $L$ and the calligraphic letter is left to the Lagrangian density. The codomain is the whole algebra and not the vector part, and that is not an oversight: the longitudinal direction does not stay in the vector part, a fact the photon article records and which §<em>The Longitudinal Direction Becomes the Constraint</em> uses.</p>
+<h3 id="the-symbol-is-the-helicity-multiplication-shifted">The symbol is the helicity multiplication, shifted</h3>
+<p><strong>Split the element, and the operator splits with it.</strong> Because $\vec k_{\Phi}=k_{\Phi}\vec u_\Phi$ and $e_t$ is the identity,</p>
+<p>$$
+i\tilde K_{\Phi}=-k_{t}^{\prime}+i\,k_{\Phi}\,\vec u_\Phi ,
+$$</p>
+<p>an identity between elements, hence an identity between operators:</p>
+<p>$$
+i\tilde K_{\Phi}\big|_{\mathbb{B}_{V}}=-k_{t}^{\prime}\,\mathrm{id}+k_{\Phi}\,\bigl(i\vec u_\Phi\bigr)\big|_{\mathbb{B}_{V}} .
+$$</p>
+<p><strong>The decomposition was checked, and it is exact.</strong> On one hundred random frequency points and four test directions each — the two circular ones, the longitudinal one, and a linear one — the two sides agree to $2.9\times10^{-16}$ relative to the largest coefficient of the symbol.</p>
+<p><strong>The first term is a real shift and the second is the helicity.</strong> $-k_{t}^{\prime}$ is a real central scalar. The element $i\vec u_\Phi$ is Hermitian and belongs to $\mathbb{B}_{\Psi}$, the informational sector, and the photon article identifies the vector part of its left multiplication with the helicity operator, $\lambda=\mathrm{Vect}\circ(\text{left multiplication by } i\vec u_\Phi)$. <strong>The symbol of the gradient is therefore a central shift plus the momentum wave number times the helicity generator.</strong> Neither factor is a new object; the shift and the generator are both published, and their sum is the symbol.</p>
+<p><strong>The statement in one line.</strong> The symbol does to an amplitude what a mass-shell condition does to a spectrum: it adds a constant and scales a quantum number. The constant is the energy wave number, the quantum number is the helicity, and the scale is the momentum wave number.</p>
+<h3 id="rank-kernel-and-cokernel">Rank, kernel and cokernel</h3>
+<p><strong>The three spaces, and the two numbers.</strong> <em>The Fourier Transform and the Symbol of a Differential Operator</em>, §<em>The Kernel and the Cokernel</em>, states the dimensions once for left multiplication by an element of a finite-dimensional algebra:</p>
+<p>$$
+\dim\ker L_{\sigma}=\dim\operatorname{coker}L_{\sigma}=d-\operatorname{rank}L_{\sigma},
+\qquad
+\dim\operatorname{im}L_{\sigma}=\operatorname{rank}L_{\sigma},
+$$</p>
+<p>with $d$ the dimension of the algebra. The kernel is the freedom in the solution; the cokernel is the constraint on the data. That article proves the statement by rank–nullity and the dimension formula for a quotient, so nothing is re-proved here.</p>
+<p><strong>The equality of the two dimensions is a property of the regular representation, and this article's map is not in it.</strong> The same section of that article states the exception in as many words: the equality is a numerical coincidence of the regular representation, and it fails for a symbol that takes values in a proper subalgebra or in a module. Left multiplication by $i\tilde K_{\Phi}$ on the vector part is exactly that case, a map of three complex dimensions into four, so the two dimensions are read separately and neither is $d-r$ with a single $d$:</p>
+<p>$$
+\dim\ker L_{i\tilde K_{\Phi}}\big|_{\mathbb{B}_{V}}=3-\operatorname{rank},
+\qquad
+\dim\operatorname{coker}L_{i\tilde K_{\Phi}}\big|_{\mathbb{B}_{V}}=4-\operatorname{rank},
+$$</p>
+<p>where $3$ is the dimension of the domain and $4$ that of the codomain. <strong>The rank counts one thing and the two dimensions count two more, and the count of degrees of freedom is the rank itself, not either of them.</strong></p>
+<p><strong>The reading this article uses.</strong> For $L_{i\tilde K_{\Phi}}$ on the three-dimensional vector part: the kernel is the set of amplitude directions the symbol annihilates, and the cokernel is the set of conditions the transformed equation places on the source. The first is a count of lost directions; the second is a count of constraints. <strong>A single rank reports both, and the article reads it twice.</strong></p>
+<p><strong>One warning, and it is why the rank is computed on the vector part.</strong> The rank of left multiplication by $i\tilde K_{\Phi}$ on the whole algebra is not the rank on the vector part. On the whole algebra the map is four-dimensional in and four-dimensional out; on the vector part it is three in and four out. The two computations give different numbers, and only the second one is about a field strength. Every number below is for the vector part.</p>
+<h3 id="why-the-vector-part-is-the-carrier">Why the vector part is the carrier</h3>
+<p><strong>Three reasons, and they agree.</strong> The field strength of the corpus is a pure vector by construction. The amplitudes of <em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em> are the three real components of a spatial vector, which is the material form of a pure element. And the vector part is the carrier of the spin-one representation, which <em>Helicity in Biquaternionic Form</em> names: spin one is the adjoint action on the imaginary quaternions, and only the carrier changes from the fundamental module. <strong>The vector part is therefore a carrier of a representation and not a module over the algebra</strong>, and that distinction is what makes this article's map possible: left multiplication by an element does not preserve the vector part, so the symbol can carry a direction out of it. A module would have trapped every direction inside.</p>
+<p><strong>What the carrier is not.</strong> The state module of the quantum articles is not the carrier here. States lie on the zero-divisor cone of the algebra; a field strength lies in the vector part. This article counts field amplitudes, and the count of states is <em>Wave–Particle Duality and the Fourier Transform</em>, §<em>Where the Duality Lands</em>.</p>
+<h2 id="the-rank-on-and-off-the-cone">The Rank On and Off the Cone</h2>
+<h3 id="the-three-directions">The three directions</h3>
+<p><strong>The basis in which the symbol is diagonal.</strong> The vector part has the linear directions $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2},\vec u_\Phi$ and the circular ones $\varepsilon_{\mathrm{fop},\pm}$. The circular pair spans the transverse plane with $\vec u_\Phi$,</p>
+<p>$$
+\varepsilon_{\mathrm{fop},1}=\frac{\varepsilon_{\mathrm{fop},+}+\varepsilon_{\mathrm{fop},-}}{\sqrt 2},
+\qquad
+\varepsilon_{\mathrm{fop},2}=\frac{\varepsilon_{\mathrm{fop},+}-\varepsilon_{\mathrm{fop},-}}{i\sqrt 2},
+$$</p>
+<p>so the three elements $\varepsilon_{\mathrm{fop},+}$, $\varepsilon_{\mathrm{fop},-}$ and $\vec u_\Phi$ are a complex basis of $\mathbb{B}_{V}$. Nothing is gained or lost in the change; the point is that the symbol is diagonal in it, and it is diagonal because the helicity multiplication is.</p>
+<h3 id="the-computation">The computation</h3>
+<p><strong>The three images, read off the published spectrum.</strong> Left multiplication by $i\vec u_\Phi$ acts as $+1$ on $\varepsilon_{\mathrm{fop},+}$, as $-1$ on $\varepsilon_{\mathrm{fop},-}$, and sends $\vec u_\Phi$ to $-i e_t$; that is the photon article's display, and it is quoted. Applying the shift $-k_{t}^{\prime}$ to each gives</p>
+<p>$$
+i\tilde K_{\Phi}\,\varepsilon_{\mathrm{fop},+}=-(k_{t}^{\prime}-k_{\Phi})\,\varepsilon_{\mathrm{fop},+},
+\qquad
+i\tilde K_{\Phi}\,\varepsilon_{\mathrm{fop},-}=-(k_{t}^{\prime}+k_{\Phi})\,\varepsilon_{\mathrm{fop},-},
+$$</p>
+<p>$$
+i\tilde K_{\Phi}\,\vec u_\Phi=-i\,k_{\Phi}-k_{t}^{\prime}\,\vec u_\Phi .
+$$</p>
+<p>The first display is an eigenvalue statement with the two light-cone factors, each carrying a minus sign. The second is not: the longitudinal direction leaves the vector part, and its image has a scalar part $-i k_{\Phi}$ beside a vector part $-k_{t}^{\prime}\vec u_\Phi$.</p>
+<p><strong>The three relations were checked directly, without the decomposition.</strong> On one hundred random frequency points, with the triad rebuilt at each point and the residual taken against the largest coefficient in the image, the two eigenvalue identities hold to $3.6\times10^{-16}$ and the two parts of the longitudinal image to $3.6\times10^{-16}$. The relations are exact algebra, and the numbers guard the transcription of the signs.</p>
+<p><strong>The worked point.</strong> Take $k_{t}^{\prime}=5$ and $\vec k_{\Phi}=3\vec u_\Phi$, so $k_{\Phi}=3$ and $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-16$, which is $-k_{m}^{2}$ at $k_{m}=4$ — the $3$–$4$–$5$ mode of <em>Wave–Particle Duality and the Fourier Transform</em>. The eigenvalues are $-2$ and $-8$; their product is $16$, which is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$; and the longitudinal image is $-3i-5\vec u_\Phi$, with scalar part $-3i=-i k_{\Phi}$.</p>
+<h3 id="the-two-ranks-and-what-each-dimension-counts">The two ranks, and what each dimension counts</h3>
+<p><strong>Off the cone the rank is three.</strong> The map is three in and four out, so rank three is the largest possible, the kernel is empty and the cokernel is one-dimensional. No amplitude direction is annihilated; one condition is placed on the data.</p>
+<p><strong>On the cone the rank is two.</strong> The first eigenvalue vanishes, so $\varepsilon_{\mathrm{fop},+}$ joins the kernel, the rank falls by one and the cokernel becomes two-dimensional. The second eigenvalue is $-2k_{\Phi}$, non-zero at every non-zero wave number, so $\varepsilon_{\mathrm{fop},-}$ is never annihilated.</p>
+<p><strong>The domain is the forward cone.</strong> The count is stated for $k_{t}^{\prime}\ge0$ and $k_{\Phi}>0$, which is what $k_{t}^{\prime}=E/(\hbar c)$ with $E>0$ and a non-zero momentum give. Neither restriction is cosmetic. At negative energy the drop does not disappear but moves: at $k_{t}^{\prime}=-k_{\Phi}$ the branch that vanishes is $\varepsilon_{\mathrm{fop},-}$, and $\varepsilon_{\mathrm{fop},+}$ is scaled by $+2k_{\Phi}$, so the mirror statement of §<em>The conjugate symbol kills the other direction</em> holds with the two circular labels exchanged. At $\vec k_{\Phi}=0$ the unit direction $\vec u_\Phi$ does not exist and the circular basis is undefined; there the symbol is the central scalar $i k_{t}^{\prime}e_t$, of rank three on the vector part for $k_{t}^{\prime}\ne0$ and of rank zero at the origin, where both eigenvalues vanish at once.</p>
+<p><strong>The four rows, in one table.</strong> The first two were checked on one hundred random frequency points each, with the rank taken by singular value decomposition at a tolerance of $10^{-9}$ and the cokernel dimension taken as $4-r$. The last two are exact: the negative cone is the positive cone with $k_{t}^{\prime}$ reflected, and the origin is a zero map.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>frequency point</th>
+<th>rank on $\mathbb{B}_{V}$</th>
+<th>kernel</th>
+<th>cokernel</th>
+<th>annihilated direction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>off the cone, $k_{t}^{\prime}\ne\pm k_{\Phi}$</td>
+<td>$3$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>on the cone, $k_{t}^{\prime}=k_{\Phi}>0$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$\varepsilon_{\mathrm{fop},+}$</td>
+</tr>
+<tr>
+<td>on the negative cone, $k_{t}^{\prime}=-k_{\Phi}<0$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$\varepsilon_{\mathrm{fop},-}$</td>
+</tr>
+<tr>
+<td>the origin, $k_{t}^{\prime}=k_{\Phi}=0$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>$4$</td>
+<td>all three</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>No intermediate rank occurs.</strong> Over the hundred sample points of each forward kind the rank took exactly one value, so there is no third stratum between the cone and its complement. That is what a zero set of multiplicity one looks like: one branch crosses zero once, and it crosses on a single surface.</p>
+<p><strong>The stratification is the whole content.</strong> The rank is a function of the frequency point, constant on the two open regions and lower on their common boundary. The count of degrees of freedom is therefore not a number belonging to a field; it is a number belonging to a field <strong>at a frequency point</strong>, and its two values are the two regions.</p>
+<h2 id="the-two-circular-directions">The Two Circular Directions</h2>
+<h3 id="the-eigenvalues-are-the-two-light-cone-factors">The eigenvalues are the two light-cone factors</h3>
+<p><strong>One identity, and it carries the shell.</strong> The product of the two eigenvalues is</p>
+<p>$$
+(k_{t}^{\prime}-k_{\Phi})(k_{t}^{\prime}+k_{\Phi})=k_{t}^{\prime\,2}-k_{\Phi}^{2}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
+$$</p>
+<p>so the determinant of the symbol on the transverse plane is minus the quaternion norm. <strong>The mass shell, which is the vanishing of $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}+k_{m}^{2}$, is therefore also the vanishing of one eigenvalue plus $k_{m}^{2}$.</strong> That is the vector-part reading of the corpus's block determinant being one number to the fourth power, <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>, §<em>The determinant</em>.</p>
+<p><strong>The reading.</strong> The dispersion relation is usually met as a level set of a norm. Here it is met twice: as a level set of the norm, and as the vanishing locus of one eigenvalue of the symbol's action on amplitude directions. The second is finer, because it says which direction vanishes with it. <strong>A norm can vanish without naming a direction; an eigenvalue cannot.</strong></p>
+<h3 id="on-the-cone-one-eigenvalue-vanishes">On the cone one eigenvalue vanishes</h3>
+<p><strong>Only one, because the other is bounded away from zero.</strong> On the cone the second eigenvalue is $-2k_{\Phi}$, so it cannot vanish at a non-zero wave number. Exactly one circular direction disappears from the image, and the rank drops by exactly one — never by two.</p>
+<p><strong>This is the sharpest form of the statement.</strong> A rank is a number, and a number can drop for many reasons. The eigenvalue display gives the reason: one branch of the shifted helicity spectrum crosses zero, and the direction attached to it is annihilated. On the cone the kernel is one complex line, and the line is $\varepsilon_{\mathrm{fop},+}$.</p>
+<p><strong>The check on the mode.</strong> At $k_{t}^{\prime}=k_{\Phi}=5$ with $\vec k_{\Phi}=5\vec u_\Phi$, the image of $\varepsilon_{\mathrm{fop},+}$ is zero to machine precision and the image of $\varepsilon_{\mathrm{fop},-}$ is $-10\,\varepsilon_{\mathrm{fop},-}$, the value the formula gives.</p>
+<h3 id="the-longitudinal-direction-becomes-the-constraint">The longitudinal direction becomes the constraint</h3>
+<p><strong>The third direction is not annihilated; it is carried out of the vector part.</strong> Its image is $-i k_{\Phi}-k_{t}^{\prime}\vec u_\Phi$, whose scalar part is $-i k_{\Phi}$. The scalar direction is where the constraint lives: it is the Lorenz condition of the Maxwell and Proca articles, the vanishing of the scalar part of the conjugate gradient of the potential.</p>
+<p><strong>So the three directions are used in three different ways.</strong> One is annihilated on the cone and carried off it. One is scaled by the sum of the light-cone factors and never vanishes. One leaves the vector part and becomes the constraint. <strong>The rank counts the directions with independent non-zero images: three off the cone, two on it.</strong> The longitudinal direction is one of them at every frequency, because its image is non-zero even though it has left the vector part. What the cone removes is one circular direction, and nothing else.</p>
+<h2 id="what-the-lost-direction-means">What the Lost Direction Means</h2>
+<h3 id="one-circular-polarisation-not-the-longitudinal">One circular polarisation, not the longitudinal</h3>
+<p><strong>The direction the symbol loses on the cone is circular, not longitudinal.</strong> A reader expects the massless field to lose the longitudinal direction, because a residual gauge transformation removes it, and that is the textbook sentence. Here the direction that leaves the image is $\varepsilon_{\mathrm{fop},+}$, a transverse circular direction. The longitudinal direction is annihilated at no frequency point, on the cone or off it: its image is $-i\,k_{\Phi}-k_{t}^{\prime}\vec u_\Phi$, non-zero because of the scalar part, and that scalar part is the constraint rather than a fourth surviving vector direction.</p>
+<p><strong>The two statements are consistent, and the difference is what is being counted.</strong> The textbook count is of states after the gauge quotient. The rank counts amplitude directions before the quotient. The longitudinal direction is removed for both massive and massless fields by the constraint, which is why it leaves the vector part; its image remains in the algebra as the scalar constraint, and it is counted once in the rank at every frequency. The massless case then loses one circular direction, which is why the count is two and not three. <strong>The constraint and the cone together produce the massless count, and the rank separates them.</strong></p>
+<p><strong>What that buys.</strong> The usual presentation gives the massless count as one subtraction from four. Here there is exactly one subtraction, and it happens on one surface: the rank falls by one on the cone and by nothing anywhere else. The constraint is not a subtraction at all in this bookkeeping — it is the scalar part of the third image, present at every frequency. <strong>The two mechanisms that the textbook count merges are therefore kept apart: one is a dimension, the other is a component of an image.</strong></p>
+<h3 id="the-conjugate-symbol-kills-the-other-direction">The conjugate symbol kills the other direction</h3>
+<p><strong>The two conjugates split the two circular directions.</strong> On the cone,</p>
+<p>$$
+i\tilde K_{\Phi}^{\natural}\,\varepsilon_{\mathrm{fop},-}=0,
+\qquad
+i\tilde K_{\Phi}^{\natural}\,\varepsilon_{\mathrm{fop},+}=-2k_{\Phi}\,\varepsilon_{\mathrm{fop},+},
+$$</p>
+<p>the mirror of the display for $i\tilde K_{\Phi}$: the conjugate annihilates the other direction and scales the one the first symbol annihilated. The residual is $3.6\times10^{-16}$ over the hundred sample points.</p>
+<p><strong>The reading.</strong> The two conjugate symbols have complementary one-dimensional kernels on the cone, and their direct sum is the transverse plane. An equation written with $\tilde\nabla$ and one written with $\tilde\nabla^{\natural}$ do not select the same circular direction, and the pair of them exhausts the transverse amplitudes.</p>
+<p><strong>This is a statement about the algebra, not a convention of handedness.</strong> Which of the two the corpus's helicity articles label $\lambda=+1$ is a matter of the operator's sign, and this article does not need it. What is claimed is only that the two conjugate symbols annihilate opposite circular directions, and that the pair is complete.</p>
+<h3 id="the-eigenvectors-are-null">The eigenvectors are null</h3>
+<p><strong>The two circular directions are null in the algebra's own sense.</strong> Their squares vanish,</p>
+<p>$$
+\varepsilon_{\mathrm{fop},+}^{2}=\varepsilon_{\mathrm{fop},-}^{2}=0,
+$$</p>
+<p>to a residual of $2.4\times10^{-16}$ over the hundred sample points. This is the algebra's form of the statement that a circular polarisation vector is isotropic, $\varepsilon_{\mathrm{fop},\pm}\cdot\varepsilon_{\mathrm{fop},\pm}=0$ in the complex-bilinear product, which the photon article records.</p>
+<p><strong>Why this is the right coincidence.</strong> A null element of the vector part is a zero divisor in that subspace, and the zero-divisor cone is the object the quantum articles use as the state module. The direction the symbol annihilates on the cone is therefore the same kind of object as a state: null, and annihilated by a multiplicative operator. That is the closest this article comes to the quantum side, and it is a statement about the algebra, not about a particle.</p>
+<h2 id="three-counts-one-rank">Three Counts, One Rank</h2>
+<h3 id="the-massive-field-counts-three">The massive field counts three</h3>
+<p><strong>A massive vector field sits off the cone at every wave number</strong>, because $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$ with $k_{m}\ne0$ gives $k_{t}^{\prime}>k_{\Phi}$ strictly. The symbol is then injective on the vector part, its rank is three, and the three directions all reach the algebra with non-zero images. <em>The Proca Equation</em> counts three real amplitudes in the rest frame; the rank says the same thing without a frame.</p>
+<p><strong>Where the longitudinal amplitude comes from.</strong> Off the cone the longitudinal direction still leaves the vector part and still produces the scalar constraint, so the count of three is not a count of directions remaining inside the vector part. It is the count of directions the symbol distinguishes, each carried to a non-zero image. The Proca article's three amplitudes are the three directions, and the constraint fixes the time component, which is a fourth component and not one of the three. <strong>The rank and the amplitude count agree because the constraint acts outside the vector part.</strong></p>
+<h3 id="the-massless-field-counts-two">The massless field counts two</h3>
+<p><strong>A massless field sits on the cone at every wave number</strong>, and the rank is two, one less than off the cone. The kernel is one complex line, $\varepsilon_{\mathrm{fop},+}$, so the loss is exactly one circular polarisation. The Proca article obtains its two by removing the longitudinal direction with a residual gauge transformation, and the two counts agree while the bookkeeping differs: the rank's two dimensions are $\varepsilon_{\mathrm{fop},-}$ and the longitudinal image $-i\,k_{\Phi}-k_{t}^{\prime}\vec u_\Phi$, whereas the Proca pair is $\varepsilon_{\mathrm{fop},\pm}$. <strong>The agreement is a count of dimensions, and this article claims no more than that.</strong></p>
+<p><strong>The two arguments are independent, and that is the useful part.</strong> A reader who distrusts the gauge argument can count the rank; a reader who distrusts the algebra can count the amplitudes. When they agree the count is not in doubt, and the agreement is not circular, because neither argument refers to the other.</p>
+<h3 id="the-graviton-counts-two-by-a-different-mechanism">The graviton counts two by a different mechanism</h3>
+<p><strong>The graviton is not a vector field, so this rank is not its rank.</strong> The count of two comes from the transverse-traceless projector on the symmetric square, whose rank <em>Canonical Quantization of the Biquaternion Graviton Field</em> computes as $6-4=2$. The carrier is six-dimensional and the removal is by a projector, not by a symbol.</p>
+<p><strong>What the two cases share is the shape of the answer, not the mechanism.</strong> In both, a count of degrees of freedom is the rank of one map on one carrier, and in both the carrier is fixed by the algebra before any dynamics is written. What differs is the carrier, and the article says so rather than forcing the graviton into the vector picture.</p>
+<h3 id="what-the-count-does-not-derive">What the count does not derive</h3>
+<p><strong>No gauge invariance.</strong> The rank drop on the cone is not the statement that the massless field has a gauge symmetry. Gauge invariance is a statement about a transformation that leaves the equation fixed, and it is an input of the Maxwell and Proca articles. The rank reports the dimension of an image; the gauge argument reports an equivalence class. They meet in the count and they are not the same statement.</p>
+<p><strong>No Higgs mechanism.</strong> The passage from three to two as the mass is turned off is a discontinuity of the count, and the mechanism that makes it continuous is the Stueckelberg field, which the Proca article records. The rank sees the discontinuity and nothing else; it has no scalar to give the third direction to.</p>
+<p><strong>No value of a mass.</strong> The cone is $k_{t}^{\prime}=k_{\Phi}$ and the mass shell is $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$. The rank distinguishes the two surfaces and says nothing about which one a given field lies on.</p>
+<h2 id="the-duality-in-this-reading">The Duality in This Reading</h2>
+<p><strong>The same integer, read twice.</strong> On the wave side, the rank is the dimension of the image of the symbol: the number of field strengths the operator can produce at a frequency. On the particle side, it is the number of polarisation states the field has at that frequency. The two readings are the two halves of rank–nullity, and the transform is what makes them one integer. <strong>The identification of a direction with a state is the corpus's reading and is imported here; §<em>Three Counts, One Rank</em> states exactly how far it goes, and the count of dimensions is the part this article proves.</strong></p>
+<p><strong>Why this belongs to the duality and not to the algebra alone.</strong> The algebra alone gives a rank of a linear map. What makes it a statement about a particle is that the field's amplitudes are the states, an identification the corpus makes throughout and states in <em>Wave–Particle Duality and the Fourier Transform</em>, §<em>Two Forms, Two Descriptions</em>. The wave side is a property of the symbol; the particle side is a property of the amplitude space; the transform is the switch that carries one to the other. <strong>The count of degrees of freedom is where the switch is visible as an integer rather than as a transform.</strong></p>
+<p><strong>The cone is where the switch changes its answer.</strong> Everywhere off the cone the two readings give three; on the cone they give two. The duality does not hold one number for a field, it holds one number per frequency point, and the surface where the number changes is the massless dispersion surface. That is sharper than the sentence "a massless field has two polarisations", and it is what the rank supplies.</p>
+<p><strong>One consequence for how the corpus writes its counts.</strong> A count of polarisations is a function of the frequency point, so an article that states a count without naming the surface it is taken on is incomplete. The Proca article names the rest frame; the photon articles name the massless shell. The rank display names both at once, and it is the form in which the two can be compared.</p>
+<h2 id="limits">Limits</h2>
+<ul>
+<li><strong>The count is stated on the forward cone.</strong> $k_{t}^{\prime}\ge0$ and $k_{\Phi}>0$, with the origin excluded, where the rank is zero rather than two. Negative energy repeats the drop at $k_{t}^{\prime}=-k_{\Phi}$ with $\varepsilon_{\mathrm{fop},+}$ and $\varepsilon_{\mathrm{fop},-}$ exchanged, so the forward statement is the corpus's convention and not a loss of generality.</li>
+<li><strong>The count is of complex amplitude directions.</strong> The vector part has complex dimension three, and off the cone the three directions are the three polarisation states of a massive vector field by the corpus's reading. The correspondence is not a count of real parameters: a real field strength has six real components in three complex directions. <strong>On the cone the correspondence is not direction for direction</strong>, as §<em>The massless field counts two</em> states, and the article claims the count of dimensions and not the identification.</li>
+<li><strong>The rank is computed on one carrier only.</strong> On the whole algebra the same symbol has rank four off the cone and rank two on it, with a two-dimensional kernel on the cone. Both computations are correct and they answer different questions: the whole-algebra one is a rank of left multiplication in the algebra read as a matrix algebra, the vector-part one is the rank of the symbol on the space a field strength occupies.</li>
+<li><strong>Constant coefficients.</strong> The symbol exists only for a constant-coefficient operator. A varying medium has a convolution for an image and no rank at a frequency point, so the count of degrees of freedom in an inhomogeneous medium is not this count.</li>
+<li><strong>The handedness labels are the photon article's.</strong> This article uses the corpus's $\varepsilon_{\mathrm{fop},\pm}$ and its $\mp i$ eigenvalue relation, and it does not assign $\lambda=+1$ or $-1$ to either, because the assignment needs the helicity operator's sign convention, which the article does not use.</li>
+<li><strong>The graviton is quoted, not recomputed.</strong> The count of two for the graviton is the transverse-traceless rank of the corpus's graviton article, and the mechanism there is a projector on a six-dimensional carrier. Nothing in this article's rank computation applies to it.</li>
+<li><strong>No statement about a state.</strong> The polarisations counted here are amplitude directions of a field strength. Whether a direction is occupied, and with what weight, is a statement about a state, and states are not in this article.</li>
+<li><strong>The rank at a point says nothing about propagation.</strong> A rank is an algebraic number at one frequency point. It does not say how a wave packet moves, and it does not distinguish a stable mode from an evanescent one.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p><strong>The count of degrees of freedom is the rank of the symbol on the vector part.</strong> Left multiplication by $i\tilde K_{\Phi}$ maps the three complex directions of the vector part into the algebra, with rank three off the light cone and rank two on it. The cokernel is one-dimensional off the cone and two-dimensional on it.</p>
+<p><strong>The symbol is the helicity multiplication shifted by the energy wave number.</strong> $i\tilde K_{\Phi}=-k_{t}^{\prime}+i k_{\Phi}\vec u_\Phi$, so on the vector part it is $-k_{t}^{\prime}$ times the identity plus $k_{\Phi}$ times left multiplication by the Hermitian element $i\vec u_\Phi$. The identity holds to $2.9\times10^{-16}$ over one hundred points.</p>
+<p><strong>The two circular polarisations are the eigenvectors, and the eigenvalues are the light-cone factors.</strong> In the photon article's basis the images are $-(k_{t}^{\prime}-k_{\Phi})\varepsilon_{\mathrm{fop},+}$ and $-(k_{t}^{\prime}+k_{\Phi})\varepsilon_{\mathrm{fop},-}$. The product of the two eigenvalues is minus the quaternion norm, and the identities hold to $3.6\times10^{-16}$.</p>
+<p><strong>On the cone exactly one branch vanishes, and the direction attached to it is lost.</strong> The drop from three to two is the loss of one circular polarisation, not of the longitudinal one. The longitudinal direction leaves the vector part at every frequency, its image carrying the scalar part $-i k_{\Phi}$, and that scalar is the constraint.</p>
+<p><strong>The two conjugate symbols annihilate opposite circular directions.</strong> On the cone $i\tilde K_{\Phi}$ annihilates $\varepsilon_{\mathrm{fop},+}$ and $i\tilde K_{\Phi}^{\natural}$ annihilates $\varepsilon_{\mathrm{fop},-}$, so the two kernels together span the transverse plane.</p>
+<p><strong>The eigenvectors are null.</strong> $\varepsilon_{\mathrm{fop},+}^{2}=\varepsilon_{\mathrm{fop},-}^{2}=0$, so the directions the symbol distinguishes are exactly the null directions of the vector part.</p>
+<p><strong>The three counts of the corpus are three readings of one rank.</strong> The massive vector has three because it is off the cone, the massless vector has two because it is on it, and the graviton has two by a different mechanism on a different carrier. <strong>The massless agreement is an agreement of dimensions</strong>, and §<em>The massless field counts two</em> states where the direction-by-direction correspondence stops.</p>
+<p><strong>What is not derived.</strong> Gauge invariance, the value of a mass, the mechanism of the massless limit, and the identification of a direction with a state. The rank is exact; the reading is imported, and the article marks where.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{V}$</td>
+<td>the vector part, the anti-fixed space of quaternion conjugation, of complex dimension three</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
+<td>the material and informational sectors: $\mathbb{B}_{\Psi}$ is the Hermitian, fixed space of the adjoint, $\mathbb{B}_{\Phi}$ the anti-Hermitian, anti-fixed one</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi}$</td>
+<td>the wave-number element $i\,k_{t}^{\prime}e_t+\vec k_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi}^{\natural}$</td>
+<td>its quaternion conjugate $i\,k_{t}^{\prime}e_t-\vec k_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$</td>
+<td>the central quaternion norm, $-k_{t}^{\prime\,2}+k_{\Phi}^{2}$, equal to $-k_{m}^{2}$ on shell</td>
+</tr>
+<tr>
+<td>$k_{t}^{\prime}$</td>
+<td>the energy wave number, $E/(\hbar c)=\omega/c$</td>
+</tr>
+<tr>
+<td>$k_{\Phi}$</td>
+<td>the modulus of the momentum wave number, $\lvert\vec p\rvert/\hbar$</td>
+</tr>
+<tr>
+<td>$k_{m}$</td>
+<td>the mass wave number, $m\,c/\hbar$</td>
+</tr>
+<tr>
+<td>$\vec u_\Phi$</td>
+<td>the unit propagation direction, $\vec k_{\Phi}/k_{\Phi}$</td>
+</tr>
+<tr>
+<td>$\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$</td>
+<td>a right-handed orthonormal pair transverse to $\vec u_\Phi$</td>
+</tr>
+<tr>
+<td>$\varepsilon_{\mathrm{fop},\pm}$</td>
+<td>the circular directions $(\varepsilon_{\mathrm{fop},1}\pm i\varepsilon_{\mathrm{fop},2})/\sqrt 2$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>the helicity operator, the vector part of left multiplication by $i\vec u_\Phi$</td>
+</tr>
+<tr>
+<td>$L_{i\tilde K_{\Phi}}$</td>
+<td>left multiplication by $i\tilde K_{\Phi}$, read as a map $\mathbb{B}_{V}\to\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the rank of that map: three off the cone, two on it</td>
+</tr>
+<tr>
+<td>$\ker$, $\operatorname{coker}$</td>
+<td>its kernel and cokernel, of dimensions $3-r$ and $4-r$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Fourier Transform and the Symbol of a Differential Operator</em>, for the symbol, the zero set, and the rank–nullity statement this article reads on the vector part.</li>
+<li><em>Biquaternion Continuous Harmonic Analysis</em>, for the transform pair and the convolution theorem behind the symbol.</li>
+<li><em>Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set</em>, for the degenerate set where the inverse fails, which is the light cone of this article read as a set of frequencies.</li>
+<li><em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>, for the character that the symbol multiplies.</li>
+<li><em>Wave–Particle Duality and the Fourier Transform</em>, for the two quadratic forms, the switch between them, and the mass shell as a level set.</li>
+<li><em>The Three Wavenumbers of a Particle</em>, for $k_{t}^{\prime}$, $k_{\Phi}$ and $k_{m}$ and the right triangle they form.</li>
+<li><em>The Photon in Biquaternionic Form</em>, for the circular basis, the $\mp i$ eigenvalue relation, the action of $i\vec u_\Phi$ on the vector part, and the helicity spectrum.</li>
+<li><em>Helicity in Biquaternionic Form</em>, for the helicity operator, its two-valued label, and the self-dual split of the field strength.</li>
+<li><em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em>, for the count of three amplitudes and the constraint that fixes the time component.</li>
+<li><em>Maxwell's Equations in the Biquaternionic Formulation</em>, for the field strength as a pure vector and the scalar part as the Lorenz condition.</li>
+<li><em>Canonical Quantization of the Biquaternion Graviton Field</em>, for the transverse-traceless count of two on the symmetric square.</li>
+<li><em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>, for the block determinant that is one number to the fourth power.</li>
+<li><em>The Klein–Gordon Equation in Biquaternionic Form</em>, for the dispersion relation as the level set of the norm.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

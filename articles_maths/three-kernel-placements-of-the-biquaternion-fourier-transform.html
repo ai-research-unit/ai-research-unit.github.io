@@ -70,127 +70,152 @@
       <div class="article-body">
         <h1 id="the-three-kernel-placements-of-the-biquaternion-fourier-transform"><strong>The Three Kernel Placements of the Biquaternion Fourier Transform</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion Fourier transform is defined by an integral in which the exponential kernel can stand on the left of the function, on the right, or on both sides, and <strong>the three choices give three different transforms</strong>. This article proves what each choice keeps and what each one loses. It is a statement about a family of operators, not about a change of notation.</p>
-<p><strong>The three placements.</strong> Let $\tilde{Ζ}$ be a pure root of $1$, so that $\tilde{Ζ}^{2}=e_t$, and write $R=i\tilde{Ζ}$ for the pure root of $-e_t$ attached to it; let $W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)=\exp(-2\pi R\omega t)$, and let $\tilde{Ζ}'$ be a second root of $1$ with $R'=i\tilde{Ζ}'$. The three transforms are</p>
+<p><strong>This article proves that the three ways of placing the biquaternion Fourier kernel against a value give three different operators, and that the distance between them is measured by a commutator whose size is the distance of the value from a four-plane.</strong> The three placements are the left, the right and the two-sided, and the last of them carries a second root and a choice of sign that no one-sided placement has.</p>
+<p><strong>The setting.</strong> Let $\tilde{Ζ}$ be the <strong>Hermitian</strong> root of $1$ of <em>Biquaternion Continuous Harmonic Analysis</em>, so that $\tilde{Ζ}^{2}=e_t$ and $\tilde{Ζ}^{*}=\tilde{Ζ}$, and let $R=i\tilde{Ζ}$. Then $R^{2}=-e_t$ and $R^{*}=-R$, so $\lVert R\rVert_E=1$; when the root is not central, $R$ is a real unit vector of the pure part. The kernel is</p>
+<p>$$
+W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)=\exp(-2\pi R\omega t),
+$$</p>
+<p>a time $t$, a real frequency $\omega$. Let $\tilde{Ζ}'$ be a second Hermitian root of $1$, with $R'=i\tilde{Ζ}'$ and $W'(t,\omega)=\exp(2\pi R'\omega t)$, which is $W(t,\omega)^{-1}$ exactly when $R'=R$. The three transforms of an integrable $f:\mathbb{R}\to\mathbb{B}$ are</p>
 <p>$$
 \mathcal T_L[f](\omega)=\int W(t,\omega)f(t)\,dt,\qquad \mathcal T_R[f](\omega)=\int f(t)W(t,\omega)\,dt,
 $$</p>
-<p>for the one-sided placements, and</p>
+<p>and</p>
 <p>$$
-\mathcal T_T[f](\omega)=\int W(t,\omega)f(t)W'(t,\omega)\,dt,\qquad W'(t,\omega)=\exp(2\pi i\tilde{Ζ}'\omega t)=\exp(2\pi R'\omega t),
+\mathcal T_T[f](\omega)=\int W(t,\omega)f(t)W'(t,\omega)\,dt .
 $$</p>
-<p>for the two-sided one. <strong>The order of kernel and function is fixed here, once, and kept to the end</strong>: the left placement multiplies on the left, the right placement on the right, and the two-sided placement multiplies by $W$ on the left and by $W'$ on the right, with $W'$ carrying the plus sign.</p>
-<p><strong>Why the root is written as a root of one.</strong> The algebra element in the exponent carries the square $e_t$ and the scalar $i$ carries the sign, which is the convention of <em>Biquaternion Continuous Harmonic Analysis</em>; the root of $-e_t$ that the computations below need is the attached $R=i\tilde{Ζ}$. Every formula below uses only three properties of $R$: that $R^{2}=-e_t$, that $R$ is pure, and that a transverse element anticommutes with it. <strong>Both $R$ and $\tilde{Ζ}$ are pure and related by the central scalar $i$, so the change of letter moves no product and fixes the sign of the kernel at the same time</strong>; the only place where the two letters are not interchangeable is the degenerate central case, where $R=\pm i$ means $\tilde{Ζ}=\pm e_t$.</p>
-<p><strong>What is proved.</strong> That the kernel is a unit of Euclidean norm one, so that every placement is bounded by $\int\lVert f\rVert_E$ (§<em>The Kernel as a Function of the Frequency</em>, §<em>The Two-Sided Placement</em>). That the commutant of a pure root is exactly the plane of the root, of real dimension four, and that conjugation by the kernel is the identity on that plane and a rotation of angle $4\pi\omega t$ on a transverse plane (§<em>What the Kernel Does to a Value</em>). That the left placement is right-$B$-linear and not left-$B$-linear, and the right placement the reverse (§<em>The Left Placement</em>, §<em>The Right Placement</em>). That the algebra conjugate of the left transform is the right transform of the conjugate at the opposite frequency, with the algebra conjugate and not the complex one (§<em>The Right Placement</em>). That the two-sided placement factors through each one-sided one by a pointwise multiplication, so all three are one operation preceded by a product (§<em>The Relations Between the Three</em>). That with $R'=R$ the two-sided transform is not injective, its kernel being the plane-valued functions of zero total integral, and that with $R'=-R$ its kernel is the transverse-valued functions of zero total integral (§<em>What Each Sign Forgets</em>). And that in both signs the surviving part is carried at twice the frequency, so the second root doubles the frequency of one half and discards the other (§<em>The Doubled Frequency</em>).</p>
-<p><strong>The sentence that must not be written.</strong> The two-sided kernel does not collapse to a one-sided one, and the three transforms are never equal except on the zero function. What is true is narrower and is proved below: <strong>on the commutant of $R$ the kernel acts as the identity</strong>, and precisely because it does, the frequency content of that part is destroyed rather than duplicated. The placement therefore matters most exactly where the three look most alike.</p>
-<p><strong>Boundaries.</strong> The transform, its inversion and its factorization into complex transforms are <em>Biquaternion Continuous Harmonic Analysis</em>; the symbol and its zero set are <em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>; the rank on the null set is <em>The Biquaternion Fourier Transform: Support and Rank</em>; the reciprocal and its poles are <em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>; the two forms on the algebra are <em>The Biquaternion Fourier Transform and the Two Quadratic Forms</em>; the discrete case, whose kernel order is the model for this article, is <em>Biquaternion Discrete Harmonic Analysis</em>.</p>
-<h2 id="the-kernel-and-the-three-placements">The Kernel and the Three Placements</h2>
-<h3 id="the-kernel-as-a-function-of-the-frequency">The Kernel as a Function of the Frequency</h3>
-<p><strong>Definition (the kernel).</strong> For a root $\tilde{Ζ}$ of $1$, with $R=i\tilde{Ζ}$, a time $t$ and a frequency $\omega$, the kernel is $W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)=\exp(-2\pi R\omega t)$, the exponential taken in $\mathbb{B}$.</p>
+<p><strong>The order is fixed once, in the displays above, and kept to the end</strong>: the left placement multiplies on the left, the right placement on the right, the two-sided placement multiplies by $W$ on the left and by $W'$ on the right. A reader who reverses one of the three mid-article produces the transposed formula, with an error of the size of the transverse plane.</p>
+<p><strong>Why the root is written as a root of one.</strong> The exponent satisfies $\tilde{Ζ}^{2}=e_t$ and the central scalar $i$ carries the sign, which is the convention of <em>Biquaternion Continuous Harmonic Analysis</em>. <strong>The letters $R$ and $\tilde{Ζ}$ move no product</strong>, because they differ by a central scalar; they differ only in the sign of the exponent, and that sign is the subject of §<em>The Two Signs That Fix a Part</em>.</p>
+<p><strong>Four properties of the root, and which sections need the fourth.</strong> The structural results use three: $R^{2}=-e_t$, $R$ pure, and a transverse element anticommutes with it. The metric results use a fourth, $R^{*}=-R$, which is the same as $\lVert R\rVert_E=1$, and which for a pure $R$ with $R^{2}=-e_t$ says that $R$ has real coordinates. <strong>It holds for exactly the Hermitian roots</strong>: the central pair, which is not pure, and the pure real unit vectors, by the proposition on the Hermitian roots of <em>Biquaternion Continuous Harmonic Analysis</em>. <strong>It is not a consequence of the first three.</strong> The element $R=ie_x-\sqrt2\,e_y$ is pure with $R^{2}=-e_t$ and $N(R)=1$, while $R^{*}=ie_x+\sqrt2\,e_y$ and $\lVert R\rVert_E^{2}=3$; §<em>The Closed Form</em> shows what such a root does to the metric statements. It is also the root a normal element supplies.</p>
+<p><strong>What is proved, and what is quoted.</strong> That the kernel has algebraic norm one, and Euclidean norm one for the Hermitian root, so that multiplication by it on either side is a Euclidean isometry (§<em>The Closed Form</em>); that its commutant is the plane of the root and that it rotates the complementary plane through $4\pi\omega t$ (§<em>The Commutant and the Complement</em>); that each one-sided placement is linear over the algebra on exactly one side (§<em>The One-Sided Placements</em>); that the two signs of the second root fix complementary halves and forget their frequency (§<em>What Each Sign Forgets</em>); that the surviving half is carried at twice the frequency (§<em>The Doubled Frequency</em>); and that the two placements differ by the integral of a commutator bounded by $2\lVert P_\perp A\rVert$ (§<em>The Invariance Groups and Their Intersection</em>). <strong>The inversion theorem and the uniqueness theorem for the complex transform are quoted</strong> from <em>Biquaternion Continuous Harmonic Analysis</em> and are not reproved.</p>
+<p><strong>The sentence that must not be written.</strong> The two-sided kernel is not a one-sided kernel applied twice, and the three transforms are never equal except on the zero function (§<em>The Invariance Groups and Their Intersection</em>). What is true is narrower: <strong>on the commutant of $R$ the kernel acts as the identity</strong>, and precisely for that reason the frequency content of that part is destroyed rather than kept. The placement matters most exactly where the three look most alike.</p>
+<p><strong>Boundaries.</strong> The transform, its inversion and its factorization into complex transforms are <em>Biquaternion Continuous Harmonic Analysis</em>; the symbol, its zero set and the rank on the null set are <em>The Fourier Transform and the Symbol of a Differential Operator</em>; the reciprocal and its poles are <em>Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set</em>; the two forms on the algebra are <em>Norm and Unitary Conventions</em>; the discrete case, whose kernel order is the model for this article, is <em>Biquaternion Discrete Harmonic Analysis</em>.</p>
+<h2 id="the-kernel-and-the-second-root">The Kernel and the Second Root</h2>
+<h3 id="the-closed-form">The Closed Form</h3>
 <p><strong>Proposition (closed form, unit, inverse, multiplicativity).</strong> For a pure root, with $\theta=2\pi\omega t$,</p>
 <p>$$
 W(t,\omega)=\cos\theta\,e_t-\sin\theta\,R ,
 $$</p>
-<p>and the following four statements hold: $N(W(t,\omega))=1$; the inverse is $W(t,\omega)^{-1}=W(-t,\omega)$; the inverse is also the algebra conjugate, $W(t,\omega)^{-1}=\overline{W(t,\omega)}$; and $W(t+s,\omega)=W(t,\omega)W(s,\omega)$.</p>
-<p><em>Proof.</em> The exponential of an element whose term has no scalar part splits into the even and the odd part of the series, which are $\cos\theta e_t$ and $-\sin\theta R$, because $R^{2}=-e_t$. The norm is $\cos^{2}\theta+\sin^{2}\theta=1$, since the norm of $R$ is one and the two terms are orthogonal in the plane. The inverse follows from the same series with $-\theta$, and the conjugate from $\bar R=-R$ for a pure root, which leaves $\cos\theta$ and changes the sign of the sine term. Multiplicativity is multiplicativity of the exponential for two elements of one plane, or directly from the addition formulas for the cosine and the sine.</p>
-<p><strong>Remark (the central root is the degenerate member of the family).</strong> For $R=\pm i$, that is for $\tilde{Ζ}=\pm e_t$, the two central roots of $1$, the kernel is the complex scalar $\cos\theta\mp i\sin\theta$, which commutes with every element. <strong>In that family the two one-sided placements are the same operator</strong>, and the two-sided placement is the identity on values. The article therefore assumes $R$ pure from here on, and the pure assumption is not a loss: a regular biquaternion has a pure root, as <em>Biquaternion Continuous Harmonic Analysis</em> states.</p>
-<h3 id="the-three-placements">The Three Placements</h3>
-<p><strong>Definition (the three placements).</strong> Let $f:\mathbb{R}\to\mathbb{B}$ be integrable and let $\tilde{Ζ}'$ be a second root of $1$, with $R'=i\tilde{Ζ}'$. The left, right and two-sided transforms are the three integrals displayed in the Introduction, each taken with respect to $t$ over $\mathbb{R}$ and each evaluated at the real frequency $\omega$.</p>
-<p><strong>Remark (one integral, three products).</strong> All three are the same integral of the same kernel; what changes is the side on which the kernel meets the value. <strong>The distinction is invisible for a scalar-valued function and visible only for a non-commutative algebra</strong>, which is the reason the biquaternion case needs the three names and the complex case does not.</p>
-<h2 id="what-the-kernel-does-to-a-value">What the Kernel Does to a Value</h2>
-<h3 id="the-plane-of-the-root">The Plane of the Root</h3>
-<p><strong>Proposition (the commutant of a pure root is the plane of the root).</strong> Let $R$ be a pure unit element and let $a\in\mathbb{B}$. Then $aR=R a$ if and only if $a$ lies in $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, a real subspace of dimension four.</p>
-<p><em>Proof.</em> Write $a=a_t+\vec a$ with $\vec a$ the vector part. The product rule for the vector parts gives $aR-R a=2\,\vec a\times R$, where the cross product is the quaternion one and $R$ is read as its vector part. The cross product vanishes exactly when the two vectors are proportional over $\mathbb{C}$, so $a=a_t+a_RR$ with $a_R$ complex. The four real parameters are the real and imaginary parts of $a_t$ and $a_R$.</p>
-<p><strong>Corollary (conjugation is the identity on the plane).</strong> For $A\in\mathrm{span}_{\mathbb{C}}\{e_t,R\}$ and every $t,\omega$, $W(t,\omega)A\,W(t,\omega)^{-1}=A$.</p>
-<p><em>Proof.</em> Both $W$ and $A$ lie in the plane, which is a commutative subalgebra, so they commute and the two factors cancel.</p>
-<p><strong>Remark (the plane is where the transform is blind).</strong> The corollary says that a value in the plane passes through the two-sided kernel untouched, whatever the frequency. <strong>A function with values in the plane therefore reaches the two-sided transform with its kernel already cancelled</strong>, and that is the source of every degeneracy in §<em>What Each Sign Forgets</em>.</p>
-<h3 id="the-transverse-plane">The Transverse Plane</h3>
-<p><strong>Proposition (the two projections).</strong> For a pure root $R$ and $A\in\mathbb{B}$, the two elements</p>
+<p>and the following hold: $N(W(t,\omega))=1$; $\lVert W(t,\omega)\rVert_E=1$ for the Hermitian root; $W(t,\omega)^{-1}=W(-t,\omega)$; the inverse is also the algebra conjugate, $W(t,\omega)^{-1}=\overline{W(t,\omega)}$; and $W(t+s,\omega)=W(t,\omega)W(s,\omega)$.</p>
+<p><em>Proof.</em> The exponential of an element with no scalar part splits into the even and the odd parts of its series, which are $\cos\theta\,e_t$ and $-\sin\theta\,R$, because $R^{2}=-e_t$. On the plane the algebraic norm is read off directly: $(a\,e_t+bR)(a\,e_t-bR)=a^{2}-b^{2}R^{2}=a^{2}+b^{2}$, so $N(a\,e_t+bR)=a^{2}+b^{2}$, and $N(W)=\cos^{2}\theta+\sin^{2}\theta=1$ with no hypothesis on the coordinates. The Euclidean norm is $\lVert W\rVert_E^{2}=\cos^{2}\theta+\lVert R\rVert_E^{2}\sin^{2}\theta$, because $e_t$ and $R$ are orthogonal for the form, and it is one exactly when $\lVert R\rVert_E=1$, which is the Hermitian root. The inverse is the same series at $-\theta$, and the conjugate is the same series with $\overline{R}=-R$, which leaves the cosine and reverses the sine. Multiplicativity is the addition formula in a commutative plane.</p>
+<p><strong>Corollary (multiplication by the kernel is a Euclidean isometry, for the Hermitian root).</strong> Let $R^{*}=-R$. Then for every $X\in\mathbb{B}$,</p>
 <p>$$
-P_\parallel A=\tfrac12\bigl(A+R AR^{-1}\bigr),\qquad P_\perp A=\tfrac12\bigl(A-R AR^{-1}\bigr)
+\lVert W(t,\omega)X\rVert_E=\lVert XW(t,\omega)\rVert_E=\lVert X\rVert_E .
 $$</p>
-<p>satisfy $P_\parallel A+P_\perp A=A$, and $P_\parallel A$ lies in the plane of the root for every $A$ while $P_\perp A$ lies in the complementary subspace.</p>
-<p><em>Proof.</em> Since $R^{-1}=-R$, the sum of the two expressions is $A$. For $A$ in the plane, $R AR^{-1}=A$, so $P_\parallel A=A$ and $P_\perp A=0$. For $A=\nu$, $R\nu R^{-1}=\eta R^{-1}=-\eta R=-\nu$, so $P_\perp\nu=\nu$ and $P_\parallel\nu=0$, and the same computation with $\eta$ gives $P_\perp\eta=\eta$ and $P_\parallel\eta=0$. The two subspaces span the algebra, so the identities extend to every $A$ by linearity.</p>
-<p><strong>Remark (the second projection is not a homomorphism).</strong> The plane is a subalgebra, so $P_\parallel$ is a homomorphism on its image; the complementary subspace is not, because $\nu\eta=R$ lies in the plane. <strong>The decomposition of the algebra is therefore a decomposition of vector spaces and not of algebras</strong>, and no statement below treats the transverse part as an algebra.</p>
-<p><strong>Definition (a transverse frame).</strong> Let $\nu,\eta$ be pure elements with $\nu^{2}=\eta^{2}=-e_t$, orthogonal to each other and to $R$, and oriented so that $R\nu=\eta$, $\nu R=-\eta$, $\eta R=\nu$ and $R\eta=-\nu$. The pair spans a real plane $V_\perp$ with $\mathbb{B}=\mathrm{span}_{\mathbb{C}}\{e_t,R\}\oplus V_\perp$ as real vector spaces.</p>
-<p><strong>Proposition (conjugation is a rotation on the transverse plane).</strong> With $\theta=2\pi\omega t$,</p>
+<p><em>Proof.</em> Write the form as $\langle X,Y\rangle_E=\operatorname{Sc}(XY^{*})$, whose diagonal is $\lVert X\rVert_E^{2}=\sum_k\lvert X_k\rvert^{2}$, the sum of the eight real numbers $\lvert X_k\rvert^{2}$. The star is the conjugate transpose in the matrix model of <em>The Fourier Transform and the Symbol of a Differential Operator</em>, hence an anti-automorphism, and $\operatorname{Sc}(UV)=\operatorname{Sc}(VU)$ for every pair. For the Hermitian root $W^{*}=\cos\theta\,e_t+\sin\theta\,R=W^{-1}$ by the proposition, so $W^{*}W=e_t$ and</p>
+<p>$$
+\lVert WX\rVert_E^{2}=\operatorname{Sc}\bigl(WXX^{*}W^{*}\bigr)=\operatorname{Sc}\bigl(XX^{*}W^{*}W\bigr)=\lVert X\rVert_E^{2} .
+$$</p>
+<p>The right-hand case is the same with $WW^{*}=e_t$.</p>
+<p><strong>Remark (a non-Hermitian pure root is not an isometry).</strong> Take $R=ie_x-\sqrt2\,e_y$, whose attached root is $\tilde{Ζ}=e_x+i\sqrt2\,e_y$ with $\tilde{Ζ}^{2}=e_t$. Then $R^{2}=-e_t$, $R$ is pure, $N(R)=1$, and the closed form, the inverse and the multiplicativity of the proposition all hold. But $R^{*}=ie_x+\sqrt2\,e_y\ne-R$, so $W^{*}\ne W^{-1}$, and $\lVert R\rVert_E^{2}=3$ gives $\lVert W\rVert_E^{2}=\cos^{2}\theta+3\sin^{2}\theta\in[1,3]$. Over random $X$ and $\theta$ the ratio $\lVert WX\rVert_E/\lVert X\rVert_E$ is measured between $0.59$ and $2.35$. <strong>Left multiplication by $W$ is then neither an isometry nor a similarity</strong>, and the metric statements below hold for it only in the general forms that §<em>The Commutant and the Complement</em> and §<em>The Commutator Defect</em> attach to the constants. The same root refutes the shortcut $2\lVert X\rVert_E^{2}=\operatorname{tr}(X\overline{X})$: that trace is $2N(X)$, which is complex, and the trace that gives the Euclidean norm is $\operatorname{tr}(X^{*}X)$, with the factor $\tfrac12$.</p>
+<p><strong>Remark (the central root is the degenerate member of the family).</strong> For $R=\pm i$, that is for $\tilde{Ζ}=\pm e_t$, the kernel is the complex scalar $\cos\theta\mp i\sin\theta$, which commutes with everything. <strong>The two one-sided placements are then the same operator and the two-sided placement is the identity on values.</strong> The article assumes the Hermitian root from here on; the central pair belongs to it, and the placements collapse there as described. <strong>The assumption is a restriction, and it is stated</strong>: a regular biquaternion supplies a pure root, which is Hermitian exactly when the element is normal, as <em>Biquaternion Continuous Harmonic Analysis</em> proves in its treatment of the non-Hermitian roots; for the other roots the transform is invertible and not an isometry.</p>
+<h3 id="the-two-roots-and-the-four-kernels">The Two Roots and the Four Kernels</h3>
+<p><strong>Definition (the four kernels).</strong> With $R'$ a second root of $-e_t$, pure and of unit Euclidean length, the four kernels of the family are</p>
+<p>$$
+Wf,\qquad fW,\qquad WfW^{-1},\qquad WfW ,
+$$</p>
+<p>the first two the one-sided placements and the last two the two-sided placement with $R'=R$ and with $R'=-R$.</p>
+<p><strong>Remark (why there are four and not more).</strong> The two-sided kernel is $WfW'$ with $W'=\exp(2\pi R'\omega t)$. <strong>The two signs of the second root are the only two that fix a part of the algebra</strong>, which is the proposition of §<em>The Two Signs That Fix a Part</em>, and a third root leaves a residue in every summand.</p>
+<h2 id="the-three-placements">The Three Placements</h2>
+<p><strong>Definition (the three placements).</strong> Let $f:\mathbb{R}\to\mathbb{B}$ be integrable. The left, right and two-sided transforms are the three integrals of the Introduction, each taken over $\mathbb{R}$ in $t$ and evaluated at the real frequency $\omega$.</p>
+<p><strong>Remark (one integral, three products).</strong> All three integrate the same kernel against the same value; what changes is the side on which the kernel meets it. <strong>The distinction is invisible for a scalar-valued function and visible only for a non-commutative algebra</strong>, which is why the complex theory needs one name and this one needs three.</p>
+<h2 id="the-commutant-and-the-complement">The Commutant and the Complement</h2>
+<h3 id="the-plane-of-the-root">The Plane of the Root</h3>
+<p><strong>Proposition (the commutant of a pure root is the plane of the root).</strong> Let $R$ be pure with $R^{2}=-e_t$, and let $a\in\mathbb{B}$. Then $aR=Ra$ if and only if $a$ lies in $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, a real subspace of dimension four.</p>
+<p><em>Proof.</em> Write $a=a_t+\vec a$ with $\vec a$ the vector part and $R$ read as its vector part. The product rule for vector parts gives $aR-Ra=2\,\vec a\times R$, the cross product being the quaternion one. It vanishes exactly when the two vectors are proportional over $\mathbb{C}$, so $a=a_t+a_RR$ with $a_R$ complex; the four real parameters are the real and imaginary parts of $a_t$ and $a_R$.</p>
+<p><strong>Definition (the plane and its complement).</strong> Write $C(R)=\mathrm{span}_{\mathbb{C}}\{e_t,R\}$ for the plane of the root, a commutative subalgebra of real dimension four, and $V_\perp$ for its complementary subspace with respect to the Euclidean form, also of real dimension four.</p>
+<p><strong>Corollary (conjugation fixes the plane).</strong> For $A\in C(R)$ and all $t,\omega$, $W(t,\omega)A\,W(t,\omega)^{-1}=A$.</p>
+<p><em>Proof.</em> Both factors lie in $C(R)$, which is commutative, so they cancel.</p>
+<h3 id="the-two-projections">The Two Projections</h3>
+<p><strong>Proposition (the projections onto the plane and the complement).</strong> Let $R$ be the Hermitian root. The two elements</p>
+<p>$$
+P_\parallel A=\tfrac12\bigl(A+RAR^{-1}\bigr),\qquad P_\perp A=\tfrac12\bigl(A-RAR^{-1}\bigr)
+$$</p>
+<p>satisfy $P_\parallel A+P_\perp A=A$; $P_\parallel A$ lies in $C(R)$ for every $A$; $P_\perp A$ lies in $V_\perp$ for every $A$; and <strong>both are the orthogonal projections for the Euclidean form</strong>.</p>
+<p><em>Proof.</em> Since $R^{-1}=-R$ the two expressions add to $A$. For $A\in C(R)$ one has $RAR^{-1}=A$, so $P_\parallel A=A$ and $P_\perp A=0$. For $A=\nu$ in a transverse frame, $R\nu R^{-1}=-\nu$, so $P_\perp\nu=\nu$ and $P_\parallel\nu=0$, and the same holds for $\eta$; the two subspaces span the algebra, so the identities extend by linearity. For the orthogonality, note that the map $\sigma(A)=RAR^{-1}$ is an involution, because $R^{2}=-e_t$ is central, so $P_\parallel$ and $P_\perp$ are the projections onto the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$; and $\sigma$ preserves the Euclidean form, being conjugation by the unitary $R$ of §<em>The Closed Form</em>, so the two eigenspaces are orthogonal. <strong>Idempotence together with $P_\parallel P_\perp=0$ would not give this</strong>, which is why the argument is made on $\sigma$.</p>
+<p><strong>Remark (without the Hermitian root the projections are oblique).</strong> For $R=ie_x-\sqrt2\,e_y$ the two maps are still idempotent and still add to the identity, as the first line of the proof shows, but conjugation by $R$ is not a Euclidean isometry, so the two images are complementary subspaces and not perpendicular ones: for one random $A$ the pairing $\langle P_\parallel A,P_\perp A\rangle_E$ is measured at $-6.76$, against $0$ for the Hermitian root. <strong>The word "orthogonal" in the name $P_\perp$ is then no longer earned</strong>, and the commutator estimate of §<em>The Commutator Defect</em>, which uses the orthogonal splitting, does not follow.</p>
+<p><strong>Definition (a transverse frame).</strong> Let $\nu,\eta$ be pure with $\nu^{2}=\eta^{2}=-e_t$, orthogonal to each other and to $R$, oriented so that $R\nu=\eta$, $\nu R=-\eta$, $\eta R=\nu$ and $R\eta=-\nu$; then $V_\perp=\mathrm{span}_{\mathbb{R}}\{\nu,\eta\}$.</p>
+<p><strong>Remark (the decomposition is of vector spaces, not of algebras):</strong> the complement is not closed under products, because $\nu\eta=R$ lies in the plane, so the projections are used only as linear maps.</p>
+<h3 id="the-rotation">The Rotation</h3>
+<p><strong>Lemma (conjugation rotates the complement).</strong> With $\theta=2\pi\omega t$,</p>
 <p>$$
 W\nu W^{-1}=\cos 2\theta\,\nu-\sin 2\theta\,\eta,\qquad W\eta W^{-1}=\sin 2\theta\,\nu+\cos 2\theta\,\eta ,
 $$</p>
-<p>so conjugation by the kernel rotates $V_\perp$ through the angle $4\pi\omega t$, twice the phase of the kernel.</p>
-<p><em>Proof.</em> Multiply out: $W\nu=\cos\theta\,\nu-\sin\theta\,R\nu=\cos\theta\,\nu-\sin\theta\,\eta$, and $W^{-1}=\cos\theta\,e_t+\sin\theta\,R$, so $W\nu W^{-1}=\cos^{2}\theta\,\nu-\sin\theta\cos\theta\,\eta+\sin\theta\cos\theta\,\nu R-\sin^{2}\theta\,\eta R$. Now $\nu R=-\eta$ and $\eta R=\nu$, so the expression is $(\cos^{2}\theta-\sin^{2}\theta)\nu-2\sin\theta\cos\theta\,\eta$, which is the first identity by the double-angle formulas. The second is the same computation with $\nu$ and $\eta$ exchanged, using $\eta\nu$ in place of $\nu\eta$.</p>
-<p><strong>Remark (the doubling is not an accident of the algebra).</strong> The phase of the kernel is $2\pi\omega t$ and the rotation angle is twice that, because a conjugation is a product of two kernel factors, one on each side. <strong>The factor two appears again in §<em>The Doubled Frequency</em> as the doubling of the frequency of the transform itself</strong>, and the two appearances are the same fact.</p>
-<h2 id="the-left-placement">The Left Placement</h2>
-<p><strong>Theorem (the left transform is right-linear).</strong> For every integrable $f$ and every constant $a\in\mathbb{B}$, $\mathcal T_L[fa]=\mathcal T_L[f]a$.</p>
-<p><em>Proof.</em> The constant $a$ stands on the right of the value and the kernel stands on its left, so the integral of $Wfa$ is the integral of $Wf$ multiplied on the right by $a$; the integral is a limit of finite sums and right multiplication is continuous and linear.</p>
-<p><strong>Proposition (the left transform is not left-linear).</strong> With $R$ pure and $\nu$ in the transverse frame, $\mathcal T_L[\nu f]\neq\nu\,\mathcal T_L[f]$ in general.</p>
-<p><em>Proof.</em> It is enough to compare the two at one value of the frequency and one value of the time. Now $W\nu=\cos\theta\,\nu-\sin\theta\,\eta$ while $\nu W=\cos\theta\,\nu+\sin\theta\,\eta$, so $W\nu-\nu W=-2\sin\theta\,\eta$, which is not zero unless $\theta$ is a multiple of $\pi$. Taking $f$ supported near a single time at which $\sin\theta\neq0$ gives the claim.</p>
-<p><strong>Proposition (boundedness).</strong> For integrable $f$ and every $\omega$, $\lVert\mathcal T_L[f](\omega)\rVert_E\le\int\lVert f(t)\rVert_E\,dt$.</p>
-<p><em>Proof.</em> The Euclidean norm is multiplicative on a product of an element of the plane with norm one and an arbitrary element, because multiplication by such an element is a rotation of the eight real coordinates; so $\lVert Wf\rVert_E=\lVert f\rVert_E$ and the triangle inequality for the integral gives the bound.</p>
-<p><strong>Remark (inversion, and where it comes from).</strong> The left placement is inverted by the conjugate kernel, that is, by</p>
+<p>so conjugation by the kernel is the identity on $C(R)$ and a rotation through the angle $4\pi\omega t$ on $V_\perp$.</p>
+<p><em>Proof.</em> Multiply out with $W=\cos\theta\,e_t-\sin\theta\,R$ and $W^{-1}=\cos\theta\,e_t+\sin\theta\,R$. For the first, $W\nu=\cos\theta\,\nu-\sin\theta\,\eta$, and the four products with $W^{-1}$ give $\cos^{2}\theta\,\nu-\sin\theta\cos\theta\,\eta-\sin\theta\cos\theta\,\eta-\sin^{2}\theta\,\nu$, using $\nu R=-\eta$ and $\eta R=\nu$; the double-angle formulas give the claim. The second is the same computation with $\nu$ and $\eta$ exchanged.</p>
+<h2 id="the-one-sided-placements">The One-Sided Placements</h2>
+<h3 id="the-left-placement">The Left Placement</h3>
+<p><strong>Theorem (the left transform is right-linear and not left-linear).</strong> For integrable $f$ and constant $a\in\mathbb{B}$, $\mathcal T_L[fa]=\mathcal T_L[f]a$. For the left side, $\mathcal T_L[af]=a\mathcal T_L[f]$ for every integrable $f$ if and only if $a\in C(R)$; with $\nu$ in the transverse frame the identity fails, $\mathcal T_L[\nu f]\neq\nu\mathcal T_L[f]$.</p>
+<p><em>Proof.</em> The constant on the right passes through the integral because right multiplication is continuous and linear; that is the first claim. For the second, $W\nu=\cos\theta\,\nu-\sin\theta\,\eta$ while $\nu W=\cos\theta\,\nu+\sin\theta\,\eta$, so the two integrands differ by $-2\sin\theta\,\eta$, which is not zero on any interval of $t$ at which $\sin\theta\neq0$; the exactness statement is the corollary of §<em>The Plane of the Root</em>.</p>
+<h3 id="the-right-placement">The Right Placement</h3>
+<p><strong>Theorem (the right transform is left-linear and not right-linear).</strong> For integrable $f$ and constant $a\in\mathbb{B}$, $\mathcal T_R[af]=a\mathcal T_R[f]$. On the right, $\mathcal T_R[fa]=\mathcal T_R[f]a$ for every integrable $f$ if and only if $a\in C(R)$.</p>
+<p><em>Proof.</em> The first claim is the argument of the previous theorem with the sides exchanged. For the second, the two integrands differ by $f(\nu W-W\nu)=2\sin\theta\,f\eta$, which does not vanish identically unless $f$ is plane-valued; the exactness statement is again the corollary of §<em>The Plane of the Root</em>.</p>
+<p><strong>Proposition (boundedness, for the Hermitian root).</strong> For integrable $f$ and every $\omega$, $\lVert\mathcal T_L[f](\omega)\rVert_E\le\int\lVert f(t)\rVert_E\,dt$, and the same bound holds for $\mathcal T_R$.</p>
+<p><em>Proof.</em> The corollary of §<em>The Closed Form</em> gives $\lVert Wf\rVert_E=\lVert f\rVert_E$ and $\lVert fW\rVert_E=\lVert f\rVert_E$ pointwise; the triangle inequality for the integral of a norm-valued function gives the bound. <strong>For a general pure root the constant is $\max(1,\lVert R\rVert_E)$</strong>, which is the bound on $\lVert W\rVert_E$, applied to $\lVert WX\rVert_E\le\lVert W\rVert_E\lVert X\rVert_E$.</p>
+<h3 id="the-conjugate-relation">The Conjugate Relation</h3>
+<p><strong>Theorem (the conjugate of the left transform is the right transform of the conjugate).</strong> For integrable $f$,</p>
 <p>$$
-f(t)=\int\overline{W(t,\omega)}\,\mathcal T_L[f](\omega)\,d\omega ,
+\overline{\mathcal T_L[f]}(\omega)=\mathcal T_R[\bar f](-\omega),
 $$</p>
-<p>which is the inversion theorem of <em>Biquaternion Continuous Harmonic Analysis</em>, stated there for integrable $f$ continuous at $t$ with integrable transform. <strong>The inversion formula is not proved here</strong>; what is proved here is that the placement does not change the linearity on the right, so the theorem transfers without alteration.</p>
-<h2 id="the-right-placement">The Right Placement</h2>
-<p><strong>Theorem (the right transform is left-linear).</strong> For every integrable $f$ and every constant $a\in\mathbb{B}$, $\mathcal T_R[af]=a\,\mathcal T_R[f]$.</p>
-<p><em>Proof.</em> The constant stands on the left of the value and the kernel on its right, so the constant passes through the integral unchanged.</p>
-<p><strong>Proposition (the right transform is not right-linear).</strong> With $\nu$ in the transverse frame, $\mathcal T_R[f\nu]\neq\mathcal T_R[f]\nu$ in general.</p>
-<p><em>Proof.</em> Now $\nu W=\cos\theta\,\nu+\sin\theta\,\eta$ while $W\nu=\cos\theta\,\nu-\sin\theta\,\eta$, so the discrepancy is $2\sin\theta\,\eta$ at the level of one value, and the same single-time argument applies.</p>
-<p><strong>Theorem (the conjugate of the left transform is the right transform of the conjugate).</strong> For integrable $f$ the identity</p>
+<p>the bar being the algebra conjugate.</p>
+<p><em>Proof.</em> Conjugation is an antiautomorphism, so $\overline{Wf}=\bar f\,\overline{W}$, and the conjugate of an integral is the integral of the conjugate. For a pure root $\overline{W}=W^{-1}=W(-\cdot,\omega)$ by the proposition of §<em>The Closed Form</em>. Hence the left side is $\int\bar f(t)W(t,-\omega)\,dt$, which is the right transform of $\bar f$ at $-\omega$.</p>
+<p><strong>Remark (which conjugation, and why the distinction is not pedantic).</strong> The identity uses the algebra conjugate and fails for the complex conjugate alone. <strong>The complex conjugate of $W$ is not $W^{-1}$</strong> unless the root is central: it leaves $R$ unchanged instead of reversing it, so the two sides differ by an element of the transverse plane. A statement written with the complex conjugate is false, and the error is of the size of the transverse part, which is the whole content of the kernel.</p>
+<p><strong>Remark (inversion).</strong> The left placement is inverted by the conjugate kernel on the left and the right placement by the conjugate on the right,</p>
 <p>$$
-\overline{\mathcal T_L[f]}(\omega)=\mathcal T_R[\bar f](-\omega)
+f(t)=\int\overline{W(t,\omega)}\,\mathcal T_L[f](\omega)\,d\omega,\qquad f(t)=\int\mathcal T_R[f](\omega)\overline{W(t,\omega)}\,d\omega ,
 $$</p>
-<p>holds, where the bar is the algebra conjugate.</p>
-<p><em>Proof.</em> Conjugation is an antiautomorphism, so $\overline{Wf}=\bar f\,\bar W$, and the conjugate of the integral is the integral of the conjugate. For a pure root $\bar W=W^{-1}=W(-\cdot,\omega)$, by the fourth statement of the proposition of §<em>The Kernel as a Function of the Frequency</em>. Hence $\overline{\mathcal T_L[f]}(\omega)=\int\bar f(t)W(t,-\omega)\,dt$, which is the right transform of $\bar f$ at $-\omega$.</p>
-<p><strong>Remark (which conjugation, and why the distinction is not pedantic).</strong> The identity uses the algebra conjugate and fails for the complex conjugate alone. <strong>The complex conjugate of $W$ is not $W^{-1}$</strong> unless the root is central: it leaves $R$ unchanged rather than reversing it, so the two sides differ by an element of the transverse plane. A paper that states the relation with the complex conjugate has stated a false identity, and the error is of the size of the transverse part, which is the whole content of the kernel.</p>
-<p><strong>Remark (inversion).</strong> The right placement is inverted by the conjugate on the right, $f(t)=\int\mathcal T_R[f](\omega)\overline{W(t,\omega)}\,d\omega$, under the same hypotheses as the left case. <strong>The two inversions differ only in the side</strong>, exactly as the two transforms do.</p>
-<h2 id="the-two-sided-placement">The Two-Sided Placement</h2>
-<p><strong>Definition (the two-sided transform).</strong> For a second root $\tilde{Ζ}'$ of $1$, with $R'=i\tilde{Ζ}'$, and $W'(t,\omega)=\exp(2\pi i\tilde{Ζ}'\omega t)=\exp(2\pi R'\omega t)$, the two-sided transform is $\mathcal T_T[f](\omega)=\int W(t,\omega)f(t)W'(t,\omega)\,dt$.</p>
-<p><strong>Proposition (the two-sided transform is bounded).</strong> For integrable $f$ and every $\omega$, $\lVert\mathcal T_T[f](\omega)\rVert_E\le\int\lVert f(t)\rVert_E\,dt$.</p>
-<p><em>Proof.</em> Both $W$ and $W'$ are units of Euclidean norm one, and multiplication on either side by such a unit is an isometry of the eight real coordinates; so $\lVert WfW'\rVert_E=\lVert f\rVert_E$ and the triangle inequality applies.</p>
-<h3 id="the-second-root-and-the-two-signs">The Second Root and the Two Signs</h3>
-<p><strong>Proposition (the two signs that fix a part).</strong> If $R'=R$ then $W'=W^{-1}$ and the two-sided kernel is the conjugation by $W$, so the kernel acts as the identity on the plane of the root. If $R'=-R$ then $W'=W$ and the two-sided kernel is $W(\cdot)W$, which acts as the identity on the transverse plane and as multiplication by $W^{2}$ on the plane of the root.</p>
-<p><em>Proof.</em> For the first sign, $W'=\exp(2\pi R\omega t)=W(-t,\omega)=W^{-1}$, and conjugation fixes the plane by the corollary of §<em>The Plane of the Root</em>. For the second, $W'=W$, and $W\nu W=\nu$ is the computation $\cos^{2}\theta\,\nu-\sin\theta\cos\theta\,\eta-\sin\theta\cos\theta\,\eta+\sin^{2}\theta\,\nu$, using $\nu R=-\eta$ and $\eta R=\nu$; the same computation with $\eta$ gives $\eta$. On the plane, both factors commute with the value and give $AW^{2}$, and $W^{2}=W(t,2\omega)$ by multiplicativity.</p>
+<p>under the hypotheses of the inversion theorem of <em>Biquaternion Continuous Harmonic Analysis</em>, which is quoted and not proved here. <strong>What this article adds is that the placement does not change the linearity on the side of the constant</strong>, so the theorem transfers to either side without alteration.</p>
+<h2 id="the-two-sided-placement-and-the-two-signs">The Two-Sided Placement and the Two Signs</h2>
+<p><strong>Definition (the two-sided transform).</strong> For a second Hermitian root $\tilde{Ζ}'$ of $1$, with $R'=i\tilde{Ζ}'$ and $W'(t,\omega)=\exp(2\pi R'\omega t)$, the two-sided transform is</p>
+<p>$$
+\mathcal T_T[f](\omega)=\int W(t,\omega)f(t)W'(t,\omega)\,dt .
+$$</p>
+<p><strong>Proposition (boundedness, for the Hermitian root).</strong> For integrable $f$ and every $\omega$, $\lVert\mathcal T_T[f](\omega)\rVert_E\le\int\lVert f(t)\rVert_E\,dt$.</p>
+<p><em>Proof.</em> For Hermitian roots $W$ and $W'$ are both unitary, and multiplication on either side by a unitary is an isometry by the same computation as the corollary of §<em>The Closed Form</em>; so $\lVert WfW'\rVert_E=\lVert f\rVert_E$ pointwise and the triangle inequality applies. For general pure roots the constant becomes $\max(1,\lVert R\rVert_E)\max(1,\lVert R'\rVert_E)$, one factor per kernel.</p>
+<h3 id="the-two-signs-that-fix-a-part">The Two Signs That Fix a Part</h3>
+<p><strong>Proposition (the two signs that fix a part).</strong> If $R'=R$ then $W'=W^{-1}$ and the two-sided kernel is the conjugation by $W$, which fixes the plane of the root pointwise. If $R'=-R$ then $W'=W$ and the two-sided kernel is $W(\cdot)W$, which fixes the transverse plane pointwise and multiplies the plane of the root by $W^{2}$.</p>
+<p><em>Proof.</em> For the first sign, $W'=\exp(2\pi R\omega t)=W(-t,\omega)=W^{-1}$, and conjugation fixes $C(R)$ by the corollary of §<em>The Plane of the Root</em>. For the second, $W'=W$, and multiplying out with $W=\cos\theta\,e_t-\sin\theta\,R$ gives</p>
+<p>$$
+W\nu W=(c^{2}+s^{2})\nu+(cs-sc)\eta=\nu,\qquad W\eta W=(c^{2}+s^{2})\eta+(sc-cs)\nu=\eta ,
+$$</p>
+<p>with $c=\cos\theta$ and $s=\sin\theta$, using $\nu R=-\eta$ and $\eta R=\nu$; on the plane both factors commute with the value and give $AW^{2}$, and $W^{2}=W(t,2\omega)$ by multiplicativity.</p>
 <p><strong>Proposition (no other sign fixes a part).</strong> Let $R'=\nu$, a pure root of $-e_t$ in the transverse frame. Then $W\nu W'\neq\nu$ and $W\eta W'\neq\eta$ for $\theta$ not a multiple of $\pi$.</p>
 <p><em>Proof.</em> With $W'=\cos\theta\,e_t+\sin\theta\,\nu$ and $W\nu=\cos\theta\,\nu-\sin\theta\,\eta$, multiplying out and using $\nu^{2}=-e_t$ and $\eta\nu=-R$ gives</p>
 <p>$$
 W\nu W'=\cos^{2}\theta\,\nu-\sin\theta\cos\theta\,e_t-\sin\theta\cos\theta\,\eta+\sin^{2}\theta\,R ,
 $$</p>
-<p>which differs from $\nu$ in the scalar, transverse and plane directions at once. <strong>The two signs of the second root are therefore the only two that fix a part of the algebra</strong>, and the display shows the obstruction: a third sign leaves a residue in every summand.</p>
+<p>which differs from $\nu$ in the scalar, the transverse and the plane directions at once. <strong>The two signs of the second root are therefore the only two that fix a part of the algebra</strong>, and the display shows the obstruction: a third sign leaves a residue in every summand.</p>
 <h3 id="what-each-sign-forgets">What Each Sign Forgets</h3>
-<p><strong>Theorem (the kernel of the two-sided transform at $R'=R$).</strong> For integrable $f$, $\mathcal T_T[f]=0$ for all $\omega$ if and only if $f$ takes values in the plane of the root and $\int f=0$.</p>
-<p><em>Proof.</em> Write $f=f_\parallel+f_\perp$ with $f_\parallel$ plane-valued and $f_\perp$ transverse-valued. The plane part is fixed by the conjugation, so it contributes $\int f_\parallel$, which does not depend on $\omega$. The transverse part is rotated by the angle $4\pi\omega t$, so it contributes an element of $V_\perp$ whose two coefficients are the cosine and sine transforms of the coefficients of $f_\perp$ at frequency $2\omega$; these vanish for all $\omega$ only if $f_\perp=0$, by the real inversion theorem for those transforms, stated and not proved here. Hence the transform vanishes exactly when $\int f_\parallel=0$ and $f_\perp=0$.</p>
+<p><strong>Theorem (the kernel of the two-sided transform at $R'=R$).</strong> For integrable $f$, $\mathcal T_T[f]$ vanishes at every $\omega$ if and only if $f$ takes values in the plane of the root and $\int f=0$.</p>
+<p><em>Proof.</em> Write $f=f_\parallel+f_\perp$ with $f_\parallel$ plane-valued and $f_\perp$ transverse-valued. The plane part is fixed by the conjugation and contributes $\int f_\parallel$, independent of $\omega$. The transverse part is rotated by $4\pi\omega t$, so it contributes an element of $V_\perp$ whose two coefficients are the cosine and sine transforms of the coefficients of $f_\perp$ at frequency $2\omega$; those vanish for all $\omega$ only if $f_\perp=0$, by the inversion theorem for the two real transforms, quoted with the hypothesis that the coefficients be integrable. Hence the transform vanishes everywhere exactly when $\int f_\parallel=0$ and $f_\perp=0$.</p>
 <p><strong>Corollary (the two-sided transform at $R'=R$ is not injective).</strong> It is not injective, and its kernel contains every plane-valued function of zero total integral; for instance $f(t)=t\exp(-t^{2})(e_t+cR)$ with any complex $c$ lies in the kernel.</p>
-<p><em>Proof.</em> The integral of $t\exp(-t^{2})$ is zero, so the example is plane-valued with zero total integral and the theorem applies. <strong>The example is checked numerically</strong>: the transform is exactly zero at four frequencies.</p>
-<p><strong>Theorem (the kernel at $R'=-R$).</strong> For integrable $f$, $\mathcal T_T[f]=0$ for all $\omega$ if and only if $f$ takes values in $V_\perp$ and $\int f=0$.</p>
-<p><em>Proof.</em> By the second proposition of §<em>The Second Root and the Two Signs</em>, the transverse part is fixed and contributes $\int f_\perp$, independent of $\omega$, while the plane part is multiplied by $W^{2}$ and contributes the left transform of $f_\parallel$ at frequency $2\omega$, which vanishes for all $\omega$ only if $f_\parallel=0$ under the inversion theorem. The conclusion follows.</p>
-<p><strong>Remark (what "the placement still matters" means).</strong> The two signs forget complementary halves: <strong>the first forgets the frequency of the plane part, the second the frequency of the transverse part.</strong> In both cases the forgotten half survives only through its total integral, which is one element of the algebra and not a function. Neither sign collapses to a one-sided transform: a one-sided transform forgets nothing, because its kernel never cancels.</p>
+<p><em>Proof.</em> The integral of $t\exp(-t^{2})$ is zero, so the example is plane-valued with zero total integral and the theorem applies. <strong>The example is checked numerically</strong>: its two-sided transform is zero at three frequencies, to the accuracy of the quadrature.</p>
+<p><strong>Theorem (the kernel at $R'=-R$).</strong> For integrable $f$, $\mathcal T_T[f]$ vanishes at every $\omega$ if and only if $f$ takes values in $V_\perp$ and $\int f=0$.</p>
+<p><em>Proof.</em> By the proposition of §<em>The Two Signs That Fix a Part</em>, the transverse part is fixed and contributes $\int f_\perp$, independent of $\omega$, while the plane part is multiplied by $W^{2}$ and contributes the left transform of $f_\parallel$ at frequency $2\omega$, which vanishes for all $\omega$ only if $f_\parallel=0$ by the inversion theorem. The conclusion follows.</p>
+<p><strong>Remark (neither sign reduces the two-sided placement to a one-sided one).</strong> The two signs forget complementary halves: <strong>the first forgets the frequency of the plane part, the second the frequency of the transverse part</strong>, and in both cases the forgotten half survives only through its total integral, one element of the algebra and not a function. A one-sided transform forgets nothing, because its kernel never cancels; <strong>so the two-sided transform reduces to a one-sided one on no function except zero.</strong></p>
 <h3 id="the-doubled-frequency">The Doubled Frequency</h3>
-<p><strong>Proposition (the surviving half is carried at twice the frequency).</strong> Let $f=f_\parallel+f_\perp$ be integrable, with $f_\perp=A_1\nu+A_2\eta$.</p>
+<p><strong>Proposition (the surviving half is carried at twice the frequency).</strong> Let $f=f_\parallel+f_\perp$ be integrable with $f_\perp=A_1\nu+A_2\eta$.</p>
 <ul>
-<li>At $R'=R$, the transverse part contributes the pair $\bigl(\int[\cos(4\pi\omega t)A_1-\sin(4\pi\omega t)A_2],\ \int[\sin(4\pi\omega t)A_1+\cos(4\pi\omega t)A_2]\bigr)$, which is the complex transform of $A_1+iA_2$ at frequency $2\omega$.</li>
-<li>At $R'=-R$, the plane part contributes $\mathcal T_L[f_\parallel](2\omega)$, the left transform of the plane part evaluated at twice the frequency.</li>
+<li>At $R'=R$ the transverse part contributes the pair $\bigl(\int[\cos(4\pi\omega t)A_1-\sin(4\pi\omega t)A_2],\ \int[\sin(4\pi\omega t)A_1+\cos(4\pi\omega t)A_2]\bigr)$, which is the complex transform of $A_1+iA_2$ at frequency $2\omega$.</li>
+<li>At $R'=-R$ the plane part contributes $\mathcal T_L[f_\parallel](2\omega)$, the left transform of the plane part at twice the frequency.</li>
 </ul>
-<p><em>Proof.</em> The first statement is the rotation formula of §<em>The Transverse Plane</em> integrated against the coefficients. The second is the identity $AW^{2}=AW(t,2\omega)$ of §<em>The Second Root and the Two Signs</em>, integrated over $t$ with the substitution $\omega\mapsto2\omega$ in the definition of the left transform.</p>
+<p><em>Proof.</em> The first is the rotation lemma of §<em>The Rotation</em> integrated against the coefficients. The second is the identity $AW^{2}=AW(t,2\omega)$ for $A\in C(R)$, which is multiplicativity of the kernel in the time, integrated over $t$ with the substitution $\omega\mapsto2\omega$ in the definition of the left transform.</p>
 <p><strong>Example (the doubling seen in one kernel).</strong> For $f(t)=\exp(-\pi t^{2})\nu$ and $R'=R$ the two-sided transform is, at every real frequency,</p>
 <p>$$
-\mathcal T_T[f](\omega)=\exp(-4\pi\omega^{2})\nu ,
+\mathcal T_T[f](\omega)=\exp(-4\pi\omega^{2})\nu .
 $$</p>
-<p>by the Gaussian identity $\int\exp(-\pi t^{2})\cos(2\pi at)\,dt=\exp(-\pi a^{2})$ at $a=2\omega$.</p>
-<p><em>Proof.</em> The transverse coefficient is rotated by the angle $4\pi\omega t$, and only the cosine term survives because $f$ is even and the sine term is odd; the Gaussian identity at $a=2\omega$ gives the decay rate $4\pi\omega^{2}$. <strong>The transform of a Gaussian is again a Gaussian, and its exponent is four times the one of the one-sided transform</strong>, which is the doubling of the frequency written as a doubling of the constant.</p>
+<p><em>Proof.</em> The transverse coefficient is rotated through $4\pi\omega t$, and only the cosine term survives because $f$ is even and the sine term is odd; the Gaussian identity $\int\exp(-\pi t^{2})\cos(2\pi at)\,dt=\exp(-\pi a^{2})$ at $a=2\omega$ gives the decay rate $4\pi\omega^{2}$. <strong>The transform of a Gaussian is a Gaussian whose exponent is four times the exponent of the one-sided transform</strong>, which is the doubling of the frequency written as a doubling of the constant.</p>
 <p><strong>Proposition (the inversion carries the factor two).</strong> At $R'=R$ and for a transverse-valued integrable $f=A_1\nu+A_2\eta$ with integrable transform, writing $C_1,C_2$ for the two coefficients of the transform,</p>
 <p>$$
-A_1(t)+iA_2(t)=2\int\bigl(C_1(\omega)+iC_2(\omega)\bigr)\exp(4\pi i\,\omega t)\,d\omega .
+A_1(t)+iA_2(t)=2\int\bigl(C_1(\omega)+iC_2(\omega)\bigr)\exp(4\pi i\omega t)\,d\omega .
 $$</p>
 <p><em>Proof.</em> The pair $(C_1,C_2)$ is the real form of the complex transform of $A_1+iA_2$ at the frequency $\alpha=2\omega$; the classical inversion integrates over $d\alpha$, and the change of variable $\alpha=2\omega$ produces the factor $2$ and the argument $4\pi\omega t$.</p>
-<p><strong>Remark (why the doubling must be absorbed in the inverse).</strong> A formula that inverts the two-sided transform with $d\omega$ and no factor will be wrong by a factor of two in the argument, and the error is invisible in a transform of a single exponential, which is why it survives review. <strong>The correct reading is that the two-sided transform is a one-sided transform of half the function at twice the frequency</strong>, and the inverse therefore carries the factor $2$ in $d(2\omega)$.</p>
+<p><strong>Remark (why the doubling must be absorbed).</strong> An inversion written with $d\omega$ and no factor is wrong in the argument, and the error is invisible on a single exponential, which is why it survives review. <strong>The two-sided transform is a one-sided transform of half the function at twice the frequency</strong>, and the inverse carries the factor two in $d(2\omega)$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Sign of the second root</th>
-<th>Value fixed by the kernel</th>
-<th>Value carried at doubled frequency</th>
+<th>Part fixed by the kernel</th>
+<th>Part carried at doubled frequency</th>
 <th>Part whose frequency is lost</th>
 </tr>
 </thead>
@@ -209,10 +234,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="the-linearity-of-each-placement">The Linearity of Each Placement</h2>
-<h3 id="the-four-invariance-groups">The Four Invariance Groups</h3>
-<p><strong>Definition (the two invariance groups).</strong> For a placement $\mathcal T$ let $G_L(\mathcal T)=\{a\in\mathbb{B}:\mathcal T[af]=a\mathcal T[f]\ \text{for all }f\}$ and $G_R(\mathcal T)=\{a\in\mathbb{B}:\mathcal T[fa]=\mathcal T[f]a\ \text{for all }f\}$.</p>
-<p><strong>Theorem (the groups of the three placements).</strong> The groups are as follows, with $C(R)=\mathrm{span}_{\mathbb{C}}\{e_t,R\}$ the plane of the root.</p>
+<h2 id="the-invariance-groups-and-their-intersection">The Invariance Groups and Their Intersection</h2>
+<h3 id="the-groups">The Groups</h3>
+<p><strong>Definition (the two invariance groups).</strong> For a placement $\mathcal T$ let</p>
+<p>$$
+G_L(\mathcal T)=\{a\in\mathbb{B}:\mathcal T[af]=a\mathcal T[f]\ \text{for all integrable }f\},\qquad G_R(\mathcal T)=\{a:\mathcal T[fa]=\mathcal T[f]a\ \text{for all }f\} .
+$$</p>
+<p><strong>Theorem (the groups of the three placements).</strong> With $C(R)$ the plane of the root and $C(R')$ the plane of the second root, the groups are as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -239,40 +267,50 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><em>Proof.</em> Each entry is a restatement of a proposition above. For $\mathcal T_L$: right multiplication by a constant always passes through, while left multiplication passes through exactly when the constant commutes with $W(t,\omega)$ for almost every $t$ and every $\omega$, which is the same condition as commuting with $R$. For $\mathcal T_R$ the two sides exchange. For $\mathcal T_T$: a constant on the left must commute with $W$ and a constant on the right must commute with $W'$, and the conditions are commuting with $R$ and with $R'$ respectively.</p>
-<h3 id="the-intersection-of-the-two">The Intersection of the Two</h3>
-<p><strong>Corollary (the two-sided placement as the intersection).</strong> The left invariance group of $\mathcal T_T$ equals that of $\mathcal T_R$, and the right invariance group of $\mathcal T_T$ equals the nontrivial group of $\mathcal T_L$ up to the replacement of $R$ by $R'$. Consequently, <strong>at $R'=R$ the two-sided placement is the only one of the three that is bilinear over a subalgebra larger than the scalars</strong>, and that subalgebra is $C(R)$, the plane of the root.</p>
-<p><em>Proof.</em> Read the table: $G_L(\mathcal T_T)=C(R)=G_L(\mathcal T_R)$ and $G_R(\mathcal T_T)=C(R')$, which equals $G_R(\mathcal T_L)=C(R)$ exactly when $R'=R$. Bilinearity over $C(R)$ is the conjunction of the two entries.</p>
-<p><strong>Proposition (no placement is bilinear over the whole algebra).</strong> For none of the three placements is $G_L=G_R=\mathbb{B}$.</p>
-<p><em>Proof.</em> The algebra is not commutative: $\nu\eta=R$ while $\eta\nu=-R$, so $\nu$ and $\eta$ do not commute. A placement bilinear over $\mathbb{B}$ on both sides would have both groups equal to $\mathbb{B}$, and the table shows that each placement has at least one group equal to a proper subalgebra.</p>
-<p><strong>Remark (what "intersection" can mean, and what it cannot).</strong> The two-sided placement is the intersection of the two one-sided ones <strong>in the sense of invariance groups</strong>: it keeps the left action that the right transform keeps and the right action that the left transform keeps. It is not the intersection in the sense of images or of kernels, and no statement of that second kind is true. <strong>The distinction matters because an intersection of images would make the two-sided transform a common part of the other two</strong>, which it is not: it is a different operator with a different kernel.</p>
-<h2 id="the-relations-between-the-three">The Relations Between the Three</h2>
-<p><strong>Theorem (factorisation through the one-sided placements).</strong> For every integrable $f$ and every root $R'$,</p>
+<p><em>Proof.</em> Each entry restates a computation made above. A constant passes through the left of $\mathcal T_L$ exactly when it commutes with $W(t,\omega)$ for almost every $t$ and $\omega$, which is the condition of §<em>The Plane of the Root</em>, and through the right always; the row of $\mathcal T_R$ exchanges the sides. For $\mathcal T_T$ the value separates the two factors, so a constant on the left must commute with $W$ and one on the right with $W'$.</p>
+<p><strong>Corollary (the two-sided placement keeps, on each side, exactly what the corresponding one-sided placement keeps).</strong> $G_L(\mathcal T_T)=G_L(\mathcal T_L)$ and $G_R(\mathcal T_T)=G_R(\mathcal T_R)$. The set of constants over which a placement is bilinear on both sides at once is</p>
 <p>$$
-\mathcal T_T[f]=\mathcal T_L\bigl[f\,W'\bigr]=\mathcal T_R^{(W')}\bigl[Wf\bigr],
+G_L(\mathcal T)\cap G_R(\mathcal T);
 $$</p>
-<p>where $\mathcal T_R^{(W')}[g]=\int gW'$ is the right placement with the kernel $W'$.</p>
-<p><em>Proof.</em> Both equalities are the associativity of the product inside the integral: $\int WfW'=\int W(fW')=\int(Wf)W'$. Nothing about convergence is used beyond the integrability that makes each integral exist.</p>
-<p><strong>Corollary (every theorem for the left placement transfers).</strong> Every statement about $\mathcal T_L$ becomes a statement about $\mathcal T_T$ after the pointwise multiplication of the function by $W'$, and every statement about the right placement after the multiplication by $W$ on the other side. <strong>The two-sided placement therefore needs no separate inversion theory</strong>; what it needs is the description of what the pointwise multiplications do, and that description is §<em>What Each Sign Forgets</em>.</p>
-<p><strong>Theorem (no two of the three agree on a non-zero function).</strong> For integrable $f$, the equality $\mathcal T_L[f]=\mathcal T_R[f]$ holds for all $\omega$ exactly when $f$ takes values in the plane of the root, and on such a function $\mathcal T_T[f]=\int f$ at $R'=R$. Consequently the three transforms agree on $f$ only when $f=0$.</p>
-<p><em>Proof.</em> The first statement is the comparison of the two integrands: $Wf=fW$ pointwise exactly when the value commutes with $R$. The second is the corollary of §<em>The Plane of the Root</em>. For the third, a function with values in the plane and with $\int Wf=\int f$ for all $\omega$ has a transform constant in $\omega$; the uniqueness theorem for the complex transform, quoted with its hypothesis that the function be integrable, then forces the function to vanish. <strong>The agreement of all three is therefore the trivial case only</strong>, and this is the precise sense in which the three placements are distinct.</p>
-<p><strong>Proposition (the two one-sided placements differ by an integral of commutators).</strong> For integrable $f$,</p>
+<p>it is the plane $C(R)$ for each of the three placements when $R'=\pm R$, and the scalars $\mathbb{C}e_t$ for $\mathcal T_T$ when $R'\notin C(R)$. <strong>So the two-sided placement is the only one of the three whose bilinearity can be narrower than a plane</strong>, and that is what the second root does.</p>
+<p><em>Proof.</em> The two equalities are read from the table: the effective constraint on the left is always commutation with $W$, and on the right always commutation with $W'$. The intersection for $\mathcal T_T$ is $C(R)\cap C(R')$, which is $C(R)$ when $R'=\pm R$ and $\mathbb{C}e_t$ otherwise, since two planes spanned by distinct pure roots meet only in the scalars; for the one-sided placements it is $C(R)$, one of the two groups being the whole algebra.</p>
+<p><strong>Remark (what "intersection" can and cannot mean).</strong> The two-sided placement is the intersection of the two one-sided ones <strong>in the sense of invariance groups</strong>: it keeps the left action that the left transform keeps and the right action that the right transform keeps. It is not the intersection in the sense of images or kernels, and no statement of that kind is true. <strong>An intersection of images would make the two-sided transform a common part of the other two</strong>, which it is not.</p>
+<p><strong>Proposition (no placement is bilinear over the whole algebra).</strong> For none of the three is $G_L=G_R=\mathbb{B}$.</p>
+<p><em>Proof.</em> The algebra is not commutative: $\nu\eta=R$ while $\eta\nu=-R$. A placement bilinear over $\mathbb{B}$ on both sides would have both groups equal to $\mathbb{B}$, and the table gives each placement at least one proper subgroup.</p>
+<h3 id="the-commutator-defect">The Commutator Defect</h3>
+<p><strong>Theorem (the two one-sided placements differ by an integral of commutators).</strong> For integrable $f$,</p>
 <p>$$
 \mathcal T_L[f](\omega)-\mathcal T_R[f](\omega)=\int\bigl[W(t,\omega),f(t)\bigr]dt ,
 $$</p>
-<p>the bracket being the commutator, and the difference vanishes identically exactly when $f$ takes values in the plane of the root. Moreover $\lVert[W(t,\omega),A]\rVert_E\le2\lVert P_\perp A\rVert_E$ for every $A$, and the bound is attained.</p>
-<p><em>Proof.</em> The difference of the two integrands is $Wf-fW$. It vanishes for plane-valued $f$ because $W$ lies in the plane, which is commutative. For the bound, the commutator vanishes on the plane, and on the transverse plane the two products $WA$ and $AW$ are each of norm $\lVert A\rVert_E$ while their difference is a rotation by $2\theta$ composed with a sign, whose norm is at most $2$; the value $2$ is reached at $\theta=\pi/2$, where $W=-R$ and the commutator with $\nu$ is $-2\eta$. <strong>So the two placements are never far apart in norm, and are as far apart as a difference of two isometries can be.</strong></p>
-<p><strong>Remark (the four kernels).</strong> Written as kernels, the whole family is</p>
+<p>the difference vanishing identically for every plane-valued $f$ and not vanishing identically for a constant transverse value. Moreover, for the Hermitian root and every $A\in\mathbb{B}$ and every $t,\omega$,</p>
 <p>$$
-Wf,\qquad fW,\qquad WfW^{-1},\qquad WfW ,
+\lVert[W(t,\omega),A]\rVert_E\le 2\lVert P_\perp A\rVert_E ,
 $$</p>
-<p>the first two the one-sided placements and the last two the two-sided placement with the second root equal to $R$ and to $-R$. <strong>Two of the four are one-sided because in them one of the two multiplications is absent</strong>, and the missing multiplication is what all the degeneracies of the one-sided case consist in: nothing is cancelled, so nothing is lost.</p>
-<p><strong>Remark (why the three are nevertheless one family).</strong> They share the kernel, the bound, the inversion theorem and the factorization into complex transforms. <strong>What separates them is a single binary choice repeated twice</strong>: whether the kernel is applied on the left or on the right, and whether the second root is the first root or its negative. Four combinations, and two of them are the one-sided placements, because a one-sided placement is the case in which one of the two multiplications is absent.</p>
+<p>and the constant $2$ is attained.</p>
+<p><em>Proof.</em> The integrands differ by $Wf-fW$, and the integral of the difference is the difference of the integrals; that is the identity. It vanishes for plane-valued $f$, because $W$ then lies in the commutative plane with the value; and for $f=\nu\chi$ with integrable $\chi$ it is $2\eta\int\chi(t)\sin\theta\,dt$, which is not identically zero in $\omega$ unless $\chi$ vanishes. For the bound, write $A=A_\parallel+A_\perp$ with $A_\parallel=P_\parallel A$ and $A_\perp=P_\perp A$. The kernel commutes with $A_\parallel$, because both lie in $C(R)$, so</p>
+<p>$$
+[W,A]=[W,A_\perp] ,
+$$</p>
+<p>and then $\lVert[W,A]\rVert_E\le\lVert WA_\perp\rVert_E+\lVert A_\perp W\rVert_E=2\lVert A_\perp\rVert_E$ by the corollary of §<em>The Closed Form</em>, which says that for the Hermitian root multiplication by $W$ on either side is an isometry; if that hypothesis is dropped the estimate becomes $2\lVert W\rVert_E\lVert A_\perp\rVert_E$, which is the next remark. For the sharpness, take $\theta=\pi/2$, that is $W=-R$, and $A=\nu$; then $[W,\nu]=-R\nu+\nu R=-\eta-\eta=-2\eta$, of Euclidean norm $2$, while $\lVert P_\perp\nu\rVert_E=1$.</p>
+<p><strong>Remark (what the bound costs without the Hermitian root).</strong> Without $R^{*}=-R$ the isometry is gone, and only</p>
+<p>$$
+\lVert[W,A]\rVert_E\le2\lVert W\rVert_E\lVert P_\perp A\rVert_E\le2\max(1,\lVert R\rVert_E)\lVert P_\perp A\rVert_E
+$$</p>
+<p>survives, by submultiplicativity of the Euclidean norm. For $R=ie_x-\sqrt2\,e_y$ the ratio $\lVert[W,A]\rVert_E/(2\lVert P_\perp A\rVert_E)$ reaches $1.68$ over two thousand sampled pairs $(A,\theta)$, so the constant $2$ is false there and $2\sqrt3$ is what the proof gives. <strong>The example at $\theta=\pi/2$ survives for any root</strong> — $[-R,\nu]=-2\eta$ uses only the frame relations — but its Euclidean norm is $2$ only when the frame has Euclidean norm one, which is the Hermitian case.</p>
+<p><strong>Remark (what the bound says).</strong> The trivial bound $\lVert[W,A]\rVert_E\le2\lVert A\rVert_E$ is also true and says nothing, because it does not vanish where the two placements agree. <strong>The sharper bound vanishes exactly on the plane of the root</strong>, which is the set on which the two transforms coincide, so it is the quantitative form of the corollary above; and since it is attained on a transverse value, the defect is never a small effect to be discarded.</p>
+<h3 id="the-relations-between-the-three">The Relations Between the Three</h3>
+<p><strong>Theorem (factorisation through the one-sided placements).</strong> For integrable $f$ and every root $R'$,</p>
+<p>$$
+\mathcal T_T[f]=\mathcal T_L\bigl[fW'\bigr]=\mathcal T_R^{(W')}\bigl[Wf\bigr],
+$$</p>
+<p>where $\mathcal T_R^{(W')}[g]=\int gW'$ is the right placement with kernel $W'$. <strong>The two-sided placement therefore needs no separate inversion theory</strong>: it is a one-sided placement applied to a pointwise multiple, and what it needs instead is the description of §<em>What Each Sign Forgets</em>.</p>
+<p><em>Proof.</em> Both equalities are associativity of the product inside the integral: $\int WfW'=\int W(fW')=\int(Wf)W'$. Nothing beyond the integrability that makes each integral exist is used.</p>
+<p><strong>Theorem (no two of the three agree on a non-zero function).</strong> For integrable $f$, $\mathcal T_L[f]=\mathcal T_R[f]$ for all $\omega$ exactly when $f$ takes values in $C(R)$, and on such a function $\mathcal T_T[f]=\int f$ when $R'=R$. Consequently the three transforms agree on $f$ only when $f=0$.</p>
+<p><em>Proof.</em> The two integrands are equal pointwise exactly when the value commutes with $R$, which gives the first statement. The second is the corollary of §<em>The Plane of the Root</em>: a plane-valued function is fixed by the conjugation. For the third, a plane-valued $f$ with $\mathcal T_L[f]=\mathcal T_T[f]$ has $\int Wf=\int f$ for every $\omega$, so the transform of $Wf$ is constant in $\omega$; by the uniqueness theorem for the complex transform, quoted with the hypothesis that $Wf$ be integrable, a function whose transform is constant is supported at the origin, hence $f=0$.</p>
 <h2 id="summary">Summary</h2>
-<p>The kernel of the biquaternion Fourier transform is a unit of Euclidean norm one, with closed form $\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)R$ for the pure root $R=i\tilde{Ζ}$ attached to a root $\tilde{Ζ}$ of $1$, inverse equal to the algebra conjugate, and multiplicativity in the time. The commutant of a pure root is the plane of the root, of real dimension four, and conjugation by the kernel fixes that plane pointwise while rotating a transverse plane through the angle $4\pi\omega t$.</p>
-<p>The left placement is right-linear over the algebra and not left-linear; the right placement is left-linear and not right-linear; the algebra conjugate of the left transform is the right transform of the conjugate at the opposite frequency, and the identity needs the algebra conjugate. Each one-sided placement is bounded by the integral of the Euclidean norm, and each is inverted by the conjugate kernel on the matching side.</p>
-<p>The two-sided placement is bounded by the same integral, and it factors through either one-sided placement by a pointwise multiplication, so it needs no separate inversion theory. Its behaviour depends on the sign of the second root. At $R'=R$ the kernel is a conjugation, the plane part is fixed and its frequency content is lost, and the transform is not injective, its kernel being the plane-valued functions of zero total integral. At $R'=-R$ the kernel fixes the transverse plane, the transverse part loses its frequency, and the plane part is carried at twice the frequency. In both signs the surviving half appears at frequency $2\omega$, and the inverse must carry the factor two.</p>
-<p>Linearity is the sharpest way to separate the three. The left placement is linear on the right over the whole algebra and on the left only over the plane of the root; the right placement is the reverse; the two-sided placement is linear over the plane on the left and over the plane of the second root on the right. It is therefore the intersection of the two one-sided invariance groups, and it is bilinear over the plane of the root exactly when the second root is the first. No placement is bilinear over the whole algebra, because the algebra is not commutative. And no two of the three agree on a non-zero function, so the choice of placement is a genuine choice and not a convention.</p>
+<p>The kernel has algebraic norm one, with closed form $\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)R$ for the root $R=i\tilde{Ζ}$ attached to a root $\tilde{Ζ}$ of $1$, with inverse equal to the algebra conjugate and with multiplicativity in the time. <strong>For the Hermitian root it has Euclidean norm one</strong>, and multiplication by it on either side is then an isometry of the eight real coordinates, so every placement is bounded by the integral of the Euclidean norm of the value; for a non-Hermitian pure root neither the isometry nor that bound with constant one holds, and the constant becomes $\max(1,\lVert R\rVert_E)$. Its commutant is the plane of the root, a commutative subalgebra of real dimension four; on that plane conjugation by the kernel is the identity, and on the complementary plane it is a rotation through $4\pi\omega t$.</p>
+<p>The left placement is linear on the right over the whole algebra and on the left only over the plane; the right placement is the reverse; and the algebra conjugate of the left transform is the right transform of the conjugate at the opposite frequency, an identity that needs the algebra conjugate and fails for the complex one. Each one-sided placement is inverted by the conjugate kernel on its own side. The two one-sided placements differ by the integral of a commutator, bounded by twice the transverse part of the value and equal to that bound when the kernel has turned a quarter of its period.</p>
+<p>The two-sided placement depends on the sign of the second root, and the two signs fix complementary halves. At $R'=R$ the kernel is a conjugation, the plane part is fixed and its frequency content is lost, and the transform is not injective, its kernel being the plane-valued functions of zero total integral. At $R'=-R$ the kernel fixes the transverse plane, the transverse part loses its frequency, and the plane part is carried at twice the frequency. In both signs the surviving half appears at frequency $2\omega$, and the inverse must carry the factor two. <strong>Neither sign turns the two-sided placement into a one-sided one</strong>, and no two of the three agree on a non-zero function. The two-sided placement keeps on each side exactly what the corresponding one-sided placement keeps, so it is the intersection of the two invariance groups; it is the only placement whose bilinearity can be narrower than a plane, and that is what the second root does.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -284,119 +322,141 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{B}$</td>
-<td>The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension $8$</td>
+<td>The biquaternion algebra, of real dimension $8$</td>
 </tr>
 <tr>
-<td>$e_t$</td>
-<td>The scalar unit</td>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>The units, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$</td>
 </tr>
 <tr>
-<td>$\tilde{Ζ}$</td>
-<td>A pure root of $1$, fixed once and for all, with $\tilde{Ζ}^{2}=e_t$</td>
+<td>$i$</td>
+<td>The central scalar imaginary</td>
 </tr>
 <tr>
-<td>$R$</td>
-<td>The root of $-e_t$ attached to it, $R=i\tilde{Ζ}$</td>
+<td>$\tilde{Ζ},\tilde{Ζ}'$</td>
+<td>Roots of $1$, with $\tilde{Ζ}^{2}=\tilde{Ζ}'^{2}=e_t$; $\tilde{Ζ}$ is the Hermitian root, $\tilde{Ζ}^{*}=\tilde{Ζ}$</td>
 </tr>
 <tr>
-<td>$\tilde{Ζ}'$, $R'$</td>
-<td>A second root of $1$ and its attached root of $-e_t$, used only in the two-sided placement</td>
+<td>$R,R'$</td>
+<td>The attached roots of $-e_t$, $R=i\tilde{Ζ}$ and $R'=i\tilde{Ζ}'$, pure with $R^{2}=-e_t$; $R$ is a real unit vector, $R^{*}=-R$</td>
 </tr>
 <tr>
-<td>$\nu,\eta$</td>
-<td>A transverse pure orthonormal pair, with $R\nu=\eta$ and $\eta R=\nu$</td>
+<td>$W,W'$</td>
+<td>The kernels $W(t,\omega)=\exp(-2\pi R\omega t)$ and $W'(t,\omega)=\exp(2\pi R'\omega t)$</td>
 </tr>
 <tr>
-<td>$V_\perp$</td>
-<td>The real plane spanned by $\nu$ and $\eta$</td>
+<td>$t$</td>
+<td>The time, the variable of integration</td>
 </tr>
 <tr>
-<td>$C(R)$</td>
-<td>The commutant of $R$, equal to $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$</td>
-</tr>
-<tr>
-<td>$W(t,\omega)$</td>
-<td>The kernel $\exp(-2\pi i\tilde{Ζ}\omega t)=\exp(-2\pi R\omega t)$</td>
-</tr>
-<tr>
-<td>$W'(t,\omega)$</td>
-<td>The second kernel $\exp(2\pi i\tilde{Ζ}'\omega t)=\exp(2\pi R'\omega t)$</td>
+<td>$\omega$</td>
+<td>The frequency, a real number</td>
 </tr>
 <tr>
 <td>$\theta$</td>
 <td>The phase $2\pi\omega t$</td>
 </tr>
 <tr>
-<td>$t$</td>
-<td>The time variable</td>
+<td>$c,s$</td>
+<td>The abbreviations $\cos\theta$ and $\sin\theta$</td>
 </tr>
 <tr>
-<td>$\omega$</td>
-<td>The real frequency</td>
+<td>$N(A)$</td>
+<td>The norm $A_t^{2}+A_x^{2}+A_y^{2}+A_z^{2}$, central and complex-valued; <strong>not</strong> the Euclidean norm</td>
 </tr>
 <tr>
-<td>$\mathcal T_L$</td>
-<td>The left placement, $\int W(t,\omega)f(t)\,dt$</td>
+<td>$\operatorname{Sc}$</td>
+<td>The scalar part, the coefficient of $e_t$</td>
 </tr>
 <tr>
-<td>$\mathcal T_R$</td>
-<td>The right placement, $\int f(t)W(t,\omega)\,dt$</td>
+<td>$A^{*}$</td>
+<td>The Euclidean adjoint, the conjugate transpose in the matrix model</td>
 </tr>
 <tr>
-<td>$\mathcal T_T$</td>
-<td>The two-sided placement, $\int WfW'\,dt$</td>
+<td>$\overline{A}$</td>
+<td>The algebra conjugate, which reverses the vector part</td>
 </tr>
 <tr>
-<td>$\mathcal T_R^{(W')}$</td>
-<td>The right placement with the kernel $W'$ instead of $W$</td>
+<td>$\lVert A\rVert_E$</td>
+<td>The Euclidean norm on the eight real coordinates, $\lVert A\rVert_E^{2}=\operatorname{Sc}(AA^{*})=\sum_k\lvert A_k\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$A$, $X$, $a$</td>
+<td>Generic elements of the algebra; $a$ is the constant in the linearity statements</td>
+</tr>
+<tr>
+<td>$\bar f$</td>
+<td>The conjugate-valued function $t\mapsto\overline{f(t)}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=C(R)\oplus V_\perp$</td>
+<td>The split of the algebra into the plane of the root and its complement</td>
+</tr>
+<tr>
+<td>$C(R)$</td>
+<td>The plane of the root, $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, of real dimension four</td>
+</tr>
+<tr>
+<td>$C(R')$</td>
+<td>The plane of the second root</td>
+</tr>
+<tr>
+<td>$V_\perp$</td>
+<td>The complementary subspace, $\mathrm{span}_{\mathbb{R}}\{\nu,\eta\}$</td>
+</tr>
+<tr>
+<td>$\nu,\eta$</td>
+<td>A transverse frame, pure with $\nu^{2}=\eta^{2}=-e_t$ and $R\nu=\eta$, $\eta R=\nu$</td>
+</tr>
+<tr>
+<td>$P_\parallel,P_\perp$</td>
+<td>The projections onto $C(R)$ and onto $V_\perp$, orthogonal for the Hermitian root</td>
+</tr>
+<tr>
+<td>$A_\parallel,A_\perp$</td>
+<td>The two parts $P_\parallel A$ and $P_\perp A$</td>
+</tr>
+<tr>
+<td>$[A,B]$</td>
+<td>The commutator $AB-BA$</td>
 </tr>
 <tr>
 <td>$f$</td>
-<td>An integrable function $\mathbb{R}\to\mathbb{B}$</td>
+<td>An integrable $\mathbb{B}$-valued function of the time</td>
 </tr>
 <tr>
-<td>$f_\parallel,f_\perp$</td>
-<td>Its plane part and its transverse part</td>
+<td>$\mathcal T_L,\mathcal T_R,\mathcal T_T$</td>
+<td>The left, right and two-sided transforms</td>
 </tr>
 <tr>
-<td>$A_1,A_2$</td>
-<td>The coefficients of $f_\perp$ in the frame $\nu,\eta$</td>
+<td>$\mathcal T_R^{(W')}$</td>
+<td>The right placement with the kernel $W'$</td>
 </tr>
 <tr>
-<td>$a$</td>
-<td>A constant element of $\mathbb{B}$</td>
-</tr>
-<tr>
-<td>$\bar a$</td>
-<td>The algebra conjugate</td>
-</tr>
-<tr>
-<td>$N$</td>
-<td>The algebraic norm $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
-</tr>
-<tr>
-<td>$\lVert\cdot\rVert_E$</td>
-<td>The Euclidean norm on the eight real coordinates</td>
-</tr>
-<tr>
-<td>$G_L(\mathcal T),G_R(\mathcal T)$</td>
+<td>$G_L,G_R$</td>
 <td>The left and right invariance groups of a placement</td>
 </tr>
 <tr>
-<td>$i$</td>
-<td>The central scalar imaginary</td>
+<td>$A_1,A_2$</td>
+<td>The two coefficients of a transverse-valued function, $f=A_1\nu+A_2\eta$</td>
+</tr>
+<tr>
+<td>$C_1,C_2$</td>
+<td>The two coefficients of its two-sided transform</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>The doubled frequency $2\omega$, the variable of the complex inversion</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>Biquaternion Continuous Harmonic Analysis</em>, for the transform, its inversion, its Plancherel statement and its factorization into complex transforms; the placements here are the three readings of its kernel.</li>
-<li><em>Biquaternion Discrete Harmonic Analysis</em>, for the discrete model in which the order of kernel and function is fixed first and the convolution theorem is then stated for each placement; the left and right convolution theorems there are the discrete counterparts of the two one-sided theorems here.</li>
-<li><em>The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set</em>, for the symbol whose eigenvalue is the transform of a single exponential, which is the case in which the doubled frequency of §<em>The Doubled Frequency</em> shows up as a doubled argument.</li>
-<li><em>The Biquaternion Fourier Transform and the Two Quadratic Forms</em>, for the two forms that measure the kernel and the value, and for the inequality that bounds a product of two elements of norm one by their forms.</li>
-<li><em>The Inverse Biquaternion Fourier Transform: Poles, Types and Tails</em>, for the inversion in a plane of the root, which is the placement in which the plane of §<em>The Plane of the Root</em> carries the whole computation.</li>
-<li><em>Biquaternion Fourier Inversion on the Degenerate Set</em>, for the case in which the symbol is not a unit and the two-sided placement is the one that keeps the transverse part visible.</li>
-<li><em>The Fourier Transform on Vector-Valued and Operator-Valued Function Spaces</em>, for the operator-valued reading of a transform whose values are acted on from both sides.</li>
+<li><em>Biquaternion Continuous Harmonic Analysis</em>, for the kernel, its closed form, the two-unit transform, and the inversion and Plancherel theorems quoted here.</li>
+<li><em>Biquaternion Discrete Harmonic Analysis</em>, for what the kernel does to a value in the discrete case, the model for §<em>The Commutant and the Complement</em>, which is not repeated here.</li>
+<li><em>The Fourier Transform and the Symbol of a Differential Operator</em>, for the symbol whose left multiplication is the transform of a single exponential, and the zero set that decides where a placement can be inverted.</li>
+<li><em>Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set</em>, for the inverse at a null point of the symbol, where the frequency lost by the two-sided kernel is genuinely lost.</li>
+<li><em>Norm and Unitary Conventions</em>, for the four norms of the algebra and the letters that distinguish them, the Euclidean norm used here being one of the four.</li>
 </ul>
       </div>
     </main>
