@@ -6,7 +6,7 @@ This article answers two questions about the biquaternion Fourier transform of a
 
 The setting is the one of *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the central scalar imaginary $i$. The symbol of the operator $P(D)=\sum_{\lvert\alpha\rvert\le m}a_\alpha\partial^\alpha$ is $\sigma_P(\zeta)=\sum_\alpha a_\alpha(i\zeta)^\alpha$, an element of $\mathbb{B}$, and the zero set is $Z(P)=\{\zeta\in\mathbb{R}^n:\sigma_P(\zeta)\text{ is not a unit}\}$. Two facts from that article are used throughout: the element is a unit exactly when its norm $N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ is nonzero, and the rank of left multiplication $L_{\tilde Q}$ is $8$ on the units, $4$ on the null elements other than $0$, and $0$ at $0$.
 
-**The transform.** The transform is the one of *Biquaternion Continuous Harmonic Analysis*: a pure root $\rho$ of $-e_t$, fixed once and for all, the kernel $W(t,\omega)=\exp(-2\pi\rho\omega t)$, and the kernel multiplying the function on the left. For functions of $n$ real variables the kernel is the product of the one-variable kernels on the $n$ coordinates, which is the case $\rho_1=\dots=\rho_n=\rho$ of the two-unit transform, read on the linear form $\omega\cdot t$.
+**The transform.** The transform is the one of *Biquaternion Continuous Harmonic Analysis*: a pure root $\tilde{Ζ}$ of $1$, fixed once and for all, the kernel $W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)$, and the kernel multiplying the function on the left. For functions of $n$ real variables the kernel is the product of the one-variable kernels on the $n$ coordinates, which is the case $\tilde{Ζ}_1=\dots=\tilde{Ζ}_n=\tilde{Ζ}$ of the two-unit transform, read on the linear form $\omega\cdot t$.
 
 **What is proved.** That the transform diagonalises $P(D)$ at each frequency, with the symbol read at an algebra-valued frequency and with the sign of the transpose (§*The Transform and the Eigenvalue Identity*). That the transform of a solution vanishes off a set $\Omega(P)$ cut by two real equations, and that at each point of that set its value lies in the kernel of left multiplication by the symbol, a real subspace of $\mathbb{B}$ of dimension four (§*Support Inside the Zero Set*). That the rank of left multiplication takes the three values $8$, $4$, $0$, that at a null element the kernel and the cokernel are both of real dimension four and are described explicitly, and that the rank falls below four only at the origin (§*The Rank of Left Multiplication*). That the norm can degenerate identically, in which case the rank is four at every frequency and no frequency solves the equation for all data (§*The Degenerate Norm*). The last section reads the same data microlocally; the scalar theorem it quotes is Hörmander's, and the algebra-valued form of it is stated and not proved (§*The Microlocal Reading*).
 
@@ -16,37 +16,37 @@ The setting is the one of *The Biquaternion Fourier Transform: Symbol, Block Det
 
 ### The Kernel on Several Variables
 
-**Definition (the one-root transform).** Let $\rho$ be a pure root of $-e_t$ and let $f:\mathbb{R}^n\to\mathbb{B}$. The **transform** of $f$ is
+**Definition (the one-root transform).** Let $\tilde{Ζ}$ be a pure root of $1$ and let $f:\mathbb{R}^n\to\mathbb{B}$. The **transform** of $f$ is
 
 $$
-F(\omega)=\int_{\mathbb{R}^n}\exp\bigl(-2\pi\rho\,\omega\cdot t\bigr)f(t)\,dt,\qquad \omega\cdot t=\sum_{k=1}^{n}\omega_kt_k ,
+F(\omega)=\int_{\mathbb{R}^n}\exp\bigl(-2\pi i\tilde{Ζ}\,\omega\cdot t\bigr)f(t)\,dt,\qquad \omega\cdot t=\sum_{k=1}^{n}\omega_kt_k ,
 $$
 
-and the exponential is the product $\prod_k\exp(-2\pi\rho\omega_kt_k)$, taken in that order.
+and the exponential is the product $\prod_k\exp(-2\pi i\tilde{Ζ}\omega_kt_k)$, taken in that order.
 
-**Remark (the product is a single exponential because the factors commute).** Each factor is $\cos(2\pi\omega_kt_k)e_t-\sin(2\pi\omega_kt_k)\rho$ by the closed form of the kernel, so every factor lies in the plane $\mathbb{C}e_t\oplus\mathbb{C}\rho$, which is commutative; the factors therefore commute among themselves, the product is independent of the order, and it equals $\exp(-2\pi\rho\sum_k\omega_kt_k)$. **The single root on several variables costs nothing**, and the two-unit transform of the corpus is the case of two distinct roots, where the order becomes part of the definition.
+**Remark (the product is a single exponential because the factors commute).** Each factor is $\cos(2\pi\omega_kt_k)e_t-i\sin(2\pi\omega_kt_k)\tilde{Ζ}$ by the closed form of the kernel, so every factor lies in the plane $\mathbb{C}e_t\oplus\mathbb{C}\tilde{Ζ}$, which is commutative; the factors therefore commute among themselves, the product is independent of the order, and it equals $\exp(-2\pi i\tilde{Ζ}\sum_k\omega_kt_k)$. **The single root on several variables costs nothing**, and the two-unit transform of the corpus is the case of two distinct roots, where the order becomes part of the definition.
 
 **Remark (why the placement on the left matters for the sign).** The kernel multiplies $f$ on the left, so integration by parts moves each derivative onto the kernel and produces a sign. The sign is not an accident of the computation: it says that the transform carries $P(D)$ into the symbol of the **transpose** of $P$, and that is the content of the next proposition.
 
 ### The Eigenvalue Identity
 
-**Proposition (the kernel is an eigenfunction).** Let $\zeta=2\pi\omega\rho i\in\mathbb{B}^n$ and let $P^t(D)=\sum_\alpha(-1)^{\lvert\alpha\rvert}a_\alpha\partial^\alpha$ be the transpose of $P$. Then
+**Proposition (the kernel is an eigenfunction).** Let $\zeta=-2\pi\omega\tilde{Ζ}\in\mathbb{B}^n$ and let $P^t(D)=\sum_\alpha(-1)^{\lvert\alpha\rvert}a_\alpha\partial^\alpha$ be the transpose of $P$. Then
 
 $$
 P^t(D)\,W(\cdot,\omega)=\sigma_{P^t}(\zeta)\,W(\cdot,\omega),\qquad \sigma_{P^t}(\zeta)=\sigma_P(-\zeta).
 $$
 
-*Proof.* For one variable and one derivative, $\partial_tW=-2\pi\rho\omega W$, so $\partial_t^kW=(-2\pi\rho\omega)^kW$; the coefficient is $a_k$, on the left, and $a_k$ is constant. For the multi-index, the derivative acts on the product of factors and distributes, and the factor $k$ contributes $(-2\pi\rho\omega_k)^{\alpha_k}$. In the symbol, $(i\zeta_k)^{\alpha_k}$ at $\zeta_k=2\pi\omega_k\rho i$ is $\bigl(i\cdot2\pi\omega_k\rho i\bigr)^{\alpha_k}=(-2\pi\rho\omega_k)^{\alpha_k}$, and the two agree. The sign $(-1)^{\lvert\alpha\rvert}$ in the transpose cancels the sign produced by moving the derivative from $f$ to $W$, which is the content of the next computation.
+*Proof.* For one variable and one derivative, $\partial_tW=-2\pi i\tilde{Ζ}\omega W$, so $\partial_t^kW=(-2\pi i\tilde{Ζ}\omega)^kW$; the coefficient is $a_k$, on the left, and $a_k$ is constant. For the multi-index, the derivative acts on the product of factors and distributes, and the factor $k$ contributes $(-2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}$. In the symbol, $(i\zeta_k)^{\alpha_k}$ at $\zeta_k=-2\pi\omega_k\tilde{Ζ}$ is $\bigl(i\cdot(-2\pi\omega_k\tilde{Ζ})\bigr)^{\alpha_k}=(-2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}$, and the two agree. The sign $(-1)^{\lvert\alpha\rvert}$ in the transpose cancels the sign produced by moving the derivative from $f$ to $W$, which is the content of the next computation.
 
 **Theorem (the eigenvalue identity of the transform).** Let $f$ be a Schwartz function with values in $\mathbb{B}$ and let $F$ be its transform. Then
 
 $$
-\bigl(P(D)f\bigr)^{\wedge}(\omega)=\sigma_{P^t}(\zeta)\,F(\omega)=\Sigma_P(\omega)F(\omega),\qquad \Sigma_P(\omega)=\sum_{\lvert\alpha\rvert\le m}a_\alpha\prod_{k=1}^{n}(2\pi\rho\omega_k)^{\alpha_k}.
+\bigl(P(D)f\bigr)^{\wedge}(\omega)=\sigma_{P^t}(\zeta)\,F(\omega)=\Sigma_P(\omega)F(\omega),\qquad \Sigma_P(\omega)=\sum_{\lvert\alpha\rvert\le m}a_\alpha\prod_{k=1}^{n}(2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}.
 $$
 
-*Proof.* By the definition of the transpose, $\int_{\mathbb{R}^n}\bigl(P^t(D)W(\cdot,\omega)\bigr)f=\int_{\mathbb{R}^n}W(\cdot,\omega)\bigl(P(D)f\bigr)$ for every $\omega$, the boundary terms vanishing because $W$ is bounded and $f$ is Schwartz; the identity is the integration by parts on each variable, with the coefficients unchanged because they are constants. The left side is $\sigma_{P^t}(\zeta)F(\omega)$ by the previous proposition. The second equality is the previous proposition written out: $\sigma_P(-\zeta)$ at $\zeta=2\pi\omega\rho i$ is $\sum_\alpha a_\alpha\prod_k(2\pi\rho\omega_k)^{\alpha_k}$.
+*Proof.* By the definition of the transpose, $\int_{\mathbb{R}^n}\bigl(P^t(D)W(\cdot,\omega)\bigr)f=\int_{\mathbb{R}^n}W(\cdot,\omega)\bigl(P(D)f\bigr)$ for every $\omega$, the boundary terms vanishing because $W$ is bounded and $f$ is Schwartz; the identity is the integration by parts on each variable, with the coefficients unchanged because they are constants. The left side is $\sigma_{P^t}(\zeta)F(\omega)$ by the previous proposition. The second equality is the previous proposition written out: $\sigma_P(-\zeta)$ at $\zeta=-2\pi\omega\tilde{Ζ}$ is $\sum_\alpha a_\alpha\prod_k(2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}$.
 
-**Remark (two symbols, and which one is used below).** The article uses $\Sigma_P(\omega)$ for the eigenvalue of the transform and $\sigma_P(\zeta)$ for the symbol of the operator; they are related by $\Sigma_P(\omega)=\sigma_P(-\zeta)$ at $\zeta=2\pi\omega\rho i$, the minus sign being the sign of the transpose. **The distinction is not pedantry, because the sign is a sign of a derivative**, and an argument that mixes the two conventions reports an eigenvalue of the wrong sign; every formula in this article uses $\Sigma_P$.
+**Remark (two symbols, and which one is used below).** The article uses $\Sigma_P(\omega)$ for the eigenvalue of the transform and $\sigma_P(\zeta)$ for the symbol of the operator; they are related by $\Sigma_P(\omega)=\sigma_P(-\zeta)$ at $\zeta=-2\pi\omega\tilde{Ζ}$, the minus sign being the sign of the transpose. **The distinction is not pedantry, because the sign is a sign of a derivative**, and an argument that mixes the two conventions reports an eigenvalue of the wrong sign; every formula in this article uses $\Sigma_P$.
 
 **Corollary (the frequency set).** The equation at the frequency $\omega$ is solvable for every right-hand side exactly when $\Sigma_P(\omega)$ is a unit. The set of frequencies where it is not is
 
@@ -54,21 +54,21 @@ $$
 \Omega(P)=\{\omega\in\mathbb{R}^n:N(\Sigma_P(\omega))=0\},
 $$
 
-the **frequency set** of $P$ for the transform with root $\rho$.
+the **frequency set** of $P$ for the transform with root $\tilde{Ζ}$.
 
 *Proof.* The transform of a constant-coefficient equation is the multiplication by $\Sigma_P(\omega)$ at each frequency, by the theorem; a multiplication by an element of $\mathbb{B}$ is surjective exactly when the element is a unit, by the solvability at one frequency of *The Fourier Transform and the Symbol of a Differential Operator*; and the units are the elements of nonzero norm, by the corollary of *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*.
 
-**Remark (the frequency is an element of the algebra).** The point $-2\pi\omega\rho i$ has a nonzero vector part whenever $\rho$ is pure and $\omega\ne0$, so the frequency set is not the real zero set of $\sigma_P$ but the trace on the plane $-2\pi i\rho\mathbb{R}^n$ of the set of $\zeta\in\mathbb{B}^n$ where $\sigma_P(\zeta)$ is not a unit. **The transform with a pure root reads the symbol at algebra-valued frequencies**, and the real-frequency theory is the theory of the central root, where the plane collapses to the real axis of each variable.
+**Remark (the frequency is an element of the algebra).** The point $-2\pi\omega\tilde{Ζ}$ has a nonzero vector part whenever $\tilde{Ζ}$ is pure and $\omega\ne0$, so the frequency set is not the real zero set of $\sigma_P$ but the trace on the plane $-2\pi\tilde{Ζ}\mathbb{R}^n$ of the set of $\zeta\in\mathbb{B}^n$ where $\sigma_P(\zeta)$ is not a unit. **The transform with a pure root reads the symbol at algebra-valued frequencies**, and the real-frequency theory is the theory of the central root, where the plane collapses to the real axis of each variable.
 
-**Example (two frequencies, computed).** For $P(D)=e_t+i\,e_t\partial_t$ on $\mathbb{R}$, with $\rho=\vec e_x$, the eigenvalue is $\Sigma_P(\omega)=e_t+2\pi i\omega\vec e_x$. For coefficients $a,b\in\mathbb{C}$ in the plane of $e_t$ and $\rho$ the norm is $a^2+b^2$, because $\rho^2=-e_t$; the coefficients here are $a=1$ and $b=2\pi i\omega$, so the norm is the second of the two expressions below.
+**Example (two frequencies, computed).** For $P(D)=e_t+i\,e_t\partial_t$ on $\mathbb{R}$, with $\tilde{Ζ}=-i\vec e_x$, the eigenvalue is $\Sigma_P(\omega)=e_t-2\pi\omega\tilde{Ζ}=e_t+2\pi i\omega\vec e_x$. For coefficients $a,b\in\mathbb{C}$ in the plane of $e_t$ and $\tilde{Ζ}$ the norm is $a^2-b^2$, because $N(\tilde{Ζ})=-1$ for a pure root of $1$; the coefficients here are $a=1$ and $b=-2\pi\omega$, so the norm is the third of the three expressions below.
 
 $$
-N\bigl(a\,e_t+b\rho\bigr)=a^2+b^2,\qquad N(\Sigma_P(\omega))=1-(2\pi\omega)^2 .
+N\bigl(a\,e_t+b\tilde{Ζ}\bigr)=a^2-b^2,\qquad N(\tilde{Ζ})=-1,\qquad N(\Sigma_P(\omega))=1-(2\pi\omega)^2 .
 $$
 
 So $\Omega(P)=\{-1/(2\pi),1/(2\pi)\}$: two real frequencies, and the equation is solvable for all data at every other one. The coefficient $i$ is what makes the two frequencies real, and dropping it makes the norm positive definite and the frequency set empty.
 
-**Example (the gradient, computed).** For $P(D)=e_t\partial_0+\vec e_x\partial_1+\vec e_y\partial_2+\vec e_z\partial_3$ on $\mathbb{R}^4$ with $\rho=\vec e_x$ the eigenvalue is $\Sigma_\nabla(\omega)=2\pi\sum_k\omega_k\vec e_k\vec e_x$, and the products of the units with $\vec e_x$ on the right give $\vec e_x\vec e_x=-e_t$, $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_x=\vec e_y$. So
+**Example (the gradient, computed).** For $P(D)=e_t\partial_0+\vec e_x\partial_1+\vec e_y\partial_2+\vec e_z\partial_3$ on $\mathbb{R}^4$ with $\tilde{Ζ}=-i\vec e_x$ the eigenvalue is $\Sigma_\nabla(\omega)=2\pi i\sum_k\omega_k\vec e_k\tilde{Ζ}=2\pi\sum_k\omega_k\vec e_k\vec e_x$, and the products of the units with $\vec e_x$ on the right give $\vec e_x\vec e_x=-e_t$, $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_x=\vec e_y$. So
 
 $$
 N(\Sigma_\nabla(\omega))=4\pi^2\bigl(\omega_0^2+\omega_1^2+\omega_2^2+\omega_3^2\bigr),
@@ -76,7 +76,7 @@ $$
 
 and the frequency set is the single point $\omega=0$. The real part is definite and the imaginary part vanishes identically, so this is the atypical shape of *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*, transported to the frequency line.
 
-**Remark (why the ordering had to be watched in the gradient).** The products $\vec e_k\vec e_x$ do not all equal $\vec e_x\vec e_k$: two of them change sign. Had the eigenvalue been written $2\pi\rho\sum_k\omega_k\vec e_k$, the norm would have come out with the opposite sign, because $\vec e_x$ does not commute with $\vec e_y$ and $\vec e_z$. **The coefficient sits on the left and the frequency factor on the right**, and the order is part of the answer.
+**Remark (why the ordering had to be watched in the gradient).** The products $\vec e_k\vec e_x$ do not all equal $\vec e_x\vec e_k$: two of them change sign. Had the eigenvalue been written $2\pi i\tilde{Ζ}\sum_k\omega_k\vec e_k$, the norm would have come out with the opposite sign, because $\tilde{Ζ}=-i\vec e_x$ does not commute with $\vec e_y$ and $\vec e_z$. **The coefficient sits on the left and the frequency factor on the right**, and the order is part of the answer.
 
 ## Support Inside the Zero Set
 
@@ -180,7 +180,7 @@ by the cyclicity of the trace, so the adjoint of $L_{\tilde Q}$ with respect to 
 
 *Proof.* The norm is multiplicative, so $N(q\,u(\omega))=N(q)N(u(\omega))=0$ for every $\omega$.
 
-**Example (a first-order operator with degenerate norm).** Take $q=\vec e_x+i\vec e_y$, which is null because $1+i^2=0$, and $u(\omega)=e_t+2\pi\omega\rho$. Then $\Sigma_P(\omega)=q+2\pi\omega q\rho$, and $N(\Sigma_P(\omega))=0$ for every $\omega$. The rank of $L_{\Sigma_P(\omega)}$ is four at every frequency, and the determinant $\lvert N\rvert^4$ is the zero polynomial, so the equation is not solvable for all data at any frequency.
+**Example (a first-order operator with degenerate norm).** Take $q=\vec e_x+i\vec e_y$, which is null because $1+i^2=0$, and $u(\omega)=e_t+2\pi i\omega\tilde{Ζ}$. Then $\Sigma_P(\omega)=q+2\pi i\omega\,q\tilde{Ζ}$, and $N(\Sigma_P(\omega))=0$ for every $\omega$. The rank of $L_{\Sigma_P(\omega)}$ is four at every frequency, and the determinant $\lvert N\rvert^4$ is the zero polynomial, so the equation is not solvable for all data at any frequency.
 
 **Remark (the symbol stays on the cone).** The example is the general mechanism: the symbol takes all its values in the null set, which is the cone of *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*. **Degeneracy is not a property of one frequency but of the whole symbol map**, and it is invisible at any single frequency taken alone.
 
@@ -234,9 +234,9 @@ and the statement is **stated and not proved** here. The pointwise input is avai
 
 ### The Rank Read Microlocally
 
-**Proposition (the two readings agree over constant coefficients).** For a constant-coefficient operator the characteristic set is $\mathbb{R}^n\times Z(P)$, and the frequency set $\Omega(P)$ is the trace on the plane $-2\pi i\rho\mathbb{R}^n$ of the set of points of $\mathbb{B}^n$ at which $\sigma_P$ is not a unit.
+**Proposition (the two readings agree over constant coefficients).** For a constant-coefficient operator the characteristic set is $\mathbb{R}^n\times Z(P)$, and the frequency set $\Omega(P)$ is the trace on the plane $-2\pi\tilde{Ζ}\mathbb{R}^n$ of the set of points of $\mathbb{B}^n$ at which $\sigma_P$ is not a unit.
 
-*Proof.* The characteristic set is the set of pairs whose symbol is not a unit, and the symbol does not depend on $x$, so the set is the product of $\mathbb{R}^n$ with the zero set. The second sentence is the corollary of §*The Eigenvalue Identity*: $\Sigma_P(\omega)$ is $\sigma_P$ at the point $-2\pi\omega\rho i$, and the map $\omega\mapsto-2\pi\omega\rho i$ is injective because $\rho\ne0$, so the $\omega$ at which the symbol is not a unit are exactly the points of the plane at which it is not a unit.
+*Proof.* The characteristic set is the set of pairs whose symbol is not a unit, and the symbol does not depend on $x$, so the set is the product of $\mathbb{R}^n$ with the zero set. The second sentence is the corollary of §*The Eigenvalue Identity*: $\Sigma_P(\omega)$ is $\sigma_P$ at the point $-2\pi\omega\tilde{Ζ}$, and the map $\omega\mapsto-2\pi\omega\tilde{Ζ}$ is injective because $\tilde{Ζ}\ne0$, so the $\omega$ at which the symbol is not a unit are exactly the points of the plane at which it is not a unit.
 
 **Remark (the rank read microlocally).** At a point $(x,\zeta)$ of the characteristic set the two remaining numbers are the rank of $L_{\sigma_P(\zeta)}$ and the dimension of its kernel: eight and zero off the set, four and four on it away from the origin, zero and eight at the origin. **The microlocal reading says that at a singular frequency the singularity of a solution can occupy exactly the kernel directions and no others**, because the cokernel directions are the ones the equation cannot produce. That is the same data as the support theorem, read at one frequency instead of at all of them.
 
@@ -244,7 +244,7 @@ and the statement is **stated and not proved** here. The pointwise input is avai
 
 ## Summary
 
-The transform of a biquaternion-coefficient operator multiplies the transform of the function by an element of the algebra at each frequency, and the element is the symbol read at the algebra-valued frequency $-2\pi\omega\rho i$, with the sign of the transpose because the kernel sits on the left. Where that element is a unit the transform is inverted by left multiplication by its inverse; where it is not, the transform of a solution is confined to the frequency set and, at each point of it, to the kernel of left multiplication, a real four-plane.
+The transform of a biquaternion-coefficient operator multiplies the transform of the function by an element of the algebra at each frequency, and the element is the symbol read at the algebra-valued frequency $-2\pi\omega\tilde{Ζ}$, with the sign of the transpose because the kernel sits on the left. Where that element is a unit the transform is inverted by left multiplication by its inverse; where it is not, the transform of a solution is confined to the frequency set and, at each point of it, to the kernel of left multiplication, a real four-plane.
 
 The rank of left multiplication takes three values: eight on the units, four on the null elements away from the origin, and zero at the origin. At a null element the kernel is the right annihilator, described as the matrices whose columns lie in a fixed line, and the cokernel is dual to the left annihilator, described as the matrices whose rows annihilate the image; both have real dimension four, and the two annihilators meet in a complex line. Below four the rank falls only at the origin.
 
@@ -261,19 +261,19 @@ Microlocally the same data reads as the inclusion of the wave front set in the c
 | $i$ | The central scalar imaginary |
 | $\tilde Q$ | An element of $\mathbb{B}$ |
 | $N(\tilde Q)$ | The norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, central and complex-valued |
-| $\rho$ | A pure root of $-e_t$, fixed once |
+| $\tilde{Ζ}$ | A pure root of $1$, fixed once, $\tilde{Ζ}^2=e_t$ |
 | $a_\alpha$ | The coefficient of $\partial^\alpha$ in $P(D)$, an element of $\mathbb{B}$ |
-| $W(t,\omega)$ | The kernel $\exp(-2\pi\rho\omega t)$ |
+| $W(t,\omega)$ | The kernel $\exp(-2\pi i\tilde{Ζ}\omega t)$ |
 | $f$, $g$ | A function and the right-hand side $P(D)f$, both $\mathbb{B}$-valued |
 | $F(\omega)$, $G(\omega)$ | Their transforms |
 | $\omega$ | The frequency, a point of $\mathbb{R}^n$ |
 | $n$ | The number of variables |
-| $\zeta$ | The algebra-valued frequency $\zeta=2\pi\omega\rho i$ |
+| $\zeta$ | The algebra-valued frequency $\zeta=-2\pi\omega\tilde{Ζ}$ |
 | $P(D)$ | A constant-coefficient operator $\sum a_\alpha\partial^\alpha$ with $a_\alpha\in\mathbb{B}$ |
 | $P^t(D)$ | Its transpose $\sum(-1)^{\lvert\alpha\rvert}a_\alpha\partial^\alpha$ |
 | $m$ | The order of $P$ |
 | $\sigma_P(\zeta)$ | The symbol $\sum a_\alpha(i\zeta)^\alpha$ |
-| $\Sigma_P(\omega)$ | The eigenvalue $\sum a_\alpha\prod_k(2\pi\rho\omega_k)^{\alpha_k}$ |
+| $\Sigma_P(\omega)$ | The eigenvalue $\sum a_\alpha\prod_k(2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}$ |
 | $Z(P)$ | The zero set $\{\zeta\in\mathbb{R}^n:\sigma_P(\zeta)\text{ is not a unit}\}$ |
 | $\Omega(P)$ | The frequency set $\{\omega:N(\Sigma_P(\omega))=0\}$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | Left and right multiplication by $\tilde Q$ |
@@ -294,7 +294,7 @@ Microlocally the same data reads as the inclusion of the wave front set in the c
 ## Further Reading
 
 - *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*, for the symbol, the block determinant $\lvert N\rvert^4$, the five cases of root and multiplicity, and the null cone with its linear subspaces; this article takes those objects and asks where and how much.
-- *Biquaternion Continuous Harmonic Analysis*, for the kernel $W(t,\omega)$, the one-unit and two-unit transforms, the closed form of the kernel and the condition $\rho^2=-e_t$.
+- *Biquaternion Continuous Harmonic Analysis*, for the kernel $W(t,\omega)$, the one-unit and two-unit transforms, the closed form of the kernel and the condition $\tilde{Ζ}^2=e_t$.
 - *The Fourier Transform and the Symbol of a Differential Operator*, for the solvability at one frequency and the determinant of the regular representation, which are the two inputs of the eigenvalue identity.
 - *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, for what the frequency set does to the inverse when it is a set of codimension two and no contour can be closed.
 - *Biquaternion Fourier Inversion on the Degenerate Set*, for the case treated here as the degenerate norm, where the symbol is null at every frequency and the inversion must go through a generalised inverse.

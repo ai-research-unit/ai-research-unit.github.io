@@ -66,7 +66,7 @@ $$
 
 The substitution is forced by the transform, which converts $\partial_j$ into the factor $i\zeta_j$; it is a change of variable in the argument and not a second definition. When $A$ is written as a set of real matrices of size $d$, the same substitution turns the polynomial into a matrix polynomial, and everything below is a statement about that matrix.
 
-**The factor $2\pi$.** The harmonic analysis articles of the corpus write the transform with $2\pi$ in the exponential and a root of $-1$ carried by an element of the algebra, so that the multiplier of the gradient reads $2\pi\rho\omega$, with $\rho$ a root of $-1$ carried by the algebra. This article absorbs the $2\pi$ into $\zeta$ and writes the root as the scalar $i$, which the complexified algebra $A_{\mathbb{C}}$ always contains. The two conventions differ by the rescaling $\zeta=2\pi\omega$, and no result depends on it.
+**The factor $2\pi$.** The harmonic analysis articles of the corpus write the transform with $2\pi$ in the exponential, with the square carried by a root of $1$ in the algebra and the sign by the scalar $i$, so that the multiplier of the gradient reads $2\pi i\tilde{Ζ}\omega$ with $\tilde{Ζ}^{2}=e_t$. This article absorbs both into $\zeta$ and writes the root as the scalar $i$, which the complexified algebra $A_{\mathbb{C}}$ always contains. The two conventions differ by the substitution $\zeta=-2\pi\tilde{Ζ}\omega$, and no result depends on it.
 
 **Proposition (the symbol of a derivative).** The symbol of $\partial_j$ is $i\zeta_j\,1$, the symbol of a constant coefficient $a$ is $a$, and the symbol of a sum is the sum of the symbols. The correspondence $P\mapsto\sigma_P$ is one to one.
 

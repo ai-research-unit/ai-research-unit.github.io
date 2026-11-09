@@ -6940,10 +6940,10 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <!-- the two quadratic forms carried by one algebra; which of them is definite where; the gap of one derivative in the bilinear form. mathematics only. -->
 
 <a href="articles_maths/three-kernel-placements-of-the-biquaternion-fourier-transform.html">The Three Kernel Placements of the Biquaternion Fourier Transform</a>
-<!-- the left, the right and the two-sided kernel; the relations between the three, the two-sided one as the intersection of the other two, and the case in which all three coincide. mathematics only. -->
+<!-- the left, the right and the two-sided kernel; the relations between the three, the two-sided one as the intersection of their invariance groups, and the two signs of the second root, one fixing a part and doubling the frequency of the other. mathematics only. -->
 
 <a href="articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html">Biquaternion Fourier Inversion on the Degenerate Set: Peirce Coordinates and the Exponential</a>
-<!-- the inversion in Peirce coordinates; the route through the exponential; inversion without a unit. mathematics only. -->
+<!-- the inversion in Peirce coordinates; the route through the exponential; inversion where the symbol is not a unit. mathematics only. -->
 
 <a href="articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html">The Biquaternion Algebra and the Krein–von Neumann Property</a>
 <!-- whether the biquaternion algebra is a Krein–von Neumann algebra for its own Krein form: the theorem $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ that the indefinite adjoint of a left multiplication is a right one; the corollary that the left regular image is adjoint-closed only on the centre $\mathbb{C}e_0$, so it is neither a Krein–von Neumann algebra nor a Krein algebra, the adjoint axiom holding for no involution of the algebra; the Krein–von Neumann envelope $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})=\mathcal{L}(\mathbb{B})$ of complex dimension $16$ against the linear span of the left and right multiplications, of complex dimension $7$; the witness that the $J$-bicommutant theorem needs the hypothesis $J\in\mathcal{M}$; the definite reading $J=\mathrm{id}$ in which the image is the ordinary von Neumann algebra $M_2(\mathbb{C})$; and the twisted fundamental symmetries $J'=R_c$ with $c^{*}=c$, $c^{2}=e_0$, which give the property for an exotic form and an incompatible symmetry. -->

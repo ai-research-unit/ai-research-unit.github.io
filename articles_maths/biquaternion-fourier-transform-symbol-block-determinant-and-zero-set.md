@@ -14,9 +14,9 @@ and the scalar imaginary $i$ is central. Two forms of $\tilde Q$ are used throug
 
 **What is proved.** That the algebra is the complex matrix algebra of $2\times2$ matrices and that the norm is the determinant there (§*The Algebra and Its Model*). That the symbol of an operator is an element which is not central, so that the equation it defines is complex and not real (§*The Symbol in the Biquaternion Algebra*). That left multiplication by an element is a $4\times4$ complex matrix $\Lambda(\tilde Q)$ and a real $8\times8$ matrix in two $4\times4$ blocks (§*The Block Matrix of Left Multiplication*). That the block determinant is $\lvert N(\tilde Q)\rvert^{4}$, and why the modulus is not decoration (§*The Block Determinant*). That the two roots of the characteristic polynomial are $Q_t\pm iB$, and that the roots, their multiplicities and the rank are given by five cases (§*The Two Roots and the Five Cases*). That the zero set is cut by one complex equation, that is two real equations, that it is a cone of real codimension two which contains real linear subspaces of dimension four and is not one, and that its nonzero points are exactly the zero divisors (§*The Zero Set: One Complex Equation, Two Real Equations* and §*The Zero Divisors*).
 
-**What is quoted.** The general theory of the symbol, of solvability at one frequency and of the determinant of the regular representation is *The Fourier Transform and the Symbol of a Differential Operator*, and two of its results are used: that at the frequency $\zeta$ the equation is solvable for every right-hand side exactly when $\sigma_P(\zeta)$ is a unit, and that the kernel and the cokernel of $L_a$ have dimension $d-\operatorname{rank}L_a$. The product, the conjugation and the two forms are *Product and Form Conventions*; the matrix model with $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ is *Matrix Representations Conventions*; the algebra itself is *The Biquaternion Algebra*. The kernel $W(t,\omega)=\exp(-2\pi\rho\omega t)$ and the condition $\rho^2=-e_t$ are *Biquaternion Continuous Harmonic Analysis*. The classification of the roots of $-e_t$ is quoted there and not proved here.
+**What is quoted.** The general theory of the symbol, of solvability at one frequency and of the determinant of the regular representation is *The Fourier Transform and the Symbol of a Differential Operator*, and two of its results are used: that at the frequency $\zeta$ the equation is solvable for every right-hand side exactly when $\sigma_P(\zeta)$ is a unit, and that the kernel and the cokernel of $L_a$ have dimension $d-\operatorname{rank}L_a$. The product, the conjugation and the two forms are *Product and Form Conventions*; the matrix model with $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ is *Matrix Representations Conventions*; the algebra itself is *The Biquaternion Algebra*. The kernel $W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)$ and the condition $\tilde{Ζ}^2=e_t$ are *Biquaternion Continuous Harmonic Analysis*. The classification of the roots of $e_t$ is quoted there and not proved here.
 
-**The root.** The transform of the ladder uses a root $\rho$ of $-e_t$ that is fixed once and for all, and this article takes it **pure**, so that $\rho$ has zero scalar part and $(\rho,\rho)=1$, the value forced by $\rho^2=-e_t$. The central roots $\pm i$ are excluded, and not by taste: a spectrally regular element supplies the pure root $\rho=\vec Q/B$ and never a central one (§*The Root and the Frequency*). The symbol of this article is nevertheless defined with the central $i$, which is the convention of *The Fourier Transform and the Symbol of a Differential Operator*, and §*The Root and the Frequency* says exactly how the two readings are related, and which of the statements below survive the change of root.
+**The root.** The transform of the ladder uses a root $\tilde{Ζ}$ of $1$, fixed once and for all, and the kernel is $\exp(-2\pi i\tilde{Ζ}\omega t)$: the element carries the square $e_t$, the scalar $i$ beside it carries the sign. This article takes the root **pure**, so that $\tilde{Ζ}$ has zero scalar part and $(\tilde{Ζ},\tilde{Ζ})=-1$, the value forced by $\tilde{Ζ}^2=e_t$. The central pair $\pm e_t$ is excluded, and not by taste: a spectrally regular element supplies the pure root $\tilde{Ζ}=-i\vec Q/B$ and never a central one (§*The Root and the Frequency*). The symbol of this article is nevertheless defined with the central $i$, which is the convention of *The Fourier Transform and the Symbol of a Differential Operator*, and §*The Root and the Frequency* says exactly how the two readings are related, and which of the statements below survive the change of root.
 
 **Boundaries.** The inversion of the transform, the poles of the inverse and the growth of its tails are *The Inverse Fourier Transform of a Symbol* and *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*; the support of the transformed object, the rank of left multiplication as a function of the frequency, and the degenerate norm are the subject of the next article of the ladder; the three placements of the kernel are *The Three Kernel Placements of the Biquaternion Fourier Transform*. This article stops at the algebraic objects: the symbol, the block, its determinant, and the set where the determinant vanishes.
 
@@ -124,22 +124,28 @@ The real part and the imaginary part are independent polynomials here, and their
 
 ### The Root and the Frequency
 
-**The kernel and the frequency it carries.** The transform of the ladder is built on $W(t,\omega)=\exp(-2\pi\rho\omega t)$ with $\rho^2=-e_t$, and the derivative of the kernel is $\partial_tW=-2\pi\rho\omega W$. So $D^kW=(-2\pi\rho\omega)^kW$ and, for a one-variable operator,
+**The kernel and the frequency it carries.** The transform of the ladder is built on $W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)$ with $\tilde{Ζ}^2=e_t$, and the derivative of the kernel is $\partial_tW=-2\pi i\tilde{Ζ}\omega W$. So $D^kW=(-2\pi i\tilde{Ζ}\omega)^kW$ and, for a one-variable operator,
 
 $$
-P(D)W(\cdot,\omega)=\sigma_P(\zeta)\,W(\cdot,\omega)\qquad\text{at}\qquad\zeta=2\pi\omega\rho i .
+P(D)W(\cdot,\omega)=\sigma_P(\zeta)\,W(\cdot,\omega)\qquad\text{at}\qquad\zeta=-2\pi\omega\tilde{Ζ} .
 $$
 
-**Remark (the frequency is an element of the algebra).** For a pure root the element $2\pi\omega\rho i$ has a nonzero vector part, so **the symbol of the transform is read at an algebra-valued frequency and not at a real one**. Only for the central root $\rho=i$ does the substitution collapse, $\zeta=2\pi\omega i^2=-2\pi\omega\in\mathbb{R}$, and only then is the frequency set of the transform the real zero set of this article. The real-frequency theory is therefore the theory of the central root, and the pure roots are a different problem with the same algebra.
+**Remark (the frequency is an element of the algebra).** For a pure root the frequency $-2\pi\omega\tilde{Ζ}$ is a pure biquaternion with a nonzero vector part, so **the symbol of the transform is read at an algebra-valued frequency and not at a real one**, and it is the element $i\zeta$ that is real, not $\zeta$. Only for the central root $\tilde{Ζ}=\pm e_t$ does the substitution collapse to a real number, $\zeta=\mp2\pi\omega\in\mathbb{R}$, and only then is the frequency set of the transform the real zero set of this article. The real-frequency theory is therefore the theory of the central root, and the pure roots are a different problem with the same algebra.
 
-**Proposition (a regular element supplies a pure root).** Let $\tilde Q$ have $B^2\ne0$ and let $B$ be a root of $B^2$. Then $\rho=\vec Q/B$ is pure, $\rho^2=-e_t$, and $\rho$ is not central.
+**Proposition (a regular element supplies a pure root).** Let $\tilde Q$ have $B^2\ne0$ and let $B$ be a root of $B^2$. Then $\tilde{Ζ}=-i\vec Q/B$ is pure, $\tilde{Ζ}^2=e_t$, and $\tilde{Ζ}$ is not central.
 
-*Proof.* The element $\vec Q/B$ is pure because $\vec Q$ is, and it is not central because a central element has zero vector part. Its product with itself is $\vec Q^2/B^2$, and $\vec Q^2=-(\vec Q,\vec Q)e_t=-B^2e_t$ by the quadratic identity applied to the pure element $\vec Q$, so $\rho^2=-e_t$.
+*Proof.* The element $\vec Q/B$ is pure because $\vec Q$ is, and $\tilde{Ζ}$ is a complex multiple of it, so $\tilde{Ζ}$ is pure; it is not central because a central element has zero vector part. Its square is $(-i)^2\vec Q^2/B^2$, and $\vec Q^2=-(\vec Q,\vec Q)e_t=-B^2e_t$ by the quadratic identity applied to the pure element $\vec Q$, so $\tilde{Ζ}^2=(-1)(-1)e_t=e_t$.
 
-**Remark (the sign of the norm depends on the root, and the determinant does not).** For the gradient, the central root gives $N(\sigma_\nabla(\zeta))=-s$, and a pure root gives $N=+s$: with $\rho=\vec e_x$ the symbol is $\zeta_0\vec e_x-\zeta_1e_t+\zeta_2\vec e_z-\zeta_3\vec e_y$, whose norm is $s$. The zero set is the same point in both readings, and the determinant is the same function,
+**Remark (the sign of the norm depends on the root, and the determinant does not).** Write $\lVert\omega\rVert^2=\omega_0^2+\omega_1^2+\omega_2^2+\omega_3^2$ for the frequency vector of the transform. The gradient symbol at the frequency the transform supplies is $\sigma_\nabla=-2\pi i\tilde{Ζ}\vec\omega$, and its norm is
 
 $$
-\det L_{\sigma_\nabla(\zeta)}=\lvert N(\sigma_\nabla(\zeta))\rvert^{4}=s^4 ,
+N(\sigma_\nabla)=-4\pi^2\lVert\omega\rVert^2 \ \text{at the central root},\qquad N(\sigma_\nabla)=+4\pi^2\lVert\omega\rVert^2 \ \text{at a pure root},
+$$
+
+the sign being $N(\tilde{Ζ})=\pm1$. The zero set is the same point in both readings, and the determinant is the same function,
+
+$$
+\det L_{\sigma_\nabla}= \lvert N(\sigma_\nabla)\rvert^{4}=(4\pi^2\lVert\omega\rVert^2)^4 ,
 $$
 
 because the fourth power absorbs the sign. **The root moves the sign of the norm and cannot move the determinant**, and that is the first indication that the determinant, and not the norm, is the invariant object of the theory.
@@ -342,6 +348,7 @@ The spectrum has two roots, $Q_t\pm iB$, and the five cases separate what the ro
 | $\Lambda(\tilde Q)$ | The matrix of $L_{\tilde Q}$ in the complex basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 | $A$, $C$ (in §*The Real Block*) | The real and imaginary parts of $\Lambda(\tilde Q)$ |
 | $\zeta$ | The frequency, a point of $\mathbb{R}^n$; $n$ the number of variables |
+| $-2\pi\omega\tilde{Ζ}$ | The algebra-valued frequency the transform supplies |
 | $P(D)$ | A constant-coefficient operator $\sum_{\lvert\alpha\rvert\le m}a_\alpha\partial^\alpha$ with $a_\alpha\in\mathbb{B}$ |
 | $\sigma_P(\zeta)$ | The symbol $\sum a_\alpha(i\zeta)^\alpha$, an element of $\mathbb{B}$ |
 | $m$ | The order of $P$ |
@@ -349,8 +356,8 @@ The spectrum has two roots, $Q_t\pm iB$, and the five cases separate what the ro
 | $a(\zeta)$, $b(\zeta)$ | The real and imaginary parts of $N(\sigma_P(\zeta))$ |
 | $\lambda_\pm$ | The two roots $Q_t\pm iB$ of the characteristic polynomial |
 | $s$ | The Euclidean quadratic form $\zeta_0^2+\zeta_1^2+\zeta_2^2+\zeta_3^2$ |
-| $\rho$ | A root of $-e_t$, taken pure and fixed once |
-| $W(t,\omega)$ | The kernel $\exp(-2\pi\rho\omega t)$, with $\rho^2=-e_t$ |
+| $\tilde{Ζ}$ | A root of $1$, taken pure and fixed once, $\tilde{Ζ}^2=e_t$ |
+| $W(t,\omega)$ | The kernel $\exp(-2\pi i\tilde{Ζ}\omega t)$ |
 | $E_{ij}$ | The matrix units of $M_2(\mathbb{C})$ |
 
 ## Further Reading
@@ -359,5 +366,5 @@ The spectrum has two roots, $Q_t\pm iB$, and the five cases separate what the ro
 - *The Biquaternion Algebra*, for the units, the product, the conjugations and the two forms, and for the proofs of the identities used in §*The Algebra and Its Model*.
 - *Product and Form Conventions*, for the twelve products and the four forms, the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and the convention on the cross product that fixes the sign of the products of the units.
 - *Matrix Representations Conventions*, for the isomorphism onto $M_2(\mathbb{C})$, the assignment $\mathsf M_2(\vec e_k)=-i\sigma_k$, and the identity $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
-- *Biquaternion Continuous Harmonic Analysis*, for the kernel $W(t,\omega)$, the condition $\rho^2=-e_t$, the transform pair, and the gradient whose symbol is computed here.
+- *Biquaternion Continuous Harmonic Analysis*, for the kernel $W(t,\omega)$, the condition $\tilde{Ζ}^2=e_t$, the classification of the roots of $1$, the transform pair, and the gradient whose symbol is computed here.
 - *The Inverse Fourier Transform of a Symbol*, for the pole order of the inverse against the multiplicity of a factor of the determinant, which is where the repeated factors of §*The Block Determinant* become the growth of an inverse.

@@ -26,6 +26,8 @@ $$
 \tilde\Pi_1=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad \tilde\Pi_2=\tfrac12\bigl(e_t-i\vec e_z\bigr),\qquad \vec\Upsilon_{12}=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad \vec\Upsilon_{21}=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr).
 $$
 
+**The pair is the Peirce pair of a root of one.** With $\tilde{Ζ}=i\vec e_z$, a pure root of $1$ in the sense of *Biquaternion Continuous Harmonic Analysis*, the two idempotents are $\tilde\Pi_1=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_2=\tfrac12(e_t-\tilde{Ζ})$, so the frame below is the frame $\Pi_\pm(\tilde{Ζ})$ of *Special Element and Peirce Conventions*, at one particular root; the root is fixed here once, and every formula below is read at that root.
+
 **The two mixed units are the $\vec\Upsilon_\pm$ of *Special Element and Peirce Conventions***, §*The Biquaternion Peirce Convention*, where the assignment of a sign to an index is not fixed. **The assignment above is the one that makes the matrix-unit identities hold**, and it is the reverse of the alphabetical reading: a computation, not a convention, checked below.
 
 **Proposition (the four units are matrix units).** With $E_{11}=\tilde\Pi_1$, $E_{12}=\vec\Upsilon_{12}$, $E_{21}=\vec\Upsilon_{21}$ and $E_{22}=\tilde\Pi_2$,
@@ -273,15 +275,15 @@ $$
 
 **The case that is genuinely obstructed is $N(\sigma_P)\equiv0$.** Then the symbol is null at every frequency and the pointwise system is singular everywhere; the set is no longer of measure zero, and the range is a proper subspace at every point.
 
-**Theorem (a fixed null coefficient).** Let $S\neq0$ be null and let $\sigma_P(\zeta)=\rho(\zeta)S$ with $\rho$ a scalar polynomial that vanishes only at $\zeta=0$. Then $P(D)f=g$ has a solution exactly when
+**Theorem (a fixed null coefficient).** Let $S\neq0$ be null and let $\sigma_P(\zeta)=\mu(\zeta)S$ with $\mu$ a scalar polynomial that vanishes only at $\zeta=0$. Then $P(D)f=g$ has a solution exactly when
 
 $$
 SS^{+}g=g ,
 $$
 
-that is, exactly when $g(x)$ lies in the fixed real subspace $\mathrm{im}L_S$ for almost every $x$; and the solution of least norm is $f=\mathcal F^{-1}\bigl[\rho^{+}S^{+}\hat g\bigr]$.
+that is, exactly when $g(x)$ lies in the fixed real subspace $\mathrm{im}L_S$ for almost every $x$; and the solution of least norm is $f=\mathcal F^{-1}\bigl[\mu^{+}S^{+}\hat g\bigr]$.
 
-*Proof.* The pointwise system reads $\rho(\zeta)\Sigma(S)\hat F=\hat G$. For $\zeta\neq0$ the scalar is nonzero, so solvability is $\hat G\in\mathrm{im}L_{\Sigma(S)}$, which is equivalent to $\Sigma(S)\Sigma(S)^{+}\hat G=\hat G$ because the latter is the orthogonal projection onto the image. Both sides are constant in $\zeta$ except through $\hat G$, so the condition is a condition on $g$ alone, and it is exactly $SS^{+}g=g$. The least-norm solution at each frequency is $\rho^{+}\Sigma(S)^{+}\hat G$, and $\rho^{+}$ is $1/\rho$ off the origin and $0$ at the origin.
+*Proof.* The pointwise system reads $\mu(\zeta)\Sigma(S)\hat F=\hat G$. For $\zeta\neq0$ the scalar is nonzero, so solvability is $\hat G\in\mathrm{im}L_{\Sigma(S)}$, which is equivalent to $\Sigma(S)\Sigma(S)^{+}\hat G=\hat G$ because the latter is the orthogonal projection onto the image. Both sides are constant in $\zeta$ except through $\hat G$, so the condition is a condition on $g$ alone, and it is exactly $SS^{+}g=g$. The least-norm solution at each frequency is $\mu^{+}\Sigma(S)^{+}\hat G$, and $\mu^{+}$ is $1/\mu$ off the origin and $0$ at the origin.
 
 **Example (the nilpotent family).** Let $N_0=\vec e_x+i\vec e_y$, which is nilpotent, and $P(D)=N_0\Delta$. Its symbol is $\sigma_P(\zeta)=-\lvert\zeta\rvert^{2}N_0$, and $N(\sigma_P)=-\lvert\zeta\rvert^{2}N(N_0)=0$ at every $\zeta$. In coordinates $N_0$ is the matrix with a single entry, so $\mathrm{im}L_{N_0}$ is the set of matrices whose columns lie in one fixed complex line, a real four-dimensional subspace; and the solvability condition $N_0N_0^{+}g=g$ reads $N_0^{*}g=0$ because $N_0^{+}$ is a nonzero multiple of $N_0^{*}$.
 
@@ -295,7 +297,7 @@ $$
 
 ### What Remains Open
 
-**The open case, stated precisely.** Let $\sigma_P$ be a polynomial symbol with $N(\sigma_P)\equiv0$ and with the null element $\sigma_P(\zeta)$ **not** of the form $\rho(\zeta)S$ for a fixed null $S$. Then the range at each frequency is a four-dimensional subspace depending on $\zeta$, and the solvability condition is that $\hat g(\zeta)$ lie in that subspace for almost every $\zeta$. **The following are open here and are labelled as such.**
+**The open case, stated precisely.** Let $\sigma_P$ be a polynomial symbol with $N(\sigma_P)\equiv0$ and with the null element $\sigma_P(\zeta)$ **not** of the form $\mu(\zeta)S$ for a fixed null $S$. Then the range at each frequency is a four-dimensional subspace depending on $\zeta$, and the solvability condition is that $\hat g(\zeta)$ lie in that subspace for almost every $\zeta$. **The following are open here and are labelled as such.**
 
 - Whether the pointwise conditions are simultaneously satisfiable by the transform of a single function, that is, whether the range of $P(D)$ is closed in $L^2$.
 - Whether the spectral projection onto the range varies measurably in $\zeta$ and whether the resulting family defines a bounded projection on $L^2$.
@@ -358,7 +360,7 @@ When the determinant vanishes identically the obstruction is real: the range is 
 | $\sigma^{D}$ | The Drazin inverse of the element $\sigma$ |
 | $T^{+}$, $T^{D}$ | The Moore–Penrose and Drazin inverses of a linear map or a matrix |
 | $S$, $N_0$ | A fixed nonzero null element used as a model coefficient |
-| $\rho$ | A scalar polynomial multiplier in the model families |
+| $\mu$ | A scalar polynomial multiplier in the model families |
 | $B$ | The value with $B^2=S_x^2+S_y^2+S_z^2$ |
 | $\vec U$ | The axis $\vec S/B$ when $B^2\neq0$ |
 | $\mathbb{H}$ | The real quaternion algebra |

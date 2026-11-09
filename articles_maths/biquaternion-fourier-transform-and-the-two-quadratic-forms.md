@@ -14,7 +14,7 @@ The first is real and positive definite on the eight real coordinates; the secon
 
 **What is proved.** That $H$ is positive definite and is the real part of a trace form (§*The Definite Form*). That $N$ is complex-valued and central, that its realified signature is $(4,4)$, and that its zero set is the union of the origin with the cone of zero divisors, of real dimension six in eight (§*The Multiplicative Form*). That no form is both definite and multiplicative (§*Two Forms, Two Roles*). That the polarised form of $N$ is the quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, so that the two *bilinear* forms are $\mathrm{Re}\,H$ and $\langle\cdot,\cdot\rangle_{\natural}$ and not $H$ and $N$ (§*The Polarised Norm Is the Quaternionic Form*). That one derivative of a homogeneous symbol of degree $m$ is the polarised form at one slot, multiplied by $m$, so the derivative determines the form exactly when $m=2$ (§*The Gap of One Derivative*). And that $\lvert N\rvert\le H$ always, with equality exactly when the matrix model has equal singular values, so the ratio ranges over the closed interval from $0$ to $1$ and both ends are attained (§*The Two Forms in the Transform*).
 
-**The trap, stated at once.** The two forms do not live on the same object. $H$ and $N$ are functions on the algebra; $\sigma_P$ is a function on the frequency space $\mathbb{R}^n$; and the only bridge between them is the substitution of a frequency into the algebra, which needs the root $\rho$ and the convention of the transform. **A formula that polarises the symbol on one side and composes forms on the other will be wrong by a factor, and sometimes by more than a factor**, and §*The Composition of Forms* computes exactly how much.
+**The trap, stated at once.** The two forms do not live on the same object. $H$ and $N$ are functions on the algebra; $\sigma_P$ is a function on the frequency space $\mathbb{R}^n$; and the only bridge between them is the substitution of a frequency into the algebra, which needs the root $\tilde{Ζ}$ of $1$ and the convention of the transform. **A formula that polarises the symbol on one side and composes forms on the other will be wrong by a factor, and sometimes by more than a factor**, and §*The Composition of Forms* computes exactly how much.
 
 **Boundaries.** The symbol, its zero set and the block determinant are *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*; the rank of the symbol on the null set is *The Biquaternion Fourier Transform: Support and Rank*; the reciprocal and its poles are *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*; the general theory of the four brackets and their norms is *Product and Form Conventions* and *Norm and Unitary Conventions*. This article assumes all of them and adds only the comparison of the two forms and the polarisation of the symbol.
 
@@ -113,11 +113,21 @@ both nondegenerate forms of signature $(4,4)$; the two real equations $\operator
 
 ### The Definite Form on Subspaces
 
-**Proposition (the norm on three real planes).** The restriction of $N$ to a real two-plane is positive definite on $\Pi=\mathrm{span}_{\mathbb{R}}\{e_t,\rho\}$, negative definite on $\Pi=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y\}$, and of real signature $(1,1)$ on $\Pi=\mathrm{span}_{\mathbb{R}}\{\vec e_x,i\vec e_x\}$; **so a real two-plane can carry a definite norm, a definite negative norm, or neither.**
+**Proposition (the norm on five real planes).** Let $\tilde{Ζ}$ be a pure root of $1$, so that $\tilde{Ζ}^{2}=e_t$ and $(\tilde{Ζ},\tilde{Ζ})=-1$. On the real two-planes listed the restriction of $N$ takes the following values and signatures.
 
-*Proof.* On the first plane, $\tilde Q=ae_t+b\rho$ with real $a,b$ gives $N=a^{2}+b^{2}$ because $\rho^{2}=-e_t$. On the second, $\tilde Q=a\vec e_x+b\vec e_y$ gives $N=-a^{2}-b^{2}$. On the third, $\tilde Q=(q+iq')\vec e_x$ gives $N=-(q+iq')^{2}=-(q^{2}-q'^{2})-2iqq'$, which is not real, and its real part $q'^{2}-q^{2}$ has signature $(1,1)$.
+| Plane | Element | $N$ | Realified signature |
+|---|---|---|---|
+| $\mathrm{span}_{\mathbb{R}}\{e_t,\tilde{Ζ}\}$ | $ae_t+b\tilde{Ζ}$ | $a^{2}-b^{2}$ | $(1,1)$ |
+| $\mathrm{span}_{\mathbb{R}}\{e_t,i\tilde{Ζ}\}$ | $ae_t+b(i\tilde{Ζ})$ | $a^{2}+b^{2}$ | $(2,0)$, definite |
+| $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y\}$ | $a\vec e_x+b\vec e_y$ | $a^{2}+b^{2}$ | $(2,0)$, definite |
+| $\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y\}$ | $a(i\vec e_x)+b(i\vec e_y)$ | $-a^{2}-b^{2}$ | $(0,2)$, negative definite |
+| $\mathrm{span}_{\mathbb{R}}\{\vec e_x,i\vec e_x\}$ | $(q+iq')\vec e_x$ | $(q^{2}-q'^{2})+2iqq'$ | $(1,1)$ on the real part |
 
-**Remark (why the first plane behaves like the complex numbers).** On $\mathrm{span}_{\mathbb{R}}\{e_t,\rho\}$ the norm is $a^{2}+b^{2}$ and the product is the product of $\mathbb{C}$, with $\rho$ playing the role of $i$. **That is the plane in which the one-variable residue theory of *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails* is carried out**, and the definiteness of $N$ there is why a pole in that plane can be isolated.
+**So a real two-plane can carry a positive definite norm, a negative definite norm, or neither**, and which of the three it carries is decided by the signs of the four coefficients in $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and not by the sign of a square of a unit.
+
+*Proof.* Each entry substitutes the coordinate vector into $N=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. On the first plane the scalar coordinate is $a$, the $z$ coordinate is $b$ and the other two are zero, so $N=a^{2}-b^{2}$ by $\tilde{Ζ}^{2}=e_t$; the split form has signature $(1,1)$. On the second, $(i\tilde{Ζ})^{2}=-e_t$ gives $N=a^{2}+b^{2}$. On the third, $Q_x=a$ and $Q_y=b$, so $N=a^{2}+b^{2}$: **two pure units of the algebra span a plane on which the norm is positive definite, because the sign of the square of a unit and the sign of its norm are different signs.** On the fourth, $Q_x=ia$ and $Q_y=ib$, so $Q_x^{2}=-a^{2}$ and $Q_y^{2}=-b^{2}$, giving $-a^{2}-b^{2}$. On the fifth, $Q_x=q+iq'$ and $N=(q+iq')^{2}=(q^{2}-q'^{2})+2iqq'$, whose real part has signature $(1,1)$.
+
+**Remark (which plane is the copy of the complex numbers, and which is the plane of the transform).** On $\mathrm{span}_{\mathbb{R}}\{e_t,i\tilde{Ζ}\}$ the norm is $a^{2}+b^{2}$ and the product is the product of $\mathbb{C}$, with $i\tilde{Ζ}$ playing the role of $i$; **the definiteness of $N$ belongs to the root of $-1$ attached to the root of $1$, and not to the root itself**. What the transform needs is not that plane but the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\tilde{Ζ}$ over which the symbol is written in *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, and there the norm is the product $\sigma_+\sigma_-$ of the two Peirce scalars, which is indefinite. **The pole is isolated in that article because the plane splits into two ideals, each a copy of $\mathbb{C}$, and each scalar pole is isolated there** — by the factorisation, not by definiteness.
 
 **Proposition (a real plane on which the norm vanishes identically).** Let $q\in\mathcal N$ with $q\ne0$. Then the real two-plane $\mathbb{C}q=\{aq+ibq:a,b\in\mathbb{R}\}$ lies in the null set, and $N$ vanishes identically on it.
 
@@ -139,15 +149,15 @@ both nondegenerate forms of signature $(4,4)$; the two real equations $\operator
 
 **Remark (two different domains).** $N$ and $H$ are functions on $\mathbb{B}$, an eight-dimensional real algebra. The symbol $\sigma_P$ is a function on $\mathbb{R}^n$, the frequency space, with values in $\mathbb{B}$. **They are not the same kind of object even when their formulas look identical**, and the biquaternion case makes the difference visible because the frequency is a real vector of dimension four while the algebra is complex of dimension four.
 
-**Definition (the substitution).** Let $\rho$ be a pure root of $-e_t$. The **frequency substitution** is the real-linear injection
+**Definition (the substitution).** Let $\tilde{Ζ}$ be a pure root of $1$. The **frequency substitution** is the real-linear injection
 
 $$
-\zeta:\mathbb{R}^{n}\to\mathbb{B}^{n},\qquad \omega\mapsto\zeta(\omega)=-2\pi i\,\rho\,\omega ,
+\zeta:\mathbb{R}^{n}\to\mathbb{B}^{n},\qquad \omega\mapsto\zeta(\omega)=-2\pi\,\tilde{Ζ}\,\omega ,
 $$
 
-read componentwise, so that $\zeta_k(\omega)=-2\pi i\rho\omega_k$, and its image is the plane $(-2\pi i\rho\mathbb{R})^n$. It is the substitution that produces the eigenvalue: since $i\zeta_k(\omega)=2\pi\rho\omega_k$, the symbol read at $\zeta(\omega)$ is $\Sigma_P(\omega)$. **The two functions $\sigma_P$ on the algebra and $\Sigma_P$ on the frequency space are the same polynomial read through this map and no other.**
+read componentwise, so that $\zeta_k(\omega)=-2\pi\tilde{Ζ}\omega_k$, and its image is the plane $(-2\pi\tilde{Ζ}\mathbb{R})^n$. It is the substitution that produces the eigenvalue: since $i\zeta_k(\omega)=-2\pi i\tilde{Ζ}\omega_k$, the symbol read at $\zeta(\omega)$ is $\Sigma_P(\omega)$. **The two functions $\sigma_P$ on the algebra and $\Sigma_P$ on the frequency space are the same polynomial read through this map and no other.**
 
-**Proposition (the substitution composes the two forms into forms on the frequency space).** With $\Sigma_P(\omega)=\sigma_P(\zeta(\omega))=\sum_\alpha a_\alpha\prod_k(2\pi\rho\omega_k)^{\alpha_k}$ the eigenvalue of the transform, the composites
+**Proposition (the substitution composes the two forms into forms on the frequency space).** With $\Sigma_P(\omega)=\sigma_P(\zeta(\omega))=\sum_\alpha a_\alpha\prod_k(2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}$ the eigenvalue of the transform, the composites
 
 $$
 \omega\mapsto N\bigl(\Sigma_P(\omega)\bigr),\qquad \omega\mapsto H\bigl(\Sigma_P(\omega)\bigr)
@@ -157,7 +167,7 @@ are real quadratic forms on $\mathbb{R}^n$ when $\Sigma_P$ is linear in $\omega$
 
 *Proof.* Each is a composition of a quadratic form with the polynomial map $\Sigma_P$; the degree of the composite is twice the degree of the map, and the map is linear exactly when the operator has order one.
 
-**Example (the gradient, computed).** For $P(D)=e_t\partial_0+\vec e_x\partial_1+\vec e_y\partial_2+\vec e_z\partial_3$ with $\rho=\vec e_x$ the eigenvalue is $\Sigma_\nabla(\omega)=2\pi\sum_k\omega_k\vec e_k\vec e_x$, and the two composites are
+**Example (the gradient, computed).** For $P(D)=e_t\partial_0+\vec e_x\partial_1+\vec e_y\partial_2+\vec e_z\partial_3$ with $\tilde{Ζ}=-i\vec e_x$ the eigenvalue is $\Sigma_\nabla(\omega)=2\pi\sum_k\omega_k\vec e_k\vec e_x$, and the two composites are
 
 $$
 N\bigl(\Sigma_\nabla(\omega)\bigr)=4\pi^{2}\bigl(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2}\bigr),\qquad H\bigl(\Sigma_\nabla(\omega)\bigr)=4\pi^{2}\bigl(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2}\bigr).
@@ -311,7 +321,7 @@ The algebra carries a definite form $H$ and a multiplicative form $N$. The defin
 
 The polarisation of $N$ is the quaternionic bilinear form, so the two bilinear forms of the subject are the real inner product $\mathrm{Re}\,H$ and the complex bilinear $\langle\cdot,\cdot\rangle_{\natural}$ whose diagonal is $N$. The polarisation of a homogeneous symbol of degree $m$ expands along a line with binomial coefficients, and the derivative at one slot is that form with one slot filled and the factor $m$ in front; the derivative therefore determines the polarisation exactly in degree two, and then only up to the factor two, while in higher degree it determines the diagonal and nothing else, by Euler's identity.
 
-The two forms do not live on the same object: $H$ and $N$ are functions on the algebra, the symbol is a function on the frequency space, and the substitution of the frequency into the algebra is a real-linear injection that exists only after a root $\rho$ and a convention are fixed. Polarisation commutes with a linear substitution and not with a quadratic one, and the failure is computed term by term.
+The two forms do not live on the same object: $H$ and $N$ are functions on the algebra, the symbol is a function on the frequency space, and the substitution of the frequency into the algebra is a real-linear injection that exists only after a root $\tilde{Ζ}$ of $1$ and a convention are fixed. Polarisation commutes with a linear substitution and not with a quadratic one, and the failure is computed term by term.
 
 In the transform the two forms answer two questions: $N$ decides whether the equation is solvable at a frequency, and $H$ measures the size of what solves it. The definite form dominates the modulus of the norm, with equality exactly on the elements whose model has equal singular values, and the ratio attains both ends, so no lower bound exists and the cone is where the two forms are farthest apart.
 
@@ -335,9 +345,9 @@ In the transform the two forms answer two questions: $N$ decides whether the equ
 | $\lVert\cdot\rVert$ | The Hilbert–Schmidt norm on $M_2(\mathbb{C})$ |
 | $\sigma_1,\sigma_2$ | The singular values of $\mathsf M(\tilde Q)$ |
 | $\mathcal N$ | The null set $\{N=0\}$ |
-| $\rho$ | A pure root of $-e_t$ |
-| $\zeta(\omega)$ | The frequency substitution $-2\pi i\rho\omega$ |
-| $\Sigma_P(\omega)$ | The eigenvalue $\sum_\alpha a_\alpha\prod_k(2\pi\rho\omega_k)^{\alpha_k}$ |
+| $\tilde{Ζ}$ | A pure root of $1$, with $\tilde{Ζ}^{2}=e_t$ |
+| $\zeta(\omega)$ | The frequency substitution $-2\pi\tilde{Ζ}\omega$ |
+| $\Sigma_P(\omega)$ | The eigenvalue $\sum_\alpha a_\alpha\prod_k(2\pi i\tilde{Ζ}\omega_k)^{\alpha_k}$ |
 | $m$ | The order of the operator, and the degree of its symbol |
 | $n$ | The number of frequency variables |
 | $L$ | A real-linear map $\mathbb{R}^{n}\to\mathbb{B}$ |
@@ -355,6 +365,6 @@ In the transform the two forms answer two questions: $N$ decides whether the equ
 - *Norm and Unitary Conventions*, for the layer tables of the four norms, the realified signatures, and the distinction between norm one and unitary.
 - *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*, for the block determinant $\lvert N\rvert^{4}$, the null cone and the five cases of the symbol; the present article is that article's algebra read one level up.
 - *The Biquaternion Fourier Transform: Support and Rank*, cited here by its leading title because its full title also names the microlocal reading, which this article does not use; for the frequency set, which is the zero set of the composite of $N$ with the symbol, and for the rank of left multiplication that the definite form bounds.
-- *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, for the plane of $e_t$ and $\rho$ on which the norm is positive definite, and for the distance that replaces the lower bound the present article proves cannot exist.
+- *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, for the complex plane of $e_t$ and $\tilde{Ζ}$ split into its two Peirce ideals, and for the distance that replaces the lower bound the present article proves cannot exist.
 - *The Fourier Transform and the Symbol of a Differential Operator*, for the determinant of the regular representation and the order against the degree, which are the two facts that make $N$ and not $H$ the invertibility criterion.
 - *Biquaternion Fourier Inversion on the Degenerate Set*, for the case in which the symbol stays on the cone and the multiplicative form gives nothing at any frequency.
