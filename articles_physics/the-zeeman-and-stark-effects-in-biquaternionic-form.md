@@ -29,7 +29,7 @@ $$
 \tilde{R}_{\Psi,Z} = -\gamma\,\vec B\cdot\tilde S_{\Psi} = -\gamma B\,\tilde{S}_{\Psi}(\vec u)
 = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec u,
 \qquad
-\tilde{S}_{\Psi}(\vec u) = \sum_\eta  u_\eta\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}\,i\vec u,
+\tilde{S}_{\Psi}(\vec u) = \sum_\eta  u_k\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}\,i\vec u,
 $$
 
 where $\vec u = \vec B/B$ and
@@ -48,7 +48,7 @@ $$
 \tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,\tilde\Pi_1(\vec u) +\frac{m\,c\,\omega_{L}}{2\,k_m}\,\tilde\Pi_2(\vec u),
 $$
 
-because $\sum_\eta  u_\eta\tilde{S}_{\Psi,\eta}\tilde\Pi_{1,2}(\vec u) = \pm\frac{m\,c}{2\,k_m}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{R}_{\Psi,Z}\propto \sum_\eta u_\eta\tilde{S}_{\Psi,\eta}$. The two eigenvalues are
+because $\sum_\eta  u_k\tilde{S}_{\Psi,\eta}\tilde\Pi_{1,2}(\vec u) = \pm\frac{m\,c}{2\,k_m}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{R}_{\Psi,Z}\propto \sum_\eta u_k\tilde{S}_{\Psi,\eta}$. The two eigenvalues are
 
 $$
 E_\pm = \pm\frac{m\,c\,\omega_{L}}{2\,k_m},

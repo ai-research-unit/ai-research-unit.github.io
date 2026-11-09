@@ -161,9 +161,9 @@ H=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\Bigl[-\sum_
 $$
 
 $$
-P_{\mathrm{fop},k}=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\Bigl(-i\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\eta}\Bigr)\Bigr)\!:,
+P_{\mathrm{fop},\eta}=\int d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\Bigl(-i\frac{\partial\tilde{Ξ}_{\mathrm{fop}}}{\partial R_\eta}\Bigr)\Bigr)\!:,
 \qquad
-P_{\mathrm{fop}}=\sum_\eta P_{\mathrm{fop},k}\vec e_\eta,
+P_{\mathrm{fop}}=\sum_\eta P_{\mathrm{fop},\eta}\vec e_\eta,
 \qquad
 Ϙ_{\mathrm{fop}}=\int d^3r\,:\!\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\tilde{Ξ}_{\mathrm{fop}}\bigr)\!: .
 $$
@@ -178,7 +178,7 @@ H=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\big(a_{\mathrm{fop},r}^{\da
 Ϙ_{\mathrm{fop}}=\sum_r\int\!\frac{d^3p}{(2\pi\hbar)^3}\big(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}-b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r}\big),
 $$
 
-with $P_{\mathrm{fop},k}=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}\,p_\eta(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$.
+with $P_{\mathrm{fop},\eta}=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}\,p_\eta(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$.
 
 The normal-ordering sign is fixed by the anticommutator, and it is worth displaying because it is the whole fermionic content of the energy. With $\{b_{\mathrm{fop}},b_{\mathrm{fop}}^{\dagger}\}=\mathbf{1}$ one has $b_{\mathrm{fop}}b_{\mathrm{fop}}^{\dagger}=\mathbf{1}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}$, so the un-normal-ordered Hamiltonian
 
@@ -207,7 +207,7 @@ was verified exactly, with spectra $\{-1,0,0,1\}$ for the left side and $\{0,1,1
 Because $i$ and the $\vec e_\eta$ are anti-Hermitian and $i$ is central, the four-momentum assembles into an operator-valued element of the material sector,
 
 $$
-\boxed{\;\tilde P_{\Phi,\mathrm{fop}}=iH\,e_t+P_{\mathrm{fop},k}\,\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}\;},
+\boxed{\;\tilde P_{\Phi,\mathrm{fop}}=iH\,e_t+P_{\mathrm{fop},\eta}\,\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}\;},
 $$
 
 whose square is the operator mass shell
@@ -357,7 +357,7 @@ $$
 
 so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$ and $(-1)^F=i\vec e_z$; for the field it is external.
 
-The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\Phi,\mathrm{fop}}=iH e_t+P_{\mathrm{fop},k}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
+The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\Phi,\mathrm{fop}}=iH e_t+P_{\mathrm{fop},\eta}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
 
 The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_\eta i\vec e_\eta\tilde X\vec e_y p_\eta+mc\tilde X)/(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
@@ -389,7 +389,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $H,P_{\mathrm{fop}},Ϙ_{\mathrm{fop}},J_\mu,S_\eta$ | Operator-valued energy, momentum, charge, current, spin |
 | $\tilde J_{\Phi}=iJ_t e_t+\sum_\eta J_\eta\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator current biquaternion |
 | $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$ | Normal-ordering constant |
-| $\tilde P_{\Phi,\mathrm{fop}}=iHe_t+P_{\mathrm{fop},k}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
+| $\tilde P_{\Phi,\mathrm{fop}}=iHe_t+P_{\mathrm{fop},\eta}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
 | $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_{\Psi,-}/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |

@@ -453,7 +453,7 @@ $\gamma_5$ is the basis operator $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, a p
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_\mu$ — the basis operator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$ — and with the adjoint row $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$:
+**The conserved current of the older literature.** The object that the previous sections cannot build is written here, once, in this display. The conserved current is the bilinear built with the generator basis operator of the coordinate $x_\mu$ — the basis operator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(\eta)=y$ — and with the adjoint row $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\vec e_x}$:
 
 $$
 j_\mu = \tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,\tilde{Ξ}_{\mathrm{sp}} ,

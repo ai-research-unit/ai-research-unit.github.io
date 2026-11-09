@@ -178,7 +178,7 @@ $$
 \vec b_1=\frac{\vec u_j+\vec u_\eta}{\sqrt{2}},\quad \vec b_2=\frac{-\vec u_j+\vec u_\eta}{\sqrt{2}} .
 $$
 
-Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{\eta \eta}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
+Then $S_\epsilon = \sqrt{2}\,(T_{jj}+T_{\eta\eta}) = -\sqrt{2}\,(\epsilon_j+\epsilon_k) = \mp 2\sqrt{2}$, so $|S_\epsilon|=2\sqrt{2}$. For example, $\lvertΞ^{+}\rangle$ with $\epsilon=(-1,+1,-1)$ uses the plane of $\vec u_x$ and $\vec u_z$ and gives $S=+2\sqrt{2}$; $\lvertΞ^{-}\rangle$ with $\epsilon=(+1,-1,-1)$ uses $\vec u_y,\vec u_z$; $\lvert\tilde{Ξ}_{\mathrm{sp}}^+\rangle$ with $\epsilon=(-1,-1,+1)$ uses $\vec u_x,\vec u_y$. Thus **all four Bell states attain Tsirelson's bound**.
 
 ### Step 5: Tsirelson's bound
 

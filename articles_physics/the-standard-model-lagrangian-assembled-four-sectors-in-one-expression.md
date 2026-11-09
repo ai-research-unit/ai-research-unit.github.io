@@ -42,7 +42,7 @@ $$
 
 where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.
 
-**The proof.** The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_\eta Y_\eta$, so the sum $\sum_\mu X_\mu Y_\mu$ equals $-X_0Y_0+\sum_\eta X_\eta Y_\eta$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_\eta Y_\eta$. On the right, the metric $(+,-,-,-)$ gives $X_\eta Y^\eta=-X_\eta Y_\eta$, so $X_\mu Y^\mu=X_0Y^0+\sum_\eta X_\eta Y^\eta=X_0Y_0-\sum_\eta X_\eta Y_\eta$. The two sides are the same expression.
+**The proof.** The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_kY_k$, so the sum $\sum_\mu X_\mu Y_\mu$ equals $-X_0Y_0+\sum_\eta X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_kY_k$. On the right, the metric $(+,-,-,-)$ gives $X_kY^k=-X_kY_k$, so $X_\mu Y^\mu=X_0Y^0+\sum_\eta X_kY^k=X_0Y_0-\sum_\eta X_kY_k$. The two sides are the same expression.
 
 **The two places it bites.** The rule fixes the sign of a kinetic term and nothing else in this article.
 

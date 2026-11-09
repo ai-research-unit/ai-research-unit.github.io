@@ -140,7 +140,7 @@ The identity was checked numerically in the symmetric gauge on a spectral grid: 
 With $\vec B$ uniform, the bracket of the kinetic angular momentum is
 
 $$
-\boxed{\;[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr)\;}
+\boxed{\;[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr)\;}
 $$
 
 The bracket is the rotation bracket plus one term. The extra term carries no derivative, is quadratic in position, and vanishes with the field.
@@ -161,7 +161,7 @@ The same statement was verified numerically in the symmetric gauge, on a $64^3$ 
 
 The bracket above is not a Lie bracket on the span of the generators, and the reason is visible in the shape of the extra term.
 
-**Different kinds of object.** The generators $\tilde L_{\mathrm{kin},k}$ contain a derivative. The extra term $ϙ\,r_\eta(\vec r\cdot\vec B)$ does not; it is a function of position times $e_t$, hence a multiplication operator. A linear combination of the $\tilde L_{\mathrm{kin},k}$ is a first-order differential operator. The right-hand side is one of those plus a multiplication operator. The two are not the same kind of thing, and no coefficients turn one into the other.
+**Different kinds of object.** The generators $\tilde L_{\mathrm{kin},\eta}$ contain a derivative. The extra term $ϙ\,r_\eta(\vec r\cdot\vec B)$ does not; it is a function of position times $e_t$, hence a multiplication operator. A linear combination of the $\tilde L_{\mathrm{kin},\eta}$ is a first-order differential operator. The right-hand side is one of those plus a multiplication operator. The two are not the same kind of thing, and no coefficients turn one into the other.
 
 **What fails is closure, not consistency.** The Jacobi identity holds for the bracket, because the bracket is a commutator of operators and commutators always satisfy it. The failure is narrower and sharper: the commutator of two members of the triple is not a member of the span of the triple. A reader who expects the Jacobi identity to be the test will look in the wrong place.
 
@@ -219,7 +219,7 @@ The physical statement is the classical one. A charged particle in a uniform mag
 
 ## The Reading in the Algebra
 
-The cross product is the vector part of a quaternion product. With $\vec r$ and $\vec\pi$ read as pure vector quaternions, their product is $-\vec r\cdot\vec\pi+\vec r\times\vec\pi$, and the three components $\tilde L_{\mathrm{kin},k}$ are the components of the vector part multiplied by $e_t$.
+The cross product is the vector part of a quaternion product. With $\vec r$ and $\vec\pi$ read as pure vector quaternions, their product is $-\vec r\cdot\vec\pi+\vec r\times\vec\pi$, and the three components $\tilde L_{\mathrm{kin},\eta}$ are the components of the vector part multiplied by $e_t$.
 
 The anomaly sits in the same place as the field strength. It is a real function of position times $e_t$, so it is central in the quaternion factor and labelled by position. The companion article on Landau levels makes the same point about $\vec B$: the field strength there is central, and that centrality is what makes the spin-0 problem a scalar oscillator problem.
 
@@ -244,7 +244,7 @@ Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-ϙ\vec A$, and the canonic
 The kinetic angular momentum $\tilde L_{\mathrm{kin},i}=\varepsilon_{ij\eta}r_j\pi_\eta e_t$ inherits the difference. With uniform $\vec B$,
 
 $$
-[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr),
+[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr),
 $$
 
 a rotation bracket plus a multiplication operator quadratic in position. The three components do not span a Lie algebra, because the extra term is not a first-order differential operator. Jacobi holds; closure fails. No rescaling, redefinition or gauge choice repairs it, and the failure vanishes exactly with the field.
@@ -271,7 +271,7 @@ The conserved angular momentum of the Landau problem is the canonical one. The k
 | $\tilde L_{\mathrm{orb},i}=\varepsilon_{ij\eta}r_jp_\eta e_t$ | Canonical angular momentum |
 | $\tilde L_{\mathrm{kin},i}=\varepsilon_{ij\eta}r_j\pi_\eta e_t$ | Kinetic angular momentum |
 | $\vec L_{\mathrm{kin}}=\vec L_{\mathrm{orb}}-ϙ\,\vec r\times\vec A$ | The two angular momenta |
-| $[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\varepsilon_{ij\eta}\bigl(\tilde L_{\mathrm{kin},k}+ϙ\,r_\eta(\vec r\cdot\vec B)\bigr)$ | The bracket that does not close |
+| $[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\varepsilon_{ij\eta}\bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta(\vec r\cdot\vec B)\bigr)$ | The bracket that does not close |
 | $\frac{ϙB}{2}(r_x^2+r_y^2)e_t$ | Anomaly in the symmetric gauge, per component |
 | $H=\frac{1}{2m}\sum_\eta\pi_\eta^2$ | Hamiltonian of a charge in a magnetic field |
 | $[\tilde L_{\mathrm{orb},z},H]=0$ | Canonical angular momentum is conserved |

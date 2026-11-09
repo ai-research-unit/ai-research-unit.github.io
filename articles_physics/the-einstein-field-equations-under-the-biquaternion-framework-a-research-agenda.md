@@ -268,12 +268,12 @@ The honest position of the framework's gravity programme is therefore this. It c
 | $i$ | scalar imaginary, commuting with every $\vec e_\eta$ | inherited |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | material (anti-Hermitian) and informational (Hermitian) subspaces, $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | inherited |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | real-quaternion subspace; centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | inherited |
-| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_\eta$ | inherited |
+| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\eta = \vec e_\eta$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the material basis it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ in $\varepsilon_0 = ie_t$ | inherited |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | the unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$, and the natural form on the units $e_t,\vec e_x,\vec e_y,\vec e_z$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \sum_\mu\partial^2/\partial R_\mu^2$; on the material reading $Q_t=i r'_t$ its time term is $-\partial^2/\partial {r'_t}^2$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula | inherited |
-| $\vec e_\eta$, $B_{\mathrm{boost},k} = i\vec e_\eta$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
+| $\vec e_\eta$, $B_{\mathrm{boost},\eta} = i\vec e_\eta$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
 | $\tilde{E}_{\Phi}_\mu$, $\vec\Gamma_\mu$ | frame field in $\mathbb{B}_{\Phi}$; Lie-subspace-valued connection one-form | inherited from the curved-spacetime and linearised articles |
 | $g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | metric carried by the frame | inherited |
 | $\delta\tilde{E}_{\Phi}_\mu$, $\bar{\delta\tilde{E}_{\Phi}}_\mu$ | frame perturbation and its trace-reversed form | inherited |

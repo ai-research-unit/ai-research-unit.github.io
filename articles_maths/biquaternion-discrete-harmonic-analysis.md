@@ -110,15 +110,15 @@ The two transforms are closely related: the conjugate of the left-kernel transfo
 
 ### Invertibility
 
-The invertibility of the transform depends on the properties of the kernel and of the signal.
+The invertibility of the transform depends on the properties of the kernel and of the values.
 
 **The kernel has unit norm.** For every $n$ and $\ell$, the kernel $W_N(n, \ell)$ satisfies $\langle W_N(n, \ell)\rangle_{\natural} = e_t$, as shown above. So the kernel is always invertible.
 
-**The signal may have vanishing norm.** If a sample $f[n]$ has vanishing norm, $\langle f[n]\rangle_{\natural} = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
+**A sample may have vanishing norm.** If a sample $f[n]$ has vanishing norm, $\langle f[n]\rangle_{\natural} = 0$, then $f[n]$ is a zero divisor, and it is not necessarily recoverable from the transform. The precise statement is the following.
 
 **Theorem (invertibility).** If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.
 
-**Proof.** Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:
+*Proof.* Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:
 
 $$
 \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} F[\ell] = \frac{1}{N} \sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} \sum_{m=0}^{N-1} W_N(m, \ell) f[m] = \frac{1}{N} \sum_{m=0}^{N-1} \left(\sum_{\ell=0}^{N-1} W_N(n, \ell)^{\natural} W_N(m, \ell)\right) f[m].
@@ -132,19 +132,19 @@ $$
 
 which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
 
-**The transform is not invertible on signals containing zero-divisor samples.** If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.
+**The transform is not invertible on sequences containing zero-divisor samples.** If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a sequence with zero-divisor samples is not known; it depends on the cancellations in the sum.
 
 ### Symmetry of the Spectrum
 
-For a real scalar-valued signal and a root $\rho$, the spectrum satisfies a **conjugate symmetry** analogous to the Hermitian symmetry of the ordinary Fourier transform of a real signal.
+For a real scalar-valued sequence and a root $\rho$, the spectrum satisfies a **conjugate symmetry** analogous to the Hermitian symmetry of the ordinary Fourier transform of a real sequence.
 
-**Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{R}e_t$ be a real scalar-valued signal, and let $F$ be its discrete biquaternion Fourier transform with respect to a root $\rho$. Then
+**Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{R}e_t$ be a real scalar-valued sequence, and let $F$ be its discrete biquaternion Fourier transform with respect to a root $\rho$. Then
 
 $$
 F[N-\ell] = F[\ell]^{\natural}, \qquad \ell = 1, \ldots, N-1.
 $$
 
-**Proof.** The proof uses the reality of $f$, i.e., $f[n]^{\natural} = f[n]$ for every $n$, and the identity
+*Proof.* The proof uses the reality of $f$, i.e., $f[n]^{\natural} = f[n]$ for every $n$, and the identity
 
 $$
 W_N(n, N-\ell)^{\natural} = W_N(n, \ell),
@@ -156,7 +156,7 @@ $$
 F[N-\ell] = \sum_{n=0}^{N-1} W_N(n, N-\ell) f[n] = \sum_{n=0}^{N-1} W_N(n, \ell)^{\natural} f[n] = \sum_{n=0}^{N-1} \left(W_N(n, \ell) f[n]\right)^{\natural} = \left(\sum_{n=0}^{N-1} W_N(n, \ell) f[n]\right)^{\natural} = F[\ell]^{\natural}.
 $$
 
-The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell] = F[\ell]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum, and it is the reason the standard techniques of real-signal processing extend to the biquaternion setting, provided the signal is real scalar-valued. For a general real quaternion-valued signal the identity fails, because quaternion conjugation does not fix an element with a vector part and it reverses the order of the factors.
+The symmetry is the biquaternion analogue of the Hermitian symmetry $F[-\ell] = F[\ell]^*$ of the ordinary Fourier transform of a real sequence. It is the basis for reconstructing a real sequence from half of its spectrum, and it is the reason the standard techniques of real-valued analysis extend to the biquaternion setting, provided the values are real scalar. For a general real quaternion-valued sequence the identity fails, because quaternion conjugation does not fix an element with a vector part and it reverses the order of the factors.
 
 ## Factorization into Four Complex Fourier Transforms
 
@@ -284,7 +284,7 @@ $$
 
 where the product on the right is the biquaternion product.
 
-**Proof.** Compute
+*Proof.* Compute
 
 $$
 \mathcal{F}[f * g][\ell] = \sum_{n=0}^{N-1} W_N(n, \ell) \sum_{m=0}^{N-1} f[m] g[n-m] = \sum_{m=0}^{N-1} \sum_{n=0}^{N-1} W_N(n, \ell) f[m] g[n-m].
@@ -316,7 +316,7 @@ The order is not reversed: the same computation moves the kernel past $g$ and le
 
 ### Consequences
 
-Under the same hypothesis, the convolution theorem says that convolution in the signal domain becomes **biquaternion multiplication** in the frequency domain. This is the basis for filtering: a biquaternion-valued filter can be applied by pointwise multiplication in the frequency domain.
+Under the same hypothesis, the convolution theorem says that convolution in the index domain becomes **biquaternion multiplication** in the frequency domain. This is the basis for filtering: a biquaternion-valued filter can be applied by pointwise multiplication in the frequency domain.
 
 It also implies that the convolution is:
 
@@ -336,18 +336,18 @@ More precisely, if $f[n]$ is a zero divisor, there exists a nonzero biquaternion
 
 ### Consequences for the Transform
 
-- **The transform is not necessarily invertible on signals containing zero-divisor samples.** The inverse transform may not recover the vanished information.
-- **The transform is invertible on signals of non-vanishing norm.** If every sample has non-vanishing norm, the transform is invertible (Theorem above).
+- **The transform is not necessarily invertible on sequences containing zero-divisor samples.** The inverse transform may not recover the vanished information.
+- **The transform is invertible on sequences of non-vanishing norm.** If every sample has non-vanishing norm, the transform is invertible (Theorem above).
 
 ### Structural Interpretation
 
 The vanishing-norm issue is a genuinely biquaternionic feature. It does not arise in the complex or quaternion Fourier transforms, because the complex and quaternion algebras are division algebras: every nonzero element has an inverse. The biquaternion algebra is not a division algebra, and this is reflected in the harmonic analysis.
 
-The issue can be avoided by restricting the signals to a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{B}_{H}$. On $\mathbb{B}_{H}$, every nonzero sample is invertible, and the transform is invertible on all signals. On the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the samples with vanishing norm lie on a cone, and the transform is invertible only for signals whose samples lie off this cone.
+The issue can be avoided by restricting the values to a subspace where the biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{B}_{H}$. On $\mathbb{B}_{H}$, every nonzero sample is invertible, and the transform is invertible on every sequence. On the anti-Hermitian subspace $\mathbb{B}_{\Phi}$, the samples with vanishing norm lie on a cone, and the transform is invertible only for sequences whose samples lie off this cone.
 
 ### The Open Question
 
-The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, \ell) f[n]$, and it is not determined by the biquaternion norms of the samples alone. This is one of the open questions listed below.
+The precise condition under which the transform is invertible on a sequence with zero-divisor samples is not known. It depends on the cancellations in the sum $\sum_n W_N(n, \ell) f[n]$, and it is not determined by the biquaternion norms of the samples alone. This is one of the open questions listed below.
 
 ## The Two-Dimensional Transform
 
@@ -527,7 +527,7 @@ An inhomogeneous recurrence is treated in the same way: the transform of the kno
 
 Everything in this article is the transform of $\mathbb{B}$, whose product is non-commutative and whose convolution theorem therefore fixes the kernel to one side. A commutative four-dimensional algebra has a discrete transform of its own, due to Pei, Chang and Ding, and it is the corpus's only worked instance of a discrete hypercomplex transform over a commutative algebra; it is recorded here because it is the case in which the phenomena of the previous sections disappear.
 
-The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*, and the transform is the **discrete reduced biquaternion Fourier transform** (DRBFT). The paper distinguishes two kernel conventions: **type 1**, with two imaginary units, whose advantage is that the even-even, even-odd, odd-even and odd-odd components of a real signal separate in the frequency domain, and **type 2**, with one imaginary unit, chosen for its similarity to the ordinary complex transform. Both are implemented by the reduction of *Harmonic Analysis over Hypercomplex Systems*: the signal is split by the idempotents into two complex signals, and the transform is then a pair of complex two-dimensional transforms, so a DRBFT of either type costs two complex DFTs, the same count the quaternion Fourier transform costs. The convolution is implemented with six complex two-dimensional transforms, and one convolution in this algebra equals two conventional ones.
+The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra of *List of Algebras by Dimension*, and the transform is the **discrete reduced biquaternion Fourier transform** (DRBFT). The paper distinguishes two kernel conventions: **type 1**, with two imaginary units, whose advantage is that the even-even, even-odd, odd-even and odd-odd components of a real sequence separate in the frequency domain, and **type 2**, with one imaginary unit, chosen for its similarity to the ordinary complex transform. Both are implemented by the reduction of *Harmonic Analysis over Hypercomplex Systems*: the sequence is split by the idempotents into two complex sequences, and the transform is then a pair of complex two-dimensional transforms, so a DRBFT of either type costs two complex DFTs, the same count the quaternion Fourier transform costs. The convolution is implemented with six complex two-dimensional transforms, and one convolution in this algebra equals two conventional ones.
 
 The convolution theorem is the sharpest contrast with the theorem of this article. The convolution here is commutative, the kernel needs no side convention, and the product in the frequency domain is the transform of the convolution whichever DRBFT type is used; the paper reports that for the quaternion transform the corresponding identity holds only in a restricted one-side form, which is consistent with the one-sided theorem proved above for $\mathbb{B}$ and with its loss of commutativity. Two consequences of the commutative product are the ones the paper emphasises: a cascade of linear time-invariant filters multiplies in the frequency domain exactly as in the complex case, whereas the paper reports the cascade of quaternion filters to be difficult to analyse; and the **correlation** is a special case of the convolution, so the convolution algorithms serve it, with the **phase-only correlation** obtained by normalising the phase in the frequency domain, the paper's discrete definition of which uses the binary exclusive-or operation.
 
@@ -535,13 +535,13 @@ The price is the vanishing-norm phenomenon of the previous section, which the co
 
 ## Open Questions
 
-1. **Wavelets.** Can a biquaternion wavelet transform be defined, and what are its properties? The wavelet kernel is more general than the Fourier kernel, and the biquaternion structure may introduce new phenomena.
+1. **A kernel from a non-central root.** For a non-central root no frequency-independent convolution reproduces the product of the transforms. Whether a twisted product, or a convolution carrying the root as data, repairs this is not known.
 
 2. **Time-frequency analysis.** Can a biquaternion time-frequency distribution (Wigner, spectrogram, etc.) be defined, and what are its properties?
 
-3. **Non-commutative filtering.** What are the implications of the non-commutativity of the biquaternion product for signal processing? Convolution is not commutative, and the standard filtering theory assumes commutativity.
+3. **Non-commutative convolution.** What are the implications of the non-commutativity of the biquaternion product for the convolution theorem? Convolution is not commutative, and the classical convolution theorem assumes commutativity.
 
-4. **The spectrum and vanishing norms.** It is not known whether the spectrum of a biquaternion Fourier transform of a real or imaginary quaternion signal can have samples with vanishing norm. If it can occur, it would mean that the transform is not invertible on such signals.
+4. **The spectrum and vanishing norms.** It is not known whether the spectrum of a biquaternion Fourier transform of a real or imaginary quaternion sequence can have samples with vanishing norm. If it can occur, it would mean that the transform is not invertible on such sequences.
 
 5. **The precise invertibility condition.** Under what conditions on the zero-divisor samples is the transform invertible? The answer is not known.
 
@@ -553,11 +553,11 @@ The price is the vanishing-norm phenomenon of the previous section, which the co
 
 The discrete biquaternion Fourier transform is defined by the kernel $W_N(n, \ell) = \exp(-2\pi \rho n\ell/N)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
 
-The transform is invertible on signals of non-vanishing norm, and it satisfies the conjugate symmetry for real scalar signals. It factorizes into four complex Fourier transforms, which gives a fast algorithm using existing complex FFT libraries. The convolution theorem holds when the kernel commutes with the samples, in particular for the complex root; for a non-central root no frequency-independent convolution reproduces the product of transforms.
+The transform is invertible on sequences of non-vanishing norm, and it satisfies the conjugate symmetry for real scalar sequences. It factorizes into four complex Fourier transforms, which gives a fast algorithm using existing complex FFT libraries. The convolution theorem holds when the kernel commutes with the samples, in particular for the complex root; for a non-central root no frequency-independent convolution reproduces the product of transforms.
 
-The vanishing-norm issue is a genuinely biquaternionic feature: signals containing zero-divisor samples are not necessarily recoverable from their transform, and the precise invertibility condition is not known.
+The vanishing-norm issue is a genuinely biquaternionic feature: sequences containing zero-divisor samples are not necessarily recoverable from their transform, and the precise invertibility condition is not known.
 
-The discrete transform is the discrete analogue of the continuous transform of the companion article, and it is the basis for the biquaternion signal processing applications.
+The discrete transform relates to the continuous transform of the companion article as the DFT relates to the Fourier integral, and it is the discrete counterpart of every construction there.
 
 The infinite-sequence analogue is the **biquaternion Z transform**, $\mathcal{X}[f](\tilde{Q}) = \sum_{n \ge 0} f_n\tilde{Q}^{-n}$, the discrete Laplace transform of a sequence. Its calculation rules are those of the complex Z transform, with the commutation hypotheses that the non-commutative product imposes, and its convergence is the place where the zero divisors enter a transform: the multiplicative real norm $r = \sqrt{\lvert N\rvert}$ vanishes on them, so the region $r(\tilde{Q}) > \sigma_f$ of the transform literature contains the true region of convergence and may contain divergent points, the standard idempotent $\tilde\Pi_+$ and its complement being the sharpest example. The transform solves linear recurrences with constant biquaternion coefficients by turning them into algebraic equations.
 

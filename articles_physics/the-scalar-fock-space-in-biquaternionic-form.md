@@ -215,10 +215,10 @@ $$
 \boxed{\;\langle\tilde R_\Psi\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde R_\Psi)\;}.
 $$
 
-For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the trace formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_\eta,l}\rho_{\eta l}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
+For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the trace formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{\eta,l}\rho_{\eta l}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
 
 $$
-\langle N\rangle_{\rho}=\mathrm{tr}(\rho\,N)=\sum_\eta=0}^{n}k\,\rho_{\eta \eta},
+\langle N\rangle_{\rho}=\mathrm{tr}(\rho\,N)=\sum_{k=0}^{n}k\,\rho_{\eta\eta},
 $$
 
 so the diagonal of the truncated density matrix is the occupation distribution. The vacuum of the truncation is $\rho_0=|0\rangle\langle0|$, with $\langle N\rangle=0$, and the one-particle state is $\rho_1=|1\rangle\langle1|$, with $\langle N\rangle=1$; the trace formula is exact for these finite matrices and is the only sense in which the Born rule applies to the scalar number operator.

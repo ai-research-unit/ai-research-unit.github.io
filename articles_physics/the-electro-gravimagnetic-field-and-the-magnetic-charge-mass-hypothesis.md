@@ -365,7 +365,7 @@ For a Gaussian mass density of unit total mass, the Newtonian potential $\xi_{\m
 Summing the second-law equations over $M$ interacting fields cancels the force terms pairwise, because each pair contributes a force and its reaction. The total charge–current therefore satisfies
 
 $$
-D^-\Big(\sum_\eta=1}^{M}\tilde J_{\Phi,\mathrm{eg},k}\Big) \equiv 0,
+D^-\Big(\sum_{k=1}^{M}\tilde J_{\Phi,\mathrm{eg},k}\Big) \equiv 0,
 $$
 
 so the **combined field is free**: all forces are internal, exactly as in the mechanics of interacting bodies. The author calls this the law of the single field.
@@ -375,7 +375,7 @@ The energy–momentum of the combined field separates the same way. With the ene
 $$
 \tilde{\Pi} = \sum_{\eta}\tilde{\Pi}_k + \delta\tilde{\Pi},
 \qquad
-\delta\tilde{\Pi} = \sum_\eta\ne l}\tilde{\Pi}_{\eta l},
+\delta\tilde{\Pi} = \sum_{\eta\ne l}\tilde{\Pi}_{\eta l},
 \qquad
 \tilde{\Pi}_{\eta l} = \tfrac{1}{2}\left(\tilde F_\eta\circ\tilde F_l^* + \tilde F_l\circ\tilde F_\eta^*\right),
 $$
@@ -387,7 +387,7 @@ where $\tilde{\Pi}_{\eta l}$ is the **interaction energy–momentum** of the pai
 $$
 \tilde{\Sigma}_{\Psi,\eta l} = \tfrac{1}{2}\left(\tilde J_{\Phi,\mathrm{eg},\eta}\circ\tilde J_{\Phi,\mathrm{eg},l}^* + \tilde J_{\Phi,\mathrm{eg},l}\circ\tilde J_{\Phi,\mathrm{eg},\eta}^*\right),
 \qquad
-\tilde{\Sigma}_{\Psi} = \sum_\eta\tilde{\Sigma}_{\Psi,\eta} + \sum_\eta\ne l}\tilde{\Sigma}_{\Psi,\eta l},
+\tilde{\Sigma}_{\Psi} = \sum_\eta\tilde{\Sigma}_{\Psi,\eta} + \sum_{\eta\ne l}\tilde{\Sigma}_{\Psi,\eta l},
 $$
 
 so that the total energy–momentum of the combined source separates into per-field pieces and pair terms.

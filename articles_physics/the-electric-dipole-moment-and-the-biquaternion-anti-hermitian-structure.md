@@ -35,7 +35,7 @@ F_{0i}=E_i,\qquad
 F_{ij}=-\epsilon_{ij\eta}B_\eta ,
 $$
 
-so that $\varepsilon_0=+1$ and $\varepsilon_k=-1$. The weight $\varepsilon_\rho$ is the corpus's plain weight (*Frame and Metric Conventions*): the sign with which the $\rho$-th unit squares. The two signs of $\varepsilon$ are not decoration: they are what turns a lower pair of indices into an upper pair, and the weighted contraction that reproduces the dual below uses them.
+so that $\varepsilon_0=+1$ and $\varepsilon_\eta=-1$. The weight $\varepsilon_\rho$ is the corpus's plain weight (*Frame and Metric Conventions*): the sign with which the $\rho$-th unit squares. The two signs of $\varepsilon$ are not decoration: they are what turns a lower pair of indices into an upper pair, and the weighted contraction that reproduces the dual below uses them.
 
 **The two Dirac equations.** The mass is the linear Dirac pair
 
@@ -114,7 +114,7 @@ $$
 \mathcal{G}_{ij}:\ Q\longmapsto i\,\vec e_\eta\,Q ,
 $$
 
-with $\eta$ the third spatial unit, complementary to the pair $(i,j)$. Each is $i$ times a left multiplication by a spatial unit, with the chirality factor present for the timelike pair and absent for the spatial pair. The glyph $\mathcal{G}_{\mu\nu}$ names the bivector of the pair and nothing else, and the two lines above are its definition.
+with $k$ the third spatial unit, complementary to the pair $(i,j)$. Each is $i$ times a left multiplication by a spatial unit, with the chirality factor present for the timelike pair and absent for the spatial pair. The glyph $\mathcal{G}_{\mu\nu}$ names the bivector of the pair and nothing else, and the two lines above are its definition.
 
 **The Hodge duality.** The dual is this article's map on the insertions, and it is one line on each family: it exchanges the two members of a pair and it carries the sign of the central $-i$,
 
@@ -128,7 +128,7 @@ $$
 \mathcal{D}\bigl(\mathcal{O}_{\lambda\mu}\bigr)=-\,\mathcal{O}_{0\eta},
 $$
 
-where $(\lambda,\mu)$ is the spatial pair complementary to $\eta$, so that $(0,\eta,\lambda,\mu)$ is an even permutation of the frame. Each line is the chirality basis operator followed by the central $-i$, evaluated on the insertion, and the four together are the derived form of the Hodge dual on the bivectors and on the insertions. One evaluation, for the record: $\mathcal{D}(\mathcal{G}_{0\eta})(Q)=-i\,\mathcal{G}_{0\eta}(-iQ\vec e_z)=i\vec e_\eta Q=\mathcal{G}_{\lambda\mu}(Q)$; the second line is the same with one less factor, $\mathcal{D}(\mathcal{G}_{\lambda\mu})(Q)=-i\cdot i\vec e_\eta\,(-iQ\vec e_z)=-i\,\vec e_\eta Q\vec e_z=-\mathcal{G}_{0\eta}(Q)$. The dual therefore exchanges the two families and changes the sign of one of them, and two passages return minus the insertion,
+where $(\lambda,\mu)$ is the spatial pair complementary to $k$, so that $(0,k,\lambda,\mu)$ is an even permutation of the frame. Each line is the chirality basis operator followed by the central $-i$, evaluated on the insertion, and the four together are the derived form of the Hodge dual on the bivectors and on the insertions. One evaluation, for the record: $\mathcal{D}(\mathcal{G}_{0\eta})(Q)=-i\,\mathcal{G}_{0\eta}(-iQ\vec e_z)=i\vec e_\eta Q=\mathcal{G}_{\lambda\mu}(Q)$; the second line is the same with one less factor, $\mathcal{D}(\mathcal{G}_{\lambda\mu})(Q)=-i\cdot i\vec e_\eta\,(-iQ\vec e_z)=-i\,\vec e_\eta Q\vec e_z=-\mathcal{G}_{0\eta}(Q)$. The dual therefore exchanges the two families and changes the sign of one of them, and two passages return minus the insertion,
 
 $$
 \mathcal{D}^{2}=-\,1 ,
@@ -212,7 +212,7 @@ $$
 
 The element $i\vec e_\eta$ is twice the spin of *Special Element Conventions*, $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$: Hermitian, of square one, traceless, and the three close on the commutator. The identity shows both facts at once — that the EDM insertion is $i$ times a Hermitian multiplication, hence anti-Hermitian, and that the multiplication it is $i$ times is the spin. The square $(i\vec e_\eta)^2=e_t$ is what gives $i\vec e_\eta$ the two eigenvalues $\pm1$; scaled by $\frac{m\,c}{2\,k_m}$, they are the two values $\pm\frac{m\,c}{2\,k_m}$ of a spin-$\tfrac12$ component.
 
-**The factor of two and the sign.** The contraction of the insertion family with $F$ counts the electric pair twice, as $(0,\eta)$ and as $(\eta,0)$, and the two contributions are equal, because the bivector changes sign and $F$ changes sign together. With $F_{0\eta}=E_\eta$ the Lagrangian therefore contains
+**The factor of two and the sign.** The contraction of the insertion family with $F$ counts the electric pair twice, as $(0,k)$ and as $(k,0)$, and the two contributions are equal, because the bivector changes sign and $F$ changes sign together. With $F_{0\eta}=E_\eta$ the Lagrangian therefore contains
 
 $$
 \mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_\eta\,\tilde{Ξ}_{\mathrm{sp}}^*i\,\bigl(\mathcal{O}_{0\eta}\tilde{Ξ}_{\mathrm{sp}}\bigr)\vec e_x
@@ -258,7 +258,7 @@ Each is the field, the element the insertion multiplies it by, the unit $\vec e_
 
 | Operator | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{C}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|---|
-| $\tilde{Ξ}_{\mathrm{sp}}^*i(i e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=\eta$ |
+| $\tilde{Ξ}_{\mathrm{sp}}^*i(i e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge) | vector | even | even | even | even | $i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^*i(\mathcal{G}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\mathcal{G}_{ij}$, Hermitian |
 | $i\,\tilde{Ξ}_{\mathrm{sp}}^*i(\mathcal{O}_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}})\vec e_x\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\mathcal{O}_{0\eta}$, anti-Hermitian |
 
@@ -501,11 +501,11 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $Q\mapsto i\vec e_\eta Q$ | The magnetic-moment insertion, Hermitian, $\mathbb{B}_{\Psi}$ |
 | $Q\mapsto-\vec e_\eta Q$ | The EDM insertion, anti-Hermitian, $\mathbb{B}_{\Phi}$ |
 | the chirality basis operator | The corpus's right multiplication by $-i\vec e_z$ (*Special Element Conventions*); an involution, Hermitian |
-| $\mathcal{G}_{0\eta}:\ Q\mapsto i\vec e_\eta Q\vec e_z$; $\mathcal{G}_{ij}:\ Q\mapsto i\vec e_\eta Q$ | The six bivectors; $\eta$ is the index complementary to the spatial pair $(i,j)$ |
+| $\mathcal{G}_{0\eta}:\ Q\mapsto i\vec e_\eta Q\vec e_z$; $\mathcal{G}_{ij}:\ Q\mapsto i\vec e_\eta Q$ | The six bivectors; $k$ is the index complementary to the spatial pair $(i,j)$ |
 | $\mathcal{O}_{0\eta}:\ Q\mapsto-\vec e_\eta Q$; $\mathcal{O}_{ij}:\ Q\mapsto\vec e_\eta Q\vec e_z$ | The six EDM insertions; each is the bivector of its pair composed with the chirality basis operator |
 | $\mathcal{D}$ | The Hodge dual on the insertions; $\mathcal{D}(\mathcal{G}_{0\eta})=+\mathcal{G}_{\lambda\mu}$, $\mathcal{D}(\mathcal{G}_{\lambda\mu})=-\mathcal{G}_{0\eta}$, $\mathcal{D}^{2}=-1$, and $\mathcal{D}(\mathcal{G}_{\mu\nu})=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma\mathcal{G}_{\rho\sigma}$ |
 | $\mathcal{O}_{\mu\nu}=i\,\mathcal{D}(\mathcal{G}_{\mu\nu})$ | The EDM insertion as $i$ times the dual of the bivector; on the timelike pair, $i\,(i\vec e_\eta)=-\vec e_\eta$ |
-| $\varepsilon_\rho$ | The plain weight of *Frame and Metric Conventions*; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
+| $\varepsilon_\rho$ | The plain weight of *Frame and Metric Conventions*; with $\varepsilon=(1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_\eta=-1$ |
 | $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ij\eta}B_\eta$ | The field strength components |
 | $\mathcal{L}_{\mathrm{EDM}}=i\,d\sum_\eta E_\eta\tilde{Ξ}_{\mathrm{sp}}^*i(\vec e_\eta\tilde{Ξ}_{\mathrm{sp}})\vec e_x + i\,d\sum_\eta B_\eta\tilde{Ξ}_{\mathrm{sp}}^*i(\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z)\vec e_x$ | EDM Lagrangian |
 | $H_{\mathrm{NR}}=-d\sum_\eta E_\eta\,i\vec e_\eta$ | EDM nonrelativistic Hamiltonian |

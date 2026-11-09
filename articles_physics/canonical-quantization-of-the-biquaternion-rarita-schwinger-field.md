@@ -26,7 +26,7 @@ The article is organized as follows. The field and its frame are fixed first, an
 ## The Field, Its Constraint, and Transversality
 
 ### The Field and Its Frame Operators
-The field is a vector-spinor: four components $\tilde{Ξ}_{\mathrm{sp},\mu}$, each an element of $\mathbb{B}$. The vector index is carried by the **frame basis operators** of *Matrix Representations Conventions*: the basis operator of the coordinate $x_\mu$ is $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, and its action on an element is
+The field is a vector-spinor: four components $\tilde{Ξ}_{\mathrm{sp},\mu}$, each an element of $\mathbb{B}$. The vector index is carried by the **frame basis operators** of *Matrix Representations Conventions*: the basis operator of the coordinate $x_\mu$ is $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(\eta)=y$, and its action on an element is
 
 $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)} .
@@ -307,7 +307,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are the frame basis operators of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu:=iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}\quad(\nu(r_t)=r_x,\ \nu(k)=r_y),
+\gamma_\mu:=iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}\quad(\nu(r_t)=r_x,\ \nu(\eta)=r_y),
 \qquad
 \gamma_5:=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
 $$
@@ -315,7 +315,7 @@ $$
 The same in the axis-free display:
 
 $$
-\gamma_\mu:=iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\quad(\nu(r_t)=r_x,\ \nu(k)=r_y),
+\gamma_\mu:=iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\quad(\nu(r_t)=r_x,\ \nu(\eta)=r_y),
 \qquad
 \gamma_5:=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$
@@ -404,9 +404,9 @@ In the biquaternion framework the field is the tensor product of the material fo
 |---|---|
 | $\tilde{Ξ}_{\mathrm{sp},\mu}$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
 | $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$ | The action a display writes; a basis operator $L_{a}R_{b}$ is named only where the operator itself is the subject |
-| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame basis operator of the coordinate $x_\mu$, acting as $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$: $iR_{\mathrm{axf},\vec e_x}$ for $\mu=t$, $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
+| $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(\eta)=y$ | Frame basis operator of the coordinate $x_\mu$, acting as $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$: $iR_{\mathrm{axf},\vec e_x}$ for $\mu=t$, $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\mu=k$ |
 | $2\varepsilon_\mu\delta_{\mu\nu}$ on the identity action | The sum of the two compositions of two frame basis operators; their two imaginary units multiply to $-1$ |
-| $\varepsilon_\mu=-g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$ | Sign vector; every contraction of two low indices carries it |
+| $\varepsilon_\mu=-g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_\eta=-1$ | Sign vector; every contraction of two low indices carries it |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Field equation as the chiral pair; the two Dirac equations |
 | $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu\varepsilon_\mu\,e_\mu(\partial\tilde{Ξ}_{\mathrm{sp}}/\partial x_\mu)\vec e_{\nu(\mu)}$, $\mathcal{D}_p\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\,i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}p_\mu$ | Dirac contraction of the pair read on the module, and its Fourier symbol; one two-sided operator on the module, not the retired pair glyph; $\mathcal{D}^2=\Box$, $\mathcal{D}_p^2=p^2$, and the imaginary units of the basis operator and of the derivative are multiplied to $-1$ |
 | $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp},\mu}=0$ | Basis operator transcription of the chiral pair |

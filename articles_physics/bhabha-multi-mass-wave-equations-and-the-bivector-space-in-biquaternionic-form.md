@@ -32,7 +32,7 @@ Displayed formulae are written with their imaginary units reduced whenever the a
 A representation of $\mathrm{SL}(2,\mathbb{C})$ is carried by a **spintensor** with $k$ unbarred and $r$ barred indices,
 
 $$
-S = s_{\alpha_1\alpha_2\dots\alpha_\eta \bar\alpha_1\bar\alpha_2\dots\bar\alpha_r},
+S = s_{\alpha_1\alpha_2\dots\alpha_k\bar\alpha_1\bar\alpha_2\dots\bar\alpha_r},
 $$
 
 a polynomial in the products of the unbarred and barred letters $s_\alpha$ and $s_{\bar\alpha}$, with $\alpha,\bar\alpha=1,2$. The representation is $\tau^{l\bar l}$ with
@@ -113,7 +113,7 @@ $$
 m_1 = \mu_0\lambda_1\bar\lambda_1,\qquad -m_1=\mu_0\lambda_2\bar\lambda_2,\qquad m_2=\mu_0\lambda_3\bar\lambda_3=-\mu_0\lambda_4\bar\lambda_4,\ \dots
 $$
 
-**Why the spectrum is symmetric.** The source records the $\pm$ pairing as an observation: each non-null eigenvalue $\lambda$ of $M_0$ occurs with $-\lambda$ of the same multiplicity. It is not a separate assumption, and the reason is already in hand. At $\vec p=0$ the determinant is $\prod_i(\lambda_ip_0+m)$, and it is also $D(p_0^2)$, an even function of $p_0$, because $D$ depends on the momentum only through $s^2$. Expanding the product in $p_0$, the coefficient of $p_0^{2j+1}$ is $m^{N-2j-1}e_{2j+1}$, with $e_k$ the $k$-th elementary symmetric function of the $\lambda_i$; evenness therefore says $e_1=e_3=\dots=0$, and that holds exactly when the multiset $\{\lambda_i\}$ is closed under $\lambda\mapsto-\lambda$ with multiplicities preserved. The roots of $D$ are thus $\pm$ pairs — which is why the source's list contains $m_1$ and $-m_1$ — and a positive mass can be read from each pair only once the normalisation is fixed.
+**Why the spectrum is symmetric.** The source records the $\pm$ pairing as an observation: each non-null eigenvalue $\lambda$ of $M_0$ occurs with $-\lambda$ of the same multiplicity. It is not a separate assumption, and the reason is already in hand. At $\vec p=0$ the determinant is $\prod_i(\lambda_ip_0+m)$, and it is also $D(p_0^2)$, an even function of $p_0$, because $D$ depends on the momentum only through $s^2$. Expanding the product in $p_0$, the coefficient of $p_0^{2j+1}$ is $m^{N-2j-1}e_{2j+1}$, with $e_\eta$ the $k$-th elementary symmetric function of the $\lambda_i$; evenness therefore says $e_1=e_3=\dots=0$, and that holds exactly when the multiset $\{\lambda_i\}$ is closed under $\lambda\mapsto-\lambda$ with multiplicities preserved. The roots of $D$ are thus $\pm$ pairs — which is why the source's list contains $m_1$ and $-m_1$ — and a positive mass can be read from each pair only once the normalisation is fixed.
 
 **A check of the comparison.** Taken literally, the two displays are not the same polynomial. The roots of $\det(p_0M_0+mE)$ are $p_0=-m/\lambda_i$, while the second display has roots $p_0=\mu_0\lambda_i$; the two agree only if $\mu_0\lambda_i=-m/\lambda_i$ for every eigenvalue, that is if all $|\lambda_i|$ are equal, which a general representation of the Lorentz group does not satisfy. A constant can match the two lists at one eigenvalue and at no more, so the step is not a rescaling with a scale absorbed; in terms of mass the mismatch is an inversion. The determinant gives $m_i=m/|\lambda_i|$, which falls as the eigenvalue grows, while the source's product form rises with it. The invariant content is the $\pm$ pairing; the functional form of the mass in the eigenvalues is the point the source leaves unexamined, and it is recorded below as an open question rather than silently repaired.
 
@@ -344,7 +344,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 
 | Symbol | Meaning |
 |---|---|
-| $s_{\alpha_1\dots\alpha_\eta \bar\alpha_1\dots\bar\alpha_r}$ | Spintensor of the representation $\tau^{l\bar l}$ |
+| $s_{\alpha_1\dots\alpha_k\bar\alpha_1\dots\bar\alpha_r}$ | Spintensor of the representation $\tau^{l\bar l}$ |
 | $l=k/2$, $\bar l=r/2$ | Lorentz labels from the numbers of unbarred/barred indices |
 | $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
 | $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |

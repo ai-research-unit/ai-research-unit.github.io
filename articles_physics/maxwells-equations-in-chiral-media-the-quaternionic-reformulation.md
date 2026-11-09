@@ -144,12 +144,12 @@ k_\Phi^--k_\Phi^+=\frac{2k_\Phi^2\beta}{1-k_\Phi^2\beta^2},
 k_\Phi^++k_\Phi^-=\frac{2k_\Phi}{1-k_\Phi^2\beta^2}.
 $$
 
-The difference $k_\Phi^--k_\Phi^+$ is the **optical activity**. A plane wave of either combination has the Beltrami form: an amplitude perpendicular to the wave vector with a circular polarisation. For the two amplitudes $Ξ_0=\tilde{Ξ}_{\mathrm{sp},0}=\vec u_x+i\vec u_y$, with $\vec u_x,\vec u_y,\vec u_\eta$ a right-handed triad, the combinations
+The difference $k_\Phi^--k_\Phi^+$ is the **optical activity**. A plane wave of either combination has the Beltrami form: an amplitude perpendicular to the wave vector with a circular polarisation. For the two amplitudes $Ξ_0=\tilde{Ξ}_{\mathrm{sp},0}=\vec u_x+i\vec u_y$, with $\vec u_x,\vec u_y,\vec u_\Phi$ a right-handed triad, the combinations
 
 $$
-Ξ=Ξ_0\,\exp(\,ik_\Phi^-\vec u_\eta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
+Ξ=Ξ_0\,\exp(\,ik_\Phi^-\vec u_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 \qquad
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\,\exp(-ik_\Phi^+\vec u_\eta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
+\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\,\exp(-ik_\Phi^+\vec u_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
 $$
 
 satisfy the two Beltrami equations and reconstruct the fields through $(14)$. They are the two circular polarisations, and they carry the two different wavenumbers. An incident linearly polarised wave is their superposition; over a distance $L$ the phases of the two components differ by $(k_\Phi^--k_\Phi^+)L$, and a linear polarisation whose two circular components differ in phase by $\delta$ has its plane rotated by $\delta/2$, so the plane of polarisation has rotated by
@@ -212,9 +212,9 @@ one has: the **Borel–Pompeiu formula** $V_{\mathrm{vek},\pm\alpha}f+T_{\pm\alp
 **The extendability problem.** The question the authors pose is the boundary-value problem for the chiral system: given two Hölder-continuous vectors $\vec{\mathcal E}_\Gamma,\vec{\mathcal H}_\Gamma$ on the boundary $\Gamma$ of a bounded domain $\Omega$, does there exist a pair $(\vec{\mathcal E},\vec{\mathcal H})$ satisfying the chiral Maxwell equations $(12)$ in $\Omega$ and coinciding with $\vec{\mathcal E}_\Gamma,\vec{\mathcal H}_\Gamma$ on $\Gamma$? Through $(14)$ the problem splits into the two boundary-value problems
 
 $$
-D_{3-\eta _\Phi^-}Ξ=0\ \text{in }\Omega,\quad Ξ|_\Gamma=\vec{\mathcal E}_\Gamma+i\vec{\mathcal H}_\Gamma,
+D_{3-k_\Phi^-}Ξ=0\ \text{in }\Omega,\quad Ξ|_\Gamma=\vec{\mathcal E}_\Gamma+i\vec{\mathcal H}_\Gamma,
 \qquad
-D_{3+\eta _\Phi^+}\tilde{Ξ}_{\mathrm{sp}}=0\ \text{in }\Omega,\quad \tilde{Ξ}_{\mathrm{sp}}|_\Gamma=\vec{\mathcal E}_\Gamma-i\vec{\mathcal H}_\Gamma,
+D_{3+k_\Phi^+}\tilde{Ξ}_{\mathrm{sp}}=0\ \text{in }\Omega,\quad \tilde{Ξ}_{\mathrm{sp}}|_\Gamma=\vec{\mathcal E}_\Gamma-i\vec{\mathcal H}_\Gamma,
 $$
 
 and each of these has the solvability criterion $Q_\alpha v=T_\alpha g$ on $\Gamma$ for the inhomogeneous problem $D_\alpha f=g$, $f|_\Gamma=v$ (the **Theorem 6** of the paper). Combining the two criteria through $(14)$ gives the authors' **complete solution of the extendability problem**: the pair $(\vec{\mathcal E}_\Gamma,\vec{\mathcal H}_\Gamma)$ extends to a solution of $(12)$ in $\Omega$ if and only if two integral conditions on $\Gamma$ are satisfied, and then the solution is given by the Stratton–Chu representation. The two conditions are exactly the two boundary-value criteria, one for each circular polarisation.
@@ -426,7 +426,7 @@ D_3 = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\parti
 \tag{45}
 $$
 
-with the coefficient on the right: the Dirac equation with a **scalar** potential, with an **electric** potential, and with a **pseudoscalar** potential; the **force-free magnetic fields** of magnetohydrodynamics, $\mathrm{div}\,\vec B = 0$ and $\mathrm{rot}\,\vec B = \nu\vec B$ with a non-constant scalar factor $\nu$, which is $(D_3-\nu)\vec B = 0$ and hence a Beltrami field — the same form as the Beltrami pair $(20)$ above, with $\nu$ in the place of the chiral wavenumber; the **Maxwell system of a slowly changing medium**, that is the pair $(32)$; and the **static Maxwell system**. The Dirac members carry the potentials and the dictionary in *The Dirac Equation in Biquaternionic Form*; the force-free member is the magnetohydrodynamic interpretation of the equations of this section, and the slowly changing member is $(32)$ itself. The source of the list is Kravchenko and Kravchenko (2003), who also observe that of the remarkable subspaces, only the static Maxwell member forces $\vec\alpha$ to be a **gradient** — for it the permittivity must factorise, $\varepsilon = \varepsilon_1(x_1)\varepsilon_2(x_2)\varepsilon_3(x_3)$ with $\alpha_k = \partial/\partial R_\eta\,\varepsilon_k/(2\varepsilon_k)$ — while in the other five the coefficient is a general vector-valued function. That distinction is what the corpus's Riccati material covers, and what it does not: the equation with a vectorial coefficient is reduced to *four* scalar Schrödinger equations, not one, and the reduction, its four potentials and its exact Jacobian condition are in *Quaternion Regular Functions*.
+with the coefficient on the right: the Dirac equation with a **scalar** potential, with an **electric** potential, and with a **pseudoscalar** potential; the **force-free magnetic fields** of magnetohydrodynamics, $\mathrm{div}\,\vec B = 0$ and $\mathrm{rot}\,\vec B = \nu\vec B$ with a non-constant scalar factor $\nu$, which is $(D_3-\nu)\vec B = 0$ and hence a Beltrami field — the same form as the Beltrami pair $(20)$ above, with $\nu$ in the place of the chiral wavenumber; the **Maxwell system of a slowly changing medium**, that is the pair $(32)$; and the **static Maxwell system**. The Dirac members carry the potentials and the dictionary in *The Dirac Equation in Biquaternionic Form*; the force-free member is the magnetohydrodynamic interpretation of the equations of this section, and the slowly changing member is $(32)$ itself. The source of the list is Kravchenko and Kravchenko (2003), who also observe that of the remarkable subspaces, only the static Maxwell member forces $\vec\alpha$ to be a **gradient** — for it the permittivity must factorise, $\varepsilon = \varepsilon_1(x_1)\varepsilon_2(x_2)\varepsilon_3(x_3)$ with $\alpha_\eta = \partial/\partial R_\eta\,\varepsilon_\eta/(2\varepsilon_\eta)$ — while in the other five the coefficient is a general vector-valued function. That distinction is what the corpus's Riccati material covers, and what it does not: the equation with a vectorial coefficient is reduced to *four* scalar Schrödinger equations, not one, and the reduction, its four potentials and its exact Jacobian condition are in *Quaternion Regular Functions*.
 
 ## What Is Not Claimed
 

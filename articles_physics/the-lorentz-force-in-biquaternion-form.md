@@ -78,7 +78,7 @@ $$
 and the spatial components are
 
 $$
-B_{\mathrm{boost},k} = ϙ\,F_{\eta0}u_0 + ϙ\,F_{\eta j}u_j
+B_{\mathrm{boost},\eta} = ϙ\,F_{\eta0}u_0 + ϙ\,F_{\eta j}u_j
 = ϙ\left(-\frac{iE_\eta}{c}\right)(i\gamma c) + ϙ\,\epsilon_{\eta jl}B_l\,\gamma v_j
 = \gamma ϙ\,E_\eta + \gamma ϙ\left(\vec v\times\vec B\right)_k,
 $$
@@ -459,7 +459,7 @@ In the frame in which $\vec E$ and $\vec B$ are parallel these reduce to $\lambd
 
 ### A null-field invariant
 
-One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $k$ (the propagation direction), satisfying $\sum_\mu k_{\Phi,\mu} F_{\mu\nu} = 0$. Then
+One genuine extra invariant of the motion exists in the null case. A null field is radiative: its field matrix has a null eigenvector $\vec k_\Phi$ (the propagation direction), satisfying $\sum_\mu k_{\Phi,\mu} F_{\mu\nu} = 0$. Then
 
 $$
 \frac{d}{d\tau}\left(k\cdot P\right)
@@ -629,7 +629,7 @@ $$
 
 Equivalently, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}_{\Phi}\tilde{F} + \tilde{F}^{*}\tilde{V}_{\Phi})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}_{\Phi}\tilde{F} - \bar{\tilde F}\tilde{V}_{\Phi})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$, while $\tilde{F}$ is reserved for the field strength.
 
-The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$, so the mass shell $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{\mathcal F}_{\mathrm{frc},2} = \tilde U\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.
+The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$, so the mass shell $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $\vec k_\Phi$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{\mathcal F}_{\mathrm{frc},2} = \tilde U\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.
 
 At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = i\tilde J_{\Phi,\mathrm{eg}}\circ\tilde F_2$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
 

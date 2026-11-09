@@ -77,7 +77,7 @@ $$
 with $f$ a constant element and $k$ the propagation vector. The gradient acts on the phase through the symbol
 
 $$
--i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_\eta\vec e_\eta k_\eta ,
+-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,\qquad \vec k_\Phi=\sum_\eta\vec e_\eta k_k ,
 $$
 
 so the equation is $-i\tilde K_{\Phi}f=0$. Applying $i\tilde K_{\Phi}^{\natural}$ on the left gives $i\tilde K_{\Phi}^{\natural}\cdot(-i\tilde K_{\Phi})f=-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}f=(k_{t}^{\prime\,2}-|\vec k_\Phi|^2)f=0$, and the propagation vector is **null**,
@@ -296,7 +296,7 @@ $$
 
 positive for every solution, so every solution has positive energy; the linear equation gives $T_{\mathrm{Dirac}}=m\rho\cos\theta_{\mathrm{dua}}$, and the two differ by the factor $\cos\theta_{\mathrm{dua}}$, coinciding only at the two endpoints. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$. The overall sign is not fixed by the print: a 2-form reverses to minus itself, $\tilde F=-F$, so the same object written with the reverse in the middle differs only in that sign.
 
-Here $e_\mu$ and $\vec e_{\nu(\mu)}$ are the unit of the coordinate $x_\mu$ and its partner, with $\nu(t)=x$ and $\nu(k)=y$, and the two act on the middle factor of $F$.
+Here $e_\mu$ and $\vec e_{\nu(\mu)}$ are the unit of the coordinate $x_\mu$ and its partner, with $\nu(t)=x$ and $\nu(\eta)=y$, and the two act on the middle factor of $F$.
 
 ### The projection operators
 

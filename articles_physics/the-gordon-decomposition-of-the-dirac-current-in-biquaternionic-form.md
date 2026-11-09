@@ -29,7 +29,7 @@ The four **generators** are the actions
 $$
 \tilde Q\longmapsto i\,e_\mu\,\tilde Q\,\vec e_{\nu(\mu)},
 \qquad
-\nu(t)=x,\quad\nu(k)=y .
+\nu(t)=x,\quad\nu(\eta)=y .
 $$
 
 They are a frame, not the algebra. They are a choice of four actions, made once here and used throughout, and the choice is not a default of the notation. The three spatial units have three different jobs: $\vec e_x$ is the right multiplier of the temporal generator, $\vec e_y$ the common right multiplier of the three spatial ones, and $\vec e_z$ appears in the chirality basis operator and in the current's last factor, and nowhere else in the frame. Each generator carries a spatial unit on the right, so each of the four exchanges the value of an element.
@@ -306,7 +306,7 @@ $$
 
 so the spin term is a curl in the massless case exactly as it is in the massive one. What changes is the coefficient: $1/m$ in the massive identity, and $1/E$ in the massless regime, where $E$ is the only scale that can multiply a density to give a current.
 
-For a massless particle of one value the spin is locked to the direction $\vec u_\eta$ of the kinetic momentum, and the moment reads $\vec\mu=(e/E)(\frac{m\,c\,\vec u_{k}}{2\,k_m})$: the massless limit removes the separation scale $m$ in favour of the energy $E$, and it does not remove the spin current. The rest-frame statement, where $E=m$ and the coefficient of the curl is $1/m$, is the one that fixes $g=2$, and it is the statement of the previous section.
+For a massless particle of one value the spin is locked to the direction $\vec u_\Phi$ of the kinetic momentum, and the moment reads $\vec\mu=(e/E)(\frac{m\,c\,\vec u_{\eta}}{2\,k_m})$: the massless limit removes the separation scale $m$ in favour of the energy $E$, and it does not remove the spin current. The rest-frame statement, where $E=m$ and the coefficient of the curl is $1/m$, is the one that fixes $g=2$, and it is the statement of the previous section.
 
 ## The Angular-Momentum and Stress-Tensor Relatives
 
@@ -448,7 +448,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 |---|---|
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; the value is the subscript, $L$ the minus one and $R$ the plus one |
 | $e_\mu$, $\varepsilon_\mu$, $\delta_{\mu\nu}$ | The four units, $e_t$ and $\vec e_\eta$; the plain weight of the conventions, and the Kronecker delta |
-| $\vec e_{\nu(\mu)}$ | The frame's right multipliers, with $\nu(t)=x$ and $\nu(k)=y$ |
+| $\vec e_{\nu(\mu)}$ | The frame's right multipliers, with $\nu(t)=x$ and $\nu(\eta)=y$ |
 | $ie_\mu\,\cdot\,\vec e_{\nu(\mu)}$, the action $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | The four generators of the frame; each exchanges the value |
 | $-i\,\cdot\,\vec e_z$, the action $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The chirality basis operator, named once; it keeps the value |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,X=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | The pairing: a scalar part of a product of elements; a derived form of this article |

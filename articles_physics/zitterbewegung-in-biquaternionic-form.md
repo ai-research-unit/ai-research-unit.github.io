@@ -20,7 +20,7 @@ $$
 
 (*The Dirac Equation in Biquaternionic Form*, §*Statement*). The standard picture, which this section follows, reads the equation first order in time,
 
-$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{\eta=x,y,z} p_\eta\,\alpha_\eta + \beta\,mc^2,
+$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{\eta=x,y,z} p_\eta\,\alpha_k + \beta\,mc^2,
 $$
 
 with $p_\eta=-\frac{m\,c\,i}{k_m}\partial/\partial r_\eta$ and the two maps
@@ -261,7 +261,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\mathrm{id}$ | The identity map |
 | $\beta:\tilde Q\mapsto i\tilde Q\vec e_x$ | The time map, one right multiplication |
 | $\alpha_k:\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$ | The three spatial maps |
-| $H = c\sum_\eta p_\eta\,\alpha_\eta + \beta mc^2$ | Hamiltonian, $H^2 = E^2\,\mathrm{id}$ |
+| $H = c\sum_\eta p_\eta\,\alpha_k + \beta mc^2$ | Hamiltonian, $H^2 = E^2\,\mathrm{id}$ |
 | $A_\eta = \alpha_k(0) - cp_\eta/H$ | Anticommuting part of the velocity, $\{A_\eta,H\}=0$ |
 | $\omega_Z = 2c\,k_{t}^{\prime}$ | Zitterbewegung angular frequency |
 | $\dfrac{1}{2\,k_m}$ | Zitterbewegung amplitude (order) |

@@ -64,12 +64,12 @@ The classical equation is the statement that the integrand of the functional int
 
 **Contact terms.** Set $F=\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)$ in the working identity. The first term is the variation of the product,
 $$
-\frac{\delta F}{\delta\tilde{Ξ}(x)}=\sum_{\eta=1}^{n}\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{\eta -1})\;\delta(y_k-x)\;\tilde{Ξ}(y_{\eta +1})\cdots\tilde{Ξ}(y_n),
+\frac{\delta F}{\delta\tilde{Ξ}(x)}=\sum_{\eta=1}^{n}\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\;\delta(y_k-x)\;\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n),
 $$
 a sum of products with one field removed and a delta at the point of variation. The working identity becomes
 $$
 \Big\langle\frac{\delta S}{\delta\tilde{Ξ}(x)}\,\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\Big\rangle_{\!J}
-=\frac{m\,c\,i}{k_m}\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\eta}\delta(y_k-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{\eta -1})\tilde{Ξ}(y_{\eta +1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
+=\frac{m\,c\,i}{k_m}\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\eta}\delta(y_k-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
 $$
 which is the hierarchy: the divergence of the current-like object $\delta S/\delta\tilde{Ξ}$ is a source term plus **contact terms**, and the contact terms are what distinguish the quantum equation from the naive insertion of the classical equation. At coincident points the equation is distributional, and the delta terms are the whole of the difference. This is general and standard; it is not special to the gauge field, and the same structure appears for the scalar and the fermion below.
 

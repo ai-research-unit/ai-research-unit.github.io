@@ -29,7 +29,7 @@ $$
 G_\mu:\ Q\ \longmapsto\ i\,e_\mu\,Q\,\vec e_{\nu(\mu)} ,
 $$
 
-with $e_t=1$ the unit of the algebra, $e_k=\vec e_\eta$, $\nu(t)=x$ and $\nu(k)=y$; the **chirality** is the frame's fifth basis operator, the operator
+with $e_t=1$ the unit of the algebra, $e_\eta=\vec e_\eta$, $\nu(t)=x$ and $\nu(\eta)=y$; the **chirality** is the frame's fifth basis operator, the operator
 
 $$
 \xi:\ Q\ \longmapsto\ -i\,Q\,\vec e_z .
@@ -514,7 +514,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\sum_\eta\partial^2/\partial R_\eta^2$ | d'Alembertian, series convention; $Q_\eta=x_\eta$ |
 | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathcal{D}^2=\Box$ |
-| $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(k)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
+| $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(\eta)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
 | $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth basis operator | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_\mu\}=0$; $\xi^2=1$, $\xi\,\mathcal{D}\,\xi^{-1}=-\mathcal{D}$ |
 | $i\xi:\ Q\mapsto Q\vec e_z$ | The collapse of the imaginary unit: $\xi$ is the fifth basis operator itself, and $i\xi$ is a plain right multiplication |
 | $G_t=iR_{\vec e_x}$, $G_\eta=iL_{\vec e_\eta}R_{\vec e_y}$ | The slots of the generators: the time one has **no left slot**, the three spatial ones carry **both slots** |

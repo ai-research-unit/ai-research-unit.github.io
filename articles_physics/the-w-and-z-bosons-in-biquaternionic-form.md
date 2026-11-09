@@ -128,7 +128,7 @@ The currents below are written with the action of the frame on the field and wit
 $$
 \tilde{Ξ}_{\mathrm{sp}}\longmapsto i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_\mu\,\vec e_{\nu(\mu)},
 \qquad
-\nu(t)=x,\quad \nu(k)=y ,
+\nu(t)=x,\quad \nu(\eta)=y ,
 $$
 and the Dirac adjoint is the pairing $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$, written with its right factor in position. The chirality of a field is the slot its basis operator occupies, and the subscript records the value: a field is $L$ or $R$, $L$ is the $-1$ eigenvalue of the basis operator $-iR_{\vec e_z}$ and $R$ the $+1$ eigenvalue, the basis operator being one example of the right slot, every field is a sum of one of each, and only the zero field is both. Left multiplication keeps the letter and a product takes the letter of its right factor, so
 $$
@@ -382,7 +382,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}$ | The centre of the algebra; the abelian factor |
-| $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(k)=y$; $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame basis operators, written as actions on a field: the time basis operator, a generator basis operator, and the fifth basis operator whose two values are the chirality |
+| $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_\mu\vec e_{\nu(\mu)}$ with $\nu(t)=x$, $\nu(\eta)=y$; $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | The frame basis operators, written as actions on a field: the time basis operator, a generator basis operator, and the fifth basis operator whose two values are the chirality |
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm L}=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}+i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$, $\tilde{Ξ}_{\mathrm{sp},\mathrm R}=\tfrac12(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$ | The two values of the chirality subscript: $L$ is the $-1$ value of $\mathsf{V}_{\mathrm{vol}}$, $R$ the $+1$ value |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$, and $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ for its pairing with an element $X$ | Dirac adjoint; a pairing of two fields, with its right factor written in position |
 | $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |

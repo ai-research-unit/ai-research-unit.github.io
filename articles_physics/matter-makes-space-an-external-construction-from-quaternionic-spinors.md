@@ -302,7 +302,7 @@ Q_T=-\frac{\hbar c\hbar/(mc)}{8}\,T_{\mu\nu\rho}T_{\mu\nu\rho} ,
 $$
 and adds it to the standard Bohm term. The paper therefore carries both signs within one section, with only the three-line "ultra-compact derivation" between them, and with no statement of which is the correction: Eq. (23) is positive, the box is negative, and the two later displays that repeat the term — the Pauli limit of Section 13.2 and the torsion potential of Eq. (26) — both carry the plus sign, so the box is the outlier by three displays to one. Nothing in the source fixes the sign, and a torsion-squared scalar whose coefficient is $+\frac{m\,c^{2}}{8\,k_m^{2}}$ in one display and $-\frac{m\,c^{2}}{8\,k_m^{2}}$ in the next is not a derived result.
 
-The box carries a third line as well, $Q_H=Q_{\text{Bohm}}+Q_{\text{Torsion}}+\tfrac{c\hbar/(mc)}{2}\epsilon^{ijk}\frac{\partial T_{j\eta0}}{\partial x_i}$, labelled "quaternionic correction". That term is built on exactly the components $T_{j\eta0}$ that Eq. (5) makes zero for every field, so on the source's own torsion it vanishes identically and the box collapses to its first two lines. It is the same disjoint-support failure that separates Eq. (5) from the axial pseudo-vector $\mathcal{T}=\epsilon_{ij\eta}T_{j\eta0}$ used in Eq. (26).
+The box carries a third line as well, $Q_H=Q_{\text{Bohm}}+Q_{\text{Torsion}}+\tfrac{c\hbar/(mc)}{2}\epsilon^{ij\eta}\frac{\partial T_{j\eta0}}{\partial x_i}$, labelled "quaternionic correction". That term is built on exactly the components $T_{j\eta0}$ that Eq. (5) makes zero for every field, so on the source's own torsion it vanishes identically and the box collapses to its first two lines. It is the same disjoint-support failure that separates Eq. (5) from the axial pseudo-vector $\mathcal{T}=\epsilon_{ij\eta}T_{j\eta0}$ used in Eq. (26).
 
 **Two of the three terms are not energies.** Eq. (26), repeated in the comparison box with the same coefficients, reads
 $$
@@ -368,7 +368,7 @@ $$
 \qquad
 A_\rho=\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\mathsf{V}_{\mathrm{vol}}\,C_\rho\,\tilde{Ξ}_{\mathrm{sp}}\bigr\rangle ,
 $$
-with $\varepsilon_t=+1$ and $\varepsilon_k=-1$ the sign vector, all indices low; the operator form of the same identity, $\operatorname{Alt}[C_\lambda C_\mu C_\nu]=-i\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\mathsf{V}_{\mathrm{vol}} C_\rho$, was verified at all sixty-four index triples. The weight is what carries the sign: without $\varepsilon_\rho$ the same display with a bare $+i$ holds on the eighteen triples for which the remaining index $\rho$ is spacelike and fails on the six for which it is the time index, which is the form a reader is most likely to copy wrongly.
+with $\varepsilon_t=+1$ and $\varepsilon_\eta=-1$ the sign vector, all indices low; the operator form of the same identity, $\operatorname{Alt}[C_\lambda C_\mu C_\nu]=-i\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\mathsf{V}_{\mathrm{vol}} C_\rho$, was verified at all sixty-four index triples. The weight is what carries the sign: without $\varepsilon_\rho$ the same display with a bare $+i$ holds on the eighteen triples for which the remaining index $\rho$ is spacelike and fails on the six for which it is the time index, which is the form a reader is most likely to copy wrongly.
 
 The source's factor-2 relation is therefore obtained only after antisymmetrising, and the antisymmetrisation is what the derivation omits. For three distinct indices, where $C_{\mu\nu}=C_\mu C_\nu$, the left side is the corpus's spin density $\Sigma_{\lambda\mu\nu}$, and the corpus's torsion–spin relation is $T_{\lambda\mu\nu}=\kappa\,\Sigma_{\lambda\mu\nu}$ — the Einstein–Cartan equation, verified in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form* — so on its solutions
 $$
@@ -453,7 +453,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | the corpus's gradient, conjugate gradient and d'Alembertian, defined in the introduction: the only derivative operators this article uses of its own, all acting from the left |
 | $D_\mu$ | the source's covariant derivative, a derivative and not an action: it carries the spin connection and is never a basis operator |
 | $\operatorname{Alt}$ | the normalised antisymmetrisation, the average over the six permutations with signs |
-| $\varepsilon_\mu$ | the sign vector $\varepsilon_t=+1$, $\varepsilon_k=-1$, which writes a raised index low |
+| $\varepsilon_\mu$ | the sign vector $\varepsilon_t=+1$, $\varepsilon_\eta=-1$, which writes a raised index low |
 | $\kappa=8\pi G$ | the source's single coupling, used both as $\kappa$ and as $\kappa^{-1}$ |
 | $\mathrm{ReTr}(X)$ | the real part of the trace of $X$, which is $n$ times its central coefficient: $n=2$ for $\mathrm{Tr}_{\mathbb H}$ and $n=4$ for the four-dimensional trace of Eqs. (4)–(6) |
 | $\exp(a){}_\mu$ | the source's tetrad $e^a{}_\mu$, Eq. (4) |

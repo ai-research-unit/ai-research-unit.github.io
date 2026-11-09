@@ -250,7 +250,7 @@ D(\vec e_x,1)\,D(\vec e_z,1) = \vec e_x\left(\vec e_x^{\mathsf{T}}\vec e_z\right
 $$
 The composite is the **completely depolarizing channel**, $\tilde{Ϛ}_{\Psi} \mapsto \tfrac{1}{2}e_t$ for every state: every Bloch vector is sent to the origin. Its Choi matrix is
 $$
-\boxed{\;J = \sum_{j\eta} E_{j\eta}\otimesΞ(E_{j\eta}) = \sum_\eta E_{\eta \eta}\otimes \tfrac{1}{2}e_t = \tfrac{1}{2}I_4\;},
+\boxed{\;J = \sum_{j\eta} E_{j\eta}\otimesΞ(E_{j\eta}) = \sum_{\eta} E_{\eta\eta}\otimes \tfrac{1}{2}e_t = \tfrac{1}{2}I_4\;},
 $$
 of rank four. Thus composing two rank-two channels produces a rank-four channel, saturating the qubit bound $4 = 2\times 2$. More generally, for two distinct axes and $0<p,q<1$ the composite also saturates the bound and has Kraus rank four (checked numerically over the parameter range); the rank drops to two only when the axes are parallel or one of the channels is trivial.
 

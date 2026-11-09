@@ -86,14 +86,14 @@ $$
 x_0=\ell_B^2\,k\,\mathrm{sgn}(ϙ),
 $$
 
-so that the problem is a **harmonic oscillator of frequency $\omega_c$** centred at $x_0$, displaced by the conserved momentum $k$. The reduction used only the scalar envelope, and the module factor is constant: the magnetic field reshapes the envelope without touching the module.
+so that the problem is a **harmonic oscillator of frequency $\omega_c$** centred at $x_0$, displaced by the conserved momentum $k_\Phi$. The reduction used only the scalar envelope, and the module factor is constant: the magnetic field reshapes the envelope without touching the module.
 
 ### The spectrum and the wave functions
 
 The shifted oscillator has the spectrum
 
 $$
-\boxed{\;E_{n,\eta _z}=\frac{m\,c\,\omega_{c}}{k_m}\left(n+\tfrac12\right)+\frac{m\,c^{2}\,k_{z}^{2}}{2\,k_m^{2}}\;},
+\boxed{\;E_{n,k_z}=\frac{m\,c\,\omega_{c}}{k_m}\left(n+\tfrac12\right)+\frac{m\,c^{2}\,k_{z}^{2}}{2\,k_m^{2}}\;},
 \qquad
 n=0,1,2,\dots,
 $$
@@ -199,7 +199,7 @@ For orientation, a laboratory field of $1$ T gives, with $\omega_c=|ϙ|B/m$ and 
 
 ### Counting the states
 
-The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
+The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k_\Phi$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
 
 $$
 \boxed{\;N_{\mathrm{scl},\xi}=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{\frac{2\,m\,c\,\pi}{k_m}}=\frac{A\,B}{Ξ_0}\;},
@@ -268,7 +268,7 @@ $$
 verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/m$ displaced by $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$, with magnetic length $\ell_B=\sqrt{\frac{m\,c}{k_m\,\lvert ϙ\rvert B}}$, giving the Landau spectrum
 
 $$
-E_{n,\eta _z}=\frac{m\,c\,\omega_{c}}{k_m}\left(n+\tfrac12\right)+\frac{m\,c^{2}\,k_{z}^{2}}{2\,k_m^{2}}
+E_{n,k_z}=\frac{m\,c\,\omega_{c}}{k_m}\left(n+\tfrac12\right)+\frac{m\,c^{2}\,k_{z}^{2}}{2\,k_m^{2}}
 $$
 
 and the wave functions $\tilde{Ξ}_{\mathrm{sp},n,k}=\exp(i(k r_y+k_z r_z))H_n((r_x-x_0)/\ell_B)\exp(-(r_x-x_0)^2/2\ell_B^2)\xi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_{\mathrm{orb},z}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.

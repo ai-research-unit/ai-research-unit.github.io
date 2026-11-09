@@ -4,15 +4,15 @@
 
 A Lorentz boost acts on a plane wave in three apparently different ways: it shifts the frequency by the Doppler factor, it alters the propagation direction by aberration, and it rotates the polarisation. In the biquaternion algebra these are a single operation. The wave element and the field amplitude of a null wave are carried by a **spatial rotation composed with a dilation**, and the rotation and the dilation are the same for both.
 
-The result is due to William E. Baylis (*Relativity in Introductory Physics*, Can. J. Phys. **82** (2004) 853–873, arXiv:physics/0406158), who derived it in the algebra of physical space and flagged it as the paper's new result on the boost of a wave. The present article states it in the conventions of this series and verifies it. Two objects enter: the **wave biquaternion** $\tilde P_{\Phi}$, which is a null element of the material sector and whose coefficient of $i$ is the frequency, and the **field-strength biquaternion** $\tilde{F}$ of *The Field-Strength Biquaternion and Its Invariants*, which is a null pure vector. Written for a wave of direction $\vec u_\eta$, wave speed $c$ and angular frequency $\omega$,
+The result is due to William E. Baylis (*Relativity in Introductory Physics*, Can. J. Phys. **82** (2004) 853–873, arXiv:physics/0406158), who derived it in the algebra of physical space and flagged it as the paper's new result on the boost of a wave. The present article states it in the conventions of this series and verifies it. Two objects enter: the **wave biquaternion** $\tilde P_{\Phi}$, which is a null element of the material sector and whose coefficient of $i$ is the frequency, and the **field-strength biquaternion** $\tilde{F}$ of *The Field-Strength Biquaternion and Its Invariants*, which is a null pure vector. Written for a wave of direction $\vec u_\Phi$, wave speed $c$ and angular frequency $\omega$,
 
 $$
-\tilde P_{\Phi} = \frac{\omega}{c}\left(i + \vec u_\eta\right),
+\tilde P_{\Phi} = \frac{\omega}{c}\left(i + \vec u_\Phi\right),
 \qquad
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 ,
 $$
 
-which is the four-wavevector $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ of the plane-wave exercise written with $\vec k_\Phi = \frac{\omega}{c}\vec u_\eta$. The claim is that for a boost with Lorentz rotor $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
+which is the four-wavevector $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi$ of the plane-wave exercise written with $\vec k_\Phi = \frac{\omega}{c}\vec u_\Phi$. The claim is that for a boost with Lorentz rotor $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
 
 $$
 \tilde P_{\Phi,2} \;=\; \tilde U_{\Psi,\mathrm b}\,\tilde P_{\Phi}\,\tilde U_{\Psi,\mathrm b}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P_{\Phi}\,\tilde{u}^{*},
@@ -22,101 +22,101 @@ $$
 
 Since $\tilde{u}$ is a real quaternion, $\tilde{u}^{*} = \tilde{u}^{-1}$ and the action $\tilde{u}\,\cdot\,\tilde{u}^{*}$ is a **rotation of physical space**; the scalar $\exp(d)$ is a dilation. A boost of a wave, then, is not a mixture of three effects but a similarity of Euclidean three-space, the same one acting on the wave element and on the field.
 
-The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*, and none is restated here. A **real vector** is $\vec v=v_1\vec e_x+v_2\vec e_y+v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_\eta$ with $\vec u_\eta\vec u_\eta=-e_t$. The material sector $\mathbb{B}_{\Phi}$ carries the four-vectors and the Hermitian sector $\mathbb{B}_{\Psi}$ the boost rotors. The field is taken in vacuum, $c=c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b}$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*, and none is restated here. A **real vector** is $\vec v=v_1\vec e_x+v_2\vec e_y+v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_\Phi$ with $\vec u_\Phi\vec u_\Phi=-e_t$. The material sector $\mathbb{B}_{\Phi}$ carries the four-vectors and the Hermitian sector $\mathbb{B}_{\Psi}$ the boost rotors. The field is taken in vacuum, $c=c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b}$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
 
 ## The Null Wave Element and the Pacwoman Property
 
-The one algebraic fact behind the result is a property of null elements that has come to be called the **pacwoman property**: a null element of the form $i+\vec u_\eta$ "gobbles" factors of $\vec u_\eta$.
+The one algebraic fact behind the result is a property of null elements that has come to be called the **pacwoman property**: a null element of the form $i+\vec u_\Phi$ "gobbles" factors of $\vec u_\Phi$.
 
-**Lemma (pacwoman).** Let $\vec u_\eta$ be a unit real vector. Then
-
-$$
-\vec u_\eta\left(i + \vec u_\eta\right) \;=\; \left(i + \vec u_\eta\right)\vec u_\eta \;=\; i\left(i + \vec u_\eta\right).
-$$
-
-**Proof.** Expanding, $\vec u_\eta(i + \vec u_\eta) = i\vec u_\eta + \vec u_\eta\vec u_\eta = i\vec u_\eta - e_t$ using $\vec u_\eta\vec u_\eta = -e_t$ and the centrality of $i$; and $(i + \vec u_\eta)\vec u_\eta = i\vec u_\eta + \vec u_\eta\vec u_\eta = i\vec u_\eta - e_t$. On the other hand $i(i + \vec u_\eta) = i^2 + i\vec u_\eta = i\vec u_\eta - e_t$. The three expressions agree.
-
-The lemma says that right-multiplication by $\vec u_\eta$ acts on the null element $i+\vec u_\eta$ exactly as multiplication by the scalar $i$ does. The name records the same statement in the form $k(1+k) = 1+k$ of the source, where $k$ is the null paravector $1+\vec u_\eta$ of the algebra of physical space; in the series basis the null paravector is the Hermitian element $e_t + i\vec u_\eta$ and its gobbling factor is $i\vec u_\eta$:
+**Lemma (pacwoman).** Let $\vec u_\Phi$ be a unit real vector. Then
 
 $$
-\left(i\vec u_\eta\right)\left(e_t + i\vec u_\eta\right) \;=\; \left(e_t + i\vec u_\eta\right)\left(i\vec u_\eta\right) \;=\; e_t + i\vec u_\eta.
+\vec u_\Phi\left(i + \vec u_\Phi\right) \;=\; \left(i + \vec u_\Phi\right)\vec u_\Phi \;=\; i\left(i + \vec u_\Phi\right).
 $$
 
-**The nullity of the wave element.** The lemma is why $\tilde P_{\Phi} = \frac{\omega}{c}(i+\vec u_\eta)$ has vanishing norm. Indeed $\tilde P_{\Phi}^{\natural} = \frac{\omega}{c}(i-\vec u_\eta)$ and
+**Proof.** Expanding, $\vec u_\Phi(i + \vec u_\Phi) = i\vec u_\Phi + \vec u_\Phi\vec u_\Phi = i\vec u_\Phi - e_t$ using $\vec u_\Phi\vec u_\Phi = -e_t$ and the centrality of $i$; and $(i + \vec u_\Phi)\vec u_\Phi = i\vec u_\Phi + \vec u_\Phi\vec u_\Phi = i\vec u_\Phi - e_t$. On the other hand $i(i + \vec u_\Phi) = i^2 + i\vec u_\Phi = i\vec u_\Phi - e_t$. The three expressions agree.
+
+The lemma says that right-multiplication by $\vec u_\Phi$ acts on the null element $i+\vec u_\Phi$ exactly as multiplication by the scalar $i$ does. The name records the same statement in the form $k(1+k) = 1+k$ of the source, where $k$ is the null paravector $1+\vec u_\Phi$ of the algebra of physical space; in the series basis the null paravector is the Hermitian element $e_t + i\vec u_\Phi$ and its gobbling factor is $i\vec u_\Phi$:
 
 $$
-\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \frac{\omega^2}{c^2}\left(i+\vec u_\eta\right)\left(i-\vec u_\eta\right)
-= \frac{\omega^2}{c^2}\left(i^2 - \vec u_\eta\vec u_\eta\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
+\left(i\vec u_\Phi\right)\left(e_t + i\vec u_\Phi\right) \;=\; \left(e_t + i\vec u_\Phi\right)\left(i\vec u_\Phi\right) \;=\; e_t + i\vec u_\Phi.
 $$
 
-because $\vec u_\eta\vec u_\eta = -e_t$. The null element is a zero divisor of $\mathbb{B}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
+**The nullity of the wave element.** The lemma is why $\tilde P_{\Phi} = \frac{\omega}{c}(i+\vec u_\Phi)$ has vanishing norm. Indeed $\tilde P_{\Phi}^{\natural} = \frac{\omega}{c}(i-\vec u_\Phi)$ and
+
+$$
+\langle\tilde P_{\Phi}\rangle_{\natural} = \tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = \frac{\omega^2}{c^2}\left(i+\vec u_\Phi\right)\left(i-\vec u_\Phi\right)
+= \frac{\omega^2}{c^2}\left(i^2 - \vec u_\Phi\vec u_\Phi\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
+$$
+
+because $\vec u_\Phi\vec u_\Phi = -e_t$. The null element is a zero divisor of $\mathbb{B}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
 
 ## The Null Flag and the Flagpole
 
-The null element $e_t+i\vec u_\eta$ has a geometric interpretation, due to Penrose, that the pacwoman lemma makes precise. A **null flag** in Minkowski space is a lightlike direction together with a plane containing it: the direction is the **flagpole**, and the plane is the **flag**. For the wave element the flagpole is the lightlike paravector $e_t+i\vec u_\eta$ itself, and the flag is the two-plane transverse to $\vec u_\eta$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\vec u_\eta(e_t+i\vec u_\eta) = e_t+i\vec u_\eta$ is the statement that the flagpole absorbs its own direction without leaving the null cone.
+The null element $e_t+i\vec u_\Phi$ has a geometric interpretation, due to Penrose, that the pacwoman lemma makes precise. A **null flag** in Minkowski space is a lightlike direction together with a plane containing it: the direction is the **flagpole**, and the plane is the **flag**. For the wave element the flagpole is the lightlike paravector $e_t+i\vec u_\Phi$ itself, and the flag is the two-plane transverse to $\vec u_\Phi$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\vec u_\Phi(e_t+i\vec u_\Phi) = e_t+i\vec u_\Phi$ is the statement that the flagpole absorbs its own direction without leaving the null cone.
 
 The flagpole is also a **pure state**. The element
 
 $$
-\tilde\Pi = \tfrac12\left(e_t + i\vec u_\eta\right)
+\tilde\Pi = \tfrac12\left(e_t + i\vec u_\Phi\right)
 $$
 
-is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a Hermitian idempotent; and it is exactly the rank-one idempotent $\tilde\Pi_1(\vec u_\eta) = \tfrac12(e_t+i\vec u_\eta)$ of the idempotent convention of *Algebra and Element Conventions*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the idempotent removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously an idempotent of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
+is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a Hermitian idempotent; and it is exactly the rank-one idempotent $\tilde\Pi_1(\vec u_\Phi) = \tfrac12(e_t+i\vec u_\Phi)$ of the idempotent convention of *Algebra and Element Conventions*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the idempotent removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously an idempotent of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
 
 ## The Boost of the Null Wave Element
 
 Let $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ be the boost rotor, so that $\tilde U_{\Psi,\mathrm b}$ is Hermitian ($\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$), $\tilde U_{\Psi,\mathrm b}^{\natural} = \tilde U_{\Psi,\mathrm b}^{-1} = \cosh\frac{w}{2} - i\sinh\frac{w}{2}\vec u$, and $\langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural} = e_t$ (*The Lorentz Transformation as a Biquaternionic Rotation*). The pacwoman lemma turns the product of the rotor with the null element into a product of a *dilation–rotation factor* with the same null element.
 
-**Proposition (the factorisation).** For every unit real $\vec u$ and $\vec u_\eta$,
+**Proposition (the factorisation).** For every unit real $\vec u$ and $\vec u_\Phi$,
 
 $$
-\tilde U_{\Psi,\mathrm b}\left(i + \vec u_\eta\right) \;=\; \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_\eta\right)\left(i + \vec u_\eta\right).
+\tilde U_{\Psi,\mathrm b}\left(i + \vec u_\Phi\right) \;=\; \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_\Phi\right)\left(i + \vec u_\Phi\right).
 $$
 
 **Proof.** Expand the left side,
 
 $$
-\tilde U_{\Psi,\mathrm b}\left(i + \vec u_\eta\right)
-= \cosh\frac{w}{2}\left(i + \vec u_\eta\right) + i\sinh\frac{w}{2}\,\vec u\left(i + \vec u_\eta\right).
+\tilde U_{\Psi,\mathrm b}\left(i + \vec u_\Phi\right)
+= \cosh\frac{w}{2}\left(i + \vec u_\Phi\right) + i\sinh\frac{w}{2}\,\vec u\left(i + \vec u_\Phi\right).
 $$
 
-In the second term the centrality of $i$ and the lemma in the form $i(i+\vec u_\eta) = \vec u_\eta(i+\vec u_\eta)$ give
+In the second term the centrality of $i$ and the lemma in the form $i(i+\vec u_\Phi) = \vec u_\Phi(i+\vec u_\Phi)$ give
 
 $$
-i\,\vec u\left(i + \vec u_\eta\right)
-= \vec u\, i\left(i + \vec u_\eta\right)
-= \vec u\,\vec u_\eta\left(i + \vec u_\eta\right),
+i\,\vec u\left(i + \vec u_\Phi\right)
+= \vec u\, i\left(i + \vec u_\Phi\right)
+= \vec u\,\vec u_\Phi\left(i + \vec u_\Phi\right),
 $$
 
-so that the two terms carry a common factor $i+\vec u_\eta$:
+so that the two terms carry a common factor $i+\vec u_\Phi$:
 
 $$
-\tilde U_{\Psi,\mathrm b}\left(i + \vec u_\eta\right)
-= \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_\eta\right)\left(i + \vec u_\eta\right).
+\tilde U_{\Psi,\mathrm b}\left(i + \vec u_\Phi\right)
+= \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_\Phi\right)\left(i + \vec u_\Phi\right).
 $$
 
 The point of the proposition is that the factor
 
 $$
-\tilde{D} \;=\; \cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_\eta
+\tilde{D} \;=\; \cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_\Phi
 $$
 
-contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\vec u\vec u_\eta$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\vec q\vec k_\Phi = -\vec q\cdot\vec k_\Phi + \vec q\times\vec k_\Phi$ it separates into its scalar and vector parts,
+contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\vec u\vec u_\Phi$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\vec q\vec k_\Phi = -\vec q\cdot\vec k_\Phi + \vec q\times\vec k_\Phi$ it separates into its scalar and vector parts,
 
 $$
-\vec u\vec u_\eta \;=\; -\cos\theta_{\mathrm{wav}}\,e_t + \vec u\times\vec u_\eta,
+\vec u\vec u_\Phi \;=\; -\cos\theta_{\mathrm{wav}}\,e_t + \vec u\times\vec u_\Phi,
 \qquad
-\cos\theta_{\mathrm{wav}} = \vec u\cdot\vec u_\eta,
+\cos\theta_{\mathrm{wav}} = \vec u\cdot\vec u_\Phi,
 $$
 
-so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}\right)e_t + \sinh\frac{w}{2}\,\vec u\times\vec u_\eta$ is a scalar plus a real vector, with
+so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}\right)e_t + \sinh\frac{w}{2}\,\vec u\times\vec u_\Phi$ is a scalar plus a real vector, with
 
 $$
-\tilde{D}\tilde{D}^{\natural} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}\right)^2e_t + \left|\sinh\frac{w}{2}\,\vec u\times\vec u_\eta\right|^2 e_t
+\tilde{D}\tilde{D}^{\natural} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}\right)^2e_t + \left|\sinh\frac{w}{2}\,\vec u\times\vec u_\Phi\right|^2 e_t
 = \left(\cosh w - \sinh w\cos\theta_{\mathrm{wav}}\right)e_t ,
 $$
 
-using $|\vec u\times\vec u_\eta|^2 = \sin^2\theta_{\mathrm{wav}}$. Every real quaternion of positive norm is a positive scalar times a unit real quaternion, and $\tilde{D} = \exp(d/2)\tilde{u}$ with
+using $|\vec u\times\vec u_\Phi|^2 = \sin^2\theta_{\mathrm{wav}}$. Every real quaternion of positive norm is a positive scalar times a unit real quaternion, and $\tilde{D} = \exp(d/2)\tilde{u}$ with
 
 $$
 \boxed{\; \exp(d) \;=\; \cosh w - \cos\theta_{\mathrm{wav}}\,\sinh w \;},
@@ -126,7 +126,7 @@ the relativistic Doppler factor of a wave propagating at angle $\theta_{\mathrm{
 
 ## The Rotation and the Dilation, Explicitly
 
-Writing $\vec u_b$ for the unit real vector along $\vec u\times\vec u_\eta$ (when the cross product does not vanish), the rotation rotor is a rotation about the axis perpendicular to the plane of $\vec u$ and $\vec u_\eta$,
+Writing $\vec u_b$ for the unit real vector along $\vec u\times\vec u_\Phi$ (when the cross product does not vanish), the rotation rotor is a rotation about the axis perpendicular to the plane of $\vec u$ and $\vec u_\Phi$,
 
 $$
 \tilde{u} \;=\; \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_b,
@@ -134,21 +134,21 @@ $$
 \tan\frac{\theta}{2} \;=\; \frac{\sinh\frac{w}{2}\,\sin\theta_{\mathrm{wav}}}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}},
 $$
 
-with $\sin\theta_{\mathrm{wav}} = |\vec u\times\vec u_\eta|$ and $\theta$ the rotation angle, taken with the sense of $\vec u_b$. The formulas are read off from $\tilde{D} = \exp(d/2)\tilde{u}$ by comparing the scalar parts and the magnitudes of the vector parts.
+with $\sin\theta_{\mathrm{wav}} = |\vec u\times\vec u_\Phi|$ and $\theta$ the rotation angle, taken with the sense of $\vec u_b$. The formulas are read off from $\tilde{D} = \exp(d/2)\tilde{u}$ by comparing the scalar parts and the magnitudes of the vector parts.
 
-The rotation acts on the propagation direction by rotating it **in the plane of $\vec u$ and $\vec u_\eta$**, which is the algebraic form of aberration:
+The rotation acts on the propagation direction by rotating it **in the plane of $\vec u$ and $\vec u_\Phi$**, which is the algebraic form of aberration:
 
 $$
-\tilde{u}\,\vec u_\eta\,\tilde{u}^{*} \;=\; \cos\theta\,\vec u_\eta - \sin\theta\,\vec u_e,
+\tilde{u}\,\vec u_\Phi\,\tilde{u}^{*} \;=\; \cos\theta\,\vec u_\Phi - \sin\theta\,\vec u_e,
 \qquad
-\vec u_e \;=\; \frac{\vec u - \cos\theta_{\mathrm{wav}}\,\vec u_\eta}{\sin\theta_{\mathrm{wav}}},
+\vec u_e \;=\; \frac{\vec u - \cos\theta_{\mathrm{wav}}\,\vec u_\Phi}{\sin\theta_{\mathrm{wav}}},
 $$
 
-where $\vec u_e$ is the unit vector in the plane of $\vec u$ and $\vec u_\eta$, perpendicular to $\vec u_\eta$ and pointing from $\vec u_\eta$ toward $\vec u$ — the component of $\vec u$ transverse to $\vec u_\eta$, normalized; in particular $\vec u = \cos\theta_{\mathrm{wav}}\,\vec u_\eta + \sin\theta_{\mathrm{wav}}\,\vec u_e$. In the transverse case $\vec u\cdot\vec u_\eta = 0$ this reduces to the source's $\tilde{u}\vec u_\eta\tilde{u}^{*} = \vec u_\eta\cos\theta - \vec u\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.
+where $\vec u_e$ is the unit vector in the plane of $\vec u$ and $\vec u_\Phi$, perpendicular to $\vec u_\Phi$ and pointing from $\vec u_\Phi$ toward $\vec u$ — the component of $\vec u$ transverse to $\vec u_\Phi$, normalized; in particular $\vec u = \cos\theta_{\mathrm{wav}}\,\vec u_\Phi + \sin\theta_{\mathrm{wav}}\,\vec u_e$. In the transverse case $\vec u\cdot\vec u_\Phi = 0$ this reduces to the source's $\tilde{u}\vec u_\Phi\tilde{u}^{*} = \vec u_\Phi\cos\theta - \vec u\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.
 
-The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U_{\Psi,\mathrm b}$ points opposite to the velocity, so that $\vec u_\eta$ moves *away* from $\vec u$ and hence *toward* the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde P_{\Phi}$ and on the field $\tilde{F}$ through the same two-sided operator, and since $\tilde{u}^{*} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.
+The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U_{\Psi,\mathrm b}$ points opposite to the velocity, so that $\vec u_\Phi$ moves *away* from $\vec u$ and hence *toward* the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde P_{\Phi}$ and on the field $\tilde{F}$ through the same two-sided operator, and since $\tilde{u}^{*} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.
 
-**The transverse case.** When the wave propagates perpendicular to the boost, $\vec u\cdot\vec u_\eta = 0$, so $\cos\theta_{\mathrm{wav}} = 0$ and the formulas simplify to the ones the source exhibits:
+**The transverse case.** When the wave propagates perpendicular to the boost, $\vec u\cdot\vec u_\Phi = 0$, so $\cos\theta_{\mathrm{wav}} = 0$ and the formulas simplify to the ones the source exhibits:
 
 $$
 \exp(d) = \cosh w = \gamma,
@@ -158,9 +158,9 @@ $$
 \exp(d/2) = \frac{\cosh\frac{w}{2}}{\cos\frac{\theta}{2}} .
 $$
 
-The first is the **transverse Doppler** factor: a wave crossing the boost perpendicular to it is blueshifted by $\gamma$, with no first-order term. The second says the aberration drag of a transversely crossing ray by a boost of rapidity $w$ is the angle whose half-tangent is $\tanh\frac{w}{2}$, that is $\cos\theta = \operatorname{sech}w$, so the ray is dragged forward and its angle to the boost tends to $\pi/2$ as $w\to\infty$. In this case $\vec u_b = \vec u\times\vec u_\eta$ is exactly the unit rotation axis and $\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u\vec u_\eta$.
+The first is the **transverse Doppler** factor: a wave crossing the boost perpendicular to it is blueshifted by $\gamma$, with no first-order term. The second says the aberration drag of a transversely crossing ray by a boost of rapidity $w$ is the angle whose half-tangent is $\tanh\frac{w}{2}$, that is $\cos\theta = \operatorname{sech}w$, so the ray is dragged forward and its angle to the boost tends to $\pi/2$ as $w\to\infty$. In this case $\vec u_b = \vec u\times\vec u_\Phi$ is exactly the unit rotation axis and $\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u\vec u_\Phi$.
 
-**Parallel propagation.** When $\vec u\times\vec u_\eta = 0$, the axis is undefined, $\theta = 0$ and the boost is a pure dilation: $\exp(d) = \cosh w \mp \sinh w = \exp(\mp w)$ for $\vec u_\eta = \pm\vec u$. There is no rotation, and the wave element and field are simply rescaled.
+**Parallel propagation.** When $\vec u\times\vec u_\Phi = 0$, the axis is undefined, $\theta = 0$ and the boost is a pure dilation: $\exp(d) = \cosh w \mp \sinh w = \exp(\mp w)$ for $\vec u_\Phi = \pm\vec u$. There is no rotation, and the wave element and field are simply rescaled.
 
 ## The Field Transforms the Same Way
 
@@ -172,7 +172,7 @@ $$
 \tilde U_{\Psi,\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\Psi,\mathrm b} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{*} .
 $$
 
-The verification is direct: writing the wave amplitude as $\tilde{F}_0 = i\sqrt{\epsilon_0}\,\vec E_0 - \sqrt{\mu_0}\,\vec H_0$ with $\vec E_0\perp\vec u_\eta$ and $\vec H_0 = Z_0^{-1}\vec u_\eta\times\vec E_0$, the identity holds for both polarisations of the wave and hence, the map being linear in $\tilde{F}$, for every null field of that wave. The same computation gives the field of the boosted wave in the frame in which the wave element is the one computed above.
+The verification is direct: writing the wave amplitude as $\tilde{F}_0 = i\sqrt{\epsilon_0}\,\vec E_0 - \sqrt{\mu_0}\,\vec H_0$ with $\vec E_0\perp\vec u_\Phi$ and $\vec H_0 = Z_0^{-1}\vec u_\Phi\times\vec E_0$, the identity holds for both polarisations of the wave and hence, the map being linear in $\tilde{F}$, for every null field of that wave. The same computation gives the field of the boosted wave in the frame in which the wave element is the one computed above.
 
 Two consequences deserve recording. First, the electric and magnetic fields are rotated and rescaled by the same $\tilde{u}$ and $\exp(d)$, so the polarisation direction, the propagation direction and the polarisation ellipse are carried by a single Euclidean similarity; this is why the boost of a plane wave can be drawn as a rotation of the wave's triad rather than as a mixing of field components. Second, because the field stays null, the boosted wave is still a radiation field and no Lorentz frame can make either field vanish — the null type of the invariant classification is preserved, as the field-strength article requires.
 
@@ -181,7 +181,7 @@ Two consequences deserve recording. First, the electric and magnetic fields are 
 The identity turns the kinematics of a boosted wave into three interpretations of one formula:
 
 - **Frequency.** The coefficient of $i$ in $\tilde P_{\Phi,2}$ is $\exp(d)\omega = \left(\cosh w - \cos\theta_{\mathrm{wav}}\sinh w\right)\omega$. This is the relativistic Doppler factor of *Exercise: The Relativistic Doppler Effect*, recovered here as the scalar factor of the dilation.
-- **Direction.** The rotation $\tilde{u}$ carries $\vec u_\eta$ to $\cos\theta\,\vec u_\eta - \sin\theta\,\vec u_e$ with $\vec u_e = (\vec u-\cos\theta_{\mathrm{wav}}\,\vec u_\eta)/\sin\theta_{\mathrm{wav}}$ the transverse direction of $\vec u$, so that $\vec u_\eta$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\vec u_\eta\cos\theta - \vec u\sin\theta$. This is aberration, recovered as the angle of the rotation.
+- **Direction.** The rotation $\tilde{u}$ carries $\vec u_\Phi$ to $\cos\theta\,\vec u_\Phi - \sin\theta\,\vec u_e$ with $\vec u_e = (\vec u-\cos\theta_{\mathrm{wav}}\,\vec u_\Phi)/\sin\theta_{\mathrm{wav}}$ the transverse direction of $\vec u$, so that $\vec u_\Phi$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\vec u_\Phi\cos\theta - \vec u\sin\theta$. This is aberration, recovered as the angle of the rotation.
 - **Amplitude and polarisation.** The field is rotated by $\tilde{u}$ and scaled by $\exp(d)$, so the Poynting vector and the energy density inherit the same similarity.
 
 What the identity does **not** say is equally worth stating. The rotation $\tilde{u}$ is a rotation of physical space, not a Lorentz transformation of spacetime; the Lorentz character of the boost has been entirely absorbed into the dilation $\exp(d)$ and the rotation $\tilde{u}$, and this is possible only because the wave is null. For a massive particle the same boost cannot be so reduced: the boost of a timelike four-velocity mixes the temporal and spatial components irreducibly, and there is no dilation and rotation of three-space that reproduces it. The reduction is thus a property of light, not of the Lorentz group.
@@ -190,13 +190,13 @@ A second caution is the medium. The identity is an identity of the vacuum algebr
 
 ## Summary
 
-A boost of an electromagnetic plane wave is a rotation of physical space composed with a dilation, and the rotation and the dilation are the same for the wave element and for the field. The whole result rests on the **pacwoman property** of the null element, $\vec u_\eta(i+\vec u_\eta) = i(i+\vec u_\eta) = (i+\vec u_\eta)\vec u_\eta$, which factors the boost rotor against the null element,
+A boost of an electromagnetic plane wave is a rotation of physical space composed with a dilation, and the rotation and the dilation are the same for the wave element and for the field. The whole result rests on the **pacwoman property** of the null element, $\vec u_\Phi(i+\vec u_\Phi) = i(i+\vec u_\Phi) = (i+\vec u_\Phi)\vec u_\Phi$, which factors the boost rotor against the null element,
 
 $$
-\tilde U_{\Psi,\mathrm b}\left(i+\vec u_\eta\right) = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_\eta\right)\left(i+\vec u_\eta\right),
+\tilde U_{\Psi,\mathrm b}\left(i+\vec u_\Phi\right) = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_\Phi\right)\left(i+\vec u_\Phi\right),
 $$
 
-leaving a real quaternion $\tilde{D} = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_\eta$, a scalar plus a real vector, which is $\exp(d/2)\tilde{u}$ with
+leaving a real quaternion $\tilde{D} = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_\Phi$, a scalar plus a real vector, which is $\exp(d/2)\tilde{u}$ with
 
 $$
 \exp(d) = \cosh w - \cos\theta_{\mathrm{wav}}\,\sinh w,
@@ -206,7 +206,7 @@ $$
 \tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\theta_{\mathrm{wav}}}{\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}},
 $$
 
-where $\theta_{\mathrm{wav}}$ is the angle between $\vec u$ and $\vec u_\eta$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_\eta$. Then
+where $\theta_{\mathrm{wav}}$ is the angle between $\vec u$ and $\vec u_\Phi$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_\Phi$. Then
 
 $$
 \boxed{\;\tilde P_{\Phi,2} = \tilde U_{\Psi,\mathrm b}\tilde P_{\Phi}\tilde U_{\Psi,\mathrm b}^{*} = \exp(d)\tilde{u}\tilde P_{\Phi}\tilde{u}^{*},
@@ -223,15 +223,15 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 | $\mathbb{B}$, $e_t = 1, \vec e_\eta$ | Biquaternion algebra, quaternion basis with $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
-| $\vec k_\Phi = k_\Phi\vec u_\eta = \frac{\omega}{c}\vec u_\eta$ | Wavevector, $k_\Phi = \omega/c$, $\vec u_\eta$ its unit direction |
-| $\tilde P_{\Phi} = \frac{\omega}{c}(i+\vec u_\eta)$ | Wave biquaternion (four-wavevector), null, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ |
+| $\vec k_\Phi = k_\Phi\vec u_\Phi = \frac{\omega}{c}\vec u_\Phi$ | Wavevector, $k_\Phi = \omega/c$, $\vec u_\Phi$ its unit direction |
+| $\tilde P_{\Phi} = \frac{\omega}{c}(i+\vec u_\Phi)$ | Wave biquaternion (four-wavevector), null, $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ |
 | $\tilde{F}$ | Field-strength biquaternion, pure vector, null for a plane wave, $\tilde P_{\Phi}\tilde{F}=0$ |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ | Boost rotor, Hermitian, unit norm; $w$ rapidity, $\vec u$ boost direction |
 | $\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_b$ | Spatial rotation rotor, unit real quaternion |
-| $\vec u_b$ | Unit real vector along $\vec u\times\vec u_\eta$ |
+| $\vec u_b$ | Unit real vector along $\vec u\times\vec u_\Phi$ |
 | $\exp(d)$ | Dilation factor, $= \cosh w - \cos\theta_{\mathrm{wav}}\sinh w$ (Doppler factor) |
-| $\theta_{\mathrm{wav}}$ | Angle between $\vec u$ and $\vec u_\eta$, $\cos\theta_{\mathrm{wav}} = \vec u\cdot\vec u_\eta$ |
-| $\vec u_e = (\vec u-\cos\theta_{\mathrm{wav}}\,\vec u_\eta)/\sin\theta_{\mathrm{wav}}$ | Unit in-plane vector transverse to $\vec u_\eta$, pointing toward $\vec u$ |
+| $\theta_{\mathrm{wav}}$ | Angle between $\vec u$ and $\vec u_\Phi$, $\cos\theta_{\mathrm{wav}} = \vec u\cdot\vec u_\Phi$ |
+| $\vec u_e = (\vec u-\cos\theta_{\mathrm{wav}}\,\vec u_\Phi)/\sin\theta_{\mathrm{wav}}$ | Unit in-plane vector transverse to $\vec u_\Phi$, pointing toward $\vec u$ |
 | $\theta$ | Rotation angle, $\tan\frac{\theta}{2} = \frac{\sinh\frac{w}{2}\sin\theta_{\mathrm{wav}}}{\cosh\frac{w}{2}-\sinh\frac{w}{2}\cos\theta_{\mathrm{wav}}}$ |
 | $c = c_0$ | Vacuum speed of light (the field statement is a vacuum statement) |
 

@@ -87,7 +87,7 @@ physical polarizations. These two are the transverse-traceless modes: transverse
 
 ### The Transverse-Traceless Projector
 
-The projection is performed by the transverse-traceless projector. For a wave vector $\vec k_\Phi$ with transverse metric $\Pi_{ij}=\delta_{ij}-\vec u_\eta_i\vec u_\eta_j$, the projector on symmetric spatial tensors is
+The projection is performed by the transverse-traceless projector. For a wave vector $\vec k_\Phi$ with transverse metric $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$, the projector on symmetric spatial tensors is
 
 $$
 P_{ij,\eta l} = \tfrac12\left(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta}\right)-\tfrac12\,\Pi_{ij}\Pi_{\eta l} ,
@@ -221,7 +221,7 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 
 ### The Trace-Free Square in Components
 
-The split is explicit in components. Write a material vector as $u=\sum_\eta u_\eta\vec e_\eta$ with real coefficients $u_\eta$, and take the symmetric square with components $T_{j\eta}=u_ju_k$, or $T_{j\eta}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
+The split is explicit in components. Write a material vector as $u=\sum_\eta u_k\vec e_\eta$ with real coefficients $u_k$, and take the symmetric square with components $T_{j\eta}=u_ju_k$, or $T_{j\eta}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
 \langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,
@@ -276,7 +276,7 @@ The framework's statement about the graviton is therefore the same as its statem
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor; gauge-invariant field strength |
 | $\sum_\mu\partial/\partial R_\mu\bar{h}_{\mu\nu}=0$ | de Donder (harmonic, Lorentz-type) gauge |
 | $10-4-4=2$ | Components, gauge removal, constraint removal, physical polarizations |
-| $\Pi_{ij}=\delta_{ij}-\vec u_\eta_i\vec u_\eta_j$ | Transverse metric |
+| $\Pi_{ij}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse metric |
 | $P_{ij,\eta l}=\tfrac12(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta})-\tfrac12\Pi_{ij}\Pi_{\eta l}$ | Transverse-traceless projector; $P^2=P$, $\mathrm{tr}P=2$ (verified) |
 | $\varepsilon^{+}_{ij},\varepsilon^{\times}_{ij}$ | Two polarizations; helicities $\pm2$ |
 | $V\odot V=0\oplus2$, $6=1+5$ | Symmetric square of the material vector and its decomposition |

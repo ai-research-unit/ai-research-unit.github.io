@@ -96,7 +96,7 @@ $$
 and all other commutators vanishing. The timelike mode has negative norm; the physical subspace is defined by the subsidiary condition and carries the two transverse polarizations with positive norm. The physical photon number is the transverse sum
 
 $$
-N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^3k}{(2\pi)^3}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
+N_\gamma=\sum_{\lambda=1}^{2}\int\!\frac{d^3k_\Phi}{(2\pi)^3}a_{\mathrm{fop},\lambda}^{\dagger} a_{\mathrm{fop},\lambda},
 $$
 
 which is non-negative on the physical subspace. The negative-norm states that the timelike mode builds are removed by the subsidiary condition; on the physical subspace the number operator is the transverse sum above.

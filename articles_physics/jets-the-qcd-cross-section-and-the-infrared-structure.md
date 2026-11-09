@@ -102,7 +102,7 @@ The correction column is $-\tfrac32\ln(1/y)$ multiplied by the same prefactor, a
 
 ## Two Divergences, Named
 
-**Soft.** A gluon emitted with energy $E\to0$ has an amplitude proportional to $1/E$, because the emission is a classical radiation field and the field of a slowly moving charge is the Coulomb field. The squared amplitude is therefore $1/E^2$, and the three-body phase space carries a factor $E$ from $d^3k/2E$, so the rate goes as $dE/E$: one power cancels and the other survives as the logarithm. The integral
+**Soft.** A gluon emitted with energy $E\to0$ has an amplitude proportional to $1/E$, because the emission is a classical radiation field and the field of a slowly moving charge is the Coulomb field. The squared amplitude is therefore $1/E^2$, and the three-body phase space carries a factor $E$ from $d^3k_\Phi/2E$, so the rate goes as $dE/E$: one power cancels and the other survives as the logarithm. The integral
 
 $$
 \int_0^{E_{\max}}\frac{dE}{E}
@@ -282,7 +282,7 @@ At $M_Z$ the perturbative value is about $0.05$, so the hadronisation correction
 
 **The null structure, again.** The eikonal and the collinear factorisation both rest on a light-cone decomposition, and $\mathbb{B}$'s null objects — the nilpotent elements and their exact unipotent exponentials — host that decomposition, as [the parton-model article](the-parton-model-and-deep-inelastic-scattering.html) recorded. The unipotent element is a null rotation and not a boost: it rescales neither null component, so it is the carrier of the light-cone structure and not the dilation that makes $x$ scale invariant. The angular ordering is an interference effect between amplitudes emitted at different angles, and interference is what the algebra's two-sector structure is built to describe. So the algebra hosts the *kinematics of the emission* and the *form of the interference*, and nothing more.
 
-**The limitation, stated plainly.** The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3k/2E$ an algebraic operation. So the whole of this article is transcription.
+**The limitation, stated plainly.** The divergences are properties of a gauge theory's phase space, and the cancellation is a theorem about that phase space. Neither the phase space nor the theorem is an object of $\mathbb{B}$: the algebra has no $SU(3)$, no triplet, and no measure that would make $\int d^3k_\Phi/2E$ an algebraic operation. So the whole of this article is transcription.
 
 **The ledger.**
 

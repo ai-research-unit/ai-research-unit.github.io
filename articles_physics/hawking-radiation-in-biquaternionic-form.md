@@ -369,7 +369,7 @@ Both identities were checked symbolically and numerically for several values of 
 The dimensionless exponent is
 
 $$
-\frac{2\pi\omega}{\kappa}\Big|_{\hbar=c=\eta _B=1}
+\frac{2\pi\omega}{\kappa}\Big|_{\hbar=c=k_B=1}
 \quad\longleftrightarrow\quad
 \frac{\hbar\omega}{k_B T},
 $$

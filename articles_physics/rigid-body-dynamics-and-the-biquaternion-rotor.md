@@ -79,7 +79,7 @@ $$
 For a pure vector $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
 
 $$
-\vec e_{\eta ,b}=\tilde u\,\vec e_\eta\,\tilde u^{*},
+\vec e_{\eta,b}=\tilde u\,\vec e_\eta\,\tilde u^{*},
 $$
 
 obtained by rotating the space axes by the rotor. The rotor for a rotation by angle $\theta_{\mathrm{axr}}$ about $\vec u$ is $\tilde u=\cos\frac\theta_{\mathrm{axr}}2+\sin\frac\theta_{\mathrm{axr}}2\vec u$, and at $\theta_{\mathrm{axr}}=2\pi$ it is $\tilde u=-e_t$: the orientation has returned but the rotor has not. This sign is the spinor sign, and it is a genuine feature of the description, not an artefact; it is what distinguishes a rotor from an orientation matrix. The body axes rotate by $+\theta_{\mathrm{axr}}$, in the sense of the standard definition $d\vec e_\eta/dr'_t=\vec\omega\times \vec e_\eta$; the logarithmic derivatives of the following section use that sign.
@@ -151,7 +151,7 @@ For a given angular-velocity history this is a linear equation for $\tilde u$, a
 The inertia tensor is a symmetric positive-definite operator on the real vector part. In the principal body frame it acts as
 
 $$
-I(\vec\omega_b)=\sum_{\eta=1}^{3}I_\eta\,\omega_\eta\,\vec e_\eta ,
+I(\vec\omega_b)=\sum_{\eta=1}^{3}I_\eta\,\omega_k\,\vec e_\eta ,
 $$
 
 and the kinetic energy and angular momentum are
@@ -270,7 +270,7 @@ $$
 \omega_3=c\,d\theta_{\mathrm{prc}}/dr'_t\cos\theta+c\,d\theta_{\mathrm{eul}}/dr'_t ,
 $$
 
-where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\theta_{\mathrm{prc}},\theta,\theta_{\mathrm{eul}})$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_\eta I_\eta\omega_\eta^2$ with these $\omega_\eta$, which is the standard Euler-angle Lagrangian of the rigid body.
+where the labels $(1,2,3)$ refer to the body axes and the assignment of the angles $(\theta_{\mathrm{prc}},\theta,\theta_{\mathrm{eul}})$ to precession, nutation, and spin is the stated convention. The verification is a direct differentiation of the rotor; the components above are what it yields. The kinetic energy in terms of the Euler angles is then $T=\frac12\sum_\eta I_\eta\omega_k^2$ with these $\omega_k$, which is the standard Euler-angle Lagrangian of the rigid body.
 
 ## The Heavy Symmetric Top
 
@@ -346,7 +346,7 @@ The rigid body is described in the biquaternion algebra as follows.
 |---|---|
 | $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Orientation rotor (unit real quaternion) |
 | $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ | Rotation by rotor conjugation |
-| $\vec e_{\eta ,b}=\tilde u\vec e_\eta\tilde u^{*}$ | Body axes |
+| $\vec e_{\eta,b}=\tilde u\vec e_\eta\tilde u^{*}$ | Body axes |
 | $\vec\omega_b=+2c\,\tilde u^{\natural}d\tilde u/dr'_t$ | Body-frame angular velocity |
 | $\vec\omega_s=+2c\,d\tilde u/dr'_t\tilde u^{\natural}=\tilde u\vec\omega_b\tilde u^{*}$ | Space-frame angular velocity |
 | $I(\vec\omega_b)=\sum_\eta I_\eta\omega_k\vec e_\eta$ | Inertia operator (principal frame) |

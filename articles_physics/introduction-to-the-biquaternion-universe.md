@@ -51,7 +51,7 @@ Written as elements of the algebra, each sector carries its own four real parame
 
     with $r_t$ the informational temporal coordinate, a length, and $\vec r_\Psi = r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z$ the informational space.
 
-Where the prime falls is what distinguishes the sectors: in $\mathbb{B}_{\Phi}$ it is the **scalar** $r'_t$ (the time), in $\mathbb{B}_{\Psi}$ the **three vectors** $r'_\eta$ (the space). This is why the prime is not attached to a sector — $r'_t$ is a material parameter, $r'_\eta$ an informational one — and it is the one rule that makes the two sectors mirror images of each other. The complex structure is then visible as a count: the material sector has three real spatial directions and one imaginary temporal direction, the informational sector three imaginary spatial directions and one real temporal direction.
+Where the prime falls is what distinguishes the sectors: in $\mathbb{B}_{\Phi}$ it is the **scalar** $r'_t$ (the time), in $\mathbb{B}_{\Psi}$ the **three vectors** $r'_k$ (the space). This is why the prime is not attached to a sector — $r'_t$ is a material parameter, $r'_k$ an informational one — and it is the one rule that makes the two sectors mirror images of each other. The complex structure is then visible as a count: the material sector has three real spatial directions and one imaginary temporal direction, the informational sector three imaginary spatial directions and one real temporal direction.
 
 ## The Complex Coordinates
 
@@ -78,7 +78,7 @@ The **real parameters** $(r'_t,r_x,r_y,r_z)$ describe the material sector, and t
 
 **The same decomposition, read on the coordinates.** The algebraic split of the opening and the coordinate values above are the same statement twice: matching the two writings coefficient by coefficient identifies each of the eight parameters with one coordinate of the element, the two times in the same unit as the three spaces. There is no second set of names: the parameters are the coordinates.
 
-The unprimed parameter is throughout the **real part** of the complex coefficient and the primed one its **imaginary part**. It is worth noting which is which for the temporal coefficient: the real part of $R_t$ is $r_t$, an informational coordinate, while its imaginary part $r'_t$ is the material one. The two sectors take disjoint halves of the eight parameters — $\mathbb{B}_{\Phi}$ takes $r'_t$ together with the three $r_\eta$, $\mathbb{B}_{\Psi}$ takes $r_t$ together with the three $r'_\eta$ — so four complex coefficients and eight real parameters carry exactly the same information.
+The unprimed parameter is throughout the **real part** of the complex coefficient and the primed one its **imaginary part**. It is worth noting which is which for the temporal coefficient: the real part of $R_t$ is $r_t$, an informational coordinate, while its imaginary part $r'_t$ is the material one. The two sectors take disjoint halves of the eight parameters — $\mathbb{B}_{\Phi}$ takes $r'_t$ together with the three $r_\eta$, $\mathbb{B}_{\Psi}$ takes $r_t$ together with the three $r'_k$ — so four complex coefficients and eight real parameters carry exactly the same information.
 
 **One element, one point, one label.** The eight parameters split four and four between the parts, and the split gives the element its second interpretation. Read on its material part, the element is a spacetime event, $\tilde R_\Phi=i r'_t\,e_t+\vec r_\Phi$, and its informational part $\tilde R_\Psi$ supplies the four parameters of its **internal label**; read on its informational part, it is an event of the informational sector, $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$, and its material part $\tilde R_\Phi$ supplies the four parameters of its **spacetime label**. The four complex coefficients therefore read as a spacetime point together with the matching point of the other sector, and no coefficient is idle: each carries one coordinate of each sector at once. That is why one element of $\mathbb{B}$ serves both as a four-vector and as a state — the two interpretations use the two halves of the same four coefficients.
 
@@ -97,7 +97,7 @@ $$
 where ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_\eta^{\natural}=-\vec e_\eta$, hence $d\tilde{R}^{\natural} = dR_t\,e_t - dR_x\,\vec e_x - dR_y\,\vec e_y - dR_z\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{R}} = \sum_\mu \overline{R_\mu}\,e_\mu$. The two are different operations on the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the plain square $d\tilde{R}\,d\tilde{R}$ is not $\sum_\mu (dR_\mu)^2$. Expanding in real and imaginary parts,
 
 $$
-(dR_t)^2 = \bigl((dr_t)^2 - (dr'_t)^2 + 2i\,dr_t\,dr'_t\bigr),\qquad (dR_\eta)^2 = (dr_\eta)^2 - (dr'_\eta)^2 + 2i\,dr_\eta\,dr'_\eta .
+(dR_t)^2 = \bigl((dr_t)^2 - (dr'_t)^2 + 2i\,dr_t\,dr'_t\bigr),\qquad (dR_\eta)^2 = (dr_\eta)^2 - (dr'_k)^2 + 2i\,dr_\eta\,dr'_k .
 $$
 
 The **real part** of $\langle d\tilde{R}\rangle_{\natural} = \sum_\mu (dR_\mu)^2$ reproduces the Lorentzian interval on the material sector and the mirror interval on the informational one. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i r'_t$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
@@ -108,7 +108,7 @@ $$
 \boxed{\;\langle d\tilde R_\Phi\rangle_{\natural} = -(dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2\;},
 $$
 
-the Minkowski interval of signature $(3,1)$. On the informational part, where $d\tilde R=d\tilde R_\Psi$ and only $dr_t$ and the $dr'_\eta$ are non-zero,
+the Minkowski interval of signature $(3,1)$. On the informational part, where $d\tilde R=d\tilde R_\Psi$ and only $dr_t$ and the $dr'_k$ are non-zero,
 
 $$
 \boxed{\;\langle d\tilde R_\Psi\rangle_{\natural} = dr_t^2 - (dr'_x)^2 - (dr'_y)^2 - (dr'_z)^2\;},
@@ -238,7 +238,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{R} = R_t e_t + \vec R = \sum_\mu R_\mu e_\mu$ | Biquaternionic coordinate, with $\vec R = R_x\vec e_x+R_y\vec e_y+R_z\vec e_z$ its vector part |
-| $R_t = r_t+ir'_t$, $R_\eta = r_\eta+ir'_\eta$ | Complex coefficient: $r_\mu$ its real part (the coefficient of $e_\mu$), $r'_\mu$ its imaginary part (the coefficient of $ie_\mu$); the four coefficients are lengths, and no factor of $c$ stands on the time |
+| $R_t = r_t+ir'_t$, $R_\eta = r_\eta+ir'_k$ | Complex coefficient: $r_\mu$ its real part (the coefficient of $e_\mu$), $r'_\mu$ its imaginary part (the coefficient of $ie_\mu$); the four coefficients are lengths, and no factor of $c$ stands on the time |
 | $\tilde R = \tilde R_\Psi + \tilde R_\Phi$ | The split of the coordinate into its informational and material parts |
 | $\tilde R_\Phi = i r'_t\,e_t + \vec r_\Phi = i r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z$ | Material element, with $\vec r_\Phi=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ its vector part |
 | $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi = r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ | Informational element, with $\vec r_\Psi=r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z$ its vector part |
@@ -254,7 +254,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\mathbb{B}_{iH}$ | Antiquaternion subspace: the imaginary half, all four coefficients purely imaginary, the partner of $\mathbb{B}_{H}$ in $\mathbb{B} = \mathbb{B}_{H} \oplus \mathbb{B}_{iH}$. This split crosses the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split: the scalar of $\mathbb{B}_{\Phi}$ and the vectors of $\mathbb{B}_{\Psi}$ come from here |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of the informational sector) |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$, $\lvert\vec r\rvert \le 1$ | Mixed state (positive, trace one). The Bloch vector $\vec r$ carries no sector label and is distinct from the two vector parts $\vec r_\Phi$ and $\vec r_\Psi$ |
-| $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ | Hermitian element (observable of the informational sector); $r_t \in \mathbb{R}$ is the scalar component and $\vec r_\Psi = (r'_x,r'_y,r'_z)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $r_t\,e_t+i\,r'_\eta\vec e_\eta$ |
+| $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ | Hermitian element (observable of the informational sector); $r_t \in \mathbb{R}$ is the scalar component and $\vec r_\Psi = (r'_x,r'_y,r'_z)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $r_t\,e_t+i\,r'_k\vec e_\eta$ |
 | $(r'_t,r_x,r_y,r_z)$ | Real coordinates of the material sector, all four in metres; the speed of light is a conversion and not a coordinate |
 | $(r_t, r'_{x}, r'_{y}, r'_{z})$ | Real coordinates of the informational sector, all four in metres |
 | $\tilde U_{\mathrm{lor}} \in \mathbb{B}$ with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |

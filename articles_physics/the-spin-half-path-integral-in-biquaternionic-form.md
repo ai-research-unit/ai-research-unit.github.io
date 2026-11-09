@@ -64,14 +64,14 @@ where $d^2z$ is the ordinary area element in the complex plane. The measure is t
 Discretise the time interval $[0,T]$ into $N$ slices of width $\epsilon = T/N$. Inserting $\mathbb{1}$ at each intermediate time and using the short-time limit of the propagator,
 
 $$
-\langle  z_{\eta +1}|\exp(-\frac{k_m\,i\,\epsilon\,\tilde{R}_{\Psi}}{m\,c})|z_k\rangle
-\approx  \langle  z_{\eta +1}|z_k\rangle\,\exp(-i\epsilon\langle  z_k|\tilde R_\Psi|z_k\rangle\frac{k_m}{m\,c}),
+\langle  z_{k+1}|\exp(-\frac{k_m\,i\,\epsilon\,\tilde{R}_{\Psi}}{m\,c})|z_k\rangle
+\approx  \langle  z_{k+1}|z_k\rangle\,\exp(-i\epsilon\langle  z_k|\tilde R_\Psi|z_k\rangle\frac{k_m}{m\,c}),
 $$
 
 the propagator becomes
 
 $$
-G_{\mathrm{prop}}(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{\eta =1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{\eta =0}^{N-1}\langle  z_{\eta +1}|z_k\rangle\,\exp(-\frac{k_m\,i\,\epsilon}{m\,c}\langle  z_k|\tilde R_\Psi|z_k\rangle),
+G_{\mathrm{prop}}(z_f,T;z_i,0) = \lim_{N\to\infty}\left(\frac{2}{\pi}\right)^{\!N}\int\prod_{k=1}^{N-1}\frac{d^2z_k}{(1+|z_k|^2)^2}\prod_{k=0}^{N-1}\langle  z_{k+1}|z_k\rangle\,\exp(-\frac{k_m\,i\,\epsilon}{m\,c}\langle  z_k|\tilde R_\Psi|z_k\rangle),
 $$
 
 with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully explicit form.
@@ -83,7 +83,7 @@ with $z_0 = z_i$, $z_N = z_f$. This is the spin-1/2 path integral in its fully e
 In the continuum limit the product of overlaps contributes
 
 $$
-\prod_k\langle  z_{\eta +1}|z_k\rangle
+\prod_k\langle  z_{k+1}|z_k\rangle
 \;\longrightarrow\;
 \exp\!\left(-\int_0^T\langle  z|\partial/\partial r'_t|z\rangle\,dr'_t\right)
 = \exp\!\left(\frac{k_m\,i}{m\,c}S_{WZ}\right),

@@ -205,7 +205,7 @@ $$
 \tilde{S}_{\Psi}^2 = \sum_{\eta=1}^{3}\left(\frac{m\,c}{2\,k_m} i\vec e_\eta\right)^2 =\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\cdot  3e_t =\frac{3\,m^{2}\,c^{2}}{4\,k_m^{2}}\, e_t ,
 $$
 
-a central element of the algebra, and $[\tilde S_{\Psi}^2,\tilde S_{\Psi,\eta}]=0$ for all $\eta$. This is the value $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ with $s=\tfrac12$, obtained here from $(i\vec e_\eta)^2=+e_t$.
+a central element of the algebra, and $[\tilde S_{\Psi}^2,\tilde S_{\Psi,\eta}]=0$ for all $k$. This is the value $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ with $s=\tfrac12$, obtained here from $(i\vec e_\eta)^2=+e_t$.
 
 The orbital and spin operators act on independent structures — the external position argument and the internal quaternionic index — so the mixed commutators vanish:
 

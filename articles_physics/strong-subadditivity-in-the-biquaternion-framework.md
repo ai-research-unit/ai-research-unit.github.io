@@ -245,10 +245,10 @@ The table is the article's quantitative content. The GHZ deficit is one full bit
 
 The equality case is completely characterized, and the characterization is worth stating because the framework's Markov examples are its instances.
 
-> **Theorem (Hayden–Jozsa–Petz–Winter).** Strong subadditivity is saturated for $\rho_{ABC}$ if and only if the Hilbert space of $B$ decomposes as $\mathcal H_B=\bigoplus_k\mathcal H_{b_\eta ^L}\otimes\mathcal H_{b_\eta ^R}$ in such a way that
+> **Theorem (Hayden–Jozsa–Petz–Winter).** Strong subadditivity is saturated for $\rho_{ABC}$ if and only if the Hilbert space of $B$ decomposes as $\mathcal H_B=\bigoplus_k\mathcal H_{b_k^L}\otimes\mathcal H_{b_k^R}$ in such a way that
 > $$
-> \rho_{ABC}=\bigoplus_k p_\eta\ \rho_{A b_\eta ^L}\otimes\rho_{b_\eta ^R C},
-> \qquad p_\eta\ge0,\quad \sum_\eta p_\eta=1 .
+> \rho_{ABC}=\bigoplus_k p_k\ \rho_{A b_k^L}\otimes\rho_{b_k^R C},
+> \qquad p_k\ge0,\quad \sum_k p_k=1 .
 > $$
 > The state is then a **quantum Markov chain**: $B$ is a "bridge" whose left part $b_k^L$ carries the correlation to $A$ and whose right part $b_k^R$ carries it to $C$, with no correlation between $A$ and $C$ conditional on $B$.
 
@@ -314,7 +314,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $I(A:C|B)$ | Conditional mutual information; the deficit |
 | $Q_{ABC}$ | Reference operator, $\mathrm{Tr}\,Q_{ABC}\le1$; its element reading is $\tilde Q_{ABC}=\exp(\log\tilde Q_{\mathrm{AB}}+\log\tilde Q_{\mathrm{BC}}-\log\tilde Q_{\mathrm B})$ on the lifts $\tilde Q_{\mathrm{AB}}=\rho_{AB}\otimes I_C$, $\tilde Q_{\mathrm{BC}}=I_A\otimes\rho_{BC}$ and $\tilde Q_{\mathrm B}=I_A\otimes\rho_B\otimes I_C$ |
 | $\Lambda$ | Completely positive trace-preserving map (e.g. $\mathrm{Tr}_C$) |
-| $\rho_{ABC}=\bigoplus_k p_\eta\,\rho_{Ab_\eta ^L}\otimes\rho_{b_\eta ^R C}$ | Quantum Markov chain (equality case) |
+| $\rho_{ABC}=\bigoplus_k p_k\,\rho_{Ab_k^L}\otimes\rho_{b_k^R C}$ | Quantum Markov chain (equality case) |
 
 ## Further Reading
 

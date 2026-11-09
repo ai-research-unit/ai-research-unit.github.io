@@ -142,7 +142,7 @@ $$
 \frac{\partial}{\partial R_\mu}:=\Bigl(\frac{\partial}{\partial r_\mu}-i\frac{\partial}{\partial r'_\mu}\Bigr),\qquad R_\mu=r_\mu+ir'_\mu .
 $$
 
-The $i$ is glued to the primed parameter: the derivative is taken with respect to the product $i r'_\mu$, not with respect to $r'_\mu$ with the $i$ pulled out in front, so the second term carries a minus and no reciprocal. The four coefficients are lengths in one and the same unit, so $R_t$, $r_t$ and $r'_t$ are lengths in the same sense as $R_\eta$, $r_\eta$ and $r'_\eta$, and no dilation stands in front of the derivative. It is the formal derivative on the complex coordinate; with $R_\mu$ and $\bar R_\mu$ read as independent, its unhalved normalization gives $\partial R_\mu/\partial R_\mu=2$ and $\partial R_\mu/\partial\bar R_\mu=0$. The conjugate derivative reverses the sign of the $i$ and nothing else,
+The $i$ is glued to the primed parameter: the derivative is taken with respect to the product $i r'_\mu$, not with respect to $r'_\mu$ with the $i$ pulled out in front, so the second term carries a minus and no reciprocal. The four coefficients are lengths in one and the same unit, so $R_t$, $r_t$ and $r'_t$ are lengths in the same sense as $R_\eta$, $r_\eta$ and $r'_k$, and no dilation stands in front of the derivative. It is the formal derivative on the complex coordinate; with $R_\mu$ and $\bar R_\mu$ read as independent, its unhalved normalization gives $\partial R_\mu/\partial R_\mu=2$ and $\partial R_\mu/\partial\bar R_\mu=0$. The conjugate derivative reverses the sign of the $i$ and nothing else,
 
 $$
 \frac{\partial}{\partial\bar R_\mu}:=\Bigl(\frac{\partial}{\partial r_\mu}+i\frac{\partial}{\partial r'_\mu}\Bigr),
@@ -152,7 +152,7 @@ with $\partial\bar R_\mu/\partial\bar R_\mu=2$.
 
 **One derivative, two halves, and a sector keeps one half.** The two terms of the definition are the two halves of the coefficient, the unprimed term and the primed term. A sector sets one of them to zero, because the parameter it names is then not a coordinate of that slice, and what is left is the tangential derivative alone.
 
-**On the material sector $\mathbb{B}_{\Phi}$** the slice keeps $r'_t$ and $r_\eta$, so $\partial/\partial r_t=0$ and $\partial/\partial r'_\eta=0$, and the definition reads
+**On the material sector $\mathbb{B}_{\Phi}$** the slice keeps $r'_t$ and $r_\eta$, so $\partial/\partial r_t=0$ and $\partial/\partial r'_k=0$, and the definition reads
 
 $$
 \frac{\partial}{\partial R_t}\Big|_{\mathbb{B}_{\Phi}}=-i\frac{\partial}{\partial r'_t},
@@ -160,12 +160,12 @@ $$
 \frac{\partial}{\partial R_\eta}\Big|_{\mathbb{B}_{\Phi}}=\frac{\partial}{\partial r_\eta};
 $$
 
-**On the informational sector $\mathbb{B}_{\Psi}$** the slice keeps $r_t$ and $r'_\eta$, so $\partial/\partial r'_t=0$ and $\partial/\partial r_\eta=0$, and the definition reads
+**On the informational sector $\mathbb{B}_{\Psi}$** the slice keeps $r_t$ and $r'_k$, so $\partial/\partial r'_t=0$ and $\partial/\partial r_\eta=0$, and the definition reads
 
 $$
 \frac{\partial}{\partial R_t}\Big|_{\mathbb{B}_{\Psi}}=\frac{\partial}{\partial r_t},
 \qquad
-\frac{\partial}{\partial R_\eta}\Big|_{\mathbb{B}_{\Psi}}=-i\frac{\partial}{\partial r'_\eta}.
+\frac{\partial}{\partial R_\eta}\Big|_{\mathbb{B}_{\Psi}}=-i\frac{\partial}{\partial r'_k}.
 $$
 
 **The two lines are the parent formula read twice, and the whole sector arithmetic is visible in them.** The $i$ sits on the time slot on the material sector and on the three space slots on the informational one; no factor stands in front of either term; and the unprimed half and the primed half are never both present, because no sector keeps both parameters of one slot. A reader who substitutes a sector line for the parent formula gains no new object: the parent formula is the definition, and the sector lines are its restrictions. The material reading reproduces the kinetic term of §*The Hermitian Product, Its Form and Its Norm*, and a derivative carrying a numerical factor would rescale that term.
@@ -208,7 +208,7 @@ $$
 
 It is this conjugate and no other that the series composes with (*Biquaternion Analysis*, §*The Biquaternionic Gradient*, §*The Quaternion Conjugate of the Gradient*). Write $\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial gradient, with divergence $\nabla\cdot\vec Q_{\mathrm f}$ and curl $\nabla\times\vec Q_{\mathrm f}$, and $\Delta_Q=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ for the Laplacian in the three vector coordinates.
 
-**One operator, two readings, and no third.** The eight real parameters of the algebra are the four $r_\mu$ and the four $r'_\mu$, and a sector is the setting of four of them to zero. The material sector $\mathbb{B}_{\Phi}$ keeps the imaginary temporal coordinate $i r'_t$, a length, together with the three real space parameters $r_\eta$; the informational sector $\mathbb{B}_{\Psi}$ keeps the real temporal coordinate $r_t$, a length, together with the three imaginary space parameters $r'_\eta$. The two keep complementary halves, and neither keeps a part of the other's half. The gradient is one sum in both readings, and what a sector fixes is the **value of the coefficients**, not the shape of the operator: on $\mathbb{B}_{\Phi}$ the coordinates are $R_t=i r'_t$ and $R_\eta=r_\eta$, so $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$; on $\mathbb{B}_{\Psi}$ they are $R_t=r_t$ and $R_\eta=i r'_\eta$, so $\partial/\partial R_t=\partial/\partial r_t$ and $\partial/\partial R_\eta=\frac{1}{i}\,\partial/\partial r'_\eta=-i\,\partial/\partial r'_\eta$. The basis $e_\mu$, the four terms of the sum, the tilde and the $\natural$ belong to the operator and are untouched by either substitution. A sector is a slice and not a variant, and no article of the series defines a second gradient.
+**One operator, two readings, and no third.** The eight real parameters of the algebra are the four $r_\mu$ and the four $r'_\mu$, and a sector is the setting of four of them to zero. The material sector $\mathbb{B}_{\Phi}$ keeps the imaginary temporal coordinate $i r'_t$, a length, together with the three real space parameters $r_\eta$; the informational sector $\mathbb{B}_{\Psi}$ keeps the real temporal coordinate $r_t$, a length, together with the three imaginary space parameters $r'_k$. The two keep complementary halves, and neither keeps a part of the other's half. The gradient is one sum in both readings, and what a sector fixes is the **value of the coefficients**, not the shape of the operator: on $\mathbb{B}_{\Phi}$ the coordinates are $R_t=i r'_t$ and $R_\eta=r_\eta$, so $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$; on $\mathbb{B}_{\Psi}$ they are $R_t=r_t$ and $R_\eta=i r'_k$, so $\partial/\partial R_t=\partial/\partial r_t$ and $\partial/\partial R_\eta=\frac{1}{i}\,\partial/\partial r'_k=-i\,\partial/\partial r'_k$. The basis $e_\mu$, the four terms of the sum, the tilde and the $\natural$ belong to the operator and are untouched by either substitution. A sector is a slice and not a variant, and no article of the series defines a second gradient.
 
 **What the sector substitution moves, and what it leaves.** The substitution moves one thing only: the factor that stands between a derivative symbol and its coordinate. On $\mathbb{B}_{\Phi}$ that factor is $-i$ on the time slot and $1$ on the three space slots; on $\mathbb{B}_{\Psi}$ it is $1$ on the time slot and $-i$ on the three space slots. Every sign below follows from those four numbers and from nothing else, so a reader who has them can reconstruct any formula in this article without consulting a table.
 
@@ -233,12 +233,12 @@ $$
 
 the conjugate carrying the three minus signs on the space slots and none on the time slot, because $\varepsilon=(1,-1,-1,-1)$ and the substitution touches the coefficients only. This is the reading in which the series does its work: the time term is imaginary and the space terms are real, so a real field has a purely imaginary time derivative and real space derivatives, and that one fact is what turns the gradient into the Maxwell pair and the chiral pair below.
 
-**On the informational sector $\mathbb{B}_{\Psi}$**, where $R_t=r_t$ and $R_\eta=i r'_\eta$, the time derivative is real, $\partial/\partial R_t=\partial/\partial r_t$, the three space derivatives carry $\frac{1}{i}=-i$, so $\partial/\partial R_\eta=-i\,\partial/\partial r'_\eta$, and the roles are exchanged: the time slot is now the real one and the three space slots are now the imaginary ones. The three spatial operations are those of the general definitions, read on the sector and marked with the sector and with nothing else: $\nabla|_{\mathbb{B}_{\Psi}}=\sum_\eta\vec e_\eta\,\partial/\partial r'_\eta$ and $\Delta|_{\mathbb{B}_{\Psi}}=\sum_\eta\partial^2/\partial {r'_\eta}^2$, the sum spelled out as everywhere and the mark naming the slice and not a chart. With $\partial/\partial R_\eta=-i\,\partial/\partial r'_\eta$ the two carry one factor $-i$ and one factor $(-i)^2=-1$ respectively, so $\Delta_Q|_{\mathbb{B}_{\Psi}}=-\Delta|_{\mathbb{B}_{\Psi}}$, and the gradient is
+**On the informational sector $\mathbb{B}_{\Psi}$**, where $R_t=r_t$ and $R_\eta=i r'_k$, the time derivative is real, $\partial/\partial R_t=\partial/\partial r_t$, the three space derivatives carry $\frac{1}{i}=-i$, so $\partial/\partial R_\eta=-i\,\partial/\partial r'_k$, and the roles are exchanged: the time slot is now the real one and the three space slots are now the imaginary ones. The three spatial operations are those of the general definitions, read on the sector and marked with the sector and with nothing else: $\nabla|_{\mathbb{B}_{\Psi}}=\sum_\eta\vec e_\eta\,\partial/\partial r'_k$ and $\Delta|_{\mathbb{B}_{\Psi}}=\sum_\eta\partial^2/\partial {r'_k}^2$, the sum spelled out as everywhere and the mark naming the slice and not a chart. With $\partial/\partial R_\eta=-i\,\partial/\partial r'_k$ the two carry one factor $-i$ and one factor $(-i)^2=-1$ respectively, so $\Delta_Q|_{\mathbb{B}_{\Psi}}=-\Delta|_{\mathbb{B}_{\Psi}}$, and the gradient is
 
 $$
-\tilde\nabla\big|_{\mathbb{B}_{\Psi}}=\frac{1}{c}\,e_t\frac{\partial}{\partial r_t}-i\sum_\eta\vec e_\eta\frac{\partial}{\partial r'_\eta},
+\tilde\nabla\big|_{\mathbb{B}_{\Psi}}=\frac{1}{c}\,e_t\frac{\partial}{\partial r_t}-i\sum_\eta\vec e_\eta\frac{\partial}{\partial r'_k},
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Psi}}=\frac{1}{c}\,e_t\frac{\partial}{\partial r_t}+i\sum_\eta\vec e_\eta\frac{\partial}{\partial r'_\eta},
+\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Psi}}=\frac{1}{c}\,e_t\frac{\partial}{\partial r_t}+i\sum_\eta\vec e_\eta\frac{\partial}{\partial r'_k},
 $$
 
 the conjugate again moving the three minus signs onto the space slots and leaving the time slot alone. The two displays are the same operator, and the difference between them is the position of the $i$: on $\mathbb{B}_{\Phi}$ it sits on the time coefficient, where it squares to $i^2=-1$; on $\mathbb{B}_{\Psi}$ it sits on the three space coefficients, where it squares to $i^2=-1$ three times. Reading the two lines term by term, the time slot loses its $-i$ and gains a $1$, the space slots lose their $1$ and gain a $-i$, and no other difference exists.
@@ -361,13 +361,13 @@ $$
 
 a plus on the spatial part and a minus on the time part. On $\mathbb{B}_{\Phi}$, where the series does its work, this reading is the **series convention**, used by the Klein–Gordon article, the Dirac article, the dedicated article *The Biquaternion D'Alembertian and Its Green's Functions*, and the great majority of the series. **The $i r'_t$ substitution is a statement about the material sector, not about the operator**, which in every case is $\partial^2/\partial R_t^2+\Delta_Q$; its signature is not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. The operator is one, and every article writes it the same way.
 
-**The special case of the informational sector.** On $\mathbb{B}_{\Psi}$ the coordinates are the informational ones, $R_t=r_t$ and $R_\eta=i r'_\eta$, and the substitution works the other way round: the time second derivative gains a plus, $\partial^2/\partial R_t^2=\partial^2/\partial r_t^2$, while each of the three space second derivatives gains a minus, $\partial^2/\partial Q_\eta^2=-\partial^2/\partial {r'_\eta}^2$, so the same operator reads
+**The special case of the informational sector.** On $\mathbb{B}_{\Psi}$ the coordinates are the informational ones, $R_t=r_t$ and $R_\eta=i r'_k$, and the substitution works the other way round: the time second derivative gains a plus, $\partial^2/\partial R_t^2=\partial^2/\partial r_t^2$, while each of the three space second derivatives gains a minus, $\partial^2/\partial Q_\eta^2=-\partial^2/\partial {r'_k}^2$, so the same operator reads
 
 $$
 \Box\big|_{\mathbb{B}_{\Psi}}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q=\frac{\partial^2}{\partial r_t^2}-\Delta|_{\mathbb{B}_{\Psi}},
 $$
 
-a plus on the time part and a minus on the spatial part, the sign pattern $(+,-,-,-)$ and the negative of the material line above. The two sector lines are one operator and the two signatures are one signature read twice: the material sector keeps the four parameters $r'_t$ and $r_\eta$, the informational sector keeps the four complementary ones $r_t$ and $r'_\eta$, and a slice that keeps a coordinate carrying an $i$ turns one sign while a slice that keeps the same coordinate without one does not. The informational reading is the one the state space $\mathbb{B}_{\Psi}$ is written in, and the operator it carries is $\Box$ with the time term positive; a reader who moves an equation from one sector to the other moves one overall sign and nothing else.
+a plus on the time part and a minus on the spatial part, the sign pattern $(+,-,-,-)$ and the negative of the material line above. The two sector lines are one operator and the two signatures are one signature read twice: the material sector keeps the four parameters $r'_t$ and $r_\eta$, the informational sector keeps the four complementary ones $r_t$ and $r'_k$, and a slice that keeps a coordinate carrying an $i$ turns one sign while a slice that keeps the same coordinate without one does not. The informational reading is the one the state space $\mathbb{B}_{\Psi}$ is written in, and the operator it carries is $\Box$ with the time term positive; a reader who moves an equation from one sector to the other moves one overall sign and nothing else.
 
 ### The Hermitian Product, Its Form and Its Norm
 
@@ -515,10 +515,10 @@ $$
 \tilde\nabla_{\mathrm{gco}}\big|_{\mathbb{B}_{\Phi}}=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{k_m\,i\,ϙ}{m\,c}A_t\Bigr)+\sum_\eta\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{k_m\,i\,ϙ}{m\,c}A_\eta\Bigr),
 $$
 
-and the connection enters with a plus on every slot. **On the informational sector** the same coefficients are read with $\partial/\partial R_t=\partial/\partial r_t$ and $\partial/\partial R_\eta=-i\,\partial/\partial r'_\eta$, so
+and the connection enters with a plus on every slot. **On the informational sector** the same coefficients are read with $\partial/\partial R_t=\partial/\partial r_t$ and $\partial/\partial R_\eta=-i\,\partial/\partial r'_k$, so
 
 $$
-\tilde\nabla_{\mathrm{gco}}\big|_{\mathbb{B}_{\Psi}}=e_t\Bigl(\frac{\partial}{\partial r_t}+\frac{k_m\,i\,ϙ}{m\,c}A_t\Bigr)+\sum_\eta\vec e_\eta\Bigl(-i\frac{\partial}{\partial r'_\eta}+\frac{k_m\,i\,ϙ}{m\,c}A_\eta\Bigr).
+\tilde\nabla_{\mathrm{gco}}\big|_{\mathbb{B}_{\Psi}}=e_t\Bigl(\frac{\partial}{\partial r_t}+\frac{k_m\,i\,ϙ}{m\,c}A_t\Bigr)+\sum_\eta\vec e_\eta\Bigl(-i\frac{\partial}{\partial r'_k}+\frac{k_m\,i\,ϙ}{m\,c}A_\eta\Bigr).
 $$
 
 **The connection is a value and the derivative is the factor.** The substitution of §*The Gradient* replaces the derivative term of each coefficient and leaves $A_\mu$ exactly as it stands, because $A_\mu$ is a component of a field and carries no derivative; a slice is a statement about the coordinates, and the connection does not know which slice the derivative beside it is read on. That is why the two displays differ in their derivative terms and agree in their connection terms, and it is the check to apply to any covariant formula of the series: the substitution acts on the $\partial$ and never on the $A$.

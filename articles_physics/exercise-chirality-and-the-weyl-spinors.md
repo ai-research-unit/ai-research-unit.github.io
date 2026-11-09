@@ -304,7 +304,7 @@ $$
 \gamma_3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
 $$
-the signed permutations $\gamma_0=iR_{\mathrm{axf},\vec e_x}$ and $\gamma_\eta=iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_{\nu(\eta )}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate basis operators of the display, $\gamma_0=C_t$ and $\gamma_\eta=C_\eta$, together with the chirality basis operator $\gamma_5$.
+the signed permutations $\gamma_0=iR_{\mathrm{axf},\vec e_x}$ and $\gamma_\eta=iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_{\nu(\eta)}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate basis operators of the display, $\gamma_0=C_t$ and $\gamma_\eta=C_\eta$, together with the chirality basis operator $\gamma_5$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

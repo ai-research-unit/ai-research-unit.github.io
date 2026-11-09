@@ -110,9 +110,9 @@ The scalar subspace $\mathbb{B}_{C}$ receives no contribution, which is again $\
 **The biparavector interpretation: the field as two families of planes.** The two halves just separated are not merely subspaces; each is a **family of planes**. The separation of the field into an electric and a magnetic part is the separation of the biparavector into a timelike and a spacelike part. In the paravector presentation of the algebra (*Paravectors and the Geometry of Spacetime*), a **biparavector** is the product of two orthogonal paravectors and represents a plane in spacetime. With the paravector directions $i\vec e_\eta$ there are six independent planes,
 
 $$
-\{e_t\,i\vec e_\eta\}_{\eta =x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
+\{e_t\,i\vec e_\eta\}_{\eta=x,y,z}=\{i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
-\{(i\vec e_j)(i\vec e_\eta)\}_{(j,\eta )=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
+\{(i\vec e_j)(i\vec e_\eta)\}_{(j,\eta)=(r_y,r_x),(r_z,r_y),(r_x,r_z)}=\{\vec e_z,\vec e_x,\vec e_y\},
 $$
 
 using $(i\vec e_j)(i\vec e_\eta)=-\vec e_j\vec e_\eta$ and $i^2=-1$. The first three, the planes containing the time direction, have the form $e_t\,i\vec e_\eta = i\vec e_\eta$ and are the pure **imaginary** vectors, that is the real span of $\{i\vec e_\eta\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Psi}$. The last three, the purely spatial planes, have the form $(i\vec e_j)(i\vec e_\eta)$ and are the pure **real** vectors, that is the real span of $\{\vec e_\eta\} = \mathbb{B}_{V}\cap\mathbb{B}_{\Phi}$.

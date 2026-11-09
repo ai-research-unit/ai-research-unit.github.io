@@ -32,7 +32,7 @@ where $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ acts on particle 1,
 Compute $E(\vec u_x, \vec u_y)$ for each of the four Bell states. Express the result in the form
 
 $$
-E(\vec u_x, \vec u_y) = \sum_{j,\eta =1}^{3} a_j\,T_{j\eta}\,b_k = \vec u_x^T T\, \vec u_y,
+E(\vec u_x, \vec u_y) = \sum_{j,\eta=1}^{3} a_j\,T_{j\eta}\,b_\eta = \vec u_x^T T\, \vec u_y,
 $$
 
 and identify the $3\times 3$ matrix $T$ for each Bell state.
@@ -71,7 +71,7 @@ $$
 The correlation function is the expectation of the tensor-product observable $\vec u_x\cdot\boldsymbol{\sigma}_1\otimes\vec u_y\cdot\boldsymbol{\sigma}_2$:
 
 $$
-E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_\eta I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,\eta} a_j b_\eta\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
+E(\vec u_x, \vec u_y) = \langle\tilde{Ξ}_{\mathrm{sp}}|\left(\sum_j a_j\sigma_j\otimes I\right)\left(\sum_\eta b_k I\otimes\sigma_\eta\right)|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{j,\eta} a_j b_k\,\langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle.
 $$
 
 So the correlation function is determined by the $3\times 3$ matrix
@@ -224,7 +224,7 @@ $$
 \tilde{R}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y),
 $$
 
-where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
+where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_k \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
 
 $$
 E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab}\right).
@@ -248,7 +248,7 @@ $$
 e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
 $$
 
-using $e_m \vec u_x = -a_m e_t + \sum_\eta \neq m} a_k e_m \vec e_\eta$. The scalar part is $-i a_m$, so
+using $e_m \vec u_x = -a_m e_t + \sum_{\eta \neq m} a_\eta e_m \vec e_\eta$. The scalar part is $-i a_m$, so
 
 $$
 \mathrm{Tr}_\mathbb{B}(e_m \cdot i\vec u_x) = -2 i a_m,
@@ -289,7 +289,7 @@ These match the standard results exactly.
 
 Both formulations give the same results, and both give the same limits. The cleanest way to read the table is by the direction of the measurements.
 
-**Parallel measurements along a coordinate axis.** Set $\vec u_x = \vec u_y = \vec u_\eta$; the correlation is the diagonal entry $T_{\eta \eta}$:
+**Parallel measurements along a coordinate axis.** Set $\vec u_x = \vec u_y = \vec u_\eta$; the correlation is the diagonal entry $T_{\eta\eta}$:
 
 | Axis | $\tilde{Ξ}_{\mathrm{sp}}^-$ | $Ξ^{+}$ | $Ξ^{-}$ | $\tilde{Ξ}_{\mathrm{sp}}^+$ |
 |---|---|---|---|---|

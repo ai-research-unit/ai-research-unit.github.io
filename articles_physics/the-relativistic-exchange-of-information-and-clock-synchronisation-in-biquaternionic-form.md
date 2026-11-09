@@ -71,10 +71,10 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta r'_{\mathrm{ret},t}\,\Delta r'_t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ propagating along $\vec u_\eta$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta r'_{\mathrm{ret},t} = 0$ or $\Delta r'_t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde P_{\Phi} =\frac{m\,c\,(i\omega/c\,e_t + \vec k_\Phi)}{k_m}$ propagating along $\vec u_\Phi$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_\eta\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
+Ξ = \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{Q}^{\natural}\right) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c = -\omega\left(r'_t - \frac{\vec u_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{c}\right) = -\omega\,r'_{\mathrm{ret},t}/c,
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.

@@ -221,7 +221,7 @@ The functional integral requires an integration measure, and the measure is the 
 $$
 \mathcal{D}\tilde{Ξ} = \prod_{x}\prod_{\mu\in\{t,x,y,z\}}dΞ_\mu(x)
 \quad\text{or}\quad
-\mathcal{D}\tilde{Ξ} = \prod_{k}\prod_{\mu\in\{t,x,y,z\}}dΞ_\mu(k),
+\mathcal{D}\tilde{Ξ} = \prod_{\eta}\prod_{\mu\in\{t,x,y,z\}}dΞ_\mu(k),
 $$
 a product of Lebesgue measures on the coefficients, one per biquaternion component. The algebra fixes the *number* of components — four complex coefficients, two per sector — and the fact that the measure is the volume form of the module; it does nothing else.
 

@@ -441,7 +441,7 @@ $$
 \langle\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}\rangle_{*}\Bigr).
 $$
 
-Under a change of representative the factors shift by the telescoping phases $\alpha_{k}-\alpha_{\eta +1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
+Under a change of representative the factors shift by the telescoping phases $\alpha_{\eta}-\alpha_{k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
 
 $$
 \Gamma=-\tfrac{1}{2}\Omega .

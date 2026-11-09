@@ -40,13 +40,13 @@ $$
 
 ### Coordinates, the Product and the Norm
 
-**Definition (Peirce coordinates).** For $Q\in\mathbb{B}$ the four complex numbers $\tilde Q_{ij}$ are defined by
+**Definition (Peirce coordinates).** For $Q\in\mathbb{B}$ the four complex numbers $Q_{ij}$ are defined by
 
 $$
-Q=\tilde Q_{11}\tilde\Pi_1+\tilde Q_{12}\vec\Upsilon_{12}+\tilde Q_{21}\vec\Upsilon_{21}+\tilde Q_{22}\tilde\Pi_2 ,
+Q=Q_{11}\tilde\Pi_1+Q_{12}\vec\Upsilon_{12}+Q_{21}\vec\Upsilon_{21}+Q_{22}\tilde\Pi_2 ,
 $$
 
-and $\Sigma(Q)$ is the two-by-two complex matrix with entries $\tilde Q_{ij}$, the left index first.
+and $\Sigma(Q)$ is the two-by-two complex matrix with entries $Q_{ij}$, the left index first.
 
 **Theorem (the coordinates are a matrix representation).** The map $Q\mapsto\Sigma(Q)$ is an isomorphism of real algebras from $\mathbb{B}$ onto $M_2(\mathbb{C})$, and
 
@@ -56,7 +56,7 @@ $$
 
 Consequently the spectrum of $Q$ is the spectrum of $\Sigma(Q)$, and $Q$ is a unit exactly when $\Sigma(Q)$ is invertible.
 
-*Proof.* The four units of §*The Frame and Its Units* are a basis: they are linearly independent by inspection of their coordinates, and $\mathbb{B}$ has real dimension eight, which is the real dimension of four complex parameters. On that basis the product rule $E_{ij}E_{jq}=E_{iq}$ is the matrix product rule, so the map is multiplicative; it is additive and real-linear by construction, and injective and surjective by the dimension count. For the star, $\tilde\Pi_i^*=\tilde\Pi_i$ because $\vec e_z$ is reversed twice by the two conjugations of the star, and $\vec\Upsilon_{12}^*=\vec\Upsilon_{21}$ by the same computation with one reversal; these are the conjugate-transpose relations of the four units, and multiplicativity extends them. For the determinant, $\det\Sigma=\tilde Q_{11}\tilde Q_{22}-\tilde Q_{12}\tilde Q_{21}$ is multiplicative and agrees with $N$ on the four units and on sums, and both are quadratic forms on the same eight real coordinates, so they agree everywhere.
+*Proof.* The four units of §*The Frame and Its Units* are a basis: they are linearly independent by inspection of their coordinates, and $\mathbb{B}$ has real dimension eight, which is the real dimension of four complex parameters. On that basis the product rule $E_{ij}E_{jq}=E_{iq}$ is the matrix product rule, so the map is multiplicative; it is additive and real-linear by construction, and injective and surjective by the dimension count. For the star, $\tilde\Pi_i^*=\tilde\Pi_i$ because $\vec e_z$ is reversed twice by the two conjugations of the star, and $\vec\Upsilon_{12}^*=\vec\Upsilon_{21}$ by the same computation with one reversal; these are the conjugate-transpose relations of the four units, and multiplicativity extends them. For the determinant, $\det\Sigma=Q_{11}Q_{22}-Q_{12}Q_{21}$ is multiplicative and agrees with $N$ on the four units and on sums, and both are quadratic forms on the same eight real coordinates, so they agree everywhere.
 
 **Remark (the matrix model of the earlier article is this matrix, read with the indices exchanged).** The model $\mathsf M(Q)=\begin{pmatrix}Q_t+iQ_z&Q_y+iQ_x\\-Q_y+iQ_x&Q_t-iQ_z\end{pmatrix}$ of *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set* sends $\tilde\Pi_1$ to $E_{22}$ and not to $E_{11}$. **The two matrices are similar, by the matrix that exchanges the two indices**, so the determinant and the spectrum agree and the individual entries do not. A statement about $N$ may be carried from one to the other without care; a statement about a coordinate, an eigenvector or a Peirce index may not.
 
@@ -328,8 +328,8 @@ When the determinant vanishes identically the obstruction is real: the range is 
 | $\tilde\Pi_1,\tilde\Pi_2$ | The complete pair $\tfrac12(e_t\pm i\vec e_z)$, Hermitian idempotents |
 | $\vec\Upsilon_{12},\vec\Upsilon_{21}$ | The mixed units $\tfrac12(i\vec e_x\mp\vec e_y)$, nilpotent |
 | $E_{ij}$ | The four units, a Peirce basis of $\mathbb{B}$ |
-| $\tilde Q_{ij}$ | A Peirce coordinate of $Q$, left index first |
-| $\Sigma(Q)$ | The coordinate matrix with entries $\tilde Q_{ij}$ |
+| $Q_{ij}$ | A Peirce coordinate of $Q$, the entry of $\Sigma(Q)$ at row $i$ and column $j$, left index first; the element is written $Q$ here, not $\tilde Q$ |
+| $\Sigma(Q)$ | The coordinate matrix with entries $Q_{ij}$ |
 | $u,v$ | The two columns of a rank-one coordinate matrix |
 | $\star$, $Q^{*}$ | The star of the algebra, quaternion conjugation followed by complex conjugation |
 | $\mathrm{tr}$ | The matrix trace, equal to $2Q_t$ |
@@ -368,7 +368,7 @@ When the determinant vanishes identically the obstruction is real: the range is 
 ## Further Reading
 
 - *The Biquaternion Fourier Transform: Symbol, Block Determinant and Zero Set*, for the symbol, the block form of left multiplication and the determinant whose zero set is inverted here.
-- *The Biquaternion Fourier Transform: Support and Rank*, for the rank four on the null set, the two annihilators, and the codimension of the cone; the present article uses those numbers and does not recompute them.
+- *The Biquaternion Fourier Transform: Support and Rank*, for the rank four on the null set, the two annihilators and the codimension of the cone; those numbers are used here, not recomputed.
 - *The Inverse Biquaternion Fourier Transform: Poles, Types and Tails*, for the residue inversion in a plane of the root, which is the route that closes at the degenerate set.
 - *Biquaternion Elementary Functions*, for the three closed forms of the exponential and for the image of the exponential, both quoted here with hypotheses.
 - *Special Element and Peirce Conventions*, for the Peirce vocabulary, the case rule of the layer, and the two mixed units whose index assignment is fixed here by computation.

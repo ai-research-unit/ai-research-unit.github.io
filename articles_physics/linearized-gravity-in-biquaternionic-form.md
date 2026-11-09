@@ -39,7 +39,7 @@ $$
 \Box = \partial^2/\partial R_t^2 + \Delta = -\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
 $$
 
-A product $k_\lambda x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_{\Phi x}r_x+k_{\Phi y}r_y+k_{\Phi z}r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i r'_t$.
+A product $k_{\Phi,\lambda}x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_{\Phi x}r_x+k_{\Phi y}r_y+k_{\Phi z}r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i r'_t$.
 
 ## Linearized Gravity in Standard Form
 
@@ -62,7 +62,7 @@ At linear order the Christoffel symbols are
 $$
 \begin{aligned}
 \Gamma_{0\mu\nu} &= -\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu 0} + \partial/\partial x_\nu h_{\mu 0} - \partial/\partial x_0 h_{\mu\nu}\right),\\[2pt]
-\Gamma_{\eta \mu\nu} &= +\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu \eta} + \partial/\partial x_\nu h_{\mu \eta} - \partial/\partial r_\eta h_{\mu\nu}\right),
+\Gamma_{\eta\mu\nu} &= +\tfrac{1}{2}\left(\partial/\partial x_\mu h_{\nu \eta} + \partial/\partial x_\nu h_{\mu \eta} - \partial/\partial r_\eta h_{\mu\nu}\right),
 \end{aligned}
 $$
 
@@ -79,7 +79,7 @@ $$
 \mathrm{Ric}_{\mu\nu} &= \tfrac{1}{2}\Bigl(\partial/\partial x_\mu\,D_\nu
 +\partial/\partial x_\nu\,D_\mu
 -\Box h_{\mu\nu}-\partial^2/\partial x_\mu\partial x_\nu h\Bigr),
-\qquad D_\nu = -\partial/\partial x_0 h_{0\nu}+\sum_\eta\partial/\partial r_\eta h_{\eta \nu},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
+\qquad D_\nu = -\partial/\partial x_0 h_{0\nu}+\sum_\eta\partial/\partial r_\eta h_{\eta\nu},\quad h = -h_{00}+h_{11}+h_{22}+h_{33},
 \end{aligned}
 $$
 
@@ -87,7 +87,7 @@ and the Ricci scalar is
 
 $$
 \mathrm{Ric} = -\mathrm{Ric}_{00}+\mathrm{Ric}_{11}+\mathrm{Ric}_{22}+\mathrm{Ric}_{33}
-= \partial^2/\partial x_0^2\,h_{00}-\sum_\eta\left(\partial^2/\partial x_0\partial r_\eta\,h_{\eta0}+\partial^2/\partial r_\eta\partial x_0\,h_{0\eta}\right)+\sum_\eta,l}\partial^2/\partial r_\eta\partial x_l\,h_{l\eta}-\Box h .
+= \partial^2/\partial x_0^2\,h_{00}-\sum_\eta\left(\partial^2/\partial x_0\partial r_\eta\,h_{\eta 0}+\partial^2/\partial r_\eta\partial x_0\,h_{0\eta}\right)+\sum_{\eta,l}\partial^2/\partial r_\eta\partial x_l\,h_{l\eta}-\Box h .
 $$
 
 The Riemann tensor is gauge invariant, and therefore so are $\mathrm{Ric}_{\mu\nu}$ and $\mathrm{Ric}$: they are constructed from the metric perturbation in a way that the relabelling leaves invariant.
@@ -105,12 +105,12 @@ so that the map is its own inverse, $\bar{\bar h}_{\mu\nu} = h_{\mu\nu}$, and on
 $$
 \begin{aligned}
 G_{00} = \mathrm{Ric}_{00} + \tfrac{1}{2}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_0+\partial/\partial x_0\,\bar{D}_0-\Box\bar{h}_{00}+\bar{S}\Bigr),\\[2pt]
-G_{0\eta} = \mathrm{Ric}_{0\eta} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_k+\partial/\partial r_\eta\,\bar{D}_0-\Box\bar{h}_{0\eta}\Bigr),\\[2pt]
-G_{\eta l} = \mathrm{Ric}_{\eta l} - \tfrac{1}{2}\delta_{\eta l}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_k-\Box\bar{h}_{\eta l}-\delta_{\eta l}\bar{S}\Bigr).
+G_{0\eta} = \mathrm{Ric}_{0\eta} = \tfrac{1}{2}\Bigl(&\partial/\partial x_0\,\bar{D}_\eta+\partial/\partial r_\eta\,\bar{D}_0-\Box\bar{h}_{0\eta}\Bigr),\\[2pt]
+G_{\eta l} = \mathrm{Ric}_{\eta l} - \tfrac{1}{2}\delta_{\eta l}\mathrm{Ric} = \tfrac{1}{2}\Bigl(&\partial/\partial r_\eta\,\bar{D}_l+\partial/\partial x_l\,\bar{D}_\eta-\Box\bar{h}_{\eta l}-\delta_{\eta l}\bar{S}\Bigr).
 \end{aligned}
 $$
 
-with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_\eta\partial/\partial r_\eta\bar{h}_{\eta \nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_\eta(\partial^2/\partial x_0\partial r_\eta\bar{h}_{\eta0}+\partial^2/\partial r_\eta\partial x_0\bar{h}_{0\eta})+\sum_\eta,l}\partial^2/\partial r_\eta\partial r_l\bar{h}_{l\eta}$; the minus on the time row of each contraction is the one minus of the interval.
+with $\bar{D}_\nu = -\partial/\partial x_0\bar{h}_{0\nu}+\sum_\eta\partial/\partial r_\eta\bar{h}_{\eta\nu}$ and $\bar{S} = \partial^2/\partial x_0^2\bar{h}_{00}-\sum_\eta(\partial^2/\partial x_0\partial r_\eta\bar{h}_{\eta 0}+\partial^2/\partial r_\eta\partial x_0\bar{h}_{0\eta})+\sum_{\eta,l}\partial^2/\partial r_\eta\partial r_l\bar{h}_{l\eta}$; the minus on the time row of each contraction is the one minus of the interval.
 
 The **harmonic gauge** is the condition
 
@@ -137,7 +137,7 @@ The harmonic condition is preserved by the residual gauge transformations with $
 A plane-wave solution of the vacuum equation is
 
 $$
-h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad -k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0,
+h_{\mu\nu} = A_{\mu\nu}\cos(k_{\Phi,\lambda}x_\lambda), \qquad -k_{t}^{\prime\,2}+k_{\Phi x}^2+k_{\Phi y}^2+k_{\Phi z}^2 = 0,
 $$
 
 with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$ and $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. For propagation in the $+z$ direction, $k_{\Phi,\mu} = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (r'_{t}, r_x, r_y, r_z)$, so that the phase is $\omega(r_z/c - r'_t)$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
@@ -188,7 +188,7 @@ $$
 \delta\tilde{E}_{\Phi}_\mu \;\longmapsto\; \delta\tilde{E}_{\Phi}_\mu + \vec G\varepsilon_\mu + \varepsilon_\mu\vec G^{*} .
 $$
 
-The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_\eta = \vec e_\eta$ and the boost generators $B_{\mathrm{boost},k} = i\vec e_\eta$. Its elements leave the metric perturbation invariant:
+The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_\eta = \vec e_\eta$ and the boost generators $B_{\mathrm{boost},\eta} = i\vec e_\eta$. Its elements leave the metric perturbation invariant:
 
 $$
 \langle \varepsilon_\mu, \vec G\varepsilon_\nu + \varepsilon_\nu\vec G^{*}\rangle_{\natural}
@@ -219,7 +219,7 @@ with the exact expansion $g_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\ra
 
 The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative $D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp}} + \vec\Gamma_\mu\tilde{Ξ}_{\mathrm{sp}}$ on an element-valued Dirac field, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
 
-For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator basis operator of a coordinate and the Lorentz generator, which the substituted equation does not. The generator basis operator of the coordinate $x_\mu$ is the frame basis operator $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, and $S_{ab}$ is the Lorentz generator those basis operators build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
+For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator basis operator of a coordinate and the Lorentz generator, which the substituted equation does not. The generator basis operator of the coordinate $x_\mu$ is the frame basis operator $iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(\eta)=y$, and $S_{ab}$ is the Lorentz generator those basis operators build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
 
 $$
 \bigl[L_{e_c}R_{\mathrm{axf},\vec e_{\nu(c)}},S_{ab}\bigr]
@@ -249,7 +249,7 @@ $$
 \boxed{\;\tilde R_\Psi = h\,e_t\;},
 $$
 
-a real multiple of the identity carrying only the **trace** $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_\eta h_{\eta \eta}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.
+a real multiple of the identity carrying only the **trace** $h = -h_{00}+h_{11}+h_{22}+h_{33}$, one minus being the square of the $i$ in $Q_t=i r'_t$. The off-diagonal contributions cancel in pairs by the symmetry of $h$, and the spatial-spatial contributions collapse to $\sum_\eta h_{\eta\eta}$; what survives is the trace and nothing else. The traceless part of $h_{\mu\nu}$ — nine of the ten components, and all of the transverse-traceless content that carries the two gravitational-wave polarizations — maps to zero. The same collapse occurs for the reverse ordering $\sum h_{\mu\nu}\varepsilon_\mu^{\natural}\varepsilon_\nu$. The computation was performed on randomly generated symmetric perturbations, and the result was checked to be the trace $h=-h_{00}+h_{11}+h_{22}+h_{33}$ in each case; the traceless diagonal case was checked separately and maps to zero.
 
 This is the precise sense in which the graviton is not a material biquaternion, and the obstacle is sharper than the observation that $h$ is not in $\mathbb{B}_{\Phi}$.
 
@@ -365,7 +365,7 @@ $$
 h_{11} = -h_{22} = A\cos\!\left(\omega\left(\tfrac{z}{c} - r'_t\right)\right), \qquad h_{0\mu}=0, \qquad h_{3\mu}=0,
 $$
 
-with the other components zero. The wave vector is null, $-k_{t}^{\prime\,2}+k_1^2+k_2^2+k_3^2 = 0$, and the amplitude is transverse, $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$, and traceless, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. A direct computation gives
+with the other components zero. The wave vector is null, $-k_{t}^{\prime\,2}+k_{\Phi x}^2+k_{\Phi y}^2+k_{\Phi z}^2 = 0$, and the amplitude is transverse, $-k_{t}^{\prime}A_{0\nu}+k_1A_{1\nu}+k_2A_{2\nu}+k_3A_{3\nu} = 0$, and traceless, $-A_{00}+A_{11}+A_{22}+A_{33} = 0$. A direct computation gives
 
 $$
 \mathrm{Ric}_{\mu\nu} = 0, \qquad \mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0,

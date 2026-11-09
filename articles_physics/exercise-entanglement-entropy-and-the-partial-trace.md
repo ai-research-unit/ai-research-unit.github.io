@@ -107,15 +107,15 @@ $$
 where $|u_k\rangle=\sum_i U_{i\eta}|i\rangle$ and $|v_k\rangle=\sum_j V_{j\eta}|j\rangle$ are orthonormal bases of the two factors. The reduced states are then
 
 $$
-\rho_1=MM^\dagger=\sum_\eta}s_k^2\,|u_k\rangle\langle u_k|,
+\rho_1=MM^\dagger=\sum_{\eta}s_k^2\,|u_k\rangle\langle u_k|,
 \qquad
-\rho_2=M^\dagger M=\sum_\eta}s_k^2\,|v_k\rangle\langle v_k| .
+\rho_2=M^\dagger M=\sum_{\eta}s_k^2\,|v_k\rangle\langle v_k| .
 $$
 
 This is the whole content of part (a) of the exercise. $\rho_1$ and $\rho_2$ are **not** equal in general — they act on different factors and have different eigenvectors — but they have the **same eigenvalues**, namely $s_1^2,s_2^2$, because the nonzero eigenvalues of $MM^\dagger$ and $M^\dagger M$ coincide. The entropy is a function of the spectrum alone, so
 
 $$
-S(\rho_1)=S(\rho_2)=-\sum_\eta s_k^2\log s_k^2
+S(\rho_1)=S(\rho_2)=-\sum_k s_k^2\log s_k^2
 =h(s_1^2),
 $$
 

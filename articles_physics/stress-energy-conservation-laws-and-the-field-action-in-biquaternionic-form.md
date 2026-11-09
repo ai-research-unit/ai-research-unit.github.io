@@ -234,10 +234,10 @@ which is the standard electromagnetic energy–momentum tensor in a medium: $W$ 
 **Tracelessness.** The trace in the unit metric, with the time term carrying the minus of $i^2$, is
 
 $$
-\sum_\mu T_{Q_\mu Q_\mu} = -T_{tt}+T_{\eta \eta} = -W - \sigma_{\eta \eta} = -W + W = 0 ,
+\sum_\mu T_{Q_\mu Q_\mu} = -T_{tt}+T_{\eta\eta} = -W - \sigma_{\eta\eta} = -W + W = 0 ,
 $$
 
-because $\sigma_{\eta \eta} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
+because $\sigma_{\eta\eta} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
 
 **Conservation.** The divergence of the tensor is the Lorentz four-force density. The tensor is defined by
 
@@ -402,7 +402,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |
 | $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{j\eta}=-\sigma_{j\eta}$ | Mixed components |
 | $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{j\eta}=-\sigma_{j\eta}$ | Symmetric components; the time column is read in the real coordinate |
-| $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{\eta \eta}=0$ | Tracelessness |
+| $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{\eta\eta}=0$ | Tracelessness |
 | $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $i r'_t$ coordinates $Q_t=i r'_t$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$ | Scalar stress–energy |
 | $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2$ | Scalar energy density, positive |

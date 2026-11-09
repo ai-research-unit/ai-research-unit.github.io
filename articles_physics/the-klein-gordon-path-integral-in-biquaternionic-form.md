@@ -318,7 +318,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, is the mass shell |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
-| $\Omega_{\vec \eta _\Phi}=\sqrt{k_\Phi^{2}+k_m^{2}}=k_{t}^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
+| $\Omega_{\vec k_\Phi}=\sqrt{k_\Phi^{2}+k_m^{2}}=k_{t}^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |
 | $S_E[\tilde{Ξ}]$ | Euclidean action, $\ge0$ for $k_m^{2}\ge0$ |
 | $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |

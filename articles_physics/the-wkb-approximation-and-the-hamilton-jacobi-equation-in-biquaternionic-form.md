@@ -143,7 +143,7 @@ S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \vec p\cdot(r_x\,\vec e_x+r_
 E =\frac{|\vec p|^2 c}{2\,m\,c},
 $$
 
-whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_\eta S_\eta(x_\eta)$, and each $S_\eta$ obeys
+whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)=A\exp\!\big(\frac{k_m\,i\,(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-E\,r'_t/c)}{m\,c^{2}}\big)$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$, is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_\eta S_\eta(x_k)$, and each $S_\eta$ obeys
 
 $$\frac{1}{2\,m}\left(\frac{dS_\eta}{dx_k}\right)^2 + V_\eta(x_k) = E_\eta,
 \qquad
@@ -153,7 +153,7 @@ $$
 so that
 
 $$
-S_\eta(x_\eta) = \pm\int^{x_\eta}\sqrt{2m\left(E_\eta - V_\eta(\zeta)\right)}\;d\zeta .
+S_\eta(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_\eta - V_\eta(\zeta)\right)}\;d\zeta .
 $$
 
 The signs are the two directions of motion, and the biquaternion-norm interpretation applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_\eta = V_\eta$ are where the radicand vanishes and the two branches meet.
@@ -183,7 +183,7 @@ which is the WKB amplitude: the wave function is large where the particle moves 
 In three dimensions the transport equation is solved by the **van Vleck determinant**,
 
 $$
-\boxed{\;A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,\eta}\,\partial x_{f,l}}\right)_{\eta ,l=1}^{3}\right|^{1/2}\;}
+\boxed{\;A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\ \propto\ \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,\eta}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}\;}
 $$
 
 which measures the focusing of the ray congruence: $A^2$ is the density of trajectories, and the determinant is the Jacobian of the map from initial to final positions. This is the same object that the path-integral article extracts from the Gaussian fluctuation determinant of the semiclassical kernel; the transport equation and the stationary-phase evaluation of the path integral give the same amplitude, as they must, since both are the leading order of the same expansion.

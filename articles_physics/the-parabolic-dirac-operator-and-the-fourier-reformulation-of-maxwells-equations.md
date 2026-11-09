@@ -162,7 +162,7 @@ $$
 \bigl|\exp(\mp 2\pi \vec k_\Phi r'_t)\bigr| = 1 \qquad \text{for every } (\vec k_\Phi,r'_t),
 $$
 
-with reason $\exp(\mp 2\pi \vec k_\Phi r'_t) = \exp\bigl(\mp 2\pi|\vec k_\Phi|r'_t\,\vec u_\eta\bigr)$ for the unit vector $\vec u_\eta = \vec k_\Phi/|\vec k_\Phi|$. It is a **phase**, a rotation in the plane spanned by $e_t$ and $\vec k_\Phi$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial/\partial r'_t G = \mp 2\pi \vec k_\Phi G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
+with reason $\exp(\mp 2\pi \vec k_\Phi r'_t) = \exp\bigl(\mp 2\pi|\vec k_\Phi|r'_t\,\vec u_\Phi\bigr)$ for the unit vector $\vec u_\Phi = \vec k_\Phi/|\vec k_\Phi|$. It is a **phase**, a rotation in the plane spanned by $e_t$ and $\vec k_\Phi$, not a growing or decaying factor. This is what makes the whole scheme work: the multiplier is bounded and unimodular, so multiplication by it is an isometry of $L^2$ in the space variables. Formula (9) was recomputed both as a closed form and as the solution of its differential equation; the closed form satisfies $\partial/\partial r'_t G = \mp 2\pi \vec k_\Phi G$ to $4\times10^{-15}$ over the sample, and its modulus is exactly $1$.
 
 ## The Parabolic Teodorescu Transform and the Right Inverse
 

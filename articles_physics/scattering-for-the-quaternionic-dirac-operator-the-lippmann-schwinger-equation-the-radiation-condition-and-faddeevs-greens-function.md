@@ -106,7 +106,7 @@ $$
 -\Delta - \frac{\omega^2}{c^2} = (D_3+k_\Phi)(D_3-k_\Phi), \qquad k_\Phi=\frac{\omega}{c},
 $$
 
-the scalar shift of *Biquaternion Regular Functions* with its two branches $D_{3\pm \eta _\Phi}$ and their fundamental solutions $\mathcal V_{\mathrm{vek},\pm k_\Phi}$; the kernel of the whole lies in the union of the two half-kernels, which is the decomposition used in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. This second form is the source's and is correct as printed, with $k_\Phi$ the scalar wavenumber.
+the scalar shift of *Biquaternion Regular Functions* with its two branches $D_{3\pm k_\Phi}$ and their fundamental solutions $\mathcal V_{\mathrm{vek},\pm k_\Phi}$; the kernel of the whole lies in the union of the two half-kernels, which is the decomposition used in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. This second form is the source's and is correct as printed, with $k_\Phi$ the scalar wavenumber.
 
 ### The vector factorisation and its two signs
 
@@ -117,7 +117,7 @@ $$
 $$
 
 $$
-(D_3+L_{i\vec \eta _\Phi})(D_3-L_{i\vec \eta _\Phi}) = (D_3-L_{i\vec \eta _\Phi})(D_3+L_{i\vec \eta _\Phi}) = -\Delta - i^2\vec k_\Phi^2 = -\Delta - \lvert\vec k_\Phi\rvert^2 ,
+(D_3+L_{i\vec k_\Phi})(D_3-L_{i\vec k_\Phi}) = (D_3-L_{i\vec k_\Phi})(D_3+L_{i\vec k_\Phi}) = -\Delta - i^2\vec k_\Phi^2 = -\Delta - \lvert\vec k_\Phi\rvert^2 ,
 $$
 
 where $\vec k_\Phi^2 = -\vec k_\Phi\cdot\vec k_\Phi = -\lvert\vec k_\Phi\rvert^2$ is the quaternion square of the vector. The two lines are one computation, the second being the first with $\vec k_\Phi\mapsto i\vec k_\Phi$, and between them they are the reason for the two signs the rest of the article carries. A shift by a **real** vector has the Klein–Gordon-type companion $-\Delta+\lvert\vec k_\Phi\rvert^2$, the sign of the square *opposite* to the scalar branch above; a shift by an **imaginary** vector has the Helmholtz companion $-\Delta-\lvert\vec k_\Phi\rvert^2$, which is the scalar branch's companion with $\alpha=\lvert\vec k_\Phi\rvert$. Both orderings agree in each line, and not because the parameter is a vector: a *constant* parameter of any kind commutes with $D_3$. The dependence on the side appears one step later, in the plane-wave substitution, and it is treated where it is used.
@@ -146,7 +146,7 @@ uniformly in the direction $\vec u_x$ and in $y$ in a bounded set. The source's 
 Applying the shifted operator to the Helmholtz kernel gives the fundamental solution of the Dirac-type equation,
 
 $$
--D_{-\eta _\Phi}F_\eta = C_\eta, \qquad
+-D_{-k_\Phi}F_\eta = C_\eta, \qquad
 C_\eta(\vec r) = \left(k_\Phi+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-ik_\Phi\vec u_x\right)\frac{\exp(ik_\Phi\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert)}{4\pi}, \qquad k_\Phi=\text{const},\ \operatorname{Im}(k_\Phi)\ge0 ,
 $$
 
@@ -156,7 +156,7 @@ $$
 \mathcal V_{\mathrm{vek},\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
 $$
 
-read at $\alpha=k_\Phi$: since $D_{-\eta _\Phi}=D_3-k_\Phi$ is the negative branch $D_{3,-\eta _\Phi}$, the source's kernel is $C_\eta=-(D_3-k_\Phi)\mathrm{Sd}_{k_\Phi}=\mathcal{V}_{\mathrm{vek},+k_\Phi}$. The two branches share the second-order companion, for $(D_3+k_\Phi)(D_3-k_\Phi)=-\Delta-k_\Phi^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k_\Phi}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_\eta$ to $D_{-\eta _\Phi}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik_\Phi\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_\eta$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k_\Phi^2$ and $\Delta+k_\Phi^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
+read at $\alpha=k_\Phi$: since $D_{-k_\Phi}=D_3-k_\Phi$ is the negative branch $D_{3,-k_\Phi}$, the source's kernel is $C_\eta=-(D_3-k_\Phi)\mathrm{Sd}_{k_\Phi}=\mathcal{V}_{\mathrm{vek},+k_\Phi}$. The two branches share the second-order companion, for $(D_3+k_\Phi)(D_3-k_\Phi)=-\Delta-k_\Phi^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k_\Phi}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_\eta$ to $D_{-k_\Phi}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik_\Phi\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_\eta$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k_\Phi^2$ and $\Delta+k_\Phi^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
 
 ### The boundary representation
 
@@ -282,7 +282,7 @@ $$
 so that the Helmholtz operator becomes the **conjugate** operator $-\Delta-2ik\cdot\nabla-\lambda^2$ below. For the unshifted Dirac operator,
 
 $$
-(D_3-L_{i\vec \eta _\Phi})\bigl(\exp(ik\cdot x)b\bigr) = \exp(ik\cdot x)D_3b ,
+(D_3-L_{i\vec k_\Phi})\bigl(\exp(ik\cdot x)b\bigr) = \exp(ik\cdot x)D_3b ,
 $$
 
 the plane wave being annihilated exactly. And for the shifted operator,
@@ -300,7 +300,7 @@ $$
 the cross terms cancelling and the sum being a pure scalar, so that the first and third terms collapse to $-2i(\vec k_\Phi\cdot b)$ and
 
 $$
-(D_3+R_{i\vec \eta _\Phi})\bigl(\exp(i\vec k_\Phi\cdot x)b\bigr) = \exp(i\vec k_\Phi\cdot x)\bigl(D_3b-2i\,\vec k_\Phi\cdot b\bigr) .
+(D_3+R_{i\vec k_\Phi})\bigl(\exp(i\vec k_\Phi\cdot x)b\bigr) = \exp(i\vec k_\Phi\cdot x)\bigl(D_3b-2i\,\vec k_\Phi\cdot b\bigr) .
 $$
 
 For a general quaternion-valued $b$ the two products do not combine and the substitution is not the plain transport of the vector case. This is the asymmetry announced in the factorisation section, and it is the reason the source poses its scattering problem on the vector operator and restricts, as noted above, to vector fields.
@@ -365,7 +365,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Transcribed from the source, not derived here.**
 
-- The outgoing kernel $C_\eta=-D_{-\eta _\Phi}F_\eta$, its far-field asymptotics and the boundary representation of Proposition 7.2.
+- The outgoing kernel $C_\eta=-D_{-k_\Phi}F_\eta$, its far-field asymptotics and the boundary representation of Proposition 7.2.
 - The radiation condition of Proposition 7.3 in both forms, and the additional decay hypothesis in the zero-divisor case.
 - The Lippmann–Schwinger equation (8.5) and its equivalence with the differential problem.
 - The weak-singularity bounds, the compactness they give, the unique continuation principle and the uniqueness theorem.
@@ -373,7 +373,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Established, in the sense that it was recomputed here.**
 
-- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta+\lvert\vec k_\Phi\rvert^2$ and the same with $i\vec k_\Phi$, both orderings; $(D_3-L_{i\vec \eta _\Phi})(\exp(i\vec k_\Phi\cdot x)b)=\exp(i\vec k_\Phi\cdot x)D_3b$; and $\vec k_\Phi b+b\vec k_\Phi=-2\vec k_\Phi\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
+- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta+\lvert\vec k_\Phi\rvert^2$ and the same with $i\vec k_\Phi$, both orderings; $(D_3-L_{i\vec k_\Phi})(\exp(i\vec k_\Phi\cdot x)b)=\exp(i\vec k_\Phi\cdot x)D_3b$; and $\vec k_\Phi b+b\vec k_\Phi=-2\vec k_\Phi\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
 - The identification $C_\eta=\mathcal{V}_{\mathrm{vek},+k_\Phi}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.
 
 **Not established, and left visible.**
@@ -418,7 +418,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $\vec k_\Phi$ | Wave vector, identified with $k_{\Phi x}\vec e_x+k_{\Phi y}\vec e_y+k_{\Phi z}\vec e_z$; $k_\Phi=\sqrt{\vec k_\Phi^2}$, $\operatorname{Im}(k_\Phi)\ge0$; $\vec k_\Phi^2=-\vec k_\Phi\cdot\vec k_\Phi$ |
 | $\mathrm{Sd}_\alpha=-\exp(i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_\eta$ at $\alpha=k_\Phi$ |
 | $\mathcal V_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solutions of the shifted family; the source's $C_\eta$ is $\mathcal{V}_{\mathrm{vek},+k_\Phi}$ |
-| $C_\eta=-D_{-\eta _\Phi}F_\eta$ | Cauchy-type kernel of the Dirac-type operator, $(k_\Phi+\vec u_x/\lvert x\rvert-ik_\Phi\vec u_x)\exp(ik_\Phi\lvert x\rvert)/(4\pi)$ |
+| $C_\eta=-D_{-k_\Phi}F_\eta$ | Cauchy-type kernel of the Dirac-type operator, $(k_\Phi+\vec u_x/\lvert x\rvert-ik_\Phi\vec u_x)\exp(ik_\Phi\lvert x\rvert)/(4\pi)$ |
 | $k_\Phi f+\vec u_x fk_\Phi=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\vec u_x$ is a zero divisor |
 | $m(x)$ | Quaternion-valued potential with compact support $G$ |
 | $u_{\mathrm{inc}},u_{\mathrm{sc}},u=u_{\mathrm{inc}}+u_{\mathrm{sc}}$ | Incident, scattered and total field |
@@ -434,7 +434,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 - Swanhild Bernstein, "Seeing the Invisible and Maxwell's Equations", chapter, DOI 10.1007/978-3-0348-0603-9_13 (2013), the source of this article: the factorisations of the Helmholtz equation, the Lippmann–Schwinger equation for a quaternionic potential, the radiation condition with its zero-divisor remark, the uniqueness theorem, and Faddeev's Green's function. The scattering half of the same author's work; her 1996 and 1999 papers on the Riccati form of the factorisation, cited by *Electromagnetism in Media — The Local Complex Structure at Work*, are different papers.
 - D. Colton and R. Kress, *Inverse Acoustic and Electromagnetic Scattering Theory*, Applied Mathematical Sciences 93 (Springer, 1992), for the Lippmann–Schwinger equation, the weak singularity of its kernel and the unique continuation principle (their Lemma, used as the source's Lemma 8.5).
 - V. V. Kravchenko and R. P. Castillo, "An analogue of the Sommerfeld radiation condition for the Dirac operator", *Mathematical Methods in the Applied Sciences* **25** (2002) 1383–1394, for the two forms of the radiation condition used here.
-- V. V. Kravchenko and M. V. Shapiro, "On a generalized system of Cauchy–Riemann equations with a quaternionic parameter", *Russian Academy of Sciences, Doklady* **47** (1993) 315–319, for the kernel $C_\eta=-D_{-\eta _\Phi}F_\eta$.
+- V. V. Kravchenko and M. V. Shapiro, "On a generalized system of Cauchy–Riemann equations with a quaternionic parameter", *Russian Academy of Sciences, Doklady* **47** (1993) 315–319, for the kernel $C_\eta=-D_{-k_\Phi}F_\eta$.
 - L. D. Faddeev, "Increasing solutions of the Schrödinger equation", *Doklady Akademii Nauk SSSR* **165** (1965) 514–517, for the exponentially growing Green's function and the plane-wave substitution.
 - S. Bernstein, "Lippmann–Schwinger's integral equation for quaternionic Dirac operators", online (2003), the earlier paper by the same author in which the Lippmann–Schwinger equation for the quaternionic Dirac operator is announced; the chapter of the Further Reading above carries it further and cites it as [4].
 - H. Isozaki, "Inverse scattering theory for Dirac operators", *Annales de l'Institut Henri Poincaré, section A* **66** (1997) 237–270, for Faddeev's Green's operator $g_\gamma$, its bounds and their use in the inverse problem, quoted in the last section.

@@ -72,7 +72,7 @@ $A_\mu$ is the electromagnetic potential, and it enters only through the covaria
 $$
 \tilde\nabla_\mu G_\lambda=\frac{\partial G_\lambda}{\partial x_\mu}+ieA_\mu\,\epsilon_\lambda\sum_{\sigma,\nu}\epsilon_\sigma\,\check c_{\lambda\sigma\nu}u_\nu G_\sigma .
 $$
-The second term is the chirality of the four-vector carrier, and it is written as the contraction of structure constants on the neutral vector $k$ that it is. The source prints the same object as a $4\times4$ array $c_5{}_{\mu\nu}$, one representative of the chirality, with $c_5{}_{\mu\nu}=-\epsilon_\mu\check c_{\mu\nu\lambda}k_\lambda$ and no sum on $\mu$; the array obeys $(c_5)^2=1$ and is $\epsilon$-antisymmetric, so the chirality of the carrier takes its two values on the two chiral parts of $G$. The contraction puts $k$ on the page, where the representative had absorbed it. The derivative that the auxiliary field uses is the same object with the constant $a$ added in the manner of a second coupling, $\tilde\nabla^{a}_\mu B_\nu=\partial/\partial x_\mu B_\nu+ia\,j_\mu B^*_\nu$, the second term conjugating the field, so that
+The second term is the chirality of the four-vector carrier, and it is written as the contraction of structure constants on the neutral vector $\vec k_\Phi$ that it is. The source prints the same object as a $4\times4$ array $c_5{}_{\mu\nu}$, one representative of the chirality, with $c_5{}_{\mu\nu}=-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ and no sum on $\mu$; the array obeys $(c_5)^2=1$ and is $\epsilon$-antisymmetric, so the chirality of the carrier takes its two values on the two chiral parts of $G$. The contraction puts $k$ on the page, where the representative had absorbed it. The derivative that the auxiliary field uses is the same object with the constant $a$ added in the manner of a second coupling, $\tilde\nabla^{a}_\mu B_\nu=\partial/\partial x_\mu B_\nu+ia\,j_\mu B^*_\nu$, the second term conjugating the field, so that
 $$
 \tilde\nabla^{a}_\mu B_\nu-\tilde\nabla^{a}_\nu B_\mu=\partial/\partial x_\mu B_\nu-\partial/\partial x_\nu B_\mu+ia\,j_\mu B^*_\nu-ia\,j_\nu B^*_\mu=F_{\mu\nu},
 $$
@@ -227,8 +227,8 @@ $$
 $$
 where $G^{\mathrm R}_\mu$ and $G^{\mathrm L}_\mu$ are the two chiral parts of $G_\mu$, the parts on which the chirality takes the values plus one and minus one,
 $$
-G^{\mathrm R}_\mu=\tfrac12\Bigl(G_\mu-\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}k_\lambda G_\nu\Bigr),\qquad
-G^{\mathrm L}_\mu=\tfrac12\Bigl(G_\mu+\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}k_\lambda G_\nu\Bigr),
+G^{\mathrm R}_\mu=\tfrac12\Bigl(G_\mu-\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}u_\lambda G_\nu\Bigr),\qquad
+G^{\mathrm L}_\mu=\tfrac12\Bigl(G_\mu+\epsilon_\mu\sum_{\nu,\lambda}\check c_{\mu\nu\lambda}u_\lambda G_\nu\Bigr),
 $$
 with no sum on $\mu$ in $\epsilon_\mu$. Two equations, one per value; the opposite charges of the two lines are those two values, not a second dynamics.
 
@@ -324,7 +324,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
 | $\tilde\nabla^{ea}_\mu$, $\tilde\nabla^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
 | $\Box$ | The d'Alembertian, the norm of $\tilde\nabla$; on $Q_t=i r'_t$ it is $\Delta-\partial^2/\partial {r'_t}^2$ |
-| $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}k_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
+| $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\epsilon=(1,-1,-1,-1)$ | The plain weight, read from the multiplication $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$; the diagonal of the generator pairing; distinct from $\varepsilon$ |
 | $G^{\mathrm R}_\mu$, $G^{\mathrm L}_\mu$ | The two chiral parts of the s-vector, of value plus one and minus one: elements, not a right and a left multiplication |

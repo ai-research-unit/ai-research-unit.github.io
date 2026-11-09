@@ -178,11 +178,11 @@ $$
 
 The orthogonality of the spin and the four-velocity is thus preserved **identically**, for every field, by a one-parameter family of covariant equations; the second coefficient is not independent.
 
-**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v_\eta=0$ and $\tilde{S}_{\Psi}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{\eta t}=-E_\eta/c$ and $F_{\eta j}=\epsilon_{\eta jl}B_l$. The spatial equation is therefore
+**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v_\mu=(c,\mathbf{0})$, so $v_\eta=0$ and $\tilde{S}_{\Psi}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F_{kt}=-E_\eta/c$ and $F_{\eta j}=\epsilon_{\eta jl}B_l$. The spatial equation is therefore
 
 $$
 \frac{ds_k}{d\tau}
-=\frac{ϙ}{m}\,\alpha\,\Big(F_{\eta t}S_0+F_{\eta j}S_j\Big)
+=\frac{ϙ}{m}\,\alpha\,\Big(F_{kt}S_0+F_{\eta j}S_j\Big)
 =\frac{ϙ}{m}\,\alpha\,\big(\vec s\times\vec B\big)_k ,
 $$
 
@@ -254,7 +254,7 @@ $$
 =\left(\frac{\vec E\cdot\vec s}{c},\ \vec s\times\vec B\right),
 $$
 
-because $F_{t\eta}S_\eta=(E_\eta/c)s_k$ and $F_{j\eta}S_\eta=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF_{\eta t}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{\eta t}=-E_\eta/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
+because $F_{t\eta}S_\eta=(E_\eta/c)s_k$ and $F_{j\eta}S_\eta=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=S_kF_{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F_{kt}=-E_\eta/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
 \boxed{\ \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B

@@ -33,13 +33,13 @@ Three properties of the representation are worth stating at once, because they d
 
 **It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm{lor}}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ on $\mathbb{B}_{\Phi}$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
 
-**It is not $*$-unitary.** A finite-dimensional $*$-unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is $*$-unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $B_{\mathrm{boost},k}=i\vec e_\eta$ is represented by $\rho(B_{\mathrm{boost},k})=i\rho(\vec e_\eta)$. If $\rho(\vec e_\eta)$ is skew-adjoint then
+**It is not $*$-unitary.** A finite-dimensional $*$-unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is $*$-unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $B_{\mathrm{boost},\eta}=i\vec e_\eta$ is represented by $\rho(B_{\mathrm{boost},\eta})=i\rho(\vec e_\eta)$. If $\rho(\vec e_\eta)$ is skew-adjoint then
 
 $$
-\rho(B_{\mathrm{boost},k})^{\dagger}=(-i)\rho(\vec e_\eta)^{\dagger}=(-i)\bigl(-\rho(\vec e_\eta)\bigr)=i\rho(\vec e_\eta)=\rho(B_{\mathrm{boost},k}),
+\rho(B_{\mathrm{boost},\eta})^{\dagger}=(-i)\rho(\vec e_\eta)^{\dagger}=(-i)\bigl(-\rho(\vec e_\eta)\bigr)=i\rho(\vec e_\eta)=\rho(B_{\mathrm{boost},\eta}),
 $$
 
-so $\rho(B_{\mathrm{boost},k})$ is Hermitian; skew-adjointness then forces $\rho(B_{\mathrm{boost},k})=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
+so $\rho(B_{\mathrm{boost},\eta})$ is Hermitian; skew-adjointness then forces $\rho(B_{\mathrm{boost},\eta})=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
 
 The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\Psi,\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
 
@@ -64,7 +64,7 @@ They are **inequivalent**. To see this without appealing to the label, complexif
 
 $$
 N_k^{+}\mapsto 0, \qquad N_k^{-}\mapsto -i\sigma_\eta,
-\qquad \text{so} \qquad C_+ = \sum_\eta(N_k^{+})^2 \mapsto 0, \quad C_-=\sum_\eta(N_k^{-})^2 \mapsto -3I_2 .
+\qquad \text{so} \qquad C_+ = \sum_{\eta}(N_k^{+})^2 \mapsto 0, \quad C_-=\sum_{\eta}(N_k^{-})^2 \mapsto -3I_2 .
 $$
 
 On the conjugate module the two Casimirs are interchanged, $C_+\mapsto-3I_2$, $C_-\mapsto0$. Since $C_+$ and $C_-$ are invariants, the ordered pair of eigenvalues is an invariant; $(0,-3)$ and $(-3,0)$ differ, so $S$ and $\bar{S}$ are not isomorphic:
@@ -229,7 +229,7 @@ The higher representations are $(s,s_2)=V_s\boxtimes V_{s_2}$, $\dim=(2s+1)(2s_2
 | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$ | Lorentz action on the spinor module (left multiplication) |
 | $g^{T}\epsilon g=\epsilon$ | Invariance of the symplectic form; $S^{*}\cong S$ |
 | $N_k^{\pm}=\tfrac12(\vec e_\eta\pm\mathsf{i}\,i\vec e_\eta)$ | Generators of the two $\mathrm{SU}(2)$ halves ($\mathsf{i}$ = complexification unit) |
-| $\Omega_\pm=\sum_\eta(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
+| $\Omega_\pm=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
 | $(s,s_2)=V_s\boxtimes V_{s_2}$ | Irreducible representation, $\dim=(2s+1)(2s_2+1)$ |
 | $\operatorname{sym}^{2s}(S)\otimes\operatorname{sym}^{2s_2}(\bar{S})$ | Carrier of $(s,s_2)$ from symmetric powers of the spinor |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |

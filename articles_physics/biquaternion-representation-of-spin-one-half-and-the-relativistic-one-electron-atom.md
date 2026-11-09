@@ -250,8 +250,8 @@ $$
 \begin{aligned}
 \rho(\theta,\theta_{\mathrm{azm}})=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
 +C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\\
-&+C_3^2\left\lvert Y_{-\eta}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
-+C_4^2\left\lvert Y_{-\eta}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
+&+C_3^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
++C_4^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
 \end{aligned}
 $$
 

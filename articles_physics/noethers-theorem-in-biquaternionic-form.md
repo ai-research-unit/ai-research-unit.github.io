@@ -345,7 +345,7 @@ $$
 Here $x_\mu=(r'_{t},r_x,r_y,r_z)$ are the real coordinates, the chart of $Q_\mu$ with the $i$ of the time coefficient removed, $Q_t=ix_0$: $Q_0=i r'_t$ carries the $i$, while $x_0=r'_{t}$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=i r'_t$, spent once and written out. Translation invariance gives
 
 $$
--\frac{\partial T_{0\nu}}{\partial x_0}+\sum_\eta\frac{\partial T_{\eta \nu}}{\partial r_\eta} = 0
+-\frac{\partial T_{0\nu}}{\partial x_0}+\sum_\eta\frac{\partial T_{\eta\nu}}{\partial r_\eta} = 0
 $$
 
 on shell. Its time–time component is the energy density,
@@ -354,7 +354,7 @@ $$
 T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 > 0,
 $$
 
-positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta \nu}/\partial r_\eta$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
+positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta\nu}/\partial r_\eta$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
 
 ### Why the Framework Does Not Write It as One Biquaternion
 
@@ -405,7 +405,7 @@ $$
 whose conservation
 
 $$
--\frac{\partial L_{0\nu\rho}}{\partial x_0}+\sum_\eta\frac{\partial L_{\eta \nu\rho}}{\partial r_\eta} = 0
+-\frac{\partial L_{0\nu\rho}}{\partial x_0}+\sum_\eta\frac{\partial L_{\eta\nu\rho}}{\partial r_\eta} = 0
 $$
 
 expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\tilde L$ above is the finite-dimensional case where the rank-two object *is* the whole story.
@@ -536,7 +536,7 @@ $$
 
 as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dt' = c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/(c\gamma_a) = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
 
-The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta \nu}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta\nu}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 

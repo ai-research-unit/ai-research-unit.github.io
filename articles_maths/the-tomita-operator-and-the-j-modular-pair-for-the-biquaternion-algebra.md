@@ -18,11 +18,11 @@ $$
 
 holds for all $\tilde Q,\tilde Q_4,\tilde Q_3$.
 
-**Proof.** Positive definiteness is $\langle\tilde Q,\tilde Q\rangle=\sum_\mu|Q_\mu|^{2}>0$ for $\tilde Q\neq0$, and Hermitian symmetry is immediate from the coefficient expansion. For the adjoint axiom, $\langle\tilde Q\tilde Q_4,\tilde Q_3\rangle=\mathrm{Sc}((\tilde Q\tilde Q_4)^{*}\tilde Q_3)=\mathrm{Sc}(\tilde Q_4^{*}\tilde Q^{*}\tilde Q_3)$, and the last expression is $\langle\tilde Q_4,\tilde Q^{*}\tilde Q_3\rangle$; the trace property of $\mathrm{Sc}$ is not even needed, associativity alone giving the identity.
+*Proof.* Positive definiteness is $\langle\tilde Q,\tilde Q\rangle=\sum_\mu\lvert Q_\mu\rvert^{2}>0$ for $\tilde Q\neq0$, and Hermitian symmetry is immediate from the coefficient expansion. For the adjoint axiom, $\langle\tilde Q\tilde Q_4,\tilde Q_3\rangle=\mathrm{Sc}((\tilde Q\tilde Q_4)^{*}\tilde Q_3)=\mathrm{Sc}(\tilde Q_4^{*}\tilde Q^{*}\tilde Q_3)$, and the last expression is $\langle\tilde Q_4,\tilde Q^{*}\tilde Q_3\rangle$; the trace property of $\mathrm{Sc}$ is not even needed, associativity alone giving the identity.
 
 **Proposition (the cyclic and separating unit).** Let $\zeta=e_t$, the unit. The orbit is $\mathcal{M}\zeta=\{\tilde Q e_t\}=\mathbb{B}$, so $\zeta$ is cyclic for $\mathcal{M}$, and $L_{\tilde Q}\zeta=\tilde Q=0$ forces $\tilde Q=0$, so $\zeta$ is separating for $\mathcal{M}$. Hence the Tomita operator of the pair $(\mathcal{M},\zeta)$ is defined and densely defined.
 
-**Proof.** $L_{\tilde Q}\zeta=\tilde Q$, and the map $\tilde Q\mapsto\tilde Q$ is onto $\mathbb{B}$ and injective. Density is trivial in finite dimension, and separatingness is the injectivity just used.
+*Proof.* $L_{\tilde Q}\zeta=\tilde Q$, and the map $\tilde Q\mapsto\tilde Q$ is onto $\mathbb{B}$ and injective. Density is trivial in finite dimension, and separatingness is the injectivity just used.
 
 ## The Tomita Operator
 
@@ -34,7 +34,7 @@ $$
 S(\tilde Q)=\tilde Q^{*}\quad\text{on } \mathbb{B} \;}.
 $$
 
-**Proof.** By definition $S(\Lambda\zeta)=\Lambda^{*}\zeta$ for $\Lambda=L_{\tilde Q}\in\mathcal{M}$, and the definite adjoint of the left multiplication is $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$ (*The Adjoint of the Left Multiplication on a Hermitian Algebra*). Hence $S(\tilde Q\zeta)=L_{\tilde Q^{*}}e_t=\tilde Q^{*}$, as claimed.
+*Proof.* By definition $S(\Lambda\zeta)=\Lambda^{*}\zeta$ for $\Lambda=L_{\tilde Q}\in\mathcal{M}$, and the definite adjoint of the left multiplication is $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$ (*The Adjoint of the Left Multiplication on a Hermitian Algebra*). Hence $S(\tilde Q\zeta)=L_{\tilde Q^{*}}e_t=\tilde Q^{*}$, as claimed.
 
 **Proposition (elementary properties).** $S$ is antilinear and involutive, $S^{2}=\mathrm{id}$, and it is antiunitary for the definite form,
 
@@ -44,7 +44,7 @@ $$
 \|S\tilde Q_1\|=\|\tilde Q_1\| .
 $$
 
-**Proof.** Antilinearity is that of the star. For the involution, $S^{2}(\tilde Q)=(\tilde Q^{*})^{*}=\tilde Q$. For the antiunitarity, using $(Q^{*})_\mu=\varepsilon_\mu\bar Q_\mu$ with $\varepsilon_0=1$ and $\varepsilon_k=-1$,
+*Proof.* Antilinearity is that of the star. For the involution, $S^{2}(\tilde Q)=(\tilde Q^{*})^{*}=\tilde Q$. For the antiunitarity, using $(Q^{*})_\mu=\varepsilon_\mu\bar Q_\mu$ with $\varepsilon_0=1$ and $\varepsilon_k=-1$,
 
 $$
 \langle\tilde Q_1^{*},\tilde Q_2^{*}\rangle=\sum_\mu (Q_1^{*})_\mu^{*}\,(Q_2^{*})_\mu=\sum_\mu \varepsilon_\mu^{2}Q_{1,\mu}\bar Q_{2,\mu}=\sum_\mu Q_{1,\mu}\bar Q_{2,\mu}=\overline{\langle\tilde Q_1,\tilde Q_2\rangle} .
@@ -58,7 +58,7 @@ $$
 
 so the **modular operator is the identity**, the **modular conjugation is the star**, and the modular flow is trivial, $\sigma_t(\Lambda)=\Delta^{\mathrm{i}t}\Lambda\Delta^{-\mathrm{i}t}=\Lambda$ for every $t$.
 
-**Proof.** $S$ is antiunitary, so its polar decomposition is $S=\jmath$ with $\Delta=S^{*}S=\mathrm{id}$; the modular flow is then the identity flow.
+*Proof.* $S$ is antiunitary, so its polar decomposition is $S=\jmath$ with $\Delta=S^{*}S=\mathrm{id}$; the modular flow is then the identity flow.
 
 **Remark (why the modular operator is trivial).** The modular operator collapses to the identity exactly when the Tomita operator is isometric, equivalently when the vector state is tracial. Here the vector state is
 
@@ -78,7 +78,7 @@ $$
 \jmath\,\mathcal{M}\,\jmath=\mathcal{M}' \;}.
 $$
 
-**Proof.** For every $\tilde Q_4$, $(\jmath L_{\tilde Q}\jmath)(\tilde Q_4)=(\tilde Q\,\tilde Q_4^{*})^{*}=\tilde Q_4\,\tilde Q^{*}=R_{\tilde Q^{*}}(\tilde Q_4)$; as $\tilde Q$ ranges over $\mathbb{B}$ the right multiplications range over $\mathcal{M}'$, which gives the second identity. This is the commutant theorem of Tomita in the definite case, $\jmath\mathcal{M}\jmath=\mathcal{M}'$, computed on the biquaternion algebra.
+*Proof.* For every $\tilde Q_4$, $(\jmath L_{\tilde Q}\jmath)(\tilde Q_4)=(\tilde Q\,\tilde Q_4^{*})^{*}=\tilde Q_4\,\tilde Q^{*}=R_{\tilde Q^{*}}(\tilde Q_4)$; as $\tilde Q$ ranges over $\mathbb{B}$ the right multiplications range over $\mathcal{M}'$, which gives the second identity. This is the commutant theorem of Tomita in the definite case, $\jmath\mathcal{M}\jmath=\mathcal{M}'$, computed on the biquaternion algebra.
 
 **Remark (the definite shadow of an indefinite identity).** The exchange of the sides is the same phenomenon as the indefinite identity $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*, with the star in place of the bar: the definite modular conjugation realizes by an antiunitary operator what the indefinite adjoint realizes by a conjugate-linear adjoint. The star and the bar are the two conjugations through which the two theories exchange the sides.
 
@@ -86,11 +86,11 @@ $$
 
 **Proposition (the operator is not definable).** On the canonical Krein space $(\mathbb{B},\langle\cdot,\cdot\rangle_{\natural*})$ the Tomita operator of the indefinite theory, $S(\Lambda\zeta)=\Lambda^{\dagger}\zeta$, presupposes that the algebra is closed under the indefinite adjoint. The left regular image is not: $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}\notin\mathcal{M}$ for non-central $\tilde Q$. Hence the map $\tilde Q\mapsto\tilde Q^{\dagger}$ leaves the algebra and the operator $S$ is not defined for the biquaternion algebra on its own Krein space.
 
-**Proof.** The operator is defined on the orbit of a Krein–von Neumann algebra, and $\mathcal{M}$ is not one for the general quaternionic sesquilinear form by the corollary of *The Biquaternion Algebra and the Krein–von Neumann Property*; the same computation shows that $\Lambda^{\dagger}\zeta$ is not an orbit value $\Lambda'\zeta$ for $\Lambda=L_{\tilde Q}$ with non-central $\tilde Q$.
+*Proof.* The operator is defined on the orbit of a Krein–von Neumann algebra, and $\mathcal{M}$ is not one for the general quaternionic sesquilinear form by the corollary of *The Biquaternion Algebra and the Krein–von Neumann Property*; the same computation shows that $\Lambda^{\dagger}\zeta$ is not an orbit value $\Lambda'\zeta$ for $\Lambda=L_{\tilde Q}$ with non-central $\tilde Q$.
 
 **Proposition (the envelope has no separating vector).** The smallest Krein–von Neumann algebra containing $\mathcal{M}$ is $\mathcal{L}(\mathbb{B})\cong M_4(\mathbb{C})$, and it admits no separating vector: for every $\zeta\neq0$ there is a nonzero $T$ with $T\zeta=0$. Hence the envelope carries no modular pair either.
 
-**Proof.** Take $T$ the rank-one operator with image the line $\mathbb{C}\zeta$ composed with a projection onto the orthogonal complement of $\zeta$, so that $T\zeta=0$ while $T\neq0$; separatingness of $\zeta$ would require $T=0$. So no vector is separating for the full operator algebra, and the three data of the indefinite modular theory — algebra, $J$-cyclic and $J$-separating vector, self-dual cone — cannot be completed for the envelope.
+*Proof.* Take $T$ the rank-one operator with image the line $\mathbb{C}\zeta$ composed with a projection onto the orthogonal complement of $\zeta$, so that $T\zeta=0$ while $T\neq0$; separatingness of $\zeta$ would require $T=0$. So no vector is separating for the full operator algebra, and the three data of the indefinite modular theory — algebra, $J$-cyclic and $J$-separating vector, self-dual cone — cannot be completed for the envelope.
 
 **Remark (the twisted symmetries).** For the twisted fundamental symmetries $J'=R_c$ of *The Biquaternion Algebra and the Krein–von Neumann Property*, with $c^{*}=c$ and $c^{2}=e_t$, the image $\mathcal{M}$ *is* a $J'$-algebra and $\zeta=e_t$ is $J'$-cyclic and $J'$-separating, with $S'={}^{*}$ and $\Delta'=\mathrm{id}$ exactly as in the definite case. But the modular conjugation must commute with the fundamental symmetry, $\jmath'J'=J'\jmath'$, and here $\jmath'J'(\tilde Q_4)=c\tilde Q_4^{*}$ while $J'\jmath'(\tilde Q_4)=\tilde Q_4^{*}c$, so the two agree only for central $c$. For every non-central $c$ the twisted pair is a Krein–von Neumann algebra **without** a $J'$-modular conjugation. Definiteness of the modular theory is not recovered by the twist; it is recovered only by the definite reading $J=\mathrm{id}$.
 

@@ -247,7 +247,7 @@ and the odd kinetic term is unchanged. The coupling is through the pair of two u
 $$
 \tilde\Sigma_{\Psi,0\eta} = i\vec e_\eta,
 \qquad
-\tilde\Sigma_{\Psi,j\eta} = \vec e_j\vec e_\eta,
+\tilde\Sigma_{\Psi,jk} = \vec e_j\vec e_\eta,
 \qquad
 \tilde\Sigma_{\Psi,\nu\mu} = -\tilde\Sigma_{\Psi,\mu\nu} .
 $$
@@ -490,7 +490,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\tilde{Ξ}_{\mathrm{sp},\mu}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu}+\tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
 | $Ξ[x]$ | Spin factor, the algebra-valued path-ordered weight |
-| $\tilde\Sigma_{\Psi,0\eta}=i\vec e_\eta$, $\tilde\Sigma_{\Psi,j\eta}=\vec e_j\vec e_\eta$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
+| $\tilde\Sigma_{\Psi,0\eta}=i\vec e_\eta$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_\eta$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
 | $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$ | Checkerboard propagator amplitudes |
 | $i\epsilon\,k_m$ per corner | Checkerboard corner weight |
 | $A_+$, $A_-$ | Checkerboard amplitudes by direction of motion |

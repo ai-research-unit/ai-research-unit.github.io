@@ -12,7 +12,7 @@ Here $S_{\mathrm d}$ and $V_\mu$ are the two scalar parts
 $$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr),
 \qquad
 V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\bigr),$$
-with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
+with $\nu(t)=x$ and $\nu(\eta)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
 
 This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the bilinears they use, and gives the biquaternion interpretation. Its contribution is a **placement of the channels**. The scalar density $S_{\mathrm d}$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. The vector current $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. The axial current $A_\mu$ is the channel the linear mass breaks, so an axial-axial self-interaction is a coupling conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
@@ -37,7 +37,7 @@ P_5=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z
 $$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\bigr),
 \qquad
 A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr),$$
-with $\nu(t)=x$ and $\nu(k)=y$. The scalar density carries the role subscript because the bare letter is the action of the corpus.
+with $\nu(t)=x$ and $\nu(\eta)=y$. The scalar density carries the role subscript because the bare letter is the action of the corpus.
 
 The four are real, and the reality is a computation and not a convention: over 100 generic elements the largest imaginary part of each is below $10^{-15}$. Each is worth a sentence.
 
@@ -152,10 +152,10 @@ $$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.
 
 **The spacelike case.** Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_\eta\vec e_\eta(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_k A_\eta\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
+$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_\eta\vec e_\eta(\nabla_k\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
 with $A_0=0$, and the two parts are read separately.
 
-**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_\eta^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_\eta^2=\Delta$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
+**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_k^2=\Delta$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
 
 ## The Local Channels and Their Sectors
 
@@ -212,7 +212,7 @@ Two further limits are inherited from other gaps. The Einstein–Cartan route ne
 
 ## Verified Two-Dimensional Relations
 
-The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_k=-g_{\eta \eta}=-1$ on the spatial ones.
+The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_\eta=-g_{\eta\eta}=-1$ on the spatial ones.
 
 ### The Two Slot Actions
 
@@ -345,7 +345,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_\eta^2 = -e_t$, central $i$ |
-| $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | Slot action of the index $\mu$; $\nu(t)=x$, $\nu(k)=y$ |
+| $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | Slot action of the index $\mu$; $\nu(t)=x$, $\nu(\eta)=y$ |
 | $\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$ | Two-sided Dirac action; composed with itself it is $\Box$ |
 | $\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr)$ | The bilinear form; every density below is this scalar part read at one element $X$ |
 | $S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ | Scalar density (mass channel) |

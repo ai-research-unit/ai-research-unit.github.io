@@ -18,7 +18,7 @@ $$
 Q\mapsto i e_t\,Q\,\vec e_x,\qquad Q\mapsto i\vec e_x\,Q\,\vec e_y,\qquad Q\mapsto i\vec e_y\,Q\,\vec e_y,\qquad Q\mapsto i\vec e_z\,Q\,\vec e_y,
 $$
 
-in the order $t,x,y,z$, with $\nu(t)=x$ and $\nu(k)=y$ for the three spatial indices.
+in the order $t,x,y,z$, with $\nu(t)=x$ and $\nu(\eta)=y$ for the three spatial indices.
 
 Two of the five actions — the four generators and the chirality — are single multipliers, because $e_t$ is the unit of the algebra: the timelike generator is $Q\mapsto iQ\vec e_x$ and the chirality is $Q\mapsto-iQ\vec e_z$, while the three spatial generators act on both sides. **Each generator carries one factor $i$, so a product of two carries $i^2=-1$ and a product of four carries $i^4=+1$**; the collapses below use this.
 

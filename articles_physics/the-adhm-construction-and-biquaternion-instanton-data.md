@@ -196,7 +196,7 @@ What is standard and imported is equally clear. The ADHM theorem itself — exis
 
 ## Summary
 
-The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_k(\mathbb C)$, $I\in M_{\eta \times N}(\mathbb C)$, $J\in M_{N\times \eta}(\mathbb C)$ satisfying the real and complex equations
+The self-duality equation $F=\star F$ on the Euclidean slice is a quaternionic equation: with $\mathbb R^4\cong\mathbb H_{\mathbb B}$ and $SU(2)\times SU(2)$ acting by left and right quaternion multiplication, a self-dual curvature is quaternionic-holomorphic and its three independent components carry the adjoint of the compact factor $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$. The ADHM construction parametrises all self-dual connections of charge $k$ by matrices $B_1,B_2\in M_k(\mathbb C)$, $I\in M_{k\times N}(\mathbb C)$, $J\in M_{N\times k}(\mathbb C)$ satisfying the real and complex equations
 
 $$
 \boxed{\;\mu_{\mathbb R}=[B_1,B_1^\dagger]+[B_2,B_2^\dagger]+II^\dagger-J^\dagger J=0 ,

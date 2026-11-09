@@ -114,7 +114,7 @@ The momentum acts on the plane wave as a left multiplication by a fixed algebra 
 
 $$
 \tilde p\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \sum_\eta  \vec e_\eta p_\eta \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
-=\frac{m\,c}{k_m}\sum_\eta  k_\eta \vec e_\eta\, \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
+=\frac{m\,c}{k_m}\sum_\eta  k_k \vec e_\eta\, \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
 =\frac{m\,c\,\vec k_\Phi\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}}{k_m},
 $$
 
@@ -202,7 +202,7 @@ The zero divisor cone therefore carries the states, while the positive trace for
 The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
+\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
 \qquad
 \tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi) \in \mathbb{B}\tilde\Pi .
 $$
@@ -301,7 +301,7 @@ $$
 the stationary condition is
 
 $$
-\nabla_{\vec \eta _\Phi}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k_\Phi/k_mr'_t = 0
+\nabla_{\vec k_\Phi}\theta_{\mathrm{pha}} = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - c\,\vec k_\Phi/k_mr'_t = 0
 \qquad\Longrightarrow\qquad
 (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = c\,\vec k_\Phi/k_mr'_t = \vec v_g r'_t .
 $$
@@ -315,7 +315,7 @@ The stationary wave vector is the one whose group velocity carries it to the obs
 The free propagator is the inverse Fourier transform of the free phase,
 
 $$
-\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k_\Phi}{(2\pi)^3}\,
+\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\,
 \exp(\,i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) -\frac{c\,i\,k_\Phi^{2}\,r'_{t}}{2\,k_m})
 = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,m\,r'_{t}}{k_m}}\right)\;},

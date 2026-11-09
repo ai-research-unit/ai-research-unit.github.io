@@ -246,7 +246,7 @@ and at $\theta = \pi/2$ it is the classical electric–magnetic duality. On the 
 
 ### Helicity
 
-For a plane wave of definite wavevector $\vec u_\eta$, Faraday's law gives $\vec B = \vec u_\eta\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\vec u_\eta\times\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$. Then
+For a plane wave of definite wavevector $\vec u_\Phi$, Faraday's law gives $\vec B = \vec u_\Phi\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\vec u_\Phi\times\varepsilon_{\mathrm{fop},\pm} = \mp i\varepsilon_{\mathrm{fop},\pm}$. Then
 
 $$
 \boxed{\;\vec E + ic\vec B = 2E_+\varepsilon_{\mathrm{fop},+}, \qquad

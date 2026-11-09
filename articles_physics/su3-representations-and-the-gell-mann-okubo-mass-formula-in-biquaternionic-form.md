@@ -48,7 +48,7 @@ A_{22}=\mathrm{diag}\bigl(-\tfrac13,\tfrac23,-\tfrac13\bigr),\quad
 A_{33}=\mathrm{diag}\bigl(-\tfrac13,-\tfrac13,\tfrac23\bigr),
 $$
 
-the off-diagonal units $A_{i\eta}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_\eta A_{\eta \eta}$, the matrix product $\sum_\eta A_{i\eta}A_{\eta l}$ and the invariant mixed delta $\delta_{i\eta}$, which is not a metric. The commutation relations are
+the off-diagonal units $A_{i\eta}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_\eta A_{\eta\eta}$, the matrix product $\sum_\eta A_{i\eta}A_{\eta l}$ and the invariant mixed delta $\delta_{i\eta}$, which is not a metric. The commutation relations are
 
 $$
 \bigl[A_{i\eta},A_{lm}\bigr] = \delta_{im}A_{l\eta}-\delta_{l\eta}A_{im}.
@@ -57,7 +57,7 @@ $$
 This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives
 
 $$
-a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_\eta A_{\eta \eta},
+a_{ij} = A_{ij}-\tfrac12\delta_{ij}\sum_\eta A_{\eta\eta},
 $$
 
 whose units satisfy the $\mathfrak{su}(2)$ relations, so **I-spin** is $\mathfrak{su}(2)$ in the $(1,2)$ plane. The rank of $\mathfrak{su}(3)$ is two, so any Cartan operator is a combination of $A_{11}$ and $A_{33}$, and the three choices of which $\mathfrak{su}(2)$ to single out give the three spins

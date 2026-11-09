@@ -66,15 +66,15 @@ $$
 $$
 where $E_{\mu\nu\lambda\rho}$ is the totally antisymmetric symbol of the four generators, defined below and normalised by $E_{0123} = 1$. The factor two is not a convention of the symbol: it is the normalisation that makes the form equal twice the determinant of the three spatial parts.
 
-The contraction with the single vector $k$ makes the form a determinant. In the frame $k = (1,0,0,0)$ only the spatial parts of $A$, $B$ and $N$ survive, and the determinant is a scalar part of a product of three pure quaternions, with $\vec A=\sum_\eta A_\eta\vec e_\eta$ and likewise $\vec B$, $\vec N$:
+The contraction with the single vector $\vec k_\Phi$ makes the form a determinant. In the frame $k = (1,0,0,0)$ only the spatial parts of $A$, $B$ and $N$ survive, and the determinant is a scalar part of a product of three pure quaternions, with $\vec A=\sum_\eta A_\eta\vec e_\eta$ and likewise $\vec B$, $\vec N$:
 $$
 \varepsilon(A,B,N) = 2\,(\vec A\times\vec B)\cdot\vec N = -2\,\mathrm{Sc}\bigl(\vec A\,\vec B\,\vec N\bigr),
 $$
-so the form vanishes whenever one of its three arguments is proportional to $k$. It is alternating in its three arguments, and that is why the cyclic map of the next section leaves it invariant.
+so the form vanishes whenever one of its three arguments is proportional to $k_\Phi$. It is alternating in its three arguments, and that is why the cyclic map of the next section leaves it invariant.
 
 ### The Geometric Interpretation
 
-The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the action of the vector by multiplication composed with the invariant pairing of the two eight-dimensional representations. Here the trilinear form on $M \times S_1 \times S_2$ is the part of the cubic form that is odd in each of the two four-vectors, evaluated on the neutral direction $k$. It is the same construction in four dimensions, and it is the lowest-order invariant the four basis operators supply.
+The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the action of the vector by multiplication composed with the invariant pairing of the two eight-dimensional representations. Here the trilinear form on $M \times S_1 \times S_2$ is the part of the cubic form that is odd in each of the two four-vectors, evaluated on the neutral direction $\vec k_\Phi$. It is the same construction in four dimensions, and it is the lowest-order invariant the four basis operators supply.
 
 ## The Cubic Form and the Dictionary
 
@@ -215,7 +215,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-A **ding** is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first four-vector space $S_1$ and the second four-vector space $S_2$, built from the four generator basis operators $C_\mu : Q\mapsto ia_\mu Qb_\mu$ and the timelike neutral vector $k$. The order-three ding is the invariant trilinear form
+A **ding** is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first four-vector space $S_1$ and the second four-vector space $S_2$, built from the four generator basis operators $C_\mu : Q\mapsto ia_\mu Qb_\mu$ and the timelike neutral vector $\vec k_\Phi$. The order-three ding is the invariant trilinear form
 $$
 \varepsilon(A,B,N) = 2\,A_\mu\,E_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda,
 $$

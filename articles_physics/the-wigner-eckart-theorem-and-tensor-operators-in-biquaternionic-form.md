@@ -23,9 +23,9 @@ with $\tilde S_{\Psi,\mathrm{tot},\pm}=\tilde S_{\Psi,\mathrm{tot},1}\pm i\tilde
 
 $$
 \tilde U(R)\,T^{(k)}_\mu\,\tilde U(R)^\dagger
-=\sum_{\mu_2=-\eta}^{k}\mathcal{D}^{(k)}_{\mu_2\mu}(R)\,T^{(k)}_{\mu_2},
+=\sum_{\mu_2=-k}^{k}\mathcal{D}^{(k)}_{\mu_2\mu}(R)\,T^{(k)}_{\mu_2},
 \qquad
-\tilde U(R)=\exp\!\left(-\frac{k_m\,i}{m\,c}\theta\,\vec u_\eta\tilde S_{\Psi,\mathrm{tot},\eta}\right),
+\tilde U(R)=\exp\!\left(-\frac{k_m\,i}{m\,c}\theta\,\vec u_\Phi\tilde S_{\Psi,\mathrm{tot},\eta}\right),
 $$
 
 where $\mathcal{D}^{(k)}$ is the $(2k+1)$-dimensional rotation matrix of spin $k$. A **scalar operator** is a rank-$0$ tensor operator, $[\tilde S_{\Psi,\mathrm{tot},\eta},T^{(0)}]=0$; a **vector operator** is a rank-$1$ tensor operator, with $[T_i,\tilde S_{\Psi,\mathrm{tot},j}]=\frac{m\,c\,i\,\epsilon_{ij\eta}\,T_{\eta}}{k_m}$ as its defining relation.
@@ -72,7 +72,7 @@ where the last step uses $\vec e_l=-i\,(i\vec e_l)$. In the basis of imaginary u
 The last equation is the statement that the triple
 
 $$
-\tilde U_{\mathrm{gen},k}=i\vec e_\eta,\qquad \eta = 1, 2, 3,
+\tilde U_{\mathrm{gen},\eta}=i\vec e_\eta,\qquad \eta = 1, 2, 3,
 $$
 
 is a **vector operator** under the adjoint action, that is, a rank-$1$ irreducible tensor operator with components
@@ -275,7 +275,7 @@ The Wigner–Eckart theorem in the biquaternion framework is the standard factor
 The article established the following.
 
 - **Tensor operators.** An irreducible tensor operator of rank $k$ is a family $T^{(k)}_\mu$, $\mu=-k,\dots,k$, with $[\tilde S_{\Psi,\mathrm{tot},3},T^{(k)}_\mu]=\frac{m\,c\,\mu\,T_{\mu}^{(k)}}{k_m}$ and $[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_\mu]=\frac{m\,c}{k_m}\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\mu\pm1}$; a vector operator is the case $k=1$, with spherical components $T^{(1)}_0=T_3$, $T^{(1)}_{\pm1}=\mp\tfrac{1}{\sqrt2}(T_1\pm iT_2)$.
-- **The algebra's own tensor operator.** The adjoint action $x\mapsto[\tilde S_{\Psi,i},x]$ is a derivation; on the imaginary units $[\tilde S_{\Psi,i},i\vec e_\eta]=\frac{m\,c\,i^{2}\,\epsilon_{i\eta l}\,\vec e_{l}}{k_m}$, so $\tilde U_{\mathrm{gen},k}=i\vec e_\eta$ is a rank-$1$ tensor operator with $(\tilde U_{\mathrm{gen}})^{(1)}_{\pm1}=\mp\tfrac{\sqrt2}{\frac{m\,c}{k_m}}\tilde S_{\Psi,\pm}$. A Hermitian element splits as $\tilde R_\Psi=r_t\,e_t+iv_k\vec e_\eta$, a rank-$0$ plus a rank-$1$ piece, and $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$ under the adjoint action.
+- **The algebra's own tensor operator.** The adjoint action $x\mapsto[\tilde S_{\Psi,i},x]$ is a derivation; on the imaginary units $[\tilde S_{\Psi,i},i\vec e_\eta]=\frac{m\,c\,i^{2}\,\epsilon_{i\eta l}\,\vec e_{l}}{k_m}$, so $\tilde U_{\mathrm{gen},\eta}=i\vec e_\eta$ is a rank-$1$ tensor operator with $(\tilde U_{\mathrm{gen}})^{(1)}_{\pm1}=\mp\tfrac{\sqrt2}{\frac{m\,c}{k_m}}\tilde S_{\Psi,\pm}$. A Hermitian element splits as $\tilde R_\Psi=r_t\,e_t+iv_k\vec e_\eta$, a rank-$0$ plus a rank-$1$ piece, and $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$ under the adjoint action.
 - **The ceiling.** A single factor of $\mathbb{B}$ carries only tensor operators of ranks $0$ and $1$; rank $k\ge2$ requires a product of $k$ vector operators, hence a tensor power of the algebra.
 - **The theorem.** $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}=\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$, with selection rules $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$ and $|s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.
 - **Verification.** For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(s_{\mathrm{fin}},s_{\mathrm{tot}})=(1,1),(0,1),(1,0)$ in units of $\hbar$, independent of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt\frac{2\,m\,c}{k_m}$. For the algebra's own vector operator $i\vec e_\eta$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{i\vec e_\et}a=\frac{2\,k_m}{m\,c}\tilde S_{\Psi,\mathrm{adj},\eta}$ and the reduced matrix element is $2\sqrt2$ in units of $\hbar$.
@@ -293,7 +293,7 @@ The article established the following.
 | $[\tilde S_{\Psi,\mathrm{tot},\pm},T^{(k)}_\mu]=\frac{m\,c}{k_m}\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\mu\pm1}$ | Ladder condition |
 | $\mathcal{D}^{(k)}_{\mu_2\mu}(R)$ | Rotation matrix of spin $k$ |
 | $\mathrm{ad}_{\tilde S_{\Psi,i}}(x)=[\tilde S_{\Psi,i},x]$ | Adjoint action (a derivation) |
-| $\tilde U_{\mathrm{gen},k}=i\vec e_\eta$ | The algebra's rank-$1$ tensor operator |
+| $\tilde U_{\mathrm{gen},\eta}=i\vec e_\eta$ | The algebra's rank-$1$ tensor operator |
 | $(\tilde U_{\mathrm{gen}})^{(1)}_{\pm1}=\mp\tfrac{\sqrt2}{\frac{m\,c}{k_m}}\tilde S_{\Psi,\pm}$ | Its spherical components |
 | $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Matrix element |
 | $\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$ | Reduced matrix element |

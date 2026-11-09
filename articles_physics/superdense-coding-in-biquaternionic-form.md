@@ -108,10 +108,10 @@ $$
 p_\epsilon = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_\epsilon\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})},
 $$
 
-where $\tilde{Ϛ}_{\Psi}$ is the received state. If Alice applied $\vec e_\eta$, then $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\epsilon(\eta )}$ for the corresponding sign pattern $\epsilon(k)$, and
+where $\tilde{Ϛ}_{\Psi}$ is the received state. If Alice applied $\vec e_\eta$, then $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and
 
 $$
-\boxed{\;p_\epsilon = \delta_{\epsilon,\epsilon(\eta )}\;},
+\boxed{\;p_\epsilon = \delta_{\epsilon,\epsilon(k)}\;},
 $$
 
 so the outcome identifies the operation with certainty. Bob recovers two bits: the pair of eigenvalues of $S_1$ and $S_3$, or equivalently the Klein-group element Alice applied.

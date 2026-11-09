@@ -431,7 +431,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | the material and informational sectors |
 | $\mathbb{B}_{C}$ | the complex scalar subspace, the centre of the algebra |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | the biquaternionic gradient, its quaternion conjugate, the d'Alembertian |
-| $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_k = -\vec e_\eta$ |
+| $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_\eta = -\vec e_\eta$ |
 | $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ | the local central phase; $\Gamma$ a real scalar |
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |

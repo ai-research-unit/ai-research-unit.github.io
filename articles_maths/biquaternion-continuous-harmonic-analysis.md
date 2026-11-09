@@ -2,11 +2,9 @@
 
 ## Introduction
 
-This article introduces harmonic analysis for biquaternion-valued functions of a real variable. It follows the article on biquaternion discrete harmonic analysis, which defined the discrete biquaternion Fourier transform, and it uses the analysis article, which defined the biquaternion gradient, the d'Alembertian, and the convective derivative on the four-dimensional subspaces of $\mathbb{B}$.
+This article treats the Fourier transform of a biquaternion-valued function of real variables. It is read after *Biquaternion Discrete Harmonic Analysis*: the closed form of the kernel, the classification of the roots of $-1$ and the count of complex transforms are that article's, and are cited here rather than restated. What the continuous index set adds is the analytic side, which a finite sum does not have — an integral with a convergence hypothesis, the inversion and Plancherel theorems, and the reading of the transform as a function of the differential operators of *Biquaternion Analysis*.
 
-The treatment is purely mathematical. The goal is to define the continuous biquaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms, and identify the points where the biquaternion structure creates genuinely new phenomena. The relation to the differential operators of the analysis article is the main structural content of this article. Two kernels are treated: the one-unit kernel, and the two-unit kernel that assigns one unit to each of two variables. The transform of a finite measure is examined beside them, and the positivity it lacks is the same indefiniteness that governs the vanishing-norm issue.
-
-The key structural fact is the same as in the discrete case: the Fourier kernel is a biquaternion exponential, and the exponential is defined by a **root of $-1$**. The choice of root determines the nature of the transform, and the transform decomposes into a finite number of ordinary complex Fourier transforms. The genuinely biquaternionic content is the choice of root, the decomposition, and the vanishing-norm issue.
+Three things are treated. The one-unit kernel $W(t,\omega)=\exp(-2\pi\rho\omega t)$ in $n$ variables; the two-unit kernel, which assigns one unit to each of two variables and is not reducible to the one-unit case; and the transform of a finite measure, whose failure of positivity is the same indefiniteness that governs the vanishing-norm issue. The treatment is purely mathematical: the objects are an algebra, a kernel, and the integrals defined from them.
 
 Throughout, a biquaternion is written
 
@@ -96,7 +94,7 @@ In particular, when $Q_t=0$, $W(t,B/2\pi)=e^{-t\tilde Q}$.
 
 **Two cuts.** In the root-adapted basis $(e_t,\rho,\nu,\zeta)$ of §*Factorization into Complex Fourier Transforms*, left multiplication by $\rho$ is block diagonal with the block $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ repeated on the two planes. The spectral eigenbasis diagonalises the two blocks; it is $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ with $u_\mp=\frac12(\nu\mp i\zeta)$, and it takes one line from each Fourier plane. The Fourier factorization and the spectral decomposition are transverse; the dictionary is *Relations between the Biquaternion Exponential and the Fourier Kernel*, §*The Eigenbasis Is a Fourier Basis*.
 
-**The cone.** At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$; the root-free closed form extends to $B=0$, and the kernel itself has no limit, because it is a function of a root that does not exist (*Continuity and Limits of the Biquaternion Exponential at the Spectral Cone*, §*The Closed Form and Its Limit* and §*The Fourier Dictionary at the Limit*).
+**The cone.** At $B=0$ there is no root and no frequency. The flow is the truncated $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N=\vec Q$ and $\vec N^2=0$, and the root-free closed form extends to $B=0$. The kernel does not: the root is the direction $\rho=\vec Q/B$, which is undefined on the cone. For $\vec Q=\epsilon\vec e_x$ and $\vec Q=\epsilon\vec e_y$ with $\epsilon\to0$ the roots tend to $\vec e_x$ and to $\vec e_y$, so the kernels tend to $\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)\vec e_x$ and to the same with $\vec e_y$; these differ at every $t$ where $\sin(2\pi\omega t)\neq0$. **No limit exists.** What survives at the cone is the exponential, a function of the element alone, and not the kernel, a function of the root.
 
 **Boundary.** The identity is pointwise in the element. It changes no inversion, Plancherel or convolution statement of the transform; it identifies the kernel of the transform with the flow of one regular element.
 
@@ -156,7 +154,7 @@ $$
 \lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
 $$
 
-**Proof.** The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement.
+*Proof.* The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement.
 
 ### The Inversion Theorem
 
@@ -166,7 +164,7 @@ $$
 \boxed{\; f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega \;}.
 $$
 
-**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \zeta\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
+*Proof.* The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \zeta\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
 
 ### The Plancherel Theorem
 
@@ -176,7 +174,7 @@ $$
 \boxed{\; \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega \;}.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \zeta\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
+*Proof.* The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \zeta\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
 
 **Remark (the genuinely complex roots).** Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is **not** an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The $*$-unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (*The General Plain Sesqualgebra (gps) over $\mathbb{C}$*), and the transform remains a faithful change of description for every root.
 
@@ -258,13 +256,7 @@ $$
 
 and $G_\bullet(t)$ are the complex coefficients of $f(t)$ in the new basis.
 
-Concretely, the factorization is the following procedure:
-
-1. **Change of basis.** For each $t$, write the function value $f(t)$ in the basis $\{e_t, \rho, \nu, \zeta\}$, obtaining four complex functions $w(t), Q_\rho(t), Q_\nu(t), Q_\zeta(t)$.
-2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four complex functions obtained by combining the coefficients as above. The result is four complex spectra.
-3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F(\omega)$.
-
-The factorization shows that the biquaternion Fourier transform is not a fundamentally new operation: it is the ordinary complex Fourier transform applied entrywise to the coefficients, dressed in biquaternion language. The non-trivial content is the choice of root and the basis change that it induces.
+The factorization shows that the biquaternion transform is the ordinary complex transform applied entrywise to the coefficients, once the basis is chosen. **The non-trivial content is the choice of root and the basis change it forces**, not the operation.
 
 ### The Number of Complex Transforms
 
@@ -274,9 +266,9 @@ The number of complex Fourier transforms required depends on the choice of root 
 
 **Unit pure real quaternion, $\rho = \mu_{\mathbb{R}}$.** The kernel is a real quaternion exponential. If $f$ takes values in $\mathbb{B}_{H}$ or in $\mathbb{B}_{iH}$, the transform requires **two** complex Fourier transforms. If $f$ takes values in the full algebra, the transform requires **four** complex Fourier transforms.
 
-**Non-trivial root, signal in a subspace.** If $\rho$ is a non-trivial root and $f$ takes values in $\mathbb{B}_{H}$ or in $\mathbb{B}_{iH}$, the transform requires **two** complex Fourier transforms.
+**Non-trivial root, values in a subspace.** If $\rho$ is a non-trivial root and $f$ takes values in $\mathbb{B}_{H}$ or in $\mathbb{B}_{iH}$, the transform requires **two** complex Fourier transforms.
 
-**Non-trivial root, fully biquaternion signal.** If $\rho$ is a non-trivial root and $f$ takes values in the full algebra, the transform requires **four** complex Fourier transforms.
+**Non-trivial root, values in the full algebra.** If $\rho$ is a non-trivial root and $f$ takes values in the full algebra, the transform requires **four** complex Fourier transforms.
 
 So the generic case is four complex transforms, and the degenerate cases reduce to two or one.
 
@@ -308,7 +300,7 @@ $$
 
 where the product on the right is the biquaternion product.
 
-**Proof.** Compute
+*Proof.* Compute
 
 $$
 \mathcal{F}[f * g](\omega) = \int_{-\infty}^{\infty} W(t, \omega) \int_{-\infty}^{\infty} f(\tau) g(t - \tau) \, d\tau \, dt.
@@ -392,7 +384,7 @@ $$
 \tilde Q_3^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
-which depends on the velocity biquaternion $\tilde Q_3$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.
+which depends on the parameter biquaternion $\tilde Q_3$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the frequency set of the operator, that is the real zero set of the symbol.
 
 ### The General Principle
 
@@ -425,12 +417,12 @@ The precise condition under which the transform is invertible on a function that
 
 ## The Two-Dimensional Kernel with One Unit per Variable
 
-The transform above carries one real variable and one root. The transform of the signal-processing literature carries two variables and assigns one unit to each, and in the biquaternion algebra that assignment is a genuine choice, because the roots of $-1$ fall into the three families classified above.
+The transform above carries one real variable and one root. The two-variable transform carries two variables and assigns one unit to each, and in the biquaternion algebra that assignment is a genuine choice, because the roots of $-1$ fall into the three families classified above.
 
 **Definition.** Let $\rho_1$ and $\rho_2$ be roots of $-1$ in $\mathbb{B}$, not necessarily distinct and not necessarily commuting. For a function $f : \mathbb{R}^2 \to \mathbb{B}$, the **two-unit transform** is
 
 $$
-F(\omega_1, \omega_2) = \int_{\mathbb{R}^2} W_1(Q_x, \omega_1) \, W_2(Q_y, \omega_2) \, f(Q_x, Q_y) \, dQ_1 dQ_2,
+F(\omega_1, \omega_2) = \int_{\mathbb{R}^2} W_1(Q_x, \omega_1) \, W_2(Q_y, \omega_2) \, f(Q_x, Q_y) \, dQ_x dQ_y,
 \qquad
 W_k(Q_k, \omega_k) = \exp(-2\pi \rho_k \omega_k Q_k),
 $$
@@ -456,13 +448,13 @@ which is the kernel $W$ of this article read on the linear form $\omega_1 Q_x + 
 **The kernel is invertible for every pair of roots.** The norm is multiplicative, $\langle K\rangle_{\natural} = \langle W_1\rangle_{\natural} \langle W_2\rangle_{\natural}$, and the inverse is the kernel with both frequencies negated and the two factors exchanged:
 
 $$
-\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_y, -\omega_2) \, W_1(Q_x, -\omega_1).
+K(\omega)^{-1} = W_2(Q_y, -\omega_2) \, W_1(Q_x, -\omega_1).
 $$
 
 For two pure roots the kernel is $*$-unitary in the sense of the previous section,
 
 $$
-\langle K\rangle_{\natural} = e_t, \qquad \overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},\omega\rangle_{\natural*}^{-1},
+\langle K\rangle_{\natural} = e_t, \qquad \overline{K(\omega)} = K(\omega)^{-1},
 $$
 
 and this holds for every pair of pure roots, commuting or not. The unit-norm property is thus a property of each factor and is inherited by the product.
@@ -470,12 +462,10 @@ and this holds for every pair of pure roots, commuting or not. The unit-norm pro
 **Frequency reversal.** Reversing the sign of the frequencies conjugates the kernel **and exchanges the two factors**:
 
 $$
-\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = K_{\mathrm{ex}}(\tilde{Q}, -\omega),
+\overline{K(\omega)} = K_{\mathrm{ex}}(-\omega),
 $$
 
-where $K_{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},-\omega\rangle_{\natural*}$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.
-
-**On the factorisation into complex transforms.** The factorisation of the next section diagonalises one root. Two elements that are simultaneously diagonalisable commute, so two roots that do not commute admit no common eigenbasis, and there is no basis in which both units of the two-unit kernel act diagonally at once. The pairs that do commute — equal roots, opposite roots, and any pair containing the central imaginary $i$ — keep a common eigenbasis, and there the one-unit factorisation applies to both variables. Whether the two-unit transform with a non-commuting pair still reduces to a fixed finite family of complex transforms is not settled here, and it is listed among the open questions.
+where $K_{\mathrm{ex}}$ is the kernel with the two units interchanged. For two pure roots the identity is exact, and it reduces to the one-unit statement $\overline{W(t,\omega)} = W(t,-\omega)$ when there is only one unit to exchange. The form without the exchange, $\overline{K(\omega)} = K(-\omega)$, needs in addition that the two factors commute: it holds for two pure roots that are equal or opposite, and it fails for two pure roots that are neither, because those do not commute. Both identities are stated for pure roots; the first family $\rho = \pm i$ is excluded from them, as it is in the one-unit case.
 
 ## The Transform of a Measure, and the Failure of Positivity
 
@@ -485,7 +475,7 @@ $$
 G(\omega) = \int_{\mathbb{R}^n} \chi_\omega(\tilde{Q}) \, d\mu(\tilde{Q}), \qquad \chi_\omega(\tilde{Q}) = \exp\big(-2\pi \rho \langle \omega, \tilde{Q} \rangle\big).
 $$
 
-Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total mass, a positive real multiple of the identity.
+Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total integral, a positive real multiple of the identity.
 
 **The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{B}_{C}$ (the complex scalars $A_k = \varkappa_{\mathrm{crd},k} e_t$, $\varkappa_{\mathrm{crd},k} \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
 
@@ -527,7 +517,7 @@ so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairin
 
 ### Sampling
 
-The continuous transform is the limit of the discrete transform as the number of samples $N$ tends to infinity and the sampling interval tends to zero. The precise relation is the standard one: if $f$ is a function of bounded variation and $F$ is its continuous transform, then the discrete transform of the samples $f(nT)$ for $n \in \mathbb{Z}$ approximates $F$ as the sampling interval $T$ tends to zero.
+If $f$ is of bounded variation and $F$ is its continuous transform, the discrete transform of the samples $f(nT)$ converges to $F$ as the sampling interval $T$ tends to zero. **This is quoted, not proved here**, and its hypotheses are the classical ones of the Riemann integrability of $f$ together with the bounded variation that makes the Riemann sums converge.
 
 ### Periodization
 
@@ -541,13 +531,13 @@ This is the standard Poisson summation formula, and it holds in the biquaternion
 
 ### The Sampling Theorem
 
-The **sampling theorem** (or Shannon–Nyquist theorem) states that a function whose continuous transform is supported in a bounded interval $[-W, W]$ can be reconstructed from its samples at the rate $1/(2W)$. The biquaternion version of the sampling theorem holds under the same conditions, with the reconstruction formula
+**The sampling theorem**, quoted: a function whose continuous transform is supported in a bounded interval $[-\beta, \beta]$ is reconstructed from its samples at the rate $1/(2\beta)$, by
 
 $$
 f(t) = \sum_{n \in \mathbb{Z}} f(nT) \operatorname{sinc}\left(\frac{t - nT}{T}\right),
 $$
 
-where the sinc function is the ordinary real sinc, and the convergence is in the appropriate sense. The proof is the same as in the complex case, because the reconstruction is component-wise.
+where the sinc is the ordinary real one. The half-width is written $\beta$ and not $W$, because $W$ is the kernel, and not $b$, because $b$ is the coefficient of $\mu$ in a root. The biquaternion case holds under the same hypotheses with the same proof, the reconstruction being componentwise in a basis adapted to the root.
 
 ## Open Questions
 
@@ -557,29 +547,27 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 3. **The Plancherel theorem for general functions.** Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.
 
-4. **Wavelets and time-frequency analysis.** Can a biquaternion wavelet transform be defined, and what are its properties? Can a biquaternion time-frequency distribution be defined?
+4. **Two roots that do not commute.** The two-unit transform is defined for every pair of roots, and its factorisation is proved only when the two commute or coincide. Two roots that do not commute admit no common eigenbasis, so there is no basis in which both act diagonally; whether the transform still reduces to a fixed finite family of complex transforms is open.
 
 5. **The relation to the analysis article.** The connection between the continuous Fourier transform and the differential operators is established at the level of symbols. What are the deeper consequences for the structure of the solutions of the operator equations?
 
 6. **The Clifford algebra framework.** How does the biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms?
 
-7. **The factorisation of the two-unit transform.** The factorisation of the one-unit transform diagonalises one root. Two roots that do not commute admit no common eigenbasis, so a two-unit kernel with such a pair has no basis in which both units act diagonally, and it is not known whether its transform still reduces to a fixed finite family of complex transforms.
-
-8. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. **Answered** in *The General Plain Sesqualgebra (gps) over $\mathbb{C}$*: the pairing is the general plain sesquilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$, whose diagonal is the Euclidean form of the section above, and with the Hermitian conjugation in the second slot the transform of a positive measure is positive definite exactly for the roots with $\rho^{*}=-\rho$, the scalar imaginary and the real roots, and not for the genuinely complex ones. What is restored is the positivity, not the norm identity: the norm failure at $A=i$ is root-independent and survives the exchange.
+7. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. **Answered** in *The General Plain Sesqualgebra (gps) over $\mathbb{C}$*: the pairing is the general plain sesquilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$, whose diagonal is the Euclidean form of the section above, and with the Hermitian conjugation in the second slot the transform of a positive measure is positive definite exactly for the roots with $\rho^{*}=-\rho$, the scalar imaginary and the real roots, and not for the genuinely complex ones. What is restored is the positivity, not the norm identity: the norm failure at $A=i$ is root-independent and survives the exchange.
 
 ## Summary
 
-The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.
+The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The root decides the nature of the transform: the scalar imaginary gives the ordinary complex transform, the pure real quaternions give the quaternion transform, the non-trivial roots give genuinely biquaternionic ones.
 
-The transform is invertible on functions of non-vanishing norm, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem for the roots with $\rho^{*} = -\rho$. It factorizes into four complex Fourier transforms, which is the computational and structural content of the theory.
+The transform is invertible on functions of non-vanishing norm; it satisfies the Riemann–Lebesgue lemma, the inversion theorem and the Plancherel theorem for the roots with $\rho^{*} = -\rho$; and it factorises into four complex Fourier transforms.
 
-The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the null cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.
+The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the null cone, and the convective derivative becomes a biquaternion-valued multiplier depending on its parameter.
 
 The vanishing-norm issue is a genuinely biquaternionic feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.
 
 A two-unit kernel is recorded beside the one-unit kernel, one unit per variable. Its closed form carries the product of the two roots in its fourth term, it reduces to the one-unit kernel when the two roots coincide, it is invertible for every pair of roots, and its conjugate is the kernel with the two units exchanged. The transform of a finite positive measure has a quadratic form which is the integral of the biquaternion norm of a trigonometric sum: non-negative for real coefficients and a real root, which is the classical positive definiteness of a measure transform, and false for $\mathbb{B}$ at a single term with $A = i$, because $\langle i\rangle_{\natural} = -1$. The Euclidean pairing restores positivity and is not the norm of the algebra.
 
-The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.
+The continuous transform is the limit of the discrete one as the sampling interval tends to zero, and the two are related by Poisson summation and by the sampling theorem.
 
 ## Summary of Notation
 
@@ -592,13 +580,15 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $\rho$ | Root of $-1$ in $\mathbb{B}$ fixing the transform; a local notation, not the scalar imaginary $i$ |
 | $\omega$ | Frequency variable, $\omega \in \mathbb{R}$ |
 | $\rho_1, \rho_2$ | Roots of $-1$ attached to the two variables of the two-unit kernel; they need not be equal, and need not commute |
-| $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_y,-\omega_2)W_1(Q_x,-\omega_1)$ |
+| $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $K(\omega)^{-1} = W_2(Q_y,-\omega_2)W_1(Q_x,-\omega_1)$ |
+| $K_{\mathrm{ex}}$ | The two-unit kernel with the two units interchanged |
+| $\beta$ | Half-width of the frequency interval in the sampling theorem, which is quoted only |
 | $\mu$, $G(\omega) = \int \chi_\omega \, d\mu$ | Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_t$, and $\sum_{k,l}\bar A_k A_l G(\omega_k-\omega_l) = \int \langle Z\rangle_{\natural} \, d\mu$ for central coefficients |
 | $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | Vector part of a biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
 | $\Box = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$ |
-| $\tilde{D} = \tilde Q_3^{\natural}\tilde{\nabla}$ | Convective derivative with velocity $\tilde Q_3$ |
+| $\tilde{D} = \tilde Q_3^{\natural}\tilde{\nabla}$ | Convective derivative with parameter $\tilde Q_3$ |
 
 ## Further Reading
 

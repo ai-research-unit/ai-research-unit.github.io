@@ -42,7 +42,7 @@ With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tild
 Two properties of the split are used throughout.
 
 - **It is a real subspace, not a complex one.** The sector $\mathbb{B}_{\Psi}$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
-- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\Phi,\eta}=i r'_t_k+\vec v_k$ with real $r'_{t,\eta}$ and real $\vec v_k$,
+- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde{R}_{\Phi,\eta}=i r'_t_k+\vec v_k$ with real $r'_{t,k}$ and real $\vec v_k$,
 
 $$
 \tilde{R}_{\Phi,1}\tilde{R}_{\Phi,2}=\bigl(-c^2r'_{t,1t}'_2-(\vec v_1,\vec v_2)\bigr)

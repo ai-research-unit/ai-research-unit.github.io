@@ -25,7 +25,7 @@ Four things follow, and they organise the article.
 
 **The metric, stated once.** $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one this signature gives. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
 
-**The process and the variables.** An electron of momentum $k$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
+**The process and the variables.** An electron of momentum $k_\Phi$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
 
 $$
 q=k-k' ,
@@ -124,7 +124,7 @@ and the reason the struck parton's fraction equals $x$ is the elastic condition 
 
 ## Callan–Gross, Derived in Three Lines
 
-**The partonic tensor.** For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $k$,
+**The partonic tensor.** For a massless spin-$\tfrac12$ parton of charge $e$ and momentum $k_\Phi$,
 
 $$
 W^{(0)}_{\mu\nu}=e^2\,\delta\!\left((k+q)^2\right)\mathrm{Tr}\!\left[\not k\,\gamma_\mu(\not k+\not q)\gamma_\nu\right] ,

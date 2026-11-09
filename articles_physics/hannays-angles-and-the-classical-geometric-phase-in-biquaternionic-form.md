@@ -37,7 +37,7 @@ $$
 and Hamilton's equations are
 
 $$
-c\,dI_{k}/dr'_t=-\frac{\partial H_0}{\partial\theta_k},\qquad \,d\theta_{k}/dr'_t=\frac{1}{c}\,\omega_k(I,R).
+c\,dI_{\eta}/dr'_t=-\frac{\partial H_0}{\partial\theta_k},\qquad \,d\theta_{\eta}/dr'_t=\frac{1}{c}\,\omega_k(I,R).
 $$
 
 Now let the parameters vary slowly and periodically: $R=R(\epsilon r'_t)$ with $\epsilon\ll1$ and $R(T)=R(0)$ after a period $T$. For a time-independent $H_0$, $I$ is exactly conserved; for slowly varying parameters, the **adiabatic theorem for classical systems** states that $I$ is conserved to all orders in $\epsilon$, and the angle evolves as

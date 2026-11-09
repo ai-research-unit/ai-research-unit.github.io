@@ -113,7 +113,7 @@ The first index is the unit inserted between the field and its conjugate — the
 $$
 T_{\mu 0} = i^2\,\Pi_{\mu 0} = -\Pi_{\mu 0},
 \qquad
-T_{\mu \eta} = \Pi_{\mu \eta}.
+T_{\mu\eta} = \Pi_{\mu\eta}.
 $$
 The conservation law is the four-divergence
 $$
@@ -174,9 +174,9 @@ because $T_{00} = i^2\Pi_{00} = W$, $T_{0j} = \Pi_{0j} = \frac{1}{c}S_j$, $T_{j0
 
 **Statement.** Show that $\sum_\mu\Pi_{\mu\mu} = 0$ identically, for every field configuration.
 
-**Solution.** The trace of the ordered object is the plain sum $\sum_\mu\Pi_{\mu\mu} = \Pi_{00} + \sum_\eta\Pi_{\eta \eta}$, which by Problem 2 is
+**Solution.** The trace of the ordered object is the plain sum $\sum_\mu\Pi_{\mu\mu} = \Pi_{00} + \sum_\eta\Pi_{\eta\eta}$, which by Problem 2 is
 $$
-\sum_\mu\Pi_{\mu\mu} = -W - \sum_\eta\sigma_{\eta \eta}.
+\sum_\mu\Pi_{\mu\mu} = -W - \sum_\eta\sigma_{\eta\eta}.
 $$
 The trace of the Maxwell stress is
 $$
@@ -186,15 +186,15 @@ using $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$. Hence
 $$
 \boxed{\;\sum_\mu\Pi_{\mu\mu} = -W - (-W) = 0\;}.
 $$
-The tensor is traceless. With the symmetric tensor the same statement reads $-T_{00} + \sum_\eta T_{\eta\eta} = -W + (-\sum_\eta\sigma_{\eta \eta}) = -W + W = 0$, the one minus of the interval sitting on the time slot. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
+The tensor is traceless. With the symmetric tensor the same statement reads $-T_{00} + \sum_\eta T_{\eta\eta} = -W + (-\sum_\eta\sigma_{\eta\eta}) = -W + W = 0$, the one minus of the interval sitting on the time slot. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
 
-**A caution on the trace.** The trace is $-T_{00} + \sum_\eta T_{\eta\eta}$, not the flat sum $T_{00} + \sum_\eta T_{\eta\eta}$. The minus is $i^2$ in $Q_t = i r'_t$, and it sits on the time term; here $T_{00} = W$ and $T_{\eta\eta} = -\sigma_{\eta \eta} = W$, so the flat sum would be $2W$, not zero. The cancellation uses the interval $\sum_\mu Q_\mu^2$, read on $Q_t=i r'_t$ and $Q_\eta=x_\eta$ as $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, which is the reading in which the tensor takes its standard form.
+**A caution on the trace.** The trace is $-T_{00} + \sum_\eta T_{\eta\eta}$, not the flat sum $T_{00} + \sum_\eta T_{\eta\eta}$. The minus is $i^2$ in $Q_t = i r'_t$, and it sits on the time term; here $T_{00} = W$ and $T_{\eta\eta} = -\sigma_{\eta\eta} = W$, so the flat sum would be $2W$, not zero. The cancellation uses the interval $\sum_\mu Q_\mu^2$, read on $Q_t=i r'_t$ and $Q_\eta=x_\eta$ as $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, which is the reading in which the tensor takes its standard form.
 
 ## Problem 4: The Conservation Law
 
 **Statement.** Show that, for a field with free charge density $\rho$ and free current density $\vec J$ satisfying Maxwell's equations and charge conservation, the tensor satisfies
 $$
-\sum_\mu\frac{\partial\Pi_{\mu0}}{\partial x_\mu} = -f_0, \qquad \sum_\mu\frac{\partial\Pi_{\mu \eta}}{\partial x_\mu} = -f_k,
+\sum_\mu\frac{\partial\Pi_{\mu0}}{\partial x_\mu} = -f_0, \qquad \sum_\mu\frac{\partial\Pi_{\mu\eta}}{\partial x_\mu} = -f_k,
 $$
 equivalently $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$ with the **lower-index** four-force density
 $$
@@ -214,7 +214,7 @@ where the Poynting theorem $c\,\partial W/\partial r'_t + \mathrm{div}\,\vec S =
 
 **Solution (momentum component).** With $\Pi_{0\eta}=\frac{1}{c}S_\eta$ and $\Pi_{j\eta}=-\sigma_{j\eta}$,
 $$
-\sum_\mu\frac{\partial\Pi_{\mu \eta}}{\partial x_\mu}
+\sum_\mu\frac{\partial\Pi_{\mu\eta}}{\partial x_\mu}
 = \frac{\partial}{\partial x_0}\,\frac{1}{c}S_\eta - \frac{\partial}{\partial x_j}\,\sigma_{j\eta}
 = \frac{1}{c}\,\frac{\partial S_\eta}{\partial r'_t} - \frac{\partial\sigma_{j\eta}}{\partial x_j},
 $$
@@ -222,7 +222,7 @@ the second term being $(\nabla\cdot\boldsymbol\sigma)_k$. The standard momentum-
 $$
 \frac{1}{c}\,\frac{\partial\vec S}{\partial r'_t} - \nabla\cdot\boldsymbol{\sigma} = -\left(\rho\,\vec E + \vec J\times\vec B\right),
 $$
-gives $\sum_\mu\partial/\partial x_\mu\Pi_{\mu \eta} = -f_k$. The four statements combine into $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$.
+gives $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\eta} = -f_k$. The four statements combine into $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$.
 
 Both component equations were checked by direct recomputation from the definition $\Pi_{\mu\nu} = \frac{1}{2}\mathrm{Sc}(\tilde Fe_\mu\tilde F^{*}e_\nu)$, with the $i$ of $Q_t=i r'_t$ on every time slot, together with Maxwell's equations. The energy component was checked against the Poynting identity above and, independently, by substituting the time derivatives from the Ampère–Maxwell and Faraday laws into $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu}$ and simplifying; the three momentum components were checked in the same way, giving exactly $-\left(\rho\vec E + \vec J\times\vec B\right)_\mu$. The plane wave of Problem 1 is a special case: it has $\vec J = 0$ and its divergence vanishes, as Problem 5 confirms directly.
 
@@ -261,7 +261,7 @@ where $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$ for this wave and $1/(\mu c^2
 $$
 \boxed{\;T_{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_{\Phi,\mu} k_{\Phi,\nu}\;}.
 $$
-The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_{\Phi,\mu} k_{\Phi,\nu}$ with $\sum_\mu(\partial/\partial x_\mu W)k_{\Phi,\mu} = k\left(\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $r'_t$.
+The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $\vec k_\Phi$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_{\Phi,\mu} k_{\Phi,\nu}$ with $\sum_\mu(\partial/\partial x_\mu W)k_{\Phi,\mu} = k\left(\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $r'_t$.
 
 The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $\langle\tilde F\rangle_{\natural} = 0$, is $N$-degenerate, a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.
 
@@ -313,7 +313,7 @@ $$
 $$
 with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nu E_\mu + \mu H_\nu H_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Multiplying the time column by $i^2=-1$ gives the symmetric standard tensor, $T_{00} = W$, $T_{0j} = T_{j0} = \frac{1}{c}S_j$, $T_{j\eta} = -\sigma_{j\eta}$.
 
-The tensor is traceless, $\sum_\mu\Pi_{\mu\mu} = -W - \sum_\eta\sigma_{\eta \eta} = 0$, and it is conserved: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_\mu\partial/\partial x_\mu\Pi_{\mu \eta} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\mu\nu}\propto k_{\Phi,\mu} k_{\Phi,\nu}$.
+The tensor is traceless, $\sum_\mu\Pi_{\mu\mu} = -W - \sum_\eta\sigma_{\eta\eta} = 0$, and it is conserved: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu0} = -f_0 = \frac{1}{c}\vec E\cdot\vec J$ and $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\eta} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T_{\mu\nu}\propto k_{\Phi,\mu} k_{\Phi,\nu}$.
 
 The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W_{\Psi} = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W_{\Psi} = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial R_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial r'_t\,W$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{B}_{\Psi}$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 

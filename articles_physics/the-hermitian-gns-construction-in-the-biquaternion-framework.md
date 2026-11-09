@@ -256,7 +256,7 @@ Every state of this article has been written down as a density matrix. For a tra
 **The classical statement.** Let $G$ be a locally compact abelian group with dual group $G^{\vee}$ and characters $\xi$. A continuous function $\xi_{\mathrm{scl}} : G \to \mathbb{C}$ is **positive definite** when
 
 $$
-\sum_\eta,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_\eta - g_l) \ge 0
+\sum_{\eta,l} \bar c_k c_l \, \xi_{\mathrm{scl}}(g_\eta - g_l) \ge 0
 $$
 
 for every finite set of points and coefficients, and **normalised** when $\xi_{\mathrm{scl}}(0)=1$. The theorem of Bochner states that a continuous, normalised, positive-definite $\xi_{\mathrm{scl}}$ is the Fourier transform of a unique probability measure on the dual group:
