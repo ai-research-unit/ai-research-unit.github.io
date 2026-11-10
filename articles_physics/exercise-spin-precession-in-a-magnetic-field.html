@@ -90,24 +90,24 @@ $$</p>
 <h3 id="step-2-the-hamiltonian">Step 2: The Hamiltonian</h3>
 <p>The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\vec u_z$ is</p>
 <p>$$
-H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{m\,c\,\omega_{L}}{2\,k_m}\sigma_3,
+H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{\hbar\,\omega_{L}}{2}\sigma_3,
 $$</p>
 <p>where</p>
 <p>$$
 \omega_L = \gamma B_0
 $$</p>
-<p>is the <strong>Larmor frequency</strong> and $S_z =\frac{m\,c}{2\,k_m}\sigma_3$.</p>
+<p>is the <strong>Larmor frequency</strong> and $S_z =\frac{\hbar}{2}\sigma_3$.</p>
 <h3 id="step-3-the-evolution">Step 3: The evolution</h3>
 <p>The evolution operator is</p>
 <p>$$
-T(r'_t) = \exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) & 0 \\ 0 & \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
+T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) & 0 \\ 0 & \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
 $$</p>
 <p>The evolved state is</p>
 <p>$$
 |\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) \\ \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
 $$</p>
 <h3 id="step-4-the-expectation-value">Step 4: The expectation value</h3>
-<p>The expectation value of $S_x =\frac{m\,c}{2\,k_m}\sigma_1$ in the state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$ is</p>
+<p>The expectation value of $S_x =\frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$ is</p>
 <p>$$
 \langle S_x\rangle(r'_t) = \langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|S_x|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle.
 $$</p>
@@ -117,7 +117,7 @@ $$</p>
 $$</p>
 <p>Therefore</p>
 <p>$$
-\langle  S_x\rangle(r'_t) =\frac{m\,c}{2\,k_m}\cos(\omega_L r'_t/c).
+\langle  S_x\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c).
 $$</p>
 <h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
@@ -130,15 +130,15 @@ $$</p>
 \tilde\Pi_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
 $$</p>
 <h3 id="step-2-the-hamiltonian_1">Step 2: The Hamiltonian</h3>
-<p>The spin observable along $z$ is $\tilde{S}_{\Psi,z} =\frac{m\,c}{2\,k_m}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$</p>
+<p>The spin observable along $z$ is $\tilde{S}_{\Psi,z} =\frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{B}_{\Psi}$</p>
 <p>$$
-\tilde R_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i \vec e_z,
+\tilde R_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z} = -\frac{\hbar\,\omega_{L}}{2}\,i \vec e_z,
 $$</p>
 <p>with $\omega_L = \gamma B_0$.</p>
 <h3 id="step-3-the-evolution_1">Step 3: The evolution</h3>
 <p>The evolution operator is the unit-norm biquaternion</p>
 <p>$$
-\tilde{U}(r'_t) = \exp\!\left(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}}\right) = \exp\!\left(-\frac{\omega_L r'_t}{2\,c}\,\vec e_z\right) = \cos\!\left(\frac{\omega_L r'_t}{2\,c}\right)e_t - \sin\!\left(\frac{\omega_L r'_t}{2\,c}\right)\vec e_z,
+\tilde{U}(r'_t) = \exp\!\left(-\frac{i\,Hr'_{t}}{\hbar\,c}\right) = \exp\!\left(-\frac{\omega_L r'_t}{2\,c}\,\vec e_z\right) = \cos\!\left(\frac{\omega_L r'_t}{2\,c}\right)e_t - \sin\!\left(\frac{\omega_L r'_t}{2\,c}\right)\vec e_z,
 $$</p>
 <p>where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin\theta\,\vec e_z$, which follows from $\vec e_z^2 = -e_t$, and set $\theta = -\omega_L r'_t/c/2$.</p>
 <p>The evolved state is</p>
@@ -156,26 +156,26 @@ $$</p>
 = \frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}(r'_t)\bigr)}
 = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$</p>
-<p>whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, with $\tilde{S}_{\Psi,x} =\frac{m\,c}{2\,k_m}\,i \vec e_x$. Computing the product</p>
+<p>whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, with $\tilde{S}_{\Psi,x} =\frac{\hbar}{2}\,i \vec e_x$. Computing the product</p>
 <p>$$
-\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x} =\frac{m\,c}{4\,k_m}\left(i \vec e_x + \cos(\omega_L r'_t/c)\,e_t - \sin(\omega_L r'_t/c)\,\vec e_z\right),
+\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x} =\frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L r'_t/c)\,e_t - \sin(\omega_L r'_t/c)\,\vec e_z\right),
 $$</p>
-<p>the scalar part is $\frac{m\,c}{4\,k_m}\cos(\omega_L r'_t/c)$. Applying the Hermitian form, with the trace reading last,</p>
+<p>the scalar part is $\frac{\hbar}{4}\cos(\omega_L r'_t/c)$. Applying the Hermitian form, with the trace reading last,</p>
 <p>$$
-\boxed{\;\langle\tilde{S}_{\Psi,x}\rangle(r'_t) =\frac{m\,c}{2\,k_m}\cos(\omega_L r'_t/c)\;}.
+\boxed{\;\langle\tilde{S}_{\Psi,x}\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c)\;}.
 $$</p>
 <h2 id="limiting-cases">Limiting Cases</h2>
 <p>Both formulations give the same result, and both give the same limits:</p>
 <ul>
-<li><strong>$r'_t = 0$</strong> (initial time): $\langle  S_x\rangle  =\frac{m\,c}{2\,k_m}$, as expected since the state is spin-up along $x$.</li>
+<li><strong>$r'_t = 0$</strong> (initial time): $\langle  S_x\rangle  =\frac{\hbar}{2}$, as expected since the state is spin-up along $x$.</li>
 <li><strong>$\omega_L r'_t/c = \pi/2$</strong> (quarter period): $\langle S_x\rangle = 0$.</li>
-<li><strong>$\omega_L r'_t/c = \pi$</strong> (half period): $\langle  S_x\rangle  = -\frac{m\,c}{2\,k_m}$, the state has precessed to spin-down along $x$.</li>
-<li><strong>$\omega_L r'_t/c = 2\pi$</strong> (full period): $\langle  S_x\rangle  =\frac{m\,c}{2\,k_m}$, the state has returned to its initial orientation.</li>
+<li><strong>$\omega_L r'_t/c = \pi$</strong> (half period): $\langle  S_x\rangle  = -\frac{\hbar}{2}$, the state has precessed to spin-down along $x$.</li>
+<li><strong>$\omega_L r'_t/c = 2\pi$</strong> (full period): $\langle  S_x\rangle  =\frac{\hbar}{2}$, the state has returned to its initial orientation.</li>
 </ul>
 <p>The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expected for Larmor precession.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.</strong> The observable $\tilde{S}_{\Psi,z} =\frac{m\,c}{2\,k_m}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z}$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
-<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde R_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
+<p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.</strong> The observable $\tilde{S}_{\Psi,z} =\frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde R_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z}$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
+<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde R_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
 <p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.</p>
 <p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec r(r'_t))$ with</p>
 <p>$$
@@ -187,7 +187,7 @@ $$</p>
 \langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$</p>
 <p>whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.</p>
-<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
+<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c})$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
 <h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -216,14 +216,14 @@ $$</p>
 <tr>
 <td>Result</td>
 <td>$\cos^2(\theta/2)$</td>
-<td>$(\frac{m\,c}{2\,k_m})\cos(\omega_L r'_t/c)$</td>
+<td>$(\frac{\hbar}{2})\cos(\omega_L r'_t/c)$</td>
 </tr>
 </tbody>
 </table></div>
 <p>These two exercises illustrate the two fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise: Measuring Spin Along an Arbitrary Direction) and <strong>evolution</strong> (Exercise: Spin Precession in a Magnetic Field). In both cases, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a second exercise in quantum physics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.</p>
-<p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{m\,c}{2\,k_m}\cos(\omega_L r'_t/c)$.</p>
+<p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c)$.</p>
 <p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde R_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the trace formula, giving the same result.</p>
 <p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -272,15 +272,15 @@ $$</p>
 <td>Spin-up state along $x$</td>
 </tr>
 <tr>
-<td>$\tilde{S}_{\Psi,x} =\frac{m\,c}{2\,k_m} i\vec e_x$</td>
+<td>$\tilde{S}_{\Psi,x} =\frac{\hbar}{2} i\vec e_x$</td>
 <td>Spin observable along $x$</td>
 </tr>
 <tr>
-<td>$\tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m} i\vec e_z$</td>
+<td>$\tilde R_\Psi = -\frac{\hbar\,\omega_{L}}{2} i\vec e_z$</td>
 <td>Hamiltonian</td>
 </tr>
 <tr>
-<td>$\tilde{U}(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$</td>
+<td>$\tilde{U}(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$</td>
 <td>Evolution biquaternion</td>
 </tr>
 <tr>

@@ -78,9 +78,9 @@
 <h3 id="the-inverse-temperature-as-a-period">The inverse temperature as a period</h3>
 <p><strong>The inverse temperature is a length, and the corpus fixes it once.</strong> From <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a>,</p>
 <p>$$
-\beta=\frac{m\,c}{k_m\,k_{B}\,T},
+\beta=\frac{\hbar}{k_{B}\,T},
 \qquad
-c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T},
+c\beta=\frac{\hbar\,c}{k_{B}\,T},
 $$</p>
 <p>with $\beta$ the imaginary-time circumference, a length in these letters, and $c\beta$ the corresponding span in the material sector's units. <strong>The display is quoted and not re-derived</strong>: the article cited establishes that the imaginary-time direction is compact with circumference $\beta$ in the coordinate $r'_t$, and that the identity above is exact. Here the only use made of it is that $\beta$ is a <em>period</em> and not a number: it is a length measured along a direction, and the direction is what the boost acts on.</p>
 <p><strong>The direction is the material sector's imaginary-time axis, and in the rest frame the period lies along it.</strong> In the rest frame of the fluid the thermal displacement is</p>
@@ -129,7 +129,7 @@ $$</p>
 =-\frac{\beta}{c\hbar}\,m\,(-c^{2})
 =\frac{\beta\,m\,c}{\hbar}=\beta\,k_m .
 $$</p>
-<p><strong>The result is independent of $\gamma$ and of $\vec v$, which is the statement that the thermal weight of a state is the same in every frame.</strong> The three ingredients are: the norm of the flow element, which is $-c^{2}$ by the corpus's definition; the norm of the thermal element, which is $-\beta^{2}$; and the identity $\hbar=mc/k_m$. The cancellation of $\gamma$ is not an accident of the algebra but the content of the statement: a boost rotates both the thermal element and the momentum element the same way, so their contraction is invariant.</p>
+<p><strong>The result is independent of $\gamma$ and of $\vec v$, which is the statement that the thermal weight of a state is the same in every frame.</strong> The three ingredients are: the norm of the flow element, which is $-c^{2}$ by the corpus's definition; the norm of the thermal element, which is $-\beta^{2}$; and the identity $1/k_m=\hbar/(mc)$. The cancellation of $\gamma$ is not an accident of the algebra but the content of the statement: a boost rotates both the thermal element and the momentum element the same way, so their contraction is invariant.</p>
 <p><strong>Read in the rest frame, the display is the expected one.</strong> There $\beta_{\Phi,\nu}p_{\Phi,\nu}=\beta\,i\,e_t\cdot i\,m\,c=-\beta mc$, so the exponent is $+\beta mc/\hbar=\beta k_m$, the ratio of the imaginary-time circumference to the reduced Compton length $1/k_m$ of the field. <strong>That ratio is the single number the rest-frame thermal weight exponentiates</strong>, and it is the corpus's dimensionless thermal parameter: it is $\beta$ measured in units of the field's own length.</p>
 <p><strong>Read in the moving frame, the display splits into two pieces and both are physical.</strong> Expanding the contraction with the components above,</p>
 <p>$$
@@ -142,7 +142,7 @@ $$</p>
 <h3 id="the-trace-in-the-moving-frame">The trace in the moving frame</h3>
 <p><strong>The partition function is the trace of the thermal operator, and its value is the rest-frame value.</strong> With the thermal element of the moving state,</p>
 <p>$$
-Z=\operatorname{Tr}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
+Z=\mathrm{Tr}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
 $$</p>
 <p>and since the exponent in the trace is $\beta k_m$ independently of the boost, as the previous section showed, the trace is the same number in every frame:</p>
 <p>$$
@@ -273,11 +273,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\beta=\frac{m\,c}{k_m\,k_{B}\,T}$</td>
+<td>$\beta=\frac{\hbar}{k_{B}\,T}$</td>
 <td>Inverse temperature, the imaginary-time circumference; a length</td>
 </tr>
 <tr>
-<td>$c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T}$</td>
+<td>$c\beta=\frac{\hbar\,c}{k_{B}\,T}$</td>
 <td>The same span in the material sector's units</td>
 </tr>
 <tr>
@@ -333,7 +333,7 @@ $$</p>
 <td>Mass and speed of light in the medium</td>
 </tr>
 <tr>
-<td>$\hbar=mc/k_m$</td>
+<td>$\hbar$</td>
 <td>Action quantum</td>
 </tr>
 <tr>

@@ -80,7 +80,7 @@ $$
 \qquad
 \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde J}_{\Phi},
 $$
-the <strong>effective action</strong>, whose derivatives give the one-particle-irreducible (1PI) correlation functions, and whose expansion in powers of $\frac{m\,c}{k_m}$ is the loop expansion. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that pair of objects.</p>
+the <strong>effective action</strong>, whose derivatives give the one-particle-irreducible (1PI) correlation functions, and whose expansion in powers of $\hbar$ is the loop expansion. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that pair of objects.</p>
 <p>The answer is a factorization statement and a convexity statement, both inherited from the plain form, and both sharpened by the sector split.</p>
 <ul>
 <li><strong>Established, and recomputed below.</strong> For a free theory with central kinetic operator $W_{\mathrm{kinetic}}$ the connected and effective functionals are the quadratic forms
@@ -97,7 +97,7 @@ $$
 since the Legendre transform of a sum of independent functionals is the sum of the Legendre transforms.</li>
 <li><strong>The one-loop term.</strong> The first quantum correction to the effective action is the functional determinant,
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m\,c}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}),
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\frac{\hbar}{2}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^{2}),
 $$
 where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module, and the trace is the trace pairing; the determinant is the subject of <em>The Functional Determinant in Biquaternionic Form</em>.</li>
 <li><strong>The vacuum condition.</strong> The classical field that extremizes $\Gamma$ is the theory's vacuum expectation value, and in the framework the tree-level vacuum is a <strong>minimal idempotent</strong> of $\mathbb{B}_{\Psi}$, selected by the sign of the quadratic term, as <em>The Biquaternion Vacuum as a Minimal Idempotent</em> establishes. The effective-action version of that statement is that the vacuum minimizes the effective potential on the manifold of normalizable states.</li>
@@ -106,11 +106,11 @@ where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action 
 <h2 id="the-connected-generating-functional">The Connected Generating Functional</h2>
 <p>Write the functional integral with a source as in the previous article,
 $$
-Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c}+ \langle  \tilde J_{\Phi},\tilde{Ξ}\rangle),
+Z[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}\; \exp(\,iS[\tilde{Ξ}]/\hbar+ \langle  \tilde J_{\Phi},\tilde{Ξ}\rangle),
 $$
 with $\tilde J_{\Phi}$ valued in the module and the pairing as above. The connected functional is
 $$
-W[\tilde J_{\Phi}] = -\frac{m\,c\,i}{k_m}\log  Z[\tilde J_{\Phi}].
+W[\tilde J_{\Phi}] = -i\,\hbar\log  Z[\tilde J_{\Phi}].
 $$</p>
 <p><strong>Derivatives give correlators.</strong> The <em>n</em>-point connected correlation functions are the functional derivatives
 $$
@@ -172,9 +172,9 @@ with $K\cdot A_{\mathrm{gau}}^{-1}=I$ to machine precision. The quadratic case h
 $$
 \Gamma^{(n)}[\tilde{Ξ}_{\mathrm{cl}}=0] = \big\langle \tilde{Ξ}\cdots\tilde{Ξ}\big\rangle_{\!1\text{PI}} ,
 $$
-and it has a loop expansion in powers of $\frac{m\,c}{k_m}$,
+and it has a loop expansion in powers of $\hbar$,
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m\,c\,\Gamma_{1}}{k_m}[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m^{2}\,c^{2}\,\Gamma_{2}}{k_m^{2}}[\tilde{Ξ}_{\mathrm{cl}}] + \cdots .
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\hbar\,\Gamma_{1}[\tilde{Ξ}_{\mathrm{cl}}] +\hbar^{2}\,\Gamma_{2}[\tilde{Ξ}_{\mathrm{cl}}] + \cdots .
 $$
 The tree term is the classical action. The one-loop term is the functional determinant of the second variation,
 $$
@@ -219,7 +219,7 @@ $$
 whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of <em>The Biquaternion Vacuum as a Minimal Idempotent</em>: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$ selected by the sign of the quadratic term. The one-mode ground state is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.</p>
 <p><strong>The one-loop potential and convexity.</strong> The one-loop correction
 $$
-V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}}) = V(\tilde{Ξ}_{\mathrm{cl}}) +\frac{m\,c}{2\,k_m}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+\frac{\delta^2V}{\delta\tilde{Ξ}^{2}}(\tilde{Ξ}_{\mathrm{cl}})\big) + \cdots
+V_{\mathrm{eff}}(\tilde{Ξ}_{\mathrm{cl}}) = V(\tilde{Ξ}_{\mathrm{cl}}) +\frac{\hbar}{2}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+\frac{\delta^2V}{\delta\tilde{Ξ}^{2}}(\tilde{Ξ}_{\mathrm{cl}})\big) + \cdots
 $$
 is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\xi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the orthogonality of the sectors. The standard results are transcribed and cited.</p>
 <p><strong>Finite-dimensional convexity check.</strong> For the one-dimensional model $V(\xi)=\tfrac12 m^2\xi^2+\tfrac{\lambda}{4}\xi^4$ with $k_m^{2}=1.3$, $\lambda=0.7$, the curvature $\frac{d^2V}{d\xi^2}(\xi)=k_m^{2}+3\lambda\xi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\xi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.</p>
@@ -231,13 +231,13 @@ S[\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tf
 $$
 where the linear term vanishes by the classical equation of motion, $\delta S/\delta\tilde{Ξ}_{\mathrm{cl}}=0$. The Gaussian integral over the fluctuation $\delta\tilde{Ξ}$ gives
 $$
-W[\tilde J_{\Phi}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tfrac12\big\langle  \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\big\rangle  -\frac{m\,c\,i}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}) ,
+W[\tilde J_{\Phi}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \tfrac12\big\langle  \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\big\rangle  -\frac{i\,\hbar}{2}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^{2}) ,
 $$
 so that
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] -\frac{m\,c\,i}{2\,k_m}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}})
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] -\frac{i\,\hbar}{2}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^{2})
 \;\;\xrightarrow[\text{Euclidean}]{}\;\;
-S_E[\tilde{Ξ}_{\mathrm{cl}}] +\frac{m\,c}{2\,k_m}\,\mathrm{Tr}\log  S_E^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\frac{m^{2}\,c^{2}}{k_m^{2}}),
+S_E[\tilde{Ξ}_{\mathrm{cl}}] +\frac{\hbar}{2}\,\mathrm{Tr}\log  S_E^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^{2}),
 $$
 the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm of the fluctuation operator's determinant is thus the whole of the one-loop effective action, and its regularization is the source of the trace anomaly of <em>The Trace Anomaly in Biquaternionic Form</em>.</p>
 <p><strong>Biquaternion content.</strong> Two features are the algebra's. First, $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ acts on the module, so its determinant is a determinant on a two-complex-dimensional fibre per mode, and the trace in $\mathrm{Tr}\log$ is the trace pairing $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$. Second, when $S^{(2)}$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.</p>
@@ -293,11 +293,11 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 <td>Real bilinear form; positive definite on the algebra, with the sectors orthogonal</td>
 </tr>
 <tr>
-<td>$Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{k_m\,i\,S}{m\,c}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
+<td>$Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
 <td>Generating functional</td>
 </tr>
 <tr>
-<td>$W[\tilde J_{\Phi}]=-\frac{m\,c\,i}{k_m}\log  Z[\tilde J_{\Phi}]$</td>
+<td>$W[\tilde J_{\Phi}]=-i\,\hbar\log  Z[\tilde J_{\Phi}]$</td>
 <td>Connected generating functional</td>
 </tr>
 <tr>
@@ -317,7 +317,7 @@ has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of
 <td>Inverse-Hessian relation; Legendre identity</td>
 </tr>
 <tr>
-<td>$\Gamma=S+\frac{m\,c\,\Gamma_{1}}{k_m}+\cdots$</td>
+<td>$\Gamma=S+\hbar\,\Gamma_{1}+\cdots$</td>
 <td>Loop expansion</td>
 </tr>
 <tr>

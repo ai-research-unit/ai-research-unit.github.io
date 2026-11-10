@@ -340,7 +340,7 @@ $$</p>
 <p><strong>A falling probability is a measured fact.</strong> Fix a slot of the module and let $P(r'_t)$ be the probability that the system is still found in the state it started in. $P$ can fall. The fall is measured, and over the life of a resonance it does not reverse. It is not a disappearance: the probability has moved into the part of the system that the description does not follow, by entanglement with it. <em>Quantum Channels and the Reversible–Irreversible Dichotomy</em> calls irreversibility exactly the regime in which the sector is open and its states are entangled with an environment. The fall belongs to the physics; the omission belongs to the description.</p>
 <p><strong>The fall is real, and the exponential is only a window on it.</strong> <em>The Unstable State and the Complex Energy Pole</em> states the exact short-time law,</p>
 <p>$$
-P(r'_t)=1-\frac{k_m^{2}\,\Delta^{2}\,\tilde{R}_{\Psi}^{2}}{m^{2}\,c^{2}}{r'_{t}}^{2}+O({r'_{t}}^{4}),
+P(r'_t)=1-\frac{\Delta^{2}\,\tilde{R}_{\Psi}^{2}}{\hbar^{2}}{r'_{t}}^{2}+O({r'_{t}}^{4}),
 $$</p>
 <p>so the survival probability starts from one with zero slope, and no exponential can reproduce that: $\exp(-\gamma r'_t)$ starts with slope $-\gamma$. The fall has three regimes, and only the middle one is exponential.</p>
 <div class="table-scroll"><table>
@@ -354,12 +354,12 @@ $$</p>
 <tbody>
 <tr>
 <td>early</td>
-<td>$P=1-(\Delta\tilde R_\Psi)^{2}{r'_{t}}^{2}\frac{k_m^{2}}{m^{2}\,c^{2}}+O({r'_{t}}^{4})$</td>
-<td>${r'_t}\ll\frac{m\,c}{k_m\,\Delta\,\tilde{R}_{\Psi}}$</td>
+<td>$P=1-(\Delta\tilde R_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$</td>
+<td>${r'_t}\ll\frac{\hbar}{\Delta\,\tilde{R}_{\Psi}}$</td>
 </tr>
 <tr>
 <td>intermediate</td>
-<td>$\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c^{2}})$, as a fit</td>
+<td>$\exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c})$, as a fit</td>
 <td>long against the inverse spectral width of the continuum, short against the onset of the long-time deviation</td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The exponential $\exp(-\frac{k_m\,\Gamma\,r'_{t}}{m\,c^{2}})$ is therefore a fit over an intermediate window, not the law. In the band model the quadratic coefficient is $(1-P)/{r'_{t}}^{2}=0.800$ against the predicted $g^{2}N=0.8$; at ${r'_t}=10^{-4}$ the exact deficit is $8.0\times10^{-9}$ against the exponential's $5.0\times10^{-5}$, a factor of $6287$. A band truncated to sixty levels shows partial revivals, from $0.032$ back to $0.65$ at the times set by the level spacing, which is why the continuum is a limit and not a large band. The decay has a shape. The exponential is the part of it that is quoted, and the word "monotonic" does not describe the shape either.</p>
+<p>The exponential $\exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c})$ is therefore a fit over an intermediate window, not the law. In the band model the quadratic coefficient is $(1-P)/{r'_{t}}^{2}=0.800$ against the predicted $g^{2}N=0.8$; at ${r'_t}=10^{-4}$ the exact deficit is $8.0\times10^{-9}$ against the exponential's $5.0\times10^{-5}$, a factor of $6287$. A band truncated to sixty levels shows partial revivals, from $0.032$ back to $0.65$ at the times set by the level spacing, which is why the continuum is a limit and not a large band. The decay has a shape. The exponential is the part of it that is quoted, and the word "monotonic" does not describe the shape either.</p>
 <p><strong>An anti-Hermitian element does not make a probability fall.</strong> Take $\tilde Q=-\tilde Q^{*}$. Its spectrum is purely imaginary, and for real $r'_t$</p>
 <p>$$
 \bigl(\exp(r'_t\tilde Q)\bigr)^{*}\exp(r'_t\tilde Q)
@@ -385,7 +385,7 @@ $$</p>
 \lVert\rho\rVert^{2}\ge1,
 $$</p>
 <p>with equality exactly when $\tilde Q$ is normal. Only three numbers reach the norm, and they do different jobs: $\operatorname{Re}Q_t$ is a <strong>rate</strong>, $\operatorname{Im}B$ is an envelope rate, and $\lVert\rho\rVert^2$ is an <strong>amplitude</strong>, never a rate. That article puts it in one line: "a decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$". The qualification is the whole point.</p>
-<p>Neither sector puts anything in the rate slot. For anti-Hermitian $\tilde Q$, $Q_t$ is purely imaginary and $\vec Q$ is real, so $\operatorname{Re}Q_t=0$ and $\rho$ is a real unit vector: the norm is exactly $1$ for every $\theta$. For Hermitian $\tilde R$, $Q_t$ is real but the corpus's flow carries the factor $-i$, $\exp(-\frac{k_m\,i\,\theta\,\tilde{R}}{m\,c})$, and that factor moves the real scalar into the frequency slot: the norm is again exactly $1$. Checked on a hundred elements each, to $1.2\times10^{-14}$ and $5.6\times10^{-15}$. The factor of $i$ is therefore not decoration; it is what makes a real scalar a frequency rather than a rate, and removing it changes the physics from oscillation to dilation.</p>
+<p>Neither sector puts anything in the rate slot. For anti-Hermitian $\tilde Q$, $Q_t$ is purely imaginary and $\vec Q$ is real, so $\operatorname{Re}Q_t=0$ and $\rho$ is a real unit vector: the norm is exactly $1$ for every $\theta$. For Hermitian $\tilde R$, $Q_t$ is real but the corpus's flow carries the factor $-i$, $\exp(-\frac{i\,\theta\,\tilde{R}}{\hbar})$, and that factor moves the real scalar into the frequency slot: the norm is again exactly $1$. Checked on a hundred elements each, to $1.2\times10^{-14}$ and $5.6\times10^{-15}$. The factor of $i$ is therefore not decoration; it is what makes a real scalar a frequency rather than a rate, and removing it changes the physics from oscillation to dilation.</p>
 <p>One case is worth stating, because it is the exception that fixes the rule: a single element can shrink the norm. Exponentiated without the $i$, a Hermitian element gives</p>
 <p>$$
 \bigl\langle e^{\theta\tilde R}\bigr\rangle_*
@@ -419,13 +419,13 @@ $$</p>
 \frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*
 =-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*\le0,
 $$</p>
-<p>which follows from $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=\langle\tilde{Ξ},(G^{*}+G)\tilde{Ξ}\rangle_*$ with $G=-i\tilde R_{\Psi,\mathrm{eff}}$ and $G^{*}+G=-\tilde\Gamma$; checked on a hundred random pairs, the finite-difference residual staying below $10^{-9}$. An indefinite $\tilde\Gamma$ with negative eigenvalues gives growth, so the anti-Hermitian part records loss, gain, or both, and the sign of $\tilde\Gamma$ decides which. The coefficient is a convention: carrying the term as $-i\tilde\Gamma'$ with $\frac{m\,c}{k_m}$ restored gives $-\frac{2\,k_m}{m\,c}\langle\tilde{Ξ},\tilde\Gamma'\tilde{Ξ}\rangle_*$, the same statement with the rate rescaled; the corpus measures the action in units of $\hbar$ and the coefficient $\frac12$, which is what puts the pole at $z_\star=E_R-\frac{i}{2}\Gamma$ and the amplitude decay at $\exp(-\Gamma r'_t/2)$.</p>
+<p>which follows from $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=\langle\tilde{Ξ},(G^{*}+G)\tilde{Ξ}\rangle_*$ with $G=-i\tilde R_{\Psi,\mathrm{eff}}$ and $G^{*}+G=-\tilde\Gamma$; checked on a hundred random pairs, the finite-difference residual staying below $10^{-9}$. An indefinite $\tilde\Gamma$ with negative eigenvalues gives growth, so the anti-Hermitian part records loss, gain, or both, and the sign of $\tilde\Gamma$ decides which. The coefficient is a convention: carrying the term as $-i\tilde\Gamma'$ with $\hbar$ restored gives $-\frac{2}{\hbar}\langle\tilde{Ξ},\tilde\Gamma'\tilde{Ξ}\rangle_*$, the same statement with the rate rescaled; the corpus measures the action in units of $\hbar$ and the coefficient $\frac12$, which is what puts the pole at $z_\star=E_R-\frac{i}{2}\Gamma$ and the amplitude decay at $\exp(-\Gamma r'_t/2)$.</p>
 <p>The shorthand must not be read as a new element of the algebra. It is the reduced description of one slot, valid on the branch where the eliminated channel has been dropped, and its complex coefficient carries the width of that branch. The pole it produces is the second-sheet pole, not a physical-sheet eigenvalue.</p>
 <p><strong>The rates are the poles.</strong> A mode of eigenvalue $w$ evolves by $\exp(-iwr'_t)$, so its squared norm grows as $\exp(2\operatorname{Im}(w)\,r'_t)$: the mode falls when $\operatorname{Im}w<0$, at rate $-2\operatorname{Im}w$ on the squared norm and $-\operatorname{Im}w$ on the amplitude, which at $z_\star$ is $\frac{\Gamma}{2}$. Checked to $7.8\times10^{-16}$.</p>
 <p><strong>A full open system, and where the probability goes.</strong> If the environment is neither measured nor discarded but averaged over, the description is a map, and <em>Quantum Channels and the Reversible–Irreversible Dichotomy</em> writes it as</p>
 <p>$$
 \frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
-=-\frac{k_m\,i}{m\,c}\,[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]
+=-\frac{i}{\hbar}\,[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]
 +\sum_\eta\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 -\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}_{\Psi}\}\right).
 $$</p>
@@ -559,7 +559,7 @@ $$</p>
 <p>$$
 S=-mc^2\tau,\qquad \tau=\int\frac{dt}{\gamma},\qquad \gamma=\cosh\theta_{\mathrm{rpd}} .
 $$</p>
-<p>The mass is the invariant coefficient and the frame factor is the conversion between coordinate time and proper time. The phase $e^{\frac{k_m\,i\,S}{m\,c}}$ therefore carries the mass in its amplitude and the frame in its clock. This is the sharpest form of the split on the material side: <strong>the action is the mass times the proper time, and the frame information is the rate at which proper time is spent.</strong></p>
+<p>The mass is the invariant coefficient and the frame factor is the conversion between coordinate time and proper time. The phase $e^{\frac{i\,S}{\hbar}}$ therefore carries the mass in its amplitude and the frame in its clock. This is the sharpest form of the split on the material side: <strong>the action is the mass times the proper time, and the frame information is the rate at which proper time is spent.</strong></p>
 <h3 id="mass-conservation-is-norm-conservation-of-the-total">Mass Conservation Is Norm Conservation of the Total</h3>
 <p>Mass is not conserved particle by particle, and the algebra says why. The norm is multiplicative under composition, the four-momenta add, and the two operations do not agree. For two four-momenta,</p>
 <p>$$
@@ -953,8 +953,8 @@ $$</p>
 <td>with the units</td>
 </tr>
 <tr>
-<td>$\frac{m\,c}{k_m}$</td>
-<td>the phase $e^{\frac{k_m\,i\,S}{m\,c}}$ and the spin generators</td>
+<td>$\hbar$</td>
+<td>the phase $e^{\frac{i\,S}{\hbar}}$ and the spin generators</td>
 <td>imported</td>
 </tr>
 <tr>
@@ -969,7 +969,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The bit is the only informational unit the algebra supplies. The carrier is the defining module of $\mathbb{B}\cong M_2(\mathbb{C})$, of complex dimension two, so at most two orthogonal states fit and the maximum entropy is $\log2$. That number is independent of $\frac{m\,c}{k_m}$. The Born rule contains no $\frac{m\,c}{k_m}$, and the state space contains no action. The material side carries $\frac{m\,c}{k_m}$ in its phase; the informational side does not.</p>
+<p>The bit is the only informational unit the algebra supplies. The carrier is the defining module of $\mathbb{B}\cong M_2(\mathbb{C})$, of complex dimension two, so at most two orthogonal states fit and the maximum entropy is $\log2$. That number is independent of $\hbar$. The Born rule contains no $\hbar$, and the state space contains no action. The material side carries $\hbar$ in its phase; the informational side does not.</p>
 <h3 id="four-candidate-readings-of-math485">Four Candidate Readings of $h_0$</h3>
 <p>If one insists on an $h_0$, four readings are available, and they have different dimensions.</p>
 <div class="table-scroll"><table>
@@ -984,13 +984,13 @@ $$</p>
 <tbody>
 <tr>
 <td>action per nat</td>
-<td>$h_0=\frac{m\,c}{k_m}$</td>
+<td>$h_0=\hbar$</td>
 <td>action</td>
 <td>a convention, $1$ nat $=1$ radian</td>
 </tr>
 <tr>
 <td>action per bit</td>
-<td>$h_0=\frac{m\,c}{k_m}\log2$</td>
+<td>$h_0=\hbar\log2$</td>
 <td>action</td>
 <td>a convention joining two units</td>
 </tr>
@@ -1010,9 +1010,9 @@ $$</p>
 </table></div>
 <p>The first two are conventions: they join the phase unit to the information unit by a definition, and neither is forced by the algebra. The third is no constant of nature. It is the energy cost of erasure at a temperature, and it varies with the state of the bath. The fourth identifies a phase-space basis operator with a state, and it is imported from statistical mechanics.</p>
 <h3 id="the-verdict">The Verdict</h3>
-<p>The corpus has no $h_0$. The algebra fixes $c$ and the bit, and it imports $\frac{m\,c}{k_m}$ and $k_B$. A universal constant converting energy into information would be a new postulate, and the article records it as a proposal rather than a result.</p>
+<p>The corpus has no $h_0$. The algebra fixes $c$ and the bit, and it imports $\hbar$ and $k_B$. A universal constant converting energy into information would be a new postulate, and the article records it as a proposal rather than a result.</p>
 <p>The slot that a naive $h_0$ would occupy is already occupied twice, by two different rates. In mechanics the rate is $c^2$, and it is exact: $E=mc^2$ for a system at rest, and $E=mc^2\cosh\theta_{\mathrm{rpd}}$ for a particle in motion. In thermodynamics the rate is $T$, and it is a state variable: $Q_{\min}=k_BT\log2$ per bit erased. The two rates are not independent, because the thermal energy of a body contributes to its rest mass, and that is the double-counting objection of the previous section. A single $h_0$ would have to replace both, and the corpus gives no equation in which it would sit without changing one of them.</p>
-<p>What would fix $h_0$ is a derivation of $\frac{m\,c}{k_m}$ from the algebra. The corpus does not have one: $\frac{m\,c}{k_m}$ enters through the phase and the spin generators, and no algebraic condition selects its value. Absent that derivation, $h_0$ remains a name for a missing bridge, and the honest statement is the one the corpus already makes about its scales: the algebra supplies the arena and imports the dynamics.</p>
+<p>What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus does not have one: $\hbar$ enters through the phase and the spin generators, and no algebraic condition selects its value. Absent that derivation, $h_0$ remains a name for a missing bridge, and the honest statement is the one the corpus already makes about its scales: the algebra supplies the arena and imports the dynamics.</p>
 <h2 id="what-is-established-and-what-is-proposed">What Is Established and What Is Proposed</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1086,7 +1086,7 @@ $$</p>
 <tr>
 <td>the survival probability leaves one quadratically</td>
 <td>corpus result</td>
-<td>$P=1-\frac{k_m^{2}\,\Delta^{2}\,\tilde{R}_{\Psi}^{2}\,{r'_{t}}^{2}}{m^{2}\,c^{2}}+O(r'^4_t)$; band model $(1-P)/r'^2_t=0.800$ vs $g^2N=0.8$</td>
+<td>$P=1-\frac{\Delta^{2}\,\tilde{R}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r'^2_t=0.800$ vs $g^2N=0.8$</td>
 </tr>
 <tr>
 <td>the exponential is an intermediate-time fit, not the law</td>
@@ -1170,7 +1170,7 @@ $$</p>
 <li>The two freedoms are of different kinds. On $\mathbb{B}_{\Phi}$ the free number is a frame label, and the Lorentz group moves it. On $\mathbb{B}_{\Psi}$ the reversible group fixes both numbers, and the norm moves only under a loss of information.</li>
 <li>The trace identifies nothing on either side. An electron and a proton at $1$ GeV share it, and so do a pure and a maximally mixed state. The norm is the identifying number of both ledgers.</li>
 <li>The two sectors are separated by the sign of the discriminant: non-positive for the four-momentum, non-negative for the state.</li>
-<li>There is no $h_0$ in the corpus. The algebra supplies $c$ and the bit, and imports $\frac{m\,c}{k_m}$ and $k_B$. The two exchange rates the corpus does have are $c^2$ (mechanics) and $k_BT$ (thermodynamics).</li>
+<li>There is no $h_0$ in the corpus. The algebra supplies $c$ and the bit, and imports $\hbar$ and $k_B$. The two exchange rates the corpus does have are $c^2$ (mechanics) and $k_BT$ (thermodynamics).</li>
 <li>The slogan "energy equals mass plus information" is exact as a duality of readings, and false as an additive decomposition. The exact additive split is rest energy plus kinetic energy, $E=mc^2+T$.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -1247,7 +1247,7 @@ $$</p>
 <td>the derivative-form generator, $G=-\frac12\tilde\Gamma-i\tilde R_\Psi$</td>
 </tr>
 <tr>
-<td>$c$, $\frac{m\,c}{k_m}$, $k_B$</td>
+<td>$c$, $\hbar$, $k_B$</td>
 <td>the cone scale, the imported action, the imported entropy unit</td>
 </tr>
 </tbody>

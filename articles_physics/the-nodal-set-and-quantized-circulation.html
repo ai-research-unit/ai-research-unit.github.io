@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 \tilde\Xi=\lVert\tilde\Xi\rVert\exp\!\left(i\frac{S_{\tilde\Xi}}{\hbar}\right)e_t
 \qquad\Longrightarrow\qquad
-S_{\tilde\Xi}=\hbar\arctan\!\left(\frac{\operatorname{Im}\text{-part}}{\operatorname{Re}\text{-part}}\right),
+S_{\tilde\Xi}=\hbar\arctan\!\left(\frac{\mathrm{Im}\text{-part}}{\mathrm{Re}\text{-part}}\right),
 $$</p>
 <p>up to an additive constant that the multivaluedness makes local. Where the amplitude vanishes the ratio is undefined, the action does not exist, and the closure has nothing to say.</p>
 <p><strong>So the irrotationality is exact on the complement of the nodal set and vacuous on it.</strong> That is the whole structure of the subject, and it is why the circulation can be non-zero: a loop that links a node cannot be contracted to a point without crossing the node, so the argument that would make the circulation vanish does not apply to it.</p>
@@ -134,28 +134,28 @@ $$</p>
 <tbody>
 <tr>
 <td>$1$</td>
-<td>$6.283\,186\,60$</td>
-<td>$6.283\,186\,60$</td>
-<td>$6.283\,186\,60$</td>
-<td>$6.283\,185\,31$</td>
+<td>$6.283\,185\,307$</td>
+<td>$6.283\,185\,307$</td>
+<td>$6.283\,185\,307$</td>
+<td>$6.283\,185\,307$</td>
 </tr>
 <tr>
 <td>$2$</td>
-<td>$12.566\,373\,20$</td>
-<td>$12.566\,373\,20$</td>
-<td>$12.566\,373\,20$</td>
-<td>$12.566\,370\,61$</td>
+<td>$12.566\,370\,614$</td>
+<td>$12.566\,370\,614$</td>
+<td>$12.566\,370\,614$</td>
+<td>$12.566\,370\,614$</td>
 </tr>
 <tr>
 <td>$-1$</td>
-<td>$-6.283\,186\,60$</td>
-<td>$-6.283\,186\,60$</td>
-<td>$-6.283\,186\,60$</td>
-<td>$-6.283\,185\,31$</td>
+<td>$-6.283\,185\,307$</td>
+<td>$-6.283\,185\,307$</td>
+<td>$-6.283\,185\,307$</td>
+<td>$-6.283\,185\,307$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The three radii give the same number to every digit printed, and the number differs from $2\pi n$ by $1.3\times10^{-6}$ for unit winding and $2.6\times10^{-6}$ for winding two, which is the chord error of the polygonal loop and falls as the square of the chord. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.</p>
+<p>The three radii give the same number to every digit printed, and the number agrees with $2\pi n$ to the last bit, the residual being at most $4\times10^{-16}$ and pure roundoff. <strong>The exactness is structural and not a coincidence of the mesh</strong>: the sum of the chords' angle increments is the unwrapped total angle of the polygonal loop, which is $2\pi n$ times the degree of the map and depends on no chord length. A quadrature that evaluated $\nabla\theta_{\mathrm{phs}}$ from a finite difference of $\theta_{\mathrm{phs}}$ instead would carry a truncation error falling as the square of the chord; this one carries none, and the table's last column is the reason it is quoted at three radii. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.</p>
 <h3 id="the-sign-and-the-orientation">The sign, and the orientation</h3>
 <p><strong>The sign of the charge is the orientation of the loop and nothing else.</strong> Reversing the loop reverses the sign of $\kappa$ and leaves $\lvert n\rvert$ unchanged, as the third row of the table shows. The physical content is the pair $(\lvert n\rvert,\text{direction})$, and a convention that fixes the direction of the loop fixes the sign. This article adopts no convention beyond the right-handed one of the frame, and no statement below depends on it.</p>
 <h2 id="the-node-under-the-current-and-the-stress">The Node under the Current and the Stress</h2>
@@ -185,13 +185,13 @@ $$</p>
 \qquad
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{1}{r^{2}} .
 $$</p>
-<p>The potential diverges as $-1/r^{2}$ at the node. The quantum energy density does not: it is $\rho_{\mathrm{num}}$ times the potential divided by the mass shell's normalisation, and in the form of <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a> it is</p>
+<p>The potential diverges as $-1/r^{2}$ at the node. The quantum energy density does not: it is the density times the potential, and in the form of <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a> it is</p>
 <p>$$
-w_{\mathrm{qnt}}=\frac{\rho_{\mathrm{num}}\,m\,Q_{\mathrm{qnt}}}{\hbar^{2}}
-=-\frac{A^{2}r^{2}}{2}\cdot\frac{1}{r^{2}}
-=-\frac{A^{2}}{2},
+w_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}
+=-\frac{\hbar^{2}}{2m}\left(A^{2}r^{2}\right)\frac{1}{r^{2}}
+=-\frac{\hbar^{2}A^{2}}{2m},
 $$</p>
-<p>a constant. Checked on a grid from $r=0.05$ to $r=0.5$ with $A=1.3$ and $\hbar=m=1$: $Q_{\mathrm{qnt}}r^{2}$ came out as $-0.500\,000\,000$ at three radii and $w_{\mathrm{qnt}}$ as $-0.845\,000\,000$, against $-A^{2}/2=-0.845$ exactly. So the divergence of the potential and the vanishing of the density cancel, and the node carries a finite negative energy density rather than an infinite one.</p>
+<p>a constant. Checked on a grid from $r=0.05$ to $r=0.5$ with $A=1.3$ and $\hbar=m=1$, so that $\hbar^{2}/2m=\tfrac12$: $Q_{\mathrm{qnt}}r^{2}$ came out as $-0.500\,000\,000$ at three radii and $w_{\mathrm{qnt}}$ as $-0.845\,000\,000$, against $-A^{2}/2=-0.845$ exactly. So the divergence of the potential and the vanishing of the density cancel, and the node carries a finite negative energy density rather than an infinite one.</p>
 <p>The sign is the corpus's and it is worth a sentence. A negative quantum energy density is not a negative energy: the total quantum energy of a state is the integral of a positive quantity, as the quantum-stress article shows, and what is negative here is the density's local value in a region where the classical energy is larger. The vortex core is such a region, and the cancellation between the potential's divergence and the density's vanishing is the mechanism that keeps the total finite.</p>
 <h3 id="the-vortex-ansatz-and-what-it-leaves-to-the-field-equation">The vortex ansatz, and what it leaves to the field equation</h3>
 <p><strong>A phase winding and a real amplitude turn the field equation into two real equations, and the node is compatible with both.</strong> Write</p>
