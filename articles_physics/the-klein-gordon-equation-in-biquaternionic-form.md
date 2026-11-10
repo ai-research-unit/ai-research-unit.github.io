@@ -5,15 +5,27 @@
 The Klein–Gordon equation for a relativistic field of rest mass $m$ is
 
 $$
-\left(\Box - k_m^{2}\right)Ξ_\mu = 0,
-\qquad \mu\in\{t,x,y,z\},
+\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - k_m^{2}\right)\tilde{Ξ} = 0,
 \qquad
-\Box = + \partial^2/\partial R_t^2 + \Delta,
+\tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z,
+\qquad
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = + \partial^2/\partial R_t^2 + \Delta,
 $$
 
-the wave equation for a relativistic scalar field, written once for each of the four coefficients of the biquaternion field $\tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z$. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - k_m^{2}\right)\tilde{Ξ} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+one equation for the **biquaternion-valued** field $\tilde{Ξ}$, whose value at each event is an element of $\mathbb{B}$ and not a single number. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**.
 
-Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $Ξ_\mu$ and its complex conjugate $Ξ_\mu^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
+The operator $\Box$ is central and scalar: it multiplies each coefficient and mixes no two of them. Read on the coefficients, the same one equation is
+
+$$
+\left(\Box - k_m^{2}\right)Ξ_\mu = 0,
+\qquad \mu\in\{t,x,y,z\},
+$$
+
+that is, the wave equation stated once for each direction. Every component respects the one equation, and the four are independent of one another. The biquaternion line and the four scalar lines say the same thing.
+
+The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded the biquaternion line as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+
+Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\tilde{Ξ}$ and its complex conjugate $\tilde{Ξ}^{*}$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
 
 The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$. The parent article, *The Schrödinger Equation in Biquaternionic Form*, showed that the first-order-in-time Schrödinger equation is organized by the **scalar imaginary** $i$: the Hermitian observable $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ generates a flow whose generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$, and the same central $i$ supplies the complex structure of the state module. This article asks the corresponding question for the second-order equation: **does the second-order structure fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally, or does it require a doubling that the split does not supply?** The answer worked out below is that it requires a doubling, and that the doubling is *not* $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the sector split gives two $i$-related copies of the same equation, not the particle–antiparticle pair. The closing sections treat the non-relativistic limit. The rest-mass phase $\exp(-i k_m r'_t)$ is divided out exactly, and the limit itself is then the leading term of an expansion of the dispersion relation about the rest point, $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\ldots$.
 
@@ -21,7 +33,7 @@ The conventions are those of the read list. The biquaternion algebra is $\mathbb
 
 ## The Equation and Its Operator
 
-Write the Klein–Gordon equation in biquaternion form as
+The equation of the introduction, kept in view and boxed here, is
 
 $$
 \boxed{\;

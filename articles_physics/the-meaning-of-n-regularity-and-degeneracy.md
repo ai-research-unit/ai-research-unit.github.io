@@ -2,30 +2,31 @@
 
 ## Introduction
 
-Two words, one number. The biquaternion norm is
+Two words, one number, and two sectors behind the second of them.
+
+The biquaternion algebra carries four algebraic norms, and exactly one of them answers a question about invertibility. It is the quaternionic norm,
 
 $$
 N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2},
-\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},
+\qquad
+B^{2}=(\vec Q,\vec Q)=Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
-and an element is **$N$-regular** when $N\neq0$ and **$N$-degenerate** when $N=0$. The pair is used everywhere in the corpus: it is the domain of the polar word, the domain of the logarithm, one of the two conditions that cut the four sectors, and the level set that carries the mass. What it *means* is stated in one line by *Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*: of the four algebraic norms, only $N$ decides invertibility.
+and the vocabulary is fixed by its value: an element is **$N$-regular** when $N\neq0$ and **$N$-degenerate** when $N=0$. The pair is used everywhere in the corpus. It is the domain of the polar word, the domain of the logarithm, one of the two conditions that cut the four sectors, and the level set that carries the mass. What it *means* is stated in one line by *Norm and Pairing Conventions*, §*The Four Algebraic Norms and the Unitary Convention*: of the four algebraic norms, only $N$ decides invertibility.
 
-This article works out that line. The answer is short, and everything else in the corpus's use of the pair is a consequence of it.
+This article works that line out and states the answer in full. The answer has four parts, and the fourth is the one usually left implicit.
 
-**$N$ is the determinant.** So $N$-regular means invertible, and an invertible element is a bijection of the algebra onto itself: nothing is annihilated, the map can be undone, and it is a transformation. $N$-degenerate means singular: the element has a non-zero kernel, it annihilates something, it cannot be undone, and it is a ray rather than a transformation. The pair is not a classification of elements into two convenient boxes. It is the algebraic form of the question *is anything lost?*
+**$N$ is the determinant.** So $N$-regular means invertible, and an invertible element is a bijection of the algebra onto itself: nothing is annihilated, the map can be undone, and it is a transformation. $N$-degenerate means singular: the element has a non-zero kernel, it annihilates something, and it cannot be undone. The pair is not a classification of elements into two convenient boxes. It is the algebraic form of the question *is anything lost?*
 
-Four results are developed.
+**Degeneracy has two strata, not one.** The cone is the origin, the pure elements with vanishing square, and the non-pure elements, which are non-zero multiples of idempotents. The pure part is a complex cone of real dimension four; the non-pure part is of real dimension six. The split is by the scalar part $Q_t$, and on the cone the two questions *is $Q_t$ zero?* and *is the spectrum degenerate?* coincide.
 
-**One source for three failures.** The element has no inverse, no logarithm and no polar word on the cone. These are not three defects of three constructions; they are the rank seen through three constructions, and they arrive together because they have one cause.
+**Degeneracy of the norm has two sectors, and they are the cone cut by the spectrum.** On the cone the element is either a scalar multiple of a non-trivial idempotent, with eigenvalues $\{c,0\}$, or a nilpotent of index two, with the single eigenvalue $0$. These are $\Sigma_{01}$ and $\Sigma_{00}$, the two sectors of degeneracy. Their difference is not a detail: the first keeps a live direction beside its dead one, the second does not, and the two carry different kernels and different images.
 
-**One number for the size of the loss.** The rank of left multiplication is $4$ on the units, $2$ on the cone away from the origin, and $0$ at the origin. The loss is not gradual and it is never one-dimensional: a non-zero degenerate element annihilates exactly a complex plane, in either stratum and without exception.
+**Degeneracy of the norm is not degeneracy of the spectrum.** $\Sigma_{01}$ is $N$-degenerate and spectrally regular. $\Sigma_{10}$ is $N$-regular and spectrally degenerate. The two conditions are independent off the cone and coincide on it, and that coincidence is why the two sectors of degeneracy can be named by the spectrum at all.
 
-**What survives.** Direction, scale and a normal form. The two-factor decomposition is defined on every element, so a decomposition of the degenerate element exists; what fails is the four-factor word, which is a statement about the group of units and about no larger set. The degenerate element is a limit of units and is not one.
+The article also states the two polar decompositions, because the corpus says "the polar decomposition" for two different things, and the degenerate case looks like a failure until the two are separated. One is defined on every element and survives on the cone with a Hermitian factor of rank one. The other is the four-factor word, and it is a parametrisation of the group of units.
 
-**The carriers are not uniform in this respect.** The norm vanishes *identically* on a minimal left ideal, by multiplicativity and the isotropy of the idempotent. So a pure spin-$\tfrac12$ state is always a ray, a pure spin-$0$ state is never one, and the mass of a spin-$\tfrac12$ field is the interference of two rays. This is the one statement of the article that is not already in the sources, and it is proved in §*The Carriers*.
-
-The article is a reading article. It cites the mathematics, proves the corollary on the carriers, and states at each step whether the physical word in play — mass, reversibility, gauge — is supplied by the algebra or imported from the material sector.
+The article is a reading article. It cites the mathematics, proves the small statements that are stated nowhere else, and says at each step whether the physical word in play — mass, reversibility, gauge — is supplied by the algebra or imported from the material sector.
 
 The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\natural$ is the quaternionic conjugation and $*$ the Hermitian conjugation; $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$ is the group of units; $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec Z)$ with $\vec Z^{2}=e_t$ are the primitive idempotents and $S_\pm=\mathbb{B}\tilde\Pi_\pm$ the minimal left ideals; $V=\ker\operatorname{tr}$ is the traceless part; and $\Sigma_{ij}$ is the sector with $N\neq0$ if $i=1$ and $B^{2}\neq0$ if $j=1$.
 
@@ -33,62 +34,88 @@ The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The norm $N=Q_t^{2}+B^{2}$, its multiplicativity, the group of units and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Quaternionic Norm* and §*The $\natural$-degenerate case* |
-| Only $N$ decides invertibility among the four norms; the qualified regular and degenerate; the domain of the polar word | [Norm and Pairing Conventions](norm-and-pairing-conventions.html), §*The Four Algebraic Norms and the Unitary Convention* |
-| The isomorphism $\mathsf M_2$, with $\langle\tilde Q\rangle_{\natural}=\det\mathsf M_2(\tilde Q)$ and the units as the invertible matrices | [$M_2(\mathbb C)$ Pauli Representation](../articles_maths/m2c-pauli-representation.html), §*The Compression* |
-| The four sectors, the rank of $L_{\tilde Q}$, the images and the kernels | [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html), §*The One-Sided Operators* |
-| The idempotents, their isotropy $\langle\tilde\Pi\rangle_{\natural}=0$, and the minimal left ideals | [Square Roots of One and the Idempotents of the General Quaternionic Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html); [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| The spectral cone $B^{2}=0$, its three strata, and the independence of $N\neq0$ and $B^{2}\neq0$ | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html); [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
-| The exponential and the logarithm, with the group of units as the image and the cone as the complement | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
-| The general H-norm two-factor decomposition on every non-zero element; the Cartan pairing off the cone; its extension to the cone, with a partial isometry | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html); [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html); [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
-| The four-factor word, its domain and its three pairings | [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) |
+| The norm, its multiplicativity, the two cases, the group of units and the two strata of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| The regular half: the unit group, its dimension, its topology and its two spectral cells | [The N-Regular Sector](../articles_maths/the-n-regular-sector.html) |
+| The degenerate half: the cone, the three strata, the link $S^{2}\times S^{3}$, the rank-one model and the spinor reading | [The N-Degenerate Sector](../articles_maths/the-n-degenerate-sector.html) |
+| The word on the units: the modulus, the unit factor and the four factors | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| The two factors on the cone: the rank-one Hermitian factor, the partial isometry and the closed forms | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
+| The four sectors, the characteristic polynomial, the independence of the two cones and the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
+| The four sectors one at a time | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html); [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html); [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html); [The N-Degenerate, Spectrally Degenerate Sector](../articles_maths/the-n-degenerate-spectrally-degenerate-sector.html) |
+| The matrix model, with $\langle\tilde Q\rangle_{\natural}=\det\mathsf M_2(\tilde Q)$ and the units as the invertible matrices | [$M_2(\mathbb C)$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
+| The rank of $L_{\tilde Q}$, the images and the kernels of the four sectors | [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html) |
+| The idempotents, their isotropy and the minimal left ideals | [Square Roots of One and the Idempotents of the General Quaternionic Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html); [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
+| The exponential and the logarithm, with the units as the image and the cone as the complement | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
+| The two-factor decomposition on every element, and its uniqueness | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html) |
 | The three carriers, their dimensions and their spins | [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html); [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html) |
 | The cone as the light cone of the material sector and the level set as the mass shell | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
-| The massless limit as a boundary value of the word, and the path dependence | [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html) |
+| The massless limit as a boundary value of the word | [The Massless Limit as a Boundary Value of the Polar Word](the-massless-limit-as-a-boundary-value-of-the-polar-word.html) |
 | The Hamilton modulus, the complex angle and the cross term in the mass of a sum | [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html) |
-| Spectral regularity is not invertibility | [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*Spectral Regularity Is Not Invertibility* |
 
-The table is the contract: every statement below is either a theorem of one of these rows or a corollary drawn from two of them. The one corollary the corpus does not already contain is the carrier statement of §*The Carriers*, and it is proved there in two lines.
+The table is the contract: every statement below is either a theorem of one of these rows or a corollary drawn from two of them, and each section names the row it restates.
 
-## The One Question the Norm Asks
+## The One Norm That Decides Invertibility
 
-### The Norm Is the Determinant
+### The Norm and Its Identity
 
-The map $\mathsf M_2$ reads the element as a $2\times2$ complex matrix, and under it the norm is the determinant:
-
-$$
-\langle\tilde Q\rangle_{\natural}=\det\mathsf M_2(\tilde Q).
-$$
-
-Two consequences follow immediately, and they are the whole of the algebra below.
-
-**Multiplicativity.** $\det$ is multiplicative, so
+**Definition.** The **quaternionic norm** of $\tilde Q=Q_te_t+\vec Q$ is the complex scalar
 
 $$
-N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)\,N(\tilde Q_2).
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}=Q_t^{2}+(\vec Q,\vec Q).
 $$
 
-**The units are the invertible matrices.** Hence
+**The identity.** For a vector part $\vec Q^{2}=-(\vec Q,\vec Q)$, so $(Q_t-\vec Q)(Q_t+\vec Q)=Q_t^{2}-\vec Q^{2}$, that is
 
 $$
-\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}\cong\mathrm{GL}(2,\mathbb{C}),
+\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}\,e_t .
 $$
 
-a group, and its complement is $\{\tilde Q:N=0\}$, a set with no group structure at all.
+The value is a complex scalar and not a length, and its vanishing set is a cone and not a sphere. Three consequences follow at once, and they are the whole of the algebra used below.
 
-The pair is therefore not one partition among many. It is the partition of an algebra into its group of units and its complement, and that is why every construction built by inverting something has the same domain.
+**Multiplicativity.** The conjugation $\natural$ is an anti-automorphism, so
 
-One consequence of multiplicativity deserves its own name, because it is the algebraic form of irreversibility.
+$$
+\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
+$$
 
-**Proposition (the cone is absorbing).** If $N(\tilde Q)=0$ then $N(\tilde Q\tilde X)=N(\tilde X\tilde Q)=0$ for every $\tilde X$.
+**Inversion.** Dividing the identity by the norm,
 
-*Proof.* Multiplicativity gives $N(\tilde Q\tilde X)=N(\tilde Q)N(\tilde X)=0$, and the same on the other side.
+$$
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
+$$
 
-Read plainly: once an element is on the cone, every product it enters is on the cone. Composing a singular element with anything, on either side, cannot restore what it destroyed. That is the reason no repair of a degenerate element is available anywhere in the corpus, and it is not a metaphor.
+which is defined exactly when $N\neq0$. The inverse is the conjugate over the norm: a vanishing norm is a division by zero and nothing subtler.
 
-### Two Answers and a Wall
+**The matrix reading.** Under $\mathsf M_2$ the norm is the determinant,
 
-The dichotomy is one line and it is worth boxing, because every later section quotes it.
+$$
+\langle\tilde Q\rangle_{\natural}=\det\mathsf M_2(\tilde Q),
+$$
+
+so $N$-regular is the invertible matrix and $N$-degenerate is the singular one. Multiplicativity is the multiplicativity of the determinant, and the inverse above is the adjugate over the determinant.
+
+### The Criterion, in Five Equivalent Forms
+
+The pair is operational because five properties that look different are the same property.
+
+**Criterion.** For $\tilde Q\in\mathbb{B}$ the following are equivalent:
+
+(i) $\langle\tilde Q\rangle_{\natural}\neq0$;
+
+(ii) $\tilde Q$ is invertible in the plain product;
+
+(iii) $\det\mathsf M_2(\tilde Q)\neq0$;
+
+(iv) the left translation $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ is bijective;
+
+(v) the right translation $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ is bijective.
+
+For $\tilde Q\neq0$ they are also equivalent to:
+
+(vi) $\tilde Q$ is not a zero divisor.
+
+*Proof.* (i)$\Rightarrow$(ii) is the inverse above. (ii)$\Rightarrow$(iii) is the determinant. (ii)$\Rightarrow$(iv),(v): multiplication by a unit is a bijection, of inverse multiplication by $\tilde Q^{-1}$. (iv)$\Rightarrow$(i): if $N=0$ and $\tilde Q\neq0$, the left translation kills the non-zero element $\tilde Q^{\natural}$; if $\tilde Q=0$, it is the zero map. The right translation is the same argument. (i)$\Rightarrow$(vi): a unit cannot annihilate a non-zero element. (vi)$\Rightarrow$(i): if $N=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a left zero divisor.
+
+The dichotomy is one line, and it is worth boxing, because every later section quotes it.
 
 $$
 \boxed{\;
@@ -97,34 +124,433 @@ N\neq0\iff\tilde Q\in\mathbb{B}^{\times}\iff L_{\tilde Q}\ \text{is a bijection}
 N=0\iff L_{\tilde Q}\ \text{has a non-zero kernel}\;}
 $$
 
-The two halves are exact negations of each other, and the middle term is what makes the pair operational: invertibility of the element and injectivity of the multiplication are the same condition.
+The two halves are exact negations of each other, and the middle term is what makes the pair operational: invertibility of the element and injectivity of the multiplication are one condition and not two.
 
-The corpus calls the zero set the **wall of invertibility** (*The Zero-Divisor Cone and the Massless Spectrum*, §*The Cone as the Wall of Invertibility*). The name is earned. Inside the wall every operation is reversible; on it, none is; and the wall is crossed by a single complex condition, so two real conditions must be tuned to reach it.
+**The one point where the words differ from ring theory.** In ring theory a regular element is a non-zero-divisor, and the origin qualifies, so the ring-regular set is $\mathbb{B}^{\times}\cup\{0\}$. The corpus's **$N$-regular** is the norm's word: the origin is $N$-degenerate. The two readings differ at one point, the apex, and this article follows the norm.
 
-### What the Other Three Norms Do Not Decide
+### What the Norm Does to Products
 
-The corpus carries four algebraic norms, and the choice of $N$ is not a matter of taste.
+Multiplicativity has one consequence that deserves its own name, because it is the algebraic form of irreversibility.
 
-| norm | letter | the $\Xi$-degenerate set | verdict |
-| --- | --- | --- | --- |
-| plain | $P$ | contains units: $P(e_t+\vec e_x)=0$ with $N=2$ | vanishes on invertible elements |
-| quaternionic | $N$ | the origin and the zero divisors | exact |
-| Hermitian | $H$ | the origin alone | every zero divisor is $H$-regular |
-| Krein | $\mathrm{Kr}$ | contains units: $\mathrm{Kr}(e_t+\vec e_x)=0$ with $N=2$ | vanishes on invertible elements |
+**Proposition (the cone is absorbing).** If $N(\tilde Q)=0$ then $N(\tilde Q\tilde X)=N(\tilde X\tilde Q)=0$ for every $\tilde X$.
 
-The four fail in two different ways, and both failures matter. $P$ and $\mathrm{Kr}$ vanish on elements that can be inverted, so neither can be the criterion: their degenerate sets are too small. $H$ fails in the opposite direction: it vanishes only at the origin, so its regular set contains every zero divisor, and $H\neq0$ is necessary but not sufficient. Only $N$ has a degenerate set that is exactly the non-units.
+*Proof.* $N(\tilde Q\tilde X)=N(\tilde Q)N(\tilde X)=0$, and the same on the other side.
 
-This is why the conventions insist on the qualified form: an element is $\Xi$-regular when $\Xi(\tilde Q)\neq0$, and only the qualification $N$ carries the algebraic meaning. The unqualified *regular* is the spectral condition $B^{2}\neq0$, a third question, and the letter is never omitted.
+Read plainly: once an element is on the cone, every product it enters is on the cone. Composing a singular element with anything, on either side, cannot restore what it destroyed. In the language of ideals the cone is a two-sided ideal of the multiplicative semigroup, $\mathbb{B}\mathcal N\subseteq\mathcal N$ and $\mathcal N\mathbb{B}\subseteq\mathcal N$.
 
-The lesson is that **the meaning of the pair is algebraic and not metric**. $N$ is not a length that happens to vanish somewhere; it is a determinant. A length has a scale and a positivity; a determinant has a sign or a phase and a zero set, and the zero set is what is being read.
+The property is not shared by the additive structure. The cone is not closed under addition, and the shortest witness is
 
-## What Is Annihilated
+$$
+(\vec e_x+i\vec e_y)+(\vec e_x-i\vec e_y)=2\vec e_x,
+\qquad
+N(\vec e_x+i\vec e_y)=0,\quad N(2\vec e_x)=4 .
+$$
 
-### The Kernel
+So the cone is a cone over a curved base and not a subspace, and it is not an additive ideal. The algebra is simple and has none; the cone is the multiplicative shadow of the determinant.
 
-The operational content of the dichotomy is a statement about what the element kills. A linear map that is not injective identifies distinct inputs: two different elements of the algebra are carried to one, and the information that distinguished them is gone. No inverse can restore it, because the inverse would have to choose between two preimages.
+## The Two Cases
 
-The kernel is therefore the object to look at, and it is computed in *Introduction to N and Spectrally Regular and Degenerate Operators*, §*The One-Sided Operators*.
+### The Regular Case: the Group of Units
+
+**Definition.** The **$N$-regular sector** is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and it is the group of units of the plain product.
+
+**Theorem.** $\mathbb{B}^{\times}$ is a group. The product of two units is a unit by multiplicativity, the unit is $e_t$ with $N=1$, and the inverse is $\tilde Q^{\natural}/N$.
+
+Four established properties of the sector are used in the readings below.
+
+**It is the invertible half of the matrix algebra.** Under $\mathsf M_2$,
+
+$$
+\mathbb{B}^{\times}\cong GL_2(\mathbb{C}),
+$$
+
+with $\langle\tilde Q\rangle_{\natural}=\det\mathsf M_2(\tilde Q)$. The norm is the determinant sequence $\mathbb{B}^{\times}\to\mathbb{C}^{\times}$, and its fibre over one is
+
+$$
+\{\tilde Q:N=1\}\cong SL_2(\mathbb{C}).
+$$
+
+**It is open, dense and connected.** The complement is the zero set of one complex polynomial, so it is closed and of empty interior; the sector is its complement, hence open and dense. It has real dimension eight, the dimension of the algebra, and the removal of a closed subset of real codimension two leaves it connected.
+
+**Its boundary is the cone.** $\partial\mathbb{B}^{\times}=\mathcal N$, and the cone has empty interior.
+
+**Its topology is the topology of the phase and of the compact part.** The sector retracts onto the $*$-unitary group $\mathrm U(2)$, and
+
+$$
+\mathrm U(2)\cong\frac{S^{1}\times S^{3}}{\{\pm e_t\}},
+\qquad
+\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z},
+$$
+
+the infinite cyclic group being carried by the central phase. The universal cover is $\mathbb{R}\times S^{3}$. The Euclidean sphere is not a group, and it is not the compact part of the sector.
+
+**Its two spectral halves.** Inside the sector the spectrum cuts again,
+
+$$
+\mathbb{B}^{\times}=\Sigma_{11}\uplus\Sigma_{10},
+\qquad
+\Sigma_{11}=\{N\neq0,\ B^{2}\neq0\},
+\qquad
+\Sigma_{10}=\{N\neq0,\ B^{2}=0\}.
+$$
+
+On $\Sigma_{11}$ the eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct and non-zero, and the element is diagonalisable. On $\Sigma_{10}$ they coincide at $Q_t\neq0$, and the element is either the scalar $Q_te_t$ or a Jordan element $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon\neq0$ and $\vec\Upsilon^{2}=0$. The split is not multiplicative: the product of two elements of $\Sigma_{10}$ can lie in $\Sigma_{11}$, and the product of two elements of $\Sigma_{11}$ can lie in $\Sigma_{10}$. It is a stratification of the sector, not a second partition of the algebra.
+
+### The Degenerate Case: the Cone
+
+**Definition.** The **$N$-degenerate sector** is the null cone
+
+$$
+\mathcal N=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\},
+$$
+
+and the **zero-divisor set** is its punctured part $\mathcal Z=\mathcal N\setminus\{0\}$.
+
+Three established properties are used below.
+
+**It is a complex hypersurface of real codimension two.** One complex equation in four complex coefficients, of real dimension six, smooth off the origin, closed and of empty interior. On the punctured cone the gradient of the norm does not vanish, so the cone is a complex three-fold there and the origin is its only singular point.
+
+**It is not a topological manifold at the apex.** Its link is
+
+$$
+L=\mathcal N\cap S^{7}_{E}\cong S^{2}\times S^{3},
+\qquad
+\pi_2(L)\cong\mathbb{Z},
+$$
+
+while a manifold point would have the link $S^{5}$, whose second homotopy group vanishes. The apex is a genuine singularity.
+
+**It is contractible and projectively a quadric surface.** The straight-line homotopy $\tilde Q\mapsto(1-s)\tilde Q$ contracts the cone to the apex, and the quotient by the complex scalars is
+
+$$
+\mathbb{P}(\mathcal N)\cong\mathbb{P}^{1}\times\mathbb{P}^{1},
+$$
+
+whose real form is $S^{2}\times S^{2}$. The punctured cone is a $\mathbb{C}^{\times}$-bundle over it.
+
+The two cases together are a partition, and it is worth writing as one display because the corpus quotes it in that form:
+
+$$
+\mathbb{B}=\underbrace{\{\tilde Q:N\neq0\}}_{\text{group of units}}\;\uplus\;\underbrace{\{\tilde Q:N=0\}}_{\text{null cone}}=\mathbb{B}^{\times}\uplus\mathcal N,
+\qquad
+\mathcal N=\{0\}\uplus\mathcal Z .
+$$
+
+### The Two Sides Compared
+
+| | $\mathbb{B}^{\times}$, $N$-regular | $\mathcal N$, $N$-degenerate |
+| --- | --- | --- |
+| condition | $N\neq0$ | $N=0$ |
+| real dimension | $8$ | $6$ |
+| topology | open and dense, connected, $\simeq S^{1}\times S^{3}$ | closed cone, contractible, singular at the apex, link $S^{2}\times S^{3}$ |
+| multiplication | group | semigroup with absorbing $0$ and no identity |
+| inverse | two-sided, $\tilde Q^{\natural}/N$ | none |
+| matrix model | invertible, rank $2$ | rank at most $1$ |
+| spectrum | $\lambda_\pm\neq0$ | $0$ is an eigenvalue |
+| rank of $L_{\tilde Q}$ | $4$ | $2$, or $0$ at the apex |
+| polar factors | $\tilde Q_H$ positive definite, $\tilde Q_0$ $*$-unitary | $\tilde Q_H$ of rank one, $\tilde Q_0$ a partial isometry |
+| boundary | $\partial\mathbb{B}^{\times}=\mathcal N$ | the cone is the boundary and has empty interior |
+
+## The Two Strata of the Cone
+
+### The Split by the Scalar Part
+
+The cone is not homogeneous. Its own equation, $Q_t^{2}+\vec Q^{2}=0$, ties the scalar part to the vector part, and the scalar part alone cuts the cone into two pieces and an apex.
+
+**Definition.** The **apex**, the **pure stratum** and the **non-pure stratum** are
+
+$$
+\{0\},\qquad
+\mathcal N_{\mathrm p}=\{\tilde Q\in\mathcal N:Q_t=0,\ \tilde Q\neq0\},\qquad
+\mathcal N_{\mathrm{np}}=\{\tilde Q\in\mathcal N:Q_t\neq0\}.
+$$
+
+**Theorem (the trichotomy).** $\mathcal N=\{0\}\uplus\mathcal N_{\mathrm p}\uplus\mathcal N_{\mathrm{np}}$, and for a non-zero point of the cone the following are equivalent:
+
+(i) $Q_t=0$;
+
+(ii) $\tilde Q^{2}=0$;
+
+(iii) $\tilde Q$ lies in the pure stratum;
+
+(iv) $B^{2}=0$, which is the spectral condition.
+
+The negations are equivalent too: $Q_t\neq0$, $\tilde Q^{2}\neq0$, $B^{2}\neq0$, and the element lies in the non-pure stratum.
+
+*Proof.* On the cone $Q_t^{2}=-B^{2}$, so $Q_t^{2}-B^{2}=2Q_t^{2}$ and
+
+$$
+\tilde Q^{2}=(Q_t^{2}-B^{2})e_t+2Q_t\vec Q=2Q_t\tilde Q,
+$$
+
+which vanishes exactly when $Q_t=0$; and $Q_t=0$ is $B^{2}=0$ on the cone.
+
+That display is the whole of the section. On the cone every element satisfies $\tilde Q^{2}=2Q_t\tilde Q$, and the two strata are the two ways that identity can be read: at $Q_t\neq0$ it is an idempotent equation after rescaling, and at $Q_t=0$ it is a nilpotent equation.
+
+### The Pure Stratum: the Nilpotents
+
+**Theorem.** Every element of $\mathcal N_{\mathrm p}$ is a nilpotent of index two,
+
+$$
+\tilde Q=\vec Q\neq0,
+\qquad
+\vec Q^{2}=0,
+\qquad
+\tilde Q^{2}=0,
+$$
+
+and the stratum is a complex cone of complex dimension two and real dimension four, cut out in the three vector coefficients by the single quadratic equation
+
+$$
+Q_x^{2}+Q_y^{2}+Q_z^{2}=0 .
+$$
+
+In the matrix model it is the set of non-zero nilpotent matrices of rank one.
+
+**Real coordinates.** Write $\vec Q=\vec\rho+i\vec\rho'$ with $\vec\rho,\vec\rho'\in\mathbb{R}^{3}$. Then
+
+$$
+\vec Q^{2}=\bigl(\lvert\vec\rho'\rvert^{2}-\lvert\vec\rho\rvert^{2}\bigr)e_t-2i(\vec\rho\cdot\vec\rho')\,e_t,
+$$
+
+so the pure stratum is the set of bivectors with
+
+$$
+\vec\rho\cdot\vec\rho'=0,
+\qquad
+\lvert\vec\rho\rvert=\lvert\vec\rho'\rvert .
+$$
+
+Equivalently it is the set of elements
+
+$$
+\tilde Q=r\bigl(\vec u+i\vec u_\perp\bigr),
+\qquad
+r>0,
+$$
+
+with $\vec u$ a real unit vector and $\vec u_\perp$ a real unit vector perpendicular to it. One radius, one direction and one perpendicular direction: $1+2+1=4$ real dimensions.
+
+Read the content. A pure degenerate element is a **null bivector**: an electric part and a magnetic part of equal magnitude and perpendicular to one another. It has no scalar part, so it has no trace, and its square vanishes, so it annihilates its own output.
+
+### The Non-Pure Stratum: the Idempotent Multiples
+
+**Theorem.** Every element of $\mathcal N_{\mathrm{np}}$ is uniquely
+
+$$
+\tilde Q=c\,\tilde\Pi,
+\qquad
+c=2Q_t\neq0,
+\qquad
+\tilde\Pi=\frac{\tilde Q}{2Q_t},
+\qquad
+\tilde\Pi^{2}=\tilde\Pi,
+\qquad
+\tilde\Pi\neq0,e_t,
+$$
+
+and the idempotent has scalar part $1/2$. The stratum is open and dense in the punctured cone, of complex dimension three and real dimension six.
+
+*Proof.* $\tilde\Pi^{2}=\tilde Q^{2}/(4Q_t^{2})=2Q_t\tilde Q/(4Q_t^{2})=\tilde\Pi$. The idempotent is neither $0$ nor $e_t$: the first gives $\tilde Q=0$, the second gives $\tilde Q=2Q_te_t$, of norm $4Q_t^{2}\neq0$. The map $\tilde Q\mapsto\tilde\Pi$ is continuous, and $Q_t\neq0$ is open in the cone with the pure stratum as its complement.
+
+**The geometry of the idempotents.** The non-trivial idempotents form a complex surface of real dimension four, and they are exactly the rank-one idempotents. The map $\mathcal N_{\mathrm{np}}\to\{\tilde\Pi\}$ is a principal $\mathbb{C}^{\times}$-bundle, the fibre over $\tilde\Pi$ being the punctured complex line $\mathbb{C}^{\times}\tilde\Pi$. A non-trivial idempotent is a pair of a line and a transversal hyperplane, so the surface is $\mathbb{P}^{1}\times\mathbb{P}^{1}$ minus the diagonal.
+
+**The Peirce factorisation.** Both strata sit in one Peirce framework. For a non-pure zero divisor, with $\tilde\Pi$ its idempotent, the mixed Peirce corners contain elements
+
+$$
+u\in\tilde\Pi\mathbb{B}(e_t-\tilde\Pi),
+\qquad
+w\in(e_t-\tilde\Pi)\mathbb{B}\tilde\Pi,
+\qquad
+uw=\tilde\Pi,
+\qquad
+u^{2}=w^{2}=0,
+$$
+
+so every non-pure zero divisor is a scalar multiple of a product of two nilpotents,
+
+$$
+\tilde Q=2Q_t\,uw .
+$$
+
+**What separates the strata.** Conjugation by the units acts on the punctured cone with the pure stratum as one orbit, and with each set $c\{\tilde\Pi\}$ of idempotent multiples as one orbit. The invariant that separates them is the scalar part $Q_t$: a non-zero nilpotent of index two has one Jordan form, and the idempotent multiples are the diagonalisable ones, scaled by $c$.
+
+So the cone carries two shapes and not one. That is the answer to the question of what degeneracy looks like, and the reason the flat statement "a degenerate element is singular" is true and useless: it says nothing about which of the two shapes the element has.
+
+## The Two Sectors of Degeneracy
+
+### The Characteristic Polynomial Reads Both Conditions
+
+The two strata are one cut. The two sectors of degeneracy are another, and to see why there are exactly two of them the right object is the characteristic polynomial.
+
+**Definition.** For $\tilde Q=Q_te_t+\vec Q$,
+
+$$
+p_{\tilde Q}(X)=X^{2}-2Q_tX+\langle\tilde Q\rangle_{\natural}=X^{2}-2Q_tX+Q_t^{2}+B^{2},
+\qquad
+\operatorname{disc}p_{\tilde Q}=-4B^{2}.
+$$
+
+**Theorem (the spectrum reads both conditions).** With $\lambda_\pm=Q_t\pm iB$, where $B$ is a fixed square root of $B^{2}$,
+
+$$
+p_{\tilde Q}(X)=(X-\lambda_+)(X-\lambda_-),
+\qquad
+N=\lambda_+\lambda_-,
+\qquad
+2Q_t=\lambda_++\lambda_-,
+\qquad
+(\lambda_+-\lambda_-)^{2}=-4B^{2}.
+$$
+
+*Proof.* The product and the sum of the roots. The square of the difference is $(2iB)^{2}=-4B^{2}$.
+
+The display is a dictionary, and it is exact:
+
+| item | quaternionic norm | spectral condition |
+| --- | --- | --- |
+| quantity | $N=Q_t^{2}+B^{2}$ | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
+| role in $p_{\tilde Q}$ | the constant term | the discriminant, up to $-4$ |
+| spectral reading | the product $\lambda_+\lambda_-$ | the difference $\lambda_+-\lambda_-=2iB$ |
+| zero locus | $\mathcal N$ | $\mathcal S=\{B^{2}=0\}$ |
+| vanishing means | one eigenvalue is $0$ | the two eigenvalues coincide |
+| multiplicative | yes | no |
+| decides | invertibility | separation of the spectrum |
+
+So the two degenerations of an element are the two ways a monic quadratic over $\mathbb{C}$ can degenerate: **a zero root** is $N=0$, and **a double root** is $B^{2}=0$. The cone is the vanishing of the constant term; the spectral cone is the vanishing of the discriminant.
+
+On the cone the constant term vanishes, so one root is zero, and there are only two ways for the other root to behave. Either it is non-zero — two distinct roots, one of them zero — or it vanishes as well — a double root at zero. Those are the two sectors of degeneracy.
+
+### $\Sigma_{01}$: Two Distinct Roots, One of Them Zero
+
+$$
+\Sigma_{01}=\{N=0,\ B^{2}\neq0\}=\{\tilde Q=c\,\tilde\Pi:\ c\in\mathbb{C}^{\times},\ \tilde\Pi^{2}=\tilde\Pi,\ \tilde\Pi\neq0,e_t\}.
+$$
+
+This is the non-pure stratum, and the identification is the trichotomy read backwards: $B^{2}\neq0$ is $Q_t\neq0$, which is the idempotent case.
+
+**In components.** With $\vec Z=\vec Q/Q_t$ the normal form is one line, and the conditions unfold to one equation each. A member of the sector is
+
+$$
+\tilde Q=Q_t\,(e_t+\vec Z)=2Q_t\,\tilde\Pi,
+\qquad
+\tilde\Pi=\tfrac12(e_t+\vec Z),
+\qquad
+(\vec Z,\vec Z)=-1,
+$$
+
+and the last equation written out is the component form of $N=0$:
+
+$$
+Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2},
+\qquad
+Q_t\neq0 .
+$$
+
+So a member is a scalar part together with a vector part whose Euclidean square is minus the square of the scalar part. The second display is one complex equation in the three complex coefficients of $\vec Z$, so it cuts the six real parameters of $\vec Z$ to four, and that surface is the one counted in §*The Non-Pure Stratum*.
+
+**A member, checked.** Take $\vec Z=i\vec e_x$, so that $Q_t=1$, $c=2$ and $\tilde Q=e_t+i\vec e_x$. Then $N=1+i^{2}=0$ and $Q_t\neq0$, so the element is in the sector, and
+
+$$
+\tilde Q^{2}=e_t+2i\vec e_x+i^{2}\vec e_x^{2}=e_t+2i\vec e_x+e_t=2\tilde Q=2Q_t\tilde Q,
+$$
+
+which is the sector identity at $Q_t=1$. Every element of the sector is conjugate to $c\,\tilde\Pi(\vec e_x)$ for its own $c$, because every non-trivial idempotent is conjugate to $\tilde\Pi(\vec e_x)$.
+
+**The spectrum.** The eigenvalues are $c=2Q_t\neq0$ and $0$, distinct, and the spectral decomposition exists,
+
+$$
+\tilde Q=c\,\tilde\Pi+0\cdot(e_t-\tilde\Pi),
+$$
+
+with the orthogonal idempotents $\tilde\Pi$ and $e_t-\tilde\Pi$. The minimal polynomial is $p_{\tilde Q}(X)=X(X-c)$, squarefree. The unordered pair $\{c,0\}$ is the whole similarity invariant, because conjugation preserves the trace $c$ and the determinant $0$.
+
+**What the sector is.** A live mode of weight $c$ and a dead mode of weight $0$. The dead mode is a genuine spectral direction: it is present in the basis and absent from the element. This is the sector in which the element is a **scaled projection**: it selects a plane, scales it, and kills a transversal plane.
+
+**Why it propagates and $\Sigma_{00}$ does not.** Because the two roots are distinct, the image and the kernel are complementary,
+
+$$
+\mathbb{B}=\ker L_{\tilde Q}\oplus\operatorname{im}L_{\tilde Q},
+$$
+
+so a live plane survives beside the annihilated one. That complementarity is the operator form of $\tilde Q^{2}=c\tilde Q$, and it is the reason this sector behaves like a ray with a direction.
+
+**What it does to a test element.** Left multiplication by $\tilde Q$ is $c$ times left multiplication by $\tilde\Pi$, and $\tilde\Pi+(e_t-\tilde\Pi)=e_t$, so every $\tilde X$ splits as
+
+$$
+\tilde X=\tilde\Pi\tilde X+(e_t-\tilde\Pi)\tilde X ,
+$$
+
+one part scaled by $c$ and one part killed. The kept part runs over the image $\tilde\Pi\mathbb{B}$, a complex plane, and the killed part runs over the kernel. The two planes meet only at $0$ and fill the algebra.
+
+**The physical interpretation.** A non-trivial idempotent is a ray. The Hermitian members of the family are the pure states, $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a real unit vector, and they are exactly the members with $\vec Z=\pm i\vec u$. A null four-momentum of the material sector is one of them with an imaginary weight, $\tilde P_\Phi=2i(E/c)\tilde\Pi(-\vec u)$, so the massless momentum sits in this sector. The sector keeps a direction and a weight and has no frame: that is what makes it the sector of a ray and not of a transformation. The weight is a complex number and the idempotent need not be Hermitian, so the reading of the whole sector is **scaled projection**, and *pure state* is the reading of the Hermitian subfamily. Boundary: the sector fixes the nullity and the plane that survives, and it fixes neither $c$ nor the polarisation inside that plane.
+
+### $\Sigma_{00}$: a Double Root at Zero
+
+$$
+\Sigma_{00}=\{N=0,\ B^{2}=0\}=\{\tilde Q:\tilde Q^{2}=0\}=\mathcal N_{\mathrm p}\cup\{0\}.
+$$
+
+This is the pure stratum with the apex adjoined, and again the identification is the trichotomy: $B^{2}=0$ is $Q_t=0$, which is the nilpotent case.
+
+**In components.** The scalar part is zero, so the sector is a condition on the vector alone:
+
+$$
+\tilde Q=\vec Q,
+\qquad
+(\vec Q,\vec Q)=0
+\quad\Longleftrightarrow\quad
+Q_t=0,\quad Q_x^{2}+Q_y^{2}+Q_z^{2}=0 .
+$$
+
+In the real coordinates $\vec Q=\vec\rho+i\vec\rho'$ of §*The Pure Stratum* the condition is $\lvert\vec\rho\rvert=\lvert\vec\rho'\rvert$ and $\vec\rho\cdot\vec\rho'=0$: an electric part and a magnetic part of equal magnitude and perpendicular, which is the null bivector found there. The parametrisation given there, $\tilde Q=r(\vec u+i\vec u_\perp)$ with $\vec u$ and $\vec u_\perp$ real orthonormal and $r>0$, is exactly this sector without the apex.
+
+**A member, checked.** Take $\tilde Q=\vec e_x+i\vec e_y$. Then $Q_t=0$ and $Q_x^{2}+Q_y^{2}=1+i^{2}=0$, and
+
+$$
+\tilde Q^{2}=-e_t+i\left(\vec e_x\vec e_y+\vec e_y\vec e_x\right)+i^{2}\vec e_y^{2}=-e_t+0+e_t=0 ,
+$$
+
+the two cross terms cancelling because the quaternion units anticommute. The null field strength is a complex multiple of the same element. Write $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and put $\vec V=\sqrt{\epsilon}\,\vec E$ and $\vec W=\sqrt{\mu}\,\vec H$. Then $(\vec F,\vec F)=-\lvert\vec V\rvert^{2}+\lvert\vec W\rvert^{2}-2i\,\vec V\cdot\vec W$, so the field is a nilpotent exactly when the two real vectors are perpendicular with equal lengths. Axes along them then give $\tilde F=iV\vec e_x-V\vec e_y=iV(\vec e_x+i\vec e_y)$ with $V=\lvert\vec V\rvert=\lvert\vec W\rvert$, and a complex multiple of a nilpotent is a nilpotent.
+
+**The spectrum.** The only eigenvalue is $0$, the minimal polynomial is $X$ at the origin and $X^{2}$ off it, and off the origin there is no spectral decomposition at all: no non-trivial idempotent commutes with a non-zero nilpotent.
+
+**What the sector is.** A two-step ladder with no live weight. The element annihilates what it produces, and the difference from the apex is only that the ladder has a rung.
+
+**What it does to a test element.** $\tilde Q^{2}=0$ is the statement that the output of the map is annihilated by the map, so $\operatorname{im}L_{\tilde Q}\subseteq\ker L_{\tilde Q}$. The rank is two and the kernel is a plane, so the two subspaces coincide: the element maps the algebra onto the plane it kills, and nothing is kept at any scale.
+
+**Why the two sectors cannot be confused.** In $\Sigma_{01}$ the rank of left multiplication is two and the image is complementary to the kernel. In $\Sigma_{00}$, off the origin, the rank is two and the kernel is a plane, so the image coincides with the kernel. The ranks agree and the geometry does not: one sector is a projection onto a plane along a plane, the other is a shift into a dead plane.
+
+**The physical interpretation.** The element is pure, and a nilpotent is neither Hermitian nor anti-Hermitian, so it lies in neither $\mathbb{B}_\Phi$ nor $\mathbb{B}_\Psi$. A physical four-momentum has a non-zero scalar part, so no momentum is a nilpotent, and the massless momentum of the previous subsection is not one. Two physical objects do sit here: the null field strength, which is the radiative field with both invariants zero, and the lightlike displacement, which is the algebraic form of a direction that erases itself in one composition. The sector has a plane and no weight. Boundary: the nullity is fixed and the polarisation is not, so the cone does not separate the two helicities of a null field.
+
+### Why There Are Exactly Two
+
+**Theorem (the cone meets two sectors).** The cone is the disjoint union
+
+$$
+\mathcal N=\Sigma_{01}\uplus\Sigma_{00},
+$$
+
+and the other two sectors are disjoint from it, $\Sigma_{11}\cap\mathcal N=\Sigma_{10}\cap\mathcal N=\varnothing$.
+
+*Proof.* On the cone $Q_t^{2}=-B^{2}$, hence $Q_t=0$ exactly when $B^{2}=0$, and $Q_t\neq0$ exactly when $B^{2}\neq0$.
+
+**Corollary (the algebraic and spectral splits coincide on the cone).** On the cone the split by the scalar part and the split by the square of the vector part are the same split. Off the cone they are independent: $e_t$ has $Q_t=1$ and $B^{2}=0$, while $\vec e_x$ has $Q_t=0$ and $B^{2}=1$.
+
+This corollary is why the two sectors of degeneracy can be named by the spectrum without ambiguity: on the cone, and only there, the two questions have the same answer. The corpus's warning that the two conditions are independent is a statement about the algebra, and the cone is exactly the set on which the warning does not bite.
+
+| sector | condition | normal form | spectrum | minimal polynomial | real dimension | what survives |
+| --- | --- | --- | --- | --- | --- | --- |
+| $\Sigma_{01}$ | $N=0$, $B^{2}\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ non-trivial | $\{c,0\}$, $c\neq0$ | $X(X-c)$, squarefree | $6$ | a direction and a scale |
+| $\Sigma_{00}$ | $N=0$, $B^{2}=0$ | $0$, or $\tilde\nu$ with $\tilde\nu^{2}=0$ | $\{0\}$ | $X$ or $X^{2}$ | $4$ | a null bivector, and no scale |
+
+The table is the answer to the question *what are the two cases of degeneracy*. They are not two degrees of badness. They are a projection and a nilpotent, and every difference between them in this article follows from that one.
+
+## What the Degenerate Element Carries
+
+### The Kernel and the Rank
+
+The operational content of the dichotomy is a statement about what the element kills, and it is computed in *Introduction to N and Spectrally Regular and Degenerate Operators*, §*The Three Operators*.
 
 | object | $\ker L_{\tilde Q}$ | $\operatorname{im}L_{\tilde Q}$ |
 | --- | --- | --- |
@@ -133,17 +559,7 @@ The kernel is therefore the object to look at, and it is computed in *Introducti
 | $\Sigma_{00}$, $\tilde Q=\tilde\nu$ nilpotent | a complex plane | $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_{+}=\ker L_{\tilde\nu}$ |
 | $\tilde Q=0$ | $\mathbb{B}$ | $0$ |
 
-Two features of that column are worth stating separately, because they are sharper than "the kernel is non-zero".
-
-**The kernel is never odd-dimensional.** On a non-zero degenerate element it is exactly a complex plane, of complex dimension two, in both strata. There is no element of $\mathbb{B}$ whose left multiplication annihilates exactly a line, and none that annihilates a three-dimensional subspace. The loss is quantised: nothing, or half, or everything.
-
-**The kernel can swallow the image.** On $\Sigma_{00}$ the image is contained in the kernel, which is the operator form of $\tilde\nu^{2}=0$: the element annihilates its own output, twice over. On $\Sigma_{01}$ they are complementary, $\mathbb{B}=\ker L_{\tilde Q}\oplus\operatorname{im}L_{\tilde Q}$, the operator form of $\tilde Q^{2}=\kappa\tilde Q$ with its two distinct roots. So the two strata differ by whether the surviving plane is beside the annihilated plane or inside it, and that is the whole of the difference between a ray that propagates and a shift that does not.
-
-For the right multiplication the same table holds with $\mathbb{B}\tilde Q$ in place of $\tilde Q\mathbb{B}$, and the two images are distinct on the null strata; the left and right pictures agree on the rank.
-
-### The Rank as the Measure of the Loss
-
-One number summarises the table: the rank of left multiplication.
+One number summarises it:
 
 $$
 \operatorname{rank}L_{\tilde Q}=
@@ -154,37 +570,88 @@ $$
 \end{cases}
 $$
 
-The jumps are by two and by two. The regular element loses nothing, the degenerate one loses exactly half its domain, and the zero element loses all of it. Because the algebra is four-dimensional over $\mathbb{C}$, "half" is a plane and not a ray, and that is the reason the degenerate case is geometrically rich: a plane has a direction, a transversal and a complement, while a single line would have none.
+The jumps are by two and by two. The regular element loses nothing, the degenerate one loses exactly half of its domain, and the zero element loses all of it. Because the algebra is four-dimensional over $\mathbb{C}$, half is a plane and not a line.
 
-The same number is the reason the polar word cannot be repaired by adding a parameter. A chart with eight real parameters cannot cover an element whose operator has rank two, because the chart parametrises bijections and the element is not one.
+**The kernel is never odd-dimensional.** There is no element of $\mathbb{B}$ whose left multiplication annihilates exactly a line, and none that annihilates a three-dimensional subspace. The loss is quantised: nothing, or half, or everything. That is the sharpest quantitative statement of the article, and it is what makes the degenerate case rich: a plane has a direction, a transversal and a complement, while a line would have none.
 
-### The Three Nonzero Forms
+**The two sectors differ by where the image sits.** In $\Sigma_{01}$ the image is complementary to the kernel; in $\Sigma_{00}$ it lies inside it. The operator form of the difference is $\tilde Q^{2}=c\tilde Q$ against $\tilde\nu^{2}=0$.
 
-Degeneracy of the norm is not degeneracy of the spectrum, and the corpus keeps the two apart. For the record, because the distinction is used twice below:
+### The Product of a Spinor and a Co-Spinor
 
-- **$\Sigma_{01}$: a scaled idempotent.** $\tilde Q=\kappa\tilde\Pi(\vec Z)$ with $\kappa=2Q_t\neq0$; the eigenvalues are $\kappa$ and $0$, distinct. One live mode, one dead one, and the dead one is a genuine spectral direction: the mode is present in the basis and absent from the element.
-- **$\Sigma_{00}$: a nilpotent.** $\tilde Q=\tilde\nu$ with $\tilde\nu^{2}=0$; the only eigenvalue is $0$; the operator is a two-step ladder.
-- **$\Sigma_{10}$: a unit with no mode basis.** $N=Q_t^{2}\neq0$ and $B^{2}=0$; the element is invertible and has no eigenbasis. It is the counterexample that keeps the two questions apart, and its existence is the reason a statement about invertibility may never be replaced by a statement about the spectrum (*Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*Spectral Regularity Is Not Invertibility*).
+The cone has a second description, and it is the one that carries the physical reading. Fix the standard primitive idempotent $\tilde\Pi_{+}=\tfrac12(e_t+\vec e_z)$. The **spinor space** is the minimal left ideal
 
-So the cone contains elements of two spectral types, and the complement contains elements of two spectral types. $N$ and $B^{2}$ are independent, and only $N$ answers the question of this article.
+$$
+S_{+}=\mathbb{B}\tilde\Pi_{+},
+$$
+
+of complex dimension two, and the **co-spinor space** is the row space
+
+$$
+S_{+}^{\vee}=\tilde\Pi_{+}\mathbb{B},
+$$
+
+of the same dimension. Take a spinor $\psi\in S_{+}$ and a co-spinor $\chi\in S_{+}^{\vee}$ and multiply:
+
+$$
+\mathcal N=\{\psi\chi:\psi\in S_{+},\ \chi\in S_{+}^{\vee}\}.
+$$
+
+**Why the product is on the cone.** In the Peirce coordinates of the pair $\tilde\Pi_\pm$ the product has
+
+$$
+Q_{++}=\psi_{1}\chi_{1},\quad
+Q_{+-}=\psi_{1}\chi_{2},\quad
+Q_{-+}=\psi_{2}\chi_{1},\quad
+Q_{--}=\psi_{2}\chi_{2},
+$$
+
+which are the four entries of the outer product of the coefficient column with the coefficient row. Its determinant vanishes, and the determinant of the Peirce coordinates is the norm. So every product of a spinor with a co-spinor is a zero divisor, and conversely: a non-zero element of the cone has the rank-one matrix model $uv^{\mathsf T}$, and reading the column and the row gives the pair.
+
+**The contraction.** The product in the other order is not an element of the cone but a multiple of the idempotent,
+
+$$
+\chi\psi=\varepsilon(\chi,\psi)\,\tilde\Pi_{+},
+\qquad
+\varepsilon(\chi,\psi)=\chi_{1}\psi_{1}+\chi_{2}\psi_{2},
+$$
+
+with $\varepsilon$ complex bilinear and carrying no conjugation. Its value is the scalar part,
+
+$$
+2Q_t=\varepsilon(\chi,\psi),
+$$
+
+which is the same identity as $2Q_t=v^{\mathsf T}u$ in the matrix model. **The trace is the contraction of the two factors.**
+
+**The two strata in this language.** For $Q=\psi\chi\neq0$ the spinor line $[\psi]$ lies in the hyperplane $\ker\chi$ exactly when $Q$ is pure. Off the pure stratum the line and the hyperplane are transverse and meet only in zero. So
+
+$$
+\mathbb{P}(\mathcal N)\cong\mathbb{P}(S_{+})\times\mathbb{P}(S_{+}^{\vee})\cong\mathbb{P}^{1}\times\mathbb{P}^{1},
+$$
+
+and the projectivised pure stratum is the incidence variety — in rank two, the diagonal — while the non-pure stratum is its complement. An idempotent is a pair of a line and a distinct hyperplane; a nilpotent is a pair in which the two coincide.
+
+This is the sharpest form of the statement that the cone is a product of two rays. It is also the reason the degenerate case is not a degenerate version of the regular one: the regular element is a transformation, and the degenerate one is a pair of a direction with a covector.
+
+**The three non-zero sectors, in one glance.** $\Sigma_{01}$ is a scaled idempotent, with a live mode and a dead one. $\Sigma_{00}$ is a nilpotent, with the single eigenvalue $0$. $\Sigma_{10}$ is a unit with no eigenbasis: $N=Q_t^{2}\neq0$ and $B^{2}=0$, so the element is invertible and not diagonalisable. The cone contains elements of two spectral types and the complement contains elements of two spectral types. $N$ and $B^{2}$ are independent, and only $N$ answers the question of this article.
 
 ## Three Losses with One Source
 
-Three constructions in the corpus need an inverse, and all three fail on the same set. It is worth listing them together, because the corpus states them in three places and never says they are one fact.
+Three constructions in the corpus need an inverse, and all three fail on the same set. The corpus states them in three places and never says they are one fact.
 
 ### No Inverse
 
-Immediate from the determinant: a singular matrix has no inverse. In the algebra, the candidate inverse is
+Immediate from the determinant. In the algebra the candidate is
 
 $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$
 
-which is undefined exactly at $N=0$. Note what the formula says: the inverse is the conjugate divided by the norm, so a vanishing norm is a division by zero and nothing subtler. There is no sense in which a degenerate element is "almost" invertible with a large inverse; the inverse does not exist, and a family approaching the cone has an inverse whose scale diverges.
+which is undefined exactly at $N=0$. Note what the formula says: a vanishing norm is a division by zero and nothing subtler. There is no sense in which a degenerate element is almost invertible with a large inverse; the inverse does not exist, and a family approaching the cone has an inverse whose scale diverges.
 
 ### No Generator
 
-The exponential map has the group of units as its image and the cone as its complement (*The Exponential, the Logarithm and the Generator*). A degenerate element has no logarithm and therefore no generator: there is no $\tilde L$ with $\exp\tilde L=\tilde Q$. The physical reading is that the element cannot be written as the result of a continuous process of finite rate, and the corpus records the two ways out: a boundary value approached at infinite rate, or a Lindbladian superoperator in place of an element.
+The exponential has the group of units as its image and the cone as its complement (*The Exponential, the Logarithm and the Generator*). A degenerate element has no logarithm and therefore no generator: there is no $\tilde L$ with $\exp\tilde L=\tilde Q$. The physical reading is that the element cannot be written as the result of a continuous process of finite rate, and the corpus records the two ways out: a boundary value approached at infinite rate, or a Lindbladian superoperator in place of an element.
 
 ### No Polar Word
 
@@ -194,63 +661,127 @@ $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-and it exists on the complement of the cone and on no larger set (*Norm and Pairing Conventions*, §*The Polar Word and the Three Pairings*). The reason is one line of multiplicativity:
+and it exists on the complement of the cone and on no larger set. The reason is one line of multiplicativity:
 
 $$
 N\bigl(r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}\bigr)
-=r^{2}\,e^{2i\alpha}\cdot1\cdot1=r^{2}e^{2i\alpha}\neq0,
+=r^{2}e^{2i\alpha}\cdot1\cdot1=r^{2}e^{2i\alpha}\neq0,
 $$
 
-because the frame factor has $N$-norm one and the rotor is a unit. **Every value of the word is a unit.** The cone is not a bad point of the chart; it is outside the chart's range. No choice of branch, no extension of the parameter range and no change of order can put a zero divisor in the image.
+because the boost has $N$-norm one and the rotor is a unit. **Every value of the word is a unit.** The cone is not a bad point of the chart; it is outside the chart's range. No branch, no extension of the parameter range and no change of order puts a zero divisor in the image.
 
 ### The One Source
 
-The three failures are the same fact. A bijection has an inverse; a group element has a logarithm, because the exponential is a local diffeomorphism onto the units; a unit has a polar decomposition, because the two factors are built by inverting and taking a square root of $\tilde Q\tilde Q^{*}$, which is positive definite exactly when $\tilde Q$ is invertible.
+The three failures are one fact. A bijection has an inverse; a group element has a logarithm, because the exponential is a local diffeomorphism onto the units; a unit has the four-factor word, because its factors are built by inverting and taking a square root of $\tilde Q\tilde Q^{*}$, which is positive definite exactly when $\tilde Q$ is invertible.
 
-In each case the object being constructed is a function of $\tilde Q^{-1}$, and $\tilde Q^{-1}$ does not exist. That is the content of the sentence at the head of this article. What the corpus presents as three separate domains is one domain, and any fourth construction built by inversion will inherit it.
+In each case the constructed object is a function of $\tilde Q^{-1}$, and $\tilde Q^{-1}$ does not exist. What the corpus presents as three domains is one domain, and any fourth construction built by inversion will inherit it.
 
-## What the Degenerate Element Keeps
+## The Two Polar Decompositions
 
-### The Direction and the Scale
+### One Pair, Two Regimes
 
-On $\Sigma_{01}$ the element has a normal form that is as explicit as the regular one:
+The corpus says "the polar decomposition" for two different statements, and the degenerate case looks like a failure only while they are confused.
+
+**The two-factor decomposition** is $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}$ Hermitian positive semidefinite and $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ a partial isometry. It exists for every element of the algebra, is unique, and is the matrix polar decomposition read in the algebra.
+
+**The four-factor word** is a parametrisation of the group of units. It exists on $N\neq0$ and nowhere else.
+
+The two answer different questions. The first asks *what is this operator, as a positive factor times an isometry*; it is available always. The second asks *which unit is this*; it is available only where there is a unit. The first is a decomposition of the element; the second is a coordinate system on the group.
+
+| regime | $\tilde Q_H$ | $\tilde Q_0$ | four-factor word |
+| --- | --- | --- | --- |
+| $N\neq0$ | Hermitian positive definite | $*$-unitary | exists |
+| $N=0$, $\tilde Q\neq0$ | Hermitian positive semidefinite of rank one | a partial isometry, not $*$-unitary | does not exist |
+| $\tilde Q=0$ | $0$ | $0$ | does not exist |
+
+### The Regular Case: the Word
+
+On $N\neq0$ the pair sharpens. Write the modulus as a square root of the norm in the chosen half-plane,
 
 $$
-\tilde Q=\kappa\,\tilde\Pi(\vec Z),\qquad \tilde\Pi(\vec Z)=\tfrac12\bigl(e_t+\vec Z\bigr),\qquad \vec Z^{2}=e_t,\qquad \vec Z\neq\pm e_t,\qquad \kappa=2Q_t\neq0 .
+\Rho^{2}=\langle\tilde Q\rangle_{\natural},
+\qquad
+r=\lvert\Rho\rvert>0,
+\qquad
+e^{i\alpha}=\Rho/r,
 $$
 
-Read the two factors. $\tilde\Pi(\vec Z)$ is a point of the complex quadric of minimal left ideals, so it carries a **direction** and nothing else; the map $\vec Z\mapsto\tilde\Pi(\vec Z)$ is two-to-one from $\{\vec Z:\vec Z^{2}=e_t\}$ onto the non-trivial idempotents. $\kappa$ is a complex number, so it carries a **scale and a phase**. Four complex parameters of an element have become one direction (two real) plus one complex scale (two real), and nothing is lost: $4=2+2$.
-
-What is *not* there is the rapidity. The regular word carries the Hermitian factor $\tilde U_{\Psi,\mathrm b}$, a boost with a rapidity; on the cone that factor has run to the boundary,
+and the unit factor as $\tilde U=\tilde Q/\Rho$, of norm one. Then
 
 $$
-\frac{\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd},w}\bigr)}
-{2\cosh\tfrac{\theta_{\mathrm{rpd},w}}{2}}
-=\tfrac12\bigl(e_t+i\tanh\tfrac{\theta_{\mathrm{rpd},w}}{2}\,\vec u_{\mathrm b}\bigr)
-\longrightarrow\tfrac12\bigl(e_t+i\vec u_{\mathrm b}\bigr),
+\tilde Q=\Rho\,\tilde U=r\,e^{i\alpha}\,\tilde U,
 $$
 
-a rank-one projector, which is a direction and no longer a transformation. The degenerate element has a direction where the regular one had a boost, and the rapidity is the parameter that is genuinely gone.
+and the unit factor splits into a Hermitian positive factor and a real rotor,
 
-### The Normal Form
+$$
+\tilde U=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\qquad
+\tilde U_{\Psi,\mathrm b}=\bigl(\tilde U\tilde U^{*}\bigr)^{1/2},
+\qquad
+\tilde u_{\mathrm r}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U .
+$$
 
-The degenerate element still has a two-factor decomposition, and the distinction from the four-factor word is the sharpest thing in this article.
+Four properties of the pair are used below. The boost is Hermitian positive definite of norm one, and the set of such elements is the hyperbolic space $H^{3}$ of real dimension three. The rotor is a unit real quaternion, because $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$ together with $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ forces its imaginary part to vanish; it is a point of $SU(2)=S^{3}$. The two factors do not commute, and their order is part of the definition. And the dimensions add:
 
-The two-factor decomposition is $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. It is one decomposition in two regimes, not two decompositions:
+$$
+8=\underbrace{1}_{r}+\underbrace{1}_{\alpha}+\underbrace{3}_{\text{boost}}+\underbrace{3}_{\text{rotor}},
+$$
 
-| regime | $\tilde Q_H$ | $\tilde Q_0$ |
-| --- | --- | --- |
-| $N\neq0$ | Hermitian positive definite | $*$-unitary |
-| $N=0$, $\tilde Q\neq0$ | Hermitian positive semidefinite of rank one | a partial isometry that is not $*$-unitary |
+which is the count of the algebra, and the reason the word is a bijection onto the units rather than a description with a spare parameter.
 
-The first row is the Cartan pairing, which is a matrix polar decomposition read in the algebra; the second is its extension to the cone, where the Hermitian factor loses rank and the isometry loses unitarity (*The Polar Decomposition of a Biquaternion*, *The Polar Decomposition of an N-Degenerate Biquaternion*, and *The Polar Decomposition and Its Three Pairings*, table of domains).
+### The Degenerate Case: Rank One and a Partial Isometry
 
-So the correct statement is not "a degenerate element has no polar form". It is:
+On the cone the modulus vanishes, $\Rho^{2}=N=0$, so the modulus–unit writing and the four-factor word are both unavailable. What survives is the pair, with closed forms.
 
-- **the two-factor decomposition is defined on every element**, the cone included, and it is the matrix polar decomposition;
-- **the four-factor N-word is defined only off the cone**, because it is a parametrisation of the group of units.
+Write the Hermitian square as
 
-The two answer different questions. The first asks *what is this operator, as a positive factor times an isometry*; it is available always. The second asks *which unit is this*; it is available only where there is a unit. Confusing them is what makes the degenerate case look like a failure of polar decomposition, when it is a failure of one chart on one group.
+$$
+\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_t+i\vec W,
+\qquad
+\vec W\ \text{real}.
+$$
+
+On the cone the identity $\langle\tilde Q\tilde Q^{*}\rangle_{\natural}=\langle\tilde Q\rangle_{*}^{2}-\lvert\vec W\rvert^{2}$ reads $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$, and with
+
+$$
+a=\sqrt{\frac{\langle\tilde Q\rangle_{*}}{2}},
+\qquad
+\lvert\vec W\rvert=2a^{2},
+$$
+
+the Hermitian factor is
+
+$$
+\tilde Q_H=a\,e_t+\frac{i}{2a}\,\vec W
+$$
+
+for $\tilde Q\neq0$, and $\tilde Q_H=0$ at the apex. Its square is $\tilde Q\tilde Q^{*}$, its spectral values are $a\pm a$, that is $0$ and $2a$, so it is positive semidefinite of **rank one**, and its scalar part and the length of its vector part are both $a$.
+
+The factor satisfies the quadratic identity $\tilde Q_H^{2}=2a\tilde Q_H$, hence
+
+$$
+\tilde Q_H^{+}=\frac{\tilde Q_H}{4a^{2}},
+\qquad
+\tilde Q_0=\tilde Q_H^{+}\tilde Q=\frac{\tilde Q_H\tilde Q}{4a^{2}},
+$$
+
+and the final projection is
+
+$$
+\tilde Q_0\tilde Q_0^{*}=\frac{\tilde Q_H}{2a},
+$$
+
+a rank-one projection and not the identity. That product is the whole proof that the isometry factor is not $*$-unitary: unitarity would require $e_t$, and the projection has rank one.
+
+**What is continuous and what is not.** The Hermitian factor is the continuous limit of the regular one as the element approaches the cone. The isometry factor is not continuous there, and the reason is visible in the final projection: at the cone it has lost a dimension, and a rank-one projection cannot be approached continuously by the identity.
+
+So the correct statement is not that a degenerate element has no polar decomposition. It is:
+
+- the two-factor decomposition is defined on every element, the cone included;
+- the four-factor word is defined only off the cone.
+
+Confusing the two is what makes the degenerate case look like a failure of polar decomposition, when it is a failure of one chart on one group.
 
 ### The Limit of the Word
 
@@ -258,110 +789,122 @@ The word has boundary values on the cone. A family with $r=Re^{-\psi/2}$ and $\p
 
 $$
 L=\frac{R\varkappa_{\mathrm{phs}}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
+\qquad
+\varkappa_{\mathrm{phs}}=e^{i\alpha},
 $$
 
-with $\varkappa_{\mathrm{phs}}=e^{i\alpha}$ the central phase of the family, a non-zero rank-one null element, with the idempotent stratum for $\operatorname{Sc}L\neq0$ and the nilpotent stratum for $\operatorname{Sc}L=0$ (*The Massless Limit as a Boundary Value of the Polar Word*). Two things follow, and the second is the important one.
+a non-zero rank-one null element, with the idempotent stratum for $\operatorname{Sc}L\neq0$ and the nilpotent stratum for $\operatorname{Sc}L=0$ (*The Massless Limit as a Boundary Value of the Polar Word*). Two things follow.
 
-**The element has a limit.** So the cone is reachable, and the degenerate case is not a different theory but a boundary of the same one.
+**The element has a limit.** The cone is reachable, so the degenerate case is a boundary of the same theory and not a different one.
 
-**The generator has no limit, and the limit is path-dependent.** The cone is not a graph over the units, so different families reach different boundary points, and the rate at which the wall is approached is extra data. The boundary value is therefore *not a value of the word*: it is what the word does when its domain is exhausted.
+**The generator has no limit, and the limit is path-dependent.** The cone is not a graph over the units, so different families reach different boundary points, and the rate at which the wall is approached is extra data. The boundary value is not a value of the word: it is what the word does when its domain is exhausted.
 
-## The Carriers: Why Half a Spin Is a Ray
+## The Four Sectors
 
-### The Multiplicative Law on an Ideal
+### The Grid
 
-**Proposition.** Let $\tilde\Pi$ be a non-trivial idempotent. Then $N(a\tilde\Pi)=0$ for every $a\in\mathbb{B}$. Consequently the whole minimal left ideal $S=\mathbb{B}\tilde\Pi$ lies on the cone.
+The two conditions together cut the algebra into four sectors, and the four are the four degeneration patterns of one quadratic.
 
-*Proof.* By multiplicativity, $N(a\tilde\Pi)=N(a)N(\tilde\Pi)$. A non-trivial idempotent is isotropic, $\langle\tilde\Pi\rangle_{\natural}=0$, because $\tilde\Pi\tilde\Pi^{\natural}=0$ makes it a zero divisor of the non-pure family. Hence the product vanishes for every $a$, and $S\subseteq\{N=0\}$.
+| sector | conditions | spectrum | normal form | $N$ | minimal polynomial |
+| --- | --- | --- | --- | --- | --- |
+| $\Sigma_{11}$ | $N\neq0$, $B^{2}\neq0$ | $\{\lambda_+,\lambda_-\}$, distinct and non-zero | $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$, both terms non-zero | $\lambda_+\lambda_-\neq0$ | $p_{\tilde Q}$, squarefree |
+| $\Sigma_{10}$ | $N\neq0$, $B^{2}=0$ | $\{Q_t\}$, $Q_t\neq0$ | $Q_te_t$, or $Q_tu$ with $u\neq e_t$ unipotent | $Q_t^{2}\neq0$ | $X-Q_t$ or $(X-Q_t)^{2}$ |
+| $\Sigma_{01}$ | $N=0$, $B^{2}\neq0$ | $\{c,0\}$, $c\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ non-trivial | $0$ | $p_{\tilde Q}$, squarefree |
+| $\Sigma_{00}$ | $N=0$, $B^{2}=0$ | $\{0\}$ | $0$, or a non-zero nilpotent of index two | $0$ | $X$ or $X^{2}$ |
 
-The proposition is a two-line corollary of two theorems the corpus already has — multiplicativity and the isotropy of the idempotent — and it is not stated in the sources. It changes the reading of the dichotomy, because it says the pair is **not distributed evenly over the algebra's own subspaces**: there is a four-real-dimensional subspace all of whose elements are degenerate, and another, the centre, on which the norm vanishes only at the origin.
+The four patterns are the four ways for the roots to degenerate: two distinct non-zero roots; a double non-zero root; two distinct roots, one zero; a double root at zero. There is no fifth.
 
-Measured on samples: over four hundred random elements of $S_+=\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ the largest $\lvert N\rvert$ is $1.2\times10^{-16}$; over four hundred random central elements with $\lvert Q_t\rvert>0.2$ the smallest is $4\times10^{-2}$. The first set is inside the cone; the second touches it only at the origin.
+**The same grid in components.** For $Q_t\neq0$ put $\vec Z=\vec Q/Q_t$. Then $(\vec Z,\vec Z)=-N/Q_t^{2}$, so both conditions are read from the scalar part and from one complex number.
 
-### The Three Carriers
-
-The carriers of *Angular Momentum and Spin in the Biquaternion Algebra* are three, and the norm behaves on each of them in a different way.
-
-| carrier | spin | $\dim_{\mathbb{C}}$ | $N$ on the carrier | degenerate? |
+| sector | $Q_t$ | $\vec Q$ | $(\vec Z,\vec Z)$ | real parameters |
 | --- | --- | --- | --- | --- |
-| $\mathbb{B}_{C}=\mathbb{C}e_t$, the centre | $0$ | $1$ | $N=A^{2}$ for $Ae_t$ | only at $A=0$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | $\tfrac12$ | $2$ | identically $0$ | always |
-| $V=\ker\operatorname{tr}$ | $1$ | $3$ | $N=B^{2}$; zero on the isotropic cone of $V$ | on that cone |
+| $\Sigma_{11}$ | any | $(\vec Q,\vec Q)\neq0$ | neither $0$ nor $-1$ | $8$ |
+| $\Sigma_{10}$ | $\neq0$ | $(\vec Q,\vec Q)=0$ | $0$ | $6$ |
+| $\Sigma_{01}$ | $\neq0$ | $(\vec Q,\vec Q)=-Q_t^{2}$ | $-1$ | $6$ |
+| $\Sigma_{00}$ | $0$ | $(\vec Q,\vec Q)=0$ | not formed | $4$ |
 
-The middle row is the proposition. The first row is the observation that a central element is a complex number, so its norm is the square of that number and vanishes with it. The last row is the observation that on the traceless part the scalar term is absent, so the norm reduces to the vector square, $N=B^{2}$, and the degenerate set of that carrier is the complex isotropic cone of $V$ — which is where the Riemann–Silberstein vector of a null field lies, $(\vec E+ic\vec B)^{2}=0$.
+The fourth column needs $Q_t\neq0$, and in the last row it cannot be formed. The count of parameters is the count of the conditions: two real equations cut the eight real coefficients of $\tilde Q$ to the six of the cone, and in the pure stratum two more cut them to four.
 
-Three consequences, stated carefully, because the naive form of each is wrong.
+### The Two Mixed Sectors
 
-**Spin zero is not the degenerate case; it is the safe one.** A scalar field is a single central number, so it is invertible wherever it is non-zero, and it is degenerate only at its nodes, where the field is the zero element and there is nothing to decompose. In the sector notation of *Introduction to N and Spectrally Regular and Degenerate Operators*, a central field with $A\neq0$ sits in $\Sigma_{10}^{\mathrm{s}}$: $N=A^{2}\neq0$ and $B^{2}=0$. It is $N$-regular and spectrally degenerate, and the two facts are independent.
+$\Sigma_{10}$ and $\Sigma_{01}$ are the independence witnesses, and they are worth naming because they are the sectors in which the two words *regular* and *degenerate* point in opposite directions.
 
-**One chiral component is always degenerate.** By the middle row, a state that lives in a single minimal left ideal is on the cone at every point of space and time, whatever its amplitude. Its operator has rank two, its image is a totally isotropic plane, and it is a ray.
+**$\Sigma_{10}$: a unit with no eigenbasis.** $N=Q_t^{2}\neq0$ and $B^{2}=0$. The element is invertible and its two eigenvalues coincide, so it is either scalar or a Jordan element. It has a polar decomposition and no spectral decomposition. Its inverse and its word exist; its eigenbasis does not.
 
-**The spin value does not decide the sector, and the sector does not decide the spin.** The norm is a function of one element at one point; a spin is a label of a module. No table can correlate them, and any statement that does so is reading a property of a carrier off a property of a value.
+**$\Sigma_{01}$: a zero divisor with a full eigenbasis.** $N=0$ and $B^{2}\neq0$. The element is a scaled idempotent, its two eigenvalues are distinct, and it is diagonalisable. It has a spectral decomposition and no polar decomposition. Its eigenbasis exists; its word does not.
 
-### Mass from Two Rays
+The two failures are independent and they occur in opposite sectors. That is the content of the warning that degeneracy of the norm is not degeneracy of the spectrum, and it is not a verbal warning: the two conditions have different zero sets and different physical readings.
 
-The second row of the table would make every spin-$\tfrac12$ state massless, which is false. The resolution is the only place in the algebra where two degenerate elements make a regular one.
+### The Chain of Invariants
 
-A Dirac spinor is a sum of one element from each ideal, $\tilde\Xi_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp},L}+\tilde\Xi_{\mathrm{sp},R}$, and
+| invariant | data | number of types | what it separates |
+| --- | --- | --- | --- |
+| norm | $N$ | $2$ | the units from the cone |
+| characteristic polynomial | $(2Q_t,N)$ | $4$ | the four sectors |
+| minimal polynomial | $m_{\tilde Q}$ | $6$ | the six strata |
 
-$$
-N\bigl(\tilde\Xi_{\mathrm{sp},L}+\tilde\Xi_{\mathrm{sp},R}\bigr)
-=\tilde\Xi_{\mathrm{sp},L}\tilde\Xi_{\mathrm{sp},R}^{\natural}
-+\tilde\Xi_{\mathrm{sp},R}\tilde\Xi_{\mathrm{sp},L}^{\natural},
-$$
+The count is of types and not of values. The chain is a chain of functions: the norm is the constant term of $p_{\tilde Q}$, and $p_{\tilde Q}$ is determined by $m_{\tilde Q}$. Read downward, information is lost. The norm forgets the sum of the eigenvalues; the characteristic polynomial forgets the defect; the minimal polynomial forgets nothing.
 
-because the two diagonal terms $N(\tilde\Xi_{\mathrm{sp},L})$ and $N(\tilde\Xi_{\mathrm{sp},R})$ vanish by the proposition. The norm of the sum is the **cross term** and nothing else. This is the cross term that *The Hamilton Pairing* records in the mass of a sum; here it is the whole of the mass, because both summands are individually isotropic.
+The six strata are the four sectors with two of them split. $\Sigma_{10}$ splits into the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan cone $\Sigma_{10}^{\mathrm{J}}$; $\Sigma_{00}$ splits into the apex and the non-zero nilpotents. The norm sees neither split: the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm and the same characteristic polynomial, and the apex and every non-zero nilpotent have norm zero and the same characteristic polynomial $X^{2}$.
 
-So the mass of a spin-$\tfrac12$ field is the interference of two rays. Each chiral component is null by itself; mass exists only where the two overlap; and the mass term of the Dirac equation is the term that couples them, which is why it must act on the right, on the side that can carry one component into the other. A field with one component only has no cross term and is massless — the algebraic statement behind the two-component description of a Weyl field.
+| stratum | spectral decomposition | polar word | modulus |
+| --- | --- | --- | --- |
+| $\Sigma_{11}$ | two terms, unique | yes | yes |
+| $\Sigma_{10}^{\mathrm{s}}$ | one term | yes | yes |
+| $\Sigma_{10}^{\mathrm{J}}$ | none | yes | yes |
+| $\Sigma_{01}$ | two terms, unique | no | no |
+| apex | one term, trivial | no | no |
+| $\Sigma_{00}\setminus\{0\}$ | none | no | no |
 
-The photon completes the picture from the other side. The field strength of a null plane wave is itself a zero divisor, $\tilde F^{2}=0$ (*Null Electromagnetic Fields and the Shear-Free Congruence*), so it is a single rank-one object with no second part to interfere with, and no mass can be generated. The pattern is uniform: **mass needs two rays; one ray is massless; and a spin-zero field is not a ray at all.**
+The table is the shortest statement in the article of what degeneracy costs, and it costs two different things in two different places.
 
 ## Physical Readings
 
-- **$N$-regular is a transformation; $N$-degenerate is a ray.** The interpretation is that a unit is a change of frame — a boost, a rotation, a scale, a phase — and a zero divisor is a direction with an intensity and no frame. Boundary: the reading is of the element's operator; a physical process described by a unit can still be dissipative when the unit is not the whole story.
-- **The cone is the wall of reversibility.** The interpretation is that no operation on the cone can be undone, and by the absorbing property no composition repairs it. Boundary: an algebraic statement about inverses; the thermodynamic reading is separate and cited, not derived.
+- **$N$-regular is a transformation; $N$-degenerate is a ray.** A unit is a change of frame — a boost, a rotation, a scale, a phase — and a zero divisor is a direction with an intensity and no frame. Boundary: the reading is of the element's operator, and a physical process described by a unit can still be dissipative when the unit is not the whole story.
+- **The cone is the wall of reversibility.** No operation on the cone can be undone, and by the absorbing property no composition repairs it. Boundary: this is an algebraic statement about inverses; the thermodynamic reading is separate and cited, not derived.
 - **Mass is the distance from the wall.** On the material sector $N=-m^{2}c^{2}$, so $m=0$ is the wall and $m^{2}$ measures how far outside it the four-momentum sits. Boundary: the identification needs the material slice; the value of the mass is an input, not a prediction.
-- **Something is always annihilated on the cone, and it is a plane.** The interpretation is that a degenerate element identifies half of its domain — a gauge redundancy, a decoupled polarisation, or a projection — and never a single direction, because the algebra is four-dimensional and the rank drops by two. Boundary: which physical mode is annihilated is representation data and is not fixed by the algebra.
-- **The degenerate element keeps a direction and a scale.** On $\Sigma_{01}$ the normal form $\kappa\tilde\Pi(\vec Z)$ is exact and exhaustive. Boundary: the rapidity is the parameter that is lost, so a family on the cone has no rate.
-- **$\Sigma_{01}$ propagates; $\Sigma_{00}$ does not.** The interpretation is that in the first stratum the image and the kernel are complementary, so a live plane survives beside the annihilated one; in the second the image lies inside the kernel, so the element annihilates its own output. Boundary: both strata are pointwise statements, and neither carries a frequency.
-- **Spin zero is a unit, half a spin is a ray, and one spin is a null cone.** By the carrier table. Boundary: the correspondence runs from the carrier to the norm and not the other way, so it does not survive as a statement about sectors.
-- **Mass is interference.** For a spin-$\tfrac12$ field the norm of a sum of two isotropic parts is the cross term alone. Boundary: the two parts are the two components of one element, not two particles.
+- **Something is always annihilated on the cone, and it is a plane.** A degenerate element identifies half of its domain — a gauge redundancy, a decoupled polarisation, or a projection — and never a single direction, because the algebra is four-dimensional and the rank drops by two. Boundary: which physical mode is annihilated is representation data and is not fixed by the algebra.
+- **The two sectors of degeneracy are two physical objects.** $\Sigma_{01}$, the scaled idempotent, is a polarisation: a selected plane with a weight, and a killed transversal. $\Sigma_{00}$, the nilpotent, is a nilpotent shift: it has no selected plane at all. A field strength and a null translation sit in different sectors, and the difference is not one of degree.
+- **The degenerate element keeps a direction and a scale.** On $\Sigma_{01}$ the normal form $c\tilde\Pi$ is exact and exhaustive. Boundary: the rapidity is the parameter that is lost, so a family on the cone has no rate.
+- **$\Sigma_{01}$ propagates; $\Sigma_{00}$ does not.** In the first the image and the kernel are complementary, so a live plane survives beside the annihilated one; in the second the image equals the kernel, so the element annihilates its own output.
+- **Spin zero is a unit, half a spin is a ray, and one spin is a null cone.** A minimal left ideal is on the cone at every point, so a pure spin-$\tfrac12$ state is a ray whatever its amplitude; the centre is on the cone only at the origin, so a spin-$0$ state is a unit wherever it is non-zero; on the traceless part $N$ reduces to $B^{2}$, so a spin-$1$ state is on the cone exactly when it is null. Boundary: the correspondence runs from the carrier to the norm and not the other way.
+- **Mass is interference.** For a spin-$\tfrac12$ field the two chiral parts are individually isotropic, so the norm of the sum is the cross term alone and the mass is the interference of two rays. Boundary: the two parts are the two components of one element, not two particles.
 - **A photon is a single ray.** The field strength of a null wave is a zero divisor, so it has no second part and generates no mass. Boundary: this is the null condition of the field strength, not a statement about the four-momentum, which is a different element of the same cone.
-- **The boundary value is not a value.** The word has a limit on the cone and the limit is path-dependent. Boundary: the element has a limit, the generator does not.
+- **The two polar decompositions answer two questions.** The two-factor pair is available on the cone and is the matrix polar decomposition; the four-factor word is not, and is a chart on the group of units. A statement that uses one and means the other is wrong on the whole cone.
 
 ## Limits
 
-**The norm is algebraic; the words are sector-dependent.** $N=0$ is one complex equation. Reading it as *massless* needs the material sector, reading it as *non-reversible* needs the operator picture, and reading it as *nilpotent* needs the pure part of the cone. The three readings are not the same statement, and the algebra supplies only the common criterion.
+**The norm is algebraic; the words are sector-dependent.** $N=0$ is one complex equation. Reading it as *massless* needs the material sector, reading it as *non-reversible* needs the operator picture, and reading it as *nilpotent* needs the pure stratum. The three readings are not the same statement, and the algebra supplies only the common criterion.
 
-**The cone is thin, and that is not a statement about importance.** The cone is a complex hypersurface of real codimension two, so a generic element is a unit; over four thousand random elements of the algebra the smallest $\lvert N\rvert$ was $2\times10^{-2}$. But the rest frame, the null field, the gauge redundancy and the exceptional point all lie on it or on its relatives. A thin set is not a negligible set, and the corpus's use of the pair is evidence of the opposite.
+**The cone is thin, and that is not a statement about importance.** The cone is a complex hypersurface of real codimension two, so a generic element is a unit. But the rest frame, the null field, the gauge redundancy and the exceptional point all lie on it or on its relatives. A thin set is not a negligible set.
 
-**No dynamics, no particle content, no mass spectrum.** The article reads one element at one point. It does not supply an equation of motion, and it does not predict which masses occur; the massless limit and the interference reading are statements about normal forms.
+**No dynamics, no particle content, no mass spectrum.** The article reads one element at one point. It supplies no equation of motion and predicts no mass values.
 
-**Degeneracy of the norm is not degeneracy of the spectrum.** $\Sigma_{01}$ is spectrally regular and $N$-degenerate; $\Sigma_{10}$ is $N$-regular and spectrally degenerate. Any sentence that uses *degenerate* without its qualifier is ambiguous in this corpus, and the ambiguity is not verbal: the two conditions have different zero sets and different physical readings.
+**Degeneracy of the norm is not degeneracy of the spectrum.** $\Sigma_{01}$ is spectrally regular and $N$-degenerate; $\Sigma_{10}$ is $N$-regular and spectrally degenerate. Any sentence that uses *degenerate* without its qualifier is ambiguous in this corpus, and the ambiguity is not verbal: the two conditions have different zero sets, and the coincidence on the cone is a theorem about the cone and not a general fact.
 
-**The carrier statement is a statement about ideals, not about states in a Hilbert space.** $S_\pm$ is a minimal left ideal on which the algebra acts irreducibly; a physical state is a normalised element of such a carrier with a metric added. The proposition uses only multiplicativity and isotropy, and it survives the addition of the metric, but the metric is not part of it.
+**The two-sector structure is a statement about the characteristic polynomial.** The four sectors are the four root patterns of a monic quadratic. A finer reading, splitting the scalar line from the Jordan part and the apex from the non-zero nilpotents, refines two sectors by the minimal polynomial. It adds no sector.
+
+**The spinor reading is a reading of the cone, not a state space.** $S_{+}$ is a minimal left ideal on which the algebra acts irreducibly; a physical state is a normalised element of such a carrier with a metric added. The product description $\mathcal N=\{\psi\chi\}$ uses no metric and no conjugation, and it survives the addition of the metric, but the metric is not part of it.
 
 **The absorbing property is not a conservation law.** That products of a degenerate element stay degenerate says nothing about whether a physical quantity is conserved; the conserved currents of the corpus are built from pairings, and their conservation is a separate computation.
 
 ## Summary
 
-- The norm is the determinant, $N=\det\mathsf M_2(\tilde Q)$, and it is multiplicative.
-- $N$-regular means invertible: the element is a bijection, nothing is annihilated, and the inverse is $\tilde Q^{\natural}/N$.
-- $N$-degenerate means singular: the element has a non-zero kernel, it is not invertible, and it is a ray.
-- Of the four algebraic norms, only $N$ has its zero set equal to the non-units: $P$ and $\\mathrm{Kr}$ vanish on units, and $H$ vanishes only at the origin, so every zero divisor is $H$-regular.
-- The cone is absorbing: $N(\tilde Q)=0$ implies $N(\tilde Q\tilde X)=N(\tilde X\tilde Q)=0$ for every $\tilde X$.
-- On a non-zero degenerate element the kernel is exactly a complex plane, and the rank of left multiplication is $2$; it is $4$ on the units and $0$ at the origin.
-- On $\Sigma_{01}$ the image is complementary to the kernel; on $\Sigma_{00}$ the image lies inside the kernel, which is $\tilde Q^{2}=\kappa\tilde Q$ against $\tilde\nu^{2}=0$.
-- Three failures have one source: no inverse, no generator, no polar word are all failures of a construction built from $\tilde Q^{-1}$.
-- The four-factor word is a parametrisation of the group of units, and every value of it is a unit; the cone is outside its range, not inside its domain.
-- The two-factor decomposition is defined on every element and sharpens off the cone; on the cone its Hermitian factor is rank one and its isometry is not unitary.
-- The degenerate element keeps a direction and a scale, $\kappa\tilde\Pi(\vec Z)$, and loses the rapidity.
-- The word has boundary values on the cone; the generator does not, and the limit is path-dependent.
+- The norm is the determinant, $N=\det\mathsf M_2(\tilde Q)$, and it is multiplicative; the inverse is $\tilde Q^{\natural}/N$.
+- $N$-regular means invertible: the element is a bijection, nothing is annihilated, and the sector is the group $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, open and dense, of real dimension eight, with $\partial\mathbb{B}^{\times}=\mathcal N$ and $\pi_1\cong\mathbb{Z}$.
+- $N$-degenerate means singular: the sector is the cone $\mathcal N$, of real dimension six and codimension two, contractible, singular at the apex, of link $S^{2}\times S^{3}$, and absorbing under multiplication.
+- The cone has three strata: the apex, the pure stratum of nilpotents of index two of real dimension four, and the non-pure stratum of idempotent multiples of real dimension six. The split is by the scalar part $Q_t$, and on the cone $Q_t=0$ is $B^{2}=0$.
+- The cone has two sectors of degeneracy: $\Sigma_{01}$, the scaled non-trivial idempotents $c\tilde\Pi$ with spectrum $\{c,0\}$, and $\Sigma_{00}$, the nilpotents with spectrum $\{0\}$. The first is a projection, the second a nilpotent shift.
+- $N=\lambda_+\lambda_-$ is the constant term of the characteristic polynomial and $-4B^{2}$ is the discriminant; the four sectors are the four root patterns, and there is no fifth. In components the sector is read from the scalar part and from the square of the vector part: $Q_t\neq0$ with $Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2}$ is $\Sigma_{01}$, and $Q_t=0$ with $Q_x^{2}+Q_y^{2}+Q_z^{2}=0$ is $\Sigma_{00}$.
+- On a non-zero degenerate element the kernel is exactly a complex plane and the rank of left multiplication is $2$; it is $4$ on the units and $0$ at the apex. The loss is never one-dimensional.
+- In $\Sigma_{01}$ the image is complementary to the kernel; in $\Sigma_{00}$ the image equals it. That is the operator form of $\tilde Q^{2}=c\tilde Q$ against $\tilde\nu^{2}=0$.
+- The cone is the set of products of a spinor with a co-spinor, the trace is the contraction $2Q_t=\varepsilon(\chi,\psi)$, and the pure stratum is the incidence of a line with a hyperplane.
+- Three failures have one source: no inverse, no generator and no polar word are all failures of a construction built from $\tilde Q^{-1}$.
+- The two-factor decomposition is defined on every element; on the cone its Hermitian factor is $\tilde Q_H=ae_t+i\vec W/(2a)$ of rank one and its isometry is a partial isometry with final projection $\tilde Q_H/(2a)$.
+- The four-factor word is a parametrisation of the group of units; every value of it is a unit, so the cone is outside its range and not inside its domain.
+- The degenerate element keeps a direction and a scale on $\Sigma_{01}$ and loses the rapidity; the word has boundary values on the cone and the generator does not, and the limit is path-dependent.
 - $N$ vanishes identically on a minimal left ideal, by multiplicativity and the isotropy of the idempotent: every pure spin-$\tfrac12$ state is a ray.
-- $N$ vanishes on the centre only at the origin: a scalar field is a unit wherever it is non-zero.
-- On the traceless part $N$ reduces to $B^{2}$, so $N$ vanishes there exactly on its isotropic cone, where a null field strength sits.
-- The norm of a sum of one element from each ideal is the cross term alone, so the mass of a spin-$\tfrac12$ field is the interference of two rays.
-- A null field strength is a single zero divisor, so it has no second part and generates no mass.
+- The norm of a sum of one element from each ideal is the cross term alone, so the mass of a spin-$\tfrac12$ field is the interference of two rays; a null field strength is a single zero divisor and generates no mass.
 
 ## Summary of Notation
 
@@ -369,25 +912,32 @@ The photon completes the picture from the other side. The field strength of a nu
 | --- | --- |
 | $\tilde Q=Q_te_t+\vec Q$ | a general biquaternion, $Q_t\in\mathbb{C}$, $\vec Q\in\mathbb{C}^{3}$ |
 | $N=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, $Q_t^{2}+B^{2}$; the determinant of $\mathsf M_2(\tilde Q)$ |
-| $B^{2}=(\vec Q,\vec Q)$ | the square of the vector part; the discriminant of the characteristic polynomial is $-4B^{2}$ |
+| $B^{2}=(\vec Q,\vec Q)$ | the square of the vector part; the discriminant is $-4B^{2}$ |
 | $\mathbb{B}^{\times}$ | the group of units, $\{N\neq0\}$ |
-| $\mathcal N=\{N=0\}$ | the zero-divisor cone, together with the origin |
+| $\mathcal N=\{N=0\}$ | the null cone, apex included |
+| $\mathcal N_{\mathrm p}$, $\mathcal N_{\mathrm{np}}$ | the pure and the non-pure strata |
+| $\mathcal S=\{B^{2}=0\}$ | the spectral cone, the locus of the double root |
 | $\Sigma_{ij}$ | the sector with $N\neq0$ if $i=1$ and $B^{2}\neq0$ if $j=1$ |
-| $\operatorname{rank}L_{\tilde Q}$ | $4$ on the units, $2$ on the non-zero cone, $0$ at the origin |
-| $\tilde Q^{\natural}$ | the quaternionic conjugate; $\tilde Q\tilde Q^{\natural}=N e_t$ |
-| $\tilde Q^{*}$ | the Hermitian conjugate; $\tilde Q\tilde Q^{*}$ is Hermitian and positive definite exactly when $N\neq0$ |
+| $\lambda_\pm=Q_t\pm iB$ | the eigenvalues; $N=\lambda_+\lambda_-$ |
+| $\operatorname{rank}L_{\tilde Q}$ | $4$ on the units, $2$ on the non-zero cone, $0$ at the apex |
+| $\tilde Q^{\natural}$, $\tilde Q^{*}$ | the quaternionic and the Hermitian conjugates |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec Z)$, $\vec Z^{2}=e_t$ | the primitive idempotents, isotropic, $N(\tilde\Pi_\pm)=0$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the minimal left ideals, of complex dimension two |
-| $\mathbb{B}_C=\mathbb{C}e_t$ | the centre, the spin-$0$ carrier |
-| $V=\ker\operatorname{tr}$ | the traceless part, the spin-$1$ carrier |
-| $\kappa\tilde\Pi(\vec Z)$ | the normal form on $\Sigma_{01}$, $\kappa=2Q_t$ |
-| $r,\alpha,\theta$ | the scale, the central phase and the rotor angle of the polar word; the word rapidity is $\theta_{\mathrm{rpd},w}$ |
-| $\tilde Q_H\tilde Q_0$ | the two-factor decomposition, defined on every element; the Cartan pairing when both factors sharpen |
+| $S_\pm=\mathbb{B}\tilde\Pi_\pm$, $S_+^{\vee}=\tilde\Pi_+\mathbb{B}$ | the minimal left ideals and the co-spinor row space |
+| $\varepsilon(\chi,\psi)$ | the contraction of a co-spinor with a spinor, $2Q_t$ |
+| $c\tilde\Pi$ | the normal form on $\Sigma_{01}$, $c=2Q_t$ |
+| $\Rho$, $r$, $\alpha$ | the modulus, the scale and the central phase of the word |
+| $\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$ | the Hermitian boost and the real rotor |
+| $\tilde Q_H$, $\tilde Q_0$ | the two-factor decomposition, defined on every element |
 
 ## Further Reading
 
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity, the group of units and the two cases on the remarkable subspaces.
-- [Norm and Pairing Conventions](norm-and-pairing-conventions.html), for the four norms, the qualified regular and degenerate, and the domains of the three pairings.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity, the group of units and the two strata of the cone.
+- [The N-Regular Sector](../articles_maths/the-n-regular-sector.html), for the unit group, its dimension, its topology and its two spectral cells.
+- [The N-Degenerate Sector](../articles_maths/the-n-degenerate-sector.html), for the cone, the three strata, the link, the rank-one model and the spinor–co-spinor reading.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the unit factor and the four factors.
+- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the rank-one Hermitian factor, the partial isometry and the worked examples.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors, the characteristic polynomial and the chain of invariants.
+- [Norm and Pairing Conventions](norm-and-pairing-conventions.html), for the four norms, the qualified regular and degenerate, and the domain of the word.
 - [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html), for the rank, the images and the kernels of the four sectors.
 - [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the sector partition and its physical labels.
 - [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral question and the warning that it is not the norm's question.
@@ -399,5 +949,4 @@ The photon completes the picture from the other side. The field strength of a nu
 - [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the three carriers, their spins and the statement that the algebra determines no dynamics.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the carrier table and the identification with the observed spins.
 - [Null Electromagnetic Fields and the Shear-Free Congruence](null-electromagnetic-fields-and-the-shear-free-congruence.html), for the null field strength as a zero divisor.
-- [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the H-norm two-factor decomposition defined on every non-zero element.
-- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the rank-one Hermitian factor and the partial isometry on the cone.
+- [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the two-factor decomposition defined on every element.

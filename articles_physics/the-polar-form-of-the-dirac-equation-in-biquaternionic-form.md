@@ -59,7 +59,7 @@ They do not name two values. The value is a letter returned by one multiplicatio
 
 *Proposition.* Let $\tilde X\neq0$ carry a definite value, that is $\tilde X\vec e_z=-i\tilde X$ or $\tilde X\vec e_z=+i\tilde X$. Then $N(\tilde X)=0$.
 
-*Proof.* The central $i$ passes through the element, so $\tilde X\vec e_z=-i\tilde X$ may be written $\tilde X\vec e_z+i\tilde X=\tilde X(\vec e_z+ie_t)=0$, and the other value gives $\tilde X(\vec e_z-ie_t)=0$. The element $\vec e_z\pm ie_t$ is not zero, so $\tilde X$ is a zero divisor. A zero divisor has $N=0$, because the units are exactly the elements of nonzero norm. $\square$
+*Proof.* The central $i$ passes through the element, so $\tilde X\vec e_z=-i\tilde X$ may be written $\tilde X\vec e_z+i\tilde X=\tilde X(\vec e_z+ie_t)=0$, and the other value gives $\tilde X(\vec e_z-ie_t)=0$. The element $\vec e_z\pm ie_t$ is not zero, so $\tilde X$ is a zero divisor. A zero divisor has $N=0$, because the units are exactly the elements of nonzero norm.
 
 **What the proposition settles.** The word's domain is $N\neq0$. A part of definite value is a zero divisor, so it lies outside the domain and has no word at all. The letters therefore cannot name the two values: a split of the field into two definite-value parts would be a split into two objects on which the word is undefined. The word is stated once, for the whole element, and the two letters name its two parts.
 
@@ -103,7 +103,7 @@ $$
 \rho=r^{2},\quad \gamma=\cosh\theta_{\mathrm{rpd}}.
 $$
 
-*Proof.* The quaternion conjugation $\natural$ acts on the $\mathbb{H}$ factor, so it leaves the central $i$ alone, inverts the real rotor and inverts the Hermitian boost. The rotor and the boost cancel against their own inverses, the central part squares, and $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\alpha}$. The star conjugation is the coefficient conjugation composed with $\natural$; it fixes a Hermitian factor, conjugates the central $i$ and inverts the rotor, so the phases cancel, the rotors cancel, and $\tilde\Xi\tilde\Xi^{*}=r^{2}\tilde U_{\Psi,\mathrm b}^{2}$. Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose scalar part is $\cosh\theta_{\mathrm{rpd}}$. $\square$
+*Proof.* The quaternion conjugation $\natural$ acts on the $\mathbb{H}$ factor, so it leaves the central $i$ alone, inverts the real rotor and inverts the Hermitian boost. The rotor and the boost cancel against their own inverses, the central part squares, and $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\alpha}$. The star conjugation is the coefficient conjugation composed with $\natural$; it fixes a Hermitian factor, conjugates the central $i$ and inverts the rotor, so the phases cancel, the rotors cancel, and $\tilde\Xi\tilde\Xi^{*}=r^{2}\tilde U_{\Psi,\mathrm b}^{2}$. Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose scalar part is $\cosh\theta_{\mathrm{rpd}}$.
 
 The two norms read different things, and the whole of the physics of the density is in which one is used.
 
@@ -148,7 +148,7 @@ $$
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}\right].
 $$
 
-*Proof.* Differentiate the product and divide by it. The two central factors give the first two brackets. The derivative of the boost is $\tilde U_{\Psi,\mathrm b}(\tilde U_{\Psi,\mathrm b}^{-1}\partial\tilde U_{\Psi,\mathrm b})$ and the derivative of the rotor is $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}(\tilde u_{\mathrm r}^{-1}\partial\tilde u_{\mathrm r})$; the boost cancels against itself in the first and passes the rotor in the second, which gives the two frame terms as written. $\square$
+*Proof.* Differentiate the product and divide by it. The two central factors give the first two brackets. The derivative of the boost is $\tilde U_{\Psi,\mathrm b}(\tilde U_{\Psi,\mathrm b}^{-1}\partial\tilde U_{\Psi,\mathrm b})$ and the derivative of the rotor is $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}(\tilde u_{\mathrm r}^{-1}\partial\tilde u_{\mathrm r})$; the boost cancels against itself in the first and passes the rotor in the second, which gives the two frame terms as written.
 
 The four brackets are of four different types, and that is the content of the display.
 
@@ -195,7 +195,7 @@ $$
 \gamma=\cosh\theta_{\mathrm{rpd}}.
 $$
 
-*Proof.* Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, so its inverse is $\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$. Multiplying by $ic$ gives $ic\cosh\theta_{\mathrm{rpd}}+c\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\gamma(ic\,e_t+\vec v)$ with the two identifications written. $\square$
+*Proof.* Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, so its inverse is $\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$. Multiplying by $ic$ gives $ic\cosh\theta_{\mathrm{rpd}}+c\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\gamma(ic\,e_t+\vec v)$ with the two identifications written.
 
 The inverse square is not decoration. The velocity of this field is bilinear in the field, so the frame appears in it twice: once in the boost the word deposits, and once again when the four-vector is formed. The conventions name that factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ and record the factor of two as the commonest error in the corpus (*Norm and Pairing Conventions*, §*The Four Objects Called a Boost*). A reader who takes the frame for the velocity finds a four-velocity of half the rapidity.
 
@@ -207,7 +207,7 @@ $$
 
 because the natural conjugation inverts a unit. The four-velocity of the word is therefore a unit timelike element for every field, not only for a plane wave: the boost is a unit by construction and the density is a separate factor.
 
-### The Mass Is the Four-Vector Factor
+### The Mass Term Is the Four-Vector Factor
 
 The mass term of the pair is off-diagonal in the parts, and in polar variables the operator that relates the parts is not a number. Substituting $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ into the first line of the momentum-space system gives
 
@@ -218,21 +218,29 @@ $$
 
 and the second line is then satisfied identically, since $i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=i\,ik_m\tilde U_{\Psi,\mathrm b}^{2}(-\mathcal B_{\Psi}\tilde\Xi_{0}^{R})=k_m\tilde\Xi_{0}^{R}$, the natural conjugation leaving the central $i$ alone and inverting a unit.
 
-**What the display says.** The mass does not multiply the field by a number. It multiplies the second part by the inverse square of the boost, which is the four-vector factor the velocity also carries. The mass is therefore a **frame factor** and not a coefficient: it says that the two parts of the field are related by the motion, and that a state at rest and the same state in motion are related by the same element that relates their parts.
+**What the display says.** The relation between the two parts carries no $k_m$. The scalar cancels against the momentum it multiplies, and what is left is the frame factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$. In this chart the mass term is an operator on the parts and not a number written in front of them, and the operator is the four-vector factor that the velocity also carries.
 
-**At rest the factor is the identity.** With $\theta_{\mathrm{rpd}}=0$ the boost is $e_t$, the factor is $e_t$, and the relation reduces to the plain sign $\tilde\Xi_{0}^{L}=-\tilde\Xi_{0}^{R}$. The whole of the mass's structure is then the sign, and the whole of its motion dependence is the boost.
+**The scale is not lost with it.** It sits in the momentum, $\tilde K_{\Phi}=ik_m\mathcal B_{\Psi}$, and $\mathcal B_{\Psi}$ has unit natural norm, so $k_m$ is exactly the norm of $\tilde K_{\Phi}$ and nothing besides. The two readings are one identity: the coefficient and the frame factor are interchangeable because the frame factor carries no amplitude.
+
+**The standard reading, and what this adds.** In the standard Dirac theory the mass is a scalar coupling the two chiral parts, and the coupling is the same in every frame because the scalar is invariant. Nothing here denies that. What the chart adds is where the scalar goes in a moving frame: the rest-frame sign is carried along by the boost, and the momentum already carries the same boost, so the pair relation divides it out. The sentence that the mass **is** a frame factor is a statement about the chart and not a claim that the mass depends on the frame. The strongest objection is exactly that one, that a frame factor would make an invariant frame-dependent, and the answer is the norm: $\mathcal B_{\Psi}$ contributes no scale, and the scale is $k_m$, which no boost touches.
+
+**At rest the factor is the identity.** With $\theta_{\mathrm{rpd}}=0$ the boost is $e_t$, the factor is $e_t$, and the relation reduces to the plain sign $\tilde\Xi_{0}^{L}=-\tilde\Xi_{0}^{R}$. The whole of the mass term's structure is then the sign, and the whole of its motion dependence is the boost.
 
 **Why the four-vector factor and not the frame.** The word's frame factor is the boost $\tilde U_{\Psi,\mathrm b}$ and the mass term needs $\tilde U_{\Psi,\mathrm b}^{-2}$. The reason is the one given with the word. The boost $\tilde U_{\Psi,\mathrm b}$ is the square root of $\mathcal B_{\Psi}$, and $\mathcal B_{\Psi}$ is the element that carries the time axis to the four-velocity, $\tilde V_{\Phi}=\mathcal B_{\Psi}\,(ic\,e_t)$. A four-vector is bilinear in the field and so carries $\mathcal B_{\Psi}$ and not its square root; the mass relates two parts of the field and carries the same $\mathcal B_{\Psi}$ as the velocity.
 
-### The Mass Shell Is the Unitarity of the Frame
+### The Mass Shell, Read as the Frame's Unitarity
 
 The third relation of the momentum-space system is the dispersion relation, and in the word it is not an independent equation.
 
 *Proposition.* Let $\tilde K_{\Phi}=ik_m\tilde M$ with $N(\tilde M)=1$. Then $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. Conversely, every $\tilde K_{\Phi}$ with $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ is of that form, with $\tilde M=\tilde K_{\Phi}/(ik_m)$.
 
-*Proof.* For the first part, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=i^{2}k_m^{2}\tilde M\tilde M^{\natural}=-k_m^{2}$, the natural conjugation leaving the central $i$ alone. For the second, $N\bigl(\tilde K_{\Phi}/(ik_m)\bigr)=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}/(-k_m^{2})=e_t$. $\square$
+*Proof.* For the first part, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=i^{2}k_m^{2}\tilde M\tilde M^{\natural}=-k_m^{2}$, the natural conjugation leaving the central $i$ alone. For the second, $N\bigl(\tilde K_{\Phi}/(ik_m)\bigr)=\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}/(-k_m^{2})=e_t$.
 
-**What the proposition says.** The mass shell is the statement that the four-wavevector divided by $k_m$ is a unit element, that is, the image of the time axis under a Lorentz transformation. In the word, with $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, it holds identically: the dispersion relation has become the unitarity of the frame.
+**What the proposition says.** The mass shell is the statement that the four-wavevector divided by $k_m$ is a unit element, that is, the image of the time axis under a Lorentz transformation. In the word, with $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, it holds identically.
+
+**The strongest objection.** The proposition is a restatement and not a result. Its hypothesis defines $\tilde K_{\Phi}$ as $ik_m$ times a unit, so the two halves of the hypothesis are the same half, and the conclusion repeats the definition. The objection is correct, and the article claims no more than the identity: what the proposition fixes is the direction of the reading, since the same line can be read from the momentum to the frame or from the frame to the momentum.
+
+**What is standard in it.** The geometric content is the textbook one. The normalized four-momentum $\tilde P_{\Phi}/(mc)$ is a point of the unit hyperboloid, that hyperboloid is the Lorentz orbit of the time axis, and in the spinor language the orbit is the space of boosts. The corpus names a point of that orbit by an element of the algebra. The naming is its own and the orbit is not.
 
 That is why the plane-wave system closes. The relation $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ looks like a fourth equation on the same data and is not one; it is the statement that the boost in the word is a boost. A reader who counts four relations against three frame parameters has found the identity just written.
 
@@ -399,7 +407,7 @@ Four things are nevertheless not a relabelling.
 
 **The count closes.** Eight slots against eight components, with a bijection and no spare parameter. A decomposition whose parameters can vary is a description of the field; one whose parameters cannot is a description of a subspace.
 
-**The equation's content is named.** The momentum is the phase gradient, the velocity is the boost, the mass is the four-vector factor, and the mass shell is the frame's unitarity. The last is the sharpest: the dispersion relation, which reads as a condition on the momentum, is the statement that the boost is a boost.
+**The equation's content is named.** The momentum is the phase gradient, the velocity is the boost, the mass term is the four-vector factor with its scale in $k_m$, and the mass shell is the frame's unitarity. The last is the sharpest: the solvability condition on the momentum is the statement that the boost is a boost. Each of the four is a reading of the chart and not a new equation, and the chart's domain is the $N$-regular field.
 
 **The failing bilinear is explained in one line.** The algebra's $i\tilde\Xi\tilde\Xi^{*}$ is the current with its direction reversed, because the star conjugation fixes the boost and cancels the rotor. That is a fact about the two conjugations, and it is why the conserved current needs the odd element.
 
@@ -427,7 +435,7 @@ The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natu
 
 The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla\alpha=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
 
-The mass is a frame factor. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, so the mass relates the two parts through the four-vector factor; at rest the factor is the identity and the relation is the plain sign. The mass shell is the statement that $\tilde K_{\Phi}/k_m$ is a unit element, so it is the frame's unitarity and not a fourth equation.
+The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.
 
 The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.
 

@@ -29,7 +29,7 @@ The vanishing is a statement about mixed partial derivatives and it needs nothin
 $$
 \tilde\Xi=\lVert\tilde\Xi\rVert\exp\!\left(i\frac{S_{\tilde\Xi}}{\hbar}\right)e_t
 \qquad\Longrightarrow\qquad
-S_{\tilde\Xi}=\hbar\arctan\!\left(\frac{\operatorname{Im}\text{-part}}{\operatorname{Re}\text{-part}}\right),
+S_{\tilde\Xi}=\hbar\arctan\!\left(\frac{\mathrm{Im}\text{-part}}{\mathrm{Re}\text{-part}}\right),
 $$
 
 up to an additive constant that the multivaluedness makes local. Where the amplitude vanishes the ratio is undefined, the action does not exist, and the closure has nothing to say.
@@ -85,11 +85,11 @@ the second form using $k_m=mc/\hbar$. The result is exact, it does not depend on
 
 | winding $n$ | $R=0.3$ | $R=0.8$ | $R=2.0$ | $2\pi n$ |
 |---|---|---|---|---|
-| $1$ | $6.283\,186\,60$ | $6.283\,186\,60$ | $6.283\,186\,60$ | $6.283\,185\,31$ |
-| $2$ | $12.566\,373\,20$ | $12.566\,373\,20$ | $12.566\,373\,20$ | $12.566\,370\,61$ |
-| $-1$ | $-6.283\,186\,60$ | $-6.283\,186\,60$ | $-6.283\,186\,60$ | $-6.283\,185\,31$ |
+| $1$ | $6.283\,185\,307$ | $6.283\,185\,307$ | $6.283\,185\,307$ | $6.283\,185\,307$ |
+| $2$ | $12.566\,370\,614$ | $12.566\,370\,614$ | $12.566\,370\,614$ | $12.566\,370\,614$ |
+| $-1$ | $-6.283\,185\,307$ | $-6.283\,185\,307$ | $-6.283\,185\,307$ | $-6.283\,185\,307$ |
 
-The three radii give the same number to every digit printed, and the number differs from $2\pi n$ by $1.3\times10^{-6}$ for unit winding and $2.6\times10^{-6}$ for winding two, which is the chord error of the polygonal loop and falls as the square of the chord. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.
+The three radii give the same number to every digit printed, and the number agrees with $2\pi n$ to the last bit, the residual being at most $4\times10^{-16}$ and pure roundoff. **The exactness is structural and not a coincidence of the mesh**: the sum of the chords' angle increments is the unwrapped total angle of the polygonal loop, which is $2\pi n$ times the degree of the map and depends on no chord length. A quadrature that evaluated $\nabla\theta_{\mathrm{phs}}$ from a finite difference of $\theta_{\mathrm{phs}}$ instead would carry a truncation error falling as the square of the chord; this one carries none, and the table's last column is the reason it is quoted at three radii. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.
 
 ### The sign, and the orientation
 
@@ -275,7 +275,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $\tilde J_{\Phi}$ | Number current |
 | $\kappa=\oint\tilde V_\Phi\cdot d\vec l$ | Circulation |
 | $\kappa_1=2\pi\hbar/m=2\pi c/k_m$ | Quantum of circulation |
-| $n$ | Winding number, an integer |
+| $n$ | Winding number, an integer; the letter is booked here for the winding and is not the Matsubara index |
 | $r$ | Distance from the nodal axis |
 | $\varphi$ | Angle about the axis |
 | $f(r)$ | Core amplitude of the vortex ansatz |
@@ -293,8 +293,8 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 
 - L. Onsager, "Statistical hydrodynamics," *Il Nuovo Cimento Supplemento* **6** (1949) 279–287, for the quantisation of circulation.
 - R. P. Feynman, "Application of quantum mechanics to liquid helium," in *Progress in Low Temperature Physics*, vol. 1 (North-Holland, 1955), for the Onsager–Feynman quantum $h/m$ and the vortex line.
-- L. D. Landau and E. M. Lifshitz, *Fluid Mechanics* (Pergamon, 1987), §*Helicity*, for the circulation of a potential flow around a singular line.
+- P. G. Saffman, *Vortex Dynamics* (Cambridge University Press, 1992), for the circulation of a potential flow around a singular line and the topological reading of the vortex core.
 - T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 2–80, for the flow variables, the transport equation and the treatment of the nodal locus.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the nodal set of the de Broglie–Bohm flow and the topological charge carried by its winding.
-- A. J. Niemi and G. W. Semenoff, "Fermion number fractionisation and quantum anomaly in a simple model," *Physics Reports* **135** (1986) 99, for the winding number as the degree of a map and its role as a topological charge.
+- A. J. Niemi and G. W. Semenoff, "Fermion number fractionization in quantum field theory," *Physics Reports* **135** (1986) 99–193, for the winding number as the degree of a map and its role as a topological charge.
 - The companion articles: [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html), [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html), and [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html).

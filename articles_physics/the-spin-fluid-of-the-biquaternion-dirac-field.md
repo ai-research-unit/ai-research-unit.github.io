@@ -181,7 +181,7 @@ $$
 \omega_{xy}=\frac{\partial v_{\Phi,y}}{\partial r_x}=c\cosh\theta_{\mathrm{rpd}}\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r_x}\ne0,
 $$
 
-and the flow has a circulation around any loop in the $xy$ plane that spans a difference of rapidity. The check was run with $c=2$ and the rapidity profile above. At $r_x=0.2$, $0.7$ and $1.1$ the difference quotient of $v_{\Phi,y}$ and the closed form $c\cosh\theta\,\partial\theta/\partial r_x$ agreed to $1.1\times10^{-10}$ or better, with two of the three agreeing to the last bit. The circulation of the current density around the unit square $0\le r_x\le1$, $0\le r_y\le1$ was $0.434\,555\,977\,568\,337$ against the closed form $c[\sinh\theta(1)-\sinh\theta(0)]=0.434\,555\,977\,568\,337$, agreeing to all fifteen digits printed. The same loop on the scalar flow of a quadratic action gave a curl of exactly zero.
+and the flow has a circulation around any loop in the $xy$ plane that spans a difference of rapidity. The check was run with $c=2$ and the rapidity profile above. At $r_x=0.2$, $0.7$ and $1.1$ the difference quotient of $v_{\Phi,y}$ and the closed form $c\cosh\theta\,\partial\theta/\partial r_x$ agreed to $1.1\times10^{-10}$ or better, with two of the three agreeing to the last bit. The circulation of the flow, $\oint v_{\Phi,y}\,dr_x$ around the unit square $0\le r_x\le1$, $0\le r_y\le1$ and equal by Stokes to $\int\!\int\omega_{xy}\,dr_xdr_y$ over it, was $0.434\,555\,977\,568\,337$ against the closed form $c[\sinh\theta(1)-\sinh\theta(0)]=0.434\,555\,977\,568\,337$, agreeing to all fifteen digits printed. The same loop on the scalar flow of a quadratic action gave a curl of exactly zero.
 
 So the vorticity is real, it is produced by the frame's gradient alone, and the scalar sector cannot produce it. That is the difference the title of this article names.
 
@@ -296,7 +296,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 
 ## Further Reading
 
-- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 2–80, for the spin fluid, its vorticity and the spin's contribution to the current.
+- T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 2–80, for the spin fluid, its vorticity and the spin's contribution to the current.
 - David Hestenes, "Space–time structure of the Dirac theory," in *Clifford Algebras and their Applications in Mathematical Physics* (Reidel, 1986), for the rotor reading of the Dirac spinor and the velocity as a bilinear of the frame.
 - F. Halbwachs, P. Hillion and J.-P. Vigier, "Lagrangian formulation of the rotational hydrodynamical model of spinning particles," *Il Nuovo Cimento* **33** (1964) 221, for the spin fluid's kinematics.
 - Walter Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the decomposition of the current.

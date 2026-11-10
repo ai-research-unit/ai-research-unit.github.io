@@ -4,7 +4,7 @@
 
 **The equation of state of the biquaternion fluid is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, a function of the proper density $\rho_{\mathrm{num}}$ and the inverse temperature $\beta$, with the first term thermal and the second a gradient correction.** This article gives both terms, states what each is a function of, and says exactly where the two-part form comes from and where it stops being exact.
 
-**The temperature enters as a length, and the article quotes it and derives nothing.** From [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
+**The temperature enters as a length, and the article quotes it and derives nothing.** From [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
 
 $$
 \beta=\frac{m\,c}{k_m\,k_{B}\,T},
@@ -82,9 +82,9 @@ which is the statement that radiation's equation of state is *independent of the
 
 ### What the thermal part is not
 
-**It is not a barotropic equation of state in general.** A barotropic fluid has $p=p(\rho)$ with no temperature, and the display at the head of this section has two arguments. **The barotropic case is the degenerate limit**, in which the temperature is so far below the degeneracy scale that the state's pressure is fixed by the density alone; it is a limit and not the general case, and an article that assumes it silently excludes every thermal effect the category is about.
+**It is not a barotropic equation of state in general.** A barotropic fluid has $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}})$ with no temperature, and the display at the head of this section has two arguments. **The barotropic case is the degenerate limit**, in which the temperature is so far below the degeneracy scale that the state's pressure is fixed by the density alone; it is a limit and not the general case, and an article that assumes it silently excludes every thermal effect the category is about.
 
-**It is not the quantum part's container either.** A reader might expect $p_{\mathrm{qnt}}$ to be a correction to a barotropic $p(\rho)$ and hence to be absorbed into the function of one variable. **It cannot be absorbed**, because it depends on derivatives and no function of $\rho_{\mathrm{num}}$ alone can reproduce a derivative. That is the reason for the second label, and it is a structural reason and not a bookkeeping preference.
+**It is not the quantum part's container either.** A reader might expect $p_{\mathrm{qnt}}$ to be a correction to a barotropic $p_{\mathrm{th}}(\rho_{\mathrm{num}})$ and hence to be absorbed into the function of one variable. **It cannot be absorbed**, because it depends on derivatives and no function of $\rho_{\mathrm{num}}$ alone can reproduce a derivative. That is the reason for the second label, and it is a structural reason and not a bookkeeping preference.
 
 ## The Quantum Part
 
@@ -106,7 +106,7 @@ p_{\mathrm{qnt}}
 +\frac{\hbar^{2}}{8m}\,\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}} .
 $$
 
-**The derivation is two lines and is given because the identity is used everywhere below.** Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box\rho_{\mathrm{num}}=2u\,\Box u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box u=\tfrac12\Box\rho_{\mathrm{num}}-\tfrac12\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. **The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched**: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
+**The derivation is two lines and is given because the identity is used everywhere below.** Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box\rho_{\mathrm{num}}=2u\,\Box u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box u=\tfrac12\Box\rho_{\mathrm{num}}-\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Multiplying $-\tfrac{\hbar^{2}}{2m}u\,\Box u$ out gives $-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, the factor of two between the two terms coming from the $2$ in $\rho_{\mathrm{num}}=u^{2}$ and not from $Q_{\mathrm{qnt}}$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. **The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched**: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
 
 **Which of the two forms to use.** The first is the definition and it is the one that connects to the mass shell the quantum potential modifies. The second is the one that shows the structure: a Laplacian term and a gradient-squared term with the opposite sign, whose ratio is fixed. **The second form also makes the $\hbar^{2}$ counting visible**, which is the subject of the next subsection.
 
@@ -149,7 +149,7 @@ $$
 p_{\mathrm{qnt}}=\rho_{0}e^{-r^{2}/(2\sigma^{2})}\,\frac{\hbar^{2}}{m}\left(\frac{1}{4\sigma^{2}}-\frac{r^{2}}{8\sigma^{4}}\right),
 $$
 
-which vanishes at $r^{2}=2\sigma^{2}$ and is negative beyond it; in three dimensions the first bracket is $3/(4\sigma^{2})$ and the crossover moves to $r^{2}=6\sigma^{2}$. **The numerically found crossing in one dimension is $r=0.707\,107\,\sigma$**, which is $\sqrt2\,\sigma$ to six digits.
+which vanishes at $r^{2}=2\sigma^{2}$ and is negative beyond it; in three dimensions the first bracket is $3/(4\sigma^{2})$ and the crossover moves to $r^{2}=6\sigma^{2}$. **The numerically found crossing in one dimension is $r=1.414\,214\,\sigma$**, which is $\sqrt2\,\sigma$ to six digits.
 
 **A negative pressure in the tail does not violate anything.** The thermal part of the pressure is positive and dominates where the density is large; the quantum part is a gradient correction and the total effective pressure must be positive for the fluid description to make sense, which is a constraint on the state and not on the formula. **The corpus states the constraint and does not legislate it**: $p_{\mathrm{eff}}\ge0$ is required wherever the fluid description is claimed to hold, and it fails in the far tail of any localised state.
 
@@ -191,7 +191,7 @@ $$
 p_{\mathrm{eff}}=p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}},
 $$
 
-which is the pressure of the state that [The Polar Form of the Klein-Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) describes. **The pure state is therefore the $T=0$ limit of this equation of state and not a different theory**, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) uses exactly this statement to identify its condensate.
+which is the pressure of the state that [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) describes. **The pure state is therefore the $T=0$ limit of this equation of state and not a different theory**, and [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html) uses exactly this statement to identify its condensate.
 
 ### The three requirements, checked
 
@@ -215,7 +215,7 @@ which is the pressure of the state that [The Polar Form of the Klein-Gordon Equa
 
 - **The identity for $p_{\mathrm{qnt}}$.** On a one-dimensional grid of $4001$ points spanning $[-6,6]$ with a Gaussian of width $\sigma=0.5$, the two sides of $p_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$ agree to $1.8\times10^{-5}$ over the interior, the residual being the finite-difference error of the second derivative and not a discrepancy of the algebra. On a three-dimensional radial grid the same comparison agrees to $6.2\times10^{-8}$ away from the origin, where the $2/r$ term is resolved.
 - **The central values.** In one dimension $Q_{\mathrm{qnt}}(0)=0.999\,982$ against the analytic $\hbar^{2}/(4m\sigma^{2})=1$ for $\hbar=m=1$, $\sigma=0.5$; the deviation is the grid's. In three dimensions the analytic value is $3\hbar^{2}/(4m\sigma^{2})=3$ under the same units, and the radial grid cannot resolve it at $r\to0$ because of the $2/r$ term, so the article quotes the analytic value and the interior residual and not a central numerical value.
-- **The crossover.** The one-dimensional solution changes sign at $r=0.707\,107\,\sigma$, which is $\sqrt2\,\sigma$ to six digits, confirming $r^{2}=2\sigma^{2}$.
+- **The crossover.** The one-dimensional solution changes sign at $r=1.414\,214\,\sigma$, which is $\sqrt2\,\sigma$ to six digits, confirming $r^{2}=2\sigma^{2}$; the value $0.707\,107\,\sigma$ is $1/\sqrt2$ and is the half-width at which the density has fallen by $e^{-1/4}$, not a crossing. In three dimensions the numerical crossing sits at $r=2.449\,490\,\sigma$, which is $\sqrt6\,\sigma$ to six digits.
 - **The polytropic check.** For $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{5/3}$ at $\rho_{\mathrm{num}}=8$, the identity returns $p_{\mathrm{th}}=\tfrac23w_{\mathrm{fl}}$, i.e. $p_{\mathrm{th}}=(2/3)K\cdot32=21.333\,333\,K$ against $w_{\mathrm{fl}}=32K$, the ratio being $0.666\,667$ to six digits. For $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{4/3}$ the ratio is $0.333\,333$ to six digits.
 
 **What the checks establish and what they do not.** They establish the two algebraic identities — the density form of the quantum pressure and the polytropic ratios — and the location of the sign change. **They do not establish that any particular physical state has a Gaussian density**, which is a statement about a state and not about the equation of state; the Gaussian is used as a test function because its derivatives are exact and its values analytic.
@@ -278,4 +278,4 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 - E. Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the quantum potential and the quantum pressure.
 - D. Bohm, "A suggested interpretation of the quantum theory in terms of 'hidden' variables I," *Physical Review* **85** (1952) 166–179, for the quantum potential's role in the trajectory picture.
 - T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the hydrodynamic reading of the quantum pressure.
-- The companion articles: [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html), [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The Local Entropy Current](the-local-entropy-current.html), and [The Polar Form of the Klein-Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html).
+- The companion articles: [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html), [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The Local Entropy Current](the-local-entropy-current.html), and [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html).

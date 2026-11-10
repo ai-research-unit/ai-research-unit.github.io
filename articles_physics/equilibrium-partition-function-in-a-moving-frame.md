@@ -14,7 +14,7 @@
 
 ### The inverse temperature as a period
 
-**The inverse temperature is a length, and the corpus fixes it once.** From [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
+**The inverse temperature is a length, and the corpus fixes it once.** From [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
 
 $$
 \beta=\frac{m\,c}{k_m\,k_{B}\,T},
@@ -108,7 +108,7 @@ where $p_{\Phi,t}=iE/c$ and the two $i$'s have been multiplied out; the factor $
 **The partition function is the trace of the thermal operator, and its value is the rest-frame value.** With the thermal element of the moving state,
 
 $$
-Z=\operatorname{Tr}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
+Z=\mathrm{Tr}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
 $$
 
 and since the exponent in the trace is $\beta k_m$ independently of the boost, as the previous section showed, the trace is the same number in every frame:
@@ -163,7 +163,7 @@ since the temperature is what the period is reciprocal to. **The product is inva
 
 ### The table
 
-**The three quantities that carry the boost were computed for three velocities, with the rest-frame temperature fixed at $300\,\mathrm{K}$ and the rest-frame equation of state $w_{\mathrm{fl}}=3p_{\mathrm{th}}$.**
+**The three quantities that carry the boost were computed for three velocities, with the rest-frame temperature fixed at $300\,\mathrm{K}$, the rest-frame equation of state $w_{\mathrm{fl}}=3p_{\mathrm{th}}$, and the rest-frame circumference taken as the unit, $\beta=1$, so that the last column is a number a reader can reproduce.**
 
 | $\beta_{\mathrm{vel}}$ | $\gamma$ | $T_{\mathrm{obs}}$ | $T_{\mathrm{obs}}/T$ | $w_{\mathrm{fl}}/w_{\mathrm{fl,rest}}$ | $s_{\mathrm{ent}}/s_{\mathrm{ent,rest}}$ | $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ |
 |---|---|---|---|---|---|---|
@@ -230,13 +230,13 @@ where the second equality is the standard relativistic identification of the fre
 
 **What is the corpus's reading, and is marked as such.** That the temperature is read from the temporal component of a *period* rather than from a boosted heat exchange, and hence that a moving body is observed cooler by $\gamma$. The alternative reading exists in the literature and is not an error; it is a different question, and the corpus's answer follows from taking $\beta$ as a length along a direction, which is how the thermal articles define it. **A reader who prefers the other reading will find that every display of this article survives with $T\gamma$ in place of $T/\gamma$**, except the temperature row of the table; nothing structural depends on the choice.
 
-**What is not established here.** That the imaginary-time direction is compact — that is [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html)'s and is quoted. That the trace is twice the scalar part — that is [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html)'s and is quoted. That the Matsubara condition has the bosonic/fermionic sign — that is [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html)'s. That a moving thermal state is stable and that its entropy is maximal — that is a question about the state and not about its frame, and it belongs to [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) and to [The Local Entropy Current](the-local-entropy-current.html).
+**What is not established here.** That the imaginary-time direction is compact — that is [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html)'s and is quoted. That the trace is twice the scalar part — that is [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html)'s and is quoted. That the Matsubara condition has the bosonic/fermionic sign — that is [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html)'s. That a moving thermal state is stable and that its entropy is maximal — that is a question about the state and not about its frame, and it belongs to [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) and to [The Local Entropy Current](the-local-entropy-current.html).
 
 **One thing the article deliberately does not do.** It does not discuss the case in which the boost is not uniform — a fluid whose flow varies from point to point, so that $\tilde\beta_\Phi$ is a field. That case is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html)'s, and it requires the rigidity condition of [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html) before the thermal element can be assigned pointwise. **Here the boost is uniform and the fluid is in equilibrium**, so the thermal element is a single element and not a field, and the article stays inside that case.
 
 ## Summary
 
-The thermal state of a moving fluid is specified by a thermal element, $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, an element of the material sector with norm $-\beta^{2}$: the period $\beta$ of [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), carried along the flow. Its components are $\beta_{\Phi,t}=i\beta\gamma$ and $\beta_{\Phi,\eta}=\beta\gamma\beta_{\mathrm{vel},\eta}$, every index low; the boost lengthens the norm not at all and tilts the direction by $\gamma$.
+The thermal state of a moving fluid is specified by a thermal element, $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, an element of the material sector with norm $-\beta^{2}$: the period $\beta$ of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), carried along the flow. Its components are $\beta_{\Phi,t}=i\beta\gamma$ and $\beta_{\Phi,\eta}=\beta\gamma\beta_{\mathrm{vel},\eta}$, every index low; the boost lengthens the norm not at all and tilts the direction by $\gamma$.
 
 The thermal exponent is the contraction $-\beta_{\Phi,\nu}p_{\Phi,\nu}/\hbar=-(\beta/c\hbar)m\langle\tilde V_\Phi\rangle_{\natural}=\beta mc/\hbar=\beta k_m$, independent of $\gamma$ and of $\vec v$. The partition function is that trace, so $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$: **the moving frame has no partition function of its own**, and the rest-frame article is the special case $\vec\beta_{\mathrm{vel}}=0$. What the boost changes is the reading of $Z$, not its value.
 
@@ -271,8 +271,8 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 | $F=-(1/\beta)\log Z=-p_{\mathrm{th}}V_{0}$ | Free energy, a scalar |
 | $V_{0}$ | Proper volume |
 | $w_{\mathrm{fl}}$ | Energy density; its rest value is $w_{\mathrm{fl,rest}}$ |
-| $p_{\mathrm{th}}$ | Thermal pressure, unchanged by the boost |
-| $s_{\mathrm{ent}}$ | Entropy density, $\gamma$ times its rest value |
+| $p_{\mathrm{th}}$, $p_{\mathrm{th,rest}}$ | Thermal pressure, unchanged by the boost; the suffix marks the rest-frame value |
+| $s_{\mathrm{ent}}$, $s_{\mathrm{ent,rest}}$ | Entropy density, $\gamma$ times its rest value |
 | $S$ | Total entropy, a scalar |
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element |
 | $\tilde R_\Phi$ | Material four-position |
@@ -293,4 +293,4 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 - W. Israel, "Relativistic Thermodynamics, Thermofield Statistics and Superfluids," *Journal of Non-Equilibrium Thermodynamics* **11** (1986) 295, for the thermal element in the presence of a flow.
 - N. P. Landsman and Ch. G. van Weert, "Real- and imaginary-time field theory at finite temperature and density," *Physics Reports* **145** (1987) 141–249, for the imaginary-time formulation and the tilted contour.
 - J. I. Kapusta and C. Gale, *Finite-Temperature Field Theory: Principles and Applications* (Cambridge University Press, 2006), for the Matsubara formalism in the standard notation.
-- The companion articles: [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), and [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html).
+- The companion articles: [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), and [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html).

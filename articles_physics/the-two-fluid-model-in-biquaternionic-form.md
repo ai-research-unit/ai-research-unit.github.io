@@ -14,7 +14,7 @@ $$
 
 **and the whole of the model is the statement that they are two, that only one of them carries the entropy current of [The Local Entropy Current](the-local-entropy-current.html), and that they exchange momentum.**
 
-**The condensation is what makes the split necessary.** The polar form of [The Polar Form of the Klein-Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. **The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose hydrodynamics differ**, and the article's job is to write the two pieces and their coupling in the corpus's letters.
+**The condensation is what makes the split necessary.** The polar form of [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. **The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose hydrodynamics differ**, and the article's job is to write the two pieces and their coupling in the corpus's letters.
 
 **The zero-temperature limit is the article's check.** At $T\to0$ the normal density vanishes, the entropy density vanishes with it, the normal flow becomes undefined because there is nothing to carry it, and the equations reduce exactly to the polar-form article's. **That limit is shown explicitly and in full, because a two-fluid model that does not reduce to the one-fluid model is not a model of the same substance.**
 
@@ -48,7 +48,16 @@ $$
 \tilde W_\Phi=\tilde V_{\Phi,\mathrm{nrm}}-\tilde V_{\Phi,\mathrm{sup}},
 $$
 
-an element whose norm is not fixed by the two normalisations alone: with $\tilde V_1\cdot\tilde V_2$ the plain product's scalar part, $\langle\tilde W_\Phi\rangle_{\natural}=\langle\tilde V_1\rangle_{\natural}+\langle\tilde V_2\rangle_{\natural}-2\,\mathrm{Sc}(\tilde V_1\tilde V_2)$, **so the relative element's size measures how far the two flows are from coinciding** and vanishes exactly when they coincide. That is the object that all the dissipation is proportional to.
+an element whose norm is not fixed by the two normalisations alone. **The identity is the one every sum of squares obeys**, with the contraction of the two flows in place of the plain product's scalar part:
+
+$$
+\langle\tilde W_\Phi\rangle_{\natural}
+=\langle\tilde V_{\Phi,\mathrm{nrm}}\rangle_{\natural}+\langle\tilde V_{\Phi,\mathrm{sup}}\rangle_{\natural}
+-2\sum_\mu v_{\Phi,\mathrm{nrm},\mu}\,v_{\Phi,\mathrm{sup},\mu}
+=2c^{2}\left(\gamma_{\mathrm{nrm}}\gamma_{\mathrm{sup}}\left(1-\vec\beta_{\mathrm{nrm}}\cdot\vec\beta_{\mathrm{sup}}\right)-1\right),
+$$
+
+**the cross term being $\mathrm{Sc}(\tilde V_1\tilde V_2^{\natural})$ and not $\mathrm{Sc}(\tilde V_1\tilde V_2)$**: the quaternionic norm is a sum of squares, so it expands with a plus on the spatial contraction, and the plain product's scalar part carries a minus there. **The relative element's size measures how far the two flows are from coinciding**, it vanishes exactly at coincidence, and it is non-negative for two future-directed flows, since $\gamma_1\gamma_2(1-\vec\beta_1\cdot\vec\beta_2)\ge1$ for any pair of unit future timelike directions — checked on twenty thousand random pairs, with no negative value found. That is the object that all the dissipation is proportional to.
 
 **The coincidence is the equilibrium condition and the model's most important special case.** When $\tilde V_{\Phi,\mathrm{sup}}=\tilde V_{\Phi,\mathrm{nrm}}$ the two fluids move together, no exchange occurs, and the entropy production of the mutual-friction channel vanishes; **the two-fluid system in that state is one fluid with an entropy density that is the normal component's.** Every laboratory two-fluid state is a small departure from this one.
 
@@ -86,7 +95,7 @@ $$
 
 ### The condensate's flow is a gradient
 
-**The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted.** From [The Polar Form of the Klein-Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html), with the phase $S_{\tilde\Xi}$ of the field,
+**The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted.** From [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html), with the phase $S_{\tilde\Xi}$ of the field,
 
 $$
 m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\hbar\,\chi_{\mu},
@@ -112,7 +121,7 @@ $$
 \tilde\nabla^{\natural}\left(\tilde\Sigma_{\Psi,\mathrm{nrm}}+\tilde\Sigma_{\Psi,\mathrm{sup}}\right)=0,
 $$
 
-with $\tilde F_{\Phi,\mathrm{fr}}$ the friction element. **The three displays say one thing: the total stress is conserved and each component's is not.** A reader who writes conservation for both components separately has written the wrong equations, and the error is the commonest one in the two-fluid literature.
+with $\tilde F_{\Phi,\mathrm{fr}}$ the friction element. **The displays are element equations, and the corpus's divergence spelling applies to them slot by slot**: the scalar part of the first is $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}})=\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}})$, which is the declared form of [The Local Entropy Current](the-local-entropy-current.html), and the three vector slots repeat the same law with their own components. **The three displays say one thing: the total stress is conserved and each component's is not.** A reader who writes conservation for both components separately has written the wrong equations, and the error is the commonest one in the two-fluid literature.
 
 ## Mutual Friction
 
@@ -132,9 +141,9 @@ $$
 \sigma_{\mathrm{ent}}=\frac{1}{T}\,\mathrm{Sc}\left(\tilde F_{\Phi,\mathrm{fr}}\,\tilde W_\Phi\right),
 $$
 
-with the overall sign chosen so that a positive $B_{\mathrm{frc}}$ gives a positive production; the scalar part is real because both elements are Hermitian in the sense of [The Local Entropy Current](the-local-entropy-current.html). **Damping of the relative motion heats the normal component, and the heat is exactly the kinetic energy of the relative drift** — that is the physical content of the display, and it is the standard mutual-friction mechanism of the helium literature quoted into the corpus's letters.
+with the overall sign chosen so that a positive $B_{\mathrm{frc}}$ gives a positive production. **The scalar part is real for a reason worth naming**: the temporal coefficients of both factors are imaginary and their spatial ones real, so $F_{\Phi,\mathrm{fr},t}W_{\Phi,t}$ is a product of two imaginary numbers and $\vec F_{\Phi,\mathrm{fr}}\cdot\vec W_\Phi$ a product of two real ones. **That product is negative**, $\mathrm{Sc}(\tilde F\tilde W)=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho)B_{\mathrm{frc}}\left[w_t^{2}-\lvert\vec w\rvert^{2}\right]$, which is why the display carries a minus: the dissipated quantity is $\lvert\vec w\rvert^{2}-w_t^{2}=c^{2}(\gamma_{\mathrm{nrm}}-\gamma_{\mathrm{sup}})^{2}+\lvert\vec w\rvert^{2}$, a sum of two squares whose second term is the $w^{2}$ of the display below and whose first is the relativistic correction, positive and vanishing at coincidence. **Damping of the relative motion heats the normal component, and the heat is exactly the kinetic energy of the relative drift** — that is the physical content of the display, and it is the standard mutual-friction mechanism of the helium literature quoted into the corpus's letters.
 
-**The sign convention, stated once and used everywhere.** The norm of the difference of two future-directed flows is not of one sign — $\langle\tilde W_\Phi\rangle_{\natural}$ can be positive, negative or zero for two timelike-type elements — so the article writes the production on the relative *speed* $w^{2}=\lvert\vec w\rvert^{2}$ and does not rely on the norm's sign:
+**The sign convention, stated once and used everywhere.** The norm of the relative element is quadratic in the relative motion but it is not the relative speed: for two collinear flows it is $2c^{2}(\cosh\Delta\theta-1)$, which is $c^{2}(\Delta\theta)^{2}$ to leading order and not $\lvert\vec w\rvert^{2}$. **The production is therefore written on the relative speed** $w^{2}=\lvert\vec v_{\mathrm{nrm}}-\vec v_{\mathrm{sup}}\rvert^{2}$, which is the quantity the friction law of the helium literature is stated on:
 
 $$
 \sigma_{\mathrm{ent}}=\frac{1}{T}\,\frac{\rho_{\mathrm{num,sup}}\,\rho_{\mathrm{num,nrm}}}{\rho_{\mathrm{num}}}\,B_{\mathrm{frc}}\,w^{2}\ \ge 0,
@@ -203,16 +212,16 @@ the second being the statement that the entropy density is a function of the nor
 **Second, the friction.** $\tilde F_{\Phi,\mathrm{fr}}\to0$ because it carries $\rho_{\mathrm{num,nrm}}$ as a factor, so the two stress equations become
 
 $$
+\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}\bigr)=0,
+\qquad\text{that is}\qquad
 \tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0,
-\qquad
-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=0,
 $$
 
-and the second of these is empty because there is no normal component to satisfy it.
+in the element spelling of §*The two stress equations*, which is the form the article carries throughout; the scalar and spatial slots of that one display are the two conservation laws. **The normal component's equation is not a second condition**: its element is the zero element at $T=0$, so the equation reads $0=0$ and constrains nothing.
 
 **Third, the flow.** $\tilde V_{\Phi,\mathrm{nrm}}$ becomes undefined — its defining density is zero, so the element it is built from is the zero element divided by zero — and the only surviving flow is the condensate's, $\tilde V_{\Phi,\mathrm{sup}}$, whose equation is the polar form's own with the quantum stress as its energy-momentum. **The undefined normal flow is the correct limit and not a defect**: a component with no density has no velocity, and the article says so rather than letting the reader divide.
 
-**Fourth, the entropy current.** $\tilde J_{\Phi,\mathrm{ent}}\to0$, the second law reads $0\ge0$, and the state is the pure state of [The Local Entropy Current](the-local-entropy-current.html)'s quantum section. **All four displays together are the statement that the $T\to0$ limit of the two-fluid model is the one-fluid model of the polar form**, and the limit is exact and not asymptotic because every term that disappears carries a positive power of $\rho_{\mathrm{num,nrm}}$ or of the fraction.
+**Fourth, the entropy current.** $\tilde J_{\Phi,\mathrm{ent}}\to0$, the second law reads $0\ge0$, and the state is the pure state whose fluid [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html) builds. **All four displays together are the statement that the $T\to0$ limit of the two-fluid model is the one-fluid model of the polar form**, and the limit is exact and not asymptotic because every term that disappears carries a positive power of $\rho_{\mathrm{num,nrm}}$ or of the fraction.
 
 ### The limit's subtlety
 

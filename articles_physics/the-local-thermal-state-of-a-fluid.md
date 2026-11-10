@@ -4,7 +4,7 @@
 
 **The local thermal state of the fluid is three fields at an event — a density, a pressure and a flow — read at the pointwise temperature that [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html) established.** This article writes those three fields in the corpus's letters, states what the element form of the flow does and does not allow, and states what a *local equation of state* must satisfy for the three fields to determine each other. It does not argue that a local temperature exists; that is the gate article's verdict and this article takes it as given.
 
-**The verdict is used, and not reopened.** The thermal structure lives on the field of states as a pointwise *period*, not as a pointwise metric; the rigidity condition is satisfied by the pointwise temperature in the local frame; and the flow is an element with a low index. **Three sentences, and the article proceeds from them.** A reader who wants the argument for them, with the qualification about a medium whose local complex structure varies, goes to the gate article; a reader who wants the construction of the period goes to [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
+**The verdict is used, and not reopened.** The thermal structure lives on the field of states as a pointwise *period*, not as a pointwise metric; the rigidity condition is satisfied by the pointwise temperature in the local frame; and the flow is an element with a low index. **Three sentences, and the article proceeds from them.** A reader who wants the argument for them, with the qualification about a medium whose local complex structure varies, goes to the gate article; a reader who wants the construction of the period goes to [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
 
 **The article's new content is the third section.** The first two sections are the state's data and the flow's element form, and they are largely a spelling of standard relativistic fluid dynamics. The third section is where the article earns its place: an equation of state that is *local* is not the statement that the pressure is a function of the density, but the statement that the pressure at an event is a function of the state's data at that event — and that requirement has a sharp content, which is what makes it checkable and what makes it fail when the flow is not rigid.
 
@@ -96,7 +96,7 @@ $$
 \partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0,
 $$
 
-which is exactly the statement that the symmetric part of the gradient vanishes — so $\theta=0$ and the shear vanishes, while $\omega_{\mu\nu}$ need not. **Rigid flows may rotate; that is the whole content of the condition**, and it is what makes it compatible with a fluid in equilibrium in a rotating frame.
+which is exactly the statement that the symmetric part of the gradient vanishes — so $\theta=0$ and the shear vanishes, while the antisymmetric part $\omega_{\mu\nu}$ is untouched by it. **The condition does not by itself admit a rotation**, and the gate article says why: the unit norm forces $\gamma$ to vary with the radius for a rotating flow, which breaks the diagonal entries of the condition, and a rotating equilibrium is carried instead by the *thermal* form $\partial_\mu(v_{\Phi,\nu}/T)+\partial_\nu(v_{\Phi,\mu}/T)=0$, in which the temperature gradient absorbs the rotation's acceleration. This article quotes that division and does not reopen it.
 
 **What the condition buys, in one sentence.** A rigid flow is one whose neighbouring worldlines keep their proper distances, so the fluid element's shape and size are not changed by the motion, so the only thing that changes the state is the temperature — **and that is what allows a pointwise equation of state to exist at all**, as the next section shows.
 
@@ -131,10 +131,10 @@ with no derivative of any field on the right-hand side. A dependence on a gradie
 **The display of the failure, in the corpus's own objects.** With $\theta\neq0$ the thermodynamic identity at the event acquires a term proportional to $\theta$ and to a bulk viscosity $\zeta$,
 
 $$
-p_{\mathrm{eff}}=p_{\mathrm{th}}-\zeta\,\theta+\cdots,
+p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}-\zeta\,\theta+\cdots,
 $$
 
-so the pressure is no longer a function of $(\rho_{\mathrm{num}},\beta)$ alone. **The ellipsis hides the relaxation structure of [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html)**, and this article stops at the point where the ellipsis begins: under the rigidity condition $\theta=0$, the extra term vanishes, and the pressure is a function of the local data after all.
+so the pressure is no longer a function of $(\rho_{\mathrm{num}},\beta)$ alone. The two equilibrium parts are the split defined above, and the ellipsis carries the rest of the first-order corrections along with the relaxation structure. **The ellipsis hides the relaxation structure of [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html)**, and this article stops at the point where the ellipsis begins: under the rigidity condition $\theta=0$, the extra term vanishes, and the pressure is a function of the local data after all.
 
 **This is the sharp sense in which the gate article's condition is what makes this article possible.** The rigidity condition is not a technical convenience for the algebra; it is the exact condition under which requirement 1 holds with no dissipative correction. **A fluid whose flow is rigid has a local equation of state; a fluid whose flow expands has one only at zeroth order in the expansion rate.**
 
@@ -280,5 +280,6 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 - W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," *Annals of Physics* **118** (1979) 341–372, for the systematic treatment of the same.
 - S. Weinberg, *Gravitation and Cosmology* (Wiley, 1972), §2.11 and §15.10, for the Euler and Gibbs–Duhem relations in the relativistic notation.
 - L. D. Landau and E. M. Lifshitz, *Statistical Physics, Part 1* (Pergamon, 1980), §§23–24, for the thermodynamic identities in the form used here.
-- R. P. Feynman, "Statistical mechanics of a spin-$\tfrac12$ gas" and the quantum-hydrodynamic papers collected in R. P. Feynman, *Statistical Mechanics* (Benjamin, 1972), for the quantum pressure and its gradient character.
-- The companion articles: [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html), [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html), [The Local Entropy Current](the-local-entropy-current.html), and [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
+- T. Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the quantum pressure and its gradient character.
+- D. Bohm, "A suggested interpretation of the quantum theory in terms of 'hidden' variables I," *Physical Review* **85** (1952) 166–179, for the quantum potential as the pressure's source.
+- The companion articles: [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html), [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html), [The Local Entropy Current](the-local-entropy-current.html), and [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).

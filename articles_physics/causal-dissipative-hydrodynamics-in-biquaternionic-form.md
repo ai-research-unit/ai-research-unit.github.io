@@ -220,7 +220,8 @@ The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mat
 | $q_{\lambda}$ | Heat flux |
 | $\tau_{\Pi}$, $\tau_{\pi}$, $\tau_{q}$ | Relaxation times |
 | $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ | Bulk viscosity, shear viscosity, conductivity |
-| $\theta=v_{\Phi,\mu}\partial_\mu$ | Expansion |
+| $\theta=\partial_\mu v_{\Phi,\mu}$ | Expansion, the divergence of the flow |
+| $d/d\tau=v_{\Phi,\mu}\partial_\mu$ | Comoving derivative along the flow |
 | $\sigma^{\mathrm{sh}}_{\lambda\nu}$ | Shear of the flow |
 | $\tau$ | Proper time along the flow |
 | $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ | Thermal diffusivity |
@@ -232,12 +233,15 @@ The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mat
 | $L$ | System size |
 | $\delta^{2}w_{\mathrm{fl}}$ | Second variation of the energy density |
 | $w_{\mathrm{fl}}$, $p_{\mathrm{eff}}$ | Energy density, effective pressure |
+| $p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$ | The thermal and quantum parts of $p_{\mathrm{eff}}$ |
+| $s_{\mathrm{ent}}$ | Entropy density |
 | $\tilde J_{\Phi,\mathrm{ent}}$ | Entropy current, Hermitian, inherited |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
 | $T$, $\beta$ | Temperature, imaginary-time circumference |
 | $c$, $\hbar$ | Speed of light, Planck constant |
 | $e_t$ | Unit temporal direction |
 | $\gamma$ | Boost factor of the flow |
+| $\vec\beta_{\mathrm{vel}}=\vec v/c$ | Dimensionless velocity of the flow |
 | $\mathrm{Sc}$, $\langle\ \rangle_{\natural}$ | Scalar part, quaternionic norm |
 
 ## Further Reading

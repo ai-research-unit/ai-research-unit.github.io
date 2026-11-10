@@ -23,7 +23,7 @@ The article is a transcription, and it is a narrow one. It carries the covariant
 $$
 F_{AB}(r'_t)=\omega_\beta\bigl(A\,\alpha_{r'_t}(B)\bigr),
 \qquad
-F_{AB}\ \text{analytic in}\ 0<\operatorname{Im}r'_t<\beta,
+F_{AB}\ \text{analytic in}\ 0<\mathrm{Im}r'_t<\beta,
 \qquad
 F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t).
 $$
@@ -43,7 +43,7 @@ T(x)=\frac{T_H}{\ell(x)},
 \beta(x)=\beta_H\,\ell(x).
 $$
 
-The two displays are one statement and it is Tolman's law, quoted from [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) in the form $Tc=\text{const}$ and read here with the lapse in place of the light speed. In a medium the varying scale is $c$; on a horizon it is $\ell$. The structure of the statement is the same, which is the reason the two articles can share the letters.
+The two displays are one statement and it is Tolman's law, quoted from [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) in the form $Tc=\text{const}$ and read here with the lapse in place of the light speed. In a medium the varying scale is $c$; on a horizon it is $\ell$. The structure of the statement is the same, which is the reason the two articles can share the letters.
 
 ### The lapse, and what it is not
 
@@ -90,9 +90,9 @@ $$
 which is Hermitian because $\Delta$ is positive, so it lies in $\mathbb{B}_{\Psi}$ and not in the material sector, as [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) records. The thermal state is the exponential of it,
 
 $$
-\omega_\beta\bigl(\,\cdot\,\bigr)=\frac{\operatorname{Tr}\bigl(e^{-\beta_H H_{\mathrm{modular}}}\,\cdot\,\bigr)}{Z},
+\omega_\beta\bigl(\,\cdot\,\bigr)=\frac{\mathrm{Tr}\bigl(e^{-\beta_H H_{\mathrm{modular}}}\,\cdot\,\bigr)}{Z},
 \qquad
-Z=\operatorname{Tr}e^{-\beta_H H_{\mathrm{modular}}},
+Z=\mathrm{Tr}e^{-\beta_H H_{\mathrm{modular}}},
 $$
 
 and this is the statement that the KMS condition and the Gibbs form are the same condition under the identification $\beta\mapsto\beta_H$. The corpus's [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) carries the flat-space version of the same display, and [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) adds the boost.
@@ -127,7 +127,7 @@ The divergence is real and it is the statement that no static observer sits on a
 
 ### The numbers
 
-**The two profiles are checked on the Schwarzschild lapse with the horizon radius set to one.** With $r_s=1$ and $c=1$, the lapse is $\ell(r)=\sqrt{1-r_s/r}$, the surface gravity in the frequency normalization is $\kappa_\omega=c/(2r_s)=0.5$, and the flow's width is $\beta_H=2\pi/\kappa_\omega=4\pi=12.566\,370\,614$. The table gives the observer's quantities at four radii.
+**The two profiles are checked on the Schwarzschild lapse with the horizon radius as the unit of length.** Measuring radii in $r_s$ and speeds in $c$, the lapse is $\ell(r)=\sqrt{1-r_s/r}$, the surface gravity in the frequency normalization is $\kappa_\omega=c/(2r_s)$, so that $\kappa_\omega r_s/c=\tfrac12$, and the flow's width is $\beta_H=2\pi/\kappa_\omega=4\pi\,r_s/c=12.566\,370\,614\,r_s/c$. The table gives the observer's quantities at four radii.
 
 | $r/r_s$ | $\ell(r)$ | $\beta(r)/\beta_H$ | $T(r)/T_H$ |
 |---|---|---|---|
@@ -140,11 +140,11 @@ The third column is the second by construction and the fourth is its reciprocal;
 
 ### The Euclidean reading, quoted
 
-**The period that makes the Euclidean geometry regular at the horizon is the flow's width.** The Hawking article computes the Euclidean Schwarzschild section and finds it regular at the horizon only if the imaginary time has period $8\pi GM/c^3$, and identifies that number with $2\pi c/\kappa=2\pi/\kappa_\omega$. In the units of the table, $8\pi GM/c^3$ with $GM/c^2=r_s/2=0.5$ is $4\pi$, which is $\beta_H$. So
+**The period that makes the Euclidean geometry regular at the horizon is the flow's width.** The Hawking article computes the Euclidean Schwarzschild section and finds it regular at the horizon only if the imaginary time has period $8\pi GM/c^3$, and identifies that number with $2\pi c/\kappa=2\pi/\kappa_\omega$. With $GM/c^2=r_s/2$, the period $8\pi GM/c^3$ is $4\pi r_s/c$, which is $\beta_H$. So
 
 $$
 8\pi\,\frac{GM}{c^{3}}=\frac{2\pi c}{\kappa}=\frac{2\pi}{\kappa_\omega}=\beta_H
-=4\pi\ \text{for}\ r_s=1,
+=\frac{4\pi\,r_s}{c},
 $$
 
 and the regularity of the Euclidean section is the same statement as the KMS periodicity of the horizon flow. This is the bookkeeping's sharpest form and the article quotes it rather than re-deriving it: the number that a geometer obtains by demanding that a cone close is the number a thermodynamicist obtains by demanding that a correlation function be periodic in imaginary time, and on a Killing horizon they are one number.
@@ -174,14 +174,14 @@ and the regularity of the Euclidean section is the same statement as the KMS per
 
 ## Two Ways to the Same Number
 
-**The horizon temperature is fixed by any one of three quantities, and the corpus checks that all three agree.** With $r_s=1$, $c=1$ and hence $GM/c^{2}=r_s/2=0.5$, the Hawking article's two normalizations of the surface gravity and the Euclidean period give
+**The horizon temperature is fixed by any one of three quantities, and the corpus checks that all three agree.** With $GM/c^{2}=r_s/2$, the Hawking article's two normalizations of the surface gravity and the Euclidean period give, in units of $r_s$ and $c$,
 
 $$
-\kappa=\frac{c^{4}}{4GM}=\frac{1}{4\cdot0.5}=0.5,
+\kappa\,\frac{r_s}{c^{2}}=\frac{c^{4}}{4GM}\frac{r_s}{c^{2}}=\frac12,
 \qquad
-\kappa_\omega=\frac{c}{2r_s}=0.5,
+\kappa_\omega\,\frac{r_s}{c}=\frac{c}{2r_s}\frac{r_s}{c}=\frac12,
 \qquad
-\beta_H=\frac{2\pi}{\kappa_\omega}=4\pi,
+\beta_H=\frac{2\pi}{\kappa_\omega}=\frac{4\pi\,r_s}{c},
 $$
 
 and the Euclidean period $8\pi GM/c^{3}=8\pi\cdot0.5=4\pi$ agrees with $\beta_H$ to every digit. The agreement of the first two is the statement $\kappa_\omega=\kappa/c$, which is an identity in these units; the agreement of the third with the fourth is the Euclidean regularity statement quoted in the preceding section. **Three routes, one number: this is the check that the covariant bookkeeping has been done with the corpus's $c$ in the right places.** A reader who omits a factor of $c$ between the two normalizations will find $\beta_H$ off by $c$, which in the corpus's units is a length measured in the wrong units.
@@ -246,7 +246,7 @@ The modular flow supplies the parameter. From the Bisognano–Wichmann statement
 | $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$ | Modular flow |
 | $s=r'_t/\beta_H$ | Modular parameter |
 | $2\pi s=\kappa_\omega r'_t$ | Rapidity carried by the modular flow |
-| $Z=\operatorname{Tr}e^{-\beta_H H_{\mathrm{modular}}}$ | Partition function of the horizon state |
+| $Z=\mathrm{Tr}e^{-\beta_H H_{\mathrm{modular}}}$ | Partition function of the horizon state |
 | $a$ | Proper acceleration of a uniformly accelerated observer |
 | $r_s=2GM/c^2$ | Schwarzschild radius |
 | $G,\ M$ | Gravitational constant and mass |
@@ -263,4 +263,4 @@ The modular flow supplies the parameter. From the Bisognano–Wichmann statement
 - R. Haag, *Local Quantum Physics* (Springer, 1996), Chapter V, for the KMS condition and its characterization of thermal equilibrium.
 - R. M. Wald, *Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics* (University of Chicago Press, 1994), for the covariant KMS statement and the horizon normalisation.
 - W. Israel, "Thermo-field dynamics of black holes," *Physics Letters A* **57** (1976) 107–110, for the horizon state as a thermal state in the field algebra.
-- The companion articles: [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html), [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), and [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
+- The companion articles: [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html), [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), and [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
