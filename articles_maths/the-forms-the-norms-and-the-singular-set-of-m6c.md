@@ -317,7 +317,7 @@ $$
 of real dimension $6$. The link
 
 $$
-\mathrm{Lk}(\mathcal N)=\{A\in\mathcal N:\lVert A\rVert_F=1\}
+\mathrm{Lk}(\mathcal N)=\{A\in\mathcal N:\langle A\rangle_*^{1/2}=1\}
 $$
 
 has real dimension $5$; it is a circle bundle over $\mathbb{P}^1\times\mathbb{P}^1=S^2\times S^2$.

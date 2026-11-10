@@ -61,7 +61,7 @@ which is not non-negative.
 
 **Definition.** For a non-negative matrix $X\in\mathcal{C}_{+}^{m\times n}$ and an integer $l\le\min(m,n)$, the **non-negative reduced biquaternion factorization problem** is
 $$
-\min_{W,H}\ \tfrac12\lVert X-WH\rVert_{\mathrm F}^{2}\qquad\text{subject to}\quad W\in\mathcal{C}_{+}^{m\times l},\quad H\in\mathcal{O}^{l\times n}.
+\min_{W,H}\ \tfrac12\langle X-WH\rangle_*\qquad\text{subject to}\quad W\in\mathcal{C}_{+}^{m\times l},\quad H\in\mathcal{O}^{l\times n}.
 $$
 The **non-negative reduced biquaternion rank** of $X$ is the least $l$ for which the minimum is $0$, that is for which $X=WH$ with $W\succeq0$ and $H\in\mathcal{O}^{l\times n}$; it is written $\operatorname{rank}_{+}(X)$.
 
@@ -94,10 +94,10 @@ $$
 $$
 and the objective satisfies
 $$
-\tfrac12\lVert X-WH\rVert_{\mathrm F}^{2}=\tfrac14\lVert X^{+}-W^{+}H^{+}\rVert_{\mathrm F}^{2}+\tfrac14\lVert X^{-}-W^{-}H^{-}\rVert_{\mathrm F}^{2}.
+\tfrac12\langle X-WH\rangle_*=\tfrac14\langle X^{+}-W^{+}H^{+}\rangle_*+\tfrac14\langle X^{-}-W^{-}H^{-}\rangle_*.
 $$
 
-*Proof.* The map $\varphi$ is an isomorphism of algebras onto $\mathbb{C}\oplus\mathbb{C}$, so $\varphi(WH)=\varphi(W)\varphi(H)$ and the two components multiply separately; that is the first identity. For the second, the Frobenius norm of a matrix satisfies $\lVert M\rVert_{\mathrm F}^{2}=\sum_{p,q}K(m_{pq})$, and $K=\tfrac12(K^{+}+K^{-})$ with $K^{\pm}(z)=|z|^{2}$ on the two complex components, $K^{+}(z)=|z_1|^{2}$ and $K^{-}(z)=|z_2|^{2}$ for $z=(z_1,z_2)$; summing gives the displayed decomposition. The reduction of a matrix equation to two complex equations is that of *Least Squares and Total Least Squares over the Reduced Biquaternions*.
+*Proof.* The map $\varphi$ is an isomorphism of algebras onto $\mathbb{C}\oplus\mathbb{C}$, so $\varphi(WH)=\varphi(W)\varphi(H)$ and the two components multiply separately; that is the first identity. For the second, the Frobenius norm of a matrix satisfies $\langle M\rangle_*=\sum_{p,q}K(m_{pq})$, and $K=\tfrac12(K^{+}+K^{-})$ with $K^{\pm}(z)=|z|^{2}$ on the two complex components, $K^{+}(z)=|z_1|^{2}$ and $K^{-}(z)=|z_2|^{2}$ for $z=(z_1,z_2)$; summing gives the displayed decomposition. The reduction of a matrix equation to two complex equations is that of *Least Squares and Total Least Squares over the Reduced Biquaternions*.
 
 **Theorem (the constraints in the two components).** The structured cone reads, in the two components,
 $$
@@ -123,7 +123,7 @@ entrywise.
 
 **The graph regularizer is the Dirichlet energy of the graph applied to the two real coefficient matrices, and it splits into them.**
 
-**Definition.** A graph on the $n$ samples is a symmetric affinity matrix $A=[A_{mn}]$ with non-negative entries, its **degree matrix** is diagonal with $D_{mm}=\sum_n A_{mn}$, and its **graph Laplacian** is $L=D-A$, a symmetric positive semidefinite matrix. The squared distance between the samples is the reduced biquaternion Frobenius one, $d_{mn}^{2}=\lVert x_m-x_n\rVert_{\mathrm F}^{2}$, and the affinity is the symmetric $0$–$1$ $p$-nearest-neighbour weight, $A_{mn}=1$ when $m\in\mathcal{N}_p(n)$ or $n\in\mathcal{N}_p(m)$.
+**Definition.** A graph on the $n$ samples is a symmetric affinity matrix $A=[A_{mn}]$ with non-negative entries, its **degree matrix** is diagonal with $D_{mm}=\sum_n A_{mn}$, and its **graph Laplacian** is $L=D-A$, a symmetric positive semidefinite matrix. The squared distance between the samples is the reduced biquaternion Frobenius one, $d_{mn}^{2}=\langle x_m-x_n\rangle_*$, and the affinity is the symmetric $0$–$1$ $p$-nearest-neighbour weight, $A_{mn}=1$ when $m\in\mathcal{N}_p(n)$ or $n\in\mathcal{N}_p(m)$.
 
 **Theorem (the graph identity).** For a real matrix $S=[s_1,\dots,s_n]\in\mathbb{R}^{l\times n}$ and a symmetric affinity matrix,
 $$
@@ -135,11 +135,11 @@ and the quantity is non-negative, vanishing exactly for the constant coefficient
 
 **Theorem (the regularizer of the reduced biquaternion coefficient matrix).** For a structured coefficient matrix $H=H_0+H_2j$ with columns $h_m=h_{0,m}+h_{2,m}j$, the energy
 $$
-R(H)=\tfrac12\sum_{m,n}A_{mn}\lVert h_m-h_n\rVert_{\mathrm F}^{2}
+R(H)=\tfrac12\sum_{m,n}A_{mn}\langle h_m-h_n\rangle_*
 $$
 satisfies
 $$
-\lVert h_m-h_n\rVert_{\mathrm F}^{2}=\lVert h_{0,m}-h_{0,n}\rVert_2^{2}+\lVert h_{2,m}-h_{2,n}\rVert_2^{2},
+\langle h_m-h_n\rangle_*=\lVert h_{0,m}-h_{0,n}\rVert_2^{2}+\lVert h_{2,m}-h_{2,n}\rVert_2^{2},
 \qquad
 R(H)=\operatorname{tr}(H_0LH_0^{\top})+\operatorname{tr}(H_2LH_2^{\top}).
 $$
@@ -149,7 +149,7 @@ Consequently the regularizer is a sum of two Dirichlet energies, one for each re
 
 **Remark (the objective).** The graph-regularized model is
 $$
-\min_{W,H}\ \tfrac12\lVert X-WH\rVert_{\mathrm F}^{2}+\tfrac{\lambda}{2}\bigl[\operatorname{tr}(H_0LH_0^{\top})+\operatorname{tr}(H_2LH_2^{\top})\bigr]\qquad\text{subject to}\quad W\in\mathcal{C}_{+}^{m\times l},\ H\in\mathcal{O}^{l\times n},
+\min_{W,H}\ \tfrac12\langle X-WH\rangle_*+\tfrac{\lambda}{2}\bigl[\operatorname{tr}(H_0LH_0^{\top})+\operatorname{tr}(H_2LH_2^{\top})\bigr]\qquad\text{subject to}\quad W\in\mathcal{C}_{+}^{m\times l},\ H\in\mathcal{O}^{l\times n},
 $$
 with $\lambda\ge0$ the regularization parameter; at $\lambda=0$ it is the non-negative factorization above. Because $L$ is positive semidefinite and the reconstruction error is non-negative, the objective is bounded below by $0$ on the feasible set.
 
@@ -174,7 +174,7 @@ where the step sizes are the first of $1,\mu,\mu^{2},\dots$ with $\mu\in(0,1)$ s
 $$
 F\bigl(W^{t+1},H^{t}\bigr)\le F\bigl(W^{t},H^{t}\bigr)+\sigma\,\operatorname{Re}\bigl\langle \nabla_{W}F(W^{t},H^{t}),\,W^{t+1}-W^{t}\bigr\rangle
 $$
-and its analogue for $H$, with $\sigma\in(0,1)$. Then each line search terminates after finitely many reductions, the objective is nonincreasing, it converges to a finite value, and the successive differences tend to zero, $\lVert W^{t+1}-W^{t}\rVert_{\mathrm F}\to0$ and $\lVert H^{t+1}-H^{t}\rVert_{\mathrm F}\to0$. If the sequence converges, its limit is a first-order stationary point, characterised by the complementarity of each variable with the corresponding gradient component.
+and its analogue for $H$, with $\sigma\in(0,1)$. Then each line search terminates after finitely many reductions, the objective is nonincreasing, it converges to a finite value, and the successive differences tend to zero, $\langle W^{t+1}-W^{t}\rangle_*^{1/2}\to0$ and $\langle H^{t+1}-H^{t}\rangle_*^{1/2}\to0$. If the sequence converges, its limit is a first-order stationary point, characterised by the complementarity of each variable with the corresponding gradient component.
 
 *Proof.* The line search terminates because the block gradients are Lipschitz on the sublevel sets, with the moduli built from the spectral norms of the component matrices and of $L$; the sufficient decrease of the projection lemma and the descent lemma give the Armijo condition for all small enough steps, and the backtracking sequence reaches such a step after finitely many halvings. The objective is nonincreasing and bounded below, hence convergent, and the decrease at each step is controlled by the squared step, which forces the step to tend to zero. The stationarity of a limit point is the complementarity of the gradient with the active components at that point, read in the real component representation. The statements are those of the source, and they are carried out there in the real coordinates $\Phi$ and $\Phi_j$.
 
@@ -190,7 +190,7 @@ and its analogue for $H$, with $\sigma\in(0,1)$. Then each line search terminate
 
 **The two components of the objective.** For $W^{\pm}=W_0\pm W_2+i(W_1\pm W_3)$ and $H^{\pm}=H_0\pm H_2$ the identity $(WH)^{\pm}=W^{\pm}H^{\pm}$ gives the two complex products $(W_0H_0+W_2H_2)\pm(W_0H_2+W_2H_0)+i\bigl((W_1H_0+W_3H_2)\pm(W_1H_2+W_3H_0)\bigr)$, which are the two idempotent components of the product formula; the objective is half the sum of the two squared complex errors.
 
-**The regularizer on a two-sample graph.** For $n=2$ with $A_{12}=A_{21}=1$ the Laplacian is $L=\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$, and for a coefficient matrix $H$ with columns $h_1,h_2$ the energy is $R(H)=\operatorname{tr}(H_0LH_0^{\top})+\operatorname{tr}(H_2LH_2^{\top})=\tfrac12\lVert h_1-h_2\rVert_{\mathrm F}^{2}$; the regularizer pulls the two coefficient columns together in both real components and none in the two vanishing ones.
+**The regularizer on a two-sample graph.** For $n=2$ with $A_{12}=A_{21}=1$ the Laplacian is $L=\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$, and for a coefficient matrix $H$ with columns $h_1,h_2$ the energy is $R(H)=\operatorname{tr}(H_0LH_0^{\top})+\operatorname{tr}(H_2LH_2^{\top})=\tfrac12\langle h_1-h_2\rangle_*$; the regularizer pulls the two coefficient columns together in both real components and none in the two vanishing ones.
 
 ## Verification
 

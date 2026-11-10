@@ -250,7 +250,7 @@ where $\operatorname{sgn}$ is the sign function on each idempotent component.
 The **split complex Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{C}_{\mathrm{spl}})$ is
 
 $$
-Mf(Q) = \sup_{r > 0} \frac{1}{|B(Q, r)|} \int_{B(Q, r)} \|f(B)\|_E \, dB,
+Mf(Q) = \sup_{r > 0} \frac{1}{|B(Q, r)|} \int_{B(Q, r)} \|f(B)\| \, dB,
 $$
 
 where $B(Q, r)$ is the Euclidean ball of radius $r$ centred at $Q$, and $|B(Q, r)|$ is its area.
@@ -290,11 +290,11 @@ $$
 for $Q \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates
 
 $$
-\|K(Q, B)\|_E \leq \frac{C}{\|Q - B\|_E},
+\|K(Q, B)\| \leq \frac{C}{\|Q - B\|},
 $$
 
 $$
-\|K(Q, B) - K(Q', B)\|_E \leq C \frac{\|Q - Q'\|_E^\delta}{\|Q - B\|_E^{1+\delta}}, \qquad \|Q - Q'\|_E < \frac{1}{2} \|Q - B\|_E,
+\|K(Q, B) - K(Q', B)\| \leq C \frac{\|Q - Q'\|^\delta}{\|Q - B\|^{1+\delta}}, \qquad \|Q - Q'\| < \frac{1}{2} \|Q - B\|,
 $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.

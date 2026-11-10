@@ -365,9 +365,9 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 $$
 \langle e^{\theta\tilde Q}\rangle_*
 =\lvert e^{\theta Q_t}\rvert^2
-\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\right),
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert^2\right),
 \qquad
-\lVert\vec U\rVert_E^2\ge1,
+\lVert\vec U\rVert^2\ge1,
 $$
 
 with equality exactly when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$, with $\tilde X^*=\overline{\tilde X^\natural}$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). The flow is $*$-unitary for the Hermitian form exactly when $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$ — the massless material case — and self-adjoint exactly when $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$. Spectral regularity, not invertibility, is what the Fourier dictionary needs.

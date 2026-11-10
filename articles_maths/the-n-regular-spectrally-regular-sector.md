@@ -980,9 +980,9 @@ It is unique. The Peirce eigenbasis $(e_+,\vec\Upsilon_-,\vec\Upsilon_+,e_-)$ is
 $$
 \langle e^{\theta\tilde Q}\rangle_*
 =\lvert e^{\theta Q_t}\rvert^2
-\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\right),
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert^2\right),
 \qquad
-\lVert\vec U\rVert_E^2\ge1,
+\lVert\vec U\rVert^2\ge1,
 $$
 
 with equality exactly when $\vec U$ is real, that is, when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$, with $\tilde X^*=\overline{\tilde X^\natural}$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). The eigenbasis is orthogonal for the Hermitian form exactly in that case. The flow is $*$-unitary for the Hermitian form exactly when $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$, and self-adjoint for the Hermitian form exactly when $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$; these are the material and Hermitian sub-sectors, and normality implies neither. The generic element of $\Sigma_{11}$ has complex eigenvalues and a growing norm.

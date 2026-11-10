@@ -76,7 +76,7 @@ P=\frac{\tilde\Pi\tilde\Pi^{*}}{\kappa},
 \qquad
 \tilde Q_0=\frac{c}{\lvert c\rvert}\frac{\tilde\Pi}{\sqrt{\kappa}},
 \qquad
-\kappa=\frac{1+\lVert\tilde{Ζ}\rVert_E^{2}}{2},
+\kappa=\frac{1+\lVert\tilde{Ζ}\rVert^{2}}{2},
 $$
 
 where $\tilde{Ζ}=2\tilde\Pi-e_t$ and $\kappa\ge1$. The overlap is $v^{\dagger}u=Q_t/a=c/(2a)$, with modulus $1/\sqrt{\kappa}=\cos\theta$, where $\theta$ is the angle between the two slots.

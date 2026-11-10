@@ -14,14 +14,14 @@ $$
 \tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2, \qquad \tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H} .
 $$
 
-The quadratic family is $F_{\tilde Q_1}(\tilde Q)=\tilde Q^2+\tilde Q_1$ in the split-biquaternion product, $\tilde Q_{1,\pm}=\tilde Q_1\tilde\Pi_{1,2}$, and $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{R}^8$.
+The quadratic family is $F_{\tilde Q_1}(\tilde Q)=\tilde Q^2+\tilde Q_1$ in the split-biquaternion product, $\tilde Q_{1,\pm}=\tilde Q_1\tilde\Pi_{1,2}$, and $\|\cdot\|$ is the Euclidean norm of $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{R}^8$.
 
 ## The Idempotent Splitting
 
 **Proposition (the splitting of the family).** The central idempotents give an algebra isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$, $\tilde Q\mapsto(\tilde Q_+,\tilde Q_-)$, which is an isometry in the scaled sense
 
 $$
-\|\tilde Q\|_E^2=\tfrac12\bigl(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2\bigr) ,
+\|\tilde Q\|^2=\tfrac12\bigl(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2\bigr) ,
 $$
 
 and conjugates the quadratic family to the product of two quaternion quadratic families,
@@ -60,7 +60,7 @@ under the isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$
 
 **Remark (the contrast with the biquaternion case).** The biquaternion escape radius fails for a non-real central parameter because the square can collapse towards the cone (*The Escape Radius and the Green's Function for the Biquaternions*). The split-biquaternion algebra has zero divisors as well, but they lie in the coordinate hyperplanes $\tilde Q_+=0$ or $\tilde Q_-=0$, and a zero divisor has a *coordinate* equal to zero, not a *collapse of the square*; the pair of quaternion escape lemmas is unaffected. **The zero divisors of the split-biquaternion algebra do not obstruct the escape radius in the Euclidean norm, and this is the technical difference between the two algebras.**
 
-**Remark (the failure of a single radius in the $\mathbb{C}_{\mathrm{spl}}$-valued norm).** The norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ is a split complex number, $\mathbb{R}$-valued only on the quaternion subspace and its translate $j\mathbb{H}$ and not comparable to the Euclidean norm elsewhere; its real part is $\|\tilde Q\|_E^2$ and its split part is $2j\sum_\mu\operatorname{Re}Q_\mu\operatorname{Im}Q_\mu$, which is indefinite. Because $\mathbb{C}_{\mathrm{spl}}$ is not ordered, there is no single number $R$ with a condition $\langle\tilde Q\rangle_{\natural}>R^2$ forcing escape, and no single escape radius exists in the $\mathbb{C}_{\mathrm{spl}}$-valued norm; the escape criterion of the family is the *pair* of the quaternion Euclidean radii $r_\pm=1+|\tilde Q_{1,\pm}|$. **The single escape radius exists in the Euclidean norm and fails in the split-complex-valued norm, and the honest statement of the escape theory here is the pair of componentwise criteria.**
+**Remark (the failure of a single radius in the $\mathbb{C}_{\mathrm{spl}}$-valued norm).** The norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ is a split complex number, $\mathbb{R}$-valued only on the quaternion subspace and its translate $j\mathbb{H}$ and not comparable to the Euclidean norm elsewhere; its real part is $\|\tilde Q\|^2$ and its split part is $2j\sum_\mu\operatorname{Re}Q_\mu\operatorname{Im}Q_\mu$, which is indefinite. Because $\mathbb{C}_{\mathrm{spl}}$ is not ordered, there is no single number $R$ with a condition $\langle\tilde Q\rangle_{\natural}>R^2$ forcing escape, and no single escape radius exists in the $\mathbb{C}_{\mathrm{spl}}$-valued norm; the escape criterion of the family is the *pair* of the quaternion Euclidean radii $r_\pm=1+|\tilde Q_{1,\pm}|$. **The single escape radius exists in the Euclidean norm and fails in the split-complex-valued norm, and the honest statement of the escape theory here is the pair of componentwise criteria.**
 
 ## The Julia Set
 
@@ -130,7 +130,7 @@ identified with the pairs $(\tilde Q_{1,+},\tilde Q_{1,-})$. Separately, the fil
 
 ## Summary
 
-The split-biquaternion quadratic family is, by the centrality of the idempotents $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$, exactly the product of two quaternion quadratic families, with the norm identity $\|\tilde Q\|_E^2=\tfrac12(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2)$; the orbit is the pair of the quaternion orbits and there is no coupling. The escape lemma of the quaternion factors gives the escape dichotomy for the product, the filled Julia set is the product $K_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}$, the Julia set is the boundary of the product $(J_+\times K_-)\cup(K_+\times J_-)$, and every product property of the fractal is inherited. The units are the pairs of non-zero quaternions and the zero divisors are the two four-dimensional ideals, so the zero divisors of the split-biquaternion algebra do not obstruct the escape radius, in contrast with the biquaternion case. The critical orbit is the pair of the quaternion critical orbits and the connectedness locus is the square $\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}$ of the quaternion connectedness locus. The symmetry group is the product of the automorphism groups of the two factors together with the swap.
+The split-biquaternion quadratic family is, by the centrality of the idempotents $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$, exactly the product of two quaternion quadratic families, with the norm identity $\|\tilde Q\|^2=\tfrac12(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2)$; the orbit is the pair of the quaternion orbits and there is no coupling. The escape lemma of the quaternion factors gives the escape dichotomy for the product, the filled Julia set is the product $K_{\tilde Q_{1,+}}\times K_{\tilde Q_{1,-}}$, the Julia set is the boundary of the product $(J_+\times K_-)\cup(K_+\times J_-)$, and every product property of the fractal is inherited. The units are the pairs of non-zero quaternions and the zero divisors are the two four-dimensional ideals, so the zero divisors of the split-biquaternion algebra do not obstruct the escape radius, in contrast with the biquaternion case. The critical orbit is the pair of the quaternion critical orbits and the connectedness locus is the square $\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}$ of the quaternion connectedness locus. The symmetry group is the product of the automorphism groups of the two factors together with the swap.
 
 ## Summary of Notation
 

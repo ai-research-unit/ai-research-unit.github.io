@@ -4,7 +4,7 @@
 
 The algebra $M_{3}(\mathbb{C})$ carries three natural norms and one determinant. The **Frobenius norm** is the Euclidean norm of the nine complex entries, the **operator norm** is the norm of the linear map $\mathbb{C}^{3}\to\mathbb{C}^{3}$, and the **nuclear norm** is the sum of the singular values. The three are unitarily invariant and satisfy
 $$
-\|A\|\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
+\|A\|\leq\langle A\rangle_*^{1/2}\leq\|A\|_{*}\leq\sqrt3\,\langle A\rangle_*^{1/2}.
 $$
 The determinant is not a norm: it is homogeneous of degree three, complex-valued, and vanishes on the singular matrices. The **singular set**
 $$
@@ -27,17 +27,17 @@ The article assumes the trace form and the Frobenius norm of *The Involution and
 
 **Definition.** The **Frobenius norm** is
 $$
-\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}=\Bigl(\sum_{i,j=1}^{3}|a_{ij}|^{2}\Bigr)^{1/2}.
+\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^{*}A)}=\Bigl(\sum_{i,j=1}^{3}|a_{ij}|^{2}\Bigr)^{1/2}.
 $$
 
 **Proposition.** The Frobenius norm is a norm on the complex vector space $M_{3}(\mathbb{C})$, and it is the Euclidean norm of the nine complex coordinates. It is unitarily invariant:
 $$
-\|UAV\|_{\mathrm{F}}=\|A\|_{\mathrm{F}}\qquad(U,V\in U(3)).
+\langle UAV\rangle_*^{1/2}=\langle A\rangle_*^{1/2}\qquad(U,V\in U(3)).
 $$
 Its square is the trace form $\langle A,A\rangle=\operatorname{tr}(A^{*}A)$, and the polarisation
 $$
-\langle A,B\rangle=\tfrac14\bigl(\|A+B\|_{\mathrm{F}}^{2}-\|A-B\|_{\mathrm{F}}^{2}\bigr)
-+\tfrac{i}{4}\bigl(\|A+iB\|_{\mathrm{F}}^{2}-\|A-iB\|_{\mathrm{F}}^{2}\bigr)
+\langle A,B\rangle=\tfrac14\bigl(\langle A+B\rangle_*-\langle A-B\rangle_*\bigr)
++\tfrac{i}{4}\bigl(\langle A+iB\rangle_*-\langle A-iB\rangle_*\bigr)
 $$
 recovers the Hermitian form.
 
@@ -49,7 +49,7 @@ using $U^{*}U=I$ and the cyclic property of the trace. The polarisation is the s
 
 **The trace form.** The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, with only isotropic vector $0$. The Frobenius norm is the norm it defines. The complex bilinear trace pairing $\operatorname{tr}(AB)$ is a different form: it is indefinite, and its isotropic vectors are the nonzero matrices with $\operatorname{tr}(A^{2})=0$, such as $E_{12}$. The two forms agree on real symmetric matrices but not in general.
 
-**The unit sphere.** The set $\{A:\|A\|_{\mathrm{F}}=1\}$ is the unit sphere $S^{17}\subset\mathbb{R}^{18}$, compact and smooth. The Frobenius distance between two matrices is the Euclidean distance of their coordinate vectors; the algebra is a Euclidean space of real dimension $18$ with this norm.
+**The unit sphere.** The set $\{A:\langle A\rangle_*^{1/2}=1\}$ is the unit sphere $S^{17}\subset\mathbb{R}^{18}$, compact and smooth. The Frobenius distance between two matrices is the Euclidean distance of their coordinate vectors; the algebra is a Euclidean space of real dimension $18$ with this norm.
 
 **The Frobenius distance to the singular set.** The distance from $A$ to $\Sigma$ in the Frobenius norm is the smallest singular value,
 $$
@@ -80,12 +80,12 @@ The columns of $V$ are an orthonormal basis of eigenvectors of $A^{*}A$; the col
 **Proposition.** The three norms are
 $$
 \|A\|=\sigma_{1},\qquad
-\|A\|_{\mathrm{F}}=\Bigl(\sum_{i}\sigma_{i}^{2}\Bigr)^{1/2},\qquad
+\langle A\rangle_*^{1/2}=\Bigl(\sum_{i}\sigma_{i}^{2}\Bigr)^{1/2},\qquad
 \|A\|_{*}=\sum_{i}\sigma_{i}.
 $$
 They are unitarily invariant, and they satisfy
 $$
-\|A\|\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}},\qquad
+\|A\|\leq\langle A\rangle_*^{1/2}\leq\|A\|_{*}\leq\sqrt3\,\langle A\rangle_*^{1/2},\qquad
 \|A\|_{*}\leq3\|A\|.
 $$
 
@@ -111,22 +111,22 @@ and it blows up as $A$ approaches the singular set.
 
 **Hadamard and the determinant.** For every $A$,
 $$
-|\det A|\leq\prod_{j=1}^{3}\Bigl(\sum_{i=1}^{3}|a_{ij}|^{2}\Bigr)^{1/2}\leq\|A\|_{\mathrm{F}}^{3},
+|\det A|\leq\prod_{j=1}^{3}\Bigl(\sum_{i=1}^{3}|a_{ij}|^{2}\Bigr)^{1/2}\leq\langle A\rangle_*^{3/2},
 $$
 and by the arithmetic–geometric mean inequality,
 $$
 |\det A|=\prod_{i}\sigma_{i}\leq\Bigl(\frac{\sum_{i}\sigma_{i}^{2}}{3}\Bigr)^{3/2}
-=\frac{\|A\|_{\mathrm{F}}^{3}}{3\sqrt3}.
+=\frac{\langle A\rangle_*^{3/2}}{3\sqrt3}.
 $$
 The determinant is bounded by the norms but is not a norm: it is homogeneous of degree three and changes sign under a transposition of two columns.
 
 **Worked example.** For $A=\operatorname{diag}(1,2,3)$, the singular values are $1,2,3$, so
 $$
-\|A\|=3,\qquad \|A\|_{\mathrm{F}}=\sqrt{14},\qquad \|A\|_{*}=6,\qquad \det A=6.
+\|A\|=3,\qquad \langle A\rangle_*^{1/2}=\sqrt{14},\qquad \|A\|_{*}=6,\qquad \det A=6.
 $$
 The condition number is $3/1=3$. For $B=\operatorname{diag}(2,1,0)$, the singular values are $2,1,0$, so
 $$
-\|B\|=2,\qquad \|B\|_{\mathrm{F}}=\sqrt5,\qquad \|B\|_{*}=3,\qquad \det B=0.
+\|B\|=2,\qquad \langle B\rangle_*^{1/2}=\sqrt5,\qquad \|B\|_{*}=3,\qquad \det B=0.
 $$
 The matrix $B$ is singular of rank two; its distance to the rank-at-most-one matrices is $\sigma_{2}=1$ in the operator and Frobenius norms, and its distance to zero is $\sigma_{1}=2$.
 
@@ -189,7 +189,7 @@ So the distance to the singular set is $\sigma_{3}$, the distance to the rank-on
 **Proof.** The truncated singular value decomposition $A_{r}=U\operatorname{diag}(\sigma_{1},\ldots,\sigma_{r},0,\ldots,0)V^{*}$ has rank at most $r$ and satisfies
 $$
 \|A-A_{r}\|=\sigma_{r+1},\qquad
-\|A-A_{r}\|_{\mathrm{F}}=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
+\langle A-A_{r}\rangle_*^{1/2}=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
 $$
 The Eckart–Young theorem states that no matrix of rank at most $r$ is closer in either norm. The distance formula follows.
 
@@ -246,13 +246,13 @@ The singular set of $M_{3}$ is a cubic hypersurface; the null cone of $\mathbb{B
 
 The three norms are
 $$
-\boxed{\;\|A\|_{\mathrm{F}}^{2}=\operatorname{tr}(A^{*}A),\qquad
+\boxed{\;\langle A\rangle_*=\operatorname{tr}(A^{*}A),\qquad
 \|A\|=\sigma_{1},\qquad
 \|A\|_{*}=\sum_{i}\sigma_{i},\;}
 $$
 with
 $$
-\|A\|\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
+\|A\|\leq\langle A\rangle_*^{1/2}\leq\|A\|_{*}\leq\sqrt3\,\langle A\rangle_*^{1/2}.
 $$
 The singular values are the square roots of the eigenvalues of $A^{*}A$, and $|\det A|=\prod_{i}\sigma_{i}$.
 
@@ -284,7 +284,7 @@ The trace form is positive definite, with isotropic set $\{0\}$; there is no nul
 
 | Symbol | Meaning |
 |---|---|
-| $\|A\|_{\mathrm{F}}$ | the Frobenius norm $\sqrt{\operatorname{tr}(A^{*}A)}$ |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm $\sqrt{\operatorname{tr}(A^{*}A)}$ |
 | $\|A\|$ | the operator norm, the largest singular value |
 | $\|A\|_{*}$ | the nuclear norm, the sum of the singular values |
 | $\sigma_{i}$ | the singular values, $\sigma_{1}\geq\sigma_{2}\geq\sigma_{3}\geq0$ |

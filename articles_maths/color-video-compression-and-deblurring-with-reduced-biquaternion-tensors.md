@@ -108,10 +108,10 @@ plus $O(n_3k(n_1+n_2))$ for the reconstruction.
 The reconstruction error is measured by the peak signal-to-noise ratio
 
 $$
-\mathrm{PSNR}=10\log_{10}\frac{3n_1n_2\lVert C\rVert_\infty^2}{\lVert C-C_k\rVert_{\mathrm F}^2},
+\mathrm{PSNR}=10\log_{10}\frac{3n_1n_2\lVert C\rVert_\infty^2}{\langle C-C_k\rangle_*},
 $$
 
-where $C$ and $C_k$ are one frame of the original and of the reconstruction, $\lVert C\rVert_\infty$ is the maximum absolute value of a channel sample, and $\lVert C-C_k\rVert_{\mathrm F}^2$ is the sum of the squared errors over all pixels and all three channels. The factor $3n_1n_2$ is the number of channel samples in a frame; the formula is the per-frame PSNR, and the PSNR of the video is the average of the per-frame values. If the video is normalized to $[0,1]$, the peak is at most $1$; if it is stored in eight bits, the peak is at most $255$. The PSNR is in decibels, and a higher value is a smaller error.
+where $C$ and $C_k$ are one frame of the original and of the reconstruction, $\lVert C\rVert_\infty$ is the maximum absolute value of a channel sample, and $\langle C-C_k\rangle_*$ is the sum of the squared errors over all pixels and all three channels. The factor $3n_1n_2$ is the number of channel samples in a frame; the formula is the per-frame PSNR, and the PSNR of the video is the average of the per-frame values. If the video is normalized to $[0,1]$, the peak is at most $1$; if it is stored in eight bits, the peak is at most $255$. The PSNR is in decibels, and a higher value is a smaller error.
 
 **Remark (what the PSNR does not see).** The PSNR is a global mean of the squared error. It does not measure temporal flicker, motion, or perceptual quality. The t-SVD truncation couples the frames through the transform, and a low-rank approximation can smooth a moving object across frames while keeping a good PSNR. **The PSNR is a necessary check, not a sufficient one**, and the source reports it together with visual comparisons.
 
@@ -184,7 +184,7 @@ For the deblurring, the blur tensor was a unit with a cyclic shift of strength $
 
 ## Summary
 
-A color video is encoded as $A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$, one frame per frontal slice. The rank-$k$ truncation of its t-SVD compresses the video; the stored factors have $n_3k(n_1+n_2+1)$ reduced biquaternion entries, and the compression ratio is $n_1n_2/[k(n_1+n_2+1)]$ against the encoded tensor and $3n_1n_2/[4k(n_1+n_2+1)]$ against RGB. The reconstruction error is measured by the per-frame PSNR $10\log_{10}(3n_1n_2\lVert C\rVert_\infty^2/\lVert C-C_k\rVert_{\mathrm F}^2)$, averaged over the frames. Deblurring solves $H\ast X=B$: the inverse when $H$ is a unit, the pseudoinverse or a Tikhonov solution otherwise, all slicewise in the Fourier domain. The reduced biquaternion algorithms replace the quaternion SVD by two complex SVDs and the quaternion transform by two complex transforms; the asymptotic cost is the same and the constants are smaller. **The compression is optimal for the tubal rank, the deblurring is the tensor-equation solution, and the color video is one reduced biquaternion tensor.**
+A color video is encoded as $A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$, one frame per frontal slice. The rank-$k$ truncation of its t-SVD compresses the video; the stored factors have $n_3k(n_1+n_2+1)$ reduced biquaternion entries, and the compression ratio is $n_1n_2/[k(n_1+n_2+1)]$ against the encoded tensor and $3n_1n_2/[4k(n_1+n_2+1)]$ against RGB. The reconstruction error is measured by the per-frame PSNR $10\log_{10}(3n_1n_2\lVert C\rVert_\infty^2/\langle C-C_k\rangle_*)$, averaged over the frames. Deblurring solves $H\ast X=B$: the inverse when $H$ is a unit, the pseudoinverse or a Tikhonov solution otherwise, all slicewise in the Fourier domain. The reduced biquaternion algorithms replace the quaternion SVD by two complex SVDs and the quaternion transform by two complex transforms; the asymptotic cost is the same and the constants are smaller. **The compression is optimal for the tubal rank, the deblurring is the tensor-equation solution, and the color video is one reduced biquaternion tensor.**
 
 ## Summary of Notation
 

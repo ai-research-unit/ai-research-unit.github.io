@@ -137,7 +137,7 @@ $$
 (T_k f)(x)=\int_X k(x,y)f(y)\,d\mu(y)
 $$
 
-is Hilbert–Schmidt on $L^2(X,\mu)$ with $\|T_k\|_{\mathrm{HS}}=\|k\|_2$ and $T_k^*=T_{\bar k}$ for the transposed kernel $\bar k(x,y)=\overline{k(y,x)}$; hence $T_k$ is compact, and it is self-adjoint exactly when $k(x,y)=\overline{k(y,x)}$ almost everywhere.
+is Hilbert–Schmidt on $L^2(X,\mu)$ with $\langle T_k\rangle_*^{1/2}=\|k\|_2$ and $T_k^*=T_{\bar k}$ for the transposed kernel $\bar k(x,y)=\overline{k(y,x)}$; hence $T_k$ is compact, and it is self-adjoint exactly when $k(x,y)=\overline{k(y,x)}$ almost everywhere.
 
 ### Diagonal Operators
 

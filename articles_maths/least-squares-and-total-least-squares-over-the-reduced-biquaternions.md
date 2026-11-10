@@ -18,7 +18,7 @@ $$
 \langle\breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=\mathrm{Sc}\bigl(\breve Q_{\mathrm{ts},1}\breve Q_{2}^{*}\bigr)=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}+Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},\qquad \langle\breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=\tfrac12\bigl(|Q_{+}|^{2}+|Q_{-}|^{2}\bigr).
 $$
 
-For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}\langle M_{rs},N_{rs}\rangle_{\mathrm{ts}*}$, and $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$; it is the square of the Frobenius norm the source writes $\lVert M\rVert_{F}$. The two **idempotent components** of a matrix are the pair $(M^{+},M^{-})$ of *Reduced Biquaternion Other Algebraic Element Representations*, read entrywise, $(M^{\pm})_{rs}=\lambda_{\pm}(M_{rs})$ with $\lambda_{+}(\breve Q)=Q_{+}$ and $\lambda_{-}(\breve Q)=Q_{-}$ the two characters; the component $M^{+}$ is the one attached to $\Pi_+$ and $M^{-}$ the one attached to $\Pi_-$. The $\langle\cdot\rangle_{\mathrm{ts}*}$-**adjoint** of a matrix is written $M^{\dagger}$, in agreement with the dagger of the operator conventions, and the **Moore–Penrose inverse** is written $M_{\mathrm{MP}}$, the dagger marking the adjoint and the sign marking a component, so neither is read for the other.
+For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}\langle M_{rs},N_{rs}\rangle_{\mathrm{ts}*}$, and $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$; it is the square of the Frobenius norm the source writes $\langle M\rangle_*^{1/2}$. The two **idempotent components** of a matrix are the pair $(M^{+},M^{-})$ of *Reduced Biquaternion Other Algebraic Element Representations*, read entrywise, $(M^{\pm})_{rs}=\lambda_{\pm}(M_{rs})$ with $\lambda_{+}(\breve Q)=Q_{+}$ and $\lambda_{-}(\breve Q)=Q_{-}$ the two characters; the component $M^{+}$ is the one attached to $\Pi_+$ and $M^{-}$ the one attached to $\Pi_-$. The $\langle\cdot\rangle_{\mathrm{ts}*}$-**adjoint** of a matrix is written $M^{\dagger}$, in agreement with the dagger of the operator conventions, and the **Moore–Penrose inverse** is written $M_{\mathrm{MP}}$, the dagger marking the adjoint and the sign marking a component, so neither is read for the other.
 
 ## The Three Approximation Problems
 
@@ -111,16 +111,16 @@ with matrix norm $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$. Its real part is a real 
 **Theorem (the metric splits).** Let $M=M_{0}+M_{1}i+M_{2}j+M_{3}ij$. Then
 
 $$
-K_{\mathrm F}(M)=\sum_{t=0}^{3}\lVert M_{t}\rVert_{F}^{2}=\tfrac12\Bigl(\bigl\lVert M^{+}\bigr\rVert_{F}^{2}+\bigl\lVert M^{-}\bigr\rVert_{F}^{2}\Bigr),
+K_{\mathrm F}(M)=\sum_{t=0}^{3}\langle M_{t}\rangle_*=\tfrac12\Bigl(\bigl\langle M^{+}\\bigr\rangle_*+\bigl\langle M^{-}\\bigr\rangle_*\Bigr),
 $$
 
 and likewise $K_{\mathrm F}(M,N)=\sum_{t}\langle M_{t},N_{t}\rangle_{F}=\tfrac12\bigl(\langle M^{+},N^{+}\rangle_{F}+\langle M^{-},N^{-}\rangle_{F}\bigr)$, the real inner product of the coefficients being the Euclidean one in each reading.
 
 *Proof.* The norm $\langle \breve Q\rangle_{\mathrm{ts}*}=|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=q_{\blacktriangle}^{2}+q'^{2}_{\blacktriangle}+q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|Q_{+}|^{2}+|Q_{-}|^{2}=2(|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2})$ by the identity $|Q_{\blacktriangle}+Q_{\blacktriangledown}|^{2}+|Q_{\blacktriangle}-Q_{\blacktriangledown}|^{2}=2|Q_{\blacktriangle}|^{2}+2|Q_{\blacktriangledown}|^{2}$, and $K=\tfrac12(|Q_{+}|^{2}+|Q_{-}|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.
 
-**Corollary (the square of the real Frobenius norm).** With $\lVert M\rVert_{F}:=\sqrt{K_{\mathrm F}(M)}$ the Frobenius norm of the source, $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}$, where $M^{R}$ is the real representation of §*The Representations and the Coefficient Stack*, whose coefficient blocks each occur four times.
+**Corollary (the square of the real Frobenius norm).** With $\langle M\rangle_*^{1/2}:=\sqrt{K_{\mathrm F}(M)}$ the Frobenius norm of the source, $\langle M\rangle_*^{1/2}=\tfrac12\langle M^{R}\rangle_*^{1/2}$, where $M^{R}$ is the real representation of §*The Representations and the Coefficient Stack*, whose coefficient blocks each occur four times.
 
-*Proof.* The real representation has each $M_{t}$ in four of its block rows, so $\lVert M^{R}\rVert_{F}^{2}=4\sum_{t}\lVert M_{t}\rVert_{F}^{2}=4K_{\mathrm F}(M)$ by the theorem, and the square root gives $\lVert M^{R}\rVert_{F}=2\lVert M\rVert_{F}$.
+*Proof.* The real representation has each $M_{t}$ in four of its block rows, so $\langle M^{R}\rangle_*=4\sum_{t}\langle M_{t}\rangle_*=4K_{\mathrm F}(M)$ by the theorem, and the square root gives $\langle M^{R}\rangle_*^{1/2}=2\langle M\rangle_*^{1/2}$.
 
 ### The Least Squares Problem Factorises
 
@@ -128,7 +128,7 @@ and likewise $K_{\mathrm F}(M,N)=\sum_{t}\langle M_{t},N_{t}\rangle_{F}=\tfrac12
 
 $$
 \boxed{\;
-\min_{X}K_{\mathrm F}(AX-B)=\tfrac12\Bigl(\min_{X^{+}}\bigl\lVert A^{+}X^{+}-B^{+}\bigr\rVert_{F}^{2}+\min_{X^{-}}\bigl\lVert A^{-}X^{-}-B^{-}\bigr\rVert_{F}^{2}\Bigr)
+\min_{X}K_{\mathrm F}(AX-B)=\tfrac12\Bigl(\min_{X^{+}}\bigl\langle A^{+}X^{+}-B^{+}\\bigr\rangle_*+\min_{X^{-}}\bigl\langle A^{-}X^{-}-B^{-}\\bigr\rangle_*\Bigr)
 \;}.
 $$
 
@@ -222,7 +222,7 @@ The effective problem in each case is a complex problem, and the three differ on
 | complex | $X^{+}=X^{-}=X$, complex | two complex problems sharing one complex unknown |
 | real | $X^{+}=X^{-}=X$, real | two complex problems sharing one real unknown |
 
-**Corollary (the complex unknown as a stacked problem).** For the complex unknown the objective is $\tfrac12\lVert \mathsf A X-\mathsf B\rVert_{F}^{2}$ with the stacked complex matrices $\mathsf A=\begin{pmatrix}A^{+}\\ A^{-}\end{pmatrix}$ and $\mathsf B=\begin{pmatrix}B^{+}\\ B^{-}\end{pmatrix}$, so the least squares solution is $X=\mathsf A_{\mathrm{MP}}\mathsf B$; the total least squares and mixed problems are the complex ones for this stack.
+**Corollary (the complex unknown as a stacked problem).** For the complex unknown the objective is $\tfrac12\langle \mathsf A X-\mathsf B\rangle_*$ with the stacked complex matrices $\mathsf A=\begin{pmatrix}A^{+}\\ A^{-}\end{pmatrix}$ and $\mathsf B=\begin{pmatrix}B^{+}\\ B^{-}\end{pmatrix}$, so the least squares solution is $X=\mathsf A_{\mathrm{MP}}\mathsf B$; the total least squares and mixed problems are the complex ones for this stack.
 
 *Proof.* Setting $X^{+}=X^{-}=X$ in the factorised objective of §*The Idempotent Reduction* gives half the sum of the two complex residual squares, which is half the squared Frobenius norm of the stacked residual; the stacked complex least squares solution is the pseudoinverse one.
 
@@ -243,10 +243,10 @@ and the stack of $B$ is written $C_{B}$, of size $4m\times d$.
 **Theorem (the stack carries the problem).** For a real unknown $X\in\mathbb{R}^{n\times d}$,
 
 $$
-K_{\mathrm F}(AX-B)=\bigl\lVert C_{A}X-C_{B}\bigr\rVert_{F}^{2}.
+K_{\mathrm F}(AX-B)=\bigl\langle C_{A}X-C_{B}\\bigr\rangle_*.
 $$
 
-*Proof.* The stack identity is the identity $\sum_{t}\lVert M_{t}\rVert_{F}^{2}=\lVert C_{M}\rVert_{F}^{2}$ of the metric theorem, applied to the three residuals, the residual of the stack being the stack of the residual coefficientwise.
+*Proof.* The stack identity is the identity $\sum_{t}\langle M_{t}\rangle_*=\langle C_{M}\rangle_*$ of the metric theorem, applied to the three residuals, the residual of the stack being the stack of the residual coefficientwise.
 
 The theorem is the reason the real unknown is a classical real problem, and its minimiser is the real least squares solution of $C_{A}X\approx C_{B}$.
 
@@ -293,16 +293,16 @@ It is the repeated-block form of *Reduced Biquaternion Other Algebraic Element R
 **Corollary (the complex norm).**
 
 $$
-\lVert M\rVert_{F}=\tfrac{1}{\sqrt2}\bigl\lVert M^{C}\bigr\rVert_{F},\qquad \bigl\lVert M^{C}\bigr\rVert_{F}^{2}=\bigl\lVert M^{+}\bigr\rVert_{F}^{2}+\bigl\lVert M^{-}\bigr\rVert_{F}^{2}.
+\langle M\rangle_*^{1/2}=\tfrac{1}{\sqrt2}\bigl\langle M^{C}\\bigr\rangle_*^{1/2},\qquad \bigl\langle M^{C}\\bigr\rangle_*=\bigl\langle M^{+}\\bigr\rangle_*+\bigl\langle M^{-}\\bigr\rangle_*.
 $$
 
-*Proof.* Each homogeneous component occurs in two blocks of $M^{C}$, so $\lVert M^{C}\rVert_{F}^{2}=2(\lVert M^{(0)}\rVert_{F}^{2}+\lVert M^{(1)}\rVert_{F}^{2})$. The four real coefficient matrices split into these two complex pairs, so $\lVert M^{(0)}\rVert_{F}^{2}+\lVert M^{(1)}\rVert_{F}^{2}=\sum_{t}\lVert M_{t}\rVert_{F}^{2}=K_{\mathrm F}(M)=\lVert M\rVert_{F}^{2}$ by §*The Metric Splits*, and $\lVert M^{+}\rVert_{F}^{2}+\lVert M^{-}\rVert_{F}^{2}=2(\lVert M^{(0)}\rVert_{F}^{2}+\lVert M^{(1)}\rVert_{F}^{2})$ by the parallelogram identity for the entrywise squared modulus. The two displays follow.
+*Proof.* Each homogeneous component occurs in two blocks of $M^{C}$, so $\langle M^{C}\rangle_*=2(\langle M^{(0)}\rangle_*+\langle M^{(1)}\rangle_*)$. The four real coefficient matrices split into these two complex pairs, so $\langle M^{(0)}\rangle_*+\langle M^{(1)}\rangle_*=\sum_{t}\langle M_{t}\rangle_*=K_{\mathrm F}(M)=\langle M\rangle_*$ by §*The Metric Splits*, and $\langle M^{+}\rangle_*+\langle M^{-}\rangle_*=2(\langle M^{(0)}\rangle_*+\langle M^{(1)}\rangle_*)$ by the parallelogram identity for the entrywise squared modulus. The two displays follow.
 
 ### The Equivalence
 
 **Theorem (the source's equivalence).** For a real unknown $X$, the mixed problem over the algebra and the real mixed problem for the stack $(C_{A},C_{B})$ have the same solutions. The reduced biquaternion mixed solution is the real mixed solution of the stack.
 
-*Proof.* An arbitrary perturbation $E_{b}$ of $A_{b}$ over the algebra has arbitrary coefficient blocks, so its stack $C_{E_{b}}$ is an arbitrary real matrix, and conversely; the same holds for $G$ and $B$. For a real $X$ the stack commutes with the product, $C_{MX}=C_{M}X$, because the coefficient blocks of $MX$ are the products $M_{t}X$ of the coefficient blocks with the real matrix $X$; so the residual stack is $(C_{A}+C_{E})X-(C_{B}+C_{G})$ and the constraint is the real one. The objective is $\lVert[C_{E_{b}},C_{G}]\rVert_{F}^{2}$ by the stack theorem applied to the concatenation, which is the real objective. The two problems therefore have the same feasible tuples and the same objective, whence the same minimisers.
+*Proof.* An arbitrary perturbation $E_{b}$ of $A_{b}$ over the algebra has arbitrary coefficient blocks, so its stack $C_{E_{b}}$ is an arbitrary real matrix, and conversely; the same holds for $G$ and $B$. For a real $X$ the stack commutes with the product, $C_{MX}=C_{M}X$, because the coefficient blocks of $MX$ are the products $M_{t}X$ of the coefficient blocks with the real matrix $X$; so the residual stack is $(C_{A}+C_{E})X-(C_{B}+C_{G})$ and the constraint is the real one. The objective is $\langle[C_{E_{b}},C_{G}]\rangle_*$ by the stack theorem applied to the concatenation, which is the real objective. The two problems therefore have the same feasible tuples and the same objective, whence the same minimisers.
 
 The equivalence is the reason the algorithm of the next section, which is a real algorithm, solves the reduced biquaternion problem with a real unknown.
 
@@ -392,11 +392,11 @@ The source restricts to a real unknown, and the reduced biquaternion case adds a
 
 The following identities were checked by recomputation on random matrices of at most a few dozen entries, the deviations found at the level of the floating-point noise.
 
-- The multiplication decoupling $(MN)^{+}=M^{+}N^{+}$ and $(MN)^{-}=M^{-}N^{-}$, and the norm identity $K_{\mathrm F}(M)=\sum_{t}\lVert M_{t}\rVert_{F}^{2}=\tfrac12(\lVert M^{+}\rVert_{F}^{2}+\lVert M^{-}\rVert_{F}^{2})$.
+- The multiplication decoupling $(MN)^{+}=M^{+}N^{+}$ and $(MN)^{-}=M^{-}N^{-}$, and the norm identity $K_{\mathrm F}(M)=\sum_{t}\langle M_{t}\rangle_*=\tfrac12(\langle M^{+}\rangle_*+\langle M^{-}\rangle_*)$.
 - The adjoint identity $K_{\mathrm F}(AM,N)=K_{\mathrm F}(M,A^{\dagger}N)$ with $A^{\dagger}=\bar A^{\mathsf T}$, and the normal equations $A^{\dagger}(AX-B)=0$ for the least squares solution.
 - The rank lemma: the coefficient stack has full column rank if and only if both complex components have.
 - The real representation homomorphism $(MN)^{R}=M^{R}N^{R}$ and that its first block column is the coefficient stack.
-- The stack identity $K_{\mathrm F}(AX-B)=\lVert C_{A}X-C_{B}\rVert_{F}^{2}$ for a real $X$, and the nesting of the minima along the reduced biquaternion, the complex and the real unknown.
+- The stack identity $K_{\mathrm F}(AX-B)=\langle C_{A}X-C_{B}\rangle_*$ for a real $X$, and the nesting of the minima along the reduced biquaternion, the complex and the real unknown.
 - The factorisation minima: the reduced biquaternion total least squares minimum is half the sum of the two complex minima, and the real-unknown value is no smaller than the arbitrary-unknown value.
 - The zero-divisor example: with $B^{-}=0$ the least squares solution has $X^{-}=0$ and the value is the minimum over random probes.
 
@@ -404,7 +404,7 @@ The numerical ordering of the three methods was recomputed on random instances; 
 
 ## Summary
 
-The three approximation problems over the reduced biquaternion algebra — least squares, total least squares and the mixed problem interpolating between them — all reduce, through the idempotent decomposition $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, to two complex problems, because the multiplication is componentwise and the norm $K$ splits as half the sum of the two squared complex Frobenius norms. For an arbitrary reduced biquaternion unknown the two complex problems are independent, for a complex unknown they share one complex unknown, and for a real unknown they share one real unknown; the minimum is nondecreasing along that chain. The form $K$ is a real inner product whose adjoint is the bar-transpose, so the normal equations decouple, and the Moore–Penrose inverse is the pair of the two complex pseudoinverses. The real unknown is the source's case: it is a classical real problem on the coefficient stack, whose algorithm is a Householder reduction of the exact block followed by a singular value decomposition of the reduced block, and whose existence and uniqueness hold exactly when the two spectral gaps separate and the block $V_{22}$ is nonsingular in each component. The coefficient stack and the real representation are the real readings of the matrix, and the complex representation $M^{C}$ is the complex one, with the two homogeneous components of $M$ in the hyperbolic unit as its blocks and the pair $(M^{+},M^{-})$ as its diagonalisation, the norm ladder being $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}=\tfrac{1}{\sqrt2}\lVert M^{C}\rVert_{F}$. The complex field is the degenerate case of the construction, one right-hand side removes the matrix structure of the unknown, and the solution, unlike its counterparts in the division-algebra layers, may be a zero divisor of the algebra of matrices.
+The three approximation problems over the reduced biquaternion algebra — least squares, total least squares and the mixed problem interpolating between them — all reduce, through the idempotent decomposition $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, to two complex problems, because the multiplication is componentwise and the norm $K$ splits as half the sum of the two squared complex Frobenius norms. For an arbitrary reduced biquaternion unknown the two complex problems are independent, for a complex unknown they share one complex unknown, and for a real unknown they share one real unknown; the minimum is nondecreasing along that chain. The form $K$ is a real inner product whose adjoint is the bar-transpose, so the normal equations decouple, and the Moore–Penrose inverse is the pair of the two complex pseudoinverses. The real unknown is the source's case: it is a classical real problem on the coefficient stack, whose algorithm is a Householder reduction of the exact block followed by a singular value decomposition of the reduced block, and whose existence and uniqueness hold exactly when the two spectral gaps separate and the block $V_{22}$ is nonsingular in each component. The coefficient stack and the real representation are the real readings of the matrix, and the complex representation $M^{C}$ is the complex one, with the two homogeneous components of $M$ in the hyperbolic unit as its blocks and the pair $(M^{+},M^{-})$ as its diagonalisation, the norm ladder being $\langle M\rangle_*^{1/2}=\tfrac12\langle M^{R}\rangle_*^{1/2}=\tfrac{1}{\sqrt2}\langle M^{C}\rangle_*^{1/2}$. The complex field is the degenerate case of the construction, one right-hand side removes the matrix structure of the unknown, and the solution, unlike its counterparts in the division-algebra layers, may be a zero divisor of the algebra of matrices.
 
 ## Summary of Notation
 

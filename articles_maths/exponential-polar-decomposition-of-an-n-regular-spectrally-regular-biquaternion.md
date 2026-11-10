@@ -38,7 +38,7 @@ The article assumes *The Polar Decomposition of an N-Regular Biquaternion* for t
 $$
 N=Q_t^2+Q_x^2+Q_y^2+Q_z^2,\qquad
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad
-\lVert\tilde Q\rVert_E^2=|Q_t|^2+|Q_x|^2+|Q_y|^2+|Q_z|^2.
+\lVert\tilde Q\rVert^2=|Q_t|^2+|Q_x|^2+|Q_y|^2+|Q_z|^2.
 $$
 
 On the sector $N\neq0$ and $B^2\neq0$. Here $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$, $\lVert\cdot\rVert$ is the Euclidean norm of a real three-vector, $\operatorname{Im}$ acts componentwise, and $(j,k,l)$ is a cyclic permutation of $(x,y,z)$.
@@ -68,11 +68,11 @@ $$
 $$
 
 $$
-\boxed{\;\cosh\theta_{\mathrm{rpd}}=\frac{\lVert\tilde Q\rVert_E^2}{|N|},\qquad \theta_{\mathrm{rpd}}=\operatorname{arcosh}\frac{\lVert\tilde Q\rVert_E^2}{|N|}\;}
+\boxed{\;\cosh\theta_{\mathrm{rpd}}=\frac{\lVert\tilde Q\rVert^2}{|N|},\qquad \theta_{\mathrm{rpd}}=\operatorname{arcosh}\frac{\lVert\tilde Q\rVert^2}{|N|}\;}
 $$
 
 $$
-\boxed{\;C=\sqrt{\frac{\lVert\tilde Q\rVert_E^2+|N|}{2}},\qquad S=\sqrt{\frac{\lVert\tilde Q\rVert_E^2-|N|}{2}},\qquad \cosh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{C}{\sqrt{|N|}},\qquad \sinh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{S}{\sqrt{|N|}}\;}
+\boxed{\;C=\sqrt{\frac{\lVert\tilde Q\rVert^2+|N|}{2}},\qquad S=\sqrt{\frac{\lVert\tilde Q\rVert^2-|N|}{2}},\qquad \cosh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{C}{\sqrt{|N|}},\qquad \sinh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{S}{\sqrt{|N|}}\;}
 $$
 
 $$
@@ -81,7 +81,7 @@ $$
 
 $$
 \boxed{\;\tilde U_{\mathrm b}=\frac{C\,e_t+iS\,\vec u_{\mathrm b}}{\sqrt{|N|}}
-=\frac{\sqrt{\lVert\tilde Q\rVert_E^2+|N|}\;e_t+i\sqrt{\lVert\tilde Q\rVert_E^2-|N|}\;\vec u_{\mathrm b}}{\sqrt{2|N|}}\;}
+=\frac{\sqrt{\lVert\tilde Q\rVert^2+|N|}\;e_t+i\sqrt{\lVert\tilde Q\rVert^2-|N|}\;\vec u_{\mathrm b}}{\sqrt{2|N|}}\;}
 $$
 
 $$
@@ -110,7 +110,7 @@ $$
 =\bigl(|Q_t|^2+|\vec Q|^2\bigr)e_t+\bar Q_t\vec Q-Q_t\bar{\vec Q}-\vec Q\times\bar{\vec Q}.
 $$
 
-The scalar part is $\lVert\tilde Q\rVert_E^2=|Q_t|^2+|\vec Q|^2$. For pure quaternions $u,v$ one has $uv=-u\cdot v+u\times v$, with the bilinear dot product. Hence, componentwise,
+The scalar part is $\lVert\tilde Q\rVert^2=|Q_t|^2+|\vec Q|^2$. For pure quaternions $u,v$ one has $uv=-u\cdot v+u\times v$, with the bilinear dot product. Hence, componentwise,
 
 $$
 \bar Q_t\vec Q-Q_t\bar{\vec Q}=2i\operatorname{Im}\bigl(\bar Q_t\vec Q\bigr),
@@ -121,7 +121,7 @@ $$
 and therefore
 
 $$
-\tilde Q\tilde Q^*=\lVert\tilde Q\rVert_E^2\,e_t+i|N|\vec a,
+\tilde Q\tilde Q^*=\lVert\tilde Q\rVert^2\,e_t+i|N|\vec a,
 $$
 
 with $\vec a$ the vector of the box.
@@ -130,7 +130,7 @@ with $\vec a$ the vector of the box.
 
 $$
 \tilde U\tilde U^*=\frac{\tilde Q\tilde Q^*}{|\Rho|^2}
-=\frac{\lVert\tilde Q\rVert_E^2}{|N|}\,e_t+i\vec a.
+=\frac{\lVert\tilde Q\rVert^2}{|N|}\,e_t+i\vec a.
 $$
 
 The word gives $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ $*$-unitary, hence
@@ -145,7 +145,7 @@ $$
 \tilde U_{\mathrm b}^2=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}.
 $$
 
-Comparing the scalar parts gives $\cosh\theta_{\mathrm{rpd}}=\lVert\tilde Q\rVert_E^2/|N|$ and $\theta_{\mathrm{rpd}}=\operatorname{arcosh}(\lVert\tilde Q\rVert_E^2/|N|)$; the argument is real because $\lVert\tilde Q\rVert_E^2\ge|N|$ by Cauchy–Schwarz. Comparing the vector parts gives $\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}=\vec a$, hence $\vec u_{\mathrm b}=\vec a/\lVert\vec a\rVert$ when $\theta_{\mathrm{rpd}}>0$. The box for $\tilde U_{\mathrm b}$ follows from $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{(\lVert\tilde Q\rVert_E^2+|N|)/(2|N|)}$ and $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{(\lVert\tilde Q\rVert_E^2-|N|)/(2|N|)}$.
+Comparing the scalar parts gives $\cosh\theta_{\mathrm{rpd}}=\lVert\tilde Q\rVert^2/|N|$ and $\theta_{\mathrm{rpd}}=\operatorname{arcosh}(\lVert\tilde Q\rVert^2/|N|)$; the argument is real because $\lVert\tilde Q\rVert^2\ge|N|$ by Cauchy–Schwarz. Comparing the vector parts gives $\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}=\vec a$, hence $\vec u_{\mathrm b}=\vec a/\lVert\vec a\rVert$ when $\theta_{\mathrm{rpd}}>0$. The box for $\tilde U_{\mathrm b}$ follows from $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{(\lVert\tilde Q\rVert^2+|N|)/(2|N|)}$ and $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{(\lVert\tilde Q\rVert^2-|N|)/(2|N|)}$.
 
 **The rotor.** The boost is Hermitian of norm one, so $\tilde U_{\mathrm b}^{-1}=\tilde U_{\mathrm b}^{\natural}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t-i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$. Therefore
 
@@ -174,7 +174,7 @@ $$
 \tilde Q=\Bigl(1-\frac{i}{2}\Bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z,
 $$
 
-one has $N=1$ and $\lVert\tilde Q\rVert_E^2=3$, hence $r=1$, $\alpha=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\vec a=2\sqrt2\,\vec e_x$ and $\vec u_{\mathrm b}=\vec e_x$. The boxes give
+one has $N=1$ and $\lVert\tilde Q\rVert^2=3$, hence $r=1$, $\alpha=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\vec a=2\sqrt2\,\vec e_x$ and $\vec u_{\mathrm b}=\vec e_x$. The boxes give
 
 $$
 \tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x,
@@ -910,7 +910,7 @@ The contrast is the exact content of the difference between the two articles. Th
 | $\tilde Q_{\log}$ | the formal exponent |
 | $\mathsf M(\tilde Q)$ | the matrix $Q_tI-iQ_x\sigma_x-iQ_y\sigma_y-iQ_z\sigma_z$ |
 | $c_{\mathrm b},s_{\mathrm b},c_{\mathrm r},s_{\mathrm r}$ | the half-angle cosines and sines |
-| $\lVert\tilde Q\rVert_E^2=|Q_t|^2+|\vec Q|^2$ | the Euclidean norm squared of the coordinates |
+| $\lVert\tilde Q\rVert^2=|Q_t|^2+|\vec Q|^2$ | the Euclidean norm squared of the coordinates |
 | $\vec a$ | the vector $\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ |
 | $C,S$ | the half-angle numerators, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=C/\sqrt{|N|}$, $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=S/\sqrt{|N|}$ |
 | $\mathrm{Vect}\tilde X$ | the vector part of $\tilde X$ |

@@ -36,7 +36,7 @@ $$
 L_AL_C=L_{AC},\quad R_BR_D=R_{BD},\quad L_I=R_I=I .
 $$
 
-*Proof.* For a rank-one $\zeta\otimes\bar\eta$ one has $\|\zeta\otimes\bar\eta\|_{\mathrm{HS}}=\|\zeta\|\|\eta\|$ and $L_A(\zeta\otimes\bar\eta)=A\zeta\otimes\bar\eta$, $R_B(\zeta\otimes\bar\eta)=\zeta\otimes\bar{B^*\eta}$; hence $\|L_A(\zeta\otimes\bar\eta)\|_{\mathrm{HS}}=\|A\zeta\|\|\eta\|\le\|A\|\|\zeta\|\|\eta\|=\|A\|\|\zeta\otimes\bar\eta\|_{\mathrm{HS}}$. Since the rank-one operators span a dense subspace of $S_2(H)$, $L_A$ extends with norm at most $\|A\|$, and the value $\|A\|$ is attained by choosing $\eta$ and $\zeta$ of norm one with $\|A\zeta\|=\|A\|$. Products and the identity follow from associativity, and faithfulness from the density of the rank-one operators.
+*Proof.* For a rank-one $\zeta\otimes\bar\eta$ one has $\langle \zeta\otimes\bar\eta\rangle_*^{1/2}=\|\zeta\|\|\eta\|$ and $L_A(\zeta\otimes\bar\eta)=A\zeta\otimes\bar\eta$, $R_B(\zeta\otimes\bar\eta)=\zeta\otimes\bar{B^*\eta}$; hence $\langle L_A(\zeta\otimes\bar\eta)\rangle_*^{1/2}=\|A\zeta\|\|\eta\|\le\|A\|\|\zeta\|\|\eta\|=\|A\|\langle \zeta\otimes\bar\eta\rangle_*^{1/2}$. Since the rank-one operators span a dense subspace of $S_2(H)$, $L_A$ extends with norm at most $\|A\|$, and the value $\|A\|$ is attained by choosing $\eta$ and $\zeta$ of norm one with $\|A\zeta\|=\|A\|$. Products and the identity follow from associativity, and faithfulness from the density of the rank-one operators.
 
 **Proposition (the commutant relation).** The two one-sided families commute:
 

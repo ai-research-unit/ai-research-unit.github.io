@@ -170,7 +170,7 @@ with $\tilde Q_0$ a partial isometry satisfying $\tilde Q_0^{*}\tilde Q_0=\tilde
 $$
 \tilde Q=\sigma\tilde Q_0,
 \qquad
-\sigma=\lVert\tilde Q\rVert_{\mathrm F}>0,
+\sigma=\langle\mathsf M_2(\tilde Q)\rangle_*^{1/2}>0,
 \qquad
 \tilde Q_H=\sigma\tilde\Pi_{\mathrm f},
 \qquad
@@ -206,7 +206,7 @@ The generalized pair reads the null field as
 $$
 \tilde F=\sigma\tilde Q_0,
 \qquad
-\sigma=\lVert\tilde F\rVert_{\mathrm F},
+\sigma=\langle\mathsf M_2(\tilde F)\rangle_*^{1/2},
 \qquad
 \tilde Q_H=\sigma\tilde\Pi_{\mathrm f},
 \qquad
@@ -284,7 +284,7 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\mathcal Z=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone |
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^2=0$, $\tilde\Upsilon\neq0$ |
-| $\sigma=\lVert\tilde Q\rVert_{\mathrm F}$ | the Frobenius scale of a nonzero null element |
+| $\sigma=\langle\mathsf M_2(\tilde Q)\rangle_*^{1/2}$ | the matrix scale of a nonzero null element, the trace root; the element bar is smaller by $\sqrt2$ |
 | $\tilde\Pi_{\mathrm i},\tilde\Pi_{\mathrm f}$ | the initial and final projections of the partial isometry |
 | $\mathbb{B}_{\Phi}$ | the material sector, $\tilde R_\Phi=i r'_t\,e_t+\vec r$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |

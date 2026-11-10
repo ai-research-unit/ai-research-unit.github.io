@@ -161,9 +161,9 @@ The diagonal entries $a_k$ are the singular values of $g$, and they are unique u
 
 ### The Geodesic Polar Coordinates
 
-**Theorem.** On the symmetric space $GL_5/U(5)\cong\mathcal{P}$, the $KAK$ decomposition gives the geodesic polar coordinates: every $P\in\mathcal{P}$ is $P=K e^D K^*$ with $K$ $*$-unitary and $D$ real diagonal; the geodesic from $I$ to $P$ is $K e^{tD}K^*$, and the distance is $\|D\|_F$.
+**Theorem.** On the symmetric space $GL_5/U(5)\cong\mathcal{P}$, the $KAK$ decomposition gives the geodesic polar coordinates: every $P\in\mathcal{P}$ is $P=K e^D K^*$ with $K$ $*$-unitary and $D$ real diagonal; the geodesic from $I$ to $P$ is $K e^{tD}K^*$, and the distance is $\langle D\rangle_*^{1/2}$.
 
-**Proof.** The spectral theorem for $P$ gives $P=K e^D K^*$ with $D$ the diagonal of the logarithms; the geodesic $t\mapsto K e^{tD}K^*$ starts at $I$ and ends at $P$; its length is $\|D\|_F$ for the trace metric.
+**Proof.** The spectral theorem for $P$ gives $P=K e^D K^*$ with $D$ the diagonal of the logarithms; the geodesic $t\mapsto K e^{tD}K^*$ starts at $I$ and ends at $P$; its length is $\langle D\rangle_*^{1/2}$ for the trace metric.
 
 **Corollary.** The singular values of $g$ are the exponentials of the diagonal entries of $D$; the distance from $I$ to $P$ is the Euclidean norm of the logarithms of the singular values.
 
@@ -263,7 +263,7 @@ with the exponential derivatives of *Analysis on $M_5$*. At $(0,0)$ the derivati
 
 ### The Geometry
 
-**Theorem.** The exponential-polar decomposition gives the geodesic polar coordinates on the symmetric space $GL_5/U(5)$: the geodesic from $I$ to $e^S$ is $e^{tS}$, and the $*$-unitary part is the angular coordinate. The distance is $\|S\|_F$.
+**Theorem.** The exponential-polar decomposition gives the geodesic polar coordinates on the symmetric space $GL_5/U(5)$: the geodesic from $I$ to $e^S$ is $e^{tS}$, and the $*$-unitary part is the angular coordinate. The distance is $\langle S\rangle_*^{1/2}$.
 
 **Proof.** The positive cone is the symmetric space; the geodesic from $I$ to $e^S$ is $e^{tS}$; the distance is the Frobenius norm of $S$.
 

@@ -59,7 +59,7 @@ It is the real orthogonal group of the dimension of $V$.
 
 **Proof.** The restriction is the standard positive definite form of $\mathbb{R}^{n}$, whose automorphism group is $O(n)$ of real dimension $n(n-1)/2$, giving $1$, $15$ and $6$ for $n=2,6,4$. The complexes of the centre and the vector subspace are preserved by the complex structure $i$, and the complex-linear automorphisms of $\lvert Q\rvert^{2}$ on $\mathbb{C}^{1}$ and $\mathbb{C}^{3}$ are $\mathrm{U}(1)$ and $\mathrm{U}(3)$; on the four real subspaces a complex-linear map need not preserve the real subspace, so no complex-linear subgroup is singled out.
 
-The definite norm of the algebra is $\lVert\tilde Q\rVert_E$, of *The Euclidean Topology of the Biquaternion Algebra*, and the restriction of the form is the square of the restriction of the norm; the rows are therefore the remarkable definite subspaces of the ambient space, of dimensions $2$, $6$ and $4$.
+The definite norm of the algebra is $\lVert\tilde Q\rVert$, of *The Euclidean Topology of the Biquaternion Algebra*, and the restriction of the form is the square of the restriction of the norm; the rows are therefore the remarkable definite subspaces of the ambient space, of dimensions $2$, $6$ and $4$.
 
 **Remark (the ambient $*$-unitary group and the restriction groups).** The complex-linear automorphism group of the whole form is the $*$-unitary group $\mathrm{U}(4)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, of real dimension $16$. The real-linear automorphism group of the realified form is the larger $O(8)$, and the complex-linear automorphisms of a subspace restriction need not extend to the algebra, nor an automorphism of the algebra preserve the subspace; the groups of the table are the largest groups preserving the restriction.
 
@@ -92,7 +92,7 @@ On the remarkable real subspaces the general plain sesquilinear form carries the
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the general plain sesquilinear form |
 | $\mathrm{I}_2,\mathrm{I}_6,\mathrm{I}_4$ | the restriction matrices on the centre, the vector subspace and each four-dimensional subspace |
 | $(2,0),(6,0),(4,0)$ | the signatures of the restrictions |
-| $\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the definite norm the form defines |
+| $\lVert\tilde Q\rVert^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the definite norm the form defines |
 | $O(2),O(6),O(4)$ | the real-linear automorphism groups of the restrictions |
 | $\mathrm{U}(1),\mathrm{U}(3)$ | the complex-linear automorphism groups of the centre and the vector subspace |
 | $\mathrm{U}(4)$ | the complex-linear automorphism group of the form on the algebra |

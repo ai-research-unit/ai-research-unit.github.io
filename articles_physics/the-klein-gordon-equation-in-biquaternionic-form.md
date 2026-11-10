@@ -5,14 +5,15 @@
 The Klein–Gordon equation for a relativistic field of rest mass $m$ is
 
 $$
-\left(\Box - k_m^{2}\right)\xi = 0,
+\left(\Box - k_m^{2}\right)Ξ_\mu = 0,
+\qquad \mu\in\{t,x,y,z\},
 \qquad
 \Box = + \partial^2/\partial R_t^2 + \Delta,
 $$
 
-the wave equation for a relativistic scalar field. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - k_m^{2}\right)\tilde{Ξ} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+the wave equation for a relativistic scalar field, written once for each of the four coefficients of the biquaternion field $\tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z$. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**. The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded its biquaternion form in one line, $\left(\tilde{\nabla}\tilde{\nabla}^{\natural} - k_m^{2}\right)\tilde{Ξ} = 0$, as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\xi$ and its complex conjugate $\xi^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
+Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $Ξ_\mu$ and its complex conjugate $Ξ_\mu^*$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.
 
 The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$. The parent article, *The Schrödinger Equation in Biquaternionic Form*, showed that the first-order-in-time Schrödinger equation is organized by the **scalar imaginary** $i$: the Hermitian observable $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ generates a flow whose generator $-\frac{k_m\,i\,H}{m\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$, and the same central $i$ supplies the complex structure of the state module. This article asks the corresponding question for the second-order equation: **does the second-order structure fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally, or does it require a doubling that the split does not supply?** The answer worked out below is that it requires a doubling, and that the doubling is *not* $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the sector split gives two $i$-related copies of the same equation, not the particle–antiparticle pair. The closing sections treat the non-relativistic limit. The rest-mass phase $\exp(-i k_m r'_t)$ is divided out exactly, and the limit itself is then the leading term of an expansion of the dispersion relation about the rest point, $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\ldots$.
 
@@ -25,7 +26,7 @@ Write the Klein–Gordon equation in biquaternion form as
 $$
 \boxed{\;
 \left(\tilde{\nabla}\tilde{\nabla}^{\natural} - k_m^{2}\right)\tilde{Ξ} = 0,
-\qquad \tilde{Ξ} = Ξ_0 e_t + Ξ_1 \vec e_x + Ξ_2 \vec e_y + Ξ_3 \vec e_z\;}.
+\qquad \tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z\;}.
 $$
 
 The operator $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ is a **central scalar** differential operator with real coefficients. Because $\Box$ is central and scalar, it acts on a biquaternion-valued field component by component:
@@ -34,7 +35,16 @@ $$
 \Box\tilde{Ξ} = \sum_{\mu\in\{t,x,y,z\}}(\BoxΞ_\mu)\,e_\mu .
 $$
 
-There is no term that mixes the four coefficients. Consequently the biquaternion Klein–Gordon equation on $\mathbb{B}$-valued $\tilde{Ξ}$ is **four decoupled copies** of the complex scalar Klein–Gordon equation, one per coefficient. Nothing in the algebra couples them. If the intended field is a single Lorentz scalar, the right host is the centre $\mathbb{B}_{C}$, and then the biquaternion form and the ordinary complex form say the same thing.
+There is no term that mixes the four coefficients, so the biquaternion equation is the four scalar equations, one per direction:
+
+$$
+\left(\Box - k_m^{2}\right)Ξ_t = 0,\qquad
+\left(\Box - k_m^{2}\right)Ξ_x = 0,\qquad
+\left(\Box - k_m^{2}\right)Ξ_y = 0,\qquad
+\left(\Box - k_m^{2}\right)Ξ_z = 0 .
+$$
+
+The equivalence runs both ways: the four hold if and only if the biquaternion one holds, and any four complex scalar solutions assemble into a $\mathbb{B}$-valued one. Consequently the biquaternion Klein–Gordon equation on $\mathbb{B}$-valued $\tilde{Ξ}$ is **four decoupled copies** of the complex scalar Klein–Gordon equation, one per coefficient. If the intended field is a single Lorentz scalar, the right host is the centre $\mathbb{B}_{C}$, and then the biquaternion form and the ordinary complex form say the same thing.
 
 The operator is nevertheless the natural object to name, because it is the composition of $\tilde{\nabla}$ with its quaternion conjugate,
 
@@ -42,7 +52,7 @@ $$
 \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box ,
 $$
 
-which is a genuine algebraic statement: the d'Alembertian is the **biquaternion norm** of the gradient biquaternion, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
+The mixed products cancel in pairs. For two spatial directions the two orderings contribute $-\vec e_\mu\vec e_\nu$ and $-\vec e_\nu\vec e_\mu = +\vec e_\mu\vec e_\nu$, which sum to zero. For one temporal and one spatial direction they contribute $-\vec e_\nu$ and $+\vec e_\nu$, which also sum to zero. The four diagonal products return $+e_t$. That is a genuine algebraic statement: the d'Alembertian is the **biquaternion norm** of the gradient biquaternion, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.
 
 ## The Lanczos Family and the Spin-0 Member
 
@@ -96,7 +106,7 @@ $$
 \left(\Box - k_m^{2}\right)\tilde{Ξ}^{*} = 0 ,
 $$
 
-because $\Box$ is real and therefore commutes with $\bar{\cdot}$. For the complex scalar field this is the familiar statement that $\xi$ and $\xi^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
+because $\Box$ is real and therefore commutes with $\bar{\cdot}$. For the complex scalar field this is the familiar statement that $Ξ$ and $Ξ^*$ are independent data; the general solution is a superposition of the two frequency branches, and a complete description needs both. This conjugacy, not the sector decomposition, is what "second order" buys.
 
 It is worth separating three operations that are easy to conflate at this point, because the rest of the article turns on keeping them apart:
 
@@ -206,7 +216,7 @@ are the two frequency branches. They are the same dispersion relation with oppos
 
 ## The Conserved Current and the Two Defects
 
-The Klein–Gordon equation carries a conserved four-current. For a complex scalar field $\tilde{Ξ}=\xi\,e_t\in\mathbb{B}_{C}$, define
+The Klein–Gordon equation carries a conserved four-current. For a complex scalar field $\tilde{Ξ}=Ξ e_t\in\mathbb{B}_{C}$, define
 
 $$
 \tilde{J}_{\Phi} = ic\,\rho\,e_t + \vec j\in\mathbb{B}_{\Phi},
@@ -234,7 +244,7 @@ $$
 
 while for the negative-frequency branch, that is the same expression with $\omega<0$, the same computation gives $\rho<0$ with the same magnitude. The two branches therefore carry charges of opposite sign, and $\rho$ cannot be read as a probability density. This is the negative-probability problem, and it is a property of the conserved current itself, not of the notation: every step above was made from the equation and the definitions.
 
-The second defect is that the equation is not a single-particle equation. The reason is the same one, stated more broadly: a one-particle interpretation requires a positive conserved probability and a stable notion of "the particle at a place." The Klein–Gordon field provides neither. The resolution in standard physics is to stop reading $\xi$ as a wave function and read it as a **field operator**, with $\xi$ and $\xi^*$ becoming the operators that annihilate and create the particle and the antiparticle; the conserved charge becomes the difference of particle number and antiparticle number, which may have either sign, and the negative-frequency branch is reinterpreted as the antiparticle. The biquaternion form of the equation does not change this. In particular, the current sits in $\mathbb{B}_{\Phi}$ and is conserved, but the sign of its scalar component is not fixed by membership in $\mathbb{B}_{\Phi}$.
+The second defect is that the equation is not a single-particle equation. The reason is the same one, stated more broadly: a one-particle interpretation requires a positive conserved probability and a stable notion of "the particle at a place." The Klein–Gordon field provides neither. The resolution in standard physics is to stop reading $Ξ$ as a wave function and read it as a **field operator**, with $Ξ$ and $Ξ^*$ becoming the operators that annihilate and create the particle and the antiparticle; the conserved charge becomes the difference of particle number and antiparticle number, which may have either sign, and the negative-frequency branch is reinterpreted as the antiparticle. The biquaternion form of the equation does not change this. In particular, the current sits in $\mathbb{B}_{\Phi}$ and is conserved, but the sign of its scalar component is not fixed by membership in $\mathbb{B}_{\Phi}$.
 
 ## Does the Second-Order Structure Fit $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$?
 
@@ -270,20 +280,20 @@ So the verdict on the framework's own question is the following. The second-orde
 
 ## The Rest-Mass Phase
 
-The field has a lowest frequency, and it is the rest frequency. Write $k_m = mc/\hbar$, $s = r'_t = c\,t'$, and
+The field has a lowest frequency, and it is the rest frequency. Write $k_m = mc/\hbar$, $r'_t = c\,t'$, and
 
 $$
-f = \exp\left(-i k_m s\right) = \exp\left(-i\,\omega_m t'\right),
+f = \exp\left(-i k_m r'_t\right) = \exp\left(-i\,\omega_m t'\right),
 \qquad
 \omega_m = \frac{mc^{2}}{\hbar} = c\,k_m .
 $$
 
 At $\vec k_\Phi = 0$ the dispersion relation $k_{t}^{\prime\,2} = k_\Phi^{2}+k_m^{2}$ gives $k_{t}^{\prime} = \pm k_m$, and $\lvert k_{t}^{\prime}\rvert\ge k_m$ on every branch. So $f$ is the zero-momentum solution and the bottom of the frequency spectrum: no solution oscillates more slowly, and every positive-frequency solution carries this factor.
 
-Dividing it out is exact. Since $\partial_s f = -i k_m f$,
+Dividing it out is exact. Since $\frac{\partial f}{\partial r'_t} = -i k_m f$,
 
 $$
-\partial_s^{2}\left(f\chi\right) = f\left(\frac{\partial^{2}\chi}{\partial s^{2}} - 2 i k_m\,\frac{\partial\chi}{\partial s} - k_m^{2}\chi\right),
+\frac{\partial^{2}}{\partial {r'_{t}}^{2}}\left(f\chi\right) = f\left(\frac{\partial^{2}\chi}{\partial {r'_{t}}^{2}} - 2 i k_m\,\frac{\partial\chi}{\partial r'_t} - k_m^{2}\chi\right),
 $$
 
 and the last term is exactly the mass term of $\Box - k_m^{2}$. The two cancel, and
@@ -291,14 +301,14 @@ and the last term is exactly the mass term of $\Box - k_m^{2}$. The two cancel, 
 $$
 \boxed{\;
 \left(\Box-k_m^{2}\right)\left(f\chi\right)
-= f\left(-\frac{\partial^{2}}{\partial s^{2}} + 2 i k_m\,\frac{\partial}{\partial s} + \Delta\right)\chi\;}.
+= f\left(-\frac{\partial^{2}}{\partial {r'_{t}}^{2}} + 2 i k_m\,\frac{\partial}{\partial r'_t} + \Delta\right)\chi\;}.
 $$
 
-The cancellation is identical, not asymptotic, and no solution is lost: $f$ has unit modulus, so the substitution $\tilde{Ξ}\mapsto\chi = f^{-1}\tilde{Ξ}$ is invertible. What it costs is order, not accuracy — the second derivative in $s$ is still there, and $k_m$ has moved from a constant term to a coefficient on the first derivative.
+The cancellation is identical, not asymptotic, and no solution is lost: $f$ has unit modulus, so the substitution $\tilde{Ξ}\mapsto\chi = f^{-1}\tilde{Ξ}$ is invertible. What it costs is order, not accuracy — the second derivative in $r'_t$ is still there, and $k_m$ has moved from a constant term to a coefficient on the first derivative.
 
 Two properties of $f$ matter later. It is a central scalar, so it commutes with the quaternion units, acts on the four coefficients alike, and preserves each sector: $f\chi_{\Psi}\in\mathbb{B}_{\Psi}$ and $f\chi_{\Phi}\in\mathbb{B}_{\Phi}$. And $f^{*} = f^{-1}$, so the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is unchanged. It is therefore not multiplication by $i$, which exchanges the sectors, and not complex conjugation, which reverses the frequency.
 
-The one quantity that does change is the conserved density, because the density is quadratic and carries a derivative. With $\tilde{Ξ} = f\chi$, $\partial_s(f\chi) = f(\partial_s\chi - ik_m\chi)$, so
+The one quantity that does change is the conserved density, because the density is quadratic and carries a derivative. With $\tilde{Ξ} = f\chi$, $\frac{\partial}{\partial r'_t}(f\chi) = f\left(\frac{\partial\chi}{\partial r'_t} - ik_m\chi\right)$, so
 
 $$
 \rho\left[f\chi\right] = \rho\left[\chi\right] + \lvert\chi\rvert^{2}.
@@ -343,21 +353,21 @@ $$
 = \Omega\chi ,
 $$
 
-and the plane waves are complete, so the first-order relation $\partial_s\chi=-i\Omega\chi$ of the wavenumbers article holds between operators:
+and the plane waves are complete, so the first-order relation $\frac{\partial\chi}{\partial r'_t}=-i\Omega\chi$ of the wavenumbers article holds between operators:
 
 $$
-i\,\frac{\partial\chi}{\partial s} = -\frac{1}{2k_m}\,\Delta\chi .
+i\,\frac{\partial\chi}{\partial r'_t} = -\frac{1}{2k_m}\,\Delta\chi .
 $$
 
 The two sides were compared on the case of §*Plane Waves and the Dispersion Relation* and match to machine precision, at the one-term accuracy of the expansion, which is $1.5\times10^{-3}$ there.
 
-**Why the order is one.** The relation is first order in $s$ because its symbol is the truncated $\Omega$ and $\Omega$ is linear in the excess. The Klein–Gordon equation is second order because its symbol is $k_{t}^{\prime\,2}$, which the split writes as $(k_m+\Omega)^{2}$ and which contains $\Omega^{2}$. Dropping the $\Omega^{2}$ term of the dispersion relation and lowering the order of the equation are one operation: the order of the equation is the degree of its symbol in the excess.
+**Why the order is one.** The relation is first order in $r'_t$ because its symbol is the truncated $\Omega$ and $\Omega$ is linear in the excess. The Klein–Gordon equation is second order because its symbol is $k_{t}^{\prime\,2}$, which the split writes as $(k_m+\Omega)^{2}$ and which contains $\Omega^{2}$. Dropping the $\Omega^{2}$ term of the dispersion relation and lowering the order of the equation are one operation: the order of the equation is the degree of its symbol in the excess.
 
-**In the material time.** Because $\frac{mc^{2}i}{k_m} = i\hbar c$, the same equation reads $\frac{mc^{2}i}{k_m}\,\partial_s\chi = \tilde R_\Psi\,\chi$, with $\tilde R_\Psi = -\frac{\hbar^{2}}{2m}\Delta\in\mathbb{B}_{\Psi}$. The observable is informational and the central $i$ that carries it into the material sector sits in the coefficient. That is the parent article's structure, reached here from the Klein–Gordon spectrum rather than assumed.
+**In the material time.** Because $\frac{mc^{2}i}{k_m} = i\hbar c$, the same equation reads $\frac{mc^{2}i}{k_m}\,\frac{\partial\chi}{\partial r'_t} = \tilde R_\Psi\,\chi$, with $\tilde R_\Psi = -\frac{\hbar^{2}}{2m}\Delta\in\mathbb{B}_{\Psi}$. The observable is informational and the central $i$ that carries it into the material sector sits in the coefficient. That is the parent article's structure, reached here from the Klein–Gordon spectrum rather than assumed.
 
-**What is left out.** The negative branch has $\Omega\approx-2k_m$, so no ratio in it is small and the expansion does not apply; that branch is reached by factoring $\exp(+ik_ms)$ instead, and antiparticles are not treated here. And the field is a scalar, so the limit lands on the scalar Schrödinger equation, the spin-$0$ case of the parent article's spinor equation, whose module and flows are untouched. The scalar sector is consistent with the parent, not identical to it.
+**What is left out.** The negative branch has $\Omega\approx-2k_m$, so no ratio in it is small and the expansion does not apply; that branch is reached by factoring $\exp(+ik_m r'_t)$ instead, and antiparticles are not treated here. And the field is a scalar, so the limit lands on the scalar Schrödinger equation, the spin-$0$ case of the parent article's spinor equation, whose module and flows are untouched. The scalar sector is consistent with the parent, not identical to it.
 
-**The equation.** In seconds, with $s = c\,t'$ and $\frac{\hbar c}{2k_m} = \frac{\hbar^{2}}{2m}$, the relation is the free Schrödinger equation with the mass that entered the Klein–Gordon equation:
+**The equation.** With $r'_t = c\,t'$ and $\frac{\hbar c}{2k_m} = \frac{\hbar^{2}}{2m}$, the relation is the free Schrödinger equation with the mass that entered the Klein–Gordon equation:
 
 $$
 \boxed{\;
@@ -407,7 +417,7 @@ with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and sca
 
 Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2k_\Phi^{2} + c^2k_m^{2}$, that is $k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2}$, which is the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\hbar^{2}= -m^{2}c^{2}/\hbar^{2}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
-The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i k_m s)$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\partial_{t'}\chi = -\frac{\hbar^{2}}{2m}\Delta\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
+The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i k_m r'_t)$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\frac{\partial\chi}{\partial t'} = -\frac{\hbar^{2}}{2m}\Delta\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
 
 One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\vec F$ the second-order operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\vec F,\vec F)$ and $2i(\vec F,\nabla)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
 
@@ -426,7 +436,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
-| $\tilde{Ξ}$ | Biquaternion-valued Klein–Gordon field |
+| $\tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z$ | Biquaternion-valued Klein–Gordon field; each coefficient $Ξ_\mu$ complex |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde K_{\Phi} = i\,k_{t}^{\prime}e_t + \vec k_\Phi = \tilde P_{\Phi}/\hbar$, $k_{t}^{\prime}=\omega/c$, $k_\Phi=\lvert\vec k_\Phi\rvert$ | Four-wavevector biquaternion and its two coordinates |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
@@ -435,9 +445,9 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}) = 0$ | Conservation law |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the scalar pairing |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; the coefficient $k_m=mc/\hbar$ is its reciprocal |
-| $f = \exp(-i k_m s)$, $s = r'_t = c\,t'$ | Rest-mass phase; the zero-momentum solution, $\Box f = k_m^{2}f$, $\lvert f\rvert=1$, $f^{*}=f^{-1}$ |
+| $f = \exp(-i k_m r'_t)$, $r'_t = c\,t'$ | Rest-mass phase; the zero-momentum solution, $\Box f = k_m^{2}f$, $\lvert f\rvert=1$, $f^{*}=f^{-1}$ |
 | $\omega_m = mc^{2}/\hbar = c\,k_m$ | Rest-energy frequency of the field |
-| $\chi = e^{ik_ms}\tilde{Ξ}$, $s=r'_t$ | Field with the rest-mass phase divided out; the envelope |
+| $\chi = e^{ik_m r'_t}\tilde{Ξ}$, $r'_t=c\,t'$ | Field with the rest-mass phase divided out; the envelope |
 | $\Omega = k_{t}^{\prime}-k_m$ | Excess time wave number; $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\cdots$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
@@ -448,7 +458,7 @@ One exception to the obstruction is imported from the literature and kept separa
 
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the standard treatment of the Klein–Gordon equation, its current, and its defects.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the negative-energy problem and the field-theoretic resolution.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. I* (Cambridge, 1995), for the reinterpretation of $\xi$ and $\xi^*$ as particle and antiparticle field operators.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. I* (Cambridge, 1995), for the reinterpretation of $Ξ$ and $Ξ^*$ as particle and antiparticle field operators.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the first-order square root of the wave operator.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the biquaternion algebra, its conjugations, and its fixed-point subspaces.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the wave equations and their spinor factorisation.

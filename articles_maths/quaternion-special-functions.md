@@ -294,7 +294,7 @@ because the powers of the single element $\log \tilde q$ commute with one anothe
 
 ### The $n$-th Root Limits
 
-Throughout this subsection a sequence of quaternions converges when it converges in the norm $\lVert\cdot\rVert_E$ of $\mathbb{H}$ read as a four-dimensional Euclidean space, and a limit is read in that sense.
+Throughout this subsection a sequence of quaternions converges when it converges in the norm $\lVert\cdot\rVert$ of $\mathbb{H}$ read as a four-dimensional Euclidean space, and a limit is read in that sense.
 
 The $n$-th root is the power with exponent $1/n$,
 

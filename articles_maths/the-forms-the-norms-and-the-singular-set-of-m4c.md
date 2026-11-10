@@ -62,7 +62,7 @@ be the singular values, the non-negative square roots of the eigenvalues of $A^*
 **The Frobenius norm.**
 
 $$
-\lVert A\rVert_F=\sqrt{\operatorname{tr}(A^*A)}
+\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^*A)}
 =\Bigl(\sum_{k=1}^{4}\sigma_k^2\Bigr)^{1/2}
 =\Bigl(\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2\Bigr)^{1/2}.
 $$
@@ -93,8 +93,8 @@ It is the sum of the singular values, also called the trace norm or the Schatten
 **Proposition (the norm inequalities).** For every $A\in M_4(\mathbb{C})$,
 
 $$
-\lVert A\rVert\le\lVert A\rVert_F\le\lVert A\rVert_{*}
-\le\sqrt{4}\,\lVert A\rVert_F
+\lVert A\rVert\le\langle A\rangle_*^{1/2}\le\lVert A\rVert_{*}
+\le\sqrt{4}\,\langle A\rangle_*^{1/2}
 \le4\,\lVert A\rVert.
 $$
 
@@ -104,7 +104,7 @@ $$
 \sum_{k=1}^{4}\sigma_k\le\sqrt{4}\Bigl(\sum_{k=1}^{4}\sigma_k^2\Bigr)^{1/2}.
 $$
 
-The last is $\lVert A\rVert_F\le\sqrt{4}\sigma_1$, because there are four singular values each at most $\sigma_1$.
+The last is $\langle A\rangle_*^{1/2}\le\sqrt{4}\sigma_1$, because there are four singular values each at most $\sigma_1$.
 
 **$*$-Unitary invariance.** All three norms are invariant under left and right multiplication by unitaries:
 
@@ -125,7 +125,7 @@ $$
 The Frobenius norm is self-dual:
 
 $$
-\lVert A\rVert_F=\sup_{\lVert B\rVert_F\le1}\lvert\operatorname{tr}(A^*B)\rvert.
+\langle A\rangle_*^{1/2}=\sup_{\langle B\rangle_*^{1/2}\le1}\lvert\operatorname{tr}(A^*B)\rvert.
 $$
 
 **The determinant bound.** The modulus of the determinant is the product of the singular values:
@@ -141,7 +141,7 @@ $$
 \qquad
 \lvert\det A\rvert\le\lVert A\rVert^4,
 \qquad
-\lvert\det A\rvert\le\frac{\lVert A\rVert_F^4}{16}.
+\lvert\det A\rvert\le\frac{\langle A\rangle_*^{2}}{16}.
 $$
 
 The determinant is not a norm: it vanishes on nonzero singular matrices, and it is not subadditive.
@@ -258,16 +258,16 @@ which is complex-valued and has a nonzero zero set. Its zero set is the **null c
 
 ## Summary
 
-The full matrix algebra carries the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$, the bilinear trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ and the Killing form $8\beta$ on $\mathfrak{sl}_4$. The three unitarily invariant norms are the Frobenius norm $\lVert A\rVert_F=(\sum\sigma_k^2)^{1/2}$, the operator norm $\lVert A\rVert=\sigma_1$ and the nuclear norm $\lVert A\rVert_*=\sum\sigma_k$, with
+The full matrix algebra carries the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$, the bilinear trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ and the Killing form $8\beta$ on $\mathfrak{sl}_4$. The three unitarily invariant norms are the Frobenius norm $\langle A\rangle_*^{1/2}=(\sum\sigma_k^2)^{1/2}$, the operator norm $\lVert A\rVert=\sigma_1$ and the nuclear norm $\lVert A\rVert_*=\sum\sigma_k$, with
 
 $$
-\lVert A\rVert\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F\le4\lVert A\rVert.
+\lVert A\rVert\le\langle A\rangle_*^{1/2}\le\lVert A\rVert_*\le2\langle A\rangle_*^{1/2}\le4\lVert A\rVert.
 $$
 
 The singular set $\Sigma=\{\det=0\}$ is an irreducible complex hypersurface of complex dimension $15$ and real dimension $30$, of real codimension $2$; its smooth part is the rank-$3$ stratum, and its singular locus is the rank-at-most-$2$ variety of complex dimension $12$. The rank strata have complex dimensions $0,7,12,15,16$ for ranks $0,1,2,3,4$. The singular set is a cone in the algebraic sense, but it is not the isotropic cone of the definite form; the only isotropic vector is $0$. The biquaternion algebra, by contrast, has a complex-valued norm and a genuine null cone; its projectivised null cone is a quadric surface and its link is a circle bundle over it, while the link of the $M_4$ singular set is the link of the determinantal hypersurface.
 
 $$
-\boxed{\ \lVert A\rVert\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F,\quad \dim_\mathbb{C}\Sigma=15,\quad \dim_\mathbb{R}\Sigma=30,\quad \operatorname{codim}_\mathbb{R}\Sigma=2. }
+\boxed{\ \lVert A\rVert\le\langle A\rangle_*^{1/2}\le\lVert A\rVert_*\le2\langle A\rangle_*^{1/2},\quad \dim_\mathbb{C}\Sigma=15,\quad \dim_\mathbb{R}\Sigma=30,\quad \operatorname{codim}_\mathbb{R}\Sigma=2. }
 $$
 
 | Stratum | Complex dimension | Real dimension |
@@ -287,7 +287,7 @@ $$
 | $\langle A,B\rangle=\operatorname{tr}(A^*B)$ | the positive definite trace form |
 | $\beta(A,B)=\operatorname{tr}(AB)$ | the bilinear trace pairing |
 | $\sigma_1\ge\cdots\ge\sigma_4$ | the singular values |
-| $\lVert A\rVert_F$ | the Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $\lVert A\rVert$ | the operator norm |
 | $\lVert A\rVert_*$ | the nuclear norm |
 | $\Sigma=\{\det=0\}$ | the singular set |

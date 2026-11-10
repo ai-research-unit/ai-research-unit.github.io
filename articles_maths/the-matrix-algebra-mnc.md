@@ -55,7 +55,7 @@ $$
 This is a Hermitian inner product on the $n^2$ complex dimensions, and its real part is the Euclidean form of $\mathbb{R}^{2n^{2}}$. The associated norm is the **Frobenius norm**
 
 $$
-\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}=\Big(\sum_{i,j}|A_{ij}|^{2}\Big)^{1/2}.
+\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^{*}A)}=\Big(\sum_{i,j}|A_{ij}|^{2}\Big)^{1/2}.
 $$
 
 The form is definite: $\langle A,A\rangle=0$ only for $A=0$. There is no isotropic vector other than $0$, and no null cone. This is the sharp difference from the biquaternion algebra, whose *natural* form is indefinite; see the last section.
@@ -128,7 +128,7 @@ The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with
 | $\operatorname{tr}$, $\det$ | the trace and the determinant |
 | $A^{*}=\bar A^{\mathsf T}$ | the conjugate transpose |
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite trace form |
-| $\|A\|_{\mathrm{F}}$ | the Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $\mathfrak{u}(n)$, $\mathfrak{su}(n)$ | the skew-Hermitian and traceless skew-Hermitian algebras, of dimensions $n^{2}$ and $n^{2}-1$ |
 | $GL_n(\mathbb{C})$, $SL_n(\mathbb{C})$, $PGL_n(\mathbb{C})$ | the unit group, its determinant-one subgroup and the projective group |
 | $\Sigma=\{\det=0\}$ | the singular set, of real codimension $2$ |

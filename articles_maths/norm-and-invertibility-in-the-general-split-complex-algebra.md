@@ -99,7 +99,7 @@ So $\langle\cdot\rangle_{*}$ is a real-valued multiplicative semi-norm: multipli
 
 ## The Unique Real Norm
 
-**The positive definite real norm of the algebra is the Euclidean norm $\|Q\|_{E}=\sqrt{q^{2}+q'^{2}}$, which comes from the real part of the plain square and not from the algebraic norm of either product.**
+**The positive definite real norm of the algebra is the Euclidean norm $\|Q\|=\sqrt{q^{2}+q'^{2}}$, which comes from the real part of the plain square and not from the algebraic norm of either product.**
 
 The **Euclidean form** is
 
@@ -110,12 +110,12 @@ $$
 the ordinary inner product of $\mathbb{R}^{2}$, positive definite and symmetric, of Gram matrix $\operatorname{diag}(1,1)$. Its diagonal is
 
 $$
-\|Q\|_{E}^{2}=q^{2}+q'^{2}=\operatorname{Re}(Q^{2}),
+\|Q\|^{2}=q^{2}+q'^{2}=\operatorname{Re}(Q^{2}),
 $$
 
 the real part of the first algebraic norm. The Euclidean norm is a genuine norm: positive definite, subadditive, homogeneous of degree one. It is the norm that turns $\mathbb{C}_{\mathrm{spl}}$ into a topological algebra and that underlies the analysis of *Split-Complex Analysis*.
 
-The Euclidean form is **not multiplicative**, and the Euclidean norm is not preserved by the split-complex product: for $Q=1+j$ one has $\|Q\|_{E}^{2}=2$ while $\|Q^{2}\|_{E}=\|2+2j\|_{E}=2\sqrt2\neq2$. It is the topological norm of the plane, not the algebraic norm of the ring.
+The Euclidean form is **not multiplicative**, and the Euclidean norm is not preserved by the split-complex product: for $Q=1+j$ one has $\|Q\|^{2}=2$ while $\|Q^{2}\|=\|2+2j\|=2\sqrt2\neq2$. It is the topological norm of the plane, not the algebraic norm of the ring.
 
 ## The Norm from the Halves
 
@@ -130,13 +130,13 @@ $$
 using $\bar\Pi_{\pm}=\Pi_{\mp}$. The two coordinates of the norm are equal, as they must be because the norm is real. In the same coordinates,
 
 $$
-\|Q\|_{E}^{2}=q^{2}+q'^{2}=\tfrac12(Q_{+}^{2}+Q_{-}^{2}),
+\|Q\|^{2}=q^{2}+q'^{2}=\tfrac12(Q_{+}^{2}+Q_{-}^{2}),
 $$
 
 so the Euclidean norm is the root of the mean of the squares of the two idempotent coordinates, while the algebraic norm is their product. The two are related by
 
 $$
-Q_{+}^{2}+Q_{-}^{2}=2\|Q\|_{E}^{2},\qquad Q_{+}Q_{-}=\langle Q\rangle_{*} .
+Q_{+}^{2}+Q_{-}^{2}=2\|Q\|^{2},\qquad Q_{+}Q_{-}=\langle Q\rangle_{*} .
 $$
 
 ## The Norm and the Hermitian Form
@@ -347,7 +347,7 @@ an abelian group with four connected components and non-compact, in contrast wit
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
 | $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_{\pm}$ |
 | $\rho=\sqrt{|\langle Q\rangle_{*}|}=\sqrt{|Q_{+}Q_{-}|}$ | Modulus, multiplicative and absolutely homogeneous |
-| $\|Q\|_{E}=\sqrt{q^{2}+q'^{2}}$ | Euclidean norm, the positive definite real norm |
+| $\|Q\|=\sqrt{q^{2}+q'^{2}}$ | Euclidean norm, the positive definite real norm |
 | $\langle Q,B\rangle_{E}=qb+q'b'$ | Euclidean inner product |
 | $H(Q_1,Q_2)=Q_1\bar Q_2=(q_1q_2-q'_1q'_2)+j(q'_1q_2-q_1q'_2)$ | Hermitian form; real part $g$, indefinite |
 | ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{\langle Q\rangle_{*}\neq0\}$ | Group of units of the plain product |

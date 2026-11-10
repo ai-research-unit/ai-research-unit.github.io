@@ -117,7 +117,7 @@ $$
 \operatorname{rank}L_{Q}R_{P}=\operatorname{rank}\mathsf{M}_2(c),\qquad
 \operatorname{tr}L_{Q}R_{P}=2qp,\qquad
 \det L_{Q}R_{P}=(qp)^{2},\qquad
-\lVert L_{Q}R_{P}\rVert_F^{2}=2(qp)^{2}+(qp'+q'p)^{2}.
+\langle L_{Q}R_{P}\rangle_*=2(qp)^{2}+(qp'+q'p)^{2}.
 $$
 
 **Proof.** $L_{Q}R_{P}$ is the matrix $\mathsf{M}_2(QP)$, so the four quantities are those of the model article read at the product.
@@ -163,7 +163,7 @@ of size $4\times4$.
 $$
 \operatorname{tr}K_{Q,P}=4pq,\qquad
 \det K_{Q,P}=p^{4}q^{4},\qquad
-\lVert K_{Q,P}\rVert_F^{2}=(2q^{2}+q'^{2})(2p^{2}+p'^{2}),\qquad
+\langle K_{Q,P}\rangle_*=(2q^{2}+q'^{2})(2p^{2}+p'^{2}),\qquad
 \operatorname{rank}K_{Q,P}=\operatorname{rank}\mathsf{M}_2(Q)\cdot\operatorname{rank}\mathsf{M}_2(P).
 $$
 

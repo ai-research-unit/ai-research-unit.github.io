@@ -8,7 +8,7 @@ The split-biquaternion algebra, its idempotents and its norm are *Split-Biquater
 
 The article owns the operator norm of a split-biquaternion generator, the contraction criterion, the product attractor and the sum of the dimensions, the parity structure of the generator list, and the zero-divisor generators. It does not re-derive the classical theory or the quaternion systems.
 
-**Standing convention.** $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_1+\tilde Q_{1,i}^-\tilde\Pi_2$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
+**Standing convention.** $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_1+\tilde Q_{1,i}^-\tilde\Pi_2$; $\|\cdot\|$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
 
 ## The Operator Norm and the Contraction Criterion
 
@@ -25,10 +25,10 @@ and the generator $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a contraction e
 **Proof.** In the idempotent coordinates $L_{\tilde Q_1}$ acts by $(\tilde Q_+,\tilde Q_-)\mapsto(\tilde Q_{1,+}\tilde Q_+,\tilde Q_{1,-}\tilde Q_-)$, so
 
 $$
-\|L_{\tilde Q_1}\tilde Q\|_E^2=\tfrac12\bigl(|\tilde Q_{1,+}|^2|\tilde Q_+|^2+|\tilde Q_{1,-}|^2|\tilde Q_-|^2\bigr)\le\max(|\tilde Q_{1,+}|,|\tilde Q_{1,-}|)^2\cdot\tfrac12\bigl(|\tilde Q_+|^2+|\tilde Q_-|^2\bigr) ,
+\|L_{\tilde Q_1}\tilde Q\|^2=\tfrac12\bigl(|\tilde Q_{1,+}|^2|\tilde Q_+|^2+|\tilde Q_{1,-}|^2|\tilde Q_-|^2\bigr)\le\max(|\tilde Q_{1,+}|,|\tilde Q_{1,-}|)^2\cdot\tfrac12\bigl(|\tilde Q_+|^2+|\tilde Q_-|^2\bigr) ,
 $$
 
-using the norm identity $\|\tilde Q\|_E^2=\tfrac12(|\tilde Q_+|^2+|\tilde Q_-|^2)$; the bound is attained on a vector supported on the factor of the maximum, so the norm is the maximum. The Lipschitz constant of the generator is the operator norm of $\tilde Q_1$, whence the criterion.
+using the norm identity $\|\tilde Q\|^2=\tfrac12(|\tilde Q_+|^2+|\tilde Q_-|^2)$; the bound is attained on a vector supported on the factor of the maximum, so the norm is the maximum. The Lipschitz constant of the generator is the operator norm of $\tilde Q_1$, whence the criterion.
 
 **Remark (the diagonal multipliers).** If $\tilde Q_1=\tilde Q_{1,+}=\tilde Q_{1,-}$ is one quaternion, the generator multiplies both factors by the same quaternion and is a similarity of ratio $|\tilde Q_1|$; if only one component is non-zero, the generator maps the algebra into one ideal and its restriction to that ideal is a quaternion similarity. **The general split-biquaternion generator is a pair of quaternion generators acting independently on the two factors.**
 

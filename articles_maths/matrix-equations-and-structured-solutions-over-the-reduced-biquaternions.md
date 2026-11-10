@@ -111,7 +111,7 @@ of size $mt\times\sum_ld_l$ over $\mathbb{B}_{\mathrm{red}}$, and the coefficien
 
 $$
 \boxed{\;
-K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\lVert\mathsf C^{+}\zeta^{+}-\mathrm{vec}(E)^{+}\bigr\rVert_{\mathrm F}^{2}+\bigl\lVert\mathsf C^{-}\zeta^{-}-\mathrm{vec}(E)^{-}\bigr\rVert_{\mathrm F}^{2}\Bigr)
+K_{\mathrm F}\Bigl(\sum_{l}A_lX_lB_l-E\Bigr)=\tfrac12\Bigl(\bigl\langle\mathsf C^{+}\zeta^{+}-\mathrm{vec}(E)^{+}\\bigr\rangle_*+\bigl\langle\mathsf C^{-}\zeta^{-}-\mathrm{vec}(E)^{-}\\bigr\rangle_*\Bigr)
 \;},
 $$
 

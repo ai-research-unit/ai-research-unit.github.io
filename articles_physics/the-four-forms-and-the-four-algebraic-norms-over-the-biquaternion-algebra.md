@@ -68,7 +68,7 @@ The **algebraic norm** of a form is that form at its two equal arguments. The fo
 | $\langle\cdot\rangle_{*}$ | $H$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$ | $\mathbb{R}$ | $\mathrm{I}_4$ | $(8,0)$ | $\{0\}$ | no | **yes** |
 | $\langle\cdot\rangle_{\natural*}$ | $\mathrm{Kr}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}$ | $\mathbb{R}$ | $\mathrm{E}$ | $(2,6)$ | $\mathcal{K}$ | no | no |
 
-Two of the four have a property the others lack, and the two properties are different. The Hermitian algebraic norm $\langle\cdot\rangle_{*}$ is **positive definite**, and its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert_E^{2}=\langle\tilde Q\rangle_{*}$. The quaternionic algebraic norm $\langle\cdot\rangle_{\natural}$ is **multiplicative**,
+Two of the four have a property the others lack, and the two properties are different. The Hermitian algebraic norm $\langle\cdot\rangle_{*}$ is **positive definite**, and its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert^{2}=\langle\tilde Q\rangle_{*}$. The quaternionic algebraic norm $\langle\cdot\rangle_{\natural}$ is **multiplicative**,
 
 $$
 \boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;},
@@ -202,7 +202,7 @@ The article reads the algebra's own chain: twelve products, four forms, four alg
 
 Three levels of signature must be kept apart. The **complex form** has a Gram matrix and a complex rank; its **realification** has a signature over $\mathbb{R}$, and the four are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; its **restriction** to a sector has a signature of its own, and on the material sector the four are $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$. The physical interval is the third level, not the second, and a reader who carries $(4,4)$ into a statement about spacetime has changed the object.
 
-Two senses of *norm* must be kept apart. The **algebraic norm** is a map into the ring — $\mathbb{C}$ for the two bilinear forms, $\mathbb{R}$ for the two Hermitian ones — and it is algebra. The **topological norm** is the one selection of positive real values, $\lVert\tilde Q\rVert_E=(\langle\tilde Q\rangle_{*})^{1/2}$, and it is topology. Only the Hermitian form yields the second; the other three are algebraic norms and give no distance. A norm is not a distance until a square root is taken and a positivity is declared.
+Two senses of *norm* must be kept apart. The **algebraic norm** is a map into the ring — $\mathbb{C}$ for the two bilinear forms, $\mathbb{R}$ for the two Hermitian ones — and it is algebra. The **topological norm** is the one selection of positive real values, $\lVert\tilde Q\rVert=(\langle\tilde Q\rangle_{*})^{1/2}$, and it is topology. Only the Hermitian form yields the second; the other three are algebraic norms and give no distance. A norm is not a distance until a square root is taken and a positivity is declared.
 
 On the sectors the four forms coincide in pairs, and the coincidence is a statement about the forms. It does not make the four products agree, and it does not make the Krein form a probability or the sector sign an interval. The identities are read with both arguments on the sector; for a general element the four forms are four.
 
@@ -247,7 +247,7 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 | $(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{B}_{\Phi}$, in the same order |
 | $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ | their signatures on $\mathbb{B}_{\Psi}$, in the same order |
 | $\mathcal{N}$, $\mathcal{K}$ | the $N$-degenerate set, the zero-divisor cone, and the Krein cone |
-| $\lVert\tilde Q\rVert_E$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
+| $\lVert\tilde Q\rVert$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
 | $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_\eta Q_\eta\sigma_\eta$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\tilde R_\Phi$, $\tilde R_\Psi$ | the material and informational parts, $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$ |

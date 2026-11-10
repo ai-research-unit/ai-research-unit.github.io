@@ -159,13 +159,13 @@ The two transforms are related as in the discrete case: the conjugate of the lef
 The integral defining the transform converges absolutely if $f$ is integrable, that is, if
 
 $$
-\int_{-\infty}^{\infty} \lVert f(t)\rVert_E \, dt < \infty,
+\int_{-\infty}^{\infty} \lVert f(t)\rVert \, dt < \infty,
 $$
 
-where $\lVert\cdot\rVert_E$ is the Euclidean norm of the eight real coordinates. Under this condition the transform $F$ is bounded and uniformly continuous:
+where $\lVert\cdot\rVert$ is the Euclidean norm of the eight real coordinates. Under this condition the transform $F$ is bounded and uniformly continuous:
 
 $$
-\lVert F(\omega)\rVert_E \leq \int_{-\infty}^{\infty} \lVert f(t)\rVert_E \, dt, \qquad \omega \in \mathbb{R}.
+\lVert F(\omega)\rVert \leq \int_{-\infty}^{\infty} \lVert f(t)\rVert \, dt, \qquad \omega \in \mathbb{R}.
 $$
 
 The convergence of the inverse requires the conditions of the complex case, $f$ integrable and continuous at $t$ and $F$ integrable, and under them the inverse formula holds at every point of continuity of $f$.
@@ -175,7 +175,7 @@ The convergence of the inverse requires the conditions of the complex case, $f$ 
 **Theorem (Riemann–Lebesgue).** If $f : \mathbb{R} \to \mathbb{B}$ is integrable, then
 
 $$
-\lim_{\lvert\omega\rvert \to \infty} \lVert F(\omega)\rVert_E = 0.
+\lim_{\lvert\omega\rvert \to \infty} \lVert F(\omega)\rVert = 0.
 $$
 
 *Proof.* The kernel is bounded and the integrand is integrable, and the standard proof applies component-wise, in either of the two Peirce coordinates, where the kernel is a scalar $e^{\mp2\pi i\omega t}$.
@@ -203,13 +203,13 @@ The theorem is unconditional in the root: it uses only the closed form of the ke
 **Theorem (Plancherel).** Let the root be **Hermitian**, $\tilde{Ζ}^{*}=\tilde{Ζ}$, the central pair or a purely imaginary unit vector. Then the transform extends uniquely to an isometry of $L^{2}(\mathbb{R}, \mathbb{B})$ onto itself, with
 
 $$
-\boxed{\; \int_{-\infty}^{\infty} \lVert f(t)\rVert_E^{2} \, dt = \int_{-\infty}^{\infty} \lVert F(\omega)\rVert_E^{2} \, d\omega \;}.
+\boxed{\; \int_{-\infty}^{\infty} \lVert f(t)\rVert^{2} \, dt = \int_{-\infty}^{\infty} \lVert F(\omega)\rVert^{2} \, d\omega \;}.
 $$
 
 *Proof.* For a Hermitian root the two idempotents are Hermitian, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, and the Peirce split is orthogonal for the Euclidean form:
 
 $$
-\lVert f(t)\rVert_E^{2} = \lVert \tilde\Pi_+ f(t)\rVert_E^{2} + \lVert \tilde\Pi_- f(t)\rVert_E^{2},
+\lVert f(t)\rVert^{2} = \lVert \tilde\Pi_+ f(t)\rVert^{2} + \lVert \tilde\Pi_- f(t)\rVert^{2},
 $$
 
 because the cross terms are scalar parts of $P_+XX^{*}P_-^{*}=P_+XX^{*}P_-$, which vanish since $P_+P_-=0$. On each ideal the kernel is the scalar $e^{\mp2\pi i\omega t}$, so the transform of $\tilde\Pi_\pm f$ is the ordinary complex transform of a ℂ²-valued function, a complex isometry by the classical theorem. Summing the two isometries and using the orthogonality gives the displayed identity, and the extension is unique because the integrable functions are dense.
@@ -217,10 +217,10 @@ because the cross terms are scalar parts of $P_+XX^{*}P_-^{*}=P_+XX^{*}P_-$, whi
 **The genuinely non-Hermitian roots.** Off the Hermitian roots the transform is still invertible, by §*The Inversion Theorem*, but it is **not** an isometry for the Euclidean norm. The identity above fails at the first step: the Peirce split is not orthogonal, and the quantity the transform preserves is
 
 $$
-\lVert \tilde\Pi_+ f\rVert_E^{2} + \lVert \tilde\Pi_- f\rVert_E^{2},
+\lVert \tilde\Pi_+ f\rVert^{2} + \lVert \tilde\Pi_- f\rVert^{2},
 $$
 
-a positive form that agrees with the Euclidean one only for a Hermitian root. The failure is measured by the size of the root: a pure root has $\lVert\tilde{Ζ}\rVert_E^{2}=1+2\lVert\vec p\rVert^{2}$, so the Hermitian roots are the pure roots of Euclidean norm one, and the excess is the amplitude that *Relations between the Biquaternion Exponential and the Fourier Kernel* calls the norm deficit.
+a positive form that agrees with the Euclidean one only for a Hermitian root. The failure is measured by the size of the root: a pure root has $\lVert\tilde{Ζ}\rVert^{2}=1+2\lVert\vec p\rVert^{2}$, so the Hermitian roots are the pure roots of Euclidean norm one, and the excess is the amplitude that *Relations between the Biquaternion Exponential and the Fourier Kernel* calls the norm deficit.
 
 **Corollary (Parseval).** For a Hermitian root and $f, g \in L^{2}(\mathbb{R}, \mathbb{B})$,
 
@@ -526,10 +526,10 @@ which is negative for every non-zero measure, because $\langle i\rangle_{\natura
 **The repair, and what it costs.** Positivity returns when the norm is replaced by a definite pairing, whose integrand is a sum of squares of moduli,
 
 $$
-\lVert Z(\tilde{Q})\rVert_E^2 = \sum_{\mu\in\{t,x,y,z\}} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
+\lVert Z(\tilde{Q})\rVert^2 = \sum_{\mu\in\{t,x,y,z\}} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
 $$
 
-so the Euclidean quadratic form is non-negative, and $\lVert\cdot\rVert_E$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert_E\neq\lVert Z\rVert_E\lVert W\rVert_E$ in general, the Hermitian idempotent $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ giving $\lVert\tilde\Pi^{2}\rVert_E=\tfrac12$ against $\lVert\tilde\Pi\rVert_E^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert_E^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the Hermitian roots; the criterion and its proof are *The General Plain Sesqualgebra (gps) over $\mathbb{C}$*.
+so the Euclidean quadratic form is non-negative, and $\lVert\cdot\rVert$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert\neq\lVert Z\rVert\lVert W\rVert$ in general, the Hermitian idempotent $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ giving $\lVert\tilde\Pi^{2}\rVert=\tfrac12$ against $\lVert\tilde\Pi\rVert^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the Hermitian roots; the criterion and its proof are *The General Plain Sesqualgebra (gps) over $\mathbb{C}$*.
 
 **Two hypotheses.** The identity requires central coefficients, because the coefficient has to commute with the kernel; for quaternion-valued coefficients the products $A_k\chi_{\omega_k}$ do not reassemble and the two sides differ by terms of order one on random data. It requires a single root as well: with two roots, one per variable, the collapse $\bar\chi_\omega\chi_\eta=\chi_{\eta-\omega}$ fails as soon as the two differ. The Bochner-type positivity is therefore a one-root, central-coefficient statement even for $\mathbb{H}$, and for $\mathbb{B}$ it fails under those hypotheses as well.
 
@@ -565,7 +565,7 @@ where the sinc is the ordinary real one. The half-width is written $\beta$ and n
 
 2. **The support of the transform of solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.** The transform of a solution is supported on a set determined by the symbol of the gradient. What is the structure of this set?
 
-3. **Plancherel for the other roots.** The isometry is stated for the Hermitian roots; for the other pure roots the transform preserves the Peirce norm $\lVert\tilde\Pi_+f\rVert_E^{2}+\lVert\tilde\Pi_-f\rVert_E^{2}$ and no Euclidean one, and the sharp form of the loss is open.
+3. **Plancherel for the other roots.** The isometry is stated for the Hermitian roots; for the other pure roots the transform preserves the Peirce norm $\lVert\tilde\Pi_+f\rVert^{2}+\lVert\tilde\Pi_-f\rVert^{2}$ and no Euclidean one, and the sharp form of the loss is open.
 
 4. **Two roots that do not commute.** The two-unit transform is defined for every pair, and its factorisation is proved only when the two commute or coincide; whether it still reduces to a fixed finite family of complex transforms is open.
 
@@ -609,7 +609,7 @@ The vanishing-norm issue does not obstruct the inversion: what a zero-divisor va
 | $\natural$ | the quaternion conjugation, $e_t\mapsto e_t$, $\vec e_k\mapsto-\vec e_k$ |
 | $*$ | the Hermitian conjugation, $\bar{\cdot}\circ\natural$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | the natural norm, a complex scalar |
-| $\lVert\cdot\rVert_E$ | the Euclidean norm of the eight real coordinates |
+| $\lVert\cdot\rVert$ | the Euclidean norm of the eight real coordinates |
 | $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$ | the Hermitian pairing |
 | $\beta$ | the half-width of the support in the sampling theorem |
 

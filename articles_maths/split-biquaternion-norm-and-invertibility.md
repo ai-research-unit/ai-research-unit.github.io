@@ -244,7 +244,7 @@ The plain and the quaternionic norms are split complex-valued; the Hermitian and
 The **Euclidean norm** of a split biquaternion $\tilde{Q}$ is
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'^2_\mu)}.
+\|\tilde{Q}\| = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'^2_\mu)}.
 $$
 
 It is a genuine norm on the real vector space $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one.
@@ -603,7 +603,7 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\bar Q_{2t} - \sum_k Q_{1k}\bar Q_{2k}$ | Krein form |
 | $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'^2_t - \sum_k(q_k^2 - q'^2_k)$ | Krein norm, signature $(4,4)$ |
 | $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
-| $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
+| $\|\tilde{Q}\| = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
 | ${\mathbb{B}_{\mathrm{spl}}}^\times$ | Group of units |
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |

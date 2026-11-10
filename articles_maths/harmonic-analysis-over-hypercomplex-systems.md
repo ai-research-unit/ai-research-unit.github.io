@@ -343,7 +343,7 @@ $$
 the last being Fourier inversion and the accompanying Plancherel identity being
 
 $$
-\sum_{g \in G}|f(g)|^2 = \frac{1}{|G|}\sum_\rho d_\rho\,\|(\mathcal F f)(\rho)\|_{\mathrm{HS}}^2 ,
+\sum_{g \in G}|f(g)|^2 = \frac{1}{|G|}\sum_\rho d_\rho\,\langle (\mathcal F f)(\rho)\rangle_* ,
 $$
 
 where $d_\rho = \dim V_\rho$ and the sum runs over the irreducible unitary representations. These are standard facts of the representation theory of finite groups. The finite quaternion group

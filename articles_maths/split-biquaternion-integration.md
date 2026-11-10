@@ -67,16 +67,16 @@ $$
 
 ### The Fundamental Estimate
 
-**Theorem (fundamental estimate).** If $\|F_{\mathrm{fn}}\|_E \leq M$ on $\Omega$ and $\mathrm{vol}(\Omega)$ is the volume of $\Omega$, then
+**Theorem (fundamental estimate).** If $\|F_{\mathrm{fn}}\| \leq M$ on $\Omega$ and $\mathrm{vol}(\Omega)$ is the volume of $\Omega$, then
 
 $$
-\left\| \int_\Omega F_{\mathrm{fn}} \, dV \right\|_E \leq M \cdot \mathrm{vol}(\Omega).
+\left\| \int_\Omega F_{\mathrm{fn}} \, dV \right\| \leq M \cdot \mathrm{vol}(\Omega).
 $$
 
 **Proof.** For each of the eight real components,
 
 $$
-\left| \int_\Omega u_\mu \, dV \right| \leq \int_\Omega |u_\mu| \, dV \leq \int_\Omega \|F_{\mathrm{fn}}\|_E \, dV \leq M \cdot \mathrm{vol}(\Omega),
+\left| \int_\Omega u_\mu \, dV \right| \leq \int_\Omega |u_\mu| \, dV \leq \int_\Omega \|F_{\mathrm{fn}}\| \, dV \leq M \cdot \mathrm{vol}(\Omega),
 $$
 
 and similarly for $v_\mu$. So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidean norm, which is equivalent to the maximum of the absolute values of the eight components, is bounded by the same constant.
@@ -87,9 +87,9 @@ and similarly for $v_\mu$. So each component is bounded by $M \cdot \mathrm{vol}
 
 **Proof.** A continuous real-valued function on a compact subset of $\mathbb{R}^4$ is bounded and Lebesgue-integrable. Applying this to each of the eight real components and using the component-wise definition gives the result.
 
-**Theorem (absolute integrability).** If $\|F_{\mathrm{fn}}\|_E$ is integrable over $\Omega$, then $F_{\mathrm{fn}}$ is integrable over $\Omega$.
+**Theorem (absolute integrability).** If $\|F_{\mathrm{fn}}\|$ is integrable over $\Omega$, then $F_{\mathrm{fn}}$ is integrable over $\Omega$.
 
-**Proof.** Since $|u_\mu| \leq \|F_{\mathrm{fn}}\|_E$ and $|v_\mu| \leq \|F_{\mathrm{fn}}\|_E$ for each $\mu$, the integrability of $\|F_{\mathrm{fn}}\|_E$ implies the integrability of each component.
+**Proof.** Since $|u_\mu| \leq \|F_{\mathrm{fn}}\|$ and $|v_\mu| \leq \|F_{\mathrm{fn}}\|$ for each $\mu$, the integrability of $\|F_{\mathrm{fn}}\|$ implies the integrability of each component.
 
 ### The Integral in the Idempotent Basis
 
@@ -236,10 +236,10 @@ the two mixed terms cancelling. Summing over $\mu$ makes the left side a diverge
 The **fundamental solution** of the gradient operator $\tilde{\nabla}$ is the split-biquaternion-valued function
 
 $$
-G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4},
+G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4},
 $$
 
-where $\tilde{Q}^{\natural}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
+where $\tilde{Q}^{\natural}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|^4 = (\|\tilde{Q}\|^2)^2$ is the fourth power of the Euclidean norm.
 
 The function $G_{\mathrm{fn}}$ is defined for $\tilde{Q} \neq 0$. It is homogeneous of degree $-3$: $G_{\mathrm{fn}}(\lambda \tilde{Q}) = \lambda^{-3} G_{\mathrm{fn}}(\tilde{Q})$ for $\lambda > 0$.
 
@@ -253,7 +253,7 @@ $$
 \tilde{\nabla} G_{\mathrm{fn}}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \sum_k Q_k \vec e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ and $\|\tilde{Q}\|^2 = \sum_\mu Q_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \sum_k Q_k \vec e_k$. So
 
 $$
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{Q_t e_t - \sum_k Q_k \vec e_k}{(\sum_\mu Q_\mu^2)^2}.
@@ -262,16 +262,16 @@ $$
 A direct computation gives
 
 $$
-\tilde{\nabla} G_{\mathrm{fn}} = \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
+\tilde{\nabla} G_{\mathrm{fn}} = \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|^4} \right).
 $$
 
 The first term is $\sum_\mu e_\mu \partial/\partial q_\mu \tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = e_t + e_t + e_t + e_t = 4 e_t$. The second term is
 
 $$
-\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
+\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{1}{\|\tilde{Q}\|^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|^6}.
 $$
 
-Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|_E^2 e_t$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_t = -4 e_t / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} G_{\mathrm{fn}} = 0$.
+Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|^2 e_t$, the second term is $-4 \|\tilde{Q}\|^2 / \|\tilde{Q}\|^6 \cdot e_t = -4 e_t / \|\tilde{Q}\|^4$. So the two terms cancel, and $\tilde{\nabla} G_{\mathrm{fn}} = 0$.
 
 ### The Distributional Gradient
 
@@ -286,25 +286,25 @@ where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the sur
 **Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde{\nabla} G_{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:
 
 $$
-\langle \tilde{\nabla} G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\|_E > \varepsilon} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV.
+\langle \tilde{\nabla} G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV.
 $$
 
-Applying the divergence theorem to the domain $\|\tilde{Q}\|_E > \varepsilon$ and using $\tilde{\nabla} G_{\mathrm{fn}} = 0$ away from the origin gives
+Applying the divergence theorem to the domain $\|\tilde{Q}\| > \varepsilon$ and using $\tilde{\nabla} G_{\mathrm{fn}} = 0$ away from the origin gives
 
 $$
-\int_{\|\tilde{Q}\|_E > \varepsilon} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\|_E > \varepsilon} (\tilde{\nabla} G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
+\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde{\nabla} G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
 $$
 
-On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\|_E > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde u_{\mathrm n} = -\tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So
+On the sphere $\|\tilde{Q}\| = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\| > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde u_{\mathrm n} = -\tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So
 
 $$
-G_{\mathrm{fn}} \tilde u_{\mathrm n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_t = -\frac{\varepsilon^2}{\varepsilon^5} e_t = -\frac{1}{\varepsilon^3} e_t.
+G_{\mathrm{fn}} \tilde u_{\mathrm n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|^2}{\varepsilon^5} e_t = -\frac{\varepsilon^2}{\varepsilon^5} e_t = -\frac{1}{\varepsilon^3} e_t.
 $$
 
 So
 
 $$
-\int_{\|\tilde{Q}\|_E = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\|_E = \varepsilon} \phi \, dS \cdot e_t.
+\int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\| = \varepsilon} \phi \, dS \cdot e_t.
 $$
 
 As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_t$. Therefore
@@ -393,13 +393,13 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 ### The Maximum Principle
 
-**Theorem (maximum principle).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a domain $\Omega$ and $\|F_{\mathrm{fn}}\|_E$ attains its maximum at an interior point of $\Omega$, then $F_{\mathrm{fn}}$ is constant on $\Omega$.
+**Theorem (maximum principle).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a domain $\Omega$ and $\|F_{\mathrm{fn}}\|$ attains its maximum at an interior point of $\Omega$, then $F_{\mathrm{fn}}$ is constant on $\Omega$.
 
-**Proof.** Use the mean value property: if $\|F_{\mathrm{fn}}\|_E$ attains its maximum at $\tilde{Q}_0$, then $F_{\mathrm{fn}}(\tilde{Q}_0)$ equals the average of $F_{\mathrm{fn}}$ over every small sphere around $\tilde{Q}_0$, so $\|F_{\mathrm{fn}}(\tilde{Q}_0)\|_E \leq$ the average of $\|F_{\mathrm{fn}}\|_E \leq \|F_{\mathrm{fn}}(\tilde{Q}_0)\|_E$; both inequalities are equalities, so $\|F_{\mathrm{fn}}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial/\partial q_\mu F_{\mathrm{fn}}(\tilde{Q}_0) = 0$, so $F_{\mathrm{fn}}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $F_{\mathrm{fn}}$ is constant on $\Omega$.
+**Proof.** Use the mean value property: if $\|F_{\mathrm{fn}}\|$ attains its maximum at $\tilde{Q}_0$, then $F_{\mathrm{fn}}(\tilde{Q}_0)$ equals the average of $F_{\mathrm{fn}}$ over every small sphere around $\tilde{Q}_0$, so $\|F_{\mathrm{fn}}(\tilde{Q}_0)\| \leq$ the average of $\|F_{\mathrm{fn}}\| \leq \|F_{\mathrm{fn}}(\tilde{Q}_0)\|$; both inequalities are equalities, so $\|F_{\mathrm{fn}}\|$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial/\partial q_\mu F_{\mathrm{fn}}(\tilde{Q}_0) = 0$, so $F_{\mathrm{fn}}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $F_{\mathrm{fn}}$ is constant on $\Omega$.
 
 ### Liouville's Theorem
 
-**Theorem (Liouville).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on all of $V$ and $\|F_{\mathrm{fn}}\|_E$ is bounded, then $F_{\mathrm{fn}}$ is constant.
+**Theorem (Liouville).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on all of $V$ and $\|F_{\mathrm{fn}}\|$ is bounded, then $F_{\mathrm{fn}}$ is constant.
 
 **Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centred at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $F_{\mathrm{fn}}$. The kernel $G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero (using the decay of the kernel and the boundedness of $F_{\mathrm{fn}}$), so $F_{\mathrm{fn}}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$.
 
@@ -411,10 +411,10 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 ### The Cauchy Estimates
 
-**Theorem (Cauchy estimates).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|F_{\mathrm{fn}}\|_E \leq M$ on the boundary, then for every multi-index $\alpha$,
+**Theorem (Cauchy estimates).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|F_{\mathrm{fn}}\| \leq M$ on the boundary, then for every multi-index $\alpha$,
 
 $$
-\|\partial^\alpha F_{\mathrm{fn}}(\tilde{Q}_0)\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
+\|\partial^\alpha F_{\mathrm{fn}}(\tilde{Q}_0)\| \leq \frac{C_\alpha M}{R^{|\alpha|}},
 $$
 
 where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total order of the multi-index.
@@ -427,7 +427,7 @@ where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total
 
 The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{B}_{\mathrm{spl}}$ and the presence of the zero divisor set make the definition of the residue more delicate than in the complex case.
 
-**Definition (isolated singularity).** A point $\tilde{Q}_0$ is an **isolated singularity** of $F_{\mathrm{fn}}$ if $F_{\mathrm{fn}}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < r$ of $\tilde{Q}_0$.
+**Definition (isolated singularity).** A point $\tilde{Q}_0$ is an **isolated singularity** of $F_{\mathrm{fn}}$ if $F_{\mathrm{fn}}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{Q} - \tilde{Q}_0\| < r$ of $\tilde{Q}_0$.
 
 **Definition (residue).** The **residue** of $F_{\mathrm{fn}}$ at an isolated singularity $\tilde{Q}_0$ is the split biquaternion
 
@@ -463,7 +463,7 @@ where each of the two residues is the quaternion residue of the corresponding co
 
 The zero divisor set of $\mathbb{B}_{\mathrm{spl}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
 
-**In the fundamental solution.** The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_t$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}G_{\mathrm{fn}} = 0$; the only singularity of $G_{\mathrm{fn}}$ is the origin.
+**In the fundamental solution.** The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|^2 e_t$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}G_{\mathrm{fn}} = 0$; the only singularity of $G_{\mathrm{fn}}$ is the origin.
 
 **In the Cauchy integral formula.** The formula requires the function $F_{\mathrm{fn}}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the proof that the kernel is annihilated by the gradient fails on the intersection.
 
@@ -475,7 +475,7 @@ The zero divisor set of $\mathbb{B}_{\mathrm{spl}}$ is the union of two four-dim
 
 The integration theory developed in this article is the split biquaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.
 
-**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(A - A_0)$. The split biquaternion analogue uses the kernel $G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) = ((\tilde{Q} - \tilde{Q}_0))^{\natural}/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
+**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(A - A_0)$. The split biquaternion analogue uses the kernel $G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) = ((\tilde{Q} - \tilde{Q}_0))^{\natural}/\|\tilde{Q} - \tilde{Q}_0\|^4$, which is the fundamental solution of the gradient operator in four dimensions.
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $\tilde q^{-1}/\|\tilde q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split biquaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
 
@@ -515,7 +515,7 @@ The following questions are not answered in this article and are left for later 
 
 The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
+The **fundamental solution** of the gradient operator is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$, which satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
 
 ## Summary of Notation
 
@@ -535,7 +535,7 @@ The **fundamental solution** of the gradient operator is $G_{\mathrm{fn}}(\tilde
 | $\partial \Omega$ | Boundary of $\Omega$ |
 | $\int_\Omega F_{\mathrm{fn}} \, dV$ | Integral of $F_{\mathrm{fn}}$ over $\Omega$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative |
-| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 | $\mathrm{Res}(F_{\mathrm{fn}}, \tilde{Q}_0)$ | Residue at an isolated singularity |
 
 ## Further Reading

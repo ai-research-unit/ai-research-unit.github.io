@@ -73,7 +73,7 @@ $$
 
 **Proof.** A Kronecker product $A\otimes B$ has spectrum $\{\alpha_i\beta_j\}$, trace $\operatorname{tr}A\operatorname{tr}B$, determinant $(\det A)^{n}(\det B)^{m}$ for $A\in M_m$, $B\in M_n$, rank $\operatorname{rank}A\operatorname{rank}B$, and singular values $s_i(A)s_j(B)$. Here $A=a$ and $B=b^{\mathsf T}$, of size four, and $\operatorname{tr}b^{\mathsf T}=\operatorname{tr}b$, $\det b^{\mathsf T}=\det b$, $s_j(b^{\mathsf T})=s_j(b)$. The Schatten norm is the $\ell^{p}$ norm of the singular values, and a pairwise product of two lists has $\ell^{p}$ norm the product of the two $\ell^{p}$ norms.
 
-**Corollary.** $\|L_{a}R_{b}\|=\|a\|\,\|b\|$ and $\|L_{a}R_{b}\|_{\mathrm{HS}}=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}}$.
+**Corollary.** $\|L_{a}R_{b}\|=\|a\|\,\|b\|$ and $\langle L_{a}R_{b}\rangle_*^{1/2}=\langle a\rangle_*^{1/2}\langle b\rangle_*^{1/2}$.
 
 **Remark (the notation).** The letters $L_{a}R_{b}$ also denote the $4\times4$ matrices $L_\mu R_\nu$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* and *Operators Acting on Two Sides*, acting on the carrier $\mathbb{B}\cong\mathbb{C}^4$. The two are the same two-sided construction applied to the algebra $M_4(\mathbb{C})$ and to the algebra $\mathbb{B}$; the present article always means the operator on the sixteen-dimensional algebra. The same convention is used in *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*.
 
@@ -98,7 +98,7 @@ $$
 W(a)W(b)=\{xy:\ x\in W(a),\ y\in W(b)\}.
 $$
 
-**Proof.** Let $x=u^{*}au\in W(a)$ and $y=v^{*}bv\in W(b)$ with $\|u\|=\|v\|=1$, and put $X=uv^{*}$. Then $\|X\|_{\mathrm{HS}}=\|u\|\,\|v\|=1$ and
+**Proof.** Let $x=u^{*}au\in W(a)$ and $y=v^{*}bv\in W(b)$ with $\|u\|=\|v\|=1$, and put $X=uv^{*}$. Then $\langle X\rangle_*^{1/2}=\|u\|\,\|v\|=1$ and
 
 $$
 \langle X,L_{a}R_{b}(X)\rangle
@@ -170,7 +170,7 @@ For the factors, $W(E_{12})$ is the disk of radius $\tfrac12$: the block $E_{12}
 **Theorem (the ellipse of a rank-one two-sided operator).** Let $a=uv^{*}$ and $b=xy^{*}$ with $u,v,x,y\ne0$. Then $L_{a}R_{b}$ has rank one, $L_{a}R_{b}(X)=\langle vx^{*},X\rangle\,uy^{*}$, and $W(L_{a}R_{b})$ is the closed ellipse with foci $0$ and $\operatorname{tr}a\,\operatorname{tr}b$ and semi-minor axis
 
 $$
-\frac12\sqrt{\|a\|_{\mathrm{HS}}^{2}\|b\|_{\mathrm{HS}}^{2}
+\frac12\sqrt{\langle a\rangle_*\langle b\rangle_*
 -\bigl|\operatorname{tr}a\,\operatorname{tr}b\bigr|^{2}} .
 $$
 
@@ -180,10 +180,10 @@ $$
 \operatorname{tr}L_{a}R_{b}=\langle V,U\rangle
 =(v^{*}u)(y^{*}x)=\operatorname{tr}a\,\operatorname{tr}b,
 \qquad
-\|L_{a}R_{b}\|_{\mathrm{HS}}=\|u\|\,\|y\|\,\|v\|\,\|x\|=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}} .
+\langle L_{a}R_{b}\rangle_*^{1/2}=\|u\|\,\|y\|\,\|v\|\,\|x\|=\langle a\rangle_*^{1/2}\langle b\rangle_*^{1/2} .
 $$
 
-The compression to the two-dimensional span of $U$ and $V$ — the rank-one case of *The Numerical Range and the Field of Values of $M_4(\mathbb{C})$* — gives the ellipse with foci the two eigenvalues, $0$ and $\operatorname{tr}L_{a}R_{b}$, and twice the semi-minor axis $\sqrt{\|T\|_{\mathrm{HS}}^{2}-|\operatorname{tr}T|^{2}}$.
+The compression to the two-dimensional span of $U$ and $V$ — the rank-one case of *The Numerical Range and the Field of Values of $M_4(\mathbb{C})$* — gives the ellipse with foci the two eigenvalues, $0$ and $\operatorname{tr}L_{a}R_{b}$, and twice the semi-minor axis $\sqrt{\langle T\rangle_*-|\operatorname{tr}T|^{2}}$.
 
 **Corollary (the matrix units).** For $a=E_{ij}$ and $b=E_{kl}$:
 
@@ -192,9 +192,9 @@ The compression to the two-dimensional span of $U$ and $V$ — the rank-one case
 
 **Proof.** The trace is $\delta_{ij}\delta_{kl}$ and the Hilbert–Schmidt norm is $1$. In the first case the foci coincide at $0$ and the ellipse is the disk of radius $\tfrac12$. In the second case $L_{a}R_{b}(X)=X_{ik}E_{ik}$ is the orthogonal projection onto the line $\mathbb{C}E_{ik}$, and the field of values of a rank-one projection is $[0,1]$.
 
-**Corollary (the trace-zero disk).** If $L_{a}R_{b}$ has rank one and trace zero, then $W(L_{a}R_{b})$ is the closed disk of radius $\tfrac12\|L_{a}R_{b}\|_{\mathrm{HS}}$.
+**Corollary (the trace-zero disk).** If $L_{a}R_{b}$ has rank one and trace zero, then $W(L_{a}R_{b})$ is the closed disk of radius $\tfrac12\langle L_{a}R_{b}\rangle_*^{1/2}$.
 
-**Proof.** The ellipse of the theorem has coincident foci at the origin and semi-minor axis $\tfrac12\|T\|_{\mathrm{HS}}$.
+**Proof.** The ellipse of the theorem has coincident foci at the origin and semi-minor axis $\tfrac12\langle T\rangle_*^{1/2}$.
 
 ## The Hermitian, the Projection and the Unitary Cases
 

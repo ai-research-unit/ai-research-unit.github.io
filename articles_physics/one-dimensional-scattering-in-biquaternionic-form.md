@@ -272,7 +272,7 @@ $$
 with $R+T=1$ for every $\beta$. For an attractive delta well, $\lambda<0$, there is exactly one bound state, at
 
 $$
-E_b = -\frac{k_m^{2}\,\lambda^{2}}{2\,m\,c^{2}} = -\frac{m\,c^{2}\,k_{\Phi,\mathrm{ev}}_{b}^{2}}{2\,k_m^{2}},
+E_b = -\frac{k_m^{2}\,\lambda^{2}}{2\,m\,c^{2}} = -\frac{m\,c^{2}\,k_{\Phi,\mathrm{ev},b}^{2}}{2\,k_m^{2}},
 \qquad
 k_{\Phi,\mathrm{ev},b} =\frac{|\lambda|\,k_m}{\frac{m\,c^{2}}{k_m}},
 $$
@@ -392,6 +392,8 @@ k_{\Phi,\mathrm{ev},b} =\frac{|\lambda|\,k_m}{\frac{m\,c^{2}}{k_m}},
 $$
 
 so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change of $\pi/2=\pi(1-\tfrac12)$ as the theorem requires. Each additional bound state shifts the threshold phase by $\pi$. The theorem is a useful bookkeeping check on any numerical solution of the matching problem, and the delta is the case in which it can be checked by hand.
+
+**The count is a winding number, and that is what makes the theorem a theorem rather than a fit.** The transmission amplitude is the reciprocal of a Jost function, $t=1/W(k_\Phi)$, with $W$ analytic in the upper half of the wave-number plane; its zeros there are the bound states, at $k_\Phi=i\kappa$ with $\kappa>0$, because a zero of $W$ on the imaginary axis is the homogeneous solution that decays on both sides. **The change of $\arg t$ along the real axis is then the change of a closed contour's argument**, and closing the contour above turns it into $2\pi$ times the number of zeros minus the number of poles enclosed. The phase therefore counts zeros without an integral being evaluated, and the count is an integer because a winding number is one. The half-unit offset in the display above is the threshold's fixed contribution: it is present for every potential, it is not part of the count, and it is the reason the theorem is stated with a $\pi/2$ and not with a $\pi$. **What the reading adds is not a number but the reason one statement holds for every potential**: it is the argument principle applied to the analytic function the transform provides.
 
 ## What the Biquaternion Form Adds
 

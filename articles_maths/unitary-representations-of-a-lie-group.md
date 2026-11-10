@@ -76,7 +76,7 @@ each irreducible representation occurring with multiplicity its dimension $\dim 
 **Theorem (Plancherel).** For a unimodular locally compact group of type I, the regular representation decomposes as the direct integral of the irreducible unitary representations with respect to a unique measure $\mu_{\mathrm{Pl}}$, the **Plancherel measure**, and for $f \in L^1(G)\cap L^2(G)$,
 
 $$
-\boxed{\;\int_G|f(g)|^2\,dg = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}(\lambda)\;},
+\boxed{\;\int_G|f(g)|^2\,dg = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}(\lambda)\;},
 $$
 
 where $\pi_\lambda(f) = \int_G f(g)\pi_\lambda(g)\,dg$ is the integrated representation and the norm is the Hilbert--Schmidt norm.
@@ -137,7 +137,7 @@ For $G = SL_2(\mathbb{R})$ the unitary dual consists of the principal series, th
 
 ## Summary
 
-A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by skew-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined **Plancherel measure** and the formula $\int_G|f|^2 = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.
+A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by skew-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined **Plancherel measure** and the formula $\int_G|f|^2 = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.
 
 ## Summary of Notation
 
@@ -151,7 +151,7 @@ A unitary representation of a Lie group is a strongly continuous homomorphism in
 | $\int_S^\oplus\mathcal{H}_s\,d\mu(s)$ | a direct integral of Hilbert spaces |
 | $L^2(G) \cong \bigoplus_\pi V_\pi\otimes V_\pi^*$ | the Peter--Weyl decomposition for compact $G$ |
 | $d\mu_{\mathrm{Pl}}$ | the Plancherel measure |
-| $\int_G|f|^2 = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}$ | the Plancherel formula |
+| $\int_G|f|^2 = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}$ | the Plancherel formula |
 | discrete series, tempered dual | the atomic and the continuous part |
 
 ## Further Reading

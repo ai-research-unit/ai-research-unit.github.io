@@ -220,11 +220,11 @@ $$
 
 ### The Norm Formula
 
-**Proposition.** The operator norm is a norm, and for Hermitian $A$ it is the maximum modulus of the eigenvalues. The Frobenius norm is $\|A\|_F=\sqrt{\sum_k\lambda_k^2}$ for Hermitian $A$.
+**Proposition.** The operator norm is a norm, and for Hermitian $A$ it is the maximum modulus of the eigenvalues. The Frobenius norm is $\langle A\rangle_*^{1/2}=\sqrt{\sum_k\lambda_k^2}$ for Hermitian $A$.
 
 **Proof.** The operator norm is the sup norm on the unit sphere; the Hermitian spectral decomposition gives the maximum eigenvalue modulus; the Frobenius norm is the square root of the trace of $A^2$, which is the sum of the squares of the eigenvalues.
 
-**Corollary.** For Hermitian $A$, $\|A\|\le\|A\|_F\le\sqrt5\|A\|$, with equality in the second inequality iff all eigenvalues have the same modulus.
+**Corollary.** For Hermitian $A$, $\|A\|\le\langle A\rangle_*^{1/2}\le\sqrt5\|A\|$, with equality in the second inequality iff all eigenvalues have the same modulus.
 
 **Proof.** The first inequality is the general comparison; the second is the comparison of the max and the Euclidean norm of the five eigenvalues.
 

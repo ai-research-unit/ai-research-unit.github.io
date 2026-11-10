@@ -11,7 +11,7 @@ $$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\|_E = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\| = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|$; they are distinct, and the whole topology is carried by the second.
 
 ## The Dual Plane as a Topological Space
 
@@ -23,7 +23,7 @@ $$
 Q = q + \varepsilon q' \longmapsto (q, q')
 $$
 
-is a linear isometry of $(\mathbb{C}_{\mathrm{dln}}, \|\cdot\|_E)$ onto $\mathbb{R}^2$ with the Euclidean metric. So the topology of $\mathbb{C}_{\mathrm{dln}}$ is the ordinary Euclidean topology of the plane, and the basis $(1, \varepsilon)$ is an orthonormal basis for $\|\cdot\|_E$.
+is a linear isometry of $(\mathbb{C}_{\mathrm{dln}}, \|\cdot\|)$ onto $\mathbb{R}^2$ with the Euclidean metric. So the topology of $\mathbb{C}_{\mathrm{dln}}$ is the ordinary Euclidean topology of the plane, and the basis $(1, \varepsilon)$ is an orthonormal basis for $\|\cdot\|$.
 
 **Proposition.** The product is bilinear, hence continuous, so $\mathbb{C}_{\mathrm{dln}}$ is a topological algebra over $\mathbb{R}$. Inversion is continuous on the units, so $(\mathbb{C}_{\mathrm{dln}})^\times$ is a topological group and the shear subgroup $1 + \mathrm{M}$ is a closed subgroup.
 
@@ -38,14 +38,14 @@ The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'^2$ induce dif
 **Definition.** The **Euclidean unit sphere** is
 
 $$
-S^1_E = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q\|_E = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
+S^1_E = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q\| = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
 $$
 
 It is a closed, compact, connected one-manifold.
 
 **Proposition.** The Euclidean norm is not multiplicative, and the Euclidean unit sphere is not closed under multiplication.
 
-**Proof.** For $Q = 1 + \varepsilon$ one has $\|Q\|_E = \sqrt{2}$ and $Q^2 = 1 + 2\varepsilon$ with $\|Q^2\|_E = \sqrt{5} \neq 2 = \|Q\|_E^2$. For closure, $\varepsilon$ lies on $S^1_E$ because $\|\varepsilon\|_E = 1$, but $\varepsilon^2 = 0 \notin S^1_E$.
+**Proof.** For $Q = 1 + \varepsilon$ one has $\|Q\| = \sqrt{2}$ and $Q^2 = 1 + 2\varepsilon$ with $\|Q^2\| = \sqrt{5} \neq 2 = \|Q\|^2$. For closure, $\varepsilon$ lies on $S^1_E$ because $\|\varepsilon\| = 1$, but $\varepsilon^2 = 0 \notin S^1_E$.
 
 So $S^1_E$ is not a subgroup of $(\mathbb{C}_{\mathrm{dln}})^\times$; indeed $\varepsilon \in S^1_E$ is a zero divisor, so $S^1_E \not\subseteq (\mathbb{C}_{\mathrm{dln}})^\times$. The sphere that *is* a union of group components is the norm-one set of the next section, not the Euclidean sphere.
 
@@ -149,9 +149,9 @@ $$
 L = \mathrm{M} \cap S^1_E = \{+\varepsilon,\, -\varepsilon\} \cong S^0.
 $$
 
-**Proposition.** Every nonzero element of $\mathrm{M}$ is uniquely $t\,u$ with $t = \|Q\|_E > 0$ and $u \in L$, so the null line is the cone on its link. The link has two points, reflecting that the isotropic line is the *double* line $q^2 = 0$: its intersection with the unit circle is double-counted.
+**Proposition.** Every nonzero element of $\mathrm{M}$ is uniquely $t\,u$ with $t = \|Q\| > 0$ and $u \in L$, so the null line is the cone on its link. The link has two points, reflecting that the isotropic line is the *double* line $q^2 = 0$: its intersection with the unit circle is double-counted.
 
-**Proof.** $\varepsilon q' = |q'|\operatorname{sgn}(q')\varepsilon$ with $\|\varepsilon q'\|_E = |q'|$; the two unit points are $\pm\varepsilon$. The equation $q^2 = 0$ is the square of the linear equation $q = 0$, so its projective solution is a single point of multiplicity two, met twice by the circle.
+**Proof.** $\varepsilon q' = |q'|\operatorname{sgn}(q')\varepsilon$ with $\|\varepsilon q'\| = |q'|$; the two unit points are $\pm\varepsilon$. The equation $q^2 = 0$ is the square of the linear equation $q = 0$, so its projective solution is a single point of multiplicity two, met twice by the circle.
 
 This is the topological face of the degeneracy. For a non-degenerate indefinite form in two variables the isotropic cone is a pair of lines, of real dimension one, and its link is the four-point set of normalized null directions, as in the split complex case. For the degenerate dual form the cone is a single line, but the form is the square $q^2$ of the linear form $q$, so the line is met with multiplicity two: the link is the two-point space $\{\pm\varepsilon\}$, which counts the one projective null direction twice.
 
@@ -179,8 +179,8 @@ The dual-number algebra $\mathbb{C}_{\mathrm{dln}}$, with its Euclidean topology
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\langle Q\rangle = q^2$ | Norm |
-| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean norm, giving the topology |
-| $S^1_E = \{\|Q\|_E = 1\}$ | Euclidean unit sphere $\cong S^1$ |
+| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean norm, giving the topology |
+| $S^1_E = \{\|Q\| = 1\}$ | Euclidean unit sphere $\cong S^1$ |
 | $H = \{\langle Q\rangle = 1\}$ | Norm-one set, lines $q = \pm 1$, $\simeq S^0$ |
 | $\mathrm{M} = (\varepsilon) = \{q = 0\}$ | Maximal ideal, null line, $\cong \mathbb{R}$ |
 | $\mathcal{Z} = \mathrm{M}\setminus\{0\}$ | Zero-divisor set |

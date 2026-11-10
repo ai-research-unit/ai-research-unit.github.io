@@ -322,10 +322,10 @@ $$
 and it is **anti-Hermitian**, $\tilde J_{\Phi,\mathrm{sp}}^{*} = -\tilde J_{\Phi,\mathrm{sp}}$, hence an element of the material sector $\mathbb{B}_{\Phi}$ — the same sector as the four-current $ic\rho\,e_t + \vec J$ of the Maxwell article. The third property makes it a density candidate: the bilinear before the $i$ has the real scalar part
 
 $$
-\mathrm{Sc}\!\left(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*\right) = \|\tilde{Ξ}_{\mathrm{sp}}\|_E^2 \ \ge 0 ,
+\mathrm{Sc}\!\left(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*\right) = \|\tilde{Ξ}_{\mathrm{sp}}\|^2 \ \ge 0 ,
 $$
 
-the square of the topological norm, so the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ itself is $i\,\|\tilde{Ξ}_{\mathrm{sp}}\|_E^2$ — a positive imaginary number, of the $ic\rho$ form of a positive density with $c\rho = \|\tilde{Ξ}_{\mathrm{sp}}\|_E^2$. By these three tests it is a plausible current.
+the square of the topological norm, so the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ itself is $i\,\|\tilde{Ξ}_{\mathrm{sp}}\|^2$ — a positive imaginary number, of the $ic\rho$ form of a positive density with $c\rho = \|\tilde{Ξ}_{\mathrm{sp}}\|^2$. By these three tests it is a plausible current.
 
 **It is not conserved.** The divergence of $\tilde J_{\Phi,\mathrm{sp}}$ in the $i r'_t$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde J_{\Phi,\mathrm{sp}}$,
 
@@ -558,7 +558,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Minimally coupled Dirac equation |
 | $\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | Interaction term |
 | $\exp(\frac{2\,k_m\,i\,ϙ\,\Gamma}{m\,c})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
-| $\|\tilde{Ξ}_{\mathrm{sp}}\|_E^2 = \mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
+| $\|\tilde{Ξ}_{\mathrm{sp}}\|^2 = \mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
 | $\tilde J_{\Phi,\mathrm{sp}} = i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ | Naive bilinear; gauge invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J_{\Phi}$ |
 | $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |

@@ -203,13 +203,13 @@ The group decomposition is $GL_4=U(4)\exp(\operatorname{Herm}_4)$.
 **Theorem.** The $*$-unitary factor $W$ of $A=WP$ is the closest $*$-unitary to $A$ in the Frobenius norm:
 
 $$
-\lVert A-W\rVert_F=\min_{Q\in U(4)}\lVert A-Q\rVert_F .
+\langle A-W\rangle_*^{1/2}=\min_{Q\in U(4)}\langle A-Q\rangle_*^{1/2} .
 $$
 
 The minimum value is
 
 $$
-\lVert A-U\rVert_F^2=\lVert A\rVert_F^2+4-2\lVert A\rVert_*,
+\langle A-U\rangle_*=\langle A\rangle_*+4-2\lVert A\rVert_*,
 $$
 
 where $\lVert A\rVert_*=\sum_k\sigma_k$ is the nuclear norm.
@@ -217,7 +217,7 @@ where $\lVert A\rVert_*=\sum_k\sigma_k$ is the nuclear norm.
 **Proof.** For $Q\in U(4)$,
 
 $$
-\lVert A-Q\rVert_F^2=\lVert A\rVert_F^2+4-2\operatorname{Re}\operatorname{tr}(Q^*A).
+\langle A-Q\rangle_*=\langle A\rangle_*+4-2\operatorname{Re}\operatorname{tr}(Q^*A).
 $$
 
 The maximum of $\operatorname{Re}\operatorname{tr}(Q^*A)$ over $*$-unitary $Q$ is the nuclear norm $\lVert A\rVert_*$, attained at $Q=UV^*$ where $A=U\Sigma V^*$. This is the duality of the operator and nuclear norms. The polar factor is this $W=UV^*$.
@@ -286,7 +286,7 @@ the positive definite $2\times2$ Hermitian cone, of real dimension $4$. The expo
 
 ## Summary
 
-Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is $*$-unitary, uniquely determined on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The $*$-unitary factor is the closest $*$-unitary to $A$ in the Frobenius norm, with distance squared $\lVert A\rVert_F^2+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the exponential polar decomposition.
+Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is $*$-unitary, uniquely determined on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The $*$-unitary factor is the closest $*$-unitary to $A$ in the Frobenius norm, with distance squared $\langle A\rangle_*+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the exponential polar decomposition.
 
 $$
 \boxed{\ A=UP,\quad P=(A^*A)^{1/2},\quad U\in U(4),\quad P\ge0,\quad GL_4/U(4)\cong P_+,\quad \dim_\mathbb{R}P_+=16. }

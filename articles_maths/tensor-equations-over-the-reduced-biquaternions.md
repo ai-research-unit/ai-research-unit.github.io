@@ -53,7 +53,7 @@ so every solution has the stated form. Conversely, every tensor of that form is 
 *Proof.* The two terms of the general solution are orthogonal: $L_A\ast A^\dagger=0$, hence $(A^\dagger)^{\mathsf H}\ast L_A=0$, and
 
 $$
-\|A^\dagger\ast B+L_A\ast Y\|_{\mathrm F}^2=\|A^\dagger\ast B\|_{\mathrm F}^2+\|L_A\ast Y\|_{\mathrm F}^2.
+\langle A^\dagger\ast B+L_A\ast Y\rangle_*=\langle A^\dagger\ast B\rangle_*+\langle L_A\ast Y\rangle_*.
 $$
 
 The minimum is attained at $L_A\ast Y=0$.
@@ -79,7 +79,7 @@ $$
 *Proof.* By the norm identity of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*,
 
 $$
-\|A\ast X-B\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\operatorname{diag}(\widehat X)-\operatorname{diag}(\widehat B)\|_{\mathrm F}.
+\langle A\ast X-B\rangle_*^{1/2}=\frac1{\sqrt{n_3}}\langle \operatorname{diag}(\widehat A)\operatorname{diag}(\widehat X)-\operatorname{diag}(\widehat B)\rangle_*^{1/2}.
 $$
 
 The minimum is therefore attained slice by slice, and the matrix least-squares solutions of $\widehat A^{(k)}\widehat X^{(k)}=\widehat B^{(k)}$ are
@@ -183,7 +183,7 @@ plus the slicewise matrix multiplications. The two coordinates are independent a
 
 ## Verification
 
-The statements were recomputed on random tensors of sizes $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. For a consistent system, the norms $\|R_A\ast B\|_{\mathrm F}$ and $\|A\ast X_0-B\|_{\mathrm F}$ were at most $1.6\times10^{-14}$, and the general solution reproduced $B$ to $2.4\times10^{-14}$. For an inconsistent system, the normal equation held to $1.5\times10^{-13}$, and the identity $\|X\|_{\mathrm F}^2=\|A^\dagger\ast B\|_{\mathrm F}^2+\|L_A\ast W\|_{\mathrm F}^2$ held to $1.8\times10^{-29}$. For the Hermitian problem, the residual was $3.1\times10^{-14}$, the symmetry $X^{\mathsf H}-X$ was $4.8\times10^{-15}$, and the completeness with $U=X_0$ held to $3.8\times10^{-15}$; a tensor in the range of $A$ whose product $B\ast A^{\mathsf H}$ was not Hermitian failed the condition by $84.07$. For the right-handed equation, the normal equation held to $1.7\times10^{-13}$, the minimum-norm identity to $2.7\times10^{-15}$, and the consistent solution to $1.9\times10^{-14}$.
+The statements were recomputed on random tensors of sizes $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. For a consistent system, the norms $\langle R_A\ast B\rangle_*^{1/2}$ and $\langle A\ast X_0-B\rangle_*^{1/2}$ were at most $1.6\times10^{-14}$, and the general solution reproduced $B$ to $2.4\times10^{-14}$. For an inconsistent system, the normal equation held to $1.5\times10^{-13}$, and the identity $\langle X\rangle_*=\langle A^\dagger\ast B\rangle_*+\langle L_A\ast W\rangle_*$ held to $1.8\times10^{-29}$. For the Hermitian problem, the residual was $3.1\times10^{-14}$, the symmetry $X^{\mathsf H}-X$ was $4.8\times10^{-15}$, and the completeness with $U=X_0$ held to $3.8\times10^{-15}$; a tensor in the range of $A$ whose product $B\ast A^{\mathsf H}$ was not Hermitian failed the condition by $84.07$. For the right-handed equation, the normal equation held to $1.7\times10^{-13}$, the minimum-norm identity to $2.7\times10^{-15}$, and the consistent solution to $1.9\times10^{-14}$.
 
 ## Summary
 

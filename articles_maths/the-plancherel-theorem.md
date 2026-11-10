@@ -26,7 +26,7 @@ $$
 where the trace is the ordinary trace on the finite-rank operators and $(\mathcal F f)(\pi)(\mathcal F h)(\pi)^*$ is trace class. Taking $h = f$ gives the **isometric form**
 
 $$
-\boxed{\;\int_{\operatorname{Irr}(G)} \bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) \;=\; \int_G |f(g)|^2\,dg\;} ,
+\boxed{\;\int_{\operatorname{Irr}(G)} \bigl\langle (\mathcal F f)(\pi)\bigr\rangle_*\,d\mu_P(\pi) \;=\; \int_G |f(g)|^2\,dg\;} ,
 $$
 
 and taking $h$ to be an approximate identity concentrated at $e$ and passing to the limit gives the **definite form**
@@ -135,7 +135,7 @@ $$
 so that the Plancherel identity is
 
 $$
-\int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 ,
+\int_K |f(k)|^2\,dk = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\langle (\mathcal F f)(\pi)\rangle_* ,
 $$
 
 and inversion is $f(k) = \sum_\pi d_\pi\operatorname{Tr}((\mathcal F f)(\pi)\pi(k)^{-1})$, both of *Analysis on Compact Groups*, §The Inversion and Plancherel Formulas. The definite form $f(e) = \sum_\pi d_\pi\operatorname{Tr}(\mathcal F f)(\pi)$ is the expansion of the delta mass at $e$. The weights $d_\pi$ are the multiplicities of the Peter–Weyl decomposition of *The Peter–Weyl Theorem*: the general abstract multiplicity $d_\pi = \dim\mathcal{H}_\pi$ becomes, in the compact case, the multiplicity of $\pi$ in the regular representation. Checking the normalisation, the Plancherel measure of $S^1$ is counting measure on $\mathbb{Z}$ with weights $d_n = 1$, and that of $SU(2)$ is $\sum_j(2j+1)\delta_j$ on the half-integer spins.
@@ -143,7 +143,7 @@ and inversion is $f(k) = \sum_\pi d_\pi\operatorname{Tr}((\mathcal F f)(\pi)\pi(
 **Finite groups.** For a finite group $K$ with the normalised counting measure, $(\mathcal F f)(\pi) = \frac{1}{|K|}\sum_{k}f(k)\pi(k)$, and the Plancherel identity reads
 
 $$
-\frac{1}{|K|}\sum_{k\in K}|f(k)|^2 = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2 .
+\frac{1}{|K|}\sum_{k\in K}|f(k)|^2 = \sum_{\pi\in\operatorname{Irr}(K)} d_\pi\,\langle (\mathcal F f)(\pi)\rangle_* .
 $$
 
 For $f = \delta_e$ both sides are $1/|K|$: the left side is $1/|K|$, and the right is $\sum_\pi d_\pi\cdot d_\pi/|K|^2 = \sum_\pi d_\pi^2/|K|^2 = |K|/|K|^2$. This is the Parseval identity of the discrete Fourier analysis on a finite group, and it is the Plancherel theorem in the case where all integrals are finite sums.
@@ -215,7 +215,7 @@ If $G$ is not of type I, no Plancherel measure exists. For the free group $F_2$,
 
 ## Summary
 
-For a second countable unimodular group $G$ of type I the Plancherel theorem states that there is a unique Radon measure $\mu_P$ on the unitary dual $\operatorname{Irr}(G)$ — the Plancherel measure — such that the operator-valued Fourier transform $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)dg$ is isometric, $\int_{\operatorname{Irr}(G)}\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2d\mu_P(\pi) = \int_G|f(g)|^2dg$, definite, $f(e) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}((\mathcal F f)(\pi))d\mu_P(\pi)$, and invertible, $f(g) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}((\mathcal F f)(\pi)\pi(g)^{-1})d\mu_P(\pi)$; equivalently, the transform extends to a unitary equivalence $L^2(G)\cong\int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P$. The measure is uniquely determined by the trace of the group von Neumann algebra, $\tau(a) = \int\operatorname{Tr}(a(\pi))d\mu_P(\pi)$, and its existence is Dixmier's abstract theorem, the fibres of the central decomposition $L(G)\cong\int^\oplus B(\mathcal{H}_\pi)d\mu_P$ being the irreducibles with multiplicity $d_\pi = \dim\mathcal{H}_\pi$. The abelian case recovers the dual Haar measure and the classical Plancherel identity, the compact case is the weighted counting measure $\sum_\pi d_\pi\delta_\pi$ and the Peter–Weyl Plancherel identity, and the finite case is Parseval for the discrete transform; the Heisenberg group has density $|\lambda|d\lambda$ on its infinite-dimensional series, the semisimple groups have Harish-Chandra's measure with the $c$-function density on the tempered part and formal-degree atoms on the discrete series, the spherical transform on a symmetric space is the class-one part, and the nilpotent groups are governed by Kirillov's orbit method with the pushforward of Lebesgue measure on $\mathrm{G}^*/\operatorname{Ad}^*(G)$. Outside the hypotheses the theorem changes form for non-unimodular groups, where the transform acquires a $\Delta^{1/2}$ correction, and fails altogether for non-type-I groups, where $F_2$ exhibits a $\mathrm{II}_1$ factor and no Plancherel measure.
+For a second countable unimodular group $G$ of type I the Plancherel theorem states that there is a unique Radon measure $\mu_P$ on the unitary dual $\operatorname{Irr}(G)$ — the Plancherel measure — such that the operator-valued Fourier transform $(\mathcal F f)(\pi) = \int_G f(g)\pi(g)dg$ is isometric, $\int_{\operatorname{Irr}(G)}\langle (\mathcal F f)(\pi)\rangle_*d\mu_P(\pi) = \int_G|f(g)|^2dg$, definite, $f(e) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}((\mathcal F f)(\pi))d\mu_P(\pi)$, and invertible, $f(g) = \int_{\operatorname{Irr}(G)}\operatorname{Tr}((\mathcal F f)(\pi)\pi(g)^{-1})d\mu_P(\pi)$; equivalently, the transform extends to a unitary equivalence $L^2(G)\cong\int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P$. The measure is uniquely determined by the trace of the group von Neumann algebra, $\tau(a) = \int\operatorname{Tr}(a(\pi))d\mu_P(\pi)$, and its existence is Dixmier's abstract theorem, the fibres of the central decomposition $L(G)\cong\int^\oplus B(\mathcal{H}_\pi)d\mu_P$ being the irreducibles with multiplicity $d_\pi = \dim\mathcal{H}_\pi$. The abelian case recovers the dual Haar measure and the classical Plancherel identity, the compact case is the weighted counting measure $\sum_\pi d_\pi\delta_\pi$ and the Peter–Weyl Plancherel identity, and the finite case is Parseval for the discrete transform; the Heisenberg group has density $|\lambda|d\lambda$ on its infinite-dimensional series, the semisimple groups have Harish-Chandra's measure with the $c$-function density on the tempered part and formal-degree atoms on the discrete series, the spherical transform on a symmetric space is the class-one part, and the nilpotent groups are governed by Kirillov's orbit method with the pushforward of Lebesgue measure on $\mathrm{G}^*/\operatorname{Ad}^*(G)$. Outside the hypotheses the theorem changes form for non-unimodular groups, where the transform acquires a $\Delta^{1/2}$ correction, and fails altogether for non-type-I groups, where $F_2$ exhibits a $\mathrm{II}_1$ factor and no Plancherel measure.
 
 ## Summary of Notation
 

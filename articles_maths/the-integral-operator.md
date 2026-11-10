@@ -207,21 +207,21 @@ the one that gives compactness below, and the $L^1$ case need not.
 **Definition.** An integral operator $T_K$ is **Hilbert–Schmidt** if
 $K\in L^2(X\times Y,\mu\otimes\nu)$, and its **Hilbert–Schmidt norm** is
 $$
-\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2(X\times Y)}
+\langle T_K\rangle_*^{1/2}=\lVert K\rVert_{L^2(X\times Y)}
 =\Bigl(\iint_{X\times Y}\lvert K(x,y)\rvert^2\,d\mu(x)\,d\nu(y)\Bigr)^{1/2}.
 $$
 The operator is of **finite rank** if its image is finite-dimensional, and **of rank one** if the image is
 one-dimensional.
 
-By the Hilbert–Schmidt bound, $\lVert T_K\rVert\leq\lVert T_K\rVert_{\mathrm{HS}}$, so the
+By the Hilbert–Schmidt bound, $\lVert T_K\rVert\leq\langle T_K\rangle_*^{1/2}$, so the
 Hilbert–Schmidt norm dominates the operator norm; the two are not equal in general, and the inequality is
 strict for a rank-one kernel whose factor has norm one, where $\lVert T_K\rVert=1$ while
-$\lVert T_K\rVert_{\mathrm{HS}}$ is the product of the two factor norms and may be larger.
+$\langle T_K\rangle_*^{1/2}$ is the product of the two factor norms and may be larger.
 
 **Theorem (the Hilbert–Schmidt norm is basis independent).** Let $(X,\mu)$ and $(Y,\nu)$ be separable
 measure spaces, with orthonormal bases $\{e_i\}$ of $L^2(X,\mu)$ and $\{f_j\}$ of $L^2(Y,\nu)$. Then
 $$
-\lVert T_K\rVert_{\mathrm{HS}}^2=\sum_{i,j}\lvert\langle T_Kf_j,e_i\rangle\rvert^2 ,
+\langle T_K\rangle_*=\sum_{i,j}\lvert\langle T_Kf_j,e_i\rangle\rvert^2 ,
 $$
 the series converging and the value not depending on the two bases.
 
@@ -238,7 +238,7 @@ statement, and the basis-independence is the basis-independence of the Parseval 
 
 **Theorem.** Let $K\in L^2(X\times Z)$ and $L\in L^2(Z\times Y)$. Then $K\star L\in L^2(X\times Y)$ and
 $$
-\boxed{\;\lVert K\star L\rVert_{\mathrm{HS}}\leq\lVert K\rVert_{\mathrm{HS}}\,\lVert L\rVert_{\mathrm{HS}}\;} .
+\boxed{\;\langle K\star L\rangle_*^{1/2}\leq\langle K\rangle_*^{1/2}\,\langle L\rangle_*^{1/2}\;} .
 $$
 Consequently the Hilbert–Schmidt operators are closed under composition and under multiplication on either
 side by an integral operator, and the composition of two Hilbert–Schmidt operators is Hilbert–Schmidt.
@@ -327,7 +327,7 @@ kernel is square-integrable, by Cauchy–Schwarz and Tonelli; it is bounded on e
 $\lVert T_K\rVert\leq C$ whenever a nonnegative kernel has row and column integrals bounded by $C$, by the
 Schur test; and it is bounded on every $L^{n}$ with $\lVert T_K\rVert\leq\lVert k\rVert_1$ when the kernel is
 translation invariant with an integrable profile, by Young's inequality. The Hilbert–Schmidt operators are
-the square-integrable kernels, with norm $\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_2$ dominating the
+the square-integrable kernels, with norm $\langle T_K\rangle_*^{1/2}=\lVert K\rVert_2$ dominating the
 operator norm, basis-independent and multiplicative under composition; they are the ideal of the bounded
 operators that this article reaches without the general theory. A square-integrable kernel is the
 $L^2$-limit of its finite-rank truncations and the operator the operator-norm limit of finite-rank
@@ -344,7 +344,7 @@ to the Fredholm alternative.
 | $K\star L$ | Kernel product $(K\star L)(x,y)=\int_ZK(x,z)L(z,y)\,dz$, with $T_{K\star L}=T_KT_L$ |
 | $\lVert K\rVert_2$ | $L^2(X\times Y)$ norm of the kernel |
 | $\lVert T_K\rVert$ | Operator norm on $L^2$ |
-| $\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_2$ | Hilbert–Schmidt norm |
+| $\langle T_K\rangle_*^{1/2}=\lVert K\rVert_2$ | Hilbert–Schmidt norm |
 | $C$ | Schur constant, bounding the row and column integrals |
 | $k$ | Profile of a translation-invariant kernel $K(x,y)=k(x-y)$ |
 | compact | Image of the closed unit ball relatively compact |

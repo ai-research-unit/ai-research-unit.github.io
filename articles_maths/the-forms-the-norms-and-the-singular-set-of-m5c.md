@@ -11,7 +11,7 @@ $$
 and it is the norm of the algebra in the sense of a multiplicative form. It is **not** a norm in the analytic sense: it is complex-valued, it is not positive, and it is not homogeneous of degree one. The analytic norms are the Frobenius norm
 
 $$
-\|A\|_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2
+\langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2
 $$
 
 and the operator norm
@@ -72,7 +72,7 @@ It is not additive: $\det(A+B)\ne\det A+\det B$ in general.
 
 **Proof.** The multiplicativity is the composition property; the form has degree $5$, not $2$, so it is not the quadratic norm of a composition algebra. The nilpotent matrices are nonzero with norm zero, so there are zero divisors.
 
-**Remark.** **The word "norm" has three meanings in this category.** The determinant norm is the multiplicative form of degree $5$; the Frobenius norm is the Euclidean norm of the $25$ coordinates; the operator norm is the sup norm on the unit sphere. They agree only in special cases: for a scalar matrix $\lambda I$, $\det(\lambda I)=\lambda^5$, $\|\lambda I\|_F=\sqrt5|\lambda|$, $\|\lambda I\|=|\lambda|$. The three must not be confused.
+**Remark.** **The word "norm" has three meanings in this category.** The determinant norm is the multiplicative form of degree $5$; the Frobenius norm is the Euclidean norm of the $25$ coordinates; the operator norm is the sup norm on the unit sphere. They agree only in special cases: for a scalar matrix $\lambda I$, $\det(\lambda I)=\lambda^5$, $\langle \lambda I\rangle_*^{1/2}=\sqrt5|\lambda|$, $\|\lambda I\|=|\lambda|$. The three must not be confused.
 
 ### The Determinant Form on $M_5$
 
@@ -110,7 +110,7 @@ $$
 
 **Definition.** The **Frobenius form** is $\langle A,B\rangle_F=\operatorname{tr}(A^*B)$.
 
-**Theorem.** The Frobenius form is a positive definite Hermitian inner product; the only null vector is zero. It defines the Frobenius norm $\|A\|_F=\sqrt{\langle A,A\rangle_F}$.
+**Theorem.** The Frobenius form is a positive definite Hermitian inner product; the only null vector is zero. It defines the Frobenius norm $\langle A\rangle_*^{1/2}=\sqrt{\langle A,A\rangle_F}$.
 
 **Proof.** $\langle A,A\rangle_F=\sum_{ij}|A_{ij}|^2$, positive for $A\ne0$; the conjugate symmetry is $\overline{\operatorname{tr}(A^*B)}=\operatorname{tr}(B^*A)$.
 
@@ -131,10 +131,10 @@ where $\|\cdot\|_2$ is the standard Hermitian norm on $\mathbb{C}^5$.
 **Proposition.** The operator norm is a norm, and
 
 $$
-\|A\|\le\|A\|_F\le\sqrt5\,\|A\| .
+\|A\|\le\langle A\rangle_*^{1/2}\le\sqrt5\,\|A\| .
 $$
 
-**Proof.** The operator norm is the sup of the continuous function $x\mapsto\|Ax\|$ on the compact unit sphere; the triangle inequality and homogeneity are immediate. For the first inequality, $\|Ax\|_2^2=\sum_i|\sum_jA_{ij}x_j|^2\le\sum_i(\sum_j|A_{ij}|^2)(\sum_j|x_j|^2)=\|A\|_F^2\|x\|_2^2$ by Cauchy–Schwarz. For the second, $\|A\|_F^2=\sum_i\|Ae_i\|_2^2\le\sum_i\|A\|^2=5\|A\|^2$.
+**Proof.** The operator norm is the sup of the continuous function $x\mapsto\|Ax\|$ on the compact unit sphere; the triangle inequality and homogeneity are immediate. For the first inequality, $\|Ax\|_2^2=\sum_i|\sum_jA_{ij}x_j|^2\le\sum_i(\sum_j|A_{ij}|^2)(\sum_j|x_j|^2)=\langle A\rangle_*\|x\|_2^2$ by Cauchy–Schwarz. For the second, $\langle A\rangle_*=\sum_i\|Ae_i\|_2^2\le\sum_i\|A\|^2=5\|A\|^2$.
 
 **Corollary (Hadamard).** $|\det A|\le\|A\|^5$.
 
@@ -233,7 +233,7 @@ and complex codimension $(5-r)^2$. The exact rank-$r$ stratum $M_5^{(r)}\setminu
 
 ## Summary
 
-The determinant is a multiplicative form of degree $5$; it is the norm of the algebra, but it is not a norm in the analytic sense. The analytic norms are the Frobenius norm and the operator norm, related by $\|A\|\le\|A\|_F\le\sqrt5\|A\|$. The determinant is bounded by the operator norm, $|\det A|\le\|A\|^5$ (Hadamard).
+The determinant is a multiplicative form of degree $5$; it is the norm of the algebra, but it is not a norm in the analytic sense. The analytic norms are the Frobenius norm and the operator norm, related by $\|A\|\le\langle A\rangle_*^{1/2}\le\sqrt5\|A\|$. The determinant is bounded by the operator norm, $|\det A|\le\|A\|^5$ (Hadamard).
 
 $$
 \boxed{\ \det\text{ is a multiplicative form of degree }5;\quad \Sigma=\{\det=0\}\text{ has real codimension }2;\quad \text{no null cone.}\ }
@@ -246,7 +246,7 @@ The singular set is the determinantal hypersurface of rank at most $4$, of compl
 | Determinant | Multiplicative form of degree $5$ |
 | Frobenius norm | $\sqrt{\sum_{ij}|A_{ij}|^2}$ |
 | Operator norm | $\sup_{\|x\|=1}\|Ax\|$ |
-| Norm comparison | $\|A\|\le\|A\|_F\le\sqrt5\|A\|$ |
+| Norm comparison | $\|A\|\le\langle A\rangle_*^{1/2}\le\sqrt5\|A\|$ |
 | Hadamard | $|\det A|\le\|A\|^5$ |
 | Singular set | $\det=0$, complex dimension $24$ |
 | Real codimension | $2$ |
@@ -259,7 +259,7 @@ The singular set is the determinantal hypersurface of rank at most $4$, of compl
 | Symbol | Meaning |
 |---|---|
 | $N(A)=\det A$ | The determinant norm |
-| $\|A\|_F$ | The Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | The Frobenius norm |
 | $\|A\|$ | The operator norm |
 | $\langle A,B\rangle_{\mathrm{tr}}=\operatorname{tr}(AB)$ | The trace pairing, indefinite |
 | $\langle A,B\rangle_F=\operatorname{tr}(A^*B)$ | The Frobenius form, positive definite |

@@ -19,7 +19,7 @@ $$
 with $U$ and $V$ $*$-unitary and $S$ f-diagonal. Write $w=\min(n_1,n_2)$. The **tubal rank** of $A$ is
 
 $$
-\operatorname{rank}_{\mathrm t}(A)=\#\{i\in\{1,\dots,w\}:\|S(i,i,:)\|_{\mathrm F}>0\}.
+\operatorname{rank}_{\mathrm t}(A)=\#\{i\in\{1,\dots,w\}:\langle S(i,i,:)\rangle_*^{1/2}>0\}.
 $$
 
 The rank counts the nonzero **diagonal tubes**, not the nonzero entries and not the nonzero frontal slices. It is at most $w$. The tensor is zero if and only if its tubal rank is zero.
@@ -68,9 +68,9 @@ plus $O(n_3k(n_1+n_2))$ for the reconstruction. The truncation is performed slic
 
 $$
 \boxed{\;
-\|A-A_k\|_{\mathrm F}
-=\min_{\operatorname{rank}_{\mathrm t}(B)\le k}\|A-B\|_{\mathrm F}
-=\Bigl(\sum_{i=k+1}^{w}\|S(i,i,:)\|_{\mathrm F}^2\Bigr)^{1/2}
+\langle A-A_k\rangle_*^{1/2}
+=\min_{\operatorname{rank}_{\mathrm t}(B)\le k}\langle A-B\rangle_*^{1/2}
+=\Bigl(\sum_{i=k+1}^{w}\langle S(i,i,:)\rangle_*\Bigr)^{1/2}
 \;}.
 $$
 
@@ -79,21 +79,21 @@ The minimum is attained at $A_k$; it is not unique when singular values coincide
 *Proof.* By the norm identity of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*,
 
 $$
-\|A-B\|_{\mathrm F}^2=\frac1{n_3}\sum_{s=1}^{n_3}\|\widehat A^{(s)}-\widehat B^{(s)}\|_{\mathrm F}^2.
+\langle A-B\rangle_*=\frac1{n_3}\sum_{s=1}^{n_3}\langle \widehat A^{(s)}-\widehat B^{(s)}\rangle_*.
 $$
 
 If $\operatorname{rank}_{\mathrm t}(B)\le k$, then every transform slice $\widehat B^{(s)}$ has rank at most $k$: the tubal rank is the largest rank of the transform slices by the theorem above. For each $s$, the matrix Eckart-Young theorem over the two complex coordinates gives
 
 $$
-\|\widehat A^{(s)}-\widehat B^{(s)}\|_{\mathrm F}^2
+\langle \widehat A^{(s)}-\widehat B^{(s)}\rangle_*
 \ge\sum_{i=k+1}^{w}\tfrac12\bigl(\widehat S_{(1)}(i,i,s)^2+\widehat S_{(2)}(i,i,s)^2\bigr),
 $$
 
 where $\widehat S_{(1)}$ and $\widehat S_{(2)}$ are the two complex coordinate diagonals of $\widehat S$. Summing over $s$ and dividing by $n_3$ gives the lower bound
 
 $$
-\|A-B\|_{\mathrm F}^2\ge\frac1{n_3}\sum_{s=1}^{n_3}\sum_{i=k+1}^{w}\tfrac12\bigl(\widehat S_{(1)}(i,i,s)^2+\widehat S_{(2)}(i,i,s)^2\bigr)
-=\sum_{i=k+1}^{w}\|S(i,i,:)\|_{\mathrm F}^2,
+\langle A-B\rangle_*\ge\frac1{n_3}\sum_{s=1}^{n_3}\sum_{i=k+1}^{w}\tfrac12\bigl(\widehat S_{(1)}(i,i,s)^2+\widehat S_{(2)}(i,i,s)^2\bigr)
+=\sum_{i=k+1}^{w}\langle S(i,i,:)\rangle_*,
 $$
 
 where the last equality is the norm identity applied to the tail of the t-SVD. The tensor $A_k$ attains the bound, so it is a minimizer.

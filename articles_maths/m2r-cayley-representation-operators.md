@@ -82,7 +82,7 @@ $$
 \operatorname{rank}L_{Q}R_{P}=\begin{cases}2,&QP\neq0\\0,&QP=0,\end{cases}\qquad
 \operatorname{tr}L_{Q}R_{P}=2\operatorname{Re}(QP),\qquad
 \det L_{Q}R_{P}=N(QP),\qquad
-\lVert L_{Q}R_{P}\rVert_F^{2}=2N(QP).
+\langle L_{Q}R_{P}\rangle_*=2N(QP).
 $$
 
 **Proof.** $L_{Q}R_{P}$ is the matrix $\mathsf{M}_2(QP)$, so the four quantities are the trace, the determinant and the Frobenius norm of a Cayley matrix, read from the model article.

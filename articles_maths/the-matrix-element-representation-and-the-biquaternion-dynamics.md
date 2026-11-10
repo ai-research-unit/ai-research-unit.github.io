@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is isomorphic to the algebra of two-by-two complex matrices, and the isomorphism transports the quadratic family to the matrix family $M\mapsto M^2+N$ with $N=\mathsf{M}_2(\tilde Q_3)$, the conjugations to the operations of adjugate, conjugate transpose and their composition, and the two norms $\langle\cdot\rangle_{\natural}$ and $\|\cdot\|_E$ to the determinant and, up to the factor $\sqrt2$, the Frobenius norm. The model is the working tool of the category: every computation in the biquaternion dynamics is a computation in $M_2(\mathbb{C})$, and every invariant of the element is an invariant of its matrix. The article states what the model carries, what it does not, and where the passage has a twist.
+The biquaternion algebra is isomorphic to the algebra of two-by-two complex matrices, and the isomorphism transports the quadratic family to the matrix family $M\mapsto M^2+N$ with $N=\mathsf{M}_2(\tilde Q_3)$, the conjugations to the operations of adjugate, conjugate transpose and their composition, and the two norms $\langle\cdot\rangle_{\natural}$ and $\|\cdot\|$ to the determinant and, up to the factor $\sqrt2$, the Frobenius norm. The model is the working tool of the category: every computation in the biquaternion dynamics is a computation in $M_2(\mathbb{C})$, and every invariant of the element is an invariant of its matrix. The article states what the model carries, what it does not, and where the passage has a twist.
 
 The isomorphism and its basic properties, the trace and the determinant, the spectrum and the Cayley–Hamilton identity are *$M_2(\mathbb{C})$ Pauli Representation*; the four conjugations in matrix form are in the second of these; the quadratic family is *The Biquaternion Quadratic Map and Its Julia Sets*; the norms are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The several-variable complex theory the matrix family belongs to is *Several Complex Variables* and the holomorphic dynamics of Part III.
 
@@ -51,9 +51,9 @@ with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are 
 
 ## The Norm Comparison and the Escape Notions
 
-**Proposition (the Frobenius and Euclidean norms).** For every biquaternion, $\|\mathsf{M}_2(\tilde Q_1)\|_F=\sqrt2\,\|\tilde Q_1\|_E$; for every pair, $\|\tilde Q_2\tilde Q_1\|_E\le\sqrt2\,\|\tilde Q_2\|_E\|\tilde Q_1\|_E$; and the induced operator norm satisfies $\|M\|_2\le\sqrt2\,\|\tilde Q_1\|_E$.
+**Proposition (the Frobenius and Euclidean norms).** For every biquaternion, $\langle \mathsf{M}_2(\tilde Q_1)\rangle_*^{1/2}=\sqrt2\,\|\tilde Q_1\|$; for every pair, $\|\tilde Q_2\tilde Q_1\|\le\sqrt2\,\|\tilde Q_2\|\|\tilde Q_1\|$; and the induced operator norm satisfies $\|M\|_2\le\sqrt2\,\|\tilde Q_1\|$.
 
-**Proof.** The Frobenius norm of the explicit matrix $\mathsf{M}_2(\tilde Q_1)$ displayed above is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_{1,\mu}|^2$ computed twice, hence $\|\mathsf{M}_2(\tilde Q_1)\|_F^2=2\|\tilde Q_1\|_E^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde Q_2\tilde Q_1\|_E=\|\mathsf{M}_2(\tilde Q_2\tilde Q_1)\|_F\le\|\mathsf{M}_2(\tilde Q_2)\|_F\|\mathsf{M}_2(\tilde Q_1)\|_F=2\|\tilde Q_2\|_E\|\tilde Q_1\|_E$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q_1\|_E$.
+**Proof.** The Frobenius norm of the explicit matrix $\mathsf{M}_2(\tilde Q_1)$ displayed above is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_{1,\mu}|^2$ computed twice, hence $\langle \mathsf{M}_2(\tilde Q_1)\rangle_*=2\|\tilde Q_1\|^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde Q_2\tilde Q_1\|=\langle \mathsf{M}_2(\tilde Q_2\tilde Q_1)\rangle_*^{1/2}\le\langle \mathsf{M}_2(\tilde Q_2)\rangle_*^{1/2}\langle \mathsf{M}_2(\tilde Q_1)\rangle_*^{1/2}=2\|\tilde Q_2\|\|\tilde Q_1\|$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q_1\|$.
 
 **Corollary (the escape notions agree).** A biquaternion orbit is bounded in the Euclidean norm exactly when its matrix orbit is bounded in the Frobenius norm, and exactly when it is bounded in the operator norm. The filled Julia set and the Julia set are the same sets in the two models.
 
@@ -133,8 +133,8 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 |---|---|
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the matrix realization |
 | $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde Q_3)$ | the matrix of the point and of the parameter |
-| $\|\cdot\|_F$, $\|\cdot\|_2$ | the Frobenius and operator norms |
-| $\|\cdot\|_E$ | the Euclidean norm on $\mathbb{B}$ |
+| $\langle \cdot\rangle_*^{1/2}$, $\|\cdot\|_2$ | the Frobenius and operator norms |
+| $\|\cdot\|$ | the Euclidean norm on $\mathbb{B}$ |
 | $p_n$ | the iterated polynomial, $p_{n+1}=p_n^2+N$ |
 | $L_{\tilde Q_1}$, $R_{\tilde Q_1}$ | left and right multiplication operators |
 | $dF_{\tilde Q_3}=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ | the derivative, the sum of two operators |

@@ -112,7 +112,7 @@ Composition is associative, but the twisted products are not. A non-vanishing as
 
 ### Probability
 
-The plain sesquilinear product carries the **Born pairing**. Its form $\langle\cdot,\cdot\rangle_{*}$ is positive definite of signature $(8,0)$ on the real algebra, and it is the only one of the four that is definite on every subspace. Its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert_E^{2}=\langle\tilde Q\rangle_{*}$. A probability can be built from this form and from no other of the four.
+The plain sesquilinear product carries the **Born pairing**. Its form $\langle\cdot,\cdot\rangle_{*}$ is positive definite of signature $(8,0)$ on the real algebra, and it is the only one of the four that is definite on every subspace. Its square root is the unique topological norm of the space, $\lVert\tilde Q\rVert^{2}=\langle\tilde Q\rangle_{*}$. A probability can be built from this form and from no other of the four.
 
 On the material sector the Born form is the negative of the sector sign, $\langle\cdot,\cdot\rangle_{*}=-\langle\cdot,\cdot\rangle$; on the informational sector the two coincide. The Born form is therefore blind to the sector: it measures a material and an informational element on the same scale.
 

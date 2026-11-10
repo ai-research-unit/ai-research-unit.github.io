@@ -23,7 +23,7 @@ The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mat
 | where $\hbar$ appears | with the algebra's numbers | a limit on it does this |
 |---|---|---|
 | the mass term | $k_{m}=\frac{m\,c}{\hbar}$, $\;-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$ | $k_{m}\to\infty$: the mass term diverges |
-| the phase | $\frac{S}{\hbar}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
+| the phase | $\frac{S_{\tilde\Xi}}{\hbar}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
 | the bracket | $[x,p]=\frac{m\,c\,i}{k_{m}}$ | it vanishes: the Poisson bracket |
 
 **The three rows do not agree, and that is the argument.** The third is the classical result; the first is its opposite, since $\Box-k_{m}^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
@@ -58,10 +58,10 @@ The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}
 
 ## The Rule
 
-**Write the state and apply the momentum.** Take $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}\,i\,S}{m\,c}\right)\xi$ with $A>0$ real and central, $S$ real and central, and $\xi$ constant. Then
+**Write the state and apply the momentum.** Take $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}\,i\,S_{\tilde\Xi}}{m\,c}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\nabla S-\frac{m\,c\,i}{k_{m}}\nabla\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
+\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\nabla S_{\tilde\Xi}-\frac{m\,c\,i}{k_{m}}\nabla\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The real part keeps its leading term and the imaginary part carries the first correction. The two ratios are
@@ -81,7 +81,7 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 | | the $\beta$ limit | this limit |
 |---|---|---|
 | the object limited | the element $\tilde V_{\Phi}$ | the solution $\tilde{Ξ}_{\mathrm{sp}}$ |
-| the parts compared | $\gamma c$ against $\gamma v$ | $\nabla S$ against $\frac{m\,c}{k_{m}}\nabla\ln A$ |
+| the parts compared | $\gamma c$ against $\gamma v$ | $\nabla S_{\tilde\Xi}$ against $\frac{m\,c}{k_{m}}\nabla\ln A$ |
 | the parameter | internal to the element | external to the algebra |
 | the dropped pieces | $\frac{3}{8}\beta^{4}$ temporal, $\frac{1}{2}\beta^{2}$ vector | order $\epsilon^{2}$ in the amplitude |
 | the error | a number, in closed form | an operator, with changing sign |
@@ -94,29 +94,29 @@ $$
 i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi .
 $$
 
-**Substitute the amplitude and the phase,** $\psi=Ae^{iS/\hbar}$ with $A>0$ and $S$ real. Two real equations follow, and neither is an approximation:
+**Substitute the amplitude and the phase,** $\tilde{Ξ}_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:
 
 $$
-\partial_t S+\frac{\lvert\nabla S\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\nabla^{2}A}{A}=0 ,
+\partial_t S_{\tilde\Xi}+\frac{\lvert\nabla S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\nabla^{2}A}{A}=0 ,
 \qquad
-\partial_t A^{2}+\nabla\cdot\left(\frac{A^{2}\nabla S}{m}\right)=0 .
+\partial_t A^{2}+\nabla\cdot\left(\frac{A^{2}\nabla S_{\tilde\Xi}}{m}\right)=0 .
 $$
 
 **Drop the third term of the first.** It is the quantum potential $Q$, and its size against the kinetic term is the criterion:
 
 $$
-\frac{\lvert Q\rvert}{\lvert\nabla S\rvert^{2}/2m}=\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2} .
+\frac{\lvert Q\rvert}{\lvert\nabla S_{\tilde\Xi}\rvert^{2}/2m}=\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2} .
 $$
 
 When it is small the phase equation is Hamilton–Jacobi and the continuity equation is untouched, because it never contained $Q$:
 
 $$
-\partial_t S+\frac{\lvert\nabla S\rvert^{2}}{2m}+V=0 ,
+\partial_t S_{\tilde\Xi}+\frac{\lvert\nabla S_{\tilde\Xi}\rvert^{2}}{2m}+V=0 ,
 \qquad
-\partial_t A^{2}+\nabla\cdot\left(\frac{A^{2}\nabla S}{m}\right)=0 .
+\partial_t A^{2}+\nabla\cdot\left(\frac{A^{2}\nabla S_{\tilde\Xi}}{m}\right)=0 .
 $$
 
-**Read off the equations of motion.** Put $\vec p=\nabla S$ and $\vec v=\vec p/m$. The gradient of the first equation gives
+**Read off the equations of motion.** Put $\vec p=\nabla S_{\tilde\Xi}$ and $\vec v=\vec p/m$. The gradient of the first equation gives
 
 $$
 \partial_t\vec p+(\vec v\cdot\nabla)\vec p=-\nabla V ,
@@ -128,7 +128,7 @@ $$
 \frac{d\vec r}{dt}=\frac{\vec p}{m},\qquad \frac{d\vec p}{dt}=-\nabla V,\qquad m\frac{d^{2}\vec r}{dt^{2}}=-\nabla V .
 $$
 
-The force is the gradient of the same $V$ that stood in the Hamiltonian, and the energy is not a parameter of the limit: it is $E=-\partial_t S$, read off the phase.
+The force is the gradient of the same $V$ that stood in the Hamiltonian, and the energy is not a parameter of the limit: it is $E=-\partial_t S_{\tilde\Xi}$, read off the phase.
 
 **Two qualifications, both structural.** The continuity equation was never approximated, so the limit delivers a flow and its density rather than one trajectory; a trajectory is a single characteristic of that flow. And the derivation holds while $A$ stays finite. At a caustic $A$ diverges, $\epsilon$ is not small, and the ray picture ends.
 
@@ -178,7 +178,7 @@ and the difference is the interference term. Read against the count, that is the
 
 The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\hbar$ enters only as $\frac{m\,c}{k_{m}}$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
 
-What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\nabla S$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\nabla V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
+What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\nabla S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\nabla V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
 
 ## Summary of Notation
 
@@ -186,7 +186,7 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 |---|---|
 | $\epsilon=\frac{1}{k_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
 | $L$ | The length over which the amplitude varies; supplied by the problem |
-| $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}\,i\,S}{m\,c}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S$ real and central |
+| $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}\,i\,S_{\tilde\Xi}}{m\,c}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
 | $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\nabla^{2}A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
 | $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\nabla^{2}A}{A}$ | The quantum potential; central, real, and the term the limit drops |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\frac{m\,c}{k_{m}}$ |

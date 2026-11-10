@@ -53,6 +53,14 @@ The right-hand side is a pure imaginary multiple of the identity: the field stre
 
 Because the commutator is central and proportional to $i$, the transverse mechanical momenta form a canonical pair up to scale. This is the origin of the oscillator structure of the Landau problem, and it is the reason the spectrum can be obtained without solving a differential equation: the algebra of the $\tilde\pi$'s is the algebra of a harmonic oscillator in disguise.
 
+**The same commutator lives in the wave-number plane, and the transform says so in one line.** A uniform field has a potential linear in position, and multiplication by the position becomes $i\hbar\partial_p$ under the transform, with $\hbar=mc/k_m$ in the corpus's units, so in the momentum variables the minimal coupling is again a first-order operator with no function of position in it,
+
+$$
+\tilde\pi_x=p_xe_t,\qquad \tilde\pi_y=p_ye_t-i\frac{m\,c}{k_m}ϙB\,e_t\,\partial_{p_x},\qquad [\tilde\pi_x,\tilde\pi_y]=i\frac{m\,c}{k_m}ϙB\,e_t ,
+$$
+
+**The commutator is central here for the same reason as in the box above**: it is a multiple of the identity because a derivative and a multiplication commute only up to a constant, and that constant is the field strength. The oscillator is then an oscillator in $p_x$, whose "position" is the momentum and whose "momentum" is $-i\hbar\partial_{p_x}$, and its ladder is the ladder of the section after this one — which is what the phrase *a harmonic oscillator in disguise* is pointing at. **The two gauges divide the labour between the two pictures**: the Landau gauge is solved in position because one momentum is conserved there, and the symmetric gauge is solved in the guiding-centre variables because an angular momentum is conserved there.
+
 ## The Landau Gauge
 
 ### Reduction to a shifted oscillator

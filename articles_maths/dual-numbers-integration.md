@@ -21,7 +21,7 @@ What replaces the reconstruction half is a **derived** statement. Because the in
 
 No physics is invoked. The dual plane is used as the two-dimensional real algebra fixed in *Dual-Numbers Algebra*, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed in *Dual-Numbers Analysis*.
 
-Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \varepsilon q'$, $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$, and $\|Q\|_E = \sqrt{q^2 + q'^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.
+Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \varepsilon q'$, $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$, and $\|Q\| = \sqrt{q^2 + q'^2}$. The maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R}$.
 
 ## The Dual Integral
 
@@ -32,7 +32,7 @@ Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \v
 The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The **opposite** path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}_{\mathrm{dln}}$ and $\gamma_2 : [b,c] \to \mathbb{C}_{\mathrm{dln}}$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ follows first one and then the other. The **length** of a piecewise $C^1$ path is
 
 $$
-L(\gamma) = \int_a^b \|\gamma'(t)\|_E \, dt,
+L(\gamma) = \int_a^b \|\gamma'(t)\| \, dt,
 $$
 
 finite because $\gamma'$ is piecewise continuous on a compact interval. Two paths recur below: the Euclidean circle $\gamma(t) = Q_0 + r(\cos t + \varepsilon\sin t)$, a contour of length $2\pi r$, and the fibre segment $\sigma(t) = q_0 + t\varepsilon$, $t \in [b_0, b_1]$, which lies in the single fibre $\pi^{-1}(q_0)$ and has length $|b_1 - b_0|$.
@@ -60,21 +60,21 @@ $$
 **Proof.** The product in $\mathbb{C}_{\mathrm{dln}}$ is bilinear and $f$ is continuous, so the argument of the complex case applies verbatim. On each smooth piece,
 
 $$
-Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
+Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\| \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
 $$
 
-with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
+with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\| \,\omega(\|\Delta\|)(b-a) \to 0$.
 
-The integral exists because $\mathbb{C}_{\mathrm{dln}}$ is a complete normed space under $\|\cdot\|_E$, exactly as $\mathbb{C}$ is under the modulus. Completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the nilpotence of $\varepsilon$.
+The integral exists because $\mathbb{C}_{\mathrm{dln}}$ is a complete normed space under $\|\cdot\|$, exactly as $\mathbb{C}$ is under the modulus. Completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the nilpotence of $\varepsilon$.
 
 ### Basic Properties
 
 Linearity, reversal, additivity and reparametrisation hold exactly as in *Dual-Numbers Analysis*: the integral is $\mathbb{C}_{\mathrm{dln}}$-linear in the integrand, changes sign under $-\gamma$, is additive under concatenation, and is invariant under a piecewise $C^1$ orientation-preserving reparametrisation (with a sign change if the orientation is reversed). The one property that needs care is estimation, because the Euclidean norm is not multiplicative.
 
-**Estimation.** If $\|f(Q)\|_E \leq m$ on $\gamma^*$, then
+**Estimation.** If $\|f(Q)\| \leq m$ on $\gamma^*$, then
 
 $$
-\left\|\int_\gamma f(Q)\,dQ\right\|_E \leq \frac{2}{\sqrt3}\,m\,L(\gamma).
+\left\|\int_\gamma f(Q)\,dQ\right\| \leq \frac{2}{\sqrt3}\,m\,L(\gamma).
 $$
 
 **Proof.** The multiplication map $Q_1 \mapsto Q_1Q_2$ for $Q_2 = q_2 + \varepsilon q_2'$ has matrix
@@ -83,21 +83,21 @@ $$
 M(Q_2) = \begin{pmatrix} q_2 & 0 \\ q_2' & q_2 \end{pmatrix}
 $$
 
-in the basis $(1, \varepsilon)$, so $\|Q_1Q_2\|_E \leq \|M(Q_2)\| \|Q_1\|_E$. The eigenvalues of $M(Q_2)^{\mathsf{T}} M(Q_2)$ are
+in the basis $(1, \varepsilon)$, so $\|Q_1Q_2\| \leq \|M(Q_2)\| \|Q_1\|$. The eigenvalues of $M(Q_2)^{\mathsf{T}} M(Q_2)$ are
 
 $$
 \lambda_\pm = \frac{2q_2^2 + q_2'^2 \pm \sqrt{q_2'^4 + 4q_2^2q_2'^2}}{2},
 $$
 
-so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|_E^2 = q_2^2 + q_2'^2$ and maximising over the ratio $q_2^2/q_2'^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'^2$; hence
+so $\|M(Q_2)\|^2 = \lambda_+$. Dividing by $\|Q_2\|^2 = q_2^2 + q_2'^2$ and maximising over the ratio $q_2^2/q_2'^2$ gives the supremum $\tfrac43$, attained when $q_2^2 = 2q_2'^2$; hence
 
 $$
-\|Q_1Q_2\|_E \leq \frac{2}{\sqrt3}\,\|Q_1\|_E\|Q_2\|_E
+\|Q_1Q_2\| \leq \frac{2}{\sqrt3}\,\|Q_1\|\|Q_2\|
 $$
 
 with equality, for instance, at $Q_1 = Q_2 = \sqrt{2/3} + \varepsilon\,\sqrt{1/3}$. Applying this to $f(\gamma(t))\gamma'(t)$ and integrating gives the estimate.
 
-**Remark.** The Euclidean norm is **not** submultiplicative on $\mathbb{C}_{\mathrm{dln}}$, and $2/\sqrt3$ is the best constant. In particular the naive estimate $\|\int_\gamma f\,dQ\|_E \leq M L(\gamma)$, obtained by bounding $\|f(\gamma(t))\gamma'(t)\|_E$ pointwise by $\|f\|_E\|\gamma'\|_E$, is not available, because that pointwise inequality is false; the factor $2/\sqrt3$ is exactly what replaces it. This is the first sign that the Euclidean metric and the nilpotent multiplication are not aligned. In $\mathbb{C}$ the modulus is multiplicative and the constant is $1$; in $\mathbb{C}_{\mathrm{spl}}$ the best constant is $\sqrt2$, attained on the null cone; in $\mathbb{C}_{\mathrm{dln}}$ it is $2/\sqrt3$, which lies between them, and it is attained when $Q_1 = Q_2$ and $\operatorname{Re}(Q_2)^2 = 2\operatorname{Inf}(Q_2)^2$, so no element of the zero-divisor set is extremal. The constant is a feature of the algebra alone and has no counterpart in the complex theory.
+**Remark.** The Euclidean norm is **not** submultiplicative on $\mathbb{C}_{\mathrm{dln}}$, and $2/\sqrt3$ is the best constant. In particular the naive estimate $\|\int_\gamma f\,dQ\| \leq M L(\gamma)$, obtained by bounding $\|f(\gamma(t))\gamma'(t)\|$ pointwise by $\|f\|\|\gamma'\|$, is not available, because that pointwise inequality is false; the factor $2/\sqrt3$ is exactly what replaces it. This is the first sign that the Euclidean metric and the nilpotent multiplication are not aligned. In $\mathbb{C}$ the modulus is multiplicative and the constant is $1$; in $\mathbb{C}_{\mathrm{spl}}$ the best constant is $\sqrt2$, attained on the null cone; in $\mathbb{C}_{\mathrm{dln}}$ it is $2/\sqrt3$, which lies between them, and it is attained when $Q_1 = Q_2$ and $\operatorname{Re}(Q_2)^2 = 2\operatorname{Inf}(Q_2)^2$, so no element of the zero-divisor set is extremal. The constant is a feature of the algebra alone and has no counterpart in the complex theory.
 
 ## Integration Along the Fibre
 
@@ -328,7 +328,7 @@ The following are consequences of the obstruction. None of them has an analogue 
 
 - **No Cauchy integral formula.** As above.
 - **No residue and no winding number.** A circle of small radius about $Q_0$ meets the fibre in two points, where the integrand of a would-be residue is undefined; and the surviving area detector returns a real area rather than an integer.
-- **No Cauchy estimates and no Liouville theorem.** The function $f(Q) = \sin(q)\,\varepsilon$ is dual differentiable on all of $\mathbb{C}_{\mathrm{dln}}$, because its real part vanishes and its infinitesimal part is independent of $q'$. It satisfies $\|f\|_E = |\sin q| \leq 1$, yet it is not constant. So a bounded dual differentiable function on the whole plane need not be constant.
+- **No Cauchy estimates and no Liouville theorem.** The function $f(Q) = \sin(q)\,\varepsilon$ is dual differentiable on all of $\mathbb{C}_{\mathrm{dln}}$, because its real part vanishes and its infinitesimal part is independent of $q'$. It satisfies $\|f\| = |\sin q| \leq 1$, yet it is not constant. So a bounded dual differentiable function on the whole plane need not be constant.
 - **No mean value property and no maximum principle.** Both would be consequences of the integral formula. The real part of a differentiable function depends only on $q$, so its average over a circle of radius $r$ about a point of real part $q_0$ is the weighted average $\frac{1}{2\pi}\int_0^{2\pi}u(q_0 + r\cos t)\,dt$ of $u$ over the interval $[q_0-r, q_0+r]$, which need not equal $u(q_0)$: for $u(q) = q^2$ it is $q_0^2 + r^2/2$.
 - **No Laurent expansion at a point.** The negative powers $(\omega - Q_0)^{-n}$ are undefined on the whole fibre through $Q_0$, so a Laurent series in $(\omega - Q_0)$ does not exist. Power series in non-negative powers do exist wherever the two real functions are real-analytic.
 - **No identity theorem.** Distinctness of the zero set from the whole plane does not force a function to vanish. Let $c$ be a smooth function that vanishes for $|q| < 1$ and is positive outside that interval; then $f(Q) = c(q)\,\varepsilon$ is dual differentiable, because its real part vanishes and its infinitesimal part is independent of $q'$, and it vanishes on the open strip $|q| < 1$ while being non-zero outside it. So a differentiable function may vanish on a non-empty open set without vanishing identically, and no accumulation argument for zero sets is available.
@@ -526,7 +526,7 @@ The consequences are those of the preceding sections. The general **Cauchy–Gou
 
 ## Summary
 
-The **dual integral** $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the sharp estimate $\|\int_\gamma f\,dQ\|_E \leq (2/\sqrt3)\,m\,L(\gamma)$, the constant $2/\sqrt3$ being the operator-norm bound for multiplication, between the complex constant $1$ and the split complex constant $\sqrt2$.
+The **dual integral** $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the sharp estimate $\|\int_\gamma f\,dQ\| \leq (2/\sqrt3)\,m\,L(\gamma)$, the constant $2/\sqrt3$ being the operator-norm bound for multiplication, between the complex constant $1$ and the split complex constant $\sqrt2$.
 
 The key structural fact is the **fibre decomposition**
 
@@ -551,12 +551,12 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\bar Q = q - \varepsilon q'$ | Dual conjugate |
 | $\langle Q\rangle = Q\bar Q = q^2$ | Degenerate norm |
-| $\|Q\|_E = \sqrt{q^2+q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2+q'^2}$ | Euclidean modulus |
 | $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, nilpotent, $\mathrm{M}^2 = 0$ |
 | $\pi : \mathbb{C}_{\mathrm{dln}} \to \mathbb{R}$ | Augmentation, kernel $\mathrm{M}$ |
 | $\gamma : [a,b] \to \mathbb{C}_{\mathrm{dln}}$ | Piecewise $C^1$ path |
 | $\gamma^*$, $-\gamma$, $\gamma_1+\gamma_2$ | Trace, opposite path, concatenation |
-| $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
+| $L(\gamma) = \int_a^b \|\gamma'(t)\|\,dt$ | Euclidean length |
 | $\int_\gamma f\,dQ$ | Dual integral |
 | $f = u + v\varepsilon$ | Real and infinitesimal components |
 | $\partial/\partial\bar Q f = 0$ | Dual Cauchy–Riemann equation, $u_{q'} = 0$, $v_{q'} = u_q$ |

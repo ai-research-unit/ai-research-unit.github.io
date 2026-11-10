@@ -119,20 +119,20 @@ The two nonzero sign level sets are hyperboloids, not spheres; the zero level is
 
 $$
 \{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}=1\}
-=\{(c,v):\lVert c\rVert_E^2=1+\lVert v\rVert_E^2\}\cong S^1\times\mathbb{R}^6,
+=\{(c,v):\lVert c\rVert^2=1+\lVert v\rVert^2\}\cong S^1\times\mathbb{R}^6,
 $$
 
 $$
 \{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}=-1\}
-=\{(c,v):\lVert v\rVert_E^2=1+\lVert c\rVert_E^2\}\cong S^5\times\mathbb{R}^2,
+=\{(c,v):\lVert v\rVert^2=1+\lVert c\rVert^2\}\cong S^5\times\mathbb{R}^2,
 $$
 
 $$
 \{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}=0\}
-=\{(c,v)\neq0:\lVert c\rVert_E=\lVert v\rVert_E\}\cong S^1\times S^5\times\mathbb{R}_{>0}.
+=\{(c,v)\neq0:\lVert c\rVert=\lVert v\rVert\}\cong S^1\times S^5\times\mathbb{R}_{>0}.
 $$
 
-All three have real dimension $7$. The positive set is homotopy equivalent to $S^1$ and the negative set to $S^5$; the null set is the cone on $S^1\times S^5$ with apex at the origin, hence contractible, and its punctured part is homotopy equivalent to $S^1\times S^5$. The positive region $\{\lVert c\rVert_E>\lVert v\rVert_E\}$ retracts onto the circle $c/\lVert c\rVert_E$, and the negative region $\{\lVert v\rVert_E>\lVert c\rVert_E\}$ retracts onto the sphere $v/\lVert v\rVert_E$.
+All three have real dimension $7$. The positive set is homotopy equivalent to $S^1$ and the negative set to $S^5$; the null set is the cone on $S^1\times S^5$ with apex at the origin, hence contractible, and its punctured part is homotopy equivalent to $S^1\times S^5$. The positive region $\{\lVert c\rVert>\lVert v\rVert\}$ retracts onto the circle $c/\lVert c\rVert$, and the negative region $\{\lVert v\rVert>\lVert c\rVert\}$ retracts onto the sphere $v/\lVert v\rVert$.
 
 The comparison with the other two families of level sets is sharp.
 
@@ -148,7 +148,7 @@ The phase circle acts freely on the positive level set, and the quotient is the 
 
 ## The Hyperbolic Structure
 
-The positive lines are the lines $\mathbb{C}(e_t+\tilde Q_1)$ with $\lVert\tilde Q_1\rVert_E<1$. The assignment
+The positive lines are the lines $\mathbb{C}(e_t+\tilde Q_1)$ with $\lVert\tilde Q_1\rVert<1$. The assignment
 
 $$
 \tilde Q_1\longmapsto\mathbb{C}(e_t+\tilde Q_1)
@@ -160,7 +160,7 @@ $$
 \mathbb{CH}^3\cong\mathrm{U}(1,3)/(\mathrm{U}(1)\times\mathrm{U}(3)).
 $$
 
-The boundary is the set of isotropic lines, $\lVert\tilde Q_1\rVert_E=1$, a copy of $S^5$. The ball carries the Bergman metric, which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form; the boundary is at infinite distance. The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic and isometric to $\mathbb{CH}^1$; the geodesic through the origin in such a disc is its real diameter.
+The boundary is the set of isotropic lines, $\lVert\tilde Q_1\rVert=1$, a copy of $S^5$. The ball carries the Bergman metric, which is Kähler, complete, of constant negative holomorphic sectional curvature, and invariant under the isometries of the form; the boundary is at infinite distance. The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic and isometric to $\mathbb{CH}^1$; the geodesic through the origin in such a disc is its real diameter.
 
 The Lorentzian slice gives the real picture inside the complex one. On the real quaternion space the form is the Lorentzian quadratic form $q_t^2-\lVert\vec q\rVert^2$, the ball meets the slice in the real unit ball of $\mathbb{R}^3$, and the Bergman metric restricts to the Poincaré metric of the real hyperbolic space $H^3$. The slice is totally geodesic and totally real. The positive level set on the slice is the two-sheeted hyperboloid, and its sheet $q_t=\sqrt{1+\lVert\vec q\rVert^2}$ is the hyperboloid model of $H^3$.
 
@@ -200,7 +200,7 @@ The **Krein cone** is the set of elements of non-negative square,
 
 $$
 \boxed{\;P_K=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}\ge0\}
-=\{\tilde Q:\lVert c\rVert_E\ge\lVert v\rVert_E\}\;}.
+=\{\tilde Q:\lVert c\rVert\ge\lVert v\rVert\}\;}.
 $$
 
 It is closed, star-shaped and contractible, but it is neither convex nor pointed. It is not pointed because it is invariant under $\tilde Q\mapsto-\tilde Q$, so $P_K\cap(-P_K)=P_K$. It is not convex: the null elements $e_t+\vec e_y$ and $-e_t+\vec e_y$ both lie in $P_K$, while their midpoint $\vec e_y$ has square $-1$ and lies outside. On a real Lorentzian slice the cone has two opposite nappes; in the full algebra the positive region is connected, because the centre coordinate is complex. Its interior is the positive region, its boundary is the Krein null set, and it contains the whole positive axis and no negative element. On the Hermitian subspace its intersection is the full light cone of the interval form, whose future nappe is the Hermitian cone $P$ of the dagger; on a Lorentzian slice the intersection is the full light cone, with no nappe selected by the algebra.
@@ -264,7 +264,7 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 | --- | --- |
 | $\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the gauge form |
 | $E=\operatorname{diag}(1,-1,-1,-1)$ | its Gram matrix in the coefficient basis |
-| $\lVert\cdot\rVert_E$ | the Euclidean norm of the coefficient vector |
+| $\lVert\cdot\rVert$ | the Euclidean norm of the coefficient vector |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the gauge inside the product |
 | $J={}^{\natural}$ | the fundamental symmetry, $J^2=\mathrm{id}$ |
 | $T^{\dagger}=JT^{*}J$ | the Krein adjoint |
@@ -273,8 +273,8 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 | $T_t$ | the boost of parameter $t$ |
 | $\mathbb{CH}^3$ | the complex hyperbolic space of positive lines |
 | $H^3$ | the real hyperbolic space of the Lorentzian slice |
-| $P_K=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$ | the Krein cone |
-| $\mathcal{K}=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ | the Krein null set |
+| $P_K=\{\lVert c\rVert\ge\lVert v\rVert\}$ | the Krein cone |
+| $\mathcal{K}=\{\lVert c\rVert=\lVert v\rVert\}$ | the Krein null set |
 | $\mathbb{C}(e_t\pm i\vec u_\mu)$ | the doubly-null lines |
 | $\mathcal{P}_J=J\cdot\{S\ge0\}$ | the $J$-positive operator cone |
 | $\pi_x=\tfrac12(\mathrm{id}+J)$, $\pi_y=\tfrac12(\mathrm{id}-J)$ | the projections onto the centre and the vector space |

@@ -141,7 +141,7 @@ The two operations are distinct for $n_3\ge3$. For $n_3=2$ the reversal of the s
 The **Frobenius norm** of a tensor is
 
 $$
-\|A\|_{\mathrm F}^2=\sum_{i_1=1}^{n_1}\sum_{i_2=1}^{n_2}\sum_{i_3=1}^{n_3}|a_{i_1i_2i_3}|^2,
+\langle A\rangle_*=\sum_{i_1=1}^{n_1}\sum_{i_2=1}^{n_2}\sum_{i_3=1}^{n_3}|a_{i_1i_2i_3}|^2,
 \qquad |a|^2=a_0^2+a_1^2+a_2^2+a_3^2.
 $$
 
@@ -149,8 +149,8 @@ It is the Euclidean norm of the $4n_1n_2n_3$ real coordinates, and it is positiv
 
 $$
 \boxed{\;
-\|A\|_{\mathrm F}^2=\|A_0\|_{\mathrm F}^2+\|A_1\|_{\mathrm F}^2+\|A_2\|_{\mathrm F}^2+\|A_3\|_{\mathrm F}^2
-=\tfrac12\bigl(\|A_{(1)}\|_{\mathrm F}^2+\|A_{(2)}\|_{\mathrm F}^2\bigr)
+\langle A\rangle_*=\langle A_0\rangle_*+\langle A_1\rangle_*+\langle A_2\rangle_*+\langle A_3\rangle_*
+=\tfrac12\bigl(\langle A_{(1)}\rangle_*+\langle A_{(2)}\rangle_*\bigr)
 \;}.
 $$
 
@@ -174,7 +174,7 @@ $$
 
 $$
 \langle A\rangle_*=\sum\operatorname{Re}\bigl(a_{(1)}\overline{a_{(2)}}\bigr),\qquad
-\langle A\rangle_{\mathrm{ts}*}=\tfrac12\sum\bigl(|a_{(1)}|^2+|a_{(2)}|^2\bigr)=\|A\|_{\mathrm F}^2.
+\langle A\rangle_{\mathrm{ts}*}=\tfrac12\sum\bigl(|a_{(1)}|^2+|a_{(2)}|^2\bigr)=\langle A\rangle_*.
 $$
 
 The first sum is complex, the second is complex, the third is real, and the fourth is the square of the Frobenius norm. **Only the fourth is positive definite.** The tessarine sum vanishes on the tensors with one idempotent coordinate zero, the plain sum vanishes on some nonzero tensors, and the Hermitian sum is indefinite; none of the first three is a norm in the topological sense. The fourth is the Frobenius norm squared, and it is the norm used throughout the branch.
@@ -202,7 +202,7 @@ A third-order reduced biquaternion tensor is an array $A\in{\mathbb{B}_{\mathrm{
 | $\Pi_+,\Pi_-$ | The idempotents $\tfrac12(1\pm j)$ |
 | $A^{\mathsf T}$ | The frontal transpose, $(A^{\mathsf T})^{(k)}=(A^{(k)})^{\mathsf T}$ |
 | $A^{\mathsf H}$ | The conjugate transpose, with the slices $2,\dots,n_3$ reversed |
-| $\|A\|_{\mathrm F}$ | The Frobenius norm, the Euclidean norm of the real coordinates |
+| $\langle A\rangle_*^{1/2}$ | The Frobenius norm, the Euclidean norm of the real coordinates |
 | $\langle A\rangle,\langle A\rangle_{\mathrm{ts}},\langle A\rangle_*,\langle A\rangle_{\mathrm{ts}*}$ | The four algebraic norm sums of the entries |
 
 ## Further Reading

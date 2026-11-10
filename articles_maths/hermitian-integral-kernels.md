@@ -183,7 +183,7 @@ summable, then
 $$
 \boxed{\;\operatorname{tr}T_K=\sum_n\lambda_n=\int_XK(x,x)\,d\mu(x),
 \qquad
-\lVert K\rVert_{L^2}^2=\lVert T_K\rVert_{\mathrm{HS}}^2=\sum_n\lambda_n^2\;} .
+\lVert K\rVert_{L^2}^2=\langle T_K\rangle_*=\sum_n\lambda_n^2\;} .
 $$
 
 **Proof.** The first identity is the integral of the diagonal of the Mercer expansion, legitimate by the

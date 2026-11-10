@@ -57,7 +57,7 @@ $$
 \boxed{\;h(\tilde{Q}_1,\tilde{Q}_2) = \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_{\mu}Q_{1,\mu}\,\varsigma(Q_{2,\mu})\;}
 $$
 
-is Hermitian, positive definite and nondegenerate with Gram matrix $\mathrm{I}_{4}$ in the coefficient basis and signature $(8,0)$ over $\mathbb{R}$, its radical is zero, its norm is the Euclidean norm $\lVert\tilde{Q}_1\rVert_{E} = (\sum_{\mu}\lvert Q_{1,\mu}\rvert^{2})^{1/2}$, and it is **compatible with the product**:
+is Hermitian, positive definite and nondegenerate with Gram matrix $\mathrm{I}_{4}$ in the coefficient basis and signature $(8,0)$ over $\mathbb{R}$, its radical is zero, its norm is the Euclidean norm $\lVert\tilde{Q}_1\rVert = (\sum_{\mu}\lvert Q_{1,\mu}\rvert^{2})^{1/2}$, and it is **compatible with the product**:
 
 $$
 h(\tilde{Q}_1\tilde{Q}_2,\tilde Q_3) = h(\tilde{Q}_2,\tilde{Q}_1^{*}\tilde Q_3), \qquad \text{equivalently} \qquad (L_{\tilde{Q}_1})^{h} = L_{\tilde{Q}_1^{*}} .

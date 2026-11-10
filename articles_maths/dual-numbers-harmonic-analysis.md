@@ -189,7 +189,7 @@ So the zeroth moment of the convolution is the product of the zeroth moments, an
 A sequence $(\phi_n)$ in $L^1(\mathbb{C}_{\mathrm{dln}})$ is an **approximate identity** if
 
 $$
-\int_{\mathbb{C}_{\mathrm{dln}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\|_E > \delta} |\phi_n(Q)| \, dQ \to 0
+\int_{\mathbb{C}_{\mathrm{dln}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\| > \delta} |\phi_n(Q)| \, dQ \to 0
 $$
 
 for every $\delta > 0$.
@@ -295,7 +295,7 @@ where $\operatorname{sgn}$ is the sign function on the real part.
 The **dual Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{C}_{\mathrm{dln}})$ is
 
 $$
-Mf(Q_1) = \sup_{r > 0} \frac{1}{|B(Q_1, r)|} \int_{B(Q_1, r)} \|f(Q_2)\|_E \, dQ_2,
+Mf(Q_1) = \sup_{r > 0} \frac{1}{|B(Q_1, r)|} \int_{B(Q_1, r)} \|f(Q_2)\| \, dQ_2,
 $$
 
 where $B(Q_1, r)$ is the Euclidean ball of radius $r$ centred at $Q_1$, and $|B(Q_1, r)|$ is its area.
@@ -337,11 +337,11 @@ $$
 for $Q_1 \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates
 
 $$
-\|K(Q_1, Q_2)\|_E \leq \frac{C}{\|Q_1 - Q_2\|_E},
+\|K(Q_1, Q_2)\| \leq \frac{C}{\|Q_1 - Q_2\|},
 $$
 
 $$
-\|K(Q_1, Q_2) - K(Q_3, Q_2)\|_E \leq C \frac{\|Q_1 - Q_3\|_E^\delta}{\|Q_1 - Q_2\|_E^{1+\delta}}, \qquad \|Q_1 - Q_3\|_E < \frac{1}{2} \|Q_1 - Q_2\|_E,
+\|K(Q_1, Q_2) - K(Q_3, Q_2)\| \leq C \frac{\|Q_1 - Q_3\|^\delta}{\|Q_1 - Q_2\|^{1+\delta}}, \qquad \|Q_1 - Q_3\| < \frac{1}{2} \|Q_1 - Q_2\|,
 $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.

@@ -34,9 +34,9 @@ $$
 \boxed{\;\|\mathcal{T}_{A,B}\|=\|A\|\,\|B\|\;} ,
 $$
 
-the norm being computed with respect to the operator norm; the same formula holds for the Hilbert–Schmidt norm on $S_2(H)$, where $\|\mathcal{T}_{A,B}\|_{HS}=\|A\|\,\|B\|$.
+the norm being computed with respect to the operator norm; the same formula holds for the Hilbert–Schmidt norm on $S_2(H)$, where $\langle \mathcal{T}_{A,B}\rangle_*^{1/2}=\|A\|\,\|B\|$.
 
-*Proof.* $\|A\alpha(T)B\|\le\|A\|\|B\|\|\alpha(T)\|=\|A\|\|B\|\|T\|$, giving the upper bound; the value is attained at a rank-one $T=\zeta\otimes\bar\eta$ for which $\alpha(T)=\varepsilon\,T$ and $\|ATB\|=\|A\|\|B\|$, so the bound is sharp. The Hilbert–Schmidt statement is the same computation with $\|\cdot\|_{\mathrm{HS}}$ in place of $\|\cdot\|$.
+*Proof.* $\|A\alpha(T)B\|\le\|A\|\|B\|\|\alpha(T)\|=\|A\|\|B\|\|T\|$, giving the upper bound; the value is attained at a rank-one $T=\zeta\otimes\bar\eta$ for which $\alpha(T)=\varepsilon\,T$ and $\|ATB\|=\|A\|\|B\|$, so the bound is sharp. The Hilbert–Schmidt statement is the same computation with $\langle \cdot\rangle_*^{1/2}$ in place of $\|\cdot\|$.
 
 **Proposition (relation to the unsigned two-sided operator and the coset).** Every signed two-sided operator is the unsigned two-sided operator composed with the involution,
 

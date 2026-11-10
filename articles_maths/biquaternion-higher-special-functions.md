@@ -193,7 +193,7 @@ $$
 {}_2F_1(a, b; c; \tilde{Q}) = \sum_{n=0}^{\infty} \frac{(a)_n (b)_n}{(c)_n} \frac{\tilde{Q}^n}{n!},
 $$
 
-where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}$. The series converges for $\|\tilde{Q}\|_E < 1$.
+where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}$. The series converges for $\|\tilde{Q}\| < 1$.
 
 ### The Pure Oscillatory Case
 
@@ -334,21 +334,21 @@ are the biquaternion analogues of holomorphic functions and harmonic functions. 
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4}, \qquad \tilde{Q} \neq 0.
 $$
 
 It satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
 
-In the oscillatory regime, with $\lVert\vec Q\rVert$ real and $\vec u$ a root of $-1$, $G_{\mathrm{fn}}(\lVert\vec Q\rVert \vec u) = -\lVert\vec Q\rVert \vec u / (\lVert\vec Q\rVert^4 \|\vec u\|_E^4) = -\vec u/(\lVert\vec Q\rVert^3 \|\vec u\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
+In the oscillatory regime, with $\lVert\vec Q\rVert$ real and $\vec u$ a root of $-1$, $G_{\mathrm{fn}}(\lVert\vec Q\rVert \vec u) = -\lVert\vec Q\rVert \vec u / (\lVert\vec Q\rVert^4 \|\vec u\|^4) = -\vec u/(\lVert\vec Q\rVert^3 \|\vec u\|^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
-In the nilpotent regime, $G_{\mathrm{fn}}(\vec Q) = -\vec Q/\|\vec Q\|_E^4$, which is singular at the origin.
+In the nilpotent regime, $G_{\mathrm{fn}}(\vec Q) = -\vec Q/\|\vec Q\|^4$, which is singular at the origin.
 
 ### The Poisson Kernel
 
 The **Poisson kernel** for the ball of radius $r$ is
 
 $$
-P(\tilde{Q}, \tilde{Q}_2) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde{Q}_2\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde{Q}_2\|_E = r.
+P(\tilde{Q}, \tilde{Q}_2) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde{Q}_2\|^4}, \qquad \|\tilde{Q}\| < r, \quad \|\tilde{Q}_2\| = r.
 $$
 
 It is the kernel that solves the Dirichlet problem for the d'Alembertian on the ball. It is the biquaternion analogue of the Poisson kernel in complex analysis.
@@ -430,7 +430,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 | ${}_2F_1$ | Hypergeometric function |
 | $\Gamma, \varkappa_{\mathrm{crd}}$ | Gamma and zeta functions |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 
 ## Further Reading
 

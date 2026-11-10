@@ -399,7 +399,7 @@ the lower triangular Toeplitz subalgebra. So the ambient carries two copies of t
 **The Frobenius form is the only nondegenerate one.** On the image it is
 
 $$
-\lVert\mathsf{M}_2(Q)\rVert_F^{2}=2q^{2}+q'^{2},
+\langle\mathsf{M}_2(Q)\rangle_*=2q^{2}+q'^{2},
 $$
 
 positive definite over $\mathbb{R}$, of Gram matrix $\operatorname{diag}(2,1)$, and on the whole ambient it is the standard inner product $\operatorname{tr}(A^{\mathsf T}B)$. It separates the infinitesimal direction, and it is not multiplicative, so it is a metric and not a norm of the algebra. The category therefore has once more the pattern of the block, one multiplicative degenerate form and one nondegenerate metric, with the roles exchanged: in the complex category the multiplicative form was the definite one and the metric the indefinite one.

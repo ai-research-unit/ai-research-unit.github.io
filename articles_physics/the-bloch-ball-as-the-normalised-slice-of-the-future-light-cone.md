@@ -308,7 +308,7 @@ which vanishes on the boundary and is maximal, equal to $\tfrac{1}{2}$, at the c
 Finally, the Euclidean geometry of the slice gives the Hermitian form a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{Ϛ}_{\Psi,1}$ and $\tilde{Ϛ}_{\Psi,2}$ is
 
 $$
-\|\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\|_{\mathrm{HS}}^{2}
+\langle\mathsf M_2(\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2})\rangle_*
 = 2\,\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2},\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{*}
 = \mathrm{Tr}\bigl((\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2})^2\bigr)
 = \tfrac{1}{2}|\vec r - \vec s|^2 ,

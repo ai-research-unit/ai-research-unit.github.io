@@ -300,7 +300,7 @@ A norm and a norm are different objects, and the difference governs what the ana
 **Example (the biquaternions).** For $\mathbb{B}$ the quadratic form $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ is complex-valued and vanishes on the nonzero zero divisors, so it is the norm of the algebra and not a norm in the analytic sense. The Euclidean norm
 
 $$
-\|\tilde{Q}\|_E = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})\Bigr)^{1/2}
+\|\tilde{Q}\| = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})\Bigr)^{1/2}
 $$
 
 is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it is not multiplicative, and it carries no information about divisibility: an element can be a zero divisor while having large Euclidean norm. This is the reason $\mathbb{B}$ is a Banach algebra but not a normed division algebra, and it is why the analysis over $\mathbb{B}$ must work with the norm and the quadratic structure rather than with a multiplicative absolute value.
@@ -331,7 +331,7 @@ A **character** of a commutative unital complex Banach algebra is a nonzero homo
 | $[x,y] = xy - yx$ | Commutator, the bracket of $A$ as Lie algebra of $A^\times$ |
 | $\sigma(x)$ | Spectrum of $x$ |
 | $N$ | Norm; may be indefinite and may vanish |
-| $\|\tilde{Q}\|_E$ | Euclidean norm of a biquaternion, $(\sum_\mu |Q_\mu|^2)^{1/2}$ |
+| $\|\tilde{Q}\|$ | Euclidean norm of a biquaternion, $(\sum_\mu |Q_\mu|^2)^{1/2}$ |
 | $C(X,\mathbb{K})$ | Continuous functions on compact $X$, a Banach algebra |
 | $M_n(\mathbb{K})$ | Matrix algebra with operator norm |
 | $SU(2)$ | Unit quaternions; $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times SU(2)$ |

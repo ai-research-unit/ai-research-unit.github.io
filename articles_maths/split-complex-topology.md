@@ -15,7 +15,7 @@ $$
 Q=q+jq' \longmapsto (q,q')
 $$
 
-of $(\mathbb{C}_{\mathrm{spl}},\lVert\cdot\rVert_E)$ onto $\mathbb{R}^2$. So the topology of $\mathbb{C}_{\mathrm{spl}}$ is the Euclidean topology of the plane. The product is bilinear, hence continuous, so $\mathbb{C}_{\mathrm{spl}}$ is a topological algebra over $\mathbb{R}$; inversion is continuous on the units, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ is a topological group.
+of $(\mathbb{C}_{\mathrm{spl}},\lVert\cdot\rVert)$ onto $\mathbb{R}^2$. So the topology of $\mathbb{C}_{\mathrm{spl}}$ is the Euclidean topology of the plane. The product is bilinear, hence continuous, so $\mathbb{C}_{\mathrm{spl}}$ is a topological algebra over $\mathbb{R}$; inversion is continuous on the units, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ is a topological group.
 
 **Theorem (contractibility).** The algebra is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}_{\mathrm{spl}})=0$ for all $n\geq 1$.
 
@@ -34,24 +34,24 @@ So none of the four lines of *Split-Complexoid Subspaces* carries topology beyon
 **Definition.** The **Euclidean unit circle** is
 
 $$
-S^1_E=\{Q\in\mathbb{C}_{\mathrm{spl}}:\lVert Q\rVert_E=1\}=\{(q,q'):q^2+q'^2=1\}\cong S^1,
+S^1_E=\{Q\in\mathbb{C}_{\mathrm{spl}}:\lVert Q\rVert=1\}=\{(q,q'):q^2+q'^2=1\}\cong S^1,
 $$
 
 a closed, compact, connected $1$-manifold.
 
-The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert_E$, and $S^1_E$ is not contained in the units. Indeed the null cone meets the circle where $q^2=q'^2$ and $q^2+q'^2=1$, that is at the four points
+The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert$, and $S^1_E$ is not contained in the units. Indeed the null cone meets the circle where $q^2=q'^2$ and $q^2+q'^2=1$, that is at the four points
 
 $$
 S^1_E\cap\mathcal{N}=\Bigl\{\pm\tfrac{1}{\sqrt2}(1+j),\ \pm\tfrac{1}{\sqrt2}(1-j)\Bigr\}=\bigl\{\pm\sqrt2\,\Pi_+,\ \pm\sqrt2\,\Pi_-\bigr\},
 $$
 
-each of which has $\lVert\cdot\rVert_E=1$ and $\langle Q\rangle_{*}=0$, hence is a zero divisor. So
+each of which has $\lVert\cdot\rVert=1$ and $\langle Q\rangle_{*}=0$, hence is a zero divisor. So
 
 $$
 S^1_E\not\subseteq{\mathbb{C}_{\mathrm{spl}}}^\times,
 $$
 
-the field $\mathbb{C}$ is the definite exception, where $S^1\subseteq\mathbb{C}^\times$. The level set that *is* a subgroup of ${\mathbb{C}_{\mathrm{spl}}}^\times$ is $\langle Q\rangle_{*}=1$, not $\lVert\cdot\rVert_E=1$: the norm-one group ${\mathbb{C}_{\mathrm{spl}}}^{(1)}$ of *Split-Complex Exponential and Lie Group Structure*.
+the field $\mathbb{C}$ is the definite exception, where $S^1\subseteq\mathbb{C}^\times$. The level set that *is* a subgroup of ${\mathbb{C}_{\mathrm{spl}}}^\times$ is $\langle Q\rangle_{*}=1$, not $\lVert\cdot\rVert=1$: the norm-one group ${\mathbb{C}_{\mathrm{spl}}}^{(1)}$ of *Split-Complex Exponential and Lie Group Structure*.
 
 ## The Null Cone
 
@@ -91,7 +91,7 @@ $$
 
 the two null directions.
 
-**Proof.** A point of $\mathcal{N}$ with $\lVert\cdot\rVert_E=1$ satisfies $q^2=q'^2$ and $q^2+q'^2=1$, so $2q^2=1$, $q=\pm 1/\sqrt2$ and $q'=\pm q$ with the two signs matched by $q=\pm q'$; this gives the four listed points. Since the null cone is the union of two lines, its projectivisation, the set of its lines, has two elements.
+**Proof.** A point of $\mathcal{N}$ with $\lVert\cdot\rVert=1$ satisfies $q^2=q'^2$ and $q^2+q'^2=1$, so $2q^2=1$, $q=\pm 1/\sqrt2$ and $q'=\pm q$ with the two signs matched by $q=\pm q'$; this gives the four listed points. Since the null cone is the union of two lines, its projectivisation, the set of its lines, has two elements.
 
 **Remark (the link).** Here the link of the null cone is four points, and the null cone of $\mathbb{C}_{\mathrm{spl}}$ is a union of linear subspaces rather than a nonsingular real hypersurface.
 
@@ -166,8 +166,8 @@ The group of units ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}^2$ | Split complex algebra as a topological space; contractible |
-| $\lVert Q\rVert_E=(q^2+q'^2)^{1/2}$ | Euclidean norm; topological algebra |
-| $S^1_E=\{\lVert Q\rVert_E=1\}$ | Euclidean unit circle; not contained in the units |
+| $\lVert Q\rVert=(q^2+q'^2)^{1/2}$ | Euclidean norm; topological algebra |
+| $S^1_E=\{\lVert Q\rVert=1\}$ | Euclidean unit circle; not contained in the units |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | Norm |
 | $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ | Null cone; the two lines $q=\pm q'$; contractible, singular at $0$ |
 | $L=\mathcal{N}\cap S^1_E$ | Link of the null cone; four points |

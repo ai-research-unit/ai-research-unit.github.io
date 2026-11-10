@@ -235,7 +235,7 @@ $$
 and at the origin it is $e_t$. The Hermitian norm on the non-zero part, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is
 
 $$
-\langle e^{\theta\tilde Q}\rangle_*=1+\lvert\theta\rvert^2\lVert\vec Q\rVert_E^2,
+\langle e^{\theta\tilde Q}\rangle_*=1+\lvert\theta\rvert^2\lVert\vec Q\rVert^2,
 $$
 
 polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is attached to the element. The exponential is a unit on the sector, although the element is a zero divisor or the origin.

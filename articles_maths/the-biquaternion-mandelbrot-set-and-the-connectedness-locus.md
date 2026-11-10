@@ -40,7 +40,7 @@ The escape-time algorithm decides membership in the complement of the critical-o
 
 In $\mathbb{B}$ no such bound exists in the Euclidean norm, because the biquaternion square can vanish.
 
-**Proposition (the collapse).** There are non-zero $\tilde Q\in\mathbb{B}$ with $\tilde Q^2=0$ and $\|\tilde Q\|_E$ arbitrarily large, so $\|\tilde Q^2\|_E$ admits no lower bound in terms of $\|\tilde Q\|_E$ and the classical escape-time test cannot be applied to the Euclidean norm.
+**Proposition (the collapse).** There are non-zero $\tilde Q\in\mathbb{B}$ with $\tilde Q^2=0$ and $\|\tilde Q\|$ arbitrarily large, so $\|\tilde Q^2\|$ admits no lower bound in terms of $\|\tilde Q\|$ and the classical escape-time test cannot be applied to the Euclidean norm.
 
 **Proof.** A pure vector $\vec Q=\sum_{k=1}^3Q_k\vec e_k$ has $\vec Q^2=-(\sum_kQ_k^2)e_t$, so $\vec Q^2=0$ exactly when $\sum_kQ_k^2=0$; the element $\tilde Q=\vec e_x+i\vec e_y$ satisfies this, and $\lambda\tilde Q$ does too for every $\lambda\in\mathbb{C}$. The norm of $\lambda\tilde Q$ is $|\lambda|\sqrt2$, unbounded, while its square is zero.
 
@@ -51,28 +51,28 @@ What survives is a conditional bound, phrased through the singular values of the
 **Proposition (conditional escape).** Let $\tilde Q\in\mathbb{B}$, $M=\mathsf{M}_2(\tilde Q)$, let $\sigma_1\ge\sigma_2\ge0$ be the two singular values of $M$, and suppose $\sigma_2\ge\delta\sigma_1$ for some $\delta>0$. Then
 
 $$
-\|\tilde Q^2\|_E\ge\delta^2\|\tilde Q\|_E^2 .
+\|\tilde Q^2\|\ge\delta^2\|\tilde Q\|^2 .
 $$
 
-Consequently, if $\delta^2\|\tilde Q\|_E^2-\|\tilde Q_2\|_E>\|\tilde Q\|_E$, in particular for
+Consequently, if $\delta^2\|\tilde Q\|^2-\|\tilde Q_2\|>\|\tilde Q\|$, in particular for
 
 $$
-\boxed{\;\|\tilde Q\|_E>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|_E}}{2\delta^2}\;},
+\boxed{\;\|\tilde Q\|>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|}}{2\delta^2}\;},
 $$
 
-then $\|F_{\tilde Q_2}(\tilde Q)\|_E>\|\tilde Q\|_E$ and the orbit of $\tilde Q$ escapes.
+then $\|F_{\tilde Q_2}(\tilde Q)\|>\|\tilde Q\|$ and the orbit of $\tilde Q$ escapes.
 
-**Proof.** For a $2\times2$ matrix $A$, $\|A\|_F^2=\sigma_1(A)^2+\sigma_2(A)^2\ge2\sigma_2(A)^2$, so $\|A\|_F\ge\sqrt2\,\sigma_2(A)$; and $\sigma_2(M^2)\ge\sigma_2(M)^2$, because $\sigma_1\sigma_2=|\det|$, $\sigma_1$ is submultiplicative, and
+**Proof.** For a $2\times2$ matrix $A$, $\langle A\rangle_*=\sigma_1(A)^2+\sigma_2(A)^2\ge2\sigma_2(A)^2$, so $\langle A\rangle_*^{1/2}\ge\sqrt2\,\sigma_2(A)$; and $\sigma_2(M^2)\ge\sigma_2(M)^2$, because $\sigma_1\sigma_2=|\det|$, $\sigma_1$ is submultiplicative, and
 $$
 \sigma_2(M^2)=\frac{|\det M|^2}{\sigma_1(M^2)}\ge\frac{|\det M|^2}{\sigma_1(M)^2}=\sigma_2(M)^2 .
 $$
-Also $\|M\|_F^2\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\|M\|_F/\sqrt2=\|\tilde Q\|_E$, using $\|\mathsf{M}_2(\tilde Q)\|_F=\sqrt2\|\tilde Q\|_E$. Hence
+Also $\langle M\rangle_*\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\langle M\rangle_*^{1/2}/\sqrt2=\|\tilde Q\|$, using $\langle \mathsf{M}_2(\tilde Q)\rangle_*^{1/2}=\sqrt2\|\tilde Q\|$. Hence
 
 $$
-\|M^2\|_F\ge\sqrt2\,\sigma_2(M^2)\ge\sqrt2\,\sigma_2(M)^2\ge\sqrt2\,\delta^2\sigma_1(M)^2\ge\sqrt2\,\delta^2\|\tilde Q\|_E^2 ,
+\langle M^2\rangle_*^{1/2}\ge\sqrt2\,\sigma_2(M^2)\ge\sqrt2\,\sigma_2(M)^2\ge\sqrt2\,\delta^2\sigma_1(M)^2\ge\sqrt2\,\delta^2\|\tilde Q\|^2 ,
 $$
 
-and dividing by $\sqrt2$ gives $\|\tilde Q^2\|_E=\|M^2\|_F/\sqrt2\ge\delta^2\|\tilde Q\|_E^2$. The triangle inequality finishes.
+and dividing by $\sqrt2$ gives $\|\tilde Q^2\|=\langle M^2\rangle_*^{1/2}/\sqrt2\ge\delta^2\|\tilde Q\|^2$. The triangle inequality finishes.
 
 **Remark (what $\delta$ measures).** The quantity $\delta=\sigma_2/\sigma_1$ is the reciprocal condition number of the iterate; $\delta=0$ exactly on the zero divisors. **The conditional escape radius is a family $R_\delta$ indexed by the distance to the zero-divisor cone, and there is no finite radius uniform in $\delta$.** The radius $R_\delta$ is the honest replacement of the single escape radius of the field, and it is developed in *The Escape Radius and the Green's Function for the Biquaternions*.
 
@@ -155,7 +155,7 @@ The connectedness locus $\mathcal B$ and the critical-orbit locus $\mathcal C$ a
 | $\mathsf{M}_2$ | the matrix realization |
 | $\sigma_1\ge\sigma_2$ | the singular values of $\mathsf{M}_2(\tilde Q)$; $\delta=\sigma_2/\sigma_1$ |
 | $R_\delta$ | the conditional escape radius at condition $\delta$ |
-| $\|\cdot\|_E$, $\|\cdot\|_F$ | the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$ |
+| $\|\cdot\|$, $\langle \cdot\rangle_*^{1/2}$ | the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$ |
 | $\tilde\Pi$, $\tilde\Pi'=e_t-\tilde\Pi$ | a primitive idempotent and its complement |
 | $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the commutative idempotent plane |
 | $G$ | the group of involutions |

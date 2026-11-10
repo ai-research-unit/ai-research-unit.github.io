@@ -106,6 +106,18 @@ $$
 
 and the Majorana field is the fixed space of that pairing: a carrier of half the size, singled out by an antilinear structure and not by a linear constraint bolted onto a Dirac field.
 
+**The transform gives the halving a second reading, and it is the one that says why the fraction is exactly one half.** Under the transform, complex conjugation in position space becomes reflection in the wave-number variable,
+
+$$
+\mathcal{F}[\bar f](k_\Phi)=\overline{\mathcal{F}[f](-k_\Phi)},
+$$
+
+so an antilinear reality condition pairs the label $k_\Phi$ with the label $-k_\Phi$ and never pairs a label with itself. A pair $\{k_\Phi,-k_\Phi\}$ carries two real numbers where an unconstrained pair of labels carries four, and a label that is its own partner — $k_\Phi=0$ on a line, and $k_\Phi=0$ or $k_\Phi=\pi/a$ on a circle of spacing $a$ — carries one where it carried two. Counting the pairs gives $N$ real conditions on $2N$ real data, **so the fixed space of a real structure is exactly half the spectrum, for every $N$ and with no reference to the algebra.** That is the arithmetic behind the box above: eight against four is one instance of a halving that the transform performs on any reality condition whatever.
+
+**The sign of the square is the one thing the transform cannot see.** The reflection satisfies $\mathcal{R}^{2}=1$ identically, because reflecting twice in the labels returns, so a conjugation written $\mathcal{C}=\mathcal{R}\otimes\mathcal{J}$ with $\mathcal{J}$ internal has $\mathcal{C}^{2}=\mathcal{J}^{2}$. **The sign is therefore entirely in the internal fibre**, and it decides what a paired label carries: a real number, or a pair of them under the quaternionic multiplication the algebra already has. That is the distinction between the two kinds of mass this section is about, and the wave number contributes none of it.
+
+**The same reading locates the condition for a flow to preserve the class.** For a first-order equation whose symbol is $i\,k_\Phi$ plus a mass term, the class of reality conditions is preserved exactly when the conjugation commutes with the derivative and anticommutes with the mass. **That is weaker than commuting with the whole symbol**, and the difference is not cosmetic: a conjugation commuting with the whole of it is a symmetry of every solution, while the pair of conditions is a symmetry of the class alone. Which of the two a particular test checks is a question about the test, and the answer decides what that test can fail to see.
+
 The framework's module is $\Delta = S\oplus\bar{S}$, the two parts, of complex dimension $4$ and real dimension $8$. Its charge conjugation is the conjugate-linear map $\mathcal{C}$ satisfying $\mathcal{C}^2 = 1$ that exchanges the two halves; its fixed space is the Majorana space, of real dimension four. The companion on the neutrino and Majorana fermions constructs that map and computes its consequences; the present article is concerned with the algebra-side counterpart, and with keeping the two apart.
 
 ## The Two Conjugates and the Two Masses

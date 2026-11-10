@@ -51,7 +51,7 @@ $$
 | element $\breve Q$ | $\mathsf{M}_{\mathrm{d}}(\breve Q)=\operatorname{diag}(Q_{+},Q_{-})$ | the diagonal entries |
 | scalar part $Q_{\blacktriangle}$ | $\mathsf{M}_{\mathrm{d}}(\breve Q)$ | $\tfrac12\operatorname{tr}$ |
 | reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ | $\mathsf{M}_{\mathrm{d}}(\breve Q)$ | $\det$ |
-| topological norm $\langle \breve Q\rangle_{\mathrm{ts}*}$ | $\mathsf{M}_{\mathrm{d}}(\breve Q)$ | $\tfrac12\lVert\cdot\rVert_{F}^{2}$, the Frobenius norm |
+| topological norm $\langle \breve Q\rangle_{\mathrm{ts}*}$ | $\mathsf{M}_{\mathrm{d}}(\breve Q)$ | $\tfrac12\langle\cdot\rangle_*$, the Frobenius norm |
 | indefinite norm $\langle \breve Q\rangle_{*}=\operatorname{Re}(Q_{+}\bar Q_{-})$ | $\mathsf{M}_{\mathrm{d}}(\breve Q)$ | $\operatorname{Re}$ of the Hermitian pairing of the eigenvalues |
 | spectrum | $\mathsf{M}_{\mathrm{d}}(\breve Q)$ | the eigenvalue set $\{Q_{+},Q_{-}\}$ |
 | idempotent $\Pi_+$ | $\operatorname{diag}(1,0)$ | the first matrix unit |
@@ -81,7 +81,7 @@ $$
 
 $$
 \boxed{\;
-\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(\breve Q)^{*}\mathsf{M}_{\mathrm{d}}(\breve Q)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(\breve Q)\rVert_{F}^{2}
+\langle \breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(\breve Q)^{*}\mathsf{M}_{\mathrm{d}}(\breve Q)\bigr)=\tfrac12\langle\mathsf{M}_{\mathrm{d}}(\breve Q)\rangle_*
 \;},
 $$
 
@@ -120,7 +120,7 @@ The matrix model of the reduced biquaternion algebra sends an element $\breve Q=
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | the eigenvalues, the idempotent coordinates |
 | $\det\mathsf{M}_{\mathrm{d}}(\breve Q)=Q_{+}Q_{-}=\langle \breve Q\rangle_{\mathrm{ts}}$ | the reduced norm |
 | $\tfrac12\operatorname{tr}\mathsf{M}_{\mathrm{d}}(\breve Q)=Q_{\blacktriangle}$ | the scalar part |
-| $\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(\breve Q)\rVert_{F}^{2}=\langle \breve Q\rangle_{\mathrm{ts}*}$ | the topological norm |
+| $\tfrac12\langle\mathsf{M}_{\mathrm{d}}(\breve Q)\rangle_*=\langle \breve Q\rangle_{\mathrm{ts}*}$ | the topological norm |
 | $\operatorname{Re}(Q_{+}\bar Q_{-})=\langle \breve Q\rangle_{*}$ | the indefinite norm |
 | $W=\left(\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}\right)$ | the swap matrix, giving the tessarine sign by conjugation |
 | $L_{\breve Q}=R_{\breve Q}$ | the equality of the left and the right multiplication, the commutativity in the model |

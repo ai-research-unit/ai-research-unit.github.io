@@ -89,7 +89,7 @@ It is a real number, non-negative, and vanishes if and only if $q = 0$. The Herm
 The **Euclidean norm** of a real number is the square root of the Hermitian form,
 
 $$
-\|q\|_E = \sqrt{q\,q} = \sqrt{q^2} = |q| .
+\|q\| = \sqrt{q\,q} = \sqrt{q^2} = |q| .
 $$
 
 It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the real product, because $|q_1 q_2| = |q_1||q_2|$. Here there is no distinction to draw between the Euclidean norm and the modulus, and the underlying real space $\mathbb{R}^1$ is the algebra itself.

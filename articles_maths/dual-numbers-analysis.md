@@ -24,7 +24,7 @@ where $\varepsilon^2 = 0$. The element $q$ is the **real part**, and $q'$ is the
 There is no Euclidean modulus intrinsic to the algebra, because the norm $\langle Q\rangle = q^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the **Euclidean modulus**
 
 $$
-\|Q\|_E = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'^2},
 $$
 
 which is the ordinary Euclidean norm on the underlying module $\mathbb{C}_{\mathrm{dln}} \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.
@@ -32,7 +32,7 @@ which is the ordinary Euclidean norm on the underlying module $\mathbb{C}_{\math
 The **dual distance** between two dual numbers $Q_1$ and $Q_2$ is
 
 $$
-d(Q_1, Q_2) = \|Q_1 - Q_2\|_E.
+d(Q_1, Q_2) = \|Q_1 - Q_2\|.
 $$
 
 This makes $\mathbb{C}_{\mathrm{dln}}$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{C}_{\mathrm{dln}}$ is the ordinary Euclidean topology of the plane.
@@ -42,7 +42,7 @@ This makes $\mathbb{C}_{\mathrm{dln}}$ a metric space when $R = \mathbb{R}$, iso
 The **open ball** of radius $r > 0$ centred at $Q_0$ is
 
 $$
-B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q - Q_0\| < r\}.
 $$
 
 It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{dln}}$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.
@@ -76,7 +76,7 @@ A set $K \subseteq \mathbb{C}_{\mathrm{dln}}$ is **compact** if every open cover
 A sequence $(Q_n)$ of dual numbers **converges** to $L \in \mathbb{C}_{\mathrm{dln}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-n \geq N \implies \|Q_n - L\|_E < \epsilon.
+n \geq N \implies \|Q_n - L\| < \epsilon.
 $$
 
 We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.
@@ -106,7 +106,7 @@ There is no quotient rule in general, because $\mathbb{C}_{\mathrm{dln}}$ has ze
 A sequence $(Q_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
+m, n \geq N \implies \|Q_m - Q_n\| < \epsilon.
 $$
 
 **Theorem.** In $\mathbb{C}_{\mathrm{dln}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{dln}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.
@@ -122,7 +122,7 @@ $$
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q \in D, \; 0 < \|Q - Q_0\|_E < \delta \implies \|f(Q) - L\|_E < \epsilon.
+Q \in D, \; 0 < \|Q - Q_0\| < \delta \implies \|f(Q) - L\| < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
@@ -142,7 +142,7 @@ $$
 Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q \in D, \; \|Q - Q_0\|_E < \delta \implies \|f(Q) - f(Q_0)\|_E < \epsilon.
+Q \in D, \; \|Q - Q_0\| < \delta \implies \|f(Q) - f(Q_0)\| < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
@@ -158,7 +158,7 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 A function $f : D \to \mathbb{C}_{\mathrm{dln}}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q_1, Q_2 \in D, \; \|Q_1 - Q_2\|_E < \delta \implies \|f(Q_1) - f(Q_2)\|_E < \epsilon.
+Q_1, Q_2 \in D, \; \|Q_1 - Q_2\| < \delta \implies \|f(Q_1) - f(Q_2)\| < \epsilon.
 $$
 
 **Theorem.** A continuous function on a compact set is uniformly continuous.
@@ -295,10 +295,10 @@ $$
 
 **Additivity.** If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.
 
-**Estimation.** If $\|f(Q)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
+**Estimation.** If $\|f(Q)\| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
 
 $$
-\left\| \int_\gamma f(Q) \, dQ \right\|_E \leq M L.
+\left\| \int_\gamma f(Q) \, dQ \right\| \leq M L.
 $$
 
 ### The Cauchy–Goursat Theorem
@@ -336,14 +336,14 @@ $$
 The **radius of convergence** is
 
 $$
-R = \frac{1}{\limsup_{n \to \infty} \|c_n\|_E^{1/n}},
+R = \frac{1}{\limsup_{n \to \infty} \|c_n\|^{1/n}},
 $$
 
 with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
 
-**Theorem.** The series converges absolutely for $\|Q - Q_0\|_E < R$ and diverges for $\|Q - Q_0\|_E > R$. On $\|Q - Q_0\|_E < R$ it converges uniformly on compact subsets.
+**Theorem.** The series converges absolutely for $\|Q - Q_0\| < R$ and diverges for $\|Q - Q_0\| > R$. On $\|Q - Q_0\| < R$ it converges uniformly on compact subsets.
 
-**Theorem.** A power series is dual differentiable on $\|Q - Q_0\|_E < R$, and its derivative is obtained by term-by-term differentiation:
+**Theorem.** A power series is dual differentiable on $\|Q - Q_0\| < R$, and its derivative is obtained by term-by-term differentiation:
 
 $$
 \frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
@@ -361,7 +361,7 @@ f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 \;}
 $$
 
-valid for $\|Q - Q_0\|_E < r$.
+valid for $\|Q - Q_0\| < r$.
 
 **Proof.** Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $q' \frac{du}{dq} + c(q)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $q' \frac{du}{dq} + c(q)$.
 
@@ -373,9 +373,9 @@ valid for $\|Q - Q_0\|_E < r$.
 
 ### Classification
 
-Let $f$ be dual differentiable on a punctured disk $0 < \|Q - Q_0\|_E < R$.
+Let $f$ be dual differentiable on a punctured disk $0 < \|Q - Q_0\| < R$.
 
-**Removable singularity.** $Q_0$ is removable if $f$ extends to a dual differentiable function on $\|Q - Q_0\|_E < R$.
+**Removable singularity.** $Q_0$ is removable if $f$ extends to a dual differentiable function on $\|Q - Q_0\| < R$.
 
 **Pole.** $Q_0$ is a pole if $f(Q) \to \infty$ in Euclidean modulus as $Q \to Q_0$.
 
@@ -423,7 +423,7 @@ The article develops what the nilpotent structure supports: contour integrals al
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$ | Real part |
 | $q' = \operatorname{Inf} Q$ | Infinitesimal part |
-| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
 | $\frac{df}{dQ}$ | Dual derivative |
 | $\partial/\partial Q, \partial/\partial \bar{Q}$ | Dual Wirtinger derivatives |

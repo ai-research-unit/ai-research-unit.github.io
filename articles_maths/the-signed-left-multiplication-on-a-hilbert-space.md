@@ -6,7 +6,7 @@ The signed left multiplication of a graded Hilbert space is the one-sided operat
 
 The algebra $B(H)$ and its involution are *Bounded Operators on a Hilbert Space*; the unsigned left multiplication and its Hilbert–Schmidt structure are *The Left and Right Multiplication Operators on a Hilbert Space*; the signed two-sided operator that is assembled from the two signed one-sided multiplications is *The Signed Two-Sided Operator on a Hilbert Space*; the corresponding signed right multiplication and the adjoint of $\ell_U$ are *The Signed Adjoint Two-Sided Operator on a Hilbert Space* and *The Adjoint of the Left Multiplication on a Hilbert Space* below. The algebraic signed left multiplication is *The Signed Left Multiplication on a Graded Algebra* (Part II), of which the present article is the Hilbert-space reading.
 
-Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, $\Gamma$ is the parity operator, $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)$, and $\|T\|$ and $\|T\|_{\mathrm{HS}}$ are the operator and Hilbert–Schmidt norms. The **signed left multiplication** is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$ and the **signed right multiplication** is $\varrho_V(T)=\alpha(T)V=R_V\circ\alpha$; the unsigned left multiplication is $L_U(T)=UT$.
+Throughout, $H=H^0\oplus H^1$ is a graded Hilbert space over $\mathbb{K}=\mathbb{R}$ or $\mathbb{C}$, $\Gamma$ is the parity operator, $\alpha(T)=\Gamma T\Gamma$ is the grade involution of $B(H)$, and $\|T\|$ and $\langle T\rangle_*^{1/2}$ are the operator and Hilbert–Schmidt norms. The **signed left multiplication** is $\ell_U(T)=U\alpha(T)=L_U\circ\alpha$ and the **signed right multiplication** is $\varrho_V(T)=\alpha(T)V=R_V\circ\alpha$; the unsigned left multiplication is $L_U(T)=UT$.
 
 ## The Signed Left Multiplication
 
@@ -22,7 +22,7 @@ $$
 \boxed{\;\|\ell_U\|=\|U\|\;},
 $$
 
-and the map $U\mapsto\ell_U$ is linear, injective and order-reversing under composition; the same identity holds for the Hilbert–Schmidt norm, $\|\ell_U(T)\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality for suitable $T$.
+and the map $U\mapsto\ell_U$ is linear, injective and order-reversing under composition; the same identity holds for the Hilbert–Schmidt norm, $\langle \ell_U(T)\rangle_*^{1/2}\le\|U\|\langle T\rangle_*^{1/2}$ with equality for suitable $T$.
 
 *Proof.* $\|U\alpha(T)\|\le\|U\|\|\alpha(T)\|=\|U\|\|T\|$ by the isometry of the grade involution, and the value $\|U\|$ is attained at a rank-one $T=\zeta\otimes\bar\eta$ transforming in the even part of the grading with $\|U\zeta\|=\|U\|\|\zeta\|$; injectivity is the invertibility of $\alpha$ and the faithfulness of the left representation, and linearity is immediate.
 

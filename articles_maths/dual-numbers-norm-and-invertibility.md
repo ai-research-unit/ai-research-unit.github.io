@@ -132,7 +132,7 @@ $$
 and the **Euclidean norm** is
 
 $$
-\|Q\|_E = \sqrt{q^2 + q'^2}.
+\|Q\| = \sqrt{q^2 + q'^2}.
 $$
 
 Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{C}_{\mathrm{dln}} \cong \mathbb{R}^2$ in dual coordinates.
@@ -363,7 +363,7 @@ A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real par
 | $\langle Q\rangle = Q\bar Q = q^2$ | Norm, degenerate, radical $\mathrm{M}$ |
 | $\mathfrak{Q}(Q) = q^2 + q'^2$ | Euclidean form |
 | $\langle Q_1, Q_2 \rangle = q_1 q_2 + q'_1 q'_2$ | Euclidean inner product |
-| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean norm |
+| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean norm |
 | $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$ | Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant |
 | $\rho_c(Q) = |q|\exp(c\,q'/q)$ | The normalised multiplicative size functions; $r = \rho_0$ |
 | $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ | Maximal ideal, kernel of $\langle\cdot\rangle$ |

@@ -33,9 +33,9 @@ $$
 L=\mathcal{N}\cap S^{7}_{E}.
 $$
 
-**Proposition (the cone is the cone on its link).** Every $\tilde Q\in\mathcal{N}\setminus\{0\}$ is uniquely $\tilde Q=t u$ with $t=\|\tilde Q\|_E>0$ and $u\in L$. Hence $\mathcal{N}$ is the cone on $L$, and it is contractible.
+**Proposition (the cone is the cone on its link).** Every $\tilde Q\in\mathcal{N}\setminus\{0\}$ is uniquely $\tilde Q=t u$ with $t=\|\tilde Q\|>0$ and $u\in L$. Hence $\mathcal{N}$ is the cone on $L$, and it is contractible.
 
-*Proof.* The norm is homogeneous, so $u=\tilde Q/\|\tilde Q\|_E$ lies in $L$ and $t=\|\tilde Q\|_E$; the pair is unique because the norm of $tu$ is $t$. The straight-line homotopy $H(s,\tilde Q)=(1-s)\tilde Q$ carries $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, fixes the apex and contracts the cone to it.
+*Proof.* The norm is homogeneous, so $u=\tilde Q/\|\tilde Q\|$ lies in $L$ and $t=\|\tilde Q\|$; the pair is unique because the norm of $tu$ is $t$. The straight-line homotopy $H(s,\tilde Q)=(1-s)\tilde Q$ carries $[0,1]\times\mathcal{N}$ into $\mathcal{N}$, fixes the apex and contracts the cone to it.
 
 **Proposition (the punctured cone is smooth).** $0$ is the only singular point of $\mathcal{N}$; the punctured cone $\mathcal Z$ is a smooth complex $3$-manifold.
 
@@ -51,7 +51,7 @@ $$
 Z_0=Q_t-iQ_z,\qquad Z_1=-iQ_x-Q_y,\qquad Z_2=-iQ_x+Q_y,\qquad Z_3=Q_t+iQ_z,
 $$
 
-the norm is $N=Z_0Z_3-Z_1Z_2$ and $\lvert Z\rvert^{2}=2\|\tilde Q\|_E^{2}$. A nonzero null element is
+the norm is $N=Z_0Z_3-Z_1Z_2$ and $\lvert Z\rvert^{2}=2\|\tilde Q\|^{2}$. A nonzero null element is
 
 $$
 (Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
@@ -61,7 +61,7 @@ for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ in $\mathbb{C}^{2}$, and 
 
 **Theorem.** $L\cong S^{2}\times S^{3}$.
 
-*Proof.* Normalise $\|u\|=\|v\|=1$. Then $\lvert Z\rvert^{2}=2(|\alpha|^{2}+|\beta|^{2})(|\gamma|^{2}+|\delta|^{2})=2$, so $\|\tilde Q\|_E=1$; define
+*Proof.* Normalise $\|u\|=\|v\|=1$. Then $\lvert Z\rvert^{2}=2(|\alpha|^{2}+|\beta|^{2})(|\gamma|^{2}+|\delta|^{2})=2$, so $\|\tilde Q\|=1$; define
 
 $$
 \varphi:S^{3}\times S^{3}\longrightarrow L,\qquad
@@ -155,8 +155,8 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}\cong\mathbb{R}^{8}$ | Biquaternion algebra as a real space; contractible |
-| $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$ | Euclidean norm; defines the topology and the unit sphere |
-| $S^{7}_{E}=\{\lVert\tilde Q\rVert_E=1\}$ | Euclidean unit sphere |
+| $\lVert\tilde Q\rVert=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$ | Euclidean norm; defines the topology and the unit sphere |
+| $S^{7}_{E}=\{\lVert\tilde Q\rVert=1\}$ | Euclidean unit sphere |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | Algebraic norm; its null set is $\mathcal{N}$ |
 | $\mathcal{N}=\{N=0\}$ | Null cone; closed, real dimension $6$, contractible |
 | $\mathcal Z=\mathcal{N}\setminus\{0\}$ | Zero-divisor set; smooth complex $3$-manifold |

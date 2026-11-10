@@ -31,7 +31,7 @@ $$
 the Frobenius form, with norm
 
 $$
-\|A\|_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2 .
+\langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2 .
 $$
 
 This is the Hilbert space structure on $M_5(\mathbb{C})\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; it is positive definite, and it has **no null cone**. The complex bilinear trace pairing $\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$* is a different object; it is indefinite, and its isotropic cone is not the metric.
@@ -156,7 +156,7 @@ is an orthonormal basis of $\mathfrak{u}(5)$ for the positive definite form $\op
 
 **Corollary.** The form $-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{u}(5)$; it is the restriction of the Frobenius form to the skew-Hermitian half.
 
-**Proof.** For $X\in\mathfrak{u}(5)$, $-\operatorname{tr}(X^2)=\operatorname{tr}(X^*X)=\|X\|_F^2>0$ for $X\ne0$.
+**Proof.** For $X\in\mathfrak{u}(5)$, $-\operatorname{tr}(X^2)=\operatorname{tr}(X^*X)=\langle X\rangle_*>0$ for $X\ne0$.
 
 ## The Trace Form on the Algebra
 
@@ -172,7 +172,7 @@ $$
 
 $$
 \langle A,B\rangle_F=\overline{\langle B,A\rangle}_F,\qquad
-\langle A,A\rangle_F=\|A\|_F^2=\sum_{i,j}|A_{ij}|^2>0\quad(A\ne0).
+\langle A,A\rangle_F=\langle A\rangle_*=\sum_{i,j}|A_{ij}|^2>0\quad(A\ne0).
 $$
 
 **Proof.** The conjugate symmetry: $\overline{\operatorname{tr}(A^*B)}=\operatorname{tr}(B^*A)$. The positivity: $(A^*A)_{ii}=\sum_k\bar A_{ki}A_{ki}=\sum_k|A_{ki}|^2$, so the trace is the sum of the absolute squares of all entries, positive for $A\ne0$.
@@ -189,12 +189,12 @@ The Frobenius form is the Hilbert space metric; the trace pairing is the algebra
 
 ### The Frobenius Norm
 
-**Definition.** The **Frobenius norm** is $\|A\|_F=\sqrt{\operatorname{tr}(A^*A)}$.
+**Definition.** The **Frobenius norm** is $\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^*A)}$.
 
 **Proposition.** The Frobenius norm is a norm, and it is unitarily invariant:
 
 $$
-\|UAV\|_F=\|A\|_F\qquad(U,V\in U(5)).
+\langle UAV\rangle_*^{1/2}=\langle A\rangle_*^{1/2}\qquad(U,V\in U(5)).
 $$
 
 **Proof.** The norm is the Euclidean norm of the $25$ complex coordinates; the triangle inequality and homogeneity are those of the Euclidean norm. For $*$-unitary $U,V$, $(UAV)^*(UAV)=V^*A^*U^*UAV=V^*A^*AV$, which has the same trace as $A^*A$ by cyclicity.
@@ -243,7 +243,7 @@ $$
 
 **Proof.** It is the composition of the left and right $*$-unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and skew-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.
 
-**Corollary.** The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\|A\|_F$.
+**Corollary.** The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\langle A\rangle_*^{1/2}$.
 
 **Proof.** The characteristic polynomial is conjugation-invariant; the Frobenius norm is invariant, so the orbit lies in the sphere of that radius.
 
@@ -333,7 +333,7 @@ The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\co
 | $\langle x,y\rangle=\sum\bar x_iy_i$ | The standard Hermitian form on $\mathbb{C}^5$ |
 | $U(5)$, $SU(5)$ | The $*$-unitary and special $*$-unitary groups |
 | $\langle A,B\rangle_F=\operatorname{tr}(A^*B)$ | The Frobenius form |
-| $\|A\|_F$ | The Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | The Frobenius norm |
 | $\Sigma=\{\det=0\}$ | The singular set, real codimension $2$ |
 
 ## Further Reading

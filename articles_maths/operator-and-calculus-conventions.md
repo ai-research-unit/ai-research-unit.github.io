@@ -117,7 +117,7 @@ Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a p
 **What the theorem does not say.** It does not say the two operators are equal. On $D=-5e_t+3i\vec e_x$,
 
 $$
-\bigl\lVert R_D-L_{D^{\natural}}\bigr\rVert_{\mathrm F}=8.4853\neq0 ,
+\bigl\langle R_D-L_{D^{\natural}}\\bigr\rangle_*^{1/2}=8.4853\neq0 ,
 $$
 
 so the two arrays differ and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming, not the operators.
@@ -401,7 +401,7 @@ $$
 \langle\tilde\nabla,\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{*}=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial R_\mu^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q=\Box ,
 $$
 
-so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four on the biquaternion layer**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert R_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert_E$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. **On the material sector** it is the same operator, $\Box|_{\mathbb{B}_{\Phi}}=\Delta-\partial^2/\partial (r'_t)^2$; **on the informational sector** it is the same operator again, $\Box|_{\mathbb{B}_{\Psi}}=\partial^2/\partial r_t^2-\Delta|_{\mathbb{B}_{\Psi}}$, and the two lines are negatives of each other because the two sectors keep complementary halves of the eight parameters. Positivity is untouched by that sign: the form is positive on the elements in either reading, and what changes is the operator's own sign and not the form's.
+so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four on the biquaternion layer**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert R_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. **On the material sector** it is the same operator, $\Box|_{\mathbb{B}_{\Phi}}=\Delta-\partial^2/\partial (r'_t)^2$; **on the informational sector** it is the same operator again, $\Box|_{\mathbb{B}_{\Psi}}=\partial^2/\partial r_t^2-\Delta|_{\mathbb{B}_{\Psi}}$, and the two lines are negatives of each other because the two sectors keep complementary halves of the eight parameters. Positivity is untouched by that sign: the form is positive on the elements in either reading, and what changes is the operator's own sign and not the form's.
 
 ### The Krein Product, Its Form and Its Norm
 

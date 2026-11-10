@@ -102,7 +102,7 @@ so $U$ acts on $B(H)$ through the inner automorphism that corrects the grade inv
 
 ## Isometry, Unitarity and the Form
 
-**Proposition (the reflection is an isometry).** Every $\rho_U$ is isometric for the operator norm, $\|\rho_U(T)\|=\|T\|$, and isometric for the Hilbert–Schmidt norm when $U$ is unitary, $\|\rho_U(T)\|_{\mathrm{HS}}=\|T\|_{\mathrm{HS}}$.
+**Proposition (the reflection is an isometry).** Every $\rho_U$ is isometric for the operator norm, $\|\rho_U(T)\|=\|T\|$, and isometric for the Hilbert–Schmidt norm when $U$ is unitary, $\langle \rho_U(T)\rangle_*^{1/2}=\langle T\rangle_*^{1/2}$.
 
 *Proof.* The automorphism $\rho_U$ is a composite of isometries when $U$ is unitary: the conjugation by a unitary and the grade involution are both isometric on $B(H)$ and on $S_2(H)$.
 

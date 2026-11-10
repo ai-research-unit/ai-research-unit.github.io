@@ -8,7 +8,7 @@ The algebra and the four general products are *The Biquaternion Algebra* and *Th
 
 The article owns the three kinds of affine map, the contraction criterion, the attractor theorem, the similarity case with real quaternionic multipliers, the inverse-branch system of the quadratic map and the degeneracy of the square root at the cone. It does not re-derive the classical theory and does not treat the dimension of the quadratic fractal, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
-**Standing convention.** The metric is the Euclidean norm $\|\cdot\|_E$ on $\mathbb{B}\cong\mathbb{R}^8$, and $\|L_{\tilde Q_1}\|$, $\|R_{\tilde Q_1}\|$ are the operator norms of left and right multiplication by $\tilde Q_1$. Maps are written $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ unless the two-sided case is meant.
+**Standing convention.** The metric is the Euclidean norm $\|\cdot\|$ on $\mathbb{B}\cong\mathbb{R}^8$, and $\|L_{\tilde Q_1}\|$, $\|R_{\tilde Q_1}\|$ are the operator norms of left and right multiplication by $\tilde Q_1$. Maps are written $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ unless the two-sided case is meant.
 
 ## The Three Kinds of Affine Map
 
@@ -28,21 +28,21 @@ The three families are nested; a left-affine map is two-sided with $\tilde Q_3=e
 
 ## Contractions in the Euclidean Norm
 
-**Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is Lipschitz with constant $\|L_{\tilde Q_1}\|$, and $\|L_{\tilde Q_1}\|\le\sqrt2\,\|\tilde Q_1\|_E$. It is a contraction exactly when $\|L_{\tilde Q_1}\|<1$.
+**Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is Lipschitz with constant $\|L_{\tilde Q_1}\|$, and $\|L_{\tilde Q_1}\|\le\sqrt2\,\|\tilde Q_1\|$. It is a contraction exactly when $\|L_{\tilde Q_1}\|<1$.
 
-**Proof.** $\|f(\tilde Q_4)-f(\tilde Q_3)\|_E=\|\tilde Q_1(\tilde Q_4-\tilde Q_3)\|_E\le\|L_{\tilde Q_1}\|\|\tilde Q_4-\tilde Q_3\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde Q_1}\|\le\sqrt2\|\tilde Q_1\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
+**Proof.** $\|f(\tilde Q_4)-f(\tilde Q_3)\|=\|\tilde Q_1(\tilde Q_4-\tilde Q_3)\|\le\|L_{\tilde Q_1}\|\|\tilde Q_4-\tilde Q_3\|$ by definition of the operator norm, and the estimate $\|L_{\tilde Q_1}\|\le\sqrt2\|\tilde Q_1\|$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
 
 **Theorem (the similarity multipliers).** Let $\tilde Q_1$ be a real quaternion of positive norm, $\tilde Q_1\in\mathbb{B}_{H}$, $\langle\tilde Q_1\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde Q_1$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
 $$
-\boxed{\;\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q\;},
+\boxed{\;\|\tilde Q_1\tilde Q\|=\rho\,\|\tilde Q\| \quad \text{for every } \tilde Q\;},
 $$
 
 so $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.
 
-**Proof.** Write $\tilde Q_1=\rho\tilde u$ with $\tilde u$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde Q_3+i\tilde Q_4$ with $\tilde Q_3,\tilde Q_4\in\mathbb{H}$, one has $\tilde Q_1\tilde Q=\tilde Q_1\tilde Q_3+i\tilde Q_1\tilde Q_4$ and $\|\tilde Q_1\tilde Q\|_E^2=\rho^2(\|\tilde Q_3\|^2+\|\tilde Q_4\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
+**Proof.** Write $\tilde Q_1=\rho\tilde u$ with $\tilde u$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde Q_3+i\tilde Q_4$ with $\tilde Q_3,\tilde Q_4\in\mathbb{H}$, one has $\tilde Q_1\tilde Q=\tilde Q_1\tilde Q_3+i\tilde Q_1\tilde Q_4$ and $\|\tilde Q_1\tilde Q\|^2=\rho^2(\|\tilde Q_3\|^2+\|\tilde Q_4\|^2)=\rho^2\|\tilde Q\|^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
 
-**Remark (the central multipliers).** For a central multiplier $\tilde Q_1=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
+**Remark (the central multipliers).** For a central multiplier $\tilde Q_1=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
 
 **Remark (the zero divisors are not contractions of the algebra).** If $\tilde Q_1$ is a zero divisor then left multiplication by $\tilde Q_1$ is a singular operator, but its operator norm can still be less than one; the map is then a contraction with an image contained in a proper subspace. **A zero-divisor multiplier is a legitimate contraction whose image avoids a direction, and the attractor it produces is contained in the image subspace**; no invertibility of the multiplier is needed for the existence of the attractor.
 

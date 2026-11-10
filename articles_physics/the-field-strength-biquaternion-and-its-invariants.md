@@ -444,7 +444,7 @@ $$
 with the energy density and Poynting vector
 
 $$
-W = \frac{1}{2}\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right) = \frac{1}{2}\left\|\tilde{F}\right\|_E^2,
+W = \frac{1}{2}\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right) = \frac{1}{2}\left\|\tilde{F}\right\|^2,
 \qquad
 \vec S = \vec E\times\vec H.
 $$

@@ -17,7 +17,7 @@ $$
 is positive definite, and it defines the Frobenius norm
 
 $$
-\lVert A\rVert_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
+\langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
 $$
 
 The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.
@@ -171,7 +171,7 @@ with equality if and only if $A=0$.
 **Corollary (the Frobenius norm).** The form defines the **Frobenius norm**
 
 $$
-\lVert A\rVert_F=\sqrt{\langle A,A\rangle}
+\langle A\rangle_*^{1/2}=\sqrt{\langle A,A\rangle}
 =\left(\sum_{i,j}\lvert a_{ij}\rvert^2\right)^{1/2},
 $$
 
@@ -216,10 +216,10 @@ $$
 **Definition.** The **unit sphere** of $M_6(\mathbb{C})$ is
 
 $$
-S^{71}=\{A:\lVert A\rVert_F=1\}.
+S^{71}=\{A:\langle A\rangle_*^{1/2}=1\}.
 $$
 
-**Proposition.** $S^{71}$ is a compact real manifold of dimension $71$; the unit ball is the set $\lVert A\rVert_F\le1$.
+**Proposition.** $S^{71}$ is a compact real manifold of dimension $71$; the unit ball is the set $\langle A\rangle_*^{1/2}\le1$.
 
 **Proof.** It is the Euclidean unit sphere in $\mathbb{R}^{72}$.
 
@@ -321,7 +321,7 @@ $$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B),\qquad \langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2,\qquad \langle A,A\rangle=0\iff A=0 .\ }
 $$
 
-The form is positive definite and defines the Frobenius norm $\lVert A\rVert_F^2=\sum_{ij}\lvert a_{ij}\rvert^2$; the unit sphere is $S^{71}$. The real part of the form is the Euclidean inner product of the $72$ real coordinates; the imaginary part is symplectic.
+The form is positive definite and defines the Frobenius norm $\langle A\rangle_*=\sum_{ij}\lvert a_{ij}\rvert^2$; the unit sphere is $S^{71}$. The real part of the form is the Euclidean inner product of the $72$ real coordinates; the imaginary part is symplectic.
 
 The real forms are
 
@@ -342,7 +342,7 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 | $*$-Unitary group | $U(6)$, dimension $36$ |
 | Special $*$-unitary group | $SU(6)$, dimension $35$ |
 | Trace form | $\operatorname{tr}(A^*B)$, positive definite |
-| Frobenius norm | $\lVert A\rVert_F^2=\sum\lvert a_{ij}\rvert^2$ |
+| Frobenius norm | $\langle A\rangle_*=\sum\lvert a_{ij}\rvert^2$ |
 | Isotropic vectors | only $0$ |
 | Biquaternion null cone | zero divisors, real dimension $6$ |
 
@@ -355,7 +355,7 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 | $\mathfrak{u}(6)$ | the skew-Hermitian Lie algebra, dimension $36$ |
 | $\mathfrak{su}(6)$ | the traceless skew-Hermitian Lie algebra, dimension $35$ |
 | $\langle A,B\rangle$ | the Hermitian trace form $\operatorname{tr}(A^*B)$ |
-| $\lVert A\rVert_F$ | the Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $\mathrm{J}(A)=-A^*$ | the Cartan involution |
 | $\mathbb{B}$ | the biquaternion algebra |
 

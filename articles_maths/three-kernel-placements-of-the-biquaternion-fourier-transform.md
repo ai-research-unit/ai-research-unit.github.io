@@ -4,7 +4,7 @@
 
 **This article proves that the three ways of placing the biquaternion Fourier kernel against a value give three different operators, and that the distance between them is measured by a commutator whose size is the distance of the value from a four-plane.** The three placements are the left, the right and the two-sided, and the last of them carries a second root and a choice of sign that no one-sided placement has.
 
-**The setting.** Let $\tilde{Ζ}$ be the **Hermitian** root of $1$ of *Biquaternion Continuous Harmonic Analysis*, so that $\tilde{Ζ}^{2}=e_t$ and $\tilde{Ζ}^{*}=\tilde{Ζ}$, and let $R=i\tilde{Ζ}$. Then $R^{2}=-e_t$ and $R^{*}=-R$, so $\lVert R\rVert_E=1$; when the root is not central, $R$ is a real unit vector of the pure part. The kernel is
+**The setting.** Let $\tilde{Ζ}$ be the **Hermitian** root of $1$ of *Biquaternion Continuous Harmonic Analysis*, so that $\tilde{Ζ}^{2}=e_t$ and $\tilde{Ζ}^{*}=\tilde{Ζ}$, and let $R=i\tilde{Ζ}$. Then $R^{2}=-e_t$ and $R^{*}=-R$, so $\lVert R\rVert=1$; when the root is not central, $R$ is a real unit vector of the pure part. The kernel is
 
 $$
 W(t,\omega)=\exp(-2\pi i\tilde{Ζ}\omega t)=\exp(-2\pi R\omega t),
@@ -26,7 +26,7 @@ $$
 
 **Why the root is written as a root of one.** The exponent satisfies $\tilde{Ζ}^{2}=e_t$ and the central scalar $i$ carries the sign, which is the convention of *Biquaternion Continuous Harmonic Analysis*. **The letters $R$ and $\tilde{Ζ}$ move no product**, because they differ by a central scalar; they differ only in the sign of the exponent, and that sign is the subject of §*The Two Signs That Fix a Part*.
 
-**Four properties of the root, and which sections need the fourth.** The structural results use three: $R^{2}=-e_t$, $R$ pure, and a transverse element anticommutes with it. The metric results use a fourth, $R^{*}=-R$, which is the same as $\lVert R\rVert_E=1$, and which for a pure $R$ with $R^{2}=-e_t$ says that $R$ has real coordinates. **It holds for exactly the Hermitian roots**: the central pair, which is not pure, and the pure real unit vectors, by the proposition on the Hermitian roots of *Biquaternion Continuous Harmonic Analysis*. **It is not a consequence of the first three.** The element $R=ie_x-\sqrt2\,e_y$ is pure with $R^{2}=-e_t$ and $N(R)=1$, while $R^{*}=ie_x+\sqrt2\,e_y$ and $\lVert R\rVert_E^{2}=3$; §*The Closed Form* shows what such a root does to the metric statements. It is also the root a normal element supplies.
+**Four properties of the root, and which sections need the fourth.** The structural results use three: $R^{2}=-e_t$, $R$ pure, and a transverse element anticommutes with it. The metric results use a fourth, $R^{*}=-R$, which is the same as $\lVert R\rVert=1$, and which for a pure $R$ with $R^{2}=-e_t$ says that $R$ has real coordinates. **It holds for exactly the Hermitian roots**: the central pair, which is not pure, and the pure real unit vectors, by the proposition on the Hermitian roots of *Biquaternion Continuous Harmonic Analysis*. **It is not a consequence of the first three.** The element $R=ie_x-\sqrt2\,e_y$ is pure with $R^{2}=-e_t$ and $N(R)=1$, while $R^{*}=ie_x+\sqrt2\,e_y$ and $\lVert R\rVert^{2}=3$; §*The Closed Form* shows what such a root does to the metric statements. It is also the root a normal element supplies.
 
 **What is proved, and what is quoted.** That the kernel has algebraic norm one, and Euclidean norm one for the Hermitian root, so that multiplication by it on either side is a Euclidean isometry (§*The Closed Form*); that its commutant is the plane of the root and that it rotates the complementary plane through $4\pi\omega t$ (§*The Commutant and the Complement*); that each one-sided placement is linear over the algebra on exactly one side (§*The One-Sided Placements*); that the two signs of the second root fix complementary halves and forget their frequency (§*What Each Sign Forgets*); that the surviving half is carried at twice the frequency (§*The Doubled Frequency*); and that the two placements differ by the integral of a commutator bounded by $2\lVert P_\perp A\rVert$ (§*The Invariance Groups and Their Intersection*). **The inversion theorem and the uniqueness theorem for the complex transform are quoted** from *Biquaternion Continuous Harmonic Analysis* and are not reproved.
 
@@ -44,25 +44,25 @@ $$
 W(t,\omega)=\cos\theta\,e_t-\sin\theta\,R ,
 $$
 
-and the following hold: $N(W(t,\omega))=1$; $\lVert W(t,\omega)\rVert_E=1$ for the Hermitian root; $W(t,\omega)^{-1}=W(-t,\omega)$; the inverse is also the algebra conjugate, $W(t,\omega)^{-1}=\overline{W(t,\omega)}$; and $W(t+s,\omega)=W(t,\omega)W(s,\omega)$.
+and the following hold: $N(W(t,\omega))=1$; $\lVert W(t,\omega)\rVert=1$ for the Hermitian root; $W(t,\omega)^{-1}=W(-t,\omega)$; the inverse is also the algebra conjugate, $W(t,\omega)^{-1}=\overline{W(t,\omega)}$; and $W(t+s,\omega)=W(t,\omega)W(s,\omega)$.
 
-*Proof.* The exponential of an element with no scalar part splits into the even and the odd parts of its series, which are $\cos\theta\,e_t$ and $-\sin\theta\,R$, because $R^{2}=-e_t$. On the plane the algebraic norm is read off directly: $(a\,e_t+bR)(a\,e_t-bR)=a^{2}-b^{2}R^{2}=a^{2}+b^{2}$, so $N(a\,e_t+bR)=a^{2}+b^{2}$, and $N(W)=\cos^{2}\theta+\sin^{2}\theta=1$ with no hypothesis on the coordinates. The Euclidean norm is $\lVert W\rVert_E^{2}=\cos^{2}\theta+\lVert R\rVert_E^{2}\sin^{2}\theta$, because $e_t$ and $R$ are orthogonal for the form, and it is one exactly when $\lVert R\rVert_E=1$, which is the Hermitian root. The inverse is the same series at $-\theta$, and the conjugate is the same series with $\overline{R}=-R$, which leaves the cosine and reverses the sine. Multiplicativity is the addition formula in a commutative plane.
+*Proof.* The exponential of an element with no scalar part splits into the even and the odd parts of its series, which are $\cos\theta\,e_t$ and $-\sin\theta\,R$, because $R^{2}=-e_t$. On the plane the algebraic norm is read off directly: $(a\,e_t+bR)(a\,e_t-bR)=a^{2}-b^{2}R^{2}=a^{2}+b^{2}$, so $N(a\,e_t+bR)=a^{2}+b^{2}$, and $N(W)=\cos^{2}\theta+\sin^{2}\theta=1$ with no hypothesis on the coordinates. The Euclidean norm is $\lVert W\rVert^{2}=\cos^{2}\theta+\lVert R\rVert^{2}\sin^{2}\theta$, because $e_t$ and $R$ are orthogonal for the form, and it is one exactly when $\lVert R\rVert=1$, which is the Hermitian root. The inverse is the same series at $-\theta$, and the conjugate is the same series with $\overline{R}=-R$, which leaves the cosine and reverses the sine. Multiplicativity is the addition formula in a commutative plane.
 
 **Corollary (multiplication by the kernel is a Euclidean isometry, for the Hermitian root).** Let $R^{*}=-R$. Then for every $X\in\mathbb{B}$,
 
 $$
-\lVert W(t,\omega)X\rVert_E=\lVert XW(t,\omega)\rVert_E=\lVert X\rVert_E .
+\lVert W(t,\omega)X\rVert=\lVert XW(t,\omega)\rVert=\lVert X\rVert .
 $$
 
-*Proof.* Write the form as $\langle X,Y\rangle_E=\operatorname{Sc}(XY^{*})$, whose diagonal is $\lVert X\rVert_E^{2}=\sum_k\lvert X_k\rvert^{2}$, the sum of the eight real numbers $\lvert X_k\rvert^{2}$. The star is the conjugate transpose in the matrix model of *The Fourier Transform and the Symbol of a Differential Operator*, hence an anti-automorphism, and $\operatorname{Sc}(UV)=\operatorname{Sc}(VU)$ for every pair. For the Hermitian root $W^{*}=\cos\theta\,e_t+\sin\theta\,R=W^{-1}$ by the proposition, so $W^{*}W=e_t$ and
+*Proof.* Write the form as $\langle X,Y\rangle_E=\operatorname{Sc}(XY^{*})$, whose diagonal is $\lVert X\rVert^{2}=\sum_k\lvert X_k\rvert^{2}$, the sum of the eight real numbers $\lvert X_k\rvert^{2}$. The star is the conjugate transpose in the matrix model of *The Fourier Transform and the Symbol of a Differential Operator*, hence an anti-automorphism, and $\operatorname{Sc}(UV)=\operatorname{Sc}(VU)$ for every pair. For the Hermitian root $W^{*}=\cos\theta\,e_t+\sin\theta\,R=W^{-1}$ by the proposition, so $W^{*}W=e_t$ and
 
 $$
-\lVert WX\rVert_E^{2}=\operatorname{Sc}\bigl(WXX^{*}W^{*}\bigr)=\operatorname{Sc}\bigl(XX^{*}W^{*}W\bigr)=\lVert X\rVert_E^{2} .
+\lVert WX\rVert^{2}=\operatorname{Sc}\bigl(WXX^{*}W^{*}\bigr)=\operatorname{Sc}\bigl(XX^{*}W^{*}W\bigr)=\lVert X\rVert^{2} .
 $$
 
 The right-hand case is the same with $WW^{*}=e_t$.
 
-**Remark (a non-Hermitian pure root is not an isometry).** Take $R=ie_x-\sqrt2\,e_y$, whose attached root is $\tilde{Ζ}=e_x+i\sqrt2\,e_y$ with $\tilde{Ζ}^{2}=e_t$. Then $R^{2}=-e_t$, $R$ is pure, $N(R)=1$, and the closed form, the inverse and the multiplicativity of the proposition all hold. But $R^{*}=ie_x+\sqrt2\,e_y\ne-R$, so $W^{*}\ne W^{-1}$, and $\lVert R\rVert_E^{2}=3$ gives $\lVert W\rVert_E^{2}=\cos^{2}\theta+3\sin^{2}\theta\in[1,3]$. Over random $X$ and $\theta$ the ratio $\lVert WX\rVert_E/\lVert X\rVert_E$ is measured between $0.59$ and $2.35$. **Left multiplication by $W$ is then neither an isometry nor a similarity**, and the metric statements below hold for it only in the general forms that §*The Commutant and the Complement* and §*The Commutator Defect* attach to the constants. The same root refutes the shortcut $2\lVert X\rVert_E^{2}=\operatorname{tr}(X\overline{X})$: that trace is $2N(X)$, which is complex, and the trace that gives the Euclidean norm is $\operatorname{tr}(X^{*}X)$, with the factor $\tfrac12$.
+**Remark (a non-Hermitian pure root is not an isometry).** Take $R=ie_x-\sqrt2\,e_y$, whose attached root is $\tilde{Ζ}=e_x+i\sqrt2\,e_y$ with $\tilde{Ζ}^{2}=e_t$. Then $R^{2}=-e_t$, $R$ is pure, $N(R)=1$, and the closed form, the inverse and the multiplicativity of the proposition all hold. But $R^{*}=ie_x+\sqrt2\,e_y\ne-R$, so $W^{*}\ne W^{-1}$, and $\lVert R\rVert^{2}=3$ gives $\lVert W\rVert^{2}=\cos^{2}\theta+3\sin^{2}\theta\in[1,3]$. Over random $X$ and $\theta$ the ratio $\lVert WX\rVert/\lVert X\rVert$ is measured between $0.59$ and $2.35$. **Left multiplication by $W$ is then neither an isometry nor a similarity**, and the metric statements below hold for it only in the general forms that §*The Commutant and the Complement* and §*The Commutator Defect* attach to the constants. The same root refutes the shortcut $2\lVert X\rVert^{2}=\operatorname{tr}(X\overline{X})$: that trace is $2N(X)$, which is complex, and the trace that gives the Euclidean norm is $\operatorname{tr}(X^{*}X)$, with the factor $\tfrac12$.
 
 **Remark (the central root is the degenerate member of the family).** For $R=\pm i$, that is for $\tilde{Ζ}=\pm e_t$, the kernel is the complex scalar $\cos\theta\mp i\sin\theta$, which commutes with everything. **The two one-sided placements are then the same operator and the two-sided placement is the identity on values.** The article assumes the Hermitian root from here on; the central pair belongs to it, and the placements collapse there as described. **The assumption is a restriction, and it is stated**: a regular biquaternion supplies a pure root, which is Hermitian exactly when the element is normal, as *Biquaternion Continuous Harmonic Analysis* proves in its treatment of the non-Hermitian roots; for the other roots the transform is invertible and not an isometry.
 
@@ -143,9 +143,9 @@ so conjugation by the kernel is the identity on $C(R)$ and a rotation through th
 
 *Proof.* The first claim is the argument of the previous theorem with the sides exchanged. For the second, the two integrands differ by $f(\nu W-W\nu)=2\sin\theta\,f\eta$, which does not vanish identically unless $f$ is plane-valued; the exactness statement is again the corollary of §*The Plane of the Root*.
 
-**Proposition (boundedness, for the Hermitian root).** For integrable $f$ and every $\omega$, $\lVert\mathcal T_L[f](\omega)\rVert_E\le\int\lVert f(t)\rVert_E\,dt$, and the same bound holds for $\mathcal T_R$.
+**Proposition (boundedness, for the Hermitian root).** For integrable $f$ and every $\omega$, $\lVert\mathcal T_L[f](\omega)\rVert\le\int\lVert f(t)\rVert\,dt$, and the same bound holds for $\mathcal T_R$.
 
-*Proof.* The corollary of §*The Closed Form* gives $\lVert Wf\rVert_E=\lVert f\rVert_E$ and $\lVert fW\rVert_E=\lVert f\rVert_E$ pointwise; the triangle inequality for the integral of a norm-valued function gives the bound. **For a general pure root the constant is $\max(1,\lVert R\rVert_E)$**, which is the bound on $\lVert W\rVert_E$, applied to $\lVert WX\rVert_E\le\lVert W\rVert_E\lVert X\rVert_E$.
+*Proof.* The corollary of §*The Closed Form* gives $\lVert Wf\rVert=\lVert f\rVert$ and $\lVert fW\rVert=\lVert f\rVert$ pointwise; the triangle inequality for the integral of a norm-valued function gives the bound. **For a general pure root the constant is $\max(1,\lVert R\rVert)$**, which is the bound on $\lVert W\rVert$, applied to $\lVert WX\rVert\le\lVert W\rVert\lVert X\rVert$.
 
 ### The Conjugate Relation
 
@@ -177,9 +177,9 @@ $$
 \mathcal T_T[f](\omega)=\int W(t,\omega)f(t)W'(t,\omega)\,dt .
 $$
 
-**Proposition (boundedness, for the Hermitian root).** For integrable $f$ and every $\omega$, $\lVert\mathcal T_T[f](\omega)\rVert_E\le\int\lVert f(t)\rVert_E\,dt$.
+**Proposition (boundedness, for the Hermitian root).** For integrable $f$ and every $\omega$, $\lVert\mathcal T_T[f](\omega)\rVert\le\int\lVert f(t)\rVert\,dt$.
 
-*Proof.* For Hermitian roots $W$ and $W'$ are both unitary, and multiplication on either side by a unitary is an isometry by the same computation as the corollary of §*The Closed Form*; so $\lVert WfW'\rVert_E=\lVert f\rVert_E$ pointwise and the triangle inequality applies. For general pure roots the constant becomes $\max(1,\lVert R\rVert_E)\max(1,\lVert R'\rVert_E)$, one factor per kernel.
+*Proof.* For Hermitian roots $W$ and $W'$ are both unitary, and multiplication on either side by a unitary is an isometry by the same computation as the corollary of §*The Closed Form*; so $\lVert WfW'\rVert=\lVert f\rVert$ pointwise and the triangle inequality applies. For general pure roots the constant becomes $\max(1,\lVert R\rVert)\max(1,\lVert R'\rVert)$, one factor per kernel.
 
 ### The Two Signs That Fix a Part
 
@@ -298,7 +298,7 @@ $$
 the difference vanishing identically for every plane-valued $f$ and not vanishing identically for a constant transverse value. Moreover, for the Hermitian root and every $A\in\mathbb{B}$ and every $t,\omega$,
 
 $$
-\lVert[W(t,\omega),A]\rVert_E\le 2\lVert P_\perp A\rVert_E ,
+\lVert[W(t,\omega),A]\rVert\le 2\lVert P_\perp A\rVert ,
 $$
 
 and the constant $2$ is attained.
@@ -309,17 +309,17 @@ $$
 [W,A]=[W,A_\perp] ,
 $$
 
-and then $\lVert[W,A]\rVert_E\le\lVert WA_\perp\rVert_E+\lVert A_\perp W\rVert_E=2\lVert A_\perp\rVert_E$ by the corollary of §*The Closed Form*, which says that for the Hermitian root multiplication by $W$ on either side is an isometry; if that hypothesis is dropped the estimate becomes $2\lVert W\rVert_E\lVert A_\perp\rVert_E$, which is the next remark. For the sharpness, take $\theta=\pi/2$, that is $W=-R$, and $A=\nu$; then $[W,\nu]=-R\nu+\nu R=-\eta-\eta=-2\eta$, of Euclidean norm $2$, while $\lVert P_\perp\nu\rVert_E=1$.
+and then $\lVert[W,A]\rVert\le\lVert WA_\perp\rVert+\lVert A_\perp W\rVert=2\lVert A_\perp\rVert$ by the corollary of §*The Closed Form*, which says that for the Hermitian root multiplication by $W$ on either side is an isometry; if that hypothesis is dropped the estimate becomes $2\lVert W\rVert\lVert A_\perp\rVert$, which is the next remark. For the sharpness, take $\theta=\pi/2$, that is $W=-R$, and $A=\nu$; then $[W,\nu]=-R\nu+\nu R=-\eta-\eta=-2\eta$, of Euclidean norm $2$, while $\lVert P_\perp\nu\rVert=1$.
 
 **Remark (what the bound costs without the Hermitian root).** Without $R^{*}=-R$ the isometry is gone, and only
 
 $$
-\lVert[W,A]\rVert_E\le2\lVert W\rVert_E\lVert P_\perp A\rVert_E\le2\max(1,\lVert R\rVert_E)\lVert P_\perp A\rVert_E
+\lVert[W,A]\rVert\le2\lVert W\rVert\lVert P_\perp A\rVert\le2\max(1,\lVert R\rVert)\lVert P_\perp A\rVert
 $$
 
-survives, by submultiplicativity of the Euclidean norm. For $R=ie_x-\sqrt2\,e_y$ the ratio $\lVert[W,A]\rVert_E/(2\lVert P_\perp A\rVert_E)$ reaches $1.68$ over two thousand sampled pairs $(A,\theta)$, so the constant $2$ is false there and $2\sqrt3$ is what the proof gives. **The example at $\theta=\pi/2$ survives for any root** — $[-R,\nu]=-2\eta$ uses only the frame relations — but its Euclidean norm is $2$ only when the frame has Euclidean norm one, which is the Hermitian case.
+survives, by submultiplicativity of the Euclidean norm. For $R=ie_x-\sqrt2\,e_y$ the ratio $\lVert[W,A]\rVert/(2\lVert P_\perp A\rVert)$ reaches $1.68$ over two thousand sampled pairs $(A,\theta)$, so the constant $2$ is false there and $2\sqrt3$ is what the proof gives. **The example at $\theta=\pi/2$ survives for any root** — $[-R,\nu]=-2\eta$ uses only the frame relations — but its Euclidean norm is $2$ only when the frame has Euclidean norm one, which is the Hermitian case.
 
-**Remark (what the bound says).** The trivial bound $\lVert[W,A]\rVert_E\le2\lVert A\rVert_E$ is also true and says nothing, because it does not vanish where the two placements agree. **The sharper bound vanishes exactly on the plane of the root**, which is the set on which the two transforms coincide, so it is the quantitative form of the corollary above; and since it is attained on a transverse value, the defect is never a small effect to be discarded.
+**Remark (what the bound says).** The trivial bound $\lVert[W,A]\rVert\le2\lVert A\rVert$ is also true and says nothing, because it does not vanish where the two placements agree. **The sharper bound vanishes exactly on the plane of the root**, which is the set on which the two transforms coincide, so it is the quantitative form of the corollary above; and since it is attained on a transverse value, the defect is never a small effect to be discarded.
 
 ### The Relations Between the Three
 
@@ -339,7 +339,7 @@ where $\mathcal T_R^{(W')}[g]=\int gW'$ is the right placement with kernel $W'$.
 
 ## Summary
 
-The kernel has algebraic norm one, with closed form $\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)R$ for the root $R=i\tilde{Ζ}$ attached to a root $\tilde{Ζ}$ of $1$, with inverse equal to the algebra conjugate and with multiplicativity in the time. **For the Hermitian root it has Euclidean norm one**, and multiplication by it on either side is then an isometry of the eight real coordinates, so every placement is bounded by the integral of the Euclidean norm of the value; for a non-Hermitian pure root neither the isometry nor that bound with constant one holds, and the constant becomes $\max(1,\lVert R\rVert_E)$. Its commutant is the plane of the root, a commutative subalgebra of real dimension four; on that plane conjugation by the kernel is the identity, and on the complementary plane it is a rotation through $4\pi\omega t$.
+The kernel has algebraic norm one, with closed form $\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)R$ for the root $R=i\tilde{Ζ}$ attached to a root $\tilde{Ζ}$ of $1$, with inverse equal to the algebra conjugate and with multiplicativity in the time. **For the Hermitian root it has Euclidean norm one**, and multiplication by it on either side is then an isometry of the eight real coordinates, so every placement is bounded by the integral of the Euclidean norm of the value; for a non-Hermitian pure root neither the isometry nor that bound with constant one holds, and the constant becomes $\max(1,\lVert R\rVert)$. Its commutant is the plane of the root, a commutative subalgebra of real dimension four; on that plane conjugation by the kernel is the identity, and on the complementary plane it is a rotation through $4\pi\omega t$.
 
 The left placement is linear on the right over the whole algebra and on the left only over the plane; the right placement is the reverse; and the algebra conjugate of the left transform is the right transform of the conjugate at the opposite frequency, an identity that needs the algebra conjugate and fails for the complex one. Each one-sided placement is inverted by the conjugate kernel on its own side. The two one-sided placements differ by the integral of a commutator, bounded by twice the transverse part of the value and equal to that bound when the kernel has turned a quarter of its period.
 
@@ -363,7 +363,7 @@ The two-sided placement depends on the sign of the second root, and the two sign
 | $\operatorname{Sc}$ | The scalar part, the coefficient of $e_t$ |
 | $A^{*}$ | The Euclidean adjoint, the conjugate transpose in the matrix model |
 | $\overline{A}$ | The algebra conjugate, which reverses the vector part |
-| $\lVert A\rVert_E$ | The Euclidean norm on the eight real coordinates, $\lVert A\rVert_E^{2}=\operatorname{Sc}(AA^{*})=\sum_k\lvert A_k\rvert^{2}$ |
+| $\lVert A\rVert$ | The Euclidean norm on the eight real coordinates, $\lVert A\rVert^{2}=\operatorname{Sc}(AA^{*})=\sum_k\lvert A_k\rvert^{2}$ |
 | $A$, $X$, $a$ | Generic elements of the algebra; $a$ is the constant in the linearity statements |
 | $\bar f$ | The conjugate-valued function $t\mapsto\overline{f(t)}$ |
 | $\mathbb{B}=C(R)\oplus V_\perp$ | The split of the algebra into the plane of the root and its complement |

@@ -191,7 +191,7 @@ $$
 \boxed{\;(L\circ K)(z,x)=\int_Y L(z,y)K(y,x)\,dy\;}
 $$
 
-whenever one of the operators has compactly supported kernel, the integral being the distributional pairing in $y$, $\langle L(z,\cdot),K(\cdot,x)\rangle$; (iii) if $K \in L^2(X\times Y)$ then $T$ extends to a compact operator $L^2(X)\to L^2(Y)$ with Hilbert–Schmidt norm $\|T\|_{\mathrm{HS}}^2=\iint|K(x,y)|^2\,dx\,dy$, and every such operator has a kernel in $L^2(X\times Y)$; (iv) if $K \in C^\infty(X\times Y)$ then $T$ maps $\mathcal E'(X)$ into $C^\infty(Y)$, and these **smoothing** operators form a two-sided ideal in $\mathcal L(\mathcal D,\mathcal D')$.
+whenever one of the operators has compactly supported kernel, the integral being the distributional pairing in $y$, $\langle L(z,\cdot),K(\cdot,x)\rangle$; (iii) if $K \in L^2(X\times Y)$ then $T$ extends to a compact operator $L^2(X)\to L^2(Y)$ with Hilbert–Schmidt norm $\langle T\rangle_*=\iint|K(x,y)|^2\,dx\,dy$, and every such operator has a kernel in $L^2(X\times Y)$; (iv) if $K \in C^\infty(X\times Y)$ then $T$ maps $\mathcal E'(X)$ into $C^\infty(Y)$, and these **smoothing** operators form a two-sided ideal in $\mathcal L(\mathcal D,\mathcal D')$.
 
 *Proof.* (i) is the definition of the adjoint pairing; (ii) is the associative law for the iterated pairing, valid by Fubini when the supports permit; (iii) is the Hilbert–Schmidt theorem of *Banach and Hilbert Spaces*, the kernel being the matrix of $T$ in the continuous basis of the Hilbert space; (iv) is differentiation under the pairing against a smooth compactly supported distribution.
 
@@ -263,7 +263,7 @@ The standard kernels are the delta of the diagonal for the identity, the derivat
 | $\delta(x-y)$, $\delta_\Delta$ | delta of the diagonal |
 | ${}^tT$, $T^*$, $K^*$ | transpose, adjoint and adjoint kernel |
 | $L\circ K$ | composition of kernels |
-| $\|T\|_{\mathrm{HS}}$ | Hilbert–Schmidt norm |
+| $\langle T\rangle_*^{1/2}$ | Hilbert–Schmidt norm |
 | $\mathfrak{a}(x,\zeta)$ | symbol of an operator |
 | $G(x,y)$ | Green's function |
 

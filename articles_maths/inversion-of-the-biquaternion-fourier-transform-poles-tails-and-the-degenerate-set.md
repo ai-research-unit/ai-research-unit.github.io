@@ -81,7 +81,7 @@ an operator of degree $7m$ in the frequency, against the degree $8m$ of the dete
 **Theorem (Paley–Wiener, quoted).** Let $f:\mathbb{R}^{n}\to\mathbb{B}$ be integrable with $\hat f(\omega)=\int W(t,\omega)f(t)\,dt$. Then $f$ is supported in the ball of radius $R$ if and only if $\hat f$ extends to an entire function of the complexified frequency satisfying
 
 $$
-\lVert\hat f(\omega)\rVert_E\le C e^{2\pi R\lvert\operatorname{Im}\omega\rvert}
+\lVert\hat f(\omega)\rVert\le C e^{2\pi R\lvert\operatorname{Im}\omega\rvert}
 $$
 
 for some constant $C$. The number $2\pi R$ is the exponential type of $\hat f$, and the support radius is the type divided by $2\pi$.
@@ -89,14 +89,14 @@ for some constant $C$. The number $2\pi R$ is the exponential type of $\hat f$, 
 **Theorem (Plancherel, quoted).** For $f$ in $L^{2}(\mathbb{R}^{n};\mathbb{B})$ the transform $\hat f$ lies in $L^{2}$ and
 
 $$
-\int_{\mathbb{R}^{n}}\lVert f(t)\rVert_E^{2}\,dt=\int_{\mathbb{R}^{n}}\lVert\hat f(\omega)\rVert_E^{2}\,d\omega ,
+\int_{\mathbb{R}^{n}}\lVert f(t)\rVert^{2}\,dt=\int_{\mathbb{R}^{n}}\lVert\hat f(\omega)\rVert^{2}\,d\omega ,
 $$
 
 so the transform is unitary, and its inverse is the conjugate kernel.
 
 **Remark (the hypotheses, and why they are named).** Both theorems are quoted from *Biquaternion Continuous Harmonic Analysis*, stated for $\mathbb{B}$-valued functions with the Euclidean norm on the eight real coordinates, the first under integrability and the second under membership of $L^{2}$. **They are not proved here**: Paley–Wiener converts a support radius into a type, and Plancherel a pointwise bound on the symbol into a bound on the operator.
 
-**Corollary (when the reciprocal is a bounded operator).** Multiplication by $\Sigma^{-1}$ is bounded on $L^{2}$ if and only if $\lVert\Sigma(\omega)^{-1}\rVert_E$ is bounded on the real frequencies, that is if and only if $Z(P)$ stays at a positive distance from $\mathbb{R}^{n}$.
+**Corollary (when the reciprocal is a bounded operator).** Multiplication by $\Sigma^{-1}$ is bounded on $L^{2}$ if and only if $\lVert\Sigma(\omega)^{-1}\rVert$ is bounded on the real frequencies, that is if and only if $Z(P)$ stays at a positive distance from $\mathbb{R}^{n}$.
 
 *Proof.* Plancherel makes the transform unitary, so multiplication by a function is bounded with the supremum of its norm as the bound. That supremum is finite exactly when $Z(P)$ does not meet the real frequencies and stays away from them.
 
@@ -219,7 +219,7 @@ $$
 **Proposition (the bound on a solution).** Let $f$ be integrable and supported in a ball of radius $R$, let $\kappa$ obey the bound of the previous proposition, and let $u=\kappa*f$. Then
 
 $$
-\lVert u(x)\rVert_E\le C'\lVert f\rVert_{1}\bigl(1+\lvert x\rvert\bigr)^{k-1}e^{-2\pi\rho(\lvert x\rvert-R)} .
+\lVert u(x)\rVert\le C'\lVert f\rVert_{1}\bigl(1+\lvert x\rvert\bigr)^{k-1}e^{-2\pi\rho(\lvert x\rvert-R)} .
 $$
 
 *Proof.* For $y$ in the support of $f$ the number $\lvert x-y\rvert$ is at least $\lvert x\rvert-R$, and the bound is monotone in $\lvert x-y\rvert$ on the side where the kernel does not vanish; integrate the bound against $\lVert f(y)\rVert\,dy$.
@@ -389,7 +389,7 @@ Where the symbol is not a unit the pointwise equation is solved by the Moore–P
 | $\Sigma^{+}$ | the Moore–Penrose inverse of the symbol at one frequency |
 | $L_{\tilde Q}$ | left multiplication by $\tilde Q$ on $\mathbb{B}$ |
 | $\det L_{\tilde Q}$ | the real $8\times8$ determinant, equal to $\lvert N(\tilde Q)\rvert^{4}$ |
-| $\lVert\cdot\rVert_E$ | the Euclidean norm on the eight real coordinates |
+| $\lVert\cdot\rVert$ | the Euclidean norm on the eight real coordinates |
 | $\langle\cdot,\cdot\rangle_E$ | the Euclidean form on the eight real coordinates |
 
 ## Further Reading

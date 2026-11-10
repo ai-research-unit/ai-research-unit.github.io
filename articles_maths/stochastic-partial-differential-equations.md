@@ -45,7 +45,7 @@ the series converging almost surely in $H$; it is a Gaussian process with mean z
 
 ### The Hilbert–Schmidt Integral
 
-**Definition.** Let $U$ and $H$ be separable Hilbert spaces. A bounded operator $T : U\to H$ is **Hilbert–Schmidt** if $\|T\|_{\mathrm{HS}}^2 = \sum_k\|Te_k\|^2<\infty$ for an orthonormal basis $(e_k)$ of $U$; the sum is independent of the basis, and the space of such operators, with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\sum_k\langle Se_k,Te_k\rangle$, is a Hilbert space $L_2(U,H)$.
+**Definition.** Let $U$ and $H$ be separable Hilbert spaces. A bounded operator $T : U\to H$ is **Hilbert–Schmidt** if $\langle T\rangle_* = \sum_k\|Te_k\|^2<\infty$ for an orthonormal basis $(e_k)$ of $U$; the sum is independent of the basis, and the space of such operators, with the inner product $\langle S,T\rangle_{\mathrm{HS}}=\sum_k\langle Se_k,Te_k\rangle$, is a Hilbert space $L_2(U,H)$.
 
 **Definition.** Let $\Sigma$ be trace class on $U$ with $\Sigma^{1/2}$ its positive square root and let $\Phi$ be a progressively measurable $L_2(\Sigma^{1/2}U,H)$-valued process with $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}(\Sigma^{1/2}U,H)}^2ds<\infty$. The **stochastic integral** $\int_0^T\Phi_s\,dW^\Sigma_s$ is defined by approximation from elementary integrands, with the isometry
 
@@ -63,7 +63,7 @@ $$
 \int_0^T\Phi_s\,dW_s = \sum_{k\ge1}\int_0^T\Phi_se_k\,d\beta_k(s),
 $$
 
-the series converging in $L^2(\Omega;H)$ exactly when $\mathbb{E}\int_0^T\|\Phi_s\|_{\mathrm{HS}}^2ds<\infty$; the isometry $\mathbb{E}\|\int\Phi\,dW\|^2=\mathbb{E}\int\|\Phi\|_{\mathrm{HS}}^2ds$ holds.
+the series converging in $L^2(\Omega;H)$ exactly when $\mathbb{E}\int_0^T\langle \Phi_s\rangle_*ds<\infty$; the isometry $\mathbb{E}\|\int\Phi\,dW\|^2=\mathbb{E}\int\langle \Phi\rangle_*ds$ holds.
 
 ## Stochastic Evolution Equations
 
@@ -95,9 +95,9 @@ $$
 
 it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname{tr}\Sigma_t<\infty$.
 
-*Proof.* For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\|S(t-s)\Phi_s\Sigma^{1/2}\|_{\mathrm{HS}}^2ds=\operatorname{tr}\Sigma_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity.
+*Proof.* For a fixed $t$, the isometry gives $\mathbb{E}\|W_A(t)\|^2=\int_0^t\langle S(t-s)\Phi_s\Sigma^{1/2}\rangle_*ds=\operatorname{tr}\Sigma_t$, which is finite by the hypothesis and the boundedness of the semigroup on compact time intervals. The continuity of the paths is Kolmogorov's continuity criterion applied to the increments, using the Gaussian moments of the stochastic integral; the covariance is computed from the isometry and the polarisation identity.
 
-**Theorem (existence and uniqueness for Lipschitz coefficients).** Let $F$ and $B$ satisfy a Lipschitz condition in the state variable, $\|F(x)-F(y)\|+\|B(x)-B(y)\|_{\mathrm{HS}}\le C\|x-y\|$, and suppose $X_0\in L^2(\Omega;H)$ and $\sup_{t\le T}\|S(t)\|<\infty$. Then the stochastic evolution equation has a unique mild solution on $[0,T]$ with $\sup_{t\le T}\mathbb{E}\|X_t\|^2<\infty$.
+**Theorem (existence and uniqueness for Lipschitz coefficients).** Let $F$ and $B$ satisfy a Lipschitz condition in the state variable, $\|F(x)-F(y)\|+\langle B(x)-B(y)\rangle_*^{1/2}\le C\|x-y\|$, and suppose $X_0\in L^2(\Omega;H)$ and $\sup_{t\le T}\|S(t)\|<\infty$. Then the stochastic evolution equation has a unique mild solution on $[0,T]$ with $\sup_{t\le T}\mathbb{E}\|X_t\|^2<\infty$.
 
 *Proof.* Quoted as standard (Da Prato–Zabczyk). The Picard iteration of the preceding article is repeated with the stochastic convolution in place of the deterministic integral; the isometry controls the stochastic term, the Lipschitz condition controls the difference of two iterates, and a Gronwall argument in $L^2(\Omega;H)$ gives convergence of the iteration and uniqueness.
 
@@ -201,7 +201,7 @@ a linear stochastic partial differential equation whose solution is a measure-va
 
 ## Summary
 
-A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+F(X_t))dt+B(X_t)dW^\Sigma_t$ in a Hilbert space, driven by a cylindrical or $\Sigma$-Wiener process, with $A$ the generator of a strongly continuous semigroup and the noise coefficient Hilbert–Schmidt relative to the covariance $\Sigma$. The stochastic integral against the $\Sigma$-Wiener process is defined by the isometry $\mathbb{E}\|\int\Phi\,dW^\Sigma\|^2=\mathbb{E}\int\|\Phi \Sigma^{1/2}\|_{\mathrm{HS}}^2ds$, and the solution is the mild solution expressed through the stochastic convolution $W_A(t)=\int_0^tS(t-s)\Phi_s\,dW^\Sigma_s$, which is Gaussian with covariance $\int_0^tS(t-s)\Phi_s\Sigma\Phi_s^*S(t-s)^*ds$ and has continuous paths. Lipschitz coefficients give existence and uniqueness of the mild solution by Picard iteration; the infinite-dimensional Itô formula carries the trace correction $\frac12\operatorname{Tr}(B\Sigma B^*\partial^2f)$ and defines the Kolmogorov operator, whose transition semigroup has the expectations as its solutions and whose $L^2$ theory is the infinite-dimensional backward equation; the Wong–Zakai theorem identifies the Stratonovich formulation of the limit of smooth approximations. The stochastic heat equation is the prototype, the Hilbert–Schmidt condition holds for cylindrical noise in one dimension — where the trace converges with large-time value $1/12$ for the Dirichlet interval — and fails logarithmically in two dimensions; the linear equation has the Gaussian invariant measure $\mathcal{N}(0,\Sigma_\infty)$ with $\Sigma_\infty$ solving the Lyapunov equation. The stochastic Burgers, Navier–Stokes and Zakai equations illustrate the range of the theory, and the singular equations of the regularity-structures theory show the limit of the classical methods and the place of renormalisation.
+A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+F(X_t))dt+B(X_t)dW^\Sigma_t$ in a Hilbert space, driven by a cylindrical or $\Sigma$-Wiener process, with $A$ the generator of a strongly continuous semigroup and the noise coefficient Hilbert–Schmidt relative to the covariance $\Sigma$. The stochastic integral against the $\Sigma$-Wiener process is defined by the isometry $\mathbb{E}\|\int\Phi\,dW^\Sigma\|^2=\mathbb{E}\int\langle \Phi \Sigma^{1/2}\rangle_*ds$, and the solution is the mild solution expressed through the stochastic convolution $W_A(t)=\int_0^tS(t-s)\Phi_s\,dW^\Sigma_s$, which is Gaussian with covariance $\int_0^tS(t-s)\Phi_s\Sigma\Phi_s^*S(t-s)^*ds$ and has continuous paths. Lipschitz coefficients give existence and uniqueness of the mild solution by Picard iteration; the infinite-dimensional Itô formula carries the trace correction $\frac12\operatorname{Tr}(B\Sigma B^*\partial^2f)$ and defines the Kolmogorov operator, whose transition semigroup has the expectations as its solutions and whose $L^2$ theory is the infinite-dimensional backward equation; the Wong–Zakai theorem identifies the Stratonovich formulation of the limit of smooth approximations. The stochastic heat equation is the prototype, the Hilbert–Schmidt condition holds for cylindrical noise in one dimension — where the trace converges with large-time value $1/12$ for the Dirichlet interval — and fails logarithmically in two dimensions; the linear equation has the Gaussian invariant measure $\mathcal{N}(0,\Sigma_\infty)$ with $\Sigma_\infty$ solving the Lyapunov equation. The stochastic Burgers, Navier–Stokes and Zakai equations illustrate the range of the theory, and the singular equations of the regularity-structures theory show the limit of the classical methods and the place of renormalisation.
 
 ## Summary of Notation
 
@@ -211,7 +211,7 @@ A stochastic partial differential equation is an evolution equation $dX_t=(AX_t+
 | $(e_k)$, $\beta_k$ | Orthonormal basis and independent Brownian motions |
 | $W_t$, $W^\Sigma_t$ | Cylindrical and $\Sigma$-Wiener processes |
 | $\Sigma$, $q_k$ | Trace-class covariance operator and its eigenvalues |
-| $L_2(U,H)$, $\|\cdot\|_{\mathrm{HS}}$ | Hilbert–Schmidt operators and their norm |
+| $L_2(U,H)$, $\langle \cdot\rangle_*^{1/2}$ | Hilbert–Schmidt operators and their norm |
 | $S(t)$, $A$ | Semigroup and its generator |
 | $F$, $B$ | Drift nonlinearity and noise coefficient |
 | $dX=(AX+F)dt+B\,dW^\Sigma$ | Stochastic evolution equation |

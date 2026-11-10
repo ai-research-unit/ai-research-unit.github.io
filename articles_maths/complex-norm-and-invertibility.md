@@ -89,7 +89,7 @@ It is a real number, non-negative, and vanishes if and only if $Q = 0$. Because 
 The **Euclidean norm** of a complex number is the square root of the Hermitian form,
 
 $$
-\|Q\|_E = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
+\|Q\| = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
 $$
 
 It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It **is** multiplicative with respect to the complex product, because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$.
@@ -300,7 +300,7 @@ The complex case is the second rung of the definite column: it adds the second s
 
 ## Summary
 
-The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$, real, positive-definite and multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Q\|_E = \sqrt{\langle Q\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.
+The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$, real, positive-definite and multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.
 
 A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$. On the worked pair $Q_1 = 3+4i$, $Q_2 = 1-2i$ the criterion gives $\langle Q_1\rangle_{*} = 25$, $\langle Q_2\rangle_{*} = 5$ and $\langle Q_1Q_2\rangle_{*} = 125$, with inverses $Q_1^{-1} = (3-4i)/25$ and $Q_2^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.
 
@@ -314,7 +314,7 @@ The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, o
 | $Q = q + i q'$ | a complex number, $q$ its real part, $q'$ its imaginary part |
 | $\bar{Q} = q - i q'$ | complex conjugation, the nontrivial involution |
 | $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, real, positive definite, multiplicative |
-| $\|Q\|_E = \sqrt{\langle Q\rangle_{*}}$ | the Euclidean norm and the modulus |
+| $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ | the Euclidean norm and the modulus |
 | $\bar{Q}_1Q_2$ | the Hermitian product, whose real part is $\langle Q_1,Q_2\rangle_{*}$ and whose diagonal is $\langle Q_1\rangle_{*}$ |
 | $Q_1 = 3+4i$, $Q_2 = 1-2i$ | the worked pair of the category |
 | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |

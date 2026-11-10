@@ -14,9 +14,9 @@ $$
 (\tilde{Q}_1,\tilde{Q}_2)_{\mathbb{R}}=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_{1\mu} q_{2\mu}+q'_{1\mu} q'_{2\mu}\bigr).
 $$
 
-**Proposition.** $(\cdot,\cdot)_{\mathbb{R}}$ is a positive definite real inner product on $\mathbb{B}$, and its associated norm is $\|\tilde{Q}\|_E$.
+**Proposition.** $(\cdot,\cdot)_{\mathbb{R}}$ is a positive definite real inner product on $\mathbb{B}$, and its associated norm is $\|\tilde{Q}\|$.
 
-**Proof.** Linearity in each argument and symmetry over $\mathbb{R}$ are immediate from the definition; and $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu(q_\mu^{2}+q'_\mu{}^{2})$ is positive off zero, since a vanishing sum of squares forces $q_\mu=q'_\mu=0$. The associated norm is the square root of $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$.
+**Proof.** Linearity in each argument and symmetry over $\mathbb{R}$ are immediate from the definition; and $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu(q_\mu^{2}+q'_\mu{}^{2})$ is positive off zero, since a vanishing sum of squares forces $q_\mu=q'_\mu=0$. The associated norm is the square root of $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|^{2}$.
 
 **Theorem (the isometry).** The coefficient map
 
@@ -28,7 +28,7 @@ is a linear isometry of $(\mathbb{B},(\cdot,\cdot)_{\mathbb{R}})$ onto $\mathbb{
 
 **Proof.** The map is bijective and $\mathbb{R}$-linear because $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ is a real basis, and it preserves the inner product by the displayed formula.
 
-Two consequences are used throughout. First, $\mathbb{B}$ is **complete** in $\|\cdot\|_E$: it is finite-dimensional, and a finite-dimensional inner product space is a Hilbert space. Second, $\|\cdot\|_E$ defines the unique Hausdorff vector-space topology on $\mathbb{B}$, the **Euclidean topology**, and this is the topology of the corpus. The metric is $d(\tilde{Q}_1,\tilde{Q}_2)=\|\tilde{Q}_1-\tilde{Q}_2\|_E$.
+Two consequences are used throughout. First, $\mathbb{B}$ is **complete** in $\|\cdot\|$: it is finite-dimensional, and a finite-dimensional inner product space is a Hilbert space. Second, $\|\cdot\|$ defines the unique Hausdorff vector-space topology on $\mathbb{B}$, the **Euclidean topology**, and this is the topology of the corpus. The metric is $d(\tilde{Q}_1,\tilde{Q}_2)=\|\tilde{Q}_1-\tilde{Q}_2\|$.
 
 ## The Algebra as a Normed Algebra
 
@@ -37,16 +37,16 @@ The multiplication is continuous, and the estimate is sharp.
 **Theorem (the normed-algebra inequality).** For all $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$,
 
 $$
-\boxed{\; \|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt{2}\,\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E \;},
+\boxed{\; \|\tilde{Q}_1\tilde{Q}_2\|\leq\sqrt{2}\,\|\tilde{Q}_1\|\|\tilde{Q}_2\| \;},
 $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
 
-**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Pauli Representation*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{Q})\|_F=\sqrt2\|\tilde{Q}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
+**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Pauli Representation*, which is a linear isometry up to the factor $\sqrt2$, one has $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\|\tilde{Q}\|$, where $\langle \cdot\rangle_*^{1/2}$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
 $$
-\sqrt2\,\|\tilde{Q}_1\tilde{Q}_2\|_E=\|\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\|_F\leq\|\mathsf{M}_2(\tilde{Q}_1)\|_F\|\mathsf{M}_2(\tilde{Q}_2)\|_F=2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E,
+\sqrt2\,\|\tilde{Q}_1\tilde{Q}_2\|=\langle \mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\rangle_*^{1/2}\leq\langle \mathsf{M}_2(\tilde{Q}_1)\rangle_*^{1/2}\langle \mathsf{M}_2(\tilde{Q}_2)\rangle_*^{1/2}=2\|\tilde{Q}_1\|\|\tilde{Q}_2\|,
 $$
-which is the inequality. For sharpness take $\tilde{Q}_1=\tilde{Q}_2=e_t+i\vec e_x$: then $\tilde{Q}_1^{2}=2e_t+2i\vec e_x$ and $\|\tilde{Q}_1\|_E^{2}=2$, $\|\tilde{Q}_1^{2}\|_E=2\sqrt2$, so $\|\tilde{Q}_1^{2}\|_E=\sqrt2\,\|\tilde{Q}_1\|_E^{2}$.
+which is the inequality. For sharpness take $\tilde{Q}_1=\tilde{Q}_2=e_t+i\vec e_x$: then $\tilde{Q}_1^{2}=2e_t+2i\vec e_x$ and $\|\tilde{Q}_1\|^{2}=2$, $\|\tilde{Q}_1^{2}\|=2\sqrt2$, so $\|\tilde{Q}_1^{2}\|=\sqrt2\,\|\tilde{Q}_1\|^{2}$.
 
 **Corollary.** Multiplication $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$ is continuous, inversion is continuous on the units, and $\mathbb{B}$ is a topological algebra over $\mathbb{R}$ with $\mathbb{B}^{\times}$ a topological group.
 
@@ -55,8 +55,8 @@ which is the inequality. For sharpness take $\tilde{Q}_1=\tilde{Q}_2=e_t+i\vec e
 **Proposition (the isometries that the algebra supplies).** Multiplication by a central element and the conjugations are orthogonal:
 
 $$
-\|(A e_t)\tilde{Q}\|_E=|A|\,\|\tilde{Q}\|_E,\qquad
-\|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
+\|(A e_t)\tilde{Q}\|=|A|\,\|\tilde{Q}\|,\qquad
+\|\tilde{Q}^{\natural}\|=\|\bar{\tilde{Q}}\|=\|\tilde{Q}^{*}\|=\|\tilde{Q}\| .
 $$
 
 Moreover, for every $*$-unitary biquaternion $\tilde Q$ the inner conjugation $\mathrm{Sd}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ is a Euclidean isometry.
@@ -89,10 +89,10 @@ The complement of the $\natural$-degenerate set, $\{\langle\tilde Q\rangle_{\nat
 ## The Euclidean Unit Sphere
 
 $$
-\boxed{\; S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^{7} \;}
+\boxed{\; S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|=1\}\cong S^{7} \;}
 $$
 
-is, by the isometry of §*The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$*, the standard unit sphere of $\mathbb{R}^{8}$: closed, compact, connected, and a smooth $7$-manifold. It is nevertheless the **wrong** sphere for the algebra, and the reason is that $\|\cdot\|_E$ is not multiplicative: for $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=0$ while $\|\tilde{Q}\|_E=\sqrt2$, so
+is, by the isometry of §*The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$*, the standard unit sphere of $\mathbb{R}^{8}$: closed, compact, connected, and a smooth $7$-manifold. It is nevertheless the **wrong** sphere for the algebra, and the reason is that $\|\cdot\|$ is not multiplicative: for $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=0$ while $\|\tilde{Q}\|=\sqrt2$, so
 
 $$
 \tilde{Q}_0=\frac{\vec e_x+i\vec e_y}{\sqrt2}\in S^{7}_{E},\qquad \tilde{Q}_0^{2}=0,
@@ -116,18 +116,18 @@ The real inner product $(\cdot,\cdot)_{\mathbb{R}}$ makes $\mathbb{B}$ a Euclide
 
 ## Summary
 
-The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$, and central multipliers, the conjugations and inner conjugations by $*$-unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
+The Euclidean norm is $\|\tilde{Q}\|=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|\leq\sqrt2\|\tilde{Q}_1\|\|\tilde{Q}_2\|$, and central multipliers, the conjugations and inner conjugations by $*$-unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $(\tilde{Q}_1,\tilde{Q}_2)_{\mathbb{R}}=\sum_\mu(q_{1\mu} q_{2\mu}+q'_{1\mu} q'_{2\mu})$ | Real inner product; positive definite |
-| $\|\tilde{Q}\|_E=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$ | Euclidean norm |
+| $\|\tilde{Q}\|=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$ | Euclidean norm |
 | $\operatorname{coef}:\mathbb{B}\to\mathbb{R}^{8}$ | Linear isometry onto $\mathbb{R}^{8}$ |
-| $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$ | Normed-algebra inequality, sharp |
+| $\|\tilde{Q}_1\tilde{Q}_2\|\leq\sqrt2\|\tilde{Q}_1\|\|\tilde{Q}_2\|$ | Normed-algebra inequality, sharp |
 | $H(t,\tilde{Q})=(1-t)\tilde{Q}$ | Contraction of $\mathbb{B}$ to $0$ |
-| $S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$ | Euclidean unit sphere; not a group |
+| $S^{7}_{E}=\{\|\tilde{Q}\|=1\}$ | Euclidean unit sphere; not a group |
 | $S^{7}_{E}\cap\mathcal{N}$ | Compact $5$-manifold, the link; homeomorphic to $S^{2}\times S^{3}$ |
 | $O(8)$ | Isometry group of the Euclidean structure |
 
@@ -136,6 +136,6 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 - [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the definitions, the equivalence of norms and the uniqueness of the topology used here
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the zero divisors, their cone and the link used here
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the group of the $*$-unitary elements and the retraction of the group of units onto it
-- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html), for the matrix reading of $\|\cdot\|_E$
+- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html), for the matrix reading of $\|\cdot\|$
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the invertibility criterion and the group of units
 - John B. Conway, *A Course in Functional Analysis*, 2nd edition (Springer, 1990), for the finite-dimensional inner-product-space facts used here

@@ -91,7 +91,7 @@ $T\mapsto T^\dagger$ under the correspondence.
 **Definition.** An operator $T$ on $L^2(X,\mu)$ is **Hilbert–Schmidt** if it is the integral operator of a
 kernel $K\in L^2(X\times X,\mu\otimes\mu)$, and the **Hilbert–Schmidt norm** is
 $$
-\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2(X\times X)} .
+\langle T_K\rangle_*^{1/2}=\lVert K\rVert_{L^2(X\times X)} .
 $$
 
 **Theorem (the correspondence is an isometry onto the Hilbert–Schmidt class).** The map $K\mapsto T_K$ is a
@@ -104,7 +104,7 @@ the correspondence carries the kernel involution to the adjoint, $T_{K^*}=T_K^\d
 $\ast$-isometry.
 
 **Proof.** That the operator of an $L^2$ kernel is bounded and Hilbert–Schmidt is the computation of
-$\lVert T_K\rVert_{\mathrm{HS}}^2=\iint\lvert K\rvert^2$ for an orthonormal basis, and the kernel is
+$\langle T_K\rangle_*=\iint\lvert K\rvert^2$ for an orthonormal basis, and the kernel is
 recovered from the operator by the formula $K(x,y)=\sum_n(T_Ke_n)(x)\overline{e_n(y)}$ in the $L^2$ sense;
 the inner product identity is the polarisation of the norm. The involution statement is the theorem of the
 previous section.
@@ -190,7 +190,7 @@ reality of the spectrum, the eigenfunction expansion, Mercer's theorem and the t
 | $K^*(x,y)=\overline{K(y,x)}$ | Conjugate transpose kernel |
 | $T_K^\dagger=T_{K^*}$ | The adjoint is the conjugate transpose kernel |
 | Hermitian / positive definite | $K^*=K$ / $\sum\overline{c_i}c_jK(x_i,x_j)\geq0$ |
-| $\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2}$ | Hilbert–Schmidt norm and isometry |
+| $\langle T_K\rangle_*^{1/2}=\lVert K\rVert_{L^2}$ | Hilbert–Schmidt norm and isometry |
 | $\langle T_K,T_L\rangle_{\mathrm{HS}}=\iint K\bar L$ | Hilbert–Schmidt inner product |
 
 ## Further Reading

@@ -133,22 +133,22 @@ with equality if and only if $A=0$. The only isotropic vector is the zero matrix
 **The Frobenius norm.** The form defines the **Frobenius norm**
 
 $$
-\lVert A\rVert_F=\sqrt{\langle A,A\rangle}
+\langle A\rangle_*^{1/2}=\sqrt{\langle A,A\rangle}
 =\Bigl(\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2\Bigr)^{1/2}.
 $$
 
 It is the Euclidean norm of $A$ as a vector in $\mathbb{C}^{16}$, and it satisfies the Cauchy–Schwarz and triangle inequalities:
 
 $$
-\lvert\langle A,B\rangle\rvert\le\lVert A\rVert_F\lVert B\rVert_F,
+\lvert\langle A,B\rangle\rvert\le\langle A\rangle_*^{1/2}\langle B\rangle_*^{1/2},
 \qquad
-\lVert A+B\rVert_F\le\lVert A\rVert_F+\lVert B\rVert_F.
+\langle A+B\rangle_*^{1/2}\le\langle A\rangle_*^{1/2}+\langle B\rangle_*^{1/2}.
 $$
 
 It is invariant under $*$-unitary conjugation and under left and right multiplication by unitaries:
 
 $$
-\lVert UAV\rVert_F=\lVert A\rVert_F,\qquad U,V\in U(4).
+\langle UAV\rangle_*^{1/2}=\langle A\rangle_*^{1/2},\qquad U,V\in U(4).
 $$
 
 **Proof.** The norm is the Euclidean norm of the entries. For unitarity, $\operatorname{tr}((UAV)^*(UAV))=\operatorname{tr}(V^*A^*U^*UAV)=\operatorname{tr}(V^*A^*AV)=\operatorname{tr}(A^*A)$, using the cyclic property of the trace and $U^*U=I$, $VV^*=I$.
@@ -303,7 +303,7 @@ which is complex-valued and isotropic on a nonzero cone; its zero set is the **n
 
 ## Summary
 
-The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\lVert A\rVert_F^2=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.
+The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\langle A\rangle_*=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.
 
 $$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B)>0\ \text{for }A\ne0,\quad \dim_\mathbb{R}\operatorname{Herm}_4=16,\quad \dim_\mathbb{R}\mathfrak{u}(4)=16,\quad \dim_\mathbb{R}\mathfrak{su}(4)=15. }
@@ -330,7 +330,7 @@ $$
 | $\mathfrak{u}(4)$ | the skew-Hermitian matrices |
 | $\mathfrak{su}(4)$ | the traceless skew-Hermitian matrices |
 | $\langle A,B\rangle=\operatorname{tr}(A^*B)$ | the positive definite trace form |
-| $\lVert A\rVert_F$ | the Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $U(4)$, $SU(4)$ | the $*$-unitary and special $*$-unitary groups |
 | $H,K$ | the Hermitian and skew-Hermitian parts of $A$ |
 

@@ -84,7 +84,7 @@ $$
 \boxed{\; \lVert\tilde{Q}_1\tilde{Q}_2\rVert\leq\sqrt{2}\,\lVert\tilde{Q}_1\rVert\,\lVert\tilde{Q}_2\rVert \;}.
 $$
 
-**Proof.** The estimate is the sharp normed-algebra inequality of *The Euclidean Topology of the Biquaternion Algebra*, §*The Algebra as a Normed Algebra*, where it is proved from $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt{2}\,\lVert\tilde{Q}\rVert$ and the submultiplicativity of the Frobenius norm.
+**Proof.** The estimate is the sharp normed-algebra inequality of *The Euclidean Topology of the Biquaternion Algebra*, §*The Algebra as a Normed Algebra*, where it is proved from $\langle\mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt{2}\,\lVert\tilde{Q}\rVert$ and the submultiplicativity of the Frobenius norm.
 
 **Corollary.** The product is continuous, and addition and scalar multiplication are continuous, so $\mathbb{B}$ is a **topological algebra**. The rescaled norm $\sqrt2\,\lVert\cdot\rVert$ is submultiplicative, so with that norm $\mathbb{B}$ is a **normed algebra**, and being finite-dimensional it is complete, hence a **Banach algebra** (*Topological Algebras and Banach Algebras*). The group $\mathbb{B}^{\times}$ of invertible elements is open in the topology and inversion is continuous on it.
 
@@ -97,4 +97,4 @@ The space of biquaternions is a real vector space of dimension eight. It carries
 - [Normed and Banach Spaces](normed-and-banach-spaces.html), the norm, the equivalence of norms and the uniqueness of the topology in finite dimension; [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html).
 - [Metric, Uniform and Complete Spaces](metric-uniform-and-complete-spaces.html), the metric, the completeness and the compactness properties of §3; [Banach and Hilbert Spaces](banach-and-hilbert-spaces.html).
 - [Topological Algebras and Banach Algebras](topological-algebras-and-banach-algebras.html), the continuity of the product and the openness of the group of units.
-- [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), the realization $\mathsf{M}_2$ and $\lVert\mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert$.
+- [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), the realization $\mathsf{M}_2$ and $\langle\mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\lVert\tilde{Q}\rVert$.

@@ -22,7 +22,7 @@ with $U,V\in\mathrm{U}(2)$ and $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$. 
 
 **The method.** The article proceeds in two stages, and the order matters. The first stage is the Hilbert-space theory: the Hermitian form, the adjoint, the spectral theorem for the positive operator $A^{\dagger}A$, the rank-one decomposition and its operator form. The second stage reads the result: the rank cases, the three identities, the explicit formula in the four entries, the geometry, the non-uniqueness, the truncation, and the place of the atoms in the two cones.
 
-**The letters.** $A$ and $B$ are operators, $A^{\dagger}$ is the adjoint of $A$, and $\mathrm{I}_2$ is the identity. The unitaries of the decomposition are $U$ and $V$, the scale is $\Sigma$ with coordinate projectors $\Pi_i=e_ie_i^{\dagger}$, the weights are $\sigma_1\geq\sigma_2$, and the left and right singular vectors are $u_i$ and $v_i$. The eigenvalues of $A^{\dagger}A$ are $\lambda_1\geq\lambda_2$, so $\lambda_i=\sigma_i^2$. The Hermitian form is $H$, the norm is $\lVert Q\rVert$, and the two norms of an operator are the Frobenius norm $\lVert A\rVert_{\mathrm{F}}$ and the operator norm $\lVert A\rVert_{\mathrm{op}}$. The two numbers of the explicit formula are $T$ and $\Delta$. The two cones are $\mathcal{C}$, the bilinear cone of the matrices $u\phi^{\mathsf T}$, and $\mathcal{C}_{H}$, the Hermitian cone of the matrices $uu^{\dagger}$. The biquaternion element is $\tilde Q$ with matrix $\mathsf M_2(\tilde Q)$ and algebraic norm $N(\tilde Q)$, and the reduced biquaternion is $\breve Q$ with the two complex coordinates $Q_+,Q_-$.
+**The letters.** $A$ and $B$ are operators, $A^{\dagger}$ is the adjoint of $A$, and $\mathrm{I}_2$ is the identity. The unitaries of the decomposition are $U$ and $V$, the scale is $\Sigma$ with coordinate projectors $\Pi_i=e_ie_i^{\dagger}$, the weights are $\sigma_1\geq\sigma_2$, and the left and right singular vectors are $u_i$ and $v_i$. The eigenvalues of $A^{\dagger}A$ are $\lambda_1\geq\lambda_2$, so $\lambda_i=\sigma_i^2$. The Hermitian form is $H$, the norm is $\lVert Q\rVert$, and the two norms of an operator are the Frobenius norm $\langle A\rangle_*^{1/2}$ and the operator norm $\lVert A\rVert_{\mathrm{op}}$. The two numbers of the explicit formula are $T$ and $\Delta$. The two cones are $\mathcal{C}$, the bilinear cone of the matrices $u\phi^{\mathsf T}$, and $\mathcal{C}_{H}$, the Hermitian cone of the matrices $uu^{\dagger}$. The biquaternion element is $\tilde Q$ with matrix $\mathsf M_2(\tilde Q)$ and algebraic norm $N(\tilde Q)$, and the reduced biquaternion is $\breve Q$ with the two complex coordinates $Q_+,Q_-$.
 
 **The order of the article.** The operator and its adjoint come first, with the Hilbert–Schmidt form and the classes of Hermitian, unitary and positive operators (§*The Operator and the Adjoint*). The spectral theorem for $A^{\dagger}A$ is stated and proved, because the article uses it and does not import it (§*The Spectral Theorem for $A^{\dagger}A$*). The decomposition is stated and proved, with its rank-one form, its computation and its operator form (§*The Decomposition*). The weights are examined in their own section: the rank cases, the three identities, the explicit formula, a worked example, the geometry, the non-uniqueness and the truncation (§*The Weights*). The atoms are then placed in the two cones, and the length of an operator is identified with its rank (§*The Two Cones and the Length*). The comparison with the biquaternion and reduced biquaternion decompositions closes the body (§*The Comparison with the Neighbouring Decompositions*).
 
@@ -63,7 +63,7 @@ $$
 linear in the first slot and conjugate-linear in the second. The **Frobenius norm** is
 
 $$
-\lVert A\rVert_{\mathrm{F}}^2=\langle\!\langle A,A\rangle\!\rangle=\operatorname{tr}(A^{\dagger}A)=\lvert a\rvert^2+\lvert b\rvert^2+\lvert c\rvert^2+\lvert d\rvert^2.
+\langle A\rangle_*=\langle\!\langle A,A\rangle\!\rangle=\operatorname{tr}(A^{\dagger}A)=\lvert a\rvert^2+\lvert b\rvert^2+\lvert c\rvert^2+\lvert d\rvert^2.
 $$
 
 **The operator norm** is the norm of the map,
@@ -361,7 +361,7 @@ The determinant of $A^{\dagger}A$ is $\overline{\det A}\det A$, because $\det A^
 **The sum of squares is the Frobenius norm.** Summing the squares,
 
 $$
-\sigma_1^2+\sigma_2^2=\operatorname{tr}(A^{\dagger}A)=\lVert A\rVert_{\mathrm{F}}^2=T,
+\sigma_1^2+\sigma_2^2=\operatorname{tr}(A^{\dagger}A)=\langle A\rangle_*=T,
 $$
 
 with $T=\lvert a\rvert^2+\lvert b\rvert^2+\lvert c\rvert^2+\lvert d\rvert^2$. The identity is the Pythagorean theorem for the orthogonal decomposition of §*The Rank-One Form*, and it says that a truncation which discards the second term loses exactly $\sigma_2^2$ of the Frobenius norm.
@@ -437,7 +437,7 @@ $$
 A=3\sqrt5\,u_1v_1^{\mathsf T}+\sqrt5\,u_2v_2^{\mathsf T}.
 $$
 
-The two identities hold: $\sigma_1\sigma_2=15=\lvert\det A\rvert$ and $\sigma_1^2+\sigma_2^2=50=\lVert A\rVert_{\mathrm{F}}^2$. The daggers are transposes here, because the matrix is real and the two families are real.
+The two identities hold: $\sigma_1\sigma_2=15=\lvert\det A\rvert$ and $\sigma_1^2+\sigma_2^2=50=\langle A\rangle_*$. The daggers are transposes here, because the matrix is real and the two families are real.
 
 ### The Geometric Reading
 
@@ -480,7 +480,7 @@ $$
 be the first term. Then $A_1$ has rank at most one, and
 
 $$
-\lVert A-A_1\rVert_{\mathrm{F}}=\sigma_2,
+\langle A-A_1\rangle_*^{1/2}=\sigma_2,
 \qquad
 \lVert A-A_1\rVert_{\mathrm{op}}=\sigma_2 .
 $$
@@ -488,22 +488,22 @@ $$
 **Theorem (the best rank-one approximation).** For every operator $B$ of rank at most one,
 
 $$
-\lVert A-B\rVert_{\mathrm{F}}\geq\sigma_2,
+\langle A-B\rangle_*^{1/2}\geq\sigma_2,
 \qquad
 \lVert A-B\rVert_{\mathrm{op}}\geq\sigma_2 .
 $$
 
 The first term $A_1$ attains both bounds.
 
-*Proof.* If $B=0$ the error is $\lVert A\rVert_{\mathrm{F}}\geq\sigma_2$. Otherwise $B$ has a kernel, which is a line. Choose a unit vector $w$ in the kernel and write $w=\alpha v_1+\beta v_2$. Then
+*Proof.* If $B=0$ the error is $\langle A\rangle_*^{1/2}\geq\sigma_2$. Otherwise $B$ has a kernel, which is a line. Choose a unit vector $w$ in the kernel and write $w=\alpha v_1+\beta v_2$. Then
 
 $$
 \lVert(A-B)w\rVert=\lVert Aw\rVert=\sqrt{\sigma_1^2\lvert\alpha\rvert^2+\sigma_2^2\lvert\beta\rvert^2}\geq\sigma_2,
 $$
 
-so the operator norm of the difference is at least $\sigma_2$, and the Frobenius norm is at least the operator norm. The first term attains the bound, because the difference is the second term and $\lVert\sigma_2u_2v_2^{\dagger}\rVert_{\mathrm{F}}=\sigma_2$.
+so the operator norm of the difference is at least $\sigma_2$, and the Frobenius norm is at least the operator norm. The first term attains the bound, because the difference is the second term and $\langle\sigma_2u_2v_2^{\dagger}\rangle_*^{1/2}=\sigma_2$.
 
-**Uniqueness when the two weights differ.** Suppose $\sigma_1>\sigma_2$ and a competitor $B$ attains the bound. If $B$ were zero the error would be $\lVert A\rVert_{\mathrm{F}}>\sigma_2$, so $B$ is nonzero, and its kernel contains a unit vector $w$. The bound gives
+**Uniqueness when the two weights differ.** Suppose $\sigma_1>\sigma_2$ and a competitor $B$ attains the bound. If $B$ were zero the error would be $\langle A\rangle_*^{1/2}>\sigma_2$, so $B$ is nonzero, and its kernel contains a unit vector $w$. The bound gives
 
 $$
 \sigma_2=\lVert A-B\rVert_{\mathrm{op}}\geq\lVert(A-B)w\rVert=\lVert Aw\rVert\geq\sigma_2,
@@ -512,7 +512,7 @@ $$
 so equality holds throughout, and $\lVert Aw\rVert=\sigma_2$ with $\lVert w\rVert=1$ forces $w$ to be a unit multiple of $v_2$, because $\sigma_1>\sigma_2$. The kernel of $B$ is therefore the line of $v_2$, and $B=u'v_1^{\dagger}$ for some vector $u'$. Then
 
 $$
-\lVert A-B\rVert_{\mathrm{F}}^2=\lVert\sigma_1u_1-u'\rVert^2+\sigma_2^2,
+\langle A-B\rangle_*=\lVert\sigma_1u_1-u'\rVert^2+\sigma_2^2,
 $$
 
 because $v_1$ and $v_2$ are orthonormal. Equality forces $u'=\sigma_1u_1$, that is $B=A_1$. **A repeated positive weight is the only case in which the best approximation of rank at most one is not unique.**
@@ -612,7 +612,7 @@ $$
 $$
 \det \mathsf M_2(\tilde Q)=N(\tilde Q),
 \qquad
-\lVert \mathsf M_2(\tilde Q)\rVert_{\mathrm{F}}^2=2\langle\tilde Q,\tilde Q\rangle_{*} .
+\langle \mathsf M_2(\tilde Q)\rangle_*=2\langle\tilde Q,\tilde Q\rangle_{*} .
 $$
 
 The explicit formula of §*The Explicit Formula* applied to $\mathsf M_2(\tilde Q)$ gives, with $T=2S$ and $\Delta=\lvert N(\tilde Q)\rvert^2$,
@@ -694,7 +694,7 @@ $$
 
 with $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$ and $Av_i=\sigma_iu_i$. The weights are the square roots of the eigenvalues of $A^{\dagger}A$, the right vectors are an orthonormal eigenbasis of $A^{\dagger}A$, and the left vectors are the normalised images of the right ones, completed by an arbitrary orthonormal basis where a weight vanishes. The proof is the spectral theorem for the Hermitian positive semidefinite operator $A^{\dagger}A$ at size two, proved here and not quoted.
 
-The three identities are $\sigma_1\sigma_2=\lvert\det A\rvert$, $\sigma_1^2+\sigma_2^2=\lVert A\rVert_{\mathrm{F}}^2=T$ and $\sigma_1=\lVert A\rVert_{\mathrm{op}}$; the explicit formula is
+The three identities are $\sigma_1\sigma_2=\lvert\det A\rvert$, $\sigma_1^2+\sigma_2^2=\langle A\rangle_*=T$ and $\sigma_1=\lVert A\rVert_{\mathrm{op}}$; the explicit formula is
 
 $$
 \sigma_{1,2}=\sqrt{\frac{T\pm\sqrt{T^2-4\Delta}}{2}},
@@ -719,7 +719,7 @@ The freedom of the decomposition is a phase per term when the weights are distin
 | $H(Q_1,Q_2)$ | the Hermitian form, linear in the first slot |
 | $\lVert Q\rVert$ | the norm of a vector |
 | $\langle\!\langle A,B\rangle\!\rangle$ | the Hilbert–Schmidt form, $\operatorname{tr}(B^{\dagger}A)$ |
-| $\lVert A\rVert_{\mathrm{F}}$, $\lVert A\rVert_{\mathrm{op}}$ | the Frobenius norm and the operator norm |
+| $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{\mathrm{op}}$ | the Frobenius norm and the operator norm |
 | $U$, $V$ | the two unitary operators of the decomposition |
 | $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$ | the scale, Hermitian and positive semidefinite |
 | $\Pi_i=e_ie_i^{\dagger}$ | the coordinate projectors of the scale |
@@ -727,7 +727,7 @@ The freedom of the decomposition is a phase per term when the weights are distin
 | $\lambda_1\geq\lambda_2$ | the eigenvalues of $A^{\dagger}A$, the squares of the weights |
 | $u_i$, $v_i$ | the left and the right singular vectors |
 | $\lvert A\rvert=(A^{\dagger}A)^{1/2}$ | the modulus of $A$ |
-| $T=\lVert A\rVert_{\mathrm{F}}^2$ | the sum of the squared moduli of the four entries |
+| $T=\langle A\rangle_*$ | the sum of the squared moduli of the four entries |
 | $\Delta=\lvert\det A\rvert^2$ | the squared modulus of the determinant |
 | $\mathcal{C}$ | the bilinear cone, the matrices $u\phi^{\mathsf T}$ |
 | $\mathcal{C}_{H}$ | the Hermitian cone, the matrices $uu^{\dagger}$ |

@@ -134,6 +134,13 @@ The diabolic case is the scalar vertex of *The Eigenbasis of a Spectrally Regula
 - **The square-root splitting is the measured signature.** A perturbation $\epsilon$ produces a frequency splitting $\propto\sqrt{\epsilon}$, and the two branches are the two sides of one square root. The reading is the standard interpolation of an exceptional-point sensor, and it is a statement about the family, not about the point alone.
 - **The nilpotent is not a particle.** $\vec Q$ with $\vec Q^2=0$ is a lightlike displacement, not a four-momentum; the photon of the massless spectrum is a complex multiple of an idempotent, not a nilpotent. The nilpotent stratum of the cone is the other boundary stratum, and the two must not be identified.
 - **The unipotent line is a reversible motion with a zero-divisor velocity.** $\exp(tN)=e_t+tN$ is a unit for every finite $t$. The reading is that a reversible process can have a non-invertible infinitesimal generator in the limit, and the algebra keeps the two apart.
+- **A repeated root is a pole of order two, and the transform is where pole order lives.** The resolvent of the normal form $Q_tI_2+N$ is $(z-Q_t)^{-1}I_2+(z-Q_t)^{-2}N$, while the diabolic normal form $Q_tI_2$ gives only the first term. Inverting the frequency transform,
+
+$$
+\frac{1}{2\pi i}\oint\frac{\exp(i\zeta t)}{(\zeta-Q_t)^{2}}\,d\zeta=i\,t\,\exp(iQ_t t),
+$$
+
+so the direction the nilpotent acts on responds with an amplitude that grows linearly, while the diabolic direction's is bounded. **The two degeneracies have the same spectrum and different pole orders**, which is exactly why a spectrum alone cannot tell them apart and a resolvent can.
 
 ## Limits
 

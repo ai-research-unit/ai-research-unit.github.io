@@ -12,7 +12,7 @@ It exists for every matrix, and it inverts $A$ between the row space and the col
 
 The general theory is *The Moore–Penrose Inverse in an Involutive Algebra*: the four equations, their uniqueness, the characterisation by the two ideals and the algebraic identities are proved there for an arbitrary algebra with involution, and they are cited here rather than repeated. The matrix case adds three things: the rank factorisation, which gives the inverse in closed form; the singular value form, which gives it entry by entry in a unitary basis; and the numerical analysis, the least-squares reading and the limit formula. The tensor case is *The Moore-Penrose Inverse of a Reduced Biquaternion Tensor*; the biquaternion case, where the inverse of a Hermitian factor drives the polar decomposition, is *The Polar Decomposition of a Biquaternion*.
 
-Throughout, $A\in M_{m\times n}(\mathbb{C})$, $A^{*}=\overline{A}^{\mathsf T}$ is the conjugate transpose, and $I=I_{m}$ or $I_{n}$ according to the side. The rank is $\operatorname{rk}A$. A **projection** is a matrix $\Pi$ with $\Pi^{2}=\Pi=\Pi^{*}$, that is the orthogonal projection onto its range. The **operator norm** is $\lVert A\rVert_{2}=\max_{\lVert x\rVert=1}\lVert Ax\rVert$ and the **Frobenius norm** is $\lVert A\rVert_{F}^{2}=\operatorname{Tr}(A^{*}A)$. On square matrices the conjugate transpose is the involution of the algebra $M_{n}(\mathbb{C})$, and it is the only involution used; on rectangular matrices it maps $M_{m\times n}(\mathbb{C})$ to $M_{n\times m}(\mathbb{C})$ and is read with it.
+Throughout, $A\in M_{m\times n}(\mathbb{C})$, $A^{*}=\overline{A}^{\mathsf T}$ is the conjugate transpose, and $I=I_{m}$ or $I_{n}$ according to the side. The rank is $\operatorname{rk}A$. A **projection** is a matrix $\Pi$ with $\Pi^{2}=\Pi=\Pi^{*}$, that is the orthogonal projection onto its range. The **operator norm** is $\lVert A\rVert_{2}=\max_{\lVert x\rVert=1}\lVert Ax\rVert$ and the **Frobenius norm** is $\langle A\rangle_*=\operatorname{Tr}(A^{*}A)$. On square matrices the conjugate transpose is the involution of the algebra $M_{n}(\mathbb{C})$, and it is the only involution used; on rectangular matrices it maps $M_{m\times n}(\mathbb{C})$ to $M_{n\times m}(\mathbb{C})$ and is read with it.
 
 ## The Four Conditions
 
@@ -136,7 +136,7 @@ $$
 
 $$
 \bigl\lVert A^{+}\bigr\rVert_{2}=\frac{1}{\mu_{r}},\qquad
-\bigl\lVert A^{+}\bigr\rVert_{F}^{2}=\sum_{i=1}^{r}\frac{1}{\mu_{i}^{2}},
+\bigl\langle A^{+}\\bigr\rangle_*=\sum_{i=1}^{r}\frac{1}{\mu_{i}^{2}},
 $$
 
 with $\mu_{r}$ the smallest nonzero singular value; for $A=0$ both norms vanish.
@@ -293,7 +293,7 @@ The three statements to carry away are these. The inverse exists for every matri
 | $\operatorname{rk}A$ | the rank |
 | $\mu_{1},\dots,\mu_{r}$ | the nonzero singular values |
 | $D^{+}$ | the diagonal matrix of reciprocal nonzero entries |
-| $\lVert\cdot\rVert_{2}$, $\lVert\cdot\rVert_{F}$ | the operator norm and the Frobenius norm |
+| $\lVert\cdot\rVert_{2}$, $\langle\cdot\rangle_*^{1/2}$ | the operator norm and the Frobenius norm |
 
 ## Further Reading
 

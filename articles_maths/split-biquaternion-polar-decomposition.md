@@ -193,7 +193,7 @@ The absence of the branch is the algebraic content of the remark in the corpus t
 The modulus $\rho$ must be distinguished from the two other positive quantities attached to the algebra, and the article uses them in the comparison section. The **Euclidean norm** of the corpus is
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\sum_\mu\left(q_\mu^2+q'^2_\mu\right)} = \sqrt{|\tilde q|^2+|\tilde q'|^2} ,
+\|\tilde{Q}\| = \sqrt{\sum_\mu\left(q_\mu^2+q'^2_\mu\right)} = \sqrt{|\tilde q|^2+|\tilde q'|^2} ,
 $$
 
 which is definite and not multiplicative. The **split complex modulus** of the split-biquaternion norm is
@@ -706,7 +706,7 @@ The representation also has an exponential form. The exponential of an element w
 | $\exp$, $\log$ | the exponential and the logarithm, componentwise on the two halves, $\log$ defined exactly on the invertible elements |
 | $Q_t$, $\vec Q$ | the split complex scalar part and the vector part of an element |
 | $\theta$ | the split complex angle of the exponential form, $\theta^2 = \sum_kQ_k^2$, with non-negative components |
-| $\|\tilde{Q}\|_E$ | the Euclidean norm, $\sqrt{\sum_\mu(q_\mu^2+q'^2_\mu)}$, not multiplicative |
+| $\|\tilde{Q}\|$ | the Euclidean norm, $\sqrt{\sum_\mu(q_\mu^2+q'^2_\mu)}$, not multiplicative |
 
 ## Further Reading
 

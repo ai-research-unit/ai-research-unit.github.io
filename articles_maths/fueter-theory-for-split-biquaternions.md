@@ -5,7 +5,7 @@
 
 This article develops Fueter theory in the split biquaternion setting: the Fueter operator, the functions it defines, the construction that produces them from holomorphic functions of one complex variable, and the relation to the biquaternion and split quaternion theories. It follows *Split-Biquaternion Analysis* and *Split-Biquaternion Regular Functions*, where the Cauchy–Riemann operator $\tilde{\nabla}$ and its conjugate $\tilde{\nabla}^{\natural}$ were constructed, and it uses the algebra and the zero divisors of *Split-Biquaternion Algebra* and *Split-Biquaternion Zero Divisors*.
 
-The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, the central split complex unit is $j$ with $j^2 = +e_t$, and a split biquaternion is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{C}_{\mathrm{spl}}$. On the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\rho = \|\vec q\|_E$, $\vec u_{\mathrm d} = \vec q/\rho$, .
+The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, the central split complex unit is $j$ with $j^2 = +e_t$, and a split biquaternion is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{C}_{\mathrm{spl}}$. On the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\rho = \|\vec q\|$, $\vec u_{\mathrm d} = \vec q/\rho$, .
 
 ## The Fueter Operator
 
@@ -133,7 +133,7 @@ Three hypotheses are needed and none can be dropped: $f_0$ must be **holomorphic
 
 ## Power Series Representations
 
-A series with split biquaternion coefficients placed on the right, $f(\tilde{Q}) = \sum_{n\ge0}\tilde{Q}^na_n$, converges absolutely on the set where $\limsup_n\left(\|\tilde{Q}^n\|_E\,\|a_n\|_E\right)^{1/n} < 1$; in particular it converges for $\tilde{Q}$ in the quaternion subspace with $\|\tilde{Q}\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, because on the quaternion subspace the Euclidean norm is multiplicative and $\|\tilde{Q}^n\|_E = \|\tilde{Q}\|_E^n$. Its sum is **slice-regular**, holomorphic on each slice; slice-regular functions form a different class from the Fueter-regular ones. For example $\tilde{Q}\mapsto\tilde{Q}$ is slice-regular, but
+A series with split biquaternion coefficients placed on the right, $f(\tilde{Q}) = \sum_{n\ge0}\tilde{Q}^na_n$, converges absolutely on the set where $\limsup_n\left(\|\tilde{Q}^n\|\,\|a_n\|\right)^{1/n} < 1$; in particular it converges for $\tilde{Q}$ in the quaternion subspace with $\|\tilde{Q}\| < R$, where $R^{-1} = \limsup_n\|a_n\|^{1/n}$, because on the quaternion subspace the Euclidean norm is multiplicative and $\|\tilde{Q}^n\| = \|\tilde{Q}\|^n$. Its sum is **slice-regular**, holomorphic on each slice; slice-regular functions form a different class from the Fueter-regular ones. For example $\tilde{Q}\mapsto\tilde{Q}$ is slice-regular, but
 
 $$
 \boxed{\;
@@ -147,7 +147,7 @@ For real Taylor coefficients, term-by-term application of $\Delta_4$ gives the i
 
 ## The Split Biquaternionic Case
 
-On the quaternion subspace the theory is the classical one with split biquaternion coefficients, because the subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive definite, so every nonzero element is invertible and the fundamental solution $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is regular off the origin. This is the definite case of the firmest kind: the Cauchy theory there has a single singularity, the origin.
+On the quaternion subspace the theory is the classical one with split biquaternion coefficients, because the subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive definite, so every nonzero element is invertible and the fundamental solution $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ is regular off the origin. This is the definite case of the firmest kind: the Cauchy theory there has a single singularity, the origin.
 
 On the full algebra the coefficient ring is the split complex algebra $\mathbb{C}_{\mathrm{spl}}$ rather than the complex field, and this changes the geometry of the singular set without changing the equations. The zero divisors are the union $Z = \mathbb{H}\tilde\Pi_1 \cup \mathbb{H}\tilde\Pi_2$ of the two four-dimensional ideals, so the singular set of the naive inverse is a union of two linear subspaces rather than the quadric hypersurface of the biquaternion case. In particular the Fueter operator is elliptic over the real coordinates of a four-dimensional subspace, but the pointwise inversion of $\tilde{Q}$ fails on $Z$, and a domain for the Cauchy theory of the full algebra must avoid $Z$, not merely the origin. On the indefinite subspaces the second-order operator is the wave operator of signature $(3,1)$ or $(1,3)$, so the axial coefficients satisfy a wave-type system rather than a Laplace system; the null cone of the relevant real form is the characteristic set.
 
@@ -168,7 +168,7 @@ The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\,\partial/\partial Q_\mu$ a
 | $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra |
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace, the domain of Fueter theory |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$ | Split biquaternion; real coefficients on the quaternion subspace |
-| $\vec q = \sum_{\mu\in\{x,y,z\}} q_\mu\vec e_\mu$, $\rho = \|\vec q\|_E$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, its direction |
+| $\vec q = \sum_{\mu\in\{x,y,z\}} q_\mu\vec e_\mu$, $\rho = \|\vec q\|$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, its direction |
 | $\tilde{\nabla} = \partial/\partial Q_t + \vec D$, $\vec D = \sum_{\mu\in\{x,y,z\}} \vec e_\mu\,\partial/\partial Q_\mu$ | Fueter operator, acting on the left |
 | $\tilde{\nabla}^{\natural} = \partial/\partial Q_t - \vec D$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu\partial^2/\partial Q_\mu^2$ | Four-dimensional Laplacian, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_t$ |

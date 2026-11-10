@@ -443,7 +443,7 @@ $$
 
 ### Definition
 
-The **dual Gauss hypergeometric function** is defined for $\|Q\|_E < 1$ by
+The **dual Gauss hypergeometric function** is defined for $\|Q\| < 1$ by
 
 $$
 {}_2F_1(a, b; c; Q) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{Q^n}{n!},

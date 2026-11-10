@@ -22,13 +22,13 @@ where $j^2 = +1$. The real number $q$ is the **real part**, and $q'$ is the **im
 The **Euclidean modulus** of $Q$ is
 
 $$
-\|Q\|_E = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'^2},
 $$
 
 and the **Euclidean distance** between two split complex numbers $Q$ and $B$ is
 
 $$
-d(Q, B) = \|Q - B\|_E.
+d(Q, B) = \|Q - B\|.
 $$
 
 This makes $\mathbb{C}_{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.
@@ -46,7 +46,7 @@ which is not a norm. It vanishes on the null cone $q = \pm q'$, and it is not su
 The **open ball** of radius $r > 0$ centred at $Q_0$ is
 
 $$
-B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\| < r\}.
 $$
 
 It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.
@@ -80,7 +80,7 @@ A set $K \subseteq \mathbb{C}_{\mathrm{spl}}$ is **compact** if every open cover
 A sequence $(Q_n)$ of split complex numbers **converges** to $L \in \mathbb{C}_{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-n \geq N \implies \|Q_n - L\|_E < \epsilon.
+n \geq N \implies \|Q_n - L\| < \epsilon.
 $$
 
 We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.
@@ -110,7 +110,7 @@ There is no quotient rule in general, because $\mathbb{C}_{\mathrm{spl}}$ has ze
 A sequence $(Q_n)$ is **Cauchy** if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
-m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
+m, n \geq N \implies \|Q_m - Q_n\| < \epsilon.
 $$
 
 **Theorem.** In $\mathbb{C}_{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.
@@ -126,7 +126,7 @@ $$
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q \in D, \; 0 < \|Q - Q_0\|_E < \delta \implies \|f(Q) - L\|_E < \epsilon.
+Q \in D, \; 0 < \|Q - Q_0\| < \delta \implies \|f(Q) - L\| < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
@@ -146,7 +146,7 @@ $$
 Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q \in D, \; \|Q - Q_0\|_E < \delta \implies \|f(Q) - f(Q_0)\|_E < \epsilon.
+Q \in D, \; \|Q - Q_0\| < \delta \implies \|f(Q) - f(Q_0)\| < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
@@ -162,7 +162,7 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-Q, B \in D, \; \|Q - B\|_E < \delta \implies \|f(Q) - f(B)\|_E < \epsilon.
+Q, B \in D, \; \|Q - B\| < \delta \implies \|f(Q) - f(B)\| < \epsilon.
 $$
 
 **Theorem.** A continuous function on a compact set is uniformly continuous.
@@ -297,13 +297,13 @@ $$
 
 **Additivity.** If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.
 
-**Estimation.** If $\|f(Q)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
+**Estimation.** If $\|f(Q)\| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
 
 $$
-\left\| \int_\gamma f(Q) \, dQ \right\|_E \leq \sqrt{2} M L.
+\left\| \int_\gamma f(Q) \, dQ \right\| \leq \sqrt{2} M L.
 $$
 
-The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|Q B\|_E \leq \sqrt{2} \|Q\|_E \|B\|_E$, and the constant is sharp.
+The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|Q B\| \leq \sqrt{2} \|Q\| \|B\|$, and the constant is sharp.
 
 ### The Cauchy–Goursat Theorem
 
@@ -369,7 +369,7 @@ $$
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$
 
-valid for $\|Q - Q_0\|_E < r$.
+valid for $\|Q - Q_0\| < r$.
 
 **Proof.** In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine.
 
@@ -381,15 +381,15 @@ valid for $\|Q - Q_0\|_E < r$.
 
 ### Classification
 
-Let $f$ be split complex differentiable on a punctured disk $0 < \|Q - Q_0\|_E < R$.
+Let $f$ be split complex differentiable on a punctured disk $0 < \|Q - Q_0\| < R$.
 
-**Removable singularity.** $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\|_E < R$.
+**Removable singularity.** $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\| < R$.
 
 **Pole.** $Q_0$ is a pole if $f(Q) \to \infty$ in Euclidean modulus as $Q \to Q_0$.
 
 **Essential singularity.** $Q_0$ is an essential singularity if it is neither removable nor a pole.
 
-**Caution.** The classification is empty under this hypothesis. The component $f_+$ is a function of $Q_+$ alone, and differentiating $f$ at a point with $Q_+ = Q_{0+}$ and $Q_- \neq Q_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Q_{0+}$, and dually for $f_-$. So $f$ extends to $Q_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.
+**Caution.** The classification is empty under this hypothesis. The component $f_+$ is a function of $Q_+$ alone, and differentiating $f$ at a point with $Q_+ = Q_{0+}$ and $Q_- \neq Q_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Q_{0+}$, and dually for $f_-$. So $f$ extends to $Q_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|^2 = (f_+^2 + f_-^2)/2$.
 
 ### Residues
 
@@ -432,7 +432,7 @@ The article develops the subject in that basis: contour integrals along paths, p
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number |
 | $\bar{Q} = q - jq'$ | Split complex conjugate |
-| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $\rho = \sqrt{|q^2 - q'^2|}$ | Split modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
 | $f'(Q)$ | Split complex derivative |

@@ -110,13 +110,13 @@ The two transforms are related as in the discrete case: the conjugate of the lef
 The integral defining the transform converges absolutely if $f$ is integrable, i.e., if
 
 $$
-\int_{-\infty}^{\infty} \|f(t)\|_E \, dt < \infty.
+\int_{-\infty}^{\infty} \|f(t)\| \, dt < \infty.
 $$
 
 Under this condition, the transform $F$ is bounded and uniformly continuous:
 
 $$
-\|F(\omega)\|_E \leq \int_{-\infty}^{\infty} \|f(t)\|_E \, dt, \qquad \omega \in \mathbb{R}.
+\|F(\omega)\| \leq \int_{-\infty}^{\infty} \|f(t)\| \, dt, \qquad \omega \in \mathbb{R}.
 $$
 
 The convergence of the inverse transform requires additional conditions, as in the ordinary complex case. The standard conditions are:
@@ -132,7 +132,7 @@ Under these conditions, the inverse formula holds at every point of continuity o
 **Theorem (Riemann–Lebesgue).** If $f : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ is integrable, then
 
 $$
-\lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
+\lim_{|\omega| \to \infty} \|F(\omega)\| = 0.
 $$
 
 **Proof.** The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement.
@@ -155,11 +155,11 @@ $$
 
 $$
 \boxed{\;
-\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega
+\int_{-\infty}^{\infty} \|f(t)\|^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|^2 \, d\omega
 \;}.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved.
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|^2 = \frac12(\|\tilde{Q}_+\|^2 + \|\tilde{Q}_-\|^2)$, so that the factor cancels between the two sides), the total norm is preserved.
 
 **Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{B}_{\mathrm{spl}})$,
 

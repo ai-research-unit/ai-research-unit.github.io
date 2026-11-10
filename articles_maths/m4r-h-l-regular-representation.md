@@ -114,7 +114,7 @@ $$
 \operatorname{rank}\mathsf{M}_4(\tilde q)=4,\qquad
 \operatorname{tr}\mathsf{M}_4(\tilde q)=4q_t,\qquad
 \det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2},\qquad
-\lVert\mathsf{M}_4(\tilde q)\rVert_F^{2}=4N(\tilde q).
+\langle\mathsf{M}_4(\tilde q)\rangle_*=4N(\tilde q).
 $$
 
 The Frobenius norm is computed from the display: the four columns are orthogonal of squared length $N$, because left multiplication by $\tilde q$ multiplies the norm of every element by $N$.

@@ -92,13 +92,13 @@ which is injective when $E$ and $F$ are Hausdorff, and it is a topological isomo
 **Example (finite-dimensional spaces).** For $E = \mathbb{K}^m$ and $F = \mathbb{K}^n$ the tensor product $\mathbb{K}^m\otimes\mathbb{K}^n$ is the space $M_{m,n}(\mathbb{K})$ of $m\times n$ matrices under the identification $e_i \otimes f_j \leftrightarrow E_{ij}$, and every tensor topology on a finite-dimensional space is the same. The three norms that arise are the operator norm
 
 $$
-\lVert A\rVert = \sigma_1 , \qquad \lVert A\rVert_{\mathrm{HS}} = \Bigl(\sum_i \sigma_i^2\Bigr)^{1/2}, \qquad \lVert A\rVert_{\mathrm{nuc}} = \sum_i \sigma_i ,
+\lVert A\rVert = \sigma_1 , \qquad \langle A\rangle_*^{1/2} = \Bigl(\sum_i \sigma_i^2\Bigr)^{1/2}, \qquad \lVert A\rVert_{\mathrm{nuc}} = \sum_i \sigma_i ,
 $$
 
 where $\sigma_1 \geq \sigma_2 \geq \cdots$ are the singular values of $A$; the first is the injective norm, the third is the projective norm, and the second is the norm of the Hilbert tensor product when the factors carry their Euclidean inner products. The three norms agree only for rank-one matrices, and in general they satisfy
 
 $$
-\lVert A\rVert \leq \lVert A\rVert_{\mathrm{HS}} \leq \lVert A\rVert_{\mathrm{nuc}} .
+\lVert A\rVert \leq \langle A\rangle_*^{1/2} \leq \lVert A\rVert_{\mathrm{nuc}} .
 $$
 
 The chain of inequalities is the elementary comparison $\sigma_1 \leq (\sum_i\sigma_i^2)^{1/2} \leq \sum_i\sigma_i$ of the singular values; the identity matrix has the three norms $1$, $\sqrt2$ and $2$, so the inequalities are strict simultaneously, and the second is an equality exactly when the rank is at most one. The same computation identifies the Hilbert tensor product of the Euclidean spaces with $M_{m,n}$ carrying the Hilbert–Schmidt norm.
@@ -203,7 +203,7 @@ The classical identifications are: $\mathbb{K}^m\otimes\mathbb{K}^n = M_{m,n}$ w
 | $\lVert u\rVert_\pi$, $\lVert u\rVert_\varepsilon$ | Projective and injective norms |
 | $\mathcal{B}(E'_\sigma\times F'_\sigma)$ | Bounded bilinear forms on the weak-star duals |
 | $\mathcal{B}(E,F')$, $\langle x\otimes y,T\rangle = \langle y,Tx\rangle$ | Trace duality $(E\widehat{\otimes}_\pi F)'\cong\mathcal{B}(E,F')$ |
-| $\sigma_i$, $\lVert A\rVert$, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$ | Singular values and the three matrix norms |
+| $\sigma_i$, $\lVert A\rVert$, $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{\mathrm{nuc}}$ | Singular values and the three matrix norms |
 | $H_1\widehat{\otimes}H_2$ | Hilbert tensor product |
 | $S_1(H)$, $S_2(H)$, $S_\infty(H)$ | Trace class, Hilbert–Schmidt, compact operators |
 | $K_G$ | Grothendieck's constant, $K_G = \pi/(2\ln(1+\sqrt2))$ |

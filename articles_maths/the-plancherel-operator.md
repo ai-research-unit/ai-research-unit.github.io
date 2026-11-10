@@ -28,7 +28,7 @@ the field of Hilbert–Schmidt operators on the fibres; it is extended to $L^2(G
 **Theorem (unitarity).** The transform $\mathcal{F}$ is isometric on $L^1(G)\cap L^2(G)$,
 
 $$
-\boxed{\;\int_{\operatorname{Irr}(G)}\bigl\|(\mathcal F f)(\pi)\bigr\|_{\mathrm{HS}}^2\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx\;} ,
+\boxed{\;\int_{\operatorname{Irr}(G)}\bigl\langle (\mathcal F f)(\pi)\bigr\rangle_*\,d\mu_P(\pi) = \int_G |f(x)|^2\,dx\;} ,
 $$
 
 and it extends to a surjective isometry, hence a unitary operator, $\mathcal{F} : L^2(G)\to\mathcal{H}_P$; consequently $\|\mathcal{F}\| = \|\mathcal{F}^{-1}\| = 1$ and $\mathcal{F}$ is invertible.
@@ -112,7 +112,7 @@ for $f$ in the coefficient algebra for which the integral converges absolutely, 
 
 ## Summary
 
-The Plancherel operator is the transform $\mathcal{F}f(\pi) = \int_G f(x)\pi(x)dx$, taking $L^2(G)$ to the direct integral $\mathcal{H}_P = \int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P(\pi)$ of Hilbert–Schmidt fibres; it is a unitary operator, isometric on $L^1(G)\cap L^2(G)$ by the Plancherel identity $\int\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2d\mu_P = \int|f|^2dx$ and surjective because the finite-rank fields are total. Conjugation by $\mathcal{F}$ turns left convolution into the field of pointwise multiplications $(\mathcal F f)(\pi)$, and turns the left and right regular representations into the two legs $\pi\otimes1$ and $1\otimes\pi^*$ of the field algebra, so that $L(G)$ becomes the decomposable algebra $\int^\oplus B(\mathcal{H}_\pi)d\mu_P$ with centre $L^\infty(\operatorname{Irr}(G),\mu_P)$. The inverse is the inversion formula $\mathcal{F}^{-1}(\mathcal F h)(x) = \int\operatorname{Tr}((\mathcal F h)(\pi)\pi(x)^{-1})d\mu_P$, and the definite form $f(e) = \int\operatorname{Tr}(\mathcal F f)(\pi)d\mu_P$ is the fibre-wise trace. The operator is decomposable, its fibres are the multiplication operators, and the type I property of $G$ is exactly the condition that the field algebra be indexed by $\operatorname{Irr}(G)$ with the constant multiplicity $d_\pi$. No adjoint is taken, and the measure, the theorem and the abelian specialisation are cited from *The Plancherel Theorem* and *The Fourier Operator*.
+The Plancherel operator is the transform $\mathcal{F}f(\pi) = \int_G f(x)\pi(x)dx$, taking $L^2(G)$ to the direct integral $\mathcal{H}_P = \int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P(\pi)$ of Hilbert–Schmidt fibres; it is a unitary operator, isometric on $L^1(G)\cap L^2(G)$ by the Plancherel identity $\int\langle (\mathcal F f)(\pi)\rangle_*d\mu_P = \int|f|^2dx$ and surjective because the finite-rank fields are total. Conjugation by $\mathcal{F}$ turns left convolution into the field of pointwise multiplications $(\mathcal F f)(\pi)$, and turns the left and right regular representations into the two legs $\pi\otimes1$ and $1\otimes\pi^*$ of the field algebra, so that $L(G)$ becomes the decomposable algebra $\int^\oplus B(\mathcal{H}_\pi)d\mu_P$ with centre $L^\infty(\operatorname{Irr}(G),\mu_P)$. The inverse is the inversion formula $\mathcal{F}^{-1}(\mathcal F h)(x) = \int\operatorname{Tr}((\mathcal F h)(\pi)\pi(x)^{-1})d\mu_P$, and the definite form $f(e) = \int\operatorname{Tr}(\mathcal F f)(\pi)d\mu_P$ is the fibre-wise trace. The operator is decomposable, its fibres are the multiplication operators, and the type I property of $G$ is exactly the condition that the field algebra be indexed by $\operatorname{Irr}(G)$ with the constant multiplicity $d_\pi$. No adjoint is taken, and the measure, the theorem and the abelian specialisation are cited from *The Plancherel Theorem* and *The Fourier Operator*.
 
 ## Summary of Notation
 
@@ -122,7 +122,7 @@ The Plancherel operator is the transform $\mathcal{F}f(\pi) = \int_G f(x)\pi(x)d
 | $\mathcal{H}_P = \int^\oplus(\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*)d\mu_P$ | The direct-integral Hilbert space of fibres |
 | $\langle A,B\rangle = \operatorname{Tr}(AB^*)$ | Hilbert–Schmidt inner product on a fibre |
 | $(\mathcal F f)(\pi) = \int_G f(x)\pi(x)\,dx$ | The operator-valued transform |
-| $\int\|(\mathcal F f)(\pi)\|_{\mathrm{HS}}^2\,d\mu_P = \int\lvert f\rvert^2\,dx$ | Plancherel isometry |
+| $\int\langle (\mathcal F f)(\pi)\rangle_*\,d\mu_P = \int\lvert f\rvert^2\,dx$ | Plancherel isometry |
 | $\mathcal{F}\lambda(f)\mathcal{F}^{-1} = \int^\oplus(\mathcal F f)(\pi)$ | Convolution becomes multiplication |
 | $\pi\otimes 1$, $1\otimes\pi^*$ | Fibres of the left and right regular representations |
 | $\mathcal{F}^{-1}(\mathcal F h)(x) = \int\operatorname{Tr}((\mathcal F h)(\pi)\pi(x)^{-1})\,d\mu_P$ | Inverse (inversion formula) |

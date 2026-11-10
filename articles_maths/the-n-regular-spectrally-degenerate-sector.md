@@ -274,7 +274,7 @@ $$
 and on the scalar line it is $e^{\theta Q_t}e_t$. The Hermitian norm on the Jordan part, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is
 
 $$
-\langle e^{\theta\tilde Q}\rangle_*=\lvert e^{\theta Q_t}\rvert^2\left(1+\lvert\theta\rvert^2\lVert\vec Q\rVert_E^2\right),
+\langle e^{\theta\tilde Q}\rangle_*=\lvert e^{\theta Q_t}\rvert^2\left(1+\lvert\theta\rvert^2\lVert\vec Q\rVert^2\right),
 $$
 
 which is polynomial in $\theta$; it grows even when $Q_t$ is purely imaginary. The flow is never oscillatory, and no Fourier basis is attached to the element.

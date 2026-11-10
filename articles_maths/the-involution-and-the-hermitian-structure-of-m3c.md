@@ -92,7 +92,7 @@ $$
 $$
 The associated norm is the **Frobenius norm**
 $$
-\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}=\Bigl(\sum_{i,j}|a_{ij}|^{2}\Bigr)^{1/2}.
+\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^{*}A)}=\Bigl(\sum_{i,j}|a_{ij}|^{2}\Bigr)^{1/2}.
 $$
 
 **Proof.** The Hermitian symmetry is
@@ -219,7 +219,7 @@ $$
 \boxed{\;\langle A,B\rangle=\operatorname{tr}(A^{*}B),\qquad
 \langle A,A\rangle=\sum_{i,j}|a_{ij}|^{2}>0\quad(A\neq0).\;}
 $$
-It is positive definite, with Frobenius norm $\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}$, and its only isotropic vector is $0$. There is no null cone.
+It is positive definite, with Frobenius norm $\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^{*}A)}$, and its only isotropic vector is $0$. There is no null cone.
 
 The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diagonal and $U$ $*$-unitary; the eigenvalues of a Hermitian matrix are real, and the positive definite cone is the set of Hermitian matrices with positive eigenvalues.
 
@@ -247,7 +247,7 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 | $\mathfrak{su}(3)$ | the traceless skew-Hermitian Lie algebra |
 | $U(3),SU(3)$ | the $*$-unitary and special $*$-unitary groups |
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite Hermitian trace form |
-| $\|A\|_{\mathrm{F}}$ | the Frobenius norm |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $\mathrm{J}(A)=-A^{*}$ | the Cartan involution |
 
 ## Further Reading

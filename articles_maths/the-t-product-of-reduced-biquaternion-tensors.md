@@ -243,7 +243,7 @@ the two transforms, the $n_3$ slicewise matrix products, and the inverse transfo
 
 ## Verification
 
-The identities of this article were recomputed on random tensors of sizes $3\times2\times4$, $2\times3\times4$ and $3\times3\times4$, with at most $36$ entries. The block circulant definition and the Fourier definition agreed to $3.6\times10^{-15}$; the transform identity agreed to $1.3\times10^{-15}$; associativity agreed to $1.4\times10^{-14}$; the distributive law agreed to $5.6\times10^{-15}$; the identity tensor reproduced its argument to $3.0\times10^{-16}$; the two-sided inverse reproduced the identity to $2.8\times10^{-16}$; the adjoint identity held exactly; the idempotent reduction held exactly; and the noncommutativity witness gave $\|A\ast B\|_{\mathrm F}=0$ with $\|B\ast A\|_{\mathrm F}=1$.
+The identities of this article were recomputed on random tensors of sizes $3\times2\times4$, $2\times3\times4$ and $3\times3\times4$, with at most $36$ entries. The block circulant definition and the Fourier definition agreed to $3.6\times10^{-15}$; the transform identity agreed to $1.3\times10^{-15}$; associativity agreed to $1.4\times10^{-14}$; the distributive law agreed to $5.6\times10^{-15}$; the identity tensor reproduced its argument to $3.0\times10^{-16}$; the two-sided inverse reproduced the identity to $2.8\times10^{-16}$; the adjoint identity held exactly; the idempotent reduction held exactly; and the noncommutativity witness gave $\langle A\ast B\rangle_*^{1/2}=0$ with $\langle B\ast A\rangle_*^{1/2}=1$.
 
 ## Summary
 

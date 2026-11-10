@@ -120,7 +120,7 @@ the expression of the source. The algorithm is embarrassingly parallel in the tw
 
 $$
 \boxed{\;
-\|A\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\|_{\mathrm F}
+\langle A\rangle_*^{1/2}=\frac1{\sqrt{n_3}}\langle \operatorname{diag}(\widehat A)\rangle_*^{1/2}
 \;},
 $$
 
@@ -129,7 +129,7 @@ where $\operatorname{diag}(\widehat A)$ is the block diagonal matrix with blocks
 *Proof.* The Frobenius norm of the block diagonal is the square root of the sum of the squared Frobenius norms of its blocks. The unnormalised Fourier transform along a mode of length $n_3$ satisfies the Parseval identity
 
 $$
-\sum_{k=1}^{n_3}\|\widehat A^{(k)}\|_{\mathrm F}^2=n_3\|A\|_{\mathrm F}^2,
+\sum_{k=1}^{n_3}\langle \widehat A^{(k)}\rangle_*=n_3\langle A\rangle_*,
 $$
 
 because each entry of $A$ is transformed by a vector of squared norm $n_3$ and the transforms of different entries are orthogonal in the sum. Dividing by $n_3$ and taking square roots gives the identity.
@@ -138,27 +138,27 @@ because each entry of $A$ is transformed by a vector of squared norm $n_3$ and t
 
 $$
 \boxed{\;
-\|A\|_{\mathrm F}=\|S\|_{\mathrm F}
+\langle A\rangle_*^{1/2}=\langle S\rangle_*^{1/2}
 \;}.
 $$
 
-*Proof.* In the transform, $\widehat A^{(k)}=\widehat U^{(k)}\widehat S^{(k)}(\widehat V^{(k)})^{\mathsf H}$, and the Frobenius norm is invariant under multiplication by the $*$-unitary matrices $\widehat U^{(k)}$ and $\widehat V^{(k)\mathsf H}$. Thus $\|\widehat A^{(k)}\|_{\mathrm F}=\|\widehat S^{(k)}\|_{\mathrm F}$ for every $k$; summing and using the theorem gives the identity.
+*Proof.* In the transform, $\widehat A^{(k)}=\widehat U^{(k)}\widehat S^{(k)}(\widehat V^{(k)})^{\mathsf H}$, and the Frobenius norm is invariant under multiplication by the $*$-unitary matrices $\widehat U^{(k)}$ and $\widehat V^{(k)\mathsf H}$. Thus $\langle \widehat A^{(k)}\rangle_*^{1/2}=\langle \widehat S^{(k)}\rangle_*^{1/2}$ for every $k$; summing and using the theorem gives the identity.
 
 **Remark (the singular value tubes).** The norm of the tensor is also the Euclidean norm of the diagonal tubes,
 
 $$
-\|A\|_{\mathrm F}^2=\sum_{i=1}^{\min(n_1,n_2)}\|S(i,i,:)\|_{\mathrm F}^2.
+\langle A\rangle_*=\sum_{i=1}^{\min(n_1,n_2)}\langle S(i,i,:)\rangle_*.
 $$
 
 The tubes are the objects the rank and the low-rank approximation read. **The decomposition concentrates the norm on the diagonal tubes**, and the truncation of the tubes is the approximation of the next article.
 
 ## Verification
 
-The decomposition was recomputed on random tensors of sizes $2\times2\times2$, $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. The reconstruction $U\ast S\ast V^{\mathsf H}$ agreed with $A$ to $1.4\times10^{-15}$; the unitarity of $U$ and $V$ held to $5.6\times10^{-16}$; the norm identity of the theorem held to $1.3\times10^{-15}$; and the identity $\|A\|_{\mathrm F}=\|S\|_{\mathrm F}$ held to $1.1\times10^{-15}$. The singular values of each complex coordinate were the singular values returned by the complex SVD of the transform slices, and the idempotent reduction reproduced the decomposition coordinate by coordinate. Completing a thin SVD to $*$-unitary factors by orthonormal complements reproduced the slice to $7.5\times10^{-16}$.
+The decomposition was recomputed on random tensors of sizes $2\times2\times2$, $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. The reconstruction $U\ast S\ast V^{\mathsf H}$ agreed with $A$ to $1.4\times10^{-15}$; the unitarity of $U$ and $V$ held to $5.6\times10^{-16}$; the norm identity of the theorem held to $1.3\times10^{-15}$; and the identity $\langle A\rangle_*^{1/2}=\langle S\rangle_*^{1/2}$ held to $1.1\times10^{-15}$. The singular values of each complex coordinate were the singular values returned by the complex SVD of the transform slices, and the idempotent reduction reproduced the decomposition coordinate by coordinate. Completing a thin SVD to $*$-unitary factors by orthonormal complements reproduced the slice to $7.5\times10^{-16}$.
 
 ## Summary
 
-Every reduced biquaternion tensor $A\in{\mathbb{B}_{\mathrm{red}}}^{n_1\times n_2\times n_3}$ has a t-SVD $A=U\ast S\ast V^{\mathsf H}$, with $U$ and $V$ $*$-unitary and $S$ f-diagonal. The decomposition is computed by transforming along the third mode, taking the matrix SVD over $\mathbb{B}_{\mathrm{red}}$ of every transform slice, and inverting the transform. The singular values are pairs of complex singular values, one in each idempotent coordinate; they need not be real, they may be zero divisors, and the decomposition is not unique. The Frobenius norm satisfies $\|A\|_{\mathrm F}=n_3^{-1/2}\|\operatorname{diag}(\widehat A)\|_{\mathrm F}$ and equals $\|S\|_{\mathrm F}$, so the norm is concentrated on the diagonal tubes $S(i,i,:)$. **The t-SVD is the matrix SVD applied slice by slice in the Fourier domain, with the two idempotent coordinates taken separately.**
+Every reduced biquaternion tensor $A\in{\mathbb{B}_{\mathrm{red}}}^{n_1\times n_2\times n_3}$ has a t-SVD $A=U\ast S\ast V^{\mathsf H}$, with $U$ and $V$ $*$-unitary and $S$ f-diagonal. The decomposition is computed by transforming along the third mode, taking the matrix SVD over $\mathbb{B}_{\mathrm{red}}$ of every transform slice, and inverting the transform. The singular values are pairs of complex singular values, one in each idempotent coordinate; they need not be real, they may be zero divisors, and the decomposition is not unique. The Frobenius norm satisfies $\langle A\rangle_*^{1/2}=n_3^{-1/2}\langle \operatorname{diag}(\widehat A)\rangle_*^{1/2}$ and equals $\langle S\rangle_*^{1/2}$, so the norm is concentrated on the diagonal tubes $S(i,i,:)$. **The t-SVD is the matrix SVD applied slice by slice in the Fourier domain, with the two idempotent coordinates taken separately.**
 
 ## Summary of Notation
 

@@ -151,7 +151,7 @@ $$
 =\det\nolimits_{t,(1)}(A)\det\nolimits_{t,(2)}(A)\in\mathbb{C}.
 $$
 
-It is nonzero if and only if $A$ is a unit. **This is the scalar that decides invertibility.** It is not a topological norm: it is a polynomial, it is complex-valued, and it vanishes on the zero divisors. The Frobenius norm does not decide invertibility: the all-ones tensor has $\|J\|_{\mathrm F}=n\sqrt{n_3}>0$ and is a zero divisor.
+It is nonzero if and only if $A$ is a unit. **This is the scalar that decides invertibility.** It is not a topological norm: it is a polynomial, it is complex-valued, and it vanishes on the zero divisors. The Frobenius norm does not decide invertibility: the all-ones tensor has $\langle J\rangle_*^{1/2}=n\sqrt{n_3}>0$ and is a zero divisor.
 
 **Remark (the zero divisors are not a single hypersurface).** The t-algebraic norm is a complex polynomial in the real coordinates of $A$, and the units are the complement of its zero set. That zero set is the union of $\det_{t,(1)}=0$ and $\det_{t,(2)}=0$. Each is the zero set of a complex polynomial, hence a real subvariety of codimension two and a complex hypersurface in the complex structure of $T_n$; their union also has real codimension two, not one. The units are the complement of this union and form a dense open subset. This is the tensor analogue of the zero divisors of $\mathbb{B}_{\mathrm{red}}$, the union of the two complex lines $Q_{(1)}=0$ and $Q_{(2)}=0$, which is the zero set of the complex quadratic form $Q_{(1)}Q_{(2)}$.
 

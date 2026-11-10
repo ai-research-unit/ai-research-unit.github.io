@@ -84,7 +84,7 @@ The construction is not a general solution. A regular field need not be axial, a
 The fundamental solution of $D$ on the Euclidean real form is
 
 $$
-G(Q)=\frac{Q^{\natural}}{\lVert Q\rVert_E^4},
+G(Q)=\frac{Q^{\natural}}{\lVert Q\rVert^4},
 \qquad
 DG=2\pi^2\delta_0 e_t.
 $$
@@ -116,7 +116,7 @@ The reading is conditional. The corpus's residue theory is the mathematical theo
 
 ## The Zero-Divisor Boundary
 
-The Cauchy integral formula is asserted on the Euclidean real form, where the kernel $G(Q)=Q^{\natural}/\lVert Q\rVert_E^4$ is the fundamental solution. Off that form the inverse $Q^{-1}=Q^{\natural}/\langle Q\rangle_{\natural}$ fails on the zero-divisor cone, and $G$ is no longer a fundamental solution; the cone is the boundary of the analytic domain. The kernel itself is singular only at $Q=0$.
+The Cauchy integral formula is asserted on the Euclidean real form, where the kernel $G(Q)=Q^{\natural}/\lVert Q\rVert^4$ is the fundamental solution. Off that form the inverse $Q^{-1}=Q^{\natural}/\langle Q\rangle_{\natural}$ fails on the zero-divisor cone, and $G$ is no longer a fundamental solution; the cone is the boundary of the analytic domain. The kernel itself is singular only at $Q=0$.
 
 The physical reading is the **boundary of the analytic domain**. The null cone is where the analytic continuation degenerates; the zero divisors are the obstruction. On the material slice the cone is the light cone, and the failure is the massless limit: the inverse is on the cone, the residue is at the pole, and the contour is the prescription.
 
@@ -201,7 +201,7 @@ The shifted operator's parameter is not necessarily a physical mass. It is an el
 | $D=\sum_\mu e_\mu\partial/\partial R_\mu$ | the Cauchy–Riemann operator |
 | $D^{\natural}$ | its quaternion conjugate |
 | $\Box=DD^{\natural}$ | the d'Alembertian |
-| $G=Q^{\natural}/\lVert Q\rVert_E^4$ | the fundamental solution |
+| $G=Q^{\natural}/\lVert Q\rVert^4$ | the fundamental solution |
 | $D_{\mathrm s}=i\sum_{\eta=1}^{3}\vec e_\eta\partial/\partial R_\eta$ | the spatial Dirac operator, $D_{\mathrm s}^{2}=\Delta$ |
 | $D_\alpha=D_{\mathrm s}+M_\alpha$ | the shifted operator |
 | $\alpha$ | the shift, a mass or chemical potential |

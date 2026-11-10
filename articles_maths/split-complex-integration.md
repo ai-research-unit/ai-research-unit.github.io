@@ -9,7 +9,7 @@ The base ring throughout is $\mathbb{C}_{\mathrm{spl}}$. It is a commutative rin
 
 No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
-Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\|_E = \sqrt{q^2 + q'^2}$. The idempotent coordinates are
+Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\| = \sqrt{q^2 + q'^2}$. The idempotent coordinates are
 
 $$
 Q_+ = q + q', \qquad Q_- = q - q', \qquad Q = Q_+ \Pi_+ + Q_- \Pi_-,
@@ -26,7 +26,7 @@ and $\langle Q\rangle_{*} = Q_+ Q_-$.
 The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The **opposite** path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ and $\gamma_2 : [b,c] \to \mathbb{C}_{\mathrm{spl}}$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ follows first one and then the other. The **length** of a piecewise $C^1$ path is
 
 $$
-L(\gamma) = \int_a^b \|\gamma'(t)\|_E \, dt,
+L(\gamma) = \int_a^b \|\gamma'(t)\| \, dt,
 $$
 
 finite because $\gamma'$ is piecewise continuous on a compact interval.
@@ -62,12 +62,12 @@ $$
 **Proof.** The product in $\mathbb{C}_{\mathrm{spl}}$ is bilinear, and $f$ is continuous, so the argument of the complex case applies verbatim: on each smooth piece
 
 $$
-Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
+Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\| \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
 $$
 
-with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
+with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\| \,\omega(\|\Delta\|)(b-a) \to 0$.
 
-The integral exists because $\mathbb{C}_{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|_E$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.
+The integral exists because $\mathbb{C}_{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.
 
 ### Basic Properties
 
@@ -83,19 +83,19 @@ $$
 
 **Reparametrisation.** If $\varphi : [c,d] \to [a,b]$ is a piecewise $C^1$ bijection with $\varphi(c) = a$, $\varphi(d) = b$, then $\int_{\gamma \circ \varphi} f\,dQ = \int_\gamma f\,dQ$; if $\varphi$ reverses the endpoints, the sign changes.
 
-**Estimation.** If $\|f(Q)\|_E \leq m$ on $\gamma^*$, then
+**Estimation.** If $\|f(Q)\| \leq m$ on $\gamma^*$, then
 
 $$
-\left\|\int_\gamma f(Q)\,dQ\right\|_E \leq \sqrt{2}\,m\,L(\gamma).
+\left\|\int_\gamma f(Q)\,dQ\right\| \leq \sqrt{2}\,m\,L(\gamma).
 $$
 
 **Proof.** The Euclidean norm on $\mathbb{C}_{\mathrm{spl}}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $Q = q + jq'$, $B = b + jb'$, one has
 
 $$
-\|QB\|_E^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
+\|QB\|^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
 $$
 
-and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|_E^2 \leq 2\|Q\|_E^2\|B\|_E^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.
+and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|^2 \leq 2\|Q\|^2\|B\|^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\| \leq \sqrt2\,m\,\|\gamma'(t)\|$, and integrating gives the estimate.
 
 **Remark.** The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{*}$, used below.
 
@@ -434,7 +434,7 @@ The consequences are those of the preceding sections. The general Cauchy–Gours
 
 ## Summary
 
-The **split complex integral** $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dQ\|_E \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its **idempotent decomposition** $\int_\gamma f\,dQ = \Pi_+\int_{\gamma_+} f_+ \,dQ_+ + \Pi_-\int_{\gamma_-} f_-\,dQ_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.
+The **split complex integral** $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dQ\| \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its **idempotent decomposition** $\int_\gamma f\,dQ = \Pi_+\int_{\gamma_+} f_+ \,dQ_+ + \Pi_-\int_{\gamma_-} f_-\,dQ_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.
 
 In the idempotent coordinates the operator factorises as $\partial/\partial\bar Q = \Pi_-\partial/\partial Q_+ + \Pi_+\partial/\partial Q_-$, and **split complex differentiability** is equivalent to $f_+$ depending on $Q_+$ alone and $f_-$ on $Q_-$ alone. Hence $f\,dQ$ is closed exactly when $f$ is differentiable, every differentiable $f$ has a primitive on every domain, the **Cauchy–Goursat theorem** $\oint_\gamma f\,dQ = 0$ holds for every closed path, and for continuous densities the rectangle criterion is equivalent to the separated form. The theorem is nevertheless soft, since differentiability excludes nothing, and the rectangle criterion stops one step short of differentiability.
 
@@ -451,13 +451,13 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 | $\bar Q = q - jq'$ | Split complex conjugate |
 | $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |
-| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
+| $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
 | $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |
 | $\gamma : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ | Piecewise $C^1$ path |
 | $\gamma_\pm(t) = Q_\pm(\gamma(t))$ | Projections of a path to the two null coordinates |
 | $\gamma^*$, $-\gamma$, $\gamma_1 + \gamma_2$ | Trace, opposite path, concatenation |
-| $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
+| $L(\gamma) = \int_a^b \|\gamma'(t)\|\,dt$ | Euclidean length |
 | $\int_\gamma f\,dQ$ | Split complex integral |
 | $\partial/\partial Q = \tfrac12(\partial/\partial q + j\partial/\partial q')$ | Split Wirtinger derivative |
 | $\partial/\partial\bar Q = \tfrac12(\partial/\partial q - j\partial/\partial q')$ | Split Wirtinger derivative, conjugate of $\partial/\partial Q$ |

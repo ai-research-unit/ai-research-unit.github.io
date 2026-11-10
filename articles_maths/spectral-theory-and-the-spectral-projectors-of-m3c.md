@@ -440,7 +440,7 @@ For a non-normal matrix the operator norm can be strictly larger: the nilpotent 
 **The Frobenius norm.** With respect to the trace form,
 
 $$
-\|A\|_F^{2}=\operatorname{tr}(A^{*}A)=\sum_{i,j}|a_{ij}|^{2},
+\langle A\rangle_*=\operatorname{tr}(A^{*}A)=\sum_{i,j}|a_{ij}|^{2},
 $$
 
 and the real part of the Hermitian form, $\operatorname{Re}\operatorname{tr}(A^{*}B)$, is the real inner product whose norm is the Frobenius norm. The singular set $\det A=0$ is a complex hypersurface of real codimension $2$, and the Hermitian trace form $\operatorname{tr}(A^{*}B)$ is positive definite on all of $M_3$, including the singular set: there is no null direction and no null cone.
@@ -500,7 +500,7 @@ $$
 | $P_k$ | the spectral projector of $\lambda_k$ |
 | $R(t)=(tI-A)^{-1}$ | the resolvent |
 | $r(A)$ | the spectral radius |
-| $\|A\|_F$ | the Frobenius norm $\operatorname{tr}(A^{*}A)^{1/2}$ |
+| $\langle A\rangle_*^{1/2}$ | the Frobenius norm $\operatorname{tr}(A^{*}A)^{1/2}$ |
 | $\omega_k$ | the cube roots of unity $1,\omega,\omega^{2}$ |
 
 ## Further Reading

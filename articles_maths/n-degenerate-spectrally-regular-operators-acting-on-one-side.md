@@ -80,7 +80,7 @@ $$
 \mathsf M_2(\tilde Q)=2a\,u v^{\dagger},
 $$
 
-with $a>0$ and $u,v$ unit vectors of $\mathbb{C}^{2}$. The Frobenius norm is $\lVert\mathsf M_2(\tilde Q)\rVert_F^{2}=4a^{2}=2\langle\tilde Q\rangle_{*}$, hence $a=\sqrt{\langle\tilde Q\rangle_{*}/2}$. The matrix $u v^{\dagger}$ is a rank-one partial isometry, because $(u v^{\dagger})(u v^{\dagger})^{\dagger}(u v^{\dagger})=u v^{\dagger}$. Translating back gives $\tilde Q=2a\tilde Q_0$ with $\tilde Q_0=\tilde Q/(2a)$. Conversely, a non-zero rank-one partial isometry has determinant zero, hence $\langle\tilde Q\rangle_{\natural}=0$.
+with $a>0$ and $u,v$ unit vectors of $\mathbb{C}^{2}$. The Frobenius norm is $\langle\mathsf M_2(\tilde Q)\rangle_*=4a^{2}=2\langle\tilde Q\rangle_{*}$, hence $a=\sqrt{\langle\tilde Q\rangle_{*}/2}$. The matrix $u v^{\dagger}$ is a rank-one partial isometry, because $(u v^{\dagger})(u v^{\dagger})^{\dagger}(u v^{\dagger})=u v^{\dagger}$. Translating back gives $\tilde Q=2a\tilde Q_0$ with $\tilde Q_0=\tilde Q/(2a)$. Conversely, a non-zero rank-one partial isometry has determinant zero, hence $\langle\tilde Q\rangle_{\natural}=0$.
 
 The two factors of the decomposition are the **left slot** $u$ and the **right slot** $v$ of the rank-one matrix. They are defined up to a common phase; the relative phase is the phase of $\tilde Q$. The overlap
 
@@ -150,10 +150,10 @@ Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idemp
 $$
 \tilde{Ζ}=2\tilde\Pi-e_t,\qquad
 \tilde\Pi'=e_t-\tilde\Pi,\qquad
-\kappa=2\langle\tilde\Pi\rangle_{*}=\frac{1+\lVert\tilde{Ζ}\rVert_E^{2}}{2},
+\kappa=2\langle\tilde\Pi\rangle_{*}=\frac{1+\lVert\tilde{Ζ}\rVert^{2}}{2},
 $$
 
-where $\lVert\tilde{Ζ}\rVert_E^{2}=\lvertΖ_x\rvert^{2}+\lvertΖ_y\rvert^{2}+\lvertΖ_z\rvert^{2}$. The root satisfies $\tilde{Ζ}^{2}=e_t$ and $\tilde{Ζ}\neq\pm e_t$; the idempotent has $\langle\tilde\Pi\rangle_{\natural}=0$ and $B^{2}(\tilde\Pi)=-\tfrac14$. The number $\kappa$ is real and $\kappa\ge1$, with equality exactly when $\tilde\Pi$ is Hermitian.
+where $\lVert\tilde{Ζ}\rVert^{2}=\lvertΖ_x\rvert^{2}+\lvertΖ_y\rvert^{2}+\lvertΖ_z\rvert^{2}$. The root satisfies $\tilde{Ζ}^{2}=e_t$ and $\tilde{Ζ}\neq\pm e_t$; the idempotent has $\langle\tilde\Pi\rangle_{\natural}=0$ and $B^{2}(\tilde\Pi)=-\tfrac14$. The number $\kappa$ is real and $\kappa\ge1$, with equality exactly when $\tilde\Pi$ is Hermitian.
 
 **Proposition (the closed form).** On $\Sigma_{01}$,
 
@@ -171,11 +171,11 @@ $$
 $$
 \langle\tilde\Pi\rangle_{*}
 =\frac14\bigl(1+\langle\tilde{Ζ}\tilde{Ζ}^{*}\rangle_{*}\bigr)
-=\frac{1+\lVert\tilde{Ζ}\rVert_E^{2}}{4}
+=\frac{1+\lVert\tilde{Ζ}\rVert^{2}}{4}
 =\frac{\kappa}{2},
 $$
 
-because $\operatorname{Sc}\tilde{Ζ}=0$ and $\operatorname{Sc}(\tilde{Ζ}\tilde{Ζ}^{*})=\lVert\tilde{Ζ}\rVert_E^{2}$. Hence $\langle\tilde Q\rangle_{*}=\lvert c\rvert^{2}\kappa/2$ and $a=\lvert c\rvert\sqrt{\kappa}/2$. The formula for $P$ is $\tilde Q\tilde Q^{*}/(4a^{2})=\tilde\Pi\tilde\Pi^{*}/\kappa$. The partial-isometry factor is
+because $\operatorname{Sc}\tilde{Ζ}=0$ and $\operatorname{Sc}(\tilde{Ζ}\tilde{Ζ}^{*})=\lVert\tilde{Ζ}\rVert^{2}$. Hence $\langle\tilde Q\rangle_{*}=\lvert c\rvert^{2}\kappa/2$ and $a=\lvert c\rvert\sqrt{\kappa}/2$. The formula for $P$ is $\tilde Q\tilde Q^{*}/(4a^{2})=\tilde\Pi\tilde\Pi^{*}/\kappa$. The partial-isometry factor is
 
 $$
 \tilde Q_0=\frac{\tilde Q}{2a}=\frac{c\tilde\Pi}{\lvert c\rvert\sqrt{\kappa}}

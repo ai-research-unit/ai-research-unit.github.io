@@ -66,7 +66,7 @@ $$
 T_f h = f * h = \int_K f(y)\,\lambda(y)h\,dy ,
 $$
 
-is Hilbert–Schmidt, hence compact, with $\|T_f\|_{\mathrm{HS}} = \|f\|_2$, and $\|T_f\| \leq \|f\|_1$.
+is Hilbert–Schmidt, hence compact, with $\langle T_f\rangle_*^{1/2} = \|f\|_2$, and $\|T_f\| \leq \|f\|_1$.
 
 **Proof.** The kernel of $T_f$ with respect to the measure $dk$ is $K_f(x,y) = f(y^{-1}x)$, and a change of variable shows $\int\int|K_f(x,y)|^2\,dx\,dy = \int|f|^2$. The elementary bound $\|f*h\|_2 \leq \|f\|_1\|h\|_2$ is Young's inequality for the compact case.
 

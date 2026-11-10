@@ -64,13 +64,13 @@ The label says exactly one thing — the glyph is not an element, it is an opera
 
 **On an element the label names a tensor factor.** Written on an element it means the same element read in the opposite algebra, $e_{\mathrm{opp},\nu}$, and it is written there for that one purpose: to name the second factor of the tensor product $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}$, whose elementary tensors $e_\mu\otimes e_{\mathrm{opp},\nu}$ are the basis operators $L_{e_\mu}R_{e_\nu}$ of the two-sided operators. The element is not thereby an operator, the label says nothing about a side, and on an operator glyph it is a defect. It marks an algebra, a module of one, and an element read in that algebra; it never marks a set or a bare vector space.
 
-**The two-letter form $\mathrm{op}$ is not a label.** It differs from $\mathrm{opp}$ by one letter, at the size a label is set, and a page carrying both would be undecidable at reading speed. It is therefore not a token of the corpus in any sense, and the one place where it survives, the bar $\lVert A\rVert_{\mathrm{op}}$ of §*The Two-Letter Labels*, is a defect. In particular it does not mark the operator norm: the norm is written $\lVert A\rVert$ bare, and the norms it is compared with carry their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$, so that the unmarked bar is the operator norm by default and never by elimination. It does not mark an operator either: an operator glyph is the element's glyph, and the explicit form is written where the letter is taken, as in the gradient $\tilde\nabla$ and the momentum $\vec p$.
+**The two-letter form $\mathrm{op}$ is not a label.** It differs from $\mathrm{opp}$ by one letter, at the size a label is set, and a page carrying both would be undecidable at reading speed. It is therefore not a token of the corpus in any sense, and the one place where it survives, the bar $\lVert A\rVert_{\mathrm{op}}$ of §*The Two-Letter Labels*, is a defect. In particular it does not mark the operator norm: the norm is written $\lVert A\rVert$ bare, and the norms it is compared with carry their own labels, $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_*$, so that the unmarked bar is the operator norm by default and never by elimination. It does not mark an operator either: an operator glyph is the element's glyph, and the explicit form is written where the letter is taken, as in the gradient $\tilde\nabla$ and the momentum $\vec p$.
 
 ### The Two-Letter Labels
 
 The table is an index of labels and not a list of tokens: a label names an object, a construction, a frame or a variant of one, the article that introduces it fixes what it abbreviates, and a label enters the table with that article.
 
-**The section holds two tables.** The first indexes the two-letter labels that name an object, a construction, a frame or a variant, and it carries thirty rows. The second table carries the five labels of the norm bar.
+**The section holds two tables.** The first indexes the two-letter labels that name an object, a construction, a frame or a variant, and it carries thirty rows. The second table carries the four labels of the norm bar.
 
 **Two letters are the shorter length of the label, and they are made as the three are.** Either the initials of a two-word term — $\mathrm{sa}$ the self-adjoint part, $\mathrm{rs}$ the regular semisimple locus, $\mathrm{df}$ the discrete and faithful representations, $\mathrm{em}$ the electromagnetic part — or the consonants of a single word — $\mathrm{fn}$ a function, $\mathrm{sh}$ the sheafification, $\mathrm{bl}$ the blow-up, $\mathrm{cl}$ the classical value, $\mathrm{tr}$ the transpose, $\mathrm{gr}$ the gradient, $\mathrm{pf}$ the profinite completion, $\mathrm{sw}$ the swap. The three letters of the other family are what a word that does not shorten gives, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$, and neither length is a shortening of the other: the index of the longer family is §*The Three-Letter Labels*.
 
@@ -113,15 +113,22 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\mathrm{tw}$ | the twisted local system, $\mathbb{Z}_{\mathrm{tw}}$ |
 | $\mathrm{un}$ | the unital one, $\operatorname{Aut}_{\mathrm{un},R}$ |
 
-**The second table is the norm bar.** Five labels stand on $\lVert\cdot\rVert$: four of them on the bar and nowhere else, and the fifth, $\mathrm{sp}$, on the bar and on the spinor, which the bar tells from the spectral reading. The four are the Frobenius norm $\lVert A\rVert_{\mathrm{F}}$, the Hilbert–Schmidt norm $\lVert A\rVert_{\mathrm{HS}}$, the nuclear norm $\lVert A\rVert_{\mathrm{nuc}}$ and the sup norm $\lVert f\rVert_{\mathrm{sup}}$; the fifth is the spectral norm $\lVert f\rVert_{\mathrm{sp}}=\lim_m\lVert f^m\rVert^{1/m}$. **The operator norm is the bare bar:** $\lVert A\rVert$ unmarked is the operator norm by default and never by elimination, and the form $\lVert A\rVert_{\mathrm{op}}$, which fourteen formulas of the physical corpus still carry, says one norm twice and is a defect. The bar is the only slot where a capital stands, $\lVert A\rVert_{\mathrm{HS}}$.
+**The second table is the norm bar, and its base reading is the square root of the Hermitian norm.** On an element of an algebra the bar is that root,
+
+$$
+\lVert X\rVert=\bigl(\langle X\rangle_{*}\bigr)^{1/2},
+$$
+
+which for a matrix is $\bigl(\operatorname{tr}(X^{*}X)\bigr)^{1/2}$, the norm the earlier notation called the Frobenius or the Hilbert–Schmidt norm. That norm is written with the bracket, $\langle X\rangle_{*}^{1/2}$, and no longer as a bar; the two names survive as names of the same object and never as symbols. On an **operator** the bare bar is the operator norm, $\lVert T\rVert=\sup\{\lVert Tx\rVert:\lVert x\rVert\leq1\}$, which is not the root of a Hermitian form; the object tells the two readings apart, an element of the algebra or an operator on a Hilbert space.
+
+**A label stands on the bar for a norm that is neither.** The nuclear norm, the spectral norm, the sup norm and the operator norm keep a label, and the operator norm keeps one wherever the object could be read as an element: the form $\lVert A\rVert_{\mathrm{op}}$ says which norm is meant and is not a defect, since the bare bar on the same $A$ is the Hermitian root.
 
 | Label | Names |
 |---|---|
-| $\lVert A\rVert_{\mathrm{F}}$ | the Frobenius norm |
-| $\lVert A\rVert_{\mathrm{HS}}$ | the Hilbert–Schmidt norm |
 | $\lVert A\rVert_{\mathrm{nuc}}$ | the nuclear norm |
 | $\lVert f\rVert_{\mathrm{sp}}$ | the spectral norm, $\lim_m\lVert f^m\rVert^{1/m}$ |
 | $\lVert f\rVert_{\mathrm{sup}}$ | the sup norm |
+| $\lVert A\rVert_{\mathrm{op}}$ | the operator norm, written where $A$ could be read as an element |
 
 **The angle labels are outside this section.** All thirty name an angle of $\theta$ and stand in its subscript, all are three letters, and they are indexed in §*The Three-Letter Labels*; a two-letter label never stands on $\theta$.
 
@@ -135,7 +142,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 
 **The split is the rule of the angle.** Where one formula holds two angles the first keeps the bare $\theta$ and the second takes a label, so an angle label names a role and not an object, and the two tables never share a row: a label of an object never stands on $\theta$, and an angle label never stands elsewhere. A label that neither table carries enters with the article that spends it.
 
-**Every label is written in lowercase.** The label is set at subscript size, where the case of a two- or a three-letter word is not read reliably, so the corpus writes every one of them in lowercase; the rule is the one that refuses $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to spelling. The bar is the one place where a capital survives, and only there: $\lVert A\rVert_{\mathrm{HS}}$.
+**Every label is written in lowercase.** The label is set at subscript size, where the case of a two- or a three-letter word is not read reliably, so the corpus writes every one of them in lowercase; the rule is the one that refuses $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to spelling. The bar is the one place where a capital survives, and only there: $\langle A\rangle_*^{1/2}$.
 
 **No label carries a capital.** A capital in that position is a defect, and the corpus writes every label lowercase. **Six codes separate two spellings.** Where one three-letter word carries two English words, the rarer reading takes a code of its own, made the same way and written in the same place: $\mathrm{rgs}$ beside $\mathrm{reg}$, $\mathrm{tpl}$ beside $\mathrm{top}$, $\mathrm{prm}$ beside $\mathrm{per}$, $\mathrm{dfc}$ beside $\mathrm{def}$, $\mathrm{obf}$ beside $\mathrm{orb}$, $\mathrm{adg}$ beside $\mathrm{adj}$. Each of the six names one word only, and a glyph may carry either member of a pair. A code is a label and stands low with the others, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy, $\Lambda_{\mathrm{top}}$ the top exterior power. The twelve algebraic structures carry no code at all: a product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, $\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, and the operator names the structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* on its own.
 

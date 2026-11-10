@@ -6,7 +6,7 @@ This is the zero half of the Krein partition of the biquaternion algebra: the se
 
 $$
 \mathcal K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}=0\}
-=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
+=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert\}.
 $$
 
 It is a real cone of real codimension one, smooth off its apex, and its partner is *The Kr-Regular Sector*. The two articles carry the partition of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*; the spectral condition is not used as a subdivision, and §*Why There Is No Spectral Split* of that article gives the four reasons.
@@ -20,7 +20,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
-so that $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$ is the **Krein norm**. The **algebraic norm** is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; it is multiplicative and it decides invertibility. Its zero set is the algebraic null cone $\mathcal N$, and $\mathcal Z=\mathcal N\setminus\{0\}$ is the zero-divisor set. The product is the plain product, with unit $e_t$.
+so that $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert^2$ is the **Krein norm**. The **algebraic norm** is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; it is multiplicative and it decides invertibility. Its zero set is the algebraic null cone $\mathcal N$, and $\mathcal Z=\mathcal N\setminus\{0\}$ is the zero-divisor set. The product is the plain product, with unit $e_t$.
 
 ## Definition and Characterisation
 
@@ -28,7 +28,7 @@ so that $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$ is t
 
 $$
 \mathcal K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}=0\}
-=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
+=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert\}.
 $$
 
 Its elements are **isotropic**; the non-zero ones are the **Krein-null** elements.
@@ -37,7 +37,7 @@ Its elements are **isotropic**; the non-zero ones are the **Krein-null** element
 
 (i) $\tilde Q\in\mathcal K$;
 
-(ii) $|Q_t|=\lVert\vec Q\rVert_E$;
+(ii) $|Q_t|=\lVert\vec Q\rVert$;
 
 (iii) the complex line $\mathbb{C}\tilde Q$ is totally isotropic for the Krein form;
 
@@ -51,7 +51,7 @@ Its elements are **isotropic**; the non-zero ones are the **Krein-null** element
 
 **Corollary (the scalar part never vanishes off the origin).** Every non-zero element of $\mathcal K$ has $Q_t\neq0$.
 
-*Proof.* If $Q_t=0$ then $\lVert\vec Q\rVert_E=0$, hence $\vec Q=0$ and $\tilde Q=0$.
+*Proof.* If $Q_t=0$ then $\lVert\vec Q\rVert=0$, hence $\vec Q=0$ and $\tilde Q=0$.
 
 **Remark (the null set is not the algebraic null cone).** The two cones are different objects of the same ambient space: $\mathcal N$ has complex dimension three and real dimension six, and $\mathcal K$ is a real hypersurface of real dimension seven. They meet in $\mathcal K_{\mathrm d}$, of real dimension four. The element $e_t+\vec e_x$ is Krein-null and a unit; the element $\vec e_x+i\vec e_y$ is a zero divisor and not Krein-null.
 
@@ -69,9 +69,9 @@ $$
 \Psi(Q_t,W)=Q_t(e_t+W),
 $$
 
-with $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert_E=1\}$, is a bijection. Hence $\mathcal K\setminus\{0\}$ is connected, of real dimension $7$, and homotopy equivalent to $S^1\times S^5$.
+with $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert=1\}$, is a bijection. Hence $\mathcal K\setminus\{0\}$ is connected, of real dimension $7$, and homotopy equivalent to $S^1\times S^5$.
 
-*Proof.* For $\tilde Q\neq0$ null, $Q_t\neq0$ and $W=\vec Q/Q_t$ has $\lVert W\rVert_E=|\lVert\vec Q\rVert_E/|Q_t|=1$; conversely $\langle Q_t(e_t+W)\rangle_{\natural*}=|Q_t|^2(1-\lVert W\rVert_E^2)=0$. The inverse is $\tilde Q\mapsto(Q_t,\vec Q/Q_t)$. The factor $\mathbb{C}^{\times}$ is homotopy equivalent to $S^1$.
+*Proof.* For $\tilde Q\neq0$ null, $Q_t\neq0$ and $W=\vec Q/Q_t$ has $\lVert W\rVert=|\lVert\vec Q\rVert/|Q_t|=1$; conversely $\langle Q_t(e_t+W)\rangle_{\natural*}=|Q_t|^2(1-\lVert W\rVert^2)=0$. The inverse is $\tilde Q\mapsto(Q_t,\vec Q/Q_t)$. The factor $\mathbb{C}^{\times}$ is homotopy equivalent to $S^1$.
 
 **Corollary (one orbit).** The isometry group $\mathrm{U}(1,3)$ acts transitively on $\mathcal K\setminus\{0\}$. Every $\mathrm{U}(1,3)$-invariant function on the punctured null set is constant, so the metric structure of the sector is exhausted by the value of the norm: there is no further metric invariant inside it.
 
@@ -112,7 +112,7 @@ $$
 
 **Theorem (the two strata).** $\mathcal K=\mathcal K_{\mathrm d}\uplus\mathcal K_{\mathrm u}$. The doubly null set is closed in $\mathcal K$, of real dimension $4$; the isotropic units form its open dense complement, of real dimension $7$. The points of $\mathcal K_{\mathrm d}$ are the origin together with the zero divisors of $\mathcal K$; every point of $\mathcal K_{\mathrm u}$ is a unit.
 
-*Proof.* $\mathcal K_{\mathrm d}$ is the trace on $\mathcal K$ of the closed algebraic null cone, hence closed. On $\mathcal K$ the algebraic norm takes the values determined by the two parameters: in the parametrisation $\Psi$ one has $\langle\Psi(Q_t,W)\rangle_{\natural}=Q_t^2(1+B^2(W))$, which vanishes exactly when $B^2(W)=-1$. With $\lVert W\rVert_E=1$, writing $W=a+ib$ with $a,b\in\mathbb{R}^3$, the conditions $\lVert W\rVert_E=1$ and $B^2(W)=-1$ give $a\cdot b=0$, $|a|^2+|b|^2=1$ and $|a|^2-|b|^2=-1$, hence $a=0$ and $|b|=1$: the set is $\mathbb{C}^{\times}\times(e_t+iS^2)$, of real dimension $4$. An element with $\langle\tilde Q\rangle_{\natural}\neq0$ is not a zero divisor, and being non-zero it is a unit; at the origin the element is neither.
+*Proof.* $\mathcal K_{\mathrm d}$ is the trace on $\mathcal K$ of the closed algebraic null cone, hence closed. On $\mathcal K$ the algebraic norm takes the values determined by the two parameters: in the parametrisation $\Psi$ one has $\langle\Psi(Q_t,W)\rangle_{\natural}=Q_t^2(1+B^2(W))$, which vanishes exactly when $B^2(W)=-1$. With $\lVert W\rVert=1$, writing $W=a+ib$ with $a,b\in\mathbb{R}^3$, the conditions $\lVert W\rVert=1$ and $B^2(W)=-1$ give $a\cdot b=0$, $|a|^2+|b|^2=1$ and $|a|^2-|b|^2=-1$, hence $a=0$ and $|b|=1$: the set is $\mathbb{C}^{\times}\times(e_t+iS^2)$, of real dimension $4$. An element with $\langle\tilde Q\rangle_{\natural}\neq0$ is not a zero divisor, and being non-zero it is a unit; at the origin the element is neither.
 
 **Corollary (the split is the algebraic partition).** The two strata are exactly the traces on $\mathcal K$ of the three algebraic classes:
 
@@ -261,7 +261,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 
 | question | answer |
 |---|---|
-| definition | $\mathcal K=\{\langle\tilde Q\rangle_{\natural*}=0\}=\{|Q_t|=\lVert\vec Q\rVert_E\}$ |
+| definition | $\mathcal K=\{\langle\tilde Q\rangle_{\natural*}=0\}=\{|Q_t|=\lVert\vec Q\rVert\}$ |
 | descriptions | totally isotropic line; totally isotropic real plane; every non-zero point has $Q_t\neq0$ |
 | geometry | real cone of dimension $7$, smooth off the apex, $\mathcal K\setminus\{0\}\cong\mathbb{C}^{\times}\times S^5$, one orbit of $\mathrm{U}(1,3)$ |
 | strata | $\mathcal K_{\mathrm d}$: Peirce lines and the origin, dimension $4$, zero divisors; $\mathcal K_{\mathrm u}$: isotropic units, dimension $7$, open dense |
@@ -282,7 +282,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 | $\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$ | the isotropic units |
 | $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the algebraic null cone |
 | $\mathcal Z=\mathcal N\setminus\{0\}$ | the zero-divisor set |
-| $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$ | the Krein norm |
+| $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert^2$ | the Krein norm |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the algebraic norm, which decides invertibility |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |
 | $S^5$ | the unit sphere of $\mathbb{C}^3$ |

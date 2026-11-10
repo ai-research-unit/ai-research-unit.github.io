@@ -36,7 +36,7 @@ S^3 \;=\; \bigl\{ \tilde U\in\mathbb H_{\mathbb B} : \tilde U\bar{\tilde U}=e_t 
 \;=\; SU(2) ,
 $$
 
-a compact, connected, simply connected three-manifold which is simultaneously a Lie group; by *The Biquaternion Unit Group as a Topological Group* it is the group of units of the real-quaternion subspace, the double cover of $SO(3)$, and the group of rotors of the corpus's Lorentz-group article. The unit-real-quaternion condition is not the Euclidean sphere $\|\tilde Q\|_E=1$ of the full algebra, which meets the zero divisors and is not a group; it is the biquaternion-norm level set $\langle\tilde Q\rangle_{\natural}=1$ restricted to $\mathbb H_{\mathbb B}$, and it is a group precisely because $\langle\cdot\rangle_{\natural}$ is multiplicative.
+a compact, connected, simply connected three-manifold which is simultaneously a Lie group; by *The Biquaternion Unit Group as a Topological Group* it is the group of units of the real-quaternion subspace, the double cover of $SO(3)$, and the group of rotors of the corpus's Lorentz-group article. The unit-real-quaternion condition is not the Euclidean sphere $\|\tilde Q\|=1$ of the full algebra, which meets the zero divisors and is not a group; it is the biquaternion-norm level set $\langle\tilde Q\rangle_{\natural}=1$ restricted to $\mathbb H_{\mathbb B}$, and it is a group precisely because $\langle\cdot\rangle_{\natural}$ is multiplicative.
 
 **The base.** The pure-imaginary unit quaternions are
 

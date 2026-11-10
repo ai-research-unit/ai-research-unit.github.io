@@ -200,23 +200,23 @@ is the biquaternion Fourier kernel of *Biquaternion Continuous Harmonic Analysis
 
 ### The Norm of the Flow and the Three Rates
 
-The flow has a Hermitian norm, and its formula separates the three data. With $\rho=\vec Q/B$ and $\lVert\rho\rVert_E^2=\sum_\eta\lvert\rho_\eta\rvert^2$ — the Euclidean modulus sum, not the bilinear form $(\rho,\rho)=-1$ —
+The flow has a Hermitian norm, and its formula separates the three data. With $\rho=\vec Q/B$ and $\lVert\rho\rVert^2=\sum_\eta\lvert\rho_\eta\rvert^2$ — the Euclidean modulus sum, not the bilinear form $(\rho,\rho)=-1$ —
 
 $$
 \langle e^{\theta\tilde Q}\rangle_*
 =\lvert e^{\theta Q_t}\rvert^2
-\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\rho\rVert_E^2\right),
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\rho\rVert^2\right),
 \qquad
-\lVert\rho\rVert_E^2\ge1 .
+\lVert\rho\rVert^2\ge1 .
 $$
 
 | source | factor | physical name |
 | --- | --- | --- |
 | $\operatorname{Re}Q_t$ | $e^{2\theta\operatorname{Re}Q_t}$ | damping or amplification of both modes |
 | $\operatorname{Im}B$ | growth like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ | boost, or complex rate |
-| $\lVert\rho\rVert_E^2-1$ | amplitude factor, $\ge0$ | non-normality, not a rate |
+| $\lVert\rho\rVert^2-1$ | amplitude factor, $\ge0$ | non-normality, not a rate |
 
-The deficit $\lVert\rho\rVert_E^2-1$ vanishes exactly for a normal element, but it is an amplitude: a non-normal element oscillates between $1$ and $\lVert\rho\rVert_E^2$ when $B$ is real and $Q_t$ is purely imaginary. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, has $B=1$, and its norm is $1+2\sin^2\theta$. The normal element $(1+i)\vec e_x$ has $B=1+i$ and norm $\cosh2\theta$. The first is bounded and the second grows, so non-normality is not a damping mechanism.
+The deficit $\lVert\rho\rVert^2-1$ vanishes exactly for a normal element, but it is an amplitude: a non-normal element oscillates between $1$ and $\lVert\rho\rVert^2$ when $B$ is real and $Q_t$ is purely imaginary. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, has $B=1$, and its norm is $1+2\sin^2\theta$. The normal element $(1+i)\vec e_x$ has $B=1+i$ and norm $\cosh2\theta$. The first is bounded and the second grows, so non-normality is not a damping mechanism.
 
 The two physical sectors are the two real slices of the algebra on which the flow is, respectively, $*$-unitary and self-adjoint. In the material sector $\tilde Q^*=-\tilde Q$: the flow is $*$-unitary and its Hermitian norm is $1$. In the Hermitian sector $\tilde Q^*=\tilde Q$: the flow is self-adjoint and, for a normal element, its Hermitian norm is $e^{2\theta Q_t}\cosh(2\lvert B\rvert\theta)$. Normality is weaker than both and gives the orthogonal eigenbasis, not a constant norm.
 
@@ -571,7 +571,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 - The two-term writing is the mode decomposition; the terms are spectral components, not two particles; the sum of their coefficients is twice the scalar part and the product of their coefficients is the norm.
 - The eigenbasis is unique as a pair of eigenspaces and unique as a normalised Peirce basis; the vectors inside each eigenspace are a gauge.
 - The regular case is the harmonic case: $e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$ with the root $\rho=\vec Q/B$, the eigenbasis is a root-adapted Fourier basis, and the eigenvalues are the two character exponents of the flow. On the cone there is no root, and the kernel degenerates to the dual-number form $e^{\theta Q_t}(e_t+\theta\vec N)$.
-- The Hermitian norm of the flow separates three independent data: the scalar rate $\operatorname{Re}Q_t$ (damping), the imaginary half-gap $\operatorname{Im}B$ (boost), and the norm deficit $\lVert\rho\rVert_E^2-1$ (non-normality, an amplitude). Non-normality is not a damping mechanism.
+- The Hermitian norm of the flow separates three independent data: the scalar rate $\operatorname{Re}Q_t$ (damping), the imaginary half-gap $\operatorname{Im}B$ (boost), and the norm deficit $\lVert\rho\rVert^2-1$ (non-normality, an amplitude). Non-normality is not a damping mechanism.
 - The unique eigenbasis exists exactly on the spectrally regular part $B^2\neq0$; on the spectral cone there is no eigenbasis on the nilpotent and unipotent strata, and on the scalar line every basis is an eigenbasis but none is attached to the element.
 - Spectral regularity and invertibility are independent: a massless element has a mode basis and is a zero divisor; a unipotent element is a unit and has no mode basis.
 - For $B^2\neq0$ the regular set is open and dense, and the spectral cone is a complex hypersurface of real codimension two.
@@ -598,7 +598,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ |
 | $J_{\tilde Q}=L_{\vec Q}/B$ | the internal complex structure, defined for $B^2\neq0$ |
 | $\rho=\vec Q/B$ | the pure root of $-1$ of the regular case, $\rho^2=-e_t$ |
-| $\lVert\rho\rVert_E^2=\sum_\eta\lvert\rho_\eta\rvert^2$ | Euclidean square of the root, $\ge1$; not the bilinear form $(\rho,\rho)=-1$ |
+| $\lVert\rho\rVert^2=\sum_\eta\lvert\rho_\eta\rvert^2$ | Euclidean square of the root, $\ge1$; not the bilinear form $(\rho,\rho)=-1$ |
 | $W(t,\omega)=\exp(-2\pi\rho\omega t)$ | the biquaternion Fourier kernel |
 | $N_{\tilde Q}=L_{\vec Q}$ | the nilpotent part of the operator, $N_{\tilde Q}^2=0$ when $B^2=0$ |
 | $\vec{Ζ}=-i\vec Q/B$ | the root of $+1$ of the regular case, $\vec{Ζ}^2=e_t$ |

@@ -115,10 +115,10 @@ the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{Q}
 **Theorem (the Frobenius norm).** On the diagonal,
 
 $$
-\langle\tilde{Q},\tilde{Q}\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr) = \tfrac12\bigl\lVert \mathsf{M}_2(\tilde{Q})\bigr\rVert_F^2 = \sum_\mu|Q_\mu|^2 = \lVert\tilde{Q}\rVert_E^2 ,
+\langle\tilde{Q},\tilde{Q}\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr) = \tfrac12\bigl\langle \mathsf{M}_2(\tilde{Q})\\bigr\rangle_* = \sum_\mu|Q_\mu|^2 = \lVert\tilde{Q}\rVert^2 ,
 $$
 
-so that $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$, and the Hilbert–Schmidt inner product of the matrix algebra is one half of the squared Frobenius norm.
+so that $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\,\lVert\tilde{Q}\rVert$, and the Hilbert–Schmidt inner product of the matrix algebra is one half of the squared Frobenius norm.
 
 **Theorem (the trace and the determinant of a value).** For all biquaternions,
 
@@ -137,10 +137,10 @@ the trace of a value twice its Hermitian form and the determinant of a value the
 **Proposition (the scale of the realization).** For every biquaternion,
 
 $$
-\bigl\|\mathsf{M}_2(\tilde{Q})\bigr\|_F=\sqrt{2}\,\bigl\|\tilde{Q}\bigr\|_E ,
+\bigl\langle \mathsf{M}_2(\tilde{Q})\bigr\rangle_*^{1/2}=\sqrt{2}\,\bigl\|\tilde{Q}\bigr\| ,
 $$
 
-so $\mathsf{M}_2$, regarded as a real-linear map $\mathbb{B}_{\mathbb{R}}\to M_2(\mathbb{C})_{\mathbb{R}}\cong\mathbb{R}^{8}$, is bijective and multiplies all lengths by the fixed constant $\sqrt2$. The scale $\sqrt2$ is the trace normalisation $\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_t$, and with the normalised map $\mathsf{M}_2/\sqrt2$ the two norms agree, $\lVert \mathsf{M}_2(\tilde{Q})/\sqrt2\rVert_F=\lVert\tilde{Q}\rVert_E$.
+so $\mathsf{M}_2$, regarded as a real-linear map $\mathbb{B}_{\mathbb{R}}\to M_2(\mathbb{C})_{\mathbb{R}}\cong\mathbb{R}^{8}$, is bijective and multiplies all lengths by the fixed constant $\sqrt2$. The scale $\sqrt2$ is the trace normalisation $\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_t$, and with the normalised map $\mathsf{M}_2/\sqrt2$ the two norms agree, $\langle \mathsf{M}_2(\tilde{Q})/\sqrt2\rangle_*^{1/2}=\lVert\tilde{Q}\rVert$.
 
 ## The Unit Group in Matrix Form
 
@@ -166,7 +166,7 @@ the last Hermitian as the congruence action requires.
 
 ## Worked Examples
 
-**A definite element.** Let $\tilde{Q}=e_t+i\vec e_x$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{*}=|1|^2+|i|^2=2$ and $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=2=\sqrt2\cdot\sqrt2$; the element is a zero divisor of the plain product, yet it is not isotropic for the general plain sesquilinear form, and its matrix is singular.
+**A definite element.** Let $\tilde{Q}=e_t+i\vec e_x$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{*}=|1|^2+|i|^2=2$ and $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=2=\sqrt2\cdot\sqrt2$; the element is a zero divisor of the plain product, yet it is not isotropic for the general plain sesquilinear form, and its matrix is singular.
 
 **A Hermitian element.** Let $\tilde{Q}=e_t+i\vec e_z$, so $Q_t=1$, $Q_z=i$. Then the coefficients of $\tilde{Q}^{*}$ are $\varepsilon_\mu\overline{Q_\mu}=(1,0,0,(-1)(-i))=Q_\mu$, so $\tilde{Q}^{*}=\tilde{Q}$ and the element is Hermitian; in the model $\mathsf{M}_2(\tilde{Q})=I+\sigma_3=\operatorname{diag}(2,0)$, a Hermitian matrix, and $\langle\tilde{Q},\tilde{Q}\rangle_{*}=2=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}))$.
 
@@ -210,7 +210,7 @@ Hermitian of square itself; the other rank-one idempotents of the multiplication
 
 ## Summary
 
-The $2\times2$ realization turns the Hermitian conjugation into the conjugate transpose, so the sesquilinear product is the matrix product with the conjugate transpose in the second slot, $\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)^{\dagger}$, with the identity matrix as a right unit alone (the left action of the unit is the conjugate transpose) and the Hermitian subspace the Hermitian matrices. The ternary product is the middle model $XY^{\dagger}Z$, the associator is $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$, the two-sided operator is $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$, and the idempotents are the Hermitian idempotents, whose matrix images are $0$, $I$ and the orthogonal projections onto the lines of $\mathbb{C}^{2}$, the rank-one ones forming $\mathbb{CP}^{1}$; the multiplication is simple with centre $\mathbb{C}I$, and the rank of an element is the rank of its matrix. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2))=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$, whose diagonal is the definite norm, $\tfrac12\lVert \mathsf{M}_2(\tilde{Q})\rVert_F^2=\sum_\mu|Q_\mu|^2$, with $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert_E$; it is positive definite of signature $(8,0)$, of null set $\{0\}$. Its isometry group is $\mathrm{U}(4)$, with isometric algebra automorphisms $PU(2)$; the units are $GL_2(\mathbb{C})$, the norm-one group is $SL_2(\mathbb{C})$, and the $*$-unitary slice is $\mathrm{U}(2)$ with special part $SU(2)\cong\mathrm{Spin}(3)$. The determinant of a value is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\overline{\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}}$ and its trace is $2\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$; the realization has scale $\sqrt2$, $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$.
+The $2\times2$ realization turns the Hermitian conjugation into the conjugate transpose, so the sesquilinear product is the matrix product with the conjugate transpose in the second slot, $\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)^{\dagger}$, with the identity matrix as a right unit alone (the left action of the unit is the conjugate transpose) and the Hermitian subspace the Hermitian matrices. The ternary product is the middle model $XY^{\dagger}Z$, the associator is $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$, the two-sided operator is $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$, and the idempotents are the Hermitian idempotents, whose matrix images are $0$, $I$ and the orthogonal projections onto the lines of $\mathbb{C}^{2}$, the rank-one ones forming $\mathbb{CP}^{1}$; the multiplication is simple with centre $\mathbb{C}I$, and the rank of an element is the rank of its matrix. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2))=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$, whose diagonal is the definite norm, $\tfrac12\langle \mathsf{M}_2(\tilde{Q})\rangle_*=\sum_\mu|Q_\mu|^2$, with $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\lVert\tilde{Q}\rVert$; it is positive definite of signature $(8,0)$, of null set $\{0\}$. Its isometry group is $\mathrm{U}(4)$, with isometric algebra automorphisms $PU(2)$; the units are $GL_2(\mathbb{C})$, the norm-one group is $SL_2(\mathbb{C})$, and the $*$-unitary slice is $\mathrm{U}(2)$ with special part $SU(2)\cong\mathrm{Spin}(3)$. The determinant of a value is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\overline{\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}}$ and its trace is $2\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$; the realization has scale $\sqrt2$, $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\,\lVert\tilde{Q}\rVert$.
 
 ## Summary of Notation
 
@@ -224,7 +224,7 @@ The $2\times2$ realization turns the Hermitian conjugation into the conjugate tr
 | $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi)=\mathsf{M}_2(\tilde\Pi)^{2}$ | the idempotents are Hermitian; their matrices are the orthogonal projections |
 | $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2))=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$ | the general plain sesquilinear form as the Hilbert–Schmidt pairing |
 | $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=2\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$, $\det \mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\overline{\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}}$ | the trace and the determinant of a value |
-| $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$ | the scale of the realization |
+| $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\,\lVert\tilde{Q}\rVert$ | the scale of the realization |
 | $\mathrm{U}(4)$, $PU(2)$ | the isometry group and its algebra automorphisms |
 
 ## Further Reading

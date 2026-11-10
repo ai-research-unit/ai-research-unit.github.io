@@ -17,7 +17,7 @@ A=V\Sigma W^*,\qquad \Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5),
 \qquad \sigma_1\ge\cdots\ge\sigma_5\ge0,
 $$
 
-with $V,W$ $*$-unitary. The numbers $\sigma_k$ are the **singular values**, the eigenvalues of $|A|$. They give the operator norm $\|A\|=\sigma_1$, the Frobenius norm $\|A\|_F=\sqrt{\sum_k\sigma_k^2}$, the determinant $|\det A|=\prod_k\sigma_k$, and the condition number $\sigma_1/\sigma_5$ for an invertible $A$.
+with $V,W$ $*$-unitary. The numbers $\sigma_k$ are the **singular values**, the eigenvalues of $|A|$. They give the operator norm $\|A\|=\sigma_1$, the Frobenius norm $\langle A\rangle_*^{1/2}=\sqrt{\sum_k\sigma_k^2}$, the determinant $|\det A|=\prod_k\sigma_k$, and the condition number $\sigma_1/\sigma_5$ for an invertible $A$.
 
 The polar decomposition is also the **geometry of $GL_5$**: the map
 
@@ -125,7 +125,7 @@ with $V,W$ $*$-unitary and $\Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5)$
 
 $$
 \|A\|=\sigma_1,\qquad
-\|A\|_F=\sqrt{\sigma_1^2+\cdots+\sigma_5^2},\qquad
+\langle A\rangle_*^{1/2}=\sqrt{\sigma_1^2+\cdots+\sigma_5^2},\qquad
 |\det A|=\sigma_1\cdots\sigma_5 .
 $$
 
@@ -190,7 +190,7 @@ $$
 and the distance is
 
 $$
-d(P,Q)=\left\|\log\left(P^{-1/2}QP^{-1/2}\right)\right\|_F .
+d(P,Q)=\left\langle \log\left(P^{-1/2}QP^{-1/2}\right)\right\rangle_*^{1/2} .
 $$
 
 **Proof.** The geodesics of the symmetric space $\mathcal{P}$ are the images of the one-parameter subgroups $t\mapsto P^{1/2}e^{tS}P^{1/2}$ with $S$ Hermitian; the endpoint condition at $t=1$ determines $S=\log(P^{-1/2}QP^{-1/2})$. The distance is the length of the geodesic, which is the Frobenius norm of $S$ because the metric is the trace metric.
@@ -247,7 +247,7 @@ $$
 \boxed{\ A=U|A|=V\Sigma W^*;\quad \|A\|=\sigma_1;\quad |\det A|=\prod_k\sigma_k;\quad GL_5\cong U(5)\times\mathcal{P}.\ }
 $$
 
-The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type, with geodesics $P^{1/2}(P^{-1/2}QP^{-1/2})^tP^{1/2}$ and distance $\|\log(P^{-1/2}QP^{-1/2})\|_F$. For singular $A$, the positive part and the singular values are unique, and the partial isometry is unique only on the range.
+The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type, with geodesics $P^{1/2}(P^{-1/2}QP^{-1/2})^tP^{1/2}$ and distance $\langle \log(P^{-1/2}QP^{-1/2})\rangle_*^{1/2}$. For singular $A$, the positive part and the singular values are unique, and the partial isometry is unique only on the range.
 
 | Object | Formula |
 |---|---|

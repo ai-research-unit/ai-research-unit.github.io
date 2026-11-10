@@ -37,7 +37,7 @@ $$
 J_\nu(\tilde{Q}) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \, \Gamma(m + \nu + 1)} \left(\frac{\tilde{Q}}{2}\right)^{2m+\nu}.
 $$
 
-For integer order the series converges for every $\tilde{Q} \in \mathbb{B}_{\mathrm{spl}}$, its terms decaying like $\|\tilde{Q}\|_E^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{C}_{\mathrm{spl}}$), since $\mathbb{C}_{\mathrm{spl}}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.
+For integer order the series converges for every $\tilde{Q} \in \mathbb{B}_{\mathrm{spl}}$, its terms decaying like $\|\tilde{Q}\|^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{C}_{\mathrm{spl}}$), since $\mathbb{C}_{\mathrm{spl}}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.
 
 ### Computation via the Idempotent Decomposition
 
@@ -165,7 +165,7 @@ $$
 {}_2F_1(a, b; c; \tilde{Q}) = \sum_{n=0}^{\infty} \frac{(a)_n (b)_n}{(c)_n} \frac{\tilde{Q}^n}{n!},
 $$
 
-where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}_{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\|_E < 1$.
+where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}_{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\| < 1$.
 
 ### Computation via the Idempotent Decomposition
 
@@ -308,7 +308,7 @@ are the split biquaternion analogues of holomorphic functions and harmonic funct
 The **Cauchy kernel** is the fundamental solution of the gradient:
 
 $$
-G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4}, \qquad \tilde{Q} \neq 0.
 $$
 
 It satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:
@@ -324,7 +324,7 @@ where $G_{\mathrm{fn}}(\tilde{Q}_\pm)$ is the quaternion Cauchy kernel of the co
 The **Poisson kernel** for the ball of radius $r$ is
 
 $$
-P(\tilde{Q}, \tilde Q_1) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde Q_1\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde Q_1\|_E = r.
+P(\tilde{Q}, \tilde Q_1) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde Q_1\|^4}, \qquad \|\tilde{Q}\| < r, \quad \|\tilde Q_1\| = r.
 $$
 
 It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomposes in the idempotent basis into the quaternion Poisson kernels of the two components.
@@ -407,7 +407,7 @@ The split biquaternion special functions are therefore a partially developed sub
 | ${}_2F_1, {}_pF_q$ | Gauss and generalized hypergeometric functions |
 | $\Gamma$ | Gamma function |
 | $\omega$ | Riemann zeta function |
-| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
 | $P(\tilde{Q}, \tilde Q_1)$ | Poisson kernel |
 | $G(\tilde Q, \tilde Q_1)$ | Green's function |
 

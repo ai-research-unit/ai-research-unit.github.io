@@ -54,13 +54,13 @@ $$
 d_{B}^{2}(Q,C)=\operatorname{Re}\langle Q-C,Q-C\rangle=(q-c)^{2}+(q'-c')^{2}.
 $$
 
-It is the diagonal of the realified bilinear form read on the difference $Q-C$, and it is the square of the Euclidean norm of the difference, $\lVert Q-C\rVert_{E}^{2}$ (*Norm and Invertibility in the General Split-Complex Algebra*).
+It is the diagonal of the realified bilinear form read on the difference $Q-C$, and it is the square of the Euclidean norm of the difference, $\lVert Q-C\rVert^{2}$ (*Norm and Invertibility in the General Split-Complex Algebra*).
 
 **Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $Q=C$. Its Gram matrix is $\mathrm{I}_{2}$ and its signature is $(2,0)$; the only null difference is the zero difference.
 
 *Proof.* The expression $(q-c)^{2}+(q'-c')^{2}$ is a sum of two squares of reals, hence non-negative and zero only when both differences vanish, that is when $Q=C$. The Gram matrix was computed in the previous section.
 
-**Proposition (it is a genuine distance).** The function $d_{B}(Q,C)=\lVert Q-C\rVert_{E}$ is symmetric, vanishes exactly on the diagonal, and satisfies the triangle inequality. These are the properties of the Euclidean norm of the difference (*Norm and Invertibility in the General Split-Complex Algebra*), the norm that organises the plane of *Split-Complex Topology*.
+**Proposition (it is a genuine distance).** The function $d_{B}(Q,C)=\lVert Q-C\rVert$ is symmetric, vanishes exactly on the diagonal, and satisfies the triangle inequality. These are the properties of the Euclidean norm of the difference (*Norm and Invertibility in the General Split-Complex Algebra*), the norm that organises the plane of *Split-Complex Topology*.
 
 The level sets are the circles: $d_{B}(Q,C)=r$ is the Euclidean circle of radius $r$ about $C$. The form is definite, so there is no null cone beyond the point $Q=C$.
 
@@ -182,7 +182,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 | $\langle Q,C\rangle_{*}=Q\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$, indefinite |
 | $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ | the realified bilinear form, the Euclidean form $\langle Q,C\rangle$; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
 | $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
-| $d_{B}^{2}(Q,C)=\lVert Q-C\rVert_{E}^{2}$ | Euclidean metric; positive definite; level sets the circles |
+| $d_{B}^{2}(Q,C)=\lVert Q-C\rVert^{2}$ | Euclidean metric; positive definite; level sets the circles |
 | $d_{H}^{2}(Q,C)=\langle Q-C\rangle_{*}$ | indefinite metric; signature $(1,1)$; level sets the hyperbolas |
 | $q-c=\pm(q'-c')$ | the null pair of lines of the indefinite metric |
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}B$; the group $O(2)$ |

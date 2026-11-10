@@ -4,7 +4,7 @@
 
 This article develops Fueter theory in the quaternionic and biquaternionic setting: the Fueter operator, the regular functions it defines, and the construction that produces them from holomorphic functions of one complex variable. It follows the articles on biquaternion analysis and on biquaternion analysis on subspaces, where $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$ and the d'Alembertian $\Box$ were defined; the article on biquaternion integration, for the fundamental solution and the Cauchy integral formula; and the articles on biquaternion norm and invertibility and on biquaternion zero divisors, for invertibility failure on the null cone.
 
-The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the scalar imaginary is $i$, and a biquaternion is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. On the quaternion subspace $\mathbb{B}_{H}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, $\rho = \|\vec q\|_E$. The subspaces $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{iH}$ are as in the article on biquaternion analysis on subspaces.
+The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the scalar imaginary is $i$, and a biquaternion is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. On the quaternion subspace $\mathbb{B}_{H}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, $\rho = \|\vec q\|$. The subspaces $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{iH}$ are as in the article on biquaternion analysis on subspaces.
 
 ## The Fueter Operator
 
@@ -190,7 +190,7 @@ Three hypotheses are needed, and none can be dropped. First, $f_0$ must be **hol
 
 ## Power Series Representations
 
-A series with biquaternionic coefficients placed on the right, $f(\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^n a_n$, converges absolutely on $\|\tilde{Q}\|_E < R$ with $R^{-1} = \limsup_n \|a_n\|_E^{1/n}$, because $\|\tilde{Q}^n\|_E = \|\tilde{Q}\|_E^n$. Its sum is **slice-regular**, or Cullen-regular: holomorphic on each slice. Slice-regular functions form a different class from the Fueter-regular ones; for example, $\tilde{Q} \mapsto \tilde{Q}$ is slice-regular, but
+A series with biquaternionic coefficients placed on the right, $f(\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^n a_n$, converges absolutely on $\|\tilde{Q}\| < R$ with $R^{-1} = \limsup_n \|a_n\|^{1/n}$, because $\|\tilde{Q}^n\| = \|\tilde{Q}\|^n$. Its sum is **slice-regular**, or Cullen-regular: holomorphic on each slice. Slice-regular functions form a different class from the Fueter-regular ones; for example, $\tilde{Q} \mapsto \tilde{Q}$ is slice-regular, but
 
 $$
 \tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0.
@@ -202,7 +202,7 @@ For real Taylor coefficients, $f_{\mathrm{ax},0}(\tilde{Q}) = \sum_{n \ge 0} a_n
 
 ## The Biquaternionic Case
 
-On $\mathbb{B}_{H}$ the theory is the classical one with biquaternion coefficients, since the quaternion subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive-definite, so every nonzero element is invertible. The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 0$ off the origin and $\tilde{\nabla}G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ distributionally, so the only singularity of the Cauchy theory is the point $\tilde{Q} = 0$.
+On $\mathbb{B}_{H}$ the theory is the classical one with biquaternion coefficients, since the quaternion subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive-definite, so every nonzero element is invertible. The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 0$ off the origin and $\tilde{\nabla}G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ distributionally, so the only singularity of the Cauchy theory is the point $\tilde{Q} = 0$.
 
 On $\mathbb{B}_{iH}$ the theory is the same, up to the constant central factor by which the two gradients differ. Every coefficient there is purely imaginary, so the gradient is $\tilde{\nabla}_{i\mathbb{H}} = -i\,\tilde{\nabla}_{\mathbb{H}}$ in the same four coordinates; since $-i$ is an invertible central constant, $\tilde{\nabla}_{i\mathbb{H}}F_{\mathrm{fn}} = 0$ if and only if $\tilde{\nabla}_{\mathbb{H}}F_{\mathrm{fn}} = 0$. The left- and right-regular functions are therefore the same class as on $\mathbb{B}_{H}$, and the Cauchy kernel is the kernel of $\mathbb{B}_{H}$ multiplied by $i$. Only the second-order operator changes sign, $\tilde{\nabla}\tilde{\nabla}^{\natural} = -\Delta_4 e_t$; its solutions are again the ordinary harmonic functions, so the harmonicity, the mean value property, and the monogenic Taylor expansion carry over unchanged. In this sense $\mathbb{B}_{iH}$ adds no new case to Fueter theory: it is the definite counterpart of $\mathbb{B}_{H}$, as $\mathbb{B}_{\Psi}$ is the indefinite counterpart of $\mathbb{B}_{\Phi}$.
 
@@ -224,7 +224,7 @@ The Fueter construction sends a holomorphic $f_0$ to the induced function $F_{\m
 | $\mathbb{B}_{H}$ | Quaternion subspace, with real coordinates $q_\mu$; the domain of Fueter theory |
 | $\mathbb{B}_{iH}$ | Anti-quaternion subspace, all coefficients purely imaginary; regularity is the same class as on $\mathbb{B}_{H}$, with $\Box = -\Delta_4 e_t$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternion; $\tilde{Q} = \sum_\mu q_\mu e_\mu$ on $\mathbb{B}_{H}$ |
-| $\vec q = \sum_k q_k \vec e_k$, $\rho = \|\vec q\|_E$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, and its direction |
+| $\vec q = \sum_k q_k \vec e_k$, $\rho = \|\vec q\|$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, and its direction |
 | $\tilde{\nabla} = \partial/\partial Q_t + \vec D$, $\vec D = \sum_{\mu\in\{x,y,z\}} \vec e_\mu \partial/\partial Q_\mu$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
 | $\tilde{\nabla}^{\natural} = \partial/\partial Q_t - \vec D$ | Conjugate Fueter operator |
 | $\Delta_4 = \sum_\mu \partial^2/\partial Q_\mu^2$ | Four-dimensional Laplacian; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_t$ |

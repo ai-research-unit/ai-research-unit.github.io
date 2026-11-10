@@ -40,7 +40,7 @@ are affine: for $\tilde Q_3$ a unit they are conjugate to a linear map, their or
 | left or right $\tilde Q_3\tilde Q_1$, $\tilde Q_1\tilde Q_3$ | affine in $\tilde Q_1$ | no fractal | — |
 | matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |
 
-**Remark (why the choice is a choice).** The general plain bilinear product is the canonical multiplication of $\mathbb{B}$ once $\mathbb{B}$ is presented as a $\mathbb{C}$-algebra with the quaternion relations, so the first line of the table is the canonical reading. What is *not* canonical is the size. The algebra carries a complex-valued multiplicative norm $\langle\cdot\rangle_{\natural}$, its modulus $r=\sqrt{|N|}$, and the Euclidean norm $\|\cdot\|_E$, and no one of the three is singled out by the algebra. **The map is canonical; the norm used to define boundedness is a choice of metric, and the escape radius depends on it.** Boundedness itself does not, by the next section.
+**Remark (why the choice is a choice).** The general plain bilinear product is the canonical multiplication of $\mathbb{B}$ once $\mathbb{B}$ is presented as a $\mathbb{C}$-algebra with the quaternion relations, so the first line of the table is the canonical reading. What is *not* canonical is the size. The algebra carries a complex-valued multiplicative norm $\langle\cdot\rangle_{\natural}$, its modulus $r=\sqrt{|N|}$, and the Euclidean norm $\|\cdot\|$, and no one of the three is singled out by the algebra. **The map is canonical; the norm used to define boundedness is a choice of metric, and the escape radius depends on it.** Boundedness itself does not, by the next section.
 
 ## The Quadratic Family
 
@@ -159,7 +159,7 @@ The biquaternion quadratic family is $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde
 | $Q_t$ | the scalar part |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm, multiplicative, complex |
 | $r(\tilde Q)=\sqrt{|\langle\tilde Q\rangle_{\natural}|}$ | the unique real multiplicative semi-norm |
-| $\|\tilde Q\|_E$ | the Euclidean norm $\sqrt{\sum_\mu|Q_\mu|^2}$ |
+| $\|\tilde Q\|$ | the Euclidean norm $\sqrt{\sum_\mu|Q_\mu|^2}$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the matrix realization |
 | ${}^{\natural},\bar{\cdot},{}^{*},\flat$ | quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde Q_5$ | the biquaternion quadratic family |
