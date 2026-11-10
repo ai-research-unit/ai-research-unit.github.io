@@ -80,7 +80,7 @@ $$</p>
 $$</p>
 <p>is positive definite, and it defines the Frobenius norm</p>
 <p>$$
-\lVert A\rVert_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
+\langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
 $$</p>
 <p>The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.</p>
 <p>The article assumes the coordinates and the trace pairing of <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em>. It uses no topology beyond the finite-dimensional metric. The polar decomposition is <em>The Polar Decomposition of $M_6(\mathbb{C})$</em>; the $*$-unitary group is <em>The Exponential and the Lie Group of $M_6(\mathbb{C})$</em>; the real forms of the biquaternion algebra are <em>The Biquaternion Algebra</em>.</p>
@@ -180,7 +180,7 @@ $$</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(A^*B)=\sum_{i,j}\overline{a_{ij}}b_{ij}$, the Euclidean inner product of the entries; the conjugate symmetry is immediate, and the sum of squares vanishes only when every entry vanishes.</p>
 <p><strong>Corollary (the Frobenius norm).</strong> The form defines the <strong>Frobenius norm</strong></p>
 <p>$$
-\lVert A\rVert_F=\sqrt{\langle A,A\rangle}
+\langle A\rangle_*^{1/2}=\sqrt{\langle A,A\rangle}
 =\left(\sum_{i,j}\lvert a_{ij}\rvert^2\right)^{1/2},
 $$</p>
 <p>and the Cauchy–Schwarz and triangle inequalities hold.</p>
@@ -209,9 +209,9 @@ $$</p>
 <h3 id="the-unit-sphere">The Unit Sphere</h3>
 <p><strong>Definition.</strong> The <strong>unit sphere</strong> of $M_6(\mathbb{C})$ is</p>
 <p>$$
-S^{71}=\{A:\lVert A\rVert_F=1\}.
+S^{71}=\{A:\langle A\rangle_*^{1/2}=1\}.
 $$</p>
-<p><strong>Proposition.</strong> $S^{71}$ is a compact real manifold of dimension $71$; the unit ball is the set $\lVert A\rVert_F\le1$.</p>
+<p><strong>Proposition.</strong> $S^{71}$ is a compact real manifold of dimension $71$; the unit ball is the set $\langle A\rangle_*^{1/2}\le1$.</p>
 <p><strong>Proof.</strong> It is the Euclidean unit sphere in $\mathbb{R}^{72}$.</p>
 <p><strong>Remark (the topology is the finite-dimensional one).</strong> The Frobenius norm is equivalent to the operator norm and to every other norm on the finite-dimensional space; the metric topology is the standard one. The topological consequences are in <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-real-forms">The Real Forms</h2>
@@ -271,7 +271,7 @@ $$</p>
 <p>$$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B),\qquad \langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2,\qquad \langle A,A\rangle=0\iff A=0 .\ }
 $$</p>
-<p>The form is positive definite and defines the Frobenius norm $\lVert A\rVert_F^2=\sum_{ij}\lvert a_{ij}\rvert^2$; the unit sphere is $S^{71}$. The real part of the form is the Euclidean inner product of the $72$ real coordinates; the imaginary part is symplectic.</p>
+<p>The form is positive definite and defines the Frobenius norm $\langle A\rangle_*=\sum_{ij}\lvert a_{ij}\rvert^2$; the unit sphere is $S^{71}$. The real part of the form is the Euclidean inner product of the $72$ real coordinates; the imaginary part is symplectic.</p>
 <p>The real forms are</p>
 <p>$$
 \mathfrak{u}(6)=\{X:X^*=-X\},\qquad
@@ -313,7 +313,7 @@ $$</p>
 </tr>
 <tr>
 <td>Frobenius norm</td>
-<td>$\lVert A\rVert_F^2=\sum\lvert a_{ij}\rvert^2$</td>
+<td>$\langle A\rangle_*=\sum\lvert a_{ij}\rvert^2$</td>
 </tr>
 <tr>
 <td>Isotropic vectors</td>
@@ -355,7 +355,7 @@ $$</p>
 <td>the Hermitian trace form $\operatorname{tr}(A^*B)$</td>
 </tr>
 <tr>
-<td>$\lVert A\rVert_F$</td>
+<td>$\langle A\rangle_*^{1/2}$</td>
 <td>the Frobenius norm</td>
 </tr>
 <tr>

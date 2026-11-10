@@ -122,11 +122,11 @@ $$</p>
 <h3 id="finite-dimensions-and-hilbert-spaces">Finite Dimensions and Hilbert Spaces</h3>
 <p><strong>Example (finite-dimensional spaces).</strong> For $E = \mathbb{K}^m$ and $F = \mathbb{K}^n$ the tensor product $\mathbb{K}^m\otimes\mathbb{K}^n$ is the space $M_{m,n}(\mathbb{K})$ of $m\times n$ matrices under the identification $e_i \otimes f_j \leftrightarrow E_{ij}$, and every tensor topology on a finite-dimensional space is the same. The three norms that arise are the operator norm</p>
 <p>$$
-\lVert A\rVert = \sigma_1 , \qquad \lVert A\rVert_{\mathrm{HS}} = \Bigl(\sum_i \sigma_i^2\Bigr)^{1/2}, \qquad \lVert A\rVert_{\mathrm{nuc}} = \sum_i \sigma_i ,
+\lVert A\rVert = \sigma_1 , \qquad \langle A\rangle_*^{1/2} = \Bigl(\sum_i \sigma_i^2\Bigr)^{1/2}, \qquad \lVert A\rVert_{\mathrm{nuc}} = \sum_i \sigma_i ,
 $$</p>
 <p>where $\sigma_1 \geq \sigma_2 \geq \cdots$ are the singular values of $A$; the first is the injective norm, the third is the projective norm, and the second is the norm of the Hilbert tensor product when the factors carry their Euclidean inner products. The three norms agree only for rank-one matrices, and in general they satisfy</p>
 <p>$$
-\lVert A\rVert \leq \lVert A\rVert_{\mathrm{HS}} \leq \lVert A\rVert_{\mathrm{nuc}} .
+\lVert A\rVert \leq \langle A\rangle_*^{1/2} \leq \lVert A\rVert_{\mathrm{nuc}} .
 $$</p>
 <p>The chain of inequalities is the elementary comparison $\sigma_1 \leq (\sum_i\sigma_i^2)^{1/2} \leq \sum_i\sigma_i$ of the singular values; the identity matrix has the three norms $1$, $\sqrt2$ and $2$, so the inequalities are strict simultaneously, and the second is an equality exactly when the rank is at most one. The same computation identifies the Hilbert tensor product of the Euclidean spaces with $M_{m,n}$ carrying the Hilbert–Schmidt norm.</p>
 <p><strong>Definition.</strong> Let $H_1$, $H_2$ be Hilbert spaces. The <strong>Hilbert tensor product</strong> $H_1\widehat{\otimes}H_2$ is the completion of the algebraic tensor product for the inner product</p>
@@ -214,7 +214,7 @@ $$</p>
 <td>Trace duality $(E\widehat{\otimes}_\pi F)'\cong\mathcal{B}(E,F')$</td>
 </tr>
 <tr>
-<td>$\sigma_i$, $\lVert A\rVert$, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$</td>
+<td>$\sigma_i$, $\lVert A\rVert$, $\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{\mathrm{nuc}}$</td>
 <td>Singular values and the three matrix norms</td>
 </tr>
 <tr>

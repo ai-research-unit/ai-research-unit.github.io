@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativistic Wigner Function and Quantum Kinetics — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativistic-wigner-function-and-quantum-kinetics"><strong>Relativistic Wigner Function and Quantum Kinetics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The kinetic equation of this article is the $\hbar$-expansion of the Wigner element of the preceding one, and its content is two terms: a classical drift and a correction at order $\hbar^{2}$.</strong> Nothing else is derived. The drift moves the phase-space density along the flow's worldlines; the correction, a third derivative in momentum weighted by the third derivative of the potential, is the first place the expansion differs from the classical transport equation.</p>
+<p><strong>This article is <a href="the-wigner-function-in-biquaternionic-form.html">The Wigner Function in Biquaternionic Form</a> differentiated in time and expanded in $\hbar$.</strong> The definition of $\tilde W_\Xi$, its marginals, its classical limit and its negativity are that article's and are not restated. What is new here is the equation the element satisfies, the order at which the equation departs from the classical one, and the moments at which that departure shows.</p>
+<p><strong>The kinetic equation and its collision structure are the corpus's already, and are cited, not repeated.</strong> <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a> owns the closed-time-path contour, the branch doubling, the Keldysh rotation, the matrix of Green's functions, the Kadanoff–Baym equations and their collision term. This article treats the <em>collisionless</em> equation — the one whose only content is the free drift plus the $\hbar^{2}$ term — and says so at every point where a reader might expect a collision integral. The two articles fit together as follows: the Schwinger–Keldysh article gives the equation <em>with</em> self-energies, and this one gives the free part of it at the order where the quantum correction first appears.</p>
+<p><strong>The order of business.</strong> The expansion is set up first, from the Moyal bracket, with the operator that generates it and the counting that organises it. Then the zeroth order, which is the classical drift, in the letters of the corpus and on the mass shell. Then the order-$\hbar^{2}$ term, its moments, and the two exact statements that can be made about it: it vanishes for a quadratic potential, and its first nonzero moment is the third. Then the relativistic bookkeeping, in which the temporal coordinate is a length. Then a short section on what the Kadanoff–Baym structure supplies and what this article deliberately leaves to it. The article closes with the status section, the summary, and the notation.</p>
+<h2 id="where-the-expansion-comes-from">Where the Expansion Comes From</h2>
+<h3 id="the-moyal-bracket-in-one-display">The Moyal bracket, in one display</h3>
+<p><strong>The Wigner element's time derivative is the Moyal bracket of the Hamiltonian element with the Wigner element.</strong> Write the Hamiltonian of the scalar field's non-relativistic reduction as the element built from the operator</p>
+<p>$$
+\hat H=\frac{\lvert\hat{\vec p}\rvert^{2}}{2m}+V(\hat r),
+$$</p>
+<p>and let $H(r,\vec p)=\lvert\vec p\rvert^{2}/(2m)+V(r)$ be its symbol. Then the exact equation for the Wigner function is</p>
+<p>$$
+\frac{\partial W}{\partial t}=\frac{2}{\hbar}\sin\!\left(\frac{\hbar}{2}\Lambda\right)\bigl(H\,W\bigr),
+\qquad
+\Lambda=\overleftarrow{\frac{\partial}{\partial r_\eta}}\overrightarrow{\frac{\partial}{\partial p_\eta}}
+-\overleftarrow{\frac{\partial}{\partial p_\eta}}\overrightarrow{\frac{\partial}{\partial r_\eta}},
+$$</p>
+<p>with the summation over the spatial index $\eta$ understood and every index low, as the corpus's metric $\delta_{\mu\nu}$ requires. The operator $\Lambda$ is antisymmetric and it acts on the product $HW$, differentiating the first factor to the left and the second to the right.</p>
+<p><strong>The structure of the display is worth reading before the expansion.</strong> The sine is what makes the equation exact: it is the whole of the difference between quantum and classical transport, written as a power series in $\hbar\Lambda/2$. Expanding the sine gives the series whose first term is the Poisson bracket and whose next term is the order-$\hbar^{2}$ correction. Nothing is dropped in the display; what is dropped later is dropped explicitly and with a stated reason.</p>
+<h3 id="the-counting">The counting</h3>
+<p><strong>Each application of $\Lambda$ to $HW$ brings one power of $\hbar$ in the expansion, and the reason is that one of its two derivatives must fall on $W$.</strong> The symbol $W$ varies on the scale of the state's phase-space structure, so a momentum derivative of it is of order $1/\Delta p$ and a position derivative of order $1/\Delta r$; the product $\Delta r\,\Delta p$ is of order $\hbar$ for a state near the uncertainty limit. So $\hbar\Lambda$ acting on $HW$ is of order one, and the series is a series in the <em>smallness of the state relative to the scale on which the potential varies</em> — the gradient expansion — rather than a series in a numeric small parameter.</p>
+<p><strong>Two consequences of the counting, both standard.</strong> First, the series terminates at a finite order when $V$ is a polynomial, because a derivative of $V$ eventually vanishes. Second, the first correction is not universal: it is the first term of a gradient expansion, and its size is set by how fast the potential varies across the state. A state spread over a region where the potential is quadratic has no correction at any order, which is the statement of the next section's exactness result.</p>
+<h3 id="the-coefficient-and-how-it-was-checked">The coefficient, and how it was checked</h3>
+<p><strong>The order-$\hbar^{2}$ term of the sine expansion carries the coefficient $1/24$ and the third derivative of the potential.</strong> From $\sin z=z-z^{3}/6+\cdots$ with $z=\hbar\Lambda/2$,</p>
+<p>$$
+\frac{2}{\hbar}\sin\!\left(\frac{\hbar}{2}\Lambda\right)
+=\Lambda-\frac{\hbar^{2}}{24}\Lambda^{3}+\mathcal{O}(\hbar^{4}),
+$$</p>
+<p>so the equation reads</p>
+<p>$$
+\boxed{\;
+\frac{\partial W}{\partial t}=\Lambda(HW)-\frac{\hbar^{2}}{24}\Lambda^{3}(HW)+\mathcal{O}(\hbar^{4})
+\;}
+$$</p>
+<p>and the whole of the $\hbar^{2}$ correction is the second term.</p>
+<p><strong>The coefficient and the structure were checked symbolically, not remembered.</strong> Applying the bidifferential operator three times to the pair $(H,W)$ with $H=\lvert\vec p\rvert^{2}/(2m)+V(r)$ and a general symbol $W(r,\vec p)$, only one of the eight ordered terms survives, because every term in which a derivative falls on $\lvert\vec p\rvert^{2}/(2m)$ either exceeds second order in momentum or carries a position derivative that the momentum monomial cannot supply. The surviving term is</p>
+<p>$$
+\Lambda^{3}(H,W)=\frac{\partial^{3}V}{\partial r_\eta^{3}}\,
+\frac{\partial^{3}W}{\partial p_\eta^{3}},
+$$</p>
+<p>with the sum over $\eta$, <strong>and the identity is exact rather than leading</strong>: a computer-algebra evaluation of the four surviving monomials returns $\Lambda^{3}(H,W)-V'''\partial_{p}^{3}W=0$ as an identity in $W$. The expansion of the sine is therefore not a gradient approximation at this order — for a Hamiltonian at most quadratic in momentum, the third-order term is precisely the third derivative of the potential times the third momentum derivative of the Wigner element.</p>
+<p><strong>This is worth one sentence of explanation, because it is not an accident.</strong> The operator $\Lambda$ is antisymmetric and each of its two derivatives must fall on a different factor; three applications distribute six derivatives between $H$ and $W$, and the momentum monomial in $H$ can absorb at most two on its side. So the only term that survives is the one where all three of $H$'s derivatives fall on $V$ and all three of $W$'s on momentum. The truncation at this order is thus exact for the free-plus-potential Hamiltonian, and the $\mathcal{O}(\hbar^{4})$ remainder is the term with five derivatives, which is where the potential's fifth derivative would appear.</p>
+<h2 id="the-zeroth-order-the-classical-drift">The Zeroth Order: the Classical Drift</h2>
+<h3 id="the-drift-equation">The drift equation</h3>
+<p><strong>At order $\hbar^{0}$ the equation says that the phase-space density is constant along the classical flow.</strong> With $\Lambda(HW)=\{H,W\}$ the Poisson bracket,</p>
+<p>$$
+\frac{\partial W}{\partial t}+\frac{p_\eta}{m}\frac{\partial W}{\partial r_\eta}
+-\frac{\partial V}{\partial r_\eta}\frac{\partial W}{\partial p_\eta}=0 .
+$$</p>
+<p><strong>The three terms are one statement written three ways.</strong> The first is the rate of change at a fixed phase-space point; the second is the transport of the density by the flow's velocity $\vec p/m$; the third is the change produced by the force. Their sum being zero says that the density at a point moving with the flow does not change — the statement that the flow of a collisionless fluid in phase space is incompressible.</p>
+<p><strong>Why incompressible, in one line.</strong> The phase-space velocity is $(\vec p/m,-\nabla V)$, and its divergence is $\partial_\eta(p_\eta/m)+\partial(-\partial_\eta V)/\partial p_\eta=0$ because the first term has no $r_\eta$ and the second no $p_\eta$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\mu\nu}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.</p>
+<h3 id="the-characteristics-and-the-corpuss-flow">The characteristics, and the corpus's flow</h3>
+<p><strong>The characteristics of the drift equation are the flow's worldlines, and this is where the hydrodynamic and the kinetic descriptions meet.</strong> The characteristic equations are</p>
+<p>$$
+\frac{d r_\eta}{d t}=\frac{p_\eta}{m},
+\qquad
+\frac{d p_\eta}{d t}=-\frac{\partial V}{\partial r_\eta},
+$$</p>
+<p>which are Newton's equations for a particle of mass $m$. Written with the corpus's velocity element, the first is $v_{\Phi,\eta}=p_{\Phi,\eta}/m$ with the index low, and the second is the statement that the force changes the momentum and hence the rapidity.</p>
+<p><strong>The identification is the content of <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>'s remark that the flow is not a gradient.</strong> A Wigner element supported on a single characteristic is the phase-space image of a fluid element, and the fluid's velocity field is the projection of the characteristic's velocity. When the element is supported on a <em>family</em> of characteristics, the projection is a flow with vorticity unless the family is a gradient family — which is exactly the distinction the spin-fluid article draws between the scalar case (a gradient, closed) and the spinor case (not a gradient, vortical). The kinetic picture makes the distinction visible: two Wigner elements with the same density and the same mean velocity but different velocity spreads have different vorticity in their projected flows.</p>
+<h3 id="the-corpuss-letters-for-the-drift">The corpus's letters for the drift</h3>
+<p><strong>The drift term's letters are the polar form's, with the factor $c$ where the length coordinate requires it.</strong> Since $r'_t$ is a length and the temporal derivative acts through the material sector's imaginary direction, the time derivative is $c\,\partial/\partial r'_t$ in the units of the corpus, and the drift equation becomes</p>
+<p>$$
+c\,\frac{\partial W}{\partial r'_t}
++\frac{p_\eta}{m}\frac{\partial W}{\partial r_\eta}
+-\frac{\partial V}{\partial r_\eta}\frac{\partial W}{\partial p_\eta}=0 .
+$$</p>
+<p><strong>The factor of $c$ is the corpus's rule for a rate against a length</strong>, the same rule that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ in the polar-form article. A reader who writes $\partial/\partial r'_t$ without the $c$ has produced a dimensionally inconsistent equation and will find the drift speed off by that factor against the polar form's velocity. This is the single place where the corpus's units bite in this article, and it is worth stating plainly.</p>
+<h3 id="on-the-mass-shell-and-off-it">On the mass shell, and off it</h3>
+<p><strong>The Wigner element is defined off the mass shell, and the physical states populate a shell whose width is the quantum potential.</strong> The transform of article 4 integrates over all $\vec p$, so $\tilde W_\Xi$ has support wherever the overlap of the two field values has support — in general a neighbourhood of the shell and not the shell itself. The shell is not the classical one: the polar-form article's modification is</p>
+<p>$$
+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2m\,Q_{\mathrm{qnt}},
+\qquad
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+$$</p>
+<p>so the width of the shell is set by $Q_{\mathrm{qnt}}$, which is itself of order $\hbar^{2}$.</p>
+<p><strong>The two $\hbar^{2}$'s are the same $\hbar^{2}$, and this is the article's central observation.</strong> The kinetic equation's correction is of order $\hbar^{2}$ and the shell's broadening is of order $\hbar^{2}$, and they are two readings of one fact: the state is not a point in phase space. The on-shell reading says that the energy of a fluid element at momentum $\vec p$ differs from the classical value by $Q_{\mathrm{qnt}}$; the off-shell reading says that the phase-space density is not supported on the classical shell. <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a> uses the first reading for the pressure and this article uses the second for the transport; the two must agree, and the agreement is checked in the equilibrium section below.</p>
+<h2 id="the-correction-at-order-math83">The Correction at Order $\hbar^{2}$</h2>
+<h3 id="the-equation">The equation</h3>
+<p><strong>Substituting the exact third-order term gives the kinetic equation with its first quantum correction.</strong> From the two displays above,</p>
+<p>$$
+\frac{\partial W}{\partial t}
++\frac{p_\eta}{m}\frac{\partial W}{\partial r_\eta}
+-\frac{\partial V}{\partial r_\eta}\frac{\partial W}{\partial p_\eta}
+=-\frac{\hbar^{2}}{24}\,\frac{\partial^{3}V}{\partial r_\eta^{3}}\,
+\frac{\partial^{3}W}{\partial p_\eta^{3}}
++\mathcal{O}(\hbar^{4}),
+$$</p>
+<p>with the sum over the spatial index $\eta$, every index low, and the sign as it falls out of the convention fixed above: $\Lambda(H,W)=V'W_p-(p_\eta/m)W_{r_\eta}$ reproduces the classical drift with the sign of the drift display, and the same convention fixes the sign of the correction. <strong>A reader who reverses the orientation of $\Lambda$ reverses both signs together and gets an equivalent equation</strong>; what cannot be done is to reverse one and not the other.</p>
+<p><strong>Three readings of the right-hand side, in increasing order of interpretation.</strong></p>
+<ul>
+<li>It is a third derivative in momentum, so it is a <em>spreading</em> term: it redistributes the density among momenta without creating or destroying any.</li>
+<li>It is weighted by the third derivative of the potential, so it vanishes wherever the potential is locally quadratic. This is the exactness statement of the next subsection.</li>
+<li>It is the phase-space form of the quantum force: the Bohm force $-\nabla Q_{\mathrm{qnt}}$ and this term are the same $\hbar^{2}$, seen on the shell and off it. The identification is stated as an interpretation and the on-shell statement is the corpus's polar form; the mapping between them is a computation this article does not carry out.</li>
+</ul>
+<h3 id="the-moments-the-correction-does-not-touch">The moments the correction does not touch</h3>
+<p><strong>The correction is a total derivative in momentum, and three of its moments vanish identically.</strong> Integrating by parts on a distribution that falls off at large momentum,</p>
+<p>$$
+\int d^{3}p\;\frac{\partial^{3}W}{\partial p_\eta^{3}}=0,
+\qquad
+\int d^{3}p\;p_\eta\,\frac{\partial^{3}W}{\partial p_\eta^{3}}=0,
+\qquad
+\int d^{3}p\;p_\eta p_\lambda\,\frac{\partial^{3}W}{\partial p_\eta^{3}}=0,
+$$</p>
+<p>so the zeroth, first and second moments of the equation are exactly the classical ones, at this order and at every higher order too. <strong>The continuity equation is therefore exact</strong>, not approximate:</p>
+<p>$$
+c\,\frac{\partial\rho_{\mathrm{num}}}{\partial r'_t}+\frac{\partial j_\eta}{\partial r_\eta}=0,
+\qquad
+\rho_{\mathrm{num}}=\int d^{3}p\;W,
+\qquad
+j_\eta=\int d^{3}p\;\frac{p_\eta}{m}W,
+$$</p>
+<p>with the $c$ of the length coordinate. The same is true of the momentum balance and of the pressure: the quantum correction does not touch them at this order, because a total momentum derivative cannot.</p>
+<p><strong>The first moment that does not vanish is the third, and its value is one line.</strong> With two more integrations by parts,</p>
+<p>$$
+\int d^{3}p\;p_\eta^{3}\,\frac{\partial^{3}W}{\partial p_\eta^{3}}=-6\int d^{3}p\;W=-6\rho_{\mathrm{num}},
+$$</p>
+<p>so the third moment of the equation acquires the correction $+\tfrac{\hbar^{2}}{4}V'''\rho_{\mathrm{num}}$. <strong>This is where the quantum correction enters the hydrodynamic hierarchy</strong>: not in the density, not in the velocity, not in the pressure, but in the heat-flow-type moment — the third moment, the first one the ideal fluid does not carry. A fluid description truncated at the pressure is therefore blind to the $\hbar^{2}$ correction of this order, and a description that keeps the heat flow is not.</p>
+<h3 id="exactness-for-a-quadratic-potential">Exactness for a quadratic potential</h3>
+<p><strong>For a harmonic potential the right-hand side vanishes identically, so the classical drift equation is the exact quantum equation.</strong> With $V=\tfrac12 m\omega^{2}r_\eta^{2}$ the third derivative is zero and every higher term of the sine expansion vanishes too, because the series terminates: a quadratic symbol has only the two monomials of the star product. This is the standard statement that the Wigner equation is exact for quadratic Hamiltonians, and it is the reason the harmonic oscillator is the test case of every Wigner computation.</p>
+<p><strong>The exactness is visible in the stationary state without any expansion at all.</strong> For the ground state the Wigner element is the Gaussian</p>
+<p>$$
+W_0(r,\vec p)=\frac{1}{\pi\hbar}
+\exp\!\left(-\frac{m\omega\,r_\eta^{2}}{\hbar}-\frac{p_\eta^{2}}{m\omega\hbar}\right),
+$$</p>
+<p>whose position and momentum variances are $\sigma^{2}=\hbar/(2m\omega)$ and $\sigma_{p}^{2}=m\omega\hbar/2$. Its time derivative is zero because it is stationary, and the drift terms cancel identically:</p>
+<p>$$
+\frac{p_\eta}{m}\frac{\partial W_0}{\partial r_\eta}
+-\frac{\partial V}{\partial r_\eta}\frac{\partial W_0}{\partial p_\eta}
+=W_0\left(-\frac{p_\eta}{m}\frac{m\omega}{\hbar}r_\eta\cdot 2\cdot\frac{1}{2}
++m\omega^{2}r_\eta\frac{2}{m\omega\hbar}p_\eta\right)=0,
+$$</p>
+<p>since the two coefficients are $-p_\eta\omega r_\eta/\hbar$ and $+p_\eta\omega r_\eta/\hbar$. <strong>With $\hbar=m=\omega=1$ the numbers are $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$ and $m\omega^{2}/\sigma_{p}^{2}=2$</strong>, and the cancellation is the equality of those two numbers. This is the check that the drift display's coefficients are right: a factor of two error anywhere in it would leave $2$ against $1$ or $2$ against $4$, and the residual would be a non-zero multiple of $W_0$.</p>
+<h3 id="what-the-correction-is-and-what-it-is-not">What the correction is, and what it is not</h3>
+<p><strong>It is not a collision term.</strong> A collision term is an integral operator built from the self-energy; it changes the number of particles in a phase-space cell and it drives the distribution to equilibrium. The $\hbar^{2}$ term does neither: it is a differential operator of third order in momentum, it conserves particle number, momentum and energy exactly, and it is present in the <em>free</em> equation, with no interaction and no bath. <strong>The distinction matters for the second law</strong>: a collision term is the only place where entropy production can enter a kinetic equation, and since the free equation has none, the entropy of a collisionless quantum fluid is conserved at this order — not increased.</p>
+<p><strong>It is not the whole of the quantum correction to transport.</strong> The term shown is the leading one in the gradient expansion of the free equation. The corrections from a finite collision width, from the off-shell behaviour of the self-energy, and from the $\hbar$ corrections to the collision integral are the Kadanoff–Baym structure's, and they are in <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>. This article's term is the one that survives when the collision integral is switched off, which is the sense in which it is the "quantum Vlasov" correction.</p>
+<p><strong>It is not a thermal pressure either.</strong> The correction redistributes momentum at fixed particle number; a thermal pressure does work at fixed entropy and changes the density. The two objects have the same dimensions and different symmetries, and the mistake of identifying them is the one <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a> warns against in the stress language.</p>
+<h2 id="the-relativistic-form">The Relativistic Form</h2>
+<h3 id="the-flow-in-the-corpuss-letters">The flow, in the corpus's letters</h3>
+<p><strong>Relativistically the drift is the contraction of the flow element with the gradient, and the mass shell is a constraint rather than an equation.</strong> With the velocity element of the polar form, $\tilde V_{\Phi,\nu}=p_{\Phi,\nu}/m$ and $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, the drift term becomes</p>
+<p>$$
+p_{\Phi,\nu}\,\frac{\partial W}{\partial r_\nu}
+=p_{\Phi,t}\,c\,\frac{\partial W}{\partial r'_t}+p_{\Phi,\eta}\frac{\partial W}{\partial r_\eta},
+$$</p>
+<p>with the index low throughout and the $c$ on the temporal derivative because $r'_t$ is a length. <strong>No component is raised.</strong> The temporal component is $p_{\Phi,t}=iE/c$, whose rest-frame value is $imc$, so the first term is $iE\,\partial W/\partial r'_t$; the factor $i$ is the element's, and it cancels against the $i$ in the temporal slot of the Wigner element, which is why the equation can be written with real coefficients once the slot is taken into account.</p>
+<p><strong>The mass shell is the corpus's modified relation, and it enters as a constraint on the support.</strong> The states populate the shell</p>
+<p>$$
+p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2m\,Q_{\mathrm{qnt}}=0,
+$$</p>
+<p>in the corpus's $\delta_{\mu\nu}$ form with the index low, and $Q_{\mathrm{qnt}}$ is the quantum potential with its minus sign. The constraint is not an equation of motion: it restricts where $\tilde W_\Xi$ has support, and the kinetic equation moves that support. <strong>The two equations together are the relativistic pair</strong>: a constraint that fixes the shell and a transport equation that moves the distribution along it.</p>
+<h3 id="off-shell-and-why-the-corpus-keeps-it-so">Off-shell, and why the corpus keeps it so</h3>
+<p><strong>A relativistic Wigner element cannot be supported on the shell alone if it is to carry a finite spread, and the corpus's off-shell emphasis is the honest bookkeeping of that fact.</strong> In the non-relativistic case the drift equation alone determines the evolution and the energy is whatever the Hamiltonian says. In the relativistic case the four components of $p_{\Phi,\nu}$ are not independent: the shell ties the energy to the momentum, and a distribution with a momentum spread has an energy spread tied to it by the shell relation. <strong>The tie is the $2mQ_{\mathrm{qnt}}$ term.</strong> A state with zero quantum potential sits exactly on the classical shell and has a delta-supported energy; a state with a finite width has $Q_{\mathrm{qnt}}\neq0$ and a shell broadened by it.</p>
+<p><strong>The consequence for the kinetic equation is that the drift term's temporal component is not independent of its spatial components.</strong> Writing $p_{\Phi,t}$ from the shell,</p>
+<p>$$
+p_{\Phi,t}^{2}=-\left(\lvert\vec p\rvert^{2}+m^{2}c^{2}+2m\,Q_{\mathrm{qnt}}\right),
+$$</p>
+<p>and taking the branch with the positive energy, $p_{\Phi,t}=imc\sqrt{1+\lvert\vec p\rvert^{2}/(m^{2}c^{2})+2Q_{\mathrm{qnt}}/(mc^{2})}$. For small momentum and small quantum potential this is $imc\left(1+\lvert\vec p\rvert^{2}/(2m^{2}c^{2})+Q_{\mathrm{qnt}}/(mc^{2})\right)$, whose first correction reproduces the non-relativistic drift and whose second is the quantum potential's contribution to the temporal slot. <strong>The expansion is the same $\hbar^{2}$ expansion</strong>, read on the shell instead of off it, and this is the precise sense in which the two sections of this article are one computation.</p>
+<h3 id="temperature-and-where-it-enters">Temperature, and where it enters</h3>
+<p><strong>Nothing in the free kinetic equation knows about temperature; temperature enters through the state.</strong> The drift and the $\hbar^{2}$ correction are properties of the equation, not of its solutions, and they are the same at every temperature. A thermal state is a particular solution — the one selected by the KMS condition of <a href="the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a> — and the temperature appears in the boundary condition that selects it, not in the operator.</p>
+<p><strong>The distinguishing feature of the thermal solution is that it is stationary in the appropriate sense, and the correction then cancels in the moments.</strong> For a state in equilibrium in a static potential, the distribution depends on the momentum only through the combination $E$ that the shell fixes, and the third moment of the correction integrates to zero over a symmetric distribution. So the equilibrium heat flow is zero, as it must be, and the $\hbar^{2}$ correction does not produce a spurious equilibrium current. <strong>This is the agreement the earlier section promised to check</strong>: the on-shell broadening $Q_{\mathrm{qnt}}$ and the off-shell correction term are consistent precisely because the stationary solution annihilates the correction's odd moments.</p>
+<h2 id="what-the-kadanoffbaym-structure-supplies">What the Kadanoff–Baym Structure Supplies</h2>
+<p><strong>The division of labour is worth stating as a list, because the two articles are easy to confuse.</strong> <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a> supplies the following, and this article supplies none of it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Supplied by the Schwinger–Keldysh article</th>
+<th>Supplied here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The closed-time-path contour and the branch doubling</td>
+<td>The free equation in one symbol</td>
+</tr>
+<tr>
+<td>The Keldysh rotation and the $2\times2$ matrix of Green's functions</td>
+<td>The Wigner element and its moments</td>
+</tr>
+<tr>
+<td>The self-energy and with it the collision integral</td>
+<td>The drift term and its characteristics</td>
+</tr>
+<tr>
+<td>The Kadanoff–Baym equations and their kinetic component</td>
+<td>The order-$\hbar^{2}$ correction and its moments</td>
+</tr>
+<tr>
+<td>The fluctuation–dissipation relation and the thermal solution</td>
+<td>The on-shell reading of the same $\hbar^{2}$</td>
+</tr>
+<tr>
+<td>The contour generating functional and the $2$-particle-irreducible action</td>
+<td>The exactness statement for a quadratic potential</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The free equation is the collisionless limit of the Kadanoff–Baym kinetic equation, and the limit is not a truncation of the formalism but a choice inside it.</strong> Setting the self-energy to zero in the Keldysh equation leaves the free part, and that free part is what this article expands. So the relation between the two is not "approximate versus exact" but "one term of a sum versus the whole sum": a reader who needs the collision term goes to the Schwinger–Keldysh article, and a reader who wants to know what the collisionless part does at order $\hbar^{2}$ stays here.</p>
+<p><strong>One thing this article should not be read as claiming.</strong> It does not claim that the $\hbar^{2}$ term is the quantum correction to the <em>full</em> kinetic equation. It is the quantum correction to the free one. In a system with a finite collision rate the ordering of the terms can change — the gradient expansion and the collision-width expansion compete — and the conditions under which the gradient expansion is the correct one are stated in the standard references and not re-derived here.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> The Moyal-bracket equation for the Wigner element, and the exact identity $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$ for a Hamiltonian at most quadratic in momentum, verified in a computer algebra system. The expansion $\tfrac{2}{\hbar}\sin(\hbar\Lambda/2)=\Lambda-\tfrac{\hbar^{2}}{24}\Lambda^{3}+\cdots$ and the resulting kinetic equation with its order-$\hbar^{2}$ term. The vanishing of the zeroth, first and second moments of that term, hence the exactness of the continuity equation, and the value $-6\rho_{\mathrm{num}}$ of its third moment. The exactness of the classical drift equation for a quadratic potential, checked analytically on the oscillator ground state with the numbers $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$, $m\omega^{2}/\sigma_{p}^{2}=2$. The relativistic drift as a contraction with the flow element, and the shell relation $p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$ with every index low.</p>
+<p><strong>Interpretation.</strong> That the $\hbar^{2}$ term is the phase-space form of the quantum force. The term is a fact of the expansion; its identification with $-\nabla Q_{\mathrm{qnt}}$ is a reading of it in the hydrodynamic variables, and the two are related by the moments — precisely, by the third moment and beyond, since the lower ones vanish. The article states the reading and marks it as one.</p>
+<p><strong>Not claimed.</strong> That the correction term is enough for a quantum kinetic theory of an interacting system. That the gradient expansion is the correct expansion at all densities and all coupling strengths. That the entropy production of a collisionless quantum fluid is nonzero — it is zero at this order, because there is no collision integral, and the entropy production of the interacting theory lives in the Schwinger–Keldysh article's collision term. That the Bohm force has been derived here from the kinetic equation.</p>
+<h2 id="summary">Summary</h2>
+<p>The Wigner element of the scalar field satisfies an exact equation whose generator is the Moyal bracket, $\partial_t W=\tfrac{2}{\hbar}\sin(\hbar\Lambda/2)(H,W)$ with $\Lambda=\overleftarrow{\partial_{r_\eta}}\overrightarrow{\partial_{p_\eta}}-\overleftarrow{\partial_{p_\eta}}\overrightarrow{\partial_{r_\eta}}$, every index low. Expanding the sine gives the classical drift at order $\hbar^{0}$ and one term at order $\hbar^{2}$; for a Hamiltonian at most quadratic in momentum the third-order term is exactly $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$, so the expansion is not approximate at that order.</p>
+<p>The drift equation, $\partial_t W+(p_\eta/m)\partial_{r_\eta}W-V'\partial_{p_\eta}W=0$, has the worldlines as its characteristics and is the statement that the phase-space flow is incompressible; its velocity field is divergenceless identically, which is Liouville's theorem rather than an assumption. With $r'_t$ a length, the temporal derivative carries a factor $c$, the same factor that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$.</p>
+<p>The correction is $-\tfrac{\hbar^{2}}{24}V'''\partial_{p}^{3}W$. It is a total momentum derivative, so its zeroth, first and second moments vanish identically and the continuity equation is exact; its third moment is $-6\rho_{\mathrm{num}}$, which is why the correction's hydrodynamic signature is in the heat flow and not in the pressure. It vanishes for a quadratic potential, where the classical drift equation is therefore exact — checked on the oscillator ground state, where the drift terms cancel because $1/(m\sigma^{2})$ and $m\omega^{2}/\sigma_{p}^{2}$ are both $2$ in units with $\hbar=m=\omega=1$.</p>
+<p>Relativistically the drift is a contraction with the flow element and the shell is a constraint, $p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$. The two $\hbar^{2}$'s of the article — the shell's broadening and the kinetic correction — are one $\hbar^{2}$, read on the shell and off it. Temperature enters only through the state, and the equilibrium solution annihilates the correction's odd moments, so there is no spurious equilibrium heat flow. The collision integral, its self-energy and the entropy production it carries are <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>'s, and are cited rather than repeated.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde W_\Xi(r,\vec p)$</td>
+<td>Biquaternionic Wigner element</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>Its scalar representative in the fixed-unit case</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>Scalar field, an element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$</td>
+<td>Amplitude squared, and the proper density</td>
+</tr>
+<tr>
+<td>$S_{\tilde\Xi}$</td>
+<td>Action of the polar form</td>
+</tr>
+<tr>
+<td>$m$, $c$</td>
+<td>Mass and speed of light in the medium</td>
+</tr>
+<tr>
+<td>$\hbar=mc/k_m$</td>
+<td>Action quantum</td>
+</tr>
+<tr>
+<td>$k_m$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$r_\eta$, $p_\eta$</td>
+<td>Spatial components of position and momentum; indices low</td>
+</tr>
+<tr>
+<td>$r'_t$</td>
+<td>Temporal coordinate of the material sector, a length</td>
+</tr>
+<tr>
+<td>$E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$</td>
+<td>Energy</td>
+</tr>
+<tr>
+<td>$p_{\Phi,\nu}$</td>
+<td>Components of the flow momentum element</td>
+</tr>
+<tr>
+<td>$\tilde V_{\Phi,\nu}=p_{\Phi,\nu}/m$</td>
+<td>Components of the velocity element</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>The bidifferential operator of the Moyal bracket</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>Hamiltonian symbol, $\lvert\vec p\rvert^{2}/(2m)+V$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>Potential; $V'''$ its third derivative</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$</td>
+<td>Quantum potential, with the minus sign</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>Oscillator frequency</td>
+</tr>
+<tr>
+<td>$\sigma^{2}$, $\sigma_{p}^{2}$</td>
+<td>Position and momentum variances of a Gaussian</td>
+</tr>
+<tr>
+<td>$W_0$</td>
+<td>Wigner element of the oscillator ground state</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\int d^{3}p\,W$</td>
+<td>Proper density as a marginal</td>
+</tr>
+<tr>
+<td>$j_\eta=\int d^{3}p\,(p_\eta/m)W$</td>
+<td>Current density as a first moment</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}$</td>
+<td>The metric; no raised indices</td>
+</tr>
+<tr>
+<td>$\mathcal{O}(\hbar^{4})$</td>
+<td>The remainder of the sine expansion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>E. Moyal, "Quantum mechanics as a statistical theory," <em>Proceedings of the Cambridge Philosophical Society</em> <strong>45</strong> (1949) 99–124, for the bracket and the expansion.</li>
+<li>H.-T. Elze, M. Gyulassy and D. Vasak, "Transport equations for the Wigner function," <em>Nuclear Physics B</em> <strong>276</strong> (1986) 706–728, for the gradient expansion and the quantum Vlasov equation.</li>
+<li>D. Vasak, M. Gyulassy and H.-T. Elze, "Quantum transport equations for the quark-gluon plasma," <em>Annals of Physics</em> <strong>173</strong> (1987) 462–492, for the matrix-valued case and the $\hbar$ counting.</li>
+<li>W. Botermans and R. Malfliet, "Quantum transport theory of nuclear matter," <em>Physics Reports</em> <strong>198</strong> (1990) 115–210, for the off-shell and gradient bookkeeping together.</li>
+<li>L. P. Kadanoff and G. Baym, <em>Quantum Statistical Mechanics</em> (Benjamin, 1962), for the equations whose collisionless part this article expands.</li>
+<li>J. E. Moyal's equation is treated systematically in C. Zachos, D. Fairlie and T. Curtright, <em>Quantum Mechanics in Phase Space</em> (World Scientific, 2005), chapters on the star product and its semiclassical expansion.</li>
+<li>P. Carruthers and F. Zachariasen, "Quantum collision theory with phase-space distributions," <em>Reviews of Modern Physics</em> <strong>55</strong> (1983) 245–285, for the phase-space reading of the quantum force.</li>
+<li>The companion articles: <a href="the-wigner-function-in-biquaternionic-form.html">The Wigner Function in Biquaternionic Form</a>, <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>, <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein–Gordon Equation in Biquaternionic Form</a>, and <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

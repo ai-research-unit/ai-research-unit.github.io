@@ -82,18 +82,18 @@ $$</p>
 <p>where $\varepsilon^2 = 0$. The element $q$ is the <strong>real part</strong>, and $q'$ is the <strong>infinitesimal part</strong>. We write $q = \operatorname{Re} Q$ and $q' = \operatorname{Inf} Q$.</p>
 <p>There is no Euclidean modulus intrinsic to the algebra, because the norm $\langle Q\rangle = q^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the <strong>Euclidean modulus</strong></p>
 <p>$$
-\|Q\|_E = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'^2},
 $$</p>
 <p>which is the ordinary Euclidean norm on the underlying module $\mathbb{C}_{\mathrm{dln}} \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.</p>
 <p>The <strong>dual distance</strong> between two dual numbers $Q_1$ and $Q_2$ is</p>
 <p>$$
-d(Q_1, Q_2) = \|Q_1 - Q_2\|_E.
+d(Q_1, Q_2) = \|Q_1 - Q_2\|.
 $$</p>
 <p>This makes $\mathbb{C}_{\mathrm{dln}}$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{C}_{\mathrm{dln}}$ is the ordinary Euclidean topology of the plane.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
 <p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
 <p>$$
-B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{dln}} : \|Q - Q_0\| < r\}.
 $$</p>
 <p>It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{dln}}$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
@@ -111,7 +111,7 @@ $$</p>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
 <p>A sequence $(Q_n)$ of dual numbers <strong>converges</strong> to $L \in \mathbb{C}_{\mathrm{dln}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies \|Q_n - L\|_E < \epsilon.
+n \geq N \implies \|Q_n - L\| < \epsilon.
 $$</p>
 <p>We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.</p>
 <p><strong>Uniqueness.</strong> If $Q_n \to L$ and $Q_n \to L'$, then $L = L'$.</p>
@@ -129,7 +129,7 @@ $$</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
 <p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
+m, n \geq N \implies \|Q_m - Q_n\| < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{C}_{\mathrm{dln}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{dln}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
@@ -139,7 +139,7 @@ $$</p>
 $$</p>
 <p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-Q \in D, \; 0 < \|Q - Q_0\|_E < \delta \implies \|f(Q) - L\|_E < \epsilon.
+Q \in D, \; 0 < \|Q - Q_0\| < \delta \implies \|f(Q) - L\| < \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
 <p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
@@ -151,7 +151,7 @@ $$</p>
 $$</p>
 <p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-Q \in D, \; \|Q - Q_0\|_E < \delta \implies \|f(Q) - f(Q_0)\|_E < \epsilon.
+Q \in D, \; \|Q - Q_0\| < \delta \implies \|f(Q) - f(Q_0)\| < \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> Sums and products of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
@@ -160,7 +160,7 @@ $$</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
 <p>A function $f : D \to \mathbb{C}_{\mathrm{dln}}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-Q_1, Q_2 \in D, \; \|Q_1 - Q_2\|_E < \delta \implies \|f(Q_1) - f(Q_2)\|_E < \epsilon.
+Q_1, Q_2 \in D, \; \|Q_1 - Q_2\| < \delta \implies \|f(Q_1) - f(Q_2)\| < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="dual-differentiability">Dual Differentiability</h2>
@@ -243,9 +243,9 @@ $$</p>
 <p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.</p>
 <p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
 <p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
-<p><strong>Estimation.</strong> If $\|f(Q)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p><strong>Estimation.</strong> If $\|f(Q)\| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
 <p>$$
-\left\| \int_\gamma f(Q) \, dQ \right\|_E \leq M L.
+\left\| \int_\gamma f(Q) \, dQ \right\| \leq M L.
 $$</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
 <p><strong>Theorem (Cauchy–Goursat, dual version).</strong> If $f$ is dual differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
@@ -268,11 +268,11 @@ $$</p>
 $$</p>
 <p>The <strong>radius of convergence</strong> is</p>
 <p>$$
-R = \frac{1}{\limsup_{n \to \infty} \|c_n\|_E^{1/n}},
+R = \frac{1}{\limsup_{n \to \infty} \|c_n\|^{1/n}},
 $$</p>
 <p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $\|Q - Q_0\|_E < R$ and diverges for $\|Q - Q_0\|_E > R$. On $\|Q - Q_0\|_E < R$ it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is dual differentiable on $\|Q - Q_0\|_E < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $\|Q - Q_0\| < R$ and diverges for $\|Q - Q_0\| > R$. On $\|Q - Q_0\| < R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is dual differentiable on $\|Q - Q_0\| < R$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
 \frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
 $$</p>
@@ -284,14 +284,14 @@ $$</p>
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 \;}
 $$</p>
-<p>valid for $\|Q - Q_0\|_E < r$.</p>
+<p>valid for $\|Q - Q_0\| < r$.</p>
 <p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $q' \frac{du}{dq} + c(q)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $q' \frac{du}{dq} + c(q)$.</p>
 <p><strong>Corollary.</strong> A dual differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Caution.</strong> The identity theorem fails in general, because a dual differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the real part and the infinitesimal part are independent, and one can vanish while the other does not.</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be dual differentiable on a punctured disk $0 < \|Q - Q_0\|_E < R$.</p>
-<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a dual differentiable function on $\|Q - Q_0\|_E < R$.</p>
+<p>Let $f$ be dual differentiable on a punctured disk $0 < \|Q - Q_0\| < R$.</p>
+<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a dual differentiable function on $\|Q - Q_0\| < R$.</p>
 <p><strong>Pole.</strong> $Q_0$ is a pole if $f(Q) \to \infty$ in Euclidean modulus as $Q \to Q_0$.</p>
 <p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if it is neither removable nor a pole.</p>
 <p><strong>Caution.</strong> The classification is more complicated than in the complex case, because the function can behave differently on the real and infinitesimal components. A point can be removable for one component and a pole for the other, in which case it is neither removable nor a pole for the dual function.</p>
@@ -395,7 +395,7 @@ $$</p>
 <td>Infinitesimal part</td>
 </tr>
 <tr>
-<td>$\|Q\|_E = \sqrt{q^2 + q'^2}$</td>
+<td>$\|Q\| = \sqrt{q^2 + q'^2}$</td>
 <td>Euclidean modulus</td>
 </tr>
 <tr>

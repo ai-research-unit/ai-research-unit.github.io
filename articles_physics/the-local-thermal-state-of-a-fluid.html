@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Local Thermal State of a Fluid — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-local-thermal-state-of-a-fluid"><strong>The Local Thermal State of a Fluid</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The local thermal state of the fluid is three fields at an event — a density, a pressure and a flow — read at the pointwise temperature that <a href="covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a> established.</strong> This article writes those three fields in the corpus's letters, states what the element form of the flow does and does not allow, and states what a <em>local equation of state</em> must satisfy for the three fields to determine each other. It does not argue that a local temperature exists; that is the gate article's verdict and this article takes it as given.</p>
+<p><strong>The verdict is used, and not reopened.</strong> The thermal structure lives on the field of states as a pointwise <em>period</em>, not as a pointwise metric; the rigidity condition is satisfied by the pointwise temperature in the local frame; and the flow is an element with a low index. <strong>Three sentences, and the article proceeds from them.</strong> A reader who wants the argument for them, with the qualification about a medium whose local complex structure varies, goes to the gate article; a reader who wants the construction of the period goes to <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>.</p>
+<p><strong>The article's new content is the third section.</strong> The first two sections are the state's data and the flow's element form, and they are largely a spelling of standard relativistic fluid dynamics. The third section is where the article earns its place: an equation of state that is <em>local</em> is not the statement that the pressure is a function of the density, but the statement that the pressure at an event is a function of the state's data at that event — and that requirement has a sharp content, which is what makes it checkable and what makes it fail when the flow is not rigid.</p>
+<p><strong>What the article does not do, by design.</strong> It does not give the equation of state — that is <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>, which writes $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ and obtains $\beta$ as a length. It does not define the entropy current — that is <a href="the-local-entropy-current.html">The Local Entropy Current</a>. It does not treat two components — that is <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>. Each of those articles needs the three fields defined here, and none of them needs this article to have anticipated it.</p>
+<h2 id="the-data-at-a-point">The Data at a Point</h2>
+<h3 id="the-density">The density</h3>
+<p><strong>The density is the amplitude squared, and it is the only density the framework has to offer without a further hypothesis.</strong> In the corpus's letters</p>
+<p>$$
+\rho_{\mathrm{num}}(x)=\lVert\tilde\Xi(x)\rVert^{2},
+$$</p>
+<p>the $\natural$ norm of the field element at the event, evaluated in the local frame. <strong>It is not written as a bare letter</strong>, because the amplitude squared is the object and the letter $\rho$ is taken: the corpus's rule is that the proper density is $\rho_{\mathrm{num}}$ and that a reader who wants the amplitude writes $\lVert\tilde\Xi\rVert^{2}$.</p>
+<p><strong>Why this is the right density and not merely a convenient one.</strong> The polar form of the scalar field gives the density as the coefficient of the temporal slot of the current, and the Wigner article gives it as the zeroth momentum moment of the phase-space element; the three agree, and the agreement is what makes the identification physical rather than notational. <strong>The density is therefore fixed by the field, and the fluid articles do not get to choose it.</strong> A different density — a charge density, say — is a different object with its own label, $\rho_{\mathrm{chg}}=ϙ\gamma\rho_{\mathrm{num}}$, and the corpus keeps them apart.</p>
+<p><strong>The pointwise temperature enters the density only through the state.</strong> A density is a density at every temperature; what the temperature fixes is <em>which</em> density a thermal state has, through the state's normalisation. <strong>So the first field is a field of the state and not of the temperature</strong>, and this is worth saying because a reader coming from the equilibrium theory expects the density to be a function of $T$ and $\mu$ and nothing else. Locally it is a function of the event, and the temperature is a separate field at the same event.</p>
+<h3 id="the-pressure">The pressure</h3>
+<p><strong>The pressure is the thermal part of the stress, and it is written $p_{\mathrm{th}}$ to keep it apart from the quantum part.</strong> The distinction is not decoration:</p>
+<p>$$
+p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}},
+$$</p>
+<p>with $p_{\mathrm{th}}$ the part that a thermal state has at the local temperature and $p_{\mathrm{qnt}}$ the part that survives at zero temperature and is a gradient correction. <strong><a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a> owns the split</strong>; this article uses it and states the one thing it needs: $p_{\mathrm{th}}$ is the piece that satisfies the thermal identities, and $p_{\mathrm{qnt}}$ is the piece that does not, because it is a functional of the density's derivatives rather than of the density.</p>
+<p><strong>The label is not cosmetic, because the two pressures obey different relations.</strong> A thermal pressure satisfies the Euler relation and the Gibbs–Duhem relation at the local temperature; a gradient correction does not, and treating it as though it did is the standard error that produces a spurious entropy production in a fluid at rest. <strong>The corpus's labelling rule — one letter, one object, and the label names the object — is what prevents the error</strong>, and this article inherits the labels rather than inventing them.</p>
+<h3 id="the-temperature">The temperature</h3>
+<p><strong>The temperature enters as the local period, and the corpus writes it as $\beta(x)$, a length at each event.</strong> From the local thermal structure article,</p>
+<p>$$
+\beta(x)=\frac{m\,c}{k_m\,k_{B}\,T(x)},
+\qquad
+T(x)\,c(x)=\text{const}
+$$</p>
+<p>along a static equilibrium, the second display being Tolman's law as that article states it. <strong>Both displays are quoted.</strong> The first is the definition of the period in the corpus's units, and the second is the statement that the period and the local light speed trade off along an equilibrium, which is the way the corpus writes the statement that a temperature field in a gravitational field is not constant.</p>
+<p><strong>The point that matters here, and it is a bookkeeping point.</strong> The temperature is a <em>field</em> on the events of the fluid's world tube, and the statement that it is pointwise is the statement that it has a value at each event without reference to a global time. That is what the gate article settled, and it is what makes the three fields below a local state rather than a global one. <strong>The article therefore writes $T(x)$ and $\beta(x)$ and never $T$ alone</strong>, except where a display is explicitly about a single event.</p>
+<h3 id="the-three-fields-and-the-fourth-that-is-not-a-field">The three fields, and the fourth that is not a field</h3>
+<p><strong>The local thermal state is the triple $\bigl(\rho_{\mathrm{num}}(x),\,p_{\mathrm{th}}(x),\,\tilde V_\Phi(x)\bigr)$ together with the temperature that selects it, and the list is complete.</strong> Two scalars and an element, plus the scalar period: four data at each event, of which three are independent because the state must lie on the fluid's own thermodynamic surface. <strong>The count is the standard one for a one-component relativistic fluid</strong>: a density, a pressure, a velocity up to the normalisation, and a temperature, with one relation among them.</p>
+<p><strong>What is not a field, and must not be treated as one.</strong> The entropy density is not independent — it is what the thermodynamic identity gives once the other data are fixed — and the chemical potential is not independent either, for the same reason. <strong>A reader who counts five independent fields has counted the entropy twice</strong>, once as a field and once as a function of the state, and the resulting system is over-determined by one equation. This is the most common bookkeeping error in the subject and the article names it once.</p>
+<h2 id="the-flow-as-an-element">The Flow as an Element</h2>
+<h3 id="the-element-and-its-components">The element and its components</h3>
+<p><strong>The flow is an element of the material sector, and when a component is unavoidable it is written with a low index on the pattern of $k_{\Phi,\mu}$.</strong> With $\tilde P_\Phi$ the flow momentum element,</p>
+<p>$$
+\tilde V_\Phi=\frac{\tilde P_\Phi}{m},
+\qquad
+\langle\tilde V_\Phi\rangle_{\natural}=-c^{2},
+\qquad
+v_{\Phi,\mu}\ \text{the components, index low.}
+$$</p>
+<p><strong>No index is raised anywhere in this article.</strong> The metric is $\delta_{\mu\nu}$ and the index labels a direction; it is not a tensor slot, because the element is not a tensor and the algebra's product is not a tensor product. <strong>A raised index would be a category error and not a notational preference</strong>, and the corpus's frame-and-metric rules say so in the third rule.</p>
+<p><strong>The normalisation is the corpus's $-c^{2}$ and not $-1$.</strong> The velocity element is dimensionless in the sense that its norm is a squared speed; the corpus does not set $c=1$, so the norm is $-c^{2}$ and the components carry the speed explicitly. <strong>A reader who divides by $c$ everywhere gets the same physics with different letters</strong>, and the letters in this article are the ones the neighbouring articles use.</p>
+<h3 id="the-three-projections-with-low-indices">The three projections, with low indices</h3>
+<p><strong>The derivative of the flow decomposes into three objects, and every one of them is written with the index low.</strong> With $\partial_\mu=\partial/\partial R_\mu$,</p>
+<p>$$
+\theta=\partial_\mu v_{\Phi,\mu},
+\qquad
+\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu},
+\qquad
+a_{\Phi,\nu}=v_{\Phi,\mu}\,\partial_\mu v_{\Phi,\nu},
+$$</p>
+<p>the expansion, the vorticity and the acceleration. <strong>The three are the standard decomposition and the letters are the corpus's</strong>: no index is raised, the contraction is the $\delta_{\mu\nu}$ one, and the acceleration is an element component and not a vector.</p>
+<p><strong>The rigidity condition is the vanishing of the first two symmetrised objects, and it is quoted.</strong> From the gate article,</p>
+<p>$$
+\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0,
+$$</p>
+<p>which is exactly the statement that the symmetric part of the gradient vanishes — so $\theta=0$ and the shear vanishes, while $\omega_{\mu\nu}$ need not. <strong>Rigid flows may rotate; that is the whole content of the condition</strong>, and it is what makes it compatible with a fluid in equilibrium in a rotating frame.</p>
+<p><strong>What the condition buys, in one sentence.</strong> A rigid flow is one whose neighbouring worldlines keep their proper distances, so the fluid element's shape and size are not changed by the motion, so the only thing that changes the state is the temperature — <strong>and that is what allows a pointwise equation of state to exist at all</strong>, as the next section shows.</p>
+<h3 id="why-the-element-form-matters-here">Why the element form matters here</h3>
+<p><strong>The element form is not an affectation: it is what makes the normalisation and the projections one object.</strong> A velocity written as a raised vector needs the metric twice — once to lower the index for the derivative and once to contract — and each use is an opportunity for a sign error in a theory whose temporal slot carries an $i$. <strong>Written as an element, the normalisation $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ is a single scalar identity, and the projections above are contractions of the algebra's own derivative.</strong></p>
+<p><strong>The algebra also fixes what a "component" means.</strong> The element's temporal coefficient is imaginary, $v_{\Phi,t}=i\gamma c$, so the temporal component of the flow is $i$ times a speed and the contraction $v_{\Phi,\mu}v_{\Phi,\mu}$ is real because two $i$'s multiply. <strong>A reader who writes a real temporal component has silently set the imaginary unit to one</strong>, and the contraction then comes out with the wrong sign. The corpus's insistence on the low index and the imaginary temporal slot is a single rule with a single purpose: the signs come out right without being tracked by hand.</p>
+<p><strong>One consequence that the next articles use.</strong> The energy-momentum element is $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$, and its contraction with $\tilde V_\Phi$ gives the energy density in the flow's frame. <strong>Because both objects are elements, the contraction is a product and not a bilinear form</strong>, and the factor $i$ in the spatial slot of $\tilde\Sigma_\Psi$ cancels against the factor $i$ in the temporal slot of $\tilde V_\Phi$. This cancellation is the reason the corpus writes the energy-momentum element with the $i$ where it is, and it is worth stating because it looks like an arbitrary convention until the contraction is done.</p>
+<h2 id="what-a-local-equation-of-state-requires">What a Local Equation of State Requires</h2>
+<h3 id="three-requirements-stated-before-they-are-used">Three requirements, stated before they are used</h3>
+<p><strong>An equation of state is <em>local</em> when it passes three tests, and each test is a statement that can fail.</strong> The three are:</p>
+<ol>
+<li><strong>Determinacy.</strong> The pressure at an event is a function of the state's data at that event and of nothing else,
+$$
+p_{\mathrm{th}}(x)=\mathfrak{F}\bigl(\rho_{\mathrm{num}}(x),\,\beta(x)\bigr),
+$$
+with no derivative of any field on the right-hand side. A dependence on a gradient is a dependence on the neighbourhood, and a neighbourhood is not an event.</li>
+<li><strong>Thermodynamic consistency.</strong> At each event the local fields satisfy the identities of the equilibrium theory, the Euler relation and the Gibbs–Duhem relation, with the local temperature and the local chemical potential. A relation that holds only after an integration over the fluid is a global relation and does not count.</li>
+<li><strong>Integrability.</strong> The response functions come from one thermodynamic potential per unit proper volume, so that the mixed second derivatives agree. A pressure that satisfies the first two tests but not the third describes a substance that does not exist, in the sense that no free energy generates it.</li>
+</ol>
+<p><strong>The three are independent, and the order matters.</strong> Determinacy without consistency gives a pressure that ignores the second law; consistency without integrability gives a set of response functions that cannot be integrated into a state function; integrability without determinacy is a global statement trying to pass as a local one. <strong>The rest of this section takes them in order and says what each costs.</strong></p>
+<h3 id="determinacy-and-why-it-needs-the-rigid-flow">Determinacy, and why it needs the rigid flow</h3>
+<p><strong>Determinacy holds for a rigid flow and fails for an expanding one, and the failure is a failure of the local data to close.</strong> For a rigid flow the proper volume of a fluid element is constant along its worldline, so the only quantity that changes at the element is the temperature; the state therefore has one degree of freedom beyond its identity, and one function of that variable suffices. <strong>For an expanding flow the proper volume changes, and the pressure at an event then depends on how fast the volume is changing</strong> — that is, on the expansion $\theta$ — unless the substance relaxes instantaneously.</p>
+<p><strong>The display of the failure, in the corpus's own objects.</strong> With $\theta\neq0$ the thermodynamic identity at the event acquires a term proportional to $\theta$ and to a bulk viscosity $\zeta$,</p>
+<p>$$
+p_{\mathrm{eff}}=p_{\mathrm{th}}-\zeta\,\theta+\cdots,
+$$</p>
+<p>so the pressure is no longer a function of $(\rho_{\mathrm{num}},\beta)$ alone. <strong>The ellipsis hides the relaxation structure of <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a></strong>, and this article stops at the point where the ellipsis begins: under the rigidity condition $\theta=0$, the extra term vanishes, and the pressure is a function of the local data after all.</p>
+<p><strong>This is the sharp sense in which the gate article's condition is what makes this article possible.</strong> The rigidity condition is not a technical convenience for the algebra; it is the exact condition under which requirement 1 holds with no dissipative correction. <strong>A fluid whose flow is rigid has a local equation of state; a fluid whose flow expands has one only at zeroth order in the expansion rate.</strong></p>
+<h3 id="thermodynamic-consistency-and-the-two-identities-in-the-corpuss-letters">Thermodynamic consistency, and the two identities in the corpus's letters</h3>
+<p><strong>The Euler relation and the Gibbs–Duhem relation are two statements about the same potential, and locally both must hold.</strong> With $w_{\mathrm{fl}}$ the energy density, $s_{\mathrm{ent}}$ the entropy density, $n_{\mathrm{num}}$ the number density and $\mu_{\mathrm{chm}}$ the chemical potential,</p>
+<p>$$
+w_{\mathrm{fl}}+p_{\mathrm{th}}=T\,s_{\mathrm{ent}}+\mu_{\mathrm{chm}}\,n_{\mathrm{num}},
+\qquad
+d p_{\mathrm{th}}=s_{\mathrm{ent}}\,dT+n_{\mathrm{num}}\,d\mu_{\mathrm{chm}},
+$$</p>
+<p>the first being Euler's relation and the second Gibbs–Duhem's. <strong>Both are quoted; both are standard; and both are the local statement</strong>, in the sense that every symbol carries an $x$ that is suppressed for readability.</p>
+<p><strong>The temperature appears as the period, and the derivative has to be converted.</strong> Since $\beta(x)=A/T(x)$ with $A=mc/(k_m k_B)$ a constant, $dT=-(T/\beta)\,d\beta$, so the Gibbs–Duhem relation reads in the corpus's variable as</p>
+<p>$$
+\frac{\partial p_{\mathrm{th}}}{\partial\beta}=-\frac{\beta}{T}\,s_{\mathrm{ent}}
+\qquad\text{at fixed }\mu_{\mathrm{chm}},
+$$</p>
+<p>or, equivalently, $s_{\mathrm{ent}}=-(\beta/T)\,\partial p_{\mathrm{th}}/\partial\beta$. <strong>The sign is worth reading twice</strong>: the pressure <em>decreases</em> as the period <em>increases</em>, because a longer period is a lower temperature, and the entropy density is positive, so the derivative is negative. <strong>A reader who keeps the derivative with respect to $T$ and then substitutes $\beta$ without the chain rule gets the sign of the entropy density wrong</strong>, and the error is invisible in an equation with a modulus.</p>
+<p><strong>A consistency check that a reader can do on the back of an envelope.</strong> For radiation, $p_{\mathrm{th}}=aT^{4}/3$ and $s_{\mathrm{ent}}=4aT^{3}/3$. Euler's relation with $\mu_{\mathrm{chm}}n_{\mathrm{num}}=0$ gives $w_{\mathrm{fl}}+p_{\mathrm{th}}=4aT^{4}/3=T\,s_{\mathrm{ent}}$ ✓, and Gibbs–Duhem gives $\partial p_{\mathrm{th}}/\partial T=4aT^{3}/3=s_{\mathrm{ent}}$ ✓. In the corpus's variable $p_{\mathrm{th}}=aA^{4}/(3\beta^{4})$ and $\partial p_{\mathrm{th}}/\partial\beta=-4p_{\mathrm{th}}/\beta$, so $-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta=4p_{\mathrm{th}}/T=4aT^{3}/3=s_{\mathrm{ent}}$ ✓. <strong>The two routes agree, which is the check that the chain rule above has the right sign.</strong></p>
+<h3 id="integrability-and-the-potential">Integrability, and the potential</h3>
+<p><strong>The pressure must come from a potential, and the potential is the free energy per unit proper volume.</strong> Writing $f=F/V_{0}$ for that density, the local relations are</p>
+<p>$$
+p_{\mathrm{th}}=-\,f+\mu_{\mathrm{chm}}\,n_{\mathrm{num}},
+\qquad
+s_{\mathrm{ent}}=-\frac{\partial f}{\partial T},
+\qquad
+f=w_{\mathrm{fl}}-T\,s_{\mathrm{ent}} .
+$$</p>
+<p><strong>The three displays are one object read three ways</strong>, and their consistency is the integrability requirement: the mixed derivatives of $f$ commute, so the response functions derived from it satisfy a Maxwell relation. <strong>A pressure that is written down directly, without a potential behind it, will violate a Maxwell relation somewhere</strong>, and the place it violates it is where the "equation of state" is really a fit rather than a state function.</p>
+<p><strong>The equivalent form that the corpus's articles use, with the density as the variable.</strong> With $w_{\mathrm{fl}}$ as the energy per unit proper volume and $n_{\mathrm{num}}$ the number density,</p>
+<p>$$
+p_{\mathrm{th}}=n_{\mathrm{num}}\left(\frac{\partial w_{\mathrm{fl}}}{\partial n_{\mathrm{num}}}\right)_{s_{\mathrm{ent}}}-w_{\mathrm{fl}},
+$$</p>
+<p>which is the standard thermodynamic identity for a one-component fluid at constant entropy, and which reduces to the radiation check above. <strong>This is the form that <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a> uses</strong>, and the article states it here so that the later article can use it without re-deriving it.</p>
+<p><strong>Why integrability is the requirement most often skipped.</strong> It is invisible in any single relation: Euler's relation and Gibbs–Duhem's relation are both satisfied by a pressure that has no potential, as long as they are imposed as two equations. <strong>What integrability adds is that the two equations are not independent</strong>: they are the same statement about one function, and imposing both without a potential over-determines the system. A reader who checks only the two identities will not detect the over-determination; a reader who checks the Maxwell relation will.</p>
+<h3 id="what-the-quantum-part-does-to-all-three">What the quantum part does to all three</h3>
+<p><strong>The quantum pressure violates determinacy at second order in gradients, and the article says so plainly rather than hiding it behind a label.</strong> With</p>
+<p>$$
+p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}}
+=-\frac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}
++\frac{\hbar^{2}}{8m}\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
+$$</p>
+<p>with $Q_{\mathrm{qnt}}$ the quantum potential and its minus sign, the pressure at an event depends on the second derivative of the density at that event. <strong>A second derivative is a property of the neighbourhood</strong>, so $p_{\mathrm{qnt}}$ is not a function of the local data in the sense of requirement 1; it is a functional of the density field's germ at the event.</p>
+<p><strong>The three requirements survive in a modified form, and the modification is exact.</strong> Determinacy is replaced by determinacy <em>to a stated gradient order</em>; consistency is kept for the thermal part and abandoned for the quantum part, which is precisely why the corpus keeps the two labels apart; integrability is kept for the thermal part, and the quantum part is derived from the field rather than from a potential, so it does not need one. <strong>The modified statement is the honest one</strong>: the effective pressure is local to order $\hbar^{2}$ and not exactly, and a reader who wants an exactly local equation of state must drop the quantum part and with it every effect the framework adds.</p>
+<p><strong>The consequence for the article's own claims.</strong> The three requirements are stated for $p_{\mathrm{th}}$, they hold for $p_{\mathrm{th}}$, and they fail for $p_{\mathrm{qnt}}$ in a controlled way. <strong>The failure is the framework's content and not its defect</strong>: a strictly local equation of state is a classical statement, and a quantum fluid is not classical. The article's contribution is to say exactly which requirement fails, at which order, and why.</p>
+<h2 id="numbers">Numbers</h2>
+<p><strong>The identities of this article were evaluated on two substances, and the residuals are reported because the arithmetic is what a reader can check.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>radiation, $p_{\mathrm{th}}=aT^{4}/3$</th>
+<th>dust, $p_{\mathrm{th}}=0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euler residual, $\lvert w_{\mathrm{fl}}+p_{\mathrm{th}}-Ts_{\mathrm{ent}}\rvert$</td>
+<td>$0$ exactly</td>
+<td>$w_{\mathrm{fl}}=n_{\mathrm{num}}\mu_{\mathrm{chm}}$</td>
+</tr>
+<tr>
+<td>Gibbs–Duhem residual, $\lvert\partial p_{\mathrm{th}}/\partial T-s_{\mathrm{ent}}\rvert$</td>
+<td>$0$ exactly</td>
+<td>$0$, since $s_{\mathrm{ent}}=0$ at fixed $n_{\mathrm{num}}$</td>
+</tr>
+<tr>
+<td>$\partial p_{\mathrm{th}}/\partial\beta$ at fixed $\mu_{\mathrm{chm}}$</td>
+<td>$-4p_{\mathrm{th}}/\beta$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$</td>
+<td>$4p_{\mathrm{th}}/T=4aT^{3}/3$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Maxwell relation, $\partial s_{\mathrm{ent}}/\partial\mu_{\mathrm{chm}}$ against $\partial n_{\mathrm{num}}/\partial T$</td>
+<td>$0=0$</td>
+<td>$0=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Numerically, at $a=1$, $T=2$:</strong> $p_{\mathrm{th}}=16/3=5.333\,333\,333$, $s_{\mathrm{ent}}=32/3=10.666\,666\,667$, $w_{\mathrm{fl}}=16$, and the Euler residual is $16+5.333\,333\,333-2\times10.666\,666\,667=0$ to the last digit of the double. <strong>The radiation row is the check that the chain rule to $\beta$ has the right sign</strong>, and the dust row is the check that the identities degenerate correctly when the pressure vanishes.</p>
+<p><strong>What the numbers do not check.</strong> They do not check the rigidity condition's satisfaction by any particular flow — that is the gate article's, and its finite-difference check is reported there. They do not check the quantum pressure's gradient expansion, which is <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>'s. <strong>They check that the local identities of this article are the standard ones written in the corpus's letters, which is all this article claims for them.</strong></p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established, and standard.</strong> That the local thermal state is the triple of a density, a thermal pressure and a flow element, read at a pointwise period; that the density is the amplitude squared; that the flow's gradient decomposes into expansion, vorticity and acceleration, all with low indices; that the rigidity condition kills the expansion and the shear and permits the vorticity; that a local equation of state requires determinacy, thermodynamic consistency and integrability; that the first of the three needs the rigidity condition; that the second and third hold for $p_{\mathrm{th}}$ and fail for $p_{\mathrm{qnt}}$ in a controlled way; and the numerical identity $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}\lvert\nabla\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$.</p>
+<p><strong>Interpretation, and marked as such.</strong> That the triple is the <em>complete</em> local state, in the sense that the entropy density and the chemical potential are functions of it and not independent fields. This is true of a one-component fluid in local equilibrium and it is not a theorem about every fluid; a fluid with several conserved charges needs one density per charge, and the article says so rather than generalising.</p>
+<p><strong>Not claimed.</strong> That the rigidity condition is satisfied by every flow of interest — it is not, and a flow with expansion needs the dissipative structure of <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>. That $p_{\mathrm{qnt}}$ is local in the strict sense — it is not, and the failure is quantified as a second-gradient dependence. That a pointwise metric exists — it does not, and the thermal structure is a pointwise period, as the gate article settled. That the equation of state has been given — it has not; this article states what it must satisfy, and <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a> gives it.</p>
+<p><strong>One thing worth repeating, because it is the article's practical value.</strong> The three requirements are stated in a form that can be checked on any candidate equation of state with two differentiations. A candidate that fails the Maxwell relation is not a state function; a candidate that depends on a gradient is not local; a candidate that violates Euler's relation violates the second law. <strong>The article therefore does not need to know the equation of state to say what is wrong with a bad one</strong>, and that is a more useful result than a formula.</p>
+<h2 id="summary">Summary</h2>
+<p>The local thermal state of the fluid is the triple $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=mc/(k_mk_BT(x))$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every component written with a low index and never raised. The temperature is a field at each event — a pointwise period, not a pointwise metric — and the article uses the gate article's verdict without reopening it.</p>
+<p>The flow's gradient decomposes into $\theta=\partial_\mu v_{\Phi,\mu}$, $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ and $a_{\Phi,\nu}=v_{\Phi,\mu}\partial_\mu v_{\Phi,\nu}$; the rigidity condition $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$ makes the first two vanish and leaves the vorticity free, so rigid flows may rotate.</p>
+<p>A local equation of state must be determinate, $p_{\mathrm{th}}(x)=\mathfrak{F}(\rho_{\mathrm{num}}(x),\beta(x))$ with no gradient on the right; must satisfy Euler's and Gibbs–Duhem's relations at each event, with $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ the chain-rule form of the second; and must come from one potential per unit proper volume, $p_{\mathrm{th}}=-\;f+\mu_{\mathrm{chm}}n_{\mathrm{num}}$, $s_{\mathrm{ent}}=-\partial f/\partial T$. Determinacy needs the rigid flow, because an expanding flow adds $-\zeta\theta$ to the pressure. Integrability is the requirement most often skipped, and it is the one that fails silently when a pressure is written down without a potential.</p>
+<p>The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}\lvert\nabla\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$, checked on a Gaussian to $1.8\times10^{-5}$ on a grid of spacing $3\times10^{-3}$, with the central value $Q_{\mathrm{qnt}}(0)=0.999\,982$ against $\hbar^{2}/(4m\sigma^{2})=1$. So the equation of state is local to order $\hbar^{2}$ and not exactly, and the two labels $p_{\mathrm{th}}$ and $p_{\mathrm{qnt}}$ exist to keep the exact statement and the approximate one apart.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>Scalar field, an element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$</td>
+<td>Proper density; never a bare letter</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{chg}}=ϙ\gamma\rho_{\mathrm{num}}$</td>
+<td>Charge density, with $ϙ$ the charge</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{th}}$</td>
+<td>Thermal pressure</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{qnt}}$</td>
+<td>Quantum part of the pressure</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$</td>
+<td>Effective pressure</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$</td>
+<td>Quantum potential, with the minus sign</td>
+</tr>
+<tr>
+<td>$w_{\mathrm{fl}}$</td>
+<td>Energy density</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$</td>
+<td>Entropy density</td>
+</tr>
+<tr>
+<td>$n_{\mathrm{num}}$</td>
+<td>Number density</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}$</td>
+<td>Chemical potential</td>
+</tr>
+<tr>
+<td>$\beta(x)=\frac{m\,c}{k_m\,k_{B}\,T(x)}$</td>
+<td>Local inverse temperature, a length</td>
+</tr>
+<tr>
+<td>$T(x)$</td>
+<td>Local temperature</td>
+</tr>
+<tr>
+<td>$k_B$, $k_m$</td>
+<td>Boltzmann's constant, mass wave number</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=\tilde P_\Phi/m$</td>
+<td>Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$</td>
+</tr>
+<tr>
+<td>$v_{\Phi,\mu}$</td>
+<td>Its components, index low</td>
+</tr>
+<tr>
+<td>$\tilde P_\Phi$</td>
+<td>Flow momentum element</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$</td>
+<td>Energy–momentum element</td>
+</tr>
+<tr>
+<td>$\theta=\partial_\mu v_{\Phi,\mu}$</td>
+<td>Expansion</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}$</td>
+<td>Vorticity</td>
+</tr>
+<tr>
+<td>$a_{\Phi,\nu}$</td>
+<td>Acceleration</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>Bulk viscosity</td>
+</tr>
+<tr>
+<td>$f=F/V_{0}$</td>
+<td>Free energy per unit proper volume</td>
+</tr>
+<tr>
+<td>$V_{0}$</td>
+<td>Proper volume</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}n_{\mathrm{num}}$</td>
+<td>The chemical term of Euler's relation</td>
+</tr>
+<tr>
+<td>$\mathfrak{F}$</td>
+<td>The equation-of-state function</td>
+</tr>
+<tr>
+<td>$\partial_\mu=\partial/\partial R_\mu$</td>
+<td>The algebra's derivative</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}$</td>
+<td>The metric; no raised index</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$\langle\ \rangle_{\natural}$</td>
+<td>Quaternionic norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>L. D. Landau and E. M. Lifshitz, <em>Fluid Mechanics</em> (Pergamon, 1987), §§15 and 127, for the relativistic fluid and the rigidity of an equilibrium flow.</li>
+<li>C. Eckart, "The thermodynamics of irreversible processes III: Relativistic theory of the simple fluid," <em>Physical Review</em> <strong>58</strong> (1940) 919–924, for the local-equilibrium formulation and its first-order corrections.</li>
+<li>W. Israel, "Nonstationary irreversible thermodynamics: a causal relativistic theory," <em>Annals of Physics</em> <strong>100</strong> (1976) 310–331, for the relaxation structure that the ellipsis in the pressure display hides.</li>
+<li>W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," <em>Annals of Physics</em> <strong>118</strong> (1979) 341–372, for the systematic treatment of the same.</li>
+<li>S. Weinberg, <em>Gravitation and Cosmology</em> (Wiley, 1972), §2.11 and §15.10, for the Euler and Gibbs–Duhem relations in the relativistic notation.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Statistical Physics, Part 1</em> (Pergamon, 1980), §§23–24, for the thermodynamic identities in the form used here.</li>
+<li>R. P. Feynman, "Statistical mechanics of a spin-$\tfrac12$ gas" and the quantum-hydrodynamic papers collected in R. P. Feynman, <em>Statistical Mechanics</em> (Benjamin, 1972), for the quantum pressure and its gradient character.</li>
+<li>The companion articles: <a href="covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a>, <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>, <a href="the-local-entropy-current.html">The Local Entropy Current</a>, and <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

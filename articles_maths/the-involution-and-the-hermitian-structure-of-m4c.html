@@ -158,18 +158,18 @@ $$</p>
 <p><strong>Proof.</strong> The diagonal entry $(A^*A)_{ii}$ is $\sum_k\overline{A_{ki}}A_{ki}=\sum_k\lvert A_{ki}\rvert^2$, so the trace is the sum of the squares of the moduli of all sixteen entries. A sum of non-negative real numbers is zero exactly when every entry is zero.</p>
 <p><strong>The Frobenius norm.</strong> The form defines the <strong>Frobenius norm</strong></p>
 <p>$$
-\lVert A\rVert_F=\sqrt{\langle A,A\rangle}
+\langle A\rangle_*^{1/2}=\sqrt{\langle A,A\rangle}
 =\Bigl(\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2\Bigr)^{1/2}.
 $$</p>
 <p>It is the Euclidean norm of $A$ as a vector in $\mathbb{C}^{16}$, and it satisfies the Cauchy–Schwarz and triangle inequalities:</p>
 <p>$$
-\lvert\langle A,B\rangle\rvert\le\lVert A\rVert_F\lVert B\rVert_F,
+\lvert\langle A,B\rangle\rvert\le\langle A\rangle_*^{1/2}\langle B\rangle_*^{1/2},
 \qquad
-\lVert A+B\rVert_F\le\lVert A\rVert_F+\lVert B\rVert_F.
+\langle A+B\rangle_*^{1/2}\le\langle A\rangle_*^{1/2}+\langle B\rangle_*^{1/2}.
 $$</p>
 <p>It is invariant under $*$-unitary conjugation and under left and right multiplication by unitaries:</p>
 <p>$$
-\lVert UAV\rVert_F=\lVert A\rVert_F,\qquad U,V\in U(4).
+\langle UAV\rangle_*^{1/2}=\langle A\rangle_*^{1/2},\qquad U,V\in U(4).
 $$</p>
 <p><strong>Proof.</strong> The norm is the Euclidean norm of the entries. For unitarity, $\operatorname{tr}((UAV)^*(UAV))=\operatorname{tr}(V^*A^*U^*UAV)=\operatorname{tr}(V^*A^*AV)=\operatorname{tr}(A^*A)$, using the cyclic property of the trace and $U^*U=I$, $VV^*=I$.</p>
 <p><strong>The real inner product.</strong> The real part</p>
@@ -269,7 +269,7 @@ $$</p>
 <p><strong>The two determinants.</strong> The determinant of the full algebra is the usual $4\times4$ determinant; the determinant of the regular model is the square of the biquaternion norm. The full determinant vanishes on the singular matrices; the biquaternion norm vanishes on the null cone. The two singular sets have different dimensions and different geometry. The full algebra has no null cone; the regular model does.</p>
 <p><strong>The singular set is not the isotropic cone.</strong> The set $\{\det A=0\}$ is the zero locus of a holomorphic polynomial of degree four, of complex dimension $15$ and real codimension $2$. The set $\{\langle A,A\rangle=0\}$ is the origin, of real dimension $0$. The two sets are not comparable: the first is large and complex, the second is a point. The definite form does not detect the zero divisors; the determinant does.</p>
 <h2 id="summary">Summary</h2>
-<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\lVert A\rVert_F^2=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.</p>
+<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\langle A\rangle_*=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.</p>
 <p>$$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B)>0\ \text{for }A\ne0,\quad \dim_\mathbb{R}\operatorname{Herm}_4=16,\quad \dim_\mathbb{R}\mathfrak{u}(4)=16,\quad \dim_\mathbb{R}\mathfrak{su}(4)=15. }
 $$</p>
@@ -359,7 +359,7 @@ $$</p>
 <td>the positive definite trace form</td>
 </tr>
 <tr>
-<td>$\lVert A\rVert_F$</td>
+<td>$\langle A\rangle_*^{1/2}$</td>
 <td>the Frobenius norm</td>
 </tr>
 <tr>

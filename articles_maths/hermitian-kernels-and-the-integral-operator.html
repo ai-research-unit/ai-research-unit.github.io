@@ -145,7 +145,7 @@ $T\mapsto T^\dagger$ under the correspondence.</p>
 <p><strong>Definition.</strong> An operator $T$ on $L^2(X,\mu)$ is <strong>Hilbert–Schmidt</strong> if it is the integral operator of a
 kernel $K\in L^2(X\times X,\mu\otimes\mu)$, and the <strong>Hilbert–Schmidt norm</strong> is
 $$
-\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2(X\times X)} .
+\langle T_K\rangle_*^{1/2}=\lVert K\rVert_{L^2(X\times X)} .
 $$</p>
 <p><strong>Theorem (the correspondence is an isometry onto the Hilbert–Schmidt class).</strong> The map $K\mapsto T_K$ is a
 linear isometry of $L^2(X\times X)$ onto the class of Hilbert–Schmidt operators on $L^2(X)$, and the class is
@@ -156,7 +156,7 @@ $$
 the correspondence carries the kernel involution to the adjoint, $T_{K^*}=T_K^\dagger$, so that it is a
 $\ast$-isometry.</p>
 <p><strong>Proof.</strong> That the operator of an $L^2$ kernel is bounded and Hilbert–Schmidt is the computation of
-$\lVert T_K\rVert_{\mathrm{HS}}^2=\iint\lvert K\rvert^2$ for an orthonormal basis, and the kernel is
+$\langle T_K\rangle_*=\iint\lvert K\rvert^2$ for an orthonormal basis, and the kernel is
 recovered from the operator by the formula $K(x,y)=\sum_n(T_Ke_n)(x)\overline{e_n(y)}$ in the $L^2$ sense;
 the inner product identity is the polarisation of the norm. The involution statement is the theorem of the
 previous section.</p>
@@ -264,7 +264,7 @@ reality of the spectrum, the eigenfunction expansion, Mercer's theorem and the t
 <td>$K^*=K$ / $\sum\overline{c_i}c_jK(x_i,x_j)\geq0$</td>
 </tr>
 <tr>
-<td>$\lVert T_K\rVert_{\mathrm{HS}}=\lVert K\rVert_{L^2}$</td>
+<td>$\langle T_K\rangle_*^{1/2}=\lVert K\rVert_{L^2}$</td>
 <td>Hilbert–Schmidt norm and isometry</td>
 </tr>
 <tr>

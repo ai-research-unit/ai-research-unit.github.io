@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curved-Spacetime KMS and Modular Flow — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="curved-spacetime-kms-and-modular-flow"><strong>Curved-Spacetime KMS and Modular Flow</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>On a Killing horizon the KMS condition carries one number for the flow and a function of position for the observers, and the two are related by the redshift factor.</strong> The number is the inverse temperature of the horizon flow, $\beta_H=2\pi c/\kappa=2\pi/\kappa_\omega$ with $\kappa$ the surface gravity. The function is the local inverse temperature of a static observer, $\beta(x)=\beta_H\,\ell(x)$ with $\ell(x)$ the lapse. The horizon is where the lapse vanishes, so the observers' thermal circle collapses there while the flow's stays fixed.</p>
+<p><strong>This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.</strong></p>
+<p>The article is a transcription, and it is a narrow one. It carries the covariant bookkeeping of the KMS condition — $\beta$ becoming $\beta(x)$ — and nothing else. Three results it explicitly does not touch:</p>
+<ul>
+<li><strong>The Bisognano–Wichmann theorem</strong>, which identifies the modular flow of a wedge with the boost, is in <a href="the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a>. This article cites it as the flat case and re-derives none of it.</li>
+<li><strong>The Unruh effect</strong>, which is that identification read by an accelerated observer, is in <a href="the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a>. This article cites it as the flat case at $\beta=2\pi c/a$ and re-derives none of it.</li>
+<li><strong>Hawking radiation</strong>, which is the same statement for a black-hole horizon, is in <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>. This article cites it as the near-horizon case and re-derives none of it. In particular the surface gravity, the Euclidean regularity argument and the Bogoliubov coefficients are that article's, and this one uses their results as quoted inputs.</li>
+</ul>
+<p><strong>What is left for this article.</strong> The bookkeeping: one flow parameter and one observer field, the relation between them, the behaviour of each at the horizon, and the letters in which the corpus writes them. That is a small subject and the article is correspondingly short on new claims. It exists because the articles on the fluid need to know what "$\beta$ at a point" means when the point is near a horizon, and because the answer is not the same as the answer in flat space.</p>
+<h2 id="the-kms-condition-and-where-its-width-lives">The KMS Condition and Where Its Width Lives</h2>
+<h3 id="the-statement-in-flat-space-recalled-in-one-paragraph">The statement in flat space, recalled in one paragraph</h3>
+<p><strong>The KMS condition says that the thermal correlation functions extend analytically to a strip whose width is the inverse temperature.</strong> For a state $\omega_\beta$ and the time-translation group $\alpha_{r'_t}$,</p>
+<p>$$
+F_{AB}(r'_t)=\omega_\beta\bigl(A\,\alpha_{r'_t}(B)\bigr),
+\qquad
+F_{AB}\ \text{analytic in}\ 0<\operatorname{Im}r'_t<\beta,
+\qquad
+F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t).
+$$</p>
+<p>This is <a href="the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>'s statement, and the corpus's $\beta$ is $\beta=\frac{m\,c}{k_m\,k_B\,T}$, an imaginary-time circumference and therefore a length. Nothing in this article changes the statement; what it changes is what the width is a function of.</p>
+<h3 id="two-widths-and-why-there-are-two">Two widths, and why there are two</h3>
+<p><strong>The width belongs to the flow that generates the time translations, and the temperature belongs to the observer who measures it, and on a horizon these are not the same object.</strong> The distinction is the whole content of the covariant bookkeeping.</p>
+<ul>
+<li><strong>The flow's width.</strong> The KMS condition is stated with respect to a one-parameter group of automorphisms. On a horizon the group is generated by the horizon's Killing field, and its parameter is the Killing time, which is normalised once and for all at infinity. The width in that parameter is a single number, $\beta_H$.</li>
+<li><strong>The observer's width.</strong> A static observer at an event $x$ measures proper time, and the ratio of proper time to Killing time is the lapse $\ell(x)$. The observer's local temperature is the flow's temperature divided by the lapse, so the observer's local inverse temperature is the flow's multiplied by it:</li>
+</ul>
+<p>$$
+T(x)=\frac{T_H}{\ell(x)},
+\qquad
+\beta(x)=\beta_H\,\ell(x).
+$$</p>
+<p>The two displays are one statement and it is Tolman's law, quoted from <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a> in the form $Tc=\text{const}$ and read here with the lapse in place of the light speed. In a medium the varying scale is $c$; on a horizon it is $\ell$. The structure of the statement is the same, which is the reason the two articles can share the letters.</p>
+<h3 id="the-lapse-and-what-it-is-not">The lapse, and what it is not</h3>
+<p><strong>The lapse is a scalar function of the event, and in this article it never appears as a metric coefficient.</strong> Write it as the ratio of the proper time of the static observer at $x$ to the Killing time at infinity:</p>
+<p>$$
+\ell(x)=\frac{d\tau_{\text{proper}}}{dr'_t},
+\qquad
+\ell\to0\ \text{at the horizon},
+\qquad
+\ell\to1\ \text{at infinity}.
+$$</p>
+<p>The corpus writes its metric as $\delta_{\mu\nu}$ with every coefficient $+1$, and a horizon is not a coefficient of that metric: it is a surface on which the imported geometry's lapse vanishes. So the lapse enters this article as an imported scalar — a number attached to each event by the geometry that the corpus imports — and the algebra carries only the local tangent structure at each point, which is the zero-divisor cone. <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a> states that division of labour and this article adopts it.</p>
+<p><strong>Why the lapse and not the light speed.</strong> In a medium the local complex structure supplies the scale $c$ and Tolman's law ties the temperature to it. On a horizon the light speed is the vacuum's and it is constant; the scale that varies is the lapse, and Tolman's law ties the temperature to that instead. The two cases are the same law with different varying scales, which is why a reader who has understood article 11 can read this one directly.</p>
+<h2 id="the-modular-flow-on-a-horizon">The Modular Flow on a Horizon</h2>
+<h3 id="the-modular-parameter-is-the-killing-time-in-units-of-the-flows-width">The modular parameter is the Killing time in units of the flow's width</h3>
+<p><strong>The modular parameter and the Killing time differ by a constant, and the constant is the flow's inverse temperature.</strong> The Bisognano–Wichmann theorem, in the form the corpus states it, says that the modular flow of a wedge is the boost and that the modular operator is $\Delta=\exp(-2\pi H_{\mathrm{modular,boost}})$, so the modular flow $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$ acts as the boost by rapidity $2\pi s$. A boost is a translation in rapidity, and on a horizon the rapidity per unit Killing time is the surface gravity in the frequency normalization. Hence</p>
+<p>$$
+2\pi s=\kappa_\omega\,r'_t
+\qquad\Longleftrightarrow\qquad
+s=\frac{r'_t}{\beta_H},
+\qquad
+\beta_H=\frac{2\pi}{\kappa_\omega}=\frac{2\pi c}{\kappa},
+$$</p>
+<p>where the last equality uses $\kappa_\omega=\kappa/c$ with $\kappa$ the surface gravity in the acceleration normalization.</p>
+<p><strong>The display is the bookkeeping in one line.</strong> The modular parameter is the Killing time measured in units of the flow's inverse temperature, so one unit of the modular parameter is one turn of the thermal circle. The KMS periodicity $\sigma_{s+1}=\sigma_s$ is then the statement that the imaginary-time direction is compact with circumference $\beta_H$, and the analytic continuation $r'_t\mapsto r'_t+i\beta_H$ is one full turn of the modular flow in the complexified parameter. A reader who has the flat KMS statement in hand should read the display as its curved-space spelling: the width is now attached to the flow and not to an observer.</p>
+<h3 id="the-modular-hamiltonian">The modular Hamiltonian</h3>
+<p><strong>The generator of the flow is Hermitian, and in the corpus's sectors it is an element of the informational one.</strong> The modular Hamiltonian is</p>
+<p>$$
+H_{\mathrm{modular}}=-\log\Delta,
+$$</p>
+<p>which is Hermitian because $\Delta$ is positive, so it lies in $\mathbb{B}_{\Psi}$ and not in the material sector, as <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a> records. The thermal state is the exponential of it,</p>
+<p>$$
+\omega_\beta\bigl(\,\cdot\,\bigr)=\frac{\operatorname{Tr}\bigl(e^{-\beta_H H_{\mathrm{modular}}}\,\cdot\,\bigr)}{Z},
+\qquad
+Z=\operatorname{Tr}e^{-\beta_H H_{\mathrm{modular}}},
+$$</p>
+<p>and this is the statement that the KMS condition and the Gibbs form are the same condition under the identification $\beta\mapsto\beta_H$. The corpus's <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a> carries the flat-space version of the same display, and <a href="equilibrium-partition-function-in-a-moving-frame.html">Equilibrium Partition Function in a Moving Frame</a> adds the boost.</p>
+<p><strong>Two sectors, one generator, and the reason it matters.</strong> The flow's generator is Hermitian and therefore informational; the imaginary-time direction in which the KMS strip extends is the material sector's own direction. This is the same split the local-thermal-structure article makes between the algebra's $i$ and the state's $\beta$: the direction is algebraic, the scale is the state's, and here the direction is the material sector's imaginary time while the scale is the horizon's surface gravity.</p>
+<h3 id="the-periodic-identification-in-the-letters-of-the-category">The periodic identification, in the letters of the category</h3>
+<p><strong>The KMS condition on the horizon is the identification of imaginary time with period the flow's width.</strong> In the letters of this category the condition is</p>
+<p>$$
+r'_t\sim r'_t+i\,\beta_H,
+\qquad
+\beta_H=\frac{m\,c}{k_m\,k_B\,T_H},
+$$</p>
+<p>where the second display is the corpus's $\beta$ evaluated at the horizon temperature. So the covariant bookkeeping costs one thing and no more: the number that was a constant in flat space is evaluated at the horizon's temperature and then multiplied by the lapse for the observers. The rest of the KMS structure — the strip, the boundary condition, the Matsubara spectrum, the characterization of the thermal state — is unchanged, and this article does not restate it.</p>
+<h2 id="the-horizon-limit">The Horizon Limit</h2>
+<h3 id="the-lapse-vanishes-and-the-observers-circle-collapses">The lapse vanishes and the observer's circle collapses</h3>
+<p><strong>At the horizon the static observer's proper time stops advancing relative to the Killing time, and the observer's thermal circle collapses.</strong> With $\beta(x)=\beta_H\ell(x)$ and $\ell\to0$ at the horizon,</p>
+<p>$$
+\lim_{x\to\text{horizon}}\beta(x)=0,
+\qquad
+\lim_{x\to\text{horizon}}T(x)=\infty .
+$$</p>
+<p>The divergence is real and it is the statement that no static observer sits on a horizon: the acceleration required grows without bound, and the Unruh temperature of that acceleration grows with it. What stays finite is the flow's width $\beta_H$, because it is fixed by the surface gravity, which is the <em>redshifted</em> acceleration — the product of the divergent proper acceleration with the vanishing lapse. <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a> separates these two quantities and this article uses its separation without repeating the derivation.</p>
+<h3 id="the-numbers">The numbers</h3>
+<p><strong>The two profiles are checked on the Schwarzschild lapse with the horizon radius set to one.</strong> With $r_s=1$ and $c=1$, the lapse is $\ell(r)=\sqrt{1-r_s/r}$, the surface gravity in the frequency normalization is $\kappa_\omega=c/(2r_s)=0.5$, and the flow's width is $\beta_H=2\pi/\kappa_\omega=4\pi=12.566\,370\,614$. The table gives the observer's quantities at four radii.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$r/r_s$</th>
+<th>$\ell(r)$</th>
+<th>$\beta(r)/\beta_H$</th>
+<th>$T(r)/T_H$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1.05$</td>
+<td>$0.218\,217\,89$</td>
+<td>$0.218\,217\,89$</td>
+<td>$4.582\,575\,69$</td>
+</tr>
+<tr>
+<td>$1.10$</td>
+<td>$0.301\,511\,34$</td>
+<td>$0.301\,511\,34$</td>
+<td>$3.316\,624\,79$</td>
+</tr>
+<tr>
+<td>$2.00$</td>
+<td>$0.707\,106\,78$</td>
+<td>$0.707\,106\,78$</td>
+<td>$1.414\,213\,56$</td>
+</tr>
+<tr>
+<td>$10.00$</td>
+<td>$0.948\,683\,30$</td>
+<td>$0.948\,683\,30$</td>
+<td>$1.054\,092\,55$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third column is the second by construction and the fourth is its reciprocal; the check that matters is that the product $\beta(r)\,T(r)$ is $\beta_H\,T_H$ at every radius, which it is to every digit printed. The lapse tends to zero as the horizon is approached and to one at infinity, so the observer's circle collapses at the horizon and matches the flow's at infinity: the flow's width is what the observer measures far away, and that is the sense in which $\beta_H$ is <em>the</em> temperature of the horizon.</p>
+<h3 id="the-euclidean-reading-quoted">The Euclidean reading, quoted</h3>
+<p><strong>The period that makes the Euclidean geometry regular at the horizon is the flow's width.</strong> The Hawking article computes the Euclidean Schwarzschild section and finds it regular at the horizon only if the imaginary time has period $8\pi GM/c^3$, and identifies that number with $2\pi c/\kappa=2\pi/\kappa_\omega$. In the units of the table, $8\pi GM/c^3$ with $GM/c^2=r_s/2=0.5$ is $4\pi$, which is $\beta_H$. So</p>
+<p>$$
+8\pi\,\frac{GM}{c^{3}}=\frac{2\pi c}{\kappa}=\frac{2\pi}{\kappa_\omega}=\beta_H
+=4\pi\ \text{for}\ r_s=1,
+$$</p>
+<p>and the regularity of the Euclidean section is the same statement as the KMS periodicity of the horizon flow. This is the bookkeeping's sharpest form and the article quotes it rather than re-deriving it: the number that a geometer obtains by demanding that a cone close is the number a thermodynamicist obtains by demanding that a correlation function be periodic in imaginary time, and on a Killing horizon they are one number.</p>
+<h2 id="what-the-corpus-supplies-and-what-it-imports">What the Corpus Supplies and What It Imports</h2>
+<h3 id="the-letters">The letters</h3>
+<p><strong>The transcription supplies a spelling and nothing else, and the spelling is short.</strong> Four items:</p>
+<ul>
+<li><strong>The width is a function.</strong> $\beta(x)=\beta_H\,\ell(x)$ is written with the same symbol as the flat width and differs only in bearing an argument. This is the whole of the "$\beta=\beta(x)$" bookkeeping: the letter keeps its meaning and gains a dependence.</li>
+<li><strong>The lapse is a scalar, not a coefficient.</strong> It enters as an imported number per event and never as a component of $\delta_{\mu\nu}$. The consequence is that every display in this article is a relation among scalars, and none of them needs an index.</li>
+<li><strong>The generator is Hermitian and informational.</strong> $H_{\mathrm{modular}}=-\log\Delta$ lies in $\mathbb{B}_{\Psi}$, while the imaginary direction of the strip is the material sector's. The split is the same one the local-thermal-structure article makes, and it is the corpus's way of saying that a thermal state has an informational generator and a material direction.</li>
+<li><strong>The modular parameter is a Killing time divided by the width.</strong> $s=r'_t/\beta_H$ is the one equation that connects the operator formalism's parameter to the geometry's coordinate, and it is a ratio of two lengths, as the corpus's units require.</li>
+</ul>
+<h3 id="the-import">The import</h3>
+<p><strong>What the corpus imports is the geometry, and it says so.</strong> The metric, the surface gravity, the horizon and the collapse are general relativity's; the algebra carries the local tangent structure at each point and nothing global. <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a> states that <em>Curved Spacetime and the Biquaternion Framework</em> establishes that the framework's own local-scale route produces no black-hole exteriors, so the Schwarzschild geometry is imported rather than derived. This article inherits that position and adds no geometry of its own: every geometric object it uses — $\ell$, $\kappa$, $r_s$ — is quoted.</p>
+<p><strong>What the corpus does not import is the thermal statement.</strong> The KMS condition is the corpus's own, in the sense that the material sector's imaginary time is intrinsic and the condition is a statement about that direction; the Bisognano–Wichmann theorem is the imported piece that ties the modular flow to the geometry. The division is worth keeping straight, because it is the difference between a transcription of thermodynamics (this article) and a derivation of a geometric result (which the corpus does not attempt).</p>
+<h3 id="the-one-place-the-framework-is-not-merely-a-notation">The one place the framework is not merely a notation</h3>
+<p><strong>The material sector's imaginary time is intrinsic, so the KMS continuation is not an analytic trick performed on a real time.</strong> This is the corpus's one substantive contribution to the subject and it is inherited, not made here: the material sector is $\mathbb{B}_{\Phi}$ with temporal coefficient $i r'_t$, so a strip in the imaginary direction is a strip in the sector's own coordinate. <a href="the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a> makes this point for flat space and <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a> for the horizon. On a Killing horizon the point survives unchanged: the width $\beta_H$ is a length along the same algebraic direction, and the lapse is the factor that converts it into the observer's proper length.</p>
+<p><strong>What the framework does not do is supply $\kappa_\omega$.</strong> Nothing in the algebra selects a surface gravity, a lapse profile or a horizon: those are data of the imported geometry. A reader looking for an algebraic derivation of $8\pi GM/c^3$ will not find one here, and the corpus is explicit that it does not claim one.</p>
+<h2 id="two-ways-to-the-same-number">Two Ways to the Same Number</h2>
+<p><strong>The horizon temperature is fixed by any one of three quantities, and the corpus checks that all three agree.</strong> With $r_s=1$, $c=1$ and hence $GM/c^{2}=r_s/2=0.5$, the Hawking article's two normalizations of the surface gravity and the Euclidean period give</p>
+<p>$$
+\kappa=\frac{c^{4}}{4GM}=\frac{1}{4\cdot0.5}=0.5,
+\qquad
+\kappa_\omega=\frac{c}{2r_s}=0.5,
+\qquad
+\beta_H=\frac{2\pi}{\kappa_\omega}=4\pi,
+$$</p>
+<p>and the Euclidean period $8\pi GM/c^{3}=8\pi\cdot0.5=4\pi$ agrees with $\beta_H$ to every digit. The agreement of the first two is the statement $\kappa_\omega=\kappa/c$, which is an identity in these units; the agreement of the third with the fourth is the Euclidean regularity statement quoted in the preceding section. <strong>Three routes, one number: this is the check that the covariant bookkeeping has been done with the corpus's $c$ in the right places.</strong> A reader who omits a factor of $c$ between the two normalizations will find $\beta_H$ off by $c$, which in the corpus's units is a length measured in the wrong units.</p>
+<p><strong>Where the numbers enter the fluid articles.</strong> $\beta_H$ is the one number that <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a> needs from this article, and $\beta(x)=\beta_H\ell(x)$ is the profile it needs near a horizon. <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a> takes $\beta$ as a length, which is what the corpus's units make it, and the horizon supplies a value of that length without changing its dimension. Nothing in either article needs $\kappa$ itself; what they need is that a pointwise temperature exists near a horizon and that it is the flow's value times the lapse.</p>
+<h2 id="the-wedge-and-why-a-region-will-not-do">The Wedge, and Why a Region Will Not Do</h2>
+<p><strong>The covariant bookkeeping needs a Killing flow, so it works on a horizon and on a wedge and not on a general region.</strong> The reason is structural: the width $\beta(x)$ is defined by comparing proper time with the parameter of a flow, and a general region of a curved spacetime has no flow whose parameter is a coordinate of the region. Without the flow there is no $\beta_H$, and without $\beta_H$ there is no $\beta(x)$ to multiply by the lapse. <a href="the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a> makes the corresponding point for the modular flow itself, and the point transfers to the width unchanged.</p>
+<p><strong>Inside the wedge the geometry is the horizon's to leading order.</strong> The near-horizon region of any non-extremal horizon is a Rindler wedge, with Rindler acceleration equal to the surface gravity, which is the identification that makes the Unruh and Hawking statements one result. So the nested structure is: the wedge gives the flat case exactly, the near-horizon region gives the curved case to leading order, and the horizon flow gives it globally with the lapse as the only correction. This article's bookkeeping lives on the last of the three and inherits the other two.</p>
+<p><strong>The consequence for $\beta(x)$ is that the profile is not universal.</strong> $\beta(x)=\beta_H\ell(x)$ says that the observer's inverse temperature is the flow's times the lapse, and the lapse is the imported geometry's. Two spacetimes with the same surface gravity have the same $\beta_H$ and different profiles. Nothing in this article selects a profile, and nothing in the algebra does either: this is the precise sense in which the thermal statement is the corpus's and the geometry is not.</p>
+<h2 id="crossing-the-horizon">Crossing the Horizon</h2>
+<p><strong>Inside the horizon the static observer does not exist, and the bookkeeping has to be read by the infalling one.</strong> The lapse becomes imaginary beyond the horizon — the surface is null, and a static observer's trajectory would have to be spacelike — so $\beta(x)=\beta_H\ell(x)$ ceases to be a real length there. What survives is the flow: the horizon-generating field is still a Killing field on the extended spacetime, its parameter is still normalised at infinity, and its width is still $\beta_H$. So the covariant bookkeeping is a statement about the <em>exterior</em> observer field, and the interior is described by the same state read on a different family of trajectories.</p>
+<p><strong>This is why the horizon temperature is a property of the flow and not of a place.</strong> The temperature $T_H$ is what an observer far away assigns to the horizon, and the temperature $T(x)$ is what a static observer at $x$ measures; neither is a function evaluated <em>on</em> the horizon, because the lapse vanishes there and no static observer sits there. A reader who asks for "the temperature at the horizon" is asking for the limit of a product of two divergent quantities, and the product has a definite value only when it is taken as the redshifted acceleration, which is $\kappa$. The Hawking article computes exactly that product and this article quotes it.</p>
+<p><strong>The analytic continuation past the horizon is the same continuation that gives the KMS condition its meaning.</strong> In the Euclidean section the horizon is a point where the thermal circle closes smoothly, and the regularity of the closure is what fixes $\beta_H$. In the Lorentzian section the same circle appears as the modular flow's period. The two are one circle seen in two signatures, and the corpus's material sector is the place where the imaginary direction is native rather than continued. That is the whole of the framework's contribution to this article, and it is a contribution of letters, not of physics.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established (physics, imported).</strong> The KMS condition and its characterization of thermal equilibrium; the Bisognano–Wichmann theorem, so that the modular flow of a wedge is the boost; the Unruh temperature $T=m a/(2k_m\pi k_B)$ with $\beta=2\pi c/a$; the Hawking temperature with $\beta_H=2\pi c/\kappa=2\pi/\kappa_\omega$; the Euclidean regularity period $8\pi GM/c^3$; the Tolman profile $T(x)=T_H/\ell(x)$.</p>
+<p><strong>Established (this article's bookkeeping).</strong> The two widths and their relation $\beta(x)=\beta_H\ell(x)$; the modular parameter as the Killing time in units of the flow's width, $s=r'_t/\beta_H$, from $2\pi s=\kappa_\omega r'_t$; the collapse of the observer's circle and the survival of the flow's at the horizon; the numerical table for the Schwarzschild lapse at four radii, with $\beta(r)T(r)=\beta_H T_H$ at every one; the identification of the Euclidean regularity period with $\beta_H$ in the units of the table.</p>
+<p><strong>Interpretation.</strong> That the covariant bookkeeping is worth separating from the three results it is built on. The separation is didactic rather than physical — nothing new is predicted — and its worth is that the articles on the fluid need a definite answer to "what is $\beta$ at a point", which is $\beta_H\ell(x)$ for an observer and $\beta_H$ for the flow.</p>
+<p><strong>Not claimed.</strong> That the framework derives the metric, the horizon or the surface gravity. That the local temperature is finite at the horizon — it is not, and the divergence is physical. That the modular flow of an arbitrary region is geometric — it is not, and the Bisognano–Wichmann article states why the theorem needs a wedge. And that the algebra supplies a modular Hamiltonian for a field algebra: the corpus's modular Hamiltonian is finite-dimensional, which <a href="the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a> states as its own limit.</p>
+<h2 id="summary">Summary</h2>
+<p>On a Killing horizon the KMS condition has two widths. The flow's width is $\beta_H=2\pi c/\kappa=2\pi/\kappa_\omega$, a single number fixed by the surface gravity and normalised by the Killing time at infinity. The observer's width is $\beta(x)=\beta_H\ell(x)$, the flow's width multiplied by the lapse, so the observer's local temperature is $T(x)=T_H/\ell(x)$: Tolman's law with the lapse in place of the light speed, quoted from the local-thermal-structure article and not re-derived. The lapse vanishes at the horizon, so the observer's thermal circle collapses and the observer's temperature diverges, while the flow's width stays finite because the surface gravity is the redshifted acceleration.</p>
+<p>The modular flow supplies the parameter. From the Bisognano–Wichmann statement that the modular flow is the boost by rapidity $2\pi s$, and from the horizon's rapidity per unit Killing time being $\kappa_\omega$, the modular parameter is $s=r'_t/\beta_H$: one turn of the modular flow is one turn of the thermal circle, and the KMS periodicity $\sigma_{s+1}=\sigma_s$ is the compactness of the imaginary direction with circumference $\beta_H$. The modular Hamiltonian $-\log\Delta$ is Hermitian and therefore lies in the informational sector, while the strip extends along the material sector's own imaginary time. The Euclidean regularity period $8\pi GM/c^3$ equals $\beta_H$; with $r_s=1$ both are $4\pi=12.566\,370\,614$, and the table of the lapse at four radii gives $\beta(r)/\beta_H=\ell(r)$ and $T(r)/T_H=1/\ell(r)$ with the product constant to every digit printed.</p>
+<p><strong>This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
+<td>Material and informational sectors</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary</td>
+</tr>
+<tr>
+<td>$r'_t$</td>
+<td>Temporal coordinate of the material sector, a length</td>
+</tr>
+<tr>
+<td>$\beta=\frac{m\,c}{k_m\,k_B\,T}$</td>
+<td>Inverse temperature, an imaginary-time circumference</td>
+</tr>
+<tr>
+<td>$\beta_H=\frac{m\,c}{k_m\,k_B\,T_H}$</td>
+<td>The flow's inverse temperature on the horizon</td>
+</tr>
+<tr>
+<td>$\beta(x)=\beta_H\,\ell(x)$</td>
+<td>The observer's local inverse temperature</td>
+</tr>
+<tr>
+<td>$\ell(x)$</td>
+<td>Lapse: proper time per unit Killing time; $0$ at the horizon, $1$ at infinity</td>
+</tr>
+<tr>
+<td>$T(x)=T_H/\ell(x)$</td>
+<td>The observer's local temperature, Tolman's law</td>
+</tr>
+<tr>
+<td>$T_H$</td>
+<td>Hawking temperature of the horizon</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>Surface gravity, acceleration normalization</td>
+</tr>
+<tr>
+<td>$\kappa_\omega=\kappa/c$</td>
+<td>Surface gravity, frequency normalization, an inverse length</td>
+</tr>
+<tr>
+<td>$\omega_\beta$</td>
+<td>Thermal state</td>
+</tr>
+<tr>
+<td>$\alpha_{r'_t}$</td>
+<td>Time-translation automorphism group</td>
+</tr>
+<tr>
+<td>$F_{AB}(r'_t)=\omega_\beta(A\alpha_{r'_t}(B))$</td>
+<td>Thermal correlation function</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>Modular operator</td>
+</tr>
+<tr>
+<td>$H_{\mathrm{modular}}=-\log\Delta$</td>
+<td>Modular Hamiltonian, Hermitian, in $\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>$\sigma_s(A)=\Delta^{is}A\Delta^{-is}$</td>
+<td>Modular flow</td>
+</tr>
+<tr>
+<td>$s=r'_t/\beta_H$</td>
+<td>Modular parameter</td>
+</tr>
+<tr>
+<td>$2\pi s=\kappa_\omega r'_t$</td>
+<td>Rapidity carried by the modular flow</td>
+</tr>
+<tr>
+<td>$Z=\operatorname{Tr}e^{-\beta_H H_{\mathrm{modular}}}$</td>
+<td>Partition function of the horizon state</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>Proper acceleration of a uniformly accelerated observer</td>
+</tr>
+<tr>
+<td>$r_s=2GM/c^2$</td>
+<td>Schwarzschild radius</td>
+</tr>
+<tr>
+<td>$G,\ M$</td>
+<td>Gravitational constant and mass</td>
+</tr>
+<tr>
+<td>$k_B$, $k_m=mc/\hbar$</td>
+<td>Boltzmann's constant and mass wave number</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Speed of light</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}$</td>
+<td>The one metric of the corpus, all coefficients $+1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," <em>Journal of Mathematical Physics</em> <strong>16</strong> (1975) 985–1007, for the modular flow of a wedge.</li>
+<li>W. G. Unruh, "Notes on black-hole evaporation," <em>Physical Review D</em> <strong>14</strong> (1976) 870–892, for the accelerated observer's thermal state.</li>
+<li>S. W. Hawking, "Particle creation by black holes," <em>Communications in Mathematical Physics</em> <strong>43</strong> (1975) 199–220, for the horizon temperature.</li>
+<li>G. W. Gibbons and S. W. Hawking, "Action integrals and partition functions in quantum gravity," <em>Physical Review D</em> <strong>15</strong> (1977) 2752–2756, for the Euclidean period and the regularity argument.</li>
+<li>R. Haag, <em>Local Quantum Physics</em> (Springer, 1996), Chapter V, for the KMS condition and its characterization of thermal equilibrium.</li>
+<li>R. M. Wald, <em>Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics</em> (University of Chicago Press, 1994), for the covariant KMS statement and the horizon normalisation.</li>
+<li>W. Israel, "Thermo-field dynamics of black holes," <em>Physics Letters A</em> <strong>57</strong> (1976) 107–110, for the horizon state as a thermal state in the field algebra.</li>
+<li>The companion articles: <a href="the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a>, <a href="the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a>, <a href="hawking-radiation-in-biquaternionic-form.html">Hawking Radiation in Biquaternionic Form</a>, <a href="the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>, and <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

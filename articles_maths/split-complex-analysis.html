@@ -81,11 +81,11 @@ $$</p>
 <p>where $j^2 = +1$. The real number $q$ is the <strong>real part</strong>, and $q'$ is the <strong>imaginary part</strong>. We write $q = \operatorname{Re} Q$ and $q' = \operatorname{Im} Q$.</p>
 <p>The <strong>Euclidean modulus</strong> of $Q$ is</p>
 <p>$$
-\|Q\|_E = \sqrt{q^2 + q'^2},
+\|Q\| = \sqrt{q^2 + q'^2},
 $$</p>
 <p>and the <strong>Euclidean distance</strong> between two split complex numbers $Q$ and $B$ is</p>
 <p>$$
-d(Q, B) = \|Q - B\|_E.
+d(Q, B) = \|Q - B\|.
 $$</p>
 <p>This makes $\mathbb{C}_{\mathrm{spl}}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.</p>
 <p>The <strong>split modulus</strong> is</p>
@@ -96,7 +96,7 @@ $$</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
 <p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
 <p>$$
-B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}_{\mathrm{spl}} : \|Q - Q_0\| < r\}.
 $$</p>
 <p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{C}_{\mathrm{spl}}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
@@ -114,7 +114,7 @@ $$</p>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
 <p>A sequence $(Q_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{C}_{\mathrm{spl}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies \|Q_n - L\|_E < \epsilon.
+n \geq N \implies \|Q_n - L\| < \epsilon.
 $$</p>
 <p>We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.</p>
 <p><strong>Uniqueness.</strong> If $Q_n \to L$ and $Q_n \to L'$, then $L = L'$.</p>
@@ -132,7 +132,7 @@ $$</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
 <p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
+m, n \geq N \implies \|Q_m - Q_n\| < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{C}_{\mathrm{spl}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}_{\mathrm{spl}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
@@ -142,7 +142,7 @@ $$</p>
 $$</p>
 <p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-Q \in D, \; 0 < \|Q - Q_0\|_E < \delta \implies \|f(Q) - L\|_E < \epsilon.
+Q \in D, \; 0 < \|Q - Q_0\| < \delta \implies \|f(Q) - L\| < \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
 <p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
@@ -154,7 +154,7 @@ $$</p>
 $$</p>
 <p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-Q \in D, \; \|Q - Q_0\|_E < \delta \implies \|f(Q) - f(Q_0)\|_E < \epsilon.
+Q \in D, \; \|Q - Q_0\| < \delta \implies \|f(Q) - f(Q_0)\| < \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
 <p><strong>Theorem.</strong> Sums and products of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
@@ -163,7 +163,7 @@ $$</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
 <p>A function $f : D \to \mathbb{C}_{\mathrm{spl}}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-Q, B \in D, \; \|Q - B\|_E < \delta \implies \|f(Q) - f(B)\|_E < \epsilon.
+Q, B \in D, \; \|Q - B\| < \delta \implies \|f(Q) - f(B)\| < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="split-complex-differentiability">Split Complex Differentiability</h2>
@@ -242,11 +242,11 @@ $$</p>
 <p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.</p>
 <p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
 <p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
-<p><strong>Estimation.</strong> If $\|f(Q)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p><strong>Estimation.</strong> If $\|f(Q)\| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
 <p>$$
-\left\| \int_\gamma f(Q) \, dQ \right\|_E \leq \sqrt{2} M L.
+\left\| \int_\gamma f(Q) \, dQ \right\| \leq \sqrt{2} M L.
 $$</p>
-<p>The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|Q B\|_E \leq \sqrt{2} \|Q\|_E \|B\|_E$, and the constant is sharp.</p>
+<p>The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|Q B\| \leq \sqrt{2} \|Q\| \|B\|$, and the constant is sharp.</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
 <p><strong>Theorem (Cauchy–Goursat, split version).</strong> If $f$ is split complex differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
 <p>$$
@@ -286,17 +286,17 @@ $$</p>
 <p>$$
 f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$</p>
-<p>valid for $\|Q - Q_0\|_E < r$.</p>
+<p>valid for $\|Q - Q_0\| < r$.</p>
 <p><strong>Proof.</strong> In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine.</p>
 <p><strong>Corollary.</strong> A split complex differentiable function whose components are real-analytic is analytic: it equals its Taylor series in a neighborhood of every point.</p>
 <p><strong>Caution.</strong> The identity theorem fails in general, because a split complex differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the two idempotent components are independent, and one can vanish while the other does not.</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be split complex differentiable on a punctured disk $0 < \|Q - Q_0\|_E < R$.</p>
-<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\|_E < R$.</p>
+<p>Let $f$ be split complex differentiable on a punctured disk $0 < \|Q - Q_0\| < R$.</p>
+<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a split complex differentiable function on $\|Q - Q_0\| < R$.</p>
 <p><strong>Pole.</strong> $Q_0$ is a pole if $f(Q) \to \infty$ in Euclidean modulus as $Q \to Q_0$.</p>
 <p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if it is neither removable nor a pole.</p>
-<p><strong>Caution.</strong> The classification is empty under this hypothesis. The component $f_+$ is a function of $Q_+$ alone, and differentiating $f$ at a point with $Q_+ = Q_{0+}$ and $Q_- \neq Q_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Q_{0+}$, and dually for $f_-$. So $f$ extends to $Q_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.</p>
+<p><strong>Caution.</strong> The classification is empty under this hypothesis. The component $f_+$ is a function of $Q_+$ alone, and differentiating $f$ at a point with $Q_+ = Q_{0+}$ and $Q_- \neq Q_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $Q_{0+}$, and dually for $f_-$. So $f$ extends to $Q_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|^2 = (f_+^2 + f_-^2)/2$.</p>
 <h3 id="residues">Residues</h3>
 <p>There is <strong>no</strong> general residue theory in split complex analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity.</p>
 <p>In the idempotent basis, each component has its own residue, and the two residues are independent. The sum of the two residues is the analogue of the complex residue, but it does not determine the integral in general.</p>
@@ -394,7 +394,7 @@ $$</p>
 <td>Split complex conjugate</td>
 </tr>
 <tr>
-<td>$\|Q\|_E = \sqrt{q^2 + q'^2}$</td>
+<td>$\|Q\| = \sqrt{q^2 + q'^2}$</td>
 <td>Euclidean modulus</td>
 </tr>
 <tr>

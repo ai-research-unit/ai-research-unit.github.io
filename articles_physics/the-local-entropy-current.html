@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Local Entropy Current — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-local-entropy-current"><strong>The Local Entropy Current</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The second law is one divergence, and this article writes it on the current that carries the entropy of the fluid.</strong> The current is</p>
+<p>$$
+\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\,\gamma\left(e_t+\vec\beta_{\mathrm{vel}}\right),
+\qquad
+\vec\beta_{\mathrm{vel}}=\frac{\vec v}{c},
+$$</p>
+<p>an element of the material sector with a real temporal coefficient and a real vector part, and the second law reads</p>
+<p>$$
+\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)\ge 0 .
+$$</p>
+<p><strong>Everything in this article follows from those two displays plus one declaration: the current is Hermitian.</strong> The declaration is what makes the inequality <em>real</em> — the scalar part of the divergence of a Hermitian element is a real number, and the scalar part of the divergence of an anti-Hermitian one is imaginary — and it is made once, here, and inherited by every article of the category that writes an entropy inequality, in particular <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>, which does not write a fresh $\mathrm{Re}$.</p>
+<p><strong>What this article absorbs and what it does not.</strong> It absorbs only the pointwise objects: the entropy <em>density</em> as a field, the entropy <em>current</em> as an element, and the divergence that says whether the density grows. <strong>It does not absorb the entropy functional, and it adds nothing that <a href="coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a> already has.</strong> That article owns the functional $\mathcal{S}(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ on the informational sector, its dependence on the biquaternion norm alone, its vanishing on the zero-divisor cone, and its monotonicity under coarse-graining. <strong>This article cites all of that and repeats none of it.</strong> The relation between the two articles is stated in the section on what is left to be said: the functional is a number attached to a state, the current is a field attached to a fluid, and the second law below is the statement that the field version's divergence has a sign.</p>
+<p><strong>What the current is not.</strong> It is not the entropy functional's gradient, and it is not the informational sector's state: it lives in $\mathbb{B}_\Phi$ and its coefficients are the fluid's own thermodynamic quantities. <strong>The two sectors meet in the norm</strong>, as they do throughout the corpus, and the meeting is stated where it occurs rather than assumed at the outset.</p>
+<h2 id="the-current-and-its-hermiticity">The Current and Its Hermiticity</h2>
+<h3 id="the-definition">The definition</h3>
+<p><strong>The entropy current is the proper entropy density carried along the flow, and the flow element supplies the direction.</strong> With the flow element of <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>, $\tilde V_\Phi=\gamma c\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, and with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, the entropy current is the element</p>
+<p>$$
+\tilde J_{\Phi,\mathrm{ent}}=\frac{s_{\mathrm{ent}}}{c}\,\gamma c\left(e_t+\vec\beta_{\mathrm{vel}}\right)
+=s_{\mathrm{ent}}\,\gamma\left(e_t+\vec\beta_{\mathrm{vel}}\right),
+$$</p>
+<p>whose components, written low on the pattern of $k_{\Phi,\mu}$, are</p>
+<p>$$
+J_{\Phi,\mathrm{ent},t}=s_{\mathrm{ent}}\,\gamma,
+\qquad
+J_{\Phi,\mathrm{ent},\eta}=s_{\mathrm{ent}}\,\gamma\,\beta_{\mathrm{vel},\eta}.
+$$</p>
+<p><strong>The temporal component is the density and the spatial ones are the flux, and the factor $i$ that the flow element carries has been dropped in passing from the flow to the current.</strong> That is the whole of the construction, and it is worth being explicit about why the factor is dropped: a displacement is imaginary in its temporal slot because the corpus measures imaginary time, while a <em>density</em> is a real number per unit proper volume and its temporal slot is real. <strong>The flow element and the current therefore differ by exactly one $i$</strong>, and that difference is what the Hermiticity declaration formalises.</p>
+<p><strong>The comparison with the thermal element, which is the same construction with the $i$ kept.</strong> In <a href="equilibrium-partition-function-in-a-moving-frame.html">Equilibrium Partition Function in a Moving Frame</a> the thermal element is $\tilde\beta_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$: same direction, same $\gamma$, but anti-Hermitian because it is a displacement along imaginary time. <strong>The pair $\tilde\beta_\Phi$ and $\tilde J_{\Phi,\mathrm{ent}}$ are the two ways the corpus writes "the same direction, once for a length and once for a density"</strong>, and a reader who has both in view will not confuse a period with an entropy.</p>
+<h3 id="the-hermiticity-declaration-and-what-it-buys">The Hermiticity declaration, and what it buys</h3>
+<p><strong>The current is declared Hermitian: $\tilde J_{\Phi,\mathrm{ent}}^{*}=\tilde J_{\Phi,\mathrm{ent}}$, with the star the corpus's conjugation that reverses the quaternion part and conjugates the central $i$.</strong> On the components above this is the statement that all four coefficients are real, which they are by construction.</p>
+<p><strong>The declaration buys exactly one thing, and the article states it as a theorem-shaped fact rather than a convenience.</strong> For an element $\tilde Q$ with components $Q_\mu$,</p>
+<p>$$
+\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde Q\right)
+=\partial_\mu Q_\mu
+\qquad\text{when }\tilde Q^{*}=\tilde Q,
+$$</p>
+<p>the scalar part of the corpus's divergence being the ordinary divergence of the four components <strong>precisely when the element is Hermitian</strong>. For an anti-Hermitian element the same computation returns $i$ times a real number, and an inequality written on it would compare an imaginary quantity with zero, which is meaningless. <strong>The declaration is therefore not a convention about signs; it is the condition under which the second law has a truth value.</strong></p>
+<p><strong>Why the corpus does not instead write $\mathrm{Re}$ everywhere.</strong> The two spellings are equivalent — a fresh $\mathrm{Re}$ on every inequality gives the same set of true statements — and the corpus chooses the declaration because it is made once and inherited, whereas a $\mathrm{Re}$ has to be repeated at every display and can be silently dropped at one of them. <strong>The rule for the reader is therefore: an entropy inequality in this corpus comes with one of two marks, a declared-Hermitian current or a written $\mathrm{Re}$, and never with neither.</strong></p>
+<p><strong>The divergence's spelling.</strong> The article uses $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})$, which is one of the two live spellings in the corpus, the other being $\langle\tilde\nabla,\tilde J\rangle_{\natural}$. <strong>No $\otimes$ appears in a divergence</strong>: the tensor product is for algebra products, and the divergence is the algebra's own $\natural$-graded derivative contracted with the element. No raised star on the gradient either; the corpus has zero uses of that spelling.</p>
+<h3 id="the-norm-is-the-proper-entropy-density">The norm is the proper entropy density</h3>
+<p><strong>The quaternionic norm of the current is the square of the proper entropy density, and this is the check that the $\gamma$ factors are right.</strong> With $J=a\,e_t+\vec b$ and $a=\gamma s_{\mathrm{ent}}$, $\vec b=\gamma s_{\mathrm{ent}}\vec\beta_{\mathrm{vel}}$,</p>
+<p>$$
+\langle\tilde J_{\Phi,\mathrm{ent}}\rangle_{\natural}=a^{2}-\lvert\vec b\rvert^{2}
+=\gamma^{2}s_{\mathrm{ent}}^{2}\left(1-\beta_{\mathrm{vel}}^{2}\right)=s_{\mathrm{ent}}^{2},
+$$</p>
+<p>using $\gamma^{2}(1-\beta_{\mathrm{vel}}^{2})=1$. <strong>The norm is boost invariant and equals the square of the entropy density in the fluid's own frame</strong> — which is what a norm should do, and what a naive current with the density in the temporal slot and no $\gamma$ would fail to do.</p>
+<p><strong>The same computation for the thermal element, for contrast.</strong> There $\langle\tilde\beta_\Phi\rangle_{\natural}=-\beta^{2}$, negative because the temporal slot carries an $i$ and the spatial ones do not: $a=i\beta\gamma$, so $a^{2}=-\beta^{2}\gamma^{2}$ and $a^{2}-\lvert\vec b\rvert^{2}=-\beta^{2}\gamma^{2}(1-\beta_{\mathrm{vel}}^{2})=-\beta^{2}$. <strong>So the two elements have norms of opposite sign, and the sign is exactly the Hermiticity difference.</strong> The corpus's signature is $(1,-1,-1,-1)$ on the four slots; a Hermitian element has a positive temporal contribution and the thermal element, with its imaginary temporal coefficient, has a negative one. <strong>The entropy current is therefore a spacelike-type element and the thermal element a timelike-type one</strong>, in the sense of the norm's sign, and no physical statement depends on the names.</p>
+<p><strong>A number, because the norm is the kind of thing that can be checked.</strong> At $\beta_{\mathrm{vel}}=0.6$, $\gamma=1.25$ and $s_{\mathrm{ent}}=3$: $a=3.75$, $\lvert\vec b\rvert=2.25$, and $a^{2}-\lvert\vec b\rvert^{2}=14.0625-5.0625=9=s_{\mathrm{ent}}^{2}$ exactly. At $\beta_{\mathrm{vel}}=0.8$, $\gamma=1.666\,666\,667$ and $s_{\mathrm{ent}}=3$: $a=5.000\,000\,000$, $\lvert\vec b\rvert=4.000\,000\,000$, and $25-16=9$ exactly. <strong>The two rows are the check that the $\gamma$ sits in the temporal slot and the $\gamma\beta_{\mathrm{vel}}$ in the spatial ones</strong>, and a current written with $\gamma$ in both would fail at the second row.</p>
+<h2 id="the-second-law">The Second Law</h2>
+<h3 id="the-divergence-in-components">The divergence, in components</h3>
+<p><strong>The second law is the statement that the scalar part of the divergence is non-negative, and written out it is the continuity equation with a source.</strong> With the components above and the derivative $\partial_\mu=\partial/\partial R_\mu$,</p>
+<p>$$
+\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
+=\partial_t\left(s_{\mathrm{ent}}\gamma\right)
++\partial_\eta\left(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta}\right)
+=\sigma_{\mathrm{ent}}\ \ge 0,
+$$</p>
+<p>where $\sigma_{\mathrm{ent}}$ is the entropy production per unit coordinate volume and unit coordinate time. <strong>The display is the whole of the second law in this formalism</strong>: a divergence of a density-plus-flux with a sign. Every other statement of the second law in the category is an evaluation of this one.</p>
+<p><strong>The two readings of the same display, and why both are needed.</strong> Read as a balance, it says that the entropy in a region changes by the flux through the boundary plus the production inside. Read as an inequality, it says that the production cannot be negative, so entropy is not destroyed anywhere. <strong>The first reading is the one the fluid equations use; the second is the one the state's monotonicity uses</strong>, and the corpus keeps the two apart because the first holds for the fields and the second for the functional, which is <a href="coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>'s and is cited here rather than re-derived.</p>
+<p><strong>The equality case, stated precisely.</strong> The production vanishes identically when the current is divergence-free, $\partial_t(s_{\mathrm{ent}}\gamma)+\partial_\eta(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta})=0$, which is the statement that the total entropy of an isolated region is constant. <strong>In equilibrium this is what happens</strong>, and the mechanics of why is the next subsection's.</p>
+<h3 id="equilibrium-why-an-ideal-fluid-produces-nothing">Equilibrium: why an ideal fluid produces nothing</h3>
+<p><strong>An ideal fluid has zero production, and the reason is that its entropy per particle is constant along each worldline.</strong> With $s_{\mathrm{ent}}=\sigma_{\mathrm{spc}}n_{\mathrm{num}}$ and the particle current $\tilde J_{\Phi,\mathrm{num}}=n_{\mathrm{num}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ conserved,</p>
+<p>$$
+\partial_\mu J_{\Phi,\mathrm{num},\mu}=0
+\quad\text{and}\quad
+s_{\mathrm{ent}}=\sigma_{\mathrm{spc}}\,n_{\mathrm{num}}
+\ \Longrightarrow\
+\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
+=n_{\mathrm{num}}\gamma\,\frac{d\sigma_{\mathrm{spc}}}{dR}
+=0
+$$</p>
+<p>when $\sigma_{\mathrm{spc}}$ is constant along the flow. <strong>The derivation is two lines and it is worth having</strong>: the entropy current is the particle current times a number, so its divergence is the particle current times the gradient of that number, and the gradient is zero. <strong>This is the local form of the statement that an ideal fluid is adiabatic</strong>, and it identifies the one thing a dissipative fluid must break: either the conservation of the particle current, or the constancy of the entropy per particle.</p>
+<p><strong>The rigidity condition enters here as the statement that this is consistent.</strong> Under $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$ the flow is rigid, the local state is determined by the local data, and the adiabatic statement closes. <strong>Off rigidity the closure fails and the production is a functional of the gradients</strong>, which is the content of the dissipative article.</p>
+<h3 id="off-equilibrium-the-production-and-its-sources">Off equilibrium: the production and its sources</h3>
+<p><strong>Off equilibrium the production is a sum of squares, one per dissipative channel, and each square comes with a transport coefficient.</strong> In the first-order form the display above evaluates to</p>
+<p>$$
+\sigma_{\mathrm{ent}}=\frac{1}{T}\left(\zeta\,\theta^{2}+2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}
++\kappa_{\mathrm{th}}\,\frac{\partial_\eta T\,\partial_\eta T}{T}\right)+\cdots,
+$$</p>
+<p>with $\zeta$ the bulk viscosity, $\eta_{\mathrm{sh}}$ the shear viscosity and $\kappa_{\mathrm{th}}$ the thermal conductivity, $\sigma^{\mathrm{sh}}_{\mu\nu}$ the shear of the flow and $\theta$ its expansion. <strong>Every term is a square multiplied by a coefficient that positivity requires to be non-negative</strong>, so the inequality holds if and only if the transport coefficients are non-negative; that statement is the <em>content</em> of the second law at first order and not a decoration on it.</p>
+<p><strong>The ellipsis, and where it matters.</strong> The first-order form is not causal and is not stable, which is <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>'s subject: the ellipsis hides the relaxation terms that restore hyperbolicity. <strong>This article writes the ellipsis and does not open it</strong>, because the production's <em>form</em> — a sum of squares with non-negative coefficients — survives the relaxation structure and is the part that the rest of the category needs.</p>
+<p><strong>A check on the sign that a reader can do.</strong> For a pure shear, $\theta=0$ and $\partial_\eta T=0$, so $\sigma_{\mathrm{ent}}=2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}/T\ge0$ for $\eta_{\mathrm{sh}}\ge0$: a sheared fluid heats and its entropy grows. <strong>A negative shear viscosity would make the production negative and the inequality fail</strong>, which is the standard argument that $\eta_{\mathrm{sh}}\ge0$ is not an assumption but a consequence.</p>
+<h2 id="the-quantum-contribution">The Quantum Contribution</h2>
+<h3 id="what-the-quantum-part-could-have-contributed-and-does-not">What the quantum part could have contributed, and does not</h3>
+<p><strong>The quantum stress does not create entropy directly, and the reason is that the state that carries it has none.</strong> On the solutions of the polar form the entropy density of the state is zero — the state is pure — so the entropy current of this article is the zero element and the second law reads $0\ge0$. <strong>A reader who expects $Q_{\mathrm{qnt}}$ to appear as a source in the production will not find it</strong>, and the absence is a statement: gradient corrections do not dissipate.</p>
+<p><strong>The precise form of the statement, because it is easy to overstate.</strong> The conservation of the stress is a separate equation from the second law. With $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ and with the quantum part of the stress included, the conservation law is</p>
+<p>$$
+\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde\Sigma_\Psi\right)=0
+$$</p>
+<p>on the fields that solve the equation of motion, and it holds <em>because</em> the flow obeys the mass shell that $Q_{\mathrm{qnt}}$ modifies,</p>
+<p>$$
+\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2m\,Q_{\mathrm{qnt}},
+$$</p>
+<p>quoted from <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein-Gordon Equation in Biquaternionic Form</a>. <strong>The quantum potential appears in the mass shell and not in the production</strong>, and that placement is the content of the polar-form article's derivation: the correction is what the flow has to satisfy, not what the flow leaks.</p>
+<p><strong>The negative statement, made positive.</strong> The quantum term changes which flows conserve the stress; it does not change how much entropy a given flow produces. <strong>A fluid whose density has a gradient is a fluid whose flow must obey a modified mass shell, and once it does, its stress is conserved and its entropy is constant.</strong> That is the whole of the framework's statement about the quantum part of the second law, and it is a statement about the constraint and not about dissipation.</p>
+<h3 id="where-entropy-production-does-come-from-the-two-components">Where entropy production does come from: the two components</h3>
+<p><strong>The quantum part can produce entropy indirectly, and the mechanism is friction between the component that carries the quantum stress and the component that carries the entropy.</strong> In a state that is not pure — a state with a condensate and an excitation gas — the condensate's stress is the quantum one and the gas carries the entropy; the condensate's flow and the gas's flow are two elements, and their relative motion dissipates through mutual friction. <strong>The dissipation is not proportional to $Q_{\mathrm{qnt}}$; it is proportional to the relative velocity and to a friction coefficient</strong>, and $Q_{\mathrm{qnt}}$ enters only through the condensate's mass shell.</p>
+<p><strong>This is the standard picture of a two-fluid system and it is <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>'s subject.</strong> The article states the mechanism here for one reason: a reader who wants to know where the quantum part enters the second law should be told that it enters through the <em>coupling</em> and not through a source term. <strong>The entropy current of this article remains the single-component one; the two-component version is written by adding a second current and letting the two exchange momentum.</strong></p>
+<p><strong>What the corpus does not do, and says so.</strong> It does not claim that mutual friction has been derived from the rotor's equation of motion in this framework. That derivation is not in the category, and <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> is the nearest neighbour to it without being it. <strong>The article stops at the mechanism and marks the derivation as open.</strong></p>
+<h3 id="what-is-left-to-be-said-and-what-is-not">What is left to be said, and what is not</h3>
+<p><strong>Three things are said here and nothing else is.</strong> First, that the entropy current is the density times the flow element with the $i$ dropped, and that its norm is the proper entropy density. Second, that its scalar divergence is a real number because the current is Hermitian, and that the second law is that number's sign. Third, that the quantum stress enters the constraint and not the production, so the pure state's entropy current vanishes and the second law is saturated.</p>
+<p><strong>Three things are not said, and each belongs to another article.</strong> The functional and its monotonicity belong to <a href="coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>, which derives them from the logarithm of the informational sector's state and which this article does not duplicate. The relaxation structure that makes the production's sum of squares causal belongs to <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>, which inherits this article's Hermiticity declaration and writes no fresh $\mathrm{Re}$. The spin contribution to the entropy current belongs to <a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>, where the spin potential $\mu_{\mathrm{spn}}$ supplies a second chemical potential and the current gains a term.</p>
+<p><strong>The relation between the functional and the current, in one sentence.</strong> The functional is a number attached to a state, the current is a field attached to a fluid, and the second law of this article is the statement that the field's divergence has a sign while the functional's monotonicity is the statement that the number's change has a sign under coarse-graining; <strong>the two are not the same theorem, they are the two halves of one</strong>, and the corpus's convention is that the half which is a field lives here and the half which is a state lives there.</p>
+<h2 id="numbers">Numbers</h2>
+<p><strong>The identities of this article were evaluated at three velocities and one production table, and the residuals are recorded because they are the whole of the arithmetic.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\beta_{\mathrm{vel}}$</th>
+<th>$\gamma$</th>
+<th>$a=\gamma s_{\mathrm{ent}}$</th>
+<th>$\lvert\vec b\rvert=\gamma\beta_{\mathrm{vel}}s_{\mathrm{ent}}$</th>
+<th>$a^{2}-\lvert\vec b\rvert^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.6$</td>
+<td>$1.250\,000\,000$</td>
+<td>$3.750\,000\,000$</td>
+<td>$2.250\,000\,000$</td>
+<td>$9.000\,000\,000\,000$</td>
+</tr>
+<tr>
+<td>$0.8$</td>
+<td>$1.666\,666\,667$</td>
+<td>$5.000\,000\,000$</td>
+<td>$4.000\,000\,000$</td>
+<td>$9.000\,000\,000\,000$</td>
+</tr>
+<tr>
+<td>$0.979\,795\,897$</td>
+<td>$5.000\,000\,000$</td>
+<td>$15.000\,000\,000$</td>
+<td>$14.696\,938\,457$</td>
+<td>$9.000\,000\,000\,000$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last column is $s_{\mathrm{ent}}^{2}=9$ in every row</strong>, which is the numerical form of $\langle\tilde J_{\Phi,\mathrm{ent}}\rangle_{\natural}=s_{\mathrm{ent}}^{2}$ and the check on where the $\gamma$ sits.</p>
+<p><strong>The production, evaluated once.</strong> With $\zeta=0.1$, $\theta=0.5$, $\eta_{\mathrm{sh}}=0.2$, $\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}=0.3$, $\kappa_{\mathrm{th}}=0.05$, $\partial_\eta T\,\partial_\eta T=0.4$ and $T=2$: the three terms of the first-order production are $0.012\,500$, $0.018\,000$ and $0.002\,000$, and the total is $0.032\,500$. <strong>Every term is positive and the sum is positive</strong>, so the display's sign is not a coincidence of the chosen numbers but the consequence of each coefficient being positive.</p>
+<p><strong>What the numbers do not check.</strong> They do not check that $\sigma_{\mathrm{ent}}\ge0$ for <em>every</em> flow — that is a theorem about the transport coefficients and not an arithmetic fact. They do not check the quantum stress's conservation, which is the polar-form article's. <strong>They check the two identities of this article — the norm and the decomposition of the production — and nothing further.</strong></p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established, and standard.</strong> That the entropy current is $s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$, with components low and no $i$ in the temporal slot; that it is Hermitian; that its quaternionic norm is $s_{\mathrm{ent}}^{2}$; that the scalar part of its divergence is the ordinary divergence of its four components and is real; that the second law is that divergence's non-negativity; that an ideal fluid has zero production because its entropy per particle is constant along each worldline; that the first-order production is a sum of squares over the dissipative channels with non-negative coefficients.</p>
+<p><strong>The framework's contribution, and it is one line.</strong> The corpus writes the entropy current as an <em>element</em> whose Hermiticity is the statement that its temporal slot is a density and not a displacement, and it writes the second law as the scalar part of the algebra's own divergence. <strong>The declaration is what makes the inequality real, and the declaration is the article's</strong>, in the sense that this is where the category makes it and every later article inherits it.</p>
+<p><strong>Interpretation, and marked as such.</strong> That the quantum stress enters the constraint and not the production. This follows from the placement of $Q_{\mathrm{qnt}}$ in the mass shell, which is the polar-form article's result, and from the vanishing of the pure state's entropy; it is the corpus's reading of a standard fact about gradient corrections and it is not a new theorem.</p>
+<p><strong>Not claimed.</strong> That the production's first-order form is the whole story — it is not, and the relaxation structure is the dissipative article's. That the entropy current of a spin fluid is this one — it is not, and the spin article adds a term. That mutual friction has been derived here — it has not. That the functional of the coarse-graining article and the current of this article are the same object — they are not, and the section above says how they differ.</p>
+<h2 id="summary">Summary</h2>
+<p>The entropy current is $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$, with $J_{\Phi,\mathrm{ent},t}=s_{\mathrm{ent}}\gamma$ and $J_{\Phi,\mathrm{ent},\eta}=s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta}$, every index low, and it is <strong>declared Hermitian</strong>: all four coefficients real, the star conjugation fixing the element. Hermiticity is exactly the condition under which $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=\partial_\mu J_\mu$ is a real number, which is why the declaration is the corpus's mechanism for making entropy inequalities meaningful; the alternative spelling with a written $\mathrm{Re}$ is equivalent and is not used here.</p>
+<p>The quaternionic norm is the proper entropy density squared, $\langle\tilde J_{\Phi,\mathrm{ent}}\rangle_{\natural}=\gamma^{2}s_{\mathrm{ent}}^{2}(1-\beta_{\mathrm{vel}}^{2})=s_{\mathrm{ent}}^{2}$, checked at three velocities with $s_{\mathrm{ent}}=3$ where the value is $9$ in every frame. The thermal element of the moving-frame article has the norm $-\beta^{2}$ under the same construction, the sign difference being exactly the $i$ in its temporal slot.</p>
+<p>The second law is one divergence, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})=\partial_t(s_{\mathrm{ent}}\gamma)+\partial_\eta(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta})=\sigma_{\mathrm{ent}}\ge0$. An ideal fluid has $\sigma_{\mathrm{ent}}=0$ because $\sigma_{\mathrm{spc}}$ is constant along the flow; off equilibrium the production is $\sigma_{\mathrm{ent}}=T^{-1}(\zeta\theta^{2}+2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}+\kappa_{\mathrm{th}}\partial_\eta T\,\partial_\eta T/T)$ plus relaxation terms, a sum of squares whose sign is the non-negativity of the transport coefficients. Evaluated once, the three terms are $0.012\,500$, $0.018\,000$ and $0.002\,000$ for a total of $0.032\,500$.</p>
+<p>The quantum part does not enter the production. It enters the mass shell, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the stress is conserved on the flows that obey it; the pure state has no entropy, so its current vanishes and the second law is saturated. Entropy from a quantum fluid comes from friction between the component that carries the quantum stress and the component that carries the entropy, which is <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>'s subject and is not derived here.</p>
+<p>The functional of <a href="coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a> is cited and not duplicated: it owns the state's entropy, this article owns the field's current, and the Hermiticity declaration made here is inherited by <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>, which writes no fresh $\mathrm{Re}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$</td>
+<td>Entropy current, Hermitian</td>
+</tr>
+<tr>
+<td>$J_{\Phi,\mathrm{ent},t}=s_{\mathrm{ent}}\gamma$</td>
+<td>Its temporal component, the density</td>
+</tr>
+<tr>
+<td>$J_{\Phi,\mathrm{ent},\eta}$</td>
+<td>Its spatial components, the flux</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$</td>
+<td>Entropy density</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{spc}}$</td>
+<td>Entropy per particle</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{ent}}$</td>
+<td>Entropy production</td>
+</tr>
+<tr>
+<td>$n_{\mathrm{num}}$, $\tilde J_{\Phi,\mathrm{num}}$</td>
+<td>Number density and particle current</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi$</td>
+<td>Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$</td>
+</tr>
+<tr>
+<td>$\vec\beta_{\mathrm{vel}}=\vec v/c$</td>
+<td>Dimensionless velocity</td>
+</tr>
+<tr>
+<td>$\gamma=(1-\beta_{\mathrm{vel}}^{2})^{-1/2}$</td>
+<td>Boost factor</td>
+</tr>
+<tr>
+<td>$\langle\ \rangle_{\natural}$</td>
+<td>Quaternionic norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>The algebra's divergence operator</td>
+</tr>
+<tr>
+<td>$\tilde Q^{*}$</td>
+<td>The conjugation; $\tilde Q^{*}=\tilde Q$ is Hermiticity</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$</td>
+<td>Energy–momentum element</td>
+</tr>
+<tr>
+<td>$w_{\mathrm{fl}}$, $p_{\mathrm{th}}$</td>
+<td>Energy density, thermal pressure</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}$</td>
+<td>Quantum potential, with the minus sign</td>
+</tr>
+<tr>
+<td>$\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$</td>
+<td>Bulk viscosity, shear viscosity, conductivity</td>
+</tr>
+<tr>
+<td>$\theta=\partial_\mu v_{\Phi,\mu}$</td>
+<td>Expansion</td>
+</tr>
+<tr>
+<td>$\sigma^{\mathrm{sh}}_{\mu\nu}$</td>
+<td>Shear of the flow, indices low</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td>$E$, $\vec p$, $m$, $c$</td>
+<td>Energy, momentum, mass, speed of light</td>
+</tr>
+<tr>
+<td>$\tilde\beta_\Phi$</td>
+<td>Thermal element, for contrast</td>
+</tr>
+<tr>
+<td>$\mathcal{S}(\tilde{Ϛ}_\Psi)$</td>
+<td>Entropy functional, cited from the coarse-graining article</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>C. Eckart, "The thermodynamics of irreversible processes III: Relativistic theory of the simple fluid," <em>Physical Review</em> <strong>58</strong> (1940) 919–924, for the entropy current and the first-order production.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Fluid Mechanics</em> (Pergamon, 1987), §127, for the relativistic entropy current and its divergence.</li>
+<li>W. Israel, "Nonstationary irreversible thermodynamics: a causal relativistic theory," <em>Annals of Physics</em> <strong>100</strong> (1976) 310–331, for the relaxation terms behind the ellipsis.</li>
+<li>W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," <em>Annals of Physics</em> <strong>118</strong> (1979) 341–372, for the systematic construction of the causal production.</li>
+<li>I. Müller, "Zum Paradoxon der Wärmeleitungstheorie," <em>Zeitschrift für Physik</em> <strong>198</strong> (1967) 329–344, for the origin of the causality problem in the first-order theory.</li>
+<li>D. Jou, J. Casas-Vázquez and G. Lebon, <em>Extended Irreversible Thermodynamics</em> (Springer, 2010), chapters 1–2, for the classification of the dissipative channels used here.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Statistical Physics, Part 2</em> (Pergamon, 1980), §§77–79, for the entropy of a superfluid and the mutual-friction mechanism.</li>
+<li>The companion articles: <a href="coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>, <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>, <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>, and <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

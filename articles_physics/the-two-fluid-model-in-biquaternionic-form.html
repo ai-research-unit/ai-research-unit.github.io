@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two-Fluid Model in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-fluid-model-in-biquaternionic-form"><strong>The Two-Fluid Model in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A quantum fluid at finite temperature is two fluids in one: a condensate that carries no entropy and a normal component that carries all of it and dissipates.</strong> The two flows are elements,</p>
+<p>$$
+\tilde V_{\Phi,\mathrm{sup}}=\frac{\tilde P_{\Phi,\mathrm{sup}}}{m},
+\qquad
+\tilde V_{\Phi,\mathrm{nrm}}=\frac{\tilde P_{\Phi,\mathrm{nrm}}}{m},
+\qquad
+\langle\tilde V_{\Phi,\mathrm{sup}}\rangle_{\natural}=\langle\tilde V_{\Phi,\mathrm{nrm}}\rangle_{\natural}=-c^{2},
+$$</p>
+<p><strong>and the whole of the model is the statement that they are two, that only one of them carries the entropy current of <a href="the-local-entropy-current.html">The Local Entropy Current</a>, and that they exchange momentum.</strong></p>
+<p><strong>The condensation is what makes the split necessary.</strong> The polar form of <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein-Gordon Equation in Biquaternionic Form</a> describes a state with one flow and one rotor; a thermal state has, in addition, the excitations that the thermal circle supports, and those excitations carry the entropy and obey the dissipative equations. <strong>The two-fluid model is therefore not a new theory but the statement that the field's state has two pieces whose hydrodynamics differ</strong>, and the article's job is to write the two pieces and their coupling in the corpus's letters.</p>
+<p><strong>The zero-temperature limit is the article's check.</strong> At $T\to0$ the normal density vanishes, the entropy density vanishes with it, the normal flow becomes undefined because there is nothing to carry it, and the equations reduce exactly to the polar-form article's. <strong>That limit is shown explicitly and in full, because a two-fluid model that does not reduce to the one-fluid model is not a model of the same substance.</strong></p>
+<p><strong>What the article cites and what it does not repeat.</strong> The stress-energy element is <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>'s; the entropy current and its Hermiticity declaration are <a href="the-local-entropy-current.html">The Local Entropy Current</a>'s; the equation of state is <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>'s. <strong>The article adds the second element, the split of the density, the exchange, and the limit.</strong></p>
+<h2 id="the-two-elements">The Two Elements</h2>
+<h3 id="the-split-of-the-density">The split of the density</h3>
+<p><strong>The proper density splits into two positive parts, and the split is a definition of the model rather than a consequence of the algebra.</strong></p>
+<p>$$
+\rho_{\mathrm{num}}=\rho_{\mathrm{num,sup}}+\rho_{\mathrm{num,nrm}},
+\qquad
+\rho_{\mathrm{num,sup}}\ge0,
+\qquad
+\rho_{\mathrm{num,nrm}}\ge0,
+$$</p>
+<p>with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ the proper density of <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>. <strong>The condensate's part is the part of the amplitude squared that is in the state the polar form describes</strong>; the normal part is the rest, and the rest is what has entropy.</p>
+<p><strong>The split is not a split of the field, and this is worth saying once.</strong> There is one field $\tilde\Xi$; the two densities are two contributions to its amplitude squared, not two fields. <strong>A reader who writes two fields has left the framework and entered a two-scalar model</strong>, which has different dynamics and, in particular, two mass shells rather than one. The corpus's two-fluid model is a description of one field's state, and the description is called two-fluid by analogy with the classical helium literature and not by structure.</p>
+<p><strong>The two fractions, and the notation for them.</strong> Writing $x_{\mathrm{sup}}=\rho_{\mathrm{num,sup}}/\rho_{\mathrm{num}}$ and $x_{\mathrm{nrm}}=1-x_{\mathrm{sup}}$ for the fractions, the two limits of the model are $x_{\mathrm{nrm}}=0$ (the pure state) and $x_{\mathrm{sup}}=0$ (the ordinary fluid, which is the limit in which the condensate has been destroyed). <strong>Both limits must be reachable, and the article checks both.</strong></p>
+<h3 id="the-two-elements-and-their-norms">The two elements and their norms</h3>
+<p><strong>Each flow is an element with the corpus's normalisation, and the normalisation is what makes the relative velocity well defined.</strong> With the two elements at the head of the article, the relative flow is</p>
+<p>$$
+\tilde W_\Phi=\tilde V_{\Phi,\mathrm{nrm}}-\tilde V_{\Phi,\mathrm{sup}},
+$$</p>
+<p>an element whose norm is not fixed by the two normalisations alone: with $\tilde V_1\cdot\tilde V_2$ the plain product's scalar part, $\langle\tilde W_\Phi\rangle_{\natural}=\langle\tilde V_1\rangle_{\natural}+\langle\tilde V_2\rangle_{\natural}-2\,\mathrm{Sc}(\tilde V_1\tilde V_2)$, <strong>so the relative element's size measures how far the two flows are from coinciding</strong> and vanishes exactly when they coincide. That is the object that all the dissipation is proportional to.</p>
+<p><strong>The coincidence is the equilibrium condition and the model's most important special case.</strong> When $\tilde V_{\Phi,\mathrm{sup}}=\tilde V_{\Phi,\mathrm{nrm}}$ the two fluids move together, no exchange occurs, and the entropy production of the mutual-friction channel vanishes; <strong>the two-fluid system in that state is one fluid with an entropy density that is the normal component's.</strong> Every laboratory two-fluid state is a small departure from this one.</p>
+<p><strong>The components, low.</strong> Writing $v_{\Phi,\mathrm{sup},\mu}$ and $v_{\Phi,\mathrm{nrm},\mu}$ for the components and $w_{\mu}=v_{\Phi,\mathrm{nrm},\mu}-v_{\Phi,\mathrm{sup},\mu}$ for the relative one, every index is low and the metric is $\delta_{\mu\nu}$, exactly as in the single-fluid articles. <strong>The relative component $w_\mu$ is the only new vector in the article</strong>, and the dissipation is written on it.</p>
+<h3 id="why-two-flows-and-not-two-temperatures">Why two flows and not two temperatures</h3>
+<p><strong>The model has one temperature and two flows, and the choice is forced.</strong> A thermal state has one period $\beta$: the imaginary-time circle is a property of the state and not of a component, so there is one temperature. <strong>The two components differ in their flow, not in their temperature</strong>, and a model with two temperatures is a model of two systems in partial equilibrium, which is a different and more elaborate object.</p>
+<p><strong>The choice is also the one that keeps the entropy current simple.</strong> With one temperature, the entropy current of <a href="the-local-entropy-current.html">The Local Entropy Current</a> reads on the normal component alone,</p>
+<p>$$
+\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\,\gamma_{\mathrm{nrm}}\left(e_t+\vec\beta_{\mathrm{vel,nrm}}\right),
+$$</p>
+<p>with $\gamma_{\mathrm{nrm}}$ and $\vec\beta_{\mathrm{vel,nrm}}$ built from $\tilde V_{\Phi,\mathrm{nrm}}$, and it is Hermitian by the same argument as before. <strong>The condensate contributes nothing to it</strong>, and that single sentence is the model's thermodynamic core.</p>
+<p><strong>A caution about the $\gamma$ factors in a two-fluid state.</strong> The two components have different $\gamma$'s, so a display that writes $\gamma$ without a label in this article is ambiguous. <strong>Every $\gamma$ in what follows carries a label</strong>, and the article uses $\gamma_{\mathrm{nrm}}$ and $\gamma_{\mathrm{sup}}$ and never the bare letter.</p>
+<h2 id="the-condensate-and-the-normal-component">The Condensate and the Normal Component</h2>
+<h3 id="the-condensate-carries-no-entropy">The condensate carries no entropy</h3>
+<p><strong>The condensate's entropy density is zero, and the reason is that the condensate is a pure state.</strong> A pure state has no entropy — the corpus's functional $\mathcal{S}$ of <a href="coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a> vanishes on the pure states, which sit on the zero-divisor cone — <strong>so the entropy density of the sup component is zero by the functional's own definition and not by a modelling choice.</strong></p>
+<p>$$
+s_{\mathrm{ent,sup}}=0,
+\qquad
+s_{\mathrm{ent,nrm}}=s_{\mathrm{ent}} .
+$$</p>
+<p><strong>What the condensate carries instead is the quantum stress.</strong> Its energy-momentum element has the scalar part $w_{\mathrm{fl,sup}}$ and its pressure is the $p_{\mathrm{qnt}}$ of <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>, the gradient correction. <strong>So the two components differ in what they carry</strong>: the condensate carries the quantum stress and no entropy, the normal component carries the entropy and the thermal pressure.</p>
+<p><strong>The consequence for the second law, which <a href="the-local-entropy-current.html">The Local Entropy Current</a> anticipated.</strong> A state with $x_{\mathrm{nrm}}=0$ has a vanishing entropy current and a saturated second law; a state with $x_{\mathrm{nrm}}>0$ has an entropy current proportional to the normal fraction. <strong>The production therefore vanishes with the normal fraction</strong>, and the article's dissipation is proportional to $x_{\mathrm{nrm}}$ as well as to the relative flow — a product of two small quantities.</p>
+<h3 id="the-condensates-flow-is-a-gradient">The condensate's flow is a gradient</h3>
+<p><strong>The condensate's flow is the gradient of the phase, and this is the polar form's statement quoted.</strong> From <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein-Gordon Equation in Biquaternionic Form</a>, with the phase $S_{\tilde\Xi}$ of the field,</p>
+<p>$$
+m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\hbar\,\chi_{\mu},
+$$</p>
+<p>where $\chi_\mu$ is the part the rotor contributes — zero for the scalar field and non-zero for the spinor, which is why <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a> is a different article. <strong>For the scalar condensate the flow is a pure gradient</strong>, so its vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\mathrm{sup},\nu}-\partial_\nu v_{\Phi,\mathrm{sup},\mu}$ vanishes identically.</p>
+<p><strong>The vanishing vorticity is the definition of superfluidity in this formalism, and it is the reason the two-fluid model has a superfluid at all.</strong> A flow that is a gradient cannot be brought to rest by a boundary, because a gradient with a non-zero circulation is quantised and cannot decay continuously. <strong>The circulation is <a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>'s subject</strong>, and the article cites it rather than re-deriving the quantisation.</p>
+<p><strong>The distinction from the normal component, in one line.</strong> The normal component's flow is not a gradient, so its vorticity is free and it dissipates; <strong>the condensate's is, so its vorticity is constrained and it does not.</strong> That single structural difference is what the two-fluid model is for.</p>
+<h3 id="the-normal-component-carries-the-entropy-and-dissipates">The normal component carries the entropy and dissipates</h3>
+<p><strong>The normal component's equations are the single-fluid equations of the previous articles, read on its own flow.</strong> Its energy-momentum element is the thermal one, its entropy current is the one above, and its production is the sum of squares of <a href="the-local-entropy-current.html">The Local Entropy Current</a> evaluated with the normal flow. <strong>No new equation is needed for it</strong>, and the article writes none: the point of the two-fluid model is that the normal component is the ordinary fluid.</p>
+<p><strong>Its stress is not conserved alone, and this is the coupling.</strong> The normal component exchanges momentum with the condensate, so</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}},
+\qquad
+\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=-\tilde F_{\Phi,\mathrm{fr}},
+\qquad
+\tilde\nabla^{\natural}\left(\tilde\Sigma_{\Psi,\mathrm{nrm}}+\tilde\Sigma_{\Psi,\mathrm{sup}}\right)=0,
+$$</p>
+<p>with $\tilde F_{\Phi,\mathrm{fr}}$ the friction element. <strong>The three displays say one thing: the total stress is conserved and each component's is not.</strong> A reader who writes conservation for both components separately has written the wrong equations, and the error is the commonest one in the two-fluid literature.</p>
+<h2 id="mutual-friction">Mutual Friction</h2>
+<h3 id="the-friction-element">The friction element</h3>
+<p><strong>The friction element is proportional to the relative flow and to the square root of the two densities, and its form is fixed by the requirement that it do no work when the two flows coincide.</strong></p>
+<p>$$
+\tilde F_{\Phi,\mathrm{fr}}=\frac{\rho_{\mathrm{num,sup}}\,\rho_{\mathrm{num,nrm}}}{\rho_{\mathrm{num}}}\,B_{\mathrm{frc}}\,\tilde W_\Phi ,
+$$</p>
+<p>with $B_{\mathrm{frc}}$ the friction coefficient — dimensionless in these letters because the density ratio already carries the dimensions of a density. <strong>The element vanishes with either density, so a pure condensate has no friction to feel and an ordinary fluid has no condensate to feel it from</strong>; both limits are correct and both are needed.</p>
+<p><strong>The friction's work is what makes the entropy production, and the sign is fixed by the second law.</strong> The rate at which the friction does work on the relative motion is the contraction of the friction element with the relative flow, and the entropy production is that rate divided by the temperature:</p>
+<p>$$
+\sigma_{\mathrm{ent}}=\frac{1}{T}\,\mathrm{Sc}\left(\tilde F_{\Phi,\mathrm{fr}}\,\tilde W_\Phi\right),
+$$</p>
+<p>with the overall sign chosen so that a positive $B_{\mathrm{frc}}$ gives a positive production; the scalar part is real because both elements are Hermitian in the sense of <a href="the-local-entropy-current.html">The Local Entropy Current</a>. <strong>Damping of the relative motion heats the normal component, and the heat is exactly the kinetic energy of the relative drift</strong> — that is the physical content of the display, and it is the standard mutual-friction mechanism of the helium literature quoted into the corpus's letters.</p>
+<p><strong>The sign convention, stated once and used everywhere.</strong> The norm of the difference of two future-directed flows is not of one sign — $\langle\tilde W_\Phi\rangle_{\natural}$ can be positive, negative or zero for two timelike-type elements — so the article writes the production on the relative <em>speed</em> $w^{2}=\lvert\vec w\rvert^{2}$ and does not rely on the norm's sign:</p>
+<p>$$
+\sigma_{\mathrm{ent}}=\frac{1}{T}\,\frac{\rho_{\mathrm{num,sup}}\,\rho_{\mathrm{num,nrm}}}{\rho_{\mathrm{num}}}\,B_{\mathrm{frc}}\,w^{2}\ \ge 0,
+$$</p>
+<p>which is manifestly non-negative for $B_{\mathrm{frc}}\ge0$. <strong>The article uses the second display in the arithmetic and the first in the structural statements</strong>, because the first shows the element and the second shows the sign.</p>
+<h3 id="numbers">Numbers</h3>
+<p><strong>The friction was evaluated once, at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $\rho_{\mathrm{num}}=1$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$.</strong> The friction force is $0.7\times0.3\times0.1\times0.2=0.004\,200\,000\,000$ and the production is $0.004\,200\,000\,000\times0.2/2=0.000\,420\,000\,000$. <strong>Both are positive, and the production scales as $w^{2}$</strong> — doubling the relative speed quadruples it, which is the signature of a friction that is linear in the force and quadratic in the rate.</p>
+<p><strong>The check that a reader can do on the same numbers.</strong> With $w=0$ both vanish; with $x_{\mathrm{nrm}}=0$ both vanish; with $T\to\infty$ the production vanishes while the force does not. <strong>The four limits are the four ways the display can degenerate, and each has a physical reading</strong>: no relative motion, no normal component, no thermal coupling, no temperature.</p>
+<h3 id="why-mutual-friction-and-not-viscosity">Why mutual friction and not viscosity</h3>
+<p><strong>Viscosity acts within a component; mutual friction acts between them, and the two are different channels of the same second law.</strong> A state with a relative flow and no shear produces entropy through friction; a state with a shear and no relative flow produces it through viscosity. <strong>Both appear as separate squares in the production of <a href="the-local-entropy-current.html">The Local Entropy Current</a></strong>, and the two-fluid model adds the friction square to the list without modifying the others.</p>
+<p><strong>The consequence for the counting of transport coefficients.</strong> A two-fluid system has one more coefficient than a one-fluid system — $B_{\mathrm{frc}}$ beside $\zeta$, $\eta_{\mathrm{sh}}$ and $\kappa_{\mathrm{th}}$ — and no more. <strong>A model with more is describing something else</strong>, and the article names the count so that a reader can check a candidate model against it.</p>
+<h2 id="the-josephson-type-phase-coupling">The Josephson-Type Phase Coupling</h2>
+<h3 id="the-coupling-energy">The coupling energy</h3>
+<p><strong>When the two components are two states of one field, their phases can lock, and the locking has a Josephson form.</strong> With $S_{\tilde\Xi,\mathrm{sup}}$ and $S_{\tilde\Xi,\mathrm{nrm}}$ the phases of the two contributions and $\Delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ their difference, the coupling energy per unit proper volume is</p>
+<p>$$
+e_{\mathrm{cpl}}=-\,E_{J}\cos\left(\frac{\Delta S}{\hbar}\right),
+$$</p>
+<p>with $E_{J}$ the coupling energy density. <strong>The display is the standard Josephson form and is quoted</strong>; what the corpus adds is the argument: the phase is the quantity that the polar form assigns to the rotor, and a coupling between the two components is a coupling between two phases.</p>
+<p><strong>The current between the components follows by differentiation of the coupling energy with respect to the phase difference.</strong> With $J_{\Phi,\mathrm{ex},\eta}$ the exchange current, the result is that <strong>the exchange current is the critical current times the sine of the phase difference</strong>, $J_{\Phi,\mathrm{ex},\eta}=J_{\mathrm{c}}\sin(\Delta S/\hbar)$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. <strong>A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.</strong></p>
+<p><strong>What the phase difference does when the two flows coincide.</strong> Then $\Delta S$ is constant, the sine is constant, and the exchange current is a constant flow between the components with no relative acceleration — the DC case. <strong>When the two flows differ, $\Delta S$ advances at the rate $d(\Delta S)/dR_t=\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}$</strong>, and the exchange current oscillates at the frequency</p>
+<p>$$
+\omega_{\mathrm{Jsn}}=\frac{\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}}{\hbar},
+$$</p>
+<p>the AC case. <strong>The frequency is fixed by the chemical potential difference and by nothing else</strong>, and it is the cleanest experimental signature that the two components are two states of one field rather than two fluids.</p>
+<p><strong>A number, for scale.</strong> With a chemical potential difference of $1\,\mathrm{meV}$, $\omega_{\mathrm{Jsn}}=1.5193\times10^{12}\,\mathrm{s^{-1}}$, using $\hbar=6.582\,119\,569\times10^{-16}\,\mathrm{eV\,s}$. At $1\,\mu\mathrm{eV}$ the frequency is $1.5193\times10^{9}\,\mathrm{s^{-1}}$ and at $1\,\mathrm{neV}$ it is $1.5193\times10^{6}\,\mathrm{s^{-1}}$; <strong>the three span the range from microwave to radio</strong>, which is why the effect is measured electrically.</p>
+<h3 id="what-the-coupling-does-to-the-entropy">What the coupling does to the entropy</h3>
+<p><strong>The phase coupling is conservative and produces no entropy by itself, and this is the difference between it and the friction.</strong> A cosine potential's work along a closed cycle vanishes, so the exchange current does no net work on the state; <strong>the production comes from the friction, and the coupling only moves the two components' flows relative to one another.</strong> The article states the separation because a reader who merges the two mechanisms will double count the dissipation.</p>
+<p><strong>The two mechanisms do meet, in the equations of motion.</strong> The chemical potential difference that drives the phase is itself changed by the friction, which heats the normal component and changes $\mu_{\mathrm{chm,nrm}}$; <strong>so the coupling's frequency is damped by the friction</strong>, and the damped Josephson oscillation is the standard description of a two-component system relaxing to coincidence. <strong>The article names the structure and does not solve the damped equation</strong>, which is a calculation for a specific state and not a statement of the model.</p>
+<h2 id="the-zero-temperature-limit">The Zero-Temperature Limit</h2>
+<h3 id="the-limit-taken-explicitly">The limit, taken explicitly</h3>
+<p><strong>At $T\to0$ the normal density vanishes, the entropy density vanishes with it, and the two-fluid equations collapse to the polar-form equations. The article shows the collapse in four displays.</strong></p>
+<p><strong>First, the densities.</strong> With $\rho_{\mathrm{num,nrm}}\to0$ and $x_{\mathrm{nrm}}\to0$,</p>
+<p>$$
+\rho_{\mathrm{num}}\longrightarrow\rho_{\mathrm{num,sup}},
+\qquad
+s_{\mathrm{ent}}\longrightarrow0 ,
+$$</p>
+<p>the second being the statement that the entropy density is a function of the normal fraction and vanishes with it.</p>
+<p><strong>Second, the friction.</strong> $\tilde F_{\Phi,\mathrm{fr}}\to0$ because it carries $\rho_{\mathrm{num,nrm}}$ as a factor, so the two stress equations become</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0,
+\qquad
+\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=0,
+$$</p>
+<p>and the second of these is empty because there is no normal component to satisfy it.</p>
+<p><strong>Third, the flow.</strong> $\tilde V_{\Phi,\mathrm{nrm}}$ becomes undefined — its defining density is zero, so the element it is built from is the zero element divided by zero — and the only surviving flow is the condensate's, $\tilde V_{\Phi,\mathrm{sup}}$, whose equation is the polar form's own with the quantum stress as its energy-momentum. <strong>The undefined normal flow is the correct limit and not a defect</strong>: a component with no density has no velocity, and the article says so rather than letting the reader divide.</p>
+<p><strong>Fourth, the entropy current.</strong> $\tilde J_{\Phi,\mathrm{ent}}\to0$, the second law reads $0\ge0$, and the state is the pure state of <a href="the-local-entropy-current.html">The Local Entropy Current</a>'s quantum section. <strong>All four displays together are the statement that the $T\to0$ limit of the two-fluid model is the one-fluid model of the polar form</strong>, and the limit is exact and not asymptotic because every term that disappears carries a positive power of $\rho_{\mathrm{num,nrm}}$ or of the fraction.</p>
+<h3 id="the-limits-subtlety">The limit's subtlety</h3>
+<p><strong>The limit is exact in the densities and singular in the flow, and the singularity is physical.</strong> The normal velocity is undefined at $T=0$ because there is nothing that moves; a reader who insists on a value is asking for the velocity of an absence. <strong>The polar-form article has one flow, and the two-fluid model's second flow does not tend to it — it ceases to exist</strong>, which is a stronger and correct statement.</p>
+<p><strong>The other end of the range, $x_{\mathrm{sup}}\to0$, is the ordinary fluid.</strong> There the condensate's density vanishes, the friction vanishes with the product, the phase coupling has no condensate to couple to, and the equations are the single-fluid dissipative equations of <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>. <strong>Both ends are limits of the same two-fluid equations</strong>, which is the check that the model interpolates and does not merely add.</p>
+<p><strong>A table of the entropy density against the normal fraction</strong>, with the illustrative law $s_{\mathrm{ent}}=s_{0}\,x_{\mathrm{nrm}}^{2/3}$, which is the behaviour of a non-relativistic excitation gas:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$x_{\mathrm{nrm}}$</th>
+<th>$s_{\mathrm{ent}}/s_{0}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.5$</td>
+<td>$0.629\,961$</td>
+</tr>
+<tr>
+<td>$0.3$</td>
+<td>$0.448\,140$</td>
+</tr>
+<tr>
+<td>$0.1$</td>
+<td>$0.215\,443$</td>
+</tr>
+<tr>
+<td>$0.01$</td>
+<td>$0.046\,416$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is not a derivation of the law and is not offered as one</strong>; it is the arithmetic of the limit, showing that the entropy density goes to zero with the normal fraction at a rate that is steeper than linear. <strong>The law itself is a property of the excitation gas and belongs to a statistical-mechanical article, not to this one.</strong></p>
+<h2 id="what-the-algebra-supplies-and-what-it-does-not">What the Algebra Supplies and What It Does Not</h2>
+<p><strong>The algebra supplies one thing that the component formulation has to state as an assumption: the two flows are elements with a common normalisation and a relative element that has a norm.</strong> Once that is written, "the two components move together" is the statement $\tilde W_\Phi=0$, "the friction is proportional to the relative flow" is a statement about an element, and the $T\to0$ limit is a limit of a coefficient in front of an element. <strong>In components, the same three statements are three separate conventions about index placement, and keeping them consistent is the part of the calculation that goes wrong.</strong></p>
+<p><strong>The algebra does not supply the split itself.</strong> That $\rho_{\mathrm{num}}$ decomposes into a condensate part and a normal part is a statement about the state's excitation spectrum, and no amount of algebra produces the decomposition or the fractions. <strong>The corpus marks the split as imported, with the helium literature as its source, and the article's contribution is the two elements and their coupling.</strong></p>
+<p><strong>The algebra does not supply the friction coefficient either.</strong> $B_{\mathrm{frc}}$ is a transport coefficient like the viscosity, and the second law constrains its sign and nothing else. <strong>A derivation of $B_{\mathrm{frc}}$ from the rotor's equation of motion is not in the category</strong>, and <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> is the nearest article to that derivation without being it.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established, and standard.</strong> That a quantum fluid at finite temperature admits a two-fluid description with a condensate that carries no entropy and a normal component that carries all of it; that the condensate's flow is a gradient and therefore irrotational; that the two components exchange momentum and that only the total stress is conserved; that mutual friction produces entropy at a rate proportional to the square of the relative speed and vanishes when the two flows coincide; that a phase coupling between the two components has the Josephson form, with a DC exchange current proportional to the sine of the phase difference and an AC frequency equal to the chemical potential difference over $\hbar$; that the $T\to0$ limit is the one-fluid model.</p>
+<p><strong>The framework's contribution.</strong> The two flows are elements with a common normalisation, the relative flow is their difference and its quaternionic norm measures the departure from coincidence, and the $T\to0$ limit is exact because every term that disappears carries a positive power of the normal density. <strong>The articles' contribution is structural: it makes the model's two central statements — the split and the coupling — statements about elements rather than about index conventions.</strong></p>
+<p><strong>Interpretation, and marked as such.</strong> That the entropy density is a function of the normal fraction alone, with the illustrative $x_{\mathrm{nrm}}^{2/3}$ of the table, is the corpus's reading of the excitation-gas result and not a derivation. That the phase coupling's frequency is damped by the friction is stated as a structure and not solved.</p>
+<p><strong>Not claimed.</strong> That the split has been derived from the field's equation of motion — it has not. That the friction coefficient has been computed — it has not. That the two-fluid equations have been shown to be causal — that is <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>'s subject, and the two-fluid model's relaxation structure is not written here. That the model applies to a specific laboratory system — it does not claim to.</p>
+<h2 id="summary">Summary</h2>
+<p>The two-fluid model writes two flow elements, $\tilde V_{\Phi,\mathrm{sup}}=\tilde P_{\Phi,\mathrm{sup}}/m$ and $\tilde V_{\Phi,\mathrm{nrm}}=\tilde P_{\Phi,\mathrm{nrm}}/m$, each with $\langle\tilde V\rangle_{\natural}=-c^{2}$, built from a split $\rho_{\mathrm{num}}=\rho_{\mathrm{num,sup}}+\rho_{\mathrm{num,nrm}}$ of the proper density. The relative element $\tilde W_\Phi=\tilde V_{\Phi,\mathrm{nrm}}-\tilde V_{\Phi,\mathrm{sup}}$ vanishes exactly when the two components move together, which is the equilibrium condition and the state in which no entropy is produced.</p>
+<p>The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pure state and the corpus's functional vanishes there; it carries the quantum stress instead, with $p_{\mathrm{qnt}}$ its pressure. The normal component carries all the entropy, $s_{\mathrm{ent,nrm}}=s_{\mathrm{ent}}$, and its equations are the single-fluid equations read on its own flow. Neither component's stress is conserved alone: $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}}=-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}$, and only the sum is conserved.</p>
+<p>Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the production $\sigma_{\mathrm{ent}}=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}\ge0$. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.</p>
+<p>The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\Delta S/\hbar)$, an exchange current $J_{\mathrm{c}}\sin(\Delta S/\hbar)$ and an AC frequency $\omega_{\mathrm{Jsn}}=\Delta\mu_{\mathrm{chm}}/\hbar$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.</p>
+<p>The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\rho_{\mathrm{num,sup}}$, $s_{\mathrm{ent}}\to0$, $\tilde F_{\Phi,\mathrm{fr}}\to0$ so that $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$, and $\tilde J_{\Phi,\mathrm{ent}}\to0$ with the second law saturated. The normal flow does not tend to the condensate's flow; it ceases to exist. <strong>The remaining flow is the polar-form article's, and the two-fluid model is its finite-temperature extension.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde V_{\Phi,\mathrm{sup}}=\tilde P_{\Phi,\mathrm{sup}}/m$</td>
+<td>Condensate flow element</td>
+</tr>
+<tr>
+<td>$\tilde V_{\Phi,\mathrm{nrm}}=\tilde P_{\Phi,\mathrm{nrm}}/m$</td>
+<td>Normal-component flow element</td>
+</tr>
+<tr>
+<td>$\chi_\mu$</td>
+<td>Rotor contribution to the superfluid momentum, zero for the scalar field</td>
+</tr>
+<tr>
+<td>$e_t$</td>
+<td>Unit temporal direction</td>
+</tr>
+<tr>
+<td>$\tilde W_\Phi$</td>
+<td>Relative flow element</td>
+</tr>
+<tr>
+<td>$v_{\Phi,\mathrm{sup},\mu}$, $v_{\Phi,\mathrm{nrm},\mu}$</td>
+<td>Components of the two flows, low</td>
+</tr>
+<tr>
+<td>$w_\mu$, $w^{2}$</td>
+<td>Relative component and relative speed squared</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$</td>
+<td>Proper density</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num,sup}}$, $\rho_{\mathrm{num,nrm}}$</td>
+<td>Its condensate and normal parts</td>
+</tr>
+<tr>
+<td>$x_{\mathrm{sup}}$, $x_{\mathrm{nrm}}$</td>
+<td>The two fractions</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$, $s_{\mathrm{ent,sup}}$, $s_{\mathrm{ent,nrm}}$</td>
+<td>Entropy densities</td>
+</tr>
+<tr>
+<td>$\tilde J_{\Phi,\mathrm{ent}}$</td>
+<td>Entropy current, Hermitian</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_{\Psi,\mathrm{sup}}$, $\tilde\Sigma_{\Psi,\mathrm{nrm}}$</td>
+<td>The two energy–momentum elements</td>
+</tr>
+<tr>
+<td>$\tilde F_{\Phi,\mathrm{fr}}$</td>
+<td>Friction element</td>
+</tr>
+<tr>
+<td>$B_{\mathrm{frc}}$</td>
+<td>Friction coefficient</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{ent}}$</td>
+<td>Entropy production</td>
+</tr>
+<tr>
+<td>$T$, $\beta$</td>
+<td>Temperature, imaginary-time circumference</td>
+</tr>
+<tr>
+<td>$E_{J}$, $e_{\mathrm{cpl}}$</td>
+<td>Coupling energy density and density per volume</td>
+</tr>
+<tr>
+<td>$\Delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$</td>
+<td>Phase difference</td>
+</tr>
+<tr>
+<td>$J_{\Phi,\mathrm{ex},\eta}$, $J_{\mathrm{c}}$</td>
+<td>Exchange current and critical current</td>
+</tr>
+<tr>
+<td>$\omega_{\mathrm{Jsn}}$</td>
+<td>Josephson frequency</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm,sup}}$, $\mu_{\mathrm{chm,nrm}}$</td>
+<td>Chemical potentials</td>
+</tr>
+<tr>
+<td>$\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$</td>
+<td>Viscosities and conductivity</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}$, $p_{\mathrm{qnt}}$</td>
+<td>Quantum potential and quantum pressure</td>
+</tr>
+<tr>
+<td>$\gamma_{\mathrm{sup}}$, $\gamma_{\mathrm{nrm}}$</td>
+<td>Boost factors of the two components</td>
+</tr>
+<tr>
+<td>$\langle\ \rangle_{\natural}$, $\mathrm{Sc}$</td>
+<td>Quaternionic norm, scalar part</td>
+</tr>
+<tr>
+<td>$\hbar$, $m$, $c$</td>
+<td>Planck constant, mass, speed of light</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>W. Israel, "Relativistic Thermodynamics, Thermofield Statistics and Superfluids," <em>Journal of Non-Equilibrium Thermodynamics</em> <strong>11</strong> (1986) 295, for the two-fluid thermodynamics in a relativistic setting, which is this article's background.</li>
+<li>L. D. Landau, "Theory of the superfluidity of helium II," <em>Physical Review</em> <strong>60</strong> (1941) 356–358, for the original two-fluid model.</li>
+<li>L. Tisza, "Transport phenomena in helium II," <em>Nature</em> <strong>141</strong> (1938) 913, for the two-fluid hypothesis.</li>
+<li>I. M. Khalatnikov, <em>An Introduction to the Theory of Superfluidity</em> (Benjamin, 1965), for the mutual friction and the normal-component hydrodynamics.</li>
+<li>W. F. Vinen, "Mutual friction in a heat current in liquid helium II," <em>Proceedings of the Royal Society A</em> <strong>240</strong> (1957) 114–127, for the friction coefficient's experimental form.</li>
+<li>B. D. Josephson, "Possible new effects in superconductive tunnelling," <em>Physics Letters</em> <strong>1</strong> (1962) 251–253, for the phase coupling and the AC frequency.</li>
+<li>P. W. Anderson, "Considerations on the flow of superfluid helium," <em>Reviews of Modern Physics</em> <strong>38</strong> (1966) 298–310, for the Josephson relation in the neutral superfluid.</li>
+<li>D. T. Son, "Hydrodynamics of relativistic systems with broken continuous symmetries," <em>International Journal of Modern Physics A</em> <strong>16</strong> (2001) 1284–1286, for the relativistic superfluid's hydrodynamics.</li>
+<li>The companion articles: <a href="the-local-entropy-current.html">The Local Entropy Current</a>, <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>, <a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>, and <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

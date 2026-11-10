@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin Hydrodynamics in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-hydrodynamics-in-biquaternionic-form"><strong>Spin Hydrodynamics in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A fluid whose elements carry spin has a second conserved quantity, and its hydrodynamics is the hydrodynamics of a fluid with two currents: the energy-momentum element and the spin element.</strong> The new thermodynamic variable is the spin polarization, whose conjugate intensive quantity is the spin potential $\mu_{\mathrm{spn}}$:</p>
+<p>$$
+\mu_{\mathrm{spn}}=\mu_{\mathrm{spn}}\left(T,\ \mu_{\mathrm{chm}},\ \omega_{\lambda\nu}\right),
+$$</p>
+<p><strong>and the article's subject is what the fluid does when that variable is not in equilibrium</strong> — when the polarization is not the one the local temperature and vorticity would give it.</p>
+<p><strong>The spin polarization is an antisymmetric object with six independent components, and the corpus writes it as an element whose components are $\omega_{\lambda\nu}$.</strong> Three of the six are spatial rotations and three are boosts; the rotation part is the one a fluid element's spin couples to, and the boost part is the one a spin current transports. <strong>The article keeps every index low and labels the direction</strong>, following the frame and metric conventions: $\omega_{\lambda\nu}$ is an antisymmetric array of numbers, not a tensor slot.</p>
+<p><strong>The article's central caution is stated at the outset and derived later: the naive local relation is incomplete.</strong></p>
+<p>$$
+\frac{\partial p_{\mathrm{th}}}{\partial \omega_{\lambda\nu}}\neq \tilde S_{\Psi,\eta}\ \text{in general},
+$$</p>
+<p><strong>so the differential relations cannot close the equations.</strong> The equality holds only in global thermal equilibrium, where the polarization is the one the temperature fixes; off equilibrium the pressure is not a function of the polarization alone, and a closure that assumes it is has assumed away the physics. <strong>That is the article's most useful content and its warning against the most common shortcut in the spin-hydrodynamics literature.</strong></p>
+<p><strong>What the article builds on.</strong> The fluid's stress is <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>'s, the entropy current and its Hermiticity declaration are <a href="the-local-entropy-current.html">The Local Entropy Current</a>'s, the spin element is the rotor's, which is <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>'s, and the conservation law the spin obeys is <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>'s. <strong>The article adds the polarization as a thermodynamic variable, its diffusion and its relaxation, and the closure caution.</strong></p>
+<h2 id="the-spin-polarization-and-the-spin-potential">The Spin Polarization and the Spin Potential</h2>
+<h3 id="the-polarization-element">The polarization element</h3>
+<p><strong>The spin polarization is the rotor's generator, read as a thermodynamic variable.</strong> With the rotor $\tilde u_{\mathrm r}$ of the polar form and its generator $\tilde\omega_\Psi=\tfrac12\omega_{\lambda\nu}\tilde e_{\lambda\nu}$ — the antisymmetric part of the algebra's basis, with $\lambda<\nu$ — the polarization element is proportional to the generator:</p>
+<p>$$
+\tilde S_{\Psi,\eta}=\frac{\hbar}{2}\,\tilde u_{\mathrm r}\,\tilde e_{\lambda\nu}\,\tilde u_{\mathrm r}^{\natural}\,\omega_{\lambda\nu},
+$$</p>
+<p><strong>the rotor conjugating the generator into the fluid's frame and the factor $\hbar/2$ making the components angular momenta.</strong> The display is the polar-form article's rotor read as a density: <strong>the spin element is what the rotor looks like when it is summed over a volume.</strong></p>
+<p><strong>The components, low.</strong> Writing the six independent components $\omega_{\lambda\nu}=-\omega_{\nu\lambda}$ and the corresponding components $S_{\Psi,\eta,\lambda\nu}$ of the spin element, the article never raises an index; the pair $(\lambda,\nu)$ labels which rotation, and the array is antisymmetric in it. <strong>The spin tensor's components are the angular momentum density in the $\lambda\nu$ plane</strong>, and the flux of that component in the $\eta$ direction is written with $\eta$ last.</p>
+<p><strong>The zero-divisor caution.</strong> The rotor is an element of norm one, and the spin element it builds is regular as long as the rotor is; on the zero-divisor cone the quaternionic norm of the spin element vanishes and the polarization has no inverse. <strong>The corpus states the restriction because the algebra's degenerate elements are where its structure changes</strong>, and a hydrodynamic expansion around a degenerate polarization is not the same expansion.</p>
+<h3 id="the-two-chemical-potentials">The two chemical potentials</h3>
+<p><strong>A spin fluid has two intensive variables conjugate to two conserved densities, and the local thermal state is a function of both.</strong></p>
+<p>$$
+d w_{\mathrm{fl}}=T\,d s_{\mathrm{ent}}+\mu_{\mathrm{chm}}\,d\rho_{\mathrm{num}}+\frac{1}{2}\omega_{\lambda\nu}\,dS_{\Psi,\eta,\lambda\nu},
+$$</p>
+<p>with $\mu_{\mathrm{chm}}$ the chemical potential and $\omega_{\lambda\nu}$ the angular velocity conjugate to the spin density. <strong>The display is the first law for a spin fluid, and its third term is the one a spinless fluid does not have</strong>; the factor of one half counts the antisymmetric pairs once.</p>
+<p><strong>The spin potential is the intensive variable of the polarization, and it is not the angular velocity.</strong> The spin potential $\mu_{\mathrm{spn}}$ is the Legendre transform's variable,</p>
+<p>$$
+\mu_{\mathrm{spn}}=\left(\frac{\partial w_{\mathrm{fl}}}{\partial \rho_{\mathrm{num,spn}}}\right)_{s_{\mathrm{ent}},\rho_{\mathrm{num}}},
+$$</p>
+<p>where $\rho_{\mathrm{num,spn}}$ is the number density of polarized elements; <strong>it measures how much energy one more polarized element costs</strong>, whereas $\omega_{\lambda\nu}$ measures how fast the frame turns. <strong>The two are equal in equilibrium and different off it</strong>, which is the distinction that the closure caution later turns on.</p>
+<p><strong>The local thermal state with spin, written in the corpus's letters.</strong> The state is specified by the pointwise temperature, the chemical potential and the spin potential, and the equation of state is <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>'s with the third variable added:</p>
+<p>$$
+p_{\mathrm{eff}}=p_{\mathrm{th}}\left(\rho_{\mathrm{num}},\beta,\mu_{\mathrm{spn}}\right)+p_{\mathrm{qnt}}\left(\rho_{\mathrm{num}}\right),
+$$</p>
+<p><strong>the quantum part unchanged because it depends on the density alone</strong> and the thermal part gaining a dependence on the spin potential through the polarization's contribution to the energy.</p>
+<h2 id="rotational-flow-and-spin-gradients">Rotational Flow and Spin Gradients</h2>
+<h3 id="the-vorticity-of-the-flow-and-the-polarization">The vorticity of the flow and the polarization</h3>
+<p><strong>The flow's vorticity and the polarization are two different objects, and confusing them is the second commonest error in the subject.</strong> The vorticity is</p>
+<p>$$
+\omega^{\mathrm{vrt}}_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu},
+$$</p>
+<p>the antisymmetric part of the flow's gradient, <strong>built from the flow element's components</strong>; the polarization $\omega_{\lambda\nu}$ is a thermodynamic variable describing how the elements are spinning about their own centres. <strong>A fluid can rotate without polarized elements and be polarized without rotating</strong>, and the two names are distinguished in this article's notation by the label $\mathrm{vrt}$ on the vorticity.</p>
+<p><strong>Local equilibrium ties the two together, and the tie is the source of the spin-rotation coupling.</strong> In equilibrium a fluid element in a rotating flow is polarized in proportion to the rotation, with the standard result quoted:</p>
+<p>$$
+\mu_{\mathrm{spn}}^{\mathrm{eq}}=\frac{\hbar\,\omega^{\mathrm{vrt}}_{\mathrm{mag}}}{2},
+\qquad
+P_{\mathrm{pol}}=\tanh\left(\frac{\mu_{\mathrm{spn}}^{\mathrm{eq}}}{k_B T}\right),
+$$</p>
+<p>with $\omega^{\mathrm{vrt}}_{\mathrm{mag}}$ the magnitude of the rotation vector and $P_{\mathrm{pol}}$ the polarization of one element. <strong>At $\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $k_BT=0.15\,\mathrm{GeV}$ the polarization is $0.065\,730$</strong>, so a rotation fast by hadronic standards polarizes the fluid only weakly; at $\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}=0.065\,82\,\mathrm{GeV}$ the polarization is $0.215\,950$. <strong>The relation is the equilibrium one and is used only to identify the equilibrium polarization</strong>; off equilibrium the two differ by the polarization's own relaxation.</p>
+<p><strong>The coupling's energy, which is the interaction between the two.</strong> With the polarization and the vorticity both present, the energy density gains</p>
+<p>$$
+e_{\mathrm{rot}}=-\,\frac{1}{2}\,\omega^{\mathrm{vrt}}_{\lambda\nu}\,S_{\Psi,\eta,\lambda\nu},
+$$</p>
+<p>the standard spin-rotation coupling: <strong>a polarized element aligned with the rotation sits lower in energy, and a misaligned one sits higher.</strong> The display is the third term of the first law with the angular velocity replaced by the flow's vorticity, and the replacement is valid only in local equilibrium — <strong>which is the same restriction as before, and the article keeps track of it.</strong></p>
+<h3 id="spin-gradients-and-the-stress">Spin gradients and the stress</h3>
+<p><strong>A gradient in the polarization is a gradient in the spin density, and it contributes to the stress the way any gradient of an intensive variable does.</strong> The stress element gains a term</p>
+<p>$$
+\tilde\Sigma_{\Psi,\mathrm{spn}}=-\left(\partial_\lambda \mu_{\mathrm{spn}}\right)\tilde S_{\Psi,\eta}\ \text{in the first-order form},
+$$</p>
+<p><strong>whose divergence is the force that a polarization gradient exerts on the flow.</strong> The display is schematic in its indices — the spin element is antisymmetric and contracts with the gradient in the $\lambda$ slot — and <strong>the article states the structure and does not write the index algebra in full</strong>, because the full algebra is bookkeeping without physics.</p>
+<p><strong>The structure is worth having, because it is what couples the flow to the spin.</strong> A fluid with a polarization gradient is a fluid whose momentum balance feels the spin, so the flow and the spin cannot be solved separately; <strong>the two are one system, and that is the sense in which spin hydrodynamics is not ordinary hydrodynamics with an extra field.</strong></p>
+<p><strong>The entropy production of the spin channel, written with the inherited Hermiticity.</strong> The spin contributes a term to the production of <a href="the-local-entropy-current.html">The Local Entropy Current</a>,</p>
+<p>$$
+\sigma_{\mathrm{ent,spn}}=\frac{1}{T}\,\kappa_{\mathrm{spn}}\left(\partial_\lambda \mu_{\mathrm{spn}}\right)\left(\partial_\lambda \mu_{\mathrm{spn}}\right)\ \ge 0,
+$$</p>
+<p>with $\kappa_{\mathrm{spn}}$ the spin diffusion coefficient. <strong>The current remains Hermitian and the inequality remains real</strong>, so the declaration made in the entropy article covers this term without a fresh $\mathrm{Re}$; the term is a square, and its sign is the non-negativity of $\kappa_{\mathrm{spn}}$.</p>
+<h2 id="spin-diffusion-and-spin-relaxation">Spin Diffusion and Spin Relaxation</h2>
+<h3 id="diffusion">Diffusion</h3>
+<p><strong>A polarization gradient drives a spin current, and the current's law is Fick's law in the corpus's letters.</strong></p>
+<p>$$
+J_{\Psi,\mathrm{spn},\lambda}=-\,\kappa_{\mathrm{spn}}\,\partial_\lambda\mu_{\mathrm{spn}},
+$$</p>
+<p>with $\kappa_{\mathrm{spn}}$ the same coefficient as in the production. <strong>The two appearances are one fact</strong>: a current proportional to a gradient produces entropy proportional to the gradient squared, and the coefficient's sign is fixed by the second law's inequality.</p>
+<p><strong>Combining the current with the conservation law gives the diffusion equation.</strong> With the spin density's conservation off equilibrium — its source is the relaxation, next subsection —</p>
+<p>$$
+\partial_t S_{\Psi,\eta,\lambda\nu}=\partial_\lambda\left(\kappa_{\mathrm{spn}}\,\partial_\lambda \mu_{\mathrm{spn}}\right)+\text{relaxation},
+$$</p>
+<p><strong>the standard diffusion equation with a source.</strong> Its diffusion length over a time $\tau$ is $\ell_{\mathrm{spn}}=\sqrt{\kappa_{\mathrm{spn}}\tau}$, <strong>which is the length over which a polarization disturbance is felt</strong> and the number that decides whether a given fluid element is polarized by its neighbours.</p>
+<h3 id="relaxation">Relaxation</h3>
+<p><strong>The polarization relaxes to its local equilibrium value on a time scale $\tau_{\mathrm{spn}}$, and the relaxation is the spin channel's answer to the shear's viscosity.</strong></p>
+<p>$$
+\frac{d}{dt}\left(S_{\Psi,\eta,\lambda\nu}-S_{\Psi,\eta,\lambda\nu}^{\mathrm{eq}}\right)=-\,\frac{1}{\tau_{\mathrm{spn}}}\left(S_{\Psi,\eta,\lambda\nu}-S_{\Psi,\eta,\lambda\nu}^{\mathrm{eq}}\right),
+$$</p>
+<p><strong>the relaxation-time approximation, which is the standard closure and is quoted as such.</strong> Its solution is exponential, and its content is one number: how long a polarized element remembers its polarization.</p>
+<p><strong>A number, for scale.</strong> With $\tau_{\mathrm{spn}}=0.5\,\mathrm{fm}/c=1.667\,820\,476\times10^{-24}\,\mathrm{s}$, the surviving fraction after $0.5\,\mathrm{fm}/c$ is $e^{-1}=0.367\,879$, after $1\,\mathrm{fm}/c$ it is $0.135\,335$, after $2\,\mathrm{fm}/c$ it is $0.018\,316$, and after $5\,\mathrm{fm}/c$ it is $4.540\times10^{-5}$. <strong>The polarization is gone after a few relaxation times</strong>, which is why spin hydrodynamics is a description of the early stage of a collision and not of its late stage.</p>
+<p><strong>The relaxation is dissipative and its production is positive.</strong> The relaxation term contributes to $\sigma_{\mathrm{ent}}$ a piece proportional to the departure squared over $\tau_{\mathrm{spn}}T$, <strong>so the decay of the polarization heats the fluid</strong>, exactly as the decay of a shear does. <strong>The two channels — spin relaxation and shear — are separate squares of the same second law</strong>, and the article counts them separately.</p>
+<p><strong>Why relaxation is not optional.</strong> A first-order theory with a diffusive spin current and no relaxation is parabolic and therefore acausal, exactly as the first-order heat conduction is; <strong>the relaxation time is what makes the spin channel hyperbolic</strong>, and <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a> is where that structure is written for the fluid as a whole.</p>
+<h2 id="the-caution-why-the-differential-relations-do-not-close">The Caution: Why the Differential Relations Do Not Close</h2>
+<h3 id="the-identity-and-its-domain">The identity and its domain</h3>
+<p><strong>The relation $\partial p_{\mathrm{th}}/\partial\omega_{\lambda\nu}=S_{\Psi,\eta,\lambda\nu}$ is a thermodynamic identity of the equilibrium state, and it is not an identity of the hydrodynamic equations.</strong> In equilibrium the pressure is a function of the complete set of state variables, the polarization among them, and the derivative is a genuine partial derivative of a function. <strong>Off equilibrium the pressure is not a function of those variables at all</strong> — it is a functional of the state's history through the relaxation — so the derivative on the left is not defined as a partial derivative, and the equality has no content.</p>
+<p><strong>Written with the corpus's letters, the caution is</strong></p>
+<p>$$
+\frac{\partial p_{\mathrm{th}}}{\partial \omega_{\lambda\nu}}\neq \tilde S_{\Psi,\eta}
+\qquad\text{when }\omega_{\lambda\nu}\neq\omega_{\lambda\nu}^{\mathrm{eq}},
+$$</p>
+<p><strong>and the inequality is the statement that the two sides are different objects rather than two values of one.</strong> The left side is the derivative of the equation of state along the equilibrium surface; the right side is the actual spin density, which relaxes towards that surface at its own rate. <strong>They agree only on the surface.</strong></p>
+<h3 id="why-the-closure-fails">Why the closure fails</h3>
+<p><strong>The differential relations are a system with more unknowns than equations, and the missing equations are the relaxation equations and not the equilibrium identity.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Components of the flow element</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Temperature and chemical potential</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Components of the spin density</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>The pressure and the energy density</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><strong>Unknowns</strong></td>
+<td><strong>$14$</strong></td>
+</tr>
+<tr>
+<td>Conservation of the energy-momentum element</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Conservation of the spin element</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>The equation of state, one relation</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>The second law, one inequality</td>
+<td>$0$ (it constrains, it does not determine)</td>
+</tr>
+<tr>
+<td><strong>Equations</strong></td>
+<td><strong>$11$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count is the article's argument in one table: eleven equations for fourteen unknowns, so three relations are missing.</strong> The three are the constitutive relations for the dissipative fluxes — the bulk and shear stresses and the heat flux, or in the spin sector the spin current and its relaxation — and <strong>they cannot be supplied by the equilibrium identity, because the identity would replace six unknowns by the derivative of one function and would leave the relaxation time undetermined.</strong></p>
+<p><strong>What happens if the identity is used anyway, which is what the shortcut does.</strong> Substituting $S_{\Psi,\eta,\lambda\nu}=\partial p_{\mathrm{th}}/\partial\omega_{\lambda\nu}$ closes the system at eleven equations and eleven unknowns, and the resulting theory is the one in which the polarization is slaved to the flow instantaneously. <strong>It is parabolic, it is acausal, and it has the wrong sign for the spin's contribution to the shear stress in the regime where the spin is not equilibrated</strong> — three defects, each of which is fatal to a description of a system that is not in equilibrium by construction.</p>
+<p><strong>The identity's correct use, which the article keeps.</strong> It is a <em>diagnostic</em>: on the equilibrium surface it relates the equation of state to the spin density, so a measurement of one checks the other; and it is the <em>target</em> of the relaxation equation, which drives the spin density towards the value the identity gives. <strong>Using it as a definition is the error; using it as the relaxation's fixed point is the method.</strong></p>
+<h3 id="what-the-spin-sector-needs-instead">What the spin sector needs instead</h3>
+<p><strong>Three equations, and the article names them without solving them.</strong> The spin current's constitutive relation with its diffusion coefficient, the relaxation equation for the polarization with its time scale, and the coupling between the spin current and the flow's vorticity. <strong>The first two are written above; the third is the spin-rotation coupling of the earlier section, which enters the energy balance.</strong></p>
+<p><strong>The count after the three are supplied: fourteen equations for fourteen unknowns, with the three transport coefficients $\kappa_{\mathrm{spn}}$, $\tau_{\mathrm{spn}}$ and the spin-rotation coupling as parameters.</strong> The system is then closed and hyperbolic, and the second law's inequality constrains the three coefficients' signs. <strong>That is the standard Israel–Stewart counting applied to the spin sector</strong>, and the article's contribution is to say so in the corpus's letters rather than to re-derive the counting.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established, and standard.</strong> That a spin fluid's thermodynamics has two intensive variables, the temperature and the spin potential, and that its first law carries the term $\tfrac12\omega_{\lambda\nu}dS_{\Psi,\eta,\lambda\nu}$; that the polarization diffuses with a coefficient whose sign the second law fixes; that it relaxes to its local equilibrium value on a time scale $\tau_{\mathrm{spn}}$; that the relaxation is dissipative and produces entropy; that the equilibrium identity between the pressure's derivative and the spin density holds on the equilibrium surface and does not close the equations off it.</p>
+<p><strong>The framework's contribution.</strong> The spin element is the rotor's generator conjugated into the fluid's frame, so the polarization is a property of the rotor and not an independent field; the spin's contribution to the stress and to the entropy current is written on elements, with every index low; and the entropy inequality that constrains the spin channel inherits <a href="the-local-entropy-current.html">The Local Entropy Current</a>'s Hermiticity declaration, so no fresh $\mathrm{Re}$ is written.</p>
+<p><strong>Interpretation, and marked as such.</strong> That the spin element is $\tfrac{\hbar}{2}$ times the conjugated generator with the components read as angular momenta is the corpus's normalisation and not a derivation. That the relaxation is exponential is the relaxation-time approximation and is quoted, not derived.</p>
+<p><strong>Not claimed.</strong> That the transport coefficients have been computed — they have not. That the full index algebra of the spin stress has been written — it has not, and the article says so where the display is schematic. That the spin conservation law has been derived from the rotor's equation of motion — that is <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>'s subject, and this article cites it. That the theory is causal — that is <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>'s, and the spin channel's hyperbolicity is asserted here on the strength of its relaxation equation rather than proved.</p>
+<h2 id="summary">Summary</h2>
+<p>A spin fluid has two intensive variables. The spin potential $\mu_{\mathrm{spn}}$ is conjugate to the spin polarization, whose element is the rotor's generator conjugated into the fluid's frame, $\tilde S_{\Psi,\eta}=\tfrac{\hbar}{2}\tilde u_{\mathrm r}\tilde e_{\lambda\nu}\tilde u_{\mathrm r}^{\natural}\omega_{\lambda\nu}$, with the six components $\omega_{\lambda\nu}$ antisymmetric and every index low. The first law gains one term, $dw_{\mathrm{fl}}=Tds_{\mathrm{ent}}+\mu_{\mathrm{chm}}d\rho_{\mathrm{num}}+\tfrac12\omega_{\lambda\nu}dS_{\Psi,\eta,\lambda\nu}$, and the equation of state gains one argument.</p>
+<p>Rotational flow and spin gradients couple. The vorticity $\omega^{\mathrm{vrt}}_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is not the polarization, and in equilibrium $\mu_{\mathrm{spn}}^{\mathrm{eq}}=\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}/2$ with $P_{\mathrm{pol}}=\tanh(\mu_{\mathrm{spn}}^{\mathrm{eq}}/k_BT)$, which is $0.065\,730$ at $\hbar\omega^{\mathrm{vrt}}_{\mathrm{mag}}=0.019\,75\,\mathrm{GeV}$ and $0.215\,950$ at $0.065\,82\,\mathrm{GeV}$ for $k_BT=0.15\,\mathrm{GeV}$. The spin-rotation energy is $e_{\mathrm{rot}}=-\tfrac12\omega^{\mathrm{vrt}}_{\lambda\nu}S_{\Psi,\eta,\lambda\nu}$ and the spin gradient contributes to the stress.</p>
+<p>Spin diffusion is $J_{\Psi,\mathrm{spn},\lambda}=-\kappa_{\mathrm{spn}}\partial_\lambda\mu_{\mathrm{spn}}$, with the production $\sigma_{\mathrm{ent,spn}}=T^{-1}\kappa_{\mathrm{spn}}(\partial_\lambda\mu_{\mathrm{spn}})(\partial_\lambda\mu_{\mathrm{spn}})\ge0$, real by the inherited declaration. Spin relaxation drives the polarization to its equilibrium value on the time scale $\tau_{\mathrm{spn}}$; with $\tau_{\mathrm{spn}}=0.5\,\mathrm{fm}/c$ the surviving fraction is $0.367\,879$ after $0.5\,\mathrm{fm}/c$ and $4.540\times10^{-5}$ after $5\,\mathrm{fm}/c$.</p>
+<p>The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{\lambda\nu}\neq\tilde S_{\Psi,\eta}$ off the equilibrium surface, so the differential relations do not close — eleven equations for fourteen unknowns — and the three missing relations are the constitutive ones, not the equilibrium identity. <strong>Using the identity as a closure gives a parabolic, acausal theory with the wrong sign; using it as the relaxation's fixed point is the method.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu_{\mathrm{spn}}$</td>
+<td>Spin potential</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{spn}}^{\mathrm{eq}}$</td>
+<td>Its equilibrium value</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}$</td>
+<td>Chemical potential</td>
+</tr>
+<tr>
+<td>$\omega_{\lambda\nu}=-\omega_{\nu\lambda}$</td>
+<td>Spin polarization components</td>
+</tr>
+<tr>
+<td>$\omega^{\mathrm{vrt}}_{\mu\nu}$</td>
+<td>Vorticity of the flow</td>
+</tr>
+<tr>
+<td>$\omega^{\mathrm{vrt}}_{\mathrm{mag}}$</td>
+<td>Magnitude of the rotation vector</td>
+</tr>
+<tr>
+<td>$\tilde S_{\Psi,\eta}$</td>
+<td>Spin element</td>
+</tr>
+<tr>
+<td>$S_{\Psi,\eta,\lambda\nu}$</td>
+<td>Its components, low</td>
+</tr>
+<tr>
+<td>$S_{\Psi,\eta,\lambda\nu}^{\mathrm{eq}}$</td>
+<td>Its equilibrium value</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>Rotor of the polar form</td>
+</tr>
+<tr>
+<td>$\tilde e_{\lambda\nu}$</td>
+<td>Antisymmetric basis element</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$</td>
+<td>Proper density</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num,spn}}$</td>
+<td>Density of polarized elements</td>
+</tr>
+<tr>
+<td>$w_{\mathrm{fl}}$, $p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$, $p_{\mathrm{eff}}$</td>
+<td>Energy density and pressures</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$</td>
+<td>Entropy density</td>
+</tr>
+<tr>
+<td>$T$, $\beta$</td>
+<td>Temperature, imaginary-time circumference</td>
+</tr>
+<tr>
+<td>$P_{\mathrm{pol}}$</td>
+<td>Polarization of one element</td>
+</tr>
+<tr>
+<td>$e_{\mathrm{rot}}$</td>
+<td>Spin-rotation energy density</td>
+</tr>
+<tr>
+<td>$J_{\Psi,\mathrm{spn},\lambda}$</td>
+<td>Spin current</td>
+</tr>
+<tr>
+<td>$\kappa_{\mathrm{spn}}$</td>
+<td>Spin diffusion coefficient</td>
+</tr>
+<tr>
+<td>$\tau_{\mathrm{spn}}$</td>
+<td>Spin relaxation time</td>
+</tr>
+<tr>
+<td>$\ell_{\mathrm{spn}}$</td>
+<td>Spin diffusion length</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{ent}}$, $\sigma_{\mathrm{ent,spn}}$</td>
+<td>Entropy production, its spin part</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_{\Psi,\mathrm{spn}}$</td>
+<td>Spin contribution to the stress</td>
+</tr>
+<tr>
+<td>$v_{\Phi,\nu}$</td>
+<td>Components of the flow element</td>
+</tr>
+<tr>
+<td>$\hbar$, $k_B$, $c$</td>
+<td>Planck constant, Boltzmann constant, speed of light</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>F. Becattini, "Covariant statistical mechanics and the stress-energy tensor," <em>Physical Review Letters</em> <strong>108</strong> (2012) 244502, for the spin potential and the equilibrium density operator with angular momentum.</li>
+<li>F. Becattini and L. Tinti, "The ideal relativistic rotating gas as a perfect fluid with spin," <em>Annals of Physics</em> <strong>325</strong> (2010) 1566–1594, for the thermodynamics of a rotating spin fluid.</li>
+<li>W. Florkowski, B. Friman, A. Jaiswal and E. Speranza, "Relativistic fluid dynamics with spin," <em>Physical Review C</em> <strong>97</strong> (2018) 041901, for the spin hydrodynamics equations used here as the standard reference.</li>
+<li>W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," <em>Annals of Physics</em> <strong>118</strong> (1979) 341–372, for the relaxation-time closure and the counting argument.</li>
+<li>L. D. Landau and E. M. Lifshitz, <em>Statistical Physics, Part 1</em> (Pergamon, 1980), for the thermodynamics of a system in rotation.</li>
+<li>F. Becattini, L. Bucciantini, E. Grossi and L. Tinti, "Local thermodynamical equilibrium and the $\beta$ frame for a quantum relativistic fluid," <em>European Physical Journal C</em> <strong>75</strong> (2015) 191, for the local-equilibrium density operator and the frame dependence.</li>
+<li>The companion articles: <a href="the-local-entropy-current.html">The Local Entropy Current</a>, <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>, and <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

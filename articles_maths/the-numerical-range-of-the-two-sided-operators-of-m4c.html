@@ -117,7 +117,7 @@ $$</p>
 \|L_{a}R_{b}\|_p=\|a\|_p\,\|b\|_p .
 $$</p>
 <p><strong>Proof.</strong> A Kronecker product $A\otimes B$ has spectrum $\{\alpha_i\beta_j\}$, trace $\operatorname{tr}A\operatorname{tr}B$, determinant $(\det A)^{n}(\det B)^{m}$ for $A\in M_m$, $B\in M_n$, rank $\operatorname{rank}A\operatorname{rank}B$, and singular values $s_i(A)s_j(B)$. Here $A=a$ and $B=b^{\mathsf T}$, of size four, and $\operatorname{tr}b^{\mathsf T}=\operatorname{tr}b$, $\det b^{\mathsf T}=\det b$, $s_j(b^{\mathsf T})=s_j(b)$. The Schatten norm is the $\ell^{p}$ norm of the singular values, and a pairwise product of two lists has $\ell^{p}$ norm the product of the two $\ell^{p}$ norms.</p>
-<p><strong>Corollary.</strong> $\|L_{a}R_{b}\|=\|a\|\,\|b\|$ and $\|L_{a}R_{b}\|_{\mathrm{HS}}=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}}$.</p>
+<p><strong>Corollary.</strong> $\|L_{a}R_{b}\|=\|a\|\,\|b\|$ and $\langle L_{a}R_{b}\rangle_*^{1/2}=\langle a\rangle_*^{1/2}\langle b\rangle_*^{1/2}$.</p>
 <p><strong>Remark (the notation).</strong> The letters $L_{a}R_{b}$ also denote the $4\times4$ matrices $L_\mu R_\nu$ of <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em> and <em>Operators Acting on Two Sides</em>, acting on the carrier $\mathbb{B}\cong\mathbb{C}^4$. The two are the same two-sided construction applied to the algebra $M_4(\mathbb{C})$ and to the algebra $\mathbb{B}$; the present article always means the operator on the sixteen-dimensional algebra. The same convention is used in <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>.</p>
 <p><strong>The field of values.</strong> By the general theory, $W(L_{a}R_{b})$ is compact, connected and convex, it contains the spectrum, and its support function is</p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 \qquad
 W(a)W(b)=\{xy:\ x\in W(a),\ y\in W(b)\}.
 $$</p>
-<p><strong>Proof.</strong> Let $x=u^{*}au\in W(a)$ and $y=v^{*}bv\in W(b)$ with $\|u\|=\|v\|=1$, and put $X=uv^{*}$. Then $\|X\|_{\mathrm{HS}}=\|u\|\,\|v\|=1$ and</p>
+<p><strong>Proof.</strong> Let $x=u^{*}au\in W(a)$ and $y=v^{*}bv\in W(b)$ with $\|u\|=\|v\|=1$, and put $X=uv^{*}$. Then $\langle X\rangle_*^{1/2}=\|u\|\,\|v\|=1$ and</p>
 <p>$$
 \langle X,L_{a}R_{b}(X)\rangle
 =\operatorname{tr}(vu^{*}auv^{*}b)
@@ -180,7 +180,7 @@ $$</p>
 <h2 id="the-rank-one-case">The Rank-One Case</h2>
 <p><strong>Theorem (the ellipse of a rank-one two-sided operator).</strong> Let $a=uv^{*}$ and $b=xy^{*}$ with $u,v,x,y\ne0$. Then $L_{a}R_{b}$ has rank one, $L_{a}R_{b}(X)=\langle vx^{*},X\rangle\,uy^{*}$, and $W(L_{a}R_{b})$ is the closed ellipse with foci $0$ and $\operatorname{tr}a\,\operatorname{tr}b$ and semi-minor axis</p>
 <p>$$
-\frac12\sqrt{\|a\|_{\mathrm{HS}}^{2}\|b\|_{\mathrm{HS}}^{2}
+\frac12\sqrt{\langle a\rangle_*\langle b\rangle_*
 -\bigl|\operatorname{tr}a\,\operatorname{tr}b\bigr|^{2}} .
 $$</p>
 <p><strong>Proof.</strong> $aXb=u(v^{*}Xx)y^{*}$, so $L_{a}R_{b}(X)=\langle V,X\rangle\,U$ with $U=uy^{*}$ and $V=vx^{*}$ in the Hilbert–Schmidt form. The operator is rank one with</p>
@@ -188,17 +188,17 @@ $$</p>
 \operatorname{tr}L_{a}R_{b}=\langle V,U\rangle
 =(v^{*}u)(y^{*}x)=\operatorname{tr}a\,\operatorname{tr}b,
 \qquad
-\|L_{a}R_{b}\|_{\mathrm{HS}}=\|u\|\,\|y\|\,\|v\|\,\|x\|=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}} .
+\langle L_{a}R_{b}\rangle_*^{1/2}=\|u\|\,\|y\|\,\|v\|\,\|x\|=\langle a\rangle_*^{1/2}\langle b\rangle_*^{1/2} .
 $$</p>
-<p>The compression to the two-dimensional span of $U$ and $V$ — the rank-one case of <em>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</em> — gives the ellipse with foci the two eigenvalues, $0$ and $\operatorname{tr}L_{a}R_{b}$, and twice the semi-minor axis $\sqrt{\|T\|_{\mathrm{HS}}^{2}-|\operatorname{tr}T|^{2}}$.</p>
+<p>The compression to the two-dimensional span of $U$ and $V$ — the rank-one case of <em>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</em> — gives the ellipse with foci the two eigenvalues, $0$ and $\operatorname{tr}L_{a}R_{b}$, and twice the semi-minor axis $\sqrt{\langle T\rangle_*-|\operatorname{tr}T|^{2}}$.</p>
 <p><strong>Corollary (the matrix units).</strong> For $a=E_{ij}$ and $b=E_{kl}$:</p>
 <ul>
 <li>if $i\ne j$ or $k\ne l$, then $W(L_{a}R_{b})$ is the closed disk of radius $\tfrac12$ centred at $0$;</li>
 <li>if $i=j$ and $k=l$, then $L_{a}R_{b}$ is an orthogonal projection of rank one and $W(L_{a}R_{b})=[0,1]$.</li>
 </ul>
 <p><strong>Proof.</strong> The trace is $\delta_{ij}\delta_{kl}$ and the Hilbert–Schmidt norm is $1$. In the first case the foci coincide at $0$ and the ellipse is the disk of radius $\tfrac12$. In the second case $L_{a}R_{b}(X)=X_{ik}E_{ik}$ is the orthogonal projection onto the line $\mathbb{C}E_{ik}$, and the field of values of a rank-one projection is $[0,1]$.</p>
-<p><strong>Corollary (the trace-zero disk).</strong> If $L_{a}R_{b}$ has rank one and trace zero, then $W(L_{a}R_{b})$ is the closed disk of radius $\tfrac12\|L_{a}R_{b}\|_{\mathrm{HS}}$.</p>
-<p><strong>Proof.</strong> The ellipse of the theorem has coincident foci at the origin and semi-minor axis $\tfrac12\|T\|_{\mathrm{HS}}$.</p>
+<p><strong>Corollary (the trace-zero disk).</strong> If $L_{a}R_{b}$ has rank one and trace zero, then $W(L_{a}R_{b})$ is the closed disk of radius $\tfrac12\langle L_{a}R_{b}\rangle_*^{1/2}$.</p>
+<p><strong>Proof.</strong> The ellipse of the theorem has coincident foci at the origin and semi-minor axis $\tfrac12\langle T\rangle_*^{1/2}$.</p>
 <h2 id="the-hermitian-the-projection-and-the-unitary-cases">The Hermitian, the Projection and the Unitary Cases</h2>
 <p><strong>Proposition (Hermitian factors).</strong> If $a$ and $b$ are Hermitian, then $L_{a}R_{b}$ is self-adjoint for the Hilbert–Schmidt form and</p>
 <p>$$

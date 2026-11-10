@@ -91,28 +91,28 @@ $$</p>
 <p><strong>Proposition (the classical bound).</strong> Let $q$ be a real quaternion, $c$ a real quaternion, and $|\cdot|$ the quaternion norm. If $|q|>1+|c|$ then $|q^2+c|\ge|q|^2-|c|>|q|$, so the orbit of $q$ under $q\mapsto q^2+c$ escapes and $|q_n|\to\infty$.</p>
 <p><strong>Proof.</strong> $|q^2|=|q|^2$ by multiplicativity of the quaternion norm, and the triangle inequality gives the lower bound. From $|q|>1+|c|$, $|q|^2-|c|>|q|(1+|c|)-|c|=|q|+|c|(|q|-1)>|q|$; the size strictly increases at every step and the increment grows.</p>
 <p>In $\mathbb{B}$ no such bound exists in the Euclidean norm, because the biquaternion square can vanish.</p>
-<p><strong>Proposition (the collapse).</strong> There are non-zero $\tilde Q\in\mathbb{B}$ with $\tilde Q^2=0$ and $\|\tilde Q\|_E$ arbitrarily large, so $\|\tilde Q^2\|_E$ admits no lower bound in terms of $\|\tilde Q\|_E$ and the classical escape-time test cannot be applied to the Euclidean norm.</p>
+<p><strong>Proposition (the collapse).</strong> There are non-zero $\tilde Q\in\mathbb{B}$ with $\tilde Q^2=0$ and $\|\tilde Q\|$ arbitrarily large, so $\|\tilde Q^2\|$ admits no lower bound in terms of $\|\tilde Q\|$ and the classical escape-time test cannot be applied to the Euclidean norm.</p>
 <p><strong>Proof.</strong> A pure vector $\vec Q=\sum_{k=1}^3Q_k\vec e_k$ has $\vec Q^2=-(\sum_kQ_k^2)e_t$, so $\vec Q^2=0$ exactly when $\sum_kQ_k^2=0$; the element $\tilde Q=\vec e_x+i\vec e_y$ satisfies this, and $\lambda\tilde Q$ does too for every $\lambda\in\mathbb{C}$. The norm of $\lambda\tilde Q$ is $|\lambda|\sqrt2$, unbounded, while its square is zero.</p>
 <p>The failure is not a defect of the Euclidean norm alone. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is multiplicative but complex-valued and vanishes on the zero divisors, and its modulus $r=\sqrt{|N|}$ vanishes on the same set; neither can serve as a size. The unique real multiplicative semi-norm of the algebra is $r$ itself, and a semi-norm that vanishes off the origin cannot decide escape (<em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>). <strong>The escape-time algorithm exists in $\mathbb{B}$ only off the zero-divisor cone.</strong></p>
 <p>What survives is a conditional bound, phrased through the singular values of the matrix model.</p>
 <p><strong>Proposition (conditional escape).</strong> Let $\tilde Q\in\mathbb{B}$, $M=\mathsf{M}_2(\tilde Q)$, let $\sigma_1\ge\sigma_2\ge0$ be the two singular values of $M$, and suppose $\sigma_2\ge\delta\sigma_1$ for some $\delta>0$. Then</p>
 <p>$$
-\|\tilde Q^2\|_E\ge\delta^2\|\tilde Q\|_E^2 .
+\|\tilde Q^2\|\ge\delta^2\|\tilde Q\|^2 .
 $$</p>
-<p>Consequently, if $\delta^2\|\tilde Q\|_E^2-\|\tilde Q_2\|_E>\|\tilde Q\|_E$, in particular for</p>
+<p>Consequently, if $\delta^2\|\tilde Q\|^2-\|\tilde Q_2\|>\|\tilde Q\|$, in particular for</p>
 <p>$$
-\boxed{\;\|\tilde Q\|_E>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|_E}}{2\delta^2}\;},
+\boxed{\;\|\tilde Q\|>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|}}{2\delta^2}\;},
 $$</p>
-<p>then $\|F_{\tilde Q_2}(\tilde Q)\|_E>\|\tilde Q\|_E$ and the orbit of $\tilde Q$ escapes.</p>
-<p><strong>Proof.</strong> For a $2\times2$ matrix $A$, $\|A\|_F^2=\sigma_1(A)^2+\sigma_2(A)^2\ge2\sigma_2(A)^2$, so $\|A\|_F\ge\sqrt2\,\sigma_2(A)$; and $\sigma_2(M^2)\ge\sigma_2(M)^2$, because $\sigma_1\sigma_2=|\det|$, $\sigma_1$ is submultiplicative, and
+<p>then $\|F_{\tilde Q_2}(\tilde Q)\|>\|\tilde Q\|$ and the orbit of $\tilde Q$ escapes.</p>
+<p><strong>Proof.</strong> For a $2\times2$ matrix $A$, $\langle A\rangle_*=\sigma_1(A)^2+\sigma_2(A)^2\ge2\sigma_2(A)^2$, so $\langle A\rangle_*^{1/2}\ge\sqrt2\,\sigma_2(A)$; and $\sigma_2(M^2)\ge\sigma_2(M)^2$, because $\sigma_1\sigma_2=|\det|$, $\sigma_1$ is submultiplicative, and
 $$
 \sigma_2(M^2)=\frac{|\det M|^2}{\sigma_1(M^2)}\ge\frac{|\det M|^2}{\sigma_1(M)^2}=\sigma_2(M)^2 .
 $$
-Also $\|M\|_F^2\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\|M\|_F/\sqrt2=\|\tilde Q\|_E$, using $\|\mathsf{M}_2(\tilde Q)\|_F=\sqrt2\|\tilde Q\|_E$. Hence</p>
+Also $\langle M\rangle_*\le2\sigma_1(M)^2$ gives $\sigma_1(M)\ge\langle M\rangle_*^{1/2}/\sqrt2=\|\tilde Q\|$, using $\langle \mathsf{M}_2(\tilde Q)\rangle_*^{1/2}=\sqrt2\|\tilde Q\|$. Hence</p>
 <p>$$
-\|M^2\|_F\ge\sqrt2\,\sigma_2(M^2)\ge\sqrt2\,\sigma_2(M)^2\ge\sqrt2\,\delta^2\sigma_1(M)^2\ge\sqrt2\,\delta^2\|\tilde Q\|_E^2 ,
+\langle M^2\rangle_*^{1/2}\ge\sqrt2\,\sigma_2(M^2)\ge\sqrt2\,\sigma_2(M)^2\ge\sqrt2\,\delta^2\sigma_1(M)^2\ge\sqrt2\,\delta^2\|\tilde Q\|^2 ,
 $$</p>
-<p>and dividing by $\sqrt2$ gives $\|\tilde Q^2\|_E=\|M^2\|_F/\sqrt2\ge\delta^2\|\tilde Q\|_E^2$. The triangle inequality finishes.</p>
+<p>and dividing by $\sqrt2$ gives $\|\tilde Q^2\|=\langle M^2\rangle_*^{1/2}/\sqrt2\ge\delta^2\|\tilde Q\|^2$. The triangle inequality finishes.</p>
 <p><strong>Remark (what $\delta$ measures).</strong> The quantity $\delta=\sigma_2/\sigma_1$ is the reciprocal condition number of the iterate; $\delta=0$ exactly on the zero divisors. <strong>The conditional escape radius is a family $R_\delta$ indexed by the distance to the zero-divisor cone, and there is no finite radius uniform in $\delta$.</strong> The radius $R_\delta$ is the honest replacement of the single escape radius of the field, and it is developed in <em>The Escape Radius and the Green's Function for the Biquaternions</em>.</p>
 <h2 id="the-central-slice">The Central Slice</h2>
 <p><strong>Proposition (the critical orbit of a central parameter is classical).</strong> Let $\tilde Q_2=Ce_t$. Then $F_{\tilde Q_2}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\omega\mapsto\omega^2+C$. In particular</p>
@@ -197,7 +197,7 @@ $$</p>
 <td>the conditional escape radius at condition $\delta$</td>
 </tr>
 <tr>
-<td>$\|\cdot\|_E$, $\|\cdot\|_F$</td>
+<td>$\|\cdot\|$, $\langle \cdot\rangle_*^{1/2}$</td>
 <td>the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$</td>
 </tr>
 <tr>

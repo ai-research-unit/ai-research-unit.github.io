@@ -102,7 +102,7 @@ $$</p>
 <p><strong>Corollary (the minimum-norm solution).</strong> When the equation is solvable, the solution of minimum Frobenius norm is $X=A^\dagger\ast B$.</p>
 <p><em>Proof.</em> The two terms of the general solution are orthogonal: $L_A\ast A^\dagger=0$, hence $(A^\dagger)^{\mathsf H}\ast L_A=0$, and</p>
 <p>$$
-\|A^\dagger\ast B+L_A\ast Y\|_{\mathrm F}^2=\|A^\dagger\ast B\|_{\mathrm F}^2+\|L_A\ast Y\|_{\mathrm F}^2.
+\langle A^\dagger\ast B+L_A\ast Y\rangle_*=\langle A^\dagger\ast B\rangle_*+\langle L_A\ast Y\rangle_*.
 $$</p>
 <p>The minimum is attained at $L_A\ast Y=0$.</p>
 <h2 id="the-least-squares-solutions">The Least-Squares Solutions</h2>
@@ -119,7 +119,7 @@ A^{\mathsf H}\ast(A\ast X-B)=0.
 $$</p>
 <p><em>Proof.</em> By the norm identity of <em>The Singular Value Decomposition of a Reduced Biquaternion Tensor</em>,</p>
 <p>$$
-\|A\ast X-B\|_{\mathrm F}=\frac1{\sqrt{n_3}}\|\operatorname{diag}(\widehat A)\operatorname{diag}(\widehat X)-\operatorname{diag}(\widehat B)\|_{\mathrm F}.
+\langle A\ast X-B\rangle_*^{1/2}=\frac1{\sqrt{n_3}}\langle \operatorname{diag}(\widehat A)\operatorname{diag}(\widehat X)-\operatorname{diag}(\widehat B)\rangle_*^{1/2}.
 $$</p>
 <p>The minimum is therefore attained slice by slice, and the matrix least-squares solutions of $\widehat A^{(k)}\widehat X^{(k)}=\widehat B^{(k)}$ are</p>
 <p>$$
@@ -186,7 +186,7 @@ O\bigl(n_1n_2n_3\log n_3+n_3\min(n_1^2n_2,n_1n_2^2)\bigr),
 $$</p>
 <p>plus the slicewise matrix multiplications. The two coordinates are independent and can be solved in parallel.</p>
 <h2 id="verification">Verification</h2>
-<p>The statements were recomputed on random tensors of sizes $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. For a consistent system, the norms $\|R_A\ast B\|_{\mathrm F}$ and $\|A\ast X_0-B\|_{\mathrm F}$ were at most $1.6\times10^{-14}$, and the general solution reproduced $B$ to $2.4\times10^{-14}$. For an inconsistent system, the normal equation held to $1.5\times10^{-13}$, and the identity $\|X\|_{\mathrm F}^2=\|A^\dagger\ast B\|_{\mathrm F}^2+\|L_A\ast W\|_{\mathrm F}^2$ held to $1.8\times10^{-29}$. For the Hermitian problem, the residual was $3.1\times10^{-14}$, the symmetry $X^{\mathsf H}-X$ was $4.8\times10^{-15}$, and the completeness with $U=X_0$ held to $3.8\times10^{-15}$; a tensor in the range of $A$ whose product $B\ast A^{\mathsf H}$ was not Hermitian failed the condition by $84.07$. For the right-handed equation, the normal equation held to $1.7\times10^{-13}$, the minimum-norm identity to $2.7\times10^{-15}$, and the consistent solution to $1.9\times10^{-14}$.</p>
+<p>The statements were recomputed on random tensors of sizes $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. For a consistent system, the norms $\langle R_A\ast B\rangle_*^{1/2}$ and $\langle A\ast X_0-B\rangle_*^{1/2}$ were at most $1.6\times10^{-14}$, and the general solution reproduced $B$ to $2.4\times10^{-14}$. For an inconsistent system, the normal equation held to $1.5\times10^{-13}$, and the identity $\langle X\rangle_*=\langle A^\dagger\ast B\rangle_*+\langle L_A\ast W\rangle_*$ held to $1.8\times10^{-29}$. For the Hermitian problem, the residual was $3.1\times10^{-14}$, the symmetry $X^{\mathsf H}-X$ was $4.8\times10^{-15}$, and the completeness with $U=X_0$ held to $3.8\times10^{-15}$; a tensor in the range of $A$ whose product $B\ast A^{\mathsf H}$ was not Hermitian failed the condition by $84.07$. For the right-handed equation, the normal equation held to $1.7\times10^{-13}$, the minimum-norm identity to $2.7\times10^{-15}$, and the consistent solution to $1.9\times10^{-14}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The equation $A\ast X=B$ is solvable if and only if $R_A\ast B=0$, where $R_A=\mathrm I-A\ast A^\dagger$; its general solution is $X=A^\dagger\ast B+L_A\ast Y$, with $L_A=\mathrm I-A^\dagger\ast A$. The least-squares solutions are the same expression with $W$ in place of $Y$, and the minimum-norm least-squares solution is $A^\dagger\ast B$. For square $A$ and $B$, a Hermitian solution exists if and only if $R_A\ast B=0$ and $B\ast A^{\mathsf H}=A\ast B^{\mathsf H}$; its general form is $A^\dagger\ast B+(A^\dagger\ast B)^{\mathsf H}-A^\dagger\ast B\ast A^{\mathsf H}\ast(A^\dagger)^{\mathsf H}+L_A\ast U\ast L_A$ with $U$ Hermitian. The right-handed equation has the mirror solution $X=B\ast A^\dagger+W\ast R_A$. Every statement is the pair of its two complex idempotent-coordinate statements. <strong>The pseudoinverse is the canonical solution: exact when the equation is solvable, and of minimum norm among the least-squares solutions otherwise.</strong></p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

@@ -73,7 +73,7 @@
 <p>This article develops integration for functions of one split complex variable. It follows <em>Split-Complex Analysis</em>, which fixed the split complex plane, its Euclidean topology, split complex differentiability and the split Cauchy–Riemann equations, and it follows <em>Split-Complex Algebra</em> for the ring $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the idempotents $\Pi_\pm = \tfrac12(1 \pm j)$, the conjugation $\bar Q$, and the norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$. The aim is to construct the integral from first principles and then to determine exactly how much of the Cauchy theory survives when the coefficient ring is not a field.</p>
 <p>The base ring throughout is $\mathbb{C}_{\mathrm{spl}}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The <strong>vanishing</strong> statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The <strong>representation</strong> statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\omega - Q)$ of the formula is defined only where $\omega - Q$ is a unit, and the set where it is not is not the point $Q$ but the two lines through $Q$; no contour that surrounds $Q$ avoids them.</p>
 <p>No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in <em>Split-Complex Analysis</em>, and the operator notation $\partial/\partial Q, \partial/\partial\bar Q$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of <em>Hypercomplex Integration</em>.</p>
-<p>Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\|_E = \sqrt{q^2 + q'^2}$. The idempotent coordinates are</p>
+<p>Notation: $Q = q + jq'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - jq'$, and $\|Q\| = \sqrt{q^2 + q'^2}$. The idempotent coordinates are</p>
 <p>$$
 Q_+ = q + q', \qquad Q_- = q - q', \qquad Q = Q_+ \Pi_+ + Q_- \Pi_-,
 $$</p>
@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>path</strong> is a continuous map $\gamma : [a,b] \to \mathbb{C}_{\mathrm{spl}}$. It is <strong>piecewise continuously differentiable</strong>, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is <strong>closed</strong> if $\gamma(a) = \gamma(b)$ and <strong>simple</strong> if it is injective on $[a,b)$; a simple closed path is a <strong>contour</strong>.</p>
 <p>The <strong>trace</strong> of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The <strong>opposite</strong> path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}_{\mathrm{spl}}$ and $\gamma_2 : [b,c] \to \mathbb{C}_{\mathrm{spl}}$ agree at $b$, their <strong>concatenation</strong> $\gamma_1 + \gamma_2$ follows first one and then the other. The <strong>length</strong> of a piecewise $C^1$ path is</p>
 <p>$$
-L(\gamma) = \int_a^b \|\gamma'(t)\|_E \, dt,
+L(\gamma) = \int_a^b \|\gamma'(t)\| \, dt,
 $$</p>
 <p>finite because $\gamma'$ is piecewise continuous on a compact interval.</p>
 <p><strong>Example.</strong> For $Q_0 \in \mathbb{C}_{\mathrm{spl}}$ and $r > 0$, the curve</p>
@@ -106,10 +106,10 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> The product in $\mathbb{C}_{\mathrm{spl}}$ is bilinear, and $f$ is continuous, so the argument of the complex case applies verbatim: on each smooth piece</p>
 <p>$$
-Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
+Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\| \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
 $$</p>
-<p>with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.</p>
-<p>The integral exists because $\mathbb{C}_{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|_E$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.</p>
+<p>with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\| \,\omega(\|\Delta\|)(b-a) \to 0$.</p>
+<p>The integral exists because $\mathbb{C}_{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Linearity.</strong> For $\alpha, \beta \in \mathbb{C}_{\mathrm{spl}}$,</p>
 <p>$$
@@ -118,15 +118,15 @@ $$</p>
 <p><strong>Reversal.</strong> $\displaystyle\int_{-\gamma} f(Q)\,dQ = -\int_\gamma f(Q)\,dQ$.</p>
 <p><strong>Additivity.</strong> $\displaystyle\int_{\gamma_1 + \gamma_2} f(Q)\,dQ = \int_{\gamma_1} f(Q)\,dQ + \int_{\gamma_2} f(Q)\,dQ$.</p>
 <p><strong>Reparametrisation.</strong> If $\varphi : [c,d] \to [a,b]$ is a piecewise $C^1$ bijection with $\varphi(c) = a$, $\varphi(d) = b$, then $\int_{\gamma \circ \varphi} f\,dQ = \int_\gamma f\,dQ$; if $\varphi$ reverses the endpoints, the sign changes.</p>
-<p><strong>Estimation.</strong> If $\|f(Q)\|_E \leq m$ on $\gamma^*$, then</p>
+<p><strong>Estimation.</strong> If $\|f(Q)\| \leq m$ on $\gamma^*$, then</p>
 <p>$$
-\left\|\int_\gamma f(Q)\,dQ\right\|_E \leq \sqrt{2}\,m\,L(\gamma).
+\left\|\int_\gamma f(Q)\,dQ\right\| \leq \sqrt{2}\,m\,L(\gamma).
 $$</p>
 <p><strong>Proof.</strong> The Euclidean norm on $\mathbb{C}_{\mathrm{spl}}$ is a genuine norm but is not submultiplicative. The best constant is $\sqrt2$: writing $Q = q + jq'$, $B = b + jb'$, one has</p>
 <p>$$
-\|QB\|_E^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
+\|QB\|^2 = (qb + q'b')^2 + (qb' + q'b)^2 = (q^2 + q'^2)(b^2 + b'^2) + 4qq'bb',
 $$</p>
-<p>and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|_E^2 \leq 2\|Q\|_E^2\|B\|_E^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\|_E \leq \sqrt2\,m\,\|\gamma'(t)\|_E$, and integrating gives the estimate.</p>
+<p>and $4qq'bb' \leq 4\lvert qq'\rvert \lvert bb'\rvert \leq (q^2 + q'^2)(b^2 + b'^2)$ by the arithmetic–geometric mean inequality applied to each pair, so $\|QB\|^2 \leq 2\|Q\|^2\|B\|^2$. Equality holds if and only if $\lvert q\rvert = \lvert q'\rvert$, $\lvert b\rvert = \lvert b'\rvert$ and $qq'bb' > 0$, that is, if and only if $Q$ and $B$ are non-zero elements of the same one of the two null lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; the bound is therefore attained and $\sqrt2$ cannot be lowered. Hence $\|f(\gamma(t))\gamma'(t)\| \leq \sqrt2\,m\,\|\gamma'(t)\|$, and integrating gives the estimate.</p>
 <p><strong>Remark.</strong> The factor $\sqrt2$ is a feature of the multiplicativity failure of the Euclidean norm and has no analogue in $\mathbb{C}$, where the modulus is multiplicative. It is the first sign that the Euclidean metric and the ring multiplication are not aligned; the alignment that does hold is the multiplicativity of $\langle\cdot\rangle_{*}$, used below.</p>
 <h3 id="the-idempotent-decomposition-of-the-integral">The Idempotent Decomposition of the Integral</h3>
 <p>The reason the split complex integral is tractable is that $Q \mapsto (Q_+, Q_-)$ is an algebra isomorphism $\mathbb{C}_{\mathrm{spl}} \to \mathbb{R} \oplus \mathbb{R}$.</p>
@@ -396,7 +396,7 @@ $$</p>
 <p><strong>Proof.</strong> Write $B = b + jb'$. Then $B^2 = (b^2 + b'^2) + 2bb'\,j$. The equation $B^2 = -1$ requires $bb' = 0$ and $b^2 + b'^2 = -1$, impossible for real $b, b'$ since $b^2 + b'^2 \geq 0$.</p>
 <p>The consequences are those of the preceding sections. The general Cauchy–Goursat theorem applies to the split system, because $\mathbb{C}_{\mathrm{spl}}$ is commutative, but it carries no information there, since the vanishing half of the theory is soft. The general residue theory and Cauchy integral formula, by contrast, have no split complex analogue, because their proofs use the point singularity of the fundamental solution. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $0$, for $\mathbb{C}_{\mathrm{spl}}$ it is the null cone, and the cone is the zero-divisor set. The split complex theory is thus the boundary case of the general theory at which ellipticity is lost and with it the representation half of the Cauchy theory, while the vanishing half survives in a form too weak to carry the rest.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>split complex integral</strong> $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dQ\|_E \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its <strong>idempotent decomposition</strong> $\int_\gamma f\,dQ = \Pi_+\int_{\gamma_+} f_+ \,dQ_+ + \Pi_-\int_{\gamma_-} f_-\,dQ_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.</p>
+<p>The <strong>split complex integral</strong> $\int_\gamma f\,dQ = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dQ\| \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its <strong>idempotent decomposition</strong> $\int_\gamma f\,dQ = \Pi_+\int_{\gamma_+} f_+ \,dQ_+ + \Pi_-\int_{\gamma_-} f_-\,dQ_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.</p>
 <p>In the idempotent coordinates the operator factorises as $\partial/\partial\bar Q = \Pi_-\partial/\partial Q_+ + \Pi_+\partial/\partial Q_-$, and <strong>split complex differentiability</strong> is equivalent to $f_+$ depending on $Q_+$ alone and $f_-$ on $Q_-$ alone. Hence $f\,dQ$ is closed exactly when $f$ is differentiable, every differentiable $f$ has a primitive on every domain, the <strong>Cauchy–Goursat theorem</strong> $\oint_\gamma f\,dQ = 0$ holds for every closed path, and for continuous densities the rectangle criterion is equivalent to the separated form. The theorem is nevertheless soft, since differentiability excludes nothing, and the rectangle criterion stops one step short of differentiability.</p>
 <p>The <strong>obstruction to the Cauchy theorem</strong> is the zero divisor. The element $\omega - Q_0$ is a unit exactly off the null cone through $Q_0$, so the Cauchy kernel is undefined there and no contour of non-zero winding about $Q_0$ avoids the cone; the <strong>Cauchy integral formula</strong> therefore does not exist, and with it the Cauchy estimates, the mean value property, the maximum principle, Liouville's theorem and the Laurent expansion all fail. The same obstruction appears analytically as the <strong>fundamental solution</strong> of the split Cauchy–Riemann operator, which is a distribution supported on the null rays rather than a function singular at the origin.</p>
 <p><strong>Integration along the null directions</strong> reproduces only one idempotent component at a time. <strong>Path independence</strong> is global — $f\,dQ$ is exact on every domain — so the null lines create no periods to replace the complex winding number; what they do is cut the domain into sectors, so a path that would cross a characteristic is not available inside the domain at all. The residue datum that <strong>survives</strong> is attached to a null line rather than a point: it is the coefficient of the simple pole of an idempotent component, realised distributionally as the Sokhotski–Plemelj jump across the characteristic. Finally, the split complex system fails the ellipticity hypothesis $B_k^2 = -1$ of <em>Hypercomplex Integration</em> — $\mathbb{C}_{\mathrm{spl}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to its vanishing half.</p>
@@ -430,7 +430,7 @@ $$</p>
 <td>Null cone, the zero-divisor set</td>
 </tr>
 <tr>
-<td>$\|Q\|_E = \sqrt{q^2 + q'^2}$</td>
+<td>$\|Q\| = \sqrt{q^2 + q'^2}$</td>
 <td>Euclidean modulus</td>
 </tr>
 <tr>
@@ -454,7 +454,7 @@ $$</p>
 <td>Trace, opposite path, concatenation</td>
 </tr>
 <tr>
-<td>$L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$</td>
+<td>$L(\gamma) = \int_a^b \|\gamma'(t)\|\,dt$</td>
 <td>Euclidean length</td>
 </tr>
 <tr>

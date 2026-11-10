@@ -331,7 +331,7 @@ $$</p>
 </tr>
 <tr>
 <td>Hermitian norm</td>
-<td>$\langle e^{\theta\tilde Q}\rangle_*=\lvert e^{\theta Q_t}\rvert^2\bigl(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\bigr)$</td>
+<td>$\langle e^{\theta\tilde Q}\rangle_*=\lvert e^{\theta Q_t}\rvert^2\bigl(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert^2\bigr)$</td>
 </tr>
 <tr>
 <td>$*$-Unitary flow</td>
@@ -373,15 +373,15 @@ $$</p>
 <p>$$
 \langle e^{\theta\tilde Q}\rangle_*
 =\lvert e^{\theta Q_t}\rvert^2
-\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert_E^2\right),
+\left(\lvert\cos(B\theta)\rvert^2+\lvert\sin(B\theta)\rvert^2\,\lVert\vec U\rVert^2\right),
 \qquad
-\lVert\vec U\rVert_E^2=\sum_{k\in\{x,y,z\}}\lvert U_k\rvert^2.
+\lVert\vec U\rVert^2=\sum_{k\in\{x,y,z\}}\lvert U_k\rvert^2.
 $$</p>
-<p><em>Proof.</em> Write $e^{\theta\tilde Q}=e^{\theta Q_t}(a e_t+b\vec U)$ with $a=\cos(B\theta)$ and $b=\sin(B\theta)$. Since $\vec U$ is pure, the scalar part of $\vec U\vec U^*$ is $\lVert\vec U\rVert_E^2e_t$, and the cross terms $a\bar b\vec U^*+b\bar a\vec U$ are pure vectors; the scalar part of the product is therefore $\lvert e^{\theta Q_t}\rvert^2(\lvert a\rvert^2+\lvert b\rvert^2\lVert\vec U\rVert_E^2)$.</p>
-<p><strong>Corollary (the norm deficit).</strong> $\lVert\vec U\rVert_E^2=\lVert\vec Q\rVert_E^2/\lvert B\rvert^2\ge1$, with equality exactly when $\vec U$ is real, that is, exactly when $\tilde Q$ is normal.</p>
+<p><em>Proof.</em> Write $e^{\theta\tilde Q}=e^{\theta Q_t}(a e_t+b\vec U)$ with $a=\cos(B\theta)$ and $b=\sin(B\theta)$. Since $\vec U$ is pure, the scalar part of $\vec U\vec U^*$ is $\lVert\vec U\rVert^2e_t$, and the cross terms $a\bar b\vec U^*+b\bar a\vec U$ are pure vectors; the scalar part of the product is therefore $\lvert e^{\theta Q_t}\rvert^2(\lvert a\rvert^2+\lvert b\rvert^2\lVert\vec U\rVert^2)$.</p>
+<p><strong>Corollary (the norm deficit).</strong> $\lVert\vec U\rVert^2=\lVert\vec Q\rVert^2/\lvert B\rvert^2\ge1$, with equality exactly when $\vec U$ is real, that is, exactly when $\tilde Q$ is normal.</p>
 <p><em>Proof.</em> $\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality; if they do, $Q_k=\varkappa_{\mathrm{phs}} r_k$ with $r_k\in\mathbb{R}$ and $\varkappa_{\mathrm{phs}}^2$ that argument, so $B=\pm\varkappa_{\mathrm{phs}} R$ with $R^2=\sum_kr_k^2$ and $\vec U=\pm(r_x,r_y,r_z)/R$ is real of Euclidean norm one. Since normality is exactly the reality of $\vec U$ (<em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Hermitian Case</em>), this is the equality case.</p>
-<p><strong>Corollary (bounded and unbounded flows).</strong> If $B$ is real and $\operatorname{Re}Q_t=0$, the Hermitian norm is bounded between $1$ and $\lVert\vec U\rVert_E^2$. If $\operatorname{Re}Q_t\neq0$ it is unbounded on one side. If $\operatorname{Im}B\neq0$ it is unbounded on both sides.</p>
-<p>The three sources are independent. The factor $\lvert e^{\theta Q_t}\rvert^2=e^{2\theta\operatorname{Re}Q_t}$ is the dilation; the trigonometric factor grows like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ when $\operatorname{Im}B\neq0$; and the deficit $\lVert\vec U\rVert_E^2-1$ is an amplitude. A decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$; a boost is a non-zero imaginary part of $B$; a non-normal element has a larger oscillation amplitude, not a rate.</p>
+<p><strong>Corollary (bounded and unbounded flows).</strong> If $B$ is real and $\operatorname{Re}Q_t=0$, the Hermitian norm is bounded between $1$ and $\lVert\vec U\rVert^2$. If $\operatorname{Re}Q_t\neq0$ it is unbounded on one side. If $\operatorname{Im}B\neq0$ it is unbounded on both sides.</p>
+<p>The three sources are independent. The factor $\lvert e^{\theta Q_t}\rvert^2=e^{2\theta\operatorname{Re}Q_t}$ is the dilation; the trigonometric factor grows like $e^{2\lvert\operatorname{Im}B\rvert\lvert\theta\rvert}$ when $\operatorname{Im}B\neq0$; and the deficit $\lVert\vec U\rVert^2-1$ is an amplitude. A decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$; a boost is a non-zero imaginary part of $B$; a non-normal element has a larger oscillation amplitude, not a rate.</p>
 <p><strong>Proposition ($*$-unitary and self-adjoint flows).</strong> For real $\theta$, the following are equivalent:</p>
 <ul>
 <li>$e^{\theta\tilde Q}$ is $*$-unitary for the Hermitian form for every $\theta$;</li>
@@ -395,7 +395,7 @@ $$</p>
 <li>$Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$.</li>
 </ul>
 <p><em>Proof.</em> If $E=e^{\theta\tilde Q}$ is $*$-unitary for every $\theta$, differentiating $EE^*=e_t$ at $\theta=0$ gives $\tilde Q+\tilde Q^*=0$. Conversely $\tilde Q^*=-\tilde Q$ gives $E^*=e^{-\theta\tilde Q}=E^{-1}$. On $Q_te_t+\vec Q$ the star conjugates the scalar part and negates and conjugates the vector part, so $\tilde Q^*=-\tilde Q$ is $\bar Q_t=-Q_t$ and $\overline{\vec Q}=\vec Q$. The self-adjoint case is the same computation with the opposite signs.</p>
-<p><strong>Remark (normal is not $*$-unitary).</strong> Normality is the reality of $\vec U$, a condition on the vector part alone; unitarity is the skew-adjointness of $\tilde Q$, a condition on both parts. The element $(1+i)\vec e_x$ is normal, with $\vec U=\vec e_x$ and $B=1+i$, but its flow is neither $*$-unitary nor self-adjoint; its Hermitian norm is $\cosh2\theta$. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, with $B=1$ and $\lVert\vec U\rVert_E^2=3$, but its Hermitian norm is $1+2\sin^2\theta$, which is bounded. The two notions answer different questions: normality does not imply a constant norm, and non-normality does not imply growth. The dictionary between the flow and the Fourier kernel is <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>.</p>
+<p><strong>Remark (normal is not $*$-unitary).</strong> Normality is the reality of $\vec U$, a condition on the vector part alone; unitarity is the skew-adjointness of $\tilde Q$, a condition on both parts. The element $(1+i)\vec e_x$ is normal, with $\vec U=\vec e_x$ and $B=1+i$, but its flow is neither $*$-unitary nor self-adjoint; its Hermitian norm is $\cosh2\theta$. The element $i\vec e_x+\vec e_y+\vec e_z$ is not normal, with $B=1$ and $\lVert\vec U\rVert^2=3$, but its Hermitian norm is $1+2\sin^2\theta$, which is bounded. The two notions answer different questions: normality does not imply a constant norm, and non-normality does not imply growth. The dictionary between the flow and the Fourier kernel is <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>.</p>
 <p>The differential at the origin is the identity, so $\exp$ is a local diffeomorphism near $0$ and provides exponential coordinates near the identity of the group of units $\mathbb{B}^\times$ (<em>Biquaternion Lie Group and Exponential Structure</em>).</p>
 <h3 id="the-group-law">The Group Law</h3>
 <p>The exponential is not a homomorphism from the additive group of the algebra to the multiplicative group of the units. Its failure to be one is measured by the bracket.</p>
@@ -1798,7 +1798,7 @@ $$</p>
 <td>Hermitian norm, $\sum_\mu\lvert X_\mu\rvert^2$</td>
 </tr>
 <tr>
-<td>$\lVert\vec U\rVert_E^2=\sum_k\lvert U_k\rvert^2$</td>
+<td>$\lVert\vec U\rVert^2=\sum_k\lvert U_k\rvert^2$</td>
 <td>Euclidean modulus square of the axis, $\ge1$</td>
 </tr>
 </tbody>

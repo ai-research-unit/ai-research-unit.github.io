@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin Conservation and the Frenkel Condition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-conservation-and-the-frenkel-condition"><strong>Spin Conservation and the Frenkel Condition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The spin tensor's conservation law is the rotor's equation of motion read in components, and the Frenkel condition is the statement that the spin has no component along the momentum.</strong> Both statements are framework content: the algebra supplies the first through the rotor's logarithmic derivative, and it supplies the second through the fact that the polar word carries the spin in a rotation and not in a boost.</p>
+<p><strong>The conservation law.</strong> With the spin element $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ of <a href="the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a> and with the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ — a real vector part, which is what the polar decomposition's fourth factor supplies — the rotor's own equation of motion is</p>
+<p>$$
+\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\,\tilde u_{\mathrm r},
+$$</p>
+<p><strong>and the divergence of the spin current is the antisymmetric part of the spin connection contracted with the spin:</strong></p>
+<p>$$
+\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=\tau_{\lambda\nu},
+\qquad
+\tau_{\lambda\nu}=\tfrac12\left(\Omega_{\eta,\lambda}S_{\Psi,\mathrm{sp},\eta,\nu}-\Omega_{\eta,\nu}S_{\Psi,\mathrm{sp},\eta,\lambda}\right).
+$$</p>
+<p><strong>The source $\tau_{\lambda\nu}$ is the torque, and it vanishes when the connection turns about the spin's own axis</strong> — which is the statement, in components, that a free rotor's spin is conserved.</p>
+<p><strong>The Frenkel condition.</strong> In the corpus's letters it reads</p>
+<p>$$
+\mathcal{F}:\qquad S_{\Psi,\eta,\lambda\nu}\,v_{\Phi,\nu}=0,
+$$</p>
+<p><strong>the spin's contraction with the flow vanishes</strong>, and its content is that the spin has no component in the time direction of the fluid's rest frame. <strong>The condition leaves three of the six components of an antisymmetric object</strong>, and those three are the spin vector that the polar word's rotor carries.</p>
+<p><strong>What the article supplies and what it does not.</strong> It supplies the derivation of the conservation law from the rotor's equation, the two conditions — Frenkel and Weyssenhoff — and the statement of which of the algebra's features makes each of them natural. <strong>It does not supply the value of the spin, the gyromagnetic ratio, or the spin-orbit coupling</strong>; those are the dynamics of a specific field, and the article names the places where they would enter.</p>
+<h2 id="the-rotors-equation-of-motion">The Rotor's Equation of Motion</h2>
+<h3 id="the-connection">The connection</h3>
+<p><strong>The rotor's logarithmic derivative is a real vector part, and the polar decomposition's structure is what makes it so.</strong> In the word $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — <strong>the algebra's own statement that a rotation's generator is a spatial direction</strong>, and the property that lets the rotor's derivative be read as an angular velocity.</p>
+<p>$$
+\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta,
+\qquad
+\vec\Omega_\eta\in\mathbb{R}^{3},
+$$</p>
+<p><strong>the subscript $\eta$ labelling the direction and not an index slot</strong>, following the frame and metric conventions. <strong>The object is a connection</strong>: it transports the spin frame from point to point, and the spin's precession is what the transport does to a direction.</p>
+<p><strong>The equation of motion, in the form that is useful.</strong> Multiplying the logarithmic derivative by the rotor gives</p>
+<p>$$
+\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\,\tilde u_{\mathrm r},
+$$</p>
+<p><strong>a first-order equation for the rotor in which the connection acts by left multiplication</strong> — left, because the connection is read in the frame the rotor has already reached. <strong>The display is the rotor's own equation of motion</strong>, and it is the object that the polar-form article's open question lists as missing: that article says the four brackets are constrained by the Dirac pair but not closed by it, and asks whether a transport equation for the rotor closes them. <strong>The answer here is partial: the rotor's equation exists and is the display above, and it closes the brackets once $\vec\Omega_\eta$ is given.</strong> What is not yet derived is the equation for $\vec\Omega_\eta$ itself.</p>
+<h3 id="from-the-rotor-to-the-spin-direction">From the rotor to the spin direction</h3>
+<p><strong>The spin direction is the rotor's image of the frame's third direction, and its derivative is the connection's action on it.</strong></p>
+<p>$$
+\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
+\qquad
+\partial_\eta\hat s=\vec\Omega_\eta\times\hat s\ \text{in the spatial reading},
+$$</p>
+<p><strong>the first display quoted from the polar-form article and the second its consequence.</strong> The cross product is the spatial reading of the commutator, and <strong>the article uses the spatial reading whenever it is checked against a number</strong>; the element spelling is the one it uses in the conservation law.</p>
+<p><strong>Two consequences, and both are the spin's conservation in embryo.</strong> First, $\partial_\eta(\hat s\cdot\hat s)=2\hat s\cdot(\vec\Omega_\eta\times\hat s)=0$, so <strong>the spin's magnitude is conserved by precession</strong> — the rotor is a rotation, so it cannot change a length. Second, $\hat s\cdot\partial_\eta\hat s=0$, so <strong>the precession does no work on the spin's direction</strong>; the direction moves on the sphere and its speed of travel is the component of $\vec\Omega_\eta$ perpendicular to $\hat s$.</p>
+<p><strong>The precession is the classical spin equation, and the article states the correspondence.</strong> With $\vec\Omega_\eta$ the connection and $\hat s$ the direction, $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$ is the classical equation of a spinning top with no torque; <strong>a torque adds a term to the right-hand side, and that term is the source in the conservation law.</strong></p>
+<h3 id="the-conservation-law-derived">The conservation law, derived</h3>
+<p><strong>Differentiate the spin element along the flow, insert the rotor's equation, and the result is a divergence with a torque source.</strong> With $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ and the spin current $\tilde S_{\Psi,\mathrm{sp},\eta}=\tilde S_{\Psi,\mathrm{sp}}\,v_{\Phi,\eta}/c$,</p>
+<p>$$
+\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}
+=\partial_\eta\left(\rho\,\frac{\hbar}{2}\,v_{\Phi,\eta}/c\right)\hat s_{\lambda\nu}
++\rho\,\frac{\hbar}{2}\,v_{\Phi,\eta}/c\ \partial_\eta\hat s_{\lambda\nu},
+$$</p>
+<p><strong>the product rule's two terms.</strong> The first is the spin's advection with the density's change, and it vanishes for a conserved flow with constant density along the worldline; the second is the precession, and it is the commutator of the connection with the spin. <strong>Writing both together with the components low,</strong></p>
+<p>$$
+\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=\tau_{\lambda\nu},
+\qquad
+\tau_{\lambda\nu}=\tfrac12\left(\Omega_{\eta,\lambda}S_{\Psi,\mathrm{sp},\eta,\nu}-\Omega_{\eta,\nu}S_{\Psi,\mathrm{sp},\eta,\lambda}\right)+\left(\text{advection}\right),
+$$</p>
+<p><strong>and the article's claim is the structural one: the spin's conservation law is the rotor's equation of motion, with the antisymmetric part of the connection as the source.</strong></p>
+<p><strong>Why the antisymmetric part, in one line.</strong> The spin is antisymmetric in its two labels, so only the antisymmetric part of any object contracted with it survives; <strong>the symmetric part of the connection is invisible to the spin</strong>, which is the algebraic reason the torque is a commutator and not a product.</p>
+<p><strong>The free case, which is the one the corpus uses.</strong> For a free rotor the connection is generated by the same equation that generates the momentum, and the torque vanishes on the solutions; <strong>so $\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=0$ for a free field</strong>, and the spin current is divergence-free. That is the conservation law the article set out to read off, and it is read off the rotor and not postulated.</p>
+<h2 id="the-frenkel-condition">The Frenkel Condition</h2>
+<h3 id="the-condition">The condition</h3>
+<p><strong>The Frenkel condition is the statement that the spin is orthogonal to the flow, and in components it is the vanishing of the contraction.</strong></p>
+<p>$$
+\mathcal{F}:\qquad S_{\Psi,\eta,\lambda\nu}\,v_{\Phi,\nu}=0
+\qquad\text{for all }\lambda,
+$$</p>
+<p><strong>with every index low and $v_{\Phi,\nu}$ the flow's components.</strong> Its content is a count: an antisymmetric $4\times4$ array has six independent components, and three linear conditions remove three of them, <strong>leaving the three components of a spatial vector in the fluid's rest frame.</strong></p>
+<p><strong>The rest-frame reading, which is what the count means.</strong> In the fluid's rest frame $v_{\Phi,\nu}=(c,0,0,0)$, so the condition reads $S_{\Psi,\eta,\lambda t}=0$: <strong>the components with one temporal label vanish, and the three spatial ones survive.</strong> Those three are the spin vector, and the corpus writes them as the direction $\hat s$.</p>
+<p><strong>Why this is the natural condition and not an arbitrary one.</strong> A spinning particle's spin is an angular momentum in its own rest frame, and an angular momentum in the $ti$ plane would be a boost — a displacement of the centre of mass, not a rotation. <strong>The Frenkel condition says that the spin is a rotation and not a displacement</strong>, which is exactly the content of the polar word's division of labour: the boost carries the velocity and the rotor carries the spin, and neither carries the other.</p>
+<h3 id="the-algebras-version-of-the-condition">The algebra's version of the condition</h3>
+<p><strong>In the corpus's letters the Frenkel condition is automatic, and this is the article's central framework claim.</strong> The spin element is</p>
+<p>$$
+\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\hat s,
+\qquad
+\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
+\qquad
+\hat s^{2}=-e_t,
+$$</p>
+<p><strong>the polar-form article's display.</strong> Its scalar slot is empty — $\mathrm{Sc}(\tilde S_{\Psi,\mathrm{sp}})=0$ — and its vector slot carries $i$ times a real direction. <strong>A temporal component is precisely a scalar-slot component in the corpus's component convention</strong>, so the vanishing of the scalar slot <em>is</em> the vanishing of the four components with one temporal label:</p>
+<p>$$
+\mathrm{Sc}\left(\tilde S_{\Psi,\mathrm{sp}}\right)=0
+\qquad\Longleftrightarrow\qquad
+\mathcal{F}.
+$$</p>
+<p><strong>The equivalence is the article's main structural statement: the corpus does not impose the Frenkel condition, because the polar word cannot violate it.</strong> The spin is carried by a rotation, a rotation is a real unitary element, and the image of a spatial direction under a rotation is a spatial direction. <strong>A framework in which the spin lived in the field's eight parameters without a rotor would have to impose $\mathcal{F}$ by hand; this one gets it from the decomposition.</strong></p>
+<p><strong>What the equivalence does not say, and the article is explicit.</strong> It does not say that every field satisfies $\mathcal{F}$ in the sense of the <em>macroscopic</em> polarization of <a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>. <strong>The polar word's $\hat s$ is one element's spin direction; the fluid's polarization is the average of many</strong>, and the average of directions with empty scalar slots is a direction with an empty scalar slot only if the averaging is done in one frame. <strong>In another frame the averaged polarization can acquire a temporal part</strong>, and that is a statement about the average and not about the algebra.</p>
+<h3 id="the-conditions-preservation">The condition's preservation</h3>
+<p><strong>The Frenkel condition is preserved by boosts, and the article checks it because a condition that is not preserved is a frame choice rather than a constraint.</strong> With the spin purely spatial in the rest frame and the boost along a direction making an angle with it, the transformed array's temporal-spatial components are</p>
+<p>$$
+S_{\Psi,\eta,0i}^{\prime}=\gamma\,\beta_{j}\,S_{\Psi,\eta,ji},
+$$</p>
+<p><strong>which are non-zero in general</strong> — so the <em>components</em> change — while the contraction with the transformed flow still vanishes:</p>
+<p>$$
+S_{\Psi,\eta,\lambda\nu}^{\prime}\,v_{\Phi,\nu}^{\prime}=0 .
+$$</p>
+<p><strong>The two displays are not in conflict</strong>: the condition is that the contraction vanishes, and the contraction is invariant even though the components are not. <strong>A reader who checks only the components will conclude that the condition fails under a boost, and that conclusion is the commonest error in the literature on the Frenkel condition.</strong></p>
+<p><strong>The number that makes the point.</strong> Take $\hat s=\vec e_z$ and a boost along $\vec e_x$ with $\beta_{\mathrm{vel}}$, so that only $S_{\Psi,\eta,xy}$ is non-zero in the rest frame. Then $S_{\Psi,\eta,0y}^{\prime}=\gamma\beta_{\mathrm{vel}}S_{\Psi,\eta,xy}$ and $S_{\Psi,\eta,xy}^{\prime}=\gamma S_{\Psi,\eta,xy}$, so the temporal part <em>grows</em> with the boost while the contraction with $v_{\Phi,\nu}^{\prime}=\gamma(c,\beta_{\mathrm{vel}}c,0,0)$ receives no contribution from it, because $\beta_{\mathrm{vel}}$ multiplies the $x$ slot, which is empty. <strong>The check is two multiplications and it settles the question.</strong></p>
+<h2 id="the-weyssenhoff-condition">The Weyssenhoff Condition</h2>
+<h3 id="the-two-conditions-together">The two conditions together</h3>
+<p><strong>The Weyssenhoff condition adds a second requirement to the Frenkel one: the spin current is divergence-free, so the spin is conserved and not merely constrained.</strong></p>
+<p>$$
+\mathcal{W}:\qquad \mathcal{F}\ \text{holds}
+\quad\text{and}\quad
+\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=0 .
+$$</p>
+<p><strong>The difference between the two conditions is the difference between a constraint and a conservation law.</strong> Frenkel says what the spin is allowed to be; Weyssenhoff says that what it is allowed to be is conserved, so the torque of the previous section vanishes identically. <strong>A Frenkel fluid's spin precesses under a torque; a Weyssenhoff fluid's spin does not, and its only motion is advection with the flow.</strong></p>
+<p><strong>The corpus's free case satisfies both, and that is why the two conditions are often conflated in the literature.</strong> For a free rotor the torque vanishes because the connection turns about the spin, and the Frenkel condition holds because the spin is carried by the rotor; <strong>so the free field is a Weyssenhoff fluid</strong>, and the distinction between the conditions only shows when a torque is applied. <strong>The article keeps the two names apart for that reason and not for pedantry.</strong></p>
+<h3 id="the-consequence-for-the-momentum-balance">The consequence for the momentum balance</h3>
+<p><strong>A Weyssenhoff fluid's momentum balance carries the spin, and the standard consequence is that the momentum flux is not symmetric.</strong> The spin's flux contributes to the angular momentum flux, so the part of the stress that would be the antisymmetric one is fixed by the spin rather than free. <strong>The article states this as the standard structural consequence and does not re-derive it</strong>, because the derivation is the tensor calculus's and the corpus adds nothing to it: <strong>what the corpus adds is where the spin lives.</strong></p>
+<h3 id="the-asymmetry-in-the-corpuss-letters-and-the-honest-limit">The asymmetry in the corpus's letters, and the honest limit</h3>
+<p><strong>The corpus's energy-momentum element has four components, not sixteen, and this is a limitation that the article states plainly.</strong></p>
+<p>$$
+\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\frac{i}{c}\vec S_{\mathrm P},
+$$</p>
+<p><strong>an element whose scalar slot is the energy density and whose vector slot is the momentum density.</strong> The four conservation laws it carries are the energy and the three momentum components, which is what a fluid needs; <strong>the spatial-spatial block — the pressure and the shear, in the component language — is not a slot of the element at all.</strong> The pressure enters through the equation of state and the shear through the transport coefficients, not through slots.</p>
+<p><strong>So the antisymmetric part of the full stress has no spelling in the element, and the Belinfante improvement has no distinct version here.</strong> The improvement's content is that the spin's contribution to the angular momentum can be moved between the orbital and the intrinsic parts; <strong>in this framework the two parts are already separated by construction</strong>, the orbital part being the boost's and the intrinsic part the rotor's. <strong>The separation is the polar decomposition's division of labour, and the framework therefore has no Belinfante ambiguity to resolve</strong> — which is a genuine simplification and not a claim that the full tensor has been reconstructed.</p>
+<p><strong>What is open, and stated as open.</strong> Whether a full sixteen-component stress can be written as an element of $\mathbb{B}$, or as a small collection of elements, is not settled in the corpus. <strong>An element has eight real components and the stress has sixteen</strong>, so a single element cannot hold it; a pair of elements could, and no article in the category proposes the pair. <strong>The article marks this as the natural next question for the spin sector</strong> and does not answer it.</p>
+<h2 id="what-the-algebra-supplies-and-what-it-does-not">What the Algebra Supplies and What It Does Not</h2>
+<p><strong>Supplies: the division that makes the Frenkel condition automatic.</strong> The polar word separates the velocity into the boost and the spin into the rotor, so the spin cannot acquire a temporal part; <strong>the condition that other frameworks impose is here a property of the decomposition.</strong></p>
+<p><strong>Supplies: the precession equation without a separate postulate.</strong> The rotor's logarithmic derivative is a real vector part, its left action on the rotor is the equation of motion, and the spin's precession is that equation read on a direction. <strong>No separate spin equation is added to the framework.</strong></p>
+<p><strong>Supplies: the antisymmetric structure of the torque.</strong> The spin is antisymmetric in its labels and the connection's symmetric part is invisible to it, so the source is a commutator. <strong>The structure of the conservation law follows from the algebra's own product rule.</strong></p>
+<p><strong>Does not supply: the connection's equation.</strong> $\vec\Omega_\eta$ is written and not derived; the equation that determines it is the dynamics of a specific field, and in the Dirac case it is the magnetic coupling that <a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a> writes. <strong>The conservation law's source is therefore determined only once $\vec\Omega_\eta$ is</strong>, which is the article's honest boundary.</p>
+<p><strong>Does not supply: the value of the spin.</strong> That the spin element carries $\hbar/2$ is the corpus's normalisation for a spin-$\tfrac12$ field, quoted from the polar-form article; <strong>a different field would carry a different factor, and the algebra does not fix it.</strong></p>
+<p><strong>Does not supply: the Thomas precession, which the article mentions and does not derive.</strong> A spinning particle accelerated along a curved worldline precesses at a rate reduced by the Thomas factor</p>
+<p>$$
+\frac{\gamma^{2}}{\gamma+1},
+$$</p>
+<p><strong>which tends to $\tfrac12$ at low speed and to $\gamma$ at high speed.</strong> Evaluated: at $\beta_{\mathrm{vel}}=0.01$ the factor is $0.500\,038$, at $0.1$ it is $0.503\,782$, at $0.5$ it is $0.618\,802$ and at $0.9$ it is $1.597\,725$. <strong>The factor is a kinematic consequence of composing boosts and belongs to the Lorentz group's structure rather than to the spin's dynamics</strong>; the corpus writes it here for completeness and does not use it in the conservation law.</p>
+<p><strong>Does not supply: the averaging that turns one element's spin into a fluid's polarization.</strong> The polar word's $\hat s$ is one element's direction; the polarization of <a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a> is an average, and whether the average preserves the Frenkel condition in every frame is the question that the previous section marks as open.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established, and framework content.</strong> That the rotor's logarithmic derivative is a real vector part and that the rotor's equation of motion is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$; that the spin's precession is $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$ with the magnitude conserved; that the spin current's divergence is the antisymmetric part of the connection contracted with the spin, so that the conservation law is read off the rotor and not postulated; that the free field has vanishing torque and a divergence-free spin current; that the Frenkel condition is automatic in the polar word, because the spin element's scalar slot is empty; that the condition is preserved by boosts although its components are not; that the Weyssenhoff condition adds conservation to constraint.</p>
+<p><strong>Interpretation, and marked as such.</strong> That the corpus has no Belinfante ambiguity because the orbital and intrinsic parts of the angular momentum are separated by the polar decomposition is the article's reading of the structure and is not a theorem. <strong>It is a reading the algebra supports — the slots are what they are — and it is offered as such.</strong></p>
+<p><strong>Not claimed.</strong> That the connection's equation has been derived; that the full sixteen-component stress has been represented; that the Thomas precession has been derived from the rotor; that the fluid's averaged polarization satisfies the Frenkel condition in every frame; that the spin's magnitude is a dynamical constant rather than a normalisation.</p>
+<h2 id="summary">Summary</h2>
+<p>The spin current's conservation law is the rotor's equation of motion. With $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ a real vector part, the rotor obeys $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, the spin direction obeys $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$, and the divergence of the spin current is the torque $\tau_{\lambda\nu}=\tfrac12(\Omega_{\eta,\lambda}S_{\Psi,\mathrm{sp},\eta,\nu}-\Omega_{\eta,\nu}S_{\Psi,\mathrm{sp},\eta,\lambda})$, which vanishes when the connection turns about the spin's axis. For the free field the torque vanishes and $\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=0$.</p>
+<p>The Frenkel condition, $S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. <strong>In the corpus's letters it is automatic</strong>: the spin element is $\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, whose scalar slot is empty, and an empty scalar slot is exactly the vanishing of the temporal components. The corpus therefore does not impose the condition; the polar decomposition cannot violate it. The condition is preserved by boosts — $S_{\Psi,\eta,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,\eta,ji}$ is non-zero in general while the contraction with $v_{\Phi,\nu}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.</p>
+<p>The Weyssenhoff condition adds conservation to constraint: $\mathcal{F}$ and $\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=0$ together, so the spin is advected and never precesses. The corpus's free field satisfies both, which is why the two conditions are often conflated.</p>
+<p>The honest limits are three. The connection's equation is not derived here; the spin's magnitude is a normalisation and not a dynamical constant; and the corpus's stress element has four components, so the antisymmetric part of the full stress has no slot, the Belinfante improvement has no distinct spelling, and the reconstruction of the sixteen-component object is open. The Thomas factor $\gamma^{2}/(\gamma+1)$, which is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$ and $1.597\,725$ at $0.9$, is quoted and not derived.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>Rotor of the polar word, real and unitary</td>
+</tr>
+<tr>
+<td>$\vec\Omega_\eta$</td>
+<td>Rotor connection, a real vector per direction</td>
+</tr>
+<tr>
+<td>$\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>Spin direction, a unit spatial vector</td>
+</tr>
+<tr>
+<td>$\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$</td>
+<td>Spin element</td>
+</tr>
+<tr>
+<td>$S_{\Psi,\mathrm{sp},\eta,\lambda\nu}$</td>
+<td>Components of the spin current, all low</td>
+</tr>
+<tr>
+<td>$\tau_{\lambda\nu}$</td>
+<td>Torque, the spin current's source</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>The Frenkel condition</td>
+</tr>
+<tr>
+<td>$\mathcal{W}$</td>
+<td>The Weyssenhoff condition</td>
+</tr>
+<tr>
+<td>$v_{\Phi,\nu}$</td>
+<td>Components of the flow element</td>
+</tr>
+<tr>
+<td>$\rho=\lVert\tilde\Xi\rVert^{2}$</td>
+<td>Proper density</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$</td>
+<td>Energy–momentum element, four components</td>
+</tr>
+<tr>
+<td>$w_{\mathrm{fl}}$, $\vec S_{\mathrm P}$</td>
+<td>Energy density, momentum density</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>Polar word</td>
+</tr>
+<tr>
+<td>$r$, $\alpha$, $\tilde U_{\Psi,\mathrm b}$</td>
+<td>Scale, central angle, boost</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>Frame's third direction, used by the value test</td>
+</tr>
+<tr>
+<td>$\beta_{\mathrm{vel}}=\vec v/c$, $\gamma$</td>
+<td>Velocity and boost factor</td>
+</tr>
+<tr>
+<td>$\gamma^{2}/(\gamma+1)$</td>
+<td>Thomas factor</td>
+</tr>
+<tr>
+<td>$\hbar$</td>
+<td>Planck constant</td>
+</tr>
+<tr>
+<td>$\langle\ \rangle_{\natural}$, $\mathrm{Sc}$</td>
+<td>Quaternionic norm, scalar part</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$</td>
+<td>The algebra and its two sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. Frenkel, "Die Elektrodynamik des rotierenden Elektrons," <em>Zeitschrift für Physik</em> <strong>37</strong> (1926) 243–262, for the spin-momentum orthogonality condition.</li>
+<li>J. Weyssenhoff and A. Raabe, "Relativistic dynamics of spin-fluids and spin-particles," <em>Acta Physica Polonica</em> <strong>9</strong> (1947) 7–18, for the spin fluid with a conserved spin current.</li>
+<li>A. Papapetrou, "Spinning test-particles in general relativity I," <em>Proceedings of the Royal Society A</em> <strong>209</strong> (1951) 248–258, for the equations of motion of a spinning particle and the constraint's role.</li>
+<li>F. W. Hehl, P. von der Heyde and G. D. Kerlick, "General relativity with spin and torsion: foundations and prospects," <em>Reviews of Modern Physics</em> <strong>48</strong> (1976) 393–416, for the spin tensor's conservation and the asymmetric stress.</li>
+<li>F. J. Belinfante, "On the spin angular momentum of mesons," <em>Physica</em> <strong>6</strong> (1939) 887–898, for the improvement that symmetrises the stress.</li>
+<li>L. Rosenfeld, "Sur le tenseur d'impulsion-énergie," <em>Mémoires de l'Académie Royale de Belgique</em> <strong>18</strong> (1940) 1–30, for the same improvement in the field-theoretic setting.</li>
+<li>L. H. Thomas, "The motion of the spinning electron," <em>Nature</em> <strong>117</strong> (1926) 514, for the precession factor quoted here.</li>
+<li>C. Møller, <em>The Theory of Relativity</em> (Oxford, 1972), for the spin tensor's transformation properties, which the preservation discussion follows.</li>
+<li>The companion articles: <a href="the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a>, <a href="the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a>, and <a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -200,16 +200,16 @@ $$</p>
 <h2 id="the-closest-math161-unitary">The Closest $*$-Unitary</h2>
 <p><strong>Theorem.</strong> The $*$-unitary factor $W$ of $A=WP$ is the closest $*$-unitary to $A$ in the Frobenius norm:</p>
 <p>$$
-\lVert A-W\rVert_F=\min_{Q\in U(4)}\lVert A-Q\rVert_F .
+\langle A-W\rangle_*^{1/2}=\min_{Q\in U(4)}\langle A-Q\rangle_*^{1/2} .
 $$</p>
 <p>The minimum value is</p>
 <p>$$
-\lVert A-U\rVert_F^2=\lVert A\rVert_F^2+4-2\lVert A\rVert_*,
+\langle A-U\rangle_*=\langle A\rangle_*+4-2\lVert A\rVert_*,
 $$</p>
 <p>where $\lVert A\rVert_*=\sum_k\sigma_k$ is the nuclear norm.</p>
 <p><strong>Proof.</strong> For $Q\in U(4)$,</p>
 <p>$$
-\lVert A-Q\rVert_F^2=\lVert A\rVert_F^2+4-2\operatorname{Re}\operatorname{tr}(Q^*A).
+\langle A-Q\rangle_*=\langle A\rangle_*+4-2\operatorname{Re}\operatorname{tr}(Q^*A).
 $$</p>
 <p>The maximum of $\operatorname{Re}\operatorname{tr}(Q^*A)$ over $*$-unitary $Q$ is the nuclear norm $\lVert A\rVert_*$, attained at $Q=UV^*$ where $A=U\Sigma V^*$. This is the duality of the operator and nuclear norms. The polar factor is this $W=UV^*$.</p>
 <p><strong>The geometric meaning.</strong> The polar decomposition is the orthogonal projection of $A$ onto the $*$-unitary group in the Frobenius metric: the $*$-unitary factor is the point of $U(4)$ closest to $A$. The positive factor is the radial part of $A$ relative to $U(4)$; its norm measures the distance from $A$ to the group.</p>
@@ -251,7 +251,7 @@ $$</p>
 <p>the positive definite $2\times2$ Hermitian cone, of real dimension $4$. The exponential map $\operatorname{Herm}_2\to P_+$ is a diffeomorphism. The biquaternion polar decomposition of the regular model is the same decomposition applied to the $4\times4$ regular matrices; the full algebra's polar decomposition is the $U(4)$ version.</p>
 <p><strong>The comparison.</strong> The positive definite cone $P_+$ is the same object in both cases; the $*$-unitary group is $U(2)$ for the biquaternion algebra and $U(4)$ for the full matrix algebra. The full algebra's polar decomposition has a larger $*$-unitary factor and a larger positive factor, and its singular values are four rather than two.</p>
 <h2 id="summary">Summary</h2>
-<p>Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is $*$-unitary, uniquely determined on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The $*$-unitary factor is the closest $*$-unitary to $A$ in the Frobenius norm, with distance squared $\lVert A\rVert_F^2+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the exponential polar decomposition.</p>
+<p>Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is $*$-unitary, uniquely determined on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The $*$-unitary factor is the closest $*$-unitary to $A$ in the Frobenius norm, with distance squared $\langle A\rangle_*+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the exponential polar decomposition.</p>
 <p>$$
 \boxed{\ A=UP,\quad P=(A^*A)^{1/2},\quad U\in U(4),\quad P\ge0,\quad GL_4/U(4)\cong P_+,\quad \dim_\mathbb{R}P_+=16. }
 $$</p>

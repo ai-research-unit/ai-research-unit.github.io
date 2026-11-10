@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Non-Quantum Limit in Biquaternionic Form, Order by Order in the Small Parameter — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-non-quantum-limit-in-biquaternionic-form-order-by-order-in-the-small-parameter"><strong>The Non-Quantum Limit in Biquaternionic Form, Order by Order in the Small Parameter</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> One identity, written with the letters of the biquaternion algebra, and its expansion in a small parameter. The limit is $\epsilon\to0$ with $\epsilon=\hbar/(pL)$, and the article reads the limit three times: at order zero, at order one, and at order two.</p>
+<p><strong>The identity.</strong> With $\theta_{\mathrm{pha}}=S/\hbar=\frac{k_{m}S}{m\,c}$ the phase in radians, $S$ the action, $A_{\mathrm{mhv}}$ the real positive amplitude, $k_{m}=mc/\hbar$ and $c$ the speed of light,</p>
+<p>$$
+-\left[\frac{\left(\partial\theta_{\mathrm{pha}}/\partial t\right)^{2}}{c^{2}}-\left\lvert\nabla\theta_{\mathrm{pha}}\right\rvert^{2}-k_{m}^{2}\right]
++\left[\frac{1}{c^{2}A_{\mathrm{mhv}}}\frac{\partial^{2}A_{\mathrm{mhv}}}{\partial t^{2}}-\frac{\Delta A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}}\right]
++\frac{i}{A_{\mathrm{mhv}}^{2}}\left[\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)\right]=0 .
+$$</p>
+<p>This is the <strong>parent identity</strong>. It is not an approximation: it holds for every solution of the Dirac square of the chiral pair, at every value of every parameter, and every display in the article is read from it.</p>
+<p><strong>The parameter.</strong> $\epsilon=\dfrac{1}{k_{\Phi}L}=\dfrac{\hbar}{p\,L}$, where $k_{\Phi}$ is the phase wave number of the state and $L$ is the length over which the amplitude varies. The non-quantum limit is</p>
+<p>$$
+\epsilon\ll1\qquad\text{that is}\qquad L\gg\lambda_{\Phi} ,
+$$</p>
+<p>the amplitude varying slowly over many reduced wavelengths. The limit is $\epsilon\to0$. <strong>The regime $\epsilon\gg1$ is the opposite one</strong>: the amplitude varies faster than the phase, the quantum potential is not small, and no ray picture exists. §1.4 puts the boundary at a definite length and checks both sides numerically.</p>
+<p><strong>What the expansion delivers.</strong> Three orders, and their names are the names of the corpus's limit:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>order</th>
+<th>slot</th>
+<th>equation</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\epsilon^{0}$</td>
+<td>real</td>
+<td>$\left(\partial\theta_{0}/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta_{0}\right\rvert^{2}=\mu^{2}$</td>
+<td>mass shell, Hamilton–Jacobi: the phase dominates</td>
+</tr>
+<tr>
+<td>$\epsilon^{1}$</td>
+<td>real</td>
+<td>$\mathcal{V}\!\cdot\!\partial\theta_{1}=0$</td>
+<td>the sub-leading phase is frozen along the rays</td>
+</tr>
+<tr>
+<td>$\epsilon^{1}$</td>
+<td>imaginary</td>
+<td>$\frac{\partial}{\partial\tau}\left(\chi_{0}^{2}\frac{\partial\theta_{0}}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi_{0}^{2}\nabla_{y}\theta_{0}\right)=0$</td>
+<td>transport: the density $\chi_{0}^{2}$ follows the rays</td>
+</tr>
+<tr>
+<td>$\epsilon^{2}$</td>
+<td>real</td>
+<td>$\mathcal{V}\!\cdot\!\partial\theta_{2}=\tfrac{1}{2}\left(\frac{1}{\chi_{0}}\frac{\partial^{2}\chi_{0}}{\partial\tau^{2}}-\frac{\Delta_{y}\chi_{0}}{\chi_{0}}\right)$</td>
+<td>the quantum potential, as a source</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two equations of the limit are one order apart.</strong> The mass shell is the real slot at order $\epsilon^{0}$ and the transport equation is the imaginary slot at order $\epsilon^{1}$, because the imaginary group of the identity carries one explicit factor of $\epsilon$. Both are leading order in the sense of the semiclassical method: neither is a correction to the other, and their coupling is one-way. §3.9 explains the bookkeeping and reconciles it with the convention that calls both of them order zero.</p>
+<p><strong>The one step between the identity and the expansion.</strong> The parent identity cannot be ordered as it stands, because its three brackets all have the same dimension and nothing in the display says which one dominates. Three substitutions — scaling the coordinates by $L$, scaling the phase by $\epsilon$, multiplying by $\lambda_{\Phi}^{2}$ — turn it into a display whose three terms carry the powers $\epsilon^{0}$, $\epsilon^{1}$ and $\epsilon^{2}$ explicitly. That display is the <strong>$\epsilon$-form</strong>, §3.3. It is still exact, and it is the object every later section reads. Its derivation is four lines and is the whole of §3.1 to §3.3; no expansion is performed there, and none is needed.</p>
+<p><strong>The chain, and why the article is organised this way.</strong> Three links, and nothing else is introduced: the parent identity, exact, §2; the $\epsilon$-form, the same identity graded, exact, §3.3; the three orders, the $\epsilon$-form read one power at a time, §3.6 to §3.8. Everything after §3.8 is a consequence of that reading: the two equations of the limit, §7, and the Lorentz force, §8. The rescaling is not optional: without it the labels $\epsilon^{0}$, $\epsilon^{1}$, $\epsilon^{2}$ are names attached to brackets whose ratio is $0/0$ on shell, §3.1.</p>
+<p><strong>Road map.</strong> §1 fixes the letters. §2 derives the parent identity in four steps. §3 builds the expansion and states the three orders. §4 reads order zero on the phase side. §5 reads the transport equation, the imaginary slot at order one. §6 reads order two, which is where the quantum potential and the error live. §7 is the analysis of the two equations as a system: what each projection encodes, why one is truncated and the other is not, and how both reduce to the non-relativistic pair. §8 puts the gauge field in and derives the Lorentz force from the order-zero phase equation. §9 lists what the identity cannot contain. §10 is the numbers, §11 the checks, §12 the summary.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_{t}=1,\vec e_{x},\vec e_{y},\vec e_{z}$ and $\vec e_{\eta}^{2}=-e_{t}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, charge $ϙ$, and the labels fixed by <em>Index and Notation Conventions</em>: $\mathrm{sp}$ on the spinor, $\mathrm{mhv}$ on the amplitude, $\mathrm{gco}$ on the gauge-covariant operator. The conjugate gradient is written $\tilde\nabla^{\natural}$ and is an operator, $\sum_{\mu}\varepsilon_{\mu}e_{\mu}\partial/\partial R_{\mu}$, not the conjugate of an element.</p>
+<p><strong>Where $\hbar$ appears.</strong> In two places, both stated once.</p>
+<p>It fixes the unit of the wave numbers, and there it is absorbed: $k_{m}=mc/\hbar$, $k_{t}^{\prime}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$, §1.2. Every $k$ in the article comes from one of these three lines and absorbs the mass, the energy or the momentum printed beside it.</p>
+<p>It sets the scale of the gauge shift, $ϙA_{\mu}/\hbar$, and there the same fact is written twice because it is used twice. A potential is not a mass, a momentum or an energy, so no wave number absorbs it directly; the shift is a charge times a potential over an action, and it is a wave number only after the division. The identity $1/\hbar=k_{m}/(m\,c)$ of §1.6 is what turns the division into a rate: $k_{m}/(m\,c)$ is how many inverse metres one unit of action per speed buys. The rule of §1.2 governs which of the two spellings is written where, and no third spelling appears.</p>
+<h2 id="1-the-letters">1. The Letters</h2>
+<h3 id="11-the-field-and-its-polar-decomposition">1.1 The Field and Its Polar Decomposition</h3>
+<p>The Dirac field of the corpus is $\tilde{Ξ}_{\mathrm{sp}}$, an element of $\mathbb{B}$; $\mathrm{sp}$ names the spinor role. It is not a column and not an array. The operator that acts on it is central, and that is why the derivation below can be done on commuting scalars and lifted at the end.</p>
+<p>Write</p>
+<p>$$
+\tilde{Ξ}_{\mathrm{sp}}=A_{\mathrm{mhv}}\,e^{i\theta_{\mathrm{pha}}}\,\xi .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>letter</th>
+<th>what it is</th>
+<th>dimension</th>
+<th>why the restriction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{\mathrm{mhv}}$</td>
+<td>the amplitude, real, positive, central</td>
+<td>that of $\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>a complex amplitude would move phase into the magnitude and make the split ambiguous</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}$</td>
+<td>the phase, real, central</td>
+<td>none: an angle in radians</td>
+<td>a complex phase would move magnitude into the phase</td>
+</tr>
+<tr>
+<td>$e^{i\theta_{\mathrm{pha}}}$</td>
+<td>the exponential, with $i$ the central imaginary unit</td>
+<td>none</td>
+<td>it is central, so the product rule of §2.2 holds</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the spinor, an element taken locally constant</td>
+<td>that of $\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>its variation is an order-$\epsilon$ effect, §9.1; taking it locally constant is what decouples the spin at order zero</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The phase letter, and the two letters it is not.</strong> The phase is $\theta_{\mathrm{pha}}$, the corpus's letter for a phase with the corpus's label for it, and it is the same object as the action: $\theta_{\mathrm{pha}}=S/\hbar=\frac{k_{m}S}{m\,c}$, which is the exponent of the companion's $\tilde{Ξ}_{\mathrm{sp}}=A_{\mathrm{mhv}}\exp\!\left(\frac{k_{m}iS}{m\,c}\right)\xi$. The two spellings are one, and the article uses the dimensionless one for a stated reason: an equation written in $S$ must carry $\hbar$, since $\hbar$ is the only action in the model, whereas an equation written in $\theta_{\mathrm{pha}}$ need not. Written that way every bracket is an inverse length squared and the identity has no coefficient at all, which is what §2.5 delivers.</p>
+<p>$\Phi$ is not available for the phase and is not used for it. In this corpus $\Phi$ is the sector letter of the material sector $\mathbb{B}_{\Phi}$, and it stands on the momentum $\tilde P_{\Phi}$, the wave number $\tilde K_{\Phi}$, the potential $\tilde A_{\Phi}$ and the component $k_{\Phi}$. A phase written $\Phi$ would collide with all four, so the phase carries the label $\mathrm{pha}$ and the sector letter stays where it belongs.</p>
+<h3 id="12-the-wave-numbers">1.2 The Wave Numbers</h3>
+<p>Three wave numbers carry the state, all inverse lengths:</p>
+<p>$$
+k_{m}=\frac{mc}{\hbar},\qquad k_{t}^{\prime}=\frac{E}{\hbar c},\qquad \vec k_{\Phi}=\frac{\vec p}{\hbar},\qquad k_{\Phi}=\left\lvert\vec k_{\Phi}\right\rvert .
+$$</p>
+<p><strong>The rule for when a wave number is allowed.</strong> A $k$ is introduced only where it absorbs a mass, a momentum or an energy. Each of the three above does exactly that: $k_{m}$ absorbs $mc$, $k_{t}^{\prime}$ absorbs $E/c$, and $\vec k_{\Phi}$ absorbs $\vec p$. Written the other way round, $m=\hbar k_{m}/c$, $E=\hbar c\,k_{t}^{\prime}$ and $\vec p=\hbar\vec k_{\Phi}$, each mechanical letter is recovered from a wave number and nothing is lost.</p>
+<p>The rule has a sharp consequence, and it is what keeps the article from filling with $k$'s that mean nothing: <strong>a $k$ that absorbs none of the three is a respelling of $\hbar$ and is not written.</strong> The bare combination $k_{m}/(mc)$ equals $1/\hbar$, and on its own it absorbs nothing, so the article never writes it alone. It occurs once, in §1.6, and there only because it stands beside the $m\,c$ that its $k_{m}$ absorbs; the pair is allowed, the bare ratio is not.</p>
+<p>The test is mechanical and can be applied to any display: strike the $k$ and ask whether a mass, a momentum or an energy fell out with it. If one did, the $k$ was doing work. If nothing did, the $k$ was $\hbar$ in disguise and the display is rewritten with $1/\hbar$.</p>
+<p>They close into a right triangle,</p>
+<p>$$
+k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2},
+$$</p>
+<p>which is the mass shell read on the coefficients. §4.1 shows that this triangle is what order zero produces.</p>
+<p>One number is derived from the three and is used constantly:</p>
+<p>$$
+\mu:=\frac{k_{m}}{k_{\Phi}}=\frac{1}{\gamma\beta},\qquad \beta=\frac{\left\lvert\vec v\right\rvert}{c},\qquad \gamma=\frac{1}{\sqrt{1-\beta^{2}}} .
+$$</p>
+<p>$\mu$ is the shape of the state. It is not small at any ordinary speed: at $\beta=0.01$ it is $99.995$. It is therefore not a parameter of any limit, and §10.3 shows what goes wrong when it is mistaken for one.</p>
+<h3 id="13-the-lengths-and-the-parameter">1.3 The Lengths and the Parameter</h3>
+<p>Two lengths come from the wave numbers,</p>
+<p>$$
+\lambda_{\Phi}:=\frac{1}{k_{\Phi}}=\frac{\hbar}{p},\qquad \lambda_{m}:=\frac{1}{k_{m}}=\frac{\hbar}{mc},
+$$</p>
+<p>with $\lambda_{\Phi}=\mu\lambda_{m}$. $\lambda_{\Phi}$ is the reduced phase wavelength: the length over which $\theta_{\mathrm{pha}}$ advances by one radian. $\lambda_{m}$ is the mass length: the range of the pair, and the length below which a one-particle description fails.</p>
+<p>The third length is not in the algebra. $L$ is the length over which the amplitude varies by order itself, $\left\lvert\nabla\ln A_{\mathrm{mhv}}\right\rvert\sim1/L$. It is a property of the state. Nothing in the model supplies it, and the limit needs it.</p>
+<p>The parameter of the limit is the ratio of the first to the third:</p>
+<p>$$
+\boxed{\;\epsilon:=\frac{\lambda_{\Phi}}{L}=\frac{1}{k_{\Phi}L}=\frac{\hbar}{p\,L}\;}
+$$</p>
+<p>The non-quantum limit is $\epsilon\to0$, that is $L\gg\lambda_{\Phi}$: the amplitude varies slowly over many reduced wavelengths, the phase dominates, and the quantum potential is suppressed. <strong>If instead $\epsilon\gg1$, the amplitude varies faster than the phase and the ray picture fails.</strong> That regime is not a limit of the article; it is its domain of invalidity.</p>
+<p>If the amplitude also varies in time, on a coordinate scale $L_{t}$ read as $r'_{t}=ct$, then two gradients compete and the parameter is the larger of two ratios,</p>
+<p>$$
+\epsilon=\max\left(\frac{1}{k_{\Phi}L_{r}},\,\frac{1}{k_{t}^{\prime}L_{t}}\right),
+$$</p>
+<p>with $L_{r}$ the spatial scale. The published articles write the spatial one, which is right for a stationary state and wrong for a spreading packet.</p>
+<h3 id="14-the-two-sides-of-the-boundary-numerically">1.4 The Two Sides of the Boundary, Numerically</h3>
+<p>The boundary $\epsilon=1$ is at $L=\lambda_{\Phi}=1/k_{\Phi}$. For an electron at $\beta=0.01$, $k_{\Phi}=2.589\,734\,566\times10^{10}\ \mathrm{m^{-1}}$, so $\lambda_{\Phi}=38.614\ \mathrm{pm}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$L$</th>
+<th>$\epsilon=\lambda_{\Phi}/L$</th>
+<th>regime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1\ \mathrm{pm}$</td>
+<td>$38.6$</td>
+<td>$\epsilon\gg1$: amplitude varies faster than the phase, no ray picture</td>
+</tr>
+<tr>
+<td>$38.6\ \mathrm{pm}$</td>
+<td>$1$</td>
+<td>the boundary</td>
+</tr>
+<tr>
+<td>$1\ \mathrm{nm}$</td>
+<td>$3.86\times10^{-2}$</td>
+<td>$\epsilon\ll1$: the limit holds, with the dropped term at $1.5\times10^{-3}$ of the scale</td>
+</tr>
+<tr>
+<td>$1\ \mathrm{\mu m}$</td>
+<td>$3.86\times10^{-5}$</td>
+<td>$\epsilon\ll1$: the limit holds comfortably</td>
+</tr>
+</tbody>
+</table></div>
+<p>The distinction matters in practice. An atomic wave function varies on $L\sim a_{0}=52.9\ \mathrm{pm}$ at this speed, which is $\epsilon\simeq0.73$: borderline, and that is the correct verdict. The same wave function at $\beta=0.5$ has $\lambda_{\Phi}=0.669\ \mathrm{pm}$ and $\epsilon=1.26\times10^{-2}$: the limit holds. <strong>The limit is not a statement about size, it is a statement about the ratio of two lengths, and both move with the state.</strong></p>
+<h3 id="15-the-dalembertian-and-its-sign">1.5 The d'Alembertian and Its Sign</h3>
+<p>The operator $\Box=\tilde\nabla^{\natural}\tilde\nabla$ is central and scalar, so it acts on either sector and the sector never has to be named:</p>
+<p>$$
+\Box=-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}+\Delta,\qquad \Delta=\sum_{\eta=x,y,z}\frac{\partial^{2}}{\partial r_{\eta}^{2}} .
+$$</p>
+<p>The sign is not a convention. The corpus's temporal coordinate is $R_{t}=ict$, so a second derivative in $R_{t}$ is $-\frac{1}{c^{2}}$ times a second derivative in $t$, and the temporal term enters with the opposite sign to the three spatial ones. With the opposite choice the mass would enter with the wrong sign and the model would be tachyonic.</p>
+<p>One consequence is used repeatedly. For real $f$ and $\theta_{\mathrm{pha}}$,</p>
+<p>$$
+-\frac{\Box f}{f}=\frac{1}{c^{2}}\frac{1}{f}\frac{\partial^{2}f}{\partial t^{2}}-\frac{\Delta f}{f},
+$$</p>
+<p>which is the second bracket of the identity.</p>
+<h3 id="16-the-gauge-covariant-operator">1.6 The Gauge-Covariant Operator</h3>
+<p>Minimal coupling replaces the gradient by</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_{\mu}}+\frac{i\,ϙ}{\hbar}A_{\mu}
+=\frac{\partial}{\partial R_{\mu}}+\frac{k_{m}\,i\,ϙ}{m\,c}A_{\mu},
+$$</p>
+<p>with $A_{t}=i\phi/c$ the temporal entry and $\vec A$ the three space entries; $ϙ$ is the charge of the field acted on, real, of dimension $\mathrm{Q}$.</p>
+<p><strong>The two spellings are one, and the rule of §1.2 permits both.</strong> They agree because $1/\hbar=k_{m}/(m\,c)$, which is the definition of $k_{m}$ read backwards. The second spelling passes the rule of §1.2 as it stands: the $k_{m}$ there stands beside the $m\,c$ it absorbs, so the pair $\left(k_{m},m\,c\right)$ carries one mass and no factor is smuggled. What the second spelling buys is the reading. In it the shift is a wave number times a dimensionless charge, $\frac{k_{m}ϙ}{mc}A_{\mu}$, and the identity $1/\hbar=k_{m}/(mc)$ is exactly the statement that <strong>a potential converts into a wave number at the rate $k_{m}/(mc)$</strong>: one volt of potential is worth so many inverse metres of phase gradient. The article writes $1/\hbar$ when it is doing units and $k_{m}/(mc)$ when it is doing counting, and it never writes a third form.</p>
+<p>The coupling is central, so it commutes with every unit and the conjugation passes through it. The components do not commute:</p>
+<p>$$
+\left[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}\right]=\frac{i\,ϙ}{\hbar}F_{\mu\nu},\qquad
+\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_{\mu}\left(\tilde\nabla_{\mathrm{gco},\mu}\right)^{2}+\frac{i\,ϙ}{\hbar}\tilde F .
+$$</p>
+<p>The curvature term $\tilde F$ is absent from this article. The identity of §2.5 is the square of the free gradient with the potentials inserted on the phase, so it carries the first-order coupling only. §9.4 says what that costs.</p>
+<h2 id="2-the-identity">2. The Identity</h2>
+<p>Nine steps. The last one is the display of the introduction. No step is an approximation; the claim to audit is the lemma of §2.4.</p>
+<h3 id="21-the-equation-being-expanded">2.1 The Equation Being Expanded</h3>
+<p>The dynamics of a field of mass $m$ is the chiral pair</p>
+<p>$$
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_{m}\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m}\tilde{Ξ}_{\mathrm{sp},R},\qquad k_{m}=\frac{mc}{\hbar},
+$$</p>
+<p>with $R$ and $L$ the two chiral halves. Apply $\tilde\nabla^{\natural}$ to the first line and use the second:</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_{m}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m}^{2}\tilde{Ξ}_{\mathrm{sp},R},
+$$</p>
+<p>and the same in the other order. Each half therefore obeys</p>
+<p>$$
+\left(\Box-k_{m}^{2}\right)\tilde{Ξ}_{\mathrm{sp}}=0 .
+$$</p>
+<p>Squaring costs something and the cost should be named before it is paid. The pair is first order in the gradient; the square is second order. The square cannot distinguish $\tilde{Ξ}_{R}$ from $\tilde{Ξ}_{L}$ once both obey it, so it loses the relative sign of the two halves, and with it the sign of the energy and the spin. §9.1 and §9.2 itemise the loss. What it buys is that the equation becomes scalar, so the whole expansion can be done on commuting functions. The rest of the article works inside that trade.</p>
+<h3 id="22-the-ansatz">2.2 The Ansatz</h3>
+<p>Insert</p>
+<p>$$
+\tilde{Ξ}_{\mathrm{sp}}=A_{\mathrm{mhv}}\,e^{i\theta_{\mathrm{pha}}}\,\xi ,
+$$</p>
+<p>with $A_{\mathrm{mhv}}$, $\theta_{\mathrm{pha}}$ real and central and $\xi$ an element taken locally constant. No further condition is put on $\xi$: its four coefficients are free, and §9.1 shows that the identity never constrains them.</p>
+<p>The product rule is legitimate because $\tilde\nabla$ acts on the left and both $A_{\mathrm{mhv}}$ and $e^{i\theta_{\mathrm{pha}}}$ commute with the units: $\tilde\nabla\left(f\tilde X\right)=\left(\tilde\nabla f\right)\tilde X+f\tilde\nabla\tilde X$ holds for central $f$. A non-central amplitude or phase would break the rule and the expansion with it, which is why §1.1 restricts them.</p>
+<p><strong>What happens to $\xi$, stated exactly.</strong> The corpus's wave is $\tilde{Ξ}_{\mathrm{sp}}=A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\xi$ with $\xi$ slowly varying, and a varying $\xi$ contributes $\partial\xi/\partial R_{\mu}$, which is of size $1/L$. That term stands beside $\partial\theta_{\mathrm{pha}}/\partial R_{\mu}$, of size $1/\lambda_{\Phi}$, so its ratio to it is $\epsilon$: <strong>the derivative of the spinor is an order-$\epsilon$ effect.</strong> Dropping it is legitimate at orders zero and one and is not legitimate at order two, and §9.1 says what it is that returns there. Until §9.1 the article takes $\xi$ locally constant, which is the restriction that makes every line below an identity in one element rather than in a distribution.</p>
+<p>The ansatz assumes that $A_{\mathrm{mhv}}$ varies slowly, on $L\gg\lambda_{\Phi}$; that $\theta_{\mathrm{pha}}$ is single-valued on the region; and nothing else. It does not assume the amplitude is small, only that its logarithm is slow. It does not assume a plane wave: the plane wave is the case $A_{\mathrm{mhv}}$ constant, where $L=\infty$ and $\epsilon=0$.</p>
+<h3 id="23-the-first-derivative">2.3 The First Derivative</h3>
+<p>Because $A_{\mathrm{mhv}}$ and $\theta_{\mathrm{pha}}$ are central,</p>
+<p>$$
+\frac{\partial}{\partial R_{\mu}}\left(A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\right)
+=e^{i\theta_{\mathrm{pha}}}\left(\partial A_{\mathrm{mhv}}/\partial R_{\mu}+i\,A_{\mathrm{mhv}}\,\partial\theta_{\mathrm{pha}}/\partial R_{\mu}\right)
+=A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\left(\partial\ln A_{\mathrm{mhv}}/\partial R_{\mu}+i\,\partial\theta_{\mathrm{pha}}/\partial R_{\mu}\right).
+$$</p>
+<p>The bracket has a real part and an imaginary part, and the split is not a convention: $A_{\mathrm{mhv}}$ is real, so its logarithmic derivative is real, and $\theta_{\mathrm{pha}}$ is real, so its gradient is real. The two terms have sizes $1/L$ and $1/\lambda_{\Phi}$, and their ratio is $\epsilon$. The parameter appears here for the first time, as a ratio inside one bracket.</p>
+<h3 id="24-the-second-derivative">2.4 The Second Derivative</h3>
+<p>Differentiating the bracket of §2.3 with respect to the coordinate $R_{\mu}$ gives four terms. The derivative of the exponential multiplies the bracket, and the derivative of the bracket adds its own:</p>
+<p>$$
+\frac{\partial^{2}}{\partial R_{\mu}^{2}}\left(A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\right)
+=e^{i\theta_{\mathrm{pha}}}\left(i\,\partial\theta_{\mathrm{pha}}/\partial R_{\mu}\right)\left(\partial A_{\mathrm{mhv}}/\partial R_{\mu}+iA_{\mathrm{mhv}}\partial\theta_{\mathrm{pha}}/\partial R_{\mu}\right)
++e^{i\theta_{\mathrm{pha}}}\left(\partial^{2}A_{\mathrm{mhv}}/\partial R_{\mu}^{2}+i\,\partial A_{\mathrm{mhv}}/\partial R_{\mu}\,\partial\theta_{\mathrm{pha}}/\partial R_{\mu}+i\,A_{\mathrm{mhv}}\,\partial^{2}\theta_{\mathrm{pha}}/\partial R_{\mu}^{2}\right).
+$$</p>
+<p>The two crossed terms are equal and add:</p>
+<p>$$
+\frac{\partial^{2}}{\partial R_{\mu}^{2}}\left(A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\right)
+=e^{i\theta_{\mathrm{pha}}}\left[\partial^{2}A_{\mathrm{mhv}}/\partial R_{\mu}^{2}+2i\,\partial A_{\mathrm{mhv}}/\partial R_{\mu}\,\partial\theta_{\mathrm{pha}}/\partial R_{\mu}+i\,A_{\mathrm{mhv}}\,\partial^{2}\theta_{\mathrm{pha}}/\partial R_{\mu}^{2}-A_{\mathrm{mhv}}\left(\partial\theta_{\mathrm{pha}}/\partial R_{\mu}\right)^{2}\right].
+$$</p>
+<p>Divide by $A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}$:</p>
+<p>$$
+\frac{1}{A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}}\frac{\partial^{2}\left(A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\right)}{\partial R_{\mu}^{2}}
+=\frac{1}{A_{\mathrm{mhv}}}\frac{\partial^{2}A_{\mathrm{mhv}}}{\partial R_{\mu}^{2}}
++2i\,\frac{1}{A_{\mathrm{mhv}}}\frac{\partial A_{\mathrm{mhv}}}{\partial R_{\mu}}\,\partial\theta_{\mathrm{pha}}/\partial R_{\mu}
++i\,\partial^{2}\theta_{\mathrm{pha}}/\partial R_{\mu}^{2}
+-\left(\partial\theta_{\mathrm{pha}}/\partial R_{\mu}\right)^{2}.
+$$</p>
+<p>This is the only lemma in the article, and everything from here to §2.6 is it applied four times and regrouped. Its four terms have sizes $1/L^{2}$, $1/(L\lambda_{\Phi})$, $1/\lambda_{\Phi}^{2}$ and $1/\lambda_{\Phi}^{2}$. The lemma already carries the order structure of the limit, before any physics is read from it.</p>
+<h3 id="25-the-parent-identity">2.5 The Parent Identity</h3>
+<p>Apply the lemma to $\Box=-\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}+\Delta$ and set $\Box\tilde{Ξ}_{\mathrm{sp}}=k_{m}^{2}\tilde{Ξ}_{\mathrm{sp}}$. Divided by $\tilde{Ξ}_{\mathrm{sp}}$, the lemma gives eight terms. Six of them stay. The two that do not are the mixed terms of the imaginary group, and each collapses by one product rule:</p>
+<p>$$
+-\frac{1}{c^{2}}\frac{\partial^{2}\theta_{\mathrm{pha}}}{\partial t^{2}}-\frac{2}{c^{2}A_{\mathrm{mhv}}}\frac{\partial A_{\mathrm{mhv}}}{\partial t}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}
+=-\frac{1}{c^{2}A_{\mathrm{mhv}}^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right),
+\qquad
+\frac{2\nabla A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}}\cdot\nabla\theta_{\mathrm{pha}}+\Delta \theta_{\mathrm{pha}}
+=\frac{1}{A_{\mathrm{mhv}}^{2}}\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right).
+$$</p>
+<p>Carry $k_{m}^{2}$ to the left and multiply by $-1$:</p>
+<p>$$
+\boxed{
+-\left[\frac{1}{c^{2}}\left(\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)^{2}-\left\lvert\nabla\theta_{\mathrm{pha}}\right\rvert^{2}-k_{m}^{2}\right]
++\left[\frac{1}{c^{2}A_{\mathrm{mhv}}}\frac{\partial^{2}A_{\mathrm{mhv}}}{\partial t^{2}}-\frac{\Delta A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}}\right]
++\frac{i}{A_{\mathrm{mhv}}^{2}}\left[\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)\right]=0 .
+}
+$$</p>
+<p>This is the <strong>parent identity</strong>: every other display in the article is this one rewritten, truncated or read. Three brackets, and each bracket is one statement about a solution. The first carries the phase and the mass. The second carries the amplitude alone. The third carries the two together, and its time slot is a total time derivative and its space slot a total divergence.</p>
+<p>Every bracket has dimension of an inverse length squared, so the three are commensurable without a prefactor and can be read term against term.</p>
+<h3 id="26-the-two-exact-forms">2.6 The Two Exact Forms</h3>
+<p>The real group says that the mass-shell defect is the curvature of the amplitude:</p>
+<p>$$
+\frac{\left(\partial\theta_{\mathrm{pha}}/\partial t\right)^{2}}{c^{2}}-\left\lvert\nabla\theta_{\mathrm{pha}}\right\rvert^{2}-k_{m}^{2}=-\frac{\Box A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}} .
+$$</p>
+<p>The same line in the action, $S=\hbar\theta_{\mathrm{pha}}$, costs one multiplication by $\hbar^{2}$ — the unit change of §1.6, applied to the phase — and gives</p>
+<p>$$
+\frac{\left(\partial S/\partial t\right)^{2}}{c^{2}}-\left\lvert\nabla S\right\rvert^{2}-m^{2}c^{2}=-\hbar^{2}\frac{\Box A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}} ,
+$$</p>
+<p>which is the exact relativistic Bohm equation: the classical mass shell with a source proportional to $\hbar^{2}$ and to the curvature of the amplitude. The $\hbar^{2}$ here is not bookkeeping: it is the dimension the source must carry, so that a curvature of a real amplitude becomes an inverse length squared. It is also where the smallness comes from: the ratio of this source to the mass-shell scale is $\epsilon^{2}$, computed once in §6.2. The imaginary group says</p>
+<p>$$
+\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)=0,
+$$</p>
+<p>the exact continuity equation for the density $A_{\mathrm{mhv}}^{2}$ on the current whose entries are $\partial\theta_{\mathrm{pha}}/\partial t$ and $\nabla\theta_{\mathrm{pha}}$.</p>
+<p>These two lines are the whole content of the identity, and they are exact. The expansion of §3 does not change them; it separates their orders.</p>
+<h2 id="3-the-expansion-in-math250">3. The Expansion in $\epsilon$</h2>
+<h3 id="31-what-has-to-change-before-an-expansion-is-possible">3.1 What Has to Change Before an Expansion Is Possible</h3>
+<p>The parent identity is exact, and its three brackets are of no definite relative size. In physical units every bracket has dimension of an inverse length squared, so nothing in the display says which term dominates.</p>
+<p>Three substitutions fix that. They are the whole content of this section, and nothing else is done to the identity:</p>
+<ol>
+<li><strong>Scale the coordinates.</strong> $\tau:=ct/L$ and $y:=\vec r/L$, so that the region of interest is of order one in the new variables. Each derivative then brings a factor $1/L$.</li>
+<li><strong>Scale the phase.</strong> $\theta:=\epsilon\theta_{\mathrm{pha}}$, so that the phase's own derivatives are of order one. Each phase derivative brings a factor $1/\epsilon$ on top of the $1/L$.</li>
+<li><strong>Multiply by $\lambda_{\Phi}^{2}$.</strong> With $\lambda_{\Phi}=1/k_{\Phi}=\epsilon L$ the phase length, the whole identity becomes dimensionless, and the mass term becomes $\mu^{2}=(k_{m}/k_{\Phi})^{2}$.</li>
+</ol>
+<p><strong>Why the substitutions cannot be skipped.</strong> Without them the labels are guesses. Attached to the parent identity as it stands, the label $\epsilon^{0}$ on the first bracket is wrong in a way that hides itself: that bracket vanishes on shell, so the ratio of the second bracket to the first is $0/0$ and no order is defined. The scaling is what gives each bracket a size that can be compared, and it is why the powers in §3.3 are counted rather than assigned.</p>
+<p>The two lengths $L$ and $\lambda_{\Phi}$ are the only lengths in the problem, and $\epsilon=\lambda_{\Phi}/L$ is their ratio. Scaling the coordinates by one and the phase by the other is what converts a comparison of two lengths into a power of a single number.</p>
+<h3 id="32-the-three-substitutions-written-out">3.2 The Three Substitutions Written Out</h3>
+<p>$$
+\tau:=\frac{c\,t}{L},\qquad y:=\frac{\vec r}{L},\qquad
+\theta\left(\tau,y\right):=\epsilon\,\theta_{\mathrm{pha}}\left(\vec r,t\right),\qquad
+\chi\left(\tau,y\right):=A_{\mathrm{mhv}}\left(\vec r,t\right),
+$$</p>
+<p>$$
+\frac{\partial}{\partial t}=\frac{c}{L}\frac{\partial}{\partial\tau},\qquad
+\nabla=\frac{1}{L}\nabla_{y},\qquad
+\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}}=\frac{1}{L^{2}}\frac{\partial^{2}}{\partial\tau^{2}},\qquad
+\Delta=\frac{1}{L^{2}}\Delta_{y}.
+$$</p>
+<p>The amplitude is not rescaled, and that is the point of the second substitution. The phase and the amplitude are slow in different senses: $\theta_{\mathrm{pha}}$ is large with a steep gradient, whereas $A_{\mathrm{mhv}}$ is moderate with a shallow one. Writing $\theta_{\mathrm{pha}}=\theta/\epsilon$ moves the steepness into the power of $\epsilon$ and leaves $\theta$ of order one: $\partial\theta/\partial\tau=-\lambda_{\Phi}\,\partial\theta_{\mathrm{pha}}/\partial t=-k_{t}^{\prime}/k_{\Phi}$ and $\nabla_{y}\theta=\lambda_{\Phi}\nabla\theta_{\mathrm{pha}}=\vec k_{\Phi}/k_{\Phi}$, both of order one. The scaled derivatives of $\chi$ are $\partial\chi/\partial\tau=(L/c)\,\partial A_{\mathrm{mhv}}/\partial t$ and $\nabla_{y}\chi=L\nabla A_{\mathrm{mhv}}$, of order $\chi$ by the definition of $L$. Before scaling the two fields have first derivatives of order $1/\lambda_{\Phi}$ and $1/L$; after scaling both are of order one, and the two lengths no longer appear in the display. That is the whole purpose of the substitution.</p>
+<h3 id="33-the-math281-form">3.3 The $\epsilon$-Form</h3>
+<p>Substitute §3.2 into the three brackets of the parent identity and multiply by $\lambda_{\Phi}^{2}$. Each bracket is then a ratio of the two lengths, and the ratio is computed once:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>derivatives on $\theta$</th>
+<th>derivatives on $\chi$</th>
+<th>power of $\epsilon$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first, the mass shell</td>
+<td>two</td>
+<td>none</td>
+<td>$\epsilon^{0}$</td>
+</tr>
+<tr>
+<td>second, the amplitude curvature</td>
+<td>none</td>
+<td>two</td>
+<td>$\epsilon^{2}$</td>
+</tr>
+<tr>
+<td>third, the divergence</td>
+<td>one</td>
+<td>one</td>
+<td>$\epsilon^{1}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count is one rule. Every bracket carries exactly two derivatives, and $\lambda_{\Phi}^{2}$ supplies $\epsilon^{2}L^{2}$, which cancels their $L^{-2}$ and leaves $\epsilon^{2}$ to be spent. A derivative acting on $\theta$ spends nothing, because $\theta$ was scaled on $\lambda_{\Phi}$ and its derivatives are already of order one. A derivative acting on $\chi$ spends one factor of $\epsilon$, because $\chi$ was scaled on $L$ and $L$ is larger than $\lambda_{\Phi}$ by $1/\epsilon$. So the power of a bracket is the number of its derivatives that fall on the amplitude.</p>
+<p>Term by term:</p>
+<p>$$
+\lambda_{\Phi}^{2}\frac{1}{c^{2}}\left(\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)^{2}=\left(\frac{\partial\theta}{\partial\tau}\right)^{2},
+\qquad
+\lambda_{\Phi}^{2}\left\lvert\nabla\theta_{\mathrm{pha}}\right\rvert^{2}=\left\lvert\nabla_{y}\theta\right\rvert^{2},
+\qquad
+\lambda_{\Phi}^{2}k_{m}^{2}=\mu^{2},
+$$</p>
+<p>$$
+\lambda_{\Phi}^{2}\left[\frac{1}{c^{2}A_{\mathrm{mhv}}}\frac{\partial^{2}A_{\mathrm{mhv}}}{\partial t^{2}}-\frac{\Delta A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}}\right]
+=\epsilon^{2}\left[\frac{1}{\chi}\frac{\partial^{2}\chi}{\partial\tau^{2}}-\frac{\Delta_{y}\chi}{\chi}\right],
+$$</p>
+<p>$$
+\lambda_{\Phi}^{2}\frac{i}{A_{\mathrm{mhv}}^{2}}\left(\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)\right)
+=i\,\epsilon\,\frac{1}{\chi^{2}}\left[\frac{\partial}{\partial\tau}\left(\chi^{2}\frac{\partial\theta}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi^{2}\nabla_{y}\theta\right)\right].
+$$</p>
+<p>The parent identity becomes</p>
+<p>$$
+\boxed{
+-\underbrace{\left[\left(\frac{\partial\theta}{\partial\tau}\right)^{2}-\left\lvert\nabla_{y}\theta\right\rvert^{2}-\mu^{2}\right]}_{\epsilon^{0}}
++\underbrace{\epsilon^{2}\left[\frac{1}{\chi}\frac{\partial^{2}\chi}{\partial\tau^{2}}-\frac{\Delta_{y}\chi}{\chi}\right]}_{\epsilon^{2}}
++\,i\,\underbrace{\epsilon\,\frac{1}{\chi^{2}}\left[\frac{\partial}{\partial\tau}\left(\chi^{2}\frac{\partial\theta}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi^{2}\nabla_{y}\theta\right)\right]}_{\epsilon^{1}}=0 .
+}
+$$</p>
+<p><strong>This is the $\epsilon$-form.</strong> It is the same identity as the parent, neither truncated nor approximated, written in the scaled variables with the powers of $\epsilon$ explicit. Every display from here on is this one read at one order at a time, and no further substitution is ever needed.</p>
+<p>The name is chosen for what the display is: the identity <em>graded by powers of $\epsilon$</em>. It is not an expansion and not an approximation — the three terms are exact — so it is not the "eikonal identity", the "$\epsilon$ expansion" or the "WKB series"; those name what is done to it afterwards. The $\epsilon$-form is the object on which those operations are performed.</p>
+<h3 id="34-the-one-consequence-of-the-bookkeeping">3.4 The One Consequence of the Bookkeeping</h3>
+<p>The rule has a consequence that must be stated before the expansion is used, because it is the place where this article differs from a mechanical WKB computation: <strong>the second bracket carries $\epsilon^{2}$ because two derivatives fall on the amplitude, not because it is "the quantum term."</strong> The quantum potential is what that bracket turns out to be, §6.2, and that is a result, not an input. The order of every bracket was fixed before any of them was interpreted.</p>
+<h3 id="35-the-series">3.5 The Series</h3>
+<p>Insert the series into the $\epsilon$-form of §3.3 and collect each power of $\epsilon$. Both real functions are expanded:</p>
+<p>$$
+\theta=\theta_{0}+\epsilon\,\theta_{1}+\epsilon^{2}\theta_{2}+\cdots,\qquad
+\chi=\chi_{0}+\epsilon\,\chi_{1}+\epsilon^{2}\chi_{2}+\cdots .
+$$</p>
+<p>Each $\theta_{n}$ and $\chi_{n}$ is real and central. Nothing is assumed about their relative sizes beyond the powers of $\epsilon$ written, and the series is asymptotic: §6.4 shows where it stops being uniform.</p>
+<p>Collection is then mechanical. The $\epsilon^{0}$ terms of the whole display give one equation, the $\epsilon^{1}$ terms another, and the $\epsilon^{2}$ terms a third; each is read in §3.6 to §3.8, and each is one of the two slots, real or imaginary.</p>
+<p>Two useful abbreviations, used from here on:</p>
+<p>$$
+q_{\tau}:=\partial\theta_{0}/\partial\tau,\qquad q_{y}:=\nabla_{y}\theta_{0},\qquad
+\mathcal{V}:=\left(q_{\tau},-q_{y}\right),\qquad
+\mathcal{V}\!\cdot\!\partial:=q_{\tau}\partial/\partial\tau-q_{y}\cdot\nabla_{y}.
+$$</p>
+<p>$\mathcal{V}$ is the characteristic direction of the order-zero equation, §4.3, and $\mathcal{V}\!\cdot\!\partial$ is the derivative along a ray. In physical units $\mathcal{V}\!\cdot\!\partial$ is the total derivative along the ray divided by $L$, §4.3.</p>
+<h3 id="36-order-math327-the-mass-shell">3.6 Order $\epsilon^{0}$: The Mass Shell</h3>
+<p>Collect the terms of order $\epsilon^{0}$. Only the first bracket contributes, and only its leading part:</p>
+<p>$$
+\left(\partial\theta_{0}/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta_{0}\right\rvert^{2}=\mu^{2}.
+$$</p>
+<p>This is one equation for one unknown, $\theta_{0}$, and it is non-linear and first order. In the physical letters, with $\theta_{0}=\epsilon\theta_{\mathrm{pha},0}$ and the scaling of §3.2 undone, it reads</p>
+<p>$$
+\frac{\left(\partial\theta_{\mathrm{pha},0}/\partial t\right)^{2}}{c^{2}}-\left\lvert\nabla\theta_{\mathrm{pha},0}\right\rvert^{2}=k_{m}^{2},
+\qquad\text{equivalently}\qquad
+\frac{E^{2}}{c^{2}}-\left\lvert\vec p\right\rvert^{2}=m^{2}c^{2},
+$$</p>
+<p>with $E:=-\partial S_{0}/\partial t$ and $\vec p:=\nabla S_{0}$, $S_{0}=\hbar\theta_{\mathrm{pha},0}$. It is the mass shell, and therefore the Hamilton–Jacobi equation of a free relativistic particle. §4 reads everything out of it.</p>
+<p>Nothing about the amplitude appears at this order. The phase at order zero is determined as if the amplitude were constant, and §6.1 shows that the amplitude's effect re-enters only at order $\epsilon^{2}$.</p>
+<h3 id="37-order-math337-the-transport-equation-and-the-freedom-of-the-split">3.7 Order $\epsilon^{1}$: The Transport Equation and the Freedom of the Split</h3>
+<p>Collect the terms of order $\epsilon^{1}$. Three sources contribute: the expansion of the first bracket, the expansion of the third bracket, and nothing from the second, whose leading term is already $\epsilon^{2}$.</p>
+<p>The first bracket contributes $A_{1}=-2\left(q_{\tau}\partial\theta_{1}/\partial\tau-q_{y}\cdot\nabla_{y}\theta_{1}\right)=-2\,\mathcal{V}\!\cdot\!\partial\theta_{1}$.</p>
+<p>The third bracket contributes $i\,\epsilon\,C_{0}$ with</p>
+<p>$$
+C_{0}:=\frac{1}{\chi_{0}^{2}}\left[\frac{\partial}{\partial\tau}\left(\chi_{0}^{2}\frac{\partial\theta_{0}}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi_{0}^{2}\nabla_{y}\theta_{0}\right)\right].
+$$</p>
+<p>The order-$\epsilon^{1}$ equation is therefore</p>
+<p>$$
+-2\,\mathcal{V}\!\cdot\!\partial\theta_{1}+i\,C_{0}=0 .
+$$</p>
+<p>Its left side is the sum of a real number and a purely imaginary one, so each vanishes:</p>
+<p>$$
+\boxed{\;\mathcal{V}\!\cdot\!\partial\,\theta_{1}=0\;}\qquad\text{and}\qquad
+\boxed{\;\frac{\partial}{\partial\tau}\left(\chi_{0}^{2}\frac{\partial\theta_{0}}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi_{0}^{2}\nabla_{y}\theta_{0}\right)=0\;}
+$$</p>
+<p>The first says that the sub-leading phase is constant along the rays. The second is the transport equation for the density $\chi_{0}^{2}$ along the rays. Both are order $\epsilon^{1}$, and they are of different kinds: the first is a restriction on a free function, the second is a genuine equation.</p>
+<p>The first deserves a sentence, because it is the place where a reader expects physics and finds bookkeeping. $\theta_{1}$ is not fixed by the order-zero equation; it is fixed up to a function constant along the rays, and the natural choice is $\theta_{1}=0$. The same freedom applies to $\chi_{1}$, whose equation appears at order $\epsilon^{2}$ and is homogeneous when $\theta_{1}=0$. <strong>This article takes $\theta_{1}=\chi_{1}=0$</strong>, which is the choice that makes the split of §1.1 unique order by order. The freedom itself is real and is the discrete analogue, in this setting, of the reparametrisation freedom of the amplitude-phase split: one may move an $\epsilon$-suppressed constant along the rays from the phase into the amplitude without changing the field.</p>
+<p>With that choice the two series are</p>
+<p>$$
+\theta=\theta_{0}+\epsilon^{2}\theta_{2}+\cdots,\qquad
+\chi=\chi_{0}+\epsilon^{2}\chi_{2}+\cdots,
+$$</p>
+<p>and the next order that carries a source is $\epsilon^{2}$.</p>
+<h3 id="38-order-math357-the-quantum-potential-as-a-source">3.8 Order $\epsilon^{2}$: The Quantum Potential as a Source</h3>
+<p>Collect the terms of order $\epsilon^{2}$, with $\theta_{1}=\chi_{1}=0$. The first bracket contributes $A_{2}=-2\,\mathcal{V}\!\cdot\!\partial\theta_{2}$; the second contributes its leading term $B_{0}$ with</p>
+<p>$$
+B_{0}:=\frac{1}{\chi_{0}}\frac{\partial^{2}\chi_{0}}{\partial\tau^{2}}-\frac{\Delta_{y}\chi_{0}}{\chi_{0}}=-\frac{\Box_{y}\chi_{0}}{\chi_{0}},\qquad \Box_{y}:=-\partial^{2}/\partial\tau^{2}+\Delta_{y}.
+$$</p>
+<p>The order-$\epsilon^{2}$ equation is</p>
+<p>$$
+-2\,\mathcal{V}\!\cdot\!\partial\,\theta_{2}+B_{0}+i\,C_{1}=0 ,
+$$</p>
+<p>and the two slots separate again:</p>
+<p>$$
+\boxed{\;\mathcal{V}\!\cdot\!\partial\,\theta_{2}=\tfrac{1}{2}B_{0}=\tfrac{1}{2}\left(\frac{1}{\chi_{0}}\frac{\partial^{2}\chi_{0}}{\partial\tau^{2}}-\frac{\Delta_{y}\chi_{0}}{\chi_{0}}\right)\;}
+\qquad
+C_{1}=0 .
+$$</p>
+<p>The real equation is the important one. It says that the first correction to the phase accumulates along the ray at a rate fixed by the curvature of the amplitude. That curvature is the quantum potential, and §6.2 identifies it with the textbook expression. The imaginary equation, $C_{1}=0$, is the first correction to the density and is not needed below.</p>
+<p>An equivalent way to state the order-$\epsilon^{2}$ content, and the way it is used in practice, is the exact relation between the two slots of the real group:</p>
+<p>$$
+\left(\partial\theta/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta\right\rvert^{2}-\mu^{2}=\epsilon^{2}\left[\frac{1}{\chi}\frac{\partial^{2}\chi}{\partial\tau^{2}}-\frac{\Delta_{y}\chi}{\chi}\right].
+$$</p>
+<p>The mass-shell defect of the exact solution equals $\epsilon^{2}$ times the curvature ratio. The expansion has simply separated the two sides into orders. <strong>That line is the precise statement of the limit</strong>: as $\epsilon\to0$ the defect vanishes at a known rate, and the rate is the quantum potential.</p>
+<h3 id="39-the-ladder">3.9 The Ladder</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>order</th>
+<th>what appears</th>
+<th>equation</th>
+<th>in words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\epsilon^{0}$</td>
+<td>mass shell</td>
+<td>$\left(\partial\theta_{0}/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta_{0}\right\rvert^{2}=\mu^{2}$</td>
+<td>the phase dominates and satisfies Hamilton–Jacobi</td>
+</tr>
+<tr>
+<td>$\epsilon^{1}$</td>
+<td>sub-leading phase</td>
+<td>$\mathcal{V}\!\cdot\!\partial\theta_{1}=0$</td>
+<td>the sub-leading phase is constant along the rays</td>
+</tr>
+<tr>
+<td>$\epsilon^{1}$</td>
+<td>transport</td>
+<td>$\frac{\partial}{\partial\tau}\left(\chi_{0}^{2}\frac{\partial\theta_{0}}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi_{0}^{2}\nabla_{y}\theta_{0}\right)=0$</td>
+<td>the density follows the rays</td>
+</tr>
+<tr>
+<td>$\epsilon^{2}$</td>
+<td>quantum potential</td>
+<td>$\mathcal{V}\!\cdot\!\partial\theta_{2}=\tfrac{1}{2}B_{0}$</td>
+<td>the amplitude's curvature drives the first phase correction</td>
+</tr>
+<tr>
+<td>$\epsilon^{2}$</td>
+<td>first density correction</td>
+<td>$C_{1}=0$</td>
+<td>not needed here</td>
+</tr>
+</tbody>
+</table></div>
+<p>The order-zero and order-one rows are the two equations of the non-quantum limit. They are one order apart, and the reason is structural: the identity's imaginary group carries one explicit factor of $\epsilon$, §3.4. In the textbook WKB treatment of the Schrödinger equation the same thing happens for the same reason: the Hamilton–Jacobi equation is the order-$\hbar^{0}$ statement and the transport equation the order-$\hbar^{1}$ statement.</p>
+<p>A remark on the counting, because two conventions are in circulation and the corpus uses both. If one splits the exact identity into its real and imaginary groups <em>before</em> expanding, the imaginary group is $C=0$ exactly, and its own series begins at $\epsilon^{0}$: $C_{0}=0$. On that counting the transport equation is "order zero" too. The two countings differ by the factor $\epsilon$ in front of $C$ and give the same equations. <strong>This article uses the expansion of the whole display</strong>, in which the mass shell is $\epsilon^{0}$ and the transport equation is $\epsilon^{1}$, because that is the counting in which the small parameter multiplies terms of known size and the bookkeeping can be checked line by line.</p>
+<h2 id="4-order-zero-phase-side-mass-shell-energy-flow">4. Order Zero, Phase Side: Mass Shell, Energy, Flow</h2>
+<h3 id="41-the-mass-shell-as-the-right-triangle-of-the-wave-numbers">4.1 The Mass Shell as the Right Triangle of the Wave Numbers</h3>
+<p>The order-zero equation is $\left(\partial\theta_{0}/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta_{0}\right\rvert^{2}=\mu^{2}$. Reading the scaled derivatives on the wave numbers, §3.2,</p>
+<p>$$
+\partial\theta_{0}/\partial\tau=-\frac{k_{t}^{\prime}}{k_{\Phi}},\qquad
+\nabla_{y}\theta_{0}=\frac{\vec k_{\Phi}}{k_{\Phi}},\qquad
+\mu=\frac{k_{m}}{k_{\Phi}},
+$$</p>
+<p>so the equation is</p>
+<p>$$
+\frac{k_{t}^{\prime\,2}}{k_{\Phi}^{2}}-1=\frac{k_{m}^{2}}{k_{\Phi}^{2}}
+\qquad\Longleftrightarrow\qquad
+k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}.
+$$</p>
+<p>Order zero is the right triangle of §1.2. This is the cleanest place to see that the corpus's wave numbers are not decoration: the equation the limit produces is literally the relation among them. Divided by $k_{m}^{2}$ it reads $\gamma^{2}=1+k_{\Phi}^{2}/k_{m}^{2}$; divided by $k_{\Phi}^{2}$ it reads $1/\beta^{2}-1=1/(\gamma^{2}\beta^{2})$, which at $\beta=0.01$ is $10\,000-1=9999$ exactly, §10.2.</p>
+<p>The mass is not produced by the limit. $k_{m}$ was in the operator from §2.1, and order zero produces the relation the mass satisfies. "The mass is recovered, not derived" is this observation.</p>
+<h3 id="42-energy-momentum-and-the-wave-number-element">4.2 Energy, Momentum, and the Wave-Number Element</h3>
+<p>Define</p>
+<p>$$
+E:=-\partial S_{0}/\partial t=-\hbar\,\partial\theta_{\mathrm{pha},0}/\partial t,\qquad
+\vec p:=\nabla S_{0}=\hbar\nabla\theta_{\mathrm{pha},0}.
+$$</p>
+<p>The definitions are forced by the plane wave: its phase is $\vec k_{\Phi}\cdot\vec r-\omega t$, so $\nabla\theta_{\mathrm{pha}}=\vec k_{\Phi}$ and $\partial\theta_{\mathrm{pha}}/\partial t=-\omega$, and multiplying by $\hbar$ gives momentum and energy. The sign of $E$ is the corpus's convention, chosen so that a wave travelling in $+z$ with phase $kz-\omega t$ carries positive energy.</p>
+<p>The two assemble into an element of $\mathbb{B}_{\Phi}$,</p>
+<p>$$
+\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}=i\,k_{t}^{\prime}\,e_{t}+\vec k_{\Phi},\qquad
+\left\langle\tilde K_{\Phi}\right\rangle_{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_{m}^{2},
+$$</p>
+<p>so the mass shell is the statement that the norm of the wave-number element is $-k_{m}^{2}$. Same triangle, same equation, in the algebra's own letters.</p>
+<p>The dispersion follows from the triangle:</p>
+<p>$$
+\gamma=\frac{1}{\sqrt{1-\beta^{2}}},\qquad E=\gamma mc^{2},\qquad
+\left\lvert\vec p\right\rvert=\gamma m\left\lvert\vec v\right\rvert,\qquad
+\frac{k_{t}^{\prime}}{k_{\Phi}}=\frac{1}{\beta},\qquad \frac{k_{\Phi}}{k_{m}}=\gamma\beta .
+$$</p>
+<p>The last ratio is the shape of the state, and it is the axis of every table in §8.</p>
+<h3 id="43-the-flow">4.3 The Flow</h3>
+<p>Order zero is a Hamilton–Jacobi equation, so its characteristics are the rays. Two routes give the same velocity, and both are worth having.</p>
+<p>From the Hamiltonian. The mass shell $\left(\partial S/\partial t\right)^{2}/c^{2}-\lvert\nabla S\rvert^{2}=m^{2}c^{2}$ is the HJ equation of $H=c\sqrt{\lvert\vec p\rvert^{2}+m^{2}c^{2}}$, so</p>
+<p>$$
+\frac{d\vec r}{dt}=\frac{\partial H}{\partial\vec p}=\frac{c^{2}\vec p}{E},\qquad
+\frac{d\vec p}{dt}=-\nabla H=0
+$$</p>
+<p>for a free particle.</p>
+<p>From the characteristics, without a Hamiltonian. The characteristic system of $\left(\partial\theta_{0}/\partial\tau\right)^{2}-\lvert\nabla_{y}\theta_{0}\rvert^{2}=\mu^{2}$ is generated by $\mathcal{V}=\left(q_{\tau},-q_{y}\right)$ of §3.5, and the ratio of its components is the ratio of $c\,dt$ to $d\vec r$:</p>
+<p>$$
+\frac{d\vec r}{dt}=\frac{-c\,q_{y}}{q_{\tau}}=\frac{c^{2}\nabla\theta_{\mathrm{pha}}}{-\partial\theta_{\mathrm{pha}}/\partial t}=\frac{c^{2}\vec p}{E}.
+$$</p>
+<p>Same answer, and this route needs nothing but the equation. That matters when a gauge field is present and the Hamiltonian is not immediately available; §8 does the same computation with the potentials in.</p>
+<p>The flow is not $\vec p/m$. It is $\vec p/m$ only after a second truncation, on $\beta$, which is a different limit; §4.5.</p>
+<h3 id="44-two-kinds-of-momentum-and-which-one-moves">4.4 Two Kinds of Momentum, and Which One Moves</h3>
+<p>$\nabla S$ is the canonical momentum: it is what the phase gives, and it is the object in the mass shell when the gauge field is written in. $\vec\pi=\nabla S-ϙ\vec A$ is the mechanical momentum: it is what the force acts on and what the velocity is built from, §8.2.</p>
+<p>The distinction is not bookkeeping. $\vec\pi$ is gauge invariant and $\nabla S$ is not, so any statement about the motion of the particle must be a statement about $\vec\pi$, and any statement about the phase must be a statement about $\nabla S$. The commonest sign error in textbook derivations of the Lorentz force from a Lagrangian comes from putting $\nabla S$ where $\vec\pi$ belongs; §8.4 step 5 avoids it by construction.</p>
+<h3 id="45-the-second-truncation-on-math432">4.5 The Second Truncation, on $\beta$</h3>
+<p>The relativistic flow is $\vec v=c^{2}\vec\pi/\mathcal E$. The Newtonian flow is $\vec v=\vec\pi/m$. Passing between them is a truncation on $\beta$, and it is not the limit of this article.</p>
+<p>The two errors are exact and opposite in sign:</p>
+<p>$$
+\frac{c^{2}\vec\pi/\mathcal E}{\vec\pi/m}=\gamma,\qquad
+\frac{\left(\gamma-1\right)mc^{2}}{\left\lvert\vec\pi\right\rvert^{2}/2m}=\frac{2\left(\gamma-1\right)}{\gamma^{2}\beta^{2}}=\frac{2}{\gamma+1}.
+$$</p>
+<p>The Newtonian velocity is too small by $\gamma$ and the Newtonian kinetic energy too large by $\left(\gamma+1\right)/2$. At $\beta=0.01$ these are $5.0\times10^{-5}$ and $2.5\times10^{-5}$: same order, opposite sign. That signature is what a truncated dispersion relation looks like. It differs in kind from the eikonal error, which is an operator and not a number; §6.4.</p>
+<p>The two limits must not be merged. $\epsilon$ can be driven to zero at fixed $\beta$ by choosing a smoother state; $\beta$ can be driven to zero only by slowing the particle. One is a statement about the wave, the other about the state's speed, and §8.5 shows that the order in which they are taken matters at the first correction.</p>
+<h2 id="5-order-one-amplitude-side-transport">5. Order One, Amplitude Side: Transport</h2>
+<h3 id="51-the-continuity-equation">5.1 The Continuity Equation</h3>
+<p>The imaginary slot at order $\epsilon^{1}$ is</p>
+<p>$$
+\frac{\partial}{\partial\tau}\left(\chi_{0}^{2}\frac{\partial\theta_{0}}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi_{0}^{2}\nabla_{y}\theta_{0}\right)=0 .
+$$</p>
+<p>Undoing the scaling, and writing $\rho:=A_{\mathrm{mhv}}^{2}$,</p>
+<p>$$
+\frac{\partial}{\partial t}\left(\frac{\rho}{c^{2}}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)+\nabla\cdot\left(\rho\nabla\theta_{\mathrm{pha}}\right)=0
+\qquad\Longleftrightarrow\qquad
+\frac{\partial}{\partial t}\left(\frac{\rho\,E}{c^{2}}\right)+\nabla\cdot\left(\rho\,\vec p\right)=0 .
+$$</p>
+<p>This is a conservation law for a density $\rho$ carried by the current $\left(\rho E/c,\rho\vec p\right)$. It is linear in $\rho$ and first order in its derivatives, and its coefficients are built from the order-zero phase. So the phase must be solved first and the density transported afterwards: one-way coupling.</p>
+<p>The square, and not the amplitude, is what appears. Nothing was inserted: §2.5 multiplied by $A_{\mathrm{mhv}}^{2}$ and divided again, and what survived is the square. A first-order conservation law for a real field on a second-order equation always carries the square, and the derivation shows the mechanism rather than asserting the result.</p>
+<h3 id="52-the-density-the-current-and-the-four-velocity">5.2 The Density, the Current, and the Four-Velocity</h3>
+<p>In the mechanical letters $\vec p=\gamma m\vec v$ and $E=\gamma mc^{2}$, so</p>
+<p>$$
+j^{0}=\frac{\rho E}{c}=\rho\,\gamma mc,\qquad
+\vec j=\rho\,\vec p=\rho\,\gamma m\vec v,\qquad
+j_{\mu}=\rho\,m\,u_{\mu},\qquad u_{\mu}=\gamma\left(c,-\vec v\right),
+$$</p>
+<p>and the conservation law is $\frac{\partial}{\partial t}\left(\rho\gamma\right)+\nabla\cdot\left(\rho\gamma\vec v\right)=0$. The $\gamma$ is not decoration: it is what makes the current a four-vector. The integrated $j^{0}$ over a Cauchy surface is conserved, and it is the number of excitations in the region.</p>
+<h3 id="53-the-amplitude-in-a-steady-beam">5.3 The Amplitude in a Steady Beam</h3>
+<p>For a steady one-dimensional flow, $\rho\,\gamma mv$ is constant along the ray, so</p>
+<p>$$
+\rho\propto\frac{1}{\gamma v},\qquad
+A_{\mathrm{mhv}}\propto\frac{1}{\sqrt{\gamma v}} .
+$$</p>
+<p>A bundle narrows where the flow speeds up and the amplitude is the inverse square root of $\gamma v$. In the non-relativistic case the $\gamma$ goes and one recovers $A_{\mathrm{mhv}}\propto1/\sqrt{v}$: the cross-section times the speed is constant, which is what flux conservation says.</p>
+<p>$\hbar$ does not appear in this answer and cannot: the amplitude is fixed by a flux condition, and the flux is fixed by the phase. An amplitude that came out proportional to $\hbar$ would signal an error somewhere upstream. That is a useful check on any semiclassical amplitude, and it is one of the reasons for keeping the amplitude free of explicit constants.</p>
+<h3 id="54-the-charge">5.4 The Charge</h3>
+<p>Multiplying by $ϙ$ gives $\frac{\partial}{\partial t}\left(ϙ\rho\gamma\right)+\nabla\cdot\left(ϙ\rho\gamma\vec v\right)=0$, so the charge current is conserved by the same equation that conserves the number current. The two conservations are not independent: the model has one continuity equation, and the charge is a label on the carriers. The consequence is that $ϙ$ is an input and cannot be derived from this equation; §9.3.</p>
+<p>With the potentials in, the conserved current is built from the mechanical four-momentum:</p>
+<p>$$
+\frac{\partial}{\partial t}\left(\frac{\rho\,\mathcal E}{c^{2}}\right)+\nabla\cdot\left(\rho\,\vec\pi\right)=0,\qquad
+\mathcal E=E-ϙ\phi,\qquad \vec\pi=\nabla S-ϙ\vec A .
+$$</p>
+<p>This is the gauge-invariant form and the one to use with a field. Note what did not change: the form of the equation is invariant under minimal coupling, and only the current changed. That is the strongest evidence that this equation is structural and not an artifact of the expansion.</p>
+<h3 id="55-what-the-transport-equation-cannot-do">5.5 What the Transport Equation Cannot Do</h3>
+<p>It cannot fix the phase: it is homogeneous in $\rho$ and its coefficients depend on $\theta_{\mathrm{pha}}$, so it transports a given density on a given congruence and says nothing about which congruence.</p>
+<p>It cannot fix the overall scale: a constant multiplies any solution, and the constant is set by normalisation, which is a statement about the state.</p>
+<p>It cannot survive a constant phase: if $\partial\theta_{\mathrm{pha}}/\partial t=0$ and $\nabla\theta_{\mathrm{pha}}=0$ the equation degenerates to $0=0$. A uniform phase carries no current, so the equation is a constraint that needs the phase to have content.</p>
+<h2 id="6-order-two-the-quantum-potential-and-the-size-of-the-error">6. Order Two: The Quantum Potential, and the Size of the Error</h2>
+<h3 id="61-the-exact-relation-the-orders-come-from">6.1 The Exact Relation the Orders Come From</h3>
+<p>The real group of the identity is exact:</p>
+<p>$$
+\left(\partial\theta/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta\right\rvert^{2}-\mu^{2}
+=\epsilon^{2}\left[\frac{1}{\chi}\frac{\partial^{2}\chi}{\partial\tau^{2}}-\frac{\Delta_{y}\chi}{\chi}\right]
+=-\epsilon^{2}\frac{\Box_{y}\chi}{\chi}.
+$$</p>
+<p>Two readings of this line, and both are used.</p>
+<p>As a statement about solutions: the mass-shell defect of any solution is $\epsilon^{2}$ times the curvature ratio of its amplitude. Nothing was truncated. This is what order zero approximates, and the approximation is the replacement of the right side by zero.</p>
+<p>As a statement about orders: the left side begins at order zero and the right side at order $\epsilon^{2}$, so the order-$\epsilon^{2}$ coefficient of the left side must equal $-\Box_{y}\chi_{0}/\chi_{0}$. That is the equation of §3.8.</p>
+<h3 id="62-the-identification-with-the-quantum-potential">6.2 The Identification With the Quantum Potential</h3>
+<p>Reduce to the non-relativistic case as in §7.5, with $S=-mc^{2}t+\sigma$. The phase equation becomes</p>
+<p>$$
+\partial\sigma/\partial t+\frac{\left\lvert\nabla\sigma\right\rvert^{2}}{2m}+Q=0,\qquad
+Q:=-\frac{\hbar^{2}}{2m}\frac{\Delta A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}},
+$$</p>
+<p>which is the corpus's phase equation with the quantum potential added. The identification is not an analogy: same expression, same coefficient, obtained by the same reduction.</p>
+<p>The size of $Q$ against the kinetic term is the parameter squared, and the computation is one line. The mass cancels between $Q$ and the kinetic term, $\hbar^{2}/m$ against $p^{2}/m$, and what is left is a ratio of $\hbar^{2}$ to $p^{2}$, which is $\lambda_{\Phi}^{2}$ by the definition of $\lambda_{\Phi}$ in §1.3:</p>
+<p>$$
+\frac{\left\lvert Q\right\rvert}{\left\lvert\nabla\sigma\right\rvert^{2}/2m}
+=\frac{\hbar^{2}\left\lvert\Delta A_{\mathrm{mhv}}/A_{\mathrm{mhv}}\right\rvert}{\left\lvert\nabla\sigma\right\rvert^{2}}
+=\lambda_{\Phi}^{2}\left\lvert\frac{\Delta A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}}\right\rvert
+\simeq\frac{\lambda_{\Phi}^{2}}{L^{2}}=\epsilon^{2}.
+$$</p>
+<p>So the quantum potential is suppressed by $\epsilon^{2}$, which is the statement the article is built on. In the scaled letters the same computation is the comparison of the first bracket with the second in §3.3: orders one and $\epsilon^{2}$.</p>
+<h3 id="63-the-error-in-radians">6.3 The Error, in Radians</h3>
+<p>The truncated phase equation drops a term of size $\epsilon^{2}$ times the kinetic scale. To turn that into a phase error, integrate it along a ray of length $L$:</p>
+<p>$$
+\frac{\delta S}{\hbar}=\frac{1}{\hbar}\int\left\lvert Q\right\rvert dt
+=\frac{1}{\hbar}\,\epsilon^{2}\frac{p^{2}}{2m}\frac{L}{v}
+=\epsilon^{2}\frac{p\,L}{2\hbar}
+=\frac{\epsilon^{2}k_{\Phi}L}{2}
+=\frac{\epsilon}{2},
+$$</p>
+<p>using $p=mv$ in the second equality, $p=\hbar k_{\Phi}$ in the fourth, and $k_{\Phi}L=1/\epsilon$ in the last.</p>
+<p>So the error is $\epsilon/2$ radians of phase over the length $L$. The accumulated phase over the same length is $k_{\Phi}L=1/\epsilon$ radians, so the error is the fraction $\epsilon^{2}/2$ of it. At $L=1\ \mathrm{nm}$ that fraction is $7.46\times10^{-4}$; §10.4 tabulates it.</p>
+<p>There is no other error. The truncation does not disturb $E=-\partial S/\partial t$ or $\vec p=\nabla S$; those are definitions and they hold at every order. It does not disturb the transport equation, which is the next order of an exact statement in the other slot, §7.3.</p>
+<h3 id="64-the-error-is-an-operator-not-a-number">6.4 The Error Is an Operator, Not a Number</h3>
+<p>The dropped term contains two derivatives of the amplitude, so its value depends on position, on the sign of the curvature, and on the direction. No single number represents it. By contrast, the error of the $\beta$ truncation is the number $2/(\gamma+1)-1$, bounded, of one sign, monotone on $0\le\beta<1$; §4.5.</p>
+<p>That contrast is the difference between a limit on an element and a limit on a solution. A reader who asks which limit is better is asking to compare a number with an operator, and the question has no answer until a region and a state are named.</p>
+<p>The consequence is that the expansion is not uniform in space. Take one dimension with a Gaussian amplitude, $\chi=e^{-y^{2}/(4\sigma^{2})}$ in scaled units, so that $\epsilon=1/(k_{\Phi}\sigma)$. Then</p>
+<p>$$
+\lambda_{\Phi}^{2}\left\lvert\frac{\chi''}{\chi}\right\rvert
+=\epsilon^{2}\left\lvert\frac{y^{2}}{4}-\frac{1}{2}\right\rvert .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\left\lvert y\right\rvert$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$\sqrt{2}$</th>
+<th>$2$</th>
+<th>$3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the ratio, over $\epsilon^{2}$</td>
+<td>$0.500$</td>
+<td>$0.250$</td>
+<td>$0$</td>
+<td>$0.500$</td>
+<td>$1.750$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The ratio vanishes at $y=\sqrt{2}$, where the Gaussian's curvature changes sign, and grows as $y^{2}$ beyond it. It reaches one at $y\simeq\sqrt{2}/\epsilon$. So for every $\epsilon$, no matter how small, there is a radius beyond which the truncated phase equation fails. The expansion is a local statement, and the semiclassical literature needs uniform approximations for exactly this reason.</p>
+<h3 id="65-caustics">6.5 Caustics</h3>
+<p>At a caustic $\chi$ diverges, $\epsilon$ is not small there, and the expansion fails. The transport equation still holds and gives an infinite density; the ray equation still holds and says the rays have crossed. Together they say the ray picture has ended, which is the correct reading. The ansatz assumed a finite slowly varying amplitude, and a caustic is the boundary of that assumption. Replacing the diverging amplitude by an Airy function near the fold is the uniform approximation, and it is outside this article.</p>
+<h3 id="66-superposition-which-the-limit-refuses">6.6 Superposition, Which the Limit Refuses</h3>
+<p>Two plane waves of wave numbers $k_{\Phi}$ and $k_{\Phi}+\Delta k$ are each semiclassical exactly: each has a constant amplitude, so $\epsilon=0$ for each. Their sum has an envelope of wave number $\Delta k$ and an amplitude whose scale is $L\sim1/\Delta k$, so its parameter is $\epsilon\sim1/(\Delta k\,L)\sim1$.</p>
+<p>The sum of two exact eikonal states is therefore not an eikonal state:</p>
+<p>$$
+\lim\left(\tilde{Ξ}_{1}+\tilde{Ξ}_{2}\right)\neq\lim\tilde{Ξ}_{1}+\lim\tilde{Ξ}_{2},
+$$</p>
+<p>and the difference is the interference term. The limit is not linear and is not defined on a superposition. It is defined on each state separately, and that is enough for a one-particle description but not for the module.</p>
+<h2 id="7-the-two-equations-and-how-one-identity-carries-both">7. The Two Equations, and How One Identity Carries Both</h2>
+<p>This section is the analysis the rest of the article supports. The non-quantum limit is stated as two equations, one for the phase and one for the amplitude. Here is what each is, how the identity produces both, and why one of them is truncated and the other is not.</p>
+<h3 id="71-the-two-equations-as-they-are-usually-stated">7.1 The Two Equations as They Are Usually Stated</h3>
+<p>In the corpus's non-relativistic article:</p>
+<p>$$
+\underbrace{\frac{\partial S}{\partial t}+\frac{\left\lvert\nabla S\right\rvert^{2}}{2m}+V=0}_{\text{phase: Hamilton--Jacobi}},
+\qquad
+\underbrace{\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec v\right)=0,\quad \rho=A_{\mathrm{mhv}}^{2},\quad \vec v=\frac{\nabla S}{m}}_{\text{amplitude: continuity}} .
+$$</p>
+<p>The first is non-linear, first order, and determines one function. The second is linear, first order, and is solved afterwards, because $\vec v$ in it is the gradient of the solution of the first. That one-way coupling is the shape of every eikonal method, and it survives everything below unchanged.</p>
+<p>In this article, from §4.1 and §5.1:</p>
+<p>$$
+\underbrace{\frac{\left(\partial\theta_{\mathrm{pha}}/\partial t\right)^{2}}{c^{2}}-\left\lvert\nabla\theta_{\mathrm{pha}}\right\rvert^{2}=k_{m}^{2}}_{\text{phase}},
+\qquad
+\underbrace{\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)=0}_{\text{amplitude}} .
+$$</p>
+<p>Same pair, in relativistic letters, with $\rho=A_{\mathrm{mhv}}^{2}$ and $\vec v=c^{2}\vec\pi/\mathcal E$ instead of $\nabla S/m$.</p>
+<h3 id="72-where-each-equation-sits-in-the-slots">7.2 Where Each Equation Sits in the Slots</h3>
+<p>The identity has two slots, and they are not a convention: a real number plus a purely imaginary number is zero only if both are zero. The table gives the placement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what</th>
+<th>slot</th>
+<th>order</th>
+<th>equation</th>
+<th>unknown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mass shell</td>
+<td>real</td>
+<td>$\epsilon^{0}$</td>
+<td>$\left(\partial\theta_{0}/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta_{0}\right\rvert^{2}=\mu^{2}$</td>
+<td>$\theta_{0}$, that is the phase</td>
+</tr>
+<tr>
+<td>sub-leading phase</td>
+<td>real</td>
+<td>$\epsilon^{1}$</td>
+<td>$\mathcal{V}\!\cdot\!\partial\theta_{1}=0$</td>
+<td>$\theta_{1}$, frozen along rays</td>
+</tr>
+<tr>
+<td>transport</td>
+<td>imaginary</td>
+<td>$\epsilon^{1}$</td>
+<td>$\frac{\partial}{\partial\tau}\left(\chi_{0}^{2}\frac{\partial\theta_{0}}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi_{0}^{2}\nabla_{y}\theta_{0}\right)=0$</td>
+<td>$\chi_{0}$, that is the density</td>
+</tr>
+<tr>
+<td>quantum potential</td>
+<td>real</td>
+<td>$\epsilon^{2}$</td>
+<td>$\mathcal{V}\!\cdot\!\partial\theta_{2}=\tfrac{1}{2}B_{0}$</td>
+<td>$\theta_{2}$, the phase correction</td>
+</tr>
+</tbody>
+</table></div>
+<p>The phase lives in the real slot and the density in the imaginary slot. That is the structural fact the biquaternionic form makes visible: the two equations of the limit are not two postulates about two functions, they are the two slots of one complex equation. The split into slots is arithmetic, and it needs no averaging, no gauge choice, and no thermodynamic argument.</p>
+<h3 id="73-the-asymmetry-one-slot-is-truncated-the-other-is-not">7.3 The Asymmetry: One Slot Is Truncated, the Other Is Not</h3>
+<p>Look again at the $\epsilon$-form:</p>
+<p>$$
+-\left[\left(\partial\theta/\partial\tau\right)^{2}-\left\lvert\nabla_{y}\theta\right\rvert^{2}-\mu^{2}\right]+\epsilon^{2}\left[\frac{1}{\chi}\frac{\partial^{2}\chi}{\partial\tau^{2}}-\frac{\Delta_{y}\chi}{\chi}\right]+\,i\,\epsilon\,\frac{1}{\chi^{2}}\left[\frac{\partial}{\partial\tau}\left(\chi^{2}\frac{\partial\theta}{\partial\tau}\right)-\nabla_{y}\cdot\left(\chi^{2}\nabla_{y}\theta\right)\right]=0 .
+$$</p>
+<p>The real group has two terms, of orders $\epsilon^{0}$ and $\epsilon^{2}$. Setting the second to zero is an approximation with a computable remainder. The imaginary group has one term, multiplied by an explicit $\epsilon$; since the bracket is zero, the factor is irrelevant to its content and the equation is exact at every order.</p>
+<p>So the mass shell is an approximation and the transport equation is not. This looks like an inconsistency and it is three lines of arithmetic:</p>
+<ol>
+<li>Real equals zero exactly, so the real group is a sum of two terms that cancel. Dropping one leaves a remainder.</li>
+<li>Imaginary equals zero exactly, and the imaginary group is a single term. It is zero, not small, and there is nothing to drop.</li>
+<li>The order labels therefore land differently in the two slots: the phase equation appears at $\epsilon^{0}$ with an $\epsilon^{2}$ remainder, and the transport equation appears at $\epsilon^{1}$ with no remainder of its own kind.</li>
+</ol>
+<p>The practical consequence: the density statement is more robust than the phase statement. A ray calculation whose phase is slightly wrong still transports its density correctly along the slightly wrong rays. This is why eikonal methods survive well past the point where their phase errors would be worrying.</p>
+<h3 id="74-the-algorithm-the-two-slots-encode">7.4 The Algorithm the Two Slots Encode</h3>
+<p>In the order the mathematics imposes:</p>
+<ol>
+<li>Solve the phase equation, $\left(\partial\theta_{0}/\partial\tau\right)^{2}-\lvert\nabla_{y}\theta_{0}\rvert^{2}=\mu^{2}$, on the region. It is a Hamilton–Jacobi equation, so it is solved by a complete integral, with as many constants as coordinates.</li>
+<li>Read the flow off the gradient of that solution, $\vec v=c^{2}\vec\pi/\mathcal E$. The flow is the characteristic field of step 1, so it is not new information.</li>
+<li>Transport $\rho=\chi^{2}$ along that flow with the transport equation. Because the equation is linear and first order, this is an integration along each ray, needing one function on the initial surface.</li>
+</ol>
+<p>Textbook eikonal methods are this list. The gain from deriving it is that the list is now a consequence of one identity, and the place where an approximation enters is a single term, named, with a known size.</p>
+<p>Skipping step 3 gives trajectories without weights: a description of one particle's possible paths, not of a beam. Skipping step 1 is not possible: the transport equation can be solved against any phase, but the density will not be the density of a solution of the wave equation, and the two slots will be inconsistent with the identity they came from.</p>
+<h3 id="75-the-non-relativistic-reduction-of-both">7.5 The Non-Relativistic Reduction of Both</h3>
+<p>The corpus's other limit article is non-relativistic, so the reduction should be displayed for both equations.</p>
+<p>The phase. Separate the rest energy,</p>
+<p>$$
+S=-mc^{2}t+\sigma,\qquad \theta_{\mathrm{pha}}=-k_{m}c\,t+\frac{\sigma}{\hbar},
+$$</p>
+<p>so that $\partial S/\partial t=-mc^{2}+\partial\sigma/\partial t$ and</p>
+<p>$$
+\left(\partial S/\partial t\right)^{2}=m^{2}c^{4}-2mc^{2}\partial\sigma/\partial t+\left(\partial\sigma/\partial t\right)^{2}.
+$$</p>
+<p>The mass shell becomes</p>
+<p>$$
+m^{2}c^{2}-2m\,\partial\sigma/\partial t+\frac{\left(\partial\sigma/\partial t\right)^{2}}{c^{2}}-\left\lvert\nabla\sigma\right\rvert^{2}=m^{2}c^{2},
+$$</p>
+<p>that is</p>
+<p>$$
+\partial\sigma/\partial t+\frac{\left\lvert\nabla\sigma\right\rvert^{2}}{2m}=\frac{\left(\partial\sigma/\partial t\right)^{2}}{2mc^{2}} .
+$$</p>
+<p>The right side is the correction. It is of relative order $\beta^{2}$: $\partial\sigma/\partial t\sim mv^{2}/2$, so the right side is $\sim mv^{4}/(8c^{2})$ against $\lvert\nabla\sigma\rvert^{2}/2m\sim mv^{2}/2$. Dropping it gives the corpus's phase equation, with $V$ absent because no gauge field is coupled yet.</p>
+<p>The amplitude. In the mechanical letters $\partial\theta_{\mathrm{pha}}/\partial t=-E/\hbar$, $\nabla\theta_{\mathrm{pha}}=\vec p/\hbar$, and at leading order in $\beta$, $E\simeq mc^{2}$ and $\vec p\simeq m\vec v$:</p>
+<p>$$
+\frac{\partial}{\partial t}\left(\rho\,m\right)+\nabla\cdot\left(\rho\,m\vec v\right)=0
+\qquad\Longrightarrow\qquad
+\frac{\partial\rho}{\partial t}+\nabla\cdot\left(\rho\vec v\right)=0 .
+$$</p>
+<p>The amplitude equation keeps its form. Its relativistic and non-relativistic versions are the same conservation law written on different currents, which is a further sign that it is structural rather than expanded.</p>
+<p>The two truncations are independent. $\beta$ measures a ratio of the element's own coefficients; $\epsilon$ measures a ratio of the state's two lengths. They commute at leading order and differ at the first correction by a term of order $\beta^{2}\epsilon^{2}$.</p>
+<h3 id="76-one-identity-or-two">7.6 One Identity or Two</h3>
+<p>One identity, two slots, and the pair is the physics.</p>
+<p>The count of objects is worth stating plainly. There is one exact complex identity, §2.5. There are two slots, real and imaginary, §7.2. There are two unknowns, the phase and the density. There is one truncation, in the real slot, §7.3. There is one reparametrisation freedom, at order $\epsilon^{1}$, which fixes the split of §1.1 order by order and is used to set $\theta_{1}=\chi_{1}=0$.</p>
+<p>"Two equations" is the right way to say it because the two slots determine different unknowns and neither determines the other. "One identity" is also right, and stronger, because the two slots are the real and imaginary parts of one complex equality. The coupling between them is not a modelling choice: it is the arithmetic of $\mathbb{C}$. That is the honest claim available here, and it is narrow: not that the corpus derives new physics, but that in this form the two equations of the limit come out of one line, with the truncation isolated in one term whose size is $\epsilon^{2}$.</p>
+<h2 id="8-the-gauge-field-and-the-lorentz-force">8. The Gauge Field, and the Lorentz Force</h2>
+<h3 id="81-the-symbol-of-the-covariant-operator">8.1 The Symbol of the Covariant Operator</h3>
+<p>Act on the ansatz with the covariant operator of §1.6. Because the coupling is central and commutes with the units, the derivative multiplies the ansatz by a symbol:</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\mu}\left(A_{\mathrm{mhv}}e^{i\theta_{\mathrm{pha}}}\xi\right)
+=e^{i\theta_{\mathrm{pha}}}\xi\left(\partial A_{\mathrm{mhv}}/\partial R_{\mu}+A_{\mathrm{mhv}}\,i\left(\partial\theta_{\mathrm{pha}}/\partial R_{\mu}+\frac{ϙ}{\hbar}A_{\mu}\right)\right).
+$$</p>
+<p>The bracket is the only new object: the phase gradient, shifted by the charge times the potential, slot by slot. The shift $\frac{ϙ}{\hbar}A_{\mu}$ has the dimension of a wave number and is left in that form, §1.6.</p>
+<p>The squared equation is then a statement about the norm of that symbol. Its leading part is the symbol of the operator itself,</p>
+<p>$$
+\frac{i}{\hbar}\left(\tilde P_{\Phi}-ϙ\tilde A_{\Phi}\right),
+\qquad
+\tilde P_{\Phi}=i\frac{E}{c}e_{t}+\vec p,\qquad
+\tilde A_{\Phi}=i\frac{\phi}{c}e_{t}-\vec A ,
+$$</p>
+<p>where $\tilde A_{\Phi}$ is written with the temporal entry $A_{t}=i\phi/c$ and the space entries $-\vec A$ because the mechanical combination subtracts the potential. The norm of <em>Norm and Unitary Conventions</em> is $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$, with no signs, so a temporal coefficient that is imaginary contributes a negative square. That single fact is what puts the minus sign in front of the energy and produces the Minkowski signature from a Euclidean-looking sum.</p>
+<h3 id="82-the-coupled-phase-equation">8.2 The Coupled Phase Equation</h3>
+<p>Compute the norm. From $\tilde P_{\Phi}-ϙ\tilde A_{\Phi}$, the temporal coefficient is $i\left(E/c-ϙ\phi/c\right)=-i\,\Pi_{t}/c$ with $\Pi_{t}:=\partial S/\partial t+ϙ\phi$, and the space coefficients are $\pi_{j}:=\partial S/\partial r_{j}-ϙA_{j}$. So</p>
+<p>$$
+\left\langle\tilde P_{\Phi}-ϙ\tilde A_{\Phi}\right\rangle_{\natural}
+=-\frac{\Pi_{t}^{2}}{c^{2}}+\left\lvert\vec\pi\right\rvert^{2}
+=-\frac{1}{c^{2}}\left(\partial S/\partial t+ϙ\phi\right)^{2}+\left\lvert\nabla S-ϙ\vec A\right\rvert^{2}.
+$$</p>
+<p>The squared equation says that the norm of the symbol $i\left(\tilde P_{\Phi}-ϙ\tilde A_{\Phi}\right)/\hbar$ equals $k_{m}^{2}$. That symbol is a wave number: the $1/\hbar$ is the conversion of §1.6 applied to momenta, and it is what lets a momentum be compared with $k_{m}$ at all. Multiplication by the central $i$ flips the sign of the norm, since every squared coefficient changes sign, so</p>
+<p>$$
+\left\langle\frac{i}{\hbar}\left(\tilde P_{\Phi}-ϙ\tilde A_{\Phi}\right)\right\rangle_{\natural}
+=\frac{1}{\hbar^{2}}\left[\frac{\Pi_{t}^{2}}{c^{2}}-\left\lvert\vec\pi\right\rvert^{2}\right]=k_{m}^{2}.
+$$</p>
+<p>This is the mass shell <strong>in wave numbers</strong>, and $\hbar$ is in it for the honest reason: $\Pi_{t}$ and $\vec\pi$ are momenta and $k_{m}$ is a reciprocal length, so a unit has to be divided out before the two sides can be equal. Converting back to mechanical letters costs one multiplication by $\hbar^{2}$, and it is done once here and not again:</p>
+<p>$$
+\boxed{\;\frac{\Pi_{t}^{2}}{c^{2}}-\left\lvert\vec\pi\right\rvert^{2}=m^{2}c^{2}\;}
+$$</p>
+<p>The right side is $m^{2}c^{2}$ and not $\hbar^{2}k_{m}^{2}$: the two are equal by the definition $k_{m}=mc/\hbar$, so writing $\hbar^{2}k_{m}^{2}$ would be a statement about units masquerading as a coefficient. The wave-number form is the one that carries information; the boxed form is the same equation in the units an experiment uses, and the change of units alters nothing but the letter on the right.</p>
+<p>Written out on the phase, and then on $\mathcal E$ and $\vec\pi$, the boxed equation is $\left(1/c^{2}\right)\left(\partial S/\partial t+ϙ\phi\right)^{2}-\left\lvert\nabla S-ϙ\vec A\right\rvert^{2}=m^{2}c^{2}$ and $\mathcal E^{2}/c^{2}-\left\lvert\vec\pi\right\rvert^{2}=m^{2}c^{2}$, with</p>
+<p>$$
+\Pi_{t}=\partial S/\partial t+ϙ\phi,\qquad \vec\pi=\nabla S-ϙ\vec A,\qquad \mathcal E:=-\Pi_{t}=E-ϙ\phi .
+$$</p>
+<p>This is the mass shell written on the mechanical rather than the canonical variables, and that is the content of the section: the canonical momentum is what the phase gives, the mechanical momentum is what the force acts on.</p>
+<p>The signs check in one line: $\Pi_{t}=-E+ϙ\phi=-\mathcal E$, so $\vec v=-c^{2}\vec\pi/\Pi_{t}=c^{2}\vec\pi/\mathcal E$.</p>
+<p>The amplitude equation, coupled, is §5.4: $\frac{\partial}{\partial t}\left(\rho\mathcal E/c^{2}\right)+\nabla\cdot\left(\rho\vec\pi\right)=0$.</p>
+<h3 id="83-gauge-invariance-forces-the-pairing">8.3 Gauge Invariance Forces the Pairing</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>convention</th>
+<th>$S\mapsto$</th>
+<th>$\phi\mapsto$</th>
+<th>$\vec A\mapsto$</th>
+<th>invariant pair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>as computed</td>
+<td>$S-ϙ\chi$</td>
+<td>$\phi-\partial\chi/\partial t$</td>
+<td>$\vec A+\nabla\chi$</td>
+<td>$\left(\partial S/\partial t-ϙ\phi\right)$, $\left(\nabla S+ϙ\vec A\right)$</td>
+</tr>
+<tr>
+<td>after $-ϙ\toϙ$</td>
+<td>$S-ϙ\chi$</td>
+<td>$\phi+\partial\chi/\partial t$</td>
+<td>$\vec A-\nabla\chi$</td>
+<td>$\left(\partial S/\partial t+ϙ\phi\right)$, $\left(\nabla S-ϙ\vec A\right)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The relative sign is not free. In either row the two shifts must have opposite signs so that one gauge function cancels both. The alternative, with both shifts the same sign, fails by $-2ϙ\,\partial\chi/\partial R_{\mu}$ and is not a symmetry. Which row is used is free, and it is the sign convention for the charge.</p>
+<p>The published article computes the first row and then writes $-ϙ$ for $ϙ$ so that the kinetic momentum has ordinary sign. This article follows it and uses the second row. A reader comparing an intermediate display carrying $\phi$ with a final one carrying $-\phi$ has met this relabelling, not an error.</p>
+<p>The gauge pairing is therefore fixed by the potential's four-vector structure, and the coupled mass shell of §8.2 is its consequence.</p>
+<h3 id="84-the-lorentz-force">8.4 The Lorentz Force</h3>
+<p>Start from the coupled mass shell, which is the order-zero equation with the potentials in:</p>
+<p>$$
+\frac{\Pi_{t}^{2}}{c^{2}}-\sum_{j}\pi_{j}^{2}=m^{2}c^{2}.
+$$</p>
+<p>Step 1. Differentiate with respect to the coordinate $r_{i}$. The coefficients are constant, so</p>
+<p>$$
+\frac{2\Pi_{t}}{c^{2}}\partial\Pi_{t}/\partial r_{i}-2\sum_{j}\pi_{j}\partial\pi_{j}/\partial r_{i}=0
+\qquad\Longrightarrow\qquad
+\frac{\Pi_{t}}{c^{2}}\partial\Pi_{t}/\partial r_{i}=\sum_{j}\pi_{j}\partial\pi_{j}/\partial r_{i}.
+$$</p>
+<p>Step 2. Write the two derivatives out: $\partial\Pi_{t}/\partial r_{i}=\partial^{2}S/\partial r_{i}\partial t+ϙ\partial\phi/\partial r_{i}$ and $\partial\pi_{j}/\partial r_{i}=\partial^{2}S/\partial r_{i}\partial r_{j}-ϙ\partial A_{j}/\partial r_{i}$.</p>
+<p>Step 3. Replace the mixed derivatives of $S$ by derivatives of $\vec\pi$. From $\pi_{i}=\partial S/\partial r_{i}-ϙA_{i}$,</p>
+<p>$$
+\partial\pi_{i}/\partial t=\partial^{2}S/\partial t\partial r_{i}-ϙ\partial A_{i}/\partial t
+\;\Longrightarrow\;
+\partial^{2}S/\partial r_{i}\partial t=\partial\pi_{i}/\partial t+ϙ\partial A_{i}/\partial t,
+$$</p>
+<p>and from $\pi_{j}=\partial S/\partial r_{j}-ϙA_{j}$, differentiated with respect to $r_{i}$ and using $\partial^{2}S/\partial r_{i}\partial r_{j}=\partial^{2}S/\partial r_{j}\partial r_{i}$,</p>
+<p>$$
+\partial\pi_{j}/\partial r_{i}=\partial\pi_{i}/\partial r_{j}+ϙ\partial A_{i}/\partial r_{j}-ϙ\partial A_{j}/\partial r_{i}.
+$$</p>
+<p>The equality of the mixed derivatives is the first cancellation: it removes the second derivatives of the phase, and it holds because $\nabla S$ is a gradient.</p>
+<p>Step 4. Substitute into step 1:</p>
+<p>$$
+\frac{\Pi_{t}}{c^{2}}\left(\partial\pi_{i}/\partial t+ϙ\partial A_{i}/\partial t+ϙ\partial\phi/\partial r_{i}\right)
+=\sum_{j}\pi_{j}\partial\pi_{i}/\partial r_{j}+ϙ\sum_{j}\pi_{j}\left(\partial A_{i}/\partial r_{j}-\partial A_{j}/\partial r_{i}\right).
+$$</p>
+<p>Step 5. Use the flow. Since $\Pi_{t}=-\mathcal E=-\gamma mc^{2}$ and $\pi_{j}=\gamma mv_{j}$,</p>
+<p>$$
+\frac{c^{2}}{\Pi_{t}}\pi_{j}=-v_{j}
+\qquad\Longrightarrow\qquad
+\sum_{j}\pi_{j}\partial\pi_{i}/\partial r_{j}=-\frac{\Pi_{t}}{c^{2}}\sum_{j}v_{j}\partial\pi_{i}/\partial r_{j}.
+$$</p>
+<p>This is the second cancellation, and the only place where the velocity enters. Without it one has a relation among fields, not an equation of motion.</p>
+<p>Step 6. Divide by $\Pi_{t}/c^{2}$ and use the same flow relation in the last term:</p>
+<p>$$
+\partial\pi_{i}/\partial t+ϙ\partial A_{i}/\partial t+ϙ\partial\phi/\partial r_{i}
+=-\sum_{j}v_{j}\partial\pi_{i}/\partial r_{j}-ϙ\sum_{j}v_{j}\left(\partial A_{i}/\partial r_{j}-\partial A_{j}/\partial r_{i}\right).
+$$</p>
+<p>Step 7. Identify the cross product. With $B_{k}=\sum_{l,m}\varepsilon_{klm}\partial A_{m}/\partial r_{l}$ and $\sum_{k}\varepsilon_{ijk}\varepsilon_{klm}=\delta_{il}\delta_{jm}-\delta_{im}\delta_{jl}$,</p>
+<p>$$
+\left(\vec v\times\vec B\right)_{i}=\sum_{j,k}\varepsilon_{ijk}v_{j}B_{k}
+=\sum_{j,l,m}\varepsilon_{ijk}\varepsilon_{klm}v_{j}\frac{\partial A_{m}}{\partial r_{l}}
+=\sum_{j}v_{j}\left(\frac{\partial A_{j}}{\partial r_{i}}-\frac{\partial A_{i}}{\partial r_{j}}\right)
+=-\sum_{j}v_{j}\left(\frac{\partial A_{i}}{\partial r_{j}}-\frac{\partial A_{j}}{\partial r_{i}}\right).
+$$</p>
+<p>Step 8. Collect. The left side plus the first term of the right side is the material derivative, and the remaining potential terms are $ϙ\left(-\partial\phi/\partial r_{i}-\partial A_{i}/\partial t\right)=ϙE_{i}$ with $\vec E=-\nabla\phi-\partial\vec A/\partial t$:</p>
+<p>$$
+\boxed{\;\frac{d\vec\pi}{dt}=ϙ\left(\vec E+\vec v\times\vec B\right),\qquad \vec\pi=\gamma m\vec v\;}
+$$</p>
+<p>Two cancellations, both named, and nothing else. No spin, no approximation beyond the truncation already made in the phase equation, and no use of the amplitude equation at all. The force follows from order zero alone: <strong>this is the answer to whether the Lorentz force is in the identity, and it is yes, in the first bracket.</strong></p>
+<p>The error is inherited from the phase equation, so the force holds to relative accuracy $\epsilon^{2}$. The $\beta$ limit is not taken: $\vec\pi=\gamma m\vec v$ is relativistic, and the Newtonian force needs the second truncation of §4.5.</p>
+<h3 id="85-what-the-force-is-and-is-not">8.5 What the Force Is and Is Not</h3>
+<p>It is exact given the phase equation, and the phase equation holds to order $\epsilon^{2}$.</p>
+<p>It is a statement about $\vec\pi$, not about $\nabla S$. Writing $\vec p$ on the left loses $ϙ\vec A$ and produces a spurious $ϙ\partial\vec A/\partial t$; that is the standard sign error.</p>
+<p>It is not a force on a spin. The magnetic moment, the Thomas precession and $g=2$ are not here and cannot be: the equation is the square of a central operator, §9.1.</p>
+<p>It is not the Newtonian force. $m\ddot{\vec r}=ϙ\left(\vec E+\vec v\times\vec B\right)$ needs $\vec\pi\to m\vec v$, §4.5.</p>
+<h2 id="9-what-the-identity-does-not-contain">9. What the Identity Does Not Contain</h2>
+<h3 id="91-spin-and-chirality">9.1 Spin and Chirality</h3>
+<p>$\Box$ is scalar and $A_{\mathrm{mhv}}$, $\theta_{\mathrm{pha}}$ are central, so the identity involves no unit but $e_{t}$. Write the spinor as $\xi=\sum_{\mu}s_{\mu}e_{\mu}$. The identity holds for every choice of the four coefficients, because $\xi$ cancelled in §2.2 and no line of §2.3 to §2.5 ever touched it. So order zero does not select a polarisation, does not rotate one, and does not see one. This is exact, not approximate.</p>
+<p><strong>The reason, in one line.</strong> What multiplies the wave at leading order is $i\tilde K_{\Phi}$, and the mass shell is the statement that its norm is a scalar, $\left\langle\tilde K_{\Phi}\right\rangle_{\natural}=-k_{m}^{2}$ (§4.2). A central scalar commutes with every element, so it cannot act on $\xi$: there is nothing for the spin to couple to in a display whose every factor is central. The spin is therefore an order-$\epsilon$ effect by construction, not by neglect.</p>
+<p><strong>Where the spin actually is.</strong> Two places, both outside this identity.</p>
+<p>In the unsquared pair,</p>
+<p>$$
+\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_{m}\tilde{Ξ}_{\mathrm{sp},L},\qquad
+\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m}\tilde{Ξ}_{\mathrm{sp},R},
+$$</p>
+<p>the leading order relates the halves by an invertible momentum-dependent map, $i\tilde K_{\Phi}\xi_{R}=k_{m}\xi_{L}$, which acts on the spinor index and is where the chirality lives. Squaring it away is the trade of §2.1.</p>
+<p>In the covariant square of §1.6, the two orderings of the components stop commuting, and the failure is exactly the curvature term: $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_{\mu}\left(\tilde\nabla_{\mathrm{gco},\mu}\right)^{2}+\frac{i\,ϙ}{\hbar}\tilde F$. The identity of §2.5 is the square of the <em>free</em> gradient with the potentials promoted into the phase gradient, so it carries the coupling linearly and the commutator does not arise in it at all. That is why $\tilde F$ is declared absent in §1.6 and why the spin cannot be recovered here: the term that carries it is a term of the operator that this article never squares.</p>
+<p>What is lost, itemised: the magnetic moment and the value of $g$; the Thomas precession; the spin transport equation along a ray; precession in a curved background. The companion locates the first of them at order one, as $-\frac{ϙ}{m}\sum_{\eta}\tilde S_{\Psi,\eta}B_{\eta}$, which is $g=2$; this article does not reproduce it, and a reader who tries to obtain it from the identity of §2.5 will produce a term with no coefficient to fix it.</p>
+<h3 id="92-the-sign-of-the-energy">9.2 The Sign of the Energy</h3>
+<p>$\left(\partial\theta_{\mathrm{pha}}/\partial t\right)^{2}$ cannot distinguish $E$ from $-E$, so the identity describes both signs on the same footing and says nothing about which is the particle. The pair's two lines are not symmetric under that flip; the square is. The antiparticle content is in the pair, and any statement about pair creation is outside this article.</p>
+<h3 id="93-the-charge">9.3 The Charge</h3>
+<p>$ϙ$ enters only where it is inserted, through the covariant derivative of §1.6. The identity does not determine it, quantise it, or relate it to anything. It can describe a particle of any charge, including zero, and the Lorentz force of §8.4 carries $ϙ$ as a parameter. The identity is a kinematic statement about a charged particle, not a theory of charge.</p>
+<h3 id="94-the-curvature-coupling-math705">9.4 The Curvature Coupling $\tilde F$</h3>
+<p>Gauging the squared operator adds a term, §1.6. The $\tilde F$ term is the second-order spin coupling and it is absent here, because the identity is the square of the free gradient with the potentials inserted on the phase. A reader who wants spin-orbit coupling must work from the gauged square; the coefficient is fixed by the corpus's convention for $\tilde F$.</p>
+<h3 id="95-no-state">9.5 No State</h3>
+<p>A ray is a congruence of curves and a density is a function on them. Neither is an element of the module. So the limit has no image object, and "the classical limit of $\tilde{Ξ}_{\mathrm{sp}}$" is not defined as an element. What is defined is the pair $\left(\theta_{\mathrm{pha}},A_{\mathrm{mhv}}\right)$, which is a section of the ansatz and not a state.</p>
+<p>The corpus's reading of the divide is a count of partitions: two projective measurements make a case quantum, one makes it classical. A superposition of two rays is one excitation across two modes, so two partitions; a single ray is one partition carrying the excitation with no second to sort. The limit destroys the two-partition cases, §6.6, and leaves the one-partition ones. That is the precise sense in which the limit is non-quantum: not that wave phenomena disappear, but that the second partition has nowhere to live.</p>
+<p>The mathematics alone does not settle the question, and the article does not pretend otherwise: classical optics performs the same passage from a wave to a ray, and nobody calls classical optics quantum mechanics before the passage. The mathematics says "short wavelength". The count says "one partition". The corpus's claim is the second, and the identity is what makes the first available.</p>
+<h3 id="96-table-of-the-omissions">9.6 Table of the Omissions</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>in the pair?</th>
+<th>in the square?</th>
+<th>where it appears</th>
+<th>recoverable here?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mass shell</td>
+<td>yes</td>
+<td>yes</td>
+<td>real slot, order zero</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>flow and Lorentz force</td>
+<td>yes</td>
+<td>yes</td>
+<td>real slot, order zero</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>density and transport</td>
+<td>yes</td>
+<td>yes</td>
+<td>imaginary slot, order one</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>quantum potential</td>
+<td>yes</td>
+<td>yes</td>
+<td>real slot, order two</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>chirality, $g=2$</td>
+<td>yes</td>
+<td>no</td>
+<td>the pair's leading map</td>
+<td>no</td>
+</tr>
+<tr>
+<td>sign of $E$</td>
+<td>yes</td>
+<td>no</td>
+<td>the pair</td>
+<td>no</td>
+</tr>
+<tr>
+<td>curvature coupling $\tilde F$</td>
+<td>yes</td>
+<td>only if gauged before squaring</td>
+<td>the gauged square</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the value of $ϙ$</td>
+<td>input</td>
+<td>input</td>
+<td>the covariant derivative</td>
+<td>no</td>
+</tr>
+<tr>
+<td>a state</td>
+<td>no</td>
+<td>no</td>
+<td>nowhere</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10-the-numbers">10. The Numbers</h2>
+<h3 id="101-the-four-numbers">10.1 The Four Numbers</h3>
+<p>For an electron at $\beta=0.01$, with $m=9.109\,383\,7015\times10^{-31}\ \mathrm{kg}$, $c=2.997\,924\,58\times10^{8}\ \mathrm{m\,s^{-1}}$ and $\hbar=1.054\,571\,817\times10^{-34}\ \mathrm{J\,s}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>number</th>
+<th>definition</th>
+<th>value</th>
+<th>what it fixes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k_{m}$</td>
+<td>$mc/\hbar$</td>
+<td>$2.589\,605\,076\times10^{12}\ \mathrm{m^{-1}}$</td>
+<td>the mass term, the range of the pair</td>
+</tr>
+<tr>
+<td>$\lambda_{m}$</td>
+<td>$1/k_{m}$</td>
+<td>$386.159\ \mathrm{fm}$</td>
+<td>the one-particle length</td>
+</tr>
+<tr>
+<td>$k_{\Phi}$</td>
+<td>$\gamma\beta k_{m}$</td>
+<td>$2.589\,734\,566\times10^{10}\ \mathrm{m^{-1}}$</td>
+<td>the phase length, the ray's wavelength</td>
+</tr>
+<tr>
+<td>$\lambda_{\Phi}$</td>
+<td>$1/k_{\Phi}$</td>
+<td>$38.614\ \mathrm{pm}$</td>
+<td>the reduced phase wavelength</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>$1/\sqrt{1-\beta^{2}}$</td>
+<td>$1.000\,050\,003\,75$</td>
+<td>the boost factor</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>$k_{m}/k_{\Phi}=1/(\gamma\beta)$</td>
+<td>$99.995$</td>
+<td>the shape of the state</td>
+</tr>
+</tbody>
+</table></div>
+<p>$\mu^{2}=9999.000$. The two lengths differ by $\mu$: $\lambda_{\Phi}=\mu\lambda_{m}$, and the ratio is what separates the classicality length from the one-particle length.</p>
+<h3 id="102-order-zero-numerically">10.2 Order Zero, Numerically</h3>
+<p>On shell, with $\beta=0.01$,</p>
+<p>$$
+\frac{1}{\beta^{2}}-1-\frac{1}{\gamma^{2}\beta^{2}}=10\,000-1-9999=0 .
+$$</p>
+<p>The computed residual is $1.6\times10^{-27}$, which is round-off at thirty digits. The identity is exact: $1/\beta^{2}-1=\left(1-\beta^{2}\right)/\beta^{2}=1/(\gamma^{2}\beta^{2})$.</p>
+<h3 id="103-the-parameter-on-both-sides-of-the-boundary">10.3 The Parameter on Both Sides of the Boundary</h3>
+<p>The boundary is at $L=\lambda_{\Phi}=38.614\ \mathrm{pm}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$L$</th>
+<th>$\epsilon=\lambda_{\Phi}/L$</th>
+<th>$\epsilon^{2}$</th>
+<th>$\lambda_{m}/L$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1\ \mathrm{pm}$</td>
+<td>$38.614$</td>
+<td>$1.491\times10^{3}$</td>
+<td>$0.386$</td>
+<td>$\epsilon\gg1$: no ray picture, the expansion fails</td>
+</tr>
+<tr>
+<td>$38.614\ \mathrm{pm}$</td>
+<td>$1.000$</td>
+<td>$1.000$</td>
+<td>$1.00\times10^{-2}$</td>
+<td>the boundary</td>
+</tr>
+<tr>
+<td>$1\ \mathrm{nm}$</td>
+<td>$3.8614\times10^{-2}$</td>
+<td>$1.491\times10^{-3}$</td>
+<td>$3.862\times10^{-4}$</td>
+<td>$\epsilon\ll1$: holds, dropped term at $1.5\times10^{-3}$ of the scale</td>
+</tr>
+<tr>
+<td>$1\ \mathrm{\mu m}$</td>
+<td>$3.8614\times10^{-5}$</td>
+<td>$1.491\times10^{-9}$</td>
+<td>$3.862\times10^{-7}$</td>
+<td>holds comfortably</td>
+</tr>
+<tr>
+<td>$52.9\ \mathrm{pm}$ (the Bohr radius)</td>
+<td>$0.7299$</td>
+<td>$0.5328$</td>
+<td>$7.30\times10^{-3}$</td>
+<td>borderline: $\epsilon^{2}$ is not small, the limit is failing</td>
+</tr>
+</tbody>
+</table></div>
+<p>The $\lambda_{m}/L$ row is $\mu$ times smaller than the $\epsilon$ row, at every length, because $\lambda_{\Phi}=\mu\lambda_{m}$. That ratio is why the two must not be used interchangeably: taking $\lambda_{m}/L$ as the classicality parameter puts the boundary at $386\ \mathrm{fm}$ instead of $38.6\ \mathrm{pm}$, two and a half orders of magnitude too small, and declares the limit dead for atoms when it is merely marginal. The two columns are two lengths in the end, which is the point: the classicality parameter is the phase length over $L$, not the mass length over $L$.</p>
+<p>The atomic row is the honest one. At $\beta=0.01$ an atomic wave function has $\epsilon=0.73$, so $\epsilon^{2}=0.53$ and the quantum potential is not a correction. At $\beta=0.5$ the same wave function has $\lambda_{\Phi}=0.669\ \mathrm{pm}$ and $\epsilon=1.26\times10^{-2}$, so $\epsilon^{2}=1.6\times10^{-4}$ and the limit holds. Both statements are about the state, not about the size of the system.</p>
+<h3 id="104-the-error-in-radians">10.4 The Error in Radians</h3>
+<p>The relative phase error is $\epsilon^{2}/2$, §6.3:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$L$</th>
+<th>$\epsilon^{2}/2$</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1\ \mathrm{nm}$</td>
+<td>$7.46\times10^{-4}$</td>
+<td>less than a milliradian per radian</td>
+</tr>
+<tr>
+<td>$1\ \mathrm{\mu m}$</td>
+<td>$7.46\times10^{-10}$</td>
+<td>unmeasurable</td>
+</tr>
+<tr>
+<td>$52.9\ \mathrm{pm}$</td>
+<td>$0.266$</td>
+<td>a quarter radian per radian: the limit has failed</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="105-the-macroscopic-end">10.5 The Macroscopic End</h3>
+<p>The Earth in its orbit has $\left\lvert\vec p\right\rvert=1.78\times10^{29}\ \mathrm{kg\,m\,s^{-1}}$, so $k_{\Phi}=1.688\times10^{63}\ \mathrm{m^{-1}}$, and over $L=1\ \mathrm{AU}=1.496\times10^{11}\ \mathrm{m}$ the parameter is $\epsilon=4.0\times10^{-75}$.</p>
+<p>The limit is true and empty there. The phase length reaches the Planck length at $\left\lvert\vec p\right\rvert=6.52\ \mathrm{kg\,m\,s^{-1}}$, beyond which the criterion holds where the model cannot resolve. A limit that holds everywhere the model fails is not evidence for the model.</p>
+<h2 id="11-what-was-checked">11. What Was Checked</h2>
+<h3 id="111-method">11.1 Method</h3>
+<p>The identity of §2.5 was verified on a scalar reduction in one time and one space dimension, with $A_{\mathrm{mhv}}$ and $\theta_{\mathrm{pha}}$ arbitrary real functions. That is sufficient for the four-component statement, because every unit in the identity is $e_{t}$ and $\Box$ is central: the components separate and the scalar check applies to each.</p>
+<p>The $\epsilon$-form of §3.3 was verified as an identity in the scaled variables, by applying $\partial/\partial t=(c/L)\partial/\partial\tau$ and $\nabla=(1/L)\nabla_{y}$ to $\theta_{\mathrm{pha}}=\theta/\epsilon$ and $A_{\mathrm{mhv}}=\chi$.</p>
+<p>The order coefficients were verified by expanding both fields to $\epsilon^{2}$ and collecting, with each derivative treated as an independent real variable at a point.</p>
+<p>The Lorentz force was verified in two ways, and the distinction between them matters.</p>
+<p>First, as an identity <strong>conditional on the eikonal</strong>:</p>
+<p>$$
+\frac{\Pi_{t}}{c^{2}}\partial\Pi_{t}/\partial r_{i}-\sum_{j}\pi_{j}\partial\pi_{j}/\partial r_{i}=\frac{\Pi_{t}}{c^{2}}\left[\frac{d\pi_{i}}{dt}-ϙ\left(\vec E+\vec v\times\vec B\right)_{i}\right]
+$$</p>
+<p>holds for arbitrary $S$, $\phi$, $\vec A$ with $\vec v=-c^{2}\vec\pi/\Pi_{t}$, $E_{i}=-\partial\phi/\partial r_{i}-\partial A_{i}/\partial t$ and $B_{k}=\sum_{l,m}\varepsilon_{klm}\partial A_{m}/\partial r_{l}$. The left side is half the gradient of the eikonal defect, so the display holds wherever that defect vanishes. It does <em>not</em> hold off shell, and no display in §8 claims that it does.</p>
+<p>Second, on two explicit on-shell families, after checking that the defect vanishes on each. One is a uniform magnetic field, $\vec B=B\hat z$, $\phi=0$, $\vec A=Bx\,\hat y$, $S=-Et+p_{z}z+\sigma\left(x\right)$ with $\sigma^{\prime\,2}=E^{2}/c^{2}-p_{z}^{2}-m^{2}c^{2}-ϙ^{2}B^{2}x^{2}$. The other has both fields, $\phi=-E_{0}x$, $\vec A=Bx\,\hat y$, $S=-Et+p_{z}z+\sigma\left(x\right)$ with $\sigma^{\prime\,2}=\left(E+ϙE_{0}x\right)^{2}/c^{2}-ϙ^{2}B^{2}x^{2}-p_{z}^{2}-m^{2}c^{2}$. On both, all three components of the force identity vanish identically in $x$ once the derivative of $\sigma$ is substituted.</p>
+<p><strong>Why the conditional form is the honest one.</strong> A reader who evaluates the force identity at a random point of momentum space, without imposing the eikonal there, finds a nonzero residual and has tested nothing: the defect is not zero at that point, so the hypothesis is absent and the identity has no claim to make.</p>
+<p>Numbers use thirty-digit arithmetic.</p>
+<h3 id="112-the-table">11.2 The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>claim</th>
+<th>method</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the parent identity equals $-\left(\Box\tilde{Ξ}_{\mathrm{sp}}/\tilde{Ξ}_{\mathrm{sp}}-k_{m}^{2}\right)$</td>
+<td>symbolic, arbitrary real $\theta_{\mathrm{pha}}$ and $A_{\mathrm{mhv}}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the third bracket is $\left(1/A_{\mathrm{mhv}}^{2}\right)\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)$</td>
+<td>product rule, no assumption</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the real group equals $-\hbar^{2}\Box A_{\mathrm{mhv}}/A_{\mathrm{mhv}}$ after $\theta_{\mathrm{pha}}=S/\hbar$</td>
+<td>substitution, term by term</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the $\epsilon$-form of §3.3</td>
+<td>chain rule with $\theta_{\mathrm{pha}}=\theta/\epsilon$, $A_{\mathrm{mhv}}=\chi$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>order $\epsilon^{0}$ coefficient is $-\left[\left(\partial\theta_{0}/\partial\tau\right)^{2}-\lvert\nabla_{y}\theta_{0}\rvert^{2}-\mu^{2}\right]$</td>
+<td>series in $\epsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>order $\epsilon^{1}$ real coefficient is $-2\,\mathcal{V}\!\cdot\!\partial\theta_{1}$</td>
+<td>series in $\epsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>order $\epsilon^{1}$ imaginary coefficient is $C_{0}$</td>
+<td>series in $\epsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>order $\epsilon^{2}$ real coefficient is $A_{2}+B_{0}$</td>
+<td>series in $\epsilon$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>9</td>
+<td>$\tilde\nabla^{\natural}\tilde\nabla=-\partial^{2}/\partial t^{2}/c^{2}+\Delta$</td>
+<td>symbolic, four arbitrary functions</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>10</td>
+<td>the Lorentz identity of §11.1, conditional on the eikonal</td>
+<td>symbolic, three components, arbitrary $S$, $\phi$, $\vec A$</td>
+<td>$0,0,0$</td>
+</tr>
+<tr>
+<td>11</td>
+<td>$\left(\Pi_{t},\vec\pi\right)$ is gauge invariant</td>
+<td>one gauge function, direct substitution</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$2\left(\gamma-1\right)/\left(\gamma^{2}\beta^{2}\right)=2/\left(\gamma+1\right)$</td>
+<td>algebra, thirty digits</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>13</td>
+<td>the numbers of §10</td>
+<td>thirty digits</td>
+<td>as tabulated</td>
+</tr>
+<tr>
+<td>14</td>
+<td>the Gaussian ratios of §6.4</td>
+<td>closed form, substitution at the five tabulated points</td>
+<td>as tabulated</td>
+</tr>
+<tr>
+<td>15</td>
+<td>the force of §8.4 on a uniform-$\vec B$ on-shell family</td>
+<td>substitution of $\sigma^{\prime}$, three components, symbolic in $x$</td>
+<td>$0,0,0$</td>
+</tr>
+<tr>
+<td>16</td>
+<td>the force of §8.4 with $\vec E$ and $\vec B$ both present</td>
+<td>same, with $\phi=-E_{0}x$</td>
+<td>$0,0,0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Check 1 is the one that matters, and check 4 is the one that makes the expansion legitimate. A reader who wants to audit one line should audit §2.4, then §2.5, then §3.3.</p>
+<h3 id="113-what-was-not-checked">11.3 What Was Not Checked</h3>
+<p>The spin statement of §9.1 was not derived here; it is an argument from the centrality of the equation, and it is exact in the sense that no unit other than $e_{t}$ appears. The curvature coupling of §9.4 was not computed. The $g$ value, the Thomas precession and the spin transport equation were not obtained, and §9.1 says why they cannot be. The uniform approximation near a caustic, §6.5, was not constructed.</p>
+<h2 id="12-summary">12. Summary</h2>
+<p><strong>One identity.</strong> The equation of §2.5 is the exact, untruncated, $\hbar$-free content of the Dirac square of the chiral pair on the polar decomposition of the field. Every bracket is an inverse length squared, so the three are commensurable and the identity needs no prefactor.</p>
+<p><strong>One parameter.</strong> $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, the reduced phase wavelength over the amplitude's length. The non-quantum limit is $\epsilon\to0$, that is $L\gg\lambda_{\Phi}$. The regime $\epsilon\gg1$ is the opposite one, where the amplitude varies faster than the phase and no ray picture exists, §1.4.</p>
+<p><strong>Three orders.</strong> Order $\epsilon^{0}$ is the mass shell, which is the right triangle $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$ and the Hamilton–Jacobi equation of $H=c\sqrt{\lvert\vec p\rvert^{2}+m^{2}c^{2}}$. Order $\epsilon^{1}$ carries two statements: the sub-leading phase is frozen along the rays, and the density obeys the transport equation. Order $\epsilon^{2}$ is the quantum potential, which drives the first phase correction.</p>
+<p><strong>Two slots.</strong> The phase lives in the real slot and the density in the imaginary slot, and the split is arithmetic: a real number and a purely imaginary number cannot cancel each other. That is why one identity carries both equations of the limit, and why no averaging or gauge choice is needed to separate them.</p>
+<p><strong>One truncation.</strong> Only the real slot is truncated, and only at one place: the source is set to zero to obtain the mass shell. The remainder is $\epsilon^{2}$ times the curvature ratio of the amplitude, which is $\epsilon^{2}/2$ in radians of phase error accumulated over the region.</p>
+<p><strong>What is delivered.</strong> The mass shell; $E=-\partial S/\partial t$ and $\vec p=\nabla S$; the flow $\vec v=c^{2}\vec\pi/\mathcal E$; the Lorentz force $\frac{d\vec\pi}{dt}=ϙ\left(\vec E+\vec v\times\vec B\right)$ from two named cancellations; the transport equation $\frac{\partial}{\partial t}\left(\rho\gamma\right)+\nabla\cdot\left(\rho\gamma\vec v\right)=0$; an amplitude $\propto1/\sqrt{\gamma v}$; and the quantum potential as the measure of the limit's own failure.</p>
+<p><strong>What is not delivered.</strong> Spin, chirality, $g=2$, the sign of the energy, the curvature coupling, the value of the charge, and a state. The first four are lost when the chiral pair is squared; the last is lost by the limit itself.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>what it is</th>
+<th>dimension</th>
+<th>where defined</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra, $e_{t}=1$, $\vec e_{\eta}^{2}=-e_{t}$</td>
+<td>—</td>
+<td>§1.1</td>
+</tr>
+<tr>
+<td>$\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>the Dirac field, an element of $\mathbb{B}$</td>
+<td>—</td>
+<td>§1.1</td>
+</tr>
+<tr>
+<td>$A_{\mathrm{mhv}}$</td>
+<td>the amplitude, real, positive, central</td>
+<td>that of $\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>§1.1</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}=S/\hbar$</td>
+<td>the phase in radians</td>
+<td>none</td>
+<td>§1.1</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>the spinor, an element taken locally constant</td>
+<td>that of $\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>§1.1</td>
+</tr>
+<tr>
+<td>$k_{m}=mc/\hbar$</td>
+<td>the mass wave number</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>§1.2</td>
+</tr>
+<tr>
+<td>$k_{t}^{\prime}=E/(\hbar c)$</td>
+<td>the temporal wave number</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>§1.2</td>
+</tr>
+<tr>
+<td>$\vec k_{\Phi}=\vec p/\hbar$, $k_{\Phi}$</td>
+<td>the momentum wave number and its modulus</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>§1.2</td>
+</tr>
+<tr>
+<td>$\mu=k_{m}/k_{\Phi}=1/(\gamma\beta)$</td>
+<td>the shape of the state</td>
+<td>none</td>
+<td>§1.2</td>
+</tr>
+<tr>
+<td>$\beta$, $\gamma$</td>
+<td>speed over $c$, and its boost factor</td>
+<td>none</td>
+<td>§1.2</td>
+</tr>
+<tr>
+<td>$\lambda_{\Phi}=1/k_{\Phi}$, $\lambda_{m}=1/k_{m}$</td>
+<td>the phase length and the mass length</td>
+<td>$\mathrm{L}$</td>
+<td>§1.3</td>
+</tr>
+<tr>
+<td>$L$</td>
+<td>the amplitude's length, from the state</td>
+<td>$\mathrm{L}$</td>
+<td>§1.3</td>
+</tr>
+<tr>
+<td>$\epsilon=\lambda_{\Phi}/L=1/(k_{\Phi}L)$</td>
+<td>the parameter of the limit</td>
+<td>none</td>
+<td>§1.3</td>
+</tr>
+<tr>
+<td>$\tau=ct/L$, $y=\vec r/L$</td>
+<td>the scaled coordinates</td>
+<td>none</td>
+<td>§3.2</td>
+</tr>
+<tr>
+<td>$\theta=\epsilon\theta_{\mathrm{pha}}$, $\chi=A_{\mathrm{mhv}}$</td>
+<td>the scaled phase and the scaled amplitude</td>
+<td>none</td>
+<td>§3.2</td>
+</tr>
+<tr>
+<td>$\theta_{n}$, $\chi_{n}$</td>
+<td>the coefficients of the expansion</td>
+<td>none</td>
+<td>§3.5</td>
+</tr>
+<tr>
+<td>$\mathcal{V}=\left(q_{\tau},-q_{y}\right)$</td>
+<td>the characteristic direction of order zero</td>
+<td>none</td>
+<td>§3.5</td>
+</tr>
+<tr>
+<td>$\mathcal{V}\!\cdot\!\partial$</td>
+<td>the derivative along a ray</td>
+<td>none</td>
+<td>§3.5</td>
+</tr>
+<tr>
+<td>$\Box=-\partial^{2}/\partial t^{2}/c^{2}+\Delta$; $\Box_{y}=-\partial^{2}/\partial\tau^{2}+\Delta_{y}$</td>
+<td>the d'Alembertians, physical and scaled</td>
+<td>$\mathrm{L}^{-2}$, none</td>
+<td>§1.5, §3.8</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco},\mu}$</td>
+<td>the gauge-covariant derivative</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>§1.6</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>the charge of the field acted on</td>
+<td>$\mathrm{Q}$</td>
+<td>§1.6</td>
+</tr>
+<tr>
+<td>$A_{t}=i\phi/c$, $\vec A$</td>
+<td>the connection entries</td>
+<td>—</td>
+<td>§1.6</td>
+</tr>
+<tr>
+<td>$E=-\partial S/\partial t$, $\vec p=\nabla S$</td>
+<td>the canonical energy and momentum</td>
+<td>—</td>
+<td>§4.2</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$</td>
+<td>the wave-number element</td>
+<td>$\mathrm{L}^{-1}$</td>
+<td>§4.2</td>
+</tr>
+<tr>
+<td>$\Pi_{t}=\partial S/\partial t+ϙ\phi$</td>
+<td>the canonical temporal entry</td>
+<td>—</td>
+<td>§8.2</td>
+</tr>
+<tr>
+<td>$\vec\pi=\nabla S-ϙ\vec A$</td>
+<td>the mechanical momentum</td>
+<td>—</td>
+<td>§8.2</td>
+</tr>
+<tr>
+<td>$\mathcal E=-\Pi_{t}=E-ϙ\phi$</td>
+<td>the kinetic energy</td>
+<td>—</td>
+<td>§8.2</td>
+</tr>
+<tr>
+<td>$\rho=A_{\mathrm{mhv}}^{2}=\chi^{2}$</td>
+<td>the density</td>
+<td>—</td>
+<td>§5.1</td>
+</tr>
+<tr>
+<td>$u_{\mu}=\gamma\left(c,-\vec v\right)$</td>
+<td>the four-velocity, all indices low</td>
+<td>—</td>
+<td>§5.2</td>
+</tr>
+<tr>
+<td>$Q=-\hbar^{2}\Delta A_{\mathrm{mhv}}/(2m\,A_{\mathrm{mhv}})$</td>
+<td>the quantum potential</td>
+<td>—</td>
+<td>§6.2</td>
+</tr>
+<tr>
+<td>$B_{0}=-\Box_{y}\chi_{0}/\chi_{0}$</td>
+<td>the source at order $\epsilon^{2}$</td>
+<td>none</td>
+<td>§3.8</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael V. Berry and K. E. Mount, "Semiclassical approximations in wave mechanics," <em>Reports on Progress in Physics</em> <strong>35</strong> (1972) 315–397, for uniform approximations and the failure at caustics, §6.4 and §6.5.</li>
+<li>Robert G. Littlejohn, "The semiclassical evolution of wave packets," <em>Physics Reports</em> <strong>138</strong> (1986) 193–291, for error estimates that replace a closed-form remainder, and for the spin transport that §9.1 excludes.</li>
+<li>V. P. Maslov and M. V. Fedoriuk, <em>Semiclassical Approximation in Quantum Mechanics</em> (Reidel, 1981), for the Lagrangian manifold, and for why a ray is a characteristic and not a trajectory.</li>
+<li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), for the quantum potential and for the exactness of the Bohm rewriting identified in §2.6.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

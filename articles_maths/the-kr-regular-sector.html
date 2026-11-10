@@ -81,24 +81,24 @@ $$</p>
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},\qquad
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$</p>
-<p>so that $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$ is the <strong>Krein norm</strong> and $\lVert\tilde Q\rVert_E^2=\langle\tilde Q\rangle_{*}$ is the Euclidean norm. The <strong>algebraic norm</strong> is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; it is complex-valued and multiplicative, and it decides invertibility. The null set is $\mathcal K=\{\langle\tilde Q\rangle_{\natural*}=0\}$; the algebraic null cone is $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$, and its punctured part is the zero-divisor set $\mathcal Z$. The product is the plain product, with unit $e_t$.</p>
+<p>so that $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert^2$ is the <strong>Krein norm</strong> and $\lVert\tilde Q\rVert^2=\langle\tilde Q\rangle_{*}$ is the Euclidean norm. The <strong>algebraic norm</strong> is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; it is complex-valued and multiplicative, and it decides invertibility. The null set is $\mathcal K=\{\langle\tilde Q\rangle_{\natural*}=0\}$; the algebraic null cone is $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$, and its punctured part is the zero-divisor set $\mathcal Z$. The product is the plain product, with unit $e_t$.</p>
 <h2 id="definition-and-characterisation">Definition and Characterisation</h2>
 <p><strong>Definition.</strong> The <strong>Krein-regular sector</strong> is</p>
 <p>$$
 \mathbb{B}^{\natural*}=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\neq0\}
-=\{\tilde Q:|Q_t|\neq\lVert\vec Q\rVert_E\},
+=\{\tilde Q:|Q_t|\neq\lVert\vec Q\rVert\},
 $$</p>
 <p>the union of the <strong>positive region</strong> $\mathbb{B}^{\natural*}_+=\{\langle\tilde Q\rangle_{\natural*}>0\}$ and the <strong>negative region</strong> $\mathbb{B}^{\natural*}_-=\{\langle\tilde Q\rangle_{\natural*}<0\}$.</p>
 <p><strong>Theorem (five descriptions).</strong> For $\tilde Q\in\mathbb{B}$ the following are equivalent:</p>
 <p>(i) $\tilde Q\in\mathbb{B}^{\natural*}$;</p>
-<p>(ii) $|Q_t|\neq\lVert\vec Q\rVert_E$;</p>
+<p>(ii) $|Q_t|\neq\lVert\vec Q\rVert$;</p>
 <p>(iii) the complex line $\mathbb{C}\tilde Q$ is non-degenerate for the Krein form;</p>
 <p>(iv) the real plane $\operatorname{span}_{\mathbb{R}}\{\tilde Q,i\tilde Q\}$ is non-degenerate for the realified form;</p>
 <p>(v) the restriction of the Krein form to the line $\mathbb{C}\tilde Q$ is definite.</p>
 <p><em>Proof.</em> (i) $\iff$ (ii) is the coordinate form of the norm. (ii) $\iff$ (iii) is the line criterion of <em>Kr-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>Krein Orthogonality and the Complement</em>: a line is degenerate exactly when its radical is non-zero, and for a Hermitian form on a complex line the radical is the line itself exactly when the form vanishes at a non-zero point. (iii) $\iff$ (iv) is the realification: the real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so a radical over $\mathbb{C}$ and a radical over $\mathbb{R}$ coincide. (iii) $\iff$ (v): on the line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which is non-degenerate exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$, and then it is definite with the sign of that value.</p>
 <p><strong>Proposition (the sign is the sign of the line).</strong> The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive region and negative definite exactly in the negative region. The line carries the sign of the norm, and no other sign occurs.</p>
 <p><strong>Corollary (what the positive region excludes).</strong> Every positive element has $Q_t\neq0$ and is non-zero; every negative element has $\vec Q\neq0$.</p>
-<p><em>Proof.</em> $|Q_t|>\lVert\vec Q\rVert_E\ge0$ gives $Q_t\neq0$; $|Q_t|<\lVert\vec Q\rVert_E$ gives $\vec Q\neq0$. The origin has value $0$ and lies in neither region.</p>
+<p><em>Proof.</em> $|Q_t|>\lVert\vec Q\rVert\ge0$ gives $Q_t\neq0$; $|Q_t|<\lVert\vec Q\rVert$ gives $\vec Q\neq0$. The origin has value $0$ and lies in neither region.</p>
 <p><strong>Remark (the sector is the set of non-isotropic elements).</strong> An element is isotropic when its line is totally isotropic, that is, when the form vanishes identically on the line; the sector is exactly the complement of that set. The word regular is used in the metric sense of the main article, not in the ring-theoretic sense of a non-zero-divisor.</p>
 <h2 id="the-two-signs">The Two Signs</h2>
 <p><strong>Theorem (the positive region).</strong> The map</p>
@@ -107,16 +107,16 @@ $$</p>
 \qquad
 \Phi_+(Q_t,W)=Q_t(e_t+W),
 $$</p>
-<p>with $\mathbb{B}^6_1=\{W\in\mathbb{C}^3:\lVert W\rVert_E<1\}$ the open unit ball, is a bijection. The positive region is therefore connected, of real dimension $8$, and homotopy equivalent to $S^1$.</p>
-<p><em>Proof.</em> On the region $Q_t\neq0$, and $W=\vec Q/Q_t$ has $\lVert W\rVert_E=|Q_t|^{-1}\lVert\vec Q\rVert_E<1$; conversely $\langle Q_t(e_t+W)\rangle_{\natural*}=|Q_t|^2(1-\lVert W\rVert_E^2)>0$. The inverse is $\tilde Q\mapsto(Q_t,\vec Q/Q_t)$. A product of a circle and a ball is homotopy equivalent to the circle.</p>
+<p>with $\mathbb{B}^6_1=\{W\in\mathbb{C}^3:\lVert W\rVert<1\}$ the open unit ball, is a bijection. The positive region is therefore connected, of real dimension $8$, and homotopy equivalent to $S^1$.</p>
+<p><em>Proof.</em> On the region $Q_t\neq0$, and $W=\vec Q/Q_t$ has $\lVert W\rVert=|Q_t|^{-1}\lVert\vec Q\rVert<1$; conversely $\langle Q_t(e_t+W)\rangle_{\natural*}=|Q_t|^2(1-\lVert W\rVert^2)>0$. The inverse is $\tilde Q\mapsto(Q_t,\vec Q/Q_t)$. A product of a circle and a ball is homotopy equivalent to the circle.</p>
 <p><strong>Theorem (the negative region).</strong> The map</p>
 <p>$$
 \Phi_-:\mathbb{R}_{>0}\times D^2\times S^5\longrightarrow\mathbb{B}^{\natural*}_-,
 \qquad
 \Phi_-(r,w,W)=r(we_t+W),
 $$</p>
-<p>with $D^2=\{w\in\mathbb{C}:|w|<1\}$ the open unit disk and $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert_E=1\}$, is a bijection. The negative region is therefore connected, of real dimension $8$, and homotopy equivalent to $S^5$.</p>
-<p><em>Proof.</em> For $\tilde Q$ negative put $r=\lVert\vec Q\rVert_E>0$, $W=\vec Q/r$ and $w=Q_t/r$; then $|w|=|Q_t|/r<1$. Conversely $\langle r(we_t+W)\rangle_{\natural*}=r^2(|w|^2-1)<0$. The inverse is $\tilde Q\mapsto(\lVert\vec Q\rVert_E,Q_t/\lVert\vec Q\rVert_E,\vec Q/\lVert\vec Q\rVert_E)$. The factors $\mathbb{R}_{>0}$ and $D^2$ are contractible.</p>
+<p>with $D^2=\{w\in\mathbb{C}:|w|<1\}$ the open unit disk and $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert=1\}$, is a bijection. The negative region is therefore connected, of real dimension $8$, and homotopy equivalent to $S^5$.</p>
+<p><em>Proof.</em> For $\tilde Q$ negative put $r=\lVert\vec Q\rVert>0$, $W=\vec Q/r$ and $w=Q_t/r$; then $|w|=|Q_t|/r<1$. Conversely $\langle r(we_t+W)\rangle_{\natural*}=r^2(|w|^2-1)<0$. The inverse is $\tilde Q\mapsto(\lVert\vec Q\rVert,Q_t/\lVert\vec Q\rVert,\vec Q/\lVert\vec Q\rVert)$. The factors $\mathbb{R}_{>0}$ and $D^2$ are contractible.</p>
 <p><strong>Corollary (the topologies differ).</strong> The two regions are both of real dimension $8$, and they are not homeomorphic: their homotopy types are $S^1$ and $S^5$. They are the two components of the regular set, and the regular set is not connected.</p>
 <p><strong>Theorem (homogeneity).</strong> For $c>0$ the level set $\{\langle\tilde Q\rangle_{\natural*}=c\}$ is a single orbit of $\mathrm{U}(1,3)$, isomorphic to $\mathrm{U}(1,3)/\mathrm{U}(3)$; for $c<0$ it is a single orbit, isomorphic to $\mathrm{U}(1,3)/\mathrm{U}(1,2)$.</p>
 <p><em>Proof.</em> Two vectors of equal non-zero value are carried one to the other by an isometry of the form, by Witt's theorem. The stabiliser of a positive vector is the $*$-unitary group of its orthogonal complement, which is negative definite of complex dimension three, hence $\mathrm{U}(3)$; the stabiliser of a negative vector is the $*$-unitary group of a complement of signature $(1,2)$, hence $\mathrm{U}(1,2)$. The dimensions agree: $\dim_{\mathbb{R}}\mathrm{U}(1,3)=16$, $\dim_{\mathbb{R}}\mathrm{U}(3)=\dim_{\mathbb{R}}\mathrm{U}(1,2)=9$, and $16-9=7$ is the real dimension of a level set.</p>
@@ -129,7 +129,7 @@ $$</p>
 <p><em>Proof.</em> The norm is a real polynomial, so its non-zero set is open and its zero set is closed. Off the origin the gradient in the real coordinates $(\operatorname{Re}Q_t,\operatorname{Im}Q_t,\operatorname{Re}\vec Q,\operatorname{Im}\vec Q)$ is $2(\operatorname{Re}Q_t,\operatorname{Im}Q_t,-\operatorname{Re}\vec Q,-\operatorname{Im}\vec Q)\neq0$, so the zero set is a hypersurface. The origin is the only critical point, and near it $e_t$ and $\vec e_x$ give values of both signs, so every null point is a boundary point of both regions.</p>
 <p><strong>Remark (cones without apex).</strong> Both regions are stable under every non-zero complex scalar, $\langle\lambda\tilde Q\rangle_{\natural*}=|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, and neither contains the origin: each is a cone with its apex deleted. The apex lies in the closure of both.</p>
 <p><strong>Remark (neither region is convex).</strong> The positive elements $e_t$ and $-e_t$ have the zero element as midpoint, and the negative elements $\vec e_x$ and $-\vec e_x$ do the same. Convexity fails in the strongest way in both regions.</p>
-<p><strong>Remark (the Krein cone).</strong> The closure of the positive region is the Krein cone $P_K=\{|Q_t|\ge\lVert\vec Q\rVert_E\}$, closed and star-shaped with respect to the origin, neither convex nor pointed; it is <em>Kr-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Krein Cone</em>, and its boundary structure is <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
+<p><strong>Remark (the Krein cone).</strong> The closure of the positive region is the Krein cone $P_K=\{|Q_t|\ge\lVert\vec Q\rVert\}$, closed and star-shaped with respect to the origin, neither convex nor pointed; it is <em>Kr-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Krein Cone</em>, and its boundary structure is <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
 <h2 id="multiplication-and-inversion">Multiplication and Inversion</h2>
 <p><strong>Theorem (the sector is not closed under multiplication).</strong> The product of two regular elements can be positive, negative or null.</p>
 <p><em>Proof.</em> Four witnesses.</p>
@@ -153,15 +153,15 @@ $$</li>
 $$</p>
 <p><em>Proof.</em> $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}=(Q_t-\vec Q)/\langle\tilde Q\rangle_{\natural}$, so the scalar part of the inverse is $Q_t/\langle\tilde Q\rangle_{\natural}$ and its vector part is $-\vec Q/\langle\tilde Q\rangle_{\natural}$. Hence
 $$
-\langle\tilde Q^{-1}\rangle_{\natural*}=\frac{|Q_t|^2-\lVert\vec Q\rVert_E^2}{\lvert\langle\tilde Q\rangle_{\natural}\rvert^2}.
+\langle\tilde Q^{-1}\rangle_{\natural*}=\frac{|Q_t|^2-\lVert\vec Q\rVert^2}{\lvert\langle\tilde Q\rangle_{\natural}\rvert^2}.
 $$</p>
 <p><strong>Corollary (the sector is inversion-stable).</strong> The regular sector is stable under inversion wherever inversion is defined, and each sign region is stable as well: inversion preserves the sign and rescales the value by a positive factor. The positive region is a <strong>symmetric subset of the unit group</strong> — closed under inversion, not closed under multiplication. The negative region contains zero divisors, on which inversion is undefined, and on its units it is inversion-stable.</p>
 <p><strong>Remark (the group actions).</strong> The sector is stable under $\mathbb{C}^{\times}$ and under the Krein isometry group $\mathrm{U}(1,3)$, which preserves the value. It is not stable under the unit group acting by similarity: the conjugation of §<em>Why There Is No Spectral Split</em> moves an element of the negative region to another value.</p>
 <h2 id="relation-to-the-algebraic-partition">Relation to the Algebraic Partition</h2>
 <p><strong>Theorem (positive implies unit).</strong> If $\langle\tilde Q\rangle_{\natural*}>0$ then $\tilde Q$ is a unit of the plain product.</p>
-<p><em>Proof.</em> Positivity gives $|Q_t|>\lVert\vec Q\rVert_E$, hence $Q_t\neq0$. If $\tilde Q$ were a zero divisor, then $\langle\tilde Q\rangle_{\natural}=0$, so $Q_t^2=-\sum_kQ_k^2$ and
+<p><em>Proof.</em> Positivity gives $|Q_t|>\lVert\vec Q\rVert$, hence $Q_t\neq0$. If $\tilde Q$ were a zero divisor, then $\langle\tilde Q\rangle_{\natural}=0$, so $Q_t^2=-\sum_kQ_k^2$ and
 $$
-|Q_t|^2=\Bigl|\sum_kQ_k^2\Bigr|\le\sum_k|Q_k|^2=\lVert\vec Q\rVert_E^2,
+|Q_t|^2=\Bigl|\sum_kQ_k^2\Bigr|\le\sum_k|Q_k|^2=\lVert\vec Q\rVert^2,
 $$
 in contradiction with positivity. A non-zero element that is not a zero divisor is a unit.</p>
 <p><strong>Theorem (the zero divisors of the sector).</strong> The zero divisors of the regular sector are exactly the zero divisors that are not doubly null,</p>
@@ -270,7 +270,7 @@ $$</p>
 <tbody>
 <tr>
 <td>definition</td>
-<td>$\mathbb{B}^{\natural*}=\{\langle\tilde Q\rangle_{\natural*}\neq0\}=\{|Q_t|\neq\lVert\vec Q\rVert_E\}$</td>
+<td>$\mathbb{B}^{\natural*}=\{\langle\tilde Q\rangle_{\natural*}\neq0\}=\{|Q_t|\neq\lVert\vec Q\rVert\}$</td>
 </tr>
 <tr>
 <td>descriptions</td>
@@ -282,7 +282,7 @@ $$</p>
 </tr>
 <tr>
 <td>parametrisations</td>
-<td>$Q_t(e_t+W)$ with $Q_t\neq0$, $\lVert W\rVert_E<1$; $r(we_t+W)$ with $r>0$, $w\in D^2$, $W\in S^5$</td>
+<td>$Q_t(e_t+W)$ with $Q_t\neq0$, $\lVert W\rVert<1$; $r(we_t+W)$ with $r>0$, $w\in D^2$, $W\in S^5$</td>
 </tr>
 <tr>
 <td>homogeneity</td>
@@ -341,7 +341,7 @@ $$</p>
 <td>the zero-divisor set, $\mathcal N\setminus\{0\}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$</td>
+<td>$\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert^2$</td>
 <td>the Krein norm</td>
 </tr>
 <tr>
@@ -349,7 +349,7 @@ $$</p>
 <td>the algebraic norm, which decides invertibility</td>
 </tr>
 <tr>
-<td>$\lVert W\rVert_E^2=\sum_k|W_k|^2$</td>
+<td>$\lVert W\rVert^2=\sum_k|W_k|^2$</td>
 <td>the Euclidean norm on the vector part</td>
 </tr>
 <tr>

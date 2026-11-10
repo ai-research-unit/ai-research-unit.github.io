@@ -83,7 +83,7 @@ $$</p>
 <p><strong>Why the space and not the algebra.</strong> The algebra $M_2(\mathbb{C})$ is also the biquaternion algebra $\mathbb{B}$, but the carrier here is the module $\mathbb{C}^2$ and not the algebra. An operator is a map of the module, its adjoint is taken for the Hermitian form $H$ of the space, and the decomposition is the canonical form of the map. <em>The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</em> reads the other object: an endomorphism of the four-dimensional algebra, with four terms and with a multiplication that meets the decomposition. <strong>The same matrix algebra, two different carriers, and the number of terms counts the carrier.</strong></p>
 <p><strong>The contrast in one line.</strong> The biquaternion endomorphism has four weights because its carrier has complex dimension four. An operator here has two because the carrier has complex dimension two. A reduced biquaternion element, read in its regular representation, has its weights repeated in pairs because its matrix is block diagonal.</p>
 <p><strong>The method.</strong> The article proceeds in two stages, and the order matters. The first stage is the Hilbert-space theory: the Hermitian form, the adjoint, the spectral theorem for the positive operator $A^{\dagger}A$, the rank-one decomposition and its operator form. The second stage reads the result: the rank cases, the three identities, the explicit formula in the four entries, the geometry, the non-uniqueness, the truncation, and the place of the atoms in the two cones.</p>
-<p><strong>The letters.</strong> $A$ and $B$ are operators, $A^{\dagger}$ is the adjoint of $A$, and $\mathrm{I}_2$ is the identity. The unitaries of the decomposition are $U$ and $V$, the scale is $\Sigma$ with coordinate projectors $\Pi_i=e_ie_i^{\dagger}$, the weights are $\sigma_1\geq\sigma_2$, and the left and right singular vectors are $u_i$ and $v_i$. The eigenvalues of $A^{\dagger}A$ are $\lambda_1\geq\lambda_2$, so $\lambda_i=\sigma_i^2$. The Hermitian form is $H$, the norm is $\lVert Q\rVert$, and the two norms of an operator are the Frobenius norm $\lVert A\rVert_{\mathrm{F}}$ and the operator norm $\lVert A\rVert_{\mathrm{op}}$. The two numbers of the explicit formula are $T$ and $\Delta$. The two cones are $\mathcal{C}$, the bilinear cone of the matrices $u\phi^{\mathsf T}$, and $\mathcal{C}_{H}$, the Hermitian cone of the matrices $uu^{\dagger}$. The biquaternion element is $\tilde Q$ with matrix $\mathsf M_2(\tilde Q)$ and algebraic norm $N(\tilde Q)$, and the reduced biquaternion is $\breve Q$ with the two complex coordinates $Q_+,Q_-$.</p>
+<p><strong>The letters.</strong> $A$ and $B$ are operators, $A^{\dagger}$ is the adjoint of $A$, and $\mathrm{I}_2$ is the identity. The unitaries of the decomposition are $U$ and $V$, the scale is $\Sigma$ with coordinate projectors $\Pi_i=e_ie_i^{\dagger}$, the weights are $\sigma_1\geq\sigma_2$, and the left and right singular vectors are $u_i$ and $v_i$. The eigenvalues of $A^{\dagger}A$ are $\lambda_1\geq\lambda_2$, so $\lambda_i=\sigma_i^2$. The Hermitian form is $H$, the norm is $\lVert Q\rVert$, and the two norms of an operator are the Frobenius norm $\langle A\rangle_*^{1/2}$ and the operator norm $\lVert A\rVert_{\mathrm{op}}$. The two numbers of the explicit formula are $T$ and $\Delta$. The two cones are $\mathcal{C}$, the bilinear cone of the matrices $u\phi^{\mathsf T}$, and $\mathcal{C}_{H}$, the Hermitian cone of the matrices $uu^{\dagger}$. The biquaternion element is $\tilde Q$ with matrix $\mathsf M_2(\tilde Q)$ and algebraic norm $N(\tilde Q)$, and the reduced biquaternion is $\breve Q$ with the two complex coordinates $Q_+,Q_-$.</p>
 <p><strong>The order of the article.</strong> The operator and its adjoint come first, with the Hilbert–Schmidt form and the classes of Hermitian, unitary and positive operators (§<em>The Operator and the Adjoint</em>). The spectral theorem for $A^{\dagger}A$ is stated and proved, because the article uses it and does not import it (§<em>The Spectral Theorem for $A^{\dagger}A$</em>). The decomposition is stated and proved, with its rank-one form, its computation and its operator form (§<em>The Decomposition</em>). The weights are examined in their own section: the rank cases, the three identities, the explicit formula, a worked example, the geometry, the non-uniqueness and the truncation (§<em>The Weights</em>). The atoms are then placed in the two cones, and the length of an operator is identified with its rank (§<em>The Two Cones and the Length</em>). The comparison with the biquaternion and reduced biquaternion decompositions closes the body (§<em>The Comparison with the Neighbouring Decompositions</em>).</p>
 <p><strong>Boundaries.</strong> The space, the two scalar structures, the complex structure $J$ and the Hermitian form are <em>Duo-Complex Numbers</em>. The algebra of operators, its units, its centre, its trace and its determinant, the conjugate-linear maps and the centraliser of $J$ are <em>The Endomorphisms of $\mathbb{C}^2$</em>. The space as the defining module of $M_2(\mathbb{C})$, the three canonical forms and the two cones as objects of the space are <em>$M_2(\mathbb{C})$ Defining Representation</em>; the rank-one family read as a semigroup, with its composition law, and the side-by-side comparison of the two cones, are its operators companion. <strong>This article takes nothing from either of them</strong>: the bilinear cone and the Hermitian cone are defined in place as the two sets of rank-one matrices that the decomposition produces, and the length is defined and proved here. The general SVD, the polar decomposition and the Eckart–Young theorem are likewise not imported: the article proves what it uses at size two, and it cites the general theory in §<em>Further Reading</em>.</p>
 <p><strong>Conventions.</strong> The space is $V=\mathbb{C}^2$ with the complex basis $e_1,e_2$, and an operator is written $A$ and identified with its matrix in that basis. The Hermitian form is $H(Q_1,Q_2)=Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$, linear in the first slot and conjugate-linear in the second, with norm $\lVert Q\rVert^2=H(Q,Q)$. The adjoint is defined by $H(AQ_1,Q_2)=H(Q_1,A^{\dagger}Q_2)$. The dagger is the conjugate transpose, the transpose is written ${}^{\mathsf T}$, and the entries of $A$ are</p>
@@ -107,7 +107,7 @@ $$</p>
 $$</p>
 <p>linear in the first slot and conjugate-linear in the second. The <strong>Frobenius norm</strong> is</p>
 <p>$$
-\lVert A\rVert_{\mathrm{F}}^2=\langle\!\langle A,A\rangle\!\rangle=\operatorname{tr}(A^{\dagger}A)=\lvert a\rvert^2+\lvert b\rvert^2+\lvert c\rvert^2+\lvert d\rvert^2.
+\langle A\rangle_*=\langle\!\langle A,A\rangle\!\rangle=\operatorname{tr}(A^{\dagger}A)=\lvert a\rvert^2+\lvert b\rvert^2+\lvert c\rvert^2+\lvert d\rvert^2.
 $$</p>
 <p><strong>The operator norm</strong> is the norm of the map,</p>
 <p>$$
@@ -321,7 +321,7 @@ $$</p>
 <p>The determinant of $A^{\dagger}A$ is $\overline{\det A}\det A$, because $\det A^{\dagger}=\overline{\det A}$.</p>
 <p><strong>The sum of squares is the Frobenius norm.</strong> Summing the squares,</p>
 <p>$$
-\sigma_1^2+\sigma_2^2=\operatorname{tr}(A^{\dagger}A)=\lVert A\rVert_{\mathrm{F}}^2=T,
+\sigma_1^2+\sigma_2^2=\operatorname{tr}(A^{\dagger}A)=\langle A\rangle_*=T,
 $$</p>
 <p>with $T=\lvert a\rvert^2+\lvert b\rvert^2+\lvert c\rvert^2+\lvert d\rvert^2$. The identity is the Pythagorean theorem for the orthogonal decomposition of §<em>The Rank-One Form</em>, and it says that a truncation which discards the second term loses exactly $\sigma_2^2$ of the Frobenius norm.</p>
 <p><strong>The largest weight is the operator norm.</strong> For a unit vector $Q=\alpha v_1+\beta v_2$,</p>
@@ -370,7 +370,7 @@ $$</p>
 <p>$$
 A=3\sqrt5\,u_1v_1^{\mathsf T}+\sqrt5\,u_2v_2^{\mathsf T}.
 $$</p>
-<p>The two identities hold: $\sigma_1\sigma_2=15=\lvert\det A\rvert$ and $\sigma_1^2+\sigma_2^2=50=\lVert A\rVert_{\mathrm{F}}^2$. The daggers are transposes here, because the matrix is real and the two families are real.</p>
+<p>The two identities hold: $\sigma_1\sigma_2=15=\lvert\det A\rvert$ and $\sigma_1^2+\sigma_2^2=50=\langle A\rangle_*$. The daggers are transposes here, because the matrix is real and the two families are real.</p>
 <h3 id="the-geometric-reading">The Geometric Reading</h3>
 <p><strong>The ellipsoid.</strong> The space is $\mathbb{R}^4$ as a real vector space, and the realification of $A$ has the four singular values $\sigma_1,\sigma_1,\sigma_2,\sigma_2$, because $A(iv_i)=iA(v_i)$. The image of the unit sphere of $V$ is therefore the ellipsoid of $\mathbb{R}^4$ whose principal semi-axes are $\sigma_1$ and $\sigma_2$, each counted twice, along the directions $u_1,iu_1$ and $u_2,iu_2$.</p>
 <p><strong>The ellipse in the plane.</strong> In the real plane spanned by $v_1,v_2$, the unit circle is carried onto the ellipse of semi-axes $\sigma_1$ and $\sigma_2$ and area $\pi\sigma_1\sigma_2=\pi\lvert\det A\rvert$. The right vectors are the directions of the circle that are carried onto the axes, and the left vectors are the directions of the axes in the image. When the rank is one the ellipse degenerates to a segment of length $2\sigma_1$, and when the rank is zero it degenerates to the origin.</p>
@@ -396,29 +396,29 @@ A_1=\sigma_1u_1v_1^{\dagger}
 $$</p>
 <p>be the first term. Then $A_1$ has rank at most one, and</p>
 <p>$$
-\lVert A-A_1\rVert_{\mathrm{F}}=\sigma_2,
+\langle A-A_1\rangle_*^{1/2}=\sigma_2,
 \qquad
 \lVert A-A_1\rVert_{\mathrm{op}}=\sigma_2 .
 $$</p>
 <p><strong>Theorem (the best rank-one approximation).</strong> For every operator $B$ of rank at most one,</p>
 <p>$$
-\lVert A-B\rVert_{\mathrm{F}}\geq\sigma_2,
+\langle A-B\rangle_*^{1/2}\geq\sigma_2,
 \qquad
 \lVert A-B\rVert_{\mathrm{op}}\geq\sigma_2 .
 $$</p>
 <p>The first term $A_1$ attains both bounds.</p>
-<p><em>Proof.</em> If $B=0$ the error is $\lVert A\rVert_{\mathrm{F}}\geq\sigma_2$. Otherwise $B$ has a kernel, which is a line. Choose a unit vector $w$ in the kernel and write $w=\alpha v_1+\beta v_2$. Then</p>
+<p><em>Proof.</em> If $B=0$ the error is $\langle A\rangle_*^{1/2}\geq\sigma_2$. Otherwise $B$ has a kernel, which is a line. Choose a unit vector $w$ in the kernel and write $w=\alpha v_1+\beta v_2$. Then</p>
 <p>$$
 \lVert(A-B)w\rVert=\lVert Aw\rVert=\sqrt{\sigma_1^2\lvert\alpha\rvert^2+\sigma_2^2\lvert\beta\rvert^2}\geq\sigma_2,
 $$</p>
-<p>so the operator norm of the difference is at least $\sigma_2$, and the Frobenius norm is at least the operator norm. The first term attains the bound, because the difference is the second term and $\lVert\sigma_2u_2v_2^{\dagger}\rVert_{\mathrm{F}}=\sigma_2$.</p>
-<p><strong>Uniqueness when the two weights differ.</strong> Suppose $\sigma_1>\sigma_2$ and a competitor $B$ attains the bound. If $B$ were zero the error would be $\lVert A\rVert_{\mathrm{F}}>\sigma_2$, so $B$ is nonzero, and its kernel contains a unit vector $w$. The bound gives</p>
+<p>so the operator norm of the difference is at least $\sigma_2$, and the Frobenius norm is at least the operator norm. The first term attains the bound, because the difference is the second term and $\langle\sigma_2u_2v_2^{\dagger}\rangle_*^{1/2}=\sigma_2$.</p>
+<p><strong>Uniqueness when the two weights differ.</strong> Suppose $\sigma_1>\sigma_2$ and a competitor $B$ attains the bound. If $B$ were zero the error would be $\langle A\rangle_*^{1/2}>\sigma_2$, so $B$ is nonzero, and its kernel contains a unit vector $w$. The bound gives</p>
 <p>$$
 \sigma_2=\lVert A-B\rVert_{\mathrm{op}}\geq\lVert(A-B)w\rVert=\lVert Aw\rVert\geq\sigma_2,
 $$</p>
 <p>so equality holds throughout, and $\lVert Aw\rVert=\sigma_2$ with $\lVert w\rVert=1$ forces $w$ to be a unit multiple of $v_2$, because $\sigma_1>\sigma_2$. The kernel of $B$ is therefore the line of $v_2$, and $B=u'v_1^{\dagger}$ for some vector $u'$. Then</p>
 <p>$$
-\lVert A-B\rVert_{\mathrm{F}}^2=\lVert\sigma_1u_1-u'\rVert^2+\sigma_2^2,
+\langle A-B\rangle_*=\lVert\sigma_1u_1-u'\rVert^2+\sigma_2^2,
 $$</p>
 <p>because $v_1$ and $v_2$ are orthonormal. Equality forces $u'=\sigma_1u_1$, that is $B=A_1$. <strong>A repeated positive weight is the only case in which the best approximation of rank at most one is not unique.</strong></p>
 <p><strong>The truncation is the spectral truncation.</strong> The best approximation by an operator of rank at most one keeps the largest weight and discards the other. <strong>This is the Eckart–Young theorem at size two</strong>, and the error is exactly the discarded weight.</p>
@@ -481,7 +481,7 @@ $$</p>
 <p>$$
 \det \mathsf M_2(\tilde Q)=N(\tilde Q),
 \qquad
-\lVert \mathsf M_2(\tilde Q)\rVert_{\mathrm{F}}^2=2\langle\tilde Q,\tilde Q\rangle_{*} .
+\langle \mathsf M_2(\tilde Q)\rangle_*=2\langle\tilde Q,\tilde Q\rangle_{*} .
 $$</p>
 <p>The explicit formula of §<em>The Explicit Formula</em> applied to $\mathsf M_2(\tilde Q)$ gives, with $T=2S$ and $\Delta=\lvert N(\tilde Q)\rvert^2$,</p>
 <p>$$
@@ -534,7 +534,7 @@ A=U\Sigma V^{\dagger}=\sigma_1u_1v_1^{\dagger}+\sigma_2u_2v_2^{\dagger},
 U,V\in\mathrm{U}(2),
 $$</p>
 <p>with $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$ and $Av_i=\sigma_iu_i$. The weights are the square roots of the eigenvalues of $A^{\dagger}A$, the right vectors are an orthonormal eigenbasis of $A^{\dagger}A$, and the left vectors are the normalised images of the right ones, completed by an arbitrary orthonormal basis where a weight vanishes. The proof is the spectral theorem for the Hermitian positive semidefinite operator $A^{\dagger}A$ at size two, proved here and not quoted.</p>
-<p>The three identities are $\sigma_1\sigma_2=\lvert\det A\rvert$, $\sigma_1^2+\sigma_2^2=\lVert A\rVert_{\mathrm{F}}^2=T$ and $\sigma_1=\lVert A\rVert_{\mathrm{op}}$; the explicit formula is</p>
+<p>The three identities are $\sigma_1\sigma_2=\lvert\det A\rvert$, $\sigma_1^2+\sigma_2^2=\langle A\rangle_*=T$ and $\sigma_1=\lVert A\rVert_{\mathrm{op}}$; the explicit formula is</p>
 <p>$$
 \sigma_{1,2}=\sqrt{\frac{T\pm\sqrt{T^2-4\Delta}}{2}},
 \qquad
@@ -582,7 +582,7 @@ $$</p>
 <td>the Hilbert–Schmidt form, $\operatorname{tr}(B^{\dagger}A)$</td>
 </tr>
 <tr>
-<td>$\lVert A\rVert_{\mathrm{F}}$, $\lVert A\rVert_{\mathrm{op}}$</td>
+<td>$\langle A\rangle_*^{1/2}$, $\lVert A\rVert_{\mathrm{op}}$</td>
 <td>the Frobenius norm and the operator norm</td>
 </tr>
 <tr>
@@ -614,7 +614,7 @@ $$</p>
 <td>the modulus of $A$</td>
 </tr>
 <tr>
-<td>$T=\lVert A\rVert_{\mathrm{F}}^2$</td>
+<td>$T=\langle A\rangle_*$</td>
 <td>the sum of the squared moduli of the four entries</td>
 </tr>
 <tr>

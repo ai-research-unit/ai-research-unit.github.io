@@ -116,16 +116,16 @@ $$</p>
 <h3 id="what-is-quoted-paleywiener-and-plancherel">What Is Quoted: Paley–Wiener and Plancherel</h3>
 <p><strong>Theorem (Paley–Wiener, quoted).</strong> Let $f:\mathbb{R}^{n}\to\mathbb{B}$ be integrable with $\hat f(\omega)=\int W(t,\omega)f(t)\,dt$. Then $f$ is supported in the ball of radius $R$ if and only if $\hat f$ extends to an entire function of the complexified frequency satisfying</p>
 <p>$$
-\lVert\hat f(\omega)\rVert_E\le C e^{2\pi R\lvert\operatorname{Im}\omega\rvert}
+\lVert\hat f(\omega)\rVert\le C e^{2\pi R\lvert\operatorname{Im}\omega\rvert}
 $$</p>
 <p>for some constant $C$. The number $2\pi R$ is the exponential type of $\hat f$, and the support radius is the type divided by $2\pi$.</p>
 <p><strong>Theorem (Plancherel, quoted).</strong> For $f$ in $L^{2}(\mathbb{R}^{n};\mathbb{B})$ the transform $\hat f$ lies in $L^{2}$ and</p>
 <p>$$
-\int_{\mathbb{R}^{n}}\lVert f(t)\rVert_E^{2}\,dt=\int_{\mathbb{R}^{n}}\lVert\hat f(\omega)\rVert_E^{2}\,d\omega ,
+\int_{\mathbb{R}^{n}}\lVert f(t)\rVert^{2}\,dt=\int_{\mathbb{R}^{n}}\lVert\hat f(\omega)\rVert^{2}\,d\omega ,
 $$</p>
 <p>so the transform is unitary, and its inverse is the conjugate kernel.</p>
 <p><strong>Remark (the hypotheses, and why they are named).</strong> Both theorems are quoted from <em>Biquaternion Continuous Harmonic Analysis</em>, stated for $\mathbb{B}$-valued functions with the Euclidean norm on the eight real coordinates, the first under integrability and the second under membership of $L^{2}$. <strong>They are not proved here</strong>: Paley–Wiener converts a support radius into a type, and Plancherel a pointwise bound on the symbol into a bound on the operator.</p>
-<p><strong>Corollary (when the reciprocal is a bounded operator).</strong> Multiplication by $\Sigma^{-1}$ is bounded on $L^{2}$ if and only if $\lVert\Sigma(\omega)^{-1}\rVert_E$ is bounded on the real frequencies, that is if and only if $Z(P)$ stays at a positive distance from $\mathbb{R}^{n}$.</p>
+<p><strong>Corollary (when the reciprocal is a bounded operator).</strong> Multiplication by $\Sigma^{-1}$ is bounded on $L^{2}$ if and only if $\lVert\Sigma(\omega)^{-1}\rVert$ is bounded on the real frequencies, that is if and only if $Z(P)$ stays at a positive distance from $\mathbb{R}^{n}$.</p>
 <p><em>Proof.</em> Plancherel makes the transform unitary, so multiplication by a function is bounded with the supremum of its norm as the bound. That supremum is finite exactly when $Z(P)$ does not meet the real frequencies and stays away from them.</p>
 <h2 id="residues-at-a-simple-null-point">Residues at a Simple Null Point</h2>
 <h3 id="the-plane-case-quoted">The Plane Case, Quoted</h3>
@@ -195,7 +195,7 @@ $$</p>
 <h3 id="the-tail-of-a-solution">The Tail of a Solution</h3>
 <p><strong>Proposition (the bound on a solution).</strong> Let $f$ be integrable and supported in a ball of radius $R$, let $\kappa$ obey the bound of the previous proposition, and let $u=\kappa*f$. Then</p>
 <p>$$
-\lVert u(x)\rVert_E\le C'\lVert f\rVert_{1}\bigl(1+\lvert x\rvert\bigr)^{k-1}e^{-2\pi\rho(\lvert x\rvert-R)} .
+\lVert u(x)\rVert\le C'\lVert f\rVert_{1}\bigl(1+\lvert x\rvert\bigr)^{k-1}e^{-2\pi\rho(\lvert x\rvert-R)} .
 $$</p>
 <p><em>Proof.</em> For $y$ in the support of $f$ the number $\lvert x-y\rvert$ is at least $\lvert x\rvert-R$, and the bound is monotone in $\lvert x-y\rvert$ on the side where the kernel does not vanish; integrate the bound against $\lVert f(y)\rVert\,dy$.</p>
 <p><strong>Corollary (a solution of compact support needs a vanishing datum at every pole).</strong> Suppose $\Sigma$ has a pole at $\omega_0$ with $\operatorname{Im}\omega_0\ne0$, and let $f$ be a solution whose transform is $\hat f=\Sigma^{-1}\hat g$. If $\hat g(\omega_0)\ne0$, then $\hat f$ has a pole at $\omega_0$ and $f$ is not of compact support.</p>
@@ -390,7 +390,7 @@ $$</p>
 <td>the real $8\times8$ determinant, equal to $\lvert N(\tilde Q)\rvert^{4}$</td>
 </tr>
 <tr>
-<td>$\lVert\cdot\rVert_E$</td>
+<td>$\lVert\cdot\rVert$</td>
 <td>the Euclidean norm on the eight real coordinates</td>
 </tr>
 <tr>

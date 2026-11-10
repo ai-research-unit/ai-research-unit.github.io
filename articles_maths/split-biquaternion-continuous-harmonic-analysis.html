@@ -135,11 +135,11 @@ $$</p>
 <h3 id="convergence">Convergence</h3>
 <p>The integral defining the transform converges absolutely if $f$ is integrable, i.e., if</p>
 <p>$$
-\int_{-\infty}^{\infty} \|f(t)\|_E \, dt < \infty.
+\int_{-\infty}^{\infty} \|f(t)\| \, dt < \infty.
 $$</p>
 <p>Under this condition, the transform $F$ is bounded and uniformly continuous:</p>
 <p>$$
-\|F(\omega)\|_E \leq \int_{-\infty}^{\infty} \|f(t)\|_E \, dt, \qquad \omega \in \mathbb{R}.
+\|F(\omega)\| \leq \int_{-\infty}^{\infty} \|f(t)\| \, dt, \qquad \omega \in \mathbb{R}.
 $$</p>
 <p>The convergence of the inverse transform requires additional conditions, as in the ordinary complex case. The standard conditions are:</p>
 <ul>
@@ -151,7 +151,7 @@ $$</p>
 <h3 id="the-riemannlebesgue-lemma">The Riemann–Lebesgue Lemma</h3>
 <p><strong>Theorem (Riemann–Lebesgue).</strong> If $f : \mathbb{R} \to \mathbb{B}_{\mathrm{spl}}$ is integrable, then</p>
 <p>$$
-\lim_{|\omega| \to \infty} \|F(\omega)\|_E = 0.
+\lim_{|\omega| \to \infty} \|F(\omega)\| = 0.
 $$</p>
 <p><strong>Proof.</strong> The kernel is bounded and the integrand is integrable. The standard proof for the complex Fourier transform applies component-wise, and the result follows from the component-wise statement.</p>
 <h3 id="the-inversion-theorem">The Inversion Theorem</h3>
@@ -166,10 +166,10 @@ $$</p>
 <p><strong>Theorem (Plancherel).</strong> The transform extends uniquely to a $*$-unitary operator on the space $L^2(\mathbb{R}, \mathbb{B}_{\mathrm{spl}})$ of square-integrable split-biquaternion-valued functions, with</p>
 <p>$$
 \boxed{\;
-\int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega
+\int_{-\infty}^{\infty} \|f(t)\|^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|^2 \, d\omega
 \;}.
 $$</p>
-<p><strong>Proof.</strong> The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved.</p>
+<p><strong>Proof.</strong> The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|^2 = \frac12(\|\tilde{Q}_+\|^2 + \|\tilde{Q}_-\|^2)$, so that the factor cancels between the two sides), the total norm is preserved.</p>
 <p><strong>Corollary (Parseval).</strong> For $f, g \in L^2(\mathbb{R}, \mathbb{B}_{\mathrm{spl}})$,</p>
 <p>$$
 \int_{-\infty}^{\infty} \overline{f(t)} g(t) \, dt = \int_{-\infty}^{\infty} \overline{F(\omega)} G(\omega) \, d\omega.

@@ -89,7 +89,7 @@ $$</p>
 $$</p>
 <p>the Frobenius form, with norm</p>
 <p>$$
-\|A\|_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2 .
+\langle A\rangle_*=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2 .
 $$</p>
 <p>This is the Hilbert space structure on $M_5(\mathbb{C})\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; it is positive definite, and it has <strong>no null cone</strong>. The complex bilinear trace pairing $\operatorname{tr}(AB)$ of <em>The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$</em> is a different object; it is indefinite, and its isotropic cone is not the metric.</p>
 <p>The <strong>singular set</strong> of the algebra is the zero locus of the determinant,</p>
@@ -162,7 +162,7 @@ $$</p>
 <p>is an orthonormal basis of $\mathfrak{u}(5)$ for the positive definite form $\operatorname{tr}(X^*Y)=-\operatorname{tr}(XY)$; its cardinality is $5+10+10=25$.</p>
 <p><strong>Proof.</strong> The matrices $iE_{ii}$ are skew-Hermitian, the matrices $i(E_{ij}+E_{ji})$ are skew-Hermitian, and the matrices $E_{ij}-E_{ji}$ are real skew-symmetric, hence skew-Hermitian. The trace pairings give $\operatorname{tr}(X^*X)=1$ for each normalized basis element and $0$ for distinct ones: for the diagonal, $\operatorname{tr}((iE_{ii})^*(iE_{ii}))=\operatorname{tr}(E_{ii})=1$; for the off-diagonal, the two entries of the symmetric or antisymmetric combination give trace $2$, divided by $2$. The count is $5$ diagonal $+10$ symmetric $+10$ antisymmetric $=25$.</p>
 <p><strong>Corollary.</strong> The form $-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{u}(5)$; it is the restriction of the Frobenius form to the skew-Hermitian half.</p>
-<p><strong>Proof.</strong> For $X\in\mathfrak{u}(5)$, $-\operatorname{tr}(X^2)=\operatorname{tr}(X^*X)=\|X\|_F^2>0$ for $X\ne0$.</p>
+<p><strong>Proof.</strong> For $X\in\mathfrak{u}(5)$, $-\operatorname{tr}(X^2)=\operatorname{tr}(X^*X)=\langle X\rangle_*>0$ for $X\ne0$.</p>
 <h2 id="the-trace-form-on-the-algebra">The Trace Form on the Algebra</h2>
 <h3 id="the-positive-definite-form">The Positive Definite Form</h3>
 <p><strong>Definition.</strong> The <strong>Frobenius form</strong> on $M_5(\mathbb{C})$ is</p>
@@ -172,7 +172,7 @@ $$</p>
 <p><strong>Theorem.</strong> The Frobenius form is a positive definite Hermitian inner product:</p>
 <p>$$
 \langle A,B\rangle_F=\overline{\langle B,A\rangle}_F,\qquad
-\langle A,A\rangle_F=\|A\|_F^2=\sum_{i,j}|A_{ij}|^2>0\quad(A\ne0).
+\langle A,A\rangle_F=\langle A\rangle_*=\sum_{i,j}|A_{ij}|^2>0\quad(A\ne0).
 $$</p>
 <p><strong>Proof.</strong> The conjugate symmetry: $\overline{\operatorname{tr}(A^*B)}=\operatorname{tr}(B^*A)$. The positivity: $(A^*A)_{ii}=\sum_k\bar A_{ki}A_{ki}=\sum_k|A_{ki}|^2$, so the trace is the sum of the absolute squares of all entries, positive for $A\ne0$.</p>
 <p><strong>Corollary.</strong> The form is nondegenerate, and the map $A\mapsto\langle A,\cdot\rangle_F$ identifies $M_5$ with its conjugate dual. The Hilbert space dimension is $25$ complex, $50$ real.</p>
@@ -183,10 +183,10 @@ $$
 $$
 The Frobenius form is the Hilbert space metric; the trace pairing is the algebraic form of the Frobenius algebra.</p>
 <h3 id="the-frobenius-norm">The Frobenius Norm</h3>
-<p><strong>Definition.</strong> The <strong>Frobenius norm</strong> is $\|A\|_F=\sqrt{\operatorname{tr}(A^*A)}$.</p>
+<p><strong>Definition.</strong> The <strong>Frobenius norm</strong> is $\langle A\rangle_*^{1/2}=\sqrt{\operatorname{tr}(A^*A)}$.</p>
 <p><strong>Proposition.</strong> The Frobenius norm is a norm, and it is unitarily invariant:</p>
 <p>$$
-\|UAV\|_F=\|A\|_F\qquad(U,V\in U(5)).
+\langle UAV\rangle_*^{1/2}=\langle A\rangle_*^{1/2}\qquad(U,V\in U(5)).
 $$</p>
 <p><strong>Proof.</strong> The norm is the Euclidean norm of the $25$ complex coordinates; the triangle inequality and homogeneity are those of the Euclidean norm. For $*$-unitary $U,V$, $(UAV)^*(UAV)=V^*A^*U^*UAV=V^*A^*AV$, which has the same trace as $A^*A$ by cyclicity.</p>
 <p><strong>Corollary.</strong> The $*$-unitary group acts on $M_5$ by isometries of the Frobenius form, on the left and on the right.</p>
@@ -213,7 +213,7 @@ $$</p>
 $$</p>
 <p><strong>Proposition.</strong> The adjoint action is $*$-unitary, and it preserves the Hermitian and skew-Hermitian subspaces; it preserves the trace and the determinant.</p>
 <p><strong>Proof.</strong> It is the composition of the left and right $*$-unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and skew-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.</p>
-<p><strong>Corollary.</strong> The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\|A\|_F$.</p>
+<p><strong>Corollary.</strong> The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\langle A\rangle_*^{1/2}$.</p>
 <p><strong>Proof.</strong> The characteristic polynomial is conjugation-invariant; the Frobenius norm is invariant, so the orbit lies in the sphere of that radius.</p>
 <h3 id="the-compact-real-form">The Compact Real Form</h3>
 <p><strong>Theorem.</strong> The Lie algebra $\mathfrak{u}(5)$ is the compact real form of $\mathfrak{gl}_5(\mathbb{C})$, and the exponential map $\mathfrak{u}(5)\to U(5)$ is surjective.</p>
@@ -333,7 +333,7 @@ $$</p>
 <td>The Frobenius form</td>
 </tr>
 <tr>
-<td>$\|A\|_F$</td>
+<td>$\langle A\rangle_*^{1/2}$</td>
 <td>The Frobenius norm</td>
 </tr>
 <tr>

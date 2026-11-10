@@ -76,7 +76,7 @@ AA^{+}A=A,\qquad A^{+}AA^{+}=A^{+},\qquad (AA^{+})^{*}=AA^{+},\qquad (A^{+}A)^{*
 $$</p>
 <p>It exists for every matrix, and it inverts $A$ between the row space and the column space, with zero on the two orthogonal complements. This article gives the closed forms, the four subspaces it determines, its least-squares reading, the limit formula that produces it as a regularised inverse, and the discontinuity at the matrices where the rank drops.</p>
 <p>The general theory is <em>The Moore–Penrose Inverse in an Involutive Algebra</em>: the four equations, their uniqueness, the characterisation by the two ideals and the algebraic identities are proved there for an arbitrary algebra with involution, and they are cited here rather than repeated. The matrix case adds three things: the rank factorisation, which gives the inverse in closed form; the singular value form, which gives it entry by entry in a unitary basis; and the numerical analysis, the least-squares reading and the limit formula. The tensor case is <em>The Moore-Penrose Inverse of a Reduced Biquaternion Tensor</em>; the biquaternion case, where the inverse of a Hermitian factor drives the polar decomposition, is <em>The Polar Decomposition of a Biquaternion</em>.</p>
-<p>Throughout, $A\in M_{m\times n}(\mathbb{C})$, $A^{*}=\overline{A}^{\mathsf T}$ is the conjugate transpose, and $I=I_{m}$ or $I_{n}$ according to the side. The rank is $\operatorname{rk}A$. A <strong>projection</strong> is a matrix $\Pi$ with $\Pi^{2}=\Pi=\Pi^{*}$, that is the orthogonal projection onto its range. The <strong>operator norm</strong> is $\lVert A\rVert_{2}=\max_{\lVert x\rVert=1}\lVert Ax\rVert$ and the <strong>Frobenius norm</strong> is $\lVert A\rVert_{F}^{2}=\operatorname{Tr}(A^{*}A)$. On square matrices the conjugate transpose is the involution of the algebra $M_{n}(\mathbb{C})$, and it is the only involution used; on rectangular matrices it maps $M_{m\times n}(\mathbb{C})$ to $M_{n\times m}(\mathbb{C})$ and is read with it.</p>
+<p>Throughout, $A\in M_{m\times n}(\mathbb{C})$, $A^{*}=\overline{A}^{\mathsf T}$ is the conjugate transpose, and $I=I_{m}$ or $I_{n}$ according to the side. The rank is $\operatorname{rk}A$. A <strong>projection</strong> is a matrix $\Pi$ with $\Pi^{2}=\Pi=\Pi^{*}$, that is the orthogonal projection onto its range. The <strong>operator norm</strong> is $\lVert A\rVert_{2}=\max_{\lVert x\rVert=1}\lVert Ax\rVert$ and the <strong>Frobenius norm</strong> is $\langle A\rangle_*=\operatorname{Tr}(A^{*}A)$. On square matrices the conjugate transpose is the involution of the algebra $M_{n}(\mathbb{C})$, and it is the only involution used; on rectangular matrices it maps $M_{m\times n}(\mathbb{C})$ to $M_{n\times m}(\mathbb{C})$ and is read with it.</p>
 <h2 id="the-four-conditions">The Four Conditions</h2>
 <p><strong>Definition.</strong> A <strong>Moore–Penrose inverse</strong> of $A$ is a matrix $A^{+}\in M_{n\times m}(\mathbb{C})$ satisfying the four Penrose equations above.</p>
 <p><strong>Theorem (existence and uniqueness).</strong> Every matrix has exactly one Moore–Penrose inverse.</p>
@@ -154,7 +154,7 @@ $$</p>
 <p><strong>Corollary (the rank and the norms).</strong> The rank of $A$ is the number of nonzero singular values $r$. For $r\ge1$,</p>
 <p>$$
 \bigl\lVert A^{+}\bigr\rVert_{2}=\frac{1}{\mu_{r}},\qquad
-\bigl\lVert A^{+}\bigr\rVert_{F}^{2}=\sum_{i=1}^{r}\frac{1}{\mu_{i}^{2}},
+\bigl\langle A^{+}\\bigr\rangle_*=\sum_{i=1}^{r}\frac{1}{\mu_{i}^{2}},
 $$</p>
 <p>with $\mu_{r}$ the smallest nonzero singular value; for $A=0$ both norms vanish.</p>
 <p><em>Proof.</em> The nonzero singular values of $A^{+}$ are the reciprocals of those of $A$, and the norms are read on the diagonal.</p>
@@ -365,7 +365,7 @@ $$</p>
 <td>the diagonal matrix of reciprocal nonzero entries</td>
 </tr>
 <tr>
-<td>$\lVert\cdot\rVert_{2}$, $\lVert\cdot\rVert_{F}$</td>
+<td>$\lVert\cdot\rVert_{2}$, $\langle\cdot\rangle_*^{1/2}$</td>
 <td>the operator norm and the Frobenius norm</td>
 </tr>
 </tbody>

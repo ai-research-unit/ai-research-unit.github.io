@@ -77,33 +77,33 @@
 <p>$$
 (\tilde{Q}_1,\tilde{Q}_2)_{\mathbb{R}}=\sum_{\mu\in\{t,x,y,z\}}\bigl(q_{1\mu} q_{2\mu}+q'_{1\mu} q'_{2\mu}\bigr).
 $$</p>
-<p><strong>Proposition.</strong> $(\cdot,\cdot)_{\mathbb{R}}$ is a positive definite real inner product on $\mathbb{B}$, and its associated norm is $\|\tilde{Q}\|_E$.</p>
-<p><strong>Proof.</strong> Linearity in each argument and symmetry over $\mathbb{R}$ are immediate from the definition; and $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu(q_\mu^{2}+q'_\mu{}^{2})$ is positive off zero, since a vanishing sum of squares forces $q_\mu=q'_\mu=0$. The associated norm is the square root of $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$.</p>
+<p><strong>Proposition.</strong> $(\cdot,\cdot)_{\mathbb{R}}$ is a positive definite real inner product on $\mathbb{B}$, and its associated norm is $\|\tilde{Q}\|$.</p>
+<p><strong>Proof.</strong> Linearity in each argument and symmetry over $\mathbb{R}$ are immediate from the definition; and $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu(q_\mu^{2}+q'_\mu{}^{2})$ is positive off zero, since a vanishing sum of squares forces $q_\mu=q'_\mu=0$. The associated norm is the square root of $(\tilde{Q},\tilde{Q})_{\mathbb{R}}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|^{2}$.</p>
 <p><strong>Theorem (the isometry).</strong> The coefficient map</p>
 <p>$$
 \operatorname{coef}:\mathbb{B}\longrightarrow\mathbb{R}^{8},\qquad \tilde{Q}=\sum_\mu(q_\mu+iq'_\mu)e_\mu\longmapsto(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z),
 $$</p>
 <p>is a linear isometry of $(\mathbb{B},(\cdot,\cdot)_{\mathbb{R}})$ onto $\mathbb{R}^{8}$ with the standard inner product.</p>
 <p><strong>Proof.</strong> The map is bijective and $\mathbb{R}$-linear because $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ is a real basis, and it preserves the inner product by the displayed formula.</p>
-<p>Two consequences are used throughout. First, $\mathbb{B}$ is <strong>complete</strong> in $\|\cdot\|_E$: it is finite-dimensional, and a finite-dimensional inner product space is a Hilbert space. Second, $\|\cdot\|_E$ defines the unique Hausdorff vector-space topology on $\mathbb{B}$, the <strong>Euclidean topology</strong>, and this is the topology of the corpus. The metric is $d(\tilde{Q}_1,\tilde{Q}_2)=\|\tilde{Q}_1-\tilde{Q}_2\|_E$.</p>
+<p>Two consequences are used throughout. First, $\mathbb{B}$ is <strong>complete</strong> in $\|\cdot\|$: it is finite-dimensional, and a finite-dimensional inner product space is a Hilbert space. Second, $\|\cdot\|$ defines the unique Hausdorff vector-space topology on $\mathbb{B}$, the <strong>Euclidean topology</strong>, and this is the topology of the corpus. The metric is $d(\tilde{Q}_1,\tilde{Q}_2)=\|\tilde{Q}_1-\tilde{Q}_2\|$.</p>
 <h2 id="the-algebra-as-a-normed-algebra">The Algebra as a Normed Algebra</h2>
 <p>The multiplication is continuous, and the estimate is sharp.</p>
 <p><strong>Theorem (the normed-algebra inequality).</strong> For all $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$,</p>
 <p>$$
-\boxed{\; \|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt{2}\,\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E \;},
+\boxed{\; \|\tilde{Q}_1\tilde{Q}_2\|\leq\sqrt{2}\,\|\tilde{Q}_1\|\|\tilde{Q}_2\| \;},
 $$</p>
 <p>and the constant $\sqrt{2}$ cannot be lowered.</p>
-<p><strong>Proof.</strong> Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{Q})\|_F=\sqrt2\|\tilde{Q}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
+<p><strong>Proof.</strong> Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, which is a linear isometry up to the factor $\sqrt2$, one has $\langle \mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\|\tilde{Q}\|$, where $\langle \cdot\rangle_*^{1/2}$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
 $$
-\sqrt2\,\|\tilde{Q}_1\tilde{Q}_2\|_E=\|\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\|_F\leq\|\mathsf{M}_2(\tilde{Q}_1)\|_F\|\mathsf{M}_2(\tilde{Q}_2)\|_F=2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E,
+\sqrt2\,\|\tilde{Q}_1\tilde{Q}_2\|=\langle \mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\rangle_*^{1/2}\leq\langle \mathsf{M}_2(\tilde{Q}_1)\rangle_*^{1/2}\langle \mathsf{M}_2(\tilde{Q}_2)\rangle_*^{1/2}=2\|\tilde{Q}_1\|\|\tilde{Q}_2\|,
 $$
-which is the inequality. For sharpness take $\tilde{Q}_1=\tilde{Q}_2=e_t+i\vec e_x$: then $\tilde{Q}_1^{2}=2e_t+2i\vec e_x$ and $\|\tilde{Q}_1\|_E^{2}=2$, $\|\tilde{Q}_1^{2}\|_E=2\sqrt2$, so $\|\tilde{Q}_1^{2}\|_E=\sqrt2\,\|\tilde{Q}_1\|_E^{2}$.</p>
+which is the inequality. For sharpness take $\tilde{Q}_1=\tilde{Q}_2=e_t+i\vec e_x$: then $\tilde{Q}_1^{2}=2e_t+2i\vec e_x$ and $\|\tilde{Q}_1\|^{2}=2$, $\|\tilde{Q}_1^{2}\|=2\sqrt2$, so $\|\tilde{Q}_1^{2}\|=\sqrt2\,\|\tilde{Q}_1\|^{2}$.</p>
 <p><strong>Corollary.</strong> Multiplication $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$ is continuous, inversion is continuous on the units, and $\mathbb{B}$ is a topological algebra over $\mathbb{R}$ with $\mathbb{B}^{\times}$ a topological group.</p>
 <p><strong>Proof.</strong> The inequality bounds the product in terms of the factors; inversion is a rational function of the coefficients, hence continuous on the set of invertible elements, and the group axioms hold there, so the operations are continuous.</p>
 <p><strong>Proposition (the isometries that the algebra supplies).</strong> Multiplication by a central element and the conjugations are orthogonal:</p>
 <p>$$
-\|(A e_t)\tilde{Q}\|_E=|A|\,\|\tilde{Q}\|_E,\qquad
-\|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
+\|(A e_t)\tilde{Q}\|=|A|\,\|\tilde{Q}\|,\qquad
+\|\tilde{Q}^{\natural}\|=\|\bar{\tilde{Q}}\|=\|\tilde{Q}^{*}\|=\|\tilde{Q}\| .
 $$</p>
 <p>Moreover, for every $*$-unitary biquaternion $\tilde Q$ the inner conjugation $\mathrm{Sd}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ is a Euclidean isometry.</p>
 <p><strong>Proof.</strong> A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\mathsf{M}_2$ carries $\mathrm{Sd}_{\tilde Q}$ to $M\mapsto M_{\tilde Q}XM_{\tilde Q}^{\dagger}$ with $M_{\tilde Q}$ $*$-unitary, and the Frobenius norm is invariant under $*$-unitary similarity.</p>
@@ -123,9 +123,9 @@ $$</p>
 <p>The complement of the $\natural$-degenerate set, $\{\langle\tilde Q\rangle_{\natural}=0\}$, is dense in $\mathbb{B}$, because that set is a proper algebraic subset of real codimension two — a complex hypersurface of $\mathbb{B}\cong\mathbb{C}^{4}$ — with empty interior (<em>Topology in the Space of Biquaternions</em>); this is what makes the $\natural$-regular set, the group of units, an open dense subset carrying the topology it does.</p>
 <h2 id="the-euclidean-unit-sphere">The Euclidean Unit Sphere</h2>
 <p>$$
-\boxed{\; S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|_E=1\}\cong S^{7} \;}
+\boxed{\; S^{7}_{E}=\{\tilde{Q}\in\mathbb{B}:\|\tilde{Q}\|=1\}\cong S^{7} \;}
 $$</p>
-<p>is, by the isometry of §<em>The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$</em>, the standard unit sphere of $\mathbb{R}^{8}$: closed, compact, connected, and a smooth $7$-manifold. It is nevertheless the <strong>wrong</strong> sphere for the algebra, and the reason is that $\|\cdot\|_E$ is not multiplicative: for $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=0$ while $\|\tilde{Q}\|_E=\sqrt2$, so</p>
+<p>is, by the isometry of §<em>The Euclidean Norm and the Isometry onto $\mathbb{R}^{8}$</em>, the standard unit sphere of $\mathbb{R}^{8}$: closed, compact, connected, and a smooth $7$-manifold. It is nevertheless the <strong>wrong</strong> sphere for the algebra, and the reason is that $\|\cdot\|$ is not multiplicative: for $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=0$ while $\|\tilde{Q}\|=\sqrt2$, so</p>
 <p>$$
 \tilde{Q}_0=\frac{\vec e_x+i\vec e_y}{\sqrt2}\in S^{7}_{E},\qquad \tilde{Q}_0^{2}=0,
 $$</p>
@@ -138,7 +138,7 @@ $$</p>
 <p><strong>The Riesz duality.</strong> Every $\mathbb{R}$-linear functional on $\mathbb{B}$ is $(\tilde{Q}_2,\cdot)_{\mathbb{R}}$ for a unique $\tilde{Q}_2$. This is the finite-dimensional Riesz representation theorem, and it is what makes the adjoint operations of the operator articles well defined.</p>
 <p><strong>The Riemannian metric.</strong> $(\cdot,\cdot)_{\mathbb{R}}$ is the flat Riemannian metric of $\mathbb{B}\cong\mathbb{R}^{8}$; the orthogonal group $O(8)$ is its isometry group, and the $\mathbb{C}$-linear isometries that preserve the algebra structure are exactly the inner automorphisms by the $*$-unitary biquaternions, of group $PU(2)\cong SO(3)$ (<em>Biquaternion Automorphisms and Derivations</em>). Over $\mathbb{R}$ the coefficient conjugation adds one more coset, since it is an $\mathbb{R}$-algebra automorphism of unit Euclidean norm, so the real-linear automorphisms that are Euclidean isometries form $PU(2)\rtimes\mathbb{Z}/2$.</p>
 <h2 id="summary">Summary</h2>
-<p>The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$, and central multipliers, the conjugations and inner conjugations by $*$-unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in <em>The Biquaternion Unit Group as a Topological Group</em> and <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
+<p>The Euclidean norm is $\|\tilde{Q}\|=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|\leq\sqrt2\|\tilde{Q}_1\|\|\tilde{Q}_2\|$, and central multipliers, the conjugations and inner conjugations by $*$-unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in <em>The Biquaternion Unit Group as a Topological Group</em> and <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -153,7 +153,7 @@ $$</p>
 <td>Real inner product; positive definite</td>
 </tr>
 <tr>
-<td>$\|\tilde{Q}\|_E=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$</td>
+<td>$\|\tilde{Q}\|=(\sum_\mu\lvert Q_\mu\rvert^{2})^{1/2}$</td>
 <td>Euclidean norm</td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@ $$</p>
 <td>Linear isometry onto $\mathbb{R}^{8}$</td>
 </tr>
 <tr>
-<td>$\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$</td>
+<td>$\|\tilde{Q}_1\tilde{Q}_2\|\leq\sqrt2\|\tilde{Q}_1\|\|\tilde{Q}_2\|$</td>
 <td>Normed-algebra inequality, sharp</td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ $$</p>
 <td>Contraction of $\mathbb{B}$ to $0$</td>
 </tr>
 <tr>
-<td>$S^{7}_{E}=\{\|\tilde{Q}\|_E=1\}$</td>
+<td>$S^{7}_{E}=\{\|\tilde{Q}\|=1\}$</td>
 <td>Euclidean unit sphere; not a group</td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ $$</p>
 <li><a href="topology-in-the-space-of-biquaternions.html">Topology in the Space of Biquaternions</a>, for the definitions, the equivalence of norms and the uniqueness of the topology used here</li>
 <li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the zero divisors, their cone and the link used here</li>
 <li><a href="the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the group of the $*$-unitary elements and the retraction of the group of units onto it</li>
-<li><a href="m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions</a>, for the matrix reading of $\|\cdot\|_E$</li>
+<li><a href="m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions</a>, for the matrix reading of $\|\cdot\|$</li>
 <li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the invertibility criterion and the group of units</li>
 <li>John B. Conway, <em>A Course in Functional Analysis</em>, 2nd edition (Springer, 1990), for the finite-dimensional inner-product-space facts used here</li>
 </ul>

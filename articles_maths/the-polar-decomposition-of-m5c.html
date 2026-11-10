@@ -80,7 +80,7 @@ $$</p>
 A=V\Sigma W^*,\qquad \Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5),
 \qquad \sigma_1\ge\cdots\ge\sigma_5\ge0,
 $$</p>
-<p>with $V,W$ $*$-unitary. The numbers $\sigma_k$ are the <strong>singular values</strong>, the eigenvalues of $|A|$. They give the operator norm $\|A\|=\sigma_1$, the Frobenius norm $\|A\|_F=\sqrt{\sum_k\sigma_k^2}$, the determinant $|\det A|=\prod_k\sigma_k$, and the condition number $\sigma_1/\sigma_5$ for an invertible $A$.</p>
+<p>with $V,W$ $*$-unitary. The numbers $\sigma_k$ are the <strong>singular values</strong>, the eigenvalues of $|A|$. They give the operator norm $\|A\|=\sigma_1$, the Frobenius norm $\langle A\rangle_*^{1/2}=\sqrt{\sum_k\sigma_k^2}$, the determinant $|\det A|=\prod_k\sigma_k$, and the condition number $\sigma_1/\sigma_5$ for an invertible $A$.</p>
 <p>The polar decomposition is also the <strong>geometry of $GL_5$</strong>: the map</p>
 <p>$$
 U(5)\times\mathcal{P}\longrightarrow GL_5,\qquad (U,P)\longmapsto UP,
@@ -140,7 +140,7 @@ $$</p>
 <p><strong>Theorem.</strong> For $A$ with singular values $\sigma_1\ge\cdots\ge\sigma_5$,</p>
 <p>$$
 \|A\|=\sigma_1,\qquad
-\|A\|_F=\sqrt{\sigma_1^2+\cdots+\sigma_5^2},\qquad
+\langle A\rangle_*^{1/2}=\sqrt{\sigma_1^2+\cdots+\sigma_5^2},\qquad
 |\det A|=\sigma_1\cdots\sigma_5 .
 $$</p>
 <p><strong>Proof.</strong> The operator norm is the square root of the largest eigenvalue of $A^*A$, which is $\sigma_1$; the Frobenius norm is the square root of the trace of $A^*A$, which is the sum of the squares; the determinant is the product of the eigenvalues of $A$, whose moduli are the singular values (the eigenvalues of $|A|$).</p>
@@ -178,7 +178,7 @@ $$</p>
 $$</p>
 <p>and the distance is</p>
 <p>$$
-d(P,Q)=\left\|\log\left(P^{-1/2}QP^{-1/2}\right)\right\|_F .
+d(P,Q)=\left\langle \log\left(P^{-1/2}QP^{-1/2}\right)\right\rangle_*^{1/2} .
 $$</p>
 <p><strong>Proof.</strong> The geodesics of the symmetric space $\mathcal{P}$ are the images of the one-parameter subgroups $t\mapsto P^{1/2}e^{tS}P^{1/2}$ with $S$ Hermitian; the endpoint condition at $t=1$ determines $S=\log(P^{-1/2}QP^{-1/2})$. The distance is the length of the geodesic, which is the Frobenius norm of $S$ because the metric is the trace metric.</p>
 <p><strong>Corollary.</strong> The distance is invariant under the diagonal action $(P,Q)\mapsto(gPg^*,gQg^*)$ and under inversion $(P,Q)\mapsto(P^{-1},Q^{-1})$; it is complete, and the exponential map at $I$ is a diffeomorphism.</p>
@@ -210,7 +210,7 @@ $$</p>
 <p>$$
 \boxed{\ A=U|A|=V\Sigma W^*;\quad \|A\|=\sigma_1;\quad |\det A|=\prod_k\sigma_k;\quad GL_5\cong U(5)\times\mathcal{P}.\ }
 $$</p>
-<p>The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type, with geodesics $P^{1/2}(P^{-1/2}QP^{-1/2})^tP^{1/2}$ and distance $\|\log(P^{-1/2}QP^{-1/2})\|_F$. For singular $A$, the positive part and the singular values are unique, and the partial isometry is unique only on the range.</p>
+<p>The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type, with geodesics $P^{1/2}(P^{-1/2}QP^{-1/2})^tP^{1/2}$ and distance $\langle \log(P^{-1/2}QP^{-1/2})\rangle_*^{1/2}$. For singular $A$, the positive part and the singular values are unique, and the partial isometry is unique only on the range.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>

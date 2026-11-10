@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equilibrium Partition Function in a Moving Frame — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="equilibrium-partition-function-in-a-moving-frame"><strong>Equilibrium Partition Function in a Moving Frame</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The partition function of an equilibrium state does not change when the state is boosted; what changes is the thermal element that appears in its exponent, and with it the temperature a boosted observer reads.</strong> This article writes that statement in the corpus's letters and does nothing else.</p>
+<p><strong>The rest-frame object is <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>'s, and this article adds the boost and the frame dependence.</strong> The trace, the identification of the trace with twice the scalar part, the thermal operator, the free energy, the internal energy and the entropy are all that article's; they are quoted here as needed and not re-derived. <strong>This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.</strong></p>
+<p><strong>Two things are easy to get wrong and are the article's real content.</strong> The first is to think that boosting a thermal state changes its partition function. It does not: $Z$ is a trace of an operator whose exponent is a Lorentz scalar, so $Z$ is a scalar, and a scalar is the same number in every frame. The second is to think that the temperature is invariant. It is not: the temperature is the reciprocal of a period, the period is the temporal component of a vector, and a boost stretches it. <strong>Both mistakes come from treating the symbol $\beta$ as a number when it is a direction with a length attached.</strong></p>
+<p><strong>The order of business.</strong> The thermal element is defined first, as an element of the material sector with a norm and a temporal component, and the boost is written on it. The exponent of the thermal weight is then shown to be the contraction of that element with the flow momentum, which is a scalar, which is why $Z$ is a scalar. The partition function itself is written in the moving frame and reduced to the rest-frame one. The Matsubara condition is written along the tilted thermal circle. Then the thermodynamic quantities are read in the moving frame — temperature, energy density, pressure, entropy, free energy — with the numerical checks the corpus expects. The article closes with the status section, which records what is transcription and what is the corpus's reading, and with the summary and the notation.</p>
+<h2 id="the-thermal-element-of-a-moving-frame">The Thermal Element of a Moving Frame</h2>
+<h3 id="the-inverse-temperature-as-a-period">The inverse temperature as a period</h3>
+<p><strong>The inverse temperature is a length, and the corpus fixes it once.</strong> From <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>,</p>
+<p>$$
+\beta=\frac{m\,c}{k_m\,k_{B}\,T},
+\qquad
+c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T},
+$$</p>
+<p>with $\beta$ the imaginary-time circumference, a length in these letters, and $c\beta$ the corresponding span in the material sector's units. <strong>The display is quoted and not re-derived</strong>: the article cited establishes that the imaginary-time direction is compact with circumference $\beta$ in the coordinate $r'_t$, and that the identity above is exact. Here the only use made of it is that $\beta$ is a <em>period</em> and not a number: it is a length measured along a direction, and the direction is what the boost acts on.</p>
+<p><strong>The direction is the material sector's imaginary-time axis, and in the rest frame the period lies along it.</strong> In the rest frame of the fluid the thermal displacement is</p>
+<p>$$
+\tilde\beta_{\Phi,0}=\beta\,i\,e_t,
+\qquad
+\langle\tilde\beta_{\Phi,0}\rangle_{\natural}=-\beta^{2},
+$$</p>
+<p>an element of $\mathbb{B}_{\Phi}$ whose only component is the temporal one and whose norm is the negative square of the period. <strong>It is an element and not a vector</strong>: no component is raised, the index is carried low when components are written, and the norm is the corpus's $\natural$ norm with the minus sign that the material sector's temporal slot supplies.</p>
+<h3 id="the-boost">The boost</h3>
+<p><strong>Boosting the state rotates the thermal element into the temporal-and-spatial direction of the flow, and the result is the flow element times the period.</strong> With the velocity element of the conventions,</p>
+<p>$$
+\tilde V_{\Phi}=\gamma\left(i c\,e_t+\vec v\right)
+=\gamma c\left(i e_t+\vec\beta_{\mathrm{vel}}\right),
+\qquad
+\vec\beta_{\mathrm{vel}}=\frac{\vec v}{c},
+\qquad
+\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2},
+$$</p>
+<p>the thermal element of the moving state is</p>
+<p>$$
+\tilde\beta_{\Phi}=\frac{\beta}{c}\,\tilde V_{\Phi}
+=\beta\,\gamma\left(i e_t+\vec\beta_{\mathrm{vel}}\right),
+$$</p>
+<p>whose norm is $\langle\tilde\beta_{\Phi}\rangle_{\natural}=(\beta^{2}/c^{2})(-c^{2})=-\beta^{2}$. <strong>The norm is unchanged by the boost, and that is the whole of the statement that the period is a scalar.</strong> What the boost changes is the <em>direction</em> of the displacement: it acquires a spatial part $\beta\gamma\vec\beta_{\mathrm{vel}}$, so the thermal circle is tilted in any frame in which the fluid moves.</p>
+<p><strong>The components, written low.</strong> With $\tilde\beta_{\Phi}=\beta_{\Phi,t}e_t+\beta_{\Phi,x}\vec e_x+\beta_{\Phi,y}\vec e_y+\beta_{\Phi,z}\vec e_z$,</p>
+<p>$$
+\beta_{\Phi,t}=i\beta\gamma,
+\qquad
+\beta_{\Phi,\eta}=\beta\gamma\,\beta_{\mathrm{vel},\eta},
+$$</p>
+<p>and the rest frame is $\gamma=1$, $\vec\beta_{\mathrm{vel}}=0$. <strong>The temporal component is $i$ times a length, and the factor $i$ is the element's</strong>, exactly as $p_{\Phi,t}=iE/c$ carries the $i$ of the same slot. The product of two $i$'s is what makes the contraction below real.</p>
+<h3 id="the-contraction-with-the-flow-momentum-and-why-math27-is-a-scalar">The contraction with the flow momentum, and why $Z$ is a scalar</h3>
+<p><strong>The thermal exponent is the contraction of the thermal element with the flow momentum, divided by the action quantum, and the contraction is a scalar.</strong> Write</p>
+<p>$$
+-\frac{1}{\hbar}\,\beta_{\Phi,\nu}\,p_{\Phi,\nu},
+\qquad
+p_{\Phi,\nu}=m\,\tilde V_{\Phi,\nu},
+\qquad
+\beta_{\Phi,\nu}=\frac{\beta}{c}\,\tilde V_{\Phi,\nu},
+$$</p>
+<p>so that</p>
+<p>$$
+-\frac{1}{\hbar}\,\beta_{\Phi,\nu}p_{\Phi,\nu}
+=-\frac{\beta}{c\hbar}\,m\,\langle\tilde V_{\Phi}\rangle_{\natural}
+=-\frac{\beta}{c\hbar}\,m\,(-c^{2})
+=\frac{\beta\,m\,c}{\hbar}=\beta\,k_m .
+$$</p>
+<p><strong>The result is independent of $\gamma$ and of $\vec v$, which is the statement that the thermal weight of a state is the same in every frame.</strong> The three ingredients are: the norm of the flow element, which is $-c^{2}$ by the corpus's definition; the norm of the thermal element, which is $-\beta^{2}$; and the identity $\hbar=mc/k_m$. The cancellation of $\gamma$ is not an accident of the algebra but the content of the statement: a boost rotates both the thermal element and the momentum element the same way, so their contraction is invariant.</p>
+<p><strong>Read in the rest frame, the display is the expected one.</strong> There $\beta_{\Phi,\nu}p_{\Phi,\nu}=\beta\,i\,e_t\cdot i\,m\,c=-\beta mc$, so the exponent is $+\beta mc/\hbar=\beta k_m$, the ratio of the imaginary-time circumference to the reduced Compton length $1/k_m$ of the field. <strong>That ratio is the single number the rest-frame thermal weight exponentiates</strong>, and it is the corpus's dimensionless thermal parameter: it is $\beta$ measured in units of the field's own length.</p>
+<p><strong>Read in the moving frame, the display splits into two pieces and both are physical.</strong> Expanding the contraction with the components above,</p>
+<p>$$
+-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}
+=\frac{1}{\hbar}\left(\beta\gamma\,\frac{E}{c}-\beta\gamma\,\vec\beta_{\mathrm{vel}}\cdot\vec p\right)
+=\frac{\beta\gamma}{\hbar}\left(\frac{E}{c}-\vec\beta_{\mathrm{vel}}\cdot\vec p\right),
+$$</p>
+<p>where $p_{\Phi,t}=iE/c$ and the two $i$'s have been multiplied out; the factor $c$ in the first term is the one the temporal slot carries, and it is what makes the two terms have the same dimensions. <strong>On the flow's own momentum the bracket collapses</strong>: with $E=\gamma mc^{2}$ and $\vec p=\gamma m\vec v$, the bracket is $\gamma mc(1-\beta_{\mathrm{vel}}^{2})=mc/\gamma$, so the exponent is $-\beta\gamma\,mc/(\gamma\hbar)=-\beta mc/\hbar=-\beta k_m$, the frame-independent value of the display above. <strong>The second term is a chemical potential for momentum</strong>: in the moving frame the thermal weight favours the momenta that move with the fluid, with a coefficient $\beta\gamma\beta_{\mathrm{vel},\eta}$. It vanishes on the flow's momentum only when combined with the first term, and that cancellation is the invariance. This is the standard reading of a boost as a momentum chemical potential, quoted.</p>
+<h2 id="the-partition-function">The Partition Function</h2>
+<h3 id="the-trace-in-the-moving-frame">The trace in the moving frame</h3>
+<p><strong>The partition function is the trace of the thermal operator, and its value is the rest-frame value.</strong> With the thermal element of the moving state,</p>
+<p>$$
+Z=\operatorname{Tr}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
+$$</p>
+<p>and since the exponent in the trace is $\beta k_m$ independently of the boost, as the previous section showed, the trace is the same number in every frame:</p>
+<p>$$
+Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)=2\,\mathrm{Sc}\bigl(\exp(-\beta k_m)\bigr),
+$$</p>
+<p>the last equality being <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>'s identification of the trace with twice the scalar part, quoted at normalisation. <strong>This is the article's main result and it is a negative one</strong>: the moving frame does not have its own partition function.</p>
+<p><strong>Why the trace cannot see the boost, in one sentence.</strong> A trace is a sum over states of a scalar weight; a boost relabels the states — it maps each momentum to another — but it is a unitary relabelling, and a sum over a complete set is invariant under a unitary relabelling. <strong>The partition function is therefore frame-independent for the same reason the dimension of a Hilbert space is.</strong></p>
+<p><strong>What is not frame-independent is the decomposition of $Z$.</strong> The free energy $F=-(1/\beta)\log Z$ is a scalar if $\beta$ is taken as the scalar period; the internal energy $E$, the momentum $\vec p$, the entropy and the pressure are components of elements and do change. The next section reads them.</p>
+<h3 id="the-rest-frame-as-the-special-case">The rest frame as the special case</h3>
+<p><strong>Setting $\vec\beta_{\mathrm{vel}}=0$ returns the rest-frame article exactly, and this is the check that the boost has been inserted and nothing else.</strong> At $\gamma=1$ the thermal element is $\beta i e_t$, the exponent is $\beta k_m$, and every display of <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a> is recovered with no modification. <strong>The article therefore adds one parameter, $\vec\beta_{\mathrm{vel}}$, and one structural fact, that the thermal element is an element with a direction.</strong> It adds nothing else, and a reader who wants the trace's biquaternion reading, the imaginary-time discussion, or the non-Hermitian extension is directed to the rest-frame article.</p>
+<p><strong>One difference of emphasis, and it is the reason the moving case is worth an article.</strong> In the rest frame the thermal element and the temporal axis coincide, so the statement "$\beta$ is a period along the imaginary time" and the statement "$\beta$ is a number" cannot be distinguished. In the moving frame they separate: the period is a length along a tilted direction, and the number a boosted observer measures is only its temporal component. <strong>That separation is the content of the whole subject</strong>, and it is invisible in the rest frame.</p>
+<h3 id="the-matsubara-condition-along-a-tilted-circle">The Matsubara condition along a tilted circle</h3>
+<p><strong>The periodicity of the fields is periodicity along the thermal element, and in a moving frame that is periodicity along a tilted line.</strong> The Matsubara condition of <a href="the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a> is</p>
+<p>$$
+\tilde\Xi\left(\tilde R_\Phi+\tilde\beta_\Phi\right)=\pm\,\tilde\Xi\left(\tilde R_\Phi\right),
+$$</p>
+<p>with the plus sign for bosonic and the minus for fermionic fields, and $\tilde\beta_\Phi$ the thermal element rather than the rest-frame displacement $\beta i e_t$. <strong>In the rest frame the two are the same and the condition reads as periodicity in $r'_t$</strong>; in the moving frame the shift has a spatial part, and the condition identifies field values at points separated by a spacelike displacement as well as a timelike one.</p>
+<p><strong>The frequencies are the ones conjugate to the tilted circle, and their spacing is set by the invariant length.</strong> Writing the shift as $\tilde\beta_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, the condition says that a mode $e^{ik_{\Phi,\nu}r_\nu}$ is allowed when $k_{\Phi,\nu}\beta_{\Phi,\nu}=2\pi n$. <strong>The contraction is again a scalar</strong>, so the spacing is $2\pi/\beta$ in the rest frame and $2\pi/(\beta\gamma)$ in a frame where the fluid moves — but the physical frequencies are not the rest-frame ones, because the mode's own wave vector is also boosted. <strong>The invariant statement is the contraction, and it is the only statement that survives the boost without bookkeeping.</strong></p>
+<p><strong>A caution the corpus's letters require.</strong> The Matsubara frequencies are usually quoted as $\omega_n=2\pi n/\beta$, and in a moving frame this is the spacing along the tilted circle and not the spacing of the energy. The energy spacing in a moving frame is $\gamma$ times larger, by the time dilation of the period, and the two statements are consistent because the mode's wave vector tilts with the circle. <strong>A reader who quotes $2\pi n/\beta$ in a moving frame without the tilt has the right spacing and the wrong axis.</strong></p>
+<h2 id="what-the-boost-does-to-the-thermodynamic-quantities">What the Boost Does to the Thermodynamic Quantities</h2>
+<h3 id="the-temperature-a-boosted-observer-reads">The temperature a boosted observer reads</h3>
+<p><strong>The temperature a boosted observer reads is $T/\gamma$, and the reason is that the observer reads the temporal component of the thermal element.</strong> With $\beta_{\Phi,t}=i\beta\gamma$ and $\beta$ the rest-frame period, the period the observer measures is $\gamma$ times the rest-frame one:</p>
+<p>$$
+\beta_{\mathrm{obs}}=\gamma\,\beta,
+\qquad
+T_{\mathrm{obs}}=\frac{T}{\gamma},
+$$</p>
+<p>since the temperature is what the period is reciprocal to. <strong>The product is invariant</strong>, $\beta_{\mathrm{obs}}T_{\mathrm{obs}}=\beta T$, and that invariance is the check that the two statements are one: a period and a temperature cannot both change unless their product stays fixed.</p>
+<p><strong>The reading is the one the corpus's letters force, and it is worth saying why.</strong> $\beta$ is a length along the imaginary-time direction and the direction is an element. An observer in relative motion resolves that element into a temporal component and a spatial one. The temporal component is what the observer's own clock measures as the period, and it is $\gamma$ times larger — the same time dilation that lengthens any interval. So the observer reads a <em>longer</em> period and hence a <em>lower</em> temperature. <strong>The alternative reading, in which a moving body is hotter by $\gamma$, comes from boosting the exchanged heat rather than the period</strong>; the corpus adopts the period reading because $\beta$ is defined as a period, and the article says so once rather than arguing it.</p>
+<p><strong>The limit is the right one.</strong> At $\beta_{\mathrm{vel}}\to0$ the factor is one and the rest-frame value is recovered; at $\beta_{\mathrm{vel}}\to1$ the observed temperature goes to zero, which is the statement that an ultra-relativistic observer sees the thermal circle stretched without bound. <strong>There is no frame in which the temperature is negative and none in which the period is zero</strong>, so the map is a bijection on the physical range.</p>
+<h3 id="the-table">The table</h3>
+<p><strong>The three quantities that carry the boost were computed for three velocities, with the rest-frame temperature fixed at $300\,\mathrm{K}$ and the rest-frame equation of state $w_{\mathrm{fl}}=3p_{\mathrm{th}}$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\beta_{\mathrm{vel}}$</th>
+<th>$\gamma$</th>
+<th>$T_{\mathrm{obs}}$</th>
+<th>$T_{\mathrm{obs}}/T$</th>
+<th>$w_{\mathrm{fl}}/w_{\mathrm{fl,rest}}$</th>
+<th>$s_{\mathrm{ent}}/s_{\mathrm{ent,rest}}$</th>
+<th>$\beta_{\mathrm{obs}}T_{\mathrm{obs}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.6000$</td>
+<td>$1.250\,000\,000\,000$</td>
+<td>$240.000\,000\,000\,0$</td>
+<td>$0.800\,000\,000\,000$</td>
+<td>$1.750\,000\,000$</td>
+<td>$1.250\,000\,000$</td>
+<td>$300.000\,000\,000\,000$</td>
+</tr>
+<tr>
+<td>$0.8000$</td>
+<td>$1.666\,666\,666\,667$</td>
+<td>$180.000\,000\,000\,0$</td>
+<td>$0.600\,000\,000\,000$</td>
+<td>$3.370\,370\,370$</td>
+<td>$1.666\,666\,667$</td>
+<td>$300.000\,000\,000\,000$</td>
+</tr>
+<tr>
+<td>$0.979\,795\,897$</td>
+<td>$5.000\,000\,000\,000$</td>
+<td>$60.000\,000\,000\,00$</td>
+<td>$0.200\,000\,000\,000$</td>
+<td>$33.000\,000\,00$</td>
+<td>$5.000\,000\,000$</td>
+<td>$300.000\,000\,000\,000$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last column is constant to twelve decimal places, and it is the check.</strong> The entropy density grows by $\gamma$, the energy density grows by $(w_{\mathrm{fl}}+p_{\mathrm{th}})\gamma^{2}-p_{\mathrm{th}}$ divided by $w_{\mathrm{fl}}$, and the temperature falls by $\gamma$; only the product $\beta_{\mathrm{obs}}T_{\mathrm{obs}}$ is invariant, and it is invariant identically because $\beta\propto1/T$. <strong>A table with the product drifting would indicate an error in the boost of the thermal element</strong>, and in particular a missing factor of $\gamma$ in the temporal component would show up as a constant offset of $1/\gamma$ in the same column.</p>
+<h3 id="the-energy-density-and-the-pressure">The energy density and the pressure</h3>
+<p><strong>The energy density of the moving state is the standard perfect-fluid combination, and it follows from the element without a new assumption.</strong> With the energy-momentum element of the corpus, $\tilde\Sigma_{\Psi}=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$, and with the flow element of the state, the scalar part in the moving frame is</p>
+<p>$$
+w_{\mathrm{fl}}=\left(w_{\mathrm{fl,rest}}+p_{\mathrm{th}}\right)\gamma^{2}-p_{\mathrm{th}},
+\qquad
+p_{\mathrm{th}}=p_{\mathrm{th,rest}},
+$$</p>
+<p>the pressure being a scalar under a boost along the flow. <strong>The two displays are one statement about the element</strong>: the energy density is the flow-contracted energy-momentum, and the contraction of two elements gives the $\gamma^{2}$ combination. At $\gamma=1$ the rest-frame value is recovered, and at $\beta_{\mathrm{vel}}\to1$ the energy density grows without bound while the pressure stays fixed — the statement that a relativistic fluid's energy is dominated by its momentum.</p>
+<p><strong>The pressure's invariance is worth a line, because it is not obvious.</strong> A boost along the flow leaves the transverse stresses untouched and transforms only the temporal-temporal and longitudinal components. The trace of the stress is a scalar, so if the energy density grows by $\gamma^{2}$ and the trace is fixed, the pressure must be fixed too. <strong>In the corpus's letters, the scalar part of $\tilde\Sigma_\Psi$ is $w_{\mathrm{fl}}$ and the trace statement is the statement that $\tilde\Sigma_\Psi$ has a fixed $\natural$ norm structure under the boost.</strong></p>
+<h3 id="the-entropy">The entropy</h3>
+<p><strong>The entropy density carries one factor of $\gamma$ and the total entropy is a scalar.</strong> The entropy is the temporal component of the entropy current, so under a boost along the flow</p>
+<p>$$
+s_{\mathrm{ent}}=\gamma\,s_{\mathrm{ent,rest}},
+\qquad
+S=\int d^{3}r\;s_{\mathrm{ent}}=\text{scalar},
+$$</p>
+<p>the second statement being the standard one that the total entropy of an isolated system is frame-independent: the density grows by $\gamma$ and the volume contracts by $1/\gamma$, and the two cancel. <strong>The cancellation is the reason the second law can be stated in any frame</strong>, and it is the reason <a href="the-local-entropy-current.html">The Local Entropy Current</a> can write its inequality with a scalar reading and no frame label.</p>
+<p><strong>One caution, in the corpus's letters.</strong> The entropy density $s_{\mathrm{ent}}$ and the total entropy $S$ share a letter with the action and with the spin element, and the corpus's rule is that every occurrence is labelled. The table above uses $s_{\mathrm{ent}}$ throughout, and the total entropy appears only in the display where it is called $S$ with no subscript and the context is the integral.</p>
+<h3 id="the-free-energy">The free energy</h3>
+<p><strong>The free energy is a scalar because $Z$ is a scalar and $\beta$ is a scalar, and this is the sharpest contrast with the energy density.</strong> With $F=-(1/\beta)\log Z$ and both $Z$ and $\beta$ invariant,</p>
+<p>$$
+F_{\mathrm{obs}}=F_{\mathrm{rest}}=-\,p_{\mathrm{th}}\,V_{0},
+$$</p>
+<p>where the second equality is the standard relativistic identification of the free energy with minus the pressure times the <em>proper</em> volume, and both factors on the right are scalars. <strong>So the free energy is invariant for the same reason the pressure is</strong>: it is $-p_{\mathrm{th}}$ times a volume measured in the fluid's own frame, and a boost changes neither.</p>
+<p><strong>The density-level identity is where a reader goes wrong, and the article says how.</strong> The relation $F=E-TS$ holds in the rest frame with the rest-frame $E$ and $S$. In a moving frame the energy <em>density</em> is the $\gamma^{2}$ combination and the entropy <em>density</em> is $\gamma$ times the rest value, and substituting those into $E-TS$ does not return $F$: at $\gamma=2$, with $w_{\mathrm{fl,rest}}=1$, $p_{\mathrm{th}}=1/3$, $s_{\mathrm{ent,rest}}=1$ and $T=1$ in the rest frame, the substitution gives $5-\tfrac12\cdot2=4$ whereas the invariant value is $-p_{\mathrm{th}}V_{0}=-1/3$. <strong>The discrepancy is not an error and it is not a paradox</strong>: the boosted densities carry the $pV$ work of the boost, and $E-TS$ is only a scalar when its three terms are contracted with the same flow — which is what makes $F$ a scalar in the first place. A reader who wants the frame-independent statement should use $F=-p_{\mathrm{th}}V_{0}$ and not the density identity.</p>
+<h2 id="numerical-checks">Numerical Checks</h2>
+<p><strong>Four identities were checked numerically, and the results are reported here because a reader cannot check them from the displays alone.</strong></p>
+<ul>
+<li><strong>The contraction's frame independence.</strong> For $\beta_{\mathrm{vel}}=0.6$, $0.8$ and $0.979\,795\,897$, the split $\beta\gamma(E/c-\vec\beta_{\mathrm{vel}}\cdot\vec p)$ was evaluated on the flow's own momentum with $E=\gamma mc^{2}$ and $\vec p=\gamma m\vec v$. The bracket is $\gamma mc(1-\beta_{\mathrm{vel}}^{2})=mc/\gamma$ to fifteen digits at each velocity, so the product $\beta\gamma\,mc/\gamma=\beta mc$ is the same at all three and equals the value the norm computation gives. <strong>The check is a check of the split and not of the norm</strong>, and the two agree because $1-\beta_{\mathrm{vel}}^{2}=1/\gamma^{2}$ is what the arithmetic uses.</li>
+<li><strong>The product $\beta_{\mathrm{obs}}T_{\mathrm{obs}}=\beta T$</strong> at the three velocities of the table: constant to twelve decimal places, as printed.</li>
+<li><strong>The entropy density's factor.</strong> $s_{\mathrm{ent}}/(\gamma\,s_{\mathrm{ent,rest}})=1$ to twelve places at each velocity, the ratio being $\gamma/\gamma$ by construction — a trivial check, recorded because a reader can reproduce it in a line and because it is the check that catches a missing factor of $\gamma$ in the current's temporal slot.</li>
+<li><strong>The energy density's combination.</strong> $(w_{\mathrm{fl}}+p_{\mathrm{th}})\gamma^{2}-p_{\mathrm{th}}$ returns $w_{\mathrm{fl}}$ exactly at $\gamma=1$ for each row, and returns $33.000\,000\,00$ at $\gamma=5$ for $w_{\mathrm{fl}}=1$, $p_{\mathrm{th}}=1/3$, as printed.</li>
+</ul>
+<p><strong>What the checks do and do not establish.</strong> They establish that the arithmetic of the boost's factors is what the displays say. They do not establish the physical identification of the temporal component with the observed period, which is a reading and not an arithmetic fact, and they do not establish the sign of the temperature transformation, which is a convention the corpus fixes once and this article inherits rather than argues.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>What is established, and is transcription.</strong> That the thermal state of a moving fluid is specified by a thermal element $\tilde\beta_\Phi$ whose norm is $-\beta^{2}$ and whose direction is the flow's; that the thermal exponent is $-\beta_{\Phi,\nu}p_{\Phi,\nu}/\hbar$; that this contraction equals $\beta k_m$ in every frame; that the partition function is therefore frame-independent; that the observed period is the temporal component $i\beta\gamma$ and the observed temperature is $T/\gamma$; that the energy density is $(w_{\mathrm{fl}}+p_{\mathrm{th}})\gamma^{2}-p_{\mathrm{th}}$ with the pressure unchanged; that the entropy density carries a factor $\gamma$ and the total entropy is a scalar; that the free energy is $-p_{\mathrm{th}}V_{0}$ and is a scalar. <strong>Every one of these is standard relativistic thermodynamics, and the article's contribution is the letters.</strong> This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.</p>
+<p><strong>What is the corpus's reading, and is marked as such.</strong> That the temperature is read from the temporal component of a <em>period</em> rather than from a boosted heat exchange, and hence that a moving body is observed cooler by $\gamma$. The alternative reading exists in the literature and is not an error; it is a different question, and the corpus's answer follows from taking $\beta$ as a length along a direction, which is how the thermal articles define it. <strong>A reader who prefers the other reading will find that every display of this article survives with $T\gamma$ in place of $T/\gamma$</strong>, except the temperature row of the table; nothing structural depends on the choice.</p>
+<p><strong>What is not established here.</strong> That the imaginary-time direction is compact — that is <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>'s and is quoted. That the trace is twice the scalar part — that is <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>'s and is quoted. That the Matsubara condition has the bosonic/fermionic sign — that is <a href="the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>'s. That a moving thermal state is stable and that its entropy is maximal — that is a question about the state and not about its frame, and it belongs to <a href="causal-dissipative-hydrodynamics-in-biquaternionic-form.html">Causal Dissipative Hydrodynamics in Biquaternionic Form</a> and to <a href="the-local-entropy-current.html">The Local Entropy Current</a>.</p>
+<p><strong>One thing the article deliberately does not do.</strong> It does not discuss the case in which the boost is not uniform — a fluid whose flow varies from point to point, so that $\tilde\beta_\Phi$ is a field. That case is <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a>'s, and it requires the rigidity condition of <a href="covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a> before the thermal element can be assigned pointwise. <strong>Here the boost is uniform and the fluid is in equilibrium</strong>, so the thermal element is a single element and not a field, and the article stays inside that case.</p>
+<h2 id="summary">Summary</h2>
+<p>The thermal state of a moving fluid is specified by a thermal element, $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma\left(ie_t+\vec\beta_{\mathrm{vel}}\right)$, an element of the material sector with norm $-\beta^{2}$: the period $\beta$ of <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>, carried along the flow. Its components are $\beta_{\Phi,t}=i\beta\gamma$ and $\beta_{\Phi,\eta}=\beta\gamma\beta_{\mathrm{vel},\eta}$, every index low; the boost lengthens the norm not at all and tilts the direction by $\gamma$.</p>
+<p>The thermal exponent is the contraction $-\beta_{\Phi,\nu}p_{\Phi,\nu}/\hbar=-(\beta/c\hbar)m\langle\tilde V_\Phi\rangle_{\natural}=\beta mc/\hbar=\beta k_m$, independent of $\gamma$ and of $\vec v$. The partition function is that trace, so $Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)$: <strong>the moving frame has no partition function of its own</strong>, and the rest-frame article is the special case $\vec\beta_{\mathrm{vel}}=0$. What the boost changes is the reading of $Z$, not its value.</p>
+<p>The observed quantities follow from the components. The observed period is $\beta_{\mathrm{obs}}=\gamma\beta$ and the observed temperature $T_{\mathrm{obs}}=T/\gamma$, with $\beta_{\mathrm{obs}}T_{\mathrm{obs}}=\beta T$ checked constant to twelve decimal places at three velocities. The energy density is $(w_{\mathrm{fl}}+p_{\mathrm{th}})\gamma^{2}-p_{\mathrm{th}}$, the pressure is unchanged, the entropy density is $\gamma$ times the rest value, and the free energy is $-p_{\mathrm{th}}V_{0}$, a scalar. At $300\,\mathrm{K}$ and $\gamma=5$ the observer reads $60\,\mathrm{K}$, the energy density of an $w=3p$ fluid is $33$ times its rest value, and the entropy density is $5$ times.</p>
+<p>On the imaginary-time side the Matsubara condition becomes periodicity along the tilted thermal element, $\tilde\Xi(\tilde R_\Phi+\tilde\beta_\Phi)=\pm\tilde\Xi(\tilde R_\Phi)$, so the thermal circle is tilted in any frame where the fluid moves, and the invariant statement is the contraction $k_{\Phi,\nu}\beta_{\Phi,\nu}=2\pi n$ and not the spacing $2\pi n/\beta$.</p>
+<p>The article is transcription: standard relativistic thermodynamics in the corpus's letters, with no framework interpretation. It adds the boost, the frame dependence of the thermal element, and the statement that $Z$ is a scalar — and nothing else.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\beta=\frac{m\,c}{k_m\,k_{B}\,T}$</td>
+<td>Inverse temperature, the imaginary-time circumference; a length</td>
+</tr>
+<tr>
+<td>$c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T}$</td>
+<td>The same span in the material sector's units</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td>$k_B$</td>
+<td>Boltzmann's constant</td>
+</tr>
+<tr>
+<td>$\tilde\beta_\Phi$</td>
+<td>Thermal element of the moving state</td>
+</tr>
+<tr>
+<td>$\tilde\beta_{\Phi,0}=\beta ie_t$</td>
+<td>Thermal element of the rest frame</td>
+</tr>
+<tr>
+<td>$\beta_{\Phi,t}=i\beta\gamma$, $\beta_{\Phi,\eta}$</td>
+<td>Its components, index low</td>
+</tr>
+<tr>
+<td>$\beta_{\mathrm{obs}}=\gamma\beta$</td>
+<td>Period the boosted observer measures</td>
+</tr>
+<tr>
+<td>$T_{\mathrm{obs}}=T/\gamma$</td>
+<td>Temperature the boosted observer measures</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi$</td>
+<td>Flow (velocity) element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$</td>
+</tr>
+<tr>
+<td>$\vec v$, $\vec\beta_{\mathrm{vel}}=\vec v/c$</td>
+<td>Velocity and its dimensionless form</td>
+</tr>
+<tr>
+<td>$\gamma=(1-\beta_{\mathrm{vel}}^{2})^{-1/2}$</td>
+<td>Boost factor</td>
+</tr>
+<tr>
+<td>$p_{\Phi,\nu}$</td>
+<td>Flow momentum components, $p_{\Phi,t}=iE/c$</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>Energy</td>
+</tr>
+<tr>
+<td>$m$, $c$</td>
+<td>Mass and speed of light in the medium</td>
+</tr>
+<tr>
+<td>$\hbar=mc/k_m$</td>
+<td>Action quantum</td>
+</tr>
+<tr>
+<td>$k_m$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$Z$</td>
+<td>Partition function, a scalar</td>
+</tr>
+<tr>
+<td>$F=-(1/\beta)\log Z=-p_{\mathrm{th}}V_{0}$</td>
+<td>Free energy, a scalar</td>
+</tr>
+<tr>
+<td>$V_{0}$</td>
+<td>Proper volume</td>
+</tr>
+<tr>
+<td>$w_{\mathrm{fl}}$</td>
+<td>Energy density; its rest value is $w_{\mathrm{fl,rest}}$</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{th}}$</td>
+<td>Thermal pressure, unchanged by the boost</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$</td>
+<td>Entropy density, $\gamma$ times its rest value</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>Total entropy, a scalar</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$</td>
+<td>Energy–momentum element</td>
+</tr>
+<tr>
+<td>$\tilde R_\Phi$</td>
+<td>Material four-position</td>
+</tr>
+<tr>
+<td>$r'_t$</td>
+<td>Temporal coordinate, a length</td>
+</tr>
+<tr>
+<td>$k_{\Phi,\nu}$</td>
+<td>Wave-vector components of a mode</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$\langle\ \rangle_{\natural}$</td>
+<td>Quaternionic norm</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$</td>
+<td>Material and informational sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>M. Planck, "Zur Dynamik bewegter Systeme," <em>Annalen der Physik</em> <strong>26</strong> (1908) 1–34, the original transformation of the thermodynamic quantities.</li>
+<li>A. Einstein, "Über das Relativitätsprinzip und die aus demselben gezogenen Folgerungen," <em>Jahrbuch der Radioaktivität und Elektronik</em> <strong>4</strong> (1907) 411–462, for the moving-body thermodynamics of the same period.</li>
+<li>H. Ott, "Lorentz-Transformation der Wärme und der Temperatur," <em>Zeitschrift für Physik</em> <strong>175</strong> (1963) 70–104, for the alternative reading of the temperature transformation.</li>
+<li>N. G. van Kampen, "Relativistic thermodynamics of moving systems," <em>Physical Review</em> <strong>173</strong> (1968) 295–301, for the covariant formulation that avoids the temperature paradox.</li>
+<li>C. K. Yuen, "Lorentz transformation of thermodynamic quantities," <em>American Journal of Physics</em> <strong>38</strong> (1970) 246–252, for the comparison of the readings.</li>
+<li>W. Israel, "Thermodynamics of relativistic systems," <em>Physica A</em> <strong>106</strong> (1981) 204–214, for the covariant thermal element and its equilibrium conditions.</li>
+<li>W. Israel, "Relativistic Thermodynamics, Thermofield Statistics and Superfluids," <em>Journal of Non-Equilibrium Thermodynamics</em> <strong>11</strong> (1986) 295, for the thermal element in the presence of a flow.</li>
+<li>N. P. Landsman and Ch. G. van Weert, "Real- and imaginary-time field theory at finite temperature and density," <em>Physics Reports</em> <strong>145</strong> (1987) 141–249, for the imaginary-time formulation and the tilted contour.</li>
+<li>J. I. Kapusta and C. Gale, <em>Finite-Temperature Field Theory: Principles and Applications</em> (Cambridge University Press, 2006), for the Matsubara formalism in the standard notation.</li>
+<li>The companion articles: <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>, <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time</a>, <a href="the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>, and <a href="covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

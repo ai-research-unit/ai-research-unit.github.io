@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Fluid of the Biquaternion Dirac Field — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-fluid-of-the-biquaternion-dirac-field"><strong>The Spin Fluid of the Biquaternion Dirac Field</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust.</strong> The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.</p>
+<p>The article assembles two results that already exist and derives neither. The polar form of the Dirac equation, with its four factors, its velocity and its spin, is <a href="the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a>. The split of the current into a convection part and a spin part is <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>. Both are cited at the point of use, and the displays below that repeat their formulas are quotations, marked as such.</p>
+<p>Three results are new here.</p>
+<ul>
+<li><strong>The flow is not a gradient.</strong> The scalar field's velocity is the gradient of its action, exactly, so its velocity one-form is closed. The Dirac field's velocity is a unit element squared, so its one-form is closed only in the rigid case. The difference is the whole content of the word "spin fluid".</li>
+<li><strong>The vorticity is the frame's curl.</strong> Written on the component spelling of the element, the vorticity 2-form is the antisymmetrised gradient of the frame element, and it vanishes exactly where the frame is constant. A spatially varying rapidity is enough to make it non-zero, and the check below exhibits a shear flow with a circulation of $0.434\,556$ against a closed form that agrees to fifteen digits.</li>
+<li><strong>The scalar case is the frozen-frame sector.</strong> The scalar field has no frame element to vary. Freezing the Dirac frame gives a rigid flow, and a rigid flow is locally a gradient flow. So the gradient sector is the frozen sector, and the Dirac field leaves it as soon as its rapidity or its direction varies.</li>
+</ul>
+<p>Two cautions are stated once and used throughout. The first is that <em>closure</em> and <em>rigidity</em> are different conditions: closure is the vanishing of the antisymmetric part of the velocity's gradient, rigidity the vanishing of the symmetric part. This article is about closure. <a href="covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a> is about rigidity, and a reader who conflates them will read the two articles as contradicting each other. The second is that <em>rotor</em> in this article's title names the frame element $\tilde U$ of the word, which the polar article splits into a boost and a spatial rotor. Where the split matters, the two factors are named separately and the frame element is not called a rotor.</p>
+<p>The word of the field is</p>
+<p>$$
+\tilde\Xi=\rho\,\tilde U,
+\qquad
+\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}},
+\qquad
+r=\lvert\rho\rvert>0,
+\qquad
+\tilde U=\frac{\tilde\Xi}{\rho},
+$$</p>
+<p>with $r$ the scale, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$, and the polar article's $\rho$ is its square root; the two letters differ by the scale, and every statement below is about a direction or a ratio, so the difference never enters a conclusion. That is the notational translation this article makes once and does not repeat.</p>
+<h2 id="the-polar-data-of-the-fluid">The Polar Data of the Fluid</h2>
+<h3 id="the-frame-element-is-the-velocitys-square-root">The frame element is the velocity's square root</h3>
+<p><strong>The four-velocity is the inverse square of the frame element, and that is the fact the whole article turns on.</strong> The polar article proves</p>
+<p>$$
+\tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma\bigl(ic\,e_t+\vec v\bigr),
+\qquad
+\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
+\qquad
+\gamma=\cosh\theta_{\mathrm{rpd}},
+\qquad
+\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}.
+$$</p>
+<p>The square is not decoration and it is not an error of the display. A velocity is bilinear in the spinor, so the frame enters it twice; the word deposits the boost once in the frame and twice in the four-vector. The conventions record the factor of two as the commonest error in the corpus, and the polar article's §<em>The boost is the four-velocity</em> is where the factors are counted. This article takes the display as given.</p>
+<p>The norm being $-c^{2}$ is stronger than the corresponding statement for the scalar field. There the four-velocity is a unit element only where the quantum potential vanishes, because the scalar velocity is a gradient and a gradient of a solution is not automatically on the mass shell; here the frame element is a unit by construction, so the velocity is a unit wherever the field is non-zero. The density is a separate factor and carries no part of the normalisation.</p>
+<h3 id="the-spin-is-the-rotors-image-of-the-axis">The spin is the rotor's image of the axis</h3>
+<p><strong>The spin element is the density times $\hbar/2$ times the rotor's image of the declared axis.</strong> The polar article proves</p>
+<p>$$
+\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
+\qquad
+\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
+\qquad
+\hat s^{2}=-e_t,
+$$</p>
+<p>with $\tilde u_{\mathrm r}$ the spatial rotor. In this category's letters the prefactor is $\rho_{\mathrm{num}}^{1/2}$, the scale; the spin direction $\hat s$ is a unit real vector, the element is Hermitian because of the central $i$, and the declared axis $\vec e_z$ does not survive: only its image does.</p>
+<p>Three absences are exact and each has a reason. The central angle is absent, because $\natural$ does not conjugate it and the product cancels it. The boost is absent, because a boost does not rotate a spin direction in the rest frame, and the word respects that by putting the spin in the factor the boost leaves alone. And the declared axis is absent, because the rotor's image is what the field carries; a reader who wants a preferred axis of the algebra will not find one, and the absence is the algebra's way of saying that the axis is a convention of the frame and not a property of the field.</p>
+<h3 id="the-current-and-the-bilinear-that-is-not-the-current">The current, and the bilinear that is not the current</h3>
+<p><strong>The current is the density times the frame element.</strong> The polar article proves</p>
+<p>$$
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\,\tilde V_{\Phi}=ic\gamma\rho_{\mathrm{num}}\,e_t+\rho_{\mathrm{num}}\gamma\vec v,
+$$</p>
+<p>so the temporal slot is the charge density $ic\gamma\rho_{\mathrm{num}}$ and the spatial part is the current density $\rho_{\mathrm{num}}\gamma\vec v$. The current reads four parameters — the scale, the rapidity and the two angles of the direction — and it reads neither the central angle nor the spatial rotor.</p>
+<p>The algebra's own bilinear is not this current, and the polar article proves why: $i\tilde\Xi\tilde\Xi^{*}$ leaves the boost in place and cancels the rotor, so it carries the velocity twice; the outer $i$ then reverses the spatial part, so the bilinear is the current of the mirror image of the motion. The conserved current needs the velocity once and a fixed timelike direction once, and the fixed direction is the odd element the even algebra does not contain. That is a negative result about the algebra and not about the physics: the standard theory has its conserved current, and the word exhibits it as the density times a frame factor.</p>
+<h3 id="the-gordon-split">The Gordon split</h3>
+<p><strong>The current separates into a transport part and a magnetisation part.</strong> The Gordon article proves, for a solution,</p>
+<p>$$
+\bar{\tilde\Xi}_{\mathrm{sp}}\,i\,e_\mu\,\tilde\Xi_{\mathrm{sp}}\,\vec e_{\nu(\mu)}
+=\frac{i}{2k_m}\Big(\bar{\tilde\Xi}_{\mathrm{sp}}\,\partial_\mu\tilde\Xi_{\mathrm{sp}}-\overline{\partial_\mu\tilde\Xi_{\mathrm{sp}}}\,\tilde\Xi_{\mathrm{sp}}\Big)
++\frac{1}{k_m}\sum_\nu\varepsilon_\nu\,\partial_\nu\Big(\bar{\tilde\Xi}_{\mathrm{sp}}\,\Sigma_{\mu\nu}\tilde\Xi_{\mathrm{sp}}\Big),
+$$</p>
+<p>with $\Sigma_{\mu\nu}$ the spin generator. The first term is the convection current and carries the field's own first derivative; the second is the divergence of the antisymmetric spin density and is a <strong>bound</strong> current: it is conserved by antisymmetry alone, contributes nothing to the total charge, and cannot be removed from the magnetic moment. The article's own words are that the split separates a transport current from a magnetisation current, and not a conserved piece from a non-conserved piece.</p>
+<p>For the fluid this is the statement that the density times the frame element is not the whole story. Part of what flows is the spin's own circulation, and the next sections show that the spin's circulation and the frame's vorticity are the same object read twice.</p>
+<h2 id="the-flow-is-not-a-gradient">The Flow Is Not a Gradient</h2>
+<h3 id="the-scalar-case-is-a-gradient-exactly">The scalar case is a gradient, exactly</h3>
+<p><strong>The scalar field's velocity is the gradient of its action at every event, so its velocity one-form is closed identically.</strong> In the polar form of the Klein–Gordon equation the momentum is</p>
+<p>$$
+\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi},
+\qquad
+\tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
+\qquad
+v_{\Phi,\mu}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_\mu},
+$$</p>
+<p>and the last display is the component spelling of the element, on the pattern of $k_{\Phi,\mu}$. The index stays low and labels a direction. Since partial derivatives commute,</p>
+<p>$$
+\frac{\partial v_{\Phi,\mu}}{\partial R_\nu}-\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}
+=\frac{1}{m}\left(\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_\nu\partial R_\mu}-\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_\mu\partial R_\nu}\right)=0 .
+$$</p>
+<p>The scalar flow is therefore <strong>closed</strong>: it is the gradient of a single function, and every closed-loop integral of it is fixed by the winding of the action. That is the fact <a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a> uses, and it is exact for every solution and not only for a plane wave. The qualification the scalar article carries is that the four-velocity is a unit only where the quantum potential vanishes; the closure does not depend on that qualification and holds everywhere the action is defined.</p>
+<h3 id="the-dirac-case-is-a-frame">The Dirac case is a frame</h3>
+<p><strong>The Dirac velocity is a unit element squared, and the square of a unit element is not the derivative of anything.</strong> The display quoted above says $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$. There is no scalar function whose gradient this is, for a reason of counting: a unit timelike element has three independent parameters, the rapidity and the two angles of its axis, and a gradient $\partial_\mu S$ has one function of the four coordinates. Four equations cannot be solved by one function unless the four are tied by three conditions, and the conditions are exactly the vanishing of the vorticity.</p>
+<p>The counting is worth writing out because it is the whole obstruction. A closed one-form on four coordinates has, at each event, four components subject to the six conditions $\partial_\mu v_\nu=\partial_\nu v_\mu$; the solution set is one function. The velocity of the word has four components subject to one condition, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, so it has three functions of the four coordinates. The gap between three and one is two functions at each event, and those two functions are what the word "spin fluid" names. The scalar field has one function, its action, and no gap.</p>
+<h3 id="the-closure-test-written-out">The closure test, written out</h3>
+<p><strong>The Dirac velocity is closed only in the rigid case.</strong> Take the component spelling of the element, $v_{\Phi,t}=ic\gamma$ and $v_{\Phi,\eta}=\gamma v_\eta$, with $\gamma=\cosh\theta_{\mathrm{rpd}}$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$. Closure requires $\partial_\eta v_{\Phi,t}=\partial_t v_{\Phi,\eta}$, that is,</p>
+<p>$$
+ic\,\frac{\partial\gamma}{\partial r_\eta}
+=\frac{\partial}{\partial r'_t}\bigl(\gamma v_\eta\bigr),
+\qquad
+\text{and}\qquad
+\frac{\partial}{\partial r_j}\bigl(\gamma v_\eta\bigr)=\frac{\partial}{\partial r_\eta}\bigl(\gamma v_j\bigr).
+$$</p>
+<p>The first pair is the statement that the rapidity does not vary in space unless it also varies in time in a compensating way; for a static flow it forces $\partial_\eta\gamma=0$. The second triple is the ordinary statement that the spatial current density $\gamma\vec v$ is curl free. Neither is implied by the Dirac equation. So the general solution has a velocity that is not closed, and the two conditions are the two functions of the counting above.</p>
+<p><strong>A rigid flow is closed.</strong> If $\tilde U$ is constant then $\tilde V_\Phi$ is constant, and a constant one-form is exact: it is the gradient of a linear function. So the frozen-frame sector sits inside the gradient sector, and the inclusion is strict in the other direction only for the scalar field, which has no frame at all.</p>
+<h2 id="vorticity-and-its-source">Vorticity and Its Source</h2>
+<h3 id="the-vorticity-2-form">The vorticity 2-form</h3>
+<p><strong>The vorticity is the antisymmetrised gradient of the velocity's component spelling.</strong> Define</p>
+<p>$$
+\omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu},
+$$</p>
+<p>with both indices low, as the frame conventions require, and with the four directions the four coordinates. The definition is the component spelling of the element and not a tensor's slot: the four numbers $v_{\Phi,\mu}$ are the four coefficients read in the frame, and $\omega$ is their curl. The three purely spatial components are the curl of the current density $\gamma\vec v$ up to the sign of the metric, and the three mixed components are the time derivative of the current density less the spatial gradient of the energy slot $ic\gamma$.</p>
+<p><strong>The vorticity vanishes for the scalar flow and need not vanish for the Dirac flow.</strong> For the scalar field the first display of the previous section gives $\omega_{\mu\nu}=0$ identically. For the Dirac field the general field gives $\omega\ne0$, and the content of this section is to name its source.</p>
+<h3 id="the-frames-gradient-is-the-source">The frame's gradient is the source</h3>
+<p><strong>The vorticity is the frame element's logarithmic derivative, read through the velocity.</strong> Write $\tilde V_{\Phi}=ic\tilde U^{-2}$ with $\tilde U$ the boost factor. Differentiating,</p>
+<p>$$
+\frac{\partial\tilde V_{\Phi}}{\partial R_\mu}
+=-ic\left(\tilde U^{-1}\frac{\partial\tilde U}{\partial R_\mu}\tilde U^{-2}
++\tilde U^{-2}\frac{\partial\tilde U}{\partial R_\mu}\tilde U^{-1}\right),
+$$</p>
+<p>using $\partial_\mu\tilde U^{-1}=-\tilde U^{-1}(\partial_\mu\tilde U)\tilde U^{-1}$ twice. Each bracket is a product of the frame element with its own logarithmic derivative $\tilde U^{-1}\partial_\mu\tilde U$, which is the object a connection is made of. So the gradient of the velocity is built from the frame's connection and nothing else: where the frame is constant, the velocity is constant and the vorticity vanishes; where the frame varies, the vorticity is the antisymmetrised image of that variation.</p>
+<p>That is the precise sense in which <strong>the vorticity is sourced by the frame's gradients</strong>. The source is not the density — the density cancels out of the velocity entirely — and it is not the central angle, which no bilinear reads. It is the variation of the frame element, and the frame element carries the rapidity and the direction between them.</p>
+<h3 id="the-shear-flow-and-the-check">The shear flow, and the check</h3>
+<p><strong>A spatially varying rapidity is enough.</strong> Take a frame whose axis is fixed along $\vec e_y$ and whose rapidity varies with $r_x$ only:</p>
+<p>$$
+\theta_{\mathrm{rpd}}(r_x)=0.4+0.2\sin(1.3\,r_x),
+\qquad
+\vec u_{\mathrm b}=\vec e_y,
+\qquad
+v_{\Phi,y}(r_x)=c\sinh\theta_{\mathrm{rpd}}(r_x),
+$$</p>
+<p>the last equality being $\gamma v_y=c\cosh\theta_{\mathrm{rpd}}\tanh\theta_{\mathrm{rpd}}=c\sinh\theta_{\mathrm{rpd}}$. Then</p>
+<p>$$
+\omega_{xy}=\frac{\partial v_{\Phi,y}}{\partial r_x}=c\cosh\theta_{\mathrm{rpd}}\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r_x}\ne0,
+$$</p>
+<p>and the flow has a circulation around any loop in the $xy$ plane that spans a difference of rapidity. The check was run with $c=2$ and the rapidity profile above. At $r_x=0.2$, $0.7$ and $1.1$ the difference quotient of $v_{\Phi,y}$ and the closed form $c\cosh\theta\,\partial\theta/\partial r_x$ agreed to $1.1\times10^{-10}$ or better, with two of the three agreeing to the last bit. The circulation of the current density around the unit square $0\le r_x\le1$, $0\le r_y\le1$ was $0.434\,555\,977\,568\,337$ against the closed form $c[\sinh\theta(1)-\sinh\theta(0)]=0.434\,555\,977\,568\,337$, agreeing to all fifteen digits printed. The same loop on the scalar flow of a quadratic action gave a curl of exactly zero.</p>
+<p>So the vorticity is real, it is produced by the frame's gradient alone, and the scalar sector cannot produce it. That is the difference the title of this article names.</p>
+<h3 id="what-the-vorticity-is-not">What the vorticity is not</h3>
+<p><strong>It is not the spin.</strong> The spin direction is the rotor's image of the axis, and the vorticity is the curl of the velocity. The two are independent parameters of the word, and the field equation is what ties them; this article does not solve that tie, and the articles on spin hydrodynamics and on the Frenkel condition take it up. What can be said without solving it is that a fluid whose vorticity and whose spin direction are unrelated at each event is a legitimate solution of the kinematics, and that a hydrodynamic closure has to add the relation.</p>
+<p><strong>It is not the magnetic field.</strong> The Gordon spin term is a magnetisation current and the vorticity is a flow property. The two meet in the antisymmetric part of the stress, which is where a spin fluid differs from a dust; the stress element of <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a> is symmetric by construction, so the antisymmetric part is a genuinely new ingredient of the Dirac case, and <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> is where it is identified.</p>
+<h2 id="the-frozen-frame-sector">The Frozen-Frame Sector</h2>
+<h3 id="freezing-the-frame">Freezing the frame</h3>
+<p><strong>Set the frame element to a constant and the spin fluid degenerates to a rigid flow.</strong> With $\tilde U$ constant, $\tilde V_\Phi$ is constant, $\omega_{\mu\nu}=0$, the spin direction is constant, and the Gordon spin term is a divergence whose bilinear is constant. What remains is a dust: a density and a constant velocity, with a spin direction that does not vary. Every statement of the previous sections is then either trivially satisfied or trivially false: the vorticity vanishes, the circulation vanishes, and the current is a constant times the density.</p>
+<p>The degeneration is not a physical limit in which interesting physics is lost. It is the kinematic statement that a spin fluid whose frame does not vary has nothing left that a scalar fluid lacks. The spin element is still there — it is a constant direction — but a constant spin direction is a property of the state and not of the flow, and it enters no equation of motion. That is why the corpus's polar form gives the spin a whole section and the scalar article gives it none.</p>
+<h3 id="the-scalar-field-is-the-sector-with-no-frame-to-freeze">The scalar field is the sector with no frame to freeze</h3>
+<p><strong>The scalar polar form has a scale and a phase and nothing else, so its velocity is a gradient by construction.</strong> The word is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$, and the two parameters are the amplitude and the action. There is no third factor, so there is no frame element, so there is nothing whose gradient could make the flow non-closed. The scalar field is therefore the frozen-frame sector in the precise sense that it is the sector with no frame: a frame that does not exist cannot vary.</p>
+<p>The identification is worth stating as an inclusion rather than as an analogy. Every scalar solution, read through the Dirac polar form, has a velocity that is a gradient and a spin direction that is a constant — and the constant is not arbitrary, since the axis is the declared one. Conversely, a Dirac solution whose frame is constant and whose central angle carries the phase gradient is a scalar solution up to the spin direction. So the scalar sector is the intersection of two conditions, and the Dirac sector is what the second condition removes.</p>
+<h3 id="what-the-limit-loses">What the limit loses</h3>
+<p><strong>Four things are lost when the frame is frozen, and each is individually checkable.</strong></p>
+<ul>
+<li><strong>The vorticity.</strong> A closed one-form has zero curl, so the circulation around every loop vanishes. The shear flow of the check above has a circulation of $0.434\,556$; the scalar flow on the same loop has exactly zero.</li>
+<li><strong>The spin part of the current.</strong> The Gordon spin term is the divergence of an antisymmetric bilinear. With a constant frame and a constant spin direction the bilinear is constant, so its divergence vanishes and the whole current is the convection part.</li>
+<li><strong>The magnetic moment.</strong> The spin density is still non-zero, but its divergence contributes nothing to the current, so a static spin density produces no magnetisation current. That is the right statement for a uniformly magnetised medium and the wrong one for a bounded sample, which is why the frozen sector is the sector of bulk statements.</li>
+<li><strong>The antisymmetric stress.</strong> The stress element of the scalar field is symmetric in its two slots, because it is built from a single gradient. The Dirac field's stress has an antisymmetric part whenever the spin direction varies, and that part is the torque density. <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a> has no place for it.</li>
+</ul>
+<h2 id="the-spin-fluid-at-a-point">The Spin Fluid at a Point</h2>
+<h3 id="the-triple">The triple</h3>
+<p><strong>At each event the fluid is a triple: a density, a frame element, and a spin direction.</strong> In the letters of this category,</p>
+<p>$$
+\rho_{\mathrm{num}}(x),
+\qquad
+\tilde V_{\Phi}(x)=ic\,\tilde U_{\Psi,\mathrm b}^{-2}(x),
+\qquad
+\hat s(x)=\tilde u_{\mathrm r}(x)\,\vec e_z\,\tilde u_{\mathrm r}^{\natural}(x),
+$$</p>
+<p>with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and $\hat s^{2}=-e_t$. The frame element is an element of $\mathbb{B}_\Phi$ and is written with its indices low, as the frame conventions require; the spin direction is a real unit vector and the spin element is $\rho_{\mathrm{num}}^{1/2}(\hbar/2)i\hat s$ in $\mathbb{B}_\Psi$.</p>
+<p>The triple is not a set of independent fields. The Dirac equation ties the three, and the tie is what the polar article leaves open in its §<em>What the general field leaves open</em>: the equation relates the two parts' words, and the algebra supplies no canonical rule fixing one from the other. A hydrodynamic reading of the Dirac field has therefore to impose the tie as a closure, exactly as the non-relativistic spin-fluid literature does, and the articles on spin hydrodynamics do that.</p>
+<h3 id="what-the-triple-closes">What the triple closes</h3>
+<p><strong>Three of the four conservation laws of the fluid are already fixed by the triple, and the fourth is the spin's.</strong> The density and the frame element give the number current and its conservation; the frame element gives the stress element's symmetric part; the spin direction gives the antisymmetric part. The sentence is a summary of the corpus rather than a new derivation: the current is quoted above, the stress is the imported tensor of <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>, and the antisymmetric part is the subject of <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>.</p>
+<p>The accounting explains why the Dirac fluid needs one more equation than the scalar fluid. A scalar fluid at a point has a density, a pressure and a velocity: one thermodynamic function and a direction, with the velocity normalised. A spin fluid has in addition a direction that is not the velocity's, so it needs an equation for that direction's transport. The equation is not optional, because without it the antisymmetric part of the stress is undetermined and the fluid's angular momentum is not conserved.</p>
+<h3 id="the-two-fluid-reading-is-not-available-here">The two-fluid reading is not available here</h3>
+<p><strong>The Dirac field does not split into a condensate and a normal part.</strong> The split of <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a> is a split of the state's entropy content, and the Dirac field of a pure plane wave carries none. A reader who wants a two-fluid reading of the Dirac field has to add a thermal component, which is what the partition function of <a href="equilibrium-partition-function-in-a-moving-frame.html">Equilibrium Partition Function in a Moving Frame</a> supplies. This article's fluid is the zero-entropy component of that construction, and its spin is the spin of the condensate.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> The polar data of the Dirac field — the frame element, its square as the velocity, the rotor's image as the spin, the current as the density times the frame — imported from the polar article. The Gordon split into convection and magnetisation parts, imported from the Gordon article. The closure of the scalar velocity one-form, which is exact and follows from $\tilde P_\Phi=\tilde\nabla S_{\tilde\Xi}$. The non-closure of the Dirac velocity, with the counting and the closure conditions displayed. The vorticity as the antisymmetrised frame gradient, with the shear-flow check. The frozen-frame sector and the four losses.</p>
+<p><strong>Interpretation.</strong> That the Dirac fluid is <em>a</em> spin fluid in the sense of the non-relativistic spin-hydrodynamics literature. The correspondence is by structure — a density, a velocity and an independent spin direction, with the spin entering the current as a bound current — and not by derivation: nothing here shows that the corpus's spin direction obeys the literature's transport equation. What the corpus supplies is the exact kinematic triple and its algebra; the transport equation is a closure that the later articles add.</p>
+<p><strong>Not claimed.</strong> It is not claimed that the vorticity and the spin direction are tied at each event. They are independent parameters of the word, and the tie is the field equation's, not the kinematics'. It is not claimed that the frozen-frame sector is the non-relativistic limit: the non-relativistic limit of the polar article is a different reduction, in which the frame loses its boost and the rotor precesses, and a reader who wants that limit should read it there.</p>
+<h2 id="summary">Summary</h2>
+<p>The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\hbar/2)i\hat s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.</p>
+<p>The flow is not a gradient. The scalar field's velocity is $\tilde\nabla S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.</p>
+<p>The scalar case is the frozen-frame sector: with no frame element there is nothing whose gradient could open the one-form, and with a constant frame the flow is rigid and a rigid one-form is exact. Freezing the frame loses the vorticity, the spin part of the current, the magnetisation current and the antisymmetric stress. What remains is a dust with a constant spin direction, which is the scalar fluid of the polar-form article up to the phase.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_t,\ \vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, with $\vec e_\eta^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$</td>
+<td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}$</td>
+<td>The one metric, all coefficients $+1$; indices stay low</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=\rho\tilde U$</td>
+<td>The Dirac field as scale times frame element</td>
+</tr>
+<tr>
+<td>$\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$</td>
+<td>The polar article's scale</td>
+</tr>
+<tr>
+<td>$r=\lvert\rho\rvert$</td>
+<td>Its modulus</td>
+</tr>
+<tr>
+<td>$\tilde U$</td>
+<td>The frame element, a unit element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$</td>
+<td>Proper density</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$</td>
+<td>Rapidity of the boost</td>
+</tr>
+<tr>
+<td>$\gamma=\cosh\theta_{\mathrm{rpd}}$</td>
+<td>Lorentz factor</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm b}$</td>
+<td>Unit vector of the boost axis</td>
+</tr>
+<tr>
+<td>$\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$</td>
+<td>Three-velocity</td>
+</tr>
+<tr>
+<td>$\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>Four-velocity of the fluid</td>
+</tr>
+<tr>
+<td>$\tilde U_{\Psi,\mathrm b}$</td>
+<td>The boost factor of the frame</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>The spatial rotor</td>
+</tr>
+<tr>
+<td>$\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>Spin direction, with $\hat s^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}^{1/2}\frac{\hbar}{2}i\hat s$</td>
+<td>Spin element, Hermitian</td>
+</tr>
+<tr>
+<td>$\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$</td>
+<td>Number current</td>
+</tr>
+<tr>
+<td>$v_{\Phi,\mu}$</td>
+<td>Components of $\tilde V_\Phi$, index low</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$</td>
+<td>Vorticity 2-form</td>
+</tr>
+<tr>
+<td>$\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi}$</td>
+<td>Four-momentum of the scalar field</td>
+</tr>
+<tr>
+<td>$S_{\tilde\Xi}$</td>
+<td>Action of the scalar field</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{phs}}$</td>
+<td>Unused here; the scalar phase is $S_{\tilde\Xi}/\hbar$</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$\Sigma_{\mu\nu}$</td>
+<td>Spin generator of the Gordon decomposition</td>
+</tr>
+<tr>
+<td>$\varepsilon_\mu$</td>
+<td>Signature weight, $+1$ temporal and $-1$ spatial</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>Quaternionic norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\tilde Q)$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Speed of light in the medium</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 2–80, for the spin fluid, its vorticity and the spin's contribution to the current.</li>
+<li>David Hestenes, "Space–time structure of the Dirac theory," in <em>Clifford Algebras and their Applications in Mathematical Physics</em> (Reidel, 1986), for the rotor reading of the Dirac spinor and the velocity as a bilinear of the frame.</li>
+<li>F. Halbwachs, P. Hillion and J.-P. Vigier, "Lagrangian formulation of the rotational hydrodynamical model of spinning particles," <em>Il Nuovo Cimento</em> <strong>33</strong> (1964) 221, for the spin fluid's kinematics.</li>
+<li>Walter Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," <em>Zeitschrift für Physik</em> <strong>40</strong> (1926) 117–133, for the decomposition of the current.</li>
+<li>W. Israel, "Relativistic thermodynamics, thermofield statistics and superfluids," <em>Journal of Non-Equilibrium Thermodynamics</em> <strong>11</strong> (1986) 295, for the thermodynamic reading of a fluid with an internal degree of freedom.</li>
+<li>The companion articles: <a href="the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a>, <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>, and <a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

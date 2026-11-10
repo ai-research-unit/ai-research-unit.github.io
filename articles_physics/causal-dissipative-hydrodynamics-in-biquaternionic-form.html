@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causal Dissipative Hydrodynamics in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="causal-dissipative-hydrodynamics-in-biquaternionic-form"><strong>Causal Dissipative Hydrodynamics in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The first-order theory of <a href="the-local-entropy-current.html">The Local Entropy Current</a> is not a theory of anything that propagates, and the corrections that make it one are Israel–Stewart's.</strong></p>
+<p>$$
+\tau_{\Pi}\,\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,
+\qquad
+\tau_{\pi}\,\frac{d\pi_{\lambda\nu}}{d\tau}+\pi_{\lambda\nu}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\lambda\nu},
+\qquad
+\tau_{q}\,\frac{dq_{\lambda}}{d\tau}+q_{\lambda}=-\kappa_{\mathrm{th}}\,\partial_\lambda T ,
+$$</p>
+<p><strong>the three relaxation equations for the bulk stress, the shear and the heat flux</strong>, with the three relaxation times as new transport coefficients. <strong>The article's claim is that these three displays replace three algebraic relations and change nothing else</strong> — the conservation laws, the equation of state and the entropy current of the earlier articles are untouched.</p>
+<p><strong>Why the replacement is necessary, in one sentence.</strong> The first-order relations make the shear stress respond instantaneously to the shear, which makes the shear's equation parabolic, which makes a signal travel at infinite speed; <strong>the relaxation time gives the response an inertia and the equation a wave character, and the wave's speed is finite.</strong></p>
+<p><strong>This article is a transcription: it is standard Israel–Stewart-type causal hydrodynamics in the corpus's letters, with no framework interpretation.</strong> The equations are Israel's and Israel–Stewart's; the entropy current and its Hermiticity declaration are the category's own, inherited and not rewritten; <strong>the algebra's contribution is the notation, and the article says so rather than dressing a transcription as a derivation.</strong></p>
+<p><strong>What the article inherits and does not rewrite.</strong> The entropy inequality of <a href="the-local-entropy-current.html">The Local Entropy Current</a> is written once, with the current declared Hermitian; <strong>this article's positivity section inherits that declaration and writes no fresh $\mathrm{Re}$</strong>, because a second declaration would be a second convention and the corpus keeps one.</p>
+<h2 id="why-the-first-order-theory-fails">Why the First-Order Theory Fails</h2>
+<h3 id="the-parabolic-equation">The parabolic equation</h3>
+<p><strong>A first-order theory relates the flux to the gradient at the same instant, and the resulting equation is parabolic.</strong> For heat conduction the relation is $q_{\lambda}=-\kappa_{\mathrm{th}}\partial_\lambda T$ and, combined with energy conservation, it gives</p>
+<p>$$
+\partial_t T=\frac{\kappa_{\mathrm{th}}}{c_{V}}\,\partial_\lambda\partial_\lambda T ,
+$$</p>
+<p><strong>the diffusion equation, whose solutions spread a disturbance over all space in any non-zero time.</strong> The equation is not wrong as a description of slow variations; it is wrong as a description of a propagation, <strong>because a diffusion equation has no front</strong>.</p>
+<p><strong>The consequence, stated as the standard objection.</strong> A localized initial disturbance has, at any $t>0$, a non-zero value at every point; <strong>so the theory permits a signal to travel at unbounded speed</strong>, which contradicts the framework's own causal structure — the light cone of the metric $\delta_{\mu\nu}$. <strong>The contradiction is not a matter of interpretation and does not depend on the corpus's letters</strong>: it is visible in the diffusion equation.</p>
+<p><strong>The same objection in the shear channel.</strong> The algebraic relation $\pi_{\lambda\nu}=-2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\lambda\nu}$ combined with momentum conservation gives a parabolic equation for the velocity, <strong>so a shear disturbance also travels at unbounded speed.</strong> The bulk channel is parabolic for the same reason. <strong>Three channels, one defect.</strong></p>
+<h3 id="the-instability">The instability</h3>
+<p><strong>The first-order theory is also unstable, and the instability is not merely the acausality in another guise.</strong> A linearized analysis of the full first-order system, with the equilibrium state as the background, gives modes whose growth rate is unbounded above: <strong>the shortest-wavelength modes grow fastest</strong>, so the equilibrium is not a stable solution of the theory at all.</p>
+<p><strong>The mechanism, in one line.</strong> The first-order relations make the stress a function of the gradients, so the equations are a system of first-order equations in space and time whose symbol has no bound; <strong>a mode of wave number $k$ has a growth rate proportional to $k$</strong>, and no amount of care with the equilibrium state removes it.</p>
+<p><strong>Why this matters for the earlier articles.</strong> Everything they wrote — the equation of state, the entropy current, the production — remains true of the <em>equilibrium</em> and of <em>slow</em> departures from it. <strong>What fails is the claim that the theory describes arbitrary departures</strong>, and the relaxation equations are what restore that claim.</p>
+<h2 id="the-israelstewart-corrections">The Israel–Stewart Corrections</h2>
+<h3 id="the-three-relaxation-equations">The three relaxation equations</h3>
+<p><strong>Each dissipative flux gains a relaxation time and an inertial term, and the algebraic relation becomes a differential one.</strong></p>
+<p>$$
+\tau_{\Pi}\,\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,
+\qquad
+\tau_{\pi}\,\frac{d\pi_{\lambda\nu}}{d\tau}+\pi_{\lambda\nu}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\lambda\nu},
+\qquad
+\tau_{q}\,\frac{dq_{\lambda}}{d\tau}+q_{\lambda}=-\kappa_{\mathrm{th}}\,\partial_\lambda T ,
+$$</p>
+<p><strong>the displays at the head of the article, with $\tau$ the proper time along the flow and every index low.</strong> The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\mu}\partial_\mu/c$ in components, <strong>so the equations are written in the fluid's own frame and are invariant because they are written on elements in the corpus's convention</strong>.</p>
+<p><strong>The relaxation time is a transport coefficient of the same standing as the viscosity</strong>, and the second law constrains it: the production's new terms are quadratic in the fluxes and divided by the relaxation times, <strong>so a positive production requires the relaxation times to be positive</strong> as well as the coefficients.</p>
+<p><strong>The limit in which the old theory is recovered.</strong> As $\tau_{\Pi},\tau_{\pi},\tau_{q}\to0$ the inertial terms vanish, the algebraic relations return, and the theory returns to the first order's — <strong>acausality and instability included</strong>. That is the correct statement of the relationship: <strong>the first-order theory is the singular limit of the causal one</strong>, and the singularity is the loss of the highest derivative.</p>
+<h3 id="what-the-correction-changes-and-what-it-does-not">What the correction changes and what it does not</h3>
+<p><strong>Changes: the number of transport coefficients.</strong> A causal theory has six where the first-order theory has three — $\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$ and their three relaxation times. <strong>A model with fewer is first-order in disguise.</strong></p>
+<p><strong>Changes: the order of the equations.</strong> The system is now second order in time for the fluxes, so it needs initial data for the fluxes and not only for the conserved densities. <strong>That is the price of causality and it is not optional</strong>: a hyperbolic system needs more data than a parabolic one.</p>
+<p><strong>Does not change: the conservation laws.</strong> The energy-momentum element's conservation is the same display, and the spin's is <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a>'s. <strong>The relaxation equations modify the constitutive relations, not the conservation laws.</strong></p>
+<p><strong>Does not change: the equation of state.</strong> <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>'s $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ stands; the relaxation affects how fast the pressure reaches its value, not what the value is.</p>
+<p><strong>Does not change: the entropy current's form.</strong> <a href="the-local-entropy-current.html">The Local Entropy Current</a>'s $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ stands, with the production gaining the relaxation terms. <strong>The current is Hermitian before and after</strong>, which is why the positivity section writes no new declaration.</p>
+<h3 id="the-relaxation-time-against-the-hydrodynamic-scale">The relaxation time against the hydrodynamic scale</h3>
+<p><strong>A relaxation time is a microscopic time, and the theory is a hydrodynamic one only while it is short against the macroscopic time.</strong></p>
+<p>$$
+\mathrm{Kn}_{\tau}=\frac{\tau_{q}}{L/c},
+$$</p>
+<p><strong>the ratio of the relaxation time to the light-crossing time of the system's size $L$</strong>, which plays the role of the Knudsen number for the causal theory. <strong>The expansion is in this ratio</strong>, so the relaxation equation is a controlled correction while $\mathrm{Kn}_\tau\ll1$ and an uncontrolled model when it is not.</p>
+<p><strong>Numbers, so that the statement has a scale.</strong> For $\tau_q=1\,\mathrm{fm}/c$ and a system of $L=10\,\mathrm{fm}$, the ratio is $0.1$: the relaxation time is a tenth of the crossing time and the expansion is reasonable. For $L=2\,\mathrm{fm}$ the ratio is $0.5$ and the expansion is marginal; <strong>for a system smaller than a few relaxation lengths the causal theory is the only one available and the expansion is not</strong>, which is the situation in which the corrections were invented.</p>
+<p><strong>What the ratio does not measure.</strong> It does not measure the accuracy of the transport coefficients, and it does not bound the front speed; <strong>causality is the separate condition of the next section</strong>, and the two conditions are independent. A theory can have a small $\mathrm{Kn}_\tau$ and be acausal if the diffusivity is too large, and a causal one with a large $\mathrm{Kn}_\tau$.</p>
+<h3 id="what-the-relaxation-time-is-not">What the relaxation time is not</h3>
+<p><strong>Not necessarily a mean free time.</strong> In a kinetic derivation it is of the order of one, but the relation is a model-dependent statement and not an identity; <strong>the article keeps the two apart because the identification is the step that a reader is most likely to assume and least likely to check.</strong></p>
+<p><strong>Not a cutoff.</strong> The relaxation equation is a differential equation, not a modification of the spectrum above some wave number; <strong>the theory has modes at every wave number and the front speed is what limits their propagation</strong>, which is why the causal statement is a statement about the dispersion relation's asymptotics and not about a truncation.</p>
+<p><strong>Not a free parameter.</strong> The second law fixes its sign and the causality condition bounds it below by $D_{\mathrm{th}}/c^{2}$; <strong>so a fit that yields a relaxation time below that bound yields a theory that is not causal</strong>, and the bound is the article's one predictive statement about the coefficient.</p>
+<h2 id="causal-propagation">Causal Propagation</h2>
+<h3 id="the-dispersion-relation-of-one-channel">The dispersion relation of one channel</h3>
+<p><strong>The relaxation equation turns the diffusion equation into a wave equation with damping, and the dispersion relation shows both.</strong></p>
+<p>$$
+\omega^{2}+\frac{i}{\tau_{q}}\,\omega-\frac{D_{\mathrm{th}}}{\tau_{q}}\,k^{2}=0,
+\qquad
+D_{\mathrm{th}}=\frac{\kappa_{\mathrm{th}}}{c_{V}},
+$$</p>
+<p><strong>the quadratic that follows from the relaxation equation combined with energy conservation</strong>, with $D_{\mathrm{th}}$ the thermal diffusivity and $k$ a wave number. <strong>The equation is the article's whole causal structure in one line</strong>: the $i\omega/\tau_q$ term is the damping and the $k^{2}$ term is the propagation whose speed the damping limits.</p>
+<p><strong>The two roots, and what they mean.</strong> The roots are</p>
+<p>$$
+\omega=-\frac{i}{2\tau_{q}}\pm\frac{1}{2}\sqrt{-\frac{1}{\tau_{q}^{2}}+4\,\frac{D_{\mathrm{th}}}{\tau_{q}}k^{2}} ,
+$$</p>
+<p><strong>so the sign of the discriminant decides between two over-damped modes and two propagating ones.</strong> When $D_{\mathrm{th}}k^{2}\tau_{q}<\tfrac14$ the square root is imaginary, both roots are imaginary and the disturbance decays without oscillating; <strong>when the inequality is reversed the roots have real parts and the disturbance propagates.</strong></p>
+<p><strong>The asymptotic speed, which is the number that matters for causality.</strong> For large $k$ the real part of the root tends to $\sqrt{D_{\mathrm{th}}/\tau_{q}}\,k$, so the front speed is</p>
+<p>$$
+v_{\mathrm{frt}}=\sqrt{\frac{D_{\mathrm{th}}}{\tau_{q}}} ,
+$$</p>
+<p><strong>the speed at which the shortest wavelengths travel</strong> and therefore the fastest signal the theory permits. <strong>Causality is the statement $v_{\mathrm{frt}}\le c$</strong>, which is the inequality</p>
+<p>$$
+D_{\mathrm{th}}\le\tau_{q}\,c^{2},
+$$</p>
+<p><strong>a condition on the relaxation time and not on the diffusivity alone.</strong> The article states it as the theory's causality condition and notes that it is a constraint the second law does not supply — <strong>the entropy inequality fixes signs, and causality fixes magnitudes.</strong></p>
+<h3 id="numbers">Numbers</h3>
+<p><strong>The front speed was evaluated at four pairs, and one of them is acausal, which is the point of the table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$D_{\mathrm{th}}$ (fm)</th>
+<th>$\tau_{q}$ (fm/$c$)</th>
+<th>$v_{\mathrm{frt}}/c$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.1$</td>
+<td>$0.5$</td>
+<td>$0.4472$</td>
+<td>causal</td>
+</tr>
+<tr>
+<td>$0.2$</td>
+<td>$1.0$</td>
+<td>$0.4472$</td>
+<td>causal</td>
+</tr>
+<tr>
+<td>$0.5$</td>
+<td>$0.5$</td>
+<td>$1.0000$</td>
+<td>marginal</td>
+</tr>
+<tr>
+<td>$1.0$</td>
+<td>$0.5$</td>
+<td>$1.4142$</td>
+<td>acausal</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is the boundary and the fourth is past it</strong>, so the condition $D_{\mathrm{th}}\le\tau_q c^{2}$ is not a formality: <strong>a physical diffusivity with too short a relaxation time gives a theory whose fastest signal outruns light</strong>, and that is exactly the defect the first-order theory has in the limit $\tau_q\to0$.</p>
+<p><strong>The dispersion, evaluated twice at $k=2\,\mathrm{fm}^{-1}$.</strong> With $D_{\mathrm{th}}=0.2\,\mathrm{fm}$ and $\tau_{q}=1\,\mathrm{fm}/c$ the roots are $\omega=0.741\,620-0.500\,000\,i$ and its conjugate's negative, so the phase speed is $\mathrm{Re}\,\omega/k=0.370\,810\,c$ and the damping rate is $0.500\,000$ per $\mathrm{fm}/c$. With $D_{\mathrm{th}}=0.05\,\mathrm{fm}$ and the same $\tau_q$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$, <strong>both purely imaginary, so the mode is over-damped and does not propagate at that wave number.</strong> The threshold between the two behaviours is $D_{\mathrm{th}}=0.062\,500\,\mathrm{fm}$ at $k=2\,\mathrm{fm}^{-1}$ and $\tau_q=1\,\mathrm{fm}/c$, <strong>which is $1/(4k^{2}\tau_q)$ and is the discriminant's zero.</strong></p>
+<p><strong>What the numbers establish and what they do not.</strong> They establish that the relaxation equation has the two regimes and that the front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$; <strong>they do not establish that a given fluid's coefficients satisfy the causality condition</strong>, which is a statement about the fluid and not about the equation.</p>
+<h3 id="the-shear-and-bulk-channels">The shear and bulk channels</h3>
+<p><strong>The same structure holds in the other two channels with the kinematic viscosities in place of the diffusivity.</strong></p>
+<p>$$
+v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{\rho_{\mathrm{num}}\,\tau_{\pi}}},
+\qquad
+v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{\rho_{\mathrm{num}}\,\tau_{\Pi}}},
+$$</p>
+<p><strong>so each channel has its own causality condition and the theory is causal only if all three hold.</strong> The article writes the three because <strong>a single satisfied channel is the commonest way a causal claim is made falsely.</strong></p>
+<p><strong>The combined condition, in one line.</strong> With $v_{\mathrm{snd}}$ the sound speed, the Israel–Stewart system is causal when the three front speeds and the sound speed are all at most $c$; <strong>the sound speed's own bound is the equation of state's and not the relaxation's</strong>, and the article does not conflate the two.</p>
+<h2 id="positivity-and-stability">Positivity and Stability</h2>
+<h3 id="the-quadratic-form">The quadratic form</h3>
+<p><strong>The equilibrium is stable when the energy's second variation is a positive definite quadratic form in the dissipative fluxes, and the causal theory's form is the first-order one divided by the relaxation times.</strong></p>
+<p>$$
+\delta^{2}w_{\mathrm{fl}}=\frac{\Pi^{2}}{2\zeta\tau_{\Pi}}+\frac{\pi_{\lambda\nu}\pi_{\lambda\nu}}{4\eta_{\mathrm{sh}}\tau_{\pi}}+\frac{q_{\lambda}q_{\lambda}}{2\kappa_{\mathrm{th}}\tau_{q}} ,
+$$</p>
+<p><strong>the standard Israel–Stewart result, quoted with every index low.</strong> Each term is a square divided by a positive coefficient and a positive relaxation time, <strong>so the form is positive definite exactly when the six coefficients are positive</strong> — the three transport coefficients and the three relaxation times.</p>
+<p><strong>Why this is the statement of stability.</strong> The fluxes are the system's extra degrees of freedom, and the quadratic form is their energy cost; <strong>a positive cost means that a departure from equilibrium raises the energy, so the equilibrium is a minimum and the linearized dynamics is oscillatory-damped rather than growing.</strong> A negative coefficient would make some departure lower the energy, and the theory would have no equilibrium to return to.</p>
+<p><strong>The relation to the entropy.</strong> The same quadratic form divided by the temperature is the entropy's second variation, <strong>so positivity of the energy's form and concavity of the entropy are one statement</strong>; the corpus writes it on the energy because that is the element the earlier articles already have.</p>
+<h3 id="the-inherited-declaration">The inherited declaration</h3>
+<p><strong>Every quantity in the display is the scalar part of an element, and the display is real because the currents are Hermitian — the declaration is <a href="the-local-entropy-current.html">The Local Entropy Current</a>'s and this article does not repeat it.</strong></p>
+<p><strong>How the inheritance works, spelled out because it is the article's only non-transcriptive claim.</strong> The entropy current was declared Hermitian, $\tilde J_{\Phi,\mathrm{ent}}^{*}=\tilde J_{\Phi,\mathrm{ent}}$, so the scalar part of its divergence is a real number; the production's relaxation terms are built from the same elements, so their scalar parts are real for the same reason; <strong>and the quadratic form above is the second variation of that real scalar part.</strong> A fresh $\mathrm{Re}$ would be a second convention for the same fact, <strong>and the corpus's rule is one declaration per category, not one per display.</strong></p>
+<p><strong>What a reader should check, and it is one thing.</strong> That no display in this article writes $\mathrm{Re}$ and that every inequality in it is a statement about a real number. <strong>The check passes: the only inequalities are the causality conditions, which are comparisons of speeds, and the positivity of the six coefficients, which is a statement about real parameters.</strong></p>
+<p><strong>The stability statement, in its final form.</strong> The causal theory is stable, causal and thermodynamically consistent when the six coefficients are positive and the three causality conditions hold; <strong>the first-order theory is the limit in which the relaxation times vanish, in which the causality conditions cannot hold, and in which the stability statement loses its form because the denominators vanish.</strong> That is why the corrections are not a refinement but a repair.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established, and standard.</strong> That the first-order theory is parabolic, acausal and unstable; that the Israel–Stewart relaxation equations restore hyperbolicity; that the front speed of each channel is the square root of a diffusivity over a relaxation time; that causality is the condition that those speeds not exceed $c$; that the equilibrium is stable when the energy's second variation is positive definite in the fluxes; that the first-order theory is the singular limit of the causal one.</p>
+<p><strong>What the corpus contributes, and it is only notation.</strong> The relaxation equations written on elements with every index low; the comoving derivative written as a contraction with the flow's components; and the inheritance of the entropy article's Hermiticity declaration, so that the positivity section writes no fresh $\mathrm{Re}$. <strong>No new physics is claimed, and the article's transcription sentence says so.</strong></p>
+<p><strong>Interpretation, and there is none in this article beyond the transcription.</strong> The article's claims are the standard theory's; where a reader might expect a framework reading — the meaning of the relaxation time in terms of the thermal circle, the relation between $\tau_q$ and $\beta$ — <strong>the article declines to offer one, because the relation is not established and a speculative one would be worse than none.</strong></p>
+<p><strong>Not claimed.</strong> That the transport coefficients have been computed from the field theory; that the relaxation times are related to $\beta$; that the two-fluid model's relaxation structure has been written; that the spin channel's relaxation has been coupled to this one beyond the statement that it exists.</p>
+<h2 id="summary">Summary</h2>
+<p>The first-order theory's three algebraic relations make the shear, bulk and heat channels parabolic, so a signal travels unboundedly fast and the equilibrium is unstable against short wavelengths. The Israel–Stewart corrections replace them by three relaxation equations, $\tau_{\Pi}\dot\Pi+\Pi=-\zeta\theta$, $\tau_{\pi}\dot\pi_{\lambda\nu}+\pi_{\lambda\nu}=-2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\lambda\nu}$ and $\tau_{q}\dot q_{\lambda}+q_{\lambda}=-\kappa_{\mathrm{th}}\partial_\lambda T$, with six coefficients instead of three and a system that is second order in time for the fluxes.</p>
+<p>The dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{2}=0$ gives two over-damped modes when $D_{\mathrm{th}}k^{2}\tau_q<\tfrac14$ and two propagating ones above it, with the asymptotic front speed $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$. Evaluated: $0.4472\,c$ for $(0.1,0.5)$ and $(0.2,1.0)$, $c$ exactly for $(0.5,0.5)$ and $1.4142\,c$ for $(1.0,0.5)$, so the causality condition $D_{\mathrm{th}}\le\tau_qc^{2}$ is a real constraint. At $k=2\,\mathrm{fm}^{-1}$ with $D_{\mathrm{th}}=0.2\,\mathrm{fm}$ and $\tau_q=1\,\mathrm{fm}/c$ the root is $0.741\,620-0.500\,000\,i$, a phase speed of $0.370\,810\,c$; at $D_{\mathrm{th}}=0.05\,\mathrm{fm}$ the roots are $-0.276\,393\,i$ and $-0.723\,607\,i$ and the mode is over-damped, with the threshold at $D_{\mathrm{th}}=0.062\,500\,\mathrm{fm}$.</p>
+<p>The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mathrm{fl}}=\Pi^{2}/(2\zeta\tau_{\Pi})+\pi_{\lambda\nu}\pi_{\lambda\nu}/(4\eta_{\mathrm{sh}}\tau_{\pi})+q_{\lambda}q_{\lambda}/(2\kappa_{\mathrm{th}}\tau_{q})$, is positive definite — evaluated once at $\Pi=0.05$, $\pi=0.1$, $q=0.02$ with $\zeta=0.1$, $\eta_{\mathrm{sh}}=0.2$, $\kappa_{\mathrm{th}}=0.05$ and all three relaxation times $1$, $1$ and $0.5$, the three terms are $0.012\,500$, $0.012\,500$ and $0.008\,000$ for a total of $0.033\,000$. The form is real by the Hermiticity declaration of <a href="the-local-entropy-current.html">The Local Entropy Current</a>, which this article inherits and does not repeat.</p>
+<p><strong>This is standard Israel–Stewart-type causal hydrodynamics in the corpus's letters, with no framework interpretation.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi$</td>
+<td>Bulk stress</td>
+</tr>
+<tr>
+<td>$\pi_{\lambda\nu}$</td>
+<td>Shear stress, indices low</td>
+</tr>
+<tr>
+<td>$q_{\lambda}$</td>
+<td>Heat flux</td>
+</tr>
+<tr>
+<td>$\tau_{\Pi}$, $\tau_{\pi}$, $\tau_{q}$</td>
+<td>Relaxation times</td>
+</tr>
+<tr>
+<td>$\zeta$, $\eta_{\mathrm{sh}}$, $\kappa_{\mathrm{th}}$</td>
+<td>Bulk viscosity, shear viscosity, conductivity</td>
+</tr>
+<tr>
+<td>$\theta=v_{\Phi,\mu}\partial_\mu$</td>
+<td>Expansion</td>
+</tr>
+<tr>
+<td>$\sigma^{\mathrm{sh}}_{\lambda\nu}$</td>
+<td>Shear of the flow</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>Proper time along the flow</td>
+</tr>
+<tr>
+<td>$D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$</td>
+<td>Thermal diffusivity</td>
+</tr>
+<tr>
+<td>$c_{V}$</td>
+<td>Heat capacity per unit volume</td>
+</tr>
+<tr>
+<td>$\omega$, $k$</td>
+<td>Frequency and wave number</td>
+</tr>
+<tr>
+<td>$v_{\mathrm{frt}}$, $v_{\mathrm{frt,sh}}$, $v_{\mathrm{frt,bk}}$</td>
+<td>Front speeds of the three channels</td>
+</tr>
+<tr>
+<td>$v_{\mathrm{snd}}$</td>
+<td>Sound speed</td>
+</tr>
+<tr>
+<td>$\mathrm{Kn}_{\tau}=\tau_{q}/(L/c)$</td>
+<td>Relaxation time against the crossing time</td>
+</tr>
+<tr>
+<td>$L$</td>
+<td>System size</td>
+</tr>
+<tr>
+<td>$\delta^{2}w_{\mathrm{fl}}$</td>
+<td>Second variation of the energy density</td>
+</tr>
+<tr>
+<td>$w_{\mathrm{fl}}$, $p_{\mathrm{eff}}$</td>
+<td>Energy density, effective pressure</td>
+</tr>
+<tr>
+<td>$\tilde J_{\Phi,\mathrm{ent}}$</td>
+<td>Entropy current, Hermitian, inherited</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$</td>
+<td>Proper density</td>
+</tr>
+<tr>
+<td>$T$, $\beta$</td>
+<td>Temperature, imaginary-time circumference</td>
+</tr>
+<tr>
+<td>$c$, $\hbar$</td>
+<td>Speed of light, Planck constant</td>
+</tr>
+<tr>
+<td>$e_t$</td>
+<td>Unit temporal direction</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>Boost factor of the flow</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\langle\ \rangle_{\natural}$</td>
+<td>Scalar part, quaternionic norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>W. Israel, "Nonstationary irreversible thermodynamics: a causal relativistic theory," <em>Annals of Physics</em> <strong>100</strong> (1976) 310–331, for the relaxation equations and the causality condition.</li>
+<li>W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," <em>Annals of Physics</em> <strong>118</strong> (1979) 341–372, for the systematic derivation and the quadratic form.</li>
+<li>I. Müller, "Zum Paradoxon der Wärmeleitungstheorie," <em>Zeitschrift für Physik</em> <strong>198</strong> (1967) 329–344, for the first causal correction and the infinite-speed objection.</li>
+<li>C. Cattaneo, "Sulla conduzione del calore," <em>Atti del Seminario Matematico e Fisico della Università di Modena</em> <strong>3</strong> (1948) 83–101, for the relaxation term in heat conduction.</li>
+<li>W. A. Hiscock and L. Lindblom, "Stability and causality in dissipative relativistic fluids," <em>Annals of Physics</em> <strong>151</strong> (1983) 466–496, for the instability proof in the first-order theory and the stability conditions in the second.</li>
+<li>R. P. Geroch and L. Lindblom, "Dissipative relativistic fluid theories of divergence type," <em>Physical Review D</em> <strong>41</strong> (1990) 1855–1861, for the general classification of causal dissipative theories.</li>
+<li>P. Romatschke, "New developments in relativistic viscous hydrodynamics," <em>International Journal of Modern Physics E</em> <strong>19</strong> (2010) 1–53, for the modern uses and the coefficient counting.</li>
+<li>The companion articles: <a href="the-local-entropy-current.html">The Local Entropy Current</a>, <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>, <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>, and <a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

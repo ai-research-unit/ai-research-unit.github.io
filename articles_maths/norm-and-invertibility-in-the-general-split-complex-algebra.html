@@ -130,17 +130,17 @@ $$</p>
 </ul>
 <p>So $\langle\cdot\rangle_{*}$ is a real-valued multiplicative semi-norm: multiplicative, homogeneous of degree two over the real scalars, indefinite, and vanishing exactly on the zero divisors and the origin. The absolute value $\rho=\sqrt{|\langle Q\rangle_{*}|}$ is the <strong>modulus</strong> of the polar decomposition; it is multiplicative and absolutely homogeneous, positive exactly on the units, and it is not a norm because it vanishes on the null cone.</p>
 <h2 id="the-unique-real-norm">The Unique Real Norm</h2>
-<p><strong>The positive definite real norm of the algebra is the Euclidean norm $\|Q\|_{E}=\sqrt{q^{2}+q'^{2}}$, which comes from the real part of the plain square and not from the algebraic norm of either product.</strong></p>
+<p><strong>The positive definite real norm of the algebra is the Euclidean norm $\|Q\|=\sqrt{q^{2}+q'^{2}}$, which comes from the real part of the plain square and not from the algebraic norm of either product.</strong></p>
 <p>The <strong>Euclidean form</strong> is</p>
 <p>$$
 \langle Q,B\rangle_{E}=qb+q'b',
 $$</p>
 <p>the ordinary inner product of $\mathbb{R}^{2}$, positive definite and symmetric, of Gram matrix $\operatorname{diag}(1,1)$. Its diagonal is</p>
 <p>$$
-\|Q\|_{E}^{2}=q^{2}+q'^{2}=\operatorname{Re}(Q^{2}),
+\|Q\|^{2}=q^{2}+q'^{2}=\operatorname{Re}(Q^{2}),
 $$</p>
 <p>the real part of the first algebraic norm. The Euclidean norm is a genuine norm: positive definite, subadditive, homogeneous of degree one. It is the norm that turns $\mathbb{C}_{\mathrm{spl}}$ into a topological algebra and that underlies the analysis of <em>Split-Complex Analysis</em>.</p>
-<p>The Euclidean form is <strong>not multiplicative</strong>, and the Euclidean norm is not preserved by the split-complex product: for $Q=1+j$ one has $\|Q\|_{E}^{2}=2$ while $\|Q^{2}\|_{E}=\|2+2j\|_{E}=2\sqrt2\neq2$. It is the topological norm of the plane, not the algebraic norm of the ring.</p>
+<p>The Euclidean form is <strong>not multiplicative</strong>, and the Euclidean norm is not preserved by the split-complex product: for $Q=1+j$ one has $\|Q\|^{2}=2$ while $\|Q^{2}\|=\|2+2j\|=2\sqrt2\neq2$. It is the topological norm of the plane, not the algebraic norm of the ring.</p>
 <h2 id="the-norm-from-the-halves">The Norm from the Halves</h2>
 <p><strong>In the idempotent coordinates the algebraic norm is the product of the two coordinates, $\langle Q\rangle_{*}=Q_{+}Q_{-}$, and this is the reason it vanishes exactly when one idempotent coordinate vanishes.</strong></p>
 <p>Write $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$. Since multiplication is componentwise in the idempotent basis,</p>
@@ -149,11 +149,11 @@ Q\bar Q=(Q_{+}\Pi_{+}+Q_{-}\Pi_{-})(Q_{+}\Pi_{-}+Q_{-}\Pi_{+})=Q_{+}Q_{-}\Pi_{+}
 $$</p>
 <p>using $\bar\Pi_{\pm}=\Pi_{\mp}$. The two coordinates of the norm are equal, as they must be because the norm is real. In the same coordinates,</p>
 <p>$$
-\|Q\|_{E}^{2}=q^{2}+q'^{2}=\tfrac12(Q_{+}^{2}+Q_{-}^{2}),
+\|Q\|^{2}=q^{2}+q'^{2}=\tfrac12(Q_{+}^{2}+Q_{-}^{2}),
 $$</p>
 <p>so the Euclidean norm is the root of the mean of the squares of the two idempotent coordinates, while the algebraic norm is their product. The two are related by</p>
 <p>$$
-Q_{+}^{2}+Q_{-}^{2}=2\|Q\|_{E}^{2},\qquad Q_{+}Q_{-}=\langle Q\rangle_{*} .
+Q_{+}^{2}+Q_{-}^{2}=2\|Q\|^{2},\qquad Q_{+}Q_{-}=\langle Q\rangle_{*} .
 $$</p>
 <h2 id="the-norm-and-the-hermitian-form">The Norm and the Hermitian Form</h2>
 <p><strong>The Hermitian form $H(Q_1,Q_2)=Q_1\bar Q_2$ is conjugate-symmetric, of real part the split bilinear form $g$ and imaginary part $q'_1q_2-q_1q'_2$; its diagonal is the algebraic norm $\langle Q\rangle_{*}$, and it is indefinite. There is no positive definite Hermitian form on $\mathbb{C}_{\mathrm{spl}}$.</strong></p>
@@ -387,7 +387,7 @@ $$</p>
 <td>Modulus, multiplicative and absolutely homogeneous</td>
 </tr>
 <tr>
-<td>$\|Q\|_{E}=\sqrt{q^{2}+q'^{2}}$</td>
+<td>$\|Q\|=\sqrt{q^{2}+q'^{2}}$</td>
 <td>Euclidean norm, the positive definite real norm</td>
 </tr>
 <tr>

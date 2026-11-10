@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternionic Dirac equation is first order and its solutions are waves. At short wavelength a wave stops being one in the sense that matters, and what remains is a particle with a momentum and a mass. This article carries that out: the relativistic Hamilton–Jacobi equation at leading order, the Lorentz force one step later.</p>
 <p><strong>The claim, stated narrowly.</strong> The mass shell is the leading term of a short-wavelength expansion of the Dirac wave. It is not predicted by the algebra nor created by the limit: $k_{m}=\frac{m\,c}{\hbar}$ is already there. What the limit supplies is the reading of the phase gradient as the mechanical momentum, and with it the flow.</p>
-<p><strong>The parameter is the companion's.</strong> With $\tilde\Xi_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}iS}{m\,c}\right)\xi$, the small quantity is $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, $L$ the length over which $A$ varies. The criterion and the error operator are established in <em>The Non-Quantum Limit of the Biquaternion Model</em> and are used here, not restated.</p>
+<p><strong>The parameter is the companion's.</strong> With $\tilde\Xi_{\mathrm{sp}}=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$, the small quantity is $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, $L$ the length over which $A$ varies. The criterion and the error operator are established in <em>The Non-Quantum Limit of the Biquaternion Model</em> and are used here, not restated.</p>
 <p><strong>What this is not.</strong> It is not the $\beta\ll1$ limit of <em>The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit</em>, which subtracts the rest phase and yields a non-relativistic wave; this yields a relativistic flow. The two compose, as §<em>Where the Two Limits Meet</em> says.</p>
 <p><strong>What is not new.</strong> The chiral pair is <em>The Dirac Equation in Biquaternionic Form</em>; the criterion, the companion <em>The Non-Quantum Limit of the Biquaternion Model</em>. Added here: the eikonal of the coupled pair, its gradient as the Lorentz force, and the observation that the leading eikonal is central and so cannot see a spinor.</p>
 <h2 id="the-wave-and-the-expansion">The Wave and the Expansion</h2>
@@ -85,50 +85,50 @@
 k_{m}=\frac{m\,c}{\hbar}.
 $$</p>
 <p>The product $\tilde\nabla^{\natural}\tilde\nabla$ is the central scalar $\Box=\partial^{2}/\partial R_{t}^{2}+\Delta$, which with $R_{t}=ict$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$. The passage from the first-order pair to that second-order equation is the subject of <em>Klein–Gordon from the Dirac Square</em>; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.</p>
-<p><strong>The expansion.</strong> Write $\tilde\Xi_{\mathrm{sp}}=Ae^{iS/\hbar}\xi$ with $A>0$ real, $S$ real and $\xi$ slowly varying. Then</p>
+<p><strong>The expansion.</strong> Write $\tilde\Xi_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then</p>
 <p>$$
-\tilde\nabla\tilde\Xi_{\mathrm{sp}}=\frac{1}{\hbar}\left(\frac{\partial_{t}S}{c}e_{t}+i\nabla S\right)\tilde\Xi_{\mathrm{sp}}+\mathcal{O}(\epsilon),
+\tilde\nabla\tilde\Xi_{\mathrm{sp}}=\frac{1}{\hbar}\left(\frac{\partial_{t}S_{\tilde\Xi}}{c}e_{t}+i\nabla S_{\tilde\Xi}\right)\tilde\Xi_{\mathrm{sp}}+\mathcal{O}(\epsilon),
 $$</p>
 <p>so the gradient acts, to leading order, as multiplication by $i\tilde K_{\Phi}$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ the element of <em>The Three Wavenumbers of a Particle</em>. Its $e_{t}$ entry is real and its vector part imaginary, as the display shows. The limit is the statement that this term dominates.</p>
+<p><strong>What a $k$ may stand for, and nothing else.</strong> Three wave numbers occur in this article, and each divides $\hbar$ out of a mass, a momentum or an energy: $k_{m}=\frac{m\,c}{\hbar}$, $\vec k_{\Phi}=\frac{\vec p}{\hbar}$, and the temporal one $\frac{\omega}{c}=\frac{E}{\hbar\,c}$, which occurs once, in §<em>Case Checked</em>. No fourth use is made of one. The rewriting $\frac{1}{\hbar}=\frac{k_{m}}{m\,c}$ is available, and the companion uses it for the phase; it is not used here, because the mass cancels in that ratio for every $m$, so nothing is absorbed into the $k_{m}$ and the wave number would be decoration over a bare $\hbar$. <strong>A wave number appears below only where a mass, a momentum or an energy waits to be absorbed by it.</strong> The one place where the source's writing is quoted is the charge coupling, and §<em>The Gauge Field, and the Lorentz Force</em> says what the cancellation carries there.</p>
 <h2 id="order-zero-the-mass-shell">Order Zero: the Mass Shell</h2>
 <p><strong>Substitute and separate.</strong> Multiplying $\left(\Box-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$ by $-\hbar^{2}$ and dividing by $\tilde\Xi_{\mathrm{sp}}$ gives, exactly,</p>
 <p>$$
--\left[\frac{(\partial_{t}S)^{2}}{c^{2}}-\lvert\nabla S\rvert^{2}-m^{2}c^{2}\right]
+-\left[\frac{(\partial_{t}S_{\tilde\Xi})^{2}}{c^{2}}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}-m^{2}c^{2}\right]
 +\hbar^{2}\left[\frac{1}{c^{2}}\frac{\partial_{t}^{2}A}{A}-\frac{\nabla^{2}A}{A}\right]
-+\frac{i\hbar}{A^{2}}\left[\frac{1}{c^{2}}\partial_{t}\!\left(A^{2}\partial_{t}S\right)-\nabla\cdot\left(A^{2}\nabla S\right)\right]=0 .
++\frac{i\hbar}{A^{2}}\left[\frac{1}{c^{2}}\partial_{t}\!\left(A^{2}\partial_{t}S_{\tilde\Xi}\right)-\nabla\cdot\left(A^{2}\nabla S_{\tilde\Xi}\right)\right]=0 .
 $$</p>
-<p>No line is dropped and no order taken: one identity in the two real functions $A$ and $S$.</p>
+<p>No line is dropped and no order taken: one identity in the two real functions $A$ and $S_{\tilde\Xi}$.</p>
 <p><strong>Three lines, three orders.</strong> The first is a difference of energies, of scale $p^{2}$, with no $\hbar$ in it. The second, over the first, is $\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2}$; its bracket is the companion's quantum potential. The third, over the first, is $\frac{\hbar}{pL}=\epsilon$. The identity reads $1:\epsilon^{2}:\epsilon$, and $\hbar$ is never set to zero.</p>
-<p><strong>Order zero.</strong> Dropping the $\epsilon^{2}$ line leaves the first line zero, which with $E=-\partial_{t}S$ and $\vec p=\nabla S$ reads</p>
+<p><strong>Order zero.</strong> Dropping the $\epsilon^{2}$ line leaves the first line zero, which with $E=-\partial_{t}S_{\tilde\Xi}$ and $\vec p=\nabla S_{\tilde\Xi}$ reads</p>
 <p>$$
 \boxed{\;\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}\;}
 $$</p>
 <p>which is the mass shell and the relativistic Hamilton–Jacobi equation: the phase is a complete integral and its gradient the four-momentum. <strong>The limit discards the quantum potential; the $\epsilon$ line is not an error but the next order's equation</strong>, as §<em>Order One</em> shows. The relative error is $\epsilon^{2}$.</p>
-<p><strong>The mass is recovered, not derived.</strong> The first line carries $m$ because $k_{m}$ did; the expansion adds only $E=-\partial_{t}S$, $\vec p=\nabla S$.</p>
+<p><strong>The mass is recovered, not derived.</strong> The first line carries $m$ because $k_{m}$ did; the expansion adds only $E=-\partial_{t}S_{\tilde\Xi}$, $\vec p=\nabla S_{\tilde\Xi}$.</p>
 <h2 id="the-gauge-field-and-the-lorentz-force">The Gauge Field, and the Lorentz Force</h2>
 <p><strong>Minimal coupling replaces the gradient.</strong> The corpus's prescription of <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em> is $\tilde\nabla\mapsto\tilde\nabla_{\mathrm{gco}}$ with</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_{\mu}}+\frac{k_{m}\,i\,ϙ}{m\,c}A_{\mu}
-=\frac{\partial}{\partial R_{\mu}}+\frac{i\,ϙ}{\hbar}A_{\mu},
+\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_{\mu}}+\frac{i\,ϙ}{\hbar}A_{\mu},
 $$</p>
-<p>$ϙ$ the charge and $\tilde A_{\Phi}=\sum_{\mu}A_{\mu}e_{\mu}$ the potential, whose temporal entry is $A_{t}=i\phi/c$. Acting on $Ae^{iS/\hbar}$ the entries become $\frac{1}{\hbar c}(\partial_{t}S-ϙ\phi)$ and $\frac{i}{\hbar}(\nabla S+ϙ\vec A)$, the two shifts being opposite, which is the gauge-invariant content.</p>
-<p><strong>One relabelling, stated once.</strong> Those entries carry $ϙ$ with the sign opposite to the kinetic momentum of ordinary notation, $\vec\pi=\vec p-ϙ\vec A$. Writing $-ϙ$ for $ϙ$ throughout sends them to $\frac{1}{\hbar c}(\partial_{t}S+ϙ\phi)$ and $\frac{i}{\hbar}(\nabla S-ϙ\vec A)$, and the article uses that writing, in which $\Pi_{t}$ and $\vec\pi$ carry their usual signs.</p>
+<p>$ϙ$ the charge and $\tilde A_{\Phi}=\sum_{\mu}A_{\mu}e_{\mu}$ the potential, whose temporal entry is $A_{t}=i\phi/c$. The source article writes the same coefficient as $\frac{k_{m}\,i\,ϙ}{m\,c}$, and the two agree because $\frac{k_{m}}{m\,c}=\frac{1}{\hbar}$. <strong>The mass cancels in that ratio, and that cancellation is the physical content:</strong> the coefficient is $\frac{1}{\hbar}$ and not a function of $m$, because the charge couples the same way whatever the mass. Written with $k_{m}$ beside the $m$ it was made from, the coefficient would read as one that grows with the mass, whereas it is the same number for the electron and for the proton. <strong>The cancellation is what makes that visible</strong>, and it is the reason $\hbar$ is the form written here. Acting on $Ae^{iS/\hbar}$ the entries become $\frac{1}{\hbar c}(\partial_{t}S_{\tilde\Xi}-ϙ\phi)$ and $\frac{i}{\hbar}(\nabla S_{\tilde\Xi}+ϙ\vec A)$, the two shifts being opposite, which is the gauge-invariant content.</p>
+<p><strong>One relabelling, stated once.</strong> Those entries carry $ϙ$ with the sign opposite to the kinetic momentum of ordinary notation, $\vec\pi=\vec p-ϙ\vec A$. Writing $-ϙ$ for $ϙ$ throughout sends them to $\frac{1}{\hbar c}(\partial_{t}S_{\tilde\Xi}+ϙ\phi)$ and $\frac{i}{\hbar}(\nabla S_{\tilde\Xi}-ϙ\vec A)$, and the article uses that writing, in which $\Pi_{t}$ and $\vec\pi$ carry their usual signs.</p>
 <p><strong>The norm is the coupled eikonal.</strong> The norm is the sum of the squares of the entries, so at order zero</p>
 <p>$$
-\boxed{\;\frac{1}{c^{2}}\left(\partial_{t}S+ϙ\phi\right)^{2}-\left\lvert\nabla S-ϙ\vec A\right\rvert^{2}=m^{2}c^{2}\;}
+\boxed{\;\frac{1}{c^{2}}\left(\partial_{t}S_{\tilde\Xi}+ϙ\phi\right)^{2}-\left\lvert\nabla S_{\tilde\Xi}-ϙ\vec A\right\rvert^{2}=m^{2}c^{2}\;}
 $$</p>
-<p><strong>The relative sign is not a choice.</strong> Under $S\mapsto S-ϙ\chi$, $\phi\mapsto\phi+\partial_{t}\chi$, $\vec A\mapsto\vec A-\nabla\chi$ only this pairing is invariant under one gauge function; the alternative fails by $-2ϙ\nabla\chi$. Gauge invariance fixes that the shifts enter with opposite signs.</p>
-<p><strong>Two combinations, and they are the mechanical ones.</strong> In that writing $\Pi_{t}=\partial_{t}S+ϙ\phi$ and $\vec\pi=\nabla S-ϙ\vec A$, so $\mathcal{E}=-\Pi_{t}=E-ϙ\phi$ is the kinetic energy and the eikonal says $\frac{1}{c^{2}}\mathcal{E}^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$. The flow is therefore</p>
+<p><strong>The relative sign is not a choice.</strong> Under $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}-ϙ\chi$, $\phi\mapsto\phi+\partial_{t}\chi$, $\vec A\mapsto\vec A-\nabla\chi$ only this pairing is invariant under one gauge function; the alternative fails by $-2ϙ\nabla\chi$. Gauge invariance fixes that the shifts enter with opposite signs.</p>
+<p><strong>Two combinations, and they are the mechanical ones.</strong> In that writing $\Pi_{t}=\partial_{t}S_{\tilde\Xi}+ϙ\phi$ and $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$, so $\mathcal{E}=-\Pi_{t}=E-ϙ\phi$ is the kinetic energy and the eikonal says $\frac{1}{c^{2}}\mathcal{E}^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$. The flow is therefore</p>
 <p>$$
 \vec v=\frac{c^{2}\vec\pi}{\mathcal{E}},
 $$</p>
 <p>which is $\vec\pi=\gamma m\vec v$ and $\mathcal{E}=\gamma mc^{2}$ read backwards, and <strong>not</strong> $\vec\pi/m$ — the whole distance between this article and the Newtonian end.</p>
-<p><strong>The gradient is the Lorentz force.</strong> Differentiate the coupled eikonal with respect to $x^{i}$ and use $\partial_{i}\partial_{t}S=\partial_{t}\partial_{i}S$:</p>
+<p><strong>The gradient is the Lorentz force.</strong> Differentiate the coupled eikonal with respect to $x^{i}$ and use $\partial_{i}\partial_{t}S_{\tilde\Xi}=\partial_{t}\partial_{i}S_{\tilde\Xi}$:</p>
 <p>$$
-\frac{\Pi_{t}}{c^{2}}\left(\partial_{t}\partial_{i}S+ϙ\partial_{i}\phi\right)
-=\pi_{j}\left(\partial_{i}\partial_{j}S-ϙ\partial_{i}A_{j}\right).
+\frac{\Pi_{t}}{c^{2}}\left(\partial_{t}\partial_{i}S_{\tilde\Xi}+ϙ\partial_{i}\phi\right)
+=\pi_{j}\left(\partial_{i}\partial_{j}S_{\tilde\Xi}-ϙ\partial_{i}A_{j}\right).
 $$</p>
-<p>Solving for $\partial_{t}\partial_{i}S$ and substituting $\vec v=-c^{2}\vec\pi/\Pi_{t}$, the two second-derivative terms cancel because partial derivatives commute, and what survives is</p>
+<p>Solving for $\partial_{t}\partial_{i}S_{\tilde\Xi}$ and substituting $\vec v=-c^{2}\vec\pi/\Pi_{t}$, the two second-derivative terms cancel because partial derivatives commute, and what survives is</p>
 <p>$$
 \frac{d\pi_{i}}{dt}=ϙ\left(-\partial_{i}\phi-\partial_{t}A_{i}\right)+ϙ\,v_{j}\left(\partial_{i}A_{j}-\partial_{j}A_{i}\right),
 $$</p>
@@ -145,9 +145,9 @@ $$</p>
 <h2 id="order-one-the-transport-equation-and-the-spin">Order One: the Transport Equation, and the Spin</h2>
 <p><strong>The $\epsilon$ line is the current.</strong> Vanishing of the third line of the identity above is</p>
 <p>$$
-\frac{1}{c^{2}}\partial_{t}\!\left(A^{2}\partial_{t}S\right)-\nabla\cdot\left(A^{2}\nabla S\right)=0,
+\frac{1}{c^{2}}\partial_{t}\!\left(A^{2}\partial_{t}S_{\tilde\Xi}\right)-\nabla\cdot\left(A^{2}\nabla S_{\tilde\Xi}\right)=0,
 $$</p>
-<p>which is $\partial_{\mu}(A^{2}\partial^{\mu}S)=0$, the relativistic continuity equation, with $j^{\mu}=A^{2}\partial^{\mu}S$. Nothing here was approximated, so the limit delivers a flow and its density, not a trajectory.</p>
+<p>which is $\partial_{\mu}(A^{2}\partial^{\mu}S_{\tilde\Xi})=0$, the relativistic continuity equation, with $j^{\mu}=A^{2}\partial^{\mu}S_{\tilde\Xi}$. Nothing here was approximated, so the limit delivers a flow and its density, not a trajectory.</p>
 <p><strong>Why the spin cannot appear at order zero.</strong> The leading multiplier is a single biquaternion and the eikonal is its norm, $\langle\tilde K_{\Phi}\rangle_{\natural}$. A norm is central, so it commutes with $\xi$ and cannot act on it. <strong>The spin is an order-one effect by construction, not by neglect.</strong></p>
 <p><strong>Where the spin sits, in the corpus's own terms.</strong> <em>Angular Momentum and Spin in the Biquaternion Algebra</em> defines $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_{\eta}$, Hermitian in $\mathbb{B}_{\Psi}$, with $\mathsf{M}_2(\tilde S_{\Psi,\eta})=\frac{\hbar}{2}\sigma_{\eta}$. Three consequences follow, and all three hold here. $\hbar$ is not sent to zero in this limit, only $\epsilon$, so $\frac{\hbar}{2}$ survives and the passage removes no spin. The leading eikonal being central, it commutes with every $\tilde S_{\Psi,\eta}$, which is why the force above carried none. And at order one the operator is the failure of the two orderings to commute, whose tangent form is the field strength contracted with $\sigma^{\mu\nu}$; its space–space part is $\sum_{\eta}\tilde S_{\Psi,\eta}B_{\eta}$, so the expected term is $-\frac{ϙ}{m}\sum_{\eta}\tilde S_{\Psi,\eta}B_{\eta}$, which is $g=2$ as <em>The Classical Origin of $g=2$ in Biquaternionic Form</em> has it. This article locates that term rather than deriving it; <em>The Classical Spinning Particle</em> names it as open question four, and its $d\tilde P_{\Phi}/d\tau=ϙ\,\mathrm{F}(\tilde V_{\Phi})$ of <em>The Lorentz Force in Biquaternion Form</em> is the covariant form of the result above.</p>
 <h2 id="where-the-two-limits-meet">Where the Two Limits Meet</h2>
@@ -183,10 +183,10 @@ $$</p>
 </tbody>
 </table></div>
 <p>The first row is exact at every $\beta$, since $\vec p\,c^{2}/E=\gamma m\vec v\,c^{2}/(\gamma mc^{2})=\vec v$. The second is exact as a ratio, $\frac{\lvert\vec p\rvert^{2}/2m}{E-mc^{2}}=\frac{\gamma+1}{2}$, and the Newtonian value is high by $\frac{\gamma-1}{2}=2.5\times10^{-5}$.</p>
-<p><strong>The checks.</strong> The identity of §<em>Order Zero</em> was tested at five hundred values of $(x,t)$: its real line to $4.3\times10^{-14}$, its imaginary line to $3.6\times10^{-15}$, the latter equal to the continuity equation to $2.7\times10^{-15}$. The Lorentz force was derived symbolically for arbitrary $S$, $\phi$, $\vec A$, with zero residual.</p>
+<p><strong>The checks.</strong> The identity of §<em>Order Zero</em> was tested at five hundred values of $(x,t)$: its real line to $4.3\times10^{-14}$, its imaginary line to $3.6\times10^{-15}$, the latter equal to the continuity equation to $2.7\times10^{-15}$. The Lorentz force was derived symbolically for arbitrary $S_{\tilde\Xi}$, $\phi$, $\vec A$, with zero residual.</p>
 <p><strong>A plane wave is already there.</strong> For $\tilde\Xi_{\mathrm{sp}}=\xi e^{i(\vec k_\Phi\cdot\vec r-\omega t)}$ the amplitude is constant and $\epsilon=0$, so the eikonal is the dispersion relation $\frac{\omega^{2}}{c^{2}}-\lvert\vec k_\Phi\rvert^{2}=k_{m}^{2}$ exactly. At the other end a caustic makes $A$ diverge, $\epsilon$ large, the expansion void.</p>
 <h2 id="summary">Summary</h2>
-<p>The short-wavelength limit of the biquaternionic Dirac wave is relativistic mechanics. At order zero the phase satisfies $\frac{1}{c^{2}}(\partial_{t}S)^{2}-\lvert\nabla S\rvert^{2}=m^{2}c^{2}$, which is the mass shell with $E=-\partial_{t}S$ and $\vec p=\nabla S$. With the connection present the same step gives $\frac{1}{c^{2}}(\partial_{t}S+ϙ\phi)^{2}-\lvert\nabla S-ϙ\vec A\rvert^{2}=m^{2}c^{2}$, whose flow is $\vec v=c^{2}\vec\pi/\mathcal{E}$ and whose gradient is $\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B)$.</p>
+<p>The short-wavelength limit of the biquaternionic Dirac wave is relativistic mechanics. At order zero the phase satisfies $\frac{1}{c^{2}}(\partial_{t}S_{\tilde\Xi})^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}$, which is the mass shell with $E=-\partial_{t}S_{\tilde\Xi}$ and $\vec p=\nabla S_{\tilde\Xi}$. With the connection present the same step gives $\frac{1}{c^{2}}(\partial_{t}S_{\tilde\Xi}+ϙ\phi)^{2}-\lvert\nabla S_{\tilde\Xi}-ϙ\vec A\rvert^{2}=m^{2}c^{2}$, whose flow is $\vec v=c^{2}\vec\pi/\mathcal{E}$ and whose gradient is $\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B)$.</p>
 <p>The mass is recovered rather than derived: $k_{m}$ carried it. The spin is absent at order zero for a structural reason, the leading eikonal being a norm, and a norm is central and cannot act on a spinor; it belongs to order one, where the two orderings of the coupled gradient stop commuting, which is where the corpus's open problem about Bargmann–Michel–Telegdi points.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -198,8 +198,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Xi_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}iS}{m\,c}\right)\xi$</td>
-<td>The wave in amplitude and phase; $A>0$ real, $S$ real, $\xi$ slowly varying</td>
+<td>$\tilde\Xi_{\mathrm{sp}}=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$</td>
+<td>The wave in amplitude and phase; $A>0$ real, $S_{\tilde\Xi}$ the action of the field, $\xi$ slowly varying; the companion writes the exponent $\frac{k_{m}iS_{\tilde\Xi}}{m\,c}$, which is the same number</td>
 </tr>
 <tr>
 <td>$\epsilon=\frac{1}{k_{\Phi}L}=\frac{\hbar}{pL}$</td>
@@ -210,11 +210,11 @@ $$</p>
 <td>The mass wave number; the reciprocal of the reduced Compton wavelength</td>
 </tr>
 <tr>
-<td>$E=-\partial_{t}S$, $\vec p=\nabla S$</td>
+<td>$E=-\partial_{t}S_{\tilde\Xi}$, $\vec p=\nabla S_{\tilde\Xi}$</td>
 <td>Energy and momentum read off the phase</td>
 </tr>
 <tr>
-<td>$\Pi_{t}=\partial_{t}S+ϙ\phi$, $\vec\pi=\nabla S-ϙ\vec A$</td>
+<td>$\Pi_{t}=\partial_{t}S_{\tilde\Xi}+ϙ\phi$, $\vec\pi=\nabla S_{\tilde\Xi}-ϙ\vec A$</td>
 <td>The canonical and the kinetic momentum, minimally coupled</td>
 </tr>
 <tr>

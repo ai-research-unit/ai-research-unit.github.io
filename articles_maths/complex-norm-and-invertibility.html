@@ -126,7 +126,7 @@ $$</p>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
 <p>The <strong>Euclidean norm</strong> of a complex number is the square root of the Hermitian form,</p>
 <p>$$
-\|Q\|_E = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
+\|Q\| = \sqrt{Q\bar{Q}} = \sqrt{q^2 + q'^2} = \sqrt{\langle Q\rangle_{*}} .
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the complex product, because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$.</p>
 <h3 id="relation-between-the-norm-and-the-hermitian-form">Relation Between the Norm and the Hermitian Form</h3>
@@ -313,7 +313,7 @@ $$</p>
 </table></div>
 <p>The complex case is the second rung of the definite column: it adds the second square to the square of $\mathbb{R}$. The norm is multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$, and because the form is definite the vanishing locus stays a single point.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$, real, positive-definite and multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Q\|_E = \sqrt{\langle Q\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.</p>
+<p>The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$, real, positive-definite and multiplicative, $\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ is a genuine norm that is multiplicative. This is the degeneracy of the commutative two-dimensional case.</p>
 <p>A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$. On the worked pair $Q_1 = 3+4i$, $Q_2 = 1-2i$ the criterion gives $\langle Q_1\rangle_{*} = 25$, $\langle Q_2\rangle_{*} = 5$ and $\langle Q_1Q_2\rangle_{*} = 125$, with inverses $Q_1^{-1} = (3-4i)/25$ and $Q_2^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.</p>
 <p>The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ into a positive scale and a phase, the product form of that splitting being $Q = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, and the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -342,7 +342,7 @@ $$</p>
 <td>the norm, real, positive definite, multiplicative</td>
 </tr>
 <tr>
-<td>$\|Q\|_E = \sqrt{\langle Q\rangle_{*}}$</td>
+<td>$\|Q\| = \sqrt{\langle Q\rangle_{*}}$</td>
 <td>the Euclidean norm and the modulus</td>
 </tr>
 <tr>

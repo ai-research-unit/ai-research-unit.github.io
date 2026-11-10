@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 J_\nu(\tilde{Q}) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \, \Gamma(m + \nu + 1)} \left(\frac{\tilde{Q}}{2}\right)^{2m+\nu}.
 $$</p>
-<p>For integer order the series converges for every $\tilde{Q} \in \mathbb{B}_{\mathrm{spl}}$, its terms decaying like $\|\tilde{Q}\|_E^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{C}_{\mathrm{spl}}$), since $\mathbb{C}_{\mathrm{spl}}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.</p>
+<p>For integer order the series converges for every $\tilde{Q} \in \mathbb{B}_{\mathrm{spl}}$, its terms decaying like $\|\tilde{Q}\|^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{C}_{\mathrm{spl}}$), since $\mathbb{C}_{\mathrm{spl}}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.</p>
 <h3 id="computation-via-the-idempotent-decomposition">Computation via the Idempotent Decomposition</h3>
 <p>Because the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$, the Bessel function decomposes:</p>
 <p>$$
@@ -168,7 +168,7 @@ $$</p>
 <p>$$
 {}_2F_1(a, b; c; \tilde{Q}) = \sum_{n=0}^{\infty} \frac{(a)_n (b)_n}{(c)_n} \frac{\tilde{Q}^n}{n!},
 $$</p>
-<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}_{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\|_E < 1$.</p>
+<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}_{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\| < 1$.</p>
 <h3 id="computation-via-the-idempotent-decomposition_1">Computation via the Idempotent Decomposition</h3>
 <p>The hypergeometric function decomposes in the idempotent basis:</p>
 <p>$$
@@ -274,7 +274,7 @@ $$</p>
 <h3 id="the-cauchy-kernel">The Cauchy Kernel</h3>
 <p>The <strong>Cauchy kernel</strong> is the fundamental solution of the gradient:</p>
 <p>$$
-G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
+G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4}, \qquad \tilde{Q} \neq 0.
 $$</p>
 <p>It satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:</p>
 <p>$$
@@ -284,7 +284,7 @@ $$</p>
 <h3 id="the-poisson-kernel">The Poisson Kernel</h3>
 <p>The <strong>Poisson kernel</strong> for the ball of radius $r$ is</p>
 <p>$$
-P(\tilde{Q}, \tilde Q_1) = \frac{r^2 - \|\tilde{Q}\|_E^2}{2\pi^2 r \|\tilde{Q} - \tilde Q_1\|_E^4}, \qquad \|\tilde{Q}\|_E < r, \quad \|\tilde Q_1\|_E = r.
+P(\tilde{Q}, \tilde Q_1) = \frac{r^2 - \|\tilde{Q}\|^2}{2\pi^2 r \|\tilde{Q} - \tilde Q_1\|^4}, \qquad \|\tilde{Q}\| < r, \quad \|\tilde Q_1\| = r.
 $$</p>
 <p>It solves the Dirichlet problem for the d'Alembertian on the ball, and it decomposes in the idempotent basis into the quaternion Poisson kernels of the two components.</p>
 <h3 id="the-greens-function">The Green's Function</h3>
@@ -403,7 +403,7 @@ $$</p>
 <td>Riemann zeta function</td>
 </tr>
 <tr>
-<td>$G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$</td>
+<td>$G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$</td>
 <td>Cauchy kernel, fundamental solution of $\tilde\nabla$</td>
 </tr>
 <tr>

@@ -109,9 +109,9 @@ so the Hilbert–Schmidt pairing of the regular matrices is twice the general pl
 <p><em>Proof.</em> The dagger gives $\mathsf M_{4L}(\tilde Q_1^{*})$, so the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_{4L}(\tilde Q_1^{*}\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)$. The scalar part is invariant under cyclic permutation, so $\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1^{*})=\langle\tilde Q_2,\tilde Q_1\rangle_{*}$.</p>
 <p><strong>Theorem (the Frobenius norm).</strong> On the diagonal,
 $$
-\boxed{\;\lVert\mathsf M_{4L}(\tilde Q)\rVert_F^{2}
+\boxed{\;\langle\mathsf M_{4L}(\tilde Q)\rangle_*
 =\operatorname{Tr}\bigl(\mathsf M_{4L}(\tilde Q)^{\dagger}\mathsf M_{4L}(\tilde Q)\bigr)
-=4\sum_\mu|Q_\mu|^{2}=4\lVert\tilde Q\rVert_E^{2}\;}
+=4\sum_\mu|Q_\mu|^{2}=4\lVert\tilde Q\rVert^{2}\;}
 $$
 so the Frobenius norm of the regular matrix is twice the definite norm of the element.</p>
 <p><strong>The signature and the null set.</strong> The pairing is positive definite: on the four complex coordinates of the left copy it has signature $(8,0)$, and its null set is $\{0\}$ alone. The form is the restriction to $\mathbb B_L$ of the Hilbert–Schmidt form of $M_4(\mathbb C)$, not the whole of it.</p>
@@ -122,9 +122,9 @@ $$
 $$
 The action defines the surjective homomorphism $SL_2(\mathbb C)\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$, the two-to-one cover of the identity component of the orthogonal group of the restricted form. The statement is <em>Biquaternion Rotations and Lorentz Transformations</em>; the module reading is <em>The Category of Modules</em>.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The identity.</strong> For $\tilde Q=e_t$, $\mathsf M_{4L}(e_t)=I_4$, $\lVert\mathsf M_{4L}(e_t)\rVert_F^{2}=4=4\lVert e_t\rVert_E^{2}$, and $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_t,e_t\rangle_{*}$.</p>
-<p><strong>A Hermitian element.</strong> For $\tilde Q=e_t+i\vec e_z$ the element is Hermitian, $\tilde Q^{*}=\tilde Q$, so the regular matrix is Hermitian. Its square is $\tilde Q\star\tilde Q=\tilde Q^{2}=2e_t+2i\vec e_z=2\tilde Q$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde Q\rVert_E^{2}=8$.</p>
-<p><strong>A zero divisor.</strong> For $\tilde Q=e_t+i\vec e_x$ the norm is $\langle\tilde Q\rangle_{\natural}=1+i^{2}=0$, so $\mathsf M_2(\tilde Q)=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is singular and the regular matrix has rank two, while $\lVert\mathsf M_{4L}(\tilde Q)\rVert_F^{2}=4\lVert\tilde Q\rVert_E^{2}=8$. The element is a zero divisor and a definite one for the general plain sesquilinear form.</p>
+<p><strong>The identity.</strong> For $\tilde Q=e_t$, $\mathsf M_{4L}(e_t)=I_4$, $\langle\mathsf M_{4L}(e_t)\rangle_*=4=4\lVert e_t\rVert^{2}$, and $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_t,e_t\rangle_{*}$.</p>
+<p><strong>A Hermitian element.</strong> For $\tilde Q=e_t+i\vec e_z$ the element is Hermitian, $\tilde Q^{*}=\tilde Q$, so the regular matrix is Hermitian. Its square is $\tilde Q\star\tilde Q=\tilde Q^{2}=2e_t+2i\vec e_z=2\tilde Q$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde Q\rVert^{2}=8$.</p>
+<p><strong>A zero divisor.</strong> For $\tilde Q=e_t+i\vec e_x$ the norm is $\langle\tilde Q\rangle_{\natural}=1+i^{2}=0$, so $\mathsf M_2(\tilde Q)=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is singular and the regular matrix has rank two, while $\langle\mathsf M_{4L}(\tilde Q)\rangle_*=4\lVert\tilde Q\rVert^{2}=8$. The element is a zero divisor and a definite one for the general plain sesquilinear form.</p>
 <h2 id="the-matrices">The Matrices</h2>
 <p><strong>The generators.</strong> In the canonical frame the four units go to
 $$
@@ -152,9 +152,9 @@ $$
 I_4\star Y=Y^{\dagger},\qquad Y\star I_4=Y,
 $$
 and at $Y=\mathsf M_{4L}(\vec e_x)$ the left action returns the negative, $Y^{\dagger}=-Y\neq Y$.</p>
-<p><strong>The Frobenius norm, entry by entry.</strong> The regular matrix of a vector unit has four entries of modulus one and the remaining twelve zero, so $\lVert\mathsf M_{4L}(\vec e_x)\rVert_F^{2}=4$, in agreement with $4\sum_\mu|Q_\mu|^{2}$. The square of the product is the positive semidefinite matrix $\mathsf M_{4L}(\tilde Q)\mathsf M_{4L}(\tilde Q)^{\dagger}=I_2\otimes AA^{\dagger}$.</p>
+<p><strong>The Frobenius norm, entry by entry.</strong> The regular matrix of a vector unit has four entries of modulus one and the remaining twelve zero, so $\langle\mathsf M_{4L}(\vec e_x)\rangle_*=4$, in agreement with $4\sum_\mu|Q_\mu|^{2}$. The square of the product is the positive semidefinite matrix $\mathsf M_{4L}(\tilde Q)\mathsf M_{4L}(\tilde Q)^{\dagger}=I_2\otimes AA^{\dagger}$.</p>
 <h2 id="summary">Summary</h2>
-<p>In the canonical frame the left regular representation is a $*$-representation, $\mathsf M_{4L}(\tilde Q^{*})=\mathsf M_{4L}(\tilde Q)^{\dagger}$, and it reads the sesquilinear product as $\mathsf M_{4L}(\tilde Q\star\tilde Q_2)=\mathsf M_{4L}(\tilde Q)\mathsf M_{4L}(\tilde Q_2)^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)^{\dagger}\mathsf M_{4L}(\tilde Q_2))=2\langle\tilde Q_2,\tilde Q_1\rangle_{*}$, positive definite of signature $(8,0)$ on the left copy, with Frobenius norm $\lVert\mathsf M_{4L}(\tilde Q)\rVert_F=2\lVert\tilde Q\rVert_E$ and null set $\{0\}$; its isometry group is $\mathrm U(4)$, with isometric algebra automorphisms $PU(2)$. The two-sided action of the norm-one group $SL_2(\mathbb C)$ on the Hermitian subspace gives the double cover $SL_2(\mathbb C)\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb C)$.</p>
+<p>In the canonical frame the left regular representation is a $*$-representation, $\mathsf M_{4L}(\tilde Q^{*})=\mathsf M_{4L}(\tilde Q)^{\dagger}$, and it reads the sesquilinear product as $\mathsf M_{4L}(\tilde Q\star\tilde Q_2)=\mathsf M_{4L}(\tilde Q)\mathsf M_{4L}(\tilde Q_2)^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)^{\dagger}\mathsf M_{4L}(\tilde Q_2))=2\langle\tilde Q_2,\tilde Q_1\rangle_{*}$, positive definite of signature $(8,0)$ on the left copy, with Frobenius norm $\langle\mathsf M_{4L}(\tilde Q)\rangle_*^{1/2}=2\lVert\tilde Q\rVert$ and null set $\{0\}$; its isometry group is $\mathrm U(4)$, with isometric algebra automorphisms $PU(2)$. The two-sided action of the norm-one group $SL_2(\mathbb C)$ on the Hermitian subspace gives the double cover $SL_2(\mathbb C)\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb C)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -181,7 +181,7 @@ and at $Y=\mathsf M_{4L}(\vec e_x)$ the left action returns the negative, $Y^{\d
 <td>the general plain sesquilinear form as the Hilbert–Schmidt pairing</td>
 </tr>
 <tr>
-<td>$\lVert\mathsf M_{4L}(\tilde Q)\rVert_F=2\lVert\tilde Q\rVert_E$</td>
+<td>$\langle\mathsf M_{4L}(\tilde Q)\rangle_*^{1/2}=2\lVert\tilde Q\rVert$</td>
 <td>the Frobenius norm of the regular matrix</td>
 </tr>
 <tr>

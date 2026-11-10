@@ -76,13 +76,13 @@
 $$</p>
 <p>with one unknown $X\in{\mathbb{B}_{\mathrm{red}}}^{n\times n}$ carrying two equations at once. The two residuals are measured together by</p>
 <p>$$
-\bigl\|(AXB-E,CXD-F)\bigr\|_{\mathrm F}^{2}=\|AXB-E\|_{\mathrm F}^{2}+\|CXD-F\|_{\mathrm F}^{2},
+\bigl\langle (AXB-E,CXD-F)\bigr\rangle_*=\langle AXB-E\rangle_*+\langle CXD-F\rangle_*,
 $$</p>
-<p>the square of the Frobenius norm of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>. The problem is to minimise that residual over $X\in H(n)$, and then, among the minimisers, to take the one of least $\|X\|_{\mathrm F}$. The article reads the least squares solutions of the pair in the Hermitian set of the source, the set $H(n)$ of §<em>The Pair Equation and the Hermitian Set</em>, and the inverse eigenvalue problem that is its application.</p>
+<p>the square of the Frobenius norm of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>. The problem is to minimise that residual over $X\in H(n)$, and then, among the minimisers, to take the one of least $\langle X\rangle_*^{1/2}$. The article reads the least squares solutions of the pair in the Hermitian set of the source, the set $H(n)$ of §<em>The Pair Equation and the Hermitian Set</em>, and the inverse eigenvalue problem that is its application.</p>
 <p><strong>Hermitian is taken in the source's sense, and the corpus's sense is a different condition.</strong> The corpus calls Hermitian an element fixed by the star, the plane $\mathbb{R}\{1,ij\}$ of <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>. The source's set is fixed by the transpose composed with the conjugation negating the three imaginary units, which is not the star, not the bar, not the tessarine sign and not the flat; it is not multiplicative, since it sends $i$ and $j$ to $-i$ and $-j$, whose product is $ij$, while it sends $ij$ to $-ij$. The name is kept because the construction is the source's, and the set is written in blocks throughout, so no glyph is attached to that conjugation.</p>
 <p><strong>The sibling reduction does not apply.</strong> The set $H(n)$ has real dimension $2n^{2}-n$, and it is not closed under multiplication by $i$ or by $j$: $iX$ is Hermitian only when $X_{0}=X_{1}=X_{3}=0$, and $jX$ only when $X_{0}=X_{2}=0$. The set is therefore not a module over the algebra and not an L-structure of entry type in the sense of <em>Matrix Equations and Structured Solutions over the Reduced Biquaternions</em>. The idempotent decomposition does not split the problem into two independent complex problems, the two idempotent coordinates are coupled, and the reduction to two independent complex Moore–Penrose solutions is unavailable.</p>
 <p><strong>The two devices that replace the reduction are the real representation and the half-vectorisation.</strong> The real representation $M^{R}$ of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em> turns the pair into one real linear system, and the vectorisations $\mathrm{vec}_{S}$ and $\mathrm{vec}_{A}$ of the symmetric and the antisymmetric parts turn the Hermitian constraint into a linear parametrisation with $2n^{2}-n$ coordinates. The source's matrix $J$ passes from the row form of the real representation to its full form, and the matrices $Q$ and $R$ carry the compressed coordinates to the row form and to the four real blocks.</p>
-<p><strong>The results.</strong> The residual identity $\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|PJQz-t\|^{2}$ holds for every Hermitian $X$, with $z$ the half-vectorisation and $P$, $J$, $Q$, $t$ of §<em>The Reduction to One Real System</em>; the least squares set is the set of Hermitian matrices whose four vecs are $R$ applied to the affine set of least squares solutions of $PJQz=t$, and its least-norm element in the compressed coordinates has the column $R(PJQ)_{\mathrm{MP}}t$ as its four vecs. The pair has a Hermitian solution exactly when the residual of $t$ against the projector of $PJQ$ vanishes, and the solution is unique exactly when $\operatorname{rank}(PJQ)=2n^{2}-n$. The complex field is the degenerate case $X_{2}=X_{3}=0$, with $n^{2}$ unknowns instead of $2n^{2}-n$, and the Hermitian partial inverse eigenvalue problem $M\Phi=\Phi\Lambda$ is the case $A=I_{n}$, $C=D=0$, $B=\Phi$, $E=\Phi\Lambda$, $F=0$ of the complex problem.</p>
+<p><strong>The results.</strong> The residual identity $\langle (AXB-E,CXD-F)\rangle_*=\|PJQz-t\|^{2}$ holds for every Hermitian $X$, with $z$ the half-vectorisation and $P$, $J$, $Q$, $t$ of §<em>The Reduction to One Real System</em>; the least squares set is the set of Hermitian matrices whose four vecs are $R$ applied to the affine set of least squares solutions of $PJQz=t$, and its least-norm element in the compressed coordinates has the column $R(PJQ)_{\mathrm{MP}}t$ as its four vecs. The pair has a Hermitian solution exactly when the residual of $t$ against the projector of $PJQ$ vanishes, and the solution is unique exactly when $\operatorname{rank}(PJQ)=2n^{2}-n$. The complex field is the degenerate case $X_{2}=X_{3}=0$, with $n^{2}$ unknowns instead of $2n^{2}-n$, and the Hermitian partial inverse eigenvalue problem $M\Phi=\Phi\Lambda$ is the case $A=I_{n}$, $C=D=0$, $B=\Phi$, $E=\Phi\Lambda$, $F=0$ of the complex problem.</p>
 <h2 id="the-pair-equation-and-the-hermitian-set">The Pair Equation and the Hermitian Set</h2>
 <h3 id="the-pair-equation">The Pair Equation</h3>
 <p><strong>The pair imposes two linear equations on one unknown, and the least squares problem measures the two residuals together.</strong></p>
@@ -92,7 +92,7 @@ AXB=E,\qquad CXD=F,
 $$</p>
 <p>and its <strong>residual</strong> at $X$ is the pair $(AXB-E,CXD-F)$, of squared size</p>
 <p>$$
-\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|AXB-E\|_{\mathrm F}^{2}+\|CXD-F\|_{\mathrm F}^{2}.
+\langle (AXB-E,CXD-F)\rangle_*=\langle AXB-E\rangle_*+\langle CXD-F\rangle_*.
 $$</p>
 <p>The two equations share the unknown, which is what distinguishes the pair from the equation $\sum_{l}A_{l}X_{l}B_{l}=E$ of <em>Matrix Equations and Structured Solutions over the Reduced Biquaternions</em>: there each unknown carries one coefficient pair, here one unknown carries two.</p>
 <h3 id="the-conjugation-of-the-source">The Conjugation of the Source</h3>
@@ -189,7 +189,7 @@ $$</p>
 <p><strong>The real representation carries the product to the product, and the row form is the first block row.</strong></p>
 <p><strong>Proposition.</strong> For matrices of matching shapes over $\mathbb{B}_{\mathrm{red}}$,</p>
 <p>$$
-(MN)^{R}=M^{R}N^{R},\qquad (MN)^{R}_{r}=M^{R}_{r}N^{R},\qquad \|M\|_{\mathrm F}=\tfrac12\|M^{R}\|_{\mathrm F}=\|M^{R}_{r}\|_{\mathrm F}.
+(MN)^{R}=M^{R}N^{R},\qquad (MN)^{R}_{r}=M^{R}_{r}N^{R},\qquad \langle M\rangle_*^{1/2}=\tfrac12\langle M^{R}\rangle_*^{1/2}=\langle M^{R}_{r}\rangle_*^{1/2}.
 $$</p>
 <p><em>Proof.</em> The real representation is the left multiplication on the four real coordinates, so it is multiplicative; the row form is its first block row, and the first block row of a product is the first block row of the left factor times the right factor. Each coefficient of $M$ occurs in four blocks of $M^{R}$ and once in $M^{R}_{r}$, whence the two norm identities.</p>
 <p>The propositions are the source's Lemma 2.1 and its identity (4); the real representation is that of <em>Least Squares and Total Least Squares over the Reduced Biquaternions</em>.</p>
@@ -210,12 +210,12 @@ $$</p>
 <p><strong>Theorem (the residual identity).</strong> For every $X\in H(n)$, with $z$ its half-vectorisation,</p>
 <p>$$
 \boxed{\;
-\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|PJQz-t\|^{2}
+\langle (AXB-E,CXD-F)\rangle_*=\|PJQz-t\|^{2}
 \;}.
 $$</p>
 <p><em>Proof.</em> By the norm identity and the multiplicativity of the row form,</p>
 <p>$$
-\|AXB-E\|_{\mathrm F}^{2}=\bigl\|A^{R}_{r}X^{R}B^{R}-E^{R}_{r}\bigr\|_{\mathrm F}^{2}=\bigl\|P_{1}\mathrm{vec}(X^{R})-\mathrm{vec}(E^{R}_{r})\bigr\|^{2}
+\langle AXB-E\rangle_*=\bigl\langle A^{R}_{r}X^{R}B^{R}-E^{R}_{r}\bigr\rangle_*=\bigl\|P_{1}\mathrm{vec}(X^{R})-\mathrm{vec}(E^{R}_{r})\bigr\|^{2}
 $$</p>
 <p>with $P_{1}=(B^{R})^{\mathsf T}\otimes A^{R}_{r}$, and likewise for the second residual with $P_{2}=(D^{R})^{\mathsf T}\otimes C^{R}_{r}$. Stacking the two gives $P\mathrm{vec}(X^{R})-t$, and $\mathrm{vec}(X^{R})=JQz$ for $X\in H(n)$ by the two propositions above.</p>
 <p>The identity is the source's reduction: the constrained problem in $X$ is the unconstrained least squares problem in $z$.</p>
@@ -253,9 +253,9 @@ $$</p>
 <p>The two theorems are the source's Theorem 3.2, with the Moore–Penrose inverse written $M_{\mathrm{MP}}$ in the corpus's glyph and the dagger kept for the adjoint.</p>
 <h3 id="the-norm-of-the-coordinates">The Norm of the Coordinates</h3>
 <p><strong>The pseudoinverse minimises the norm of $z$, and the Frobenius norm of $X$ is a weighted norm of $z$, so the two selections need not coincide when the least squares set is not a point.</strong></p>
-<p><strong>Proposition.</strong> $R^{\mathsf T}R=\operatorname{diag}(w)$ with $w=1$ on the diagonal coordinates of $\mathrm{vec}_{S}$ and $w=2$ on every other coordinate; consequently $\|X\|_{\mathrm F}^{2}=z^{\mathsf T}R^{\mathsf T}Rz$, and for $n\ge2$ this is not $\|z\|^{2}$.</p>
-<p><em>Proof.</em> The column of $K_{S}$ attached to an off-diagonal entry has two units and the other columns have one, so $K_{S}^{\mathsf T}K_{S}$ has the diagonal $1$ and $2$ as stated; $K_{A}^{\mathsf T}K_{A}=2I$, every column of $K_{A}$ having one unit and one negative unit; the blocks of $R$ are $K_{S}$ and three copies of $K_{A}$, whence the diagonal of $R^{\mathsf T}R$. Then $\|X\|_{\mathrm F}^{2}=\|Rz\|^{2}=z^{\mathsf T}R^{\mathsf T}Rz$.</p>
-<p><strong>Remark (what the source selects).</strong> The point whose four vecs are $R(PJQ)_{\mathrm{MP}}t$ minimises $z^{\mathsf T}z$ over the least squares set, while the minimiser of $\|X\|_{\mathrm F}$ over the same set minimises $z^{\mathsf T}R^{\mathsf T}Rz$; the two coincide exactly when $R^{\mathsf T}Rz_{0}$ is orthogonal to the kernel of $PJQ$, and in particular when that kernel is supported on the diagonal coordinates of $X_{0}$. The consistency and uniqueness criteria are unaffected, and when the solution is unique the two points coincide. The source's Problem 3.1 asks for the minimum of $\|X\|_{\mathrm F}$, so its Theorem 3.1 returns the requested element exactly when the two points coincide. The verification records a rank-deficient instance of the pair on which the two differ.</p>
+<p><strong>Proposition.</strong> $R^{\mathsf T}R=\operatorname{diag}(w)$ with $w=1$ on the diagonal coordinates of $\mathrm{vec}_{S}$ and $w=2$ on every other coordinate; consequently $\langle X\rangle_*=z^{\mathsf T}R^{\mathsf T}Rz$, and for $n\ge2$ this is not $\|z\|^{2}$.</p>
+<p><em>Proof.</em> The column of $K_{S}$ attached to an off-diagonal entry has two units and the other columns have one, so $K_{S}^{\mathsf T}K_{S}$ has the diagonal $1$ and $2$ as stated; $K_{A}^{\mathsf T}K_{A}=2I$, every column of $K_{A}$ having one unit and one negative unit; the blocks of $R$ are $K_{S}$ and three copies of $K_{A}$, whence the diagonal of $R^{\mathsf T}R$. Then $\langle X\rangle_*=\|Rz\|^{2}=z^{\mathsf T}R^{\mathsf T}Rz$.</p>
+<p><strong>Remark (what the source selects).</strong> The point whose four vecs are $R(PJQ)_{\mathrm{MP}}t$ minimises $z^{\mathsf T}z$ over the least squares set, while the minimiser of $\langle X\rangle_*^{1/2}$ over the same set minimises $z^{\mathsf T}R^{\mathsf T}Rz$; the two coincide exactly when $R^{\mathsf T}Rz_{0}$ is orthogonal to the kernel of $PJQ$, and in particular when that kernel is supported on the diagonal coordinates of $X_{0}$. The consistency and uniqueness criteria are unaffected, and when the solution is unique the two points coincide. The source's Problem 3.1 asks for the minimum of $\langle X\rangle_*^{1/2}$, so its Theorem 3.1 returns the requested element exactly when the two points coincide. The verification records a rank-deficient instance of the pair on which the two differ.</p>
 <h2 id="the-idempotent-coordinates">The Idempotent Coordinates</h2>
 <h3 id="the-coupled-equations">The Coupled Equations</h3>
 <p><strong>In the idempotent coordinates the Hermitian condition is two equations coupling the two coordinates, not one condition on each.</strong></p>
@@ -313,15 +313,15 @@ $$</p>
 <h2 id="verification">Verification</h2>
 <p>The following identities were checked by exact recomputation with rational arithmetic on matrices of at most three rows and columns, and on one hundred random instances where an instance count is stated.</p>
 <ul>
-<li>The real representation is multiplicative, $(MN)^{R}=M^{R}N^{R}$ and $(MN)^{R}_{r}=M^{R}_{r}N^{R}$, and $\|M\|_{\mathrm F}=\tfrac12\|M^{R}\|_{\mathrm F}=\|M^{R}_{r}\|_{\mathrm F}$.</li>
+<li>The real representation is multiplicative, $(MN)^{R}=M^{R}N^{R}$ and $(MN)^{R}_{r}=M^{R}_{r}N^{R}$, and $\langle M\rangle_*^{1/2}=\tfrac12\langle M^{R}\rangle_*^{1/2}=\langle M^{R}_{r}\rangle_*^{1/2}$.</li>
 <li>The signed selection: $\mathrm{vec}(X^{R})=J\,\mathrm{vec}(X^{R}_{r})$ for $n=2,3$, with $J$ built from the basis, independent of $X$, and with one nonzero in each row and four in each column.</li>
-<li>The residual identity $\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|PJQz-t\|^{2}$ for $n=2,3$ and several shapes of $A,B$.</li>
+<li>The residual identity $\langle (AXB-E,CXD-F)\rangle_*=\|PJQz-t\|^{2}$ for $n=2,3$ and several shapes of $A,B$.</li>
 <li>The parametrisation $\mathrm{vec}(X^{R}_{r})=Qz$ and the four vecs $\mathrm{vec}(X_{0}),\mathrm{vec}(X_{1}),\mathrm{vec}(X_{2}),\mathrm{vec}(X_{3})$ equal to $Rz$, on one hundred random Hermitian matrices for $n=2,3$.</li>
 <li>The recovery: on sixty consistent instances with $\operatorname{rank}(PJQ)=2n^{2}-n=6$, the solution of the reduced system reproduces the prescribed Hermitian $X$ exactly.</li>
 <li>The weights $R^{\mathsf T}R$: the diagonal is $1$ on the diagonal coordinates of $\mathrm{vec}_{S}$ and $2$ on every other coordinate.</li>
 <li>The non-closure: on one hundred random Hermitian matrices for $n=2,3$, $iX$ and $jX$ are Hermitian in none of the instances, and the exact intersections $X_{0}=X_{1}=X_{3}=0$ for $i$ and $X_{0}=X_{2}=0$ for $j$ hold in every instance.</li>
 <li>The coupled idempotent equations hold on one hundred random Hermitian matrices.</li>
-<li>The norm selection: on a consistent rank-deficient instance of the pair with $A=C$, $B=D$, $E=F$ and $\operatorname{rank}(PJQ)=4$, the two free directions separate the selections, the source's point having $\|X\|_{\mathrm F}^{2}=486/25$ against $58/3$ for the Frobenius minimiser.</li>
+<li>The norm selection: on a consistent rank-deficient instance of the pair with $A=C$, $B=D$, $E=F$ and $\operatorname{rank}(PJQ)=4$, the two free directions separate the selections, the source's point having $\langle X\rangle_*=486/25$ against $58/3$ for the Frobenius minimiser.</li>
 </ul>
 <p>Two statements are the source's and were not recomputed here: the efficiency comparison of the real and the complex representations, and the numerical examples of the source's §5 that report it.</p>
 <h2 id="summary">Summary</h2>

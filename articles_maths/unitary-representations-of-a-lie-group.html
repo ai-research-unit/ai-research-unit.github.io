@@ -110,7 +110,7 @@ $$</p>
 <h3 id="the-plancherel-measure">The Plancherel Measure</h3>
 <p><strong>Theorem (Plancherel).</strong> For a unimodular locally compact group of type I, the regular representation decomposes as the direct integral of the irreducible unitary representations with respect to a unique measure $\mu_{\mathrm{Pl}}$, the <strong>Plancherel measure</strong>, and for $f \in L^1(G)\cap L^2(G)$,</p>
 <p>$$
-\boxed{\;\int_G|f(g)|^2\,dg = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}(\lambda)\;},
+\boxed{\;\int_G|f(g)|^2\,dg = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}(\lambda)\;},
 $$</p>
 <p>where $\pi_\lambda(f) = \int_G f(g)\pi_\lambda(g)\,dg$ is the integrated representation and the norm is the Hilbert--Schmidt norm.</p>
 <p><em>Proof.</em> The integrated representation $\pi(f)$ is a bounded operator on each irreducible summand, and the Plancherel formula is the computation of the trace of the spectral measure of the convolution algebra; for unimodular groups the algebra is symmetric, the Plancherel measure is the spectral measure of the commutative subalgebra, and the Hilbert--Schmidt norm is the density of the measure. The general theory is <em>Harmonic Analysis on Groups</em> and <em>The Convolution Algebra $L^1(G)$</em>.</p>
@@ -143,7 +143,7 @@ $$</p>
 <h3 id="a-semisimple-group-of-real-rank-one">A Semisimple Group of Real Rank One</h3>
 <p>For $G = SL_2(\mathbb{R})$ the unitary dual consists of the principal series, the discrete series and the complementary series; the Plancherel measure is supported on the principal series with an explicit density, the discrete series contributes atoms, and the representations are realised on spaces of functions on the boundary of the hyperbolic plane, whose geometry belongs to Part IV and whose analysis is developed in <em>Harmonic Analysis on Groups</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by skew-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined <strong>Plancherel measure</strong> and the formula $\int_G|f|^2 = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.</p>
+<p>A unitary representation of a Lie group is a strongly continuous homomorphism into the unitary group of a Hilbert space; it is irreducible when it has no non-trivial closed invariant subspace, and Schur's lemma identifies its commutant with the scalars. The derived representation on the smooth vectors is a Lie algebra representation by skew-adjoint operators, so the generators are self-adjoint after multiplication by $i$ by Stone's theorem; it extends to the universal enveloping algebra, and the Casimir element becomes a self-adjoint operator whose eigenvalue on an irreducible summand of highest weight is the quadratic invariant. Every unitary representation of a separable group is a direct integral of irreducible ones over the unitary dual, and the decomposition of the left regular representation is the Plancherel theorem, with a uniquely determined <strong>Plancherel measure</strong> and the formula $\int_G|f|^2 = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}(\lambda)$. The measure has atoms exactly at the discrete series and a continuous part on the tempered dual; for compact groups the decomposition is discrete and the multiplicities are the dimensions, and for a vector group it is the Fourier transform with Lebesgue measure. The detailed densities and the classification of the discrete series belong to the harmonic analysis of the group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -186,7 +186,7 @@ $$</p>
 <td>the Plancherel measure</td>
 </tr>
 <tr>
-<td>$\int_G|f|^2 = \int_{\widehat{G}}\|\pi_\lambda(f)\|_{\mathrm{HS}}^2\,d\mu_{\mathrm{Pl}}$</td>
+<td>$\int_G|f|^2 = \int_{\widehat{G}}\langle \pi_\lambda(f)\rangle_*\,d\mu_{\mathrm{Pl}}$</td>
 <td>the Plancherel formula</td>
 </tr>
 <tr>
