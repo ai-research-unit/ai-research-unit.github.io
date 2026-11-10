@@ -73,9 +73,9 @@
 <p><strong>The equation of state of the biquaternion fluid is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, a function of the proper density $\rho_{\mathrm{num}}$ and the inverse temperature $\beta$, with the first term thermal and the second a gradient correction.</strong> This article gives both terms, states what each is a function of, and says exactly where the two-part form comes from and where it stops being exact.</p>
 <p><strong>The temperature enters as a length, and the article quotes it and derives nothing.</strong> From <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a>,</p>
 <p>$$
-\beta=\frac{\hbar}{k_{B}\,T},
+\beta=\frac{m\,c}{k_{m}\,k_{B}\,T},
 \qquad
-c\beta=\frac{\hbar\,c}{k_{B}\,T},
+c\beta=\frac{m\,c^{2}}{k_{m}\,k_{B}\,T},
 $$</p>
 <p>the imaginary-time circumference and the same span in the material sector's units. <strong>Both displays are quotations.</strong> The article uses $\beta$ as the variable conjugate to the entropy density, that is, as the variable in which the Gibbs–Duhem relation reads $\partial p_{\mathrm{th}}/\partial\beta=-(\beta/T)\,s_{\mathrm{ent}}$, which <a href="the-local-thermal-state-of-a-fluid.html">The Local Thermal State of a Fluid</a> established; it does not re-derive the relation between $\beta$ and $T$, and a reader who wants the counting of Matsubara modes goes to the article cited.</p>
 <p><strong>The division of labour between the two parts is exact and worth stating at the outset.</strong> $p_{\mathrm{th}}$ is a function of $(\rho_{\mathrm{num}},\beta)$ and satisfies the thermal identities at each event. $p_{\mathrm{qnt}}$ is not a function of $(\rho_{\mathrm{num}},\beta)$: it is a function of the density and its first two derivatives, and it is the object that makes the equation of state non-local at order $\hbar^{2}$. <strong>The two are kept apart because they obey different relations</strong>, and the labelling $\mathrm{th}$/$\mathrm{qnt}$ is the machinery that keeps them apart through the whole category.</p>
@@ -266,7 +266,7 @@ $$</p>
 <p><strong>Not claimed.</strong> That the thermal part has any particular functional form — it has one free function per substance, and the article gives three examples and no general law. That the quantum part is a thermodynamic variable — it is a functional of the state's density and not an independent coordinate. That the two parts can be combined into a single barotropic $p(\rho)$ — they cannot, at any order, because one depends on derivatives. That the decomposition $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ is unique — it is unique once the quantum part is defined as $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$, and a different definition would move terms between the two pieces; the corpus fixes the definition once, here, and the rest of the category inherits it.</p>
 <p><strong>One consequence worth stating for the articles that follow.</strong> The pressure that appears in the entropy production of <a href="the-local-entropy-current.html">The Local Entropy Current</a> is not $p_{\mathrm{eff}}$; that article has to construct its current so that the divergence of the stress appears, and the quantum part contributes a term proportional to $Q_{\mathrm{qnt}}\partial_\eta\rho_{\mathrm{num}}$ which the entropy production can only absorb if the current carries it. <strong>The article flags the point and does not solve it</strong>, because the solution belongs to the entropy-current article and would be out of place here.</p>
 <h2 id="summary">Summary</h2>
-<p>The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with the thermal part a function of the proper density and the period, $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the quantum part a functional of the density field. The period is quoted: $\beta=\hbar/(k_BT)$, a length, with $c\beta=\hbar\,c/(k_BT)$; nothing about it is derived here.</p>
+<p>The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with the thermal part a function of the proper density and the period, $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the quantum part a functional of the density field. The period is quoted: $\beta=mc/(k_mk_BT)$, a length, with $c\beta=mc^{2}/(k_mk_BT)$; nothing about it is derived here.</p>
 <p>The thermal part closes through $p_{\mathrm{th}}=n_{\mathrm{num}}(\partial w_{\mathrm{fl}}/\partial n_{\mathrm{num}})_{s_{\mathrm{ent}}}-w_{\mathrm{fl}}$, which returns $p=\tfrac23w$ for a non-relativistic degenerate gas ($\gamma=\tfrac53$), $p=\tfrac13w$ for radiation ($\gamma=\tfrac43$), and $p=(\gamma-1)w$ for a general polytrope. In the corpus's variable radiation reads $p_{\mathrm{th}}=aA^{4}/(3\beta^{4})$ and $s_{\mathrm{ent}}=4aA^{3}/(3\beta^{3})$, with $\partial p_{\mathrm{th}}/\partial\beta=-4p_{\mathrm{th}}/\beta$ and the Gibbs–Duhem check $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ returning $4aT^{3}/3$. The thermal part is not barotropic in general; the barotropic case is the degenerate limit.</p>
 <p>The quantum part is $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, derived from the quantum potential's minus sign in two lines and verified numerically to $1.8\times10^{-5}$ (one dimension) and $6.2\times10^{-8}$ (three, interior). It is second order in gradients, its size relative to the rest energy density is $1/(4k_m^{2}\sigma^{2})$ for a Gaussian in one dimension and $3/(4k_m^{2}\sigma^{2})$ in three, it vanishes at $r^{2}=2\sigma^{2}$ (one dimension) or $r^{2}=6\sigma^{2}$ (three), and it is negative beyond.</p>
 <p>The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum stress and not a pressure whose gradient is the quantum force: $\partial_\eta p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}+Q_{\mathrm{qnt}}\partial_\eta\rho_{\mathrm{num}}$, and the second term is the one a classical reading loses. The equation of state is therefore exactly local to zeroth order in $(k_mL)^{-2}$, approximately local at second order, and never exactly local.</p>
@@ -316,7 +316,7 @@ $$</p>
 <td>Number density</td>
 </tr>
 <tr>
-<td>$\beta=\frac{\hbar}{k_{B}\,T}$</td>
+<td>$\beta=\frac{m\,c}{k_{m}\,k_{B}\,T}$</td>
 <td>Inverse temperature, the imaginary-time circumference; a length</td>
 </tr>
 <tr>
@@ -328,8 +328,8 @@ $$</p>
 <td>Temperature</td>
 </tr>
 <tr>
-<td>$A=\frac{\hbar}{k_{B}}$</td>
-<td>The constant relating period and temperature</td>
+<td>$A=\frac{m\,c}{k_{m}\,k_{B}}=\frac{\hbar}{k_{B}}$</td>
+<td>The constant relating period and temperature, $\beta=A/T$</td>
 </tr>
 <tr>
 <td>$k_B$, $k_m$</td>

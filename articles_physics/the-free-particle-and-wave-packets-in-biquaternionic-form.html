@@ -355,7 +355,7 @@ H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\fra
 $$</p>
 <p>and the kinetic energy is the <strong>biquaternion norm of the momentum</strong>. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ have the dispersion $\omega =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{i\,H}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.</p>
 <p>The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.</p>
-<p>A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,cs_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{\hbar\,k_{0}}{m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel</p>
+<p>A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{\hbar\,k_{0}}{m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel</p>
 <p>$$
 G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)
 $$</p>
@@ -450,7 +450,7 @@ $$</p>
 <td>Scalar envelope; module factor frozen</td>
 </tr>
 <tr>
-<td>$s_0$, $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,cs_{0}^{2}})^2}$</td>
+<td>$s_0$, $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$</td>
 <td>Initial and time-dependent density width</td>
 </tr>
 <tr>

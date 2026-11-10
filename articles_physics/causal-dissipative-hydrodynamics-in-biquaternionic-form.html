@@ -105,7 +105,7 @@ $$</p>
 \qquad
 \tau_{q}\,\frac{dq_{\lambda}}{d\tau}+q_{\lambda}=-\kappa_{\mathrm{th}}\,\partial_\lambda T ,
 $$</p>
-<p><strong>the displays at the head of the article, with $\tau$ the proper time along the flow and every index low.</strong> The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\mu}\partial_\mu/c$ in components, <strong>so the equations are written in the fluid's own frame and are invariant because they are written on elements in the corpus's convention</strong>.</p>
+<p><strong>the displays at the head of the article, with $\tau$ the proper time along the flow and every index low.</strong> The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\mu}\partial_\mu$ in components — <strong>no factor of $c$, because a velocity times a gradient is already a rate</strong>: $v_{\Phi,t}\partial_t=ic\gamma\,(-i\partial/\partial r'_t)=c\gamma\,\partial/\partial r'_t$ and $v_{\Phi,\eta}\partial_\eta$ together give $\gamma(c\,\partial/\partial r'_t+\vec v\cdot\nabla)=\gamma\,d/dt$, which is $d/d\tau$ for a flow of Lorentz factor $\gamma$. <strong>A reader who inserts a $c$ here will find the relaxation times off by that factor against the front speeds of the next section</strong>, which are built from $\sqrt{D_{\mathrm{th}}/\tau_q}$ with $D_{\mathrm{th}}$ a diffusivity.</p>
 <p><strong>The relaxation time is a transport coefficient of the same standing as the viscosity</strong>, and the second law constrains it: the production's new terms are quadratic in the fluxes and divided by the relaxation times, <strong>so a positive production requires the relaxation times to be positive</strong> as well as the coefficients.</p>
 <p><strong>The limit in which the old theory is recovered.</strong> As $\tau_{\Pi},\tau_{\pi},\tau_{q}\to0$ the inertial terms vanish, the algebraic relations return, and the theory returns to the first order's — <strong>acausality and instability included</strong>. That is the correct statement of the relationship: <strong>the first-order theory is the singular limit of the causal one</strong>, and the singularity is the loss of the highest derivative.</p>
 <h3 id="what-the-correction-changes-and-what-it-does-not">What the correction changes and what it does not</h3>
@@ -193,11 +193,12 @@ $$</p>
 <h3 id="the-shear-and-bulk-channels">The shear and bulk channels</h3>
 <p><strong>The same structure holds in the other two channels with the kinematic viscosities in place of the diffusivity.</strong></p>
 <p>$$
-v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{\rho_{\mathrm{num}}\,\tau_{\pi}}},
+v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{m\,\rho_{\mathrm{num}}\,\tau_{\pi}}},
 \qquad
-v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{\rho_{\mathrm{num}}\,\tau_{\Pi}}},
+v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{m\,\rho_{\mathrm{num}}\,\tau_{\Pi}}},
 $$</p>
-<p><strong>so each channel has its own causality condition and the theory is causal only if all three hold.</strong> The article writes the three because <strong>a single satisfied channel is the commonest way a causal claim is made falsely.</strong></p>
+<p><strong>with the mass $m$ in the denominator, and it is not decoration.</strong> A viscosity over a density is a kinematic viscosity only when the density is a <em>mass</em> density; $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ is a number density, as the pressure of <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a> makes plain — $p_{\mathrm{qnt}}\sim(\hbar^{2}/m)(\rho_{\mathrm{num}}/L^{2})$ is a pressure only if $\rho_{\mathrm{num}}$ carries $1/\mathrm{length}^{3}$ — so the mass density is $m\rho_{\mathrm{num}}$ and the kinematic viscosity is $\eta_{\mathrm{sh}}/(m\rho_{\mathrm{num}})$. <strong>A reader who drops the $m$ gets a front speed in units of $\sqrt{\mathrm{kg}}\,\mathrm{m/s}$ and will not notice it in a table of numbers with $m=1$.</strong> The heat channel needs no such factor because $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ is already a diffusivity, the heat capacity being per unit volume.</p>
+<p><strong>So each channel has its own causality condition and the theory is causal only if all three hold.</strong> The article writes the three because <strong>a single satisfied channel is the commonest way a causal claim is made falsely.</strong></p>
 <p><strong>The combined condition, in one line.</strong> With $v_{\mathrm{snd}}$ the sound speed, the Israel–Stewart system is causal when the three front speeds and the sound speed are all at most $c$; <strong>the sound speed's own bound is the equation of state's and not the relaxation's</strong>, and the article does not conflate the two.</p>
 <h2 id="positivity-and-stability">Positivity and Stability</h2>
 <h3 id="the-quadratic-form">The quadratic form</h3>
@@ -318,7 +319,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$</td>
-<td>Proper density</td>
+<td>Proper density, a number density per unit volume</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>Mass of the field's quantum, so that $m\rho_{\mathrm{num}}$ is the mass density</td>
 </tr>
 <tr>
 <td>$T$, $\beta$</td>

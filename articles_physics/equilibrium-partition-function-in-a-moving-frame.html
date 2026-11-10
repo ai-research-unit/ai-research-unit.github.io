@@ -78,9 +78,9 @@
 <h3 id="the-inverse-temperature-as-a-period">The inverse temperature as a period</h3>
 <p><strong>The inverse temperature is a length, and the corpus fixes it once.</strong> From <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a>,</p>
 <p>$$
-\beta=\frac{\hbar}{k_{B}\,T},
+\beta=\frac{m\,c}{k_{m}\,k_{B}\,T},
 \qquad
-c\beta=\frac{\hbar\,c}{k_{B}\,T},
+c\beta=\frac{m\,c^{2}}{k_{m}\,k_{B}\,T},
 $$</p>
 <p>with $\beta$ the imaginary-time circumference, a length in these letters, and $c\beta$ the corresponding span in the material sector's units. <strong>The display is quoted and not re-derived</strong>: the article cited establishes that the imaginary-time direction is compact with circumference $\beta$ in the coordinate $r'_t$, and that the identity above is exact. Here the only use made of it is that $\beta$ is a <em>period</em> and not a number: it is a length measured along a direction, and the direction is what the boost acts on.</p>
 <p><strong>The direction is the material sector's imaginary-time axis, and in the rest frame the period lies along it.</strong> In the rest frame of the fluid the thermal displacement is</p>
@@ -150,7 +150,7 @@ Z(\beta,\vec\beta_{\mathrm{vel}})=Z(\beta,\vec 0)=2\,\mathrm{Sc}\bigl(\exp(-\bet
 $$</p>
 <p>the last equality being <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>'s identification of the trace with twice the scalar part, quoted at normalisation. <strong>This is the article's main result and it is a negative one</strong>: the moving frame does not have its own partition function.</p>
 <p><strong>Why the trace cannot see the boost, in one sentence.</strong> A trace is a sum over states of a scalar weight; a boost relabels the states — it maps each momentum to another — but it is a unitary relabelling, and a sum over a complete set is invariant under a unitary relabelling. <strong>The partition function is therefore frame-independent for the same reason the dimension of a Hilbert space is.</strong></p>
-<p><strong>What is not frame-independent is the decomposition of $Z$.</strong> The free energy $F=-(1/\beta)\log Z$ is a scalar if $\beta$ is taken as the scalar period; the internal energy $E$, the momentum $\vec p$, the entropy and the pressure are components of elements and do change. The next section reads them.</p>
+<p><strong>What is not frame-independent is the decomposition of $Z$.</strong> The free energy $F=-k_BT\log Z=-(\hbar/\beta)\log Z$, which is <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>'s $-(1/\beta)\log Z$ with the action quantum kept rather than set to one, is a scalar if $\beta$ is taken as the scalar period; the internal energy $E$, the momentum $\vec p$, the entropy and the pressure are components of elements and do change. The next section reads them.</p>
 <h3 id="the-rest-frame-as-the-special-case">The rest frame as the special case</h3>
 <p><strong>Setting $\vec\beta_{\mathrm{vel}}=0$ returns the rest-frame article exactly, and this is the check that the boost has been inserted and nothing else.</strong> At $\gamma=1$ the thermal element is $\beta i e_t$, the exponent is $\beta k_m$, and every display of <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a> is recovered with no modification. <strong>The article therefore adds one parameter, $\vec\beta_{\mathrm{vel}}$, and one structural fact, that the thermal element is an element with a direction.</strong> It adds nothing else, and a reader who wants the trace's biquaternion reading, the imaginary-time discussion, or the non-Hermitian extension is directed to the rest-frame article.</p>
 <p><strong>One difference of emphasis, and it is the reason the moving case is worth an article.</strong> In the rest frame the thermal element and the temporal axis coincide, so the statement "$\beta$ is a period along the imaginary time" and the statement "$\beta$ is a number" cannot be distinguished. In the moving frame they separate: the period is a length along a tilted direction, and the number a boosted observer measures is only its temporal component. <strong>That separation is the content of the whole subject</strong>, and it is invisible in the rest frame.</p>
@@ -237,7 +237,7 @@ $$</p>
 <p>the second statement being the standard one that the total entropy of an isolated system is frame-independent: the density grows by $\gamma$ and the volume contracts by $1/\gamma$, and the two cancel. <strong>The cancellation is the reason the second law can be stated in any frame</strong>, and it is the reason <a href="the-local-entropy-current.html">The Local Entropy Current</a> can write its inequality with a scalar reading and no frame label.</p>
 <p><strong>One caution, in the corpus's letters.</strong> The entropy density $s_{\mathrm{ent}}$ and the total entropy $S$ share a letter with the action and with the spin element, and the corpus's rule is that every occurrence is labelled. The table above uses $s_{\mathrm{ent}}$ throughout, and the total entropy appears only in the display where it is called $S$ with no subscript and the context is the integral.</p>
 <h3 id="the-free-energy">The free energy</h3>
-<p><strong>The free energy is a scalar because $Z$ is a scalar and $\beta$ is a scalar, and this is the sharpest contrast with the energy density.</strong> With $F=-(1/\beta)\log Z$ and both $Z$ and $\beta$ invariant,</p>
+<p><strong>The free energy is a scalar because $Z$ is a scalar and $\beta$ is a scalar, and this is the sharpest contrast with the energy density.</strong> With $F=-k_BT\log Z=-(\hbar/\beta)\log Z$ and both $Z$ and $\beta$ invariant,</p>
 <p>$$
 F_{\mathrm{obs}}=F_{\mathrm{rest}}=-\,p_{\mathrm{th}}\,V_{0},
 $$</p>
@@ -273,12 +273,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\beta=\frac{\hbar}{k_{B}\,T}$</td>
-<td>Inverse temperature, the imaginary-time circumference; a length</td>
+<td>$\beta=\frac{m\,c}{k_{m}\,k_{B}\,T}$</td>
+<td>Inverse temperature of the thermal articles, quoted from <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure</a>; the period along $r'_t$</td>
 </tr>
 <tr>
-<td>$c\beta=\frac{\hbar\,c}{k_{B}\,T}$</td>
-<td>The same span in the material sector's units</td>
+<td>$c\beta=\frac{m\,c^{2}}{k_{m}\,k_{B}\,T}$</td>
+<td>The same circumference in the material sector's units</td>
 </tr>
 <tr>
 <td>$T$</td>
@@ -345,7 +345,7 @@ $$</p>
 <td>Partition function, a scalar</td>
 </tr>
 <tr>
-<td>$F=-(1/\beta)\log Z=-p_{\mathrm{th}}V_{0}$</td>
+<td>$F=-k_BT\log Z=-(\hbar/\beta)\log Z=-p_{\mathrm{th}}V_{0}$</td>
 <td>Free energy, a scalar</td>
 </tr>
 <tr>
