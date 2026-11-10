@@ -83,7 +83,7 @@ a purely imaginary scalar, with zero vector part. By the defining form of the tw
 $$\frac{i\,S}{\hbar}\in\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}.
 $$
 
-**The exponent is one product, not three symbols.** The phase of a path is the action divided by $\hbar$, one division and no other constant, and that quotient is the line integral of the wave biquaternion against the four-position,
+**The exponent is one product, not three symbols.** The phase of a path is the action divided by $\hbar$ and by nothing else, and that quotient is the line integral of the wave biquaternion against the four-position,
 
 $$
 \frac{S}{\hbar}=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Sc}\!\left(\tilde K_{\Phi}\,d\tilde R_{\Phi}^{\natural}\right),

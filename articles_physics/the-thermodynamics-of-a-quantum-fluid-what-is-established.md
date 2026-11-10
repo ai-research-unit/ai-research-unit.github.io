@@ -36,7 +36,7 @@ $$
 
 **The thermal core of the layer is three articles.** [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) writes $Z$ in the rest frame; [Quantum Thermodynamics in Biquaternionic Form](quantum-thermodynamics-in-biquaternionic-form.html) writes the Gibbs state as a point of the Bloch ball and the free energy as the modular Hamiltonian's scalar part; [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html) gives the imaginary-time sum. **The layer's fourth thermal article is the transcription**: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) adds the boost and finds that $Z$ does not change.
 
-**What the layer establishes.** That the corpus's temperature is a length, $\beta=\hbar/(k_BT)$, computed once at $T=2.725$, $300$ and $1000\,\mathrm{K}$: $2.803\,021\times10^{-12}$, $2.546\,078\times10^{-14}$ and $7.638\,233\times10^{-15}$ metres. **That $Z$ is a scalar while the thermal element $\tilde\beta_\Phi$ is a vector** — so a moving frame tilts the thermal circle and does not change the trace.
+**What the layer establishes.** That the corpus's temperature is a length, $\beta=mc/(k_mk_BT)$, computed once at $T=2.725$, $300$ and $1000\,\mathrm{K}$: $2.803\,021\times10^{-12}$, $2.546\,078\times10^{-14}$ and $7.638\,233\times10^{-15}$ metres. **That $Z$ is a scalar while the thermal element $\tilde\beta_\Phi$ is a vector** — so a moving frame tilts the thermal circle and does not change the trace.
 
 ### The locality layer: articles 11 to 17
 
@@ -72,7 +72,7 @@ $$
 
 **The pure state has no entropy.** The condensate's current vanishes, the second law is saturated, and the $T\to0$ limit of the two-fluid model is the polar-form article's single fluid. **Entropy is friction between components**: mutual friction in the two-fluid model, shear and bulk dissipation in the causal model, spin diffusion in the spin model. **In every case the dissipative term is a square.**
 
-**The temperature is a length and not a frequency.** $\beta=\hbar/(k_BT)$ with $c\beta=\hbar\,c/(k_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $k_m=mc/\hbar$ — **which is the statement that the field is on its shell, not a definition of $\beta$.**
+**The temperature is a length and not a frequency.** $\beta=mc/(k_mk_BT)$ with $c\beta=mc^{2}/(k_mk_BT)$; the corpus never writes the inverse temperature as the reciprocal of a frequency, and the identity with that reciprocal is the special case $k_m=mc/\hbar$ — **which is the statement that the field is on its shell, not a definition of $\beta$.**
 
 **The flow is an element with a low index.** $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\mu}$ only where a component is unavoidable. **The metric is $\delta_{\mu\nu}$ and the index labels a direction and not a tensor slot**, which is why no display in the category raises one.
 
@@ -198,7 +198,7 @@ $$
 
 The category is twenty-five articles in four layers: the field's stress and flow (1 to 3), the state (4 to 10), locality (11 to 17) and the fluid (18 to 24), with this article as the ledger. **Four of the twenty-five are transcriptions — 9, 16, 17 and 24** — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other twenty-one add identifications the algebra makes available: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
 
-**The numbers that anchor the category.** $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=\hbar\,c/(k_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $2\pi\hbar n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
+**The numbers that anchor the category.** $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(k_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $2\pi\hbar n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
 
 **The category's one convention.** One Hermiticity declaration, made in [The Local Entropy Current](the-local-entropy-current.html) and inherited by every later inequality. **No inequality in the category writes $\mathrm{Re}$ after it**, and a reader who checks that single fact has checked the category's thermodynamic consistency.
 
@@ -224,7 +224,7 @@ The category is twenty-five articles in four layers: the field's stress and flow
 | $\mu_{\mathrm{spn}}$ | Spin potential |
 | $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$ | Entropy current, Hermitian |
 | $s_{\mathrm{ent}}$ | Entropy density |
-| $\beta=\hbar/(k_BT)$ | Inverse temperature as a length |
+| $\beta=mc/(k_mk_BT)$ | Inverse temperature as a length |
 | $k_m=mc/\hbar$ | The field's wave number |
 | $T$ | Temperature |
 | $\tilde W_\Xi$ | Wigner element |

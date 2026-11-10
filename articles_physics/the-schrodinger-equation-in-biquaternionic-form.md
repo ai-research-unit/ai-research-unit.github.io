@@ -9,7 +9,7 @@ $$
 
 and for a density matrix $\rho$ the same dynamics reads $i\hbar\,c\partial/\partial r'_t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $i\hbar\,c\,\frac{d\tilde{Q}}{dr'_{t}}= \tilde R_\Psi\tilde Q$ and the state equation $i\hbar\,c\,\frac{d\tilde{Ϛ}_{\Psi}}{dr'_{t}}= [H,\tilde{Ϛ}_{\Psi}]$ for $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$. It does **not** write the field equation $i\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the objects of that equation are Hermitian elements of $\mathbb{B}_{\Psi}$, i.e. density-matrix-like objects, whereas the field of a wave equation is something else. This article supplies the field form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $i\hbar\,c\,\frac{d\tilde{Q}}{dr'_{t}}= \tilde R_\Psi\tilde Q$ and the state equation $i\hbar\,c\,\frac{d\tilde{Ϛ}_{\Psi}}{dr'_{t}}= [H,\tilde{Ϛ}_{\Psi}]$ for $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$. It does **not** write the field equation $i\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde R_\Psi\tilde{Ξ}_{\mathrm{sp}}$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the object of that equation is $\tilde{Ϛ}_{\Psi}$, a Hermitian element of $\mathbb{B}_{\Psi}$ and therefore density-matrix-like, whereas the field of a wave equation is one general element of $\mathbb{B}$. The subscript `sp` carried by the field below is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it; it names a role and not a sector. This article supplies the field form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -37,7 +37,7 @@ a copy of the complex line embedded as the scalar part, and it is the centre of 
 
 ### The quaternion units and the non-central roots
 
-Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\vec u \in \mathbb{B}_{H}$, with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^\dagger = -\vec u \in \mathbb{B}_{\Phi}$. They are the roots of $-1$ that the algebra itself carries, and each is the axis a rotor turns about. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.
+Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\vec u \in \mathbb{B}_{H}$ (the real quaternion subalgebra $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$), with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^\dagger = -\vec u \in \mathbb{B}_{\Phi}$. They are the roots of $-1$ that the algebra itself carries, and each is the axis a rotor turns about. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.
 
 The two appear side by side in the polar word of the field,
 
@@ -100,7 +100,7 @@ $$
 
 so the symbol $L_{\tilde R_\Psi}$ is Hermitian for that form, and the flow it generates preserves $\mathrm{Sc}(\tilde X\tilde X^{*})$. Both identities were checked on a hundred random pairs.
 
-**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is the array $L_{\mathrm{axf}}(\tilde R_\Psi)$, a $4\times4$ complex matrix with $\mathrm{Tr}L_{\mathrm{axf}}(\tilde R_\Psi)=4r_t$ and $\det L_{\mathrm{axf}}(\tilde R_\Psi)=\langle\tilde R_\Psi\rangle_{\natural}^{2}$, Hermitian on the nose, and it names no spatial direction. The equation is therefore the ordinary complex-linear Schrödinger equation on four complex coefficients with that Hermitian symbol, and nothing beyond the algebra enters the display.
+**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is the array $L_{\mathrm{axf}}(\tilde R_\Psi)$, a $4\times4$ complex matrix with $\mathrm{Tr}L_{\mathrm{axf}}(\tilde R_\Psi)=4r_t$ and $\det L_{\mathrm{axf}}(\tilde R_\Psi)=\langle\tilde R_\Psi\rangle_{\natural}^{2}$, where $\langle\tilde R_\Psi\rangle_\natural=r_t^{2}-|\vec r_\Psi|^{2}$: the determinant of left multiplication is the square of the reduced norm, the identity and its numerical verification being those of *Why AXF Matrices instead of Pauli and Gamma Matrices*. The array is Hermitian on the nose, and it names no spatial direction. The equation is therefore the ordinary complex-linear Schrödinger equation on four complex coefficients with that Hermitian symbol, and nothing beyond the algebra enters the display.
 
 ### The four coefficients, and the central field
 
@@ -175,8 +175,8 @@ Differentiating the solution gives $i\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\
 
 $$
 \boxed{\;\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = -\frac{i}{\hbar\,c}\tilde R_\Psi\tilde{Ϛ}_{\Psi} +\frac{i}{\hbar\,c}\tilde{Ϛ}_{\Psi}\tilde R_\Psi
-= -\frac{i}{\hbar\,c}[H,\tilde{Ϛ}_{\Psi}],
-\qquad\text{i.e.}\qquadi\hbar\,c\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]\;},
+= -\frac{i}{\hbar\,c}[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}],
+\qquad\text{i.e.}\qquad i\hbar\,c\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]\;},
 $$
 
 which is the von Neumann equation of the parent article. The mean of an observable in the field is read from the same object and needs nothing further: for Hermitian $\tilde R_\Psi$,
@@ -224,7 +224,7 @@ so the norm is not preserved by this "Schrödinger equation". The failure is gen
 
 There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}} \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.
 
-**A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde R_\Psi$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde R_\Psi$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde R_\Psi = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde R_\Psi = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation.
+**A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde R_\Psi$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde R_\Psi$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde R_\Psi = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde R_\Psi = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation, which claims no preferred direction.
 
 ## The $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ Readings of the Equation
 
@@ -244,12 +244,12 @@ The generator $-\frac{i\,H}{\hbar\,c}$ is anti-Hermitian; this is the general re
 In the von Neumann form the split is even cleaner. For $\tilde R_\Psi, \tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$,
 
 $$
-\left([H,\tilde{Ϛ}_{\Psi}]\right)^\dagger = \tilde{Ϛ}_{\Psi}\tilde R_\Psi - \tilde R_\Psi\tilde{Ϛ}_{\Psi} = -[H,\tilde{Ϛ}_{\Psi}],
+\left([\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]\right)^\dagger = \tilde{Ϛ}_{\Psi}\tilde R_\Psi - \tilde R_\Psi\tilde{Ϛ}_{\Psi} = -[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}],
 $$
 
-so $[H,\tilde{Ϛ}_{\Psi}] \in \mathbb{B}_{\Phi}$; and since $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, the term $i\hbar\,c\partial/\partial r'_t\tilde{Ϛ}_{\Psi}$ is also in $\mathbb{B}_{\Phi}$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
+so $[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}] \in \mathbb{B}_{\Phi}$; and since $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, the term $i\hbar\,c\partial/\partial r'_t\tilde{Ϛ}_{\Psi}$ is also in $\mathbb{B}_{\Phi}$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
-A structural caution belongs here. The field $\tilde{Ξ}_{\mathrm{sp}}$ itself is a general element of $\mathbb{B}$, not of either sector; it carries no $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ label. The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, not $\tilde{Ξ}_{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
+**The sectors label operators, not states.** The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, and the field $\tilde{Ξ}_{\mathrm{sp}}$, being one general element of $\mathbb{B}$, carries no such label. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, not $\tilde{Ξ}_{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
@@ -263,7 +263,7 @@ A structural caution belongs here. The field $\tilde{Ξ}_{\mathrm{sp}}$ itself i
 
 3. *The roots of $-1$ are separated by role.* The central roots $\pm i$ are the complex structure; the non-central roots $\vec u$ are rotor axes and rotation generators. A formulation that writes the Schrödinger equation with a quaternion unit destroys the first while leaving the second in place, and the counterexample above shows how. The biquaternion form keeps the two apart by construction.
 
-**Honest bottom line.** For a field with four complex coefficients this is the standard equation of a Hermitian symbol on that carrier, and the algebra's only service is to hold the coefficients and to supply $i$. It is interesting because the same algebra also carries the Lorentz group and the Dirac equation, and because its two Hermitian fixed-point subspaces correspond to the physical and informational sectors of the wider proposal; but it produces no new prediction here. Whether it produces one in the many-body or relativistic setting is open.
+**Honest bottom line.** For a field with four complex coefficients this is the standard equation of a Hermitian symbol on that carrier. The algebra supplies the carrier, the constant $i$, and the split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ that $i$ relates; the first two are the standard equation's own, and only the third is added. It is interesting because the same algebra also carries the Lorentz group and the Dirac equation, and because its two Hermitian fixed-point subspaces correspond to the physical and informational sectors of the wider proposal; but it produces no new prediction here. Whether it produces one in the many-body or relativistic setting is open.
 
 ## Open Questions
 
@@ -271,7 +271,7 @@ A structural caution belongs here. The field $\tilde{Ξ}_{\mathrm{sp}}$ itself i
 
 **2. Many fields.** The extension to several fields is via $\mathbb{B}^{\otimes n}$, a complex algebra of dimension $2^{2n}$. The companion article leaves the tensor product over $\mathbb{C}$ as an open question. If it is taken over $\mathbb{C}$, the scalar imaginary remains available as the complex structure; if not, the question of the imaginary unit returns in a new form.
 
-**3. Which of the four coefficients is physical.** The field has four complex coefficients and the equation treats them alike. Whether all four are physical, or whether three of them are a gauge artefact of the quaternionic structure, is not settled here. The polar companion article shows that three of them form the field's rotor, which precesses at $2|\vec r_\Psi|/\hbar$ and is therefore not removable by a phase.
+**3. Which of the four coefficients is physical.** The field has four complex coefficients and the equation treats them alike. Whether all four are physical, or whether three of them are a gauge artefact of the quaternionic structure, is not settled here. The polar companion article shows that three of them form the field's rotor: the rotor's angle runs at $|\vec r_\Psi|/\hbar$, and every direction it carries turns at $2|\vec r_\Psi|/\hbar$, so the rotor is not removable by a phase.
 
 **4. The non-relativistic limit.** Whether this Schrödinger equation is the precise non-relativistic limit of the biquaternion Dirac equation, or only an independent equation with the same symbol, is not checked here.
 
@@ -287,7 +287,7 @@ $$
 
 with $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$ Hermitian, $\tilde{Ξ}_{\mathrm{sp}}$ one element of $\mathbb{B}$ with four complex coefficients, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
-The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{B}_{\Psi}$, since $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The field is a general element of $\mathbb{B}$, not an element of $\mathbb{B}_{\Psi}$; the density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) \in \mathbb{B}_{\Psi}$, and the field equation implies the parent article's von Neumann equation $i\hbar\,c\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [H,\tilde{Ϛ}_{\Psi}]$.
+The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{B}_{\Psi}$, since $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The field is a general element of $\mathbb{B}$, not an element of $\mathbb{B}_{\Psi}$; the density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) \in \mathbb{B}_{\Psi}$, and the field equation implies the parent article's von Neumann equation $i\hbar\,c\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]$.
 
 Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\frac{\tilde{Ζ}\tilde R_\Psi}{\hbar\,c}$ need not be anti-Hermitian, so the flow is not $*$-unitary and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde R_\Psi = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
 
@@ -306,7 +306,7 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators): the generator is $-\frac{i\,H}{\hbar\,c}\in\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian element (Hamiltonian) |
-| $\tilde{Ξ}_{\mathrm{sp}}$ | The field: one element of $\mathbb{B}$ |
+| $\tilde{Ξ}_{\mathrm{sp}}$ | The field: one element of $\mathbb{B}$; `sp` marks the spinor role |
 | $L_{\tilde R_\Psi}$, $L_{\mathrm{axf}}(\tilde R_\Psi)$ | Left multiplication by $\tilde R_\Psi$; its $4\times4$ axis-free array in the coefficient basis |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to the field |
 | $\tilde Q(r'_t) = \exp(-i\tilde R_\Psi r'_{t}/(\hbar\,c))$ | $*$-Unitary evolution, $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$ |

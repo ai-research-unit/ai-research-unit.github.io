@@ -43,7 +43,7 @@ with $p_{\mathrm{th}}$ the part that a thermal state has at the local temperatur
 **The temperature enters as the local period, and the corpus writes it as $\beta(x)$, a length at each event.** From the local thermal structure article,
 
 $$
-\beta(x)=\frac{\hbar}{k_{B}\,T(x)},
+\beta(x)=\frac{m\,c}{k_{m}\,k_{B}\,T(x)},
 \qquad
 T(x)\,c(x)=\text{const}
 $$
@@ -252,7 +252,7 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |
 | $\mu_{\mathrm{chm}}$ | Chemical potential |
-| $\beta(x)=\frac{\hbar}{k_{B}\,T(x)}$ | Local inverse temperature, a length |
+| $\beta(x)=\frac{m\,c}{k_{m}\,k_{B}\,T(x)}$ | Local inverse temperature, a length |
 | $T(x)$ | Local temperature |
 | $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |

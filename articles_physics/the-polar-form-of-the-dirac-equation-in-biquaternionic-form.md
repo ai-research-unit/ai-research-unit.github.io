@@ -10,7 +10,7 @@ $$
 \tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
 $$
 
-and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no minimal left ideal, no Peirce decomposition, no chiral projector, no Clifford algebra. The field is the element, the operator is the element, and the multiplication is the algebra's own.
+and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no minimal left ideal, no Peirce decomposition, no chiral projector, no Clifford algebra. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it.
 
 This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the polar word of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form it takes in *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*:
 

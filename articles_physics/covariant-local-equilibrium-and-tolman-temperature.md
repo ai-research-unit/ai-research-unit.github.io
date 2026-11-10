@@ -118,7 +118,7 @@ The second flow therefore fails the rigidity condition in two of its families of
 **The inverse temperature of this category is a length, and it is the circumference of the imaginary-time circle.** Quoted from article 11, without derivation:
 
 $$
-\beta=\frac{\hbar}{k_B\,T},
+\beta=\frac{m\,c}{k_m\,k_B\,T},
 \qquad
 c\beta=\frac{\hbar\,c}{k_B\,T}.
 $$
@@ -156,7 +156,7 @@ v_{\Phi,t}=ic,
 \qquad
 v_{\Phi,\eta}=0,
 \qquad
-\beta(x)=\frac{\hbar}{k_B\,T(x)},
+\beta(x)=\frac{m\,c}{k_m\,k_B\,T(x)},
 \qquad
 T(x)\,c(x)=\text{const},
 $$
@@ -173,7 +173,7 @@ $$
 
 where the last equality is Tolman's law differentiated. So a varying medium violates rigidity by exactly the logarithmic gradient of the Tolman temperature. That is not a defect of the spelling: it is article 11's own answer, which is that the thermal structure is *global only in the limit in which $c$ is constant*, and that a varying medium carries a local and not a global equilibrium. The violation and the temperature gradient are one phenomenon, and the number in the last display is the measure of how far the state is from global equilibrium.
 
-**The verdict, in one sentence.** A local temperature is available, it is the pointwise period $\beta(x)=\hbar/(k_B T(x))$, and the local thermal state is rigid at an event exactly where the medium is uniform there, failing by the Tolman gradient everywhere else — which is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.
+**The verdict, in one sentence.** A local temperature is available, it is the pointwise period $\beta(x)=mc/(k_mk_BT(x))$, and the local thermal state is rigid at an event exactly where the medium is uniform there, failing by the Tolman gradient everywhere else — which is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.
 
 ### The decision the gate asks for
 
@@ -250,7 +250,7 @@ A flow that satisfies both is a uniform translation, and it is the only one. A f
 
 ## What Is Established and What Is Interpretation
 
-**Established.** The rigidity condition on the component spelling of the velocity, with its three consequences — a constant Lorentz factor in time, no expansion and no shear, and the acceleration locked to the rapidity gradient. The non-constraint on the vorticity, and the consequent non-rigidity of the relativistic rigid rotation. The exactness of the condition on a uniform translation and its failure on a transverse shear flow, with the numbers $0$ and $0.471\,438$. The pointwise temperature $\beta=\hbar/(k_B T)$ as a length, quoted from article 11 together with its numerical check. Tolman's law $Tc=\text{const}$ and the check $T=300\,\mathrm{K}$ at $c=1$ against $T=200\,\mathrm{K}$ at $c=1.5$, quoted. The verification by substitution that a fluid at rest in the local frame satisfies the six purely spatial components identically and the four temporal ones exactly when the medium is uniform at the event, and the identification of the violation in a varying medium with the logarithmic gradient of the Tolman temperature.
+**Established.** The rigidity condition on the component spelling of the velocity, with its three consequences — a constant Lorentz factor in time, no expansion and no shear, and the acceleration locked to the rapidity gradient. The non-constraint on the vorticity, and the consequent non-rigidity of the relativistic rigid rotation. The exactness of the condition on a uniform translation and its failure on a transverse shear flow, with the numbers $0$ and $0.471\,438$. The pointwise temperature $\beta=mc/(k_mk_BT)$ as a length, quoted from article 11 together with its numerical check. Tolman's law $Tc=\text{const}$ and the check $T=300\,\mathrm{K}$ at $c=1$ against $T=200\,\mathrm{K}$ at $c=1.5$, quoted. The verification by substitution that a fluid at rest in the local frame satisfies the six purely spatial components identically and the four temporal ones exactly when the medium is uniform at the event, and the identification of the violation in a varying medium with the logarithmic gradient of the Tolman temperature.
 
 **Interpretation.** That the rigidity condition, the pointwise period and the Tolman law together constitute *covariant local equilibrium* in this framework. The three are standard relativistic thermodynamics; what the interpretation adds is the claim that the letters of this category are a faithful transcription of them, and that claim is the article's, not the physics'.
 
@@ -266,7 +266,7 @@ $$
 
 written on the component spelling of the velocity element, with the index low and the derivative the algebra's own. It is the vanishing of the symmetric part of the velocity's gradient, and it has three consequences: the Lorentz factor does not vary in time, the spatial current density has neither expansion nor shear, and the flow's acceleration is locked to the rapidity gradient so that a static rigid flow is inertial. Vorticity is unconstrained, but the relativistic rigid rotation fails the acceleration condition, so the only global rigid flow in the flat frame is a uniform translation. The condition was checked at one event with central differences of step $10^{-6}$: a uniform translation gave a residual of exactly $0$ in all sixteen entries, and the transverse shear flow gave $0.471\,438$ at the spatial pair, matching $\partial_{r_x}(\gamma v_y)$ computed independently, while satisfying the acceleration pair exactly.
 
-The pointwise temperature of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is $\beta=\hbar/(k_B T)$, an imaginary-time circumference and therefore a length, with $c\beta=\hbar\,c/(k_B T)$ for the material sector's circumference; both are quoted, with that article's check at $2.725$, $300$ and $1000\,\mathrm{K}$. Tolman's law is quoted as $Tc=\text{const}$, so $T\propto1/c\propto n$, with that article's two-point check $T_0=300\,\mathrm{K}$ at $c=1$ and $T=200\,\mathrm{K}$ at $c=1.5$. A fluid at rest in the local frame satisfies the six purely spatial components of the rigidity condition identically, and the four components that carry the temporal slot are $2i\partial_\mu c$: they vanish where the medium is uniform and in a varying medium the condition fails by $i c\,\partial\ln c/\partial r_\eta=-i c\,\partial\ln T/\partial r_\eta$, the logarithmic gradient of the Tolman temperature. The medium therefore admits local and not global equilibrium, which is article 11's own answer.
+The pointwise temperature of [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is $\beta=mc/(k_mk_BT)$, an imaginary-time circumference and therefore a length, with $c\beta=mc^{2}/(k_mk_BT)$ for the material sector's circumference; both are quoted, with that article's check at $2.725$, $300$ and $1000\,\mathrm{K}$. Tolman's law is quoted as $Tc=\text{const}$, so $T\propto1/c\propto n$, with that article's two-point check $T_0=300\,\mathrm{K}$ at $c=1$ and $T=200\,\mathrm{K}$ at $c=1.5$. A fluid at rest in the local frame satisfies the six purely spatial components of the rigidity condition identically, and the four components that carry the temporal slot are $2i\partial_\mu c$: they vanish where the medium is uniform and in a varying medium the condition fails by $i c\,\partial\ln c/\partial r_\eta=-i c\,\partial\ln T/\partial r_\eta$, the logarithmic gradient of the Tolman temperature. The medium therefore admits local and not global equilibrium, which is article 11's own answer.
 
 The verdict on the gate is that a local temperature is available, and that the pointwise thermal state is rigid at the events where the medium is uniform and fails the condition by the Tolman gradient at the rest. It is a pointwise period on the field of states and not a pointwise metric, as article 11 establishes; this article adopts that answer and does not reopen it. The mechanical form of the condition is the one the flat frame can carry, and the thermal form — the Killing property of $v_{\Phi,\mu}/T$ — belongs to the curved bookkeeping of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), where the lapse supplies the Christoffel term the flat frame lacks.
 
@@ -293,7 +293,7 @@ The verdict on the gate is that a local temperature is available, and that the p
 | $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | Three-velocity |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity, the antisymmetric half of the gradient |
 | $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}$ | Rigidity, the symmetric half of the gradient |
-| $\beta=\frac{\hbar}{k_B\,T}$ | Inverse temperature: the imaginary-time circumference, a length |
+| $\beta=\frac{m\,c}{k_m\,k_B\,T}$ | Inverse temperature: the imaginary-time circumference, a length |
 | $c\beta=\frac{\hbar\,c}{k_B\,T}$ | The same circumference in the material sector's units |
 | $T$ | Temperature |
 | $T\,c=\text{const}$ | Tolman's law in the corpus's letters, so $T\propto1/c\propto n$ |

@@ -355,7 +355,7 @@ $$
 
 **The proportionality is the sector's prediction.** The Higgs couples to each fermion in proportion to its mass, with no free constant per flavour. The Yukawa matrix that sets the mass also sets the coupling, because both come from the same term. What the couplings measure is therefore the same numbers the masses do — the nine masses, taken in a different way. They are not the thirteen: the four mixing parameters do not enter a Higgs coupling at tree level, because the coupling is diagonal in the mass basis. The flavour structure is invisible to the scalar, and that is itself a testable statement.
 
-**The decays.** With $\Gamma\left(H\to f\bar f\right)=N_m\,c_f^{2}M_H\beta^{3}/\left(8\pi v^{2}\right)$ and $\beta=\sqrt{1-4m_f^{2}/M_H^{2}}$, and $M_H=125.09$ GeV:
+**The decays.** With $\Gamma\left(H\to f\bar f\right)=N_c\,m_f^{2}M_H\beta^{3}/\left(8\pi v^{2}\right)$ and $\beta=\sqrt{1-4m_f^{2}/M_H^{2}}$, and $M_H=125.09$ GeV:
 
 | Channel | $g_{hf\bar f}=m_f/v$ | Computed width | Reference value |
 |---|---|---|---|

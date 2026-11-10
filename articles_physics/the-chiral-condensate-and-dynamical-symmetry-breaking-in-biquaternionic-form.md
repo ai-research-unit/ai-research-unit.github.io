@@ -329,8 +329,8 @@ For $G>G_c$ the chiral solution is unstable and the nontrivial one appears; the 
 **The condensate.** At the nontrivial solution the condensate is
 
 $$
-\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle = -2N_m\,c\,I_1(m)
-\approx -\frac{N_m\,c\,\Lambda^2}{2\pi^2} ,
+\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle = -2N_c\,m\,I_1(m)
+\approx -\frac{N_c\,m\,\Lambda^2}{2\pi^2} ,
 $$
 
 where the second form is the leading term for $m\ll\Lambda$. At the values used below the leading form overestimates by about $30\%$, so the table quotes the exact integral. The numbers were recomputed directly from the integral, in units of GeV, for $N_c=3$ and $\Lambda=0.65$:

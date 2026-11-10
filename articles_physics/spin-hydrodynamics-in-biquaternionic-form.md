@@ -238,8 +238,8 @@ The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{\
 | $\tilde S_{\Psi,\eta}$ | Spin element |
 | $S_{\Psi,\eta,\lambda\nu}$ | Components of the spin current, three labels, all low |
 | $S_{\Psi,\lambda\nu}\equiv S_{\Psi,t,\lambda\nu}$ | Spin density, the temporal slot of the current; the conjugate of $\omega_{\lambda\nu}$ |
-| $J_{\Psi,\mathrm{spn},\lambda}$ | Spin diffusion current, Fick's law with the coefficient $\kappa_{\mathrm{spn}}$ |
-| $\chi_{\mathrm{spn}}=\partial S_{\Psi}/\partial\mu_{\mathrm{spn}}$ | Spin susceptibility |
+| $J_{\Psi,\mathrm{spn},\lambda}$ | Spin diffusion current of the $\lambda$ direction, Fick's law with the coefficient $\kappa_{\mathrm{spn}}$ |
+| $\chi_{\mathrm{spn}}=\partial s_{\mathrm{ent}}/\partial\mu_{\mathrm{spn}}$ | Spin susceptibility, the entropy density's derivative with respect to the spin potential |
 | $D_{\mathrm{spn}}=\kappa_{\mathrm{spn}}/\chi_{\mathrm{spn}}$ | Spin diffusivity, with $\ell_{\mathrm{spn}}=\sqrt{D_{\mathrm{spn}}\tau}$ |
 | $S_{\Psi,\eta,\lambda\nu}^{\mathrm{eq}}$ | Its equilibrium value |
 | $\tilde u_{\mathrm r}$ | Rotor of the polar form |
@@ -251,7 +251,6 @@ The caution is the article's centre: $\partial p_{\mathrm{th}}/\partial\omega_{\
 | $T$, $\beta$ | Temperature, imaginary-time circumference |
 | $P_{\mathrm{pol}}$ | Polarization of one element |
 | $e_{\mathrm{rot}}$ | Spin-rotation energy density |
-| $J_{\Psi,\mathrm{spn},\lambda}$ | Spin current |
 | $\kappa_{\mathrm{spn}}$ | Spin diffusion coefficient |
 | $\tau_{\mathrm{spn}}$ | Spin relaxation time |
 | $\ell_{\mathrm{spn}}$ | Spin diffusion length |

@@ -127,17 +127,34 @@ $$
 \hat s^{2}=-e_t,
 $$
 
-**the polar-form article's display.** Its scalar slot is empty — $\mathrm{Sc}(\tilde S_{\Psi,\mathrm{sp}})=0$ — and its vector slot carries $i$ times a real direction. **A temporal component is precisely a scalar-slot component in the corpus's component convention**, so the vanishing of the scalar slot *is* the vanishing of the four components with one temporal label:
+**the polar-form article's display.** Its scalar slot is empty — $\mathrm{Sc}(\tilde S_{\Psi,\mathrm{sp}})=0$ — and its vector slot carries $i$ times a real direction. **A temporal component is precisely a scalar-slot component in the corpus's component convention**, so the vanishing of the scalar slot *is* the statement that the direction has no part along the time axis.
+
+**The element carries a vector and the tensor needs a bivector, so the bivector is the dual of the direction with the flow:**
+
+$$
+\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\,\hat s_{\eta}\,v_{\Phi,\zeta}/c ,
+$$
+
+**with $\varepsilon_{\lambda\nu\eta\zeta}$ the antisymmetric symbol and $\eta$, $\zeta$ running over all four labels.** The contraction with the flow then vanishes identically,
+
+$$
+\hat s_{\lambda\nu}\,v_{\Phi,\nu}
+=\varepsilon_{\lambda\nu\eta\zeta}\,\hat s_{\eta}\,v_{\Phi,\zeta}v_{\Phi,\nu}/c=0,
+$$
+
+**because $\varepsilon$ is antisymmetric in the pair $\zeta\nu$ and $v_{\Phi,\zeta}v_{\Phi,\nu}$ is symmetric in it.** That one line is the Frenkel condition, and it holds for every field with a non-zero flow and every direction $\hat s$: **the condition is not imposed on the field, it is a property of the bivector the word supplies**, and the algebra's contribution is the one-line proof rather than the assertion. In the flow's rest frame the identity reads $\hat s_{t,\eta}=0$: the components whose plane contains the time direction vanish, and there are **three** of them, the electric part of an antisymmetric array in four dimensions, with the three spatial-plane components left as the spin density.
 
 $$
 \mathrm{Sc}\left(\tilde S_{\Psi,\mathrm{sp}}\right)=0
-\qquad\Longleftrightarrow\qquad
-\mathcal{F}.
+\qquad\Longrightarrow\qquad
+\hat s^{2}=-e_t ,
 $$
 
-**The equivalence is the article's main structural statement: the corpus does not impose the Frenkel condition, because the polar word cannot violate it.** The spin is carried by a rotation, a rotation is a real unitary element, and the image of a spatial direction under a rotation is a spatial direction. **A framework in which the spin lived in the field's eight parameters without a rotor would have to impose $\mathcal{F}$ by hand; this one gets it from the decomposition.**
+**and the implication is the one the polar form uses**: the empty scalar slot is what makes $\hat s$ a unit *spatial* direction and not a direction with a temporal part, and a real unit vector is what the norm relation $\hat s^{2}=-e_t$ states. **The Frenkel condition itself needs nothing from that**: it came from the antisymmetry of $\varepsilon$ two displays ago, and it holds whatever $\hat s$ is.
 
-**What the equivalence does not say, and the article is explicit.** It does not say that every field satisfies $\mathcal{F}$ in the sense of the *macroscopic* polarization of [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html). **The polar word's $\hat s$ is one element's spin direction; the fluid's polarization is the average of many**, and the average of directions with empty scalar slots is a direction with an empty scalar slot only if the averaging is done in one frame. **In another frame the averaged polarization can acquire a temporal part**, and that is a statement about the average and not about the algebra.
+**The two facts together are the article's main structural statement: the corpus imposes neither the direction nor the condition.** The direction is the rotor's image of the frame's declared axis, and the condition is the dual's antisymmetry. The spin is carried by a rotation, a rotation is a real unitary element, and the image of a spatial direction under a rotation is a spatial direction. **A framework in which the spin lived in the field's eight parameters without a rotor would have to impose $\mathcal{F}$ by hand; this one gets it from the decomposition.**
+
+**What the pair does not say, and the article is explicit.** It does not say that every field satisfies $\mathcal{F}$ in the sense of the *macroscopic* polarization of [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html). **The polar word's $\hat s$ is one element's spin direction; the fluid's polarization is the average of many**, and the average of directions with empty scalar slots is a direction with an empty scalar slot only if the averaging is done in one frame. **In another frame the averaged polarization can acquire a temporal part**, and that is a statement about the average and not about the algebra.
 
 ### The condition's preservation
 
@@ -225,7 +242,7 @@ $$
 
 ## What Is Established and What Is Interpretation
 
-**Established, and framework content.** That the rotor's logarithmic derivative is a real vector part and that the rotor's equation of motion is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$; that the spin's precession is $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$ with the magnitude conserved; that the spin current's divergence is the antisymmetric part of the connection contracted with the spin, so that the conservation law is read off the rotor and not postulated; that the free field has vanishing torque and a divergence-free spin current; that the Frenkel condition is automatic in the polar word, because the spin element's scalar slot is empty; that the condition is preserved by boosts although its components are not; that the Weyssenhoff condition adds conservation to constraint.
+**Established, and framework content.** That the rotor's logarithmic derivative is a real vector part and that the rotor's equation of motion is $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$; that the spin's precession is $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$ with the magnitude conserved; that the spin current's divergence is the antisymmetric part of the connection contracted with the spin, so that the conservation law is read off the rotor and not postulated; that the free field has vanishing torque and a divergence-free spin current; that the Frenkel condition is automatic in the polar word, because the spin bivector is the dual of the direction with the flow, so its contraction with that flow vanishes by the antisymmetry of $\varepsilon$; that the condition is preserved by boosts although its components are not; that the Weyssenhoff condition adds conservation to constraint.
 
 **Interpretation, and marked as such.** That the corpus has no Belinfante ambiguity because the orbital and intrinsic parts of the angular momentum are separated by the polar decomposition is the article's reading of the structure and is not a theorem. **It is a reading the algebra supports — the slots are what they are — and it is offered as such.**
 
@@ -235,7 +252,7 @@ $$
 
 The spin current's conservation law is the rotor's equation of motion. With $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ a real vector part, the rotor obeys $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$, the spin direction obeys $\partial_\eta\hat s=\vec\Omega_\eta\times\hat s$, and the divergence of the spin current is the torque $\tau_{\lambda\nu}=\tfrac12(\Omega_{\eta,\lambda}S_{\Psi,\mathrm{sp},\eta,\nu}-\Omega_{\eta,\nu}S_{\Psi,\mathrm{sp},\eta,\lambda})$, which vanishes when the connection turns about the spin's axis. For the free field the torque vanishes and $\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=0$.
 
-The Frenkel condition, $S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. **In the corpus's letters it is automatic**: the spin element is $\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, whose scalar slot is empty, and an empty scalar slot is exactly the vanishing of the temporal components. The corpus therefore does not impose the condition; the polar decomposition cannot violate it. The condition is preserved by boosts — $S_{\Psi,\eta,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,\eta,ji}$ is non-zero in general while the contraction with $v_{\Phi,\nu}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.
+The Frenkel condition, $S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0$, removes the three components of the antisymmetric array that carry a temporal label and leaves the three of a spatial vector. **In the corpus's letters it is automatic, and the proof is one line**: the spin element is $\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ a unit spatial direction, the bivector is its dual with the flow, $\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\hat s_\eta v_{\Phi,\zeta}/c$, and the contraction $\hat s_{\lambda\nu}v_{\Phi,\nu}$ vanishes because $\varepsilon$ is antisymmetric in the pair that $v_{\Phi,\zeta}v_{\Phi,\nu}$ is symmetric in. The corpus therefore does not impose the condition; the dual cannot violate it, whatever the direction. **In the rest frame the identity reads $\hat s_{t,\eta}=0$, the three components whose plane contains the time direction**; the element's empty scalar slot is a separate statement, that the direction is spatial, and it is what makes $\hat s^{2}=-e_t$. The condition is preserved by boosts — $S_{\Psi,\eta,0i}^{\prime}=\gamma\beta_{j}S_{\Psi,\eta,ji}$ is non-zero in general while the contraction with $v_{\Phi,\nu}^{\prime}$ still vanishes — and a reader who checks components alone will wrongly conclude that it fails.
 
 The Weyssenhoff condition adds conservation to constraint: $\mathcal{F}$ and $\partial_\eta S_{\Psi,\mathrm{sp},\eta,\lambda\nu}=0$ together, so the spin is advected and never precesses. The corpus's free field satisfies both, which is why the two conditions are often conflated.
 
@@ -251,6 +268,8 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element, with $\rho$ the scale, which the polar article writes as $r$ |
 | $S_{\Psi,\mathrm{sp},\eta,\lambda\nu}$ | Components of the spin current, all low |
 | $S_{\Psi,\mathrm{sp},t,\lambda\nu}$ | Its temporal slot, the spin density, $\rho\tfrac{\hbar}{2}\hat s_{\lambda\nu}$ |
+| $\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\hat s_{\eta}v_{\Phi,\zeta}/c$ | The spin bivector, the dual of the direction with the flow |
+| $\varepsilon_{\lambda\nu\eta\zeta}$ | The antisymmetric symbol, four labels |
 | $\tau_{\lambda\nu}$ | Torque, the spin current's source |
 | $\mathcal{F}$ | The Frenkel condition |
 | $\mathcal{W}$ | The Weyssenhoff condition |

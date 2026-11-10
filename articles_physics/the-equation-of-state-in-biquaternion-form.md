@@ -7,9 +7,9 @@
 **The temperature enters as a length, and the article quotes it and derives nothing.** From [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
 
 $$
-\beta=\frac{\hbar}{k_{B}\,T},
+\beta=\frac{m\,c}{k_{m}\,k_{B}\,T},
 \qquad
-c\beta=\frac{\hbar\,c}{k_{B}\,T},
+c\beta=\frac{m\,c^{2}}{k_{m}\,k_{B}\,T},
 $$
 
 the imaginary-time circumference and the same span in the material sector's units. **Both displays are quotations.** The article uses $\beta$ as the variable conjugate to the entropy density, that is, as the variable in which the Gibbs–Duhem relation reads $\partial p_{\mathrm{th}}/\partial\beta=-(\beta/T)\,s_{\mathrm{ent}}$, which [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) established; it does not re-derive the relation between $\beta$ and $T$, and a reader who wants the counting of Matsubara modes goes to the article cited.
@@ -232,7 +232,7 @@ which is the pressure of the state that [The Polar Form of the Klein–Gordon Eq
 
 ## Summary
 
-The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with the thermal part a function of the proper density and the period, $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the quantum part a functional of the density field. The period is quoted: $\beta=\hbar/(k_BT)$, a length, with $c\beta=\hbar\,c/(k_BT)$; nothing about it is derived here.
+The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with the thermal part a function of the proper density and the period, $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the quantum part a functional of the density field. The period is quoted: $\beta=mc/(k_mk_BT)$, a length, with $c\beta=mc^{2}/(k_mk_BT)$; nothing about it is derived here.
 
 The thermal part closes through $p_{\mathrm{th}}=n_{\mathrm{num}}(\partial w_{\mathrm{fl}}/\partial n_{\mathrm{num}})_{s_{\mathrm{ent}}}-w_{\mathrm{fl}}$, which returns $p=\tfrac23w$ for a non-relativistic degenerate gas ($\gamma=\tfrac53$), $p=\tfrac13w$ for radiation ($\gamma=\tfrac43$), and $p=(\gamma-1)w$ for a general polytrope. In the corpus's variable radiation reads $p_{\mathrm{th}}=aA^{4}/(3\beta^{4})$ and $s_{\mathrm{ent}}=4aA^{3}/(3\beta^{3})$, with $\partial p_{\mathrm{th}}/\partial\beta=-4p_{\mathrm{th}}/\beta$ and the Gibbs–Duhem check $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ returning $4aT^{3}/3$. The thermal part is not barotropic in general; the barotropic case is the degenerate limit.
 
@@ -253,10 +253,10 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |
-| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
+| $\beta=\frac{m\,c}{k_{m}\,k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
 | $c\beta=\frac{\hbar\,c}{k_{B}\,T}$ | The same span in material units |
 | $T=A/\beta$ | Temperature |
-| $A=\frac{\hbar}{k_{B}}$ | The constant relating period and temperature |
+| $A=\frac{m\,c}{k_{m}\,k_{B}}=\frac{\hbar}{k_{B}}$ | The constant relating period and temperature, $\beta=A/T$ |
 | $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
 | $\hbar$ | Action quantum |
 | $m$, $c$ | Mass, speed of light in the medium |

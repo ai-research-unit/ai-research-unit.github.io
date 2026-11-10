@@ -241,7 +241,9 @@ Q_{\mathrm{qnt}}(r_0)=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVe
 =\frac{\hbar^{2}}{4m\sigma^{2}},
 $$
 
-at the centre $r_0$ of a packet at rest, where the box is the spatial Laplacian in that frame. **The two are equal up to the mass**: $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The computation is one line: for $\lVert\tilde\Xi\rVert\propto e^{-(r-r_0)^{2}/(4\sigma^{2})}$ the ratio $\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ at the centre is $-1/(2\sigma^{2})$, and the minus signs of the quantum potential and of the second derivative cancel.
+at the centre $r_0$ of a packet at rest, where the box is the spatial Laplacian in that frame and the variance is taken along one direction. **The two are equal up to the mass**: $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$.
+
+**One clause about the dimension, because the box and the variance must be counted the same way.** The display is one-dimensional. In three dimensions the Laplacian contributes one such term per direction, so the ratio at the centre is $-3/(2\sigma^{2})$ and the identity reads $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}_{\mathrm{tr}}(p)/m$, where $\mathrm{Var}_{\mathrm{tr}}(p)=\sum_{\eta}\mathrm{Var}(p_\eta)$ is the trace of the momentum covariance and not the variance along one axis. **Per component the three-dimensional identity carries a factor of three**, and a reader who compares a one-dimensional formula with a three-dimensional simulation will find exactly that factor and no other. The computation is one line: for $\lVert\tilde\Xi\rVert\propto e^{-(r-r_0)^{2}/(4\sigma^{2})}$ the ratio $\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ at the centre is $-1/(2\sigma^{2})$, and the minus signs of the quantum potential and of the second derivative cancel.
 
 **The identity is the bridge to the stress.** The quantum potential is the term that modifies the mass shell in the corpus's polar form,
 
@@ -348,7 +350,8 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $\tilde U_{\mathrm{rot}}$ | Rotor of the polar form |
 | $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $\sigma$ | Position width of a Gaussian packet |
-| $\mathrm{Var}(p)$ | Second moment of the Wigner distribution about the flow momentum |
+| $\mathrm{Var}(p)$ | Second moment of the Wigner distribution about the flow momentum, along one direction |
+| $\mathrm{Var}_{\mathrm{tr}}(p)$ | Its trace over the three directions, the three-dimensional reading |
 | $\delta^{3}(\vec s)$ | Three-dimensional delta |
 | $\alpha$ | Phase-space variable of the Bell article, with $d^{2}\alpha=dq\,dp/2$ |
 

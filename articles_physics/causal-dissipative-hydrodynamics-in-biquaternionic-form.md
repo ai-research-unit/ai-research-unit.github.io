@@ -58,7 +58,7 @@ $$
 \tau_{q}\,\frac{dq_{\lambda}}{d\tau}+q_{\lambda}=-\kappa_{\mathrm{th}}\,\partial_\lambda T ,
 $$
 
-**the displays at the head of the article, with $\tau$ the proper time along the flow and every index low.** The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\mu}\partial_\mu/c$ in components, **so the equations are written in the fluid's own frame and are invariant because they are written on elements in the corpus's convention**.
+**the displays at the head of the article, with $\tau$ the proper time along the flow and every index low.** The derivative is the comoving one, $\frac{d}{d\tau}=v_{\Phi,\mu}\partial_\mu$ in components — **no factor of $c$, because a velocity times a gradient is already a rate**: $v_{\Phi,t}\partial_t=ic\gamma\,(-i\partial/\partial r'_t)=c\gamma\,\partial/\partial r'_t$ and $v_{\Phi,\eta}\partial_\eta$ together give $\gamma(c\,\partial/\partial r'_t+\vec v\cdot\nabla)=\gamma\,d/dt$, which is $d/d\tau$ for a flow of Lorentz factor $\gamma$. **A reader who inserts a $c$ here will find the relaxation times off by that factor against the front speeds of the next section**, which are built from $\sqrt{D_{\mathrm{th}}/\tau_q}$ with $D_{\mathrm{th}}$ a diffusivity.
 
 **The relaxation time is a transport coefficient of the same standing as the viscosity**, and the second law constrains it: the production's new terms are quadratic in the fluxes and divided by the relaxation times, **so a positive production requires the relaxation times to be positive** as well as the coefficients.
 
@@ -156,12 +156,14 @@ $$
 **The same structure holds in the other two channels with the kinematic viscosities in place of the diffusivity.**
 
 $$
-v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{\rho_{\mathrm{num}}\,\tau_{\pi}}},
+v_{\mathrm{frt,sh}}=\sqrt{\frac{\eta_{\mathrm{sh}}}{m\,\rho_{\mathrm{num}}\,\tau_{\pi}}},
 \qquad
-v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{\rho_{\mathrm{num}}\,\tau_{\Pi}}},
+v_{\mathrm{frt,bk}}=\sqrt{\frac{\zeta}{m\,\rho_{\mathrm{num}}\,\tau_{\Pi}}},
 $$
 
-**so each channel has its own causality condition and the theory is causal only if all three hold.** The article writes the three because **a single satisfied channel is the commonest way a causal claim is made falsely.**
+**with the mass $m$ in the denominator, and it is not decoration.** A viscosity over a density is a kinematic viscosity only when the density is a *mass* density; $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ is a number density, as the pressure of [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) makes plain — $p_{\mathrm{qnt}}\sim(\hbar^{2}/m)(\rho_{\mathrm{num}}/L^{2})$ is a pressure only if $\rho_{\mathrm{num}}$ carries $1/\mathrm{length}^{3}$ — so the mass density is $m\rho_{\mathrm{num}}$ and the kinematic viscosity is $\eta_{\mathrm{sh}}/(m\rho_{\mathrm{num}})$. **A reader who drops the $m$ gets a front speed in units of $\sqrt{\mathrm{kg}}\,\mathrm{m/s}$ and will not notice it in a table of numbers with $m=1$.** The heat channel needs no such factor because $D_{\mathrm{th}}=\kappa_{\mathrm{th}}/c_{V}$ is already a diffusivity, the heat capacity being per unit volume.
+
+**So each channel has its own causality condition and the theory is causal only if all three hold.** The article writes the three because **a single satisfied channel is the commonest way a causal claim is made falsely.**
 
 **The combined condition, in one line.** With $v_{\mathrm{snd}}$ the sound speed, the Israel–Stewart system is causal when the three front speeds and the sound speed are all at most $c$; **the sound speed's own bound is the equation of state's and not the relaxation's**, and the article does not conflate the two.
 
@@ -236,7 +238,8 @@ The equilibrium is stable when the energy's second variation, $\delta^{2}w_{\mat
 | $p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$ | The thermal and quantum parts of $p_{\mathrm{eff}}$ |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $\tilde J_{\Phi,\mathrm{ent}}$ | Entropy current, Hermitian, inherited |
-| $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
+| $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density, a number density per unit volume |
+| $m$ | Mass of the field's quantum, so that $m\rho_{\mathrm{num}}$ is the mass density |
 | $T$, $\beta$ | Temperature, imaginary-time circumference |
 | $c$, $\hbar$ | Speed of light, Planck constant |
 | $e_t$ | Unit temporal direction |

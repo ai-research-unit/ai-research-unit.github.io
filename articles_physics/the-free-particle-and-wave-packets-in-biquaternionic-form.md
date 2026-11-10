@@ -426,7 +426,7 @@ and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$
 
 The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
-A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,cs_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{\hbar\,k_{0}}{m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
+A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{\hbar\,k_{0}}{m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
 $$
 G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)
@@ -458,7 +458,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ | Probability density, from the trace reading of the Hermitian form |
 | $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | Probability current |
 | $Ξ(r_x,r'_t)$ | Scalar envelope; module factor frozen |
-| $s_0$, $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,cs_{0}^{2}})^2}$ | Initial and time-dependent density width |
+| $s_0$, $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$ | Initial and time-dependent density width |
 | $\tau = 2s_0^2/(c/k_m)$ | Spreading time |
 | $G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = (\frac{m}{2\,\pi\,i\,\hbar\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{c}{\hbar\,r'_{t}})$ | Free propagator; central |
 | $\tilde Q(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar})$ | Free evolution; central $*$-unitary |

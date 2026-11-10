@@ -17,9 +17,9 @@
 **The inverse temperature is a length, and the corpus fixes it once.** From [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
 
 $$
-\beta=\frac{\hbar}{k_{B}\,T},
+\beta=\frac{m\,c}{k_{m}\,k_{B}\,T},
 \qquad
-c\beta=\frac{\hbar\,c}{k_{B}\,T},
+c\beta=\frac{m\,c^{2}}{k_{m}\,k_{B}\,T},
 $$
 
 with $\beta$ the imaginary-time circumference, a length in these letters, and $c\beta$ the corresponding span in the material sector's units. **The display is quoted and not re-derived**: the article cited establishes that the imaginary-time direction is compact with circumference $\beta$ in the coordinate $r'_t$, and that the identity above is exact. Here the only use made of it is that $\beta$ is a *period* and not a number: it is a length measured along a direction, and the direction is what the boost acts on.
@@ -121,7 +121,7 @@ the last equality being [The Partition Function in Biquaternionic Form](the-part
 
 **Why the trace cannot see the boost, in one sentence.** A trace is a sum over states of a scalar weight; a boost relabels the states — it maps each momentum to another — but it is a unitary relabelling, and a sum over a complete set is invariant under a unitary relabelling. **The partition function is therefore frame-independent for the same reason the dimension of a Hilbert space is.**
 
-**What is not frame-independent is the decomposition of $Z$.** The free energy $F=-(1/\beta)\log Z$ is a scalar if $\beta$ is taken as the scalar period; the internal energy $E$, the momentum $\vec p$, the entropy and the pressure are components of elements and do change. The next section reads them.
+**What is not frame-independent is the decomposition of $Z$.** The free energy $F=-k_BT\log Z=-(\hbar/\beta)\log Z$, which is [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html)'s $-(1/\beta)\log Z$ with the action quantum kept rather than set to one, is a scalar if $\beta$ is taken as the scalar period; the internal energy $E$, the momentum $\vec p$, the entropy and the pressure are components of elements and do change. The next section reads them.
 
 ### The rest frame as the special case
 
@@ -203,7 +203,7 @@ the second statement being the standard one that the total entropy of an isolate
 
 ### The free energy
 
-**The free energy is a scalar because $Z$ is a scalar and $\beta$ is a scalar, and this is the sharpest contrast with the energy density.** With $F=-(1/\beta)\log Z$ and both $Z$ and $\beta$ invariant,
+**The free energy is a scalar because $Z$ is a scalar and $\beta$ is a scalar, and this is the sharpest contrast with the energy density.** With $F=-k_BT\log Z=-(\hbar/\beta)\log Z$ and both $Z$ and $\beta$ invariant,
 
 $$
 F_{\mathrm{obs}}=F_{\mathrm{rest}}=-\,p_{\mathrm{th}}\,V_{0},
@@ -250,8 +250,8 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 
 | Symbol | Meaning |
 |---|---|
-| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
-| $c\beta=\frac{\hbar\,c}{k_{B}\,T}$ | The same span in the material sector's units |
+| $\beta=\frac{m\,c}{k_{m}\,k_{B}\,T}$ | Inverse temperature of the thermal articles, quoted from [The Local Thermal Structure](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html); the period along $r'_t$ |
+| $c\beta=\frac{m\,c^{2}}{k_{m}\,k_{B}\,T}$ | The same circumference in the material sector's units |
 | $T$ | Temperature |
 | $k_B$ | Boltzmann's constant |
 | $\tilde\beta_\Phi$ | Thermal element of the moving state |
@@ -268,7 +268,7 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 | $\hbar$ | Action quantum |
 | $k_m$ | Mass wave number |
 | $Z$ | Partition function, a scalar |
-| $F=-(1/\beta)\log Z=-p_{\mathrm{th}}V_{0}$ | Free energy, a scalar |
+| $F=-k_BT\log Z=-(\hbar/\beta)\log Z=-p_{\mathrm{th}}V_{0}$ | Free energy, a scalar |
 | $V_{0}$ | Proper volume |
 | $w_{\mathrm{fl}}$ | Energy density; its rest value is $w_{\mathrm{fl,rest}}$ |
 | $p_{\mathrm{th}}$, $p_{\mathrm{th,rest}}$ | Thermal pressure, unchanged by the boost; the suffix marks the rest-frame value |

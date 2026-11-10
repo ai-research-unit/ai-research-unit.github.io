@@ -459,7 +459,7 @@ For the electron $\lambda_C=2.426\ \mathrm{pm}$, and the maximum shift, at backw
 
 ### The Atomic Comparison
 
-**A hydrogen atom is $137$ mass wave numbers across, per radian.** The Bohr radius is $a_0=\frac{4\,\pi\,\hbar^{2}\,\epsilon_{0}}{m\,e^{2}}$ and the mass wave number of the electron is $k_{m_e}=\frac{m\,c_{e}}{\hbar}$. Their product needs no numerical input:
+**A hydrogen atom is $137$ mass wave numbers across, per radian.** The Bohr radius is $a_0=\frac{4\,\pi\,\hbar^{2}\,\epsilon_{0}}{m\,e^{2}}$ and the mass wave number of the electron is $k_{m_e}=\frac{m_{e}\,c}{\hbar}$. Their product needs no numerical input:
 
 $$
 a_0\,k_{m_e} =\frac{4\,\pi\,\hbar\,c\,\epsilon_{0}}{e^{2}} = \frac{1}{\alpha} = 137.036,
@@ -472,7 +472,7 @@ with the fine-structure constant $\alpha=e^2/(4\,\pi\,\hbar\,c\,\epsilon_{0})$. 
 **The atom's own three wave numbers.** In the ground state the momentum is $m_e\alpha c$, so the momentum wave number is
 
 $$
-k_{\Phi} =\frac{m\,c_{e}\,\alpha}{\hbar} = \alpha\,k_{m_e} = \frac{1}{a_0} = 1.8897\times10^{10}\ \mathrm{m^{-1}} .
+k_{\Phi} =\frac{m_{e}\,c\,\alpha}{\hbar} = \alpha\,k_{m_e} = \frac{1}{a_0} = 1.8897\times10^{10}\ \mathrm{m^{-1}} .
 $$
 
 The total energy is the rest energy less the binding energy, so the energy wave number is the mass wave number reduced by the binding term $k_m\alpha^{2}/2$:
