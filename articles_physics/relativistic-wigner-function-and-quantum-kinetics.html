@@ -199,10 +199,10 @@ $$</p>
 <p>$$
 \frac{p_\eta}{m}\frac{\partial W_0}{\partial r_\eta}
 -\frac{\partial V}{\partial r_\eta}\frac{\partial W_0}{\partial p_\eta}
-=W_0\left(-\frac{p_\eta}{m}\frac{m\omega}{\hbar}r_\eta\cdot 2\cdot\frac{1}{2}
+=W_0\left(-\frac{p_\eta}{m}\frac{m\omega}{\hbar}r_\eta\cdot 2
 +m\omega^{2}r_\eta\frac{2}{m\omega\hbar}p_\eta\right)=0,
 $$</p>
-<p>since the two coefficients are $-p_\eta\omega r_\eta/\hbar$ and $+p_\eta\omega r_\eta/\hbar$. <strong>With $\hbar=m=\omega=1$ the numbers are $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$ and $m\omega^{2}/\sigma_{p}^{2}=2$</strong>, and the cancellation is the equality of those two numbers. This is the check that the drift display's coefficients are right: a factor of two error anywhere in it would leave $2$ against $1$ or $2$ against $4$, and the residual would be a non-zero multiple of $W_0$.</p>
+<p>since the two coefficients are $-2p_\eta\omega r_\eta/\hbar$ and $+2p_\eta\omega r_\eta/\hbar$. <strong>With $\hbar=m=\omega=1$ the numbers are $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$ and $m\omega^{2}/\sigma_{p}^{2}=2$</strong>, and the cancellation is the equality of those two numbers. This is the check that the drift display's coefficients are right: a factor of two error anywhere in it would leave $2$ against $1$ or $2$ against $4$, and the residual would be a non-zero multiple of $W_0$.</p>
 <h3 id="what-the-correction-is-and-what-it-is-not">What the correction is, and what it is not</h3>
 <p><strong>It is not a collision term.</strong> A collision term is an integral operator built from the self-energy; it changes the number of particles in a phase-space cell and it drives the distribution to equilibrium. The $\hbar^{2}$ term does neither: it is a differential operator of third order in momentum, it conserves particle number, momentum and energy exactly, and it is present in the <em>free</em> equation, with no interaction and no bath. <strong>The distinction matters for the second law</strong>: a collision term is the only place where entropy production can enter a kinetic equation, and since the free equation has none, the entropy of a collisionless quantum fluid is conserved at this order — not increased.</p>
 <p><strong>It is not the whole of the quantum correction to transport.</strong> The term shown is the leading one in the gradient expansion of the free equation. The corrections from a finite collision width, from the off-shell behaviour of the self-energy, and from the $\hbar$ corrections to the collision integral are the Kadanoff–Baym structure's, and they are in <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>. This article's term is the one that survives when the collision integral is switched off, which is the sense in which it is the "quantum Vlasov" correction.</p>
@@ -211,10 +211,14 @@ $$</p>
 <h3 id="the-flow-in-the-corpuss-letters">The flow, in the corpus's letters</h3>
 <p><strong>Relativistically the drift is the contraction of the flow element with the gradient, and the mass shell is a constraint rather than an equation.</strong> With the velocity element of the polar form, $\tilde V_{\Phi,\nu}=p_{\Phi,\nu}/m$ and $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, the drift term becomes</p>
 <p>$$
-p_{\Phi,\nu}\,\frac{\partial W}{\partial r_\nu}
-=p_{\Phi,t}\,c\,\frac{\partial W}{\partial r'_t}+p_{\Phi,\eta}\frac{\partial W}{\partial r_\eta},
+p_{\Phi,\nu}\,\frac{\partial W}{\partial R_\nu}
+=\frac{E}{c}\,\frac{\partial W}{\partial r'_t}+p_{\Phi,\eta}\,\frac{\partial W}{\partial r_\eta},
 $$</p>
-<p>with the index low throughout and the $c$ on the temporal derivative because $r'_t$ is a length. <strong>No component is raised.</strong> The temporal component is $p_{\Phi,t}=iE/c$, whose rest-frame value is $imc$, so the first term is $iE\,\partial W/\partial r'_t$; the factor $i$ is the element's, and it cancels against the $i$ in the temporal slot of the Wigner element, which is why the equation can be written with real coefficients once the slot is taken into account.</p>
+<p>with the index low throughout. <strong>No component is raised.</strong> The two factors of the temporal term are separately imaginary and their product is real: $p_{\Phi,t}=iE/c$ on the polar form's display, and the temporal slot of the algebra's derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so</p>
+<p>$$
+p_{\Phi,t}\,\frac{\partial}{\partial R_t}=\frac{iE}{c}\left(-i\frac{\partial}{\partial r'_t}\right)=\frac{E}{c}\,\frac{\partial}{\partial r'_t},
+$$</p>
+<p>whose rest-frame value is $mc\,\partial/\partial r'_t=m\,\partial/\partial t$, since $r'_t$ is a length and $r'_t=c\,t$. <strong>The two $i$'s cancel, and that is why a drift built from two imaginary objects is a real equation.</strong> A reader who writes $p_{\Phi,t}\,c\,\partial/\partial r'_t$ keeps one $i$ and makes the drift imaginary while also putting the $c$ in the wrong place; the cancellation is in the temporal slot of the derivative, not in the coefficient.</p>
 <p><strong>The mass shell is the corpus's modified relation, and it enters as a constraint on the support.</strong> The states populate the shell</p>
 <p>$$
 p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2m\,Q_{\mathrm{qnt}}=0,
@@ -276,7 +280,7 @@ $$</p>
 <p>The Wigner element of the scalar field satisfies an exact equation whose generator is the Moyal bracket, $\partial_t W=\tfrac{2}{\hbar}\sin(\hbar\Lambda/2)(H,W)$ with $\Lambda=\overleftarrow{\partial_{r_\eta}}\overrightarrow{\partial_{p_\eta}}-\overleftarrow{\partial_{p_\eta}}\overrightarrow{\partial_{r_\eta}}$, every index low. Expanding the sine gives the classical drift at order $\hbar^{0}$ and one term at order $\hbar^{2}$; for a Hamiltonian at most quadratic in momentum the third-order term is exactly $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$, so the expansion is not approximate at that order.</p>
 <p>The drift equation, $\partial_t W+(p_\eta/m)\partial_{r_\eta}W-V'\partial_{p_\eta}W=0$, has the worldlines as its characteristics and is the statement that the phase-space flow is incompressible; its velocity field is divergenceless identically, which is Liouville's theorem rather than an assumption. With $r'_t$ a length, the temporal derivative carries a factor $c$, the same factor that gives $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$.</p>
 <p>The correction is $-\tfrac{\hbar^{2}}{24}V'''\partial_{p}^{3}W$. It is a total momentum derivative, so its zeroth, first and second moments vanish identically and the continuity equation is exact; its third moment is $-6\rho_{\mathrm{num}}$, which is why the correction's hydrodynamic signature is in the heat flow and not in the pressure. It vanishes for a quadratic potential, where the classical drift equation is therefore exact — checked on the oscillator ground state, where the drift terms cancel because $1/(m\sigma^{2})$ and $m\omega^{2}/\sigma_{p}^{2}$ are both $2$ in units with $\hbar=m=\omega=1$.</p>
-<p>Relativistically the drift is a contraction with the flow element and the shell is a constraint, $p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$. The two $\hbar^{2}$'s of the article — the shell's broadening and the kinetic correction — are one $\hbar^{2}$, read on the shell and off it. Temperature enters only through the state, and the equilibrium solution annihilates the correction's odd moments, so there is no spurious equilibrium heat flow. The collision integral, its self-energy and the entropy production it carries are <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>'s, and are cited rather than repeated.</p>
+<p>Relativistically the drift is a contraction with the flow element and the shell is a constraint in the corpus's divided form, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. The two $\hbar^{2}$'s of the article — the shell's broadening and the kinetic correction — are one $\hbar^{2}$, read on the shell and off it. Temperature enters only through the state, and the equilibrium solution annihilates the correction's odd moments, so there is no spurious equilibrium heat flow. The collision integral, its self-energy and the entropy production it carries are <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>'s, and are cited rather than repeated.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -329,6 +333,10 @@ $$</p>
 <tr>
 <td>$r'_t$</td>
 <td>Temporal coordinate of the material sector, a length</td>
+</tr>
+<tr>
+<td>$R_\mu$, $\partial/\partial R_\mu$</td>
+<td>Derivative coordinate, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$</td>
 </tr>
 <tr>
 <td>$E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$</td>
@@ -390,12 +398,12 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>E. Moyal, "Quantum mechanics as a statistical theory," <em>Proceedings of the Cambridge Philosophical Society</em> <strong>45</strong> (1949) 99–124, for the bracket and the expansion.</li>
+<li>J. E. Moyal, "Quantum mechanics as a statistical theory," <em>Proceedings of the Cambridge Philosophical Society</em> <strong>45</strong> (1949) 99–124, for the bracket and the expansion.</li>
 <li>H.-T. Elze, M. Gyulassy and D. Vasak, "Transport equations for the Wigner function," <em>Nuclear Physics B</em> <strong>276</strong> (1986) 706–728, for the gradient expansion and the quantum Vlasov equation.</li>
 <li>D. Vasak, M. Gyulassy and H.-T. Elze, "Quantum transport equations for the quark-gluon plasma," <em>Annals of Physics</em> <strong>173</strong> (1987) 462–492, for the matrix-valued case and the $\hbar$ counting.</li>
 <li>W. Botermans and R. Malfliet, "Quantum transport theory of nuclear matter," <em>Physics Reports</em> <strong>198</strong> (1990) 115–210, for the off-shell and gradient bookkeeping together.</li>
 <li>L. P. Kadanoff and G. Baym, <em>Quantum Statistical Mechanics</em> (Benjamin, 1962), for the equations whose collisionless part this article expands.</li>
-<li>J. E. Moyal's equation is treated systematically in C. Zachos, D. Fairlie and T. Curtright, <em>Quantum Mechanics in Phase Space</em> (World Scientific, 2005), chapters on the star product and its semiclassical expansion.</li>
+<li>C. Zachos, D. Fairlie and T. Curtright, <em>Quantum Mechanics in Phase Space</em> (World Scientific, 2005), for the star product's systematic treatment and its semiclassical expansion.</li>
 <li>P. Carruthers and F. Zachariasen, "Quantum collision theory with phase-space distributions," <em>Reviews of Modern Physics</em> <strong>55</strong> (1983) 245–285, for the phase-space reading of the quantum force.</li>
 <li>The companion articles: <a href="the-wigner-function-in-biquaternionic-form.html">The Wigner Function in Biquaternionic Form</a>, <a href="the-schwinger-keldysh-formalism-in-biquaternionic-form.html">The Schwinger–Keldysh Formalism in Biquaternionic Form</a>, <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein–Gordon Equation in Biquaternionic Form</a>, and <a href="the-equation-of-state-in-biquaternion-form.html">The Equation of State in Biquaternion Form</a>.</li>
 </ul>

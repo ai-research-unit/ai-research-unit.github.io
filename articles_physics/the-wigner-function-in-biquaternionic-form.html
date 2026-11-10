@@ -80,19 +80,19 @@ $$</p>
 <p><strong>Where the standard function already lives in the corpus.</strong> <a href="the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html">The Bell Inequality for Continuous Variables in Biquaternionic Form</a> uses the $x$–$p$ Wigner function of a two-mode squeezed state, in the normalisation in which one mode has $\int W\,d^{2}\alpha=\tfrac12$ and the vacuum is $\pi^{-1}\exp(-2\lvert\alpha\rvert^{2})$. That is the same function this article defines, in a phase-space variable $\alpha$ that absorbs the mass and the frequency; the corpus's normalisation there is the one in which $d^{2}\alpha=dq\,dp/2$ with $\hbar=1$. <strong>This article keeps $\hbar$ explicit and uses the three-dimensional normalisation $\int d^{3}p\,\tilde W_\Xi=\rho_{\mathrm{num}}$</strong>, which is the normalisation the fluid articles need. The relation between the two normalisations is a constant and is recorded in the notation table.</p>
 <h2 id="the-standard-function-stated-first">The Standard Function, Stated First</h2>
 <h3 id="definition-and-normalisation">Definition and normalisation</h3>
-<p><strong>The Wigner function of a wave function is the Fourier transform of the density matrix in the relative coordinate.</strong> For a complex wave function $\psi$ on $\mathbb{R}^{3}$,</p>
+<p><strong>The Wigner function of a wave function is the Fourier transform of the density matrix in the relative coordinate.</strong> For a complex-valued field $\Xi$ on $\mathbb{R}^{3}$ — the central case of the corpus's field, in which the vector part is zero —</p>
 <p>$$
 W(\vec r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\vec p\cdot\vec s/\hbar}\,
-\psi^{*}\!\left(\vec r-\frac{\vec s}{2}\right)\psi\!\left(\vec r+\frac{\vec s}{2}\right),
+\Xi^{*}\!\left(\vec r-\frac{\vec s}{2}\right)\Xi\!\left(\vec r+\frac{\vec s}{2}\right),
 $$</p>
 <p>and the conventions are worth stating because three of them are in circulation and they differ by signs and factors of two. This article takes:</p>
 <ul>
 <li>the relative coordinate $\vec s$ enters with a <strong>half</strong> offset, so that the two field arguments are symmetric about $\vec r$;</li>
 <li>the kernel is $e^{-i\vec p\cdot\vec s/\hbar}$ with the <strong>momentum</strong> $\vec p$ as the transform variable, so that a plane wave of momentum $\vec p_0$ is concentrated at $\vec p=\vec p_0$ and not at $-\vec p_0$;</li>
 <li>the conjugate field is the one at $\vec r-\vec s/2$, so that the ordering of the two arguments is fixed once and for all;</li>
-<li>the normalisation is $(2\pi\hbar)^{-3}$, so that $\int d^{3}p\,W=\lvert\psi\rvert^{2}$ and $\int d^{3}r\,d^{3}p\,W=1$.</li>
+<li>the normalisation is $(2\pi\hbar)^{-3}$, so that $\int d^{3}p\,W=\Xi^{*}\Xi$ and $\int d^{3}r\,d^{3}p\,W=1$.</li>
 </ul>
-<p><strong>The third and second conventions must be consistent, and the cost of getting them wrong is a sign in the momentum.</strong> A definition that pairs $e^{-i\vec p\cdot\vec s/\hbar}$ with $\psi^{*}(\vec r+\vec s/2)\psi(\vec r-\vec s/2)$ is internally consistent but concentrates a plane wave of momentum $\vec p_0$ at $\vec p=-\vec p_0$; the error is invisible for a real wave function, which is exactly the case that cannot catch it. The check is the plane wave, and it is the first thing to run on any implementation. <strong>This article's definition was checked this way</strong>: with the convention above, a packet of mean momentum $p_0$ has its Wigner distribution centred at $p_0$, and the reverse convention puts it at $-p_0$.</p>
+<p><strong>The third and second conventions must be consistent, and the cost of getting them wrong is a sign in the momentum.</strong> A definition that pairs $e^{-i\vec p\cdot\vec s/\hbar}$ with $\Xi^{*}(\vec r+\vec s/2)\Xi(\vec r-\vec s/2)$ is internally consistent but concentrates a plane wave of momentum $\vec p_0$ at $\vec p=-\vec p_0$; the error is invisible for a real wave function, which is exactly the case that cannot catch it. The check is the plane wave, and it is the first thing to run on any implementation. <strong>This article's definition was checked this way</strong>: with the convention above, a packet of mean momentum $p_0$ has its Wigner distribution centred at $p_0$, and the reverse convention puts it at $-p_0$.</p>
 <h3 id="what-it-is-and-what-it-is-not">What it is, and what it is not</h3>
 <p><strong>The Wigner function is a real function that behaves like a phase-space density without being one.</strong> Three facts, all standard:</p>
 <ol>
@@ -159,11 +159,11 @@ $$</p>
 <h3 id="the-temporal-slot">The temporal slot</h3>
 <p><strong>The temporal moment carries the factor $i$ that the element's temporal slot carries, and the statement is clean once the $i$ is put in the right place.</strong> With $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$,</p>
 <p>$$
-\int d^{3}p\;\frac{E}{c}\,\tilde W_\Xi=\frac{E}{c}\,\rho_{\mathrm{num}}=m\,c\,\rho_{\mathrm{num}},
+\int d^{3}p\;\frac{E}{c}\,\tilde W_\Xi=\frac{E}{c}\,\rho_{\mathrm{num}},
 \qquad
-m\,J_{\Phi,t}=m\,ic\,\rho_{\mathrm{num}}\cdot\frac{E}{mc^{2}}\cdot\frac{mc^{2}}{E}=i\,m\,c\,\rho_{\mathrm{num}},
+J_{\Phi,t}=ic\gamma\rho_{\mathrm{num}}=\frac{iE}{mc^{2}}\,c\,\rho_{\mathrm{num}}=\frac{iE}{mc}\,\rho_{\mathrm{num}},
 $$</p>
-<p>where $J_{\Phi,t}=ic\rho$ with $\rho=\rho_{\mathrm{num}}E/(mc^{2})$ is the polar-form article's temporal component. So</p>
+<p>where $\gamma=E/(mc^{2})$ is the polar-form article's boost factor, so that $mJ_{\Phi,t}=iE\rho_{\mathrm{num}}/c$ and the moment and the current's temporal slot differ by the factor $-i$. So</p>
 <p>$$
 \int d^{3}p\;\frac{E}{c}\,\tilde W_\Xi=-i\,m\,J_{\Phi,t},
 $$</p>
@@ -184,7 +184,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\max\bigl\lvert\int dp\,W-\lvert\psi\rvert^{2}\bigr\rvert$</td>
+<td>$\max\bigl\lvert\int dp\,W-\Xi^{*}\Xi\bigr\rvert$</td>
 <td>$7.1\times10^{-7}$</td>
 </tr>
 <tr>
@@ -192,7 +192,7 @@ $$</p>
 <td>$0.999\,999\,1$</td>
 </tr>
 <tr>
-<td>$\max\bigl\lvert\int dp\,p\,W-\lvert\psi\rvert^{2}p_0\bigr\rvert$</td>
+<td>$\max\bigl\lvert\int dp\,p\,W-\Xi^{*}\Xi\,p_0\bigr\rvert$</td>
 <td>$4.0\times10^{-6}$</td>
 </tr>
 <tr>
@@ -391,6 +391,10 @@ $$</p>
 <tr>
 <td>$\tilde\Xi^{*}$</td>
 <td>Its conjugate</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>The central case of the field: complex-valued, vector part zero</td>
 </tr>
 <tr>
 <td>$\lVert\tilde\Xi\rVert^{2}$</td>
