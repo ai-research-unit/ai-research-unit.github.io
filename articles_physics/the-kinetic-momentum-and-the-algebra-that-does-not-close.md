@@ -10,7 +10,7 @@ A third statement follows, and it is the reason for the title. The angular momen
 
 The article argues by contrast. It names the textbook objection in its own section and answers it. It then records what the failure costs: the angular momentum of the Landau problem that is conserved is the canonical one and not the mechanical one, which is why the companion article builds its conserved quantity from $\vec p$.
 
-The framework enters in three places and nowhere else. It supplies the unit $\hbar=\frac{m\,c}{k_m}$, the centrality of the field strength, and the separation between the internal algebra and the envelope. It does not supply the bracket, which is ordinary operator algebra, and it does not predict the anomaly term, which is the standard magnetic torque.
+The framework enters in three places and nowhere else. It supplies the unit $\hbar$, the centrality of the field strength, and the separation between the internal algebra and the envelope. It does not supply the bracket, which is ordinary operator algebra, and it does not predict the anomaly term, which is the standard magnetic torque.
 
 The companion articles supply the pieces:
 - Companion article *Landau Levels in Biquaternionic Form*, for the mechanical momentum, the central field-strength commutator and the guiding centre.
@@ -19,7 +19,7 @@ The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the rotation bracket and the cross product as a commutator.
 - Companion article *Gauge Transformations of the First and Second Kind in Biquaternionic Form*, for the central phase and its transformation law.
 
-**Notation, once.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$ and $\vec e_j^2=-e_t$. The unit of action is $\hbar=\frac{m\,c}{k_m}$, so $i\hbar=\frac{m\,c\,i}{k_m}$. Position is $\vec r=(r_x,r_y,r_z)$. The canonical momentum is $p_\eta=-i\hbar\,\partial/\partial r_\eta$. The mechanical momentum is $\pi_\eta=p_\eta-ϙA_\eta$ and its algebra element is $\tilde\pi_\eta=\pi_\eta\,e_t$. The charge is $ϙ$ in coulomb. Units are SI throughout, as *Physics Units and Common Elements Conventions* fixes them.
+**Notation, once.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$ and $\vec e_j^2=-e_t$. The unit of action is $\hbar$, so $i\hbar$ is that unit times $i$. Position is $\vec r=(r_x,r_y,r_z)$. The canonical momentum is $p_\eta=-i\hbar\,\partial/\partial r_\eta$. The mechanical momentum is $\pi_\eta=p_\eta-ϙA_\eta$ and its algebra element is $\tilde\pi_\eta=\pi_\eta\,e_t$. The charge is $ϙ$ in coulomb. Units are SI throughout, as *Physics Units and Common Elements Conventions* fixes them.
 
 ## The Two Momenta
 
@@ -49,7 +49,7 @@ The state carries the compensating central phase. The companion article on gauge
 The canonical commutation relation, in the framework's units, is
 
 $$
-[r_j,p_\eta]=i\hbar\,\delta_{j\eta},\qquad i\hbar=\frac{m\,c\,i}{k_m}.
+[r_j,p_\eta]=i\hbar\,\delta_{j\eta},\qquad i\hbar=i\,\hbar.
 $$
 
 The mechanical momentum satisfies the same relation, and the reason is one line. The vector potential is a function of position, so it commutes with position:
@@ -93,7 +93,7 @@ The right-hand side is the antisymmetrised derivative of the shift. It vanishes 
 Minimal coupling takes $f_\eta=-ϙA_\eta$ and the right-hand side becomes the field strength:
 
 $$
-[\pi_j,\pi_\eta]=i\hbar\,ϙ\,\varepsilon_{j\eta l}B_l=\frac{m\,c\,i\,ϙ}{k_m}\,\varepsilon_{j\eta l}B_l .
+[\pi_j,\pi_\eta]=i\hbar\,ϙ\,\varepsilon_{j\eta l}B_l=i\,\hbar\,ϙ\,\varepsilon_{j\eta l}B_l .
 $$
 
 This is the commutator the companion article on Landau levels builds the whole problem on. Here it carries a different reading: it is the exact measure of how far minimal coupling is from a relabelling.
@@ -140,7 +140,7 @@ The identity was checked numerically in the symmetric gauge on a spectral grid: 
 With $\vec B$ uniform, the bracket of the kinetic angular momentum is
 
 $$
-\boxed{\;[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr)\;}
+\boxed{\;[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\hbar\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr)\;}
 $$
 
 The bracket is the rotation bracket plus one term. The extra term carries no derivative, is quadratic in position, and vanishes with the field.
@@ -153,9 +153,9 @@ $$
 
 Write $\tilde L_{\mathrm{kin},i}=\varepsilon_{iab}r_a\pi_b e_t$ and use $[AB,C]=A[B,C]+[A,C]B$ on the four contractions. The two rules above, with $\vec B$ taken uniform so that it commutes with $\vec r$, reduce the contractions to the boxed form. The uniform-field hypothesis is what makes the statement exact; a position-dependent field adds gradient terms that the bracket above does not carry.
 
-**The check.** The reduction was verified symbolically on the word algebra generated by $\vec r$ and $\vec\pi$ with the two contraction rules, with $\hbar$, $ϙ$ and $\vec B$ kept symbolic. The free case $ϙ\to0$ returns $[\tilde L_{\mathrm{orb},i},\tilde L_{\mathrm{orb},j}]=\frac{m\,c\,i}{k_m}\varepsilon_{ij\eta}\tilde L_{\mathrm{orb},\eta}$ exactly, which validates the engine before it is used. The boxed form then returns a residual of zero on all three cyclic pairs.
+**The check.** The reduction was verified symbolically on the word algebra generated by $\vec r$ and $\vec\pi$ with the two contraction rules, with $\hbar$, $ϙ$ and $\vec B$ kept symbolic. The free case $ϙ\to0$ returns $[\tilde L_{\mathrm{orb},i},\tilde L_{\mathrm{orb},j}]=i\,\hbar\varepsilon_{ij\eta}\tilde L_{\mathrm{orb},\eta}$ exactly, which validates the engine before it is used. The boxed form then returns a residual of zero on all three cyclic pairs.
 
-The same statement was verified numerically in the symmetric gauge, on a $64^3$ spectral grid with $\hbar$, $c$ and $ϙ$ at their SI values and $B=1$ T. The residual of $[\tilde L_{\mathrm{kin},x},\tilde L_{\mathrm{kin},y}]$ against $\frac{m\,c\,i}{k_m}(\tilde L_{\mathrm{kin},z}+ϙ\,r_z(\vec r\cdot\vec B))$ is $6.4\times10^{-9}$ relative, at the discretisation floor of the grid, which the elementary commutator $[r_x,p_x]=i\hbar$ reproduces to $1.2\times10^{-8}$ on the same grid. Dropping the extra term fails the same comparison by $173$ per cent.
+The same statement was verified numerically in the symmetric gauge, on a $64^3$ spectral grid with $\hbar$, $c$ and $ϙ$ at their SI values and $B=1$ T. The residual of $[\tilde L_{\mathrm{kin},x},\tilde L_{\mathrm{kin},y}]$ against $i\,\hbar(\tilde L_{\mathrm{kin},z}+ϙ\,r_z(\vec r\cdot\vec B))$ is $6.4\times10^{-9}$ relative, at the discretisation floor of the grid, which the elementary commutator $[r_x,p_x]=i\hbar$ reproduces to $1.2\times10^{-8}$ on the same grid. Dropping the extra term fails the same comparison by $173$ per cent.
 
 ## Why It Does Not Close
 
@@ -229,7 +229,7 @@ The two statements are one statement seen twice. The field strength is central b
 
 ## What the Framework Supplies
 
-**Supplies.** The unit $\hbar=\frac{m\,c}{k_m}$, so that every bracket is measured in one unit and no scale is fixed by the algebra. The centrality of the field strength, which is what makes $[\pi_j,\pi_\eta]$ a central multiple of $e_t$; the anomaly is central for a different reason, being a real function of position times $e_t$ with no quaternion direction. The separation between the internal algebra and the envelope, without which the failure would be read as a failure of $\mathbb{B}$.
+**Supplies.** The unit of action $\hbar$, so that every bracket is measured in one unit and no scale is fixed by the algebra. The centrality of the field strength, which is what makes $[\pi_j,\pi_\eta]$ a central multiple of $e_t$; the anomaly is central for a different reason, being a real function of position times $e_t$ with no quaternion direction. The separation between the internal algebra and the envelope, without which the failure would be read as a failure of $\mathbb{B}$.
 
 **Transcribes.** The two momenta, the two angular momenta, the bracket, the non-closure, the conservation statements. All of it is ordinary operator algebra in the notation of the corpus.
 
@@ -239,12 +239,12 @@ The two statements are one statement seen twice. The field strength is central b
 
 ## Summary
 
-Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-ϙ\vec A$, and the canonical commutation relation accepts the replacement without noticing it. The bracket of position with momentum is unchanged, because the vector potential is a function of position and commutes with position; more generally, any shift of the momentum by a function of position leaves that bracket untouched, so the relation fixes the momentum only up to a function of position. The bracket of two momenta is not blind: it vanishes for the canonical momentum, is the antisymmetrised derivative of the shift for a general one, and equals $\frac{m\,c\,i\,ϙ}{k_m}\varepsilon_{j\eta l}B_l$ for minimal coupling.
+Minimal coupling replaces $\vec p$ by $\vec\pi=\vec p-ϙ\vec A$, and the canonical commutation relation accepts the replacement without noticing it. The bracket of position with momentum is unchanged, because the vector potential is a function of position and commutes with position; more generally, any shift of the momentum by a function of position leaves that bracket untouched, so the relation fixes the momentum only up to a function of position. The bracket of two momenta is not blind: it vanishes for the canonical momentum, is the antisymmetrised derivative of the shift for a general one, and equals $i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ for minimal coupling.
 
 The kinetic angular momentum $\tilde L_{\mathrm{kin},i}=\varepsilon_{ij\eta}r_j\pi_\eta e_t$ inherits the difference. With uniform $\vec B$,
 
 $$
-[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr),
+[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\hbar\,\varepsilon_{ij\eta}\Bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta\,(\vec r\cdot\vec B)\Bigr),
 $$
 
 a rotation bracket plus a multiplication operator quadratic in position. The three components do not span a Lie algebra, because the extra term is not a first-order differential operator. Jacobi holds; closure fails. No rescaling, redefinition or gauge choice repairs it, and the failure vanishes exactly with the field.
@@ -259,7 +259,7 @@ The conserved angular momentum of the Landau problem is the canonical one. The k
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_j^2=-e_t$ |
-| $\hbar=\frac{m\,c}{k_m}$ | Unit of action; $i\hbar=\frac{m\,c\,i}{k_m}$ |
+| $\hbar$ | Unit of action; $i\hbar$ is its imaginary multiple |
 | $ϙ$ | Electric charge, in coulomb |
 | $\vec r=(r_x,r_y,r_z)$ | Position |
 | $p_\eta=-i\hbar\,\partial/\partial r_\eta$ | Canonical momentum |
@@ -267,11 +267,11 @@ The conserved angular momentum of the Landau problem is the canonical one. The k
 | $\tilde\pi_\eta=\pi_\eta\,e_t$ | Mechanical momentum as an algebra element |
 | $\vec A$ | Vector potential; $\vec B=\nabla\times\vec A$ |
 | $[r_j,\pi_\eta]=i\hbar\,\delta_{j\eta}$ | Position–momentum bracket; holds for both momenta |
-| $[\pi_j,\pi_\eta]=\frac{m\,c\,i\,ϙ}{k_m}\varepsilon_{j\eta l}B_l$ | Field-strength commutator; central |
+| $[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ | Field-strength commutator; central |
 | $\tilde L_{\mathrm{orb},i}=\varepsilon_{ij\eta}r_jp_\eta e_t$ | Canonical angular momentum |
 | $\tilde L_{\mathrm{kin},i}=\varepsilon_{ij\eta}r_j\pi_\eta e_t$ | Kinetic angular momentum |
 | $\vec L_{\mathrm{kin}}=\vec L_{\mathrm{orb}}-ϙ\,\vec r\times\vec A$ | The two angular momenta |
-| $[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=\frac{m\,c\,i}{k_m}\varepsilon_{ij\eta}\bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta(\vec r\cdot\vec B)\bigr)$ | The bracket that does not close |
+| $[\tilde L_{\mathrm{kin},i},\tilde L_{\mathrm{kin},j}]=i\,\hbar\varepsilon_{ij\eta}\bigl(\tilde L_{\mathrm{kin},\eta}+ϙ\,r_\eta(\vec r\cdot\vec B)\bigr)$ | The bracket that does not close |
 | $\frac{ϙB}{2}(r_x^2+r_y^2)e_t$ | Anomaly in the symmetric gauge, per component |
 | $H=\frac{1}{2m}\sum_\eta\pi_\eta^2$ | Hamiltonian of a charge in a magnetic field |
 | $[\tilde L_{\mathrm{orb},z},H]=0$ | Canonical angular momentum is conserved |

@@ -4,7 +4,7 @@
 
 **The local thermal state of the fluid is three fields at an event — a density, a pressure and a flow — read at the pointwise temperature that [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html) established.** This article writes those three fields in the corpus's letters, states what the element form of the flow does and does not allow, and states what a *local equation of state* must satisfy for the three fields to determine each other. It does not argue that a local temperature exists; that is the gate article's verdict and this article takes it as given.
 
-**The verdict is used, and not reopened.** The thermal structure lives on the field of states as a pointwise *period*, not as a pointwise metric; the rigidity condition is satisfied by the pointwise temperature in the local frame; and the flow is an element with a low index. **Three sentences, and the article proceeds from them.** A reader who wants the argument for them, with the qualification about a medium whose local complex structure varies, goes to the gate article; a reader who wants the construction of the period goes to [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
+**The verdict is used, and not reopened.** The thermal structure lives on the field of states as a pointwise *period*, not as a pointwise metric; the rigidity condition is satisfied by the pointwise temperature in the local frame wherever the medium is uniform there, and fails by the Tolman gradient where it is not; and the flow is an element with a low index. **Three sentences, and the article proceeds from them.** A reader who wants the argument for them, with the qualification about a medium whose local complex structure varies, goes to the gate article; a reader who wants the construction of the period goes to [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html).
 
 **The article's new content is the third section.** The first two sections are the state's data and the flow's element form, and they are largely a spelling of standard relativistic fluid dynamics. The third section is where the article earns its place: an equation of state that is *local* is not the statement that the pressure is a function of the density, but the statement that the pressure at an event is a function of the state's data at that event — and that requirement has a sharp content, which is what makes it checkable and what makes it fail when the flow is not rigid.
 
@@ -43,7 +43,7 @@ with $p_{\mathrm{th}}$ the part that a thermal state has at the local temperatur
 **The temperature enters as the local period, and the corpus writes it as $\beta(x)$, a length at each event.** From the local thermal structure article,
 
 $$
-\beta(x)=\frac{m\,c}{k_m\,k_{B}\,T(x)},
+\beta(x)=\frac{\hbar}{k_{B}\,T(x)},
 \qquad
 T(x)\,c(x)=\text{const}
 $$
@@ -150,7 +150,7 @@ $$
 
 the first being Euler's relation and the second Gibbs–Duhem's. **Both are quoted; both are standard; and both are the local statement**, in the sense that every symbol carries an $x$ that is suppressed for readability.
 
-**The temperature appears as the period, and the derivative has to be converted.** Since $\beta(x)=A/T(x)$ with $A=mc/(k_m k_B)$ a constant, $dT=-(T/\beta)\,d\beta$, so the Gibbs–Duhem relation reads in the corpus's variable as
+**The temperature appears as the period, and the derivative has to be converted.** Since $\beta(x)=A/T(x)$ with $A=\hbar/k_B$ a constant, $dT=-(T/\beta)\,d\beta$, so the Gibbs–Duhem relation reads in the corpus's variable as
 
 $$
 \frac{\partial p_{\mathrm{th}}}{\partial\beta}=-\frac{\beta}{T}\,s_{\mathrm{ent}}
@@ -229,7 +229,7 @@ with $Q_{\mathrm{qnt}}$ the quantum potential and its minus sign, the pressure a
 
 ## Summary
 
-The local thermal state of the fluid is the triple $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=mc/(k_mk_BT(x))$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every component written with a low index and never raised. The temperature is a field at each event — a pointwise period, not a pointwise metric — and the article uses the gate article's verdict without reopening it.
+The local thermal state of the fluid is the triple $\bigl(\rho_{\mathrm{num}}(x),p_{\mathrm{th}}(x),\tilde V_\Phi(x)\bigr)$ at the pointwise period $\beta(x)=\hbar/(k_BT(x))$, with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, and $\tilde V_\Phi=\tilde P_\Phi/m$, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, every component written with a low index and never raised. The temperature is a field at each event — a pointwise period, not a pointwise metric — and the article uses the gate article's verdict without reopening it.
 
 The flow's gradient decomposes into $\theta=\partial_\mu v_{\Phi,\mu}$, $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ and $a_{\Phi,\nu}=v_{\Phi,\mu}\partial_\mu v_{\Phi,\nu}$; the rigidity condition $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$ makes the first two vanish and leaves the vorticity free, so rigid flows may rotate.
 
@@ -252,7 +252,7 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |
 | $\mu_{\mathrm{chm}}$ | Chemical potential |
-| $\beta(x)=\frac{m\,c}{k_m\,k_{B}\,T(x)}$ | Local inverse temperature, a length |
+| $\beta(x)=\frac{\hbar}{k_{B}\,T(x)}$ | Local inverse temperature, a length |
 | $T(x)$ | Local temperature |
 | $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |

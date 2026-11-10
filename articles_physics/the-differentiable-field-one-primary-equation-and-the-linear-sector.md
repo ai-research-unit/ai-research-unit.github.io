@@ -27,7 +27,7 @@ The corpus is not uniform about what it postulates, and the distinction between 
 | The Dirac equation | transcribed into the algebra | *The Dirac Equation in Biquaternionic Form* |
 | The Maxwell equations | transcribed, or obtained from a biquaternion wave equation | *Nonlinear Maxwell Equations in Biquaternionic Form* |
 | The gauge principle | postulated, with a ceiling on the group | *The Gauge Principle in Biquaternionic Form* |
-| $\frac{m\,c}{k_m}$ | imported, nowhere derived | — |
+| $\hbar$ | imported, nowhere derived | — |
 
 The pattern is visible in one line: **the corpus derives the arena and imports the dynamics.** The interval, the group, the cone and the state space follow from the algebra; the equations of motion are written into it. The derivation route is an attempt to close that gap, and it closes it from the dynamics side rather than the kinematic one.
 
@@ -113,7 +113,7 @@ $$
 
 The two terms scale differently, so a solution of the self-duality relation $F=iF^{*}$ survives a rescaling only for $\lambda=1$ — or for a commutator term that is itself (anti)self-dual in the same sense, which a generic potential does not have. The admissible amplitudes are isolated, not continuous.
 
-**That is where a fixed amplitude can come from, and it is not a quantum assumption.** A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations carry a quadratic term can, and here does: the amplitude of the connection is pinned by the self-duality condition rather than left free, and the pinning is a property of the algebra's product and not of $\frac{m\,c}{k_m}$. Nothing in the algebra knows about $\frac{m\,c}{k_m}$.
+**That is where a fixed amplitude can come from, and it is not a quantum assumption.** A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations carry a quadratic term can, and here does: the amplitude of the connection is pinned by the self-duality condition rather than left free, and the pinning is a property of the algebra's product and not of $\hbar$. Nothing in the algebra knows about $\hbar$.
 
 The step from a fixed amplitude to a **discrete** charge is the programme's, and it is a further claim, not a corollary of the scaling identity. The programme's value $q=N/4$, with $N$ an integer winding number — the source's letter, colliding with the norm's $N$ above — is stated there with two reasons of its own, one topological and one dynamical, and with a pointer to a general theorem in its later papers; *The Algebrodynamical Programme*, §*Particle-Like Solutions and the Self-Quantized Charge*, records it with that attribution.
 

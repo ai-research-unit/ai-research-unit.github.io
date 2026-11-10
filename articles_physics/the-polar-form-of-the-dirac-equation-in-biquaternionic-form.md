@@ -171,7 +171,7 @@ $$
 \tilde\nabla\alpha
 =e_t\frac{\partial\alpha}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\alpha}{\partial R_\eta}
 =-i\frac{\partial\alpha}{\partial r_{t}^{\prime}}e_t+\nabla\alpha
-=i\frac{E}{c}e_t+\vec p
+=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
 =\tilde K_{\Phi},
 $$
 

@@ -69,10 +69,10 @@ with real coefficient functions $\mathcal{A}_{\mu a}$. The parent's covariant de
 
 $$
 D_\mu = \partial/\partial R_\mu + i\kappa\,\mathcal{A}_\mu, \qquad D = \tilde{\nabla} + i\kappa\,\mathcal{A},
-\qquad \kappa =\frac{k_m\,ϙ}{m\,c},
+\qquad \kappa =\frac{ϙ}{\hbar},
 $$
 
-acting on a matter field $\tilde{Ξ}_{\mathrm{sp}}$ by left multiplication, $D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}_{\mathrm{sp}}$. The coupling $\kappa$ plays the role of the abelian $\frac{k_m\,i\,ϙ}{m\,c}$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
+acting on a matter field $\tilde{Ξ}_{\mathrm{sp}}$ by left multiplication, $D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}_{\mathrm{sp}}$. The coupling $\kappa$ plays the role of the abelian $\frac{i\,ϙ}{\hbar}$; the factor $i$ is kept explicit, as in the parent, so that the reality discussion below can be stated cleanly.
 
 Now let the field transform by a **local, non-central** element of the group,
 
@@ -358,7 +358,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $a,b,c$ | colour indices of the gauge algebra, written low |
 | $\tilde Q(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
-| $\kappa =\frac{k_m\,ϙ}{m\,c}$ | Coupling |
+| $\kappa =\frac{ϙ}{\hbar}$ | Coupling |
 | $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative, $D=\tilde{\nabla}+i\kappa\mathcal{A}$ |
 | $\mathcal{A}_{\mathrm g,\mu} = \tilde Q\mathcal{A}_\mu \tilde Q^{-1} + \frac{i}{\kappa}(\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ | Non-abelian transformation of the connection |
 | $B_\mu = (\partial/\partial R_\mu \tilde Q)\tilde Q^{-1}$ | Maurer–Cartan form; $\partial/\partial R_\mu B_\nu - \partial/\partial R_\nu B_\mu = [B_\mu,B_\nu]$ |
@@ -376,7 +376,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 ## Further Reading
 
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian connection, its curvature-commutator identity, its gauge-orbit analysis, and the gap this article takes up.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu +\frac{k_m\,i\,ϙ}{m\,c}[A_\mu,A_\nu]$ that is made exact here.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection and the abelian transformation law, and the preview $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu +\frac{i\,ϙ}{\hbar}[A_\mu,A_\nu]$ that is made exact here.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential, field strength and gauge scalar that the non-abelian construction generalizes.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian invariants and the biquaternion norm, whose non-abelian extension is posed as an open question.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the charge operator $Ϙ$, the setting for the matter-representation question.

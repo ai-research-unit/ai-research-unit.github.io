@@ -5,18 +5,18 @@
 A black hole formed by collapse is not black. A quantum field on the collapsing background is not in a vacuum at late times: an observer far from the horizon finds quanta whose distribution is thermal, at the **Hawking temperature**
 
 $$
-T =\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}},
+T =\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}},
 $$
 
-where $\kappa$ is the **surface gravity** of the horizon and $\frac{m\,c}{k_m}$, $c$, $k_B$ are the reduced Planck constant, the speed of light, and the Boltzmann constant. For the Schwarzschild horizon $\kappa=c^4/(4GM)$, so
+where $\kappa$ is the **surface gravity** of the horizon and $\hbar$, $c$, $k_B$ are the reduced Planck constant, the speed of light, and the Boltzmann constant. For the Schwarzschild horizon $\kappa=c^4/(4GM)$, so
 
 $$
-T_{\mathrm H} =\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}},
+T_{\mathrm H} =\frac{\hbar\,c^{3}}{8\,\pi\,G\,M\,k_{B}},
 $$
 
 inversely proportional to the mass. This article develops that statement in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles, and states precisely its relation to the Unruh effect.
 
-**The relation is an identity, not an analogy.** The Unruh effect and Hawking radiation are the *same* KMS statement seen in different coordinates. *The Unruh Effect in Biquaternionic Form* established that the Minkowski vacuum restricted to a Rindler wedge is a KMS state at inverse temperature $\beta=2\pi c/a$ with respect to the boost flow, where $a$ is the proper acceleration of the redshift-normalized boost; the temperature is $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$. Hawking radiation is that same statement for the vacuum of a collapsing background restricted to the exterior of a black-hole horizon, with respect to the horizon-generating Killing flow, at inverse temperature $\beta=2\pi c/\kappa$, where $\kappa$ is the horizon's surface gravity. The two differ in which coordinates the horizon is drawn in, not in the structure of the statement. The near-horizon region of any non-extremal horizon *is* a Rindler wedge to leading order, with Rindler acceleration equal to the surface gravity; that is the sense in which the Unruh effect and Hawking radiation are one result.
+**The relation is an identity, not an analogy.** The Unruh effect and Hawking radiation are the *same* KMS statement seen in different coordinates. *The Unruh Effect in Biquaternionic Form* established that the Minkowski vacuum restricted to a Rindler wedge is a KMS state at inverse temperature $\beta=2\pi c/a$ with respect to the boost flow, where $a$ is the proper acceleration of the redshift-normalized boost; the temperature is $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$. Hawking radiation is that same statement for the vacuum of a collapsing background restricted to the exterior of a black-hole horizon, with respect to the horizon-generating Killing flow, at inverse temperature $\beta=2\pi c/\kappa$, where $\kappa$ is the horizon's surface gravity. The two differ in which coordinates the horizon is drawn in, not in the structure of the statement. The near-horizon region of any non-extremal horizon *is* a Rindler wedge to leading order, with Rindler acceleration equal to the surface gravity; that is the sense in which the Unruh effect and Hawking radiation are one result.
 
 **The trap that hides the identity.** The quantity $a$ in the Unruh formula is a proper acceleration, and the temptation is to carry it over to the black-hole horizon by computing the proper acceleration of a static observer there. That quantity **diverges** at the horizon and is not the Hawking temperature's argument. What enters is the surface gravity $\kappa$, which is the *redshifted* acceleration, finite at the horizon. Section "The Schwarzschild Horizon and Its Surface Gravity" computes both, shows that $a(r)\,\sqrt{f}\to\kappa$ while $a(r)\to\infty$, and states the identification in a form that uses the divergent quantity nowhere. The Hawking temperature is the Unruh temperature of the near-horizon static observer, redshifted from the horizon to infinity; the divergence of the local Unruh temperature is exactly cancelled by the redshift.
 
@@ -87,7 +87,7 @@ $$
 a(r)\,\sqrt{f(r)} = \frac{c^2 \frac{df}{dr}(r)}{2} \;\xrightarrow[r\to r_s]{}\; \frac{c^2 \frac{df}{dr}(r_s)}{2} = \frac{c^2}{2r_s},
 $$
 
-which is finite. This product is the surface gravity in the acceleration normalization; it is computed next and used throughout. The divergence of $a(r)$ and the finiteness of $a(r)\sqrt f$ are the algebraic content of the statement that the Hawking temperature is the near-horizon Unruh temperature *redshifted to infinity*: the local Unruh temperature $\frac{m\,a\,r}{2\,k_m\,\pi\,k_{B}}$ grows without bound as the horizon is approached, the redshift factor $\sqrt f$ shrinks without bound, and their product is the finite Hawking temperature.
+which is finite. This product is the surface gravity in the acceleration normalization; it is computed next and used throughout. The divergence of $a(r)$ and the finiteness of $a(r)\sqrt f$ are the algebraic content of the statement that the Hawking temperature is the near-horizon Unruh temperature *redshifted to infinity*: the local Unruh temperature $\frac{\hbar\,a\,r}{2\,\pi\,c\,k_{B}}$ grows without bound as the horizon is approached, the redshift factor $\sqrt f$ shrinks without bound, and their product is the finite Hawking temperature.
 
 ### The Surface Gravity
 
@@ -112,21 +112,21 @@ $$
 which is the finite limit of $a(r)\sqrt f$ found above, and has the dimensions of an acceleration. The temperature formula of the Introduction uses this normalization,
 
 $$
-T =\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}} =\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}},
+T =\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}} =\frac{\hbar\,c^{3}}{8\,\pi\,G\,M\,k_{B}},
 $$
 
-while in the frequency normalization the same temperature reads $T=\frac{m\,c\,\kappa_{\omega}}{2\,k_m\,\pi\,k_{B}}$. The two normalizations are the only place a factor of $c$ can go wrong, and the article states which one is in use whenever $\kappa$ appears.
+while in the frequency normalization the same temperature reads $T=\frac{\hbar\,\kappa_{\omega}}{2\,\pi\,k_{B}}$. The two normalizations are the only place a factor of $c$ can go wrong, and the article states which one is in use whenever $\kappa$ appears.
 
 $\kappa$ is constant over the horizon — the zeroth law of black-hole mechanics — which is why a single temperature characterizes the whole surface despite the observer-dependent divergence of $a(r)$ along it.
 
 ### A Remark on the Unruh Value $\kappa_\omega=a/c$
 
-The sibling article's Unruh temperature is $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$ with $a$ the proper acceleration of the uniformly accelerated observer, and its surface gravity in the acceleration normalization is $\kappa=a$. In the frequency normalization the same Unruh value is $\kappa_\omega=a/c$. This is the sense in which the Unruh surface gravity may be quoted as $a/c$: it is the frequency-normalized value. With that understood, the Unruh statement and the Hawking statement have the *same* form,
+The sibling article's Unruh temperature is $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$ with $a$ the proper acceleration of the uniformly accelerated observer, and its surface gravity in the acceleration normalization is $\kappa=a$. In the frequency normalization the same Unruh value is $\kappa_\omega=a/c$. This is the sense in which the Unruh surface gravity may be quoted as $a/c$: it is the frequency-normalized value. With that understood, the Unruh statement and the Hawking statement have the *same* form,
 
 $$
-T =\frac{m\,c\,\kappa_{\omega}}{2\,k_m\,\pi\,k_{B}}\quad(\text{frequency normalization}),
+T =\frac{\hbar\,\kappa_{\omega}}{2\,\pi\,k_{B}}\quad(\text{frequency normalization}),
 \qquad
-T =\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}\quad(\text{acceleration normalization}),
+T =\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}\quad(\text{acceleration normalization}),
 $$
 
 with $\kappa_\omega=a/c$ for the accelerated observer and $\kappa_\omega=c^3/(4GM)$ for the Schwarzschild horizon. The identification is therefore not a similarity of formulas; it is the same formula applied to the same kind of object, the surface gravity of a horizon.
@@ -163,7 +163,7 @@ with $\kappa_\omega=c/(2r_s)$ the surface gravity in the frequency normalization
 
 ### The Same KMS Statement in Different Coordinates
 
-The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|r'_{t}|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$. The KMS condition is the parent's boundary relation $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ with the strip $0<\mathrm{Im}\,r'_t<\beta$.
+The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|r'_{t}|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$. The KMS condition is the parent's boundary relation $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ with the strip $0<\mathrm{Im}\,r'_t<\beta$.
 
 The Hawking statement is the same condition, stated on the same kind of flow. For the vacuum of a collapsing background — the **Unruh vacuum**, empty on past null infinity, or the **Hartle–Hawking vacuum**, regular on the horizon and thermal on both sides — restricted to the exterior region, the KMS condition holds with respect to the horizon-generating Killing flow $\partial/\partial r'_t$ at
 
@@ -181,7 +181,7 @@ The flow is the boost near the horizon established by the preceding subsection; 
 The identification can also be read locally, and this is the form that uses the divergence of $a(r)$ correctly. A static observer at radius $r$ has proper acceleration $a(r)=c^2\frac{df}{dr}/(2\sqrt f)$, which equals $\kappa/\sqrt{f(r)}$ at $r=r_s$ and is smaller elsewhere by the factor $(r_s/r)^2$. By the Unruh effect *as applied in the observer's local inertial frame*, the local temperature it registers is
 
 $$
-T_{\mathrm{loc}}(r) =\frac{m\,a\,r}{2\,k_m\,\pi\,k_{B}} \;\xrightarrow[r\to  r_s]{}\;\frac{\frac{m\,c\,\kappa}{k_m}}{2\pi c\,k_B\sqrt{f(r)}},
+T_{\mathrm{loc}}(r) =\frac{\hbar\,a\,r}{2\,\pi\,c\,k_{B}} \;\xrightarrow[r\to  r_s]{}\;\frac{\hbar\,\kappa}{2\pi c\,k_B\sqrt{f(r)}},
 $$
 
 which grows without bound as $r\to r_s$; the Tolman temperature $T_{\mathrm H}/\sqrt{f(r)}$ agrees with it at the horizon and is the expression that is exact for the Hartle–Hawking state at every $r$. The temperature seen at infinity is the local temperature **redshifted** by the factor $\sqrt{f(r)}$ (the Tolman relation), and
@@ -201,10 +201,10 @@ F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta) = F_{\tilde Q_1\tilde Q_2}(-r'_t),
 \qquad
 0<\mathrm{Im}\,r'_t<\beta,
 \qquad
-\beta=\frac{m\,c}{k_m\,k_{B}\,T},
+\beta=\frac{\hbar}{k_{B}\,T},
 $$
 
-and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{B}_{\Phi}$'s time coordinate is $i r'_t$, not an analytic continuation), and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\Delta$ is Hermitian, hence lies in the informational sector $\mathbb{B}_{\Psi}$. The temperature above is exactly $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{B}_{\Phi}$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{B}_{\Psi}$. This is the algebraic home the framework supplies: the *imaginary-time* structure of the thermal continuation is the material sector's own, and the *generator* of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.
+and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{B}_{\Phi}$'s time coordinate is $i r'_t$, not an analytic continuation), and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\Delta$ is Hermitian, hence lies in the informational sector $\mathbb{B}_{\Psi}$. The temperature above is exactly $\beta=\frac{\hbar}{k_{B}\,T}$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{B}_{\Phi}$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{B}_{\Psi}$. This is the algebraic home the framework supplies: the *imaginary-time* structure of the thermal continuation is the material sector's own, and the *generator* of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.
 
 ## What the Framework Carries and What It Imports
 
@@ -374,10 +374,10 @@ $$
 \frac{\hbar\omega}{k_B T},
 $$
 
-with $T=\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$; equivalently, in the frequency normalization $T=\frac{m\,c\,\kappa_{\omega}}{2\,k_m\,\pi\,k_{B}}$ and the exponent is $2\pi\omega/\kappa_\omega$. Thus the distribution
+with $T=\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$; equivalently, in the frequency normalization $T=\frac{\hbar\,\kappa_{\omega}}{2\,\pi\,k_{B}}$ and the exponent is $2\pi\omega/\kappa_\omega$. Thus the distribution
 
 $$
-n(\omega)=\frac{1}{\exp(\frac{m\,c\,\omega}{k_m\,k_{B}\,T})\mp1}
+n(\omega)=\frac{1}{\exp(\frac{\hbar\,\omega}{k_{B}\,T})\mp1}
 $$
 
 is Planckian at the temperature determined by the surface gravity, and the two normalizations of $\kappa$ reproduce it. The temperature is not put in at this stage: it was fixed earlier by the exponential $\exp(-\pi\omega/\kappa)$ from the horizon, and the geometric sums merely exhibit the distribution that exponential implies.
@@ -387,10 +387,10 @@ is Planckian at the temperature determined by the surface gravity, and the two n
 The ratio of the emission and absorption coefficients, equivalently the ratio of the negative- and positive-frequency parts, is
 
 $$
-\exp(-2\pi\omega/\kappa)=\exp(-\frac{m\,c\,\omega}{k_m\,k_{B}\,T}),
+\exp(-2\pi\omega/\kappa)=\exp(-\frac{\hbar\,\omega}{k_{B}\,T}),
 $$
 
-which is the **detailed-balance** relation of a thermal state and is the Fourier-space form of the KMS boundary relation $F(r'_t+i\beta)=F(-r'_t)$ at $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$. So the chain is: the horizon's branch point gives the exponential; the exponential gives the squeezed state; the squeezed state gives the geometric distribution; the distribution is the KMS/Planck one. Every link after the first is recomputed above; the first is the standard horizon-mode computation, and its result is the same analytic fact the sibling article derived in the correlator language. Thermality has been shown at each step, not asserted at the end.
+which is the **detailed-balance** relation of a thermal state and is the Fourier-space form of the KMS boundary relation $F(r'_t+i\beta)=F(-r'_t)$ at $\beta=\frac{\hbar}{k_{B}\,T}$. So the chain is: the horizon's branch point gives the exponential; the exponential gives the squeezed state; the squeezed state gives the geometric distribution; the distribution is the KMS/Planck one. Every link after the first is recomputed above; the first is the standard horizon-mode computation, and its result is the same analytic fact the sibling article derived in the correlator language. Thermality has been shown at each step, not asserted at the end.
 
 ## The Hawking Temperature
 
@@ -399,8 +399,8 @@ which is the **detailed-balance** relation of a thermal state and is the Fourier
 Collecting the results, the temperature of the radiation from a non-extremal horizon is
 
 $$
-T_{\mathrm H}=\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}
-=\frac{m\,c\,\kappa_{\omega}}{2\,k_m\,\pi\,k_{B}},
+T_{\mathrm H}=\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}
+=\frac{\hbar\,\kappa_{\omega}}{2\,\pi\,k_{B}},
 \qquad
 \kappa=\frac{c^2 \frac{df}{dr}(r_s)}{2}=\frac{c^4}{4GM},
 \qquad
@@ -410,7 +410,7 @@ $$
 and for Schwarzschild
 
 $$
-\boxed{\;T_{\mathrm H}=\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}}\;}.
+\boxed{\;T_{\mathrm H}=\frac{\hbar\,c^{3}}{8\,\pi\,G\,M\,k_{B}}\;}.
 $$
 
 ### Independent Check: the Euclidean Period
@@ -436,12 +436,12 @@ $$
 and then the Euclidean section is a smooth manifold with a compact imaginary-time direction of circumference $\beta=8\pi GM/c^3$. The corresponding temperature is
 
 $$
-T=\frac{m\,c}{k_m\,k_{B}\,\beta}=\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}},
+T=\frac{\hbar}{k_{B}\,\beta}=\frac{\hbar\,c^{3}}{8\,\pi\,G\,M\,k_{B}},
 $$
 
 in agreement with the surface-gravity route. The two computations are independent: one differentiates the metric function on the horizon, the other asks for the periodicity of the Euclidean section; that they agree is a check on the whole construction and not a restatement.
 
-This is also the point where the framework's intrinsic imaginary time does real work. The circumference $\beta$ is a period along the **imaginary time direction of $\mathbb{B}_{\Phi}$**, the direction of the $i r'_t$ coefficient; the parent's KMS strip has width $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, and the Euclidean regularity condition fixes that width from the metric alone. The framework does not produce the periodicity, but it is the sector in which the periodicity is expressed as a geometric property of the material coordinate rather than as an analytic continuation introduced by hand. This was checked on the explicit near-horizon expansion: $f=\rho^2/(4r_s^2)$ and the coefficient $c\tau/(2r_s)$ reproduce $\beta=8\pi GM/c^3=2\pi c/\kappa$ exactly.
+This is also the point where the framework's intrinsic imaginary time does real work. The circumference $\beta$ is a period along the **imaginary time direction of $\mathbb{B}_{\Phi}$**, the direction of the $i r'_t$ coefficient; the parent's KMS strip has width $\beta=\frac{\hbar}{k_{B}\,T}$, and the Euclidean regularity condition fixes that width from the metric alone. The framework does not produce the periodicity, but it is the sector in which the periodicity is expressed as a geometric property of the material coordinate rather than as an analytic continuation introduced by hand. This was checked on the explicit near-horizon expansion: $f=\rho^2/(4r_s^2)$ and the coefficient $c\tau/(2r_s)$ reproduce $\beta=8\pi GM/c^3=2\pi c/\kappa$ exactly.
 
 ### Independent Check: the Mass Scaling
 
@@ -469,7 +469,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 
 **Established (physics).**
 
-- The Hawking temperature $T=\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$, with $\kappa$ the surface gravity of the horizon; for Schwarzschild $\kappa=c^4/(4GM)$ and $T=\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}}$.
+- The Hawking temperature $T=\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$, with $\kappa$ the surface gravity of the horizon; for Schwarzschild $\kappa=c^4/(4GM)$ and $T=\frac{\hbar\,c^{3}}{8\,\pi\,G\,M\,k_{B}}$.
 - The near-horizon geometry of a non-extremal horizon is Rindler with acceleration equal to the surface gravity, and the Hawking temperature is the near-horizon Unruh temperature redshifted to infinity.
 - The Bogoliubov transformation between in and out modes, its consistency relations, and the particle number $\sum_i|\beta_{ji}|^2$ in the in-vacuum.
 - The exponential ratio $|\beta/\alpha|=\exp(-\pi\omega/\kappa)$ from the analyticity of the horizon modes, and the resulting Planck distribution; the Bose–Einstein and Fermi–Dirac forms at the same temperature.
@@ -514,13 +514,13 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 
 ## Summary
 
-A black hole formed by collapse radiates thermally at the Hawking temperature $T=\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$, where $\kappa$ is the surface gravity of the horizon; for Schwarzschild, $\kappa=c^2 \frac{df}{dr}(r_s)/2=c^4/(4GM)$ and $T=\frac{m\,c^{4}}{8\,k_m\,\pi\,G\,M\,k_{B}}$, inversely proportional to the mass.
+A black hole formed by collapse radiates thermally at the Hawking temperature $T=\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$, where $\kappa$ is the surface gravity of the horizon; for Schwarzschild, $\kappa=c^2 \frac{df}{dr}(r_s)/2=c^4/(4GM)$ and $T=\frac{\hbar\,c^{3}}{8\,\pi\,G\,M\,k_{B}}$, inversely proportional to the mass.
 
 The Unruh effect and Hawking radiation are the **same KMS statement seen in different coordinates**, not analogous phenomena. The Minkowski vacuum restricted to a Rindler wedge is KMS with respect to the boost flow at inverse temperature $2\pi c/a$; the vacuum of a collapsing background restricted to the exterior of a horizon is KMS with respect to the horizon-generating Killing flow at inverse temperature $2\pi c/\kappa$. The near-horizon region of a non-extremal horizon is a Rindler wedge with acceleration equal to the surface gravity, so Hawking radiation is the Unruh effect at the horizon's surface gravity, redshifted to infinity.
 
 The trap of confusing the proper acceleration with the surface gravity is stated and avoided: the static observer's proper acceleration $a(r)=c^2\frac{df}{dr}/(2\sqrt f)$ diverges at the horizon, while the redshifted product $a(r)\sqrt f=c^2\frac{df}{dr}/2=GM/r^2$ is finite and equals $\kappa$ at the horizon. The local Unruh temperature diverges; the redshift cancels it; the surface gravity is what remains.
 
-The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\beta_{ji}$ gives the particle number $\sum_i|\beta_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\omega u)=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\beta/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
+The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\beta_{ji}$ gives the particle number $\sum_i|\beta_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\omega u)=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\beta/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
 
 The biquaternion framework supplies the algebraic home for the effect — the material sector $\mathbb{B}_{\Phi}$ for the field and its intrinsic imaginary time, the informational sector $\mathbb{B}_{\Psi}$ for the Hermitian modular generator, the zero-divisor cone for the local light cone — and it transcribes the Hawking calculation rather than deriving it. It contains no black-hole geometry and no dynamics, and it gives no correction to the standard temperature. Hawking radiation has never been observed; no claim of observation is made.
 
@@ -544,8 +544,8 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $a(r)=c^2\frac{df}{dr}/(2\sqrt f)$ ($=\kappa/\sqrt f$ at $r=r_s$) | Static observer's proper acceleration (diverges at $r_s$) |
 | $\kappa=c^2\frac{df}{dr}(r_s)/2=c^4/(4GM)$ | Surface gravity, acceleration normalization |
 | $\kappa_\omega=\kappa/c=c^3/(4GM)$ | Surface gravity, frequency normalization |
-| $T_{\mathrm H}=\frac{m\,\kappa}{2\,k_m\,\pi\,k_{B}}$ | Hawking temperature |
-| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature |
+| $T_{\mathrm H}=\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$ | Hawking temperature |
+| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature |
 | $\rho$ | Proper distance from the horizon |
 | $u$, $U$ | Retarded and Kruskal null coordinates |
 | $a_i,a_i^\dagger$ | In-mode operators |

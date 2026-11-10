@@ -15,7 +15,7 @@ The findings are stated in advance.
 5. **The holonomy is a rotor.** The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\theta_{\mathrm{blc}}\,\vec u_x)$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.
 6. **The adiabatic Berry phase is the slow limit of the same holonomy.** Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
@@ -30,12 +30,12 @@ The companion articles supply the pieces:
 A state that evolves under a time-independent Hamiltonian $\tilde R_\Psi$ acquires the phase
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \exp(-\frac{k_m\,i}{m\,c^{2}}\tilde R_\Psi r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
+\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \exp(-\frac{i}{\hbar\,c}\tilde R_\Psi r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
 \qquad\text{so}\qquad
-\tilde{Ξ}_{\mathrm{sp}}(T) = \exp(-\frac{k_m\,i}{m\,c^{2}}E\,T)\,\tilde{Ξ}_{\mathrm{sp}}(0)
+\tilde{Ξ}_{\mathrm{sp}}(T) = \exp(-\frac{i}{\hbar\,c}E\,T)\,\tilde{Ξ}_{\mathrm{sp}}(0)
 $$
 
-for an eigenstate of energy $E$. The phase $-\frac{k_m}{m\,c^{2}}\int_0^T  E\,dr'_t$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde R_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde R_\Psi\rangle\,\frac{k_m\,dr'_{t}}{m\,c^{2}}$.
+for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar\,c}\int_0^T  E\,dr'_t$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde R_\Psi\rangle$, and the same statement holds with $\int_0^T\langle\tilde R_\Psi\rangle\,\frac{dr'_{t}}{\hbar\,c}$.
 
 The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.
 
@@ -44,7 +44,7 @@ The dynamical phase is not what this article is about. It is removed by a standa
 Let $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\tilde{Ξ}_{\mathrm{sp}}(T)\rangle = \exp(i\theta_{\mathrm{pha},\mathrm{tot}})|\tilde{Ξ}_{\mathrm{sp}}(0)\rangle$ for some real $\theta_{\mathrm{pha},\mathrm{tot}}$. Define
 
 $$
-\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{k_m}{m\,c^{2}}\int_0^T\langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|\tilde R_\Psi(r'_t)|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle\,dr'_t .
+\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|\tilde R_\Psi(r'_t)|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle\,dr'_t .
 $$
 
 This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the trace:
@@ -92,7 +92,7 @@ The formula has three immediate consequences. It is **reparametrisation invarian
 The cleanest exactly solvable case is the fixed field. Take the field along $\vec u_z$,
 
 $$
-\tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec e_z,
+\tilde R_\Psi = -\frac{\hbar\,\omega_{L}}{2}\,i\vec e_z,
 \qquad \omega_L = \gamma B > 0,
 $$
 
@@ -118,7 +118,7 @@ $$
 
 so the total phase is $\theta_{\mathrm{pha},\mathrm{tot}} = \pi$ and $\tilde{Ξ}_{\mathrm{sp}}(T) = -\tilde{Ξ}_{\mathrm{sp}}(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
 
-$$\frac{k_m}{m\,c^{2}}\int_0^T\langle\tilde R_\Psi\rangle\,dr'_t
+$$\frac{1}{\hbar\,c}\int_0^T\langle\tilde R_\Psi\rangle\,dr'_t
 = -\frac{\omega_L}{2}\cos\theta_0\,T = -\pi\cos\theta_0 .
 $$
 
@@ -169,7 +169,7 @@ $$
 \tilde{u} = \exp(-\frac{1}{2}\theta_{\mathrm{blc}}\,\vec u_x) = \cos\frac{\theta_{\mathrm{blc}}}{2}\,e_t - \sin\frac{\theta_{\mathrm{blc}}}{2}\,\vec u_x\;},
 $$
 
-for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{k_m\,i}{m\,c^{2}}\int\langle\tilde R_\Psi\rangle  dr'_t)$. The two faces are:
+for some axis $\vec u_x$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar\,c}\int\langle\tilde R_\Psi\rangle  dr'_t)$. The two faces are:
 
 - the **rotor** $\tilde{u}\in\mathbb{B}_{H}$, which rotates the Bloch vector and is observable through the orientation of the state;
 - the **central phase** $\exp(i\alpha)\in\mathbb{B}_{C}$, which multiplies the spinor and is observable only through interference with another amplitude.
@@ -196,14 +196,14 @@ $$
 \vec u_x(r'_t) = \left(\sin\theta_0\cos(\omega r'_t/c),\,-\sin\theta_0\sin(\omega r'_t/c),\,\cos\theta_0\right),
 $$
 
-with Hamiltonian $\tilde R_\Psi(r'_t) = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\,\vec u_x(r'_t)$ and $u_x(r'_t)_k\tilde S_{\Psi,\eta}$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, gives the static effective Hamiltonian
+with Hamiltonian $\tilde R_\Psi(r'_t) = -\frac{\hbar\,\omega_{L}}{2}i\,\vec u_x(r'_t)$ and $u_x(r'_t)_k\tilde S_{\Psi,\eta}$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$, gives the static effective Hamiltonian
 
 $$
-\tilde{R}_{\Psi,R} = \tilde u_{\mathrm r}^{*}\tilde R_\Psi\tilde u_{\mathrm r} -\frac{m\,c\,i\,\tilde{u}_{\mathrm r}^{*}}{k_m}\partial/\partial r'_t\tilde u_{\mathrm r}
-= -\frac{m\,c}{2\,k_m}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
+\tilde{R}_{\Psi,R} = \tilde u_{\mathrm r}^{*}\tilde R_\Psi\tilde u_{\mathrm r} -i\,\hbar\,\tilde{u}_{\mathrm r}^{*}\partial/\partial r'_t\tilde u_{\mathrm r}
+= -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
 $$
 
-which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{R}_{\Psi,R} = -\frac{m\,c}{2\,k_m}\,i\,h_{\mathrm{eff},k}\vec e_\eta$ with
+which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{R}_{\Psi,R} = -\frac{\hbar}{2}\,i\,h_{\mathrm{eff},k}\vec e_\eta$ with
 
 $$
 \vec h_{\mathrm{eff}} = \left(\omega_L\sin\theta_0,\;0,\;\omega_L\cos\theta_0-\omega\right),
@@ -257,7 +257,7 @@ $$
 
 one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$.
 
-The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{k_m}{m\,c^{2}}\int_0^T\langle\tilde R_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
+The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde R_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
 
 $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta_{\mathrm{sol}}}{2},
@@ -278,12 +278,12 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace |
 | $\mathbb{B}_{H}$ | Unit real quaternions; the rotation/holonomy rotors |
-| $\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ | Spin observable along $\vec e_\eta$ |
-| $\tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$ | Fixed-field Hamiltonian |
+| $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ | Spin observable along $\vec e_\eta$ |
+| $\tilde R_\Psi = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$ | Fixed-field Hamiltonian |
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | Spinor; carries the geometric phase |
-| $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{k_m}{m\,c^{2}}\int_0^T\langle\tilde R_\Psi\rangle  dr'_t$ | Aharonov–Anandan geometric phase |
+| $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde R_\Psi\rangle  dr'_t$ | Aharonov–Anandan geometric phase |
 | $\mathcal{A} = i\langle n|d|n\rangle$ | Berry connection (cited from the Berry article) |
 | $\gamma_{\mathrm{geo}} = -\tfrac12\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}(\mathcal{C})$ | Solid-angle formula for spin-1/2 |
 | $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ | Unsigned solid angle of a latitude cap |

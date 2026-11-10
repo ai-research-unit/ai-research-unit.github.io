@@ -156,10 +156,10 @@ Read in the other direction, this is the free rotor's geodesic flow seen on the 
 
 ## The Rotor Normalisation and Its Counterpart
 
-The rotor is required to have unit **biquaternion norm**, $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and this is what makes the conjugation preserve $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the subspace $\mathbb{B}_{\Phi}$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_t$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not $*$-unitary; while the evolution operator of quantum physics, $\tilde Q(r'_t) = \exp(-\frac{k_m\,i\,Hr'_{t}}{m\,c^{2}})$ with a Hamiltonian $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ that has a trace part, is $*$-unitary but has
+The rotor is required to have unit **biquaternion norm**, $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and this is what makes the conjugation preserve $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the subspace $\mathbb{B}_{\Phi}$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_t$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not $*$-unitary; while the evolution operator of quantum physics, $\tilde Q(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ with a Hamiltonian $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ that has a trace part, is $*$-unitary but has
 
 $$
-N\big(\tilde Q(r'_t)\big) = \tilde Q(r'_t)\,\tilde Q^{\natural}(r'_t) = \exp(-\frac{2\,k_m\,i\,r_{t}\,r'_{t}}{m\,c^{2}}) e_t \neq  e_t .
+N\big(\tilde Q(r'_t)\big) = \tilde Q(r'_t)\,\tilde Q^{\natural}(r'_t) = \exp(-\frac{2\,i\,r_{t}\,r'_{t}}{\hbar\,c}) e_t \neq  e_t .
 $$
 
 So "unit modulus" is a constraint on the **biquaternion norm**, and it is the constraint that defines the rotor group; the companion literature is careful to distinguish it from matrix unitarity, and the same care is needed here.
@@ -291,7 +291,7 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 - [Relativistic Mechanics in Biquaternionic Form](relativistic-mechanics-in-biquaternionic-form.html), for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the boost rotor, the unit-norm condition, and the relation $\langle R\rangle_{\natural} = e_t$.
 - [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html), for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.
-- [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the evolution operator $T(r'_t) = \exp(-\frac{k_m\,iHr'_{t}}{m\,c^{2}})$, the Lie algebra $\mathbb{B}_{\Phi}$, and the distinction between unitarity and the biquaternion norm.
+- [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the evolution operator $T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c})$, the Lie algebra $\mathbb{B}_{\Phi}$, and the distinction between unitarity and the biquaternion norm.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the rotation generators $g_\eta = -\tfrac12 \vec e_\eta$ and the half-angle exponential that produces the factor $2$ of the double cover.
 - [Exercise: Spin Precession in a Magnetic Field](exercise-spin-precession-in-a-magnetic-field.html), for the Hamiltonian of a spin in a field and the precession it generates.
 - [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the phase plane, the squeezing-as-boost correspondence, and the caution that identifying the phase plane with a plane of $\mathbb{B}_{\Phi}$ is an additional step.

@@ -17,9 +17,9 @@
 **The inverse temperature is a length, and the corpus fixes it once.** From [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
 
 $$
-\beta=\frac{m\,c}{k_m\,k_{B}\,T},
+\beta=\frac{\hbar}{k_{B}\,T},
 \qquad
-c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T},
+c\beta=\frac{\hbar\,c}{k_{B}\,T},
 $$
 
 with $\beta$ the imaginary-time circumference, a length in these letters, and $c\beta$ the corresponding span in the material sector's units. **The display is quoted and not re-derived**: the article cited establishes that the imaginary-time direction is compact with circumference $\beta$ in the coordinate $r'_t$, and that the identity above is exact. Here the only use made of it is that $\beta$ is a *period* and not a number: it is a length measured along a direction, and the direction is what the boost acts on.
@@ -87,7 +87,7 @@ $$
 =\frac{\beta\,m\,c}{\hbar}=\beta\,k_m .
 $$
 
-**The result is independent of $\gamma$ and of $\vec v$, which is the statement that the thermal weight of a state is the same in every frame.** The three ingredients are: the norm of the flow element, which is $-c^{2}$ by the corpus's definition; the norm of the thermal element, which is $-\beta^{2}$; and the identity $\hbar=mc/k_m$. The cancellation of $\gamma$ is not an accident of the algebra but the content of the statement: a boost rotates both the thermal element and the momentum element the same way, so their contraction is invariant.
+**The result is independent of $\gamma$ and of $\vec v$, which is the statement that the thermal weight of a state is the same in every frame.** The three ingredients are: the norm of the flow element, which is $-c^{2}$ by the corpus's definition; the norm of the thermal element, which is $-\beta^{2}$; and the identity $1/k_m=\hbar/(mc)$. The cancellation of $\gamma$ is not an accident of the algebra but the content of the statement: a boost rotates both the thermal element and the momentum element the same way, so their contraction is invariant.
 
 **Read in the rest frame, the display is the expected one.** There $\beta_{\Phi,\nu}p_{\Phi,\nu}=\beta\,i\,e_t\cdot i\,m\,c=-\beta mc$, so the exponent is $+\beta mc/\hbar=\beta k_m$, the ratio of the imaginary-time circumference to the reduced Compton length $1/k_m$ of the field. **That ratio is the single number the rest-frame thermal weight exponentiates**, and it is the corpus's dimensionless thermal parameter: it is $\beta$ measured in units of the field's own length.
 
@@ -250,8 +250,8 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 
 | Symbol | Meaning |
 |---|---|
-| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
-| $c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T}$ | The same span in the material sector's units |
+| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
+| $c\beta=\frac{\hbar\,c}{k_{B}\,T}$ | The same span in the material sector's units |
 | $T$ | Temperature |
 | $k_B$ | Boltzmann's constant |
 | $\tilde\beta_\Phi$ | Thermal element of the moving state |
@@ -265,7 +265,7 @@ The article is transcription: standard relativistic thermodynamics in the corpus
 | $p_{\Phi,\nu}$ | Flow momentum components, $p_{\Phi,t}=iE/c$ |
 | $E$ | Energy |
 | $m$, $c$ | Mass and speed of light in the medium |
-| $\hbar=mc/k_m$ | Action quantum |
+| $\hbar$ | Action quantum |
 | $k_m$ | Mass wave number |
 | $Z$ | Partition function, a scalar |
 | $F=-(1/\beta)\log Z=-p_{\mathrm{th}}V_{0}$ | Free energy, a scalar |

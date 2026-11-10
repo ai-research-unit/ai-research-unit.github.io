@@ -254,7 +254,7 @@ was checked for a model retarded function at $\beta=2$ and several frequencies; 
 | $A(\omega)=-i(G^R-G^A)$ | Spectral function, $A\ge0$ |
 | $G^{\mathrm{Kel}}=\coth(\beta\omega/2)(G^R-G^A)$ | Fluctuation–dissipation relation |
 | $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$ | Bose occupation number |
-| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature (input) |
+| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature (input) |
 
 ## Further Reading
 

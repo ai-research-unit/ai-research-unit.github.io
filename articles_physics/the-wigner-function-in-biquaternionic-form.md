@@ -335,7 +335,7 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $\tilde W_\Xi(r,\vec p)$ | Biquaternionic Wigner element |
 | $r$, $\vec s$ | Position and relative coordinate; the offsets are $\pm\vec s/2$ |
 | $\vec p$, $p_\eta$ | Momentum, the transform variable, and its components |
-| $\hbar=mc/k_m$ | Action quantum |
+| $\hbar$ | Action quantum |
 | $m$, $c$ | Mass and speed of light in the medium |
 | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | Energy; $r'_t$ is the temporal coordinate, a length |
 | $\tilde J_\Phi=ic\rho_{\mathrm{num}}E/(mc^{2})\,e_t+\vec j$ | Four-current of the polar form |

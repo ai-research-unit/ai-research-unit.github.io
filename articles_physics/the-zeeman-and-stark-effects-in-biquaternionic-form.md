@@ -6,12 +6,12 @@ If an atom is placed in a static magnetic field, its energy levels split; the sp
 
 This article treats both effects in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effects themselves are standard and are reproduced exactly. What the article establishes is the algebraic structure of the two couplings and the reason their leading behaviours differ:
 
-1. **Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.** The Zeeman coupling is $\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{R}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $r_t\,e_t + i\vec r_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.
-2. **The Zeeman splitting is linear and isotropic.** A spin-1/2 in a field $\vec B = B\vec u$ has energies $\pm\frac{m\,c\,\omega_{L}}{2\,k_m}$ for every direction $\vec u$; the splitting $\frac{m\,c\,\omega_{L}}{k_m}$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.
-3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\Delta E = -\frac{k_m\,d^{2}\,E^{2}}{m\,c\,\omega_{0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$.
+1. **Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.** The Zeeman coupling is $\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{R}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $r_t\,e_t + i\vec r_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.
+2. **The Zeeman splitting is linear and isotropic.** A spin-1/2 in a field $\vec B = B\vec u$ has energies $\pm\frac{\hbar\,\omega_{L}}{2}$ for every direction $\vec u$; the splitting $\hbar\,\omega_{L}$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.
+3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\Delta E = -\frac{d^{2}\,E^{2}}{\hbar\,\omega_{0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
 
-The notation is the series notation: $\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ with eigenvalues $r_t\pm|\vec r_\Psi|$, and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+The notation is the series notation: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ with eigenvalues $r_t\pm|\vec r_\Psi|$, and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
@@ -27,9 +27,9 @@ A magnetic dipole $\vec\mu$ in a field $\vec B$ has energy $V_{\mathrm{pot}} = -
 
 $$
 \tilde{R}_{\Psi,Z} = -\gamma\,\vec B\cdot\tilde S_{\Psi} = -\gamma B\,\tilde{S}_{\Psi}(\vec u)
-= -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec u,
+= -\frac{\hbar\,\omega_{L}}{2}\,i\vec u,
 \qquad
-\tilde{S}_{\Psi}(\vec u) = \sum_\eta  u_\eta\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}\,i\vec u,
+\tilde{S}_{\Psi}(\vec u) = \sum_\eta  u_\eta\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}\,i\vec u,
 $$
 
 where $\vec u = \vec B/B$ and
@@ -38,38 +38,38 @@ $$
 \omega_L = \gamma B
 $$
 
-is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,\eta} =\frac{m\,c}{2\,k_m}i\vec e_\eta$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_\eta\mapsto\sigma_\eta$, so $\tilde{R}_{\Psi,Z}\mapsto  -\frac{m\,c\,\omega_{L}}{2\,k_m}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $r_t = 0$ and $\vec r_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}\vec u$.
+is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_\eta\mapsto\sigma_\eta$, so $\tilde{R}_{\Psi,Z}\mapsto  -\frac{\hbar\,\omega_{L}}{2}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $r_t = 0$ and $\vec r_\Psi = -\frac{\hbar\,\omega_{L}}{2}\vec u$.
 
 ### The Spin-1/2 Splitting
 
 The observable $\tilde{R}_{\Psi,Z}$ has the spectral decomposition
 
 $$
-\tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,\tilde\Pi_1(\vec u) +\frac{m\,c\,\omega_{L}}{2\,k_m}\,\tilde\Pi_2(\vec u),
+\tilde{R}_{\Psi,Z} = -\frac{\hbar\,\omega_{L}}{2}\,\tilde\Pi_1(\vec u) +\frac{\hbar\,\omega_{L}}{2}\,\tilde\Pi_2(\vec u),
 $$
 
-because $\sum_\eta  u_\eta\tilde{S}_{\Psi,\eta}\tilde\Pi_{1,2}(\vec u) = \pm\frac{m\,c}{2\,k_m}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{R}_{\Psi,Z}\propto \sum_\eta u_\eta\tilde{S}_{\Psi,\eta}$. The two eigenvalues are
+because $\sum_\eta  u_\eta\tilde{S}_{\Psi,\eta}\tilde\Pi_{1,2}(\vec u) = \pm\frac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{R}_{\Psi,Z}\propto \sum_\eta u_\eta\tilde{S}_{\Psi,\eta}$. The two eigenvalues are
 
 $$
-E_\pm = \pm\frac{m\,c\,\omega_{L}}{2\,k_m},
+E_\pm = \pm\frac{\hbar\,\omega_{L}}{2},
 $$
 
 so the **Zeeman splitting** is
 
 $$
-\boxed{\;\Delta E_{\mathrm{Zeeman}} =\frac{m\,c}{k_m}|\omega_L| =\frac{m\,c}{k_m}|\gamma|B\;},
+\boxed{\;\Delta E_{\mathrm{Zeeman}} =\hbar|\omega_L| =\hbar|\gamma|B\;},
 $$
 
 linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{B}_{\Psi}$ has eigenvalues $\pm|\vec r_\Psi|$, and $|\vec r_\Psi|$ depends on the magnitude of the vector part alone.
 
-For an electron, $\gamma = -\frac{k_m\,g_{e}\,\mu_{B}}{m\,c}$ with $g_e\approx2.0023$; the two levels are separated by $\frac{m\,c}{k_m}|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article *Angular Momentum and Spin in Biquaternionic Form*.
+For an electron, $\gamma = -\frac{g_{e}\,\mu_{B}}{\hbar}$ with $g_e\approx2.0023$; the two levels are separated by $\hbar|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
 ### The g-Tensor and Anisotropy
 
 For a spin in a crystal or on a molecule, the magnetic coupling need not be isotropic: the response of the moment to the field is a tensor rather than a number. The most general linear coupling of a spin-1/2 to a magnetic field is
 
 $$
-\tilde{R}_{\Psi,Z} =\frac{k_m\,\mu_{B}}{m\,c}\,B_i\, g_{ij}\tilde{S}_{\Psi,j},
+\tilde{R}_{\Psi,Z} =\frac{\mu_{B}}{\hbar}\,B_i\, g_{ij}\tilde{S}_{\Psi,j},
 $$
 
 where $g_{ij}$ is the **g-tensor**, a real $3\times3$ matrix whose isotropic value is the g-factor $g_e$ of the preceding paragraph. This is still a Hermitian element of $\mathbb{B}_{\Psi}$, of the form $i h_j\vec e_j$ with
@@ -78,7 +78,7 @@ $$
 h_j = \frac{\mu_B}{2}\,g_{ij}B_i,
 $$
 
-so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_B|g\vec B|$: the splitting depends on the angle between the field and the principal axes of the g-tensor. In the algebra the anisotropy is the statement that the vector part $\vec r_\Psi$ of the observable is a linear image of the field, and the eigenvalues are still $\pm|\vec r_\Psi|$. The isotropic case $g_{ij} = g_e\delta_{ij}$ reduces to the preceding subsection, where $\tilde{R}_{\Psi,Z} =\frac{k_m\,\mu_{B}\,g_{e}\,B\,\tilde{S}_{\Psi,3}}{m\,c}= -\gamma B\tilde{S}_{\Psi,3}$ for $\gamma = -\frac{k_m\,g_{e}\,\mu_{B}}{m\,c}$. The g-tensor is measured by electron paramagnetic resonance; the framework supplies the two-dimensional spectral structure and the vector-part formula, and takes the tensor itself as external data.
+so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_B|g\vec B|$: the splitting depends on the angle between the field and the principal axes of the g-tensor. In the algebra the anisotropy is the statement that the vector part $\vec r_\Psi$ of the observable is a linear image of the field, and the eigenvalues are still $\pm|\vec r_\Psi|$. The isotropic case $g_{ij} = g_e\delta_{ij}$ reduces to the preceding subsection, where $\tilde{R}_{\Psi,Z} =\frac{\mu_{B}\,g_{e}\,B\,\tilde{S}_{\Psi,3}}{\hbar}= -\gamma B\tilde{S}_{\Psi,3}$ for $\gamma = -\frac{g_{e}\,\mu_{B}}{\hbar}$. The g-tensor is measured by electron paramagnetic resonance; the framework supplies the two-dimensional spectral structure and the vector-part formula, and takes the tensor itself as external data.
 
 ### Level Crossings and the Field Axis
 
@@ -89,8 +89,8 @@ Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting i
 A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
-\left[\tilde{R}_{\Psi,Z},\,dE\,i\vec e_x\right] = -2\left(-\frac{m\,c\,\omega_{L}}{2\,k_m}\vec u\right)\times(dE\,\vec u_x)
-=\frac{m\,c\,\omega_{L}\,d\,E\,\vec u\,\vec u_{x}}{k_m},
+\left[\tilde{R}_{\Psi,Z},\,dE\,i\vec e_x\right] = -2\left(-\frac{\hbar\,\omega_{L}}{2}\vec u\right)\times(dE\,\vec u_x)
+=\hbar\,\omega_{L}\,d\,E\,\vec u\,\vec u_{x},
 $$
 
 which is non-zero precisely when the transverse coupling is not parallel to the field. The selection rule $\Delta m = \pm1$ for a transverse drive and $\Delta m = 0$ for a longitudinal one is thus a statement about the vanishing of this cross product: the observable component along $\vec u$ commutes with $\tilde{R}_{\Psi,Z}$ and the orthogonal components do not. In the spin-1/2 case the two non-commuting components are exactly the off-diagonal elements that connect the two eigenstates.
@@ -111,7 +111,7 @@ A physical dipole operator has a definite parity: $\vec d$ is odd under spatial 
 
 ### Linear Stark in a Degenerate Pair
 
-Consider a pair of states of opposite parity and equal unperturbed energy, $\frac{m\,c\,\omega_{0}}{k_m}= 0$. The Hamiltonian in the two-level space is
+Consider a pair of states of opposite parity and equal unperturbed energy, $\hbar\,\omega_{0}= 0$. The Hamiltonian in the two-level space is
 
 $$
 \tilde R_\Psi = -E\,d\,i\vec e_x .
@@ -129,32 +129,32 @@ In the algebra the linear Stark effect is nothing but the spectral decomposition
 
 ### Quadratic Stark and the Polarizability
 
-Now take a non-degenerate pair, with unperturbed splitting $\frac{m\,c\,\omega_{0}}{k_m}$ and the same off-diagonal coupling,
+Now take a non-degenerate pair, with unperturbed splitting $\hbar\,\omega_{0}$ and the same off-diagonal coupling,
 
 $$
-\tilde R_\Psi(\lambda) = -\frac{m\,c\,\omega_{0}}{2\,k_m}\,i\vec e_z - E\,d\,i\vec e_x .
+\tilde R_\Psi(\lambda) = -\frac{\hbar\,\omega_{0}}{2}\,i\vec e_z - E\,d\,i\vec e_x .
 $$
 
-The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec r_\Psi = (-Ed,0,-\frac{m\,c\,\omega_{0}}{2\,k_m})$:
+The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec r_\Psi = (-Ed,0,-\frac{\hbar\,\omega_{0}}{2})$:
 
 $$
-\boxed{\;E_\pm(E) = \pm\sqrt{\left(\frac{m\,c\,\omega_{0}}{2\,k_m}\right)^2 + (Ed)^2}\;}.
+\boxed{\;E_\pm(E) = \pm\sqrt{\left(\frac{\hbar\,\omega_{0}}{2}\right)^2 + (Ed)^2}\;}.
 $$
 
-For small fields, $|Ed|\ll\frac{m\,c\,\omega_{0}}{k_m}$, expanding the square root gives
+For small fields, $|Ed|\ll\hbar\,\omega_{0}$, expanding the square root gives
 
 $$
-E_-(E) = -\frac{m\,c\,\omega_{0}}{2\,k_m} -\frac{k_m\,E^{2}\,d^{2}}{m\,c\,\omega_{0}} + O(E^4),
+E_-(E) = -\frac{\hbar\,\omega_{0}}{2} -\frac{E^{2}\,d^{2}}{\hbar\,\omega_{0}} + O(E^4),
 \qquad
-E_+(E) = +\frac{m\,c\,\omega_{0}}{2\,k_m} +\frac{k_m\,E^{2}\,d^{2}}{m\,c\,\omega_{0}} + O(E^4).
+E_+(E) = +\frac{\hbar\,\omega_{0}}{2} +\frac{E^{2}\,d^{2}}{\hbar\,\omega_{0}} + O(E^4).
 $$
 
 The ground state therefore shifts downward by
 
 $$
-\Delta E_0 = -\frac{k_m\,E^{2}\,d^{2}}{m\,c\,\omega_{0}} = -\frac{1}{2}\,\alpha E^2,
+\Delta E_0 = -\frac{E^{2}\,d^{2}}{\hbar\,\omega_{0}} = -\frac{1}{2}\,\alpha E^2,
 \qquad
-\boxed{\;\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}\;}
+\boxed{\;\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}\;}
 $$
 
 This is the **quadratic Stark effect**, and $\alpha$ is the static polarizability of the two-level system. The shift is second order in the field because the first-order shift $-\langle \pm|\vec d\cdot\vec E|\pm\rangle$ vanishes: the two states have definite parity and no permanent dipole moment. Equivalently, in the algebra the diagonal part of the coupling in the unperturbed basis vanishes, so the coupling contributes only at second order. The exact expression above is the resummation of that perturbation series; its leading term is the polarizability formula.
@@ -162,10 +162,10 @@ This is the **quadratic Stark effect**, and $\alpha$ is the static polarizabilit
 The same result can be read directly in the algebra as a level repulsion: the two eigenvalues move apart as $E$ grows, and their separation
 
 $$
-E_+(E)-E_-(E) = \sqrt{(\frac{m\,c\,\omega_{0}}{k_m})^2 + (2Ed)^2}
+E_+(E)-E_-(E) = \sqrt{(\hbar\,\omega_{0})^2 + (2Ed)^2}
 $$
 
-increases from $\frac{m\,c\,\omega_{0}}{k_m}$ toward $2|Ed|$. At $|Ed| =\frac{m\,c\,\omega_{0}}{2\,k_m}$ the nonlinearity is already appreciable: the exact lower-level shift is $-0.\frac{20711\,m\,c\,\omega_{0}}{k_m}$ against the quadratic prediction $-0.\frac{25\,m\,c\,\omega_{0}}{k_m}$. Deep in the perturbative regime, at $Ed =\frac{m\,c\,\omega_{0}}{100\,k_m}$, the two agree to five places, $-0.\frac{9999\,m\,c\,\omega_{0}}{k_m}$ against $-0.\frac{m\,c\,\omega_{0}}{k_m}$. The quadratic formula is the leading term of a convergent expansion in $(\frac{k_m\,E\,d}{m\,c\,\omega_{0}})^2$.
+increases from $\hbar\,\omega_{0}$ toward $2|Ed|$. At $|Ed| =\frac{\hbar\,\omega_{0}}{2}$ the nonlinearity is already appreciable: the exact lower-level shift is $-0.20711\,\hbar\,\omega_{0}$ against the quadratic prediction $-0.25\,\hbar\,\omega_{0}$. Deep in the perturbative regime, at $Ed =\frac{\hbar\,\omega_{0}}{100}$, the two agree to five places, $-0.9999\,\hbar\,\omega_{0}$ against $-0.\hbar\,\omega_{0}$. The quadratic formula is the leading term of a convergent expansion in $(\frac{E\,d}{\hbar\,\omega_{0}})^2$.
 
 ### The Resolvent and the Full Polarizability
 
@@ -176,13 +176,13 @@ E_0^{(2)} = \sum_{m\neq 0}\frac{|\langle m|V|0\rangle|^2}{E_0-E_m}
 = -E_i E_j \sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0},
 $$
 
-which defines the polarizability tensor $\alpha_{ij} = 2\sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0}$ through $\Delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
+which defines the polarizability tensor $\alpha_{ij} = 2\sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0}$ through $\Delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
 
 For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm H} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm H} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
 
 ### The Avoided Crossing
 
-The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a traceless Hermitian element are $\pm|\vec r_\Psi|$, and $|\vec r_\Psi| = \sqrt{(Ed)^2 + (\frac{m\,c\,\omega_{0}}{2\,k_m})^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.
+The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a traceless Hermitian element are $\pm|\vec r_\Psi|$, and $|\vec r_\Psi| = \sqrt{(Ed)^2 + (\frac{\hbar\,\omega_{0}}{2})^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.
 
 ## The Two Couplings Compared
 
@@ -191,7 +191,7 @@ The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the
 The Zeeman and Stark couplings are
 
 $$
-\tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec e_z,
+\tilde{R}_{\Psi,Z} = -\frac{\hbar\,\omega_{L}}{2}\,i\vec e_z,
 \qquad
 \tilde{R}_{\Psi,S} = -E\left(d_1\,i\vec e_x + d_2\,i\vec e_y\right),
 $$
@@ -204,10 +204,10 @@ The difference between the two effects is the placement of the coupling in the e
 
 | Feature | Zeeman | Stark |
 |---|---|---|
-| Coupling | $\tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$ | $\tilde{R}_{\Psi,S} = -E(d_1i\vec e_x+d_2i\vec e_y)$ |
+| Coupling | $\tilde{R}_{\Psi,Z} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$ | $\tilde{R}_{\Psi,S} = -E(d_1i\vec e_x+d_2i\vec e_y)$ |
 | Position in the $\vec u_z$ eigenbasis | diagonal | off-diagonal |
 | Permanent moment? | yes (magnetic) | no (parity) |
-| First-order shift | linear, $\pm\frac{m\,c\,\omega_{L}}{2\,k_m}$ | zero unless degenerate |
+| First-order shift | linear, $\pm\frac{\hbar\,\omega_{L}}{2}$ | zero unless degenerate |
 | Degenerate case | level crossing at $B=0$ | linear Stark, $\pm Ed$ |
 | Non-degenerate case | — | quadratic Stark, $-\tfrac12\alpha E^2$ |
 | Mixes the eigenstates? | no | yes |
@@ -216,11 +216,11 @@ The reason the magnetic coupling is diagonal is that the two spin states carry d
 
 ### Conventions of Sign
 
-The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V_{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_{\Psi,3} = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.
+The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V_{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_{\Psi,3} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard physics, transcribed.** The Zeeman Hamiltonian, the linear Zeeman splitting, the g-factor, the linear and quadratic Stark effects, the polarizability formula $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$, and the avoided crossing are all standard. The article adds no predictions.
+**Standard physics, transcribed.** The Zeeman Hamiltonian, the linear Zeeman splitting, the g-factor, the linear and quadratic Stark effects, the polarizability formula $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$, and the avoided crossing are all standard. The article adds no predictions.
 
 **What the algebra organises.**
 
@@ -229,7 +229,7 @@ The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec
 - **The diagonal/off-diagonal dichotomy.** The distinction between the linear Zeeman effect and the quadratic Stark effect is the distinction between a diagonal and an off-diagonal coupling, and in the algebra this is the distinction between a coupling proportional to $i\vec e_z$ and one proportional to $i\vec e_x$.
 - **A unified avoided crossing.** The Stark two-level problem and the Rabi effective Hamiltonian are the same traceless Hermitian element read in different variables; the framework makes the identity of the two problems explicit.
 
-**What the algebra does not supply.** The gyromagnetic ratio $\gamma$, the electric dipole matrix element $d$, and the level spacing $\frac{m\,c\,\omega_{0}}{k_m}$ are external data of the specific system. The algebra supplies the two-dimensional structure and the way the parameters enter it; it does not supply their values. The relativistic corrections that give the electron $g\approx2$ are outside the scope of this subcategory.
+**What the algebra does not supply.** The gyromagnetic ratio $\gamma$, the electric dipole matrix element $d$, and the level spacing $\hbar\,\omega_{0}$ are external data of the specific system. The algebra supplies the two-dimensional structure and the way the parameters enter it; it does not supply their values. The relativistic corrections that give the electron $g\approx2$ are outside the scope of this subcategory.
 
 ## Open Questions
 
@@ -237,9 +237,9 @@ The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec
 
 2. **Non-linear response beyond second order.** The exact two-level Stark shift is a square root, not a polynomial. Is there a systematic algebraic expansion of the eigenvalues of a two-level Hermitian element in powers of the transverse coupling, and does it have the structure of the standard perturbative series?
 
-3. **The polarizability as a trace.** The polarizability $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$ is written here in terms of the two-level parameters. Can it be written as a trace pairing in the algebra, $\alpha\propto\mathrm{Tr}(\ldots)$? The second-order formula suggests a resolvent kernel, which the algebra may or may not be able to represent.
+3. **The polarizability as a trace.** The polarizability $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$ is written here in terms of the two-level parameters. Can it be written as a trace pairing in the algebra, $\alpha\propto\mathrm{Tr}(\ldots)$? The second-order formula suggests a resolvent kernel, which the algebra may or may not be able to represent.
 
-4. **Combined fields and the crossed-field problem.** With both a magnetic and a transverse electric field present, the effective Hamiltonian is $\tilde R_\Psi = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec e_z - E(d_1i\vec e_x+d_2i\vec e_y)$, the same form as the Rabi effective Hamiltonian. Is there a distinguished "crossed-field" geometry in which the two couplings are arranged symmetrically, and does the algebra name it?
+4. **Combined fields and the crossed-field problem.** With both a magnetic and a transverse electric field present, the effective Hamiltonian is $\tilde R_\Psi = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z - E(d_1i\vec e_x+d_2i\vec e_y)$, the same form as the Rabi effective Hamiltonian. Is there a distinguished "crossed-field" geometry in which the two couplings are arranged symmetrically, and does the algebra name it?
 
 5. **Empirical contact.** As everywhere in the series, the reformulation reproduces the standard predictions; whether its additional structure implies a measurable deviation is open.
 
@@ -248,18 +248,18 @@ The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec
 The two elementary static field couplings of a spin-1/2 are Hermitian elements of the informational sector. The **Zeeman coupling** in a field $\vec B = B\vec u$ is
 
 $$
-\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi}(\vec u) = -\frac{m\,c\,\omega_{L}}{2\,k_m}\,i\vec u,
+\tilde{R}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi}(\vec u) = -\frac{\hbar\,\omega_{L}}{2}\,i\vec u,
 \qquad \omega_L = \gamma B,
 $$
 
-with the spectral decomposition $\tilde{R}_{\Psi,Z} = -\frac{m\,c\,\omega_{L}}{2\,k_m}\tilde\Pi_1(\vec u) +\frac{m\,c\,\omega_{L}}{2\,k_m}\tilde\Pi_2(\vec u)$ and linear, isotropic splitting $\Delta E =\frac{m\,c}{k_m}|\omega_L| =\frac{m\,c}{k_m}|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{1,2}(\vec u)$ and not the eigenvalues.
+with the spectral decomposition $\tilde{R}_{\Psi,Z} = -\frac{\hbar\,\omega_{L}}{2}\tilde\Pi_1(\vec u) +\frac{\hbar\,\omega_{L}}{2}\tilde\Pi_2(\vec u)$ and linear, isotropic splitting $\Delta E =\hbar|\omega_L| =\hbar|\gamma|B$. The field direction selects the eigenbasis $\tilde\Pi_{1,2}(\vec u)$ and not the eigenvalues.
 
-The **Stark coupling** is off-diagonal in the energy basis, $\tilde{R}_{\Psi,S} = -E\,d\,i\vec e_x$ in a two-level truncation, and its effect depends on the degeneracy. For a degenerate pair it gives the linear Stark splitting $E_\pm = \pm Ed$, the exact spectrum of a traceless Hermitian element with the vector part along the field. For a non-degenerate pair with splitting $\frac{m\,c\,\omega_{0}}{k_m}$ it gives $E_\pm = \pm\sqrt{(\frac{m\,c\,\omega_{0}}{2\,k_m})^2+(Ed)^2}$, whose expansion is the quadratic Stark shift
+The **Stark coupling** is off-diagonal in the energy basis, $\tilde{R}_{\Psi,S} = -E\,d\,i\vec e_x$ in a two-level truncation, and its effect depends on the degeneracy. For a degenerate pair it gives the linear Stark splitting $E_\pm = \pm Ed$, the exact spectrum of a traceless Hermitian element with the vector part along the field. For a non-degenerate pair with splitting $\hbar\,\omega_{0}$ it gives $E_\pm = \pm\sqrt{(\frac{\hbar\,\omega_{0}}{2})^2+(Ed)^2}$, whose expansion is the quadratic Stark shift
 
 $$
-\Delta E_0 = -\frac{k_m\,E^{2}\,d^{2}}{m\,c\,\omega_{0}} = -\frac{1}{2}\alpha E^2,
+\Delta E_0 = -\frac{E^{2}\,d^{2}}{\hbar\,\omega_{0}} = -\frac{1}{2}\alpha E^2,
 \qquad
-\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}},
+\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}},
 $$
 
 and whose level repulsion is the avoided crossing with gap $2|Ed|$.
@@ -274,15 +274,15 @@ The two effects differ because a spin-1/2 carries a permanent magnetic dipole an
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) subspace; home of both couplings |
-| $\tilde{S}_{\Psi}(\vec u) =\frac{m\,c}{2\,k_m}i\vec u$ | Spin observable along $\vec u$ |
-| $\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_{\Psi}(\vec u) = -\frac{m\,c\,\omega_{L}}{2\,k_m}i\vec u$ | Zeeman coupling |
+| $\tilde{S}_{\Psi}(\vec u) =\frac{\hbar}{2}i\vec u$ | Spin observable along $\vec u$ |
+| $\tilde{R}_{\Psi,Z} = -\gamma B\tilde{S}_{\Psi}(\vec u) = -\frac{\hbar\,\omega_{L}}{2}i\vec u$ | Zeeman coupling |
 | $\omega_L = \gamma B$ | Larmor frequency |
-| $\Delta E_{\mathrm{Zeeman}} =\frac{m\,c}{k_m}|\omega_L| =\frac{m\,c}{k_m}|\gamma|B$ | Zeeman splitting |
+| $\Delta E_{\mathrm{Zeeman}} =\hbar|\omega_L| =\hbar|\gamma|B$ | Zeeman splitting |
 | $\tilde{R}_{\Psi,S} = -E(d_1i\vec e_x+d_2i\vec e_y)$ | Stark coupling (two-level truncation) |
 | $d$ | Electric dipole matrix element between the two levels |
 | $E_\pm = \pm Ed$ | Linear Stark splitting (degenerate pair) |
-| $E_\pm = \pm\sqrt{(\frac{m\,c\,\omega_{0}}{2\,k_m})^2+(Ed)^2}$ | Exact two-level Stark levels |
-| $\alpha =\frac{2\,k_m\,d^{2}}{m\,c\,\omega_{0}}$ | Static polarizability of the two-level system |
+| $E_\pm = \pm\sqrt{(\frac{\hbar\,\omega_{0}}{2})^2+(Ed)^2}$ | Exact two-level Stark levels |
+| $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$ | Static polarizability of the two-level system |
 | $\Delta E_0 = -\tfrac12\alpha E^2$ | Quadratic Stark shift |
 | $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Commutator of two Hermitian elements |
 

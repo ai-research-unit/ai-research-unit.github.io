@@ -200,13 +200,13 @@ $$
 \left(\vec S^\pm_{\mathrm{tot}}\right)^2 = \frac{m\kappa^2}{8|E|} ,
 $$
 
-so that specifying $E$ specifies $s$, and the level's orbital degeneracy is $(2s+1)^2$. When the classical functions are replaced by operators and the algebra is quantized, the Casimir takes the values $\frac{m^{2}\,c^{2}\,(n^2-1)}{4\,k_m^{2}}$ for the hydrogen levels $n = 1, 2, 3, \dots$, so that $s = (n-1)/2$ and
+so that specifying $E$ specifies $s$, and the level's orbital degeneracy is $(2s+1)^2$. When the classical functions are replaced by operators and the algebra is quantized, the Casimir takes the values $\frac{\hbar^{2}\,(n^2-1)}{4}$ for the hydrogen levels $n = 1, 2, 3, \dots$, so that $s = (n-1)/2$ and
 
 $$
 2s + 1 = n, \qquad \dim = n^2 .
 $$
 
-The Balmer formula $E_n = -m\kappa^2/(\frac{2\,m^{2}\,c^{2}\,n^{2}}{k_m^{2}})$ is recovered by inverting the Casimir relation, which is how Pauli obtained the spectrum in 1926 from the commutation relations of $\vec L$ and $\vec A$ alone, before the Schrödinger equation was written down. Fock's later reformulation identified the symmetry group geometrically as $SO(4)$ acting on the momentum sphere. These are standard results of the quantum theory, imported here as the quantum counterparts of the classical brackets; the present article is the classical symmetry and the brackets are the classical ones.
+The Balmer formula $E_n = -m\kappa^2/(2\,\hbar^{2}\,n^{2})$ is recovered by inverting the Casimir relation, which is how Pauli obtained the spectrum in 1926 from the commutation relations of $\vec L$ and $\vec A$ alone, before the Schrödinger equation was written down. Fock's later reformulation identified the symmetry group geometrically as $SO(4)$ acting on the momentum sphere. These are standard results of the quantum theory, imported here as the quantum counterparts of the classical brackets; the present article is the classical symmetry and the brackets are the classical ones.
 
 ### What This Says About the Biquaternion Framework
 

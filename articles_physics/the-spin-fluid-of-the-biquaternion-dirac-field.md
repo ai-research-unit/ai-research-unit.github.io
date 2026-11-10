@@ -26,7 +26,7 @@ r=\lvert\rho\rvert>0,
 \tilde U=\frac{\tilde\Xi}{\rho},
 $$
 
-with $r$ the scale, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$, and the polar article's $\rho$ is its square root; the two letters differ by the scale, and every statement below is about a direction or a ratio, so the difference never enters a conclusion. That is the notational translation this article makes once and does not repeat.
+with $r$ the scale, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$. **The polar article writes that density as $\rho$ and its root as $r$, so the two letters are interchanged between the two articles**: this article's $\rho$ is the polar article's $r$, and this article's $\rho_{\mathrm{num}}$ is the polar article's $\rho$. The reason for the interchange is that the density of this category is never a bare letter, while the polar word's scale is one, and the two cannot both take $\rho$. Every statement below is about a direction or a ratio, so the difference never enters a conclusion. That is the notational translation this article makes once and does not repeat.
 
 ## The Polar Data of the Fluid
 
@@ -268,7 +268,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
 | $\tilde\Xi=\rho\tilde U$ | The Dirac field as scale times frame element |
-| $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$ | The polar article's scale |
+| $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$ | The scale; the polar article calls it $r$ |
 | $r=\lvert\rho\rvert$ | Its modulus |
 | $\tilde U$ | The frame element, a unit element of $\mathbb{B}$ |
 | $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$ | Proper density |

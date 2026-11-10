@@ -5,7 +5,7 @@
 The **Unruh effect** is the statement that a uniformly accelerated observer in the Minkowski vacuum does not see a vacuum. On a trajectory of constant proper acceleration $a$, the observer registers a thermal bath at the **Unruh temperature**
 
 $$
-T =\frac{m\,a}{2\,k_m\,\pi\,k_{B}},
+T =\frac{\hbar\,a}{2\,\pi\,c\,k_{B}},
 $$
 
 with a Planckian spectrum in the frequency conjugate to the observer's proper time. The effect is not a property of the detector or of the acceleration mechanism; it is a property of the state of the field as seen from the accelerated frame. This article develops that statement inside the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles.
@@ -14,7 +14,7 @@ Three structures carry the effect, and all three have a definite home in the fra
 
 1. **The Rindler wedge.** The accelerated trajectory is confined to a wedge of Minkowski space, the **right Rindler wedge** $R=\{x>|r'_{t}|\}$. Its boundary is the light cone — which, in the material sector $\mathbb{B}_{\Phi}$, is exactly the **zero-divisor cone** of the algebra. The wedge, its horizon, and its boost flow are material-sector objects.
 2. **The boost as the modular Hamiltonian.** By the Bisognano–Wichmann theorem, the modular operator of the vacuum restricted to the wedge is $\Delta=\exp(-2\pi H_{\mathrm{modular,boost}})$, where $H_{\mathrm{modular,boost}}$ is the generator of boosts. The modular flow is therefore the boost flow. The boost generator is a Hermitian element of the algebra; for a boost along $\vec e_x$ it is $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$.
-3. **The KMS condition.** The KMS condition of the companion article states that the correlation functions of a thermal state are analytic in a strip of width $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ in the complex time plane and satisfy a boundary relation that exchanges the operators. The wedge vacuum satisfies that condition with respect to the boost flow, and the width of the strip is what fixes the temperature.
+3. **The KMS condition.** The KMS condition of the companion article states that the correlation functions of a thermal state are analytic in a strip of width $\beta=\frac{\hbar}{k_{B}\,T}$ in the complex time plane and satisfy a boundary relation that exchanges the operators. The wedge vacuum satisfies that condition with respect to the boost flow, and the width of the strip is what fixes the temperature.
 
 The trap in this subject is to *assert* the thermality — to write down the exponential spectrum and the temperature as if the algebra had produced them. It has not. Thermality is a statement about the **analyticity of the two-point function**, and the section that derives it shows the step: the two-point function along the accelerated orbit is an explicit function whose analytic continuation to imaginary proper time is periodic, and the period *is* the KMS width. The temperature is then recomputed a second time, from the **surface gravity** of the boost orbit, so that it is not a single formula asserted twice.
 
@@ -261,7 +261,7 @@ $$
 \beta = \frac{2\pi\,c}{a}.
 $$
 
-Since $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, the temperature is
+Since $\beta=\frac{\hbar}{k_{B}\,T}$, the temperature is
 
 $$
 T = \frac{1}{\beta} = \frac{a}{2\pi} \quad (\hbar=k_B=1),
@@ -270,7 +270,7 @@ $$
 and restoring the constants,
 
 $$
-\boxed{\;T =\frac{m\,a}{2\,k_m\,\pi\,k_{B}}\;}.
+\boxed{\;T =\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}\;}.
 $$
 
 This is the Unruh temperature. In the orbit parametrization used here, $a=1/\rho$, so the temperature of the orbit of radius $\rho$ is $T=\frac{\hbar}{2\pi\rho\,c\,k_B}$; the near-horizon orbits, $\rho\to0$, are the hot ones, which is the field-theoretic reason a horizon is hot. Equivalently, the same period expressed in imaginary **Rindler time** is $2\pi i$, and $\beta=2\pi/a$ follows from $\tau=\rho\eta$; the two statements are the same period in different time variables, and we have checked the conversion.
@@ -278,7 +278,7 @@ This is the Unruh temperature. In the orbit parametrization used here, $a=1/\rho
 **A case not used to derive it.** The formulas were extracted from the massless scalar; the numerical value of the temperature is independent of that choice. For an acceleration equal to terrestrial gravity, $a=g=9.80665\ \mathrm{m\,s^{-2}}$,
 
 $$
-T=\frac{m\,g}{2\,k_m\,\pi\,k_{B}}=3.98\times10^{-20}\ \mathrm{K},
+T=\frac{\hbar\,g}{2\,\pi\,c\,k_{B}}=3.98\times10^{-20}\ \mathrm{K},
 $$
 
 which is unobservably small — the reason the effect is a theoretical structure rather than a laboratory signal. The companion records the numerical evaluation.
@@ -368,7 +368,7 @@ The Unruh temperature does not depend on the statistics of the field. The KMS bo
 
 ## What Is Established, What Is Interpretation, and the Gaps
 
-**Established (physics).** The Unruh effect and the temperature $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium and its boundary relation; the massless Wightman function and its pole structure; the definition of surface gravity and its value $\kappa=a$ for the redshift-normalized boost.
+**Established (physics).** The Unruh effect and the temperature $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$; the Bisognano–Wichmann theorem; the KMS characterization of thermal equilibrium and its boundary relation; the massless Wightman function and its pole structure; the definition of surface gravity and its value $\kappa=a$ for the redshift-normalized boost.
 
 **Established (algebra), recomputed here.** The boost rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ lies in $\mathbb{B}_{\Psi}$, is Hermitian and of unit norm, and preserves $\mathbb{B}_{\Phi}$ and the biquaternion norm; it shifts the Rindler time by $\eta\mapsto\eta-\theta_{\mathrm{rpd}}$; its generator is $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ with the two-sided action; the horizon is the zero-divisor cone of $\mathbb{B}_{\Phi}$.
 
@@ -414,7 +414,7 @@ $$
 \quad(\hbar=k_B=1)\;},
 $$
 
-or $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$ with the constants restored. The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\xi=a\zeta$, for which $\sum_\nu\varepsilon_\nu\,\xi_\nu\nabla_\nu\xi_\mu=a\xi_\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.
+or $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$ with the constants restored. The temperature is recomputed independently from the surface gravity of the redshift-normalized boost $\xi=a\zeta$, for which $\sum_\nu\varepsilon_\nu\,\xi_\nu\nabla_\nu\xi_\mu=a\xi_\mu$ on the horizon, giving $T=\kappa/(2\pi)=a/(2\pi)$.
 
 The framework supplies the algebraic home: the horizon as the zero-divisor cone, the generator in the informational sector $\mathbb{B}_{\Psi}$, the thermal circle along the material time $i r'_t$, and the two-sided action that distinguishes the boost from a rotation. It does not supply the Unruh effect, the Bisognano–Wichmann theorem, or a modular operator for a field algebra; those are imported, and the gap in the parent is left visible.
 
@@ -446,7 +446,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $H_{\mathrm{modular}}=-\log\Delta$ | Modular Hamiltonian (parent's notation) |
 | $W(\delta\tau)$ | Massless two-point function on the orbit |
 | $\beta=2\pi/a$ | KMS strip width in imaginary proper time |
-| $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$ | Unruh temperature |
+| $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$ | Unruh temperature |
 | $W^{\wedge}(\omega)$ | Rindler-frequency transform of $W$; $W^{\wedge}(-\omega)=\exp(-2\pi\omega)W^{\wedge}(\omega)$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form (inherited) |
 

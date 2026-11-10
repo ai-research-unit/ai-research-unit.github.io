@@ -10,9 +10,9 @@ Can a second limit of the same kind remove the quantum? The answer has two halve
 
 **What that removes is a partition, not a wave.** *The Quantum–Classical Divide in the Biquaternion Framework* places the divide in a count: two projective measurements make a case quantum, one makes it classical, and wave phenomena are not the criterion. A superposition of two rays is one excitation across two modes, so two partitions. A single ray is one partition carrying the excitation with no second to sort, which is the corpus's classical class, Subset III. The limit removes the second partition, and that is the sense in which it is non-quantum. Classical optics performs the same passage, so the mathematics alone does not settle it and the count does.
 
-**On the algebra, no.** The algebra carries no $\hbar$. It carries $k_{m}$, and $\hbar=\frac{m\,c}{k_{m}}$. A limit on $\hbar$ at fixed mass is a limit on $1/k_{m}$, which deepens the mass term instead of removing it.
+**On the algebra, no.** The algebra carries no $\hbar$. It carries $k_{m}$, which is $m\,c/\hbar$. A limit on $\hbar$ at fixed mass is a limit on $1/k_{m}$, which deepens the mass term instead of removing it.
 
-The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$, where $k_{t}^{\prime}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$ and $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout $\hbar=\frac{m\,c}{k_{m}}$, and $L$ is supplied by the problem.
+The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, wave-number biquaternion $\tilde K_{\Phi}=ik_{t}^{\prime}e_{t}+\vec k_{\Phi}$, where $k_{t}^{\prime}=E/(\hbar c)$, $\vec k_{\Phi}=\vec p/\hbar$ and $-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$, the three numbers of *The Three Wavenumbers of a Particle*. Throughout, $k_m=m\,c/\hbar$, and $L$ is supplied by the problem.
 
 **What is not new.** The corpus has the formal character of the $\hbar\to0$ limit in *Similitudes Between the Poisson Bracket and the Quantum Commutator*, the phase forms in two companions, the divide as a count in a third, and the centre as classical sector in a fourth. Added here: why the limit must be formal, the criterion as one inverse length, the refusal of $1/k_{m}$, the partition it removes, the phase route, and the derivation of the equations of motion. The relativistic side of the same expansion is carried out in the companion *Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form*.
 
@@ -24,7 +24,7 @@ The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mat
 |---|---|---|
 | the mass term | $k_{m}=\frac{m\,c}{\hbar}$, $\;-\langle\tilde K_{\Phi}\rangle_{\natural}=k_{m}^{2}$ | $k_{m}\to\infty$: the mass term diverges |
 | the phase | $\frac{S_{\tilde\Xi}}{\hbar}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
-| the bracket | $[x,p]=\frac{m\,c\,i}{k_{m}}$ | it vanishes: the Poisson bracket |
+| the bracket | $[x,p]=i\,\hbar$ | it vanishes: the Poisson bracket |
 
 **The three rows do not agree, and that is the argument.** The third is the classical result; the first is its opposite, since $\Box-k_{m}^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
 
@@ -58,10 +58,10 @@ The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}
 
 ## The Rule
 
-**Write the state and apply the momentum.** Take $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}\,i\,S_{\tilde\Xi}}{m\,c}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
+**Write the state and apply the momentum.** Take $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\nabla S_{\tilde\Xi}-\frac{m\,c\,i}{k_{m}}\nabla\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
+\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\nabla S_{\tilde\Xi}-i\,\hbar\nabla\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The real part keeps its leading term and the imaginary part carries the first correction. The two ratios are
@@ -81,14 +81,14 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 | | the $\beta$ limit | this limit |
 |---|---|---|
 | the object limited | the element $\tilde V_{\Phi}$ | the solution $\tilde{Ξ}_{\mathrm{sp}}$ |
-| the parts compared | $\gamma c$ against $\gamma v$ | $\nabla S_{\tilde\Xi}$ against $\frac{m\,c}{k_{m}}\nabla\ln A$ |
+| the parts compared | $\gamma c$ against $\gamma v$ | $\nabla S_{\tilde\Xi}$ against $\hbar\nabla\ln A$ |
 | the parameter | internal to the element | external to the algebra |
 | the dropped pieces | $\frac{3}{8}\beta^{4}$ temporal, $\frac{1}{2}\beta^{2}$ vector | order $\epsilon^{2}$ in the amplitude |
 | the error | a number, in closed form | an operator, with changing sign |
 
 ## The Classical Equations
 
-**Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $\frac{m\,c^{2}i}{k_{m}}\partial_{r_t'}\tilde\Xi_{\mathrm{sp}}=\tilde R_\Psi\tilde\Xi_{\mathrm{sp}}$, which with $r_t'=c\,t$ and $\hbar=\frac{m\,c}{k_{m}}$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
+**Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{r_t'}\tilde\Xi_{\mathrm{sp}}=\tilde R_\Psi\tilde\Xi_{\mathrm{sp}}$, which with $r_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
 i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi .
@@ -176,7 +176,7 @@ and the difference is the interference term. Read against the count, that is the
 
 ## Summary
 
-The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\hbar$ enters only as $\frac{m\,c}{k_{m}}$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
+The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\hbar$ enters only as $\hbar$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
 
 What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\nabla S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\nabla V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
 
@@ -186,10 +186,10 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 |---|---|
 | $\epsilon=\frac{1}{k_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
 | $L$ | The length over which the amplitude varies; supplied by the problem |
-| $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{k_{m}\,i\,S_{\tilde\Xi}}{m\,c}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
+| $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
 | $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\nabla^{2}A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
 | $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\nabla^{2}A}{A}$ | The quantum potential; central, real, and the term the limit drops |
-| $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\frac{m\,c}{k_{m}}$ |
+| $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\hbar$ |
 | $\beta=\lvert\vec v\rvert/c$ | The parameter of the other limit, internal to $\tilde V_{\Phi}$ |
 
 ## Further Reading

@@ -21,13 +21,13 @@ The article proceeds as follows. A section states why the time slicing fails, in
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
 G_{\mathrm{prop},\varepsilon}(r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\Big(\frac{k_m}{2\pi i c\varepsilon}\Big)^{3/2}
-\exp\Big[\frac{k_m\,i}{m\,c}\Big(\frac{m|r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
+\exp\Big[\frac{i}{\hbar}\Big(\frac{m|r_{\mathrm{src},x}\,\vec e_x+r_{\mathrm{src},y}\,\vec e_y+r_{\mathrm{src},z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
 $$
 and take the limit $N\to\infty$ of the product with the intermediate positions integrated.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**The failure.** For $V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\kappa/r$ the potential term is $+\kappa\varepsilon/r$ in the exponent, so for a path that passes within a distance $\lesssim\frac{k_m\,\kappa\,\varepsilon}{m\,c}$ of the origin the phase is not small, and the expansion of the potential to first order in $\varepsilon$ — the step that produces the Schrödinger equation in *The Schrödinger Path Integral in Biquaternionic Form* — is not controlled. The Gaussian in the kinetic term has width $\sqrt{\frac{c\,\varepsilon}{k_m}}$, so the slices that approach the origin are precisely the ones the kinetic term does not suppress, and the naive limit is not a well-defined kernel. This is the reason the source states that the time-sliced approximation "does not exist" for the Coulomb potential.
+**The failure.** For $V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\kappa/r$ the potential term is $+\kappa\varepsilon/r$ in the exponent, so for a path that passes within a distance $\lesssim\frac{\kappa\,\varepsilon}{\hbar}$ of the origin the phase is not small, and the expansion of the potential to first order in $\varepsilon$ — the step that produces the Schrödinger equation in *The Schrödinger Path Integral in Biquaternionic Form* — is not controlled. The Gaussian in the kinetic term has width $\sqrt{\frac{\hbar\,\varepsilon}{m}}$, so the slices that approach the origin are precisely the ones the kinetic term does not suppress, and the naive limit is not a well-defined kernel. This is the reason the source states that the time-sliced approximation "does not exist" for the Coulomb potential.
 
 **The interpretation in the algebra is immediate, and it is negative.** The potential is $\tilde V_{\Phi}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-(\kappa/r)e_t$: a central scalar, whose value is a function of $r$ only, with no vector part and no dependence on the sector. The singularity is therefore a singularity of a **central scalar function** — of the real number $r$ — and nothing in the two-sector structure of $\mathbb{B}$ intervenes. The algebra neither causes the failure nor cures it: it is finite-dimensional and supplies no measure, no short-time kernel, and no slicing. The failure is analytic, in the real configuration space, and the remedy below is analytic too, with the algebra entering only in the interpretation of the coordinate transformation and the axis of the pseudo-time.
 
@@ -57,7 +57,7 @@ $$
 $$
 which still carries an inverse radius in the measure of the new coordinate. The second ingredient removes it.
 
-**The reparametrisation is along the material time axis.** In the framework's coordinates the physical time enters the material coordinate as the coefficient $i r'_t$, so the substitution $dr'_t=r(s)\,ds$ is a path-dependent relabeling of the $i r'_t$ direction — the same axis on which the phase exponent $\frac{k_m\,i\,S}{m\,c}$ of *The Path Integral in Biquaternionic Form* lies, and the same axis whose relabeling as real is the Wick rotation of *Interpretation of the Wick Rotation in the Biquaternion Universe*. The pseudo-time is not a new dimension and not a new field; it is a reparametrisation of the one time the framework has, and the algebra names the axis without supplying the function $r(s)$. In this it is the closest analogue, on the configuration-space side, of the $i\epsilon$ of the propagator: the same $i r'_t$ direction, carrying the analyticity that makes the integral converge.
+**The reparametrisation is along the material time axis.** In the framework's coordinates the physical time enters the material coordinate as the coefficient $i r'_t$, so the substitution $dr'_t=r(s)\,ds$ is a path-dependent relabeling of the $i r'_t$ direction — the same axis on which the phase exponent $\frac{i\,S}{\hbar}$ of *The Path Integral in Biquaternionic Form* lies, and the same axis whose relabeling as real is the Wick rotation of *Interpretation of the Wick Rotation in the Biquaternion Universe*. The pseudo-time is not a new dimension and not a new field; it is a reparametrisation of the one time the framework has, and the algebra names the axis without supplying the function $r(s)$. In this it is the closest analogue, on the configuration-space side, of the $i\epsilon$ of the propagator: the same $i r'_t$ direction, carrying the analyticity that makes the integral converge.
 
 ## The Duru–Kleinert Transformation and the Harmonic Form
 
@@ -143,7 +143,7 @@ so that on the KS constraint $\big|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\
 $$
 S\;\longrightarrow\;\int ds\;\Big[\,2m\Big|\frac{d\varsigma}{ds}\Big|^2-E\,\langle \varsigma\rangle_{\natural}-\kappa\,\Big],
 $$
-the action of a four-dimensional isotropic harmonic oscillator, whose Mehler kernel yields the Coulomb Green's function and the spectrum $E_n=-m\kappa^2/(\frac{2\,m^{2}\,c^{2}\,n^{2}}{k_m^{2}})$ with the degeneracy $n^2$.
+the action of a four-dimensional isotropic harmonic oscillator, whose Mehler kernel yields the Coulomb Green's function and the spectrum $E_n=-m\kappa^2/(2\,\hbar^{2}\,n^{2})$ with the degeneracy $n^2$.
 
 The algebra's contribution is an interpretation. The Coulomb potential is a **central scalar** $V(r)e_t$, so the problem is a central-scalar configuration and the sector structure plays no part. The KS transformation is the **square root of the position in the quaternion algebra**: the radius is the algebra's norm, $r=\langle \varsigma\rangle_{\natural}$, and the Coulomb singularity is $1/\langle \varsigma\rangle_{\natural}$, the reciprocal of that norm. The pseudo-time is a path-dependent relabeling of the **material time axis**, the same $i r'_t$ direction as the phase exponent of the path-integral article and the Wick rotation. What the algebra does **not** supply is the transformation itself, the choice of pseudo-time, the KS map's detailed form, the reduction to the oscillator, the Mehler kernel — or the functional measure and its Jacobian, which is the object that makes the transformation exact and is the algebra's standing gap. The path-integral route reaches the spectrum the hydrogen article reaches by separation, and the algebra names why the route is natural — the potential is an inverse norm and the transformation is a square root — without deriving it.
 
@@ -156,7 +156,7 @@ The algebra's contribution is an interpretation. The Coulomb potential is a **ce
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate; $r=\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb parameter |
 | $\tilde V_{\Phi}=-(\kappa/r)e_t\in\mathbb{B}_{C}$ | Coulomb potential; a central scalar |
-| $E_n=-m\kappa^2/(\frac{2\,m^{2}\,c^{2}\,n^{2}}{k_m^{2}})$ | Bound-state spectrum (from the hydrogen article) |
+| $E_n=-m\kappa^2/(2\,\hbar^{2}\,n^{2})$ | Bound-state spectrum (from the hydrogen article) |
 | $dr'_t=r\,ds$, $ds=dr'_t/r$ | Duru–Kleinert pseudo-time; path-dependent, along $i r'_t$ |
 | $\varsigma=(\varsigma_1,\varsigma_2,\varsigma_3,\varsigma_0)\in\mathbb{R}^4$ | Kustaanheimo–Stiefel coordinates |
 | $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t\in\mathbb{H}$ | The quaternion carried by $\varsigma$ |

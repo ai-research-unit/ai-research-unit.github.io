@@ -7,9 +7,9 @@
 **The temperature enters as a length, and the article quotes it and derives nothing.** From [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html),
 
 $$
-\beta=\frac{m\,c}{k_m\,k_{B}\,T},
+\beta=\frac{\hbar}{k_{B}\,T},
 \qquad
-c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T},
+c\beta=\frac{\hbar\,c}{k_{B}\,T},
 $$
 
 the imaginary-time circumference and the same span in the material sector's units. **Both displays are quotations.** The article uses $\beta$ as the variable conjugate to the entropy density, that is, as the variable in which the Gibbs–Duhem relation reads $\partial p_{\mathrm{th}}/\partial\beta=-(\beta/T)\,s_{\mathrm{ent}}$, which [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) established; it does not re-derive the relation between $\beta$ and $T$, and a reader who wants the counting of Matsubara modes goes to the article cited.
@@ -59,7 +59,7 @@ the familiar $p=\tfrac23w$ of a non-relativistic degenerate gas. **The arithmeti
 
 ### Where $\beta$ enters, and the four-thirds case in the corpus's variable
 
-**The period enters through the normalisation of the thermal state, and for radiation it enters as a pure power.** With $T=A/\beta$ and $A=mc/(k_mk_B)$,
+**The period enters through the normalisation of the thermal state, and for radiation it enters as a pure power.** With $T=A/\beta$ and $A=\hbar/k_B$,
 
 $$
 p_{\mathrm{th}}=\frac{aA^{4}}{3\beta^{4}},
@@ -120,7 +120,7 @@ p_{\mathrm{qnt}}\sim\frac{\hbar^{2}}{m}\frac{\rho_{\mathrm{num}}}{L^{2}},
 \frac{p_{\mathrm{qnt}}}{w_{\mathrm{fl}}}\sim\frac{\hbar^{2}}{m^{2}c^{2}L^{2}}=\frac{1}{k_m^{2}L^{2}},
 $$
 
-where the second step uses $w_{\mathrm{fl}}\sim\rho_{\mathrm{num}}mc^{2}$ for a fluid at rest and $\hbar=mc/k_m$ for the field's own length. **The ratio is the square of the field's length $1/k_m$ to the density's length — the corpus's only dimensionless small parameter in this sector** — and it is the expansion parameter of every gradient correction in the category.
+where the second step uses $w_{\mathrm{fl}}\sim\rho_{\mathrm{num}}mc^{2}$ for a fluid at rest and $\hbar/(mc)$ for the field's own length. **The ratio is the square of the field's length $1/k_m$ to the density's length — the corpus's only dimensionless small parameter in this sector** — and it is the expansion parameter of every gradient correction in the category.
 
 **The numerical coefficient, for a Gaussian.** With $\rho_{\mathrm{num}}=\rho_{0}\exp(-r^{2}/(2\sigma^{2}))$ in one dimension,
 
@@ -130,7 +130,7 @@ Q_{\mathrm{qnt}}(0)=\frac{\hbar^{2}}{4m\sigma^{2}},
 \frac{p_{\mathrm{qnt}}(0)}{w_{\mathrm{fl}}}=\frac{1}{4k_m^{2}\sigma^{2}},
 $$
 
-and in three dimensions the central value is three times larger, $Q_{\mathrm{qnt}}(0)=3\hbar^{2}/(4m\sigma^{2})$, because the Laplacian has three terms. **The factor $\tfrac14$ in one dimension and $\tfrac34$ in three are the whole coefficient of the correction**, so a reader who wants the size of the effect at a given width has a number and not an order of magnitude.
+and in three dimensions the central value is three times larger, $Q_{\mathrm{qnt}}(0)=3\hbar^{2}/(4m\sigma^{2})$, because the Laplacian has three terms. **The factor $\tfrac14$ in one dimension and $\tfrac34$ in three are the whole coefficient of the correction**, so a reader who wants the size of the effect at a given width has a number and not an order of magnitude. **The letter $\sigma$ is the width of the density as it appears in the exponent above, and not the amplitude's**: the density falls by $1/e$ at $r=\sqrt2\,\sigma$, so the amplitude's width is $\sqrt2\,\sigma$. [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes the same state as $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma_{\mathrm{qst}}^{2})$, whose $\sigma_{\mathrm{qst}}$ is this $\sigma$ times $\sqrt2$, and its central coefficient $1/(2m\sigma_{\mathrm{qst}}^{2})$ is this article's $1/(4m\sigma^{2})$ with the substitution. **The two agree, and a reader who equates the two letters without the $\sqrt2$ sees a factor two that is a convention and not a disagreement.**
 
 | $k_m\sigma$ | $p_{\mathrm{qnt}}(0)/w_{\mathrm{fl}}$, one dimension | three dimensions |
 |---|---|---|
@@ -232,7 +232,7 @@ which is the pressure of the state that [The Polar Form of the Klein–Gordon Eq
 
 ## Summary
 
-The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with the thermal part a function of the proper density and the period, $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the quantum part a functional of the density field. The period is quoted: $\beta=mc/(k_mk_BT)$, a length, with $c\beta=mc^{2}/(k_mk_BT)$; nothing about it is derived here.
+The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, with the thermal part a function of the proper density and the period, $p_{\mathrm{th}}=p_{\mathrm{th}}(\rho_{\mathrm{num}},\beta)$, and the quantum part a functional of the density field. The period is quoted: $\beta=\hbar/(k_BT)$, a length, with $c\beta=\hbar\,c/(k_BT)$; nothing about it is derived here.
 
 The thermal part closes through $p_{\mathrm{th}}=n_{\mathrm{num}}(\partial w_{\mathrm{fl}}/\partial n_{\mathrm{num}})_{s_{\mathrm{ent}}}-w_{\mathrm{fl}}$, which returns $p=\tfrac23w$ for a non-relativistic degenerate gas ($\gamma=\tfrac53$), $p=\tfrac13w$ for radiation ($\gamma=\tfrac43$), and $p=(\gamma-1)w$ for a general polytrope. In the corpus's variable radiation reads $p_{\mathrm{th}}=aA^{4}/(3\beta^{4})$ and $s_{\mathrm{ent}}=4aA^{3}/(3\beta^{3})$, with $\partial p_{\mathrm{th}}/\partial\beta=-4p_{\mathrm{th}}/\beta$ and the Gibbs–Duhem check $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ returning $4aT^{3}/3$. The thermal part is not barotropic in general; the barotropic case is the degenerate limit.
 
@@ -253,12 +253,12 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |
-| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
-| $c\beta=\frac{m\,c^{2}}{k_m\,k_{B}\,T}$ | The same span in material units |
+| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature, the imaginary-time circumference; a length |
+| $c\beta=\frac{\hbar\,c}{k_{B}\,T}$ | The same span in material units |
 | $T=A/\beta$ | Temperature |
-| $A=\frac{m\,c}{k_m\,k_{B}}$ | The constant relating period and temperature |
+| $A=\frac{\hbar}{k_{B}}$ | The constant relating period and temperature |
 | $k_B$, $k_m$ | Boltzmann's constant, mass wave number |
-| $\hbar=mc/k_m$ | Action quantum |
+| $\hbar$ | Action quantum |
 | $m$, $c$ | Mass, speed of light in the medium |
 | $\gamma$ | Polytropic index, $1+p_{\mathrm{th}}/w_{\mathrm{fl}}$ |
 | $K$ | Polytropic constant |

@@ -203,7 +203,7 @@ $$
 \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $\frac{k_m\,i\,\tilde{P}_{\Phi}\,p}{m\,c}$, so the mass shell above is the level set of $\langle\tilde P_{\Phi}\rangle_{\natural}$. Here $\frac{m\,c}{k_m\,p}$ is the momentum length. Here $\hbar/(mc)$ is the mass length.
+with $\tilde\nabla$ the biquaternionic gradient. Every derivative acts by left multiplication, so no right multiplication is among its terms and no chirality operator can appear. On a plane wave $\tilde\nabla$ acts as left multiplication by $\frac{i\,\tilde{P}_{\Phi}\,p}{\hbar}$, so the mass shell above is the level set of $\langle\tilde P_{\Phi}\rangle_{\natural}$. Here $\frac{\hbar}{p}$ is the momentum length. Here $\hbar/(mc)$ is the mass length.
 
 The **pair equation** is the same dynamics written as two first-order lines on the pair of fields,
 

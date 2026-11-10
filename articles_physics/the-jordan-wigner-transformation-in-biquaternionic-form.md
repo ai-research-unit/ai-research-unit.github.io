@@ -6,7 +6,7 @@ A spin-$\tfrac12$ chain and a chain of fermionic modes obey different commutatio
 
 This article establishes:
 
-- **The one-site case is the algebra's own identity.** The ladder of a site is nilpotent, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$ and $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}$, so a one-site spin ladder *is* a fermionic mode with no string attached. There is nothing to transform at one site.
+- **The one-site case is the algebra's own identity.** The ladder of a site is nilpotent, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\hbar^{2}\,e_{t}$ and $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=i\,\hbar^{2}\,\vec e_{z}$, so a one-site spin ladder *is* a fermionic mode with no string attached. There is nothing to transform at one site.
 - **The string.** For $N$ sites the extension must carry a string, and the string is the tensor product of the one-site parities, $\prod_{k<j}i\vec e_z=\prod_{k<j}(-1)^{n_k}$. It lies in $\bigotimes_j\mathbb{B}_j$ and not in $\mathbb{B}$, and at one site it is the empty product, the identity.
 - **The transformation, its parity and its nonlocality.** The two lists generate one algebra, of complex dimension $4^N$, and the change between them is the transformation. It respects the parity, which is one element on both lists, and it is not local: a one-site element of the spin list becomes a string-laden element of the mode list. The transformation is a choice of square root of the chain algebra, and the ordering of the sites is the branch.
 - **The consequences.** The hopping identity, the number and parity identities, the inverse map, the free solution of the XY chain, and the boundary term that distinguishes the two parity sectors.
@@ -14,7 +14,7 @@ This article establishes:
 The standard material is transcribed with explicit signs; the biquaternion content is the one-site identity and the parity reading of the string.
 
 $$
-\boxed{\;\tilde C_j=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{m\,c} ,
+\boxed{\;\tilde C_j=\frac{\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{\hbar} ,
 \qquad
 \tilde Z_{<j}=\prod_{k<j}\tilde Z_k ,
 \qquad
@@ -25,12 +25,12 @@ with $\tilde Z_k=i\vec e_z$ the parity of site $k$ and the spin-down value $\til
 
 ## The One-Site Case
 
-The chain's algebra contains a fermionic mode, and it contains it with no string and no extension. The spin of a site is $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, the element the conventions fix (*Algebra and Element Conventions*, §*The Observables, the States and the Quantum Objects*), and the ladder is the derived pair
+The chain's algebra contains a fermionic mode, and it contains it with no string and no extension. The spin of a site is $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, the element the conventions fix (*Algebra and Element Conventions*, §*The Observables, the States and the Quantum Objects*), and the ladder is the derived pair
 
 $$
-\tilde S_{\Psi,+}=\tilde S_{\Psi,x}+i\tilde S_{\Psi,y}=\frac{m\,c}{2\,k_m}\bigl(i\vec e_x-\vec e_y\bigr) ,
+\tilde S_{\Psi,+}=\tilde S_{\Psi,x}+i\tilde S_{\Psi,y}=\frac{\hbar}{2}\bigl(i\vec e_x-\vec e_y\bigr) ,
 \qquad
-\tilde S_{\Psi,-}=\tilde S_{\Psi,x}-i\tilde S_{\Psi,y}=\frac{m\,c}{2\,k_m}\bigl(i\vec e_x+\vec e_y\bigr) .
+\tilde S_{\Psi,-}=\tilde S_{\Psi,x}-i\tilde S_{\Psi,y}=\frac{\hbar}{2}\bigl(i\vec e_x+\vec e_y\bigr) .
 $$
 
 **The two squares vanish, and the two products are two elements of $\mathbb{B}_{\Psi}$.** From $i^2=-1$, $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,
@@ -40,9 +40,9 @@ $$
 $$
 
 $$
-\tilde S_{\Psi,+}\tilde S_{\Psi,-}=\frac{m^{2}\,c^{2}}{4\,k_m^{2}}\bigl(i^2\vec e_x^2+i\vec e_x\vec e_y-i\vec e_y\vec e_x-\vec e_y^2\bigr)=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}\bigl(e_t+i\vec e_z\bigr) ,
+\tilde S_{\Psi,+}\tilde S_{\Psi,-}=\frac{\hbar^{2}}{4}\bigl(i^2\vec e_x^2+i\vec e_x\vec e_y-i\vec e_y\vec e_x-\vec e_y^2\bigr)=\frac{\hbar^{2}}{2}\bigl(e_t+i\vec e_z\bigr) ,
 \qquad
-\tilde S_{\Psi,-}\tilde S_{\Psi,+}=\frac{m^{2}\,c^{2}}{2\,k_m^{2}}\bigl(e_t-i\vec e_z\bigr) .
+\tilde S_{\Psi,-}\tilde S_{\Psi,+}=\frac{\hbar^{2}}{2}\bigl(e_t-i\vec e_z\bigr) .
 $$
 
 Summing the two products gives the anticommutator, subtracting them gives the commutator, and each square vanishes:
@@ -52,14 +52,14 @@ $$
 \qquad
 \tilde S_{\Psi,-}^2=0 ,
 \qquad
-\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}},
+\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\hbar^{2}\,e_{t},
 \qquad
-[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}}.
+[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=i\,\hbar^{2}\,\vec e_{z}}.
 $$
 
 **The pair is fermionic, and the commutator is not central.** The anticommutator is a multiple of the identity and the commutator is not: the centre of $\mathbb{B}$ is $\mathbb{C}e_t$, while $i\vec e_z$ is a Hermitian element of $\mathbb{B}_{\Psi}$ outside it. The ladder therefore cannot satisfy a bosonic relation with a scalar right-hand side, and there is nothing here to bosonize. Two nilpotent elements that anticommute to the identity are all the algebra needs for one mode.
 
-**The one-site transformation is an identity.** The mode of one site is $\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c}$. This is the one-site Jordan–Wigner transformation, and it is an identity inside $\mathbb{B}$ rather than a transformation: the spin ladder and the mode are one element. The reason it needs no string is structural — the string is a product of the *other* sites' parities, and at one site there are no other sites, so the product is empty and equals $e_t$. The algebra's contribution to the story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the mode are two readings of one element, and a difference appears only when a *second* site is present.
+**The one-site transformation is an identity.** The mode of one site is $\frac{\tilde{S}_{\Psi,+}}{\hbar}$. This is the one-site Jordan–Wigner transformation, and it is an identity inside $\mathbb{B}$ rather than a transformation: the spin ladder and the mode are one element. The reason it needs no string is structural — the string is a product of the *other* sites' parities, and at one site there are no other sites, so the product is empty and equals $e_t$. The algebra's contribution to the story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the mode are two readings of one element, and a difference appears only when a *second* site is present.
 
 ## The Declared Axis
 
@@ -92,9 +92,9 @@ Let the chain carry $N$ sites, with chain algebra $\bigotimes_{j=1}^N\mathbb{B}_
 **The mode and its star.** Define, for $j=1,\dots,N$,
 
 $$
-\tilde C_j=\Bigl(\prod_{k<j}\tilde Z_k\Bigr)\frac{k_m\,\tilde{S}_{\Psi,+,j}}{m\,c} ,
+\tilde C_j=\Bigl(\prod_{k<j}\tilde Z_k\Bigr)\frac{\tilde{S}_{\Psi,+,j}}{\hbar} ,
 \qquad
-\tilde C_j^{*}=\Bigl(\prod_{k<j}\tilde Z_k\Bigr)\frac{k_m\,\tilde{S}_{\Psi,-,j}}{m\,c} ,
+\tilde C_j^{*}=\Bigl(\prod_{k<j}\tilde Z_k\Bigr)\frac{\tilde{S}_{\Psi,-,j}}{\hbar} ,
 $$
 
 with $\tilde Z_{<j}=\prod_{k<j}\tilde Z_k$ the string of site $j$ and $\tilde Z_{<1}=e_t$. The second is the star of the first, because $\tilde Z_k^{*}=\tilde Z_k$ and $\tilde S_{\Psi,+,j}^{*}=\tilde S_{\Psi,-,j}$. The string is a product of parities, hence Hermitian and of square the identity,
@@ -154,7 +154,7 @@ The string is not a novel object. It is the product of the parities of the sites
 $$
 \tilde Z_{<j}=\prod_{k<j}\tilde Z_k=\prod_{k<j}(-1)^{n_k} ,
 \qquad
-(-1)^{n}=i\vec e_z=\frac{2\,k_m\,\tilde{S}_{\Psi,z}}{m\,c} ,
+(-1)^{n}=i\vec e_z=\frac{2\,\tilde{S}_{\Psi,z}}{\hbar} ,
 $$
 
 the one-site factor being the parity element the parents isolate in $\mathbb{B}_{\Psi}$. The Jordan–Wigner string is therefore the tensor product of the one-site biquaternion parities,
@@ -231,7 +231,7 @@ The biquaternion reading is the same as before: the increments of the cochain ar
 
 **The algebra's own.**
 
-- *The one-site identity.* The ladder of a site is a pair of nilpotents with $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$ inside $\mathbb{B}$, and the transformation has a one-site fixed point.
+- *The one-site identity.* The ladder of a site is a pair of nilpotents with $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\hbar^{2}\,e_{t}$ inside $\mathbb{B}$, and the transformation has a one-site fixed point.
 - *The string as the product of one-site parities.* $\prod_{k<j}\tilde Z_k$, with $\tilde Z_k=i\vec e_z$ the parity element of a site. The string is the tensor product of the parities of the algebra, and its non-diagonality is the external grading the spin–statistics companion records.
 - *The parity statement.* The parity is one element, $\prod_j\tilde Z_j$, on both lists, and the transformation respects it: the site parities are even and the modes are odd. What the transformation does not preserve is the site structure, since a one-site spin element becomes a string-laden mode element.
 - *The declared axis.* The parity is diagonal in the frame built on the declared unit and not in the coefficient basis, and the diagonal products of the two bases are different fours. The axis is a property of the basis, and no unit is privileged by the algebra.
@@ -350,9 +350,9 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The Jordan–Wigner transformation in biquaternion form has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the ladder $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp\vec e_y)$ satisfies $\tilde S_{\Psi,\pm}^2=0$, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$ and $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}$, so a one-site spin ladder *is* a fermionic mode and the string is the empty product.
+The Jordan–Wigner transformation in biquaternion form has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the ladder $\tilde S_{\Psi,\pm}=\frac{\hbar}{2}(i\vec e_x\mp\vec e_y)$ satisfies $\tilde S_{\Psi,\pm}^2=0$, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\hbar^{2}\,e_{t}$ and $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=i\,\hbar^{2}\,\vec e_{z}$, so a one-site spin ladder *is* a fermionic mode and the string is the empty product.
 
-For $N$ sites, with $\tilde C_j=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{m\,c}$ and the spin-down value occupied,
+For $N$ sites, with $\tilde C_j=\frac{\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{\hbar}$ and the spin-down value occupied,
 
 $$
 \{\tilde C_i,\tilde C_j^{*}\}=\delta_{ij}\,e_t ,
@@ -377,11 +377,11 @@ The transformation is a change of generators of one algebra — both lists gener
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp\vec e_y)$ | Spin of a site; the ladder is derived from it |
-| $\tilde S_{\Psi,\pm}^2=0$, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}}$, $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=\frac{m^{2}\,c^{2}\,i\,\vec e_{z}}{k_m^{2}}$ | Canonical anticommutator inside the algebra; the commutator is not central |
-| $\tilde Z_j=i\vec e_z$ at site $j$ | Parity of a site, $=\frac{2\,k_m\,\tilde{S}_{\Psi,z,j}}{m\,c}=(-1)^{n_j}$ |
+| $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{\hbar}{2}(i\vec e_x\mp\vec e_y)$ | Spin of a site; the ladder is derived from it |
+| $\tilde S_{\Psi,\pm}^2=0$, $\{\tilde S_{\Psi,+},\tilde S_{\Psi,-}\}=\hbar^{2}\,e_{t}$, $[\tilde S_{\Psi,+},\tilde S_{\Psi,-}]=i\,\hbar^{2}\,\vec e_{z}$ | Canonical anticommutator inside the algebra; the commutator is not central |
+| $\tilde Z_j=i\vec e_z$ at site $j$ | Parity of a site, $=\frac{2\,\tilde{S}_{\Psi,z,j}}{\hbar}=(-1)^{n_j}$ |
 | $\tilde Z_{<j}=\prod_{k<j}\tilde Z_k$ | The string, $e_t$ at $j=1$; Hermitian, of square $e_t$ |
-| $\tilde C_j=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{m\,c}$, $\tilde C_j^{*}=\frac{k_m\,\tilde{Z}_{<j}\,\tilde{S}_{\Psi,-,j}}{m\,c}$ | Mode and its star |
+| $\tilde C_j=\frac{\tilde{Z}_{<j}\,\tilde{S}_{\Psi,+,j}}{\hbar}$, $\tilde C_j^{*}=\frac{\tilde{Z}_{<j}\,\tilde{S}_{\Psi,-,j}}{\hbar}$ | Mode and its star |
 | $\{\tilde C_i,\tilde C_j\}=0$, $\{\tilde C_i,\tilde C_j^{*}\}=\delta_{ij}e_t$ | Canonical anticommutators (verified, error $0$) |
 | $\tilde N_j=\tilde C_j^{*}\tilde C_j=\tfrac12(e_t-\tilde Z_j)$ | Occupation of a site |
 | $\prod_j\tilde Z_j$ | Whole-chain parity; boundary-condition sectors |

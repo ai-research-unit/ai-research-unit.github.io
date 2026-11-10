@@ -71,7 +71,7 @@ $$
 and the current is the antisymmetric bilinear carrying one gradient,
 
 $$
-\vec J=\frac{c}{2\,k_{m}\,i}\,\mathrm{Tr}\!\left(\tilde\Xi^{\dagger}\vec\nabla\tilde\Xi-\left(\vec\nabla\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
+\vec J=\frac{\hbar}{2\,i\,m}\,\mathrm{Tr}\!\left(\tilde\Xi^{\dagger}\vec\nabla\tilde\Xi-\left(\vec\nabla\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
 $$
 
 The pair satisfies
@@ -90,7 +90,7 @@ $$
 \rho=\frac{i}{2\,k_{m}}\left(\tilde\Xi^{*}\partial_{r_{t}^{\prime}}\tilde\Xi-\tilde\Xi\,\partial_{r_{t}^{\prime}}\tilde\Xi^{*}\right),
 $$
 
-and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{\omega}{c\,k_{m}}\lvert N\rvert^{2}$.
+and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{\hbar\,\omega}{c^{2}\,m}\lvert N\rvert^{2}$.
 
 **Why the density uses $\dagger$ and this one uses $*$, and why the indefiniteness is not the conjugation's fault.** The state module is a minimal left ideal, $\mathbb{B}\tilde\Pi$ for an idempotent $\tilde\Pi$, and a left ideal is a subspace of a matrix algebra on which the pairing that is always available is the trace of the adjoint, $\mathrm{Tr}(\tilde Q_1^{\dagger}\tilde Q_2)$. That pairing is positive definite on $\mathbb{B}\tilde\Pi$ and this needs no argument beyond the idempotent: writing $\tilde Q=\tilde M\tilde\Pi$, one has $\mathrm{Tr}(\tilde\Pi\tilde M^{\dagger}\tilde M\tilde\Pi)=\lVert\tilde M\tilde\Pi\rVert^{2}\ge0$, with equality only at $\tilde Q=0$. So the density is $\tilde\Xi^{\dagger}\tilde\Xi$ because the carrier is that ideal, not because a choice was made among forms. In the full algebra the pairing is the algebra's own conjugation, and there $\tilde\Xi^{*}\tilde\Xi=a^{2}+\lvert\vec v\rvert^{2}$ is a central scalar that is real only on the real slice, so it is no longer a modulus. But that is not what makes the Klein–Gordon density indefinite: the **derivative** is. The bracket $\tilde\Xi^{*}\partial\tilde\Xi-\tilde\Xi\,\partial\tilde\Xi^{*}$ is a Wronskian, antisymmetric in the two solutions, so it changes sign when the frequency does. A second-order equation needs two initial data, and a Wronskian is the only bilinear available; no single-element form can be its conserved count. The corpus's Klein–Gordon article states the negative-probability problem as a property of the current and not of the notation, and this is why.
 
@@ -174,7 +174,7 @@ $$
 **One substitution turns the quantum equation into the classical relation.** In the corpus's form the equation is
 
 $$
-\frac{m\,c^{2}i}{k_{m}}\partial_{r_{t}^{\prime}}\tilde\Xi_{\mathrm{sp}}=\tilde R_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
+i\,\hbar\,c\partial_{r_{t}^{\prime}}\tilde\Xi_{\mathrm{sp}}=\tilde R_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
 $$
 
 which with $r_{t}^{\prime}=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,

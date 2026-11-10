@@ -141,7 +141,7 @@ the scalar propagator is the integral over a proper time $T$ of a kernel $\langl
 
 $$
 \Delta_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
-\exp(\frac{k_m\,i}{m\,c}S_0[x]),
+\exp(\frac{i}{\hbar}S_0[x]),
 \qquad
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \hbar^{2}k_m^{2}\right),
 \qquad \hbar^{2}k_m^{2}=m^{2}c^{2},
@@ -210,7 +210,7 @@ with the unit $e_t$ of the algebra in place of the identity of the older display
 The path integral over the odd variables, with the boundary condition appropriate to the object computed, is a **spin factor** $Ξ[x]$ multiplying the scalar measure:
 
 $$
-\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(\frac{k_m\,i}{m\,c}S_0[x])\;}
+\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(\frac{i}{\hbar}S_0[x])\;}
 $$
 
 with the spin factor

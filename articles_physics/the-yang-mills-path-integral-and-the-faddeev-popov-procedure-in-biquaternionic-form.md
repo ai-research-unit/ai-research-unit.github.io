@@ -28,7 +28,7 @@ $$
 \qquad
 T_a=\tfrac12 \vec e_a ,\ \ [T_a,T_b]=\sum_c\varepsilon_{abc}T_c ,\ \ \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
-with the connection $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=\frac{k_m\,ϙ}{m\,c}$, the covariant derivative $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$, and in the Hermitian-generator realization $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, with $f_{abc}=2\varepsilon_{abc}$ in that realization. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f_{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The constants are carried in every exponent, which reads $\frac{k_m\,i}{m\,c}S$ with $\hbar=m\,c/k_m$; no unit is set to one.
+with the connection $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=\frac{ϙ}{\hbar}$, the covariant derivative $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$, and in the Hermitian-generator realization $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, with $f_{abc}=2\varepsilon_{abc}$ in that realization. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f_{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The constants are carried in every exponent, which reads $\frac{i}{\hbar}S$ with $\hbar$ the action quantum; no unit is set to one.
 
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the gauge-fixing parameter and the propagator.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the non-abelian curvature, the field equation and covariant conservation.
@@ -61,10 +61,10 @@ The integration variable is an $\mathrm{SU}(2)$-valued one-form, and the measure
 $$
 \mathcal{D}\mathcal{A}=\prod_{\mu=0}^{3}\prod_{a=1}^{3}\mathcal{D}\mathcal{A}_{\mu a} ,
 $$
-written in components because $\mathrm{SU}(2)$ is real three-dimensional. The gauge transformation is a shift of the connection by $\frac{i}{\kappa}(D_\mu \tilde U)\tilde U^{-1}$ with $(D_\mu \tilde U)=\partial/\partial R_\mu \tilde U+i\kappa[\mathcal{A}_\mu,\tilde U]$ the covariant derivative of the group-valued function; the orbit through $\mathcal{A}$ is the set of all $\mathcal{A}^{\tilde U}$. The integrand $\exp(\frac{k_m\,i}{m\,c}S_{\mathrm{YM}})$ is constant on the orbit, and the measure is invariant under the shift, so the integral factorizes as in the abelian case,
+written in components because $\mathrm{SU}(2)$ is real three-dimensional. The gauge transformation is a shift of the connection by $\frac{i}{\kappa}(D_\mu \tilde U)\tilde U^{-1}$ with $(D_\mu \tilde U)=\partial/\partial R_\mu \tilde U+i\kappa[\mathcal{A}_\mu,\tilde U]$ the covariant derivative of the group-valued function; the orbit through $\mathcal{A}$ is the set of all $\mathcal{A}^{\tilde U}$. The integrand $\exp(\frac{i}{\hbar}S_{\mathrm{YM}})$ is constant on the orbit, and the measure is invariant under the shift, so the integral factorizes as in the abelian case,
 $$
-Z=\int\mathcal{D}\mathcal{A}\,\exp(\frac{k_m\,i}{m\,c}S_{\mathrm{YM}}[\mathcal{A}])
-=\mathrm{Vol}(\mathcal{G})\int_{\text{orbits}}\mathcal{D}\mathcal{A}_{\mathrm{rep}}\,\exp(\frac{k_m\,i}{m\,c}S_{\mathrm{YM}}[\mathcal{A}]),
+Z=\int\mathcal{D}\mathcal{A}\,\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}])
+=\mathrm{Vol}(\mathcal{G})\int_{\text{orbits}}\mathcal{D}\mathcal{A}_{\mathrm{rep}}\,\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
 $$
 with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge transformations. The factor is an artifact of the parameterization and must be removed; the Faddeev–Popov construction removes it, and in the non-abelian case it does so at the cost of the determinant and the ghosts.
 
@@ -82,7 +82,7 @@ $$
 $$
 because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
 $$
-Z=\int\mathcal{D}\mathcal{A}\;\Delta[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{k_m\,i}{m\,c}S_{\mathrm{YM}}[\mathcal{A}]),
+Z=\int\mathcal{D}\mathcal{A}\;\Delta[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
 $$
 in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\Delta$.
 
@@ -163,7 +163,7 @@ S_{\mathrm{gf}}=-\frac{1}{2\zeta}\int d^4r\,\sum_a\left(\sum_\mu\partial/\partia
 $$
 where $\zeta$ is the gauge parameter. The gauge-fixing term is the elimination of the Nakanishi–Lautrup field $B_a$ of the BRST companion, whose equation of motion is $B_a=-\zeta^{-1}\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}$; the three terms together are no longer gauge invariant but are invariant under the nilpotent odd derivation $s$, a statement developed in the BRST companion and not repeated here. The partition function that the ghosts define,
 $$
-Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;\exp(\frac{k_m\,i}{m\,c}S),
+Z=\int\mathcal{D}\mathcal{A}\,\mathcal{D}c\,\mathcal{D}\bar c\;\exp(\frac{i}{\hbar}S),
 $$
 is the Yang–Mills path integral of the framework.
 
@@ -200,7 +200,7 @@ with $C_2(G)=N=2$ the adjoint quadratic Casimir of $SU(2)$; the coefficient is p
 
 The classical equation of the companion article is $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$, with $\sum_\nu D_\nu J_\nu=0$. Inside the path integral it becomes an expectation value, and the derivation is the Schwinger–Dyson argument. For any functional $\mathcal{O}[\mathcal{A}]$ of the connection,
 $$
-0=\int\mathcal{D}\mathcal{A}\,\frac{\delta}{\delta\mathcal{A}_{\mu a}(x)}\Big(\mathcal{O}[\mathcal{A}]\,\exp(\frac{k_m\,i}{m\,c}S)\Big),
+0=\int\mathcal{D}\mathcal{A}\,\frac{\delta}{\delta\mathcal{A}_{\mu a}(x)}\Big(\mathcal{O}[\mathcal{A}]\,\exp(\frac{i}{\hbar}S)\Big),
 $$
 because the integral of a total derivative in field space vanishes. Performing the derivative,
 $$
@@ -287,7 +287,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $f_{abc}=2\varepsilon_{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $\vec e_a$ ($f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12\vec e_a$) |
-| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, $\kappa=\frac{k_m\,ϙ}{m\,c}$ | Connection and coupling |
+| $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, $\kappa=\frac{ϙ}{\hbar}$ | Connection and coupling |
 | $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Covariant derivative; adjoint action |
 | $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |

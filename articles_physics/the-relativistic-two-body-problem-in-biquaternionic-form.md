@@ -444,7 +444,7 @@ the light daughter carrying the larger share. The conservation law $\tilde{P}_{\
 
 Everything above is kinematic. The first systematic dynamics of two interacting relativistic spin-$\tfrac12$ particles is the **Breit equation** (Breit 1929), also called the **Dirac–Coulomb–Breit equation**. For $N$ particles it reads
 
-$$\frac{m\,c^{2}\,i}{k_m}\frac{\partial\theta_{\mathrm{rpd}}}{\partial  r'_t} = \left(\sum_i  H_{\mathrm D}(i) + \sum_{i>j}\frac{ϙ_iϙ_j}{r_{ij}} + \sum_{i>j} B_{ij}\right)\theta_{\mathrm{rpd}} ,
+$$i\,\hbar\,c\frac{\partial\theta_{\mathrm{rpd}}}{\partial  r'_t} = \left(\sum_i  H_{\mathrm D}(i) + \sum_{i>j}\frac{ϙ_iϙ_j}{r_{ij}} + \sum_{i>j} B_{ij}\right)\theta_{\mathrm{rpd}} ,
 $$
 
 where $H_{\mathrm D}(i)$ is the one-particle Dirac Hamiltonian of particle $i$, the Coulomb term is instantaneous, and the **Breit operator**

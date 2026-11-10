@@ -28,7 +28,7 @@ F_{AB}\ \text{analytic in}\ 0<\mathrm{Im}r'_t<\beta,
 F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t).
 $$
 
-This is [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html)'s statement, and the corpus's $\beta$ is $\beta=\frac{m\,c}{k_m\,k_B\,T}$, an imaginary-time circumference and therefore a length. Nothing in this article changes the statement; what it changes is what the width is a function of.
+This is [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html)'s statement, and the corpus's $\beta$ is $\beta=\frac{\hbar}{k_B\,T}$, an imaginary-time circumference and therefore a length. Nothing in this article changes the statement; what it changes is what the width is a function of.
 
 ### Two widths, and why there are two
 
@@ -106,7 +106,7 @@ and this is the statement that the KMS condition and the Gibbs form are the same
 $$
 r'_t\sim r'_t+i\,\beta_H,
 \qquad
-\beta_H=\frac{m\,c}{k_m\,k_B\,T_H},
+\beta_H=\frac{\hbar}{k_B\,T_H},
 $$
 
 where the second display is the corpus's $\beta$ evaluated at the horizon temperature. So the covariant bookkeeping costs one thing and no more: the number that was a constant in flat space is evaluated at the horizon's temperature and then multiplied by the lapse for the observers. The rest of the KMS structure — the strip, the boundary condition, the Matsubara spectrum, the characterization of the thermal state — is unchanged, and this article does not restate it.
@@ -230,8 +230,8 @@ The modular flow supplies the parameter. From the Bisognano–Wichmann statement
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material and informational sectors |
 | $i$ | Central scalar imaginary |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
-| $\beta=\frac{m\,c}{k_m\,k_B\,T}$ | Inverse temperature, an imaginary-time circumference |
-| $\beta_H=\frac{m\,c}{k_m\,k_B\,T_H}$ | The flow's inverse temperature on the horizon |
+| $\beta=\frac{\hbar}{k_B\,T}$ | Inverse temperature, an imaginary-time circumference |
+| $\beta_H=\frac{\hbar}{k_B\,T_H}$ | The flow's inverse temperature on the horizon |
 | $\beta(x)=\beta_H\,\ell(x)$ | The observer's local inverse temperature |
 | $\ell(x)$ | Lapse: proper time per unit Killing time; $0$ at the horizon, $1$ at infinity |
 | $T(x)=T_H/\ell(x)$ | The observer's local temperature, Tolman's law |

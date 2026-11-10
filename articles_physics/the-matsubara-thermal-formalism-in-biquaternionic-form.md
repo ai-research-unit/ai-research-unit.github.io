@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Matsubara formalism** is the Euclidean formulation of quantum field theory at finite temperature. The thermal partition function $Z=\mathrm{Tr}\,\exp(-\beta H)$ is written as a functional integral over fields living on a Euclidean space whose time direction is compactified to a circle of circumference $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$; the Fourier modes on that circle are the **Matsubara frequencies**, and the propagator becomes a discrete sum over them rather than a continuous integral. It is the standard machinery of thermal field theory, and it is the analytic continuation of the real-time formalisms.
+The **Matsubara formalism** is the Euclidean formulation of quantum field theory at finite temperature. The thermal partition function $Z=\mathrm{Tr}\,\exp(-\beta H)$ is written as a functional integral over fields living on a Euclidean space whose time direction is compactified to a circle of circumference $\beta=\frac{\hbar}{k_{B}\,T}$; the Fourier modes on that circle are the **Matsubara frequencies**, and the propagator becomes a discrete sum over them rather than a continuous integral. It is the standard machinery of thermal field theory, and it is the analytic continuation of the real-time formalisms.
 
 This article asks what the biquaternion algebra $\mathbb{B}$ contributes. The answer is one structural identification and a set of transcriptions, stated at the outset.
 
@@ -59,7 +59,7 @@ On this element the interval keeps its sign, $\langle\tilde P_{\Phi,E}\rangle_{\
 $$
 r'_t \sim  r'_t+i\beta ,
 \qquad
-\beta=\frac{m\,c}{k_m\,k_{B}\,T},
+\beta=\frac{\hbar}{k_{B}\,T},
 $$
 so the configuration manifold is $S^1_\beta\times\mathbb{R}^3$ with the circle of circumference $\beta$ drawn in the imaginary material direction; write $\tau$ for the real parameter along the circle. The compactification is the statement of thermal equilibrium: the partition function $Z=\mathrm{Tr}\,\exp(-\beta H)$ is the functional integral on that manifold, with the circle's circumference playing the role of the inverse temperature. This is standard (Matsubara 1955; Fetter–Walecka; Kapusta–Gale) and is transcribed.
 
@@ -248,7 +248,7 @@ This is why the article's computations are done in $\mathbb{B}_{\Phi}$ and not i
 
 ## Summary
 
-The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $i r'_t$. The standard route to it is the Wick rotation $r'_t\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{B}_{\Phi}$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $r'_t\sim r'_t+i\beta$ has circumference $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
+The Matsubara formalism in biquaternionic form is thermal field theory with the compactified direction identified as the material direction $i r'_t$. The standard route to it is the Wick rotation $r'_t\to-i\tau$, which reads the wave biquaternion as $-\omega_n e_t+\vec p$ on the real scalar axis with a definite norm; this article uses instead the material-sector route, in which the computation never leaves $\mathbb{B}_{\Phi}$ and the positivity is carried by the Hermitian form rather than by the rotated metric. The two routes give the same propagator and the same frequencies. The thermal circle $r'_t\sim r'_t+i\beta$ has circumference $\beta=\frac{\hbar}{k_{B}\,T}$, which is the KMS strip width, because both are the complexification of that same material time; the wave biquaternion of the grid is material,
 $$
 \boxed{\;\tilde P_{\Phi,E} = i\omega_n e_t+\vec p \in \mathbb{B}_{\Phi} ,
 \qquad
@@ -276,7 +276,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $r'_t\sim r'_t+i\beta$ | Thermal circle $S^1_\beta$: the complexified material time, compactified |
-| $\beta=\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature; circle circumference; KMS width |
+| $\beta=\frac{\hbar}{k_{B}\,T}$ | Inverse temperature; circle circumference; KMS width |
 | $\tau$ | real parameter along the thermal circle |
 | $F_{\tilde Q_1\tilde Q_2}(r'_t+i\beta)=F_{\tilde Q_2\tilde Q_1}(-r'_t)$ | KMS boundary relation |
 | $\tilde{Ξ}(\tau+\beta)=\pm\tilde{Ξ}(\tau)$ | Periodic (boson) / antiperiodic (fermion) |

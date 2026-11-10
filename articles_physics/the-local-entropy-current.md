@@ -49,15 +49,13 @@ $$
 
 **The current is declared Hermitian: $\tilde J_{\Phi,\mathrm{ent}}^{*}=\tilde J_{\Phi,\mathrm{ent}}$, with the star the corpus's conjugation that reverses the quaternion part and conjugates the central $i$.** On the components above this is the statement that all four coefficients are real, which they are by construction.
 
-**The declaration buys exactly one thing, and the article states it as a theorem-shaped fact rather than a convenience.** For an element $\tilde Q$ with components $Q_\mu$,
+**The declaration buys exactly one thing: it makes the scalar part real.** For an element $\tilde Q$ with components $Q_\mu$, the corpus's divergence has the scalar part
 
 $$
-\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde Q\right)
-=\partial_\mu Q_\mu
-\qquad\text{when }\tilde Q^{*}=\tilde Q,
+\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde Q\right)=\partial_\mu Q_\mu
 $$
 
-the scalar part of the corpus's divergence being the ordinary divergence of the four components **precisely when the element is Hermitian**. For an anti-Hermitian element the same computation returns $i$ times a real number, and an inequality written on it would compare an imaginary quantity with zero, which is meaningless. **The declaration is therefore not a convention about signs; it is the condition under which the second law has a truth value.**
+**for every element and not only for a Hermitian one** — the identity is a property of the operator and of nothing else, and the two $\varepsilon$ weights of the gradient and the two signs of the scalar part cancel in each slot. **What Hermiticity adds is the reality of the right-hand side.** With $\tilde Q^{*}=\tilde Q$ the four coefficients are real, so $\partial_\mu Q_\mu$ is a real number and it can be compared with zero. For an anti-Hermitian element the coefficients are pure imaginary, the same scalar part is $i$ times a real number, and an inequality written on it would compare an imaginary quantity with zero, which is meaningless. **The declaration is therefore not a convention about signs; it is the condition under which the second law has a truth value.**
 
 **Why the corpus does not instead write $\mathrm{Re}$ everywhere.** The two spellings are equivalent — a fresh $\mathrm{Re}$ on every inequality gives the same set of true statements — and the corpus chooses the declaration because it is made once and inherited, whereas a $\mathrm{Re}$ has to be repeated at every display and can be silently dropped at one of them. **The rule for the reader is therefore: an entropy inequality in this corpus comes with one of two marks, a declared-Hermitian current or a written $\mathrm{Re}$, and never with neither.**
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form* recorded the identity $[D_\mu, D_\nu] =\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion *Non-Abelian Gauge Fields in Biquaternionic Form* let the connection take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} = \mathrm{SU}(2)$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.
+The companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form* recorded the identity $[D_\mu, D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$ in the abelian sector and closed by naming the biquaternion form of that identity as the subject of a planned companion. The companion *Non-Abelian Gauge Fields in Biquaternionic Form* let the connection take values in the vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} = \mathrm{SU}(2)$, and recorded in a single section that the curvature is the commutator of covariant derivatives and that the Bianchi identity follows from the Jacobi identity. This article takes those two statements as its whole subject and develops them.
 
 Two structural claims organise it.
 
@@ -26,7 +26,7 @@ with real coefficient functions, and let the covariant derivative act on a matte
 $$
 D_\mu = \partial/\partial R_\mu + i\kappa\,\mathcal{A}_\mu, \qquad
 D_\mu\tilde{Ξ}_{\mathrm{sp}} = \partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal{A}_\mu\tilde{Ξ}_{\mathrm{sp}} ,
-\qquad \kappa =\frac{k_m\,ϙ}{m\,c}.
+\qquad \kappa =\frac{ϙ}{\hbar}.
 $$
 This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $i r'_t$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
 This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
@@ -274,7 +274,7 @@ The structural reason is that the Bianchi identity is a three-index antisymmetri
 
 ## Summary
 
-The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_\mu \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$, with $\kappa =\frac{k_m\,ϙ}{m\,c}$,
+The gauge curvature of the biquaternionic framework is the commutator of covariant derivatives, and the commutator reduces to the algebra. For a connection $\mathcal{A}_\mu \in \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ and $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$, with $\kappa =\frac{ϙ}{\hbar}$,
 
 $$
 [D_\mu,D_\nu] = i\kappa\,F_{\mu\nu},
@@ -311,7 +311,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
-| $\kappa =\frac{k_m\,ϙ}{m\,c}$ | Coupling |
+| $\kappa =\frac{ϙ}{\hbar}$ | Coupling |
 | $D_\mu = \partial/\partial R_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative on matter (one-sided, left) |
 | $\partial/\partial R_t = -i\partial/\partial r'_t$ | $i r'_t$ time derivative |
 | $F_{\mu\nu} = \partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
@@ -329,7 +329,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 
 ## Further Reading
 
-- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_\mu,D_\nu]=\frac{k_m\,i\,ϙ}{m\,c}F_{\mu\nu}$ and its deferral of the Bianchi identity to this article.
+- [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the immediate parent; its abelian commutator identity $[D_\mu,D_\nu]=\frac{i\,ϙ}{\hbar}F_{\mu\nu}$ and its deferral of the Bianchi identity to this article.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the non-abelian connection, the transformation law, the adjoint curvature, and the compactness gap this article inherits unchanged.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the covariant derivative, and the curvature; the source of the remark that the homogeneous equations are the Bianchi identity of the connection.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.

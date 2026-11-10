@@ -111,7 +111,7 @@ $$
 
 **with every index low and $v_{\Phi,\nu}$ the flow's components.** Its content is a count: an antisymmetric $4\times4$ array has six independent components, and three linear conditions remove three of them, **leaving the three components of a spatial vector in the fluid's rest frame.**
 
-**The rest-frame reading, which is what the count means.** In the fluid's rest frame $v_{\Phi,\nu}=(c,0,0,0)$, so the condition reads $S_{\Psi,\eta,\lambda t}=0$: **the components with one temporal label vanish, and the three spatial ones survive.** Those three are the spin vector, and the corpus writes them as the direction $\hat s$.
+**The rest-frame reading, which is what the count means.** In the fluid's rest frame $v_{\Phi,\nu}=(ic,0,0,0)$, the temporal component carrying the algebra's $i$ exactly as in [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html), so the condition reads $S_{\Psi,\eta,\lambda t}\cdot ic=0$, that is $S_{\Psi,\eta,\lambda t}=0$: **the components with one temporal label vanish, and the three spatial ones survive.** Those three are the spin vector, and the corpus writes them as the direction $\hat s$.
 
 **Why this is the natural condition and not an arbitrary one.** A spinning particle's spin is an angular momentum in its own rest frame, and an angular momentum in the $ti$ plane would be a boost — a displacement of the centre of mass, not a rotation. **The Frenkel condition says that the spin is a rotation and not a displacement**, which is exactly the content of the polar word's division of labour: the boost carries the velocity and the rotor carries the spin, and neither carries the other.
 
@@ -248,14 +248,14 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\tilde u_{\mathrm r}$ | Rotor of the polar word, real and unitary |
 | $\vec\Omega_\eta$ | Rotor connection, a real vector per direction |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, a unit spatial vector |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element, with $\rho$ the scale as in the polar article |
+| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element, with $\rho$ the scale, which the polar article writes as $r$ |
 | $S_{\Psi,\mathrm{sp},\eta,\lambda\nu}$ | Components of the spin current, all low |
 | $S_{\Psi,\mathrm{sp},t,\lambda\nu}$ | Its temporal slot, the spin density, $\rho\tfrac{\hbar}{2}\hat s_{\lambda\nu}$ |
 | $\tau_{\lambda\nu}$ | Torque, the spin current's source |
 | $\mathcal{F}$ | The Frenkel condition |
 | $\mathcal{W}$ | The Weyssenhoff condition |
 | $v_{\Phi,\nu}$ | Components of the flow element |
-| $\rho$ | The polar article's scale, $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$; $\rho^{2}=\rho_{\mathrm{num}}$ is the proper density |
+| $\rho$ | The scale, $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$, which the polar article writes as $r$; $\rho^{2}=\rho_{\mathrm{num}}$ is the proper density, the polar article's $\rho$ |
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element, four components |
 | $w_{\mathrm{fl}}$, $\vec S_{\mathrm P}$ | Energy density, momentum density |
 | $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |

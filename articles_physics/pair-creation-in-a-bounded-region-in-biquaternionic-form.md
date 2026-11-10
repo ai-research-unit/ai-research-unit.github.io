@@ -14,7 +14,7 @@ Three statements organise the article.
 
 The article derives the matching, the threshold and the two tables of numbers. It does not derive the second-quantized statements: the pair number, the Bogoliubov mixing and the vacuum persistence amplitude are those of *Scalar Pair Creation in Biquaternionic Form*, the operator content of the sea is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*, and the mode count of a cavity is that of *The Vacuum State and the Casimir Effect in Biquaternionic Form*. What the framework supplies is the location of the threshold on the mass shell, and the criterion that separates a confining model which can create pairs from one which cannot.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i r'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla$ by $D=\tilde\nabla+\frac{k_m\,i\,ϙ}{m\,c}\tilde{A}_{\Phi}$. No array and no column is written below.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i r'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla$ by $D=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$. No array and no column is written below.
 
 ## The Well and the Gap
 
@@ -33,9 +33,9 @@ $$
 a one-dimensional well of depth $V_0$ and width $L$, constant on each of its three regions and discontinuous at the two walls. The particle moves along $r_x$ and is taken to be in a spin state along the direction of motion, so the reduction of the companion article applies unchanged and the same two-component pair results:
 
 $$
-\frac{m\,c^{2}\,i}{k_m}\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},1}}{\partial r_x}=\bigl(E-V(r_x)+mc^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},2},
+i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},1}}{\partial r_x}=\bigl(E-V(r_x)+mc^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},2},
 \qquad
-\frac{m\,c^{2}\,i}{k_m}\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},2}}{\partial r_x}=\bigl(E-V(r_x)-mc^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},1},
+i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},2}}{\partial r_x}=\bigl(E-V(r_x)-mc^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},1},
 $$
 
 with $V(r_x)=ϙ\xi(r_x)$ and $E$ the total energy. The pair is the reduced equation of the parent, and the biquaternion field is recovered from it by the standing dictionary of *The Dirac Equation in Biquaternionic Form*. Nothing below uses a second reduction.
@@ -51,7 +51,7 @@ The well is symmetric, so every solution is even or odd. In the well the wave nu
 $$
 k_{\Phi,\mathrm{w}}=\frac{\sqrt{(E+V_0)^{2}-m^{2}c^{4}}}{\hbar c},
 \qquad
-\hbar c=\frac{m\,c^{2}}{k_m},
+\hbar c=\hbar\,c,
 $$
 
 the momentum wave number of the parent read at the shifted frequency, and outside the well the solution decays with
@@ -213,9 +213,9 @@ $$
 \qquad\Longleftrightarrow\qquad
 k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2},
 \qquad
-k_{t}^{\prime}=\frac{k_m\,E}{m\,c^{2}},
+k_{t}^{\prime}=\frac{E}{\hbar\,c},
 \qquad
-k_{\Phi}=\frac{k_m\,p}{m\,c},
+k_{\Phi}=\frac{p}{\hbar},
 $$
 
 the temporal coefficient on the left and the spatial part on the right. The electrostatic potential enters as the time component of the four-potential, and on a state of energy $E$ it shifts the energy by the central scalar it carries,
@@ -223,28 +223,28 @@ the temporal coefficient on the left and the spatial part on the right. The elec
 $$
 E\;\longmapsto\;E-ϙ\xi,
 \qquad\text{hence}\qquad
-k_{t}^{\prime}=\frac{k_m\,E}{m\,c^{2}}\;\longmapsto\;\frac{k_m\,(E-ϙ\xi)}{m\,c^{2}},
+k_{t}^{\prime}=\frac{E}{\hbar\,c}\;\longmapsto\;\frac{(E-ϙ\xi)}{\hbar\,c},
 $$
 
-a shift of the left side of the mass shell by a central scalar. The companion article writes the same shift as an exchange $\omega\mapsto\omega-\frac{k_m\,ϙ\,\xi}{m\,c}$ of its frequency, and the two are the same statement with the energy and the frequency interchanged. A shift there moves the state along the two-rooted shell and can carry it past the point where the sign of $k_{t}^{\prime}$ is reversed; the companion article computes that reversal at the step, and this article computes it at the wall. The threshold of a bounded region is the same shift read on a bound level: the level is the value of $k_{t}^{\prime}$ at which the state fits the well and decays outside, and the shift drags that value down to $-k_m$.
+a shift of the left side of the mass shell by a central scalar. The companion article writes the same shift as an exchange $\omega\mapsto\omega-\frac{ϙ\,\xi}{\hbar}$ of its frequency, and the two are the same statement with the energy and the frequency interchanged. A shift there moves the state along the two-rooted shell and can carry it past the point where the sign of $k_{t}^{\prime}$ is reversed; the companion article computes that reversal at the step, and this article computes it at the wall. The threshold of a bounded region is the same shift read on a bound level: the level is the value of $k_{t}^{\prime}$ at which the state fits the well and decays outside, and the shift drags that value down to $-k_m$.
 
 ### The oscillator's shift
 
 The Dirac oscillator's substitution is a shift of the other side. Its non-minimal term replaces $\vec p$ by $\vec p-im\omega\beta\vec r$, so it acts on the spatial part of the gradient and on nothing else, and the shifted gradients are
 
 $$
-\vec\nabla_{\pm}=\vec\nabla\pm\frac{\omega\,k_m}{c}\,\vec r .
+\vec\nabla_{\pm}=\vec\nabla\pm\frac{m\,\omega}{\hbar}\,\vec r .
 $$
 
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
 
 $$
-\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-\frac{3\,m^{2}c\,\omega}{k_m}-2m\omega\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta ,
+\mathcal Q_{+}\mathcal Q_{-}=\vec p^{\,2}+m^{2}\omega^{2}\vec r^{\,2}-3\,\hbar\,m\,\omega-2m\omega\sum_\eta L_{\mathrm{orb},\eta}\,i\vec e_\eta ,
 \qquad
 E^{2}=m^{2}c^{4}+c^{2}\,\mathcal Q_{+}\mathcal Q_{-}.
 $$
 
-The right-hand side is bounded below by zero, and its lowest eigenvalue is zero, attained on the aligned states with $n_r=0$. Hence $E^{2}\ge m^{2}c^{4}$ for every level and every frequency: the positive branch begins at $mc^{2}$, the negative branch ends at $-mc^{2}$, and the gap is empty for every value of $\omega$. The spectrum quoted by that article, $E^{2}=m^{2}c^{4}+\frac{4m^{2}c^{3}\omega\,n_r}{k_m}$ on the aligned branch, says the same thing in one line, and it says it for all $n_r$ at once.
+The right-hand side is bounded below by zero, and its lowest eigenvalue is zero, attained on the aligned states with $n_r=0$. Hence $E^{2}\ge m^{2}c^{4}$ for every level and every frequency: the positive branch begins at $mc^{2}$, the negative branch ends at $-mc^{2}$, and the gap is empty for every value of $\omega$. The spectrum quoted by that article, $E^{2}=m^{2}c^{4}+4\,\hbar\,m\,c^{2}\,\omega\,n_r$ on the aligned branch, says the same thing in one line, and it says it for all $n_r$ at once.
 
 **The criterion.** The two confinements differ in which side of the mass shell they act on, and that, and not their strength, decides whether the model can create pairs. A term that shifts $k_{t}^{\prime}$ moves the level along the shell and across the gap; a term that adds to $k_{\Phi}^{2}$ raises the right side and pushes every level away from the gap. The oscillator's substitution adds $+m^{2}\omega^{2}r^{2}$, which is positive whenever the oscillator frequency is, however small it is, so its confinement is Klein-stable at every frequency; the electrostatic well subtracts from $k_{t}^{\prime}$, which is indefinite in sign, so its confinement is Klein-unstable at every width once the depth passes the threshold. Neither statement is a numerical accident: both follow from where the term sits in $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$.
 
@@ -319,8 +319,8 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $N(V_0,L)=\lfloor\frac{k_mL}{\pi}\sqrt{(V_0/mc^{2}-1)^{2}-1}\rfloor$ | Number of levels that have crossed into the lower continuum; zero for $V_0\le2mc^{2}$ |
 | $L_{\min}=\frac{\pi\hbar c}{\sqrt{V_0^{2}-2V_0\,mc^{2}}}$ | Least width at which one level dives at fixed depth; the $n_{\mathrm{w}}$-th dive is at $n_{\mathrm{w}}L_{\min}$ |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ | Mass shell, split into its two sides |
-| $k_{t}^{\prime}=\frac{k_m\,E}{m\,c^{2}}$, $k_{\Phi}=\frac{k_m\,p}{m\,c}$ | Temporal coefficient and momentum wave number |
-| $\vec\nabla_{\pm}=\vec\nabla\pm\frac{\omega\,k_m}{c}\vec r$ | The two non-minimal shifts of the oscillator |
+| $k_{t}^{\prime}=\frac{E}{\hbar\,c}$, $k_{\Phi}=\frac{p}{\hbar}$ | Temporal coefficient and momentum wave number |
+| $\vec\nabla_{\pm}=\vec\nabla\pm\frac{m\,\omega}{\hbar}\vec r$ | The two non-minimal shifts of the oscillator |
 | $\mathcal Q_{+}\mathcal Q_{-}\ge0$ | Oscillator identity: the gap is empty at every frequency |
 | $\omega$ | Oscillator frequency, a real scalar; the pseudoscalar $\omega=-\vec e_z$ of the algebra is not used here |
 | $\beta$ | The frame action of the oscillator, a right action equal to $\pm1$ on the two frame parts |

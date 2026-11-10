@@ -58,7 +58,7 @@ $$
 
 and the whole of the $\hbar^{2}$ correction is the second term.
 
-**The coefficient and the structure were checked symbolically, not remembered.** Applying the bidifferential operator three times to the pair $(H,W)$ with $H=\lvert\vec p\rvert^{2}/(2m)+V(r)$ and a general symbol $W(r,\vec p)$, only one of the eight ordered terms survives, because every term in which a derivative falls on $\lvert\vec p\rvert^{2}/(2m)$ either exceeds second order in momentum or carries a position derivative that the momentum monomial cannot supply. The surviving term is
+**The coefficient and the structure were checked symbolically, not remembered.** Applying the bidifferential operator three times to the pair $(H,W)$ with $H=\lvert\vec p\rvert^{2}/(2m)+V(r)$ and a general symbol $W(r,\vec p)$, only one of the eight ordered terms survives, because every term in which the position and momentum derivatives fall on the same side mixes them, and a mixed third derivative of a separable Hamiltonian vanishes. The surviving term is
 
 $$
 \Lambda^{3}(H,W)=\frac{\partial^{3}V}{\partial r_\eta^{3}}\,
@@ -67,7 +67,17 @@ $$
 
 with the sum over $\eta$, **and the identity is exact rather than leading**: a computer-algebra evaluation of the four surviving monomials returns $\Lambda^{3}(H,W)-V'''\partial_{p}^{3}W=0$ as an identity in $W$. The expansion of the sine is therefore not a gradient approximation at this order — for a Hamiltonian at most quadratic in momentum, the third-order term is precisely the third derivative of the potential times the third momentum derivative of the Wigner element.
 
-**This is worth one sentence of explanation, because it is not an accident.** The operator $\Lambda$ is antisymmetric and each of its two derivatives must fall on a different factor; three applications distribute six derivatives between $H$ and $W$, and the momentum monomial in $H$ can absorb at most two on its side. So the only term that survives is the one where all three of $H$'s derivatives fall on $V$ and all three of $W$'s on momentum. The truncation at this order is thus exact for the free-plus-potential Hamiltonian, and the $\mathcal{O}(\hbar^{4})$ remainder is the term with five derivatives, which is where the potential's fifth derivative would appear.
+**This is worth one paragraph of explanation, because it is not an accident.** Each application of $\Lambda$ contributes one position derivative and one momentum derivative, and the split of them between the two factors is what decides whether a term survives. **The Hamiltonian is separable — a function of $\vec p$ alone plus a function of $\vec r$ alone — and that is what kills every mixed term.** A third derivative of $H$ that carries both a position and a momentum derivative is zero, because the position derivatives must fall on $V$ and the momentum derivatives on $\lvert\vec p\rvert^{2}/(2m)$, and the two pieces of the sum carry different variables; a derivative does not act across a sum into a product. So of the eight ordered terms only the one with all three position derivatives on $H$ and all three momentum derivatives on $W$ survives, and inside it only the purely positional part of $H$'s third derivative, which is $V'''$.
+
+**The same argument repeats at every order, so the expansion can be written down whole.** The term of order $\hbar^{2k}$ is $\Lambda^{2k+1}$ with the same selection, and the only surviving piece is again purely positional on $H$:
+
+$$
+\frac{2}{\hbar}\sin\left(\frac{\hbar\Lambda}{2}\right)(H,W)
+=\Lambda(H,W)-\frac{\hbar^{2}}{24}V'''\frac{\partial^{3}W}{\partial p_\eta^{3}}
++\frac{\hbar^{4}}{1920}V^{(5)}\frac{\partial^{5}W}{\partial p_\eta^{5}}+\mathcal{O}(\hbar^{6}),
+$$
+
+with $V^{(5)}$ the fifth derivative of the potential and the coefficients the sine's, $\tfrac{1}{3!\,2^{2}}$ and $\tfrac{1}{5!\,2^{4}}$. **The expansion therefore terminates for a potential whose fifth and higher odd derivatives vanish**, which is to say a polynomial of degree at most four: a harmonic potential has $V'''=0$ and the classical equation is exact, a quartic has $V'''$ constant and $V^{(5)}=0$ and the one correction is exact, and a general potential has every order. The identity at fifth order was checked the same way as the third, symbolically, and returned $\Lambda^{5}(H,W)=V^{(5)}\partial_p^{5}W$ with no other term.
 
 ## The Zeroth Order: the Classical Drift
 
@@ -300,7 +310,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$ | Amplitude squared, and the proper density |
 | $S_{\tilde\Xi}$ | Action of the polar form |
 | $m$, $c$ | Mass and speed of light in the medium |
-| $\hbar=mc/k_m$ | Action quantum |
+| $\hbar$ | Action quantum |
 | $k_m$ | Mass wave number |
 | $r_\eta$, $p_\eta$ | Spatial components of position and momentum; indices low |
 | $r'_t$ | Temporal coordinate of the material sector, a length |
@@ -318,7 +328,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $\rho_{\mathrm{num}}=\int d^{3}p\,W$ | Proper density as a marginal |
 | $j_\eta=\int d^{3}p\,(p_\eta/m)W$ | Current density as a first moment |
 | $\delta_{\mu\nu}$ | The metric; no raised indices |
-| $\mathcal{O}(\hbar^{4})$ | The remainder of the sine expansion |
+| $\mathcal{O}(\hbar^{4})$ | The remainder of the sine expansion; for a separable Hamiltonian the next explicit term is the $\hbar^{4}$ one, $\frac{\hbar^{4}}{1920}V^{(5)}\partial_{p_\eta}^{5}W$ |
 
 ## Further Reading
 

@@ -139,11 +139,11 @@ The parity has three consequences that organize the rest of the article.
 The single-mode truncation of this structure lives *inside* $\mathbb{B}$. The spin–statistics companion computes the truncated ladder
 
 $$
-\boxed{\;\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c}=\tfrac12(i\vec e_x-\vec e_y),\frac{k_m\,\tilde{S}_{\Psi,-}}{m\,c}=\tfrac12(i\vec e_x+\vec e_y),
+\boxed{\;\frac{\tilde{S}_{\Psi,+}}{\hbar}=\tfrac12(i\vec e_x-\vec e_y),\frac{\tilde{S}_{\Psi,-}}{\hbar}=\tfrac12(i\vec e_x+\vec e_y),
 \qquad
-\Bigl(\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c}\Bigr)^2=0,
+\Bigl(\frac{\tilde{S}_{\Psi,+}}{\hbar}\Bigr)^2=0,
 \qquad
-\Bigl\{\frac{k_m\,\tilde{S}_{\Psi,+}}{m\,c},\frac{k_m\,\tilde{S}_{\Psi,-}}{m\,c}\Bigr\}=e_t,
+\Bigl\{\frac{\tilde{S}_{\Psi,+}}{\hbar},\frac{\tilde{S}_{\Psi,-}}{\hbar}\Bigr\}=e_t,
 \qquad
 (-1)^F=i\vec e_z\;},
 $$
@@ -263,7 +263,7 @@ The spin operator is the spatial integral of the bilinear with the informational
 $$
 S_\eta=\int  d^3r\,:\!\mathrm{Sc}\Bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}\,\tilde S_{\Psi,\eta}\,\tilde{Ξ}_{\mathrm{fop}}\Bigr)\!:,
 \qquad
-\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta .
+\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta .
 $$
 
 It is Hermitian and even, and it is the operator whose classical limit is the spin three-vector of the one-particle theory. The generator is the informational-sector element $\tilde S_{\Psi,\eta}$ itself, and the bilinear realizes it on the field; the sector interpretation is the one the electron companion records.
@@ -390,7 +390,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde J_{\Phi}=iJ_t e_t+\sum_\eta J_\eta\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator current biquaternion |
 | $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$ | Normal-ordering constant |
 | $\tilde P_{\Phi,\mathrm{fop}}=iHe_t+P_{\mathrm{fop},\eta}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
-| $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{m\,c}{2\,k_m}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
+| $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_{\Psi,-}/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
 | $\Delta_{\mathrm{A}}(x-y)$ | Antisymmetric Pauli–Jordan kernel; support inside the light cone |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{k_m}{m\,c}\int  E_n\,dr'_t$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
+A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{1}{\hbar}\int  E_n\,dr'_t$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
@@ -29,10 +29,10 @@ $$
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle  = \exp(i\gamma_n(r'_t))\,\exp(-\frac{k_m\,i}{m\,c}\int_0^{r'_{t}}  E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle  .
+|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle  = \exp(i\gamma_n(r'_t))\,\exp(-\frac{i}{\hbar}\int_0^{r'_{t}}  E_n(R(r'_{t,2}))dr'_{t,2})\,|n(R(r'_t))\rangle  .
 $$
 
-Substituting into the Schrödinger equation $\frac{m\,c^{2}\,i}{k_m}\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle  = \tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
+Substituting into the Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t|\tilde{Ξ}_{\mathrm{sp}}\rangle  = \tilde R_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle$, the dynamical factor cancels, and what remains is
 
 $$
 d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
@@ -40,7 +40,7 @@ d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
 \gamma_n = i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\cdot dR .
 $$
 
-The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{k_m}{m\,c}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
+The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{1}{\hbar}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
 
 The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\alpha(R))|n\rangle$ for a real function $\alpha$ whose phase factor $\exp(i\alpha)$ is single-valued, the phase acquired around a **closed** loop shifts by
 
@@ -157,7 +157,7 @@ This is the transformation law of an **abelian gauge connection**. It is the sam
 
 ### Why the Analogy Is Structural and Not Decorative
 
-The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
+The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
 
 $$
 \mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
@@ -224,7 +224,7 @@ $$
 \vec R(r'_t) = R\bigl(\sin\theta_0\cos(\omega r'_t/c),\ \sin\theta_0\sin(\omega r'_t/c),\ \cos\theta_0\bigr) ,
 $$
 
-with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\frac{m\,c\,\omega}{k_m}\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.
+with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\,\omega\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.
 
 The spin-up spinor is $\tilde{Ξ}_{\mathrm{sp},+}$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is
 
@@ -279,7 +279,7 @@ The two routes agree, and they agree for **every** $\theta_0$, not merely at the
 
 The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\theta_{\mathrm{sol}}/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.
 
-**Speed independence.** Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t/c$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{k_m}{m\,c}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{k_m\,R\,T}{2\,m\,c}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
+**Speed independence.** Replacing the uniform rotation $\theta_{\mathrm{azm}} = \omega r'_t/c$ by a non-uniform $\theta_{\mathrm{azm}}(r'_t) = 2\pi(r'_t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_{\theta_{\mathrm{azm}}}\,d\theta_{\mathrm{azm}}$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\theta_{\mathrm{sol}}/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T  \frac{R}{2}\,dr'_t = -\frac{R\,T}{2\,\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
 
 **The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is
 
@@ -397,9 +397,9 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde R_\Psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
-- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}_{\mathrm{sp}}|d\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the gauge phase $\exp(\frac{k_m\,i\,ϙ\,\Gamma}{m\,c})$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
+- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}_{\mathrm{sp}}|d\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the gauge phase $\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
-**What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\frac{m\,c}{k_m}$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
+**What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\hbar$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
 
 **A second, independent occurrence of the same factor, kept apart.** The mathematics literature on fields of Lorentz transformations contains a factor of the same algebraic form. There the eigenvector of the transformation field at a point is followed from one observer to another, and in the null case the eigenvector is multiplied by $\sqrt{(1-\beta)/(1+\beta)}$ — the expression that *Exercise: The Relativistic Doppler Effect* derives as the longitudinal receding factor, and nothing else. The source presents the eigenvector factor as analogous to Berry's phase. The corpus records the coincidence of the expression and does not merge the two objects: the transport factor there is real, is a function of the two observers and the field alone, and carries no loop and no holonomy, while the Berry factor is complex and depends on the history of a path in parameter space. The analogy is the source's, and the equation is the only thing the two share.
 
@@ -409,7 +409,7 @@ $$
 \alpha = \arg\sigma , \qquad \tan\alpha = \frac{2\,\vec p\cdot\vec q}{|\vec p|^2-|\vec q|^2} , \qquad z_a = p_a+iq_a ,
 $$
 
-is a **Lorentz invariant** — the argument of an invariant is invariant — and the source calls it a "geometric phase" accompanying a displacement in spacetime. It is geometric in the plain sense that it is a function of the complexified metric rather than of the dynamics, and the source proposes it as the origin of quantum interference. It is *not* a Berry phase, and it shares with one nothing but the name: there is no adiabatic loop, no connection, no $\mathrm{U}(1)$ holonomy, no parameter space of Hamiltonians, and no $\frac{m\,c}{k_m}$. It is the phase that labels the fibre of the bilinear map from $\mathbb{C}^3$ to the induced real coordinates, so it is a function of the point and carries no path dependence at all — the opposite of the defining property of the Berry phase. The corpus records it as a distinct sense of the words and does not identify the two.
+is a **Lorentz invariant** — the argument of an invariant is invariant — and the source calls it a "geometric phase" accompanying a displacement in spacetime. It is geometric in the plain sense that it is a function of the complexified metric rather than of the dynamics, and the source proposes it as the origin of quantum interference. It is *not* a Berry phase, and it shares with one nothing but the name: there is no adiabatic loop, no connection, no $\mathrm{U}(1)$ holonomy, no parameter space of Hamiltonians, and no $\hbar$. It is the phase that labels the fibre of the bilinear map from $\mathbb{C}^3$ to the induced real coordinates, so it is a function of the point and carries no path dependence at all — the opposite of the defining property of the Berry phase. The corpus records it as a distinct sense of the words and does not identify the two.
 
 ## Open Questions
 

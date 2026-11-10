@@ -266,7 +266,7 @@ Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\G
 
 **The factor of two between the width and the imaginary part is the standard one and not a slip.** *The Three Wavenumbers of a Particle* records $k_{t}^{\prime}(\Gamma)=k_m\Gamma/(mc^{2})=\Gamma/(\hbar c)=1/(c\tau)$ as the wave number of the width, and this article's $\lvert\Im k_{t}^{\prime}\rvert=\Gamma/(2\hbar c)$ is half of it. The reason is that the amplitude carries half the width and the probability carries all of it, which is the same reason the pole is written $E-i\Gamma/2$. **Both numbers are correct and they name different things**: one is the wave number of the width, the other the imaginary part of the frequency.
 
-**The lifetime is the inverse of the width in the corpus's own units.** $\tau=\hbar/\Gamma=mc/(k_m\Gamma)$, which is the expression *The Unstable State and the Complex Energy Pole in Biquaternionic Form* uses, and it agrees with the definition here because $\hbar=mc/k_m$. **No new parameter enters**: the lifetime is the reciprocal of the distance from the real axis.
+**The lifetime is the inverse of the width in the corpus's own units.** $\tau=\hbar/\Gamma$, which is the expression *The Unstable State and the Complex Energy Pole in Biquaternionic Form* uses, and it agrees with the definition here, the quotient of the two being the same constant. **No new parameter enters**: the lifetime is the reciprocal of the distance from the real axis.
 
 ### Where the exponential stops
 

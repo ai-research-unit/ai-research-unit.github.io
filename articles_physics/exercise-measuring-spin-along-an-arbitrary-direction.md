@@ -37,14 +37,14 @@ $$
 The measurement operator is the spin projection along $\vec u_x$:
 
 $$
-\vec u_x\cdot\vec S =\frac{m\,c}{2\,k_m}\,\vec u_x\cdot\boldsymbol{\sigma} =\frac{m\,c}{2\,k_m}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
+\vec u_x\cdot\vec S =\frac{\hbar}{2}\,\vec u_x\cdot\boldsymbol{\sigma} =\frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
 $$
 
 where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices.
 
 ### Step 3: The eigenstate for the outcome
 
-The eigenvector of $\vec u_x\cdot\vec S$ with eigenvalue $+\frac{m\,c}{2\,k_m}$ (equivalently, the $+1$ eigenvector of $\vec u_x\cdot\boldsymbol{\sigma}$), up to a global phase, is
+The eigenvector of $\vec u_x\cdot\vec S$ with eigenvalue $+\frac{\hbar}{2}$ (equivalently, the $+1$ eigenvector of $\vec u_x\cdot\boldsymbol{\sigma}$), up to a global phase, is
 
 $$
 |+n\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
@@ -91,12 +91,12 @@ $$
 The same measurement direction $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{B}_{\Psi}$ corresponding to the spin projection along $\vec u_x$:
 
 $$
-\tilde R_\Psi =\frac{m\,c}{2\,k_m}\, i\vec u_x.
+\tilde R_\Psi =\frac{\hbar}{2}\, i\vec u_x.
 $$
 
 ### Step 3: The idempotent for the outcome
 
-The idempotent of the eigenstate of $\tilde R_\Psi =\frac{m\,c}{2\,k_m}i\vec u_x$ with eigenvalue $+\frac{m\,c}{2\,k_m}$ is
+The idempotent of the eigenstate of $\tilde R_\Psi =\frac{\hbar}{2}i\vec u_x$ with eigenvalue $+\frac{\hbar}{2}$ is
 
 $$
 \tilde\Pi_n = \tfrac{1}{2}\left(e_t + i\vec u_x\right).
@@ -167,12 +167,12 @@ The same pattern applies to the calculation of the **expectation value of the sp
 ### Standard formulation
 
 $$
-\langle  \vec u_x\cdot\vec S\rangle_{+z}  = \langle  +z|\vec u_x\cdot\vec S|+z\rangle  =\frac{m\,c}{2\,k_m}\cos\theta.
+\langle  \vec u_x\cdot\vec S\rangle_{+z}  = \langle  +z|\vec u_x\cdot\vec S|+z\rangle  =\frac{\hbar}{2}\cos\theta.
 $$
 
 ### Biquaternion formulation
 
-The observable is $\tilde R_\Psi =\frac{m\,c}{2\,k_m} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:
+The observable is $\tilde R_\Psi =\frac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:
 
 $$
 \langle \tilde R_\Psi\rangle_{\tilde\Pi_z} = \frac{\langle\tilde\Pi_z,\tilde R_\Psi\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_z \circ \tilde R_\Psi).
@@ -183,7 +183,7 @@ whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_z\circ\tild
 Computing the product:
 
 $$
-\tilde\Pi_z \circ  \tilde R_\Psi = \tfrac{1}{2}\frac{m\,c\,(e_t + i \vec e_z)}{2\,k_m} i\vec u_x =\frac{m\,c}{4\,k_m}\left(i\vec u_x - \vec e_z \vec u_x\right).
+\tilde\Pi_z \circ  \tilde R_\Psi = \tfrac{1}{2}\frac{\hbar\,(e_t + i \vec e_z)}{2} i\vec u_x =\frac{\hbar}{4}\left(i\vec u_x - \vec e_z \vec u_x\right).
 $$
 
 Evaluating $\vec e_z \vec u_x$, using $\vec e_z \vec e_x = \vec e_y$ and $\vec e_z \vec e_z = -e_t$:
@@ -195,13 +195,13 @@ $$
 Substituting:
 
 $$
-\tilde\Pi_z \circ  \tilde R_\Psi =\frac{m\,c}{4\,k_m}\left(i\vec u_x - \sin\theta\, \vec e_y + \cos\theta\, e_t\right).
+\tilde\Pi_z \circ  \tilde R_\Psi =\frac{\hbar}{4}\left(i\vec u_x - \sin\theta\, \vec e_y + \cos\theta\, e_t\right).
 $$
 
-The scalar part is $\frac{m\,c}{4\,k_m}\cos\theta$. Therefore
+The scalar part is $\frac{\hbar}{4}\cos\theta$. Therefore
 
 $$
-\boxed{\;\langle  \tilde R_\Psi\rangle_{\tilde\Pi_z}  =\frac{m\,c}{2\,k_m}\cos\theta =\frac{m\,c}{2\,k_m}\cos\theta\;}.
+\boxed{\;\langle  \tilde R_\Psi\rangle_{\tilde\Pi_z}  =\frac{\hbar}{2}\cos\theta =\frac{\hbar}{2}\cos\theta\;}.
 $$
 
 Both formulations give the same result.

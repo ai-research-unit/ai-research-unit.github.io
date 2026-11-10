@@ -28,7 +28,7 @@ A measurement $M$ is a **signature** of the framework relative to a standard the
 
 **(S4) Resolution.** An existing or feasible experimental bound on $O-O_S$ is tighter than the predicted $\delta$. A deviation smaller than the best bound is not a test; it is an aspiration.
 
-The four conditions cannot all be met, for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{B}_{\Psi}$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is **dimensionless**: $\langle\cdot\rangle_{\natural}$, the product, and the conjugations carry no scale, while $c$, $\frac{m\,c}{k_m}$, $m$, and $e$ are inserted from outside.
+The four conditions cannot all be met, for a structural reason. The framework's established content is the algebra $\mathbb{B}$ with its standard representations: $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem of the corpus and not a modelling choice; $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$ with the Minkowski form; and $\mathbb{B}_{\Psi}$, the Hermitian part of $M_2(\mathbb{C})$, the standard operator space of a two-state system. All are shared with the standard formalism, and the algebra is **dimensionless**: $\langle\cdot\rangle_{\natural}$, the product, and the conjugations carry no scale, while $c$, $\hbar$, $m$, and $e$ are inserted from outside.
 
 The consequence is a barrier that this article will meet repeatedly. Any quantity the framework fixes **by its algebra alone** is a quantity that the standard theory, using the same algebra, fixes identically. A signature therefore requires an input that is not algebra — a dynamics, a coupling, a scale, or a selection principle. The series has supplied such inputs in the places where a transcription needed them (the Dirac mass term, the gauge fixing of the Maxwell field, the frame field of the curved-spacetime construction), but in no case has it supplied one whose value the algebra forces. That is the central structural reason the framework currently makes no distinguishing prediction.
 
@@ -46,8 +46,8 @@ The following table collects the quantitative results the series has obtained an
 | Dirac field | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; massless case $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
-| Casimir effect | $-\frac{m\,c^{2}\,\pi^{2}}{240\,k_m\,a^{4}}$, attractive | Standard Casimir force, reproduced |
-| Unruh effect | $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$ | Standard Unruh temperature, reproduced |
+| Casimir effect | $-\frac{\pi^{2}\,\hbar\,c}{240\,a^{4}}$, attractive | Standard Casimir force, reproduced |
+| Unruh effect | $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$ | Standard Unruh temperature, reproduced |
 | CPT, Born rule, Bell/CHSH, decoherence | Standard statements | Standard results, reproduced; CPT transcribed, not established |
 | Linearized gravity and gravitational waves | Standard wave equation **assumed**; no deviation predicted | No derivation of the field equation |
 
@@ -85,7 +85,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** High-energy quantum-gravity models typically propose a modification of the dispersion relation — an energy-dependent speed of light, or a minimum length — appearing at a fundamental scale, often the Planck scale.
 
-**The framework-specific quantity.** There is none. The algebra $\mathbb{B}$ and its coefficient field are dimensionless; the biquaternion norm, the product, and the conjugations carry no scale. Every dimensional quantity in the series is imported: the corpus records that the electron mass, charge, and $\frac{m\,c}{k_m}$ are inserted, and that the framework supplies neither the value of the fine-structure constant nor the magnitude of the Coulomb coupling. No article derives a fundamental length or energy. The companion article on the renormalization group puts the point sharply: the scale, the field content, the gauge group, and the values of the couplings are all inputs, and the algebra fixes none of them.
+**The framework-specific quantity.** There is none. The algebra $\mathbb{B}$ and its coefficient field are dimensionless; the biquaternion norm, the product, and the conjugations carry no scale. Every dimensional quantity in the series is imported: the corpus records that the electron mass, charge, and $\hbar$ are inserted, and that the framework supplies neither the value of the fine-structure constant nor the magnitude of the Coulomb coupling. No article derives a fundamental length or energy. The companion article on the renormalization group puts the point sharply: the scale, the field content, the gauge group, and the values of the couplings are all inputs, and the algebra fixes none of them.
 
 **Derived or posited.** Neither. This is stronger than "unverified": the candidate has no home in the framework as developed. There is no parameter whose absence could be repaired by more work on the same algebra — a scale must be inserted, and any inserted scale is an addition to the framework rather than a consequence of it.
 
@@ -221,8 +221,8 @@ Several results are sometimes presented as if they were successes of the framewo
 
 - **The tree-level gyromagnetic ratio $g=2$.** This is Dirac's tree-level value; the anomaly is outside the framework. The framework can claim agreement with tree-level Dirac theory, not with the measured moment.
 - **The relativistic hydrogen spectrum.** It is the standard Dirac–Coulomb spectrum, quoted and reproduced; the exact bound-state solution is not derived in the series.
-- **The Casimir force $-\frac{m\,c^{2}\,\pi^{2}}{240\,k_m\,a^{4}}$.** Reproduced, not modified; the corpus states that the framework supplies no modification.
-- **The Unruh temperature $T=\frac{m\,a}{2\,k_m\,\pi\,k_{B}}$.** Reproduced by a reformulation; the corpus states that it yields no discriminating prediction.
+- **The Casimir force $-\frac{\pi^{2}\,\hbar\,c}{240\,a^{4}}$.** Reproduced, not modified; the corpus states that the framework supplies no modification.
+- **The Unruh temperature $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$.** Reproduced by a reformulation; the corpus states that it yields no discriminating prediction.
 - **The Born rule, the CPT theorem, and the Bell/CHSH bounds.** Standard statements; the Born rule and the Bell/CHSH bounds are reproduced, and the CPT theorem is transcribed rather than established.
 
 Each of these is a check that a transcription is faithful. None is evidence for the material/informational interpretation, because none of those computations uses it.

@@ -23,17 +23,17 @@ Both relations come from one identity, and it is worth having it before either i
 
 Let $\tilde{Ξ}$ be a biquaternion field, $\mathcal{D}\tilde{Ξ}$ the functional measure, and $F[\tilde{Ξ}]$ any functional of the field for which the objects below exist. Consider the integral of a total derivative in field space,
 $$
-\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c})\Big).
+\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(\,iS[\tilde{Ξ}]/\hbar)\Big).
 $$
 If the measure is **translation invariant** — if $\mathcal{D}(\tilde{Ξ}+\delta\tilde{Ξ})=\mathcal{D}\tilde{Ξ}$ for every shift $\delta\tilde{Ξ}$ vanishing at the boundary — then this integral is a shift of integration variable and vanishes:
 $$
-0=\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(\,iS[\tilde{Ξ}]\frac{k_m}{m\,c})\Big).
+0=\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(\,iS[\tilde{Ξ}]/\hbar)\Big).
 $$
 
 Performing the derivative and taking the expectation value in the presence of a module-valued source $\tilde J_{\Phi}$ gives the **working identity**
 $$
 \Big\langle\frac{\delta F}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}
-+\frac{k_m\,i}{m\,c}\Big\langle  F\,\frac{\delta S}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}
++\frac{i}{\hbar}\Big\langle  F\,\frac{\delta S}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}
 +\Big\langle  F\,\tilde J_{\Phi}(x)\Big\rangle_{\!J}=0,
 $$
 where the three terms are the variation of the inserted functional, the variation of the action, and the source. The entire content of the Schwinger–Dyson and Ward–Takahashi relations is the specialisation of this identity.
@@ -54,7 +54,7 @@ No component index and no privileged basis enter, and the variation of the actio
 
 Set $F=1$ in the working identity. The derivative term drops and
 $$
-\Big\langle\frac{\delta S}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}=\frac{m\,c\,i\,\tilde{J}_{\Phi}\,x}{k_m},
+\Big\langle\frac{\delta S}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}=i\,\hbar\,\tilde{J}_{\Phi}\,x,
 $$
 which at $\tilde J_{\Phi}=0$ is the **quantum equation of motion**,
 $$
@@ -69,7 +69,7 @@ $$
 a sum of products with one field removed and a delta at the point of variation. The working identity becomes
 $$
 \Big\langle\frac{\delta S}{\delta\tilde{Ξ}(x)}\,\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\Big\rangle_{\!J}
-=\frac{m\,c\,i}{k_m}\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\eta}\delta(y_k-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
+=i\,\hbar\Big(\tilde J_{\Phi}(x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}+\sum_{\eta}\delta(y_k-x)\big\langle\tilde{Ξ}(y_1)\cdots\tilde{Ξ}(y_{k-1})\tilde{Ξ}(y_{k+1})\cdots\tilde{Ξ}(y_n)\big\rangle_{\!J}\Big),
 $$
 which is the hierarchy: the divergence of the current-like object $\delta S/\delta\tilde{Ξ}$ is a source term plus **contact terms**, and the contact terms are what distinguish the quantum equation from the naive insertion of the classical equation. At coincident points the equation is distributional, and the delta terms are the whole of the difference. This is general and standard; it is not special to the gauge field, and the same structure appears for the scalar and the fermion below.
 
@@ -77,13 +77,13 @@ which is the hierarchy: the divergence of the current-like object $\delta S/\del
 
 The expectation-value form is the physical one, but there is a compact generating form that produces the whole hierarchy at once. Because inserting $\tilde{Ξ}(x)$ under the functional integral is the same as applying $\delta/\delta\tilde J_{\Phi}(x)$ to $Z[\tilde J_{\Phi}]$,
 $$
-\delta/\delta\tilde J_{\Phi}(x)\;Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\;\tilde{Ξ}(x)\,\exp(\,\frac{k_m\,i\,S}{m\,c}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle_{*}),
+\delta/\delta\tilde J_{\Phi}(x)\;Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\;\tilde{Ξ}(x)\,\exp(\,\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle_{*}),
 $$
 the working identity with generic $F$ is equivalent to the operator equation
 $$
-\boxed{\;\Big(\frac{\delta S}{\delta\tilde{Ξ}}\Big)\Big[\frac{\delta}{\delta\tilde J}_{\Phi}\Big]\,Z[\tilde J_{\Phi}]=\frac{m\,c\,i\,\tilde{J}_{\Phi}\,x\,Z}{k_m}[\tilde J_{\Phi}]\;}
+\boxed{\;\Big(\frac{\delta S}{\delta\tilde{Ξ}}\Big)\Big[\frac{\delta}{\delta\tilde J}_{\Phi}\Big]\,Z[\tilde J_{\Phi}]=i\,\hbar\,\tilde{J}_{\Phi}\,x\,Z[\tilde J_{\Phi}]\;}
 $$
-the **master Schwinger–Dyson equation**. Setting $F=1$ recovers the quantum equation of motion; expanding both sides in powers of $\tilde J_{\Phi}$ and using $Z=\exp(\frac{k_m\,W}{m\,c\,i})$ generates the whole hierarchy of the connected correlation functions. The bracket in the box means that the classical variation $\delta S/\delta\tilde{Ξ}$ is evaluated with the field replaced by the operator $\delta/\delta\tilde J_{\Phi}$.
+the **master Schwinger–Dyson equation**. Setting $F=1$ recovers the quantum equation of motion; expanding both sides in powers of $\tilde J_{\Phi}$ and using $Z=\exp(\frac{W}{i\,\hbar})$ generates the whole hierarchy of the connected correlation functions. The bracket in the box means that the classical variation $\delta S/\delta\tilde{Ξ}$ is evaluated with the field replaced by the operator $\delta/\delta\tilde J_{\Phi}$.
 
 **Finite-dimensional check.** On the Hermitian positive-definite matrix
 $$
@@ -140,12 +140,12 @@ Q S=\int d^4r\;\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}(r_x)
 $$
 for some current $\tilde J_{\Phi}$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
 $$
-0=\int\mathcal{D}\tilde{Ξ}\;Q\Big(F\,\exp(\,\frac{k_m\,i\,S}{m\,c})\Big)
-=\int\mathcal{D}\tilde{Ξ}\;\exp(\,\frac{k_m\,i\,S}{m\,c})\Big(QF+\frac{k_m\,i}{m\,c}F\,QS\Big),
+0=\int\mathcal{D}\tilde{Ξ}\;Q\Big(F\,\exp(\,\frac{i\,S}{\hbar})\Big)
+=\int\mathcal{D}\tilde{Ξ}\;\exp(\,\frac{i\,S}{\hbar})\Big(QF+\frac{i}{\hbar}F\,QS\Big),
 $$
 where the second equality uses the **invariance of the measure**, $\int\mathcal{D}\tilde{Ξ}\,Q(\;\cdot\;)=0$ — the assumption that the measure, and not only the action, is invariant. Then
 $$
-\big\langle  QF\big\rangle+\frac{k_m\,i}{m\,c}\Big\langle  F\int  d^4r\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}\Big\rangle=0 .
+\big\langle  QF\big\rangle+\frac{i}{\hbar}\Big\langle  F\int  d^4r\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}\Big\rangle=0 .
 $$
 For $F=1$ this is the statement that the current is conserved inside the vacuum:
 $$
@@ -223,13 +223,13 @@ For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is a
 
 The Schwinger–Dyson equations and the Ward–Takahashi identities descend from a single argument, the integration of a total derivative in field space, and both rest on the **translation invariance of the functional measure**. The working identity is
 $$
-\Big\langle\frac{\delta F}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}+\frac{k_m\,i}{m\,c}\Big\langle  F\,\frac{\delta S}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}+\big\langle  F\,\tilde J_{\Phi}(x)\big\rangle_{\!J}=0,
+\Big\langle\frac{\delta F}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}+\frac{i}{\hbar}\Big\langle  F\,\frac{\delta S}{\delta\tilde{Ξ}(x)}\Big\rangle_{\!J}+\big\langle  F\,\tilde J_{\Phi}(x)\big\rangle_{\!J}=0,
 $$
 which at $F=1$ gives the quantum equation of motion $\langle\delta S/\delta\tilde{Ξ}(x)\rangle=0$, at generic $F$ the contact-term hierarchy, and at the symmetry variation gives the Ward–Takahashi identity $\sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,\langle j_\mu F\rangle=-\langle qF\rangle+\text{contact terms}$. The generating form is the **master Schwinger–Dyson equation**
 $$
-\Big(\frac{\delta S}{\delta\tilde{Ξ}}\Big)\Big[\frac{\delta}{\delta\tilde J}_{\Phi}\Big]Z[\tilde J_{\Phi}]=\frac{m\,c\,i\,\tilde{J}_{\Phi}\,x\,Z}{k_m}[\tilde J_{\Phi}],
+\Big(\frac{\delta S}{\delta\tilde{Ξ}}\Big)\Big[\frac{\delta}{\delta\tilde J}_{\Phi}\Big]Z[\tilde J_{\Phi}]=i\,\hbar\,\tilde{J}_{\Phi}\,x\,Z[\tilde J_{\Phi}],
 $$
-whose sign is fixed by the series convention $Z=\int\mathcal{D}\tilde{Ξ}\,\exp(\,\frac{k_m\,i\,S}{m\,c}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ with a real source pairing; its $J$-expansion generates the whole hierarchy, and the free case was checked in finite dimension.
+whose sign is fixed by the series convention $Z=\int\mathcal{D}\tilde{Ξ}\,\exp(\,\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ with a real source pairing; its $J$-expansion generates the whole hierarchy, and the free case was checked in finite dimension.
 
 The algebra's contribution is specific and limited. It supplies the functional derivative as the module's own gradient, so that the argument needs no basis; the variation of the quadratic action as the central $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ on the module, so that the scalar hierarchy is generated by the central d'Alembertian and the mass; the chirality-off-diagonal fermionic variation, from the right-multiplication mass term, which is the algebraic origin of the axial anomaly's structure; the central phase as the canonical one-parameter symmetry, with generator $i$ and current in the material sector $\mathbb{B}_{\Phi}$; and the module's chirality structure as the carrier of the anomaly's Jacobian. It does **not** supply the functional measure or its invariance, which is the premise of every identity here; the contact terms; the master equation; the local Ward–Takahashi derivation; the anomaly coefficient; or the Slavnov–Taylor identities of the non-abelian theory. The quantum Yang–Mills equation of the companion article is the gauge-field instance of the same argument, the axial anomaly of the anomaly articles is the failure of its measure premise, and the BRST nilpotency of the BRST article is what makes the non-abelian identities close.
 
@@ -247,10 +247,10 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ | Quadratic operator |
 | $a$ | colour index of the gauge algebra, written low |
-| $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,\frac{k_m\,i\,S}{m\,c}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with module-valued source |
+| $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with module-valued source |
 | $\delta F/\delta\tilde{Ξ}$ | Module gradient, defined through the pairing |
 | $\langle\delta S/\delta\tilde{Ξ}(x)\rangle=0$ | Quantum equation of motion |
-| $\big(\delta S/\delta\tilde{Ξ}\big)[\delta/\delta\tilde J_{\Phi}]Z=\frac{m\,c\,i\,\tilde{J}_{\Phi}\,Z}{k_m}$ | Master Schwinger–Dyson equation |
+| $\big(\delta S/\delta\tilde{Ξ}\big)[\delta/\delta\tilde J_{\Phi}]Z=i\,\hbar\,\tilde{J}_{\Phi}\,Z$ | Master Schwinger–Dyson equation |
 | $Q$, $Q\tilde{Ξ}=i\tilde{Ξ}$ | Symmetry generator; central phase generator |
 | $j_\mu$, $\tilde J_{\Phi}=\sum_\nu J_\nu e_\nu\in\mathbb{B}_{\Phi}$ | Noether current of the central phase |
 | $\sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,\langle j_\mu F\rangle=-\langle qF\rangle+\text{contact terms}$ | Ward–Takahashi identity |

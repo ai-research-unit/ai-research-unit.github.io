@@ -15,21 +15,21 @@ The article fixes what spin is, gives the two lists, interprets each carrier phy
 **The label.** Spin is the highest weight $s$ of the rotation action on a carrier, defined by the Casimir:
 
 $$
-\tilde S_{\Psi}^2=\frac{m^{2}\,c^{2}\,s\,(s+1)\,e_{t}}{k_m^{2}}.
+\tilde S_{\Psi}^2=\hbar^{2}\,s\,(s+1)\,e_{t}.
 $$
 
 On an irreducible carrier the Casimir is a scalar, so $s$ is one number for the whole carrier. The number of states is $2s+1$. The spin is a real number, $s\in\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector and not a complex number.
 
-**The direction is a state label.** The component along an axis needs an axis: $\tilde S_{\Psi,3}=\frac{m\,c\,s_{z}}{k_m}$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.
+**The direction is a state label.** The component along an axis needs an axis: $\tilde S_{\Psi,3}=\hbar\,s_{z}$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.
 
 **The classical picture.** A coherent state $|\vec u\rangle$ of maximal spin along $\vec u$ has
 
 $$
-\langle\vec S\rangle=\frac{m\,c\,s\,\vec u}{k_m},\qquad
-\langle\vec S^2\rangle=\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}.
+\langle\vec S\rangle=\hbar\,s\,\vec u,\qquad
+\langle\vec S^2\rangle=\hbar^{2}\,s\,(s+1).
 $$
 
-The expectation is a vector of length $\frac{m\,c\,s}{k_m}$; the Casimir length is $\frac{m\,c}{k_m}\sqrt{s(s+1)}$. The two agree only in the limit $s\gg1$. The vector is a shadow of the representation, not the representation.
+The expectation is a vector of length $\hbar\,s$; the Casimir length is $\hbar\sqrt{s(s+1)}$. The two agree only in the limit $s\gg1$. The vector is a shadow of the representation, not the representation.
 
 **The boundary.** The direction is a continuous coordinate on the sphere of states. The spin is the discrete label of the carrier, and it does not vary with the direction.
 
@@ -69,12 +69,12 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 **The carrier.** The Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ has complex dimension two, with basis $(\tilde\Pi_+,\vec\Upsilon_{-+})$. The second plane $S_-$ is a second copy, module-isomorphic and Hilbert-orthogonal.
 
-**The operators.** With $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$,
+**The operators.** With $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$,
 
 $$
-\tilde S_{\Psi}^2=\tfrac34\frac{m^{2}\,c^{2}\,e_{t}}{k_m^{2}},\qquad
-\tilde S_{\Psi,3}\tilde\Pi_+=\frac{m\,c}{2\,k_m}\tilde\Pi_+,\qquad
-\tilde S_{\Psi,3}\vec\Upsilon_{-+}=-\frac{m\,c}{2\,k_m}\vec\Upsilon_{-+}.
+\tilde S_{\Psi}^2=\tfrac34\hbar^{2}\,e_{t},\qquad
+\tilde S_{\Psi,3}\tilde\Pi_+=\frac{\hbar}{2}\tilde\Pi_+,\qquad
+\tilde S_{\Psi,3}\vec\Upsilon_{-+}=-\frac{\hbar}{2}\vec\Upsilon_{-+}.
 $$
 
 The ladder operators are the nilpotent mixed units
@@ -84,7 +84,7 @@ $$
 \vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-with $\tilde S_{\Psi,+}=\frac{m\,c\,\vec \Upsilon_{+-}}{k_m}$, $\tilde S_{\Psi,-}=\frac{m\,c\,\vec \Upsilon_{-+}}{k_m}$ and $\tilde S_{\Psi,\pm}^2=0$. In *Spin and the Three Elementary Carriers* the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.
+with $\tilde S_{\Psi,+}=\hbar\,\vec \Upsilon_{+-}$, $\tilde S_{\Psi,-}=\hbar\,\vec \Upsilon_{-+}$ and $\tilde S_{\Psi,\pm}^2=0$. In *Spin and the Three Elementary Carriers* the same units are written $\vec\Upsilon_{+-}=\vec\Upsilon_x$ and $\vec\Upsilon_{-+}=\vec\Upsilon_y$.
 
 **The copies at an axis.** For a unit real pure quaternion $\vec u$, the idempotents
 
@@ -94,13 +94,13 @@ $$
 
 generate the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, each a copy of the carrier. The planes $S_\pm$ above are the case $\vec u=\vec e_z$.
 
-**The states in a copy.** In the left action, $\tilde\Pi_+(\vec u)$ is the state of weight $+\frac{m\,c}{2\,k_m}$ in $S_+(\vec u)$,
+**The states in a copy.** In the left action, $\tilde\Pi_+(\vec u)$ is the state of weight $+\frac{\hbar}{2}$ in $S_+(\vec u)$,
 
 $$
-(\vec u\cdot\tilde S_{\Psi})\,\tilde\Pi_+(\vec u)=+\frac{m\,c}{2\,k_m}\,\tilde\Pi_+(\vec u),
+(\vec u\cdot\tilde S_{\Psi})\,\tilde\Pi_+(\vec u)=+\frac{\hbar}{2}\,\tilde\Pi_+(\vec u),
 $$
 
-and $\tilde\Pi_-(\vec u)$ is the state of weight $-\frac{m\,c}{2\,k_m}$ in $S_-(\vec u)$. The state of weight $-\frac{m\,c}{2\,k_m}$ in $S_+$ is its nilpotent basis vector, not an idempotent.
+and $\tilde\Pi_-(\vec u)$ is the state of weight $-\frac{\hbar}{2}$ in $S_-(\vec u)$. The state of weight $-\frac{\hbar}{2}$ in $S_+$ is its nilpotent basis vector, not an idempotent.
 
 **The two outcomes.** The two idempotents are the two outcomes of a measurement along $\vec u$: pure states of the algebra, not two vectors of one module. The axis is the measurement direction, and the two outcomes are its two signs.
 
@@ -118,7 +118,7 @@ $$
 
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.
 
-**The operators.** With $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_\eta}a$,
+**The operators.** With $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{\hbar}{2}\mathrm{ad}_{i\vec e_\eta}a$,
 
 $$
 \tilde S_{\Psi,\mathrm{adj}}^2=2\hbar^2\operatorname{id}_V,\qquad
@@ -129,13 +129,13 @@ $$
 The Casimir follows from $C=(\tilde S_{\Psi,\mathrm{adj},3})^2+\tfrac12(\tilde S_{\Psi,\mathrm{adj},+}\tilde S_{\Psi,\mathrm{adj},-}+\tilde S_{\Psi,\mathrm{adj},-}\tilde S_{\Psi,\mathrm{adj},+})$ and the ladder actions
 
 $$
-\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_-=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
-\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{+}}{k_m},\qquad
-\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_+=\sqrt\frac{2\,m\,c\,\varepsilon_{0}}{k_m},\qquad
-\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_0=\sqrt\frac{2\,m\,c\,\varepsilon_{-}}{k_m},
+\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_{0},\qquad
+\tilde S_{\Psi,\mathrm{adj},+}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_{+},\qquad
+\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_{0},\qquad
+\tilde S_{\Psi,\mathrm{adj},-}\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_{-},
 $$
 
-which give $C=\frac{2\,m^{2}\,c^{2}}{k_m^{2}}$ on all three states. The value is $\frac{m^{2}\,c^{2}\,s\,(s+1)}{k_m^{2}}$ at $s=1$. There are three states.
+which give $C=2\,\hbar^{2}$ on all three states. The value is $\hbar^{2}\,s\,(s+1)$ at $s=1$. There are three states.
 
 **The physical interpretation.** A vector field. In the rest frame of a massive vector the three weights are the three polarizations. For a massless one the longitudinal state is removed and two helicities remain. The photon, the $W^\pm$, the $Z$ and the gluons are the observed instances.
 
@@ -171,7 +171,7 @@ $$
 W_\mu=\tfrac12\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
 $$
 
-In the rest frame $W_0=0$ and $\vec W=mc\vec S$, so $\vec W^2=\frac{m^{4}\,c^{4}\,s\,(s+1)}{k_m^{2}}$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $-\sum_\mu  W_\mu W_\mu=-\frac{m^{2}\,c^{2}\,N\,s\,(s+1)}{k_m^{2}}=\frac{m^{4}\,c^{4}\,s\,(s+1)}{k_m^{2}}$. The rotation Casimir is the rest-frame shadow of the covariant invariant.
+In the rest frame $W_0=0$ and $\vec W=mc\vec S$, so $\vec W^2=\hbar^{2}\,m^{2}\,c^{2}\,s\,(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $-\sum_\mu  W_\mu W_\mu=-\hbar^{2}\,N\,s\,(s+1)=\hbar^{2}\,m^{2}\,c^{2}\,s\,(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.
 
 **The Lorentz label.** Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$. The conjugate chirality $(0,\tfrac12)$ is the conjugate module $S^{\mathrm c}$, with a conjugate-linear action; it is not a complex $\mathbb{B}$-module. The rotation spin $s$ is the little-group label; it is not the full Lorentz label, and the split of the four-vector into $0\oplus1$ is the work of the compact subgroup.
 
@@ -188,14 +188,14 @@ In the rest frame $W_0=0$ and $\vec W=mc\vec S$, so $\vec W^2=\frac{m^{4}\,c^{4}
 **The coherent-state action.** The spin path integral is written on the sphere of coherent states. Its kinetic term is the Wess–Zumino term
 
 $$
-S_{WZ}=\frac{m\,c\,i\,\oint}{k_m}\langle  z|\partial/\partial r'_t|z\rangle\,dr'_t=-\frac{m\,c\,s\,\theta_{\mathrm{sol}}}{k_m},
+S_{WZ}=i\,\hbar\,\oint\langle  z|\partial/\partial r'_t|z\rangle\,dr'_t=-\hbar\,s\,\theta_{\mathrm{sol}},
 $$
 
-where $\theta_{\mathrm{sol}}$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\frac{m\,c\,\theta_{\mathrm{sol}}}{2\,k_m}$, the spinor phase.
+where $\theta_{\mathrm{sol}}$ is the oriented solid angle of the loop, with the orientation fixed once and for all, and $|z\rangle$ is the spin-$s$ coherent state. For $s=\tfrac12$ the value is $-\frac{\hbar\,\theta_{\mathrm{sol}}}{2}$, the spinor phase.
 
 **The two quantities.** The direction is the loop on the sphere; the spin is the coefficient of the term. The Berry phase of the spin-$s$ coherent state carries the factor $s$, and the classical Hannay angle does not. The factor is the label; the trajectory is the direction.
 
-**The boundary.** The vector picture is the classical limit. The spin vector $\langle\vec S\rangle=\frac{m\,c\,s\,\vec u}{k_m}$ is an expectation value, not the definition. The definition is the Casimir label.
+**The boundary.** The vector picture is the classical limit. The spin vector $\langle\vec S\rangle=\hbar\,s\,\vec u$ is an expectation value, not the definition. The definition is the Casimir label.
 
 ## What the Framework Does Not Say
 
@@ -213,7 +213,7 @@ where $\theta_{\mathrm{sol}}$ is the oriented solid angle of the loop, with the 
 
 ## Summary
 
-The regular module of the biquaternion algebra contains exactly three irreducible subcarrier spins: $0$, $\tfrac12$ and $1$. They are distributed over two module structures. Left multiplication gives the spinor $S_\pm$, of dimension two, with Casimir $\tfrac34\frac{m^{2}\,c^{2}}{k_m^{2}}$ and spin $\tfrac12$. Conjugation gives the scalar $Z=\mathbb{C}e_t$, of dimension one, with spin $0$, and the vector $V=\ker\operatorname{tr}$, of dimension three, with Casimir $\frac{2\,m^{2}\,c^{2}}{k_m^{2}}$ and spin $1$.
+The regular module of the biquaternion algebra contains exactly three irreducible subcarrier spins: $0$, $\tfrac12$ and $1$. They are distributed over two module structures. Left multiplication gives the spinor $S_\pm$, of dimension two, with Casimir $\tfrac34\hbar^{2}$ and spin $\tfrac12$. Conjugation gives the scalar $Z=\mathbb{C}e_t$, of dimension one, with spin $0$, and the vector $V=\ker\operatorname{tr}$, of dimension three, with Casimir $2\,\hbar^{2}$ and spin $1$.
 
 There is no fourth: the irreducible subcarriers have dimensions $1$, $2$ and $3$, and the only four-dimensional invariant subspace is the whole algebra, which is reducible. The arithmetic $1+2+3=6>4$ shows that the three can never be the constituents of a single action.
 
@@ -230,8 +230,8 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $\tilde\Pi_\pm(\vec u)$ | The idempotents along the axis $\vec u$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
-| $\tilde S_{\Psi,\eta}=\frac{m\,c}{2\,k_m}i\vec e_\eta$ | The spin-half operators |
-| $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{m\,c}{2\,k_m}\mathrm{ad}_{i\vec e_\eta}a$ | The spin-one generators |
+| $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | The spin-half operators |
+| $\tilde S_{\Psi,\mathrm{adj},\eta}=\frac{\hbar}{2}\mathrm{ad}_{i\vec e_\eta}a$ | The spin-one generators |
 | $C=\tilde S_{\Psi,\mathrm{adj}}^2$ | The Casimir, $\sum_\eta(\tilde S_{\Psi,\mathrm{adj},\eta})^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |

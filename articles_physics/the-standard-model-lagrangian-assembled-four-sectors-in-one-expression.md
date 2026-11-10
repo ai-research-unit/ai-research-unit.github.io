@@ -92,7 +92,7 @@ with $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ the Di
 **The covariant gradient.** Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is
 
 $$
-\tilde\nabla_{\psi}\tilde\Xi_{\mathrm{sp},\psi}=\tilde\nabla\tilde\Xi_{\mathrm{sp},\psi}+\frac{k_m\,i\,ϙ}{m\,c}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\mathrm{sp},\psi} ,
+\tilde\nabla_{\psi}\tilde\Xi_{\mathrm{sp},\psi}=\tilde\nabla\tilde\Xi_{\mathrm{sp},\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\mathrm{sp},\psi} ,
 $$
 
 with $T^a_\psi$ the colour generators in the representation of $\psi$ and $\tau^a_\psi$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.

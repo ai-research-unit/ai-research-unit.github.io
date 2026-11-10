@@ -138,18 +138,27 @@ with $B_{\mathrm{frc}}$ the friction coefficient — dimensionless in these lett
 **The friction's work is what makes the entropy production, and the sign is fixed by the second law.** The rate at which the friction does work on the relative motion is the contraction of the friction element with the relative flow, and the entropy production is that rate divided by the temperature:
 
 $$
-\sigma_{\mathrm{ent}}=\frac{1}{T}\,\mathrm{Sc}\left(\tilde F_{\Phi,\mathrm{fr}}\,\tilde W_\Phi\right),
+\sigma_{\mathrm{ent}}=-\frac{1}{T}\,\mathrm{Sc}\left(\tilde F_{\Phi,\mathrm{fr}}\,\tilde W_\Phi\right)
+=\frac{1}{T}\,\frac{\rho_{\mathrm{num,sup}}\,\rho_{\mathrm{num,nrm}}}{\rho_{\mathrm{num}}}\,B_{\mathrm{frc}}\left(\lvert\vec w\rvert^{2}-w_t^{2}\right)\ \ge 0,
 $$
 
-with the overall sign chosen so that a positive $B_{\mathrm{frc}}$ gives a positive production. **The scalar part is real for a reason worth naming**: the temporal coefficients of both factors are imaginary and their spatial ones real, so $F_{\Phi,\mathrm{fr},t}W_{\Phi,t}$ is a product of two imaginary numbers and $\vec F_{\Phi,\mathrm{fr}}\cdot\vec W_\Phi$ a product of two real ones. **That product is negative**, $\mathrm{Sc}(\tilde F\tilde W)=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho)B_{\mathrm{frc}}\left[w_t^{2}-\lvert\vec w\rvert^{2}\right]$, which is why the display carries a minus: the dissipated quantity is $\lvert\vec w\rvert^{2}-w_t^{2}=c^{2}(\gamma_{\mathrm{nrm}}-\gamma_{\mathrm{sup}})^{2}+\lvert\vec w\rvert^{2}$, a sum of two squares whose second term is the $w^{2}$ of the display below and whose first is the relativistic correction, positive and vanishing at coincidence. **Damping of the relative motion heats the normal component, and the heat is exactly the kinetic energy of the relative drift** — that is the physical content of the display, and it is the standard mutual-friction mechanism of the helium literature quoted into the corpus's letters.
+**the minus being forced and not chosen.** The plain product's scalar part is $\mathrm{Sc}(\tilde W_\Phi^{2})=w_t^{2}-\lvert\vec w\rvert^{2}$, which is negative for this element, because the temporal coefficient is imaginary and the spatial part real; a production written without the minus would therefore be negative for a positive coefficient. **The scalar part is real for a reason worth naming**: the temporal coefficients of both factors are imaginary and their spatial ones real, so $F_{\Phi,\mathrm{fr},t}W_{\Phi,t}$ is a product of two imaginary numbers and $\vec F_{\Phi,\mathrm{fr}}\cdot\vec W_\Phi$ a product of two real ones. **That product is negative**, $\mathrm{Sc}(\tilde F\tilde W)=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho)B_{\mathrm{frc}}\left[w_t^{2}-\lvert\vec w\rvert^{2}\right]$, which is why the display carries the minus: the dissipated quantity is $\lvert\vec w\rvert^{2}-w_t^{2}=c^{2}(\gamma_{\mathrm{nrm}}-\gamma_{\mathrm{sup}})^{2}+\lvert\vec w\rvert^{2}$, **a sum of two squares, positive and vanishing at coincidence**, the first being the relativistic correction and the second the square of the difference of the two current densities. **Damping of the relative motion heats the normal component, and the heat is exactly the kinetic energy of the relative drift** — that is the physical content of the display, and it is the standard mutual-friction mechanism of the helium literature quoted into the corpus's letters.
 
-**The sign convention, stated once and used everywhere.** The norm of the relative element is quadratic in the relative motion but it is not the relative speed: for two collinear flows it is $2c^{2}(\cosh\Delta\theta-1)$, which is $c^{2}(\Delta\theta)^{2}$ to leading order and not $\lvert\vec w\rvert^{2}$. **The production is therefore written on the relative speed** $w^{2}=\lvert\vec v_{\mathrm{nrm}}-\vec v_{\mathrm{sup}}\rvert^{2}$, which is the quantity the friction law of the helium literature is stated on:
+**The sign convention, stated once and used everywhere.** The norm of the relative element is quadratic in the relative motion but it is not the relative speed: for two collinear flows it is $2c^{2}(\cosh\Delta\theta-1)$, which is $c^{2}(\Delta\theta)^{2}$ to leading order and not $\lvert\vec w\rvert^{2}$. **The helium literature states its friction law on the relative speed** $w^{2}=\lvert\vec v_{\mathrm{nrm}}-\vec v_{\mathrm{sup}}\rvert^{2}$, and that quantity is a different one from $\lvert\vec w\rvert^{2}$: the element's spatial part is $\vec W_\Phi=\gamma_{\mathrm{nrm}}\vec v_{\mathrm{nrm}}-\gamma_{\mathrm{sup}}\vec v_{\mathrm{sup}}$, a difference of current densities and not of velocities. **The two coincide only in the non-relativistic limit**, which is the limit in which the two $\gamma$'s may be treated as one:
+
+$$
+\frac{\lvert\vec w\rvert^{2}-w_t^{2}}{\lvert\vec v_{\mathrm{nrm}}-\vec v_{\mathrm{sup}}\rvert^{2}}
+=1.041\quad\text{at }(0.1c,\,0.101c),\qquad
+=3.366\quad\text{at }(0.5c,\,0.55c),
+$$
+
+the first ratio being close to one and the second already three times one. **So the display below is the literature's form and not the corpus's**, and its use is confined to the arithmetic:
 
 $$
 \sigma_{\mathrm{ent}}=\frac{1}{T}\,\frac{\rho_{\mathrm{num,sup}}\,\rho_{\mathrm{num,nrm}}}{\rho_{\mathrm{num}}}\,B_{\mathrm{frc}}\,w^{2}\ \ge 0,
 $$
 
-which is manifestly non-negative for $B_{\mathrm{frc}}\ge0$. **The article uses the second display in the arithmetic and the first in the structural statements**, because the first shows the element and the second shows the sign.
+which is manifestly non-negative for $B_{\mathrm{frc}}\ge0$. **The article uses the second display in the arithmetic and the first in the structural statements**, because the first shows the element and the second is the form the literature quotes; **a reader who takes the second for the exact statement will have a production that is wrong by the ratio tabulated above at relativistic relative speeds.**
 
 ### Numbers
 
@@ -250,7 +259,7 @@ in the element spelling of §*The two stress equations*, which is the form the a
 
 ## What Is Established and What Is Interpretation
 
-**Established, and standard.** That a quantum fluid at finite temperature admits a two-fluid description with a condensate that carries no entropy and a normal component that carries all of it; that the condensate's flow is a gradient and therefore irrotational; that the two components exchange momentum and that only the total stress is conserved; that mutual friction produces entropy at a rate proportional to the square of the relative speed and vanishes when the two flows coincide; that a phase coupling between the two components has the Josephson form, with a DC exchange current proportional to the sine of the phase difference and an AC frequency equal to the chemical potential difference over $\hbar$; that the $T\to0$ limit is the one-fluid model.
+**Established, and standard.** That a quantum fluid at finite temperature admits a two-fluid description with a condensate that carries no entropy and a normal component that carries all of it; that the condensate's flow is a gradient and therefore irrotational; that the two components exchange momentum and that only the total stress is conserved; that mutual friction produces entropy at a rate proportional to the square of the relative speed to leading order in that speed, and vanishing when the two flows coincide; that a phase coupling between the two components has the Josephson form, with a DC exchange current proportional to the sine of the phase difference and an AC frequency equal to the chemical potential difference over $\hbar$; that the $T\to0$ limit is the one-fluid model.
 
 **The framework's contribution.** The two flows are elements with a common normalisation, the relative flow is their difference and its quaternionic norm measures the departure from coincidence, and the $T\to0$ limit is exact because every term that disappears carries a positive power of the normal density. **The articles' contribution is structural: it makes the model's two central statements — the split and the coupling — statements about elements rather than about index conventions.**
 
@@ -264,7 +273,7 @@ The two-fluid model writes two flow elements, $\tilde V_{\Phi,\mathrm{sup}}=\til
 
 The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pure state and the corpus's functional vanishes there; it carries the quantum stress instead, with $p_{\mathrm{qnt}}$ its pressure. The normal component carries all the entropy, $s_{\mathrm{ent,nrm}}=s_{\mathrm{ent}}$, and its equations are the single-fluid equations read on its own flow. Neither component's stress is conserved alone: $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}}=-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}$, and only the sum is conserved.
 
-Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the production $\sigma_{\mathrm{ent}}=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}\ge0$. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.
+Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the exact production $\sigma_{\mathrm{ent}}=-T^{-1}\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}}\tilde W_\Phi)=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}(\lvert\vec w\rvert^{2}-w_t^{2})\ge0$, which reduces to $T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}$ to leading order in the relative speed. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.
 
 The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\Delta S/\hbar)$, an exchange current $J_{\mathrm{c}}\sin(\Delta S/\hbar)$ and an AC frequency $\omega_{\mathrm{Jsn}}=\Delta\mu_{\mathrm{chm}}/\hbar$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
 
@@ -280,7 +289,8 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 | $e_t$ | Unit temporal direction |
 | $\tilde W_\Phi$ | Relative flow element |
 | $v_{\Phi,\mathrm{sup},\mu}$, $v_{\Phi,\mathrm{nrm},\mu}$ | Components of the two flows, low |
-| $w_\mu$, $w^{2}$ | Relative component and relative speed squared |
+| $w_\mu=v_{\Phi,\mathrm{nrm},\mu}-v_{\Phi,\mathrm{sup},\mu}$ | Relative component, low; its temporal entry $w_t$ is imaginary |
+| $w^{2}=\lvert\vec v_{\mathrm{nrm}}-\vec v_{\mathrm{sup}}\rvert^{2}$ | Squared relative speed, the literature's variable; not $\lvert\vec w\rvert^{2}$ |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
 | $\rho_{\mathrm{num,sup}}$, $\rho_{\mathrm{num,nrm}}$ | Its condensate and normal parts |
 | $x_{\mathrm{sup}}$, $x_{\mathrm{nrm}}$ | The two fractions |

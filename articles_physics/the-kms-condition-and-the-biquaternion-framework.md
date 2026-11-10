@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **KMS condition** — named after Kubo, Martin, and Schwinger — is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta =\frac{m\,c}{k_m\,k_{B}\,T}$ in the complex time plane, and satisfy a specific boundary condition that exchanges the order of the operators. The condition is satisfied by both bosonic and fermionic thermal states — the boundary relation itself is the same in both cases, while the statistics enter through the time-ordered correlation functions — and it is the reason the imaginary-time (Matsubara) formalism works.
+The **KMS condition** — named after Kubo, Martin, and Schwinger — is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta =\frac{\hbar}{k_{B}\,T}$ in the complex time plane, and satisfy a specific boundary condition that exchanges the order of the operators. The condition is satisfied by both bosonic and fermionic thermal states — the boundary relation itself is the same in both cases, while the statistics enter through the time-ordered correlation functions — and it is the reason the imaginary-time (Matsubara) formalism works.
 
 The KMS condition has imaginary time built into its structure. The analytic continuation $r'_t \to r'_t + i\beta$ is not a convenience; it is the content of the condition. This suggests that a framework in which imaginary time is **intrinsic** — not an analytic continuation, but the natural coordinate — might be a natural setting for the condition.
 
@@ -10,13 +10,13 @@ The material sector $\mathbb{B}_{\Phi}$ of the biquaternion algebra is such a fr
 
 The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{B}_{\Phi}$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the interpretation and with directions for future work.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with its remarkable subspaces as in the basic algebra article; the three used here are the quaternion subspace $\mathbb{B}_{H}$, the material sector $\mathbb{B}_{\Phi}$, and the informational sector $\mathbb{B}_{\Psi}$. Throughout, $c$ denotes the speed of light in the medium, and $\frac{m\,c}{k_m}$ and $k_B$ are the reduced Planck constant and Boltzmann's constant.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with its remarkable subspaces as in the basic algebra article; the three used here are the quaternion subspace $\mathbb{B}_{H}$, the material sector $\mathbb{B}_{\Phi}$, and the informational sector $\mathbb{B}_{\Psi}$. Throughout, $c$ denotes the speed of light in the medium, and $\hbar$ and $k_B$ are the reduced Planck constant and Boltzmann's constant.
 
 ## The KMS Condition
 
 ### Statement
 
-Consider a quantum system at inverse temperature $\beta =\frac{m\,c}{k_m\,k_{B}\,T}$, described by a state $\omega_\beta$ and a one-parameter group of time translations $\alpha_{r'_{t}}$ (the Heisenberg evolution). For any two operators $A, B$ in the algebra of observables, define the thermal correlation function
+Consider a quantum system at inverse temperature $\beta =\frac{\hbar}{k_{B}\,T}$, described by a state $\omega_\beta$ and a one-parameter group of time translations $\alpha_{r'_{t}}$ (the Heisenberg evolution). For any two operators $A, B$ in the algebra of observables, define the thermal correlation function
 
 $$
 F_{AB}(r'_t) = \omega_\beta\big(A\, \alpha_{r'_{t}}(B)\big).
@@ -217,7 +217,7 @@ The following directions seem promising.
 
 ## Summary
 
-The KMS condition is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta =\frac{m\,c}{k_m\,k_{B}\,T}$ in the complex time plane, and satisfy a boundary condition that exchanges the order of the operators and reverses the time argument; the statistics do not enter this relation, but the time-ordered correlation functions, where the fermionic exchange carries a minus sign.
+The KMS condition is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta =\frac{\hbar}{k_{B}\,T}$ in the complex time plane, and satisfy a boundary condition that exchanges the order of the operators and reverses the time argument; the statistics do not enter this relation, but the time-ordered correlation functions, where the fermionic exchange carries a minus sign.
 
 The KMS condition has imaginary time built into it. The analytic continuation $r'_t \to r'_t + i\beta$ is not a convenience; it is the content of the condition.
 
@@ -239,7 +239,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $\mathbb{B}_{H}$ | Quaternion subspace |
 | $c$ | Speed of light in the medium |
 | $r'_t$ | Time coordinate |
-| $\beta =\frac{m\,c}{k_m\,k_{B}\,T}$ | Inverse temperature |
+| $\beta =\frac{\hbar}{k_{B}\,T}$ | Inverse temperature |
 | $\omega_\beta$ | Thermal state at inverse temperature $\beta$ |
 | $\alpha_{r'_{t}}$ | Heisenberg evolution |
 | $F_{AB}(r'_t)$ | Thermal correlation function (complex-valued) |

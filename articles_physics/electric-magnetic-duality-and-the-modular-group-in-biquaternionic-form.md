@@ -123,10 +123,10 @@ This was verified numerically at three couplings: for $g=1$ the image $\tau_2=0.
 
 ## The Charge Lattice and the Quantisation Condition
 
-A dyon carries electric charge $ϙ_e$ and magnetic charge $ϙ_m$. The charge product carries the dimensions of an action, so the Dirac–Schwinger–Zwanziger quantisation condition for two dyons labelled $i=1,2$, divided by $\hbar=m\,c/k_m$, is
+A dyon carries electric charge $ϙ_e$ and magnetic charge $ϙ_m$. The charge product carries the dimensions of an action, so the Dirac–Schwinger–Zwanziger quantisation condition for two dyons labelled $i=1,2$, divided by $\hbar$, is
 
 $$
-\boxed{\;\frac{k_m}{m\,c}\left(ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}\right) \;=\; 2\pi\,\nu ,
+\boxed{\;\frac{1}{\hbar}\left(ϙ_e^{(1)}ϙ_m^{(2)}-ϙ_e^{(2)}ϙ_m^{(1)}\right) \;=\; 2\pi\,\nu ,
 \qquad
 \nu\in\mathbb Z\;},
 $$

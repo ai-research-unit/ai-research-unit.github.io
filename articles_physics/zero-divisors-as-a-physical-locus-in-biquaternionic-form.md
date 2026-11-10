@@ -203,7 +203,7 @@ $$
 \langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural}=0 \quad \text{identically},
 $$
 
-a wave function whose biquaternion norm vanishes everywhere: a **null solution**. It is a genuine algebraic solution of the free dynamics, and it is the image of the algebraic null cone in the solution space. The construction was verified with a spreading Gaussian wave packet, that is, with a superposition of plane waves rather than a single one: in units $\frac{m\,c}{k_m}=m=k_{t}^{\prime}=1$ and with the initial density $|q(0,x)|^2=\exp(-x^2)$ (density width $s_0=1/\sqrt2$),
+a wave function whose biquaternion norm vanishes everywhere: a **null solution**. It is a genuine algebraic solution of the free dynamics, and it is the image of the algebraic null cone in the solution space. The construction was verified with a spreading Gaussian wave packet, that is, with a superposition of plane waves rather than a single one: in units $\hbar=m=k_{t}^{\prime}=1$ and with the initial density $|q(0,x)|^2=\exp(-x^2)$ (density width $s_0=1/\sqrt2$),
 
 $$
 q(r'_t,r_x)=(1+ir'_t)^{-1/2}\exp\left[-\frac{(r_x-k_{t}^{\prime}r'_t)^2}{2(1+ir'_t)}+i\left(k_{t}^{\prime}r_x-\tfrac12k_{t}^{\prime\,2}r'_t\right)\right],

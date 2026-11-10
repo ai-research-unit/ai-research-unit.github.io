@@ -46,7 +46,7 @@ The area law is thus the generic behaviour of local ground states, and its viola
 Two features of the leading term are field-theoretic and are not accessible in a finite-dimensional model.
 
 - **The divergence.** The coefficient $\kappa\epsilon^{-(d-1)}$ diverges as the cutoff is removed. It is a short-distance quantity: each boundary bond contributes an $O(1)$ amount of entanglement in units of the cutoff, and the total is the number of such bonds, which scales as the boundary area divided by the cutoff area. The divergence is the same one that the replica partition function produces as the branch locus is approached.
-- **The coefficient.** The value of $\kappa$ is non-universal for the leading term, and universal for the finite terms. In holography the leading term is fixed by the Ryu–Takayanagi formula, $S_A=\mathrm{Area}(\gamma_A)/(4G_N)$, with $\gamma_A$ the minimal surface homologous to $A$; for a black hole it becomes the Bekenstein–Hawking entropy $S=A_{\mathrm{hor}}/(\frac{4\,m\,c\,G}{k_m})$.
+- **The coefficient.** The value of $\kappa$ is non-universal for the leading term, and universal for the finite terms. In holography the leading term is fixed by the Ryu–Takayanagi formula, $S_A=\mathrm{Area}(\gamma_A)/(4G_N)$, with $\gamma_A$ the minimal surface homologous to $A$; for a black hole it becomes the Bekenstein–Hawking entropy $S=A_{\mathrm{hor}}/(4\,\hbar\,G)$.
 
 ## Why Locality Gives an Area Law
 
@@ -146,7 +146,7 @@ In quantum field theory the discrete bound becomes the divergent area formula, a
 - **Free fields.** The entanglement entropy of a region in the vacuum of a free field is computed by the replica trick; the leading term is proportional to the boundary area divided by the cutoff area, with a coefficient that depends on the number and masses of the fields. The classic computations are those of Bombelli, Koul, Lee, and Sorkin and of Srednicki.
 - **Conformal field theory.** In $1+1$ dimensions the area law is violated logarithmically, $S_A=\frac{c}{3}\log(L/\epsilon)$, with the coefficient fixed by the central charge. In higher dimensions the leading boundary term persists, with universal subleading constants.
 - **Holography.** The Ryu–Takayanagi formula computes the entanglement entropy of a boundary region as the area of the minimal bulk surface divided by $4G_N$; the area law is thereby identified with a geometric area in one higher dimension.
-- **Black holes.** The Bekenstein–Hawking entropy $S=A_{\mathrm{hor}}/(\frac{4\,m\,c\,G}{k_m})$ is the area law for the horizon, and its derivation from the entanglement of the quantum fields outside the horizon is the subject of the thermodynamic and entanglement derivations of the Einstein equations.
+- **Black holes.** The Bekenstein–Hawking entropy $S=A_{\mathrm{hor}}/(4\,\hbar\,G)$ is the area law for the horizon, and its derivation from the entanglement of the quantum fields outside the horizon is the subject of the thermodynamic and entanglement derivations of the Einstein equations.
 
 None of these is derived here. Their common structure is the one the finite framework exhibits: the entropy of a region is controlled by the region's boundary, with a fixed contribution per boundary bond, and it is the short-distance limit of that structure that produces the divergent geometric area.
 
@@ -225,7 +225,7 @@ What the framework cannot supply is the geometry: the metric, the dimension, the
 | $S_A\le|\partial A|\log2$ | Discrete area-law bound in the framework |
 | $\xi$ | Bond dimension; $\xi=2$ for the biquaternion module |
 | $|Ξ^{+}\rangle=\frac{1}{\sqrt2}(|00\rangle+|11\rangle)$ | Bell pair; dimer |
-| $S_{BH}=A_{\mathrm{hor}}/(\frac{4\,m\,c\,G}{k_m})$ | Bekenstein–Hawking entropy |
+| $S_{BH}=A_{\mathrm{hor}}/(4\,\hbar\,G)$ | Bekenstein–Hawking entropy |
 
 ## Further Reading
 

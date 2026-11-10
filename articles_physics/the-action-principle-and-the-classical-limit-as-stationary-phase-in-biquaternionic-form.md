@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Two statements are joined in this article. The first is the **action principle**: the physical trajectory of a classical system is the trajectory at which the action $S=\int \mathrm{Lag}\,dt'$ is stationary, and the stationarity condition is the Euler–Lagrange equation. The second is the **classical limit as stationary phase**: when a sum over trajectories is weighted by the phase $\exp(\frac{k_m\,i\,S}{m\,c})$, the sum is dominated, as $\hbar\to0$, by the trajectories near the stationary ones, so that the classical paths are exactly the critical points of the action. The first statement is the classical theory; the second is the statement that the classical theory is the critical-point theory of an oscillatory integral.
+Two statements are joined in this article. The first is the **action principle**: the physical trajectory of a classical system is the trajectory at which the action $S=\int \mathrm{Lag}\,dt'$ is stationary, and the stationarity condition is the Euler–Lagrange equation. The second is the **classical limit as stationary phase**: when a sum over trajectories is weighted by the phase $\exp(\frac{i\,S}{\hbar})$, the sum is dominated, as $\hbar\to0$, by the trajectories near the stationary ones, so that the classical paths are exactly the critical points of the action. The first statement is the classical theory; the second is the statement that the classical theory is the critical-point theory of an oscillatory integral.
 
-This article develops both in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The second statement is not a quantisation. An oscillatory integral with a real phase and a large parameter is a classical object, and its asymptotic evaluation is a theorem of analysis (the stationary-phase lemma of Kelvin, developed by many hands). What the classical limit adds is an identification: the critical-point equations of the action are the equations of motion. This article stays on that side of the line. No state space, no operators, and no commutator appear; the symbol $\frac{m\,c}{k_m}$ enters only as the inverse scale of the phase, as the parameter of an asymptotic expansion, and nowhere as a quantum of action attributed to a physical system. The companion articles of the sibling quantum category own the quantisation; here the phase is a bookkeeping device for a classical sum.
+This article develops both in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The second statement is not a quantisation. An oscillatory integral with a real phase and a large parameter is a classical object, and its asymptotic evaluation is a theorem of analysis (the stationary-phase lemma of Kelvin, developed by many hands). What the classical limit adds is an identification: the critical-point equations of the action are the equations of motion. This article stays on that side of the line. No state space, no operators, and no commutator appear; the symbol $\hbar$ enters only as the inverse scale of the phase, as the parameter of an asymptotic expansion, and nowhere as a quantum of action attributed to a physical system. The companion articles of the sibling quantum category own the quantisation; here the phase is a bookkeeping device for a classical sum.
 
 The biquaternion algebra contributes two things to the discussion.
 
@@ -29,7 +29,7 @@ $$
 S[\tilde q]=\int_{t'_1}^{t'_2}\mathrm{Lag}(\tilde q,d\tilde q/dt',r'_t)\,dt' .
 $$
 
-Because $\mathrm{Lag}$ takes values in the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(\frac{k_m\,i\,S}{m\,c})$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
+Because $\mathrm{Lag}$ takes values in the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(\frac{i\,S}{\hbar})$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
 
 ### The Domain of the Principle: Discrete and Continuous
 
@@ -269,21 +269,21 @@ The rotor action is the second reason the biquaternion formulation is useful for
 The purely analytic statement is the following. Let $S(x)$ be a real smooth function with a single nondegenerate critical point $x_0$, $dS/dx(x_0)=0$, $d^2S/dx^2(x_0)\neq0$, and let $g$ be smooth. Then as $\hbar\to0^+$,
 
 $$
-\boxed{\;\int  g(x)\,\exp(\,\frac{k_m\,i\,S\,x}{m\,c})\,dx
+\boxed{\;\int  g(x)\,\exp(\,\frac{i\,S\,x}{\hbar})\,dx
 \;\sim\;
-g(x_0)\,\sqrt{\frac{\frac{2\,m\,c\,\pi}{k_m}}{\left|\frac{d^2S}{dx^2}(x_0)\right|}}\;
-\exp(\,\frac{k_m\,i\,S\,x_{0}}{m\,c})\;
+g(x_0)\,\sqrt{\frac{2\,\pi\,\hbar}{\left|\frac{d^2S}{dx^2}(x_0)\right|}}\;
+\exp(\,\frac{i\,S\,x_{0}}{\hbar})\;
 \exp(\,i\frac{\pi}{4}\operatorname{sgn}\!\left(\frac{d^2S}{dx^2}(x_0)\right))\;}.
 $$
 
-The dominant phase is $\frac{k_m\,S\,x_{0}}{m\,c}$; the prefactor is the Gaussian fluctuation determinant about the critical point; the last factor is the Maslov phase of the critical point. Points away from $x_0$ contribute to lower order because their phases oscillate rapidly and cancel. This is the **stationary-phase lemma**, and it contains no physics.
+The dominant phase is $\frac{S\,x_{0}}{\hbar}$; the prefactor is the Gaussian fluctuation determinant about the critical point; the last factor is the Maslov phase of the critical point. Points away from $x_0$ contribute to lower order because their phases oscillate rapidly and cancel. This is the **stationary-phase lemma**, and it contains no physics.
 
-The path-integral version applies the same lemma to a sum over trajectories weighted by $\exp(iS[\tilde q]\frac{k_m}{m\,c})$. The critical points of the action are the solutions of $\delta S=0$, that is, the classical paths, and the leading asymptotic is a sum over them,
+The path-integral version applies the same lemma to a sum over trajectories weighted by $\exp(iS[\tilde q]/\hbar)$. The critical points of the action are the solutions of $\delta S=0$, that is, the classical paths, and the leading asymptotic is a sum over them,
 
 $$
-\boxed{\;\int\mathcal{D}\tilde q\;\exp(\,iS[\tilde q]\frac{k_m}{m\,c})
+\boxed{\;\int\mathcal{D}\tilde q\;\exp(\,iS[\tilde q]/\hbar)
 \;\sim\;
-\sum_{\tilde q_c}\exp(\,iS[\tilde q_c]\frac{k_m}{m\,c})\,A[\tilde q_c]\;\bigl(1+O(\frac{m\,c}{k_m})\bigr)\;},
+\sum_{\tilde q_c}\exp(\,iS[\tilde q_c]/\hbar)\,A[\tilde q_c]\;\bigl(1+O(\hbar)\bigr)\;},
 $$
 
 where $A[\tilde q_c]$ is the square root of the inverse fluctuation determinant (the van Vleck factor) and a Maslov phase. The classical content of the statement is exactly this: **the set of critical points of the action is the set of classical trajectories.** The identification of the critical-point equations with the Euler–Lagrange equations was made in the first section, and in the phase-space form with Hamilton's equations in the second.
@@ -292,15 +292,15 @@ where $A[\tilde q_c]$ is the square root of the inverse fluctuation determinant 
 
 The construction above is a statement about an oscillatory integral. It can be paraphrased without any quantum vocabulary:
 
-- The exponent $S[\tilde q]\frac{k_m}{m\,c}$ is a phase, and the phase is stationary where $\delta S=0$; every other trajectory's phase varies rapidly and cancels in the sum.
+- The exponent $S[\tilde q]/\hbar$ is a phase, and the phase is stationary where $\delta S=0$; every other trajectory's phase varies rapidly and cancels in the sum.
 - Therefore the classical trajectory, defined as the solution of $\delta S=0$, is the trajectory that survives the cancellation, and the classical theory is the critical-point theory of the sum.
-- The parameter $\frac{m\,c}{k_m}$ sets the scale of the phase; the classical limit is the limit of large phase.
+- The parameter $\hbar$ sets the scale of the phase; the classical limit is the limit of large phase.
 
 Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The formulation is real and classical throughout; the configuration is a real quaternion; the action is a central-valued functional. The oscillatory sum is a device for stating the classical limit, and the biquaternion formulation is a classical formulation. Quantisation — the reverse construction, in which an operator algebra is built from the classical brackets — belongs to the sibling category and is not used here.
 
 ### The Fluctuation Factor and the Classical Hessian
 
-The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and the prefactor is the inverse square root of its regularized determinant, taken relative to the free reference and with $\frac{m\,c}{k_m}$ restored; that combination is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
+The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and the prefactor is the inverse square root of its regularized determinant, taken relative to the free reference and with $\hbar$ restored; that combination is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.
 
 For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/d{r'_{t}}^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi r'_t/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function
 
@@ -320,11 +320,11 @@ $$
 \det\mathcal{J}=\frac{2T}{\sqrt m}\;\propto\;T ,
 $$
 
-per real component. The determinant is therefore **linear** in $T$, and the fluctuation factor — its inverse square root — falls as $T^{-1/2}$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m/(\frac{2\,m\,c\,\pi\,i\,T}{k_m})}\propto  T^{-1/2}$. The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the biquaternion norm, so the classical stability problem and the biquaternion-norm geometry are the same problem.
+per real component. The determinant is therefore **linear** in $T$, and the fluctuation factor — its inverse square root — falls as $T^{-1/2}$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m/(2\,\pi\,i\,\hbar\,T)}\propto  T^{-1/2}$. The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the biquaternion norm, so the classical stability problem and the biquaternion-norm geometry are the same problem.
 
 ### Rotor Paths and the Geometric Phase of the Sum
 
-The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde u(r'_t)=\tilde u(0)\exp(+\tfrac12\vec\omega_br'_t/c)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_1(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $\exp(iS[\tilde u_c]\frac{k_m}{m\,c})$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its **holonomy**: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.
+The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde u(r'_t)=\tilde u(0)\exp(+\tfrac12\vec\omega_br'_t/c)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_1(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $\exp(iS[\tilde u_c]/\hbar)$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its **holonomy**: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.
 
 ## The Hamilton–Jacobi Equation and the Classical Phase
 
@@ -342,7 +342,7 @@ $$
 
 so the Hamilton–Jacobi equation is a single scalar equation for the central-valued function $W$.
 
-The Hamilton–Jacobi equation is the **eikonal equation** for the phase of the stationary-phase construction: writing the phase as $\frac{k_m\,W}{m\,c}$, the leading-order equation of the oscillatory integral is exactly $\partial/\partial r'_t\,W+H(\tilde q,\partial W/\partial\tilde q)=0$. In the classical interpretation, $W$ is a generating function of a canonical transformation; the constant surfaces $W=\text{const}$ are the wavefronts of the classical phase, and the characteristic directions of the Hamilton–Jacobi equation are the classical trajectories. Where the characteristic flow has a caustic, the stationary points of the action coalesce, and the stationary-phase prefactor changes.
+The Hamilton–Jacobi equation is the **eikonal equation** for the phase of the stationary-phase construction: writing the phase as $\frac{W}{\hbar}$, the leading-order equation of the oscillatory integral is exactly $\partial/\partial r'_t\,W+H(\tilde q,\partial W/\partial\tilde q)=0$. In the classical interpretation, $W$ is a generating function of a canonical transformation; the constant surfaces $W=\text{const}$ are the wavefronts of the classical phase, and the characteristic directions of the Hamilton–Jacobi equation are the classical trajectories. Where the characteristic flow has a caustic, the stationary points of the action coalesce, and the stationary-phase prefactor changes.
 
 The **characteristic function** $\mathcal{W}(\tilde q)$ of a time-independent problem satisfies $H(\tilde q,\partial\mathcal{W}/\partial\tilde q)=E$. For the free particle, $H=\langle\tilde p\rangle_{\natural}/2m$ and the equation is $\langle\partial\mathcal{W}/\partial\tilde q\rangle_{\natural}=2mE$, whose solution is $\mathcal{W}=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ with $\langle\tilde p\rangle_{\natural}=2mE$; the surfaces $\mathcal{W}=\text{const}$ are planes and the characteristics are straight lines, in agreement with the free-particle geodesics. For a periodic system the action variables $I_\eta=\oint p_\eta\,dq_\eta$ are the periods of the characteristic function, and they are the adiabatic invariants of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*.
 
@@ -358,7 +358,7 @@ The action principle and the classical limit as stationary phase take the follow
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dr'_t$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{r'_{t}}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\zeta/d{r'_{t}}^2+\frac{d^2V}{d\tilde q^2}\,\zeta=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
 - The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dr'_t$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{r'_{t}}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(r'_t)=\tilde u(0)\exp(+\tfrac12\vec\omega_br'_t/c)$: the free rigid body's motion.
-- The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(iS[\tilde q_c]\frac{k_m}{m\,c})$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
+- The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(iS[\tilde q_c]/\hbar)$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial/\partial r'_t\,W+H(\tilde q,\partial W/\partial\tilde q)=0$.
 
 The biquaternion algebra supplies a central-valued action, so the phase is well defined; a biquaternion-norm kinetic term, so the free dynamics is geodesic motion; and a rotor action on a noncommutative group, whose extremals are computed in closed form.
@@ -380,7 +380,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotor configuration |
 | $\vec\omega_b,\vec\omega_s$ | Body- and space-frame angular velocities |
 | $W(\tilde q,r'_t)$ | Hamilton's principal function |
-| $\frac{m\,c}{k_m}$ | Phase scale of the oscillatory integral; asymptotic parameter only |
+| $\hbar$ | Phase scale of the oscillatory integral; asymptotic parameter only |
 | $A[\tilde q_c]$ | Fluctuation (van Vleck) prefactor |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

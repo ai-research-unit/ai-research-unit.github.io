@@ -33,7 +33,7 @@ $$
 \tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \lambda_{m_D}^{-1}\tilde{Ξ}_{\mathrm{sp},L} , \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \lambda_{m_D}^{-1}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-which couples the two independent chiral halves and conserves the vector (fermion-number) central phase: the phase $\exp(i\alpha)$ passes through $m_D$ because it is central, and the mass is invariant. In the module language the Dirac mass is a bilinear pairing $S$ with $\bar{S}$, and the fermion number $L-R$ is conserved. Here $\lambda_{m_D}=\frac{m}{k_m\,m_{D}}$ is the Dirac mass length.
+which couples the two independent chiral halves and conserves the vector (fermion-number) central phase: the phase $\exp(i\alpha)$ passes through $m_D$ because it is central, and the mass is invariant. In the module language the Dirac mass is a bilinear pairing $S$ with $\bar{S}$, and the fermion number $L-R$ is conserved. Here $\lambda_{m_D}=\frac{\hbar}{m\,c_{D}}$ is the Dirac mass length.
 
 **The Majorana mass is a self-conjugate pairing.** A Majorana mass pairs a field with its own charge conjugate, $\tilde{Ξ}_{\mathrm{sp}}^c=\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}$, which is an antilinear involution on the module with $\mathcal{C}^2=1$; its fixed space has real dimension four. Such a mass term is permitted — the module's real structure commutes with the kinetic operator — but it violates fermion number by two units, because it converts a fermion into an antifermion. In the framework the antilinear object is the real structure, and the companion articles keep it strictly separate from the linear chiral pair; the present article does not conflate them.
 
