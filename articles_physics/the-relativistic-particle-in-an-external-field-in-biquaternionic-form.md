@@ -160,7 +160,7 @@ The kinetic momentum, by contrast, is not conserved: it rotates in the plane per
 
 ## The Equation of Motion
 
-The equation of motion follows from the action by the Euler–Lagrange equations, and it is the Lorentz force. Written in components $\tilde R_\Phi = \sum_\mu Q_\mu e_\mu$ (with $Q_t = i r'_t$), $\tilde{A}_{\Phi} = \sum_\nu A_\nu e_\nu$, the Lagrangian is
+The equation of motion follows from the action by the Euler–Lagrange equations, and it is the Lorentz force. Written in components $\tilde R_\Phi = \sum_\mu Q_\mu e_\mu$ (with $Q_t=i q'_t$), $\tilde{A}_{\Phi} = \sum_\nu A_\nu e_\nu$, the Lagrangian is
 
 $$
 \mathrm{Lag} = -mc\sqrt{-\sum_\mu \left(dR_{\mu}/d\tau\right)^{2}} \;+\; ϙ\sum_\nu A_\nu(\tilde R_\Phi)\,dQ_{\nu}/d\tau,

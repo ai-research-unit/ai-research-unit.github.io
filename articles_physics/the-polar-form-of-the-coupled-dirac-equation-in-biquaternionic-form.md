@@ -79,7 +79,7 @@ the mass cancelling in the ratio. That cancellation is the physical point, and i
 $$
 \tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu,
 \qquad
-\frac{\partial}{\partial R_t}=-i\frac{\partial}{\partial r_{t}^{\prime}},
+\frac{\partial}{\partial R_t}=-i\frac{\partial}{\partial h_t^{\prime}},
 \qquad
 \frac{\partial}{\partial R_\eta}=\frac{\partial}{\partial r_\eta}.
 $$
@@ -149,7 +149,7 @@ $$
 \bigl(\tilde K_{\Phi,\mathrm{gco}}\bigr)_\eta=\frac{1}{\hbar}\bigl(p_\eta+ϙA_\eta\bigr),
 $$
 
-with $\phi=ca'_t$. No factor is inserted by hand: the temporal entry of the operator is $\frac{i}{\hbar c}$ times an energy and the spatial entries are $\frac{1}{\hbar}$ times momenta, because $r_{t}^{\prime}$ is a length and $\hbar$ is what turns a gradient into a momentum. The combination $E+ϙ\phi$ is the one the gauge law preserves, and the same holds for each spatial slot.
+with $\phi=ca'_t$. No factor is inserted by hand: the temporal entry of the operator is $\frac{i}{\hbar c}$ times an energy and the spatial entries are $\frac{1}{\hbar}$ times momenta, because $h_t^{\prime}$ is a length and $\hbar$ is what turns a gradient into a momentum. The combination $E+ϙ\phi$ is the one the gauge law preserves, and the same holds for each spatial slot.
 
 **One relabelling, stated once.** With the inherited sign of $ϙ$ the spatial entry is $\vec p+ϙ\vec A$. The companion *Relativistic Mechanics from the Dirac Wave* writes the same coupling with $ϙ$ replaced by $-ϙ$, so that its kinetic momentum is $\vec p-ϙ\vec A$; the two writings are one coupling with the sign of the charge carried differently. This article keeps the inherited sign and does not flip it.
 
@@ -427,9 +427,9 @@ with $\tilde F$ the field-strength biquaternion and $\tilde\nabla_{\mathrm{gco}}
 A slow state is one whose boost is small and whose angle is dominated by the rest phase. Write
 
 $$
-\alpha=-k_m r_{t}^{\prime}+\sigma,
+\alpha=-k_m h_t^{\prime}+\sigma,
 \qquad
-k_m r_{t}^{\prime}=\frac{mc^{2}}{\hbar}\,t,
+k_m h_t^{\prime}=\frac{mc^{2}}{\hbar}\,t,
 $$
 
 so that the field's own phase advances at $mc^{2}/\hbar$ and the norm's angle at twice that. The doubling is the polar article's factor of two, the one behind zitterbewegung, and it is why the norm's angle is not the field's phase: the norm reads the element twice, so it reads a turn where the element reads half a turn.
@@ -514,7 +514,7 @@ The second-order equation carries the curvature, $\bigl(\sum_\mu\tilde\nabla_{\m
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
 | $\mathrm{sp}$ | The Dirac-field label of *Algebra and Element Conventions*; kept in $\tilde S_{\Psi,\mathrm{sp}}$ |
 | $\tilde\nabla,\ \tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $\tilde\nabla^{\natural}\tilde\nabla=\Box$ |
-| $\tilde R_\Phi=i r_{t}^{\prime}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position; $\partial/\partial R_t=-i\partial/\partial r_{t}^{\prime}$ |
+| $\tilde R_\Phi=i h_t^{\prime}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position; $\partial/\partial R_t=-i\partial/\partial h_t^{\prime}$ |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
 | $\tilde A_{\Phi}=A_te_t+\sum_\eta A_\eta\vec e_\eta=i a'_te_t+\vec A$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$; $A_t=ia'_t$, $a'_t=\phi/c$ |
 | $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative, left action |

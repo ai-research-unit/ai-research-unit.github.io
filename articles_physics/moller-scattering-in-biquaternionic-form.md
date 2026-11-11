@@ -75,12 +75,12 @@ The external elements satisfy the massive Dirac equation, but in the biquaternio
 **The chiral pair.** It is first a pair of one-sided equations
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-where $\tilde\nabla$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of value $L$, the minus one, and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+where $\tilde\nabla$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of value $L$, the minus one, and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The mass on the right.** Read on the whole algebra rather than on the carrier of the field, the same physics is the single equation
 

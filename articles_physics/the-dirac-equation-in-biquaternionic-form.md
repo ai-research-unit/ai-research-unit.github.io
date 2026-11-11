@@ -137,7 +137,7 @@ where $\overline{\cdot}$ is the coefficient conjugation of *Algebra and Element 
 
 **Why the $1/c$.** The operator adds an inverse time to an inverse length, and only $i\partial/\partial r'_t$ is an inverse length like $\vec\nabla$, and the mass term carries that same unit by the identification made at the box. The source prints the equation at $c=1$, where the first factor is $i\partial/\partial r'_t$.
 
-**One sector, two coordinates.** The operator is read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i r'_t$ and $Q_\eta=q_\eta$. There $R_t=i r'_t$ is the complex time coordinate, so $\partial/\partial r'_t$ differentiates with respect to the physical time and $\partial/\partial R_\eta$ is the physical spatial derivative: the two symbols name the two coordinates of one sector and do not mix two conventions. Since $\partial/\partial R_t=-i\partial/\partial r'_t$,
+**One sector, two coordinates.** The operator is read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $Q_\eta=q_\eta$. There $R_t=i r'_t$ is the complex time coordinate, so $\partial/\partial r'_t$ differentiates with respect to the physical time and $\partial/\partial R_\eta$ is the physical spatial derivative: the two symbols name the two coordinates of one sector and do not mix two conventions. Since $\partial/\partial R_t=-i\partial/\partial r'_t$,
 
 $$
 i\frac{\partial}{\partial r'_t} = -\frac{\partial}{\partial R_t},
@@ -287,7 +287,7 @@ $$
 \tilde R_\Phi = i r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z,
 $$
 
-with $Q_t = i r'_t$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
+with $Q_t=i q'_t$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
 
 ### The Invariant Interval
 

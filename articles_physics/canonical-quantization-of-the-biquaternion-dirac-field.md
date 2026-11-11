@@ -167,7 +167,7 @@ Quantization promotes the classical field and its momentum to operators $\tilde{
 
 $$
 X:=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\qquad
-Y:=r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z,
+Y:=h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z,
 $$
 
 for the two spatial points. For the Dirac field the brackets are **anticommutators**, imposed on the four coefficients of the element:

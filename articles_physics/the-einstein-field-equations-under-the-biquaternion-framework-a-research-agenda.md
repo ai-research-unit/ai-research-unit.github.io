@@ -70,7 +70,7 @@ $$
 \qquad h = 2\langle\varepsilon_\nu,\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural},
 $$
 
-which carries $\bar{h}_{00} = h_{00} + \tfrac12h$, $\bar{h}_{0\eta} = h_{0\eta}$ and $\bar{h}_{\eta l} = h_{\eta l} - \tfrac12h\,\delta_{\eta l}$, the one minus being the square of the $i$ in $Q_t=i r'_t$. In harmonic gauge the vacuum equation reduces to $\Box\bar{h}_{\mu\nu} = 0$, hence to $\Box\bar{\delta\tilde{E}_{\Phi}}_\mu = 0$ once the local Lorentz freedom is fixed. The linearised Riemann tensor is gauge invariant, and it is carried index by index as a bivector-valued two-form whose values lie in the six-dimensional complex pure-vector subspace.
+which carries $\bar{h}_{00} = h_{00} + \tfrac12h$, $\bar{h}_{0\eta} = h_{0\eta}$ and $\bar{h}_{\eta l} = h_{\eta l} - \tfrac12h\,\delta_{\eta l}$, the one minus being the square of the $i$ in $Q_t=i q'_t$. In harmonic gauge the vacuum equation reduces to $\Box\bar{h}_{\mu\nu} = 0$, hence to $\Box\bar{\delta\tilde{E}_{\Phi}}_\mu = 0$ once the local Lorentz freedom is fixed. The linearised Riemann tensor is gauge invariant, and it is carried index by index as a bivector-valued two-form whose values lie in the six-dimensional complex pure-vector subspace.
 
 There is one sharp negative finding in this article, and it is central to the agenda. The graviton is **not** a material biquaternion. It is not an element of $\mathbb{B}_{\Phi}$, it is not a single element of $\mathbb{B}$ at all — eight real dimensions cannot hold ten components — and the natural single-biquaternion packaging of a symmetric rank-two object,
 
@@ -271,7 +271,7 @@ The honest position of the framework's gravity programme is therefore this. It c
 | $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\eta = \vec e_\eta$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the material basis it is $+1$ on the three space rows and $-1$ on the time row, the minus being the square of the $i$ in $\varepsilon_0 = ie_t$ | inherited |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | the unit metric on the four $Q_\mu$: diagonal, all four coefficients $+1$, and the natural form on the units $e_t,\vec e_x,\vec e_y,\vec e_z$ | inherited |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural} \tilde{\nabla}_\Phi = \sum_\mu\partial^2/\partial R_\mu^2$; on the material reading $Q_t=i r'_t$ its time term is $-\partial^2/\partial {r'_t}^2$ | inherited |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural} \tilde{\nabla}_\Phi = \sum_\mu\partial^2/\partial R_\mu^2$; on the material reading $Q_t=i q'_t$ its time term is $-\partial^2/\partial {r'_t}^2$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula | inherited |
 | $\vec e_\eta$, $B_{\mathrm{boost},\eta} = i\vec e_\eta$ | local-Lorentz generators, spanning the six-dimensional Lie subspace | inherited |
 | $\tilde{E}_{\Phi}_\mu$, $\vec\Gamma_\mu$ | frame field in $\mathbb{B}_{\Phi}$; Lie-subspace-valued connection one-form | inherited from the curved-spacetime and linearised articles |

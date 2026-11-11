@@ -289,7 +289,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $\sigma a^2=-\ln(\beta/2N^2)+O(1)$ | Leading strong-coupling string tension |
 | $\tfrac12\langle\mathrm{Tr}\tilde U_\Box\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 | $a,b$ | Colour indices, written low; the lattice spacing is also written $a$ and is a length, not an index |
 

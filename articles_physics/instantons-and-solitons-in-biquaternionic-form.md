@@ -35,7 +35,7 @@ $$
 \tilde{R}_{\Phi,\mathbb H}=c\tau\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{H},
 $$
 
-and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=i r'_t$ becomes $Q_t=c\tau$, and the four terms of
+and the gradient is unchanged, because the rotation acts on the coordinate and not on the operator. With $x_4=c\tau$ the coordinate $Q_t=i q'_t$ becomes $Q_t=c\tau$, and the four terms of
 
 $$
 \tilde{\nabla}=e_t\,\partial/\partial x_4+\vec e_x\,\partial/\partial x_1+\vec e_y\,\partial/\partial x_2+\vec e_z\,\partial/\partial x_3
@@ -370,7 +370,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, the Euclidean slice |
 | $\mathbb{B}_{C}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i r'_t$, elliptic on $Q_t=c\tau$ |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i q'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Abelian field-strength biquaternion |
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |

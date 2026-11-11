@@ -156,10 +156,10 @@ Read in the other direction, this is the free rotor's geodesic flow seen on the 
 
 ## The Rotor Normalisation and Its Counterpart
 
-The rotor is required to have unit **biquaternion norm**, $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and this is what makes the conjugation preserve $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the subspace $\mathbb{B}_{\Phi}$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_t$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not $*$-unitary; while the evolution operator of quantum physics, $\tilde Q(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ with a Hamiltonian $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$ that has a trace part, is $*$-unitary but has
+The rotor is required to have unit **biquaternion norm**, $\langle R\rangle_{\natural} = R R^{\natural} = e_t$, and this is what makes the conjugation preserve $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the subspace $\mathbb{B}_{\Phi}$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_t$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not $*$-unitary; while the evolution operator of quantum physics, $\tilde Q(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ with a Hamiltonian $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ that has a trace part, is $*$-unitary but has
 
 $$
-N\big(\tilde Q(r'_t)\big) = \tilde Q(r'_t)\,\tilde Q^{\natural}(r'_t) = \exp(-\frac{2\,i\,r_{t}\,r'_{t}}{\hbar\,c}) e_t \neq  e_t .
+N\big(\tilde Q(r'_t)\big) = \tilde Q(r'_t)\,\tilde Q^{\natural}(r'_t) = \exp(-\frac{2\,i\,h_t\,r'_{t}}{\hbar\,c}) e_t \neq  e_t .
 $$
 
 So "unit modulus" is a constraint on the **biquaternion norm**, and it is the constraint that defines the rotor group; the companion literature is careful to distinguish it from matrix unitarity, and the same care is needed here.

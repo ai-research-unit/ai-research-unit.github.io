@@ -19,10 +19,10 @@ The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the
 **The quaternion subspace $\mathbb{B}_{H}$.** An element has the form
 
 $$
-\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (r_t)\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (h_t)\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
-Here the time parameter is real, $r_t$, and $\tau$ is its value on the rotated point. All four coefficients are **real**. The quadratic form
+Here the time parameter is real, $h_t$, and $\tau$ is its value on the rotated point. All four coefficients are **real**. The quadratic form
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
@@ -47,13 +47,13 @@ has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a thre
 **The informational sector $\mathbb{B}_{\Psi}$.** An element has the form
 
 $$
-\tilde H_\Psi = r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
+\tilde H_\Psi = h_t\, e_t + i h'_x\, \vec e_x + i h'_y\, \vec e_y + i h'_z\, \vec e_z, \qquad h_t, h'_x, h'_y, h'_z \in \mathbb{R}.
 $$
 
 The first coefficient is **real**, the three remaining coefficients are **imaginary**. The quadratic form
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} = r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
+\langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - (h'_x)^2 - (h'_y)^2 - (h'_z)^2
 $$
 
 has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
@@ -250,9 +250,9 @@ The interpretation organizes the applications into a split between those that tr
 | $\mathbb{B}_{\Psi}$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
 | $\mathbb{B}_{\Phi}$ | Material sector: signature $(3, 1)$, hyperbolic |
 | $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{B}_{H}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
-| $(r_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$ | The same element in physical coordinates; $q_t = r_t$ and $(q_x,q_y,q_z)=(r_x,r_y,r_z)$ |
+| $(h_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$ | The same element in physical coordinates; $q_t = h_t$ and $(q_x,q_y,q_z)=(r_x,r_y,r_z)$ |
 | $r'_t, r_x, r_y, r_z$ | Real parameters on $\mathbb{B}_{\Phi}$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$ |
-| $r_t, r'_x, r'_y, r'_z$ | Real parameters on $\mathbb{B}_{\Psi}$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ |
+| $h_t, h'_x, h'_y, h'_z$ | Real parameters on $\mathbb{B}_{\Psi}$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ |
 | $c$ | Speed of light in the medium |
 | $r'_t$ | Time coordinate on $\mathbb{B}_{\Phi}$ |
 | $\tau$ | Euclidean coordinate on $\mathbb{B}_{H}$ |

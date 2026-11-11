@@ -68,12 +68,12 @@ $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = r_t e_t$ with $r_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi$, the equation reads
+with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi$, the equation reads
 
-$$i\,\hbar\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = r_t e_t \tilde{Ξ}_{\mathrm{sp}} = r_t \tilde{Ξ}_{\mathrm{sp}},
+$$i\,\hbar\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = h_t e_t \tilde{Ξ}_{\mathrm{sp}} = h_t \tilde{Ξ}_{\mathrm{sp}},
 $$
 
-and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = r_t I_2$. The generator of the free evolution,
+and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = h_t I_2$. The generator of the free evolution,
 
 $$
 -iH/\hbar = \frac{i\,\hbar}{2\,m}\Delta_\Phi e_t \in \mathbb{B}_{\Phi},
@@ -389,7 +389,7 @@ Two further structural points belong to this section.
 
 **What the biquaternion notation provides.**
 
-- **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = r_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.
+- **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = h_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.
 - **The kinetic term as a biquaternion norm.** $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
 - **A canonical complex structure.** The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
 - **A material-sector location for the dispersion.** The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1 -\frac{k_\Phi^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.

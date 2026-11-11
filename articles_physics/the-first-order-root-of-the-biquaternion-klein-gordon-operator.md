@@ -38,7 +38,7 @@ The four components are the four coefficients of a biquaternion. The count of si
 
 ## The Equation
 
-$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_\eta$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_\eta=r_\eta$. Derived from that relation, its Lorentz form is
+$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_\eta$, related to the algebra coordinates by $Q_t=i q'_t$ and $Q_\eta=q_\eta$. Derived from that relation, its Lorentz form is
 
 $$
 \Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta ,

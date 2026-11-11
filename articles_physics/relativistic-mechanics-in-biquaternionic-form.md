@@ -45,7 +45,7 @@ Here $d\tilde R_\Phi^{\natural} = i\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+
 
 The displacement $d\tilde R_\Phi$ is a **material element**, and the interval is its norm; a spacelike distance is read from that norm.
 
-**The biquaternion norm on $\mathbb{B}_{\Phi}$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t = i r'_t$ imaginary and $\vec Q = r_x \vec e_x + r_y \vec e_y + r_z \vec e_z$ real, the biquaternion norm is
+**The biquaternion norm on $\mathbb{B}_{\Phi}$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t=i q'_t$ imaginary and $\vec Q = r_x \vec e_x + r_y \vec e_y + r_z \vec e_z$ real, the biquaternion norm is
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + |\vec Q|^2 = -{r'_{t}}^2 + r_x^2 + r_y^2 + r_z^2,

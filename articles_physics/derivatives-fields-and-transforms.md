@@ -29,7 +29,7 @@ The article is the analysis article of *Biquaternion Physical Interpretation of 
 
 ### The Derivative Conventions
 
-The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial R_\mu$. On the material sector, where $Q_t=i r'_t$ and $Q_\eta=q_\eta$, the time derivative is the **imaginary-time derivative**,
+The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial R_\mu$. On the material sector, where $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the time derivative is the **imaginary-time derivative**,
 
 $$
 \frac{\partial}{\partial R_t}=-i\frac{\partial}{\partial r'_t},
@@ -48,22 +48,22 @@ with $\varepsilon=(1,-1,-1,-1)$. The coefficients are invariant under the conjug
 
 ### The Four Products
 
-The four general products are the four settings of one rule: the plain product, the quaternionic bilinear product, the plain sesquilinear product and the quaternionic sesquilinear product. In the category they carry the names composition, causality, probability and gauge; on the gradient they are four ways of differentiating the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}r_t}e_t+\vec Q_{\mathrm f}$.
+The four general products are the four settings of one rule: the plain product, the quaternionic bilinear product, the plain sesquilinear product and the quaternionic sesquilinear product. In the category they carry the names composition, causality, probability and gauge; on the gradient they are four ways of differentiating the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}h_t}e_t+\vec Q_{\mathrm f}$.
 
 $$
-\tilde\nabla_\Phi\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}r_t}+\nabla\times\vec Q_{\mathrm f},
-$$
-
-$$
-(\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}r_t}-\nabla\times\vec Q_{\mathrm f},
+\tilde\nabla_\Phi\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}h_t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}h_t}+\nabla\times\vec Q_{\mathrm f},
 $$
 
 $$
-\tilde\nabla_\Phi\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}r_t}-\nabla\times\overline{\vec Q_{\mathrm f}},
+(\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}h_t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}h_t}-\nabla\times\vec Q_{\mathrm f},
 $$
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}r_t}+\nabla\times\overline{\vec Q_{\mathrm f}}.
+\tilde\nabla_\Phi\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}h_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}h_t}-\nabla\times\overline{\vec Q_{\mathrm f}},
+$$
+
+$$
+(\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}h_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}h_t}+\nabla\times\overline{\vec Q_{\mathrm f}}.
 $$
 
 The plain product holds the divergence, the gradient and the curl in one element. The quaternionic product flips the signs of the spatial terms of the plain product. The two sesquilinear products apply the same two products to the conjugated field.
@@ -74,10 +74,10 @@ The scalar part of each product read in two arguments is a form:
 
 | Form | Scalar part |
 | --- | --- |
-| plain bilinear | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}-\nabla\cdot\vec Q_{\mathrm f}$ |
-| quaternionic bilinear | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural}=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}+\nabla\cdot\vec Q_{\mathrm f}$ |
-| plain sesquilinear (Hermitian) | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
-| quaternionic sesquilinear (Krein) | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
+| plain bilinear | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}h_t}-\nabla\cdot\vec Q_{\mathrm f}$ |
+| quaternionic bilinear | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural}=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}h_t}+\nabla\cdot\vec Q_{\mathrm f}$ |
+| plain sesquilinear (Hermitian) | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}h_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
+| quaternionic sesquilinear (Krein) | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}h_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
 
 At the two equal arguments the four forms give two operators:
 

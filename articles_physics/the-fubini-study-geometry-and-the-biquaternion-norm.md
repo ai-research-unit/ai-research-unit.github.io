@@ -25,7 +25,7 @@ The article proceeds as follows. The state space and its two forms are recalled;
 
 ## The State Space and Its Two Forms
 
-An element of the Hermitian subspace is $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
+An element of the Hermitian subspace is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t\in\mathbb{R}$ and $\vec h_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
 $$
 \{\text{states}\}=\left\{\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0\right\},
 \qquad

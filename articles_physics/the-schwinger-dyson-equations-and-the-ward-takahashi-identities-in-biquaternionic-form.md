@@ -126,7 +126,7 @@ with the gauge content carried by the Slavnov–Taylor identities rather than by
 
 **The fermion.** For the Dirac field the quadratic operator is not central, because the mass term is the linear, chirality-off-diagonal pairing
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 of *The Dirac Equation in Biquaternionic Form*. The variation of the fermionic action therefore couples the two chiral halves $S$ and $S^{\mathrm{c}}$, and the corresponding Schwinger–Dyson hierarchy mixes the chiralities: the equation of motion of $\tilde{Ξ}_{\mathrm{sp},L}$ carries the mass times $\tilde{Ξ}_{\mathrm{sp},R}$ and conversely, so the contact terms inherit the off-diagonal structure. This is the same non-central feature that makes the one-loop effective action mix the chiralities in *The Generating Functional and the Effective Action in Biquaternionic Form*, and it is the algebraic origin of the axial Ward identity's anomalous right-hand side below. The Grassmann-valued functional integral and its determinant are the subject of *The Fermionic Path Integral in Biquaternionic Form* and are used and not rebuilt. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 

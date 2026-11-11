@@ -32,7 +32,7 @@ $$
 \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta ,
 $$
 
-with $Q_t = i r'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
+with $Q_t=i q'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
 
 $$
 k_m=\dfrac{mc}{\hbar},

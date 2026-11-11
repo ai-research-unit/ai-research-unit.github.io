@@ -15,7 +15,7 @@ $$
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and $i$ on the right is the complex unit of $M_2(\mathbb{C})$. It follows that
 
 $$
-\mathsf{M}_2(i \vec e_\eta) = \sigma_\eta, \qquad \mathsf{M}_2\bigl(r_t e_t + i \sum_\eta h_\eta \vec e_\eta\bigr) = r_t I_2 + \sum_\eta h_\eta \sigma_\eta .
+\mathsf{M}_2(i \vec e_\eta) = \sigma_\eta, \qquad \mathsf{M}_2\bigl(h_t e_t + i \sum_\eta h_\eta \vec e_\eta\bigr) = h_t I_2 + \sum_\eta h_\eta \sigma_\eta .
 $$
 
 The scalar imaginary is $i$, the quaternion basis satisfies $e_t=1$, $\vec e_\eta^2=-e_t$, and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\,\vec e_\lambda$ for $\mu\neq\nu$. The reduced Planck constant $\hbar$ is written explicitly; the algebra literature often measures the action in units of $\hbar$, and the commutation relation quoted in the scope, $[L_{\mathrm{orb},i},L_{\mathrm{orb},j}]=i\epsilon_{ij\eta}L_{\mathrm{orb},\eta}$, is the form of the relations below with the action in units of $\hbar$.
@@ -379,7 +379,7 @@ It is useful to separate the two kinds of result that the article contains.
 
 - The rotation generators sit in the Lie algebra $\mathbb{B}_{\Phi}$ of the $*$-unitary group; the compact generators are $-\tfrac12 \vec e_\eta$ inside the real quaternion subspace $\mathbb{B}_{H}$, and the rotation group is the group of unit real quaternions.
 - The spin commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ follow from the quaternion product rule $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$, the square $\vec e_\eta^2=-e_t$, and $i^2=-1$; the Hermiticity of $i\vec e_\eta$ is what places the observables in $\mathbb{B}_{\Psi}$.
-- The commutator of two Hermitian observables is $-2(\vec r_\Psi\times\vec k_\Phi)$, a pure real quaternion in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$: the commutator of observables is a rotation generator.
+- The commutator of two Hermitian observables is $-2(\vec h_\Psi\times\vec k_\Phi)$, a pure real quaternion in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{H}$: the commutator of observables is a rotation generator.
 - The pure-spin Casimir $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$ is a central element of $\mathbb{B}$, and its value $\hbar^{2}\,s\,(s+1)$ with $s=\tfrac12$ follows from $(i\vec e_\eta)^2=+e_t$.
 - The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, and $\sum_\eta \vec u_\eta\tilde S_{\Psi,\eta}$ has eigenvalues $\pm\frac{\hbar}{2}$ on them.
 - The spin ladder operators are nilpotent and null in the biquaternion norm, $\tilde S_{\Psi,\pm}^2=0$ and $\langle\tilde S_{\Psi,\pm}\rangle_{\natural}=0$: they are zero divisors of the algebra.

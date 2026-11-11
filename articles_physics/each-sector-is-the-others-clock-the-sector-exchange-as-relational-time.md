@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The framework has no external time parameter. The material time is the imaginary coefficient $i r'_t$ of an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$, the informational time is the real coefficient $r_t$ of an element of the Hermitian sector $\mathbb{B}_{\Psi}$, and multiplication by the central imaginary $i$ exchanges the two sectors. The exchange is therefore an operation of the algebra on the two times, and the question of this article is what that operation is worth as a **clock**.
+The framework has no external time parameter. The material time is the imaginary coefficient $i r'_t$ of an element of the anti-Hermitian sector $\mathbb{B}_{\Phi}$, the informational time is the real coefficient $h_t$ of an element of the Hermitian sector $\mathbb{B}_{\Psi}$, and multiplication by the central imaginary $i$ exchanges the two sectors. The exchange is therefore an operation of the algebra on the two times, and the question of this article is what that operation is worth as a **clock**.
 
 The answer, in one sentence: the exchange supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate. The three interpretations that follow from that sentence are these. The two times are the real and the imaginary parts of one central coordinate, so the material time is not defined against anything outside the algebra but against the phase of the informational sector — each sector is the other's clock. The exchange is a quarter turn of the plane of that coordinate, so a tick is a quarter turn and the period of the clock is a full central rotation. And the exchange is invertible and of order four, so the algebra offers both senses of the rotation and no rule that selects one; the direction of the tick remains a choice of slice, which is the framework's problem of time.
 
@@ -21,15 +21,15 @@ $$
 the anti-Hermitian material sector and the Hermitian informational sector. In coordinates,
 
 $$
-\tilde{Q}_- = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}, \qquad \tilde{Q}_+ = r_t\,e_t + i\bigl(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z\bigr) \in \mathbb{B}_{\Psi},
+\tilde{Q}_- = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}, \qquad \tilde{Q}_+ = h_t\,e_t + i\bigl(h'_{x}\vec e_x + h'_{y}\vec e_y + h'_{z}\vec e_z\bigr) \in \mathbb{B}_{\Psi},
 $$
 
-with $r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r_t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $i r'_t$ dictionary of *Algebra and Element Conventions*.
+with $r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, h_t, h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $i r'_t$ dictionary of *Algebra and Element Conventions*.
 
 The centre of the algebra is $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and it is the complex time sector of *The Biquaternion Space, the Group of Involutions and the Six Subspaces*. The two times are its two real coordinates: writing
 
 $$
-z = r_t + i r'_{t},
+z = h_t + i r'_{t},
 $$
 
 the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta)e_t$, and its action on $z$ is the rotation of the plane.
@@ -45,10 +45,10 @@ $$
 so $i\tilde{Q}_- \in \mathbb{B}_{\Psi}$, and the same computation run backwards sends $\mathbb{B}_{\Psi}$ to $\mathbb{B}_{\Phi}$. In coordinates the exchange is
 
 $$
-i\bigl(i r'_t\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) = -r'_{t}\,e_t + i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in \mathbb{B}_{\Psi}, \qquad i\bigl(r_t\,e_t + i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)\bigr) = i r_t\,e_t - (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) \in \mathbb{B}_{\Phi} .
+i\bigl(i r'_t\,e_t + (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) = -r'_{t}\,e_t + i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in \mathbb{B}_{\Psi}, \qquad i\bigl(h_t\,e_t + i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)\bigr) = i h_t\,e_t - (h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z) \in \mathbb{B}_{\Phi} .
 $$
 
-Read on the coefficients, the material element $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is carried to the informational element $(r_t = -r'_t,\ (r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the informational element $(t, r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ is carried to the material element $(r'_t = r_t,\ (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
+Read on the coefficients, the material element $(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is carried to the informational element $(h_t = -r'_t,\ (h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z) = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and the informational element $(t, h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$ is carried to the material element $(r'_t = h_t,\ (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
 \boxed{\;z \mapsto i z = -r'_{t} + i\,ct\;}
@@ -68,10 +68,10 @@ The second is invertibility: the generator is a rotation, so both senses are ava
 
 A clock assigns a coordinate to an event by a repeatable motion. The framework's clock is the central coordinate itself, and its interpretation is a phase.
 
-**The hand.** The hand of the clock is the complex number $z = r_t + i r'_{t}$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
+**The hand.** The hand of the clock is the complex number $z = h_t + i r'_{t}$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
 
 $$
-\boxed{\;r_t = \lvert z\rvert\cos\theta, \qquad r'_{t} = \lvert z\rvert\sin\theta\;}
+\boxed{\;h_t = \lvert z\rvert\cos\theta, \qquad r'_{t} = \lvert z\rvert\sin\theta\;}
 $$
 
 The one-parameter group $\exp(i\theta)e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(\frac{i\,S}{\hbar})$ of the action articles is the same central phase read on a dynamics.
@@ -123,7 +123,7 @@ The two entries that are supplied are what makes the interpretation relational, 
 
 ## Summary
 
-The central imaginary generates a quarter turn of the complex time plane, $z = r_t + i r'_{t} \mapsto iz = -r'_{t} + i r_t$, and the two sector times are the two projections of the hand that this rotation moves. A material time and an informational time are therefore never read in isolation: each is read against the axis of the other sector, and that is the sense in which each sector is the other's clock. The clock's structure is the four-element orbit of the generator — no tick, the exchange, the antipodal map, the inverse exchange — with the period $2\pi$ of the central rotation, and it is exact, global, and central.
+The central imaginary generates a quarter turn of the complex time plane, $z = h_t + i r'_{t} \mapsto iz = -r'_{t} + i h_t$, and the two sector times are the two projections of the hand that this rotation moves. A material time and an informational time are therefore never read in isolation: each is read against the axis of the other sector, and that is the sense in which each sector is the other's clock. The clock's structure is the four-element orbit of the generator — no tick, the exchange, the antipodal map, the inverse exchange — with the period $2\pi$ of the central rotation, and it is exact, global, and central.
 
 The accounting of a clock is partial, and the two missing entries are the ones the framework is explicit about. The exchange supplies the reference and the period, and it supplies neither the arrow, the generator being invertible of order four, nor the rate, the phase being dimensionless. The relational content is thus real and the dynamical content is absent: the framework has an internal relational time in the kinematic sense, with the orientation of the tick and the duration of the tick still to be supplied, and the first of the two is the problem of time in its kinematic form.
 
@@ -137,8 +137,8 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | the material (anti-Hermitian) and informational (Hermitian) sectors |
 | $i$ | the central imaginary, $i\,e_t$; the generator of the exchange |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | the centre, the complex time plane |
-| $z = r_t + i r'_{t}$ | the clock hand; the central coordinate of an element |
-| $r_t$, $i r'_t$ | the informational and the material time, the two projections of the hand |
+| $z = h_t + i r'_{t}$ | the clock hand; the central coordinate of an element |
+| $h_t$, $i r'_t$ | the informational and the material time, the two projections of the hand |
 | $\exp(i\theta)e_t$ | the one-parameter group of the centre, the motion of the hand |
 | $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | the sector exchange, the quarter turn, the tick |
 

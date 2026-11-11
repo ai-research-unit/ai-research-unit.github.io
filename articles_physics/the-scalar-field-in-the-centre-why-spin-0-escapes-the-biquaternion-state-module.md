@@ -5,8 +5,8 @@
 A scalar field is, in standard relativistic physics, the simplest kind of field: one component at each event, and no axis. A Lorentz transformation moves the event and leaves the value alone,
 
 $$
-\xi_{\mathrm{scl}}'(r'_{x})=\xi_{\mathrm{scl}}(x),
-\qquad r'_{x}=\Lambda x .
+\xi_{\mathrm{scl}}'(h'_{x})=\xi_{\mathrm{scl}}(x),
+\qquad h'_{x}=\Lambda x .
 $$
 
 Every other field carries structure that the transformation can act on: the four-vector carries its spacetime index, the Dirac field carries its two labels, and the field strength carries two indices. The scalar carries none, and that is what spin $0$ means.
@@ -135,7 +135,7 @@ The consequence is immediate. A scalar field carries the trivial action: the alg
 
 If one insists on locating the scalar inside the algebra rather than in a carrier, the centralizer computation settles where. Under the rotation subgroup the algebra separates into spin $0$ and spin $1$. Under the full Lorentz action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ there is no nonzero invariant, because each sector is carried into itself and carries the four-vector action; the centre, fixed by the rotations, is carried out of itself by a boost. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{B}_{C}$, and there is nothing else it could take them in.
 
-It is worth stating plainly how the scalar relates to the action that carries the material sector. The four-vectors of $\mathbb{B}_{\Phi}$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; under rotations that action splits into the time component, spin $0$, and the spatial vector, spin $1$. The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{Ξ}'(r'_{x})=\tilde{Ξ}(x)$ with $r'_{x}=\Lambda x$, and no algebraic factor acts on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.
+It is worth stating plainly how the scalar relates to the action that carries the material sector. The four-vectors of $\mathbb{B}_{\Phi}$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; under rotations that action splits into the time component, spin $0$, and the spatial vector, spin $1$. The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{Ξ}'(h'_{x})=\tilde{Ξ}(x)$ with $h'_{x}=\Lambda x$, and no algebraic factor acts on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.
 
 ### The Trivial Representation Lives in a Product
 

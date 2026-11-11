@@ -137,7 +137,7 @@ $$
 \tilde A_{\Phi}=A_t\,e_t+A_x\,i\vec e_y+A_y\,i\vec e_z+A_z\,i\vec e_x .
 $$
 
-The derivatives are the four coordinate derivatives of the corpus (*Operator and Calculus Conventions*, §*The Gradient*), the coordinates are $Q_t,Q_x,Q_y,Q_z$, and on the material sector $Q_t=i r'_t$.
+The derivatives are the four coordinate derivatives of the corpus (*Operator and Calculus Conventions*, §*The Gradient*), the coordinates are $Q_t,Q_x,Q_y,Q_z$, and on the material sector $Q_t=i q'_t$.
 
 **The terms, and the side of each.** The gradient $\mathfrak D$ multiplies on the left. The fixed bivector $-\vec e_x$ multiplies on the right, with the same value for every element and at every point. The mass term is the complex conjugation of the field, real-linear and conjugate-linear over $\mathbb{C}$, with the real central coefficient $m$. The coupling is the left multiplication by the potential, and it is the minimal coupling of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
 
@@ -172,7 +172,7 @@ $$
 D_3=\sum_{\eta\in\{x,r_y,r_z\}}\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
-where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i r'_t$ on the material sector. The time derivative and the spatial gradient multiply on the left, the mass multiplies on the right by the fixed direction $\vec e_z$, and the conjugation supplies the conjugate-linear part. This is the two-sided equation of the corpus: two sides, one field, no split into two values.
+where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i q'_t$ on the material sector. The time derivative and the spatial gradient multiply on the left, the mass multiplies on the right by the fixed direction $\vec e_z$, and the conjugation supplies the conjugate-linear part. This is the two-sided equation of the corpus: two sides, one field, no split into two values.
 
 **Daviau's equation: two-sided, with a fixed right bivector and a conjugate-linear mass.** Daviau's equation is two-sided as well, but its right factor is the fixed bivector $-\vec e_x$ and its mass is the conjugation. It is the space-formulation face of the chiral equation, not a rewriting of Kravchenko's. The word "two-sided" does not identify the two: it says only that a right multiplication is present, and it leaves open which element multiplies and what the mass term is.
 

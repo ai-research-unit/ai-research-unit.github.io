@@ -36,7 +36,7 @@ The $i r'_t$ convention is a precise expression of this union. It says: space an
 
 ## What $i r'_t$ Does
 
-With the substitution $Q_t = i r'_t$ — the time component of the $\mathbb{B}$ frame of this series — and $Q_x=x$, $Q_y=y$, $Q_z=z$, the Minkowski interval becomes
+With the substitution $Q_t=i q'_t$ — the time component of the $\mathbb{B}$ frame of this series — and $Q_x=x$, $Q_y=y$, $Q_z=z$, the Minkowski interval becomes
 
 $$
 ds^2 = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2,
@@ -52,7 +52,7 @@ $$
 \Box = -\frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta_\Phi
 $$
 
-becomes, with $Q_t = i r'_t$,
+becomes, with $Q_t=i q'_t$,
 
 $$
 \boxed{\;\Box = \sum_\mu\partial^2/\partial R_\mu^2\;},
@@ -66,7 +66,7 @@ which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equation
 
 The switch away from $i r'_t$ happened for good technical reasons, and it is worth being precise about them before asking whether the insight survives.
 
-**1. Curved spacetime.** In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t = i r'_t$ does for flat spacetime. The $i r'_t$ convention is tied to the existence of a global inertial frame.
+**1. Curved spacetime.** In general relativity, the metric $g_{\mu\nu}$ is a dynamical field. There is no global coordinate transformation that makes it Euclidean in the way $Q_t=i q'_t$ does for flat spacetime. The $i r'_t$ convention is tied to the existence of a global inertial frame.
 
 **2. Quantum field theory.** The Wick rotation $r'_t \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. In the modern formulation, this is understood as a deformation of the metric, not a change of coordinates. Writing $i r'_t$ makes the rotation look like a coordinate change, which obscures the fact that it is really a change in the causal structure.
 
@@ -82,7 +82,7 @@ This article takes the second view. The technical problems are real, but they ar
 
 The arguments above are not the invention of this series. They were put and answered by others, and the exchange is worth recording, because it shows which parts of the case are contested and which are settled.
 
-The defence of $i r'_t$ rests on the observation that the substitution $Q_t = i r'_t$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\theta$ the identities
+The defence of $i r'_t$ rests on the observation that the substitution $Q_t=i q'_t$ makes the Lorentz transformation an honest rotation. With an imaginary rotation angle $\theta$ the identities
 
 $$
 \cos i\theta = \cosh\theta, \qquad \sin i\theta = i\sinh\theta
@@ -112,7 +112,7 @@ $$
 R_\mu = r_\mu + i\,r'_\mu, \qquad r_\mu, r'_\mu \in \mathbb{R}.
 $$
 
-The material sector is described by the real coordinates $r_\eta$ for $\eta = x, y, z$ — the spatial parameters $r_x, r_y, r_z$ — together with the imaginary time part $r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $r'_\eta$ for $\eta = x, y, z$ — the spatial parameters $r'_{x}, r'_{y}, r'_{z}$ — together with the real time part $r_t$. The time coefficient carries the $i r'_t$ structure explicitly, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $i r'_t$ form is recovered.
+The material sector is described by the real coordinates $r_\eta$ for $\eta = x, y, z$ — the spatial parameters $r_x, r_y, r_z$ — together with the imaginary time part $r'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary coordinates $h'_\eta$ for $\eta = x, y, z$ — the spatial parameters $h'_{x}, h'_{y}, h'_{z}$ — together with the real time part $h_t$. The time coefficient carries the $i r'_t$ structure explicitly, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $i r'_t$ form is recovered.
 
 In this framework, the Lorentzian signature of the real slice is not postulated; it emerges algebraically from the complex structure. The metric convention, for all its technical convenience, hides this emergence.
 
@@ -197,8 +197,8 @@ The program claims neither that real spacetime is wrong, nor that the imaginary 
 |---|---|
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
-| $Q_t = i r'_t$ | Complex time coordinate (local) |
-| $Q_t = i r'_t$ | Complex time coordinate (vacuum) |
+| $Q_t=i q'_t$ | Complex time coordinate (local) |
+| $Q_t=i q'_t$ | Complex time coordinate (vacuum) |
 | $v$ | Particle or frame velocity |
 
 ## Further Reading

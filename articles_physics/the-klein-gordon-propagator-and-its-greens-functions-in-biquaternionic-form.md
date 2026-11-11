@@ -20,7 +20,7 @@ $$
 \Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2 .
 $$
 
-The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i r'_t$. No second metric is used anywhere in this article.
+The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i q'_t$. No second metric is used anywhere in this article.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the equation, its mass term, and the central scalar d'Alembertian.
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
@@ -456,7 +456,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\langle\tilde P_{\Phi}\rangle_{\natural}=-k_m^{2}$ | Mass shell |
 | $J_1,K_1$ | Bessel and modified Bessel functions |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t),\mathrm{sgn}(r'_t)$ | Heaviside step and sign functions |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

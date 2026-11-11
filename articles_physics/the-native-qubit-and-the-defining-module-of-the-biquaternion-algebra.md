@@ -64,11 +64,11 @@ $$
 M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$
 
-so that the Hermitian element $\tilde H_\Psi = r_t\,e_t + i(r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z)$ with real $h_\mu$ maps to
+so that the Hermitian element $\tilde H_\Psi = h_t\,e_t + i(h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z)$ with real $h_\mu$ maps to
 
 $$
-M(\tilde H_\Psi) = \begin{pmatrix} r_t + r'_z & r'_x - ir'_y \\ r'_x + ir'_y & r_t - r'_z \end{pmatrix}
-= r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3 .
+M(\tilde H_\Psi) = \begin{pmatrix} h_t + h'_z & h'_x - ih'_y \\ h'_x + ih'_y & h_t - h'_z \end{pmatrix}
+= h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3 .
 $$
 
 Acting on $|u\rangle = (u_x, u_y)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\vec u$ maps to
@@ -89,7 +89,7 @@ $$
 \mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi} .
 $$
 
-Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$. Elements of the form $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$ span $\mathbb{B}_{\Psi}$; the corresponding matrices are $r_t\,I_2 + \vec r_\Psi\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{B}_{\Psi}$: $\mathbb{B}_{\Psi}$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
+Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$. Elements of the form $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with $h_t\in\mathbb{R}$ and $\vec h_\Psi\in\mathbb{R}^3$ span $\mathbb{B}_{\Psi}$; the corresponding matrices are $h_t\,I_2 + \vec h_\Psi\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{B}_{\Psi}$: $\mathbb{B}_{\Psi}$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
 
 ## The Defining Module
 
@@ -192,13 +192,13 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 .
 $$
 
-On $\mathbb{B}_{\Psi}$, writing $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ with real $r_t,\vec r_\Psi$, it evaluates to
+On $\mathbb{B}_{\Psi}$, writing $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with real $h_t,\vec h_\Psi$, it evaluates to
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} = \bigl(r_t^2 - |\vec r_\Psi|^2\bigr)e_t ,
+\langle\tilde H_\Psi\rangle_{\natural} = \bigl(h_t^2 - |\vec h_\Psi|^2\bigr)e_t ,
 $$
 
-which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $r_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde H_\Psi\rangle_{\natural} = \det M(\tilde H_\Psi)\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $r_t$ selects the future cone. For a state
+which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $h_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde H_\Psi\rangle_{\natural} = \det M(\tilde H_\Psi)\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $h_t$ selects the future cone. For a state
 
 $$
 \boxed{\;\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t\;}.

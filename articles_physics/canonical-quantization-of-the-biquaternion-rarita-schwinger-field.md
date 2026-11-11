@@ -161,7 +161,7 @@ When $m\neq0$ the gauge symmetry is absent: the field equation is not invariant 
 The canonical momentum conjugate to $\tilde{Ξ}_{\mathrm{sp},\mu}$ is, from the standard Rarita–Schwinger Lagrangian,
 
 $$
-\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp},\mu})}=\sum_\lambda T_{\lambda r_t\mu}\bigl(\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda}\bigr),
+\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp},\mu})}=\sum_\lambda T_{\lambda h_t\mu}\bigl(\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda}\bigr),
 \qquad
 \bar{\tilde{Ξ}}_{\mathrm{sp},\lambda}:=\tilde{Ξ}_{\mathrm{sp},\lambdaiR}^{\dagger}_{\mathrm{axf},\vec e_x} ,
 $$
@@ -172,7 +172,7 @@ $$
 T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,L_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\nu(\nu)}}\,L_{\mathrm{axf},e_\rho}R_{\mathrm{axf},\vec e_{\nu(\rho)}} .
 $$
 
-It is antisymmetric in its three indices and vanishes when two of them coincide. The basis operators anticommute, so the six terms of the sum are one and the same element, and the display is the definition that shows the antisymmetry; when two indices coincide the terms come in cancelling pairs. Its factors are plain basis operators rather than frame basis operators, so it carries no imaginary unit: the only one in the momentum is the $i$ of the adjoint, the same single $i$ that the Dirac article's momentum carries. The canonical analysis gives the primary constraint $\pi_0\approx0$ — automatic here, since $T_{\lambda r_t\mu}$ carries the time index in its middle slot, and $\mu=t$ puts it in the last slot too — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
+It is antisymmetric in its three indices and vanishes when two of them coincide. The basis operators anticommute, so the six terms of the sum are one and the same element, and the display is the definition that shows the antisymmetry; when two indices coincide the terms come in cancelling pairs. Its factors are plain basis operators rather than frame basis operators, so it carries no imaginary unit: the only one in the momentum is the $i$ of the adjoint, the same single $i$ that the Dirac article's momentum carries. The canonical analysis gives the primary constraint $\pi_0\approx0$ — automatic here, since $T_{\lambda h_t\mu}$ carries the time index in its middle slot, and $\mu=t$ puts it in the last slot too — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
 \{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\xi_a\}_P\,(\Delta^{-1})_{ab}\,\{\xi_b,B\}_P ,
@@ -369,7 +369,7 @@ $$
 \qquad
 P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
 \qquad
-\pi_\mu=i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}_\nu\,\gamma_{[\nu r_t\mu]},
+\pi_\mu=i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}_\nu\,\gamma_{[\nu h_t\mu]},
 $$
 
 and the polarization equations, the completeness relation and the propagator are
@@ -418,7 +418,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $V\otimes S$, $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ | Spatial part of the carrier and its decomposition; $3\cdot2=4+2$ |
 | $\tilde{Ξ}_{\mathrm{sp},\mu}\mapsto\tilde{Ξ}_{\mathrm{sp},\mu}+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
 | $T_{\mu\nu\rho}$ | Antisymmetrized triple of three plain basis operators; antisymmetric, zero when two indices coincide, and $i\gamma_{[\mu\nu\rho]}$ in the gamma dictionary |
-| $\pi_\mu=\sum_\lambda T_{\lambda r_t\mu}(\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda})$, $\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda}:=\tilde{Ξ}_{\mathrm{sp},\lambdaiR}^{\dagger}_{\mathrm{axf},\vec e_x}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
+| $\pi_\mu=\sum_\lambda T_{\lambda h_t\mu}(\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda})$, $\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda}:=\tilde{Ξ}_{\mathrm{sp},\lambdaiR}^{\dagger}_{\mathrm{axf},\vec e_x}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
 | $\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Fermionic mode algebra |

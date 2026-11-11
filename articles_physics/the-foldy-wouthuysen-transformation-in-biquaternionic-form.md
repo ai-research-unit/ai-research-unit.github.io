@@ -26,7 +26,7 @@ $$
 \Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
-and on the material sector, where $Q_t=i r'_t$, the two gradients and the norm read
+and on the material sector, where $Q_t=i q'_t$, the two gradients and the norm read
 
 $$
 \tilde\nabla_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}+D_3,

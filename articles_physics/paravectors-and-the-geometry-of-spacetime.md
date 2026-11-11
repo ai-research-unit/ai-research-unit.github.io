@@ -59,7 +59,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle i\,p\rangle_{\natural}=i^2\langle p\rangle_{\natural}=-\left(p_t^2-\vec p\cdot\vec p\right),
 $$
 
-because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i r'_t$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\Phi,\mathrm p}\rangle_{\natural}=1$ derived below.
+because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\Phi,\mathrm p}\rangle_{\natural}=1$ derived below.
 
 **The dictionary.** The two readings name the same eight dimensions, one row to an object:
 

@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=r_t+i r'_t$ and $Q_\eta=x_\eta+i r'_{x_\eta}$. The reading used below is the material one, $Q_t=i r'_t$ and $Q_\eta=x_\eta$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\eta=q_\eta+i q'_{\eta}$, with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=x_\eta$ and $q'_{\eta}=h'_{x_\eta}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,

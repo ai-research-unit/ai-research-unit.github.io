@@ -8,7 +8,7 @@ $$
 V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{\mathfrak{Z}e^2}{4\pi\epsilon_0},
 $$
 
-with $\mathfrak{Z}$ the nuclear charge number (written $Z$ in the non-relativistic companion, and $\mathfrak{Z}$ here so that it cannot be read as a spatial index). It is the relativistic completion of the problem treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde H_\Psi = r_t\,e_t$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $s_{\mathrm{tot}}$.
+with $\mathfrak{Z}$ the nuclear charge number (written $Z$ in the non-relativistic companion, and $\mathfrak{Z}$ here so that it cannot be read as a spatial index). It is the relativistic completion of the problem treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde H_\Psi = h_t\,e_t$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $s_{\mathrm{tot}}$.
 
 The article asks what the biquaternion framework contributes to this problem, and the honest answer is stated before the derivation.
 
@@ -40,7 +40,7 @@ which enters the spectrum as a parameter.
 ### The algebra equation and its operator-frame reading
 The framework's field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, and the position dependence is carried by its argument rather than by the finite-dimensional algebra. The internal two-valued index of the older literature is that element read in a frame fixed by a declared unit vector; it is a reading of the field and not the field. The standard equation carries four entries because the element carries four coefficients, and the two halves of that four are the chirality labels $L$ and $R$.
 
-The coordinates are the corpus's, $Q_t = i r'_t$ and $Q_\eta = x_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.
+The coordinates are the corpus's, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.
 
 The free biquaternion Dirac equation is the one-sided chiral pair
 
@@ -87,7 +87,7 @@ A structural caveat must accompany this transcription. The basis operator $\beta
 
 ## The Hamiltonian Leaves the Scalar Slot
 
-In the non-relativistic problem the Hamiltonian is a scalar multiple of the identity, $\tilde H_\Psi = r_t\,e_t$, and its vanishing vector part is what makes the spin a spectator. The relativistic corrections change this. The kinetic and Darwin corrections remain scalar; the spin–orbit correction occupies the vector slots of $\mathbb{B}_{\Psi}$, and that is the algebraic change. The Zeeman term below is non-central in the same way, but it vanishes in the Coulomb problem, where $\vec A = 0$ and hence $\vec B = 0$.
+In the non-relativistic problem the Hamiltonian is a scalar multiple of the identity, $\tilde H_\Psi = h_t\,e_t$, and its vanishing vector part is what makes the spin a spectator. The relativistic corrections change this. The kinetic and Darwin corrections remain scalar; the spin–orbit correction occupies the vector slots of $\mathbb{B}_{\Psi}$, and that is the algebraic change. The Zeeman term below is non-central in the same way, but it vanishes in the Coulomb problem, where $\vec A = 0$ and hence $\vec B = 0$.
 
 At relative order $c^{-2}$ the elimination of the small component produces the effective large-component Hamiltonian
 
@@ -551,8 +551,8 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $L_{a}R_{b}$ | Two-sided multiplication by the pair $(a,b)$, written in the body as the action $\tilde Q\mapsto a\tilde Qb$; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | $\beta$, $\alpha_\eta$ | Basis operators of the frame: $\beta$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$, $\alpha_\eta$ as $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$; $\alpha$ without a subscript is the fine-structure constant |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the field by the chirality basis operator $-iR_{\mathrm{axf},\vec e_z}$ |
-| $Q_t = i r'_t$, $Q_\eta = x_\eta$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
-| $\tilde\nabla_\Phi = -i\,e_t\partial/\partial r'_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial r_\eta$, the material part of $\tilde\nabla_\Phi$ | Biquaternionic gradient (Dirac operator), read at $Q_t=ir'_t$, $Q_\eta=x_\eta$ |
+| $Q_t=i q'_t$, $Q_\eta=q_\eta$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
+| $\tilde\nabla_\Phi = -i\,e_t\partial/\partial r'_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial r_\eta$, the material part of $\tilde\nabla_\Phi$ | Biquaternionic gradient (Dirac operator), read at $Q_t=i q'_t$, $Q_\eta=q_\eta$ |
 | $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde Q^\natural$ | Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $(\tilde\nabla_\Phi)^{\natural}$, $\tilde A_{\Phi}^\natural$, $\tilde\nabla_{\mathrm{gco}}^{\natural}$ are its images |

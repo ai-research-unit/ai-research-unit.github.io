@@ -90,7 +90,7 @@ The four-vector representation is a coordinate representation of the biquaternio
 
 The operator this article differentiates with is the **biquaternionic gradient** of *Operator and Calculus Conventions*, §*The Gradient*: an element of four terms, one per coordinate, whose quaternion conjugate is the same element with the three spatial signs reversed. Both are the conventions' objects, and neither is defined here.
 
-Two facts about the gradient carry the rest of the article. On the material slice, where $Q_t = i r'_t$, the time derivative carries one factor of $i$,
+Two facts about the gradient carry the rest of the article. On the material slice, where $Q_t=i q'_t$, the time derivative carries one factor of $i$,
 
 $$
 \frac{\partial}{\partial R_t} = -i\frac{\partial}{\partial r'_t},
@@ -288,7 +288,7 @@ $$
 
 So the boxed solution is a pure vector exactly when $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}) = 0$, and when that condition fails the field it returns carries a scalar whose value is the retarded average of the violation. The constraint is therefore not an extra condition imposed beside the formula: it is the statement that the formula's output lies in the space in which $\tilde F$ is defined.
 
-The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial R_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i r'_t$ turns it into $\Delta-\partial^2/\partial {r'_t}^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
+The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The difference is which reading of one operator is inverted. The Cauchy kernel is the fundamental solution of $\Box=\partial^2/\partial R_t^2+\Delta_Q$ read with the four real coordinates $Q_\mu$ of the $\mathbb{B}$ frame, where all four coefficients have the same sign; the retarded kernel is the fundamental solution of the same $\Box$ read on $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ turns it into $\Delta-\partial^2/\partial {r'_t}^2$. There is one d'Alembertian, not two: the substitution is a change of coordinate, and it changes the signature. The two kernels are related by the **Wick rotation** $r'_t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
 
 ## The Three-Vector Form
 

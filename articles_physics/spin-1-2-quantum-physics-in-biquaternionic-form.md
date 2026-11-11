@@ -112,10 +112,10 @@ So the map preserves the multiplication rules. The scalar imaginary $i$ maps to 
 
 Under this isomorphism, the fixed-point subspaces of the algebra acquire concrete matrix forms.
 
-**Hermitian subspace $\mathbb{B}_{\Psi}$.** A general element is $\tilde H_\Psi = r_t e_t + i r'_x \vec e_x + i r'_y \vec e_y + i r'_z \vec e_z$ with $h_\eta \in \mathbb{R}$. Under the isomorphism:
+**Hermitian subspace $\mathbb{B}_{\Psi}$.** A general element is $\tilde H_\Psi = h_t e_t + i h'_x \vec e_x + i h'_y \vec e_y + i h'_z \vec e_z$ with $h_\eta \in \mathbb{R}$. Under the isomorphism:
 
 $$
-\tilde H_\Psi \mapsto r_t I_2 + r'_x \sigma_1 + r'_y \sigma_2 + r'_z \sigma_3.
+\tilde H_\Psi \mapsto h_t I_2 + h'_x \sigma_1 + h'_y \sigma_2 + h'_z \sigma_3.
 $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{B}_{\Psi}$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
@@ -142,7 +142,7 @@ The identification of $\mathbb{B}_{\Psi}$ with the observables is direct.
 
 **Statement.** The Hermitian subspace $\mathbb{B}_{\Psi}$ is isomorphic, as a real vector space, to the space of observables of a spin-1/2 quantum system.
 
-**Proof.** Under the isomorphism of the previous section, an element $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ with components $(r_t, r'_x, r'_y, r'_z)$ maps to the Hermitian matrix $r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
+**Proof.** Under the isomorphism of the previous section, an element $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ with components $(h_t, h'_x, h'_y, h'_z)$ maps to the Hermitian matrix $h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
 
 ### Corollaries
 
@@ -150,7 +150,7 @@ The identification of $\mathbb{B}_{\Psi}$ with the observables is direct.
 
 **Basis.** The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{B}_{\Psi}$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
 
-**The identity and the traceless part.** The scalar part $r_t e_t$ maps to the identity component $r_t I_2$, which is the "trivial" observable. The vector part $i(r'_x \vec e_x + r'_y \vec e_y + r'_z \vec e_z)$ maps to the traceless part $r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3$. The trace of an element of $\mathbb{B}_{\Psi}$ is $2c r_t$ (twice the scalar part), which corresponds to the trace of the matrix.
+**The identity and the traceless part.** The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h'_x \vec e_x + h'_y \vec e_y + h'_z \vec e_z)$ maps to the traceless part $h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. The trace of an element of $\mathbb{B}_{\Psi}$ is $2c h_t$ (twice the scalar part), which corresponds to the trace of the matrix.
 
 ## The Idempotents as Pure States
 
@@ -300,13 +300,13 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}\;},
+\boxed{\;\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}\;},
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0,
+\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0,
 $$
 
 which is a first-order equation for the field $\tilde{Ξ}_{\mathrm{sp}}$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -413,11 +413,11 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
-| $\tilde H_\Psi = r_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
+| $\tilde H_\Psi = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
 | $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born-rule expectation value; trace image $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Biquaternionic Dirac equation (linear chiral pair) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

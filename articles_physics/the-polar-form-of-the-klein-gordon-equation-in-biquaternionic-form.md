@@ -470,7 +470,7 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\Box=\partial^{2}/\partial R_t^{2}+\Delta=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ | d'Alembertian on the material sector |
 | $r'_t=c\,t'$ | Material time, a length in the same unit as $r_\eta$ |
-| $R_t=r_t+i r'_t$ | Complex time; $r_t$ informational, $r'_t$ material |
+| $R_t=h_t+i r'_t$ | Complex time; $h_t$ informational, $r'_t$ material |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
 | $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ | The biquaternion Klein–Gordon field, four complex coefficients |
 | $\Xi_\mu$ | The coefficient of $e_\mu$, a complex scalar; the scalar case is $\Xi_t$ alone |

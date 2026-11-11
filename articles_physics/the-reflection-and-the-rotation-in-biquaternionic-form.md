@@ -297,7 +297,7 @@ The claims of this article, in order.
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | even half, odd half | The basis operators with an even and with an odd number of generator factors; the even half is the image of $\mathbb{B}$ |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the four generators: the biquaternion norm on the Hermitian basis |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=i r'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i q'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
 | $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}} = a\tilde{Ξ}_{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | image of $\tilde Q$ | The $\mathbb{R}$-linear comparison with the even half, per *Matrix Representations Conventions*; named, never written as a symbol |
 | the four frame basis operators | The generator basis operators: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\eta = 1, 2, 3$ |

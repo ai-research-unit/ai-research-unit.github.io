@@ -238,9 +238,9 @@ Z=1+\exp(-\beta\omega)=1.339596,
 \qquad
 \log Z=0.292368,
 $$
-reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ at inverse temperature $\beta$, the same identity $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ was checked on the independent data $r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, where
+reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ at inverse temperature $\beta$, the same identity $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ was checked on the independent data $h_t=0.7$, $\vec h_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, where
 $$
-Z=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)=1.547753
+Z=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)=1.547753
 $$
 and $\tilde H_{\Psi,\mathrm{modular}}-(\beta\tilde H_\Psi+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
@@ -270,20 +270,20 @@ $$
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
-Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$. With $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$,
+Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$. With $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,
 $$
 Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)
-=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|),
+=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|),
 $$
 and the scalar and vector parts of $\tilde H_{\Psi,\mathrm{modular}}$ have direct thermodynamic interpretations:
 $$
-\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z,
+\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z,
 \qquad
-\vec a=\beta\vec r_\Psi,
+\vec a=\beta\vec h_\Psi,
 $$
-the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec r_\Psi$. The trace formula is the bridge: it converts the abstract Gibbs weight $\exp(-\tilde H_{\Psi,\mathrm{modular}})$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{B}_{\Psi}$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec r_\Psi)^2=|\vec r_\Psi|^2e_t$, so $\vec r_\Psi$ and $e_t$ commute and the exponential splits.
+the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec h_\Psi$. The trace formula is the bridge: it converts the abstract Gibbs weight $\exp(-\tilde H_{\Psi,\mathrm{modular}})$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{B}_{\Psi}$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec h_\Psi)^2=|\vec h_\Psi|^2e_t$, so $\vec h_\Psi$ and $e_t$ commute and the exponential splits.
 
-One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde H_{\Psi,\mathrm{modular}}$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec r_\Psi$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a_{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}_{\Psi}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
+One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde H_{\Psi,\mathrm{modular}}$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h_\Psi$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a_{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}_{\Psi}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
 
 ## Is the Modular Hamiltonian Local?
 
@@ -374,7 +374,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 - $\tilde H_{\Psi,\mathrm{modular}}=-\log\Delta$ is defined by $\Delta=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\Delta^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
 - In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\Delta>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.
 - $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$: verified symbolically and numerically on a generic rotated state and a thermal state.
-- $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
+- $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
 - $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ for the bracket-normalised amplitude $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$, with a central additive constant for an unnormalised amplitude; checked on a generic rotated state.
 - In the wedge, $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$; the rotor action is the boost, its generator is the anticommutator $\tfrac12\{G_1,\cdot\,\}$, and the commutator is a rotation in the orthogonal plane.
 
@@ -412,7 +412,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde H_{\Psi,\mathrm{modular},W},\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 

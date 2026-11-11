@@ -310,7 +310,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 
 | Symbol | Meaning |
 |---|---|
-| $Q_t=i r'_t$, $Q_\eta=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
+| $Q_t=i q'_t$, $Q_\eta=x,y,z$ | Coordinates; $r'_t$ the real time of the material sector |
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | The four units of the coefficient basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |

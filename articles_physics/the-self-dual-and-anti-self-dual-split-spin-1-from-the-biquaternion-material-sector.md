@@ -21,7 +21,7 @@ $$
 \tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i r'_t$.
+with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.
 
 ## Integer Spin and the Representation It Needs
 

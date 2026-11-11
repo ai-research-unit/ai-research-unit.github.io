@@ -37,7 +37,7 @@ $$
 that a general observable is a Hermitian element
 
 $$
-\tilde H_\Psi = r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi \in \mathbb{R}^3,
+\tilde H_\Psi = h_t\, e_t + i\,\vec h_\Psi, \qquad \vec h_\Psi \in \mathbb{R}^3,
 $$
 
 and that a pure state is an idempotent
@@ -52,7 +52,7 @@ $$
 p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})} = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec r\right),
 $$
 
-where $\vec u_\Psi = \vec r_\Psi/|\vec r_\Psi|$ is the measurement direction. The star in the trace is inert on $\mathbb{B}_{\Psi}$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
+where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$ is the measurement direction. The star in the trace is inert on $\mathbb{B}_{\Psi}$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
 
 **Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde H_\Psi\tilde H_\Psi^{*}=\tilde H_\Psi^{*}\tilde H_\Psi$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
 
@@ -110,7 +110,7 @@ The two classes are therefore not an exhaustive partition of the acting elements
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
 
 1. **The reversible evolution** $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi}) = \tilde Q_3\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}$, with $\tilde Q_3\tilde Q_3^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}_{\Psi}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
@@ -250,11 +250,11 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
-| $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian observable |
+| $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | Hermitian observable |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
 | $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $p_\pm = \langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})$ | Outcome probabilities (trace at normalisation) |
-| $\vec u_\Psi = \vec r_\Psi/\|\vec r_\Psi\|$, $\vec u$ | Measurement and pointer directions |
+| $\vec u_\Psi = \vec h_\Psi/\|\vec h_\Psi\|$, $\vec u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}) = \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$ | Conjugation; $*$-unitary evolution (when $\tilde Q_3\tilde Q_3^{*}=e_t$) or projective two-sided operator ($\tilde{Q}_3 = \tilde\Pi_{1,2}$) |
 | $\tilde Q_3=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}$, $\tilde H_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$ | Polar form of the acting element; $\tilde H_\Psi_{\mathrm{pos}}\ge0$, $\tilde Q_{p}$ a partial isometry |
 | $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_\Psi_{\mathrm{pos}}$ | $*$-Unitary backaction followed by the positive filter |

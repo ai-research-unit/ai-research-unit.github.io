@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon **path integral** and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The **spin-half path integral** and the **fermionic field path integral** are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-**The conventions are the series conventions, and they are cited here and not developed.** The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The chiral pair is written as the two first-order lines of §*The Two First-Order Equations and Their Symbol*, each composed with the conjugate of the other giving $\Box$, and the letter that once gathered the two is retired. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i r'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
+**The conventions are the series conventions, and they are cited here and not developed.** The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The chiral pair is written as the two first-order lines of §*The Two First-Order Equations and Their Symbol*, each composed with the conjugate of the other giving $\Box$, and the letter that once gathered the two is retired. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
 
 **The dynamics is the chiral pair.**
 
@@ -22,7 +22,7 @@ with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$. Both lines 
 
 **Two different equations carry the name of Dirac, and this article uses one of them.** The first is the one-sided pair displayed above: both gradients act by left multiplication and keep the value, and the mass is the central coefficient $k_m$ that relates the two components; it is off-diagonal in the pair, since each line joins a component of one letter to a component of the other, and it moves no value across, since a central coefficient multiplying on the left keeps it. The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.
 
-The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = r'_{t}$ and $r_\eta$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*), so that $Q_t = ix_0$.
+The worldline parameter is $\tau$ and the proper time $T$. The material position is $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{\Phi}$, with real coordinates $x_0 = r'_{t}$ and $r_\eta$ on the three spatial directions (*Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*), so that $Q_t=i q'_t$.
 
 ## The Dirac Propagator and the Square
 
@@ -98,7 +98,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\mathcal S_L = \Box\,\mathcal S_L,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = p^{2}/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i r'_t$ and $Q_\eta=r_\eta$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = p^{2}/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -147,7 +147,7 @@ S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu
 \qquad \hbar^{2}k_m^{2}=m^{2}c^{2},
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i r'_t$ and $Q_\eta=r_\eta$, so that for a straight worldline
+up to the standard normalisation of the measure and the einbein gauge choice. The tangent is read in the complex coordinate, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so that for a straight worldline
 
 $$
 \sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} = -\frac{(x-x_2)^2}{T^2},
@@ -195,7 +195,7 @@ S[x,\tilde{Ξ}_{\mathrm{sp}}] = \int_0^T d\tau\left[
 \right],
 $$
 
-with both quadratic terms read on the same four slots and carrying the same signs: the tangent takes its sign from the square of the $i$ in $Q_t=i r'_t$ and the odd pair from the weight below, and the tangent and the odd pair are the two halves of one supersymmetric pair, which is why the same signs appear twice. Each half contributes its own kinetic term, the bosonic one from the tangent and the fermionic one from the odd variables.
+with both quadratic terms read on the same four slots and carrying the same signs: the tangent takes its sign from the square of the $i$ in $Q_t=i q'_t$ and the odd pair from the weight below, and the tangent and the odd pair are the two halves of one supersymmetric pair, which is why the same signs appear twice. Each half contributes its own kinetic term, the bosonic one from the tangent and the fermionic one from the odd variables.
 
 **The odd pair carries the anticommutation of the worldline.** The odd variables are fixed by the symmetric pairing of the worldline action,
 

@@ -138,7 +138,7 @@ $$
 \tag{7}
 $$
 
-Substituting (2), the right-hand side of (7) reproduces the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=i r'_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
+Substituting (2), the right-hand side of (7) reproduces the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$: the four zero divisors rebuild the material-sector interval, and its one minus is the square of the $i$ in $Q_t=i q'_t$. No other input is used. Both (6) and (7) were recomputed symbolically; (6) was checked on a general element $\tilde{Q}$ with all four coefficients arbitrary, and (7) on the explicit legs.
 
 Equation (7) is the null-tetrad counterpart of the frame relation $g_{\mu\nu} = \langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ of the parent article. There the frame was orthonormal and its legs lay in $\mathbb{B}_{\Phi}$; here the frame is null and complex, and its legs are zero divisors. At each point the two are related by the local Lorentz transformation that carries one basis to the other, so the parent's remark — that the algebra supplies the local Lorentz group and the home of the frame, but not the frame itself — applies here verbatim.
 

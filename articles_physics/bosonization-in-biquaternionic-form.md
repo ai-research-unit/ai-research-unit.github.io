@@ -92,7 +92,7 @@ j_{5,t}=-j_x,\qquad j_{5,x}=-j_t .
 $$
 That is the dual of the current in the arena with $\epsilon_{01}=+1$, and with the dictionary it reads
 $$
-j_{5,r_t}=-\frac{1}{\sqrt\pi}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t},
+j_{5,h_t}=-\frac{1}{\sqrt\pi}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_t},
 \qquad
 j_{5,r_x}=-\frac{1}{\sqrt\pi}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_x} :
 $$
@@ -130,13 +130,13 @@ The framework's mass convention is used here rather than merely cited, because i
 
 **The series mass term.** As *The Dirac Equation in Biquaternionic Form* fixes, the Dirac mass is linear and sits on the other side of the element,
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\,\Gamma\,\overline{\tilde{Ξ}_{\mathrm{sp}}} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\,\Gamma\,\overline{\tilde{Ξ}_{\mathrm{sp}}} ,
 $$
 with $\Gamma$ the chirality and $\overline{\tilde{Ξ}_{\mathrm{sp}}}$ the coefficient conjugate. The gradient left-multiplies, and the mass is the **exchange of the two values**: the map that carries one value into the other, scaled by $m$. The scaling cannot supply the exchange — a central scalar multiplies the two values by the same number and stays diagonal — so the exchange is a separate structure, and the display shows it on the other side of the field.
 
 **The exchange in the arena.** In the arena the chirality is a product of units, and the coefficient conjugation fixes it. The exchange must therefore be carried by a right multiplication. Of the units left after the chirality's own $\vec e_x$ and $\vec e_z$, one exchanges the two values and the other keeps them: $\vec e_y$ exchanges and $\vec e_z$ keeps. The exchanging one is the right factor of the arena's second generator, which is why the arena's mass direction is $\vec e_y$. The arena's mass equation is therefore
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_y ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_y ,
 $$
 and the label balances. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The left side keeps the value of $\tilde{Ξ}_{\mathrm{sp}}$; the right side conjugates, which keeps it, and then multiplies on the right by $\vec e_y$, which exchanges it. The equation pairs the two values, and no coefficient could do the same.
 

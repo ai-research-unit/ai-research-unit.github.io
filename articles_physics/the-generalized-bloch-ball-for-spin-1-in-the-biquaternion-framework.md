@@ -20,16 +20,16 @@ Throughout, the geometric formulae measure the spin in units of $\hbar$, so that
 
 ## The Qubit Bloch Ball as the Reference Point
 
-It is worth stating the reference result in the form that will be generalised. In $\mathbb{B}_{\Psi}$, an element is written $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$; its biquaternion norm is
+It is worth stating the reference result in the form that will be generalised. In $\mathbb{B}_{\Psi}$, an element is written $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t\in\mathbb{R}$ and $\vec h_\Psi\in\mathbb{R}^3$; its biquaternion norm is
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural}=r_t^2-|\vec r_\Psi|^2 ,
+\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-|\vec h_\Psi|^2 ,
 $$
 
-of signature $(1,3)$, and the positive elements of $\mathbb{B}_{\Psi}$ are exactly the elements of the closed future cone, $\langle\tilde H_\Psi\rangle_{\natural}\ge0$ with $r_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde H_\Psi)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
+of signature $(1,3)$, and the positive elements of $\mathbb{B}_{\Psi}$ are exactly the elements of the closed future cone, $\langle\tilde H_\Psi\rangle_{\natural}\ge0$ with $h_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde H_\Psi)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
 
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec r_\Psi,\qquad |\vec r|^2\le1 ,
+\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h_\Psi,\qquad |\vec r|^2\le1 ,
 $$
 
 with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde{Ϛ}_{\Psi}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
@@ -290,7 +290,7 @@ The article established the following.
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace; positive cone $=$ future cone of the biquaternion norm |
-| $\langle\tilde H_\Psi\rangle_{\natural}=r_t^2-\lvert\vec r_\Psi\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-\lvert\vec h_\Psi\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_\eta$ | Spin-$1$ operators, $[F_i,F_j]=i\,\hbar\,\epsilon_{ij\eta}\,F_{\eta}$ |

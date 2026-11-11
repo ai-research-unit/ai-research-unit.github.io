@@ -32,7 +32,7 @@
 
 ## The Dictionary
 
-**One rule governs every display of this article.** The corpus writes coordinates $R_\mu$ with $R_t=Q_t=i r'_t$ on the four components, so the coefficient of the temporal basis element carries the central imaginary and the three spatial coefficients do not. Two consequences follow, and both are proved in one line.
+**One rule governs every display of this article.** The corpus writes coordinates $R_\mu$ with $R_t=Q_t=i q'_t$ on the four components, so the coefficient of the temporal basis element carries the central imaginary and the three spatial coefficients do not. Two consequences follow, and both are proved in one line.
 
 **The rule.** For two sets of four coefficients $X_\mu$, $Y_\mu$ written this way,
 

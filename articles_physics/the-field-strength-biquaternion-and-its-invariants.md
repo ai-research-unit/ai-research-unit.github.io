@@ -498,7 +498,7 @@ so that $\tilde u$ is a unit pure element, $\tilde u^2=-e_t$, the axis of the fl
 $$
 U(r_t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
 \qquad
-\theta=\tfrac12\,r_t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
+\theta=\tfrac12\,h_t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
 $$
 
 one formula for both regimes, since $\tilde u^2=-e_t$ makes the exponential the cosine and sine of a scalar angle: at $\omega=0$ the angle is imaginary and the flow is a boost at the rate $\sigma/c$, at $\sigma=0$ it is real and the flow is a rotation at the rate $\omega/c$, and in general the two are carried together. Read on the display of the congruence, the same statement is

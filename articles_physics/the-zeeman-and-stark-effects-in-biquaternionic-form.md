@@ -6,12 +6,12 @@ If an atom is placed in a static magnetic field, its energy levels split; the sp
 
 This article treats both effects in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effects themselves are standard and are reproduced exactly. What the article establishes is the algebraic structure of the two couplings and the reason their leading behaviours differ:
 
-1. **Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.** The Zeeman coupling is $\tilde{H}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{H}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $r_t\,e_t + i\vec r_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.
+1. **Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.** The Zeeman coupling is $\tilde{H}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{H}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $h_t\,e_t + i\vec h_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.
 2. **The Zeeman splitting is linear and isotropic.** A spin-1/2 in a field $\vec B = B\vec u$ has energies $\pm\frac{\hbar\,\omega_{L}}{2}$ for every direction $\vec u$; the splitting $\hbar\,\omega_{L}$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.
 3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\Delta E = -\frac{d^{2}\,E^{2}}{\hbar\,\omega_{0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
 
-The notation is the series notation: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ with eigenvalues $r_t\pm|\vec r_\Psi|$, and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+The notation is the series notation: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with eigenvalues $h_t\pm|\vec h_\Psi|$, and $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
@@ -38,7 +38,7 @@ $$
 \omega_L = \gamma B
 $$
 
-is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_\eta\mapsto\sigma_\eta$, so $\tilde{H}_{\Psi,Z}\mapsto  -\frac{\hbar\,\omega_{L}}{2}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $r_t = 0$ and $\vec r_\Psi = -\frac{\hbar\,\omega_{L}}{2}\vec u$.
+is the Larmor frequency. In the series convention $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ and the isomorphism $\mathsf{M}_2$ sends $i\vec e_\eta\mapsto\sigma_\eta$, so $\tilde{H}_{\Psi,Z}\mapsto  -\frac{\hbar\,\omega_{L}}{2}(\vec u\cdot\boldsymbol{\sigma})$. The coupling is a Hermitian element of $\mathbb{B}_{\Psi}$ with $h_t = 0$ and $\vec h_\Psi = -\frac{\hbar\,\omega_{L}}{2}\vec u$.
 
 ### The Spin-1/2 Splitting
 
@@ -60,7 +60,7 @@ $$
 \boxed{\;\Delta E_{\mathrm{Zeeman}} =\hbar|\omega_L| =\hbar|\gamma|B\;},
 $$
 
-linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{B}_{\Psi}$ has eigenvalues $\pm|\vec r_\Psi|$, and $|\vec r_\Psi|$ depends on the magnitude of the vector part alone.
+linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{B}_{\Psi}$ has eigenvalues $\pm|\vec h_\Psi|$, and $|\vec h_\Psi|$ depends on the magnitude of the vector part alone.
 
 For an electron, $\gamma = -\frac{g_{e}\,\mu_{B}}{\hbar}$ with $g_e\approx2.0023$; the two levels are separated by $\hbar|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
@@ -78,7 +78,7 @@ $$
 h_j = \frac{\mu_B}{2}\,g_{ij}B_i,
 $$
 
-so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_B|g\vec B|$: the splitting depends on the angle between the field and the principal axes of the g-tensor. In the algebra the anisotropy is the statement that the vector part $\vec r_\Psi$ of the observable is a linear image of the field, and the eigenvalues are still $\pm|\vec r_\Psi|$. The isotropic case $g_{ij} = g_e\delta_{ij}$ reduces to the preceding subsection, where $\tilde{H}_{\Psi,Z} =\frac{\mu_{B}\,g_{e}\,B\,\tilde{S}_{\Psi,3}}{\hbar}= -\gamma B\tilde{S}_{\Psi,3}$ for $\gamma = -\frac{g_{e}\,\mu_{B}}{\hbar}$. The g-tensor is measured by electron paramagnetic resonance; the framework supplies the two-dimensional spectral structure and the vector-part formula, and takes the tensor itself as external data.
+so the spectrum is $\pm\tfrac12\mu_B|g\vec B|$ and the Zeeman splitting is $\mu_B|g\vec B|$: the splitting depends on the angle between the field and the principal axes of the g-tensor. In the algebra the anisotropy is the statement that the vector part $\vec h_\Psi$ of the observable is a linear image of the field, and the eigenvalues are still $\pm|\vec h_\Psi|$. The isotropic case $g_{ij} = g_e\delta_{ij}$ reduces to the preceding subsection, where $\tilde{H}_{\Psi,Z} =\frac{\mu_{B}\,g_{e}\,B\,\tilde{S}_{\Psi,3}}{\hbar}= -\gamma B\tilde{S}_{\Psi,3}$ for $\gamma = -\frac{g_{e}\,\mu_{B}}{\hbar}$. The g-tensor is measured by electron paramagnetic resonance; the framework supplies the two-dimensional spectral structure and the vector-part formula, and takes the tensor itself as external data.
 
 ### Level Crossings and the Field Axis
 
@@ -105,7 +105,7 @@ $$
 \tilde{H}_{\Psi,S} = -\vec d\cdot\vec E = -E\,d\,i\vec e_x
 $$
 
-when the dipole operator is taken along the field direction and truncated to its off-diagonal matrix element $d$ between two levels. The choice $i\vec e_x$ is a choice of basis in the two-level space; a general dipole coupling is $-E(d_1\,i\vec e_x + d_2\,i\vec e_y)$, and the two components correspond to the two independent dipole matrix elements. In the two-level truncation the coupling is a traceless Hermitian element of $\mathbb{B}_{\Psi}$ with $\vec r_\Psi = (-d_1E, -d_2E, 0)$.
+when the dipole operator is taken along the field direction and truncated to its off-diagonal matrix element $d$ between two levels. The choice $i\vec e_x$ is a choice of basis in the two-level space; a general dipole coupling is $-E(d_1\,i\vec e_x + d_2\,i\vec e_y)$, and the two components correspond to the two independent dipole matrix elements. In the two-level truncation the coupling is a traceless Hermitian element of $\mathbb{B}_{\Psi}$ with $\vec h_\Psi = (-d_1E, -d_2E, 0)$.
 
 A physical dipole operator has a definite parity: $\vec d$ is odd under spatial inversion, so its diagonal matrix elements between states of definite parity vanish. For a pair of levels of opposite parity the only non-zero matrix element is the off-diagonal one, and the coupling therefore has no diagonal part. A spin-1/2 with no orbital structure — a bare magnetic moment — has no electric dipole coupling at this order at all; the electric field couples to the orbital motion, and the two-level truncation above represents a pair of opposite-parity orbital states dressed by the spin. The electron electric dipole moment, which would give a diagonal coupling, is a beyond-Standard-Model quantity and is not part of this framework.
 
@@ -117,7 +117,7 @@ $$
 \tilde H_\Psi = -E\,d\,i\vec e_x .
 $$
 
-This is a traceless Hermitian element with $\vec r_\Psi = (-dE,0,0)$, so its eigenvalues are
+This is a traceless Hermitian element with $\vec h_\Psi = (-dE,0,0)$, so its eigenvalues are
 
 $$
 \boxed{\;E_\pm = \pm\,dE\;},
@@ -135,7 +135,7 @@ $$
 \tilde H_\Psi(\lambda) = -\frac{\hbar\,\omega_{0}}{2}\,i\vec e_z - E\,d\,i\vec e_x .
 $$
 
-The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec r_\Psi = (-Ed,0,-\frac{\hbar\,\omega_{0}}{2})$:
+The two eigenvalues are the spectral endpoints of a traceless Hermitian element with $\vec h_\Psi = (-Ed,0,-\frac{\hbar\,\omega_{0}}{2})$:
 
 $$
 \boxed{\;E_\pm(E) = \pm\sqrt{\left(\frac{\hbar\,\omega_{0}}{2}\right)^2 + (Ed)^2}\;}.
@@ -182,7 +182,7 @@ For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm
 
 ### The Avoided Crossing
 
-The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a traceless Hermitian element are $\pm|\vec r_\Psi|$, and $|\vec r_\Psi| = \sqrt{(Ed)^2 + (\frac{\hbar\,\omega_{0}}{2})^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.
+The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a traceless Hermitian element are $\pm|\vec h_\Psi|$, and $|\vec h_\Psi| = \sqrt{(Ed)^2 + (\frac{\hbar\,\omega_{0}}{2})^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.
 
 ## The Two Couplings Compared
 
@@ -196,7 +196,7 @@ $$
 \tilde{H}_{\Psi,S} = -E\left(d_1\,i\vec e_x + d_2\,i\vec e_y\right),
 $$
 
-after choosing $\vec u_z$ along the magnetic field and noting that an electric field can have components along both transverse directions relative to it. Both are of the form $i\vec r_\Psi$ with real $\vec r_\Psi$; both are traceless if the permanent moments vanish; and both are elements of the informational sector, so both couple to the state through the Hermitian form, read through the trace and the spectral decomposition of $\mathbb{B}_{\Psi}$. Neither coupling requires an element of the material sector: the fields are external data that multiply Hermitian observables.
+after choosing $\vec u_z$ along the magnetic field and noting that an electric field can have components along both transverse directions relative to it. Both are of the form $i\vec h_\Psi$ with real $\vec h_\Psi$; both are traceless if the permanent moments vanish; and both are elements of the informational sector, so both couple to the state through the Hermitian form, read through the trace and the spectral decomposition of $\mathbb{B}_{\Psi}$. Neither coupling requires an element of the material sector: the fields are external data that multiply Hermitian observables.
 
 ### Diagonal Versus Off-Diagonal
 
@@ -225,7 +225,7 @@ The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec
 **What the algebra organises.**
 
 - **A common home.** Both field couplings are Hermitian elements of $\mathbb{B}_{\Psi}$, and both effects are read off by the two mechanisms of that subspace: the spectral decomposition for the eigenvalues and the normalised Hermitian form for the expectation values.
-- **Isotropy of the Zeeman splitting as a spectral statement.** The eigenvalues $\pm|\vec r_\Psi|$ of a traceless Hermitian element depend on the magnitude of the vector part only, which is why the Zeeman splitting is independent of the field direction.
+- **Isotropy of the Zeeman splitting as a spectral statement.** The eigenvalues $\pm|\vec h_\Psi|$ of a traceless Hermitian element depend on the magnitude of the vector part only, which is why the Zeeman splitting is independent of the field direction.
 - **The diagonal/off-diagonal dichotomy.** The distinction between the linear Zeeman effect and the quadratic Stark effect is the distinction between a diagonal and an off-diagonal coupling, and in the algebra this is the distinction between a coupling proportional to $i\vec e_z$ and one proportional to $i\vec e_x$.
 - **A unified avoided crossing.** The Stark two-level problem and the Rabi effective Hamiltonian are the same traceless Hermitian element read in different variables; the framework makes the identity of the two problems explicit.
 

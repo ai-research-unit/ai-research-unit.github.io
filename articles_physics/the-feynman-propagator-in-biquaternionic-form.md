@@ -198,7 +198,7 @@ in both lines the product of the two imaginary units being $i^2=-1$.
 Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is
 
 $$
-\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\Delta r_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
+\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\Delta h_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
 $$
 
 Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The action is linear in the four-momentum, so flipping all four components flips its sign,
@@ -281,7 +281,7 @@ $$
 
 the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
 
-The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$: a central element, purely imaginary as a scalar coefficient and with no vector part. Being anti-Hermitian it lies on the material side, and being central it lies in $\mathbb{B}_{C}=\mathbb{C}e_t$. Since $\epsilon$ is real, $-i\epsilon\,e_t=-\epsilon\,(ie_t)$, so it is a **real** multiple of the $i r'_t$ direction, the direction in which the framework writes the material time. Both statements describe one element: the shift is imaginary relative to the scalar unit $e_t$ and real relative to the time direction $ie_t$, exactly as $Q_t=i r'_t$ is.
+The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$: a central element, purely imaginary as a scalar coefficient and with no vector part. Being anti-Hermitian it lies on the material side, and being central it lies in $\mathbb{B}_{C}=\mathbb{C}e_t$. Since $\epsilon$ is real, $-i\epsilon\,e_t=-\epsilon\,(ie_t)$, so it is a **real** multiple of the $i r'_t$ direction, the direction in which the framework writes the material time. Both statements describe one element: the shift is imaginary relative to the scalar unit $e_t$ and real relative to the time direction $ie_t$, exactly as $Q_t=i q'_t$ is.
 
 One caveat belongs here, because it is the kind of sign that hides in prose. The Feynman term is **added to the scalar** $\mathcal{M}(\tilde P_{\Phi})$, and as an element it is anti-Hermitian. Displacing the four-momentum biquaternion is a different operation. With $\tilde P_{\Phi}\to\tilde P_{\Phi}+\delta e_t$,
 

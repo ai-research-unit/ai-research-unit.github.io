@@ -304,7 +304,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved charge |
 | $i\Delta(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 
 ## Further Reading
 

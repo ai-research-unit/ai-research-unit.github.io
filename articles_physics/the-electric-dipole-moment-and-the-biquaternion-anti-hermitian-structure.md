@@ -40,11 +40,11 @@ so that $\varepsilon_0=+1$ and $\varepsilon_\eta=-1$. The weight $\varepsilon_\r
 **The two Dirac equations.** The mass is the linear Dirac pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 $$
 
 $$
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and the two displays are two equations, not one. Each is one-sided — the algebra acts by left multiplication on the field — and the pair is the chirality split of a single operator: the left-handed equation and the right-handed equation, coupled by the mass. The second member uses the conjugate gradient $\tilde{\nabla}^{\natural}$, a different element of the algebra; it is not the conjugate of the field, and the antilinear real structure $\flat=-{}^{*}$ is a third object, separate from both. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.

@@ -80,9 +80,9 @@ Each of the four terms exchanges the value, while the mass term keeps it: the eq
 The same operator content is written by the series as the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 which acts by left multiplication on the algebra (*Algebra and Element Conventions*). The pair and the two-sided equation above carry the same operator content and are not the same statement; the passage from one to the other is a change of representation, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* separates the two forms. This article uses the two-sided equation, because the current below is defined against the frame's units. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -456,7 +456,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $\Sigma_{\mu\nu}$ | The spin generator, $\frac{i}{4}$ times the commutator of the two generators, antisymmetric; $i$ times the Lorentz generator of the conventions, which is half the bivector of the pair |
 | $\sum_\mu\varepsilon_\mu e_\mu\partial_\mu\tilde{Ξ}_{\mathrm{sp}}\,\vec e_{\nu(\mu)}=-k_m\tilde{Ξ}_{\mathrm{sp}}$ | The field equation, every factor written out |
 | $\sum_\mu\varepsilon_\mu\overline{\partial_\mu\tilde{Ξ}_{\mathrm{sp}}}\,e_\mu X\vec e_{\nu(\mu)}=m\bar{\tilde{Ξ}}_{\mathrm{sp}}X$ | The adjoint equation, for every element $X$; the mass carries the other sign |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the same operator content by left multiplication |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the same operator content by left multiplication |
 | $j_\mu=\bar{\tilde{Ξ}}_{\mathrm{sp}}\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}} c_\mu)$, $j_0=\operatorname{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$ | The number current and its density |
 | $p$, $p_2$, $k_\nu=(p_2-p)_\nu$, $P_\mu=\tfrac12(p+p_2)_\mu$ | Momenta, transfer and average |
 | $\bar w_2\,ie_\mu w\,\vec e_{\nu(\mu)}$ | The momentum-space bilinear |

@@ -29,10 +29,10 @@ The conventions are those of the companion articles: the biquaternion algebra is
 An element of the Hermitian subspace is written
 
 $$
-\tilde H_\Psi = r_t\,e_t + i\,\vec r_\Psi, \qquad r_t \in \mathbb{R}, \qquad \vec r_\Psi = r'_x \vec e_x + r'_y \vec e_y + r'_z \vec e_z,
+\tilde H_\Psi = h_t\,e_t + i\,\vec h_\Psi, \qquad h_t \in \mathbb{R}, \qquad \vec h_\Psi = h'_x \vec e_x + h'_y \vec e_y + h'_z \vec e_z,
 $$
 
-where $\vec r_\Psi$ is a pure real quaternion, identified with the vector $(r'_x, r'_y, r'_z) \in \mathbb{R}^3$. The scalar part $r_t e_t$ lies in the centre $\mathbb{B}_{C}$, and the imaginary vector part $i\vec r_\Psi$ carries the three remaining real coordinates. A basis of $\mathbb{B}_{\Psi}$ over $\mathbb{R}$ is
+where $\vec h_\Psi$ is a pure real quaternion, identified with the vector $(h'_x, h'_y, h'_z) \in \mathbb{R}^3$. The scalar part $h_t e_t$ lies in the centre $\mathbb{B}_{C}$, and the imaginary vector part $i\vec h_\Psi$ carries the three remaining real coordinates. A basis of $\mathbb{B}_{\Psi}$ over $\mathbb{R}$ is
 
 $$
 \{e_t,\; i \vec e_x,\; i \vec e_y,\; i \vec e_z\},
@@ -41,17 +41,17 @@ $$
 so that $\mathbb{B}_{\Psi}$ is a four-dimensional real vector space; it is the fixed-point set of the Hermitian conjugation ${}^{*}$. Its **normalisation** is the scalar part,
 
 $$
-\mathrm{Sc}(\tilde H_\Psi)=\langle\tilde H_\Psi,e_t\rangle_{*}=r_t ,
+\mathrm{Sc}(\tilde H_\Psi)=\langle\tilde H_\Psi,e_t\rangle_{*}=h_t ,
 $$
 
-whose $2\times2$ reading is the trace, $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)=2c r_t$.
+whose $2\times2$ reading is the trace, $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)=2c h_t$.
 
 ### The Biquaternion Norm
 
-The quaternion conjugate $\tilde H_\Psi^{\natural} = r_t e_t - i\vec r_\Psi$ is again Hermitian, so quaternion conjugation preserves $\mathbb{B}_{\Psi}$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
+The quaternion conjugate $\tilde H_\Psi^{\natural} = h_t e_t - i\vec h_\Psi$ is again Hermitian, so quaternion conjugation preserves $\mathbb{B}_{\Psi}$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = \bigl(r_t^2 - |\vec r_\Psi|^2\bigr) e_t ,
+\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = \bigl(h_t^2 - |\vec h_\Psi|^2\bigr) e_t ,
 $$
 
 a real-valued quadratic form on $\mathbb{B}_{\Psi}$, of **signature $(1,3)$**: the scalar direction $e_t$ is positive, the three imaginary directions $i \vec e_x, i \vec e_y, i \vec e_z$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{B}_{\Phi}$.
@@ -69,27 +69,27 @@ is positive-definite, of signature $(4,0)$; the Hermitian form is $\langle\tilde
 The vanishing of the biquaternion norm defines the **light cone** of $\mathbb{B}_{\Psi}$:
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} = 0 \quad\Longleftrightarrow\quad r_t^2 = |\vec r_\Psi|^2 ,
+\langle\tilde H_\Psi\rangle_{\natural} = 0 \quad\Longleftrightarrow\quad h_t^2 = |\vec h_\Psi|^2 ,
 $$
 
-a double cone in $\mathbb{R}^4$ with apex at the origin. The complement of the cone has three connected components: the spacelike region $\langle\tilde H_\Psi\rangle_{\natural} < 0$ (a single component), and the two components of the timelike region $\langle\tilde H_\Psi\rangle_{\natural} > 0$, namely $r_t > |\vec r_\Psi|$ and $r_t < -|\vec r_\Psi|$. The first of these, $r_t > |\vec r_\Psi|$, is the **future** component.
+a double cone in $\mathbb{R}^4$ with apex at the origin. The complement of the cone has three connected components: the spacelike region $\langle\tilde H_\Psi\rangle_{\natural} < 0$ (a single component), and the two components of the timelike region $\langle\tilde H_\Psi\rangle_{\natural} > 0$, namely $h_t > |\vec h_\Psi|$ and $h_t < -|\vec h_\Psi|$. The first of these, $h_t > |\vec h_\Psi|$, is the **future** component.
 
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ that maps $e_t \mapsto I$ and $\vec e_j \mapsto -i\sigma_j$, a Hermitian element $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$ maps to the Hermitian matrix $r_t I + \vec r_\Psi\cdot\boldsymbol{\sigma}$, whose determinant is $r_t^2 - |\vec r_\Psi|^2$. The biquaternion norm is therefore the determinant form:
+Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ that maps $e_t \mapsto I$ and $\vec e_j \mapsto -i\sigma_j$, a Hermitian element $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ maps to the Hermitian matrix $h_t I + \vec h_\Psi\cdot\boldsymbol{\sigma}$, whose determinant is $h_t^2 - |\vec h_\Psi|^2$. The biquaternion norm is therefore the determinant form:
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} \;\longmapsto\; \det\bigl(r_t I + \vec r_\Psi\cdot\boldsymbol{\sigma}\bigr) I .
+\langle\tilde H_\Psi\rangle_{\natural} \;\longmapsto\; \det\bigl(h_t I + \vec h_\Psi\cdot\boldsymbol{\sigma}\bigr) I .
 $$
 
 Consequently the nonzero elements of the light cone are exactly the **zero divisors** of $\mathbb{B}$ that lie in $\mathbb{B}_{\Psi}$: $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = 0$ with $\tilde H_\Psi \neq 0$ means the corresponding matrix is singular, hence a zero divisor. Conversely every zero divisor in $\mathbb{B}_{\Psi}$ has vanishing biquaternion norm. This is the same zero-divisor cone that, in $\mathbb{B}_{\Phi}$, describes null four-vectors; here it will describe the pure states.
 
 ### The Positive Cone Is the Future Light Cone
 
-The decisive structural fact is that, in $\mathbb{B}_{\Psi}$, the algebra's positive cone and the geometry's future cone are the same set. A Hermitian element $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$ has eigenvalues $r_t \pm |\vec r_\Psi|$ (they are the eigenvalues of $r_t I + \vec r_\Psi\cdot\boldsymbol{\sigma}$), so it is positive semidefinite precisely when the smaller eigenvalue is non-negative. This gives:
+The decisive structural fact is that, in $\mathbb{B}_{\Psi}$, the algebra's positive cone and the geometry's future cone are the same set. A Hermitian element $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ has eigenvalues $h_t \pm |\vec h_\Psi|$ (they are the eigenvalues of $h_t I + \vec h_\Psi\cdot\boldsymbol{\sigma}$), so it is positive semidefinite precisely when the smaller eigenvalue is non-negative. This gives:
 
 **Proposition.** For $\tilde H_\Psi \in \mathbb{B}_{\Psi}$,
 
 $$
-\boxed{\;\tilde H_\Psi \geq 0 \quad\Longleftrightarrow\quad \langle\tilde H_\Psi\rangle_{\natural} = r_t^2 - |\vec r_\Psi|^2 \geq 0 \ \ \text{and}\ \ r_t \geq 0\;}.
+\boxed{\;\tilde H_\Psi \geq 0 \quad\Longleftrightarrow\quad \langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 \geq 0 \ \ \text{and}\ \ h_t \geq 0\;}.
 $$
 
 The right-hand side is exactly the statement that $\tilde H_\Psi$ lies in the closed future cone of the biquaternion norm. Thus the **positive cone of $\mathbb{B}_{\Psi}$ coincides with the future light cone**, region for region, boundary included. In particular the positive cone is the future cone of a form of signature $(1,3)$, and the rank-one projections — the extreme rays of the positive cone — are precisely its null generators, $\langle\tilde H_\Psi\rangle_{\natural} = 0$.
@@ -105,10 +105,10 @@ $$
 = \bigl\{\tilde H_\Psi \in \mathbb{B}_{\Psi} : \langle\tilde H_\Psi,e_t\rangle_{*} = \tfrac{1}{2}\bigr\},
 $$
 
-whose $2\times2$ reading is the trace-one hyperplane, $\mathrm{Tr}(\tilde H_\Psi) = 2\,\mathrm{Sc}(\tilde H_\Psi) = 1$. In coordinates it is the level set $r_t = \tfrac{1}{2}$. It is an affine hyperplane of real dimension three, whose direction space is the subspace of vanishing scalar part,
+whose $2\times2$ reading is the trace-one hyperplane, $\mathrm{Tr}(\tilde H_\Psi) = 2\,\mathrm{Sc}(\tilde H_\Psi) = 1$. In coordinates it is the level set $h_t = \tfrac{1}{2}$. It is an affine hyperplane of real dimension three, whose direction space is the subspace of vanishing scalar part,
 
 $$
-\{\tilde H_\Psi \in \mathbb{B}_{\Psi} : r_t = 0\} = \operatorname{span}_\mathbb{R}\{i \vec e_x, i \vec e_y, i \vec e_z\}.
+\{\tilde H_\Psi \in \mathbb{B}_{\Psi} : h_t = 0\} = \operatorname{span}_\mathbb{R}\{i \vec e_x, i \vec e_y, i \vec e_z\}.
 $$
 
 The hyperplane does not contain the origin, and its normal direction is $e_t$. Since $\langle e_t\rangle_{\natural} = 1 > 0$, the normal is timelike and the hyperplane is **spacelike**; the quadratic form induced on it by (minus) the biquaternion norm is positive-definite. The slice is therefore a Euclidean three-space, and the ball it contains is a genuine round ball in that Euclidean structure.
@@ -119,7 +119,7 @@ $$
 \tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3 ,
 $$
 
-where $\vec r = 2\vec r_\Psi$. The map $\vec r \mapsto \tilde{Ϛ}_{\Psi}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\vec r$ is the **Bloch vector**. In this parametrization the Hermitian form on the slice reads, for $\tilde{Ϛ}_{\Psi,1} = \tfrac{1}{2}(e_t + i\vec r)$ and $\tilde{Ϛ}_{\Psi,2} = \tfrac{1}{2}(e_t + i\vec s)$,
+where $\vec r = 2\vec h_\Psi$. The map $\vec r \mapsto \tilde{Ϛ}_{\Psi}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\vec r$ is the **Bloch vector**. In this parametrization the Hermitian form on the slice reads, for $\tilde{Ϛ}_{\Psi,1} = \tfrac{1}{2}(e_t + i\vec r)$ and $\tilde{Ϛ}_{\Psi,2} = \tfrac{1}{2}(e_t + i\vec s)$,
 
 $$
 \langle\tilde{Ϛ}_{\Psi,1},\tilde{Ϛ}_{\Psi,2}\rangle_{*}
@@ -133,12 +133,12 @@ whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}\tilde{Ϛ}_{\Psi,2}^
 
 ### The Slice Lemma
 
-The intersection of an affine hyperplane $r_t = c$ with the closed future cone is easy to describe. If $c > 0$, the future condition $r_t \geq 0$ is automatic, the causal condition reduces to $|\vec r_\Psi| \leq c$, and the apex is excluded; the intersection is a closed three-dimensional ball of radius $c$ in $\vec r_\Psi$-coordinates, centred at $\vec r_\Psi = 0$. If $c = 0$ the intersection degenerates to the single point at the apex, and if $c < 0$ the intersection with the future cone is empty.
+The intersection of an affine hyperplane $h_t = c$ with the closed future cone is easy to describe. If $c > 0$, the future condition $h_t \geq 0$ is automatic, the causal condition reduces to $|\vec h_\Psi| \leq c$, and the apex is excluded; the intersection is a closed three-dimensional ball of radius $c$ in $\vec h_\Psi$-coordinates, centred at $\vec h_\Psi = 0$. If $c = 0$ the intersection degenerates to the single point at the apex, and if $c < 0$ the intersection with the future cone is empty.
 
-For the normalised hyperplane $c = \tfrac{1}{2}$, the ball has radius $\tfrac{1}{2}$ in $\vec r_\Psi$-coordinates, equivalently radius $1$ in the Bloch coordinate $\vec r = 2\vec r_\Psi$. Explicitly, the biquaternion norm on the slice is
+For the normalised hyperplane $c = \tfrac{1}{2}$, the ball has radius $\tfrac{1}{2}$ in $\vec h_\Psi$-coordinates, equivalently radius $1$ in the Bloch coordinate $\vec r = 2\vec h_\Psi$. Explicitly, the biquaternion norm on the slice is
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} = \bigl(r_t^2 - |\vec r_\Psi|^2\bigr)e_t = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
+\langle\tilde H_\Psi\rangle_{\natural} = \bigl(h_t^2 - |\vec h_\Psi|^2\bigr)e_t = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
 $$
 
 so the causal condition $\langle\tilde H_\Psi\rangle_{\natural} \geq 0$ is exactly
@@ -163,7 +163,7 @@ $$
 \lambda_+ \lambda_- = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr) = \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural},
 $$
 
-so the biquaternion norm is exactly the product of the two eigenvalues. Because $r_t = \tfrac{1}{2} > 0$ forces $\lambda_+ = r_t + |\vec r_\Psi| > 0$, the sign of $\langle\cdot\rangle_{\natural}$ determines the sign of the remaining eigenvalue: $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} \geq 0$ if and only if $\tilde{Ϛ}_{\Psi} \geq 0$. Thus, restricted to the normalised hyperplane, the Proposition of the previous section specializes to a clean statement.
+so the biquaternion norm is exactly the product of the two eigenvalues. Because $h_t = \tfrac{1}{2} > 0$ forces $\lambda_+ = h_t + |\vec h_\Psi| > 0$, the sign of $\langle\cdot\rangle_{\natural}$ determines the sign of the remaining eigenvalue: $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} \geq 0$ if and only if $\tilde{Ϛ}_{\Psi} \geq 0$. Thus, restricted to the normalised hyperplane, the Proposition of the previous section specializes to a clean statement.
 
 **The state space.** The states of a qubit — the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ — are exactly the elements of that hyperplane that lie in the closed future light cone:
 
@@ -417,10 +417,10 @@ The ball has so far been described entirely inside $\mathbb{B}_{\Psi}$, by its o
 Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{\Psi}$. For a material four-vector $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ it gives the Hermitian element
 
 $$
-\tilde H_\Psi \;=\; -\tfrac{i}{2}\,\tilde R_\Phi \;=\; \tfrac{1}{2}\bigl(r'_{t}\,e_t - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) \;=\; r_t\,e_t + i\vec r_\Psi,
+\tilde H_\Psi \;=\; -\tfrac{i}{2}\,\tilde R_\Phi \;=\; \tfrac{1}{2}\bigl(r'_{t}\,e_t - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\bigr) \;=\; h_t\,e_t + i\vec h_\Psi,
 $$
 
-with $r_t = \tfrac{1}{2}c r'_{t}$ and $\vec r_\Psi = -\tfrac{1}{2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and
+with $h_t = \tfrac{1}{2}c r'_{t}$ and $\vec h_\Psi = -\tfrac{1}{2}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, and
 
 $$
 \boxed{\;\mathrm{Sc}(\tilde H_\Psi) \;=\; \tfrac{1}{2}c r'_{t},
@@ -428,7 +428,7 @@ $$
 \langle\tilde H_\Psi\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde R_\Phi\rangle_{\natural}\;}.
 $$
 
-Each of the two relations is exact. The first reads $\mathrm{Tr}(\tilde H_\Psi) = r'_{t}$ in the $2\times2$ image. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the normalised slice of the future cone, at $r'_{t} = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec r_\Psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; there the relations specialize to
+Each of the two relations is exact. The first reads $\mathrm{Tr}(\tilde H_\Psi) = r'_{t}$ in the $2\times2$ image. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the normalised slice of the future cone, at $r'_{t} = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h_\Psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; there the relations specialize to
 
 $$
 \tilde{Ϛ}_{\Psi} \geq 0
@@ -453,16 +453,16 @@ so **positivity of a state is the causal condition of the four-vector it mirrors
 | spatial part $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Bloch vector $\vec r = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ |
 | unit-norm rotor, $\langle\tilde U\rangle_{\natural} = 1$ | $*$-unitary element, $\tilde{U}\tilde{U}^{*} = e_t$ |
 
-<!-- PHYSICAL INTERPRETATION — one cone, not two cones in correspondence. On the normalised slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $r'_{t}$ to $r_t = r'_{t}/2$ and $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ to $\vec r_\Psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/2$, so $r_t - |\vec r_\Psi| = (r'_{t} - |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $r'_{t} = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
+<!-- PHYSICAL INTERPRETATION — one cone, not two cones in correspondence. On the normalised slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $r'_{t}$ to $h_t = r'_{t}/2$ and $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ to $\vec h_\Psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/2$, so $h_t - |\vec h_\Psi| = (r'_{t} - |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $r'_{t} = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
 <!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde R_\Phi = i r'_t\,e_t$ at $r'_{t} = 1$, which is the four-velocity of a particle at rest in the units of the check; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ and $\langle\tilde R_\Phi\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde R_\Phi\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde R_\Phi\rangle_{\natural}$, is exact. -->
 
 ### The Whole Timelike Cone, Not Only the Slice
 
-The normalised restriction is not essential to the correspondence, and saying so locates the normalisation correctly. Off the normalised hyperplane, $-\tfrac{i}{2}$ carries the whole future timelike cone of $\mathbb{B}_{\Phi}$ onto the positive definite elements of $\mathbb{B}_{\Psi}$, of every scalar part (its apex, the origin, going to $0$), and the past timelike cone onto the negative definite elements. Writing the image as $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$, with $r_t = r'_{t}/2$ and $\vec r_\Psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/2$, its eigenvalues are
+The normalised restriction is not essential to the correspondence, and saying so locates the normalisation correctly. Off the normalised hyperplane, $-\tfrac{i}{2}$ carries the whole future timelike cone of $\mathbb{B}_{\Phi}$ onto the positive definite elements of $\mathbb{B}_{\Psi}$, of every scalar part (its apex, the origin, going to $0$), and the past timelike cone onto the negative definite elements. Writing the image as $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$, with $h_t = r'_{t}/2$ and $\vec h_\Psi = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/2$, its eigenvalues are
 
 $$
-\lambda_\pm \;=\; r_t \pm |\vec r_\Psi| \;=\; \tfrac{1}{2}\bigl(r'_{t} \pm |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\bigr),
+\lambda_\pm \;=\; h_t \pm |\vec h_\Psi| \;=\; \tfrac{1}{2}\bigl(r'_{t} \pm |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|\bigr),
 $$
 
 both non-negative for $r'_{t} > 0$ and both non-positive for $r'_{t} < 0$. The sign of the scalar part is the sign of $r'_{t}$, so it is the **sign of the scalar part, not the sign of the norm,** that separates the two sheets: $\langle\tilde H_\Psi\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde R_\Phi\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
@@ -510,9 +510,9 @@ These are different groups. The unit-norm condition is $SL(2,\mathbb{C})$, whose
 $$
 \tilde{U}\tilde H_\Psi\tilde{U}^{*},
 \qquad
-r_t \ \text{fixed},
+h_t \ \text{fixed},
 \qquad
-\vec r_\Psi \longmapsto R\,\vec r_\Psi,
+\vec h_\Psi \longmapsto R\,\vec h_\Psi,
 \qquad
 R \in SO(3).
 $$
@@ -618,9 +618,9 @@ The ball has a mirror interpretation in the material sector. The map $\tilde H_\
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, fixed points of complex conjugation |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, fixed points of ${}^{*}$ |
 | $\mathbb{B}_{\Phi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, fixed points of $\flat$ |
-| $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$ | General Hermitian element |
-| $\mathrm{Sc}(\tilde H_\Psi) = \langle\tilde H_\Psi,e_t\rangle_{*} = r_t$ | Scalar part, the normalisation |
-| $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = (r_t^2 - |\vec r_\Psi|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
+| $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ | General Hermitian element |
+| $\mathrm{Sc}(\tilde H_\Psi) = \langle\tilde H_\Psi,e_t\rangle_{*} = h_t$ | Scalar part, the normalisation |
+| $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = (h_t^2 - |\vec h_\Psi|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
 | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | Hermitian form, signature $(4,0)$ |
 | $\mathrm{Tr}(\tilde H_\Psi) = 2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace: the $2\times2$ reading, a consequence only |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Normalised hyperplane |

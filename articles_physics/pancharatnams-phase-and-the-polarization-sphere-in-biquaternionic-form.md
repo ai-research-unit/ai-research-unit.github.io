@@ -78,7 +78,7 @@ $$
 =\tfrac14\left(S_0^2-\vec S^2\right).
 $$
 
-This is the algebra's **indefinite** form on $\mathbb{B}_{\Psi}$: with $\tilde{Q}=r_t\,e_t+i(r'_x\,\vec e_x+r'_y\,\vec e_y+r'_z\,\vec e_z)$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=r_t^2-(r'_x)^2-(r'_y)^2-(r'_z)^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
+This is the algebra's **indefinite** form on $\mathbb{B}_{\Psi}$: with $\tilde{Q}=h_t\,e_t+i(h'_x\,\vec e_x+h'_y\,\vec e_y+h'_z\,\vec e_z)$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=h_t^2-(h'_x)^2-(h'_y)^2-(h'_z)^2$, of signature $(1,3)$ on the four real parameters. The **degree of polarization** is read off it:
 
 $$
 P^2=1-\frac{4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}{S_0^2}.

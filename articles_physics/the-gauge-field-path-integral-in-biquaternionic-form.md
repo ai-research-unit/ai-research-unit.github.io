@@ -54,7 +54,7 @@ $$
 \tilde{A}_{\Phi} = iA_0e_t+\sum_{\eta=1}^{3}A_\eta\vec e_\eta ,
 $$
 
-with $A_0$ and $A_\eta$ the real component fields, the coefficients being $Q_t=i r'_t$ and $Q_\eta=x_\eta$. The gradient part of the gauge transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_\eta$ the real component fields, the coefficients being $Q_t=i q'_t$ and $Q_\eta=q_\eta$. The gradient part of the gauge transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 

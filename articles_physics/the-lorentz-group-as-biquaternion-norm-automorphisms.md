@@ -21,7 +21,7 @@ for all biquaternions $\tilde{Q},\tilde Q_1$. A multiplicative quadratic form on
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
 - **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
-- **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=ix_0$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
+- **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of Hermitian pairs $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they form the subfamily $AB^{*}=I$, the group $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
@@ -172,7 +172,7 @@ The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read
 | $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $\mathbb{B}_{iH}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
 | $\mathbb{B}_{\Phi}$ | $i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
-| $\mathbb{B}_{\Psi}$ | $r_t\,e_t+i\vec r_\Psi$ | $r_t^2-\vec r_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Psi}$ | $h_t\,e_t+i\vec h_\Psi$ | $h_t^2-\vec h_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
 
 The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{B}_{\Phi}$.
 
@@ -568,7 +568,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=i r'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i q'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian pair; the automorphism of the slice |

@@ -41,10 +41,10 @@ so that $\langle\tilde P_{\Phi},\tilde Q\rangle_{\natural*}=P^{\mathsf T}E\bar Q
 | Vector space $\mathbb{B}_{V}$ | $-\lVert v\rVert^2$ | $(0,3)$ over $\mathbb{C}$ |
 | Informational sector $\mathbb{B}_{\Psi}$ | the interval $\langle\tilde Q\rangle_{\natural}$ | $(1,3)$ over $\mathbb{R}$ |
 | Material sector $\mathbb{B}_{\Phi}$ | minus the interval $-\langle\tilde Q\rangle_{\natural}$ | $(1,3)$ over $\mathbb{R}$ |
-| Real quaternion space $\mathbb{B}_{H}$ | $r_t^2-\lVert\vec r_\Psi\rVert^2$ | $(1,3)$ over $\mathbb{R}$ |
-| Imaginary quaternion space $\mathbb{B}_{iH}$ | $r_t^2-\lVert\vec r_\Psi\rVert^2$ | $(1,3)$ over $\mathbb{R}$ |
+| Real quaternion space $\mathbb{B}_{H}$ | $h_t^2-\lVert\vec h_\Psi\rVert^2$ | $(1,3)$ over $\mathbb{R}$ |
+| Imaginary quaternion space $\mathbb{B}_{iH}$ | $h_t^2-\lVert\vec h_\Psi\rVert^2$ | $(1,3)$ over $\mathbb{R}$ |
 
-The table is the whole of the sign story. The centre is positive, the vector space is negative, and on each of the two sectors the form is the interval read with a sign. On the material sector the sign is minus; on the informational sector it is plus. On the two quaternion subspaces, for $h=r_t e_t+\vec r_\Psi\in\mathbb{B}_{H}$, the restricted form is the Lorentzian quadratic form $r_t^2-\lVert\vec r_\Psi\rVert^2$ itself: the quaternionic norm there is positive definite on $\mathbb{B}_{H}$ and negative definite on $\mathbb{B}_{iH}$, so it is not the form the table records. All four real restrictions carry the signature $(1,3)$, and the sign in the material row records the relation to the quaternionic norm, not a different inertia. The form is real at equal arguments because it is Hermitian, $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, and it is indefinite because the two contributions have opposite signs.
+The table is the whole of the sign story. The centre is positive, the vector space is negative, and on each of the two sectors the form is the interval read with a sign. On the material sector the sign is minus; on the informational sector it is plus. On the two quaternion subspaces, for $h=h_t e_t+\vec h_\Psi\in\mathbb{B}_{H}$, the restricted form is the Lorentzian quadratic form $h_t^2-\lVert\vec h_\Psi\rVert^2$ itself: the quaternionic norm there is positive definite on $\mathbb{B}_{H}$ and negative definite on $\mathbb{B}_{iH}$, so it is not the form the table records. All four real restrictions carry the signature $(1,3)$, and the sign in the material row records the relation to the quaternionic norm, not a different inertia. The form is real at equal arguments because it is Hermitian, $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^2$, and it is indefinite because the two contributions have opposite signs.
 
 The indefiniteness is what makes the form unable to normalise. A definite Hermitian form has a compact unit sphere and a trace-one slice; the Krein form has neither. Its "unit" level set is a hyperboloid, non-compact and of real dimension seven. A state that needs a normalised representative must use the definite Born form, not this one.
 
@@ -85,8 +85,8 @@ The group is not the Lorentz group. It is larger: it maps the centre to itself a
 The boosts are the simplest non-compact elements. On the Krein-orthogonal sum of a positive and a negative line,
 
 $$
-T_t e_t=\cosh r_t\,e_t+\sinh r_t\,\vec e_x, \qquad
-T_t\vec e_x=\sinh r_t\,e_t+\cosh r_t\,\vec e_x,
+T_t e_t=\cosh h_t\,e_t+\sinh h_t\,\vec e_x, \qquad
+T_t\vec e_x=\sinh h_t\,e_t+\cosh h_t\,\vec e_x,
 $$
 
 with $T_t=\mathrm{id}$ on the two remaining directions. Each $T_t$ is a Krein isometry, the family is a one-parameter subgroup, and

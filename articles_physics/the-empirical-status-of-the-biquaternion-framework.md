@@ -40,7 +40,7 @@ The following table collects the quantitative results the series has obtained an
 
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
-| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=r_t+\vec r\cdot\vec r_\Psi$; two-sided operator update | States, observables, Born rule, projective measurement |
+| Single qubit | Bloch sphere and Bloch ball; $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=h_t+\vec r\cdot\vec h_\Psi$; two-sided operator update | States, observables, Born rule, projective measurement |
 | Relativistic point mechanics | $\langle d\tilde R_\Phi\rangle_{\natural}=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; four-momentum $\tilde{P}_{\Phi}$ with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}= -m^{2}\,c^{2}$; four-force $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ orthogonal to it, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural}+\tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; massless case $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$ | Dirac equation, mass term |
@@ -271,7 +271,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde\nabla_\Phi$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, d'Alembertian |
 | $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec{u})$ | Idempotent (pure state) |
-| $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian element (observable) |
+| $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Trace reading of the Hermitian form (on which the Born rule is written) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |

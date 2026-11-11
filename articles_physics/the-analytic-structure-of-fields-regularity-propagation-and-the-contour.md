@@ -46,7 +46,7 @@ DD^{\natural}=D^{\natural}D=\Box
 =\left(\frac{\partial^2}{\partial R_t^2}+\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}\right)e_t.
 $$
 
-The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-\partial^2/\partial {r'_t}^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial r_t^2-\Delta$ of signature $(1,3)$.
+The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-\partial^2/\partial {r'_t}^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial^2/\partial h_t^2-\Delta$ of signature $(1,3)$.
 
 ### The Constraint
 

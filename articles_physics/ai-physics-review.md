@@ -38,7 +38,7 @@ $$
 The two sectors are its two fixed spaces:
 
 $$
-\mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \{r_t e_t + i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)\}, \qquad
+\mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \{h_t e_t + i(h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z)\}, \qquad
 \mathbb{B}_{\Phi} = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\} = \{i r'_t e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z\}.
 $$
 
@@ -46,10 +46,10 @@ So $\mathbb{B}_{\Phi}$ is imaginary scalar, real vector and $\mathbb{B}_{\Psi}$ 
 
 $$
 \mathbb{B}_{\Phi} = \{i r'_t\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z\}, \qquad
-\mathbb{B}_{\Psi} = \{r_t\,e_t + i(r'_{x}\vec e_x + r'_{y}\vec e_y + r'_{z}\vec e_z)\},
+\mathbb{B}_{\Psi} = \{h_t\,e_t + i(h'_{x}\vec e_x + h'_{y}\vec e_y + h'_{z}\vec e_z)\},
 $$
 
-with $c$ the speed of light and $r'_t,r_x,r_y,r_z$ and $r_t,r'_{x},r'_{y},r'_{z}$ all real. The material sector is the Minkowski four-vector; the informational sector is its counterpart with the time real and the three space directions imaginary. The two coordinate quadruples are independent, which is why the algebra carries the times $i r'_t$ and $r_t$ and the spaces $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ without identifying them.
+with $c$ the speed of light and $r'_t,r_x,r_y,r_z$ and $h_t,h'_{x},h'_{y},h'_{z}$ all real. The material sector is the Minkowski four-vector; the informational sector is its counterpart with the time real and the three space directions imaginary. The two coordinate quadruples are independent, which is why the algebra carries the times $i r'_t$ and $h_t$ and the spaces $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and $i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$ without identifying them.
 
 Each sector is four-real-dimensional, they meet only at $0$, together they span the algebra, and multiplication by $i$ exchanges them:
 
@@ -77,7 +77,7 @@ It is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_{
 
 **The scalar part.** $\mathrm{Sc}$ is the coefficient of $e_t$. It is defined on $\mathbb{B}$ before any matrix is chosen, and it turns the product into a number. No representation enters.
 
-**The restriction to $\mathbb{B}_{\Psi}$.** An element of the sector is $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t,\vec r_\Psi$ real, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. The Hermitian form therefore equals the plain form there,
+**The restriction to $\mathbb{B}_{\Psi}$.** An element of the sector is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t,\vec h_\Psi$ real, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. The Hermitian form therefore equals the plain form there,
 
 $$
 \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2} ,
@@ -87,7 +87,7 @@ the three minus signs of the bilinear expansion being cancelled by $i^2=-1$ from
 
 **The two signatures.** The Hermitian form has signature $(4,0)$ on the whole algebra. The plain form has signature $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$; it is definite on each sector and indefinite on the algebra.
 
-**Which of the four norms.** The convention names four algebraic norms: the plain norm $\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^2)$, the quaternionic norm $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, called the biquaternion norm elsewhere in the corpus, the Hermitian norm $\langle\tilde Q\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$, and the Krein norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$. The weight above is none of them: it is the normalised Hermitian form, a pairing, not a quadratic form. On $\mathbb{B}_{\Psi}$ the plain and Hermitian norms coincide at $r_t^2+\lvert\vec r_\Psi\rvert^2$, and the quaternionic and Krein norms coincide at $r_t^2-\lvert\vec r_\Psi\rvert^2$; only the first pair is positive definite. The normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ is linear and is not a norm condition.
+**Which of the four norms.** The convention names four algebraic norms: the plain norm $\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^2)$, the quaternionic norm $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$, called the biquaternion norm elsewhere in the corpus, the Hermitian norm $\langle\tilde Q\rangle_*=\sum_\mu\lvert Q_\mu\rvert^2$, and the Krein norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$. The weight above is none of them: it is the normalised Hermitian form, a pairing, not a quadratic form. On $\mathbb{B}_{\Psi}$ the plain and Hermitian norms coincide at $h_t^2+\lvert\vec h_\Psi\rvert^2$, and the quaternionic and Krein norms coincide at $h_t^2-\lvert\vec h_\Psi\rvert^2$; only the first pair is positive definite. The normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ is linear and is not a norm condition.
 
 **The normalisation.** The idempotents along a unit vector $\vec u$ are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$. They satisfy $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\mathrm{Sc}(\tilde\Pi_\pm)=\tfrac12$. A state is a convex combination of the two idempotents along its axis, so
 
@@ -95,12 +95,12 @@ $$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12.
 $$
 
-**The weight.** With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$,
+**The weight.** With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,
 
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=r_t+\vec r\cdot\vec r_\Psi.
+=h_t+\vec r\cdot\vec h_\Psi.
 $$
 
 The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
@@ -220,17 +220,17 @@ Seven reasons. The first is decisive.
 
 2. **The sector is the observable algebra of a two-state system, exactly.** $\mathsf{M}_2(\mathbb{B}_{\Psi})$ is the Hermitian $2\times2$ matrices; an element is
 $$
-\boxed{\;\mathsf{M}_2(\tilde H_\Psi) = r_t\,I_2 + \vec r_\Psi\cdot\boldsymbol{\sigma}, \qquad \tilde H_\Psi = r_t\,e_t + i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)\;},
+\boxed{\;\mathsf{M}_2(\tilde H_\Psi) = h_t\,I_2 + \vec h_\Psi\cdot\boldsymbol{\sigma}, \qquad \tilde H_\Psi = h_t\,e_t + i(h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z)\;},
 $$
-with real $r_t,\vec r_\Psi$, and its spectrum is $r_t+\lvert\vec r_\Psi\rvert$ and $r_t-\lvert\vec r_\Psi\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.
+with real $h_t,\vec h_\Psi$, and its spectrum is $h_t+\lvert\vec h_\Psi\rvert$ and $h_t-\lvert\vec h_\Psi\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.
 
 3. **The probability weight is the normalised Hermitian form, and on $\mathbb{B}_{\Psi}$ it is the Born rule.** The form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on $\mathbb{B}_{\Psi}$ it coincides with the plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is its restriction, but the weight below is written with the star on the sector and on the algebra alike; the scalar part is the coefficient of $e_t$ and needs no matrix. On $\mathbb{B}_{\Psi}$ the form is real and positive definite, of signature $(4,0)$, and it does not multiply — which is exactly what a probability needs. The unit satisfies $\langle e_t\rangle_{*}=1$; a state is normalised against it by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$; and the weight of an outcome with effect $\tilde H_\Psi$ is
 $$
 \boxed{\;p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=r_t+\vec r\cdot\vec r_\Psi\;}.
+=h_t+\vec r\cdot\vec h_\Psi\;}.
 $$
-In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=r_t+\vec r\cdot\vec r_\Psi$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{B}_{\Psi}$ the star in the numerator is inert, since $\tilde H_\Psi^{*}=\tilde H_\Psi$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde H_\Psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
+In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{B}_{\Psi}$ the star in the numerator is inert, since $\tilde H_\Psi^{*}=\tilde H_\Psi$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde H_\Psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
 
 4. **The state space is not added: it is the positive cone of the sector.** The pure states are the algebra's own idempotents,
 $$
@@ -336,8 +336,8 @@ The project keeps its own list of proven obstructions. These are the ones that c
 ## Common Misreadings
 
 1. **The material sector is the anti-Hermitian one.** The more familiar convention would take the Hermitian subspace as the physical one. Here it is the other way round, and the reason is stated above: the four-vectors must multiply, the readings must be real.
-2. **The prime marks the $i$, not the sector.** The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{B}_{\Phi}$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $i r'_t = iq'_t$; in $\mathbb{B}_{\Psi}$ it sits on the vector, so the informational positions are the primed slots, $i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.
-3. **The material time enters as an imaginary coefficient and the informational time as a real one.** $i r'_t$ against $r_t$. The minus of the metric comes from $i^2 = -1$ in $i r'_t$ and from nowhere else.
+2. **The prime marks the $i$, not the sector.** The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{B}_{\Phi}$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $i r'_t = iq'_t$; in $\mathbb{B}_{\Psi}$ it sits on the vector, so the informational positions are the primed slots, $i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.
+3. **The material time enters as an imaginary coefficient and the informational time as a real one.** $i r'_t$ against $h_t$. The minus of the metric comes from $i^2 = -1$ in $i r'_t$ and from nowhere else.
 4. **Two forms, two jobs, never conflated.** The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ answers the probability question: it is real and positive definite on the whole algebra, and it does not multiply. On $\mathbb{B}_{\Psi}$ it equals the plain form $\langle\cdot,\cdot\rangle$, which is the reading used for the sector computations, while the Born weight keeps the star. The quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ answers the interval question on $\mathbb{B}_{\Phi}$: it is indefinite, it multiplies, and its zero set is the light cone. In particular $\langle\tilde{Q}\rangle_{\natural} = 0$ does not mean $\tilde{Q} = 0$. A state is normalised by the linear condition $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, equivalently $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, never by the quadratic norm.
 5. **The interval is the biquaternion norm, not the square.** $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; the bare $\tilde{Q}^2$ is not a scalar and is not the interval.
 6. **Neither sector is a subalgebra.** Neither is closed under the product: a product of two elements of one sector generally has components in both. That is why the rotor group and the state module live in the full algebra.
@@ -371,7 +371,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The corpus's one bracket for its four forms: the subscript records the two conjugations, the one applied to the first argument and the one applied to the second, and the value is the scalar part of the corresponding general product |
 | ${}^{\natural}$, ${}^{*}$ | Quaternion conjugation; Hermitian conjugation ($\mathbb{C}$-antilinear, fixes $\mathbb{B}_{\Psi}$) |
 | $\mathbb{B}_{\Phi}$ | Material sector: imaginary scalar, real vector, $i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
-| $\mathbb{B}_{\Psi}$ | Informational sector: real scalar, imaginary vector, $r_t\,e_t+i(r'_{x}\,\vec e_x+r'_{y}\,\vec e_y+r'_{z}\,\vec e_z)$ |
+| $\mathbb{B}_{\Psi}$ | Informational sector: real scalar, imaginary vector, $h_t\,e_t+i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = \sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\varepsilon = (1,-1,-1,-1)$ | The plain form: $\mathbb{C}$-bilinear, defined with no matrix, not multiplicative; the restriction of the Hermitian form to $\mathbb{B}_{\Psi}$, where its normalised value against the unit is the Born weight |
 | $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{Q}^2) = Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | The diagonal of the plain form, which the corpus also calls the plain norm: signature $(4,0)$ on $\mathbb{B}_{\Psi}$, $(0,4)$ on $\mathbb{B}_{\Phi}$. Quadratic, so it does not normalise states; it is not the biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = \sum_\mu Q_{1\mu}Q_{2\mu}$ | The general quaternionic bilinear form; its diagonal is the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$: complex in general, real of signature $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$, multiplicative; the interval; the norm of the framework |
@@ -383,7 +383,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover |
 | $\tilde{\Pi} = \tfrac12(e_t+i\vec u_{\mathrm r})$ | Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde{\Pi},e_t\rangle_{*}=\tfrac12$; trace one in the $2\times2$ reading |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | State: positive, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; trace one in the $2\times2$ reading; the Bloch ball |
-| $\tilde H_\Psi = r_t\,e_t+i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)$ | Observable: Hermitian, real spectrum $r_t\pm\lvert\vec r_\Psi\rvert$ |
+| $\tilde H_\Psi = h_t\,e_t+i(h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z)$ | Observable: Hermitian, real spectrum $h_t\pm\lvert\vec h_\Psi\rvert$ |
 | $\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$ | Nilpotent partner of the idempotent $\tilde{\Pi}$ in the state module |
 | $c$ | Speed of light; $i r'_t$ is the material time coordinate |
 | $\mathbb{B}_{H}$ | Quaternion subspace: real scalar, real vector, signature $(4,0)$, elliptic; the Wick target |

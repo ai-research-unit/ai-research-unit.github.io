@@ -138,13 +138,13 @@ $$
 \tilde{\mathcal S}_{\Psi} = \exp(-i\tilde H_\Psi\tau),
 $$
 
-and $\tilde H_\Psi^{*} = \tilde H_\Psi$ with $i$ central gives $\tilde{\mathcal S}_{\Psi}^{*} = \exp(+i\tilde H_\Psi\tau) = \tilde{\mathcal S}_{\Psi}^{-1}$, so $\tilde{\mathcal S}_{\Psi}$ is star-unitary, as it must be. What the quaternionic norm computes here is instructive. Write $\tilde H_\Psi = r_t e_t + \tilde V_{\Phi,\mathrm{pu}}$, with $r_t=\mathrm{Sc}(\tilde H_\Psi)$ real and $\tilde V_{\Phi,\mathrm{pu}}$ the pure part; the Hermiticity of $\tilde H_\Psi$ makes $\tilde V_{\Phi,\mathrm{pu}}$ equal to $i\vec r_\Psi$ with $\vec r_\Psi$ real, so $-i\tau\tilde H_\Psi = -i\tau r_t\,e_t+\tau\vec r_\Psi$, and the two terms commute. Hence
+and $\tilde H_\Psi^{*} = \tilde H_\Psi$ with $i$ central gives $\tilde{\mathcal S}_{\Psi}^{*} = \exp(+i\tilde H_\Psi\tau) = \tilde{\mathcal S}_{\Psi}^{-1}$, so $\tilde{\mathcal S}_{\Psi}$ is star-unitary, as it must be. What the quaternionic norm computes here is instructive. Write $\tilde H_\Psi = h_t e_t + \tilde V_{\Phi,\mathrm{pu}}$, with $h_t=\mathrm{Sc}(\tilde H_\Psi)$ real and $\tilde V_{\Phi,\mathrm{pu}}$ the pure part; the Hermiticity of $\tilde H_\Psi$ makes $\tilde V_{\Phi,\mathrm{pu}}$ equal to $i\vec h_\Psi$ with $\vec h_\Psi$ real, so $-i\tau\tilde H_\Psi = -i\tau h_t\,e_t+\tau\vec h_\Psi$, and the two terms commute. Hence
 
 $$
-\tilde{\mathcal S}_{\Psi} = \exp(-i\tau r_t)\,\tilde V_{\Phi,\mathrm{pu},\tau}, \qquad \tilde V_{\Phi,\mathrm{pu},\tau} = \exp(\tau\vec r_\Psi).
+\tilde{\mathcal S}_{\Psi} = \exp(-i\tau h_t)\,\tilde V_{\Phi,\mathrm{pu},\tau}, \qquad \tilde V_{\Phi,\mathrm{pu},\tau} = \exp(\tau\vec h_\Psi).
 $$
 
-The second factor is inverted by its own quaternionic conjugate, because $\natural$ negates $\vec r_\Psi$, so $\tilde V_{\Phi,\mathrm{pu},\tau}\tilde V_{\Phi,\mathrm{pu},\tau}^{\natural}=e_t$ and its quaternionic norm is $1$. The first factor is central, with norm $\exp(-2i\tau r_t)$. The quaternionic norm is multiplicative, so
+The second factor is inverted by its own quaternionic conjugate, because $\natural$ negates $\vec h_\Psi$, so $\tilde V_{\Phi,\mathrm{pu},\tau}\tilde V_{\Phi,\mathrm{pu},\tau}^{\natural}=e_t$ and its quaternionic norm is $1$. The first factor is central, with norm $\exp(-2i\tau h_t)$. The quaternionic norm is multiplicative, so
 
 $$
 \langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural} = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H_\Psi)\right).

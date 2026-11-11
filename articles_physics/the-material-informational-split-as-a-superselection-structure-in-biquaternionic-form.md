@@ -58,8 +58,8 @@ $$
 $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
-\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi, \qquad \vec r_\Psi = r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z, \qquad
-\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad r_t,r'_x,r'_y,r'_z,r'_t,r_x,r_y,r_z\in\mathbb{R},
+\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi, \qquad \vec h_\Psi = h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z, \qquad
+\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, \qquad h_t,h'_x,h'_y,h'_z,r'_t,r_x,r_y,r_z\in\mathbb{R},
 $$
 so that $\mathbb{B}_{\Psi}$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{B}_{\Phi}$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$
@@ -295,7 +295,7 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Hermitian decomposition |
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_t$ | Centre; $\mathbb{R}e_t$ informational, $\mathbb{R}(ie_t)$ material |
-| $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ | General Hermitian element, the informational part |
+| $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | General Hermitian element, the informational part |
 | $\tilde R_\Phi = i r'_te_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |

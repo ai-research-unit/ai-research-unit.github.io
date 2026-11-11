@@ -103,13 +103,13 @@ The decomposition $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a p
 
 *The Partition Function in Biquaternionic Form* reaches a definite and honest set of results, and its boundary is exactly where cosmology needs it to continue.
 
-For a Hermitian Hamiltonian $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
+For a Hermitian Hamiltonian $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
 
 $$
-Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta r_t)\cosh\left(\beta|\vec r_\Psi|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,
+Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h_\Psi|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,
 $$
 
-the ordinary partition function of a **two-level system** with energies $r_t \pm |\vec r_\Psi|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
+the ordinary partition function of a **two-level system** with energies $h_t \pm |\vec h_\Psi|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
 
 This is the **rank-two limitation** in its first sense. The framework's thermal invariants are invariants of a finite, two-dimensional operator algebra: a state, an observable, a partition function, an entropy, and a heat capacity, all of a single qubit. They are not the thermodynamic quantities cosmology uses.
 
@@ -209,7 +209,7 @@ Two disciplines apply to every item. First, each candidate result must be recomp
 
 This agenda asked what it would take for the biquaternion framework to carry a cosmology, and it has recorded what the framework reaches and what it does not.
 
-**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_{\Phi}_0 = ie_t$ and $\tilde{E}_{\Phi}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{B}_{H}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
+**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_{\Phi}_0 = ie_t$ and $\tilde{E}_{\Phi}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{B}_{H}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
 
 **What is only carried, and is not a derived cosmology.** The scale factor, the spatial-curvature parameter, the Friedmann equations, the perfect-fluid source, and the cosmological constant are all **standard cosmology used as targets**. No scale factor, no Hubble rate, and no equation of state is derived here or in the framework. The framework's own locality device is not the route: a time-dependent local $c$ gives a flat metric and cannot produce an expansion, and a spatially varying local $c$ gives curvature but only on flat spatial slices.
 
@@ -245,7 +245,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $a(r'_t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt'\right)/a = c\left(da/dr'_t\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
 | $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu}T_{\mu\mu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
-| $Z = 2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
+| $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 
 ## Further Reading

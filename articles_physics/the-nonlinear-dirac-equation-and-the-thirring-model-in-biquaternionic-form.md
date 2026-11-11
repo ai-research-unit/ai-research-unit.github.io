@@ -60,9 +60,9 @@ The composite of the time slot action with the $k$-th space slot action is the l
 ### The Two Writings of the Free Equation
 
 The free field obeys the linear chiral pair
-$$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+$$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},$$
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},$$
 in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the **one-sided** writing. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The **two-sided** writing is the action

@@ -151,7 +151,7 @@ $$
 Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_\eta^{*}=-Q_\eta$ for $\eta=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and
 
 $$
-\mathbb{B}_{\Psi}=\{r_t\,e_t+i r'_x\vec e_x+i r'_y\vec e_y+i r'_z\vec e_z\ :\ r_t,r'_\eta\in\mathbb{R}\}.
+\mathbb{B}_{\Psi}=\{h_t\,e_t+i h'_x\vec e_x+i h'_y\vec e_y+i h'_z\vec e_z\ :\ h_t,h'_\eta\in\mathbb{R}\}.
 $$
 
 **Solving for $\mathbb{B}_{\Phi}$.** The condition $\tilde Q_1^{\flat}=\tilde Q_1$, that is $-\tilde Q_1^{*}=\tilde Q_1$, reads
@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=r_t+\mu\cdot\vec r_\Psi,
+\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\mu\cdot\vec h_\Psi,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.

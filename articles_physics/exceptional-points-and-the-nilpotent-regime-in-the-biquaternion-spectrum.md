@@ -76,7 +76,7 @@ The two normal forms are separated by the scalar part.
 | Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+N$, $N^2=0$ | yes | $e^{Q_t}(e_t+N)$ |
 | Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $N$, $N^2=0$ | no | $e_t+N$ |
 
-The second row is the sharp one. The element $N$ is a nonzero zero divisor, yet $\exp(N)=e_t+N$ is a unit, with inverse $e_t-N$. The exponential of a nilpotent is unipotent, and the unipotent line $r_t\mapsto e_t+tN$ is a line of units whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
+The second row is the sharp one. The element $N$ is a nonzero zero divisor, yet $\exp(N)=e_t+N$ is a unit, with inverse $e_t-N$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+tN$ is a line of units whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
 
 The logarithm exists in the first row and fails in the second. In the invertible row,
 

@@ -37,27 +37,27 @@ $$
 
 so the sum converges absolutely for $\mathrm{Re}\,\beta>0$ and diverges for $\mathrm{Re}\,\beta<0$. The physical domain is the half-plane $\mathrm{Re}\,\beta>0$, that is, positive temperature. The boundary $\beta\to0^+$ is the infinite-temperature limit, and whether the limit exists is a property of the spectrum. A harmonic oscillator of frequency $\omega$ has $Z=\exp(-\beta\omega/2)/(1-\exp(-\beta\omega))$, finite for $\beta>0$ and divergent as $\beta\to0^+$; a qubit has $Z\to2$, finite. The convergence condition therefore decides the behaviour at infinite temperature, not merely at zero.
 
-The framework's Hamiltonian is Hermitian, $\tilde H_\Psi\in\mathbb{B}_{\Psi}$, so its eigenvalues are real; in the two-level case they are $r_t\pm|\vec r_\Psi|$. From the companion article on the partition function, the thermal operator is
+The framework's Hamiltonian is Hermitian, $\tilde H_\Psi\in\mathbb{B}_{\Psi}$, so its eigenvalues are real; in the two-level case they are $h_t\pm|\vec h_\Psi|$. From the companion article on the partition function, the thermal operator is
 
 $$
-\exp(-\beta H)=\exp(-\beta r_t)\Big(\cosh(\beta|\vec r_\Psi|)\,e_t-i\sinh(\beta|\vec r_\Psi|)\,\vec u_\Psi\Big),
-\qquad \vec u_\Psi=\frac{\vec r_\Psi}{|\vec r_\Psi|},
+\exp(-\beta H)=\exp(-\beta h_t)\Big(\cosh(\beta|\vec h_\Psi|)\,e_t-i\sinh(\beta|\vec h_\Psi|)\,\vec u_\Psi\Big),
+\qquad \vec u_\Psi=\frac{\vec h_\Psi}{|\vec h_\Psi|},
 $$
 
 an element of $\mathbb{B}_{\Psi}$. Applying the Hermitian form, with its trace reading at normalisation, to $\tilde{H}_{\Psi,1}=e_t$ and $\tilde{H}_{\Psi,2}=\exp(-\beta H)$ gives
 
 $$
-\boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)\;},
+\boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)\;},
 $$
 
 and division gives the state
 
 $$
 \tilde{Ϛ}_{\Psi,\beta}=\tfrac12\big(e_t+i\vec r\big),\qquad
-\vec r=-\tanh(\beta|\vec r_\Psi|)\,\vec u_\Psi.
+\vec r=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi.
 $$
 
-Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,\beta})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself the trace formula. The state lies in the Bloch ball, with $|\vec r|=\tanh(\beta|\vec r_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
+Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,\beta})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself the trace formula. The state lies in the Bloch ball, with $|\vec r|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
 
 ## Thermodynamic Quantities as Functionals of the State
 
@@ -70,16 +70,16 @@ Every thermodynamic quantity of the canonical ensemble is a functional of the Gi
 
 The entropy functional needs the logarithm, which exists on $\mathbb{B}$ but is multivalued. The companion exercise on entanglement entropy establishes that $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ is correct in the interior of the Bloch ball when the principal branch is used, and that the logarithm — hence the formula written this way — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension, not a value the logarithm takes. This edge is kept visible rather than smoothed over, and it returns in the variational section below.
 
-For the qubit the Hermitian form, read through the trace at the end, evaluates each functional explicitly. With $r_x=\beta|\vec r_\Psi|$ and $\vec r=-\tanh r_x\,\vec u_\Psi$, the product $\tilde{Ϛ}_{\Psi}\tilde H_\Psi$ has scalar part
+For the qubit the Hermitian form, read through the trace at the end, evaluates each functional explicitly. With $r_x=\beta|\vec h_\Psi|$ and $\vec r=-\tanh r_x\,\vec u_\Psi$, the product $\tilde{Ϛ}_{\Psi}\tilde H_\Psi$ has scalar part
 
 $$
-\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\tfrac12\big(r_t+\vec r\cdot\vec r_\Psi\big)=\tfrac12\big(r_t-|\vec r_\Psi|\tanh r_x\big),
+\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\tfrac12\big(h_t+\vec r\cdot\vec h_\Psi\big)=\tfrac12\big(h_t-|\vec h_\Psi|\tanh r_x\big),
 $$
 
 so
 
 $$
-\boxed{\;E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=r_t-|\vec r_\Psi|\tanh r_x\;}.
+\boxed{\;E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x\;}.
 $$
 
 The eigenvalues of $\tilde{Ϛ}_{\Psi}$ are the level populations, $\lambda_\pm=\tfrac12(1\pm\tanh x)$ with $\lambda_+$ the ground-state population, and the entropy is the binary entropy of the pair:
@@ -91,7 +91,7 @@ $$
 The free energy is $F=E-S/\beta$, which also equals $-\beta^{-1}\log Z$:
 
 $$
-F=r_t-\frac{\log 2+\log\cosh x}{\beta}.
+F=h_t-\frac{\log 2+\log\cosh x}{\beta}.
 $$
 
 The **heat capacity** is a fluctuation. Differentiating $E$ at fixed spectrum,
@@ -102,15 +102,15 @@ C=\frac{\partial E}{\partial T}=k_B\,\beta^2\,\mathrm{Var}(\tilde H_\Psi),
 \mathrm{Var}(\tilde H_\Psi)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})-\big(\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2 .
 $$
 
-Since $\tilde{H}_\Psi^2=(r_t^2+|\vec r_\Psi|^2)e_t+2ic r_t\vec r_\Psi$ lies in $\mathbb{B}_{\Psi}$, the variance is computed by the same Hermitian form, with the trace reading last:
+Since $\tilde{H}_\Psi^2=(h_t^2+|\vec h_\Psi|^2)e_t+2ic h_t\vec h_\Psi$ lies in $\mathbb{B}_{\Psi}$, the variance is computed by the same Hermitian form, with the trace reading last:
 
 $$
-\mathrm{Var}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-\big(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2=|\vec r_\Psi|^2\,\mathrm{sech}^2x .
+\mathrm{Var}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-\big(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2=|\vec h_\Psi|^2\,\mathrm{sech}^2x .
 $$
 
 Hence $C=x^2\mathrm{sech}^2x$ in units of $k_B$: the two-level **Schottky heat capacity**. It is non-negative because a variance is, and it vanishes at both ends of the temperature range, with a maximum $C_{\max}=0.439229$ at $x=1.199679$, the root of $x\tanh x=1$. The framework adds nothing to the value; it supplies the route, since both $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ and $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})$ are scalar extractions.
 
-**Numerical check on an independently chosen case.** Take $r_t=0.4$, $\vec r_\Psi=(0.5,0.2,-0.6)$, $\beta=0.8$. Then $|\vec r_\Psi|=0.8062258$, $x=0.6449806$, and the eigenvalues are $r_t\pm|\vec r_\Psi|=1.2062258$ and $-0.4062258$. The Hermitian form gives, with the trace reading last,
+**Numerical check on an independently chosen case.** Take $h_t=0.4$, $\vec h_\Psi=(0.5,0.2,-0.6)$, $\beta=0.8$. Then $|\vec h_\Psi|=0.8062258$, $x=0.6449806$, and the eigenvalues are $h_t\pm|\vec h_\Psi|=1.2062258$ and $-0.4062258$. The Hermitian form gives, with the trace reading last,
 
 $$
 Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-0.32)\cosh(0.6449806)=1.7649944,
@@ -149,7 +149,7 @@ $$
 
 The same statement can be read as the **maximum-entropy principle**: at fixed internal energy $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=E$, the Gibbs state maximises $S[\tilde{Ϛ}_{\Psi}]$, and the two variational problems are Legendre transforms of one another. The derivation uses only the Hermitian form and the entropy functional, both of which are framework objects.
 
-One caveat belongs here. The functional $\mathcal F$ is defined where $\log\tilde{Ϛ}_{\Psi}$ exists, that is, in the interior of the Bloch ball. The minimiser is interior for every finite $\beta$, since $|\vec r|=\tanh(\beta|\vec r_\Psi|)<1$, but as $\beta\to\infty$ it approaches the boundary, where the functional is undefined. The variational characterisation therefore describes the finite-$\beta$ states exactly and the zero-temperature state only as a limit — the same boundary already noted for the entropy.
+One caveat belongs here. The functional $\mathcal F$ is defined where $\log\tilde{Ϛ}_{\Psi}$ exists, that is, in the interior of the Bloch ball. The minimiser is interior for every finite $\beta$, since $|\vec r|=\tanh(\beta|\vec h_\Psi|)<1$, but as $\beta\to\infty$ it approaches the boundary, where the functional is undefined. The variational characterisation therefore describes the finite-$\beta$ states exactly and the zero-temperature state only as a limit — the same boundary already noted for the entropy.
 
 ## Legendre Structure and Thermodynamic Identities
 
@@ -192,10 +192,10 @@ $$
 the pure ground state, and
 
 $$
-E\to r_t-|\vec r_\Psi|,\qquad S\to0,\qquad F\to r_t-|\vec r_\Psi|,\qquad C\to0 .
+E\to h_t-|\vec h_\Psi|,\qquad S\to0,\qquad F\to h_t-|\vec h_\Psi|,\qquad C\to0 .
 $$
 
-The internal energy tends to the lower eigenvalue $r_t-|\vec r_\Psi|$ and the free energy to the same value, as it must at zero temperature; the entropy vanishes, and the heat capacity vanishes because the system is frozen into a single level. The limit is finite throughout for the qubit.
+The internal energy tends to the lower eigenvalue $h_t-|\vec h_\Psi|$ and the free energy to the same value, as it must at zero temperature; the entropy vanishes, and the heat capacity vanishes because the system is frozen into a single level. The limit is finite throughout for the qubit.
 
 **High temperature, $\beta\to0$ ($T\to\infty$).** Since $\tanh x\to0$ and $\log\cosh x\to0$,
 
@@ -206,17 +206,17 @@ $$
 the maximally mixed state, and
 
 $$
-E\to r_t,\qquad S\to\log 2,\qquad C\to0,\qquad F=-\frac{\log Z}{\beta}\to-\infty .
+E\to h_t,\qquad S\to\log 2,\qquad C\to0,\qquad F=-\frac{\log Z}{\beta}\to-\infty .
 $$
 
-The internal energy tends to the arithmetic mean $r_t$ of the two levels, which are equally populated; the entropy tends to $\log2$, the maximum for a two-state system; and the heat capacity vanishes because the populations are already equal and further heating changes nothing. The free energy diverges as $-(\log2)/\beta$: when $Z$ tends to the finite degeneracy $2$, $-T\log Z$ diverges in $T$, not in the state.
+The internal energy tends to the arithmetic mean $h_t$ of the two levels, which are equally populated; the entropy tends to $\log2$, the maximum for a two-state system; and the heat capacity vanishes because the populations are already equal and further heating changes nothing. The free energy diverges as $-(\log2)/\beta$: when $Z$ tends to the finite degeneracy $2$, $-T\log Z$ diverges in $T$, not in the state.
 
 | Quantity | $\beta\to\infty$ ($T\to0$) | $\beta\to0$ ($T\to\infty$) |
 |---|---|---|
 | $\tilde{Ϛ}_{\Psi}$ | $\tilde{\Pi}(-\vec u_\Psi)$ (pure) | $\tfrac12 e_t$ (maximally mixed) |
-| $E$ | $r_t-|\vec r_\Psi|$ | $r_t$ |
+| $E$ | $h_t-|\vec h_\Psi|$ | $h_t$ |
 | $S$ | $0$ | $\log 2$ |
-| $F$ | $r_t-|\vec r_\Psi|$ | $-\infty$ |
+| $F$ | $h_t-|\vec h_\Psi|$ | $-\infty$ |
 | $C$ | $0$ | $0$ |
 
 The high-temperature limit is exactly where the convergence condition of the second section acts. The qubit's $Z\to2$ is finite, so the limit exists and gives $S\to\log2$. For the harmonic oscillator, $Z\to\infty$ as $\beta\to0^+$, so no state at $\beta=0$ exists and the entropy has no finite high-temperature limit. That difference is invisible in the finite-level formulas alone; it is a property of the spectrum, and it is why the convergence of $Z$ was treated above as content.
@@ -245,7 +245,7 @@ The framework adds an **interpretation** with three components.
 
 First, the computational spine is algebraic: in the $2\times2$ image the trace is twice the scalar part, so the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar from a product of $\mathbb{B}_{\Psi}$ elements, with the trace read last. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}))^2]$, shows the interpretation at work.
 
-Second, the state is geometric: the Gibbs state is the point $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$ in the Bloch ball, and temperature traverses the ball from its centre toward its boundary.
+Second, the state is geometric: the Gibbs state is the point $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ in the Bloch ball, and temperature traverses the ball from its centre toward its boundary.
 
 Third, the temperature is a direction: $\beta$ measures a displacement along the imaginary-time axis of the material sector $\mathbb{B}_{\Phi}$, while the modular Hamiltonian $H_{\mathrm{modular}}=\beta(\tilde H_\Psi-Fe_t)$, which carries the free energy, lies in $\mathbb{B}_{\Psi}$. The thermal structure is therefore a coupling of the two sectors of the kind the KMS article describes.
 
@@ -253,13 +253,13 @@ The framework does **not** produce a new thermodynamic law. The Gibbs state, the
 
 ## Summary
 
-Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z$, read through the Hermitian form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$. The partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta H))=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)$ for a qubit, and every thermal average is twice a scalar part.
+Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z$, read through the Hermitian form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$. The partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta H))=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)$ for a qubit, and every thermal average is twice a scalar part.
 
 The Gibbs state exists only when $Z$ converges: always for a finite-level system, and in the half-plane $\mathrm{Re}\,\beta>0$ for a spectrum unbounded above. The infinite-temperature boundary $\beta\to0$ is where the condition matters, and it separates the qubit ($Z\to2$) from the oscillator ($Z\to\infty$).
 
-The thermodynamic functionals of the state are the internal energy $E=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, the entropy $S=-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=r_t-|\vec r_\Psi|\tanh r_x$, $S=\log2+\log\cosh x-x\tanh x$, $F=r_t-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $r_x=\beta|\vec r_\Psi|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.
+The thermodynamic functionals of the state are the internal energy $E=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, the entropy $S=-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=h_t-|\vec h_\Psi|\tanh r_x$, $S=\log2+\log\cosh x-x\tanh x$, $F=h_t-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $r_x=\beta|\vec h_\Psi|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.
 
-The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}_{\Psi}]=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\beta^{-1}S[\tilde{Ϛ}_{\Psi}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=r_t-|\vec r_\Psi|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$, $E=r_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta(\tilde H_\Psi-Fe_t)$ lies in $\mathbb{B}_{\Psi}$.
+The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}_{\Psi}]=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\beta^{-1}S[\tilde{Ϛ}_{\Psi}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h_\Psi|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta(\tilde H_\Psi-Fe_t)$ lies in $\mathbb{B}_{\Psi}$.
 
 The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{B}_{\Psi}$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{B}_{\Phi}$.
 
@@ -274,15 +274,15 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
-| $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian Hamiltonian (observable) |
+| $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian (observable) |
 | $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Trace reading at normalisation (computational spine) |
 | $Z=\mathrm{Tr}(\exp(-\beta H))$ | Partition function |
 | $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z=\tfrac12(e_t+i\vec r)$ | Gibbs state |
-| $\vec r=-\tanh(\beta|\vec r_\Psi|)\vec u_\Psi$ | Bloch vector of the Gibbs state |
-| $r_x=\beta|\vec r_\Psi|$ | Thermal parameter |
-| $E=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=r_t-|\vec r_\Psi|\tanh r_x$ | Internal energy |
+| $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the Gibbs state |
+| $r_x=\beta|\vec h_\Psi|$ | Thermal parameter |
+| $E=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x$ | Internal energy |
 | $S=-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})=\log2+\log\cosh x-x\tanh x$ | Entropy (units of $k_B$) |
-| $F=E-S/\beta=r_t-(\log2+\log\cosh x)/\beta$ | Free energy |
+| $F=E-S/\beta=h_t-(\log2+\log\cosh x)/\beta$ | Free energy |
 | $C=\partial E/\partial T=k_B\beta^2\mathrm{Var}(\tilde H_\Psi)=r_x^2\mathrm{sech}^2x$ | Heat capacity (Schottky form) |
 | $A(\beta)=\log Z$, $S=A+\beta E$, $F=E-TS$ | Legendre structure |
 | $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi,\beta}=\beta(\tilde H_\Psi-Fe_t)$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |

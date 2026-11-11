@@ -88,7 +88,7 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 
 ## The Classical Equations
 
-**Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{r_t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, which with $r_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
+**Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{h_t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, which with $h_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
 i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V\psi .

@@ -58,10 +58,10 @@ F_{\mathrm{dual}}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H ,
 F_{\mathrm{dual},\star}=-iF_{\mathrm{dual}} ,
 $$
 
-the sourceless biquaternionic Maxwell equation $\tilde\nabla F_{\mathrm{dual}}=0$ is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta)F_{\mathrm{dual}}$ for every real $\theta$, because the phase is central and commutes with $\tilde\nabla$:
+the sourceless biquaternionic Maxwell equation $\tilde\nabla_\Phi F_{\mathrm{dual}}=0$ is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta)F_{\mathrm{dual}}$ for every real $\theta$, because the phase is central and commutes with $\tilde\nabla$:
 
 $$
-\boxed{\;\tilde\nabla\bigl(\exp(-i\theta)F_{\mathrm{dual}}\bigr)=\exp(-i\theta)\,\tilde\nabla F_{\mathrm{dual}}=0\;}.
+\boxed{\;\tilde\nabla_\Phi\bigl(\exp(-i\theta)F_{\mathrm{dual}}\bigr)=\exp(-i\theta)\,\tilde\nabla_\Phi F_{\mathrm{dual}}=0\;}.
 $$
 
 This is the framework's crispest statement about duality. The phase $\exp(-i\theta)$ lies in the unit circle of the centre $\mathbb C_{\mathbb B}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$, and the centre commutes with every element of the algebra, so the rotation is an **internal** symmetry: it does not act on the Lorentz indices, it does not mix with the quaternion units, and it commutes with every Lorentz rotor. It is not a spacetime symmetry, and it is not part of the Lorentz group; it is a $\mathrm{U}(1)$ of the algebra's centre.
@@ -69,7 +69,7 @@ This is the framework's crispest statement about duality. The phase $\exp(-i\the
 With sources the rotation is promoted from a symmetry of the free equation to a symmetry of the sourced one when the source rotates with the field: the equation
 
 $$
-\tilde\nabla F_{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J_{\Phi}
+\tilde\nabla_\Phi F_{\mathrm{dual}}=-\sqrt{\mu}\,\tilde J_{\Phi}
 $$
 
 is invariant under $F_{\mathrm{dual}}\mapsto \exp(-i\theta)F_{\mathrm{dual}}$ together with $\tilde J_{\Phi}\mapsto \exp(-i\theta)\tilde J_{\Phi}$, because the phase multiplies the single source term. At $\theta=\pi/2$ the rotated source is $i\sqrt{\mu}\,\tilde J_{\Phi}$, a term of magnetic form proportional to the electric current. The continuous rotation therefore generates a magnetic term from the electric one, and it does not act on a second, independent current. The rotation is exact, internal and central; its parameter is continuous.

@@ -17,9 +17,9 @@ The biquaternionic Dirac equation is first order and its solutions are waves. At
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. The field is an element, the operator is an element multiplying on the left, and the dynamics is the pair
 
 $$
-\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_{m}\tilde\Xi_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_{m}\tilde\Xi_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_{m}\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_{m}\tilde\Xi_{\mathrm{sp},R},
 \qquad
 k_{m}=\frac{m\,c}{\hbar}.
 $$
@@ -29,7 +29,7 @@ The product $\tilde\nabla^{\natural}\tilde\nabla$ is the central scalar $\Box=\p
 **The expansion.** Write $\tilde\Xi_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then
 
 $$
-\tilde\nabla\tilde\Xi_{\mathrm{sp}}=\frac{1}{\hbar}\left(\frac{\partial_{t}S_{\tilde\Xi}}{c}e_{t}+i\nabla S_{\tilde\Xi}\right)\tilde\Xi_{\mathrm{sp}}+\mathcal{O}(\epsilon),
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp}}=\frac{1}{\hbar}\left(\frac{\partial_{t}S_{\tilde\Xi}}{c}e_{t}+i\nabla S_{\tilde\Xi}\right)\tilde\Xi_{\mathrm{sp}}+\mathcal{O}(\epsilon),
 $$
 
 so the gradient acts, to leading order, as multiplication by $i\tilde K_{\Phi}$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ the element of *The Three Wavenumbers of a Particle*. Its $e_{t}$ entry is real and its vector part imaginary, as the display shows. The limit is the statement that this term dominates.

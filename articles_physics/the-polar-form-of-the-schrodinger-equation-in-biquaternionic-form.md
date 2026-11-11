@@ -7,7 +7,7 @@ The Schrödinger equation of this corpus is one element of $\mathbb{B}$ acting o
 $$
 i\hbar\,\frac{\partial}{\partial t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\,\tilde\Xi_{\mathrm{sp}},
 \qquad
-\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi},
+\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi},
 $$
 
 and states what the equation does not need: no column, no minimal left ideal, no projector, no idempotent, no declared axis, no matrix array in the body of the equation. The field is one element, the operator is one element, and the multiplication is the algebra's own.
@@ -67,7 +67,7 @@ $$
 
 so the symbol is Hermitian for the sesquilinear form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$, and the flow preserves $\mathrm{Sc}(\tilde X\tilde X^{*})$. Both facts were checked on a hundred random pairs.
 
-**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $\mathrm{Tr}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4r_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
+**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $\mathrm{Tr}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
 
 ### The word
 
@@ -111,20 +111,20 @@ The parent's solution is
 
 $$
 \tilde Q(t')=\exp\Bigl(-i\frac{\tilde H_\Psi t'}{\hbar}\Bigr)
-=\exp\Bigl(-i\frac{r_t t'}{\hbar}\Bigr)\Bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\Bigr),
+=\exp\Bigl(-i\frac{h_t t'}{\hbar}\Bigr)\Bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\Bigr),
 \qquad
-\theta=\frac{|\vec r_\Psi|\,t'}{\hbar},
+\theta=\frac{|\vec h_\Psi|\,t'}{\hbar},
 $$
 
-where $\vec u_\Psi=\vec r_\Psi/|\vec r_\Psi|$ when $\vec r_\Psi\neq0$, and the constant is $\hbar$ alone because the variable is the time $t'$ and not the material length $r'_t=c\,t'$. Its word was computed in a hundred random cases:
+where $\vec u_\Psi=\vec h_\Psi/|\vec h_\Psi|$ when $\vec h_\Psi\neq0$, and the constant is $\hbar$ alone because the variable is the time $t'$ and not the material length $r'_t=c\,t'$. Its word was computed in a hundred random cases:
 
 $$
-\boxed{\;\tilde Q(t')=e^{i\alpha_Q}\tilde u_Q,\qquad r_Q=1,\qquad \tilde U_{\Psi,\mathrm b,Q}=e_t,\qquad \alpha_Q=-\frac{r_t t'}{\hbar},\qquad \theta_{\mathrm r,Q}=\frac{2|\vec r_\Psi|t'}{\hbar},\;}
+\boxed{\;\tilde Q(t')=e^{i\alpha_Q}\tilde u_Q,\qquad r_Q=1,\qquad \tilde U_{\Psi,\mathrm b,Q}=e_t,\qquad \alpha_Q=-\frac{h_t t'}{\hbar},\qquad \theta_{\mathrm r,Q}=\frac{2|\vec h_\Psi|t'}{\hbar},\;}
 $$
 
 so the propagator's word has four of its eight parameters frozen, at every time and for every Hamiltonian. The scale is one and the boost is the identity for one reason: $\tilde Q\tilde Q^{*}=e_t$, because the two factors of the parent's closed form are a central phase and a real rotor and nothing else. The Hermitian part of the propagator is therefore trivial and its word has nothing to read from it. What remains is the central phase and the rotor, which is the parent's real unit quaternion with its half-angle made explicit.
 
-**The factor of two is the word's, not the parent's.** The parent writes $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ with $\theta=|\vec r_\Psi|t'/\hbar$. That quaternion is a rotation through $2\theta$ about $\vec u_\Psi$, so its rotor angle is $\theta_{\mathrm r}=2\theta=2|\vec r_\Psi|t'/\hbar$. No factor has been inserted: the same element is read once as a half-angle and once as an angle. The two readings agree to $10^{-6}$ in a hundred random cases.
+**The factor of two is the word's, not the parent's.** The parent writes $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ with $\theta=|\vec h_\Psi|t'/\hbar$. That quaternion is a rotation through $2\theta$ about $\vec u_\Psi$, so its rotor angle is $\theta_{\mathrm r}=2\theta=2|\vec h_\Psi|t'/\hbar$. No factor has been inserted: the same element is read once as a half-angle and once as an angle. The two readings agree to $10^{-6}$ in a hundred random cases.
 
 ### The field's scale and rapidity are constants
 
@@ -150,7 +150,7 @@ and $\tilde u_Q\vec u_{\mathrm b}\tilde u_Q^{\natural}$ is $\vec u_{\mathrm b}$ 
 **The rapidity is a constant of the motion, and the boost is not.** $\theta_{\mathrm{rpd}}(t')=\theta_{\mathrm{rpd}}(0)$, to $10^{-14}$, because conjugation preserves the $e_t$ coefficient. The axis does not stay, because it is a vector and the rotor turns vectors:
 
 $$
-\frac{d\vec u_{\mathrm b}}{dt'}=\frac{2}{\hbar}\,\vec r_\Psi\times\vec u_{\mathrm b},
+\frac{d\vec u_{\mathrm b}}{dt'}=\frac{2}{\hbar}\,\vec h_\Psi\times\vec u_{\mathrm b},
 $$
 
 checked against a finite difference to $10^{-5}$. The boost axis runs at the gap, the rate at which every carried direction runs, so the boost of the field's word is not a constant of the motion: its rapidity is an invariant and its axis is a frame datum.
@@ -161,12 +161,12 @@ checked against a finite difference to $10^{-5}$. The boost axis runs at the gap
 
 ### The two rates
 
-The eigenvalues of the symbol are the two numbers $r_t-|\vec r_\Psi|$ and $r_t+|\vec r_\Psi|$, each twice, and both statements below are readings of the word against them.
+The eigenvalues of the symbol are the two numbers $h_t-|\vec h_\Psi|$ and $h_t+|\vec h_\Psi|$, each twice, and both statements below are readings of the word against them.
 
 **The phase runs at the mean.** Differentiating $\alpha+\alpha_Q$ gives
 
 $$
-\frac{d\alpha}{dt'}=-\frac{r_t}{\hbar},
+\frac{d\alpha}{dt'}=-\frac{h_t}{\hbar},
 $$
 
 checked to $10^{-5}$ in a hundred random cases. The central phase of the field advances at minus the mean of the two eigenvalues.
@@ -174,26 +174,26 @@ checked to $10^{-5}$ in a hundred random cases. The central phase of the field a
 **Every carried direction runs at the gap.** Differentiating $\hat s(t')=\tilde u_Q\hat s(0)\tilde u_Q^{\natural}$ gives
 
 $$
-\frac{d\hat s}{dt'}=\frac{2}{\hbar}\,\vec r_\Psi\times\hat s,
+\frac{d\hat s}{dt'}=\frac{2}{\hbar}\,\vec h_\Psi\times\hat s,
 $$
 
-checked to $2\times10^{-2}$ relative in a hundred random cases. The angular velocity is $2|\vec r_\Psi|/\hbar$, which is the gap between the eigenvalues and not half of it, because a direction turns at twice the half-angle. In the word's own parameter the half-angle runs at half the gap: $d\theta_{\mathrm r}/dt'=2|\vec r_\Psi|/\hbar$ for the rotor angle, that is $|\vec r_\Psi|/\hbar$ for its half. The boost's axis is one more direction carried in this way, and its precession obeys the same law (§*The field's scale and rapidity are constants*).
+checked to $2\times10^{-2}$ relative in a hundred random cases. The angular velocity is $2|\vec h_\Psi|/\hbar$, which is the gap between the eigenvalues and not half of it, because a direction turns at twice the half-angle. In the word's own parameter the half-angle runs at half the gap: $d\theta_{\mathrm r}/dt'=2|\vec h_\Psi|/\hbar$ for the rotor angle, that is $|\vec h_\Psi|/\hbar$ for its half. The boost's axis is one more direction carried in this way, and its precession obeys the same law (§*The field's scale and rapidity are constants*).
 
 **The two rates are therefore the mean and the half-gap, and there are no others.** The Hamiltonian supplies two numbers, the mean and the gap, and the word has exactly two frequencies to spend them on: the central phase runs at the mean, and the rotor's angle at the gap with its half-angle at half the gap. What remains in the word adds no third frequency. The scale and the rapidity are frozen, and the two axes are not frozen but carried: the rotor's axis and the boost's axis precess at the gap, which is the rate the rotor already has.
 
 ### The half turn
 
-At the time $\theta=\pi$, that is $|\vec r_\Psi|t'=\pi\hbar$, the propagator's rotor is $-e_t$ and
+At the time $\theta=\pi$, that is $|\vec h_\Psi|t'=\pi\hbar$, the propagator's rotor is $-e_t$ and
 
 $$
-\tilde\Xi(t')=-\exp\Bigl(-i\frac{r_t t'}{\hbar}\Bigr)\tilde\Xi(0),
+\tilde\Xi(t')=-\exp\Bigl(-i\frac{h_t t'}{\hbar}\Bigr)\tilde\Xi(0),
 $$
 
-checked to $10^{-6}$ in a hundred random cases. The field returns to minus itself up to the central phase: the sign is the rotor's and the phase is the centre's. This is the one place where the two rates separate by inspection, because the phase has advanced by $r_t\pi/|\vec r_\Psi|$ while the rotor has advanced by exactly a half turn.
+checked to $10^{-6}$ in a hundred random cases. The field returns to minus itself up to the central phase: the sign is the rotor's and the phase is the centre's. This is the one place where the two rates separate by inspection, because the phase has advanced by $h_t\pi/|\vec h_\Psi|$ while the rotor has advanced by exactly a half turn.
 
 ### What the word of the propagator does not say
 
-**It does not say that the flow is periodic.** The flow is periodic only when $r_t/|\vec r_\Psi|$ is rational; otherwise the two rates are incommensurable and the word never repeats. The parent's closed form says the same thing less plainly.
+**It does not say that the flow is periodic.** The flow is periodic only when $h_t/|\vec h_\Psi|$ is rational; otherwise the two rates are incommensurable and the word never repeats. The parent's closed form says the same thing less plainly.
 
 **It does not fix the field's rotor.** The propagator's word is the same for every initial field. What the field's own rotor is, is read from the field, and the flow multiplies it on the left.
 
@@ -209,7 +209,7 @@ $$
 
 the sign of the rotor carrying the half-turn branch of the angle. A central field's word is therefore a scale, a phase and a sign, and three of the four factors have collapsed. This is exactly Madelung's pair, with $A=r$ and $S=\hbar\alpha$.
 
-**The central class is not invariant under a general Hamiltonian.** If $\vec r_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
+**The central class is not invariant under a general Hamiltonian.** If $\vec h_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
 
 **No gauge defect is left over.** The field has eight real components, the word has eight real parameters, and the equation is first order in time with one complex equation per coefficient, that is eight real equations. The word is therefore exactly determined by the field, with no free function: there is no gauge to fix and no sector to choose. The four parameters that Madelung's form does not show are the boost's three and the rotor's angle, and they are not dropped by a choice; they are zero because the field is central.
 
@@ -275,7 +275,7 @@ The Dirac and Klein–Gordon companions end with a mass-shell condition: the wor
 
 **1. The meaning of a fixed rapidity on a turning axis.** The rapidity of the field's word is a constant of the motion and its axis precesses at the gap; in the central case the boost is the identity and there is no axis at all. What physical reading the pair has for a non-central field — a velocity, a strain, or nothing — is not settled here, and the precession belongs to the question rather than beside it: a rapidity that holds while its axis turns is not yet a velocity, because nothing in the equation selects the axis.
 
-**2. The non-Hermitian generator.** If $r_t$ acquires an imaginary part the scale leaves $1$ and the word reads decay, $r(t')=\exp(\gamma t')$; if $\vec r_\Psi$ acquires a real part the boost leaves the identity. Both were checked. Whether either is the right description of a decaying system is open, and it is the natural place for the word to earn its keep.
+**2. The non-Hermitian generator.** If $h_t$ acquires an imaginary part the scale leaves $1$ and the word reads decay, $r(t')=\exp(\gamma t')$; if $\vec h_\Psi$ acquires a real part the boost leaves the identity. Both were checked. Whether either is the right description of a decaying system is open, and it is the natural place for the word to earn its keep.
 
 **3. The relativistic limit.** Whether this equation, with its frozen rapidity and its absent mass shell, is the non-relativistic limit of the biquaternion Dirac equation is not checked here. The companions' mass shells are the natural comparison.
 
@@ -285,7 +285,7 @@ The Dirac and Klein–Gordon companions end with a mass-shell condition: the wor
 
 The Schrödinger equation is one element of $\mathbb{B}$ acting on another by left multiplication, and the polar word of the second element is substituted into it. The word exists exactly on the units of the algebra, which is the complement of the zero-divisor cone; a generic field is a unit and the flow preserves the cone, so the word exists for all time or for none.
 
-The propagator's word is a central phase times a rotor, with scale $1$ and boost $e_t$ frozen: four of the eight parameters cannot move. The field's own scale and rapidity are constants of the motion, and they are the only two: the phase and the rotor's angle run, the rotor's axis and the boost's axis precess at the gap, and the flow moves six of the eight parameters. The phase runs at minus the mean of the Hamiltonian's two eigenvalues and the rotor's half-angle at half their gap; a direction the field carries runs at the gap, $d\hat s/dt'=2\vec r_\Psi\times\hat s/\hbar$.
+The propagator's word is a central phase times a rotor, with scale $1$ and boost $e_t$ frozen: four of the eight parameters cannot move. The field's own scale and rapidity are constants of the motion, and they are the only two: the phase and the rotor's angle run, the rotor's axis and the boost's axis precess at the gap, and the flow moves six of the eight parameters. The phase runs at minus the mean of the Hamiltonian's two eigenvalues and the rotor's half-angle at half their gap; a direction the field carries runs at the gap, $d\hat s/dt'=2\vec h_\Psi\times\hat s/\hbar$.
 
 The two norms read different factors: the quaternionic norm is $r^{2}e^{2i\alpha}$ and reads the scale and the phase, and the Hermitian norm is $2r^{2}\cosh\theta_{\mathrm{rpd},w}$ and reads the scale and the boost. Neither reads the rotor.
 
@@ -299,9 +299,9 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Xi_{\mathrm{sp}}$ | The field: one element of $\mathbb{B}$ |
-| $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian Hamiltonian |
-| $r_t,\ \vec r_\Psi$ | Its scalar part and its vector part |
-| $\vec u_\Psi=\vec r_\Psi/\lvert\vec r_\Psi\rvert$ | Its axis, when $\vec r_\Psi\neq0$ |
+| $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian |
+| $h_t,\ \vec h_\Psi$ | Its scalar part and its vector part |
+| $\vec u_\Psi=\vec h_\Psi/\lvert\vec h_\Psi\rvert$ | Its axis, when $\vec h_\Psi\neq0$ |
 | $N(\tilde\Xi)$ | Determinant; the word exists iff $N\neq0$ |
 | $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm |
 | $\natural,\ *$ | Quaternion conjugation, Hermitian conjugation |
@@ -312,7 +312,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm r},\ \vec u_{\mathrm r}$ | Angle and axis of the rotor |
 | $\tilde Q(t')=\exp(-i\tilde H_\Psi t'/\hbar)=e^{i\alpha_Q}\tilde u_Q$ | The propagator and its word |
-| $\theta=\lvert\vec r_\Psi\rvert t'/\hbar$ | The parent's angle; the rotor's half-angle |
+| $\theta=\lvert\vec h_\Psi\rvert t'/\hbar$ | The parent's angle; the rotor's half-angle |
 | $\tilde u_Q=\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ | The propagator's rotor |
 | $\rho=\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ | Density (Hermitian norm) |
 | $Q=-\hbar^{2}\Delta_\Phi A/(2mA)$ | Quantum potential |

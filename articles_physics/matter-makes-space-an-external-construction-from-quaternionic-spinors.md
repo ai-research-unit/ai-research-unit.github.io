@@ -185,14 +185,14 @@ and declares it zero "by orthogonality". Orthogonality does not deliver that: a 
 
 The kinetic term of that action is one Dirac operator, the corpus's Dirac equation is another, and the two are not the same operator written twice, so they are displayed separately. The source's operator, written as the action it is, is
 $$
-\tilde{Ξ}_{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}-i\sum_\eta C_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}
-=-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r_t}\vec e_x+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}\vec e_y ,
+\tilde{Ξ}_{\mathrm{sp}}\longmapsto iC^0\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial h_t}-i\sum_\eta C_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}
+=-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial h_t}\vec e_x+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\eta}\vec e_y ,
 $$
 where $C^a=g^{ab}C_b$, so that $C^\eta=-C_\eta$, and the unit $i$ of the operator cancels the unit of the action once in each term. It is **two-sided**: the time derivative acts by right multiplication alone, because the left multiplier of $C_t$ is the identity of the algebra, the three spatial derivatives act by a left and a right multiplication, and the mass acts by left multiplication. Its square is minus the flat d'Alembertian of $g$, because the four actions anticommute on distinct indices and square to $\pm1$,
 $$
 \bigl(iC^a\frac{\partial}{\partial x_a}\bigr)^2
 =-\varepsilon_\mu\frac{\partial^2}{\partial x_\mu^2}
-=-\partial^2/\partial r_t^2+\Delta ,
+=-\partial^2/\partial h_t^2+\Delta ,
 \qquad
 \Delta=\sum_\eta\partial^2/\partial x_\eta^2 ,
 $$
@@ -333,7 +333,7 @@ The implication does not hold, and the failure is an index count. The divergence
 $$
 \partial^\mu J_{S\mu}=\alpha\,\epsilon_{\mu\nu\rho\sigma}\,\partial^\mu T_{\nu\rho\sigma} ,
 $$
-and the epsilon needs four distinct indices, so the contraction keeps only the part of the gradient that is antisymmetric in all four — contracting the antisymmetrised gradient, which in four dimensions has the single independent component $\frac{\partial T_{123]}}{\partial x_{[0}}$. Hence the divergence is $4!\,\alpha\,\frac{\partial T_{123]}}{\partial x_{[0}}$, verified numerically on random fields, and it vanishes only when that component does — that is, only when the three-form part of $T$ is closed — while $\Box T=0$ neither requires nor supplies closedness: the wave equation constrains the four components one at a time and says nothing about the antisymmetrised gradient. An explicit counterexample settles it: the field $T_{123}(x)=x_0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu}=0$ identically, while — taking $\epsilon_{0123}=+1$, so that $\partial^0=\partial/\partial r_t$ —
+and the epsilon needs four distinct indices, so the contraction keeps only the part of the gradient that is antisymmetric in all four — contracting the antisymmetrised gradient, which in four dimensions has the single independent component $\frac{\partial T_{123]}}{\partial x_{[0}}$. Hence the divergence is $4!\,\alpha\,\frac{\partial T_{123]}}{\partial x_{[0}}$, verified numerically on random fields, and it vanishes only when that component does — that is, only when the three-form part of $T$ is closed — while $\Box T=0$ neither requires nor supplies closedness: the wave equation constrains the four components one at a time and says nothing about the antisymmetrised gradient. An explicit counterexample settles it: the field $T_{123}(x)=x_0$, all other components zero, satisfies $\Box T_{\lambda\mu\nu}=0$ identically, while — taking $\epsilon_{0123}=+1$, so that $\partial^0=\partial/\partial h_t$ —
 $$
 J_{S0}=\alpha\,\epsilon_{0123}\,T_{123}=\alpha\,x_0,
 \qquad

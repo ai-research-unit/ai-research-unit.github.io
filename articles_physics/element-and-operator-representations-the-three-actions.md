@@ -51,15 +51,17 @@ The count of the parameters is the same in every picture: four complex coefficie
 The four-vector picture is the one that carries the dictionary. The four complex coefficients are not four independent physical coordinates: each coefficient holds one material and one informational coordinate. In the conventions of the corpus,
 
 $$
-Q_t = r_t + i r'_t, \qquad Q_x = r_x + i r'_{x}, \qquad Q_y = r_y + i r'_{y}, \qquad Q_z = r_z + i r'_{z}.
+Q_t = q_t + i q'_t, \qquad Q_x = q_x + i q'_{x}, \qquad Q_y = q_y + i q'_{y}, \qquad Q_z = q_z + i q'_{z},
 $$
+
+with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=r_\eta$ and $q'_{\eta}=h'_{\eta}$: the $q$ letters are the coefficient alphabet, and the sector letters name the same four numbers.
 
 The real part of the scalar coefficient is the informational time and the imaginary part is the material time; each vector coefficient carries one material and one informational spatial coordinate.
 
 | Sector | Condition on the coefficients | Four-vector | Physical object |
 | --- | --- | --- | --- |
 | Material $\mathbb{B}_{\Phi}$ | $Q_t$ purely imaginary, $Q_\eta$ real | $(i r'_t, r_x, r_y, r_z)$ | four-position, four-momentum, four-velocity |
-| Informational $\mathbb{B}_{\Psi}$ | $Q_t$ real, $Q_\eta$ purely imaginary | $(c t, i r'_{x}, i r'_{y}, i r'_{z})$ | state, observable, field strength |
+| Informational $\mathbb{B}_{\Psi}$ | $Q_t$ real, $Q_\eta$ purely imaginary | $(c t, i h'_{x}, i h'_{y}, i h'_{z})$ | state, observable, field strength |
 | Real quaternion $\mathbb{B}_{H}$ | all four coefficients real | $(q_t, q_x, q_y, q_z)$ | rotor, scale, ordinary quaternion |
 
 The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{B}_{\Phi}$ and to its negative on $\mathbb{B}_{\Psi}$.

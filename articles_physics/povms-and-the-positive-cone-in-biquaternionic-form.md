@@ -19,32 +19,32 @@ The cone is self-dual with respect to the Hermitian form (the trace pairing in t
 
 ### Positivity as the biquaternion norm
 
-Let $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ be a general Hermitian element, with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$. Its matrix image is $r_t\,I_2 + \vec r_\Psi\cdot\boldsymbol{\sigma}$, whose eigenvalues are $r_t\pm|\vec r_\Psi|$. Hence
+Let $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ be a general Hermitian element, with $h_t\in\mathbb{R}$ and $\vec h_\Psi\in\mathbb{R}^3$. Its matrix image is $h_t\,I_2 + \vec h_\Psi\cdot\boldsymbol{\sigma}$, whose eigenvalues are $h_t\pm|\vec h_\Psi|$. Hence
 
 $$
-\tilde H_\Psi\geq0 \quad\Longleftrightarrow\quad r_t \geq |\vec r_\Psi| ,
+\tilde H_\Psi\geq0 \quad\Longleftrightarrow\quad h_t \geq |\vec h_\Psi| ,
 $$
 
 and the biquaternion norm is
 
 $$
-\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = r_t^2 - |\vec r_\Psi|^2 = \det M(\tilde H_\Psi),
+\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = h_t^2 - |\vec h_\Psi|^2 = \det M(\tilde H_\Psi),
 $$
 
-a real scalar. The two conditions $\langle\tilde H_\Psi\rangle_{\natural}\geq0$ and $r_t\geq0$ are together equivalent to $r_t\geq|\vec r_\Psi|$, so the set of positive elements is the future light cone of the biquaternion norm:
+a real scalar. The two conditions $\langle\tilde H_\Psi\rangle_{\natural}\geq0$ and $h_t\geq0$ are together equivalent to $h_t\geq|\vec h_\Psi|$, so the set of positive elements is the future light cone of the biquaternion norm:
 
 $$
-C_+ = \bigl\{r_t\,e_t + i\vec r_\Psi\in\mathbb{B}_{\Psi} : r_t \geq |\vec r_\Psi|\bigr\} .
+C_+ = \bigl\{h_t\,e_t + i\vec h_\Psi\in\mathbb{B}_{\Psi} : h_t \geq |\vec h_\Psi|\bigr\} .
 $$
 
-This is the **positive cone** of the algebra. Its boundary $r_t = |\vec r_\Psi|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $r_t>|\vec r_\Psi|$ is the set of positive definite elements.
+This is the **positive cone** of the algebra. Its boundary $h_t = |\vec h_\Psi|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_t>|\vec h_\Psi|$ is the set of positive definite elements.
 
 ### The cone is self-dual
 
 The Hermitian form on $\mathbb{B}_{\Psi}$ is
 
 $$
-\langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*} = \mathrm{Sc}(\tilde H_\Psi\tilde{E}_{\Psi}^{*}) = r_t\,a_t + \vec r_\Psi\cdot\vec a,
+\langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*} = \mathrm{Sc}(\tilde H_\Psi\tilde{E}_{\Psi}^{*}) = h_t\,a_t + \vec h_\Psi\cdot\vec a,
 $$
 
 where $\tilde{E}_{\Psi} = a_te_t + i\vec a$; its $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}^{*}) = 2\langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*}$. Direct computation of the Hermitian form on the Hermitian basis gives
@@ -59,7 +59,7 @@ $$
 C_+^{*} = \bigl\{\tilde H_\Psi : \langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*}=\mathrm{Sc}(\tilde H_\Psi\tilde{E}_{\Psi}^{*})\geq0 \ \text{ for all } \tilde{E}_{\Psi}\in C_+\bigr\},
 $$
 
-and it coincides with $C_+$. To see this, if $r_t\geq|\vec r_\Psi|$ then $r_t\,a_t+\vec r_\Psi\cdot\vec a\geq r_t\,a_t-|\vec r_\Psi|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $r_t<|\vec r_\Psi|$, take $\tilde{E}_{\Psi}$ on the boundary with $\vec a = -\lambda\,\vec u_\Psi$ and $a_t = \lambda$; then $r_t\,a_t+\vec r_\Psi\cdot\vec a = \lambda(r_t-|\vec r_\Psi|)<0$ for $\lambda>0$, so $\tilde H_\Psi\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the Hermitian form.**
+and it coincides with $C_+$. To see this, if $h_t\geq|\vec h_\Psi|$ then $h_t\,a_t+\vec h_\Psi\cdot\vec a\geq h_t\,a_t-|\vec h_\Psi|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_t<|\vec h_\Psi|$, take $\tilde{E}_{\Psi}$ on the boundary with $\vec a = -\lambda\,\vec u_\Psi$ and $a_t = \lambda$; then $h_t\,a_t+\vec h_\Psi\cdot\vec a = \lambda(h_t-|\vec h_\Psi|)<0$ for $\lambda>0$, so $\tilde H_\Psi\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the Hermitian form.**
 
 The self-duality is what makes the Hermitian form the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \langle\tilde{Ϛ}_{\Psi},\tilde{E}_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.
 
@@ -280,7 +280,7 @@ $$
 \tilde{E}_{\Psi} = a_te_t+i\vec a\geq0 \quad\Longleftrightarrow\quad a_t\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}_{\Psi}\rangle_{\natural} = a_t^2-|\vec a|^2\geq0,\ a_t\geq0,
 $$
 
-and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_\Psi,\tilde E_{\Psi}\rangle_{*} = 2(r_t\,a_t+\vec r_\Psi\cdot\vec a)$, whose trace reading is $\operatorname{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}^{*})$. An effect is an element of the operator interval $0\leq\tilde{E}_{\Psi}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_{\Psi}_y\}$ with $\tilde{E}_{\Psi}_y\geq0$ and $\sum_y\tilde{E}_{\Psi}_y = e_t$; the outcome probabilities are the normalised Hermitian form, $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $p_y = \operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised Hermitian form on the effect body, whose trace reading is the final step at normalisation.
+and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_\Psi,\tilde E_{\Psi}\rangle_{*} = 2(h_t\,a_t+\vec h_\Psi\cdot\vec a)$, whose trace reading is $\operatorname{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}^{*})$. An effect is an element of the operator interval $0\leq\tilde{E}_{\Psi}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_{\Psi}_y\}$ with $\tilde{E}_{\Psi}_y\geq0$ and $\sum_y\tilde{E}_{\Psi}_y = e_t$; the outcome probabilities are the normalised Hermitian form, $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $p_y = \operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised Hermitian form on the effect body, whose trace reading is the final step at normalisation.
 
 ## Summary of Notation
 
@@ -291,9 +291,9 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $C_+ = \{r_t\,e_t+i\vec r_\Psi: r_t\ge\lvert\vec r_\Psi\rvert\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
+| $C_+ = \{h_t\,e_t+i\vec h_\Psi: h_t\ge\lvert\vec h_\Psi\rvert\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
 | $C_+^{*} = C_+$ | Self-duality under the Hermitian form |
-| $\mathrm{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}) = 2(r_t\,a_t+\vec r_\Psi\cdot\vec a)$ | Trace reading of the Hermitian form |
+| $\mathrm{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}) = 2(h_t\,a_t+\vec h_\Psi\cdot\vec a)$ | Trace reading of the Hermitian form |
 | $0\le\tilde{E}_{\Psi}\le e_t$ | Effect (operator interval) |
 | $\lvert\vec a\rvert\le\min(a_t,1-a_t)$ | Effect condition in coefficients |
 | $\mathrm{ext}[0,e_t] = \{\text{idempotents}\}$ | Extreme effects |

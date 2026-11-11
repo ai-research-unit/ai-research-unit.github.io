@@ -324,7 +324,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $Z[J]$ | Generating functional; $\tilde{J}_{\Phi}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box-k_m^{2})G=-\delta^{(4)}$ and $(-\Delta_E+k_m^{2})G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

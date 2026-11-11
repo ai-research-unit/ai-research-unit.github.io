@@ -310,7 +310,7 @@ For a general quaternion-valued $b$ the two products do not combine and the subs
 Faddeev's decomposition is to write the wave vector as $\vec k_\Phi=\eta+t\gamma$ with $\gamma\in S^2$ a direction, $\eta\cdot\gamma=0$, and to conjugate by the plane wave along $\gamma$. Applied to $\exp(it\gamma\cdot x)w(x)$ the Helmholtz operator gives
 
 $$
-(\Delta+k_\Phi^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-r_t^2+k_\Phi^2+2it\gamma\cdot\nabla+\Delta\bigr)w ,
+(\Delta+k_\Phi^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-h_t^2+k_\Phi^2+2it\gamma\cdot\nabla+\Delta\bigr)w ,
 $$
 
 so the operator to invert is $-\Delta-2it\gamma\cdot\nabla-\lambda^2$ with

@@ -108,10 +108,10 @@ $$
 Both sides are polynomials with constant coefficients, so the identity is also an identity of operators: $\mathcal{P}=2k_m\,\mathcal{S}+\mathcal{R}$, where $\mathcal{S}$ has symbol $\sigma_{\mathrm{s}}$ and $\mathcal{R}$ has symbol $k_{\mathrm{s}}^{2}$. In position space,
 
 $$
-\mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r_{t}^{\prime}}-k_m+\frac{1}{2k_m}\Delta ,
+\mathcal{S}=\frac{1}{i}\frac{\partial}{\partial h_t^{\prime}}-k_m+\frac{1}{2k_m}\Delta ,
 $$
 
-with $\Delta=\vec\nabla^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-ik_mr_{t}^{\prime}}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
+with $\Delta=\vec\nabla^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-ik_mh_t^{\prime}}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
 
 **The dropped term is one named quantity, and its size is exact.** The residue is $k_{\mathrm{s}}^{2}$ and nothing else. Its size relative to the retained linear term is
 
@@ -161,7 +161,7 @@ whenever the momentum is non-zero. The symbol therefore does not come from a lin
 
 ### The operator's two orders
 
-**The degree in the energy is the order in time, and the degree in the momentum is the order in space.** The substitution $\partial/\partial r_{t}^{\prime}\to i k_{t}^{\prime}$ carries degree one in the energy to one derivative in $r_{t}^{\prime}$, and $\partial/\partial x_j\to ik_j$ carries degree two in the momentum to two derivatives. So a symbol with degrees one and two is the symbol of an operator with one time derivative and two space derivatives, and conversely. Applying the substitution to $\sigma_{\mathrm{s}}$ gives $\mathcal{S}$ above.
+**The degree in the energy is the order in time, and the degree in the momentum is the order in space.** The substitution $\partial/\partial h_t^{\prime}\to i k_{t}^{\prime}$ carries degree one in the energy to one derivative in $h_t^{\prime}$, and $\partial/\partial x_j\to ik_j$ carries degree two in the momentum to two derivatives. So a symbol with degrees one and two is the symbol of an operator with one time derivative and two space derivatives, and conversely. Applying the substitution to $\sigma_{\mathrm{s}}$ gives $\mathcal{S}$ above.
 
 **The asymmetry of the equation is therefore not a convention.** The Schrödinger equation is first order in $t$ and second in $x$ because its symbol has one homogeneous piece of degree one and one of degree two. Any equation whose symbol has that shape is first order in one variable and second in the others, and no equation whose symbol is homogeneous of a single degree can have the asymmetry. **This is the sense in which the Galilean limit is a statement about shape rather than about size.**
 
@@ -205,7 +205,7 @@ $$
 \sigma=c\Bigl(k_{\mathrm{s}}-\frac{k_{\Phi}^{2}}{2k_m}\Bigr)+d=c\,\sigma_{\mathrm{s}}+d,
 $$
 
-a two-parameter family: the scale $c$ and the additive constant $d$. The constant is not an accident of the ansatz and not a gap in the argument. **A constant added to a symbol is a constant potential**, and a constant potential is Galilei-invariant exactly: the boost multiplies the wave function by the phase $e^{i(m\vec v_b\cdot\vec r-\frac{1}{2}m\lvert\vec v_b\rvert^{2}r_{t})}$, and the cross terms it brings to $i\partial_{r_t}$ and to $-\nabla^{2}/(2k_m)$ cancel against it. The free constant of the symbol and the phase of the boost are the same freedom, seen from the two sides.
+a two-parameter family: the scale $c$ and the additive constant $d$. The constant is not an accident of the ansatz and not a gap in the argument. **A constant added to a symbol is a constant potential**, and a constant potential is Galilei-invariant exactly: the boost multiplies the wave function by the phase $e^{i(m\vec v_b\cdot\vec r-\frac{1}{2}m\lvert\vec v_b\rvert^{2}h_t)}$, and the cross terms it brings to $i\partial_{h_t}$ and to $-\nabla^{2}/(2k_m)$ cancel against it. The free constant of the symbol and the phase of the boost are the same freedom, seen from the two sides.
 
 **Modulo that freedom the symbol is unique up to scale, and the affineness is forced.** Fixing the zero of the energy so that $d=0$, which is what the rest clock does, leaves the one-dimensional line spanned by $\sigma_{\mathrm{s}}$. Setting $c=0$ leaves only constants, and a constant symbol has no dispersion relation at all: its zero set is empty or the whole space. **So there is no Galilei-invariant symbol of degree one in the wave numbers other than the zero symbol, and every invariant shape of these degrees is affine. Affineness is not a choice among invariant shapes, and it is not merely one member of the family: the family is affine as a whole.**
 
@@ -219,7 +219,7 @@ a two-parameter family: the scale $c$ and the additive constant $d$. The constan
 
 ### One integer, three names
 
-**Order in the energy, sheets of the zero set, initial data: one number.** A polynomial in $k_{\mathrm{s}}$ of degree $n$ has $n$ roots, so its zero set has $n$ sheets over the momentum; and a constant-coefficient equation that is order $n$ in $\partial/\partial r_{t}^{\prime}$ needs $n$ data at $r_{t}^{\prime}=0$. For $\sigma_{\mathcal{P}}$ the degree is two and all three counts are two. For $\sigma_{\mathrm{s}}$ the degree is one and all three are one. **The three counts cannot disagree, because they are one count.**
+**Order in the energy, sheets of the zero set, initial data: one number.** A polynomial in $k_{\mathrm{s}}$ of degree $n$ has $n$ roots, so its zero set has $n$ sheets over the momentum; and a constant-coefficient equation that is order $n$ in $\partial/\partial h_t^{\prime}$ needs $n$ data at $h_t^{\prime}=0$. For $\sigma_{\mathcal{P}}$ the degree is two and all three counts are two. For $\sigma_{\mathrm{s}}$ the degree is one and all three are one. **The three counts cannot disagree, because they are one count.**
 
 **The relativistic case, in the affine variable.** The exact roots are
 
@@ -237,7 +237,7 @@ so the two sheets are separated by $2\sqrt{k_m^{2}+k_{\Phi}^{2}}$, which tends t
 
 ### The datum that disappears
 
-**A second-order equation in time needs a value and a derivative; a first-order one needs a value.** This is the third face of the same integer, and it is the one that carries the physics. In the relativistic theory the two data at $r_{t}^{\prime}=0$ are the field and its time derivative, and the two sheets are the two independent ways of choosing them. In the Schrödinger theory there is one datum, the envelope, and one sheet.
+**A second-order equation in time needs a value and a derivative; a first-order one needs a value.** This is the third face of the same integer, and it is the one that carries the physics. In the relativistic theory the two data at $h_t^{\prime}=0$ are the field and its time derivative, and the two sheets are the two independent ways of choosing them. In the Schrödinger theory there is one datum, the envelope, and one sheet.
 
 **The missing datum is the negative-frequency amplitude.** It is not that the amplitude is set to zero by hand at the end; it is that the equation has no room for it, because the degree is one. A reader who asks where the antiparticle went should be told that the second initial datum went with it, and that the second datum exists only where the degree is two. **The count of initial data and the count of polarisations are both counts of independent amplitudes**, and the Galilean limit halves the first and replaces the second by a property of the module, as the next section shows.
 
@@ -278,9 +278,9 @@ $$
 \vec k_\Phi\cdot\vec J=k_mc\rho+k_{\mathrm{s}}c\rho .
 $$
 
-**The second term is not an offset in the condition; it is the rest frequency of the field the current belongs to.** $\rho$ and $\vec J$ are bilinear in the field, and a phase cancels between the two factors, so factoring the rest clock $e^{-ik_mr_{t}^{\prime}}$ out of the field leaves the current unchanged. A field written with the rest clock oscillates at $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and its condition is the line above; the same field written without it oscillates at $k_{\mathrm{s}}$ and its condition is $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$. **The two lines are one equation with one current, read at two frequencies.** The term $k_mc\rho$ appears only when the current of the unfactored field is paired with the frequency of the factored one, and that pairing is a mixing of conventions and not a physical term.
+**The second term is not an offset in the condition; it is the rest frequency of the field the current belongs to.** $\rho$ and $\vec J$ are bilinear in the field, and a phase cancels between the two factors, so factoring the rest clock $e^{-ik_mh_t^{\prime}}$ out of the field leaves the current unchanged. A field written with the rest clock oscillates at $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and its condition is the line above; the same field written without it oscillates at $k_{\mathrm{s}}$ and its condition is $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$. **The two lines are one equation with one current, read at two frequencies.** The term $k_mc\rho$ appears only when the current of the unfactored field is paired with the frequency of the factored one, and that pairing is a mixing of conventions and not a physical term.
 
-**The convention is the one the rest clock fixes: the phase is factored out of the field, so the density is $|\psi|^2$ of the factored field and the frequency written for it is $k_{\mathrm{s}}$.** Writing $\rho=e^{-ik_mr_{t}^{\prime}}\rho_{\mathrm{s}}$ instead, with the phase attached to the density and not to the field, would move the term to the other side with the opposite sign. **The sign is a convention; the identity of the two lines is not.**
+**The convention is the one the rest clock fixes: the phase is factored out of the field, so the density is $|\psi|^2$ of the factored field and the frequency written for it is $k_{\mathrm{s}}$.** Writing $\rho=e^{-ik_mh_t^{\prime}}\rho_{\mathrm{s}}$ instead, with the phase attached to the density and not to the field, would move the term to the other side with the opposite sign. **The sign is a convention; the identity of the two lines is not.**
 
 | Variable | The symbol | The condition $\mathrm{Sc}(\tilde K_\Phi^{\natural}\tilde J_\Phi)=0$ |
 |---|---|---|
@@ -334,7 +334,7 @@ The condition on the source is homogeneous in either variable, and the symbol is
 | Symbol | Meaning |
 |---|---|
 | $\sigma_{\mathcal{P}}$ | the symbol of $\Box-k_m^{2}$, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a complex number |
-| $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $r_{t}^{\prime}$, second in space |
+| $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $h_t^{\prime}$, second in space |
 | $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})/(\hbar c)$ |
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; affine |
 | $k_m$ | the mass wave number, $mc/\hbar$; the gap between the two sheets at zero momentum |

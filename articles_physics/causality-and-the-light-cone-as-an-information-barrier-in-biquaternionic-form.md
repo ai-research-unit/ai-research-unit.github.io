@@ -413,7 +413,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
 | $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; the interval on $\mathbb{B}_{\Phi}$ |
-| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{B}_{\Phi}$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $\langle\tilde{Q}_{qp}\rangle_{\natural}\le 0$ and $\Delta r'_t\ge 0$ |

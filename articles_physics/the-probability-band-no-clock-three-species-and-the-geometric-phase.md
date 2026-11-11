@@ -119,7 +119,7 @@ The neighbour that carries the interval makes the split the probability band can
 
 *Proof.* By the injectivity of the parameter map, $L_{\tilde Q^{\natural}}=L_{\tilde Q}$ is $\tilde Q^{\natural}=\tilde Q$, which is centrality; and $L_{\tilde Q^{\natural}}=-L_{\tilde Q}$ is $\tilde Q^{\natural}=-\tilde Q$, which is purity.
 
-The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $i r'_t$ and $r_t$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
+The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $i r'_t$ and $h_t$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
 
 **The interpretation.** The causality band's operator layer splits the interval into a central time plane and a pure spatial part: the self-adjoint parameter is time, the skew-adjoint parameter is space, and the bracket lives in the space. The probability band has no such split because its square is a modulus.
 

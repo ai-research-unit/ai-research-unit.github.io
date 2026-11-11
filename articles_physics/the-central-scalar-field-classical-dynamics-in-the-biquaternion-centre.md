@@ -226,7 +226,7 @@ which is exactly the inverse-square force of the central-force articles, with $\
 The force is central for an algebraic reason. The field $\tilde{Ξ}=\xi(r)e_t$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:
 
 $$
-\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\nabla E(r)=g_{\mathrm r_t}\,\nabla\xi(r)=g_{\mathrm r_t}\,\frac{d\xi}{dr}\,\vec u_r ,
+\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\nabla E(r)=g_{\mathrm h_t}\,\nabla\xi(r)=g_{\mathrm h_t}\,\frac{d\xi}{dr}\,\vec u_r ,
 $$
 
 a real vector parallel to the position, pointing inward because $\frac{d\xi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $E(r)e_t$ is a **central scalar**, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.
@@ -381,7 +381,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12(k_m)^{2}\xi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-r/\hbar/(mc))/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
-| $\vec F=-\nabla E=g_{\mathrm r_t}\,\nabla\xi=g_{\mathrm r_t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |
+| $\vec F=-\nabla E=g_{\mathrm h_t}\,\nabla\xi=g_{\mathrm h_t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |
 | $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla_\Phi\xi-\xi\tilde\nabla_\Phi\xi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

@@ -28,7 +28,7 @@ $$
 \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2+\Delta .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i r'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $\mathsf{T}_{00}$ carries a sign in the $i r'_t$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -73,7 +73,7 @@ $$
 \left(\Box-(k_m)^{2}\right)\tilde{Ξ} = 0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i r'_t$ and $Q_\eta=x_\eta$, the kinetic term of $\mathcal{L}_\xi$ written out is
+the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the kinetic term of $\mathcal{L}_\xi$ written out is
 
 $$
 \mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\nabla\xi)^2\right)-\tfrac12(k_m)^{2}\xi^2
@@ -143,7 +143,7 @@ $$
 \boxed{\ T_{\mu\nu} = \partial/\partial R_\mu\,\xi\,\partial/\partial R_\nu\,\xi + \delta_{\mu\nu}\mathcal{L}_\xi\ } ,
 $$
 
-the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i r'_t$ and $Q_\eta=x_\eta$, the time row carrying the minus of $i^2$,
+the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the time row carrying the minus of $i^2$,
 
 $$
 \boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\nabla\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,
@@ -247,7 +247,7 @@ $$
 T_{\mu\nu} = \sum_\beta\delta_{\nu\beta}\mathsf{T}_{\mu\beta} ,
 $$
 
-the definition being exact over the field algebra up to the factors the $i r'_t$ basis elements carry. In the coordinates of the framework, $Q_t=i r'_t$ and $Q_\eta=q_\eta$, so the four directions are the four $Q_\mu$, and the divergence is
+the definition being exact over the field algebra up to the factors the $i r'_t$ basis elements carry. In the coordinates of the framework, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so the four directions are the four $Q_\mu$, and the divergence is
 
 $$
 \sum_\mu\partial/\partial R_\mu T_{\mu\nu}
@@ -403,7 +403,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{j\eta}=-\sigma_{j\eta}$ | Mixed components |
 | $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{j\eta}=-\sigma_{j\eta}$ | Symmetric components; the time column is read in the real coordinate |
 | $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{\eta\eta}=0$ | Tracelessness |
-| $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $i r'_t$ coordinates $Q_t=i r'_t$ | Conservation with source per direction; Lorentz four-force |
+| $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $i r'_t$ coordinates $Q_t=i q'_t$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$ | Scalar stress–energy |
 | $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

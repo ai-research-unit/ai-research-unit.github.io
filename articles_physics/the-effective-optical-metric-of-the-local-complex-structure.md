@@ -12,7 +12,7 @@ That construction is announced as a **metric**, and the word invites a specific 
 
 This article takes up that separate question. The result is short and sharp: **in a static medium the framework's local metric is exactly the optical metric**, to machine precision and with no extra assumption, and the two independent boundaries — motion and anisotropy — show exactly where the framework's single scalar $c$ runs out. A third boundary is more interesting than either: when $\epsilon\mu$ changes sign the framework's metric changes signature, and that change is the Wick rotation of the local structure.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, and central $i$. The material sector is $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and its interval is $(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, whose one minus is the square of the $i$ in $Q_t=i r'_t$. Read in seconds, with $r'_t=c\,t'$, it is $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, and central $i$. The material sector is $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_{t}\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ and norm $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and its interval is $(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. Read in seconds, with $r'_t=c\,t'$, it is $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
 
 ## The Optical Metric of a Medium
 
@@ -24,7 +24,7 @@ g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+\left(1-\frac{1}{n^2}\right)v_\mu v_\nu 
 \qquad
 \sum_\mu v_\mu v_\mu=-1 .
 $$
-Here $\delta_{\mu\nu}=(1,1,1,1)$ is the unit metric on the four $Q_\mu$, and the metric is a quadratic form in those, $\sum_{\mu,\nu}g^{\mathrm J}_{\mu\nu}Q_\mu Q_\nu$; the intervals are written below in the real coordinates $(r'_t,r_x,r_y,r_z)$, with $Q_t=i r'_t$ and $c=c_0=1$ in this section. The light rays of the medium are the null geodesics of $g^{\mathrm{J}}$, and the medium's index and velocity are read off from the geometry. The two features that matter here are the **conformal factor** attached to the velocity direction and the **off-diagonal drag terms** produced when $v_i\neq0$.
+Here $\delta_{\mu\nu}=(1,1,1,1)$ is the unit metric on the four $Q_\mu$, and the metric is a quadratic form in those, $\sum_{\mu,\nu}g^{\mathrm J}_{\mu\nu}Q_\mu Q_\nu$; the intervals are written below in the real coordinates $(r'_t,r_x,r_y,r_z)$, with $Q_t=i q'_t$ and $c=c_0=1$ in this section. The light rays of the medium are the null geodesics of $g^{\mathrm{J}}$, and the medium's index and velocity are read off from the geometry. The two features that matter here are the **conformal factor** attached to the velocity direction and the **off-diagonal drag terms** produced when $v_i\neq0$.
 
 ### The static case
 
@@ -99,7 +99,7 @@ $$
 
 **What it adds.** The identification of the framework's local metric with Gordon's optical metric, exact in the static case; the interpretation of the null cone of the algebra as the optical-metric cone; and the three boundaries, of which the signature change is the substantive one, since it connects the medium's dielectric sign to the framework's own Euclidean continuation.
 
-**What it does not add.** No new prediction: the optical metric is standard, and the framework's contribution is a repackaging of it in which the conformal factor is the algebra's own scale. In particular the interpretation does not deliver gravity. For a **constant** medium the interval $-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, which in the clock time is $-c^2d{t'}^2+dr_x^2+dr_y^2+dr_z^2$, is the flat Minkowski interval in the complex time coordinate $Q_t=i r'_t$, so it carries no curvature; and for a varying one the framework's class of metrics is the class with flat spatial slices, which admits no non-flat vacuum geometry — no Weyl curvature, no gravitational waves, no black-hole exteriors (*Curved Spacetime and the Biquaternion Framework*). The optical metric is a *causal* structure, not a gravitational one, and this article claims no more.
+**What it does not add.** No new prediction: the optical metric is standard, and the framework's contribution is a repackaging of it in which the conformal factor is the algebra's own scale. In particular the interpretation does not deliver gravity. For a **constant** medium the interval $-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, which in the clock time is $-c^2d{t'}^2+dr_x^2+dr_y^2+dr_z^2$, is the flat Minkowski interval in the complex time coordinate $Q_t=i q'_t$, so it carries no curvature; and for a varying one the framework's class of metrics is the class with flat spatial slices, which admits no non-flat vacuum geometry — no Weyl curvature, no gravitational waves, no black-hole exteriors (*Curved Spacetime and the Biquaternion Framework*). The optical metric is a *causal* structure, not a gravitational one, and this article claims no more.
 
 ## Physical Readings
 
@@ -126,7 +126,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; null cone $N=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds |
 | $n=c_0/c$ | Refractive index |
-| $\delta_{\mu\nu}=(1,1,1,1)$, $Q_t=i r'_t$ | The one metric; the framework's interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
+| $\delta_{\mu\nu}=(1,1,1,1)$, $Q_t=i q'_t$ | The one metric; the framework's interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+(1-1/n^2)v_\mu v_\nu$, $\sum_\mu v_\mu v_\mu=-1$ | Gordon's optical metric |
 | $g^{\mathrm{J}}_{ti}$ | Drag terms; zero for a static medium, nonzero for a moving one |
 | $\epsilon(\omega)=\epsilon_0(1-\omega_p^2/\omega^2)$ | Ideal plasma permittivity; negative below $\omega_p$ |

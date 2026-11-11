@@ -70,7 +70,7 @@ $$
 
 and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_\eta^{2}\vec e_y^{2}=(-1)(-1)=+1$, and a pair anticommutes because one quaternion unit passes the other and $\vec e_y$ passes $\vec e_y$.
 
-**The operator.** With $x_0=r'_t$ and $x_\eta$ the three spatial coordinates, and with $Q_t=ix_0$, $Q_\eta=x_\eta$ the material reading of the four coordinates,
+**The operator.** With $x_0=r'_t$ and $x_\eta$ the three spatial coordinates, and with $Q_t=i q'_t$, $Q_\eta=q_\eta$ the material reading of the four coordinates,
 
 $$
 D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
@@ -78,7 +78,7 @@ D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
 D^{2}=\Box=\sum_\mu\frac{\partial^{2}}{\partial R_\mu^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta .
 $$
 
-The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box$ is the square of the $i$ in $Q_t=ix_0$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
+The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
 
 **The conjugation.** The charge conjugation of this article is
 
