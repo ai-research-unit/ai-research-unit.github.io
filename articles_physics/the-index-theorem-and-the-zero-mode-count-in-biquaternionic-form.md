@@ -37,7 +37,7 @@ with its quaternion conjugate and the scalar d'Alembertian
 $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)
+\Box_\Phi=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)
 =\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 \qquad
 \varepsilon=(1,-1,-1,-1).
@@ -67,7 +67,7 @@ $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
 
-The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
+The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
 
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair
 
@@ -256,7 +256,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a=\tfrac12 \vec e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Normalised generators |
-| $\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ |
+| $\Box_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ |
 | $\Delta=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ | Laplacian in the three vector coordinates |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient, acting from the left; $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
 | $\tilde D_R=\sum_\mu e_\mu D_\mu$ | Twisted Dirac operator in the representation $R$; the gauge-covariant gradient |

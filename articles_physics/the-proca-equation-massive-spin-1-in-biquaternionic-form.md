@@ -8,7 +8,7 @@ The purpose of this article is to write the Proca system in biquaternionic form 
 
 Once the Lorenz condition is available, the Proca equation collapses to the Klein–Gordon equation for each component, and the physical content is transparent: three real polarization directions at each wavevector — two transverse and one longitudinal — with the dispersion relation $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The counting is done here explicitly, and it is contrasted with the massless case, where the same calculation leaves two real directions because a residual gauge transformation removes the third. The article closes by locating the massive field relative to the self-dual split of the companion article: the field strength remains a pure vector of the algebra and so keeps its self-dual and anti-self-dual coordinates, but it is no longer harmonic, and the mass term is precisely what the biquaternion Maxwell equation calls a source. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=mc/\hbar$, whose reciprocal $k_m=mc/\hbar$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$; the gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ with $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$; the potential and field strength are $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ and $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $c=1/\sqrt{\epsilon\mu}$ and the normalization of the potential fixed so that the two expressions for $\tilde{F}$ agree; and the mass enters as the length $k_m=mc/\hbar$, whose reciprocal $k_m=mc/\hbar$ is the coefficient written where the dimensions have to be displayed. The mass parameter is $m=m$, written through the mass length $1/k_m$.
 
 ## The Standard Proca Theory
 
@@ -47,7 +47,7 @@ for a finite mass, $k_m\neq0$. The **Lorenz condition** is therefore a consequen
 With the Lorenz condition in hand, the field strength contracts to a d'Alembertian,
 
 $$
-\tilde\nabla_\Phi\tilde F = \Box\tilde A_{\Phi}-\tilde\nabla_\Phi\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural} = \Box\tilde A_{\Phi},
+\tilde\nabla_\Phi\tilde F = \Box_\Phi\tilde A_{\Phi}-\tilde\nabla_\Phi\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural} = \Box_\Phi\tilde A_{\Phi},
 $$
 
 so that the Proca equation becomes
@@ -94,7 +94,7 @@ The transcription is not a guess. It is fixed by two requirements: the equation 
 
 ### The failure of gauge invariance, explicitly
 
-The massless companion equation is invariant under the gauge transformation $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ of the companion Maxwell article, because the field strength is built from $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box\Gamma$ is a central scalar, which the projection to the vector part discards. For the Proca equation the same transformation changes the right-hand side alone,
+The massless companion equation is invariant under the gauge transformation $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ of the companion Maxwell article, because the field strength is built from $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma$ is a central scalar, which the projection to the vector part discards. For the Proca equation the same transformation changes the right-hand side alone,
 
 $$
 \tilde\nabla_\Phi\tilde{F} \;\longmapsto\; \tilde\nabla_\Phi\tilde{F}, \qquad
@@ -107,10 +107,10 @@ so the equation is preserved only if $\tilde\nabla_\Phi\Gamma = 0$, that is, onl
 
 The biquaternion form of the divergence argument is short, and it is the cleanest place where the algebra does work that the index notation leaves implicit.
 
-Apply the conjugate gradient $(\tilde\nabla_\Phi)^{\natural}$ to both sides of the Proca equation and use that the gradient has constant coefficients, so that $(\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi\tilde{F}) = ((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)\tilde{F} = \Box\tilde{F}$:
+Apply the conjugate gradient $(\tilde\nabla_\Phi)^{\natural}$ to both sides of the Proca equation and use that the gradient has constant coefficients, so that $(\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi\tilde{F}) = ((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)\tilde{F} = \Box_\Phi\tilde{F}$:
 
 $$
-\Box\tilde{F} = k_m^{2}\,(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}.
+\Box_\Phi\tilde{F} = k_m^{2}\,(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}.
 $$
 
 Now take the scalar part of both sides. The d'Alembertian $\Box$ is a central scalar differential operator, so it preserves the scalar–vector decomposition and $\mathrm{Sc}(\Box\tilde{F}) = \Box\,\mathrm{Sc}(\tilde{F})$. The field strength $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is a **pure vector**, so $\mathrm{Sc}(\tilde{F}) = 0$, and the left-hand side vanishes identically. Hence
@@ -134,7 +134,7 @@ $$
 and the Proca equation becomes
 
 $$
-\tilde\nabla_\Phi\tilde{F} = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = \Box\tilde{A}_{\Phi} = k_m^{2}\,\tilde{A}_{\Phi}.
+\tilde\nabla_\Phi\tilde{F} = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = \Box_\Phi\tilde{A}_{\Phi} = k_m^{2}\,\tilde{A}_{\Phi}.
 $$
 
 Hence
@@ -146,7 +146,7 @@ $$
 the Klein–Gordon equation for the biquaternion-valued potential. Because $\Box$ is central and scalar, it acts on the four coefficients of $\tilde{A}_{\Phi}$ separately, and the equation is the statement that each coefficient of the potential satisfies the scalar Klein–Gordon equation. The reduction is therefore exact and reversible: the Proca equation for $\tilde{A}_{\Phi}$ and the pair
 
 $$
-\boxed{\;\left(\Box - k_m^{2}\right)\tilde{A}_{\Phi} = 0, \qquad \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = 0\;}
+\boxed{\;\left(\Box_\Phi - k_m^{2}\right)\tilde{A}_{\Phi} = 0, \qquad \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = 0\;}
 $$
 
 are equivalent. This is the biquaternion transcription of the standard statement that the Proca equation is equivalent to the Klein–Gordon equation together with the Lorenz condition.
@@ -342,7 +342,7 @@ The plane-wave solutions carry a real spatial amplitude and a time component fix
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{V}$ | Complex three-dimensional vector part |
-| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and conjugate, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and conjugate, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential biquaternion in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, pure vector |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; the Proca equation forces $S=0$ (Lorenz condition) |

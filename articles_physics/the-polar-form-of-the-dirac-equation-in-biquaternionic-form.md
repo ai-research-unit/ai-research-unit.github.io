@@ -449,7 +449,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$; $\vec e_z$ is the frame's third direction |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
-| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$ |
+| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ |
 | $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
 | $r'_t=c\,t^{\prime}$ | Material time, a length |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |

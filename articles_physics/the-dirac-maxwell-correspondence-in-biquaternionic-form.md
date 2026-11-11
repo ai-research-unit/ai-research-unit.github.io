@@ -156,7 +156,7 @@ These questions are open.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$ |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two components of the Dirac field, named by the letters of the pair |
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |
 | $\tilde F$ | The field-strength biquaternion, the vector part of $\mathbb{B}$ |

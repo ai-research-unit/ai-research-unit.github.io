@@ -174,7 +174,7 @@ $$
 \tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma\right) = 0,
 $$
 
-because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box\Gamma\, e_t$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
+because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma\, e_t$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
 
 **A single point can always be made connection-free.** Given any connection $\tilde{A}_{\Phi}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function
 
@@ -244,7 +244,7 @@ $$
 \boxed{\;\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\mu}^{2} +\frac{i\,ϙ}{\hbar}\tilde{F}\;}
 $$
 
-holds, where $\tilde\nabla_{\mathrm{gco},\mu}^2$ means $\tilde\nabla_{\mathrm{gco},\mu} \tilde\nabla_{\mathrm{gco},\mu}$ and $\sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 = \sum_\mu\left(\partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$ when $\tilde{A}_{\Phi} = 0$.
+holds, where $\tilde\nabla_{\mathrm{gco},\mu}^2$ means $\tilde\nabla_{\mathrm{gco},\mu} \tilde\nabla_{\mathrm{gco},\mu}$ and $\sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 = \sum_\mu\left(\partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$ when $\tilde{A}_{\Phi} = 0$.
 
 The derivation is short. Expanding the product,
 
@@ -295,7 +295,7 @@ $$
 
 Squaring its first member with the second gives the boxed identity on the $R$ part, $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
 
-**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ and apply $(\tilde\nabla_\Phi)^{\natural}$: the result is $\Box\tilde{Ξ}_{\mathrm{sp}} = m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, an equation in two different objects, and nothing reduces it to $\Box\tilde{Ξ}_{\mathrm{sp}} = k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, because $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\tilde{Ξ}_{\mathrm{sp}} = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ returns $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, which is the boxed identity.
+**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ and apply $(\tilde\nabla_\Phi)^{\natural}$: the result is $\Box_\Phi\tilde{Ξ}_{\mathrm{sp}} = m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, an equation in two different objects, and nothing reduces it to $\Box\tilde{Ξ}_{\mathrm{sp}} = k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, because $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\tilde{Ξ}_{\mathrm{sp}} = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ returns $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, which is the boxed identity.
 
 The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box$. On a scalar function it reads
 
@@ -375,7 +375,7 @@ $$
 
 with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
-The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ returns $\Box\tilde{Ξ}_{\mathrm{sp}} = m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial R_t^2-\Delta_Q$ against the $\partial^2/\partial R_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
+The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ returns $\Box_\Phi\tilde{Ξ}_{\mathrm{sp}} = m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial R_t^2-\Delta_Q$ against the $\partial^2/\partial R_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
 
 ## Summary of Notation
 
@@ -389,7 +389,7 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Quaternion-conjugate gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta}$ | Square of the gradient; not scalar, and not $\Box$ |
 | $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ | Laplacian in the three vector coordinates |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{B}_{\Phi}$ |

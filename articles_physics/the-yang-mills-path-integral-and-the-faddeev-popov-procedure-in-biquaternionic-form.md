@@ -20,7 +20,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi} ,
 $$
-and the centre is $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$; the material reading is $Q_t=i q'_t$ with $Q_\eta=q_\eta$, so that the interval $\sum_\mu Q_\mu^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, with conjugate $(\tilde\nabla_\Phi)^{\natural}$ and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$; the material reading is $Q_t=i q'_t$ with $Q_\eta=q_\eta$, so that the interval $\sum_\mu Q_\mu^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 \qquad
@@ -281,7 +281,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; abelian factor |
-| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$; the material reading is $Q_t=i q'_t$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ | Compact gauge algebra |
 | $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |

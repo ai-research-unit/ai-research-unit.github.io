@@ -88,7 +88,7 @@ $$
 $$
 and therefore, with $\Box = \Delta_Q + \partial^2/\partial R_t^2$,
 $$
-\Box G_u
+\Box_\Phi G_u
 = \frac{u(g)}{4\pi}\,\Delta_\Phi\frac{1}{R}
 + \frac{\frac{du}{dg}(g)}{4\pi}\left[2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g\right]
 + \frac{\frac{d^2u}{dg^2}(g)}{4\pi R}\left[(\nabla g)^2 - 1\right].
@@ -214,7 +214,7 @@ A word on the two retarded-time Jacobians, because the exercise's first trap and
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
-which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
+which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box_\Phi = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
 $$
 \Box_\Phi S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box_\Phi\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$

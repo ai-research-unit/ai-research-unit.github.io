@@ -97,7 +97,7 @@ $$
 = \det\left(-\Box\right)\;},
 $$
 
-up to a sign convention. This is **independent of $\tilde{A}_{\Phi}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and that its only biquaternionic content is the centrality of that operator.
+up to a sign convention. This is **independent of $\tilde{A}_{\Phi}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and that its only biquaternionic content is the centrality of that operator.
 
 The delta functional is represented by introducing the Nakanishi–Lautrup field $B$ and writing
 

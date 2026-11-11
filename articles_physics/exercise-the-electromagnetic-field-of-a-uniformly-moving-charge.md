@@ -397,7 +397,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
-| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -i\,\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |

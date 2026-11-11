@@ -66,7 +66,7 @@ The gradient and its conjugate are the two derivative operators of the article, 
 $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
@@ -541,7 +541,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\nabla}^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | Classical Dirac field, an element of $\mathbb{B}$, in its two chiral halves |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |

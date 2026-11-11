@@ -36,7 +36,7 @@ Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating re
 
 The sections follow that order: the ansatz and its domain, the two real equations, the momentum and the current, the non-relativistic limit, what the change of variables adds, and the general field.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
 
 ## The Scalar Case: the Ansatz and Its Domain
 
@@ -242,7 +242,7 @@ $$
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m}=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m},
 \qquad
-\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
+\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
 $$
 
 The coefficient is the proper density of the markers, and it is not the charge density, which is the temporal component. The flow follows the phase gradient, and the transport equation is the continuity equation of that density with that velocity. The norm in the same display is the mass shell read as a statement about the fluid: it is $-c^{2}$ exactly when the quantum term vanishes, so the flow is a unit timelike vector for a plane wave and not for a general wave. The fluid reading carries the same defect as the charge density and from the same cause: what fails is the on-shell condition, not the continuity equation, which holds whatever the amplitude does.
@@ -260,7 +260,7 @@ and the vorticity tensor vanishes for the same reason. The exception is a nodal 
 $$
 \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right)=0,
 \qquad
-\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}+\hbar^{2}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
+\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}+\hbar^{2}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
 $$
 
 The second term is the whole of the quantum content. With it the fluid is not dust; without it the pair is relativistic irrotational dust, pressureless flow along the phase gradient.

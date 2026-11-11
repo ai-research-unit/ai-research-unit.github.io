@@ -263,7 +263,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Quaternion-conjugate gradient |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (vanishing scalar part) |
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Four-current; the source enters as $\sqrt{\mu}\,\tilde J_{\Phi}$ |

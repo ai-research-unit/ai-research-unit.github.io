@@ -213,7 +213,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and each line composed with its partner equal to $\Box I$. Both members are left actions, and no third object stands between them. The pair is not a rewording: $\tilde\nabla^2$ is not scalar, because the mixed spatial derivatives survive as units, while $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$ is; no one-field first-order equation carries a mass.
+with $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and each line composed with its partner equal to $\Box I$. Both members are left actions, and no third object stands between them. The pair is not a rewording: $\tilde\nabla^2$ is not scalar, because the mixed spatial derivatives survive as units, while $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ is; no one-field first-order equation carries a mass.
 
 The chirality is not a term of either member. It is a right multiplication of the field, and a right multiplication of $\tilde{Ξ}_{\mathrm{sp}}$ is a left multiplication of the quaternion conjugate, by the exchange of *Operator and Calculus Conventions*: the same operator is the left multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ by $i\vec e_z$. A chirality needs a right multiplication, and the one-sided gradient has none.
 

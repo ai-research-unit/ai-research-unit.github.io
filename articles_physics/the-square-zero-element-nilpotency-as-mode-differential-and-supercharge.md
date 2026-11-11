@@ -324,9 +324,9 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 Both gradients act from the left on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 The two members of the chiral pair are one equation per chirality, not two different equations.
@@ -350,7 +350,7 @@ The two forms are set side by side once:
 | multiplication | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left by $(\tilde\nabla_\Phi)^{\natural}$, right by $\vec e_z$, with the antilinear $\bar{\cdot}$ |
 | mass | exchange of the two chirality parts | the right-multiplied unit, with the conjugation |
 | chirality | the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ | the right multiplication by $\vec e_z$ with a phase, which carries the label |
-| second order | $\Box$ on each part | $\tilde\nabla_\Phi\bigl((\tilde\nabla_\Phi)^{\natural}F\bigr)=\Box F$ |
+| second order | $\Box$ on each part | $\tilde\nabla_\Phi\bigl((\tilde\nabla_\Phi)^{\natural}F\bigr)=\Box_\Phi F$ |
 
 Neither column needs an array: the field is an element of the algebra in both forms, and the two differ in the side on which the mass acts.
 

@@ -66,7 +66,7 @@ $$
 =\frac{1}{2}\int d^4r\;\delta\xi^*\left[\left(\Box-k_m^{2}\right)\xi\right],
 $$
 
-after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, the stationarity of the action is
+after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, the stationarity of the action is
 
 $$
 \boxed{\;\frac{\delta S}{\delta\xi^*}=0
@@ -316,7 +316,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, is the mass shell |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
 | $\Omega_{\vec k_\Phi}=\sqrt{k_\Phi^{2}+k_m^{2}}=k_{t}^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |

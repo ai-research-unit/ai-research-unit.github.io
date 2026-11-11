@@ -553,7 +553,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the field by the chirality basis operator $-iR_{\mathrm{axf},\vec e_z}$ |
 | $Q_t=i q'_t$, $Q_\eta=q_\eta$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
 | $\tilde\nabla_\Phi = -i\,e_t\partial/\partial r'_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial r_\eta$, the material part of $\tilde\nabla_\Phi$ | Biquaternionic gradient (Dirac operator), read at $Q_t=i q'_t$, $Q_\eta=q_\eta$ |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde Q^\natural$ | Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $(\tilde\nabla_\Phi)^{\natural}$, $\tilde A_{\Phi}^\natural$, $\tilde\nabla_{\mathrm{gco}}^{\natural}$ are its images |
 | $\tilde A_{\Phi} = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Electromagnetic four-potential |

@@ -534,7 +534,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
 | $x_\mu = (r'_{t},r_x,r_y,r_z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
 | $\partial/\partial R_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
-| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r'_t^2+\mathrm{d}\vec r^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |
 | $\tilde{E}_{\Phi}_\mu = \varepsilon_\mu + \delta\tilde{E}_{\Phi}_\mu$ | Frame field and frame perturbation, $\delta\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ |
 | $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_{\Phi}_\mu,\varepsilon_\nu\rangle_{\natural}$ | Metric perturbation carried by the frame perturbation |

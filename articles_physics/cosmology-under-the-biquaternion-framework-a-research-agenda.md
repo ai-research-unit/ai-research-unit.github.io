@@ -239,7 +239,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace | inherited |
 | $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\eta = \vec e_\eta$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = -\varepsilon_\mu\delta_{\mu\nu}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | inherited |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace reading, a **fibre** trace over $\mathbb{C}^2$ | inherited |
 | $\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$, $g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(r'_t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |

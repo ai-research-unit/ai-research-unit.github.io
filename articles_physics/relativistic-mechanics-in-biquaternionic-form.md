@@ -195,7 +195,7 @@ $$
 \left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
+Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
 
 $$
 \Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
@@ -244,7 +244,7 @@ Here $\hbar/(mc)$ is the mass length.
 
 **The conserved current is a scalar projection of the biquaternion conservation law.** The continuity equation is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$. The full biquaternion equation is stronger, and the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ does not have an independent **physical interpretation** as a conservation law.
 
-**The wave equations are factorization.** The Klein–Gordon and Dirac equations are related by the factorization $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$. The Dirac equation is the **first-order factor** of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
+**The wave equations are factorization.** The Klein–Gordon and Dirac equations are related by the factorization $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$. The Dirac equation is the **first-order factor** of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
 
 ## The Tensor-Dynamics Reading, and the Question of Extra Terms
 
@@ -311,7 +311,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (scalar quadratic form) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ | Quaternion-conjugate gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\tau$ | Proper time |
 | $m$ | Rest mass |
 

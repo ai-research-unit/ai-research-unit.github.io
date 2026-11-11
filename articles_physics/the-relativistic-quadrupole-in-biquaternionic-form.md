@@ -20,7 +20,7 @@ The article is classical throughout, and the scope is the *relativistic* quadrup
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, and the self-dual decomposition.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Quadrupole as a Higher Multipole
 
@@ -383,7 +383,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t+\vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |

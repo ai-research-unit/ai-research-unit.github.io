@@ -93,9 +93,9 @@ $$
 the two lines with a source of unit strength. Each term carries the dimension of a wave number, the gradients and $k_m$ alike, so the two terms of a line add without a dimensional mismatch; the $\delta^{(4)}$ is the four-dimensional delta of the material four-position measured in metres, and the Fourier measure $d^4p/(2\pi\hbar)^4$ of the display below is its matching transform, so the powers close on both sides. Each line composed with the conjugate of the other is scalar,
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\mathcal S_R = \Box\,\mathcal S_R,
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\mathcal S_R = \Box_\Phi\,\mathcal S_R,
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\mathcal S_L = \Box\,\mathcal S_L,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\mathcal S_L = \Box_\Phi\,\mathcal S_L,
 $$
 
 the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = p^{2}/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
@@ -125,7 +125,7 @@ which is the Green kernel of the pair as *Operator and Calculus Conventions*, §
 $$
 (\tilde\nabla_\Phi)^{\natural}\bigl(\tilde\nabla_\Phi+k_m\bigr)\Delta_F
 -k_m\bigl((\tilde\nabla_\Phi)^{\natural}+k_m\bigr)\Delta_F
-= \left(\Box-k_m^{2}\right)\Delta_F ,
+= \left(\Box_\Phi-k_m^{2}\right)\Delta_F ,
 $$
 
 the two mass-gradient terms cancelling because each of them carries the same gradient, and $\Box-k_m^{2}$ being the operator that $\Delta_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.
@@ -328,10 +328,10 @@ a sum over paths being a sum over intermediate points, and $\mathcal S$ is the t
 **The propagator equation.** The kernel satisfies the two lines with a source, $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. This is the statement that the propagator is the Green's function of the first-order pair. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first line and substituting the second, and symmetrically, gives
 
 $$
-\left(\Box - k_m^{2}\right)\mathcal S_L
+\left(\Box_\Phi - k_m^{2}\right)\mathcal S_L
 = \left(\tilde\nabla_\Phi + k_m\right)i\,\delta^{(4)} ,
 \qquad
-\left(\Box - k_m^{2}\right)\mathcal S_R
+\left(\Box_\Phi - k_m^{2}\right)\mathcal S_R
 = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)i\,\delta^{(4)} ,
 $$
 

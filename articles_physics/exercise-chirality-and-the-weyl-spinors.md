@@ -359,7 +359,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $-iR_{\vec u}$ | The chirality basis operator of the declared frame |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field, of values $-1$ and $+1$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |

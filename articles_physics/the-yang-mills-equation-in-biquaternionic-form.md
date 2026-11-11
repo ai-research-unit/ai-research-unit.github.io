@@ -370,7 +370,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |

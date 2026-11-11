@@ -23,7 +23,7 @@ $$
 with $e_t$ the identity of the algebra and $e_x,e_y,e_z$ the three pure units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$ and cyclic, so that $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$. Its norm is the d'Alembertian
 
 $$
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
 and on the material sector, where $Q_t=i q'_t$, the two gradients and the norm read
@@ -62,7 +62,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla_\Phi$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$. No one-field first-order equation with a mass is written anywhere below.
+both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla_\Phi$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$. No one-field first-order equation with a mass is written anywhere below.
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
@@ -477,7 +477,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial q_\eta$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |
 | $\Gamma F=-iF\vec e_z=iF\omega$ | Chirality, the right multiplication by $-i\vec e_z$; $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$ |

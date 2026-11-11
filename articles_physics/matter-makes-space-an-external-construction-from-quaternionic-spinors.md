@@ -18,7 +18,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\mathrm{Sc}\bigl(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box_\Phi=\mathrm{Sc}\bigl(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\bigr)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 which on the material sector reads $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$. The first-order dynamics is the one-sided pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^2$ is **not** $\Box$: the two differ because $e_t$ commutes with the three spatial units and the mixed derivatives then add, so no single field carries the mass at first order. Here $\hbar/(mc)$ is the mass length.
 

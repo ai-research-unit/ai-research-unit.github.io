@@ -29,7 +29,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$. Write $\vec\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$.
@@ -60,7 +60,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi,
 $$
 
 one gradient per line and one slot per line. Nothing acts on the right: each line is built from one gradient and nothing else enters.
@@ -203,7 +203,7 @@ $$
 
 where the last term is the left multiplication by $i\vec e_\eta$ with the scalar $L_{\mathrm{orb},\eta}$ in front of it, and the second-order equation of the last section reads $(E^2-m^2c^4)\tilde{Ξ}_{\mathrm{sp},+}=c^2\mathcal{Q}_+\mathcal{Q}_-\tilde{Ξ}_{\mathrm{sp},+}$.
 
-**Why the product is not the d'Alembertian.** The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$. They reduce instead to two remainders: the commutator $[Q_\eta,p_\eta]$, which is central and produces $-3\,\hbar\,m\,\omega$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.
+**Why the product is not the d'Alembertian.** The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$. They reduce instead to two remainders: the commutator $[Q_\eta,p_\eta]$, which is central and produces $-3\,\hbar\,m\,\omega$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.
 
 **The two orders differ.** $\vec\nabla_+\vec\nabla_-$ is not $\vec\nabla_-\vec\nabla_+$, and the difference is in two places. The cross term of $\partial/\partial R_\eta$ with $Q_\eta$ changes sign with the order, so the constant changes sign: the order $\vec\nabla_+\vec\nabla_-$ gives $+3\,\hbar\,m\,\omega$ where the boxed identity has $-3\,\hbar\,m\,\omega$. The antisymmetric part of the coefficient changes sign with the order as well, so the spin–orbit term changes sign too. The two orders are therefore not related by an overall sign, and the boxed identity belongs to the order $\vec\nabla_-\vec\nabla_+$ alone. That is the order in which the substitution appears, the outer shift being the one carried by the line for $\tilde{Ξ}_{\mathrm{sp},+}$; its partner, $\hbar^{2}\,\vec \nabla_{+}\,\vec \nabla_{-}$, is the operator of the other supersymmetric member and carries $+3\,\hbar\,m\,\omega$ and $+2m\omega S$.
 
@@ -406,7 +406,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$, $\vec e_y\vec e_x = -\vec e_z$ |
 | $\tilde\nabla_\Phi$ | The corpus gradient, $e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\vec\nabla = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
 | $\vec\nabla_\pm = \vec\nabla\pm\dfrac{\omega\,k_m}{c}\vec r$ | The two non-minimal shifts of the spatial gradient |
 | $\omega = -\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar; the right factor carried by a velocity action |

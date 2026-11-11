@@ -14,7 +14,7 @@ Four results are established.
 $$
 S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.
+has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\hbar/(mc))/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
 - **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\hbar/(mc))/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
@@ -96,7 +96,7 @@ $$
 \left(\Box-(k_m)^{2}\right)\tilde{Ξ}=0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
+the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
 
 ## Plane Waves and the Range of the Field
 
@@ -369,7 +369,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\mathbb{B}_{C}\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t$, $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
-| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
 | $\hbar/(mc)$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m$ is the inverse range, and classically only $\hbar/(mc)$ matters |
 | $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |

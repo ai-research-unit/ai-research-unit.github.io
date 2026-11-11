@@ -513,7 +513,7 @@ The second-order equation carries the curvature, $\bigl(\sum_\mu\tilde\nabla_{\m
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
 | $\mathrm{sp}$ | The Dirac-field label of *Algebra and Element Conventions*; kept in $\tilde S_{\Psi,\mathrm{sp}}$ |
-| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | The material gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$ |
+| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | The material gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ |
 | $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position; $\partial/\partial R_t=-i\partial/\partial r'_t$ |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
 | $\tilde A_{\Phi}=A_te_t+\sum_\eta A_\eta\vec e_\eta=i a'_te_t+\vec A$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$; $A_t=ia'_t$, $a'_t=\phi/c$ |

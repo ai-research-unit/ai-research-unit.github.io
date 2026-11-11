@@ -819,9 +819,9 @@ $$
 with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta$:
 
 $$
-i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{2k_m}\,\Delta\,\chi
+i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{2k_m}\,\Delta_\Phi\,\chi
 \qquad\longrightarrow\qquad
-i\hbar\,\frac{\partial\chi}{\partial t}=-\frac{\hbar^{2}}{2m}\,\Delta\,\chi ,
+i\hbar\,\frac{\partial\chi}{\partial t}=-\frac{\hbar^{2}}{2m}\,\Delta_\Phi\,\chi ,
 $$
 
 the last step multiplying by $\hbar c$ with $r'_t=c\,t$ and $\hbar c/2k_m=\hbar^{2}/2m$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $k_m$ is the constant, $k_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.

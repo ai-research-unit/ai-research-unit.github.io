@@ -393,7 +393,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*}$ | Hermitian conjugate of $\tilde{F}$ |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector (self-dual) |

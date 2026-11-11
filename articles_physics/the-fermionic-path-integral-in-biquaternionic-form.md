@@ -28,7 +28,7 @@ $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
+read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
 
 The classical field theory is defined by the parent article's Lagrangian density. The field is $\tilde{Ξ}_{\mathrm{sp}}$, with the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and its **Dirac adjoint** is the right multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ by the single element $i\vec e_x$,
 
@@ -58,10 +58,10 @@ $$
 
 two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde{Ξ}_{\mathrm{sp},L}$ is the element of value minus one and $\tilde{Ξ}_{\mathrm{sp},R}$ the element of value plus one. The field is their sum, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics, written once, not a second one. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Its elimination.** The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$, so applying $(\tilde\nabla_\Phi)^{\natural}$ to the first and using the second gives
+**Its elimination.** The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so applying $(\tilde\nabla_\Phi)^{\natural}$ to the first and using the second gives
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=(\tilde\nabla_\Phi)^{\natural}k_m\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=(\tilde\nabla_\Phi)^{\natural}k_m\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and the same step gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$. Each part of the field therefore solves the massive wave equation, and the operator whose determinant the path integral computes is the pair; the count of that determinant is taken in §*The Biquaternion Form of the Kernel*.
@@ -364,7 +364,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 |+-|+-|
 | $\mathcal{L}=\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\big)-k_m\,\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big)$ | Biquaternion Dirac density (bilinear action), written on the two parts of the field |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ | Dirac adjoint: a single right multiplication by $i\vec e_x$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The corpus gradient, its conjugate and the d'Alembertian; the only derivative in the article |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The corpus gradient, its conjugate and the d'Alembertian; the only derivative in the article |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided pair; the equation integrated |
 | $-(\tilde\nabla_\Phi)^{\natural}F-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{B}_{C}$, exponent along $i r'_t$ |

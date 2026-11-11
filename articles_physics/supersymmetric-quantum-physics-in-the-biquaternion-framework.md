@@ -131,9 +131,9 @@ The pair carries no mass term. Each member of the pair multiplies the part with 
 Two consequences follow, and both are used below.
 
 - The **supercharge is graded**: each member of the pair carries one value on its left and names the other value on its right, and each member is read with the other. The composition of the two, being central, carries no value.
-- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$, which carries each value to itself because it carries no label at all. It is the supersymmetric Hamiltonian $H$. The mass, in turn, is a number in the eigenvalue equation and the time basis operator of the frame in the Schrödinger form; as a term of the operator it is the one that pairs the two values.
+- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, which carries each value to itself because it carries no label at all. It is the supersymmetric Hamiltonian $H$. The mass, in turn, is a number in the eigenvalue equation and the time basis operator of the frame in the Schrödinger form; as a term of the operator it is the one that pairs the two values.
 
-In the biquaternion language the same statement reads: the pair names the two parts named by the subscript, the central $\Box$ names neither, and the mass is the pairing term. The superalgebra is the rule that a pair of graded objects multiplies to one that is not, realised concretely as $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$, a scalar.
+In the biquaternion language the same statement reads: the pair names the two parts named by the subscript, the central $\Box$ names neither, and the mass is the pairing term. The superalgebra is the rule that a pair of graded objects multiplies to one that is not, realised concretely as $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, a scalar.
 
 ### The Two Gradings Must Not Be Conflated
 

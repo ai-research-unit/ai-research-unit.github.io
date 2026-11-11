@@ -541,7 +541,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Quaternion-conjugate gradient |
 | $\vec u$ | The declared unit of the frame, in the parent's two-sided form |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | Biquaternion Dirac field, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L}, \tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field; the subscript names one of two components and no more |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, $\tilde{Ξ}_{\mathrm{sp}}^* = \overline{\tilde{Ξ}_{\mathrm{sp}}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |

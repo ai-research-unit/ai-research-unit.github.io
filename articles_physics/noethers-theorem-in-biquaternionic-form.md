@@ -25,7 +25,7 @@ $$
 \tilde{J}_{\Phi} = i\left[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ})\right],
 $$
 
-lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}_{\Phi}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$ with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
+lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = i\,\mathrm{Sc}[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}_{\Phi}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$ with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
 
 **Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$, so the sum $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
 
@@ -159,7 +159,7 @@ $$
 the sum being plain, because the signs of $\varepsilon$ are spent inside $(\tilde\nabla_\Phi)^{\natural}$: on the diagonal $\mathrm{Sc}(e_\mu^{\natural}e_\mu)=1$ for all four $\mu$. Using the definitions and the d'Alembertian,
 
 $$
-\boxed{\ \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})\right]\ }
+\boxed{\ \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})\right]\ }
 $$
 
 The cross terms of each $\mu$ enter with opposite signs and cancel, so only the second derivatives survive. This is the Noether identity in biquaternion form: the scalar divergence of the current is the Klein–Gordon operator applied to the field, contracted with the symmetry variation. On shell, $\Box\tilde{Ξ} = (k_m^{2})\tilde{Ξ}$ and the same for the conjugate, both terms become the same real multiple of $\tilde{Ξ}^{*}\tilde{Ξ}$ and cancel, so
@@ -176,7 +176,7 @@ A single plane wave is a trap: for $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\,\mathrm{Sc}
 
 - **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k_\Phi|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k_\Phi^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ cancels identically;
 - **a standing wave**, $\tilde{Ξ} = \sin(kx)\cos(\omega r'_t/c) + i\sin(kx)\sin(\omega r'_t/c)$ with $\omega^2 = c^2k^2 + c^2k_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ vanishes identically;
-- **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed on a generic three-mode field, off shell: the difference $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) - i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$ reduces to zero identically, and the divergence is $2\,\mathrm{Im}(\tilde{Ξ}^{*}\Box\tilde{Ξ})$, which is what the identity gives.
+- **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed on a generic three-mode field, off shell: the difference $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) - i\,\mathrm{Sc}[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})]$ reduces to zero identically, and the divergence is $2\,\mathrm{Im}(\tilde{Ξ}^{*}\Box\tilde{Ξ})$, which is what the identity gives.
 
 The last case is the honest statement of the theorem: the current is conserved **whenever** the field equation holds; off shell it need not be, and its divergence *is* the field equation.
 
@@ -520,7 +520,7 @@ $$
 which lies in $\mathbb{B}_{\Phi}$ and satisfies the Noether identity
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})\right],
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box_\Phi\tilde{Ξ})\right],
 $$
 
 zero whenever the field is on shell. This is the framework form of $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$; it reproduces the current the Klein–Gordon article posits, up to the conventional constant $c/k_m/2$, with $\rho>0$ on a positive-frequency wave; and its expansion at the Maxwell source is the charge-conservation condition $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\sqrt{\mu}\,\tilde{J}_{\Phi}) = 0$.
@@ -549,7 +549,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\mathbb{B}_{H}, \mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Real-quaternion subspace; complex scalar line (the centre) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Quaternion-conjugate gradient; $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$ |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i q'_t$ |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i q'_t$ |
 | $S = -mc\int\sqrt{-d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}$ | Free-particle action |
 | $\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
 | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |

@@ -15,7 +15,7 @@ with its quaternion conjugate and the scalar d'Alembertian
 $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 
 the last read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$, as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
@@ -73,8 +73,8 @@ The two readings of one dynamics are the pair and the coordinate form of each me
 
 **The pair.** The gradient $\tilde\nabla_\Phi$ acts by left multiplication, and its quaternion conjugate squares with it to the scalar d'Alembertian. The chiral pair is the first-order dynamics of the algebra, and both of its equations are one-sided: no right multiplication appears in it, so no chirality operator appears either. Each member is first order, both are linear in the field, and the mass is the only term that carries the field from one entry to the other. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second gives
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
-\qquad\text{that is}\qquad\bigl(\Box-k_m^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},R}=0,
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+\qquad\text{that is}\qquad\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},R}=0,
 $$
 
 and the same holds for $\tilde{Ξ}_{\mathrm{sp},L}$: each entry obeys the Klein–Gordon equation, and the completion of one entry is the other,
@@ -360,7 +360,7 @@ The classification supplies a second reading of the same eight operations: they 
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}=\mathbb{C}e_t$ | Real-quaternion subspace; centre |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations; order two, commuting pairwise, $\natural=\bar{\cdot}\circ{}^{*}$ |
 | $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, $\mathbb{C}$-antilinear and order-reversing |
-| $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
+| $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two entries of the pair: two elements of $\mathbb{B}$, not the eigenspaces of the chirality, which no left action can separate |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ |
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\Gamma=-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |

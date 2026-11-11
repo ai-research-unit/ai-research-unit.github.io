@@ -366,7 +366,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Abelian gauge transformation |
 | $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Abelian covariant derivative |

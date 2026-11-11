@@ -75,7 +75,7 @@ and they are read at once: $c_0^{2}$ is $\vec e_x^{2}=-1$, $c_k^{2}$ is $\vec e_
 $$
 D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
 \varepsilon=(1,-1,-1,-1),\qquad
-D^{2}=\Box=\sum_\mu\frac{\partial^{2}}{\partial R_\mu^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
+D^{2}=\Box_\Phi=\sum_\mu\frac{\partial^{2}}{\partial R_\mu^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
 The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
@@ -382,7 +382,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
 | $c_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $c_k:\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
 | $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
-| $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta$ is the spatial Laplacian |
+| $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta_\Phi$ is the material Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\mathcal{C}:\tilde{Ξ}_{\mathrm{sp}}\mapsto i\bar{\tilde{Ξ}}_{\mathrm{sp}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^c=\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}$ | Charge conjugate; $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ defines Majorana |

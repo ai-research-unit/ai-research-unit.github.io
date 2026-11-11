@@ -186,7 +186,7 @@ $$
 
 a left multiplication by the derivative, an antilinear coefficient conjugation $\bar{\cdot}$ with no side, and a right multiplication by the spatial unit $\vec e_z$. There the mass term is a right multiplication *followed by* a conjugation, and it is not a single basis operator. The two readings are related by the dictionary and are not the same equation — their mass terms are of different kinds, a scalar in one and a right multiplication with a conjugation in the other. What they share is the structural reason the second side is needed at all: the Dirac mass is what couples one value to the other, and left multiplication alone preserves the value.
 
-Applying $\tilde\nabla_\Phi$ from the left to the second member and substituting the first, with $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$, gives the Klein–Gordon equation for each part,
+Applying $\tilde\nabla_\Phi$ from the left to the second member and substituting the first, with $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, gives the Klein–Gordon equation for each part,
 
 $$
 \Box\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} ,
@@ -534,7 +534,7 @@ With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are 
 | $\mathbb{B}_{H} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$ | Real-quaternion sector, real dim $4$ |
 | $\mathbb{B}_{C} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}$ | Centre, real dim $2$ |
 | $\mathrm{Sc}\,\tilde{Q}$ | Scalar part, the coefficient of $e_t$; $\mathrm{Sc}\big(\tilde{Q}^\flat\tilde{Q}\big) = -\lvert\tilde{Q}\rvert^2$, $\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{Q}\big) = +\lvert\tilde{Q}\rvert^2$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate; $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$ |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate; $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac mass: linear, relating the two parts |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ | The retired equation; spacelike dispersion, not a mass term |
 | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, whose multiplier satisfies $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |

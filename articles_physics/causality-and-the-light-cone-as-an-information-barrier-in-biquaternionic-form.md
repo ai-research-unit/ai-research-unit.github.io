@@ -102,7 +102,7 @@ $$
 
 so every nonzero displacement is invertible except the null ones.
 
-**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and a four-wavevector $\tilde P_{\Phi}$ solves the massless dispersion relation $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
+**The cone is the propagation locus.** The d'Alembertian of the algebra is the biquaternion norm of the gradient, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and a four-wavevector $\tilde P_{\Phi}$ solves the massless dispersion relation $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$ exactly when it is null. For a null $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion.
 
 Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{B}_{\Phi}$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
@@ -306,7 +306,7 @@ $$
 \qquad
 \tilde{\nabla}^{\natural} = e_t\,\partial/\partial R_{1t} - \nabla,
 \qquad
-\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2 + \Delta_Q,
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2 + \Delta_Q,
 $$
 
 the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = -\omega r'_t/c + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
@@ -393,7 +393,7 @@ The causal structure of the material sector $\mathbb{B}_{\Phi}$ is the structure
 
 6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\theta_{\mathrm{rpd}}$, so the barrier $\beta = 1$ lies at $\theta_{\mathrm{rpd}} = \infty$ and is attained by no finite composition.
 
-7. **The analytic barrier.** The cone is the characteristic cone of $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and the standard finite-speed-of-propagation theorem confines the support of a solution to the causal future of its source.
+7. **The analytic barrier.** The cone is the characteristic cone of $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and the standard finite-speed-of-propagation theorem confines the support of a solution to the causal future of its source.
 
 8. **The uniqueness of the structure.** A causal bijection of Minkowski space is a Lorentz transformation composed with a translation, up to a positive dilation (Aleksandrov–Zeeman), so the cone and its time orientation characterize the relativity group rather than merely being preserved by it. The proper orthochronous component is the one realized by the rotor conjugation, and it preserves the time orientation.
 
@@ -425,7 +425,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=\beta$ | Rapidity |
 | $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta_Q$ | d'Alembertian, series convention |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta_Q$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$ | Restricted Lorentz group |
 
 ## Further Reading

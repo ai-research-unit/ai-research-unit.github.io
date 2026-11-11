@@ -136,7 +136,7 @@ $$
 \{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H,\qquad [\mathcal{Q},H]_{\mathrm{gr}}=0 ,
 $$
 
-so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the parity of the ambient algebra it is the relation of $A$, where the square of a frame vector is central, $v_\mu^{2}=g_{\mu\mu}e_t$; in the reading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$, which is the $H$ of that reading.
+so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the parity of the ambient algebra it is the relation of $A$, where the square of a frame vector is central, $v_\mu^{2}=g_{\mu\mu}e_t$; in the reading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, which is the $H$ of that reading.
 
 **(ii) The star.** In the Hermitian interpretation the physical pairing is the one with the **star** rather than with the element itself,
 

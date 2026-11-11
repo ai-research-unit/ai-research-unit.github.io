@@ -156,8 +156,8 @@ $$
 which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $i r'_t$ convention gives it. Its Euler–Lagrange equation is
 $$
 \boxed{\;
-\left(\Box - (k_m)^{2}\right)\tilde{Ξ} = 0 ,
-\qquad \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta\;},
+\left(\Box_\Phi - (k_m)^{2}\right)\tilde{Ξ} = 0 ,
+\qquad \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta\;},
 $$
 the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\xi - (k_m)^{2}\xi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring. Here $\hbar/(mc)$ is the mass length.
 
@@ -230,7 +230,7 @@ The Dirac and massless Maxwell actions are first order, and their Lagrangians ar
 $$
 \mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}_{\mathrm{sp}}^*\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}\bigr)\right] + \text{the conjugate term} ,
 $$
-with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde\nabla_\Phi$, the second-order action inverts $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
+with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde\nabla_\Phi$, the second-order action inverts $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
 
 ## Symmetries of the Action
 
@@ -309,7 +309,7 @@ $$
 S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (mc/\hbar)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
 \qquad \hbar/(mc) ,
 $$
-whose Euler–Lagrange equation is $(\Box - (k_m)^{2})\tilde{Ξ} = 0$ with $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the variation was checked against $\int(\Box\xi - (k_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
+whose Euler–Lagrange equation is $(\Box - (k_m)^{2})\tilde{Ξ} = 0$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the variation was checked against $\int(\Box\xi - (k_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
 
 The symmetries of the action are the central phase, giving the material-sector conserved current, translation invariance, giving the stress–energy tensor, and the Lorentz rotor action, giving the angular momenta; all three hold because the action is assembled from the biquaternion norm and the Hermitian pairing, which are exactly the invariants the involution lattice and the Lorentz group preserve. The variational route thus reconstructs the operator of the first article, the sectors of the second, and the causal and mass-shell structure of both, from a single scalar.
 

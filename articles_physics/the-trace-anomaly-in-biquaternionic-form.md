@@ -229,7 +229,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient; on $\mathbb{B}_{\Phi}$, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so $\partial/\partial R_t=\partial/\partial i r'_t$ |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the massive dynamics of the field |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | Series d'Alembertian |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$ | One-loop effective action whose variation is the anomaly |

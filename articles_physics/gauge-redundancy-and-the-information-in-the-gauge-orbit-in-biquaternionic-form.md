@@ -114,18 +114,18 @@ the identification inherited from the gauge principle and the covariant-derivati
 
 $$
 \tilde{F}_2 = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma\right)
-= \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) - \mathrm{Vect}\!\left(\Box\Gamma\,e_t\right)
+= \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) - \mathrm{Vect}\!\left(\Box_\Phi\Gamma\,e_t\right)
 = \tilde{F},
 $$
 
-because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box\Gamma\,e_t$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}_{\Phi}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.
+because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box_\Phi\Gamma\,e_t$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}_{\Phi}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.
 
 The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the gauge scalar
 
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A,
 \qquad
-S_2 = S - \Box\Gamma ,
+S_2 = S - \Box_\Phi\Gamma ,
 $$
 
 so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ is the coordinate along the fibre.
@@ -312,7 +312,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group $\mathrm{U}(1)$ |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ | Quaternion-conjugate gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase |

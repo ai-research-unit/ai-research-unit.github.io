@@ -350,7 +350,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of the algebra, home of the S-matrix's overall phase |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}$ | Quaternionic norm, with $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{\natural}=\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}e_t$ |
 | $\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}=1$ | Unit-norm element, the Lorentz-rotor condition, $\mathrm{SL}(2,\mathbb{C})$ |
 | $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*}=e_t$ | Star-unitary element, $\mathrm{U}(2)$ |

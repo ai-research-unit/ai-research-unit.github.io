@@ -324,7 +324,7 @@ $$
 $$
 while the product with the conjugate is scalar,
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi .
 $$
 The square of the gradient is not the d'Alembertian, and the claim that it is must not be made.
 

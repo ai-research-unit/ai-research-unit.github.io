@@ -39,7 +39,7 @@ $$
 and the d'Alembertian becomes a scalar because the product $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is the quaternion norm, which is central:
 
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
 \qquad
 \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
 $$
@@ -103,7 +103,7 @@ and it is not positive definite: the positive- and negative-frequency branches c
 **The gradient form assigns a number to the derivative, and it is the operator that acts on the field.** The product with the conjugate is the d'Alembertian outright, not merely its scalar part, because the product of an element and its quaternion conjugate is central:
 
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box ,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi ,
 $$
 
 and its symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:

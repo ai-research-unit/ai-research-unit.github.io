@@ -25,7 +25,7 @@ $$
 and its norm is the d'Alembertian
 
 $$
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
 $$
 
 On the material sector, where $Q_t=i q'_t$, the gradient and its conjugate read
@@ -554,7 +554,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian / anti-Hermitian subspaces |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\sigma_\eta\leftrightarrow i\vec e_\eta$ | Isomorphism, Pauli matrices |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$, $D_3^A$ | Pure part of the gradient, free and gauged |
 | $\tilde\nabla_\Phi-\frac{i\,q\,\tilde{A}_{\Phi}}{\hbar}$, $\tilde A_{\Phi}=Ξ e_t-\vec A$ | The gauged gradient; minimal substitution |
 | $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | Symbol of the gradient on a plane wave; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2$ |

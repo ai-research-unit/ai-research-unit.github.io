@@ -228,7 +228,7 @@ The ledger's three columns are the deliverable. **Established:** the kinematical
 | $\varepsilon_\mu=e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | Units in every frame; the natural form on them is $\delta_{\mu\nu}=(1,1,1,1)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
 | $\mathrm{Tr}(\tilde Q\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde Q\tilde H_\Psi)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
-| $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\,\vec e_\eta\partial/\partial R_\eta$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and d'Alembertian |
+| $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\,\vec e_\eta\partial/\partial R_\eta$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde E_{\Phi,\mu}\in\mathbb{B}_{\Phi}$ | Frame field; $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ |
 | $\vec e_\eta$, $B_{\mathrm{boost},\eta}=i\vec e_\eta$ | Rotation and boost generators; $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\mathrm{span}_\mathbb{R}\{\vec e_\eta,i\vec e_\eta\}$ |
 | $\vec\Gamma_\mu$ | Connection one-form, valued in the Lie subspace |
