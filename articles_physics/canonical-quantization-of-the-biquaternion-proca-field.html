@@ -190,8 +190,8 @@ $$</p>
 $$</p>
 <p>so the constraint matrix is the nonsingular $2\times2$ matrix</p>
 <p>$$
-\Delta = \begin{pmatrix} 0 & -\mu^2 \\ \mu^2 & 0\end{pmatrix},
-\qquad \det\Delta = \mu^4 \neq 0 ,
+\mathcal{K}_{\mathrm{con}} = \begin{pmatrix} 0 & -\mu^2 \ \mu^2 & 0\end{pmatrix},
+\qquad \det\mathcal{K}_{\mathrm{con}} = \mu^4 \neq 0 ,
 $$</p>
 <p>and the constraints are <strong>second class</strong>. This is the single structural difference from the Maxwell case, and everything else follows from it. A second-class constraint pair removes two phase-space dimensions — one for each constraint, with no gauge direction left over — so the count is</p>
 <p>$$
@@ -267,7 +267,7 @@ $$</p>
 <p><strong>A biquaternion origin for the mass term.</strong> The mass term is the biquaternion norm of the material vector times a parameter. Is there an algebraic reason for the biquaternion norm rather than some other central invariant — the trace pairing, the scalar part of a bilinear, a self-interaction term — or is the choice fixed only by the requirement that the equation be linear and second order? The same question arises for the Klein–Gordon field, and the two answers should be the same answer.</p>
 </li>
 <li>
-<p><strong>The second-class bracket in the algebra's own terms.</strong> The Dirac bracket is standard, but it is defined by the constraint matrix $\Delta$ and is not written in the algebra's operations. Is there a biquaternionic construction — a projection, a trace, a scalar-part pairing — that produces the reduced three-dimensional phase space directly, in the way that $\mathrm{Sc}(\tilde{\pi})\approx0$ writes the primary constraint?</p>
+<p><strong>The second-class bracket in the algebra's own terms.</strong> The Dirac bracket is standard, but it is defined by the constraint matrix $\mathcal{K}_{\mathrm{con}}$ and is not written in the algebra's operations. Is there a biquaternionic construction — a projection, a trace, a scalar-part pairing — that produces the reduced three-dimensional phase space directly, in the way that $\mathrm{Sc}(\tilde{\pi})\approx0$ writes the primary constraint?</p>
 </li>
 <li>
 <p><strong>The three polarizations and the adjoint action.</strong> The triplet of polarizations is a vector under the rotation group; the algebra realizes the vector representation as the adjoint action on the imaginary quaternions. Does the mode expansion's polarization triad transform under that action, so that the three creation operators form a vector operator, and does the answer differ for the massive and massless cases?</p>
@@ -285,7 +285,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The Proca field in biquaternionic form is the massive vector field, a material-sector four-vector $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ obeying $\tilde\nabla_\Phi\tilde{F}=\mu^2\tilde{A}_{\Phi}$, with the Lagrangian $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ in the series $i r'_t$ convention. The mass term is the central biquaternion norm of the potential, so it commutes with the algebra and does not mix the sectors, and its sign is fixed by the series convention of the Klein–Gordon equation.</p>
 <p>The Lorenz condition is a <strong>consequence</strong> of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{F})=\Box_\Phi\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\mu^2\tilde{A}_{\Phi}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}_{\Phi}=0$.</p>
-<p>The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$, and the two are <strong>second class</strong>, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.</p>
+<p>The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$, and the two are <strong>second class</strong>, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\mathcal{K}_{\mathrm{con}}$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.</p>
 <p>The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.</p>
 <p>The massless limit is the limit in which the two constraints become first class, the gauge transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ reappears, and the count drops from three to two. The massless theory has two polarizations because a gauge symmetry identifies field directions, not because of any bookkeeping; the Proca theory is the control case in which no gauge fixing is needed and the fourth polarization is physical. What the algebra supplies is the carrier, the field strength, the operator that makes the Lorenz condition a consequence, and the central biquaternion norm that the mass term uses; what it does not supply is the mass itself, the ladder algebra, or any empirical content.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -359,7 +359,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\{\pi_0,\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\}=-\mu^2\delta^{(3)}$</td>
-<td>Second-class bracket; $\det\Delta=\mu^4\neq0$</td>
+<td>Second-class bracket; $\det\mathcal{K}_{\mathrm{con}}=\mu^4\neq0$</td>
 </tr>
 <tr>
 <td>$\varepsilon_{r\mu}$ ($r=1,2,3$), $\varepsilon_{\mathrm{L}\mu}$</td>

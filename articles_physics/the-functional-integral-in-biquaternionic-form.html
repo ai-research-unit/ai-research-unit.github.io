@@ -165,7 +165,7 @@ $$
 where $\langle\tilde{Ξ},\tilde{Ξ}_{\mathrm{sp}}\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ}_{\mathrm{sp}})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+k_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$; the Lorentzian action's operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $W_{\mathrm{kinetic}}{}^{-1}$. The determinant is the object that <em>The Functional Determinant in Biquaternionic Form</em> computes; this article records only that the Gaussian integral reduces to it.</p>
 <p><strong>Finite-dimensional verification.</strong> The <strong>real</strong> form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
 $$
-A_{\mathrm{gau}} = \begin{pmatrix} 2 & 0.5 & 0 \\ 0.5 & 1.5 & 0.3 \\ 0 & 0.3 & 1.2 \end{pmatrix},
+A_{\mathrm{gau}} = \begin{pmatrix} 2 & 0.5 & 0 \ 0.5 & 1.5 & 0.3 \ 0 & 0.3 & 1.2 \end{pmatrix},
 \qquad \det A_{\mathrm{gau}} = 3.12 ,
 $$
 the zero-source integral is $Z_0=(2\pi)^{3/2}(\det A_{\mathrm{gau}})^{-1/2}=8.9165$ and, for $J=(0.4,-0.7,1.1)$, $Z[J]=Z_0\exp(\tfrac12 J^T A_{\mathrm{gau}}^{-1}J)=23.964$, both to the accuracy shown. It is the real form that the biquaternion field's quadratic form requires, since the action is built from $\mathrm{Sc}$ and hence from a real bilinear pairing; the complex form displayed above, $Z_0=(2\pi)^n/\det A_{\mathrm{gau}}$, is the one appropriate to a complex field and gives the correspondingly larger prefactor for the same matrix. In one dimension, $W[J]-W[0]=J^2/(2a)$ for $K=a$ was checked on $a=1.7$, $J=0.9$, giving $0.23824$, equal to $J^2/(2a)$ to machine precision. The source-dependent part of the free energy is thus the classical action of the free field evaluated on the source, with the factor $\tfrac12$ that the Gaussian integration produces.</p>
@@ -257,7 +257,7 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 $$
 \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\mathcal{F}\,\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\\ \mathcal{F}_L&-k_m\end{pmatrix},
+\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix},
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
@@ -364,7 +364,7 @@ The Gaussian formula was verified in finite dimension ($\det A_{\mathrm{gau}}=3.
 <td>Wedge modular Hamiltonian (the worked causally complete region)</td>
 </tr>
 <tr>
-<td>$\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\\ \mathcal{F}_L&-k_m\end{pmatrix}$</td>
+<td>$\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix}$</td>
 <td>Fermionic Gaussian result (Grassmann integral)</td>
 </tr>
 <tr>

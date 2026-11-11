@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-yangmills-path-integral-and-the-faddeevpopov-procedure-in-biquaternionic-form"><strong>The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>The Gauge Field Path Integral in Biquaternionic Form</em> specialises the functional integral to a gauge field and develops the Faddeev–Popov procedure for the <strong>abelian</strong> case: the gauge orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\Delta=\det(\partial/\partial R_\mu D_\mu)$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article <em>The Yang–Mills Equation in Biquaternionic Form</em> writes the classical non-abelian field equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ and its covariant conservation $\sum_\nu D_\nu J_\nu=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.</p>
+<p>The companion article <em>The Gauge Field Path Integral in Biquaternionic Form</em> specialises the functional integral to a gauge field and develops the Faddeev–Popov procedure for the <strong>abelian</strong> case: the gauge orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\mathcal{J}_{\mathrm{FP}}=\det(\partial/\partial R_\mu D_\mu)$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article <em>The Yang–Mills Equation in Biquaternionic Form</em> writes the classical non-abelian field equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ and its covariant conservation $\sum_\nu D_\nu J_\nu=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.</p>
 <p>Three features distinguish the non-abelian procedure from the abelian one, and they organise everything below.</p>
 <ul>
 <li><strong>The determinant is a functional of the connection.</strong> In the abelian theory the Faddeev–Popov determinant is the field-independent constant $\det\Box^{-1}$, and the ghosts it would introduce decouple. In the non-abelian theory the determinant depends on $\mathcal A$ through the commutator term of the covariant derivative, and it must be represented by anticommuting fields. The ghosts are therefore not an optional device; they are the determinant written as a functional integral.</li>
@@ -139,11 +139,11 @@ which defines the determinant $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$: it is th
 $$
 \mathcal{J}_{\mathrm{FP}}[\mathcal{A}^{\tilde U}]=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}],
 $$
-because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
+because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\mathcal{J}_{\mathrm{FP}}$, the identity turns the integral into
 $$
 Z=\int\mathcal{D}\mathcal{A}\;\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
 $$
-in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\Delta$.</p>
+in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\mathcal{J}_{\mathrm{FP}}$.</p>
 <h3 id="the-determinant-of-the-non-abelian-theory">The Determinant of the Non-Abelian Theory</h3>
 <p>Near a configuration that satisfies $G=0$, the variation of the gauge-fixing functional under an infinitesimal gauge transformation with parameter $\Gamma_a$ is
 $$
@@ -169,7 +169,7 @@ $$
 f_{abc}=2\varepsilon_{abc},
 $$
 which was verified on the defining representation, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ with $T_a=\tfrac12 \vec e_a$.</p>
-<p>The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.</p>
+<p>The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\mathcal{J}_{\mathrm{FP}}$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.</p>
 <h3 id="the-jacobi-identity-and-associativity">The Jacobi Identity and Associativity</h3>
 <p>The algebra that the determinant's locality and the Ward–Slavnov–Taylor identities require is the Jacobi identity of the structure constants,
 $$

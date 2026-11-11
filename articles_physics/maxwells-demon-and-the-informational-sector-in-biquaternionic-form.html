@@ -151,9 +151,9 @@ $$</p>
 <h3 id="the-general-bound">The General Bound</h3>
 <p>For an imperfect record the extractable work is less. The standard result for measurement-feedback processes — the Sagawa–Ueda bound — is</p>
 <p>$$
-W_{\rm ext} \;\le\; -\Delta F_{\rm gas} + k_BT\,I ,
+W_{\rm ext} \;\le\; -\delta F_{\rm gas} + k_BT\,I ,
 $$</p>
-<p>where $I$ is the mutual information established by the measurement and $\Delta F_{\rm gas}$ the change of the free energy of the gas. For the isothermal expansion the internal energy of the ideal gas is unchanged, so $-\Delta F_{\rm gas} = k_BT\,\delta S_{\rm gas}$, and in that case the bound may equally be written $W_{\rm ext} \le k_BT(I + \delta S_{\rm gas})$. For the cyclic engine the gas returns to its initial macrostate, so $\Delta F_{\rm gas} = 0$ and</p>
+<p>where $I$ is the mutual information established by the measurement and $\delta F_{\rm gas}$ the change of the free energy of the gas. For the isothermal expansion the internal energy of the ideal gas is unchanged, so $-\delta F_{\rm gas} = k_BT\,\delta S_{\rm gas}$, and in that case the bound may equally be written $W_{\rm ext} \le k_BT(I + \delta S_{\rm gas})$. For the cyclic engine the gas returns to its initial macrostate, so $\delta F_{\rm gas} = 0$ and</p>
 <p>$$
 \boxed{\;W_{\rm ext} \;\le\; k_BT\,I\;}.
 $$</p>
@@ -302,9 +302,9 @@ $$</p>
 <p>The demon's device is a loop through both sectors of the framework. The gas is material, carrying energy and heat in $\mathbb{B}_{\Phi}$; the record is informational, a classical bit $\tilde{Ϛ}_{\Psi,D} = p_+\tilde\Pi_1(\vec u) + p_-\tilde\Pi_2(\vec u)$ in $\mathbb{B}_{\Psi}$ with entropy $\mathcal{S}(\tilde{Ϛ}_{\Psi,D}) = h(|p_+ - p_-|)$.</p>
 <p>The cycle's four steps are the framework's operations. The <strong>correlation</strong> created by the measurement is a reversible permutation — the rotor class of the algebra: reversible, no work, no entropy — and it creates the mutual information $I$ between gas and record. The <strong>registration</strong> of a definite record is an idempotent projection, a coarse-graining. The <strong>feedback</strong> is a reversible step, and it extracts work bounded by</p>
 <p>$$
-W_{\rm ext} \;\le\; -\Delta F_{\rm gas} + k_BT\,I ,
+W_{\rm ext} \;\le\; -\delta F_{\rm gas} + k_BT\,I ,
 $$</p>
-<p>which for the cyclic engine, where $\Delta F_{\rm gas} = 0$, reduces to $W_{\rm ext}\le k_BT\,I$. The Szilard realisation attains $W_{\rm ext} = k_BT\log2$ for a perfect record, and $I = \log2 - H_2(e) \le \log2$ for a record with error $e$. The <strong>erasure</strong> is a non-unital channel, the only step that lowers the memory's entropy, and it costs at least</p>
+<p>which for the cyclic engine, where $\delta F_{\rm gas} = 0$, reduces to $W_{\rm ext}\le k_BT\,I$. The Szilard realisation attains $W_{\rm ext} = k_BT\log2$ for a perfect record, and $I = \log2 - H_2(e) \le \log2$ for a record with error $e$. The <strong>erasure</strong> is a non-unital channel, the only step that lowers the memory's entropy, and it costs at least</p>
 <p>$$
 W_{\rm erase} \ge k_BT\,H(D) = k_BT\,\mathcal{S}(\tilde{Ϛ}_{\Psi,D}) \ge k_BT\,I .
 $$</p>
@@ -399,7 +399,7 @@ $$</p>
 <td>Binary entropy of the error</td>
 </tr>
 <tr>
-<td>$W_{\rm ext} \le -\Delta F_{\rm gas} + k_BT\,I$</td>
+<td>$W_{\rm ext} \le -\delta F_{\rm gas} + k_BT\,I$</td>
 <td>Sagawa–Ueda bound; $W_{\rm ext}\le k_BT I$ for the closed cycle</td>
 </tr>
 <tr>

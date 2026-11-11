@@ -83,15 +83,15 @@
 <h3 id="the-three-matrices">The Three Matrices</h3>
 <p>The Pauli matrices are</p>
 <p>$$
-\sigma_1=\begin{pmatrix}0&1\\ 1&0\end{pmatrix},\qquad
-\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
-\sigma_3=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}.
+\sigma_1=\begin{pmatrix}0&1\ 1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\ i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\ 0&-1\end{pmatrix}.
 $$</p>
 <p>Two of them carry $i$ or carry zeros on the diagonal. The third is real and diagonal. That difference is the subject of this section, and it is not a difference between three operators. It is a difference between three positions in a list, produced by the order in which the list was built.</p>
 <p>The same asymmetry appears in the two-dimensional image of a general element. The image of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ is</p>
 <p>$$
 \mathsf M_2(\tilde Q)=Q_t\,\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)
-=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\ -iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
+=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\ -iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$</p>
 <p>The diagonal of this matrix carries $Q_t$ and $Q_z$. The off-diagonal carries $Q_x$ and $Q_y$. The trace and the determinant are unaffected — the trace is $2Q_t$ and the determinant is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ in every display — but the shape of the array is not neutral. It puts one spatial coefficient in the diagonal slots and the other two in the off-diagonal slots, and a reader has no way to learn from the array that this was a decision.</p>
 <h3 id="why-the-third-matrix-is-the-diagonal-one">Why the Third Matrix Is the Diagonal One</h3>
@@ -114,11 +114,11 @@ $$</p>
 <p>The arrays of the four units show the direction twice. The time unit is the identity, the $\vec e_z$ array is diagonal, and the other two are off-diagonal inside each of the two identical blocks:</p>
 <p>$$
 L_{\mathrm{pau},e_t}=\mathrm I_4,\qquad
-L_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0&0&0\\ 0&i&0&0\\ 0&0&-i&0\\ 0&0&0&i\end{pmatrix},
+L_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0&0&0\ 0&i&0&0\ 0&0&-i&0\ 0&0&0&i\end{pmatrix},
 $$</p>
 <p>$$
-L_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i&0&0\\ -i&0&0&0\\ 0&0&0&-i\\ 0&0&-i&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix}.
+L_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i&0&0\ -i&0&0&0\ 0&0&0&-i\ 0&0&-i&0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&-1&0&0\ 1&0&0&0\ 0&0&0&-1\ 0&0&1&0\end{pmatrix}.
 $$</p>
 <p>Three statements follow, and each is a statement about the page and not about the algebra.</p>
 <p>Exactly one of the three spatial units is diagonal. A triplet with this shape cannot be written without deciding which unit it is, because the shape of the list — one diagonal member, two off-diagonal members — is what a triplet of this kind is. The decision is made at the moment the arrays are written, and it is made silently.</p>
@@ -246,9 +246,9 @@ $$</p>
 <p>so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_\eta[\mathbb{B}_{\Phi}]^2=-\mathrm I_4$; their product is the fifth, $\gamma_5[\mathbb{B}_{\Phi}]=i\gamma_0[\mathbb{B}_{\Phi}]\gamma_1[\mathbb{B}_{\Phi}]\gamma_2[\mathbb{B}_{\Phi}]\gamma_3[\mathbb{B}_{\Phi}]$, with $\gamma_5[\mathbb{B}_{\Phi}]^2=\mathrm I_4$. All of this was verified on the arrays.</p>
 <p>In the Pauli display of the previous section the five become</p>
 <p>$$
-\gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\\ \mathrm I_2&0\end{pmatrix},\qquad
-\gamma_\eta[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_\eta\\ -\sigma_\eta&0\end{pmatrix},\qquad
-\gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\\ 0&\mathrm I_2\end{pmatrix}.
+\gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\ \mathrm I_2&0\end{pmatrix},\qquad
+\gamma_\eta[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_\eta\ -\sigma_\eta&0\end{pmatrix},\qquad
+\gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\ 0&\mathrm I_2\end{pmatrix}.
 $$</p>
 <p>This is the block form that the Peirce frame produces. It is not a form chosen afterwards, and that is the point of the section.</p>
 <h3 id="the-three-spatial-units-have-three-different-jobs">The Three Spatial Units Have Three Different Jobs</h3>
@@ -320,9 +320,9 @@ does not return itself. Under the exchange of $\vec e_z$ with $\vec e_x$ the dia
 L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,\qquad
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&-Q_z&Q_y\
+Q_y&Q_z&Q_t&-Q_x\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix}.
 $$</p>
@@ -330,11 +330,11 @@ $$</p>
 <p>The four unit arrays show why no direction can enter.</p>
 <p>$$
 L_{\mathrm{axf},e_t}=\mathrm I_4,\qquad
-L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix},
+L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\ 1&0&0&0\ 0&0&0&-1\ 0&0&1&0\end{pmatrix},
 $$</p>
 <p>$$
-L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\qquad
-L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\ 0&0&-1&0\\ 0&1&0&0\\ 1&0&0&0\end{pmatrix}.
+L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\ 0&0&0&1\ 1&0&0&0\ 0&-1&0&0\end{pmatrix},\qquad
+L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\ 0&0&-1&0\ 0&1&0&0\ 1&0&0&0\end{pmatrix}.
 $$</p>
 <p>All three spatial arrays have zero diagonal. Not one of them is preferred, and none of them can be read as "the diagonal one".</p>
 <h3 id="why-no-direction-is-chosen">Why No Direction Is Chosen</h3>

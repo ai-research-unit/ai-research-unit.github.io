@@ -136,10 +136,10 @@ C\,\exp(\,ikx) + D\,\exp(-ikx), & x\to+\infty.
 $$</p>
 <p>The four coefficients are related linearly by the <strong>scattering matrix</strong> $S(k_\Phi)$, defined by</p>
 <p>$$
-\begin{pmatrix} C \\ B \end{pmatrix}
+\begin{pmatrix} C \ B \end{pmatrix}
 =
-\begin{pmatrix} t & r_2 \\ r & t_2 \end{pmatrix}
-\begin{pmatrix} A \\ D \end{pmatrix}.
+\begin{pmatrix} t & r_2 \ r & t_2 \end{pmatrix}
+\begin{pmatrix} A \ D \end{pmatrix}.
 $$</p>
 <p>Here $t$ and $t_2$ are the transmission amplitudes for incidence from the left and from the right, and $r$ and $r_2$ the corresponding reflection amplitudes. The physically measured quantities for a wave incident from the left ($D=0$, $A=1$) are</p>
 <p>$$
@@ -206,8 +206,8 @@ $$</p>
 <p>$$
 \xi_{\mathrm{scl}}(x) =
 \begin{cases}
-\exp(ikx)+r\exp(-ikx), & x<0,\\
-A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\\
+\exp(ikx)+r\exp(-ikx), & x<0,\
+A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\
 t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
@@ -272,15 +272,15 @@ $$</p>
 <h3 id="the-transfer-matrix">The transfer matrix</h3>
 <p>It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_{\Phi,1}$ to $k_{\Phi,2}$ at the origin, continuity of $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ gives</p>
 <p>$$
-\begin{pmatrix} A \\ B \end{pmatrix}
+\begin{pmatrix} A \ B \end{pmatrix}
 =
 \frac{1}{2}
 \begin{pmatrix} 1 + k_{\Phi,2}/k_{\Phi,1} & 1 - k_{\Phi,2}/k_{\Phi,1} \\[2pt] 1 - k_{\Phi,2}/k_{\Phi,1} & 1 + k_{\Phi,2}/k_{\Phi,1} \end{pmatrix}
-\begin{pmatrix} A_2 \\ B_2 \end{pmatrix},
+\begin{pmatrix} A_2 \ B_2 \end{pmatrix},
 $$</p>
 <p>so that the coefficients on the far side are obtained by multiplying by the inverse of this step matrix. Across a region of length $a$ with wave vector $q$, the free propagation matrix is</p>
 <p>$$
-P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \\ 0 & \exp(-iqa) \end{pmatrix}.
+P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \ 0 & \exp(-iqa) \end{pmatrix}.
 $$</p>
 <p>A potential built from $n$ piecewise-constant regions therefore has a <strong>transfer matrix</strong> $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself $*$-unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is $*$-unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.</p>
 <h3 id="composition-and-a-worked-identity">Composition and a worked identity</h3>
@@ -425,7 +425,7 @@ $$</p>
 <td>Density</td>
 </tr>
 <tr>
-<td>$S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$</td>
+<td>$S = \begin{pmatrix} t & r_2 \ r & t_2\end{pmatrix}$</td>
 <td>Scattering matrix; $*$-unitary, $S^{*} S = I_2$</td>
 </tr>
 <tr>

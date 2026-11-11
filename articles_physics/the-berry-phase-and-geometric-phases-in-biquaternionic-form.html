@@ -81,7 +81,7 @@
 <li><strong>The curvature is quantised only on a closed surface.</strong> The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.</li>
 <li><strong>The Berry connection is not the framework's spacetime connection.</strong> It is literally the standard Berry connection, rewritten through the Hermitian form, read through the trace. Its relation to the abelian connection $\tilde{A}_{\Phi}$ of the gauge-principle article is an <strong>analogy</strong>: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.</li>
 </ol>
-<p><strong>Which case.</strong> Throughout the article the level is <strong>non-degenerate</strong> and the Berry phase is <strong>abelian</strong> (a $\mathrm{U}(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\vec h_\Psi|$, and it is required to stay bounded away from zero along the path; at $\vec h_\Psi = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section <em>Degenerate Levels and the Abelian Case</em> states exactly why, and leaves it as a gap.</p>
+<p><strong>Which case.</strong> Throughout the article the level is <strong>non-degenerate</strong> and the Berry phase is <strong>abelian</strong> (a $\mathrm{U}(1)$ number). For the two-level Hamiltonian the gap is $\mathcal{G}_{\mathrm{gap}} = 2|\vec h_\Psi|$, and it is required to stay bounded away from zero along the path; at $\vec h_\Psi = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section <em>Degenerate Levels and the Abelian Case</em> states exactly why, and leaves it as a gap.</p>
 <h2 id="the-adiabatic-setting-and-the-two-phases">The Adiabatic Setting and the Two Phases</h2>
 <p>Let the Hamiltonian depend on a set of real parameters $R = (R^1, R^2, \dots)$ taking values in a parameter space $\mathcal{P}$, and let $\tilde H_\Psi(R) \in \mathbb{B}_{\Psi}$ be Hermitian with instantaneous eigenvalues $E_n(R)$ and eigenvectors $|n(R)\rangle$. The <strong>adiabatic theorem</strong> states that if the gap</p>
 <p>$$
@@ -116,7 +116,7 @@ $$</p>
 \qquad
 \vec u_R = \vec R/R ,
 $$</p>
-<p>with $R = |\vec R|$. The eigenvalues are $\pm R/2$, so the <strong>gap is $\Delta = R$</strong>, and it closes exactly at $\vec R = 0$. Both the spectral decomposition and the eigenvalue formula are verified below by direct biquaternion multiplication.</p>
+<p>with $R = |\vec R|$. The eigenvalues are $\pm R/2$, so the <strong>gap is $\mathcal{G}_{\mathrm{gap}} = R$</strong>, and it closes exactly at $\vec R = 0$. Both the spectral decomposition and the eigenvalue formula are verified below by direct biquaternion multiplication.</p>
 <p><strong>Parameter space.</strong> The eigenstate $\tilde\Pi_{1,2}(\vec u_R)$ depends on $\vec R$ only through the unit direction $\vec u_R$, and on the scalar part $h_t$ not at all (the parent article shows that a central phase cancels from the state). The magnitude $R$ sets the gap but not the eigenstate. The parameter space that matters is therefore the unit sphere</p>
 <p>$$
 \mathcal{P} = \{\vec u_R \in \mathbb{R}^3 : |\vec u_R| = 1\} = S^2 ,
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 \begin{aligned}
 \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},2}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp},2}\right)
-&= \mathrm{Tr}\!\left(\exp(-i\alpha)\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\left(i\,\partial/\partial R_\mu\alpha\,\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} + \exp(i\alpha)\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)\right) \\
+&= \mathrm{Tr}\!\left(\exp(-i\alpha)\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\left(i\,\partial/\partial R_\mu\alpha\,\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} + \exp(i\alpha)\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right)\right) \
 &= i\,\partial/\partial R_\mu\alpha\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}\right).
 \end{aligned}
 $$</p>
@@ -253,7 +253,7 @@ $$</p>
 \tilde H_\Psi(r'_t) = \tfrac12\,i\,\vec R(r'_t) , \qquad
 \vec R(r'_t) = R\bigl(\sin\theta_0\cos(\omega r'_t/c),\ \sin\theta_0\sin(\omega r'_t/c),\ \cos\theta_0\bigr) ,
 $$</p>
-<p>with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\,\omega\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.</p>
+<p>with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\mathcal{G}_{\mathrm{gap}} = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\,\omega\ll  R$. The parameter $\theta_{\mathrm{azm}} = \omega r'_t/c$ runs from $0$ to $2\pi$.</p>
 <p>The spin-up spinor is $\tilde{Ξ}_{\mathrm{sp},+}$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is</p>
 <p>$$
 \mathcal{A}_\theta = 0 , \qquad
@@ -524,7 +524,7 @@ $$</p>
 <td>Solid angle of the cap bounded by the loop</td>
 </tr>
 <tr>
-<td>$\Delta = R$</td>
+<td>$\mathcal{G}_{\mathrm{gap}} = R$</td>
 <td>Spectral gap; closes at $\vec R = 0$</td>
 </tr>
 <tr>

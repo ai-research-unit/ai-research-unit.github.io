@@ -234,9 +234,9 @@ which is the definition of <em>Element and Operator Representations: The Three A
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&-Q_z&Q_y\
+Q_y&Q_z&Q_t&-Q_x\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -275,9 +275,9 @@ the same construction with the order of the two factors exchanged.</p>
 $$
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&Q_z&-Q_y\
+Q_y&-Q_z&Q_t&Q_x\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -581,13 +581,13 @@ R_{\mathrm{pau}}(\tilde Q_1\tilde Q_2)=R_{\mathrm{pau}}(\tilde Q_2)R_{\mathrm{pa
 L_{\mathrm{pau}}(\tilde Q_1)R_{\mathrm{pau}}(\tilde Q_2)=R_{\mathrm{pau}}(\tilde Q_2)L_{\mathrm{pau}}(\tilde Q_1),
 $$
 and the trace and determinant are the same numbers, $\operatorname{tr}L_{\mathrm{pau}}(\tilde Q)=4Q_t$ and $\det L_{\mathrm{pau}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the operator. The dagger is the star conjugate, $L_{\mathrm{pau}}(\tilde Q)^{\dagger}=L_{\mathrm{pau}}(\tilde Q^{*})$. Transposition is not the conjugation in this frame: with the exchange it gives the other family, $R_{\mathrm{pau}}(\tilde Q)=\mathsf S L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, and the conjugation reads $L_{\mathrm{pau}}(\tilde Q^{\natural})=2Q_t\mathrm I_4-L_{\mathrm{pau}}(\tilde Q)$, which is a linear expression in the element and no transpose at all. The transpose is the conjugation in the axis-free frame alone, §<em>The Stitch Between the Two Families</em>.</p>
-<p><strong>The block form of the element.</strong> Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ with
+<p><strong>The block form of the element.</strong> Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\ c&d\end{pmatrix}$ with
 $$
 a=Q_t-iQ_z,\qquad b=-iQ_x-Q_y,\qquad c=-iQ_x+Q_y,\qquad d=Q_t+iQ_z,
 $$
 the left matrix is
 $$
-L_{\mathrm{pau}}(\tilde Q)=\begin{pmatrix}a&b&0&0\\ c&d&0&0\\0&0&a&b\\0&0&c&d\end{pmatrix},
+L_{\mathrm{pau}}(\tilde Q)=\begin{pmatrix}a&b&0&0\ c&d&0&0\\0&0&a&b\\0&0&c&d\end{pmatrix},
 $$
 so the algebra acts on each Peirce component by the same $2\times2$ matrix, and the two components never mix. This is the block the $2\times2$ display names, §<em>The $2\times2$ Pauli Representation</em>.</p>
 <p><strong>The zero block is the point.</strong> Every entry linking an index in $\{1,2\}$ to one in $\{3,4\}$ vanishes for every element. The Peirce frame does not block an arbitrary operator; it blocks the left copy $\mathbb{B}_L$, and the vanishing is the statement that left multiplication preserves the two Peirce components.</p>
@@ -1243,10 +1243,10 @@ with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of §<em>The Two Tensor Fac
 $$
 \mathsf{M}_2(\tilde Q)=
 \begin{pmatrix}
-Q_t-iQ_z&-iQ_x-Q_y\\
+Q_t-iQ_z&-iQ_x-Q_y\
 -iQ_x+Q_y&Q_t+iQ_z
 \end{pmatrix}
-=\begin{pmatrix}a&b\\ c&d\end{pmatrix},
+=\begin{pmatrix}a&b\ c&d\end{pmatrix},
 $$
 which is the $a,b,c,d$ of §<em>The Two Tensor Factors</em>, and the reason the Pauli display has that block.</p>
 <p><strong>The assignment is forced, not chosen.</strong> $\vec e_\eta^2=-e_t$ requires the factor $i$ and $\vec e_x\vec e_y=\vec e_z$ fixes the sign, so neither the factor nor the sign in the three vector images could have been otherwise. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. <em>Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions</em> derives both.</p>
@@ -1288,17 +1288,17 @@ so the axis-free display is the conjugated block. The $2\times2$ image $\mathsf{
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&-Q_z&Q_y\
+Q_y&Q_z&Q_t&-Q_x\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix},
 \qquad
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&Q_z&-Q_y\
+Q_y&-Q_z&Q_t&Q_x\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$

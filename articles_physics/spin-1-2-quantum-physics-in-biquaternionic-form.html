@@ -96,7 +96,7 @@ A = a_0 I_2 + a_1 \sigma_1 + a_2 \sigma_2 + a_3 \sigma_3,
 $$</p>
 <p>with $a_0, a_1, a_2, a_3 \in \mathbb{R}$, where $\sigma_1, \sigma_2, \sigma_3$ are the Pauli matrices:</p>
 <p>$$
-\sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad \sigma_2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \qquad \sigma_3 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
+\sigma_1 = \begin{pmatrix} 0 & 1 \ 1 & 0 \end{pmatrix}, \qquad \sigma_2 = \begin{pmatrix} 0 & -i \ i & 0 \end{pmatrix}, \qquad \sigma_3 = \begin{pmatrix} 1 & 0 \ 0 & -1 \end{pmatrix}.
 $$</p>
 <p>The observables form a real 4-dimensional vector space, closed under addition and multiplication by real scalars, but not under complex multiplication.</p>
 <h3 id="the-born-rule">The Born Rule</h3>
@@ -149,9 +149,9 @@ $$</p>
 <p>This is $i$ times a Hermitian matrix, i.e., an <strong>anti-Hermitian</strong> matrix. So $\mathbb{B}_{\Phi}$ is isomorphic to the space of anti-Hermitian operators on $\mathbb{C}^2$.</p>
 <p><strong>Real quaternion subspace $\mathbb{H}_\mathbb{B}$.</strong> A general element is $\tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_\eta \in \mathbb{R}$. Under the isomorphism:</p>
 <p>$$
-\tilde{Q} \mapsto q_t I_2 - i q_x\sigma_1 - i q_y\sigma_2 - i q_z\sigma_3 = \begin{pmatrix} q_t - i q_z & -i(q_x - i q_y) \\ -i(q_x + i q_y) & q_t + i q_z \end{pmatrix}.
+\tilde{Q} \mapsto q_t I_2 - i q_x\sigma_1 - i q_y\sigma_2 - i q_z\sigma_3 = \begin{pmatrix} q_t - i q_z & -i(q_x - i q_y) \ -i(q_x + i q_y) & q_t + i q_z \end{pmatrix}.
 $$</p>
-<p>This is a four-real-dimensional subspace of $M_2(\mathbb{C})$: the span of $I_2, i\sigma_1, i\sigma_2, i\sigma_3$, equivalently the matrices of the form $\begin{pmatrix} x & -\bar{y} \\ y & \bar{x} \end{pmatrix}$ with $x, y \in \mathbb{C}$. It is a subalgebra isomorphic to $\mathbb{H}$. It is <strong>not</strong> the full algebra $M_2(\mathbb{C})$: the full algebra is the image of the whole of $\mathbb{B}$ (eight real dimensions), obtained by letting all four coefficients be complex.</p>
+<p>This is a four-real-dimensional subspace of $M_2(\mathbb{C})$: the span of $I_2, i\sigma_1, i\sigma_2, i\sigma_3$, equivalently the matrices of the form $\begin{pmatrix} x & -\bar{y} \ y & \bar{x} \end{pmatrix}$ with $x, y \in \mathbb{C}$. It is a subalgebra isomorphic to $\mathbb{H}$. It is <strong>not</strong> the full algebra $M_2(\mathbb{C})$: the full algebra is the image of the whole of $\mathbb{B}$ (eight real dimensions), obtained by letting all four coefficients be complex.</p>
 <h2 id="the-observables">The Observables</h2>
 <p>The identification of $\mathbb{B}_{\Psi}$ with the observables is direct.</p>
 <p><strong>Statement.</strong> The Hermitian subspace $\mathbb{B}_{\Psi}$ is isomorphic, as a real vector space, to the space of observables of a spin-1/2 quantum system.</p>
