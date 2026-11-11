@@ -23,7 +23,7 @@ $$
 with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units of the algebra $\mathbb{B}$ of *Algebra and Element Conventions*, and $i$ the scalar imaginary unit commuting with them. The source's first statement is the **factorization of the wave operator**
 
 $$
-\boxed{\;-\Delta + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = (D - i\partial/\partial r'_t)(D + i\partial/\partial r'_t)\;},
+\boxed{\;-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = (D - i\partial/\partial r'_t)(D + i\partial/\partial r'_t)\;},
 \tag{1}
 $$
 
@@ -61,11 +61,11 @@ $$
 and the two parabolic Dirac operators are the corpus's gradient and the negative of its conjugate, read in **real time**:
 
 $$
--\Delta + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = -(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = -\Box.
+-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = -(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = -\Box.
 \tag{3}
 $$
 
-The sign in (3) is the entire difference between the two interpretations, and it is the difference the corpus already records as the Wick rotation: the corpus's $\Box$ carries $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$ and is elliptic on the Euclidean slice, while the source's $-\Delta + \partial^2/\partial {r'_{t}}^2$ carries a real time and is hyperbolic. The source works in the hyperbolic signature throughout, so the null set of $\Box$ is the light cone and the operator is not elliptic; the elliptic tools (maximum principle, mean value property, Liouville) of *Biquaternion Analysis* are consequently not available, and the source does not use them.
+The sign in (3) is the entire difference between the two interpretations, and it is the difference the corpus already records as the Wick rotation: the corpus's $\Box$ carries $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$ and is elliptic on the Euclidean slice, while the source's $-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2$ carries a real time and is hyperbolic. The source works in the hyperbolic signature throughout, so the null set of $\Box$ is the light cone and the operator is not elliptic; the elliptic tools (maximum principle, mean value property, Liouville) of *Biquaternion Analysis* are consequently not available, and the source does not use them.
 
 ## The Kernel as a Div-Curl System
 
@@ -108,7 +108,7 @@ The system (4) is the source's interpretation of the kernel as a **Cauchy–Riem
 
 ### The Harmonic-Conjugate Construction
 
-The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta + \partial^2/\partial {r'_{t}}^2)g = 0$, then
+The construction that pairs the two halves is the source's Propositions 5 and 7. If $g$ is a quaternion-valued solution of the wave equation $(-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2)g = 0$, then
 
 $$
 b(r_x,r'_t) := \int_0^{r'_{t}} Dg(r_x,s)\,ds - T_\Omega[\partial/\partial r'_t g](r_x,0) + \mathrm{grad}\,\xi(r_x)
@@ -202,10 +202,10 @@ which rearranges to $(D \pm i\partial/\partial r'_t)L_{\mathcal{C}}R_{\pm}[w] = 
 
 ### The Correction of the Inverse's Scalar Part
 
-One consequence is used in the application. The source's Corollary 11 observes that, because the operator has **two** orderings, applying $(-\Delta + \partial^2/\partial {r'_{t}}^2)$ to $L_{\mathcal{C}}R_{\pm}[\mp i w]$ gives not $w$ but
+One consequence is used in the application. The source's Corollary 11 observes that, because the operator has **two** orderings, applying $(-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2)$ to $L_{\mathcal{C}}R_{\pm}[\mp i w]$ gives not $w$ but
 
 $$
-(-\Delta + \partial^2/\partial {r'_{t}}^2)L_{\mathcal{C}}R_{\pm}[\mp i w] = (D \mp i\partial/\partial r'_t)w,
+(-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2)L_{\mathcal{C}}R_{\pm}[\mp i w] = (D \mp i\partial/\partial r'_t)w,
 $$
 
 so the scalar part of $L_{\mathcal{C}}R_{\pm}[\mp i w]$ solves the homogeneous wave equation if and only if the scalar part of $(D \mp i\partial/\partial r'_t)w$ vanishes, that is if and only if $\mathrm{div}\,\vec{w} \pm i\partial/\partial r'_t w_0 = 0$. In the time-independent case this is exactly the condition that the vector field be solenoidal, which is the class the heterogeneous div-curl literature requires. The vector part of the right-hand side need not vanish, so it is only the scalar part of the transform that is a wave solution without further correction; the correction itself is the completion (7) of the previous section.
@@ -266,7 +266,7 @@ L_{\mathcal{C}}R_{\pm,\lambda}[w](r_x,r'_t) := \int_0^{r'_{t}}\int_{\mathbb{R}^3
 \tag{16}
 $$
 
-with the completion rescaling $g_0 \pm \tfrac{1}{\lambda}\mathcal{V}[g_0] \in \ker(D \pm i\lambda\partial/\partial r'_t)$ whenever $g_0$ solves $(-\Delta + \lambda^2\partial^2/\partial {r'_{t}}^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
+with the completion rescaling $g_0 \pm \tfrac{1}{\lambda}\mathcal{V}[g_0] \in \ker(D \pm i\lambda\partial/\partial r'_t)$ whenever $g_0$ solves $(-\Delta_\Phi + \lambda^2\partial^2/\partial {r'_{t}}^2)g_0 = 0$ (its Corollary 15). The application is Maxwell's equations in a homogeneous isotropic medium in **SI units**,
 
 $$
 \mathrm{div}\,\vec{E} = \frac{\rho}{\epsilon}, \qquad
@@ -286,7 +286,7 @@ reduced to a single equation of the form $(D - i\partial/\partial r'_t)Ξ = -\ti
 
 ## Summary
 
-The source's wave-operator factorisation $-\Delta + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = (D - i\partial/\partial r'_t)(D + i\partial/\partial r'_t)$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial/\partial R_t = -i\partial/\partial r'_t$. The kernel of $D \pm i\partial/\partial r'_t$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial/\partial r'_t)L_{\mathcal{C}}R_{\pm}[\mp iw] = w$ follows from the symbol computation $\partial/\partial r'_t T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's dual field strength $-i\tilde F$, and its Proposition 12 is the corpus's $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
+The source's wave-operator factorisation $-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = (D - i\partial/\partial r'_t)(D + i\partial/\partial r'_t)$ is exact in both orderings and is the real-time (hyperbolic) twin of the corpus's elliptic factorisation $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$: the source's two first-order operators are the corpus's biquaternionic gradient and the negative of its conjugate, read with $\partial/\partial R_t = -i\partial/\partial r'_t$. The kernel of $D \pm i\partial/\partial r'_t$ is exactly a generalized div-curl system, the time-dependent analogue of the corpus's Cauchy–Riemann–Fueter system, and it couples a scalar solution of the wave equation to its harmonic conjugate through the Teodorescu transform. The Fourier transform of the kernel is the quaternionic exponential of a pure vector, which is a **unit-modulus phase** — this unimodularity is the single fact that makes the parabolic Teodorescu transform an $L^2$ isometry in space, well defined for both signs, and its right-inverse property $(D \pm i\partial/\partial r'_t)L_{\mathcal{C}}R_{\pm}[\mp iw] = w$ follows from the symbol computation $\partial/\partial r'_t T = w \pm iDT$. The Maxwell application reproduces the corpus's single equation — the source's $\vec{E} + i\vec{B}$ is the corpus's dual field strength $-i\tilde F$, and its Proposition 12 is the corpus's $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ up to the $4\pi$ of Gaussian units — and then goes beyond it constructively: pushing the source through the right inverse and subtracting the scalar part $g_0 - \mathcal{V}[g_0]$ yields an explicit **purely vectorial** solution, a constructive family complementary to the retarded convolution the corpus records. The price is a set of source defects: a mislabelled fundamental solution whose homogeneous defining equation and $L^1$ requirement are inconsistent with its own unit-modulus transform, a missing factor $i$ in the §5.1 symbol equation, an SI reduction whose constants could not be read faithfully, and two solution theorems whose exact normalisations were not verifiable from the running text. The record is of a method new to the corpus and of a reformulation already in it.
 
 ## Summary of Notation
 

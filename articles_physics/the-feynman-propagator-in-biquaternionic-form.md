@@ -302,7 +302,7 @@ What it does not do is choose the orientation. Replacing $\epsilon$ by $-\epsilo
 The closest the complex structure comes to doing real work is the Wick rotation. On the material sector the d'Alembertian reads
 
 $$
-\Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta ,
+\Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta_\Phi ,
 $$
 
 a hyperbolic operator: one sign against three. The substitution $r'_t=-i\tau$ turns $\partial^2/\partial {r'_t}^2$ into $-\partial^2/\partial\tau^2$, so the same operator becomes

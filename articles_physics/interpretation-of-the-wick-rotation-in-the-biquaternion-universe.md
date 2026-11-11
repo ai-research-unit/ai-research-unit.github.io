@@ -130,12 +130,12 @@ $$
 Z_E = \int  \mathcal{D}\xi\; \exp(-S_E[\xi]/\hbar),
 $$
 
-with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial^2/\partial {r'_{t}}^2 + \Delta$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
+with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
 In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{B}_{\Phi}$ is continued to a field on $\mathbb{B}_{H}$ by the substitution $i r'_t \mapsto c\tau$. The d'Alembertian, read on the material sector, is
 
 $$
-\Box = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2},
+\Box = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 
 and the same operator, read on the real coordinates of $\mathbb{B}_{H}$, is
@@ -155,7 +155,7 @@ The reason the change is useful is that $\mathbb{B}_{H}$ is the compact real sli
 | Property | $\mathbb{B}_{H}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|
 | Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
-| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-\partial^2/\partial {r'_{t}}^2 + \Delta$ (hyperbolic) |
+| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |

@@ -42,13 +42,13 @@ Two points of discipline are kept in view. Every displayed formula is applied to
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial/\partial R_t = -i\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$ is the wave operator $\Delta - \partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}_{\Phi}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.
+**Statement.** (a) Show that with $\partial/\partial R_t = -i\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$ is the wave operator $\Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}_{\Phi}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.
 
 **Solution.** (a) Since $\partial/\partial R_t = -i\partial/\partial r'_t = -i\partial/\partial r'_t$,
 $$
 \partial^2/\partial R_t^2 = \left(-i\partial/\partial r'_t\right)^2 = -\frac{\partial^2}{\partial {r'_{t}}^2},
 \qquad\text{so}\qquad
-\Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2} .
+\Box = \partial^2/\partial R_t^2 + \Delta = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2} .
 $$
 The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))$, the operator has symbol
 $$
@@ -283,7 +283,7 @@ The parent and its companion are correct where they are defined, and the derivat
 
 ## Summary
 
-The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2}$, has the retarded Green's function
+The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial R_t^2 + \Delta = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$, has the retarded Green's function
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right),
 \qquad
@@ -312,7 +312,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\partial/\partial R_t = -i\partial/\partial r'_t$ | Temporal component of the gradient |
-| $\Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2}$ | Wave operator (d'Alembertian) |
+| $\Box = \partial^2/\partial R_t^2 + \Delta = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$ | Wave operator (d'Alembertian) |
 | $\delta^{(4)}(\tilde{Q}) = \delta(r'_t)\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Four-dimensional Dirac delta |
 | $G(\tilde{Q})$ | Green's function, $\Box G = -\delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$ | Retarded Green's function |

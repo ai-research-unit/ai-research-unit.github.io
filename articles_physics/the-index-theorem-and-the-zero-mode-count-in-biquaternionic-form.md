@@ -67,7 +67,7 @@ $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
 
-The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box$, and on the material sector that reads $\Delta-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
+The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
 
 **The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair
 

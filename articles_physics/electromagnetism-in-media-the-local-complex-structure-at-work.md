@@ -62,7 +62,7 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 
 The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
 $$
-\Box=\Delta-\partial^2/\partial {r'_{t}}^2,
+\Box=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2,
 $$
 the d'Alembertian in the temporal length $r'_t$. Written in the clock time it is $\Delta-c^{-2}\,\partial^2/\partial {t'}^2$, the d'Alembertian of a medium with speed $c$, and there it reduces to the vacuum value with $c$ in place of $c_0$.
 
@@ -280,7 +280,7 @@ The equivalence is exact and two-way, not a weak-coupling approximation in $\bet
 **The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $\mathcal{M}_0=\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial r'_t$ commutes with $D$,
 $$
 \left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t+iD\right)
-=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta=-\Box ,
+=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta_\Phi=-\Box ,
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is *first* order.
 
@@ -868,7 +868,7 @@ The vacuum is the special case $\epsilon=\epsilon_0$, $\mu=\mu_0$, $c=c_0$, $Z=Z
 $$
 \tilde{F}=i\sqrt{\epsilon_0}\,\vec E-\sqrt{\mu_0}\,\vec H,
 $$
-the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and the d'Alembertian becomes $\Box=\partial^2/\partial R_t^2+\Delta=\Delta-\partial^2/\partial {r'_{t}}^2$, which in the clock time is $\Delta-c_0^{-2}\partial^2/\partial {t'}^2$. The complex time coordinate becomes $i r'_t$, recovering the familiar $i r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k_\Phi^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
+the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and the d'Alembertian becomes $\Box=\partial^2/\partial R_t^2+\Delta=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, which in the clock time is $\Delta-c_0^{-2}\partial^2/\partial {t'}^2$. The complex time coordinate becomes $i r'_t$, recovering the familiar $i r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k_\Phi^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
 
 This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the Maxwell article and is not settled here.
 
@@ -999,7 +999,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\epsilon_0,\mu_0$ | Vacuum permittivity and permeability |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Constitutive relations |

@@ -18,7 +18,7 @@ $$
 \Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 
-the last read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$, as $\Delta-\partial^2/\partial {r'_t}^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
+the last read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$, as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
 
 **The field, its two members and the pair.** The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and the dynamics is the **chiral pair**
 $$

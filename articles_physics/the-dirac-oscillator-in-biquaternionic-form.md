@@ -32,7 +32,7 @@ $$
 \Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$. Write $\vec\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the d'Alembertian is $\Box=\Delta-\partial^2/\partial {r'_t}^2$.
+with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$. Write $\vec\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the d'Alembertian is $\Box=\Delta_\Phi-\partial^2/\partial {r'_t}^2$.
 
 **Why the mass needs two fields.** The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla\vec\nabla=-\Delta_Q$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:
 
@@ -406,7 +406,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$, $\vec e_y\vec e_x = -\vec e_z$ |
 | $\tilde\nabla_\Phi$ | The corpus gradient, $e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta-\partial^2/\partial {r'_t}^2$ |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\vec\nabla = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
 | $\vec\nabla_\pm = \vec\nabla\pm\dfrac{\omega\,k_m}{c}\vec r$ | The two non-minimal shifts of the spatial gradient |
 | $\omega = -\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar; the right factor carried by a velocity action |

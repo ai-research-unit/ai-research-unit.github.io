@@ -38,7 +38,7 @@ $$
 $$
 On the material sector the substitution is $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so $\partial/\partial R_t=\partial/\partial i r'_t$. Its norm is the d'Alembertian $\Box$ of that article,
 $$
-\Box=\Delta-\frac{\partial^2}{\partial {r'_{t}}^2},
+\Box=\Delta_\Phi-\frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 with the one minus the square of the $i$.
 The gradient acts on the left. The free equation is first order in one field, $\tilde\nabla_\Phi\tilde F=0$. The massive equation is not a one-field equation, because $\tilde\nabla^2$ is not scalar: the time unit $e_t$ is central and commutes with the three spatial units, so the time–space cross terms add instead of cancelling,
@@ -323,7 +323,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
 | $\tilde\nabla^{ea}_\mu$, $\tilde\nabla^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
-| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla_\Phi$; on $Q_t=i q'_t$ it is $\Delta-\partial^2/\partial {r'_t}^2$ |
+| $\Box$ | The d'Alembertian, the norm of $\tilde\nabla_\Phi$; on $Q_t=i q'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\epsilon=(1,-1,-1,-1)$ | The plain weight, read from the multiplication $\mathrm{Sc}(e_\mu e_\nu)=\epsilon_\mu\delta_{\mu\nu}$; the diagonal of the generator pairing; distinct from $\varepsilon$ |

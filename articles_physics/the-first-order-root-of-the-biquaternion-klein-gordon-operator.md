@@ -30,7 +30,7 @@ There are two senses of "first-order root", and the article separates them. A **
 
 Three results:
 
-- **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
+- **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta_\Phi-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
 - **The free equation is first order in one field.** $\tilde\nabla_\Phi\tilde{Ξ}=0$ implies $\Box\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.
 - **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$.
 
@@ -41,7 +41,7 @@ The four components are the four coefficients of a biquaternion. The count of si
 $\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=r'_{t}$ and $r_\eta$, related to the algebra coordinates by $Q_t=i q'_t$ and $Q_\eta=q_\eta$. Derived from that relation, its Lorentz form is
 
 $$
-\Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta ,
+\Box=-\frac{\partial^2}{\partial {r'_t}^2}+\Delta_\Phi ,
 $$
 
 because the substitution turns $\partial^2/\partial R_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
@@ -61,7 +61,7 @@ $$
 and on the material sector, where $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the same operator is
 
 $$
-\tilde\nabla^2=\Box-2\Delta-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial q_\eta}.
+\tilde\nabla^2=\Box-2\Delta_\Phi-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial q_\eta}.
 $$
 
 The mixed term is the whole difference. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial R_t\partial R_\eta$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.

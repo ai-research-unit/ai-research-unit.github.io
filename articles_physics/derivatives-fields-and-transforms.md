@@ -83,8 +83,8 @@ At the two equal arguments the four forms give two operators:
 
 | Norm | Operator | On the material sector |
 | --- | --- | --- |
-| quaternionic bilinear and Hermitian | $\Box=\dfrac{\partial^2}{\partial R_t^2}+\Delta_Q$ | $\Delta-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {r'_{t}}^2}$ |
-| plain bilinear and Krein | $\dfrac{\partial^2}{\partial R_t^2}-\Delta_Q$ | $-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {r'_{t}}^2}-\Delta$ |
+| quaternionic bilinear and Hermitian | $\Box=\dfrac{\partial^2}{\partial R_t^2}+\Delta_Q$ | $\Delta_\Phi-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {r'_{t}}^2}$ |
+| plain bilinear and Krein | $\dfrac{\partial^2}{\partial R_t^2}-\Delta_Q$ | $-\dfrac{1}{c^2}\dfrac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi$ |
 
 The d'Alembertian is the quaternionic bilinear and the Hermitian norm:
 
@@ -92,7 +92,7 @@ $$
 \boxed{\;\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q\;}.
 $$
 
-The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta-\partial^2/\partial {r'_{t}}^2$ and $-\partial^2/\partial {r'_{t}}^2-\Delta$. The corpus keeps one d'Alembertian and one sign.
+The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ and $-\partial^2/\partial {r'_{t}}^2-\Delta_\Phi$. The corpus keeps one d'Alembertian and one sign.
 
 ### The Determinant of the First-Order Operator
 
@@ -202,7 +202,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\v
 
     and on the material sector, where the field is written $\xi_{\mathrm{scl}}$, this is $-\lvert\partial\xi_{\mathrm{scl}}/\partial r'_t\rvert^2+\lvert\nabla\xi_{\mathrm{scl}}\rvert^2$. The kinetic Lagrangian is its negative, so the signature of the kinetic term is the signature of the Hermitian form on the gradient; the overall sign is a convention. Boundary: the identification is the Klein–Gordon Lagrangian interpretation; the value of the Hermitian form on the gradient is not positive, because the time derivative is imaginary on the material sector; no dynamics is derived.
 
-- **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta-\partial^2/\partial {r'_{t}}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial R_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
+- **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial R_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
 
 - **The wave operator is the determinant of the first-order operator.** The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$. The second-order wave equation is therefore the determinant of a first-order matrix, and the square of a first-order equation. Boundary: this is the determinant of the regular matrix, a matrix computation; the doubling is the regular representation's two chiral copies, not a prediction of doubled particles, and the substitution of the derivative for the coefficient is the legitimate substitution of commuting partial derivatives.
 
@@ -235,7 +235,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\v
 
 ## Summary
 
-The analysis block has one first-order operator, the gradient $\tilde\nabla_\Phi$, and one second-order operator, the d'Alembertian $\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)$. The four general products read on the gradient give the divergence, the gradient and the curl, four forms and two second-order norms; the d'Alembertian is the quaternionic and Hermitian norm, $\partial^2/\partial R_t^2+\Delta_Q$, and on the material sector it is $\Delta-\partial^2/\partial {r'_{t}}^2$. The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$: the second-order wave operator is the determinant of a first-order operator.
+The analysis block has one first-order operator, the gradient $\tilde\nabla_\Phi$, and one second-order operator, the d'Alembertian $\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)$. The four general products read on the gradient give the divergence, the gradient and the curl, four forms and two second-order norms; the d'Alembertian is the quaternionic and Hermitian norm, $\partial^2/\partial R_t^2+\Delta_Q$, and on the material sector it is $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$. The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$: the second-order wave operator is the determinant of a first-order operator.
 
 The Fourier transform is generated by a root of $-1$: the root is the clock, the frequency is its rate, the conjugate axis is an imaginary direction of the algebra, and the interval is the symbol of the d'Alembertian, with the mass shell as its level set. The transform is a change of description, not a measurement; it is invertible where the transform pair holds, and it does not make the informational sector the Fourier dual of the material one. The transform of a positive measure is not positive definite for the biquaternion norm, because the norm is indefinite and negative on the centre; with the Hermitian form, positivity holds exactly for the degenerate roots and fails for the genuinely complex ones. The vanishing norm marks the cone where the transform is not guaranteed to be invertible; the precise condition is open.
 

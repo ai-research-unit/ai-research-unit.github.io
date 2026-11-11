@@ -23,7 +23,7 @@ $$
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta_Q$, which on the material sector reads $\Delta-\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.
+with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ and the d'Alembertian $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta_Q$, which on the material sector reads $\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$. The gradient is an element with derivative coefficients. It acts by left multiplication, on one field, and it uses no matrix and no second side.
 
 The free field equation is the corpus's Maxwell equation of *Maxwell's Equations in the Biquaternionic Formulation*,
 
@@ -482,7 +482,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", its duality generator, not the corpus's central $i$ |
 | $-\vec e_z$ | Fixed spin-plane bivector; as the element $\omega$ it multiplies the spinor on the right |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$; an element with derivative coefficients, acting on the left |
-| $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta-\partial^2/\partial{r'_{t}}^2$ |
+| $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$ |
 | $\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$ | Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |

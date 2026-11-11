@@ -28,7 +28,7 @@ $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
+read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
 
 The classical field theory is defined by the parent article's Lagrangian density. The field is $\tilde{Ξ}_{\mathrm{sp}}$, with the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and its **Dirac adjoint** is the right multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ by the single element $i\vec e_x$,
 

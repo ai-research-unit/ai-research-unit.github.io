@@ -98,7 +98,7 @@ The imaginary character of the time coordinate is **intrinsic** to the material 
 The d'Alembertian on $\mathbb{B}_{\Phi}$ is
 
 $$
-\Box_{\mathbb{B}_{\Phi}} = -\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta,
+\Box_{\mathbb{B}_{\Phi}} = -\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta_\Phi,
 $$
 
 which is the ordinary Lorentzian wave operator. The wave operator has the same form as in standard relativistic physics, but the imaginary time is now an algebraic feature of the framework, not a computational device.

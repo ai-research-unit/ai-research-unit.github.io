@@ -36,7 +36,7 @@ Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating re
 
 The sections follow that order: the ansatz and its domain, the two real equations, the momentum and the current, the non-relativistic limit, what the change of variables adds, and the general field.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
 
 ## The Scalar Case: the Ansatz and Its Domain
 
@@ -78,14 +78,14 @@ The corpus's polar word, $\tilde Q=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde
 
 ### The identity
 
-The d'Alembertian of the ansatz separates into a real and an imaginary part with no remainder, because the amplitude and the action are real and the exponential is central. With $\Box=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector,
+The d'Alembertian of the ansatz separates into a real and an imaginary part with no remainder, because the amplitude and the action are real and the exponential is central. With $\Box=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector,
 
 $$
 \Box\!\left(\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}\right)
 =e^{iS_{\tilde\Xi}/\hbar}\left\{\Box\lVert\tilde\Xi\rVert+\frac{\lVert\tilde\Xi\rVert}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{\lVert\tilde\Xi\rVert}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
 $$
 
-The first two terms are real and the third is purely imaginary. The verification is one differentiation of a product: each derivative of the field returns a real term, an imaginary term and a cross term carrying both functions once, and the temporal second derivative enters with the sign that $\Box=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ gives it.
+The first two terms are real and the third is purely imaginary. The verification is one differentiation of a product: each derivative of the field returns a real term, an imaginary term and a cross term carrying both functions once, and the temporal second derivative enters with the sign that $\Box=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ gives it.
 
 Dividing by $\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}$ and using $\hbar k_m=mc$, the equation $\left(\Box-k_m^{2}\right)\Xi_t=0$ becomes the pair
 
@@ -468,7 +468,7 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\mathbb{B}_{C}$ | Centre, $\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$; the scalar's home |
 | $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $\Box=\partial^{2}/\partial R_t^{2}+\Delta=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ | d'Alembertian on the material sector |
+| $\Box=\partial^{2}/\partial R_t^{2}+\Delta=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | d'Alembertian on the material sector |
 | $r'_t=c\,t'$ | Material time, a length in the same unit as $r_\eta$ |
 | $R_t=h_t+i r'_t$ | Complex time; $h_t$ informational, $r'_t$ material |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |

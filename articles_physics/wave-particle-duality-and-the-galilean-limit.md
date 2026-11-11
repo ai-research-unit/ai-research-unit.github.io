@@ -108,7 +108,7 @@ $$
 Both sides are polynomials with constant coefficients, so the identity is also an identity of operators: $\mathcal{P}=2k_m\,\mathcal{S}+\mathcal{R}$, where $\mathcal{S}$ has symbol $\sigma_{\mathrm{s}}$ and $\mathcal{R}$ has symbol $k_{\mathrm{s}}^{2}$. In position space,
 
 $$
-\mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r'_t}-k_m+\frac{1}{2k_m}\Delta ,
+\mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r'_t}-k_m+\frac{1}{2k_m}\Delta_\Phi ,
 $$
 
 with $\Delta=\vec\nabla^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-ik_mr'_t}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
