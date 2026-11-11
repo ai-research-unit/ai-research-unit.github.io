@@ -71,8 +71,8 @@
         <h1 id="the-gradient-with-the-tilde-where-the-subscript-stands"><strong>The Gradient with the Tilde: Where the Subscript Stands</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>What this is.</strong> A census of every gradient the physics corpus writes with a tilde, and of the sector subscript the corpus puts on it or leaves off. The prose comes first. Every list of articles is at the end of the document.</p>
-<p><strong>The headline.</strong> $201$ of the $470$ articles write the tilde, and they print it $4191$ times. $2980$ glyphs carry a sector subscript: $2930$ the material $\Phi$, $50$ the informational $\Psi$. $488$ are labelled variants, $108$ are powers, $169$ are definitions. The remaining $446$ carry no mark, in $39$ articles.</p>
-<p><strong>The partition of the $201$.</strong> $201=162+39$. The $162$ leave nothing unmarked. The $39$ carry at least one unmarked glyph, and they split two ways: $36$ print no sector subscript anywhere, and $3$ print the subscript elsewhere in the article and leave some glyphs bare. Neither group holds a wrong glyph. The $36$ hold an under-determined one, and §III says what is missing.</p>
+<p><strong>The headline.</strong> $201$ of the $470$ articles write the tilde, and they print it $4191$ times. $2980$ glyphs carry a sector subscript: $2930$ the material $\Phi$, $50$ the informational $\Psi$. $488$ are labelled variants, $108$ are powers, $169$ are definitions. The remaining $446$ carry no mark, in $39$ articles. <strong>After the correction of §III case B</strong> the same census reads $2947$ the material $\Phi$, $2997$ subscripts, and $429$ with no mark: the $17$ patched glyphs moved from the last column to the first.</p>
+<p><strong>The partition of the $201$.</strong> $201=162+39$. The $162$ leave nothing unmarked. The $39$ carry at least one unmarked glyph, and they split two ways: $36$ print no sector subscript anywhere, and $3$ print the subscript elsewhere in the article and leave some glyphs bare. Neither group holds a wrong glyph. Of the $36$, $12$ write $\partial/\partial R_\mu$ and their bare glyph names the operator on all eight coordinates exactly; $5$ write $r'_t$, so the material part is meant and the subscript was omitted — those $5$ are patched; $19$ write no chart at all, and their glyph is under-determined. §III gives the three cases, the counts, and the worked example of the two Dirac articles.</p>
 <p><strong>The rule.</strong> The subscript is printed where the operator is applied at the material parameters. It is left off for a power ($\tilde\nabla^{2}$), a labelled variant ($\tilde\nabla_{\mathrm{gco}}$, $\tilde\nabla_\kappa$, the kernel label $\tilde G_{\Phi,\tilde\nabla}$), a definition ($\tilde\nabla=e_t\,\partial_{R_t}+\dots$), and an article that fixes no chart at all and works at the eight coordinates $R_\mu$.</p>
 <h2 id="the-glyph">The Glyph</h2>
 <p><strong>The operator.</strong></p>
@@ -147,28 +147,69 @@ $$</p>
 <p><strong>The kernel label is not an application.</strong> $\tilde G_{\Phi,\tilde\nabla}$ names the first-order kernel, and its low slot already holds a label. The glyph inside it names the operator the kernel inverts, not an operator applied at a chart. A second subscript there would collide with the label, and the sector of the kernel is already printed: $\Phi$.</p>
 <p><strong>The two conventions articles are definitions by design.</strong> <em>Operator and Calculus Conventions</em> and <em>Physics Units and Common Elements Conventions</em> define the operator, name it, state the general theorems that hold on the eight coordinates, and list it in the notation table. Their statements hold before any sector is fixed, and marking them would print a sector on a statement that is not about one.</p>
 <h2 id="iii-the-thirty-six-articles-that-print-no-subscript">III. The Thirty-Six Articles That Print No Subscript</h2>
-<p><strong>$36$ articles, $299$ unmarked glyphs, and not one glyph is wrong.</strong> They split by what they declare, and the split is the whole of this section: $17$ declare the eight coordinates, and there the bare glyph is correct by the conventions' own rule; $19$ declare no coordinate at all, and there the glyph is under-determined.</p>
-<p><strong>The test.</strong> The two sectors take disjoint directions:</p>
+<p><strong>$36$ articles, $299$ unmarked glyphs before the correction, $270$ after it.</strong> The verdict is not one verdict. Three cases, decided by one question: which coordinate does the article write?</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>The article writes</th>
+<th>Articles</th>
+<th>Glyphs</th>
+<th>Verdict on the bare glyph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>$\partial/\partial R_\mu$</td>
+<td>$12$</td>
+<td>$104$</td>
+<td>Correct: it means the operator on all eight coordinates</td>
+</tr>
+<tr>
+<td>B</td>
+<td>$r'_t$</td>
+<td>$5$</td>
+<td>$31$, now $2$</td>
+<td>Wrong: the material part was meant. Corrected below.</td>
+</tr>
+<tr>
+<td>C</td>
+<td>no coordinate</td>
+<td>$19$</td>
+<td>$164$</td>
+<td>Under-determined: nothing in the article decides</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule, quoted.</strong> The conventions state it twice. In <em>Operator and Calculus Conventions</em>, §<em>Summary</em>: "A gradient read on one part always carries that part's subscript and never stands bare: $\tilde\nabla_\Phi$ on the material part, $\tilde\nabla_\Psi$ on the informational one. A bare $\tilde\nabla$ means the operator on all eight coordinates, and it is the only symbol that may appear without a part subscript." In the same article, §<em>The Two First-Order Equations and Their Symbol</em>, paragraph <em>Marks.</em>: "The gradient keeps its own rule: $\tilde\nabla$ bare when it means the operator on all eight coordinates, and a part subscript, $\tilde\nabla_\Phi$ or $\tilde\nabla_\Psi$, wherever one part's coefficients are meant." Two cases and no third.</p>
+<p><strong>The directions, which is what decides.</strong> The parts take disjoint coordinates:</p>
 <p>$$
 \tilde\nabla_\Phi:\ \partial_{r'_t},\ \partial_{r_\eta},
 \qquad
 \tilde\nabla_\Psi:\ \partial_{r_t},\ \partial_{r'_\eta}.
 $$</p>
-<p>A gradient can carry $\Phi$ only if the field it acts on varies in $r'_t$ and $r_\eta$ and in none of the other four. The conventions state the other half of the rule: the gradient is bare "when it means the operator on all eight coordinates", $\partial/\partial R_\mu=\partial/\partial r_\mu-i\,\partial/\partial r'_\mu$. So the question for each article is one question: which coordinates does it write?</p>
-<p><strong>The evidence, from the corpus and not from a rule.</strong> Of the $70$ articles that write the chiral pair with the subscript, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, all $70$ write $r'_t$. Of the $17$ that write it bare, $2$ write $r'_t$, and both are the conventions articles, which keep $R_\mu$ complex on purpose. The subscript and the material chart appear together or not at all.</p>
-<p><strong>The $17$ that declare the eight coordinates, $155$ glyphs.</strong> They write $R_\mu$ or $\partial/\partial R_\mu$, so their operator is the full one and the bare glyph names it exactly. The largest are <em>BRST Symmetry</em> with $42$ mentions of $R_\mu$, <em>Maxwell's Equations in Chiral Media</em> with $17$, <em>The Schwinger–Dyson Equations</em> with $14$, and <em>The Higgs Mechanism as an Erasure of Information</em> with $12$. A $\Phi$ here would narrow an operator the article has widened, and the conventions forbid it.</p>
-<p><strong>The $19$ that declare no coordinate, $144$ glyphs.</strong> They write no $r'_t$, no $r_t$, no $r'_\eta$ and no $R_\mu$. Some write $\omega t$ with the real $t$; some write $t'$ bare; the proton article says in as many words that the gradients are the same in its two readings without saying which coordinates those are. Nothing in the article fixes the chart, so nothing in the article decides the subscript. These are the only open glyphs left in the corpus.</p>
-<p><strong>Why the bare glyph is not wrong even there.</strong> In none of the $36$ does the field vary in $r_t$ or in $r'_\eta$. The informational part annihilates it, and</p>
-<p>$$
-\tilde\nabla_\Psi\tilde{Ξ}=0
-\quad\Longrightarrow\quad
-\tilde\nabla\tilde{Ξ}=\tilde\nabla_\Phi\tilde{Ξ}.
-$$</p>
-<p>The two writings agree identically, so no equation in these articles changes under either spelling. The same holds for $\tilde\nabla\tilde\nabla^{\natural}=\Box$, which fixes no sector, and for $D=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A_\Phi$, whose $\tilde A_\Phi$ already carries the sector.</p>
-<p><strong>What the repair is, and what it is not.</strong> For the $19$, the repair is one sentence in each article declaring the chart. Once the material chart is declared, the subscript follows for the chiral pair and for the covariant derivative, and it changes no algebra. Writing $\Phi$ first, without the declaration, would assert the material chart on the article's behalf, article by article, which is the error this census exists to prevent.</p>
+<p>A glyph read on the material part differentiates in $r'_t$ and $r_\eta$. A glyph that means the operator on all eight coordinates is written in the coordinate $R_\mu$. So the article's own coordinates fix the case, before any subscript is discussed.</p>
+<h3 id="the-dirac-pair-as-the-worked-example">The Dirac pair, as the worked example</h3>
+<p>The corpus settles the question by contradicting itself in two articles, and the contradiction is instructive because both are about the same equation.</p>
+<p><em>The Dirac Equation in Biquaternionic Form</em> writes $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ with the subscript, $62$ times, and it says why: "The operator is read on the material sector $\mathbb{B}_\Phi$, where $Q_t=ir'_t$ and $Q_\eta=q_\eta$."</p>
+<p><em>The Polar Form of the Dirac Equation in Biquaternionic Form</em> writes the same equation bare, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, and it also says which sector: "Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector, $\tilde\nabla\alpha=\dots=\tilde K_\Phi$."</p>
+<p><strong>What is true between them.</strong> The operator is the same operator and the equation is the same equation. Where the field varies only in $\vec r$ and $r'_t$, the informational part annihilates it, so $\tilde\nabla\tilde{Ξ}=\tilde\nabla_\Phi\tilde{Ξ}$ identically: the two spellings return the same element, and the polar form's own display shows the reduction instead of assuming it. So neither article is wrong about the physics, and the difference is one mark.</p>
+<p><strong>Which of the two is convention-correct.</strong> The first. The second reads the gradient on the material sector, in its own words, and the rule says a gradient read on one part "never stands bare". Its bare glyph departs from the rule by the mark alone, and the article supplies the missing information in prose rather than in the glyph.</p>
+<p><strong>The general lesson.</strong> The subscript is not decoration and it is not physics either. It records a fact the article already knows. Where the article writes that fact down — in words, as the polar form does — the bare glyph is readable but non-conforming. Where the article writes neither the fact nor the coordinate, no reader can recover it.</p>
+<h3 id="the-three-cases">The three cases</h3>
+<p><strong>Case A, $12$ articles, $104$ glyphs: the bare glyph is correct.</strong> They write $\partial/\partial R_\mu$ and mean the operator on all eight coordinates. The strongest are <em>BRST Symmetry</em> with $25$ derivatives, <em>The Schwinger–Dyson Equations</em> with $7$, <em>Chiral Fermions</em> with $6$, <em>The Higgs Mechanism as an Erasure of Information</em> with $6$. Four rest on a single occurrence in a table row or a passing display: <em>The Proton</em>, <em>The Local Entropy Current</em>, <em>Maxwell's Equations in Chiral Media</em>, <em>The Differentiable Field</em>. One written derivative establishes the index, and no more than that.</p>
+<p><strong>Case B, $5$ articles, $31$ glyphs: the bare glyph was wrong, and the patch is done.</strong> After it, $2$ bare glyphs remain in those five, and both name the operator in prose rather than apply it. They write the material time and omitted the subscript. The five are <em>Wave–Particle Duality and the Fourier Transform</em> ($14$ mentions of $r'_t$), <em>The Polar Form of the Dirac Equation</em> ($11$), <em>The Three Wavenumbers of a Particle</em> ($9$), <em>Wave–Particle Duality and the Galilean Limit</em> ($10$), <em>Harmonic Elementary Particles</em> ($2$). These are the only articles in the census where a subscript was genuinely omitted rather than withheld.</p>
+<p><strong>What the correction changed.</strong> $29$ glyphs in $4$ articles, $13$ in the Fourier article, $9$ in the Polar Form, $5$ in The Three Wavenumbers, $2$ in the Galilean Limit. The fifth, <em>Harmonic Elementary Particles</em>, applies no gradient at all — its one bare glyph names the operator in prose — so it is left as it stands. The list is the last block of this document. The chiral pair now reads $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; the four-potential contraction $\tilde\nabla_\Phi\alpha=\tilde K_\Phi$ carries the subscript in both the display and the table; the d'Alembertian factorisations read $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, both factors marked; the Maxwell and scattering sites read $\tilde\nabla_\Phi\tilde F=-\sqrt\mu\,\tilde J_\Phi$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_\Phi)$; the two glossary rows that describe the operator as "the time derivative plus the three spatial ones" now print $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$.</p>
+<p><strong>What the patch left alone, deliberately.</strong> Prose that names the operator without applying it ("the biquaternionic gradient $\tilde\nabla$ does the same"; "this is not the corpus's $\tilde\nabla$") keeps the bare glyph, because it names the operator rather than reading it on a part. The two conventions articles are untouched: their bare glyph is the subject of the rule, not a lapse from it.</p>
+<p><strong>Case C, $19$ articles, $164$ glyphs: no verdict is possible.</strong> They write no $r'_t$, no $r_t$, no $r'_\eta$ and no $\partial/\partial R_\mu$. Some write $\omega t$ with the real $t$; some write $t'$ bare. Nothing in them fixes the chart, so nothing in them decides the mark. <em>Bhabha Multi-Mass</em> carries $26$ glyphs and <em>The Square-Zero Element</em> $25$, and both leave the question open.</p>
+<p><strong>Why the equation is not the test.</strong> The chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ appears in all three cases. It cannot separate them; only the written coordinate can.</p>
+<p><strong>Why case C is not a defect of value.</strong> In those articles the field does not vary in $r_t$ or in $r'_\eta$, so $\tilde\nabla_\Psi\tilde{Ξ}=0$ and $\tilde\nabla\tilde{Ξ}=\tilde\nabla_\Phi\tilde{Ξ}$. No equation changes under either spelling. The same holds for $\tilde\nabla\tilde\nabla^{\natural}=\Box$, which fixes no sector, and for $D=\tilde\nabla+\frac{iϙ}{\hbar}\tilde A_\Phi$, whose $\tilde A_\Phi$ already carries the sector.</p>
+<p><strong>What the repair is, case by case.</strong> In case B, print the subscript: the article already says which part is meant, so the patch adds no assertion. In case C, declare the chart first; the subscript then follows and changes no algebra. In case A, change nothing.</p>
+<p><strong>A correction to earlier drafts of this audit.</strong> The group was first split $17$/$19$, then $12$/$24$. The second split was still wrong: its test recognized $r'_t$ in one spelling only, so five articles that write $r_{t}^{\prime}$ were counted as declaring nothing. Case B is what that error hid, and it is the only case that holds a real defect.</p>
 <h2 id="iv-what-was-actually-added">IV. What Was Actually Added</h2>
 <p><strong>Eight articles received a subscript</strong>, each at a chart the article already fixes and none of them on a label. They are listed at the end.</p>
-<p><strong>Twenty-three product factors</strong>, in sixteen articles, each a bare factor that became the material one.</p>
+<p><strong>Twenty-nine glyphs in four articles</strong>, the applied gradients of §III case B, each a bare glyph that became the material one. <strong>Twenty-three product factors</strong>, in sixteen articles, each a bare factor that became the material one.</p>
 <p><strong>Eleven hundred and ninety-eight respellings</strong>, in $138$ articles, moving the sector inside the parenthesis and $\natural$ outside. This one changes no element.</p>
 <p>No glyph was added where the low slot already holds a label, and none was added in the $36$ articles of §III.</p>
 <h2 id="v-the-other-half">V. The Other Half</h2>
@@ -310,13 +351,13 @@ $$</p>
 </table></div>
 <p><strong>The four research articles have no unmarked use at all.</strong> <em>The Biquaternion d'Alembertian and Its Green's Functions</em> ($6$ definitions, $35$ glyphs inside the kernel label), <em>Maxwell's Equations in the Biquaternionic Formulation</em> ($2$ and $9$), and <em>Exercise: The Retarded Potentials and the Green's Function</em> ($0$ and $3$) print the tilde and mark every application. Their bare glyphs are definitions and label glyphs, so they are not in the count above.</p>
 <h2 id="c-the-thirty-six-articles-that-print-no-subscript">C. The Thirty-Six Articles That Print No Subscript</h2>
-<p>The middle column is the chart the article declares. The $17$ that print $R_\mu$ carry the operator on all eight coordinates, so their bare glyph is correct by the conventions' rule. The $19$ that declare no coordinate leave the glyph under-determined.</p>
+<p>$36$ articles, $299$ unmarked glyphs before the correction and $270$ after it. The third column is the coordinate the article itself writes, and that is what decides the case: A writes $\partial/\partial R_\mu$ and the bare glyph names the operator on all eight coordinates; B writes $r'_t$ and the material part was meant; C writes no coordinate and nothing decides. The fourth column quotes the equation the article prints.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Article</th>
 <th>Unmarked</th>
-<th>Coordinates written</th>
+<th>Case and coordinate</th>
 <th>Form of the equation</th>
 </tr>
 </thead>
@@ -324,218 +365,218 @@ $$</p>
 <tr>
 <td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
 <td>$28$</td>
-<td>$R_\mu$</td>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$; $\dots\tilde\nabla$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
-<td>$25$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla\tilde\nabla^{\natural}\dots$; $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}\dots$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-polar-form-of-the-coupled-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Coupled Dirac Equation in Biquaternionic Form</a></td>
 <td>$14$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla\dots$; $\tilde\nabla^{\natural}\tilde\nabla=\Box$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.$; $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\,\tilde K_{\Phi,\mathrm{gco}}\,\tilde\Xi.$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
 <td>$11$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Lambda$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L},$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
 <td>$11$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}\dots$; $\dots\tilde\nabla\dots$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
-<td>$10$</td>
-<td>$R_\mu$</td>
-<td>$\dots\tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\dots$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$Q S=\int d^4r\;\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}(r_x)$; $\Big\langle\,\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}(r_x)\Big\rangle=0 .$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-local-entropy-current.html">The Local Entropy Current</a></td>
 <td>$10$</td>
-<td>$R_\mu$</td>
-<td>$\dots\tilde\nabla^{\natural}$; $\langle\tilde\nabla\dots$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde Q\right)=\partial_\mu Q_\mu$; $\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde\Sigma_\Psi\right)=0$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
 <td>$9$</td>
-<td>$R_\mu$</td>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\\dots$; $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a></td>
-<td>$9$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\\dots$; $\tilde\nabla\dots$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$; $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a></td>
 <td>$8$</td>
-<td>$R_\mu$</td>
-<td>$\dots\langle\tilde\nabla\dots$; $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/relativistic-mechanics-from-the-dirac-wave.html">Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form</a></td>
-<td>$6$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_{m}\tilde\Xi_{\mathrm{sp},L}\dots$; $\tilde\nabla^{\natural}\tilde\nabla$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$B=-\zeta^{-1}\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}$; $\tilde{Ξ}_{\mathrm{sp}}=\bar{c}(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B)$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
 <td>$6$</td>
-<td>$R_\mu$</td>
-<td>$\dots\tilde{\nabla}$; $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0,$; $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
 <td>$2$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\\dots$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}\dots$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\,\Gamma\,\overline{\tilde{Ξ}_{\mathrm{sp}}} ,$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_y ,$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html">Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</a></td>
 <td>$2$</td>
-<td>$R_\mu$</td>
-<td>$\dots\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde\nabla=e_t\partial/\partial R_t+D_3$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</a></td>
 <td>$2$</td>
-<td>$R_\mu$</td>
-<td>$\tilde\nabla$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html">Harmonic Elementary Particles and the Periodic System of Atoms</a></td>
-<td>$1$</td>
-<td>$R_\mu$</td>
-<td>$\tilde{\nabla}$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>…\tilde\nabla…</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a></td>
 <td>$1$</td>
-<td>$R_\mu$</td>
-<td>$\dots\tilde{\nabla}\Gamma$</td>
+<td>A — $\partial/\partial R_\mu$</td>
+<td>$\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a></td>
+<td>$1$</td>
+<td>B — $r'_t$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=i\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$; $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html">Harmonic Elementary Particles and the Periodic System of Atoms</a></td>
+<td>$1$</td>
+<td>B — $r'_t$</td>
+<td>…\tilde{\nabla}…</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-fourier-transform.html">Wave–Particle Duality and the Fourier Transform</a></td>
+<td>$0$</td>
+<td>B — $r'_t$</td>
+<td>$\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box ,$; $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a></td>
+<td>$0$</td>
+<td>B — $r'_t$</td>
+<td>$\tilde\nabla_\Phi\alpha=\tilde K_{\Phi}$; $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-galilean-limit.html">Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</a></td>
+<td>$0$</td>
+<td>B — $r'_t$</td>
+<td>…\tilde\nabla…</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
 <td>$26$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde\nabla^{\natural}\dots$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>$25$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z,$; $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a></td>
 <td>$16$</td>
-<td>none declared</td>
-<td>$\tilde\nabla$; $\dots\tilde\nabla$</td>
+<td>C — none declared</td>
+<td>$[\,L(\tilde\nabla),-iR_u\,]=0 .$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a></td>
 <td>$13$</td>
-<td>none declared</td>
-<td>$\dots\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} =k_m\\dots$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/wave-particle-duality-and-the-fourier-transform.html">Wave–Particle Duality and the Fourier Transform</a></td>
-<td>$13$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde\nabla^{\natural}\dots$; $\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
 <td>$11$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
+<td>$10$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a></td>
 <td>$9$</td>
-<td>none declared</td>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}\dots$; $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>C — none declared</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a></td>
 <td>$9$</td>
-<td>none declared</td>
-<td>$\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}\dots$; $\dots\tilde\nabla^{\natural}\dots$</td>
+<td>C — none declared</td>
+<td>$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}})=\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}})$; $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
 <td>$7$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}\dots$; $\tilde\nabla$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
 <td>$7$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}\dots$; $\tilde\nabla$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$</td>
 </tr>
 <tr>
-<td><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a></td>
+<td><a href="../articles_physics/relativistic-mechanics-from-the-dirac-wave.html">Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form</a></td>
 <td>$6$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\dots$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_{\mu}}+\frac{i\,ϙ}{\hbar}A_{\mu},$; $\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_{\mu}}+\frac{i\,ϙ}{\hbar}A_{\mu}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a></td>
 <td>$5$</td>
-<td>none declared</td>
-<td>$\dots\tilde\nabla$; $\tilde\nabla F_{\mathrm{dual}}=0$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla F_{\mathrm{dual}}=0$; $\boxed{\;\tilde\nabla\bigl(\exp(-i\theta)F_{\mathrm{dual}}\bigr)=\exp(-i\theta)\,\tilde\nabla F_{\mathrm{dual}}=0\;}.$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
 <td>$4$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}\dots$; $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.html">Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone</a></td>
 <td>$4$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\longmapsto i\tilde K_{\Phi}\dots$; $\tilde\nabla$</td>
+<td>C — none declared</td>
+<td>…\tilde\nabla…</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
 <td>$3$</td>
-<td>none declared</td>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>C — none declared</td>
+<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},$; $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
 <td>$3$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}\dots$; $\tilde\nabla$</td>
+<td>C — none declared</td>
+<td>…\tilde\nabla…</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a></td>
 <td>$2$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
 <td>$2$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\dots$</td>
+<td>C — none declared</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L} ,$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} .$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a></td>
 <td>$2$</td>
-<td>none declared</td>
-<td>$\dots\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta$</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/wave-particle-duality-and-the-galilean-limit.html">Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</a></td>
-<td>$2$</td>
-<td>none declared</td>
-<td>$\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>C — none declared</td>
+<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta$</td>
 </tr>
 </tbody>
 </table></div>
@@ -1468,6 +1509,44 @@ $$</p>
 <td>$1$</td>
 <td>$\tilde\nabla_\Phi\tilde\nabla^{\natural}$ $\times1$</td>
 <td>$\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="f-the-seventeen-sites-added-with-the-correction-of-case-b">F. The Seventeen Sites Added with the Correction of Case B</h2>
+<p>Four articles, each already writing the material time $r'_t$. The gradient is applied there, so the part is the material one and the subscript belongs. The count in the middle column is the number of $\Phi$ subscripts the article now carries.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Now $\Phi$</th>
+<th>As printed</th>
+<th>Corrected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-fourier-transform.html">Wave–Particle Duality and the Fourier Transform</a></td>
+<td>$13$</td>
+<td>$\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_\Phi$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$; glossary rows $\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
+<td>$\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi$; $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$; rows $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a></td>
+<td>$9$</td>
+<td>$\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L}$; $\tilde\nabla\alpha=\tilde K_\Phi$; $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla=\Box$</td>
+<td>$\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L}$; $\tilde\nabla_\Phi\alpha=\tilde K_\Phi$; $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a></td>
+<td>$5$</td>
+<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$; $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-galilean-limit.html">Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</a></td>
+<td>$2$</td>
+<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>$\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$</td>
 </tr>
 </tbody>
 </table></div>

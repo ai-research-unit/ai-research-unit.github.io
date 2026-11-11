@@ -72,9 +72,9 @@
 <h2 id="introduction">Introduction</h2>
 <p>The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. <em>The Dirac Equation in Biquaternionic Form</em> writes it as the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
 $$</p>
 <p>and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no minimal left ideal, no Peirce decomposition, no chiral projector, no Clifford algebra. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript <code>sp</code> is the corpus's caret for the spinor role, beside <code>scl</code> for the scalar role and <code>fop</code> for the field operator, as the caret table of <em>Algebra and Element Conventions</em> fixes it.</p>
 <p>This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the polar word of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, in the exponential form it takes in <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>:</p>
@@ -268,7 +268,7 @@ $$</p>
 <h3 id="the-phase-gradient-is-the-four-momentum">The Phase Gradient Is the Four-Momentum</h3>
 <p>The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r_{t}^{\prime}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,</p>
 <p>$$
-\tilde\nabla\alpha
+\tilde\nabla_\Phi\alpha
 =e_t\frac{\partial\alpha}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\alpha}{\partial R_\eta}
 =-i\frac{\partial\alpha}{\partial r_{t}^{\prime}}e_t+\nabla\alpha
 =i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
@@ -454,7 +454,7 @@ $$</p>
 <p>The polar form of the Dirac field of this corpus is $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ the scale, $\alpha$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The parameters are eight and the components are eight, so the word is a bijection, and its domain is the $N$-regular set: the polar form exists exactly where $N\neq0$ and fails on every $N$-degenerate field.</p>
 <p>The field is one element and the two letters of the pair name its two parts. They are not two values, and the polar form gives the reason: an element of definite value satisfies $\tilde X(\vec e_z\pm ie_t)=0$, so it is a zero divisor and has $N=0$, which places it outside the word's domain. A split into definite-value parts would be a split into two objects on which the word is undefined.</p>
 <p>The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\alpha}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.</p>
-<p>The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla\alpha=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.</p>
+<p>The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla_\Phi\alpha=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.</p>
 <p>The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.</p>
 <p>The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.</p>
 <p>The word fails on the zero divisors and nowhere else, that is on the $N$-degenerate elements and on no others. Two families lie there: the parts of definite value, and the one-sided plane waves, each by the one line that a nonzero element annihilated by, or annihilating, a nonzero element is a zero divisor. This is not the nodal set: a one-sided plane wave is nowhere zero and has $N=0$ everywhere. Masslessness does not put the field on the cone, because the sum of two one-sided parts is generally a unit and the cross term carries the norm. What survives on the cone is the two-factor decomposition, not the four-factor word.</p>
@@ -484,8 +484,8 @@ $$</p>
 <td>The field, one element of $\mathbb{B}$; the letters name the two parts</td>
 </tr>
 <tr>
-<td>$\tilde\nabla,\ \tilde\nabla^{\natural}$</td>
-<td>Biquaternionic gradient and its quaternion conjugate, $\tilde\nabla^{\natural}\tilde\nabla=\Box$</td>
+<td>$\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$</td>
+<td>Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$</td>
 </tr>
 <tr>
 <td>$\tilde R_\Phi=i r_{t}^{\prime}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
@@ -544,7 +544,7 @@ $$</p>
 <td>Four-velocity of the word; $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$</td>
 </tr>
 <tr>
-<td>$\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla\alpha$</td>
+<td>$\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi\alpha$</td>
 <td>Four-momentum and four-wavevector; $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$</td>
 </tr>
 <tr>

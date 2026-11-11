@@ -86,7 +86,7 @@ $$</p>
 <p><strong>A constant-coefficient linear equation is therefore two equations.</strong> It is a differential equation in the position basis and an algebraic equation in the wave-number basis. The two are the same equation, and the map between them is unitary, so norms, inner products and expectation values cross unchanged.</p>
 <p><strong>In this algebra the label is an element, not a number.</strong> On the material sector the gradient becomes multiplication by the wave-number element,</p>
 <p>$$
-\tilde\nabla\longmapsto i\,\tilde K_{\Phi},
+\tilde\nabla_\Phi\longmapsto i\,\tilde K_{\Phi},
 \qquad
 \tilde K_{\Phi}=i\,k_{t}^{\prime}e_{t}+\vec k_{\Phi},
 \qquad
@@ -94,7 +94,7 @@ $$</p>
 $$</p>
 <p>and the d'Alembertian becomes a scalar because the product $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is the quaternion norm, which is central:</p>
 <p>$$
-\tilde\nabla\tilde\nabla^{\natural}=\Box\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
 \qquad
 \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
 $$</p>
@@ -132,7 +132,7 @@ $$</p>
 <h3 id="the-gradient-form-and-the-level-set">The gradient form and the level set</h3>
 <p><strong>The gradient form assigns a number to the derivative, and it is the operator that acts on the field.</strong> The product with the conjugate is the d'Alembertian outright, not merely its scalar part, because the product of an element and its quaternion conjugate is central:</p>
 <p>$$
-\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box ,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box ,
 $$</p>
 <p>and its symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:</p>
 <p>$$
@@ -157,7 +157,7 @@ $$</p>
 <tr>
 <td>object</td>
 <td>$ \tilde\Xi^{\dagger}\tilde\Xi $</td>
-<td>$ \tilde\nabla\tilde\nabla^{\natural} $</td>
+<td>$ \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} $</td>
 </tr>
 <tr>
 <td>what it is</td>
@@ -369,8 +369,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.</strong> Transforming $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\,\mathcal{F}[\tilde F]=-\sqrt{\mu}\,\mathcal{F}[\tilde J_{\Phi}]$, an equation in the algebra with the symbol as the coefficient. The transform of a field is written $\mathcal{F}[\tilde F]$, as <em>Biquaternion Continuous Harmonic Analysis</em> writes it, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction. There is no number to set a level on: the symbol is an element, and the equation is solved by <strong>inverting</strong> it, $\mathcal{F}[\tilde F]=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\mathcal{F}[\tilde J_{\Phi}]$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor and the map loses rank, from three complex dimensions to two, checked on the $3/3$ and $4/4$ pairs.</p>
-<p><strong>The constraint the corpus prints is the cokernel of that map, and it is also the transformed continuity equation.</strong> Because the field is a pure vector, the symbol carries three complex dimensions into four, so off the cone it has a cokernel of exactly one complex dimension. The functional that spans it is $\mathcal{F}[\tilde J_{\Phi}]\mapsto i\,\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\mathcal{F}[\tilde J_{\Phi}])$, which is the symbol of $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$ — the corpus's integrability condition, term for term, and it annihilates the image to $10^{-15}$ while the unconjugated functional does not. Evaluated on $\tilde J_{\Phi}=ic\rho\,e_{t}+\vec J$ it reads $\vec k_{\Phi}\cdot\mathcal{F}[\vec J]=k_{t}^{\prime}\,\mathcal{F}[c\rho]$, which with $k_{t}^{\prime}=\omega/c$ is $\omega\,\mathcal{F}[\rho]=\vec k_{\Phi}\cdot\mathcal{F}[\vec J]$: the transformed continuity equation of this article, to the identity. <strong>Charge conservation is not a second law standing beside the field equation. It is the compatibility of the field equation, and the transform shows the two statements are the same one.</strong> On the cone the rank drops and the cokernel becomes two-dimensional; that is the wave-number form of the statement that a front carries an extra condition. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.</p>
+<p><strong>The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.</strong> Transforming $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\,\mathcal{F}[\tilde F]=-\sqrt{\mu}\,\mathcal{F}[\tilde J_{\Phi}]$, an equation in the algebra with the symbol as the coefficient. The transform of a field is written $\mathcal{F}[\tilde F]$, as <em>Biquaternion Continuous Harmonic Analysis</em> writes it, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction. There is no number to set a level on: the symbol is an element, and the equation is solved by <strong>inverting</strong> it, $\mathcal{F}[\tilde F]=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\mathcal{F}[\tilde J_{\Phi}]$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor and the map loses rank, from three complex dimensions to two, checked on the $3/3$ and $4/4$ pairs.</p>
+<p><strong>The constraint the corpus prints is the cokernel of that map, and it is also the transformed continuity equation.</strong> Because the field is a pure vector, the symbol carries three complex dimensions into four, so off the cone it has a cokernel of exactly one complex dimension. The functional that spans it is $\mathcal{F}[\tilde J_{\Phi}]\mapsto i\,\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\mathcal{F}[\tilde J_{\Phi}])$, which is the symbol of $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$ — the corpus's integrability condition, term for term, and it annihilates the image to $10^{-15}$ while the unconjugated functional does not. Evaluated on $\tilde J_{\Phi}=ic\rho\,e_{t}+\vec J$ it reads $\vec k_{\Phi}\cdot\mathcal{F}[\vec J]=k_{t}^{\prime}\,\mathcal{F}[c\rho]$, which with $k_{t}^{\prime}=\omega/c$ is $\omega\,\mathcal{F}[\rho]=\vec k_{\Phi}\cdot\mathcal{F}[\vec J]$: the transformed continuity equation of this article, to the identity. <strong>Charge conservation is not a second law standing beside the field equation. It is the compatibility of the field equation, and the transform shows the two statements are the same one.</strong> On the cone the rank drops and the cokernel becomes two-dimensional; that is the wave-number form of the statement that a front carries an extra condition. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.</p>
 <p><strong>The pattern is not a coincidence of organisation.</strong> In each row the object on the left of the transform is a differential statement and the object on the right is a number or a matrix. The table is the corpus's list of contents read as a table of forms.</p>
 <h2 id="limits">Limits</h2>
 <p><strong>The unitarity is asserted on a domain the corpus has not closed.</strong> <em>Derivatives, Fields and Transforms</em> states the transform pair as invertible on functions of non-vanishing norm, sufficient on $\mathbb{B}_{H}$, exact on $\mathbb{B}_{\Phi}$ away from the cone, and open for a function that takes zero-divisor values on a set of positive measure. The state module is that open case: every state of the corpus is a zero divisor. So the unitarity used here is exact wherever the two descriptions are related by a transform pair, and on the states themselves it is a stated hypothesis and not a theorem. No display below leans on the difference, because each is an identity between numbers on the modes that carry weight, and a mode is a character, whose own transform is a delta.</p>
@@ -476,11 +476,11 @@ $$</p>
 <td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
 </tr>
 <tr>
-<td>$ \tilde\nabla $</td>
+<td>$ \tilde\nabla_\Phi $</td>
 <td>the gradient, the time derivative plus the three spatial ones</td>
 </tr>
 <tr>
-<td>$ \tilde\nabla^{\natural} $</td>
+<td>$ (\tilde\nabla_\Phi)^{\natural} $</td>
 <td>its conjugate, whose product with it is $\Box$</td>
 </tr>
 <tr>
