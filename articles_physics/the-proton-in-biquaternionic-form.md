@@ -50,7 +50,7 @@ $$
 (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-and composing the two lines gives $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
+and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
 
 The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.
 
@@ -59,7 +59,7 @@ The two lines act on the element and contain no matrix generator. What the readi
 | Equation | $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ | the same two lines |
 | Field | $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$, two elements | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values |
 | Mass | the off-diagonal coupling of the two entries | the same coefficient, off-diagonal in the two values |
-| Operator | left multiplication by the gradient and its quaternion conjugate, one on each entry | the same two, $\Box$ on each value after the two lines are composed |
+| Operator | left multiplication by the gradient and its quaternion conjugate, one on each entry | the same two, $\Box_\Phi$ on each value after the two lines are composed |
 | Chirality | the entry | the value carried by each part |
 | Use | the definition, the mass term, the mass shell | the charge, the charge value, the bilinears |
 
@@ -321,7 +321,7 @@ With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box_\Phi$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
 
 $$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},
@@ -345,7 +345,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian (electric-charge) factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator), acting on the left |
-| $\Box = \tilde{\nabla}_\Phi(\tilde{\nabla}_\Phi)^{\natural}$ | d'Alembertian |
+| $\Box_\Phi = \tilde{\nabla}_\Phi(\tilde{\nabla}_\Phi)^{\natural}$ | The d'Alembertian in the material reading |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
@@ -355,7 +355,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The two gradients of the pair; $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R and $\tilde\nabla_\Phi$ the R to the L, and each line composed with the other returns $\Box$ |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The two gradients of the pair; $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R and $\tilde\nabla_\Phi$ the R to the L, and each line composed with the other returns $\Box_\Phi$ |
 | $\Gamma=-iR_{\vec e_z}$ | The chirality basis operator, the basis operator that reads the two values; the legacy section writes it $\gamma_5$ |
 | $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |

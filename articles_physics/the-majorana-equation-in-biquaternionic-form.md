@@ -24,7 +24,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i q'_t$ and $r'_t$ is a length, the time carried with the constant kept, $r'_t=c\,t'$; the metric coefficient of the seconds $t'$ is $g_{tt}=-c^{2}$ and the quadratic form in $r'_t$ is $\langle\tilde Q\rangle_{\natural}=-{r'_{t}}^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The constant $c$ is carried in every display below, and none of them sets it to one.
 
-**The two operators.** The gradient $\tilde\nabla_\Phi$ and the d'Alembertian $\Box$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its quaternion conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
+**The two operators.** The gradient $\tilde\nabla_\Phi$ and the d'Alembertian $\Box_\Phi$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its quaternion conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
 
 **The letters.** The basis operator of a frame is the right multiplication by the third unit with the phase $-i$, a pure right multiplier whose side is the right slot,
 $$
@@ -159,7 +159,7 @@ sixteen real equations in the sixteen real parameters of the two amplitudes. The
 
 **The solution at fixed momentum.** On the shell the nullity is eight, and the projection onto the first amplitude is of rank eight: the amplitude $\tilde{Ξ}_{\mathrm{sp},0}$ is free and the conjugate amplitude $\tilde{Ξ}_{\mathrm{sp},1}$ is determined by it. The amplitude carries four real coefficients and the conjugate amplitude four more, which is the eight of the Dirac field; the counting of the previous section is the counting of one of the two.
 
-**The shell.** Squaring the equation, and using that the product of the gradient with its quaternion conjugate is the d'Alembertian, gives $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+**The shell.** Squaring the equation, and using that the product of the gradient with its quaternion conjugate is the d'Alembertian, gives $\Box_\Phi\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ for each amplitude, so the solutions sit on the ordinary mass shell and the mass enters as the parameter of the dispersion and not as a normalisation. The computation is elementary and exact; its result is the first row of the nullity table. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **What the pair is not.** The pair is not a second equation. The two lines are the two exponentials of one equation, and a reader who counts them as two fields counts the field and its conjugate twice.
 
@@ -256,7 +256,7 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 | $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$ | The units of the algebra; $\vec e_z$ is the unit whose right multiplication reads the letter |
 | $\bar\cdot$ | The coefficient conjugation: an automorphism, antilinear over $\mathbb{C}$, an involution |
 | ${}^{*}$ | The Hermitian conjugation: an anti-automorphism, antilinear, an involution |
-| $\tilde\nabla_\Phi$, $\Box$ | The gradient and the d'Alembertian, as the series fixes them |
+| $\tilde\nabla_\Phi$, $\Box_\Phi$ | The gradient and the d'Alembertian in the material reading, as the series fixes them |
 | $\mathbb{B}_{\Phi}$ | The frame with $Q_t=i q'_t$ and $g_{tt}=-c^{2}$ |
 | $\theta$, $\tilde P_{\Phi}$ | The phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and the momentum element $ik_{t}^{\prime}e_t+\vec k_\Phi$ |
 | $k_{t}^{\prime}e_t+i\vec k_\Phi$ | The derivative of the display on $\exp(i\theta)$, as a left multiplication |

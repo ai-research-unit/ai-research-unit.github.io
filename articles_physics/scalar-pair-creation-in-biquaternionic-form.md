@@ -35,7 +35,7 @@ $$
 so that the effective equation of motion is
 
 $$
-\left(\Box-\mu^2-g\,\xi(\tilde R_\Phi)\right)\tilde{Ξ}=0 .
+\left(\Box_\Phi-\mu^2-g\,\xi(\tilde R_\Phi)\right)\tilde{Ξ}=0 .
 $$
 
 If the background is **homogeneous**, $\xi=\xi(r'_t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,

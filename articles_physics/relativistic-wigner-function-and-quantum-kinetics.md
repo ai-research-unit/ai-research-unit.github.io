@@ -127,7 +127,7 @@ $$
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2m\,Q_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 $$
 
 so the width of the shell is set by $Q_{\mathrm{qnt}}$, which is itself of order $\hbar^{2}$.
@@ -321,7 +321,7 @@ Relativistically the drift is a contraction with the flow element and the shell 
 | $\Lambda$ | The bidifferential operator of the Moyal bracket |
 | $H$ | Hamiltonian symbol, $\lvert\vec p\rvert^{2}/(2m)+V$ |
 | $V$ | Potential; $V'''$ its third derivative |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $\omega$ | Oscillator frequency |
 | $\sigma^{2}$, $\sigma_{p}^{2}$ | Position and momentum variances of a Gaussian |
 | $W_0$ | Wigner element of the oscillator ground state |

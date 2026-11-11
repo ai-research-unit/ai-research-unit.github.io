@@ -103,10 +103,10 @@ The path integral is also a semiclassical expansion. Writing $\xi_{\mathrm{scl}}
 
 $$
 S[\xi_{\mathrm{scl},cl}+\eta]=S[\xi_{\mathrm{scl},cl}]
-+\int d^4r\,\eta^\dagger\!\left(\Box-\mu^2\right)\!\eta+O(\eta^3),
++\int d^4r\,\eta^\dagger\!\left(\Box_\Phi-\mu^2\right)\!\eta+O(\eta^3),
 $$
 
-the linear term vanishing by the equation of motion, and the quadratic term carrying no $\tfrac12$ because the central-valued field is complex and its quadratic form is the bilinear $\eta^\dagger(\Box-\mu^2)\eta$ — the same complex-versus-real counting that the finite-dimensional Gaussian below exhibits. For the free theory the fluctuation integral is Gaussian and the dependence on the background drops out of the determinant, so the free kernel is **exact**, not merely semiclassical; the one-dimensional model of this statement is the free-particle kernel $K=\sqrt{m/(2\,\pi\,i\,\hbar\,T)}\,\exp(\frac{i\,m\,\delta x^{2}}{2\,\hbar\,T})$, which the path integral reproduces exactly, and the standard reference for the construction is the path-integral literature. In the interacting theory the determinant depends on the background and the semiclassical expansion becomes the loop expansion treated below.
+the linear term vanishing by the equation of motion, and the quadratic term carrying no $\tfrac12$ because the central-valued field is complex and its quadratic form is the bilinear $\eta^\dagger(\Box_\Phi-\mu^2)\eta$ — the same complex-versus-real counting that the finite-dimensional Gaussian below exhibits. For the free theory the fluctuation integral is Gaussian and the dependence on the background drops out of the determinant, so the free kernel is **exact**, not merely semiclassical; the one-dimensional model of this statement is the free-particle kernel $K=\sqrt{m/(2\,\pi\,i\,\hbar\,T)}\,\exp(\frac{i\,m\,\delta x^{2}}{2\,\hbar\,T})$, which the path integral reproduces exactly, and the standard reference for the construction is the path-integral literature. In the interacting theory the determinant depends on the background and the semiclassical expansion becomes the loop expansion treated below.
 
 ## The Generating Functional and the Free Gaussian
 
@@ -148,7 +148,7 @@ $$
 \boxed{\;Z[\tilde J_{\Phi}]=Z[0]\exp\!\left(-\int d^4r\,d^4y\;J^*(x)\,\mathcal{G}_F(x-y)\,J(y)\right)\;},
 $$
 
-where $\mathcal{G}_F$ is the Feynman propagator of the companion article *The Quantized Scalar Field in Biquaternionic Form*, the Green's function of $(\Box-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\mathcal{G}_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\mathcal{G}_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,
+where $\mathcal{G}_F$ is the Feynman propagator of the companion article *The Quantized Scalar Field in Biquaternionic Form*, the Green's function of $(\Box_\Phi-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\mathcal{G}_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\mathcal{G}_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,
 
 $$
 \langle0|T\,\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
@@ -195,7 +195,7 @@ S_E[\tilde{Ξ}]=\int d^4r_E\left[(\partial/\partial\tau\,{\xi_{\mathrm{scl}}}^*)
 =\int d^4r_E\;\mathrm{Sc}\!\left[\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ}\right],
 $$
 
-with $\Delta_E=\partial^2/\partial\tau^2+\Delta$ the Euclidean Laplacian, and the functional integral becomes
+with $\Delta_E=\partial^2/\partial\tau^2+\Delta_\Phi$ the Euclidean Laplacian, and the functional integral becomes
 
 $$
 Z_E=\int\mathcal{D}\tilde{Ξ}\;\exp(-S_E[\tilde{Ξ}]/\hbar),
@@ -233,7 +233,7 @@ $$
 
 For a homogeneous background with a slow or sudden time dependence, the Gaussian in a time-dependent frequency gives the same two-mode squeezed state and the same coefficients as the mode-matching computation of the companion article, and the probability of pair creation is $1-|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2$. The general connection between the imaginary part of the effective action and the pair-creation rate is standard: $\Im\ln Z$ measures the failure of the vacuum to persist. The Gaussian evaluation above is the free case; the background makes the quadratic form time-dependent and the same functional determinant produces the persistence amplitude. The two formulations therefore agree on the process: canonical quantization through the Bogoliubov coefficients, the path integral through the vacuum functional.
 
-This is also the point at which the path integral's determinant is visible. The free determinant $[\det(\Box-\mu^2)]^{-1}$ is a central scalar — the inverse power is the complex field's, as in the finite-dimensional identity above; in a background it becomes the central functional determinant whose modulus produces the persistence amplitude. Whether the framework singles out a regularization of that determinant is open, exactly as for the vacuum energy.
+This is also the point at which the path integral's determinant is visible. The free determinant $[\det(\Box_\Phi-\mu^2)]^{-1}$ is a central scalar — the inverse power is the complex field's, as in the finite-dimensional identity above; in a background it becomes the central functional determinant whose modulus produces the persistence amplitude. Whether the framework singles out a regularization of that determinant is open, exactly as for the vacuum energy.
 
 ## Interactions and the Loop Expansion
 
@@ -303,7 +303,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde J_{\Phi}=J\,e_t$, $\xi_{\mathrm{scl}}=(\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2})/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | Gradient and d'Alembertian |
 | $S[\tilde{Ξ}]$ | Central scalar action |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,iS+i\int[\mathrm{Sc}(\tilde J_{\Phi}^{*}\tilde{Ξ})+\mathrm{Sc}(\tilde{Ξ}^{*}\tilde J_{\Phi})])$ | Generating functional |
 | $\mathcal{D}\tilde{Ξ}$ | Functional measure on central-valued configurations |

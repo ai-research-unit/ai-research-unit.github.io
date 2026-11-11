@@ -430,7 +430,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathbb{B}$ | The biquaternion algebra; *Algebra and Element Conventions* |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{C}$ | The centre; the vector-like abelian factor |
-| $\tilde\nabla_\Phi$, $\Box$ | Gradient and d'Alembertian; the symbols are the conventions' (*Algebra and Element Conventions*, *Operator and Calculus Conventions*) |
+| $\tilde\nabla_\Phi$, $\Box_\Phi$ | Gradient and d'Alembertian in the material reading; the symbols are the conventions' (*Algebra and Element Conventions*, *Operator and Calculus Conventions*) |
 | $L_{a}R_{b}$ | The two-sided basis operator, named only where the operator itself is the subject (*Operator Family Conventions*) |
 | $Q\mapsto ie_\mu Q\vec e_{\nu(\mu)}$ | The frame basis operator of the coordinate $x_\mu$ by what it does; the basis operator is *Matrix Representations Conventions* |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The state and its two values under $\mathsf{V}_{\mathrm{vol}}$; *Special Element Conventions*, §*The Chirality Convention* |

@@ -304,7 +304,7 @@ Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\G
 
 **The dive lies outside the one-particle description.** The circle continues past $k_{t}^{\prime}=-k_m$ into the lower continuum, and there the one-particle equation stops describing anything: the level is degenerate with the continuum, the vacuum carries charge, and *Pair Creation in a Bounded Region in Biquaternionic Form* takes over. **The ceiling is the boundary of this article's own validity**, and the article says so rather than continuing the circle by hand.
 
-**The first-order root of the Klein–Gordon operator has the same zero set, so the partition is not special to the second-order equation.** The root is the first-order operator whose square is $\Box-k_m^{2}$, mass term included, and its block determinant on a plane wave is $\sigma_{\mathcal{P}}^{4}$, as *The First-Order Root of the Biquaternion Klein–Gordon Operator* shows when it computes $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2})=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2})^{4}$. **A fourth power vanishes exactly where the scalar does**, so the zero set is one set. **The bare symbol $i\tilde K_{\Phi}$ does not have that zero set**: its determinant is the light cone $k_{t}^{\prime\,2}-k_{\Phi}^{2}=0$, which is the massless locus and not the mass shell. **The spin multiplies the multiplicity of each position and adds no position.** A reader who expects the Dirac equation to introduce a fourth kind of zero will not find one.
+**The first-order root of the Klein–Gordon operator has the same zero set, so the partition is not special to the second-order equation.** The root is the first-order operator whose square is $\Box_\Phi-k_m^{2}$, mass term included, and its block determinant on a plane wave is $\sigma_{\mathcal{P}}^{4}$, as *The First-Order Root of the Biquaternion Klein–Gordon Operator* shows when it computes $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2})=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2})^{4}$. **A fourth power vanishes exactly where the scalar does**, so the zero set is one set. **The bare symbol $i\tilde K_{\Phi}$ does not have that zero set**: its determinant is the light cone $k_{t}^{\prime\,2}-k_{\Phi}^{2}=0$, which is the massless locus and not the mass shell. **The spin multiplies the multiplicity of each position and adds no position.** A reader who expects the Dirac equation to introduce a fourth kind of zero will not find one.
 
 ## Summary
 
@@ -349,7 +349,7 @@ Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\G
 
 *The Hydrogen Atom in Biquaternionic Form — The Relativistic Case* for the exact spectrum whose endpoint at $E=0$ is the ceiling, and for the dive at the lower continuum.
 
-*The First-Order Root of the Biquaternion Klein–Gordon Operator* for the root whose square is $\Box-k_m^{2}$ and for the block determinant that makes it scalar, and hence for the same zero set.
+*The First-Order Root of the Biquaternion Klein–Gordon Operator* for the root whose square is $\Box_\Phi-k_m^{2}$ and for the block determinant that makes it scalar, and hence for the same zero set.
 
 *The Free Particle and Wave Packets in Biquaternionic Form* for the packet that the first position requires before it holds a state.
 

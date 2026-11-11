@@ -75,7 +75,7 @@ What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is no
 
 ### The propagation speed is $c$, and is frame-independent
 
-For a four-wavevector $\tilde P_{\Phi}=i(\omega/c)e_t+\vec k_\Phi$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, that is $\omega=c|\vec k_\Phi|$. That is where the propagation speed comes from, and it is taken as given here.
+For a four-wavevector $\tilde P_{\Phi}=i(\omega/c)e_t+\vec k_\Phi$, the cone article establishes $\Box_\Phi f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, that is $\omega=c|\vec k_\Phi|$. That is where the propagation speed comes from, and it is taken as given here.
 
 What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U$ of unit norm acts on the sector, and the norm is multiplicative, so
 
@@ -179,7 +179,7 @@ The division of the article, in one table. Each row is a statement about the pho
 | Mass is the value of the invariant, $m^2c^2=-\langle\tilde{P}_{\Phi}\rangle_{\natural}$ | Derived | the shell, read backwards |
 | The massless shell is the zero-divisor cone | Derived | the norm's vanishing set; the cone article |
 | The null shell is the only shell that is a cone | Derived | scaling invariance; verified |
-| The propagation speed is $c$ | Given | the cone article's $\Box$ computation |
+| The propagation speed is $c$ | Given | the cone article's $\Box_\Phi$ computation |
 | The speed $c$ is frame-independent | Derived | multiplicativity of the norm; verified on 100 rotors |
 | A null four-momentum has no rest frame | Derived | invariance of $\langle\cdot\rangle_{\natural}$ and the sign of $\langle\cdot\rangle_{\natural}$ at rest; verified |
 | The massless particle moves at $c$ for every $|\vec p|$ | Derived | the null shell; verified on 100 momenta |
@@ -196,7 +196,7 @@ The division of the article, in one table. Each row is a statement about the pho
 - **The cone as a set is *The Zero-Divisor Cone and the Massless Spectrum*'s to define.** The cone's two jobs in the two bands, the rank across the twelve rows, the nilpotent index and the roster of massless particles are stated there, and this article states them where its argument needs them; it takes the cone's boundary of invertibility from that article and from *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 - **The quantum photon is *The Photon in Biquaternionic Form*'s to define.** The polarisation space, circular polarisation, the helicity operator, the self-dual split, the ladder and the gauge are stated there; this article states the reduction to two polarisations only as far as it needs it, to record that the reduction is not a consequence of the cone.
 - **The flagpole identity is elsewhere.** That the null direction and the idempotent are two faces of one object is stated in *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*.
-- **Not claimed.** No dynamics: the idempotent describes a momentum, not an equation of motion. No derivation of $m=0$, of any mass scale, or of the choice of the null branch. The speed $c$ is taken from the cone article's $\Box$ computation.
+- **Not claimed.** No dynamics: the idempotent describes a momentum, not an equation of motion. No derivation of $m=0$, of any mass scale, or of the choice of the null branch. The speed $c$ is taken from the cone article's $\Box_\Phi$ computation.
 
 ## Summary
 

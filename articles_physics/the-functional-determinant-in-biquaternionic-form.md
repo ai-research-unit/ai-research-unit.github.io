@@ -49,7 +49,7 @@ $$
 $$
 the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
 
-**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=\mathcal{M}(\tilde P_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box-k_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
+**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=\mathcal{M}(\tilde P_{\Phi})$, whose Lorentzian continuation differs from the action's operator $\Box_\Phi-k_m^{2}$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
 \boxed{\;\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2\;}.
 $$
@@ -127,7 +127,7 @@ the exponent $2$ being the module's two complex dimensions, which cancels the $\
 
 In a translation-invariant background the operator is diagonal in momentum, and the determinant becomes a product over modes. For the central scalar operator on the module,
 $$
-\det\big(\Box-k_m^{2}\big)\Big|_{\text{module}}
+\det\big(\Box_\Phi-k_m^{2}\big)\Big|_{\text{module}}
 = \prod_k\Big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\Big)^2
 = \prod_k\big(k_{\mathrm{eu}}^2+m^2\big)^2
 $$

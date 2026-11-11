@@ -236,10 +236,10 @@ $$
 Each member is one left multiplication, by the gradient or by its quaternion conjugate; one equation per value; the mass is the only term that couples them. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and using the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-and the same step on the other member gives $\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$: each value obeys the Klein–Gordon equation, both on the same element.
+and the same step on the other member gives $\Box_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$: each value obeys the Klein–Gordon equation, both on the same element.
 
 **Why one equation will not do.** A single gradient does not square to the scalar $\Box$. Its square is a derived form of this section, read from the multiplication of the units,
 
@@ -249,7 +249,7 @@ $$
 
 because the time unit commutes with the three spatial units and the mixed derivatives survive. So a first-order equation on one value cannot be turned into the Klein–Gordon equation by squaring it, and the first-order operator whose square is $\Box$ needs both values. This is why the massive equation is a pair, while the massless equation stays first order, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.
 
-**How the two are one.** The two members are two equations on one element: each is one left multiplication, by the gradient or by its conjugate; no derivative acts from the right; the mass is the only term that relates the two parts; and no third object stands behind them. On the material sector the same $\Box$ is the Klein–Gordon operator in the real time, as *Operator and Calculus Conventions* states.
+**How the two are one.** The two members are two equations on one element: each is one left multiplication, by the gradient or by its conjugate; no derivative acts from the right; the mass is the only term that relates the two parts; and no third object stands behind them. On the material sector the same operator is written $\Box_\Phi$, the Klein–Gordon operator in the real time, as *Operator and Calculus Conventions* states.
 
 ### The Proton
 
@@ -295,7 +295,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit: the product of the gradient with its quaternion conjugate is $\Box$, the non-scalar square $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, and the elimination of the pair by which each value obeys $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
+- The Dirac limit: the product of the gradient with its quaternion conjugate is $\Box$, the non-scalar square $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, and the elimination of the pair by which each value obeys $\Box_\Phi\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$; recomputed on the coefficient representation over $100$ random complex four-momenta, the product at residual $1.1\times10^{-14}$, the elimination following from the second member.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**
@@ -357,7 +357,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\Pi_j=M^{l}_j\otimes\mathbf{1}-\mathbf{1}\otimes M^{\bar l}_j$, $\Pi_jX=X(M^{l}_j)^{\mathsf T}-M^{\bar l}_jX$ | Tensor-product generator of the $\mathbb{R}^6$ equation; two-sided, the article's one such operator |
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and the d'Alembertian, all of *Operator and Calculus Conventions* |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and the d'Alembertian in the material reading, all of *Operator and Calculus Conventions* |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac pair: each member one left multiplication, one equation per value |
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.

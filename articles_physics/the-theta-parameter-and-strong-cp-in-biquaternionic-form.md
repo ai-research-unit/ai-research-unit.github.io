@@ -30,7 +30,7 @@ with all indices summed in the $i r'_t$ convention as in the companion gauge art
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
-**Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $(\tilde\nabla_\Phi)^{\natural}$, and the **d'Alembertian** $\Box$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
+**Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $(\tilde\nabla_\Phi)^{\natural}$, and the **d'Alembertian** $\Box_\Phi$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
 
 **The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla_\Phi\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
 
@@ -40,7 +40,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-both acting from the left, and each half satisfies $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+both acting from the left, and each half satisfies $\Box_\Phi\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The field and its two values.** The field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts carry the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*: $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of value $-1$ and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of value $+1$, and only the zero element carries both. The label belongs to the element and not to a state, so a product and a unit carry it as well. A central phase multiplies the two parts alike. The axial rotation of §*The Chiral Rotation and the Invariance of the Physical Parameter* does not, and that difference is what moves the physical parameter.
 
@@ -213,7 +213,7 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate |
-| $\Box$ | The d'Alembertian of the same article, the quaternionic norm of the gradient; scalar |
+| $\Box_\Phi$ | The d'Alembertian of the same article, the quaternionic norm of the gradient, in the material reading; scalar |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
 | $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
 | $f_{abc}$ | Structure constants of the gauge factor, written low |

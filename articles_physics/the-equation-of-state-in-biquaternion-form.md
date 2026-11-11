@@ -93,7 +93,7 @@ which is the statement that radiation's equation of state is *independent of the
 **The quantum part of the pressure is the quantum potential times the density, and the product has a second form that is the useful one.** With
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}},
 $$
@@ -102,17 +102,17 @@ and with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$, the product is an iden
 
 $$
 p_{\mathrm{qnt}}
-=-\frac{\hbar^{2}}{4m}\,\Box\rho_{\mathrm{num}}
+=-\frac{\hbar^{2}}{4m}\,\Box_\Phi\rho_{\mathrm{num}}
 +\frac{\hbar^{2}}{8m}\,\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}} .
 $$
 
-**The derivation is two lines and is given because the identity is used everywhere below.** Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box\rho_{\mathrm{num}}=2u\,\Box u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box u=\tfrac12\Box\rho_{\mathrm{num}}-\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Multiplying $-\tfrac{\hbar^{2}}{2m}u\,\Box u$ out gives $-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, the factor of two between the two terms coming from the $2$ in $\rho_{\mathrm{num}}=u^{2}$ and not from $Q_{\mathrm{qnt}}$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. **The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched**: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
+**The derivation is two lines and is given because the identity is used everywhere below.** Write $\rho_{\mathrm{num}}=u^{2}$ with $u=\lVert\tilde\Xi\rVert$. Then $\Box_\Phi\rho_{\mathrm{num}}=2u\,\Box_\Phi u+2\,\partial_\eta u\,\partial_\eta u$, so $u\,\Box_\Phi u=\tfrac12\Box_\Phi\rho_{\mathrm{num}}-\partial_\eta u\,\partial_\eta u$, and with $\partial_\eta u=\partial_\eta\rho_{\mathrm{num}}/(2u)$ the second term is $(\partial_\eta\rho_{\mathrm{num}})^{2}/(4\rho_{\mathrm{num}})$. Multiplying $-\tfrac{\hbar^{2}}{2m}u\,\Box_\Phi u$ out gives $-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, the factor of two between the two terms coming from the $2$ in $\rho_{\mathrm{num}}=u^{2}$ and not from $Q_{\mathrm{qnt}}$. Substituting into $Q_{\mathrm{qnt}}$ and multiplying by $\rho_{\mathrm{num}}$ gives the display. **The minus sign of $Q_{\mathrm{qnt}}$ is inherited and not touched**: the first term of the identity carries it, and a reader who writes the first term with a plus has the wrong sign for the quantum potential.
 
 **Which of the two forms to use.** The first is the definition and it is the one that connects to the mass shell the quantum potential modifies. The second is the one that shows the structure: a Laplacian term and a gradient-squared term with the opposite sign, whose ratio is fixed. **The second form also makes the $\hbar^{2}$ counting visible**, which is the subject of the next subsection.
 
 ### The gradient counting
 
-**The quantum pressure is second order in gradients, and the dimensionless measure of its size is the ratio of the field's own length to the density's length scale.** Let $L$ be the length over which $\rho_{\mathrm{num}}$ varies, so that $\Box\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$ and $(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$. Then
+**The quantum pressure is second order in gradients, and the dimensionless measure of its size is the ratio of the field's own length to the density's length scale.** Let $L$ be the length over which $\rho_{\mathrm{num}}$ varies, so that $\Box_\Phi\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$ and $(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}\sim\rho_{\mathrm{num}}/L^{2}$. Then
 
 $$
 p_{\mathrm{qnt}}\sim\frac{\hbar^{2}}{m}\frac{\rho_{\mathrm{num}}}{L^{2}},
@@ -213,7 +213,7 @@ which is the pressure of the state that [The Polar Form of the Klein–Gordon Eq
 
 **Four computations were done and are reported with their residuals, because the article's claims are algebraic and a reader should be able to reproduce each one.**
 
-- **The identity for $p_{\mathrm{qnt}}$.** On a one-dimensional grid of $4001$ points spanning $[-6,6]$ with a Gaussian of width $\sigma=0.5$, the two sides of $p_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$ agree to $1.8\times10^{-5}$ over the interior, the residual being the finite-difference error of the second derivative and not a discrepancy of the algebra. On a three-dimensional radial grid the same comparison agrees to $6.2\times10^{-8}$ away from the origin, where the $2/r$ term is resolved.
+- **The identity for $p_{\mathrm{qnt}}$.** On a one-dimensional grid of $4001$ points spanning $[-6,6]$ with a Gaussian of width $\sigma=0.5$, the two sides of $p_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$ agree to $1.8\times10^{-5}$ over the interior, the residual being the finite-difference error of the second derivative and not a discrepancy of the algebra. On a three-dimensional radial grid the same comparison agrees to $6.2\times10^{-8}$ away from the origin, where the $2/r$ term is resolved.
 - **The central values.** In one dimension $Q_{\mathrm{qnt}}(0)=0.999\,982$ against the analytic $\hbar^{2}/(4m\sigma^{2})=1$ for $\hbar=m=1$, $\sigma=0.5$; the deviation is the grid's. In three dimensions the analytic value is $3\hbar^{2}/(4m\sigma^{2})=3$ under the same units, and the radial grid cannot resolve it at $r\to0$ because of the $2/r$ term, so the article quotes the analytic value and the interior residual and not a central numerical value.
 - **The crossover.** The one-dimensional solution changes sign at $r=1.414\,214\,\sigma$, which is $\sqrt2\,\sigma$ to six digits, confirming $r^{2}=2\sigma^{2}$; the value $0.707\,107\,\sigma$ is $1/\sqrt2$ and is the half-width at which the density has fallen by $e^{-1/4}$, not a crossing. In three dimensions the numerical crossing sits at $r=2.449\,490\,\sigma$, which is $\sqrt6\,\sigma$ to six digits.
 - **The polytropic check.** For $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{5/3}$ at $\rho_{\mathrm{num}}=8$, the identity returns $p_{\mathrm{th}}=\tfrac23w_{\mathrm{fl}}$, i.e. $p_{\mathrm{th}}=(2/3)K\cdot32=21.333\,333\,K$ against $w_{\mathrm{fl}}=32K$, the ratio being $0.666\,667$ to six digits. For $w_{\mathrm{fl}}=K\rho_{\mathrm{num}}^{4/3}$ the ratio is $0.333\,333$ to six digits.
@@ -236,7 +236,7 @@ The equation of state is $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$, wi
 
 The thermal part closes through $p_{\mathrm{th}}=n_{\mathrm{num}}(\partial w_{\mathrm{fl}}/\partial n_{\mathrm{num}})_{s_{\mathrm{ent}}}-w_{\mathrm{fl}}$, which returns $p=\tfrac23w$ for a non-relativistic degenerate gas ($\gamma=\tfrac53$), $p=\tfrac13w$ for radiation ($\gamma=\tfrac43$), and $p=(\gamma-1)w$ for a general polytrope. In the corpus's variable radiation reads $p_{\mathrm{th}}=aA^{4}/(3\beta^{4})$ and $s_{\mathrm{ent}}=4aA^{3}/(3\beta^{3})$, with $\partial p_{\mathrm{th}}/\partial\beta=-4p_{\mathrm{th}}/\beta$ and the Gibbs–Duhem check $s_{\mathrm{ent}}=-(\beta/T)\partial p_{\mathrm{th}}/\partial\beta$ returning $4aT^{3}/3$. The thermal part is not barotropic in general; the barotropic case is the degenerate limit.
 
-The quantum part is $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, derived from the quantum potential's minus sign in two lines and verified numerically to $1.8\times10^{-5}$ (one dimension) and $6.2\times10^{-8}$ (three, interior). It is second order in gradients, its size relative to the rest energy density is $1/(4k_m^{2}\sigma^{2})$ for a Gaussian in one dimension and $3/(4k_m^{2}\sigma^{2})$ in three, it vanishes at $r^{2}=2\sigma^{2}$ (one dimension) or $r^{2}=6\sigma^{2}$ (three), and it is negative beyond.
+The quantum part is $p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}+\tfrac{\hbar^{2}}{8m}(\partial_\eta\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$, derived from the quantum potential's minus sign in two lines and verified numerically to $1.8\times10^{-5}$ (one dimension) and $6.2\times10^{-8}$ (three, interior). It is second order in gradients, its size relative to the rest energy density is $1/(4k_m^{2}\sigma^{2})$ for a Gaussian in one dimension and $3/(4k_m^{2}\sigma^{2})$ in three, it vanishes at $r^{2}=2\sigma^{2}$ (one dimension) or $r^{2}=6\sigma^{2}$ (three), and it is negative beyond.
 
 The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum stress and not a pressure whose gradient is the quantum force: $\partial_\eta p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}+Q_{\mathrm{qnt}}\partial_\eta\rho_{\mathrm{num}}$, and the second term is the one a classical reading loses. The equation of state is therefore exactly local to zeroth order in $(k_mL)^{-2}$, approximately local at second order, and never exactly local.
 
@@ -248,7 +248,7 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 | $p_{\mathrm{th}}$ | Thermal pressure, a function of $(\rho_{\mathrm{num}},\beta)$ |
 | $p_{\mathrm{qnt}}$ | Quantum pressure, a functional of the density field |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $u=\lVert\tilde\Xi\rVert$ | Amplitude |
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
@@ -266,7 +266,7 @@ The named caution is that $p_{\mathrm{qnt}}$ is the scalar part of the quantum s
 | $L$ | Length scale of the density |
 | $\sigma$ | Width of the Gaussian test density |
 | $\rho_{0}$ | Central value of the test density |
-| $\Box$ | The algebra's d'Alembertian |
+| $\Box_\Phi$ | The d'Alembertian in the material reading |
 | $\partial_\eta$ | Spatial derivative, index low |
 | $(k_mL)^{-2}$ | The gradient expansion parameter |
 

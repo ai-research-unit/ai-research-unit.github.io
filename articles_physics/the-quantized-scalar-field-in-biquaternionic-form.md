@@ -138,7 +138,7 @@ $$
 which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,
 
 $$
-\left(\Box_x-\mu^2\right)W(x-y)=0,
+\left(\Box_{\Phi,x}-\mu^2\right)W(x-y)=0,
 $$
 
 because every mode in the integral is on shell. The Feynman propagator is the time-ordered combination
@@ -254,7 +254,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\,\partial/\partial R_\eta$, $\Box=\partial^2/\partial R_t^2+\Delta$ | Gradient and d'Alembertian |
+| $\tilde\nabla_\Phi=-i\,e_t\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | The material gradient and the d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)=\xi_{\mathrm{fop}}(r_x)e_t$ | Quantized scalar field (central-valued) |
 | $\xi_{\mathrm{fop}}^{(+)},\xi_{\mathrm{fop}}^{(-)}$ | Annihilation (positive-frequency) and creation parts |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |

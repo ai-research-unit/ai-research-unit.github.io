@@ -66,7 +66,7 @@ $$
 
 **The spin's conservation is the rotor's equation.** $\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\tilde u_{\mathrm r}$ with $\vec\Omega_\eta$ real, and the spin current's divergence is the antisymmetric part of $\vec\Omega_\eta$ contracted with the spin. **No separate spin equation is added to the framework.**
 
-**The quantum potential is the mass shell's correction and not a pressure.** $Q_{\mathrm{qnt}}=-(\hbar^{2}/2m)\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. **The article that writes it with the other sign is wrong**, and the sign is fixed by the non-relativistic reduction.
+**The quantum potential is the mass shell's correction and not a pressure.** $Q_{\mathrm{qnt}}=-(\hbar^{2}/2m)\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. **The article that writes it with the other sign is wrong**, and the sign is fixed by the non-relativistic reduction.
 
 **The entropy inequality is one divergence and one declaration.** $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}})\ge0$ with $\tilde J_{\Phi,\mathrm{ent}}$ Hermitian. **The inequality is a statement about a real number because the current's four coefficients are real**, and the corpus declares that once.
 

@@ -314,7 +314,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material and informational sectors; *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces* |
 | $\mathbb{B}_{H}$ | The real-quaternion subspace; *Algebra and Element Conventions*, §*The Quaternion and Antiquaternion Subspaces* |
 | $\mathbb{B}_{C}$ | The centre of the algebra, and the vector-like abelian factor; *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* |
-| $\tilde\nabla_\Phi$, $\Box$ | Biquaternionic gradient and d'Alembertian; *Operator and Calculus Conventions*, §*The Gradient* |
+| $\tilde\nabla_\Phi$, $\Box_\Phi$ | Biquaternionic gradient and d'Alembertian in the material reading; *Operator and Calculus Conventions*, §*The Gradient* |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $D$ | Abelian connection law and covariant derivative, acting on the left (read list); $D$ is the derivative of *Operator and Calculus Conventions* |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Available compact algebra (real dimension $4$) |

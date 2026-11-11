@@ -10,7 +10,7 @@ $$
 &\langle p_{n+1}\cdots p_{n+m}|S|p_1\cdots p_n\rangle\\[2pt]
 &\quad=\Big[\prod_{j=n+1}^{n+m}\int d^4r_j\,\exp(ip_j\cdot x_j)\Big]
 \Big[\prod_{i=1}^{n}\int d^4r_i\,\exp(-ip_i\cdot x_i)\Big]\\[2pt]
-&\quad\qquad\times\Big[\prod_{j=1}^{n+m}\big(\Box_j-m^2\big)\Big]
+&\quad\qquad\times\Big[\prod_{j=1}^{n+m}\big(\Box_{\Phi,j}-m^2\big)\Big]
 \big\langle 0\big|T\,\tilde{Ξ}(x_1)\cdots\tilde{Ξ}(x_{n+m})\big|0\big\rangle\Big|_{\text{on shell}},
 \end{aligned}
 \;}
@@ -53,7 +53,7 @@ where $\tilde{Ξ}_{\mathrm{in/out}}$ is a free field and $Z$ is the wave-functio
 $$
 \langle f|S|i\rangle
 = \Big[\prod_{\text{legs}}\int d^4r_j\,\exp(\pm ip_j\cdot x_j)\Big]
-\Big[\prod_{\text{legs}}\big(\Box_j-m^2\big)\Big]
+\Big[\prod_{\text{legs}}\big(\Box_{\Phi,j}-m^2\big)\Big]
 G^{(n+m)}(x_1,\dots,x_{n+m})\Big|_{\text{on shell}} ,
 $$
 the sign being $+$ on an outgoing leg and $-$ on an incoming one, with one factor $Z^{-1/2}$ per leg. Each external leg is Fourier-transformed with its plane-wave phase and acted on by the wave operator, and the result is evaluated with all external momenta **on the mass shell**. The amputated correlator is defined off the shell as well; what requires the shell is the identification of its residue with an S-matrix element.
@@ -66,7 +66,7 @@ so multiplying by $\mathcal{M}(p^2)=m^{2}\,c^{2}-p^2$, equivalently by $-(p^2-m^
 
 **The biquaternion form of the amputation.** The wave operator's momentum symbol is the negative of the central mass-shell operator,
 $$
-\big(\Box-k_m^{2}\big) \;\longrightarrow\; p^2-m^{2}\,c^{2}=\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big) \;=\; -\,\mathcal{M}(\tilde P_{\Phi}) ,
+\big(\Box_\Phi-k_m^{2}\big) \;\longrightarrow\; p^2-m^{2}\,c^{2}=\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big) \;=\; -\,\mathcal{M}(\tilde P_{\Phi}) ,
 $$
 so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde P_{\Phi})$ in momentum space, equivalently by the negative of the wave operator's symbol. The two conventions differ by a factor $-1$ per leg, which is the same sign convention on the external states; no pole and no residue is affected. The mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=m^{2}\,c^{2}-p^2$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde P_{\Phi})=0$, i.e. $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The remaining sections spell out the consequence: the amputation is a real central scalar for a scalar field and an action on the element for a field with spin, while the pole $\mathcal{M}(\tilde P_{\Phi})=0$ is the same central scalar in both cases.
 
@@ -106,9 +106,9 @@ $$
 \qquad
 \tilde R_\Phi = i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z .
 $$
-Here $\tilde Q_{\mathrm{amp}}$ is a constant biquaternion amplitude, an element of $\mathbb{B}$ bound here, whose majuscule marks its complex scalar part. The differential operator is central and acts on the exponential as multiplication by its symbol, $\Box\to p^2=-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$, so
+Here $\tilde Q_{\mathrm{amp}}$ is a constant biquaternion amplitude, an element of $\mathbb{B}$ bound here, whose majuscule marks its complex scalar part. The differential operator is central and acts on the exponential as multiplication by its symbol, $\Box_\Phi\to p^2=-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$, so
 $$
-\big(\Box-k_m^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} \;\longrightarrow\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} = -\,\mathcal{M}(\tilde P_{\Phi})\,\tilde{Ξ}_{\tilde P,\Phi},
+\big(\Box_\Phi-k_m^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} \;\longrightarrow\; -\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}\big)\tilde{Ξ}_{\tilde P,\Phi} = -\,\mathcal{M}(\tilde P_{\Phi})\,\tilde{Ξ}_{\tilde P,\Phi},
 $$
 which vanishes for $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The phase is the central scalar $\mathrm{Sc}(\tilde P_{\Phi}^{\natural}\tilde R_\Phi)=-p\cdot x$ with $p\cdot x=Er'_t-\vec p\cdot\vec r$, the corpus's four-vector notation, so $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}^{\natural}\tilde R_\Phi)/\hbar)=\exp(-ip\cdot x/\hbar)$ is the positive-frequency mode and the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.
 
@@ -354,7 +354,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=(-E^2/c^2+\vec p^{\,2})e_t=-p^2e_t$ | Central biquaternion norm; $p^2=p_0^2-\vec p^{\,2}$ |
 | $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=m^{2}\,c^{2}-p^2$ | Mass-shell operator, the inverse propagator; real central on real momenta |
 | $\mathcal{M}(\tilde P_{\Phi})=0\iff E_{\vec p}^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$ | Mass shell, a biquaternion-norm level set |
-| $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*), with symbol $p^2$ on the material sector |
+| $\Box_\Phi$ | The d'Alembertian in the material reading (*Operator and Calculus Conventions*), with symbol $p^2$ |
 | $i r'_t$ | The time coefficient of the material reading; its square, $(i r'_t)^2=-{r'_{t}}^2$, supplies the one minus of the d'Alembertian on the time direction |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | The anti-Hermitian and Hermitian sectors (*Algebra and Element Conventions*); $\tilde{Ξ}_\pm$ are the two sector parts |
 | $\flat$ | The anti-Hermitian conjugation (*Algebra and Element Conventions*), antilinear |
@@ -367,7 +367,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; an element of $\mathbb{B}$ bound here, with a complex scalar part, hence the majuscule |
 | $L_a$, $R_b$, $L_aR_b$ | Left multiplication, right multiplication and the basis operator (closing section only) |
 | $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=i p_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta i p_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | Momentum action, the second writing of the momentum symbol of the pair; $\mathcal{A}_p^2\tilde{Ξ}_{\mathrm{sp}}=p^2\tilde{Ξ}_{\mathrm{sp}}$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box_\Phi$ |
 | $L$, $R$ | The two values of the chirality subscript; $L$ the minus value, $R$ the plus one |
 | $\tilde W_{\Psi}^{(r)},\tilde V_{\Phi}^{(r)}$ | External spin amplitudes, elements of $\mathbb{B}$; $\sum_r \tilde W_{\Psi}^{(r)}\bar{\tilde W}_{\Psi}^{(r)}=\mathcal{A}_p+mc$ and $\sum_r \tilde V_{\Phi}^{(r)}\bar{\tilde V}_{\Phi}^{(r)}=\mathcal{A}_p-mc$ on the shell, each product read as the action $\tilde{Ξ}_{\mathrm{sp}}\mapsto \tilde W_{\Psi}\tilde{Ξ}_{\mathrm{sp}}\bar{\tilde W}_{\Psi}$ |
 | $\ell_x,\ell_y$ | The two ladders of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, $\ell_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\ell_y=\tfrac12(i\vec e_x+\vec e_y)$; $\ell_x\ell_y+\ell_y\ell_x=e_t$, and the two orderings multiply to $0$ |

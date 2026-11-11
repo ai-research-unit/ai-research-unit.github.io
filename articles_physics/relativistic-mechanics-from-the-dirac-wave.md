@@ -24,7 +24,7 @@ $$
 k_{m}=\frac{m\,c}{\hbar}.
 $$
 
-The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the central scalar $\Box=\partial^{2}/\partial R_{t}^{2}+\Delta$, which with $R_{t}=ict$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
+The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the central scalar $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, which with $r'_{t}=ct$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
 
 **The expansion.** Write $\tilde\Xi_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then
 
@@ -38,7 +38,7 @@ so the gradient acts, to leading order, as multiplication by $i\tilde K_{\Phi}$,
 
 ## Order Zero: the Mass Shell
 
-**Substitute and separate.** Multiplying $\left(\Box-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$ by $-\hbar^{2}$ and dividing by $\tilde\Xi_{\mathrm{sp}}$ gives, exactly,
+**Substitute and separate.** Multiplying $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$ by $-\hbar^{2}$ and dividing by $\tilde\Xi_{\mathrm{sp}}$ gives, exactly,
 
 $$
 -\left[\frac{(\partial_{t}S_{\tilde\Xi})^{2}}{c^{2}}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}-m^{2}c^{2}\right]

@@ -319,7 +319,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $i$ | Central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
-| $\Box$ | The d'Alembertian, the quaternionic norm of the gradient |
+| $\Box_\Phi$ | The d'Alembertian in the material reading, the quaternionic norm of the gradient |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
 | $i\hbar\tilde K_{\Phi}$ | Symbol of the gradient, $-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
