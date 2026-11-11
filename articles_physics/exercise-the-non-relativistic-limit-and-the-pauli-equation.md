@@ -25,7 +25,7 @@ $$
 and its norm is the d'Alembertian
 
 $$
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
 $$
 
 On the material sector, where $Q_t=i r'_t$, the gradient and its conjugate read

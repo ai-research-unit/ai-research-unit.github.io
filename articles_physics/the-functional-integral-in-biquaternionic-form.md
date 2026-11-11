@@ -18,7 +18,7 @@ which is the positive-definite Hilbert–Schmidt form on the algebra; the signat
 $$
 S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
-\Box = \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
+\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
 $$
 The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $W_{\mathrm{kinetic}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
@@ -257,7 +257,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ with $\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ with $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
 $$
 S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -284,7 +284,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ | Biquaternion field and its sector parts |
 | $\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})$ (complex scalar part) | Scalar extraction; the trace converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
-| $\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
 | $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_{\mathrm{eu}}^2$ |
 | $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with source |

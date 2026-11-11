@@ -14,7 +14,7 @@ The conventions are the series'. The algebra, the units, the sectors and the met
 $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that there $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$. No basis operator of this article carries a derivative.
 

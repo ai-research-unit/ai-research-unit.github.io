@@ -11,7 +11,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. Three facts are used throughout: $\Box$ is central and scalar, the product of the gradient with its conjugate is $\Box$, and the square of the gradient alone is not scalar. No other letter names the gradient.

@@ -54,7 +54,7 @@ one operator, one field, first order. This is the source's own equation translat
 
 **The square of the gradient is not scalar.** The two products of the gradient with its conjugate are exact and scalar,
 $$
-\tilde\nabla_\Phi\tilde\nabla^{\natural}=\sum_{\mu,\nu\in\{t,x,y,z\}}\varepsilon_\nu\,e_\mu e_\nu\frac{\partial^2}{\partial R_\mu\partial R_\nu}=\Box,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu,\nu\in\{t,x,y,z\}}\varepsilon_\nu\,e_\mu e_\nu\frac{\partial^2}{\partial R_\mu\partial R_\nu}=\Box,
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box ,
 $$

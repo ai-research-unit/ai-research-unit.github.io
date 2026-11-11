@@ -66,7 +66,7 @@ The gradient and its conjugate are the two derivative operators of the article, 
 $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 

@@ -12,7 +12,7 @@ The article is deliberately not about a particle. The Klein–Gordon equation an
 
 First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde\nabla_\Phi\rangle_{\natural}$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \vec k_\Phi^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-(\tilde\nabla_\Phi)^{\natural}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Algebra and Element Conventions*,
 $$
-\Box = \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
+\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
 $$
 and it is the one used by the Klein–Gordon and Dirac companions and by every article of the series. The Weyl-spinor exercise writes the same operator in real time as $-\partial^2/\partial {r'_{t}}^2 + \nabla^2$.
 
@@ -58,16 +58,16 @@ Nothing else in the construction depends on the choice of left or right action, 
 
 The two second-order operators built from the gradient are equal, and each is the scalar Laplacian in the $i r'_t$ coordinate. Composing,
 $$
-\tilde\nabla_\Phi\tilde{\nabla}^{\natural}
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}
 = \sum_{\mu,\nu} e_\mu e_\nu^{*}\,\partial^2/\partial R_\mu\partial R_\nu
 = \sum_{\mu} e_\mu e_\mu^{*}\,\partial^2/\partial R_\mu^2
 + \sum_{\mu \neq \nu} e_\mu e_\nu^{*}\,\partial^2/\partial R_\mu\partial R_\nu .
 $$
 On the diagonal $e_\mu e_\mu^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $e_t e_t = e_t$, and for $\mu = k$ it is $\vec e_\eta(-\vec e_\eta) = -\vec e_\eta^2 = e_t$. On the off-diagonal the products are basis bivectors, $e_t \vec e_\eta^{*} = -\vec e_\eta$ and $\vec e_j \vec e_\eta^{*} = -\vec e_j \vec e_\eta$ for $j \neq k$, and the coefficient $\partial^2/\partial R_\mu\partial R_\nu$ is symmetric in $\mu,\nu$ while the bivector part is antisymmetric. The off-diagonal sum therefore vanishes, and
 $$
-\tilde\nabla_\Phi\tilde{\nabla}^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\partial^2/\partial R_t^2 + \Delta\right).
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\partial^2/\partial R_t^2 + \Delta\right).
 $$
-The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural}\tilde{\nabla} = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
+The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural} \tilde{\nabla}_\Phi = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
 \boxed{\;
 \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.

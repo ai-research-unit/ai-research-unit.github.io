@@ -13,7 +13,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$. No second letter is introduced for it. No derivative of the article is two-sided: the lattice gradient of §*Naive Discretization* is this same operator with each coordinate derivative replaced by a symmetric difference.

@@ -15,7 +15,7 @@ with its quaternion conjugate and the scalar d'Alembertian
 $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 
 the last read on the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i r'_t$, as $\Delta-\partial^2/\partial {r'_t}^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
