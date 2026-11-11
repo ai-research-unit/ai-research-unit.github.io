@@ -159,7 +159,7 @@ with $f$ real and positive away from the axis, $r$ the distance from the axis, $
 
 The transport equation is satisfied identically. It reads $\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.
 
-The amplitude equation is one ordinary differential equation in $r$. With $\Box=\partial^{2}/\partial r'^{2}_t-\Delta$ and the phase above, the polar form's first equation becomes
+The amplitude equation is one ordinary differential equation in $r$. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_t}^{2}$ and the phase above, the polar form's first equation becomes
 
 $$
 k_t^{2}-\frac{n^{2}}{r^{2}}=k_m^{2}-\frac{\Box f}{f},

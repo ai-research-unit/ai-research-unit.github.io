@@ -16,7 +16,7 @@ $$
 \tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J,
 $$
 
-as in the companion EGM article and in *Shock Electromagnetic Waves*. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ and $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\nabla$ means the **pure-vector** gradient, $\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ acting by quaternion multiplication on the left, so that $\nabla\circ\nabla = -\Delta$; this is not the corpus's four-dimensional gradient, which carries the time derivative, and the relation between the two is given in its own section.
+as in the companion EGM article and in *Shock Electromagnetic Waves*. The 2019 paper writes the same object with a partly different sign convention, $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ and $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$, which is the negative of the corpus's; every equation below is stated in the paper's own 2019 convention where it is quoted from the paper, and the conventions are not mixed. The source's symbol $\nabla$ means the **pure-vector** gradient, $\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ acting by quaternion multiplication on the left, so that $\nabla\circ\nabla = -\Delta_\Phi$; this is not the corpus's four-dimensional gradient, which carries the time derivative, and the relation between the two is given in its own section.
 
 ## The Free Charge–Current Field and Its Monochromatic Sector
 
@@ -48,17 +48,17 @@ $$
 \left(\omega + \nabla\right)\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = 0 .
 $$
 
-The **biamplitude** $\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ therefore obeys a first-order equation in which the frequency appears as a mass-like term. The first thing to note is the factorisation. Because $\nabla\circ\nabla = -\Delta$,
+The **biamplitude** $\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ therefore obeys a first-order equation in which the frequency appears as a mass-like term. The first thing to note is the factorisation. Because $\nabla\circ\nabla = -\Delta_\Phi$,
 
 $$
 \boxed{\;\left(\omega + \nabla\right)\circ\left(\omega - \nabla\right)
-= \omega^2 + \Delta\;}
+= \omega^2 + \Delta_\Phi\;}
 $$
 
 which is the Helmholtz operator. Hence every solution of the second-order equation
 
 $$
-\Delta\tilde{Ξ}_{\mathrm{sp}} + \omega^2\tilde{Ξ}_{\mathrm{sp}} = 0
+\Delta_\Phi\tilde{Ξ}_{\mathrm{sp}} + \omega^2\tilde{Ξ}_{\mathrm{sp}} = 0
 $$
 
 generates a solution of the first-order equation through
@@ -72,7 +72,7 @@ and conversely every biamplitude is of that form for some $\tilde{Ξ}_{\mathrm{s
 This is the cleanest part of the programme and it is worth naming. The corpus has plane-wave solutions and it has the retarded-potential and Green-function machinery, but it has no account of the **monochromatic standing** sector of the charge–current field, and that sector is what the rest of the paper is built on. Two consequences follow immediately and are used throughout.
 
 - **A monochromatic charge–current field is equivalent to a Helmholtz potential.** The single operator $\omega - \nabla$ converts one into the other, so the classification of monochromatic solutions is the classification of Helmholtz potentials.
-- **The frequency is the Helmholtz eigenvalue in the usual sense, but there is no eigenproblem.** The equation $\Delta\tilde{Ξ}_{\mathrm{sp}} + \omega^2\tilde{Ξ}_{\mathrm{sp}} = 0$ on its own admits every $\omega$. A discrete spectrum requires a boundary condition, and the programme does not impose one. Everything discrete that appears later comes from elsewhere.
+- **The frequency is the Helmholtz eigenvalue in the usual sense, but there is no eigenproblem.** The equation $\Delta_\Phi\tilde{Ξ}_{\mathrm{sp}} + \omega^2\tilde{Ξ}_{\mathrm{sp}} = 0$ on its own admits every $\omega$. A discrete spectrum requires a boundary condition, and the programme does not impose one. Everything discrete that appears later comes from elsewhere.
 
 The Helmholtz potentials themselves have a general integral form, which the paper gives as its equation (4): every function integrable on the sphere of radius $\omega$ generates a solution through
 
@@ -314,7 +314,7 @@ The division is unusually clean, and it is worth stating as a list, because the 
 
 Established, and verified above by recomputation.
 
-1. The free charge–current equation factors monochromatically into $(\omega - \nabla)$ and $(\omega + \nabla)$, and $(\omega+\nabla)(\omega-\nabla) = \omega^2 + \Delta$; every monochromatic solution is $(\omega-\nabla)\tilde{Ξ}_{\mathrm{sp}}$ for a Helmholtz potential $\tilde{Ξ}_{\mathrm{sp}}$.
+1. The free charge–current equation factors monochromatically into $(\omega - \nabla)$ and $(\omega + \nabla)$, and $(\omega+\nabla)(\omega-\nabla) = \omega^2 + \Delta_\Phi$; every monochromatic solution is $(\omega-\nabla)\tilde{Ξ}_{\mathrm{sp}}$ for a Helmholtz potential $\tilde{Ξ}_{\mathrm{sp}}$.
 2. The spherical pulsar has the closed form $\omega(j_0 + j_1\vec u_x)$, energy density $\tfrac12\omega^2(j_0^2+j_1^2)$, and vanishing Poynting biquaternion.
 3. The spherical spinor has the closed form $- \omega j_1 r_{,1} + \omega(j_0\vec e_x + j_1(r_{,3}\vec e_y-r_{,2}\vec e_z))$, the **same** energy density as the pulsar, and vanishing Poynting biquaternion.
 4. The vanishing Poynting biquaternion is a general property of standing monochromatic solutions with real amplitude components, not a special feature of these two.
@@ -333,7 +333,7 @@ Not established, and not derivable from the algebra.
 
 ## Summary
 
-The 2019 formulation of the electro-gravimagnetic programme takes the **monochromatic** sector of its free charge–current field and proposes to read the solutions as elementary particles. The monochromatic sector is a clean piece of algebra: the free equation is $(\omega+\nabla)\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = 0$, the operator factors so that $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$, and every solution is generated from a Helmholtz potential by the single operator $\omega - \nabla$. The regular Helmholtz solutions are the spherical harmonics, and they split into **pulsars**, from a scalar potential, and **spinors**, from a vector one.
+The 2019 formulation of the electro-gravimagnetic programme takes the **monochromatic** sector of its free charge–current field and proposes to read the solutions as elementary particles. The monochromatic sector is a clean piece of algebra: the free equation is $(\omega+\nabla)\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = 0$, the operator factors so that $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta_\Phi$, and every solution is generated from a Helmholtz potential by the single operator $\omega - \nabla$. The regular Helmholtz solutions are the spherical harmonics, and they split into **pulsars**, from a scalar potential, and **spinors**, from a vector one.
 
 The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)\vec u_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0\vec e_x + j_1(r_{,3}\vec e_y-r_{,2}\vec e_z))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde J_{\Phi,\mathrm{eg}}^{*} = \bar s - \bar{\vec V}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k_\Phi/\omega$, and the absence of nodes in the energy density.
 
@@ -355,14 +355,14 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$ | 2019 source's current convention |
 | $\tau = r'_{t}$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
 | $\nabla = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Pure-vector gradient, acting by left quaternion multiplication |
-| $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$; hence the factorisation below |
-| $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$ | Helmholtz factorisation of the monochromatic operator |
+| $\nabla\circ\nabla = -\Delta_\Phi$ | The square of $\nabla$; hence the factorisation below |
+| $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta_\Phi$ | Helmholtz factorisation of the monochromatic operator |
 | $D_\pm = \partial/\partial\tau \pm i\nabla$ | Mutual complex gradients; monochromatically $D_\pm \to -i(\omega \mp \nabla)$ |
 | $\mathcal{Q}_{\mathrm{h}} = k + \vec K$ | Structural biquaternion; any biquaternion function used as a convolution kernel |
 | $\tilde J_{\Phi,\mathrm{eg}} * K$ | Biquaternion convolution, with component convolutions; preserves solutions of the free equation |
 | $\delta(x_j - n h_j)$ | Lattice of shifted $\delta$-functions; the crystal structural biquaternion |
 | $\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
-| $\tilde{Ξ}_{\mathrm{sp}}$ | Helmholtz potential, $\Delta\tilde{Ξ}_{\mathrm{sp}} + \omega^2\tilde{Ξ}_{\mathrm{sp}} = 0$ |
+| $\tilde{Ξ}_{\mathrm{sp}}$ | Helmholtz potential, $\Delta_\Phi\tilde{Ξ}_{\mathrm{sp}} + \omega^2\tilde{Ξ}_{\mathrm{sp}} = 0$ |
 | $\tilde{Ξ}_{\mathrm{sp},nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |
 | $\tilde J_{\Phi,\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\tilde{Ξ}_{\mathrm{sp},nm}$ | Pulsar (scalar potential) |
