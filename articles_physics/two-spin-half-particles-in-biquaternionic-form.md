@@ -290,7 +290,7 @@ $$
 with the **singlet–triplet splitting**
 
 $$
-\boxed{\;\Delta E=E_{\text{singlet}}-E_{\text{triplet}}=\hbar^{2}\,J_{\mathrm{ex}}}.
+\boxed{\;\delta E=E_{\text{singlet}}-E_{\text{triplet}}=\hbar^{2}\,J_{\mathrm{ex}}}.
 $$
 
 For $J_{\mathrm{ex}}>0$ the ferromagnetic case the triplet lies lower; for $J_{\mathrm{ex}}<0$ the antiferromagnetic case the singlet lies lower. Both signs are realised in nature — the triplet lies below in the two-electron system of an $s$-band ferromagnet, the singlet below in a molecular antiferromagnet — and the framework's contribution is only to express the Hamiltonian and its spectrum as algebra elements; the sign of $J_{\mathrm{ex}}$ is dynamical input.

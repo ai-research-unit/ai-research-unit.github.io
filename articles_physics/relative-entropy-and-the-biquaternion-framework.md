@@ -175,23 +175,23 @@ verified by recomputation at small displacements. The coefficient is finite thro
 
 ## Araki's Relative Modular Operator
 
-The definition used so far is the finite-dimensional one. The general definition, which the modular companions use and which is the one available for a field, is Araki's. On a von Neumann algebra $M$ with faithful normal states $\omega$ and $\xi_{\mathrm{alt}}$, the **relative modular operator** $\Delta_{\omega,\xi_{\mathrm{alt}}}$ is the positive operator whose polar decomposition produces the relative Tomita operator, and Araki's relative entropy is
+The definition used so far is the finite-dimensional one. The general definition, which the modular companions use and which is the one available for a field, is Araki's. On a von Neumann algebra $M$ with faithful normal states $\omega$ and $\xi_{\mathrm{alt}}$, the **relative modular operator** $\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}$ is the positive operator whose polar decomposition produces the relative Tomita operator, and Araki's relative entropy is
 $$
-S(\omega\|\xi_{\mathrm{alt}})=\big\langle\Omega_\omega,\log\Delta_{\omega,\xi_{\mathrm{alt}}}\,\Omega_\omega\big\rangle .
+S(\omega\|\xi_{\mathrm{alt}})=\big\langle\Omega_\omega,\log\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}\,\Omega_\omega\big\rangle .
 $$
 It agrees with Umegaki's $S(\rho\|\sigma)$ when $M$ is a finite-dimensional matrix algebra and the two states are given by density matrices, and it is defined for the type III algebras of local quantum field theory, where no density matrix exists. The relative modular operator satisfies the **relative modular condition**, a two-point KMS-type boundary relation for the function
 $$
 (r'_t,\tilde Q_2,\tilde Q_1)\longmapsto
 \omega\big(\tilde Q_2\,\sigma_{r'_{t}}^{\xi_{\mathrm{alt}},\omega}(\tilde Q_1)\big),
 $$
-where $\sigma^{(\xi_{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $H_{\mathrm{modular},\omega}=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
+where $\sigma^{(\xi_{\mathrm{alt}},\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\mathcal{M}_\omega$ of the Tomita construction, and the modular Hamiltonian $H_{\mathrm{modular},\omega}=-\log\mathcal{M}_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 
 Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_{\Psi,\omega}^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_{\mathrm{alt},\xi}\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$
-\Delta_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
+\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
 =e^{-\tilde H_{\Psi,\mathrm{modular},\omega}}\,\tilde Q_2\,e^{\tilde H_{\Psi,\mathrm{modular},\xi_{\mathrm{alt}}}},
 \qquad
-\log\Delta_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
+\log\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}\big(\tilde Q_2\big)
 =\log\tilde{Ϛ}_{\Psi,\omega}\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}
 =\tilde Q_2\,\tilde H_{\Psi,\mathrm{modular},\xi_{\mathrm{alt}}}-\tilde H_{\Psi,\mathrm{modular},\omega}\,\tilde Q_2,
 \qquad
@@ -268,7 +268,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $S(\tilde{Ϛ}_{\Psi})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$ | von Neumann entropy of a biquaternion state |
 | $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; boxed closed form |
 | $\cos\gamma=\vec r\cdot\vec s/(|\vec r||\vec s|)$ | Bloch-vector angle |
-| $\Delta_{\omega,\xi_{\mathrm{alt}}}$ | Araki relative modular operator |
+| $\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}$ | Araki relative modular operator |
 | $\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Biquaternion logarithm of a faithful state |
 | $|0\rangle\langle0|=\tilde\Pi_1$ | Vacuum idempotent (pure state) |
 | $\tfrac12 e_t$ | Trace state (maximally mixed) |

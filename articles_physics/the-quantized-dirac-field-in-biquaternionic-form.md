@@ -285,10 +285,10 @@ The covariant anticommutator of the free quantized field is the object that carr
 **It is a $c$-number and it is local.** Every term of the product $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde{Ξ}_{\mathrm{fop}}(x)$ or $\tilde{Ξ}_{\mathrm{fop}}(x)\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x$ is a product of at most two mode operators with $c$-number amplitudes. Terms carrying one particle and one antiparticle operator, $a_{\mathrm{fop}}b_{\mathrm{fop}}$ or $a_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}}^{\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence, for every element $\tilde X$,
 
 $$
-\boxed{\;\bigl\{\tilde{Ξ}_{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathcal{D}+k_m)\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
+\boxed{\;\bigl\{\tilde{Ξ}_{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathcal{D}+k_m)\,\mathcal{G}_{\mathrm A}(x-y)\ \tilde X\;},
 $$
 
-an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the operator of the display above applied to the same element. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
+an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the operator of the display above applied to the same element. Here $\mathcal{G}_{\mathrm A}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
 
 **The commutator is a $c$-number as well, but it is not local.** Replacing the anticommutator by the commutator gives, for every element $\tilde X$,
 
@@ -296,17 +296,17 @@ $$
 \langle0|\,[\tilde{Ξ}_{\mathrm{fop}}(x),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x]\,|0\rangle\,\tilde X=(\mathcal{D}+k_m)\,G_{\mathrm{S}}(x-y)\,\tilde X,
 $$
 
-with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec\Delta=\vec r-\vec y$,
+with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion, with $\vec r_{12}=\vec r-\vec y$,
 
 $$
 [\tilde{Ξ}_{\mathrm{fop}}(r_x),\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(r_y)]\,\tilde X
-=i\Bigl(m\tilde X+\sum_\eta\vec e_\eta\,\tilde X\,\vec e_y\frac{\partial}{\partial\Delta_\eta}\Bigr)\vec e_x\,F(\vec\Delta),
+=i\Bigl(m\tilde X+\sum_\eta\vec e_\eta\,\tilde X\,\vec e_y\frac{\partial}{\partial r_{12,\eta}}\Bigr)\vec e_x\,F(\vec r_{12}),
 \qquad
-F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}
-=\frac{m}{2\pi^2|\vec\Delta|}K_1\!\bigl(m|\vec\Delta|\bigr),
+F(\vec r_{12})=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\frac{\cos(\vec p\cdot\vec r_{12})}{E_{\vec p}}
+=\frac{m}{2\pi^2|\vec r_{12}|}K_1\!\bigl(m|\vec r_{12}|\bigr),
 $$
 
-a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The trailing $\vec e_x$ multiplies the whole bracket on the right, so every term is read with its sides in position: the mass term is a single right multiplication by $i\vec e_x$ once the outer $i$ is placed against it, with no factor on the left, and each spatial term, since $\vec e_y\vec e_x=-\vec e_z$, carries $\vec e_\eta$ on the left and $\vec e_z$ on the right — the same reduction the frame paragraph records. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the spatial part of $\mathcal{D}$ read on the element with the derivative in place of the momentum; being odd in $\vec p$, it survives against the sine that the difference of the two phases leaves, and the integration is the companion's identity $\int\frac{d^3p}{(2\pi\hbar)^3}\frac{p_\eta\sin(\vec p\cdot\vec\Delta)}{E_{\vec p}}=-\partial F/\partial\Delta_\eta$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.
+a modified Bessel function of the second kind, nonzero for every $\vec r_{12}\ne0$. The trailing $\vec e_x$ multiplies the whole bracket on the right, so every term is read with its sides in position: the mass term is a single right multiplication by $i\vec e_x$ once the outer $i$ is placed against it, with no factor on the left, and each spatial term, since $\vec e_y\vec e_x=-\vec e_z$, carries $\vec e_\eta$ on the left and $\vec e_z$ on the right — the same reduction the frame paragraph records. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the spatial part of $\mathcal{D}$ read on the element with the derivative in place of the momentum; being odd in $\vec p$, it survives against the sine that the difference of the two phases leaves, and the integration is the companion's identity $\int\frac{d^3p}{(2\pi\hbar)^3}\frac{p_\eta\sin(\vec p\cdot\vec r_{12})}{E_{\vec p}}=-\partial F/\partial r_{12,\eta}$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.
 
 **The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map
 
@@ -359,7 +359,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}+b_{\mathrm{fop},r}^{\dagger}b_{\mathrm{fop},r})$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $\tilde P_{\Phi,\mathrm{fop}}=iH e_t+P_{\mathrm{fop},\eta}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and on both frequency branches, to $5.3\times10^{-10}$ and $1.2\times10^{-10}$ respectively.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_\eta i\vec e_\eta\tilde X\vec e_y p_\eta+mc\tilde X)/(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation; for every element $\tilde X$, $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\mathcal{G}_{\mathrm A}(x-y)\tilde X$. The commutator is a $c$-number as well but has support outside the light cone. The momentum-space two-point function is the propagator companion's map $S_F(p):\tilde X\mapsto-i(i\tilde X\vec e_x p_0-\sum_\eta i\vec e_\eta\tilde X\vec e_y p_\eta+mc\tilde X)/(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -392,10 +392,10 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde P_{\Phi,\mathrm{fop}}=iHe_t+P_{\mathrm{fop},\eta}\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$ | Operator four-momentum biquaternion |
 | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, $\tilde S_{\Psi,\pm}=\frac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin generators (informational sector) |
 | $\tilde S_{\Psi,+}/\hbar=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde S_{\Psi,-}/\hbar=\tfrac12(i\vec e_x+\vec e_y)$, $(-1)^F=i\vec e_z$ | Single-mode ladder and parity inside $\mathbb{B}$ |
-| $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\Delta_{\mathrm{A}}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
-| $\Delta_{\mathrm{A}}(x-y)$ | Antisymmetric Pauli–Jordan kernel; support inside the light cone |
+| $\{\tilde{Ξ}_{\mathrm{fop}}(x)\mathrm{Sc}(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}(y)i\vec e_x\tilde X)\}=(\mathcal{D}+k_m)\mathcal{G}_{\mathrm A}(x-y)\tilde X$ | Covariant anticommutator ($c$-number), for every element $\tilde X$ |
+| $\mathcal{G}_{\mathrm A}(x-y)$ | Antisymmetric Pauli–Jordan kernel; support inside the light cone |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric kernel of the commutator's vacuum expectation |
-| $F(\vec\Delta)=\int\frac{d^3p}{(2\pi\hbar)^3}\frac{\cos(\vec p\cdot\vec\Delta)}{E_{\vec p}}=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}\mathrm{Ki}_{1}(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
+| $F(\vec r_{12})=\int\frac{d^3p}{(2\pi\hbar)^3}\frac{\cos(\vec p\cdot\vec r_{12})}{E_{\vec p}}=\frac{m}{2\pi^2\lvert\vec r_{12}\rvert}\mathrm{Ki}_{1}(m\lvert\vec r_{12}\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
 | $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_\eta i\vec e_\eta\tilde X\vec e_y p_\eta+mc\tilde X)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
 | $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ | $c$-number wave biquaternion and mass shell |
 

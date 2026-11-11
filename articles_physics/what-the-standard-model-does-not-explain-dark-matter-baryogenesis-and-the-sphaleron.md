@@ -203,7 +203,7 @@ $$
 
 - **$B$ and $L$ are each violated**, by an amount proportional to the topological density. So the divergence is a total derivative of a topological object and integrates to an integer, which is why $\Delta B$ is quantised.
 - **$B-L$ is conserved exactly.** The combination is anomaly-free, so no process — perturbative or not — changes it.
-- **$\Delta B=\Delta L=N_g=3$** for a transition of unit winding number. One unit per generation, all three generations at once, which is why the process is called *sphaleron* and couples only to the generation-universal sector.
+- **$\Delta B=\delta L=N_g=3$** for a transition of unit winding number. One unit per generation, all three generations at once, which is why the process is called *sphaleron* and couples only to the generation-universal sector.
 
 **The consequence that makes the model unable to do baryogenesis.** If the universe starts with $B=L=0$, so does $B-L=0$, and since $B-L$ is conserved the final state has $B-L=0$. A sphaleron transition moves $B$ and $L$ together, so it moves $B$ from zero and back to zero. **The Standard Model therefore generates no net baryon number at all, from any initial condition with $B-L=0$.** This is a stronger statement than "too little CP violation", and it is the correct one.
 
@@ -355,7 +355,7 @@ and the observed $\eta=6.1\times10^{-10}$ requires $L\sim1.7\times10^{-9}$ in th
 | $J=3.13\times10^{-5}$ | **Computed** here from $\lambda$, $A$, $\bar\rho$, $\bar\eta$, $\delta$ |
 | $\eta\sim10^{-20}$ from $J$, eleven orders short | **Imported** estimate; the gap computed here |
 | $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$ | **Imported**; derived in the corpus's anomaly articles |
-| $\Delta B=\Delta L=3$, $\Delta(B-L)=0$ | **Imported**; the integer from the $\theta$-vacuum article |
+| $\Delta B=\delta L=3$, $\Delta(B-L)=0$ | **Imported**; the integer from the $\theta$-vacuum article |
 | $E_{\mathrm{sph}}=9.0$ TeV, $B=1.90$ | **Imported** energy; $B$ recomputed here |
 | $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $100$ GeV | **Computed** here |
 | $\tau_p>10^{160}$ yr | **Imported** ('t Hooft) |

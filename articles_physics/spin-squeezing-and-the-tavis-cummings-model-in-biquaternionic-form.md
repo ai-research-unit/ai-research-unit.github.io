@@ -106,7 +106,7 @@ $$
 because $\tilde S_{\Psi,\mathrm{tot},+}|s_{\mathrm{tot}},-s_{\mathrm{tot}}\rangle  =\hbar\sqrt{N}\,|s_{\mathrm{tot}},-s_{\mathrm{tot}}+1\rangle$ with $s_{\mathrm{tot}} = N/2$. The two eigenvalues are therefore separated by
 
 $$
-\boxed{\;\Delta E =2\,\hbar\,g\sqrt{N}\;}
+\boxed{\;\delta E =2\,\hbar\,g\sqrt{N}\;}
 $$
 
 the **collective Rabi splitting**. The square-root enhancement is the signature of the collective coupling: it is the same $\sqrt{N}$ that appears in superradiance and in the collective Lamb shift. The result was verified numerically: for $N = 1,4,16,100$ the eigenvalue splitting of the $2\times2$ block equals $2\,\hbar\,g\sqrt{N}$ exactly.
@@ -255,7 +255,7 @@ $$
 conserves the excitation number $a^\dagger a +\frac{\tilde{S}_{\Psi,\mathrm{tot},3}}{\hbar}+ N/2$. In its single-excitation sector the collective coupling is $\hbar\,g\sqrt{N}$ and the collective Rabi splitting is
 
 $$
-\Delta E =2\,\hbar\,g\sqrt{N},
+\delta E =2\,\hbar\,g\sqrt{N},
 $$
 
 verified numerically for $N = 1,4,16,100$. The Holstein–Primakoff linearisation reproduces this at large $N$, and the same $\sqrt{N}$ governs superradiance.
@@ -288,7 +288,7 @@ In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(
 | $g$ | Single-spin coupling to the mode |
 | $\tilde H_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
 | $a^\dagger a +\frac{\tilde{S}_{\Psi,\mathrm{tot},3}}{\hbar}+ N/2$ | Conserved excitation number |
-| $\Delta E =2\,\hbar\,g\sqrt{N}$ | Collective Rabi splitting |
+| $\delta E =2\,\hbar\,g\sqrt{N}$ | Collective Rabi splitting |
 | $\zeta_R^2 = N(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
 | $\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
 | $\mathrm{Cov}(\tilde S_{\Psi,\mathrm{tot},\alpha},\tilde S_{\Psi,\mathrm{tot},\beta})$ | Collective covariance; the squeezing ellipse |

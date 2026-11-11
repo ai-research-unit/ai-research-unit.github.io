@@ -157,7 +157,7 @@ identically, so $T=0$ at tree level in the reference theory. That is not a predi
 | Sector | $S$ | $T$ | $U$ |
 |---|---|---|---|
 | strictly degenerate **chiral** doublet, custodial | $N_c/(6\pi)$ | $0$ | $0$ |
-| chiral doublet with a mass splitting | $N_c/(6\pi)$ at degeneracy, smaller as the splitting grows | $\Delta\rho/\alpha$ | small |
+| chiral doublet with a mass splitting | $N_c/(6\pi)$ at degeneracy, smaller as the splitting grows | $\delta\rho/\alpha$ | small |
 | vector-like doublet, degenerate (left and right couplings equal) | $0$ | $0$ | $0$ |
 | vector-like singlet | $0$ | $0$ | $0$ |
 | state with hypercharge and no isospin | $0$ | $0$ | $0$ |
@@ -169,7 +169,7 @@ identically, so $T=0$ at tree level in the reference theory. That is not a predi
 **The formula.** For a heavy fermion doublet whose members have masses $m_1$ and $m_2$, the shift of the $\rho$ parameter is
 
 $$
-\Delta\rho=\frac{N_cG_F}{8\sqrt{2}\,\pi^2}\,f(m_1,m_2) ,
+\delta\rho=\frac{N_cG_F}{8\sqrt{2}\,\pi^2}\,f(m_1,m_2) ,
 \qquad
 f(m_1,m_2)=m_1^2+m_2^2-\frac{2m_1^2m_2^2}{m_1^2-m_2^2}\ln\frac{m_1^2}{m_2^2} .
 $$
@@ -178,12 +178,12 @@ The bracket $f$ vanishes identically at $m_1=m_2$, which is the check that it mu
 
 **Two limits, and they are different in kind.** The bracket has two regimes.
 
-- **One mass much lighter.** With $m_2\to0$ the bracket tends to $m_1^2$, so $\Delta\rho=N_cG_Fm_1^2/(8\sqrt2\pi^2)$. The top–bottom pair is in this regime, and the number is the classical one: with $m_t=172.69$ GeV the bracket is $2.98\times10^{4}$ GeV$^2$ and $\Delta\rho=9.3\times10^{-3}$, that is $T=1.27$.
-- **Near-degenerate.** With $m_2=m_1+\delta m$ the bracket tends to $(\Delta m^2)^2/(3m^2)$ with $\Delta m^2=m_2^2-m_1^2$, which is **quadratic in $\Delta m^2$** where the popular estimate is linear. A heavy pair is therefore far safer than the linear estimate suggests, and the popular formula $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ is not valid here: it overestimates by more than two orders of magnitude in the near-degenerate regime.
+- **One mass much lighter.** With $m_2\to0$ the bracket tends to $m_1^2$, so $\delta\rho=N_cG_Fm_1^2/(8\sqrt2\pi^2)$. The top–bottom pair is in this regime, and the number is the classical one: with $m_t=172.69$ GeV the bracket is $2.98\times10^{4}$ GeV$^2$ and $\delta\rho=9.3\times10^{-3}$, that is $T=1.27$.
+- **Near-degenerate.** With $m_2=m_1+\delta m$ the bracket tends to $(\delta m^2)^2/(3m^2)$ with $\delta m^2=m_2^2-m_1^2$, which is **quadratic in $\delta m^2$** where the popular estimate is linear. A heavy pair is therefore far safer than the linear estimate suggests, and the popular formula $\delta\rho\simeq N_cG_F\delta m^2/(8\sqrt2\pi^2)$ is not valid here: it overestimates by more than two orders of magnitude in the near-degenerate regime.
 
 **The table, exact against the quadratic estimate.**
 
-| $m_1$, $m_2$ (GeV) | $N_c$ | $\Delta\rho$ exact | $T$ exact | $T$ from the linear $\Delta m^2$ estimate |
+| $m_1$, $m_2$ (GeV) | $N_c$ | $\delta\rho$ exact | $T$ exact | $T$ from the linear $\delta m^2$ estimate |
 |---|---|---|---|---|
 | $300/301$ | $3$ | $4.2\times10^{-7}$ | $0.00006$ | $0.026$ |
 | $300/310$ | $3$ | $4.2\times10^{-5}$ | $0.006$ | $0.26$ |
@@ -193,7 +193,7 @@ The bracket $f$ vanishes identically at $m_1=m_2$, which is the check that it mu
 
 **The last row is the reference, and that is the point of the whole scheme.** The top–bottom contribution is not new physics: it sits inside the Standard Model prediction, and the reference top mass is defined so that it does. A reader who takes the $1.27$ of the last row as a discrepancy to be explained has forgotten what the subtraction means.
 
-**The bound $T$ places on a splitting.** With $\sigma_T=0.06$ and a colour-triplet doublet at $300$ GeV, the near-degenerate bracket gives $\Delta m\lesssim30$ GeV, and the exact bracket agrees: $300/325$ gives $T=0.036$ and $300/330$ gives $T=0.052$. The bound is on the splitting relative to the mass, not on the mass, which is why a heavy degenerate multiplet survives.
+**The bound $T$ places on a splitting.** With $\sigma_T=0.06$ and a colour-triplet doublet at $300$ GeV, the near-degenerate bracket gives $\delta m\lesssim30$ GeV, and the exact bracket agrees: $300/325$ gives $T=0.036$ and $300/330$ gives $T=0.052$. The bound is on the splitting relative to the mass, not on the mass, which is why a heavy degenerate multiplet survives.
 
 **$S$ and why it is the harder one to estimate.** $S$ survives only through the mixing, so it is sensitive to the difference of the two loop functions rather than to their size, and the difference is what makes the estimates scheme- and splitting-dependent. The large-$N$ number $N_c/(6\pi)$ is $0.053$ per doublet, of the order of the experimental uncertainty, which is the quantitative reason this sector is called precision physics: **a single chiral doublet at the electroweak scale would be visible, and none is.** The exact one-loop value for a given mass splitting is a two-line computation from the definition, and the literature's tables differ in the third digit for that reason.
 
@@ -268,11 +268,11 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 
 **The $\alpha$ choice, quantified.** The prefactor of $S$ is $4s_W^2c_W^2/\alpha$, which is $91.0$ with $\alpha(M_Z)$ and $97.4$ with $\alpha(0)$. The same physical self-energy therefore gives two different values of $S$, differing by $7$ per cent — about one standard deviation. **$S$ without a statement of $\alpha$ is not a number**, and this is the same lesson article 5 states about $\sin^2\theta_W$.
 
-**The reference choice, quantified.** Moving the reference top mass by $1$ GeV moves $T$ by $0.0148$, since $\partial T/\partial m_t$ is the top's contribution to $\Delta\rho$ differentiated. That is a quarter of the uncertainty, so the reference mass must be quoted to the GeV.
+**The reference choice, quantified.** Moving the reference top mass by $1$ GeV moves $T$ by $0.0148$, since $\partial T/\partial m_t$ is the top's contribution to $\delta\rho$ differentiated. That is a quarter of the uncertainty, so the reference mass must be quoted to the GeV.
 
 **What does *not* depend on the scheme.** The physical predictions: $M_W$, the $Z$-pole asymmetries and the cross sections. The parameters are coordinates on the space of heavy sectors, and coordinates move when the axes do, which is why the scheme column exists in the table of article 1 and why this article repeats the discipline.
 
-**Which $\alpha$ this article's numbers actually use, and why the answer is $\alpha(0)$.** Every number here is normalised with $\alpha(0)=1/137.036$, not $\alpha(M_Z)$. That is not a slip of the same kind the table above warns about; it is the convention the definitions were written in, and it is visible in two of the article's own numbers. $T=\Delta\rho/\alpha$ at the top row gives $1.27$ with $\alpha(0)$ and $1.19$ with $\alpha(M_Z)$. And $\alpha T=\rho-1$ at $T=0.05$ gives $3.6\times10^{-4}$ with $\alpha(0)$ and $3.9\times10^{-4}$ with $\alpha(M_Z)$. Using $\alpha(M_Z)$ throughout would rescale $S$ and $T$ by $0.934$ — the $7$ per cent of the table, and nothing else changes.
+**Which $\alpha$ this article's numbers actually use, and why the answer is $\alpha(0)$.** Every number here is normalised with $\alpha(0)=1/137.036$, not $\alpha(M_Z)$. That is not a slip of the same kind the table above warns about; it is the convention the definitions were written in, and it is visible in two of the article's own numbers. $T=\delta\rho/\alpha$ at the top row gives $1.27$ with $\alpha(0)$ and $1.19$ with $\alpha(M_Z)$. And $\alpha T=\rho-1$ at $T=0.05$ gives $3.6\times10^{-4}$ with $\alpha(0)$ and $3.9\times10^{-4}$ with $\alpha(M_Z)$. Using $\alpha(M_Z)$ throughout would rescale $S$ and $T$ by $0.934$ — the $7$ per cent of the table, and nothing else changes.
 
 **The corpus's own convention is $\alpha(M_Z)$, and the two must be kept apart.** Article 5 states its angle at $M_Z$ in the $\overline{\mathrm{MS}}$ scheme, articles 4 and 5 use the couplings at $M_Z$, and the corpus is consistent in doing so. The oblique parameters are the exception, because their normalisation is inherited from Peskin and Takeuchi and is a statement about the reference theory rather than about the $Z$ pole. So this article uses $\alpha(0)$ inside $S$, $T$ and $U$ and says so once here, and a reader comparing with a table that used $\alpha(M_Z)$ must accept the $7$ per cent before comparing digits. A statement of the form "$S=0.00$" without an $\alpha$ is not a number, and neither is "$T=1.27$".
 
@@ -310,7 +310,7 @@ $T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0
 
 The measured values are $S=0.00\pm0.07$, $T=0.05\pm0.06$ and $U=0.02\pm0.06$, with an $S$–$T$ correlation near $+0.9$. The strong correlation is not a detail: it means the two uncertainties cannot be combined in quadrature and that a sector moving along the ellipse is less constrained than either bound suggests.
 
-A mass splitting shifts $T$ through the Veltman bracket, which is quadratic in $\Delta m^2$ for a near-degenerate pair and linear in the heavy mass for a hierarchical one; the popular linear estimate $\Delta\rho\simeq N_cG_F\Delta m^2/(8\sqrt2\pi^2)$ overestimates the near-degenerate case by more than two orders of magnitude, and the table above shows the exact values beside it. The top–bottom pair contributes $T=1.27$ and sits inside the reference, which is what the subtraction means. An exactly degenerate *chiral* pair has $T=U=0$ by custodial symmetry and $S=N_c/(6\pi)$ at full strength; it is the vector-like pair, with equal left and right couplings, that vanishes from all three. $S$ is therefore a meter of chiral versus vector-like structure, not of particle count.
+A mass splitting shifts $T$ through the Veltman bracket, which is quadratic in $\delta m^2$ for a near-degenerate pair and linear in the heavy mass for a hierarchical one; the popular linear estimate $\delta\rho\simeq N_cG_F\delta m^2/(8\sqrt2\pi^2)$ overestimates the near-degenerate case by more than two orders of magnitude, and the table above shows the exact values beside it. The top–bottom pair contributes $T=1.27$ and sits inside the reference, which is what the subtraction means. An exactly degenerate *chiral* pair has $T=U=0$ by custodial symmetry and $S=N_c/(6\pi)$ at full strength; it is the vector-like pair, with equal left and right couplings, that vanishes from all three. $S$ is therefore a meter of chiral versus vector-like structure, not of particle count.
 
 The standard large-$N$ estimate for a chiral doublet's contribution to $S$, $N_c/(6\pi)=0.053$, is the size of the experimental uncertainty. That coincidence is what makes the sector a precision test: one chiral doublet at the electroweak scale would be visible, and none is. A vector-like singlet, and any state with no isospin, shifts nothing at leading order, so the parameters measure multiplet structure and its breaking rather than the presence of heavy states. The oblique description is itself a hypothesis, tested by the fit's residuals, with a date on it.
 
@@ -334,7 +334,7 @@ The framework supplies the transversality of the self-energy through article 7's
 | $S$ | The $W^3$–$B$ mixing parameter |
 | $T$ | The custodial-breaking value parameter, $\alpha T=\rho-1$ |
 | $U$ | The custodial-breaking slope parameter |
-| $\Delta\rho$ | The shift of $\rho$, equal to $\alpha T$ at leading order |
+| $\delta\rho$ | The shift of $\rho$, equal to $\alpha T$ at leading order |
 | $f(m_1,m_2)$ | The Veltman bracket, vanishing at $m_1=m_2$ |
 | $N_c$ | Colour multiplicity: $1$ for leptons, $3$ for quarks |
 | $m_t$, $M_H$ | Reference top and Higgs masses of the subtraction |

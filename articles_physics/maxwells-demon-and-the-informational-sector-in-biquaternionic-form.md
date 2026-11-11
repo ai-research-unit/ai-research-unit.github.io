@@ -121,10 +121,10 @@ of work on the piston, using the ideal-gas relation $P = k_BT/V$ for one particl
 The entropy balance of the step is exact. During the isothermal expansion the entropy of the one-particle gas rises by
 
 $$
-\Delta S_{\rm gas} = k_B\log\frac{V}{V/2} = k_B\log 2 ,
+\delta S_{\rm gas} = k_B\log\frac{V}{V/2} = k_B\log 2 ,
 $$
 
-and the heat absorbed from the bath is $\mathcal{Q} = T\,\Delta S_{\rm gas} = k_BT\log2$, so the bath's entropy falls by $k_B\log2$ and the total of gas and bath is unchanged. The work delivered to the piston is exactly the heat absorbed, $W_{\rm ext} = \mathcal{Q}$, because the internal energy of an ideal gas is unchanged at fixed temperature. Nothing in this step is irreversible, and the bound is saturated.
+and the heat absorbed from the bath is $\mathcal{Q} = T\,\delta S_{\rm gas} = k_BT\log2$, so the bath's entropy falls by $k_B\log2$ and the total of gas and bath is unchanged. The work delivered to the piston is exactly the heat absorbed, $W_{\rm ext} = \mathcal{Q}$, because the internal energy of an ideal gas is unchanged at fixed temperature. Nothing in this step is irreversible, and the bound is saturated.
 
 ### The General Bound
 
@@ -134,7 +134,7 @@ $$
 W_{\rm ext} \;\le\; -\Delta F_{\rm gas} + k_BT\,I ,
 $$
 
-where $I$ is the mutual information established by the measurement and $\Delta F_{\rm gas}$ the change of the free energy of the gas. For the isothermal expansion the internal energy of the ideal gas is unchanged, so $-\Delta F_{\rm gas} = k_BT\,\Delta S_{\rm gas}$, and in that case the bound may equally be written $W_{\rm ext} \le k_BT(I + \Delta S_{\rm gas})$. For the cyclic engine the gas returns to its initial macrostate, so $\Delta F_{\rm gas} = 0$ and
+where $I$ is the mutual information established by the measurement and $\Delta F_{\rm gas}$ the change of the free energy of the gas. For the isothermal expansion the internal energy of the ideal gas is unchanged, so $-\Delta F_{\rm gas} = k_BT\,\delta S_{\rm gas}$, and in that case the bound may equally be written $W_{\rm ext} \le k_BT(I + \delta S_{\rm gas})$. For the cyclic engine the gas returns to its initial macrostate, so $\Delta F_{\rm gas} = 0$ and
 
 $$
 \boxed{\;W_{\rm ext} \;\le\; k_BT\,I\;}.

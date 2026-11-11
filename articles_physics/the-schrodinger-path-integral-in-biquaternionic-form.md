@@ -87,11 +87,11 @@ $$
 where the potential factor is evaluated at the initial point because the commutator $[p^2,V]$ is itself of order $\hbar$ and contributes only at higher order. The momentum integral is the standard Fresnel integral
 
 $$
-\int\frac{d^3p}{(2\pi\hbar)^3}\exp\left[\frac{i}{\hbar}\,\vec p\cdot\vec\Delta-\frac{i\,\varepsilon\,p^{2}}{2\,\hbar\,m\,c}\right]
+\int\frac{d^3p}{(2\pi\hbar)^3}\exp\left[\frac{i}{\hbar}\,\vec p\cdot\vec r_{12}-\frac{i\,\varepsilon\,p^{2}}{2\,\hbar\,m\,c}\right]
 = \left(\frac{k_m}{2\pi i\varepsilon}\right)^{3/2}
-\exp\left(\frac{i\,k_m|\vec\Delta|^2}{2\,\varepsilon}\right),
+\exp\left(\frac{i\,k_m|\vec r_{12}|^2}{2\,\varepsilon}\right),
 \qquad
-\vec\Delta = r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
+\vec r_{12} = r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
 so that
@@ -103,7 +103,7 @@ G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z
 + O(\varepsilon^2).
 $$
 
-The short-time kernel is central. Its phase is $\frac{i}{\hbar}$ times the short-time action $\mathrm{Lag}\,\varepsilon = \frac{m\,c|\vec\Delta|^{2}}{2\varepsilon}-\frac{\varepsilon\,V}{c}$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
+The short-time kernel is central. Its phase is $\frac{i}{\hbar}$ times the short-time action $\mathrm{Lag}\,\varepsilon = \frac{m\,c|\vec r_{12}|^{2}}{2\varepsilon}-\frac{\varepsilon\,V}{c}$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec r_{12}$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
 
 ### The Trotter product and the measure
 

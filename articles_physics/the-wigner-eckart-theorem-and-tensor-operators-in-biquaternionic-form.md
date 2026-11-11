@@ -136,7 +136,7 @@ $$
 |s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k\;},
 $$
 
-the first from the vanishing of the Clebsch–Gordan coefficient unless the magnetic quantum numbers add, the second from the multiplet range of the coupling. For a scalar operator, $k=\mu=0$ and $\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};0,0|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle=\delta_{s_{\mathrm{tot}} s_{\mathrm{fin}}}\delta_{m m_2}$, so the theorem reduces to the statement that a scalar operator is diagonal in the multiplets and has one reduced matrix element per $s_{\mathrm{tot}}$ — the content of Schur's lemma for the trivial representation. For a vector operator, $k=1$ and the selection rule is $\Delta s_{\mathrm{tot}}\in\{-1,0,+1\}$ with $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$.
+the first from the vanishing of the Clebsch–Gordan coefficient unless the magnetic quantum numbers add, the second from the multiplet range of the coupling. For a scalar operator, $k=\mu=0$ and $\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};0,0|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle=\delta_{s_{\mathrm{tot}} s_{\mathrm{fin}}}\delta_{m m_2}$, so the theorem reduces to the statement that a scalar operator is diagonal in the multiplets and has one reduced matrix element per $s_{\mathrm{tot}}$ — the content of Schur's lemma for the trivial representation. For a vector operator, $k=1$ and the selection rule is $\delta s_{\mathrm{tot}}\in\{-1,0,+1\}$ with $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$.
 
 ## Verification in the Coupled Two-Spin Space
 

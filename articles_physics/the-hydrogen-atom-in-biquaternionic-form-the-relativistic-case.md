@@ -40,7 +40,7 @@ which enters the spectrum as a parameter.
 ### The algebra equation and its operator-frame reading
 The framework's field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, and the position dependence is carried by its argument rather than by the finite-dimensional algebra. The internal two-valued index of the older literature is that element read in a frame fixed by a declared unit vector; it is a reading of the field and not the field. The standard equation carries four entries because the element carries four coefficients, and the two halves of that four are the chirality labels $L$ and $R$.
 
-The coordinates are the corpus's, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.
+The coordinates are the corpus's, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian with no metric factor to put in by hand.
 
 The free biquaternion Dirac equation is the one-sided chiral pair
 
@@ -235,7 +235,7 @@ $$
 and the next is the **fine structure**
 
 $$
-\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12} - \frac{3}{4n}\right),
+\delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12} - \frac{3}{4n}\right),
 $$
 
 whose $s_{\mathrm{tot}}$-dependence is the $l$-splitting read off the exact formula. The expansion was recomputed exactly, in rational arithmetic, for every $n \le 6$ and every $s_{\mathrm{tot}}$ allowed at that $n$, and again in closed form for general $n$ at $s_{\mathrm{tot}} = \tfrac12, \tfrac32, \tfrac52$: the coefficient of $(\mathfrak{Z}\alpha)^2$ is $-1/(2n^2)$ and the coefficient of $(\mathfrak{Z}\alpha)^4$ is $-\tfrac{1}{2n^3}(\tfrac{1}{s_{\mathrm{tot}}+1/2}-\tfrac{3}{4n})$ in every case, with no discrepancy.
@@ -569,7 +569,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ | Spin–orbit operator, in $\mathbb{B}_{\Psi}$; eigenvalues $\frac{\hbar^{2}}{2}[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34]$ |
 | $\lvert n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Coupled relativistic basis |
 | $E_{n s_{\mathrm{tot}}}$, $\delta_{s_{\mathrm{tot}}}$ | Exact Sommerfeld–Dirac energy and the Sommerfeld parameter |
-| $\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\bigl(\frac{1}{s_{\mathrm{tot}}+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
+| $\delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\bigl(\frac{1}{s_{\mathrm{tot}}+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
 | $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative (minimal-coupling article) |
 | $\tilde\nabla_{\mathrm{gco}}^{\natural} = (\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | $\natural$-image of the covariant derivative; operator of the second chiral member |
 | $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\natural}G_\mu(-iR_{\mathrm{axf},\vec e_z})\tilde{Ξ}_{\mathrm{sp}}$ | Axial current; $G_\mu$ the four basis operator generators, the vector current omitting the chirality basis operator |

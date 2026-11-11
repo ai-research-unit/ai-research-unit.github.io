@@ -369,7 +369,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\mathbb{B}_{C}\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t$, $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
-| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
 | $\hbar/(mc)$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m$ is the inverse range, and classically only $\hbar/(mc)$ matters |
 | $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |

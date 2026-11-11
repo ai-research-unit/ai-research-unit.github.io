@@ -29,7 +29,7 @@ Three boundaries are respected. The Klein–Gordon **propagator** and the **scal
 Two conventions are load-bearing and are stated once. The d'Alembertian is the series convention,
 
 $$
-\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta ,
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 ,
 $$
 
 with $Q_t=i q'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
@@ -110,7 +110,7 @@ Both operators act by multiplication, $\tilde\nabla_\Phi\tilde{Ξ}$ and $(\tilde
 Their product is central and scalar:
 
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2 = \Box_\Phi .
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 = \Box_\Phi .
 $$
 
 The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_\eta\} = 0$ for $j\neq k$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,
@@ -419,7 +419,7 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $(\tilde\nabla_\Phi)^{\natural}$ | Quaternion conjugate gradient |
 | $\vec\nabla = \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Vector part of the gradient, $\lvert\vec\nabla\rvert^2 = \Delta$ |
 | $\tilde{\nabla}^2 = \left(\partial^2/\partial R_t^2 - \lvert\vec\nabla\rvert^2\right)e_t + 2\,\partial/\partial R_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde P_{\Phi} =\hbar\,(i\omega/c\,e_t + \vec k_\Phi)$ | Four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + \vec r$, with $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot\vec r - \omega r'_t/c$ |

@@ -771,7 +771,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | the norm of the exponential is fixed by three numbers | established | the law of *Relations between the Biquaternion Exponential and the Fourier Kernel*; checked to $1.4\times10^{-15}$ |
 | the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_\eta Q_\eta^2\ge0$ for a real vector part, $-\sum_\eta q_\eta^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
 | a survival probability can fall while the total is conserved | established | band model, 2000 levels: $P_0$ falls $1\to0.135$, total norm $1.000000000$; checked |
-| the survival probability leaves one quadratically | corpus result | $P=1-\frac{\Delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r'^2_t=0.800$ vs $g^2N=0.8$ |
+| the survival probability leaves one quadratically | corpus result | $P=1-\frac{\Delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r_t^{\prime 2}=0.800$ vs $g^2N=0.8$ |
 | the exponential is an intermediate-time fit, not the law | corpus result | quadratic start, power-law tail; deficit ratio $6287$ at $r'_t=10^{-4}$ |
 | the width is the imaginary part of the central self-energy | corpus result | *The Unstable State and the Complex Energy Pole* |
 | in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde H_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde H_\Psi$; checked |

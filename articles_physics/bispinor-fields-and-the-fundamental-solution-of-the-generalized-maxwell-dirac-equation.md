@@ -19,7 +19,7 @@ which was checked exactly. The source's **wave operator** is therefore minus the
 
 $$
 \vec\nabla^{-}_\Phi\vec\nabla^{+}_\Phi = \vec\nabla^{+}_\Phi\vec\nabla^{-}_\Phi = \Box_{\text{s}} := \partial^2/\partial\tau^2 - \Delta_\Phi = -\,\Box_\Phi ,
-\qquad \Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi ,
+\qquad \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 ,
 $$
 
 and the source's operator differs in sign from the corpus's. Consequently the source's mass $m$ in $(\vec\nabla^{\pm}_\Phi + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an **imaginary** $m = i\rho$ — is the corpus's **real** $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.

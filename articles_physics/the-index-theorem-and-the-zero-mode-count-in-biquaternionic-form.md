@@ -256,7 +256,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a=\tfrac12 \vec e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Normalised generators |
-| $\Box_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ |
+| $\Box_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ |
 | $\Delta=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ | Laplacian in the three vector coordinates |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient, acting from the left; $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
 | $\tilde D_R=\sum_\mu e_\mu D_\mu$ | Twisted Dirac operator in the representation $R$; the gauge-covariant gradient |

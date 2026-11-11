@@ -26,11 +26,11 @@ The article proceeds as follows. The modular Hamiltonian is defined and its biqu
 
 ### Definition
 
-Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular operator $\Delta_\sigma$. The **modular Hamiltonian** is
+Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular operator $\mathcal{M}_\sigma$. The **modular Hamiltonian** is
 $$
-H_{\mathrm{modular},\sigma}=-\log\Delta_\sigma,
+H_{\mathrm{modular},\sigma}=-\log\mathcal{M}_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{r'_{t}}(\tilde Q_1)=\exp(-it'H_{\mathrm{modular},\sigma})\tilde Q_1 \exp(it'H_{\mathrm{modular},\sigma})$. In finite dimension, with $\Delta_\sigma$ acting as $e^{-\tilde H_{\Psi,\mathrm{modular},\sigma}}\,\cdot\,e^{\tilde H_{\Psi,\mathrm{modular},\sigma}}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{r'_{t}}(\tilde Q_1)=\exp(-it'H_{\mathrm{modular},\sigma})\tilde Q_1 \exp(it'H_{\mathrm{modular},\sigma})$. In finite dimension, with $\mathcal{M}_\sigma$ acting as $e^{-\tilde H_{\Psi,\mathrm{modular},\sigma}}\,\cdot\,e^{\tilde H_{\Psi,\mathrm{modular},\sigma}}$ and $\sigma$ a density matrix,
 $$
 H_{\mathrm{modular},\sigma}=-\log\sigma,
 $$
@@ -132,16 +132,16 @@ The scaling was checked further at a step of $10^{-4}$, where $\delta S-\delta\l
 
 The deficit in the exact identity has its own operator, and it is the one introduced in the relative-entropy companion article. On the algebra the relative modular operator of two states is
 $$
-\Delta_{\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}\big(\tilde Q_1\big)
+\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi},\tilde{\mathrm{Ϛ}}_{\Psi,0}}\big(\tilde Q_1\big)
 =e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde Q_1\,e^{\tilde H_{\Psi,\mathrm{modular},0}},
 \qquad
-\log\Delta_{\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}\big(\tilde Q_1\big)
+\log\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi},\tilde{\mathrm{Ϛ}}_{\Psi,0}}\big(\tilde Q_1\big)
 =\log\tilde{Ϛ}_{\Psi}\,\tilde Q_1-\tilde Q_1\log\tilde{Ϛ}_{\Psi,0},
 $$
-with $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ and $\tilde H_{\Psi,\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}$ the two modular Hamiltonians, and with relative modular Hamiltonian $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}=-\log\Delta_{\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}_{\Psi}}=\tilde{Ϛ}_{\Psi}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
+with $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ and $\tilde H_{\Psi,\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}$ the two modular Hamiltonians, and with relative modular Hamiltonian $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}=-\log\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi},\tilde{\mathrm{Ϛ}}_{\Psi,0}}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}_{\Psi}}=\tilde{Ϛ}_{\Psi}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
 $$
 S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,0})
-=\big\langle\Omega_{\tilde{Ϛ}_{\Psi}},\log\Delta_{\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}\Omega_{\tilde{Ϛ}_{\Psi}}\big\rangle,
+=\big\langle\Omega_{\tilde{Ϛ}_{\Psi}},\log\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi},\tilde{\mathrm{Ϛ}}_{\Psi,0}}\Omega_{\tilde{Ϛ}_{\Psi}}\big\rangle,
 $$
 as the relative-entropy companion article established, which in terms of the relative modular Hamiltonian reads
 $$
@@ -247,8 +247,8 @@ The mechanism is that the modular energy is linear in the state while the relati
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
-| $\Delta_\sigma=S^*S$ | Modular operator of the state $\sigma$ |
-| $H_{\mathrm{modular},\sigma}=-\log\Delta_\sigma$ | Modular Hamiltonian |
+| $\mathcal{M}_\sigma=S^*S$ | Modular operator of the state $\sigma$ |
+| $H_{\mathrm{modular},\sigma}=-\log\mathcal{M}_\sigma$ | Modular Hamiltonian |
 | $H_{\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}$ | Modular Hamiltonian of a biquaternion state $\in\mathbb{B}_{\Psi}$ |
 | $r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$ | Reference-state data |
 | $\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi} H_{\mathrm{modular},0}^{*})$ | Modular energy of $\tilde{Ϛ}_{\Psi}$ |

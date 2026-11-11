@@ -277,9 +277,9 @@ for every $\tilde{Ξ}_{\mathrm{sp}}$. It is the gradient of $-t$ and of nothing 
 
 The rest of that section is the retarded kernel and the bilocal action
 $$
-G_{\mathrm{prop}}(x-y)=\ell_c^{-2}\,\mathrm{H}_{\mathrm{hvs}}(x_0-y_0)\,\Delta_m(x-y),
+G_{\mathrm{prop}}(x-y)=\ell_c^{-2}\,\mathrm{H}_{\mathrm{hvs}}(x_0-y_0)\,\mathcal{G}_m(x-y),
 \qquad
-\Delta S_K=\tfrac12\int d^4r\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,G_{\mathrm{prop}}(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
+\delta S_K=\tfrac12\int d^4r\,d^4y\;\frac{\partial\tau}{\partial x_\mu}(x)\,G_{\mathrm{prop}}(x-y)\,\frac{\partial\tau}{\partial x^\mu}(y),
 \qquad \frac{\partial}{\partial r_x^\mu}=\varepsilon_\mu\,\frac{\partial}{\partial x_\mu}\quad(\text{no sum}) .
 $$
 The kernel is the standard retarded Green's function combination; the source itself notes that its Lorentz invariance holds "modulo frame choice for $\Theta$", which is the standard qualification, and since $\tau$ is not the field claimed, the construction adds nothing testable. The source's own "Caveat" names Kozyrev's claims as "controversial and largely unreplicated". The corpus's route to causal asymmetry, in *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and *Thermal Time and the Modular Flow in the Biquaternion Framework*, does not use Kozyrev and does not depend on this section.
@@ -397,10 +397,10 @@ Their evidentiary problem is upstream of them. Each number is computed from a co
 
 Appendix D carries its own dimensional gap, in an equation of two terms. Its phase is
 $$
-\Delta\theta=\frac{qΞ_{B}}{\hbar}+\frac{\beta\,Ξ_{T}}{\hbar}\bigl(\Delta s_z\bigr),
+\Delta\theta=\frac{qΞ_{B}}{\hbar}+\frac{\beta\,Ξ_{T}}{\hbar}\bigl(\delta s_z\bigr),
 \qquad \beta=\tfrac12 ,
 $$
-with $\Delta s_z$ the difference of the two spin projections, B minus A, and $Ξ_T$ called "the torsion flux" and never defined. The magnetic term is dimensionally complete: a flux times a charge is an action, and an action over $\hbar$ is a phase. The torsion term cannot be, whatever $Ξ_T$ is taken to be. If it is the flux of the torsion, $\int T\cdot dA$, its dimension is a length; the ratio to $\hbar$ is then length over action, which is not a phase, and the dimensionless $\beta=\tfrac12$ supplies nothing. If instead $Ξ_T$ is given units of action, the appendix never says so, and no display connects it to the torsion that the rest of the paper computes. The coefficient that the term needs is a coupling with the dimension of $\hbar$ per unit torsion flux, and that is exactly the slot where the missing power of $\hbar$ of Eq. (26) sits. The tables are recorded here as the source's claims, with the observation that none of them survives the recomputations above, and therefore that their numerical agreement with current sensitivities should not be read as evidence for the framework.
+with $\delta s_z$ the difference of the two spin projections, B minus A, and $Ξ_T$ called "the torsion flux" and never defined. The magnetic term is dimensionally complete: a flux times a charge is an action, and an action over $\hbar$ is a phase. The torsion term cannot be, whatever $Ξ_T$ is taken to be. If it is the flux of the torsion, $\int T\cdot dA$, its dimension is a length; the ratio to $\hbar$ is then length over action, which is not a phase, and the dimensionless $\beta=\tfrac12$ supplies nothing. If instead $Ξ_T$ is given units of action, the appendix never says so, and no display connects it to the torsion that the rest of the paper computes. The coefficient that the term needs is a coupling with the dimension of $\hbar$ per unit torsion flux, and that is exactly the slot where the missing power of $\hbar$ of Eq. (26) sits. The tables are recorded here as the source's claims, with the observation that none of them survives the recomputations above, and therefore that their numerical agreement with current sensitivities should not be read as evidence for the framework.
 
 Their arithmetic is also worth one line, because it can be checked from the printed page alone. The worked example after Eq. (27) evaluates the phase as $\ell/(\hbar\,v)$ times a potential of order $10^{-30}$, quotes $\ell=1\,\mathrm{m}$, $v=10^3\,\mathrm{m\,s^{-1}}$ and $\hbar\simeq10^{-34}\,\mathrm{J\,s}$, and prints the answer as $10^{-3}\,\mathrm{rad}$; the prefactor written in its own denominator is $10^{-34}\cdot10^{3}=10^{-31}$, so $10^{-30}/10^{-31}$ is of order ten, not $10^{-3}$. The printed line is off by four orders of magnitude from the product printed beside it. The potential inserted in it, $10^{-30}\,\mathrm{J}$, is quoted rather than computed: with $\beta=\frac{\hbar^{2}}{8\,m}$ from Eq. (26) and the caesium mass that section's clock reference implies, $\beta\,\lvert T\rvert^2$ for the paper's own $\lvert T\rvert\simeq3\times10^{-32}\,\mathrm{m^{-1}}$ is of order $10^{-107}\,\mathrm{J}$, so the estimate's input is as unsourced as its arithmetic.
 

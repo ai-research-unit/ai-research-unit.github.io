@@ -144,14 +144,14 @@ $$
 because every mode in the integral is on shell. The Feynman propagator is the time-ordered combination
 
 $$
-\Delta_F(x-y)=\langle0|T\,\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
+\mathcal{G}_F(x-y)=\langle0|T\,\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
 =\mathrm{J}(x_0-y_0)W(x-y)+\mathrm{J}(y_0-x_0)W(y-x),
 $$
 
 whose momentum-space form is
 
 $$
-\Delta_F(p)=\frac{i}{p^2-\mu^2+i\epsilon},
+\mathcal{G}_F(p)=\frac{i}{p^2-\mu^2+i\epsilon},
 \qquad
 p^2=\omega^2-\vec p^2 ,
 $$
@@ -163,7 +163,7 @@ The biquaternion interpretation of the propagator is a rewriting of the denomina
 $$
 \boxed{\;p^2-\mu^2=-\left(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2\right),
 \qquad
-\Delta_F(\tilde P_{\Phi})=-\frac{i}{\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon}\;}.
+\mathcal{G}_F(\tilde P_{\Phi})=-\frac{i}{\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon}\;}.
 $$
 
 The denominator is the mass-shell function of the parent article: the pole of the propagator is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, and the $i\epsilon$ prescription displaces the pole off the real axis. The two-point function is thus the biquaternion norm's inverse, shifted by the mass; the companion article *The Scalar Field Path Integral in Biquaternionic Form* makes the same statement for the free Gaussian, whose width is the shifted biquaternion norm, and this identification of the pole with the mass-shell level set is the only place where the propagator's biquaternion form is more than a rewriting.
@@ -240,7 +240,7 @@ $$
 \big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}(y)\big]=0,
 $$
 
-so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $\mathrm{U}(1)$, and the phase is central because the field's value space is.
+so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $\mathrm{U}(1)$, and the phase is central because the field's value space is.
 
 The biquaternion content of the field operator is therefore confined to its value space and its phases: central-valuedness, the trivial rotor action, and the biquaternion-norm interpretation of the mass shell and the propagator pole. The ladder, the Fock space and the correlation functions are the standard bosonic construction on an imported module, and the algebra supplies no part of them; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves the exclusion by the trace of a commutator. The field is a scalar with respect to $\mathbb{B}$ and a standard bosonic operator field on the outside.
 
@@ -262,8 +262,8 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\mathcal{C}:\xi_{\mathrm{fop}}\mapsto\xi_{\mathrm{fop}}^{\dagger}$ | Charge conjugation, $a_{\mathrm{fop}}\leftrightarrow b_{\mathrm{fop}}$, $Ϙ_{\mathrm{fop}}\mapsto-Ϙ_{\mathrm{fop}}$ |
 | $i\Delta(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator function (c-number) |
 | $W(x-y)=\langle0|\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle$ | Wightman function (positive frequency) |
-| $\Delta_F=\mathrm{J}(x_0-y_0)W(x-y)+\mathrm{J}(y_0-x_0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
-| $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$ |
+| $\mathcal{G}_F=\mathrm{J}(x_0-y_0)W(x-y)+\mathrm{J}(y_0-x_0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
+| $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$ |
 | $\tilde P_{\Phi}=i\omega\,e_t+\vec p$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $U_{\mathrm{fop},\alpha}=\exp(i\alpha Ϙ_{\mathrm{fop}})$, $\xi_{\mathrm{fop}}\to \exp(-i\alpha)\xi_{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $\tilde U\in\mathbb{B}_{\Psi}$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |

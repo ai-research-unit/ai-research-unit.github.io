@@ -58,7 +58,7 @@ Two definitions make the theorem precise.
 
 **Contraction.** The contraction of two fields is their time-ordered vacuum expectation value,
 $$
-\Delta_{ij} \;\equiv\; \big\langle 0\big|T\,\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big|0\big\rangle ,
+\mathcal{G}_{ij} \;\equiv\; \big\langle 0\big|T\,\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big|0\big\rangle ,
 $$
 the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on its spinor module this is the spinor propagator $S_F$, and for the scalar example it is $D_F$; both are constructed in *The Feynman Propagator in Biquaternionic Form*, and their biquaternion content is the wave biquaternion $\tilde P_{\Phi} = i(E/c)e_t+\vec p$ with $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ on the mass shell. The article does not rebuild them.
 
@@ -66,7 +66,7 @@ the Feynman propagator from $x_i$ to $x_j$. For the biquaternion Dirac field on 
 $$
 \big\langle 0\big|:\!\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},n}\!:\big|0\big\rangle = 0,
 \qquad
-\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j} = \,:\!\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\!:\, + \, \Delta_{ij}\,e_t ,
+\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j} = \,:\!\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\!:\, + \, \mathcal{G}_{ij}\,e_t ,
 $$
 for $n=2$, together with linearity. The second equation is the theorem at $n=2$, and it shows that the two definitions of normal ordering differ by the contraction.
 

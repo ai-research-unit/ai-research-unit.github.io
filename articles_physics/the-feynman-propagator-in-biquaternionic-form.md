@@ -149,7 +149,7 @@ $$
 
 The action is written by what it does, so the display carries the test element and no second symbol. The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches, with the normalization of the time-ordered product and the fermionic relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
 
-Write the $p_0$ integral at fixed $\vec p$, and put $\Delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec y$. Since
+Write the $p_0$ integral at fixed $\vec p$, and put $\delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec y$. Since
 
 $$
 p^2-m^{2}\,c^{2}=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-\frac{E_{\vec p}^2}{c^{2}},
@@ -166,10 +166,10 @@ $$
 
 The sign is worth fixing once explicitly. Let $p_0=E_{\vec p}/c+\delta$. Then the denominator is $2(E_{\vec p}/c)\,\delta+i\epsilon$, and it vanishes at $\delta=-i\epsilon\,c/(2E_{\vec p})$, which is **below** the axis. At $p_0=-E_{\vec p}/c+\delta$ the denominator is $-2(E_{\vec p}/c)\,\delta+i\epsilon$, and it vanishes at $\delta=+i\epsilon\,c/(2E_{\vec p})$, which is **above** it.
 
-This is the whole content of the prescription: the two poles are displaced in *opposite* directions. The decay of $\exp(-ip_0\Delta t)$ then selects one pole or the other:
+This is the whole content of the prescription: the two poles are displaced in *opposite* directions. The decay of $\exp(-ip_0\delta t)$ then selects one pole or the other:
 
-- for $\Delta t>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}/c$;
-- for $\Delta t<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}/c$.
+- for $\delta t>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}/c$;
+- for $\delta t<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}/c$.
 
 Write $p_+=(E_{\vec p}/c,\vec p)$ and $p_-=(-E_{\vec p}/c,\vec p)$. The residues are
 
@@ -184,18 +184,18 @@ $$
 The contour contributes $-2\pi i$ when it closes below and $+2\pi i$ when it closes above. With the residues above and the overall factor $i$ of $S_F$, the two cases are
 
 $$
-\Delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}
+\delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}
 =2\pi\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 $$
 
 $$
-\Delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}/c}
+\delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}/c}
 =2\pi\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 $$
 
 in both lines the product of the two imaginary units being $i^2=-1$.
 
-Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is
+Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\delta t<0$ it is
 
 $$
 \frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\Delta h_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).

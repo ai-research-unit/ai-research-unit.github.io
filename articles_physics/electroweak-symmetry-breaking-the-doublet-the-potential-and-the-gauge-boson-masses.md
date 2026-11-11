@@ -379,7 +379,7 @@ $$
 \Delta r=0.0355 ,
 $$
 
-and the two pieces of it are as large as the total. The running of the electromagnetic coupling from zero momentum to $M_Z$ contributes $+0.071$, the largest single term, and it is the piece that route B absorbs into its input. The top-quark and scalar loops contribute about $-0.033$, through $\Delta\rho$ in the combination $-\tfrac{\cos^2\theta_W}{\sin^2\theta_W}\Delta\rho$ with $\cos^2/\sin^2=3.48$ and $\Delta\rho\approx0.0095$. The sum, $0.071-0.033=0.038$, is the $0.0355$ quoted. Neither piece is a small correction, and their near-cancellation is why the tree-level prediction is as good as it is.
+and the two pieces of it are as large as the total. The running of the electromagnetic coupling from zero momentum to $M_Z$ contributes $+0.071$, the largest single term, and it is the piece that route B absorbs into its input. The top-quark and scalar loops contribute about $-0.033$, through $\delta\rho$ in the combination $-\tfrac{\cos^2\theta_W}{\sin^2\theta_W}\delta\rho$ with $\cos^2/\sin^2=3.48$ and $\delta\rho\approx0.0095$. The sum, $0.071-0.033=0.038$, is the $0.0355$ quoted. Neither piece is a small correction, and their near-cancellation is why the tree-level prediction is as good as it is.
 
 **Why route A lands between them.** Route A uses measured $g$, $g_{\mathrm Y}$ and $v$, all three of which are themselves extracted with radiative corrections already folded in, so its tree values $80.24$ and $91.51$ are not a pure tree-level statement. It is a consistency check on the relations $M_W=gv/2$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$, and it passes at the level of the differences between the schemes in which its inputs are defined.
 

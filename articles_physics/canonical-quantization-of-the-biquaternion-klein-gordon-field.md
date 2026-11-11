@@ -289,7 +289,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
 | $\mathcal{L}=-\,\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]-k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
 | $1/k_m$ | The mass length, $\hbar/(mc)$ |

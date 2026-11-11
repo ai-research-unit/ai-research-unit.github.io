@@ -183,7 +183,7 @@ Both $\tilde{Q}_{\mathrm{osc},1}$ and $\tilde{Q}_{\mathrm{osc},2}$ are Hermitian
 The generator content is sharper still. A squeeze, $\tilde{Q}_1\mapsto\tilde{Q}_1\cosh r-\tilde{Q}_2\sinh r$, $\tilde{Q}_2\mapsto\tilde{Q}_2\cosh r-\tilde{Q}_1\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}_1\pm\tilde{Q}_2$ by $\exp(\mp r)$. A Lorentz boost in the $(r'_t,r_x)$ plane of $\mathbb{B}_{\Phi}$ does the same thing to the null combinations $r'_{t}\pm x$. Concretely, the boost rotor $\tilde U_{\Psi,\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)\,e_t+i\sinh(\theta_{\mathrm{rpd}}/2)\vec e_x$ lies in $\mathbb{B}_{\Psi}$ and acts on $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x\in\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde R_\Phi\mapsto\tilde U_{\Psi,\mathrm b}\tilde R_\Phi\tilde U_{\Psi,\mathrm b}^{*}$; computing the result gives
 
 $$
-r'_{t}_2=\cosh\theta_{\mathrm{rpd}}\,r'_{t}-\sinh\theta_{\mathrm{rpd}}\,x,\qquad x_2=\cosh\theta_{\mathrm{rpd}}\,x-\sinh\theta_{\mathrm{rpd}}\,r'_{t},
+r'_{t,2=\cosh\theta_{\mathrm{rpd}}\,r'_{t}-\sinh\theta_{\mathrm{rpd}}\,x,\qquad x_2=\cosh\theta_{\mathrm{rpd}}\,x-\sinh\theta_{\mathrm{rpd}}\,r'_{t},
 $$
 
 so the null combinations scale as $r'_{t}\pm x\mapsto \exp(\mp\theta_{\mathrm{rpd}})(r'_{t}\pm x)$. Identifying the oscillator's phase plane with the $(r'_{t},x)$ plane of $\mathbb{B}_{\Phi}$ by $\tilde Q_1\pm\tilde Q_2\leftrightarrow r'_{t}\pm x$ makes the squeeze a boost, term for term.

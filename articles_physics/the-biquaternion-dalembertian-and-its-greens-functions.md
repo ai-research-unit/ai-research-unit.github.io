@@ -65,9 +65,9 @@ $$
 $$
 On the diagonal $e_\mu e_\mu^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $e_t e_t = e_t$, and for $\mu = k$ it is $\vec e_\eta(-\vec e_\eta) = -\vec e_\eta^2 = e_t$. On the off-diagonal the products are basis bivectors, $e_t \vec e_\eta^{*} = -\vec e_\eta$ and $\vec e_j \vec e_\eta^{*} = -\vec e_j \vec e_\eta$ for $j \neq k$, and the coefficient $\partial^2/\partial R_\mu\partial R_\nu$ is symmetric in $\mu,\nu$ while the bivector part is antisymmetric. The off-diagonal sum therefore vanishes, and
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\partial^2/\partial R_t^2 + \Delta\right).
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2\right).
 $$
-The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural} \tilde{\nabla}_\Phi = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
+The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural} \tilde{\nabla}_\Phi = e_t(\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
 \boxed{\;
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.
@@ -89,7 +89,7 @@ $$
 $$
 the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to i k_{\Phi\eta}$, so
 $$
-\partial^2/\partial R_t^2 \to \frac{\omega^2}{c^2}, \qquad \Delta_\Phi \to -\vec k_\Phi^2,
+-\partial^2/\partial {r^{\prime}_t}^2 \to \frac{\omega^2}{c^2}, \qquad \Delta_\Phi \to -\vec k_\Phi^2,
 \qquad
 \Box_\Phi \to \frac{\omega^2}{c^2} - \vec k_\Phi^2 .
 $$
@@ -164,20 +164,20 @@ With $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, 
 $$
 \rho^2 := \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 +r_x^2+r_y^2+r_z^2 = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
-the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ is *exactly* the four-dimensional Laplacian,
+the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is *exactly* the four-dimensional Laplacian,
 $$
-\Box = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial R_\mu^2 = \Delta_4 ,
+\Box = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial R_\mu^2 = \Delta_Q ,
 $$
 so that the inversion of the wave operator is the classical inversion of the Laplacian. This is the point of the $i r'_t$ convention, and it is why the framework's Green's functions are the standard ones of potential theory.
 
-The rotationally invariant fundamental solution of $-\Delta_4 G = \delta^{(4)}$ in four dimensions is
+The rotationally invariant fundamental solution of $-\Delta_Q G = \delta^{(4)}$ in four dimensions is
 $$
 \boxed{\;
 G_{\mathrm{inv}}(\tilde R_\Phi) = \frac{1}{4\pi^2\rho^2} ,
 \qquad
 -\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;}.
 $$
-The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4r$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k_\Phi)$ conjugate to the $i r'_t$ coordinate, $\Box \to -k_4^2 - \vec k_\Phi^2$ and
+The coefficient is fixed by the distributional identity $\Delta_Q\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_Q\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_Q f)\,d^4r$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k_\Phi)$ conjugate to the $i r'_t$ coordinate, $\Box \to -k_4^2 - \vec k_\Phi^2$ and
 $$
 G_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k_\Phi^2} ,
 $$
@@ -204,7 +204,7 @@ $$
 G_{\mathrm{adv}}(\tilde R_\Phi) = \frac{1}{4\pi R}\,\delta\!\left(r'_t + R\right) = \frac{1}{2\pi}\,\mathrm{H}_{\mathrm{hvs}}(-r'_t)\,\delta(\rho^2) .
 $$
 
-The retarded kernel inverts the operator. Applying $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ to $\frac{u(r'_t - R)}{4\pi R}$ and using the two radial identities
+The retarded kernel inverts the operator. Applying $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ to $\frac{u(r'_t - R)}{4\pi R}$ and using the two radial identities
 $$
 (\nabla g)^2 = 1 ,
 \qquad
@@ -221,12 +221,12 @@ The result was checked directly: on a smooth radial-$u$ kernel, $\Box_\Phi[u(r'_
 
 The difference of the two causal kernels solves the *homogeneous* equation, since the sources cancel:
 $$
-\Delta_{\mathrm{PJ}}(\tilde R_\Phi) := G_{\mathrm{ret}}(\tilde R_\Phi) - G_{\mathrm{adv}}(\tilde R_\Phi)
+\mathcal{G}_{\mathrm{PJ}}(\tilde R_\Phi) := G_{\mathrm{ret}}(\tilde R_\Phi) - G_{\mathrm{adv}}(\tilde R_\Phi)
 = \frac{1}{4\pi R}\Bigl[\delta\!\left(r'_t - R\right) - \delta\!\left(r'_t + R\right)\Bigr] ,
 \qquad
-\Box_\Phi\,\Delta_{\mathrm{PJ}} = 0 .
+\Box_\Phi\,\mathcal{G}_{\mathrm{PJ}} = 0 .
 $$
-This is the Pauli–Jordan (commutator) function: it is antisymmetric in time, supported on the full light cone, and in the quantum theory of the field it is the kernel of the equal-time commutator. Its vanishing outside the cone is the algebraic expression of microcausality, and it is the object that the companion articles on canonical quantisation use. In the framework's terms, $\Delta_{\mathrm{PJ}}$ is an odd distribution whose support is precisely the zero-divisor cone of the biquaternion norm — the statement that the algebraic null cone is the geometric causal cone.
+This is the Pauli–Jordan (commutator) function: it is antisymmetric in time, supported on the full light cone, and in the quantum theory of the field it is the kernel of the equal-time commutator. Its vanishing outside the cone is the algebraic expression of microcausality, and it is the object that the companion articles on canonical quantisation use. In the framework's terms, $\mathcal{G}_{\mathrm{PJ}}$ is an odd distribution whose support is precisely the zero-divisor cone of the biquaternion norm — the statement that the algebraic null cone is the geometric causal cone.
 
 The **causal** or Feynman kernel is the boundary-value combination that is symmetric in time and selects positive frequencies forward and negative frequencies backward. In the $i r'_t$ variables it is the analytic continuation of the Euclidean kernel with the Feynman prescription,
 $$
@@ -241,12 +241,12 @@ Adding the mass term shifts the operator by a central scalar,
 $$
 \Box - k_m^{2} , \qquad k_m=\dfrac{mc}{\hbar} ,
 $$
-and the defining equation becomes $(\Box - k_m^{2})G = -\delta$. In the $i r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_4 + k_m^{2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
+and the defining equation becomes $(\Box - k_m^{2})G = -\delta$. In the $i r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_Q + k_m^{2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
 \boxed{\;
 G^{(1/k_m)}_{\mathrm{inv}}(\tilde R_\Phi) = \frac{k_m}{4\pi^2\rho}\,\mathrm{Ki}_{1}(\rho\,k_m) ,
 \qquad
-\left(-\Delta_4 + k_m^{2}\right) G^{(1/k_m)}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
+\left(-\Delta_Q + k_m^{2}\right) G^{(1/k_m)}_{\mathrm{inv}} = \delta^{(4)}(\tilde R_\Phi)\;},
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
@@ -401,7 +401,7 @@ a central scalar operator whose symbol is $\omega^2/c^2 - \vec k_\Phi^2$ and who
 $$
 \Box^{*} = \Box ,
 $$
-the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = ((\tilde\nabla_\Phi)^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ was verified exactly on a random symbol.
+the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = ((\tilde\nabla_\Phi)^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ was verified exactly on a random symbol.
 
 The Green's functions are the boundary conditions on one equation, $-\Box G = \delta^{(4)}$. The invariant kernel is
 $$
@@ -415,7 +415,7 @@ G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta\!\left(r'_t + R\right) ,
 \qquad
 \Box_\Phi G_{\mathrm{ret}} = \Box_\Phi G_{\mathrm{adv}} = -\delta ,
 $$
-obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2R$ and selected by the time boundary condition; the Jacobian and the off-cone annihilation of the kernel were verified numerically, and their difference $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ is the commutator function. The causal kernel is $G_F = (4\pi^2)^{-1}(\rho^2 - i\epsilon)^{-1}$, whose Wick rotation is $G_{\mathrm{inv}}$.
+obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2R$ and selected by the time boundary condition; the Jacobian and the off-cone annihilation of the kernel were verified numerically, and their difference $\mathcal{G}_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ is the commutator function. The causal kernel is $G_F = (4\pi^2)^{-1}(\rho^2 - i\epsilon)^{-1}$, whose Wick rotation is $G_{\mathrm{inv}}$.
 
 The massive operator $\Box - k_m^{2}$ has the invariant kernel $\frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
 $$
@@ -437,7 +437,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 |---|---|
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial R_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta_\Phi$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
 | $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_{\Phi,\tilde{\nabla}}^\flat = \tilde{G}_{\Phi,\tilde{\nabla}}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde{\nabla}} \in \mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
@@ -445,7 +445,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ | Invariant (Euclidean) kernel; $-\Box G_{\mathrm{inv}} = \delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$ | Retarded kernel; $\Box G_{\mathrm{ret}} = -\delta$ |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R)$ | Advanced kernel; $\Box G_{\mathrm{adv}} = -\delta$ |
-| $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box\Delta_{\mathrm{PJ}} = 0$ |
+| $\mathcal{G}_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box\mathcal{G}_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
 | $G^{(1/k_m)}_{\mathrm{inv}} = \frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$ | Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\hbar/(mc)$ |
 | $\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}_\Phi)^{\natural}G_\Box \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta$ |

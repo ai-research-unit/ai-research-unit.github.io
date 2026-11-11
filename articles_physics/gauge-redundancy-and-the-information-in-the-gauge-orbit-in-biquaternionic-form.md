@@ -312,7 +312,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group $\mathrm{U}(1)$ |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ | Quaternion-conjugate gradient |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, series convention |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase |

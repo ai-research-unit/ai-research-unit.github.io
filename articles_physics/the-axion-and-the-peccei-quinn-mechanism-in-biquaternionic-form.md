@@ -194,10 +194,10 @@ and, because the density is a total derivative, the coupling is equivalent to a 
 **Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4r\,FF_{\mathrm{dual}} = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the axion's coupling changes the action by
 
 $$
-\Delta S = \frac{2\pi f_a}{f_a}\,Ϙ = 2\pi Ϙ ,
+\delta S = \frac{2\pi f_a}{f_a}\,Ϙ = 2\pi Ϙ ,
 $$
 
-and $\exp(i\Delta S) = 1$. The periodicity of the axion field is therefore **compatible** with the anomaly: the shift by $2\pi f_a$ is a symmetry of the quantum theory because the topological charge is an integer. This is the standard consistency condition (Weinberg 1978; Wilczek 1978), and it is the reason the axion's potential is a cosine of the total angle rather than a polynomial, and the reason the CP-conserving minimum at $\bar\theta_{\text{eff}} = 0$ is one of a periodic family.
+and $\exp(i\delta S) = 1$. The periodicity of the axion field is therefore **compatible** with the anomaly: the shift by $2\pi f_a$ is a symmetry of the quantum theory because the topological charge is an integer. This is the standard consistency condition (Weinberg 1978; Wilczek 1978), and it is the reason the axion's potential is a cosine of the total angle rather than a polynomial, and the reason the CP-conserving minimum at $\bar\theta_{\text{eff}} = 0$ is one of a periodic family.
 
 **The theta vacuum as the source.** The potential $V(\bar\theta_{\text{eff}})$ is exactly the dependence of the theta-vacuum energy on the theta parameter, $V(\bar\theta_{\text{eff}}) = E_{\text{vac}}(\bar\theta_{\text{eff}}) - E_{\text{vac}}(0)$, as the companion articles on the theta vacuum and the instanton gas establish; the axion mechanism reads that dependence as a potential for a field, and the minimum of the vacuum energy at $\bar\theta_{\text{eff}} = 0$ — guaranteed by the CP symmetry $\bar\theta\to-\bar\theta$ of the gauge sector — becomes the vacuum of the axion. The framework's contribution to this interpretation is the periodic central field of the previous section; the vacuum-energy dependence is the theta-vacuum article's, and the anomalous coupling is the spinor sector's.
 

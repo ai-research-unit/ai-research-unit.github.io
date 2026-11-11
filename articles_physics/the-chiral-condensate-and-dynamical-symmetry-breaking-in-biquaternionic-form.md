@@ -511,7 +511,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the condensate itself sits on $\mathbb{R}e_t$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\sum_\eta\partial^2/\partial R_\eta^2$ | d'Alembertian, series convention; $Q_\eta=q_\eta$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention; $Q_\eta=q_\eta$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathcal{D}^2=\Box$ |
 | $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(\eta)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |

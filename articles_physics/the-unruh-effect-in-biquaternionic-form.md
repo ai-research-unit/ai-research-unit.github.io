@@ -186,7 +186,7 @@ $$
 with the standard $i\epsilon$ prescription. Evaluate it at two points of the same accelerated orbit, $(r'_t,r_x)=(\rho\sinh\eta,\rho\cosh\eta)$ and the point labelled by $\eta_2$, and set $\delta\eta=\eta-\eta_2$. Using
 
 $$
-\Delta x^2 - \Delta {r'_{t}}^2 = \rho^2(\cosh\eta-\cosh\eta_2)^2-\rho^2(\sinh\eta-\sinh\eta_2)^2
+\delta x^2 - \Delta {r'_{t}}^2 = \rho^2(\cosh\eta-\cosh\eta_2)^2-\rho^2(\sinh\eta-\sinh\eta_2)^2
 = -\,4\rho^2\sinh^2\frac{\delta\eta}{2},
 $$
 

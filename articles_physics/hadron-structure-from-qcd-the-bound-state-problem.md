@@ -203,7 +203,7 @@ $$
 \frac12=\frac12\Delta\Sigma+L_q+J_g ,
 $$
 
-where $\Delta\Sigma=\sum_f(\Delta u_f+\Delta d_f+\Delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
+where $\Delta\Sigma=\sum_f(\Delta u_f+\Delta d_f+\delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
 
 **The numbers.**
 
@@ -227,7 +227,7 @@ g_A=\Delta u-\Delta d=1.2754 ,
 \qquad
 \Delta d\approx-0.45 ,
 \qquad
-\Delta s\approx-0.03 .
+\delta s\approx-0.03 .
 $$
 
 The sum is $0.35$, consistent with the $0.32$ above within its uncertainty and the different $Q^2$. Note what $g_A=1.28$ rather than $5/3$ means: $5/3$ is the constituent-quark value, got by counting three quarks in a spin-flavour wave function, and the measured number is $23\%$ below it, because the axial charge is renormalised by the same strong dynamics that binds.

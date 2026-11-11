@@ -60,10 +60,10 @@ Two structural properties follow directly from this definition and are the ones 
 $$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;G_{\mathrm{prop}}(x_f,r'_{t,f};r_x,r'_t)\,G_{\mathrm{prop}}(r_x,r'_t;x_i,r'_{t,i}).$$
 This is the statement that the sum over paths is a sum over the intermediate point at which a path crosses time $r'_t$; it is the same completeness relation that any representation of the evolution operator must satisfy.
 
-**Interference.** Two classes of paths whose actions differ by $\Delta S$ contribute
+**Interference.** Two classes of paths whose actions differ by $\delta S$ contribute
 $$\exp(\frac{iS_{1}}{\hbar})+\exp(\frac{iS_{2}}{\hbar})=2\cos\!\Big(\frac{\Delta\,S}{2\,\hbar}\Big)\exp(\frac{i\,\bar{S}}{\hbar}),
 \qquad \bar S=\tfrac12(S_1+S_2),$$
-so the intensity has fringes with complete destructive nodes at $\Delta S=\pi\,\hbar\,(2n+1)$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
+so the intensity has fringes with complete destructive nodes at $\delta S=\pi\,\hbar\,(2n+1)$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
 $$\Big|\sum_{k=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
 The phase is therefore the entire dynamical content of the sum: the measure counts paths, and the phase makes them interfere.
 
@@ -347,7 +347,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 The path integral $K=\int\mathcal{D}x\,\exp(iS[x]/\hbar)$ is a sum over paths weighted by the phase $\exp(\frac{i\,S}{\hbar})$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $\frac{i\,S}{\hbar}$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{B}_{\Phi}$, along the $i r'_t$ direction; and the phase factor $\exp(\frac{i\,S}{\hbar})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, satisfying $(\exp(\frac{i\,S}{\hbar}))(\exp(\frac{i\,S}{\hbar}))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(\frac{i\,S}{\hbar})\overline{\exp(iS/\hbar)}=\exp(\frac{2\,i\,S}{\hbar})$.
 
-Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(\frac{iS_{1}}{\hbar})+\exp(\frac{iS_{2}}{\hbar})|=2|\cos(\frac{\Delta\,S}{2\,\hbar})|$, with nodes at $\Delta S=\pi\,\hbar\,(2n+1)$.
+Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(\frac{iS_{1}}{\hbar})+\exp(\frac{iS_{2}}{\hbar})|=2|\cos(\frac{\Delta\,S}{2\,\hbar})|$, with nodes at $\delta S=\pi\,\hbar\,(2n+1)$.
 
 A non-central root $J$ fails as the phase's imaginary unit for the same reasons it fails in the Schrödinger equation: the generator $-\frac{J\,\tilde{H}_{\Psi}}{\hbar}$ need not be anti-Hermitian (for $J=\vec e_z$, $\tilde H_\Psi=i\vec e_x$ one has $J\tilde H_\Psi=i\vec e_y$, Hermitian), and even a fixed $*$-unitary $J$ gives the two spin components opposite phases, $\exp(\vec e_z\theta)\mapsto\operatorname{diag}(\exp(-i\theta),\exp(+i\theta))$, so it is a spin rotation rather than a global phase. A fixed non-central root still interferes, but it requires choosing a preferred spin axis, which the algebra does not supply.
 

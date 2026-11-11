@@ -23,8 +23,7 @@ The framework's differential operators are Lorentzian. With the material coordin
 $$
 \tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z,
 \qquad
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2
-= + \partial^2/\partial R_t^2+\nabla^2,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2,
 $$
 
 where $\partial/\partial R_t=\partial/\partial(i r'_t)$, so that $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_{t}}^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{B}_{\Phi}$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.

@@ -315,7 +315,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde{A}_{\Phi}=iA_0e_t+\vec A\in\mathbb{B}_{\Phi}$ | Proca potential biquaternion |
 | $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Field-strength biquaternion, $\mathrm{Sc}(\tilde{F})=0$ |
-| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural},\Box_\Phi=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural},\Box_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate, d'Alembertian |
 | $\mathcal{L}=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12\mu^2\sum_\mu A_\mu A_\mu$ | Proca Lagrangian (series $i r'_t$ convention) |
 | $\tilde\nabla_\Phi\tilde F-\mu^2\tilde A_{\Phi}=0$, quaternionic and plain biquaternion | Proca field equation, quaternionic and plain biquaternion forms |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=0$ | Lorenz condition, a consequence of the equation |

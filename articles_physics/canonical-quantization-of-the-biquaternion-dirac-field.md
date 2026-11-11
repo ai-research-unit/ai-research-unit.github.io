@@ -295,16 +295,16 @@ These are the standard anticommutation relations of the free Dirac field, in the
 
 ### Consistency with the Equal-Time Relations
 
-It is worth verifying that these relations reproduce the boxed equal-time relation, because the verification exposes a point of care about the relative phases of the two branches. Write $\vec\Delta:=X-Y$ for the separation of the two points. Inserting the expansions and using the mode algebra gives, at equal times,
+It is worth verifying that these relations reproduce the boxed equal-time relation, because the verification exposes a point of care about the relative phases of the two branches. Write $\vec r_{12}:=X-Y$ for the separation of the two points. Inserting the expansions and using the mode algebra gives, at equal times,
 
 $$
 \{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}
 =\int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}
-\Big[\sum_r\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\big)_\mu\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\big)_\nu\,e^{+i\vec p\cdot\vec\Delta}
-+\sum_r\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\big)_\mu\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\big)_\nu\,e^{-i\vec p\cdot\vec\Delta}\Big].
+\Big[\sum_r\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\big)_\mu\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\big)_\nu\,e^{+i\vec p\cdot\vec r_{12}}
++\sum_r\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)}\big)_\mu\big(\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}\big)_\nu\,e^{-i\vec p\cdot\vec r_{12}}\Big].
 $$
 
-The two phases are **opposite**: the positive-frequency term carries $e^{+i\vec p\cdot\vec\Delta}$ and the negative-frequency term $e^{-i\vec p\cdot\vec\Delta}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read
+The two phases are **opposite**: the positive-frequency term carries $e^{+i\vec p\cdot\vec r_{12}}$ and the negative-frequency term $e^{-i\vec p\cdot\vec r_{12}}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read
 
 $$
 \sum_r\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)
@@ -313,7 +313,7 @@ $$
 =i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y-mc\,\big(\tilde{Ξ}i\vec e_x\big).
 $$
 
-Multiplying by the two phases and adding, with $\theta=\vec p\cdot\vec\Delta$,
+Multiplying by the two phases and adding, with $\theta=\vec p\cdot\vec r_{12}$,
 
 $$
 \sum_r\Big[\tilde{Ξ}_{\mathrm{sp},+}^{(r)}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}\tilde{Ξ}\big)e^{+i\theta}
@@ -321,7 +321,7 @@ $$
 =2\cos\theta\,\Big[i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y\Big]+2im\sin\theta\,\big(\tilde{Ξ}\,i\vec e_x\big),
 $$
 
-the four terms grouping as $e^{+i\theta}$ times the action with $+mc$ and $e^{-i\theta}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_\eta p_\eta\vec e_\eta(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec\Delta)$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
+the four terms grouping as $e^{+i\theta}$ times the action with $+mc$ and $e^{-i\theta}$ times the action with $-mc$. Each piece now has a definite parity in $\vec p$: the time part of the action contributes $i\frac{E_{\vec p}}{c}(\tilde{Ξ} i\vec e_x)\vec e_x=\frac{E_{\vec p}}{c}\tilde{Ξ}$, because $i\vec e_x\cdot i\vec e_x=i^2\vec e_x^2=e_t$, and it is even, since $E_{\vec p}$ and the units are; the spatial part $-i\sum_\eta p_\eta\vec e_\eta(\tilde{Ξ} i\vec e_x)\vec e_y$ and the mass term $2im\sin\theta(\tilde{Ξ} i\vec e_x)$ are odd. The even part is $2E_{\vec p}\cos\theta$ times the identity and, after division by $2E_{\vec p}$, integrates to $\delta^{(3)}(\vec r_{12})$; the odd parts vanish under symmetric integration. Hence the equal-time relation holds. The cancellation of the odd terms is exactly what the opposite phases of the two branches accomplish; had both phases been equal, the cross terms would have survived and the canonical relation would have failed.
 
 ### The Fock Space and Pauli Exclusion
 
@@ -541,7 +541,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\nabla}^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | Classical Dirac field, an element of $\mathbb{B}$, in its two chiral halves |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |
@@ -552,7 +552,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\mathcal{L}$ | Dirac Lagrangian density of the two lines |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t)=i\tilde{Ξ}_{\mathrm{sp}}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}_{\mathrm{sp}}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |
-| $X,Y,\vec\Delta=X-Y$ | Spatial points and their separation |
+| $X,Y,\vec r_{12}=X-Y$ | Spatial points and their separation |
 | $p_\mu=(E_{\vec p},\vec p)$, $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in the plane-wave action |
 | $\tilde P_{\Phi}$, $\tilde R_\Phi$ | Wave biquaternion and four-position biquaternion of the parent article |

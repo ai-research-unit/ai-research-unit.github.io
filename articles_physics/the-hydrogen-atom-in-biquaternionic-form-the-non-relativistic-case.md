@@ -280,7 +280,7 @@ $$
 whose expansion in $(Z\alpha)^2$ returns the non-relativistic $E_n$ at leading order and the fine structure
 
 $$
-\Delta E_{\text{fs}} = -\frac{mc^2(Z\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12}-\frac{3}{4n}\right)
+\delta E_{\text{fs}} = -\frac{mc^2(Z\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12}-\frac{3}{4n}\right)
 $$
 
 at the next order. The Darwin term, the relativistic kinetic correction and the gyromagnetic factor $g=2$ appear in the same expansion, as the framework's Dirac articles and the Foldy–Wouthuysen exercise develop.

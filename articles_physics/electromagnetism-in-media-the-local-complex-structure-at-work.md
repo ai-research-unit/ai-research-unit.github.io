@@ -60,7 +60,7 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 
 ## The Biquaternionic Gradient and the Local Complex Structure
 
-The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
+The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ evaluated at that derivative,
 $$
 \Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2,
 $$

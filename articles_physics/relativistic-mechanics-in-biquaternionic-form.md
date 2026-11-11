@@ -195,7 +195,7 @@ $$
 \left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
+Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
 
 $$
 \Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},

@@ -9,8 +9,8 @@
 **The claim, in four parts.**
 
 - **GIM is unitarity plus non-degeneracy, and that is a statement about the flavour factor.** The box amplitude sums $V_{id}V^{*}_{is}m_i^2$ over the internal quarks. The sum of the $V$ products vanishes because $V$ is unitary; what survives is the failure of the mass operator to be a multiple of the identity on the generation label. Written this way, the mechanism is not a trick about charm: it is the statement that a loop of a generation-universal coupling cancels unless the masses split.
-- **The charm prediction was a genuine prediction.** $\Delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx1.5$ GeV. The $J/\psi$ came in at $3.1$ GeV, and the current mass relevant to the loop is $1.27$ GeV — the hadron mass was never the right number, and the prediction was right anyway.
-- **The three mixing systems span fourteen orders of magnitude in $\Delta m/m$ and their pattern is diagnostic.** $7.0\times10^{-15}$, $6.3\times10^{-14}$, $2.2\times10^{-12}$. The third is large enough that the $B_s$ oscillates essentially completely before it decays: $\chi_s=0.4993$, against a ceiling of $0.5$.
+- **The charm prediction was a genuine prediction.** $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx1.5$ GeV. The $J/\psi$ came in at $3.1$ GeV, and the current mass relevant to the loop is $1.27$ GeV — the hadron mass was never the right number, and the prediction was right anyway.
+- **The three mixing systems span fourteen orders of magnitude in $\delta m/m$ and their pattern is diagnostic.** $7.0\times10^{-15}$, $6.3\times10^{-14}$, $2.2\times10^{-12}$. The third is large enough that the $B_s$ oscillates essentially completely before it decays: $\chi_s=0.4993$, against a ceiling of $0.5$.
 - **The triangle closes, with one number that does not.** Four of the five measurements land within a per cent of the fit; $\varepsilon'/\varepsilon$ does not, and the article says so rather than presenting a triumph.
 
 **The order.** The two-level system, then the box and GIM, then the charm prediction, then the kaon system, then the two $B$ systems, then the rare decays, then the triangle, then the closure test itself, then what closure does and does not prove, then the ledger.
@@ -28,22 +28,22 @@ $$
 with $M_{12}$ and $\Gamma_{12}$ the dispersive and absorptive mixing amplitudes. The eigenvalues are
 
 $$
-\Delta m=m_H-m_L=2\lvert M_{12}\rvert ,
+\delta m=m_H-m_L=2\lvert M_{12}\rvert ,
 \qquad
 \Delta\Gamma=\Gamma_H-\Gamma_L=2\lvert\Gamma_{12}\rvert\cos\phi ,
 $$
 
-where $\phi=\arg(M_{12}/\Gamma_{12})$. The two parameters that experiments quote are $\Delta m$ and the decay-width difference, and the relevant dimensionless ratios are
+where $\phi=\arg(M_{12}/\Gamma_{12})$. The two parameters that experiments quote are $\delta m$ and the decay-width difference, and the relevant dimensionless ratios are
 
 $$
-x=\frac{\Delta m}{\Gamma},
+x=\frac{\delta m}{\Gamma},
 \qquad
 y=\frac{\Delta\Gamma}{2\Gamma} .
 $$
 
 **The three systems, with numbers.**
 
-| System | $\Delta m$ | $x=\Delta m/\Gamma$ | $\Delta m/m$ | $\chi$ (wrong-sign fraction) |
+| System | $\delta m$ | $x=\delta m/\Gamma$ | $\delta m/m$ | $\chi$ (wrong-sign fraction) |
 |---|---|---|---|---|
 | $K^0$ | $5.293\times10^{-3}\ \mathrm{ps}^{-1}$ | $0.474$ | $7.0\times10^{-15}$ | — ($K_S$, $K_L$ have different lifetimes) |
 | $B^0_d$ | $0.5065\ \mathrm{ps}^{-1}$ | $0.769$ | $6.3\times10^{-14}$ | $0.1859$ |
@@ -57,12 +57,12 @@ $$
 
 which is the probability that a meson produced as $P^0$ decays as $\bar P^0$ after the oscillation has been integrated over. Its ceiling is $\tfrac12$, reached when $x\gg1$.
 
-**What the $B_s$ number says.** $\chi_s=0.4993$ against a ceiling of $0.5$: the $B_s$ oscillates so fast that by the time it decays it has, to three decimal places, forgotten which flavour it was born with. This is not a curiosity. It is why $B_s$ mixing is measured as a *frequency* rather than as a counting asymmetry, and why the measurement needs a vertex detector with proper-time resolution far below $1/\Delta m_s\approx0.06$ ps.
+**What the $B_s$ number says.** $\chi_s=0.4993$ against a ceiling of $0.5$: the $B_s$ oscillates so fast that by the time it decays it has, to three decimal places, forgotten which flavour it was born with. This is not a curiosity. It is why $B_s$ mixing is measured as a *frequency* rather than as a counting asymmetry, and why the measurement needs a vertex detector with proper-time resolution far below $1/\delta m_s\approx0.06$ ps.
 
-**Why the mass difference ratio matters more than either mass difference.** The theoretical expression for $\Delta m$ carries the hadronic matrix element — a decay constant and a bag parameter — and those are the quantities with the large uncertainties. Their ratio is much better known. Taking the ratio for the two $B$ systems cancels everything except a well-computed SU(3)-breaking factor $\xi$:
+**Why the mass difference ratio matters more than either mass difference.** The theoretical expression for $\delta m$ carries the hadronic matrix element — a decay constant and a bag parameter — and those are the quantities with the large uncertainties. Their ratio is much better known. Taking the ratio for the two $B$ systems cancels everything except a well-computed SU(3)-breaking factor $\xi$:
 
 $$
-\frac{\Delta m_{B_s}}{\Delta m_{B_d}}
+\frac{\delta m_{B_s}}{\delta m_{B_d}}
 =\frac{m_{B_s}}{m_{B_d}}\,\xi^2\left\lvert\frac{V_{ts}}{V_{td}}\right\rvert^2 ,
 \qquad \xi=1.216 .
 $$
@@ -127,9 +127,9 @@ so the same diagram that gives the kaon its $7\times10^{-15}$ relative splitting
 
 ## The Charm Prediction
 
-**The situation in 1974.** $\Delta m_K$ was measured. The box diagram with only the up quark in the loop gave an answer that diverged quadratically and had no business being finite, let alone correct. Glashow, Iliopoulos and Maiani proposed a fourth quark with a specific coupling pattern, and the constant term cancelled.
+**The situation in 1974.** $\delta m_K$ was measured. The box diagram with only the up quark in the loop gave an answer that diverged quadratically and had no business being finite, let alone correct. Glashow, Iliopoulos and Maiani proposed a fourth quark with a specific coupling pattern, and the constant term cancelled.
 
-**Reading the formula backwards.** What remained was proportional to $(m_c^2-m_u^2)/m_W^2$. Setting the coefficient to the measured $\Delta m_K$ gave
+**Reading the formula backwards.** What remained was proportional to $(m_c^2-m_u^2)/m_W^2$. Setting the coefficient to the measured $\delta m_K$ gave
 
 $$
 m_c\approx1.5\ \mathrm{GeV} .
@@ -139,7 +139,7 @@ $$
 
 **Why this is worth recording.** It is the cleanest case in the corpus of a prediction that is easy to mis-state. A reader who compares $1.5$ GeV with $1.87$ GeV concludes the prediction was wrong by $25\%$; a reader who compares with $1.27$ GeV concludes it was right to $18\%$ with the accuracy of a one-loop calculation with an uncomputed hadronic matrix element. The second comparison is the correct one, and the distinction is exactly the one [the hadron-structure article](hadron-structure-from-qcd-the-bound-state-problem.html) drew between current and constituent masses.
 
-**The status today.** The charm loop is now a precision input rather than a prediction: the measured $\Delta m_K$ and the lattice-computed matrix element determine a combination of $V_{td}$ and $V_{ts}$ that agrees with the tree-level determination. The prediction has become a test, which is what happens to a successful prediction.
+**The status today.** The charm loop is now a precision input rather than a prediction: the measured $\delta m_K$ and the lattice-computed matrix element determine a combination of $V_{td}$ and $V_{ts}$ that agrees with the tree-level determination. The prediction has become a test, which is what happens to a successful prediction.
 
 ## The Kaon System
 
@@ -151,7 +151,7 @@ $$
 |---|---|---|
 | $\lvert\varepsilon_K\rvert$ | $2.228\times10^{-3}$ | CP violation in mixing: the mass eigenstates are not CP eigenstates |
 | $\mathrm{Re}(\varepsilon'/\varepsilon)$ | $1.66\times10^{-3}$ | CP violation in the decay amplitude itself |
-| $\Delta m_K$ | $5.293\times10^{-3}\ \mathrm{ps}^{-1}$ | The mixing, and hence $\lvert V_{td}V_{ts}\rvert$ through the box |
+| $\delta m_K$ | $5.293\times10^{-3}\ \mathrm{ps}^{-1}$ | The mixing, and hence $\lvert V_{td}V_{ts}\rvert$ through the box |
 
 **The ratio of the two, and what it says.** $\mathrm{Re}(\varepsilon'/\varepsilon)/\lvert\varepsilon_K\rvert=0.745$. Both are nonzero, so CP is violated both in mixing and in the decay amplitude — which is the statement that the phase of $V$ enters twice, once through the mixing and once through the penguin amplitude's interference with the tree.
 
@@ -169,7 +169,7 @@ so $\varepsilon_K$ is proportional to the **altitude of the triangle**. Its meas
 
 **What the numbers are, and what sets them.** The three systems' splittings differ by the internal quark mass squared and by the meson decay constant squared:
 
-| System | Internal quarks | $f_P^2 B_P$ | $\Delta m$ |
+| System | Internal quarks | $f_P^2 B_P$ | $\delta m$ |
 |---|---|---|---|
 | $K^0$ | $u,c,t$ (charm dominates) | $f_K^2B_K$ | $5.3\times10^{-3}$ ps$^{-1}$ |
 | $B^0_d$ | $t$ dominates | $f_{B_d}^2B_{B_d}$ | $0.507$ ps$^{-1}$ |
@@ -177,9 +177,9 @@ so $\varepsilon_K$ is proportional to the **altitude of the triangle**. Its meas
 
 Read down the table: the kaon's small splitting is charm's, the $B$'s large splittings are the top's, and the ratio between the two $B$ systems is almost purely the SU(3) breaking of the decay constant, because both are top-dominated and the CKM factors $V_{tb}V_{td}$ and $V_{tb}V_{ts}$ differ by the known ratio $V_{td}/V_{ts}$.
 
-**Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\Delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\Delta m$ is dominated by the charm contribution, which carries no $\eta$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
+**Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\eta$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
 
-**The $B_s$ and the width difference.** $\Delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\Delta m_s$ measurable at all.
+**The $B_s$ and the width difference.** $\Delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
 
 ## Rare Decays
 
@@ -264,7 +264,7 @@ against $J=2.91\times10^{-5}$ computed exactly from the angles and $J=3.08\times
 | Quantity | Measured by | Physics used | Value | Uncertainty |
 |---|---|---|---|---|
 | $R_b$ | $\lvert V_{ub}\rvert/\lambda\lvert V_{cb}\rvert$ | Tree-level semileptonic decays | $0.386$ | $3\%$ |
-| $R_t$ | $\Delta m_{B_d}/\Delta m_{B_s}$ | Loop-level box diagrams | $0.911$ | $1.3\%$ |
+| $R_t$ | $\delta m_{B_d}/\delta m_{B_s}$ | Loop-level box diagrams | $0.911$ | $1.3\%$ |
 | $\beta$ | $\sin2\beta$ in $B\to J/\psi K_S$ | Tree decay with mixing | $22.2^\circ$ | $0.7^\circ$ |
 | $\gamma$ | $B\to DK$ | Pure tree, no mixing | $65.9^\circ$ | $3.5^\circ$ |
 | $\alpha$ | $B\to\pi\pi,\rho\rho,\rho\pi$ | Isospin analysis of trees | $91.9^\circ$ | $1.5^\circ$ |
@@ -282,7 +282,7 @@ $$
 which is the law of cosines and it holds to four decimal places because both sides use the same $(\bar\rho,\bar\eta)$. That is a consistency check of the arithmetic, not of the physics. The physical test is the next two:
 
 $$
-R_t\ \text{from}\ \frac{\Delta m_{B_s}}{\Delta m_{B_d}}=0.914
+R_t\ \text{from}\ \frac{\delta m_{B_s}}{\delta m_{B_d}}=0.914
 \quad\text{against}\quad
 R_t=0.9117\ \text{from the fit} ,
 $$
@@ -314,7 +314,7 @@ a difference of $0.8$ standard deviations. Neither difference is zero, and both 
 | $\gamma$ from Belle II | $3.5^\circ$ | The one angle with no loop dependence |
 | $B_K$ from lattice at $1\%$ | $\sim3\%$ | The height, hence $\eta$, independently of $B$ decays |
 | $\xi$ from lattice at $1\%$ | $\sim2\%$ | $R_t$ without the SU(3)-breaking assumption |
-| $\Delta m_s$ at $0.1\%$ | $0.6\%$ | The top loop directly |
+| $\delta m_s$ at $0.1\%$ | $0.6\%$ | The top loop directly |
 | $\varepsilon'/\varepsilon$ | factor $12$ from lattice | The penguin sector, and currently the outlier |
 
 None of the first four is available yet, and the closure is therefore a check with four significant figures and no fifth. The last row is the one entry already in the table that does not close.
@@ -336,12 +336,12 @@ None of the first four is available yet, and the closure is therefore a check wi
 | Item | Status |
 |---|---|
 | $K^0$–$\bar K^0$, $B^0$–$\bar B^0$, $B_s$–$\bar B_s$ as two-level systems | **Imported** formalism; the two-level structure representable in the spinor module |
-| $\Delta m=2\lvert M_{12}\rvert$, $x=\Delta m/\Gamma$, $\chi=x^2/2(1+x^2)$ | **Imported**; recomputed here for three systems |
+| $\delta m=2\lvert M_{12}\rvert$, $x=\delta m/\Gamma$, $\chi=x^2/2(1+x^2)$ | **Imported**; recomputed here for three systems |
 | The box diagram and the Inami–Lim functions | **Imported** |
 | GIM as unitarity plus non-centrality of the mass operator | **Framework reading** of an imported mechanism |
-| $m_c\approx1.5$ GeV from $\Delta m_K$ | **Imported** history; the current-mass comparison computed here |
+| $m_c\approx1.5$ GeV from $\delta m_K$ | **Imported** history; the current-mass comparison computed here |
 | $\lvert\varepsilon_K\rvert=2.228\times10^{-3}$, $\varepsilon'/\varepsilon=1.66\times10^{-3}$ | **Imported** |
-| $\Delta m_{B_d}$, $\Delta m_{B_s}$, the ratio $35.06$ | **Imported**; $\lvert V_{ts}/V_{td}\rvert$ and $R_t$ computed here |
+| $\delta m_{B_d}$, $\delta m_{B_s}$, the ratio $35.06$ | **Imported**; $\lvert V_{ts}/V_{td}\rvert$ and $R_t$ computed here |
 | $\mathcal{B}(B\to X_s\gamma)$, $\mathcal{B}(B_s\to\mu\mu)$ | **Imported**; the ratios computed here |
 | $\lambda$, $A$, $\bar\rho$, $\bar\eta$ | **Imported** global fit |
 | $R_b$, $R_t$, $\alpha$, $\beta$, $\gamma$, the area | **Computed** here from the fit |
@@ -354,9 +354,9 @@ None of the first four is available yet, and the closure is therefore a check wi
 
 ## Summary
 
-The neutral mesons are two-level systems with $\Delta m=2\lvert M_{12}\rvert$. The three splittings are $5.29\times10^{-3}$, $0.507$ and $17.76$ ps$^{-1}$, giving $x=0.474$, $0.769$ and $26.8$ and wrong-sign fractions up to $\chi_s=0.4993$ against a ceiling of $0.5$ — the $B_s$ forgets its flavour before it decays.
+The neutral mesons are two-level systems with $\delta m=2\lvert M_{12}\rvert$. The three splittings are $5.29\times10^{-3}$, $0.507$ and $17.76$ ps$^{-1}$, giving $x=0.474$, $0.769$ and $26.8$ and wrong-sign fractions up to $\chi_s=0.4993$ against a ceiling of $0.5$ — the $B_s$ forgets its flavour before it decays.
 
-GIM is unitarity plus non-degeneracy. The constant term in the box cancels because $VV^{\dagger}=1$, and what survives is proportional to the mass splitting: $(m_c/m_W)^2=2.50\times10^{-4}$ for the kaon, $(m_t/m_c)^2=1.85\times10^{4}$ between the charm and top loops. Read backwards against $\Delta m_K$ in 1974, this gave $m_c\approx1.5$ GeV; the current mass is $1.27$ GeV, and the $D$ meson's $1.87$ GeV was never the right quantity to compare with.
+GIM is unitarity plus non-degeneracy. The constant term in the box cancels because $VV^{\dagger}=1$, and what survives is proportional to the mass splitting: $(m_c/m_W)^2=2.50\times10^{-4}$ for the kaon, $(m_t/m_c)^2=1.85\times10^{4}$ between the charm and top loops. Read backwards against $\delta m_K$ in 1974, this gave $m_c\approx1.5$ GeV; the current mass is $1.27$ GeV, and the $D$ meson's $1.87$ GeV was never the right quantity to compare with.
 
 The triangle has sides $R_b=0.3866$, $R_t=0.9117$, base $1$, and angles $91.6^\circ$, $22.7^\circ$, $65.7^\circ$. Its area is $0.1762$ by Heron and $0.1762$ by $\bar\eta/2$. $R_t$ from the $B$ mixing ratio is $0.914$ against $0.9117$ from the fit — $0.3\%$; $\sin2\beta$ from the fit is $0.7128$ against $0.699\pm0.017$ measured — $0.8\sigma$. Both close.
 
@@ -369,8 +369,8 @@ Closure proves self-consistency, not uniqueness, and it does not explain the fou
 | Symbol | Meaning |
 |---|---|
 | $M_{12}$, $\Gamma_{12}$ | Dispersive and absorptive mixing amplitudes |
-| $\Delta m$, $\Delta\Gamma$ | Mass and width differences of the two eigenstates |
-| $x$, $y$ | $\Delta m/\Gamma$ and $\Delta\Gamma/(2\Gamma)$ |
+| $\delta m$, $\Delta\Gamma$ | Mass and width differences of the two eigenstates |
+| $x$, $y$ | $\delta m/\Gamma$ and $\Delta\Gamma/(2\Gamma)$ |
 | $\chi$ | Time-integrated wrong-sign fraction, $x^2/2(1+x^2)$ |
 | $K_S$, $K_L$ | The two kaon mass eigenstates |
 | $\varepsilon_K$ | CP violation in kaon mixing, $2.228\times10^{-3}$ |
@@ -390,7 +390,7 @@ Closure proves self-consistency, not uniqueness, and it does not explain the fou
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The same mixing structure in the lepton sector, where the angles are large and the CP violation is $850$ times stronger.
 - [Hadron Structure from QCD: the Bound-State Problem](hadron-structure-from-qcd-the-bound-state-problem.html). Current against constituent masses, which is the distinction the charm prediction turns on.
 - [The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why the loop integral is an import and not an algebraic operation.
-- [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). Where the hadronic matrix elements that appear in $\Delta m$ actually come from.
+- [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). Where the hadronic matrix elements that appear in $\delta m$ actually come from.
 - [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The consistency conditions the fermion content must satisfy, which a fourth generation would break.
 - [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The flavour structure the CKM matrix acts on, and the coupling that makes the loop generation-universal.
 - [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The other CP-violating parameter of QCD, and why its smallness is a separate question from the triangle's area.

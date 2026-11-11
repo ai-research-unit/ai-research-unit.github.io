@@ -37,7 +37,7 @@ so $\tilde{F}$ is a **pure-vector** biquaternion. Its three complex components $
 
 The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.
 
-The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A}_{\Phi} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $(\tilde\nabla_\Phi)^{\natural}$ and whose d'Alembertian is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$. The construction is
+The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A}_{\Phi} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, §*The Gradient*, whose conjugate is $(\tilde\nabla_\Phi)^{\natural}$ and whose d'Alembertian is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The construction is
 
 $$
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)\Bigr).
@@ -569,7 +569,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box$ | The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$, that of *Operator and Calculus Conventions* |
+| $\Box$ | The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, that of *Operator and Calculus Conventions* |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |

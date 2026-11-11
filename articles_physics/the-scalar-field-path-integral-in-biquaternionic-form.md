@@ -68,7 +68,7 @@ $$
 \tilde P_{\Phi}=i\frac{\omega}{c}\,e_t+\vec k_\Phi,
 $$
 
-which vanishes precisely on the mass shell $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, so the Gaussian's width and the mass shell are one algebraic object; the propagator is the inverse of this symbol, $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, exactly as the companion field article has it. Third, the phase is central, so it commutes with every element of the algebra and multiplies configuration space uniformly; no rotor and no spinor index enters. The three are the same three facts that the one-particle and propagator articles record for their own objects.
+which vanishes precisely on the mass shell $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, so the Gaussian's width and the mass shell are one algebraic object; the propagator is the inverse of this symbol, $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, exactly as the companion field article has it. Third, the phase is central, so it commutes with every element of the algebra and multiplies configuration space uniformly; no rotor and no spinor index enters. The three are the same three facts that the one-particle and propagator articles record for their own objects.
 
 ## The Phase-Space Form and the Semiclassical Kernel
 
@@ -145,16 +145,16 @@ $$
 and the two-point function is again $A^{-1}$; the factor of two in the real-versus-complex counting is exactly the counting that the central-valued field's single complex component supplies. The verification below is performed in the real form, where the closed result is the one quoted. In the continuum the completion of the square gives
 
 $$
-\boxed{\;Z[\tilde J_{\Phi}]=Z[0]\exp\!\left(-\int d^4r\,d^4y\;J^*(x)\,\Delta_F(x-y)\,J(y)\right)\;},
+\boxed{\;Z[\tilde J_{\Phi}]=Z[0]\exp\!\left(-\int d^4r\,d^4y\;J^*(x)\,\mathcal{G}_F(x-y)\,J(y)\right)\;},
 $$
 
-where $\Delta_F$ is the Feynman propagator of the companion article *The Quantized Scalar Field in Biquaternionic Form*, the Green's function of $(\Box-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\Delta_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\Delta_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,
+where $\mathcal{G}_F$ is the Feynman propagator of the companion article *The Quantized Scalar Field in Biquaternionic Form*, the Green's function of $(\Box-\mu^2)$ with the $i\epsilon$ prescription that makes the Gaussian converge. In material notation $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, so the pole of the free two-point function is the mass-shell level set of the biquaternion norm. The exponent carries no explicit $i$ because the complex field's bilinear pairs $J^*$ with $J$ and because $\mathcal{G}_F$ itself carries the $i$; in the real-field convention the same identity reads $\exp(\frac{i}{2}\int J\,G\,J)$ with $G=i\mathcal{G}_F$, the two forms differing only by the overall normalisation of the field. Two functional derivatives return the propagator itself,
 
 $$
 \langle0|T\,\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle
 =\left(\frac{1}{i}\right)^{\!2}
 \frac{\delta^{2}Z[\tilde J_{\Phi}]}{\delta J^*(x)\,\delta J(y)}\bigg|_{\tilde J_{\Phi}=0}
-=\Delta_F(x-y),
+=\mathcal{G}_F(x-y),
 $$
 
 which is the two-point function of the companion field article; the inverse-of-the-quadratic-form statement is the one verified on the lattice below, where $AA^{-1}$ differed from the identity by $5.6\times10^{-16}$.
@@ -250,7 +250,7 @@ $$
 Z[\tilde J_{\Phi}]=\exp\!\left[-i\int d^4r\;\frac{\lambda}{4}\left(\frac{\delta}{i\,\delta J^*}\frac{\delta}{i\,\delta J}\right)^{\!2}\right]Z_0[\tilde J_{\Phi}],
 $$
 
-whose expansion in powers of $\lambda$ is the standard perturbative series, and in which the coupling normalisation is the same as that of the companion breaking article's potential, so that the radial curvature there is $\lambda v^2$. The Feynman rules follow from the two ingredients already established: the **propagator** is the inverse of the quadratic form, $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, and the **vertex** is $-i\lambda$ times a central unit in the normalisation $-\frac{\lambda}{4!}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$, equivalently $-\frac{3}{2}i\lambda$ in the invariant's normalisation $-\frac{\lambda}{16}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$ written above — the $4!$ of the four equivalent field factors and the factor from the invariant's double counting are the whole of the difference. Every internal line and every vertex is central; no spinor index, no matrix, and no representation label enters any diagram of the scalar sector. This is the diagrammatic form of the centrality that the whole article records.
+whose expansion in powers of $\lambda$ is the standard perturbative series, and in which the coupling normalisation is the same as that of the companion breaking article's potential, so that the radial curvature there is $\lambda v^2$. The Feynman rules follow from the two ingredients already established: the **propagator** is the inverse of the quadratic form, $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$, and the **vertex** is $-i\lambda$ times a central unit in the normalisation $-\frac{\lambda}{4!}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$, equivalently $-\frac{3}{2}i\lambda$ in the invariant's normalisation $-\frac{\lambda}{16}(\xi_{\mathrm{scl},1}^2+\xi_{\mathrm{scl},2}^2)^2$ written above — the $4!$ of the four equivalent field factors and the factor from the invariant's double counting are the whole of the difference. Every internal line and every vertex is central; no spinor index, no matrix, and no representation label enters any diagram of the scalar sector. This is the diagrammatic form of the centrality that the whole article records.
 
 Two structural comments complete the picture.
 
@@ -289,7 +289,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 The scalar functional integral is the sum over central-valued configurations weighted by the central phase $\exp(\frac{i\,S}{\hbar})$, with the action $S[\tilde{Ξ}]=\int d^4r\,[-\mathrm{Sc}(((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ}))-\mu^2\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})]$. It is derived from the operator formalism by inserting the field-eigenvalue basis at each time, and it is an ordinary functional integral over complex functions because the scalar field is bosonic and its configurations are c-numbers. Its quadratic form has the momentum-space symbol $-(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2)$, the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, the Gaussian's width and the propagator's pole are one object.
 
-The generating functional $Z[\tilde J_{\Phi}]$ has for its functional derivatives the time-ordered correlation functions of the field operator, and its free value is the Gaussian $Z[0]\exp(-\int J^*\Delta_F J)$ with $\Delta_F$ the Feynman propagator; the finite-dimensional Gaussian identity was verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The canonical commutator is recovered from the representation $\pi_{\mathrm{fop}}=-\frac{i\,\hbar}{\xi_{\mathrm{scl}}}$, and the mode expansion and correlators follow. The vacuum persistence amplitude $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=|Z[\tilde Q_5]|^2/|Z[0]|^2$ in a background is the functional-integral form of the pair-creation probability, and it agrees with the Bogoliubov computation of the companion pair-creation article; its imaginary part measures the failure of the vacuum to persist.
+The generating functional $Z[\tilde J_{\Phi}]$ has for its functional derivatives the time-ordered correlation functions of the field operator, and its free value is the Gaussian $Z[0]\exp(-\int J^*\mathcal{G}_F J)$ with $\mathcal{G}_F$ the Feynman propagator; the finite-dimensional Gaussian identity was verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The canonical commutator is recovered from the representation $\pi_{\mathrm{fop}}=-\frac{i\,\hbar}{\xi_{\mathrm{scl}}}$, and the mode expansion and correlators follow. The vacuum persistence amplitude $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=|Z[\tilde Q_5]|^2/|Z[0]|^2$ in a background is the functional-integral form of the pair-creation probability, and it agrees with the Bogoliubov computation of the companion pair-creation article; its imaginary part measures the failure of the vacuum to persist.
 
 The framework's contribution is the centrality of the configuration space, the biquaternion-norm interpretation of the quadratic form, and the identification of the Wick rotation with the passage to the quaternion subspace. The measure, the determinant's branch and the intrinsic generating functional remain open, and the bosonic gap — no native ladder in $\mathbb{B}$ — persists, as it does throughout the scalar sector.
 
@@ -309,8 +309,8 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathcal{D}\tilde{Ξ}$ | Functional measure on central-valued configurations |
 | $\delta^{n+m}Z/\delta J^{*n}\delta J^{m}$ | Functional derivatives = time-ordered correlators |
 | $Z_N(J)=(2\pi)^{N/2}(\det A)^{-1/2}\exp(J^{T}A^{-1}J/2)$, $Z_N\propto(\det A)^{-1}\exp(J^*A^{-1}J)$ | Finite-dimensional Gaussian identity, real and complex |
-| $\Delta_F$ | Feynman propagator; free two-point function |
-| $\Delta_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
+| $\mathcal{G}_F$ | Feynman propagator; free two-point function |
+| $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
 | $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $\pi_{\mathrm{fop}}=-\frac{i\,\hbar}{\xi_{\mathrm{scl}}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\,\hbar\,\delta^{(3)}$ |
 | $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |

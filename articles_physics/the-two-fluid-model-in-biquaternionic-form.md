@@ -176,17 +176,17 @@ which is manifestly non-negative for $B_{\mathrm{frc}}\ge0$. **The article uses 
 
 ### The coupling energy
 
-**When the two components are two states of one field, their phases can lock, and the locking has a Josephson form.** With $S_{\tilde\Xi,\mathrm{sup}}$ and $S_{\tilde\Xi,\mathrm{nrm}}$ the phases of the two contributions and $\Delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ their difference, the coupling energy per unit proper volume is
+**When the two components are two states of one field, their phases can lock, and the locking has a Josephson form.** With $S_{\tilde\Xi,\mathrm{sup}}$ and $S_{\tilde\Xi,\mathrm{nrm}}$ the phases of the two contributions and $\delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ their difference, the coupling energy per unit proper volume is
 
 $$
-e_{\mathrm{cpl}}=-\,E_{J}\cos\left(\frac{\Delta S}{\hbar}\right),
+e_{\mathrm{cpl}}=-\,E_{J}\cos\left(\frac{\delta S}{\hbar}\right),
 $$
 
 with $E_{J}$ the coupling energy density. **The display is the standard Josephson form and is quoted**; what the corpus adds is the argument: the phase is the quantity that the polar form assigns to the rotor, and a coupling between the two components is a coupling between two phases.
 
-**The current between the components follows by differentiation of the coupling energy with respect to the phase difference.** With $J_{\Phi,\mathrm{ex},\eta}$ the exchange current, the result is that **the exchange current is the critical current times the sine of the phase difference**, $J_{\Phi,\mathrm{ex},\eta}=J_{\mathrm{c}}\sin(\Delta S/\hbar)$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. **A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.**
+**The current between the components follows by differentiation of the coupling energy with respect to the phase difference.** With $J_{\Phi,\mathrm{ex},\eta}$ the exchange current, the result is that **the exchange current is the critical current times the sine of the phase difference**, $J_{\Phi,\mathrm{ex},\eta}=J_{\mathrm{c}}\sin(\delta S/\hbar)$. The constant $J_{\mathrm{c}}$ is convention-dependent — it absorbs the normalisation of the phase, of the charge and of the density — and the corpus quotes the structural form rather than fixing a constant that the Josephson literature already fixes differently in different unit systems. **A reader who needs the numerical value of $J_{\mathrm{c}}$ for a specific system will find it in the references at the end.**
 
-**What the phase difference does when the two flows coincide.** Then $\Delta S$ is constant, the sine is constant, and the exchange current is a constant flow between the components with no relative acceleration — the DC case. **When the two flows differ, $\Delta S$ advances at the rate $d(\Delta S)/dR_t=\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}$**, and the exchange current oscillates at the frequency
+**What the phase difference does when the two flows coincide.** Then $\delta S$ is constant, the sine is constant, and the exchange current is a constant flow between the components with no relative acceleration — the DC case. **When the two flows differ, $\delta S$ advances at the rate $d(\delta S)/dR_t=\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}$**, and the exchange current oscillates at the frequency
 
 $$
 \omega_{\mathrm{Jsn}}=\frac{\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}}{\hbar},
@@ -275,7 +275,7 @@ The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pur
 
 Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the exact production $\sigma_{\mathrm{ent}}=-T^{-1}\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}}\tilde W_\Phi)=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}(\lvert\vec w\rvert^{2}-w_t^{2})\ge0$, which reduces to $T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}$ to leading order in the relative speed. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.
 
-The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\Delta S/\hbar)$, an exchange current $J_{\mathrm{c}}\sin(\Delta S/\hbar)$ and an AC frequency $\omega_{\mathrm{Jsn}}=\Delta\mu_{\mathrm{chm}}/\hbar$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
+The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\delta S/\hbar)$, an exchange current $J_{\mathrm{c}}\sin(\delta S/\hbar)$ and an AC frequency $\omega_{\mathrm{Jsn}}=\Delta\mu_{\mathrm{chm}}/\hbar$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
 
 The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\rho_{\mathrm{num,sup}}$, $s_{\mathrm{ent}}\to0$, $\tilde F_{\Phi,\mathrm{fr}}\to0$ so that $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$, and $\tilde J_{\Phi,\mathrm{ent}}\to0$ with the second law saturated. The normal flow does not tend to the condensate's flow; it ceases to exist. **The remaining flow is the polar-form article's, and the two-fluid model is its finite-temperature extension.**
 
@@ -302,7 +302,7 @@ The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\r
 | $\sigma_{\mathrm{ent}}$ | Entropy production |
 | $T$, $\beta$ | Temperature, imaginary-time circumference |
 | $E_{J}$, $e_{\mathrm{cpl}}$ | Coupling energy density and density per volume |
-| $\Delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ | Phase difference |
+| $\delta S=S_{\tilde\Xi,\mathrm{nrm}}-S_{\tilde\Xi,\mathrm{sup}}$ | Phase difference |
 | $J_{\Phi,\mathrm{ex},\eta}$, $J_{\mathrm{c}}$ | Exchange current and critical current |
 | $\omega_{\mathrm{Jsn}}$ | Josephson frequency |
 | $\mu_{\mathrm{chm,sup}}$, $\mu_{\mathrm{chm,nrm}}$ | Chemical potentials |

@@ -41,16 +41,16 @@ The bound is tight: it is approached by a quasistatic erasure, and the deficit $
 The derivation uses only the second law. Before erasure the memory is maximally ignorant of its bit, so its entropy is $\log 2$ in nats; after erasure the bit is known, so the entropy is zero. The information lost by the memory is
 
 $$
-\Delta S_{\rm info} = -\log 2 .
+\delta S_{\rm info} = -\log 2 .
 $$
 
 The memory and the environment together form a closed system, whose entropy cannot decrease:
 
 $$
-\Delta S_{\rm info} + \Delta S_{\rm env} \ge 0 \qquad\Longrightarrow\qquad \Delta S_{\rm env} \ge \log 2 .
+\delta S_{\rm info} + \delta S_{\rm env} \ge 0 \qquad\Longrightarrow\qquad \delta S_{\rm env} \ge \log 2 .
 $$
 
-If the environment is a heat bath at temperature $T$ and the process is reversible for the bath itself, then the heat delivered to it is $Q = T\,\Delta S_{\rm th,env}$ with $\Delta S_{\rm th,env} = k_B\,\Delta S_{\rm env}$ in thermodynamic units, so
+If the environment is a heat bath at temperature $T$ and the process is reversible for the bath itself, then the heat delivered to it is $Q = T\,\delta S_{\rm th,env}$ with $\delta S_{\rm th,env} = k_B\,\delta S_{\rm env}$ in thermodynamic units, so
 
 $$
 Q \ge k_B T \log 2 .
@@ -91,13 +91,13 @@ $$
 an element of $\mathbb{B}_{\Phi}$: an imaginary scalar component $iE/c$ and a real vector component. The energy is the timelike component, $E = -i\,c\,\mathrm{Sc}(\tilde{P}_{\Phi})$, and heat is a change of it. The material ledger of a thermodynamic process is the energy account
 
 $$
-\Delta E_{\rm env} = Q ,
+\delta E_{\rm env} = Q ,
 $$
 
 with the entropy of a bath at temperature $T$ related to the heat it receives by the Clausius relation
 
 $$
-\Delta S_{\rm th,env} = \frac{Q}{T} .
+\delta S_{\rm th,env} = \frac{Q}{T} .
 $$
 
 The temperature is the conversion factor between the two ledgers: it converts energy in $\mathbb{B}_{\Phi}$ into entropy in the informational currency.
@@ -195,7 +195,7 @@ $$
 \Delta\mathcal{S}_{\rm env} \ge \log 2 .
 $$
 
-Multiplying by $k_B$ to pass to thermodynamic entropy and using the Clausius relation $\Delta S_{\rm th,env} = Q/T$ gives the heat delivered to the bath,
+Multiplying by $k_B$ to pass to thermodynamic entropy and using the Clausius relation $\delta S_{\rm th,env} = Q/T$ gives the heat delivered to the bath,
 
 $$
 Q = k_B T\,\Delta\mathcal{S}_{\rm env} \ge k_B T \log 2 ,
@@ -295,7 +295,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $\tilde{P}_{\Phi} = i(E/c)e_t + \vec p$ | Material four-momentum (energy-momentum) |
 | $E = -i\,c\,\mathrm{Sc}(\tilde{P}_{\Phi})$ | Energy (timelike component) |
 | $Q$, $T$, $k_B$ | Heat, temperature, Boltzmann constant |
-| $\Delta S_{\rm th,env} = Q/T$ | Clausius relation |
+| $\delta S_{\rm th,env} = Q/T$ | Clausius relation |
 | $Q_{\min} = k_BT\log 2$ | Landauer cost of erasing one bit |
 | $Q \ge k_BT\,\mathcal{S}(\tilde{Ϛ}_{\Psi})$ | Landauer bound for a general state |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

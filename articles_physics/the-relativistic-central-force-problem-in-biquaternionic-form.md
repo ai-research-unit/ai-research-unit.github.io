@@ -277,7 +277,7 @@ The last limit is the statement that the precession is a relativistic effect of 
 The special-relativistic precession has a standard interpretation worth recording. Writing $\kappa=GMm$ and using the non-relativistic relation $L^2=m\kappa a(1-e^2)$ for the semi-major axis $a$, the advance $\pi\kappa^2/(c^2L^2)$ becomes
 
 $$
-\Delta_{\text{SR}}\simeq\frac{\pi GM}{c^2a(1-e^2)} ,
+\delta_{\mathrm{SR}}\simeq\frac{\pi GM}{c^2a(1-e^2)} ,
 $$
 
 which is one sixth of the general-relativistic perihelion advance $6\pi GM/(c^2a(1-e^2))$. The special-relativistic and general-relativistic corrections are therefore of the same order and the same sign, with the curved-spacetime contribution the larger of the two. The present article computes the flat-spacetime term only; the general-relativistic term is a curvature effect and lies outside the framework's flat-spacetime setting.

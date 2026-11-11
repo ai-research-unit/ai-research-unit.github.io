@@ -54,7 +54,7 @@ This is the standard result, and it is standard in a second sense: $S_z$ is an o
 For a beam of speed $v$ crossing a field region of length $L$, the atom spends a time $r'_t = L/v$ in the field, and the transverse displacement is
 
 $$
-\Delta z = \frac{1}{2}\,a\,{r'_{t}}^2 =\frac{F_{z}}{2\,m}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
+\delta z = \frac{1}{2}\,a\,{r'_{t}}^2 =\frac{F_{z}}{2\,m}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -62,7 +62,7 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 With $S_z = \pm\frac{\hbar}{2}$ the two displacements are
 
 $$
-\Delta z_\pm = \pm\frac{\hbar\,\gamma\,B\,L^{2}}{4\,m\,z\,v^{2}},
+\delta z_\pm = \pm\frac{\hbar\,\gamma\,B\,L^{2}}{4\,m\,z\,v^{2}},
 $$
 
 so the two beams are separated by $\frac{\hbar\,\gamma\,B\,L^{2}}{2\,m\,z\,v^{2}}$. A classical magnetic moment of arbitrary orientation would give a continuous band of deflections; the observation of two discrete spots is the evidence of quantisation. The deflection is the same for every atom in one beam, so the experiment measures the eigenvalue of $S_z$ for each atom.
@@ -175,7 +175,7 @@ $$
 c_+ |{+z}\rangle\otimes|\xi_{\mathrm{alt},+}\rangle + c_- |{-z}\rangle\otimes|\xi_{\mathrm{alt},-}\rangle ,
 $$
 
-with $|\xi_{\mathrm{alt},\pm}\rangle$ wavepackets centred on the two deflections $\Delta z_\pm$. This is the standard description of a Stern–Gerlach measurement as a **pre-measurement**: the apparatus has not yet been read, and the two components are still coherent.
+with $|\xi_{\mathrm{alt},\pm}\rangle$ wavepackets centred on the two deflections $\delta z_\pm$. This is the standard description of a Stern–Gerlach measurement as a **pre-measurement**: the apparatus has not yet been read, and the two components are still coherent.
 
 ### The Reduced Spin State
 
@@ -330,7 +330,7 @@ A rotated analyser measures $\tilde{S}_{\Psi}(\vec u) =\frac{\hbar}{2}i\vec u$ f
 | $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ | Trace formula |
 | $\vec u = \sin\theta\,\vec e_x + \cos\theta\,\vec e_z$ | Rotated analyser direction |
 | $\tilde u(\theta) = \exp(\tfrac{\theta}{2}\vec e_y)$ | Rotor carrying $\vec u_z$ to $\vec u$ |
-| $\Delta z_\pm = \pm\frac{\hbar\,\gamma\,B\,L^{2}}{4\,m\,z\,v^{2}}$ | Deflections of the two beams |
+| $\delta z_\pm = \pm\frac{\hbar\,\gamma\,B\,L^{2}}{4\,m\,z\,v^{2}}$ | Deflections of the two beams |
 | $\cos^2(\theta/2)$ | Probability of "up" at the rotated analyser |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

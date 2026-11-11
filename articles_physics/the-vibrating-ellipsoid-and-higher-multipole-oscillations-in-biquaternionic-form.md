@@ -14,7 +14,7 @@ The biquaternion conventions are those of the companion articles:
 - Companion article *Algebra and Element Conventions*, for the trace, the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*), and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{B}_{H}$, the material sector is $\mathbb{B}_{\Phi}$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{Ϛ}_{\Psi}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Rigid-Body Rotor
 
@@ -328,7 +328,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
 | $\Omega$ | Angular speed of rigid rotation |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | d'Alembertian (series convention) |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 Linearized gravity is general relativity's weak-field limit. The metric is the flat interval plus a small perturbation,
 
 $$
-g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r'_t^2+\mathrm{d}r_x^2+\mathrm{d}r_y^2+\mathrm{d}r_z^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu,\qquad |h_{\mu\nu}| \ll 1,
+g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r_t^{\prime 2}+\mathrm{d}r_x^2+\mathrm{d}r_y^2+\mathrm{d}r_z^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu,\qquad |h_{\mu\nu}| \ll 1,
 $$
 
 and the field equations are expanded to first order in $h$. What results is a linear theory of a symmetric rank-two field $h_{\mu\nu}$ that has the shape of a gauge theory: a gauge freedom, a gauge-invariant field strength (the linearized Riemann tensor), a trace-reversal, a harmonic gauge in which the vacuum equations reduce to a wave equation, and two propagating polarizations. It is the gravitational analogue of Maxwell's theory, and it is the setting in which gravitational waves are computed.
@@ -535,7 +535,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $x_\mu = (r'_{t},r_x,r_y,r_z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
 | $\partial/\partial R_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
-| $g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r'_t^2+\mathrm{d}\vec r^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |
+| $g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r_t^{\prime 2}+\mathrm{d}\vec r^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |
 | $\tilde{E}_{\Phi}_\mu = \varepsilon_\mu + \delta\tilde{E}_{\Phi}_\mu$ | Frame field and frame perturbation, $\delta\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ |
 | $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_{\Phi}_\mu,\varepsilon_\nu\rangle_{\natural}$ | Metric perturbation carried by the frame perturbation |
 | $h = -h_{00}+h_{11}+h_{22}+h_{33} = 2\sum_\nu\langle\varepsilon_{\mathrm{du},\nu},\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | Trace of the metric perturbation |

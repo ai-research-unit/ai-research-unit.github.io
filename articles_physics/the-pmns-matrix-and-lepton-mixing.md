@@ -104,8 +104,8 @@ Each row and each column has unit norm to the accuracy of three printed digits, 
 
 | Quantity | Value | What it sets |
 |---|---|---|
-| $\Delta m^2_{21}$ | $7.42\times10^{-5}\ \mathrm{eV}^2$ | The solar oscillation length |
-| $\lvert\Delta m^2_{31}\rvert$ | $2.51\times10^{-3}\ \mathrm{eV}^2$ | The atmospheric oscillation length |
+| $\delta m^2_{21}$ | $7.42\times10^{-5}\ \mathrm{eV}^2$ | The solar oscillation length |
+| $\lvert\delta m^2_{31}\rvert$ | $2.51\times10^{-3}\ \mathrm{eV}^2$ | The atmospheric oscillation length |
 | Ratio | $33.8$ | Why two very different lengths appear |
 
 The ratio is $33.8$, so the two oscillation lengths differ by a factor of thirty-four and can be separated experimentally. This is the reason a three-neutrino fit is possible at all: were the two differences comparable, no single experiment could separate the two oscillation lengths, and every fit would be degenerate.
@@ -115,8 +115,8 @@ The ratio is $33.8$, so the two oscillation lengths differ by a factor of thirty
 **The statement.** A neutrino produced in a flavour eigenstate is a superposition of mass eigenstates. Each mass eigenstate accumulates a phase $e^{-iE_it}$ at its own rate, so the superposition's flavour content changes with distance:
 
 $$
-P(\nu_\alpha\to\nu_\beta)=\delta_{\alpha\beta}-4\sum_{i>j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\Delta m^2_{ij}L}{4E}
-+2\sum_{i>j}\mathrm{Im}\left(\dots\right)\sin\frac{\Delta m^2_{ij}L}{2E} .
+P(\nu_\alpha\to\nu_\beta)=\delta_{\alpha\beta}-4\sum_{i>j}\mathrm{Re}\left(U_{\alpha i}U^{*}_{\beta i}U^{*}_{\alpha j}U_{\beta j}\right)\sin^2\frac{\delta m^2_{ij}L}{4E}
++2\sum_{i>j}\mathrm{Im}\left(\dots\right)\sin\frac{\delta m^2_{ij}L}{2E} .
 $$
 
 The $\sin^2$ term is CP-conserving, the $\sin$ term is not, and the coefficient of the latter is the Jarlskog invariant up to signs.
@@ -124,21 +124,21 @@ The $\sin^2$ term is CP-conserving, the $\sin$ term is not, and the coefficient 
 **The oscillation length, and its size.** The phase is
 
 $$
-\frac{\Delta m^2L}{4E}=1.267\,\frac{\Delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}{E[\mathrm{GeV}]} ,
+\frac{\delta m^2L}{4E}=1.267\,\frac{\delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}{E[\mathrm{GeV}]} ,
 $$
 
 and the numbers explain the whole experimental programme:
 
-| Experiment | $L$ | $E$ | $\Delta m^2$ | Phase $\Delta m^2L/4E$ | Oscillation length |
+| Experiment | $L$ | $E$ | $\delta m^2$ | Phase $\delta m^2L/4E$ | Oscillation length |
 |---|---|---|---|---|---|
 | T2K | $295$ km | $0.6$ GeV | $2.51\times10^{-3}$ | $1.56$ rad $=89.6^\circ$ | $593$ km |
 | NOvA | $810$ km | $2$ GeV | $2.51\times10^{-3}$ | $1.29$ rad $=73.8^\circ$ | $1976$ km |
 | KamLAND | $180$ km | $3$ MeV | $7.42\times10^{-5}$ | $5.64$ rad | $100$ km |
 | Solar | $1.5\times10^{8}$ km | $5$ MeV | $7.42\times10^{-5}$ | $2.8\times10^{6}$ rad | $167$ km |
 
-The last column is one full cycle of the $\sin^2$, $L_{\mathrm{osc}}=\pi E/(1.267\,\Delta m^2)=2.48\,E[\mathrm{GeV}]/\Delta m^2[\mathrm{eV}^2]$ km, at which the phase advances by $\pi$. Two of its entries are worth reading against the baseline beside them: T2K's $295$ km is half an oscillation length, so its phase is $\pi/2$ and its $\sin^2$ is at the first maximum; KamLAND's $180$ km is $1.8$ oscillation lengths, phase $1.79\pi$, so the reactor experiment sits on the falling side of its second maximum.
+The last column is one full cycle of the $\sin^2$, $L_{\mathrm{osc}}=\pi E/(1.267\,\delta m^2)=2.48\,E[\mathrm{GeV}]/\delta m^2[\mathrm{eV}^2]$ km, at which the phase advances by $\pi$. Two of its entries are worth reading against the baseline beside them: T2K's $295$ km is half an oscillation length, so its phase is $\pi/2$ and its $\sin^2$ is at the first maximum; KamLAND's $180$ km is $1.8$ oscillation lengths, phase $1.79\pi$, so the reactor experiment sits on the falling side of its second maximum.
 
-**T2K's phase is $89.6^\circ$.** That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\Delta m^2$ of interest, which is $L=L_{\mathrm{osc}}/2$ — and the T2K numbers sit there to half a per cent, $295$ against $593/2=296.5$. NOvA, at $810$ km and $2$ GeV, sits at $0.41$ of an oscillation length and $73.8^\circ$ — short of the maximum, which is what lets its flux cover both the rise toward the first peak and the fall beyond it, and that shape is what separates the octant and the phase.
+**T2K's phase is $89.6^\circ$.** That is not a coincidence: the beamline and the off-axis energy were chosen so that the flux peaks at the first oscillation maximum, where the $\sin^2$ is one and the rate is most sensitive to the parameters. The design of a long-baseline experiment is the choice of $L/E$ such that the phase is $\pi/2$ for the $\delta m^2$ of interest, which is $L=L_{\mathrm{osc}}/2$ — and the T2K numbers sit there to half a per cent, $295$ against $593/2=296.5$. NOvA, at $810$ km and $2$ GeV, sits at $0.41$ of an oscillation length and $73.8^\circ$ — short of the maximum, which is what lets its flux cover both the rise toward the first peak and the fall beyond it, and that shape is what separates the octant and the phase.
 
 **Why the solar case is different.** Its phase is $2.8\times10^{6}$ radians, so the oscillation is averaged out entirely and the survival probability is the average, which depends on $\theta_{12}$ alone. That averaging is what makes the solar measurement a measurement of one angle rather than of a phase. And the matter effect — coherent forward scattering off electrons, which the electron flavour feels and the others do not — makes the high-energy survival tend to the *other* composition:
 
@@ -150,7 +150,7 @@ $$
 
 Both numbers are measured: roughly $0.55$ for the low-energy $pp$ neutrinos and $0.30$ for the high-energy $^8$B ones. The measured difference between them is a measurement of the matter effect, and the fact that the two limits are $0.58$ and $0.30$ rather than, say, $0.5$ and $0.5$ is a measurement of $\theta_{12}$ being neither maximal nor zero.
 
-**Why oscillation requires mass.** A massless neutrino has no $\Delta m^2$ and therefore no phase difference, so the superposition is static. The observation of oscillation is therefore the observation that the neutrino has mass — the only direct evidence — and it does not give the mass itself, only the differences.
+**Why oscillation requires mass.** A massless neutrino has no $\delta m^2$ and therefore no phase difference, so the superposition is static. The observation of oscillation is therefore the observation that the neutrino has mass — the only direct evidence — and it does not give the mass itself, only the differences.
 
 ## The Jarlskog Invariant
 
@@ -215,7 +215,7 @@ The lepton sector violates CP eight hundred and fifty times more strongly than t
 
 ## The Mass Ordering and the Absolute Scale
 
-**What oscillation gives and what it does not.** Oscillation gives the magnitudes of the two differences. The sign of $\Delta m^2_{21}$ does not stay unknown: the solar matter effect fixes it positive, because only one sign reproduces the observed energy-dependent suppression of the electron flavour, which is why the solar entry above has a definite $\Delta m^2_{21}$ and not a modulus. What remains unknown is the sign of $\Delta m^2_{31}$ — that is, the ordering — and it is accessible for the same reason, since the matter term adds to the electron flavour's Hamiltonian with a known sign and so shifts the oscillation of neutrinos and antineutrinos differently. The ordering is therefore in principle measurable, and currently unresolved.
+**What oscillation gives and what it does not.** Oscillation gives the magnitudes of the two differences. The sign of $\delta m^2_{21}$ does not stay unknown: the solar matter effect fixes it positive, because only one sign reproduces the observed energy-dependent suppression of the electron flavour, which is why the solar entry above has a definite $\delta m^2_{21}$ and not a modulus. What remains unknown is the sign of $\delta m^2_{31}$ — that is, the ordering — and it is accessible for the same reason, since the matter term adds to the electron flavour's Hamiltonian with a known sign and so shifts the oscillation of neutrinos and antineutrinos differently. The ordering is therefore in principle measurable, and currently unresolved.
 
 **The two orderings, with their numbers.** Taking the lightest mass at zero, which is the minimum allowed:
 
@@ -261,10 +261,10 @@ with the squares. The squares do not cancel the column phases; they add them, so
 **The asymmetry, in the oscillation channel.** For $\nu_\mu\to\nu_e$ against $\bar\nu_\mu\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
 
 $$
-\Delta P\equiv P(\nu_\mu\to\nu_e)-P(\bar\nu_\mu\to\bar e)=-16J\sin\frac{\Delta m^2_{21}L}{4E}\sin\frac{\Delta m^2_{31}L}{4E}\sin\frac{\Delta m^2_{32}L}{4E} ,
+\Delta P\equiv P(\nu_\mu\to\nu_e)-P(\bar\nu_\mu\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
 $$
 
-and this is an identity, not a parametrisation: it follows from the interference term above with $\sin(2x)=2\sin x\cos x$ and the three-mass-difference closure $\Delta m^2_{31}=\Delta m^2_{32}+\Delta m^2_{21}$. The argument is $\Delta m^2L/(4E)$ in all three factors — the same argument the $\sin^2$ term carries — and writing it as $\Delta m^2L/(2E)$ as well would square the wrong function. So the asymmetry requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.
+and this is an identity, not a parametrisation: it follows from the interference term above with $\sin(2x)=2\sin x\cos x$ and the three-mass-difference closure $\delta m^2_{31}=\delta m^2_{32}+\delta m^2_{21}$. The argument is $\delta m^2L/(4E)$ in all three factors — the same argument the $\sin^2$ term carries — and writing it as $\delta m^2L/(2E)$ as well would square the wrong function. So the asymmetry requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.
 
 **Why the phase is not central, again.** [The CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) established that a $*$-unitary operator's phase cannot be removed by a central redefinition, so it lives on the flavour factor and not on the algebra. The argument is identical here, and the conclusion is identical: the CP phase is a coordinate of $\mathrm{U}(3)$ and the framework does not fix it.
 
@@ -302,7 +302,7 @@ and this is an identity, not a parametrisation: it follows from the interference
 | The oscillation lengths and phases | **Computed** here for four experiments |
 | $J=-0.0262$, $J_{\max}=\pm0.0332$, ratio $850$ | **Computed** here |
 | The bimaximal, tribimaximal and trimaximal verdicts | **Imported**; the comparisons and the TM1 relation computed here |
-| $\Delta m^2_{21}$, $\lvert\Delta m^2_{31}\rvert$ | **Imported** |
+| $\delta m^2_{21}$, $\lvert\delta m^2_{31}\rvert$ | **Imported** |
 | The ordering and the mass sums | **Imported**; the sums computed here |
 | $m_{\beta\beta}$ ranges | **Computed** here by scanning both phases |
 | The Majorana condition, the seesaw | **Framework**, each in its own article |
@@ -318,7 +318,7 @@ The parameter count depends on the neutrino's nature: four if Dirac, six if Majo
 
 The measured angles are large: $\theta_{12}=33.4^\circ$, $\theta_{13}=8.58^\circ$, $\theta_{23}=49.0^\circ$, with $\delta_{\mathrm{CP}}\approx-128^\circ$ and the CP-conserving values disfavoured at two to three sigma. The magnitudes are $0.825$, $0.544$, $0.149$ in the first row, and the matrix is unitary to $2.2\times10^{-16}$, one rounding unit.
 
-Neutrinos oscillate because the mass eigenstates are not the flavour eigenstates, with phase $1.267\,\Delta m^2L/E$. T2K's baseline sits at $89.6^\circ$ by design; the solar phase is $2.8\times10^{6}$ radians and averages to $\bar P_{ee}=0.578$ in vacuum and $0.296$ in matter, and both numbers are measured.
+Neutrinos oscillate because the mass eigenstates are not the flavour eigenstates, with phase $1.267\,\delta m^2L/E$. T2K's baseline sits at $89.6^\circ$ by design; the solar phase is $2.8\times10^{6}$ radians and averages to $\bar P_{ee}=0.578$ in vacuum and $0.296$ in matter, and both numbers are measured.
 
 CP violation is $850$ times stronger here than in the quark sector, in the Jarlskog measure: $J=-0.0262$ at the fit phase, $\pm0.0332$ at maximal. The size follows from the angles: $J$ is $c_{12}s_{12}$, $s_{13}$ and $c_{23}s_{23}$ times a normalisation $c_{13}^2$, and the products differ by $1006$ because $s_{13}$ is $40$ times larger here; the angle pattern itself is unexplained.
 
@@ -341,11 +341,11 @@ The framework supplies the arena and transcribes the rest: no mechanism for the 
 | $\alpha_{21}$, $\alpha_{31}$ | Majorana phases, in the half-angle convention |
 | $s_{ij}$, $c_{ij}$ | $\sin\theta_{ij}$, $\cos\theta_{ij}$ |
 | $J$ | Jarlskog invariant, $-0.0262$ at the fit phase |
-| $\Delta m^2_{21}$ | $7.42\times10^{-5}$ eV$^2$ |
-| $\Delta m^2_{31}$ | $2.51\times10^{-3}$ eV$^2$, magnitude |
+| $\delta m^2_{21}$ | $7.42\times10^{-5}$ eV$^2$ |
+| $\delta m^2_{31}$ | $2.51\times10^{-3}$ eV$^2$, magnitude |
 | $L$, $E$ | Baseline and energy |
-| $L_{\mathrm{osc}}$ | One full cycle of the $\sin^2$, $\pi E/(1.267\Delta m^2)$ |
-| $\Delta m^2_{32}$ | $\Delta m^2_{31}-\Delta m^2_{21}$, the third argument of the CP asymmetry |
+| $L_{\mathrm{osc}}$ | One full cycle of the $\sin^2$, $\pi E/(1.267\delta m^2)$ |
+| $\delta m^2_{32}$ | $\delta m^2_{31}-\delta m^2_{21}$, the third argument of the CP asymmetry |
 | $\theta_C$ | Cabibbo angle, $13.0^\circ$, used by the trimaximal relation |
 | $P_{ee}$ | Electron-neutrino survival probability |
 | $\bar P_{ee}$ | The same, averaged over rapid oscillations, as the solar data are |

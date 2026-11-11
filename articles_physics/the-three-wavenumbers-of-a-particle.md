@@ -353,9 +353,9 @@ the reduced Compton wavelength, $386.159\ \mathrm{fm}$ for the electron. That di
 **At $L=1/k_m$ the spread is the rest energy.** Put $L=1/k_m=\hbar/(mc)$:
 
 $$
-\Delta k \sim  k_m,
+\delta k \sim  k_m,
 \qquad
-\Delta E \sim m\,c^{2}= mc^2 .
+\delta E \sim m\,c^{2}= mc^2 .
 $$
 
 The energy available in the region has reached the energy needed to make a second particle of the same mass. Beyond that point the description with a fixed number of particles fails, not because the calculation is difficult, but because the state that would be described has the energy to become a different state.
@@ -528,12 +528,12 @@ the reduced de Broglie wavelength. It is not a property of the species but of th
 **It is the unit of every interference spacing.** The fringe spacing of two slits is
 
 $$
-\Delta y = \frac{2\pi D}{d\,k_{\Phi}} = \frac{2\pi D}{d}\,\frac{1}{k_{\Phi}},
+\delta y = \frac{2\pi D}{d\,k_{\Phi}} = \frac{2\pi D}{d}\,\frac{1}{k_{\Phi}},
 $$
 
 so the spacing of the fringes is the distance per radian, magnified by the geometry of the apparatus, $2\pi D/d$. A measurement of a fringe spacing is a measurement of the distance per radian, and it is the only direct measurement of $1/k_{\Phi}$ in the series.
 
-**It is twice the narrowest width of a state.** The uncertainty relation gives $\Delta x\ge1/(2\Delta k)$, so a state whose wave numbers are spread over $\Delta k$ cannot be narrower than half the corresponding distance. The distance is therefore a lower bound on an extent and not an extent: it says how far the phase must run to define the state, not how much space the particle occupies.
+**It is twice the narrowest width of a state.** The uncertainty relation gives $\delta x\ge1/(2\delta k)$, so a state whose wave numbers are spread over $\delta k$ cannot be narrower than half the corresponding distance. The distance is therefore a lower bound on an extent and not an extent: it says how far the phase must run to define the state, not how much space the particle occupies.
 
 **It is the ruler of a bound orbit.** A closed orbit holds a whole number of turns of phase, $r=n/k_{\Phi}$, so the distance $1/k_{\Phi}$ is the step of the ladder of bound states. For hydrogen in the ground state the step is the orbit itself, and the quantization is the statement that the orbit is one step long.
 
@@ -544,7 +544,7 @@ so the spacing of the fringes is the distance per radian, magnified by the geome
 **Fringes are spaced by the inverse momentum wave number.** Two slits a distance $d$ apart, a screen a distance $D$ away, a particle of momentum wave number $k_{\Phi}$. The path difference for a point at height $y$ is $yd/D$, so the phase difference is $k_{\Phi}yd/D$, and neighbouring maxima are separated by
 
 $$
-\Delta y = \dfrac{2\pi D}{d\,k_{\Phi}},
+\delta y = \dfrac{2\pi D}{d\,k_{\Phi}},
 $$
 
 which is the ordinary formula $\lambda D/d$ with $\lambda=2\pi/k_{\Phi}$. The reduced wave number enters the phase and the ordinary wavelength enters the ruler on the screen.
@@ -555,10 +555,10 @@ which is the ordinary formula $\lambda D/d$ with $\lambda=2\pi/k_{\Phi}$. The re
 
 ### No State Is Narrower Than Half Its Wavelength
 
-**The uncertainty relation in the wave numbers.** Write $\Delta p=\hbar\,\Delta\,k$ and the relation $\Delta x\,\Delta p\ge\frac{\hbar}{2}$ becomes
+**The uncertainty relation in the wave numbers.** Write $\delta p=\hbar\,\Delta\,k$ and the relation $\delta x\,\delta p\ge\frac{\hbar}{2}$ becomes
 
 $$
-\Delta x \ge \dfrac{1}{2\,\Delta k} .
+\delta x \ge \dfrac{1}{2\,\delta k} .
 $$
 
 A state of a given momentum cannot be squeezed below half the inverse of its spread in wave number. The width of the state and the wave number of its spread are reciprocals, up to a factor of two, and the factor is the only thing the inequality leaves free.
@@ -659,7 +659,7 @@ A wave whose spatial entry is $\vec k_{\Phi}$ and whose temporal entry is $k_{t}
 
 **One radian of phase per inverse energy wave number.** The phase of a plane wave is $\vec k_{\Phi}\cdot\vec x-\omega t$ with $\omega=c\,k_{t}^{\prime}$. Over a time $t=1/(c\,k_{t}^{\prime})$ the phase turns by $\omega t=1$. So the energy wave number is the rate at which the phase turns, divided by $c$, in the same way that the momentum wave number is the rate at which it turns in space.
 
-**The clock of any process.** A reaction whose energy changes by $\Delta E$ has a phase that turns at $\Delta E/\hbar=c\,\Delta k_{t}^{\prime}$, and the inverse of that wave number is the distance light covers in the corresponding time. Every oscillation, every beat and every interference term in the series can be read as a wave number this way, and the reading is exact: the energy wave number of the difference is the wave number of the beat.
+**The clock of any process.** A reaction whose energy changes by $\delta E$ has a phase that turns at $\delta E/\hbar=c\,\delta k_{t}^{\prime}$, and the inverse of that wave number is the distance light covers in the corresponding time. Every oscillation, every beat and every interference term in the series can be read as a wave number this way, and the reading is exact: the energy wave number of the difference is the wave number of the beat.
 
 ### The Distance It Inverts To
 
@@ -673,7 +673,7 @@ The distance is the one the energy becomes when a duration is converted into a l
 
 **It is the length a time becomes.** A process of duration $\tau$ has the wave number $1/(c\tau)$, and its inverse is the distance light covers while it runs. A lifetime and a length are therefore one measurement in two units, and the decay of §*The Decay Wave Number* is the case where the duration is the mean life.
 
-**It is the reach of a virtual process.** A process that borrows an energy $\Delta E$ can reach the distance $1/\Delta k_{t}^{\prime}=\frac{\hbar\,c}{\Delta\,E}$, which is the energy distance of the deficit. The Yukawa range is the special case in which the deficit is the rest energy, and there the energy distance and the mass distance coincide: $1/k_m=1/k_{t}^{\prime}$ at rest.
+**It is the reach of a virtual process.** A process that borrows an energy $\delta E$ can reach the distance $1/\delta k_{t}^{\prime}=\frac{\hbar\,c}{\Delta\,E}$, which is the energy distance of the deficit. The Yukawa range is the special case in which the deficit is the rest energy, and there the energy distance and the mass distance coincide: $1/k_m=1/k_{t}^{\prime}$ at rest.
 
 **It is the shortest of the three distances.** Because $k_{t}^{\prime}$ is the hypotenuse of the triangle, $1/k_{t}^{\prime}$ is the shortest side of the inverted triangle, with equality at rest against $1/k_m$ and in the massless limit against $1/k_{\Phi}$. The energy distance is what a state can be resolved to at best, since it is the distance light covers in the phase time of its own energy.
 
@@ -693,17 +693,17 @@ while light covers $cT=2\pi/k_{t}^{\prime}$. The two distances are in the ratio 
 
 ### The Uncertainty in Time
 
-**A borrowed energy lasts a time.** The relation $\Delta E\,\Delta t\ge\frac{\hbar}{2}$ says that a process which borrows an energy $\Delta E$ can last a time of order $\frac{\hbar}{\Delta\,E}$. Convert the time to a distance and the statement becomes: the process can reach a distance
+**A borrowed energy lasts a time.** The relation $\delta E\,\delta t\ge\frac{\hbar}{2}$ says that a process which borrows an energy $\delta E$ can last a time of order $\frac{\hbar}{\Delta\,E}$. Convert the time to a distance and the statement becomes: the process can reach a distance
 
 $$
-c\,\Delta t \sim \dfrac{c}{\Delta k_{t}^{\prime}} = \dfrac{1}{\Delta k_{t}^{\prime}(\Delta E)},
+c\,\delta t \sim \dfrac{c}{\delta k_{t}^{\prime}} = \dfrac{1}{\delta k_{t}^{\prime}(\delta E)},
 $$
 
 the inverse energy wave number of the borrowed energy.
 
-**The Yukawa range is the special case.** A virtual particle of mass $m$ borrows $\Delta E=mc^2$, so its reach is $\frac{1}{k_m}=1/k_m$, which is the range derived in §*The Range of a Force*. The two derivations are one derivation, and the energy wave number is the general form of the mass wave number's range statement: the reach of a virtual process is the inverse energy wave number of its deficit.
+**The Yukawa range is the special case.** A virtual particle of mass $m$ borrows $\delta E=mc^2$, so its reach is $\frac{1}{k_m}=1/k_m$, which is the range derived in §*The Range of a Force*. The two derivations are one derivation, and the energy wave number is the general form of the mass wave number's range statement: the reach of a virtual process is the inverse energy wave number of its deficit.
 
-**The reach of a virtual photon is not infinite.** A virtual photon of energy $\Delta E$ reaches $1/\Delta k_{t}^{\prime}$; only the exactly massless, exactly zero-energy exchange reaches arbitrarily far, and the Coulomb potential is the sum over all of them.
+**The reach of a virtual photon is not infinite.** A virtual photon of energy $\delta E$ reaches $1/\delta k_{t}^{\prime}$; only the exactly massless, exactly zero-energy exchange reaches arbitrarily far, and the Coulomb potential is the sum over all of them.
 
 ### The Decay Wave Number
 

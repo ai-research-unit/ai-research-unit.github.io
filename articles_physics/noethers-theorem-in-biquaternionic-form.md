@@ -317,7 +317,7 @@ $$
 \tilde{Ξ}_0\ \text{constant}.
 $$
 
-The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t}_0$,
+The multiplier is **central and of unit modulus**, because $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \langle\tilde P_{\Phi},\tilde{R}_{\Phi,0}\rangle_{\natural}$ is real: writing $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ and $\tilde{R}_{\Phi,0} = i R_{0t} e_t + \vec R_0$, with $R_{0t} = r'_{t,0$,
 
 $$
 \mathrm{Sc}\!\left(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}\right) = -\frac{\omega R_{0t}}{c} + \vec k_\Phi\cdot\vec R_0 = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c .
@@ -549,7 +549,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\mathbb{B}_{H}, \mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Real-quaternion subspace; complex scalar line (the centre) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Quaternion-conjugate gradient; $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$ |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i q'_t$ |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $Q_t=i q'_t$ |
 | $S = -mc\int\sqrt{-d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}$ | Free-particle action |
 | $\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
 | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |

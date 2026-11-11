@@ -156,7 +156,7 @@ The distribution is therefore forced by the topology of the four real slices: th
 The biquaternion norm is not only the interval; it is also the d'Alembertian. Composing the gradient with its quaternion conjugate gives
 
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta =: \Box_\Phi ,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 =: \Box_\Phi ,
 $$
 
 because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $(\tilde\nabla_\Phi)^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
@@ -308,7 +308,7 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\langle\tilde{Q}\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Interval; zero set is the light cone |
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
-| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + \vec k_\Phi^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |

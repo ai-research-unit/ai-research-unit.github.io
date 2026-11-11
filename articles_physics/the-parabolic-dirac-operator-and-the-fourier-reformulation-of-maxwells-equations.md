@@ -49,7 +49,7 @@ $$
 so that its spatial part is exactly the source's $D$, and the corpus's second-order operator is
 
 $$
-\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2
 $$
 
 (*Biquaternion Analysis*, *The d'Alembertian*). On the material sector $\partial/\partial R_t = -i\partial/\partial r'_t$ is a change of coordinate and not a choice of units, hence

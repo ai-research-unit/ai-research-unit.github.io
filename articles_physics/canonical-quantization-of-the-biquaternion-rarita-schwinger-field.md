@@ -177,7 +177,7 @@ It is antisymmetric in its three indices and vanishes when two of them coincide.
 $$
 \{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\xi_a\}_P\,(\Delta^{-1})_{ab}\,\{\xi_b,B\}_P ,
 \qquad
-\Delta_{ab}=\{\xi_a,\xi_b\}_P ,
+C_{ab}=\{\xi_a,\xi_b\}_P ,
 $$
 
 with $\xi_a$ the second-class constraints. The effect of the Dirac bracket is to replace the naive anticommutator by the projected one: the fields are restricted to the constraint surface, and the algebra closes on the projected field $(P\tilde{Ξ}_{\mathrm{sp}})_\mu$ rather than on $\tilde{Ξ}_{\mathrm{sp},\mu}$ itself. This is the standard treatment and is cited below; the point to record is that the projection is the projector of the preceding section, so the algebraic content of the constraints is the biquaternion projector and its rank.
@@ -420,7 +420,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $T_{\mu\nu\rho}$ | Antisymmetrized triple of three plain basis operators; antisymmetric, zero when two indices coincide, and $i\gamma_{[\mu\nu\rho]}$ in the gamma dictionary |
 | $\pi_\mu=\sum_\lambda T_{\lambda h_t\mu}(\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda})$, $\bar{\tilde{Ξ}}_{\mathrm{sp},\lambda}:=\tilde{Ξ}_{\mathrm{sp},\lambdaiR}^{\dagger}_{\mathrm{axf},\vec e_x}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
 | $\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
-| $\{A,B\}_D$, $\Delta_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
+| $\{A,B\}_D$, $C_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Fermionic mode algebra |
 | $\zeta_{\mu,r},v_{\mu,r}$, $r=1,\dots,4$ | Polarization spinors; helicities $\pm\tfrac32,\pm\tfrac12$ |
 | $\Pi_{\mu\nu}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |

@@ -17,7 +17,7 @@ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has sig
 $$
 \tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z,
 \qquad
-\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta .
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 .
 $$
 
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ its vacuum value. The conventions are those of the companion articles:
@@ -364,7 +364,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\tilde{U}\in\mathbb{B}_{H}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$ |
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec\nabla$ | Biquaternionic gradient |
 | $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Spatial vector gradient |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian (series convention) |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial quaternion, $\vec u^2 = -e_t$ |

@@ -442,20 +442,20 @@ to relative order $c^{-2}$. The first three terms are the Pauli Hamiltonian of P
 *Step 6: numerical verification against the exact Dirac spectrum.* The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $\mathfrak{Z}$, the first-order shifts of the three corrections are the standard ones, each carrying the rest energy $m\,c^{2}$,
 
 $$
-\Delta E_{\rm kin}=-\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],
+\delta E_{\rm kin}=-\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],
 $$
 
 $$
-\Delta E_{\rm SO}=\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\,\frac{j(j+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)}\quad(\ell\neq0),
+\delta E_{\rm SO}=\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\,\frac{j(j+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)}\quad(\ell\neq0),
 $$
 
 $$
-\Delta E_{\rm D}=\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\quad(\ell=0),
+\delta E_{\rm D}=\frac{m\,c^{2}(\mathfrak{Z}\alpha)^4}{2n^3}\quad(\ell=0),
 \qquad
-\Delta E_{\rm D}=0\quad(\ell\neq0),
+\delta E_{\rm D}=0\quad(\ell\neq0),
 $$
 
-with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Bigl[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Bigr]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, with $j$ the total angular momentum, $j=\ell\pm\tfrac12$ and one value at $\ell=0$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. The coefficients are also those of the two sources named at the head of this problem: the binomial coefficients $1,\tfrac12,-\tfrac18$ of $\sqrt{m^2c^4+O^2}$ and the Darwin coefficient $+\tfrac18$ of the second-order term.
+with the exact Dirac shift $\delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Bigl[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Bigr]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, with $j$ the total angular momentum, $j=\ell\pm\tfrac12$ and one value at $\ell=0$), the sum $\delta E_{\rm kin}+\delta E_{\rm SO}+\delta E_{\rm D}$ equals $\delta E_{\rm exact}$ in every case, with difference exactly $0$. The coefficients are also those of the two sources named at the head of this problem: the binomial coefficients $1,\tfrac12,-\tfrac18$ of $\sqrt{m^2c^4+O^2}$ and the Darwin coefficient $+\tfrac18$ of the second-order term.
 
 ## Problem 4: Hermiticity and the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ decomposition
 

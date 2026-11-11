@@ -25,7 +25,7 @@ Three threads are developed.
 - **The electromagnetic tensor as a bigeneral quaternionic bilinear.** The construction $\mathsf{T}_{\mu\nu} = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.
 
 $$
-\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2+\Delta .
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 .
 $$
 
 The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
@@ -387,7 +387,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; central $i$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Basis of $\mathbb{B}_{\Phi}$; supplies the tensor index directions |
-| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Gradient, conjugate gradient, d'Alembertian |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; the unit metric on $\mathbb{C}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | Unit metric; the same in $\mathbb{B}$ and on the two sectors |
 | $S=\int\mathcal{L}\,d^4r$ | Action; $\mathcal{L}$ the Lagrangian density |

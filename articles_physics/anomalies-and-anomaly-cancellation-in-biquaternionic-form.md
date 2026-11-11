@@ -280,9 +280,9 @@ $$
 so the anomaly is invisible in the local equations of motion of the gauge field and is detected only by the charge it transports. Integrating the divergence over a region whose spatial boundary carries no flux,
 
 $$
-\Delta Q_5=\int d^4r\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}
+\delta Q_5=\int d^4r\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}
 =-\frac{e^2}{16\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-=-\frac{e^2}{8\pi^2}\,\Delta N_{\mathrm{CS}},
+=-\frac{e^2}{8\pi^2}\,\delta N_{\mathrm{CS}},
 \qquad
 N_{\mathrm{CS}}=\int d^3r\,J_{\mathrm{CS},r'_t} .
 $$
@@ -299,7 +299,7 @@ $$
 \mathrm{ind}(D)=n_R-n_L ,
 $$
 
-where $D$ is the massless Dirac operator of the pair above, the representative of $\tilde\nabla_\Phi$ on the state, taken on the Euclidean continuation so that the index is defined on a compact manifold, and $n_R$ and $n_L$ are the numbers of right- and left-handed zero modes of $D$ in the background. The general statement is the Atiyah–Singer theorem, and the zero-mode count and the index theorem belong to the corpus's general gauge apparatus rather than to the fermion sector. The two facts the fermion sector uses are immediate consequences and are all that is needed here: the **integrated** anomaly is an integer, which is why the coefficient cannot be renormalised — no continuous parameter interpolates between integers. The integer is the charge normalised with the coupling, $N=\frac{e^2}{32\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, which is what charge quantisation makes integral; the unnormalised Chern–Simons number above is related to it by $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$. The boxed coefficient then reads $\Delta Q_5=-2\Delta N$, so a unit of topological charge violates the axial charge by **two** units per fermion flavour — the factor two being the two chiralities the index counts as $n_R-n_L$. The divergence identity, the density, and the integer are one statement.
+where $D$ is the massless Dirac operator of the pair above, the representative of $\tilde\nabla_\Phi$ on the state, taken on the Euclidean continuation so that the index is defined on a compact manifold, and $n_R$ and $n_L$ are the numbers of right- and left-handed zero modes of $D$ in the background. The general statement is the Atiyah–Singer theorem, and the zero-mode count and the index theorem belong to the corpus's general gauge apparatus rather than to the fermion sector. The two facts the fermion sector uses are immediate consequences and are all that is needed here: the **integrated** anomaly is an integer, which is why the coefficient cannot be renormalised — no continuous parameter interpolates between integers. The integer is the charge normalised with the coupling, $N=\frac{e^2}{32\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, which is what charge quantisation makes integral; the unnormalised Chern–Simons number above is related to it by $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$. The boxed coefficient then reads $\delta Q_5=-2\delta N$, so a unit of topological charge violates the axial charge by **two** units per fermion flavour — the factor two being the two chiralities the index counts as $n_R-n_L$. The divergence identity, the density, and the integer are one statement.
 
 **The consistency of the picture.** The three interpretations of the anomaly — the triangle diagram with its trace, the Chern–Simons divergence with its boundary charge, and the index of the Dirac operator — are three faces of one object. The triangle gives the coefficient; the total-derivative form gives its topological character; the index gives its integrality. In the framework the coefficient is the standard spinor trace weighted by the basis operator, the density is a field invariant ($I_2$), and the integral is a winding number of the material-sector connection. The article has stated the weight and the density and referred the integral to the general apparatus.
 
@@ -452,7 +452,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $T_a$ | $SU(2)$ generators; the symmetrised trace of three vanishes for every representation |
 | $Y=ϙ-T_3$ | Hypercharge convention |
 | $D$, $\mathrm{ind}(D)=n_R-n_L$ | Massless Dirac operator of the pair; representative of $\tilde\nabla_\Phi$ on the state; its index, with $\int d^4r\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=2\,\mathrm{ind}(D)$ |
-| $N=\frac{e^2}{32\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3r\,J_{\mathrm{CS},r'_t}$ | Topological charge, integral by charge quantisation; $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$ and $\Delta Q_5=-2\Delta N$ |
+| $N=\frac{e^2}{32\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3r\,J_{\mathrm{CS},r'_t}$ | Topological charge, integral by charge quantisation; $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$ and $\delta Q_5=-2\delta N$ |
 | $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-model gauge group (standard notation, not framework objects) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |

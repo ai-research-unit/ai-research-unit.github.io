@@ -105,30 +105,30 @@ This is standard relativistic quantum physics (see the Further Reading); the com
 **The propagator is the scalar kernel acted on by the first-order operator.** Write
 
 $$
-\Delta_F(x-x_2) = \int\frac{d^4p}{(2\pi\hbar)^4}\,
+\mathcal{G}_F(x-x_2) = \int\frac{d^4p}{(2\pi\hbar)^4}\,
 \frac{i\,\hbar^{2}}{p^2 - m^{2}c^{2} + i\epsilon}\,
 \exp(-i(p\cdot(x-x_2))/\hbar),
 \qquad
-\left(\Box - k_m^{2}\right)\Delta_F = i\,\delta^{(4)},
+\left(\Box - k_m^{2}\right)\mathcal{G}_F = i\,\delta^{(4)},
 $$
 
 for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box$ acts on the exponential as multiplication by $p^2/\hbar^2$, the difference is exactly that operator, and formally
 
 $$
-\boxed{\;\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\Delta_F,
+\boxed{\;\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F,
 \qquad
-\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\Delta_F\;}
+\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F\;}
 $$
 
 which is the Green kernel of the pair as *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* states it. The verification is the one-line algebra of the pair,
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\bigl(\tilde\nabla_\Phi+k_m\bigr)\Delta_F
--k_m\bigl((\tilde\nabla_\Phi)^{\natural}+k_m\bigr)\Delta_F
-= \left(\Box_\Phi-k_m^{2}\right)\Delta_F ,
+(\tilde\nabla_\Phi)^{\natural}\bigl(\tilde\nabla_\Phi+k_m\bigr)\mathcal{G}_F
+-k_m\bigl((\tilde\nabla_\Phi)^{\natural}+k_m\bigr)\mathcal{G}_F
+= \left(\Box_\Phi-k_m^{2}\right)\mathcal{G}_F ,
 $$
 
-the two mass-gradient terms cancelling because each of them carries the same gradient, and $\Box-k_m^{2}$ being the operator that $\Delta_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.
+the two mass-gradient terms cancelling because each of them carries the same gradient, and $\Box-k_m^{2}$ being the operator that $\mathcal{G}_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.
 
 **The propagator is not one path integral with one phase.** The worldline proper-time representation makes the same point in a Lorentz-invariant way. Since
 
@@ -140,7 +140,7 @@ $$
 the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(i\hbar T(\Box - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
 
 $$
-\Delta_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
+\mathcal{G}_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(\frac{i}{\hbar}S_0[x]),
 \qquad
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \hbar^{2}k_m^{2}\right),
@@ -155,7 +155,7 @@ $$
 (x-x_2)^2 = (x_0-x_2^0)^2 - \left|\vec r-\vec r_2\right|^2 ,
 $$
 
-writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\Delta_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\Delta_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -164,22 +164,22 @@ The deficiency of this representation is that the spin is nowhere to be seen unt
 It is worth evaluating the scalar worldline kernel in the free case, because the calculation is the whole content of the proper-time method and fixes the sense in which a first-order object is a square root. The proper-time kernel is the Fourier transform
 
 $$
-\Delta_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi\hbar)^4}\,
+\mathcal{G}_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi\hbar)^4}\,
 \exp\left(iT\left(p^2 - m^{2}c^{2} + i\epsilon\right)/\hbar\right)\,\exp(-i(p\cdot(x-x_2))/\hbar),
 $$
 
 where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$. The $p$-integral is a Gaussian: completing the square in each of the four components gives the standard free kernel
 
 $$
-\Delta_F(x,x_2) = \int_0^\infty dT\;\mathcal{N}(T)\;
+\mathcal{G}_F(x,x_2) = \int_0^\infty dT\;\mathcal{N}(T)\;
 \exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right),
 $$
 
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
 
 - The **proper time $T$ is the Schwinger parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\hbar^{2}k_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
-- The **mass is a constant in the exponent**. There is no spin and no algebra-valued weight: $\Delta_F$ is a scalar, and it obeys $(\Box - k_m^{2})\Delta_F = i\delta^{(4)}$ up to the measure convention.
-- The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $\left(\tilde\nabla_\Phi + k_m\right)$ to $\Delta_F$, which is why the spin is invisible until that operation is performed.
+- The **mass is a constant in the exponent**. There is no spin and no algebra-valued weight: $\mathcal{G}_F$ is a scalar, and it obeys $(\Box - k_m^{2})\mathcal{G}_F = i\delta^{(4)}$ up to the measure convention.
+- The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $\left(\tilde\nabla_\Phi + k_m\right)$ to $\mathcal{G}_F$, which is why the spin is invisible until that operation is performed.
 
 The same proper-time integral is the bridge to the worldline of the next section: replacing the constant mass by a general worldline interaction, and adding the odd variables, converts this scalar kernel into the algebra-valued kernel of the pair.
 
@@ -232,7 +232,7 @@ The spin factor is where the algebra sits, and its structure is the reason the o
 
 **The spin factor is the path-ordered product of the elements at the successive points.** Order by order, $Ξ[x]$ is a sum of elements: the unit, then the products of two units, then of four. Each instant of the worldline contributes an element and the product is path ordered, because the elements at different instants do not commute. The exponent therefore grows one factor of the algebra per pair of odd variables, and the whole transport is a product of elements multiplying the field on the left.
 
-**The square of the operator is the scalar path integral.** The worldline action has a bosonic kinetic term and a fermionic one, and integrating out the odd variables returns the weight that the first-order equation adds. The statement that the Dirac propagator is the Dirac operator applied to the scalar kernel, and the statement that a pair of odd variables is an element of the algebra, are two faces of the same relation: the odd variable is the spin and the pair is the algebra, so squaring the first-order operator removes the odd variable and returns the scalar operator whose path integral is $\Delta_F$.
+**The square of the operator is the scalar path integral.** The worldline action has a bosonic kinetic term and a fermionic one, and integrating out the odd variables returns the weight that the first-order equation adds. The statement that the Dirac propagator is the Dirac operator applied to the scalar kernel, and the statement that a pair of odd variables is an element of the algebra, are two faces of the same relation: the odd variable is the spin and the pair is the algebra, so squaring the first-order operator removes the odd variable and returns the scalar operator whose path integral is $\mathcal{G}_F$.
 
 ## The Spin Factor in a Background Field
 
@@ -370,7 +370,7 @@ $$
 
 is the operator statement of the same split: the two gradients act on the two parts, the material trajectory is common to both, and the mass is the off-diagonal corner that turns one into the other. In the worldline language the two parts are the two ways the transport can hand the field at the boundary to the mass term, and the mass term is the reversal; in the checkerboard the same reversal is the lattice corner. The three descriptions — the operator pair, the discretised checkerboard, and the continuous spinning worldline — are the same off-diagonal mass structure in three registers.
 
-There is a further consistency check that ties this article to *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The scalar kernel $\Delta_F$ is the path integral of the **squared** theory; the spin factor is what the first-order theory adds. In the free case the spin factor is the unit, with no generator inserted, and the worldline path integral reduces to the scalar $\Delta_F$; this is why the square of the propagator's equation is the Klein–Gordon equation with a delta source, as computed above. The higher terms of the spin factor are the spin–field couplings, and they have no spin-0 counterpart. The spin-0 path integral of the companion subcategory is therefore not a separate construction with an analogous appearance; it is the trivial-spin-factor case of the worldline integral, and the full Dirac path integral is what the spin degrees of freedom add to it.
+There is a further consistency check that ties this article to *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The scalar kernel $\mathcal{G}_F$ is the path integral of the **squared** theory; the spin factor is what the first-order theory adds. In the free case the spin factor is the unit, with no generator inserted, and the worldline path integral reduces to the scalar $\mathcal{G}_F$; this is why the square of the propagator's equation is the Klein–Gordon equation with a delta source, as computed above. The higher terms of the spin factor are the spin–field couplings, and they have no spin-0 counterpart. The spin-0 path integral of the companion subcategory is therefore not a separate construction with an analogous appearance; it is the trivial-spin-factor case of the worldline integral, and the full Dirac path integral is what the spin degrees of freedom add to it.
 
 ## What Is Standard and What the Algebra Adds
 
@@ -459,7 +459,7 @@ so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\Delta_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\Delta_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
 In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,mc-\tilde{P}_{\Phi})/(p^2-m^{2}c^{2})$ and $\mathcal S_R = (i\,mc-\tilde{P}_{\Phi}^{\natural})/(p^2-m^{2}c^{2})$, and the identity that the two lines compose to $\Box-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two components of the pair, the corners carry the weight $i\epsilon\,k_m$ and are the mass insertions that join them, and the continuum limit is the two-dimensional propagator.
 
@@ -482,8 +482,8 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field and its two parts, one per letter of the pair |
 | $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, the two lines with a source |
-| $\Delta_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-k_m^{2}\right)\Delta_F = i\delta^{(4)}$ |
-| $\mathcal S_L = \left(\tilde\nabla_\Phi+k_m\right)\Delta_F$, $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+k_m\right)\Delta_F$ | Dirac propagator as the scalar kernel acted on |
+| $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-k_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |
+| $\mathcal S_L = \left(\tilde\nabla_\Phi+k_m\right)\mathcal{G}_F$, $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+k_m\right)\mathcal{G}_F$ | Dirac propagator as the scalar kernel acted on |
 | $T$ | Proper time (Schwinger parameter) |
 | $x(\tau)$, $dR_\mu/d\tau$ | Worldline and its tangent, summed over the four slots |
 | $S_0[x]$ | Scalar worldline action |

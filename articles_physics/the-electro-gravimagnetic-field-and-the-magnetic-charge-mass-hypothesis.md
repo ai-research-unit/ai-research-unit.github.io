@@ -83,7 +83,7 @@ The pair is not a new operator for the corpus; it is the corpus gradient in anot
 | $D^+ = \partial/\partial \tau + i\nabla$ | $D^+ = i\,\tilde\nabla_\Phi$ | $D^-D^+ = \partial^2/\partial \tau^2 - \Delta_\Phi$ |
 | $D^- = \partial/\partial \tau - i\nabla$ | $D^- = i\,(\tilde\nabla_\Phi)^{\natural}$ | $\Box_{\mathrm{corpus}} = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= -\,D^-D^+$ |
 
-The sign in the last column is the whole of the difference: the corpus works in the $i r'_t$ (Euclidean) convention, where $\partial/\partial R_t = -i\,\partial/\partial \tau$ and $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ is elliptic, while the programme works in the $\tau = r'_{t}$ (hyperbolic) convention, where $\Box_\Phi = \partial^2/\partial \tau^2 - \Delta_\Phi$ is the wave operator. The two dictionaries differ by $i$ and by an overall sign; neither is more fundamental, but a formula copied from one into the other without the factor $i$ and the sign will fail.
+The sign in the last column is the whole of the difference: the corpus works in the $i r'_t$ (Euclidean) convention, where $\partial/\partial R_t = -i\,\partial/\partial \tau$ and $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is elliptic, while the programme works in the $\tau = r'_{t}$ (hyperbolic) convention, where $\Box_\Phi = \partial^2/\partial \tau^2 - \Delta_\Phi$ is the wave operator. The two dictionaries differ by $i$ and by an overall sign; neither is more fundamental, but a formula copied from one into the other without the factor $i$ and the sign will fail.
 
 **The homogeneous biwave equation as an external-field transformation.** The fourth paper of the *Differential algebra of biquaternions* series reads the same gradients with a coefficient. It takes
 

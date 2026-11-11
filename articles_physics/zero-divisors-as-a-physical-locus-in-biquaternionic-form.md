@@ -132,7 +132,7 @@ The companion article *The WKB Approximation and the Hamilton–Jacobi Equation 
 The semiclassical propagator carries the van Vleck determinant
 
 $$
-\Delta_{\mathrm{vV}}=\left|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\partial x_f}\right|,
+\mathcal{V}_{\mathrm{VV}}=\left|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\partial x_f}\right|,
 $$
 
 whose singularities are the conjugate points and whose square root is the amplitude. The caustics of the propagator and the turning surfaces of the wave function are the same locus described in two ways: the places where the family of classical trajectories degenerates, which is where the configuration-space momentum loses rank. In the biquaternion interpretation the degeneracy is a rank drop of the real momentum form, and the locus is the configuration-space trace of the cone. The framework does not add a new equation here; it identifies the caustic, the turning surface, and the apex of the cone as one locus.
@@ -277,7 +277,7 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle
 | $\sum_\mu\lvert Q_\mu\rvert^2$ | Hermitian form (positive definite), equal to the plain form on the sector; the probability pairing, distinct from $\langle\cdot\rangle_{\natural}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=q\tilde Q$, $\langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural}=0$ | Null solution of the free equation for a nilpotent $\tilde Q$ |
 | $E=V(x)$ | Turning surface; $p(x)=0$ |
-| $\Delta_{\mathrm{vV}}$ | Van Vleck determinant; singular at caustics |
+| $\mathcal{V}_{\mathrm{VV}}$ | Van Vleck determinant; singular at caustics |
 | $\vec r=(2\mathrm{Re}(\alpha\bar\beta),2\mathrm{Im}(\alpha\bar\beta),|\alpha|^2-|\beta|^2)$ | Bloch vector; $|\vec r|=1$ for pure states |
 | $\flat=-{}^{*}$ | The algebra's real structure |
 | $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace convention |

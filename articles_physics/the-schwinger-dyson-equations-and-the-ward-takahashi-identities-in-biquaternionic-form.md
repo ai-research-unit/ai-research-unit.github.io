@@ -244,7 +244,7 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $\flat=-{}^{*}$ | Anti-Hermitian conjugation |
 | $\langle\tilde Q,\tilde Q_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde Q^{*}\tilde Q_1)$ | Real bilinear form; source pairing |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t)=2$ | Trace formula |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ | Quadratic operator |
 | $a$ | colour index of the gauge algebra, written low |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with module-valued source |

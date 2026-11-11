@@ -12,7 +12,7 @@ The question naturally arises whether electromagnetic waves can form shocks. Thi
 
 This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.
 
-The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box_\Phi\tilde{F} = -\sqrt{\mu}\,(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta_\Phi$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
+The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box_\Phi\tilde{F} = -\sqrt{\mu}\,(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
 
 ## Why Linear Vacuum Maxwell Has No Shocks
 
@@ -405,7 +405,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ | d'Alembertian |
+| $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |

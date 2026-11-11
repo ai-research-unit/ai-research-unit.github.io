@@ -444,7 +444,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
 | $\tilde{P}_{\Phi,E}=ik_{\mathrm{eu},0}e_t+\vec p\in\mathbb{B}_{\Phi}$ | Euclidean material element; $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}=\vec p_E^2$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse Compton wave number |
 | $\Omega_{\vec p}=\sqrt{\vec p^2/\hbar^{2}+k_m^{2}}$ | On-shell frequency, an inverse length |
 | $G(\omega,\vec p)=(\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2})^{-1}$ | Momentum-space kernel, $(\Box-k_m^{2})G=-\delta^{(4)}$ |
