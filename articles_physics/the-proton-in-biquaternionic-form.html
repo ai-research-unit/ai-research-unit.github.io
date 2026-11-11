@@ -105,7 +105,7 @@ $$</p>
 \qquad
 (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
-<p>and composing the two lines gives $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.</p>
+<p>and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.</p>
 <p>The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -134,7 +134,7 @@ $$</p>
 <tr>
 <td>Operator</td>
 <td>left multiplication by the gradient and its quaternion conjugate, one on each entry</td>
-<td>the same two, $\Box$ on each value after the two lines are composed</td>
+<td>the same two, $\Box_\Phi$ on each value after the two lines are composed</td>
 </tr>
 <tr>
 <td>Chirality</td>
@@ -403,7 +403,7 @@ $$</p>
 <p>With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, and the same four sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\rho$. Without weights the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the basis operators and entered the sum.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,</p>
+<p>The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box_\Phi$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,</p>
 <p>$$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},
 $$</p>
@@ -445,8 +445,8 @@ $$</p>
 <td>Biquaternionic gradient (Dirac operator), acting on the left</td>
 </tr>
 <tr>
-<td>$\Box = \tilde{\nabla}_\Phi(\tilde{\nabla}_\Phi)^{\natural}$</td>
-<td>d'Alembertian</td>
+<td>$\Box_\Phi = \tilde{\nabla}_\Phi(\tilde{\nabla}_\Phi)^{\natural}$</td>
+<td>The d'Alembertian in the material reading</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$</td>
@@ -486,7 +486,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$</td>
-<td>The two gradients of the pair; $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R and $\tilde\nabla_\Phi$ the R to the L, and each line composed with the other returns $\Box$</td>
+<td>The two gradients of the pair; $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R and $\tilde\nabla_\Phi$ the R to the L, and each line composed with the other returns $\Box_\Phi$</td>
 </tr>
 <tr>
 <td>$\Gamma=-iR_{\vec e_z}$</td>
