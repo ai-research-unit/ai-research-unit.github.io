@@ -12,7 +12,7 @@ The residue is stated below as the algebraic form of the problem. The companion 
 
 The article proceeds as follows: the problem in standard terms; the algebraic vocabulary of acting elements; the problem stated in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the restatement changes, and what it does not.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{B}_{\Psi}$ is the Hermitian subspace of states and observables, $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace of generators, and $\mathbb{B}_{H}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the central scalar imaginary. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the traces are its matrix-representation reading, with $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{B}_{\Psi}$ is the Hermitian subspace of states and observables, $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace of generators, and $\mathbb{B}_{H}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the central scalar imaginary. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the traces are its matrix-representation reading, with $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$.
 
 ## The Problem in Standard Terms
 
@@ -37,7 +37,7 @@ $$
 that a general observable is a Hermitian element
 
 $$
-\tilde R_\Psi = r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi \in \mathbb{R}^3,
+\tilde H_\Psi = r_t\, e_t + i\,\vec r_\Psi, \qquad \vec r_\Psi \in \mathbb{R}^3,
 $$
 
 and that a pure state is an idempotent
@@ -54,7 +54,7 @@ $$
 
 where $\vec u_\Psi = \vec r_\Psi/|\vec r_\Psi|$ is the measurement direction. The star in the trace is inert on $\mathbb{B}_{\Psi}$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
 
-**Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde R_\Psi\tilde R_\Psi^{*}=\tilde R_\Psi^{*}\tilde R_\Psi$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
+**Normal is the precondition.** The vocabulary above uses Hermitian observables, and a Hermitian element is normal, $\tilde H_\Psi\tilde H_\Psi^{*}=\tilde H_\Psi^{*}\tilde H_\Psi$. For an element with distinct eigenvalues, normality is exactly what makes the eigenprojections Hermitian, so that the two outcomes are orthogonal projectors of the sector. Otherwise $\tilde\Pi_+\tilde\Pi_-=0$ still holds, but the eigenprojections are not Hermitian (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). For a non-normal element the left and right eigenbases differ, the eigenvalues need not be real, and the Born formula above is not available. The measurement problem is therefore posed here for normal observables. A non-normal reading needs a biorthogonal probability calculus, and the framework supplies one: *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* gives the left and right eigenbases, the biorthogonal weights and the density matrix as the normal contrast class. The measurement problem as posed here remains the normal case.
 
 ### One Operation Form, Two Kinds of Element
 
@@ -90,27 +90,27 @@ This restatement is exact. It is also only a restatement: membership in one clas
 The acting element $\tilde Q_3$ is the Kraus operator of the outcome, and $\Gamma_{\tilde Q_3}$ is the unnormalized update. Its generalized polar form is
 
 $$
-\tilde Q_3=\tilde R_\Psi_{\mathrm{pos}}\tilde Q_{p},
+\tilde Q_3=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p},
 \qquad
-\tilde R_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
+\tilde H_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
 $$
 
-with $\tilde R_\Psi_{\mathrm{pos}}$ Hermitian positive semidefinite and $\tilde Q_{p}$ a partial isometry. The update is
+with $\tilde H_\Psi_{\mathrm{pos}}$ Hermitian positive semidefinite and $\tilde Q_{p}$ a partial isometry. The update is
 
 $$
 \Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})
-=\tilde R_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde R_\Psi_{\mathrm{pos}}:
+=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_\Psi_{\mathrm{pos}}:
 $$
 
 the $*$-unitary factor acts first, then the positive filter.
 
-The two classes of the preceding section are the two extremes of this family. The $*$-unitary case is $\tilde R_\Psi_{\mathrm{pos}}=e_t$ and $\tilde Q_{p}=\tilde Q_3$, with no filter. The idempotent case is $\tilde Q_3=\tilde\Pi$, hence $\tilde R_\Psi_{\mathrm{pos}}=\tilde Q_{p}=\tilde\Pi$: the element is on the null cone, the amplitude is rank one, and the outcome is sharp. A general invertible $\tilde Q_3$ has $\tilde R_\Psi_{\mathrm{pos}}>0$ and $\tilde Q_{p}$ $*$-unitary; the outcome is unsharp, the update is a rotation followed by a filter, and the element is neither $*$-unitary nor idempotent.
+The two classes of the preceding section are the two extremes of this family. The $*$-unitary case is $\tilde H_\Psi_{\mathrm{pos}}=e_t$ and $\tilde Q_{p}=\tilde Q_3$, with no filter. The idempotent case is $\tilde Q_3=\tilde\Pi$, hence $\tilde H_\Psi_{\mathrm{pos}}=\tilde Q_{p}=\tilde\Pi$: the element is on the null cone, the amplitude is rank one, and the outcome is sharp. A general invertible $\tilde Q_3$ has $\tilde H_\Psi_{\mathrm{pos}}>0$ and $\tilde Q_{p}$ $*$-unitary; the outcome is unsharp, the update is a rotation followed by a filter, and the element is neither $*$-unitary nor idempotent.
 
 The two classes are therefore not an exhaustive partition of the acting elements; they are the endpoints and the boundary of one polar family. The reversible/irreversible dichotomy of the maps remains, but the element that acts in a single outcome can be an interior point. The algebraic selection problem is the selection of an element from this family, not a binary choice between two elements. The null cone is the boundary of the sharp case, not a third dynamics. The companion article *The Polar Decomposition of a Kraus Operator* gives the full classification, the effect formula and the worked examples.
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde R_\Psi = r_t e_t + i\vec r_\Psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde H_\Psi = r_t e_t + i\vec r_\Psi$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_\Psi)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
 
 1. **The reversible evolution** $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi}) = \tilde Q_3\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}$, with $\tilde Q_3\tilde Q_3^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}_{\Psi}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
@@ -150,7 +150,7 @@ $$
 \vec r \;\longmapsto\; (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u .
 $$
 
-Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\vec u = \vec u_\Psi$, so that the pointer idempotents $\tilde\Pi_{1,2}(\vec u)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde R_\Psi$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})$ are the Born probabilities.
+Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\vec u = \vec u_\Psi$, so that the pointer idempotents $\tilde\Pi_{1,2}(\vec u)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde H_\Psi$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})$ are the Born probabilities.
 
 **First, the fully dephased element is unique given the statistics and the absence of coherence.** At $p = 1$ the channel is
 
@@ -233,7 +233,7 @@ The honest summary is a division of labour. The algebraic form makes the *struct
 
 ## Summary
 
-The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$, with the acting element either $*$-unitary ($\tilde Q_3\tilde Q_3^{*} = e_t$, reversible evolution) or Hermitian idempotent ($\tilde\Pi^2 = \tilde\Pi = \tilde\Pi^{*}$, the projective two-sided operator). The Born rule is the normalised Hermitian form $\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as the trace $\mathrm{Tr}(\tilde\Pi\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$. The $*$-unitary evolution produces no definite outcome; the idempotent two-sided operator produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the $*$-unitary case.
+The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$, with the acting element either $*$-unitary ($\tilde Q_3\tilde Q_3^{*} = e_t$, reversible evolution) or Hermitian idempotent ($\tilde\Pi^2 = \tilde\Pi = \tilde\Pi^{*}$, the projective two-sided operator). The Born rule is the normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as the trace $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$. The $*$-unitary evolution produces no definite outcome; the idempotent two-sided operator produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the $*$-unitary case.
 
 Decoherence, in the framework's worked dephasing model, is the channel $Ξ_{\mathrm{deph},p}$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{Ϛ}_{\Psi,d} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$, which, for a state $\tilde{Ϛ}_{\Psi}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
 
@@ -250,14 +250,14 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
-| $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian observable |
+| $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi$ | Hermitian observable |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
-| $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
+| $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $p_\pm = \langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})$ | Outcome probabilities (trace at normalisation) |
 | $\vec u_\Psi = \vec r_\Psi/\|\vec r_\Psi\|$, $\vec u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}) = \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$ | Conjugation; $*$-unitary evolution (when $\tilde Q_3\tilde Q_3^{*}=e_t$) or projective two-sided operator ($\tilde{Q}_3 = \tilde\Pi_{1,2}$) |
-| $\tilde Q_3=\tilde R_\Psi_{\mathrm{pos}}\tilde Q_{p}$, $\tilde R_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$ | Polar form of the acting element; $\tilde R_\Psi_{\mathrm{pos}}\ge0$, $\tilde Q_{p}$ a partial isometry |
-| $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=\tilde R_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde R_\Psi_{\mathrm{pos}}$ | $*$-Unitary backaction followed by the positive filter |
+| $\tilde Q_3=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}$, $\tilde H_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$ | Polar form of the acting element; $\tilde H_\Psi_{\mathrm{pos}}\ge0$, $\tilde Q_{p}$ a partial isometry |
+| $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_\Psi_{\mathrm{pos}}$ | $*$-Unitary backaction followed by the positive filter |
 | $\tilde Q_3\tilde Q_3^{*} = e_t$ | $*$-Unitary element (reversible evolution) |
 | $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} = \tilde\Pi_{1,2}^{*}$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{Ϛ}_{\Psi,d} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Fully dephased state (pointer-diagonal) |

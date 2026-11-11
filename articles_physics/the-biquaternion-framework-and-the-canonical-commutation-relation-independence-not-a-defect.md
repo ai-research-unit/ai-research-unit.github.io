@@ -49,11 +49,11 @@ There is a finite criterion hiding in the same place, and it must not be confuse
 
 In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word *independent*.
 
-**Theorem.** There are no $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\lambda\,i\,e_t$.
+**Theorem.** There are no $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$.
 
-**Proof.** Write $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
-\boxed{\;\mathrm{Sc}\bigl([\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]\bigr)=0\;}.
+\boxed{\;\mathrm{Sc}\bigl([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]\bigr)=0\;}.
 $$
 The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
@@ -186,7 +186,7 @@ The claim must not be overread, and the following are not asserted.
 
 | Item | Status |
 |---|---|
-| $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
+| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
 | Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | A bounded pair satisfying the relation, at any dimension | Impossible; $[Q,P^n]=i\,\hbar\,nP^{n-1}$ forces $2\lVert Q\rVert\lVert P\rVert\ge \hbar\,n$ for every $n$ |
@@ -238,7 +238,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
+| $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
 | $[Q,P]=i\,\hbar\,I$ | Canonical commutation relation |
 | $\pi_\eta=p_\eta-ϙA_\eta$ | Mechanical momentum |
 | $[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ | Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$ |

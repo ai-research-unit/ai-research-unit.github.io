@@ -399,17 +399,36 @@ So the construction multiplies the modulus of every coefficient by $\sqrt2$ and 
 
 **The catalogue, built.** Each row has three objects, and the columns follow the order in which they are defined. The first is the material glyph $\tilde X_\Phi$. The second is its **sibling**, the switch image $\tilde X_\Psi=i\tilde X_\Phi$, a sector element of the informational sector. The third is the **mirror biquaternion** $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi$, one element built by one multiplication, whose two projections are the first and the second. The fourth column says what the sibling's reading makes of it.
 
-The third column is not assembled from the first two and is not their sum: it is written once, with its temporal coefficient multiplied by $i(1+i)=i-1$ and its three spatial coefficients by $1\cdot(1+i)=1+i$. Five material glyphs are built, the four four-vectors of the catalogue whose sibling is the glyph catalogued beside them, and the observable $\tilde H_\Psi$, whose material member is derived rather than catalogued.
+The first two columns carry each element twice, and the order of the two spellings follows the subscript of the glyph. A material glyph
+$\tilde X_\Phi$ is written in the coordinates of $\mathbb{B}_{\Phi}$ first and equated to its form in the coordinates of $\mathbb{B}_{\Psi}$; a
+sibling $\tilde X_\Psi$ is written in the coordinates of $\mathbb{B}_{\Psi}$ first and equated to its form in those of $\mathbb{B}_{\Phi}$. The
+dictionary between the two spellings is one line,
+$$x_t=-x'_t,\qquad \vec x'_\Psi=\vec x_\Phi,$$
+where $\vec x'_\Psi=x'_x\vec e_x+x'_y\vec e_y+x'_z\vec e_z$ is the space part in the informational reading and
+$\vec x_\Phi=x_x\vec e_x+x_y\vec e_y+x_z\vec e_z$ the same three real numbers in the material reading. The prime marks where the reading puts the
+imaginary unit, not a different number: it stands on the time coefficient in the material spelling and on the space coefficients in the
+informational one. Nothing is renamed and nothing is rescaled; the switch moves the $i$ from the time slot to the three space slots.
 
-| Material glyph $\tilde X_\Phi$ | Sibling $\tilde X_\Psi=i\tilde X_\Phi$ | Mirror biquaternion, built | What the sibling's reading makes of it |
+The third column is not assembled from the first two and is not their sum: it is written once, with its temporal coefficient multiplied by $i(1+i)=i-1$ and its three spatial coefficients by $1\cdot(1+i)=1+i$. Six material glyphs are built: the four four-vectors of the catalogue whose sibling is the glyph catalogued beside them, the material position, whose sibling is an observable, and the observable $\tilde H_\Psi$, whose material member is derived rather than catalogued.
+
+| Material glyph $\tilde X_\Phi$, material coordinates then informational | Sibling $\tilde X_\Psi=i\tilde X_\Phi$, informational coordinates then material | Mirror biquaternion, built | What the sibling's reading makes of it |
 | --- | --- | --- | --- |
-| $\tilde P_\Phi=i(E/c)e_t+\vec p_\Phi$ | $\tilde P_\Psi=-(E/c)e_t+i\vec p_\Phi$ | $\tilde P_{\mathrm{mir}}=(i-1)(E/c)e_t+(1+i)\vec p_\Phi$ | real spectrum $\{-(E/c\pm\lvert\vec p_\Phi\rvert)\}$, norm $+m^{2}c^{2}$ |
-| $\tilde K_\Phi=ik'_te_t+\vec k_\Phi$ | $\tilde K_\Psi=-k'_te_t+i\vec k_\Phi$ | $\tilde K_{\mathrm{mir}}=(i-1)k'_te_t+(1+i)\vec k_\Phi=\tilde P_{\mathrm{mir}}/\hbar$ | the same reading in inverse lengths |
-| $\tilde J_\Phi=ic\rho\,e_t+\vec J_\Phi$ | $\tilde J_\Psi=-c\rho\,e_t+i\vec J_\Phi$ | $\tilde J_{\mathrm{mir}}=(i-1)c\rho\,e_t+(1+i)\vec J_\Phi$ | form $c^{2}\rho^{2}+\lvert\vec J_\Phi\rvert^{2}>0$, density real, current imaginary |
-| $\tilde A_\Phi=ia'_te_t+\vec A_\Phi$ | $\tilde A_\Psi=-a'_te_t+i\vec A_\Phi$ | $\tilde A_{\mathrm{mir}}=(i-1)a'_te_t+(1+i)\vec A_\Phi$ | a Hermitian connection, minimal coupling preserved |
-| $\tilde H_\Phi=ih'_te_t+\vec h_\Psi$ | $\tilde H_\Psi=-h'_te_t+i\vec h_\Psi$ | $\tilde H_{\mathrm{mir}}=(i-1)h'_te_t+(1+i)\vec h_\Psi$ | the observable itself, of real spectrum; its scalar coefficient is $h_t=-h'_t$ |
+| $\tilde R_\Phi=ir'_te_t+\vec r_\Phi=-ir_te_t+\vec r'_\Psi$ | $\tilde R_\Psi=r_te_t+i\vec r'_\Psi=-r'_te_t+i\vec r_\Phi$ | $\tilde R_{\mathrm{mir}}=(i-1)r'_te_t+(1+i)\vec r_\Phi$ | the observable of the material position, $h_t=r_t=-r'_t$ and $\vec h'_\Psi=\vec r'_\Psi=\vec r_\Phi$ |
+| $\tilde P_\Phi=ip'_te_t+\vec p_\Phi=-ip_te_t+\vec p'_\Psi$, $p'_t=E/c$ | $\tilde P_\Psi=p_te_t+i\vec p'_\Psi=-p'_t\,e_t+i\vec p_\Phi$ | $\tilde P_{\mathrm{mir}}=(i-1)p'_te_t+(1+i)\vec p_\Phi$ | real spectrum $\{p_t\pm\lvert\vec p_\Phi\rvert\}=\{-(p'_t\mp\lvert\vec p_\Phi\rvert)\}$, norm $+m^{2}c^{2}$ |
+| $\tilde K_\Phi=ik'_te_t+\vec k_\Phi=-ik_te_t+\vec k'_\Psi$, $k'_t=E/(\hbar c)$ | $\tilde K_\Psi=k_te_t+i\vec k'_\Psi=-k'_t\,e_t+i\vec k_\Phi$ | $\tilde K_{\mathrm{mir}}=(i-1)k'_te_t+(1+i)\vec k_\Phi=\tilde P_{\mathrm{mir}}/\hbar$ | the same reading in inverse lengths |
+| $\tilde J_\Phi=ij'_te_t+\vec J_\Phi=-ij_te_t+\vec J'_\Psi$, $j'_t=c\rho$ | $\tilde J_\Psi=j_te_t+i\vec J'_\Psi=-j'_t\,e_t+i\vec J_\Phi$ | $\tilde J_{\mathrm{mir}}=(i-1)j'_te_t+(1+i)\vec J_\Phi$ | form $c^{2}\rho^{2}+\lvert\vec J_\Phi\rvert^{2}>0$, density real, current imaginary |
+| $\tilde A_\Phi=ia'_te_t+\vec A_\Phi=-ia_te_t+\vec A'_\Psi$ | $\tilde A_\Psi=a_te_t+i\vec A'_\Psi=-a'_t\,e_t+i\vec A_\Phi$ | $\tilde A_{\mathrm{mir}}=(i-1)a'_te_t+(1+i)\vec A_\Phi$ | a Hermitian connection, minimal coupling preserved |
+| $\tilde H_\Phi=ih'_te_t+\vec h_\Phi=-ih_te_t+\vec h'_\Psi$, $h'_t=-h_t$ | $\tilde H_\Psi=h_te_t+i\vec h'_\Psi=-h'_t\,e_t+i\vec h_\Phi$ | $\tilde H_{\mathrm{mir}}=(i-1)h'_te_t+(1+i)\vec h_\Phi$ | the observable itself, of real spectrum; its scalar coefficient is $h_t=-h'_t$ |
 
-The five rows are one switch applied to five objects, and each sibling is the glyph catalogued on its own. The observable is the one row written from the informational side: its material member $\tilde H_\Phi=-i\tilde H_\Psi$ carries the time coefficient $ih'_t$ with $h'_t=-h_t$, so the sign of the material time coefficient is the one the switch has already given it, and the four numbers of the row are the four of $\tilde H_\Psi$. The position is the one material glyph not built here: its sibling $i\tilde R_\Phi=-r'_te_t+i\vec r_\Phi$ is not the catalogued $\tilde R_\Psi$, which is the general Hermitian observable, so the two are different objects that share a letter and the table has no row for it.
+**The pair in one line.** The six rows are one pair of formulas, written in the two spellings with the order the glyphs demand,
+$$\tilde X_\Phi=ix'_te_t+\vec x_\Phi=-ix_te_t+\vec x'_\Psi,
+\qquad
+\tilde X_\Psi=x_te_t+i\vec x'_\Psi=-x'_te_t+i\vec x_\Phi,$$
+with $x_t=-x'_t$ and $\vec x'_\Psi=\vec x_\Phi$. The switch is exact on all six, $i\tilde X_\Phi=\tilde X_\Psi$, and the two sectors differ only in the slot that carries the $i$: the material glyph
+puts it on the time coefficient, the sibling on the three space coefficients. That is the whole of the material and informational distinction at the
+level of one catalogue entry.
+
+The six rows are one switch applied to six objects, and each sibling is the glyph catalogued on its own. The observable is the one row written from the informational side: its material member $\tilde H_\Phi=-i\tilde H_\Psi$ carries the time coefficient $ih'_t$ with $h'_t=-h_t$, so the sign of the material time coefficient is the one the switch has already given it, and the four numbers of the row are the four of $\tilde H_\Psi$. The position is the first row and the only one whose sibling is not a catalogued four-vector: $i\tilde R_\Phi=-r'_te_t+i\vec r_\Phi$ is a Hermitian element, so it is an observable, $\tilde H_\Psi$ read with $h_t=-r'_t$ and $\vec h'_\Psi=\vec r'_\Psi=\vec r_\Phi$.
 
 The construction is real-linear in its source, $(1+i)(\lambda\tilde X_\Phi)=\lambda\tilde X_{\mathrm{mir}}$ for real $\lambda$, so a change of units and a change of $\hbar$ cost nothing: the wave number's mirror biquaternion is the four-momentum's divided by $\hbar$, and no new formula is needed. It is also insensitive to the object: the rows differ in their coefficients, not in their arithmetic, and a reader who has built one has built them all.
 
@@ -457,10 +476,10 @@ with the imaginary time coefficient and the three real space coefficients. Its n
 The informational reading is the reading of an element of $\mathbb{B}_{\Psi}$,
 
 $$
-\tilde R_\Psi=r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr),
+\tilde H_\Psi=r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr),
 $$
 
-with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Its trace is the temporal coefficient, and on a state normalised to one it reads $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the trace pairing $\operatorname{Tr}(\tilde{Ϛ}_\Psi\tilde R_\Psi^{*})=2\langle\tilde{Ϛ}_\Psi,\tilde R_\Psi\rangle_{*}$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.
+with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Its trace is the temporal coefficient, and on a state normalised to one it reads $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the trace pairing $\operatorname{Tr}(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_\Psi,\tilde H_\Psi\rangle_{*}$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.
 
 ## The Switch at Work
 
@@ -530,58 +549,64 @@ A real rescaling applied after the switch sets the trace of the state to one; th
 
 ### The Schrödinger Equation
 
-The equation has two writings, and the members of a mirror pair stand in them. In biquaternionic form, with $\tilde\Xi_{\mathrm{sp}}$ the spinor-valued field and $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ the observable,
+The equation has two writings, and the members of a mirror pair stand in them. In biquaternionic form, with $\tilde\Xi_{\mathrm{sp}}$ the spinor-valued field and $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ the observable,
 
 $$
-\boxed{\;i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde R_\Psi\,\tilde\Xi_{\mathrm{sp}}\;}.
+\boxed{\;i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde H_\Psi\,\tilde\Xi_{\mathrm{sp}}\;}.
 $$
 
 Multiply on the left by $-i$ and divide by the real central scalar $\hbar c$, which keeps every element in its sector,
 
 $$
-\boxed{\;\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde G_\Phi\,\tilde\Xi_{\mathrm{sp}},
+\boxed{\;\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\frac{1}{\hbar c}\,\tilde H_\Phi\,\tilde\Xi_{\mathrm{sp}},
 \qquad\qquad
-\tilde G_\Phi=-\frac{i}{\hbar c}\,\tilde R_\Psi\;},
+\tilde H_\Phi=-i\,\tilde H_\Psi\;},
 $$
 
-with $\tilde G_\Phi\in\mathbb{B}_{\Phi}$: the generator is the mirror of the observable, times one real scalar. Written as a mirror pair, the two writings name the two members,
+with $\tilde H_\Phi\in\mathbb{B}_{\Phi}$: the generator is the mirror of the observable, and the division by the real scalar $\hbar c$ is written
+beside it. Written as a mirror pair, the two writings name the two members,
 
 $$
-i\,\bigl(\hbar c\,\tilde G_\Phi\bigr)=\tilde R_\Psi,
+i\,\tilde H_\Phi=\tilde H_\Psi,
 \qquad\qquad
-\hbar c\,\tilde G_\Phi\in\mathbb{B}_{\Phi},\qquad \tilde R_\Psi\in\mathbb{B}_{\Psi},
+\tilde H_\Phi\in\mathbb{B}_{\Phi},\qquad \tilde H_\Psi\in\mathbb{B}_{\Psi},
 $$
 
-and the mirror biquaternion $\hbar c\,\tilde G_\Phi+\tilde R_\Psi$ is one element whose two parts are the two writings. That is the clearest case in the corpus of what the class is for: the equation is one, its two sides are read in the two sectors, and the pair that carries them is a mirror pair.
+and the mirror biquaternion $\tilde H_\Phi+\tilde H_\Psi=\left(1-i\right)\tilde H_\Psi$ is one element whose two parts are the two writings. That is the clearest case in the corpus of what the class is for: the equation is one, its two sides are read in the two sectors, and the pair that carries them is a mirror pair.
 
 The two writings are not two equations. The first names the observable and reads the dynamics through the $i$ that stands in the coefficient; the second names the generator and places it in the material sector, the sector of the four-vectors. The multiplicativity of the switch is what allows the second form: every term of the first is multiplied by the same central scalar, so the equality survives, and the derivative is not touched because $-i$ is a constant.
 
-**The two members of the pair take their own glyphs.** When the informational element is read as an observable, the corpus writes it with the letter of the observable, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$, and its image under the switch is the second glyph,
+**The two members of the pair take their own glyphs.** When the informational element is read as an observable, the corpus writes it with the letter of
+the observable, and the two spellings of the pair are the ones the table fixes,
 
 $$
-\tilde H_\Phi=-i\,\tilde H_\Psi=-i\,h_t\,e_t+h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z=i\,h'_t\,e_t+\vec h_\Psi,
-\qquad h'_t:=-h_t .
+\tilde H_\Psi=h_t\,e_t+i\vec h'_\Psi=-h'_t\,e_t+i\vec h_\Phi,
+\qquad
+\tilde H_\Phi=i\,h'_t\,e_t+\vec h_\Phi=-i\,h_t\,e_t+\vec h'_\Psi,
 $$
 
-The switch moves the $i$ from the three space slots onto the time slot and renames nothing: the four numbers are the same four, and the primes stay where the informational reading puts them. In these letters the two writings of the equation are $\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Phi\tilde\Xi_{\mathrm{sp}}$ and $i\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, the second being the first multiplied by $-i$. The present article writes the same pair as $\tilde R_\Psi$ and $\tilde G_\Phi$, with $\tilde H_\Psi=\tilde R_\Psi$ and $\hbar c\,\tilde G_\Phi=\tilde H_\Phi$, so the two namings differ only in the letter of the reading, $r$ for the coordinate and $h$ for the observable, and in the position of the real scale $\hbar c$, which the second writing carries inside the glyph. The pair is not the split: $\tilde H_\Phi$ is not the material part of $\tilde H_\Psi$ but the image of the whole of it, and the two share four numbers where $\tilde R_\Phi$ and $\tilde R_\Psi$ share a letter and nothing else. Their sum is one element of $\mathbb{M}$, $\tilde H_\Phi+\tilde H_\Psi=(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$, the mirror biquaternion of the pair.
+with $h'_t:=-h_t$, and with $\vec h_\Phi=h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ equal to $\vec h'_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$ component
+by component. The switch moves the $i$ from the three space slots onto the time slot and renames nothing: the four numbers are the same four, and the
+primes stay where the informational reading puts them. Where the observable stands alone in the other articles the same space part is written
+$\vec h_\Psi$ with the primed components; here the prime is carried by the symbol, so that the two readings of one row can be told apart. In these letters the two writings of the equation are $\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Phi\tilde\Xi_{\mathrm{sp}}$ and $i\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, the second being the first multiplied by $-i$. The Schrödinger article writes the same pair: $\tilde H_\Psi$ is the same element in both, and the generator is $\tilde H_\Phi/\hbar c$ with $\tilde H_\Phi=-i\tilde H_\Psi$, the mirror of the observable over one real scale. The pair is not the split: $\tilde H_\Phi$ is not the material part of $\tilde H_\Psi$ but the image of the whole of it, and the two share all four numbers, where $\tilde R_\Phi$ and $\tilde H_\Psi$ are two different objects: the material position and the observable. Their sum is one element of $\mathbb{M}$, $\tilde H_\Phi+\tilde H_\Psi=(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$, the mirror biquaternion of the pair.
 
 The two readings of the one equation are exact mirror statements. The observable is Hermitian and its spectrum is real, and its eigenvalues are frequencies. The generator is anti-Hermitian and its spectrum is imaginary, and its eigenvalues are rates,
 
 $$
-\lambda(\tilde G_\Phi)=-\frac{i}{\hbar c}\,\lambda(\tilde R_\Psi),
+\lambda\!\left(\frac{\tilde H_\Phi}{\hbar c}\right)=\frac{1}{\hbar c}\,\lambda(\tilde H_\Phi)=-\frac{i}{\hbar c}\,\lambda(\tilde H_\Psi),
 $$
 
 so a frequency $\omega_n$ is read as the rate $-i\omega_n$ in the second writing. The trace is multiplied by $-i/\hbar c$ and the norm changes sign,
 
 $$
-\operatorname{Tr}\tilde G_\Phi=-\frac{i}{\hbar c}\operatorname{Tr}\tilde R_\Psi,
+\operatorname{Tr}\frac{\tilde H_\Phi}{\hbar c}=-\frac{i}{\hbar c}\operatorname{Tr}\tilde H_\Psi,
 \qquad\qquad
-\langle\tilde G_\Phi\rangle_{\natural}=-\frac{1}{(\hbar c)^{2}}\langle\tilde R_\Psi\rangle_{\natural},
+\left\langle\frac{\tilde H_\Phi}{\hbar c}\right\rangle_{\natural}=\frac{1}{(\hbar c)^{2}}\langle\tilde H_\Phi\rangle_{\natural}=-\frac{1}{(\hbar c)^{2}}\langle\tilde H_\Psi\rangle_{\natural},
 $$
 
 so the discriminant that is non-negative on the state is non-positive on the generator. That is the corpus's pair of discriminants, reached here from the switch rather than assumed. The derivation of the equation, the uniqueness of the scalar imaginary and the missing transformation law of the generator are owned by *The Schrödinger Equation in Biquaternionic Form*, and the article cites them.
 
-**The density-matrix companion.** The same construction applies to the state operator. The von Neumann equation has the observable inside a commutator, $\partial_{r'_t}\tilde\varrho_\Psi=-i[\tilde R_\Psi,\tilde\varrho_\Psi]/(\hbar c)$, and the $i$ in front is again the switch: it carries the anti-Hermitian commutator of two Hermitian elements back into the informational sector. Written with the generator it is $\partial_{r'_t}\tilde\varrho_\Psi=[\tilde G_\Phi,\tilde\varrho_\Psi]$, and the bracket of an anti-Hermitian element with a Hermitian one is Hermitian, so the flow stays in the sector of states. The companion article on the density-matrix form treats the same equation; the two members of the pair apply to that version as well.
+**The density-matrix companion.** The same construction applies to the state operator. The von Neumann equation has the observable inside a commutator, $\partial_{r'_t}\tilde\varrho_\Psi=-i[\tilde H_\Psi,\tilde\varrho_\Psi]/(\hbar c)$, and the $i$ in front is again the switch: it carries the anti-Hermitian commutator of two Hermitian elements back into the informational sector. Written with the generator it is $\partial_{r'_t}\tilde\varrho_\Psi=\frac{1}{\hbar c}[\tilde H_\Phi,\tilde\varrho_\Psi]$, and the bracket of an anti-Hermitian element with a Hermitian one is Hermitian, so the flow stays in the sector of states. The companion article on the density-matrix form treats the same equation; the two members of the pair apply to that version as well.
 
 ### The Commutator of Two Observables
 
@@ -675,7 +700,7 @@ On the mirror biquaternion the two invariants take fixed factors, $\langle\tilde
 
 The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients it is exact for every glyph of the catalogue, with the material coefficient imaginary on the temporal slot and real on the three spatial ones, and the mirror coefficient real on the temporal slot and imaginary on the three spatial ones. At the level of an operator the article claims nothing: the differentiation operators of the corpus, their slices and their conjugates are defined and read in *Operator and Calculus Conventions*, §*The Gradient*, and this article does not rebuild them.
 
-The construction is applied to the catalogue, and five objects are built: $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$ and $\tilde H_{\mathrm{mir}}=\tilde H_\Phi+\tilde H_\Psi=(1-i)\tilde H_\Psi$, the last read from the informational side. Each is $(1+i)$ times a material glyph, built in one multiplication, with the temporal coefficient multiplied by $i-1$ and the three spatial coefficients by $1+i$; the split of each then returns the material glyph and that glyph's mirror. The position is left out, its sibling not being the catalogued $\tilde R_\Psi$, and the mass $\Rho=imc$ is the central case, $\Rho_{\mathrm{mir}}=(i-1)mc$, in which nothing is moved because there is no vector part for the $i$ to arrive on.
+The construction is applied to the catalogue, and six objects are built: $\tilde R_{\mathrm{mir}}$, $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$ and $\tilde H_{\mathrm{mir}}=\tilde H_\Phi+\tilde H_\Psi=(1-i)\tilde H_\Psi$, the last read from the informational side. Each is $(1+i)$ times a material glyph, built in one multiplication, with the temporal coefficient multiplied by $i-1$ and the three spatial coefficients by $1+i$; the split of each then returns the material glyph and that glyph's mirror. The position is the row whose sibling is an observable rather than a four-vector, and the mass $\Rho=imc$ is the central case, $\Rho_{\mathrm{mir}}=(i-1)mc$, in which nothing is moved because there is no vector part for the $i$ to arrive on.
 
 Two instances are worked in full. The element and its mirror come first, where the mirrored four-momentum has a real energy coefficient and a real spectrum. The Schrödinger equation comes second, and its two writings name an observable and a generator that are themselves a mirror pair up to the real factor $\hbar c$. The mirror glyphs, the preparation dictionary, the quantum commutator, the interaction insertion and the thermal weight are five further instances, and each shows the switch supplying a structure that a real coefficient needs.
 
@@ -693,17 +718,17 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 | Phy–Psy switch | multiplication of the whole element by the central $i$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ |
 | mirror, also called **sibling** | the image of a sector element, $\tilde X_\Psi=i\tilde X_\Phi$; a **mirror pair** is $\tilde X_\Phi$ and $\tilde X_\Psi$ |
 | $\tilde X_{\mathrm{mir}}$ | the **mirror biquaternion**, $(1+i)\tilde X_\Phi$, one element whose coefficients are $(i-1)x'_t$ on the temporal slot and $(1+i)x_\eta$ on the three spatial ones; its two projections are the pair |
-| $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$, $\tilde H_{\mathrm{mir}}$ | the mirror biquaternions of the catalogue, $(1+i)$ times the material glyph: temporal coefficient times $i-1$, each spatial coefficient times $1+i$; for the observable, $(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$ |
+| $\tilde R_{\mathrm{mir}}$, $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$, $\tilde H_{\mathrm{mir}}$ | the mirror biquaternions of the catalogue, $(1+i)$ times the material glyph: temporal coefficient times $i-1$, each spatial coefficient times $1+i$; for the observable, $(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$ |
 | $\mathbb{M}$ | the class of mirror biquaternions, a real four-dimensional subspace, $\tilde Q_\Psi=i\tilde Q_\Phi$ or $\tilde Q^{*}=i\tilde Q$ |
-| $\tilde R_\Phi=i r'_t\,e_t+\vec r$ | a material element, imaginary time and real space; its sibling is not the catalogued $\tilde R_\Psi$ |
-| $\tilde R_\Psi=r_t\,e_t+i\vec r$ | an informational element, real time and imaginary space; the general Hermitian observable, not the sibling of $\tilde R_\Phi$ |
+| $\tilde R_\Phi=i r'_t\,e_t+\vec r$ | the material position, imaginary time and real space; its sibling $-r'_te_t+i\vec r$ is an observable, $\tilde H_\Psi$ with $h_t=-r'_t$ |
+| $\tilde H_\Psi=r_t\,e_t+i\vec r$ | the informational element, real time and imaginary space; the general Hermitian observable, which is the sector's glyph and not a switch image |
 | $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\tilde Q$ | the trace, twice the scalar part |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the determinant, the interval |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |
 | $\lambda_{\pm}$ | the eigenvalue pair, imaginary on $\mathbb{B}_{\Phi}$ and real on $\mathbb{B}_{\Psi}$ |
-| $\tilde G_\Phi=-\frac{i}{\hbar c}\tilde R_\Psi$ | the generator, the mirror of the observable of the Schrödinger equation, $i(\hbar c\tilde G_\Phi)=\tilde R_\Psi$ |
-| $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | the informational element read as an observable, $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$; the same element as $\tilde R_\Psi$, with the coefficient letters of the reading |
-| $\tilde H_\Phi=-i\,\tilde H_\Psi=i\,h'_t\,e_t+\vec h_\Psi$ | its mirror in $\mathbb{B}_{\Phi}$, $h'_t=-h_t$; equal to $\hbar c\,\tilde G_\Phi$, and $\tilde H_\Psi=i\,\tilde H_\Phi$ |
+| $\tilde H_\Phi/\hbar c$ | the generator of the Schrödinger equation: the mirror of the observable over one real scale, $i\tilde H_\Phi=\tilde H_\Psi$ |
+| $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | the informational element read as an observable, $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$; the same element as $\tilde H_\Psi$, with the coefficient letters of the reading |
+| $\tilde H_\Phi=-i\,\tilde H_\Psi=i\,h'_t\,e_t+\vec h_\Psi$ | its mirror in $\mathbb{B}_{\Phi}$, $h'_t=-h_t$; the numerator of the generator, and $\tilde H_\Psi=i\,\tilde H_\Phi$ |
 | $\tilde P_\Phi=i(E/c)e_t+\vec p$ | the four-momentum, material reading |
 | $\tilde P_\Psi=i\tilde P_\Phi$ | the mirror of the four-momentum, Hermitian, real spectrum $\{-(p'_t\pm\lvert\vec p_\Phi\rvert)\}$ |
 | $\tilde K_\Psi=i\tilde K_\Phi=\tilde P_\Psi/\hbar$, $\tilde J_\Psi=i\tilde J_\Phi$, $\tilde A_\Psi=i\tilde A_\Phi$ | the mirrors of the wave number, the current and the connection; the connection's mirror carries the real coefficients of the coupling untouched, $i(\frac{i\,ϙ}{\hbar}\tilde A_\Phi)=\frac{i\,ϙ}{\hbar}\tilde A_\Psi$ |

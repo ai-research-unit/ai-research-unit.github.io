@@ -51,12 +51,12 @@ with $c$ the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ i
 The two ends of the table are the two coordinates of the framework,
 
 $$
-\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,\qquad \tilde R_\Psi=r_t\,e_t+i\bigl(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z\bigr),
+\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,\qquad \tilde H_\Psi=r_t\,e_t+i\bigl(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z\bigr),
 $$
 
-the **material coordinate** $\tilde R_\Phi$, with an imaginary time and a real space, and the **informational coordinate** $\tilde R_\Psi$, with a real time and an imaginary space.
+the **material coordinate** $\tilde R_\Phi$, with an imaginary time and a real space, and the **informational element** $\tilde H_\Psi$, the observable of that sector, with a real time and an imaginary space.
 
-**One element, one point, one label.** Every coefficient contributes exactly one real number to each writing, so one element of $\mathbb{B}$ carries a material four-coordinate and an informational four-coordinate at the same time. The element splits as $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$, and the two coordinates are its parts. Read on its material part, the element is a spacetime event, $\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and its informational part $\tilde R_\Psi$ supplies the four parameters of its **internal label**; read on its informational part, it is a point of the state side, $\tilde R_\Psi=r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and its material part $\tilde R_\Phi$ supplies the four parameters of its **spacetime label**. No coefficient is idle, and this is why one element can carry both a four-vector and a state-side label.
+**One element, one point, one label.** Every coefficient contributes exactly one real number to each writing, so one element of $\mathbb{B}$ carries a material four-coordinate and an informational four-coordinate at the same time. The element splits as $\tilde Q=\tilde H_\Psi+\tilde R_\Phi$, and the two coordinates are its parts. Read on its material part, the element is a spacetime event, $\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and its informational part $\tilde H_\Psi$ supplies the four parameters of its **internal label**; read on its informational part, it is a point of the state side, $\tilde H_\Psi=r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and its material part $\tilde R_\Phi$ supplies the four parameters of its **spacetime label**. No coefficient is idle, and this is why one element can carry both a four-vector and a state-side label.
 
 **Why the material time is imaginary.** The factor $i$ in $i r'_t$ is what makes the temporal displacement count with the opposite sign to the spatial ones, because $i^2=-1$. With $r'_t$ real in the time slot the material sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the complex structure on the time coordinate, not an independent axiom.
 
@@ -310,7 +310,7 @@ The article interprets the linear structure, the involutions, the four real-type
 | $\mathbb{B}_{C}$, $\mathbb{B}_{V}$ | the centre and the vector subspace |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | the quaternion and anti-quaternion subspaces |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian and anti-Hermitian subspaces |
-| $\tilde R_\Psi$, $\tilde R_\Phi$ | the informational and material parts of an element, $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$ |
+| $\tilde H_\Psi$, $\tilde R_\Phi$ | the informational and material parts of an element, $\tilde Q=\tilde H_\Psi+\tilde R_\Phi$ |
 | $A_1,A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
 | $B_1,B_2$ | the real and imaginary vector blocks |
 | $r_t$, $i r'_t$ | the informational and material times |

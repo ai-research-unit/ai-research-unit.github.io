@@ -16,7 +16,7 @@ The unifying statement is that the zero divisor locus is a **kinematic boundary*
 
 The article is organised as follows. The second section recalls the algebraic criterion and classification, as input from the mathematics articles, and locates the cone in each real subspace. The third section treats the momentum-space image and the non-relativistic dispersion. The fourth treats the configuration-space image: the turning surfaces and the caustics. The fifth treats the state-space image and the invariance of the locus under the flow. The sixth collects what stops at the locus. The closing sections are the open questions, the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a complex-linear form; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ are the centre and the real-quaternion subspace; the material coordinate is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$; and $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$. The state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a complex-linear form; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ are the centre and the real-quaternion subspace; the material coordinate is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$; and $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$. The state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$.
 
 ## The Algebraic Locus
 
@@ -280,7 +280,7 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle
 | $\Delta_{\mathrm{vV}}$ | Van Vleck determinant; singular at caustics |
 | $\vec r=(2\mathrm{Re}(\alpha\bar\beta),2\mathrm{Im}(\alpha\bar\beta),|\alpha|^2-|\beta|^2)$ | Bloch vector; $|\vec r|=1$ for pure states |
 | $\flat=-{}^{*}$ | The algebra's real structure |
-| $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$ | Trace convention |
+| $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace convention |
 
 ## Further Reading
 

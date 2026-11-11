@@ -103,7 +103,7 @@ The decomposition $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a p
 
 *The Partition Function in Biquaternionic Form* reaches a definite and honest set of results, and its boundary is exactly where cosmology needs it to continue.
 
-For a Hermitian Hamiltonian $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
+For a Hermitian Hamiltonian $\tilde H_\Psi = r_t\,e_t + i\vec r_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
 
 $$
 Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta r_t)\cosh\left(\beta|\vec r_\Psi|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,

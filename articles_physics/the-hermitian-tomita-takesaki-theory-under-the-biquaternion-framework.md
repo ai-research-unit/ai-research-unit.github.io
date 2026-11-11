@@ -201,9 +201,9 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldo
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $r'_t$ with generic $\tilde{Q}_3,\tilde Q_1$: $F_{AB}(r'_t+i)$ agrees with $\omega(\sigma_{-r'_t}(B)A)$ and with $F_{BA}(-r'_t)$ to machine precision, and the flow identities hold to the same order.
 
-A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde R_\Psi=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
+A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H_\Psi=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
-\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde R_\Psi+(\log Z)e_t,
+\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H_\Psi+(\log Z)e_t,
 $$
 with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $H_{\mathrm{modular}}=\beta H+\log Z\,e_t$ and with that article's partition function.
 
@@ -225,7 +225,7 @@ for which
 $$
 \Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_{r'_{t}}=\mathrm{id} :
 $$
-the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/\mathrm{Tr}(\exp(-\beta H))$ with $\tilde R_\Psi\in\mathbb{B}_{\Psi}$, and for those $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
+the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/\mathrm{Tr}(\exp(-\beta H))$ with $\tilde H_\Psi\in\mathbb{B}_{\Psi}$, and for those $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
 
 ## The Type of the Algebra and Inner Versus Outer Modular Flow
 
@@ -266,7 +266,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 - $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
 - $\Delta(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}}$, $\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}/2}$, $J(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2}$, $\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}$.
 - $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
-- $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, and for the thermal single mode $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$, matching the parent and partition-function articles.
+- $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, and for the thermal single mode $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}_{\Psi}^{ir'_t}\in\mathbb{B}$.
 
 **Interpretation.**

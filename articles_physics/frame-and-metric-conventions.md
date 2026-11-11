@@ -88,7 +88,7 @@ Each column uses its own coordinate; the $\mathbb{B}$ column is the general fram
 
 **The $i$ is never put into the metric.** The one metric, $\delta_{\mu\nu}$, has real coefficients everywhere. What changes is which coordinate carries the $i$: on the material case it is $Q_t$, in the $\mathbb{B}_{\Phi}$ frame it is none. A metric with an $i$ in it is not a metric of this series.
 
-**The substitution is the material one.** $Q_t=i r'_t$ is made on $\mathbb{B}_{\Phi}$. The informational sector has real time and imaginary space, $\tilde R_\Psi=r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and it is not obtained by the same substitution. An article that writes both sectors states which coordinate belongs to which.
+**The substitution is the material one.** $Q_t=i r'_t$ is made on $\mathbb{B}_{\Phi}$. The informational sector has real time and imaginary space, $\tilde H_\Psi=r_t\,e_t+i(r'_{x}\vec e_x+r'_{y}\vec e_y+r'_{z}\vec e_z)$, and it is not obtained by the same substitution. An article that writes both sectors states which coordinate belongs to which.
 
 ## The Clifford Map
 

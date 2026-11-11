@@ -206,7 +206,7 @@ a two-dimensional commutative ${}^{*}$-subalgebra of $\mathbb{B}$, isomorphic to
 4. **Module property:** $Ξ_{\mathrm{deph},1}(\tilde{Q}_3\tilde{Q}\tilde{Q}_1) = \tilde{Q}_3\,Ξ_{\mathrm{deph},1}(\tilde{Q})\,\tilde{Q}_1$ for all $\tilde{Q}_3, \tilde{Q}_1 \in A$.
 5. **Self-adjointness for the trace pairing:** $\mathrm{Tr}(Ξ_{\mathrm{deph},1}(\tilde{Q})\,\tilde{Q}_3) = \mathrm{Tr}(\tilde{Q}\,\tilde{Q}_3)$ for all $\tilde{Q}_3 \in A$.
 
-Properties 1–5 are the defining properties of the **trace-preserving conditional expectation** onto $A$. Because the trace pairing $\mathrm{Tr}(\tilde R_\Psi\tilde{Q}) = 2(r_t\,Q_t + \vec r_\Psi\cdot\vec Q)$ is positive definite on $\mathbb{B}_{\Psi}$, property 5 says that, restricted to Hermitian elements, $Ξ_{\mathrm{deph},1}$ is exactly the **orthogonal projection** of $\mathbb{B}_{\Psi}$ onto the Hermitian part of $A$, namely $\mathrm{span}_{\mathbb{R}}\{e_t, i\vec u\}$: it is the closest pointer-diagonal operator to $\tilde{Q}$ in the Hilbert–Schmidt geometry. Equivalently, in the pointer basis,
+Properties 1–5 are the defining properties of the **trace-preserving conditional expectation** onto $A$. Because the trace pairing $\mathrm{Tr}(\tilde H_\Psi\tilde{Q}) = 2(r_t\,Q_t + \vec r_\Psi\cdot\vec Q)$ is positive definite on $\mathbb{B}_{\Psi}$, property 5 says that, restricted to Hermitian elements, $Ξ_{\mathrm{deph},1}$ is exactly the **orthogonal projection** of $\mathbb{B}_{\Psi}$ onto the Hermitian part of $A$, namely $\mathrm{span}_{\mathbb{R}}\{e_t, i\vec u\}$: it is the closest pointer-diagonal operator to $\tilde{Q}$ in the Hilbert–Schmidt geometry. Equivalently, in the pointer basis,
 
 $$
 Ξ_{\mathrm{deph},1}(\tilde{Ϛ}_{\Psi}) = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u)\,\tilde{Ϛ}_{\Psi}\right)\tilde\Pi_1(\vec u) + \mathrm{Tr}\!\left(\tilde\Pi_2(\vec u)\,\tilde{Ϛ}_{\Psi}\right)\tilde\Pi_2(\vec u),
@@ -330,7 +330,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\leq1$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pointer idempotents (pure states along $\vec u$) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\operatorname{Tr}(\tilde\Pi\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
+| $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac12(1 + |\vec r|^2)$ | Purity |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac14(|\vec r|^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm (positivity condition) |

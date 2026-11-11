@@ -107,13 +107,13 @@ $$
 
 and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\tilde{Ξ}_{\mathrm{sp}}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}/2$.
 
-**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{R}_{\Psi,\eta}=\frac{\tilde{Ξ}_{\mathrm{sp},k}}{2}i\vec u_\Phi$,
+**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,\eta}=\frac{\tilde{Ξ}_{\mathrm{sp},k}}{2}i\vec u_\Phi$,
 
 $$
-\operatorname{Log}\bigl(\exp\tilde{R}_{\Psi,2}\exp\tilde{R}_{\Psi,1}\bigr)
-=\tilde{R}_{\Psi,2}+\tilde{R}_{\Psi,1}+\frac12[\tilde{R}_{\Psi,2},\tilde{R}_{\Psi,1}]+\cdots,
+\operatorname{Log}\bigl(\exp\tilde{H}_{\Psi,2}\exp\tilde{H}_{\Psi,1}\bigr)
+=\tilde{H}_{\Psi,2}+\tilde{H}_{\Psi,1}+\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]+\cdots,
 \qquad
-\frac12[\tilde{R}_{\Psi,2},\tilde{R}_{\Psi,1}]
+\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]
 =\frac{\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}}{4}\,\vec u_1\times\vec u_2 .
 $$
 
@@ -309,7 +309,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi})$ | Wigner rotation, $\in SU(2)$ |
 | $\theta_{\mathrm{wgn}}$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
 | $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\tilde{Ξ}_{\mathrm{sp}}/2$ | Hamilton data of a boost on the Hermitian axis |
-| $\frac12[\tilde{R}_{\Psi,2},\tilde{R}_{\Psi,1}]=\frac{\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
+| $\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=\frac{\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2},\tilde U_{\Psi,\mathrm b,1}\tilde{V}_{\Phi})\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi})$ | Cocycle condition |
 | $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde U_{\mathrm{Wig},i}$ | Boost as a controlled rotation |
 | $\tan\theta_{\mathrm{wgn}} = \sinh\theta_{\mathrm{rpd}}\sinh\xi/(\cosh\theta_{\mathrm{rpd}}+\cosh\xi)$ | Exact angle at $\theta = \pi/2$ |

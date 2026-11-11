@@ -267,7 +267,7 @@ The remaining structural point is that the third class the paper mentions — sp
 The programme's hydrogen atom is the spherically symmetric pulsar of §III at a frequency $\omega_0$ that it takes to be the minimum frequency of the hydrogen spectrum:
 
 $$
-\tilde{R}_{\Psi,0}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
+\tilde{H}_{\Psi,0}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 = \omega_0\left(j_0(\omega_0 r) + j_1(\omega_0 r)\vec u_x\right)\exp(-i\omega_0\tau).
 $$
 

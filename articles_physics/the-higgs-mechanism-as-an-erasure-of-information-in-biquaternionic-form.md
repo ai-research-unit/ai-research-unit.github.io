@@ -291,7 +291,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; invariant under the re-encoding |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $k_BT\ln2$ | Landauer cost of erasing a physical bit (not incurred here) |
-| $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}$ | Trace reading of the Hermitian form; $\mathrm{Tr}(e_t) = 2$ |
+| $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}$ | Trace reading of the Hermitian form; $\mathrm{Tr}(e_t) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

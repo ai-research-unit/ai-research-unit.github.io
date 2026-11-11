@@ -47,13 +47,13 @@ has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a thre
 **The informational sector $\mathbb{B}_{\Psi}$.** An element has the form
 
 $$
-\tilde R_\Psi = r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
+\tilde H_\Psi = r_t\, e_t + i r'_x\, \vec e_x + i r'_y\, \vec e_y + i r'_z\, \vec e_z, \qquad r_t, r'_x, r'_y, r'_z \in \mathbb{R}.
 $$
 
 The first coefficient is **real**, the three remaining coefficients are **imaginary**. The quadratic form
 
 $$
-\langle\tilde R_\Psi\rangle_{\natural} = r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
+\langle\tilde H_\Psi\rangle_{\natural} = r_t^2 - (r'_x)^2 - (r'_y)^2 - (r'_z)^2
 $$
 
 has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.

@@ -75,13 +75,13 @@ which carries $\bar{h}_{00} = h_{00} + \tfrac12h$, $\bar{h}_{0\eta} = h_{0\eta}$
 There is one sharp negative finding in this article, and it is central to the agenda. The graviton is **not** a material biquaternion. It is not an element of $\mathbb{B}_{\Phi}$, it is not a single element of $\mathbb{B}$ at all — eight real dimensions cannot hold ten components — and the natural single-biquaternion packaging of a symmetric rank-two object,
 
 $$
-\tilde R_\Psi = \sum_{\mu,\nu} h_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu,
+\tilde H_\Psi = \sum_{\mu,\nu} h_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu,
 $$
 
 collapses to the Lorentzian trace,
 
 $$
-\boxed{\;\tilde R_\Psi = h\,e_t\;}.
+\boxed{\;\tilde H_\Psi = h\,e_t\;}.
 $$
 
 The traceless part of $h_{\mu\nu}$ — nine of the ten components, and the whole of the transverse-traceless content that carries the two polarisations — maps to zero. The correct carrier is the $\mathbb{B}_{\Phi}$-valued one-form $\delta\tilde{E}_{\Phi}_\mu$, not an algebra element.

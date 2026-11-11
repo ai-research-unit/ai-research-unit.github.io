@@ -82,7 +82,7 @@ and it is the quaternionic norm of the algebra, the determinant of the $2\times2
 
 ## The Forms on the Two Sectors
 
-The physical dictionary places the material element $\tilde R=\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ in the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the informational element $\tilde R_\Psi$ in the Hermitian sector $\mathbb{B}_{\Psi}$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
+The physical dictionary places the material element $\tilde R=\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ in the anti-Hermitian sector $\mathbb{B}_{\Phi}$ and the informational element $\tilde H_\Psi$ in the Hermitian sector $\mathbb{B}_{\Psi}$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
 
 | Form | Signature on $\mathbb{B}_{\Phi}$, material | Signature on $\mathbb{B}_{\Psi}$, informational |
 | --- | --- | --- |
@@ -250,7 +250,7 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 | $\lVert\tilde Q\rVert$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
 | $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_\eta Q_\eta\sigma_\eta$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\tilde R_\Phi$, $\tilde R_\Psi$ | the material and informational parts, $\tilde Q=\tilde R_\Psi+\tilde R_\Phi$ |
+| $\tilde R_\Phi$, $\tilde H_\Psi$ | the material and informational parts, $\tilde Q=\tilde H_\Psi+\tilde R_\Phi$ |
 
 ## Further Reading
 

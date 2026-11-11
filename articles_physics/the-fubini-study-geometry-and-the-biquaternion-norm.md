@@ -25,7 +25,7 @@ The article proceeds as follows. The state space and its two forms are recalled;
 
 ## The State Space and Its Two Forms
 
-An element of the Hermitian subspace is $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
+An element of the Hermitian subspace is $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t\in\mathbb{R}$ and $\vec r_\Psi\in\mathbb{R}^3$, and the state space is the normalised hyperplane of the future cone,
 $$
 \{\text{states}\}=\left\{\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0\right\},
 \qquad
@@ -35,23 +35,23 @@ whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=2\langle\tilde{Ϛ}_{
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
 
-**The plain form.** For two Hermitian elements $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$,
+**The plain form.** For two Hermitian elements $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$,
 $$
-\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*}\bigr)=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}\bigr)=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}
 $$
-is positive definite, of signature $(4,0)$; its $2\times2$ reading is $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}$, the Euclidean pairing on $\mathbb{R}^4$ with $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
+is positive definite, of signature $(4,0)$; its $2\times2$ reading is $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}$, the Euclidean pairing on $\mathbb{R}^4$ with $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
 **The biquaternion norm and its polarization.**
 $$
-\langle\tilde{R}_{\Psi,1}\rangle_{\natural} = \langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,1}\rangle_{\natural}=\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,1}^{\natural}=\bigl(c r_{t,1}^2-|\vec r_{\Psi,1}|^2\bigr)e_t,
+\langle\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural}=\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,1}^{\natural}=\bigl(c r_{t,1}^2-|\vec r_{\Psi,1}|^2\bigr)e_t,
 \qquad
-\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{\natural}+\tilde{R}_{\Psi,2}\tilde{R}_{\Psi,1}^{\natural}\bigr)=\bigl(r_{t,1}r_{t,2}-\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr)e_t,
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural}+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\bigr)=\bigl(r_{t,1}r_{t,2}-\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
 The two forms are the two ingredients of the geometry. The Hermitian form, whose $2\times2$ reading is the trace pairing, is positive definite and therefore measures *overlap*; the biquaternion norm is indefinite, vanishes on the pure states, and therefore cannot measure *length* on them directly. The point of the article is that the biquaternion norm nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.
 
-The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=\mathrm{Tr}(M(\tilde{R}_{\Psi,1})M(\tilde{R}_{\Psi,2}))=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
+The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=\mathrm{Tr}(M(\tilde{H}_{\Psi,1})M(\tilde{H}_{\Psi,2}))=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
 
 ## Pure States and the Projective Line
 
@@ -214,7 +214,7 @@ $$
 \qquad\text{so}\qquad
 J_{\vec{u}}(v)=\tfrac12\,[\vec{u},v].
 $$
-The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde{R}_{\Psi,1}$ and $\tilde{R}_{\Psi,2}$, $[\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$, restricted to the boundary.
+The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$, $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$, restricted to the boundary.
 
 **The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\vec{u}\cdot\delta_2\vec{u}$ is invariant under $J$, because $J$ is a rotation:
 $$

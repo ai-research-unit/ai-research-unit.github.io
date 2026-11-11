@@ -74,7 +74,7 @@ The reason minimality matters physically is the third face of the definition in 
 $$
 \omega_{\tilde\Pi}(\tilde Q_3) \;=\; \mathrm{Tr}\big(\tilde\Pi\tilde Q_3\big),
 $$
-which on an **observable** $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ takes the real value $2\,\mathrm{Sc}(\tilde\Pi\tilde R_\Psi^{*}) = 2\langle\tilde\Pi,\tilde R_\Psi\rangle_{*}$. A pure state is exactly what a vacuum is. A rank-two state with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_t$, and a general element of the Bloch ball is neither.
+which on an **observable** $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ takes the real value $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$. A pure state is exactly what a vacuum is. A rank-two state with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_t$, and a general element of the Bloch ball is neither.
 
 ## The One-Mode Vacuum
 
@@ -267,7 +267,7 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H},\mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
-| $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$, $\mathrm{Tr}(e_t)=2$ | Trace reading of the Hermitian form |
+| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, $\mathrm{Tr}(e_t)=2$ | Trace reading of the Hermitian form |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, $\vec u\in S^2$ | Minimal idempotents; vacuum idempotents |
 | $|0\rangle\langle 0|=\tilde\Pi_+$ | One-mode vacuum idempotent |

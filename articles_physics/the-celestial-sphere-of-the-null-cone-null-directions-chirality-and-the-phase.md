@@ -48,7 +48,7 @@ so that over the complexified cone the phase is a circle over the two spheres to
 
 ## The Spinor Coordinates
 
-The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation, $\tilde R_\Psi = -i\tilde P_{\Phi} \in \mathbb{B}_{\Psi}$, is a rank-one Hermitian element, and a **positive** such element is a product of a spinor with its conjugate,
+The sphere and the spinors are the same object in two coordinates. A null element of the material sector, carried to the informational sector by the central rotation, $\tilde H_\Psi = -i\tilde P_{\Phi} \in \mathbb{B}_{\Psi}$, is a rank-one Hermitian element, and a **positive** such element is a product of a spinor with its conjugate,
 
 $$
 \tilde{\Pi}_\zeta = \zeta\,\zeta^{\dagger}, \qquad \zeta \in \mathbb{C}^2,

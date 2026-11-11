@@ -14,7 +14,7 @@ so the field strength is a central element of the algebra even though the field 
 
 The article is organised as follows. The next section sets up the minimal coupling in the biquaternion framework and derives the central commutator for the field strength. The third section solves the problem in the Landau gauge, reducing it to a shifted harmonic oscillator. The fourth treats the symmetric gauge, the guiding centre, and the angular momentum. The fifth counts the degeneracy and identifies the flux quantum. The sixth states precisely what is absent because the particle has spin 0. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$. The units are the SI units of *Physics Units and Common Elements Conventions*, with the electric charge denoted $ϙ$ and the mechanical momentum distinguished from the canonical momentum. The distinction is the subject of the companion article *The Kinetic Momentum and the Algebra That Does Not Close*, which derives the bracket of the kinetic angular momentum and shows why the angular momentum conserved here is the canonical one.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{H}$ is the real-quaternion subspace; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$. The units are the SI units of *Physics Units and Common Elements Conventions*, with the electric charge denoted $ϙ$ and the mechanical momentum distinguished from the canonical momentum. The distinction is the subject of the companion article *The Kinetic Momentum and the Algebra That Does Not Close*, which derives the bracket of the kinetic angular momentum and shows why the angular momentum conserved here is the canonical one.
 
 ## The Charged Particle in the Biquaternion Framework
 
@@ -307,7 +307,7 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $Ξ_0=h/\lvert ϙ\rvert$ | Magnetic flux quantum |
 | $N_{\mathrm{scl},\xi}=AB/Ξ_0$ | Landau-level degeneracy |
 | $\nu=N_e/N_{\mathrm{scl},\xi}$ | Filling factor |
-| $\mathrm{Tr}(\tilde R_\Psi)=2\,\mathrm{Sc}(\tilde R_\Psi)$ | Trace convention |
+| $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace convention |
 
 ## Further Reading
 

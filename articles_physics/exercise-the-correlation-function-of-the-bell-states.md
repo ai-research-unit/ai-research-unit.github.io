@@ -221,21 +221,21 @@ because $\mathrm{Tr}_\mathbb{B}(e_t) = 2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_j) 
 The correlation function is the expectation of the tensor-product Hermitian element
 
 $$
-\tilde{R}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y),
+\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y),
 $$
 
 where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
 
 $$
-E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab}\right).
+E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}\right).
 $$
 
 ### Step 3: Computing the trace for each Bell state
 
-We compute the trace term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{R}_{\Psi,ab}$,
+We compute the trace term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{\Psi,ab}$,
 
 $$
-\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
+\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
 $$
 
 with $\epsilon_t \equiv 1$.
@@ -319,7 +319,7 @@ $$
 
 with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is the algebraic characterization of the Bell basis: four idempotents, differing only by the sign pattern of the three vector-vector terms.
 
-**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab}^{*})$ is the tensor-product Hermitian form between the state idempotent and the observable, read as the trace pairing $\tilde{R}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$. The normalised Hermitian form, read through the trace, is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
+**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ is the tensor-product Hermitian form between the state idempotent and the observable, read as the trace pairing $\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$. The normalised Hermitian form, read through the trace, is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
 
 **3. The sign pattern encodes the correlation matrix.** In the standard formulation, the correlation matrix $T$ is computed by expanding the Bell projector in the Pauli-string basis and reading off the coefficients. In the biquaternion formulation, the same coefficients appear directly as the signs $\epsilon_j$ in the idempotent. The matrix $T$ is $-\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3)$.
 
@@ -363,8 +363,8 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ | Spin operator on particle 2 |
 | $|Ξ^{\pm}\rangle_{*}, |\tilde{Ξ}_{\mathrm{sp}}^{\pm}\rangle$ | The four Bell states |
 | $\tilde\Pi_\epsilon = \tfrac{1}{4}(e_t\otimes e_t + \sum_j \epsilon_j\,\vec e_j\otimes \vec e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
-| $\tilde{R}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
-| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{R}_{\Psi,ab}^{*})$ | Correlation function |
+| $\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
+| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ | Correlation function |
 | $T_{j\eta} = \langle\tilde{Ξ}_{\mathrm{sp}}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}_{\mathrm{sp}}\rangle$ | Correlation matrix |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 

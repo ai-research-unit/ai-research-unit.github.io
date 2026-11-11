@@ -163,7 +163,7 @@ $$
 \mathsf{M}_2(\tilde P_{\Phi})=i\left(\frac{E}{c}I_2-\vec p\cdot\boldsymbol\sigma\right),
 $$
 
-of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i r'_t$ convention; with $\tilde R_\Psi=-i\tilde P_{\Phi}\in\mathbb{B}_{\Psi}$ one has $\mathsf{M}_2(\tilde R_\Psi)=p_{\alpha\bar\beta}$ exactly.
+of rank exactly one. The matrix in parentheses, $p_{\alpha\bar\beta}=\frac{E}{c}\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the standard spinor-helicity bispinor, Hermitian, of determinant $E^2/c^2-\vec p^{\,2}=m^2c^2$, and rank one exactly at $m=0$. The factor $i$ is the framework's $i r'_t$ convention; with $\tilde H_\Psi=-i\tilde P_{\Phi}\in\mathbb{B}_{\Psi}$ one has $\mathsf{M}_2(\tilde H_\Psi)=p_{\alpha\bar\beta}$ exactly.
 
 ## Rank One Is Factorisability
 
@@ -254,7 +254,7 @@ The two words name different things and coincide at one mass.
 
 So the two differ in kind. Chirality is a fixed side, the same in every frame and for every momentum. Helicity is a projection, and it needs a momentum to exist. At $m=0$ the two labels agree on a positive-energy state, because the little group is then all that remains of the Lorentz action and both reduce to the same weight; on a negative-energy state they are opposite, which is the same statement read on the antiparticle.
 
-**Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\lambda,\tilde R_\Psi]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
+**Why helicity is conserved and chirality is not.** Helicity is $\vec J\cdot\vec u_p$, since the orbital part contributes nothing, and both factors are conserved by a free motion: $\vec J$ generates the rotations the free Hamiltonian respects, and $\vec p$ is conserved, so $\vec u_p$ is conserved with it. Hence $[\lambda,\tilde H_\Psi]=0$ for a free particle, at any mass. Chirality has no such argument, because what breaks it is the mass and not the motion. One is a symmetry of the free motion, the other a symmetry of the massless Lagrangian.
 
 In the algebra the mass is the off-diagonal pair that exchanges the two chiral parts, central in coefficient and odd under the basis operator (*The Hydrogen Atom in Biquaternionic Form — The Relativistic Case*). At $m=0$ the pair decouples into two Weyl equations, one per part, and that decoupling is why the two labels agree there.
 

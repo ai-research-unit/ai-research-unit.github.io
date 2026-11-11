@@ -80,7 +80,7 @@ The collective state space, restricted to the symmetric subspace, is the spin-$N
 The Tavis–Cummings model couples $N$ two-level systems to a single bosonic mode with the Hamiltonian
 
 $$
-\tilde R_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
+\tilde H_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$
 
 where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the atomic transition frequency, and $g$ the single-spin coupling. The interaction conserves the total excitation number
@@ -130,7 +130,7 @@ $$
 the **Holstein–Primakoff** transformation truncated at leading order. Substituting into the Tavis–Cummings Hamiltonian gives a quadratic two-mode problem,
 
 $$
-\tilde R_\Psi \approx \hbar\,\omega_{c}\,a^{\dagger}\,a+\hbar\,\omega_{a}\left(\frac{N}{2}-b^\dagger b\right)
+\tilde H_\Psi \approx \hbar\,\omega_{c}\,a^{\dagger}\,a+\hbar\,\omega_{a}\left(\frac{N}{2}-b^\dagger b\right)
 +\hbar\,g\sqrt{N}\left(a^\dagger b + a b^\dagger\right),
 $$
 
@@ -167,7 +167,7 @@ whose eigenvalues are the variances along the principal axes. In the plane perpe
 The simplest generator of squeezing is the **one-axis twisting** Hamiltonian
 
 $$
-\tilde{R}_{\Psi,OAT} =\frac{\xi}{\hbar}\,\tilde S_{\Psi,\mathrm{tot},3}^2 ,
+\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\,\tilde S_{\Psi,\mathrm{tot},3}^2 ,
 $$
 
 which is diagonal in the Dicke basis and therefore exactly solvable. Starting from the coherent state along $+x$, the evolution
@@ -249,7 +249,7 @@ For $N$ spin-1/2 particles the collective operators $\tilde S_{\Psi,\mathrm{tot}
 The **Tavis–Cummings model**,
 
 $$
-\tilde R_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
+\tilde H_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$
 
 conserves the excitation number $a^\dagger a +\frac{\tilde{S}_{\Psi,\mathrm{tot},3}}{\hbar}+ N/2$. In its single-excitation sector the collective coupling is $\hbar\,g\sqrt{N}$ and the collective Rabi splitting is
@@ -266,7 +266,7 @@ $$
 \zeta_R^2 = \frac{N\,(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2},
 $$
 
-equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{R}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi r'_t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
+equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi r'_t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
 
 In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha}^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha})$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$, while the twisting generator $\tilde S_{\Psi,\mathrm{tot},3}^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling whose single-excitation gap is the collective Rabi splitting.
 
@@ -286,11 +286,11 @@ In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(
 | $\vec u(\theta,\theta_{\mathrm{azm}})$ | Direction of the collective mean spin |
 | $a, a^\dagger$ | Bosonic mode operators |
 | $g$ | Single-spin coupling to the mode |
-| $\tilde R_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
+| $\tilde H_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
 | $a^\dagger a +\frac{\tilde{S}_{\Psi,\mathrm{tot},3}}{\hbar}+ N/2$ | Conserved excitation number |
 | $\Delta E =2\,\hbar\,g\sqrt{N}$ | Collective Rabi splitting |
 | $\zeta_R^2 = N(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
-| $\tilde{R}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
+| $\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
 | $\mathrm{Cov}(\tilde S_{\Psi,\mathrm{tot},\alpha},\tilde S_{\Psi,\mathrm{tot},\beta})$ | Collective covariance; the squeezing ellipse |
 
 ## Further Reading

@@ -75,9 +75,9 @@ The factor $\tilde J_{\mathrm{opt},H}$ is Hermitian positive and the factor $\ti
 **On the cone.** When $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$ the element is not invertible and $\tilde J_{\mathrm{opt},H}^{-1}$ does not exist. The generalized pair replaces the inverse by the Moore–Penrose inverse, the positive factor by a positive semidefinite one, and the $*$-unitary factor by a partial isometry:
 
 $$
-\boxed{\;\tilde J_{\mathrm{opt}}=\tilde R_\Psi_{\mathrm{pos}}\tilde Q_{\mathrm p},\qquad
-\tilde R_\Psi_{\mathrm{pos}}=\sqrt{\tilde J_{\mathrm{opt}}\tilde J_{\mathrm{opt}}^{*}},\qquad
-\tilde Q_{\mathrm p}=\tilde R_\Psi_{\mathrm{pos}}^{+}\tilde J_{\mathrm{opt}}\;}.
+\boxed{\;\tilde J_{\mathrm{opt}}=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{\mathrm p},\qquad
+\tilde H_\Psi_{\mathrm{pos}}=\sqrt{\tilde J_{\mathrm{opt}}\tilde J_{\mathrm{opt}}^{*}},\qquad
+\tilde Q_{\mathrm p}=\tilde H_\Psi_{\mathrm{pos}}^{+}\tilde J_{\mathrm{opt}}\;}.
 $$
 
 The pair is unique once the projections of $\tilde Q_{\mathrm p}$ are fixed to be those of $\tilde J_{\mathrm{opt}}$. On the cone the positive factor becomes a scaled projection and the partial isometry carries one polarization direction to one output direction.
@@ -85,8 +85,8 @@ The pair is unique once the projections of $\tilde Q_{\mathrm p}$ are fixed to b
 | element | pair | what the pair defines |
 | --- | --- | --- |
 | $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}\neq0$ | $\tilde J_{\mathrm{opt},H}>0$, $\tilde J_{\mathrm{opt},0}$ $*$-unitary | diattenuation and retardance |
-| $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$, $\tilde J_{\mathrm{opt}}\neq0$ | $\tilde R_\Psi_{\mathrm{pos}}\ge0$, $\tilde Q_{\mathrm p}$ partial isometry | diattenuation, no retardance |
-| $\tilde J_{\mathrm{opt}}=0$ | $\tilde R_\Psi_{\mathrm{pos}}=0$, $\tilde Q_{\mathrm p}=0$ | neither |
+| $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$, $\tilde J_{\mathrm{opt}}\neq0$ | $\tilde H_\Psi_{\mathrm{pos}}\ge0$, $\tilde Q_{\mathrm p}$ partial isometry | diattenuation, no retardance |
+| $\tilde J_{\mathrm{opt}}=0$ | $\tilde H_\Psi_{\mathrm{pos}}=0$, $\tilde Q_{\mathrm p}=0$ | neither |
 
 ## Diattenuation
 
@@ -165,12 +165,12 @@ It is a zero divisor: it kills the orthogonal polarization and cannot be inverte
 The classical Cartan pair does not exist at the polarizer, because $\tilde J_{\mathrm{opt},H}^{-1}$ does not. The generalized pair does:
 
 $$
-\tilde R_\Psi_{\mathrm{pos}}=\tilde\Pi(\vec u),\qquad
+\tilde H_\Psi_{\mathrm{pos}}=\tilde\Pi(\vec u),\qquad
 \tilde Q_{\mathrm p}=\tilde\Pi(\vec u),\qquad
 \tilde J_{\mathrm{opt}}=\tilde\Pi(\vec u)\tilde\Pi(\vec u).
 $$
 
-The positive factor is the final projection and the partial isometry is the same projection; both are rank one. A rank-one element with different input and output rays is $\tilde J_{\mathrm{opt}}=\sigma\lvert f\rangle\langle i\rvert$ with $\sigma>0$ and normalised rays; it has $\tilde R_\Psi_{\mathrm{pos}}=\sigma\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$, a partial isometry from the input ray to the output ray. It is a polarizer along $i$ followed by a $*$-unitary transformation that carries $i$ to $f$, with the amplitude $\sigma$, and the two projections are the two pure states that the element connects.
+The positive factor is the final projection and the partial isometry is the same projection; both are rank one. A rank-one element with different input and output rays is $\tilde J_{\mathrm{opt}}=\sigma\lvert f\rangle\langle i\rvert$ with $\sigma>0$ and normalised rays; it has $\tilde H_\Psi_{\mathrm{pos}}=\sigma\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$, a partial isometry from the input ray to the output ray. It is a polarizer along $i$ followed by a $*$-unitary transformation that carries $i$ to $f$, with the amplitude $\sigma$, and the two projections are the two pure states that the element connects.
 
 **Absorption is monotone.** The rank of a product cannot exceed the rank of a factor, so a polarizer anywhere in a sequence leaves the output rank one. The light that the polarizer absorbs is not recovered by anything downstream; the subsequent elements can rotate and attenuate the surviving polarization but cannot restore the killed component. This is the optical form of the statement that a zero divisor forgets a direction.
 
@@ -258,7 +258,7 @@ $$
 
 The Hermitian positive factor is the **diattenuator**. Its eigenvalues $T_1\ge T_2\ge0$ are the principal amplitude transmissions, its eigenpolarizations are the principal axes, its mean intensity transmission is $\tfrac12(T_1^{2}+T_2^{2})$, and its diattenuation is $D=(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})=\tanh\theta_{\mathrm{rpd}}$, where $\theta_{\mathrm{rpd}}$ is the rapidity of the amplitude read as a boost. The $*$-unitary factor is the **retarder**. Its eigenvalues are $\exp(i\theta_{\mathrm{pha},1,2})$, its eigenpolarizations are the retarder axes, its retardance is $\theta=\theta_{\mathrm{pha},1}-\theta_{\mathrm{pha},2}$, and its central phase is the unobservable global phase; the retardance is twice the exponent angle of the real rotor $\tilde u_{\mathrm r}$ in $\tilde J_{\mathrm{opt},0}=\exp(i\alpha)\tilde u_{\mathrm r}$.
 
-The polarizer is the boundary case. It is a rank-one element, hence a zero divisor with $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$, hence non-invertible; the classical pair does not exist, and the generalized pair gives $\tilde R_\Psi_{\mathrm{pos}}=\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$. Its diattenuation is one and its retardance is undefined. The operator-to-state map reads the same structure: for unpolarized input the output state is $\tilde J_{\mathrm{opt}}\tilde J_{\mathrm{opt}}^{*}/2\langle\tilde J_{\mathrm{opt}},\tilde J_{\mathrm{opt}}\rangle_{*}$, its Bloch length is $D$, and its purity is $\tfrac12(1+D^{2})$. A retarder alone leaves that state maximally mixed.
+The polarizer is the boundary case. It is a rank-one element, hence a zero divisor with $\langle\tilde J_{\mathrm{opt}}\rangle_{\natural}=0$, hence non-invertible; the classical pair does not exist, and the generalized pair gives $\tilde H_\Psi_{\mathrm{pos}}=\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$. Its diattenuation is one and its retardance is undefined. The operator-to-state map reads the same structure: for unpolarized input the output state is $\tilde J_{\mathrm{opt}}\tilde J_{\mathrm{opt}}^{*}/2\langle\tilde J_{\mathrm{opt}},\tilde J_{\mathrm{opt}}\rangle_{*}$, its Bloch length is $D$, and its purity is $\tfrac12(1+D^{2})$. A retarder alone leaves that state maximally mixed.
 
 ## Summary of Notation
 

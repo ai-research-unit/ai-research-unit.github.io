@@ -212,10 +212,10 @@ $$
 
 This is the trace formula of the framework, and it is derived, not assumed.
 
-**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{R}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{R}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ in $\mathbb{B}_{\Psi}$,
+**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ in $\mathbb{B}_{\Psi}$,
 
 $$
-\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\bigl(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),
+\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\bigl(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),
 $$
 
 which is real and positive definite; for $\tilde{R}_{\Phi,1}=i r_{1t}e_t+\vec r_1$ and $\tilde{R}_{\Phi,2}=i r_{2t}e_t+\vec r_2$ in $\mathbb{B}_{\Phi}$,
@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=r_t+\mu\cdot\vec r_\Psi,
+\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=r_t+\mu\cdot\vec r_\Psi,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.

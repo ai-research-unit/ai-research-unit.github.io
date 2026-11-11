@@ -174,7 +174,7 @@ $$
 **One substitution turns the quantum equation into the classical relation.** In the corpus's form the equation is
 
 $$
-i\,\hbar\,c\partial_{r_{t}^{\prime}}\tilde\Xi_{\mathrm{sp}}=\tilde R_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
+i\,\hbar\,c\partial_{r_{t}^{\prime}}\tilde\Xi_{\mathrm{sp}}=\tilde H_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
 $$
 
 which with $r_{t}^{\prime}=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,

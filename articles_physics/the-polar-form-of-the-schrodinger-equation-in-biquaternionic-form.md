@@ -5,9 +5,9 @@
 The Schrödinger equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Schrödinger Equation in Biquaternionic Form* writes it as
 
 $$
-i\hbar\,\frac{\partial}{\partial t'}\tilde\Xi_{\mathrm{sp}}=\tilde R_\Psi\,\tilde\Xi_{\mathrm{sp}},
+i\hbar\,\frac{\partial}{\partial t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\,\tilde\Xi_{\mathrm{sp}},
 \qquad
-\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi},
+\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi\in\mathbb{B}_{\Psi},
 $$
 
 and states what the equation does not need: no column, no minimal left ideal, no projector, no idempotent, no declared axis, no matrix array in the body of the equation. The field is one element, the operator is one element, and the multiplication is the algebra's own.
@@ -36,7 +36,7 @@ and it fails on every $N$-degenerate element. There is no third case and no exte
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i\hbar c\,\partial/\partial r'_t$ is $i\hbar\,\partial/\partial t'$; the two forms are used interchangeably and $\hbar$ is written explicitly in both.
 
-**No wave number is used in this article, and that is deliberate.** A letter $k$ earns its place only where a mass, a momentum or an energy is absorbed by it, as $k_m=mc/\hbar$ absorbs the mass in the Dirac and Klein–Gordon equations. Here nothing is absorbed: the constant that multiplies the time derivative is $\hbar$, and the mass enters only through the operator $\tilde R_\Psi$ and, in the central case, through the kinetic term $|\nabla S|^{2}/2m$. Writing $k_m$ would require the composite $mc^{2}/k_m$, in which $m$ cancels and only $\hbar c$ survives, so the letter would hide the constant instead of naming a physical wave number. Every $\hbar$ below is therefore the reduced Planck constant and nothing else.
+**No wave number is used in this article, and that is deliberate.** A letter $k$ earns its place only where a mass, a momentum or an energy is absorbed by it, as $k_m=mc/\hbar$ absorbs the mass in the Dirac and Klein–Gordon equations. Here nothing is absorbed: the constant that multiplies the time derivative is $\hbar$, and the mass enters only through the operator $\tilde H_\Psi$ and, in the central case, through the kinetic term $|\nabla S|^{2}/2m$. Writing $k_m$ would require the composite $mc^{2}/k_m$, in which $m$ cancels and only $\hbar c$ survives, so the letter would hide the constant instead of naming a physical wave number. Every $\hbar$ below is therefore the reduced Planck constant and nothing else.
 
 Two points of discipline come first, because both are ways of losing the alignment.
 
@@ -59,15 +59,15 @@ What the article establishes is short, and each item is one sentence:
 
 The field is one element $\tilde\Xi_{\mathrm{sp}}$ of $\mathbb{B}$, with four complex coefficients and therefore eight real components. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it; once the field is named, the body writes $\tilde\Xi$ for the same element. Nothing else is needed: $\mathbb{B}$ is an algebra, so a product of two elements is an element, and the equation restricts no subspace.
 
-**The equation is complex-linear, and its symbol is Hermitian.** Because $i$ is central, left multiplication $L_{\tilde R_\Psi}$ satisfies $L_{\tilde R_\Psi}(i\tilde X)=iL_{\tilde R_\Psi}\tilde X$, so the equation is complex-linear on $\mathbb{B}$ read as a complex vector space of dimension four. Because $\tilde R_\Psi^{*}=\tilde R_\Psi$, it also satisfies
+**The equation is complex-linear, and its symbol is Hermitian.** Because $i$ is central, left multiplication $L_{\tilde H_\Psi}$ satisfies $L_{\tilde H_\Psi}(i\tilde X)=iL_{\tilde H_\Psi}\tilde X$, so the equation is complex-linear on $\mathbb{B}$ read as a complex vector space of dimension four. Because $\tilde H_\Psi^{*}=\tilde H_\Psi$, it also satisfies
 
 $$
-\mathrm{Sc}\bigl((\tilde R_\Psi\tilde X)\tilde Y^{*}\bigr)=\mathrm{Sc}\bigl(\tilde X(\tilde R_\Psi\tilde Y)^{*}\bigr),
+\mathrm{Sc}\bigl((\tilde H_\Psi\tilde X)\tilde Y^{*}\bigr)=\mathrm{Sc}\bigl(\tilde X(\tilde H_\Psi\tilde Y)^{*}\bigr),
 $$
 
 so the symbol is Hermitian for the sesquilinear form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$, and the flow preserves $\mathrm{Sc}(\tilde X\tilde X^{*})$. Both facts were checked on a hundred random pairs.
 
-**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde R_\Psi)$, a $4\times4$ complex Hermitian array with $\mathrm{Tr}\,L_{\mathrm{axf}}(\tilde R_\Psi)=4r_t$ and $\det L_{\mathrm{axf}}(\tilde R_\Psi)=\langle\tilde R_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
+**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $\mathrm{Tr}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4r_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
 
 ### The word
 
@@ -91,7 +91,7 @@ a positive real number that reads the scale and the boost and nothing else. Both
 
 *Proposition.* The word of $\tilde\Xi$ exists exactly on the complement of the cone $\{\tilde X:\langle\tilde X\rangle_{\natural}=0\}$, and the flow carries that complement to itself.
 
-*Proof.* The first half is the boxed statement of the introduction. For the second, the propagator is $\tilde Q=\exp(-i\tilde R_\Psi t'/\hbar)$ and $\langle\tilde Q\rangle_{\natural}$ is central, so
+*Proof.* The first half is the boxed statement of the introduction. For the second, the propagator is $\tilde Q=\exp(-i\tilde H_\Psi t'/\hbar)$ and $\langle\tilde Q\rangle_{\natural}$ is central, so
 
 $$
 \langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural},
@@ -110,7 +110,7 @@ and $\langle\tilde Q\rangle_{\natural}$ is a unit of the centre at every $t'$. H
 The parent's solution is
 
 $$
-\tilde Q(t')=\exp\Bigl(-i\frac{\tilde R_\Psi t'}{\hbar}\Bigr)
+\tilde Q(t')=\exp\Bigl(-i\frac{\tilde H_\Psi t'}{\hbar}\Bigr)
 =\exp\Bigl(-i\frac{r_t t'}{\hbar}\Bigr)\Bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\Bigr),
 \qquad
 \theta=\frac{|\vec r_\Psi|\,t'}{\hbar},
@@ -209,13 +209,13 @@ $$
 
 the sign of the rotor carrying the half-turn branch of the angle. A central field's word is therefore a scale, a phase and a sign, and three of the four factors have collapsed. This is exactly Madelung's pair, with $A=r$ and $S=\hbar\alpha$.
 
-**The central class is not invariant under a general Hamiltonian.** If $\vec r_\Psi\neq0$ then $\tilde R_\Psi\tilde\Xi_{\mathrm{sp}}$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
+**The central class is not invariant under a general Hamiltonian.** If $\vec r_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
 
 **No gauge defect is left over.** The field has eight real components, the word has eight real parameters, and the equation is first order in time with one complex equation per coefficient, that is eight real equations. The word is therefore exactly determined by the field, with no free function: there is no gauge to fix and no sector to choose. The four parameters that Madelung's form does not show are the boost's three and the rotor's angle, and they are not dropped by a choice; they are zero because the field is central.
 
 ### The exact pair
 
-For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi_{\mathrm{sp}}=A\,e^{iS/\hbar}e_t$ and $\tilde R_\Psi=V\,e_t$; substituting into the equation and separating the real and the imaginary parts gives
+For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi_{\mathrm{sp}}=A\,e^{iS/\hbar}e_t$ and $\tilde H_\Psi=V\,e_t$; substituting into the equation and separating the real and the imaginary parts gives
 
 $$
 \boxed{\;\frac{\partial S}{\partial t'}+\frac{|\nabla S|^{2}}{2m}+V+Q=0,\qquad
@@ -269,7 +269,7 @@ The Dirac and Klein–Gordon companions end with a mass-shell condition: the wor
 
 **Madelung's pair is one case, and the case is characterised.** The central field is the field whose word has collapsed to a scale and a phase, and it is invariant exactly under a central Hamiltonian. Madelung's amplitude and phase are therefore not an approximation and not a general chart: they are the two parameters of a class of fields, and the class is the one in which nothing turns.
 
-**What was checked.** The statements above were recomputed numerically on random Hermitian $\tilde R_\Psi$ and random fields: the word, the two norms, the flow, the two rates, the half turn, the non-Hermitian generator and the central class, and three exact-solution checks of the pair. The largest residual among the exact identities was $6\times10^{-16}$, the conjugated boost $\tilde u_Q\tilde U_{\Psi,\mathrm b}\tilde u_Q^{\natural}$ included, and the two differential laws were checked against finite differences to $10^{-6}$.
+**What was checked.** The statements above were recomputed numerically on random Hermitian $\tilde H_\Psi$ and random fields: the word, the two norms, the flow, the two rates, the half turn, the non-Hermitian generator and the central class, and three exact-solution checks of the pair. The largest residual among the exact identities was $6\times10^{-16}$, the conjugated boost $\tilde u_Q\tilde U_{\Psi,\mathrm b}\tilde u_Q^{\natural}$ included, and the two differential laws were checked against finite differences to $10^{-6}$.
 
 ## Open Questions
 
@@ -299,7 +299,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Xi_{\mathrm{sp}}$ | The field: one element of $\mathbb{B}$ |
-| $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian Hamiltonian |
+| $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ | Hermitian Hamiltonian |
 | $r_t,\ \vec r_\Psi$ | Its scalar part and its vector part |
 | $\vec u_\Psi=\vec r_\Psi/\lvert\vec r_\Psi\rvert$ | Its axis, when $\vec r_\Psi\neq0$ |
 | $N(\tilde\Xi)$ | Determinant; the word exists iff $N\neq0$ |
@@ -311,12 +311,12 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $\alpha$ | The central angle |
 | $\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm r},\ \vec u_{\mathrm r}$ | Angle and axis of the rotor |
-| $\tilde Q(t')=\exp(-i\tilde R_\Psi t'/\hbar)=e^{i\alpha_Q}\tilde u_Q$ | The propagator and its word |
+| $\tilde Q(t')=\exp(-i\tilde H_\Psi t'/\hbar)=e^{i\alpha_Q}\tilde u_Q$ | The propagator and its word |
 | $\theta=\lvert\vec r_\Psi\rvert t'/\hbar$ | The parent's angle; the rotor's half-angle |
 | $\tilde u_Q=\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ | The propagator's rotor |
 | $\rho=\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ | Density (Hermitian norm) |
 | $Q=-\hbar^{2}\nabla^{2}A/(2mA)$ | Quantum potential |
-| $L_{\mathrm{axf}}(\tilde R_\Psi)$ | Axis-free $4\times4$ array of the symbol |
+| $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Axis-free $4\times4$ array of the symbol |
 
 ## Further Reading
 

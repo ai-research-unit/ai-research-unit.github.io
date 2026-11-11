@@ -214,14 +214,14 @@ Two things are easily confused: an element that is anti-Hermitian, and a probabi
 **The fall is real, and the exponential is only a window on it.** *The Unstable State and the Complex Energy Pole* states the exact short-time law,
 
 $$
-P(r'_t)=1-\frac{\Delta^{2}\,\tilde{R}_{\Psi}^{2}}{\hbar^{2}}{r'_{t}}^{2}+O({r'_{t}}^{4}),
+P(r'_t)=1-\frac{\Delta^{2}\,\tilde{H}_{\Psi}^{2}}{\hbar^{2}}{r'_{t}}^{2}+O({r'_{t}}^{4}),
 $$
 
 so the survival probability starts from one with zero slope, and no exponential can reproduce that: $\exp(-\gamma r'_t)$ starts with slope $-\gamma$. The fall has three regimes, and only the middle one is exponential.
 
 | regime | law | where it holds |
 | --- | --- | --- |
-| early | $P=1-(\Delta\tilde R_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$ | ${r'_t}\ll\frac{\hbar}{\Delta\,\tilde{R}_{\Psi}}$ |
+| early | $P=1-(\Delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$ | ${r'_t}\ll\frac{\hbar}{\Delta\,\tilde{H}_{\Psi}}$ |
 | intermediate | $\exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c})$, as a fit | long against the inverse spectral width of the continuum, short against the onset of the long-time deviation |
 | late | a power law set by the density of states at the band edge, slower than exponential | beyond the window |
 
@@ -248,13 +248,13 @@ $$
 
 with equality exactly when $\tilde Q$ is normal. Only three numbers reach the norm, and they do different jobs: $\operatorname{Re}Q_t$ is a **rate**, $\operatorname{Im}B$ is an envelope rate, and $\lVert\rho\rVert^2$ is an **amplitude**, never a rate. That article puts it in one line: "a decay is a negative real part of $Q_t$ in the convention $e^{+\theta\tilde Q}$". The qualification is the whole point.
 
-Neither sector puts anything in the rate slot. For anti-Hermitian $\tilde Q$, $Q_t$ is purely imaginary and $\vec Q$ is real, so $\operatorname{Re}Q_t=0$ and $\rho$ is a real unit vector: the norm is exactly $1$ for every $\theta$. For Hermitian $\tilde R$, $Q_t$ is real but the corpus's flow carries the factor $-i$, $\exp(-\frac{i\,\theta\,\tilde{R}}{\hbar})$, and that factor moves the real scalar into the frequency slot: the norm is again exactly $1$. Checked on a hundred elements each, to $1.2\times10^{-14}$ and $5.6\times10^{-15}$. The factor of $i$ is therefore not decoration; it is what makes a real scalar a frequency rather than a rate, and removing it changes the physics from oscillation to dilation.
+Neither sector puts anything in the rate slot. For anti-Hermitian $\tilde Q$, $Q_t$ is purely imaginary and $\vec Q$ is real, so $\operatorname{Re}Q_t=0$ and $\rho$ is a real unit vector: the norm is exactly $1$ for every $\theta$. For Hermitian $\tilde H_\Psi$, its scalar coefficient is real but the corpus's flow carries the factor $-i$, $\exp(-\frac{i\,\theta\,\tilde H_\Psi}{\hbar})$, and that factor moves the real scalar into the frequency slot: the norm is again exactly $1$. Checked on a hundred elements each, to $1.2\times10^{-14}$ and $5.6\times10^{-15}$. The factor of $i$ is therefore not decoration; it is what makes a real scalar a frequency rather than a rate, and removing it changes the physics from oscillation to dilation.
 
 One case is worth stating, because it is the exception that fixes the rule: a single element can shrink the norm. Exponentiated without the $i$, a Hermitian element gives
 
 $$
-\bigl\langle e^{\theta\tilde R}\bigr\rangle_*
-=e^{2\theta R_t}\cosh\bigl(2\lvert\vec r\rvert\theta\bigr),
+\bigl\langle e^{\theta\tilde H_\Psi}\bigr\rangle_*
+=e^{2\theta h_t}\cosh\bigl(2\lvert\vec h_\Psi\rvert\theta\bigr),
 $$
 
 checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.
@@ -286,19 +286,19 @@ The arithmetic is easy to check directly. Couple one discrete level to a band of
 **The shorthand, and what it stands for.** The eliminated channel is usually compressed into an effective Hamiltonian,
 
 $$
-i\,\partial_{r'_t}\tilde{Ξ}=\tilde R_{\Psi,\mathrm{eff}}\tilde{Ξ},
+i\,\partial_{r'_t}\tilde{Ξ}=\tilde H_{\Psi,\mathrm{eff}}\tilde{Ξ},
 \qquad
-\tilde R_{\Psi,\mathrm{eff}}=\tilde R_\Psi-\frac{i}{2}\tilde\Gamma,
+\tilde H_{\Psi,\mathrm{eff}}=\tilde H_\Psi-\frac{i}{2}\tilde\Gamma,
 $$
 
-with $\tilde R_\Psi=\tilde R_\Psi^{*}$ and $\tilde\Gamma=\tilde\Gamma^{*}\ge0$, whose anti-Hermitian part is $-\frac{i}{2}\tilde\Gamma$. The squared Hermitian norm then obeys
+with $\tilde H_\Psi=\tilde H_\Psi^{*}$ and $\tilde\Gamma=\tilde\Gamma^{*}\ge0$, whose anti-Hermitian part is $-\frac{i}{2}\tilde\Gamma$. The squared Hermitian norm then obeys
 
 $$
 \frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*
 =-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*\le0,
 $$
 
-which follows from $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=\langle\tilde{Ξ},(G^{*}+G)\tilde{Ξ}\rangle_*$ with $G=-i\tilde R_{\Psi,\mathrm{eff}}$ and $G^{*}+G=-\tilde\Gamma$; checked on a hundred random pairs, the finite-difference residual staying below $10^{-9}$. An indefinite $\tilde\Gamma$ with negative eigenvalues gives growth, so the anti-Hermitian part records loss, gain, or both, and the sign of $\tilde\Gamma$ decides which. The coefficient is a convention: carrying the term as $-i\tilde\Gamma'$ with $\hbar$ restored gives $-\frac{2}{\hbar}\langle\tilde{Ξ},\tilde\Gamma'\tilde{Ξ}\rangle_*$, the same statement with the rate rescaled; the corpus measures the action in units of $\hbar$ and the coefficient $\frac12$, which is what puts the pole at $z_\star=E_R-\frac{i}{2}\Gamma$ and the amplitude decay at $\exp(-\Gamma r'_t/2)$.
+which follows from $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=\langle\tilde{Ξ},(G^{*}+G)\tilde{Ξ}\rangle_*$ with $G=-i\tilde H_{\Psi,\mathrm{eff}}$ and $G^{*}+G=-\tilde\Gamma$; checked on a hundred random pairs, the finite-difference residual staying below $10^{-9}$. An indefinite $\tilde\Gamma$ with negative eigenvalues gives growth, so the anti-Hermitian part records loss, gain, or both, and the sign of $\tilde\Gamma$ decides which. The coefficient is a convention: carrying the term as $-i\tilde\Gamma'$ with $\hbar$ restored gives $-\frac{2}{\hbar}\langle\tilde{Ξ},\tilde\Gamma'\tilde{Ξ}\rangle_*$, the same statement with the rate rescaled; the corpus measures the action in units of $\hbar$ and the coefficient $\frac12$, which is what puts the pole at $z_\star=E_R-\frac{i}{2}\Gamma$ and the amplitude decay at $\exp(-\Gamma r'_t/2)$.
 
 The shorthand must not be read as a new element of the algebra. It is the reduced description of one slot, valid on the branch where the eliminated channel has been dropped, and its complex coefficient carries the width of that branch. The pole it produces is the second-sheet pole, not a physical-sheet eigenvalue.
 
@@ -308,7 +308,7 @@ The shorthand must not be read as a new element of the algebra. It is the reduce
 
 $$
 \frac{d\tilde{Ϛ}_{\Psi}}{dr'_t}
-=-\frac{i}{\hbar}\,[\tilde R_\Psi,\tilde{Ϛ}_{\Psi}]
+=-\frac{i}{\hbar}\,[\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]
 +\sum_\eta\left(\tilde M_{\mathrm{kraus},k}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},k}^{*}
 -\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}_{\Psi}\}\right).
 $$
@@ -317,7 +317,7 @@ The trace is preserved, $\frac{d}{dr'_t}\operatorname{Tr}\tilde{Ϛ}_{\Psi}=0$ by
 
 $$
 i\,\partial_{r'_t}\tilde{Ξ}_{\mathrm{nj}}
-=\Bigl(\tilde R_\Psi-\frac{i}{2}\sum_\eta\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\Bigr)\tilde{Ξ}_{\mathrm{nj}},
+=\Bigl(\tilde H_\Psi-\frac{i}{2}\sum_\eta\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\Bigr)\tilde{Ξ}_{\mathrm{nj}},
 \qquad
 \frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*
 =-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*\le0 .
@@ -325,26 +325,26 @@ $$
 
 The lost norm is exactly the probability that a jump has occurred, checked to $1.0\times10^{-11}$ on a hundred random triples of jump operators. That is the precise content of the anti-Hermitian part of an effective Hamiltonian: it describes the branch where nothing has happened yet, and the rate it carries is the jump rate.
 
-**The same warning on the state space.** With the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=\operatorname{Tr}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and shrinks nothing, the adjoint being its negative with residual $0$. The jump part is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump terms the smallest distance to either form was $1.24$. So anti-Hermiticity marks the reversible generator here as elsewhere, and the fall of $P$ sits outside the Hermitian/anti-Hermitian alternative altogether.
+**The same warning on the state space.** With the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=\operatorname{Tr}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde H_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and shrinks nothing, the adjoint being its negative with residual $0$. The jump part is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump terms the smallest distance to either form was $1.24$. So anti-Hermiticity marks the reversible generator here as elsewhere, and the fall of $P$ sits outside the Hermitian/anti-Hermitian alternative altogether.
 
-The derivative form swaps the two labels. With $G=-i\tilde R_{\Psi,\mathrm{eff}}$,
+The derivative form swaps the two labels. With $G=-i\tilde H_{\Psi,\mathrm{eff}}$,
 
 $$
-G=-\frac12\tilde\Gamma-i\tilde R_\Psi .
+G=-\frac12\tilde\Gamma-i\tilde H_\Psi .
 $$
 
-The Hermitian part of $G$ is $-\frac12\tilde\Gamma$ and the anti-Hermitian part is $-i\tilde R_\Psi$. For the central pole, $G_\star=-iz_\star=-\frac{\Gamma}{2}e_t-iE_Re_t$, and the shrinkage is again the Hermitian part. A stable state has $\tilde\Gamma=0$, its generator is anti-Hermitian, and its evolution is unitary.
+The Hermitian part of $G$ is $-\frac12\tilde\Gamma$ and the anti-Hermitian part is $-i\tilde H_\Psi$. For the central pole, $G_\star=-iz_\star=-\frac{\Gamma}{2}e_t-iE_Re_t$, and the shrinkage is again the Hermitian part. A stable state has $\tilde\Gamma=0$, its generator is anti-Hermitian, and its evolution is unitary.
 
 The norm used in this section is the Hermitian norm $\langle\cdot\rangle_*$, the Hilbert-space norm of the evolving element, not the quaternionic norm: on $\tilde{Ϛ}_{\Psi}$ the Hermitian norm measures purity, and the quaternionic norm is the impurity that the informational side reads as information.
 
 | object | sector | property | dynamical role |
 | --- | --- | --- | --- |
-| Hamiltonian $\tilde R_\Psi$ | $\mathbb{B}_{\Psi}$ | Hermitian | the observable; reversible through $-i\tilde R_\Psi$ |
-| generator $-i\tilde R_\Psi$ | $\mathbb{B}_{\Phi}$ | anti-Hermitian | unitary, norm-preserving flow |
+| Hamiltonian $\tilde H_\Psi$ | $\mathbb{B}_{\Psi}$ | Hermitian | the observable; reversible through $-i\tilde H_\Psi$ |
+| generator $-i\tilde H_\Psi$ | $\mathbb{B}_{\Phi}$ | anti-Hermitian | unitary, norm-preserving flow |
 | width $\Gamma$ | centre (a number) | $\Gamma\ge0$ | decay rate of the eliminated channel |
 | pole $z_\star$ | centre (a number) | second sheet | fixes the decay law over its window |
-| generator $G=-\frac12\tilde\Gamma-i\tilde R_\Psi$ | effective | Hermitian part $-\frac12\tilde\Gamma$ | Hermitian part shrinks, anti-Hermitian part oscillates |
-| commutator $-i[\tilde R_\Psi,\cdot]$ | $\mathbb{B}_{\Phi}$ | anti-Hermitian in the Hilbert–Schmidt form | rotates the state, shrinks nothing |
+| generator $G=-\frac12\tilde\Gamma-i\tilde H_\Psi$ | effective | Hermitian part $-\frac12\tilde\Gamma$ | Hermitian part shrinks, anti-Hermitian part oscillates |
+| commutator $-i[\tilde H_\Psi,\cdot]$ | $\mathbb{B}_{\Phi}$ | anti-Hermitian in the Hilbert–Schmidt form | rotates the state, shrinks nothing |
 
 The strongest objection is that the section splits one word into two and then picks a side. It does pick, and the choice follows the corpus. An anti-Hermitian element generates a reversible flow, and no element of either sector carries a rate, because a falling probability is not a property of an element. A decay is the survival probability of one slot falling while the whole is conserved; that is the content of the elimination in *The Unstable State and the Complex Energy Pole*, and it is the content of the trace-preservation in the channel article. "Hermitian is reversible" is exact for the Hamiltonian, "anti-Hermitian is lossy" is false as stated and true only of the coefficient of an eliminated channel in the reduced equation, and "the anti-Hermitian sector is lossy" is false, because the sector is a set of elements and no element falls.
 
@@ -505,7 +505,7 @@ $$
 and its scalar part is $\tfrac12$. The trace is the total probability, and the Born weight is the ratio of two traces,
 
 $$
-p=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)}{\operatorname{Tr}\tilde{Ϛ}_{\Psi}},
+p=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{\operatorname{Tr}\tilde{Ϛ}_{\Psi}},
 \qquad
 \operatorname{Tr}\tilde{Ϛ}_{\Psi}=1 .
 $$
@@ -771,15 +771,15 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | the norm of the exponential is fixed by three numbers | established | the law of *Relations between the Biquaternion Exponential and the Fourier Kernel*; checked to $1.4\times10^{-15}$ |
 | the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_\eta Q_\eta^2\ge0$ for a real vector part, $-\sum_\eta q_\eta^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
 | a survival probability can fall while the total is conserved | established | band model, 2000 levels: $P_0$ falls $1\to0.135$, total norm $1.000000000$; checked |
-| the survival probability leaves one quadratically | corpus result | $P=1-\frac{\Delta^{2}\,\tilde{R}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r'^2_t=0.800$ vs $g^2N=0.8$ |
+| the survival probability leaves one quadratically | corpus result | $P=1-\frac{\Delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r'^2_t=0.800$ vs $g^2N=0.8$ |
 | the exponential is an intermediate-time fit, not the law | corpus result | quadratic start, power-law tail; deficit ratio $6287$ at $r'_t=10^{-4}$ |
 | the width is the imaginary part of the central self-energy | corpus result | *The Unstable State and the Complex Energy Pole* |
-| in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde R_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde R_\Psi$; checked |
+| in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde H_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde H_\Psi$; checked |
 | the effective anti-Hermitian part decays the norm at rate $\tilde\Gamma$ | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*$; checked on 100 elements |
 | the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-i(w/(\hbar c))r'_t}v\rVert^2=e^{2\operatorname{Im}(w)r'_t/(\hbar c)}$; checked to $7.8\times10^{-16}$ |
 | the Lindblad flow preserves the trace | established | cyclicity; checked to $1.8\times10^{-15}$ |
 | the norm lost on the no-jump branch is the total jump probability | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked |
-| the commutator $-i[\tilde R_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form | established | the adjoint is its negative; residual $0$ |
+| the commutator $-i[\tilde H_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form | established | the adjoint is its negative; residual $0$ |
 | the entropy is a function of the quaternionic norm | corpus result | *Von Neumann Entropy and the Biquaternion Norm* |
 | the entropy increases under coarse-graining | corpus result | *Coarse-Graining and the Biquaternion Entropy Functional* |
 | the informational reading of the norm | hypothesis | the sector hypothesis of the corpus |
@@ -800,7 +800,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 - Conjugation by a $*$-unitary element fixes the trace and the determinant of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
 - The algebra attaches two numbers to an element: the trace, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image. A similarity fixes both because a similarity fixes the spectrum.
 - On $\mathbb{B}_{\Phi}$ the trace is energy, $E=\frac{c}{2i}\operatorname{Tr}\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
-- The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde R_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
+- The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde H_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
 - The material split is a factorisation, not a sum: $\tilde P_{\Phi}=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
 - Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural$.
 - On $\mathbb{B}_{\Psi}$ the trace is the normalisation, $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
@@ -829,10 +829,10 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | the state, $\lvert\vec r\rvert\le1$ |
 | $S(\tilde{Ϛ}_{\Psi})=h((1+\lvert\vec r\rvert)/2)$ | the von Neumann entropy |
 | $P=2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_*$ | the purity, $P+2\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=1$ |
-| $\tilde R_\Psi$ | the Hermitian Hamiltonian or observable, $\tilde R_\Psi=\tilde R_\Psi^{*}$ |
+| $\tilde H_\Psi$ | the Hermitian Hamiltonian or observable, $\tilde H_\Psi=\tilde H_\Psi^{*}$ |
 | $\tilde\Gamma$ | the Hermitian width element, $\tilde\Gamma=\tilde\Gamma^{*}\ge0$, of the eliminated channel |
-| $\tilde R_{\Psi,\mathrm{eff}}=\tilde R_\Psi-\frac{i}{2}\tilde\Gamma$ | the effective Hamiltonian of the reduced slot, a shorthand, not an element of the algebra |
-| $G=-i\tilde R_{\Psi,\mathrm{eff}}$ | the derivative-form generator, $G=-\frac12\tilde\Gamma-i\tilde R_\Psi$ |
+| $\tilde H_{\Psi,\mathrm{eff}}=\tilde H_\Psi-\frac{i}{2}\tilde\Gamma$ | the effective Hamiltonian of the reduced slot, a shorthand, not an element of the algebra |
+| $G=-i\tilde H_{\Psi,\mathrm{eff}}$ | the derivative-form generator, $G=-\frac12\tilde\Gamma-i\tilde H_\Psi$ |
 | $c$, $\hbar$, $k_B$ | the cone scale, the imported action, the imported entropy unit |
 
 ## Further Reading

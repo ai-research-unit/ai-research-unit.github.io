@@ -262,21 +262,21 @@ Two further algebraic properties of the coupled idempotents are worth recording,
 The exchange structure determines the spectrum of any two-particle interaction built from the total spin. The **Heisenberg coupling** is
 
 $$
-\tilde R_\Psi=-J_{\mathrm{ex}}\sum_{\eta=1}^{3}\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)},
+\tilde H_\Psi=-J_{\mathrm{ex}}\sum_{\eta=1}^{3}\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)},
 \qquad J_{\mathrm{ex}}\ \text{the exchange constant},
 $$
 
 the standard isotropic exchange; written in the algebra, using the coupling term,
 
 $$
-\tilde R_\Psi=-J_{\mathrm{ex}}\left(\frac{\hbar^{2}}{2}F-\frac{\hbar^{2}}{4}e_t\otimes e_t\right)
+\tilde H_\Psi=-J_{\mathrm{ex}}\left(\frac{\hbar^{2}}{2}F-\frac{\hbar^{2}}{4}e_t\otimes e_t\right)
 =-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}\,F+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\,e_t\otimes e_t .
 $$
 
 This is a Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ — a legitimate observable — and its spectral decomposition is immediate from that of $F$, on using $F=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}$ and $e_t\otimes e_t=\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}$:
 
 $$
-\tilde R_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}\left(\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}\right)+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\left(\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}\right)
+\tilde H_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}\left(\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{\mathrm{asym}}\right)+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\left(\tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}\right)
 =-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}\,\tilde\Pi_{\mathrm{sym}}+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}\,\tilde\Pi_{\mathrm{asym}} .
 $$
 
@@ -302,7 +302,7 @@ $$
 =2\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}+\frac{3\,\hbar^{2}}{2}e_t\otimes e_t
 $$
 
-gives $\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}=\tfrac12\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,\hbar^{2}}{2}e_t\otimes e_t\right)$, so that $\tilde R_\Psi=-\tfrac{J_{\mathrm{ex}}}{2}\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,\hbar^{2}}{2}e_t\otimes e_t\right)$ and the eigenvalues are $-\tfrac{J_{\mathrm{ex}}}{2}\left(2\,\hbar^{2}-\frac{3\,\hbar^{2}}{2}\right)=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $-\tfrac{J_{\mathrm{ex}}}{2}\left(0-\frac{3\,\hbar^{2}}{2}\right)=+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet. The two routes agree.
+gives $\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}=\tfrac12\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,\hbar^{2}}{2}e_t\otimes e_t\right)$, so that $\tilde H_\Psi=-\tfrac{J_{\mathrm{ex}}}{2}\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,\hbar^{2}}{2}e_t\otimes e_t\right)$ and the eigenvalues are $-\tfrac{J_{\mathrm{ex}}}{2}\left(2\,\hbar^{2}-\frac{3\,\hbar^{2}}{2}\right)=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $-\tfrac{J_{\mathrm{ex}}}{2}\left(0-\frac{3\,\hbar^{2}}{2}\right)=+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet. The two routes agree.
 
 ## Partial Traces and the Reduced States
 
@@ -371,7 +371,7 @@ The article established the following.
 - **The coupled idempotents.** $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of trace $3$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of trace $1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\Psi,\mathrm{tot}}^2$, with $\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}}$.
 - **The four coupled idempotents.** $\tilde\Pi_{1,\pm1}=\tilde\Pi_\pm\otimes \tilde\Pi_\pm$, $\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1}$, $\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}}$; they are minimal Hermitian idempotents of trace one resolving the identity, and the total spin acts on them by $\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
 - **Exchange symmetry.** $F \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$: the singlet is antisymmetric, the triplet symmetric; the singlet is annihilated by the total ladder operators and is a zero divisor of the two-qubit algebra.
-- **The Heisenberg coupling.** For $\tilde R_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$, the eigenvalues are $-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet, with splitting $\hbar^{2}\,J_{\mathrm{ex}}$; the Hamiltonian is the algebra element $\tilde R_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}F+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}e_t\otimes e_t$.
+- **The Heisenberg coupling.** For $\tilde H_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$, the eigenvalues are $-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet, with splitting $\hbar^{2}\,J_{\mathrm{ex}}$; the Hamiltonian is the algebra element $\tilde H_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}F+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}e_t\otimes e_t$.
 - **Reduced states.** $\mathrm{Tr}_2(\tilde\Pi_{1,\pm1})=\tilde\Pi_\pm$ are pure; $\mathrm{Tr}_2(\tilde\Pi_{1,0})=\mathrm{Tr}_2(\tilde\Pi_{0,0})=\tfrac12 e_t$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
 - **Two idempotent bases.** The coupled basis and the Bell basis are two orthogonal families of minimal idempotents of the same algebra, sharing the singlet and related by a Hadamard rotation.
 
@@ -392,7 +392,7 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 | $F=\tfrac12(e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Exchange operator |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents |
 | $\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$ | Coupled idempotents, $s_{\mathrm{tot}}\in\{1,0\}$ |
-| $\tilde R_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$ | Heisenberg coupling |
+| $\tilde H_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$ | Heisenberg coupling |
 | $J_{\mathrm{ex}}$ | Exchange constant (ferromagnetic $J_{\mathrm{ex}}>0$) |
 | $\mathsf{M}_2(e_t)=I_2,\ \mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ | Matrix isomorphism |
 

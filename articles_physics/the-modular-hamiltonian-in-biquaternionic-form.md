@@ -14,9 +14,9 @@ $$
 \qquad
 \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3],
 $$
-and the KMS state of *The KMS Condition and the Biquaternion Framework* is the **thermal state of $\tilde H_{\Psi,\mathrm{modular}}$**: the state is Gibbs with respect to the modular Hamiltonian. This is the content of the Takesaki–Winnink theorem, quoted by the modular-theory parent and used here unchanged. The modular Hamiltonian is therefore to the modular flow what the Hamiltonian is to ordinary time evolution, and the two roles can be separated: the physical Hamiltonian $\tilde R_\Psi$ is what appears in the Gibbs weight, while $\tilde H_{\Psi,\mathrm{modular}}$ is the shifted and rescaled operator whose flow the state is KMS with respect to, $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$ for a Gibbs state.
+and the KMS state of *The KMS Condition and the Biquaternion Framework* is the **thermal state of $\tilde H_{\Psi,\mathrm{modular}}$**: the state is Gibbs with respect to the modular Hamiltonian. This is the content of the Takesaki–Winnink theorem, quoted by the modular-theory parent and used here unchanged. The modular Hamiltonian is therefore to the modular flow what the Hamiltonian is to ordinary time evolution, and the two roles can be separated: the physical Hamiltonian $\tilde H_\Psi$ is what appears in the Gibbs weight, while $\tilde H_{\Psi,\mathrm{modular}}$ is the shifted and rescaled operator whose flow the state is KMS with respect to, $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ for a Gibbs state.
 
-The article is deliberately narrow. It is the companion of one theorem and three article parents: the modular-theory article supplies $S$, $\Delta$ and the flow; the KMS article supplies the boundary relation whose generator $\tilde H_{\Psi,\mathrm{modular}}$ is; the partition-function article supplies the Gibbs form that ties $\tilde H_{\Psi,\mathrm{modular}}$ to $\tilde R_\Psi$. This article does three things the parents do not. It defines $\tilde H_{\Psi,\mathrm{modular}}$ from $\Delta$ and checks the two hypotheses on which that definition rests — the cyclic-and-separating hypothesis, inherited from the construction of $\Delta$, and the **strict positivity** of $\Delta$, without which $-\log\Delta$ does not exist. It fixes the **sign convention** in $\Delta=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and holds it, because the sign of $\tilde H_{\Psi,\mathrm{modular}}$ is the standard error in this subject and the opposite convention reverses which flow is KMS. And it isolates the structural question that the finite-dimensional model cannot settle: whether $\tilde H_{\Psi,\mathrm{modular}}$ is a **local** operator, which it is not in general, the exceptional cases being exactly the ones in which the modular flow is a geometric symmetry flow (Bisognano–Wichmann).
+The article is deliberately narrow. It is the companion of one theorem and three article parents: the modular-theory article supplies $S$, $\Delta$ and the flow; the KMS article supplies the boundary relation whose generator $\tilde H_{\Psi,\mathrm{modular}}$ is; the partition-function article supplies the Gibbs form that ties $\tilde H_{\Psi,\mathrm{modular}}$ to $\tilde H_\Psi$. This article does three things the parents do not. It defines $\tilde H_{\Psi,\mathrm{modular}}$ from $\Delta$ and checks the two hypotheses on which that definition rests — the cyclic-and-separating hypothesis, inherited from the construction of $\Delta$, and the **strict positivity** of $\Delta$, without which $-\log\Delta$ does not exist. It fixes the **sign convention** in $\Delta=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and holds it, because the sign of $\tilde H_{\Psi,\mathrm{modular}}$ is the standard error in this subject and the opposite convention reverses which flow is KMS. And it isolates the structural question that the finite-dimensional model cannot settle: whether $\tilde H_{\Psi,\mathrm{modular}}$ is a **local** operator, which it is not in general, the exceptional cases being exactly the ones in which the modular flow is a geometric symmetry flow (Bisognano–Wichmann).
 
 Three features organize what follows.
 
@@ -85,11 +85,11 @@ $$
 $$
 so the state is the Gibbs state of $\tilde H_{\Psi,\mathrm{modular}}$ at unit temperature. The physical Hamiltonian is recovered by rescaling: for a Gibbs state at inverse temperature $\beta$,
 $$
-\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t,
+\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t,
 \qquad
 Z=\mathrm{Tr}\big(\exp(-\beta H)\big),
 $$
-so $\tilde H_{\Psi,\mathrm{modular}}$ differs from $\beta\tilde R_\Psi$ by the additive scalar $\log Z$ that normalizes the state. The modular Hamiltonian is thus not the physical Hamiltonian; it is the operator whose unit-temperature Gibbs state is the given state, and the normalization $\log Z$ — hence the free energy $F=-\beta^{-1}\log Z$ — is carried by its scalar part.
+so $\tilde H_{\Psi,\mathrm{modular}}$ differs from $\beta\tilde H_\Psi$ by the additive scalar $\log Z$ that normalizes the state. The modular Hamiltonian is thus not the physical Hamiltonian; it is the operator whose unit-temperature Gibbs state is the given state, and the normalization $\log Z$ — hence the free energy $F=-\beta^{-1}\log Z$ — is carried by its scalar part.
 
 ## The Modular Hamiltonian in the Biquaternion Algebra
 
@@ -230,19 +230,19 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ | $1.0$ to $10^{-39}$ |
 
-The second state is the single-mode thermal state of the partition-function article, $\tilde R_\Psi=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
+The second state is the single-mode thermal state of the partition-function article, $\tilde H_\Psi=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
 $$
-\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t,
+\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t,
 \qquad
 Z=1+\exp(-\beta\omega)=1.339596,
 \qquad
 \log Z=0.292368,
 $$
-reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ at inverse temperature $\beta$, the same identity $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$ was checked on the independent data $r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, where
+reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ at inverse temperature $\beta$, the same identity $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ was checked on the independent data $r_t=0.7$, $\vec r_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, where
 $$
 Z=2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|)=1.547753
 $$
-and $\tilde H_{\Psi,\mathrm{modular}}-(\beta\tilde R_\Psi+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
+and $\tilde H_{\Psi,\mathrm{modular}}-(\beta\tilde H_\Psi+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
 **The failure when positivity is dropped.** If $\tilde{Ϛ}_{\Psi}$ is not positive definite — say $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde Q_3$ with $\langle\tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}\tilde Q_3)=0$, hence $\tilde Q_3\Omega=0$, and the Tomita rule $\tilde Q_3\Omega\mapsto\tilde Q_3^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde Q_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde H_{\Psi,\mathrm{modular}}$ is exactly the hypothesis carried by $\Delta$.
 
@@ -252,7 +252,7 @@ The verification was run on the state that was chosen for its genericity and on 
 
 The plain form, read as the trace formula, inherited from the read list,
 $$
-\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*}),
+\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}),
 \qquad
 \mathrm{Tr}(e_t)=2,
 $$
@@ -270,7 +270,7 @@ $$
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
-Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$. With $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$,
+Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$. With $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$,
 $$
 Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)
 =2\exp(-\beta r_t)\cosh(\beta|\vec r_\Psi|),
@@ -412,7 +412,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\Delta^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta r_t+\log Z$ and $\vec a=\beta\vec r_\Psi$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde H_{\Psi,\mathrm{modular},W},\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 
@@ -425,7 +425,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
-| $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $S=J\Delta^{1/2}$ | Tomita operator and its polar decomposition |
 | $\Delta=S^*S\ge0$ | Modular operator; $\Delta>0$ iff the state is faithful |
 | $\tilde H_{\Psi,\mathrm{modular}}=-\log\Delta$ | Modular Hamiltonian; $\Delta=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ |
@@ -438,7 +438,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
 | $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$ | Scalar part of $\tilde H_{\Psi,\mathrm{modular}}$ |
 | $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | Vector part of $\tilde H_{\Psi,\mathrm{modular}}$ |
-| $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
+| $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
 | $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
 | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ | Wedge modular Hamiltonian (Bisognano–Wichmann) |
@@ -450,7 +450,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 
 - Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
 - Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde H_{\Psi,\mathrm{modular}}$.
-- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde R_\Psi+(\log Z)e_t$.
+- Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$.
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
 - Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{B}_{\Psi}$.
 - Companion article [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.

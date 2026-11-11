@@ -77,10 +77,10 @@ It is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_{
 
 **The scalar part.** $\mathrm{Sc}$ is the coefficient of $e_t$. It is defined on $\mathbb{B}$ before any matrix is chosen, and it turns the product into a number. No representation enters.
 
-**The restriction to $\mathbb{B}_{\Psi}$.** An element of the sector is $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t,\vec r_\Psi$ real, so $\tilde R_\Psi^{*}=\tilde R_\Psi$. The Hermitian form therefore equals the plain form there,
+**The restriction to $\mathbb{B}_{\Psi}$.** An element of the sector is $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$ with $r_t,\vec r_\Psi$ real, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. The Hermitian form therefore equals the plain form there,
 
 $$
-\langle\tilde{R}_{\Psi,1},\tilde{R}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2} ,
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2} ,
 $$
 
 the three minus signs of the bilinear expansion being cancelled by $i^2=-1$ from the imaginary coefficients. The plain form is the restriction, not a second pairing.
@@ -95,15 +95,15 @@ $$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12.
 $$
 
-**The weight.** With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and $\tilde R_\Psi=r_t\,e_t+i\vec r_\Psi$,
+**The weight.** With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$,
 
 $$
-p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
-=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
+p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
+=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
 =r_t+\vec r\cdot\vec r_\Psi.
 $$
 
-The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde R_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde R_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
+The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
 
 #### The quaternionic form: the interval
 
@@ -156,7 +156,7 @@ $$
 
 This is the trace reading of the Hermitian form, not a fifth form. It is used only at normalisation; the Born weight itself is stated in the quantum section as the normalised Hermitian form, and its trace reading is recorded there, last.
 
-**What the trace is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}^{1/2}\tilde R_\Psi\tilde{Ϛ}_{\Psi}^{1/2})\ge0$ for $\tilde{Ϛ}_{\Psi},\tilde R_\Psi\ge0$; that non-negativity is the reason the star belongs in the probability reading.
+**What the trace is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}^{1/2}\tilde H_\Psi\tilde{Ϛ}_{\Psi}^{1/2})\ge0$ for $\tilde{Ϛ}_{\Psi},\tilde H_\Psi\ge0$; that non-negativity is the reason the star belongs in the probability reading.
 
 ### One operation, three uses
 
@@ -220,17 +220,17 @@ Seven reasons. The first is decisive.
 
 2. **The sector is the observable algebra of a two-state system, exactly.** $\mathsf{M}_2(\mathbb{B}_{\Psi})$ is the Hermitian $2\times2$ matrices; an element is
 $$
-\boxed{\;\mathsf{M}_2(\tilde R_\Psi) = r_t\,I_2 + \vec r_\Psi\cdot\boldsymbol{\sigma}, \qquad \tilde R_\Psi = r_t\,e_t + i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)\;},
+\boxed{\;\mathsf{M}_2(\tilde H_\Psi) = r_t\,I_2 + \vec r_\Psi\cdot\boldsymbol{\sigma}, \qquad \tilde H_\Psi = r_t\,e_t + i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)\;},
 $$
 with real $r_t,\vec r_\Psi$, and its spectrum is $r_t+\lvert\vec r_\Psi\rvert$ and $r_t-\lvert\vec r_\Psi\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.
 
-3. **The probability weight is the normalised Hermitian form, and on $\mathbb{B}_{\Psi}$ it is the Born rule.** The form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on $\mathbb{B}_{\Psi}$ it coincides with the plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is its restriction, but the weight below is written with the star on the sector and on the algebra alike; the scalar part is the coefficient of $e_t$ and needs no matrix. On $\mathbb{B}_{\Psi}$ the form is real and positive definite, of signature $(4,0)$, and it does not multiply — which is exactly what a probability needs. The unit satisfies $\langle e_t\rangle_{*}=1$; a state is normalised against it by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$; and the weight of an outcome with effect $\tilde R_\Psi$ is
+3. **The probability weight is the normalised Hermitian form, and on $\mathbb{B}_{\Psi}$ it is the Born rule.** The form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$; on $\mathbb{B}_{\Psi}$ it coincides with the plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which is its restriction, but the weight below is written with the star on the sector and on the algebra alike; the scalar part is the coefficient of $e_t$ and needs no matrix. On $\mathbb{B}_{\Psi}$ the form is real and positive definite, of signature $(4,0)$, and it does not multiply — which is exactly what a probability needs. The unit satisfies $\langle e_t\rangle_{*}=1$; a state is normalised against it by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$; and the weight of an outcome with effect $\tilde H_\Psi$ is
 $$
-\boxed{\;p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
-=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
+\boxed{\;p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
+=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
 =r_t+\vec r\cdot\vec r_\Psi\;}.
 $$
-In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})=r_t+\vec r\cdot\vec r_\Psi$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{B}_{\Psi}$ the star in the numerator is inert, since $\tilde R_\Psi^{*}=\tilde R_\Psi$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde R_\Psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
+In the $2\times2$ image, where $\mathrm{Tr}:=\mathrm{tr}\circ\mathsf{M}_2$ as declared above, $\mathrm{Tr}=2\,\mathrm{Sc}$ and $\mathrm{Tr}(e_t)=2$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=r_t+\vec r\cdot\vec r_\Psi$ and the weight reads $p=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$. This is the trace formula, a reading of the pairing and not one of the four algebraic norms. On $\mathbb{B}_{\Psi}$ the star in the numerator is inert, since $\tilde H_\Psi^{*}=\tilde H_\Psi$, so the same number is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$. The star is what makes the pairing positive definite on the whole algebra. On the sector the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes $\mathrm{tr}(AB)$ equal to its conjugate; it is non-negative for $0\le\tilde H_\Psi\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. The weight is therefore $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.
 
 4. **The state space is not added: it is the positive cone of the sector.** The pure states are the algebra's own idempotents,
 $$
@@ -383,7 +383,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover |
 | $\tilde{\Pi} = \tfrac12(e_t+i\vec u_{\mathrm r})$ | Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde{\Pi},e_t\rangle_{*}=\tfrac12$; trace one in the $2\times2$ reading |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | State: positive, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; trace one in the $2\times2$ reading; the Bloch ball |
-| $\tilde R_\Psi = r_t\,e_t+i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)$ | Observable: Hermitian, real spectrum $r_t\pm\lvert\vec r_\Psi\rvert$ |
+| $\tilde H_\Psi = r_t\,e_t+i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)$ | Observable: Hermitian, real spectrum $r_t\pm\lvert\vec r_\Psi\rvert$ |
 | $\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$ | Nilpotent partner of the idempotent $\tilde{\Pi}$ in the state module |
 | $c$ | Speed of light; $i r'_t$ is the material time coordinate |
 | $\mathbb{B}_{H}$ | Quaternion subspace: real scalar, real vector, signature $(4,0)$, elliptic; the Wick target |

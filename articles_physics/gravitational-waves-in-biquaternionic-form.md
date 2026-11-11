@@ -336,7 +336,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\tilde{Q}_{3,\mu\nu} = \tfrac12\sum_{\rho,\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
 | $\mathcal{Q}_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3r$ | Traceless (reduced) quadrupole moment |
 | $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}d^2\mathcal{Q}_{ij}^{\mathrm{TT}}/d{r'_{t}}^2$, $P = \tfrac{G}{5c^5}\langle\,d^3\mathcal{Q}_{ij}/d{r'_{t}}^3 d^3\mathcal{Q}_{ij}/d{r'_{t}}^3\rangle$ | Quadrupole amplitude and power |
-| $\mathrm{Tr}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{R}_{\Psi,1}\tilde{R}_{\Psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |
+| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Trace reading of the Hermitian form on the informational sector |
 
 ## Further Reading
 
