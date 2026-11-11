@@ -125,11 +125,11 @@
 </tr>
 <tr>
 <td>6</td>
-<td>$\tilde R_\Phi$, $\tilde R_\Psi$</td>
+<td>$\tilde R_\Phi$, $\tilde H_\Psi$</td>
 <td>material part, informational part</td>
-<td>the same glyphs, capitalised: $\tilde R_\Phi$, $\tilde R_\Psi$</td>
+<td>the same glyphs, capitalised: $\tilde R_\Phi$, $\tilde H_\Psi$</td>
 <td><strong>keep</strong>, case fixed</td>
-<td>$\tilde R_\Psi$: 584 in 41 files; $\tilde R_\Phi$: 256 in 34</td>
+<td>$\tilde H_\Psi$: 584 in 41 files; $\tilde R_\Phi$: 256 in 34</td>
 </tr>
 <tr>
 <td>7</td>
@@ -143,7 +143,7 @@
 <td>7b</td>
 <td>$H$</td>
 <td>the same element used as a Hamiltonian, with $\hbar$</td>
-<td>$H$ kept and declared once per article; $H=h_t e_t+i\vec h$ becomes $H=\tilde R_\Psi$</td>
+<td>$H$ kept and declared once per article; $H=h_t e_t+i\vec h$ becomes $H=\tilde H_\Psi$</td>
 <td><strong>restrict</strong></td>
 <td>$H=h_t\ldots$: 4 files; $\exp(-iHt'/\hbar)$: 19 sites in 11 files</td>
 </tr>
@@ -158,7 +158,7 @@
 </tbody>
 </table></div>
 <p><strong>Row 6 is settled, in capitals.</strong> The subscript of the element is the label of the sector the
-half lives in, so $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ and $\tilde R_\Phi\in\mathbb{B}_{\Phi}$: a
+half lives in, so $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ and $\tilde R_\Phi\in\mathbb{B}_{\Phi}$: a
 subscript and a sector cannot drift apart, because they are the same letter. Lowercase
 $\psi$ keeps its other jobs — the wavefunction in physics, the propositional variable in logic,
 the Chebyshev function, a spinor operand — and lowercase $\varphi$ keeps the generic map, the
@@ -202,11 +202,11 @@ defect being repaired, not part of the repair. So the operator letters go:</p>
 <tr>
 <td>$\vec h$</td>
 <td>$\vec r_\Psi$</td>
-<td>the vector part of $\tilde R_\Psi$, in the parallel already used for the material half</td>
+<td>the vector part of $\tilde H_\Psi$, in the parallel already used for the material half</td>
 </tr>
 <tr>
 <td>$h_t e_t+i\vec h$</td>
-<td>$\tilde R_\Psi$</td>
+<td>$\tilde H_\Psi$</td>
 <td>the element is one element</td>
 </tr>
 </tbody>
@@ -214,7 +214,7 @@ defect being repaired, not part of the repair. So the operator letters go:</p>
 <p>The parallel that decides it is already in the corpus: the material half is written
 $\tilde R_\Phi=i c r'_t\,e_t+\vec r_\Phi$ in 5 articles, with its vector part
 carrying the half's own subscript. The informational half must be written the same way,
-$\tilde R_\Psi=c r_t\,e_t+i\vec r_\Psi$. Today the two halves are asymmetric — one in
+$\tilde H_\Psi=c r_t\,e_t+i\vec r_\Psi$. Today the two halves are asymmetric — one in
 position letters, one in operator letters — and that asymmetry is the whole of the
 inconsistency.</p>
 <p><strong>The collision I wrongly feared.</strong> $\vec r$ is the Bloch vector of the state
@@ -226,10 +226,10 @@ $\tfrac12(c r_t+\vec r\cdot\vec r_\Psi)$ — Bloch direction against the observa
 vector part, which is what it always meant.</p>
 <p><strong>Rule D — the one place an exception is allowed.</strong> $H$ survives, and only as a declared
 abbreviation inside an article that actually does evolution:
-$H:=\tilde R_\Psi$ in its energy reading, with $\hbar$ in the exponent
+$H:=\tilde H_\Psi$ in its energy reading, with $\hbar$ in the exponent
 $\exp(-iHt'/\hbar)$ and not in the coefficient. It is declared once, at first use, in
 each of the 4 articles that write $H=h_t e_t+i\vec h$. Everywhere else the element is
-$\tilde R_\Psi$. A bare $h$ without a subscript stays the Planck constant.</p>
+$\tilde H_\Psi$. A bare $h$ without a subscript stays the Planck constant.</p>
 <h2 id="the-checker-fails-on-any-survivor">The checker (fails on any survivor)</h2>
 <p>Inside every <code>$…$</code> and <code>$$…$$</code> chunk, the pass must find zero of:</p>
 <div class="table-scroll"><table>
@@ -422,7 +422,7 @@ invented. Three layers are declared in the corpus, and each fixes its own letter
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Psi}$ informational</td>
-<td>$\tilde R_\Psi=c r_t\,e_t+i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)$</td>
+<td>$\tilde H_\Psi=c r_t\,e_t+i(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z)$</td>
 <td>$c r_t$</td>
 <td>$r'_k$</td>
 <td>$e_t\,\tfrac1c\partial/\partial r_t-i\vec e_k\,\partial/\partial r'_k$</td>
@@ -454,8 +454,8 @@ derivative under three names on the bridge.</p>
 </ul>
 <p><strong>The letter names, final.</strong> The general layer keeps $Q$. The material layer keeps
 $i c r'_t$ and $r_k$, with $x_k$ as its display form. The informational layer keeps
-$c r_t$ and $r'_k$, and its element is $\tilde R_\Psi$ — the Hermitian element, named
-$H$ only inside an article that does evolution, declared there as $H:=\tilde R_\Psi$
+$c r_t$ and $r'_k$, and its element is $\tilde H_\Psi$ — the Hermitian element, named
+$H$ only inside an article that does evolution, declared there as $H:=\tilde H_\Psi$
 with the energy reading and the $\hbar$ in the exponent.</p>
 <p><strong>Checker rule now enforced.</strong> A display may not carry a $Q$-slot and a sector letter
 unless the same display joins them with $=$. Mixed-frame count: <strong>0</strong>.</p>
