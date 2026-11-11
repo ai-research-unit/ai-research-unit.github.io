@@ -199,7 +199,7 @@ d_{ij}=\min\left(k_{Ti}^{2p},k_{Tj}^{2p}\right)\frac{\Delta R_{ij}^2}{R^2} ,
 \qquad
 d_{iB}=k_{Ti}^{2p} ,
 $$</p>
-<p>with $\Delta R_{ij}^2=\Delta\eta_{ij}^2+\Delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.</p>
+<p>with $\Delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.</p>
 <p><strong>Why the definition is part of the prediction.</strong> The number of jets in an event is not a property of the event. It is a property of the event and the resolution: at a coarse resolution any event is two-jet, at a fine one every event is many-jet. So a cross section "for three jets" is meaningless until the resolution is given, and the resolution is a number that must be stated and, ideally, varied to show that the dependence is under control. This is not a technicality of experimental practice. It is the same statement as <a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">the confinement article's</a> that the parton picture is a description at a resolution, made quantitative.</p>
 <h2 id="the-three-jet-rate">The Three-Jet Rate</h2>
 <p><strong>Where the third jet comes from.</strong> At order $\alpha_s$ the process $e^+e^-\to q\bar qg$ contributes, and it is the whole of the three-jet rate at that order. The rate is</p>
@@ -351,7 +351,7 @@ $$</p>
 <h2 id="the-sudakov-form-factor">The Sudakov Form Factor</h2>
 <p><strong>The exponentiation.</strong> The probability of no emission above the resolution is the exponential of minus the mean number,</p>
 <p>$$
-\Delta(Q,Q_0)=\exp\left[-\frac{2\alpha_sC_F}{\pi}\ln^2\frac{Q}{Q_0}\right] ,
+\mathcal{R}_{\mathrm{ev}}(Q,Q_0)=\exp\left[-\frac{2\alpha_sC_F}{\pi}\ln^2\frac{Q}{Q_0}\right] ,
 $$</p>
 <p>the Sudakov form factor. It is not an approximation to a sum; it <em>is</em> the sum of the leading double logarithms to all orders, and the reason the sum exponentiates is that independent emissions multiply probabilities.</p>
 <p><strong>The numbers.</strong></p>
@@ -456,9 +456,9 @@ $$</p>
 <p><strong>What a shower is.</strong> An algorithm that generates, event by event, a sequence of branchings $a\to bc$ with probabilities given by the splitting functions and an ordering variable, terminating when the resolution is reached. It is the numerical evaluation of the resummation, and it is the bridge between a partonic calculation and a hadronic final state.</p>
 <p><strong>The one structure that makes it work.</strong> The no-branching probability between two scales is</p>
 <p>$$
-\Delta(t_1,t_2)=\exp\left[-\int_{t_2}^{t_1}\frac{dt}{t}\int dz\,\frac{\alpha_s}{2\pi}P(z)\right] ,
+\mathcal{R}_{\mathrm{ev}}(t_1,t_2)=\exp\left[-\int_{t_2}^{t_1}\frac{dt}{t}\int dz\,\frac{\alpha_s}{2\pi}P(z)\right] ,
 $$</p>
-<p>and the shower's step is: draw a random number, solve $\Delta(t,t_1)=r$ for the next scale $t$, and if $t$ is above the cutoff, branch. The exponent is the integral of the splitting function, so the shower is the splitting functions plus a random number generator, and nothing else.</p>
+<p>and the shower's step is: draw a random number, solve $\mathcal{R}_{\mathrm{ev}}(t,t_1)=r$ for the next scale $t$, and if $t$ is above the cutoff, branch. The exponent is the integral of the splitting function, so the shower is the splitting functions plus a random number generator, and nothing else.</p>
 <p><strong>Why the ordering variable is not optional.</strong> A shower must order its emissions in a variable that is monotonic along the branching, or it will double-count. The candidates are the virtuality, the transverse momentum, and the angle; the last is the one that gets the coherence right, because a soft gluon emitted at a large angle cannot resolve the individual partons of a collinear pair. That coherence is the angular ordering, and it is what turns the naive double log into the correct one. It is also where the algebra's own structure is closest to the physics: the coherence is an interference effect between amplitudes, and the interference is the same one that <a href="the-photon-in-biquaternionic-form.html">the photon article</a> found in the two helicity halves of a null field.</p>
 <p><strong>What the shower does not do.</strong> It does not compute a cross section; it needs the hard process as input. It does not include the interference between emissions at the same order beyond what the ordering allows. It does not hadronise, and it stops at a cutoff where a non-perturbative model takes over. Its accuracy is leading-logarithmic with the coherence built in, and next-to-leading-logarithmic accuracy requires either a matching to a fixed-order calculation or a different formalism.</p>
 <h2 id="hadronisation-and-the-size-of-the-correction">Hadronisation and the Size of the Correction</h2>
@@ -663,7 +663,7 @@ $$</p>
 <td>$\frac{2\alpha_sC_F}{\pi}\ln^2(Q/Q_0)$, the double-log exponent</td>
 </tr>
 <tr>
-<td>$\Delta(Q,Q_0)$</td>
+<td>$\mathcal{R}_{\mathrm{ev}}(Q,Q_0)$</td>
 <td>Sudakov form factor, $e^{-W}$</td>
 </tr>
 <tr>

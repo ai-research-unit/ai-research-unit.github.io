@@ -133,15 +133,15 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge trans
 <h3 id="inserting-unity">Inserting Unity</h3>
 <p>Let $G_a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^{\tilde U}$ denote the gauge transform of $\mathcal{A}$ by $\tilde U$. The Faddeev–Popov identity is
 $$
-\boxed{\;1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right)\;},
+\boxed{\;1=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right)\;},
 $$
-which defines the determinant $\Delta[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
+which defines the determinant $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
 $$
-\Delta[\mathcal{A}^{\tilde U}]=\Delta[\mathcal{A}],
+\mathcal{J}_{\mathrm{FP}}[\mathcal{A}^{\tilde U}]=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}],
 $$
 because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
 $$
-Z=\int\mathcal{D}\mathcal{A}\;\Delta[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
+Z=\int\mathcal{D}\mathcal{A}\;\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
 $$
 in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\Delta$.</p>
 <h3 id="the-determinant-of-the-non-abelian-theory">The Determinant of the Non-Abelian Theory</h3>
@@ -151,7 +151,7 @@ $$
 \qquad
 M_{ab}=\frac{\delta G_a}{\delta\Gamma_b},
 $$
-and the determinant is $\Delta[\mathcal{A}]=\det M$. For the <strong>Lorenz gauge</strong> $G_a=\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}-\omega_a$, the variation is
+and the determinant is $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det M$. For the <strong>Lorenz gauge</strong> $G_a=\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}-\omega_a$, the variation is
 $$
 \mathcal{A}_{\mu a}\longmapsto\mathcal{A}_{\mu a}-(D_\mu\Gamma)_a ,
 \qquad
@@ -169,7 +169,7 @@ $$
 f_{abc}=2\varepsilon_{abc},
 $$
 which was verified on the defining representation, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ with $T_a=\tfrac12 \vec e_a$.</p>
-<p>The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\Delta[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.</p>
+<p>The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.</p>
 <h3 id="the-jacobi-identity-and-associativity">The Jacobi Identity and Associativity</h3>
 <p>The algebra that the determinant's locality and the Ward–Slavnov–Taylor identities require is the Jacobi identity of the structure constants,
 $$
@@ -182,9 +182,9 @@ In the framework this identity is not an independent axiom. The structure consta
 $$
 \det M=\int\prod_a d\bar c_a\,dc_a\;\exp\big(-\sum_{a,b}\bar c_a M_{ab}c_b\big),
 $$
-with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\Delta[\mathcal{A}]=\det(-\sum_\mu\partial/\partial R_\mu D_{\mu ab})$, it gives
+with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det(-\sum_\mu\partial/\partial R_\mu D_{\mu ab})$, it gives
 $$
-\Delta[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4r\,\sum_{a,b}\bar c_a\,M_{ab}c_b\right)
+\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4r\,\sum_{a,b}\bar c_a\,M_{ab}c_b\right)
 =\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(iS_{\mathrm{gh}}\right),
 $$
 $$
@@ -280,9 +280,9 @@ where $J_{\mathrm{gf}}$ and $J_{\mathrm{gh}}$ are the sources generated by $-\fr
 <p><strong>Imported, and left visible.</strong> The Faddeev–Popov trick itself and the insertion of unity; the representation of a determinant by a fermionic Gaussian integral; the gauge-fixing condition and the gauge parameter; the Nakanishi–Lautrup field; the Slavnov–Taylor identities and the standard renormalization of the coupling; the one-loop beta coefficient; the Gribov ambiguity and Singer's obstruction; and the non-perturbative construction of confinement. The algebra supplies the carrier and the structure constants; the analytic apparatus of the path integral is standard.</p>
 <p><strong>Not supplied.</strong> The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\zeta$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial/\partial R_\mu \tilde U)\tilde U^{-1}$ is anti-Hermitian in the spatial directions and Hermitian in the $i r'_t$ direction, so that a uniform assignment of all four components to $\mathbb{B}_{\Phi}$ is preserved in the space directions and obstructed in the time direction, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{B}_{\Phi}$ and $\mathcal{A}_k$ in $\mathbb{B}_{\Psi}$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.</p>
 <h2 id="summary">Summary</h2>
-<p>The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
+<p>The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
 $$
-\Delta[\mathcal{A}]=\det\big(-\sum_\mu\partial/\partial R_\mu D_{\mu ab}\big),
+\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det\big(-\sum_\mu\partial/\partial R_\mu D_{\mu ab}\big),
 \qquad
 D_{\mu ab}=\partial/\partial R_\mu\,\delta_{ab}-i\kappa\sum_c f_{abc}\mathcal{A}_{\mu c} ,
 $$
@@ -376,7 +376,7 @@ valid inside correlators up to contact terms, with the gauge content carried by 
 <td>Lorenz gauge-fixing condition</td>
 </tr>
 <tr>
-<td>$1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$</td>
+<td>$1=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$</td>
 <td>Faddeev–Popov identity</td>
 </tr>
 <tr>
