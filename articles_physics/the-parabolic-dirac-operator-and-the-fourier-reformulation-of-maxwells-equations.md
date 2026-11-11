@@ -61,7 +61,7 @@ $$
 and the two parabolic Dirac operators are the corpus's gradient and the negative of its conjugate, read in **real time**:
 
 $$
--\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = -(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = -\Box.
+-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = -(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = -\Box_\Phi.
 \tag{3}
 $$
 

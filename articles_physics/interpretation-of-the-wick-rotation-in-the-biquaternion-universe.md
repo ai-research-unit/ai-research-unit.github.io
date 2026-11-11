@@ -135,7 +135,7 @@ with a decaying integrand, and it is convergent (at least formally). The basis o
 In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{B}_{\Phi}$ is continued to a field on $\mathbb{B}_{H}$ by the substitution $i r'_t \mapsto c\tau$. The d'Alembertian, read on the material sector, is
 
 $$
-\Box = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2},
+\Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 
 and the same operator, read on the real coordinates of $\mathbb{B}_{H}$, is

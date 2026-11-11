@@ -10,7 +10,7 @@ This is an exercise in the electromagnetism series. It takes the wave equation f
 
 **The result.** With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta + \partial^2/\partial R_t^2$ is
 $$
-\boxed{\;G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right), \qquad \Box\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
+\boxed{\;G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right), \qquad \Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$
 and the retarded solution of the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ is
 $$
@@ -103,13 +103,13 @@ $$
 $$
 The first says the coefficient of $\frac{d^2u}{dg^2}$ vanishes; the second says the coefficient of $\frac{du}{dg}$ vanishes; the third converts the coefficient of $u$ into a source at the origin. Hence
 $$
-\Box G_u = -u(g)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -u(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\Box_\Phi G_u = -u(g)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -u(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
 the last equality because $\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ forces $R = 0$, where $g = r'_t$. Taking $u$ to be a nascent delta and passing to the limit gives
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\delta(r'_t - R)}{4\pi R},
 \qquad
-\Box\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
+\Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
 $$
 
 Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the *argument* $g$: because $(\nabla g)^2 = 1$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.
@@ -168,7 +168,7 @@ using $\int_0^\infty \sin(kR)\sin(kr'_t)\,dk = \frac{\pi}{2}\bigl[\delta(r'_t - 
 $$
 G_{\mathrm{adv}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t + R\right),
 \qquad
-\Box\,G_{\mathrm{adv}} = -\delta^{(4)}(\tilde{Q}),
+\Box_\Phi\,G_{\mathrm{adv}} = -\delta^{(4)}(\tilde{Q}),
 $$
 with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi}\mathrm{H}_{\mathrm{hvs}}(-r'_t)\delta({r'_{t}}^2 - R^2)$, and the Jacobian at the past root $r'_t = -R$ is again $2R$.
 
@@ -176,7 +176,7 @@ with support on the past light cone. In the invariant form it is $G_{\mathrm{adv
 $$
 G_{\mathrm{ret}} - G_{\mathrm{adv}} = \frac{1}{4\pi R}\Bigl[\delta\!\left(r'_t - R\right) - \delta\!\left(r'_t + R\right)\Bigr],
 \qquad
-\Box\,(G_{\mathrm{ret}} - G_{\mathrm{adv}}) = 0 .
+\Box_\Phi\,(G_{\mathrm{ret}} - G_{\mathrm{adv}}) = 0 .
 $$
 The difference is supported on both cones and is a solution of the source-free wave equation. It follows that the defining equation has an infinite family of solutions, all differing by solutions of the homogeneous equation, and that no algebraic manipulation of $\Box$ alone can single out the retarded one. The smeared pairing confirms this in both directions: $\int G_{\mathrm{ret}}\,\Box\xi = \int G_{\mathrm{adv}}\,\Box\xi = -\xi(0)$ for the Gaussian test function, while $\int (G_{\mathrm{ret}} - G_{\mathrm{adv}})\,\Box\xi = 0$.
 
@@ -216,7 +216,7 @@ S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \
 $$
 which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
 $$
-\Box S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
+\Box_\Phi S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box_\Phi\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$
 where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla_\Phi)^{\natural}$ would have produced $\Box S \neq 0$.
 
@@ -287,7 +287,7 @@ The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right),
 \qquad
-\Box\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|,
 $$
 derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(r'_t-R)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi}\mathrm{H}_{\mathrm{hvs}}(r'_t)\delta({r'_{t}}^2 - R^2)$ by the Jacobian conversion $\delta({r'_{t}}^2 - R^2) = \frac{1}{2R}\delta(r'_t-R)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
@@ -299,7 +299,7 @@ $$
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J_{\mathrm{ret}}}{R}\,d^3y,
 \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|\;}
 $$
-with all sources at the retarded time $r'_t - R$; the retarded solution is automatically in the Lorenz gauge when charge is conserved, because $\Box S = -\mu(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.
+with all sources at the retarded time $r'_t - R$; the retarded solution is automatically in the Lorenz gauge when charge is conserved, because $\Box_\Phi S = -\mu(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J) = 0$ and the retarded solution of the homogeneous equation with no incoming radiation vanishes. In the static limit the retarded potentials reduce to the Coulomb and Biot–Savart solutions, and for a point charge they reproduce the parent's static field exactly.
 
 ## Summary of Notation
 

@@ -184,7 +184,7 @@ the sum running over the four directions because the metric is $\delta_{\mu\nu}$
 **The trace is a divergence plus a square.** With $u=\ln\lVert\tilde\Xi\rVert$, so that $\partial_\mu\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert=\partial_\mu u$,
 
 $$
-\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\Box u+(\partial u)^{2},
+\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\Box_\Phi u+(\partial u)^{2},
 \qquad
 (\partial u)^{2}=\lvert\nabla u\rvert^{2}-\left(\frac{\partial u}{\partial r'_t}\right)^{2},
 $$

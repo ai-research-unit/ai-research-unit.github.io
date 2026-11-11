@@ -70,7 +70,7 @@ $$
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-with $\Delta_Q:=\sum_\eta\partial^2/\partial R_\eta^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, where $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ is the same operator written in the material parameters.
+with $\Delta_Q:=\sum_\eta\partial^2/\partial R_\eta^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, where $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ is the same operator written in the material parameters.
 
 The chiral pair is two first-order equations on two elements,
 

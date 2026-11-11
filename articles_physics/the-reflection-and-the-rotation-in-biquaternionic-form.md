@@ -16,7 +16,7 @@ $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
 \Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
-with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that there $\Box=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No basis operator of this article carries a derivative.
+with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that there $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No basis operator of this article carries a derivative.
 
 ## One Operator, Two Readings
 A basis operator of a matrix algebra is at once a point and an operator, and the quaternions show the doubling most plainly: a unit quaternion is a point of the three-sphere and it is also the rotation that acts on vectors by conjugation. The same element, read two ways.
@@ -229,7 +229,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
-with $\Box=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 

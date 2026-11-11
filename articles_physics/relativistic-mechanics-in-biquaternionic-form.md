@@ -201,7 +201,7 @@ $$
 \Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box-k_m^{2})\tilde{Ξ}=0$, with $\Box = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box-k_m^{2})\tilde{Ξ}=0$, with $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 

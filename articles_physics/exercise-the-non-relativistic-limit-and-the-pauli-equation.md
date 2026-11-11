@@ -35,7 +35,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
 \qquad
-\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},
+\Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},
 $$
 
 and the pure part of the gradient is written $D_3=\sum_\eta\vec e_\eta\partial/\partial r_\eta$. Minimal coupling shifts each derivative, $\partial/\partial R_\mu\to\partial/\partial R_\mu-\frac{iqA_{\mu}}{\hbar}$, and with it the gradient:
@@ -69,7 +69,7 @@ $$
 The massive case is not of that form, and the reason is a square. The square of the gradient is not scalar: the time unit commutes with the three spatial units instead of anticommuting with them, so the mixed derivatives add, and each spatial unit squares to $-e_t$, which puts the wrong sign on the Laplacian. Explicitly, on a general field,
 
 $$
-\tilde\nabla^2=\Box-2\Delta_\Phi-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial r_\eta},
+\tilde\nabla^2=\Box_\Phi-2\Delta_\Phi-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial r_\eta},
 $$
 
 so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.

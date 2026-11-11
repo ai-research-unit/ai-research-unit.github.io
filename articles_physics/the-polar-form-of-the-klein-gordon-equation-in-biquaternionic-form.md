@@ -36,7 +36,7 @@ Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating re
 
 The sections follow that order: the ansatz and its domain, the two real equations, the momentum and the current, the non-relativistic limit, what the change of variables adds, and the general field.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
 
 ## The Scalar Case: the Ansatz and Its Domain
 
@@ -78,19 +78,19 @@ The corpus's polar word, $\tilde Q=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde
 
 ### The identity
 
-The d'Alembertian of the ansatz separates into a real and an imaginary part with no remainder, because the amplitude and the action are real and the exponential is central. With $\Box=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector,
+The d'Alembertian of the ansatz separates into a real and an imaginary part with no remainder, because the amplitude and the action are real and the exponential is central. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector,
 
 $$
-\Box\!\left(\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}\right)
-=e^{iS_{\tilde\Xi}/\hbar}\left\{\Box\lVert\tilde\Xi\rVert+\frac{\lVert\tilde\Xi\rVert}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{\lVert\tilde\Xi\rVert}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
+\Box_\Phi\!\left(\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}\right)
+=e^{iS_{\tilde\Xi}/\hbar}\left\{\Box_\Phi\lVert\tilde\Xi\rVert+\frac{\lVert\tilde\Xi\rVert}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{\lVert\tilde\Xi\rVert}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
 $$
 
-The first two terms are real and the third is purely imaginary. The verification is one differentiation of a product: each derivative of the field returns a real term, an imaginary term and a cross term carrying both functions once, and the temporal second derivative enters with the sign that $\Box=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ gives it.
+The first two terms are real and the third is purely imaginary. The verification is one differentiation of a product: each derivative of the field returns a real term, an imaginary term and a cross term carrying both functions once, and the temporal second derivative enters with the sign that $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ gives it.
 
 Dividing by $\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}$ and using $\hbar k_m=mc$, the equation $\left(\Box-k_m^{2}\right)\Xi_t=0$ becomes the pair
 
 $$
-\boxed{\;\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\;}
+\boxed{\;\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\;}
 \qquad
 \boxed{\;\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0\;}
 $$
@@ -132,7 +132,7 @@ which is the companion's $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ wit
 The bracket $\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ carries the amplitude and its second derivatives, so $Q_{\mathrm{qnt}}$ appears to need the amplitude rather than the density. It does not. With $u=\ln\lVert\tilde\Xi\rVert$,
 
 $$
-\Box e^{u}=e^{u}\left(\Box u+(\partial u)^{2}\right),
+\Box_\Phi e^{u}=e^{u}\left(\Box_\Phi u+(\partial u)^{2}\right),
 \qquad
 (\partial u)^{2}=\lvert\nabla u\rvert^{2}-\left(\frac{\partial u}{\partial r'_t}\right)^{2},
 $$
@@ -443,7 +443,7 @@ Both coefficients are nonzero, and $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}
 The scalar case comes first: the field is central and is the one complex scalar $\Xi_t$. Its polar form is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real and $S_{\tilde\Xi}$ the action, so the angle $S_{\tilde\Xi}/\hbar$ is a pure number and the amplitude squared is the proper density $\rho_{\mathrm{num}}$. Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ gives two exact real equations,
 
 $$
-\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 \qquad
 \nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0,
 $$

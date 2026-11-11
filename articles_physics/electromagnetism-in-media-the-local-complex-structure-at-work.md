@@ -62,7 +62,7 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 
 The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
 $$
-\Box=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2,
+\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2,
 $$
 the d'Alembertian in the temporal length $r'_t$. Written in the clock time it is $\Delta-c^{-2}\,\partial^2/\partial {t'}^2$, the d'Alembertian of a medium with speed $c$, and there it reduces to the vacuum value with $c$ in place of $c_0$.
 
@@ -280,7 +280,7 @@ The equivalence is exact and two-way, not a weak-coupling approximation in $\bet
 **The non-chiral limit in the framework's own symbols.** At $\beta=0$ the operator is $\mathcal{M}_0=\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial r'_t$ commutes with $D$,
 $$
 \left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t+iD\right)
-=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta_\Phi=-\Box ,
+=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta_\Phi=-\Box_\Phi ,
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is *first* order.
 
@@ -999,7 +999,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\epsilon_0,\mu_0$ | Vacuum permittivity and permeability |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Constitutive relations |

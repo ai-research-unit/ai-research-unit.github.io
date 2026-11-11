@@ -173,7 +173,7 @@ with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equat
 
 **Reading the two parts of the coefficient.** Write $\vec F = -E - iH$ with $E, H$ real vectors. The real part enters the kernel as the phase weight $\exp(-i(E,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, which is a constant shift of the wave vector — a drift of the wave pattern, not a change of the dispersion relation, since the symbol depends on $\vec\zeta + \vec F$ — and the imaginary part enters as the exponential $\exp(-(H,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, a growth or decay with distance that makes a complex coefficient the mark of a driven or dissipative medium. The mass is the norm $m^2 = (\vec F,\vec F) = |E|^2 - |H|^2 + 2i(E,H)$: real and positive for a real coefficient, negative for a purely imaginary one, and complex in general. The plane-wave solutions, and the standing waves with exponentially growing or decaying amplitude that appear when the coefficient is imaginary, are catalogued in *Twistor Theory and Biquaternions*, where the same operator generates the algebraic twistors.
 
-**Convention.** Alexeyeva's $\Box_A = \partial^2_\tau - \Delta_\Phi$, with $\tau$ measured in units of length, is **minus** this article's $\Box = \partial^2_{i r'_t} + \Delta_\Phi$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.
+**Convention.** Alexeyeva's $\Box_A = \partial^2_\tau - \Delta_\Phi$, with $\tau$ measured in units of length, is **minus** this article's $\Box_\Phi = \partial^2_{i r'_t} + \Delta_\Phi$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.
 
 ## Plane Waves and the Dispersion Relation
 
@@ -312,7 +312,7 @@ and the last term is exactly the mass term of $\Box - k_m^{2}$. The two cancel, 
 
 $$
 \boxed{\;
-\left(\Box-k_m^{2}\right)\left(f\chi\right)
+\left(\Box_\Phi-k_m^{2}\right)\left(f\chi\right)
 = f\left(-\frac{\partial^{2}}{\partial {r'_{t}}^{2}} + 2 i k_m\,\frac{\partial}{\partial r'_t} + \Delta\right)\chi\;}.
 $$
 

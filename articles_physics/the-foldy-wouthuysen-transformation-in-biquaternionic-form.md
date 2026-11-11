@@ -33,7 +33,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}=-i\,e_t\frac{\partial}{\partial r'_t}-D_3,
 \qquad
-\Box\big|_{\mathbb{B}_{\Phi}}=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},
+\Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},
 \qquad
 D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial q_\eta}.
 $$
