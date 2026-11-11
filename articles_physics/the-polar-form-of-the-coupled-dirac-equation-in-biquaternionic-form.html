@@ -76,7 +76,7 @@
 \qquad
 \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_{L}=k_m\,\tilde\Xi_{R},
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
 $$</p>
 <p>with $\tilde A_{\Phi}$ the potential biquaternion and $ϙ$ the charge. <em>The Polar Form of the Dirac Equation in Biquaternionic Form</em> substitutes the polar word into the uncoupled pair. This article substitutes the same word into the coupled one, and reads what the connection does to it.</p>
 <p><strong>The claim, stated first.</strong> The covariant derivative enters the word at one place and at one place only: it is added to the phase gradient. The other seven parameters are untouched, by the coupling and by the gauge group alike. That is the whole of the article, and the rest is its warrant and its consequences.</p>
@@ -212,7 +212,7 @@ $$</p>
 <h3 id="the-covariant-wavevector">The Covariant Wavevector</h3>
 <p>The second bracket is a four-vector, and with the connection it is the <strong>covariant wavevector</strong>:</p>
 <p>$$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.
+\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.
 $$</p>
 <p><em>Proposition.</em> $\tilde K_{\Phi,\mathrm{gco}}$ lies in the material sector $\mathbb{B}_{\Phi}$, and for a plane wave, where the frame and the density are constant and the angle is linear,</p>
 <p>$$
@@ -241,8 +241,8 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde K_{\Phi}$</td>
-<td>$\tilde\nabla\alpha$</td>
-<td>shifts by $+\frac{ϙ}{\hbar}\tilde\nabla\Gamma$</td>
+<td>$\tilde\nabla_\Phi\alpha$</td>
+<td>shifts by $+\frac{ϙ}{\hbar}\tilde\nabla_\Phi\Gamma$</td>
 <td>the gradient of the word's angle; the canonical wavevector</td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ $$</p>
 \qquad
 \lambda=\exp\Bigl(\frac{i\,ϙ\,\Gamma}{\hbar}\Bigr),
 \qquad
-\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla\Gamma,
+\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma,
 \qquad \Gamma\ \text{real},
 $$</p>
 <p>with $\lambda$ central and of unit modulus.</p>
@@ -365,7 +365,7 @@ i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_0^{L}=k_m\tilde\Xi_0^{R},
 \qquad
 \tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}.
 $$</p>
-<p><em>Proof.</em> The derivative is left multiplication by $i\tilde K_{\Phi,\mathrm{gco}}$ by §<em>The Covariant Wavevector</em>, and the pair is the parent's with that operator in place of $\tilde\nabla$. The third relation follows from the first two as in the free case: eliminate $\tilde\Xi_0^{L}$ between them.</p>
+<p><em>Proof.</em> The derivative is left multiplication by $i\tilde K_{\Phi,\mathrm{gco}}$ by §<em>The Covariant Wavevector</em>, and the pair is the parent's with that operator in place of the gradient. The third relation follows from the first two as in the free case: eliminate $\tilde\Xi_0^{L}$ between them.</p>
 <p><strong>What the display says.</strong> The connection has not changed the form of the system. It has changed the element that appears in it, from the gradient of the angle to the covariant wavevector. A reader who knows the free polar system knows the coupled one, provided he reads the momentum as the kinetic momentum.</p>
 <h3 id="the-boost-is-the-kinetic-velocity">The Boost Is the Kinetic Velocity</h3>
 <p>The velocity is the boost, and the boost is now read from the covariant wavevector.</p>
@@ -511,7 +511,7 @@ $$</p>
 \tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi\left[\frac{1}{2}\frac{\partial_\mu\rho}{\rho}+i\Bigl(\partial_\mu\alpha+\frac{ϙ}{\hbar}A_\mu\Bigr)+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}\right].
 $$</p>
 <p>There is no fifth bracket. The interaction is inside the second, and none of the other three can hold it, because each is of a type a central scalar is not.</p>
-<p>The shift is the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}$, an element of the material sector, and for a plane wave $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi$. The momentum-space system of the coupled pair is the free one with $\tilde K_{\Phi}$ replaced by $\tilde K_{\Phi,\mathrm{gco}}$, including the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$.</p>
+<p>The shift is the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}$, an element of the material sector, and for a plane wave $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi$. The momentum-space system of the coupled pair is the free one with $\tilde K_{\Phi}$ replaced by $\tilde K_{\Phi,\mathrm{gco}}$, including the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$.</p>
 <p>The velocity is read from the covariant wavevector: $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\frac{\hbar}{m}\tilde K_{\Phi,\mathrm{gco}}$, so $\tilde P_{\Phi,\mathrm{gco}}=m\tilde V_{\Phi}$, and the canonical momentum is $\tilde P_{\Phi}=m\tilde V_{\Phi}-ϙ\tilde A_{\Phi}$. The mass term remains a frame factor, $\tilde\Xi_0^{L}=-\mathcal B_{\Psi}\tilde\Xi_0^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}=\tilde K_{\Phi,\mathrm{gco}}/(ik_m)$, and the relation carries neither $k_m$ nor the potential.</p>
 <p>The mass shell is one hyperboloid shape with one radius and two centres: $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ for the covariant components, and $(\pi_t+\frac{ϙ}{\hbar}a'_t)^{2}-|\vec\pi+\frac{ϙ}{\hbar}\vec A|^{2}=k_m^{2}$ for the canonical ones. The covariant surface is the one the algebra draws. The canonical surface is its translate, congruent to it and displaced by $-ϙ\tilde A_{\Phi}$. A constant potential translates the surface and leaves the radius, which is why no potential opens a gap.</p>
 <p>The gauge group moves one parameter of the eight. With $\lambda=\exp(\frac{ iϙ\Gamma}{\hbar})=e^{i\beta}$ the scale, the rapidity, the boost axis, the rotor angle and the rotor axis are unchanged, the angle becomes $\alpha+\beta$, and the quaternionic norm becomes $\lambda^{2}\langle\tilde\Xi\rangle_{\natural}$; the density, the current, the velocity and the spin direction are invariant. The relative phase of the two parts is not a multiplication by a central scalar, so the chart has no parameter for it, and the common phase is the only one that can be localized.</p>
@@ -547,8 +547,8 @@ $$</p>
 <td>The Dirac-field label of <em>Algebra and Element Conventions</em>; kept in $\tilde S_{\Psi,\mathrm{sp}}$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla,\ \tilde\nabla^{\natural}$</td>
-<td>Biquaternionic gradient and its quaternion conjugate, $\tilde\nabla^{\natural}\tilde\nabla=\Box$</td>
+<td>$\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$</td>
+<td>The material gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$</td>
 </tr>
 <tr>
 <td>$\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
@@ -563,7 +563,7 @@ $$</p>
 <td>Potential biquaternion, an element of $\mathbb{B}_{\Phi}$; $A_t=ia'_t$, $a'_t=\phi/c$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$</td>
+<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$</td>
 <td>Covariant derivative, left action</td>
 </tr>
 <tr>
@@ -571,7 +571,7 @@ $$</p>
 <td>Its components; central scalars</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}^{\natural}=\tilde\nabla^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$</td>
+<td>$\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$</td>
 <td>Its $\natural$-image; the operator of the second member</td>
 </tr>
 <tr>
@@ -607,7 +607,7 @@ $$</p>
 <td>Four-vector factor; $\cosh\theta_{\mathrm{rpd}}e_t-i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$</td>
 </tr>
 <tr>
-<td>$\tilde K_{\Phi}=\tilde\nabla\alpha$</td>
+<td>$\tilde K_{\Phi}=\tilde\nabla_\Phi\alpha$</td>
 <td>Canonical wavevector; shifts under the gauge group</td>
 </tr>
 <tr>

@@ -71,7 +71,7 @@
         <h1 id="biquaternion-physical-interpretation-of-operator-chirality"><strong>Biquaternion Physical Interpretation of Operator Chirality</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The question.</strong> What does the operator chirality of the biquaternion algebra predict, and what does it leave to physics?</p>
-<p><strong>The answer in one line.</strong> Chirality is a side. A pure left multiplier carries the left slot, a pure right multiplier the right slot, a scalar both slots at once, and the remaining operators no single side. Physics uses one basis operator, $-iR_u$ for a traceless $u$ with $u^2=-e_t$, and that basis operator is a pure right multiplier: it is an example of the right slot, never the definition of it. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, the two sit on opposite sides and therefore commute, so the derivative carries the basis operator's value unchanged. What carries a field from one value to the other is not the mass of the pair but a right multiplication by an element that anticommutes with $u$.</p>
+<p><strong>The answer in one line.</strong> Chirality is a side. A pure left multiplier carries the left slot, a pure right multiplier the right slot, a scalar both slots at once, and the remaining operators no single side. Physics uses one basis operator, $-iR_u$ for a traceless $u$ with $u^2=-e_t$, and that basis operator is a pure right multiplier: it is an example of the right slot, never the definition of it. The Dirac operator is a pure left multiplier, left multiplication by the gradient, so the two sit on opposite sides and therefore commute, and the derivative carries the basis operator's value unchanged. What carries a field from one value to the other is not the mass of the pair but a right multiplication by an element that anticommutes with $u$.</p>
 <p><strong>What this article does.</strong> It restates the mathematics in the form a physicist reads, and it states what the algebra does not supply. The proofs are in <em>Operator Chirality on the Biquaternion Algebra</em>, one click away, and nothing here is proved twice.</p>
 <p><strong>What it does not do.</strong> It does not derive a gauge group, a matter content or a mass value. It does not claim that the two sides are two different kinds of field: they are not, and §<em>What the Algebra Does Not Supply</em> states that limit in full.</p>
 <p><strong>The order of the article.</strong> Section §<em>Operator Chirality in One Page</em> gives the definition and the dimensions. Section §<em>The Operator That Realises the Split</em> states the four properties of the basis operator and the two sides. Section §<em>The Dirac Equation Reads the Sides</em> shows what the sides do to the equation and where the mass sits. Section §<em>The Eight Objects the Physics Does Not Need</em> gives, for each object that usually carries the name, the physical reason it is not needed. Section §<em>What the Algebra Does Not Supply</em> records the one thing the basis operator does not buy.</p>
@@ -211,16 +211,16 @@ L(a)\,R(b)=R(b)\,L(a)\quad\text{for all }a,b,
 $$
 so that
 $$
-[\,L(\tilde\nabla),-iR_u\,]=0 .
+[\,L(a),-iR_u\,]=0\quad\text{for every }a,
 $$
-A left multiplier and a right multiplier never fail to commute. The basis operator and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides, not a computation about arrays.</p>
+the gradient included. A left multiplier and a right multiplier never fail to commute. The basis operator and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides, not a computation about arrays.</p>
 <p><strong>What the basis operator does.</strong> It has two eigenvalues, and a field carries one of the two values. The value belongs to the field and the side belongs to the operator; nothing else is in play.</p>
 <h2 id="the-dirac-equation-reads-the-sides">The Dirac Equation Reads the Sides</h2>
 <p><strong>The equation.</strong> The biquaternion Dirac equation is the chiral pair
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
-in which both operators act by left multiplication: the first by $\tilde\nabla$, the second by its quaternion conjugate $\tilde\nabla^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
+in which both operators act by left multiplication: the first by $\tilde\nabla_\Phi$, the second by its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
@@ -232,9 +232,9 @@ L(a)\,R(b)=R(b)\,L(a)\quad\text{for all }a,b,
 $$
 so
 $$
-[\,L(\tilde\nabla),-iR_u\,]=0 .
+[\,L(a),-iR_u\,]=0\quad\text{for every }a,
 $$
-The derivative therefore carries each value into itself: if $\tilde\Xi$ has a value then so does $\tilde\nabla\tilde\Xi$, and a field of definite value stays of definite value under differentiation. The basis operator and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides and not a computation about arrays.</p>
+the gradient included. The derivative therefore carries each value into itself: if $\tilde\Xi$ has a value then so does $\tilde\nabla_\Phi\tilde\Xi$, and a field of definite value stays of definite value under differentiation. The basis operator and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides and not a computation about arrays.</p>
 <p><strong>The massless case, and the split.</strong> At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $-iR_u$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries <strong>one state of each value</strong>, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under the basis operator, so a solution of definite value may be chosen.</p>
 <p><strong>The mass of the pair is a number, and a number has both slots.</strong> In the pair the mass enters as $k_m$, and $k_m$ is central: it is a left multiplier and a right multiplier at once, so it holds both slots and has no single side. That is where its physical reading comes from, and it is also where the reading stops. Being in both slots, it acts on the two values alike, and a term that acts on them alike does not move a field from one to the other. In the projectors of the basis operator the statement is one equation, with $P_\pm=\tfrac12(\mathrm I\mp iR_u)$,
 $$
@@ -253,7 +253,7 @@ which holds for every $k_m$: a central scalar is diagonal in the basis operator'
 <tbody>
 <tr>
 <td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>left by $\tilde\nabla$</td>
+<td>left by $\tilde\nabla_\Phi$</td>
 <td>left</td>
 <td>keeps it</td>
 </tr>
@@ -376,7 +376,7 @@ since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. Then $R_v$ carries one half into the 
 <li><strong>The element is a choice.</strong> The basis operator is built from one element. Another traceless $u$ with $u^2=-e_t$ gives another basis operator, with the same four properties and the same slot, while every label of every operator stays where it was. The choice is invisible to the physics, which uses the side.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>Operator chirality is the side on which an operator multiplies: the left slot, the right slot, both slots at once for the scalars, and no single side otherwise. One basis operator realises the split, $-iR_u$ for a traceless $u$ with $u^2=-e_t$. It is a pure right multiplier, so it is an example of the right slot and not the definition of chirality. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, and the two commute because a left multiplier never fails to commute with a right one. That commutation is why a massless field carries states of both chiralities. The mass appears twice and the two appearances are not one statement. As $k_m$ in the pair it is central, it holds both slots, and it keeps the value. As a right multiplication by an element that anticommutes with $u$ it is a one-sided term that carries the field from one value to the other. Only the second of these is a coupling of the two values, and only the second is in the right slot.</p>
+<p>Operator chirality is the side on which an operator multiplies: the left slot, the right slot, both slots at once for the scalars, and no single side otherwise. One basis operator realises the split, $-iR_u$ for a traceless $u$ with $u^2=-e_t$. It is a pure right multiplier, so it is an example of the right slot and not the definition of chirality. The Dirac operator is a pure left multiplier, and the two commute because a left multiplier never fails to commute with a right one. That commutation is why a massless field carries states of both chiralities. The mass appears twice and the two appearances are not one statement. As $k_m$ in the pair it is central, it holds both slots, and it keeps the value. As a right multiplication by an element that anticommutes with $u$ it is a one-sided term that carries the field from one value to the other. Only the second of these is a coupling of the two values, and only the second is in the right slot.</p>
 <p>The construction needs none of the eleven objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spectrum, no spinor, no module $S$, no ideal, no Clifford algebra, no matrix unit of a display, and no separate chirality element standing in for the definition. Each of them is a choice, and each of them is invisible in the numbers a display prints, which is why the numbers were mistaken for the notion. The basis operator prints the same in every reading, and none of those structures is needed to reach it.</p>
 <p>The limit is stated once and it is not small: the two values of the basis operator separate fields of one kind, so the algebra is vector-like, and the distinction the Standard Model draws between the left-handed field and its conjugate is not an operator distinction of $\mathbb{B}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
