@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Biquaternion D'Alembertian and Its Green's Functions* owns the shifted gradient $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, the **generalized Maxwell–Dirac equation** $(\tilde{\nabla} + \kappa)B = F$, the scalar operator the source calls the **Klein–Gordon–Fock–Schrödinger equation** (KGFSh), its symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$, and the real-$\kappa$ dichotomy that selects the case with non-trivial homogeneous solutions. That section closed with an explicit gap: the source's own fundamental solution — the displayed equation the corpus's record calls "the source's explicit Eq. (36)" — was **not stated**, because the degraded text of the paper then at hand did not allow its signs to be checked, and the corpus does not state an equation it cannot verify. The article also deferred the source's first-order integral representation of the solution.
+The companion article *The Biquaternion D'Alembertian and Its Green's Functions* owns the shifted gradient $\tilde{\nabla}_\kappa = \tilde\nabla_\Phi + \kappa$, the **generalized Maxwell–Dirac equation** $(\tilde\nabla_\Phi + \kappa)B = F$, the scalar operator the source calls the **Klein–Gordon–Fock–Schrödinger equation** (KGFSh), its symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$, and the real-$\kappa$ dichotomy that selects the case with non-trivial homogeneous solutions. That section closed with an explicit gap: the source's own fundamental solution — the displayed equation the corpus's record calls "the source's explicit Eq. (36)" — was **not stated**, because the degraded text of the paper then at hand did not allow its signs to be checked, and the corpus does not state an equation it cannot verify. The article also deferred the source's first-order integral representation of the solution.
 
 This article closes that gap. It takes the same programme's later journal paper on the **biquaternion representation of the Dirac equations and bispinor fields**, whose text layer is usable, and it states and verifies the solution theory the earlier record left open: the fundamental solution of the KGFSh operator and its support, the general solution of the inhomogeneous equation, and the bispinor fields that the homogeneous equation carries. The operator itself, its square, its symbol and the convention crossing $\kappa = -im$ are **not** re-derived here; they belong to the d'Alembertian article and are used as given.
 
@@ -11,7 +11,7 @@ Four boundaries are respected. (i) The corpus's own Dirac equation, its square, 
 Two conventions are load-bearing. The source's **two bigradients** are $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = r'_{t}$. They are the corpus's gradient pair times $i$,
 
 $$
-\vec\nabla^{+}_\Phi = i\tilde{\nabla}, \qquad \vec\nabla^{-}_\Phi = i\tilde{\nabla}^{\natural},
+\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi, \qquad \vec\nabla^{-}_\Phi = i(\tilde\nabla^{\natural})_\Phi,
 \qquad \partial/\partial\tau = -i\,\partial/\partial r'_t ,
 $$
 
@@ -69,8 +69,8 @@ $$
 This is the KGFSh operator the d'Alembertian article owns, and it is where the programme and the corpus part company in a way worth naming. The corpus's Dirac pair is chirality off-diagonal,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 \qquad\Longrightarrow\qquad
 \bigl(\Box - k_m^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},R,L} = 0 ,
 $$
@@ -303,7 +303,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 
 | Symbol | Meaning |
 |---|---|
-| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $\tau = r'_{t}$ | The source's two bigradients; $\vec\nabla^{+}_\Phi = i\tilde{\nabla}$, $\vec\nabla^{-}_\Phi = i\tilde{\nabla}^{\natural}$ |
+| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $\tau = r'_{t}$ | The source's two bigradients; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla^{\natural})_\Phi$ |
 | $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box$ | The source's wave operator, minus the corpus's d'Alembertian |
 | $\bigl(\vec\nabla^{\pm}_\Phi + m\bigr)B = F$ | The source's first-order equation; the corpus's generalized Maxwell–Dirac equation with $\kappa = -im$ |
 | $\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau+m)^2-\Delta_\Phi = \exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$ | The KGFSh operator and its conjugation form |

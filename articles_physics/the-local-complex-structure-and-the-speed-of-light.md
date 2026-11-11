@@ -139,7 +139,7 @@ so the aperture of the light cone in seconds is exactly $c$. The requirement is 
 
 **Route 2: the characteristics of the wave operator.** The biquaternionic gradient and its quaternion conjugate multiply to the d'Alembertian,
 $$
-\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}
+\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi
 =\partial^2/\partial R_t^2+\Delta
 =\Delta-\partial^2/\partial {r'_{t}}^2 ,
 $$
@@ -203,8 +203,8 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ | Interval in the length coordinate; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=1$ |
 | $t'=r'_t/c$, $g_{tt}=-c^2$ | The temporal slot in seconds; the interval there is $-c^2dt'^2+d\vec r^2$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed (the local temporal conversion), vacuum speed |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta=\Delta-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian |
 | $x_0=i r'_t$ | Complex time coordinate |
 
 ## Further Reading

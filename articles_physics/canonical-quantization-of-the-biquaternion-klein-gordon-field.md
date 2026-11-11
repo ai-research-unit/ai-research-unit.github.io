@@ -31,7 +31,7 @@ $$
 with $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$. Its action is $S[\tilde{Ξ}]=\int\mathcal{L}\,d^4r$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
-\mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})\right]
+\mathcal{L}=-\,\mathrm{Sc}\!\left[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]
 -k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
 =-\,(\partial/\partial R_t\,\xi^*)(\partial/\partial R_t\,\xi)-\sum_\eta(\partial/\partial R_\eta\,\xi^*)(\partial/\partial R_\eta\,\xi)-k_m^{2}\xi^*\xi .
 $$
@@ -289,9 +289,9 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
-| $\mathcal{L}=-\,\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]-k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
+| $\mathcal{L}=-\,\mathrm{Sc}[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]-k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |
 | $1/k_m$ | The mass length, $\hbar/(mc)$ |
 | $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_\Phi=\tilde P_{\Phi}/\hbar$, $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_t^{\prime\,2}+k_\Phi^{2}=-k_m^{2}$ | Material four-wavevector and its norm, the mass shell |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A theory that is classically invariant under a local rescaling of the metric has a stress tensor whose trace vanishes, and a quantised version of it generally does not. The equality $T_\mu{}_\mu = 0$ holds for the classical action of a massless field; the regulated one-loop effective action produces a non-vanishing trace, a **trace anomaly** (or **Weyl anomaly**), whose coefficient is fixed by the field content and whose form is fixed by the symmetries. The anomaly is not an artifact of a particular regulator: it is the obstruction to defining the regulated determinant in a way that preserves the classical symmetry, and the axial current's $\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural} \neq 0$ is the same failure of the measure read on the chiral current (Adler 1969; Bell and Jackiw 1969).
+A theory that is classically invariant under a local rescaling of the metric has a stress tensor whose trace vanishes, and a quantised version of it generally does not. The equality $T_\mu{}_\mu = 0$ holds for the classical action of a massless field; the regulated one-loop effective action produces a non-vanishing trace, a **trace anomaly** (or **Weyl anomaly**), whose coefficient is fixed by the field content and whose form is fixed by the symmetries. The anomaly is not an artifact of a particular regulator: it is the obstruction to defining the regulated determinant in a way that preserves the classical symmetry, and the axial current's $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural} \neq 0$ is the same failure of the measure read on the chiral current (Adler 1969; Bell and Jackiw 1969).
 
 This article asks what the biquaternion framework contributes to that statement. The findings are the following.
 
@@ -228,8 +228,8 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $Q_t=i r'_t$, $Q_\eta=x_\eta$ | The material reading; the substitution is carried by $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient; on $\mathbb{B}_{\Phi}$, $Q_t=i r'_t$ and $Q_\eta=x_\eta$, so $\partial/\partial R_t=\partial/\partial i r'_t$ |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the massive dynamics of the field |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | Series d'Alembertian |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair, the massive dynamics of the field |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta_Q$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$ | One-loop effective action whose variation is the anomaly |

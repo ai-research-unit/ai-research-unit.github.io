@@ -43,7 +43,7 @@ where the generators $T_a$ are realized in the informational sector of the algeb
 
 ### The Abelian Case
 
-Under a gauge transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, the line integral changes by
+Under a gauge transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, the line integral changes by
 
 $$
 \oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu \;\longmapsto\; \oint_C \sum_\mu\varepsilon_\mu\left(A_\mu-\partial/\partial x_\mu\Gamma\right)dx_\mu

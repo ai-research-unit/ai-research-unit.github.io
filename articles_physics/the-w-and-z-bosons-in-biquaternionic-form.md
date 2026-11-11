@@ -200,9 +200,9 @@ $$
 F_{\mu\nu}=\frac{\partial V_\nu}{\partial R_\mu}-\frac{\partial V_\mu}{\partial R_\nu},
 $$
 $$
-\tilde\nabla\tilde F-M^2\tilde A_{\Phi}=0,
+\tilde\nabla_\Phi\tilde F-M^2\tilde A_{\Phi}=0,
 \qquad
-\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}=0 ,
+\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0 ,
 $$
 the second line being the Lorenz condition, which follows from the equation and is not a gauge choice in the massive theory. Its canonical quantization yields three polarizations, two transverse and one longitudinal, with the transverse sum $\mathcal{P}$,
 $$
@@ -402,7 +402,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 | $J^{+}_\mu=\sum_{\text{doublets}}\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},\mathrm u}^*\,i\,(i\vec e_\mu\tilde{Ξ}_{\mathrm{sp},\mathrm d,\mathrm L}\vec e_{\nu(\mu)})\vec e_x\big)$ | Charged current (chiral) |
 | $J_{Z\mu}=\sum_f\mathrm{Sc}\big(f^{*}\,i\,(i\vec e_\mu(T_{3f}f_{\mathrm L}-Q_f\sin^2\theta_Wf)\vec e_{\nu(\mu)})\vec e_x\big)$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial R_\mu-\partial\mathcal{A}_{\mu a}/\partial R_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
-| $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}=0$ |
+| $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0$ |
 | $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\mathcal{P}_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness, $\mathcal{P}$ the transverse sum |
 | $\delta_{\mu\nu}$ | The unit metric of *Frame and Metric Conventions*, $(1,1,1,1)$ on the four $Q_\mu$, the one metric the displays use |
 | $W^\pm_{\mu\nu}$, $Z_{\mu\nu}$, $A_{\mu\nu}$ | Field strengths of the charged, neutral massive and electromagnetic fields |

@@ -68,9 +68,9 @@ The conjugation is what makes the mass antilinear; the right multiplication is w
 **The letter form.** Read on the two letters, the equation is a pair. The mass of an $L$ part is an $R$ element, and the mass of an $R$ part is an $L$ element, so each member of the pair acts on one letter and carries the conjugate of the other:
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},R}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},R}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
 $$
 
 The two lines are the equation of the display above, split; nothing is added. Each is an equation for one letter, and each carries the conjugate of the other, which is the precise sense in which the mass couples the letters and not a side of one of them. The mass terms are elements of the opposite letter, and that was checked on elements of each letter: the mass of an $L$ part is an $R$ element and the mass of an $R$ part is an $L$ element, exactly.
@@ -135,7 +135,7 @@ so $e^{i\alpha}\tilde{Ξ}_{\mathrm{sp}}$ lies in the fixed space only when $\alp
 
 **One field and not two.** The two eigenspaces of a conjugation are of the same size and are exchanged by $i$; the fixed space is not one member of a pair of fields. The reading of the two eigenspaces as the two signs of a charge-conjugation eigenvalue belongs to the companion articles, where that operator is constructed; on the algebra the two eigenspaces are one space and its rotation by $i$, and the equation of the display above does not distinguish them.
 
-**No vector current.** A Dirac field carries the current of the two-sided form, $i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ in the products of *Product and Form Conventions*; a field equal to its conjugate has no independent second factor to put there, and the bilinear collapses. The statement is qualitative here and computed in the companion articles; what the algebra supplies is the reason, which is that the fixed space is real and the current needs a phase.
+**No vector current.** A Dirac field carries the current of the two-sided form, $i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ in the products of *Product and Form Conventions*; a field equal to its conjugate has no independent second factor to put there, and the bilinear collapses. The statement is qualitative here and computed in the companion articles; what the algebra supplies is the reason, which is that the fixed space is real and the current needs a phase.
 
 ## Solutions and the Counting of States
 

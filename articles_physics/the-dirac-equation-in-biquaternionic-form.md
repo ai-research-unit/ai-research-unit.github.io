@@ -7,9 +7,9 @@ The Dirac equation is the relativistic wave equation for spin-$\frac{1}{2}$ part
 The Dirac equation is usually written with matrices. In the biquaternion algebra it needs none. The field is an element of $\mathbb{B}$, the operator is an element multiplying it, and the mass is the one coefficient that ties its two components together. The dynamics is the chiral pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 which is the pair of *Operator and Calculus Conventions*. Every derivative in $\tilde\nabla_\Phi$ carries an inverse length, so the coefficient on the right must carry one too, and it is written as the reciprocal of a length:
@@ -18,9 +18,9 @@ $$
 k_m=\dfrac{mc}{\hbar}.
 $$
 
-That wave number is the reciprocal of the reduced Compton wavelength of the field, and it is the only one the article needs. It is defined in *The Three Wavenumbers of a Particle*, where it is written $k_m=mc/\hbar$. Below, the mass coefficient is always written $k_m$ and the mass-squared term always $k_m^{2}$. Since $mc=\hbar\,k_m$, the rest energy is $m\,c^{2}$ and the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$, so every mass statement is read in this one length. At $m=0$ the pair decouples into the two one-sided equations $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. No matrix, no column and no array enters either line. A frame is declared once, because the value of a part is read by the frame's third direction, and no further choice is made.
+That wave number is the reciprocal of the reduced Compton wavelength of the field, and it is the only one the article needs. It is defined in *The Three Wavenumbers of a Particle*, where it is written $k_m=mc/\hbar$. Below, the mass coefficient is always written $k_m$ and the mass-squared term always $k_m^{2}$. Since $mc=\hbar\,k_m$, the rest energy is $m\,c^{2}$ and the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$, so every mass statement is read in this one length. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. No matrix, no column and no array enters either line. A frame is declared once, because the value of a part is read by the frame's third direction, and no further choice is made.
 
-This article develops the biquaternionic formulation of the Dirac equation. The gradient $\tilde{\nabla}$ is the Dirac operator of the algebra: it is first order, it acts by left multiplication, and it squares to the scalar d'Alembertian through its conjugate. The equation is the chiral pair on the two letters of the pair, and each half obeys the Klein–Gordon equation. A second, **two-sided** form of the same equation — Kravchenko's dictionary, in which the spatial derivative acts from the left and the mass term from the right — is developed in *An Explicit Dictionary with Conjugation in the Mass Term*; the two forms are compared in *The One-Sided and the Two-Sided Equation*.
+This article develops the biquaternionic formulation of the Dirac equation. The gradient $\tilde\nabla_\Phi$ is the Dirac operator of the algebra: it is first order, it acts by left multiplication, and it squares to the scalar d'Alembertian through its conjugate. The equation is the chiral pair on the two letters of the pair, and each half obeys the Klein–Gordon equation. A second, **two-sided** form of the same equation — Kravchenko's dictionary, in which the spatial derivative acts from the left and the mass term from the right — is developed in *An Explicit Dictionary with Conjugation in the Mass Term*; the two forms are compared in *The One-Sided and the Two-Sided Equation*.
 
 The article is organized as follows. First the gradient and the equation are stated, then the algebra and the two components of the pair, the value being read as a rule on elements and not as a space. The **value** is not the operator chirality of *Operator Chirality on the Biquaternion Algebra*: that label is a side of an operator and needs neither an element nor a frame, while the value is read from an element and one declared direction. The solutions of the equation and its relation to the Maxwell equation each have their own article, *Explicit Solutions of the Biquaternionic Dirac Equation* and *The Dirac–Maxwell Correspondence in Biquaternionic Form*, and neither is repeated here. The two-sided form, the potentials and the algebra discussion follow, and a closing section states which constructions the literature carries beside a Dirac equation and which of them the equation does not need. *The Legacy Pauli Gamma Formulation* prints the older display for the reader who has to compare with it.
 
@@ -30,7 +30,7 @@ The conventions are those of the companion articles: the algebra and its units a
 
 ### The Units and the Gradient
 
-The units are the coefficient basis of *Algebra and Element Conventions* and the gradient is the operator of *Operator and Calculus Conventions*, §*The Gradient*, written $\tilde{\nabla}$, with the quaternion conjugate $\tilde{\nabla}^{\natural}$ and the central scalar $\Box$ of the same file. This article repeats none of the three and derives nothing about them. What it uses is one consequence: the product of the operator and its conjugate is second order and scalar, so the equation below is first order in the field and second order in the wave, and no matrix square is needed anywhere in it.
+The units are the coefficient basis of *Algebra and Element Conventions* and the gradient is the operator of *Operator and Calculus Conventions*, §*The Gradient*, written $\tilde\nabla_\Phi$, with the quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$ and the central scalar $\Box$ of the same file. This article repeats none of the three and derives nothing about them. What it uses is one consequence: the product of the operator and its conjugate is second order and scalar, so the equation below is first order in the field and second order in the wave, and no matrix square is needed anywhere in it.
 
 ### The Equation in the Algebra
 
@@ -39,8 +39,8 @@ The dynamics of this article is the **chiral pair**
 $$
 \boxed{\;
 \begin{aligned}
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} &= k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} &= k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 \;}
 $$
@@ -52,15 +52,15 @@ The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\t
 At $m=0$, that is $k_m=0$, the pair decouples into two one-sided equations, one for each letter of the pair:
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = 0,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0,
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0 .
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = 0 .
 $$
 
-A field with a single value obeys one of them. The member written $R$, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$, is the one written $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ in the massless sections below, and the member written $L$ is its quaternion conjugate. Each member is first order, both are linear in the field, and the mass couples the two parts. Applying $\tilde{\nabla}^{\natural}$ to the first member and using the second gives
+A field with a single value obeys one of them. The member written $R$, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$, is the one written $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$ in the massless sections below, and the member written $L$ is its quaternion conjugate. Each member is first order, both are linear in the field, and the mass couples the two parts. Applying $(\tilde\nabla^{\natural})_\Phi$ to the first member and using the second gives
 
 $$
-\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = \Box\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = \tilde{Ξ}_{\mathrm{sp},R}\,k_m^{2},
+(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = \Box\tilde{Ξ}_{\mathrm{sp},R} = k_m\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = \tilde{Ξ}_{\mathrm{sp},R}\,k_m^{2},
 \qquad\text{that is}\qquad
 \left(\Box - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0
 $$
@@ -83,7 +83,7 @@ A single element of $\mathbb{B}$ carries four complex numbers, which is the coun
 
 **A limit, stated once.** Left multiplication cannot tell the two components apart. A left multiplier keeps every value, so it acts on the two components in the same way, and the two components are two copies of one object. The inequivalence of a left-handed field and its conjugate is a fact about a larger object and not about this algebra, and nothing in this article asserts it.
 
-**The letters of the pair, and the values the basis operator returns.** The two subscripts of the chiral pair name two components. They are not the two values that the basis operator returns, and the difference is not cosmetic. The basis operator multiplies on the right and the gradient on the left, and a left multiplier and a right multiplier commute, $\tilde a(\tilde X\tilde b)=(\tilde a\tilde X)\tilde b$ by associativity, so left multiplication keeps the value: $\tilde\nabla\tilde X$ carries the value of $\tilde X$ for every element $\tilde X$. A pair whose two lines equated a value-$L$ part with a value-$R$ part would therefore have only the zero solution. What the pair does is relate two components by a coefficient, and the coefficient is central.
+**The letters of the pair, and the values the basis operator returns.** The two subscripts of the chiral pair name two components. They are not the two values that the basis operator returns, and the difference is not cosmetic. The basis operator multiplies on the right and the gradient on the left, and a left multiplier and a right multiplier commute, $\tilde a(\tilde X\tilde b)=(\tilde a\tilde X)\tilde b$ by associativity, so left multiplication keeps the value: $\tilde\nabla_\Phi\tilde X$ carries the value of $\tilde X$ for every element $\tilde X$. A pair whose two lines equated a value-$L$ part with a value-$R$ part would therefore have only the zero solution. What the pair does is relate two components by a coefficient, and the coefficient is central.
 
 ### The Value Is a Rule
 
@@ -142,22 +142,22 @@ where $\overline{\cdot}$ is the coefficient conjugation of *Algebra and Element 
 $$
 i\frac{\partial}{\partial r'_t} = -\frac{\partial}{\partial R_t},
 \qquad\text{so that}\qquad
-i\frac{\partial}{\partial r'_t} + \vec\nabla = -\tilde{\nabla}^{\natural},
+i\frac{\partial}{\partial r'_t} + \vec\nabla = -(\tilde\nabla^{\natural})_\Phi,
 $$
 
 the time term of the gradient carrying $e_t$, the identity of the algebra, so that the three symbols are one operator.
 
-The free part of $\mathcal{N}$ is therefore the **conjugate** gradient and not the gradient: the free equation is the member written $L$, $\tilde{\nabla}^{\natural}F=0$, written on the whole algebra, and the other member is its conjugate. With the mass term moved to the right the equation reads
+The free part of $\mathcal{N}$ is therefore the **conjugate** gradient and not the gradient: the free equation is the member written $L$, $(\tilde\nabla^{\natural})_\PhiF=0$, written on the whole algebra, and the other member is its conjugate. With the mass term moved to the right the equation reads
 
 $$
-\tilde{\nabla}^{\natural}F = -i\,\overline{F}\,\vec e_z\,k_m,
+(\tilde\nabla^{\natural})_\PhiF = -i\,\overline{F}\,\vec e_z\,k_m,
 $$
 
-which has the shape of the corpus's $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ with the second field read as $-i\,\overline{F}\,\vec e_z$: a conjugation and a fixed direction, and nothing else. That is the operator-theoretic content of the two-sidedness — the dictionary reaches the member written $L$, and the second field of that member is the conjugate of the first. The normalization with the imaginary-time derivative is not used for the operator itself, and the reason is the reality of the operator $R$ below: the factor $-i$ that carries $\partial/\partial r'_t$ into $\partial/\partial R_t$ would put the central imaginary into every coefficient of $R$ and take away the property that makes $R$ real.
+which has the shape of the corpus's $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ with the second field read as $-i\,\overline{F}\,\vec e_z$: a conjugation and a fixed direction, and nothing else. That is the operator-theoretic content of the two-sidedness — the dictionary reaches the member written $L$, and the second field of that member is the conjugate of the first. The normalization with the imaginary-time derivative is not used for the operator itself, and the reason is the reality of the operator $R$ below: the factor $-i$ that carries $\partial/\partial r'_t$ into $\partial/\partial R_t$ would put the central imaginary into every coefficient of $R$ and take away the property that makes $R$ real.
 
 Following the source, $i_1,i_2,i_3$ denote the quaternion units; this article writes them $\vec e_x,\vec e_y,\vec e_z$ and keeps the source's $i_k$ only where it quotes the source. The product $i\,i_k$ is the scalar imaginary times a quaternion unit, not a square: $i^2=-1$, while $(i\,i_k)^2=i^2i_k^2=+1$.
 
-**Which conjugation.** The bar of the equation is the algebra's **coefficient conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces, and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = k_m\,\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = D^{*}i\vec{\nu}\,k_m$ of *The Lanczos Route: Maxwell with Feedback* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $\vec e_z$ standing where the Lanczos unit vector $\vec{\nu}$ stands.
+**Which conjugation.** The bar of the equation is the algebra's **coefficient conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces, and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\,\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde\nabla_\PhiD = D^{*}i\vec{\nu}\,k_m$ of *The Lanczos Route: Maxwell with Feedback* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $\vec e_z$ standing where the Lanczos unit vector $\vec{\nu}$ stands.
  The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.
 
 **The price, and its refund.** Because the bar is antilinear, $\mathcal{N}$ is not left multiplication by an element of the algebra, so the Cauchy kernel, the Teodorescu transform and the boundary-value theory do not apply to it as it stands. The conjugation is removed by factoring $\mathcal{N}$ into two complex-linear equations and changing variable; the time-harmonic amplitude then obeys a **shifted** equation with a biquaternionic parameter, $\vec\nabla f+f\alpha=0$ at a constant $\alpha$ — the corpus's $D_\alpha=D+M_\alpha$ of *Biquaternion Regular Functions*, written with $D=i\vec\nabla$ and read as the action $f\mapsto Df+f\alpha$ — used in *Confinement and the Loss of Partonic Information in Biquaternionic Form*. The conjugation is thus the cost of shrinking the equation to a single biquaternion, and it is refunded whenever the boundary-value theory is what is wanted.
@@ -234,8 +234,8 @@ The article now carries two equations, and they must not be read as one. The cor
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| the equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ | $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, that is $-\tilde{\nabla}^\natural F-i\,\overline{F}\,\vec e_z\,k_m=0$ |
-| the action | left, by $\tilde{\nabla}$ and $\tilde{\nabla}^\natural$ | left by the derivative, right by $\vec e_z$ in the mass term, and the coefficient bar |
+| the equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ | $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, that is $-(\tilde\nabla^{\natural})_\Phi F-i\,\overline{F}\,\vec e_z\,k_m=0$ |
+| the action | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$ | left by the derivative, right by $\vec e_z$ in the mass term, and the coefficient bar |
 | the field | one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ | one element $F$ of $\mathbb{B}$ |
 | the mass | the coefficient relating the two parts; central, so it keeps the value | $-i\,\overline{F}\,\vec e_z\,k_m$: a conjugation together with a direction |
 | the subscript | two components, $L$ and $R$ | no subscript, the direction $\vec e_z$ standing in its place |
@@ -370,8 +370,8 @@ The equation is the chiral pair of *The Equation in the Algebra*. Let $\tilde{Ξ
 $$
 \boxed{\;
 \begin{aligned}
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} &= k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} &= k_m\,\tilde{Ξ}_{\mathrm{sp},R}.
 \end{aligned}
 \;}
 $$
@@ -379,9 +379,9 @@ $$
 It is **linear** in $\tilde{Ξ}_{\mathrm{sp}}$, **off-diagonal in the part** and **diagonal in the value**: each line applies a left multiplication to one part and equates the result to a multiple of the other, and a left multiplication keeps the value it meets, so the two sides of one line carry one value. The two letters of this display therefore name the two factors of the factorisation and not two values; where they are to name the values, the mass is the term that carries the field across, and §*The Massive Case* writes the pair in that form. At $m=0$ it decouples into two one-sided equations,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 one for each letter of the pair; a field of a single value obeys one of them. The two lines equate parts of different letters because the gradient is off-diagonal in the pair: each line applies it to one part and equates the result to a multiple of the other, and $k_m$ is the coefficient of that relation. The mass multiplies on the left, so it keeps the value, and the two lines are equalities of elements, not of matrices. The Klein–Gordon consequence for each part is derived in *The Equation in the Algebra*.
@@ -390,13 +390,13 @@ A **single-string form** of the same pair is recorded in *The Chiral Algebra of 
 
 ### The Massless Case
 
-For a single value the massless equation is one-sided. The member written $R$, $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0$, is identical in form to the **homogeneous biquaternion Maxwell equation** for the field-strength biquaternion $\tilde{F}$:
+For a single value the massless equation is one-sided. The member written $R$, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$, is identical in form to the **homogeneous biquaternion Maxwell equation** for the field-strength biquaternion $\tilde{F}$:
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = 0 \quad \text{(the member written }R\text{)}, \qquad \tilde{\nabla}\tilde{F} = 0 \quad \text{(source-free Maxwell)}.
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0 \quad \text{(the member written }R\text{)}, \qquad \tilde\nabla_\Phi\tilde{F} = 0 \quad \text{(source-free Maxwell)}.
 $$
 
-The member written $L$ is the quaternion conjugate, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; it has the same form with $\tilde{\nabla}^{\natural}$ in place of $\tilde{\nabla}$. The full massless Dirac field is the pair of the two, not the single equation. The solutions are also the same in form: the kernel of the biquaternionic gradient consists of plane waves, spherical waves, and cylindrical waves (as in the companion article on Maxwell). The **physical interpretation** differs: $\tilde{Ξ}_{\mathrm{sp}}$ is a fermion field (spin-$\frac{1}{2}$), and $\tilde{F}$ is a boson field (spin-1).
+The member written $L$ is the quaternion conjugate, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$; it has the same form with $(\tilde\nabla^{\natural})_\Phi$ in place of $\tilde\nabla_\Phi$. The full massless Dirac field is the pair of the two, not the single equation. The solutions are also the same in form: the kernel of the biquaternionic gradient consists of plane waves, spherical waves, and cylindrical waves (as in the companion article on Maxwell). The **physical interpretation** differs: $\tilde{Ξ}_{\mathrm{sp}}$ is a fermion field (spin-$\frac{1}{2}$), and $\tilde{F}$ is a boson field (spin-1).
 
 The structural identity of the two equations is the algebraic content of the statement that both fields are read in the same algebra. The difference is not in the operator but in the object it acts on and in the value of the field: the Maxwell field-strength biquaternion lives in the vector part of the algebra, and the Dirac field is a general element carrying a letter of the pair.
 
@@ -404,15 +404,15 @@ The structural identity of the two equations is the algebraic content of the sta
 
 The massive equation is the chiral pair boxed in *Statement*. The mass term is **linear** in the field and acts between the two parts: it is the biquaternion transcription of the mass term of the matrix Dirac equation, and it is what relates the two components.
 
-The coupling does not come from the left. Left multiplication by any element preserves the value of the field: a product takes the letter of its right factor, and the left multiplier does not touch it (*Matrix Representations Conventions*, §*The Bridge to the $4\times4$ Displays*). So no left multiplication carries one value into the other. Read with its letters as the two values, the pair as printed has **no nonzero solution at all**: the first line would equate a value-$R$ element to a value-$L$ one, and the two halves meet only at zero. Read as a factorisation it is exact — in momentum space the second part is the first multiplied on the left, $\tilde{Ξ}_{\mathrm{sp},L}=\frac{i}{k_m}\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}$, and $\tilde\nabla^{\natural}\tilde\nabla=\Box$ carries the second-order equation — and in that reading the two letters name the two **factors** and not the two values, which is how the mathematical article that supplies the factorisation uses them (*The First Order Root of the Biquaternion d'Alembertian*). What does exchange the two values is a right multiplication by a unit $i\vec v$ with $\vec v$ perpendicular to the axis, or the coefficient conjugation, and the side on which it acts is the side of the **mass** and never of the derivative: a left multiplier keeps every value, so a derivative term can carry the field out of its part only by ceasing to be a multiplication by an element (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*; *Spinors and Dirac Spinors in the Biquaternion Algebra*, §*What Carries One Part to the Other*). A right multiplication by a unit that commutes with the axis — the time unit or the axis unit itself — is a different object again: it acts inside one value, leaves the letter alone, and carries a direction. That is why the two-sided form of *An Explicit Dictionary with Conjugation in the Mass Term* needs the coefficient bar beside the direction, and neither of the two alone.
+The coupling does not come from the left. Left multiplication by any element preserves the value of the field: a product takes the letter of its right factor, and the left multiplier does not touch it (*Matrix Representations Conventions*, §*The Bridge to the $4\times4$ Displays*). So no left multiplication carries one value into the other. Read with its letters as the two values, the pair as printed has **no nonzero solution at all**: the first line would equate a value-$R$ element to a value-$L$ one, and the two halves meet only at zero. Read as a factorisation it is exact — in momentum space the second part is the first multiplied on the left, $\tilde{Ξ}_{\mathrm{sp},L}=\frac{i}{k_m}\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}$, and $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box$ carries the second-order equation — and in that reading the two letters name the two **factors** and not the two values, which is how the mathematical article that supplies the factorisation uses them (*The First Order Root of the Biquaternion d'Alembertian*). What does exchange the two values is a right multiplication by a unit $i\vec v$ with $\vec v$ perpendicular to the axis, or the coefficient conjugation, and the side on which it acts is the side of the **mass** and never of the derivative: a left multiplier keeps every value, so a derivative term can carry the field out of its part only by ceasing to be a multiplication by an element (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*; *Spinors and Dirac Spinors in the Biquaternion Algebra*, §*What Carries One Part to the Other*). A right multiplication by a unit that commutes with the axis — the time unit or the axis unit itself — is a different object again: it acts inside one value, leaves the letter alone, and carries a direction. That is why the two-sided form of *An Explicit Dictionary with Conjugation in the Mass Term* needs the coefficient bar beside the direction, and neither of the two alone.
 
 **The two letters, in the two readings.** Written with the exchange on the right, the pair reads
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}\,i\vec v,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L}\,i\vec v,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}\,i\vec v,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}\,i\vec v,
 $$
-with $\vec v$ a unit real vector perpendicular to the declared axis. Each line then lands inside one value on both sides, the mass carries the exchange, and the square is unchanged because $(i\vec v)^{2}=+1$: applying $\tilde\nabla^{\natural}$ to the first line returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$. This is the display in which the letters name the two values, and it is the display the two mathematical articles describe; the pair boxed in §*Statement* is the same equation with the right factor left implicit, and a reader who takes its letters for values finds the two halves meeting at zero.
+with $\vec v$ a unit real vector perpendicular to the declared axis. Each line then lands inside one value on both sides, the mass carries the exchange, and the square is unchanged because $(i\vec v)^{2}=+1$: applying $(\tilde\nabla^{\natural})_\Phi$ to the first line returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$. This is the display in which the letters name the two values, and it is the display the two mathematical articles describe; the pair boxed in §*Statement* is the same equation with the right factor left implicit, and a reader who takes its letters for values finds the two halves meeting at zero.
 
 **A remark on the anti-Hermitian conjugation $\flat$.** The algebra carries, besides the quaternion conjugate and the Hermitian conjugation ${}^{*}$, a further antilinear involution:
 
@@ -436,9 +436,9 @@ so that the **fixed space of $\flat$ is the anti-Hermitian sector $\mathbb{B}_{\
 
 The convention is worth a remark, because the more familiar one takes the *Hermitian* part as the real one, and here the *anti*-Hermitian part plays that role. The two differ only by the central factor $i$: anti-Hermitian elements are $i$ times Hermitian ones, and anti-Hermitian generators are the standard choice for the Lie algebra of a $*$-unitary group (in the companion quantum article the Lie algebra of the $*$-unitary group is $\mathbb{B}_{\Phi}$). What is unusual here is not the sign convention as such, but that it is applied to the *field* rather than to the generators: it is $\mathbb{B}_{\Phi}$ that is fixed, and that is what makes $\mathbb{B}_{\Phi}$ the framework's "material" sector (the companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action* takes $\mathbb{B}_{\Phi}$ as the fixed space of $\flat$).
 
-The map $\flat$ is the algebra's **real structure**, and its shape is that of a charge-conjugation (Majorana) pairing: it relates the field to its own conjugate. It is *not* the mass term. A coupling built on $\flat$ pairs $\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ rather than relating two independent chiralities, and because $\flat$ is antilinear such a coupling is not invariant under the continuous central phase — precisely the two differences between a Majorana-type pairing and an ordinary Dirac mass. The single-field equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = k_m\,\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a real-linear equation of that type; it is a different equation from the one studied here, and its central-phase plane waves sit on the *spacelike* locus, not on the physical mass shell. The map $\flat$ is retained in the framework for what it is genuinely for — conjugation, the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, the trace and bilinear pairings, and the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino, and the CPT theorem develop. In the present article $\flat$ is used only for conjugation, never as the mass.
+The map $\flat$ is the algebra's **real structure**, and its shape is that of a charge-conjugation (Majorana) pairing: it relates the field to its own conjugate. It is *not* the mass term. A coupling built on $\flat$ pairs $\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ rather than relating two independent chiralities, and because $\flat$ is antilinear such a coupling is not invariant under the continuous central phase — precisely the two differences between a Majorana-type pairing and an ordinary Dirac mass. The single-field equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\,\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a real-linear equation of that type; it is a different equation from the one studied here, and its central-phase plane waves sit on the *spacelike* locus, not on the physical mass shell. The map $\flat$ is retained in the framework for what it is genuinely for — conjugation, the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, the trace and bilinear pairings, and the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino, and the CPT theorem develop. In the present article $\flat$ is used only for conjugation, never as the mass.
 
-**The associated Klein–Gordon equation.** Applying $\tilde{\nabla}^{\natural}$ to the first member of the pair and substituting the second gives $\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde{Ξ}_{\mathrm{sp},R}\,k_m^{2}$, and likewise for $\tilde{Ξ}_{\mathrm{sp},L}$. With $\hbar$ and $c$ restored, each chiral component satisfies
+**The associated Klein–Gordon equation.** Applying $(\tilde\nabla^{\natural})_\Phi$ to the first member of the pair and substituting the second gives $\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde{Ξ}_{\mathrm{sp},R}\,k_m^{2}$, and likewise for $\tilde{Ξ}_{\mathrm{sp},L}$. With $\hbar$ and $c$ restored, each chiral component satisfies
 
 $$
 \left(\Box - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},L,R} = 0 ,
@@ -612,7 +612,7 @@ which is the test of §*The Value Is a Rule* written as an eigenvalue problem. N
 
 **No Clifford algebra.** A Clifford algebra is generated by vectors with a stated anticommutator, and it fixes a dimension and a signature. The frame here is four declared units whose products are computed, and the anticommutation of the three spatial ones is a fact about them and not an axiom. Nothing in the equation is derived from a Clifford relation that the multiplication of the algebra does not already give.
 
-**No second-order equation.** The product of the operator with its quaternion conjugate is the wave operator, $\tilde\nabla^{\natural}\tilde\nabla=\Box$, so each part of the field obeys $\Box\tilde{Ξ}=k_m^{2}\tilde{Ξ}$. That is a consequence, used in §*The Biquaternionic Dirac Equation* to check the pair, and not a starting point: nothing is squared in order to reach the first-order equation, and no matrix square is taken.
+**No second-order equation.** The product of the operator with its quaternion conjugate is the wave operator, $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box$, so each part of the field obeys $\Box\tilde{Ξ}=k_m^{2}\tilde{Ξ}$. That is a consequence, used in §*The Biquaternionic Dirac Equation* to check the pair, and not a starting point: nothing is squared in order to reach the first-order equation, and no matrix square is taken.
 
 **The criterion.** One test separates the two families of approach. If a construction needs an object chosen that the equation does not otherwise use — a basis for a column, an idempotent for an ideal, a frame for an array, a signature for a Clifford algebra — then the object belongs to the display and not to the equation, and whatever physics is attached to it is attached to the choice. The equation of this article needs the algebra, the field, and the frame that supplies $\vec e_z$ in the test. It needs nothing else.
 
@@ -667,22 +667,22 @@ The dictionary of basis operators is complex-linear; over $\mathbb{R}$ the produ
 The Dirac equation in biquaternionic form is the chiral pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R}
 $$
 
-for a field of mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ is one element of $\mathbb{B}$ whose parts are the two components that the subscript names, the coefficient of the mass term is $k_m$, the inverse reduced Compton wavelength, and the mass is the central coefficient that relates the two components. At $m=0$ the pair decouples into the two one-sided equations
+for a field of mass $m$, where $\tilde\nabla_\Phi$ is the biquaternionic gradient, $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ is one element of $\mathbb{B}$ whose parts are the two components that the subscript names, the coefficient of the mass term is $k_m$, the inverse reduced Compton wavelength, and the mass is the central coefficient that relates the two components. At $m=0$ the pair decouples into the two one-sided equations
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
-one for each letter of the pair; the single equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}=0$ is the member written $R$. The letters $L$ and $R$ name the two components of the pair; the value is a separate property of an element, read by the basis operator, the value of a product is the value of its right factor, and left multiplication keeps it. The mass multiplies on the left and is central, so it relates the two components and moves no value across. The value is read by one test on the element, $\tilde X\vec e_z=-i\tilde X$ for $L$ and $\tilde X\vec e_z=+i\tilde X$ for $R$, so no column, no basis, no ideal, no idempotent, no projector and no space of spinors is needed anywhere; §*The Letters Are Not Defined by Idempotents* states why the letters are fixed without one, and §*The Approaches the Equation Does Not Need* states for each of them what it would supply and why the equation does without it. In the massless limit, in the frame whose third direction is the momentum's, each part carries one helicity. The member written $R$ has the same form as the source-free biquaternion Maxwell equation, and the member written $L$ is its conjugate. The structural identity is the statement that both fields are read in the same algebra — no matrix, no column and no separate space. Each part satisfies the Klein–Gordon equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$.
+one for each letter of the pair; the single equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$ is the member written $R$. The letters $L$ and $R$ name the two components of the pair; the value is a separate property of an element, read by the basis operator, the value of a product is the value of its right factor, and left multiplication keeps it. The mass multiplies on the left and is central, so it relates the two components and moves no value across. The value is read by one test on the element, $\tilde X\vec e_z=-i\tilde X$ for $L$ and $\tilde X\vec e_z=+i\tilde X$ for $R$, so no column, no basis, no ideal, no idempotent, no projector and no space of spinors is needed anywhere; §*The Letters Are Not Defined by Idempotents* states why the letters are fixed without one, and §*The Approaches the Equation Does Not Need* states for each of them what it would supply and why the equation does without it. In the massless limit, in the frame whose third direction is the momentum's, each part carries one helicity. The member written $R$ has the same form as the source-free biquaternion Maxwell equation, and the member written $L$ is its conjugate. The structural identity is the statement that both fields are read in the same algebra — no matrix, no column and no separate space. Each part satisfies the Klein–Gordon equation $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp},L,R} = 0$.
 
 The relativistic kinematic relations are expressed in the same language: the four-velocity $\tilde{V}_{\Phi} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}_{\Phi}\tilde{V}_{\Phi}^{\natural} = -c^2$, the four-momentum $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ satisfies the mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$, and the four-position $\tilde R_\Phi = i r'_t\, e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}$.
 
 **The solutions** are in *Explicit Solutions of the Biquaternionic Dirac Equation*: the massless plane wave with $\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0$ and its two-state kernel on the light cone, the massive plane waves with the mass shell $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}=-k_m^{2}$, whose two frequency branches and two spin states give the four solutions the field carries, and the completed spherical and cylindrical harmonics.
 
-A second form of the same equation is Kravchenko's, and it is two-sided: $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, whose free part is $-\tilde{\nabla}^{\natural}$ and whose mass term is a coefficient conjugation together with the right multiplication by the direction $\vec e_z$. The conjugation obstructs the analytic theory, so it is moved into the change of variable, and the conjugation-free operator
+A second form of the same equation is Kravchenko's, and it is two-sided: $\bigl(i\partial/\partial r'_t+\vec\nabla\bigr)F-i\,\overline{F}\,\vec e_z\,k_m=0$, whose free part is $-(\tilde\nabla^{\natural})_\Phi$ and whose mass term is a coefficient conjugation together with the right multiplication by the direction $\vec e_z$. The conjugation obstructs the analytic theory, so it is moved into the change of variable, and the conjugation-free operator
 
 $$
 R[F] = \vec\nabla F - \frac{\partial F}{\partial r'_t}\,\vec e_x - F\,\vec e_y\,k_m
@@ -717,15 +717,15 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P}_{\Phi} =m\,\tilde{V}_{\Phi}$ | Four-momentum biquaternion, since $m\,c=mc$; the shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}\,c^{2}$ |
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number of the field, the one wave number of the article; $\mathsf{L}^{-1}$, the coefficient of the mass term, and $k_m^{2}$ the coefficient of the Klein–Gordon mass term. Its inverse $1/k_m=\hbar/(mc)$ is the reduced Compton wavelength. Defined in *The Three Wavenumbers of a Particle* |
-| $\tilde{\nabla}$ | Biquaternionic gradient (Dirac operator), the first-order element of *Operator and Calculus Conventions* |
-| $\tilde{\nabla}^{\natural}$ | Its quaternion conjugate |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian, central scalar |
+| $\tilde\nabla_\Phi$ | Biquaternionic gradient (Dirac operator), the first-order element of *Operator and Calculus Conventions* |
+| $(\tilde\nabla^{\natural})_\Phi$ | Its quaternion conjugate |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | d'Alembertian, central scalar |
 | $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ | The field: one element of $\mathbb{B}$, one part per letter of the pair |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\cdot}$, written $C$ by the source | Componentwise complex conjugation, $Q_\mu\mapsto\bar Q_\mu$ on the coefficients: an automorphism, $\mathbb{C}$-antilinear and not an anti-automorphism |
 | $\vec\nabla = \sum_{\eta=1}^{3}\vec e_\eta\,\partial/\partial R_\eta$ | The spatial gradient, pure, $\vec\nabla^2=-\Delta$ and $\lvert\vec\nabla\rvert^2=\Delta$, with real quaternion coefficients on the material sector; the source writes it $D$ |
 | $D = i\vec\nabla$ | The corpus's spatial operator of *Biquaternion Regular Functions*, $D^2=\Delta$ |
-| $\mathcal{N} = i\partial/\partial r'_t + \vec\nabla - i\,\overline{\cdot}\,\vec e_z\,k_m$ | The two-sided Dirac operator with the conjugation in the mass term; its free part is $-\tilde{\nabla}^{\natural}$ |
+| $\mathcal{N} = i\partial/\partial r'_t + \vec\nabla - i\,\overline{\cdot}\,\vec e_z\,k_m$ | The two-sided Dirac operator with the conjugation in the mass term; its free part is $-(\tilde\nabla^{\natural})_\Phi$ |
 | $R[F] = \vec\nabla F-\partial F/\partial r'_t\,\vec e_x-F\vec e_y\,k_m$ | The conjugation-free operator of the same source; real, with coefficients in $\mathbb{H}$, so $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ |
 | $\vec\nabla+\cdot\,\alpha$ | The shifted operator for the time-harmonic amplitude, $\vec\nabla f+f\alpha=0$ at a constant $\alpha$ |
 | $\xi_{\mathrm{scl}}$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |

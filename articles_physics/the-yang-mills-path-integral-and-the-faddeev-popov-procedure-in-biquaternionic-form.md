@@ -20,7 +20,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi} ,
 $$
-and the centre is $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$; the material reading is $Q_t=i r'_t$ with $Q_\eta=x_\eta$, so that the interval $\sum_\mu Q_\mu^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$, with conjugate $(\tilde\nabla^{\natural})_\Phi$ and $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta$; the material reading is $Q_t=i r'_t$ with $Q_\eta=x_\eta$, so that the interval $\sum_\mu Q_\mu^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ carries its one minus in the square of that $i$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi} ,
 \qquad
@@ -47,7 +47,7 @@ The Yang–Mills action of the framework is the gauge-invariant density of the c
 $$
 S_{\mathrm{YM}}[\mathcal{A}]=-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural},
 \qquad
-\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}\,[\mathcal{A},\mathcal{A}],\qquad \mathcal{A}=\sum_a\mathcal{A}_aT_a .
+\tilde{\mathcal{F}}=\tilde\nabla_\Phi\mathcal{A}+\tfrac{i\kappa}{2}\,[\mathcal{A},\mathcal{A}],\qquad \mathcal{A}=\sum_a\mathcal{A}_aT_a .
 $$
 The trace is the matrix trace on the $\mathrm{SU}(2)$ factor, taken in the defining two-dimensional representation; the combination is invariant because $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ and the trace is cyclic. Under a local gauge transformation $\tilde U(\tilde{Q})$, the connection shifts by an inhomogeneous term,
 $$
@@ -238,7 +238,7 @@ Two consequences follow, and both are properties of the non-abelian path integra
 - **The Faddeev–Popov integral overcounts.** A slice that meets an orbit $k$ times is counted $k$ times, and the determinant alone does not correct for it. The corrected integral restricts the configuration space to a **fundamental domain** in which the gauge condition has a unique solution, the interior of the Gribov region; the boundary is the horizon.
 - **The horizon is dynamical.** Because the horizon is a statement about the Faddeev–Popov operator, it is affected by the gauge field, and the low-momentum behaviour of the gauge field's propagator is modified by the restriction. This is the analytic setting in which the confining behaviour of the non-abelian theory is studied in the continuum; the non-perturbative construction in which the area law is established is the lattice regularization, cited below.
 
-In the framework's terms the ambiguity is a statement about the adjoint action, and it is worth stating why the two cases differ. In the abelian theory the gauge group is the centre, which is one-dimensional and abelian, the orbit direction is the gradient $\tilde{\nabla}\Gamma$, and the gauge-fixing equation is linear in $\Gamma$ with a field-independent operator. In the non-abelian theory the group is the unit quaternions, the orbit direction is $D_\mu\Gamma$ with a connection-dependent covariant derivative, and the equation is no longer linear in the field: the determinant's dependence on $\mathcal{A}$ and the non-uniqueness of the slice are the same fact seen from two sides. The algebra does not remove the ambiguity; it identifies the operator whose kernel creates it as the adjoint twisting of a central differential operator, and it records that the ambiguity is a property of the non-abelian orbit, exactly as the non-abelian equation of motion is.
+In the framework's terms the ambiguity is a statement about the adjoint action, and it is worth stating why the two cases differ. In the abelian theory the gauge group is the centre, which is one-dimensional and abelian, the orbit direction is the gradient $\tilde\nabla_\Phi\Gamma$, and the gauge-fixing equation is linear in $\Gamma$ with a field-independent operator. In the non-abelian theory the group is the unit quaternions, the orbit direction is $D_\mu\Gamma$ with a connection-dependent covariant derivative, and the equation is no longer linear in the field: the determinant's dependence on $\mathcal{A}$ and the non-uniqueness of the slice are the same fact seen from two sides. The algebra does not remove the ambiguity; it identifies the operator whose kernel creates it as the adjoint twisting of a central differential operator, and it records that the ambiguity is a property of the non-abelian orbit, exactly as the non-abelian equation of motion is.
 
 ## What the Algebra Supplies and What It Imports
 
@@ -281,7 +281,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; abelian factor |
-| $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$; the material reading is $Q_t=i r'_t$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ | Compact gauge algebra |
 | $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
@@ -289,7 +289,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $f_{abc}=2\varepsilon_{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $\vec e_a$ ($f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12\vec e_a$) |
 | $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, $\kappa=\frac{ϙ}{\hbar}$ | Connection and coupling |
 | $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Covariant derivative; adjoint action |
-| $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
+| $\tilde{\mathcal{F}}=\tilde\nabla_\Phi\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |
 | $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_{\mu a}$ | Measure on $\mathrm{SU}(2)$-valued configurations |
 | $G_a[\mathcal{A}]=\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}-\omega_a$ | Lorenz gauge-fixing condition |

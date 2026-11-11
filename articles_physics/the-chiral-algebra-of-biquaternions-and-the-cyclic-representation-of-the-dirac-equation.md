@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus already carries several biquaternionic readings of the Dirac equation. *The Dirac Equation in Biquaternionic Form* writes it in the corpus's own units $e_t, \vec e_x, \vec e_y, \vec e_z$, with the Hamilton product and the elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, records the comparison with $\mathrm{Cl}_{1,3}$. *Exercise: Chirality and the Weyl Spinors* treats the two chiral halves by their two values. The article recorded here is a fourth interpretation, and it is built on a purpose-made algebra rather than on the corpus's units.
+The corpus already carries several biquaternionic readings of the Dirac equation. *The Dirac Equation in Biquaternionic Form* writes it in the corpus's own units $e_t, \vec e_x, \vec e_y, \vec e_z$, with the Hamilton product and the elliptic factorisation $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$. *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, records the comparison with $\mathrm{Cl}_{1,3}$. *Exercise: Chirality and the Weyl Spinors* treats the two chiral halves by their two values. The article recorded here is a fourth interpretation, and it is built on a purpose-made algebra rather than on the corpus's units.
 
 The source is Sergey Y. Kotkovskiy, *Chiral algebra of Dirac equation*, the version marked v3 (February 2026) of the file whose printed identifier is `2502.0126`; an earlier version, marked v2 (March 2025), is titled *Cyclic representation of the Dirac equation* and differs from the digested text in one mathematical place only — the map of the Appendix's second correspondence, which the author rewrote between the two versions — so the two are recorded here as one source. Twenty-eight pages in two parts. Part 1, *Chiral algebra*, constructs an **isotropic (light) basis** of the biquaternion space out of nullquaternions, defines **signed biquaternions**, introduces **four types of biquaternion multiplication** — outer, inner, diagonal and crossing — and three **exchange conjugations**. Part 2, *Dirac equation*, adds a fourth operation, **cyclic conjugation**, which is a four-cycle of the coordinates, and writes the Dirac equation as a single expression that contains both chiralities: the **cyclic representation**. The paper then derives an analogue of the Lorentz transformation, a **rotation transformation** that it reads as the creation of the particle's proper rotation, an expression of the cyclic transformation through a **complex Hadamard array**, and four equivalent representations of the same equation; and it gives the concrete spin machinery — the spin-projection operators become the three Pauli arrays under a further correspondence, and the exchange conjugation is the longitudinal spin flip. The Appendix attaches a two-by-two array to every biquaternion and claims two correspondences — the outer product as the ordinary product of arrays, and the inner product as a product with the second term of each entry **subtracted**; the first is exact, the second is not (see *The Appendix's Correspondences*), and the product that beside the outer one really is an ordinary product is the **diagonal** one. The author identifies the isotropic-basis machinery with a model of the genetic code he has published elsewhere, and reads the Hadamard array as the informational aspect of the Dirac equation.
 
@@ -270,7 +270,7 @@ The second iterate being an involution is what makes the cyclic conjugation usab
 The paper starts from the two-line chiral pair of the older literature, where the field is written as a pair of two-component objects and the equation as a pair of first-order lines. In this corpus the same pair is written with one line per value, both acting from the left,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and the corpus fixes the gradient, the two values and their names (*Operator and Calculus Conventions*, §*The Gradient*, §*The Dynamics*). Rewritten in the isotropic derivatives (6), the pair is
@@ -377,7 +377,7 @@ The corpus writes the massive Dirac equation twice, and the two writings are not
 **The one-sided chiral pair.** The field is an element on which the algebra acts, and the equation is the pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 one line per value. Both gradients act by left multiplication, so the pair is one-sided; at $m=0$ the two lines are the two massless equations, and the mass couples them off the diagonal. **Chirality is the two lines.**
@@ -385,7 +385,7 @@ one line per value. Both gradients act by left multiplication, so the pair is on
 **The two-sided single equation.** Read on the algebra itself, the same physics is one equation with a left and a right side,
 
 $$
-\tilde\nabla^{\natural}F=m\,\mathsf{V}_{\mathrm{vol}}\,\bar F ,
+(\tilde\nabla^{\natural})_\PhiF=m\,\mathsf{V}_{\mathrm{vol}}\,\bar F ,
 $$
 
 with the derivative on the left and the mass on the right (*An Explicit Dictionary with Conjugation in the Mass Term*) and the coefficient conjugate $\bar F$. The basis operator acts on $\bar F$ on the right, since $\mathsf{V}_{\mathrm{vol}}\bar F=-i\,\bar F\vec e_z$: the mass term is the right multiplication by $\vec e_z$ with the phase $-i$, that is $-mi\,\bar F\vec e_z$ in the notation of *The Dirac Equation in Biquaternionic Form*. It is a pure right multiplier, which is why it commutes with the gradient (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*; *Operator Family Conventions*, §*The Slot Label, Which Is the Chirality*). The mass term is antilinear; the chirality sits in the right multiplication, not in a second field.

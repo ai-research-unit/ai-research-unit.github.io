@@ -23,7 +23,7 @@ The framework's differential operators are Lorentzian. With the material coordin
 $$
 \tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z,
 \qquad
-\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2
+\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2
 = + \partial^2/\partial R_t^2+\nabla^2,
 $$
 
@@ -122,7 +122,7 @@ The parity of the density is worth recording. The quantity $\epsilon_{\mu\nu\rho
 The reason the integral $Ϙ$ is topological rather than dynamical is that the density is a total derivative. In the abelian case the identity is elementary. If $F=dA$, then $F\wedge F=d(A\wedge F)$ because $dF=0$, and in components
 
 $$
-\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural},
+\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural},
 \qquad
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}.
 $$
@@ -130,7 +130,7 @@ $$
 This identity was verified symbolically, not quoted: taking a general smooth $A_\mu(x)$ in four flat coordinates, forming $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$, and computing both sides, one finds
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}=\frac{1}{2}\,\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 $$
 
 as an identity in the derivatives of $A_\mu$, with every second derivative cancelling. The computation was done first in the flat Euclidean coordinates and then in the $i r'_t$ convention, with the same result; the cancellation of the second derivatives is what the two computations establish. The current $J_{\mathrm{CS},\mu}$ is **gauge dependent**: under $A_\mu\mapsto A_\mu+\partial/\partial R_\mu\,\Gamma$ it changes by a term whose divergence vanishes by the antisymmetry of $\epsilon$ and the Bianchi identity $\partial/\partial R_\mu F_{\nu\rho}+\partial/\partial R_\nu F_{\rho\mu}+\partial/\partial R_\rho F_{\mu\nu}=0$, so the *density* $\partial/\partial R_\mu J_{\mathrm{CS},\mu}$ is gauge invariant even though $J_{\mathrm{CS},\mu}$ is not. This is why the density can be an observable and the current cannot.
@@ -263,7 +263,7 @@ the second following from $\vec e_a=-i\sigma_a$ and $\mathrm{Tr}(\sigma_a\sigma_
 $$
 \mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a,
 \qquad
-\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac12[\mathcal{A},\mathcal{A}].
+\tilde{\mathcal{F}}=\tilde\nabla_\Phi\mathcal{A}+\tfrac12[\mathcal{A},\mathcal{A}].
 $$
 
 The instanton is
@@ -280,7 +280,7 @@ The configuration was checked by substitution, not quoted. At a generic point $x
 
 - with $\eta$, $F_{\mu\nu}=+\star F_{\mu\nu}$ for every pair, with residual $\max|F-\star F|\approx 2\times10^{-11}$;
 - with $\bar{\eta}$, $F_{\mu\nu}=-\star F_{\mu\nu}$, with residual $\max|F+\star F|\approx 2\times10^{-11}$;
-- in both cases the equation of motion $\tilde D\tilde F=\tilde\nabla\tilde F+[\mathcal{A},\tilde F]=0$ holds to the accuracy of the finite differences, $\max|\tilde D\tilde F|\approx 5\times10^{-7}$ at step $10^{-5}$.
+- in both cases the equation of motion $\tilde D\tilde F=\tilde\nabla_\Phi\tilde F+[\mathcal{A},\tilde F]=0$ holds to the accuracy of the finite differences, $\max|\tilde D\tilde F|\approx 5\times10^{-7}$ at step $10^{-5}$.
 
 The residual in the self-duality check is at the level of the arithmetic, and the residual in the equation-of-motion check is the expected finite-difference error; the solution is genuine. The equation-of-motion check is a guard against sign and factor slips in the transcription; the structural reason it must hold is the previous section's argument — self-duality plus the Bianchi identity — which is the real content.
 
@@ -351,7 +351,7 @@ This is a gap in the framework's field content, not a defect in its algebra. The
 This article has treated the localised finite-energy solutions of the biquaternion framework in the two settings in which they occur, and has kept the settings apart.
 
 - **Instantons are Euclidean.** The Hodge star on two-forms has $\star^2=+1$ in Euclidean signature and $\star^2=-1$ in Lorentzian signature; consequently $F=\star F$ has nonzero real solutions only in the Euclidean case, and a real self-dual Lorentzian field is the zero field. The framework's Wick rotation, the identification $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{H}$, is the passage between the two stars, and the explicit factor $i$ of the $i r'_t$ convention is the Lorentzian structure that the Euclidean solution does not carry.
-- **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $i r'_t$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
+- **The topological charge is an integral of a total derivative.** The density is $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})=\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu})$, and in the abelian case it equals $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ with $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$; this was verified symbolically, in both the flat Euclidean and the $i r'_t$ conventions, with the second derivatives cancelling. In the non-abelian case $F\wedge F=d\Omega_{\mathrm{CS}}$. The primitive is what makes the charge topological: it is fixed by the boundary winding and is insensitive to the local shape.
 - **The framework's invariants supply the abelian density.** $\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4iI_2/c$ (Lorentzian) and $=4I_2$ (Euclidean) were recomputed; the imaginary part of the biquaternion norm, $I_2=\vec E\cdot\vec B$, *is* the abelian topological density. In the non-abelian case the density needs the matrix trace, and the rank-two, single-slot biquaternion norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto \tilde UF_{\mu\nu}\tilde U^{-1}$; this was checked numerically. That the framework's invariant apparatus does not produce the non-abelian topological density is recorded as a gap.
 - **There is no abelian instanton.** For finite-action abelian fields on $\mathbb R^4$ the charge is a vanishing surface term; instantons are intrinsically non-abelian, and in this framework they live in the $\mathrm{SU}(2)$ factor inside $\mathbb{B}_{\Phi}$.
 - **An explicit solution exists and was checked.** The $SU(2)$ BPST instanton in the framework's $\mathrm{SU}(2)$ satisfies $F=\pm\star F$ (residual at the arithmetic level) and $D_\mu F_{\mu\nu}=0$ (to finite-difference accuracy). It saturates the Bogomolny bound $S\ge 8\pi^2|Ϙ|/g^2$ that self-duality establishes, and its charge is $|Ϙ|=1$.
@@ -369,8 +369,8 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathbb{B}_{\Psi}$ | Informational sector, Hermitian, signature $(1,3)$ |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, the Euclidean slice |
 | $\mathbb{B}_{C}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
-| $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i r'_t$, elliptic on $Q_t=c\tau$ |
+| $\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | The d'Alembertian; hyperbolic on $Q_t=i r'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Abelian field-strength biquaternion |
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |

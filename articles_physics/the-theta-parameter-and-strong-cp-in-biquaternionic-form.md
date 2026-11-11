@@ -30,14 +30,14 @@ with all indices summed in the $i r'_t$ convention as in the companion gauge art
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
-**Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $\tilde\nabla^{\natural}$, and the **d'Alembertian** $\Box$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
+**Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $(\tilde\nabla^{\natural})_\Phi$, and the **d'Alembertian** $\Box$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
 
-**The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
+**The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla_\Phi\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 both acting from the left, and each half satisfies $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -61,7 +61,7 @@ so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\i
 
 $$
 \sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a}
-=\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural} ,
+=\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural} ,
 \qquad
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\sum_a\epsilon_{\mu\nu\rho\sigma}\Bigl(A_{\nu a}F_{\rho\sigma a}
 -\tfrac{g}{3}\sum_{b,c}f_{abc}A_{\nu a}A_{\rho b}A_{\sigma c}\Bigr),
@@ -193,7 +193,7 @@ Because it is the integral of a parity-odd density, the theta term violates $P$ 
 
 The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that relates the two parts, and the massive equation is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, since $\tilde\nabla^2$ is not scalar.
+The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that relates the two parts, and the massive equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, since $\tilde\nabla^2$ is not scalar.
 
 ## Summary of Notation
 
@@ -207,12 +207,12 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $S_\theta=\frac{\theta}{32\pi^2}\int\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ | Theta term of the action |
 | $F_{\mathrm{dual},\mu\nu}=\frac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
-| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ |
+| $J_{\mathrm{CS},\mu}$ | Chern–Simons current, $\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}=\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural}$ |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
-| $\tilde\nabla^{\natural}$ | Its quaternion conjugate |
+| $(\tilde\nabla^{\natural})_\Phi$ | Its quaternion conjugate |
 | $\Box$ | The d'Alembertian of the same article, the quaternionic norm of the gradient; scalar |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |
 | $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |

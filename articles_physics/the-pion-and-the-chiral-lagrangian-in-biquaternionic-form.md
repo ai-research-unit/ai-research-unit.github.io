@@ -271,24 +271,24 @@ $$
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two parts. The two parts carry the two values of the label, $L$ for the minus one and $R$ for the plus one, and they obey the pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+one equation per value, coupled only by the mass; at $m=0$ they decouple into the two Weyl equations. The axial current is the difference between the currents of the two parts, and the mass term is the coupling that makes its divergence nonzero. The single equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$ is only the $R$ part at $m=0$. This is the two-sided structure that the product of two elements displays. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 In the isospin limit the divergence is the mass bilinear,
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi,5\eta}\rangle_{\natural}
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural}
 = \frac{m_u+m_d}{2}\,\bar q\,(i\xi)\,T_\eta\,q ,
 $$
 
 the basis operator $i\xi$ being the right multiplication by $\vec e_z$, the phase $i$ cancelling the $-i$ of the fifth basis operator, and at the level of the chiral Lagrangian it is proportional to the pion field itself,
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_\eta + \cdots ,
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\,\pi_\eta + \cdots ,
 \qquad
 \langle 0|j_{5\mu \eta}(0)|\pi_l(p)\rangle = i f_\pi p_\mu\,\delta_{\eta l} ,
 $$
@@ -436,9 +436,9 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu \eta}$, $j_{5\mu \eta}$ | Isospin (vector) and axial currents |
 | $C_\mu$, $\xi$ | Frame basis operator of the coordinate $x_\mu$, $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(\eta)=y$; and the fifth basis operator, the right multiplication by $-i\vec e_z$, written $-iR_{\vec e_z}$ where the operator is the subject |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Chiral pair of the Dirac equation; the two parts are coupled only by the mass |
 | $\langle0\vert j_{5\mu \eta}(0)\vert\pi_l(p)\rangle = if_\pi p_\mu\delta_{\eta l}$ | Defining matrix element of $f_\pi$ |
-| $\langle\tilde\nabla,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |
+| $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, used for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the weight with the opposite sign, $-\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\mathrm{Tr}$ | The trace of the algebra, used in $\mathrm{Tr}(T_jT_\eta)=\tfrac12\delta_{j\eta}$ (§*Norm and Pairing Conventions*) |

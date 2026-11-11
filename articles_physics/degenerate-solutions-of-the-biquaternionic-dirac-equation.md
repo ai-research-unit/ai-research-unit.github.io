@@ -20,9 +20,9 @@ The equation is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 
 $$
 \boxed{\;
-\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
 \;}
 $$
 
@@ -31,9 +31,9 @@ with $k_m=mc/\hbar$ the mass wave number, that is the reciprocal reduced Compton
 At $k_m=0$ the pair decouples into two one-sided equations,
 
 $$
-\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=0,
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=0,
 \qquad
-\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=0 .
+(\tilde\nabla^{\natural})_\Phi\tilde\Xi_{\mathrm{sp},L}=0 .
 $$
 
 **Definition.** A solution is **degenerate** at a point when $N\bigl(\tilde\Xi_{\mathrm{sp}}\bigr)=0$ there. It is degenerate when the condition holds at every point of its domain.
@@ -92,7 +92,7 @@ The third object cannot be the second, and the reason is one associativity step.
 
 *Theorem.* Let $u$ be a traceless element with $u^{2}=-e_t$ and let $\tilde\Xi_{\mathrm{sp},L}$ and $\tilde\Xi_{\mathrm{sp},R}$ be definite-value parts under it, that is $R_u\tilde\Xi_{\mathrm{sp},L}=i\tilde\Xi_{\mathrm{sp},L}$ and $R_u\tilde\Xi_{\mathrm{sp},R}=-i\tilde\Xi_{\mathrm{sp},R}$. If $k_m\neq0$, then the pair holds only for $\tilde\Xi_{\mathrm{sp},L}=\tilde\Xi_{\mathrm{sp},R}=0$.
 
-*Proof.* Left multiplication keeps a value, because a left multiplier acts before the right multiplier that tests the value: if $\tilde Xu=-i\tilde X$ then $(\tilde A\tilde X)u=\tilde A(\tilde Xu)=-i\tilde A\tilde X$. The gradient is an element and multiplies on the left, so $\tilde\nabla\tilde\Xi_{\mathrm{sp},R}$ carries the value $-i$ wherever $\tilde\Xi_{\mathrm{sp},R}$ does. The right side of the first line is $k_m\tilde\Xi_{\mathrm{sp},L}$, of value $+i$, and the central coefficient does not move a value. Two definite-value elements of opposite value are equal only if both vanish, so the first line forces both sides to zero and then forces both components to vanish. The same argument applies to the second line, and it holds at each point of the field's domain, with no plane-wave assumption.
+*Proof.* Left multiplication keeps a value, because a left multiplier acts before the right multiplier that tests the value: if $\tilde Xu=-i\tilde X$ then $(\tilde A\tilde X)u=\tilde A(\tilde Xu)=-i\tilde A\tilde X$. The gradient is an element and multiplies on the left, so $\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}$ carries the value $-i$ wherever $\tilde\Xi_{\mathrm{sp},R}$ does. The right side of the first line is $k_m\tilde\Xi_{\mathrm{sp},L}$, of value $+i$, and the central coefficient does not move a value. Two definite-value elements of opposite value are equal only if both vanish, so the first line forces both sides to zero and then forces both components to vanish. The same argument applies to the second line, and it holds at each point of the field's domain, with no plane-wave assumption.
 
 **Why the proof is short.** The only fact used is that multiplication on the left cannot change a value. A reader who takes the pair's letters to be definite values has already assumed that the operator acting on a component acts on the left, and the argument then applies to every field and every point, with no further hypothesis. The corpus's letters are not definite values, and that is the whole difference: the two components are related by a central coefficient, not by a sign of a right multiplier.
 
@@ -100,7 +100,7 @@ The third object cannot be the second, and the reason is one associativity step.
 
 **A check.** The momentum-space system with the $u$-split substituted becomes four complex equations on the single unknown $\tilde\Xi_{\mathrm{sp},0}$, and its solution space has complex dimension zero. Five candidate splits return the same answer: the value split at $u=\vec e_z$, the three splits by pairs of coefficients, the row split of the matrix model and the column split.
 
-**Where the declared unit does work.** The two-sided form of the same equation, $-\tilde\nabla^{\natural}F-i\bar F\vec e_zk_m=0$, has a mass term that multiplies on the right and conjugates the coefficient. The conjugation reverses the value, because it sends the central $i$ to $-i$ and leaves the units alone, so the two-sided equation can be split by a definite-value pair where the one-sided pair cannot. That is the structural reason the corpus keeps two forms of the equation and does not identify them.
+**Where the declared unit does work.** The two-sided form of the same equation, $-(\tilde\nabla^{\natural})_\PhiF-i\bar F\vec e_zk_m=0$, has a mass term that multiplies on the right and conjugates the coefficient. The conjugation reverses the value, because it sends the central $i$ to $-i$ and leaves the units alone, so the two-sided equation can be split by a definite-value pair where the one-sided pair cannot. That is the structural reason the corpus keeps two forms of the equation and does not identify them.
 
 **What this article uses.** The letters $L$ and $R$ below are the pair's components in the sense of §*The Pair's Two Components*. No unit is declared and no value is tested, except where a counterexample is being exhibited.
 

@@ -33,12 +33,12 @@ The read-list article *The Gauge Principle in Biquaternionic Form* derives the a
 The centre is $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and its $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. A constant central phase is a symmetry of the massless biquaternion field equation, because a central constant passes through the gradient. Localizing it, $\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$ with real $\Gamma$, forces a connection $\tilde{A}_{\Phi}$ with the transformation law
 
 $$
-\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma,
+\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 $$
 
 under which the field equation is gauge covariant. Its covariant derivative is the $\tilde D$ of *Algebra and Element Conventions*, read with $\tilde A_{\Phi}$ for its connection, and it acts on the left as $\tilde\nabla_\Phi$ does, so the abelian structure is one-sided throughout and no side hides in its letters. Its component is $D_\mu$, the curvature is the abelian $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, with $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$, and a real gauge function keeps $\tilde{A}_{\Phi}$ in the material sector $\mathbb{B}_{\Phi}$. The coupling $ϙ$ is a parameter: the algebra does not fix its value.
 
-Two inherited facts bear directly on this agenda. First, the **gauge group is canonically attached**: it is the $*$-unitary part of the centre, and no choice is made in selecting it. Second, the **mass term is linear and passes the continuous central phase**: the framework's Dirac mass is the linear chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, so the vector $\mathrm{U}(1)$ is conserved for the massive field and the broken symmetry is the axial one. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$: because $\flat$ is anti-linear, $(\lambda\tilde{Ξ}_{\mathrm{sp}})^{\flat} = \lambda^{*}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$, so a conjugate coupling built on it would survive the continuous central phase only for real $\lambda$, i.e. only $\lambda = \pm 1$ — a discrete $\mathbb{Z}_2$, not the continuous $\mathrm{U}(1)$. Whether the framework deploys such a coupling is the open Majorana interpretation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Two inherited facts bear directly on this agenda. First, the **gauge group is canonically attached**: it is the $*$-unitary part of the centre, and no choice is made in selecting it. Second, the **mass term is linear and passes the continuous central phase**: the framework's Dirac mass is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, so the vector $\mathrm{U}(1)$ is conserved for the massive field and the broken symmetry is the axial one. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$: because $\flat$ is anti-linear, $(\lambda\tilde{Ξ}_{\mathrm{sp}})^{\flat} = \lambda^{*}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$, so a conjugate coupling built on it would survive the continuous central phase only for real $\lambda$, i.e. only $\lambda = \pm 1$ — a discrete $\mathbb{Z}_2$, not the continuous $\mathrm{U}(1)$. Whether the framework deploys such a coupling is the open Majorana interpretation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Finally, the same article and its parents record the negative fact that the framework **cannot fix the gauge**. That fact is treated here as an obstacle in its own right, because every statement about a massive vector spectrum is normally a statement in a fixed gauge.
 
@@ -138,17 +138,17 @@ A qualification recorded in that article is carried here because it bears on hyp
 **Two Dirac equations.** The massive Dirac equation of the framework is the **linear chiral mass pair**
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with massless limit $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two letters off-diagonally: this is the one-sided statement.
+with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two letters off-diagonally: this is the one-sided statement.
 
 **The same pair, read with the letters.** What the letters add is the reading of the field into its two parts, and the reading is a right multiplication: it commutes with every left multiplication, hence with the gradient. The free equation stays first order in one field,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0,
 $$
 
 and the massive equation stays the pair above. The second-order consequence is the d'Alembertian $\Box$ of *Operator and Calculus Conventions*, §*The Gradient*.
@@ -161,7 +161,7 @@ $$
 (k_{t}^{\prime}e_t+i\vec k_\Phi)(k_{t}^{\prime}e_t-i\vec k_\Phi)=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2},
 $$
 
-the first carrying the vector part $-2ik_{t}^{\prime}\vec k_\Phi$ — $(-4i,-6i,-8i)$ at $k_{t}^{\prime}=1$, $\vec k_\Phi=(2,3,4)$ — and the second scalar. A one-field first-order massive equation would need a first-order operator with scalar square; the gradient has none, and the mass is therefore the chiral pair and not $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$. The chirality is a right multiplier and neither member of the pair contains one, so it has no image under the left multiplication: it is a basis operator of the frame and a value read by the test, not a term of the algebra's equation. The mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements about the letters.
+the first carrying the vector part $-2ik_{t}^{\prime}\vec k_\Phi$ — $(-4i,-6i,-8i)$ at $k_{t}^{\prime}=1$, $\vec k_\Phi=(2,3,4)$ — and the second scalar. A one-field first-order massive equation would need a first-order operator with scalar square; the gradient has none, and the mass is therefore the chiral pair and not $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}}$. The chirality is a right multiplier and neither member of the pair contains one, so it has no image under the left multiplication: it is a basis operator of the frame and a value read by the test, not a term of the algebra's equation. The mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements about the letters.
 
 **The axial current.** The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is
 
@@ -256,7 +256,7 @@ The table collects the items of the agenda and sorts each into the three-way cla
 
 | Item | Status | Object or computation that would settle it |
 |---|---|---|
-| Abelian gauge principle: central $\mathrm{U}(1)$, connection $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, covariant derivative, abelian curvature | Established | — |
+| Abelian gauge principle: central $\mathrm{U}(1)$, connection $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, covariant derivative, abelian curvature | Established | — |
 | Non-abelian construction on $\mathrm{SU}(2)$: connection, adjoint curvature with $[\mathcal{A},\mathcal{A}]$, Bianchi identity, gauge-invariant density | Established | — |
 | Available compact algebra $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, i.e. $\mathrm{U}(2)$, real dimension $4$ | Established | — |
 | Mixed reality class of the connection ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian; no single eigenspace) | Established gap (read list) | A declaration of the intended assignment, or a reformulation removing the mismatch |
@@ -293,7 +293,7 @@ Finally, the genre's standing caution applies here in its strongest form. *The E
 
 This article is a research agenda for electroweak theory inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory on a compact algebra of the right dimension, together with an exact chiral structure on the field, and stops before any chiral gauge theory, any hypercharge assignment, or any scalar sector.
 
-What is established is recalled: the abelian gauge principle, with a canonical central $\mathrm{U}(1)$, the connection $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, the covariant derivative, the abelian curvature, and the linear chiral mass, one-sided in the algebra and read through a right multiplication, with its conserved vector $\mathrm{U}(1)$ and broken axial symmetry; the non-abelian construction, with a connection transforming inhomogeneously, a curvature transforming in the adjoint and containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$, of real dimension four; the chiral structure on the field, with the two letters preserved by every left multiplication, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; and the vector-like character of the centre.
+What is established is recalled: the abelian gauge principle, with a canonical central $\mathrm{U}(1)$, the connection $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, the covariant derivative, the abelian curvature, and the linear chiral mass, one-sided in the algebra and read through a right multiplication, with its conserved vector $\mathrm{U}(1)$ and broken axial symmetry; the non-abelian construction, with a connection transforming inhomogeneously, a curvature transforming in the adjoint and containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$, of real dimension four; the chiral structure on the field, with the two letters preserved by every left multiplication, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; and the vector-like character of the centre.
 
 What is not established is everything electroweak-specific.
 
@@ -315,7 +315,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $\mathbb{B}_{H}$ | The real-quaternion subspace; *Algebra and Element Conventions*, §*The Quaternion and Antiquaternion Subspaces* |
 | $\mathbb{B}_{C}$ | The centre of the algebra, and the vector-like abelian factor; *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* |
 | $\tilde\nabla_\Phi$, $\Box$ | Biquaternionic gradient and d'Alembertian; *Operator and Calculus Conventions*, §*The Gradient* |
-| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, $D$ | Abelian connection law and covariant derivative, acting on the left (read list); $D$ is the derivative of *Operator and Calculus Conventions* |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $D$ | Abelian connection law and covariant derivative, acting on the left (read list); $D$ is the derivative of *Operator and Calculus Conventions* |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Available compact algebra (real dimension $4$) |
 | $\tilde U \in SU(2)$ (unit real quaternions), $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=\frac{ϙ}{\hbar}$ | Gauge group, non-abelian connection, coupling (read list) |
@@ -330,7 +330,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $2$, $\bar{2}$ | The doublet and its conjugate, equivalent for $\mathrm{SU}(2)$ (pseudoreality) |
 | two-sided actions, $Q\mapsto aQb$ | The home a chiral gauge connection would need; not the left multiplications of $\mathbb{B}$ |
 | $a$ | $\mathrm{SU}(2)$ adjoint index, written low; a contraction over it is an explicit sum |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $\mathrm{Tr}$ | The plain trace of *Product and Form Conventions*, used for the invariant density |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard electroweak notation, not framework objects** | |

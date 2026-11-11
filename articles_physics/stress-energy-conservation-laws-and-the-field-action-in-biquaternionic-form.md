@@ -25,10 +25,10 @@ Three threads are developed.
 - **The electromagnetic tensor as a bigeneral quaternionic bilinear.** The construction $\mathsf{T}_{\mu\nu} = \tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, its component table, its symmetry, its tracelessness, and its conservation, including the source term that couples it to matter.
 
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2+\Delta .
+\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2+\Delta .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i r'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i r'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $\mathsf{T}_{00}$ carries a sign in the $i r'_t$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -101,14 +101,14 @@ $$
 and adding the minimal-coupling term $S_{\mathrm{int}}=-\int \sum_\nu A_\nu J_\nu\,d^4r$ with the four-current $J_\nu=(\rho c,\vec J)$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation
 
 $$
-\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi},
+\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi},
 \qquad
 \tilde J_{\Phi} = ic\rho\,e_t+\vec J,
 \qquad
-\sqrt{\mu}\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}\right)=0 ,
+\sqrt{\mu}\,\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right)=0 ,
 $$
 
-the form fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. Its content is exactly the four component equations together with the integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})=0$, equivalent to charge conservation.
+the form fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. Its content is exactly the four component equations together with the integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi})=0$, equivalent to charge conservation.
 
 The two actions exhibit the same pattern. The kinetic term is the biquaternion norm of the derivative, $-\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}$ for the scalar and $-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\propto \langle\tilde{F}\rangle_{\natural}$ for the electromagnetic field; the equation of motion is the vanishing of the appropriate first-order or second-order operator; and the conservation of the source current is the integrability condition of the equation, not a separate law.
 
@@ -266,7 +266,7 @@ so that the source-free field has $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}=0$
 
 The identity was verified off shell: for random arbitrary fields the divergence reproduces $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$ to machine precision, ratio exactly one, for all four $\nu$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|\vec k_i|$ in the vacuum, $\epsilon_r=\mu_r=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\sum_\mu\partial/\partial R_\mu T_{\mu\nu}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four $\nu$ — conservation for the interacting cross terms and not merely mode by mode.
 
-**The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_\mu$, not the conjugated $e_\mu^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $\vec e_\eta^{\natural}=-\vec e_\eta$; the conjugated contraction is a different combination, it does not reproduce $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
+**The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_\mu$, not the conjugated $e_\mu^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $\vec e_\eta^{\natural}=-\vec e_\eta$; the conjugated contraction is a different combination, it does not reproduce $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi})$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
 
 **Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $\mathsf{T}_{\mu\nu}$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde{W}_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing $\nu$ selects the four entries $\mathsf{T}_{\mu\nu}$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$, and it is that divergence which vanishes.
 
@@ -303,14 +303,14 @@ $$
 the $\nu=k$ components are the momentum-balance equations that underlie radiation pressure, and the biquaternionic form of the whole statement is the single equation
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}_{\Psi}\right) = \frac{i}{c}\,\vec J\cdot\vec E
+\mathrm{Sc}\!\left(\tilde\nabla_\Phi\tilde{W}_{\Psi}\right) = \frac{i}{c}\,\vec J\cdot\vec E
 $$
 
 for the Hermitian form $\tilde{W}_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the companion article *Maxwell's Equations in the Biquaternionic Formulation* derives and the exercise re-derives by contrast with the failed real form. The pattern is general: the divergence of the field's stress–energy equals minus the four-force density, the divergence of the matter's tensor equals plus it, and the sum is conserved. The field action is what fixes both the field tensor and, through the coupling term, the force that appears on the matter side.
 
 ## What the Algebra Supplies and What Is Transcribed
 
-**Supplied by the algebra.** The bigeneral quaternionic bilinear form of the electromagnetic stress–energy, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, with the basis elements of $\mathbb{B}_{\Phi}$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\propto\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural}$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.
+**Supplied by the algebra.** The bigeneral quaternionic bilinear form of the electromagnetic stress–energy, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$, with the basis elements of $\mathbb{B}_{\Phi}$ supplying the two index directions; the identification of the free-field Lagrangian with the biquaternion norm of the field strength, $\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\propto\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural}$, so that the action is built from the same biquaternion norm that defines the cone; the packaging of the scalar action, whose equation is the biquaternionic Klein–Gordon equation because $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ is central and scalar; and the interchange law of the divergence, field action and conserved current that lets the divergence of the field tensor be read as the source term of the matter.
 
 **Standard field theory transcribed.** The Euler–Lagrange equations, Noether's theorem, the canonical stress–energy tensor, its improvement to a symmetric gauge-invariant form, the positivity of the scalar energy, the Poynting theorem and the Lorentz four-force are standard. The algebra reproduces them in its own notation; it does not add a conservation law or modify one.
 
@@ -356,7 +356,7 @@ S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = 2\mu\,\mathrm{Re}\,\langle\tilde{F}\rangle_{\natural},
 $$
 
-has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})}\partial/\partial R_\nu\,\tilde{Ξ}_{\mathrm{sp},a}-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.
+has the equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\tilde{Ξ}_{\mathrm{sp},a})}\partial/\partial R_\nu\,\tilde{Ξ}_{\mathrm{sp},a}-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.
 
 The scalar stress–energy is $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$, with
 
@@ -387,7 +387,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; central $i$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Basis of $\mathbb{B}_{\Phi}$; supplies the tensor index directions |
-| $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
+| $\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; the unit metric on $\mathbb{C}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | Unit metric; the same in $\mathbb{B}$ and on the two sectors |
 | $S=\int\mathcal{L}\,d^4r$ | Action; $\mathcal{L}$ the Lagrangian density |
@@ -396,7 +396,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $(\Box-(k_m)^{2})\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
 | $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
 | $S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4r$ | Electromagnetic action |
-| $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$; $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell system |
+| $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$; $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell system |
 | $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$; $\vec S=\vec E\times\vec H$ | Energy density; Poynting vector |
 | $\sigma_{j\eta}=\epsilon E_jE_\eta+\mu H_jH_\eta-W\delta_{j\eta}$ | Maxwell stress |
 | $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |

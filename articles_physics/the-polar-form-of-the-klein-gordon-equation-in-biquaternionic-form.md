@@ -36,7 +36,7 @@ Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating re
 
 The sections follow that order: the ansatz and its domain, the two real equations, the momentum and the current, the non-relativistic limit, what the change of variables adds, and the general field.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^{2}/\partial R_t^{2}+\Delta$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box=\Delta-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
 
 ## The Scalar Case: the Ansatz and Its Domain
 
@@ -107,7 +107,7 @@ $$
 E=-c\,\frac{\partial S_{\tilde\Xi}}{\partial r'_t},
 $$
 
-the factor $c$ being the algebra's own: the temporal slot of $\tilde\nabla S_{\tilde\Xi}$ is $-i\partial S_{\tilde\Xi}/\partial r'_t$ and the temporal slot of $\tilde P_{\Phi}$ is $iE/c$. Substituting the two readings into the amplitude equation,
+the factor $c$ being the algebra's own: the temporal slot of $\tilde\nabla_\Phi S_{\tilde\Xi}$ is $-i\partial S_{\tilde\Xi}/\partial r'_t$ and the temporal slot of $\tilde P_{\Phi}$ is $iE/c$. Substituting the two readings into the amplitude equation,
 
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
@@ -162,14 +162,14 @@ For a plane wave the equation is satisfied identically, since the amplitude is c
 The biquaternionic gradient of the action is the four-momentum. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
 
 $$
-\tilde\nabla S_{\tilde\Xi}
+\tilde\nabla_\Phi S_{\tilde\Xi}
 =e_t\,\frac{\partial S_{\tilde\Xi}}{\partial R_t}+\sum_\eta\vec e_\eta\,\frac{\partial S_{\tilde\Xi}}{\partial R_\eta}
 =-i\frac{\partial S_{\tilde\Xi}}{\partial r'_t}e_t+\nabla S_{\tilde\Xi}
 =i\frac{E}{c}e_t+\vec p
 =\tilde P_{\Phi}.
 $$
 
-The two spellings match slot by slot, and that is where the factor $c$ in $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ comes from. Also $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla S_{\tilde\Xi}/\hbar$, and the amplitude equation of the previous section is the quaternionic norm of that gradient with the quantum term added. This is the algebraic content of the statement that the phase is the action: the four-momentum is not read off the phase by a rule, it is the algebra's derivative of it.
+The two spellings match slot by slot, and that is where the factor $c$ in $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ comes from. Also $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi S_{\tilde\Xi}/\hbar$, and the amplitude equation of the previous section is the quaternionic norm of that gradient with the quantum term added. This is the algebraic content of the statement that the phase is the action: the four-momentum is not read off the phase by a rule, it is the algebra's derivative of it.
 
 ### The current is the density times the four-velocity
 
@@ -197,14 +197,14 @@ The current is the density times the four-velocity, and the coefficient $\rho_{\
 
 ### Conservation is the transport equation
 
-The companion proves that the current is conserved, in the form $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})=0$. With the current written as in the box, the scalar part works out as
+The companion proves that the current is conserved, in the form $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi})=0$. With the current written as in the box, the scalar part works out as
 
 $$
-\mathrm{Sc}\!\left(\tilde\nabla^{\natural}\tilde J_{\Phi}\right)
+\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi}\right)
 =\frac{1}{m}\left[\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right],
 $$
 
-and the bracket is the transport equation. The conservation law and the imaginary part of the Klein–Gordon equation are therefore the same equation, not two equations that agree. The companion describes conservation as the scalar projection of a stronger biquaternion equation; the polar form says which part of that stronger equation the wave equation contains. The imaginary part is one real equation, and it is the scalar slot of $\tilde\nabla^{\natural}\tilde J_{\Phi}=0$. The three vector slots are not implied: they would be three more equations for the two functions $\lVert\tilde\Xi\rVert$ and $S_{\tilde\Xi}$, and the wave equation does not impose them.
+and the bracket is the transport equation. The conservation law and the imaginary part of the Klein–Gordon equation are therefore the same equation, not two equations that agree. The companion describes conservation as the scalar projection of a stronger biquaternion equation; the polar form says which part of that stronger equation the wave equation contains. The imaginary part is one real equation, and it is the scalar slot of $(\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi}=0$. The three vector slots are not implied: they would be three more equations for the two functions $\lVert\tilde\Xi\rVert$ and $S_{\tilde\Xi}$, and the wave equation does not impose them.
 
 ### The two defects, and one mechanism
 
@@ -240,7 +240,7 @@ Since $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$, the translation preserves th
 $$
 \tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi},
 \qquad
-\tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m}=\frac{\tilde\nabla S_{\tilde\Xi}}{m},
+\tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m}=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m},
 \qquad
 \langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
 $$
@@ -258,9 +258,9 @@ and the vorticity tensor vanishes for the same reason. The exception is a nodal 
 **The dynamics in the algebra's letters.** The two equations are the divergence and the norm of one gradient,
 
 $$
-\mathrm{Sc}\!\left(\tilde\nabla^{\natural}\tilde J_{\Phi}\right)=0,
+\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi}\right)=0,
 \qquad
-\langle\tilde\nabla S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}+\hbar^{2}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
+\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}+\hbar^{2}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}.
 $$
 
 The second term is the whole of the quantum content. With it the fluid is not dust; without it the pair is relativistic irrotational dust, pressureless flow along the phase gradient.
@@ -347,7 +347,7 @@ $$
 
 No equation relates $\Xi_t$ to $\Xi_x$. The solution space is a tensor product: writing $S$ for the set of complex scalar solutions, $\{\tilde\Xi:(\Box-k_m^{2})\tilde\Xi=0\}=\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, because the equation is linear with scalar coefficients and the four units are a basis. Each coefficient carries its own amplitude $\lvert\Xi_\mu\rvert>0$ and its own action $S_\mu$, and the pair of §*The Two Real Equations* returns for each of them with $\lVert\tilde\Xi\rVert$ replaced by $\lvert\Xi_\mu\rvert$ and $S_{\tilde\Xi}$ by $S_\mu$. Four complex coefficients are eight real functions, and the four complex equations are eight real equations, one pair per coefficient: nothing is missing and nothing is overdetermined.
 
-**The four pairs share no content.** The four actions are unrelated, so the four momenta $\tilde P_{\Phi,\mu}=\tilde\nabla S_\mu$ are unrelated, and a superposition may carry four different wavevectors. Within a single plane wave the four coefficients share one $\vec k$, because there is one phase and a phase has one gradient at each event; the four-way freedom lives in superpositions and not in modes.
+**The four pairs share no content.** The four actions are unrelated, so the four momenta $\tilde P_{\Phi,\mu}=\tilde\nabla_\Phi S_\mu$ are unrelated, and a superposition may carry four different wavevectors. Within a single plane wave the four coefficients share one $\vec k$, because there is one phase and a phase has one gradient at each event; the four-way freedom lives in superpositions and not in modes.
 
 ### One phase, a biquaternion amplitude
 
@@ -450,9 +450,9 @@ $$
 
 which together are equivalent to the one complex equation. The pair is Takabayasi's relativistic hydrodynamics of a spin-$0$ fluid, written in the one length unit of the material sector. In the momentum variables $\vec p=\nabla S_{\tilde\Xi}$ and $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ the first reads $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the second is the exact relativistic analogue of the WKB transport equation. The pair reduces to the WKB pair when the action is dominated by its rest term $-mc\,r'_t$ and $\Box\lVert\tilde\Xi\rVert$ is replaced by $\Delta\lVert\tilde\Xi\rVert$. The quantum potential is the logarithmic curvature of the density, so it is a functional of $\rho_{\mathrm{num}}$ alone.
 
-The phase gradient is the four-momentum, $\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi}$, and in polar variables the quaternionic norm of a gradient reads $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}+\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The boxed dispersion relation of the companion is the case $\Box\lVert\tilde\Xi\rVert=0$, which a plane wave satisfies and a general wave does not.
+The phase gradient is the four-momentum, $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, and in polar variables the quaternionic norm of a gradient reads $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}+\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The boxed dispersion relation of the companion is the case $\Box\lVert\tilde\Xi\rVert=0$, which a plane wave satisfies and a general wave does not.
 
-The current is $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde P_{\Phi}/m$, with $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ and $\vec j=\rho_{\mathrm{num}}\vec p/m$. Its conservation, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})=0$, is the transport equation and not merely consistent with it. The sign defect is the sign of the energy: the mass shell is a two-sheeted hyperboloid, the density is positive on both sheets, and the charge density changes sign because the energy does. Multiplication by the central $i$ translates the action by $\pi\hbar/2$ and preserves the sheet, while complex conjugation reflects the action and exchanges the sheets.
+The current is $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde P_{\Phi}/m$, with $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ and $\vec j=\rho_{\mathrm{num}}\vec p/m$. Its conservation, $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi})=0$, is the transport equation and not merely consistent with it. The sign defect is the sign of the energy: the mass shell is a two-sheeted hyperboloid, the density is positive on both sheets, and the charge density changes sign because the energy does. Multiplication by the central $i$ translates the action by $\pi\hbar/2$ and preserves the sheet, while complex conjugation reflects the action and exchanges the sheets.
 
 The algebra's polar word degenerates on a central field: the scale is the amplitude, the frame rotor is $e_t$, the rotor is $\pm e_t$, and six of the eight parameters are frozen. The form's domain is the complement of the nodal set, and for a central field the nodal set is exactly where the field meets the zero-divisor cone. That is the opposite of the Dirac case, where the cone is the massless shell and a nowhere-zero solution can lie on it.
 
@@ -481,8 +481,8 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\lvert\Xi_\mu\rvert,\ S_\mu$ | Amplitude and action of a general coefficient |
 | $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$ | The phase angle, a pure number modulo $2\pi$ |
 | $\vec p=\nabla S_{\tilde\Xi},\ E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | Momentum and energy of the action |
-| $\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi}=i\frac{E}{c}e_t+\vec p$ | Four-momentum as the gradient of the action |
-| $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla S_{\tilde\Xi}/\hbar$ | Four-wavevector |
+| $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}=i\frac{E}{c}e_t+\vec p$ | Four-momentum as the gradient of the action |
+| $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi S_{\tilde\Xi}/\hbar$ | Four-wavevector |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Relativistic quantum potential; central and real |
 | $u=\ln\lVert\tilde\Xi\rVert$ | Logarithm of the amplitude; $Q_{\mathrm{qnt}}$ is read on $u$ |
@@ -491,12 +491,12 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\Rho=\bigl(\langle\tilde\Xi\rangle_{\natural}\bigr)^{1/2}$ | Polar modulus, complex; $\lvert\Rho\rvert=\lVert\tilde\Xi\rVert$ on the centre |
 | $\tilde Q=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The algebra's polar word; here $r=\lVert\tilde\Xi\rVert$, $\alpha=\theta_{\mathrm{phs}}$ up to a half-turn, $\tilde U_{\Psi,\mathrm b}=e_t$ and $\tilde u_{\mathrm r}=\pm e_t$ |
 | $\tilde J_{\Phi}=ic\rho_{\mathrm{chg}}\,e_t+\vec j=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Conserved four-current |
-| $\tilde V_{\Phi}=\tilde P_{\Phi}/m=\tilde\nabla S_{\tilde\Xi}/m$ | Four-velocity; unit timelike for a plane wave only |
+| $\tilde V_{\Phi}=\tilde P_{\Phi}/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | Four-velocity; unit timelike for a plane wave only |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2}),\ \vec j=\rho_{\mathrm{num}}\vec p/m$ | Charge density and current density; $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ on shell |
 | $\rho_\mu=\lvert\Xi_\mu\rvert^{2}$ | Density of the coefficient $\Xi_\mu$; the current of a general field reads $\vec j=\sum_\mu\rho_\mu\nabla S_\mu/m$ |
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of a polarized wave; components $Q_{\mathrm{amp},\mu}$ |
 | $g$ | The complex scalar of the polarized field $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$ |
-| $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})=0$ | Conservation; identical to the transport equation |
+| $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi})=0$ | Conservation; identical to the transport equation |
 | $\sigma,\ T_{\mathrm{kin}}=-c\,\partial\sigma/\partial r'_t$ | Envelope action and kinetic energy; $S_{\tilde\Xi}=-mc\,r'_t+\sigma$, $E=mc^{2}+T_{\mathrm{kin}}$ |
 | $f=\exp(-ik_m r'_t)$ | The rest-mass phase divided out by the companion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |

@@ -87,12 +87,12 @@ $$
 \mathcal{L}_{\mathrm{ferm}}=\sum_{\psi}\bar{\tilde\Xi}_{\mathrm{sp},\psi}\,i\,\tilde\nabla_{\psi}\,\tilde\Xi_{\mathrm{sp},\psi} ,
 $$
 
-with $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_\psi$ the covariant gradient carrying the three connections in the representation of $\psi$. The display states the structure; the component form of $\tilde\nabla_\psi$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=0$.
+with $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_\psi$ the covariant gradient carrying the three connections in the representation of $\psi$. The display states the structure; the component form of $\tilde\nabla_\psi$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde\Xi_{\mathrm{sp},L}=0$.
 
 **The covariant gradient.** Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is
 
 $$
-\tilde\nabla_{\psi}\tilde\Xi_{\mathrm{sp},\psi}=\tilde\nabla\tilde\Xi_{\mathrm{sp},\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\mathrm{sp},\psi} ,
+\tilde\nabla_{\psi}\tilde\Xi_{\mathrm{sp},\psi}=\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\mathrm{sp},\psi} ,
 $$
 
 with $T^a_\psi$ the colour generators in the representation of $\psi$ and $\tau^a_\psi$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
@@ -218,7 +218,7 @@ and the analogous laws for $W_\mu$ with $U_L$ and for $B_\mu$ with the phase alo
 | $-\tfrac14G^a_{\mu\nu}G^a_{\mu\nu}$ | $G_{\mu\nu}\mapsto U_cG_{\mu\nu}U_c^{\dagger}$ | the trace of a product is cyclic, and $U_c^{\dagger}U_c=1$ |
 | $-\tfrac14W^a_{\mu\nu}W^a_{\mu\nu}$ | $W_{\mu\nu}\mapsto U_LW_{\mu\nu}U_L^{\dagger}$ | the same |
 | $-\tfrac14B_{\mu\nu}B_{\mu\nu}$ | $B_{\mu\nu}\mapsto B_{\mu\nu}$ | the abelian curvature is a derivative of a scalar phase |
-| fermion kinetic | $\bar{\tilde\Xi}\mapsto\bar{\tilde\Xi}U^{\dagger}$, $\tilde\nabla\tilde\Xi\mapsto U\tilde\nabla\tilde\Xi$ | $U^{\dagger}U=1$, and the derivative is covariant |
+| fermion kinetic | $\bar{\tilde\Xi}\mapsto\bar{\tilde\Xi}U^{\dagger}$, $\tilde\nabla_\Phi\tilde\Xi\mapsto U\tilde\nabla_\Phi\tilde\Xi$ | $U^{\dagger}U=1$, and the derivative is covariant |
 | scalar kinetic | $D_\mu\varphi\mapsto U_\varphi D_\mu\varphi$ | the same, with the scalar's representation |
 | potential $\mu^2\varphi^\dagger\varphi-\lambda(\varphi^\dagger\varphi)^2$ | $\varphi^\dagger\varphi\mapsto\varphi^\dagger\varphi$ | the invariant is the modulus squared, a singlet |
 | Yukawa, down type | the three factors transform by $U_Q^{\dagger}$, $U_\varphi$, $U_d$ | the product is $U_Q^{\dagger}U_\varphi U_d$, and the $SU(2)$ contraction is the singlet |

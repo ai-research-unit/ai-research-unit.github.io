@@ -23,7 +23,7 @@ $$
 with $e_t$ the identity of the algebra and $e_x,e_y,e_z$ the three pure units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$ and cyclic, so that $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$. Its norm is the d'Alembertian
 
 $$
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
 and on the material sector, where $Q_t=i r'_t$, the two gradients and the norm read
@@ -57,12 +57,12 @@ with $\omega$ the pseudoscalar of the frame; the $i$ in front of $\omega$ is the
 **The equation.** The pair is
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla\tilde\nabla^{\natural}=\Box$. No one-field first-order equation with a mass is written anywhere below.
+both gradients acting from the left, with no right multiplication and no conjugation in it. The source's own equation of the transformation is a one-field equation whose operator is the gradient read with two frame factors attached, one on each side; translated once into these conventions the operator is $\tilde\nabla_\Phi$. Its square is the d'Alembertian in the source's frame factors, while the gradient's square is not scalar, so wherever a scalar square of the derivative is needed the article uses the norm $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box$. No one-field first-order equation with a mass is written anywhere below.
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
@@ -345,7 +345,7 @@ The correction $\dfrac{1}{2\,k_m}\vec e_\eta(\cdot)\vec e_y$ is itself worth rea
 
 The transformation can now be located in the two splits of the algebra, and the location is the content of the article.
 
-**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ reverses the value. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ reverses the value. In this form the mass reverses the value and the kinetic operator keeps it; in the gradient pair of the reference article the same mass is the central coefficient $k_m$, which multiplies on the left and keeps the value. It is one coefficient read on the two sides, and the two displays are two forms of one mass, not two masses.
+**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$. The mass term of the Hamiltonian is $mc^2\beta$, and $\beta$ multiplies on the right by the element $\vec e_x$, which anticommutes with the chirality's $\vec e_z$; so $\beta$ reverses the value. The kinetic operator multiplies on the right by $\vec e_z$ and keeps the value. A left multiplication by a pure unit does neither: it commutes with the chirality and therefore preserves the value, and so does a right multiplication by $\vec e_z$. Only a right multiplication by $\vec e_x$ or $\vec e_y$ reverses the value. In this form the mass reverses the value and the kinetic operator keeps it; in the gradient pair of the reference article the same mass is the central coefficient $k_m$, which multiplies on the left and keeps the value. It is one coefficient read on the two sides, and the two displays are two forms of one mass, not two masses.
 
 **The frame split is where the FW transformation works.** Conjugation by $\beta$ separates the mass from the kinetic term: the mass term commutes with $\beta$, and $O$ anticommutes with it. The fixed $*$-unitary of the frame is $F\mapsto Fw$ with $w=\frac{1}{\sqrt2}(i\vec e_x-i\vec e_z)$; it is its own inverse, $w^2=e_t$, and it conjugates $\beta$ into $\Gamma$ and back. The FW transformation is the momentum-dependent completion of that exchange: it conjugates the field so that the mass, which reverses the value, becomes the term that commutes with the mass grading, while the kinetic term, which keeps the value, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
@@ -477,7 +477,7 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta_Q$ | The d'Alembertian, $\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial q_\eta$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |
 | $\Gamma F=-iF\vec e_z=iF\omega$ | Chirality, the right multiplication by $-i\vec e_z$; $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$ |

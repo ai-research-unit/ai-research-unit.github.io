@@ -12,7 +12,7 @@ with $w_{\mathrm{fl}}$ the energy density and $\vec S_{\mathrm P}$ the energy fl
 
 The derivation of the tensor is not repeated here. The canonical energy–momentum tensor of the translation current is derived in [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), and the field-theoretic tensor with its positive energy density, its improvement and its conservation is derived in [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html). Both are cited and neither is reproduced. What this article adds is the element, its $\natural$ reading, its polar decomposition, and the negative claim of the closing sections: the quantum stress is not a thermal pressure.
 
-The polar variables are those of [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html). The field is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real, the four-momentum is $\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi}$, the four-velocity is $\tilde V_{\Phi}=\tilde P_{\Phi}/m$, and the quantum potential is
+The polar variables are those of [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html). The field is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real, the four-momentum is $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, the four-velocity is $\tilde V_{\Phi}=\tilde P_{\Phi}/m$, and the quantum potential is
 
 $$
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
@@ -26,7 +26,7 @@ Four results are established below.
 
 - **The element exists and is Hermitian.** Four real numbers enter it — one energy density and three flux components — and they are the four that the algebra can carry. The remaining six components of the symmetric tensor are not lost; they are simply not in this object, which is why [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) writes the full tensor as a bigeneral bilinear and calls the element its energy–flux part.
 - **The $\natural$ norm is the energy condition.** $\langle\tilde\Sigma_\Psi\rangle_{\natural}=w_{\mathrm{fl}}^{2}-\lvert\vec S_{\mathrm P}\rvert^{2}/c^{2}$, which is non-negative exactly when the flux does not exceed $c$ times the energy density. A single traveling wave saturates it and lies on the zero-divisor cone.
-- **The energy law is one scalar divergence.** $\mathrm{Sc}(\tilde\nabla\tilde\Sigma_\Psi)=-i\left[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\nabla\cdot\vec S_{\mathrm P}\right]$, and the bracket vanishes on shell.
+- **The energy law is one scalar divergence.** $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_\Psi)=-i\left[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\nabla\cdot\vec S_{\mathrm P}\right]$, and the bracket vanishes on shell.
 - **The quantum part of the energy is a divergence plus a positive square.** Pointwise it is indefinite in sign; in the total of a static localised state it is positive and equals the squared logarithmic gradient of the density, up to the factor the logarithm carries.
 
 ## Why the Stress Is an Element
@@ -156,10 +156,10 @@ The arithmetic is: $\rho_{\mathrm{num}}(E^{2}/c^{2}+\lvert\vec p\rvert^{2})/(2\h
 **The divergence of the element is the energy law, up to the factor $i$ that the temporal slot carries.** With $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and $\partial/\partial R_t=-i\partial/\partial r'_t$, $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
 
 $$
-\tilde\nabla\tilde\Sigma_\Psi
+\tilde\nabla_\Phi\tilde\Sigma_\Psi
 =e_t\frac{\partial\tilde\Sigma_\Psi}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde\Sigma_\Psi}{\partial r_\eta},
 \qquad
-\mathrm{Sc}\!\left(\tilde\nabla\tilde\Sigma_\Psi\right)
+\mathrm{Sc}\!\left(\tilde\nabla_\Phi\tilde\Sigma_\Psi\right)
 =-i\left[\frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\nabla\cdot\vec S_{\mathrm P}\right].
 $$
 
@@ -347,8 +347,8 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $i$ | Central scalar imaginary of $\mathbb{B}$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\delta_{\mu\nu}$ | The one metric, all four coefficients $+1$; the index stays low |
-| $\tilde\nabla$ | Biquaternionic gradient, $e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | d'Alembertian; $\Delta-\partial^{2}/\partial{r'_{t}}^{2}$ on the material sector |
+| $\tilde\nabla_\Phi$ | Biquaternionic gradient, $e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | d'Alembertian; $\Delta-\partial^{2}/\partial{r'_{t}}^{2}$ on the material sector |
 | $r'_t$ | Material time, a length |
 | $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ | The central scalar field in polar form |
 | $\lVert\tilde\Xi\rVert$ | The amplitude, positive real |

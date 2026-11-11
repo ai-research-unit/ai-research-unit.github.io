@@ -346,11 +346,11 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $\tilde\nabla^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla^{\natural})_\Phi$, the **one-sided** form is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
@@ -361,10 +361,10 @@ $$
 D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
-with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. The two are one operator read from two sides: since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-\tilde\nabla^{\natural}$, and the equation reads
+with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. The two are one operator read from two sides: since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-(\tilde\nabla^{\natural})_\Phi$, and the equation reads
 
 $$
-\tilde\nabla^{\natural}F=m\left(-i\overline{F}\vec e_z\right),
+(\tilde\nabla^{\natural})_\PhiF=m\left(-i\overline{F}\vec e_z\right),
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.

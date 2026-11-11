@@ -10,7 +10,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=mc/\hbar$. The analytic parts are written with $c$ explicit, as the companion articles are.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, central $i$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$; and $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2$. The scalar field is $\tilde{Ξ}=\xi\,e_t$ with $\xi$ complex, and the mass enters as the length $k_m=mc/\hbar$. The analytic parts are written with $c$ explicit, as the companion articles are.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -66,7 +66,7 @@ $$
 =\frac{1}{2}\int d^4r\;\delta\xi^*\left[\left(\Box-k_m^{2}\right)\xi\right],
 $$
 
-after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, the stationarity of the action is
+after integrating by parts and discarding the boundary term; the overall factor is immaterial for the stationarity condition, but it is kept so that the displayed variation is the variation of the action written above. With $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, the stationarity of the action is
 
 $$
 \boxed{\;\frac{\delta S}{\delta\xi^*}=0
@@ -316,7 +316,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\tilde{Ξ}=\xi e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$ | Material four-wavevector, $\in\mathbb{B}_{\Phi}$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, equivalently $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, is the mass shell |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta$ | d'Alembertian, series convention |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
 | $\Omega_{\vec k_\Phi}=\sqrt{k_\Phi^{2}+k_m^{2}}=k_{t}^{\prime}$ | On-shell frequency, an inverse length: the temporal wave number |
 | $S[\tilde{Ξ}]$ | Klein–Gordon action, central scalar |

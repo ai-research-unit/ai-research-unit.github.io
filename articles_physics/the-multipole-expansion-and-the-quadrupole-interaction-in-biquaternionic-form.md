@@ -17,7 +17,7 @@ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has sig
 $$
 \tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta .
+\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta .
 $$
 
 Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ its vacuum value. The conventions are those of the companion articles:
@@ -180,7 +180,7 @@ $$
 $$
 
 a pure-vector biquaternion with vanishing scalar part, whose imaginary half carries the electric field and whose real half carries the magnetic field. In the electrostatic limit $\tilde{F} = i\sqrt{\epsilon}\,\vec E$. The conventions and the derivation are those of
-- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$.
+- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the definition of $\tilde{F}$ and the single field equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$.
 
 For the multipole problem it is convenient to work with the real vector $\vec E$ itself, since the medium factors and the factor of $i$ play no role in the non-relativistic statics. The two objects are elements of the same kind: a real spatial vector is an element of the vector part, and the vector part is a faithful copy of $\mathbb{R}^3$ inside $\mathbb{B}_{H}$.
 
@@ -364,7 +364,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\tilde{U}\in\mathbb{B}_{H}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$ |
 | $\tilde{\nabla} = e_t\,\partial/\partial R_t + \vec\nabla$ | Biquaternionic gradient |
 | $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Spatial vector gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian (series convention) |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian (series convention) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\vec u = (r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/r$ | Unit radial quaternion, $\vec u^2 = -e_t$ |

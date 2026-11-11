@@ -160,7 +160,7 @@ The corpus carries two Dirac equations, and the Daviau equation is a **third for
 **The one-sided equation, and chirality.** The corpus's own equation is the chiral pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 in which the gradient multiplies on the left in each line and the mass is the central coefficient that relates the two components. Chirality here is not an extra operator: it is the split of the field into its L part and its R part, and the mass is what mixes the two. The operator is one-sided, and the two lines are the two values. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -178,8 +178,8 @@ where $r'_t$ is the physical time, related to the corpus's coordinate by $Q_t=i 
 
 | | Daviau equation | Corpus chiral pair | Kravchenko's equation |
 |---|---|---|---|
-| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
-| Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla$ and by $\tilde\nabla^{\natural}$ | left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$ |
+| Equation | $\mathfrak D\tilde{Ξ}_{\mathrm{sp}}(-\vec e_x)=k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}+q\tilde A_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal NF=0$ |
+| Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla_\Phi$ and by $(\tilde\nabla^{\natural})_\Phi$ | left by $i\partial/\partial r'_t$ and by $D_3$, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, a general element | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | $F\in\mathbb{B}$ |
 | Mass | $m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, conjugate-linear | the pairing of the two values | $-k_mi\overline{F}\vec e_z$ |
 | Chirality | the field carries both values; the right factor is a bivector | the two equations are the two values | the right factor is the fixed direction $\vec e_z$ |
@@ -284,7 +284,7 @@ The formulation is an equivalent rewriting and carries no new physics. Its value
 | $-\vec e_x$ | The fixed right factor; a bivector, even in both parities |
 | $z$ | The cyclic relabelling of the three space directions, $z^3=\mathrm{id}$ |
 | $\mathbb{B}$ | The biquaternion algebra; the algebra of the formulation |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The corpus's gradient and its quaternion conjugate |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ | The corpus's gradient and its quaternion conjugate |
 
 ## Further Reading
 

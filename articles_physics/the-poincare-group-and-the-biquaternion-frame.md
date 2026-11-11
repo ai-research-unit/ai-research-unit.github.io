@@ -197,7 +197,7 @@ The honest summary is that the biquaternion frame answers the homogeneous questi
 
 ## Covariance of the Biwave Equation
 
-The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde{\nabla}\tilde{Ξ} = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde{Ξ}$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
+The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde\nabla_\Phi\tilde{Ξ} = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde{Ξ}$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
 
 **The conjugated gradient is the gradient in the rotated basis.** The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial R_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ of the section *The Frame Reading*, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
 $$
@@ -205,9 +205,9 @@ $$
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
-\boxed{\;\tilde{\nabla}^{\mathrm{Ad}}\left(\tilde U_{\mathrm{lor}}\tilde{Ξ}\tilde U_{\mathrm{lor}}{}^{*}\right) = \tilde U_{\mathrm{lor}}\left(\tilde{\nabla}\tilde{Ξ}\right)\tilde U_{\mathrm{lor}}{}^{*}\;},
+\boxed{\;\tilde{\nabla}^{\mathrm{Ad}}\left(\tilde U_{\mathrm{lor}}\tilde{Ξ}\tilde U_{\mathrm{lor}}{}^{*}\right) = \tilde U_{\mathrm{lor}}\left(\tilde\nabla_\Phi\tilde{Ξ}\right)\tilde U_{\mathrm{lor}}{}^{*}\;},
 $$
-which was checked on random rotors and random $\tilde{Ξ}$. The equation $\tilde{\nabla}\tilde{Ξ} = \tilde{G}$ therefore maps to $\tilde{\nabla}^{\mathrm{Ad}}\tilde{Ξ}_{\mathrm{Ad}} = \tilde{G}_{\mathrm{Ad}}$ with $\tilde{Ξ}_{\mathrm{Ad}} = \tilde U_{\mathrm{lor}}\tilde{Ξ}\tilde U_{\mathrm{lor}}{}^{*}$ and $\tilde{G}_{\mathrm{Ad}} = \tilde U_{\mathrm{lor}}\tilde{G}\tilde U_{\mathrm{lor}}{}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
+which was checked on random rotors and random $\tilde{Ξ}$. The equation $\tilde\nabla_\Phi\tilde{Ξ} = \tilde{G}$ therefore maps to $\tilde{\nabla}^{\mathrm{Ad}}\tilde{Ξ}_{\mathrm{Ad}} = \tilde{G}_{\mathrm{Ad}}$ with $\tilde{Ξ}_{\mathrm{Ad}} = \tilde U_{\mathrm{lor}}\tilde{Ξ}\tilde U_{\mathrm{lor}}{}^{*}$ and $\tilde{G}_{\mathrm{Ad}} = \tilde U_{\mathrm{lor}}\tilde{G}\tilde U_{\mathrm{lor}}{}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
 
 **Why it is a theorem and not a tautology.** Three facts carry the statement. The rotated elements $\tilde U_{\mathrm{lor}}e_\mu\tilde U_{\mathrm{lor}}{}^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde U_{\mathrm{lor}}\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section *The Homogeneous Part, Recalled*, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.
 
@@ -252,7 +252,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Trace formula (informational sector) |
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient (material four-vector of operators) |
 | $\tilde{\nabla}^{\mathrm{Ad}} = \sum_\mu(\tilde U_{\mathrm{lor}}e_\mu\tilde U_{\mathrm{lor}}{}^{-1})\partial/\partial R_\mu$ | Conjugated gradient, the gradient in the rotated basis |
-| $\tilde{\nabla}\tilde{Ξ} = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
+| $\tilde\nabla_\Phi\tilde{Ξ} = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

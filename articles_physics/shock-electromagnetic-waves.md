@@ -12,7 +12,7 @@ The question naturally arises whether electromagnetic waves can form shocks. Thi
 
 This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.
 
-The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta_\Phi$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
+The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
 
 ## Why Linear Vacuum Maxwell Has No Shocks
 
@@ -21,16 +21,16 @@ The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\
 The biquaternionic Maxwell equation in vacuum is
 
 $$
-\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi},
+\tilde\nabla_\Phi \tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi},
 $$
 
 where $\tilde J_{\Phi}$ is the four-current and $\tilde{F}$ is the field-strength biquaternion. In the absence of sources, $\tilde J_{\Phi} = 0$, and the equation is
 
 $$
-\tilde{\nabla} \tilde{F} = 0.
+\tilde\nabla_\Phi \tilde{F} = 0.
 $$
 
-Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation
+Applying $(\tilde\nabla^{\natural})_\Phi$ to both sides and using $\Box = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ gives the wave equation
 
 $$
 \Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
@@ -88,7 +88,7 @@ where $\{\partial/\partial R_\mu \tilde{F}\}$ denotes the classical derivative a
 
 ### The Jump Condition
 
-Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
+Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
 
 $$
 \boxed{\;\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0\;}.
@@ -317,7 +317,7 @@ The biquaternion framework can be applied to shock fronts in nonlinear media and
 The nonlinearity of the medium can be absorbed into an effective four-current $\tilde J_{\Phi,\mathrm{eff}}$, which enters the equation multiplied by $\sqrt{\mu}$. The biquaternionic Maxwell equation becomes
 
 $$
-\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi,\mathrm{eff}},
+\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi,\mathrm{eff}},
 $$
 
 where $\tilde J_{\Phi,\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde J_{\Phi,\mathrm{eff}} \to \tilde J_{\Phi}$; in a linear medium, $\tilde J_{\Phi,\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.

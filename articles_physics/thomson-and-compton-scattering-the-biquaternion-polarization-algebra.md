@@ -496,8 +496,8 @@ verified for the four directions. The covariant forms are recovered by raising o
 
 **The two Dirac equations.** Two equations carry the name in this series, and the frame is what separates them. The first is the corpus's **one-sided** chiral pair,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol basis operator of the spin section,
 $$
@@ -520,14 +520,14 @@ The second is Kravchenko's **two-sided** equation, the dictionary form on $\math
 $$
 \mathcal{N}F = \Bigl(i\frac{\partial}{\partial r'_t}+D_3\Bigr)F - k_mi\,\overline{F}\,\vec e_z = 0 ,
 \qquad\text{that is}\qquad
--\tilde\nabla^{\natural}F - k_mi\,\overline{F}\,\vec e_z = 0
+-(\tilde\nabla^{\natural})_\PhiF - k_mi\,\overline{F}\,\vec e_z = 0
 $$
 where $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, the basis operator that carries its split is $\gamma_5=i\omega$ with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$, and its analytic machinery is the Cauchy theory of the dictionary article.
 
 | Aspect | One-sided equation | Two-sided equation |
 |---|---|---|
-| Form | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-\tilde\nabla^{\natural}F-k_mi\,\overline{F}\,\vec e_z=0$ |
-| Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
+| Form | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-(\tilde\nabla^{\natural})_\PhiF-k_mi\,\overline{F}\,\vec e_z=0$ |
+| Multiplication | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-k_mi\,\overline{F}\,\vec e_z$ |
 | Chirality | the side: the right slot for a right multiplier, both slots for a central scalar | the basis operator that realises the split is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | Use | kinematics, spin sums, and this article | the dictionary, the Cauchy theory, the integral representation |

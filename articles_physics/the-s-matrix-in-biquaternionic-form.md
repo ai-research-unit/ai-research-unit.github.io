@@ -236,9 +236,9 @@ Three inheritances should be named.
 **The asymptotic states.** In and out states are plane-wave states from the solutions article, labeled by on-shell momenta. Two equations carry the name *Dirac equation*, and the external states belong to only one of them. They are solutions of the corpus's **one-sided** pair
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 both gradients acting from the left, with the mass carried as the off-diagonal pairing of the two halves. Kravchenko's **two-sided** equation — the spatial gradient acting from the left and the mass from the right through $\vec e_z$, with the componentwise conjugation in the mass term — is a different operator. It is related to the pair by the dictionary of *The Dirac Equation in Biquaternionic Form*, but it is not the equation whose solutions are quantized here, and its mass term is of a different kind. The on-shell condition is the biquaternion mass shell $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The reduction of the S-matrix element to an amputated correlation function — the LSZ formula — replaces each external leg by the corresponding plane wave and applies the wave operator. The biquaternion form of that reduction is the placement of the external legs on the mass shell and is not rederived here; what matters is that the external data are the solutions article's biquaternion plane waves, and the internal data are the propagator, so the whole Dyson series is written in the read-list notation without a new ingredient. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -350,7 +350,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of the algebra, home of the S-matrix's overall phase |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | d'Alembertian |
 | $\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}$ | Quaternionic norm, with $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{\natural}=\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}e_t$ |
 | $\langle\tilde{\mathcal S}_{\Psi}\rangle_{\natural}=1$ | Unit-norm element, the Lorentz-rotor condition, $\mathrm{SL}(2,\mathbb{C})$ |
 | $\tilde{\mathcal S}_{\Psi}\tilde{\mathcal S}_{\Psi}^{*}=e_t$ | Star-unitary element, $\mathrm{U}(2)$ |

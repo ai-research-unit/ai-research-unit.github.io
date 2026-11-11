@@ -68,7 +68,7 @@ $$
 
 **The quantum potential is the mass shell's correction and not a pressure.** $Q_{\mathrm{qnt}}=-(\hbar^{2}/2m)\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$, entering as $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$. **The article that writes it with the other sign is wrong**, and the sign is fixed by the non-relativistic reduction.
 
-**The entropy inequality is one divergence and one declaration.** $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})\ge0$ with $\tilde J_{\Phi,\mathrm{ent}}$ Hermitian. **The inequality is a statement about a real number because the current's four coefficients are real**, and the corpus declares that once.
+**The entropy inequality is one divergence and one declaration.** $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,\mathrm{ent}})\ge0$ with $\tilde J_{\Phi,\mathrm{ent}}$ Hermitian. **The inequality is a statement about a real number because the current's four coefficients are real**, and the corpus declares that once.
 
 **The pure state has no entropy.** The condensate's current vanishes, the second law is saturated, and the $T\to0$ limit of the two-fluid model is the polar-form article's single fluid. **Entropy is friction between components**: mutual friction in the two-fluid model, shear and bulk dissipation in the causal model, spin diffusion in the spin model. **In every case the dissipative term is a square.**
 

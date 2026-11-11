@@ -29,7 +29,7 @@ $$
 the second form being the bilinear writing of the companion article. The constants are carried. Every exponent is written $\frac{i}{\hbar}S[\tilde{A}_{\Phi}]$, the action in $\mathrm{J\,s}$ divided by $\hbar$, so the exponent is a pure number without any unit being set to one; the coupling $\kappa=\frac{ϙ}{\hbar}$ stands in the covariant derivative, and no charge is absorbed into the connection. The action depends on $\tilde{A}_{\Phi}$ only through $\tilde{F}$, and $\tilde{F}$ is invariant under the gauge transformation
 
 $$
-\tilde{A}_{\Phi}\;\longmapsto\;\tilde{A}_{\Phi}^{\Gamma}=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma,
+\tilde{A}_{\Phi}\;\longmapsto\;\tilde{A}_{\Phi}^{\Gamma}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma,
 \qquad
 S[\tilde{A}_{\Phi}^{\Gamma}] = S[\tilde{A}_{\Phi}].
 $$
@@ -54,7 +54,7 @@ $$
 \tilde{A}_{\Phi} = iA_0e_t+\sum_{\eta=1}^{3}A_\eta\vec e_\eta ,
 $$
 
-with $A_0$ and $A_\eta$ the real component fields, the coefficients being $Q_t=i r'_t$ and $Q_\eta=x_\eta$. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_\eta$ the real component fields, the coefficients being $Q_t=i r'_t$ and $Q_\eta=x_\eta$. The gradient part of the gauge transformation is $\tilde\nabla_\Phi\Gamma=e_t\partial/\partial R_t\,\Gamma+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 
@@ -85,9 +85,9 @@ in which the gauge-group integral has been absorbed and only the gauge-fixed con
 For the abelian theory the gauge-fixing condition can be taken linear and covariant,
 
 $$
-G[\tilde{A}_{\Phi}] = \langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}-\omega,
+G[\tilde{A}_{\Phi}] = \langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega,
 \qquad
-S=\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} ,
+S=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural} ,
 $$
 
 with $\omega$ a fixed function. Under a gauge transformation $S\mapsto S-\Box\Gamma$, so the condition $G[\tilde{A}_{\Phi}^\Gamma]=0$ is $S-\Box\Gamma-\omega=0$, i.e., $\Box\Gamma=S-\omega$. The Faddeev–Popov determinant is the Jacobian of the map $\Gamma\mapsto G[\tilde{A}_{\Phi}^\Gamma]$, which is the operator $-\Box$ acting on $\Gamma$; the identity $1=\Delta[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ fixes it to be the determinant of that variation, the reciprocal of the factor the delta functional alone would contribute:
@@ -97,13 +97,13 @@ $$
 = \det\left(-\Box\right)\;},
 $$
 
-up to a sign convention. This is **independent of $\tilde{A}_{\Phi}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, and that its only biquaternionic content is the centrality of that operator.
+up to a sign convention. This is **independent of $\tilde{A}_{\Phi}$**: it is a constant functional, built from the central scalar d'Alembertian, and it can be absorbed into the normalization of the integral. For the abelian gauge field there are therefore no ghost fields in the path integral: the determinant is a constant, and the gauge-fixing delta functional is all that survives. The result is the biquaternion statement that the Faddeev–Popov determinant of the Maxwell field is a power of the central scalar operator $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, and that its only biquaternionic content is the centrality of that operator.
 
 The delta functional is represented by introducing the Nakanishi–Lautrup field $B$ and writing
 
 $$
-\delta\!\left(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}-\omega\right)
-= \int\mathcal{D}B\;\exp(i\int d^4r\,B(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}-\omega)),
+\delta\!\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega\right)
+= \int\mathcal{D}B\;\exp(i\int d^4r\,B(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega)),
 $$
 
 and the $\omega$-dependence is removed by averaging over $\omega$ with the Gaussian weight
@@ -115,10 +115,10 @@ $$
 which reproduces the gauge-fixing Lagrangian of the BRST construction. Completing the square in the combined $B,\omega$ integral, $-\omega^2/(2\zeta)-B\omega=-\frac{1}{2\zeta}(\omega+\zeta B)^2+\tfrac{\zeta}{2}B^2$, leaves precisely
 
 $$
-\mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural} + \tfrac{\zeta}{2}B^2 ,
+\mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural} + \tfrac{\zeta}{2}B^2 ,
 $$
 
-the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\zeta}(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural})^2$, whose momentum-space quadratic form $\mathcal F_{\mathrm{med},\mu\nu}=p^2\delta_{\mu\nu}+(1-\zeta^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
+the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\zeta}(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural})^2$, whose momentum-space quadratic form $\mathcal F_{\mathrm{med},\mu\nu}=p^2\delta_{\mu\nu}+(1-\zeta^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
 
 ### The Non-Abelian Determinant
 
@@ -233,7 +233,7 @@ the second equality using $\ln Z=-\frac{i}{2}\int JDJ$, so that $\delta^2\ln Z/\
 
 ## The Measure, the Ghosts, and What Is Being Summed Over
 
-The path integral sums over material-sector field configurations, and the gauge transformation is a shift along the orbit generated by $\tilde{\nabla}\Gamma$. Three structural remarks situate the construction in the framework.
+The path integral sums over material-sector field configurations, and the gauge transformation is a shift along the orbit generated by $\tilde\nabla_\Phi\Gamma$. Three structural remarks situate the construction in the framework.
 
 First, the measure is a measure on the material sector $\mathbb{B}_{\Phi}$, the sector of real vector and imaginary scalar components. There is no sum over the informational sector in the free gauge-field integral: the informational sector appears only when a non-abelian gauge algebra is realized, through the generators, and then through the ghost fields. In this precise sense the non-abelian gauge-field path integral is a construction that couples the two fixed-point sectors, and the abelian one is not.
 
@@ -241,7 +241,7 @@ Second, the Faddeev–Popov determinant is a functional of the potential that is
 
 Third, the ghosts that represent the non-abelian determinant are Grassmann-odd, and the algebra has no odd elements; they live in the Grassmann envelope of the BRST construction. The path integral over the gauge field alone is an integral over $\mathbb{B}_{\Phi}$-valued configurations, but the full gauge-fixed integral is over the envelope.
 
-The gauge-fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ is what a gauge transformation shifts, $S\mapsto S-\Box\Gamma$, and the covariant condition $\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}=0$ is the statement that this scalar vanishes. A gauge choice is therefore a choice of value for the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ at each point, and the delta functional $\delta(\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the gauge transformations — and the path-integral route arrives at it as a gauge-fixing function; the two are the same scalar, and the choice of gauge is the choice of its value.
+The gauge-fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ is what a gauge transformation shifts, $S\mapsto S-\Box\Gamma$, and the covariant condition $\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}=0$ is the statement that this scalar vanishes. A gauge choice is therefore a choice of value for the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ at each point, and the delta functional $\delta(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the gauge transformations — and the path-integral route arrives at it as a gauge-fixing function; the two are the same scalar, and the choice of gauge is the choice of its value.
 
 ## What the Algebra Supplies and What It Imports
 
@@ -257,7 +257,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 2. **The abelian determinant as a central operator.** For the Maxwell field the Faddeev–Popov determinant is $\det(-\Box)$, a power of a central scalar. Is there a sense in which the whole abelian gauge-fixing problem is the statement that $\Box$ is central, so that the gauge-fixing delta functional and the determinant are the only objects the algebra produces without extra input?
 
-3. **The gauge-fixing condition as a scalar part.** The natural gauge-fixing function is $G[\tilde{A}_{\Phi}]=S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$, the gauge scalar. Choosing a gauge is choosing a value for the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$. Is there a biquaternionic characterization of the gauges that are algebraically natural, and do they include the Lorentz-covariant gauges?
+3. **The gauge-fixing condition as a scalar part.** The natural gauge-fixing function is $G[\tilde{A}_{\Phi}]=S=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$, the gauge scalar. Choosing a gauge is choosing a value for the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$. Is there a biquaternionic characterization of the gauges that are algebraically natural, and do they include the Lorentz-covariant gauges?
 
 4. **The origin of the gauge parameter.** The gauge parameter multiplies the longitudinal projector and cancels in physical amplitudes. Is there an algebraic statement of the cancellation — an identity in the algebra's bilinear form — that does not require the external currents to be conserved?
 
@@ -269,7 +269,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\Delta[\tilde{A}_{\Phi}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}_{\Phi}\,\Delta[\tilde{A}_{\Phi}]\,\delta(G[\tilde{A}_{\Phi}])\,\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])$, finite and normalized.
 
-In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{B}_{\Phi}$, and the gauge transformation is the gradient shift $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\Delta=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\Delta=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{B}_{\Psi}$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.
+In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{B}_{\Phi}$, and the gauge transformation is the gradient shift $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\Delta=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\Delta=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{B}_{\Psi}$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.
 
 The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator $D_{\mu\nu}=p^{-2}(\delta_{\mu\nu}+(1-\zeta)p_\mu p_\nu/p^2)$. The transverse projector $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/p^2$ is idempotent, of trace three off shell, and annihilates the momentum; the gauge parameter multiplies only the longitudinal projector. Because the difference of two propagators is proportional to $p_\mu p_\nu$, it vanishes when contracted with a conserved current, and the gauge-parameter dependence drops out of physical amplitudes. On shell the longitudinal direction decouples for the massless field and the two transverse polarizations remain. What the algebra supplies is the carrier, the gauge transformation, the centrality that makes the abelian determinant constant, and the transverse projector; what it does not supply is the gauge group, the gauge parameter, the odd coordinates, the general functional-integral apparatus, or any empirical content.
 
@@ -279,9 +279,9 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 |---|---|
 | $\mathcal{D}\tilde{A}_{\Phi}$ | Measure on $\mathbb{B}_{\Phi}$-valued configurations; $\mathcal{D}A_0\,\mathcal{D}\vec A$ in components |
 | $S[\tilde{A}_{\Phi}]=\int d^4r\,(-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
-| $\tilde{A}_{\Phi}^\Gamma=\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, $S[\tilde{A}_{\Phi}^\Gamma]=S[\tilde{A}_{\Phi}]$ | Gauge transformation and invariance of the action |
+| $\tilde{A}_{\Phi}^\Gamma=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $S[\tilde{A}_{\Phi}^\Gamma]=S[\tilde{A}_{\Phi}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |
-| $G[\tilde{A}_{\Phi}]=\langle\tilde\nabla,\tilde A_{\Phi}\rangle_{\natural}-\omega$ | Gauge-fixing condition |
+| $G[\tilde{A}_{\Phi}]=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega$ | Gauge-fixing condition |
 | $1=\Delta[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ | Faddeev–Popov identity |
 | $\Delta[\tilde{A}_{\Phi}]$ | Faddeev–Popov determinant; gauge invariant |
 | $\Delta=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |

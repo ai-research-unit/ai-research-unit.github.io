@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The analysis block of the category rests on two operators. The first is the **biquaternionic gradient** $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$, an algebra-valued operator whose coefficients are derivatives. The second is the **d'Alembertian** $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$, the scalar norm of the gradient. Between them lie four general products, four forms and two second-order norms; beyond them lies the Fourier transform, whose kernel is the exponential of a root of $-1$.
+The analysis block of the category rests on two operators. The first is the **biquaternionic gradient** $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$, an algebra-valued operator whose coefficients are derivatives. The second is the **d'Alembertian** $\Box=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)$, the scalar norm of the gradient. Between them lie four general products, four forms and two second-order norms; beyond them lies the Fourier transform, whose kernel is the exponential of a root of $-1$.
 
 The article states these results in brief and gives the physical interpretations. It proves nothing. The derivative conventions, the products, the forms, the norms, the transform and its properties are owned by the mathematics articles linked below; the interpretations are this category's. The organising distinction is between **differentiation as one-sided multiplication** and **the transform as a change of description**. The first acts on a field by multiplying it by the gradient on one side; the second re-expresses the field in the basis in which the constant-coefficient operators are diagonal. The first is a map from fields to fields; the second is an invertible map from one description to another.
 
@@ -44,26 +44,26 @@ $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$. The coefficients are invariant under the conjugations — the marks act on the units at fixed coordinate, not on the derivative symbol — so the coefficientwise conjugation leaves the gradient unchanged, and the Hermitian conjugation acts as the quaternion conjugation: $\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The spatial part is written $\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, with divergence, gradient and curl.
+with $\varepsilon=(1,-1,-1,-1)$. The coefficients are invariant under the conjugations — the marks act on the units at fixed coordinate, not on the derivative symbol — so the coefficientwise conjugation leaves the gradient unchanged, and the Hermitian conjugation acts as the quaternion conjugation: $\tilde\nabla^{*}=(\tilde\nabla^{\natural})_\Phi$. The spatial part is written $\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, with divergence, gradient and curl.
 
 ### The Four Products
 
 The four general products are the four settings of one rule: the plain product, the quaternionic bilinear product, the plain sesquilinear product and the quaternionic sesquilinear product. In the category they carry the names composition, causality, probability and gauge; on the gradient they are four ways of differentiating the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}r_t}e_t+\vec Q_{\mathrm f}$.
 
 $$
-\tilde\nabla\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}r_t}+\nabla\times\vec Q_{\mathrm f},
+\tilde\nabla_\Phi\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}r_t}+\nabla\times\vec Q_{\mathrm f},
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}r_t}-\nabla\times\vec Q_{\mathrm f},
+(\tilde\nabla^{\natural})_\Phi\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}r_t}-\nabla\times\vec Q_{\mathrm f},
 $$
 
 $$
-\tilde\nabla\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}r_t}-\nabla\times\overline{\vec Q_{\mathrm f}},
+\tilde\nabla_\Phi\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}r_t}-\nabla\times\overline{\vec Q_{\mathrm f}},
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}r_t}+\nabla\times\overline{\vec Q_{\mathrm f}}.
+(\tilde\nabla^{\natural})_\Phi\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial R_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}r_t}+\nabla\times\overline{\vec Q_{\mathrm f}}.
 $$
 
 The plain product holds the divergence, the gradient and the curl in one element. The quaternionic product flips the signs of the spatial terms of the plain product. The two sesquilinear products apply the same two products to the conjugated field.
@@ -74,10 +74,10 @@ The scalar part of each product read in two arguments is a form:
 
 | Form | Scalar part |
 | --- | --- |
-| plain bilinear | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}-\nabla\cdot\vec Q_{\mathrm f}$ |
-| quaternionic bilinear | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}+\nabla\cdot\vec Q_{\mathrm f}$ |
-| plain sesquilinear (Hermitian) | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
-| quaternionic sesquilinear (Krein) | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
+| plain bilinear | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}-\nabla\cdot\vec Q_{\mathrm f}$ |
+| quaternionic bilinear | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural}=\dfrac{\partial}{\partial R_t}Q_{\mathrm{f}r_t}+\nabla\cdot\vec Q_{\mathrm f}$ |
+| plain sesquilinear (Hermitian) | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
+| quaternionic sesquilinear (Krein) | $\langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural*}=\dfrac{\partial}{\partial R_t}\bar Q_{\mathrm{f}r_t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
 
 At the two equal arguments the four forms give two operators:
 
@@ -89,23 +89,23 @@ At the two equal arguments the four forms give two operators:
 The d'Alembertian is the quaternionic bilinear and the Hermitian norm:
 
 $$
-\boxed{\;\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q\;}.
+\boxed{\;\Box=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)=\frac{\partial^2}{\partial R_t^2}+\Delta_Q\;}.
 $$
 
 The other operator is the plain bilinear and the Krein norm. On the material sector the two read $\Delta-\partial^2/\partial {r'_{t}}^2$ and $-\partial^2/\partial {r'_{t}}^2-\Delta$. The corpus keeps one d'Alembertian and one sign.
 
 ### The Determinant of the First-Order Operator
 
-The left regular matrix $\mathsf M_{4L}(\tilde Q)$ has determinant $\langle\tilde Q\rangle_{\natural}^2$. Read on the gradient, with $\langle\tilde\nabla\rangle_{\natural}=\Box$, the same formula gives
+The left regular matrix $\mathsf M_{4L}(\tilde Q)$ has determinant $\langle\tilde Q\rangle_{\natural}^2$. Read on the gradient, with $\langle\tilde\nabla_\Phi\rangle_{\natural}=\Box$, the same formula gives
 
 $$
-\det\mathsf M_{4L}(\tilde\nabla)=\Box^2.
+\det\mathsf M_{4L}(\tilde\nabla_\Phi)=\Box^2.
 $$
 
-The matrix is block diagonal with two equal blocks in the Peirce display, $\mathsf M_{4L}(\tilde\nabla)=I_2\otimes A_+(\tilde\nabla)$; the two blocks are equal, and each carries one factor:
+The matrix is block diagonal with two equal blocks in the Peirce display, $\mathsf M_{4L}(\tilde\nabla_\Phi)=I_2\otimes A_+(\tilde\nabla_\Phi)$; the two blocks are equal, and each carries one factor:
 
 $$
-\boxed{\;\det A_+(\tilde\nabla)=\Box\;}.
+\boxed{\;\det A_+(\tilde\nabla_\Phi)=\Box\;}.
 $$
 
 The second-order wave operator is therefore the determinant of a first-order operator. The partial derivatives commute, so the substitution of the derivative for the coefficient is legitimate; the determinant formula and the block decomposition are the mathematics article's, and the computation read on the operator is a matrix computation, not a new theorem.
@@ -192,17 +192,17 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\v
 
 ## Physical Interpretations
 
-- **The derivative is the one-sided product.** Differentiation is multiplication of the field by the gradient on one side: $\tilde\nabla\tilde F$ holds the divergence, the gradient and the curl of $\tilde F$ in one biquaternion; the scalar part of the symmetric half is the plain form, and the antisymmetric half is the curl. For the field strength, $\tilde\nabla\tilde F=-g\tilde J_{\Phi}$ is the Maxwell equation, with $g$ the coupling of the cited article. Boundary: the equation is a restatement of the cited Maxwell equation, not a derivation; the interpretation supplies no constitutive law, no dynamics and no prediction.
+- **The derivative is the one-sided product.** Differentiation is multiplication of the field by the gradient on one side: $\tilde\nabla_\Phi\tilde F$ holds the divergence, the gradient and the curl of $\tilde F$ in one biquaternion; the scalar part of the symmetric half is the plain form, and the antisymmetric half is the curl. For the field strength, $\tilde\nabla_\Phi\tilde F=-g\tilde J_{\Phi}$ is the Maxwell equation, with $g$ the coupling of the cited article. Boundary: the equation is a restatement of the cited Maxwell equation, not a derivation; the interpretation supplies no constitutive law, no dynamics and no prediction.
 
 - **The Hermitian form on two gradients is the kinetic density.** For a scalar field $\tilde{Ξ}=Ξ e_t$,
 
     $$
-    \mathrm{Sc}\left[(\tilde\nabla^{\natural}\tilde{Ξ}^{*})(\tilde\nabla\tilde{Ξ})\right]=\sum_\mu\frac{\partialΞ^{*}}{\partial R_\mu}\frac{\partialΞ}{\partial R_\mu},
+    \mathrm{Sc}\left[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]=\sum_\mu\frac{\partialΞ^{*}}{\partial R_\mu}\frac{\partialΞ}{\partial R_\mu},
     $$
 
     and on the material sector, where the field is written $\xi_{\mathrm{scl}}$, this is $-\lvert\partial\xi_{\mathrm{scl}}/\partial r'_t\rvert^2+\lvert\nabla\xi_{\mathrm{scl}}\rvert^2$. The kinetic Lagrangian is its negative, so the signature of the kinetic term is the signature of the Hermitian form on the gradient; the overall sign is a convention. Boundary: the identification is the Klein–Gordon Lagrangian interpretation; the value of the Hermitian form on the gradient is not positive, because the time derivative is imaginary on the material sector; no dynamics is derived.
 
-- **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta-\partial^2/\partial {r'_{t}}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial R_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
+- **The d'Alembertian is the propagating operator.** $\Box=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)$ is the second-order operator of the wave equations and of the Green's-function equation; on the material sector it is $\Delta-\partial^2/\partial {r'_{t}}^2$. Boundary: the corpus keeps one d'Alembertian and one sign; the partner $\partial^2/\partial R_t^2-\Delta_Q$ is not a second propagating operator, and the Green's functions are owned by the physics article.
 
 - **The wave operator is the determinant of the first-order operator.** The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$. The second-order wave equation is therefore the determinant of a first-order matrix, and the square of a first-order equation. Boundary: this is the determinant of the regular matrix, a matrix computation; the doubling is the regular representation's two chiral copies, not a prediction of doubled particles, and the substitution of the derivative for the coefficient is the legitimate substitution of commuting partial derivatives.
 
@@ -235,7 +235,7 @@ and is positive definite exactly for the **degenerate** roots $\pm i$ and $\pm\v
 
 ## Summary
 
-The analysis block has one first-order operator, the gradient $\tilde\nabla$, and one second-order operator, the d'Alembertian $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$. The four general products read on the gradient give the divergence, the gradient and the curl, four forms and two second-order norms; the d'Alembertian is the quaternionic and Hermitian norm, $\partial^2/\partial R_t^2+\Delta_Q$, and on the material sector it is $\Delta-\partial^2/\partial {r'_{t}}^2$. The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$: the second-order wave operator is the determinant of a first-order operator.
+The analysis block has one first-order operator, the gradient $\tilde\nabla_\Phi$, and one second-order operator, the d'Alembertian $\Box=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)$. The four general products read on the gradient give the divergence, the gradient and the curl, four forms and two second-order norms; the d'Alembertian is the quaternionic and Hermitian norm, $\partial^2/\partial R_t^2+\Delta_Q$, and on the material sector it is $\Delta-\partial^2/\partial {r'_{t}}^2$. The regular matrix of the gradient has determinant $\Box^2$, and its chiral block has determinant $\Box$: the second-order wave operator is the determinant of a first-order operator.
 
 The Fourier transform is generated by a root of $-1$: the root is the clock, the frequency is its rate, the conjugate axis is an imaginary direction of the algebra, and the interval is the symbol of the d'Alembertian, with the mass shell as its level set. The transform is a change of description, not a measurement; it is invertible where the transform pair holds, and it does not make the informational sector the Fourier dual of the material one. The transform of a positive measure is not positive definite for the biquaternion norm, because the norm is indefinite and negative on the centre; with the Hermitian form, positivity holds exactly for the degenerate roots and fails for the genuinely complex ones. The vanishing norm marks the cone where the transform is not guaranteed to be invertible; the precise condition is open.
 
@@ -250,7 +250,7 @@ The Fourier transform is generated by a root of $-1$: the root is the clock, the
 | $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Quaternion conjugate of the gradient; also its Hermitian conjugate |
 | $\nabla$, $\nabla\cdot\vec Q$, $\nabla\times\vec Q$ | Spatial gradient, divergence and curl |
 | $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ | Laplacian in the three vector coordinates |
-| $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
+| $\Box=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$ | Plain and quaternionic bilinear forms |
 | $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | Hermitian and Krein forms |
 | $\rho$, $\rho^2=-e_t$ | Root of $-1$; families $\pm i$, $\pm\vec u_\mu$, $b\vec u_\mu+d\vec u_\nu i$ |

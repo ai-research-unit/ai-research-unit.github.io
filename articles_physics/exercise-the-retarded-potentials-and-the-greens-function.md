@@ -212,13 +212,13 @@ A word on the two retarded-time Jacobians, because the exercise's first trap and
 
 **(c) The Lorenz gauge is automatic.** Write the gauge scalar
 $$
-S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
+S = \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
-which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$, applying $\tilde{\nabla}^{\natural}$ and taking the scalar part gives
+which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$, applying $(\tilde\nabla^{\natural})_\Phi$ and taking the scalar part gives
 $$
-\Box S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\,\Box\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
+\Box S = \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\,\Box\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$
-where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $\tilde{\nabla}^{\natural}$ would have produced $\Box S \neq 0$.
+where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla^{\natural})_\Phi$ would have produced $\Box S \neq 0$.
 
 ## Problem 5: The Static Limit and the Coulomb–Biot–Savart Check
 
@@ -259,13 +259,13 @@ The parent and its companion are correct where they are defined, and the derivat
 
 1. **The kernel was stated, not derived.** The radiation companion displays $G_\Box = \frac{1}{4\pi R}\delta(r'_t-R)$ and the retarded convolution and says it does not re-derive the structure; the parent states the potential equation and refers the reader to the standard references for the kernel. This exercise supplies the derivation, the Jacobian, and the boundary condition. This is a presentation gap, now closed.
 
-2. **The parent's first-order Green's function for $\tilde{\nabla}$ is unverified.** The parent also states a biquaternion-valued kernel $\tilde{G}_{\Phi,\tilde{\nabla}}$ solving $\tilde{\nabla}\tilde{G}_{\Phi,\tilde{\nabla}} = \delta(\tilde{Q})e_t$, with an explicit vector term, and immediately adds that it satisfies the equation "up to a sign convention for the delta distribution" and that its precise form "should be verified against the standard references." The defining equation with $+\delta e_t$ and the satisfaction statement with $-\delta e_t$ do not agree, and the vector term's normalization is not fixed. This exercise does not use that object — the potential equation is second order, and its kernel is the scalar $G_\Box$ derived above — and it records the first-order kernel as an unverified parent statement rather than inheriting it.
+2. **The parent's first-order Green's function for $\tilde\nabla_\Phi$ is unverified.** The parent also states a biquaternion-valued kernel $\tilde{G}_{\Phi,\tilde{\nabla}}$ solving $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = \delta(\tilde{Q})e_t$, with an explicit vector term, and immediately adds that it satisfies the equation "up to a sign convention for the delta distribution" and that its precise form "should be verified against the standard references." The defining equation with $+\delta e_t$ and the satisfaction statement with $-\delta e_t$ do not agree, and the vector term's normalization is not fixed. This exercise does not use that object — the potential equation is second order, and its kernel is the scalar $G_\Box$ derived above — and it records the first-order kernel as an unverified parent statement rather than inheriting it.
 
 3. **The retarded choice is a boundary condition.** The defining equation admits both the retarded and the advanced kernel, and the retarded one is selected by causality, not by the algebra. The parent states that the physically relevant kernel is the retarded one but does not state the selection principle; Problem 3 supplies it, and the exercise records that the selection is a physical input.
 
 4. **The kernel is that of a constant, non-dispersive medium.** All of the above holds with $c = 1/\sqrt{\epsilon\mu}$ constant, i.e. for a homogeneous, non-dispersive medium. In a dispersive medium the operator is not local in time and the simple retarded kernel does not apply; in a medium whose parameters vary in space the operator has variable coefficients and the free kernel is only the first term of a geometric-optics expansion. The parent's local complex structure makes $c$ a field, and the form of the kernel in that setting is not settled here. This is a genuine gap, not a bookkeeping point.
 
-5. **The equivalence of the first- and second-order formulations is inherited, not re-derived.** The parent states that $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ are equivalent in the Lorenz gauge while noting that $\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\tilde J_{\Phi}$ differ by normalization factors. This exercise uses only the second-order equation, with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, and verifies it directly against the retarded potentials and the static limit; it does not re-derive the mapping between the two source normalizations.
+5. **The equivalence of the first- and second-order formulations is inherited, not re-derived.** The parent states that $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ are equivalent in the Lorenz gauge while noting that $\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\tilde J_{\Phi}$ differ by normalization factors. This exercise uses only the second-order equation, with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, and verifies it directly against the retarded potentials and the static limit; it does not re-derive the mapping between the two source normalizations.
 
 ## Further Problems
 
@@ -310,7 +310,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
-| $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate |
 | $\partial/\partial R_t = -i\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{\partial^2}{\partial {r'_{t}}^2}$ | Wave operator (d'Alembertian) |
 | $\delta^{(4)}(\tilde{Q}) = \delta(r'_t)\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Four-dimensional Dirac delta |
@@ -326,7 +326,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $R = \lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y\rvert$ | Retarded separation (spatial) |
 | $r'_t - R$ | Retarded time |
-| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; $S = 0$ is the Lorenz gauge |
+| $S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ | Gauge scalar; $S = 0$ is the Lorenz gauge |
 | $\vec u_R = \vec R/R$, $\vec\beta = \vec v/c$ | Unit retarded separation; dimensionless velocity (radiation article) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 

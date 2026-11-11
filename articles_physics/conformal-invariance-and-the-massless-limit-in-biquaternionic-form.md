@@ -204,7 +204,7 @@ is a constant of the motion; in the massive case the charge is not conserved and
 
 ## The Trace of the Stress Tensor and the Improvement
 
-The trace is computed in the article's own $i r'_t$ convention throughout: the operator is $\Box = \partial^2/\partial R_t^2 + \Delta$, the Laplacian of the level-one form in the four coordinates $(i r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so that no index is raised or lowered, and the Lagrangian is the action article's, $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})] - k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The canonical tensor of that article, with row and column read in that order,
+The trace is computed in the article's own $i r'_t$ convention throughout: the operator is $\Box = \partial^2/\partial R_t^2 + \Delta$, the Laplacian of the level-one form in the four coordinates $(i r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so that no index is raised or lowered, and the Lagrangian is the action article's, $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The canonical tensor of that article, with row and column read in that order,
 $$
 \mathsf{T}_{\mu\nu} = -\bigl(\partial/\partial R_\mu\xi^*\bigr)\partial/\partial R_\nu\,\xi - \bigl(\partial/\partial R_\mu\xi\bigr)\partial/\partial R_\nu\,\xi^* - \delta_{\mu\nu}\,\mathcal{L} ,
 $$
@@ -261,7 +261,7 @@ $$
 $$
 the exponent being the standard one for a spinor in four dimensions, fixed by the conformal covariance of the first-order operator: the standard identity is
 $$
-\tilde{\nabla}^{\natural}\Bigl[\Omega^{\frac{d-1}{2}}\,\tilde{Ξ}_{\mathrm{sp}}\circ I\Bigr] = \Omega^{\frac{d+1}{2}}\,\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}\bigr)\circ I ,
+(\tilde\nabla^{\natural})_\Phi\Bigl[\Omega^{\frac{d-1}{2}}\,\tilde{Ξ}_{\mathrm{sp}}\circ I\Bigr] = \Omega^{\frac{d+1}{2}}\,\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}}\bigr)\circ I ,
 \qquad \frac{d-1}{2} = \frac32 ,\ \ \frac{d+1}{2} = \frac52 \ \ (d=4),
 $$
 which the references supply. The mass term of the framework — the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*, not the central term of the scalar — breaks the symmetry for exactly the reason the scalar mass does, and the breaking is again measured by the trace of the stress tensor. The companion *The Dirac Equation in Biquaternionic Form* fixes the equation and its mass term; what belongs here is the weight and the fact that, in the massless limit, the Dirac field joins the scalar and the Maxwell field in the same conformal multiplet of equations. The three weights — $1$ for the scalar, $3/2$ for the spinor, $2$ for the field strength — are the three canonical values of four-dimensional conformal field theory, and the massless limit of each theory restores its weight.

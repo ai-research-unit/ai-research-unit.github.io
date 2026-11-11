@@ -14,7 +14,7 @@ Four results are established.
 $$
 S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.
+has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\hbar/(mc))/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
 - **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\hbar/(mc))/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
@@ -96,7 +96,7 @@ $$
 \left(\Box-(k_m)^{2}\right)\tilde{Ξ}=0 ,
 $$
 
-the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
+the biquaternionic Klein–Gordon equation of the companion article, here read as a **classical** wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.
 
 ## Plane Waves and the Range of the Field
 
@@ -263,9 +263,9 @@ $$
 is invariant under the central phase, and Noether's theorem gives the conserved current
 
 $$
-\tilde J_{\Phi}=\frac{i}{2}\left(\xi^*\tilde\nabla\xi-\xi\,\tilde\nabla\xi^*\right),
+\tilde J_{\Phi}=\frac{i}{2}\left(\xi^*\tilde\nabla_\Phi\xi-\xi\,\tilde\nabla_\Phi\xi^*\right),
 \qquad
-\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=0\ \text{on shell},
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0\ \text{on shell},
 $$
 
 whose conservation was checked on a superposition of two on-shell plane waves of different momenta. The time component $j_t$ is the charge density and its integral is the charge; the spatial components are the current. The current vanishes identically for a real field, which is the classical statement that a real scalar is its own antiparticle and carries no charge.
@@ -357,7 +357,7 @@ $$
 
 whose massless limit $E=-\kappa/r$ is exactly the inverse-square central potential of the sibling article *The Relativistic Central Force Problem in Biquaternionic Form*. The force is central because the field's value space is the rotationally invariant subspace, so $[\vec r,\vec F]=0$, the angular momentum $\vec L=\tfrac12[\vec r,\vec p]$ is conserved, and the orbit is the precessing conic of that article in the massless case.
 
-The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, with conserved current $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla\xi-\xi\,\tilde\nabla\xi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
+The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, with conserved current $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla_\Phi\xi-\xi\,\tilde\nabla_\Phi\xi^*)$. A central scalar field has one component and no internal vector direction, so it has no spin, no vector potential and no intrinsic magnetic moment: the absence of intrinsic magnetism is a consequence of the field's living in the centre, and it is the field-theoretic content of the spin-zero subcategory.
 
 ## Summary of Notation
 
@@ -369,7 +369,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\mathbb{B}_{C}\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t$, $\mathbb{B}_{C}\cap\mathbb{B}_{\Phi}=\mathbb{R}ie_t$ | The centre's one real direction in each sector |
 | $\tilde{Ξ}=\xi e_t$ | Central scalar field; $\xi$ a complex scalar function |
 | $\xi_1,\xi_2$ | Real and imaginary parts of $\xi$ |
-| $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
+| $\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian (central, scalar) |
 | $\hbar/(mc)$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m$ is the inverse range, and classically only $\hbar/(mc)$ matters |
 | $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
@@ -382,7 +382,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-r/\hbar/(mc))/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\nabla E=g_{\mathrm r_t}\,\nabla\xi=g_{\mathrm r_t}\,(d\xi/dr)\,\vec u_r$ | Central force on the test source (inward) |
-| $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla\xi-\xi\tilde\nabla\xi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=0$ |
+| $\tilde J_{\Phi}=\tfrac{i}{2}(\xi^*\tilde\nabla_\Phi\xi-\xi\tilde\nabla_\Phi\xi^*)$ | Conserved current of the central phase; $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

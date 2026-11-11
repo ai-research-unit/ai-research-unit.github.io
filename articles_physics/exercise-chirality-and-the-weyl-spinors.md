@@ -32,16 +32,16 @@ Seven problems are worked below, one per section.
 
 This problem writes every mass through $k_m=m\,c/\hbar$ and every phase through $\omega r'_t/c$; the mass-shell paragraph gathers the two factors.
 
-**The gradient.** The biquaternionic gradient $\tilde\nabla$ is one element and acts by left multiplication (*Operator and Calculus Conventions*, §*The Operators*). It therefore keeps each letter (Problem 1), and its quaternion conjugate $\tilde\nabla^{\natural}$ is a conjugation of the same operator and not a second derivative.
+**The gradient.** The biquaternionic gradient $\tilde\nabla_\Phi$ is one element and acts by left multiplication (*Operator and Calculus Conventions*, §*The Operators*). It therefore keeps each letter (Problem 1), and its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$ is a conjugation of the same operator and not a second derivative.
 
 **The chiral pair.** The dynamics is the one-sided chiral pair of the parent article: two equations, one per value,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,
 $$
 
 $$
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The first acts on the part $\tilde{Ξ}_{\mathrm{sp},R}$, the second on the part $\tilde{Ξ}_{\mathrm{sp},L}$, and the second is the quaternion conjugate of the first. The mass is the term that carries one value to the other; it is the only such term, because a left multiplication preserves each value.
@@ -49,18 +49,18 @@ The first acts on the part $\tilde{Ξ}_{\mathrm{sp},R}$, the second on the part 
 **The massless case.** Setting $m=0$, the two equations decouple:
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0 .
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = 0 .
 $$
 
 Each is a one-sided equation for one value, and neither contains the other part. Each is a **Weyl equation**, one per value, and the massless field is two independent one-sided fields.
 
-**The massive case.** Apply $\tilde\nabla^{\natural}$ to the first equation and use the second:
+**The massive case.** Apply $(\tilde\nabla^{\natural})_\Phi$ to the first equation and use the second:
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-The product $\tilde\nabla^{\natural}\tilde\nabla$ is the d'Alembertian $\Box$, the quaternionic norm of the gradient, an operator of the algebra and not of a sector (*Operator and Calculus Conventions*, §*The Quaternionic Bilinear Product, Its Form and Its Norm*, where it is defined and where the uniqueness of the operator is stated). Hence
+The product $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ is the d'Alembertian $\Box$, the quaternionic norm of the gradient, an operator of the algebra and not of a sector (*Operator and Calculus Conventions*, §*The Quaternionic Bilinear Product, Its Form and Its Norm*, where it is defined and where the uniqueness of the operator is stated). Hence
 
 $$
 \left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},L} = 0,
@@ -266,7 +266,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 2. **The field-to-vector map for a general pair.** The parent writes $\tilde{Q} = uv^{*}$ (its $u,v$ are the $w,v$ used here) and warns that for a generic pair $iuv^{*}$ does not lie in $\mathbb{B}_{\Phi}$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Psi}$, with four-vector image $V = iH\in\mathbb{B}_{\Phi}$. The exercise uses that symmetrised map. The shorthand $\tilde{Q} = wv^{*}$ is general, but the identification of $i\tilde{Q}$ with a four-vector is not, and neither is the rank-one property, which needs the two elements to share a value.
 
-3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose mass term relates the two parts, with the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
+3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose mass term relates the two parts, with the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
 
 A fourth point, the form of the invariant pairing inside the algebra, is the parent's open question 3; Problem 4 answers it, and the answer is the quaternionic form.
 
@@ -359,7 +359,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $-iR_{\vec u}$ | The chirality basis operator of the declared frame |
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field, of values $-1$ and $+1$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{B}_{H}$) |

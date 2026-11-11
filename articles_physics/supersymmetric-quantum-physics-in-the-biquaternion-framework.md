@@ -20,17 +20,17 @@ The article develops the correspondence in both directions. It first states the 
 
 ## The Frame, the Values and the Equation
 
-The frame is the coefficient basis, declared once with $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$, and every display below is read in it. The algebra, the sectors, the two conjugations, the gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, the pair written as two lines and the basis operator are those of *Algebra and Element Conventions*, *Frame and Metric Conventions*, *Operator and Calculus Conventions* and *Matrix Representations Conventions*, and none of them is restated here.
+The frame is the coefficient basis, declared once with $e_t$, $\vec e_x$, $\vec e_y$, $\vec e_z$, and every display below is read in it. The algebra, the sectors, the two conjugations, the gradient $\tilde\nabla_\Phi$, the d'Alembertian $\Box$, the pair written as two lines and the basis operator are those of *Algebra and Element Conventions*, *Frame and Metric Conventions*, *Operator and Calculus Conventions* and *Matrix Representations Conventions*, and none of them is restated here.
 
 The equation under study is the chiral pair that the corpus states as its dynamics (*Operator and Calculus Conventions*, §*The Dynamics*), printed once because the whole article is a reading of it:
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The pair is two lines, with the gradient on each, and each line composed with its partner is $\Box$; the article writes the two lines and uses no letter for the two together. At $m=0$ the pair decouples into one equation per value, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=0$.
+The pair is two lines, with the gradient on each, and each line composed with its partner is $\Box$; the article writes the two lines and uses no letter for the two together. At $m=0$ the pair decouples into one equation per value, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$.
 
 Two objects are this article's own, and each is defined where it is used: the reduced supercharge $\tilde{Q}$ of §*The 1+1-Dimensional Realisation* and the oscillator pair of §*The Dirac Oscillator*.
 
@@ -81,15 +81,15 @@ is an integer when both kernels are finite, and it is invariant under continuous
 
 ## The Biquaternion Supercharge
 
-The identification is now direct. The gradient is the first-order operator of the corpus and its square is the central d'Alembertian, so the pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ is a supercharge pair in the sense of the previous section, and the dictionary has three entries.
+The identification is now direct. The gradient is the first-order operator of the corpus and its square is the central d'Alembertian, so the pair $(\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi)$ is a supercharge pair in the sense of the previous section, and the dictionary has three entries.
 
 **The grading is the value.** The test returns $L$ or $R$, one for each part of the field. The abstract $+$ sector of the previous section is read on one value and the $-$ sector on the other, and the assignment is the one the corpus records: $L$ is the minus value and $R$ the plus value (*Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*). The two values are exactly two, and only the zero element carries both.
 
 **The mass pair is the superalgebra.** The pair of the conventions is the massive equation, and each of its members multiplies the part with one value and equals a multiple of the part with the other, so the two sides of one member name the two values. The mass is the only term of the pair that names the other value. Read as two equations it is the pair printed above, and no third object stands behind it. The square of the supercharge is the central Hamiltonian, and the mass is the number at which the pair is solved.
 
-Three objects are held apart here. The nilpotent half is one member of the pair: applied where it lands, it annihilates, because the other member carries the field back. The pair is two lines, and each line composed with its partner is central. And $m$ is a number: it multiplies the field in $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, and it becomes a term of the operator only when the same equation is written as a Schrödinger problem, where it multiplies the time basis operator of the frame. The two readings are one statement, that the mass is the term which pairs the two values.
+Three objects are held apart here. The nilpotent half is one member of the pair: applied where it lands, it annihilates, because the other member carries the field back. The pair is two lines, and each line composed with its partner is central. And $m$ is a number: it multiplies the field in $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, and it becomes a term of the operator only when the same equation is written as a Schrödinger problem, where it multiplies the time basis operator of the frame. The two readings are one statement, that the mass is the term which pairs the two values.
 
-**One sign, recorded once.** With respect to the sesquilinear form of the algebra the adjoint of the gradient is minus its quaternion conjugate, $(\tilde{\nabla})^{\dagger} = -\tilde{\nabla}^{\natural}$: the derivative contributes a minus, and the units contribute $e_t^{*}=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$, so the two minus signs cancel on the spatial part and the timelike term keeps its own. Each line of the pair is therefore anti-Hermitian, the derivative it carries is anti-Hermitian, and the factor of $i$ that repairs it is the one that also appears in the momentum of the coordinate form; multiplying a line by $i$ repairs its Hermiticity and multiplies its composition with its partner by $-1$. The algebra is unaffected. Multiplying an anti-Hermitian operator by $i$ multiplies its square by $-1$, so the anticommutator of the repaired pair is $-\Box$ while the algebra's pairing is $+\Box$. The two differ by that one sign, which is the price of Hermiticity. The sign that does move is the one inside the d'Alembertian: on the material sector, where $Q_t=i r'_t$, the d'Alembertian changes by the one sign of $i^2=-1$.
+**One sign, recorded once.** With respect to the sesquilinear form of the algebra the adjoint of the gradient is minus its quaternion conjugate, $(\tilde\nabla_\Phi)^{\dagger} = -(\tilde\nabla^{\natural})_\Phi$: the derivative contributes a minus, and the units contribute $e_t^{*}=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$, so the two minus signs cancel on the spatial part and the timelike term keeps its own. Each line of the pair is therefore anti-Hermitian, the derivative it carries is anti-Hermitian, and the factor of $i$ that repairs it is the one that also appears in the momentum of the coordinate form; multiplying a line by $i$ repairs its Hermiticity and multiplies its composition with its partner by $-1$. The algebra is unaffected. Multiplying an anti-Hermitian operator by $i$ multiplies its square by $-1$, so the anticommutator of the repaired pair is $-\Box$ while the algebra's pairing is $+\Box$. The two differ by that one sign, which is the price of Hermiticity. The sign that does move is the one inside the d'Alembertian: on the material sector, where $Q_t=i r'_t$, the d'Alembertian changes by the one sign of $i^2=-1$.
 
 **The superpotential is the mass.** For a constant mass the parameter is an eigenvalue and the two partners coincide. For a position-dependent mass, $m\to W(Q_x)$, the mass is no longer an eigenvalue but a term of the operator, and the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial R_x^2 + W^2 \mp dW/dx$. The superpotential is thus the possibly position-dependent mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two parts named by the subscript. This is the biquaternion form of the standard claim that the superpotential is the "potential" of the supersymmetric system: here the potential is a mass.
 
@@ -100,14 +100,14 @@ The dictionary is not an analogy imposed from outside; it is the statement that 
 Two formulations carry the name *Dirac equation*, and the supersymmetry above is read from the first. The **one-sided** form is the chiral pair written with both gradients on the left,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
 \qquad\text{(one-sided)},
 $$
 
 and the **two-sided** form is a single equation on an element, in which the derivative multiplies from the left and the mass from the right through the chirality basis operator. Written as the action it is, with no operator symbol, it is
 
 $$
-\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z
+(\tilde\nabla^{\natural})_\PhiF = -i\,m\,\bar{F}\,\vec e_z
 \qquad\text{(two-sided)} ,
 $$
 
@@ -115,8 +115,8 @@ the right multiplier $\vec e_z$ carrying the basis operator of the two values an
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ |
-| Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left by the gradient, right by $\vec e_z$ |
+| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla^{\natural})_\PhiF = -i\,m\,\bar{F}\,\vec e_z$ |
+| Multiplication | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$ | left by the gradient, right by $\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R} \in \mathbb{B}$ | $F\in\mathbb{B}$ |
 | Mass | the pairing of the two values | the right multiplication by $\vec e_z$, applied to the conjugate field |
 | Linearity | linear in the field | antilinear in the mass term |
@@ -131,9 +131,9 @@ The pair carries no mass term. Each member of the pair multiplies the part with 
 Two consequences follow, and both are used below.
 
 - The **supercharge is graded**: each member of the pair carries one value on its left and names the other value on its right, and each member is read with the other. The composition of the two, being central, carries no value.
-- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, which carries each value to itself because it carries no label at all. It is the supersymmetric Hamiltonian $H$. The mass, in turn, is a number in the eigenvalue equation and the time basis operator of the frame in the Schrödinger form; as a term of the operator it is the one that pairs the two values.
+- The **Hamiltonian is even**: the square of the gradient is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \Box$, which carries each value to itself because it carries no label at all. It is the supersymmetric Hamiltonian $H$. The mass, in turn, is a number in the eigenvalue equation and the time basis operator of the frame in the Schrödinger form; as a term of the operator it is the one that pairs the two values.
 
-In the biquaternion language the same statement reads: the pair names the two parts named by the subscript, the central $\Box$ names neither, and the mass is the pairing term. The superalgebra is the rule that a pair of graded objects multiplies to one that is not, realised concretely as $\tilde{\nabla}\tilde{\nabla}^{\natural}=\Box$, a scalar.
+In the biquaternion language the same statement reads: the pair names the two parts named by the subscript, the central $\Box$ names neither, and the mass is the pairing term. The superalgebra is the rule that a pair of graded objects multiplies to one that is not, realised concretely as $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box$, a scalar.
 
 ### The Two Gradings Must Not Be Conflated
 
@@ -226,13 +226,13 @@ The correspondence also clarifies what is and is not supersymmetric about the fr
 
 The index is the invariant that ties the supersymmetric quantum physics to the value read by the test on the biquaternion Dirac operator, and the relation is worth stating precisely.
 
-For the free massless Dirac operator the grading is the value read by the test, and a zero mode is annihilated by its own member of the pair: the part with one value satisfies $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0$ and the part with the other satisfies $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = 0$. The index
+For the free massless Dirac operator the grading is the value read by the test, and a zero mode is annihilated by its own member of the pair: the part with one value satisfies $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = 0$ and the part with the other satisfies $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0$. The index
 
 $$
-\mathrm{Ind} = \dim\ker H_+ - \dim\ker H_- = \dim\ker\tilde{\nabla}^{\natural} - \dim\ker\tilde{\nabla}
+\mathrm{Ind} = \dim\ker H_+ - \dim\ker H_- = \dim\ker(\tilde\nabla^{\natural})_\Phi - \dim\ker\tilde\nabla_\Phi
 $$
 
-counts the imbalance of the zero modes between the two values — the states annihilated by $\tilde{\nabla}^{\natural}$, which are the kernel of $H_+=\tilde\nabla\tilde\nabla^\natural$, minus the states annihilated by $\tilde{\nabla}$, the kernel of $H_-=\tilde\nabla^\natural\tilde\nabla$ — and it is invariant under continuous deformations of the geometry and of the mass. In the flat four-dimensional theory with a constant mass there are no normalisable zero modes and the index vanishes; it becomes non-trivial when the mass is position-dependent, as the kink of the 1+1-dimensional realisation is, or when the background is topologically non-trivial, as an instanton or a vortex is, in which case the zero modes and the index are the content of the Atiyah–Singer theorem.
+counts the imbalance of the zero modes between the two values — the states annihilated by $(\tilde\nabla^{\natural})_\Phi$, which are the kernel of $H_+=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, minus the states annihilated by $\tilde\nabla_\Phi$, the kernel of $H_-=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ — and it is invariant under continuous deformations of the geometry and of the mass. In the flat four-dimensional theory with a constant mass there are no normalisable zero modes and the index vanishes; it becomes non-trivial when the mass is position-dependent, as the kink of the 1+1-dimensional realisation is, or when the background is topologically non-trivial, as an instanton or a vortex is, in which case the zero modes and the index are the content of the Atiyah–Singer theorem.
 
 In the biquaternion framework the index has a simple interpretation. The grading is the value read by the test, taking two values and no more; the supercharge is the pair of the gradient, whose two members name the two values; and the index is the imbalance in the dimensions of the two kernels. The mass is the term that pairs the two values, and the index is what survives when the mass is allowed to vary: an invariant of the graded object that no continuous deformation removes. That is the precise sense in which the biquaternion Dirac operator is a supersymmetric quantum-mechanical system whose index is a topological invariant of the value read by the test.
 
@@ -299,7 +299,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products of the gammas s
 
 Supersymmetric quantum physics is the algebra $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = (\mathcal{Q}^\dagger)^2 = 0$, with a $\mathbb{Z}_2$ grading, a pair of partner Hamiltonians $H_+ = A^\dagger A$, $H_- = A A^\dagger$ for $A = d/dx + W$, partner potentials $V_\pm = W^2 \mp dW/dx$, and the Witten index $\mathrm{Ind} = \dim\ker H_+ - \dim\ker H_-$.
 
-The biquaternion framework supplies this structure natively. The biquaternionic Dirac operator is the gradient $\tilde{\nabla}$, whose square is the central $\Box$; the grading is the value read by the test, which is $L$ or $R$ and nothing else, with $L$ the minus value; the supercharge is the pair, one line per value, each composed with its partner to $\Box$; the superalgebra is the chiral pair, one member per value, in which the mass is the only term that names the other value; and the free theory has $H_+ = H_- = \Box$, a balanced spectrum with a vanishing index. The two-sided form of the same equation, $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$, multiplies the derivative on the left and $\vec e_z$ on the right, and exhibits the mass as the term that carries the basis operator of the two values.
+The biquaternion framework supplies this structure natively. The biquaternionic Dirac operator is the gradient $\tilde\nabla_\Phi$, whose square is the central $\Box$; the grading is the value read by the test, which is $L$ or $R$ and nothing else, with $L$ the minus value; the supercharge is the pair, one line per value, each composed with its partner to $\Box$; the superalgebra is the chiral pair, one member per value, in which the mass is the only term that names the other value; and the free theory has $H_+ = H_- = \Box$, a balanced spectrum with a vanishing index. The two-sided form of the same equation, $(\tilde\nabla^{\natural})_\PhiF = -i\,m\,\bar{F}\,\vec e_z$, multiplies the derivative on the left and $\vec e_z$ on the right, and exhibits the mass as the term that carries the basis operator of the two values.
 
 The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the operator $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial R_x^2+W^2)e_t$ plus the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, whose two values are the partner potentials. The identity was checked by finite-difference computation on $121$ points of $[-6,6]$ (step $h=0.1$) with the kink superpotential $W = \tanh x$: it held to $7\times10^{-15}$ on the whole grid, and the operator limit $[D,W]\to dW/dx$ converged at second order in $h$, the error falling by a factor close to four at each halving of the step.
 
@@ -315,17 +315,17 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts named by the subscript; the chirality basis operator returns the minus value on one and the plus value on the other |
 | $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$ | One basis operator that carries the split, a pure right multiplier and hence an example of the right slot, whose two values the subscript takes |
 | $iR_{\vec e_x}$ | The time basis operator of the frame, the frame grading |
-| $\tilde{\nabla}$ | Biquaternionic gradient (the supercharge) |
-| $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient; $(\tilde\nabla)^{\dagger}=-\tilde\nabla^{\natural}$ |
+| $\tilde\nabla_\Phi$ | Biquaternionic gradient (the supercharge) |
+| $(\tilde\nabla^{\natural})_\Phi$ | Quaternion conjugate gradient; $(\tilde\nabla_\Phi)^{\dagger}=-(\tilde\nabla^{\natural})_\Phi$ |
 | $\Box$ | The d'Alembertian of the series (the Hamiltonian), the square of the gradient |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair (one-sided equation, superalgebra) |
-| $\tilde{\nabla}^{\natural}F = -i\,m\,\bar{F}\,\vec e_z$ | Two-sided equation |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral pair (one-sided equation, superalgebra) |
+| $(\tilde\nabla^{\natural})_\PhiF = -i\,m\,\bar{F}\,\vec e_z$ | Two-sided equation |
 | $A = d/dx + W$, $A^\dagger = -d/dx + W$ | First-order factor and its adjoint |
 | $W(x)$ | Superpotential (position-dependent mass) |
 | $H_+ = A^\dagger A$, $H_- = A A^\dagger$ | Partner Hamiltonians |
 | $V_\pm = W^2 \mp dW/dx$ | Partner potentials |
 | $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = 0$ | Supersymmetry algebra (nilpotent supercharge) |
-| — | The pair carries no letter: it is $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, each line composed with its partner being $\Box$ |
+| — | The pair carries no letter: it is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, each line composed with its partner being $\Box$ |
 | $a^{*}$, $a^{\natural}$, $\bar a$ | Conjugate for the adjoint ($i^{*}=-i$, $\vec e_\eta^{*}=-\vec e_\eta$), order-reversing conjugate, coefficient conjugate |
 | $(-1)^F$ | Grading operator |
 | $\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |

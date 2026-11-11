@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Charge conservation is the cokernel of Maxwell's symbol.** Off the light cone the symbol maps the three complex directions of the field strength into the four of the algebra, and the single direction it misses is read by one functional. That functional is the transform of $\mathrm{Sc}(\tilde\nabla^\natural\tilde J_\Phi)$, and its vanishing is the continuity equation. Charge conservation is therefore not a second law standing beside the field equation. It is the one condition the field equation places on its source, and the cokernel is where that condition lives. The word "is" names an identification through the dual, not an identity of two objects. The cokernel is a quotient and charge conservation is the vanishing of one functional on the source, and §*The cokernel is a space of multipliers* makes them the same piece of data.
+**Charge conservation is the cokernel of Maxwell's symbol.** Off the light cone the symbol maps the three complex directions of the field strength into the four of the algebra, and the single direction it misses is read by one functional. That functional is the transform of $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_\Phi)$, and its vanishing is the continuity equation. Charge conservation is therefore not a second law standing beside the field equation. It is the one condition the field equation places on its source, and the cokernel is where that condition lives. The word "is" names an identification through the dual, not an identity of two objects. The cokernel is a quotient and charge conservation is the vanishing of one functional on the source, and §*The cokernel is a space of multipliers* makes them the same piece of data.
 
 **The identification is exact off the cone and incomplete on it.** On the light cone the rank falls to two, the cokernel becomes two-dimensional, and charge conservation is one of its two members. The second member is a condition of another kind. It says that the current has no component along the polarisation the symbol annihilates. That condition is not a conservation law; it is a selection rule, and it appears exactly where an amplitude disappears.
 
@@ -12,7 +12,7 @@
 
 **The strongest objection, stated first.** Charge conservation is a property of matter, and calling it a cokernel only renames it. The objection is right about the naming and wrong about the content. The naming is what makes the counting possible, and the counting yields a statement the continuity equation does not: on the cone there is a second condition, of a different kind, and no fact about the source alone supplies it. §*Charge Conservation Is the Whole Cokernel Off the Cone* and §*On the Cone the Cokernel Is Two-Dimensional* establish that, and §*What the Second Condition Does* measures it.
 
-**What is used and what is new.** *Maxwell's Equations in the Biquaternionic Formulation* derives charge conservation as the integrability condition of $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_\Phi$, and that derivation is quoted. *The Fourier Transform and the Symbol of a Differential Operator*, §*The Kernel and the Cokernel*, states that the cokernel measures the conditions on the data, and that statement is used as it stands. The rank is that of *Wave–Particle Duality and the Count of Degrees of Freedom*. What is new here is the cokernel as an object: its dimension at each frequency point, its members, their component forms, and the identity of its second member on the cone.
+**What is used and what is new.** *Maxwell's Equations in the Biquaternionic Formulation* derives charge conservation as the integrability condition of $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi$, and that derivation is quoted. *The Fourier Transform and the Symbol of a Differential Operator*, §*The Kernel and the Cokernel*, states that the cokernel measures the conditions on the data, and that statement is used as it stands. The rank is that of *Wave–Particle Duality and the Count of Degrees of Freedom*. What is new here is the cokernel as an object: its dimension at each frequency point, its members, their component forms, and the identity of its second member on the cone.
 
 ## The Symbol and Its Cokernel
 
@@ -21,7 +21,7 @@
 **The equation is the corpus's, and the article changes nothing in it.** In a medium of permittivity $\epsilon$ and permeability $\mu$, with $c=1/\sqrt{\epsilon\mu}$, the field strength $\tilde F$ and the four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ satisfy
 
 $$
-\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_\Phi ,
+\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi ,
 $$
 
 with $\tilde F$ a pure vector. On a plane wave the gradient is replaced by its symbol, and the transform of the equation is
@@ -119,7 +119,7 @@ $$
 
 **This is the continuity equation in the wave-number variables.** With $k_{t}^{\prime}=\omega/c$ and $\vec k_\Phi$ the wave vector, the equation $\mathrm{div}\,\vec J+c\,\partial\rho/\partial r'_t=0$ transforms into $\vec k_\Phi\cdot\vec J=k_{t}^{\prime}c\rho$, and the two statements are the same statement. **The cokernel of the symbol, read on the source, is charge conservation**, which is the identification the introduction promised.
 
-**The same identity in the corpus's own form.** *Maxwell's Equations in the Biquaternionic Formulation* writes the conservation law as $\mathrm{Sc}(\tilde\nabla^\natural\tilde J_\Phi)=0$. The functional above is the symbol of that operator: on a plane wave $\tilde\nabla^\natural$ becomes $i\tilde K_\Phi^\natural$, and the composition $i\tilde K_\Phi^\natural\,i\tilde K_\Phi$ is the central norm. The derivation in that article and the computation here are one argument in two notations, and the agreement is exact: the residual of the identity $\mathrm{Sc}(\tilde K_\Phi^\natural\tilde J_\Phi)=\vec k_\Phi\cdot\vec J-k_{t}^{\prime}c\rho$ over one hundred sampled points is $2.0\times10^{-15}$ relative to the largest term.
+**The same identity in the corpus's own form.** *Maxwell's Equations in the Biquaternionic Formulation* writes the conservation law as $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_\Phi)=0$. The functional above is the symbol of that operator: on a plane wave $(\tilde\nabla^{\natural})_\Phi$ becomes $i\tilde K_\Phi^\natural$, and the composition $i\tilde K_\Phi^\natural\,i\tilde K_\Phi$ is the central norm. The derivation in that article and the computation here are one argument in two notations, and the agreement is exact: the residual of the identity $\mathrm{Sc}(\tilde K_\Phi^\natural\tilde J_\Phi)=\vec k_\Phi\cdot\vec J-k_{t}^{\prime}c\rho$ over one hundred sampled points is $2.0\times10^{-15}$ relative to the largest term.
 
 ### A worked point off the cone
 

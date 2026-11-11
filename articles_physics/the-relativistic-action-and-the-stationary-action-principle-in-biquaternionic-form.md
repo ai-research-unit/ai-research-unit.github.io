@@ -4,7 +4,7 @@
 
 The equations of the relativistic framework can be reached in two ways. They can be written down, as the operator article writes the d'Alembertian and the spin articles write their wave equations, or they can be **derived** from a single scalar functional by the requirement that it be stationary. This article takes the second route: it fixes the biquaternionic action, states the stationary-action principle in the form the algebra requires, and derives from it the free-particle worldline, the coupling to an external potential, the second-order field equation, and the Maxwell and first-order actions. The result is the variational counterpart of the operator article: where that article establishes the operator and its kernels, this one shows that the operator is what stationarity produces.
 
-Two features of the framework shape the principle. First, an action must be a **real scalar**, and a biquaternion-valued Lagrangian is not a scalar until it is paired. The pairings available are the ones the involution lattice supplies — the real part of the scalar part, $\mathrm{Re}\,\mathrm{Sc}$, for a bilinear invariant, and the Hermitian form $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ for a complex field — and the choice of pairing is the choice of which equation the variation returns. Second, the free-particle action is built from the **biquaternion norm**, $S = -mc\int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}$, so that the invariant interval, the four-velocity normalisation, and the mass shell are all statements about $\langle\cdot\rangle_{\natural}$. The field action is built from the same biquaternion norm with the gradient inserted, $\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]$, and this is why its Euler–Lagrange equation is the d'Alembertian equation of the operator article. The variational and the operator routes meet at the biquaternion norm.
+Two features of the framework shape the principle. First, an action must be a **real scalar**, and a biquaternion-valued Lagrangian is not a scalar until it is paired. The pairings available are the ones the involution lattice supplies — the real part of the scalar part, $\mathrm{Re}\,\mathrm{Sc}$, for a bilinear invariant, and the Hermitian form $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ for a complex field — and the choice of pairing is the choice of which equation the variation returns. Second, the free-particle action is built from the **biquaternion norm**, $S = -mc\int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}$, so that the invariant interval, the four-velocity normalisation, and the mass shell are all statements about $\langle\cdot\rangle_{\natural}$. The field action is built from the same biquaternion norm with the gradient inserted, $\mathrm{Sc}[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]$, and this is why its Euler–Lagrange equation is the d'Alembertian equation of the operator article. The variational and the operator routes meet at the biquaternion norm.
 
 The scope is relativistic. The non-relativistic action belongs to the non-relativistic theory; the classical relativistic particle, its light cone, and the Lorentz group as biquaternion-norm automorphisms belong to the non-quantum relativistic theory; and the spin-specific equations belong to the spin articles. What is established here is the common functional apparatus: the free-particle action and its coupling, the real field Lagrangian, the biquaternionic Euler–Lagrange equation, and the symmetry statements. The conserved current and the stress–energy tensor that follow from the symmetries are developed in the companion article on Noether's theorem, which this article supplies the action for.
 
@@ -59,7 +59,7 @@ For a Lagrangian density $\mathcal{L}$ depending on $\tilde{Ξ}$ and its derivat
 $$
 \frac{\partial\mathcal{L}}{\partial\tilde{Ξ}} - \partial/\partial R_\mu\frac{\partial\mathcal{L}}{\partial(\partial\tilde{Ξ}/\partial R_\mu)} = 0 ,
 $$
-where the derivatives are the components of the biquaternionic gradient of $\mathcal{L}$ with respect to the field components. When the Lagrangian is a function of the gradient only through the invariant $\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]$, the derivative term produces the d'Alembertian and the equation is the second-order wave equation of the operator article. This is the sense in which the stationary-action principle reconstructs the operator: the operator is the Euler–Lagrange operator of the biquaternion-norm Lagrangian.
+where the derivatives are the components of the biquaternionic gradient of $\mathcal{L}$ with respect to the field components. When the Lagrangian is a function of the gradient only through the invariant $\mathrm{Sc}[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]$, the derivative term produces the d'Alembertian and the equation is the second-order wave equation of the operator article. This is the sense in which the stationary-action principle reconstructs the operator: the operator is the Euler–Lagrange operator of the biquaternion-norm Lagrangian.
 
 ### The boundary term and the choice of Green's function
 
@@ -146,7 +146,7 @@ $$
 \boxed{\;
 S[\tilde{Ξ}] = \int\mathcal{L}\,d^4r ,
 \qquad
-\mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - (k_m)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\;},
+\mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (k_m)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\;},
 $$
 the form fixed by the companion *Noether's Theorem in Biquaternionic Form* and the companion *The Klein–Gordon Equation in Biquaternionic Form*. Expanding the scalar parts,
 $$
@@ -157,7 +157,7 @@ which is the standard relativistic scalar Lagrangian with the time-like kinetic 
 $$
 \boxed{\;
 \left(\Box - (k_m)^{2}\right)\tilde{Ξ} = 0 ,
-\qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta\;},
+\qquad \Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta\;},
 $$
 the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\xi - (k_m)^{2}\xi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring. Here $\hbar/(mc)$ is the mass length.
 
@@ -165,7 +165,7 @@ the biquaternionic Klein–Gordon equation. The variation was performed on the d
 
 The scalar field is the case $\tilde{Ξ} = \xi\,e_t$, and the Lagrangian is written for a general $\tilde{Ξ}\in\mathbb{B}$ without change of form, because both of its invariants are defined for every element:
 $$
-\mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - (k_m)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right] .
+\mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (k_m)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right] .
 $$
 The two terms behave differently, and the difference is worth stating exactly. The **mass term separates**, since
 $$
@@ -173,12 +173,12 @@ $$
 $$
 so the mass matrix is proportional to the identity in the component space — a *central* mass term. The **kinetic term does not separate** for a general element. Writing the two gradients out,
 $$
-\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)
+\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)
 = \sum_{\mu,\nu} e_\mu^{*}\,\bigl(\partial/\partial R_\mu\tilde{Ξ}\bigr)^\dagger\, e_\nu\,\bigl(\partial/\partial R_\nu\tilde{Ξ}\bigr) ,
 $$
 the second basis element stands between the conjugate derivative and the derivative, so the two factors do not telescope into a single contraction, and the exact expansion carries a constant tensor,
 $$
-\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right]
+\mathrm{Sc}\!\left[\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right]
 = \sum_{\mu,\rho,\nu,\sigma} T_{\mu\rho\nu\sigma}\,\bigl(\partial/\partial R_\muΞ_\rho\bigr)^*\bigl(\partial/\partial R_\nuΞ_\sigma\bigr) ,
 \qquad
 T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}\!\left(e_\mu e_\rho e_\nu e_\sigma\right) ,
@@ -187,7 +187,7 @@ with $\sigma_0 = +1$, $\sigma_\eta = -1$. The tensor is **not** $\delta_{\mu\nu}
 
 The components therefore decouple for exactly the fields that are **central**. For $\tilde{Ξ} = \xi\,e_t$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
 $$
-\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] = \sum_\mu\bigl|\partial/\partial R_\mu\xi\bigr|^2 ,
+\mathrm{Sc}\!\left[\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] = \sum_\mu\bigl|\partial/\partial R_\mu\xi\bigr|^2 ,
 $$
 the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$, and for it the variation separates and returns the single equation $\Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
 
@@ -226,17 +226,17 @@ so that the real and imaginary parts of the single complex invariant carry the t
 
 ### The first-order actions
 
-The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian: the massless first-order Lagrangian is the Hermitian pairing of $\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}$,
+The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian: the massless first-order Lagrangian is the Hermitian pairing of $\tilde{Ξ}_{\mathrm{sp}}$ with $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}}$,
 $$
-\mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}_{\mathrm{sp}}^*\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp}}\bigr)\right] + \text{the conjugate term} ,
+\mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}_{\mathrm{sp}}^*\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}}\bigr)\right] + \text{the conjugate term} ,
 $$
-with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde{\nabla}$, the second-order action inverts $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $\tilde{\nabla}^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
+with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde\nabla_\Phi$, the second-order action inverts $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $(\tilde\nabla^{\natural})_\Phi$ and that their Euler–Lagrange operators are the first-order kernels.
 
 ## Symmetries of the Action
 
 The stationary-action principle is only half the content of an action; the other half is what leaves it invariant. The companion *Noether's Theorem in Biquaternionic Form* develops the theorem in full, and this article supplies the functionals it differentiates. The three symmetries of the actions above are worth naming here because they fix the structure of the theory.
 
-**The central phase.** The action of the complex field is invariant under $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, because the central factor cancels between the two members of the Hermitian pairing and between $\tilde{Ξ}^{*}\tilde{Ξ}$; the invariance holds for the massive as well as the massless field. The associated conserved current is the material-sector four-current $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde{\nabla}\tilde{Ξ}) - (\tilde{\nabla}\tilde{Ξ}^{*})\tilde{Ξ}]$, whose scalar part $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}_{\Phi})$ vanishes on shell. The statement that the current lies in $\mathbb{B}_{\Phi}$ is the sector statement of the involution lattice; the statement that it is conserved is the variation statement of this article.
+**The central phase.** The action of the complex field is invariant under $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$, because the central factor cancels between the two members of the Hermitian pairing and between $\tilde{Ξ}^{*}\tilde{Ξ}$; the invariance holds for the massive as well as the massless field. The associated conserved current is the material-sector four-current $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ}) - (\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ}]$, whose scalar part $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi})$ vanishes on shell. The statement that the current lies in $\mathbb{B}_{\Phi}$ is the sector statement of the involution lattice; the statement that it is conserved is the variation statement of this article.
 
 **Translations.** The actions depend on $\tilde R_\Phi$ only through the fields and their gradients, so a constant shift of the argument is a symmetry, and the conserved quantity is the four-momentum. For the field the conserved density is the stress–energy tensor
 $$
@@ -281,7 +281,7 @@ The two invariants the action uses are thus the two the group preserves, and the
 
 Collecting the algebraic content, five statements distinguish the biquaternionic action from its tensor form.
 
-First, **the action is the biquaternion norm's polarisation and the Hermitian form's diagonal**. The free particle's integrand is $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}$, the free field's kinetic term is $\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})]$, and the mass term is $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$. Every ingredient is one of the lattice's two pairings applied to the field or its gradient, so the action is fixed once the lattice is fixed.
+First, **the action is the biquaternion norm's polarisation and the Hermitian form's diagonal**. The free particle's integrand is $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}$, the free field's kinetic term is $\mathrm{Sc}[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]$, and the mass term is $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$. Every ingredient is one of the lattice's two pairings applied to the field or its gradient, so the action is fixed once the lattice is fixed.
 
 Second, **the equations of motion are the operator's equations**. Varying the particle action gives the straight worldline and the mass shell $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$; varying the field action gives $\Box\tilde{Ξ} - (k_m)^{2}\tilde{Ξ} = 0$, whose $\Box$ is the biquaternion norm of the gradient and whose adjoint is itself by the lattice. The variational route does not produce a different operator; it produces the same operator from a scalar, which is the strongest statement that the operator is the natural one.
 
@@ -306,10 +306,10 @@ whose four-velocity obeys $\langle\tilde{V}_{\Phi}\rangle_{\natural} = \langle\t
 
 The field action is
 $$
-S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{Ξ}\bigr)\right] - (mc/\hbar)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
+S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (mc/\hbar)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
 \qquad \hbar/(mc) ,
 $$
-whose Euler–Lagrange equation is $(\Box - (k_m)^{2})\tilde{Ξ} = 0$ with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$; the variation was checked against $\int(\Box\xi - (k_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $\tilde{\nabla}^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
+whose Euler–Lagrange equation is $(\Box - (k_m)^{2})\tilde{Ξ} = 0$ with $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$; the variation was checked against $\int(\Box\xi - (k_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $(\tilde\nabla^{\natural})_\Phi$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
 
 The symmetries of the action are the central phase, giving the material-sector conserved current, translation invariance, giving the stress–energy tensor, and the Lorentz rotor action, giving the angular momenta; all three hold because the action is assembled from the biquaternion norm and the Hermitian pairing, which are exactly the invariants the involution lattice and the Lorentz group preserve. The variational route thus reconstructs the operator of the first article, the sectors of the second, and the causal and mass-shell structure of both, from a single scalar.
 
@@ -326,12 +326,12 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$, $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ | Four-momentum and the mass shell |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | External four-potential |
 | $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
-| $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{Ξ}^{*})(\tilde{\nabla}\tilde{Ξ})] - (k_m)^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar field Lagrangian |
+| $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - (k_m)^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar field Lagrangian |
 | $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_\eta=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |
 | $(\Box - (k_m)^{2})\tilde{Ξ} = 0$, $\hbar/(mc)$ | Klein–Gordon equation from the variation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
-| $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde{\nabla}\tilde{Ξ}) - (\tilde{\nabla}\tilde{Ξ}^{*})\tilde{Ξ}]$ | Conserved material-sector current |
+| $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ}) - (\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ}]$ | Conserved material-sector current |
 | $T_{\mu\nu} = -(\partial/\partial R_\mu\xi^*)\partial/\partial R_\nu\xi - (\partial/\partial R_\mu\xi)\partial/\partial R_\nu\xi^* - \delta_{\mu\nu}\mathcal{L}$ | Stress–energy tensor |
 | $\delta\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\delta\tilde{Ξ})$ | Hermitian-norm variation |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

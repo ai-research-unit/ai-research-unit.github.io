@@ -304,7 +304,7 @@ $$
 \tilde\nabla\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial R_t}Q_{\mathrm{f}t}-\vec\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial R_t}\vec Q_{\mathrm f}+\vec\nabla Q_{\mathrm{f}t}+\vec\nabla\times\vec Q_{\mathrm f} .
 $$
 
-A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material part $\tilde\nabla_\Phi$** the same product is read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\vec\nabla_\Phi$ the physical spatial gradient, so the space part is unchanged and the time part gains the factor $-i$:
+A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the equation $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$, is the series' Maxwell equation. **On the material part $\tilde\nabla_\Phi$** the same product is read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\vec\nabla_\Phi$ the physical spatial gradient, so the space part is unchanged and the time part gains the factor $-i$:
 
 $$
 \tilde\nabla_\Phi\tilde Q_{\mathrm f}=\Bigl(-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}\Bigr)e_t-i\frac{\partial\vec Q_{\mathrm f}}{\partial r'_t}+\vec\nabla_\Phi Q_{\mathrm{f}t}+\vec\nabla_\Phi\times\vec Q_{\mathrm f} .
@@ -582,7 +582,7 @@ $$
 \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\tilde\nabla_{\mathrm{gco},\mu}\bigr)^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
 $$
 
-with $\tilde F=\mathrm{Vect}(\tilde\nabla^{\natural}\tilde A_{\Phi})$ the curvature. The scalar part of the square is the covariant d'Alembertian and the vector part is the curvature; both are read in *The Covariant Derivative and Gauge Connection in Biquaternionic Form*.
+with $\tilde F=\mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde A_{\Phi})$ the curvature. The scalar part of the square is the covariant d'Alembertian and the vector part is the curvature; both are read in *The Covariant Derivative and Gauge Connection in Biquaternionic Form*.
 
 **The coupling, and the letter $\kappa$.** A few articles write the same operator as $\tilde\nabla+i\kappa\mathcal A$, with $\kappa$ the coupling and $\mathcal A$ the connection. That is one object under two spellings, $\kappa=\frac{ϙ}{\hbar}$ and $\mathcal A=\tilde A_{\Phi}$. The series writes $\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, so that $\kappa$ stays free for the retarded denominator $\kappa=1-\vec u_R\cdot\vec\beta$ of *Algebra and Element Conventions*, which is not a coupling.
 
@@ -593,9 +593,9 @@ with $\tilde F=\mathrm{Vect}(\tilde\nabla^{\natural}\tilde A_{\Phi})$ the curvat
 **The two equations.** The dynamics of a field of mass $m$ is
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 with $k_m=mc/\hbar$ the mass wave number, the inverse of the mass length. Every component equation of the series is a **coordinate form** of these two and not a second dynamics.
@@ -607,9 +607,9 @@ with $k_m=mc/\hbar$ the mass wave number, the inverse of the mass length. Every 
 **The square, line by line.** Composing each line with the conjugate of the other gives
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L},
 $$
 
 that is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
@@ -627,9 +627,9 @@ and the two lines share one condition. Composing them returns $-\hbar^{2}\tilde 
 **The inverse is one scalar and two kernels.** With $G$ the Green's function of the d'Alembertian, $(\Box-k_m^{2})G=\delta$, the solution of the two lines with a source is the pair of kernels
 
 $$
-S_L=i\bigl(\tilde\nabla+k_m\bigr)G,
+S_L=i\bigl(\tilde\nabla_\Phi+k_m\bigr)G,
 \qquad
-S_R=i\bigl(\tilde\nabla^{\natural}+k_m\bigr)G,
+S_R=i\bigl((\tilde\nabla^{\natural})_\Phi+k_m\bigr)G,
 $$
 
 and substitution returns $i\delta$ in each line, because the cross terms cancel and $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $k_m$ central. The inverse introduces no new object.
@@ -662,10 +662,10 @@ $$
 
 **With a connection nothing changes.** The components of $\tilde\nabla_{\mathrm{gco}}$ are central scalars, so the same term-by-term computation gives $\bigl(\tilde Q_1\overleftarrow{\tilde\nabla_{\mathrm{gco}}}\bigr)^{\natural}=\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde Q_1^{\natural}$, at the same residual, with $\natural$ again fixing the coefficients and reading the units alone.
 
-**The instance that hides the generality.** The chiral pair is the case usually quoted. From $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, transposing with $\tilde Q_1=\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and using $m^{\natural}=m$,
+**The instance that hides the generality.** The chiral pair is the case usually quoted. From $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, transposing with $\tilde Q_1=\tilde{Ξ}_{\mathrm{sp},L}^{\natural}$ and using $m^{\natural}=m$,
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}
 \qquad\Longrightarrow\qquad
 \tilde{Ξ}_{\mathrm{sp},L}^{\natural}\overleftarrow{\tilde\nabla}=k_m\,\tilde{Ξ}_{\mathrm{sp},R}^{\natural},
 $$
@@ -718,7 +718,7 @@ An operator whose letter is the letter of an element is that element: the tilde 
 
 A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power and never a label: every label, coordinate, component, basis vector, frame basis operator and sign symbol is written low, and a contraction is a form with the sign vector. The coordinate derivative is unhalved, $\partial/\partial R_\mu=\bigl(\partial/\partial r_\mu-i\,\partial/\partial r'_\mu\bigr)$, and a part keeps one of its two halves. A gradient read on one part always carries that part's subscript and never stands bare: $\tilde\nabla_\Phi$ on the material part, $\tilde\nabla_\Psi$ on the informational one, and $(\tilde\nabla^{\natural})_\Phi$, $(\tilde\nabla^{\natural})_\Psi$ for the conjugate. A bare $\tilde\nabla$ means the operator on all eight coordinates, and it is the only symbol that may appear without a part subscript. The gradient is $\tilde\nabla$, not pure. It splits into two parts, the projections $\tfrac12(\tilde\nabla\mp\tilde\nabla^{*})$: by slot into a Hermitian temporal term and an anti-Hermitian spatial sum, and in the eight real coordinates into the four informational coordinates and the four material ones, so the split by part is the split by coordinate. The two parts are $\tilde\nabla_\Phi=-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$, anti-Hermitian, and $\tilde\nabla_\Psi=e_t\partial_{r_t}-i\sum_\eta\vec e_\eta\partial_{r'_\eta}$, Hermitian, with $\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi$. The subscript is the only mark, and the same holds for the variable, $\tilde R=\tilde R_\Phi+\tilde R_\Psi$ with $\tilde R_\Phi=i r'_t e_t+\sum_\eta\vec e_\eta r_\eta$ and $\tilde R_\Psi=r_t e_t+i\sum_\eta\vec e_\eta r'_\eta$. The d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, read on the material part as $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, and every article uses this one operator with the mass equation $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$, where $k_m^{2}$ is written $k_m^{2}$ with $k_m=mc/\hbar$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla_{\mathrm{gco}}=\sum_\mu  e_\mu\tilde\nabla_{\mathrm{gco},\mu}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, and it carries a label rather than a letter of its own.
 
-The gradient and its conjugate act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signature, and its square is $\Box$ on each part only after composing the two lines. A subscript names a part and not a slice: $\tilde\nabla_\Phi$ is the anti-Hermitian part, which keeps the imaginary time and the real space numbers, and $\tilde\nabla_\Psi$ the Hermitian part, which keeps the real time and the imaginary space numbers, with $\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi$ (*The Gradient*).
+The gradient and its conjugate act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signature, and its square is $\Box$ on each part only after composing the two lines. A subscript names a part and not a slice: $\tilde\nabla_\Phi$ is the anti-Hermitian part, which keeps the imaginary time and the real space numbers, and $\tilde\nabla_\Psi$ the Hermitian part, which keeps the real time and the imaginary space numbers, with $\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi$ (*The Gradient*).
 
 The four forms remain four distinct conventions and the norms two, because each form conjugates its own slot. The four product subsections read the same gradient through the plain, quaternionic, Hermitian and Krein products, each with its form and its norm, and the signs follow from the algebra rather than from a choice of metric.
 

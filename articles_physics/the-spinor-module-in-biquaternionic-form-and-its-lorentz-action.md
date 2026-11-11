@@ -299,9 +299,9 @@ The one-sided action is not a device of this article. It is the multiplication o
 2. **The covariance of the biquaternion Dirac equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two equations, and they are not the same operator. The corpus's own equation is the **one-sided chiral pair**
 
     $$
-    \tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+    \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
     \qquad
-    \tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+    (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
     $$
 
     in which the gradient acts by left multiplication on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ and the mass is the term that carries one value to the other. Kravchenko's equation is the **two-sided** single equation on $\mathbb{B}$,

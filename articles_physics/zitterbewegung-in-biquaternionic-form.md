@@ -15,7 +15,7 @@ The article is organised as follows. The next section recalls the standard pictu
 The dynamics in the algebra is the pair of the parent,
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
 $$
 
 (*The Dirac Equation in Biquaternionic Form*, §*Statement*). The standard picture, which this section follows, reads the equation first order in time,
@@ -67,12 +67,12 @@ The biquaternionic Dirac equation is the parent's linear pair, off-diagonal in t
 
 $$
 \begin{aligned}
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} &= k_m\tilde{Ξ}_{\mathrm{sp},L},\\[2pt]
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_m\tilde{Ξ}_{\mathrm{sp},L},\\[2pt]
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} &= k_m\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
 
-for a field of mass $m$. The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts are the two components that the subscripts name. Each line applies the gradient to one component and equates it to $k_m$ times the other, so $k_m$ is the coefficient of that exchange. The gradient multiplies on the left and keeps the value, and $k_m$ is central and keeps it too, so no term of the pair moves a value across: the letters name the two components, and the pair relates them. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each component.
+for a field of mass $m$. The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts are the two components that the subscripts name. Each line applies the gradient to one component and equates it to $k_m$ times the other, so $k_m$ is the coefficient of that exchange. The gradient multiplies on the left and keeps the value, and $k_m$ is central and keeps it too, so no term of the pair moves a value across: the letters name the two components, and the pair relates them. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each component.
 
 The conjugation $\flat$ is the algebra's real structure, not the mass term (§*The Conjugations* of the conventions article cited above). The corpus also carries a **two-sided** form of the same physics — Kravchenko's single equation on $\mathbb{B}$, in which the mass acts by right multiplication through $\vec e_z$ and a conjugation supplies the antilinear part — but the two forms are related by a dictionary and are not the same operator (parent, §*The One-Sided and the Two-Sided Equation*). The Zitterbewegung derivation below uses the pair.
 

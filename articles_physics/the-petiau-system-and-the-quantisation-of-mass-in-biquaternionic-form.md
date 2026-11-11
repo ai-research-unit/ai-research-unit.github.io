@@ -8,7 +8,7 @@ The biquaternion framework does not by itself derive a single mass value — an 
 
 The position is stated at the outset, and the article defends it section by section.
 
-- **Established.** The algebra carries the whole chain. Lanczos's coupled system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ is the massless Maxwell equation with a feedback; promoting the scalar $m$ to a biquaternion $\tilde{E}_{\Psi}$ turns the second-order equations into **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$; the reduction of Petiau's closed system to Lanczos's, for a constant spin-0 field, is exact. These are algebra, and they are checked here.
+- **Established.** The algebra carries the whole chain. Lanczos's coupled system $\tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2$, $\tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1$ is the massless Maxwell equation with a feedback; promoting the scalar $m$ to a biquaternion $\tilde{E}_{\Psi}$ turns the second-order equations into **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$; the reduction of Petiau's closed system to Lanczos's, for a constant spin-0 field, is exact. These are algebra, and they are checked here.
 - **Transcribed.** Petiau's double-periodic waves, the quartic Hamiltonian $H=C_0\mu^4k^2$, and the quantisation of the amplitude and the proper mass are taken from Petiau through the review of Gsponer and Hurni. They are not re-derived here, and their status is that of the source, not of the framework.
 - **Empirical.** Barut's leptonic mass formula is an external numerical fit. Its agreement with the lepton data is a fact about the formula and the data, not a framework result, and the ratio $7.46$ of the two singular moduli is offered by the source as a plausible numerical coincidence, not as a derivation.
 - **Not supplied.** No mass value is derived from $\mathbb{B}$. The algebra is scale-free, the standard-model agenda's ledger is unchanged, and the article's contribution is to place the Lanczos–Einstein–Mayer–Petiau construction in the corpus with its verified content and its labelled speculation separated.
@@ -28,12 +28,12 @@ The framework results used here are those of the companion articles:
 
 ### The Lanczos Feedback System
 
-Maxwell's source-free equation in biquaternionic form is $\tilde{\nabla}\tilde{F}=0$, the complex-vector equation of Conway and Silberstein, and its inhomogeneous companion is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for a four-current $\tilde J_{\Phi}$. Lanczos's observation, in 1929, was that the same two-slot equation with a **feedback** on the right-hand side describes a massive particle of spin $\frac{1}{2}$:
+Maxwell's source-free equation in biquaternionic form is $\tilde\nabla_\Phi\tilde{F}=0$, the complex-vector equation of Conway and Silberstein, and its inhomogeneous companion is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ for a four-current $\tilde J_{\Phi}$. Lanczos's observation, in 1929, was that the same two-slot equation with a **feedback** on the right-hand side describes a massive particle of spin $\frac{1}{2}$:
 
 $$
-\tilde{\nabla}\tilde Q_1 = m\tilde Q_2,
+\tilde\nabla_\Phi\tilde Q_1 = m\tilde Q_2,
 \qquad
-\tilde{\nabla}\tilde Q_2 = m\tilde Q_1,
+\tilde\nabla_\Phi\tilde Q_2 = m\tilde Q_1,
 $$
 
 where $\tilde Q_1$ and $\tilde Q_2$ are two biquaternion fields and $m=k_m$ is the mass in inverse-length units. The equation is Maxwell's with the source replaced by the other field, and this is what "feedback" means: the two fields source each other. Following Lanczos, that self-sourcing is the algebraic mark of a **massive** particle, as against the massless photon, whose field is its own source-free equation.
@@ -53,9 +53,9 @@ The mass is a number, the same for both fields, and this is the Standard Model's
 Einstein and Mayer, in 1933, took the step that makes the construction a theory of mass rather than a rewriting of Dirac's. The scalar $m$ is promoted to a biquaternion $\tilde{E}_{\Psi}$, the **mass field**, and the system becomes
 
 $$
-\tilde{\nabla}\tilde Q_1 = \tilde Q_2\tilde{E}_{\Psi}^{*},
+\tilde\nabla_\Phi\tilde Q_1 = \tilde Q_2\tilde{E}_{\Psi}^{*},
 \qquad
-\tilde{\nabla}\tilde Q_2 = \tilde Q_1\tilde{E}_{\Psi}.
+\tilde\nabla_\Phi\tilde Q_2 = \tilde Q_1\tilde{E}_{\Psi}.
 $$
 
 For a constant central $\tilde{E}_{\Psi}=m e_t$ the equations reduce to the Lanczos system above, since a central element commutes with everything: $\tilde Q_2\tilde{E}_{\Psi}^{*}=\tilde Q_2m=m\tilde Q_2$ and $\tilde Q_1\tilde{E}_{\Psi}=m\tilde Q_1$. This reduction is exact and is checked here. So the Einstein–Mayer system is the Lanczos system with a **field-valued** mass, and the mass parameter has become a dynamical object.
@@ -99,17 +99,17 @@ The Einstein–Mayer system has a mass field $\tilde{E}_{\Psi}$ that is put in b
 
 $$
 \boxed{\;\begin{aligned}
-\tilde{\nabla}\tilde Q_1 &= \tilde Q_2\tilde Q_3,\\
-\tilde{\nabla}\tilde Q_2 &= \tilde Q_1\tilde Q_3,\\
-\tilde{\nabla}\tilde Q_3 &= \tilde Q_1\tilde Q_2.
+\tilde\nabla_\Phi\tilde Q_1 &= \tilde Q_2\tilde Q_3,\\
+\tilde\nabla_\Phi\tilde Q_2 &= \tilde Q_1\tilde Q_3,\\
+\tilde\nabla_\Phi\tilde Q_3 &= \tilde Q_1\tilde Q_2.
 \end{aligned}\;}
 $$
 
-Here $\tilde Q_1$ and $\tilde Q_2$ are the Lanczos spin-$\frac{1}{2}$ fields and $\tilde Q_3$ is an Einstein–Mayer field of spin 0. The system is **closed** in Petiau's sense: every field on the right-hand side is one of the three, so the equations determine one another with no external parameter left, and the third equation $\tilde{\nabla}\tilde Q_3=\tilde Q_1\tilde Q_2$ is the relation that the first two lacked. The price is that the closed system is **nonlinear** — the right-hand sides are products of two fields — and its solutions are correspondingly more constrained than those of any linear wave equation.
+Here $\tilde Q_1$ and $\tilde Q_2$ are the Lanczos spin-$\frac{1}{2}$ fields and $\tilde Q_3$ is an Einstein–Mayer field of spin 0. The system is **closed** in Petiau's sense: every field on the right-hand side is one of the three, so the equations determine one another with no external parameter left, and the third equation $\tilde\nabla_\Phi\tilde Q_3=\tilde Q_1\tilde Q_2$ is the relation that the first two lacked. The price is that the closed system is **nonlinear** — the right-hand sides are products of two fields — and its solutions are correspondingly more constrained than those of any linear wave equation.
 
 ### The Reduction to Lanczos
 
-The closed system reduces to the Lanczos system when the spin-0 field is a **constant**, $\tilde Q_3=m e_t$. Then the first two equations read $\tilde{\nabla}\tilde Q_1=\tilde Q_2(m e_t)=m\tilde Q_2$ and $\tilde{\nabla}\tilde Q_2=\tilde Q_1(m e_t)=m\tilde Q_1$, which is Lanczos's pair, and the third reads $\tilde{\nabla}(m e_t)=0$, which is satisfied because $m$ is constant. Conversely the third equation forbids $\tilde Q_3$ being constant in the presence of nontrivial $\tilde Q_1\tilde Q_2$, so a solution of the closed system is **not** an arbitrary solution of the Lanczos system: the closure is a genuine constraint.
+The closed system reduces to the Lanczos system when the spin-0 field is a **constant**, $\tilde Q_3=m e_t$. Then the first two equations read $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_2(m e_t)=m\tilde Q_2$ and $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_1(m e_t)=m\tilde Q_1$, which is Lanczos's pair, and the third reads $\tilde\nabla_\Phi(m e_t)=0$, which is satisfied because $m$ is constant. Conversely the third equation forbids $\tilde Q_3$ being constant in the presence of nontrivial $\tilde Q_1\tilde Q_2$, so a solution of the closed system is **not** an arbitrary solution of the Lanczos system: the closure is a genuine constraint.
 
 The reduction is exact, element by element — a central scalar commutes with a biquaternion, so $\tilde Q_2\tilde Q_3=\tilde Q_3\tilde Q_2=m\tilde Q_2$ — and it is checked here on random $\tilde Q_1$, $\tilde Q_2$. It is the sense in which the Petiau system is "the Lanczos system with the mass promoted to a field and then closed": Lanczos has one scalar mass, Einstein–Mayer has a mass biquaternion, and Petiau lets the mass field be determined by the fields it masses.
 
@@ -219,7 +219,7 @@ The article's accounting, collected.
 
 ## Summary
 
-The biquaternion framework carries a definite line of work on mass, and this article states it with its parts separated. The **Lanczos** system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ is Maxwell's equation with a feedback, and it is strictly equivalent to a massive spin-$\frac{1}{2}$ equation; the **Einstein–Mayer** system $\tilde{\nabla}\tilde Q_1=\tilde Q_2\tilde{E}_{\Psi}^{*}$, $\tilde{\nabla}\tilde Q_2=\tilde Q_1\tilde{E}_{\Psi}$ promotes the scalar mass to a biquaternion $\tilde{E}_{\Psi}$, so that the second-order equations become eigenvalue equations for the mass, with mass-squared operators $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$ for $\tilde Q_1$ and $\tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi}$ for $\tilde Q_2$; the two eigenvalues are the two masses of a doublet, equal when $\tilde{E}_{\Psi}$ is a real scalar (the proton–neutron case), split with one massless mode when $\tilde{E}_{\Psi}$ is a Hermitian idempotent or, more generally, a singular biquaternion (the electron–neutrino skeleton), the general case being controlled by $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2$. The **Petiau** system $\tilde{\nabla}\tilde Q_1=\tilde Q_2\tilde Q_3$, $\tilde{\nabla}\tilde Q_2=\tilde Q_1\tilde Q_3$, $\tilde{\nabla}\tilde Q_3=\tilde Q_1\tilde Q_2$ closes the system by giving the mass field its own equation, at the cost of nonlinearity, and reduces exactly to Lanczos when $\tilde Q_3$ is constant. Its solutions are the **double-periodic Petiau waves**, built from elliptic functions, interpolating between de Broglie waves at modulus $k=0$ and solitons at $k=1$, with quantised amplitude and proper mass and with the quartic Hamiltonian $H=C_0\mu^4k^2$.
+The biquaternion framework carries a definite line of work on mass, and this article states it with its parts separated. The **Lanczos** system $\tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2$, $\tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1$ is Maxwell's equation with a feedback, and it is strictly equivalent to a massive spin-$\frac{1}{2}$ equation; the **Einstein–Mayer** system $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_2\tilde{E}_{\Psi}^{*}$, $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_1\tilde{E}_{\Psi}$ promotes the scalar mass to a biquaternion $\tilde{E}_{\Psi}$, so that the second-order equations become eigenvalue equations for the mass, with mass-squared operators $\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*}$ for $\tilde Q_1$ and $\tilde{E}_{\Psi}^{*}\tilde{E}_{\Psi}$ for $\tilde Q_2$; the two eigenvalues are the two masses of a doublet, equal when $\tilde{E}_{\Psi}$ is a real scalar (the proton–neutron case), split with one massless mode when $\tilde{E}_{\Psi}$ is a Hermitian idempotent or, more generally, a singular biquaternion (the electron–neutrino skeleton), the general case being controlled by $\det\mathsf{M}_2(\tilde{E}_{\Psi}\tilde{E}_{\Psi}^{*})=|\langle\tilde{E}_{\Psi}\rangle_{\natural}|^2$. The **Petiau** system $\tilde\nabla_\Phi\tilde Q_1=\tilde Q_2\tilde Q_3$, $\tilde\nabla_\Phi\tilde Q_2=\tilde Q_1\tilde Q_3$, $\tilde\nabla_\Phi\tilde Q_3=\tilde Q_1\tilde Q_2$ closes the system by giving the mass field its own equation, at the cost of nonlinearity, and reduces exactly to Lanczos when $\tilde Q_3$ is constant. Its solutions are the **double-periodic Petiau waves**, built from elliptic functions, interpolating between de Broglie waves at modulus $k=0$ and solitons at $k=1$, with quantised amplitude and proper mass and with the quartic Hamiltonian $H=C_0\mu^4k^2$.
 
 The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac{3}{2}\alpha^{-1}\sum_{n=0}^{N}n^4\bigr)$ fits the lepton data to a few parts in $10^3$, matches the quartically-scaling Petiau Hamiltonian in shape, and is explained by the source as a moduli ratio $[\sin(\pi/4)/\sin(\pi/12)]^2=7.464$ between the harmonic and equianharmonic elliptic cases — a speculation the source itself labels as such, and one that predicts a fourth lepton the data exclude. The framework derives no mass value; what it supplies is a structure in which the mass is a field with an equation, the masses of a doublet are the eigenvalues of a biquaternion, and the spectrum problem becomes a nonlinear one. That is the article's result, and the mass values remain, as before, outside the algebra.
 
@@ -230,8 +230,8 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\tilde{\nabla},\ \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
+| $\tilde\nabla_\Phi,\ (\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
 | $\tilde Q_1,\ \tilde Q_2$ | Lanczos spin-$\frac{1}{2}$ fields |
 | $m=k_m$ | Scalar mass parameter, inverse-length units |
 | $\tilde{E}_{\Psi}$ | Einstein–Mayer mass biquaternion |

@@ -13,7 +13,7 @@ This article takes up that question. It does not repeat the quantization, which 
 - **The operator-valued observables.** The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{B}_{\Phi}$, the charge in the centre $\mathbb{B}_{C}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.
 - **The two-point function as an operator-valued distribution.** The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.
 
-The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla$ with its quaternion conjugate $\tilde\nabla^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
+The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
 
 ## The Operator-Valued Field
 
@@ -87,9 +87,9 @@ So the split of a fermion field into a "particle field" and an "antiparticle fie
 Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:
 
 $$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$
 
 the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is two lines and no third object: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathcal{D}-k_m)$, with $\mathcal{D}$ the two-sided contraction of the next paragraph and not the retired pair glyph, and the contraction adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
@@ -240,7 +240,7 @@ normal-ordered, Hermitian for all four components, and even under fermion parity
 Writing $\tilde J_{\Phi}=iJ_t e_t+\sum_\eta J_\eta\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, the conservation law is the operator equation
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}(r_x)=0,
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}(r_x)=0,
 $$
 
 on account of the field equation. The operator statement is inherited from the classical identity term by term, since each term of the normal-ordered bilinear is a $c$-number coefficient times a mode-operator monomial and the divergence acts on the coefficient only.
@@ -252,9 +252,9 @@ $$
 +d_1\tilde{Ξ}_{\mathrm{sp},-}^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
 $$
 
-with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
+with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.
+In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is *not* conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.
 
 ### Spin
 
@@ -373,10 +373,10 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
-| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
+| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
 | $\mathcal{D}_p$ | Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=p^2$ |
-| $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}_{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde{Ξ}_{\mathrm{fop},R}$ |
 | $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$, $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |

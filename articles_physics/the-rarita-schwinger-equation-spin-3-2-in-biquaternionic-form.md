@@ -6,20 +6,20 @@ The Proca equation carries spin one, and the Dirac equation carries spin one-hal
 
 **The article writes the system in biquaternionic form and reduces it in the rest frame**, where the spin-$\tfrac32$ content is visible. The carrier is a family of four elements of the algebra, $\tilde{Ξ}_{\mathrm{sp},\mu}\in\mathbb{B}$ with $\mu=0,1,2,3$, and the equation is three statements. The first is the **chiral pair** of the companion Dirac article, written once for each component,
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
 \qquad \mu=0,1,2,3 .
 $$
 The two subscripts take the two values $L$ and $R$ of *Special Element Conventions*, §*The Chirality Convention*, and the derivative is the gradient of *Operator and Calculus Conventions*, §*The Gradient*. Neither value closes on its own: each equation carries one value into the other, so the mass is the pairing of the two. Read from either side, every component of the field is a Dirac field.
 
-**The calculus is the corpus's and is cited, not restated.** The first-order operator is the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate is $\tilde\nabla^{\natural}$, and the d'Alembertian $\Box$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair of first-order equations, and the square of each line, are those of §*The Two First-Order Equations and Their Symbol* of the same article. No other letter names a derivative below.
+**The calculus is the corpus's and is cited, not restated.** The first-order operator is the biquaternionic gradient $\tilde\nabla_\Phi$, its quaternion conjugate is $(\tilde\nabla^{\natural})_\Phi$, and the d'Alembertian $\Box$ is the quaternionic norm of the gradient, all three as fixed in *Operator and Calculus Conventions*, §*The Gradient* and §*The Quaternionic Bilinear Product, Its Form and Its Norm*. The pair of first-order equations, and the square of each line, are those of §*The Two First-Order Equations and Their Symbol* of the same article. No other letter names a derivative below.
 
 **The gradient does not square to a scalar, and that is why the massive equation is a pair.** With $i\hbar\tilde K_{\Phi}=-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ the symbol of the gradient, the time unit commutes with the three spatial units and the mixed derivatives are symmetric, so the square keeps a vector part,
 $$
 -\hbar^{2}\tilde K_{\Phi}^{2}=\hbar^{2}\bigl(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^{2}\bigr)e_t-2i\hbar^{2}k_{t}^{\prime}\vec k_\Phi .
 $$
-The computation is a derived form of this article. It says that $\tilde\nabla^2$ is neither a scalar nor the d'Alembertian, so no first-order operator with scalar square exists in this algebra, and a single field carries no mass. The massless equation is one equation on one element, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$, and the massive equation is the pair above, whose scalar square is $\Box$.
+The computation is a derived form of this article. It says that $\tilde\nabla^2$ is neither a scalar nor the d'Alembertian, so no first-order operator with scalar square exists in this algebra, and a single field carries no mass. The massless equation is one equation on one element, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$, and the massive equation is the pair above, whose scalar square is $\Box$.
 
 **The second and third statements are the two constraints.** The first is the **trace constraint**, one element equation in which the three spatial directions multiply their component on the left and the axis $\vec e_z$ on the right; the second is the **divergence constraint**,
 $$
@@ -50,7 +50,7 @@ and it acts on the right, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp
 
 The Rarita–Schwinger field is a four-vector whose components are Dirac fields: a vector index $\mu=0,1,2,3$ and the four-component index of the Dirac field, written $\tilde{Ξ}_{\mathrm{sp},\mu\alpha}$ with $\alpha=1,\dots,4$. The source writes its equation through two objects: a totally antisymmetrized triple $T_{\mu\nu\rho}$, antisymmetric in all three indices and vanishing when two of them coincide, and an antisymmetrized pair $h_{\mu\nu}$, antisymmetric in its two. Both are objects of one chosen display of the source, representatives and not elements of $\mathbb{B}$, and the two carry the two roles: the triple the kinetic structure and the pair the mass structure.
 
-**The source's own equation** is one antisymmetrized equation: the triple contracted with the derivative and with the field, plus $i\,m$ times the pair contracted with the field. In the algebra it is the three statements of the introduction, and the translation is made once here. The kinetic structure is the **gradient pair**: the antisymmetrized triple contracts the derivative index with the three spatial directions, and the contraction on a component is $\tilde\nabla$ on the $R$ value and $\tilde\nabla^{\natural}$ on the $L$ value. The mass structure is **left multiplication by an element** $\Gamma_{\mu\nu}\in\mathbb{B}$, the table of which is given in §*The Field in the Biquaternion Framework*. Nothing else of the source's composites survives the translation, because nothing else of them is an operator on $\mathbb{B}$.
+**The source's own equation** is one antisymmetrized equation: the triple contracted with the derivative and with the field, plus $i\,m$ times the pair contracted with the field. In the algebra it is the three statements of the introduction, and the translation is made once here. The kinetic structure is the **gradient pair**: the antisymmetrized triple contracts the derivative index with the three spatial directions, and the contraction on a component is $\tilde\nabla_\Phi$ on the $R$ value and $(\tilde\nabla^{\natural})_\Phi$ on the $L$ value. The mass structure is **left multiplication by an element** $\Gamma_{\mu\nu}\in\mathbb{B}$, the table of which is given in §*The Field in the Biquaternion Framework*. Nothing else of the source's composites survives the translation, because nothing else of them is an operator on $\mathbb{B}$.
 
 **The factor $i$ is not a convention.** The source has two writings of the same equation, one with the triple and a real mass term and one with the epsilon combination and an imaginary one. The epsilon combination is $\pm i$ times the triple, the sign being the metric weight of the raised index, so the two writings differ by the right multiplier $\omega$ and an overall sign. Written with a real mass term in place of $i\,m$ the equation has no solutions at all: the sixteen-component momentum-space operator of that display is then invertible on the mass shell, its determinant not vanishing at $k^2=m^{2}c^{2}$, while with $\pm i\,m$ it has the four-dimensional kernel of the quartet. The check was run at three masses: the nullity is $4$ with the imaginary mass and $0$ with the real one. The overall sign is then a free convention of the source's writing, and this article keeps the one whose positive-frequency solutions have the rest-frame frequency $\varpi=m$.
 
@@ -120,7 +120,7 @@ E_\mu \;\longmapsto\; e_t \ (\mu=0), \qquad E_\mu \;\longmapsto\; i\vec e_\eta \
 $$
 From the span of the four generators onto $\mathbb{B}$ this is a complex-linear isomorphism, and the two sides are different kinds of object throughout: an object of the display on the left, an element on the right. It carries the index and nothing else. It is not multiplicative, and no product of images is used below: the equation needs two structures only, the gradient for the kinetic term and one element of $\mathbb{B}$ for each index pair of the mass term.
 
-**The kinetic structure is the gradient.** The antisymmetrized triple of the source contracts the derivative index with the three spatial directions and antisymmetrizes over all three. In the algebra that contraction is the gradient: $\tilde\nabla$ on the $R$ value of each component, $\tilde\nabla^{\natural}$ on the $L$ value, with the material time derivative carried by the $e_t$ term alone. No other first-order structure enters, and the triple itself is not needed once the contraction is made.
+**The kinetic structure is the gradient.** The antisymmetrized triple of the source contracts the derivative index with the three spatial directions and antisymmetrizes over all three. In the algebra that contraction is the gradient: $\tilde\nabla_\Phi$ on the $R$ value of each component, $(\tilde\nabla^{\natural})_\Phi$ on the $L$ value, with the material time derivative carried by the $e_t$ term alone. No other first-order structure enters, and the triple itself is not needed once the contraction is made.
 
 **The mass structure is an element.** The antisymmetrized pair of the source is, in the algebra, left multiplication by an element of $\mathbb{B}$,
 $$
@@ -134,8 +134,8 @@ with the sign of $\Gamma_{j\eta}$ fixed by the orientation $\vec e_x\vec e_y=\ve
 $$
 \boxed{\;
 \begin{aligned}
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},\\
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,R}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},\\
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,L}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
 \end{aligned}
 \qquad\text{for each }\mu\;}
 $$
@@ -318,9 +318,9 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Central scalar imaginary of $\mathbb{B}$, $i^2=-1$ |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ | The gradient and its quaternion conjugate; the only first-order operators of the article |
 | $\Box$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol* |
 | $i\hbar\tilde K_{\Phi}$ | Symbol of the gradient, $-\hbar k_{t}^{\prime}\,e_t+i\hbar\vec k_\Phi$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The right multiplier that carries the source's $i$; eigenvalue $+i$ on the $L$ value and $-i$ on the $R$ value |
 | $e_t$, $i\vec e_\eta$ | The four units that square to $+e_t$; the images of the source's four generators |
@@ -331,7 +331,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 | $\varepsilon_\mu=-g_{\mu\mu}=(1,-1,-1,-1)$ | Sign vector of the frame; the metric weight of a contracted low index |
 | $\tilde S_{\Psi}=\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\vec e_z$ | Trace element; the source's trace, four complex conditions of rank four |
 | $\operatorname{div}\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu\varepsilon_\mu\partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp},\mu}$ | Covariant divergence; a consequence of the equation for every $m$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Chiral pair on each component; the dynamics |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,R}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,L}=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R}$ | Chiral pair on each component; the dynamics |
 | $\tilde\xi_k$ | The three spatial components at rest |
 | $T(\tilde\xi)_k=\tilde\xi_k+\tfrac13\vec e_\eta\sum_j\vec e_j\tilde\xi_j$ | The transverse map on the vector index; unchanged by a second application, of rank two |
 | $T_{\mu\nu\rho}$, $h_{\mu\nu}$ | The source's antisymmetrized triple and pair, objects of one display; kinetic and mass structures |

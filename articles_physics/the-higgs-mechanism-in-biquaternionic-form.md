@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **Higgs mechanism** is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. A gauge-field mass term, $m^2\sum_\mu A_\mu A_\mu$, is forbidden: it is not invariant under the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ that the companion articles derive for the connection. The mass is generated instead from the one place the symmetry permits — the **kinetic term of the scalar field**, evaluated at a vacuum expectation value that does not respect the symmetry. The gauge field acquires a mass whose square is the coefficient of the quadratic term that the kinetic term thereby produces, and the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization. Both facts follow from the same coupling. Neither is a term written into the action by hand, and avoiding that is the whole content of the mechanism.
+The **Higgs mechanism** is the statement that a gauge symmetry which is exact in the action can be hidden by the vacuum, and that the hiding is not free. A gauge-field mass term, $m^2\sum_\mu A_\mu A_\mu$, is forbidden: it is not invariant under the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ that the companion articles derive for the connection. The mass is generated instead from the one place the symmetry permits — the **kinetic term of the scalar field**, evaluated at a vacuum expectation value that does not respect the symmetry. The gauge field acquires a mass whose square is the coefficient of the quadratic term that the kinetic term thereby produces, and the would-be Goldstone mode of the scalar, which the vacuum makes massless, is absorbed into the gauge field as its longitudinal polarization. Both facts follow from the same coupling. Neither is a term written into the action by hand, and avoiding that is the whole content of the mechanism.
 
-This article works the mechanism inside the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles. The pieces are already in the read list. *The Gauge Principle in Biquaternionic Form* localizes the central phase of the algebra and produces the connection $\tilde{A}_{\Phi}$, the covariant derivative $D = \tilde{\nabla} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, and the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$; it also identifies the **complex scalar** $\tilde{Ξ} = \xi\,e_t$ as the realization of the symmetry that survives a mass term. *The Covariant Derivative and Gauge Connection in Biquaternionic Form* studies $D$ as an operator and records the covariant square. *Non-Abelian Gauge Fields in Biquaternionic Form* exhibits the compact algebra $\mathrm{SU}(2)$ inside the material sector and reports the reality condition on the connection as a gap. *Chiral Fermions in the Biquaternion Framework* derives the selection rule that a bare fermion mass requires equal left and right charges, and names the present article as the companion in which the compensating scalar is to be treated.
+This article works the mechanism inside the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in the notation of the companion articles. The pieces are already in the read list. *The Gauge Principle in Biquaternionic Form* localizes the central phase of the algebra and produces the connection $\tilde{A}_{\Phi}$, the covariant derivative $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, and the transformation law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$; it also identifies the **complex scalar** $\tilde{Ξ} = \xi\,e_t$ as the realization of the symmetry that survives a mass term. *The Covariant Derivative and Gauge Connection in Biquaternionic Form* studies $D$ as an operator and records the covariant square. *Non-Abelian Gauge Fields in Biquaternionic Form* exhibits the compact algebra $\mathrm{SU}(2)$ inside the material sector and reports the reality condition on the connection as a gap. *Chiral Fermions in the Biquaternion Framework* derives the selection rule that a bare fermion mass requires equal left and right charges, and names the present article as the companion in which the compensating scalar is to be treated.
 
 The essential step is short enough to state before it is computed. At a non-zero vacuum expectation value $\langle\tilde{Ξ}\rangle = \langle\xi\rangle e_t$ that is **constant**, the ordinary derivative annihilates the vacuum and the covariant derivative does not:
 
@@ -33,7 +33,7 @@ which the gauge principle article identifies as the realization of the global sy
 **The symmetry.** The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$ with $\Gamma$ a real scalar function, and it forces the connection,
 
 $$
-\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma, \qquad
+\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma, \qquad
 D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu, \qquad
 D_\mu\tilde{Ξ} = \partial/\partial R_\mu\,\tilde{Ξ} +\frac{i\,ϙ}{\hbar}A_\mu\tilde{Ξ}.
 $$
@@ -94,10 +94,10 @@ The two real fields $h$ and $\vartheta_{\mathrm{fld}}$ are the two real degrees 
 
 We now evaluate the kinetic term of the scalar at the vacuum. This is the step at which the gauge boson mass is produced, and it is worth doing slowly, because the temptation is to write the mass term down and quote the answer.
 
-**No mass term may be written by hand.** Under the gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$, the combination
+**No mass term may be written by hand.** Under the gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the combination
 
 $$
-\langle\tilde A_{\Phi}\rangle \;\longmapsto\; \bigl\langle\tilde A_{\Phi} - \tilde\nabla\Gamma\bigr\rangle \;\neq\; \langle\tilde A_{\Phi}\rangle
+\langle\tilde A_{\Phi}\rangle \;\longmapsto\; \bigl\langle\tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma\bigr\rangle \;\neq\; \langle\tilde A_{\Phi}\rangle
 $$
 
 in general, so a term $m^2\sum_\mu A_\mu A_\mu$ in the action is not gauge invariant. It is exactly the term the symmetry forbids. The mechanism must therefore generate it from something that *is* invariant, and the invariant object available is the kinetic term of the scalar.
@@ -141,7 +141,7 @@ This is the standard abelian-Higgs result. It reproduces the textbook value: wit
 
 - **The mass came from the kinetic term.** The potential $V$ was used only to supply the vacuum value $v$; its curvature at the minimum gives the *scalar* mass $m_h^2 = 2\beta v^2$, not the gauge mass. The gauge mass $M_A$ does not involve $\beta$ at all, and would be unchanged if the potential were flatter or steeper while keeping the same $v$. That is the signature that the gauge mass is generated by the kinetic term.
 - **No gauge mass term was written by hand.** The derivation began from $-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)$, which is gauge invariant, and produced $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ only after substituting a vacuum that is *not* gauge invariant. The non-invariance of the result is inherited from the non-invariance of the vacuum, not inserted.
-- **The kinetic term itself remains gauge invariant.** Under $\xi\mapsto\lambda\xi$ and $\tilde{A}_{\Phi,2}\mapsto\tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$, $D_\mu\xi\mapsto\lambda D_\mu\xi$, so $(D_\mu\xi)^*(D_\mu\xi)\mapsto|\lambda|^2(D_\mu\xi)^*(D_\mu\xi) = (D_\mu\xi)^*(D_\mu\xi)$ because $|\lambda| = 1$.
+- **The kinetic term itself remains gauge invariant.** Under $\xi\mapsto\lambda\xi$ and $\tilde{A}_{\Phi,2}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $D_\mu\xi\mapsto\lambda D_\mu\xi$, so $(D_\mu\xi)^*(D_\mu\xi)\mapsto|\lambda|^2(D_\mu\xi)^*(D_\mu\xi) = (D_\mu\xi)^*(D_\mu\xi)$ because $|\lambda| = 1$.
 
 $$
 -\,\sum_{\mu,\nu} g_{\mu\nu}(D_\mu\xi)^*(D_\nu\xi)\Big|_{\text{vac}}
@@ -288,13 +288,13 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t/c$ |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection; $A_0$ imaginary, $\vec A$ real |
 | $A_\mu$ | Complex connection coefficients (central, abelian) |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase |
 | $ϙ,\hbar, \kappa =\frac{ϙ}{\hbar}$ | Charge, reduced Planck constant, coupling |
-| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
+| $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$ | Covariant derivative |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar field |
 | $\xi$ | Complex scalar amplitude; $|\xi| = v/\sqrt{2}$ at the vacuum |

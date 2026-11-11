@@ -28,7 +28,7 @@ Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrig
 $$
 the arrow labelled by a coordinate being the frame basis operator of that coordinate. The composite collapses to a single right multiplication, $Q\mapsto-Q\vec e_z$, and the basis operator multiplies on the right by $-i\vec e_z$. So the basis operator is $i$ times the fifth basis operator, which is how the corpus states it (*Special Element Conventions*, §*The Chirality Convention*). That relation is what places the anomaly's density inside the framework rather than beside it.
 
-**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A_{\Phi}$ with the relative medium factors of *The Field-Strength Biquaternion and Its Invariants* equal to one. The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
+**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=(\tilde\nabla^{\natural})_\Phi\tilde A_{\Phi}$ with the relative medium factors of *The Field-Strength Biquaternion and Its Invariants* equal to one. The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
 
 $$
 F_{r'_t i}=E_i,
@@ -46,7 +46,7 @@ of which
 $$
 \tilde F=\frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}}F_{\mu\nu}\,\bar e_\mu e_\nu
 $$
-is the biquaternion carrier, with $\bar e_\mu$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_\eta=-\vec e_\eta$). For the abelian factor the carrier is $\tilde\nabla^{\natural}\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
+is the biquaternion carrier, with $\bar e_\mu$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_\eta=-\vec e_\eta$). For the abelian factor the carrier is $(\tilde\nabla^{\natural})_\Phi\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
 
 **The invariants.** With the field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
@@ -59,7 +59,7 @@ The framework results used here are those of the companion articles:
 
 ## The Classical Symmetry and its Quantum Failure
 
-**The mechanism, stated once.** A classical symmetry has a conserved current, $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=0$, by Noether's theorem. The quantum divergence is computed by inserting the current into a correlation function; at one loop the triangle diagram contributes, and the divergence receives a term that is finite as the regulator is removed. If that term is a total derivative — the divergence of a current built from the gauge field — then its integral over a closed region is a topological number, and a local counterterm, being a polynomial in the fields and their derivatives, cannot shift an integer. The symmetry is then genuinely broken, and no choice of regulator or subtraction restores it. This is the content of the Adler–Bardeen theorem: the anomaly is a one-loop effect and is exact.
+**The mechanism, stated once.** A classical symmetry has a conserved current, $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$, by Noether's theorem. The quantum divergence is computed by inserting the current into a correlation function; at one loop the triangle diagram contributes, and the divergence receives a term that is finite as the regulator is removed. If that term is a total derivative — the divergence of a current built from the gauge field — then its integral over a closed region is a topological number, and a local counterterm, being a polynomial in the fields and their derivatives, cannot shift an integer. The symmetry is then genuinely broken, and no choice of regulator or subtraction restores it. This is the content of the Adler–Bardeen theorem: the anomaly is a one-loop effect and is exact.
 
 **Two structural facts make the computation tractable.** First, in four dimensions the relevant diagram is a triangle with one axial and two vector currents (the axial anomaly) or three gauge currents (the gauge anomaly); higher-point diagrams do not add new anomalous terms. Second, the anomaly is a **trace** statement: the diagram's coefficient is a spinor trace times a trace of gauge generators, and each trace is computed once and for all.
 
@@ -72,21 +72,21 @@ The chiral weight is settled by $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ in th
 **The current and the equation it belongs to.** The corpus's Dirac pair is
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 one equation per chirality, both sides biquaternions; the first is the right-handed equation and the second is its quaternion conjugate. At $m=0$ the pair decouples,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -96,7 +96,7 @@ and each equation is identical in form to the source-free Maxwell equation; the 
 **The two-sided form, and why it is not a second dynamics.** The same physics has a two-sided representation, a single equation on the algebra,
 
 $$
-\tilde\nabla^{\natural}F=-i\,m\,\bar{F}\,\vec e_z ,
+(\tilde\nabla^{\natural})_\PhiF=-i\,m\,\bar{F}\,\vec e_z ,
 $$
 
 for a biquaternion field $F$ — the two-sided Dirac field, not the component field strength $F_{\mu\nu}$ — with $\bar{F}$ its coefficient conjugate. The derivative acts on the left, the mass term is the basis operator applied to $\bar{F}$, $m\,\mathsf{V}_{\mathrm{vol}}\bar{F}=-im\bar{F}\vec e_z$, and the conjugation supplies the antilinear part. The one-sided pair is the definition; the two-sided form is the representation in which the mass is a right multiplication, and the two are related by the dictionary of *The Dirac Equation in Biquaternionic Form* but are different operators: the pair is linear in the field, the two-sided equation is antilinear in its mass term. The anomaly below is read from the one-sided pair, because the axial current is a bilinear of the state and the measure is the measure of that state. What the two-sided form adds is the structural identity behind the current: the basis operator $\mathsf{V}_{\mathrm{vol}}$ that the mass applies is the basis operator the axial current inserts, so the mass term and the axial current are the two places where chirality enters.
@@ -115,10 +115,10 @@ $$
 
 where the $i$ of the frame basis operator and the $-i$ of the basis operator have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\nu(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\nu(\mu)}=-\vec e_{\nu(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\nu(t)=x$ and $\nu(\eta)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.
 
-**The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_{\Phi,5}=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame basis operators, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of *Frame and Metric Conventions*, §*The Rules*, so an extra sign vector would apply it a second time —
+**The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_{\Phi,5}=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu$ the divergence — the plain sum, because the metric is already spent inside the frame basis operators, each of which squares to $\varepsilon_\mu$ times the identity, the plain weight of *Frame and Metric Conventions*, §*The Rules*, so an extra sign vector would apply it a second time —
 
 $$
-\boxed{\;\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural} \;=\; 2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr) \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
+\boxed{\;\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural} \;=\; 2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr) \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 $$
 
 where the mass term has been reduced in the same way, $2im\,\mathsf{V}_{\mathrm{vol}}\tilde{Ξ}_{\mathrm{sp}}=2im(-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)=2m\,\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$, and its coefficient is the standard Adler–Bell–Jackiw one, quoted from the standard literature rather than derived. The minus in front of it is bookkeeping, not physics: the standard statement carries the contraction with the upper-index symbol, and the corpus writes every index low. The next paragraph does that bookkeeping once.
@@ -155,7 +155,7 @@ so the boxed equation with its minus in the lower-index notation *is* the standa
 Three structural remarks follow. First, the density is a **pseudoscalar** — parity-odd, as $I_2$ is — which is why it can stand on the right-hand side of the divergence of an axial, parity-odd current. Second, it is a **total derivative** in the abelian case,
 
 $$
-\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural},
+\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural},
 \qquad
 J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma},
 $$
@@ -272,7 +272,7 @@ The consequence is worth stating plainly: **the biquaternion framework's own gau
 **The density is a total derivative.** In four dimensions the abelian anomaly density is the divergence of a Chern–Simons current, in the normalisation of the companion article on instantons,
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural} = \tfrac12\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} ,
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,\mathrm{CS}}\rangle_{\natural} = \tfrac12\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} ,
 \qquad
 J_{\mathrm{CS},\mu} = \sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma} ,
 $$
@@ -280,7 +280,7 @@ $$
 so the anomaly is invisible in the local equations of motion of the gauge field and is detected only by the charge it transports. Integrating the divergence over a region whose spatial boundary carries no flux,
 
 $$
-\Delta Q_5=\int d^4r\,\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}
+\Delta Q_5=\int d^4r\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}
 =-\frac{e^2}{16\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 =-\frac{e^2}{8\pi^2}\,\Delta N_{\mathrm{CS}},
 \qquad
@@ -294,7 +294,7 @@ The axial charge therefore follows the Chern–Simons charge and changes only wh
 **The index.** The integrated anomaly is twice the index of the massless Dirac operator,
 
 $$
-\int d^4r\,\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural} = 2\,\mathrm{ind}(D) ,
+\int d^4r\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural} = 2\,\mathrm{ind}(D) ,
 \qquad
 \mathrm{ind}(D)=n_R-n_L ,
 $$
@@ -305,7 +305,7 @@ where $D$ is the massless Dirac operator of the pair above, the representative o
 
 ## The Non-Abelian Anomaly and Its Consistency
 
-**The consistency problem.** For a non-abelian gauge theory the anomalous divergence is not simply $\langle\tilde\nabla,\tilde J_{\Phi,a}\rangle_{\natural}\propto\sum_{b,c}A_{abc}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; the current itself is defined only up to a local polynomial in the gauge field (the Bardeen counterterm), and the requirement is not just that the coefficient vanish but that the anomaly be expressible as the transformation of a local functional — the Wess–Zumino term — so that the gauge variation of the effective action is local and the theory remains consistent. The condition on the matter spectrum is the vanishing of the symmetrised trace $A_{abc}=\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ used above; the finer statement is that the anomaly is a **consistent** (Bardeen) anomaly, whose form is fixed by the Wess–Zumino consistency condition rather than by the covariant triangle alone. Both are standard, and the corpus transcribes them; the fermion sector needs only the condition $A_{abc}=0$.
+**The consistency problem.** For a non-abelian gauge theory the anomalous divergence is not simply $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,a}\rangle_{\natural}\propto\sum_{b,c}A_{abc}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$; the current itself is defined only up to a local polynomial in the gauge field (the Bardeen counterterm), and the requirement is not just that the coefficient vanish but that the anomaly be expressible as the transformation of a local functional — the Wess–Zumino term — so that the gauge variation of the effective action is local and the theory remains consistent. The condition on the matter spectrum is the vanishing of the symmetrised trace $A_{abc}=\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ used above; the finer statement is that the anomaly is a **consistent** (Bardeen) anomaly, whose form is fixed by the Wess–Zumino consistency condition rather than by the covariant triangle alone. Both are standard, and the corpus transcribes them; the fermion sector needs only the condition $A_{abc}=0$.
 
 **The obstruction to a covariant current.** One structural point belongs here because it is easy to state wrongly. In four dimensions the anomaly is a total derivative, yet one cannot have a current that is simultaneously **covariant** and **conserved**: the covariant current has a nonzero divergence, the conserved current is not gauge covariant, and the two differ by the Chern–Simons term. The framework's gauge currents, built on the $\mathrm{SU}(2)$ connection of the companion articles, inherit this; there is nothing in the algebra that removes it, and the resolution is the standard Bardeen counterterm, not a biquaternion identity. The condition for consistency is the vanishing of $A_{abc}$, and the framework's own $A_{abc}$ vanishes identically, so the framework never has to face the obstruction for its own gauge fields.
 
@@ -414,7 +414,7 @@ The first display is the anticommutation relations the body's basis operators ob
 An anomaly is a quantum breaking of a classical symmetry. The axial anomaly is the failure of the chiral rotation to preserve the measure; for a charged Dirac fermion its divergence is the standard Adler–Bell–Jackiw result,
 
 $$
-\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural} = 2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr) - \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural} = 2m\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\bigr) - \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
 where the two imaginary units of the mass term have been reduced by $i(-i)=+1$. The contraction in it evaluates to $+8\,\vec E\cdot\vec B$ all-low, so the anomaly density is $-\frac{e^2}{2\pi^2}\,I_2$, the textbook value, a fixed multiple of the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The $\epsilon$ tensor of the anomaly is the standard spinor trace and is transcribed, not re-derived. What the framework supplies is the chirality of the algebra as the anomaly's chiral weight, $\mathsf{V}_{\mathrm{vol}}$ being the basis operator the mass applies and $i$ times the fifth basis operator, so that the anomaly's pseudoscalar density is the algebra's own invariant $I_2$.
@@ -437,13 +437,13 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathsf{V}_{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The basis operator; $i$ times the fifth basis operator |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint; a pairing of two states, not an action |
 | $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ | The chirality-weighted trace of the identity vanishes |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
-| $\tilde\nabla^{\natural}F=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the basis operator applied to $\bar{F}$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
+| $(\tilde\nabla^{\natural})_\PhiF=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the basis operator applied to $\bar{F}$ |
 | $-R_{\mathrm{axf},\vec e_z}$, the four frame basis operators composed in the order $z,y,x,t$ | The fifth basis operator; the basis operator is $i$ times it |
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | Trace of an operator of the algebra in its four complex dimensions; matrix trace over the gauge representation |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by $g^{00}g^{11}g^{22}g^{33}=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |
 | $j_{\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents; the axial current is the basis operator inserted between the frame basis operator and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order |
-| $\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame basis operators |
+| $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame basis operators |
 | $F_{\mu\nu}=\partial \mathcal{A}_\nu/\partial x_\mu-\partial \mathcal{A}_\mu/\partial x_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa=\frac{ϙ}{\hbar}$ | Non-abelian field strength, in components |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
@@ -451,7 +451,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\sum_L-\sum_R$ | Left-handed minus right-handed anomaly sum |
 | $T_a$ | $SU(2)$ generators; the symmetrised trace of three vanishes for every representation |
 | $Y=ϙ-T_3$ | Hypercharge convention |
-| $D$, $\mathrm{ind}(D)=n_R-n_L$ | Massless Dirac operator of the pair; representative of $\tilde\nabla$ on the state; its index, with $\int d^4r\,\langle\tilde\nabla,\tilde J_{\Phi,5}\rangle_{\natural}=2\,\mathrm{ind}(D)$ |
+| $D$, $\mathrm{ind}(D)=n_R-n_L$ | Massless Dirac operator of the pair; representative of $\tilde\nabla_\Phi$ on the state; its index, with $\int d^4r\,\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=2\,\mathrm{ind}(D)$ |
 | $N=\frac{e^2}{32\pi^2}\int d^4r\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$, $N_{\mathrm{CS}}=\int d^3r\,J_{\mathrm{CS},r'_t}$ | Topological charge, integral by charge quantisation; $N=\frac{e^2}{16\pi^2}N_{\mathrm{CS}}$ and $\Delta Q_5=-2\Delta N$ |
 | $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-model gauge group (standard notation, not framework objects) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

@@ -18,7 +18,7 @@ which is the positive-definite Hilbert–Schmidt form on the algebra; the signat
 $$
 S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
+\Box = \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2 .
 $$
 The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $W_{\mathrm{kinetic}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
@@ -86,7 +86,7 @@ where $W_{\mathrm{kinetic}}$ is built from the central d'Alembertian and a centr
 2. **It is invariant under the biquaternion-norm isometries.** The quadratic term with $W_{\mathrm{kinetic}}$ central is unchanged by left multiplication $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ and right multiplication $\tilde{Ξ}\mapsto\tilde{Ξ}\tilde u$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde u\rangle_{\natural}=e_t$, since $\tilde U^{*}\tilde U=\tilde u\tilde u^{*}=e_t$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.
 3. **It is sector-blind when $W_{\mathrm{kinetic}}$ is central.** A central $W_{\mathrm{kinetic}}$ commutes with the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, so it does not mix the sectors. The consequences are computed in the next two sections.
 
-The mass term requires a word of care, because the framework's **Dirac** mass is not central. As *The Dirac Equation in Biquaternionic Form* records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, and it acts as a *right* multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a **scalar** example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $W_{\mathrm{kinetic}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+The mass term requires a word of care, because the framework's **Dirac** mass is not central. As *The Dirac Equation in Biquaternionic Form* records, the Dirac mass term is linear and chirality-off-diagonal, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, and it acts as a *right* multiplication, which is what allows it to relate the two minimal left ideals (the chiralities). For a **scalar** example, the mass is the central $m^2$ above and the quadratic operator is sector-diagonal. Both cases are handled by the Gaussian formula; the difference is whether $W_{\mathrm{kinetic}}$ is central. The scalar case is taken as the explicit example below, and the fermionic case is remarked on where the structure differs. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ## The Gaussian Functional Integral
 
@@ -227,7 +227,7 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 
 **The gap.** The algebra does not supply: the space of field configurations (infinite-dimensional, and outside the finite-dimensional algebra); the action functional beyond its quadratic part; the choice of regulator; and the definition of the continuum measure. These are the analytic data of the theory, and they are transcribed from the standard treatment. The path-integral article's gap for the space of paths is the same gap in one fewer dimension. What the algebra *does* supply is the scalar extraction that turns a biquaternion Lagrangian into an action, the two-sector structure that factorizes the free theory, the central character of the kinetic operator, and the identification of the Euclidean rotation with a sector relabeling.
 
-**Fermionic fields.** On the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, written as the two-by-two array of its two lines with the mass on the diagonal, the functional integral is over Grassmann-valued spinors, and the Gaussian integral returns a determinant rather than an inverse square root,
+**Fermionic fields.** On the spinor-module representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, written as the two-by-two array of its two lines with the mass on the diagonal, the functional integral is over Grassmann-valued spinors, and the Gaussian integral returns a determinant rather than an inverse square root,
 $$
 \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\mathcal{F}\,\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
@@ -257,7 +257,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 ## Summary
 
-The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
+The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ with $\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$,
 $$
 S[\tilde{Ξ}]=\int d^4r\;\Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad
@@ -284,7 +284,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ | Biquaternion field and its sector parts |
 | $\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})$ (complex scalar part) | Scalar extraction; the trace converts a biquaternion into a number |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Real bilinear form of the action; sector-orthogonal |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
+| $\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\sum_\mu\partial^2/\partial R_\mu^2$ | d'Alembertian, series convention |
 | $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_{\mathrm{eu}}^2$ |
 | $S[\tilde{Ξ}]=\int d^4r\,\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle$ | Quadratic biquaternion action; $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$ | Functional integral with source |

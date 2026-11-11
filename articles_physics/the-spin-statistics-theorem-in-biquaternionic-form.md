@@ -117,7 +117,7 @@ The dimension count makes the same point. $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim
 
 ## Microcausality: The Equal-Time Brackets
 
-The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$. No other derivative operator is written.
+The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla^{\natural})_\Phi$ of *Operator and Calculus Conventions*, §*The Gradient*, with $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ the d'Alembertian there; on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$. No other derivative operator is written.
 
 The field is the element-valued map $\tilde{Ξ}_{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of *Canonical Quantization of the Biquaternion Dirac Field*, with the mode expansion
 
@@ -132,8 +132,8 @@ where $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are the parent's positive- an
 The corpus's Dirac equation is one equation per chirality, both acting from the left,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 the mass being the off-diagonal coupling of the two halves. On the single element that carries the four complex components of the field it is one two-sided action, written with both elements in position:
@@ -213,7 +213,7 @@ $$
 
 with $\nabla_\eta=\partial/\partial\Delta_\eta$. For $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ is the derivative in $\Delta$ of $\int_0^\infty\frac{\cos(p\Delta)}{E}\,dp=K_0(m\Delta)$, and both were checked numerically for $k_m=1$ and $\Delta=0.5,2,5,10$ to thirty digits. Nothing cancels: $F$ is positive and decaying, and $\nabla_\eta F$ vanishes only where $\Delta_\eta$ does, so the kernel is nonzero for **every** $\vec\Delta\ne 0$. It decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
 
-The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ is the left action of the gradient on the right-handed half, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the two-sided contraction $\mathcal{D}$ acting on $(\tilde{Ξ}_{\mathrm{sp},R},\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathcal{D}^2=\Box I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
+The chiral pair has a compact covariant form. With the gradient and its conjugate fixed above, $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box$, and the mass couples the two chiralities through the pair of the preceding section. Each member is a one-sided action: $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ is the left action of the gradient on the right-handed half, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ the left action of its conjugate on the left-handed half. The pair is kept as two equations because the two act on different objects, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the two-sided contraction $\mathcal{D}$ acting on $(\tilde{Ξ}_{\mathrm{sp},R},\tilde{Ξ}_{\mathrm{sp},L})$, with $\mathcal{D}^2=\Box I$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
 
 $$
 \{\tilde{Ξ}_{\mathrm{fop}}(x),\bar{\tilde{Ξ}}_{\mathrm{sp},\mathrm{fop}}(y)\}=(\mathcal{D}+k_m)\,\Delta_{\mathrm{A}}(x-y),
@@ -290,7 +290,7 @@ The table also displays what the framework does and does not explain. The *spin 
 
 **4. Integer-spin quantization in the algebra.** The vector representation appears through the adjoint action on the vector units, and its quantization is standard and imported. Is there a native construction of the integer-spin Fock space from the algebra that mirrors the single-mode fermionic one, and if not, what obstructs it beyond the trace identity?
 
-**5. The massless limit and chirality.** The microcausality failure of the commutator was computed at $m>0$, where the surviving function is built on the Bessel kernel $K_1$. As $m\to 0$ the function $F$ becomes $1/(2\pi^2|\vec\Delta|^2)$ and still does not vanish, so the massless case is not qualitatively different. At $m=0$ the chiral pair decouples into the two Weyl equations $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, each carrying one helicity; how the chiral pair and the helicity–chirality locking enter the theorem is not developed here.
+**5. The massless limit and chirality.** The microcausality failure of the commutator was computed at $m>0$, where the surviving function is built on the Bessel kernel $K_1$. As $m\to 0$ the function $F$ becomes $1/(2\pi^2|\vec\Delta|^2)$ and still does not vanish, so the massless case is not qualitatively different. At $m=0$ the chiral pair decouples into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$, each carrying one helicity; how the chiral pair and the helicity–chirality locking enter the theorem is not developed here.
 
 **6. Empirical content.** The construction reproduces standard field theory. Any deviation would have to appear where the algebra is used beyond transcription — for example in a modification of the one-mode identification or in the coupling to the material sector; none is visible at the level developed here.
 
@@ -319,7 +319,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator, with $\tilde\Pi_-^2=\tilde\Pi_-$ |
 | $(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=\frac{2\,\tilde{S}_{\Psi,z}}{\hbar}$ | Fermion parity; Hermitian involution in $\mathbb{B}_{\Psi}$ |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Corpus gradient, its quaternion conjugate and the d'Alembertian (*Operator and Calculus Conventions*, §*The Gradient*) |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | Corpus gradient, its quaternion conjugate and the d'Alembertian (*Operator and Calculus Conventions*, §*The Gradient*) |
 | $\mathcal{D}\tilde X=-\partial\tilde X/\partial r'_t\,\vec e_x-\sum_\eta\vec e_\eta\,\partial\tilde X/\partial R_\eta\,\vec e_y$ | The two lines carried on one element (coordinate form); the time term is a single right multiplication, the spatial terms two-sided; $\mathcal{D}^2=\Box$ |
 | $\mathcal{D}_p\tilde X=i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$ | Symbol of the same operator on a plane wave; $\mathcal{D}_p^2=p_0^2-\lvert\vec p\rvert^2=m^{2}c^{2}$ |
 | $\nabla_\eta=\partial/\partial\Delta_\eta$ | Gradient with respect to the spatial separation |

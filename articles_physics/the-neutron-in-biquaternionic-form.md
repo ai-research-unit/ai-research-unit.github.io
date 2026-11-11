@@ -20,8 +20,8 @@ whose two parts carry the two values of the chirality, $\tilde{Ξ}_{\mathrm{sp},
 
 $$
 \begin{aligned}
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
 
@@ -33,7 +33,7 @@ with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is 
 
 **The mass is a parameter, and the near-degeneracy with the proton is unexplained.** The free pair contains $m_n$ only as the common coefficient of the two mass terms, one per chirality; the framework is scale-free until that number is supplied, so the neutron mass is an input rather than a consequence. So is the fact that the neutron and proton masses agree to about $0.14\%$ ($m_n-m_p \approx 1.293$ MeV): in standard physics this near-degeneracy is the isospin symmetry of the strong interaction, an approximate flavour $SU(2)$ acting on the $(p,n)$ doublet. The framework does contain an $SU(2)$ — the span of $\vec e_x,\vec e_y,\vec e_z$ is $\mathfrak{su}(2)$ under the commutator, exponentiating to $\mathrm{SU}(2)$ — but that is the rotation/gauge algebra of the material sector, not flavour isospin, and identifying the two would be an import rather than a derivation. The framework supplies no second fermion with a nearly equal mass.
 
-**Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it. The doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: from the Lanczos pair $\tilde\nabla\tilde Q_1=m\tilde Q_2$, $\tilde\nabla\tilde Q_2=m\tilde Q_1$, one forms the two superpositions
+**Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it. The doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: from the Lanczos pair $\tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2$, $\tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1$, one forms the two superpositions
 
 $$
 \tilde{Ξ}_{\mathrm{sp},p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{\mathrm{sp},n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau},
@@ -51,7 +51,7 @@ $$
 
 so the second superposition is preserved up to the same two phases before the trailing $i\vec{\tau}$ is applied. Equivalently, $\exp(-\vec{\nu}\alpha)\sigma=\sigma\exp(i\alpha)$ and $\exp(+\vec{\nu}\beta)\bar{\sigma}=\bar{\sigma}\exp(i\beta)$, since $\vec{\nu}^{2}=-e_t$ gives $\exp(\pm\vec{\nu}\theta)=\cos\theta\pm\vec{\nu}\sin\theta$. Each of the two states therefore carries its own abelian phase, and with it its own charge, while the form of both superpositions is unchanged.
 
-A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{\mathrm{sp},p}$ and $\tilde{Ξ}_{\mathrm{sp},n}$. The first Lanczos equation then becomes $\tilde\nabla\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
+A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{\mathrm{sp},p}$ and $\tilde{Ξ}_{\mathrm{sp},n}$. The first Lanczos equation then becomes $\tilde\nabla_\Phi\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
 
 Two qualifications keep this from overturning the paragraph above. First, the isospin of that construction acts by **right** multiplication on $\tilde Q_1$, $\tilde Q_2$ of the doubled field, not by the left multiplication and commutator of the material sector's $\mathrm{SU}(2)$, so the two groups remain different objects. Second, the route doubles the field and still does not fix $m$. The precise statement is that the near-degeneracy is an **import in this equation** and a **structural feature of the doubled one**: this article uses the single-field equation, and that choice is why $m_n$ is a parameter here.
 
@@ -67,13 +67,13 @@ $$
 \Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-\tilde\nabla^{\natural}$, so the equation is $\tilde\nabla^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla^{\natural})_\Phi$, so the equation is $(\tilde\nabla^{\natural})_\PhiF=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$ |
+| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla^{\natural})_\PhiF=-k_{m_n} i\,\bar F\,\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
-| Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
+| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
 | Mass | the off-diagonal pair of the two values | right multiplication by $\vec e_z$, with $\bar F$ |
 | Chirality | the value carried by each part | the unit $\vec e_z$ of the mass term |
 | Status here | the definition, used throughout | quoted; not used |
@@ -166,7 +166,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 | Neutron property | Status | Object or reason |
 |---|---|---|
 | Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$; the left multiplications act on each part with weights $\pm\tfrac12$ |
-| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ |
+| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ |
 | Neutrality constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
@@ -251,7 +251,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
+The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same two values, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
@@ -269,7 +269,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
-| $\tilde{\nabla}$ | Biquaternionic gradient, the Dirac operator, acting on the left |
+| $\tilde\nabla_\Phi$ | Biquaternionic gradient, the Dirac operator, acting on the left |
 | $\nabla$, $Q_t=i r'_t$ | Spatial gradient; imaginary time of the material sector |
 | $\Box$ | d'Alembertian, the quaternionic norm of the gradient |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |

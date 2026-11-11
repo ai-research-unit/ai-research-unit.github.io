@@ -13,7 +13,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box=\tilde\nabla_\Phi\tilde\nabla^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$. No second letter is introduced for it. No derivative of the article is two-sided: the lattice gradient of §*Naive Discretization* is this same operator with each coordinate derivative replaced by a symmetric difference.
@@ -29,12 +29,12 @@ The next section sets up the naive discretization, its propagator and its double
 **The dynamics is the chiral pair of the gradient**,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with massless limit $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}_{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$; the subscript is the chirality label. The free equation is first order and one field. The massive equation is not: $\tilde\nabla^2$ is not scalar, because the time unit commutes with the three space units, so the mixed terms survive the sum: $\tilde\nabla^2=\partial^2/\partial R_t^2-\Delta_Q+2\sum_\eta\vec e_\eta\,\partial^2/\partial R_t\partial R_\eta$, which is not scalar — verified on a polynomial element, where the vector part of $\tilde\nabla^2\tilde{Ξ}_{\mathrm{sp}}$ is nonzero. There is therefore no one-field, first-order massive equation in this algebra. The pair is the whole of the massive dynamics, and no letter is introduced to make it look like one equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality is a right action.** $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ and of the two values $L$ and $R$ (*Special Element Conventions*, §*The Chirality Convention*). The side is part of the definition: the left action $\tilde Q\mapsto-i\vec e_z\tilde Q$ is a different operator — the two differ by conjugation by $\vec e_z$ — and it is not the chirality. Neither operator is two-sided; each is a single multiplication, written out.
 
@@ -58,7 +58,7 @@ $$
 S_F^L[\tilde{Ξ}_{\mathrm{sp}}] = a^4\sum_n \mathrm{Sc}\bigl[\tilde{Ξ}_{\mathrm{sp},n}^*\,\tilde\nabla^{L}\tilde{Ξ}_{\mathrm{sp},n}\bigr],
 $$
 
-the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial R_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4r\,\mathrm{Sc}\bigl[\tilde{Ξ}_{\mathrm{sp}}^*\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
+the action whose equation of motion is the massless limit of the pair. The mass is not a term of this one-field action: it is the second line of the pair, and its lattice form is the pair's. Each $D_\mu$ is anti-Hermitian up to the boundary term of summation by parts, exactly as $\partial/\partial R_\mu$ is, so the kinetic kernel meets the hermiticity hypothesis of §*The Nielsen–Ninomiya Theorem* in the same form as the standard discretization. The action reduces to $\int d^4r\,\mathrm{Sc}\bigl[\tilde{Ξ}_{\mathrm{sp}}^*\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\bigr]$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
 
 **The coordinates are the frame's own.** The four $Q_\mu$ are the $\mathbb{B}$ frame's coordinates, and the frame's form is $\sum_\mu Q_\mu^2$ with all four coefficients equal: the lattice is imposed on a Euclidean coordinate, and nothing has to be rotated before discretizing. The fourth coordinate is $Q_t=ix_0$ with $x_0=r'_{t}$, so a lattice momentum $p_t$ is read at $p_t=i\omega/c$ for a frequency $\omega$, and in lattice units $a=1$ at $p_t=i\omega$. The doubling count depends on $\sin(p_\mu a)$ alone and not on the signature.
 
@@ -184,10 +184,10 @@ What survives all of this is the part with experimental consequences: the correc
 
 ### Discretizing the biquaternion gradient
 
-The framework's gradient is $\tilde{\nabla}$, the one of *Operator and Calculus Conventions*, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial R_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
+The framework's gradient is $\tilde\nabla_\Phi$, the one of *Operator and Calculus Conventions*, and it is the only derivative operator of the article. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial R_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
 
 $$
-\boxed{\;\tilde{\nabla} \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{\eta=x,y,z}\vec e_\eta\,\frac{i\sin(p_ka)}{a}\;},
+\boxed{\;\tilde\nabla_\Phi \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{\eta=x,y,z}\vec e_\eta\,\frac{i\sin(p_ka)}{a}\;},
 $$
 
 that is, $i\tilde K_{\Phi}(p)$ with $\tilde K_{\Phi}$ of §*The propagator and the doubler poles*. The denominator of the lattice propagator is then the scalar $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\sum_\mu\sin^2(p_\mu a)/a^2$, which has the sixteen zeros identified above.
@@ -210,7 +210,7 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 ## Open Questions
 
-1. **The index of the biquaternion Dirac operator.** The companion Dirac–Kähler article gives the zero modes of the multivector Dirac operator as harmonic forms. What is the corresponding statement for the biquaternion gradient $\tilde{\nabla}$, and does the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split organize the index?
+1. **The index of the biquaternion Dirac operator.** The companion Dirac–Kähler article gives the zero modes of the multivector Dirac operator as harmonic forms. What is the corresponding statement for the biquaternion gradient $\tilde\nabla_\Phi$, and does the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split organize the index?
 
 2. **The lattice imposition.** Is there a lattice that the framework's structure selects among the many possible ones, in the way that the multivector form selects simplicial/staggered? This article argues only for the *proximity* to staggered; a derivation is not attempted.
 
@@ -234,7 +234,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 |+-|+-|
 | $a$, $n$, $\vec u_\mu$ | Lattice spacing, site index, unit lattice vector in the direction $\mu$ |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp}}$ its four-component coordinate column |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | The biquaternionic gradient, its quaternion conjugate and the d'Alembertian, of *Operator and Calculus Conventions* |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$, $\Box$ | The biquaternionic gradient, its quaternion conjugate and the d'Alembertian, of *Operator and Calculus Conventions* |
 | $\tilde\nabla^{L}$, $D_\mu$ | The lattice gradient $\sum_\mu e_\mu D_\mu$ and the symmetric difference replacing $\partial/\partial R_\mu$ |
 | $\tilde K_{\Phi}(p)$ | The element symbol of the lattice gradient, $a^{-1}\sum_\mu\sin(p_\mu a)e_\mu$; the symbol of $\tilde\nabla^{L}$ is $i\tilde K_{\Phi}(p)$ |
 | $\xi$ | The chirality, $\xi\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$ |

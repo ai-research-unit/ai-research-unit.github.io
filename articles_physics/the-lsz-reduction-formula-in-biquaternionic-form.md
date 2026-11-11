@@ -169,13 +169,13 @@ where the left factor of the energy term is $e_t$ and is not written. It is the 
 
 **The two Dirac equations.** The corpus carries two, and they are not the same operator (see *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The **one-sided** form is the pair
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L} ,
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which the gradient acts by left multiplication and the mass is the pairing of the two parts. The **two-sided** form is the single equation
 $$
--\tilde\nabla^{\natural}F-k_m\,i\,\overline{F}\,\vec e_z=0 ,
+-(\tilde\nabla^{\natural})_\PhiF-k_m\,i\,\overline{F}\,\vec e_z=0 ,
 $$
 in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -367,7 +367,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; an element of $\mathbb{B}$ bound here, with a complex scalar part, hence the majuscule |
 | $L_a$, $R_b$, $L_aR_b$ | Left multiplication, right multiplication and the basis operator (closing section only) |
 | $\mathcal{A}_p\tilde{Ξ}_{\mathrm{sp}}=i p_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta i p_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | Momentum action, the second writing of the momentum symbol of the pair; $\mathcal{A}_p^2\tilde{Ξ}_{\mathrm{sp}}=p^2\tilde{Ξ}_{\mathrm{sp}}$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box$ |
 | $L$, $R$ | The two values of the chirality subscript; $L$ the minus value, $R$ the plus one |
 | $\tilde W_{\Psi}^{(r)},\tilde V_{\Phi}^{(r)}$ | External spin amplitudes, elements of $\mathbb{B}$; $\sum_r \tilde W_{\Psi}^{(r)}\bar{\tilde W}_{\Psi}^{(r)}=\mathcal{A}_p+mc$ and $\sum_r \tilde V_{\Phi}^{(r)}\bar{\tilde V}_{\Phi}^{(r)}=\mathcal{A}_p-mc$ on the shell, each product read as the action $\tilde{Ξ}_{\mathrm{sp}}\mapsto \tilde W_{\Psi}\tilde{Ξ}_{\mathrm{sp}}\bar{\tilde W}_{\Psi}$ |
 | $\ell_x,\ell_y$ | The two ladders of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, $\ell_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\ell_y=\tfrac12(i\vec e_x+\vec e_y)$; $\ell_x\ell_y+\ell_y\ell_x=e_t$, and the two orderings multiply to $0$ |

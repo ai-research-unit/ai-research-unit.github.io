@@ -28,7 +28,7 @@ $$
 \tilde\nabla^{\natural}=e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 $$
 
-read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
+read on the material sector $\mathbb{B}_{\Phi}$ as $\tilde\nabla_{\Phi}=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and it composes with its conjugate to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box=\partial^2/\partial R_t^2+\Delta_Q$, read on that sector as $\Delta-\partial^2/\partial {r'_t}^2$. No derivative below is written in any other form.
 
 The classical field theory is defined by the parent article's Lagrangian density. The field is $\tilde{Ξ}_{\mathrm{sp}}$, with the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and its **Dirac adjoint** is the right multiplication of $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ by the single element $i\vec e_x$,
 
@@ -41,7 +41,7 @@ $$
 the time direction entering through it alone, because $e_t$ is the unit. With the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, written as the two lines and with no letter for the two together, the density is
 
 $$
-\mathcal{L}=\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\big)-k_m\,\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big),
+\mathcal{L}=\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}\big)-k_m\,\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big),
 $$
 
 a real Lorentz scalar whose variation returns the two equations of the pair, with conjugate momentum $\pi=i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$. For the path integral this is the object whose integral is the phase.
@@ -51,17 +51,17 @@ a real Lorentz scalar whose variation returns the two equations of the pair, wit
 **The one-sided form.** The dynamics in the algebra is the pair
 
 $$
-\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 two equations because the field has two parts. The subscript has two values, and only the zero element is both: $\tilde{Ξ}_{\mathrm{sp},L}$ is the element of value minus one and $\tilde{Ξ}_{\mathrm{sp},R}$ the element of value plus one. The field is their sum, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. Both gradients act from the left, and the mass pairs the two parts. The Lagrangian above is the same dynamics, written once, not a second one. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Its elimination.** The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box$, so applying $\tilde\nabla^{\natural}$ to the first and using the second gives
+**Its elimination.** The two equations are one system, and either part can be eliminated. The gradients compose to the d'Alembertian, $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box$, so applying $(\tilde\nabla^{\natural})_\Phi$ to the first and using the second gives
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde\nabla^{\natural}k_m\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+\Box\tilde{Ξ}_{\mathrm{sp},R}=(\tilde\nabla^{\natural})_\Phik_m\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and the same step gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$. Each part of the field therefore solves the massive wave equation, and the operator whose determinant the path integral computes is the pair; the count of that determinant is taken in §*The Biquaternion Form of the Kernel*.
@@ -69,7 +69,7 @@ and the same step gives $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$. Each part 
 **The two-sided form.** Kravchenko's equation is a single equation on an algebra-valued field $F\in\mathbb{B}$,
 
 $$
--\tilde\nabla^{\natural}F-k_m\,i\,\bar F\,\vec e_z=0,
+-(\tilde\nabla^{\natural})_\PhiF-k_m\,i\,\bar F\,\vec e_z=0,
 $$
 
 in which the gradient acts from the left, the mass acts from the right through $\vec e_z$, and the coefficient complex conjugate $\bar F$ supplies an antilinear part. Its mass multiplies on the other side from the mass of the pair above. The distinction is one of operators, not of fields: the pair acts from the left only and needs the two parts of the field; this operator acts from both sides and can be written on the algebra itself. It is a different operator, related to the pair by a real-linear dictionary and not by an identity; a functional integral written on it would carry the antilinear mass through every step, and is not attempted here.
@@ -79,24 +79,24 @@ in which the gradient acts from the left, the mass acts from the right through $
 With $\mathrm{Sc}$ the trace pairing and $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic form of the conventions, the action is the integral of the density above,
 
 $$
-S=\int \mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\big)-m\!\!\int\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big),
+S=\int \mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}\big)-m\!\!\int\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big),
 $$
 
-and each kinetic term is one equation of the pair. The single-element form $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})$ with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ is a different object, because it carries the two diagonal terms as well; the pair form is the one used here. The mass term is the second integral; it is quadratic in the field and linear in the mass, and it couples the two parts, as the parent article requires.
+and each kinetic term is one equation of the pair. The single-element form $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})$ with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ is a different object, because it carries the two diagonal terms as well; the pair form is the one used here. The mass term is the second integral; it is quadratic in the field and linear in the mass, and it couples the two parts, as the parent article requires.
 
 ### The Two Lines on the Algebra
 
 The pair is two lines, and each line acts on one part. The conventions write it on a pair of elements of $\mathbb{B}$,
 
 $$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 one gradient per part, and each line composed with the conjugate of the other is the d'Alembertian on its part, because the two gradients compose to $\Box$. Read on one element of the algebra the same object would need the derivative acting on both sides of that element; that reading is not the gradient, and it is not used here.
 
-**The gradient is not scalar.** Written as a product of elements, $\tilde\nabla^2$ is not $\Box$: $e_t$ commutes with the three spatial units, so the mixed derivatives survive. Only the composition with the conjugate is scalar, and it is second order. The free equation therefore stays first order on one field, $\tilde\nabla\tilde F=0$, and the massive equation is the pair, with the mass pairing the two parts. No one-field first-order massive equation is written here, and none exists in this algebra.
+**The gradient is not scalar.** Written as a product of elements, $\tilde\nabla^2$ is not $\Box$: $e_t$ commutes with the three spatial units, so the mixed derivatives survive. Only the composition with the conjugate is scalar, and it is second order. The free equation therefore stays first order on one field, $\tilde\nabla_\Phi\tilde F=0$, and the massive equation is the pair, with the mass pairing the two parts. No one-field first-order massive equation is written here, and none exists in this algebra.
 
 **The symbol.** On the plane wave $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(-iEr'_t+i\vec p\cdot\vec r)$ the gradient acts as left multiplication by the momentum element
 
@@ -114,7 +114,7 @@ $$
 
 and the composition of the two returns $p^2$ times the identity: each component is left multiplication by an element whose product with its conjugate is the scalar $p^2$, and the two orders of the pair agree. The square of the element is not the scalar, $-\tilde K_{\Phi}^{2}=E^2+|\vec p|^{2}-2E\,i\vec p$: its scalar part is $E^2+|\vec p|^{2}$ rather than $p^2$, and its vector part does not cancel. Only the composition with the conjugate returns $p^2$.
 
-The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the transcription above is the working setting. The path integral inherits that status: everything below is exact for it, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
+The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the transcription above is the working setting. The path integral inherits that status: everything below is exact for it, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
 
 ### Properties of the Action
 
@@ -124,7 +124,7 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{B}_{C}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its Hermiticity structure.** $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\tilde\nabla\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian up to a total derivative and $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,k_m\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian. Both statements use the Dirac adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ of the parent article: the right multiplication by $i\vec e_x$ is Hermitian, $(i\vec e_x)^{*}=i\vec e_x$ and $(i\vec e_x)^2=e_t$, and it converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit. The derivative is the caveat: the gradient is not self-adjoint, only self-adjoint up to the total derivative that integration by parts leaves, so the kinetic term carries the qualification and the mass term does not. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box>0$, the d'Alembertian being read on the continued slice where it is elliptic; a pair contributes $(k_m+i\mu)(k_m-i\mu)=k_m^{2}+\mu^2$ to $\det(\Box-k_m^{2})$, the pair of §*The Two Lines on the Algebra* read at $r'_t=-i\tau$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
+**Its Hermiticity structure.** $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\tilde\nabla_\Phi\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian up to a total derivative and $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,k_m\,\tilde{Ξ}_{\mathrm{sp}}$ is Hermitian. Both statements use the Dirac adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ of the parent article: the right multiplication by $i\vec e_x$ is Hermitian, $(i\vec e_x)^{*}=i\vec e_x$ and $(i\vec e_x)^2=e_t$, and it converts the conjugate into a Hermitian bilinear, the time direction entering through it alone because $e_t$ is the unit. The derivative is the caveat: the gradient is not self-adjoint, only self-adjoint up to the total derivative that integration by parts leaves, so the kinetic term carries the qualification and the mass term does not. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean operator squares to the d'Alembertian, which is scalar, so its eigenvalues are the square roots of the d'Alembertian's: purely imaginary, in pairs $\pm i\mu$ with $\mu^2=-\Box>0$, the d'Alembertian being read on the continued slice where it is elliptic; a pair contributes $(k_m+i\mu)(k_m-i\mu)=k_m^{2}+\mu^2$ to $\det(\Box-k_m^{2})$, the pair of §*The Two Lines on the Algebra* read at $r'_t=-i\tau$, and that determinant is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks the pairing and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
 
 ### Sources
 
@@ -275,10 +275,10 @@ Second, the algebra's own statement is the *existence* of the antisymmetric pair
 $$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3r\;\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}+k_m\,(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})\big),
+S_{\mathrm{E}}=\int d\tau\,d^3r\;\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}+k_m\,(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})\big),
 $$
 
-with $\tilde\nabla$ and $\tilde\nabla^{\natural}$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Two Lines on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel of the Gaussian the pair at $+k_m$. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
+with $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$ the corpus gradient and its conjugate read at $r'_t=-i\tau$: the substitution moves the coordinate $Q_t=i r'_t$ to $Q_t=c\tau$ and renames no operator, so the gradient is the one of §*The Two Lines on the Algebra* and the integral is the same density written on the real slice. The kinetic operator is anti-Hermitian and the mass term Hermitian, and the plus sign on the mass is the one that makes the kernel of the Gaussian the pair at $+k_m$. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
 
 **Antiperiodic boundary conditions.** The Euclidean fermionic integral that computes a thermal trace is taken over fields on a circle of circumference $\beta=\frac{\hbar}{k_{B}\,T}$ in $\tau$ with the fermions antiperiodic,
 
@@ -344,7 +344,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 ## Summary
 
-The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L})-\int m\,\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})$ and the sources odd. The equation integrated is the **one-sided** pair over the two parts of the field; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
+The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L})-\int m\,\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R})$ and the sources odd. The equation integrated is the **one-sided** pair over the two parts of the field; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
 The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\varkappa^*d\varkappa\,\varkappa\varkappa^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\tilde{Ξ}_{\mathrm{sp},a}\tilde{Ξ}_{\mathrm{sp},b}^{\dagger}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the companion's amplitude carried on the two parts of the field
 
@@ -362,11 +362,11 @@ The algebra contributes the centrality of the phase, the sector location of the 
 
 | Symbol | Meaning |
 |+-|+-|
-| $\mathcal{L}=\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}\big)-k_m\,\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big)$ | Biquaternion Dirac density (bilinear action), written on the two parts of the field |
+| $\mathcal{L}=\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}\big)-k_m\,\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{\mathrm{sp},L}\tilde{Ξ}_{\mathrm{sp},L}+\bar{\tilde{Ξ}}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}\big)$ | Biquaternion Dirac density (bilinear action), written on the two parts of the field |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\vec e_x$ | Dirac adjoint: a single right multiplication by $i\vec e_x$ |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The corpus gradient, its conjugate and the d'Alembertian; the only derivative in the article |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided pair; the equation integrated |
-| $-\tilde\nabla^{\natural}F-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | The corpus gradient, its conjugate and the d'Alembertian; the only derivative in the article |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided pair; the equation integrated |
+| $-(\tilde\nabla^{\natural})_\PhiF-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{B}_{C}$, exponent along $i r'_t$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
 | $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=\prod_x\prod_ad\tilde{Ξ}_{\mathrm{sp},a}^{\dagger}(x)\,d\tilde{Ξ}_{\mathrm{sp},a}(x)$ | Berezin measure |
@@ -377,7 +377,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $Z_0[\eta,\bar\eta]=\det(\Box-k_m^{2})\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p$, $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=p^2$ | Symbol of the gradient on a plane wave |
 | $(w_L,w_R)\mapsto(i\hbar\tilde K_{\Phi}\,w_R,-i\hbar\tilde K_{\Phi}^{\natural}w_L)$ | The two lines on a plane wave; their composition is $p^2$ times the identity, with $p^2=\frac{E^2}{c^2}-|\vec p|^{2}$ |
-| $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$, with the material gradient on each; each line composed with its partner is $\Box$, and the same pair read at $r'_t=-i\tau$ is the same two lines |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$, with the material gradient on each; each line composed with its partner is $\Box$, and the same pair read at $r'_t=-i\tau$ is the same two lines |
 | $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Kernel; the two imaginary units of the numerator multiply to $-1$ |
 | $\det(\Box-k_m^{2})=(p^2-m^{2}\,c^{2})^4$ | Determinant; the four opposite eigenvalue pairs of the two lines give the fourth power of the scalar mode factor |
 | $\int d\tilde{Ξ}_{\mathrm{sp},2N}\cdots d\tilde{Ξ}_{\mathrm{sp},1}\,\exp(-\frac12\tilde{Ξ}_{\mathrm{sp}} A\tilde{Ξ}_{\mathrm{sp}})=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |

@@ -6,7 +6,7 @@ This is one of the exercises in the electromagnetism series. It applies the appa
 
 **What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$, and the four-current $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, whose normalised source is $\sqrt{\mu}\,\tilde{J}_{\Phi} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$. The permittivity and permeability $\epsilon,\mu$ carry $c = 1/\sqrt{\epsilon\mu}$ with vacuum value $c_0$, and $\vec H = \vec B/\mu$. The charge $ϙ$ moves on the worldline $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$, with coordinate velocity $\vec v(t') = d(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)/dt'$, $\vec\beta = \vec v/c$, and acceleration $d\vec v/dt'_{\mathrm{ret}}$; all source quantities in the retarded formulas are evaluated at the retarded clock. The clock is $t'=r'_t/c$, so $c\,d/dr'_t=d/dt'$ and the temporal coefficient $r'_t$ of the four-position stays a length. No object of the informational sector arises below; the boost rotor is invoked only in Problem 5.
 
-**What is to be shown.** Problem 1 derives the retarded time and its two derivatives, distinguishes the field point from the source point at retarded time, and assembles the Liénard–Wiechert potential as a single biquaternion. Problem 2 performs the differentiation $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ and exhibits the exact split of the field into a part independent of $d\vec\beta/dt'_{\mathrm{ret}}$ and a part linear in $d\vec\beta/dt'_{\mathrm{ret}}$. Problem 3 treats the velocity field, Problem 4 the acceleration field, and each verifies its falloff law ($1/R^2$ and $1/R$) by recomputation rather than assertion. Problem 5 fixes the boost-rotor direction convention and establishes how the *field* transforms under a boost, which is not the four-vector rule. Problem 6 checks the retarded denominator $\kappa = 1-\vec u_R\cdot\vec\beta$ and the charge sign on two independent cases, uniform motion and motion with nonzero acceleration.
+**What is to be shown.** Problem 1 derives the retarded time and its two derivatives, distinguishes the field point from the source point at retarded time, and assembles the Liénard–Wiechert potential as a single biquaternion. Problem 2 performs the differentiation $\tilde{F} = (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ and exhibits the exact split of the field into a part independent of $d\vec\beta/dt'_{\mathrm{ret}}$ and a part linear in $d\vec\beta/dt'_{\mathrm{ret}}$. Problem 3 treats the velocity field, Problem 4 the acceleration field, and each verifies its falloff law ($1/R^2$ and $1/R$) by recomputation rather than assertion. Problem 5 fixes the boost-rotor direction convention and establishes how the *field* transforms under a boost, which is not the four-vector rule. Problem 6 checks the retarded denominator $\kappa = 1-\vec u_R\cdot\vec\beta$ and the charge sign on two independent cases, uniform motion and motion with nonzero acceleration.
 
 **The result.** Writing $\vec R = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}})$ for the retarded separation, $R = |\vec R|$, $\vec u_R = \vec R/R$, and
 $$
@@ -32,13 +32,13 @@ The retarded solution of the biquaternionic Maxwell equation is
 $$
 \tilde{A}_{\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\mu ϙ}{4\pi D}\,\tilde{V}_{\Phi}/\gamma,
 $$
-and the parent's statement is that $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ yields the two component formulas displayed above. The retarded time is defined *implicitly*, by
+and the parent's statement is that $\tilde{F} = (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ yields the two component formulas displayed above. The retarded time is defined *implicitly*, by
 $$
 t'_{\mathrm{ret}} = t' - \frac{R}{c},
 \qquad
 R = \left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}})\right|,
 $$
-so that the observation point $(t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_{\mathrm{ret}},(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}}))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_{\mathrm{ret}}$ and $\nabla t'_{\mathrm{ret}}$ and the resulting biquaternion $\tilde{\nabla}^{\natural}t'_{\mathrm{ret}}$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
+so that the observation point $(t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_{\mathrm{ret}},(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}}))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_{\mathrm{ret}}$ and $\nabla t'_{\mathrm{ret}}$ and the resulting biquaternion $(\tilde\nabla^{\natural})_\Phit'_{\mathrm{ret}}$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
 
 Numerical checks quoted below were performed on subluminal worldlines with a Newton-solved retarded time, and the reported figures are the maximum componentwise discrepancies. All source quantities are evaluated at the retarded time.
 
@@ -110,13 +110,13 @@ The identities of (b) were verified numerically on accelerated worldlines: $|D -
 
 ## Problem 2: The Field Strength and the Velocity–Acceleration Split
 
-**Statement.** (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde\Lambda_{\Phi,\mathrm{ret}}d\tilde{Q}/dt'_{\mathrm{ret}}$ with
+**Statement.** (a) Show that for a source quantity depending only on the retarded time, $(\tilde\nabla^{\natural})_\Phi\tilde{Q} = \tilde\Lambda_{\Phi,\mathrm{ret}}d\tilde{Q}/dt'_{\mathrm{ret}}$ with
 $$
-\tilde\Lambda_{\Phi,\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}t'_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
+\tilde\Lambda_{\Phi,\mathrm{ret}} \equiv (\tilde\nabla^{\natural})_\Phit'_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
 \qquad
 N\!\left(-i\,e_t + \vec u_R\right) = 0 .
 $$
-(b) Compute $\tilde{\nabla}^{\natural}D$ and hence $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$, and exhibit the split $\tilde{F} = \tilde{F}_v+\tilde{F}_a$ into brackets independent of and linear in $d\vec\beta/dt'_{\mathrm{ret}}$. (c) Verify that both brackets are pure vectors and that expanding them gives the component formulas of the Introduction, with $\vec B = \frac{1}{c}\vec u_R\times\vec E$.
+(b) Compute $(\tilde\nabla^{\natural})_\PhiD$ and hence $\tilde{F} = (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$, and exhibit the split $\tilde{F} = \tilde{F}_v+\tilde{F}_a$ into brackets independent of and linear in $d\vec\beta/dt'_{\mathrm{ret}}$. (c) Verify that both brackets are pure vectors and that expanding them gives the component formulas of the Introduction, with $\vec B = \frac{1}{c}\vec u_R\times\vec E$.
 
 **Solution (a).** For a source quantity $\tilde{Q}(t'_{\mathrm{ret}})$ the chain rule gives, with $d\tilde{Q}/dt'_{\mathrm{ret}}$ the retarded-time derivative,
 $$
@@ -126,7 +126,7 @@ $$
 $$
 Multiplying the spatial derivatives by $\vec e_\mu$ and subtracting,
 $$
-\tilde{\nabla}^{\natural}\tilde{Q}
+(\tilde\nabla^{\natural})_\Phi\tilde{Q}
 = \left(\partial/\partial R_t\,t'_{\mathrm{ret}}\,e_t - \sum_\mu \partial/\partial R_\mu\,t'_{\mathrm{ret}}\,\vec e_\mu\right)d\tilde{Q}/dt'_{\mathrm{ret}}
 = \left(-\frac{i}{c\kappa}e_t + \frac{\vec u_R}{c\kappa}\right)d\tilde{Q}/dt'_{\mathrm{ret}}
 = \tilde\Lambda_{\Phi,\mathrm{ret}}d\tilde{Q}/dt'_{\mathrm{ret}} .
@@ -139,16 +139,16 @@ The gradient of the retarded time is a null biquaternion, hence a zero divisor: 
 
 **Solution (b).** The denominator $D$ is *not* a function of $t'_{\mathrm{ret}}$ alone: at fixed $t'_{\mathrm{ret}}$ it still depends explicitly on $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ through $R$ and $\vec u_R$. Splitting the gradient into its explicit action at fixed $t'_{\mathrm{ret}}$ and its action through $t'_{\mathrm{ret}}$,
 $$
-\tilde{\nabla}^{\natural}D = -\left(\vec u_R-\vec\beta\right) + \tilde\Lambda_{\Phi,\mathrm{ret}}dD/dt'_{\mathrm{ret}} ,
+(\tilde\nabla^{\natural})_\PhiD = -\left(\vec u_R-\vec\beta\right) + \tilde\Lambda_{\Phi,\mathrm{ret}}dD/dt'_{\mathrm{ret}} ,
 \qquad
 \,dD/dt'_{\mathrm{ret}} = -c\,\vec u_R\cdot\vec\beta + c\beta^2 - \vec R\cdot\,d\vec\beta/dt'_{\mathrm{ret}} .
 $$
 Here $-\left(\vec u_R-\vec\beta\right)$ is the explicit part, since at fixed $t'_{\mathrm{ret}}$ one has $\partial/\partial R_j|_{\mathrm{exp}}D = \vec u_{R_j}-\beta_j$, and $dD/dt'_{\mathrm{ret}}$ is the retarded-time derivative. With $g = \frac{\mu ϙ}{4\pi}$ and $\tilde{A}_{\Phi} = g\,(\tilde{V}_{\Phi}/\gamma)/D$, the product rule (the gradient acts from the left, and $1/D$ is a scalar) gives
 $$
-\tilde{F} = \tilde{\nabla}^{\natural}\frac{g\tilde{V}_{\Phi}/\gamma}{D}
-= \frac{g}{D^2}\left[D\,\tilde{\nabla}^{\natural}\!\left(\tilde{V}_{\Phi}/\gamma\right) - \left(\tilde{\nabla}^{\natural}D\right)\tilde{V}_{\Phi}/\gamma\right].
+\tilde{F} = (\tilde\nabla^{\natural})_\Phi\frac{g\tilde{V}_{\Phi}/\gamma}{D}
+= \frac{g}{D^2}\left[D\,(\tilde\nabla^{\natural})_\Phi\!\left(\tilde{V}_{\Phi}/\gamma\right) - \left((\tilde\nabla^{\natural})_\PhiD\right)\tilde{V}_{\Phi}/\gamma\right].
 $$
-Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}_{\Phi}/\gamma\right) = \tilde\Lambda_{\Phi,\mathrm{ret}}\,d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}}$ with $d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}} = cd\vec\beta/dt'_{\mathrm{ret}}$, and using $D\tilde\Lambda_{\Phi,\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = R(-ie_t+\vec u_R) = -2R\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$, where $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} \equiv \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
+Substituting $(\tilde\nabla^{\natural})_\Phi\!\left(\tilde{V}_{\Phi}/\gamma\right) = \tilde\Lambda_{\Phi,\mathrm{ret}}\,d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}}$ with $d\tilde{V}_{\Phi}/\gamma/dt'_{\mathrm{ret}} = cd\vec\beta/dt'_{\mathrm{ret}}$, and using $D\tilde\Lambda_{\Phi,\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = R(-ie_t+\vec u_R) = -2R\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$, where $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} \equiv \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
 $$
 \tilde{F} = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\Phi,\mathrm{ret}}\,d\vec\beta/dt'_{\mathrm{ret}}
 + \left(\vec u_R-\vec\beta\right)\tilde{V}_{\Phi}/\gamma
@@ -170,7 +170,7 @@ $$
 $$
 The split is exact and structural: $\tilde{F}_v$ is independent of $d\vec\beta/dt'_{\mathrm{ret}}$ (it is what survives uniform motion), and $\tilde{F}_a$ is linear in $d\vec\beta/dt'_{\mathrm{ret}}$ (it vanishes for unaccelerated motion, $d\vec\beta/dt'_{\mathrm{ret}} = 0$). Note the ordering is not cosmetic — $\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$ multiplies on the left, up to the scalar $-2$ — and the two brackets are not merely "terms containing $d\vec\beta/dt'_{\mathrm{ret}}$"; they are the velocity and acceleration fields.
 
-**Solution (c).** Both brackets are pure vectors: their scalar parts vanish identically, which is the biquaternionic statement of the Lorenz condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = 0$. Expanding the brackets in components gives
+**Solution (c).** Both brackets are pure vectors: their scalar parts vanish identically, which is the biquaternionic statement of the Lorenz condition $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}) = 0$. Expanding the brackets in components gives
 $$
 \vec E = \vec E_v+\vec E_a,
 \qquad
@@ -188,7 +188,7 @@ $$
 $$
 whose first term reproduces $\vec E_v$ and whose second reproduces $\vec E_a$ when $D = R\kappa$ and $\vec R = R\vec u_R$ are used. The two factors $1-\beta^2$ and $d\vec\beta/dt'_{\mathrm{ret}}$ make the two parts transform differently under $d\vec\beta/dt'_{\mathrm{ret}}\to-d\vec\beta/dt'_{\mathrm{ret}}$: $\vec E_v$ is even, $\vec E_a$ odd.
 
-The full identity $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with the component formulas above was verified by finite differencing the potential on accelerated subluminal worldlines, with maximum componentwise discrepancy $7\times10^{-12}$; the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ was zero to $5\times10^{-12}$. Separately, the velocity bracket $\tilde{F}_v$ matched $i\sqrt{\epsilon}\,\vec E_v-\sqrt{\mu}\,\vec H_v$ to $4\times10^{-18}$ and the acceleration bracket $\tilde{F}_a$ matched $i\sqrt{\epsilon}\,\vec E_a-\sqrt{\mu}\,\vec H_a$ to $2\times10^{-18}$, so the biquaternion split and the component split are the same split.
+The full identity $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with the component formulas above was verified by finite differencing the potential on accelerated subluminal worldlines, with maximum componentwise discrepancy $7\times10^{-12}$; the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ was zero to $5\times10^{-12}$. Separately, the velocity bracket $\tilde{F}_v$ matched $i\sqrt{\epsilon}\,\vec E_v-\sqrt{\mu}\,\vec H_v$ to $4\times10^{-18}$ and the acceleration bracket $\tilde{F}_a$ matched $i\sqrt{\epsilon}\,\vec E_a-\sqrt{\mu}\,\vec H_a$ to $2\times10^{-18}$, so the biquaternion split and the component split are the same split.
 
 ## Problem 3: The Velocity Field and Its $1/R^2$ Falloff
 
@@ -313,7 +313,7 @@ exactly. For a worldline with $\vec v = (0.35,-0.25,0.45)c$ and an observation a
 $$
 \kappa = 0.4467,\quad 0.4316,\quad 1.0450,
 $$
-with $|D - R\kappa| = 0$ and the field identity $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} = i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ holding to $2\times10^{-11}$. The three values illustrate both facts about $\kappa$: it can be considerably less than $1$ (charge approaching, $\vec u_R\cdot\vec\beta>0$) and it can exceed $1$ (charge receding, $\vec u_R\cdot\vec\beta<0$). It is the denominator of $(1-\vec u_R\cdot\vec\beta)$, not a $\gamma$-factor and not bounded below by unity. Flipping $ϙ\to-ϙ$ flipped the field exactly, $\vec E(-ϙ) = -\vec E(ϙ)$ to $0$.
+with $|D - R\kappa| = 0$ and the field identity $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi} = i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ holding to $2\times10^{-11}$. The three values illustrate both facts about $\kappa$: it can be considerably less than $1$ (charge approaching, $\vec u_R\cdot\vec\beta>0$) and it can exceed $1$ (charge receding, $\vec u_R\cdot\vec\beta<0$). It is the denominator of $(1-\vec u_R\cdot\vec\beta)$, not a $\gamma$-factor and not bounded below by unity. Flipping $ϙ\to-ϙ$ flipped the field exactly, $\vec E(-ϙ) = -\vec E(ϙ)$ to $0$.
 
 **Solution (b) — nonzero acceleration.** For an accelerated subluminal worldline with $\vec v(T) = (0.2,\,0.2T,\,0.05)c$ and $\vec a(T) = (0,\,0.2,\,0)c$, four observation events gave
 $$
@@ -323,7 +323,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 ## Where the Parent Leaves a Gap
 
-**1. The differentiation is asserted, not displayed.** The parent states that "differentiating the Liénard–Wiechert potential is the standard computation" and records the two component results, with the normalization caveat that fixes $\tilde{F} = i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ as the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$. It does not carry out the differentiation, and in particular it does not display the two biquaternion brackets of Problem 2 or the role of the null gradient $\tilde{\nabla}^{\natural}t'_{\mathrm{ret}}$. This exercise supplies the missing computation; nothing in the parent's results is changed.
+**1. The differentiation is asserted, not displayed.** The parent states that "differentiating the Liénard–Wiechert potential is the standard computation" and records the two component results, with the normalization caveat that fixes $\tilde{F} = i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ as the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$. It does not carry out the differentiation, and in particular it does not display the two biquaternion brackets of Problem 2 or the role of the null gradient $(\tilde\nabla^{\natural})_\Phit'_{\mathrm{ret}}$. This exercise supplies the missing computation; nothing in the parent's results is changed.
 
 **2. The field transformation law is not given, and rotor conjugation is not it.** The parent's remark that the uniformly moving field is "equivalently ... obtained by applying the boost rotor $\tilde U_{\Psi,\mathrm b}$ of the Maxwell article to the Coulomb field of the charge at rest" is correct in content but silent on the law. The framework's rotor conjugation is defined for four-vectors in $\mathbb{B}_{\Phi}$; the field strength is a rank-two object and transforms by the similarity $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b} = \tilde U_{\Psi,\mathrm b}^{-1}\tilde{F}\tilde U_{\Psi,\mathrm b}$ (Problem 5). The Lorentz-transformation article's "Open Questions", item 1, asks precisely how the biquaternion formulation extends to higher-rank tensors such as $F_{\mu\nu}$; this exercise supplies the answer for the field strength and a pure boost, so it is a recognized boundary and not a defect introduced here. We record it because a reader who reaches for $\tilde U_{\Psi,\mathrm b}\tilde{F}\tilde U_{\Psi,\mathrm b}^{*}$ will get a wrong field.
 
@@ -347,7 +347,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 ## Summary
 
-The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A}_{\Phi} = \frac{\mu ϙ}{4\pi D}\tilde{V}_{\Phi}/\gamma$, built from the null retarded separation $iR\,e_t+\vec R$ and the four-velocity $\tilde{V}_{\Phi} = \gamma\left(ic\,e_t+\vec v(t'_{\mathrm{ret}})\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}_{\Phi}(iR\,e_t+\vec R)^{\natural}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $\tilde{\nabla}^{\natural}t'_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
+The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A}_{\Phi} = \frac{\mu ϙ}{4\pi D}\tilde{V}_{\Phi}/\gamma$, built from the null retarded separation $iR\,e_t+\vec R$ and the four-velocity $\tilde{V}_{\Phi} = \gamma\left(ic\,e_t+\vec v(t'_{\mathrm{ret}})\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}_{\Phi}(iR\,e_t+\vec R)^{\natural}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $(\tilde\nabla^{\natural})_\Phit'_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
 $$
 \tilde{F}_v = \frac{g}{D^2}\left[\left(\vec u_R-\vec\beta\right)\tilde{V}_{\Phi}/\gamma + \frac{2\,dD_{0}/dt'_{\mathrm{ret}}}{c\kappa}\tilde{\mathcal L}_{\Phi,\mathrm{ret}}\tilde{V}_{\Phi}/\gamma\right],
 \qquad
@@ -368,7 +368,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
-| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi, \Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -i\,\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |
@@ -386,7 +386,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{V}_{\Phi} = \gamma\left(ic\,e_t+\vec v(t'_{\mathrm{ret}})\right)$ | Four-velocity biquaternion, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
 | $\tilde{V}_{\Phi}/\gamma = ic\,e_t+\vec v(t'_{\mathrm{ret}})$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
 | $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{B}_{\Phi}$ |
-| $\tilde\Lambda_{\Phi,\mathrm{ret}} = \tilde{\nabla}^{\natural}t'_{\mathrm{ret}} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
+| $\tilde\Lambda_{\Phi,\mathrm{ret}} = (\tilde{\nabla}^{\natural})_\Phi t'_{\mathrm{ret}} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
 | $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} = \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde\Lambda_{\Phi,\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |

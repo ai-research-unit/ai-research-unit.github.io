@@ -185,7 +185,7 @@ Two entries carry the sign. For $\langle\vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon
 
 ## The Contraction Is the Propagator
 
-For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, the propagator of the biquaternion Dirac field satisfies
+For the field the contraction is the **Feynman propagator**, and this is the point at which the one-mode result connects to the field theory. On the spinor module, the representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, the propagator of the biquaternion Dirac field satisfies
 $$
 \big(\mathcal{D} - m\big) S_F(x-y) = \delta^{(4)}(x-y),
 $$

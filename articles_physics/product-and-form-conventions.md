@@ -116,7 +116,7 @@ $$
 [\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J_{\Phi}=i[\tilde{Ξ}^{*}(\tilde\nabla\tilde{Ξ})-(\tilde\nabla\tilde{Ξ}^{*})\tilde{Ξ}]$.
+whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*Symmetric and Antisymmetric Decomposition of the Four General Products*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion*), and the current of a scalar field is the commutator, $\tilde J_{\Phi}=i[\tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ})-(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ}]$.
 
 The products themselves — their coordinates, their laws, their units and their images — are *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the grid of the four general products is *The Four General Products: Composition, Probability, Causality, Gauge*.
 
