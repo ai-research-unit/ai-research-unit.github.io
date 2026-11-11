@@ -31,9 +31,9 @@ $$
 On the material sector, where $Q_t=i r'_t$, the gradient and its conjugate read
 
 $$
-\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\frac{\partial}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
+\tilde\nabla_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
+(\tilde\nabla^{\natural})_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
 \qquad
 \Box\big|_{\mathbb{B}_{\Phi}}=\Delta-\frac{\partial^2}{\partial {r'_t}^2},
 $$

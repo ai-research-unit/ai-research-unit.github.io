@@ -142,7 +142,7 @@ The principal symbol is $q_t^2 - \sum_k (q'_k)^2$, that is the norm $\langle\cdo
 **The operator.** The scalar partial carries $-i$ and the three spatial ones are ordinary real derivatives:
 
 $$
-\boxed{\; \tilde\nabla\big|_{\mathbb{B}_{\Phi}} = -i e_t\,\frac{\partial}{\partial q'_t} + \sum_{\mu=1}^{3} \vec e_\mu\,\frac{\partial}{\partial q_\mu},
+\boxed{\; \tilde\nabla_{\Phi} = -i e_t\,\frac{\partial}{\partial q'_t} + \sum_{\mu=1}^{3} \vec e_\mu\,\frac{\partial}{\partial q_\mu},
 \qquad
 \Box\big|_{\mathbb{B}_{\Phi}} = e_t\left(-\frac{\partial^2}{\partial (q'_t)^2} + \sum_{k=1}^{3}\frac{\partial^2}{\partial q_k^2}\right) \;}.
 $$

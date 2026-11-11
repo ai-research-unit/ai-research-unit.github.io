@@ -29,9 +29,9 @@ $$
 and on the material sector, where $Q_t=i r'_t$, the two gradients and the norm read
 
 $$
-\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\frac{\partial}{\partial r'_t}+D_3,
+\tilde\nabla_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}+D_3,
 \qquad
-\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\frac{\partial}{\partial r'_t}-D_3,
+(\tilde\nabla^{\natural})_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}-D_3,
 \qquad
 \Box\big|_{\mathbb{B}_{\Phi}}=\Delta_Q-\frac{\partial^2}{\partial {r'_t}^2},
 \qquad

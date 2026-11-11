@@ -24,6 +24,58 @@ $$
 
 and what is not immediate is what the substitution gives in each case. That is what the article computes.
 
+**Written in full coordinates.** The general element carries four complex coefficients, and membership in a sector is a condition on them:
+
+$$
+\tilde Q=Q_t\,e_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu=q_\mu+i q'_\mu ,
+$$
+
+with the eight real parameters $q_\mu$ and $q'_\mu$. On $\mathbb{B}_{\Phi}$ the temporal coefficient is pure imaginary and the three spatial ones are real, $Q_t=i q'_t$ and $Q_\eta=q_\eta$; on $\mathbb{B}_{\Psi}$ the temporal coefficient is real and the three spatial ones are pure imaginary, $Q_t=q_t$ and $Q_\eta=i q'_\eta$ (*Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*). The two sector elements read
+
+$$
+\boxed{\;\tilde Q_\Phi=i q'_t\,e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\;},
+\qquad
+\boxed{\;\tilde Q_\Psi=q_t\,e_t+i\bigl(q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z\bigr)\;},
+$$
+
+four real numbers each: the primed set is the material time with the three informational spaces, and the unprimed set the informational time with the three material spaces.
+
+The switch multiplies those four coefficients by $i$ and does nothing else, so the time slot is the only one that meets an $i$ already present:
+
+$$
+i\tilde Q_\Phi=i\bigl(i q'_t\bigr)e_t+i q_x\vec e_x+i q_y\vec e_y+i q_z\vec e_z=-q'_t\,e_t+i q_x\vec e_x+i q_y\vec e_y+i q_z\vec e_z=\tilde Q_\Psi .
+$$
+
+Read slot by slot, the image is fixed by four correspondences, one per coefficient:
+
+$$
+\boxed{\;
+\begin{aligned}
+q_t&=-q'_t,&\quad&\text{time},\\
+q'_x&=+q_x,&\quad&\text{space }x,\\
+q'_y&=+q_y,&\quad&\text{space }y,\\
+q'_z&=+q_z,&\quad&\text{space }z.
+\end{aligned}}
+$$
+
+The $x$ coefficient of the image is $i$ times the $x$ coefficient of the source, and since the image's coefficient is written $i q'_x$, the two real numbers agree, $q'_x=q_x$. So the image keeps the three space numbers and takes the time number with the opposite sign, and what has moved is the $i$: off the temporal coefficient and onto the three spatial ones. The converse multiplication by $-i$ undoes it, and there each space slot meets one $-i$ against one $i$:
+
+$$
+-i\tilde Q_\Psi=-i q_t\,e_t-i\bigl(i q'_x\bigr)\vec e_x-i\bigl(i q'_y\bigr)\vec e_y-i\bigl(i q'_z\bigr)\vec e_z=-i q_t\,e_t+q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z=\tilde Q_\Phi ,
+$$
+
+$$
+\boxed{\;
+\begin{aligned}
+q'_t&=-q_t,&\quad&\text{time},\\
+q_x&=+q'_x,&\quad&\text{space }x,\\
+q_y&=+q'_y,&\quad&\text{space }y,\\
+q_z&=+q'_z,&\quad&\text{space }z.
+\end{aligned}}
+$$
+
+The three space lines are their own converses; the time line is the one that reverses, and that reversal is what makes the switched element a different element rather than the same one relabelled. The trace checks it at sight: $2i q'_t$ on the source and $2q_t=-2q'_t$ on the image, the factor $i$ of the table below.
+
 This article calls that operation the **Phy–Psy switch**. The name follows the corpus's own mnemonic for the two sector letters: $\Phi$ opens the word *physics* and marks the material side, and $\Psi$ is the letter a quantum state is written with and marks the informational side. The name takes its *Phy* from the first and its *Psy* from the second. The switch is the operation that carries one side to the other, and it runs in both directions, since $i$ is invertible with inverse $-i$. Both the name and the two readings are fixed as conventions in *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, and this article uses them as fixed.
 
 The thesis is a statement about construction and not about naming. For each element of $\mathbb{B}_{\Phi}$ there is an element of $\mathbb{B}_{\Psi}$, obtained by multiplication by $i$, and for each element of $\mathbb{B}_{\Psi}$ there is an element of $\mathbb{B}_{\Phi}$, obtained the same way. The second element is a different element: it has a different trace, a different norm, a different determinant and a different spectrum. Each of the two is read in its own sector, the first in the material reading and the second in the informational reading. The switch is therefore a map between two objects, and not a second label on one object.
@@ -32,7 +84,7 @@ The article is written against a natural objection. Multiplication by a scalar l
 
 The substitution is cheap; the results are not. Seven cases are worked below, ordered by distance from the element:
 
-- **the element and its observable.** A material four-vector and the informational operator that reads it differ by the switch, so the energy, imaginary as a coefficient of the first, is real as a coefficient of the second.
+- **the element and its observable.** A material four-vector and the informational operator that reads it differ by the switch, so the energy, imaginary as a coefficient of the first, is real as a coefficient of the second. Four of the pairs are catalogued as glyphs of their own, and they are listed with this case.
 - **the preparation dictionary.** The same substitution, applied to the reversed four-vector, prepares a state, and the causal condition of the material cone becomes the positivity of the state.
 - **the gradient.** The operator that differentiates carries the $i$ on the time slot in the material chart and on the three space slots in the informational one; the two gradients are switched copies once the quaternion conjugate is allowed for.
 - **the Schrödinger equation.** One equation, two writings: the first names a Hermitian observable, the second a material generator, and the two are related by the substitution and one real rescaling.
@@ -215,11 +267,46 @@ $$
 
 whose trace is $-2E/c$, real, and whose vector part is imaginary. The energy has become the real scalar coefficient and the momentum the imaginary vector part, and the sign of the whole element is the sign of the material one: $\operatorname{Tr}\tilde P_\Psi=-2E/c$, so $E=-\frac{c}{2}\operatorname{Tr}\tilde P_\Psi$. The reading is now the informational one: the element has a real spectrum.
 
-The same pattern holds for the other four-vectors. The four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ carries the charge density on the imaginary time slot and the current on the real space slots; its switch is $i\tilde J_\Phi=-c\rho\,e_t+i\vec J$, with the density real and the current imaginary. The four-potential, the four-velocity and the wavevector follow the same rule, and the rule is one line: the temporal coefficient changes from imaginary to real and the three space coefficients from real to imaginary.
+The same pattern holds for the other four-vectors. The four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ carries the charge density on the imaginary time slot and the current on the real space slots; its switch is $i\tilde J_\Phi=-c\rho\,e_t+i\vec J$, with the density real and the current imaginary. The four-potential, the four-velocity and the wavevector follow the same rule, and the rule is one line: the temporal coefficient changes from imaginary to real and the three space coefficients from real to imaginary. What separates the four-vectors from one another is therefore not the switch, which does the same thing to all of them, but what the informational reading makes of the result.
 
 **The central scalar.** The mass is the useful case because it is central and carries no index. Material, it is $\Rho=imc$, an imaginary central number, and the norm of the four-momentum is its square, $-m^{2}c^{2}$. Switched, it is $i\Rho=-mc$, a real central number, and the norm of the switched four-momentum is $+m^{2}c^{2}$. The same length is imaginary in one reading and real in the other, and neither is a mistake: the two are the two central scalars of the algebra, and the switch is what carries one to the other.
 
 What the reading buys is a real spectrum. What it trades is the interval for the discriminant: the norm is still there, with its sign turned round, so what was timelike in the material reading is spacelike in the informational one. The two readings are not two views of one object; they are the two faces a physics needs, and no single element carries both.
+
+### The Siblings
+
+A material glyph and its image are two objects, so the image takes a glyph of its own. Four earn one, and they earn it for the same reason: the informational reading gives them a real spectrum, so they are observables and not merely elements with the $i$ moved. They are catalogued in *Physics Units and Common Elements Conventions*, §*The Four-Vectors and the Currents*.
+
+| Material glyph | Informational sibling | What the reading makes of it |
+|---|---|---|
+| $\tilde P_\Phi=ip'_te_t+\vec p_\Phi$ | $\tilde P_\Psi=-p'_te_t+i\vec p_\Phi$ | real spectrum $\{-(p'_t\pm\lvert\vec p_\Phi\rvert)\}$, determinant $+m^{2}c^{2}$ where the material one has $-m^{2}c^{2}$ |
+| $\tilde K_\Phi=ik'_te_t+\vec k_\Phi$ | $\tilde K_\Psi=-k'_te_t+i\vec k_\Phi=\tilde P_\Psi/\hbar$ | the same reading in inverse lengths, and a conversion rather than a new object |
+| $\tilde J_\Phi=ic\rho\,e_t+\vec J_\Phi$ | $\tilde J_\Psi=-c\rho\,e_t+i\vec J_\Phi$ | density real, current imaginary: the form $\langle\tilde J_\Psi\rangle_{*}=c^{2}\rho^{2}+\lvert\vec J_\Phi\rvert^{2}$ is positive |
+| $\tilde A_\Phi=ia'_te_t+\vec A_\Phi$ | $\tilde A_\Psi=-a'_te_t+i\vec A_\Phi$ | a Hermitian connection: minimal coupling keeps its form, and the reading exchanges which of its two terms is self-adjoint |
+
+The connection is the one that changes an operator rather than a quantity, and it is the sharpest of the four, because the whole form of minimal coupling survives the switch unchanged. The covariant gradient of the corpus is $\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$, with the coupling imaginary. The $i$ that switches the operator multiplies the two glyphs inside it and leaves the coefficient where it stands, since $\frac{i\,ϙ}{\hbar}\,i\tilde A_\Phi=\frac{i\,ϙ}{\hbar}\tilde A_\Psi$, so the whole operator has one form in the two readings:
+
+$$
+\boxed{\;i\Bigl(\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi\Bigr)=\tilde\nabla_\Psi+\frac{i\,ϙ}{\hbar}\tilde A_\Psi\;}.
+$$
+
+Every glyph of the left side is replaced by its sibling on the right, and the coupling $ϙ$ is untouched: minimal coupling does not know which reading it is written in. What the reading exchanges is which of the two terms is self-adjoint. The gradient is anti-Hermitian on the material side and Hermitian on the informational one, and $i\tilde A$ is Hermitian on the first and anti-Hermitian on the second, so the two classes swap together and the sum is in neither sector either way. The phase $\exp(\theta\tilde A_\Phi)$ carries a real parameter in the material reading and an imaginary one in the informational reading, as the energy does.
+
+Two images need no glyph, because the object they give already has a name. The four-velocity is one:
+
+$$
+i\tilde V_\Phi=i\gamma c\bigl(ie_t+\vec\beta\bigr)=-\gamma c\bigl(e_t-i\vec\beta\bigr)=-c\,\mathcal B_\Psi ,
+$$
+
+which is the boost factor of the four-vector, dimensionless because $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and the switch reverses that sign without changing its size. The other is the null four-vector of a pure state:
+
+$$
+i\tilde{\mathcal L}_\Phi=i\Bigl(\tfrac{i}{2}e_t-\tfrac12\vec r\Bigr)=-\tfrac12e_t-\tfrac{i}{2}\vec r=-\tilde\Pi ,
+$$
+
+so the light cone of the material sector is the switch image of the boundary of the Bloch ball, and the two objects the series treats as two geometries are one up to the multiplication. The pair is worth stating in that direction, $i\tilde{\mathcal L}_\Phi=-\tilde\Pi$, because it is the only place where a null element of the material sector is an idempotent of the informational one.
+
+**The field, and the one place the two constructions must not be confused.** A field is split by the same projection as an element, $\tilde\Xi=\tilde\Xi_\Phi+\tilde\Xi_\Psi$, with $\tilde\Xi_\Phi$ anti-Hermitian at every point and $\tilde\Xi_\Psi$ Hermitian at every point; the first is a field of four-vectors and the second a field of observables. That decomposition is not the switch. The switch of $\tilde\Xi_\Phi$ is the different field $i\tilde\Xi_\Phi$, and $i\tilde\Xi_\Phi\neq\tilde\Xi_\Psi$ as soon as the field has both parts, because the decomposition splits one field while the switch maps a field to another. The two agree only when $\tilde\Xi$ is material, and that case is the one the article uses.
 
 ### The Preparation Dictionary
 
@@ -283,23 +370,23 @@ $$
 
 The two plain readings are conjugate to each other, $(1,-i,-i,-i)$ against $(-i,1,1,1)$, and it is the *conjugate* gradient that crosses to $\tilde\nabla_\Psi$. That is why the passage from one chart to the other is not the switch: a reader who expects $\tilde\nabla$ on $\Psi$ to be $\tilde\nabla_\Psi$ is off by $2i$ on each of the three space slots and by nothing on the time slot, and the missing factor is the chart change. The switch proper relates the two sectors, not the two charts.
 
-**The d'Alembertian.** The series' operator is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^{2}/\partial R_\mu^{2}$, and it is central. Its two readings use the two charts, and each sector carries its own spatial Laplacian:
+**The d'Alembertian.** The series' operator is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^{2}/\partial R_\mu^{2}$, and it is central. Each sector carries its own spatial Laplacian, positive in its own letters,
 
 $$
 \Delta_\Phi=\sum_\eta\partial^{2}_{r_\eta},
 \qquad\qquad
-\Delta_\Psi=-\sum_\eta\partial^{2}_{r'_\eta}=-\Delta_\Phi .
+\Delta_\Psi=\sum_\eta\partial^{2}_{r'_\eta}.
 $$
 
-The sign is the second power of the $i$ that sits on the informational space coordinate: $\partial_{R_\eta}=-i\,\partial_{r'_\eta}$ gives $\partial^{2}_{R_\eta}=-\partial^{2}_{r'_\eta}$, so the three space slots contribute $-\Delta_\Phi$ in the informational reading and $+\Delta_\Phi$ in the material one. The time slot does the same, with the roles exchanged: $R_t=i r'_t$ gives $-\partial^{2}_{r'_t}$ materially and $+\partial^{2}_{r_t}$ informationally. Hence
+What the sector changes is the sign with which each enters. The spatial part of $\Box$ is $\Delta_Q=\sum_\eta\partial^{2}/\partial R_\eta^{2}$. On the material chart $R_\eta=r_\eta$, so $\Delta_Q=+\Delta_\Phi$; on the informational chart $R_\eta=i r'_\eta$, so $\partial^{2}_{R_\eta}=-\partial^{2}_{r'_\eta}$ and $\Delta_Q=-\Delta_\Psi$. The same second power of $i$ flips the time slot the other way: $R_t=i r'_t$ gives $-\partial^{2}_{r'_t}$ materially, and $R_t=r_t$ gives $+\partial^{2}_{r_t}$ informationally. Hence
 
 $$
 \boxed{\;\Box_\Phi=-\partial^{2}_{r'_t}+\Delta_\Phi,
 \qquad
-\Box_\Psi=+\partial^{2}_{r_t}+\Delta_\Psi=-\Box_\Phi\;}.
+\Box_\Psi=+\partial^{2}_{r_t}-\Delta_\Psi\;},
 $$
 
-The subscript on $\Delta$ is not decoration. The bare $\Delta$ would be ambiguous between $+\sum_\eta\partial^{2}_{r_\eta}$ and $-\sum_\eta\partial^{2}_{r'_\eta}$, and it is exactly the ambiguity the switch resolves: each reading has its own Laplacian, and the two are negatives of each other, as the two d'Alembertians are. The relation is the norm's sign flip, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, read on a second-order operator. Both $\Box$ operators are hyperbolic. The switch never produces an elliptic one, and that is the sharpest single difference from the Wick rotation.
+and the two are negatives of each other when the charts are written in the same letters, $\Box_\Psi=-\Box_\Phi$. The subscript on $\Delta$ is not decoration: it names the chart in which the Laplacian is taken, and with it the sign the operator enters with. A bare $\Delta$ hides the flip. The relation is the norm's sign flip, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, read on a second-order operator. Both $\Box$ operators are hyperbolic. The switch never produces an elliptic one, and that is the sharpest single difference from the Wick rotation.
 
 **The exact qualification.** The claim above is about the operator's coefficients. It is not a claim about the operator's action on an arbitrary element, and the difference is one line. Since ${}^{*}$ is an antiautomorphism, $(\tilde\nabla\tilde X)^{*}=\tilde X^{*}\tilde\nabla^{*}$, and with $\tilde\nabla_\Phi$ anti-Hermitian,
 
@@ -435,7 +522,7 @@ The article is one substitution, $\tilde Q_\Psi=i\tilde Q_\Phi$ for $\tilde Q_\P
 
 The switch is multiplication by the central $i$ on the whole element. Since $i^{*}=-i$ and $i$ is central, $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two sectors exchange. Since $i$ is central, the switch passes through products, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so an equation may be carried across it. Since $(i\tilde Q)(i\tilde Q)^{*}=\tilde Q\tilde Q^{*}$, the Hermitian form is preserved; and since the image carries a factor $i$ in every coefficient, the trace is multiplied by $i$, the quaternionic norm and the determinant change sign, the spectrum turns a quarter turn, and the signature is reversed. The two readings read two different elements, and that is why the switch is a construction and not a relabel.
 
-The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients the switch is exact for the gradient, with $\tilde\nabla_\Phi$ anti-Hermitian and $\tilde\nabla_\Psi=i\tilde\nabla_\Phi$ Hermitian; on the quaternion conjugate $\Box_\Psi=-\Box_\Phi$; and the gradient written on the informational chart is $(\tilde\nabla^{\natural})_\Psi$, not $\tilde\nabla_\Psi$. The d'Alembertian negates, $\Box_\Psi=-\Box_\Phi$, with $\Delta_\Psi=-\Delta_\Phi$ inside it, and both operators stay hyperbolic. At the level of an action the class is not inherited: $(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla$, which is $-\tilde\nabla\tilde X$ only for a Hermitian element that commutes with the operator.
+The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients the switch is exact for the gradient, with $\tilde\nabla_\Phi$ anti-Hermitian and $\tilde\nabla_\Psi=i\tilde\nabla_\Phi$ Hermitian; on the quaternion conjugate $\Box_\Psi=-\Box_\Phi$; and the gradient written on the informational chart is $(\tilde\nabla^{\natural})_\Psi$, not $\tilde\nabla_\Psi$. The d'Alembertian negates, $\Box_\Psi=-\Box_\Phi$ in the same letters, because each sector carries its own Laplacian with the opposite sign, and both operators stay hyperbolic. At the level of an action the class is not inherited: $(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla$, which is $-\tilde\nabla\tilde X$ only for a Hermitian element that commutes with the operator.
 
 The three instances promised in the introduction are the element and its observable, where the switched four-momentum has a real energy coefficient and a real spectrum; the gradient, where the coefficients change class; and the Schrödinger equation, whose two writings name an observable and a generator and differ by the switch and one real rescaling. The quantum commutator, the interaction insertion and the thermal weight are three further instances, and each shows the switch supplying a real structure that a real coefficient needs.
 
@@ -459,10 +546,14 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 | $\tilde\nabla_\Phi$ | the gradient in the material reading, coefficients $(-i,1,1,1)$, anti-Hermitian |
 | $\tilde\nabla_\Psi=i\tilde\nabla_\Phi$ | the gradient in the informational reading, coefficients $(1,i,i,i)$, Hermitian |
 | $(\tilde\nabla^{\natural})_\Phi$, $(\tilde\nabla^{\natural})_\Psi$ | the quaternion conjugates, coefficients $(-i,-1,-1,-1)$ and $(1,-i,-i,-i)$ |
-| $\Delta_\Phi$, $\Delta_\Psi$ | the spatial Laplacians, $\Delta_\Phi=\sum_\eta\partial^{2}_{r_\eta}=-\Delta_\Psi$ |
-| $\Box_\Phi$, $\Box_\Psi$ | the d'Alembertians, $\Box_\Phi=-\partial^{2}_{r'_t}+\Delta_\Phi$ and $\Box_\Psi=-\Box_\Phi$ |
+| $\Delta_\Phi$, $\Delta_\Psi$ | the spatial Laplacians of the two charts, $\Delta_\Phi=\sum_\eta\partial^{2}_{r_\eta}$ and $\Delta_\Psi=\sum_\eta\partial^{2}_{r'_\eta}$, equal in the same letters |
+| $\Box_\Phi$, $\Box_\Psi$ | the d'Alembertians, $\Box_\Phi=-\partial^{2}_{r'_t}+\Delta_\Phi$ and $\Box_\Psi=+\partial^{2}_{r_t}-\Delta_\Psi$, the negative of $\Box_\Phi$ in the same letters |
 | $\tilde G_\Phi=-\frac{i}{\hbar c}\tilde R_\Psi$ | the generator, the switched observable of the Schrödinger equation |
 | $\tilde P_\Phi=i(E/c)e_t+\vec p$ | the four-momentum, material reading |
+| $\tilde P_\Psi=i\tilde P_\Phi$ | the four-momentum, informational reading, Hermitian, real spectrum $\{-(p'_t\pm\lvert\vec p_\Phi\rvert)\}$ |
+| $\tilde K_\Psi=i\tilde K_\Phi=\tilde P_\Psi/\hbar$, $\tilde J_\Psi=i\tilde J_\Phi$, $\tilde A_\Psi=i\tilde A_\Phi$ | the siblings of the wave number, the current and the connection; the connection's sibling makes minimal coupling keep its form, $i(\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi)=\tilde\nabla_\Psi+\frac{i\,ϙ}{\hbar}\tilde A_\Psi$ |
+| $\tilde\Xi_\Phi$, $\tilde\Xi_\Psi$ | the two sector parts of a field, $\tilde\Xi=\tilde\Xi_\Phi+\tilde\Xi_\Psi$; the switch of $\tilde\Xi_\Phi$ is the different field $i\tilde\Xi_\Phi$ |
+| $i\tilde V_\Phi=-c\,\mathcal B_\Psi$, $i\tilde{\mathcal L}_\Phi=-\tilde\Pi$ | two images that need no glyph: the boost factor, and minus a pure-state idempotent |
 | $\Rho=imc$ | the mass as a central element, imaginary in the material reading and real after the switch |
 | $\tilde{Ϛ}_\Psi$ | a state, informational reading, the corpus's trace-one normalisation |
 | $W=\mathrm{diag}(-i,1,1,1)$ | the Wick coefficient map, on the time slot only |
