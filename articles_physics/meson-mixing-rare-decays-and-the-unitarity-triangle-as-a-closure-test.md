@@ -20,9 +20,9 @@
 **The states.** A neutral meson that can turn into its antiparticle — $K^0$–$\bar K^0$, $B^0$–$\bar B^0$, $B_s^0$–$\bar B_s^0$, $D^0$–$\bar D^0$ — is a two-state system described by a non-Hermitian effective Hamiltonian,
 
 $$
-i\frac{d}{dt}\begin{pmatrix}\lvert P^0\rangle\\ \lvert\bar P^0\rangle\end{pmatrix}
-=\left[\begin{pmatrix}M&M_{12}\\M_{12}^{*}&M\end{pmatrix}-\frac{i}{2}\begin{pmatrix}\Gamma&\Gamma_{12}\\\Gamma_{12}^{*}&\Gamma\end{pmatrix}\right]
-\begin{pmatrix}\lvert P^0\rangle\\ \lvert\bar P^0\rangle\end{pmatrix},
+i\frac{d}{dt}\begin{pmatrix}\lvert P^0\rangle\ \lvert\bar P^0\rangle\end{pmatrix}
+=\left[\begin{pmatrix}M&M_{12}\\M_{12}^{*}&M\end{pmatrix}-\frac{i}{2}\begin{pmatrix}\Gamma&\Gamma_{12}\Gamma_{12}^{*}&\Gamma\end{pmatrix}\right]
+\begin{pmatrix}\lvert P^0\rangle\ \lvert\bar P^0\rangle\end{pmatrix},
 $$
 
 with $M_{12}$ and $\Gamma_{12}$ the dispersive and absorptive mixing amplitudes. The eigenvalues are

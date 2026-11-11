@@ -104,10 +104,10 @@ $$
 The four coefficients are related linearly by the **scattering matrix** $S(k_\Phi)$, defined by
 
 $$
-\begin{pmatrix} C \\ B \end{pmatrix}
+\begin{pmatrix} C \ B \end{pmatrix}
 =
-\begin{pmatrix} t & r_2 \\ r & t_2 \end{pmatrix}
-\begin{pmatrix} A \\ D \end{pmatrix}.
+\begin{pmatrix} t & r_2 \ r & t_2 \end{pmatrix}
+\begin{pmatrix} A \ D \end{pmatrix}.
 $$
 
 Here $t$ and $t_2$ are the transmission amplitudes for incidence from the left and from the right, and $r$ and $r_2$ the corresponding reflection amplitudes. The physically measured quantities for a wave incident from the left ($D=0$, $A=1$) are
@@ -203,8 +203,8 @@ Let $V(x)=V_0$ on $0<x<a$ and zero elsewhere, with $E<V_0$. The solution is osci
 $$
 \xi_{\mathrm{scl}}(x) =
 \begin{cases}
-\exp(ikx)+r\exp(-ikx), & x<0,\\
-A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\\
+\exp(ikx)+r\exp(-ikx), & x<0,\
+A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\
 t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
@@ -298,17 +298,17 @@ The formulas for the barrier and the well are the same expression continued in t
 It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_{\Phi,1}$ to $k_{\Phi,2}$ at the origin, continuity of $\xi_{\mathrm{scl}}$ and $d\xi_{\mathrm{scl}}/dx$ gives
 
 $$
-\begin{pmatrix} A \\ B \end{pmatrix}
+\begin{pmatrix} A \ B \end{pmatrix}
 =
 \frac{1}{2}
 \begin{pmatrix} 1 + k_{\Phi,2}/k_{\Phi,1} & 1 - k_{\Phi,2}/k_{\Phi,1} \\[2pt] 1 - k_{\Phi,2}/k_{\Phi,1} & 1 + k_{\Phi,2}/k_{\Phi,1} \end{pmatrix}
-\begin{pmatrix} A_2 \\ B_2 \end{pmatrix},
+\begin{pmatrix} A_2 \ B_2 \end{pmatrix},
 $$
 
 so that the coefficients on the far side are obtained by multiplying by the inverse of this step matrix. Across a region of length $a$ with wave vector $q$, the free propagation matrix is
 
 $$
-P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \\ 0 & \exp(-iqa) \end{pmatrix}.
+P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \ 0 & \exp(-iqa) \end{pmatrix}.
 $$
 
 A potential built from $n$ piecewise-constant regions therefore has a **transfer matrix** $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself $*$-unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is $*$-unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.
@@ -450,7 +450,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $J =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx} - \left(\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}\right)^\dagger\tilde{Ξ}_{\mathrm{sp}})$ | One-dimensional current |
 | $J = c\,k_\Phi/k_m(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = |\xi_{\mathrm{scl}}|^2$ | Density |
-| $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
+| $S = \begin{pmatrix} t & r_2 \ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
 | $\beta =\frac{m\,\lambda}{\hbar^{2}\,k_\Phi}$ | Dimensionless delta-potential coupling |
 | $E_b = -\frac{m\,\lambda^{2}}{2\,\hbar^{2}}$ | Bound state of the attractive delta |

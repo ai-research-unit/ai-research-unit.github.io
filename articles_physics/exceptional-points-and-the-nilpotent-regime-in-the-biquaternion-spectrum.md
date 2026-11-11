@@ -27,10 +27,10 @@ The characteristic polynomial and its discriminant are
 $$
 \boxed{\;p_{\tilde Q}(X)=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural},
 \qquad
-\Delta=4\left(Q_t^2-\langle\tilde Q\rangle_{\natural}\right)=-4B^2\;}.
+\mathcal{D}_{\mathrm{disc}}=4\left(Q_t^2-\langle\tilde Q\rangle_{\natural}\right)=-4B^2\;}.
 $$
 
-The spectrum degenerates exactly on the discriminant locus $\Delta=0$, that is, on $B=0$. That locus is one complex equation on the vector part, hence two real equations: the **isotropic cone** $(\vec Q,\vec Q)=0$ of the complex vector space, of real dimension four inside the six real dimensions of $\vec Q$.
+The spectrum degenerates exactly on the discriminant locus $\mathcal{D}_{\mathrm{disc}}=0$, that is, on $B=0$. That locus is one complex equation on the vector part, hence two real equations: the **isotropic cone** $(\vec Q,\vec Q)=0$ of the complex vector space, of real dimension four inside the six real dimensions of $\vec Q$.
 
 The scalar part decides which degeneracy lies there.
 
@@ -148,7 +148,7 @@ The algebra supplies the normal form at a point, not a family. An exceptional po
 
 The exceptional locus is complex. For a real vector part, and for every Hermitian element, $B=0$ forces $\vec Q=0$, so the degeneracy is diabolic. The physical reading of an exceptional point therefore requires a non-Hermitian effective description, and the step from an open system to a non-Hermitian element is an interpretation, not a theorem.
 
-A resonance pole is not an exceptional point. The pole $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ of *The Unstable State and the Complex Energy Pole in Biquaternionic Form* is a complex eigenvalue of the centre, a point of the resolvent; it is not a degeneracy of the biquaternion spectrum and it does not require a Jordan block. The two complex-energy phenomena are different, and the article keeps them apart.
+A resonance pole is not an exceptional point. The pole $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$ of *The Unstable State and the Complex Energy Pole in Biquaternionic Form* is a complex eigenvalue of the centre, a point of the resolvent; it is not a degeneracy of the biquaternion spectrum and it does not require a Jordan block. The two complex-energy phenomena are different, and the article keeps them apart.
 
 An exceptional point is not a measurement. The eigenprojections disappear at the point, so the Born rule has nothing to project on. The probability calculus of a non-normal element is the subject of *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum*, and it needs a metric that the exceptional point does not supply.
 
@@ -172,7 +172,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 | $(\vec X,\vec Y)$ | the complex bilinear form $X_xY_x+X_yY_y+X_zY_z$ on the vector part |
 | $B^2=(\vec Q,\vec Q)$ | the complex norm squared of the vector part |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
-| $\Delta=-4B^2$ | the discriminant of the characteristic polynomial |
+| $\mathcal{D}_{\mathrm{disc}}=-4B^2$ | the discriminant of the characteristic polynomial |
 | $\vec{Ζ}=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, defined for $B\neq0$ |
 | $N$ | a nonzero nilpotent, $N^2=0$ |

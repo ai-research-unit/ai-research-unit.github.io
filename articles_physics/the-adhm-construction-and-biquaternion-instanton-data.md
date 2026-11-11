@@ -138,14 +138,14 @@ B_1=B_2=0,
 \qquad
 I=(\rho,\;0),
 \qquad
-J=\begin{pmatrix}0\\ \rho\end{pmatrix},
+J=\begin{pmatrix}0\ \rho\end{pmatrix},
 \qquad \rho>0 .
 $$
 
 The complex equation is satisfied identically,
 
 $$
-\mu_{\mathbb C}=[B_1,B_2]+IJ = 0 + (\rho,\;0)\begin{pmatrix}0\\ \rho\end{pmatrix}=0 ,
+\mu_{\mathbb C}=[B_1,B_2]+IJ = 0 + (\rho,\;0)\begin{pmatrix}0\ \rho\end{pmatrix}=0 ,
 $$
 
 and the real equation is satisfied by the equality of the two moduli,

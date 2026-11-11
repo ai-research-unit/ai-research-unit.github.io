@@ -131,7 +131,7 @@ $$
 and substituting this back leaves
 $$
 \begin{aligned}
-\mathcal{L}_{\xi B}=\;&\tfrac{1}{8(m-a)}\sum_{\nu,\mu,\lambda,\rho,\delta}\epsilon_\nu\epsilon_\mu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}F_{\mu\lambda}\bigr)\bigl(\check c_{\nu\rho\delta}F_{\rho\delta}\bigr)+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda B^*_\nu\,i\check c_{\nu\mu\lambda}F_{\mu\lambda}\\
+\mathcal{L}_{\xi B}=\;&\tfrac{1}{8(m-a)}\sum_{\nu,\mu,\lambda,\rho,\delta}\epsilon_\nu\epsilon_\mu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}F_{\mu\lambda}\bigr)\bigl(\check c_{\nu\rho\delta}F_{\rho\delta}\bigr)+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda B^*_\nu\,i\check c_{\nu\mu\lambda}F_{\mu\lambda}\
 &-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial\xi/\partial x_\mu\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial Z_2^\mu/\partial x_\mu .
 \end{aligned}
 $$
@@ -221,7 +221,7 @@ $$
 both lines acting on the left, with the mass as the pairing of the two chiral parts and $\tilde\nabla^2$ not scalar. In the s-vector carrier the same pair is the source's two chiral parts,
 $$
 \begin{aligned}
-&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu-ieA_\nu\bigr)G^{\mathrm R}_\lambda-m\,G^{\mathrm L*}_\mu=0,\\
+&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu-ieA_\nu\bigr)G^{\mathrm R}_\lambda-m\,G^{\mathrm L*}_\mu=0,\
 &\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\,i\bigl(\partial/\partial x_\nu+ieA_\nu\bigr)G^{\mathrm L}_\lambda-m\,G^{\mathrm R*}_\mu=0,
 \end{aligned}
 $$
@@ -255,7 +255,7 @@ whose mass couples $G$ to $G^*$ and whose two chiral lines above are its two par
 The mass enters as a shift of the covariant derivative, exactly as the charge does. The two chiral equations are the source's Eq. (94), and the star sits on the $G^{\mathrm R}$ line:
 $$
 \begin{aligned}
-&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]^{*}G^{\mathrm R}_\lambda=0,\\
+&\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]^{*}G^{\mathrm R}_\lambda=0,\
 &\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\Bigl[\frac{\partial}{\partial x_\nu}+i\bigl(eA_\nu+mK_\nu\bigr)\Bigr]G^{\mathrm L}_\lambda=0 .
 \end{aligned}
 $$

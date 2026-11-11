@@ -116,7 +116,7 @@ $$
 The mixed products vanish because the off-diagonal units have vanishing scalar part, $\mathrm{Sc}(x)=\mathrm{Sc}(y)=0$, and the relevant products are off-diagonal matrix units. All ten inner products were recomputed from (4); the result is the off-diagonal tetrad metric
 
 $$
-g_{ab}[\mathrm{NP}] = \begin{pmatrix} 0 & -1 & 0 & 0\\ -1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1\\ 0 & 0 & 1 & 0\end{pmatrix}, \qquad (e_1,e_2,e_3,e_4)=(l,n,m,\bar m).
+g_{ab}[\mathrm{NP}] = \begin{pmatrix} 0 & -1 & 0 & 0\ -1 & 0 & 0 & 0\ 0 & 0 & 0 & 1\ 0 & 0 & 1 & 0\end{pmatrix}, \qquad (e_1,e_2,e_3,e_4)=(l,n,m,\bar m).
 \tag{5}
 $$
 
@@ -184,10 +184,10 @@ $$
 The first four are the contractions of $\vec\nabla_\Phi l$ with the tetrad legs,
 
 $$
-\kappa = \sum_a m_a D l_a, \qquad \sigma = \sum_a m_a \delta l_a, \qquad \rho = \sum_a m_a \bar\delta l_a, \qquad \tau = \sum_a m_a \Delta l_a,
+\kappa = \sum_a m_a D l_a, \qquad \sigma = \sum_a m_a \delta l_a, \qquad \rho = \sum_a m_a \bar\delta l_a, \qquad \tau = \sum_a m_a \delta l_a,
 $$
 
-where $D=\sum_a l_a\nabla_a$, $\Delta=\sum_a n_a\nabla_a$, $\delta=\sum_a m_a\nabla_a$ and $\bar\delta=\sum_a \bar m_a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\vec\nabla_\Phi n$, and the last four complete the components of $\vec\nabla_\Phi l$ and $\vec\nabla_\Phi n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
+where $D=\sum_a l_a\nabla_a$, $\mathcal{N}_{\mathrm{NP}}=\sum_a n_a\nabla_a$, $\delta=\sum_a m_a\nabla_a$ and $\bar\delta=\sum_a \bar m_a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\vec\nabla_\Phi n$, and the last four complete the components of $\vec\nabla_\Phi l$ and $\vec\nabla_\Phi n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
 
 In the framework the connection is valued in the bivector subspace. The parent article identifies the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ with the six-dimensional subspace $\{\vec G : \mathrm{Sc}(\vec G)=0\}$ — equivalently, under $Ξ$, the traceless $2\times2$ matrices — spanned by $\vec e_x,\vec e_y,\vec e_z$ and $i\vec e_x,i\vec e_y,i\vec e_z$, which is the complex-pure-vector subspace of $\mathbb{B}$. A connection 1-form takes values in that subspace and has one component per tetrad direction, giving
 
@@ -207,7 +207,7 @@ $$
 \begin{aligned}
 \tilde{Ξ}_{\mathrm{sp},0} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b l_c m_d, &\qquad
 \tilde{Ξ}_{\mathrm{sp},1} &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b l_c m_d, &\qquad
-\tilde{Ξ}_{\mathrm{sp},2} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b \bar m_c n_d, \\
+\tilde{Ξ}_{\mathrm{sp},2} &= \sum_{a,b,c,d} C_{abcd}\,l_a m_b \bar m_c n_d, \
 \tilde{Ξ}_{\mathrm{sp},3} &= \sum_{a,b,c,d} C_{abcd}\,l_a n_b \bar m_c n_d, &\qquad
 \tilde{Ξ}_{\mathrm{sp},4} &= \sum_{a,b,c,d} C_{abcd}\,\bar m_a n_b \bar m_c n_d,
 \end{aligned}
@@ -279,9 +279,9 @@ The root $x=0$ represents the null direction $l$ (more precisely the spinor $o$)
 
 $$
 \begin{array}{ll}
-\tilde{Ξ}_{\mathrm{sp},0} = 0 & l \text{ is a principal null direction (PND)},\\
-\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = 0 & l \text{ is a double PND},\\
-\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = \tilde{Ξ}_{\mathrm{sp},2} = 0 & l \text{ is a triple PND},\\
+\tilde{Ξ}_{\mathrm{sp},0} = 0 & l \text{ is a principal null direction (PND)},\
+\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = 0 & l \text{ is a double PND},\
+\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = \tilde{Ξ}_{\mathrm{sp},2} = 0 & l \text{ is a triple PND},\
 \tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},1} = \tilde{Ξ}_{\mathrm{sp},2} = \tilde{Ξ}_{\mathrm{sp},3} = 0 & l \text{ is a quadruple PND}.
 \end{array}
 \tag{15}
@@ -341,7 +341,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\varepsilon(o,o')$ | symplectic pairing of the spinor module |
 | $\Gamma_{abc}=(\nabla_a e_b)\cdot e_c$ | connection coefficients in the tetrad |
 | $\kappa,\sigma,\rho,\tau,\pi,\lambda,\mu,\nu,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |
-| $D,\Delta,\delta,\bar\delta$ | directional derivatives along $l,n,m,\bar m$ |
+| $D,\mathcal{N}_{\mathrm{NP}},\delta,\bar\delta$ | directional derivatives along $l,n,m,\bar m$ |
 | $C_{abcd}$ | Weyl tensor |
 | $\tilde{Ξ}_{\mathrm{sp},0},\dots,\tilde{Ξ}_{\mathrm{sp},4}$ | Weyl scalars, (9) |
 | $\tilde{Ξ}_{\mathrm{sp},ABCD}$ | self-dual Weyl spinor in $\mathrm{sym}^4 S$ |

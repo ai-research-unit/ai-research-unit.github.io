@@ -56,8 +56,8 @@ So the number of PMNS parameters depends on the neutrino's nature: six for Major
 $$
 U_{\mathrm{PMNS}}=
 \begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\\
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\
 s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\delta} & c_{23}c_{13}
 \end{pmatrix}
 \times\mathrm{diag}\!\left(1,e^{i\alpha_{21}/2},e^{i\alpha_{31}/2}\right) .
@@ -261,7 +261,7 @@ with the squares. The squares do not cancel the column phases; they add them, so
 **The asymmetry, in the oscillation channel.** For $\nu_\mu\to\nu_e$ against $\bar\nu_\mu\to\bar e$, the difference is proportional to $J$ times a product of three $\sin$ factors:
 
 $$
-\Delta P\equiv P(\nu_\mu\to\nu_e)-P(\bar\nu_\mu\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
+\delta P\equiv P(\nu_\mu\to\nu_e)-P(\bar\nu_\mu\to\bar e)=-16J\sin\frac{\delta m^2_{21}L}{4E}\sin\frac{\delta m^2_{31}L}{4E}\sin\frac{\delta m^2_{32}L}{4E} ,
 $$
 
 and this is an identity, not a parametrisation: it follows from the interference term above with $\sin(2x)=2\sin x\cos x$ and the three-mass-difference closure $\delta m^2_{31}=\delta m^2_{32}+\delta m^2_{21}$. The argument is $\delta m^2L/(4E)$ in all three factors — the same argument the $\sin^2$ term carries — and writing it as $\delta m^2L/(2E)$ as well would square the wrong function. So the asymmetry requires three nonzero mass differences, three nonzero angles, and a phase. All four conditions hold, and the asymmetry is at the per-cent to per-ten-cent level for a well-chosen baseline. That is why the current generation of long-baseline experiments is designed around it.

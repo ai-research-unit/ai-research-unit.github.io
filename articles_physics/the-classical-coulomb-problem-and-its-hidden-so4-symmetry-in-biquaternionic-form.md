@@ -262,7 +262,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 
 $$
 \begin{aligned}
-&\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},\\
+&\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},\
 &L_{\mathrm{pau},\vec e_x}=\gamma_2\gamma_3,\quad L_{\mathrm{pau},\vec e_y}=\gamma_3\gamma_1,\quad L_{\mathrm{pau},\vec e_z}=\gamma_1\gamma_2,\quad R_{\mathrm{pau},\vec e_x}=-i\gamma_0,\quad R_{\mathrm{pau},\vec e_y}=i\gamma_1\gamma_2\gamma_3,\quad R_{\mathrm{pau},\vec e_z}=-\gamma_0\gamma_1\gamma_2\gamma_3 .
 \end{aligned}
 $$
@@ -271,7 +271,7 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-&\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},\\
+&\gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},\
 &L_{\mathrm{axf},\vec e_x}=\gamma_2\gamma_3,\quad L_{\mathrm{axf},\vec e_y}=\gamma_3\gamma_1,\quad L_{\mathrm{axf},\vec e_z}=\gamma_1\gamma_2,\quad R_{\mathrm{axf},\vec e_x}=-i\gamma_0,\quad R_{\mathrm{axf},\vec e_y}=i\gamma_1\gamma_2\gamma_3,\quad R_{\mathrm{axf},\vec e_z}=-\gamma_0\gamma_1\gamma_2\gamma_3 .
 \end{aligned}
 $$

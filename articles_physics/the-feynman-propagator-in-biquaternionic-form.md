@@ -149,7 +149,7 @@ $$
 
 The action is written by what it does, so the display carries the test element and no second symbol. The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches, with the normalization of the time-ordered product and the fermionic relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
 
-Write the $p_0$ integral at fixed $\vec p$, and put $\delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec y$. Since
+Write the $p_0$ integral at fixed $\vec p$, and put $\delta t=x_0-y_0$ and $\delta\vec r=\vec r-\vec y$. Since
 
 $$
 p^2-m^{2}\,c^{2}=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-\frac{E_{\vec p}^2}{c^{2}},
@@ -198,7 +198,7 @@ in both lines the product of the two imaginary units being $i^2=-1$.
 Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\delta t<0$ it is
 
 $$
-\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\Delta h_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
+\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\delta h_t/(\hbar c)+i\vec p\cdot\delta\vec r/\hbar\big).
 $$
 
 Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The action is linear in the four-momentum, so flipping all four components flips its sign,

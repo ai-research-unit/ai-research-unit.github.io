@@ -29,7 +29,7 @@ This is the classic **Larmor precession** exercise. It exercises the Hamiltonian
 The spin-up state along the $x$-axis is the eigenvalue-$+1$ eigenvector of the Pauli matrix $\sigma_1$:
 
 $$
-|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \\ 1 \end{pmatrix}.
+|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} 1 \ 1 \end{pmatrix}.
 $$
 
 ### Step 2: The Hamiltonian
@@ -53,13 +53,13 @@ is the **Larmor frequency** and $S_z =\frac{\hbar}{2}\sigma_3$.
 The evolution operator is
 
 $$
-T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) & 0 \\ 0 & \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
+T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) & 0 \ 0 & \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
 $$
 
 The evolved state is
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) \\ \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
+|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) \ \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
 $$
 
 ### Step 4: The expectation value

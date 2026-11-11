@@ -175,7 +175,7 @@ The determinant of a fermionic fluctuation operator is the place where the frame
 $$
 \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\natural}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\mathcal{F}\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F} = \begin{pmatrix} -k_m & \mathcal{F}_R \\ \mathcal{F}_L & -k_m \end{pmatrix},
+\mathcal{F} = \begin{pmatrix} -k_m & \mathcal{F}_R \ \mathcal{F}_L & -k_m \end{pmatrix},
 $$
 which is standard. In the framework the spinor field is carried by the spinor module and the mass term is the chirality-off-diagonal, right-multiplication operator of the conventions article; the determinant is therefore that of a module operator whose chiral structure is nontrivial. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -254,7 +254,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $G_{\mathrm{prop}}(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
-| $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
+| $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
 

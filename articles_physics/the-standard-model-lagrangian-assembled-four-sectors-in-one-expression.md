@@ -106,7 +106,7 @@ with $T^a_\psi$ the colour generators in the representation of $\psi$ and $\tau^
 **The field and its potential.** One complex doublet,
 
 $$
-\varphi=\begin{pmatrix}\varphi^+\\ \varphi^0\end{pmatrix},
+\varphi=\begin{pmatrix}\varphi^+\ \varphi^0\end{pmatrix},
 \qquad
 Y_\varphi=\tfrac12 ,
 $$
@@ -128,7 +128,7 @@ The signs are the corpus's, by the rule of §*The Dictionary*: the kinetic term 
 $$
 v^2=\frac{\mu^2}{\lambda} ,
 \qquad
-\langle\varphi\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\\ v\end{pmatrix},
+\langle\varphi\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
 \qquad
 v=246.22\ \mathrm{GeV} .
 $$
@@ -152,7 +152,7 @@ with $a,b=1,2,3$ the generation labels and $Y^{u}$, $Y^{d}$, $Y^{e}$ general com
 **The conjugate doublet.** The up-type term cannot use $\varphi$, and this is the one place in the assembly where a second scalar object is needed. The conjugate doublet is
 
 $$
-\tilde\varphi=\begin{pmatrix}\varphi^{0*}\\ -\varphi^{+*}\end{pmatrix},
+\tilde\varphi=\begin{pmatrix}\varphi^{0*}\ -\varphi^{+*}\end{pmatrix},
 \qquad
 Y_{\tilde\varphi}=-\tfrac12 ,
 $$

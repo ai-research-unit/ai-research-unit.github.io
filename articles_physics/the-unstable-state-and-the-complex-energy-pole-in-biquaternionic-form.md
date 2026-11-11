@@ -125,7 +125,7 @@ $$
 \Sigma(E+i0^{+}) = \mathcal{E}_{\mathrm{shift}}(E) - \tfrac{i}{2}\,\Gamma(E),
 $$
 
-with $\Delta$ and $\Gamma$ real. The sum representation identifies them: the real part is the **level shift**, present even without a continuum, and the imaginary part is produced by the on-shell states only, through the delta contribution of each pole as it is pushed onto the axis,
+with $\mathcal{E}_{\mathrm{shift}}$ and $\Gamma$ real. The sum representation identifies them: the real part is the **level shift**, present even without a continuum, and the imaginary part is produced by the on-shell states only, through the delta contribution of each pole as it is pushed onto the axis,
 
 $$
 \Gamma(E) = 2\pi\sum_{n}\lvert\langle 0\lvert\tilde V_{\Phi}\rvert n\rangle\rvert^{2}\,\delta(E-E_n)
@@ -140,7 +140,7 @@ $$
 \boxed{\;z_\star = E_0 + \mathcal{E}_{\mathrm{shift}}(E_0) - \tfrac{i}{2}\,\Gamma(E_0) + O(\Gamma^{2})\;},
 $$
 
-to leading order in the width. The important point is that this zero does **not** lie on the first sheet, where the analytic structure of $G_{00}$ is the real axis with a cut. It lies on the **second sheet**, the one reached by continuing $z$ through the cut, across which the self-energy jumps by the discontinuity of the integral. That discontinuity is fixed by the same continuum density that gave the width: for a continuum of density $\rho$ and coupling $V_0$ the two boundary values of the self-energy differ by $-2\pi i\lvert V_0\rvert^{2}\rho = -i\,\Gamma$, so the continuation onto a second sheet replaces $\Sigma$ by $\Sigma\mp i\Gamma$, the two signs being the two sheets reached by going round the two ends of the cut. The decaying pole is the one on the sheet with the lower sign, $\Sigma_{\mathrm{II}}=\Sigma-i\Gamma$, whose denominator is $z-E_0-\Sigma(z)+i\Gamma$; its zero sits at $z_\star$ as stated. The opposite sign carries the zero to $E_0+\Delta+\tfrac{i}{2}\Gamma$, the mirror pole of the other sheet. The unstable state is therefore not an eigenstate of a non-Hermitian operator on the physical sheet; it is the shadow of the physical resolvent on the second one.
+to leading order in the width. The important point is that this zero does **not** lie on the first sheet, where the analytic structure of $G_{00}$ is the real axis with a cut. It lies on the **second sheet**, the one reached by continuing $z$ through the cut, across which the self-energy jumps by the discontinuity of the integral. That discontinuity is fixed by the same continuum density that gave the width: for a continuum of density $\rho$ and coupling $V_0$ the two boundary values of the self-energy differ by $-2\pi i\lvert V_0\rvert^{2}\rho = -i\,\Gamma$, so the continuation onto a second sheet replaces $\Sigma$ by $\Sigma\mp i\Gamma$, the two signs being the two sheets reached by going round the two ends of the cut. The decaying pole is the one on the sheet with the lower sign, $\Sigma_{\mathrm{II}}=\Sigma-i\Gamma$, whose denominator is $z-E_0-\Sigma(z)+i\Gamma$; its zero sits at $z_\star$ as stated. The opposite sign carries the zero to $E_0+\mathcal{E}_{\mathrm{shift}}+\tfrac{i}{2}\Gamma$, the mirror pole of the other sheet. The unstable state is therefore not an eigenstate of a non-Hermitian operator on the physical sheet; it is the shadow of the physical resolvent on the second one.
 
 ## The Pole in the Algebra
 
@@ -152,11 +152,11 @@ $$
 G_{00}(\bar z) = \overline{G_{00}(z)}.
 $$
 
-On the first sheet the denominator $z-E_0-\Sigma(z)$ inherits that symmetry: its zero set is mapped to itself by $z\mapsto\bar z$, so a complex zero would have to appear in a conjugate pair. No such pair exists, and the reason is structural: $G_{00}$, the resolvent of a Hermitian operator compressed onto one vector, is analytic off the real axis, so it has no pole there, and the unstable state therefore has no home on the first sheet at all. The symmetry is broken on the second sheet, where the branch term $i\Gamma$ is a fixed imaginary constant rather than a conjugate-symmetric function: the decaying pole at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets of the continuation — the retarded and the advanced one — and not two poles of a single function, and the retarded boundary condition is what selects the sheet. This is the same pairing that *Spectral Theory on Krein Spaces* records for the spectrum of a $J$-self-adjoint operator, where complex eigenvalues appear in conjugate pairs; here the pair is split across the two sheets, and the retarded condition keeps the decaying member. The algebra alone does not fix which sheet is realised: the boundary condition does.
+On the first sheet the denominator $z-E_0-\Sigma(z)$ inherits that symmetry: its zero set is mapped to itself by $z\mapsto\bar z$, so a complex zero would have to appear in a conjugate pair. No such pair exists, and the reason is structural: $G_{00}$, the resolvent of a Hermitian operator compressed onto one vector, is analytic off the real axis, so it has no pole there, and the unstable state therefore has no home on the first sheet at all. The symmetry is broken on the second sheet, where the branch term $i\Gamma$ is a fixed imaginary constant rather than a conjugate-symmetric function: the decaying pole at $E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\mathcal{E}_{\mathrm{shift}}+\tfrac{i}{2}\Gamma$ are the two second sheets of the continuation — the retarded and the advanced one — and not two poles of a single function, and the retarded boundary condition is what selects the sheet. This is the same pairing that *Spectral Theory on Krein Spaces* records for the spectrum of a $J$-self-adjoint operator, where complex eigenvalues appear in conjugate pairs; here the pair is split across the two sheets, and the retarded condition keeps the decaying member. The algebra alone does not fix which sheet is realised: the boundary condition does.
 
 ### The pole is central
 
-The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, and the equation that fixes the pole, $z-E_0-\Sigma(z)=0$, is an equation between complex numbers of the centre. The pole $z_\star$, the level shift $\Delta$, the width $\Gamma$ and the lifetime $\tau=\frac{\hbar}{\Gamma}$ are therefore **central**, whatever the direction of $\vec h_\Psi$ in the Hamiltonian and however the non-central part couples the slots of the module. This is the article's structural statement, and it is the theorem behind the fifth limit of *The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory* — a dynamics that preserves the Hermitian norm for every Hermitian generator forces its unit into the centre, *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* — read here at the level of a displaced pole. The same centrality that fixes the norm-preserving unit fixes the pole.
+The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, and the equation that fixes the pole, $z-E_0-\Sigma(z)=0$, is an equation between complex numbers of the centre. The pole $z_\star$, the level shift $\mathcal{E}_{\mathrm{shift}}$, the width $\Gamma$ and the lifetime $\tau=\frac{\hbar}{\Gamma}$ are therefore **central**, whatever the direction of $\vec h_\Psi$ in the Hamiltonian and however the non-central part couples the slots of the module. This is the article's structural statement, and it is the theorem behind the fifth limit of *The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory* — a dynamics that preserves the Hermitian norm for every Hermitian generator forces its unit into the centre, *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* — read here at the level of a displaced pole. The same centrality that fixes the norm-preserving unit fixes the pole.
 
 The centrality is not a coincidence of the models treated below. It is a consequence of taking the trace over the module to reach the scalar Green's function: the trace of a module operator is central, and any quantity read from the trace is central with it.
 
@@ -164,12 +164,12 @@ The centrality is not a coincidence of the models treated below. It is a consequ
 
 ## The Complex Angle of the Resonance
 
-The pole $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ is a complex energy, and the pole term of the evolution is the central element
+The pole $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$ is a complex energy, and the pole term of the evolution is the central element
 
 $$
 \tilde U_\star(r'_t)=\exp\!\Big(-\frac{i}{\hbar\,c}z_\star r'_t\Big)
 =\exp\!\Big(-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}\Big)\exp\!\Big(-\frac{iE_{R}\,r'_{t}}{\hbar\,c}\Big)e_t,
-\qquad E_R=E_0+\Delta .
+\qquad E_R=E_0+\mathcal{E}_{\mathrm{shift}} .
 $$
 
 The same element carries five descriptions, and they are worth setting side by side because the words "complex energy" and "complex angle" are often used for different entries.
@@ -233,7 +233,7 @@ The damping is the Hermitian part and the energy is the anti-Hermitian part. A s
 The state module splits into two orthogonal summands, and a Hamiltonian that couples them can be written in the corresponding block form. Let $\tilde\Pi$ be the idempotent of one summand and $S=S_1\oplus S_2$ the splitting $S_1=\tilde\Pi S$, $S_2=(e_t-\tilde\Pi)S$. In the module basis, with $\tilde H_\Psi$ Hermitian, the matrix image of the Hamiltonian is
 
 $$
-H = \begin{pmatrix} H_{\mathrm{c}} & V \\ V^{*} & H_{\mathrm{nc}}\end{pmatrix},
+H = \begin{pmatrix} H_{\mathrm{c}} & V \ V^{*} & H_{\mathrm{nc}}\end{pmatrix},
 $$
 
 where $H_{\mathrm{c}}$ governs the first slot, $H_{\mathrm{nc}}$ the second, and $V$ is the off-diagonal entry through which the two are coupled — the entry into which the non-central part $i\vec h_\Psi$ of $\tilde H_\Psi$ enters. The block identity of *The Resolvent Operator*, applied to this splitting, gives the Green's function of the first slot its reduced form,
@@ -284,10 +284,10 @@ and the whole analytic structure of the model is the logarithm: a cut on the ban
 
 ## The Decay Law and Its Limits
 
-The pole fixes the intermediate-time survival amplitude. Since the pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$,
+The pole fixes the intermediate-time survival amplitude. Since the pole is at $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$,
 
 $$
-A(r'_t)\simeq  \exp(-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}) = \exp(-\frac{i\,(E_0+\Delta)\,r'_{t}}{\hbar\,c})\,\exp(-\Gamma r'_t/(2\,\hbar)),
+A(r'_t)\simeq  \exp(-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}) = \exp(-\frac{i\,(E_0+\mathcal{E}_{\mathrm{shift}})\,r'_{t}}{\hbar\,c})\,\exp(-\Gamma r'_t/(2\,\hbar)),
 \qquad
 P(r'_t)\simeq  \exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c}),
 $$
@@ -335,9 +335,9 @@ The article therefore states an approximation with its window, not a law. It mak
 
 The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$, and its survival probability is $P(r'_t)=\lvert A(r'_t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(r'_t)=1-(\delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
-The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V_{\Phi}\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\mathcal{E}_{\mathrm{shift}}(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
+The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V_{\Phi}\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\mathcal{E}_{\mathrm{shift}}(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\mathcal{E}_{\mathrm{shift}}$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
-The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of *Spectral Theory on Krein Spaces*, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\frac{\hbar}{\Gamma}$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.
+The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\mathcal{E}_{\mathrm{shift}}+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of *Spectral Theory on Krein Spaces*, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\frac{\hbar}{\Gamma}$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.
 
 A coupling between the two slots of the module is eliminated by the block identity of *The Resolvent Operator*: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.
 
@@ -359,9 +359,9 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $G(z)=(z-\tilde H_\Psi)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
 | $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$ | Reduced resolvent of the distinguished state |
 | $\Sigma(z)$ | Self-energy |
-| $\mathcal{E}_{\mathrm{shift}}(E)$, $\Gamma(E)$ | Level shift and width, $\Sigma(E+i0^{+})=\Delta-\tfrac{i}{2}\Gamma$ |
+| $\mathcal{E}_{\mathrm{shift}}(E)$, $\Gamma(E)$ | Level shift and width, $\Sigma(E+i0^{+})=\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$ |
 | $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$ | Golden Rule width |
-| $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
+| $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t)=-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
 | $\tilde A_{\Phi}(r'_t)=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}\,e_{t}$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
 | $\tilde U_\star(r'_t)=\exp(-\frac{iz_{\star}\,r'_{t}}{\hbar\,c})$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |

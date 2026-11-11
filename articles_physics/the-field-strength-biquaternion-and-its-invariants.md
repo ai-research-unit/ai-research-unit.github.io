@@ -251,7 +251,7 @@ the fields transform as
 
 $$
 \begin{aligned}
-\vec E_2 &= \gamma\left(\vec E + \vec v\times\vec B\right) - \frac{\gamma-1}{v^2}\left(\vec v\cdot\vec E\right)\vec v,\\
+\vec E_2 &= \gamma\left(\vec E + \vec v\times\vec B\right) - \frac{\gamma-1}{v^2}\left(\vec v\cdot\vec E\right)\vec v,\
 \vec B_2 &= \gamma\left(\vec B - \frac{1}{c^2}\,\vec v\times\vec E\right) - \frac{\gamma-1}{v^2}\left(\vec v\cdot\vec B\right)\vec v.
 \end{aligned}
 $$

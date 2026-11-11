@@ -111,7 +111,7 @@ with $D_u=\mathrm{diag}(m_u,m_c,m_t)$ and $D_d=\mathrm{diag}(m_d,m_s,m_b)$. The 
 
 $$
 \boxed{\;\begin{aligned}
-J &= \mathrm{Im}\big(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\big)\\
+J &= \mathrm{Im}\big(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\big)\
 &= c_{12}\,c_{23}\,c_{13}^{2}\,s_{12}\,s_{23}\,s_{13}\,\sin\delta ,
 \end{aligned}\;}
 $$

@@ -15,7 +15,7 @@ R\in O(2),\quad \det R=-1,\quad R^2=I_2 ,
 $$
 an element of $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$, and the $\mathbb{Z}_2$ is the exchange of the two branches — the reversal of the contour's orientation. In the rotated basis the $2\times2$ Green's function matrix takes the form
 $$
-\mathcal G = \begin{pmatrix} G^{\mathrm{Kel}} & G^R \\ G^A & 0\end{pmatrix},
+\mathcal G = \begin{pmatrix} G^{\mathrm{Kel}} & G^R \ G^A & 0\end{pmatrix},
 $$
 with the $qq$ entry **exactly zero**; this was verified by explicit rotation of a consistent CTP matrix and is a general algebraic identity, not an approximation.
 - **Established (algebra).** At equilibrium the Keldysh component obeys the **fluctuation–dissipation relation**
@@ -61,7 +61,7 @@ which define the Keldysh, retarded, and advanced functions. These identities are
 
 **The two-branch action in the framework.** For the quadratic biquaternion action with central operator $W_{\mathrm{kinetic}}$ the two-branch action is $S[\tilde{Ξ}_+]-S[\tilde{Ξ}_-]$, and each branch's Gaussian is the one of the functional-integral article. The branch-space propagator matrix in the $(Ξ_+,Ξ_-)$ basis is therefore
 $$
-G_0 = \begin{pmatrix} W_{\mathrm{kinetic}}{}^{-1} & 0 \\ 0 & -W_{\mathrm{kinetic}}{}^{-1}\end{pmatrix},
+G_0 = \begin{pmatrix} W_{\mathrm{kinetic}}{}^{-1} & 0 \ 0 & -W_{\mathrm{kinetic}}{}^{-1}\end{pmatrix},
 $$
 block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation of this matrix is the equilibrium form with $G^{\mathrm{Kel}}=0$ — the free contour's matrix has no Keldysh component in the vacuum — and a nonzero Keldysh component appears only once the state is specified. Two structural points follow and are the framework's: the free propagator is central in each block, so the branch structure and the module structure are independently diagonal; and the sector decomposition of $W_{\mathrm{kinetic}}{}^{-1}$ multiplies each block, so a scalar biquaternion field's free CTP propagator is the standard one taken twice in the module and twice in the branch. The interactions couple the branches and the sectors; the vertex carries the relative sign of the two branches, which is what makes the loop integrals converge with the in-in boundary conditions rather than the Feynman ones.
 
@@ -87,7 +87,7 @@ The branch matrix is made physical by a rotation whose entries are the classical
 
 **The rotation.** Define the classical and quantum fields by
 $$
-\begin{pmatrix}\tilde{Ξ}_{cl}\\\tilde{Ξ}_q\end{pmatrix} = R\begin{pmatrix}\tilde{Ξ}_+\\\tilde{Ξ}_-\end{pmatrix},
+\begin{pmatrix}\tilde{Ξ}_{cl}\tilde{Ξ}_q\end{pmatrix} = R\begin{pmatrix}\tilde{Ξ}_+\tilde{Ξ}_-\end{pmatrix},
 \qquad
 R=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}.
 $$
@@ -103,11 +103,11 @@ so $R\in O(2)$. The group $O(2)=\mathrm{U}(1)\rtimes\mathbb{Z}_2$ is the group o
 
 **The rotated matrix.** Rotating the CTP matrix $G=\left(\begin{smallmatrix}G_{++}&G_{+-}\\G_{-+}&G_{--}\end{smallmatrix}\right)$ by $R$, $\mathcal G=R\,G\,R^{T}$ (with $R^T=R$), and using the sum rules gives
 $$
-\boxed{\;\mathcal G = \begin{pmatrix} G^{\mathrm{Kel}} & G^R \\ G^A & 0\end{pmatrix}\;}.
+\boxed{\;\mathcal G = \begin{pmatrix} G^{\mathrm{Kel}} & G^R \ G^A & 0\end{pmatrix}\;}.
 $$
 The $qq$ entry vanishes identically. With the consistent real set $G_{++}=2.5$, $G_{+-}=1$, $G_{-+}=3$, $G_{--}=1.5$ (so that $G_{++}+G_{--}=G_{+-}+G_{-+}=4$), the rotation gives
 $$
-\mathcal G = \begin{pmatrix} 4 & 1.5 \\ -0.5 & 0\end{pmatrix},
+\mathcal G = \begin{pmatrix} 4 & 1.5 \ -0.5 & 0\end{pmatrix},
 \qquad
 G^R=G_{++}-G_{+-}=1.5 ,
 \qquad
@@ -186,7 +186,7 @@ The generating-functional structure of the previous articles carries over with t
 
 **The contour generating functional.** Doubling the source,
 $$
-J = \begin{pmatrix}\tilde J_{\Phi,+}\\\tilde J_{\Phi,-}\end{pmatrix},
+J = \begin{pmatrix}\tilde J_{\Phi,+}\tilde J_{\Phi,-}\end{pmatrix},
 \qquad
 Z[\tilde J_{\Phi,+},\tilde J_{\Phi,-}] = \int\mathcal{D}\tilde{Ξ}_+\mathcal{D}\tilde{Ξ}_-\;\exp(\,iS[\tilde{Ξ}_+]-iS[\tilde{Ξ}_-]+i\int(\tilde J_{\Phi,+}\tilde{Ξ}_+-\tilde J_{\Phi,-}\tilde{Ξ}_-)) ,
 $$

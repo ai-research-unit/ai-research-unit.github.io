@@ -43,7 +43,7 @@ $$
 that is, by an arbitrary $2\times2$ block and by zero on the third level; in matrices, the image of $\mathbb{B}$ in $M_3(\mathbb{C})$ is the block-diagonal subalgebra $M_2(\mathbb{C})\oplus 0$,
 
 $$
-x\;\longmapsto\;\begin{pmatrix} x & 0\\ 0 & 0\end{pmatrix}.
+x\;\longmapsto\;\begin{pmatrix} x & 0\ 0 & 0\end{pmatrix}.
 $$
 
 The embedding is a homomorphism, but the third level is inert: every algebra element annihilates it. The operator that the physically interesting quantities require, the shift connecting the third level to the others,

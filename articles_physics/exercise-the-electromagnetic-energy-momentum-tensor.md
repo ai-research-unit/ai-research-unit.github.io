@@ -234,8 +234,8 @@ Both component equations were checked by direct recomputation from the definitio
 
 $$
 T_F = \frac{1}{2}\,cF\,\overline{cF}, \qquad cF = F - iF^*, \qquad
-F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \\ \vec E & -[\vec B]_\times \end{pmatrix}, \qquad
-F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \\ -\vec B & -[\vec E]_\times \end{pmatrix},
+F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \ \vec E & -[\vec B]_\times \end{pmatrix}, \qquad
+F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \ -\vec B & -[\vec E]_\times \end{pmatrix},
 $$
 
 with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F{}_{0\eta} = -S_\eta$ and $T_F{}_{\eta0} = S_\eta$, and the spatial block is the Maxwell stress $\sigma_{\nu\mu} = E_\nu E_\mu + B_\nu B_\mu - W\delta_{\nu\mu}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor — the row slot first, the column slot second — so it is not symmetric, and the asymmetry is precisely the information about which slot is the row. Multiplying by the operator column $(-\partial/\partial r'_t,\nabla)^{\mathsf T}$ gives the balance of this problem, $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu}$ equalling minus the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
@@ -259,7 +259,7 @@ $$
 $$
 where $W = \epsilon E_0^2\cos^2(kz-\omega r'_t/c)$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T_{00} = W$, $T_{03} = T_{30} = \frac{1}{c}S_z = W$, and $T_{33} = -\sigma_{33} = W$ survive:
 $$
-\boxed{\;T_{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_{\Phi,\mu} k_{\Phi,\nu}\;}.
+\boxed{\;T_{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \ 0 & 0 & 0 & 0 \ 0 & 0 & 0 & 0 \ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_{\Phi,\mu} k_{\Phi,\nu}\;}.
 $$
 The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $\vec k_\Phi$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $-T_{00} + T_{33} = -W + W = 0$, the minus on the time slot being $i^2$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_{\Phi,\mu} k_{\Phi,\nu}$ with $\sum_\mu(\partial/\partial x_\mu W)k_{\Phi,\mu} = k\left(\partial/\partial r'_t\,W + \partial/\partial r_z\,W\right) = 0$, using $\partial W/\partial r_z = -\frac{1}{c}\partial W/\partial r'_t$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $r'_t$.
 

@@ -102,7 +102,7 @@ holds exactly. These are the two standard identities of the Legendre transform; 
 
 **Finite-dimensional verification.** With a Hermitian positive-definite
 $$
-W_{\mathrm{kinetic}} \to K = \begin{pmatrix} 2 & 0.3 & 0 \\ 0.3 & 1.4 & 0.2 \\ 0 & 0.2 & 1.1 \end{pmatrix},
+W_{\mathrm{kinetic}} \to K = \begin{pmatrix} 2 & 0.3 & 0 \ 0.3 & 1.4 & 0.2 \ 0 & 0.2 & 1.1 \end{pmatrix},
 $$
 and source $J=(0.5,-0.4,0.9)$, the classical field is $\xi=A_{\mathrm{gau}}^{-1}J=(0.322647,-0.484316,0.906239)$, and
 $$

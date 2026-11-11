@@ -43,7 +43,7 @@ $$
 \omega_0 = \gamma B_0, \quad \omega_1 = \gamma B_1 .
 $$
 
-Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude; with $\Delta$ the detuning and $\Omega$ the Rabi rate they are all angular frequencies in $\mathrm{rad\,s^{-1}}$, the clock is the material length $r'_t=c\,t$, and every phase below is $\omega r'_t/c$. Each of the three terms lies in $\mathbb{B}_{\Psi}$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
+Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude; with $\mathcal{G}_{\mathrm{gap}}$ the detuning and $\Omega$ the Rabi rate they are all angular frequencies in $\mathrm{rad\,s^{-1}}$, the clock is the material length $r'_t=c\,t$, and every phase below is $\omega r'_t/c$. Each of the three terms lies in $\mathbb{B}_{\Psi}$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
 
 The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\vec r(r'_t) = (\cos(\omega_0 r'_t/c), -\sin(\omega_0 r'_t/c), 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
 
@@ -104,13 +104,13 @@ $$
 \boxed{\;\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in  \mathbb{B}_{\Psi} \;}
 $$
 
-which is time independent. Writing $\Delta = \omega_0-\omega$ for the **detuning**, the effective Hamiltonian is a fixed Hermitian element of the informational sector,
+which is time independent. Writing $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ for the **detuning**, the effective Hamiltonian is a fixed Hermitian element of the informational sector,
 
 $$
-\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}\,i\left(\omega_1 \vec e_x + \Delta \vec e_z\right)
+\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}\,i\left(\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z\right)
 = -\frac{\hbar\,\Omega}{2}\,i\,\vec u_R,
 \qquad
-\vec u_R = \frac{\omega_1 \vec e_x + \Delta \vec e_z}{\Omega},
+\vec u_R = \frac{\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z}{\Omega},
 $$
 
 with
@@ -123,10 +123,10 @@ the **generalized Rabi frequency**. Every quantity in the driven problem has now
 
 ### Resonance
 
-Resonance is the condition $\omega = \omega_0$, i.e. $\Delta = 0$. Then
+Resonance is the condition $\omega = \omega_0$, i.e. $\mathcal{G}_{\mathrm{gap}} = 0$. Then
 
 $$
-\tilde{H}_{\Psi,R}\big|_{\Delta=0} = -\frac{\hbar\,\omega_{1}}{2}\,i\vec e_x,
+\tilde{H}_{\Psi,R}\big|_{\mathcal{G}_{\mathrm{gap}}=0} = -\frac{\hbar\,\omega_{1}}{2}\,i\vec e_x,
 $$
 
 a purely transverse effective Hamiltonian: the longitudinal component of the effective field vanishes, $\vec u_R = \vec e_x$, and the effective Larmor precession is about the $x$-axis at the Rabi frequency $\omega_1$. This is the algebraic statement of resonance: the rotating frame corotates with the drive exactly, so the longitudinal part of the field, $B_0-\omega/\gamma$, is cancelled. Off resonance the residual longitudinal field tilts $\vec u_R$ away from the equator, the effective precession cone opens, and the maximum transition probability is reduced.
@@ -143,11 +143,11 @@ $$
 \tilde u_H(r'_t) = \exp\!\left(-\frac{i\,\tilde{H}_{\Psi,R}\,r'_{t}}{\hbar\,c}\right).
 $$
 
-Since $-\frac{i\,H_{R}}{\hbar}= -\tfrac12(\omega_1 \vec e_x + \Delta \vec e_z)$ and the square of the generator is $-\tfrac14(\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2)e_t = -\tfrac14\Omega^2 e_t$, the exponential is a rotation about $\vec u_R$:
+Since $-\frac{i\,H_{R}}{\hbar}= -\tfrac12(\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z)$ and the square of the generator is $-\tfrac14(\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2)e_t = -\tfrac14\Omega^2 e_t$, the exponential is a rotation about $\vec u_R$:
 
 $$
 \tilde u_H(r'_t) = \exp\!\left(-\frac{\Omega r'_t}{2\,c}\,\vec u_R\right)
-= \cos\frac{\Omega r'_t}{2\,c}\,e_t - \sin\frac{\Omega r'_t}{2\,c}\;\frac{\omega_1 \vec e_x + \Delta \vec e_z}{\Omega} .
+= \cos\frac{\Omega r'_t}{2\,c}\,e_t - \sin\frac{\Omega r'_t}{2\,c}\;\frac{\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z}{\Omega} .
 $$
 
 The exponent is a real quaternion, so $\tilde u_H\in\mathbb{B}_{H}$ is a rotor and the rotation it generates is a spatial rotation of the Bloch vector about $\vec u_R$ at the rate $\Omega$. The state in the laboratory frame is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde u_{\mathrm r}(r'_t)\tilde{Ϛ}_{\Psi,R}(r'_t)\tilde u_{\mathrm r}(r'_t)^{*}$, and the transition probability is the normalised Hermitian form, read through the trace with the fixed idempotent $\tilde\Pi_2(\vec u_z)$. Restoring the frame rotor and evaluating the trace gives the standard result
@@ -196,12 +196,12 @@ The state at any time can be written $\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac12(e_t + i
 $$
 \boxed{\;d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r\;},
 \qquad
-\vec\omega_{\mathrm{eff}} = (-\omega_1, 0, -\Delta),
+\vec\omega_{\mathrm{eff}} = (-\omega_1, 0, -\mathcal{G}_{\mathrm{gap}}),
 $$
 
-for the effective Hamiltonian $\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}i(\omega_1 \vec e_x+\Delta \vec e_z)$. This is a rigid rotation of $\vec r$ about the fixed axis $-\vec u_R$ at the rate $\Omega$. Three cases are worth separating.
+for the effective Hamiltonian $\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}i(\omega_1 \vec e_x+\mathcal{G}_{\mathrm{gap}} \vec e_z)$. This is a rigid rotation of $\vec r$ about the fixed axis $-\vec u_R$ at the rate $\Omega$. Three cases are worth separating.
 
-- **Resonance** ($\Delta = 0$): the rotation axis is the $x$-axis, the Bloch vector rotates in the $yz$-plane, and a spin initially along $+z$ passes through the equator and reaches $-z$ after a half-period — the $\pi$-pulse.
+- **Resonance** ($\mathcal{G}_{\mathrm{gap}} = 0$): the rotation axis is the $x$-axis, the Bloch vector rotates in the $yz$-plane, and a spin initially along $+z$ passes through the equator and reaches $-z$ after a half-period — the $\pi$-pulse.
 - **Large detuning** ($|\mathcal{G}_{\mathrm{gap}}|\gg\omega_1$): the axis is close to $-z$, the rotation cone is narrow, and the spin remains near its initial pole, executing small oscillations of amplitude $\sim\omega_1/|\mathcal{G}_{\mathrm{gap}}|$ — the dispersive regime.
 - **Exact antiresonance** is not a special point for a circular drive; it is special only for a linear drive, where the counter-rotating component becomes corotating. This is the algebraic content of the distinction between the two polarisations.
 
@@ -247,7 +247,7 @@ $$
 = -\frac{\hbar}{2}\Big[(\omega_0-\omega)i\vec e_z + \omega_1 i\vec e_x\Big].
 $$
 
-The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \Delta \vec e_z)/\Omega$, with $\Delta = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_{\Psi,R} = -\frac{\hbar\,\omega_{1}}{2}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
+The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \mathcal{G}_{\mathrm{gap}} \vec e_z)/\Omega$, with $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_{\Psi,R} = -\frac{\hbar\,\omega_{1}}{2}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
 
 The transition probability is the normalised Hermitian form, read through the trace $P_\downarrow(r'_t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the Rabi formula
 
@@ -255,7 +255,7 @@ $$
 P_\downarrow(r'_t) = \frac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\,\sin^2\!\left(\frac{\Omega r'_t}{2\,c}\right),
 $$
 
-which reduces to $\sin^2(\omega_1r'_t/c/2)$ on resonance. The $\pi$-pulse $r'_t = \pi c/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi c/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\Delta)$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
+which reduces to $\sin^2(\omega_1r'_t/c/2)$ on resonance. The $\pi$-pulse $r'_t = \pi c/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi c/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\mathcal{G}_{\mathrm{gap}})$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
 
 ## Summary of Notation
 
@@ -270,12 +270,12 @@ which reduces to $\sin^2(\omega_1r'_t/c/2)$ on resonance. The $\pi$-pulse $r'_t 
 | $\vec B(r'_t) = B_0\vec u_z+B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ | Static field plus corotating drive |
 | $\omega_0 = \gamma B_0$ | Larmor frequency |
 | $\omega_1 = \gamma B_1$ | Rabi frequency |
-| $\Delta = \omega_0-\omega$ | Detuning |
+| $\mathcal{G}_{\mathrm{gap}} = \omega_0-\omega$ | Detuning |
 | $\tilde H_\Psi(r'_t) = -\frac{\hbar\,\omega_{0}}{2}i\vec e_z-\frac{\hbar\,\omega_{1}}{2}(i\vec e_x\cos(\omega r'_t/c)-i\vec e_y\sin(\omega r'_t/c))$ | Laboratory Hamiltonian |
 | $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$ | Rotating-frame rotor |
 | $\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}[(\omega_0-\omega)i\vec e_z+\omega_1i\vec e_x]$ | Effective Hamiltonian in the rotating frame |
 | $\Omega = \sqrt{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}$ | Generalized Rabi frequency (spectral gap) |
-| $\vec u_R = (\omega_1\vec e_x+\Delta \vec e_z)/\Omega$ | Effective rotation axis |
+| $\vec u_R = (\omega_1\vec e_x+\mathcal{G}_{\mathrm{gap}} \vec e_z)/\Omega$ | Effective rotation axis |
 | $P_\downarrow(r'_t) = \tfrac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\sin^2\!\left(\Omega r'_t/(2c)\right)$ | Rabi transition probability |
 | $\pi/\omega_1$, $\pi/(2\omega_1)$ | $\pi$-pulse, $\pi/2$-pulse durations |
 | $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ | Bloch equation in the rotating frame |

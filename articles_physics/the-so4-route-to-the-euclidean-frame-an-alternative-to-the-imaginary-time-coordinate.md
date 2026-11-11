@@ -60,7 +60,7 @@ The real-group route is worth recording because what it supplies, it supplies st
 The spinor module of $\mathrm{Spin}(4)=\mathrm{SU}(2)\times\mathrm{SU}(2)$ is the sum of the two half-spinor modules,
 
 $$
-\Delta=\bigl(\tfrac12,0\bigr)\oplus\bigl(0,\tfrac12\bigr),
+\mathcal{S}_{\mathrm{rep}}=\bigl(\tfrac12,0\bigr)\oplus\bigl(0,\tfrac12\bigr),
 \qquad
 \dim_{\mathbb{C}}=2+2=4 ,
 $$

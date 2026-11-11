@@ -110,7 +110,7 @@ Z[A] = \int \mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{
 $$
 and the integral is Gaussian: it evaluates to the determinant of the operator,
 $$
-Z[A] = \det\begin{pmatrix}-k_m&\tilde D\\ \tilde D^{\natural}&-k_m\end{pmatrix} .
+Z[A] = \det\begin{pmatrix}-k_m&\tilde D\ \tilde D^{\natural}&-k_m\end{pmatrix} .
 $$
 The bosonic and fermionic measures, the Gaussian integration and the determinant are the subject of the corpus's fermionic path-integral article; that article constructs them and this one takes them as given. What the algebra supplies here is the operator whose determinant is taken: the two covariant gradients in one block array, whose determinant reduces to $\Box-k_m^{2}$ on one value and whose value is the product over modes of $\det\ell_{-i\tilde K_{\Phi}}=(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)^2$ for one chiral value — the square of the symbol of the d'Alembertian, which is the Dirac determinant — and the square of that for the pair, one factor for each value. The mass is the coefficient that the condensate of the companion article fixes.
 
@@ -230,12 +230,12 @@ recomputed as $9$ at $k=(2,1,0,0)$. It is singular exactly when $k$ is null, and
 **The kernel on the null cone.** Left multiplication by a null symbol maps that six-dimensional real space into the four-dimensional algebra, and the image has dimension four. The kernel is therefore two-dimensional, and it consists of null bivectors. Recomputed for five null wave vectors, with an off-cone row as control:
 $$
 \begin{array}{c|c|c|c}
-k & \text{rank} & \dim\ker & \lvert f^2\rvert\ \text{on the kernel}\\ \hline
-(2,1,0,0) & 6 & 0 & \text{empty}\\
-(1,1,0,0) & 4 & 2 & 4.4\times10^{-16},\ 2.2\times10^{-16}\\
-(1,0,1,0) & 4 & 2 & 2.2\times10^{-16},\ 3.3\times10^{-16}\\
-(1,0,0,1) & 4 & 2 & 2.2\times10^{-16},\ 2.2\times10^{-16}\\
-(2,1,1,\sqrt2) & 4 & 2 & 1.2\times10^{-16},\ 2.6\times10^{-16}\\
+k & \text{rank} & \dim\ker & \lvert f^2\rvert\ \text{on the kernel}\ \hline
+(2,1,0,0) & 6 & 0 & \text{empty}\
+(1,1,0,0) & 4 & 2 & 4.4\times10^{-16},\ 2.2\times10^{-16}\
+(1,0,1,0) & 4 & 2 & 2.2\times10^{-16},\ 3.3\times10^{-16}\
+(1,0,0,1) & 4 & 2 & 2.2\times10^{-16},\ 2.2\times10^{-16}\
+(2,1,1,\sqrt2) & 4 & 2 & 1.2\times10^{-16},\ 2.6\times10^{-16}\
 (1,0.6,0.8,0) & 4 & 2 & 1.5\times10^{-14},\ 2.8\times10^{-16}
 \end{array}
 $$
@@ -379,7 +379,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values: the eigenspaces of right multiplication by $\vec e_z$ with eigenvalues $-i$ and $+i$, each of complex dimension two |
 | $\mathrm{tr}$ | The trace of a complex-linear operator on the four coefficients of the field |
 | $\ell_h,\ \rho_\omega$ | Left multiplication by $h$, right multiplication by the pseudoscalar; $\rho_\omega$ is the measure's insertion, and $\ell_h\rho_\omega$ is the one two-sided shape the article uses |
-| $\begin{pmatrix}-k_m&\tilde D\\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
+| $\begin{pmatrix}-k_m&\tilde D\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | The two covariant lines of the pair in one block array; a matrix, not an element |
 | $\mathcal{H}=-(\tilde D\tilde D^{\natural})_E$ | The continued regulator operator, whose scalar part is $-\Box_E$ |
 | $a(x)=-\dfrac{ϙ^2}{32\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Regulated trace density, the index density |
 | $A(x)=2a(x)=-\dfrac{ϙ^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Anomaly density (Fujikawa and Adler–Bell–Jackiw) |
@@ -387,7 +387,7 @@ the framework's own second invariant. The axial divergence is the ABJ form, with
 | $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ | Fermion measure of the functional integral |
 | $U=e^{\alpha\omega}=\cos\alpha\,\mathbb 1+\sin\alpha\,\omega$ | Chiral rotation; $\alpha$ a central scalar function |
 | $J=(\det U)^{-2}=\exp(-2i\int d^4r\,\alpha a)$ | Jacobian of the measure under the rotation |
-| $Z[A]=\det\begin{pmatrix}-k_m&\tilde D\\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | Fermion determinant |
+| $Z[A]=\det\begin{pmatrix}-k_m&\tilde D\ \tilde D^{\natural}&-k_m\end{pmatrix}$ | Fermion determinant |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\xi\,i\vec e_x)$ | The Dirac bilinear, with its fixed right multiplier |
 | $j_{\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\vec e_\mu\tilde{Ξ}_{\mathrm{sp}}$ | Vector current |
 | $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\omega\vec e_\mu\tilde{Ξ}_{\mathrm{sp}}$ | Axial current |

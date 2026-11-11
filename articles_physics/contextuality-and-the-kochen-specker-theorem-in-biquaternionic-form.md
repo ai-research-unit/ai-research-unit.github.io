@@ -48,7 +48,7 @@ so exactly one idempotent of each context is assigned the value one. **Noncontex
 For the native qubit the module has complex dimension two, and every context contains at most two orthogonal rank-one idempotents, $\tilde\Pi_1(\vec u_z)$ and $\tilde\Pi_2(\vec u_z)$. Two orthogonal rank-one idempotents of a qubit are the only possible pair, and a $\{0,1\}$ assignment to them consistent with $\tilde\Pi_1+\tilde\Pi_2 = e_t$ is immediate. Extending to all observables, one may assign to each direction $\vec u_z$ the value
 
 $$
-v_\lambda\bigl(\tilde\Pi_{1,2}(\vec u_z)\bigr) = \begin{cases}1 & \pm\,\vec u_z\cdot\vec u_\lambda > 0,\\ 0 & \text{otherwise,}\end{cases}
+v_\lambda\bigl(\tilde\Pi_{1,2}(\vec u_z)\bigr) = \begin{cases}1 & \pm\,\vec u_z\cdot\vec u_\lambda > 0,\ 0 & \text{otherwise,}\end{cases}
 $$
 
 for a fixed hidden direction $\vec u_\lambda$, with a convention on the measure-zero equator. Every context of the qubit is a pair of antipodal idempotents, and the assignment is consistent within each; there is no constraint linking two different directions, because two non-collinear rank-one idempotents of a qubit are not orthogonal and therefore do not lie in a common context. Hence **no Kochen–Specker obstruction exists for a single qubit**, which is the familiar statement that the theorem requires dimension at least three. The single-qubit noncontextual model is due to Bell (1966).

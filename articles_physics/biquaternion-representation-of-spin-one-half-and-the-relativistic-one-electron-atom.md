@@ -155,8 +155,8 @@ $$
 
 $$
 \begin{aligned}
-D(r_x,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_z\sin\frac{\theta}{2},\\
-D(r_y,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_y\sin\frac{\theta}{2},\\
+D(r_x,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_z\sin\frac{\theta}{2},\
+D(r_y,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_y\sin\frac{\theta}{2},\
 D(r_z,\theta) &= e_t\cos\frac{\theta}{2}-\vec e_x\sin\frac{\theta}{2}.
 \end{aligned}
 $$
@@ -168,8 +168,8 @@ $$
 $$
 \boxed{\;
 \begin{aligned}
-D^{*} S_xD &= S_x,\\
-D^{*} S_yD &= \cos\theta\,S_y-\sin\theta\,S_z,\\
+D^{*} S_xD &= S_x,\
+D^{*} S_yD &= \cos\theta\,S_y-\sin\theta\,S_z,\
 D^{*} S_zD &= \cos\theta\,S_z+\sin\theta\,S_y.
 \end{aligned}\;}
 $$
@@ -238,7 +238,7 @@ whose two fixed elements are, up to the factor $\sqrt2$, the two states of the p
 
 $$
 \begin{aligned}
--\frac{\hbar\,c\,G}{r} -\frac{\hbar\,c\,k}{r}G + mc^2F -\frac{\hbar\,z\,ca_{0}}{r}F &= EF,\\\frac{\hbar\,c\,F}{r} -\frac{\hbar\,c\,k}{r}F - mc^2G -\frac{\hbar\,z\,ca_{0}}{r}G &= EG.
+-\frac{\hbar\,c\,G}{r} -\frac{\hbar\,c\,k}{r}G + mc^2F -\frac{\hbar\,z\,ca_{0}}{r}F &= EF,\frac{\hbar\,c\,F}{r} -\frac{\hbar\,c\,k}{r}F - mc^2G -\frac{\hbar\,z\,ca_{0}}{r}G &= EG.
 \end{aligned}
 $$
 
@@ -249,7 +249,7 @@ $$
 $$
 \begin{aligned}
 \rho(\theta,\theta_{\mathrm{azm}})=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
-+C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\\
++C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\
 &+C_3^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
 +C_4^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
 \end{aligned}

@@ -180,9 +180,9 @@ $$
 where $\vec r = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the **Bloch vector**, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:
 
 $$
-\sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
-\sigma_2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
-\sigma_3 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
+\sigma_1 = \begin{pmatrix} 0 & 1 \ 1 & 0 \end{pmatrix}, \quad
+\sigma_2 = \begin{pmatrix} 0 & -i \ i & 0 \end{pmatrix}, \quad
+\sigma_3 = \begin{pmatrix} 1 & 0 \ 0 & -1 \end{pmatrix}.
 $$
 
 The **positivity** of $\rho$ is equivalent to the condition

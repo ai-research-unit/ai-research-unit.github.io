@@ -604,9 +604,9 @@ has a particular solution $g_0\in C^2(0,a)$ such that $g_0$ **and** $1/g_0$ are 
 $$
 u=c_1u_1+c_2u_2,
 \qquad
-u_1=g_0\!\!\sum_{\substack{n=0\\ n\ \text{even}}}^{\infty}\!\!\frac{\omega^nX^{(n)}_{+}}{n!},
+u_1=g_0\!\!\sum_{\substack{n=0\ n\ \text{even}}}^{\infty}\!\!\frac{\omega^nX^{(n)}_{+}}{n!},
 \qquad
-u_2=g_0\!\!\sum_{\substack{n=1\\ n\ \text{odd}}}^{\infty}\!\!\frac{\omega^nX^{(n)}_{-}}{n!},
+u_2=g_0\!\!\sum_{\substack{n=1\ n\ \text{odd}}}^{\infty}\!\!\frac{\omega^nX^{(n)}_{-}}{n!},
 $$
 
 where the coefficients are generated from $X^{(0)}_{+}=X^{(0)}_{-}\equiv1$ by two interleaved recursions,

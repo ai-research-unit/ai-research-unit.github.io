@@ -27,9 +27,9 @@ The fourth part is practical. Section *Migrating from the Pauli Framework* gives
 The Pauli matrices are
 
 $$
-\sigma_1=\begin{pmatrix}0&1\\ 1&0\end{pmatrix},\qquad
-\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\qquad
-\sigma_3=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}.
+\sigma_1=\begin{pmatrix}0&1\ 1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\ i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\ 0&-1\end{pmatrix}.
 $$
 
 Two of them carry $i$ or carry zeros on the diagonal. The third is real and diagonal. That difference is the subject of this section, and it is not a difference between three operators. It is a difference between three positions in a list, produced by the order in which the list was built.
@@ -38,7 +38,7 @@ The same asymmetry appears in the two-dimensional image of a general element. Th
 
 $$
 \mathsf M_2(\tilde Q)=Q_t\,\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)
-=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\ -iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
+=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\ -iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
 
 The diagonal of this matrix carries $Q_t$ and $Q_z$. The off-diagonal carries $Q_x$ and $Q_y$. The trace and the determinant are unaffected — the trace is $2Q_t$ and the determinant is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ in every display — but the shape of the array is not neutral. It puts one spatial coefficient in the diagonal slots and the other two in the off-diagonal slots, and a reader has no way to learn from the array that this was a decision.
@@ -75,12 +75,12 @@ The arrays of the four units show the direction twice. The time unit is the iden
 
 $$
 L_{\mathrm{pau},e_t}=\mathrm I_4,\qquad
-L_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0&0&0\\ 0&i&0&0\\ 0&0&-i&0\\ 0&0&0&i\end{pmatrix},
+L_{\mathrm{pau},\vec e_z}=\begin{pmatrix}-i&0&0&0\ 0&i&0&0\ 0&0&-i&0\ 0&0&0&i\end{pmatrix},
 $$
 
 $$
-L_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i&0&0\\ -i&0&0&0\\ 0&0&0&-i\\ 0&0&-i&0\end{pmatrix},\qquad
-L_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix}.
+L_{\mathrm{pau},\vec e_x}=\begin{pmatrix}0&-i&0&0\ -i&0&0&0\ 0&0&0&-i\ 0&0&-i&0\end{pmatrix},\qquad
+L_{\mathrm{pau},\vec e_y}=\begin{pmatrix}0&-1&0&0\ 1&0&0&0\ 0&0&0&-1\ 0&0&1&0\end{pmatrix}.
 $$
 
 Three statements follow, and each is a statement about the page and not about the algebra.
@@ -175,9 +175,9 @@ so that $\gamma_0[\mathbb{B}_{\Phi}]^2=+\mathrm I_4$ and $\gamma_\eta[\mathbb{B}
 In the Pauli display of the previous section the five become
 
 $$
-\gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\\ \mathrm I_2&0\end{pmatrix},\qquad
-\gamma_\eta[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_\eta\\ -\sigma_\eta&0\end{pmatrix},\qquad
-\gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\\ 0&\mathrm I_2\end{pmatrix}.
+\gamma_0[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\mathrm I_2\ \mathrm I_2&0\end{pmatrix},\qquad
+\gamma_\eta[\mathbb{B}_{\Phi}]=\begin{pmatrix}0&\sigma_\eta\ -\sigma_\eta&0\end{pmatrix},\qquad
+\gamma_5[\mathbb{B}_{\Phi}]=\begin{pmatrix}-\mathrm I_2&0\ 0&\mathrm I_2\end{pmatrix}.
 $$
 
 This is the block form that the Peirce frame produces. It is not a form chosen afterwards, and that is the point of the section.
@@ -306,9 +306,9 @@ $$
 L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,\qquad
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&-Q_z&Q_y\
+Q_y&Q_z&Q_t&-Q_x\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -319,12 +319,12 @@ The four unit arrays show why no direction can enter.
 
 $$
 L_{\mathrm{axf},e_t}=\mathrm I_4,\qquad
-L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\\ 1&0&0&0\\ 0&0&0&-1\\ 0&0&1&0\end{pmatrix},
+L_{\mathrm{axf},\vec e_x}=\begin{pmatrix}0&-1&0&0\ 1&0&0&0\ 0&0&0&-1\ 0&0&1&0\end{pmatrix},
 $$
 
 $$
-L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\ 0&0&0&1\\ 1&0&0&0\\ 0&-1&0&0\end{pmatrix},\qquad
-L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\ 0&0&-1&0\\ 0&1&0&0\\ 1&0&0&0\end{pmatrix}.
+L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\ 0&0&0&1\ 1&0&0&0\ 0&-1&0&0\end{pmatrix},\qquad
+L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\ 0&0&-1&0\ 0&1&0&0\ 1&0&0&0\end{pmatrix}.
 $$
 
 All three spatial arrays have zero diagonal. Not one of them is preferred, and none of them can be read as "the diagonal one".

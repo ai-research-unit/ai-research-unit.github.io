@@ -157,7 +157,7 @@ The smallest code that corrects an arbitrary single-qubit error is the five-qubi
 
 $$
 \begin{aligned}
-\tilde U_1 &= X Z Z X e_t, & \tilde U_2 &= e_t X Z Z X,\\
+\tilde U_1 &= X Z Z X e_t, & \tilde U_2 &= e_t X Z Z X,\
 \tilde U_3 &= X e_t X Z Z, & \tilde U_4 &= Z X e_t X Z,
 \end{aligned}
 $$

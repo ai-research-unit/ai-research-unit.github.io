@@ -40,7 +40,7 @@ The three statements about the representations were verified. The permutation ma
 $$
 \sigma_1\mapsto\begin{pmatrix}-t&1\\0&1\end{pmatrix} ,
 \qquad
-\sigma_2\mapsto\begin{pmatrix}1&0\\ t&-t\end{pmatrix} ,
+\sigma_2\mapsto\begin{pmatrix}1&0\ t&-t\end{pmatrix} ,
 $$
 
 satisfies the braid relation for general $t$ — verified at a real and at a complex value of $t$ — but not $\sigma_i^2=I$ unless $t$ takes special values, so that it is a genuine representation of the braid group and not of the symmetric group. And the one-dimensional representation $\sigma_i\mapsto \exp(i\theta)$ satisfies the braid relation identically for every $\theta$, which is the algebraic statement that the statistics angle is a free parameter in $2+1$ dimensions.

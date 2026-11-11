@@ -45,7 +45,7 @@ The custodial symmetry is a property of the scalar sector of a spontaneously bro
 **The scalar multiplet as a matrix.** A complex $SU(2)_L$ doublet of hypercharge $Y = \tfrac12$ has four real components. They may be arranged in a $2\times2$ matrix
 
 $$
-H = \begin{pmatrix} \xi^{0*} & \xi^{+*} \\ -\xi^{+*} & \xi^{0*} \end{pmatrix},
+H = \begin{pmatrix} \xi^{0*} & \xi^{+*} \ -\xi^{+*} & \xi^{0*} \end{pmatrix},
 $$
 
 so that the electroweak group acts on the left and the hypercharge acts on the right,
@@ -197,7 +197,7 @@ and the neutral matrix in the $(W^3,B)$ basis is
 
 $$
 \mathcal{M}^2 = \frac{v^2}{4}
-\begin{pmatrix} g^2 & -g\,g_{\mathrm Y} \\ -g\,g_{\mathrm Y} & g_{\mathrm Y}^2 \end{pmatrix},
+\begin{pmatrix} g^2 & -g\,g_{\mathrm Y} \ -g\,g_{\mathrm Y} & g_{\mathrm Y}^2 \end{pmatrix},
 \qquad
 \det\mathcal{M}^2 = 0,\qquad
 \mathrm{tr}\,\mathcal{M}^2 = \frac{v^2}{4}\left(g^2+g_{\mathrm Y}^2\right),

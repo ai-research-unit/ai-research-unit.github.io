@@ -75,9 +75,9 @@ Read slot by slot, the image is fixed by four correspondences, one per coefficie
 $$
 \boxed{\;
 \begin{aligned}
-x_t&=-x'_t,&\quad&\text{time},\\
-x'_x&=+x_x,&\quad&\text{space }x,\\
-x'_y&=+x_y,&\quad&\text{space }y,\\
+x_t&=-x'_t,&\quad&\text{time},\
+x'_x&=+x_x,&\quad&\text{space }x,\
+x'_y&=+x_y,&\quad&\text{space }y,\
 x'_z&=+x_z,&\quad&\text{space }z,
 \end{aligned}}
 $$

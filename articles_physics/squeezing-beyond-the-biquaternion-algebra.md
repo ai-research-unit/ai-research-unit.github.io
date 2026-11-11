@@ -134,7 +134,7 @@ $$
 \exp(\,i\theta_{\mathrm{pha}})I_2\begin{pmatrix}1\\0\end{pmatrix}=\exp(\,i\theta_{\mathrm{pha}})\begin{pmatrix}1\\0\end{pmatrix},
 \qquad
 \exp(\,i\alpha\sigma_1/2)\begin{pmatrix}1\\0\end{pmatrix}
-=\begin{pmatrix}\cos(\alpha/2)\\ i\sin(\alpha/2)\end{pmatrix},
+=\begin{pmatrix}\cos(\alpha/2)\ i\sin(\alpha/2)\end{pmatrix},
 $$
 
 so the central operation preserves the component weights while the non-central one transfers weight from the first component to the second. The second is a module rotation; a squeeze built on it is spin squeezing. The identity of the matrix images and the transfer of weight were checked in explicit two-by-two arithmetic. The central squeeze, by contrast, cannot write a nonzero second component into a state whose second component is zero: it is a scalar, and scalars do not mix components.

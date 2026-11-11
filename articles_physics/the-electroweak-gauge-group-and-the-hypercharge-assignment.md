@@ -124,8 +124,8 @@ The coefficients are the multiplicities: the quark doublet is six states, each q
 
 $$
 M=\begin{pmatrix}
-2 & -1 & -1 & 0 & 0\\
-3 & 0 & 0 & 1 & 0\\
+2 & -1 & -1 & 0 & 0\
+3 & 0 & 0 & 1 & 0\
 6 & -3 & -3 & 2 & -1
 \end{pmatrix} .
 $$

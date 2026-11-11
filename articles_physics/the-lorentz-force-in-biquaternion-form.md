@@ -62,9 +62,9 @@ This is the biquaternion transcription of the Minkowski force $F_{\mathrm{lor},\
 $$
 F_{\mu\nu} =
 \begin{pmatrix}
-0 & iE_x/c & iE_y/c & iE_z/c \\
--iE_x/c & 0 & B_z & -B_y \\
--iE_y/c & -B_z & 0 & B_x \\
+0 & iE_x/c & iE_y/c & iE_z/c \
+-iE_x/c & 0 & B_z & -B_y \
+-iE_y/c & -B_z & 0 & B_x \
 -iE_z/c & B_y & -B_x & 0
 \end{pmatrix},
 $$

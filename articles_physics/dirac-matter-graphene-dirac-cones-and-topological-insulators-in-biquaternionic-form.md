@@ -35,7 +35,7 @@ $$
 linear in momentum and vanishing at $\vec p = 0$: the bands touch at the Dirac point and there is no gap. A finite **mass** term opens one,
 
 $$
-H = v_F\,\boldsymbol{\sigma}\cdot\vec p + \Delta\,\sigma_z ,
+H = v_F\,\boldsymbol{\sigma}\cdot\vec p + \mathcal{G}_{\mathrm{gap}}\,\sigma_z ,
 \qquad
 E = \pm\sqrt{v_F^2p^2 + \mathcal{G}_{\mathrm{gap}}^2},
 $$
@@ -79,7 +79,7 @@ This is the article's central caution. A construction that simply renames "left 
 
 ## The Gap and the Framework's Mass
 
-Where the framework *does* speak clearly is the gap. In the parent the mass term is the linear pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, in which the gradient is off-diagonal in the two components and $k_m$ is the coefficient relating them; in the two-sided dictionary the same term multiplies on the right by $\vec e_z$ and conjugates the coefficients. In graphene the same role is played by any perturbation that **breaks the sublattice symmetry**: a staggered on-site energy $\Delta$ on the two sublattices inserts $\mathcal{G}_{\mathrm{gap}}\sigma_z$ into the effective Hamiltonian and opens a gap $2\Delta$. Read in the framework's terms, this is the appearance of the mass: a term that relates the two components of the pair and lifts the cone from a point to a hyperboloid. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Where the framework *does* speak clearly is the gap. In the parent the mass term is the linear pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, in which the gradient is off-diagonal in the two components and $k_m$ is the coefficient relating them; in the two-sided dictionary the same term multiplies on the right by $\vec e_z$ and conjugates the coefficients. In graphene the same role is played by any perturbation that **breaks the sublattice symmetry**: a staggered on-site energy $\mathcal{G}_{\mathrm{gap}}$ on the two sublattices inserts $\mathcal{G}_{\mathrm{gap}}\sigma_z$ into the effective Hamiltonian and opens a gap $2\mathcal{G}_{\mathrm{gap}}$. Read in the framework's terms, this is the appearance of the mass: a term that relates the two components of the pair and lifts the cone from a point to a hyperboloid. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Two further gap-opening mechanisms have the same algebraic shape. The **Haldane mass** breaks time-reversal symmetry and gives a gapped state with a quantised Hall conductance but no net magnetic flux. The **Kane–Mele mass** is a spin-dependent, time-reversal-symmetric version, obtained in the framework by giving the two spin species opposite mass terms. In every case the algebraic statement is the same: the mass is the chirality-mixing term, and to make a topological insulator rather than a trivial one, one must introduce *two* such masses with opposite signs — or one must start from a material whose band ordering is already inverted. The framework names the term and does not choose its sign; the material does that.
 
@@ -166,7 +166,7 @@ The biquaternion framework transcribes these equations exactly and locates two s
 | $\gamma_0 \approx 2.8$ eV | Nearest-neighbour hopping of graphene |
 | $K_+$, $K_-$ | The two inequivalent zone corners (valleys) |
 | $g_v = 2$ | Valley degeneracy |
-| $\Delta$ | Sublattice-symmetry-breaking gap parameter, mass $m=\mathcal{G}_{\mathrm{gap}}/v_F^2$ |
+| $\mathcal{G}_{\mathrm{gap}}$ | Sublattice-symmetry-breaking gap parameter, mass $m=\mathcal{G}_{\mathrm{gap}}/v_F^2$ |
 | $\mathcal T$, $\mathcal T^2=-1$ | Time-reversal operator and its Kramers sign |
 | $\mathbb Z_2$ | Topological invariant of the time-reversal-symmetric insulator |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Framework sectors; the mass couples the minimal left ideals |

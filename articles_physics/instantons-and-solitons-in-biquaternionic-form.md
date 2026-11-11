@@ -105,7 +105,7 @@ $$
 = \frac{1}{2}\,\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}
 =
 \begin{cases}
-\dfrac{2i}{c}\,I_2 & \text{(Lorentzian, } i r'_t\text{ convention)},\\[2mm]
+\dfrac{2i}{c}\,I_2 & \text{(Lorentzian, } i r'_t\text{ convention)},\[2mm]
 2\,I_2 & \text{(Euclidean)},
 \end{cases}
 \qquad

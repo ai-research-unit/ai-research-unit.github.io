@@ -92,7 +92,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}F_L=mF_R .
 $$
 
-Both gradients act on the left, and no right multiplication and no conjugation enters. On the Dirac module $\Delta=\mathbb B$ the pair is a four-component equation, and it is the equation reduced below.
+Both gradients act on the left, and no right multiplication and no conjugation enters. On the Dirac module $\mathcal{S}_{\mathrm{rep}}=\mathbb B$ the pair is a four-component equation, and it is the equation reduced below.
 
 **The two-sided form.** Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through $\vec e_z=-\omega$, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ is the pure part of the gradient and $\mathcal N$ names the left-hand side. The operator reads
 
@@ -112,7 +112,7 @@ for a field $F\in\mathbb B$, since $i\partial/\partial r'_t=-\partial/\partial R
 |+-|+-|+-|
 | Equation | $\tilde\nabla_\Phi F_R=mF_L$, $(\tilde\nabla_\Phi)^{\natural}F_L=mF_R$ | $\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial r'_t+D_3)F-mi\overline F\vec e_z$ |
 | Multiplication | left by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left by $i\partial/\partial r'_t$ and $D_3$; right by $\vec e_z$; antilinear bar |
-| Field | $F=F_L+F_R\in\Delta=\mathbb B$ | $F\in\mathbb B$ |
+| Field | $F=F_L+F_R\in\mathcal{S}_{\mathrm{rep}}=\mathbb B$ | $F\in\mathbb B$ |
 | Mass | off-diagonal pairing of the chiral halves | $-mi\overline F\vec e_z$: a conjugation and a direction |
 | Chirality | the central sign, $\mp1$ on the two halves | the right multiplication by $-i\vec e_z$ |
 | Use | the formulation and its kinematics | the dictionary, the Cauchy theory, the integral representation |

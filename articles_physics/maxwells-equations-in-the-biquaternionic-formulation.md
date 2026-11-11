@@ -264,12 +264,12 @@ The physically relevant Green's function is the **retarded** one, which vanishes
 $$
 \begin{aligned}
 \tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}_\Phi)^{\natural}\,G_\Box
-&=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - R\right)\bigl(-i\,e_t + \vec u_R\bigr)\\
+&=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - R\right)\bigl(-i\,e_t + \vec u_R\bigr)\
 &\quad+\frac{1}{4\pi R^2}\,\delta\!\left(r'_t - R\right)\vec u_R,
 \end{aligned}
 $$
 
-where $G_\Box(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R)$ is the scalar retarded kernel of the wave operator, $\delta'$ is the derivative of the delta with respect to its argument, $R = \sqrt{r_x^2+r_y^2+r_z^2}$, and $\vec u_R = (r_x \vec e_x + r_y \vec e_y + r_z \vec e_z)/R$ is the unit radial biquaternion. It satisfies $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})G_\Box_\Phi = \Box_\Phi G_\Box_\Phi\,e_t = -\delta(\tilde{Q})\,e_t$, the unit $e_t$ being the one carried by the right-hand side of the defining equation, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
+where $G_\Box(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R)$ is the scalar retarded kernel of the wave operator, $\delta'$ is the derivative of the delta with respect to its argument, $R = \sqrt{r_x^2+r_y^2+r_z^2}$, and $\vec u_R = (r_x \vec e_x + r_y \vec e_y + r_z \vec e_z)/R$ is the unit radial biquaternion. It satisfies $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})G_{\Box_\Phi} = \Box_\Phi G_{\Box_\Phi}\,e_t = -\delta(\tilde{Q})\,e_t$, the unit $e_t$ being the one carried by the right-hand side of the defining equation, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
 
 The solution of the inhomogeneous equation is then the retarded convolution
 
@@ -279,11 +279,11 @@ $$
 
 where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.
 
-The scalar part of that formula is where the integrability condition acts, and it is worth writing out. Since $\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde\nabla_\Phi)^{\natural}G_\Box_\Phi$, the derivatives in $(\tilde\nabla_\Phi)^{\natural}$ can be moved from the kernel onto the source without changing any sign — the change of variable contributes one minus per derivative and the integration by parts the other — and the minus on the vector part of $(\tilde\nabla_\Phi)^{\natural}$ meets the minus in $\vec v = -\nabla G_\Box$, so the two terms of the scalar part agree. The result is
+The scalar part of that formula is where the integrability condition acts, and it is worth writing out. Since $\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi}$, the derivatives in $(\tilde\nabla_\Phi)^{\natural}$ can be moved from the kernel onto the source without changing any sign — the change of variable contributes one minus per derivative and the integration by parts the other — and the minus on the vector part of $(\tilde\nabla_\Phi)^{\natural}$ meets the minus in $\vec v = -\nabla G_\Box$, so the two terms of the scalar part agree. The result is
 
 $$
 \mathrm{Sc}\bigl(\tilde F\bigr)
-=\sqrt{\mu}\int G_\Box_\Phi(\tilde Q-\tilde{R}_{\Phi,2})\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\bigr)(\tilde{R}_{\Phi,2})\,d^4R_2 .
+=\sqrt{\mu}\int G_{\Box_\Phi}(\tilde Q-\tilde{R}_{\Phi,2})\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\bigr)(\tilde{R}_{\Phi,2})\,d^4R_2 .
 $$
 
 So the boxed solution is a pure vector exactly when $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}) = 0$, and when that condition fails the field it returns carries a scalar whose value is the retarded average of the violation. The constraint is therefore not an extra condition imposed beside the formula: it is the statement that the formula's output lies in the space in which $\tilde F$ is defined.
@@ -483,14 +483,14 @@ The biquaternionic formulation pays no such price, because it eliminates nothing
 **A fourth route: the matrix form, and what makes it work.** The arrays printed in this subsection are the object of the subsection: it reports an external display and compares that display with the element form of this article, so the arrays are shown and nothing of this article is computed with them. Daniel Henry Gottlieb writes the same system as a single **matrix** equation, in which the field is a $4 \times 4$ matrix and the divergence is a column of operators acting on it. In his units and conventions ($c = 1$, Heaviside–Lorentz, metric signature $(-,+,+,+)$, $r'_t$ the time coordinate) the real skew operator of the Lorentz law and its dual are
 
 $$
-F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \\ \vec E & -[\vec B]_\times \end{pmatrix}, \qquad
-F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \\ -\vec B & -[\vec E]_\times \end{pmatrix},
+F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \ \vec E & -[\vec B]_\times \end{pmatrix}, \qquad
+F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \ -\vec B & -[\vec E]_\times \end{pmatrix},
 $$
 
 with $[\vec a]_\times$ the matrix of $\vec w \mapsto \vec a \times \vec w$; the paper writes the lower-right block of $F$ as $\times\vec B$, whose action is $\vec w\mapsto\vec w\times\vec B = -[\vec B]_\times\vec w$, which is the same object. The complexification $cF := F - iF^*$ is the matrix of a single complex three-vector,
 
 $$
-cF = \begin{pmatrix} 0 & \vec N^{\mathsf T} \\ \vec N & i[\vec N]_\times \end{pmatrix}, \qquad \vec N = \vec E + i\vec B,
+cF = \begin{pmatrix} 0 & \vec N^{\mathsf T} \ \vec N & i[\vec N]_\times \end{pmatrix}, \qquad \vec N = \vec E + i\vec B,
 $$
 
 where $\vec N$ is the Riemann–Silberstein vector of *The Field-Strength Biquaternion* above, written with $c=1$ as the paper's units require; the letter $\vec A$ is reserved in this article for the vector potential and is not used here.
@@ -498,9 +498,9 @@ where $\vec N$ is the Riemann–Silberstein vector of *The Field-Strength Biquat
 and with the operator column $(-\partial/\partial r'_t, \nabla)^{\mathsf T}$ read entry by entry against the matrix — each operator differentiating the matrix entry beside it — the four equations become the three statements
 
 $$
-F\begin{pmatrix} -\partial/\partial r'_t \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \vec J \end{pmatrix}, \qquad
-F^*\begin{pmatrix} -\partial/\partial r'_t \\ \nabla \end{pmatrix} = \begin{pmatrix} -\mathrm{div}\,\vec B \\ \partial/\partial r'_t\vec B + \mathrm{rot}\,\vec E \end{pmatrix}, \qquad
-cF\begin{pmatrix} -\partial/\partial r'_t \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \vec J \end{pmatrix}.
+F\begin{pmatrix} -\partial/\partial r'_t \ \nabla \end{pmatrix} = \begin{pmatrix} \rho \ \vec J \end{pmatrix}, \qquad
+F^*\begin{pmatrix} -\partial/\partial r'_t \ \nabla \end{pmatrix} = \begin{pmatrix} -\mathrm{div}\,\vec B \ \partial/\partial r'_t\vec B + \mathrm{rot}\,\vec E \end{pmatrix}, \qquad
+cF\begin{pmatrix} -\partial/\partial r'_t \ \nabla \end{pmatrix} = \begin{pmatrix} \rho \ \vec J \end{pmatrix}.
 $$
 
 The first holds identically, because it is the two definitions $\rho = \mathrm{div}\,\vec E$ and $\vec J = \mathrm{rot}\,\vec B - \partial/\partial r'_t\vec E$; the second vanishes exactly when the two homogeneous laws hold; so the third, the paper's one equation, holds exactly when the Maxwell system holds. Recomputing the three on fields built from potentials, $\vec B = \mathrm{rot}\,\vec A$ and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, gives agreement to $6 \times 10^{-17}$ for the first and the third and $1 \times 10^{-17}$ for the vanishing of the second, and on a field that violates the homogeneous laws the discrepancy in the third is exactly $i\left(\mathrm{div}\,\vec B,\; -(\partial/\partial r'_t\vec B + \mathrm{rot}\,\vec E)\right)$, so the equivalence is exact rather than numerical coincidence. The paper also records the version of the same equation for the four fields $\vec E, \vec B, \vec D, \vec H$, in which $\vec D + i\vec B$ occupies the vector slots: the shape of the matrix is unchanged, but the paper notes that the square of that matrix is no longer a multiple of the identity — as it is for the form above, where $cF^2 = \langle\vec N,\vec N\rangle I$ — and that this property singles out the first form among all matrices of the second. Both statements were checked: $cF^2 = \langle\vec N,\vec N\rangle I$ exactly, and the second form's square misses a multiple of the identity by at least $14$ over $100$ random pairs of vectors.
@@ -508,12 +508,12 @@ The first holds identically, because it is the two definitions $\rho = \mathrm{d
 **The dual form, and why it holds.** The equation has a dual in which the matrix carries the operators and the vector carries the field. With
 
 $$
-c\nabla := \begin{pmatrix} 0 & \nabla^{\mathsf T} \\ \nabla & i[\nabla]_\times \end{pmatrix},
+c\nabla := \begin{pmatrix} 0 & \nabla^{\mathsf T} \ \nabla & i[\nabla]_\times \end{pmatrix},
 $$
 
 the system reads $(\partial/\partial r'_t I - c\nabla)\left(0,\; -\overline{\vec E + i\vec B}\right)^{\mathsf T} = \left(\rho,\; \vec J\right)^{\mathsf T}$, again exactly equivalent, and the two forms are one construction seen from two sides: in the first the matrix is the field and the column the operators, in the second the matrix is the operators and the column the field. Recomputing this form on the same fields gives agreement to machine precision, with one caveat of transcription: the conjugate bar in the column is required. Without it the scalar row still gives $\rho$ and the vector rows are wrong, which is how the formula extracts from the source and is why it is not stated here without the bar.
 
-The paper writes two further equations of the same shape, in which the four-potential $(\xi_{\mathrm{scp}}, \vec A)$ replaces the field in the column and the operator matrix acquires the potential in its entries; they are the potential-level counterparts of the two field-level equations, and they are the paper's route to the wave equation and to the covariant gauge condition $\partial/\partial r'_t\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A = 0$. As printed, both carry a defect in the vector part, and this is recorded rather than reproduced: the first gives $\partial/\partial r'_t\vec A - i\,\mathrm{rot}\,\vec A$ where the definition $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$ requires the missing term $-\nabla\xi_{\mathrm{scp}}$, so it holds only in a gauge with $\nabla\xi_{\mathrm{scp}} = 0$, and the second gives $\partial/\partial r'_t\vec A + \nabla\xi_{\mathrm{scp}} + i\,\mathrm{rot}\,\vec A$ where $-\vec E - i\vec B = \partial/\partial r'_t\vec A + \nabla\xi_{\mathrm{scp}} - i\,\mathrm{rot}\,\vec A$ is required, a sign on the magnetic term. Recomputing both against the definitions, the discrepancies are exactly $|\nabla\xi_{\mathrm{scp}}|$ and $|2\vec B|$ respectively, term for term; the scalar rows and the operator identity $c\nabla^2 = \Delta I$ on which the reduction rests are unaffected, since the scalar row involves only $\partial/\partial r'_t\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A$ and neither defect touches it. The duality between the two potential equations is therefore a statement about the two operator matrices, not a statement that the printed columns are already correct, and the mechanism below is what carries it.
+The paper writes two further equations of the same shape, in which the four-potential $(\xi_{\mathrm{scp}}, \vec A)$ replaces the field in the column and the operator matrix acquires the potential in its entries; they are the potential-level counterparts of the two field-level equations, and they are the paper's route to the wave equation and to the covariant gauge condition $\partial/\partial r'_t\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A = 0$. As printed, both carry a defect in the vector part, and this is recorded rather than reproduced: the first gives $\partial/\partial r'_t\vec A - i\,\mathrm{rot}\,\vec A$ where the definition $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$ requires the missing term $-\nabla\xi_{\mathrm{scp}}$, so it holds only in a gauge with $\nabla\xi_{\mathrm{scp}} = 0$, and the second gives $\partial/\partial r'_t\vec A + \nabla\xi_{\mathrm{scp}} + i\,\mathrm{rot}\,\vec A$ where $-\vec E - i\vec B = \partial/\partial r'_t\vec A + \nabla\xi_{\mathrm{scp}} - i\,\mathrm{rot}\,\vec A$ is required, a sign on the magnetic term. Recomputing both against the definitions, the discrepancies are exactly $|\nabla\xi_{\mathrm{scp}}|$ and $|2\vec B|$ respectively, term for term; the scalar rows and the operator identity $c\nabla^2 = \Delta_\Phi I$ on which the reduction rests are unaffected, since the scalar row involves only $\partial/\partial r'_t\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A$ and neither defect touches it. The duality between the two potential equations is therefore a statement about the two operator matrices, not a statement that the printed columns are already correct, and the mechanism below is what carries it.
 
 The reason the dual pairs agree is an algebraic identity, and it is the source of everything else in this route. The matrices of the complex three-vectors satisfy, for every pair of vectors,
 
@@ -530,7 +530,7 @@ $$
 for all $\vec N_1, \vec N_2$. The commutation is the whole mechanism: it is why the matrix of the field times the column of operators equals the matrix of the operators times the column of the field, and it is what the source itself names as the reason, together with the algebra it names as the origin of the commutation — the left and the right regular representations of the biquaternions. In the operator case the same identity becomes
 
 $$
-c\nabla^2 = \Delta I, \qquad (\partial/\partial r'_t I - c\nabla)(\partial/\partial r'_t I + c\nabla) = (\partial^2/\partial {r'_{t}}^2 - \Delta_\Phi) I,
+c\nabla^2 = \Delta_\Phi I, \qquad (\partial/\partial r'_t I - c\nabla)(\partial/\partial r'_t I + c\nabla) = (\partial^2/\partial {r'_{t}}^2 - \Delta_\Phi) I,
 $$
 
 both recomputed at the finite-difference floor, and the second is the paper's decoupling into the wave equation, written as a product of two first-order factors: it is the same factorization as $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ of the biquaternionic gradient, with the operators reorganized and the signs adapted.
@@ -897,7 +897,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $\tilde{A}_{\Phi}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
-| $G_\Box$, $\tilde G_{\Phi,\tilde\nabla}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R)$ and the first-order kernel $(\tilde\nabla_\Phi)^{\natural}G_\Box_\Phi$ |
+| $G_\Box$, $\tilde G_{\Phi,\tilde\nabla}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R)$ and the first-order kernel $(\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi}$ |
 | $\delta'$ | Derivative of the delta with respect to its argument |
 | $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector; $\tilde F = i\sqrt{\epsilon}\,\vec N$ |
 | $L_a$, $R_b$ | Left and right multiplication, by $a$ on the left and by $b$ on the right |
@@ -940,7 +940,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic energy–momentum and the Lorentz transformation of the potential.
 - A. W. Conway, "On the applications of quaternions to some recent developments of electrical theory", *Proceedings of the Royal Irish Academy* **29** (1911) 1–9, and L. Silberstein, "Quaternionic form of relativity", *Philosophical Magazine* **23** (1912) 790–809, for the compact biquaternionic Maxwell equation $\nabla\tilde{F}=-4\pi J$ used here.
 - C. W. Kilmister, "The application of certain linear quaternion functions to tensor analysis", *Proceedings of the Royal Irish Academy* **57** (1955) 37–99, for the distinction between the electromagnetic field **bivector** and the field **operator** (tensor).
-- D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation compared in *A fourth route* above: the single complex matrix equation $cF(-\partial/\partial r'_t,\nabla)^{\mathsf T} = (\rho,\vec J)^{\mathsf T}$, the dual form with the operator matrix $c\nabla$, the operator identities $c\nabla^2 = \Delta I$ and $(\partial/\partial r'_t I - c\nabla)(\partial/\partial r'_t I + c\nabla) = (\partial^2/\partial {r'_{t}}^2 - \Delta_\Phi)I$, and the commutation of the field matrices with their conjugates. The paper's equations (13) and (14) are not reproduced here: their vector parts carry the term and sign defects recorded in *A fourth route*. The paper's $4 \times 4$ matrices are those of the second realization of *The Element and Operator Representations*, where the transposition identity they satisfy is stated.
+- D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation compared in *A fourth route* above: the single complex matrix equation $cF(-\partial/\partial r'_t,\nabla)^{\mathsf T} = (\rho,\vec J)^{\mathsf T}$, the dual form with the operator matrix $c\nabla$, the operator identities $c\nabla^2 = \Delta_\Phi I$ and $(\partial/\partial r'_t I - c\nabla)(\partial/\partial r'_t I + c\nabla) = (\partial^2/\partial {r'_{t}}^2 - \Delta_\Phi)I$, and the commutation of the field matrices with their conjugates. The paper's equations (13) and (14) are not reproduced here: their vector parts carry the term and sign defects recorded in *A fourth route*. The paper's $4 \times 4$ matrices are those of the second realization of *The Element and Operator Representations*, where the transposition identity they satisfy is stated.
 - C. Lanczos, "Die funktionentheoretischen Beziehungen der Maxwellschen Aethergleichungen — Ein Beitrag zur Relativitäts- und Elektronentheorie" (Budapest, 1919; reprinted in the *Collected Published Papers*, Vol. VI, A-1–A-82; English typescript arXiv:physics/0408079), for the interpretation of the vacuum Maxwell equation as the four-dimensional Cauchy–Riemann condition and the generalised Cauchy formula.
 - K. Imaeda, "A new formulation of classical electrodynamics", *Il Nuovo Cimento B* **32** (1976) 138–162, for the quaternionic vacuum Maxwell equation $i\partial/\partial r'_tF+DF=0$, the form the compact equation takes when the time derivative is left explicit; the source of the time-harmonic dictionary of *The Dirac Equation in Biquaternionic Form* cites it in the massless case.
 - R. Fueter, "Analytische Funktionen einer Quaternionenvariablen", *Commentarii Mathematici Helvetici* **4** (1932) 9–20, for the analytic function theory of regular quaternion functions.

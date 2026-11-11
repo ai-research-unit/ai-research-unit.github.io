@@ -66,7 +66,7 @@ both gradients acting from the left, with no right multiplication and no conjuga
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\Delta=\mathbb B$, is the equation of motion
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. The pair, read on the Dirac module $\mathcal{S}_{\mathrm{rep}}=\mathbb B$, is the equation of motion
 
 $$i\,\hbar\,c\frac{\partial  F}{\partial  r'_t}=HF,
 \qquad
@@ -274,8 +274,8 @@ and $\exp(A\theta)=\cos\theta+A\sin\theta$ because $A^2=-e_t$. Therefore
 $$
 \begin{aligned}
 UHU^\dagger
-&=\exp(A\theta/2)\,\beta E\exp(A\theta)\exp(-A\theta/2)\\
-&=\beta E\exp(-A\theta/2)\exp(A\theta)\exp(-A\theta/2)\\
+&=\exp(A\theta/2)\,\beta E\exp(A\theta)\exp(-A\theta/2)\
+&=\beta E\exp(-A\theta/2)\exp(A\theta)\exp(-A\theta/2)\
 &=\beta E,
 \end{aligned}
 $$

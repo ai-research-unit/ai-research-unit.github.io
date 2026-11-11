@@ -84,7 +84,7 @@ $$
 
 The form with the explicit $1/G$ is the one in which the geometric coefficient is displayed; setting $G=1$ gives the Planck-unit form used below.
 
-The conjugate quantities are fixed by their physical meaning. $\Omega$ is the **angular velocity of the horizon**, $J$ the angular momentum, $Ξ$ the **electric potential** of the horizon relative to infinity, and $Ϙ$ the electric charge. The charge is normalized so that the Reissner–Nordström metric function is $f=1-2M/r+Ϙ^2/r^2$ and the potential is $Ξ=Ϙ/r_+$; the angular momentum is normalized so that the Kerr–Newman function has $a=J/M$ and $\Delta=r^2-2Mr+a^2+Ϙ^2$. With these normalizations the work terms are **positive** when angular momentum or charge of the same sign is added, which fixes the signs in the first law: $\Omega>0$ and $Ξ>0$ for a co-rotating, positively charged hole.
+The conjugate quantities are fixed by their physical meaning. $\Omega$ is the **angular velocity of the horizon**, $J$ the angular momentum, $Ξ$ the **electric potential** of the horizon relative to infinity, and $Ϙ$ the electric charge. The charge is normalized so that the Reissner–Nordström metric function is $f=1-2M/r+Ϙ^2/r^2$ and the potential is $Ξ=Ϙ/r_+$; the angular momentum is normalized so that the Kerr–Newman function has $a=J/M$ and $\mathcal{H}_{\mathrm{hor}}=r^2-2Mr+a^2+Ϙ^2$. With these normalizations the work terms are **positive** when angular momentum or charge of the same sign is added, which fixes the signs in the first law: $\Omega>0$ and $Ξ>0$ for a co-rotating, positively charged hole.
 
 Throughout, $M$ is the mass (the total energy in Planck units), $A$ the area of the horizon cross-section, $\beta=\frac{\hbar}{k_{B}\,T}$ the inverse temperature, and $r_\pm=M\pm\sqrt{M^2-a^2-Ϙ^2}$ the outer and inner horizon radii of the Kerr–Newman family.
 
@@ -246,7 +246,7 @@ in units $c=\hbar=k_B=1$, with the dictionary of the Conventions. In the explici
 In units $G=c=1$ the Kerr–Newman solution has
 
 $$
-\Delta=r^2-2Mr+a^2+Ϙ^2,
+\mathcal{H}_{\mathrm{hor}}=r^2-2Mr+a^2+Ϙ^2,
 \qquad
 a=\frac{J}{M},
 \qquad

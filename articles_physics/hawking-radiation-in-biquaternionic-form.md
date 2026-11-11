@@ -214,7 +214,7 @@ F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta) = F_{\tilde Q_1\tilde Q_2}(-r'_t),
 \beta=\frac{\hbar}{k_{B}\,T},
 $$
 
-and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{B}_{\Phi}$'s time coordinate is $i r'_t$, not an analytic continuation), and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\Delta$ is Hermitian, hence lies in the informational sector $\mathbb{B}_{\Psi}$. The temperature above is exactly $\beta=\frac{\hbar}{k_{B}\,T}$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{B}_{\Phi}$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{B}_{\Psi}$. This is the algebraic home the framework supplies: the *imaginary-time* structure of the thermal continuation is the material sector's own, and the *generator* of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.
+and records two algebraic facts that this article uses unchanged: the imaginary time of the material sector is intrinsic ($\mathbb{B}_{\Phi}$'s time coordinate is $i r'_t$, not an analytic continuation), and the modular Hamiltonian $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is Hermitian, hence lies in the informational sector $\mathbb{B}_{\Psi}$. The temperature above is exactly $\beta=\frac{\hbar}{k_{B}\,T}$, so the Hawking condition is the parent's condition with the width of the strip fixed by the surface gravity. The complexified direction in which the strip extends is the complexification of the Killing time along $\mathbb{B}_{\Phi}$; the modular generator is the Hermitian horizon-flow generator in $\mathbb{B}_{\Psi}$. This is the algebraic home the framework supplies: the *imaginary-time* structure of the thermal continuation is the material sector's own, and the *generator* of the flow is an informational-sector element. The framework does not supply the metric, the vacuum, or the KMS property itself.
 
 ## What the Framework Carries and What It Imports
 
@@ -490,7 +490,7 @@ The framework reproduces $T_{\mathrm H}$ and supplies no correction to it. There
 **Established (algebra).**
 
 - The material sector $\mathbb{B}_{\Phi}$ with intrinsic imaginary time $i r'_t$, and its zero-divisor cone as the local light cone.
-- The modular Hamiltonian $H_{\mathrm{modular}}=-\log\Delta$ as a Hermitian element of $\mathbb{B}_{\Psi}$, and the two-sided action of the boost generator $i\vec e_x$ on $\mathbb{B}_{\Phi}$.
+- The modular Hamiltonian $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ as a Hermitian element of $\mathbb{B}_{\Psi}$, and the two-sided action of the boost generator $i\vec e_x$ on $\mathbb{B}_{\Phi}$.
 - The single fermionic mode and its parity grading in $\mathbb{B}$, which supplies the two-valued occupation underlying the fermionic geometric sum.
 
 **Standard, and inherited.** The Schwarzschild metric and its surface gravity; the Kruskal extension and the in/out mode decomposition; the identification of the mode's analytic continuation with the Bogoliubov coefficient ratio; the Unruh and Hartle–Hawking vacua; the KMS characterization of thermal equilibrium and the Bisognano–Wichmann theorem; the Euclidean-section derivation.
@@ -563,7 +563,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $\alpha_{ji},\beta_{ji}$ | Bogoliubov coefficients |
 | $r_\omega$ | Squeeze parameter, $\tanh r_\omega=\exp(-\pi\omega/\kappa)$ |
 | $n_{\mathrm B},n_{\mathrm F}$ | Bose–Einstein, Fermi–Dirac occupation |
-| $H_{\mathrm{modular}}=-\log\Delta$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
+| $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ | Modular Hamiltonian (Hermitian, in $\mathbb{B}_{\Psi}$) |
 
 ## Further Reading
 

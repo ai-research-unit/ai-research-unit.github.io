@@ -25,9 +25,9 @@ The series states the reading in a fixed order, and the order is part of the sta
 
 $$
 \boxed{\;\begin{aligned}
-&\text{(1) form, with star:} && \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\\
-&\text{(2) scalar, with star:} && \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}),\\
-&\text{(3) scalar, without star, on } \mathbb{B}_{\Psi}: && \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}),\\
+&\text{(1) form, with star:} && \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\
+&\text{(2) scalar, with star:} && \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}),\
+&\text{(3) scalar, without star, on } \mathbb{B}_{\Psi}: && \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}),\
 &\text{(4) trace, at normalisation, last:} && \operatorname{Tr}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1,\qquad p=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}.
 \end{aligned}\;}
 $$

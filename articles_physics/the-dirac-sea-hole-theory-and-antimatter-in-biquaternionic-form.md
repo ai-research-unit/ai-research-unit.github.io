@@ -103,7 +103,7 @@ which the canonical-quantization article removes by the standard prescription an
 
 ### Charge conjugation and the two branches
 
-The relabelling that turns a negative-energy electron into a positive-energy positron is the framework's **charge conjugation**. The companion article on the Clifford structure of the biquaternion algebra places the charge-conjugation real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$, tying the module $S$ to its conjugate $\bar S$; the same article records that the internal spinor has a charge conjugate but no Majorana partner, and that the doubling from $\mathbb B\cong S\oplus S$ to $\Delta$ is the structure that carries $\mathcal C$. The hole-theory relabelling and the framework's $\mathcal C$ are the same operation read in the two pictures: the sea's holes and the second-quantized antiparticles are the $\mathcal C$-conjugates of the particles. This is the cleanest framework-level content of the article.
+The relabelling that turns a negative-energy electron into a positive-energy positron is the framework's **charge conjugation**. The companion article on the Clifford structure of the biquaternion algebra places the charge-conjugation real structure $\mathcal C$ on the doubled module $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar S$, tying the module $S$ to its conjugate $\bar S$; the same article records that the internal spinor has a charge conjugate but no Majorana partner, and that the doubling from $\mathbb B\cong S\oplus S$ to $\mathcal{S}_{\mathrm{rep}}$ is the structure that carries $\mathcal C$. The hole-theory relabelling and the framework's $\mathcal C$ are the same operation read in the two pictures: the sea's holes and the second-quantized antiparticles are the $\mathcal C$-conjugates of the particles. This is the cleanest framework-level content of the article.
 
 **The conjugation written out.** The dictionary of the companion *The Dirac Equation in Biquaternionic Form* gives the same operation an explicit form, and there the conjugation is not a structure on a doubled module but a map on the field itself. Rewriting the Dirac equation as one biquaternionic equation with an electric coupling, that source treats the positron by reversing the sign of the charge in the coupling — and the sign reversal is exactly the complex conjugation of the operator, so that the positron's equation is the conjugate of the electron's,
 
@@ -159,9 +159,9 @@ The biquaternion framework is naturally on this second side. Its mass shell has 
 | $|0\rangle$, $a_{\mathrm{fop}}|0\rangle=b_{\mathrm{fop}}|0\rangle=0$ | Fock vacuum; no sea |
 | $E_0=-2V\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
 | $e$ | Positive unit of charge; the electron carries $-e$ |
-| $\mathcal C$ | Framework's charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
+| $\mathcal C$ | Framework's charge-conjugation real structure on $\mathcal{S}_{\mathrm{rep}}=S\oplus\bar S$ |
 | $Z_c$ | Componentwise complex conjugation of the biquaternion field; carries the electron equation to the positron equation, $F_{\mathrm{pos}}=\overline{F_{\mathrm{el}}}$ |
-| $\Delta=S\oplus\bar S$ | Doubled spinor module carrying $\mathcal C$ |
+| $\mathcal{S}_{\mathrm{rep}}=S\oplus\bar S$ | Doubled spinor module carrying $\mathcal C$ |
 | Fermi sea | Filled valence band; the sea's condensed-matter realization |
 
 ## Further Reading

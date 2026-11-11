@@ -193,8 +193,8 @@ The full polarization content of Thomson scattering is a linear map on the Stoke
 $$
 \frac{d\sigma_T}{d\Omega}:\quad
 \begin{aligned}
-I_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[(1+\cos^2\theta)\,I+\sin^2\theta\,Q\bigr] ,\\
-Q_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[\sin^2\theta\,I+(1+\cos^2\theta)\,Q\bigr] ,\\
+I_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[(1+\cos^2\theta)\,I+\sin^2\theta\,Q\bigr] ,\
+Q_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[\sin^2\theta\,I+(1+\cos^2\theta)\,Q\bigr] ,\
 \mathcal U_{\mathrm{out}} &= r_e^2\cos\theta\;\mathcal U ,\qquad
 \mathcal V_{\mathrm{out}} = r_e^2\cos\theta\;\mathcal V ,
 \end{aligned}
@@ -298,7 +298,7 @@ Two checks fix the formula. Averaging over $\theta_{\mathrm{azm}}$ returns the u
 
 **The spin asymmetry.** If the electron is polarized, the cross-section acquires a term odd in the electron spin, of the form
 $$
-\Delta\frac{d\sigma_{\mathrm{KN}}}{d\Omega} \propto \vec s\cdot\bigl(\vec u_\Phi\times\vec u_{\mathrm{out},\eta}\bigr)\,f(\omega,\theta) ,
+\delta\frac{d\sigma_{\mathrm{KN}}}{d\Omega} \propto \vec s\cdot\bigl(\vec u_\Phi\times\vec u_{\mathrm{out},\eta}\bigr)\,f(\omega,\theta) ,
 $$
 the magnetic Compton asymmetry; the electron spin enters through the spin-dependent part of the Dirac current, and the geometric factor is the normal to the scattering plane. The precise coefficients of the Klein–Nishina polarized cross-section are the standard Heitler result and are cited rather than re-derived; the next section states how the spin is encoded in the algebra.
 
@@ -499,7 +499,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
-in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol basis operator of the spin section,
+in which the gradient acts by left multiplication only, the field is a section of $\mathcal{S}_{\mathrm{rep}} = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol basis operator of the spin section,
 $$
 D(p) = p_{0}\,\gamma_0-\sum_\eta p_{\eta}\,\gamma_\eta+m\,L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t} ,
 \qquad

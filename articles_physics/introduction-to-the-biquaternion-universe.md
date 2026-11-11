@@ -65,9 +65,9 @@ the coefficients $Q_t, Q_x, Q_y, Q_z$ take the explicit form
 
 $$
 \begin{aligned}
-Q_t &= q_t + i q'_t, \\
-Q_x &= q_x + i q'_x, \\
-Q_y &= q_y + i q'_y, \\
+Q_t &= q_t + i q'_t, \
+Q_x &= q_x + i q'_x, \
+Q_y &= q_y + i q'_y, \
 Q_z &= q_z + i q'_z.
 \end{aligned}
 $$

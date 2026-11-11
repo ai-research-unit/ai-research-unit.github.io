@@ -25,7 +25,7 @@ Two claims are quoted and not recomputed, because they belong to the programme's
 The conventions are those of the read-list articles and of the companion mathematics article *The Two-Sided Derivative over the Biquaternion Algebra*, which owns the coordinate chart. The complexified Minkowski coordinates are the four entries of the matrix
 
 $$
-Z=\begin{pmatrix}\upsilon & w\\ p & v\end{pmatrix},
+Z=\begin{pmatrix}\upsilon & w\ p & v\end{pmatrix},
 $$
 
 with $\upsilon,v,w,p$ the complex coordinates and $z_0=\tfrac12(\upsilon+v)$, $z_3=\tfrac12(\upsilon-v)$, $z_1=\tfrac12(w+p)$, $z_2=\tfrac{i}{2}(w-p)$; on the real slice $\upsilon=r'_t+r_z$, $v=r'_t-r_z$, $w=x-iy$, $p=x+iy=\bar w$. The derivative with respect to a slot of $Z$ is the derivative with respect to its entry, $\partial/\partial Z_{00'}=\partial/\partial\upsilon$, $\partial/\partial Z_{01'}=\partial/\partial w$, $\partial/\partial Z_{10'}=\partial/\partial p$, $\partial/\partial Z_{11'}=\partial/\partial v$, and that is the only derivative the twistor construction uses. The wave operator is $4\left(\partial^2/\partial\upsilon\,\partial v-\partial^2/\partial w\,\partial p\right)$, written out wherever it acts and never abbreviated, and the complex eikonal is
@@ -262,8 +262,8 @@ The potential is a complex four-vector, as the source calls it, and in the spino
 **In the gauge $\zeta_{0'}=1$ half of it vanishes, and the reason is (13).** (The source writes the spinor with a primed index, $\zeta_{A'}$; this is this article's $\zeta=(1,G)$, so the gauge is the $\zeta_0=1$ used above, and only the spelling differs.) There $Ξ_{0'A}=\sum_{A}\iota_{A}\frac{\partial\zeta_{0'}}{\partial Z_{AA'}}$ is the derivative of the constant $\zeta_{0'}=1$ and therefore zero, so the array is
 
 $$
-\begin{pmatrix}Ξ_{0'0} & Ξ_{0'1}\\ Ξ_{1'0} & Ξ_{1'1}\end{pmatrix}
-=\begin{pmatrix}0 & 0\\ \xi_{\mathrm{scl},0} & \xi_{\mathrm{scl},1}\end{pmatrix},
+\begin{pmatrix}Ξ_{0'0} & Ξ_{0'1}\ Ξ_{1'0} & Ξ_{1'1}\end{pmatrix}
+=\begin{pmatrix}0 & 0\ \xi_{\mathrm{scl},0} & \xi_{\mathrm{scl},1}\end{pmatrix},
 \qquad
 \xi_{\mathrm{scl},0}=\frac{\partial\ln G}{\partial w}=\frac{\partial G}{\partial\upsilon},
 \qquad

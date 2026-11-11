@@ -127,7 +127,7 @@ S^{(2)}[\xi_c] = -\,\Box + \mathcal{H}(\rho_c),
 \xi = \frac{1}{\sqrt2}\left(\xi_1 + i\xi_2\right),
 \qquad
 \mathcal{H} = \frac{\lambda}{2}
-\begin{pmatrix} 3\rho_c - v_0^2 & 0 \\ 0 & \rho_c - v_0^2 \end{pmatrix},
+\begin{pmatrix} 3\rho_c - v_0^2 & 0 \ 0 & \rho_c - v_0^2 \end{pmatrix},
 $$
 
 acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the standard Coleman–Weinberg form,

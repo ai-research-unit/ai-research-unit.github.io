@@ -112,7 +112,7 @@ where $\langle\tilde{Ξ},\tilde{Ξ}_{\mathrm{sp}}\rangle=\mathrm{Re}\,\mathrm{Tr
 
 **Finite-dimensional verification.** The **real** form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
 $$
-A_{\mathrm{gau}} = \begin{pmatrix} 2 & 0.5 & 0 \\ 0.5 & 1.5 & 0.3 \\ 0 & 0.3 & 1.2 \end{pmatrix},
+A_{\mathrm{gau}} = \begin{pmatrix} 2 & 0.5 & 0 \ 0.5 & 1.5 & 0.3 \ 0 & 0.3 & 1.2 \end{pmatrix},
 \qquad \det A_{\mathrm{gau}} = 3.12 ,
 $$
 the zero-source integral is $Z_0=(2\pi)^{3/2}(\det A_{\mathrm{gau}})^{-1/2}=8.9165$ and, for $J=(0.4,-0.7,1.1)$, $Z[J]=Z_0\exp(\tfrac12 J^T A_{\mathrm{gau}}^{-1}J)=23.964$, both to the accuracy shown. It is the real form that the biquaternion field's quadratic form requires, since the action is built from $\mathrm{Sc}$ and hence from a real bilinear pairing; the complex form displayed above, $Z_0=(2\pi)^n/\det A_{\mathrm{gau}}$, is the one appropriate to a complex field and gives the correspondingly larger prefactor for the same matrix. In one dimension, $W[J]-W[0]=J^2/(2a)$ for $K=a$ was checked on $a=1.7$, $J=0.9$, giving $0.23824$, equal to $J^2/(2a)$ to machine precision. The source-dependent part of the free energy is thus the classical action of the free field evaluated on the source, with the factor $\tfrac12$ that the Gaussian integration produces.
@@ -231,7 +231,7 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 $$
 \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,\mathcal{F}\,\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
 \qquad
-\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\\ \mathcal{F}_L&-k_m\end{pmatrix},
+\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix},
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.
 
@@ -293,7 +293,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $r'_t\mapsto-i\tau$, $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
 | $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
-| $\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic Gaussian result (Grassmann integral) |
+| $\det\mathcal{F}$, $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic Gaussian result (Grassmann integral) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

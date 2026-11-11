@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Gauge Field Path Integral in Biquaternionic Form* specialises the functional integral to a gauge field and develops the Faddeev–Popov procedure for the **abelian** case: the gauge orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\Delta=\det(\partial/\partial R_\mu D_\mu)$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article *The Yang–Mills Equation in Biquaternionic Form* writes the classical non-abelian field equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ and its covariant conservation $\sum_\nu D_\nu J_\nu=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.
+The companion article *The Gauge Field Path Integral in Biquaternionic Form* specialises the functional integral to a gauge field and develops the Faddeev–Popov procedure for the **abelian** case: the gauge orbit, the compensating determinant, and the Gaussian evaluation that yields the propagator. It records the non-abelian determinant only as a structure, $\mathcal{J}_{\mathrm{FP}}=\det(\partial/\partial R_\mu D_\mu)$ up to the overall sign of a determinant, and leaves its development to the present subcategory. This is that development. The companion article *The Yang–Mills Equation in Biquaternionic Form* writes the classical non-abelian field equation $\sum_\mu D_\mu F_{\mu\nu}=J_\nu$ and its covariant conservation $\sum_\nu D_\nu J_\nu=0$; the present article places that equation inside the path integral and asks what survives of it as an operator statement.
 
 Three features distinguish the non-abelian procedure from the abelian one, and they organise everything below.
 
@@ -80,11 +80,11 @@ which defines the determinant $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$: it is th
 $$
 \mathcal{J}_{\mathrm{FP}}[\mathcal{A}^{\tilde U}]=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}],
 $$
-because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
+because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\mathcal{J}_{\mathrm{FP}}$, the identity turns the integral into
 $$
 Z=\int\mathcal{D}\mathcal{A}\;\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
 $$
-in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\Delta$.
+in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\mathcal{J}_{\mathrm{FP}}$.
 
 ### The Determinant of the Non-Abelian Theory
 
@@ -113,7 +113,7 @@ f_{abc}=2\varepsilon_{abc},
 $$
 which was verified on the defining representation, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ with $T_a=\tfrac12 \vec e_a$.
 
-The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.
+The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\mathcal{J}_{\mathrm{FP}}$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.
 
 ### The Jacobi Identity and Associativity
 

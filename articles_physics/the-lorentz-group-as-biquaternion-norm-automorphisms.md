@@ -99,7 +99,7 @@ The matrix realization makes the form and its automorphisms concrete. With $\mat
 $$
 \mathsf{M}_2(\tilde{Q}) =
 \begin{pmatrix}
-Q_t - iQ_3 & -iQ_1 - Q_y\\
+Q_t - iQ_3 & -iQ_1 - Q_y\
 -iQ_1 + Q_y & Q_t + iQ_3
 \end{pmatrix},
 \qquad
@@ -306,7 +306,7 @@ The source's matrix realization differs from the $\mathsf{M}_2$ of the conventio
 $$
 \tilde{Q}\ \longmapsto\
 \begin{pmatrix}
-z_0+z_3 & z_1-iz_2\\
+z_0+z_3 & z_1-iz_2\
 z_1+iz_2 & z_0-z_3
 \end{pmatrix},
 \qquad

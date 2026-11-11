@@ -495,9 +495,9 @@ with $S_t$ the unit of the diagonal product. Two bars are lost in the extraction
 $$
 \begin{aligned}
 F_{x\uparrow} &= f_\alpha\vec q + f_\beta\vec q^* - f_\alpha N - f_\beta\bar{N}, &\quad
-F_{x\downarrow} &= f_\alpha\vec q + f_\beta\vec q^* + f_\alpha N + f_\beta\bar{N}, \\
+F_{x\downarrow} &= f_\alpha\vec q + f_\beta\vec q^* + f_\alpha N + f_\beta\bar{N}, \
 F_{y\uparrow} &= f_\alpha\vec q + f_\beta\vec q^* - i f_\alpha N - i f_\beta\bar{N}, &\quad
-F_{y\downarrow} &= f_\alpha\vec q + f_\beta\vec q^* + i f_\alpha N + i f_\beta\bar{N}, \\
+F_{y\downarrow} &= f_\alpha\vec q + f_\beta\vec q^* + i f_\alpha N + i f_\beta\bar{N}, \
 F_{z\uparrow} &= f_\alpha\vec q + f_\beta\vec q^*, &\quad
 F_{z\downarrow} &= f_\zeta N + f_\eta\bar{N},
 \end{aligned}

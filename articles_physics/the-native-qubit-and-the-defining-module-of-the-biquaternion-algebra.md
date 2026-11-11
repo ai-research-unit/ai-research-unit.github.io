@@ -61,20 +61,20 @@ That a complex associative algebra with these generators is isomorphic to $M_2(\
 It is useful to write the correspondence out in components, because every later statement is a component statement in disguise. A biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ maps to
 
 $$
-M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
+M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$
 
 so that the Hermitian element $\tilde H_\Psi = h_t\,e_t + i(h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z)$ with real $h_\mu$ maps to
 
 $$
-M(\tilde H_\Psi) = \begin{pmatrix} h_t + h'_z & h'_x - ih'_y \\ h'_x + ih'_y & h_t - h'_z \end{pmatrix}
+M(\tilde H_\Psi) = \begin{pmatrix} h_t + h'_z & h'_x - ih'_y \ h'_x + ih'_y & h_t - h'_z \end{pmatrix}
 = h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3 .
 $$
 
 Acting on $|u\rangle = (u_x, u_y)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\vec u$ maps to
 
 $$
-M\bigl(\tilde\Pi_1(\vec u)\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
+M\bigl(\tilde\Pi_1(\vec u)\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
 $$
 
 whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\theta_{\mathrm{azm}})\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\theta_{\mathrm{azm}}, \sin\theta\sin\theta_{\mathrm{azm}}, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_t + i\vec u)$ is recovered. The two descriptions carry exactly the same data.

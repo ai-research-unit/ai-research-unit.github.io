@@ -96,11 +96,11 @@ Maxwell's equations reduce to second-order equations, and the reduction is a fac
 The four-dimensional identity is
 
 $$
-\frac{\partial^2}{\partial {r\'_{t}}^2} - \Delta_\Phi
+\frac{\partial^2}{\partial {r'_{t}}^2} - \Delta_\Phi
 = \left(\frac{\partial}{\partial r'_t} + iD_3\right)\left(\frac{\partial}{\partial r'_t} - iD_3\right),
 $$
 
-the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta_Q + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r\'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega r'_t/c)$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
+the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta_Q + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega r'_t/c)$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
 
 $$
 -\Delta_\Phi - \frac{\omega^2}{c^2} = (D_3+k_\Phi)(D_3-k_\Phi), \qquad k_\Phi=\frac{\omega}{c},

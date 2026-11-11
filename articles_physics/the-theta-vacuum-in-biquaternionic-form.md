@@ -91,17 +91,17 @@ The structural link between the $\theta_{\mathrm{vac}}$ vacuum and the anomaly i
 
 **A toy model exhibiting the phase.** The essential mechanism can be exhibited in two complex dimensions, and it was verified explicitly. Take the chirality-off-diagonal family
 $$
-\mathcal{D}(\lambda) = \begin{pmatrix}\lambda & m\\ m & -\lambda\end{pmatrix},
+\mathcal{D}(\lambda) = \begin{pmatrix}\lambda & m\ m & -\lambda\end{pmatrix},
 \qquad
 \det\mathcal{D}(\lambda) = -\lambda^2-m^2 ,
 $$
 which has the block structure of a mass term coupling two chiralities. Its determinant is negative real for large real $\lambda$ — its phase is $\pi$, not $0$ — and the phase is stable as $\lambda\to\infty$. By contrast the central family
 $$
-\mathcal{C}(\lambda) = \begin{pmatrix}\lambda & 0\\ 0 & \lambda\end{pmatrix},
+\mathcal{C}(\lambda) = \begin{pmatrix}\lambda & 0\ 0 & \lambda\end{pmatrix},
 \qquad
 \det\mathcal{C}(\lambda) = \lambda^2 ,
 $$
-has a strictly positive determinant and no phase. The two are the framework's central and non-central cases in miniature: a determinant phase requires the operator to mix the two chiralities, which is exactly the non-centrality of the mass term. A *varying* phase requires the crossing itself: with the parameter taken through the degeneracy, as in $\mathcal{D}(\mu)=\left(\begin{smallmatrix}\lambda & i\mu\\ i\mu & -\lambda\end{smallmatrix}\right)$ at $\lambda=1$, the determinant vanishes at $\mu=1$ and its phase jumps from $\pi$ to $0$ across it, so the phase counts the crossing rather than merely reporting the sign of the determinant. The verification below records the numbers. The toy model does not compute a $\theta$ angle — that requires the gauge-field family — but it exhibits *which* operators can produce the phase that a $\theta$ angle is.
+has a strictly positive determinant and no phase. The two are the framework's central and non-central cases in miniature: a determinant phase requires the operator to mix the two chiralities, which is exactly the non-centrality of the mass term. A *varying* phase requires the crossing itself: with the parameter taken through the degeneracy, as in $\mathcal{D}(\mu)=\left(\begin{smallmatrix}\lambda & i\mu\ i\mu & -\lambda\end{smallmatrix}\right)$ at $\lambda=1$, the determinant vanishes at $\mu=1$ and its phase jumps from $\pi$ to $0$ across it, so the phase counts the crossing rather than merely reporting the sign of the determinant. The verification below records the numbers. The toy model does not compute a $\theta$ angle — that requires the gauge-field family — but it exhibits *which* operators can produce the phase that a $\theta$ angle is.
 
 **What the phase is not.** The phase of the determinant is not the $i\epsilon$ prescription (which fixes a contour, not a topology), not the sign ambiguity of a fermion determinant (which is a boundary condition on the family, not a winding), and not the central phase of the previous section (which weights sectors and is an input to the state). The framework's cleanliness here is that the three are different objects: the central phase lies in the centre, the determinant phase lies in the argument of a complex number computed from a non-central operator, and the $i\epsilon$ lies in the propagator's pole prescription.
 
@@ -139,7 +139,7 @@ the spectral asymmetry of the Dirac operator, which appears in the Atiyah–Pato
 
 **Spectral flow counts the charge.** For a family $\mathcal{D}(s)$ interpolating between two configurations, the net number of eigenvalues crossing zero, counted with sign, is the **spectral flow**, and it equals the difference of the charges,
 $$
-\Delta Ϙ = \mathrm{SF}\big(\mathcal{D}(s)\big).
+\delta Ϙ = \mathrm{SF}\big(\mathcal{D}(s)\big).
 $$
 This is why a crossing of the family's determinant contributes a factor $-1$: each crossing adds $\pm1$ to the index and flips the sign of the determinant. The toy family of the previous section, whose determinant changes sign exactly once between $\mu=0$ and $\mu=2$ at $\lambda=1$, therefore exhibits one unit of spectral flow, and this is the correspondence in miniature between the central integer and the determinant's phase. Both facts were verified by explicit evaluation of $\det\mathcal{D}(\mu)=-\lambda^2+\mu^2$ at $\mu=0,2$.
 

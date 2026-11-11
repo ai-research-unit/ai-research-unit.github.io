@@ -30,9 +30,9 @@ The source writes its biwave equation in matrix form, $\sum_j D_j\partial/\parti
 
 $$
 D^0 = I_4, \qquad
-D^1 = \begin{pmatrix} 0 & -i & 0 & 0\\ i & 0 & 0 & 0\\ 0 & 0 & 0 & i\\ 0 & 0 & -i & 0\end{pmatrix}, \qquad
-D^2 = \begin{pmatrix} 0 & 0 & -i & 0\\ 0 & 0 & 0 & i\\ i & 0 & 0 & 0\\ 0 & -i & 0 & 0\end{pmatrix}, \qquad
-D^3 = \begin{pmatrix} 0 & 0 & 0 & -i\\ 0 & 0 & -i & 0\\ 0 & i & 0 & 0\\ i & 0 & 0 & 0\end{pmatrix},
+D^1 = \begin{pmatrix} 0 & -i & 0 & 0\ i & 0 & 0 & 0\ 0 & 0 & 0 & i\ 0 & 0 & -i & 0\end{pmatrix}, \qquad
+D^2 = \begin{pmatrix} 0 & 0 & -i & 0\ 0 & 0 & 0 & i\ i & 0 & 0 & 0\ 0 & -i & 0 & 0\end{pmatrix}, \qquad
+D^3 = \begin{pmatrix} 0 & 0 & 0 & -i\ 0 & 0 & -i & 0\ 0 & i & 0 & 0\ i & 0 & 0 & 0\end{pmatrix},
 $$
 
 with the property the source announces as the Dirac property, $\sum_m D_{mj}D_{jl} = \delta_{ml}$, that is $D_j^2 = I$ for each $j$. The corpus can say exactly what these matrices are, and the answer removes the appearance of a Clifford algebra: **$D_j$ is the matrix of left multiplication by the basis element $ie_j$** of $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{C}^4$. That identification was checked entry by entry against the regular representation of $ie_j$, and it explains the square: $(ie_j)^2 = i^2e_j^2 = (-1)(-1) = +1$, so $D_j^2 = I$ is not a Clifford relation but the statement that the squared unit biquaternion equals $e_t$.

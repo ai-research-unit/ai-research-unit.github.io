@@ -152,7 +152,7 @@ $$
 
 **It does not act on the algebra.** No contraction is taken and no basis preferred. *The Centre of the Biquaternion Algebra as the Classical Sector* names the centre as the canonical classical sector, and the limit does not land there: the centre is minimal as an operator algebra. O21 of the obstruction catalogue says why from the other side, since no maximal commutative subalgebra survives a generic $*$-unitary evolution. The limit selects a state-dependent slice, the contextual mechanism O21 asks for, with $L$ as the context made quantitative.
 
-**It does not commute with superposition.** Two plane waves of wave numbers $k_{\Phi}$ and $k_{\Phi}+\delta k$ are each semiclassical exactly. Their sum has envelope wave number $\delta k$, so parameter $\frac{1}{\Delta kL}$, large when the waves are close. So
+**It does not commute with superposition.** Two plane waves of wave numbers $k_{\Phi}$ and $k_{\Phi}+\delta k$ are each semiclassical exactly. Their sum has envelope wave number $\delta k$, so parameter $\frac{1}{\delta k\,L}$, large when the waves are close. So
 
 $$
 \lim\left(\tilde{Ξ}_{1}+\tilde{Ξ}_{2}\right)\neq\lim\tilde{Ξ}_{1}+\lim\tilde{Ξ}_{2} ,

@@ -24,7 +24,7 @@ The computation is a derived form of this article. It says that $\tilde\nabla^2$
 **The second and third statements are the two constraints.** The first is the **trace constraint**, one element equation in which the three spatial directions multiply their component on the left and the axis $\vec e_z$ on the right; the second is the **divergence constraint**,
 $$
 \begin{aligned}
-\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\\
+\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\
 \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}&=0,
 \end{aligned}
 $$
@@ -134,7 +134,7 @@ with the sign of $\Gamma_{j\eta}$ fixed by the orientation $\vec e_x\vec e_y=\ve
 $$
 \boxed{\;
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,R}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},\\
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},\mu,R}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,L},\
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},\mu,L}&=k_m\tilde{Ξ}_{\mathrm{sp},\mu,R},
 \end{aligned}
 \qquad\text{for each }\mu\;}
@@ -143,7 +143,7 @@ together with the two constraints,
 $$
 \boxed{\;
 \begin{aligned}
-\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\\
+\tilde{Ξ}_{\mathrm{sp},0}+\sum_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp},k}\,\vec e_z&=0,\
 \sum_\mu\varepsilon_\mu\,\partial/\partial x_\mu\,\tilde{Ξ}_{\mathrm{sp},\mu}&=0,
 \end{aligned}\;}
 $$

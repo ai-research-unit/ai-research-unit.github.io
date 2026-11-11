@@ -133,7 +133,7 @@ held with maximum error $1.1\times10^{-16}$. The Kramers partner is the $\vareps
 **The counting of $\mathcal T$-invariant Hamiltonians.** The degeneracy has a parameter count behind it. On $\mathbb{C}^{2N}$ with $\mathcal T^2=-1$, an invariant Hermitian operator can be written in the block form
 
 $$
-\boxed{\;H=\begin{pmatrix}A & B\\ -B^* & A^*\end{pmatrix},
+\boxed{\;H=\begin{pmatrix}A & B\ -B^* & A^*\end{pmatrix},
 \qquad
 A=A^\dagger ,
 \qquad
@@ -209,8 +209,8 @@ verified with residuals $0$. In the Kramers basis $\{v,\mathcal Tv\}$ an invaria
 
 $$
 \begin{aligned}
-b=0:\quad &\text{spectrum } \{-1,-1,3,3\}\ \text{(Kramers pairs)},\\
-b=0.01:\quad &\text{spectrum } \{-1.01,-0.99,2.99,3.01\},\\
+b=0:\quad &\text{spectrum } \{-1,-1,3,3\}\ \text{(Kramers pairs)},\
+b=0.01:\quad &\text{spectrum } \{-1.01,-0.99,2.99,3.01\},\
 b=0.02:\quad &\text{spectrum } \{-1.02,-0.98,2.98,3.02\},
 \end{aligned}
 $$

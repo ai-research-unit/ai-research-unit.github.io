@@ -128,7 +128,7 @@ $$
 \mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\,\vec e_{\nu(\mu)} ,
 \qquad
 \mathcal{D}^{2}=-\sum_\mu\varepsilon_\mu\frac{\partial^{2}}{\partial x_\mu^{2}}
-=-\frac{\partial^{2}}{\partial r'_t^{2}}+\sum_\eta\frac{\partial^{2}}{\partial x_\eta^{2}}=\Box_\Phi ,
+=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\sum_\eta\frac{\partial^{2}}{\partial x_\eta^{2}}=\Box_\Phi ,
 $$
 
 a sum of four products — one element, one derivative of the field, one unit — and the square is the d'Alembertian: the first equality is the anticommutator $\{G_\mu,G_\rho\}=2\varepsilon_\mu\delta_{\mu\rho}$ with the derivatives commuting with the constant multipliers, the last is the definition $\Box=\partial^2/\partial R_\mu\partial R_\mu$ read on the $i r'_t$ slice, where $Q_\eta=q_\eta$ and $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so that $\Box_\Phi=-\partial^2/\partial {r'_t}^2+\sum_\eta\partial^2/\partial x_\eta^2$; the minus in front of the sum is the one of that convention, and it is taken once, here. The equation is $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. It is one equation and not four, and because $\xi$ anticommutes with every generator it splits by value into two members, $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $\mathcal{D}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, which are the two lines of the pair read on the module: the derivative carries each value into the other and the mass carries it back. Every bilinear and every rotation below is an object of this equation.

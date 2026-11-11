@@ -294,7 +294,7 @@ The conformal group is a standard object, and its standard algebraic homes are l
 
 **Vahlen matrices.** The Ahlfors–Vahlen construction realizes the conformal group of $\mathbb{R}^{n,m}$ by $2\times2$ matrices
 $$
-\begin{pmatrix} a & b\\ c & d\end{pmatrix}
+\begin{pmatrix} a & b\ c & d\end{pmatrix}
 $$
 whose entries lie in the Clifford algebra $\mathrm{Cl}_{n,m}$ and are products of vectors, and which satisfy the conformality conditions that make the fractional action
 $$

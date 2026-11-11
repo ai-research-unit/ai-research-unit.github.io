@@ -555,7 +555,7 @@ which is the ordinary formula $\lambda D/d$ with $\lambda=2\pi/k_{\Phi}$. The re
 
 ### No State Is Narrower Than Half Its Wavelength
 
-**The uncertainty relation in the wave numbers.** Write $\delta p=\hbar\,\Delta\,k$ and the relation $\delta x\,\delta p\ge\frac{\hbar}{2}$ becomes
+**The uncertainty relation in the wave numbers.** Write $\delta p=\hbar\,\delta k$ and the relation $\delta x\,\delta p\ge\frac{\hbar}{2}$ becomes
 
 $$
 \delta x \ge \dfrac{1}{2\,\delta k} .
@@ -673,7 +673,7 @@ The distance is the one the energy becomes when a duration is converted into a l
 
 **It is the length a time becomes.** A process of duration $\tau$ has the wave number $1/(c\tau)$, and its inverse is the distance light covers while it runs. A lifetime and a length are therefore one measurement in two units, and the decay of §*The Decay Wave Number* is the case where the duration is the mean life.
 
-**It is the reach of a virtual process.** A process that borrows an energy $\delta E$ can reach the distance $1/\delta k_{t}^{\prime}=\frac{\hbar\,c}{\Delta\,E}$, which is the energy distance of the deficit. The Yukawa range is the special case in which the deficit is the rest energy, and there the energy distance and the mass distance coincide: $1/k_m=1/k_{t}^{\prime}$ at rest.
+**It is the reach of a virtual process.** A process that borrows an energy $\delta E$ can reach the distance $1/\delta k_{t}^{\prime}=\frac{\hbar\,c}{\delta E}$, which is the energy distance of the deficit. The Yukawa range is the special case in which the deficit is the rest energy, and there the energy distance and the mass distance coincide: $1/k_m=1/k_{t}^{\prime}$ at rest.
 
 **It is the shortest of the three distances.** Because $k_{t}^{\prime}$ is the hypotenuse of the triangle, $1/k_{t}^{\prime}$ is the shortest side of the inverted triangle, with equality at rest against $1/k_m$ and in the massless limit against $1/k_{\Phi}$. The energy distance is what a state can be resolved to at best, since it is the distance light covers in the phase time of its own energy.
 
@@ -693,7 +693,7 @@ while light covers $cT=2\pi/k_{t}^{\prime}$. The two distances are in the ratio 
 
 ### The Uncertainty in Time
 
-**A borrowed energy lasts a time.** The relation $\delta E\,\delta t\ge\frac{\hbar}{2}$ says that a process which borrows an energy $\delta E$ can last a time of order $\frac{\hbar}{\Delta\,E}$. Convert the time to a distance and the statement becomes: the process can reach a distance
+**A borrowed energy lasts a time.** The relation $\delta E\,\delta t\ge\frac{\hbar}{2}$ says that a process which borrows an energy $\delta E$ can last a time of order $\frac{\hbar}{\delta E}$. Convert the time to a distance and the statement becomes: the process can reach a distance
 
 $$
 c\,\delta t \sim \dfrac{c}{\delta k_{t}^{\prime}} = \dfrac{1}{\delta k_{t}^{\prime}(\delta E)},

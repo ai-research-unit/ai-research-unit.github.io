@@ -83,7 +83,7 @@ a scalar. Verified: the identity at residual $5\times10^{-15}$ over $200$ random
 **The massive propagator.** With the mass the equation is the pair, and its symbol is the block
 
 $$
-\mathcal P(p)=\begin{pmatrix}-m & i\tilde K_{\Phi}(p)\\ i\tilde K_{\Phi}(p)^{\natural} & -m\end{pmatrix},
+\mathcal P(p)=\begin{pmatrix}-m & i\tilde K_{\Phi}(p)\ i\tilde K_{\Phi}(p)^{\natural} & -m\end{pmatrix},
 \qquad
 \det\mathcal P(p)=\Bigl(m^2+a^{-2}\sum_{\mu}\sin^2(p_\mu a)\Bigr)^{4},
 $$
@@ -91,7 +91,7 @@ $$
 so the propagator is the inverse block,
 
 $$
-\boxed{\;\mathcal S(p) = -\frac{1}{\,m^{2}+a^{-2}\sum_{\mu}\sin^{2}(p_\mu a)}\begin{pmatrix} m & i\tilde K_{\Phi}(p)\\ i\tilde K_{\Phi}(p)^{\natural} & m\end{pmatrix}\;}.
+\boxed{\;\mathcal S(p) = -\frac{1}{\,m^{2}+a^{-2}\sum_{\mu}\sin^{2}(p_\mu a)}\begin{pmatrix} m & i\tilde K_{\Phi}(p)\ i\tilde K_{\Phi}(p)^{\natural} & m\end{pmatrix}\;}.
 $$
 
 Both identities verified by direct inversion, at residual $0$ for the inverse and $1\times10^{-12}$ for the determinant; the massless inverse, the inverse of left multiplication by $i\tilde K_{\Phi}$, is $\mathcal S_0(p)=-i\tilde K_{\Phi}^{\natural}/(\tilde K_{\Phi}\tilde K_{\Phi}^{\natural})$ at the same residual. The scalar denominator is exactly the one the single-column form of the literature carries. The block is the price of the mass, and it is the block of the chiral pair, not a second dynamics.

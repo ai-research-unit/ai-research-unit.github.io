@@ -215,8 +215,8 @@ because $\lambda$ is a central scalar function and each derivative acts on it co
 $$
 \begin{aligned}
 \tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp},R})
-&= \tilde\nabla_\Phi(\lambda\tilde{Ξ}_{\mathrm{sp},R}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\lambda\tilde{Ξ}_{\mathrm{sp},R}) \\
-&= \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R} -\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},R} \\
+&= \tilde\nabla_\Phi(\lambda\tilde{Ξ}_{\mathrm{sp},R}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\lambda\tilde{Ξ}_{\mathrm{sp},R}) \
+&= \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R} -\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},R} \
 &= \lambda\left[\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}\right] = \lambda\,\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} .
 \end{aligned}
 $$
@@ -226,8 +226,8 @@ The two $\tilde\nabla_\Phi\Gamma$ terms cancel, and the central $\lambda$ moves 
 $$
 \begin{aligned}
 \tilde\nabla_{\mathrm{gco},2}^{\natural}(\lambda\tilde{Ξ}_{\mathrm{sp},L})
-&= (\tilde\nabla_\Phi)^{\natural}(\lambda\tilde{Ξ}_{\mathrm{sp},L}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\lambda\tilde{Ξ}_{\mathrm{sp},L}) \\
-&= \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} -\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} \\
+&= (\tilde\nabla_\Phi)^{\natural}(\lambda\tilde{Ξ}_{\mathrm{sp},L}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\lambda\tilde{Ξ}_{\mathrm{sp},L}) \
+&= \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} -\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} \
 &= \lambda\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
 \end{aligned}
 $$

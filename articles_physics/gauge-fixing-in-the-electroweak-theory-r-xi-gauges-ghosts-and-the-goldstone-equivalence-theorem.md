@@ -37,13 +37,13 @@ for one massive direction of mass $M$, and the same with $M=0$ for the photon. T
 **What the broken phase adds.** Breaking the symmetry does not remove the degeneracy; it moves it. The scalar's kinetic term produces a mixing between the vector and the Goldstone, and the flat direction is now a simultaneous shift of both. With the doublet written as in article 4,
 
 $$
-\varphi=\exp\left(\frac{i}{v}\sum_a\xi^a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\\ v+h\end{pmatrix},
+\varphi=\exp\left(\frac{i}{v}\sum_a\xi^a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
 the quadratic form in the pair $(A_\mu,\xi)$ is the vector's kernel coupled to the Goldstone by a term proportional to $p_\mu\xi$, and the vector that it annihilates is
 
 $$
-v=\begin{pmatrix}p_\mu\\ iM\end{pmatrix},
+v=\begin{pmatrix}p_\mu\ iM\end{pmatrix},
 \qquad
 Kv=0 ,
 $$
@@ -66,7 +66,7 @@ G^{Z}=\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\xi^{0} ,
 G^{A}=\sum_\mu\frac{\partial A_\mu}{\partial R_\mu} .
 $$
 
-**What the identity does with it.** The Faddeev–Popov identity inserts unity as $1=\mathcal{J}_{\mathrm{FP}}[A]\int\mathcal{D}U\,\delta(G[A^{U}])$, and the $\delta$-functional is then traded for a Gaussian weight $-\frac{1}{2\zeta}\sum_a(G^a)^2$, which is the term displayed in the introduction. The determinant $\Delta$ that the identity produces is the ghost sector, and §*The Ghost Sector and Its Weights* writes it.
+**What the identity does with it.** The Faddeev–Popov identity inserts unity as $1=\mathcal{J}_{\mathrm{FP}}[A]\int\mathcal{D}U\,\delta(G[A^{U}])$, and the $\delta$-functional is then traded for a Gaussian weight $-\frac{1}{2\zeta}\sum_a(G^a)^2$, which is the term displayed in the introduction. The determinant $\mathcal{J}_{\mathrm{FP}}$ that the identity produces is the ghost sector, and §*The Ghost Sector and Its Weights* writes it.
 
 **Why each entry has the shape it has.** The first two are chosen, and the third is the ordinary Lorenz condition. The $-\zeta M_W\xi^a$ insertion is the one addition that the electroweak theory makes to the Yang–Mills functional of *The Yang–Mills Path Integral and the Faddeev–Popov Procedure*, and it is the whole of the difference: in the pure-gauge theory the functional is $\partial\cdot A$ alone.
 
@@ -137,7 +137,7 @@ $$
 
 ## The Ghost Sector and Its Weights
 
-**The determinant.** The Faddeev–Popov identity produces $\Delta=\det M$ with $M_{ab}=\delta G^a/\delta\alpha^b$, the variation of the functional under an infinitesimal gauge transformation. For the $R_\xi$ functionals,
+**The determinant.** The Faddeev–Popov identity produces $\mathcal{J}_{\mathrm{FP}}=\det M$ with $M_{ab}=\delta G^a/\delta\alpha^b$, the variation of the functional under an infinitesimal gauge transformation. For the $R_\xi$ functionals,
 
 $$
 M^{ab}=-\delta^{ab}\,\Pi+\zeta M_W^2\,\delta^{ab}+\cdots ,
@@ -156,7 +156,7 @@ so the ghost of each broken direction has the mass of the Goldstone of that dire
 **The neutral block, and the zero eigenvalue.** Written in the unbroken basis the neutral ghost mass matrix is
 
 $$
-M_{\mathrm{gh}}^2=\frac{\zeta v^2}{4}\begin{pmatrix}g^2 & -g\,g_{\mathrm Y}\\ -g_{\mathrm Y}\,g & g_{\mathrm Y}^2\end{pmatrix},
+M_{\mathrm{gh}}^2=\frac{\zeta v^2}{4}\begin{pmatrix}g^2 & -g\,g_{\mathrm Y}\ -g_{\mathrm Y}\,g & g_{\mathrm Y}^2\end{pmatrix},
 $$
 
 whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eigenvalues are therefore $0$ and $\zeta M_Z^2$; verified at $\zeta=0.5$, $1$ and $3$, where the computed determinant stayed below $2\times10^{-8}$ GeV$^4$ against a trace squared of order $10^{8}$ GeV$^4$, that is zero to floating-point precision. **The zero eigenvalue is the photon's ghost, and its existence is the statement that the residual symmetry is unbroken.** A gauge theory with a compact unbroken factor has a massless ghost per generator of that factor, and the count is a check on the breaking pattern rather than on the gauge.

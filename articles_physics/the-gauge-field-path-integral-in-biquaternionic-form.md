@@ -72,7 +72,7 @@ $$
 \mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}^{\Gamma}] = \mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}],
 $$
 
-because the composition of two gauge transformations is a gauge transformation. One may therefore shift the integration variable $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}^{\Gamma^{-1}}$ at fixed $\Gamma$, use the invariance of the measure and of $\Delta$ and of $S$, and obtain
+because the composition of two gauge transformations is a gauge transformation. One may therefore shift the integration variable $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}^{\Gamma^{-1}}$ at fixed $\Gamma$, use the invariance of the measure and of $\mathcal{J}_{\mathrm{FP}}$ and of $S$, and obtain
 
 $$
 \boxed{\;Z = \int\mathcal{D}\tilde{A}_{\Phi}\;\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\;\delta\!\left(G[\tilde{A}_{\Phi}]\right)\;\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])\;},
@@ -269,7 +269,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}_{\Phi}\,\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\,\delta(G[\tilde{A}_{\Phi}])\,\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])$, finite and normalized.
 
-In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{B}_{\Phi}$, and the gauge transformation is the gradient shift $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\Delta=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\Delta=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{B}_{\Psi}$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.
+In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{B}_{\Phi}$, and the gauge transformation is the gradient shift $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\mathcal{J}_{\mathrm{FP}}=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\mathcal{J}_{\mathrm{FP}}=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{B}_{\Psi}$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.
 
 The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator $D_{\mu\nu}=p^{-2}(\delta_{\mu\nu}+(1-\zeta)p_\mu p_\nu/p^2)$. The transverse projector $P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/p^2$ is idempotent, of trace three off shell, and annihilates the momentum; the gauge parameter multiplies only the longitudinal projector. Because the difference of two propagators is proportional to $p_\mu p_\nu$, it vanishes when contracted with a conserved current, and the gauge-parameter dependence drops out of physical amplitudes. On shell the longitudinal direction decouples for the massless field and the two transverse polarizations remain. What the algebra supplies is the carrier, the gauge transformation, the centrality that makes the abelian determinant constant, and the transverse projector; what it does not supply is the gauge group, the gauge parameter, the odd coordinates, the general functional-integral apparatus, or any empirical content.
 
@@ -284,8 +284,8 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $G[\tilde{A}_{\Phi}]=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega$ | Gauge-fixing condition |
 | $1=\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ | Faddeev–Popov identity |
 | $\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]$ | Faddeev–Popov determinant; gauge invariant |
-| $\Delta=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |
-| $\Delta=\det(\partial\cdot D)$ (non-abelian) | Field-dependent determinant; ghosts required |
+| $\mathcal{J}_{\mathrm{FP}}=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |
+| $\mathcal{J}_{\mathrm{FP}}=\det(\partial\cdot D)$ (non-abelian) | Field-dependent determinant; ghosts required |
 | $(D_\mu)_{ab}=\partial/\partial R_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c}$ | Covariant derivative in the adjoint representation |
 | $B$ | Nakanishi–Lautrup field representing the delta functional |
 | $\zeta$ | Gauge parameter; multiplies the longitudinal projector |

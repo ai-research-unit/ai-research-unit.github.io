@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A single spin-1/2 is the smallest quantum system with an orientation, and its noise is the smallest quantum noise: a coherent spin state has fluctuations $\Delta \tilde S_{\Psi,\mathrm{tot},\perp} =\frac{\hbar}{2}\sqrt{N}$ distributed isotropically in the plane transverse to the mean spin. This is the **standard quantum limit**. When $N$ spin-1/2 particles are coupled collectively — to one another or to a common field — the noise can be redistributed: one transverse component can be squeezed below the standard quantum limit at the expense of the conjugate component. This is **spin squeezing**, and it is the resource of quantum metrology.
+A single spin-1/2 is the smallest quantum system with an orientation, and its noise is the smallest quantum noise: a coherent spin state has fluctuations $\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp} =\frac{\hbar}{2}\sqrt{N}$ distributed isotropically in the plane transverse to the mean spin. This is the **standard quantum limit**. When $N$ spin-1/2 particles are coupled collectively — to one another or to a common field — the noise can be redistributed: one transverse component can be squeezed below the standard quantum limit at the expense of the conjugate component. This is **spin squeezing**, and it is the resource of quantum metrology.
 
 The model in which the collective coupling is cleanest is the **Tavis–Cummings model**: $N$ two-level systems (the spins) coupled with a common strength $g$ to a single bosonic mode. It is the $N$-atom generalisation of the Jaynes–Cummings model, and it exhibits the collective enhancement $g\sqrt{N}$ that underlies superradiance and the collective Rabi splitting. It is a driven multi-spin-1/2 system, and it is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
 
@@ -10,7 +10,7 @@ The article establishes:
 
 1. **The collective spin.** The operators $\tilde S_{\Psi,\mathrm{tot},\alpha} = \sum_{i=1}^N\tilde{S}_{\Psi,\alpha}^{(i)}$ are Hermitian elements of $\mathbb{B}_{\Psi}$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
 2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$, and in the single-excitation sector the collective coupling is $\hbar\,g\sqrt{N}$, giving the collective Rabi splitting $2\,\hbar\,g\sqrt{N}$. Both statements are verified below.
-3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
+3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{B}_{\Psi}$, the mean spin and the covariance are readings of the Hermitian form, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{B}_{\Psi}$ coupling between the spin and the mode.
 
 The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
@@ -64,7 +64,7 @@ which equals the highest-weight state of the collective spin rotated to the dire
 $$
 \langle  \tilde S_{\Psi,\mathrm{tot},\perp}^2\rangle  =\frac{\hbar^{2}\,N}{4},
 \qquad
-\Delta \tilde S_{\Psi,\mathrm{tot},\perp} =\frac{\hbar\sqrt{N}}{2}.
+\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp} =\frac{\hbar\sqrt{N}}{2}.
 $$
 
 This is the standard quantum limit: the noise is the quantum noise of $N$ independent spins, and it is the reference against which squeezing is measured.
@@ -144,13 +144,13 @@ The same collective enhancement governs the coupling of the spins to a radiating
 
 ### The Standard Quantum Limit
 
-For a coherent spin state the transverse variance is $(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2 =\frac{\hbar^{2}\,N}{4}$ and the mean spin is $|\langle\vec S_{\mathrm{tot}}\rangle| =\frac{\hbar\,N}{2}$. The **Wineland squeezing parameter** is
+For a coherent spin state the transverse variance is $(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2 =\frac{\hbar^{2}\,N}{4}$ and the mean spin is $|\langle\vec S_{\mathrm{tot}}\rangle| =\frac{\hbar\,N}{2}$. The **Wineland squeezing parameter** is
 
 $$
-\boxed{\;\zeta_R^2 = \frac{N\,(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2}\;},
+\boxed{\;\zeta_R^2 = \frac{N\,(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2}\;},
 $$
 
-where $(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}$ is the smallest variance in the plane perpendicular to the mean spin. The numerator is $N$ times the squeezed variance, the denominator the squared mean spin; for a coherent state $\zeta_R^2 = 1$, a state with $\zeta_R^2 < 1$ is **spin squeezed**, and the metrological phase sensitivity is improved by the factor $\zeta_R$ below the standard quantum limit.
+where $(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}$ is the smallest variance in the plane perpendicular to the mean spin. The numerator is $N$ times the squeezed variance, the denominator the squared mean spin; for a coherent state $\zeta_R^2 = 1$, a state with $\zeta_R^2 < 1$ is **spin squeezed**, and the metrological phase sensitivity is improved by the factor $\zeta_R$ below the standard quantum limit.
 
 ### The Squeezing Ellipse
 
@@ -160,7 +160,7 @@ $$
 \mathrm{Cov}(\tilde S_{\Psi,\mathrm{tot},\alpha},\tilde S_{\Psi,\mathrm{tot},\beta}) = \tfrac{1}{2}\langle \tilde S_{\Psi,\mathrm{tot},\alpha}\tilde S_{\Psi,\mathrm{tot},\beta} + \tilde S_{\Psi,\mathrm{tot},\beta}\tilde S_{\Psi,\mathrm{tot},\alpha}\rangle - \langle\tilde S_{\Psi,\mathrm{tot},\alpha}\rangle\langle\tilde S_{\Psi,\mathrm{tot},\beta}\rangle ,
 $$
 
-whose eigenvalues are the variances along the principal axes. In the plane perpendicular to the mean spin the covariance reduces to a $2\times2$ matrix $\begin{pmatrix}\langle\Delta J_a^2\rangle & C\\ C & \langle\Delta J_b^2\rangle\end{pmatrix}$, and the **squeezing ellipse** is the error ellipse of the two quadratures. The smaller eigenvalue is the squeezed variance; the larger is the anti-squeezed one. The product of the two principal variances obeys the uncertainty relation, so squeezing is a redistribution and never a reduction of the total noise.
+whose eigenvalues are the variances along the principal axes. In the plane perpendicular to the mean spin the covariance reduces to a $2\times2$ matrix $\begin{pmatrix}\langle\mathcal{V}_{\mathrm{var}} J_a^2\rangle & C\ C & \langle\mathcal{V}_{\mathrm{var}} J_b^2\rangle\end{pmatrix}$, and the **squeezing ellipse** is the error ellipse of the two quadratures. The smaller eigenvalue is the squeezed variance; the larger is the anti-squeezed one. The product of the two principal variances obeys the uncertainty relation, so squeezing is a redistribution and never a reduction of the total noise.
 
 ### One-Axis Twisting
 
@@ -263,7 +263,7 @@ verified numerically for $N = 1,4,16,100$. The Holstein–Primakoff linearisatio
 **Spin squeezing** is measured by the Wineland parameter
 
 $$
-\zeta_R^2 = \frac{N\,(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2},
+\zeta_R^2 = \frac{N\,(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}}{|\langle\vec S_{\mathrm{tot}}\rangle|^2},
 $$
 
 equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi r'_t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
@@ -289,7 +289,7 @@ In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(
 | $\tilde H_\Psi =\hbar\,\omega_{c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$ | Tavis–Cummings Hamiltonian |
 | $a^\dagger a +\frac{\tilde{S}_{\Psi,\mathrm{tot},3}}{\hbar}+ N/2$ | Conserved excitation number |
 | $\delta E =2\,\hbar\,g\sqrt{N}$ | Collective Rabi splitting |
-| $\zeta_R^2 = N(\Delta \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
+| $\zeta_R^2 = N(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2_{\min}/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ | Wineland squeezing parameter |
 | $\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ | One-axis twisting Hamiltonian |
 | $\mathrm{Cov}(\tilde S_{\Psi,\mathrm{tot},\alpha},\tilde S_{\Psi,\mathrm{tot},\beta})$ | Collective covariance; the squeezing ellipse |
 

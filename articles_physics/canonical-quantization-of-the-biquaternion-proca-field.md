@@ -170,8 +170,8 @@ $$
 so the constraint matrix is the nonsingular $2\times2$ matrix
 
 $$
-\Delta = \begin{pmatrix} 0 & -\mu^2 \\ \mu^2 & 0\end{pmatrix},
-\qquad \det\Delta = \mu^4 \neq 0 ,
+\mathcal{K}_{\mathrm{con}} = \begin{pmatrix} 0 & -\mu^2 \ \mu^2 & 0\end{pmatrix},
+\qquad \det\mathcal{K}_{\mathrm{con}} = \mu^4 \neq 0 ,
 $$
 
 and the constraints are **second class**. This is the single structural difference from the Maxwell case, and everything else follows from it. A second-class constraint pair removes two phase-space dimensions — one for each constraint, with no gauge direction left over — so the count is
@@ -283,7 +283,7 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 1. **A biquaternion origin for the mass term.** The mass term is the biquaternion norm of the material vector times a parameter. Is there an algebraic reason for the biquaternion norm rather than some other central invariant — the trace pairing, the scalar part of a bilinear, a self-interaction term — or is the choice fixed only by the requirement that the equation be linear and second order? The same question arises for the Klein–Gordon field, and the two answers should be the same answer.
 
-2. **The second-class bracket in the algebra's own terms.** The Dirac bracket is standard, but it is defined by the constraint matrix $\Delta$ and is not written in the algebra's operations. Is there a biquaternionic construction — a projection, a trace, a scalar-part pairing — that produces the reduced three-dimensional phase space directly, in the way that $\mathrm{Sc}(\tilde{\pi})\approx0$ writes the primary constraint?
+2. **The second-class bracket in the algebra's own terms.** The Dirac bracket is standard, but it is defined by the constraint matrix $\mathcal{K}_{\mathrm{con}}$ and is not written in the algebra's operations. Is there a biquaternionic construction — a projection, a trace, a scalar-part pairing — that produces the reduced three-dimensional phase space directly, in the way that $\mathrm{Sc}(\tilde{\pi})\approx0$ writes the primary constraint?
 
 3. **The three polarizations and the adjoint action.** The triplet of polarizations is a vector under the rotation group; the algebra realizes the vector representation as the adjoint action on the imaginary quaternions. Does the mode expansion's polarization triad transform under that action, so that the three creation operators form a vector operator, and does the answer differ for the massive and massless cases?
 
@@ -299,7 +299,7 @@ The Proca field in biquaternionic form is the massive vector field, a material-s
 
 The Lorenz condition is a **consequence** of the massive field equation and not a gauge choice. Its algebra-level derivation is the identity $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{F})=\Box_\Phi\,\mathrm{Sc}(\tilde{F})=0$, which holds because the field strength has vanishing scalar part and the d'Alembertian is central, together with $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\mu^2\tilde{A}_{\Phi}))=\mu^2S$; hence $\mu^2S=0$. In the Lorenz gauge the equation is the componentwise massive wave equation $(\Box-\mu^2)\tilde{A}_{\Phi}=0$.
 
-The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\Delta$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
+The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\mathcal{K}_{\mathrm{con}}$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
 
 The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
 
@@ -324,7 +324,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
 | $\pi_\mu=-F_{t\mu}$, $\pi_0\approx0$ | Conjugate momenta and primary constraint |
 | $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$ | Secondary (Gauss) constraint, deformed by the mass |
-| $\{\pi_0,\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\}=-\mu^2\delta^{(3)}$ | Second-class bracket; $\det\Delta=\mu^4\neq0$ |
+| $\{\pi_0,\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\}=-\mu^2\delta^{(3)}$ | Second-class bracket; $\det\mathcal{K}_{\mathrm{con}}=\mu^4\neq0$ |
 | $\varepsilon_{r\mu}$ ($r=1,2,3$), $\varepsilon_{\mathrm{L}\mu}$ | Transverse and longitudinal polarizations |
 | $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$ | Polarization completeness; $P^2=P$, $\mathrm{tr}P=3$, $\sum_\nu P_{\mu\nu}p_\nu=0$ |
 | $a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},r}^{\dagger}(\vec p)$ | Mode operators with $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ |

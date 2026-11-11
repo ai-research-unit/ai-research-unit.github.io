@@ -92,7 +92,7 @@ The isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is written on the P
 
 $$
 \boxed{\;\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\bigl(Q_x\sigma_x+Q_y\sigma_y+Q_z\sigma_z\bigr)
-=\begin{pmatrix}Q_t-iQ_z & -iQ_x-Q_y\\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix}\;}.
+=\begin{pmatrix}Q_t-iQ_z & -iQ_x-Q_y\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix}\;}.
 $$
 
 The two matrix invariants are the two physical invariants of the element:

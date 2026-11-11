@@ -50,7 +50,7 @@ d\vec J/dr'_t = 0
 \,d\vec S/dr'_t = -\,d\vec L/dr'_t .
 $$
 
-This single conservation law is the Einstein–de Haas half of the reciprocity. A change of the moment changes $\vec S$ by $\Delta\vec S = \delta\vec\mu/\gamma$, and therefore changes the mechanical angular momentum by
+This single conservation law is the Einstein–de Haas half of the reciprocity. A change of the moment changes $\vec S$ by $\delta\vec S = \delta\vec\mu/\gamma$, and therefore changes the mechanical angular momentum by
 
 $$
 \delta\vec L = -\,\frac{1}{\gamma}\,\delta\vec\mu,
@@ -59,7 +59,7 @@ $$
 which is the Einstein–de Haas effect. The reverse interpretation — a rotation producing a magnetization — is the reciprocal of the same coupling rather than a second conservation law; it is obtained from the spin-rotation coupling in the rotating frame, and it is treated in the section on the Barnett effect. In the algebra, the conservation reads
 
 $$
-\Delta\vec S + \delta\vec L = 0,
+\delta\vec S + \delta\vec L = 0,
 \qquad
 \vec L = I\,\vec\omega .
 $$
@@ -143,10 +143,10 @@ $$
 \boxed{\;d\vec\omega/dr'_t = -\,\frac{1}{\gamma I}\,d\vec\mu/dr'_t\; }.
 $$
 
-The angular velocity of the body is proportional to the rate of change of its magnetic moment, with the coefficient $-1/(\gamma I)$. Reversing the magnetization, so that the moment changes by $\delta\vec\mu = -2\vec\mu_0$, makes the body acquire the angular velocity change $\Delta\vec\omega = 2\vec\mu_0/(\gamma I)$, whose sense is fixed by the sign of $\gamma$. In the biquaternion algebra the same statement is
+The angular velocity of the body is proportional to the rate of change of its magnetic moment, with the coefficient $-1/(\gamma I)$. Reversing the magnetization, so that the moment changes by $\delta\vec\mu = -2\vec\mu_0$, makes the body acquire the angular velocity change $\delta\vec\omega = 2\vec\mu_0/(\gamma I)$, whose sense is fixed by the sign of $\gamma$. In the biquaternion algebra the same statement is
 
 $$
-\Delta\vec\omega = -\,\frac{1}{\gamma I}\,\delta\vec\mu,
+\delta\vec\omega = -\,\frac{1}{\gamma I}\,\delta\vec\mu,
 \qquad
 \mathcal{U}_{\mathrm{rot}} = \exp\!\left(\frac{\delta\theta}{2}\,\vec{u}_k\vec e_\eta\right),
 \qquad

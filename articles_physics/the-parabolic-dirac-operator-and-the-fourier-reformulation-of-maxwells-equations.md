@@ -121,7 +121,7 @@ $$
 Dv = -\int_0^{r'_{t}} \Delta_\Phi g(r_x,s)\,ds - \partial/\partial r'_t g(r_x,0) = -\bigl(\partial/\partial r'_t g(r_x,r'_t) - \partial/\partial r'_t g(r_x,0)\bigr) - \partial/\partial r'_t g(r_x,0) = -\partial/\partial r'_t g(r_x,r'_t),
 $$
 
-using $\Delta_\Phi g = \partial^2/\partial {r\'_{t}}^2 g$ in the first step. When $g$ is a **scalar** solution $g_0$, the construction specialises to the purely vectorial complement
+using $\Delta_\Phi g = \partial^2/\partial {r'_{t}}^2 g$ in the first step. When $g$ is a **scalar** solution $g_0$, the construction specialises to the purely vectorial complement
 
 $$
 \mathcal{V}[g_0](r_x,r'_t) := i\int_0^{r'_{t}} \mathrm{grad}\,g_0(r_x,s)\,ds - i\,T_\Omega[\partial/\partial r'_t g_0](r_x,0),

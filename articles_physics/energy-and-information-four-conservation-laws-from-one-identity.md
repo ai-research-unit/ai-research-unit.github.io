@@ -221,7 +221,7 @@ so the survival probability starts from one with zero slope, and no exponential 
 
 | regime | law | where it holds |
 | --- | --- | --- |
-| early | $P=1-(\delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$ | ${r'_t}\ll\frac{\hbar}{\Delta\,\tilde{H}_{\Psi}}$ |
+| early | $P=1-(\delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$ | ${r'_t}\ll\frac{\hbar}{\mathcal{E}_{\mathrm{shift}}\,\tilde{H}_{\Psi}}$ |
 | intermediate | $\exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c})$, as a fit | long against the inverse spectral width of the continuum, short against the onset of the long-time deviation |
 | late | a power law set by the density of states at the band edge, slower than exponential | beyond the window |
 
@@ -702,19 +702,19 @@ $$
 and its discriminant is
 
 $$
-\Delta=(\operatorname{Tr}\tilde Q)^2-4\langle\tilde Q\rangle_\natural .
+\mathcal{D}_{\mathrm{disc}}=(\operatorname{Tr}\tilde Q)^2-4\langle\tilde Q\rangle_\natural .
 $$
 
 On a four-momentum, with $\operatorname{Tr}\tilde P_{\Phi}=2iE/c$ and $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$,
 
 $$
-\Delta=-4\frac{E^2}{c^2}+4m^2c^2=-4\lvert\vec p\rvert^2\le0 .
+\mathcal{D}_{\mathrm{disc}}=-4\frac{E^2}{c^2}+4m^2c^2=-4\lvert\vec p\rvert^2\le0 .
 $$
 
 The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$ and $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$,
 
 $$
-\Delta=1-(1-r^2)=r^2\ge0 .
+\mathcal{D}_{\mathrm{disc}}=1-(1-r^2)=r^2\ge0 .
 $$
 
 The eigenvalues are real and positive, and the entropy bound $0\le S\le\log2$ is the statement that they lie in $[0,1]$. The material element has a non-positive discriminant and the informational element a non-negative one. That is the spectral face of the sector split, and it is the reason the informational side carries a positive cone of states and a probability, while the material side carries the causal cone of the interval.
@@ -793,7 +793,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 
 **The fourth objection is that energy is not the sum of mass and information.** The objection is correct, and it is the main correction the article makes to the slogan. The exact additive split is rest energy plus kinetic energy, $E=mc^2+T$; the informational quantity is the norm of the state, not the kinetic energy. The exact statement is the duality of the trace and the norm, not a sum.
 
-**The fifth objection is that the material sector is anti-Hermitian and therefore lossy.** The objection fails, but not for the reason one expects. No element of either sector carries a rate: an anti-Hermitian element generates a $*$-unitary flow, and an irreversible process has no algebraic generator at all, so the predicate does not apply to elements. A falling survival probability belongs to a description in which a channel has been dropped. The width is the imaginary part of the central self-energy $\Sigma_{\mathrm{nc}}=\Delta-\frac{i}{2}\Gamma$, the pole it produces sits on the second sheet of the resolvent of a Hermitian Hamiltonian, and the probability it removes from the watched slot is the probability that sits in the eliminated one. So $\mathbb{B}_{\Phi}$ carries the energy and the generators, and the fall of a probability names neither a sector nor an element. The vocabulary is fixed in the section on the factor of $i$, and the ledger uses it.
+**The fifth objection is that the material sector is anti-Hermitian and therefore lossy.** The objection fails, but not for the reason one expects. No element of either sector carries a rate: an anti-Hermitian element generates a $*$-unitary flow, and an irreversible process has no algebraic generator at all, so the predicate does not apply to elements. A falling survival probability belongs to a description in which a channel has been dropped. The width is the imaginary part of the central self-energy $\Sigma_{\mathrm{nc}}=\mathcal{E}_{\mathrm{shift}}-\frac{i}{2}\Gamma$, the pole it produces sits on the second sheet of the resolvent of a Hermitian Hamiltonian, and the probability it removes from the watched slot is the probability that sits in the eliminated one. So $\mathbb{B}_{\Phi}$ carries the energy and the generators, and the fall of a probability names neither a sector nor an element. The vocabulary is fixed in the section on the factor of $i$, and the ledger uses it.
 
 ## Summary
 

@@ -241,7 +241,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 2. **$m_0$ and the mass formula.** The identification of $m_0$ with the spin–mass formula's $m^{(s)}$ is a choice. Does the equality hold for the meson octets as well as the baryon octet, and does the companion mass formula's error (a few percent) propagate into the average?
 
-3. **The decuplet's equal spacing.** The decuplet $(3,0)$ obeys equal spacing, $m_\Omega-m_{Ζ^*}=m_{Ζ^*}-m_{\Sigma^*}=m_{\Sigma^*}-m_\Delta$, a different relation from the octet's. Is it a statement in I-spin or U-spin, and is the corpus's representation ring able to derive the two relations at once?
+3. **The decuplet's equal spacing.** The decuplet $(3,0)$ obeys equal spacing, $m_\Omega-m_{Ζ^*}=m_{Ζ^*}-m_{\Sigma^*}=m_{\Sigma^*}-m_\mathcal{B}_{\mathrm{dec}}$, a different relation from the octet's. Is it a statement in I-spin or U-spin, and is the corpus's representation ring able to derive the two relations at once?
 
 4. **The $*$-unitary field and decoherence.** The programme's speculation that $Z$ describes a non-local substrate that localises particles overlaps the corpus's information-theoretic articles. Is there a biquaternion interpretation of $Z$ that is not a fitting parameter?
 

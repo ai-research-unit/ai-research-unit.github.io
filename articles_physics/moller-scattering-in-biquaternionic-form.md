@@ -187,7 +187,7 @@ with odd traces vanishing; *The Legacy Pauli Gamma Formulation* records them wit
 $$
 \begin{aligned}
 \overline{|\mathcal M|^2} = 2e^4\Bigl\{&
-\frac{s^2+u^2-8m^2(s+u)+24m^4}{t^2}\\
+\frac{s^2+u^2-8m^2(s+u)+24m^4}{t^2}\
 &+\frac{s^2+t^2-8m^2(s+t)+24m^4}{u^2}
 +\frac{2(s^2-8m^2s+12m^4)}{tu}\Bigr\}.
 \end{aligned}
@@ -286,7 +286,7 @@ The single structural feature the framework owns here is the exchange sign. The 
 
 ### Crossing symmetry is charge conjugation
 
-The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving an incoming electron to an outgoing positron, with reversed four-momentum, changes one process into the other. In the framework this operation is the **charge conjugation** real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$ of the companion article *Real Spinors and Reality Conditions with Inner Conjugation*; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The numerical check reported in the companion Bhabha article — the two amplitudes agreeing once the Mandelstam roles are permuted — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of the insertions. The companion Bhabha article states the correspondence from the other side.
+The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving an incoming electron to an outgoing positron, with reversed four-momentum, changes one process into the other. In the framework this operation is the **charge conjugation** real structure $\mathcal C$ on the doubled module $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar S$ of the companion article *Real Spinors and Reality Conditions with Inner Conjugation*; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The numerical check reported in the companion Bhabha article — the two amplitudes agreeing once the Mandelstam roles are permuted — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of the insertions. The companion Bhabha article states the correspondence from the other side.
 
 ### What the framework supplies and what it does not
 
@@ -413,7 +413,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $g_V^e=-\tfrac12Q_W^e$, $g_A^e=-\tfrac12$ | Vector and axial $Z$ couplings of the electron |
 | $Q_W^e=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |
 | $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ | Framework's conserved material-sector current |
-| $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
+| $\mathcal C$ | Charge-conjugation real structure on $\mathcal{S}_{\mathrm{rep}}=S\oplus\bar S$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the insertions |
 
 ## Further Reading

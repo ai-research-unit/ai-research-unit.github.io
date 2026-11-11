@@ -23,7 +23,7 @@ This exercise illustrates two structural features of quantum physics: the Born r
 The spin-up state along the $z$-axis is the eigenvalue-$+1$ eigenvector of the Pauli matrix $\sigma_3$:
 
 $$
-|+z\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+|+z\rangle = \begin{pmatrix} 1 \ 0 \end{pmatrix}.
 $$
 
 ### Step 2: The eigenstates along the measurement directions
@@ -31,13 +31,13 @@ $$
 The spin-up state along a direction $\vec u = (\sin\theta, 0, \cos\theta)$ in the $xz$-plane is the eigenvalue-$+1$ eigenvector of $\vec u\cdot\boldsymbol{\sigma}$:
 
 $$
-|+n(\theta)\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
+|+n(\theta)\rangle = \begin{pmatrix} \cos(\theta/2) \ \sin(\theta/2) \end{pmatrix}.
 $$
 
 In particular, the states for the two measurement directions are
 
 $$
-|+\vec u_x\rangle = \begin{pmatrix} \cos(\theta_1/2) \\ \sin(\theta_1/2) \end{pmatrix}, \qquad |+\vec u_y\rangle = \begin{pmatrix} \cos(\theta_2/2) \\ \sin(\theta_2/2) \end{pmatrix}.
+|+\vec u_x\rangle = \begin{pmatrix} \cos(\theta_1/2) \ \sin(\theta_1/2) \end{pmatrix}, \qquad |+\vec u_y\rangle = \begin{pmatrix} \cos(\theta_2/2) \ \sin(\theta_2/2) \end{pmatrix}.
 $$
 
 ### Step 3: The joint probability

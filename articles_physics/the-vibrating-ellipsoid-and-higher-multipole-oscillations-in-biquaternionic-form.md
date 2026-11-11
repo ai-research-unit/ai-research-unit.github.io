@@ -195,11 +195,11 @@ Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = 
 $$
 \begin{aligned}
 \mathcal{Q}^{(lab)}_{xx}(r'_t) &= \lambda_1\cos^2(\Omega r'_t/c) + \lambda_2\sin^2(\Omega r'_t/c)
-= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
+= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\
 \mathcal{Q}^{(lab)}_{yy}(r'_t) &= \lambda_1\sin^2(\Omega r'_t/c) + \lambda_2\cos^2(\Omega r'_t/c)
-= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\\
+= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos(2\Omega r'_t/c) ,\
 \mathcal{Q}^{(lab)}_{xy}(r'_t) &= (\lambda_1-\lambda_2)\sin(\Omega r'_t/c)\cos(\Omega r'_t/c)
-= \frac{\lambda_1-\lambda_2}{2}\sin(2\Omega r'_t/c) ,\\
+= \frac{\lambda_1-\lambda_2}{2}\sin(2\Omega r'_t/c) ,\
 \mathcal{Q}^{(lab)}_{zz}(r'_t) &= \lambda_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$

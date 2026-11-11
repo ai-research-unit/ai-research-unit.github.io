@@ -99,8 +99,8 @@ The Einstein–Mayer system has a mass field $\tilde{E}_{\Psi}$ that is put in b
 
 $$
 \boxed{\;\begin{aligned}
-\tilde\nabla_\Phi\tilde Q_1 &= \tilde Q_2\tilde Q_3,\\
-\tilde\nabla_\Phi\tilde Q_2 &= \tilde Q_1\tilde Q_3,\\
+\tilde\nabla_\Phi\tilde Q_1 &= \tilde Q_2\tilde Q_3,\
+\tilde\nabla_\Phi\tilde Q_2 &= \tilde Q_1\tilde Q_3,\
 \tilde\nabla_\Phi\tilde Q_3 &= \tilde Q_1\tilde Q_2.
 \end{aligned}\;}
 $$

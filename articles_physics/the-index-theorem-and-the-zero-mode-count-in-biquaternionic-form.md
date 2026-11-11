@@ -130,7 +130,7 @@ Both are computed from the same commutation relations $[T_a,T_b]=\varepsilon_{ab
 
 $$
 \begin{aligned}
-\mathrm{ind}\,\tilde D_{\text{defining}}&=Ϙ,\\
+\mathrm{ind}\,\tilde D_{\text{defining}}&=Ϙ,\
 \mathrm{ind}\,\tilde D_{\text{adjoint}}&=4Ϙ.
 \end{aligned}
 $$
@@ -181,7 +181,7 @@ $$
 \frac14\sum_{\mu,\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
 =
 \begin{cases}
-\dfrac{2i}{c}\,I_2 & (\text{Lorentzian}),\\[2mm]
+\dfrac{2i}{c}\,I_2 & (\text{Lorentzian}),\[2mm]
 2\,I_2 & (\text{Euclidean}),
 \end{cases}
 \qquad

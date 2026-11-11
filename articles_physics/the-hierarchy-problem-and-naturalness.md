@@ -75,17 +75,17 @@ against $m_H^2/2=7.82\times10^{3}\ \mathrm{GeV}^2$. The ratio is $3.0\times10^{3
 
 ## The Fine Tuning, Stated Exactly
 
-**The definition.** With $\Delta$ the tuning,
+**The definition.** With $\mathcal{T}_{\mathrm{tune}}$ the tuning,
 
 $$
-\Delta=\frac{\lvert\delta m_H^2\rvert}{m_H^2} ,
+\mathcal{T}_{\mathrm{tune}}=\frac{\lvert\delta m_H^2\rvert}{m_H^2} ,
 \qquad
-\text{tuning fraction}=\frac{1}{\Delta} .
+\text{tuning fraction}=\frac{1}{\mathcal{T}_{\mathrm{tune}}} .
 $$
 
 **The table, which is the article's central computation.**
 
-| $\Lambda$ | $\Lambda^2$ (GeV$^2$) | $\delta m_H^2$ (GeV$^2$) | $\delta m_H^2/m_H^2$ | $1/\Delta$ |
+| $\Lambda$ | $\Lambda^2$ (GeV$^2$) | $\delta m_H^2$ (GeV$^2$) | $\delta m_H^2/m_H^2$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|---|
 | $1$ TeV | $1.0\times10^{6}$ | $1.58\times10^{4}$ | $1.01$ | $0.99$ |
 | $2$ TeV | $4.0\times10^{6}$ | $6.30\times10^{4}$ | $4.03$ | $0.25$ |
@@ -97,7 +97,7 @@ $$
 
 **How to read it.** The first row is the statement that new physics at $1$ TeV costs nothing: the shift is the same size as the mass. The fourth row is the statement that new physics at $10$ TeV costs one part in a hundred. The seventh is one part in $3\times10^{32}$.
 
-**What the tuning is not.** It is not a probability. A small $\Delta$ does not mean the value is unlikely; it means that a small change in the input produces a large change in the output, and that a theory which produces $m_H$ from a cancellation is one whose parameters must be tuned. The distinction matters for the landscape discussion below, where the same number is read as a selection effect.
+**What the tuning is not.** It is not a probability. A small $\mathcal{T}_{\mathrm{tune}}$ does not mean the value is unlikely; it means that a small change in the input produces a large change in the output, and that a theory which produces $m_H$ from a cancellation is one whose parameters must be tuned. The distinction matters for the landscape discussion below, where the same number is read as a selection effect.
 
 **The comparison with the other fine tuning.** The cosmological constant requires $10^{120}$; this requires $10^{32}$. Both are "fine tunings", and the corpus records them as different problems with different orders of magnitude rather than as one problem, because the mechanisms proposed for the two are not the same.
 
@@ -156,7 +156,7 @@ so the shift vanishes exactly when supersymmetry is unbroken. Breaking it at sca
 
 **The numbers, and the two problems.**
 
-| $m_{\tilde t}$ | $\delta m_H^2$ (GeV$^2$) | $\Delta$ | $1/\Delta$ |
+| $m_{\tilde t}$ | $\delta m_H^2$ (GeV$^2$) | $\mathcal{T}_{\mathrm{tune}}$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|
 | $500$ GeV | $1.40\times10^{4}$ | $0.89$ | $1.12$ |
 | $750$ GeV | $2.72\times10^{4}$ | $1.74$ | $0.58$ |
@@ -187,12 +187,12 @@ against a measured $125.09$ GeV. So the model requires large loop corrections fr
 $$
 m_H^2\sim\frac{g_{\mathrm{strong}}^2}{16\pi^2}f^2\times\left(\frac{v}{f}\right)^{2}\quad\text{in the little-Higgs form,}
 \qquad
-\Delta\sim\left(\frac{f}{v}\right)^{2} .
+\mathcal{T}_{\mathrm{tune}}\sim\left(\frac{f}{v}\right)^{2} .
 $$
 
 **The numbers.**
 
-| $f$ | $v/f$ | $\Delta=(f/v)^2$ | $1/\Delta$ |
+| $f$ | $v/f$ | $\mathcal{T}_{\mathrm{tune}}=(f/v)^2$ | $1/\mathcal{T}_{\mathrm{tune}}$ |
 |---|---|---|---|
 | $500$ GeV | $0.492$ | $4.1$ | $0.24$ |
 | $800$ GeV | $0.308$ | $10.6$ | $0.095$ |
@@ -358,7 +358,7 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 | $\Lambda$ | Cutoff, or the scale of new physics |
 | $\delta m_H^2$ | One-loop shift of the Higgs mass squared |
 | $c_i$ | Coefficient of the quadratic divergence from source $i$ |
-| $\Delta$ | Tuning, $\lvert\delta m_H^2\rvert/m_H^2$ |
+| $\mathcal{T}_{\mathrm{tune}}$ | Tuning, $\lvert\delta m_H^2\rvert/m_H^2$ |
 | $\lambda$ | Higgs quartic, $0.1291$ |
 | $y_t$ | Top Yukawa, $0.7014$ |
 | $v$ | Higgs expectation value, $246.22$ GeV |

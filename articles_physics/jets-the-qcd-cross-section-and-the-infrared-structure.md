@@ -68,12 +68,12 @@ which is half the value of $\alpha_s$ itself. Inverting the leading formula agai
 **The distance measure, written once.** In the generalised $k_T$ family,
 
 $$
-d_{ij}=\min\left(k_{Ti}^{2p},k_{Tj}^{2p}\right)\frac{\Delta R_{ij}^2}{R^2} ,
+d_{ij}=\min\left(k_{Ti}^{2p},k_{Tj}^{2p}\right)\frac{\delta R_{ij}^2}{R^2} ,
 \qquad
 d_{iB}=k_{Ti}^{2p} ,
 $$
 
-with $\Delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.
+with $\delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.
 
 **Why the definition is part of the prediction.** The number of jets in an event is not a property of the event. It is a property of the event and the resolution: at a coarse resolution any event is two-jet, at a fine one every event is many-jet. So a cross section "for three jets" is meaningless until the resolution is given, and the resolution is a number that must be stated and, ideally, varied to show that the dependence is under control. This is not a technicality of experimental practice. It is the same statement as [the confinement article's](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) that the parton picture is a description at a resolution, made quantitative.
 
@@ -200,7 +200,7 @@ the Sudakov form factor. It is not an approximation to a sum; it *is* the sum of
 
 **The numbers.**
 
-| $Q_0$ | $\ln(Q/Q_0)$ | $W$ | $\Delta$ | $\langle n\rangle=-\ln\Delta$ | $1-\Delta$ |
+| $Q_0$ | $\ln(Q/Q_0)$ | $W$ | $\mathcal{P}_{\mathrm{jet}}$ | $\langle n\rangle=-\ln\mathcal{P}_{\mathrm{jet}}$ | $1-\mathcal{P}_{\mathrm{jet}}$ |
 |---|---|---|---|---|---|
 | $3$ GeV | $3.414$ | $1.167$ | $0.311$ | $1.167$ | $0.689$ |
 | $5$ GeV | $2.904$ | $0.844$ | $0.430$ | $0.844$ | $0.570$ |
@@ -212,7 +212,7 @@ the Sudakov form factor. It is not an approximation to a sum; it *is* the sum of
 
 **The improvement that matters.** Replacing one of the two logs by $\ln(Q/\Lambda_{\mathrm{eff}})$, which is what the modified leading-log approximation does, changes the exponent from $0.844$ to $1.779$ at $Q_0=5$ GeV, and the no-emission probability from $0.43$ to $0.17$. The scale here is $\Lambda_{\mathrm{eff}}=0.2$ GeV, $\ln(Q/\Lambda_{\mathrm{eff}})=6.122$, and it is not $\Lambda_5$ of the running article, which is $87$ MeV: the MLLA logarithm absorbs a constant, so its argument carries an effective scale larger than any of the $\Lambda_{N_f}$. That factor of two is the size of the leading correction to the leading logarithm, and it is why a shower that used only the double log would put the two-jet fraction at $0.43$ where the improved exponent gives $0.17$ — a factor of two and a half, from one power of the logarithm. The article states the improved numbers rather than hiding the gap:
 
-| $Q_0$ | $W$ (double log) | $W$ (one log improved) | $\Delta$ (double log) | $\Delta$ (improved) |
+| $Q_0$ | $W$ (double log) | $W$ (one log improved) | $\mathcal{P}_{\mathrm{jet}}$ (double log) | $\mathcal{P}_{\mathrm{jet}}$ (improved) |
 |---|---|---|---|---|
 | $3$ GeV | $1.167$ | $2.092$ | $0.311$ | $0.123$ |
 | $5$ GeV | $0.844$ | $1.779$ | $0.430$ | $0.169$ |

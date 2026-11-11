@@ -86,7 +86,7 @@ In the basis $\{|1,1\rangle,|1,0\rangle,|1,-1\rangle\}$ the spin-$1$ operators a
 
 $$
 F_1=\tfrac{1}{\sqrt2}\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix},\quad
-F_2=\tfrac{1}{\sqrt2}\begin{pmatrix}0&-i&0\\ i&0&-i\\0& i&0\end{pmatrix},\quad
+F_2=\tfrac{1}{\sqrt2}\begin{pmatrix}0&-i&0\ i&0&-i\\0& i&0\end{pmatrix},\quad
 F_3=\begin{pmatrix}1&0&0\\0&0&0\\0&0&-1\end{pmatrix},
 $$
 

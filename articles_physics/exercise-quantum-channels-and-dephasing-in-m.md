@@ -106,13 +106,13 @@ $$
 so
 $$
 J = \begin{pmatrix}
-1 & 0 & 0 & 1-p\\
-0 & 0 & 0 & 0\\
-0 & 0 & 0 & 0\\
+1 & 0 & 0 & 1-p\
+0 & 0 & 0 & 0\
+0 & 0 & 0 & 0\
 1-p & 0 & 0 & 1
 \end{pmatrix}.
 $$
-The only nonzero block is $\begin{pmatrix}1 & 1-p\\ 1-p & 1\end{pmatrix}$, whose eigenvalues are $1 \pm (1-p)$; hence
+The only nonzero block is $\begin{pmatrix}1 & 1-p\ 1-p & 1\end{pmatrix}$, whose eigenvalues are $1 \pm (1-p)$; hence
 $$
 \mathrm{spec}\,J = \{\,2-p,\; p,\; 0,\; 0\,\}.
 $$
@@ -152,9 +152,9 @@ To test complete positivity, compute the Choi matrix. Transposition swaps the of
 $$
 J_T = E_{00}\otimes E_{00} + E_{11}\otimes E_{11} + E_{01}\otimes E_{10} + E_{10}\otimes E_{01}
 = \begin{pmatrix}
-1 & 0 & 0 & 0\\
-0 & 0 & 1 & 0\\
-0 & 1 & 0 & 0\\
+1 & 0 & 0 & 0\
+0 & 0 & 1 & 0\
+0 & 1 & 0 & 0\
 0 & 0 & 0 & 1
 \end{pmatrix}.
 $$
@@ -176,9 +176,9 @@ Find its Kraus operators in $\mathbb{B}$, verify trace preservation, and determi
 
 **Solution.** In the matrix representative the standard Kraus operators are
 $$
-M_{\mathrm{kraus},0} = \begin{pmatrix}1 & 0\\ 0 & \sqrt{1-\gamma}\end{pmatrix},
+M_{\mathrm{kraus},0} = \begin{pmatrix}1 & 0\ 0 & \sqrt{1-\gamma}\end{pmatrix},
 \qquad
-M_{\mathrm{kraus},1} = \begin{pmatrix}0 & \sqrt{\gamma}\\ 0 & 0\end{pmatrix} = \sqrt{\gamma}\,|0\rangle\langle 1| .
+M_{\mathrm{kraus},1} = \begin{pmatrix}0 & \sqrt{\gamma}\ 0 & 0\end{pmatrix} = \sqrt{\gamma}\,|0\rangle\langle 1| .
 $$
 Writing $s = \sqrt{1-\gamma} \in [0,1]$ and using $\sigma_3 = i\vec e_z$ and $|0\rangle\langle 1| = \tfrac{1}{2}(i\vec e_x - \vec e_y)$, these translate to
 $$

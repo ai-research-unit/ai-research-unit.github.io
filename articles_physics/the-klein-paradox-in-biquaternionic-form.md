@@ -55,7 +55,7 @@ $$
 which is real for $E > mc^2$. The solution is an incident wave plus a reflected wave,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\mathrm{I}} = \exp(ikx)\begin{pmatrix}1\\ \alpha\end{pmatrix} + r\,\exp(-ikx)\begin{pmatrix}1\\ -\alpha\end{pmatrix},
+\tilde{Ξ}_{\mathrm{sp},\mathrm{I}} = \exp(ikx)\begin{pmatrix}1\ \alpha\end{pmatrix} + r\,\exp(-ikx)\begin{pmatrix}1\ -\alpha\end{pmatrix},
 \qquad
 \alpha = \sqrt{\frac{E - mc^2}{E + mc^2}},
 $$
@@ -65,7 +65,7 @@ so $0 < \alpha < 1$ for a massive particle, and $\alpha \to 1$ in the massless l
 $$
 k_2 = -\frac{\sqrt{(V_0 - E)^2 -m^{2}\,c^{4}}}{\hbar\,c},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\\ 1/\beta\end{pmatrix},
+\tilde{Ξ}_{\mathrm{sp},\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\ 1/\beta\end{pmatrix},
 \qquad
 \beta = \sqrt{\frac{V_0 - E - mc^2}{V_0 - E + mc^2}} .
 $$

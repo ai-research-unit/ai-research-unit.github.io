@@ -4,15 +4,15 @@
 
 A massless relativistic field has a larger symmetry than a massive one. The Poincaré group is enlarged by the dilations and the special conformal transformations into the fifteen-parameter conformal group, and the massless wave equation, the massless Maxwell field, and the two-point function are all invariant under it. The mass term is the one term in the action that is not: it introduces a fixed length scale, and it breaks every one of the five additional symmetries. This article states that symmetry, derives its action on the massless scalar field, identifies the massless limit as the limit in which it holds, and traces the breaking to the trace of the stress–energy tensor. It is the symmetry statement that the action article makes possible and the massless limit of the operator article.
 
-Three things are established. First, the **transformation law**. The massless scalar field of the framework transforms with conformal weight $\Delta = 1$,
+Three things are established. First, the **transformation law**. The massless scalar field of the framework transforms with conformal weight $\mathcal{W}_{\mathrm{dim}} = 1$,
 $$
-\tilde{Ξ}(\tilde{Q}) \longmapsto \Omega(\tilde{Q})^{\Delta}\,\tilde{Ξ}\bigl(\tilde{Q}_2\bigr) ,
+\tilde{Ξ}(\tilde{Q}) \longmapsto \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\tilde{Ξ}\bigl(\tilde{Q}_2\bigr) ,
 $$
 where $\Omega$ is the conformal factor and $\tilde{Q}_2$ is the image point; with this weight the massless equation $\Box\tilde{Ξ} = 0$ is carried into itself. The weight is not free: the identity
 $$
-\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr] = \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}_2}\xi\bigr)\bigl(\tilde{Q}_2\bigr)
+\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr] = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}+2}\,\bigl(\Box_{\tilde{Q}_2}\xi\bigr)\bigl(\tilde{Q}_2\bigr)
 $$
-holds at $\Delta = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box - k_m^{2}$, and the limit $k_m\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\sum_\mu T_{\mu\mu} \propto k_m^{2}\tilde{Ξ}^{2}$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+holds at $\mathcal{W}_{\mathrm{dim}} = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box - k_m^{2}$, and the limit $k_m\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\sum_\mu T_{\mu\mu} \propto k_m^{2}\tilde{Ξ}^{2}$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The scope is relativistic and quantum, and one boundary matters. The biquaternion algebra carries the conformal **structure** — the biquaternion norm's zero set is the null cone, the algebra inverse composed with parity is the conformal inversion, and the dilations and special conformal transformations are built from it by composition — but it does not carry the conformal **group** as a group of its own multiplications: six of the fifteen generators are algebra elements, the dilation is a non-unit element, and the translations and special conformal transformations are not elements of $\mathbb{B}$ at all. The companion *The Conformal Group in Biquaternionic Form* establishes this boundary in detail, and this article uses its results rather than restating them. What is established here is the invariance of the *field equations and their solutions*, which is a statement about spacetime symmetry and does not require the group to sit inside the algebra. Twistor theory and the twistor realisation of the conformal group belong to the companion articles on twistors.
 
@@ -74,11 +74,11 @@ A conformal transformation is a coordinate change $\tilde{Q}\mapsto\tilde{Q}_2$ 
 $$
 d\tilde{Q}_2\,\overline{d\tilde{Q}_2} = \Omega(\tilde{Q})^{2}\,d\tilde{Q}\,\overline{d\tilde{Q}} ,
 $$
-so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}_2 = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/\langle\tilde Q\rangle_{\natural}^{2}$, has $\Omega = 1/\langle\tilde Q\rangle_{\natural}$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
+so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}_2 = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/\langle\tilde Q\rangle_{\natural}^{2}$, has $\Omega = 1/\langle\tilde Q\rangle_{\natural}$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\mathcal{W}_{\mathrm{dim}}$ transforms by the rule
 $$
-\xi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\,\xi\bigl(\tilde{Q}_2\bigr) ,
+\xi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr) ,
 $$
-and the transformation is a symmetry of the equation $(\Box - k_m^{2})\xi = 0$ if the equation is carried into itself. The weight is a property of the equation together with the dimension: in four dimensions the massless scalar has $\Delta = 1$, which is the value forced by the requirement that the box operator's transformation law be consistent. The massive equation has no consistent weight, because under a conformal transformation the kinetic term acquires the factor $\Omega^{\Delta+2}$ while the mass term acquires only $\Omega^{\Delta}$ — but the mass *coefficient* is a constant and does not transform, so the two terms scale differently and no choice of $\Delta$ preserves both. This is the algebraic statement of the symmetry breaking, and it is what the rest of the article quantifies.
+and the transformation is a symmetry of the equation $(\Box - k_m^{2})\xi = 0$ if the equation is carried into itself. The weight is a property of the equation together with the dimension: in four dimensions the massless scalar has $\mathcal{W}_{\mathrm{dim}} = 1$, which is the value forced by the requirement that the box operator's transformation law be consistent. The massive equation has no consistent weight, because under a conformal transformation the kinetic term acquires the factor $\Omega^{\mathcal{W}_{\mathrm{dim}}+2}$ while the mass term acquires only $\Omega^{\mathcal{W}_{\mathrm{dim}}}$ — but the mass *coefficient* is a constant and does not transform, so the two terms scale differently and no choice of $\mathcal{W}_{\mathrm{dim}}$ preserves both. This is the algebraic statement of the symmetry breaking, and it is what the rest of the article quantifies.
 
 ## Conformal Covariance of the Massless Equation
 
@@ -86,24 +86,24 @@ and the transformation is a symmetry of the equation $(\Box - k_m^{2})\xi = 0$ i
 
 The dilation is $\tilde{Q}\mapsto\tilde{Q}_2 = \lambda\tilde{Q}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
 $$
-\xi_\lambda(\tilde{Q}) = \lambda^{-\Delta}\,\xi(\lambda^{-1}\tilde{Q})
+\xi_\lambda(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\,\xi(\lambda^{-1}\tilde{Q})
 $$
 the chain rule gives
 $$
-\Box\,\xi_\lambda = \lambda^{-(\Delta+2)}\,\bigl(\Box\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
+\Box\,\xi_\lambda = \lambda^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
 $$
-so $\xi_\lambda$ solves $\Box\xi_\lambda = 0$ whenever $\xi$ does, for **every** weight $\Delta$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
+so $\xi_\lambda$ solves $\Box\xi_\lambda = 0$ whenever $\xi$ does, for **every** weight $\mathcal{W}_{\mathrm{dim}}$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
 
 ### The inversion and the conformal Laplacian
 
 For the inversion $\tilde{Q}_2 = I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, the conformal factor is $\Omega(\tilde{Q}) = 1/\langle\tilde{Q}\rangle_{\natural}$, and the transformation law of the box operator is
 $$
 \boxed{\;
-\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr]
-= \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}_2}\xi\bigr)\bigl(\tilde{Q}_2\bigr)
-\qquad\text{at } \Delta = 1\;},
+\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr]
+= \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}+2}\,\bigl(\Box_{\tilde{Q}_2}\xi\bigr)\bigl(\tilde{Q}_2\bigr)
+\qquad\text{at } \mathcal{W}_{\mathrm{dim}} = 1\;},
 $$
-with a residual proportional to $(\Delta-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $i r'_t$ coordinates: at $\Delta = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\Delta = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box$ is carried by the inversion into $\Omega^2\Box$; as a solution statement, it says the field $\Omega^{\Delta}\xi\circ I$ solves the massless equation whenever $\xi$ does.
+with a residual proportional to $(\mathcal{W}_{\mathrm{dim}}-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $i r'_t$ coordinates: at $\mathcal{W}_{\mathrm{dim}} = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\mathcal{W}_{\mathrm{dim}} = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box$ is carried by the inversion into $\Omega^2\Box$; as a solution statement, it says the field $\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I$ solves the massless equation whenever $\xi$ does.
 
 The elementary consequence is that the inversion image of the constant is a solution,
 $$
@@ -124,7 +124,7 @@ $$
 \qquad
 \Omega(\tilde{Q}) = \frac{1}{1 + 2\,\mathrm{Sc}\bigl(\tilde{Q}_3^{\natural}\tilde{Q}\bigr) + \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}} ,
 $$
-so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{Q}_3$, reproducing $(x_2)_\mu = (x_\mu + a_\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = \langle d\tilde{Q}_2\rangle_{\natural}/\langle d\tilde{Q}\rangle_{\natural}$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{Q}_3\to0$ the map is the identity and $\Omega\to1$; for $\tilde{Q}_3\to\infty$ it degenerates to the constant $I(\tilde{Q}_3^{\natural}) = \tilde{Q}_3/\langle\tilde{Q}_3\rangle_{\natural}$, while $\Omega$ tends to a constant multiple of the inversion's $1/\langle\tilde{Q}\rangle_{\natural}$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
+so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{Q}_3$, reproducing $(x_2)_\mu = (x_\mu + a_\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = \langle d\tilde{Q}_2\rangle_{\natural}/\langle d\tilde{Q}\rangle_{\natural}$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{Q}_3\to0$ the map is the identity and $\Omega\to1$; for $\tilde{Q}_3\to\infty$ it degenerates to the constant $I(\tilde{Q}_3^{\natural}) = \tilde{Q}_3/\langle\tilde{Q}_3\rangle_{\natural}$, while $\Omega$ tends to a constant multiple of the inversion's $1/\langle\tilde{Q}\rangle_{\natural}$. Because the inversion carries the box operator with weight $\mathcal{W}_{\mathrm{dim}}=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
 $$
 \mathcal{K}_\mu = 2\sum_\nu x_\mu x_\nu\partial/\partial R_\nu - r_x^2\partial/\partial R_\mu ,
 $$
@@ -141,13 +141,13 @@ $$
 \boxed{\;
 G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 \langle\tilde{Q}\rangle_{\natural}}\;},
 $$
-is the conformal two-point function of a field of weight $\Delta = 1$. Two properties make this identification exact. First, it is the unique function of the interval with the right scaling: the conformal covariance of a two-point function requires
+is the conformal two-point function of a field of weight $\mathcal{W}_{\mathrm{dim}} = 1$. Two properties make this identification exact. First, it is the unique function of the interval with the right scaling: the conformal covariance of a two-point function requires
 $$
-\bigl\langle\xi(\tilde{Q})\xi(\tilde{Q}_1)\bigr\rangle = \frac{\text{const}}{\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural}^{\Delta}} \qquad\text{with } \Delta = 1 ,
+\bigl\langle\xi(\tilde{Q})\xi(\tilde{Q}_1)\bigr\rangle = \frac{\text{const}}{\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural}^{\mathcal{W}_{\mathrm{dim}}}} \qquad\text{with } \mathcal{W}_{\mathrm{dim}} = 1 ,
 $$
 and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{Q}-\tilde{Q}_1) = 1/(4\pi^2\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural})$. Second, it obeys the inversion covariance of a weight-one two-point function,
 $$
-G\bigl(I(\tilde{Q})-I(\tilde{Q}_1)\bigr) = \langle\tilde{Q}\rangle_{\natural}^{\Delta}\langle\tilde{Q}_1\rangle_{\natural}^{\Delta}\,G(\tilde{Q}-\tilde{Q}_1) \Big|_{\Delta=1} ,
+G\bigl(I(\tilde{Q})-I(\tilde{Q}_1)\bigr) = \langle\tilde{Q}\rangle_{\natural}^{\mathcal{W}_{\mathrm{dim}}}\langle\tilde{Q}_1\rangle_{\natural}^{\mathcal{W}_{\mathrm{dim}}}\,G(\tilde{Q}-\tilde{Q}_1) \Big|_{\mathcal{W}_{\mathrm{dim}}=1} ,
 $$
 which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{Q})-I(\tilde{Q}_1)|^2 = \langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural}/(\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural})$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
 
@@ -159,7 +159,7 @@ The massive operator is $\Box - k_m^{2}$ with $k_m=mc/\hbar$, and $1/k_m$ is the
 
 ### The effective mass under dilation
 
-The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box-k_m^{2})\xi=0$, then the dilated field $\xi_\lambda(\tilde{Q}) = \lambda^{-\Delta}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
+The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box-k_m^{2})\xi=0$, then the dilated field $\xi_\lambda(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
 $$
 \bigl(\Box - \lambda^{-2}\,k_m^{2}\bigr)\xi_\lambda = 0 ,
 $$
@@ -255,7 +255,7 @@ The two routes are distinguished by their fields, and the distinction is checkab
 
 ## The Massless Dirac Field
 
-The spin-half field completes the pattern, and its conformal weight is the other standard value. In four dimensions the massless Dirac equation is conformally invariant with weight $\Delta = 3/2$,
+The spin-half field completes the pattern, and its conformal weight is the other standard value. In four dimensions the massless Dirac equation is conformally invariant with weight $\mathcal{W}_{\mathrm{dim}} = 3/2$,
 $$
 \tilde{Ξ}_{\mathrm{sp},2}(\tilde{Q}) = \Omega(\tilde{Q})^{3/2}\,\tilde{Ξ}_{\mathrm{sp}}\bigl(\tilde{Q}_2\bigr) ,
 $$
@@ -274,7 +274,7 @@ The symmetry statement has a worked consequence in the article that follows this
 
 Collecting the algebraic content, the conformal statement of the framework has four parts, and each is a statement about the biquaternion norm.
 
-The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\Delta$ transforms by $\langle\tilde{Q}\rangle_{\natural}^{-\Delta}$ under the inversion, and the massless scalar's weight is $\Delta = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
+The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\mathcal{W}_{\mathrm{dim}}$ transforms by $\langle\tilde{Q}\rangle_{\natural}^{-\mathcal{W}_{\mathrm{dim}}}$ under the inversion, and the massless scalar's weight is $\mathcal{W}_{\mathrm{dim}} = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
 
 The **inversion** is the biquaternion norm's division, $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
 
@@ -284,7 +284,7 @@ The **breaking** is the mass term, and it is measured by the trace, $\sum_\mu T_
 
 ## The Norm as a Weyl Factor
 
-The carrier of the conformal statement is the weight $\Delta$ and the inversion $I(\tilde Q)=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Read on the norm, that carrier has a second name. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a **scale** and its logarithm $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ a **dilation potential**: a change of $\langle\cdot\rangle_{\natural}$ is a change of the unit of length, the weight $\Delta$ is the power of the scale by which a field transforms, and the invariant kernel $1/(4\pi^{2}\langle\tilde Q\rangle_{\natural})$ is the scale to the first power. The norm is therefore a **conformal (Weyl) factor**, and the massless limit of the previous sections is read as the conformal limit in the Weyl sense, the mass term being the only obstruction.
+The carrier of the conformal statement is the weight $\mathcal{W}_{\mathrm{dim}}$ and the inversion $I(\tilde Q)=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Read on the norm, that carrier has a second name. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a **scale** and its logarithm $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ a **dilation potential**: a change of $\langle\cdot\rangle_{\natural}$ is a change of the unit of length, the weight $\mathcal{W}_{\mathrm{dim}}$ is the power of the scale by which a field transforms, and the invariant kernel $1/(4\pi^{2}\langle\tilde Q\rangle_{\natural})$ is the scale to the first power. The norm is therefore a **conformal (Weyl) factor**, and the massless limit of the previous sections is read as the conformal limit in the Weyl sense, the mass term being the only obstruction.
 
 The interpretation is offered as an interpretation, and its boundary is the article's own count: the algebra carries the inversion and the weight, and six of the fifteen conformal generators are algebra elements, while the remaining nine are imported (*The Biquaternion Structure of the Conformal Statement*). What the interpretation adds is only the name: the framework's scale is a conformal weight. The norm is owned by *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, which gives it as the scale of the polar decomposition, and the same logarithm is read as the Weyl factor of a local metric in *The Local Complex Structure and the Speed of Light*; what the interpretation here adds is the name and the connection, that the framework's scale is a conformal weight. **Open question.** Whether that scale is a dynamical field, as the interpretation here proposes, or a gauge choice of the local complex structure, is not decided by the algebra; the norm is read here as a Weyl factor and the question is left open (*The Polar Decomposition of Biquaternions*, *The Local Complex Structure and the Speed of Light*).
 
@@ -292,11 +292,11 @@ The interpretation is offered as an interpretation, and its boundary is the arti
 
 The massless relativistic field of the framework has the conformal symmetry: the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the Lorentz generators, the translations, the dilation, and the special conformal generators $\mathcal{K}_\mu$, is a symmetry of the massless wave equation and of the massless Maxwell field, and is broken by the mass term alone. The algebra carries the conformal structure — the null cone as the biquaternion norm's zero set, the inversion as $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ — but not the group; six of the fifteen generators are algebra elements, and the companion article on the conformal group establishes the count.
 
-The massless scalar field transforms with weight $\Delta = 1$,
+The massless scalar field transforms with weight $\mathcal{W}_{\mathrm{dim}} = 1$,
 $$
-\xi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\xi\bigl(\tilde{Q}_2\bigr) ,
+\xi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\xi\bigl(\tilde{Q}_2\bigr) ,
 \qquad
-\Box_{\tilde{Q}}\Bigl[\Omega^{\Delta}\xi\circ I\Bigr] = \Omega^{\Delta+2}\bigl(\Box\xi\bigr)\circ I \ \text{ at } \Delta = 1 ,
+\Box_{\tilde{Q}}\Bigl[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I\Bigr] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}\bigl(\Box\xi\bigr)\circ I \ \text{ at } \mathcal{W}_{\mathrm{dim}} = 1 ,
 $$
 the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/\langle\tilde{Q}\rangle_{\natural}$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$, and it is the inversion image of the constant.
 
@@ -312,10 +312,10 @@ The improved stress tensor has trace $\sum_\mu T_{\mu\mu} = 2k_m^{2}\xi^2$ on sh
 | $P_\mu, M_{\mu\nu}, D, \mathcal{K}_\mu$ | Generators: translations, Lorentz, dilation, special conformal |
 | $\mathcal{K}_\mu = 2\sum_\nu x_\mu x_\nu\partial/\partial R_\nu - r_x^2\partial/\partial R_\mu$ | Special conformal generator (series symbol; not the boost $B_{\mathrm{boost},\eta}$) |
 | $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/\langle\tilde Q\rangle_{\natural}$ for the inversion |
-| $\Delta$ | Conformal weight of the field; $\Delta = 1$ for the massless scalar in $d=4$ |
-| $\xi_2(\tilde{Q}) = \Omega^{\Delta}\xi(\tilde{Q}_2)$ | Conformal transformation law |
+| $\mathcal{W}_{\mathrm{dim}}$ | Conformal weight of the field; $\mathcal{W}_{\mathrm{dim}} = 1$ for the massless scalar in $d=4$ |
+| $\xi_2(\tilde{Q}) = \Omega^{\mathcal{W}_{\mathrm{dim}}}\xi(\tilde{Q}_2)$ | Conformal transformation law |
 | $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Conformal inversion; $\langle I(\tilde{Q})\rangle_{\natural} = 1/\langle\tilde{Q}\rangle_{\natural}$ |
-| $\Box[\Omega^{\Delta}\xi\circ I] = \Omega^{\Delta+2}(\Box\xi)\circ I$ | Conformal covariance of the box operator at $\Delta=1$ |
+| $\Box[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}(\Box\xi)\circ I$ | Conformal covariance of the box operator at $\mathcal{W}_{\mathrm{dim}}=1$ |
 | $\Box[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |
 | $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$ | Massless kernel = conformal two-point function of weight one |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; the single scale, and its presence breaks the conformal symmetry |

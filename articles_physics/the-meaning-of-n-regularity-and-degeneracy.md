@@ -564,8 +564,8 @@ One number summarises it:
 $$
 \operatorname{rank}L_{\tilde Q}=
 \begin{cases}
-4, & N\neq0,\\
-2, & N=0,\ \tilde Q\neq0,\\
+4, & N\neq0,\
+2, & N=0,\ \tilde Q\neq0,\
 0, & \tilde Q=0.
 \end{cases}
 $$

@@ -4,7 +4,7 @@
 
 A mass term is the only term of a field equation that carries no derivative, and that single fact fixes its algebraic shape. Every other term pairs the field with a gradient; a term with no derivative has nothing to differentiate, so it must pair the field with *another field* — and since a free equation is written in terms of one field, that other field must be a **conjugate** of it. The only freedom left is *which* conjugate. That choice is not cosmetic. It is what separates the two kinds of mass, and it is why the words "mass" and "conjugation" belong in the same sentence.
 
-The framework carries several conjugations, and they are easy to conflate because two of them are antilinear and both are called a real structure: the algebra's $\flat$ and the **charge conjugation** $\mathcal{C}$ that acts on the module $\Delta$. This article separates them and settles what each is for. Its claims:
+The framework carries several conjugations, and they are easy to conflate because two of them are antilinear and both are called a real structure: the algebra's $\flat$ and the **charge conjugation** $\mathcal{C}$ that acts on the module $\mathcal{S}_{\mathrm{rep}}$. This article separates them and settles what each is for. Its claims:
 
 - **Established, and recomputed below.** The biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}=\overline{\cdot^{\natural}}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation ${}^{\natural}$. Their fixed spaces are four distinct subspaces, of real dimensions $2, 4, 4$ and $4$, and only the last two of them are the framework's sectors. In particular the one involution that is **linear**, quaternion conjugation, is the one whose fixed space is *not* a sector.
 - **Established, and recomputed below.** The **Dirac mass** is linear and relates the two parts of the subscript, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; it pairs no field with its own conjugate. The **Majorana mass** is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.
@@ -118,7 +118,7 @@ so an antilinear reality condition pairs the label $k_\Phi$ with the label $-k_\
 
 **The same reading locates the condition for a flow to preserve the class.** For a first-order equation whose symbol is $i\,k_\Phi$ plus a mass term, the class of reality conditions is preserved exactly when the conjugation commutes with the derivative and anticommutes with the mass. **That is weaker than commuting with the whole symbol**, and the difference is not cosmetic: a conjugation commuting with the whole of it is a symmetry of every solution, while the pair of conditions is a symmetry of the class alone. Which of the two a particular test checks is a question about the test, and the answer decides what that test can fail to see.
 
-The framework's module is $\Delta = S\oplus\bar{S}$, the two parts, of complex dimension $4$ and real dimension $8$. Its charge conjugation is the conjugate-linear map $\mathcal{C}$ satisfying $\mathcal{C}^2 = 1$ that exchanges the two halves; its fixed space is the Majorana space, of real dimension four. The companion on the neutrino and Majorana fermions constructs that map and computes its consequences; the present article is concerned with the algebra-side counterpart, and with keeping the two apart.
+The framework's module is $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar{S}$, the two parts, of complex dimension $4$ and real dimension $8$. Its charge conjugation is the conjugate-linear map $\mathcal{C}$ satisfying $\mathcal{C}^2 = 1$ that exchanges the two halves; its fixed space is the Majorana space, of real dimension four. The companion on the neutrino and Majorana fermions constructs that map and computes its consequences; the present article is concerned with the algebra-side counterpart, and with keeping the two apart.
 
 ## The Two Conjugates and the Two Masses
 
@@ -219,11 +219,11 @@ So the phrase "the mass is a pairing with a conjugate" asks two questions — *w
 
 This is the section on which the retired equation's diagnosis turns, and it separates two objects that the word "conjugation" hides.
 
-The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the module $\Delta$ and calls it a real structure too. Both are antilinear, both are involutions, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. The side of an action is carried by position and never by a mark: a two-sided action is written $a\tilde{Ξ}_{\mathrm{sp}} b$, and a field is written with its two parts, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. The two maps are then:
+The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the module $\mathcal{S}_{\mathrm{rep}}$ and calls it a real structure too. Both are antilinear, both are involutions, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. The side of an action is carried by position and never by a mark: a two-sided action is written $a\tilde{Ξ}_{\mathrm{sp}} b$, and a field is written with its two parts, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. The two maps are then:
 
 | | algebra real structure $\flat$ | module charge conjugation $\mathcal{C}$ |
 |---|---|---|
-| acts on | the algebra $\mathbb{B}$, real dim $8$ | the module $\Delta$, real dim $8$ |
+| acts on | the algebra $\mathbb{B}$, real dim $8$ | the module $\mathcal{S}_{\mathrm{rep}}$, real dim $8$ |
 | defined by | the generators: $e_t\mapsto -e_t$, $\vec e_\eta\mapsto \vec e_\eta$, $i\mapsto i$ | the conjugation by $\vec e_y$ composed with the field's star, $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, with $\mathcal{C}^{2}=+1$ |
 | fixed space | $\mathbb{B}_{\Phi}$, the anti-Hermitian sector, real dim $4$ | the Majorana space, real dim $4$ |
 | respected by the kinetic operator | **no** | **yes**; the CPT companion verifies on the free equation that $\mathcal{C}$ carries solutions to solutions |
@@ -248,7 +248,7 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 |---|---|---|---|
 | 1, the algebra | $\flat=-{}^{*}$ | $\mathbb{B}$, real dim $8$ | the algebra's real structure, fixed space $\mathbb{B}_{\Phi}$; the **shape** of a charge-conjugation pairing |
 | 2, the operators | $F\mapsto\eta_C F^{\dagger}\eta_C^{-1}$ | $\operatorname{End}(\mathbb{B})$ | the charge-conjugation **pseudoautomorphism**: an antiautomorphism of the operator algebra, twisted by the inner conjugation by $\eta_C$; it acts on the slots of an operator and not on a field |
-| 3, the field | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation, $\mathcal{C}^{2}=1$, built on the basis operator that exchanges the two values |
+| 3, the field | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$ | $\mathcal{S}_{\mathrm{rep}}$ | **charge conjugation**; the particle–antiparticle operation, $\mathcal{C}^{2}=1$, built on the basis operator that exchanges the two values |
 | 4, the module real structure | $\bar{\cdot}$ | $\mathcal{S}_{\mathrm{rep}}\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{B}_{H}$ |
 
 The squares are where the signs live, and the two signs belong to two *realizations* of one operation. The corpus keeps the name $\eta$ for the transposed realization and $\mathcal{C}$ for the operation, and that is the naming used here. The **transposed** realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, read with the multiplier on the right; its square is read off in one line, using $\vec e_x^{2}=-e_t$:
@@ -465,7 +465,7 @@ Their squares are then the frame signs at once: $(-i\gamma_0)^{2}=-\gamma_0^{2}=
 
 The dictionary is complex-linear; over $\mathbb{R}$ the gammas span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the real basis operators $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities used in the body.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and every trace taken on the module $\Delta$, of complex dimension four,
+**The identities used in the body.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and every trace taken on the module $\mathcal{S}_{\mathrm{rep}}$, of complex dimension four,
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
@@ -539,7 +539,7 @@ With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are 
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ | The retired equation; spacelike dispersion, not a mass term |
 | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, whose multiplier satisfies $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged field is one on which that factor acts non-trivially |
-| $\Delta = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
+| $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
 | $a\tilde{Ξ}_{\mathrm{sp}} b$ | The two-sided action; the side is carried by position and never by a mark |
 | $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; $r'_t$ | Three-dimensional Cauchy–Riemann operator; imaginary time, in the two-sided form only |
 | $m_D$, $m_M$ | Dirac and Majorana masses |

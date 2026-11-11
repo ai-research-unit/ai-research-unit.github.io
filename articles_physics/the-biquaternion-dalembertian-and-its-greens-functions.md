@@ -265,10 +265,10 @@ which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec 
 The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde\nabla_\Phi$ rather than of $\Box$. Since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, the inverse of left multiplication by $\tilde\nabla_\Phi$ is left multiplication by $(\tilde\nabla_\Phi)^{\natural}$ followed by the scalar kernel; the subscript names the operator inverted, as $G_\Box$ names $\Box$:
 $$
 \boxed{\;\begin{aligned}
-\tilde{G}_{\Phi,\tilde{\nabla}}(\tilde R_\Phi) &:= (\tilde\nabla_\Phi)^{\natural}\,G_\Box_\Phi(\tilde R_\Phi) \in \mathbb{B}_{\Phi} ,\\[2pt]
+\tilde{G}_{\Phi,\tilde{\nabla}}(\tilde R_\Phi) &:= (\tilde\nabla_\Phi)^{\natural}\,G_{\Box_\Phi}(\tilde R_\Phi) \in \mathbb{B}_{\Phi} ,\\[2pt]
 \tilde\nabla_\Phi\,\tilde{G}_{\Phi,\tilde{\nabla}}(\tilde R_\Phi)
-&= \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\,G_\Box_\Phi(\tilde R_\Phi)
-= \Box_\Phi\,G_\Box_\Phi(\tilde R_\Phi)
+&= \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\,G_{\Box_\Phi}(\tilde R_\Phi)
+= \Box_\Phi\,G_{\Box_\Phi}(\tilde R_\Phi)
 = -\,\delta^{(4)}(\tilde R_\Phi) .
 \end{aligned}\;}
 $$
@@ -419,7 +419,7 @@ obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2R$ and selected 
 
 The massive operator $\Box - k_m^{2}$ has the invariant kernel $\frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
 $$
-\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}_\Phi)^{\natural}G_\Box_\Phi \in \mathbb{B}_{\Phi} ,
+\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}_\Phi)^{\natural}G_{\Box_\Phi} \in \mathbb{B}_{\Phi} ,
 \qquad
 \tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta ,
 $$

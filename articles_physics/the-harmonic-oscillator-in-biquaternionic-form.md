@@ -232,7 +232,7 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2},\tilde{Q}_{\mathrm{osc},3}$ | Quadratic generators (squeezes and phase), $[\tilde{Q}_{\mathrm{osc},1},\tilde{Q}_{\mathrm{osc},2}]=2i\tilde{Q}_{\mathrm{osc},3}$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
-| $\tilde U_{\Psi,\mathrm b}=\cosh\frac\theta_{\mathrm{rpd}}2\,e_t+i\sinh\frac\theta_{\mathrm{rpd}}2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{B}_{\Psi}$ |
+| $\\tilde U_{\\Psi,\\mathrm b}=\\cosh\\frac\\theta_{\\mathrm{rpd}}2\,e_t+i\\sinh\\frac\\theta_{\\mathrm{rpd}}2\,\\vec u_{\\mathrm b}$ | Boost rotor in $\mathbb{B}_{\Psi}$ |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$ | Sector exchange by the scalar imaginary |

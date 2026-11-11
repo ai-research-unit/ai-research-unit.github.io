@@ -17,7 +17,7 @@ The condensate is described by a macroscopic wave function with three internal c
 $$
 \tilde{Ξ}_{\mathrm{sp}}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta(\vec r))\,
 \vec\varkappa_{\mathrm{ord}}(\vec r),\qquad
-\vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\\ \varkappa_{\mathrm{ord},0}\\ \varkappa_{\mathrm{ord},-}\end{pmatrix},\qquad
+\vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\ \varkappa_{\mathrm{ord},0}\ \varkappa_{\mathrm{ord},-}\end{pmatrix},\qquad
 {\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1 ,
 $$
 
@@ -96,8 +96,8 @@ $$
 a symmetric two-fundamental amplitude with components $(c_{\uparrow\uparrow},c_{\uparrow\downarrow},c_{\downarrow\uparrow},c_{\downarrow\downarrow})$ with $c_{\uparrow\downarrow}=c_{\downarrow\uparrow}$ corresponds to the spinor
 
 $$
-\vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\\ \varkappa_{\mathrm{ord},0}\\ \varkappa_{\mathrm{ord},-}\end{pmatrix}
-=\begin{pmatrix}c_{\uparrow\uparrow}\\ \sqrt2\,c_{\uparrow\downarrow}\\ c_{\downarrow\downarrow}\end{pmatrix},
+\vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\ \varkappa_{\mathrm{ord},0}\ \varkappa_{\mathrm{ord},-}\end{pmatrix}
+=\begin{pmatrix}c_{\uparrow\uparrow}\ \sqrt2\,c_{\uparrow\downarrow}\ c_{\downarrow\downarrow}\end{pmatrix},
 $$
 
 and the normalisation ${\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1$ is the normalisation of the two-fundamental amplitude. The identification is the standard one, and it is exact: the spin-one internal space of the condensate *is* the triplet sector of two fundamental degrees of freedom.

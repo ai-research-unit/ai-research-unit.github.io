@@ -23,7 +23,7 @@ This is the canonical "rotate the Stern–Gerlach apparatus" exercise. It involv
 The spin-up state along the $z$-axis is the eigenvector of the Pauli matrix $\sigma_3$ with eigenvalue $+1$:
 
 $$
-|+z\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+|+z\rangle = \begin{pmatrix} 1 \ 0 \end{pmatrix}.
 $$
 
 ### Step 2: The measurement operator
@@ -37,7 +37,7 @@ $$
 The measurement operator is the spin projection along $\vec u_x$:
 
 $$
-\vec u_x\cdot\vec S =\frac{\hbar}{2}\,\vec u_x\cdot\boldsymbol{\sigma} =\frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
+\vec u_x\cdot\vec S =\frac{\hbar}{2}\,\vec u_x\cdot\boldsymbol{\sigma} =\frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \ \sin\theta & -\cos\theta \end{pmatrix},
 $$
 
 where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices.
@@ -47,7 +47,7 @@ where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matri
 The eigenvector of $\vec u_x\cdot\vec S$ with eigenvalue $+\frac{\hbar}{2}$ (equivalently, the $+1$ eigenvector of $\vec u_x\cdot\boldsymbol{\sigma}$), up to a global phase, is
 
 $$
-|+n\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
+|+n\rangle = \begin{pmatrix} \cos(\theta/2) \ \sin(\theta/2) \end{pmatrix}.
 $$
 
 ### Step 4: The probability

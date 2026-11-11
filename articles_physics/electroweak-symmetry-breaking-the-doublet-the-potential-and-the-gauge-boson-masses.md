@@ -39,7 +39,7 @@ with $v=246.22$ GeV. This article writes the mass matrix, diagonalises it, count
 **The representation.** One complex doublet of hypercharge $\tfrac12$,
 
 $$
-\varphi=\begin{pmatrix}\varphi^+\\ \varphi^0\end{pmatrix},
+\varphi=\begin{pmatrix}\varphi^+\ \varphi^0\end{pmatrix},
 \qquad
 Y_\varphi=\tfrac12 ,
 $$
@@ -77,7 +77,7 @@ which in four real components is a three-sphere $S^3$ of radius $v/\sqrt2$. Ever
 **The choice is the breaking.** Take
 
 $$
-\langle\varphi\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\\ v\end{pmatrix},
+\langle\varphi\rangle=\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix},
 \qquad
 \langle\varphi^{\dagger}\varphi\rangle=\frac{v^2}{2} .
 $$
@@ -87,7 +87,7 @@ The charged component is set to zero and the neutral one takes the whole value. 
 **What the vacuum is not invariant under.** The generator $T_3$ does not annihilate it, since $\sigma_3\binom{0}{1}=-\binom{0}{1}$; the hypercharge generator does not either, since $Y_\varphi=\tfrac12$. Their sum does:
 
 $$
-Q\,\langle\varphi\rangle=\left(T_3+Y\right)\frac{1}{\sqrt2}\begin{pmatrix}0\\ v\end{pmatrix}
+Q\,\langle\varphi\rangle=\left(T_3+Y\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v\end{pmatrix}
 =\left(-\tfrac12+\tfrac12\right)\langle\varphi\rangle=0 .
 $$
 
@@ -98,7 +98,7 @@ That single line is the whole of the alignment: the charge operator annihilates 
 **The shift.** Write the field as the vacuum plus an excitation,
 
 $$
-\varphi=\frac{1}{\sqrt2}\begin{pmatrix}0\\ v+h\end{pmatrix},
+\varphi=\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
 with $h$ real. Substituting into the potential and expanding gives
@@ -156,9 +156,9 @@ $$
 $$
 M^2=\frac{v^2}{4}
 \begin{pmatrix}
-g^2 & 0 & 0 & 0\\
-0 & g^2 & 0 & 0\\
-0 & 0 & g^2 & -g\,g_{\mathrm Y}\\
+g^2 & 0 & 0 & 0\
+0 & g^2 & 0 & 0\
+0 & 0 & g^2 & -g\,g_{\mathrm Y}\
 0 & 0 & -g\,g_{\mathrm Y} & g_{\mathrm Y}^2
 \end{pmatrix} .
 $$
@@ -257,7 +257,7 @@ A massive vector has three polarisations: two transverse and one longitudinal.
 **The would-be Goldstones are gauge directions.** In a generic gauge the doublet is
 
 $$
-\varphi=\exp\left(\frac{i}{v}\sum_a\xi_a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\\ v+h\end{pmatrix},
+\varphi=\exp\left(\frac{i}{v}\sum_a\xi_a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
 and the three fields $\xi_a$ are the would-be Goldstones. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W^a_\mu+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.

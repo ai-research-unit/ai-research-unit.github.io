@@ -115,7 +115,7 @@ Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a p
 **What the theorem does not say.** It does not say the two operators are equal. On $D=-5e_t+3i\vec e_x$,
 
 $$
-\bigl\langle R_D-L_{D^{\natural}}\\bigr\rangle_*^{1/2}=8.4853\neq0 ,
+\bigl\langle R_D-L_{D^{\natural}}\bigr\rangle_*^{1/2}=8.4853\neq0 ,
 $$
 
 so the two arrays differ and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming, not the operators.
@@ -253,7 +253,7 @@ and for the four operators alike the subscript is the only mark: $\Phi$ is the m
 $$
 \begin{aligned}
 \tilde\nabla={}&e_t\frac{\partial}{\partial h_t}-i\,e_t\frac{\partial}{\partial r'_t}
-+\vec e_x\frac{\partial}{\partial r_x}-i\,\vec e_x\frac{\partial}{\partial h'_x}\\
++\vec e_x\frac{\partial}{\partial r_x}-i\,\vec e_x\frac{\partial}{\partial h'_x}\
 &+\vec e_y\frac{\partial}{\partial r_y}-i\,\vec e_y\frac{\partial}{\partial h'_y}
 +\vec e_z\frac{\partial}{\partial r_z}-i\,\vec e_z\frac{\partial}{\partial h'_z}.
 \end{aligned}
@@ -417,6 +417,18 @@ $$
 $$
 
 a plus on the time part and a minus on the spatial part, the sign pattern $(+,-,-,-)$ and the negative of the material line above. The two sector lines are one operator and the two signatures are one signature read twice: the material sector keeps the four parameters $r'_t$ and $r_\eta$, the informational sector keeps the four complementary ones $h_t$ and $h'_\eta$, and a slice that keeps a coordinate carrying an $i$ turns one sign while a slice that keeps the same coordinate without one does not. The informational reading is the one the state space $\mathbb{B}_{\Psi}$ is written in, and the operator it carries is $\Box$ with the time term positive; a reader who moves an equation from one sector to the other moves one overall sign and nothing else.
+
+### The Laplacian Is the Only Delta
+
+**One letter, one operator.** $\Delta$ is the spatial Laplacian and nothing else: $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ in the algebra, $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ on the material part, $\Delta_\Psi=\sum_\eta\partial^2/\partial {h'_\eta}^2$ on the informational one, $\Delta_E$ or $\Delta_{w\bar w}$ in a chart whose space coordinates are $\tau$ or $w$. The subscript names the chart and never the object. **No other object of the series wears the letter**, and no article of the series introduces one: a symbol that has two readings has no reading, because the eye cannot separate an operator from an increment and a subscript cannot rescue a letter whose meaning is already lost.
+
+**A difference is $\delta$.** An increment, an uncertainty, a spin fraction, a free-energy change, an action difference: $\delta u$, $\delta S$, $\delta E$, $\delta r'_t$, $\delta p$, $\delta\omega$. The capital is left for the operator, and the stroke is the whole of the difference between an operator and a difference of two values.
+
+**A named object takes a calligraphic letter and a subscript that spells it.** $\mathcal{W}_{\mathrm{dim}}$ for a conformal weight, $\mathcal{S}_{\mathrm{rep}}$ for the spinor module, $\mathcal{G}_{\mathrm{gap}}$ for a gap, a detuning or a pairing term, $\mathcal{E}_{\mathrm{shift}}$ for a level shift, $\mathcal{J}_{\mathrm{FP}}$ for a Faddeev–Popov determinant or a Jacobian, $\mathcal{M}_{\mathrm{mod}}$ for the Tomita modular operator, $\mathcal{P}_{\mathrm{PJ}}$ for a Pauli–Jordan function, $\mathcal{V}_{\mathrm{var}}$ for a variance, $\mathcal{T}_{\mathrm{tune}}$ for a tuning fraction, $\mathcal{K}_{\mathrm{con}}$ for a constraint matrix, $\mathcal{D}_{\mathrm{disc}}$ for a discriminant, $\mathcal{L}_{\mathrm{sep}}$ for a separation, $\mathcal{A}_{\mathrm{adv}}$ for an advance per revolution, $\mathcal{P}_{\mathrm{jet}}$ for a jet fraction, $\mathcal{B}_{\mathrm{dec}}$ for the decuplet baryon, $\mathcal{N}_{\mathrm{NP}}$ for the Newman–Penrose directional derivative.
+
+**A subscript never redeems the letter.** A Laplacian does not become a modular operator, a gauge determinant or a Newman–Penrose derivative by acquiring a subscript: the subscript names the chart, and nothing else. A name that needs one takes a calligraphic letter, so the operator and the object stay in different alphabets and no glyph has to be disambiguated by its context.
+
+**The audit is a count, and it is kept.** Every occurrence of the letter in the corpus is counted and quoted in *The D'Alembertian and the Laplacian: A Census of Two Unmarked Glyphs*, each bare occurrence read against the coordinates printed beside it, and not one of them is anything other than a Laplacian.
 
 ### The Hermitian Product, Its Form and Its Norm
 
@@ -720,6 +732,8 @@ A subscript is a component or a label, never a derivative; every partial derivat
 
 The gradient and its conjugate act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signature, and its square is $\Box$ on each part only after composing the two lines. A subscript names a part and not a slice: $\tilde\nabla_\Phi$ is the anti-Hermitian part, which keeps the imaginary time and the real space numbers, and $\tilde\nabla_\Psi$ the Hermitian part, which keeps the real time and the imaginary space numbers, with $\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi$ (*The Gradient*).
 
+One letter is reserved: $\Delta$ is the spatial Laplacian in every article, a subscript on it names the chart and never the object, a difference is $\delta$, and a named object takes a calligraphic letter with a subscript that spells it. The rule is stated in §*The Laplacian Is the Only Delta*, and it is counted in *The D'Alembertian and the Laplacian: A Census of Two Unmarked Glyphs*.
+
 The four forms remain four distinct conventions and the norms two, because each form conjugates its own slot. The four product subsections read the same gradient through the plain, quaternionic, Hermitian and Krein products, each with its form and its norm, and the signs follow from the algebra rather than from a choice of metric.
 
 ## Summary of Notation
@@ -736,6 +750,7 @@ The four forms remain four distinct conventions and the norms two, because each 
 | $\tfrac12\bigl(\tilde\nabla\pm\tilde\nabla^{*}\bigr)$ | The two parts of the gradient, the projections $X\mapsto\tfrac12(X\pm X^{*})$ with the star read on the units at fixed coordinate. By slot: $e_t\partial/\partial R_t$ and $\sum_\eta\vec e_\eta\partial/\partial R_\eta$. In the eight real coordinates: the Hermitian part $e_t\partial_{h_t}-i\sum_\eta\vec e_\eta\partial_{h'_\eta}$ on $h_t,h'_x,h'_y,h'_z$, and the anti-Hermitian part $-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$ on $r'_t,r_x,r_y,r_z$; the two are the gradients of the informational and the material slice, so a slice keeps one part |
 | $\tilde\nabla_{\mathrm{gco}}$ | The gauge-covariant gradient, $\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$; its component $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$, its conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$ |
 | $\Box$ | The d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ |
+| $\Delta$ | The spatial Laplacian, $\sum_\eta\partial^2/\partial Q_\eta^2$, and nothing else; a difference is $\delta$, and a named object takes a calligraphic letter, as in §*The Laplacian Is the Only Delta* |
 | $\tilde R$ | The variable, $\sum_\mu R_\mu e_\mu$ with $R_\mu=r_\mu+i r'_\mu$; its two parts are $\tilde R_\Phi=i r'_t e_t+\sum_\eta\vec e_\eta r_\eta$ and $\tilde H_\Psi=h_t e_t+i\sum_\eta\vec e_\eta h'_\eta$, with $\tilde R=\tilde R_\Phi+\tilde H_\Psi$ and no bar in either |
 | $\tilde\nabla_{\Phi}$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its conjugate in the material part, $\tilde\nabla_{\Phi}=-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$ and $(\tilde\nabla_\Phi)^{\natural}=-i\,e_t\partial_{r'_t}-\sum_\eta\vec e_\eta\partial_{r_\eta}$, with the tuples $(-i,1,1,1)$ and $(-i,-1,-1,-1)$ on $r'_t$ and $r_\eta$; both anti-Hermitian |
 | $\tilde\nabla_{\Psi}$, $(\tilde\nabla_\Psi)^{\natural}$ | The gradient and its conjugate in the informational part, $\tilde\nabla_{\Psi}=e_t\partial_{h_t}-i\sum_\eta\vec e_\eta\partial_{h'_\eta}$ and $(\tilde\nabla_\Psi)^{\natural}=e_t\partial_{h_t}+i\sum_\eta\vec e_\eta\partial_{h'_\eta}$, Hermitian in their coefficients |

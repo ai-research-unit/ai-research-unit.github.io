@@ -158,7 +158,7 @@ accompanied by the $\tau$ transformation; the lattice of integer electric and ma
 The discrete group acts on the charges, and the action makes the arithmetic of the modular group and the physics of the lattice the same statement. Write a state of definite electric and magnetic charge as a column
 
 $$
-v=\begin{pmatrix} m\\ n\end{pmatrix}\in\mathbb Z^2 ,
+v=\begin{pmatrix} m\ n\end{pmatrix}\in\mathbb Z^2 ,
 \qquad
 ϙ_e=e\,m ,
 \qquad
@@ -168,19 +168,19 @@ $$
 with $m$ the electric and $n$ the magnetic quantum number, the magnetic charge being measured in units of $\frac{4\pi}{e}$, twice the minimal Dirac charge $\frac{2\pi}{e}$. The **Dirac pairing** of two charge vectors,
 
 $$
-\langle v,v_2\rangle=mn_2-nm_2=\det\begin{pmatrix}m&m_2\\ n&n_2\end{pmatrix},
+\langle v,v_2\rangle=mn_2-nm_2=\det\begin{pmatrix}m&m_2\ n&n_2\end{pmatrix},
 $$
 
 is the symplectic form of the lattice, and the quantisation condition is the statement that it takes integer values on integer vectors: the physical pairing $ϙ_e ϙ_{m,2}-ϙ_{e,2}ϙ_m$ equals $4\pi\langle v,v_2\rangle$, which lies in $2\pi\mathbb Z$ precisely when $\langle v,v_2\rangle$ is an integer. For the minimal dyons $v=(1,0)$ and $v_2=(0,1)$ the pairing is $1$, corresponding to the physical product $e\cdot\frac{4\pi}{e}=4\pi$ of a unit electric and a unit magnetic charge — two Dirac quanta, the factor of two being the one that fixes $g_m=4\pi/e$. A matrix
 
 $$
-\gamma=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in SL(2,\mathbb Z)
+\gamma=\begin{pmatrix}a&b\ c&d\end{pmatrix}\in SL(2,\mathbb Z)
 $$
 
 acts on the lattice by $v\mapsto\gamma v$, and because $\det\gamma=1$ it preserves the determinant and hence the pairing:
 
 $$
-\langle \gamma v,\gamma v_2\rangle=\det\bigl(\gamma\begin{pmatrix}m&m_2\\ n&n_2\end{pmatrix}\bigr)=\det\gamma\cdot\langle v,v_2\rangle .
+\langle \gamma v,\gamma v_2\rangle=\det\bigl(\gamma\begin{pmatrix}m&m_2\ n&n_2\end{pmatrix}\bigr)=\det\gamma\cdot\langle v,v_2\rangle .
 $$
 
 The group that preserves the Dirac pairing of integer charges is therefore exactly $SL(2,\mathbb Z)$ (up to the overall sign that is irrelevant on the lattice), and this is the precise reason the modular group and not some other arithmetic group governs the duality.
@@ -188,9 +188,9 @@ The group that preserves the Dirac pairing of integer charges is therefore exact
 The two generators act on the quantum numbers as
 
 $$
-S:\begin{pmatrix}m\\ n\end{pmatrix}\mapsto\begin{pmatrix}-n\\ m\end{pmatrix},
+S:\begin{pmatrix}m\ n\end{pmatrix}\mapsto\begin{pmatrix}-n\ m\end{pmatrix},
 \qquad
-T:\begin{pmatrix}m\\ n\end{pmatrix}\mapsto\begin{pmatrix}m+n\\ n\end{pmatrix},
+T:\begin{pmatrix}m\ n\end{pmatrix}\mapsto\begin{pmatrix}m+n\ n\end{pmatrix},
 $$
 
 so that $S$ exchanges electric and magnetic charge up to a sign — the strong–weak duality of the earlier section — while $T$ shifts the electric charge by one unit of magnetic charge, which is the $T$ generator written as a lattice translation. The relation $S^2=-I$, already verified as a matrix identity, is the statement that two duality rotations by a quarter turn produce the charge conjugation of the lattice: the electric and magnetic charges change sign while the pairing is untouched. The central charge of a state is linear in the charge vector,

@@ -81,7 +81,7 @@ so the Hessian at the minimum, in the coordinates $(h,\vartheta_{\mathrm{fld}})$
 
 $$
 \boxed{\;H = \begin{pmatrix} \partial^2V/\partial h^2 & \partial^2V/\partial h\partial\vartheta_{\mathrm{fld}} \\[2pt] \partial^2V/\partial\vartheta_{\mathrm{fld}}\partial h & \partial^2V/\partial{\vartheta_{\mathrm{fld}}}^2 \end{pmatrix}_{h=\vartheta_{\mathrm{fld}}=0}
-= \begin{pmatrix} 2\beta v^2 & 0 \\ 0 & 0 \end{pmatrix}\;}.
+= \begin{pmatrix} 2\beta v^2 & 0 \ 0 & 0 \end{pmatrix}\;}.
 $$
 
 The Hessian has rank one. The **massive direction** is the radial one, with $m_h^2 = 2\beta v^2$; the **flat direction** is the phase, with zero curvature. This was recomputed by finite differences: at $\beta = 1$ and $v = 1.3$, the second derivative of $V$ along $h$ came out as $3.38000000$ against the prediction $2\beta v^2 = 3.38000000$, while the curvature along $\vartheta_{\mathrm{fld}}$ is identically zero for every value of $\vartheta_{\mathrm{fld}}$, because $V$ does not depend on it.

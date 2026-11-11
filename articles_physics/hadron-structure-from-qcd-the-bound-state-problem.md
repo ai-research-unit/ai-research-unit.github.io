@@ -203,7 +203,7 @@ $$
 \frac12=\frac12\delta\Sigma+L_q+J_g ,
 $$
 
-where $\delta\Sigma=\sum_f(\delta u_f+\Delta d_f+\delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
+where $\delta\Sigma=\sum_f(\delta u_f+\delta d_f+\delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
 
 **The numbers.**
 
@@ -218,14 +218,14 @@ where $\delta\Sigma=\sum_f(\delta u_f+\Delta d_f+\delta s_f)$ is the fraction of
 
 **Why the decomposition is hard.** $L_q$ is not directly measurable. It is defined by a matrix element of an operator whose quark–gluon separation depends on the scheme, and different decompositions — Ji's, Jaffe–Manohar's — attribute different pieces to "orbital" and "spin". The sum, $\tfrac12$, is scheme-independent; the split is not. An article that quoted $L_q=0.09$ without saying so would be over-claiming, and the number above is marked as a subtraction rather than a measurement.
 
-**What the axial charges say.** The same quark spin densities appear in the axial charges. The identity below is between $\overline{\mathrm{MS}}$ matrix elements at one scale, and the two sides are measured at different ones: $g_A$ in $\beta$ decay at $Q^2=0$, the densities in polarised deep inelastic scattering at $Q^2\approx3$ GeV$^2$, with the perturbative coefficient of the next section — $0.87$ at that scale — between them. The densities quoted here are consistent with $1.2754$ because the global fits impose $a_3\equiv\Delta u-\Delta d=g_A$ as a constraint taken from $\beta$ decay; released, the DIS combination carries that coefficient.
+**What the axial charges say.** The same quark spin densities appear in the axial charges. The identity below is between $\overline{\mathrm{MS}}$ matrix elements at one scale, and the two sides are measured at different ones: $g_A$ in $\beta$ decay at $Q^2=0$, the densities in polarised deep inelastic scattering at $Q^2\approx3$ GeV$^2$, with the perturbative coefficient of the next section — $0.87$ at that scale — between them. The densities quoted here are consistent with $1.2754$ because the global fits impose $a_3\equiv\delta u-\delta d=g_A$ as a constraint taken from $\beta$ decay; released, the DIS combination carries that coefficient.
 
 $$
-g_A=\Delta u-\Delta d=1.2754 ,
+g_A=\delta u-\delta d=1.2754 ,
 \qquad
-\Delta u\approx0.83 ,
+\delta u\approx0.83 ,
 \qquad
-\Delta d\approx-0.45 ,
+\delta d\approx-0.45 ,
 \qquad
 \delta s\approx-0.03 .
 $$

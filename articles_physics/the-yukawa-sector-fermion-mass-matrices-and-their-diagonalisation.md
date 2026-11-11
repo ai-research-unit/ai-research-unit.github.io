@@ -201,8 +201,8 @@ three angles and one phase. The subtraction is the same $2N-1=5$ that article 1 
 
 $$
 V=\begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\\
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\delta}\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13}\
 s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\delta} & c_{23}c_{13}
 \end{pmatrix},
 $$
@@ -212,8 +212,8 @@ with $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$. The three angles are $\
 **The hierarchy of the angles, and what the Wolfenstein form adds.** The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\lambda=s_{12}=0.225$:
 
 $$
-V=\begin{pmatrix}1-\lambda^{2}/2 & \lambda & A\lambda^{3}\left(\bar\rho-i\bar\eta\right)\\
--\lambda & 1-\lambda^{2}/2 & A\lambda^{2}\\
+V=\begin{pmatrix}1-\lambda^{2}/2 & \lambda & A\lambda^{3}\left(\bar\rho-i\bar\eta\right)\
+-\lambda & 1-\lambda^{2}/2 & A\lambda^{2}\
 A\lambda^{3}\left(1-\bar\rho-i\bar\eta\right) & -A\lambda^{2} & 1\end{pmatrix}+O\left(\lambda^{4}\right),
 $$
 
@@ -403,7 +403,7 @@ $$
 
 ## The Framework's Position
 
-**The framework supplies the home of the matrices, and that is a real statement.** In the framework the fermion space is $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting on $\Delta$ and trivially on the multiplicity factor. The operators that can appear as mass or Yukawa matrices are therefore exactly
+**The framework supplies the home of the matrices, and that is a real statement.** In the framework the fermion space is $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting on $\mathcal{S}_{\mathrm{rep}}$ and trivially on the multiplicity factor. The operators that can appear as mass or Yukawa matrices are therefore exactly
 
 $$
 Y\in\mathrm I_{\mathcal{S}_{\mathrm{rep}}}\otimes M_{N_g}(\mathbb{C}) ,
@@ -417,7 +417,7 @@ that is, the commutant of the algebra's action. So the framework says something 
 
 **The strongest objection, and the answer.** A reader may say that the commutant statement is empty, since any framework with a multiplicity factor would say the same. That is correct as far as it goes, and it is the reason the statement is presented as a consistency rather than as a derivation. Its content is negative and useful: it explains why no algebraic principle will ever fix the Yukawa entries, and it locates the missing physics precisely — not in the algebra but in the coupling of a non-central scalar.
 
-**What a derivation would need.** Three items: a scalar in the module $\Delta$ rather than in the centre, so that it carries a non-central charge; a hypercharge assignment acting differently on the two chiralities; and a potential and Yukawa term invariant under both. The first is available in the algebra as a module element, and the electroweak articles record that the module exists. The second is the one that *The Electroweak Gauge Group and the Hypercharge Assignment* identifies as the missing piece: an abelian generator that acts differently on the two sides of an element, which the central phase cannot supply because it multiplies both by the same charge. The third would follow from the first two.
+**What a derivation would need.** Three items: a scalar in the module $\mathcal{S}_{\mathrm{rep}}$ rather than in the centre, so that it carries a non-central charge; a hypercharge assignment acting differently on the two chiralities; and a potential and Yukawa term invariant under both. The first is available in the algebra as a module element, and the electroweak articles record that the module exists. The second is the one that *The Electroweak Gauge Group and the Hypercharge Assignment* identifies as the missing piece: an abelian generator that acts differently on the two sides of an element, which the central phase cannot supply because it multiplies both by the same charge. The third would follow from the first two.
 
 **What the corpus can say without that derivation.** That the masses are invariants and the mixing is a misalignment, which is linear algebra available to any framework; that the couplings are proportional to the masses, which is a consequence of the Standard Model's structure and not of the algebra; and that the thirteen numbers sit in the commutant, which is the framework's own statement about where they must live. Everything else in this article is transcription.
 
@@ -459,7 +459,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $g_{hf\bar f}$ | $m_f/v$, the Higgs coupling to the fermion |
 | $Q_L$, $u_R$, $d_R$, $L_L$, $e_R$, $\nu_R$ | The quark and lepton multiplets, with the quantum numbers of article 1 |
 | $\psi$ | A generic fermion field, standing for any of the six |
-| $\Delta$, $\mathbb{C}^{N_g}$, $\mathcal F$ | The module and the multiplicity factor of the framework |
+| $\mathcal{S}_{\mathrm{rep}}$, $\mathbb{C}^{N_g}$, $\mathcal F$ | The module and the multiplicity factor of the framework |
 | $N_g$ | The number of generations, three in the observed world |
 | $\theta$, $\bar\theta$ | The QCD vacuum angle and $\theta+\arg\det\left(M_uM_d\right)$ |
 | $ϙ_L$, $ϙ_R$ | The framework's chiral abelian charges |

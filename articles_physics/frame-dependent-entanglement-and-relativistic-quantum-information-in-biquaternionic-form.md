@@ -182,7 +182,7 @@ because every Wigner rotor is $*$-unitary. The maximally mixed spin state is the
 
 The spinor description makes the invariant and the non-invariant parts of the concurrence visible. On the spinor module, a pure two-qubit state is a four-component object $\tilde{Ξ}_{\mathrm{sp}}\in S\otimes S$, and the Lorentz group acts by $\tilde U_{\mathrm{lor}}\otimes\tilde U_{\mathrm{lor}}$ with $\det\tilde U_{\mathrm{lor}} = 1$. With the symplectic form
 $$
-\epsilon = \begin{pmatrix}0 & 1\\ -1 & 0\end{pmatrix}, \qquad
+\epsilon = \begin{pmatrix}0 & 1\ -1 & 0\end{pmatrix}, \qquad
 \tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\,\tilde U_{\mathrm{lor}} = \det(\tilde U_{\mathrm{lor}})\,\epsilon = \epsilon ,
 $$
 the **symplectic concurrence**

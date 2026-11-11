@@ -55,7 +55,7 @@ two solutions in $\mathbb{H}$.
 **Second branch, $x_0 = 0$.** The scalar component becomes
 
 $$
-x_2^{2} + 2x_2 + 3 = 0, \qquad \Delta = 4 - 12 = -8 < 0 ,
+x_2^{2} + 2x_2 + 3 = 0, \qquad \mathcal{D}_{\mathrm{disc}} = 4 - 12 = -8 < 0 ,
 $$
 
 which no real $x_2$ satisfies. The resolution is $x_2 = -1 \pm \sqrt{2}\,i$, so

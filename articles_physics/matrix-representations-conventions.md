@@ -131,9 +131,9 @@ which is the definition of *Element and Operator Representations: The Three Acti
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&-Q_z&Q_y\
+Q_y&Q_z&Q_t&-Q_x\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -180,9 +180,9 @@ the same construction with the order of the two factors exchanged.
 $$
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&Q_z&-Q_y\
+Q_y&-Q_z&Q_t&Q_x\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -480,13 +480,13 @@ L_{\mathrm{pau}}(\tilde Q_1)R_{\mathrm{pau}}(\tilde Q_2)=R_{\mathrm{pau}}(\tilde
 $$
 and the trace and determinant are the same numbers, $\operatorname{tr}L_{\mathrm{pau}}(\tilde Q)=4Q_t$ and $\det L_{\mathrm{pau}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the operator. The dagger is the star conjugate, $L_{\mathrm{pau}}(\tilde Q)^{\dagger}=L_{\mathrm{pau}}(\tilde Q^{*})$. Transposition is not the conjugation in this frame: with the exchange it gives the other family, $R_{\mathrm{pau}}(\tilde Q)=\mathsf S L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, and the conjugation reads $L_{\mathrm{pau}}(\tilde Q^{\natural})=2Q_t\mathrm I_4-L_{\mathrm{pau}}(\tilde Q)$, which is a linear expression in the element and no transpose at all. The transpose is the conjugation in the axis-free frame alone, §*The Stitch Between the Two Families*.
 
-**The block form of the element.** Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ with
+**The block form of the element.** Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\ c&d\end{pmatrix}$ with
 $$
 a=Q_t-iQ_z,\qquad b=-iQ_x-Q_y,\qquad c=-iQ_x+Q_y,\qquad d=Q_t+iQ_z,
 $$
 the left matrix is
 $$
-L_{\mathrm{pau}}(\tilde Q)=\begin{pmatrix}a&b&0&0\\ c&d&0&0\\0&0&a&b\\0&0&c&d\end{pmatrix},
+L_{\mathrm{pau}}(\tilde Q)=\begin{pmatrix}a&b&0&0\ c&d&0&0\\0&0&a&b\\0&0&c&d\end{pmatrix},
 $$
 so the algebra acts on each Peirce component by the same $2\times2$ matrix, and the two components never mix. This is the block the $2\times2$ display names, §*The $2\times2$ Pauli Representation*.
 
@@ -988,10 +988,10 @@ with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of §*The Two Tensor Factor
 $$
 \mathsf{M}_2(\tilde Q)=
 \begin{pmatrix}
-Q_t-iQ_z&-iQ_x-Q_y\\
+Q_t-iQ_z&-iQ_x-Q_y\
 -iQ_x+Q_y&Q_t+iQ_z
 \end{pmatrix}
-=\begin{pmatrix}a&b\\ c&d\end{pmatrix},
+=\begin{pmatrix}a&b\ c&d\end{pmatrix},
 $$
 which is the $a,b,c,d$ of §*The Two Tensor Factors*, and the reason the Pauli display has that block.
 
@@ -1048,17 +1048,17 @@ The algebra is displayed in three ways, in the order in which the displays are b
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&-Q_z&Q_y\
+Q_y&Q_z&Q_t&-Q_x\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix},
 \qquad
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
+Q_t&-Q_x&-Q_y&-Q_z\
+Q_x&Q_t&Q_z&-Q_y\
+Q_y&-Q_z&Q_t&Q_x\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$

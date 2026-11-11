@@ -27,7 +27,7 @@ The companion articles supply the pieces:
 A spin-1/2 state is a spinor
 
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \begin{pmatrix}\tilde{Ξ}_{\mathrm{sp},1}\\ \tilde{Ξ}_{\mathrm{sp},2}\end{pmatrix}
+\tilde{Ξ}_{\mathrm{sp}} = \begin{pmatrix}\tilde{Ξ}_{\mathrm{sp},1}\ \tilde{Ξ}_{\mathrm{sp},2}\end{pmatrix}
 = \begin{pmatrix}\cos\tfrac{\theta}{2}\\[2pt] \sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\end{pmatrix},
 $$
 
@@ -96,7 +96,7 @@ A **spin coherent state** is the state obtained by rotating the north-pole state
 A rotation of the physical system acts on the spinor by an $SU(2)$ matrix
 
 $$
-g = \begin{pmatrix} a & b\\ -b^* & a^*\end{pmatrix},
+g = \begin{pmatrix} a & b\ -b^* & a^*\end{pmatrix},
 \qquad |a|^2+|b|^2 = 1,
 $$
 
@@ -109,7 +109,7 @@ $$
 The Möbius transformation is exactly the rotation of the sphere induced by $g$: the star of the rotated state is the rotated star. For the rotation about $\vec u_y$ by angle $\theta_{\mathrm{axs}}$ the rotor is $\tilde{u} = \exp(\theta_{\mathrm{axs}} \vec e_y/2)$, whose matrix is
 
 $$
-g = \begin{pmatrix} \cos\tfrac{\theta_{\mathrm{axs}}}{2} & -\sin\tfrac{\theta_{\mathrm{axs}}}{2}\\ \sin\tfrac{\theta_{\mathrm{axs}}}{2} & \cos\tfrac{\theta_{\mathrm{axs}}}{2}\end{pmatrix},
+g = \begin{pmatrix} \cos\tfrac{\theta_{\mathrm{axs}}}{2} & -\sin\tfrac{\theta_{\mathrm{axs}}}{2}\ \sin\tfrac{\theta_{\mathrm{axs}}}{2} & \cos\tfrac{\theta_{\mathrm{axs}}}{2}\end{pmatrix},
 \qquad a = \cos\tfrac{\theta_{\mathrm{axs}}}{2},\quad b = -\sin\tfrac{\theta_{\mathrm{axs}}}{2},
 $$
 

@@ -317,7 +317,7 @@ The substitution is therefore exact in both directions:
 
 $$
 \begin{aligned}
-&(\Box_\Phi-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0 \\
+&(\Box_\Phi-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0 \
 &\quad\Longleftrightarrow\quad
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad  (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad \tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} .

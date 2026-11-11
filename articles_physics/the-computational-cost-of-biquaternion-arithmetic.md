@@ -143,13 +143,13 @@ Three properties of this image are used constantly, and each is exact:
 The inner $2\times2$ blocks of the image carry the slice structure. For a real-quaternion array, whose coefficients are complex matrices with real entries only, the image takes the **time-reversal symmetric** block form
 
 $$
-\boxed{\;M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_z,\quad B = -iQ_x - Q_y\;},
+\boxed{\;M^+ = \begin{pmatrix} A & B \ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_z,\quad B = -iQ_x - Q_y\;},
 $$
 
 and for an antiquaternion array, whose coefficients are purely imaginary, the **time-reversal antisymmetric** form
 
 $$
-\boxed{\;M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y\;}.
+\boxed{\;M^- = \begin{pmatrix} G & H \ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y\;}.
 $$
 
 In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, a point returned to below.
@@ -161,19 +161,19 @@ The most expensive routine of the source's library is not the product but the di
 The economy comes from the blocks. When the image is **block diagonal**,
 
 $$
-M = \begin{pmatrix} A & 0 \\ 0 & B \end{pmatrix},
+M = \begin{pmatrix} A & 0 \ 0 & B \end{pmatrix},
 $$
 
 the problem separates into two diagonalisations of half the dimension, with a further reduction when the blocks are related by symmetry. When the image is **block anti-diagonal**,
 
 $$
-M = \begin{pmatrix} 0 & A \\ B & 0 \end{pmatrix},
+M = \begin{pmatrix} 0 & A \ B & 0 \end{pmatrix},
 $$
 
 a Hadamard-type $*$-unitary transformation turns it into a block-diagonal matrix whose two blocks differ by a sign. With
 
 $$
-\boxed{\;U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \\ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1\;},
+\boxed{\;U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1\;},
 $$
 
 one has $M_{\mathrm{rot}} = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the $*$-unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.
@@ -261,7 +261,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{
 | $M^+=\begin{pmatrix}A&B\\-B^{*}&A^{*}\end{pmatrix}$ | Image block of a real-quaternion array |
 | $M^-=\begin{pmatrix}G&H\\H^{*}&-G^{*}\end{pmatrix}$ | Image block of an antiquaternion array |
 | $\mathrm{tr}(M)=2\,\mathrm{tr}(Q_t)$ | The image trace is the biquaternion trace $2\,\mathrm{Sc}$ on the diagonal |
-| $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\\\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type $*$-unitary, $|\alpha|=1$, $M$ block anti-diagonal |
+| $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type $*$-unitary, $|\alpha|=1$, $M$ block anti-diagonal |
 | $\alpha^{*}B=\alpha A$ | The condition for $U_\alpha^{\dagger}MU_\alpha$ to be block diagonal |
 | $G=VU^{\dagger}$ | The completing matrix from the SVD $A=U\Sigma V^{\dagger}$ |
 
