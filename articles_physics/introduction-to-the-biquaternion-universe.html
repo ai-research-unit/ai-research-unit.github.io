@@ -180,9 +180,10 @@ $$</p>
 <p>$$
 \tilde R_\Psi = r_t\,e_t + i\vec r_\Psi = r_t\,e_t + (i r'_{x})\,\vec e_x + (i r'_{y})\,\vec e_y + (i r'_{z})\,\vec e_z \in \mathbb{B}_{\Psi},
 $$</p>
-<p>the real temporal coordinate $r_t$, a length, together with the three imaginary spatial coordinates $i r'_{x}, i r'_{y}, i r'_{z}$. The informational sector $\mathbb{B}_{\Psi}$ is, exactly, the <strong>Hermitian part</strong> of the operator algebra of a two-state quantum system: its elements are the observables, and they generate the full matrix algebra. This is established in the companion article <em>Quantum Physics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
+<p>the real temporal coordinate $r_t$, a length, together with the three imaginary spatial coordinates $i r'_{x}, i r'_{y}, i r'_{z}$.
+The informational sector $\mathbb{B}_{\Psi}$ is, exactly, the <strong>Hermitian part</strong> of the operator algebra of a two-state quantum system: its elements are the observables, and they generate the full matrix algebra. This is established in the companion article <em>Quantum Physics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
 <ul>
-<li>The <strong>elements</strong> of $\mathbb{B}_{\Psi}$, of the form $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ with $\vec r_\Psi = r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z$ and $r_t, r'_x, r'_y, r'_z \in \mathbb{R}$ — the scalar coefficient real and the vector coefficients imaginary, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{B}_{\Psi}$), with spectral decomposition in terms of idempotents.</li>
+<li>The <strong>elements</strong> of $\mathbb{B}_{\Psi}$, of the form $\tilde R_\Psi = r_t\,e_t + i\vec r_\Psi$ with $\vec r_\Psi = r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z$ and $r_t, r'_x, r'_y, r'_z \in \mathbb{R}$ — the scalar coefficient real and the vector coefficients imaginary, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{B}_{\Psi}$), with spectral decomposition in terms of idempotents. Read as an observable, the same element is written $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$, and its mirror is $\tilde H_\Phi=-i\tilde H_\Psi$, so $\tilde H_\Psi=i\,\tilde H_\Phi$.</li>
 <li>The <strong>idempotents</strong> in $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
 <li>The <strong>positive elements</strong> in $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, of the form $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, are the mixed states (trace one in the $2\times2$ image), parametrizing the Bloch ball.</li>
 <li>The <strong>normalised Hermitian form</strong> $\langle\tilde{Ϛ}_{\Psi},\tilde R_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = r_t + \vec r\cdot\vec r_\Psi$ gives the Born rule, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde R_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi}) = r_t + \vec r\cdot\vec r_\Psi$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real; it is a consequence of the algebra rather than an independent postulate.</li>
@@ -326,6 +327,14 @@ $$</p>
 <tr>
 <td>$\tilde R_\Psi = r_t e_t + i\vec r_\Psi$</td>
 <td>Hermitian element (observable of the informational sector); $r_t \in \mathbb{R}$ is the scalar component and $\vec r_\Psi = (r'_x,r'_y,r'_z)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $r_t\,e_t+i\,r'_\eta\vec e_\eta$</td>
+</tr>
+<tr>
+<td>$\tilde H_\Psi = h_t\,e_t+i\vec h_\Psi$</td>
+<td>The informational element read as an observable, $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$ with $h_t,h'_x,h'_y,h'_z\in\mathbb{R}$; the same element as $\tilde R_\Psi$, with the coefficient letters of the reading, $h$ for an observable and $r$ for a coordinate</td>
+</tr>
+<tr>
+<td>$\tilde H_\Phi = -i\,\tilde H_\Psi$</td>
+<td>Its mirror in the material sector, $\tilde H_\Phi=i\,h'_t\,e_t+\vec h_\Psi$ with $h'_t=-h_t$; the same four numbers, and $\tilde H_\Psi=i\,\tilde H_\Phi$. Unlike $\tilde R_\Phi$ and $\tilde R_\Psi$, these two are one mirror pair</td>
 </tr>
 <tr>
 <td>$(r'_t,r_x,r_y,r_z)$</td>
