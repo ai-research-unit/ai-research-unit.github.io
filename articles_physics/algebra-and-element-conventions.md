@@ -308,6 +308,34 @@ $$
 
 and a reader who does not know the letters computes either half from that line.
 
+**The switch, and the two readings.** Multiplication by the central $i$ is a real-linear bijection that exchanges the sectors, because $i$ is central and $i^{*}=-i$:
+
+$$
+(i\tilde Q)^{*}=-i\,\tilde Q^{*},
+\qquad
+i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi},
+\qquad
+i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}.
+$$
+
+Its name in this series is the **Phy–Psy switch**: the name takes its *Phy* from $\Phi$, the letter that opens the word physics and marks the material side, and its *Psy* from $\Psi$, the letter a quantum state is written with and the mark of the informational side. The two results are the two **readings**, and there are two of them. The **material reading** is the reading of an element of $\mathbb{B}_{\Phi}$; the **informational reading** is the reading of an element of $\mathbb{B}_{\Psi}$. A reading belongs to the element read and not to the writer: the writer chooses which element to form, and the switch is the construction of the second one.
+
+The switched element is a second element and not the same element read twice, and four numbers say so:
+
+$$
+\operatorname{Tr}(i\tilde Q)=i\,\operatorname{Tr}\tilde Q,
+\qquad
+\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural},
+\qquad
+\langle i\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*},
+\qquad
+\det(i\tilde Q)=-\det\tilde Q .
+$$
+
+**The switch multiplies the whole element.** It is never applied to one coefficient, and a map that multiplies the time coefficient alone is the Wick coefficient map $W$ of *Interpretation of the Wick Rotation in the Biquaternion Universe*, not the switch. It is multiplicative in the sense $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, which is what lets it be applied to an equation; it is not an algebra homomorphism, since $(i\tilde X)(i\tilde Y)=-\tilde X\tilde Y$, and neither sector is a subalgebra.
+
+**The direction of the switch is a convention.** Multiplication by $+i$ and by $-i$ give the same pair of readings with the labels exchanged, and the series uses $-i$ for the direction from an object to its observable, as in the preparation dictionary $\tilde R_\Psi=-\tfrac{i}{2}\tilde R_\Phi$, the sign that makes the trace of a four-momentum positive. The article that develops the switch, the readings, the gradient and the comparison with the Wick rotation is *The Two Readings and the Phy–Psy Switch*.
+
 <!-- retired notation, kept for reference -->
 **The operator reading is retired.** Earlier versions of this series wrote the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters were named $h_t, h_x, h_y, h_z$ in place of $r_t, r'_x, r'_y, r'_z$, and the element was written
 
@@ -382,7 +410,7 @@ Each of the four marks has a fixed space, and each of these is one of the **rema
 
 The base conventions are one object read in order. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\eta^2=-e_t$, over complex coefficients; the scalar unit $i$ is central, and multiplication by it is one map whose restrictions are read in *Special Element Conventions*. The element is written with its case and its tilde, and its coefficients $Q_\mu=q_\mu+iq'_\mu$ split it into a quaternion part and an antiquaternion part.
 
-The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. **There is no dictionary**, because there is nothing to map: the parameters are the coordinates, $(r_t,\ i r'_t)$ on the time slot and $(r_x,r_y,r_z)$ with $(i r'_x,i r'_y,i r'_z)$ on the space slots, and the only conversion in the scheme is $c$, between the length coordinate and the second. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.
+The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. Multiplication by $i$ is the bijection between the two sectors, the Phy–Psy switch, and it fixes the names of the two readings, the material reading on $\mathbb{B}_{\Phi}$ and the informational reading on $\mathbb{B}_{\Psi}$. **There is no dictionary**, because there is nothing to map: the parameters are the coordinates, $(r_t,\ i r'_t)$ on the time slot and $(r_x,r_y,r_z)$ with $(i r'_x,i r'_y,i r'_z)$ on the space slots, and the only conversion in the scheme is $c$, between the length coordinate and the second. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.
 
 The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\theta+i\theta'$ a complex one, with the central phase the real case and the boost $\Theta=-i\theta_{\mathrm{rpd}}$ the pure imaginary case. The rest of the conventions is in the eight companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, indices and notation, and physical units and common elements — each stated after the one it depends on.
 
@@ -405,6 +433,8 @@ The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\thet
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | Real-quaternion and antiquaternion subspaces, the real and imaginary halves |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, the informational sector |
 | $\mathbb{B}_{\Phi} = \{\tilde Q : \tilde Q^\flat=\tilde Q\}$ | Anti-Hermitian subspace, the material sector; $\flat=-{}^{*}$ |
+| $i\,\cdot$ | The Phy–Psy switch, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ and $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$; multiplicative in the sense $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y$ |
+| material reading; informational reading | The reading of an element of $\mathbb{B}_{\Phi}$ and the reading of an element of $\mathbb{B}_{\Psi}$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | The reduced biquaternion, a duo-complex pair with the multiplication by $j$ |
 | $\xi$; $Ξ$ | The generic field, real and complex: $\xi$ a real scalar field, $Ξ$ a complex one, the case following the coefficient, §*The Elements and their Coefficients* |
 | $\tilde\xi$; $\tilde{Ξ}$ | The generic field as an element, quaternion layer and biquaternion layer, $\tilde{Ξ}=Ξ e_t$ when central; the caret names the role, `scl` the scalar, `sp` the spinor, `fop` the field operator |

@@ -1,0 +1,459 @@
+# __The Two Readings and the Phy–Psy Switch__
+
+## Introduction
+
+Every element of the algebra is read in the sector it lies in, and the algebra has two. The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ carries the four-vectors, the interval and the Lorentz action, and an element there is read as a material object. The Hermitian subspace $\mathbb{B}_{\Psi}$ carries the states, the observables and the Born pairing, and an element there is read as an informational one. Those are the two readings, the **material reading** and the **informational reading**. There are two of them and no more: every case in the series that looks like a third reading is an instance of one of these two.
+
+The two readings are linked by one operation. Multiplication by the central $i$ carries each sector onto the other:
+
+$$
+\boxed{\;\tilde Q_\Phi\in\mathbb{B}_{\Phi}\ \Longrightarrow\ \tilde Q_\Psi=i\,\tilde Q_\Phi\in\mathbb{B}_{\Psi},
+\qquad\qquad
+\tilde Q_\Phi=-i\,\tilde Q_\Psi\;}
+$$
+
+That single line is the whole article. An anti-Hermitian element is rewritten as a Hermitian one by multiplying it by $i$, and the same substitution, applied to an element, an operator, an equation or a coefficient, produces a second exact statement in the other reading. The algebra of the substitution is the identity
+
+$$
+(i\tilde Q)^{*}=\tilde Q^{*}\,i^{*}=-i\,\tilde Q^{*},
+\qquad
+i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi},
+\qquad
+i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi},
+$$
+
+and what is not immediate is what the substitution gives in each case. That is what the article computes.
+
+This article calls that operation the **Phy–Psy switch**. The name follows the corpus's own mnemonic for the two sector letters: $\Phi$ opens the word *physics* and marks the material side, and $\Psi$ is the letter a quantum state is written with and marks the informational side. The name takes its *Phy* from the first and its *Psy* from the second. The switch is the operation that carries one side to the other, and it runs in both directions, since $i$ is invertible with inverse $-i$. Both the name and the two readings are fixed as conventions in *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, and this article uses them as fixed.
+
+The thesis is a statement about construction and not about naming. For each element of $\mathbb{B}_{\Phi}$ there is an element of $\mathbb{B}_{\Psi}$, obtained by multiplication by $i$, and for each element of $\mathbb{B}_{\Psi}$ there is an element of $\mathbb{B}_{\Phi}$, obtained the same way. The second element is a different element: it has a different trace, a different norm, a different determinant and a different spectrum. Each of the two is read in its own sector, the first in the material reading and the second in the informational reading. The switch is therefore a map between two objects, and not a second label on one object.
+
+The article is written against a natural objection. Multiplication by a scalar looks like a change of notation, and a change of notation proves nothing. The answer is in two parts, and both are exact. First, the switch multiplies the whole element and no single coefficient, so the factor $i$ leaves the time slot and appears on the three space slots, and the numbers attached to the element change accordingly. Second, the switch is multiplicative in the sense that matters for equations, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so a product survives it and an equation may be carried across it. A relabelling has neither property.
+
+The substitution is cheap; the results are not. Seven cases are worked below, ordered by distance from the element:
+
+- **the element and its observable.** A material four-vector and the informational operator that reads it differ by the switch, so the energy, imaginary as a coefficient of the first, is real as a coefficient of the second.
+- **the preparation dictionary.** The same substitution, applied to the reversed four-vector, prepares a state, and the causal condition of the material cone becomes the positivity of the state.
+- **the gradient.** The operator that differentiates carries the $i$ on the time slot in the material chart and on the three space slots in the informational one; the two gradients are switched copies once the quaternion conjugate is allowed for.
+- **the Schrödinger equation.** One equation, two writings: the first names a Hermitian observable, the second a material generator, and the two are related by the substitution and one real rescaling.
+- **the commutator.** The commutator of two observables is anti-Hermitian, so it lands in the material sector, and the substitution returns it to the observables with the coefficient $i$ that the quantum brackets display.
+- **the interaction insertion.** A real coupling cannot multiply an anti-Hermitian unit; the substitution supplies the $i$, which is why the magnetic insertion is Hermitian and the electric one is not.
+- **the thermal weight.** The Matsubara wave element is material, and the positivity the thermal construction needs comes from the form the switch preserves, not from a rotation of the time axis.
+
+One contrast closes the list: the Wick rotation, which looks like the substitution and is not it.
+
+The resemblance to the Wick rotation is real and the difference is exact. The Wick rotation multiplies one coefficient, the time one, and its image is the definite real-quaternion slice. The switch multiplies all four coefficients, and its image is the indefinite informational sector. Wick takes the $i$ off the time slot; the switch takes it off the time slot and puts it on the three space slots. The first makes an integral converge and is unavailable where the integrand has a singularity in the strip; the second is a genuine multiplication, available for every element and every equation, and it makes nothing easier. That contrast is the subject of the fifth section.
+
+**Status.** The algebra below is established and is recomputed on a hundred random elements: the bijection, the multiplicativity, the sign of the norm, the invariance of the Hermitian form, the multiplication of the trace, the sign of the determinant, the quarter turn of the spectrum, and the operator identities of the gradient. The identification of $\mathbb{B}_{\Phi}$ with a material sector and $\mathbb{B}_{\Psi}$ with an informational one is the corpus's **hypothesis**, and the article inherits it and does not argue for it. What the article adds is the organising claim that the two readings are one construction, the exact statement of what the construction preserves and what it changes, the reading of the two gradients, and the comparison with the Wick rotation. It adds no dynamics and no prediction.
+
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$, central $i$ with $i^{2}=-1$, Hermitian conjugation ${}^{*}$, quaternion conjugation ${}^{\natural}$ and the trace $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$. The two forms are the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and the Hermitian form $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$. The interval is written in the length unit $c=1$: with $c$ restored the temporal coordinate is $cr'_{t}$ and the four-momentum is $i(E/c)e_t+\vec p$, as in the corpus's own writing.
+
+## The Switch
+
+### The Operation
+
+The switch acts on one element and produces one element. Its input is an element of $\mathbb{B}_{\Phi}$, with an imaginary time coefficient and three real space coefficients; its output is an element of $\mathbb{B}_{\Psi}$, with a real time coefficient and three imaginary space coefficients, or the reverse. Written out in the two coefficient sets, with all parameters real,
+
+$$
+\tilde Q_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z
+\ \xrightarrow{\ i\ }\
+\tilde Q_\Psi=-r'_t\,e_t+i\bigl(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\bigr),
+$$
+
+and the reverse arrow is multiplication by $-i$. No element of one sector is turned into a pair, and no pair is turned into an element: the switch is a map from one sector to the other and back, element to element.
+
+The central $i$ is anti-Hermitian, $i^{*}=-i$, and it is central, so the conjugation of a product by $i$ reverses:
+
+$$
+(i\tilde Q)^{*}=\tilde Q^{*}\,i^{*}=-i\,\tilde Q^{*}.
+$$
+
+Applied to an element of one sector, that line is the whole of the switch. If $\tilde Q^{*}=-\tilde Q$ then $(i\tilde Q)^{*}=+i\tilde Q$, and if $\tilde Q^{*}=+\tilde Q$ then $(i\tilde Q)^{*}=-i\tilde Q$. In symbols,
+
+$$
+\tilde R_\Phi\in\mathbb{B}_{\Phi}\ \Longrightarrow\ i\tilde R_\Phi\in\mathbb{B}_{\Psi},
+\qquad\qquad
+\tilde R_\Psi\in\mathbb{B}_{\Psi}\ \Longrightarrow\ i\tilde R_\Psi\in\mathbb{B}_{\Phi}.
+$$
+
+The map is bijective in each direction, with inverse $i^{-1}=-i$, and it is real-linear on the two real four-dimensional spaces it relates: it carries real combinations to real combinations, and it is a bijection of real vector spaces. It is not a map between complex subspaces, because neither sector is one. The central scalars that are not pure imaginary do not switch sectors: with $u=a+bi$ and $a$, $b$ real, the image $u\tilde R_\Phi=a\tilde R_\Phi+ib\tilde R_\Phi$ is not in either sector unless $a$ or $b$ vanishes. The switch is the pure-imaginary case, and the real central scalars are the scalars that keep an element in its sector.
+
+**The coordinate form.** In words: **the switch negates the material time and hands the three material space coordinates to the imaginary space slots.** The single factor $i$ leaves the time slot and appears on the three space slots, and the four real parameters pass through unchanged in magnitude. That one sentence is the whole of the operation, and every exact statement below is a consequence of it.
+
+### Two Elements, Not One Element Twice
+
+The switched element is a second element, and the numbers attached to it say so. For a general element and its image,
+
+$$
+\operatorname{Tr}(i\tilde Q)=i\,\operatorname{Tr}\tilde Q,
+\qquad
+\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural},
+\qquad
+\det(i\tilde Q)=-\det\tilde Q,
+$$
+
+since the determinant of the $2\times2$ image is the quaternionic norm and the image is multiplied by the scalar $i$. The spectrum turns a quarter turn in the complex plane,
+
+$$
+\sigma(i\tilde Q)=i\,\sigma(\tilde Q).
+$$
+
+Each eigenvalue is multiplied by $i$, so a real pair becomes an imaginary pair and an imaginary pair becomes a real one, and the two travel as a pair. All four lines are checked on a hundred random elements, with residual zero.
+
+The four numbers are not small print. On a material four-momentum the trace is $2iE/c$ and the norm is $-m^{2}c^{2}$; on the switched element the trace is $-2iE/c$ and the norm is $+m^{2}c^{2}$. A change of notation does not move the trace from the imaginary central line to the real one, does not change the sign of the determinant and does not make an imaginary spectrum real. The two readings read two different elements.
+
+The pair itself is canonical up to an overall sign. The switch has order four, $i^{4}=+\mathrm{id}$, and its square is minus the identity, $i^{2}=-\mathrm{id}$. So the orbit of a material element is the pair $\{\tilde R_\Phi,i\tilde R_\Phi\}$, and the sign carried by $\pm i\tilde R_\Phi$ is the only ambiguity in naming it. The subsection on order and sign fixes which of the two signs is the corpus's.
+
+### What the Switch Preserves
+
+Because $i$ is central, the switch passes through a product:
+
+$$
+i\,(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X\,(i\tilde Y).
+$$
+
+The proof is one line: $i$ commutes with every element, so it may be placed in front, in the middle or at the end of a product. Two consequences follow, and they are what makes the switch usable on physics.
+
+First, an equation survives multiplication. If an equation is written as an equality of products, sums and real coefficients, both sides may be multiplied by the same central scalar $i$, and the equality is preserved; each product is switched in one factor, because $i$ may be placed anywhere inside it. An equation $P(\tilde X)=0$ keeps its solutions, since $i$ is invertible. This is the licence to apply the switch to the Schrödinger equation and to the gradient, and both applications are worked below.
+
+Second, the Hermitian form is invariant. For any element,
+
+$$
+(i\tilde Q)(i\tilde Q)^{*}=(i\tilde Q)\bigl(-i\tilde Q^{*}\bigr)=\tilde Q\tilde Q^{*},
+$$
+
+so $\langle i\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*}$. The form that is positive on the informational sector is the one form the switch leaves alone, and that is why probabilities are the same on both sides of the dictionary.
+
+What the switch does not preserve is composition. Two switches do not make one switch:
+
+$$
+(i\tilde X)(i\tilde Y)=-\tilde X\tilde Y .
+$$
+
+The map $\tilde Q\mapsto i\tilde Q$ is therefore not an algebra homomorphism, since a homomorphism would carry a product to the product of the images and this carries it to minus the product. The two statements are exact and they are not in conflict. *Multiplicative*, in the sense the article uses, means that a product may be switched by switching one factor and leaving the other; it does not mean that the image of a product is the product of the images. The first is what an equation needs. The second is what a symmetry needs.
+
+Since $(\tilde A\tilde B)^{*}=\tilde B\tilde A$, a product of two Hermitian elements is Hermitian exactly when the two commute; the commutator of two Hermitian elements is anti-Hermitian, so it leaves the informational sector, and the switch is what returns it. That is the closure the two sectors have, and it is the subject of the commutator example below.
+
+### What the Switch Changes
+
+The table collects the invariants. The first five rows hold for any element; the last two record which congruence preserves which form.
+
+| Object | On $\tilde Q$ | On $i\tilde Q$ | Relation |
+| --- | --- | --- | --- |
+| trace $\operatorname{Tr}=2\,\mathrm{Sc}$ | $2Q_t$ | $2iQ_t$ | multiplied by $i$ |
+| quaternionic norm $\langle\cdot\rangle_{\natural}$ | interval, signature $(3,1)$ | its negative, signature $(1,3)$ | sign reversed |
+| determinant of the $2\times2$ image | $\langle\tilde Q\rangle_{\natural}$ | $-\langle\tilde Q\rangle_{\natural}$ | sign reversed |
+| spectrum | $\lambda_{\pm}$ | $i\lambda_{\pm}$ | quarter turn |
+| Hermitian form $\langle\cdot\rangle_{*}$ | positive definite, $(4,0)$ | positive definite, $(4,0)$ | preserved |
+| Lorentz congruence, $U\tilde QU^{*}$ with $UU^{\natural}=e_t$ | preserves the interval | preserves it, and moves the Hermitian form | the material actor |
+| $*$-unitary congruence, $V\tilde QV^{*}$ with $VV^{*}=e_t$ | preserves the Hermitian form, and the interval too, being a similarity | same | the informational actor |
+
+The last two rows are the two actors, and they say what separates the readings. Each congruence acts on both sectors, because a congruence preserves the sector for every invertible multiplier. What differs is the form each leaves alone. The Lorentz congruence leaves the interval and moves the Hermitian form; the $*$-unitary congruence leaves both, since with $VV^{*}=e_t$ the map is a similarity and a similarity fixes the determinant. The rotations are the overlap of the two groups: a rotor that is also $*$-unitary has $U^{\natural}=U^{-1}=U^{*}$, hence is real, hence is a rotation. A boost lies in the first group and not the second, and it is exactly the element that moves the Hermitian form while leaving the interval fixed. So each reading has its own actor, and the two actors are not the same group.
+
+**A worked element.** Take $E=2.3$, $\vec p=(0.4,0.5,0.6)$ and $\tilde P_\Phi=iE\,e_t+\vec p$, in the length unit and with $c=1$. The switched element is $i\tilde P_\Phi=-E\,e_t+i\vec p$, and the numbers run as follows.
+
+| Number | $\tilde P_\Phi$ | $i\tilde P_\Phi$ |
+| --- | --- | --- |
+| trace | $4.6\,i$ | $-4.6$ |
+| quaternionic norm | $-4.52$ | $+4.52$ |
+| Hermitian form | $6.06$ | $6.06$ |
+| spectrum | $3.1775\,i$, $1.4225\,i$ | $-3.1775$, $-1.4225$ |
+
+The checksum is the spectral one: the sum of the spectrum is the trace and the product is the determinant, on both sides. On the left $4.6i$ is the sum and $-4.52$ the product, on the right $-4.6$ and $+4.52$. Nothing has been relabelled; two different elements have been computed.
+
+### Order Four and the Orbit
+
+The switch is a real-linear bijection of order four, and its powers are worth naming once. The square is minus the identity, so it keeps each sector and reverses it; the fourth power is the identity; and the odd powers exchange the sectors. Applied to a material element,
+
+$$
+\tilde R_\Phi\ \xrightarrow{\,i\,}\ i\tilde R_\Phi\ \xrightarrow{\,i\,}\ -\tilde R_\Phi\ \xrightarrow{\,i\,}\ -i\tilde R_\Phi\ \xrightarrow{\,i\,}\ \tilde R_\Phi .
+$$
+
+The two-element orbit of the construction is $\{\tilde R_\Phi,i\tilde R_\Phi\}$ up to sign, and it is the pair the article reads.
+
+### Which Reading Applies
+
+A reading belongs to an element, and the element decides it. The writer does not choose how to read an element; the writer chooses which element to form. The rule is one line: **an element is read in the sector it lies in**, and the sector is computed from $\tilde Q^{*}=\pm\tilde Q$.
+
+Three tests identify the sector of a given element, and the first is the definition. The element is informational when $\tilde Q^{*}=+\tilde Q$ and material when $\tilde Q^{*}=-\tilde Q$. The second test is the slot that carries the $i$: the material element carries it on the time slot and the informational one on the three space slots, and no element of either sector carries it on both. The third test is the sign of the discriminant, $\langle\tilde Q\rangle_{\natural}$, whose sign pattern is $(3,1)$ on the material side and $(1,3)$ on the informational side; on the four-vectors the material side is the side where the timelike elements have negative norm.
+
+**No element has two readings.** An element of one sector is read in that sector, and the switch produces a second element that is read in the other. An element that is in neither sector, $\tilde Q^{*}\neq\pm\tilde Q$, is not switched here: it is not a material or an informational element, and the switch is a map between those two. That is why no third reading is needed and why the article never reads one element twice.
+
+## The Material Reading
+
+The material reading is the reading of an element of $\mathbb{B}_{\Phi}$,
+
+$$
+\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
+$$
+
+with the imaginary time coefficient and the three real space coefficients. Its norm is the interval, $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+r_x^{2}+r_y^{2}+r_z^{2}$, of signature $(3,1)$; its zero set is the light cone; its unit group acts by rotor conjugation and gives the Lorentz group, boosts included. The trace is twice the temporal coefficient, and on the four-momentum it reads $\operatorname{Tr}\tilde P_\Phi=2iE/c$, an imaginary central number; the norm reads $-m^{2}c^{2}$. The spectrum is imaginary, $\lambda_{\pm}=i(E/c\pm\lvert\vec p\rvert)$: the two light-cone combinations, each of which rescales by the Doppler factor under a boost, and not a pair of energies. The element is what an observer meets: a position, a velocity, a momentum, a wavevector, a potential, a current, a force. This reading names what is there.
+
+## The Informational Reading
+
+The informational reading is the reading of an element of $\mathbb{B}_{\Psi}$,
+
+$$
+\tilde R_\Psi=r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr),
+$$
+
+with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Its trace is the temporal coefficient, and on a state normalised to one it reads $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the trace pairing $\operatorname{Tr}(\tilde{Ϛ}_\Psi\tilde R_\Psi^{*})=2\langle\tilde{Ϛ}_\Psi,\tilde R_\Psi\rangle_{*}$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.
+
+## The Switch at Work
+
+Each of the seven examples below states a claim in one reading, applies the switch, and reads the result in the other. They are ordered by increasing distance from the element: an element, a dictionary, an operator, an equation, a bracket, an interaction, a weight.
+
+### The Element and Its Observable
+
+The material element is the object and the informational element is the operator that reads it. The corpus records the map in the companion article on the material sector: the observable representative of a material element is $i\tilde Q\in\mathbb{B}_{\Psi}$, and the factor $i$ is the map from the object to the operator. That sentence is the switch, and it is the first example.
+
+Take the four-momentum. Material, it is $\tilde P_\Phi=i(E/c)e_t+\vec p$: the energy sits on the imaginary central line and the momentum on the real vector part. Switched, it is
+
+$$
+i\tilde P_\Phi=-\frac{E}{c}e_t+i\vec p,
+$$
+
+whose trace is $-2E/c$, real, and whose vector part is imaginary. The energy has become the real scalar coefficient and the momentum the imaginary vector part, and the sign of the whole element is the sign of the material one: $\operatorname{Tr}\tilde P_\Psi=-2E/c$, so $E=-\frac{c}{2}\operatorname{Tr}\tilde P_\Psi$. The reading is now the informational one: the element has a real spectrum.
+
+The same pattern holds for the other four-vectors. The four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ carries the charge density on the imaginary time slot and the current on the real space slots; its switch is $i\tilde J_\Phi=-c\rho\,e_t+i\vec J$, with the density real and the current imaginary. The four-potential, the four-velocity and the wavevector follow the same rule, and the rule is one line: the temporal coefficient changes from imaginary to real and the three space coefficients from real to imaginary.
+
+**The central scalar.** The mass is the useful case because it is central and carries no index. Material, it is $\Rho=imc$, an imaginary central number, and the norm of the four-momentum is its square, $-m^{2}c^{2}$. Switched, it is $i\Rho=-mc$, a real central number, and the norm of the switched four-momentum is $+m^{2}c^{2}$. The same length is imaginary in one reading and real in the other, and neither is a mistake: the two are the two central scalars of the algebra, and the switch is what carries one to the other.
+
+What the reading buys is a real spectrum. What it trades is the interval for the discriminant: the norm is still there, with its sign turned round, so what was timelike in the material reading is spacelike in the informational one. The two readings are not two views of one object; they are the two faces a physics needs, and no single element carries both.
+
+### The Preparation Dictionary
+
+The switch of the reversed four-vector is a state. For a material four-vector $\tilde R_\Phi=i r'_t\,e_t+\vec r$,
+
+$$
+i\,(-\tilde R_\Phi)=r'_t\,e_t-i\,\vec r\in\mathbb{B}_{\Psi},
+\qquad\qquad
+\langle i\tilde R_\Phi\rangle_{\natural}=-\langle\tilde R_\Phi\rangle_{\natural}.
+$$
+
+The multiplier is $i$, as everywhere in the article; the only choice is which material element enters, the four-vector or its reverse, and the reverse is the one whose image has the positive scalar part. That is the whole of the preparation: a switch and a choice of sign in the argument.
+
+The causal condition of the material side is $r'_t\ge\lvert\vec r\rvert$, that is, $\langle\tilde R_\Phi\rangle_{\natural}\le0$; the switch turns the norm round, so the image has norm $r'^{2}_t-\lvert\vec r\rvert^{2}\ge0$. One inequality, one cone: the future light cone of $\mathbb{B}_{\Phi}$ lands in the positive cone of $\mathbb{B}_{\Psi}$, and the null cone lands on the elements of zero norm, which are the pure ones.
+
+A real rescaling applied after the switch sets the trace of the state to one; that rescaling is the trace convention and it belongs to *The Bloch Ball as the Normalised Slice of the Future Light Cone*, which owns the normalised form of the dictionary.
+
+### The Gradient
+
+The gradient is the first object where the switch acts on an operator rather than on an element, and the exact statement is worth separating from the claim about its action.
+
+Write the gradient with the four partial derivatives along the coordinates of the chart,
+
+$$
+\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
+$$
+
+and read it on the material chart, where $R_t=i r'_t$ and $R_\eta=r_\eta$. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the operator has constant coefficients,
+
+$$
+\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\,\frac{\partial}{\partial r'_t}+\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z},
+$$
+
+and those coefficients are $(-i,1,1,1)$: an imaginary time slot and three real space slots. The operator is anti-Hermitian, $\tilde\nabla^{*}|_{\mathbb{B}_{\Phi}}=-\tilde\nabla|_{\mathbb{B}_{\Phi}}$, and its switch has coefficients $(1,i,i,i)$,
+
+$$
+i\,\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=e_t\frac{\partial}{\partial r'_t}+i\Bigl(\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z}\Bigr),
+$$
+
+which is Hermitian, $(i\tilde\nabla)^{*}=+i\tilde\nabla$. At the level of the coefficients the switch is confirmed with no qualification: the $i$ leaves the time slot and arrives on the three space slots, the coefficients change class, and the operator changes sector, by the same one-line proof that applies to an element.
+
+The quaternion conjugate behaves in the same way, with the three space signs reversed. Its material restriction has coefficients $(-i,-1,-1,-1)$, also anti-Hermitian, and its switch has $(1,-i,-i,-i)$, also Hermitian. Those last four numbers are worth a second look, because they are the coefficients of the gradient read on the *informational* chart, where $R_t=r_t$ and $R_\eta=i r'_\eta$ and therefore $\partial/\partial R_\eta=-i\,\partial/\partial r'_\eta$. So the two charts give
+
+$$
+i\,\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=\tilde\nabla\big|_{\mathbb{B}_{\Psi}},
+\qquad\qquad
+i\,\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Psi}},
+$$
+
+both exact, both with residual zero on a hundred evaluations. The plain gradient of one chart is the switch of the *conjugate* gradient of the other. The reason is the one the coordinate form already gave: the switch moves the $i$ from the time slot to the three space slots, and the two charts are exactly the two assignments of the $i$ to those slots. A reader who expects $\tilde\nabla|_{\mathbb{B}_{\Psi}}=i\tilde\nabla|_{\mathbb{B}_{\Phi}}$ is off by $2i$ on each of the three space slots and by nothing on the time slot, and the missing factor is the chart change, not a failure of the switch.
+
+**The d'Alembertian.** The series' operator is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^{2}/\partial R_\mu^{2}$, and it is central. Its value on the two charts is read at once from the coefficients: on the material chart $R_t=i r'_t$ gives $-\partial^{2}/\partial{r'_{t}}^{2}$ and the three real space coordinates give $+\Delta$, while on the informational chart $R_t=r_t$ gives $+\partial^{2}/\partial r_t^{2}$ and the three imaginary space coordinates give $-\Delta$. Hence
+
+$$
+\Box\big|_{\mathbb{B}_{\Psi}}=-\Box\big|_{\mathbb{B}_{\Phi}},
+$$
+
+which is the operator form of the norm's sign flip, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, read on the gradient as an element with four coefficients. Both operators are hyperbolic. The switch never produces an elliptic one, and that is the sharpest single difference from the Wick rotation.
+
+**The exact qualification.** The claim above is about the operator's coefficients. It is not a claim about the operator's action on an arbitrary element, and the difference is one line. Since ${}^{*}$ is an antiautomorphism, $(\tilde\nabla\tilde X)^{*}=\tilde X^{*}\tilde\nabla^{*}$, and with $\tilde\nabla$ anti-Hermitian,
+
+$$
+(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla .
+$$
+
+That equals $-\tilde X\tilde\nabla$ exactly when $\tilde X$ is Hermitian, and it equals $-\tilde\nabla\tilde X$ exactly when $\tilde X$ is Hermitian and commutes with $\tilde\nabla$. For a random Hermitian element the second equality fails on all hundred tests, with a residual of the same size as the element itself, and for a random element of the whole algebra both fail. So $\tilde\nabla\tilde X$ is anti-Hermitian only under those conditions, and a reader who wants the class of a differentiated element must compute it rather than inherit it. The operator-level statement is exact; the action-level statement needs the hypothesis. The article keeps the two apart, and the separation is the honest part of this section.
+
+### The Schrödinger Equation
+
+The equation has two writings, and the switch is what relates them. In biquaternionic form, with $\tilde\Xi_{\mathrm{sp}}$ the spinor-valued field and $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ the observable,
+
+$$
+i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde R_\Psi\,\tilde\Xi_{\mathrm{sp}} .
+$$
+
+Multiply on the left by $-i$ and divide by the real central scalar $\hbar c$, which keeps every element in its sector,
+
+$$
+\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde G_\Phi\,\tilde\Xi_{\mathrm{sp}},
+\qquad\qquad
+\tilde G_\Phi=-\frac{i}{\hbar c}\,\tilde R_\Psi\in\mathbb{B}_{\Phi}.
+$$
+
+The two writings are not two equations. The first names the observable and reads the dynamics through the switch, which stands in the coefficient as the explicit $i$; the second names the generator and places it in the material sector, the sector of the four-vectors. The multiplicativity of the switch is what allows the second form: every term of the first is multiplied by the same central scalar, so the equality survives, and the derivative is not touched because $-i$ is a constant.
+
+The two readings of the one equation are exact mirror statements. The observable is Hermitian and its spectrum is real, and its eigenvalues are frequencies. The generator is anti-Hermitian and its spectrum is imaginary, and its eigenvalues are rates,
+
+$$
+\lambda(\tilde G_\Phi)=-\frac{i}{\hbar c}\,\lambda(\tilde R_\Psi),
+$$
+
+so a frequency $\omega_n$ is read as the rate $-i\omega_n$ in the second writing. The trace is multiplied by $-i/\hbar c$ and the norm changes sign,
+
+$$
+\operatorname{Tr}\tilde G_\Phi=-\frac{i}{\hbar c}\operatorname{Tr}\tilde R_\Psi,
+\qquad\qquad
+\langle\tilde G_\Phi\rangle_{\natural}=-\frac{1}{(\hbar c)^{2}}\langle\tilde R_\Psi\rangle_{\natural},
+$$
+
+so the discriminant that is non-negative on the state is non-positive on the generator. That is the corpus's pair of discriminants, reached here from the switch rather than assumed. The derivation of the equation, the uniqueness of the scalar imaginary and the missing transformation law of the generator are owned by *The Schrödinger Equation in Biquaternionic Form*, and the article cites them.
+
+**The density-matrix companion.** The same two readings apply to the state operator. The von Neumann equation has the observable inside a commutator, $\partial_{r'_t}\tilde\varrho_\Psi=-i[\tilde R_\Psi,\tilde\varrho_\Psi]/(\hbar c)$, and the $i$ in front is again the switch: it carries the anti-Hermitian commutator of two Hermitian elements back into the informational sector. Written with the generator it is $\partial_{r'_t}\tilde\varrho_\Psi=[\tilde G_\Phi,\tilde\varrho_\Psi]$, and the bracket of an anti-Hermitian element with a Hermitian one is Hermitian, so the flow stays in the sector of states. The companion article on the density-matrix form treats the same equation; the two readings below apply to that version as well.
+
+### The Commutator of Two Observables
+
+For two Hermitian elements the commutator is anti-Hermitian and the anticommutator is Hermitian,
+
+$$
+[\tilde A,\tilde B]^{*}=\tilde B^{*}\tilde A^{*}-\tilde A^{*}\tilde B^{*}=\tilde B\tilde A-\tilde A\tilde B=-[\tilde A,\tilde B],
+\qquad
+\{\tilde A,\tilde B\}^{*}=+\{\tilde A,\tilde B\},
+$$
+
+both checked on a hundred pairs. So the informational sector closes under the anticommutator and not under the commutator: it is a Jordan algebra, which is the algebra of observables. The commutator lands in the material sector, which is the Lie algebra of the $*$-unitary group, and one switch returns it to the observables:
+
+$$
+\tilde A,\tilde B\in\mathbb{B}_{\Psi}\ \Longrightarrow\ [\tilde A,\tilde B]\in\mathbb{B}_{\Phi}\ \Longrightarrow\ i[\tilde A,\tilde B]\in\mathbb{B}_{\Psi}.
+$$
+
+That is the exact content of the quantum commutator, and it is the second example of the switch doing physical work. In the angular-momentum relations $[\tilde S_j,\tilde S_k]=i\hbar\,\epsilon_{jk\eta}\tilde S_\eta$ the left side is anti-Hermitian and the right side carries the switch in its coefficient: $i$ times a Hermitian generator is anti-Hermitian, so the two sides agree, and the structure constants $\epsilon_{jk\eta}$ stay real. The canonical commutator shows the same thing from the other side: the space derivative is anti-Hermitian on the material chart, so the momentum operator $-i\hbar\,\partial_{r_\eta}$ is Hermitian, and $[\hat r_j,\hat p_k]=i\hbar\,\delta_{jk}e_t$ is Hermitian with an imaginary scalar coefficient. The switch, not a convention about $i$, is what turns the anti-Hermitian derivative into the observable momentum.
+
+### The Interaction Insertion
+
+A real coupling constant cannot multiply an anti-Hermitian unit and remain Hermitian; the switch supplies the missing factor. The corpus's electric-dipole insertion multiplies the field by $-d\,\vec e_\eta$, and $\vec e_\eta$ is anti-Hermitian, so the insertion is material and the Lagrangian term is not Hermitian. The magnetic insertion multiplies by $i\mu\,\vec e_\eta$, which is Hermitian, so that one is informational and its term is Hermitian. The explicit $i$ in the second is the switch, and it is required exactly because the coefficient $\mu$ is real. The two insertions are Hodge duals, and the duality carries one to the other. The switch produces the same change by multiplication, $i(-\vec e_\eta)=-i\vec e_\eta$, which is Hermitian, and it is the one-line reason a real coupling can sit on a Hermitian term. The structural statement is that a nonzero dipole moment is a real coefficient sitting on a material insertion, and the switch is what an observable reading of it needs. The article on the electric dipole moment owns the computation and the CP-odd reading.
+
+### The Thermal Weight
+
+The last example is a case where the switch is *not* needed, and it is instructive for that reason. The Matsubara wave element is a material one, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the Euclidean weight the thermal construction needs is its Hermitian form,
+
+$$
+\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^{2}+\lvert\vec p\rvert^{2}\ \ge 0,
+$$
+
+which is an identity and not a hypothesis. The quaternionic norm of the same element is $-\omega_n^{2}+\lvert\vec p\rvert^{2}$, indefinite, and it cannot supply the positivity: it is the interval, not the weight. So the positivity of the thermal weight comes from the form the switch preserves, evaluated on a material element, and the thermal circle needs no rotation of the time axis. What the example shows is the division of labour: the switch supplies the sector, the Hermitian form supplies the positivity, and the thermal construction uses the second without needing the first.
+
+## The Switch Against the Wick Rotation
+
+### Three Maps With One Generator
+
+Three different maps of the algebra are built from the central $i$, and only one of them is the coefficient map the series calls the Wick rotation. The table separates them.
+
+| Map | Domain and image | What it multiplies | Signature of the image | Multiplicative | Order |
+| --- | --- | --- | --- | --- | --- |
+| Phy–Psy switch, $i\,\cdot$ | $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ | all four coefficients | $(1,3)$ | yes | $4$ |
+| restriction of the switch to the quaternion subspace, $i\,\cdot$ | $\mathbb{B}_{H}\to\mathbb{B}_{iH}$ | all four coefficients | $(0,4)$ | yes | $4$ |
+| Wick rotation $W$ | $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | the time coefficient, by $-i$ | $(4,0)$ | no | $4$, with $W^{2}=T$ |
+
+The second row is the restriction of the first to the quaternion subspace, and the corpus names the quaternion and antiquaternion subspaces in its discussion of the central map. The third row is the coefficient map $W=\mathrm{diag}(-i,1,1,1)$ of *Interpretation of the Wick Rotation in the Biquaternion Universe*, whose square is the time reflection $T$ and which is a square root of that reflection. All three are built from the single central unit, and they are three different maps.
+
+### The Slot Count
+
+The difference between the first row and the third is a count of slots, and the count decides everything else. The switch multiplies four coefficients by $i$: the time slot's $i$ becomes a real coefficient and the three space slots acquire one. The Wick map multiplies one coefficient by $-i$: the time slot's $i$ is removed and the three space slots are untouched. In the material chart the two images are
+
+$$
+\tilde R_\Phi=i r'_t\,e_t+\vec r
+\ \xrightarrow{\ \text{switch}\ }\
+-r'_t\,e_t+i\vec r,
+\qquad\qquad
+\tilde R_\Phi=i r'_t\,e_t+\vec r
+\ \xrightarrow{\ W\ }\
+r'_t\,e_t+\vec r .
+$$
+
+The first image carries one factor of $i$, now on the space slots, and its quadratic form is $r_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signature to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of signature $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
+
+### Why the One-Slot Map Cannot Be Multiplicative
+
+The multiplicativity difference is not a technicality; it is forced by the slot count. The product of two elements mixes slots: the scalar coefficient of $\tilde X\tilde Y$ is built from the scalar coefficients and from the three vector coefficients of both factors, and the vector coefficients of the product are built from both. A coefficient map that touches one slot therefore cannot commute with the product, and the failure is not caused by non-commutativity.
+
+The witness is a commuting pair. Take $\tilde X=i e_t$ and $\tilde Y=\vec e_x$, which commute. Their product is $\tilde X\tilde Y=i\vec e_x$, so $W(\tilde X\tilde Y)=i\vec e_x$ because $W$ does not touch the space slots. But $W(\tilde X)=e_t$ and $W(\tilde Y)=\vec e_x$, so $W(\tilde X)W(\tilde Y)=\vec e_x$. The two differ by $\sqrt2$ in modulus; the difference is $i\vec e_x-\vec e_x$, whose modulus is $\sqrt2$. The switch, on the same pair, satisfies $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y$ with residual zero. So a one-slot coefficient map is a map of coordinates, and a four-slot multiplication is a map of elements.
+
+### What Each Map Buys
+
+Each map is good at one thing and useless at the other. The Wick rotation makes a Lorentzian integral converge, turns an oscillating weight into a decaying one, and puts the thermal circle on a compact direction; it does so by changing the object, and it is available only where the continued quantity is analytic in the strip. It buys tractability and it changes the physics. The switch changes nothing that can be computed more easily: it maps the indefinite sector to the other indefinite sector, so it cannot make anything elliptic, and every quantity it touches is as hard to evaluate after it as before. It buys a second exact reading of the same equation, and it changes nothing that a physical prediction depends on. That is the exact sense in which the Wick rotation is a trick and the switch is not: the trick is a map that is not available for every object and that alters the object, and the switch is a multiplication that is available for every object and alters only the reading.
+
+## What the Switch Does Not Do
+
+- **It is not a congruence.** A congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ preserves both sectors for every invertible parameter, because it commutes with the conjugation. The switch is not of that form: a central element acts trivially by conjugation, so no $\tilde U$ gives $\tilde U\tilde Q\tilde U^{*}=i\tilde Q$. The switch is therefore not an inner automorphism, not a channel, and not a measurement. The superselection boundary that no congruence crosses is untouched by it, and the article on the four bridges owns that boundary.
+- **It is not a symmetry.** A symmetry is a map that leaves the numbers of a theory fixed and yields a conserved charge. The switch changes the trace, the determinant and the spectrum, so nothing is invariant under it and no charge follows. It is a dictionary and not a transformation group acting on a theory.
+- **It supplies no dynamics.** No element of either sector carries a rate; the switch moves the rate from one sector to the other and does not generate one. The two writings of the Schrödinger equation are one equation, and the article adds no equation to the corpus.
+- **It does not turn a solution into a particle–antiparticle pair.** The switch carries one solution of an equation to the solution of the same equation in the other sector, and the pair it produces is a pair of readings, not a conjugate pair. The particle–antiparticle map is complex conjugation, which preserves the sector. The companion article on the Klein–Gordon equation reaches that conclusion and this one does not overturn it.
+- **It is not a Wick rotation.** The comparison above fixes the difference: four coefficients against one, indefinite against definite, multiplicative against not.
+- **It claims nothing at the level of an action.** The class of a product $\tilde\nabla\tilde X$ is not inherited from the class of $\tilde\nabla$; it needs $\tilde X$ Hermitian, and for the strong form it needs $\tilde X$ to commute with the operator. The article states the operator identity and refuses the action identity without its hypothesis.
+- **There is one direction.** The multiplier is $i$ throughout, with inverse $-i$. A sign that differs between a four-vector and its prepared state is the sign of the element that enters the switch, not a second convention.
+
+## Summary
+
+The article is one substitution, $\tilde Q_\Psi=i\tilde Q_\Phi$ for $\tilde Q_\Phi\in\mathbb{B}_{\Phi}$, which rewrites a material element as an informational one, and its consequences. The algebra has two readings and one switch. The material reading is the reading of an element of $\mathbb{B}_{\Phi}$: imaginary time coefficient, real space coefficients, norm the interval of signature $(3,1)$, trace twice the temporal coefficient and imaginary on the four-momentum, imaginary spectrum, a Lorentz action, and the cone. The informational reading is the reading of an element of $\mathbb{B}_{\Psi}$: real time coefficient, imaginary space coefficients, norm of signature $(1,3)$, trace the normalisation, real spectrum, a $*$-unitary action, a positive cone and the Born pairing.
+
+The switch is multiplication by the central $i$ on the whole element. Since $i^{*}=-i$ and $i$ is central, $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two sectors exchange. Since $i$ is central, the switch passes through products, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so an equation may be carried across it. Since $(i\tilde Q)(i\tilde Q)^{*}=\tilde Q\tilde Q^{*}$, the Hermitian form is preserved; and since the image carries a factor $i$ in every coefficient, the trace is multiplied by $i$, the quaternionic norm and the determinant change sign, the spectrum turns a quarter turn, and the signature is reversed. The two readings read two different elements, and that is why the switch is a construction and not a relabel.
+
+The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients the switch is exact for the gradient, with $\tilde\nabla|_{\mathbb{B}_{\Phi}}$ anti-Hermitian and $i\tilde\nabla|_{\mathbb{B}_{\Phi}}$ Hermitian, and the two charts' gradients are related through the quaternion conjugate, $i\tilde\nabla^{\natural}|_{\mathbb{B}_{\Phi}}=\tilde\nabla|_{\mathbb{B}_{\Psi}}$. The d'Alembertian negates, $\Box|_{\mathbb{B}_{\Psi}}=-\Box|_{\mathbb{B}_{\Phi}}$, and both operators stay hyperbolic. At the level of an action the class is not inherited: $(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla$, which is $-\tilde\nabla\tilde X$ only for a Hermitian element that commutes with the operator.
+
+The three instances promised in the introduction are the element and its observable, where the switched four-momentum has a real energy coefficient and a real spectrum; the gradient, where the coefficients change class; and the Schrödinger equation, whose two writings name an observable and a generator and differ by the switch and one real rescaling. The quantum commutator, the interaction insertion and the thermal weight are three further instances, and each shows the switch supplying a real structure that a real coefficient needs.
+
+The Wick rotation is the neighbouring map and it is not this one. It multiplies one coefficient by $-i$, its image is the definite slice, it is not multiplicative, and it is available only where the continued quantity is analytic. The switch multiplies four coefficients, its image is the indefinite sector, it is multiplicative, and it is available always. The Wick rotation buys a convergent integral and changes the object; the switch buys a second exact reading and changes nothing a prediction depends on.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+| --- | --- |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | anti-Hermitian material sector and Hermitian informational sector |
+| material reading | the reading of an element of $\mathbb{B}_{\Phi}$ |
+| informational reading | the reading of an element of $\mathbb{B}_{\Psi}$ |
+| Phy–Psy switch | multiplication of the whole element by the central $i$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ |
+| $\tilde Q_\Phi\leftrightarrow\tilde Q_\Psi$, $\tilde Q_\Psi=i\tilde Q_\Phi$ | an element and its switched partner, one in each sector |
+| $\tilde R_\Phi=i r'_t\,e_t+\vec r$ | a material element, imaginary time and real space |
+| $\tilde R_\Psi=r_t\,e_t+i\vec r$ | an informational element, real time and imaginary space |
+| $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\tilde Q$ | the trace, twice the scalar part |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the determinant, the interval |
+| $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |
+| $\lambda_{\pm}$ | the eigenvalue pair, imaginary on $\mathbb{B}_{\Phi}$ and real on $\mathbb{B}_{\Psi}$ |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | the gradient, its quaternion conjugate, and $\Box=\tilde\nabla\tilde\nabla^{\natural}$ |
+| $\tilde G_\Phi=-\frac{i}{\hbar c}\tilde R_\Psi$ | the generator, the switched observable of the Schrödinger equation |
+| $\tilde P_\Phi=i(E/c)e_t+\vec p$ | the four-momentum, material reading |
+| $\Rho=imc$ | the mass as a central element, imaginary in the material reading and real after the switch |
+| $\tilde{Ϛ}_\Psi$ | a state, informational reading, the corpus's trace-one normalisation |
+| $W=\mathrm{diag}(-i,1,1,1)$ | the Wick coefficient map, on the time slot only |
+
+## Further Reading
+
+- [The Two Sectors: Split and the Four Bridges](the-two-sectors-split-and-the-four-bridges.html), for the split, the four conjugations, the central $i$ as a bijection and a relational clock, and the boundary that no congruence crosses.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the interval, the Lorentz action and the observable representative $i\tilde Q$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the positive cone, the real spectrum and the Born pairing.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the positive cone as the image of the causal cone and the two faces of one quadratic space.
+- [Energy and Information: Four Conservation Laws from One Identity](energy-and-information-four-conservation-laws-from-one-identity.html), for the trace and the norm read in the two sectors, and for the pair of discriminants.
+- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the two writings, the uniqueness of the scalar imaginary and the missing transformation law.
+- [The Polar Form of the Schrödinger Equation in Biquaternionic Form](the-polar-form-of-the-schrodinger-equation-in-biquaternionic-form.html), for the state in the minimal left ideal and the density as the Hermitian norm.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the negative result that the sector split gives two $i$-related copies and not a particle–antiparticle pair.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator of two observables as a rotation generator and the real structure constants.
+- [The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure](the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html), for the two insertions on opposite sides of the split and the explicit $i$ of the Hermitian Lagrangian.
+- [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), and [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the wave element $i\omega_n e_t+\vec p$ and the Hermitian weight.
+- [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for $W=\mathrm{diag}(-i,1,1,1)$, its square as the time reflection, and the two reality conditions.
+- [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), for $e_t=1$ and the two temporal coefficients.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), §*The Hermitian and Anti-Hermitian Subspaces*, for the switch and the two readings as conventions.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), §*The Gradient*, for the operator's two sector lines and the sign pattern of the second derivatives.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the sectors, the conjugations and the trace.

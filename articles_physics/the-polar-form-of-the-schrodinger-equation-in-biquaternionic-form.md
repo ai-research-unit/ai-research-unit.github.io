@@ -97,7 +97,7 @@ $$
 \langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural},
 $$
 
-and $\langle\tilde Q\rangle_{\natural}$ is a unit of the centre at every $t'$. Hence $\langle\tilde\Xi\rangle_{\natural}$ vanishes at one time exactly when it vanishes at every time, and the word's domain is an invariant set. $\square$
+and $\langle\tilde Q\rangle_{\natural}$ is a unit of the centre at every $t'$. Hence $\langle\tilde\Xi\rangle_{\natural}$ vanishes at one time exactly when it vanishes at every time, and the word's domain is an invariant set.
 
 **What that means in practice.** A field that is a unit at $t'=0$ is a unit at every $t'$, and the word exists for all time. A field on the cone at $t'=0$ never leaves it, and the word exists at no time. There is no crossing, and no field drifts into or out of the domain. This was checked directly: a hundred random fields were evolved and $|\langle\tilde\Xi\rangle_{\natural}|$ was constant to $10^{-7}$ relative in every case.
 
