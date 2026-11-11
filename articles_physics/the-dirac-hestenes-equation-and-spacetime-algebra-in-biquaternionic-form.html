@@ -72,14 +72,14 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>Spacetime algebra</strong> (STA) is the real algebra $\mathrm{Cl}_{1,3}(\mathbb R)$ of Minkowski space. David Hestenes and others use it as a coordinate-free language for relativistic physics, written in the algebra itself and never in an array. In STA the Dirac equation becomes one real equation for a field of the algebra,</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0 ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0 ,
 $$</p>
 <p>where $\tilde\nabla_\Phi$ is the corpus gradient, $\tilde{Ξ}_{\mathrm{sp}}$ is an <strong>even element</strong>, $\omega=-\vec e_z$ is the source's imaginary unit with $\omega^2=-e_t$, and $v_0$ is a fixed timelike vector with $v_0^2=+1$. The equation is real: no complex number is introduced beyond the coefficients, no array is used, and the imaginary unit of the four-component equation of the older literature is replaced, on the field, by right multiplication by the fixed element $\omega$. Hestenes reads $\tilde{Ξ}_{\mathrm{sp}}$ as a rotation times a density, so the eight real components of the field are the six parameters of a rotation plus a density and an angle. The electron's spin is then a geometric rotation, and the current is a geometric vector. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
-<p><strong>Every derivative in this article is the corpus gradient</strong>, cited and not restated. The gradient, its conjugate and its scalar square $\Box$ are fixed once for the series in <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, and the article adds no second derivative of its own. A free equation is therefore first order in one field, $\tilde\nabla\tilde F=0$; a mass is carried by the chiral pair</p>
+<p><strong>Every derivative in this article is the corpus gradient</strong>, cited and not restated. The gradient, its conjugate and its scalar square $\Box$ are fixed once for the series in <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, and the article adds no second derivative of its own. A free equation is therefore first order in one field, $\tilde\nabla_\Phi\tilde F=0$; a mass is carried by the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>which is the corpus's own equation; and no one-field first-order massive equation is written here, because the gradient cannot supply one.</p>
 <p>The connection to the biquaternion framework is closer than for any other topic in this series. The <strong>even part</strong> of the spacetime algebra is, as a real algebra, the <strong>biquaternion algebra</strong> $\mathbb{B}=\mathbb{C}\otimes_\mathbb R\mathbb H$ of the companion articles. The field $\tilde{Ξ}_{\mathrm{sp}}$ is an even element; it <em>is</em> an element of $\mathbb B$, with the same eight real components as the framework's field. The source's letters are kept, and their values are fixed once and used throughout: the spin plane that multiplies the field is $\omega=-\vec e_z$ with $\omega^2=-e_t$, an element of $\mathbb B$, and the fixed timelike vector is $v_0$, with $v_0^2=+1$, an odd element that $\mathbb B$ does not contain. The pseudoscalar of the spacetime algebra is central on the even part and of square $-e_t$: it is the corpus's central imaginary $i$, and the two are one element. The spin plane is not: it anticommutes with $\vec e_x$ and $\vec e_y$, commutes with $\vec e_z$ and $e_t$, and acts on the two parts of the field as $\mp i$. The central $i$ therefore stays free, and the imaginary unit of the equation is the spin plane and not the centre of $\mathbb B$. The Dirac–Hestenes equation and the framework's equation are two readings of the same algebra, and this article identifies where they agree and where they do not.</p>
@@ -151,7 +151,7 @@ $$</p>
 <h3 id="the-equation">The equation</h3>
 <p>Hestenes' form of the Dirac equation for an electron in an electromagnetic four-potential $A=\sum_{\mu=0}^{3}A_\mu v_\mu$ is the source's own equation, written here with the corpus's gradient and the source's letters:</p>
 <p>$$
-\boxed{\;\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0\;},
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0\;},
 \qquad
 \omega=-\vec e_z,\qquad
 \omega^2=-e_t,\qquad
@@ -164,7 +164,7 @@ A\mapsto R A\tilde R_\Phi,\qquad
 v_\mu\mapsto Rv_\mu\tilde R_\Phi,\qquad
 R\tilde R_\Phi=e_t,
 $$</p>
-<p>with $\tilde R_\Phi$ the reverse of the rotor. The frame is rotated with the field, so that the gradient transforms as $\tilde\nabla\mapsto R\tilde\nabla\tilde R_\Phi$ and the derivative term of the transformed equation is the rotor times the original one.</p>
+<p>with $\tilde R_\Phi$ the reverse of the rotor. The frame is rotated with the field, so that the gradient transforms as $\tilde\nabla_\Phi\mapsto R\tilde\nabla_\Phi\tilde R_\Phi$ and the derivative term of the transformed equation is the rotor times the original one.</p>
 <h3 id="the-four-component-equation-of-the-older-literature">The four-component equation of the older literature</h3>
 <p>The four-component equation is the same equation read on a carrier of four components instead of on the algebra, and the passage between the two replaces each object of the algebra by the array of its action. Three arrays carry the whole of the difference: the array of the volume element, which the older display prints multiplied by the central $i$; the array of the chirality; and the array of the time direction, which is the mass's right factor read as a carrier. The two right multiplications of this article, by $\omega$ and by $v_0$, are those same objects in the algebra's own terms, and no fourth object is needed. The corpus fixes the display once, in <em>Conventions of the Matrix Models</em>, and a reader who needs an array finds it there; this article prints none, because the equation on the algebra is the same equation and carries every object of it as an element.</p>
 <p>What survives the change of display is what the next subsection uses. The current, the spin density and the rotation are elements with a geometric meaning and not entries of an array, and the equation's right factors are elements of the algebra: the spin plane and the odd $v_0$. Those are the objects the corpus's own equation does not have, and they are the reason the two equations are compared at all.</p>
@@ -193,9 +193,9 @@ $$</p>
 <h3 id="the-one-sided-equation">The one-sided equation</h3>
 <p>The corpus's own equation is the <strong>chiral pair</strong></p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>in which the gradient multiplies each chirality part of the field on the left, and the mass pairs the two parts across. The field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb B$ with the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$: the subscript is the chirality, the $L$ part the minus value and the $R$ part the plus value, and the convention that fixes it, together with the frame it depends on, is stated once in <em>Conventions of the Special Elements</em>, §<em>The Chirality Convention</em>. The operator is one-sided, and the two lines are the two parts of the field.</p>
 <h3 id="the-two-sided-equation">The two-sided equation</h3>
@@ -223,8 +223,8 @@ $$</p>
 <tbody>
 <tr>
 <td>Equation</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0$</td>
 <td>$\mathcal NF=0$, with $\mathcal N$ as displayed</td>
 </tr>
 <tr>
@@ -235,9 +235,9 @@ $$</p>
 </tr>
 <tr>
 <td>Derivative</td>
-<td>left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$</td>
-<td>left, by $\tilde\nabla$</td>
-<td>left, by $\tilde\nabla$ with the $Q_t$ derivative reversed</td>
+<td>left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$</td>
+<td>left, by $\tilde\nabla_\Phi$</td>
+<td>left, by $\tilde\nabla_\Phi$ with the $Q_t$ derivative reversed</td>
 </tr>
 <tr>
 <td>Right factors</td>
@@ -274,14 +274,14 @@ $$</p>
 \qquad
 E=\exp\bigl(e\alpha(r_x)\,\omega\bigr),
 \qquad
-eA\mapsto eA-\tilde\nabla\alpha ,
+eA\mapsto eA-\tilde\nabla_\Phi\alpha ,
 $$</p>
 <p>a <strong>right</strong> multiplication by the phase factor, accompanied by the gauge transformation of the potential, with $e$ the charge coupling constant of the equation. The side is forced by the equation: the phase must reach the derivative on the same side as the spin plane. The derivative term produces</p>
 <p>$$
 \tilde\nabla_\Phi(\tilde{Ξ}_{\mathrm{sp}} E)\,\omega
-=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})\,\omega E-e(\tilde\nabla\alpha)\,\tilde{Ξ}_{\mathrm{sp}} E ,
+=(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})\,\omega E-e(\tilde\nabla_\Phi\alpha)\,\tilde{Ξ}_{\mathrm{sp}} E ,
 $$</p>
-<p>because $\partial E/\partial R_\mu=e(\partial \alpha/\partial R_\mu)\,\omega E$, because $E$ commutes with $\omega$, and because $\omega^2=-e_t$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\tilde\nabla\alpha)\tilde{Ξ}_{\mathrm{sp}} E$, and the two cancel. The mass term is invariant as well, and this the source states in the spacetime algebra, where the phase generator is the spin plane and commutes with the vector $v_0$. A <strong>left</strong> multiplication by the phase does not work: it puts $\tilde\nabla\alpha$ between $\omega$ and $\tilde{Ξ}_{\mathrm{sp}}$, where no rearrangement removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.</p>
+<p>because $\partial E/\partial R_\mu=e(\partial \alpha/\partial R_\mu)\,\omega E$, because $E$ commutes with $\omega$, and because $\omega^2=-e_t$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\tilde\nabla_\Phi\alpha)\tilde{Ξ}_{\mathrm{sp}} E$, and the two cancel. The mass term is invariant as well, and this the source states in the spacetime algebra, where the phase generator is the spin plane and commutes with the vector $v_0$. A <strong>left</strong> multiplication by the phase does not work: it puts $\tilde\nabla_\Phi\alpha$ between $\omega$ and $\tilde{Ξ}_{\mathrm{sp}}$, where no rearrangement removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.</p>
 <h3 id="the-discrete-symmetries">The discrete symmetries</h3>
 <p>The discrete operations are not all of one kind, and they are not the right multiplications of the equation. The corpus's operations are</p>
 <p>$$
@@ -350,7 +350,7 @@ $$</p>
 <h3 id="the-space-algebra-formulation-and-the-equivalence-of-the-three">The space-algebra formulation and the equivalence of the three</h3>
 <p>The STA formulation is one of three equivalent real rewritings of Dirac theory that the series records; the other two are the corpus's biquaternion chiral pair and the space formulation of Daviau, which writes the equation on the full algebra of physical space with a conjugation in the mass term. The equation is the companion article's:</p>
 <p>$$
-\tilde\nabla\xi\,\omega_1=m\xi^{*}+qA\xi ,
+\tilde\nabla_\Phi\xi\,\omega_1=m\xi^{*}+qA\xi ,
 $$</p>
 <p>where $\xi$ is an element of the algebra on the same eight real parameters, $\omega_1=-\vec e_x$ is the fixed unit of that equation — the spin plane taken along the first spatial direction — $\xi^{*}$ is the star of that article, a conjugation composed with a two-sided multiplication by a fixed unit, $q$ is the charge as that article writes it, and the gradient is cyclically permuted over the space directions. The charge $q$ is $-e$ in the sign convention of the equation above, and the mass enters with the opposite sign. The three formulations are related by the sign of the mass, a cyclic relabelling of the space directions, and the star. In particular the Dirac–Hestenes equation is Parra's option $\{2\}$ and the Daviau equation is Parra's option $\{1\}$, two of the four inequivalent sign conventions of one equation, permuted by the discrete group $\Gamma_{1,3}/\Gamma^+_{1,3}$. The details, the dictionary and the equivalence are in the two companion articles.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -377,10 +377,10 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Spacetime algebra is the real algebra $\mathrm{Cl}_{1,3}(\mathbb R)$ of Minkowski space, and the Dirac–Hestenes equation</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0
 $$</p>
 <p>is the Dirac equation rewritten in it as one real equation for an even element. The field has eight real components; it decomposes as $\tilde{Ξ}_{\mathrm{sp}}=\sqrt{\rho}\,e^{i\theta/2}R$ into a rotation, a density and an angle; and the current is the geometric vector $J=\tilde{Ξ}_{\mathrm{sp}} v_0\tilde{Ξ}_{\mathrm{sp}}$. The older four-component display is the same equation read on a carrier of four components, and it is fixed once in <em>Conventions of the Matrix Models</em>; this article prints no array.</p>
-<p>The corpus carries two Dirac equations, and the Dirac–Hestenes equation is a third form placed against both. The <strong>one-sided chiral pair</strong> $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ carries the field in its two parts. <strong>Kravchenko's two-sided equation</strong> $\mathcal NF=0$ carries the derivative on the left, the mass on the right through $\vec e_z$, and a conjugation in the mass term. The Dirac–Hestenes equation carries the derivative on the left and the spin plane and the mass on the right, and it is the STA face of the chiral equation, not a rewriting of Kravchenko's.</p>
+<p>The corpus carries two Dirac equations, and the Dirac–Hestenes equation is a third form placed against both. The <strong>one-sided chiral pair</strong> $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ carries the field in its two parts. <strong>Kravchenko's two-sided equation</strong> $\mathcal NF=0$ carries the derivative on the left, the mass on the right through $\vec e_z$, and a conjugation in the mass term. The Dirac–Hestenes equation carries the derivative on the left and the spin plane and the mass on the right, and it is the STA face of the chiral equation, not a rewriting of Kravchenko's.</p>
 <p>The correspondence with the biquaternion framework is the closest in this series and is exact at the level of the algebra: the even part of $\mathrm{Cl}_{1,3}$ is the biquaternion algebra $\mathbb C\otimes_\mathbb R\mathbb H$, so the field $\tilde{Ξ}_{\mathrm{sp}}$ <em>is</em> a biquaternion with the framework's eight real components. The equation's imaginary unit is not the corpus's central $i$: it is the spin plane $\omega=-\vec e_z$, of square $-e_t$, which anticommutes with $\vec e_x$ and $\vec e_y$ and acts as $\mp i$ on the two parts of the field, so the central $i$ stays free. The equation's two characteristic features — the <strong>right</strong> action of the spin plane and of the mass, and the <strong>odd</strong> $v_0$ that carries the mass and the current, an element the even algebra does not contain — are exactly the structures the framework's companion articles flag as subtle, the left-versus-right matter representation and the odd element the current requires. The equation's gauge phase acts on the right, with the spin plane, while the derivative acts on the left; that is the answer the standard formulation gives to the representation question. The Dirac–Hestenes equation is an equivalent rewriting and carries no new prediction, but it is the standard formulation in which the structures behind the framework's open questions are explicit in the language of the full spacetime algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -400,7 +400,7 @@ $$</p>
 <td>Pseudoscalar of the spacetime algebra; square $-1$, central on the even part, the corpus's central $i$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$</td>
+<td>$\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$, $\Box$</td>
 <td>Corpus gradient, its conjugate, and the scalar square; cited to <em>Operator and Calculus Conventions</em></td>
 </tr>
 <tr>

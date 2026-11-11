@@ -173,7 +173,7 @@ $$</p>
 \boxed{\;\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha\;}
 \qquad\text{for}\qquad \tilde{Ξ}_{\mathrm{sp},2} = \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} .
 $$</p>
-<p>This is the transformation law of an <strong>abelian gauge connection</strong>. It is the same law as the electromagnetic gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ of <em>The Gauge Principle in Biquaternionic Form</em>, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.</p>
+<p>This is the transformation law of an <strong>abelian gauge connection</strong>. It is the same law as the electromagnetic gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ of <em>The Gauge Principle in Biquaternionic Form</em>, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.</p>
 <h3 id="why-the-analogy-is-structural-and-not-decorative">Why the Analogy Is Structural and Not Decorative</h3>
 <p>The gauge-principle article derives its abelian connection from a precise algebraic object: the <strong>centre</strong> $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ it localizes is a <strong>central $*$-unitary element</strong>. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,</p>
 <p>$$
@@ -211,12 +211,12 @@ $$</p>
 </tr>
 <tr>
 <td>Transformation</td>
-<td>$\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$</td>
+<td>$\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$</td>
 <td>$\mathcal{A}_2 = \mathcal{A} - d\alpha$</td>
 </tr>
 <tr>
 <td>Curvature</td>
-<td>$\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right)$, $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$</td>
+<td>$\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right)$, $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$</td>
 <td>$\mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu$</td>
 </tr>
 </tbody>
@@ -431,7 +431,7 @@ $$</p>
 \qquad
 \mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$</p>
-<p>The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact <strong>analogy of gauge type</strong>, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.</p>
+<p>The structure group is the $*$-unitary part of the centre $\mathbb{B}_{C}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The relation between the two connections is an exact <strong>analogy of gauge type</strong>, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.</p>
 <p>On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\theta_{\mathrm{azm}}$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$, and both routes give $\gamma_+ = -\theta_{\mathrm{sol}}/2$ for every $\theta_0$, where $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a <strong>closed</strong> surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.</p>
 <p>The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{B}_{\Psi}$, that the connection and the Born rule come from one plain form, read as the trace pairing, that the connection requires the spinor rather than the density matrix, and that the $\mathrm{U}(1)$ of the phase is the centre of the algebra rather than an imported group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -544,7 +544,7 @@ $$</p>
 <td>The three cross-sections: continuous eigenvalue branch, continuous $k$-plane selection, nowhere-zero eigenvector field</td>
 </tr>
 <tr>
-<td>$\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$</td>
+<td>$\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$</td>
 <td>Gauge-principle connection and its transformation (for contrast)</td>
 </tr>
 </tbody>

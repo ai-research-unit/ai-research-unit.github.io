@@ -76,7 +76,7 @@
 $$</p>
 <p>with $w_{\mathrm{fl}}$ the energy density and $\vec S_{\mathrm P}$ the energy flux. Its scalar part is the energy density. Its quaternionic norm is the difference between the square of the energy density and the square of the flux over $c$, so the norm is the dominant-energy condition. Its scalar divergence is the energy law. And when the field is written in amplitude and phase, the part of the energy density that carries the quantum potential integrates to a positive quantity, the squared logarithmic gradient of the density. That last statement is the precise content of "the quantum potential is the divergence of the quantum stress".</p>
 <p>The derivation of the tensor is not repeated here. The canonical energy–momentum tensor of the translation current is derived in <a href="noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a>, and the field-theoretic tensor with its positive energy density, its improvement and its conservation is derived in <a href="stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a>. Both are cited and neither is reproduced. What this article adds is the element, its $\natural$ reading, its polar decomposition, and the negative claim of the closing sections: the quantum stress is not a thermal pressure.</p>
-<p>The polar variables are those of <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein–Gordon Equation in Biquaternionic Form</a>. The field is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real, the four-momentum is $\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi}$, the four-velocity is $\tilde V_{\Phi}=\tilde P_{\Phi}/m$, and the quantum potential is</p>
+<p>The polar variables are those of <a href="the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein–Gordon Equation in Biquaternionic Form</a>. The field is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real, the four-momentum is $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, the four-velocity is $\tilde V_{\Phi}=\tilde P_{\Phi}/m$, and the quantum potential is</p>
 <p>$$
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 \qquad
@@ -87,7 +87,7 @@ $$</p>
 <ul>
 <li><strong>The element exists and is Hermitian.</strong> Four real numbers enter it — one energy density and three flux components — and they are the four that the algebra can carry. The remaining six components of the symmetric tensor are not lost; they are simply not in this object, which is why <a href="noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a> writes the full tensor as a bigeneral bilinear and calls the element its energy–flux part.</li>
 <li><strong>The $\natural$ norm is the energy condition.</strong> $\langle\tilde\Sigma_\Psi\rangle_{\natural}=w_{\mathrm{fl}}^{2}-\lvert\vec S_{\mathrm P}\rvert^{2}/c^{2}$, which is non-negative exactly when the flux does not exceed $c$ times the energy density. A single traveling wave saturates it and lies on the zero-divisor cone.</li>
-<li><strong>The energy law is one scalar divergence.</strong> $\mathrm{Sc}(\tilde\nabla\tilde\Sigma_\Psi)=-i\left[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\nabla\cdot\vec S_{\mathrm P}\right]$, and the bracket vanishes on shell.</li>
+<li><strong>The energy law is one scalar divergence.</strong> $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_\Psi)=-i\left[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\nabla\cdot\vec S_{\mathrm P}\right]$, and the bracket vanishes on shell.</li>
 <li><strong>The quantum part of the energy is a divergence plus a positive square.</strong> Pointwise it is indefinite in sign; in the total of a static localised state it is positive and equals the squared logarithmic gradient of the density, up to the factor the logarithm carries.</li>
 </ul>
 <h2 id="why-the-stress-is-an-element">Why the Stress Is an Element</h2>
@@ -169,10 +169,10 @@ $$</p>
 <h3 id="the-energy-law-is-one-scalar-divergence">The energy law is one scalar divergence</h3>
 <p><strong>The divergence of the element is the energy law, up to the factor $i$ that the temporal slot carries.</strong> With $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and $\partial/\partial R_t=-i\partial/\partial r'_t$, $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,</p>
 <p>$$
-\tilde\nabla\tilde\Sigma_\Psi
+\tilde\nabla_\Phi\tilde\Sigma_\Psi
 =e_t\frac{\partial\tilde\Sigma_\Psi}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde\Sigma_\Psi}{\partial r_\eta},
 \qquad
-\mathrm{Sc}\!\left(\tilde\nabla\tilde\Sigma_\Psi\right)
+\mathrm{Sc}\!\left(\tilde\nabla_\Phi\tilde\Sigma_\Psi\right)
 =-i\left[\frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\nabla\cdot\vec S_{\mathrm P}\right].
 $$</p>
 <p><em>Proof.</em> The temporal term contributes $-i\,e_t\partial_{r'_t}$ acting on $w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$. Its scalar part is $-i\partial w_{\mathrm{fl}}/\partial r'_t$, and the term in $\vec S_{\mathrm P}$ is a vector because $e_t\vec e_\eta=\vec e_\eta$. The three spatial terms have scalar parts $-(i/c)\partial_\eta S_{\mathrm P,\eta}\,\vec e_\eta\vec e_\eta$, and $\vec e_\eta\vec e_\eta=-e_t$, so each contributes $+(i/c)\partial_\eta S_{\mathrm P,\eta}$. The sum is the bracket times $-i$.</p>
@@ -313,11 +313,11 @@ $$</p>
 <td>The one metric, all four coefficients $+1$; the index stays low</td>
 </tr>
 <tr>
-<td>$\tilde\nabla$</td>
+<td>$\tilde\nabla_\Phi$</td>
 <td>Biquaternionic gradient, $e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$</td>
 </tr>
 <tr>
-<td>$\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>$\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$</td>
 <td>d'Alembertian; $\Delta-\partial^{2}/\partial{r'_{t}}^{2}$ on the material sector</td>
 </tr>
 <tr>

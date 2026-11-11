@@ -72,11 +72,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>The gauge principle in biquaternionic form localizes the central phase of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ and finds that the price of locality is a connection. Under a gauge function $\Gamma$ the connection transforms as</p>
 <p>$$
-\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma,
+\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 $$</p>
-<p>and the field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ is unchanged. Two potentials related by such a shift are not two physical configurations; they are two descriptions of one. The set of descriptions of a single configuration,</p>
+<p>and the field strength $\tilde{F} = \mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ is unchanged. Two potentials related by such a shift are not two physical configurations; they are two descriptions of one. The set of descriptions of a single configuration,</p>
 <p>$$
-\mathcal{O}(\tilde{A}_{\Phi}) = \bigl\{\tilde{A}_{\Phi} - \tilde{\nabla}\Gamma : \Gamma \ \text{a real scalar function}\bigr\},
+\mathcal{O}(\tilde{A}_{\Phi}) = \bigl\{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma : \Gamma \ \text{a real scalar function}\bigr\},
 $$</p>
 <p>is the <strong>gauge orbit</strong> of $\tilde{A}_{\Phi}$. This article asks what the gauge orbit is, information-theoretically, and answers that the orbit is a <strong>redundancy</strong> rather than a loss: it is the fibre of the map from descriptions to physical configurations, it carries no state information, and every information measure of the theory is constant along it. What the orbit does carry is structure rather than state, and that structure is exactly what the holonomy of the connection records.</p>
 <p>The distinction this article draws is worth setting out at the start, because two neighbours in the subcategory depend on it. Three operations must be kept apart:</p>
@@ -88,25 +88,25 @@ $$</p>
 <p>The biquaternion framework makes the first of the three exact, because the abelian gauge group it localizes is the $*$-unitary part of the centre of the algebra: the redundancy is the unobservability of a central phase, and a central phase acts trivially on the informational sector. The orbit is therefore not merely "unobservable" in a practical sense; it is invisible to every Hermitian observable the algebra carries. The framework also realizes the compact algebra $\mathrm{SU}(2)$ in its sectors, and the non-abelian orbit — the adjoint orbit, for which the same triviality does not hold — is treated in the companions and recorded as an open item below.</p>
 <p>The article proceeds as follows. The orbit is defined and its structure as a torsor is established. The orbit is then identified as the fibre of the curvature map, and the counting of physical degrees of freedom is extracted from the rank of that map. The information-theoretic invariance of the orbit is proved through the relative entropy, and the central triviality of the abelian phase is exhibited. The global information of the orbit — its holonomy — is then separated from its local emptiness. A comparison of redundancy, loss and relocation sets the article against its two companions. A closing ledger states what the algebra supplies and what it only transcribes.</p>
 <p>$$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta = \Delta + \partial^2/\partial R_t^2 ,
+\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta = \Delta + \partial^2/\partial R_t^2 ,
 $$</p>
-<p>the series convention. The connection is $\tilde{A}_{\Phi} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa =\frac{ϙ}{\hbar}$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}_{\Phi}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.</p>
+<p>the series convention. The connection is $\tilde{A}_{\Phi} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$, with $A_0 = i\,a'_t$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa =\frac{ϙ}{\hbar}$, so that $D = \tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}$ and $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.</p>
 <h2 id="the-gauge-orbit-as-a-torsor">The Gauge Orbit as a Torsor</h2>
 <p>The set $\mathcal{O}(\tilde{A}_{\Phi})$ is the image of the map</p>
 <p>$$
-\mathcal{G} \longrightarrow \mathbb{B}, \qquad \Gamma \longmapsto \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma,
+\mathcal{G} \longrightarrow \mathbb{B}, \qquad \Gamma \longmapsto \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 $$</p>
 <p>where $\mathcal{G}$ is the abelian group of real scalar functions on spacetime with the pointwise addition. Two elementary facts fix the shape of the orbit.</p>
-<p><strong>The map is affine, and its linear part is injective modulo constants.</strong> Suppose $\tilde{\nabla}\Gamma = 0$. In components,</p>
+<p><strong>The map is affine, and its linear part is injective modulo constants.</strong> Suppose $\tilde\nabla_\Phi\Gamma = 0$. In components,</p>
 <p>$$
-\tilde{\nabla}\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \vec e_x\,\partial/\partial R_x\Gamma + \vec e_y\,\partial/\partial R_y\Gamma + \vec e_z\,\partial/\partial R_z\Gamma = 0
+\tilde\nabla_\Phi\Gamma = e_t\,\partial/\partial R_t\,\Gamma + \vec e_x\,\partial/\partial R_x\Gamma + \vec e_y\,\partial/\partial R_y\Gamma + \vec e_z\,\partial/\partial R_z\Gamma = 0
 $$</p>
-<p>forces every partial derivative of $\Gamma$ to vanish, so $\Gamma$ is constant. The kernel of $\Gamma \mapsto \tilde{\nabla}\Gamma$ is therefore the one-dimensional space of constants, and the group that acts freely and transitively on the orbit is $\mathcal{G}$ modulo those constants. The orbit is a copy of that group:</p>
+<p>forces every partial derivative of $\Gamma$ to vanish, so $\Gamma$ is constant. The kernel of $\Gamma \mapsto \tilde\nabla_\Phi\Gamma$ is therefore the one-dimensional space of constants, and the group that acts freely and transitively on the orbit is $\mathcal{G}$ modulo those constants. The orbit is a copy of that group:</p>
 <p>$$
 \boxed{\;\mathcal{O}(\tilde{A}_{\Phi}) \;\cong\; \mathcal{G}\big/\mathbb{R}\;}.
 $$</p>
 <p>A space on which a group acts freely and transitively is a <strong>torsor</strong>: it is a copy of the group, but with no distinguished identity point. There is no preferred member of the orbit — no "the" connection — because singling one out would require a gauge-fixing condition, and the canonical-quantization article of the series records that the framework supplies none.</p>
-<p><strong>The orbit is convex, and its tangent space is the space of gradients.</strong> Because $\Gamma$ ranges over all real scalar functions, the orbit is an affine subspace of the (infinite-dimensional) space of $\mathbb{B}$-valued one-forms, translated from the origin by $\tilde{A}_{\Phi}$. Its tangent space at any point is the same: the image of the linear map $\Gamma \mapsto -\tilde{\nabla}\Gamma$, which consists of the <strong>pure gradients</strong>.</p>
+<p><strong>The orbit is convex, and its tangent space is the space of gradients.</strong> Because $\Gamma$ ranges over all real scalar functions, the orbit is an affine subspace of the (infinite-dimensional) space of $\mathbb{B}$-valued one-forms, translated from the origin by $\tilde{A}_{\Phi}$. Its tangent space at any point is the same: the image of the linear map $\Gamma \mapsto -\tilde\nabla_\Phi\Gamma$, which consists of the <strong>pure gradients</strong>.</p>
 <p>These two facts are the whole geometry of the orbit: it is a flat affine space modelled on the gradients, on which the gauge group acts simply transitively once the constants are removed.</p>
 <h3 id="the-orbit-in-fourier-space">The Orbit in Fourier Space</h3>
 <p>The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_{t}^{\prime},k_1,k_2,k_3)$ on the $i r'_t$ coordinates, so that a gradient acts as left multiplication by $iK$ with</p>
@@ -116,9 +116,9 @@ $$</p>
 <p>A pure-gauge mode with real scalar amplitude $g$ contributes $iKg$, so its image is the <strong>real line spanned by $iK$</strong> inside the four-dimensional fibre. The linear map from gauge functions to connections therefore has rank one per mode (rank zero only for the constant mode $k = 0$, on which there is no gauge freedom). This was checked numerically: for generic wavevectors and a generic real amplitude, the four ratios of the components of $iKg$ to those of $K$ agreed to $2\times10^{-16}$.</p>
 <p>The rank is the count of gauge directions per mode, and subtracting it from the four components of the connection gives the count of physical directions. That count is taken up in the next section.</p>
 <h3 id="the-orbit-and-the-covariant-derivative">The Orbit and the Covariant Derivative</h3>
-<p>The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}_{\mathrm{sp}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}_{\Phi}$, and under the gauge function $\Gamma$ both the connection and the field shift together,</p>
+<p>The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{Ξ}_{\mathrm{sp}}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}$, and under the gauge function $\Gamma$ both the connection and the field shift together,</p>
 <p>$$
-\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma,
+\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 \qquad
 \tilde{Ξ}_{\mathrm{sp},2} = \lambda\tilde{Ξ}_{\mathrm{sp}},
 \qquad
@@ -126,47 +126,47 @@ $$</p>
 $$</p>
 <p>The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:</p>
 <p>$$
-D_2\tilde{Ξ}_{\mathrm{sp},2} = \left(\tilde{\nabla} + i\kappa\tilde{A}_{\Phi} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp}}
-= \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}_{\Phi}\right)\tilde{Ξ}_{\mathrm{sp}}
+D_2\tilde{Ξ}_{\mathrm{sp},2} = \left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi} - i\kappa\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp}}
+= \lambda\left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi}\right)\tilde{Ξ}_{\mathrm{sp}}
 = \lambda\,D\tilde{Ξ}_{\mathrm{sp}},
 $$</p>
-<p>the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = (\tilde{\nabla}\lambda)\tilde{Ξ}_{\mathrm{sp}} + \lambda\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp}}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,</p>
+<p>the middle step using that $\lambda$ is central, so that $\tilde\nabla_\Phi(\lambda\tilde{Ξ}_{\mathrm{sp}}) = (\tilde\nabla_\Phi\lambda)\tilde{Ξ}_{\mathrm{sp}} + \lambda\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}$ and $(\tilde\nabla_\Phi\lambda) = i\kappa(\tilde\nabla_\Phi\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,</p>
 <p>$$
 D_2 = \lambda\,D\,\lambda^{-1}.
 $$</p>
 <p>This is the algebraic content of the redundancy: the pair $(\tilde{A}_{\Phi},\tilde{Ξ}_{\mathrm{sp}})$ and the pair $(\tilde{A}_{\Phi,2},\tilde{Ξ}_{\mathrm{sp},2})$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{Ξ}_{\mathrm{sp}}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.</p>
 <p>Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism of the algebra is the identity, and the transformation acts on the pair $(\tilde{A}_{\Phi},\tilde{Ξ}_{\mathrm{sp}})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.</p>
 <h2 id="the-orbit-is-the-fibre-of-the-curvature-map">The Orbit Is the Fibre of the Curvature Map</h2>
-<p>The curvature does not depend on which member of the orbit is used. Write the field strength as the vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$,</p>
+<p>The curvature does not depend on which member of the orbit is used. Write the field strength as the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$,</p>
 <p>$$
-\tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right),
+\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right),
 $$</p>
 <p>the identification inherited from the gauge principle and the covariant-derivative articles. Under a gauge transformation,</p>
 <p>$$
-\tilde{F}_2 = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi} - \tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma\right)
-= \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) - \mathrm{Vect}\!\left(\Box\Gamma\,e_t\right)
+\tilde{F}_2 = \mathrm{Vect}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi} - (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\Gamma\right)
+= \mathrm{Vect}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right) - \mathrm{Vect}\!\left(\Box\Gamma\,e_t\right)
 = \tilde{F},
 $$</p>
-<p>because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\,e_t$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}_{\Phi}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.</p>
-<p>The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ is the gauge scalar</p>
+<p>because $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\Gamma = \Box\Gamma\,e_t$ is a pure scalar and has no vector part. The orbit is thus the fibre of the map $\tilde{A}_{\Phi}\mapsto\tilde{F}$: on any one orbit, the curvature is constant, and along the orbit nothing but the pure-gauge scalar changes.</p>
+<p>The scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ is the gauge scalar</p>
 <p>$$
-S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A,
+S = \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A,
 \qquad
 S_2 = S - \Box\Gamma ,
 $$</p>
-<p>so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ is the coordinate along the fibre.</p>
-<p>Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = i r'_t$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity</p>
+<p>so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ is the coordinate along the fibre.</p>
+<p>Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = i r'_t$ and no restriction on the mode wavevectors. The vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity</p>
 <p>$$
 \tilde{F} = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,
 \qquad F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu ,
 $$</p>
-<p>was checked against the direct evaluation of $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A}_{\Phi} = -\tilde{\nabla}\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift that carries the member of the orbit with $S = 0$ to this one. For $\tilde{A}_{\Phi} = +\tilde{\nabla}\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi}-\tilde{\nabla}\Gamma$ fixes it.</p>
+<p>was checked against the direct evaluation of $\mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A}_{\Phi} = -\tilde\nabla_\Phi\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift that carries the member of the orbit with $S = 0$ to this one. For $\tilde{A}_{\Phi} = +\tilde\nabla_\Phi\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ fixes it.</p>
 <h3 id="local-triviality-and-the-degree-of-freedom-count">Local Triviality and the Degree-of-Freedom Count</h3>
 <p>Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}_{\Phi}(\tilde{Q}_0)$, with $A_0$ imaginary and $\vec A$ real. Define</p>
 <p>$$
 \Gamma(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} A_\mu\,(x_\mu - x_{0\mu}),
 $$</p>
-<p>treating the $x_\mu$ as independent coordinates. Then $\partial/\partial R_\mu\,\Gamma = A_\mu$, so $\tilde{\nabla}\Gamma = \tilde{A}_{\Phi}(\tilde{Q}_0)$ and the transformed connection $\tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be gauged to zero at any one point, and consequently <strong>no gauge-invariant local function of $\tilde{A}_{\Phi}$ exists</strong>: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial gauge-invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.</p>
+<p>treating the $x_\mu$ as independent coordinates. Then $\partial/\partial R_\mu\,\Gamma = A_\mu$, so $\tilde\nabla_\Phi\Gamma = \tilde{A}_{\Phi}(\tilde{Q}_0)$ and the transformed connection $\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ vanishes at $\tilde{Q}_0$. The connection can therefore be gauged to zero at any one point, and consequently <strong>no gauge-invariant local function of $\tilde{A}_{\Phi}$ exists</strong>: every such function would have to be constant along the orbit, and the orbit passes through zero at the point. The first non-trivial gauge-invariant object is the curvature, and it is the obstruction to extending the elimination from a point to a neighbourhood.</p>
 <p>The count of physical degrees of freedom now follows from the rank of the pure-gauge map.</p>
 <ul>
 <li>The connection has <strong>four real components</strong> per point: the material-sector condition $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$ makes $A_0 = i\,a'_t$ purely imaginary and $A_1, A_2, A_3$ real, so the field carries four real functions, not four complex ones, and its Fourier data is correspondingly four real amplitudes rather than four complex ones.</li>
@@ -182,7 +182,7 @@ $$</p>
 <p>The two parts are the reason the title's phrase needs care. If "the information in the gauge orbit" means the state information that the orbit's many labels purport to describe, the answer is zero. If it means the structural information that the existence of the orbit encodes, the answer is the gauge group and the holonomy, and it is entirely in the orbit's global shape.</p>
 <h2 id="information-theoretic-invariance-of-the-orbit">Information-Theoretic Invariance of the Orbit</h2>
 <p>The claim that the orbit carries no state information can be made exact with the relative entropy, the basic monotone quantity of the informational sector.</p>
-<p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}_{\Phi}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
+<p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}_{\Phi}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
 <p>$$
 \lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar}), \qquad
 \omega_2 = \omega \circ  \mathrm{Ad}_{\lambda^{-1}} .
@@ -299,7 +299,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.</p>
+<p>The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.</p>
 <p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
 <p>$$
 S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi,2}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1}).
@@ -344,7 +344,7 @@ $$</p>
 <td>Quaternion-conjugate gradient</td>
 </tr>
 <tr>
-<td>$\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$</td>
+<td>$\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta$</td>
 <td>d'Alembertian, series convention</td>
 </tr>
 <tr>
@@ -364,7 +364,7 @@ $$</p>
 <td>Coupling</td>
 </tr>
 <tr>
-<td>$\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde{\nabla}\Gamma\}$</td>
+<td>$\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$</td>
 <td>The gauge orbit</td>
 </tr>
 <tr>
@@ -376,11 +376,11 @@ $$</p>
 <td>Wavevector biquaternion of the mode $k = (k_{t}^{\prime},k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$</td>
 </tr>
 <tr>
-<td>$S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$</td>
+<td>$S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A$</td>
 <td>Gauge scalar, pure gauge: $S_2 = S - \Box\Gamma$</td>
 </tr>
 <tr>
-<td>$\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$</td>
+<td>$\tilde{F} = \mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$</td>
 <td>Field strength = curvature, orbit-invariant</td>
 </tr>
 <tr>

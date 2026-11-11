@@ -79,7 +79,7 @@
 <li><strong>The operator-valued observables.</strong> The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{B}_{\Phi}$, the charge in the centre $\mathbb{B}_{C}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.</li>
 <li><strong>The two-point function as an operator-valued distribution.</strong> The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.</li>
 </ul>
-<p>The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla$ with its quaternion conjugate $\tilde\nabla^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.</p>
+<p>The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.</p>
 <h2 id="the-operator-valued-field">The Operator-Valued Field</h2>
 <p>The classical field is an element-valued map $\tilde{Ξ}_{\mathrm{sp}}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators,</p>
 <p>$$
@@ -149,9 +149,9 @@ $$</p>
 <h3 id="the-field-equation-as-an-operator-equation">The Field Equation as an Operator Equation</h3>
 <p>Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:</p>
 <p>$$
-\boxed{\;\tilde{\nabla}\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
 \qquad
-\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
+(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$</p>
 <p>the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is two lines and no third object: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathcal{D}-k_m)$, with $\mathcal{D}$ the two-sided contraction of the next paragraph and not the retired pair glyph, and the contraction adds nothing to the algebra form. It is named here because the two-point function below is stated with it.</p>
 <p>Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:</p>
@@ -253,7 +253,7 @@ $$</p>
 <p>normal-ordered, Hermitian for all four components, and even under fermion parity. Each component is the frame's bilinear reduced at the place of use. The spatial member carries $\vec e_\eta$ before the field and $\vec e_y$ after it; the timelike member carries no factor before the field. The fixed factor $i\vec e_x$ of the conjugate follows in both, so the right factors multiply as $\vec e_y\vec e_x=-\vec e_z$ for the spatial component and as $\vec e_x\vec e_x=-\vec e_t$ for the timelike one, and the two phases contribute $i^2=-1$; for the timelike component the minus of $i^2$ and the minus of $\vec e_x\vec e_x=-\vec e_t$ cancel and leave the density with a plus sign. The timelike component is the density, a Hermitian form of the field with itself; each spatial component is the same form with the unit $\vec e_\eta$ inserted before the field and the fixed unit $\vec e_z$ after it.</p>
 <p>Writing $\tilde J_{\Phi}=iJ_t e_t+\sum_\eta J_\eta\vec e_\eta\in\mathcal{A}\otimes\mathbb{B}_{\Phi}$, the conservation law is the operator equation</p>
 <p>$$
-\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}(r_x)=0,
+\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}(r_x)=0,
 $$</p>
 <p>on account of the field equation. The operator statement is inherited from the classical identity term by term, since each term of the normal-ordered bilinear is a $c$-number coefficient times a mode-operator monomial and the divergence acts on the coefficient only.</p>
 <p>The check below is made on the classical bilinear, which is the $c$-number coefficient the operator statement descends from. Taking an element-valued field</p>
@@ -261,8 +261,8 @@ $$</p>
 \tilde{Ξ}_{\mathrm{sp}}(x)=c_1\tilde{Ξ}_{\mathrm{sp},+}^{(1)}(\vec p_1)\exp(-ip_1\cdot x)+c_2\tilde{Ξ}_{\mathrm{sp},+}^{(2)}(\vec p_1)\exp(-ip_1\cdot x)
 +d_1\tilde{Ξ}_{\mathrm{sp},-}^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
 $$</p>
-<p>with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.</p>
-<p>In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is <em>not</em> conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.</p>
+<p>with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.</p>
+<p>In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is <em>not</em> conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.</p>
 <h3 id="spin">Spin</h3>
 <p>The spin operator is the spatial integral of the bilinear with the informational-sector element multiplying the field from the left,</p>
 <p>$$
@@ -381,19 +381,19 @@ $$</p>
 <td>Scalar part; every bilinear of the article is the scalar part of an element product</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$</td>
+<td>$\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$</td>
 <td>Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian</td>
 </tr>
 <tr>
 <td>$\mathcal{D}$</td>
-<td>Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$</td>
+<td>Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$</td>
 </tr>
 <tr>
 <td>$\mathcal{D}_p$</td>
 <td>Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=p^2$</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>Massive biquaternion Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>
