@@ -80,7 +80,7 @@
 <h2 id="the-set-and-the-measure">The Set and the Measure</h2>
 <p><strong>The mass shell is where the symbol vanishes, and a solution lives on it.</strong> <em>The Fourier Transform</em> states the gradient form as one equation between numbers, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, and reads it as a surface in wave-number space on which a field is a superposition of plane waves whose labels lie on the surface. That is the whole of the <em>where</em>. A superposition is a sum of labels, and a sum of labels is not yet a weight: it says which labels occur and not how much each contributes.</p>
 <p><strong>A weight is what a function needs to be integrated, and the transform supplies a function before it supplies a measure.</strong> The on-shell field has a transform $\mathcal{F}[\tilde F]$ supported on the shell. To compute how much of the state sits at an energy, one integrates that function over the shell, and the integral needs a measure on the shell. <strong>The measure is inherited from the volume element of wave-number space, and the inheritance is not the identity.</strong> A surface does not carry the measure of the space it sits in; it carries that measure cut down by the surface, and the cutting is a Jacobian.</p>
-<p><strong>That Jacobian is one over the gradient of the dispersion, and nothing else.</strong> The number is fixed by the shape of the symbol and by the shape alone. Two symbols with the same zero set have two different weights whenever their gradients differ, and the corpus has exactly such a pair available: $\sigma_{\mathcal{P}}$ and $k_{t}^{\prime}$ vanish on the same shell, and $\partial\sigma_{\mathcal{P}}/\partial k_{t}^{\prime}=2k_{t}^{\prime}$ at fixed $\vec k_\Phi$. The gradient of $\sigma_{\mathcal{P}}$ in the momentum wave number actually vanishes on the shell, since $\nabla_{\vec k}\sigma_{\mathcal{P}}=2k_{t}^{\prime}\nabla_{\vec k}k_{t}^{\prime}-2\vec k_\Phi$ is zero when $\nabla_{\vec k}k_{t}^{\prime}=\vec k_\Phi/k_{t}^{\prime}$; <strong>that is why the symbol's delta is not the useful one and the dispersion's is.</strong> <strong>The level set is a property of the symbol; the weight is a property of the dispersion, and the two are not the same function.</strong> That distinction is the first thing the next section makes exact.</p>
+<p><strong>That Jacobian is one over the derivative of the dispersion in wave-number space, and nothing else.</strong> The number is fixed by the shape of the symbol and by the shape alone. Two symbols with the same zero set have two different weights whenever their gradients differ, and the corpus has exactly such a pair available: $\sigma_{\mathcal{P}}$ and $k_{t}^{\prime}$ vanish on the same shell, and $\partial\sigma_{\mathcal{P}}/\partial k_{t}^{\prime}=2k_{t}^{\prime}$ at fixed $\vec k_\Phi$. The derivative of $\sigma_{\mathcal{P}}$ in the momentum wave number actually vanishes on the shell, since $\partial\sigma_{\mathcal{P}}/\partial\vec k_\Phi=2k_{t}^{\prime}\partial k_{t}^{\prime}/\partial\vec k_\Phi-2\vec k_\Phi$ is zero when $\partial k_{t}^{\prime}/\partial\vec k_\Phi=\vec k_\Phi/k_{t}^{\prime}$; <strong>that is why the symbol's delta is not the useful one and the dispersion's is.</strong> <strong>The level set is a property of the symbol; the weight is a property of the dispersion, and the two are not the same function.</strong> That distinction is the first thing the next section makes exact.</p>
 <p><strong>The three questions are three indicators.</strong> The weight on a shell is the transform of the indicator of the shell. The reach of a state is read off the growth of its transform, which is the transform of the indicator of a ball. The locality of a cut is decided by the transform of the indicator of a band. <strong>An indicator is a set written as a function, and the transform turns it into a kernel whose two properties — its size and its tail — are the two numbers this article computes.</strong></p>
 <p><strong>Why the three belong in this series rather than in a mathematics article.</strong> Each of the three is a statement about the corpus's own object: the shell is the mass shell of the five preceding duality articles, the ball is the support of a solution of the corpus's hyperbolic equation, and the band is the spectrum of the corpus's lattice operator. The three are placed here because they are the three properties of the zero set that <em>where</em> does not answer.</p>
 <h2 id="the-weight-of-a-level-set">The Weight of a Level Set</h2>
@@ -89,23 +89,25 @@
 \rho(\kappa)=\frac{1}{(2\pi)^{3}}\int_{\mathbb{R}^{3}}\delta\bigl(k_{t}^{\prime}(\vec k_\Phi)-\kappa\bigr)\,d^{3}k_\Phi ,
 $$</p>
 <p>with $\kappa$ a value of the energy wave number. The delta is the statement that only the labels on the shell contribute, and the integral is the statement that all of them do. <strong>Nothing has been assumed about a state.</strong> The number is a property of the symbol alone, and it is the same for every field that obeys the same equation.</p>
-<p><strong>The delta is evaluated by a change of variable, and the Jacobian is the weight.</strong> Write $k_{t}^{\prime}$ for the coordinate normal to the shell and $S_\kappa$ for the shell at the value $\kappa$. In a neighbourhood of a regular point the substitution $\vec k_\Phi\mapsto\bigl(k_{t}^{\prime},\text{coordinates on }S_\kappa\bigr)$ has Jacobian $\bigl|\nabla_{\vec k}k_{t}^{\prime}\bigr|^{-1}$, so</p>
+<p><strong>The delta is evaluated by a change of variable, and the Jacobian is the weight.</strong> Write $k_{t}^{\prime}$ for the coordinate normal to the shell and $S_\kappa$ for the shell at the value $\kappa$. In a neighbourhood of a regular point the substitution $\vec k_\Phi\mapsto\bigl(k_{t}^{\prime},\text{coordinates on }S_\kappa\bigr)$ has Jacobian $\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|^{-1}$, so</p>
 <p>$$
 \delta\bigl(k_{t}^{\prime}(\vec k_\Phi)-\kappa\bigr)\,d^{3}k_\Phi
-=\frac{dS}{\bigl|\nabla_{\vec k}k_{t}^{\prime}\bigr|}\,d k_{t}^{\prime},
+=\frac{dS}{\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|}\,d k_{t}^{\prime},
 $$</p>
 <p>and integrating over $k_{t}^{\prime}$ against the delta gives the coarea formula,</p>
 <p>$$
-\boxed{\;\rho(\kappa)=\frac{1}{(2\pi)^{3}}\oint_{k_{t}^{\prime}=\kappa}\frac{dS}{\bigl|\nabla_{\vec k}k_{t}^{\prime}\bigr|}\;}
+\boxed{\;\rho(\kappa)=\frac{1}{(2\pi)^{3}}\oint_{k_{t}^{\prime}=\kappa}\frac{dS}{\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|}\;}
 $$</p>
 <p><strong>That box is the whole of the first result, and it contains no dynamics.</strong> A steep dispersion carries little weight and a flat one carries a great deal, because the same interval of energy spans a thin or a thick slab of wave-number space. The reciprocal gradient is exactly the thickness of that slab per unit energy. <strong>The weight of a label on the shell is the volume of the slab that the label stands for.</strong></p>
 <p><strong>The relativistic instance, exactly.</strong> For the massive dispersion, obtained from $\sigma_{\mathcal{P}}=0$,</p>
 <p>$$
 k_{t}^{\prime}(\vec k_\Phi)=\sqrt{k_{\Phi}^{2}+k_m^{2}},
 \qquad
-\nabla_{\vec k}k_{t}^{\prime}=\frac{\vec k_\Phi}{k_{t}^{\prime}},
+\frac{\partial k_{t}^{\prime}}{\partial\vec k_\Phi}=\sum_\eta\vec e_\eta\frac{\partial k_{t}^{\prime}}{\partial k_{\Phi\eta}}
+=\vec e_x\frac{k_{\Phi x}}{k_{t}^{\prime}}+\vec e_y\frac{k_{\Phi y}}{k_{t}^{\prime}}+\vec e_z\frac{k_{\Phi z}}{k_{t}^{\prime}}
+=\frac{\vec k_\Phi}{k_{t}^{\prime}},
 \qquad
-\bigl|\nabla_{\vec k}k_{t}^{\prime}\bigr|=\frac{k_{\Phi}}{k_{t}^{\prime}} .
+\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|=\frac{k_{\Phi}}{k_{t}^{\prime}} .
 $$</p>
 <p>The shell at fixed $\kappa$ is a sphere of radius $k_{\Phi}=\sqrt{\kappa^{2}-k_m^{2}}$ and area $4\pi k_{\Phi}^{2}$, so the weight is</p>
 <p>$$
@@ -327,7 +329,7 @@ $$</p>
 <tr>
 <td>the shell $k_{t}^{\prime}=\kappa$</td>
 <td>$\delta\bigl(k_{t}^{\prime}(\vec k_\Phi)-\kappa\bigr)$</td>
-<td>the weight $1/\bigl|\nabla_{\vec k}k_{t}^{\prime}\bigr|$</td>
+<td>the weight $1/\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|$</td>
 <td>a density of labels per unit energy</td>
 </tr>
 <tr>
@@ -478,8 +480,8 @@ $$</p>
 <td>the weight on the shell, the density of labels per unit energy</td>
 </tr>
 <tr>
-<td>$\bigl|\nabla_{\vec k}k_{t}^{\prime}\bigr|$</td>
-<td>the modulus of the gradient of the dispersion in wave-number space</td>
+<td>$\bigl|\partial k_{t}^{\prime}/\partial\vec k_\Phi\bigr|$</td>
+<td>the modulus of the derivative of the dispersion in wave-number space</td>
 </tr>
 <tr>
 <td>$R$</td>

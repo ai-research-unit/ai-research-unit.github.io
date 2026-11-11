@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gradient with the Tilde: A Classification of the Physics Articles by Reading — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gradient-with-the-tilde-a-classification-of-the-physics-articles-by-reading"><strong>The Gradient with the Tilde: A Classification of the Physics Articles by Reading</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this is.</strong> An inventory of the articles in <code>articles_physics/</code> that write the gradient with its tilde, $\tilde\nabla$, sorted by the reading each article gives the operator rather than by the glyph it prints. The companion article, <em>The Gradient without the Tilde</em>, carries the other half, where the arrow was missing and has now been supplied.</p>
+<p><strong>The count.</strong> $200$ of the $470$ physics articles write $\tilde\nabla$ or its d'Alembertian $\Box$. $35$ write a gradient with no tilde, and $235$ write no gradient at all. The split of this article is $175$ material, $20$ ordinary, $2$ informational and $3$ carrying both readings.</p>
+<p><strong>The three readings.</strong> The ordinary gradient is the operator with no reading fixed: the eight-coordinate derivative, written before any sector is named. The material gradient is the same operator read at the material parameters, the imaginary time $r'_t$ and the three real space numbers $r_\eta$. The informational gradient is the operator read at the informational parameters, the real time $r_t$ and the three imaginary space numbers $r'_\eta$.</p>
+<p><strong>The caution.</strong> The sector subscript is optional. Three research articles write $\tilde\nabla_\Phi$; no research article writes $\tilde\nabla_\Psi$; and $175$ articles are in the material reading. A reader who sorts by the glyph files $172$ material gradients under the ordinary heading. The classification below sorts by the reading, taken from what the article writes and from the element the operator meets, never from the presence of a subscript.</p>
+<h2 id="the-object">The Object</h2>
+<p><strong>The operator.</strong> The gradient is the element</p>
+<p>$$
+\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
+\qquad
+\Box=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\nabla\bigr),
+$$</p>
+<p>with $\partial/\partial R_\mu$ the formal derivative on the complex coefficient, $\partial/\partial R_\mu:=\partial/\partial r_\mu-i\,\partial/\partial r'_\mu$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>).</p>
+<p><strong>The two parts.</strong> The gradient splits unit by unit into its anti-Hermitian and Hermitian halves:</p>
+<p>$$
+\tilde\nabla_\Phi:=-i\,e_t\frac{\partial}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
+\qquad
+\tilde\nabla_\Psi:=e_t\frac{\partial}{\partial r_t}-i\sum_\eta\vec e_\eta\frac{\partial}{\partial r'_\eta},
+$$</p>
+<p>$$
+\boxed{\;\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi\;},
+\qquad
+\tilde\nabla_\Phi^{*}=-\tilde\nabla_\Phi,\qquad
+\tilde\nabla_\Psi^{*}=+\tilde\nabla_\Psi .
+$$</p>
+<p>The subscript names the sector of the coefficients and nothing else. The ruling of the same article is that the gradient "never takes a letter in the low slot for the coordinates it is read in", and that $\tilde\nabla_\Phi$ and $\tilde\nabla_\Psi$ "name the sector of the coefficients at the parameters the article has fixed".</p>
+<p><strong>Why the bare tilde is not a third object.</strong> A field that depends only on the material parameters, $\tilde Q=\tilde Q(r'_t,r_\eta)$, has $\partial\tilde Q/\partial r_t=0$ and $\partial\tilde Q/\partial r'_\eta=0$. The informational part annihilates it, so $\tilde\nabla\tilde Q=\tilde\nabla_\Phi\tilde Q$. On that domain the bare glyph is the material gradient by evaluation. An article that resolves the material parameters and prints the bare tilde has written $\tilde\nabla_\Phi$ and left the subscript off.</p>
+<p><strong>The mark the tilde is not.</strong> The tilde marks the quaternionic element read with its scalar part; the arrow marks the pure element read on its vector part alone. The tilde and the arrow are therefore not two spellings of one thing: the tilde keeps the time slot, the arrow drops it. The articles without the tilde are the subject of the companion article, and there the gradient is the pure part, $\vec\nabla_\Phi$.</p>
+<h2 id="the-test">The Test</h2>
+<p>Four tests, applied in order. The first that answers settles the article.</p>
+<ol>
+<li><strong>The sector subscript is written.</strong> $\tilde\nabla_\Phi$ or $\tilde\nabla_\Psi$ in the low slot puts the article in that sector. Three articles pass this test, all three material.</li>
+<li><strong>A sector parameter is written.</strong> The material time $r'_t$, in a derivative or as a coefficient, fixes the material reading; the informational space $r'_\eta$ in a derivative would fix the informational one, and no article passes on that clause. $158$ articles pass this test and all are material.</li>
+<li><strong>The element the operator meets is material.</strong> An element of $\mathbb{B}_\Phi$ — a potential $\tilde A_\Phi$, a current $\tilde J_\Phi$, a real density of the material fluid — fixes the material reading even when no parameter is written. Fourteen articles pass this test.</li>
+<li><strong>Nothing is resolved.</strong> The glyph carries its tilde, writes no parameter of either sector, meets no sector element and writes no complex derivative out. The article is filed as ordinary. Twenty articles pass this test.</li>
+</ol>
+<p><strong>What does not count.</strong> A mention of $\mathbb{B}_\Phi$ in a comparison, a citation, a name or a table of sectors does not put an article in the material reading. What counts is the parameter written, the element met, or the subscript printed.</p>
+<h2 id="i-the-material-reading">I. The Material Reading</h2>
+<p><strong>One hundred and seventy-five articles.</strong> In all of them the operator carries one $i$ on the time slot and none on the three space slots, the coordinate is the material one, and the second-order operator is $\Box=\Delta_\Phi-\partial^2/\partial {r'_t}^2$.</p>
+<h3 id="ia-the-subscript-written">I.a The Subscript Written</h3>
+<p>Three research articles print the subscript. <em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em> prints the full display; the two others print $\tilde\nabla_\Phi$ once, in the paragraph that fixes the reading, and use the bare glyph afterwards.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Where the subscript is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>$\tilde\nabla_\Phi$ written</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>$\tilde\nabla_\Phi$ written</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>$\tilde\nabla_\Phi$ written</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ib-the-parameter-written">I.b The Parameter Written</h3>
+<p>One hundred and fifty-eight articles write $r'_t$ in a derivative or as a coefficient and write no subscript. The reading is recoverable from the formula itself: the time derivative is imaginary, so $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and the three space derivatives are the physical ones.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/a-brief-history-of-biquaternions-in-physics.html">A Brief History of Biquaternions in Physics</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework — A Research Agenda</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/degenerate-solutions-of-the-biquaternionic-dirac-equation.html">Degenerate Solutions of the Biquaternionic Dirac Equation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html">Exercise: Duality Rotation and the Riemann–Silberstein Vector</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-four-momentum-conservation-in-a-collision.html">Exercise: Four-Momentum Conservation in a Collision</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-propagation-in-a-medium.html">Exercise: Plane-Wave Propagation in a Medium</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html">Exercise: The Electromagnetic Field of a Moving Charge</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html">Exercise: The Electromagnetic Field of a Uniformly Moving Charge</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/explicit-solutions-of-the-biquaternionic-dirac-equation.html">Explicit Solutions of the Biquaternionic Dirac Equation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html">Gauge Transformations of the First and Second Kind in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gravitational-waves-in-biquaternionic-form.html">Gravitational Waves in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html">Hamiltonian Field Theory in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html">Harmonic Elementary Particles and the Periodic System of Atoms</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/index-and-notation-conventions.html">Index and Notation Conventions</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/nonlinear-maxwell-equations-in-biquaternionic-form.html">Nonlinear Maxwell Equations in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/pair-creation-in-a-bounded-region-in-biquaternionic-form.html">Pair Creation in a Bounded Region in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/product-and-form-conventions.html">Product and Form Conventions</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html">Radiation from Accelerated Charges in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.html">Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-complex-displaced-singularity-and-the-circle-electron.html">The Complex-Displaced Singularity and the Circle Electron</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-maxwell-correspondence-in-biquaternionic-form.html">The Dirac–Maxwell Correspondence in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html">The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html">The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-field-path-integral-in-biquaternionic-form.html">The Gauge Field Path Integral in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html">The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.html">The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-photon-in-biquaternionic-form.html">The Photon in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-poincare-group-and-the-biquaternion-frame.html">The Poincaré Group and the Biquaternion Frame</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html">The Polar Form of the Klein–Gordon Equation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html">The Quantized Scalar Field in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html">The Quantum–Relativity Tension and the Biquaternion Framework</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-fluid-of-the-biquaternion-dirac-field.html">The Spin Fluid of the Biquaternion Dirac Field</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html">The Standard Model Lagrangian Assembled: Four Sectors in One Expression</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.html">The Symplectic Form and the Biquaternion Norm Cone</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-thermodynamics-of-a-quantum-fluid-what-is-established.html">The Thermodynamics of a Quantum Fluid: What Is Established</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html">The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html">The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-charge-conservation.html">Wave–Particle Duality and Charge Conservation: The Cokernel of Maxwell's Symbol</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td>$r'_t$ written, no subscript</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ic-the-element-met">I.c The Element Met</h3>
+<p>Fourteen articles write the bare tilde, write no parameter of either sector, and meet an element of $\mathbb{B}_\Phi$. These are the cases where the glyph hides the reading entirely.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>The element it meets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html">Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</a></td>
+<td>$\rho_{\mathrm{num}}$, a real density</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relativistic-mechanics-from-the-dirac-wave.html">Relativistic Mechanics from the Dirac Wave: The Non-Quantum Limit in Biquaternionic Form</a></td>
+<td>$\tilde A_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</a></td>
+<td>an element of $\mathbb{B}_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>an element of $\mathbb{B}_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html">The Klein Paradox in Biquaternionic Form</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>an element of $\mathbb{B}_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wavenumbers of a Particle</a></td>
+<td>$\tilde K_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.html">Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone</a></td>
+<td>$\tilde K_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-fourier-transform.html">Wave–Particle Duality and the Fourier Transform</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wave-particle-duality-and-the-galilean-limit.html">Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</a></td>
+<td>$\tilde J_\Phi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="ii-the-informational-reading">II. The Informational Reading</h2>
+<p>Two articles, and neither resolves the informational parameters.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a></td>
+<td>$\tilde\nabla_\Psi$ named, not applied</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a></td>
+<td>$\tilde\nabla^\natural$ on $\tilde\Sigma_{\Psi,\mathrm{nrm}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The definition.</strong> $\tilde\nabla_\Psi$ is defined in <em>Operator and Calculus Conventions</em> and quoted in <em>Physics Units and Common Elements Conventions</em>, both in the both-readings list below. No research article writes it in a computed equation.</p>
+<p><strong>The one application.</strong> <em>The Two-Fluid Model in Biquaternionic Form</em> applies $\tilde\nabla^{\natural}$ to $\tilde\Sigma_{\Psi,\mathrm{nrm}}$ and produces $\tilde F_{\Phi,\mathrm{fr}}$, an element of the other sector. It is the only place in the corpus where a gradient meets an informational element.</p>
+<p><strong>What the corpus does not do.</strong> No article differentiates a $\mathbb{B}_\Psi$-valued field at the informational parameters $(r_t,r'_\eta)$ and resolves those parameters. The informational gradient exists, is defined exactly, and has no worked instance.</p>
+<h2 id="iii-the-ordinary-reading">III. The Ordinary Reading</h2>
+<p>Twenty articles print the tilde, write no sector subscript, write no parameter of either sector, and meet no sector element. The glyph is correct as it stands: it is the sum of the two halves, and no subscript would improve it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it writes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-local-entropy-current.html">The Local Entropy Current</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-form-of-the-coupled-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Coupled Dirac Equation in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html">The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a></td>
+<td>the bare tilde, nothing resolved</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="iv-the-articles-that-carry-both-readings">IV. The Articles That Carry Both Readings</h2>
+<p>Three conventions articles carry the two parts together, and the point of each is the decomposition rather than either part.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td>the two parts, side by side</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>the two parts, side by side</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a></td>
+<td>the two parts, side by side</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-counts">The Counts</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Reading</th>
+<th>Articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Material, subscript written</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Material, parameter written</td>
+<td>$158$</td>
+</tr>
+<tr>
+<td>Material, element met</td>
+<td>$14$</td>
+</tr>
+<tr>
+<td>Ordinary, nothing resolved</td>
+<td>$20$</td>
+</tr>
+<tr>
+<td>Informational</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Both readings</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><strong>Total writing the tilde</strong></td>
+<td><strong>$200$</strong></td>
+</tr>
+<tr>
+<td>Gradient without a tilde</td>
+<td>$35$</td>
+</tr>
+<tr>
+<td>No gradient</td>
+<td>$235$</td>
+</tr>
+<tr>
+<td><strong>Corpus</strong></td>
+<td><strong>$470$</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The material reading is $87$ per cent of this half.</strong> $175$ of the $200$ articles that write the tilde read it at the material parameters, and $172$ of those write $r'_t$ in a formula, so the reading is recoverable from the article itself.</p>
+<p><strong>The subscript.</strong> Three of the $175$ material articles print it. The other $172$ are material by parameter or by element.</p>
+<p><strong>The other half.</strong> The $35$ articles that write a gradient with no tilde are not ordinary by default. Their glyph has no scalar part to mark, so it is the pure part, $\vec\nabla_\Phi$, on the chart they have fixed. That mark is now printed on their glyphs; see <em>The Gradient without the Tilde</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Glyph</th>
+<th>What it is</th>
+<th>Reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>the gradient, on the eight complex coordinates</td>
+<td>the two parts summed; no reading fixed</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_\Phi$</td>
+<td>the anti-Hermitian part</td>
+<td>material, at $(r'_t,r_\eta)$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_\Psi$</td>
+<td>the Hermitian part</td>
+<td>informational, at $(r_t,r'_\eta)$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla^{\natural}$</td>
+<td>the normed gradient, $\tilde Q\mapsto\tilde Q^{\natural}$</td>
+<td>either, by the article</td>
+</tr>
+<tr>
+<td>$\Box$</td>
+<td>$\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$, the d'Alembertian</td>
+<td>either, by the parameter written</td>
+</tr>
+<tr>
+<td>$\partial/\partial R_\mu$</td>
+<td>the complex derivative, $\partial/\partial r_\mu-i\partial/\partial r'_\mu$</td>
+<td>ordinary, both halves at once</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="gradient-without-tilde-classification.html">The Gradient without the Tilde</a>, the other $35$ articles, and the arrow that was missing from them.</li>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Gradient</em>, where the two parts and their parameters are defined.</li>
+<li><a href="the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret.html">The Labels of the Gradient</a>, the inventory of the marks that the glyph carries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

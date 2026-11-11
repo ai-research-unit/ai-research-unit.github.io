@@ -238,13 +238,13 @@ $$</p>
 <p>The Coulomb field is an electromagnetic field, and in a gauge theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation carries a linear, chirality-off-diagonal mass pair, and the coupling is available at the algebra level: in the algebra reading the central phase passes through the mass term.</p>
 <p>Let $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ be a central phase, and let $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla\Gamma$ be the transformed connection. The covariant derivative</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}} = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}
+\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}
 $$</p>
 <p>transforms homogeneously,</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda\, \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad
-\tilde\nabla_{\mathrm{gco},2} = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2} ,
+\tilde\nabla_{\mathrm{gco},2} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2} ,
 $$</p>
 <p>with the connection transformation that the abelian gauge structure of the framework provides. This covariance, together with the Leibniz rule it needs, was machine-checked by finite differences at a point not used to fix the conventions. The mass term of <em>The Dirac Equation in Biquaternionic Form</em> is linear, so it carries the same factor. For the pair</p>
 <p>$$
@@ -296,9 +296,9 @@ $$</p>
 <p>The condition is called <strong>kinetic balance</strong> when the small set is any set that can represent those images, and <strong>restricted kinetic balance</strong> when it is taken to be exactly the images (Stanton and Havriliak 1984; Dyall and Fægri 2007). In the framework's words it is the non-relativistic relation of the companion exercise read as a condition on the basis rather than as a limit. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>The framework's contribution is one identification and no more. The operator is the momentum's vector part — the gradient's, up to the constant $i$ — so the balance is a statement in the algebra's own slots; that the operator is spin-type is the corpus's placement of the spin in those same vector slots, since $\tilde S_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$; and that it is first order in the gradient is why the small functions carry one derivative more than the large. Nothing else in the condition is algebraic: the basis sets, and the variational argument that makes the condition necessary, belong to the literature quoted.</p>
 <h3 id="the-field-and-the-phase-of-the-basis">The field, and the phase of the basis</h3>
-<p>With a field present the derivative in that action cannot be the ordinary one, and the reason is the covariance identity this article has already used. The minimal-coupling article replaces $\tilde\nabla$ by the covariant derivative</p>
+<p>With a field present the derivative in that action cannot be the ordinary one, and the reason is the covariance identity this article has already used. The minimal-coupling article replaces $\tilde\nabla_\Phi$ by the covariant derivative</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}} = \tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi} ,
+\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi} ,
 $$</p>
 <p>and the replacement is not optional for the basis. The sign is the corpus's, which the minimal-coupling article records as the opposite of the standard $\partial_\mu-\frac{iϙA_{\mu}}{\hbar}$; the kinetic momentum written $\vec\pi=\vec p-ϙ\vec A$ above is in the standard convention, so the two are one coupling with the opposite sign of $ϙ$, and every statement below carries $\vec A=0$, where no sign can differ. Write</p>
 <p>$$
@@ -308,7 +308,7 @@ $$</p>
 <p>$$
 \mathrm{Vect}(\tilde\nabla_{\mathrm{gco},2})\!\left(\lambda f\right) = \lambda\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}})f ,
 $$</p>
-<p>which is the vector-part form of the covariance identity $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $\tilde\nabla_{\mathrm{gco}}$ and not from $\tilde\nabla$. Second, the basis functions themselves carry the phase: if the large function is $\lambda f_\mu$ rather than $f_\mu$, then its balanced partner is $\lambda$ times the partner of $f_\mu$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.</p>
+<p>which is the vector-part form of the covariance identity $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $\tilde\nabla_{\mathrm{gco}}$ and not from $\tilde\nabla_\Phi$. Second, the basis functions themselves carry the phase: if the large function is $\lambda f_\mu$ rather than $f_\mu$, then its balanced partner is $\lambda$ times the partner of $f_\mu$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.</p>
 <p>The two replacements are the ones the literature makes under the names <strong>restricted magnetic balance</strong>, for the use of the covariant momentum in the balancing operator, and <strong>London atomic orbitals</strong>, for the phase-carrying basis functions (London 1937; Aucar, Saue, Jensen and Visscher 1999; Repisky, Komorovsky, Malkina and Malkin 2009; Komorovsky, Repisky, Malkina and Malkin 2010). Both were checked here at machine precision in the algebra's own notation: on a grid of $64$ points with random bandlimited fields, the identity $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$ and its vector-part form $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},2})(\lambda f) = \lambda\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}})f$ hold to $8\times10^{-14}$, and the two operator identities above are exact. The covariance could not have failed: $\lambda$ is central, so it passes through every left multiplication, and $\partial  \lambda/\partial x_\mu =\frac{i\,ϙ}{\hbar}\lambda\,\partial  \Gamma/\partial x_\mu$ holds exactly, which makes $(\tilde\nabla\lambda)\tilde{Ξ}_{\mathrm{sp}}$ cancel the $-\frac{i\,ϙ}{\hbar}(\tilde\nabla\Gamma)\lambda\tilde{Ξ}_{\mathrm{sp}}$ term line by line. The numerical check verifies the implementation, not a delicate cancellation.</p>
 <h3 id="what-the-balance-does-and-does-not-give">What the balance does and does not give</h3>
 <p>The condition supplies the basis, not the solution. It gives no radial function, no orbital dynamics, and no value for $\kappa$ or $\alpha$; the radial Dirac–Coulomb solution inside the algebra remains the gap named above, and a balanced basis is the workspace on which such a solution would be expanded rather than the solution itself. Nor is the condition an enlargement of the algebra: the balancing action is the momentum's vector part — the gradient's up to the constant $i$ — and the phase is the $\lambda$ of <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em>; neither is a new element of $\mathbb{B}$.</p>
@@ -545,8 +545,8 @@ $$</p>
 <td>Coordinates; $r'_t$ the material temporal coordinate, a length</td>
 </tr>
 <tr>
-<td>$\tilde\nabla = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$</td>
-<td>Biquaternionic gradient (Dirac operator)</td>
+<td>$\tilde\nabla_\Phi = -i\,e_t\partial/\partial r'_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial r_\eta$, the material part of $\tilde\nabla$</td>
+<td>Biquaternionic gradient (Dirac operator), read at $Q_t=ir'_t$, $Q_\eta=x_\eta$</td>
 </tr>
 <tr>
 <td>$\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$</td>
@@ -617,7 +617,7 @@ $$</p>
 <td>Fine-structure shift</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}} = \tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$</td>
+<td>$\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$</td>
 <td>Covariant derivative (minimal-coupling article)</td>
 </tr>
 <tr>

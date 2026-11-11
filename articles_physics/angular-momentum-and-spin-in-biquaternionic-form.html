@@ -139,15 +139,15 @@ $$</p>
 <p>$$
 \vec r = r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z \in \mathbb{B}_{H},
 $$</p>
-<p>and the momentum operator is $\tilde{p} = -i\,\hbar\nabla$ with the vector gradient $\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$. For pure quaternions the product rule is $\vec q\,\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, so</p>
+<p>and the momentum operator is $\tilde{p} = -i\,\hbar\vec\nabla_\Phi$ with the vector gradient $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$. For pure quaternions the product rule is $\vec q\,\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, so</p>
 <p>$$
-\vec r\,\tilde{p} = -i\,\hbar\,\vec r\circ\nabla  =i\,\hbar\,\vec r\nabla  \;-\;i\,\hbar\,\vec r\nabla  .
+\vec r\,\tilde{p} = -i\,\hbar\,\vec r\circ\vec\nabla_\Phi  =i\,\hbar\,\vec r\vec\nabla_\Phi  \;-\;i\,\hbar\,\vec r\vec\nabla_\Phi  .
 $$</p>
 <p>The <strong>vector part</strong> of the quaternionic product has components</p>
 <p>$$
 L_{\mathrm{orb},\eta} = -i\,\hbar\,\epsilon_{\eta lm}\,x_{l}\partial/\partial x_m ,
 $$</p>
-<p>which are exactly the standard orbital angular momentum operators. This is the biquaternion expression of the vector formula $\vec L = \vec r\times\vec p$: the cross product is the vector part of a quaternion product, and only the replacement $\vec p\to  -i\,\hbar\nabla$ is needed. The scalar part, $i\,\hbar\,\vec r\nabla$, is the radial (divergence) term and carries no angular information.</p>
+<p>which are exactly the standard orbital angular momentum operators. This is the biquaternion expression of the vector formula $\vec L = \vec r\times\vec p$: the cross product is the vector part of a quaternion product, and only the replacement $\vec p\to  -i\,\hbar\vec\nabla_\Phi$ is needed. The scalar part, $i\,\hbar\,\vec r\vec\nabla_\Phi$, is the radial (divergence) term and carries no angular information.</p>
 <p>For the algebra of components it is convenient to use the representatives in $\mathbb{B}_{\Psi}$ that $\mathsf{M}_2$ assigns to each operator. Extending $\mathsf{M}_2$ coefficient-wise to biquaternion-valued operators, the scalar operator $L_{\mathrm{orb},\eta}$ corresponds to the central element $L_{\mathrm{orb},\eta} e_t$:</p>
 <p>$$
 \mathsf{M}_2(L_{\mathrm{orb},\eta} e_t) = L_{\mathrm{orb},\eta} \otimes I_2 .

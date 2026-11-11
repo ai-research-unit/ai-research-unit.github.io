@@ -78,7 +78,7 @@
 <li><strong>Plasma electrodynamics.</strong> In a plasma, the coupling of the electromagnetic field to the charged matter can produce nonlinear behavior. Shock-like electromagnetic structures are observed in astrophysical and laboratory plasmas.</li>
 </ol>
 <p>This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.</p>
-<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
+<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta_\Phi$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
 <h2 id="why-linear-vacuum-maxwell-has-no-shocks">Why Linear Vacuum Maxwell Has No Shocks</h2>
 <h3 id="the-linear-structure">The Linear Structure</h3>
 <p>The biquaternionic Maxwell equation in vacuum is</p>
@@ -91,7 +91,7 @@ $$</p>
 $$</p>
 <p>Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation</p>
 <p>$$
-\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
+\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
 $$</p>
 <p>This is a <strong>linear, constant-coefficient, hyperbolic</strong> equation. Two structural features follow.</p>
 <p><strong>Feature 1: The equation is linear.</strong> If $\tilde{F}_1$ and $\tilde{F}_2$ are solutions, then any linear combination $\alpha\tilde{F}_1 + \beta\tilde{F}_2$ is also a solution. There is no mechanism for the solution to steepen or to form a discontinuity spontaneously.</p>
@@ -141,9 +141,9 @@ $$</p>
 <p>where $n$ is the spatial part of the normal to the moving surface. This is the condition for a <strong>propagating wave front</strong> in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.</p>
 <p>The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific structure: it is a complex combination of the electric and magnetic jumps, transverse to the propagation direction. Explicitly, in the basis aligned with the propagation direction, the jump is characterized by a single complex amplitude (corresponding to the two transverse polarizations of the wave).</p>
 <h3 id="a-constant-zeroth-order-term-does-not-change-the-jump-condition">A Constant Zeroth-Order Term Does Not Change the Jump Condition</h3>
-<p>The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a <strong>constant</strong> zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \nabla^+ + f + F$, $\nabla^+ = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:</p>
+<p>The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a <strong>constant</strong> zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \vec\nabla^{+}_\Phi + f + F$, $\vec\nabla^{+}_\Phi = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:</p>
 <p>$$
-\nabla^+B = \{\nabla^+B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
+\vec\nabla^{+}_\Phi B = \{\vec\nabla^{+}_\Phi B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
 \qquad
 (f+F)\circ B = \{(f+F)\circ B\} ,
 $$</p>
@@ -359,7 +359,7 @@ $$</p>
 <td>Biquaternionic gradient</td>
 </tr>
 <tr>
-<td>$\Box = \partial^2/\partial R_t^2 + \Delta$</td>
+<td>$\Box = \partial^2/\partial R_t^2 + \Delta_\Phi$</td>
 <td>d'Alembertian</td>
 </tr>
 <tr>
