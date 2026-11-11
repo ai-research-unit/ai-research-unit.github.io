@@ -73,7 +73,7 @@
 <p>This is an exercise in the electromagnetism series. It takes the wave equation for the potential biquaternion that <em>Maxwell's Equations in the Biquaternionic Formulation</em> states in the Lorenz gauge, and it constructs, verifies, and uses the Green's function that solves that equation. The parent states the potential equation and refers the reader to the standard references for the kernel's precise form; the retarded kernel $G_\Box = \frac{1}{4\pi R}\,\delta(r'_t - R)$ and the retarded convolution are stated, but not derived, in the companion article <em>Radiation from Accelerated Charges in Biquaternionic Form</em>, which uses the same kernel and says so explicitly — "We do not re-derive this structure; we only specialize it." This exercise supplies the missing derivation, checks the kernel on cases that did not suggest it, and states the boundary condition that selects the retarded kernel over the advanced one. It is the first step of the series that is purely about the <em>inverse</em> of the wave operator: the object that turns a source into a field.</p>
 <p><strong>What is assumed.</strong> The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of <em>Algebra and Element Conventions</em>, <em>Operator and Calculus Conventions</em> and <em>Frame and Metric Conventions</em>, and none is restated here. The potential biquaternion $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$; the four-current $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, whose normalised form is $\sqrt{\mu}\,\tilde J_{\Phi} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$; the Lorenz-gauge potential wave equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.</p>
 <p><strong>What is to be shown.</strong> Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a <em>boundary condition</em>, not an algebraic consequence. (4) The retarded potentials $\xi_{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.</p>
-<p><strong>The result.</strong> With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta + \partial^2/\partial R_t^2$ is
+<p><strong>The result.</strong> With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta_Q + \partial^2/\partial R_t^2$ is
 $$
 \boxed{\;G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right), \qquad \Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$
@@ -99,12 +99,12 @@ and the companion article observes that "the physically correct solution is the 
 <p>Second, the defining equation does not determine the kernel. Both the retarded kernel (supported on the future cone) and the advanced kernel (supported on the past cone) satisfy $\Box G = -\delta^{(4)}$, and they differ by a solution of the homogeneous wave equation. What selects the retarded one is a <em>boundary condition</em> — no incoming radiation from the past — not an algebraic property of $\Box$. The exercise states the condition, exhibits the advanced kernel that the equation alone admits, and shows which contour prescription implements which choice.</p>
 <p>Two points of discipline are kept in view. Every displayed formula is applied to a case other than the one that suggested it: the kernel is applied to a generic smooth function of the retarded time and to an off-centre and a static source, not only to the on-origin case from which it is guessed; and the retarded potentials are checked against the Coulomb and Biot–Savart solutions, which are independent of the construction. The parent is treated as a source of assertions until the computation has been done.</p>
 <h2 id="problem-1-the-wave-operator-and-the-defining-equation">Problem 1: The Wave Operator and the Defining Equation</h2>
-<p><strong>Statement.</strong> (a) Show that with $\partial/\partial R_t = -i\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta$ is the wave operator $\Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}_{\Phi}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.</p>
+<p><strong>Statement.</strong> (a) Show that with $\partial/\partial R_t = -i\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta_Q$ is the wave operator $\Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}_{\Phi}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.</p>
 <p><strong>Solution.</strong> (a) Since $\partial/\partial R_t = -i\partial/\partial r'_t = -i\partial/\partial r'_t$,
 $$
 \partial^2/\partial R_t^2 = \left(-i\partial/\partial r'_t\right)^2 = -\frac{\partial^2}{\partial {r'_{t}}^2},
 \qquad\text{so}\qquad
-\Box = \partial^2/\partial R_t^2 + \Delta = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2} .
+\Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2} .
 $$
 The temporal term is negative and the spatial terms positive: $\Box$ is <em>hyperbolic</em>, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))$, the operator has symbol
 $$
@@ -133,24 +133,24 @@ G_u(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{u(g)}{4\pi R}.
 $$
 Write $\xi_{\mathrm{scp}} = 1/(4\pi R)$, so that $G_u = \xi_{\mathrm{scp}}\, u(g)$. The chain rule gives
 $$
-\Delta G_u = u\,\Delta\xi_{\mathrm{scp}} + 2\frac{du}{dg}\,\nabla\xi_{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\xi_{\mathrm{scp}}\,\Delta g + \frac{d^2u}{dg^2}\,\xi_{\mathrm{scp}}\,(\nabla g)^2,
+\Delta_\Phi G_u = u\,\Delta_\Phi\xi_{\mathrm{scp}} + 2\frac{du}{dg}\,\nabla\xi_{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\xi_{\mathrm{scp}}\,\Delta_\Phi g + \frac{d^2u}{dg^2}\,\xi_{\mathrm{scp}}\,(\nabla g)^2,
 \qquad
 \partial^2/\partial {r'_{t}}^2 G_u = \frac{d^2u}{dg^2}\,\xi_{\mathrm{scp}},
 $$
-and therefore, with $\Box = \Delta + \partial^2/\partial R_t^2$,
+and therefore, with $\Box = \Delta_Q + \partial^2/\partial R_t^2$,
 $$
 \Box G_u
-= \frac{u(g)}{4\pi}\,\Delta\frac{1}{R}
-+ \frac{\frac{du}{dg}(g)}{4\pi}\left[2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta g\right]
+= \frac{u(g)}{4\pi}\,\Delta_\Phi\frac{1}{R}
++ \frac{\frac{du}{dg}(g)}{4\pi}\left[2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g\right]
 + \frac{\frac{d^2u}{dg^2}(g)}{4\pi R}\left[(\nabla g)^2 - 1\right].
 $$
 Three elementary radial identities now decide the outcome:
 $$
 (\nabla g)^2 = 1,
 \qquad
-2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta g = 0,
+2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g = 0,
 \qquad
-\Delta\frac{1}{R} = -4\pi\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
+\Delta_\Phi\frac{1}{R} = -4\pi\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
 $$
 The first says the coefficient of $\frac{d^2u}{dg^2}$ vanishes; the second says the coefficient of $\frac{du}{dg}$ vanishes; the third converts the coefficient of $u$ into a source at the origin. Hence
 $$
@@ -265,11 +265,11 @@ $$
 \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y|.
 $$
 The kernel that was $\frac{\delta(r'_t-R)}{4\pi R}$ becomes the Newton kernel $\frac{1}{4\pi R}$ after the time integral, so the static potentials are the retarded ones with the source frozen.</p>
-<p><strong>(b) The static equations and the known solutions.</strong> With $\partial/\partial r'_t \to 0$ the operator reduces to the Laplacian, $\Box \to \Delta$, and the identity $\Delta\frac{1}{R} = -4\pi\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ gives
+<p><strong>(b) The static equations and the known solutions.</strong> With $\partial/\partial r'_t \to 0$ the operator reduces to the Laplacian, $\Box_\Phi \to \Delta_\Phi$, and the identity $\Delta_\Phi\frac{1}{R} = -4\pi\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ gives
 $$
-\Delta\xi_{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\epsilon},
+\Delta_\Phi\xi_{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta_\Phi\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\epsilon},
 $$
-and likewise $\Delta\vec A = -\mu\vec J(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$, which is the static limit of $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
+and likewise $\Delta_\Phi\vec A = -\mu\vec J(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$, which is the static limit of $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
 \boxed{\;\xi_{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon R},
 \qquad
@@ -325,7 +325,7 @@ the Biot–Savart law (the sign is the standard one, with $\vec u_R$ pointing fr
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial R_t^2 + \Delta = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$, has the retarded Green's function
+<p>The wave operator of the biquaternionic formulation, $\Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$, has the retarded Green's function
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right),
 \qquad
@@ -379,7 +379,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 <td>Temporal component of the gradient</td>
 </tr>
 <tr>
-<td>$\Box = \partial^2/\partial R_t^2 + \Delta = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$</td>
+<td>$\Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$</td>
 <td>Wave operator (d'Alembertian)</td>
 </tr>
 <tr>
