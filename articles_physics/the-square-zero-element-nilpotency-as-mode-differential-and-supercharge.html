@@ -299,16 +299,16 @@ $$</p>
 <p>with $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, the central d'Alembertian. The first-order pair $(\tilde\nabla,\tilde\nabla^{\natural})$ is the supercharge pair, the grading is chirality, and the mass pair is the term that exchanges the two values of the chirality and that the superalgebra reads as the superpotential.</p>
 <p><strong>The one-sided pair.</strong> The chiral pair is the definition:</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$</p>
 <p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>Both gradients act from the left on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:</p>
 <p>$$
-\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde\nabla(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
 $$</p>
 <p>The two members of the chiral pair are one equation per chirality, not two different equations.</p>
 <p><strong>The two-sided equation.</strong> The corpus carries a second form of the Dirac equation, Kravchenko's single equation on an algebra-valued field $F\in\mathbb{B}$:</p>
@@ -329,7 +329,7 @@ $$</p>
 <tbody>
 <tr>
 <td>equation</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>$\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z$</td>
 </tr>
 <tr>
@@ -739,7 +739,7 @@ $$</p>
 <p>The mode is the element $X=\tfrac12(i\vec e_x-\vec e_y)$ with its star, acting on the algebra by left multiplication, odd under the inner parity $(-1)^F=i\vec e_z$, and paired with its star by $\{X,X^*\}=e_t$. Its two rungs are the states $\tfrac12(e_t\pm i\vec e_z)$; they represent the two cohomology spaces of the two-term complex, its cohomological index is zero, and its content is the splitting of the identity into them. The algebra carries exactly one mode: $m$ modes generate $M_{2^m}(\mathbb{C})$, dimension $4^m$, which exceeds four for $m\ge2$; every nonzero nilpotent of $\mathbb{B}$ has nilpotency index two, and three mutually orthogonal states do not fit, so no three-rung ladder exists inside it.</p>
 <p>The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes\Lambda$, with $s^2=0$ inherited from associativity and the Jacobi identity. It has no vacuum state and no pairing of the square; its content is the cohomology $\ker Q/\mathrm{im}\,Q$ at ghost number zero, and the unphysical content is the Kugo–Ojima quartet.</p>
 <p>The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the basis operator $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.</p>
-<p>The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.</p>
+<p>The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.</p>
 <p>The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $c_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.</p>
 <p>The physical null momentum, $\tilde P_{\Phi}=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$, has $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ but $\tilde P_{\Phi}^2=2iP_t\tilde P_{\Phi}\ne0$ and trace $2iP_t\ne0$; it is a multiple of a state. The trace separates it from the nilpotent.</p>
 <p>The nine interpretations use the object as a mode, a lattice null point and a limit: the Dirac hole as a difference and not a nilpotent, Jordan–Wigner as a one-site square root with the string as its branch cut, the Grassmann coherent state as the minimal odd extension, the WKB phase gradient off the cone, the graphene Dirac point as a null momentum with the nilpotent as its chiral corner, Nielsen–Ninomiya as the topological pairing of lattice zeros, the exact one-mode Wick theorem, the two-rung cap that puts the qutrit outside the algebra, and squeezing as a contraction to the cone.</p>

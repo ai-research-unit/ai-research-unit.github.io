@@ -193,8 +193,9 @@
 <h2 id="the-physical-dictionary">The Physical Dictionary</h2>
 <p>The four-vector picture is the one that carries the dictionary. The four complex coefficients are not four independent physical coordinates: each coefficient holds one material and one informational coordinate. In the conventions of the corpus,</p>
 <p>$$
-Q_t = r_t + i r'_t, \qquad Q_x = r_x + i r'_{x}, \qquad Q_y = r_y + i r'_{y}, \qquad Q_z = r_z + i r'_{z}.
+Q_t = q_t + i q'_t, \qquad Q_x = q_x + i q'_{x}, \qquad Q_y = q_y + i q'_{y}, \qquad Q_z = q_z + i q'_{z},
 $$</p>
+<p>with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=r_\eta$ and $q'_{\eta}=h'_{\eta}$: the $q$ letters are the coefficient alphabet, and the sector letters name the same four numbers.</p>
 <p>The real part of the scalar coefficient is the informational time and the imaginary part is the material time; each vector coefficient carries one material and one informational spatial coordinate.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -215,7 +216,7 @@ $$</p>
 <tr>
 <td>Informational $\mathbb{B}_{\Psi}$</td>
 <td>$Q_t$ real, $Q_\eta$ purely imaginary</td>
-<td>$(c t, i r'_{x}, i r'_{y}, i r'_{z})$</td>
+<td>$(c t, i h'_{x}, i h'_{y}, i h'_{z})$</td>
 <td>state, observable, field strength</td>
 </tr>
 <tr>
@@ -239,7 +240,7 @@ N=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$</p>
 <p>multiplicative and indefinite; the element is a unit exactly when $N\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/N$.</p>
 <p>The four-vector is a coordinate list of an element of the algebra. It is <strong>not</strong> a Dirac spinor and <strong>not</strong> a column of the regular representation: it is the element written in its own basis, and the number four is the dimension of the algebra, not the dimension of the spin module. The spinor is two-dimensional and appears in the next picture.</p>
-<h3 id="the-math56-element">The $2\times2$ Element</h3>
+<h3 id="the-math61-element">The $2\times2$ Element</h3>
 <p>The isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is written on the Pauli matrices,</p>
 <p>$$
 \boxed{\;\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\bigl(Q_x\sigma_x+Q_y\sigma_y+Q_z\sigma_z\bigr)
@@ -251,7 +252,7 @@ $$</p>
 $$</p>
 <p>In the $2\times2$ image the trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.</p>
 <p>The matrix acts on a two-component column. That column is the <strong>spinor</strong>, and the action is the left multiplication of the algebra on its simple module. The two columns of the matrix algebra are the two minimal left ideals, which the corpus reads as the two <strong>Peirce copies</strong>; the older name <strong>column index</strong>, kept below as a label for the column index, is a copy index and not the chirality. The spinor picture is the smallest picture that carries the state; it does not carry the four-vector.</p>
-<h3 id="the-math65-left-regular-element">The $4\times4$ Left Regular Element</h3>
+<h3 id="the-math70-left-regular-element">The $4\times4$ Left Regular Element</h3>
 <p>The left regular matrix $\mathsf{M}_{4L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the axis-free frame of <em>Matrix Representations Conventions</em>, §<em>The 4×4 Matrix Representation</em>. Its invariants are the doubled invariants:</p>
 <p>$$
 \det\mathsf{M}_{4L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_{4L}(\tilde Q)=4Q_t.
@@ -278,14 +279,14 @@ $$</p>
 \boxed{\;\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde Q^{*})\;}.
 $$</p>
 <p>The two-sided operator is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but it is not linear, and on the unit group it is not faithful: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, so every central phase of modulus one gives the same operator. It is a quadratic map that descends to a faithful representation of the unit group modulo its central phase circle, not a linear one.</p>
-<h3 id="the-math91-congruence">The $2\times2$ Congruence</h3>
+<h3 id="the-math96-congruence">The $2\times2$ Congruence</h3>
 <p>On matrices the operator is</p>
 <p>$$
 X\longmapsto M X M^{\dagger}, \qquad M=\mathsf{M}_2(\tilde Q).
 $$</p>
 <p>Off the cone, $M$ is invertible, the congruence is a bijection, it preserves the rank of every argument, and it scales the determinant by $|\det M|^2=|N|^2$. On the cone, $M$ has rank one and the congruence collapses: every image is a multiple of the Hermitian rank-one matrix $u u^{\dagger}$, the image is a single complex line, and the operator has rank one. The value of the trace $4|Q_t|^2$ decides whether the surviving operator is nilpotent ($Q_t=0$) or a scaled projection ($Q_t\neq0$).</p>
 <p>The congruence is a completely positive map with a single Kraus operator. It is trace-preserving exactly when $M$ is $*$-unitary, that is for the $*$-unitary elements; otherwise it rescales the trace. On the cone it is a destructive map: it projects every operand onto one line and erases the distinctions between them. The algebra supplies the shape of a quantum channel and of a measurement; it does not supply the probability rule for the outcomes.</p>
-<h3 id="the-math103-operator">The $4\times4$ Operator</h3>
+<h3 id="the-math108-operator">The $4\times4$ Operator</h3>
 <p>On the algebra the same two-sided operator is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\mathsf{M}_{4R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues</p>
 <p>$$
 \lambda_1\bar\lambda_1,\quad \lambda_1\bar\lambda_2,\quad \lambda_2\bar\lambda_1,\quad \lambda_2\bar\lambda_2,

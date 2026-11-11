@@ -74,7 +74,7 @@
 <p>$$
 V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{\mathfrak{Z}e^2}{4\pi\epsilon_0},
 $$</p>
-<p>with $\mathfrak{Z}$ the nuclear charge number (written $Z$ in the non-relativistic companion, and $\mathfrak{Z}$ here so that it cannot be read as a spatial index). It is the relativistic completion of the problem treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde H_\Psi = r_t\,e_t$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $s_{\mathrm{tot}}$.</p>
+<p>with $\mathfrak{Z}$ the nuclear charge number (written $Z$ in the non-relativistic companion, and $\mathfrak{Z}$ here so that it cannot be read as a spatial index). It is the relativistic completion of the problem treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde H_\Psi = h_t\,e_t$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $s_{\mathrm{tot}}$.</p>
 <p>The article asks what the biquaternion framework contributes to this problem, and the honest answer is stated before the derivation.</p>
 <ul>
 <li><strong>Algebraic, and recomputed here.</strong> The total angular momentum $\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},\eta} e_t + \tilde S_{\Psi,\eta}$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $\sum_\eta (L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$ is a Hermitian element of the informational sector $\mathbb{B}_{\Psi}$; it commutes with $\tilde S_{\Psi,\mathrm{tot},\eta}$, but not with $L_{\mathrm{orb},\eta}$ or $\tilde S_{\Psi,\eta}$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,s_{\mathrm{tot}})$ and not by $(n,l)$: at fixed $n$ the states of different $s_{\mathrm{tot}}$ separate in energy, and of the non-relativistic $l$-degeneracy there survives only the pair $l = s_{\mathrm{tot}}\mp\tfrac12$ at fixed $s_{\mathrm{tot}}<n-\tfrac12$. All of this is checked below.</li>
@@ -96,7 +96,7 @@ $$</p>
 <p>which enters the spectrum as a parameter.</p>
 <h3 id="the-algebra-equation-and-its-operator-frame-reading">The algebra equation and its operator-frame reading</h3>
 <p>The framework's field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, and the position dependence is carried by its argument rather than by the finite-dimensional algebra. The internal two-valued index of the older literature is that element read in a frame fixed by a declared unit vector; it is a reading of the field and not the field. The standard equation carries four entries because the element carries four coefficients, and the two halves of that four are the chirality labels $L$ and $R$.</p>
-<p>The coordinates are the corpus's, $Q_t = i r'_t$ and $Q_\eta = x_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.</p>
+<p>The coordinates are the corpus's, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, with $r'_t$ the material temporal coordinate, a length. With that choice $\partial/\partial R_t = -i\partial/\partial r'_t$, so $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \nabla^2 = -\partial^2/\partial {r'_t}^2 + \nabla^2$ is the d'Alembertian with no metric factor to put in by hand.</p>
 <p>The free biquaternion Dirac equation is the one-sided chiral pair</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,
@@ -127,7 +127,7 @@ $$</p>
 <p>The basis operator algebra acts on $\mathbb{B}$ by $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$, so reading $\tilde{Ξ}_{\mathrm{sp}}$ in the basis operator frame gives the four entries the standard equation carries, and the free part of that reading is the same chiral pair. The Coulomb term is a <strong>central scalar</strong>, $V(r)e_t \in \mathbb{B}_{C}$, so it multiplies the field without ambiguity of order, and in this respect its placement is the same as the non-relativistic potential's.</p>
 <p>A structural caveat must accompany this transcription. The basis operator $\beta$ is a right multiplication by the element $i\vec e_x$ of $\mathbb{B}$, while the mass pair above is built from left multiplications alone; the two therefore sit on different sides of the field. The operator-frame-frame reading uses the two-sided structure that the algebra-level equation does not itself contain: $\beta$ exchanges the two chiralities, since $R_{\vec e_x}$ anticommutes with the chirality basis operator $-iR_{\vec e_z}$, whereas every left multiplication preserves them. The mass is not the obstruction — both descriptions carry the same linear mass, and they agree on it — and the two-sided reading supplies the structure that the Hamiltonian's Foldy–Wouthuysen reduction needs. The transcription is the one the corpus's electron and solutions articles use, and it is adopted here on that basis, with the caveat recorded rather than hidden.</p>
 <h2 id="the-hamiltonian-leaves-the-scalar-slot">The Hamiltonian Leaves the Scalar Slot</h2>
-<p>In the non-relativistic problem the Hamiltonian is a scalar multiple of the identity, $\tilde H_\Psi = r_t\,e_t$, and its vanishing vector part is what makes the spin a spectator. The relativistic corrections change this. The kinetic and Darwin corrections remain scalar; the spin–orbit correction occupies the vector slots of $\mathbb{B}_{\Psi}$, and that is the algebraic change. The Zeeman term below is non-central in the same way, but it vanishes in the Coulomb problem, where $\vec A = 0$ and hence $\vec B = 0$.</p>
+<p>In the non-relativistic problem the Hamiltonian is a scalar multiple of the identity, $\tilde H_\Psi = h_t\,e_t$, and its vanishing vector part is what makes the spin a spectator. The relativistic corrections change this. The kinetic and Darwin corrections remain scalar; the spin–orbit correction occupies the vector slots of $\mathbb{B}_{\Psi}$, and that is the algebraic change. The Zeeman term below is non-central in the same way, but it vanishes in the Coulomb problem, where $\vec A = 0$ and hence $\vec B = 0$.</p>
 <p>At relative order $c^{-2}$ the elimination of the small component produces the effective large-component Hamiltonian</p>
 <p>$$
 H =\frac{\vec \pi^{2}}{2\,m} + ϙ\xi_{\mathrm{scl}} - \frac{ϙ}{m}\sum_\eta  B_\eta\tilde S_{\Psi,\eta}
@@ -541,12 +541,12 @@ $$</p>
 <td>The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the field by the chirality basis operator $-iR_{\mathrm{axf},\vec e_z}$</td>
 </tr>
 <tr>
-<td>$Q_t = i r'_t$, $Q_\eta = x_\eta$</td>
+<td>$Q_t=i q'_t$, $Q_\eta=q_\eta$</td>
 <td>Coordinates; $r'_t$ the material temporal coordinate, a length</td>
 </tr>
 <tr>
 <td>$\tilde\nabla_\Phi = -i\,e_t\partial/\partial r'_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial r_\eta$, the material part of $\tilde\nabla_\Phi$</td>
-<td>Biquaternionic gradient (Dirac operator), read at $Q_t=ir'_t$, $Q_\eta=x_\eta$</td>
+<td>Biquaternionic gradient (Dirac operator), read at $Q_t=i q'_t$, $Q_\eta=q_\eta$</td>
 </tr>
 <tr>
 <td>$\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$</td>
