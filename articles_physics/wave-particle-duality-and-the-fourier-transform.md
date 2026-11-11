@@ -29,7 +29,7 @@ $$
 **In this algebra the label is an element, not a number.** On the material sector the gradient becomes multiplication by the wave-number element,
 
 $$
-\tilde\nabla\longmapsto i\,\tilde K_{\Phi},
+\tilde\nabla_\Phi\longmapsto i\,\tilde K_{\Phi},
 \qquad
 \tilde K_{\Phi}=i\,k_{t}^{\prime}e_{t}+\vec k_{\Phi},
 \qquad
@@ -39,7 +39,7 @@ $$
 and the d'Alembertian becomes a scalar because the product $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is the quaternion norm, which is central:
 
 $$
-\tilde\nabla\tilde\nabla^{\natural}=\Box\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box\longmapsto -\tilde K_{\Phi}\tilde K_{\Phi}^{\natural},
 \qquad
 \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}.
 $$
@@ -103,7 +103,7 @@ and it is not positive definite: the positive- and negative-frequency branches c
 **The gradient form assigns a number to the derivative, and it is the operator that acts on the field.** The product with the conjugate is the d'Alembertian outright, not merely its scalar part, because the product of an element and its quaternion conjugate is central:
 
 $$
-\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box ,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box ,
 $$
 
 and its symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:
@@ -124,7 +124,7 @@ $$
 
 | | element form | gradient form |
 |---|---|---|
-| object | $ \tilde\Xi^{\dagger}\tilde\Xi $ | $ \tilde\nabla\tilde\nabla^{\natural} $ |
+| object | $ \tilde\Xi^{\dagger}\tilde\Xi $ | $ \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} $ |
 | what it is | the Hermitian form | the quaternion norm |
 | on the state module | positive definite | identically zero |
 | differential statement | $ c\,\partial_{r_{t}^{\prime}}\rho+\vec\nabla\cdot\vec J=0 $ | $ \left(\Box-k_{m}^{2}\right)\tilde F=0 $ |
@@ -289,9 +289,9 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 | *One-Dimensional Scattering in Biquaternionic Form* | both arms: flux against the level set |
 | *The Non-Quantum Limit of the Biquaternion Model* | the switch-off: the gradient arm withdrawn |
 
-**The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.** Transforming $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\,\mathcal{F}[\tilde F]=-\sqrt{\mu}\,\mathcal{F}[\tilde J_{\Phi}]$, an equation in the algebra with the symbol as the coefficient. The transform of a field is written $\mathcal{F}[\tilde F]$, as *Biquaternion Continuous Harmonic Analysis* writes it, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction. There is no number to set a level on: the symbol is an element, and the equation is solved by **inverting** it, $\mathcal{F}[\tilde F]=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\mathcal{F}[\tilde J_{\Phi}]$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor and the map loses rank, from three complex dimensions to two, checked on the $3/3$ and $4/4$ pairs.
+**The Maxwell row deserves the extra clause, because "a determinant rather than a level" is compressed.** Transforming $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_{\Phi}$ gives $i\tilde K_{\Phi}\,\mathcal{F}[\tilde F]=-\sqrt{\mu}\,\mathcal{F}[\tilde J_{\Phi}]$, an equation in the algebra with the symbol as the coefficient. The transform of a field is written $\mathcal{F}[\tilde F]$, as *Biquaternion Continuous Harmonic Analysis* writes it, and never as a mark on the field: a caret carries a power, a conjugation, a transposition and a construction. There is no number to set a level on: the symbol is an element, and the equation is solved by **inverting** it, $\mathcal{F}[\tilde F]=-\sqrt{\mu}\,(i\tilde K_{\Phi})^{-1}\mathcal{F}[\tilde J_{\Phi}]$. Whether that inverse exists is a determinant question. Off the cone $\tilde K_{\Phi}$ is a unit and the solution is unique. On the cone it is a zero divisor and the map loses rank, from three complex dimensions to two, checked on the $3/3$ and $4/4$ pairs.
 
-**The constraint the corpus prints is the cokernel of that map, and it is also the transformed continuity equation.** Because the field is a pure vector, the symbol carries three complex dimensions into four, so off the cone it has a cokernel of exactly one complex dimension. The functional that spans it is $\mathcal{F}[\tilde J_{\Phi}]\mapsto i\,\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\mathcal{F}[\tilde J_{\Phi}])$, which is the symbol of $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi})$ — the corpus's integrability condition, term for term, and it annihilates the image to $10^{-15}$ while the unconjugated functional does not. Evaluated on $\tilde J_{\Phi}=ic\rho\,e_{t}+\vec J$ it reads $\vec k_{\Phi}\cdot\mathcal{F}[\vec J]=k_{t}^{\prime}\,\mathcal{F}[c\rho]$, which with $k_{t}^{\prime}=\omega/c$ is $\omega\,\mathcal{F}[\rho]=\vec k_{\Phi}\cdot\mathcal{F}[\vec J]$: the transformed continuity equation of this article, to the identity. **Charge conservation is not a second law standing beside the field equation. It is the compatibility of the field equation, and the transform shows the two statements are the same one.** On the cone the rank drops and the cokernel becomes two-dimensional; that is the wave-number form of the statement that a front carries an extra condition. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.
+**The constraint the corpus prints is the cokernel of that map, and it is also the transformed continuity equation.** Because the field is a pure vector, the symbol carries three complex dimensions into four, so off the cone it has a cokernel of exactly one complex dimension. The functional that spans it is $\mathcal{F}[\tilde J_{\Phi}]\mapsto i\,\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\mathcal{F}[\tilde J_{\Phi}])$, which is the symbol of $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$ — the corpus's integrability condition, term for term, and it annihilates the image to $10^{-15}$ while the unconjugated functional does not. Evaluated on $\tilde J_{\Phi}=ic\rho\,e_{t}+\vec J$ it reads $\vec k_{\Phi}\cdot\mathcal{F}[\vec J]=k_{t}^{\prime}\,\mathcal{F}[c\rho]$, which with $k_{t}^{\prime}=\omega/c$ is $\omega\,\mathcal{F}[\rho]=\vec k_{\Phi}\cdot\mathcal{F}[\vec J]$: the transformed continuity equation of this article, to the identity. **Charge conservation is not a second law standing beside the field equation. It is the compatibility of the field equation, and the transform shows the two statements are the same one.** On the cone the rank drops and the cokernel becomes two-dimensional; that is the wave-number form of the statement that a front carries an extra condition. This is the precise sense in which a first-order equation constrains its source where a second-order one fixes a level set.
 
 **The pattern is not a coincidence of organisation.** In each row the object on the left of the transform is a differential statement and the object on the right is a number or a matrix. The table is the corpus's list of contents read as a table of forms.
 
@@ -352,8 +352,8 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 | $ \tilde\Xi^{*} $ | the algebra's Hermitian conjugation, used in the current and in the Klein–Gordon density |
 | $ \tilde\Xi^{\natural} $ | the quaternion conjugate, used to build the norm |
 | $ \mathbb{B} $ | the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $ \tilde\nabla $ | the gradient, the time derivative plus the three spatial ones |
-| $ \tilde\nabla^{\natural} $ | its conjugate, whose product with it is $\Box$ |
+| $ \tilde\nabla_\Phi $ | the gradient, the time derivative plus the three spatial ones |
+| $ (\tilde\nabla_\Phi)^{\natural} $ | its conjugate, whose product with it is $\Box$ |
 | $ \Box $ | the d'Alembertian in the material coordinates |
 | $ \tilde K_{\Phi} $ | the wave-number element $i k_{t}^{\prime}e_{t}+\vec k_{\Phi}$ |
 | $ k_{t}^{\prime} $ | energy wave number, $E/(\hbar c)=\omega/c$ |

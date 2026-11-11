@@ -26,7 +26,7 @@ $$
 \sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}.
 $$
 
-This is a complex number and not an element of $\mathbb{B}$, and the reason is one line: $\Box$ is the composition $\tilde\nabla\tilde\nabla^{\natural}$, whose symbol is the norm $\tilde K_\Phi\tilde K_\Phi^{\natural}$, and the norm of a quaternion is central. **The second-order symbol is left multiplication by a scalar.** The first-order symbol $i\tilde K_\Phi$ is not, and that single difference is the source of everything in this article.
+This is a complex number and not an element of $\mathbb{B}$, and the reason is one line: $\Box$ is the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, whose symbol is the norm $\tilde K_\Phi\tilde K_\Phi^{\natural}$, and the norm of a quaternion is central. **The second-order symbol is left multiplication by a scalar.** The first-order symbol $i\tilde K_\Phi$ is not, and that single difference is the source of everything in this article.
 
 **A scalar symbol has an all-or-nothing rank.** Left multiplication by $\sigma$ is invertible when $\sigma\ne0$ and zero when $\sigma=0$. There is no third case and no intermediate dimension. The graded ranks of the two preceding articles — three off the light cone and two on it — belong to $L_{i\tilde K_\Phi}$, which is not scalar. The second-order symbol has rank four on the whole algebra the moment it is non-zero, and rank zero on the set where it vanishes:
 

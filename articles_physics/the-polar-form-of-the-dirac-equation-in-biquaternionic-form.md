@@ -5,9 +5,9 @@
 The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Dirac Equation in Biquaternionic Form* writes it as the chiral pair
 
 $$
-\tilde\nabla\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
 $$
 
 and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no minimal left ideal, no Peirce decomposition, no chiral projector, no Clifford algebra. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it.
@@ -168,7 +168,7 @@ Note what the first bracket is not. The scale enters the derivative only through
 The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r_{t}^{\prime}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
 
 $$
-\tilde\nabla\alpha
+\tilde\nabla_\Phi\alpha
 =e_t\frac{\partial\alpha}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\alpha}{\partial R_\eta}
 =-i\frac{\partial\alpha}{\partial r_{t}^{\prime}}e_t+\nabla\alpha
 =i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
@@ -433,7 +433,7 @@ The field is one element and the two letters of the pair name its two parts. The
 
 The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\alpha}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.
 
-The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla\alpha=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
+The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla_\Phi\alpha=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
 
 The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.
 
@@ -449,7 +449,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$; $\vec e_z$ is the frame's third direction |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
-| $\tilde\nabla,\ \tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $\tilde\nabla^{\natural}\tilde\nabla=\Box$ |
+| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$ |
 | $\tilde R_\Phi=i r_{t}^{\prime}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
 | $r_{t}^{\prime}=c\,t^{\prime}$ | Material time, a length |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
@@ -464,7 +464,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ | Velocity of the frame |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ |
 | $\tilde V_{\Phi}=ic\,\mathcal B_{\Psi}$ | Four-velocity of the word; $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ |
-| $\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla\alpha$ | Four-momentum and four-wavevector; $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ |
+| $\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi\alpha$ | Four-momentum and four-wavevector; $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, $\hat s^{2}=-e_t$ | Spin direction |
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | Current |
 | $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
