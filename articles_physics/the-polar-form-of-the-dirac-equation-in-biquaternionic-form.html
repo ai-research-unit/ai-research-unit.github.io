@@ -211,7 +211,7 @@ $$</p>
 <p><strong>The factor of two in the angle is not decoration.</strong> The field carries $e^{i\alpha}$ and the norm carries $e^{2i\alpha}$, so every bilinear built from the norm runs at twice the rate of the field's own phase. Two consequences follow and both are used below: the density is insensitive to the sign of $\alpha$, and a superposition of two branches beats at twice the difference of their angles.</p>
 <h2 id="the-equation-in-polar-variables">The Equation in Polar Variables</h2>
 <h3 id="the-pair">The Pair</h3>
-<p>The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}h_t^{\prime}$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system</p>
+<p>The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system</p>
 <p>$$
 i\tilde K_{\Phi}\tilde\Xi_{0}^{R}=k_m\tilde\Xi_{0}^{L},
 \qquad
@@ -266,15 +266,15 @@ $$</p>
 <p>A plane wave is the case in which the last three vanish: the frame is constant and the density is constant, so the derivative is the phase term alone. Then $\partial_\mu\tilde\Xi=i(\partial_\mu\alpha)\tilde\Xi$, and the equation becomes algebraic in the frame. That is why a plane wave can be solved exactly and why the general case cannot be read off it.</p>
 <p>Note what the first bracket is not. The scale enters the derivative only through $\ln\rho$, so a constant density contributes nothing and a field of uniform density carries no scale term at all. The scale is a multiplier, not a source.</p>
 <h3 id="the-phase-gradient-is-the-four-momentum">The Phase Gradient Is the Four-Momentum</h3>
-<p>The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial h_t^{\prime}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,</p>
+<p>The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,</p>
 <p>$$
 \tilde\nabla_\Phi\alpha
 =e_t\frac{\partial\alpha}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\alpha}{\partial R_\eta}
-=-i\frac{\partial\alpha}{\partial h_t^{\prime}}e_t+\nabla\alpha
+=-i\frac{\partial\alpha}{\partial r'_t}e_t+\nabla\alpha
 =i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
 =\tilde K_{\Phi},
 $$</p>
-<p>with $\vec p=\hbar\nabla\alpha$ and $E=-\hbar c\,\partial\alpha/\partial h_t^{\prime}$. The temporal slot of the gradient is $-i\partial\alpha/\partial h_t^{\prime}$ and the temporal slot of the wavevector is $iE/(\hbar c)$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $h_t^{\prime}$ is a length, so a derivative in $h_t^{\prime}$ is a rate over a length, and an energy is a rate times an action.</p>
+<p>with $\vec p=\hbar\nabla\alpha$ and $E=-\hbar c\,\partial\alpha/\partial r'_t$. The temporal slot of the gradient is $-i\partial\alpha/\partial r'_t$ and the temporal slot of the wavevector is $iE/(\hbar c)$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $r'_t$ is a length, so a derivative in $r'_t$ is a rate over a length, and an energy is a rate times an action.</p>
 <p>The reading is exact for a plane wave, where the angle is linear and the gradient is the wavevector. For a general field it is the eikonal reading, and it defines the momentum at each event. The proof uses only that the angle is real and that the gradient is the algebra's derivative, so it applies to a general field unchanged.</p>
 <h3 id="the-boost-is-the-four-velocity">The Boost Is the Four-Velocity</h3>
 <p>The third factor is the velocity.</p>
@@ -404,9 +404,9 @@ $$</p>
 <h3 id="the-rest-phase">The Rest Phase</h3>
 <p>A slow state is one whose boost is small and whose angle is dominated by the rest phase. Write</p>
 <p>$$
-\alpha=-k_m h_t^{\prime}+\sigma,
+\alpha=-k_m r'_t+\sigma,
 \qquad
-k_m h_t^{\prime}=\frac{mc^{2}}{\hbar}\,t,
+k_m r'_t=\frac{mc^{2}}{\hbar}\,t,
 $$</p>
 <p>so that the field's own phase advances at $mc^{2}/\hbar$ and the norm's angle at $2mc^{2}/\hbar$. The angle is a number of radians and not an energy; $\hbar$ is what makes it so, and the same $\hbar$ makes $\sigma$ dimensionless.</p>
 <p><strong>The factor of two is the whole of zitterbewegung.</strong> The trembling of a state of this kind is a bilinear effect: the density and the current oscillate, and every bilinear is built from the norm, whose angle is twice the field's. The trembling frequency is therefore twice the rest frequency, $2mc^{2}/\hbar$, and no further computation is needed to see why. The numbers are the standard ones: $1.55269\times10^{21}\ \mathrm{rad\,s^{-1}}$ for the rest frequency and $193.1\ \mathrm{fm}$ for half the reduced Compton wavelength.</p>
@@ -488,11 +488,11 @@ $$</p>
 <td>Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$</td>
 </tr>
 <tr>
-<td>$\tilde R_\Phi=i h_t^{\prime}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
+<td>$\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$</td>
 <td>Four-position</td>
 </tr>
 <tr>
-<td>$h_t^{\prime}=c\,t^{\prime}$</td>
+<td>$r'_t=c\,t^{\prime}$</td>
 <td>Material time, a length</td>
 </tr>
 <tr>
