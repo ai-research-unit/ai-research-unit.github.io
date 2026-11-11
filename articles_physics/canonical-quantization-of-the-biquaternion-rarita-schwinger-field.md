@@ -307,7 +307,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are the frame basis operators of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu:=iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}\quad(\nu(r_t)=r_x,\ \nu(\eta)=r_y),
+\gamma_\mu:=iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}}\quad(\nu(t)=x,\ \nu(\eta)=y),
 \qquad
 \gamma_5:=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z},
 $$
@@ -315,7 +315,7 @@ $$
 The same in the axis-free display:
 
 $$
-\gamma_\mu:=iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\quad(\nu(r_t)=r_x,\ \nu(\eta)=r_y),
+\gamma_\mu:=iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\quad(\nu(t)=x,\ \nu(\eta)=y),
 \qquad
 \gamma_5:=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z},
 $$

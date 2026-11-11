@@ -168,7 +168,7 @@ the first carrying the vector part $-2ik_{t}^{\prime}\vec k_\Phi$ — $(-4i,-6i,
 $$
 j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,i\,e_\mu\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_z\vec e_{\tau(\mu)}\,\vec e_x ,
 \qquad
-\tau(r_t)=r_x,\quad \tau(k)=r_y,\quad e_\mu=e_t,\vec e_x,\vec e_y,\vec e_z ,
+\tau(t)=x,\quad \tau(k)=y,\quad e_\mu=e_t,\vec e_x,\vec e_y,\vec e_z ,
 $$
 
 three slots and no glyph: the element $i e_\mu$ multiplies the field on the left, the field sits in the middle, and the three elements $\vec e_z$, $\vec e_{\tau(\mu)}$, $\vec e_x$ multiply on the right, the last of them being the time-like element the adjoint carries, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}i\,\cdot\,\vec e_x$. The right factors are written in the order in which they multiply, and that order is part of the formula, because they do not commute: $\vec e_z\vec e_{\tau(\mu)}=-\vec e_{\tau(\mu)}\vec e_z$. One imaginary unit survives, the adjoint's, since the $i$ of the generator and the $-i$ of the chirality are spent as $i(-i)=+1$. Its divergence is the classical identity

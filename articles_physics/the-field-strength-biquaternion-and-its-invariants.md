@@ -496,9 +496,9 @@ so that $\tilde u$ is a unit pure element, $\tilde u^2=-e_t$, the axis of the fl
 **The two rates.** The rotor is the cosine and the sine of one complex angle,
 
 $$
-U(r_t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
+U(t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
 \qquad
-\theta=\tfrac12\,h_t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
+\theta=\tfrac12\,t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
 $$
 
 one formula for both regimes, since $\tilde u^2=-e_t$ makes the exponential the cosine and sine of a scalar angle: at $\omega=0$ the angle is imaginary and the flow is a boost at the rate $\sigma/c$, at $\sigma=0$ it is real and the flow is a rotation at the rate $\omega/c$, and in general the two are carried together. Read on the display of the congruence, the same statement is
@@ -522,7 +522,7 @@ which is the quickest check of a computed flow. Its generator has the four eigen
 
 **These are the four classical types of a one-parameter Lorentz transformation** — hyperbolic, elliptic, parabolic and loxodromic in Herglotz's naming, the classification that *A Brief History of Biquaternions in Physics* records from Herglotz as the four types of a Möbius transformation. The table is therefore not new data on the field. It is the classification of the paragraphs above followed through the exponential rather than left in the algebra, and the two descriptions coincide row by row. Three contributions are separable here and are kept apart: the classification of the one-parameter transformations is Herglotz's, the closed form of the exponential in terms of the two invariants, with its two regimes and its null limit, is Jadczyk and Szulga's, and the reading of the field-strength biquaternion itself as the element of the algebra is this corpus's. The axis of each flow is a line, not an oriented vector: the boost axis is the electric direction and the rotation axis the magnetic one, while the sense of each is that of the exponential itself and is not fixed by the invariants.
 
-**The null row is where the two spellings of one rotation are told apart.** There $\tilde F^2=0$ with $\tilde F\neq0$: the field is a nilpotent of the algebra, and the rotor truncates at the linear term, $U(r_t)=e_t+\tfrac12t\tilde F$, so the congruence is unipotent. In the defining representation the same flow is unipotent with one three-dimensional block, the degenerate case classified in *The Two-Sided Exponential of an N-Regular, Spectrally Degenerate Biquaternion*. Both statements describe one null rotation; what differs is the carrier, and the difference is the same one that makes $\tilde F$ a zero divisor while the display of its flow is not.
+**The null row is where the two spellings of one rotation are told apart.** There $\tilde F^2=0$ with $\tilde F\neq0$: the field is a nilpotent of the algebra, and the rotor truncates at the linear term, $U(t)=e_t+\tfrac12t\tilde F$, so the congruence is unipotent. In the defining representation the same flow is unipotent with one three-dimensional block, the degenerate case classified in *The Two-Sided Exponential of an N-Regular, Spectrally Degenerate Biquaternion*. Both statements describe one null rotation; what differs is the carrier, and the difference is the same one that makes $\tilde F$ a zero divisor while the display of its flow is not.
 
 **The flow fixes its own generator, and that separates the flow from the field.** Because $U(t)$ is a power series in $\tilde F$ it commutes with it, so the subgroup it generates leaves the tensor at the event unchanged: the flow moves frames and not the field. What the flow is not is a worldline. The worldline of a charge is the flow of the generator multiplied by the scalar $ϙ/m$ acting on the four-momentum, in *The Lorentz Force in Biquaternion Form*; the two generators differ by that scalar, and they agree only in a uniform field, since otherwise the field varies along the motion and the exponent is an ordered product rather than a single exponential.
 

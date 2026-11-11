@@ -167,7 +167,7 @@ for an isometry $\tilde{V}_{\Phi}$ into the system tensor an environment, with $
 
 ### Contraction of the Bloch Ball
 
-Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\vec r \mapsto M\vec r + \vec r_t$. The $*$-unitary channels are the rotations $M \in SO(3)$, $\vec t = 0$. Two canonical types are distinguished by whether the origin is fixed:
+Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\vec r \mapsto M\vec r + \vec t$. The $*$-unitary channels are the rotations $M \in SO(3)$, $\vec t = 0$. Two canonical types are distinguished by whether the origin is fixed:
 
 - **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\Delta_p(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\,e_t/2$, with Bloch map $\vec r \mapsto (1-p)\vec r$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_\eta)^{*}(i\vec e_\eta) = e_t$.
 - **Non-unital channels** have $\vec t \neq 0$ and move the maximally mixed state off centre. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(r_1, r_2, r_3) \mapsto (\sqrt{1-\gamma}\,r_1,\ \sqrt{1-\gamma}\,r_2,\ \gamma + (1-\gamma)r_3)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.

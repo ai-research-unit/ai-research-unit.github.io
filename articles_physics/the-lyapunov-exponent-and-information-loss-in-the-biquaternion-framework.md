@@ -118,10 +118,10 @@ The coadjoint-orbit picture of the companion article *Similitudes Between Biquat
 Irreversibility enters the sector through coarse-graining, and the general form of a coarse-graining semigroup is known. A one-parameter semigroup $Ξ_{r'_{t}}$, $r'_t\ge0$, of completely positive trace-preserving maps with $Ξ_0 = \mathrm{id}$ and $Ξ_{s+r'_t} = Ξ_s\circΞ_{r'_{t}}$ acts on the Bloch vector affinely,
 
 $$
-\vec r \longmapsto \vec r(r'_t) = L(r'_t)\,\vec r(0) + \vec r_t(r'_t),
+\vec r \longmapsto \vec r(r'_t) = L(r'_t)\,\vec r(0) + \vec t(r'_t),
 $$
 
-with $L(r'_t)$ a real $3\times3$ matrix and $\vec r_t(r'_t)$ a translation; the translation vanishes for a unital semigroup, which is the case for a coarse-graining. The tangent map is the linear part alone,
+with $L(r'_t)$ a real $3\times3$ matrix and $\vec t(r'_t)$ a translation; the translation vanishes for a unital semigroup, which is the case for a coarse-graining. The tangent map is the linear part alone,
 
 $$
 \delta\vec r(r'_t) = L(r'_t)\,\delta\vec r(0),
@@ -257,7 +257,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 
 **Reversible rotor flow is Lyapunov-neutral.** Conjugation by a matrix-unitary rotor leaves the biquaternion norm and the trace pairing invariant, so every exponent is exactly zero and no information is lost. This is the biquaternion form of the volume preservation of a Hamiltonian flow, and it agrees with the conservation of the Casimir on the coadjoint orbit.
 
-**Irreversible channel semigroups are contractions.** The affine Bloch action $\vec r\mapsto L(r'_t)\vec r+\vec r_t(r'_t)$ has tangent map $L(r'_t)$, whose singular values are the exponential rates; trace-distance contractivity of completely positive trace-preserving maps gives $\sigma_1(L(r'_t))\le1$, hence every exponent is non-positive. The dephasing semigroup has the spectrum $\{0,-\Gamma,-\Gamma\}$, sum $-2\Gamma$ equal to the volume contraction rate, and entropy production rate $\Gamma(r_\perp(r'_t)^2/r(r'_t))\,\mathrm{artanh}\,r(r'_t)$, with $r_\perp(r'_t)$ the instantaneous transverse component. The quadratic biquaternion norm of a transverse tangent vector decays at $\exp(-2\Gamma r'_t)$, twice the vector rate $\exp(-\Gamma r'_t)$, because the biquaternion norm is quadratic; the Lyapunov exponent $\lambda$, defined with the compensating factor $\tfrac{1}{2}$, is the vector exponent $-\Gamma$ itself.
+**Irreversible channel semigroups are contractions.** The affine Bloch action $\vec r\mapsto L(r'_t)\vec r+\vec t(r'_t)$ has tangent map $L(r'_t)$, whose singular values are the exponential rates; trace-distance contractivity of completely positive trace-preserving maps gives $\sigma_1(L(r'_t))\le1$, hence every exponent is non-positive. The dephasing semigroup has the spectrum $\{0,-\Gamma,-\Gamma\}$, sum $-2\Gamma$ equal to the volume contraction rate, and entropy production rate $\Gamma(r_\perp(r'_t)^2/r(r'_t))\,\mathrm{artanh}\,r(r'_t)$, with $r_\perp(r'_t)$ the instantaneous transverse component. The quadratic biquaternion norm of a transverse tangent vector decays at $\exp(-2\Gamma r'_t)$, twice the vector rate $\exp(-\Gamma r'_t)$, because the biquaternion norm is quadratic; the Lyapunov exponent $\lambda$, defined with the compensating factor $\tfrac{1}{2}$, is the vector exponent $-\Gamma$ itself.
 
 **No positive exponents are available.** Isometry forbids them for rotor flow, contraction forbids them for channels, and the compact coadjoint orbit is a two-dimensional symplectic manifold, where Hamiltonian flows are integrable. Chaos in a Hamiltonian flow needs four phase-space dimensions and a nonlinearity, neither of which the single-qubit informational sector has. The information loss of the framework is therefore contraction, not chaos, and the Kolmogorov–Sinai entropy of its linear flows is zero by Pesin's formula.
 
@@ -278,8 +278,8 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $\lambda_1\ge\lambda_2\ge\lambda_3$ | Lyapunov spectrum |
 | $\tilde u(r'_t)$, $\tilde u\tilde u^{*} = e_t$ | Matrix-$*$-unitary rotor (reversible flow) |
 | $\tilde{Ϛ}_{\Psi}\mapsto\tilde u\tilde{Ϛ}_{\Psi}\tilde u^{*}$ | Rotor conjugation; isometry, $\lambda_k=0$ |
-| $Ξ_{r'_{t}}$, $L(r'_t)$, $\vec r_t(r'_t)$ | Channel semigroup and its affine Bloch action |
-| $\vec r\mapsto L(r'_t)\vec r+\vec r_t(r'_t)$ | Affine Bloch action of a channel |
+| $Ξ_{r'_{t}}$, $L(r'_t)$, $\vec t(r'_t)$ | Channel semigroup and its affine Bloch action |
+| $\vec r\mapsto L(r'_t)\vec r+\vec t(r'_t)$ | Affine Bloch action of a channel |
 | $\sigma_\eta(L(r'_t))$ | Singular values; $\lambda_k = \lim_t\tfrac{1}{r'_{t}}\log\sigma_\eta$ |
 | $\sigma_1(L(r'_t))\le1$ | Contraction (trace-distance contractivity of CPTP maps) |
 | $\lambda_k\le0$ | No positive exponent for a channel semigroup |
