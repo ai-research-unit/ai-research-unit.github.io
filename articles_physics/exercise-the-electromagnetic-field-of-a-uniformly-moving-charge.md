@@ -363,7 +363,7 @@ The field is of electric type, is **not** null, and is not a zero divisor: $\lan
 2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $d\vec v/dt'_{\mathrm{ret}}\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\vec E_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
 3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma^2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
 4. **The similarity law is used, not derived.** We inherited $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
-5. **The overall normalization of $\tilde{F} = (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
+5. **The overall normalization of $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
 
 ## Summary
 
@@ -397,7 +397,7 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace, scalar subspace |
-| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi, \Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
 | $\partial/\partial R_t = -i\,\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$ | Potential biquaternion |

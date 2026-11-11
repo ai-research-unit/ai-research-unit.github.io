@@ -10,14 +10,14 @@ $$
 S = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}},
 $$
 
-whose integrand is built from the biquaternion norm of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.
+whose integrand is built from the biquaternion norm of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.
 
 **Two kinds of symmetry.** A relativistic action has
 
 - **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
 - **spacetime** symmetries, the Poincaré transformations — four translations $\tilde R_\Phi\mapsto\tilde R_\Phi+\tilde{R}_{\Phi,0}$ and six Lorentz transformations $\tilde R_\Phi\mapsto\tilde U\tilde R_\Phi\tilde U^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
 
-The internal case produces a current biquaternion $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$ with $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi})=0$ on shell, the framework form of $\sum_\mu\partial J_\mu/\partial R_\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
+The internal case produces a current biquaternion $\tilde{J}_{\Phi}\in\mathbb{B}_{\Phi}$ with $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$ on shell, the framework form of $\sum_\mu\partial J_\mu/\partial R_\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
 
 **What is established, and what is not.** Established below, and recomputed: the central-phase current of the complex biquaternion scalar field,
 
@@ -25,7 +25,7 @@ $$
 \tilde{J}_{\Phi} = i\left[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ})\right],
 $$
 
-lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}_{\Phi}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$ with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
+lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$, which vanishes whenever the field obeys the Klein–Gordon equation, the sign of $\tilde{J}_{\Phi}$ being the one for which the charge density of a positive-frequency wave is positive; the same current for the Dirac field, whose components are $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$ with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every mass, while the axial current is conserved only at $m=0$; the free-particle four-momentum $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}$ is the Noether charge of translation invariance, and the **total** four-momentum of an isolated system is conserved; and a translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$. What is standard, what is only transcribed, and what is interpretation is separated in its own section below.
 
 **Two defects in the read list, handled rather than repeated.** First, the four-force of the parent is defined by the **proper**-time derivative, $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$, so the sum $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}$ across bodies is *not* the rate of change of the total four-momentum unless all the Lorentz factors agree; *Exercise: Four-Momentum Conservation in a Collision* reports this, and the conservation law is stated correctly below. Second, the translation of a plane wave is by a **central phase**, $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$, and the $i$ is not optional: the same scalar in a real exponential, $\exp(\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}))$, is a dilation and not a phase at all.
 
@@ -56,7 +56,7 @@ $$
 The relativistic scalar field of the framework is the complex biquaternion field $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t \in \mathbb{B}_{C}$, with $\xi_{\mathrm{scl}}$ a complex scalar function. Its action is $S[\tilde{Ξ}] = \int \mathcal{L}\,d^4r$ with the real Lagrangian density
 
 $$
-\mathcal{L} = +\,\mathrm{Sc}\!\left[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right] + k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right].
+\mathcal{L} = +\,\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right] + k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right].
 $$
 
 Because $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$, the first term expands over the four coordinates with a single sign,
@@ -92,7 +92,7 @@ For an internal symmetry, the theorem states that there is a current biquaternio
 $$
 \delta S = 0 \ \text{for all fields}
 \qquad\Longrightarrow\qquad
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = 0 \ \text{on shell}.
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = 0 \ \text{on shell}.
 $$
 
 For a spacetime symmetry, the same construction applied to a transformation that moves the point $\tilde R_\Phi$ yields a current carrying one index per generator: for translations the energy–momentum current, for Lorentz transformations the angular-momentum current. The two forms differ only in what the symmetry variation acts on. The general identity behind both is that the divergence of the current is the field equation contracted with the symmetry variation; it is written out for the central phase in the next section and for translations after that.
@@ -108,7 +108,7 @@ $$
 \qquad \alpha\in\mathbb{R},
 $$
 
-leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\alpha)$ is central and $\tilde{Ξ}^{*}\mapsto \exp(-i\alpha)\tilde{Ξ}^{*}$: the two phase factors in $((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})$ cancel, and $\tilde{Ξ}^{*}\tilde{Ξ}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{Ξ}$ only through the invariant $\tilde{Ξ}^{*}\tilde{Ξ}$ — a fact used again below.
+leaves both terms of $\mathcal{L}$ unchanged, because $\exp(i\alpha)$ is central and $\tilde{Ξ}^{*}\mapsto \exp(-i\alpha)\tilde{Ξ}^{*}$: the two phase factors in $((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})$ cancel, and $\tilde{Ξ}^{*}\tilde{Ξ}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{Ξ}$ only through the invariant $\tilde{Ξ}^{*}\tilde{Ξ}$ — a fact used again below.
 
 For the infinitesimal variation $\delta\tilde{Ξ} = i\alpha\tilde{Ξ}$, $\delta\tilde{Ξ}^{*} = -i\alpha\tilde{Ξ}^{*}$, Noether's construction gives
 
@@ -150,22 +150,22 @@ which is real and **positive** on a positive-frequency wave $\xi_{\mathrm{scl}}\
 
 ### Conservation and the Identity Behind It
 
-Forming the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}$,
+Forming the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$,
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = \sum_\mu\partial/\partial R_\mu\,J_\mu = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} ,
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = \sum_\mu\partial/\partial R_\mu\,J_\mu = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} ,
 $$
 
-the sum being plain, because the signs of $\varepsilon$ are spent inside $(\tilde\nabla^{\natural})_\Phi$: on the diagonal $\mathrm{Sc}(e_\mu^{\natural}e_\mu)=1$ for all four $\mu$. Using the definitions and the d'Alembertian,
+the sum being plain, because the signs of $\varepsilon$ are spent inside $(\tilde\nabla_\Phi)^{\natural}$: on the diagonal $\mathrm{Sc}(e_\mu^{\natural}e_\mu)=1$ for all four $\mu$. Using the definitions and the d'Alembertian,
 
 $$
-\boxed{\ \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})\right]\ }
+\boxed{\ \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})\right]\ }
 $$
 
 The cross terms of each $\mu$ enter with opposite signs and cancel, so only the second derivatives survive. This is the Noether identity in biquaternion form: the scalar divergence of the current is the Klein–Gordon operator applied to the field, contracted with the symmetry variation. On shell, $\Box\tilde{Ξ} = (k_m^{2})\tilde{Ξ}$ and the same for the conjugate, both terms become the same real multiple of $\tilde{Ξ}^{*}\tilde{Ξ}$ and cancel, so
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = 0 \quad\text{on shell},
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = 0 \quad\text{on shell},
 $$
 
 which is the continuity equation $c\,\partial/\partial r'_t\rho + \mathrm{div}\,\vec j = 0$. The reason the time component needs no separate sign is the same one met above: $\partial/\partial R_t=-i\,\partial/\partial r'_t$ meets $J_t=ic\rho$, and the two central imaginaries cancel, $(-i)(i)=1$, leaving the factor $c$ of the current and the plain $\partial/\partial r'_t$ of the continuity equation.
@@ -174,9 +174,9 @@ which is the continuity equation $c\,\partial/\partial r'_t\rho + \mathrm{div}\,
 
 A single plane wave is a trap: for $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar)$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
 
-- **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k_\Phi|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k_\Phi^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi})$ cancels identically;
-- **a standing wave**, $\tilde{Ξ} = \sin(kx)\cos(\omega r'_t/c) + i\sin(kx)\sin(\omega r'_t/c)$ with $\omega^2 = c^2k^2 + c^2k_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi})$ vanishes identically;
-- **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed on a generic three-mode field, off shell: the difference $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) - i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$ reduces to zero identically, and the divergence is $2\,\mathrm{Im}(\tilde{Ξ}^{*}\Box\tilde{Ξ})$, which is what the identity gives.
+- **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k_\Phi|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k_\Phi^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ cancels identically;
+- **a standing wave**, $\tilde{Ξ} = \sin(kx)\cos(\omega r'_t/c) + i\sin(kx)\sin(\omega r'_t/c)$ with $\omega^2 = c^2k^2 + c^2k_m^{2}$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})$ vanishes identically;
+- **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed on a generic three-mode field, off shell: the difference $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) - i\,\mathrm{Sc}[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})]$ reduces to zero identically, and the divergence is $2\,\mathrm{Im}(\tilde{Ξ}^{*}\Box\tilde{Ξ})$, which is what the identity gives.
 
 The last case is the honest statement of the theorem: the current is conserved **whenever** the field equation holds; off shell it need not be, and its divergence *is* the field equation.
 
@@ -184,7 +184,7 @@ The last case is the honest statement of the theorem: the current is conserved *
 
 *The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho =\frac{i\,\hbar}{2\,m\,c^{2}}(\tilde{Ξ}^{*}\partial/\partial r'_t\tilde{Ξ} - \tilde{Ξ}\partial/\partial r'_t\tilde{Ξ}^{*})$ and $\vec j = -\frac{i\,\hbar}{2\,m}(\tilde{Ξ}^{*}\nabla\tilde{Ξ} - \tilde{Ξ}\nabla\tilde{Ξ}^{*})$. Comparing component by component, that current equals $+\frac{\hbar}{2\,m}\tilde{J}_{\Phi}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $\frac{\hbar}{2\,m}$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
 
-**Relation to the Maxwell source.** In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$ with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = \sqrt{\mu}\,(\partial/\partial r'_t\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}_{\Phi}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in *The Gauge Principle in Biquaternionic Form* is the localization of the symmetry that produces it.
+**Relation to the Maxwell source.** In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = \sqrt{\mu}\,(\partial/\partial r'_t\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}_{\Phi}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in *The Gauge Principle in Biquaternionic Form* is the localization of the symmetry that produces it.
 
 ### The Dirac Field: the Pair, the Two-Sided Form, and the Axial Current
 
@@ -193,16 +193,16 @@ The same phase is a symmetry of the massive Dirac field. For the Dirac field the
 $$
 \begin{aligned}
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_m\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} &= k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
 
-two equations, one per part, each first order and linear in the field, with $m$ central. They are the two lines of one dynamics, not two independent ones: eliminating one half gives the massive Klein–Gordon equation, and at $m=0$ the pair decouples into the two Weyl equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each part. A central phase passes through both lines, since it passes through the central mass, so the current derived above is the conserved current of the Dirac field at every $m$, and $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ on shell for it.
+two equations, one per part, each first order and linear in the field, with $m$ central. They are the two lines of one dynamics, not two independent ones: eliminating one half gives the massive Klein–Gordon equation, and at $m=0$ the pair decouples into the two Weyl equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each part. A central phase passes through both lines, since it passes through the central mass, so the current derived above is the conserved current of the Dirac field at every $m$, and $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ on shell for it.
 
 **The two-sided form.** Read on the whole algebra rather than on the two parts, the same dynamics is one equation in which the derivative acts on the left and the unit $\vec e_z$ on the right,
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}} = -\,m\,i\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}} = -\,m\,i\,\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\vec e_z ,
 $$
 
 where $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ is the coefficient conjugate, taken on the four coefficients and leaving the units fixed. The mass is thus a right multiplication by $\vec e_z$ carried with the imaginary unit: the central mass of the pair becomes a product, with the unit displayed and the factor $i$ left in front, one real mass multiplying one unit and one $i$. This is the operator-theoretic content of the two-sidedness: the derivative acts on the left, the mass on the right, and the conjugation supplies the antilinear part, so the second field of the $\natural$-side equation is the conjugate of the first carried on the right. The one-sided pair is the definition; this is its form on the algebra, one line, with the unit $\vec e_z$ standing where the second part stood.
@@ -392,7 +392,7 @@ $$
 \boxed{\;\tilde L = \tfrac12\sum_{\mu,\nu}L_{\mu\nu}\,e^{\natural}_\mu e_\nu\;}
 $$
 
-the angular momentum of a free particle is a single biquaternion. The tilde rather than an arrow is deliberate: the vector part of $\tilde L$ is $L_{0\eta}-\tfrac12\epsilon_{\eta ij}L_{ij}$ along $\vec e_\eta$, which pairs the boost charges with $\vec r\times\vec p$ and is not the three-vector of orbital angular momentum. This is the same construction by which $\tilde{F} = \mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}e^{\natural}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
+the angular momentum of a free particle is a single biquaternion. The tilde rather than an arrow is deliberate: the vector part of $\tilde L$ is $L_{0\eta}-\tfrac12\epsilon_{\eta ij}L_{ij}$ along $\vec e_\eta$, which pairs the boost charges with $\vec r\times\vec p$ and is not the three-vector of orbital angular momentum. This is the same construction by which $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}e^{\natural}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
 
 ### The Rank-Three Field Current
 
@@ -412,7 +412,7 @@ expresses the symmetry of the energy–momentum tensor together with the conserv
 
 ## What Is Inherited, What Is Added, What Is Interpretation
 
-**Inherited and unchanged.** The action, the four-momentum, the four-current and its conservation $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$, the algebra, the gradient, the sectors, and the trace formula, for a state $\tilde{Ϛ}_{\Psi}$ and a Hermitian observable $\tilde H_\Psi$, $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ are those of the read list. No symbol is renamed, the sign of the current is the one for which $\rho>0$ on a positive-frequency wave, and what this article adds to the list is derivation and identification, not new definitions.
+**Inherited and unchanged.** The action, the four-momentum, the four-current and its conservation $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$, the algebra, the gradient, the sectors, and the trace formula, for a state $\tilde{Ϛ}_{\Psi}$ and a Hermitian observable $\tilde H_\Psi$, $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ are those of the read list. No symbol is renamed, the sign of the current is the one for which $\rho>0$ on a positive-frequency wave, and what this article adds to the list is derivation and identification, not new definitions.
 
 **Added by this article.** The derivation of the central-phase current $\tilde{J}_{\Phi} = i[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}\tilde\nabla_\Phi\tilde{Ξ}]$ from the phase symmetry of the field action, and its conservation identity; its form $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$ on the Dirac field, with the axial current and its non-conservation; the identification of the free-particle four-momentum as the Noether charge of translation invariance, with the corrected multi-body statement; the explicit translation multiplier $\exp(i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural})/\hbar)$; the energy–momentum current and its packaging; and the angular-momentum bivector. These are transcriptions of the standard theorem into the algebra, with the subspace assignments the algebra supplies, not new physics.
 
@@ -520,12 +520,12 @@ $$
 which lies in $\mathbb{B}_{\Phi}$ and satisfies the Noether identity
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})\right],
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = i\,\mathrm{Sc}\!\left[(\Box\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}(\Box\tilde{Ξ})\right],
 $$
 
-zero whenever the field is on shell. This is the framework form of $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$; it reproduces the current the Klein–Gordon article posits, up to the conventional constant $c/k_m/2$, with $\rho>0$ on a positive-frequency wave; and its expansion at the Maxwell source is the charge-conservation condition $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\sqrt{\mu}\,\tilde{J}_{\Phi}) = 0$.
+zero whenever the field is on shell. This is the framework form of $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = 0$; it reproduces the current the Klein–Gordon article posits, up to the conventional constant $c/k_m/2$, with $\rho>0$ on a positive-frequency wave; and its expansion at the Maxwell source is the charge-conservation condition $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\sqrt{\mu}\,\tilde{J}_{\Phi}) = 0$.
 
-The same phase acts on the Dirac field, whose dynamics is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, equivalently the one equation on the algebra $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}}=-mi\bar{\tilde{Ξ}}_{\mathrm{sp}}\vec e_z$. The vector current has the components $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$, with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every $m$; the axial current carries the unit $\vec e_z$ inside the product and obeys $\sum_\mu\partial j_{5\mu}/\partial R_\mu = 2im\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\vec e_y)$, vanishing only at $m=0$. The mass therefore breaks the axial rotation and not the phase.
+The same phase acts on the Dirac field, whose dynamics is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, equivalently the one equation on the algebra $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}=-mi\bar{\tilde{Ξ}}_{\mathrm{sp}}\vec e_z$. The vector current has the components $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$, with $b_t=e_t$ and $b_k=\vec e_z$, conserved at every $m$; the axial current carries the unit $\vec e_z$ inside the product and obeys $\sum_\mu\partial j_{5\mu}/\partial R_\mu = 2im\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\vec e_y)$, vanishing only at $m=0$. The mass therefore breaks the axial rotation and not the phase.
 
 For a **spacetime** symmetry, translation invariance gives the four-momentum
 
@@ -549,7 +549,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\mathbb{B}_{H}, \mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Real-quaternion subspace; complex scalar line (the centre) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$ | Quaternion-conjugate gradient; $\mathrm{Sc}(e_\mu^{\natural}e_\nu)=\delta_{\mu\nu}$ |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i r'_t$ |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian, $Q_t=i r'_t$ |
 | $S = -mc\int\sqrt{-d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural}}$ | Free-particle action |
 | $\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
 | $\tilde R_\Phi = i r'_{t}\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position, in $\mathbb{B}_{\Phi}$ |
@@ -560,8 +560,8 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Complex biquaternion scalar field |
 | $\mathcal{L} = \sum_\mu(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\mu)(\partial\xi_{\mathrm{scl}}/\partial R_\mu) + k_m^{2}|\xi_{\mathrm{scl}}|^2$ | Field Lagrangian density, $Q$ frame |
 | $\tilde{J}_{\Phi} = i[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}\tilde\nabla_\Phi\tilde{Ξ}]$ | Central-phase Noether current, in $\mathbb{B}_{\Phi}$ |
-| $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = \sum_\mu\partial J_\mu/\partial R_\mu$ | Divergence of the current, plain sum |
-| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Maxwell source $\sqrt{\mu}\,\tilde J_{\Phi}$; $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$ is charge conservation |
+| $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = \sum_\mu\partial J_\mu/\partial R_\mu$ | Divergence of the current, plain sum |
+| $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Maxwell source $\sqrt{\mu}\,\tilde J_{\Phi}$; $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ is charge conservation |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac field, an element of $\mathbb{B}$; the value of $\tilde{Ξ}_{\mathrm{sp},L}$ is $-1$, of $\tilde{Ξ}_{\mathrm{sp},R}$ is $+1$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^*$ | The adjoint with which the currents are formed: the algebra's conjugation |
 | $j_\mu=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*e_\mu\tilde{Ξ}_{\mathrm{sp}}\,b_\mu)$, $b_t=e_t$, $b_k=\vec e_z$ | Vector current of the Dirac field; $j_t$ is its Hermitian norm |

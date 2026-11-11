@@ -87,7 +87,7 @@ $$
 \mathcal{L}_{\mathrm{ferm}}=\sum_{\psi}\bar{\tilde\Xi}_{\mathrm{sp},\psi}\,i\,\tilde\nabla_{\psi}\,\tilde\Xi_{\mathrm{sp},\psi} ,
 $$
 
-with $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_\psi$ the covariant gradient carrying the three connections in the representation of $\psi$. The display states the structure; the component form of $\tilde\nabla_\psi$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde\Xi_{\mathrm{sp},L}=0$.
+with $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_\psi$ the covariant gradient carrying the three connections in the representation of $\psi$. The display states the structure; the component form of $\tilde\nabla_\psi$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=0$.
 
 **The covariant gradient.** Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is
 

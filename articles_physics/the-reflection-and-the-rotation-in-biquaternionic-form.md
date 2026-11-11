@@ -221,17 +221,17 @@ Combined with the split established above, the statement is: **rotations keep th
 
 The mass is where the two parts are coupled, and the coupling is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 in which every derivative is the gradient and acts by left multiplication. The pair stays two lines and is never written as one operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$. Each line is **off-diagonal in the two slots**: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The composition of the two lines is scalar because each is a gradient followed by the conjugate of the other,
 $$
-\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=\Box\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 with $\Box=\Delta_Q-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
+The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
 The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
@@ -305,8 +305,8 @@ The claims of this article, in order.
 | $-iR_{\mathrm{axf},\vec e_z} = i\omega = -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Chirality basis operator, $(-iR_{\mathrm{axf},\vec e_z})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality basis operator |
 | $\tilde{Ξ}_{\mathrm{sp},L,R}$ | The two parts of a field |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two lines, off-diagonal in the two slots |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$; the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two lines, off-diagonal in the two slots |
 | $iR_{\mathrm{axf},\vec e_x}$ | The frame basis operator; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Action of an odd element on the vectors; $u^2=\epsilon(u)I_4$ |
 | Reversal $\mathrm{rev}$ | The anti-automorphism that reverses the order of the factors; on an array it is the transpose, and on the biquaternions it is quaternion conjugation |

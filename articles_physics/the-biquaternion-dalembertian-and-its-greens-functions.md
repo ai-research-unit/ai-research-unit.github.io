@@ -4,13 +4,13 @@
 
 Every relativistic equation of this series is built from a single operator. The Klein–Gordon equation writes it with a scalar mass term, the Dirac equation uses its first-order square root, Maxwell's equations use the same square root on a bivector-valued field, and the retarded potentials use its inverse. That operator is the **biquaternion d'Alembertian**
 $$
-\Box = \tilde\nabla_\Phi\,(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\,\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi ,
+\Box = \tilde\nabla_\Phi\,(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\,\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi ,
 $$
 built from the biquaternionic gradient $\tilde\nabla_\Phi$ and its quaternion conjugate. The purpose of this article is to establish the operator itself, its adjoint structure, and the collection of distributions that invert it — its **Green's functions** — once and for all, so that the spin-specific articles can cite the result instead of rebuilding it.
 
 The article is deliberately not about a particle. The Klein–Gordon equation and its propagator belong to the companion articles on spin $0$; the Dirac equation and its descendants belong to the companions on spin $1/2$; Proca and Rarita–Schwinger belong to spin $1$ and above. What those articles share, and what is developed here, is the operator that all of them are written in terms of, together with the object that turns a source into a field. Three things are established.
 
-First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde\nabla_\Phi\rangle_{\natural}$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \vec k_\Phi^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-(\tilde\nabla^{\natural})_\Phi$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Algebra and Element Conventions*,
+First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde\nabla_\Phi\rangle_{\natural}$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \vec k_\Phi^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-(\tilde\nabla_\Phi)^{\natural}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Algebra and Element Conventions*,
 $$
 \Box = \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
 $$
@@ -67,10 +67,10 @@ On the diagonal $e_\mu e_\mu^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $
 $$
 \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\partial^2/\partial R_t^2 + \Delta\right).
 $$
-The same computation with the factors exchanged gives $(\tilde\nabla^{\natural})_\Phi\tilde{\nabla} = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
+The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural}\tilde{\nabla} = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
 \boxed{\;
-\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.
+\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.
 $$
 
 The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde\nabla_\Phi\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
@@ -117,19 +117,19 @@ The algebraic identity
 $$
 \sum_\mu \bigl(\partial/\partial R_\mu\,\tilde{F}\bigr)^\dagger e_\mu
 = \left(\sum_\mu e_\mu^{*}\,\partial/\partial R_\mu\,\tilde{F}\right)^\dagger
-= \bigl((\tilde\nabla^{\natural})_\Phi\tilde{F}\bigr)^\dagger
+= \bigl((\tilde\nabla_\Phi)^{\natural}\tilde{F}\bigr)^\dagger
 $$
 uses only the antilinearity of ${}^{*}$ and $(e_\mu^{*})^{*} = e_\mu$; it was verified on random complex biquaternion coefficients. Substituting,
 $$
-\langle \tilde{F}, \tilde\nabla_\Phi\tilde Q\rangle = -\langle (\tilde\nabla^{\natural})_\Phi\tilde{F}, \tilde Q\rangle ,
+\langle \tilde{F}, \tilde\nabla_\Phi\tilde Q\rangle = -\langle (\tilde\nabla_\Phi)^{\natural}\tilde{F}, \tilde Q\rangle ,
 \qquad\text{that is,}\qquad
-\tilde{\nabla}^{*} = -\,(\tilde\nabla^{\natural})_\Phi .
+\tilde{\nabla}^{*} = -\,(\tilde\nabla_\Phi)^{\natural}.
 $$
-The adjoint of the gradient is minus its conjugate; equivalently, the adjoint of the conjugate gradient is minus the gradient, $\bigl((\tilde\nabla^{\natural})_\Phi\bigr)^\dagger = -\,\tilde\nabla_\Phi$, since ${}^{*}$ is an involution on operators. The d'Alembertian is then self-adjoint with no residual sign,
+The adjoint of the gradient is minus its conjugate; equivalently, the adjoint of the conjugate gradient is minus the gradient, $\bigl((\tilde\nabla_\Phi)^{\natural}\bigr)^\dagger = -\,\tilde\nabla_\Phi$, since ${}^{*}$ is an involution on operators. The d'Alembertian is then self-adjoint with no residual sign,
 $$
-\Box^{*} = \bigl(\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi\bigr)^\dagger
-= \bigl((\tilde\nabla^{\natural})_\Phi\bigr)^\dagger \tilde{\nabla}^{*}
-= \bigl(-\tilde\nabla_\Phi\bigr)\bigl(-(\tilde\nabla^{\natural})_\Phi\bigr)
+\Box^{*} = \bigl(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\bigr)^\dagger
+= \bigl((\tilde\nabla_\Phi)^{\natural}\bigr)^\dagger \tilde{\nabla}^{*}
+= \bigl(-\tilde\nabla_\Phi\bigr)\bigl(-(\tilde\nabla_\Phi)^{\natural}\bigr)
 = \Box ,
 $$
 which is the operator form of the statement that $\Box$ is real and central. This is the first place the four involutions of the companion article on the involution lattice do work: the adjoint is $-{}^{\natural}$, the reversal, and self-adjointness after composition follows from composing the sign twice. The companion article develops the lattice, the fixed spaces, and the matrix realisations in full; here the only fact used is the one just displayed.
@@ -262,12 +262,12 @@ which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec 
 
 ## The First-Order Kernel
 
-The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde\nabla_\Phi$ rather than of $\Box$. Since $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \Box$, the inverse of left multiplication by $\tilde\nabla_\Phi$ is left multiplication by $(\tilde\nabla^{\natural})_\Phi$ followed by the scalar kernel; the subscript names the operator inverted, as $G_\Box$ names $\Box$:
+The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde\nabla_\Phi$ rather than of $\Box$. Since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$, the inverse of left multiplication by $\tilde\nabla_\Phi$ is left multiplication by $(\tilde\nabla_\Phi)^{\natural}$ followed by the scalar kernel; the subscript names the operator inverted, as $G_\Box$ names $\Box$:
 $$
 \boxed{\;\begin{aligned}
-\tilde{G}_{\Phi,\tilde{\nabla}}(\tilde R_\Phi) &:= (\tilde\nabla^{\natural})_\Phi\,G_\Box(\tilde R_\Phi) \in \mathbb{B}_{\Phi} ,\\[2pt]
+\tilde{G}_{\Phi,\tilde{\nabla}}(\tilde R_\Phi) &:= (\tilde\nabla_\Phi)^{\natural}\,G_\Box(\tilde R_\Phi) \in \mathbb{B}_{\Phi} ,\\[2pt]
 \tilde\nabla_\Phi\,\tilde{G}_{\Phi,\tilde{\nabla}}(\tilde R_\Phi)
-&= \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi\,G_\Box(\tilde R_\Phi)
+&= \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\,G_\Box(\tilde R_\Phi)
 = \Box\,G_\Box(\tilde R_\Phi)
 = -\,\delta^{(4)}(\tilde R_\Phi) .
 \end{aligned}\;}
@@ -299,7 +299,7 @@ $$
 $$
 in contrast with $G_\Box$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.
 
-**The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $(\tilde\nabla^{\natural})_\Phi$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *The Dirac Equation in Biquaternionic Form* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
+**The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $(\tilde\nabla_\Phi)^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *The Dirac Equation in Biquaternionic Form* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
 
 ## The Shifted Gradient and the Generalized Maxwell–Dirac Equation
 
@@ -307,11 +307,11 @@ The first-order kernel inverts $\tilde\nabla_\Phi$. The author's programme on ge
 $$
 \tilde{\nabla}_\kappa = \tilde\nabla_\Phi + \kappa , \qquad \kappa \in \mathbb{C} ,
 $$
-with $\kappa$ a central scalar; because $\kappa$ commutes with the whole algebra the shift changes no order of factors, and its conjugate is the same shift, $(\tilde\nabla^{\natural})_\Phi_\kappa = (\tilde\nabla^{\natural})_\Phi + \kappa$.
+with $\kappa$ a central scalar; because $\kappa$ commutes with the whole algebra the shift changes no order of factors, and its conjugate is the same shift, $(\tilde\nabla_\Phi)^{\natural}_\kappa = (\tilde\nabla_\Phi)^{\natural}+ \kappa$.
 
-**The square.** The two shifted gradients compose to a central scalar operator. Since $\tilde\nabla_\Phi + (\tilde\nabla^{\natural})_\Phi = 2\partial/\partial R_t$, the cross term is $2\kappa\,\partial/\partial R_t$ and
+**The square.** The two shifted gradients compose to a central scalar operator. Since $\tilde\nabla_\Phi + (\tilde\nabla_\Phi)^{\natural}= 2\partial/\partial R_t$, the cross term is $2\kappa\,\partial/\partial R_t$ and
 $$
-\tilde{\nabla}_\kappa (\tilde\nabla^{\natural})_\Phi_\kappa = (\tilde\nabla^{\natural})_\Phi_\kappa \tilde{\nabla}_\kappa
+\tilde{\nabla}_\kappa (\tilde\nabla_\Phi)^{\natural}_\kappa = (\tilde\nabla_\Phi)^{\natural}_\kappa \tilde{\nabla}_\kappa
 = \Box + 2\kappa\,\partial/\partial R_t + \kappa^2
 = \left(\partial/\partial R_t + \kappa\right)^2 + \Delta_\Phi ,
 $$
@@ -329,19 +329,19 @@ is the corpus form of the source's **generalized Maxwell–Dirac equation**. At 
 
 **A convention crossing.** The source's gradient is $\partial/\partial\tau \pm i\nabla = i\tilde\nabla_\Phi$ (the dictionary is recorded in the companion article on the electro-gravimagnetic programme), so its mass $m$ and the corpus shift are related by $\kappa = -im$. The case the source studies is an **imaginary** $m$, which is a **real** $\kappa$ here, and the dichotomy runs in opposite directions on the two sides. On the corpus side the symbol vanishes for real $(\omega, \vec k_\Phi)$ — non-trivial homogeneous plane waves exist — exactly when $\kappa$ is real, the vanishing set being the shifted cone $\omega/c = \kappa \pm \|\vec k_\Phi\|$. For non-real $\kappa$ the symbol never vanishes on real $(\omega, \vec k_\Phi)$, so there is no non-trivial **plane-wave** solution; the stronger statement, that there is no non-trivial solution at all, holds only in the tempered class, because the substitution $u = \exp(-\kappa x_4)v$ with $x_4 = i r'_t$ turns the operator into $\exp(-\kappa x_4)\Box \exp(+\kappa x_4)$, so that *every* wave $v$ with $\Box v = 0$ gives a homogeneous solution $u$ and that solution is not tempered. The companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation* states that class, the general homogeneous solution, and the fundamental solution of the shifted operator. Both branches were checked numerically, and the source's own statement (non-trivial solutions for imaginary $m$ alone) is the mirror image under $\kappa = -im$. An article that copies the source's "imaginary mass" into the corpus convention without the factor $i$ will place the interesting case on the wrong side of this dichotomy.
 
-**The scalar-potential equation.** Applying $(\tilde\nabla^{\natural})_\Phi_\kappa$ to $\tilde{\nabla}_\kappa B = F$ gives
+**The scalar-potential equation.** Applying $(\tilde\nabla_\Phi)^{\natural}_\kappa$ to $\tilde{\nabla}_\kappa B = F$ gives
 $$
-\left(\Box + 2\kappa\,\partial/\partial R_t + \kappa^2\right) B = (\tilde\nabla^{\natural})_\Phi_\kappa F ,
+\left(\Box + 2\kappa\,\partial/\partial R_t + \kappa^2\right) B = (\tilde\nabla_\Phi)^{\natural}_\kappa F ,
 $$
 so each component of $B$ obeys the shifted scalar equation; and conversely a solution of the homogeneous scalar equation generates a solution of the homogeneous first-order equation,
 $$
 \left(\Box + 2\kappa\,\partial/\partial R_t + \kappa^2\right) u = 0
 \quad\Longrightarrow\quad
-\tilde{\nabla}_\kappa\left((\tilde\nabla^{\natural})_\Phi_\kappa u\right) = 0 .
+\tilde{\nabla}_\kappa\left((\tilde\nabla_\Phi)^{\natural}_\kappa u\right) = 0 .
 $$
-The converse is the shifted form of the **monogenic completion** the companion Dirac article uses at $\kappa = 0$, where a harmonic scalar $u$ is completed to the kernel element $(\tilde\nabla^{\natural})_\Phiu$; the source generates its spinors this way, from a scalar "C-field" by convolution, and the companion Dirac article takes that up. The source names the scalar operator the **Klein–Gordon–Fock–Schrödinger equation**: its symbol carries a second-order term of Klein–Gordon–Fock type, $\Box + \kappa^2$, and a first-order-in-time term $\kappa\,\partial/\partial R_t$ of Schrödinger type, and the name records that one operator contains one term of each kind. The corpus keeps the name only with that content attached. What the name does not supply is a derivation: one operator carrying a term of each type is not the same statement as the Klein–Gordon and Schrödinger equations following from it, and the corpus does not claim the latter.
+The converse is the shifted form of the **monogenic completion** the companion Dirac article uses at $\kappa = 0$, where a harmonic scalar $u$ is completed to the kernel element $(\tilde\nabla_\Phi)^{\natural}u$; the source generates its spinors this way, from a scalar "C-field" by convolution, and the companion Dirac article takes that up. The source names the scalar operator the **Klein–Gordon–Fock–Schrödinger equation**: its symbol carries a second-order term of Klein–Gordon–Fock type, $\Box + \kappa^2$, and a first-order-in-time term $\kappa\,\partial/\partial R_t$ of Schrödinger type, and the name records that one operator contains one term of each kind. The corpus keeps the name only with that content attached. What the name does not supply is a derivation: one operator carrying a term of each type is not the same statement as the Klein–Gordon and Schrödinger equations following from it, and the corpus does not claim the latter.
 
-**The Cauchy problem.** The second-order operator to which the shifted square reduces at $\kappa = 0$ is $\Box$, the four-dimensional Laplacian in the $i r'_t$ variables, so the wave operator is $-\Box$. The Cauchy problem $-\Box G_{\mathrm{prop}} = G$ with data $G_{\mathrm{prop}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = K^0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\partial/\partial\tau G_{\mathrm{prop}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = K^1(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is solved componentwise by the Kirchhoff formula of the companion *Partial Differential Equations*, with the retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$ of the section above; the biquaternion content is that the data and the solution are read off component by component and the four scalar solutions are reassembled. The source writes the first-order version of the same representation, in which the solution carries an extra $(\tilde\nabla^{\natural})_\Phi_\kappa$ applied to the scalar potential, so that the scalar formula is recovered at $\kappa = 0$; the corpus records the second-order Kirchhoff form as the one it can state and verify, and the source's first-order integral form is now recorded and checked in the companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, together with the fundamental solution of the shifted operator itself.
+**The Cauchy problem.** The second-order operator to which the shifted square reduces at $\kappa = 0$ is $\Box$, the four-dimensional Laplacian in the $i r'_t$ variables, so the wave operator is $-\Box$. The Cauchy problem $-\Box G_{\mathrm{prop}} = G$ with data $G_{\mathrm{prop}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = K^0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ and $\partial/\partial\tau G_{\mathrm{prop}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = K^1(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is solved componentwise by the Kirchhoff formula of the companion *Partial Differential Equations*, with the retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$ of the section above; the biquaternion content is that the data and the solution are read off component by component and the four scalar solutions are reassembled. The source writes the first-order version of the same representation, in which the solution carries an extra $(\tilde\nabla_\Phi)^{\natural}_\kappa$ applied to the scalar potential, so that the scalar formula is recovered at $\kappa = 0$; the corpus records the second-order Kirchhoff form as the one it can state and verify, and the source's first-order integral form is now recorded and checked in the companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, together with the fundamental solution of the shifted operator itself.
 
 **The bounded-domain form, and the Kirchhoff–Green representation.** The formula above is the whole-space form, in which the domain is all of space and the only data are the initial values. On a bounded domain the same kernel gives the **Kirchhoff–Green representation**, in which the value at an interior point is the volume integral of the wave operator applied to the field against the kernel together with a surface term carrying the field and its normal derivative; the surface splits into the initial surface, where the term is the Cauchy data, and the lateral boundary, where it is the boundary data. The biquaternionic form of that identity in the four-dimensional Laplacian variables, with its numerical verification, is in the companion *Biquaternion Integration*; the analogue for the biquaternionic wave ("biwave") operator, unifying the Maxwell- and Dirac-equivalent second-order equations in one operator and carrying the conditions on its shock fronts, is constructed by L. A. Alexeyeva in the 2021 paper cited in Further Reading.
 
@@ -352,7 +352,7 @@ $$
 \vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla , \qquad
 D^\pm_F = \vec\nabla^{\pm}_\Phi + f \pm F , \qquad \tau = r'_{t} ,
 $$
-so that $D^+_F$ carries the coefficient and $D^-_F$ its mutual partner $f - F$. The dictionary of the section above extends without change: $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$ and $\vec\nabla^{-}_\Phi = i(\tilde\nabla^{\natural})_\Phi$, and the paper's structural coefficient is the corpus shift $\kappa = -i(f+F)$. The corpus's central shift is therefore the case $F = 0$, and the whole of the new content is the non-central part.
+so that $D^+_F$ carries the coefficient and $D^-_F$ its mutual partner $f - F$. The dictionary of the section above extends without change: $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$ and $\vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural}$, and the paper's structural coefficient is the corpus shift $\kappa = -i(f+F)$. The corpus's central shift is therefore the case $F = 0$, and the whole of the new content is the non-central part.
 
 **The composition.** The mutual bigradients compose to the wave operator, $\vec\nabla^{+}_\Phi\vec\nabla^{-}_\Phi = \vec\nabla^{-}_\Phi\vec\nabla^{+}_\Phi = \Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi$ — the massless composition of the section above, re-read in the source's variables — and so do the mutual MD-operators,
 $$
@@ -387,7 +387,7 @@ where the last line uses $\flat = -{}^{*}$. The first-order kernel lies in the f
 $$
 \tilde{G}_{\Phi,\tilde{\nabla}}^\flat = \tilde{G}_{\Phi,\tilde{\nabla}} , \qquad \tilde{G}_{\Phi,\tilde{\nabla}}^{*} = -\,\tilde{G}_{\Phi,\tilde{\nabla}} ,
 $$
-which is exactly the definition of the material sector. Its $i$-multiple lies in the informational sector, $i\tilde{G}_{\Phi,\tilde{\nabla}} \in \mathbb{B}_{\Psi}$, since $i\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi}$; the conjugations themselves leave the sector untouched and it is the central multiplication that exchanges the two, as the companion article on the involutions establishes. The operator identities mirror these statements: $\Box$ has real coefficients, hence is fixed by ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ and negated by $\flat$, exactly as the real scalar kernels are, and $\tilde{\nabla}^{*} = -(\tilde\nabla^{\natural})_\Phi$. The kernel's conjugation behaviour is therefore the operator's own: the reality of the kernel and the reality of the operator are one statement, inherited by the scalar kernel from the operator it inverts. The companion article *Algebra and Element Conventions* fixes the four conjugations and their real subspaces; the companion article on the involutions develops the lattice, the Klein four-group of $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\}$ with $\flat = -{}^{*}$, and the matrix realisations. What this article adds is the operator content: the wave operator is the biquaternion norm of the gradient, its adjoint is itself because the adjoint of the gradient is $-(\tilde\nabla^{\natural})_\Phi$, and the kernel that inverts it is central, while the kernel that inverts the first-order operator is a material four-vector.
+which is exactly the definition of the material sector. Its $i$-multiple lies in the informational sector, $i\tilde{G}_{\Phi,\tilde{\nabla}} \in \mathbb{B}_{\Psi}$, since $i\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi}$; the conjugations themselves leave the sector untouched and it is the central multiplication that exchanges the two, as the companion article on the involutions establishes. The operator identities mirror these statements: $\Box$ has real coefficients, hence is fixed by ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ and negated by $\flat$, exactly as the real scalar kernels are, and $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$. The kernel's conjugation behaviour is therefore the operator's own: the reality of the kernel and the reality of the operator are one statement, inherited by the scalar kernel from the operator it inverts. The companion article *Algebra and Element Conventions* fixes the four conjugations and their real subspaces; the companion article on the involutions develops the lattice, the Klein four-group of $\{\mathrm{id}, {}^{\natural}, \bar{\cdot}, {}^{*}\}$ with $\flat = -{}^{*}$, and the matrix realisations. What this article adds is the operator content: the wave operator is the biquaternion norm of the gradient, its adjoint is itself because the adjoint of the gradient is $-(\tilde\nabla_\Phi)^{\natural}$, and the kernel that inverts it is central, while the kernel that inverts the first-order operator is a material four-vector.
 
 A last structural remark ties the kernel theory to the algebra's null cone. The massless symbol vanishes on $\{\langle\tilde P_{\Phi}\rangle_{\natural} = 0\}$, the zero-divisor cone, and the causal kernels are supported on exactly the corresponding cone in position space. The algebra's zero divisors, its projective geometry, and the light-cone structure are the subject of the companion articles on the null quadric; for the operator theory the point is that the characteristic cone of $\Box$ is the algebra's null cone, so that the propagation described by these Green's functions is the propagation of the biquaternion norm's zero set. That identification — the light cone *is* the zero-divisor cone — is what makes the framework's causal structure algebraic rather than postulated.
 
@@ -395,13 +395,13 @@ A last structural remark ties the kernel theory to the algebra's null cone. The 
 
 The biquaternion d'Alembertian is the biquaternion norm of the gradient,
 $$
-\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 ,
+\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 ,
 $$
-a central scalar operator whose symbol is $\omega^2/c^2 - \vec k_\Phi^2$ and whose sign is the series convention. Its adjoint is the gradient's adjoint composed with itself; the gradient obeys $\tilde{\nabla}^{*} = -(\tilde\nabla^{\natural})_\Phi$, so
+a central scalar operator whose symbol is $\omega^2/c^2 - \vec k_\Phi^2$ and whose sign is the series convention. Its adjoint is the gradient's adjoint composed with itself; the gradient obeys $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, so
 $$
 \Box^{*} = \Box ,
 $$
-the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = ((\tilde\nabla^{\natural})_\Phi\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ was verified exactly on a random symbol.
+the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = ((\tilde\nabla_\Phi)^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ was verified exactly on a random symbol.
 
 The Green's functions are the boundary conditions on one equation, $-\Box G = \delta^{(4)}$. The invariant kernel is
 $$
@@ -419,7 +419,7 @@ obtained from the light-cone delta with Jacobian $|dg/dr'_t| = 2R$ and selected 
 
 The massive operator $\Box - k_m^{2}$ has the invariant kernel $\frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$, with the massless kernel as its short-distance limit and exponential screening at large distance, and a causal kernel with support inside the cone. The first-order operator has a biquaternion-valued kernel,
 $$
-\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}^{\natural})_\Phi G_\Box \in \mathbb{B}_{\Phi} ,
+\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}_\Phi)^{\natural}G_\Box \in \mathbb{B}_{\Phi} ,
 \qquad
 \tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta ,
 $$
@@ -437,8 +437,8 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 |---|---|
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial R_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
-| $\tilde{\nabla}^{*} = -(\tilde\nabla^{\natural})_\Phi$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta_\Phi$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
+| $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_{\Phi,\tilde{\nabla}}^\flat = \tilde{G}_{\Phi,\tilde{\nabla}}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde{\nabla}} \in \mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\rho^2 = \langle\tilde R_\Phi\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |
@@ -448,10 +448,10 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\Delta_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box\Delta_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
 | $G^{(1/k_m)}_{\mathrm{inv}} = \frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$ | Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\hbar/(mc)$ |
-| $\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}^{\natural})_\Phi G_\Box \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta$ |
+| $\tilde{G}_{\Phi,\tilde{\nabla}} = (\tilde{\nabla}_\Phi)^{\natural}G_\Box \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta$ |
 | $\tilde{\nabla}_\kappa = \tilde\nabla_\Phi + \kappa$, $\kappa \in \mathbb{C}$ | Shifted gradient (central shift) |
-| $\tilde{\nabla}_\kappa(\tilde\nabla^{\natural})_\Phi_\kappa = \Box + 2\kappa\partial/\partial R_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$ |
-| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \vec\nabla^{\pm}_\Phi + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla^{\natural})_\Phi$, and the shift is the non-central $\kappa = -i(f+F)$ |
+| $\tilde{\nabla}_\kappa(\tilde\nabla_\Phi)^{\natural}_\kappa = \Box + 2\kappa\partial/\partial R_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$ |
+| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \vec\nabla^{\pm}_\Phi + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
 | $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box$ |
 | $\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\exp(\pm i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\delta(\tau-r)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t)$ | Step function selecting the future cone |

@@ -11,7 +11,7 @@ Four boundaries are respected. (i) The corpus's own Dirac equation, its square, 
 Two conventions are load-bearing. The source's **two bigradients** are $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = r'_{t}$. They are the corpus's gradient pair times $i$,
 
 $$
-\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi, \qquad \vec\nabla^{-}_\Phi = i(\tilde\nabla^{\natural})_\Phi,
+\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi, \qquad \vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural},
 \qquad \partial/\partial\tau = -i\,\partial/\partial r'_t ,
 $$
 
@@ -70,7 +70,7 @@ This is the KGFSh operator the d'Alembertian article owns, and it is where the p
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 \qquad\Longrightarrow\qquad
 \bigl(\Box - k_m^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},R,L} = 0 ,
 $$
@@ -303,7 +303,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 
 | Symbol | Meaning |
 |---|---|
-| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $\tau = r'_{t}$ | The source's two bigradients; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla^{\natural})_\Phi$ |
+| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $\tau = r'_{t}$ | The source's two bigradients; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural}$ |
 | $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box$ | The source's wave operator, minus the corpus's d'Alembertian |
 | $\bigl(\vec\nabla^{\pm}_\Phi + m\bigr)B = F$ | The source's first-order equation; the corpus's generalized Maxwell–Dirac equation with $\kappa = -im$ |
 | $\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau+m)^2-\Delta_\Phi = \exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$ | The KGFSh operator and its conjugation form |

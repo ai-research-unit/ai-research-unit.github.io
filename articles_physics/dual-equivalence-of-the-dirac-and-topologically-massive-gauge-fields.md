@@ -45,7 +45,7 @@ The gradient acts on the left. The free equation is first order in one field, $\
 $$
 \tilde\nabla^2=e_t\Bigl(\frac{\partial^2}{\partial R_t^2}-\Delta_Q\Bigr)+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
-and the mixed term is a vector. The operator $\Box$ has no such term because $(\tilde\nabla^{\natural})_\Phi$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and this article writes no other first-order massive equation of one field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+and the mixed term is a vector. The operator $\Box$ has no such term because $(\tilde\nabla_\Phi)^{\natural}$ carries the spatial signs reversed, and that is why the d'Alembertian is the norm and not the square. The massive equation is the chiral pair of §*The Two Dirac Equations*, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, and this article writes no other first-order massive equation of one field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ## The Parent Action
 
@@ -216,7 +216,7 @@ Two equations carry the name in this corpus, and they differ in which side of th
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 both lines acting on the left, with the mass as the pairing of the two chiral parts and $\tilde\nabla^2$ not scalar. In the s-vector carrier the same pair is the source's two chiral parts,
 $$
@@ -234,13 +234,13 @@ with no sum on $\mu$ in $\epsilon_\mu$. Two equations, one per value; the opposi
 
 **The two-sided equation.** Read on the algebra rather than on the module, the same content is one equation whose two sides are the two multiplications. In the observer frame it is
 $$
-\Bigl(-(\tilde\nabla^{\natural})_\Phi-k_m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
+\Bigl(-(\tilde\nabla_\Phi)^{\natural}-k_m\,i\,\overline{\;\cdot\;}\,\vec e_z\Bigr)F=0,
 $$
-with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in the units of the check the time part of $-(\tilde\nabla^{\natural})_\Phi$ is $-e_t\,\partial/\partial R_t=i\,e_t\,\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $k_m\,\Gamma\overline F$, and the equation can be moved to one side:
+with $F\in\mathbb{B}$: the gradient acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. This is the source's equation: in the units of the check the time part of $-(\tilde\nabla_\Phi)^{\natural}$ is $-e_t\,\partial/\partial R_t=i\,e_t\,\partial/\partial r'_t$ and its space part is $\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$. Since $\Gamma$ is the right multiplication by $-i\vec e_z$, the mass term is $k_m\,\Gamma\overline F$, and the equation can be moved to one side:
 $$
 -k_m\,i\,\overline F\,\vec e_z=k_m\,(-i\overline F\,\vec e_z)=k_m\,\Gamma\,\overline F
 \qquad\Longrightarrow\qquad
-(\tilde\nabla^{\natural})_\PhiF=k_m\,\Gamma\,\overline F ,
+(\tilde\nabla_\Phi)^{\natural}F=k_m\,\Gamma\,\overline F ,
 $$
 one factor of $i$ spent on $i^2=-1$. Read back, $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\overline F\,\vec e_z$ are the two chiral fields, so the display is the pair above in another variable and not a second dynamics. The mass therefore acts by right multiplication by the **chirality**, on the conjugate field, and it is the same $\Gamma$ that appears in $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iC_0\,\Gamma\,iC_\mu\tilde{Ξ}_{\mathrm{sp}}$ above. $\Gamma$ is a right multiplication alone, and right multiplications by orthogonal units anticommute, so it anticommutes with all four generators: it is the chirality, not a fifth generator.
 
@@ -321,7 +321,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $iC_\mu$ | The central $i$ times that generator; the same sides; $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $\Gamma:\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z=\tilde{Ξ}_{\mathrm{sp}}(i\omega)$ | Chirality, a right action alone; $\Gamma^2=\mathrm{id}$; $\Gamma=i\,(C_0C_1C_2C_3)$, whose left factors cancel in pairs |
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
 | $\tilde\nabla^{ea}_\mu$, $\tilde\nabla^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
 | $\Box$ | The d'Alembertian, the norm of $\tilde\nabla_\Phi$; on $Q_t=i r'_t$ it is $\Delta-\partial^2/\partial {r'_t}^2$ |
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |

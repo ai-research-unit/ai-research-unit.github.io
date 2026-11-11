@@ -16,7 +16,7 @@ Three threads are developed below.
 
 - **The algebraic criterion.** A nonzero biquaternion has vanishing biquaternion norm if and only if it is a zero divisor, and the zero divisors split into two families — the **nilpotents**, whose scalar part vanishes and whose square is zero, written $\tilde\Upsilon$ where the nilpotency is the point (§*The Nilpotent Convention* of *Special Element Conventions*), and the **idempotent multiples**, whose scalar part does not. The cone of the material sector is made of the second family, and that is the family that generates the algebra's minimal ideals.
 - **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ each contain a cone, and the $\mathbb{B}_{\Phi}$ cone is the physical light cone.
-- **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, and a four-wavevector $\tilde P_{\Phi}$ is null exactly when $\langle\tilde P_{\Phi}\rangle_{\natural} = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural} = 0$. For such a $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \langle\tilde P_{\Phi},\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
+- **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and a four-wavevector $\tilde P_{\Phi}$ is null exactly when $\langle\tilde P_{\Phi}\rangle_{\natural} = \langle\tilde P_{\Phi},\tilde P_{\Phi}\rangle_{\natural} = 0$. For such a $\tilde P_{\Phi}$ every function of the phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \langle\tilde P_{\Phi},\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
 ## The Biquaternion Norm and Its Vanishing Set
 
@@ -156,10 +156,10 @@ The distribution is therefore forced by the topology of the four real slices: th
 The biquaternion norm is not only the interval; it is also the d'Alembertian. Composing the gradient with its quaternion conjugate gives
 
 $$
-\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta =: \Box ,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta =: \Box ,
 $$
 
-because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $(\tilde\nabla^{\natural})_\Phi$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
+because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,r_y,r_z\}}\partial^2/\partial R_\mu^2$, the minus sign in $(\tilde\nabla_\Phi)^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
 Now let $\tilde P_{\Phi}$ be a four-wavevector, meaning an element of $\mathbb{B}_{\Phi}$ written as
 
@@ -205,7 +205,7 @@ $$
 
 with $\omega_i = c|\vec k_i|$, so that each $\langle\tilde P_{\Phi,i}\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
-The factorization has a second face. Because $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ and the two factors commute, the wave equation is also $\tilde\nabla_\Phi((\tilde\nabla^{\natural})_\PhiΞ) = 0$, and the cone is the set of directions in which the first-order operator $(\tilde\nabla^{\natural})_\Phi$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
+The factorization has a second face. Because $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and the two factors commute, the wave equation is also $\tilde\nabla_\Phi((\tilde\nabla_\Phi)^{\natural}Ξ) = 0$, and the cone is the set of directions in which the first-order operator $(\tilde\nabla_\Phi)^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
 ## Invariance of the Cone
 
@@ -253,7 +253,7 @@ The **physical interpretation** of this algebraic boundary is the content of the
 
 ## What the Algebra Supplies and What It Is Standard
 
-**Supplied by the algebra.** The identification of the interval with the biquaternion norm, hence of the light cone with the zero set of the algebra's quadratic form; the criterion that the non-pure zero divisors are exactly the idempotent multiples, with the identity $\tilde{Q}^2 = 2Q_t\tilde{Q}$; the placement of the real light cone in the non-pure family; the factorization $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ and the resulting characterization of null propagation as the kernel of the first-order operator; and the invariance of the cone under rotor conjugation, which is multiplicativity of the biquaternion norm.
+**Supplied by the algebra.** The identification of the interval with the biquaternion norm, hence of the light cone with the zero set of the algebra's quadratic form; the criterion that the non-pure zero divisors are exactly the idempotent multiples, with the identity $\tilde{Q}^2 = 2Q_t\tilde{Q}$; the placement of the real light cone in the non-pure family; the factorization $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and the resulting characterization of null propagation as the kernel of the first-order operator; and the invariance of the cone under rotor conjugation, which is multiplicativity of the biquaternion norm.
 
 **Standard physics transcribed.** The light-cone structure of Minkowski space, the dispersion relation $\omega = c|\vec k_\Phi|$, the classification of the electromagnetic field as null/radiative when both invariants vanish, and the characteristic-cone interpretation of a second-order hyperbolic operator are all standard. The algebra reproduces them; it does not add a new propagation law.
 
@@ -290,7 +290,7 @@ $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
-The cone is also the locus of propagation. Because $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k_\Phi|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
+The cone is also the locus of propagation. Because $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k_\Phi|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
 The light cone is the set on which elements of the biquaternion algebra cease to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 
@@ -308,7 +308,7 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 | $\langle\tilde{Q}\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Interval; zero set is the light cone |
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
-| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi$, $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$, $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde P_{\Phi} = i\frac{\omega}{c}e_t + \vec k_\Phi$ | Four-wavevector, $\mathbb{B}_{\Phi}$ |
 | $\langle\tilde P_{\Phi}\rangle_{\natural} = -\omega^2/c^2 + \vec k_\Phi^2$ | Null condition $\Leftrightarrow$ dispersionless wave |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |

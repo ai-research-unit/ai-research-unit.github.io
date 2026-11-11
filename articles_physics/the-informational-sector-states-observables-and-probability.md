@@ -406,7 +406,7 @@ The **hypothesis** is that the Hermitian subspace is physically realised as a di
 The open questions are concrete.
 
 1. **Physical reality.** Is $\mathbb{B}_{\Psi}$ realised as a distinct sector, or is it only the kinematics of a qubit? A realisation would require a coupling with observable consequences.
-2. **Dynamics.** Does the sector have its own dynamics, with $\mathbb{B}_{\Psi}$-valued fields and wave equations? The operators $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ and $\Box$ are available, but which one governs the sector is not fixed.
+2. **Dynamics.** Does the sector have its own dynamics, with $\mathbb{B}_{\Psi}$-valued fields and wave equations? The operators $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ and $\Box$ are available, but which one governs the sector is not fixed.
 3. **Coupling.** Beyond the Lorentz action, is there a new coupling between the two sectors?
 4. **Entropy.** Does the framework admit an entropy functional on the states, for example $S(\tilde{Ϛ}_{\Psi})=-2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$? The logarithm is multivalued, and the proposal needs verification.
 5. **Non-Hermitian idempotents.** The idempotents built on the roots of $-1$ lie outside $\mathbb{B}_{\Psi}$. Are they virtual states, or do they have a physical meaning?

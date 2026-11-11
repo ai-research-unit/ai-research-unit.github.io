@@ -12,7 +12,7 @@ $$
 
 was shown to have a biquaternion norm $\langle\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural}$ whose vanishing is exactly the condition that the field be null: $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise. A null field strength is a **zero divisor** of the algebra $\mathbb{B}$. That null condition is the algebraic signature of a radiation field. The main result of this article is that it is realized, pointwise, by the acceleration part of the Liénard–Wiechert field: the radiation field is precisely the part of $\tilde{F}$ that squares to zero.
 
-The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\eta^2 = -e_t$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, with $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \partial^2/\partial R_t^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $ϙ$, and its velocity is written $\vec v$ (the symbol $v$ is reserved for particle velocities, as in the companion articles). The temporal coefficient of the four-position is the material length $r'_t=c\,t'$, so the light cone is $r'_t=R$, that is $t'=R/c$. The clock is $t'=r'_t/c$ and every rate is written against it: a dot is $d/dt'$, the retarded clock is $t'_{\mathrm{ret}}=t'-R/c$, and $c\,d/dr'_t=d/dt'$.
+The conventions are those of the read-list articles throughout, and nothing in them is changed here. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\eta^2 = -e_t$, and scalar imaginary $i$ commuting with the quaternion units. The subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector, the material sector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector, the informational sector), $\mathbb{B}_{H}$ (real quaternions), and $\mathbb{B}_{C}$ (scalars). The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, with $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta$, and the symbol $c = 1/\sqrt{\epsilon\mu}$ always denotes the speed of light in the medium, reducing to $c_0$ in vacuum. The charge whose field is being computed is written $ϙ$, and its velocity is written $\vec v$ (the symbol $v$ is reserved for particle velocities, as in the companion articles). The temporal coefficient of the four-position is the material length $r'_t=c\,t'$, so the light cone is $r'_t=R$, that is $t'=R/c$. The clock is $t'=r'_t/c$ and every rate is written against it: a dot is $d/dt'$, the retarded clock is $t'_{\mathrm{ret}}=t'-R/c$, and $c\,d/dr'_t=d/dt'$.
 
 The article is organized as follows. The first section recalls the retarded solution of the Maxwell article and specializes it to a point charge. The second introduces the retarded null biquaternion and writes the Liénard–Wiechert potentials in biquaternion form, and adds the source's spinor square root and invariant retarded distance. The third computes the field and splits it into a velocity part and an acceleration part. The fourth identifies the acceleration part as the radiation field, and the fifth and sixth extract the radiated power and the angular distribution. A short section treats the radiation-reaction problem, and a closing section records how the two downstream exercises are applications of the construction.
 
@@ -244,14 +244,14 @@ These are the source's formulas, transcribed into the conventions of this articl
 
 ## The Field of the Retarded Potential
 
-In the Lorenz gauge the gauge scalar $S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ vanishes, so the field strength is obtained from the potential by the biquaternionic differentiation rule of the Maxwell article,
+In the Lorenz gauge the gauge scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ vanishes, so the field strength is obtained from the potential by the biquaternionic differentiation rule of the Maxwell article,
 
 $$
-\tilde{F} = (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right)
-= (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi},
+\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)
+= (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi},
 $$
 
-with the normalization caveat recorded there: the identification of $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ with the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:
+with the normalization caveat recorded there: the identification of $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ with the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ fixes the field-strength normalization once and for all, and that is the definition used here. Differentiating the Liénard–Wiechert potential is the standard computation; in the biquaternion formulation it is a single differentiation rather than four, and the result separates into two terms of very different character:
 
 $$
 \vec E = \vec E_v + \vec E_a, \qquad
@@ -281,7 +281,7 @@ $$
 \tilde{F}_a = i\sqrt{\epsilon}\,\vec E_a - \sqrt{\mu}\,\vec H_a ,
 $$
 
-with $\vec H_{v,a} = \vec B_{v,a}/\mu$. Both parts are pure-vector biquaternions with vanishing scalar part, like every field strength, and both satisfy $\tilde{F} = (\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ collectively. The split is not merely a calculational device: as the next two sections show, $\tilde{F}_v$ and $\tilde{F}_a$ have completely different algebraic types.
+with $\vec H_{v,a} = \vec B_{v,a}/\mu$. Both parts are pure-vector biquaternions with vanishing scalar part, like every field strength, and both satisfy $\tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ collectively. The split is not merely a calculational device: as the next two sections show, $\tilde{F}_v$ and $\tilde{F}_a$ have completely different algebraic types.
 
 ## The Velocity Field
 
@@ -559,7 +559,7 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion and scalar subspaces |
-| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi, \Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient, conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity part and acceleration (radiation) part of the field |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Potential biquaternion (Liénard–Wiechert) |

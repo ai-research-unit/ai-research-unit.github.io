@@ -322,7 +322,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric, the coefficient tuple of $\sum_\mu Q_\mu^2$; the material interval is that form read on $Q_t=i r'_t$, and its one minus is the square of the $i$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval |
 | $Q_\mu=q_\mu+iq'_\mu$; on $\mathbb{B}_{\Phi}$, $Q_t=i r'_t$ and $Q_\eta=x_\eta$; $x_\mu=(r'_{t}, r_x, r_y, r_z)$ | The coordinate, its material reading, and the real coordinates in which the contractions are written out |
-| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi, \Box = \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box = \tilde\nabla_\Phi\tilde{\nabla}^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = -h_{00}+h_{11}+h_{22}+h_{33}$ | Metric perturbation and its trace |
 | $\bar{h}_{00}=h_{00}+\tfrac12h$, $\bar{h}_{0\eta}=h_{0\eta}$, $\bar{h}_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l}$, $\bar{h} = -h$ | Trace-reversed perturbation |
 | $\delta\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ | Frame perturbation carrying $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_{\Phi}_\mu,\varepsilon_\nu\rangle_{\natural}$ |

@@ -170,13 +170,13 @@ $$
 where $\rho$ is the charge density and $\vec j$ is the current density. The current biquaternion lies in $\mathbb{B}_{\Phi}$ (imaginary scalar part, real vector part). The **conservation of charge** is expressed by the biquaternion equation
 
 $$
-\boxed{\;\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = 0\;}
+\boxed{\;\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = 0\;}
 $$
 
 where $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = c\,\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = c\,\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
 $$
 
 so the condition is the standard continuity equation
@@ -185,17 +185,17 @@ $$
 c\,\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j = 0.
 $$
 
-The condition is the **scalar part** of $(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi} = 0$. The full equation $(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi} = 0$ is stronger, because the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.
+The condition is the **scalar part** of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$. The full equation $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$ is stronger, because the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ does not vanish in general: it involves the spatial derivatives of $\rho$ and $\vec j$, and it does not correspond to a standard physical conservation law. So the continuity equation is the scalar projection of the biquaternion conservation law.
 
 ## The Klein–Gordon Equation
 
 The **Klein–Gordon equation** for a relativistic scalar field $\tilde{Ξ}$ of mass $m$ is
 
 $$
-\left(\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi - (k_m)^{2}\right)\tilde{Ξ} = 0.
+\left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2}\right)\tilde{Ξ} = 0.
 $$
 
-Here $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
+Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box = \partial^2/\partial R_t^2 + \Delta$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
 
 $$
 \Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
@@ -208,13 +208,13 @@ which is the standard Klein–Gordon equation $(\Box-k_m^{2})\tilde{Ξ}=0$, with
 The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}_{\mathrm{sp}}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ carries one component per chirality. In the massless case ($m = 0$), the pair decouples into the two one-sided equations
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = 0,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0,
 $$
 
 the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $k_m\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus; the series records it as retired. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
@@ -230,9 +230,9 @@ the first of which is identical in form to the source-free biquaternion Maxwell 
 | Mass-shell relation | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ | — |
 | Four-force | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}\tilde{P}_{\Phi}^{\natural} + \tilde{P}_{\Phi}\tilde{\mathcal F}_{\Phi,\mathrm{frc}}^{\natural} = 0$ |
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}}$ | — |
-| Current | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$ |
-| Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi - (k_m)^{2})\tilde{Ξ} = 0$ | — |
-| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | — |
+| Current | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ |
+| Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2})\tilde{Ξ} = 0$ | — |
+| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | — |
 
 Here $\hbar/(mc)$ is the mass length.
 
@@ -242,9 +242,9 @@ Here $\hbar/(mc)$ is the mass length.
 
 **The mass-shell relation is a norm condition.** The statement $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^2c^2$ is the statement that the **biquaternion norm** of the four-momentum is a fixed negative constant. Massless particles satisfy $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = 0$, which is the condition that the four-momentum lies on the **zero divisor cone** of the algebra (see the companion article on biquaternion zero divisors). So the light cone of Minkowski space is, in the biquaternion language, the **material-sector part of the zero divisor set** of the algebra.
 
-**The conserved current is a scalar projection of the biquaternion conservation law.** The continuity equation is the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi} = 0$. The full biquaternion equation is stronger, and the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}$ does not have an independent **physical interpretation** as a conservation law.
+**The conserved current is a scalar projection of the biquaternion conservation law.** The continuity equation is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi} = 0$. The full biquaternion equation is stronger, and the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ does not have an independent **physical interpretation** as a conservation law.
 
-**The wave equations are factorization.** The Klein–Gordon and Dirac equations are related by the factorization $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \Box$. The Dirac equation is the **first-order factor** of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
+**The wave equations are factorization.** The Klein–Gordon and Dirac equations are related by the factorization $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$. The Dirac equation is the **first-order factor** of the Klein–Gordon equation, and the mass term is the term that distinguishes the massive case from the massless one. This factorization is the biquaternion form of the standard Dirac factorization of the Klein–Gordon operator.
 
 ## The Tensor-Dynamics Reading, and the Question of Extra Terms
 
@@ -311,7 +311,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (scalar quadratic form) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ | Quaternion-conjugate gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | d'Alembertian |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\tau$ | Proper time |
 | $m$ | Rest mass |
 

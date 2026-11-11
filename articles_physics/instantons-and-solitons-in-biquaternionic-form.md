@@ -23,7 +23,7 @@ The framework's differential operators are Lorentzian. With the material coordin
 $$
 \tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z,
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2
 = + \partial^2/\partial R_t^2+\nabla^2,
 $$
 
@@ -369,8 +369,8 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $\mathbb{B}_{\Psi}$ | Informational sector, Hermitian, signature $(1,3)$ |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, the Euclidean slice |
 | $\mathbb{B}_{C}$ | Complex scalar subspace, $\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ |
-| $\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | The d'Alembertian; hyperbolic on $Q_t=i r'_t$, elliptic on $Q_t=c\tau$ |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; one operator in both charts, the rotation moving $Q_t$ alone |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian; hyperbolic on $Q_t=i r'_t$, elliptic on $Q_t=c\tau$ |
 | $\star$ | Hodge star on two-forms; $\star^2=+1$ Euclidean, $-1$ Lorentzian |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Abelian field-strength biquaternion |
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |

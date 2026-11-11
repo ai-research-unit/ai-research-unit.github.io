@@ -12,7 +12,7 @@ This article is a first attempt at that extension. Its subject is the canonical 
 
 The article has to be read with a clear division in mind, and we state it at the outset because it governs everything that follows.
 
-- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the two first-order equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ on the element, the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*. The pair operator that the corpus once wrote for the two together is retired, and it is not used here. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
+- **The standard part.** The biquaternion Dirac equation is the one-sided chiral pair, and it is the two first-order equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ on the element, the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*. The pair operator that the corpus once wrote for the two together is retired, and it is not used here. The two-sided equation of Kravchenko — the spatial gradient acting from the left and the mass from the right through $\vec e_z$ — is a different operator and is not quantized here. The canonical quantization of the one-sided equation — the Lagrangian, the conjugate momentum, the equal-time anticommutators, the mode expansion, the mode algebra, the Hamiltonian, and the normal-ordering constant — is textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.
 - **The open part.** What is *not* standard, and what this article cannot settle, is the intrinsic formulation of the quantization in the algebra $\mathbb{B}$ itself: which pairing of the algebra the $\mathbb{B}$-intrinsic Lagrangian and conjugate momentum are built from, since the algebra alone does not single one out; what the biquaternion Fock space is; and how the $\mathbb{Z}/2$ grading required by fermionic statistics is to be embedded in $\mathbb{B}$.
 
 We therefore make no claim that the extension is canonical in the biquaternion framework. The claim is narrower: the extension can be carried out on the elements of $\mathbb{B}$ with the parent article's solutions, and it supplies exactly the operator structure — anticommuting modes and a fermion-parity grading — that the KMS article identifies as missing. Whether that structure lifts to a genuinely biquaternionic one is the open question this article is meant to expose.
@@ -21,7 +21,7 @@ The article is organized as follows. The next section fixes the classical field 
 
 The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open. It closes with the summary, the notation table, and further reading.
 
-Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla^{\natural})_\Phi$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
+Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla_\Phi)^{\natural}$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -29,14 +29,14 @@ The biquaternion Dirac field of the companion article is an element-valued map $
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 where $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of the element of one chirality value and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of the other, as the parent article splits them. At $m=0$ the pair decouples into
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,\qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 one equation per chirality. The single equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$ is the member written $R$, not the whole massless field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -54,7 +54,7 @@ The solutions article works on the elements themselves. An element of $\mathbb{B
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 whose solutions, normalizations, and spin sums are established in the parent article and are used below without rederivation. Throughout, a mass enters only through the mass wave number $k_m=mc/\hbar$, so every $m$ below stands for $k_m$; the dimensionful constants are written out where a dimensional statement is at issue, in the inverse temperature $\beta=\frac{\hbar}{k_{B}\,T}$, in the plane-wave phase $\mathrm{Sc}\frac{\tilde{P}_{\Phi}\,\tilde{R}_{\Phi}^{\natural}}{\hbar}$, and in the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}\,c^{2}$.
@@ -77,7 +77,7 @@ The chiral pair is two first-order equations on two elements,
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 and composing each line with the conjugate of the other gives $\Box$ on its half. The mass is the off-diagonal coupling of the two lines, and no letter is written for the two together (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*).
@@ -116,7 +116,7 @@ $$
 \bar{\tilde{Ξ}}_{\mathrm{sp}}X:=\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\big),
 $$
 
-the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_\eta$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ returns the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; variation with respect to $\tilde{Ξ}_{\mathrm{sp}}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
+the Hermitian conjugate followed by right multiplication by the timelike element $i\vec e_x$, the element that the time term of the action carries. The scalar part is taken of the product, because a bilinear of an element-valued field is a number only through its scalar part. The three pieces are visible: no unit at all on the time derivative, the pair $\vec e_\eta$ on the left and $\vec e_z$ on the right on each spatial derivative, and the right multiplication by $i\vec e_x$ on the field itself. The $\vec e_z$ is $-\vec e_y\vec e_x$, the operator's right element times the adjoint's right factor; that minus sign turns the operator's $-i$ into the $+i$ displayed. Variation with respect to the adjoint $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ returns the two lines, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; variation with respect to $\tilde{Ξ}_{\mathrm{sp}}$ returns the conjugate equation, in which the operator acts on the adjoint, and it is the conjugate of the first.
 
 The Lagrangian is **real up to a four-divergence**. The mass term is real outright, because $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ is real for every element — verified at $4.4\times10^{-16}$ over fifty random elements — and $m$ is real. Each derivative term differs from its conjugate by a total derivative, both identities holding exactly, and the sum of the two differences is
 
@@ -541,7 +541,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\nabla}^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta_Q$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_Q-\partial^2/\partial {r'_t}^2$ |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_Q-\partial^2/\partial {r'_t}^2$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | Classical Dirac field, an element of $\mathbb{B}$, in its two chiral halves |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\tilde{Ξ}}_{\mathrm{sp}}X=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |

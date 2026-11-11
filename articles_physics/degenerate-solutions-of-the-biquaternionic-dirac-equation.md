@@ -22,7 +22,7 @@ $$
 \boxed{\;
 \tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
 \;}
 $$
 
@@ -33,7 +33,7 @@ At $k_m=0$ the pair decouples into two one-sided equations,
 $$
 \tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=0,
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde\Xi_{\mathrm{sp},L}=0 .
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=0 .
 $$
 
 **Definition.** A solution is **degenerate** at a point when $N\bigl(\tilde\Xi_{\mathrm{sp}}\bigr)=0$ there. It is degenerate when the condition holds at every point of its domain.
@@ -100,7 +100,7 @@ The third object cannot be the second, and the reason is one associativity step.
 
 **A check.** The momentum-space system with the $u$-split substituted becomes four complex equations on the single unknown $\tilde\Xi_{\mathrm{sp},0}$, and its solution space has complex dimension zero. Five candidate splits return the same answer: the value split at $u=\vec e_z$, the three splits by pairs of coefficients, the row split of the matrix model and the column split.
 
-**Where the declared unit does work.** The two-sided form of the same equation, $-(\tilde\nabla^{\natural})_\PhiF-i\bar F\vec e_zk_m=0$, has a mass term that multiplies on the right and conjugates the coefficient. The conjugation reverses the value, because it sends the central $i$ to $-i$ and leaves the units alone, so the two-sided equation can be split by a definite-value pair where the one-sided pair cannot. That is the structural reason the corpus keeps two forms of the equation and does not identify them.
+**Where the declared unit does work.** The two-sided form of the same equation, $-(\tilde\nabla_\Phi)^{\natural}F-i\bar F\vec e_zk_m=0$, has a mass term that multiplies on the right and conjugates the coefficient. The conjugation reverses the value, because it sends the central $i$ to $-i$ and leaves the units alone, so the two-sided equation can be split by a definite-value pair where the one-sided pair cannot. That is the structural reason the corpus keeps two forms of the equation and does not identify them.
 
 **What this article uses.** The letters $L$ and $R$ below are the pair's components in the sense of §*The Pair's Two Components*. No unit is declared and no value is tested, except where a counterexample is being exhibited.
 

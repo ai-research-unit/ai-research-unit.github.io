@@ -11,7 +11,7 @@ $$
 \qquad
 \tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. Three facts are used throughout: $\Box$ is central and scalar, the product of the gradient with its conjugate is $\Box$, and the square of the gradient alone is not scalar. No other letter names the gradient.
@@ -26,11 +26,11 @@ $$
 
 The companion *The Klein–Gordon Equation in Biquaternionic Form* records that the operator is central and scalar, that the equation decouples into four scalar equations, and that no scalar first-order operator in $\mathbb{B}$ has it as its square. The companion *Klein–Gordon from the Dirac Square in Biquaternionic Form* records the other side: the first-order equation that exists is the chiral pair, its two members act on the two parts of one element, and its mass couples the two. Together they leave Open Question 3 of the Klein–Gordon article: is the pair the only first-orderisation, and why four components?
 
-There are two senses of "first-order root", and the article separates them. A **single square** is one first-order operator whose square is $\Box-k_m^{2}$. A **factorisation** is a product of two first-order factors whose product is $\Box-k_m^{2}$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ and, on the two parts of the field, as the two lines composed, $\Box-k_m^{2}$ on each part, the pair of §*The Gradient*.
+There are two senses of "first-order root", and the article separates them. A **single square** is one first-order operator whose square is $\Box-k_m^{2}$. A **factorisation** is a product of two first-order factors whose product is $\Box-k_m^{2}$, with the physical equation one factor. The single square is the stronger notion, and the algebra does not admit it: the square of the gradient carries a vector remainder, and no constant zero-order term removes a term that the derivative part supplies. The factorisation is the weaker notion, and the algebra supplies it exactly, as $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and, on the two parts of the field, as the two lines composed, $\Box-k_m^{2}$ on each part, the pair of §*The Gradient*.
 
 Three results:
 
-- **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
+- **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box-2\Delta-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
 - **The free equation is first order in one field.** $\tilde\nabla_\Phi\tilde{Ξ}=0$ implies $\Box\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.
 - **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$.
 
@@ -69,7 +69,7 @@ The mixed term is the whole difference. The three spatial units anticommute in p
 The product with the conjugate is scalar. Read on the units, the two operators differ only by the sign of the three spatial terms, and the product is central because $\varepsilon_\mu e_\mu^2=\varepsilon_\mu^2e_t=e_t$ for every $\mu$:
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box .
 $$
 
 ### The symbol and the mass shell
@@ -98,7 +98,7 @@ The symbol of $\Box$ is the interval of the wave covector, and the mass shell is
 
 ### The two factors
 
-The product of the gradient and its conjugate is the d'Alembertian, and the square of the gradient is not: $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box$, while $\tilde\nabla^2$ keeps the vector remainder of §*The gradient is the first-order operator*.
+The product of the gradient and its conjugate is the d'Alembertian, and the square of the gradient is not: $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$, while $\tilde\nabla^2$ keeps the vector remainder of §*The gradient is the first-order operator*.
 
 The identity is exact, and it is the whole factorisation of $\Box$ that the algebra supplies. It has two factors and neither is a root by itself. That is the sense in which the root exists: as a pair of first-order operators, not as one operator.
 
@@ -162,7 +162,7 @@ and setting it to zero imposes four independent complex conditions, one per unit
 |+-|+-|+-|
 | One complex number | $\tilde\nabla_\Phi\xi=0$, which forces $\partial\xi/\partial R_\mu=0$ | no, it has no solution that propagates |
 | Element of $\mathbb{B}$, massless | $\tilde\nabla_\Phi\tilde{Ξ}=0$ | yes, one factor of $\Box$ |
-| Element of $\mathbb{B}$, massive | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | yes, the pair |
+| Element of $\mathbb{B}$, massive | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | yes, the pair |
 
 ## The Mass and the Chiral Pair
 
@@ -179,10 +179,10 @@ Write the field as one element with two parts, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with the same coefficient $k_m=m\,c/\hbar$ as above. Substituting the first into the second gives $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
+with the same coefficient $k_m=m\,c/\hbar$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
 
 $$
 \Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} ,
@@ -193,8 +193,8 @@ and the first member then defines $\tilde{Ξ}_{\mathrm{sp},L}$. Each part theref
 The factorisation is not available on one field, and the reason is the same vector remainder. With the mass as a shift,
 
 $$
-\left((\tilde\nabla^{\natural})_\Phi-k_m\right)\left(\tilde\nabla_\Phi+k_m\right)
-=\Box+k_m\left((\tilde\nabla^{\natural})_\Phi-\tilde\nabla_\Phi\right)-k_m^{2}
+\left((\tilde\nabla_\Phi)^{\natural}-k_m\right)\left(\tilde\nabla_\Phi+k_m\right)
+=\Box+k_m\left((\tilde\nabla_\Phi)^{\natural}-\tilde\nabla_\Phi\right)-k_m^{2}
 =\Box-2k_m\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta}-k_m^{2} ,
 $$
 
@@ -207,7 +207,7 @@ The two equations are two lines on two elements, and no single letter is written
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
 $$
 
 Composing each line with the conjugate of the other gives $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},L}=0$ and $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
@@ -262,13 +262,13 @@ The identities were recomputed before they were written. The algebra multiplicat
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
 | $\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-\Box$ on the eight slots | $1.8\times10^{-15}$ |
 | $\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2}\right)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
-| the elimination, $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |
+| the elimination, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of the two lines, $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2})$, is $16$.
 
 ## Summary
 
-The first-order root of the biquaternion Klein–Gordon operator exists, and it is a pair of first-order operators rather than one: the gradient and its conjugate, with $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box$. The square of the gradient alone is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. No first-order operator with constant element coefficients acting on the left has a scalar square either, because that needs four elements anticommuting pairwise with squares $+1,-1,-1,-1$, and the three of square $-1$ already generate the algebra.
+The first-order root of the biquaternion Klein–Gordon operator exists, and it is a pair of first-order operators rather than one: the gradient and its conjugate, with $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$. The square of the gradient alone is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. No first-order operator with constant element coefficients acting on the left has a scalar square either, because that needs four elements anticommuting pairwise with squares $+1,-1,-1,-1$, and the three of square $-1$ already generate the algebra.
 
 The free equation is first order in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, and it implies the massless Klein–Gordon equation. At a null momentum it selects two of the four complex dimensions of the second-order solution space, one state of each value of the chirality.
 
@@ -286,7 +286,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $Q_\mu$ | The algebra coordinates |
 | $x_\mu$ | The Lorentz coordinates |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient, an element with derivative coefficients, acting on the left |
-| $(\tilde\nabla^{\natural})_\Phi$ | Its quaternion conjugate, the second factor of $\Box$ |
+| $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, the second factor of $\Box$ |
 | $\Box$ | d'Alembertian; its Lorentz form is derived in §*The Equation* |
 | $c$ | The speed of light in the medium |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength |
@@ -296,7 +296,7 @@ A field whose value is one complex number has no first-order equation: the four 
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
 | $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box$ per part |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box$ per part |
 | the label | $L$ or $R$, two values, carried by the parts of an element |
 
 ## Further Reading

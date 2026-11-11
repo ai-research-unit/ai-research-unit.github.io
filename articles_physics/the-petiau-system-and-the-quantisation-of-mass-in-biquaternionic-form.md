@@ -230,8 +230,8 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\tilde\nabla_\Phi,\ (\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
+| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
 | $\tilde Q_1,\ \tilde Q_2$ | Lanczos spin-$\frac{1}{2}$ fields |
 | $m=k_m$ | Scalar mass parameter, inverse-length units |
 | $\tilde{E}_{\Psi}$ | Einstein–Mayer mass biquaternion |

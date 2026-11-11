@@ -14,9 +14,9 @@ $$
 \tilde\nabla_{\mathrm{gco}} = \sum_\mu  e_\mu \tilde\nabla_{\mathrm{gco},\mu} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}, \qquad \tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
-together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$. This article takes the connection $\tilde{A}_{\Phi}$ and the covariant derivative $\tilde\nabla_{\mathrm{gco}}$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
+together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$. This article takes the connection $\tilde{A}_{\Phi}$ and the covariant derivative $\tilde\nabla_{\mathrm{gco}}$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
 
-**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$, the d'Alembertian $\Box$ the two compose, and the Laplacian $\Delta_Q$ in the three vector coordinates, read on the material sector as that section reads them. This article uses the four glyphs as the convention fixes them and adds no derivative of its own: every derivative below is one of them, or the covariant derivative $\tilde\nabla_{\mathrm{gco}}$ built on them and its quaternion conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$. No other letter names a derivative.
+**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box$ the two compose, and the Laplacian $\Delta_Q$ in the three vector coordinates, read on the material sector as that section reads them. This article uses the four glyphs as the convention fixes them and adds no derivative of its own: every derivative below is one of them, or the covariant derivative $\tilde\nabla_{\mathrm{gco}}$ built on them and its quaternion conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$. No other letter names a derivative.
 
 The article develops the two objects in four directions that the gauge principle article did not pursue.
 
@@ -147,7 +147,7 @@ The forcing is stated within the left-action convention that the gauge principle
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 and the linear mass term passes the central phase through, so the left action is the natural one for the charged massive field and it is the form the minimal-coupling article states. The choice between the left and right actions for a general matter field is a choice of matter representation, raised as an open question by that article and left open here.
@@ -160,10 +160,10 @@ The reality of the gauge function is inherited as well. A real $\Gamma$ keeps $\
 
 The transformation law makes the connection's status precise.
 
-**The connection is not gauge invariant.** Its entire gauge orbit is the set $\{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$. The scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$,
+**The connection is not gauge invariant.** Its entire gauge orbit is the set $\{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$. The scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$,
 
 $$
-S = \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_t + \mathrm{div}\,\vec A,
+S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_t + \mathrm{div}\,\vec A,
 $$
 
 transforms as $S_2 = S - \Box\Gamma$, so $S$ is a pure-gauge quantity; the Lorenz gauge $S = 0$ is a choice, not a condition. This is the gauge scalar of the Maxwell article, inherited unchanged.
@@ -171,10 +171,10 @@ transforms as $S_2 = S - \Box\Gamma$, so $S$ is a pure-gauge quantity; the Loren
 **Pure-gauge connections are flat.** If $\tilde{A}_{\Phi} = \tilde\nabla_\Phi\Gamma$ for a scalar function $\Gamma$, then
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\Gamma\right) = 0,
+\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma\right) = 0,
 $$
 
-because $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\Gamma = \Box\Gamma\, e_t$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
+because $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma = \Box\Gamma\, e_t$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.
 
 **A single point can always be made connection-free.** Given any connection $\tilde{A}_{\Phi}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function
 
@@ -211,10 +211,10 @@ This is the gauge principle article's commutator identity, inherited here. Three
 
 **The commutator closes on the algebra.** Although $\tilde\nabla_{\mathrm{gco},\mu}$ is an operator and not an element of $\mathbb{B}$, its commutator with $\tilde\nabla_{\mathrm{gco},\nu}$ is multiplication by the biquaternion $\frac{i\,ϙ}{\hbar}F_{\mu\nu}$ — a scalar multiple of a field. The failure of covariant derivatives to commute is thus an algebraic object, not a differential one, and it can be contracted with the basis to form the field-strength biquaternion.
 
-**The contraction is the field strength.** Reading off the components of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ gives
+**The contraction is the field strength.** Reading off the components of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ gives
 
 $$
-\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right)
+\tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)
 = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}}  F_{\mu\nu}\,e_\mu^{\natural} e_\nu,
 \qquad
 \tilde{F} =\frac{\hbar}{2\,i\,ϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[\tilde\nabla_{\mathrm{gco},\mu}, \tilde\nabla_{\mathrm{gco},\nu}]\,e_\mu^{\natural} e_\nu ,
@@ -222,7 +222,7 @@ $$
 
 with $e_t^{\natural} = e_t$ and $e_\mu^{\natural} = -\vec e_\mu$. The first identity is purely algebraic in the derivatives and is the gauge principle article's curvature identity; the second is its restatement as a commutator of covariant derivatives.
 
-**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{B}_{\Phi}$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
+**The curvature is gauge invariant and is not in the material sector.** Because $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\Gamma) = 0$, $\tilde{F}$ is unchanged by a gauge transformation. It is nevertheless not an element of $\mathbb{B}_{\Phi}$: it has vanishing scalar part and a vector part that is neither purely real nor purely imaginary, as the Maxwell article records. The connection is a material-sector object; its curvature is not.
 
 Because $\tilde{F}$ is built from $\tilde{A}_{\Phi}$ by differentiation, the homogeneous Maxwell equations are identities rather than equations of motion — the Bianchi identity of the connection. The biquaternion form of that identity and the non-abelian completion of the curvature are the subjects of separate planned companions and are not claimed here. (In particular, the one-line equation $\tilde\nabla_\Phi\tilde{F} = 0$ is *not* the Bianchi identity; it is the full source-free Maxwell system. This was checked and recorded in the gauge principle companion so that it is not written by mistake.)
 
@@ -235,7 +235,7 @@ The commutator of two covariant derivatives is first order. The *square* of the 
 Define the **quaternion conjugate** of the covariant derivative by conjugating the basis:
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural} := \sum_\mu  e_\mu^{\natural} \tilde\nabla_{\mathrm{gco},\mu} = (\tilde\nabla^{\natural})_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural},
+\tilde\nabla_{\mathrm{gco}}^{\natural} := \sum_\mu  e_\mu^{\natural} \tilde\nabla_{\mathrm{gco},\mu} = (\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural},
 $$
 
 the conjugation $\natural$ being that of *Product and Form Conventions*, applied to the basis elements, the central coefficients $\tilde\nabla_{\mathrm{gco},\mu}$ passing through untouched. Here $\tilde{A}_{\Phi}^{\natural} \neq -\tilde{A}_{\Phi}$ in general; quaternion conjugation is not charge conjugation, and $\tilde\nabla_{\mathrm{gco}}^{\natural}$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
@@ -244,7 +244,7 @@ $$
 \boxed{\;\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\mu}^{2} +\frac{i\,ϙ}{\hbar}\tilde{F}\;}
 $$
 
-holds, where $\tilde\nabla_{\mathrm{gco},\mu}^2$ means $\tilde\nabla_{\mathrm{gco},\mu} \tilde\nabla_{\mathrm{gco},\mu}$ and $\sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 = \sum_\mu\left(\partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi = \Box$ when $\tilde{A}_{\Phi} = 0$.
+holds, where $\tilde\nabla_{\mathrm{gco},\mu}^2$ means $\tilde\nabla_{\mathrm{gco},\mu} \tilde\nabla_{\mathrm{gco},\mu}$ and $\sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 = \sum_\mu\left(\partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu\right)^2$ is the **covariant d'Alembertian**. The identity was checked on random connections and random fields, on constant and on non-constant potentials, and reduces to $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$ when $\tilde{A}_{\Phi} = 0$.
 
 The derivation is short. Expanding the product,
 
@@ -295,7 +295,7 @@ $$
 
 Squaring its first member with the second gives the boxed identity on the $R$ part, $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
 
-**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ and apply $(\tilde\nabla^{\natural})_\Phi$: the result is $\Box\tilde{Ξ}_{\mathrm{sp}} = m\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}}$, an equation in two different objects, and nothing reduces it to $\Box\tilde{Ξ}_{\mathrm{sp}} = k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, because $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\tilde{Ξ}_{\mathrm{sp}} = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ returns $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, which is the boxed identity.
+**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ and apply $(\tilde\nabla_\Phi)^{\natural}$: the result is $\Box\tilde{Ξ}_{\mathrm{sp}} = m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, an equation in two different objects, and nothing reduces it to $\Box\tilde{Ξ}_{\mathrm{sp}} = k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, because $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_\eta\vec e_\eta\,\partial/\partial R_\eta\tilde{Ξ}_{\mathrm{sp}} = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ returns $\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = m\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, which is the boxed identity.
 
 The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box$. On a scalar function it reads
 
@@ -305,7 +305,7 @@ $$
 
 which is $\Box$ with the sign of $\Delta_Q$ reversed and a vector part added. The expression is derived here from the squares of the units, and it was checked with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla_\Phi$ square to $-e_t$ while $e_\mu^{\natural} e_\mu = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla^2 = \Box$ would therefore be wrong by $2\Delta_Q$ in the scalar part and by that vector part.
 
-**The minimal coupling** replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}$ and $(\tilde\nabla^{\natural})_\Phi$ by $\tilde\nabla_{\mathrm{gco}}^{\natural}$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_\mu$ are central and pass through the units.
+**The minimal coupling** replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}$ and $(\tilde\nabla_\Phi)^{\natural}$ by $\tilde\nabla_{\mathrm{gco}}^{\natural}$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_\mu$ are central and pass through the units.
 
 ## What the Algebra Supplies, Transcribes, and Only Interprets
 
@@ -375,7 +375,7 @@ $$
 
 with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
-The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ returns $\Box\tilde{Ξ}_{\mathrm{sp}} = m(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp}}$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial R_t^2-\Delta_Q$ against the $\partial^2/\partial R_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
+The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}$ returns $\Box\tilde{Ξ}_{\mathrm{sp}} = m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial R_t^2-\Delta_Q$ against the $\partial^2/\partial R_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
 
 ## Summary of Notation
 
@@ -389,7 +389,7 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Quaternion-conjugate gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ | d'Alembertian |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta}$ | Square of the gradient; not scalar, and not $\Box$ |
 | $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ | Laplacian in the three vector coordinates |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{B}_{\Phi}$ |
@@ -400,11 +400,11 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde
 | $m$ | Mass of the parent's Dirac field |
 | $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi} = \sum_\mu  e_\mu \tilde\nabla_{\mathrm{gco},\mu}$ | Covariant derivative |
 | $\tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu$ | Components; $\partial/\partial R_t = \partial/\partial(i r'_t)$ |
-| $\tilde\nabla_{\mathrm{gco}}^{\natural} = (\tilde\nabla^{\natural})_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of $\tilde\nabla_{\mathrm{gco}}$ |
+| $\tilde\nabla_{\mathrm{gco}}^{\natural} = (\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of $\tilde\nabla_{\mathrm{gco}}$ |
 | $\tilde{A}_{\Phi}^{\natural}$ | Quaternion conjugate of the connection, by *Product and Form Conventions* |
 | $[\tilde\nabla_{\mathrm{gco},\mu}, f] = \partial/\partial R_\mu f$ | Derivation property |
-| $S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$, $S_2 = S - \Box\Gamma$ | Gauge scalar; pure gauge |
-| $\tilde{F} = \mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}e_\mu^{\natural} e_\nu$ | Field strength = curvature, gauge invariant |
+| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box\Gamma$ | Gauge scalar; pure gauge |
+| $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}e_\mu^{\natural} e_\nu$ | Field strength = curvature, gauge invariant |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | Abelian curvature components |
 | $[\tilde\nabla_{\mathrm{gco},\mu}, \tilde\nabla_{\mathrm{gco},\nu}] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$ | Curvature as commutator |
 | $\sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^2 = \mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}})$ | Covariant d'Alembertian |

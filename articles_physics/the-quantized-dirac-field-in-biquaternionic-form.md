@@ -13,7 +13,7 @@ This article takes up that question. It does not repeat the quantization, which 
 - **The operator-valued observables.** The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{B}_{\Phi}$, the charge in the centre $\mathbb{B}_{C}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.
 - **The two-point function as an operator-valued distribution.** The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.
 
-The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
+The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
 
 ## The Operator-Valued Field
 
@@ -89,7 +89,7 @@ Because the mode expansion is a superposition of classical solutions with operat
 $$
 \boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$
 
 the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is two lines and no third object: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathcal{D}-k_m)$, with $\mathcal{D}$ the two-sided contraction of the next paragraph and not the retired pair glyph, and the contraction adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
@@ -373,10 +373,10 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
-| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
+| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
+| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
 | $\mathcal{D}_p$ | Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=p^2$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}_{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde{Ξ}_{\mathrm{fop},R}$ |
 | $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$, $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |

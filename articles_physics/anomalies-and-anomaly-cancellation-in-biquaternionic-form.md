@@ -28,7 +28,7 @@ Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrig
 $$
 the arrow labelled by a coordinate being the frame basis operator of that coordinate. The composite collapses to a single right multiplication, $Q\mapsto-Q\vec e_z$, and the basis operator multiplies on the right by $-i\vec e_z$. So the basis operator is $i$ times the fifth basis operator, which is how the corpus states it (*Special Element Conventions*, §*The Chirality Convention*). That relation is what places the anomaly's density inside the framework rather than beside it.
 
-**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=(\tilde\nabla^{\natural})_\Phi\tilde A_{\Phi}$ with the relative medium factors of *The Field-Strength Biquaternion and Its Invariants* equal to one. The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
+**The field strength, in components.** For the abelian anomaly the field strength is $\tilde F=(\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi}$ with the relative medium factors of *The Field-Strength Biquaternion and Its Invariants* equal to one. The alternating symbol has $\epsilon_{0123}=+1$, and in the real-time indices $r'_t,r_x,r_y,r_z$ the components are
 
 $$
 F_{r'_t i}=E_i,
@@ -46,7 +46,7 @@ of which
 $$
 \tilde F=\frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}}F_{\mu\nu}\,\bar e_\mu e_\nu
 $$
-is the biquaternion carrier, with $\bar e_\mu$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_\eta=-\vec e_\eta$). For the abelian factor the carrier is $(\tilde\nabla^{\natural})_\Phi\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
+is the biquaternion carrier, with $\bar e_\mu$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_\eta=-\vec e_\eta$). For the abelian factor the carrier is $(\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
 
 **The invariants.** With the field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
@@ -76,7 +76,7 @@ $$
 $$
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 one equation per chirality, both sides biquaternions; the first is the right-handed equation and the second is its quaternion conjugate. At $m=0$ the pair decouples,
@@ -86,7 +86,7 @@ $$
 $$
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -96,7 +96,7 @@ and each equation is identical in form to the source-free Maxwell equation; the 
 **The two-sided form, and why it is not a second dynamics.** The same physics has a two-sided representation, a single equation on the algebra,
 
 $$
-(\tilde\nabla^{\natural})_\PhiF=-i\,m\,\bar{F}\,\vec e_z ,
+(\tilde\nabla_\Phi)^{\natural}F=-i\,m\,\bar{F}\,\vec e_z ,
 $$
 
 for a biquaternion field $F$ — the two-sided Dirac field, not the component field strength $F_{\mu\nu}$ — with $\bar{F}$ its coefficient conjugate. The derivative acts on the left, the mass term is the basis operator applied to $\bar{F}$, $m\,\mathsf{V}_{\mathrm{vol}}\bar{F}=-im\bar{F}\vec e_z$, and the conjugation supplies the antilinear part. The one-sided pair is the definition; the two-sided form is the representation in which the mass is a right multiplication, and the two are related by the dictionary of *The Dirac Equation in Biquaternionic Form* but are different operators: the pair is linear in the field, the two-sided equation is antilinear in its mass term. The anomaly below is read from the one-sided pair, because the axial current is a bilinear of the state and the measure is the measure of that state. What the two-sided form adds is the structural identity behind the current: the basis operator $\mathsf{V}_{\mathrm{vol}}$ that the mass applies is the basis operator the axial current inserts, so the mass term and the axial current are the two places where chirality enters.
@@ -437,8 +437,8 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathsf{V}_{\mathrm{vol}}:\ Q\mapsto-iQ\vec e_z$ | The basis operator; $i$ times the fifth basis operator |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ | Dirac adjoint; a pairing of two states, not an action |
 | $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ | The chirality-weighted trace of the identity vanishes |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
-| $(\tilde\nabla^{\natural})_\PhiF=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the basis operator applied to $\bar{F}$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac pair, one equation per chirality |
+| $(\tilde\nabla_\Phi)^{\natural}F=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the basis operator applied to $\bar{F}$ |
 | $-R_{\mathrm{axf},\vec e_z}$, the four frame basis operators composed in the order $z,y,x,t$ | The fifth basis operator; the basis operator is $i$ times it |
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | Trace of an operator of the algebra in its four complex dimensions; matrix trace over the gauge representation |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by $g^{00}g^{11}g^{22}g^{33}=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |

@@ -136,7 +136,7 @@ $$
 \{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H,\qquad [\mathcal{Q},H]_{\mathrm{gr}}=0 ,
 $$
 
-so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the parity of the ambient algebra it is the relation of $A$, where the square of a frame vector is central, $v_\mu^{2}=g_{\mu\mu}e_t$; in the reading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Box$, which is the $H$ of that reading.
+so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the parity of the ambient algebra it is the relation of $A$, where the square of a frame vector is central, $v_\mu^{2}=g_{\mu\mu}e_t$; in the reading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$, which is the $H$ of that reading.
 
 **(ii) The star.** In the Hermitian interpretation the physical pairing is the one with the **star** rather than with the element itself,
 
@@ -319,11 +319,11 @@ $$
 
 by $i^2=-1$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents $e_\pm=\tfrac12(e_t\pm\xi)$. The sign $\xi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$, and $\gamma_5$ represents it on the module; it is not its definition, and the two must not be identified.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla^{\natural})_\Phi$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and they are kept apart by where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,
@@ -334,10 +334,10 @@ $$
 D_3=\sum_\eta\vec e_\eta\frac{\partial}{\partial R_\eta},
 $$
 
-with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. Since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-(\tilde\nabla^{\natural})_\Phi$, and the equation reads
+with the derivative acting from the left, the bar the antilinear entry, and $\vec e_z$ multiplying from the right after the conjugation. Since $i\partial/\partial r'_t=-\partial/\partial R_t$ in these units, the free part is $-(\tilde\nabla_\Phi)^{\natural}$, and the equation reads
 
 $$
-(\tilde\nabla^{\natural})_\PhiF=m\left(-i\overline{F}\,\vec e_z\right),
+(\tilde\nabla_\Phi)^{\natural}F=m\left(-i\overline{F}\,\vec e_z\right),
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -392,7 +392,7 @@ The matrix frame is the frame of the actions written as letters, and it is confi
 | $\gamma_\mu$, $\gamma_5$ | The frame basis operators of *The Legacy Pauli Gamma Formulation*: letters for the basis operators, used in that section only |
 | $\Gamma=-iR_{\mathrm{axf},\vec e_z}$ | The chirality basis operator of the module; equal to the fifth frame basis operator in the frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the module by the fifth frame basis operator |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac equation, the chiral pair |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial r'_t+D_3)F-k_mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 
 ## Further Reading

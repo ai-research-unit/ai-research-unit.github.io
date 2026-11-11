@@ -23,7 +23,7 @@ $$
 
 with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. This exponent carries the factor $\frac{ϙ}{\hbar}$ explicitly, the product of the charge and the inverse action, so that it is a pure number with no unit and no charge set to one. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
 
-The derivative of this article is the corpus's gradient $\tilde\nabla_\Phi$, with its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$ and the d'Alembertian $\Box$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
+The derivative of this article is the corpus's gradient $\tilde\nabla_\Phi$, with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
 
 ## Confinement and the Order Parameter
 
@@ -267,7 +267,7 @@ Two biquaternionic forms of the massive Dirac equation are in play here, and the
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -277,7 +277,7 @@ Both equations act from the left, and the mass is the off-diagonal pairing of th
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0,
 $$
 
 one equation per chirality; the second is the conjugate of the first, and the subscripts $R$ and $L$ name the chirality and not a side of multiplication.
@@ -293,7 +293,7 @@ $$
 Since $i\partial/\partial r'_t=-\partial/\partial R_t$ on the material sector, the same operator reads
 
 $$
-\mathcal NF=-(\tilde\nabla^{\natural})_\Phi F-k_mi\,\overline{F}\,\vec e_z=0 .
+\mathcal NF=-(\tilde\nabla_\Phi)^{\natural}F-k_mi\,\overline{F}\,\vec e_z=0 .
 $$
 
 The derivative part acts from the left, the mass part from the right through $\vec e_z$, and the bar is the componentwise complex conjugation. One operator, three kinds of action: that mixture is what *two-sided* names. The mass is a conjugation together with a direction, not a scalar multiple of the field, and the equation is therefore not of the form $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=\mu\tilde{Ξ}_{\mathrm{sp}}$ for any linear mass term of the algebra. The chiral pair and $\mathcal N$ are related by the dictionary, and they are not the same operator: the pair is the corpus's own equation, and $\mathcal N$ is the source's. The dictionary, the signs of $A$ and the line-by-line comparison of the two equations are set out in *The Dirac Equation in Biquaternionic Form*; what the bag adds is the boundary.
@@ -306,7 +306,7 @@ $$
 Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega r'_t/c},
 $$
 
-obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla_\Phi$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-(\tilde\nabla^{\natural})_\Phi$. The spatial derivative is the sum $\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ that $\tilde\nabla_\Phi$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t/c}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t/c}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla_\Phi$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-(\tilde\nabla_\Phi)^{\natural}$. The spatial derivative is the sum $\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ that $\tilde\nabla_\Phi$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t/c}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t/c}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
 
 The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_\eta u_\eta\vec e_\eta$,
 
@@ -468,7 +468,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathbb{B}$ | The biquaternion algebra of *Algebra and Element Conventions* |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | The coefficient basis; the structure constants are those of *Algebra and Element Conventions* |
 | $i$ | The central scalar imaginary |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$, $\Box$ | The gradient, its quaternion conjugate and the d'Alembertian, *Operator and Calculus Conventions* |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and the d'Alembertian, *Operator and Calculus Conventions* |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Informational and material sectors |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{B}_{\Psi}$ | Generators realized in the informational sector |
@@ -489,7 +489,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}$ | The trace, twice the scalar part, *Norm and Pairing Conventions* |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial R_\eta$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-k_mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |

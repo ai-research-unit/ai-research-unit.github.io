@@ -9,7 +9,7 @@ The four options are not four theories. They are four **inequivalent rewritings*
 Three things are fixed here once and used without repetition below.
 
 - **The field is an element.** Every field of the article is an element of $\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}$, and every product is a product of elements. The four options differ in how the eight real coordinates of that one element are read, not in the size of the object that carries them. The field is never written as a list of components anywhere in this article.
-- **The derivative is the corpus's gradient.** The only derivative is the biquaternionic gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, with its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$ and its d'Alembertian $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$. Parra's derivative, written with a frame element in each term, is translated into it once, in *The Four Options*.
+- **The derivative is the corpus's gradient.** The only derivative is the biquaternionic gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and its d'Alembertian $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$. Parra's derivative, written with a frame element in each term, is translated into it once, in *The Four Options*.
 - **Parra's right multipliers.** Parra's imaginary unit is the element $\omega:=-\vec e_z$, his spin bivector $e_{21}$; it multiplies the field **on the right**, and it is not the central $i$. The article uses that one element read with and without the central $i$,
   $$
   \omega^2=-e_t,\qquad (i\omega)^2=e_t,
@@ -76,15 +76,15 @@ The corpus writes the massive Dirac equation twice: once on the two parts of the
 **The pair on the two parts.** The biquaternion Dirac field is an element of $\mathbb{B}$, and its equation is the pair
 
 $$
-\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}\;}
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}\;}
 $$
 
-of *Operator and Calculus Conventions*, with $\tilde\nabla_\Phi$ the gradient and $(\tilde\nabla^{\natural})_\Phi$ its quaternion conjugate. **Two equations, one per component of the pair.** Both act on the left, so the pair is one-sided; at $m=0$ the two lines decouple, and at $m\ne0$ the mass couples them off the diagonal. The pair is also what carries the mass: composing the two lines gives $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$, that is $\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$, while neither line alone squares to a scalar operator. The reason is a derived form: the two squares carry the time–space cross terms with opposite signs, and only the mixed product cancels them.
+of *Operator and Calculus Conventions*, with $\tilde\nabla_\Phi$ the gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate. **Two equations, one per component of the pair.** Both act on the left, so the pair is one-sided; at $m=0$ the two lines decouple, and at $m\ne0$ the mass couples them off the diagonal. The pair is also what carries the mass: composing the two lines gives $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$, that is $\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$, while neither line alone squares to a scalar operator. The reason is a derived form: the two squares carry the time–space cross terms with opposite signs, and only the mixed product cancels them.
 
 **The same pair on one field.** Read on one element, the pair is one display whose two sides are the two actions,
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde F=i\,k_m\overline{\tilde F}\,\omega ,
+(\tilde\nabla_\Phi)^{\natural}\tilde F=i\,k_m\overline{\tilde F}\,\omega ,
 $$
 
 with $\overline{\tilde F}$ the coefficient conjugate. The derivative acts on the left and the mass on the right; the mass term carries the conjugation, and it is that conjugation which supplies the second field of the pair. The display is not a second equation.
@@ -218,8 +218,8 @@ The options are permuted by the quotient of the group of units by its identity c
 | $\vec s$ | The spin vector, an imaginary spatial vector; $\vec s=\vec s^{*}$ under the star, and $\vec s$ lies in $X_{\mathrm i}$ |
 | $\omega=-\vec e_z$ | The source's imaginary unit and spin bivector, $e_{21}=\omega$; a right multiplier, $\omega^2=-e_t$ |
 | $i\omega$ | The same element read with the central $i$; a right multiplier, $(i\omega)^2=e_t$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate, acting on the left; $\tilde\nabla_\Phi$ is the only derivative of the article |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | The d'Alembertian of *Operator and Calculus Conventions* |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, acting on the left; $\tilde\nabla_\Phi$ is the only derivative of the article |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian of *Operator and Calculus Conventions* |
 | $A$, $m$, $ϙ$ | The potential, the mass and the charge of the source's displays; $ϙ$ is the corpus glyph and is not the quaternion coefficient $q_{rj}$ |
 | $\Gamma_{1,3}$, $\Gamma^{0}_{1,3}$ | The group generated by the units, and its identity component, the norm-one elements |
 | $D=\Gamma_{1,3}/\Gamma^{0}_{1,3}$ | The discrete quotient; order four, permuting the four options |

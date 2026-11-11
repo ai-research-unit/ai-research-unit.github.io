@@ -7,7 +7,7 @@ A mass term is the only term of a field equation that carries no derivative, and
 The framework carries several conjugations, and they are easy to conflate because two of them are antilinear and both are called a real structure: the algebra's $\flat$ and the **charge conjugation** $\mathcal{C}$ that acts on the module $\Delta$. This article separates them and settles what each is for. Its claims:
 
 - **Established, and recomputed below.** The biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}=\overline{\cdot^{\natural}}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation ${}^{\natural}$. Their fixed spaces are four distinct subspaces, of real dimensions $2, 4, 4$ and $4$, and only the last two of them are the framework's sectors. In particular the one involution that is **linear**, quaternion conjugation, is the one whose fixed space is *not* a sector.
-- **Established, and recomputed below.** The **Dirac mass** is linear and relates the two parts of the subscript, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; it pairs no field with its own conjugate. The **Majorana mass** is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.
+- **Established, and recomputed below.** The **Dirac mass** is linear and relates the two parts of the subscript, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; it pairs no field with its own conjugate. The **Majorana mass** is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.
 - **Established, and recomputed below.** The retired single-field equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ fails, and it fails **on the dispersion**: its central-phase plane waves have nullity $0$ on the timelike shell and nullity $4$ on the spacelike shell, so its solutions lie on the spacelike locus. This is reproduced here on the eight real coordinates, by pure real arithmetic.
 - **The distinction the whole article turns on.** The diagnosis of that failure is the *pairing*, not the antilinearity. A Majorana mass is also antilinear and is perfectly physical. What the retired equation did was use the **algebra's** real structure $\flat$ as though it were the mass of a field on the **module** — and the two are different real structures on different spaces.
 - **Gap, left visible.** The framework does not derive the values of either mass, and it does not decide which kind a given fermion carries; that is empirical input, as the neutrino companion states. What the framework supplies is the algebraic distinction and the reality structure each kind is built on. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -173,7 +173,7 @@ $$
 $$
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 The first acts on the right-handed half, the second on the left-handed one, and the second is the quaternion conjugate of the first. The massless case is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$, which is the right-handed member alone; the full massless field is the pair, not either member.
@@ -186,13 +186,13 @@ $$
 
 a left multiplication by the derivative, an antilinear coefficient conjugation $\bar{\cdot}$ with no side, and a right multiplication by the spatial unit $\vec e_z$. There the mass term is a right multiplication *followed by* a conjugation, and it is not a single basis operator. The two readings are related by the dictionary and are not the same equation — their mass terms are of different kinds, a scalar in one and a right multiplication with a conjugation in the other. What they share is the structural reason the second side is needed at all: the Dirac mass is what couples one value to the other, and left multiplication alone preserves the value.
 
-Applying $\tilde\nabla_\Phi$ from the left to the second member and substituting the first, with $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \Box$, gives the Klein–Gordon equation for each part,
+Applying $\tilde\nabla_\Phi$ from the left to the second member and substituting the first, with $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$, gives the Klein–Gordon equation for each part,
 
 $$
 \Box\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} ,
 $$
 
-and likewise for $\tilde{Ξ}_{\mathrm{sp},R}$ from the first member, so the pair sits on the physical mass shell. The order matters, and it is exactly what *one-sided* means: both gradients act from the left, $\tilde\nabla_\Phi$ and then $(\tilde\nabla^{\natural})_\Phi$, so that their product is the scalar $\Box$ and the two members combine. This is the form every article in the series uses, and it is the sense in which the mass is off-diagonal in the value: it is a coupling *between* the two parts, not a conjugation of either.
+and likewise for $\tilde{Ξ}_{\mathrm{sp},R}$ from the first member, so the pair sits on the physical mass shell. The order matters, and it is exactly what *one-sided* means: both gradients act from the left, $\tilde\nabla_\Phi$ and then $(\tilde\nabla_\Phi)^{\natural}$, so that their product is the scalar $\Box$ and the two members combine. This is the form every article in the series uses, and it is the sense in which the mass is off-diagonal in the value: it is a coupling *between* the two parts, not a conjugation of either.
 
 ### Why the Dirac Mass Is Not a Self-Pairing
 
@@ -213,7 +213,7 @@ Two consequences follow, and they are the point of this section:
 - the **Dirac mass** pairs two different fields, so it needs no involution of a single field and it is linear;
 - the **conjugation** in a mass term need not be the algebra's real structure $\flat$. In the two-sided form it is $\bar{\cdot}$, the coefficient conjugation, which is an automorphism and fixes $\mathbb{B}_{H}$, not $\mathbb{B}_{\Phi}$.
 
-So the phrase "the mass is a pairing with a conjugate" asks two questions — *which* conjugate, and *on which side* — and the Dirac and Majorana masses answer them differently. A single equation with a single field and a single mass term can realise the self-pairing. It cannot realise the pair of two values, which needs two independent parts and hence two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$.
+So the phrase "the mass is a pairing with a conjugate" asks two questions — *which* conjugate, and *on which side* — and the Dirac and Majorana masses answer them differently. A single equation with a single field and a single mass term can realise the self-pairing. It cannot realise the pair of two values, which needs two independent parts and hence two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$.
 
 ## Two Real Structures, on Two Different Spaces
 
@@ -534,8 +534,8 @@ With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are 
 | $\mathbb{B}_{H} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}$ | Real-quaternion sector, real dim $4$ |
 | $\mathbb{B}_{C} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}$ | Centre, real dim $2$ |
 | $\mathrm{Sc}\,\tilde{Q}$ | Scalar part, the coefficient of $e_t$; $\mathrm{Sc}\big(\tilde{Q}^\flat\tilde{Q}\big) = -\lvert\tilde{Q}\rvert^2$, $\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{Q}\big) = +\lvert\tilde{Q}\rvert^2$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its conjugate; $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = \Box$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac mass: linear, relating the two parts |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate; $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac mass: linear, relating the two parts |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ | The retired equation; spacelike dispersion, not a mass term |
 | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, whose multiplier satisfies $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged field is one on which that factor acts non-trivially |

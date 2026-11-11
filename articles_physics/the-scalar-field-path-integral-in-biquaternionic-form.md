@@ -48,7 +48,7 @@ In the framework's notation the field is central-valued and the weight is a cent
 $$
 \tilde{Ξ}(\tilde R_\Phi)=\xi_{\mathrm{scl}}(\tilde R_\Phi)e_t,
 \qquad
-S[\tilde{Ξ}]=\int d^4r\left[-\mathrm{Sc}\!\left[((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right],
+S[\tilde{Ξ}]=\int d^4r\left[-\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right],
 $$
 
 $$
@@ -287,7 +287,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 ## Summary
 
-The scalar functional integral is the sum over central-valued configurations weighted by the central phase $\exp(\frac{i\,S}{\hbar})$, with the action $S[\tilde{Ξ}]=\int d^4r\,[-\mathrm{Sc}(((\tilde\nabla^{\natural})_\Phi\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ}))-\mu^2\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})]$. It is derived from the operator formalism by inserting the field-eigenvalue basis at each time, and it is an ordinary functional integral over complex functions because the scalar field is bosonic and its configurations are c-numbers. Its quadratic form has the momentum-space symbol $-(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2)$, the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, the Gaussian's width and the propagator's pole are one object.
+The scalar functional integral is the sum over central-valued configurations weighted by the central phase $\exp(\frac{i\,S}{\hbar})$, with the action $S[\tilde{Ξ}]=\int d^4r\,[-\mathrm{Sc}(((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ}))-\mu^2\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})]$. It is derived from the operator formalism by inserting the field-eigenvalue basis at each time, and it is an ordinary functional integral over complex functions because the scalar field is bosonic and its configurations are c-numbers. Its quadratic form has the momentum-space symbol $-(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2)$, the biquaternion norm of the material four-wavevector shifted by the mass, so the mass shell $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, the Gaussian's width and the propagator's pole are one object.
 
 The generating functional $Z[\tilde J_{\Phi}]$ has for its functional derivatives the time-ordered correlation functions of the field operator, and its free value is the Gaussian $Z[0]\exp(-\int J^*\Delta_F J)$ with $\Delta_F$ the Feynman propagator; the finite-dimensional Gaussian identity was verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The canonical commutator is recovered from the representation $\pi_{\mathrm{fop}}=-\frac{i\,\hbar}{\xi_{\mathrm{scl}}}$, and the mode expansion and correlators follow. The vacuum persistence amplitude $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=|Z[\tilde Q_5]|^2/|Z[0]|^2$ in a background is the functional-integral form of the pair-creation probability, and it agrees with the Bogoliubov computation of the companion pair-creation article; its imaginary part measures the failure of the vacuum to persist.
 

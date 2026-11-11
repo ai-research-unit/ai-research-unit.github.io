@@ -348,7 +348,7 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\delta_{\mu\nu}$ | The one metric, all four coefficients $+1$; the index stays low |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient, $e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | d'Alembertian; $\Delta-\partial^{2}/\partial{r'_{t}}^{2}$ on the material sector |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian; $\Delta-\partial^{2}/\partial{r'_{t}}^{2}$ on the material sector |
 | $r'_t$ | Material time, a length |
 | $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ | The central scalar field in polar form |
 | $\lVert\tilde\Xi\rVert$ | The amplitude, positive real |

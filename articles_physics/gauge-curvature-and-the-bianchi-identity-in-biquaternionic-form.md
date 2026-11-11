@@ -245,7 +245,7 @@ The gauge principle article left open "the sense in which a single biquaternion 
 For the abelian field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \vec F = \sum_\eta F_\eta \vec e_\eta$, direct computation with the quaternion product gives the exact identities
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde{F}
+(\tilde\nabla_\Phi)^{\natural}\tilde{F}
 = \mathrm{div}(\vec F)\,e_t + \partial/\partial R_t\,\vec F - \mathrm{curl}\,\vec F,
 \qquad
 \tilde\nabla_\Phi\tilde{F}
@@ -258,7 +258,7 @@ The structural reason is that the Bianchi identity is a three-index antisymmetri
 
 ## Open Questions
 
-1. **The single-biquaternion Bianchi.** The gap above is the sharpest open question of this article. Is there an algebra-intrinsic operation — a projection or a product with the conjugate gradient — that extracts the cyclic three-index sum from a biquaternion expression, or is the antisymmetric symbol genuinely required? The parent's negative result for $(\tilde\nabla^{\natural})_\Phi\tilde{F}$ and the recomputed forms of both products suggest the latter, but neither settles it.
+1. **The single-biquaternion Bianchi.** The gap above is the sharpest open question of this article. Is there an algebra-intrinsic operation — a projection or a product with the conjugate gradient — that extracts the cyclic three-index sum from a biquaternion expression, or is the antisymmetric symbol genuinely required? The parent's negative result for $(\tilde\nabla_\Phi)^{\natural}\tilde{F}$ and the recomputed forms of both products suggest the latter, but neither settles it.
 
 2. **The curvature as one commutator.** The reduction "$[D_\mu,D_\nu] = $ multiplication by $i\kappa F_{\mu\nu}$" is exact, but $F_{\mu\nu}$ itself is a curl plus a commutator, and is a single algebra commutator only when the curl $\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu$ vanishes. Is there a gauge-covariant way to write the full $F_{\mu\nu}$ as a single commutator of algebra-valued objects, or is the split into curl and commutator intrinsic?
 
@@ -294,7 +294,7 @@ $$
 
 with the cyclic order as displayed, equivalently $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$. It is the **operator Jacobi identity** with the curvature identity substituted into it: $[D_\lambda,[D_\mu,D_\nu]]+\text{cyclic}=0$ becomes $i\kappa(D_\lambda F_{\mu\nu}+\text{cyclic})=0$. In the coordinate proof a second, algebraic Jacobi identity $[\mathcal{A}_\lambda,[\mathcal{A}_\mu,\mathcal{A}_\nu]]+\text{cyclic}=0$ kills the nested-commutator terms, via the derivation property of the adjoint action. Both identities are exact and were verified on $\mathrm{SU}(2)$; the abelian case is trivially zero and is not evidence.
 
-Two things are left visible. First, a **scope limitation**: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu$ vanishes. Second, a **gap**: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $(\tilde\nabla^{\natural})_\Phi\tilde{F} = \mathrm{div}(\vec F)e_t+\partial/\partial R_t\,\vec F-\mathrm{curl}\,\vec F$ and $\tilde\nabla_\Phi\tilde{F} = -\mathrm{div}(\vec F)e_t+\partial/\partial R_t\,\vec F+\mathrm{curl}\,\vec F$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.
+Two things are left visible. First, a **scope limitation**: the curvature is a curl plus an algebra commutator, and is a single algebra commutator only when the curl $\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu$ vanishes. Second, a **gap**: no single biquaternion equation carries the Bianchi identity without extra structure — the recomputed products $(\tilde\nabla_\Phi)^{\natural}\tilde{F} = \mathrm{div}(\vec F)e_t+\partial/\partial R_t\,\vec F-\mathrm{curl}\,\vec F$ and $\tilde\nabla_\Phi\tilde{F} = -\mathrm{div}(\vec F)e_t+\partial/\partial R_t\,\vec F+\mathrm{curl}\,\vec F$ each carry a scalar constraint and a vector equation (eight real equations), not the three-index cyclic sum, and the contracted form $\varepsilon_{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ requires the antisymmetric symbol.
 
 ## Summary of Notation
 
@@ -305,7 +305,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}, \mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
-| $\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |

@@ -18,7 +18,7 @@ The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its units $e_
 
 **An action is a product, and the side is position.** The operator is the element it multiplies by, so the gradient acting from the left is written $\tilde\nabla_\Phi\tilde{F}$, a coefficient acting from the right is written $g\,\vec{\alpha}$, and a two-sided action is $a\,\tilde{Ξ}_{\mathrm{sp}}\,b$. No array is written in the body of this article. The gamma arrays of the older Dirac literature are collected in §*The Legacy Pauli Gamma Formulation* and used nowhere else.
 
-The biquaternionic gradient $\tilde\nabla_\Phi$ and its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$ are those of *Operator and Calculus Conventions*, the d'Alembertian is $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, and on the material sector the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$, with $r'_t$ the temporal length in metres. The gradient carries no medium factor: the medium enters through the conversion $r'_t=c\,t'$ between that length and the clock, and through the normalisations of the field. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
+The biquaternionic gradient $\tilde\nabla_\Phi$ and its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ are those of *Operator and Calculus Conventions*, the d'Alembertian is $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and on the material sector the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$, with $r'_t$ the temporal length in metres. The gradient carries no medium factor: the medium enters through the conversion $r'_t=c\,t'$ between that length and the clock, and through the normalisations of the field. Throughout, $c$ denotes the speed of light **in the medium** and $c_0$ the vacuum speed; the divergence and curl are written $\mathrm{div}$ and $\mathrm{rot}$.
 
 ## Constitutive Relations and the Two Parameters of a Medium
 
@@ -60,7 +60,7 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 
 ## The Biquaternionic Gradient and the Local Complex Structure
 
-The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
+The gradient is the one fixed in *Operator and Calculus Conventions*. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
 $$
 \Box=\Delta-\partial^2/\partial {r'_{t}}^2,
 $$
@@ -70,7 +70,7 @@ The medium enters this operator in exactly one way: through the conversion $r'_t
 
 Because $c>0$ is real, the medium rescales that embedding but does not rotate it. The phase of the complex structure is the fixed $i$; its unit is the local $c$. This is the precise sense in which the complex structure is local. In the language of the introduction to the framework, $c$ plays the role of the local conversion of the temporal coordinate, and the constant vacuum value $c_0$ is the special case in which that conversion does not vary. The classical $i r'_t$ convention of Minkowski space is the vacuum limit of the local structure.
 
-Two comments are worth making. First, the factorization $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ holds for any real positive $c$, so the algebraic fact on which the biquaternionic Maxwell equation rests is insensitive to the medium. Second, passing from vacuum to medium does not change the algebra $\mathbb{B}$; a medium is not a deformation of the complex structure but a different local conversion for its imaginary direction.
+Two comments are worth making. First, the factorization $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ holds for any real positive $c$, so the algebraic fact on which the biquaternionic Maxwell equation rests is insensitive to the medium. Second, passing from vacuum to medium does not change the algebra $\mathbb{B}$; a medium is not a deformation of the complex structure but a different local conversion for its imaginary direction.
 
 ## The Field Strength and Its Two Halves
 
@@ -182,7 +182,7 @@ $$
 $$
 using $\sqrt{\epsilon\mu}=1/c$, so that $\epsilon c\,\partial\vec E/\partial r'_t=c\,\partial\vec D/\partial r'_t$; the imaginary part, $\sqrt{\mu}\,\partial \vec H/\partial r'_t+\sqrt{\epsilon}\,\mathrm{rot}\,\vec E=0$, is Faraday's law with the coefficient $\sqrt{\mu/\epsilon}=\mu c$. One power of $i$ comes from the field's electric half and one from $\partial/\partial R_t$, and the product is the $-1$ that turns the two curl terms into the two time derivatives. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields are exactly what is required for the medium to cancel out of the components. The biquaternionic Maxwell equation therefore has a form independent of the medium; the medium is carried by the definition of $\tilde{F}$, by the single factor $\sqrt{\mu}$, and by the operator $\partial/\partial R_t$.
 
-Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}_{\Phi}=i\,a'_t+\vec A$ satisfies
+Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}_{\Phi}=i\,a'_t+\vec A$ satisfies
 $$
 \Box\tilde{A}_{\Phi}=-\mu\,\tilde J_{\Phi},
 \qquad
@@ -507,13 +507,13 @@ The corpus's own equation is **one-sided**, the pair on the two halves $\tilde{�
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
 $$
 Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The two halves are told apart by the subscript $L$ or $R$, and this is the equation whose dividing line is that label. Here $\hbar/(mc)$ is the mass length.
 
 Kravchenko's equation is **two-sided**: one equation on the algebra,
 $$
-(\tilde\nabla^{\natural})_\PhiF=-mi\,\bar F\,\vec e_z,
+(\tilde\nabla_\Phi)^{\natural}F=-mi\,\bar F\,\vec e_z,
 $$
 where the spatial gradient acts from the left, the mass term acts from the right through the fixed direction $\vec e_z$, and $\bar{\cdot}$ is the coefficientwise complex conjugation of the introduction. The position dependence of a potential is a coefficient multiplying one basis direction on the right, and it is this second form, not the one-sided pair, that has the shape of the carrier identity.
 
@@ -932,7 +932,7 @@ The product of the four is taken in the order in which the basis operators stand
 
 **Basis operators are pure tensors; gammas are not.** A basis operator is a single product $a\otimes b_{\mathrm{opp}}$, so the basis operators form a seven-dimensional cone inside the sixteen-dimensional algebra, and a general element is a sum of at most four of them. The least number required is the rank of the coefficient matrix $c(M)$, the matrix of $M$ in the basis of the sixteen products. A decomposition into basis operators is therefore not unique in general; it is unique only in the rank-one case, when the operator is a single basis operator. That is the reason the article prints a two-sided operator as a basis operator only when it is one, and writes the others as sums.
 
-**One-sided and two-sided, in this frame.** The two Dirac equations of the section *Arbitrary Inhomogeneous Media* separate here into the two kinds of basis operator the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided basis operator, and the grading that separates the halves is the basis operator $\gamma_5$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left basis operator together with a right multiplication in the mass term, $(\tilde\nabla^{\natural})_\Phi$ acting from the left and $\vec e_z$ from the right, hence the two-sided basis operator $L_{\tilde{\nabla}^{\natural}}$ with the mass term carried by $R_{\mathrm{pau},\vec e_z}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.
+**One-sided and two-sided, in this frame.** The two Dirac equations of the section *Arbitrary Inhomogeneous Media* separate here into the two kinds of basis operator the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided basis operator, and the grading that separates the halves is the basis operator $\gamma_5$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left basis operator together with a right multiplication in the mass term, $(\tilde\nabla_\Phi)^{\natural}$ acting from the left and $\vec e_z$ from the right, hence the two-sided basis operator $L_{\tilde{\nabla}^{\natural}}$ with the mass term carried by $R_{\mathrm{pau},\vec e_z}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.
 
 **The chirality basis operator and the central grading.** $\gamma_5$ is the basis operator of the chirality operator: $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ on the Dirac module, which acts on the algebra alone as $-iR_{\mathrm{pau},\vec e_z}$, the basis operator the chiral-fermion articles write as $\xi$. The central grading of the complexified algebra — the difference of its two central idempotents, whose square is $e_t$ — is a different object: $\gamma_5$ represents it on the module, and the two must not be identified as elements of the algebra.
 
@@ -998,8 +998,8 @@ The equation that the reduction produces has a solution theory of its own, and i
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{C},\mathbb{B}_{H}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
-| $\tilde\nabla_\Phi,(\tilde\nabla^{\natural})_\Phi$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\Delta-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
+| $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\epsilon_0,\mu_0$ | Vacuum permittivity and permeability |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Constitutive relations |

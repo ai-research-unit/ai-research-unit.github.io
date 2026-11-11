@@ -44,7 +44,7 @@ D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi},
 D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
-under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
+under which $D\tilde{Ξ}_{\mathrm{sp}}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
 Two properties of this factor are as important for the agenda as the factor itself. First, the charge $ϙ$ is a **parameter**; the algebra does not fix it. Second, a central element acts as a **scalar** on the algebra: left multiplication by $\lambda = \exp(i\theta)$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is **vector-like** and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
@@ -143,7 +143,7 @@ The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass biline
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry, whose current carries the chirality as a right factor of the field. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$, whose separate conjugate pairing — Majorana-type or the real form of an ordinary Dirac mass — is the open reading treated in *The Neutrino and Majorana Fermions in Biquaternionic Form*. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -366,7 +366,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ | d'Alembertian |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Abelian connection (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Abelian gauge transformation |
 | $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Abelian covariant derivative |
@@ -382,7 +382,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | every $\mathbb{B}$-module | complex dimension $2k$; a three-dimensional internal space is not a module |
 | $-iR_{\mathrm{axf},\vec e_z}$ | The fifth basis operator of the frame: a pure right multiplication, and the source of the two parts named by the subscript |
 | $B=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; selection rule $ϙ_L=ϙ_R$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard-model notation, not framework objects** | |

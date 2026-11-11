@@ -7,7 +7,7 @@ A **chiral condensate** is a nonzero vacuum expectation value of a fermion bilin
 In the biquaternion framework the fermion is the Dirac field of the companion articles and its mass is the **linear, chirality-off-diagonal pair**
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -113,11 +113,11 @@ The framework results used here are those of the companion articles:
 
 ## The Pair, the Two-Sided Equation and the Chirality
 
-**The gradient equation.** The gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box$. The chiral pair
+**The gradient equation.** The gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$, and its quaternion conjugate squares with it to the scalar d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$. The chiral pair
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}
 $$
 
 is the first-order dynamics of the algebra: each member acts by **left** multiplication, the two are conjugate, and the mass is the one term with no side, which is why it is the term that sets one value beside the other. No right multiplication appears in either member, so no chirality term appears either. This is the equation whose square gives the mass shell, and it is the one the article uses for that purpose.
@@ -182,7 +182,7 @@ which for $N_f$ massless flavours enlarges to $SU(N_f)_L\times SU(N_f)_R\times \
 **The mass term and which phase it breaks.** The massive linear chiral pair is
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
 whose two-sided writing is $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$. The two transformations act on it as follows.
@@ -225,7 +225,7 @@ which vanishes exactly when $m=0$. The mass is the only explicit breaking, and t
 
 **Why the sum carries no metric factor.** The metric is already spent inside the generators, since $G_0^{2}=+\mathrm{id}$ and $G_\eta^{2}=-\mathrm{id}$ differ in sign exactly as the entries of $g$ do. Hence $j_{5\eta}$ is the contravariant spatial component and $\sum_\mu\partial j_{5\mu}/\partial x_\mu=\partial j_5^0/\partial r'_t+\nabla\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
 
-**The companion's notation.** There the identity reads $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,5})=2im\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\xi\tilde{Ξ}_{\mathrm{sp}}$, the time slot of $\tilde J_{\Phi,5}$ carrying the factor $ic$ that the $i r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth basis operator, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}_{\mathrm{sp},L}$ and $+1$ on $\tilde{Ξ}_{\mathrm{sp},R}$ in either notation.
+**The companion's notation.** There the identity reads $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,5})=2im\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\xi\tilde{Ξ}_{\mathrm{sp}}$, the time slot of $\tilde J_{\Phi,5}$ carrying the factor $ic$ that the $i r'_t$ coordinate requires. The two notations name the same operator, and the same glyph: $\xi$ is the corpus's chirality operator, the frame's fifth basis operator, a pure right multiplier, and it takes the value $-1$ on $\tilde{Ξ}_{\mathrm{sp},L}$ and $+1$ on $\tilde{Ξ}_{\mathrm{sp},R}$ in either notation.
 
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears and their divergences:
 
@@ -279,7 +279,7 @@ $$
 
 where $\Sigma>0$ has the dimension of a mass, the cube being the dimension of the bilinear, and the sign is the one of the dynamics and of the convention for the mass term. Because the vacuum expectation is not invariant under the axial rotation above — it rotates into the pseudoscalar direction unless it vanishes — a nonzero condensate **spontaneously breaks** the axial symmetry: the Lagrangian is invariant, the vacuum is not, and the Goldstone modes of the broken generator follow. The condensate is the order parameter of the transition.
 
-**The algebraic identity with the mass coupling.** The point the biquaternion framework makes is an identification, and it is clean. The condensate $\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the vacuum expectation of precisely the bilinear that the linear chiral pair multiplies: the mass equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ states that the two values are coupled by the coefficient $m$, and $\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ is that same coupling written as a pairing of the field. A dynamically generated mass is therefore the statement
+**The algebraic identity with the mass coupling.** The point the biquaternion framework makes is an identification, and it is clean. The condensate $\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$ is the vacuum expectation of precisely the bilinear that the linear chiral pair multiplies: the mass equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ states that the two values are coupled by the coefficient $m$, and $\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ is that same coupling written as a pairing of the field. A dynamically generated mass is therefore the statement
 
 $$
 \boxed{\ m \;\longleftrightarrow\; -2G\,\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle\ }
@@ -352,13 +352,13 @@ The fourth row is the coupling that makes $m=0.3$ a solution of the gap equation
 **The mass shell.** The coefficient the condensate supplies is a genuine mass, and the framework shows it in two lines. Apply the conjugate gradient to the first member of the linear chiral pair and use the second:
 
 $$
-(\tilde\nabla^{\natural})_\Phi\bigl(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}\bigr)
-=(\tilde\nabla^{\natural})_\Phi\bigl(k_m\tilde{Ξ}_{\mathrm{sp},L}\bigr)
-=k_m(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}
+(\tilde\nabla_\Phi)^{\natural}\bigl(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}\bigr)
+=(\tilde\nabla_\Phi)^{\natural}\bigl(k_m\tilde{Ξ}_{\mathrm{sp},L}\bigr)
+=k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}
 =m\,(k_m\tilde{Ξ}_{\mathrm{sp},R})=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
 $$
 
-Since $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box$, the right-handed field satisfies
+Since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$, the right-handed field satisfies
 
 $$
 \boxed{\;\Box\tilde{Ξ}_{\mathrm{sp},R} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} ,
@@ -495,7 +495,7 @@ $$
 \boxed{\;\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle\;} ,
 $$
 
-and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth basis operator and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha\xi)\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\exp(\alpha\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
+and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ breaks. The two writings are kept apart throughout: the pair is the one-sided statement in the algebra, and the two-sided equation $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$ with $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ is the writing in which the bilinears are read. Chirality is a **side** and not a sign carried by an element: $\xi=-iR_{\vec e_z}$ is the frame's fifth basis operator and multiplies on the right, the gradient multiplies on the left, and the mass is the one term of the equation with both slots and therefore no side. The massless two-sided equation carries both the vector and the axial phase, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}\mapsto\exp(i\alpha\xi)\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}\exp(\alpha\vec e_z)$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2m\,\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}_{\mathrm{sp}}\vec e_z)$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\tilde{Ξ}_{\mathrm{sp}}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
 
 The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=0.65$ GeV, and a constituent mass $m=0.3$ GeV the condensate is $-(247\ \mathrm{MeV})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$, the ninth would-be mode being the $\eta'$, which the anomaly keeps heavy; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
 
@@ -511,8 +511,8 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the condensate itself sits on $\mathbb{R}e_t$ |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\sum_\eta\partial^2/\partial R_\eta^2$ | d'Alembertian, series convention; $Q_\eta=x_\eta$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Gradient equation: the linear chiral pair, one-sided |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\sum_\eta\partial^2/\partial R_\eta^2$ | d'Alembertian, series convention; $Q_\eta=x_\eta$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathcal{D}-k_m)\tilde{Ξ}_{\mathrm{sp}}=0$, $\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}=-\sum_\mu e_\mu(\partial_\mu\tilde{Ξ}_{\mathrm{sp}})\vec e_{\nu(\mu)}$ | Two-sided equation; $\mathcal{D}^2=\Box$ |
 | $G_\mu:\ Q\mapsto i e_\mu Q\vec e_{\nu(\mu)}$, $\nu(t)=x$, $\nu(\eta)=y$ | Generator actions; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ |
 | $\xi:\ Q\mapsto-iQ\vec e_z=-iR_{\vec e_z}$, the frame's fifth basis operator | Chirality operator: a **pure right multiplier**, so it commutes with every left multiplication and $\{\xi,G_\mu\}=0$; $\xi^2=1$, $\xi\,\mathcal{D}\,\xi^{-1}=-\mathcal{D}$ |

@@ -38,7 +38,7 @@ $$
 
 under which the field equation is gauge covariant. Its covariant derivative is the $\tilde D$ of *Algebra and Element Conventions*, read with $\tilde A_{\Phi}$ for its connection, and it acts on the left as $\tilde\nabla_\Phi$ does, so the abelian structure is one-sided throughout and no side hides in its letters. Its component is $D_\mu$, the curvature is the abelian $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, with $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$, and a real gauge function keeps $\tilde{A}_{\Phi}$ in the material sector $\mathbb{B}_{\Phi}$. The coupling $ϙ$ is a parameter: the algebra does not fix its value.
 
-Two inherited facts bear directly on this agenda. First, the **gauge group is canonically attached**: it is the $*$-unitary part of the centre, and no choice is made in selecting it. Second, the **mass term is linear and passes the continuous central phase**: the framework's Dirac mass is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, so the vector $\mathrm{U}(1)$ is conserved for the massive field and the broken symmetry is the axial one. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$: because $\flat$ is anti-linear, $(\lambda\tilde{Ξ}_{\mathrm{sp}})^{\flat} = \lambda^{*}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$, so a conjugate coupling built on it would survive the continuous central phase only for real $\lambda$, i.e. only $\lambda = \pm 1$ — a discrete $\mathbb{Z}_2$, not the continuous $\mathrm{U}(1)$. Whether the framework deploys such a coupling is the open Majorana interpretation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+Two inherited facts bear directly on this agenda. First, the **gauge group is canonically attached**: it is the $*$-unitary part of the centre, and no choice is made in selecting it. Second, the **mass term is linear and passes the continuous central phase**: the framework's Dirac mass is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, so the vector $\mathrm{U}(1)$ is conserved for the massive field and the broken symmetry is the axial one. The algebra's anti-linear object is the real structure $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$: because $\flat$ is anti-linear, $(\lambda\tilde{Ξ}_{\mathrm{sp}})^{\flat} = \lambda^{*}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$, so a conjugate coupling built on it would survive the continuous central phase only for real $\lambda$, i.e. only $\lambda = \pm 1$ — a discrete $\mathbb{Z}_2$, not the continuous $\mathrm{U}(1)$. Whether the framework deploys such a coupling is the open Majorana interpretation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Finally, the same article and its parents record the negative fact that the framework **cannot fix the gauge**. That fact is treated here as an obstacle in its own right, because every statement about a massive vector spectrum is normally a statement in a fixed gauge.
 
@@ -140,7 +140,7 @@ A qualification recorded in that article is carried here because it bears on hyp
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
 with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two letters off-diagonally: this is the one-sided statement.
@@ -330,7 +330,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $2$, $\bar{2}$ | The doublet and its conjugate, equivalent for $\mathrm{SU}(2)$ (pseudoreality) |
 | two-sided actions, $Q\mapsto aQb$ | The home a chiral gauge connection would need; not the left multiplications of $\mathbb{B}$ |
 | $a$ | $\mathrm{SU}(2)$ adjoint index, written low; a contraction over it is an explicit sum |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
 | $\mathrm{Tr}$ | The plain trace of *Product and Form Conventions*, used for the invariant density |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard electroweak notation, not framework objects** | |

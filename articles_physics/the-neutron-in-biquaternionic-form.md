@@ -21,7 +21,7 @@ whose two parts carry the two values of the chirality, $\tilde{Ξ}_{\mathrm{sp},
 $$
 \begin{aligned}
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
 
@@ -67,13 +67,13 @@ $$
 \Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla^{\natural})_\Phi$, so the equation is $(\tilde\nabla^{\natural})_\PhiF=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla^{\natural})_\PhiF=-k_{m_n} i\,\bar F\,\vec e_z$ |
+| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$ |
 | Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
-| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla^{\natural})_\Phi$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
+| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
 | Mass | the off-diagonal pair of the two values | right multiplication by $\vec e_z$, with $\bar F$ |
 | Chirality | the value carried by each part | the unit $\vec e_z$ of the mass term |
 | Status here | the definition, used throughout | quoted; not used |
@@ -166,7 +166,7 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 | Neutron property | Status | Object or reason |
 |---|---|---|
 | Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$; the left multiplications act on each part with weights $\pm\tfrac12$ |
-| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ |
+| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ |
 | Neutrality constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
@@ -251,7 +251,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
+The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same two values, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 

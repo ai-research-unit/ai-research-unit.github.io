@@ -68,9 +68,9 @@ The conjugation is what makes the mass antilinear; the right multiplication is w
 **The letter form.** Read on the two letters, the equation is a pair. The mass of an $L$ part is an $R$ element, and the mass of an $R$ part is an $L$ element, so each member of the pair acts on one letter and carries the conjugate of the other:
 
 $$
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},R}}\,\vec e_z ,
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},R}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},R}=-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp},L}}\,\vec e_z .
 $$
 
 The two lines are the equation of the display above, split; nothing is added. Each is an equation for one letter, and each carries the conjugate of the other, which is the precise sense in which the mass couples the letters and not a side of one of them. The mass terms are elements of the opposite letter, and that was checked on elements of each letter: the mass of an $L$ part is an $R$ element and the mass of an $R$ part is an $L$ element, exactly.
