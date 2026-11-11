@@ -120,7 +120,7 @@ The vacuum speed $c_0$ is a global constant. The medium speed $c$ is not: in an 
 <h2 id="the-biquaternionic-gradient-and-the-local-complex-structure">The Biquaternionic Gradient and the Local Complex Structure</h2>
 <p>The gradient is the one fixed in <em>Operator and Calculus Conventions</em>. On the material sector its time derivative takes the value $\partial/\partial R_t=\partial/\partial(i r'_t)=-i\,\partial/\partial r'_t=-(i/c)\,\partial/\partial t'$, and the d'Alembertian is that file's identity $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta$ evaluated at that derivative,
 $$
-\Box=\Delta-\partial^2/\partial {r'_{t}}^2,
+\Box=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2,
 $$
 the d'Alembertian in the temporal length $r'_t$. Written in the clock time it is $\Delta-c^{-2}\,\partial^2/\partial {t'}^2$, the d'Alembertian of a medium with speed $c$, and there it reduces to the vacuum value with $c$ in place of $c_0$.</p>
 <p>The medium enters this operator in exactly one way: through the conversion $r'_t=c\,t'$ with which the temporal slot is measured. The algebra — the quaternion units, the scalar imaginary $i$, the decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ — is fixed and medium-independent, and in the length coordinate the operator carries no medium factor at all. What the medium changes is the <strong>embedding of physical time into the algebra</strong>. The material time coordinate is $i r'_t=i\,c\,t'$, so the map from the physical second to the imaginary scalar direction of $\mathbb{B}$ carries the local factor $c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.</p>
@@ -309,7 +309,7 @@ The equivalence is exact and two-way, not a weak-coupling approximation in $\bet
 <p><strong>The non-chiral limit in the framework's own symbols.</strong> At $\beta=0$ the operator is $\mathcal{M}_0=\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, and composed with its complex conjugate it is the d'Alembertian. Because $D^2=-\Delta$ (verified to $1.8\times10^{-15}$ on random wave vectors) and $\partial/\partial r'_t$ commutes with $D$,
 $$
 \left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD\right)\left(\sqrt{\epsilon\mu}\,\partial/\partial r'_t+iD\right)
-=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta=-\Box ,
+=\epsilon\mu\,\partial^2/\partial {r'_t}^2-\Delta_\Phi=-\Box ,
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is <em>first</em> order.</p>
 <p><strong>A degenerate frequency in the frequency domain.</strong> A Fourier transform in $r'_t$ in the $\exp(i\omega r'_t/c)$ convention replaces $\partial/\partial r'_t$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
@@ -753,7 +753,7 @@ and in the non-dispersive case these satisfy $|\langle\vec S\rangle|=c\,\langle 
 $$
 \tilde{F}=i\sqrt{\epsilon_0}\,\vec E-\sqrt{\mu_0}\,\vec H,
 $$
-the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and the d'Alembertian becomes $\Box=\partial^2/\partial R_t^2+\Delta=\Delta-\partial^2/\partial {r'_{t}}^2$, which in the clock time is $\Delta-c_0^{-2}\partial^2/\partial {t'}^2$. The complex time coordinate becomes $i r'_t$, recovering the familiar $i r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k_\Phi^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.</p>
+the gradient becomes $\tilde{\nabla}=e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ with $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and the d'Alembertian becomes $\Box=\partial^2/\partial R_t^2+\Delta=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, which in the clock time is $\Delta-c_0^{-2}\partial^2/\partial {t'}^2$. The complex time coordinate becomes $i r'_t$, recovering the familiar $i r'_t$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\vec E^2-c_0^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the Riemann–Silberstein vector becomes $\vec N=\vec E+ic_0\vec B$, and the plane-wave conditions become $k_\Phi^2=\omega^2/c_0^2$, $|\vec E_0|=c_0|\vec B_0|$, and $\langle\tilde{F}_0\rangle_{\natural}=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.</p>
 <p>This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the Maxwell article and is not settled here.</p>
 <h2 id="beyond-the-linear-constitutive-relation">Beyond the Linear Constitutive Relation</h2>
 <p>Everything above assumes a linear constitutive map. This article has already met two departures from it — the dispersive medium, where $\epsilon$ and $\mu$ depend on frequency, and the chiral medium, where the relations couple $\vec E$ and $\vec H$ — and there is a third, which the corpus should name because a deformed arena produces it. A constitutive relation can differ from $\vec D=\epsilon\vec E$, $\vec B=\mu\vec H$ in three ways, and the three behave differently.</p>
@@ -869,7 +869,7 @@ and this is built by the same constructive recipe as the causal kernel of the ch
 <td>Biquaternionic gradient and its quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta-\partial^2/\partial {r'_{t}}^2$</td>
+<td>$\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$</td>
 <td>d'Alembertian in the medium</td>
 </tr>
 <tr>

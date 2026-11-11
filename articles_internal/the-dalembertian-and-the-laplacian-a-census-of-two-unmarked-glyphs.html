@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The D'Alembertian and the Laplacian: A Census of Two Unmarked Glyphs — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dalembertian-and-the-laplacian-a-census-of-two-unmarked-glyphs"><strong>The D'Alembertian and the Laplacian: A Census of Two Unmarked Glyphs</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two glyphs, each with one definition, and both written without a sector label almost everywhere in the corpus:</p>
+<p>$$
+\Box=\sum_{\mu=0}^{3}\frac{\partial^2}{\partial Q_\mu^2},\qquad
+\Delta=\sum_{\eta=1}^{3}\frac{\partial^2}{\partial Q_\eta^2}.
+$$</p>
+<p>The first is the d'Alembertian and stands 1510 times, 1403 of them with no mark at all. The second stands 1870 times, and 386 of those are the spatial Laplacian.</p>
+<p><strong>What this article establishes.</strong> What each glyph names, and why the two need different treatment: the d'Alembertian is one operator on the algebra and needs no label, while the Laplacian is three different operators up to sign and needs one whenever the formula prints sector coordinates. The census, by meaning and by chart. The rule that decides the mark, and the check that the rule is the corpus's own. The 72 sites that carried no mark and now do, with the physics that justifies each class. The 88 bare Laplacians that stay bare, and why. And the 910 occurrences of $\Delta$ that are not the Laplacian at all.</p>
+<p><strong>The answer, stated first.</strong> $\Box$ needs no mark. It is defined once, on the eight real parameters, before any sector is named, and the substitution $Q_t=ict'$ moves the sign into the derivative and not into the glyph. $\Delta$ needs a mark when, and only when, the formula prints sector coordinates: $\Delta_\Phi$ beside $r'_t$ or $r_\eta$, $\Delta_\Psi$ beside $h_t$ or $h'_\eta$. Beside $R_\mu$, or in a formula that prints no coordinate at all, the Laplacian is the chart-free $\Delta_Q$ and stays bare. The mark states which chart the three derivatives were taken in. It does not state which operator is meant, because there is only one.</p>
+<h2 id="the-two-glyphs-and-their-one-definition">The Two Glyphs and Their One Definition</h2>
+<p><strong>One definition each, in the conventions.</strong> <em>Operator and Calculus Conventions</em> fixes both, and fixes the identity between them:</p>
+<p>$$
+\Box=\sum_{\mu}\frac{\partial^2}{\partial Q_\mu^2}
+=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,\qquad
+\Delta_Q=\sum_\eta\frac{\partial^2}{\partial R_\eta^2}.
+$$</p>
+<p>The identity holds in the algebra, before any coordinate is named: the four partial derivatives are taken in the complex coefficients $Q_\mu$, and $\Delta_Q$ is the three of them that carry a space unit.</p>
+<p><strong>On a chart the same operator reads differently.</strong> The substitution is the chain rule, and the corpus writes it once:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>chart</th>
+<th>free parameters</th>
+<th>$\Box$</th>
+<th>$\Delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>eight real</td>
+<td>$\partial^2/\partial R_t^2+\Delta_Q$</td>
+<td>$\Delta_Q$</td>
+</tr>
+<tr>
+<td>material $\mathbb{B}_{\Phi}$</td>
+<td>$r'_t$, $r_\eta$</td>
+<td>$-\partial^2/\partial {r'_t}^2+\Delta_\Phi$</td>
+<td>$\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$</td>
+</tr>
+<tr>
+<td>informational $\mathbb{B}_{\Psi}$</td>
+<td>$h_t$, $h'_\eta$</td>
+<td>$\partial^2/\partial h_t^2-\Delta_\Psi$</td>
+<td>$\Delta_\Psi=\sum_\eta\partial^2/\partial h'^2_\eta$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three facts follow, and they are the whole of the sign bookkeeping. <strong>The material Laplacian is the chart-free one</strong>, $\Delta_\Phi=\Delta_Q$, because the material space coordinates are real. <strong>The informational Laplacian is its negative</strong>, $\Delta_\Psi=-\Delta_Q$, because the informational space coordinates are imaginary and each second derivative carries $i^2=-1$. <strong>The d'Alembertian is the same number on both charts</strong>, which is why it needs no mark.</p>
+<p><strong>Verified at residual zero.</strong> On a complex test field of four real parameters, with the material substitution $R_t=ir'_t$ and the informational one $R_\eta=ih'_\eta$, the two chart readings agree with the chart-free $\Box$ to machine zero, and $\Delta_\Psi+\Delta_Q=0$ exactly. The identities in the table are not a convention to be remembered. They are the chain rule.</p>
+<h2 id="why-the-dalembertian-is-written-bare">Why the D'Alembertian Is Written Bare</h2>
+<p><strong>1403 of the 1510 occurrences carry no mark</strong>, in 164 articles, and that is correct. The glyph names one operator. What changes between charts is the coordinate the derivative is taken in, and that coordinate is already written after the $\partial$.</p>
+<p><strong>The ten marked occurrences are all in one article.</strong> Five read $\Box_\Phi$ and five read $\Box_\Psi$, and all ten stand in <em>Operator and Calculus Conventions</em>, in the displays that teach the substitution:</p>
+<p>$$
+\Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},\qquad
+\Box_\Psi=\frac{\partial^2}{\partial h_t^2}-\Delta_\Psi .
+$$</p>
+<p>The mark there is a teaching device: it holds the two readings side by side so that the reader can see the sign move from the time term to the space term. It does not name a second operator, and no other article repeats it.</p>
+<p><strong>The other 97 occurrences carry something that is not a sector label.</strong> Eighty-two name a different operator or a different carrier — $\Box_{\mathrm s}$ 26 times, $\Box_A$ 20, $\Box_{\tilde Q}$ 11, $\Box_g$ 9, and the rest once or twice each. Twelve carry an exponent, two a closing brace, and one a chart name that is not a sector. None of these is a sector mark, and none needs one.</p>
+<h2 id="why-the-laplacian-does-need-a-mark">Why the Laplacian Does Need a Mark</h2>
+<p><strong>The three Laplacians are not the same operator.</strong> $\Delta_\Phi=+\Delta_Q$ and $\Delta_\Psi=-\Delta_Q$. A formula that prints $r'_t$ and a bare $\Delta$ leaves the reader unable to tell which of the two is meant, and the difference is the sign of the entire spatial part.</p>
+<p><strong>So the mark is a statement about the chart, not about the operator.</strong> The same sentence in <em>Operator and Calculus Conventions</em> prints both at once: $\Delta_Q=\sum_\eta\partial^2/\partial r_\eta^2=\Delta_\Phi$. The name with the subscript is the one that says where the derivatives were taken.</p>
+<p><strong>A formula that prints only $R_\mu$ is in the algebra</strong>, and its Laplacian is $\Delta_Q$. The corpus writes that glyph bare, and writes $\Delta_Q$ when it wants the name spelled. Both are the same operator, and both are correct.</p>
+<h2 id="the-census">The Census</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what the glyph is</th>
+<th>occurrences</th>
+<th>articles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Delta_\Phi$</td>
+<td>201</td>
+<td>52</td>
+</tr>
+<tr>
+<td>$\Delta_\Psi$</td>
+<td>14</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\Delta_Q$</td>
+<td>83</td>
+<td>27</td>
+</tr>
+<tr>
+<td>other word labels, $\Delta_{\mathrm F}$, $\Delta_{\mathrm{ch}}$, $\Delta_{\mathrm{PJ}}$, $\Delta_\sigma$, $\Delta_{ij}$</td>
+<td>144</td>
+<td>24</td>
+</tr>
+<tr>
+<td>bare Laplacian, formula prints $r'_t$ or $r_\eta$</td>
+<td>17</td>
+<td>11</td>
+</tr>
+<tr>
+<td>bare Laplacian, formula prints $h_t$ or $h'_\eta$</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>bare Laplacian, formula prints $R_\mu$</td>
+<td>68</td>
+<td>42</td>
+</tr>
+<tr>
+<td>bare, formula prints no coordinate</td>
+<td>430</td>
+<td>84</td>
+</tr>
+<tr>
+<td>difference, $\Delta$ followed by a letter</td>
+<td>684</td>
+<td>91</td>
+</tr>
+<tr>
+<td>increment, $\Delta(\ \cdot\ )$</td>
+<td>52</td>
+<td>18</td>
+</tr>
+<tr>
+<td>power, $\Delta^{n}$</td>
+<td>106</td>
+<td>15</td>
+</tr>
+<tr>
+<td>modular operator, $\Delta=e^{-2\pi K}$</td>
+<td>68</td>
+<td>14</td>
+</tr>
+<tr>
+<td>total</td>
+<td>1870</td>
+<td>198</td>
+</tr>
+</tbody>
+</table></div>
+<p>For $\Box$, of 1510 occurrences: 1403 bare in 164 articles, ten with a sector mark, 82 with a name that is not a sector, twelve with an exponent, two closed by a brace, and one with a chart name.</p>
+<p><strong>The last four rows are the trap.</strong> A search for <code>\Delta</code> without a subscript returns the whole of the table. 910 of the 1870 occurrences are not the Laplacian: they are differences, increments, powers, and the Tomita modular operator. A patch applied by search and replace would mark them, and that is why the patch below was applied by context and not by pattern.</p>
+<h2 id="the-rule">The Rule</h2>
+<p><strong>Mark the Laplacian when the formula prints sector coordinates.</strong> If it prints $r'_t$ or $r_\eta$, the operator is $\Delta_\Phi$. If it prints $h_t$ or $h'_\eta$, the operator is $\Delta_\Psi$. <strong>Leave it bare when the formula prints $R_\mu$ or prints no coordinate</strong>, because then the operator is the chart-free $\Delta_Q$.</p>
+<p><strong>One consequence is worth stating separately.</strong> A formula that prints $\Delta_Q$ beside $r'_t$ is not wrong in its identity — the two Laplacians are equal — but it names the operator in the chart it is not working in. That is the only class of edit below that changes a formula already correct in value.</p>
+<h2 id="what-was-patched">What Was Patched</h2>
+<p><strong>72 sites in 29 articles now carry the mark.</strong> Sixty-three came from a context scan, seven from the sign-critical class below, and two by hand. Every one of them stands in a formula that prints $r'_t$ or $r'_\eta$ and denotes the material Laplacian.</p>
+<p><strong>Four shapes account for the bulk of them</strong>, and each is a display of the same identity:</p>
+<p>$$
+\Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2},\qquad
+-\frac{\partial^2}{\partial {r'_t}^2}+\Delta_\Phi=\Box_\Phi,\qquad
+\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2}=-\Box,\qquad
+\frac{\partial^2}{\partial {r'_t}^2}-\Delta_\Phi=-\Box_g .
+$$</p>
+<p>The first two are the material d'Alembertian in its two orders. The third is the same operator with the source's overall sign, as in the parabolic Dirac operator. The fourth is the curved-space version, where the sign of the flat part is fixed by the same chain rule.</p>
+<p><strong>The sign-critical class was mislabelled rather than unmarked.</strong> Seven sites printed</p>
+<p>$$
+\Box=\Delta_Q-\frac{\partial^2}{\partial {r'_t}^2},
+$$</p>
+<p>in <em>Canonical Quantization of the Biquaternion Dirac Field</em>, <em>The Foldy–Wouthuysen Transformation</em>, <em>The Reflection and the Rotation</em>, and <em>The Spin–Statistics Theorem</em>. The identity is right: $\Delta_Q=\Delta_\Phi$. The name is the wrong one, because the display is in $r'_t$ and the operator beside it is the material Laplacian. Those seven now read $\Delta_\Phi$.</p>
+<p><strong>One article was deliberately left alone.</strong> <em>Scattering for the Quaternionic Dirac Operator</em> quotes a source's notation throughout, with $\Delta$ for that source's three-dimensional Laplacian and $D_3^2=-\Delta$ among its identities. Marking part of it would leave the article inconsistent with itself, and marking all of it would rewrite a source's notation. It is left bare, and this note is the reason.</p>
+<h2 id="what-stays-bare">What Stays Bare</h2>
+<p><strong>88 bare Laplacians remain, and they are correct.</strong></p>
+<p><strong>68 print $R_\mu$.</strong> These are the chart-free $\Delta_Q$, and they include the chained displays $\Box=\partial^2/\partial R_t^2+\Delta=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, which are the clearest statement in the corpus of the two names for one operator: the first $\Delta$ is the chart-free one, the second is the same operator in $r'_t$. Marking the first would hide the identity.</p>
+<p><strong>17 print $r'_t$, and nine of them are the chain display</strong> $\Box=\partial^2/\partial R_t^2+\Delta=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, whose first $\Delta$ is the chart-free $\Delta_Q$ and is the point of the display. The other eight are not the Laplacian in that formula: an energy shift $E_0+\Delta$, a component $\vec\omega_{\mathrm{eff}}$, a separation $\Delta x^2-\Delta{r'_t}^2$, the modular operator $\Delta=1$ of two Tomita–Takesaki articles, and the two factorization identities of the scattering article, which are quoted in its source's notation. The scan separates them from the Laplacians by the character that follows the glyph.</p>
+<p><strong>3 print $h_t$.</strong> One is defined in its own display, $\Delta=\sum_\eta\partial^2/\partial x_\eta^2$; one is the Helmholtz $\Delta+k_\Phi^2$ of a display in which the exponential carries $h_t$ and the operator acts on $r_x$; one is the Euclidean Laplacian of the Wick rotation, which is on no sector.</p>
+<h2 id="what-remains-open">What Remains Open</h2>
+<p><strong>The 430 chart-free occurrences need a second pass.</strong> They include the chart-free $\Delta_Q$ written in formulas that print no coordinate, and they also include the discriminant $\Delta=4-12$, the modular operator, and the increments. Separating them needs a reading of each formula, not a pattern.</p>
+<p><strong>$\Delta_\Psi$ stands at fourteen occurrences in two articles.</strong> The informational Laplacian is almost never the working operator. If a Ψ display is ever the working chart, the mark is what prevents the sign error, so such a display should be written with the mark from its first line.</p>
+<p><strong>Whether to keep the ten $\Box$ marks is a style question.</strong> They teach the substitution well and they are the only places where the sign of the time term is visible as a comparison. The alternative is the bare $\Box$ and the substitution in words, which is what the other 164 articles do.</p>
+<h2 id="summary">Summary</h2>
+<p>One d'Alembertian, one definition, no label: 1403 of its 1510 occurrences are bare and correct. One Laplacian with three names, of which two differ by a sign: $\Delta_\Phi=\Delta_Q$ and $\Delta_\Psi=-\Delta_Q$. The mark is needed exactly where the formula prints the chart, at 72 sites, and nowhere else. The remaining 88 bare Laplacians are the chart-free $\Delta_Q$ or are not Laplacians at all, and the 910 other occurrences of the glyph are a different symbol altogether.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Box$</td>
+<td>the d'Alembertian, $\sum_\mu\partial^2/\partial Q_\mu^2$; one operator, no sector label</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the spatial Laplacian, $\sum_\eta\partial^2/\partial Q_\eta^2$; bare only when the chart is the algebra or is not printed</td>
+</tr>
+<tr>
+<td>$\Delta_Q$</td>
+<td>$\sum_\eta\partial^2/\partial R_\eta^2$, the chart-free name</td>
+</tr>
+<tr>
+<td>$\Delta_\Phi$</td>
+<td>$\sum_\eta\partial^2/\partial r_\eta^2=\Delta_Q$, the material name</td>
+</tr>
+<tr>
+<td>$\Delta_\Psi$</td>
+<td>$\sum_\eta\partial^2/\partial h'^2_\eta=-\Delta_Q$, the informational name</td>
+</tr>
+<tr>
+<td>$\Box_\Phi$, $\Box_\Psi$</td>
+<td>the two chart readings, written in the conventions displays only</td>
+</tr>
+<tr>
+<td>$\Delta_{\mathrm F}$, $\Delta_{\mathrm{ch}}$, $\Delta_{\mathrm{PJ}}$, $\Delta_\sigma$</td>
+<td>a different object in each case; never the spatial Laplacian</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, §<em>The Gradient</em>, for the definitions and the two chart readings.</li>
+<li><a href="the-labels-of-the-gradient-an-inventory-and-the-return-to-the-caret.html">The Labels of the Gradient: An Inventory and the Return to the Caret</a>, for the same census applied to the gradient.</li>
+<li><a href="../articles_physics/index-and-notation-conventions.html">Index and Notation Conventions</a>, §<em>The Subscript</em>, for the low slot.</li>
+<li><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The D'Alembertian and Its Green's Functions</a>, for the operator in use.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
