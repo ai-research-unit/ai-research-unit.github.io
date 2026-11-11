@@ -89,7 +89,7 @@ $$</p>
 \qquad
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 $$</p>
 <p>with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$. Write $\vec\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$.</p>
 <p><strong>Why the mass needs two fields.</strong> The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla\vec\nabla=-\Delta_Q$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:</p>
@@ -112,7 +112,7 @@ $$</p>
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi,
 $$</p>
 <p>one gradient per line and one slot per line. Nothing acts on the right: each line is built from one gradient and nothing else enters.</p>
 <p><strong>The subscript.</strong> The chirality is a value of the element: the test returns $L$ or $R$, and those are the two values. The letters are the Dirac ones, $L$ and $R$, the names of the two components, in the sense the corpus already uses for $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript belongs to the element, not to a column: a unit, a product and a general element carry it, and a state carries it because a state is an element.</p>
@@ -208,7 +208,7 @@ $$</p>
 = \vec p^{\,2} + m^2\omega^2\vec r^{\,2} -3\,\hbar\,m\,\omega - 2m\omega\sum_\eta  L_{\mathrm{orb},\eta}\,i\vec e_\eta\;}
 $$</p>
 <p>where the last term is the left multiplication by $i\vec e_\eta$ with the scalar $L_{\mathrm{orb},\eta}$ in front of it, and the second-order equation of the last section reads $(E^2-m^2c^4)\tilde{Ξ}_{\mathrm{sp},+}=c^2\mathcal{Q}_+\mathcal{Q}_-\tilde{Ξ}_{\mathrm{sp},+}$.</p>
-<p><strong>Why the product is not the d'Alembertian.</strong> The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$. They reduce instead to two remainders: the commutator $[Q_\eta,p_\eta]$, which is central and produces $-3\,\hbar\,m\,\omega$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.</p>
+<p><strong>Why the product is not the d'Alembertian.</strong> The two factors are both pure vectors, so each is its own negative under the quaternion conjugate, and neither is the conjugate of the other. The product $\vec\nabla_-\vec\nabla_+$ is therefore not the norm of a single element, and its cross terms do not cancel as they do in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$. They reduce instead to two remainders: the commutator $[Q_\eta,p_\eta]$, which is central and produces $-3\,\hbar\,m\,\omega$, and the antisymmetric part of the units' product, which produces $-2m\omega S$. That is the algebraic statement of the section's title: the product of the two first-order operators is central up to one vector term, and the vector term is the spin–orbit coupling. Nothing here rests on an anticommutation of actions; the anticommutation that matters is that of the three spatial units, which is part of the multiplication table.</p>
 <p><strong>The two orders differ.</strong> $\vec\nabla_+\vec\nabla_-$ is not $\vec\nabla_-\vec\nabla_+$, and the difference is in two places. The cross term of $\partial/\partial R_\eta$ with $Q_\eta$ changes sign with the order, so the constant changes sign: the order $\vec\nabla_+\vec\nabla_-$ gives $+3\,\hbar\,m\,\omega$ where the boxed identity has $-3\,\hbar\,m\,\omega$. The antisymmetric part of the coefficient changes sign with the order as well, so the spin–orbit term changes sign too. The two orders are therefore not related by an overall sign, and the boxed identity belongs to the order $\vec\nabla_-\vec\nabla_+$ alone. That is the order in which the substitution appears, the outer shift being the one carried by the line for $\tilde{Ξ}_{\mathrm{sp},+}$; its partner, $\hbar^{2}\,\vec \nabla_{+}\,\vec \nabla_{-}$, is the operator of the other supersymmetric member and carries $+3\,\hbar\,m\,\omega$ and $+2m\omega S$.</p>
 <p>This is the load-bearing equation of the article. It was checked by exact differentiation on generic polynomial states of total degree at most three, with random complex coefficients: both sides were evaluated on the same state and the residual was zero, not merely small, because the differentiation of a polynomial is exact and no truncation enters. On that class of states the identity holds term by term, with integer coefficients on both sides. The commutator $[Q_\eta,p_\eta]=i\,\hbar$, which a truncated basis realises only in its bulk, is here an identity at every order, and it is the only place where $\hbar$ enters the product.</p>
 <p>The right-hand side separates into three pieces. The first two terms are the <strong>three-dimensional isotropic oscillator</strong> in operator form,</p>
@@ -372,7 +372,7 @@ $$</p>
 <td>Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$</td>
 </tr>
 <tr>
-<td>$\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta_Q$</td>
+<td>$\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2+\Delta_Q$</td>
 <td>The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$</td>
 </tr>
 <tr>

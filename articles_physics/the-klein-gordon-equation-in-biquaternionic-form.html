@@ -76,7 +76,7 @@
 \qquad
 \tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z,
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box = + \partial^2/\partial R_t^2 + \Delta_\Phi,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = + \partial^2/\partial R_t^2 + \Delta_\Phi,
 $$</p>
 <p>one equation for the <strong>biquaternion-valued</strong> field $\tilde{Ξ}$, whose value at each event is an element of $\mathbb{B}$ and not a single number. It is the equation that a spin-$0$ field obeys, and it is <strong>second order in the time coordinate</strong>.</p>
 <p>The operator $\Box$ is central and scalar: it multiplies each coefficient and mixes no two of them. Read on the coefficients, the same one equation is</p>
@@ -88,7 +88,7 @@ $$</p>
 <p>The companion article <em>Relativistic Mechanics in Biquaternionic Form</em> already recorded the biquaternion line as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>Two facts about the equation drive everything below. The first is structural: being second order in time, the Klein–Gordon equation is not a single first-order evolution. Equivalently, its general solution carries a positive-frequency and a negative-frequency branch, and both $\tilde{Ξ}$ and its complex conjugate $\tilde{Ξ}^{*}$ are needed to describe it. The second is physical, and is the standard objection to the equation as a one-particle wave equation: the two branches come with energies of both signs, the conserved density is not positive definite, and the equation does not conserve particle number. Both defects are real, and the biquaternion notation does not remove either; the honest question is whether it relocates them usefully.</p>
 <p>The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$. The parent article, <em>The Schrödinger Equation in Biquaternionic Form</em>, showed that the first-order-in-time Schrödinger equation is organized by the <strong>scalar imaginary</strong> $i$: the Hermitian observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ generates a flow whose generator $-\frac{i\,H}{\hbar}$ lies in the material sector $\mathbb{B}_{\Phi}$, and the same central $i$ supplies the complex structure of the state module. This article asks the corresponding question for the second-order equation: <strong>does the second-order structure fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally, or does it require a doubling that the split does not supply?</strong> The answer worked out below is that it requires a doubling, and that the doubling is <em>not</em> $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the sector split gives two $i$-related copies of the same equation, not the particle–antiparticle pair. The closing sections treat the non-relativistic limit. The rest-mass phase $\exp(-i k_m r'_t)$ is divided out exactly, and the limit itself is then the leading term of an expansion of the dispersion relation about the rest point, $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\ldots$.</p>
-<p>The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector), $\mathbb{B}_{H}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the complex scalar line, which is the centre). The gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ with $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$, so that $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box = \partial^2/\partial R_t^2 + \Delta_\Phi$, and $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
+<p>The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector), $\mathbb{B}_{H}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the complex scalar line, which is the centre). The gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ with $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$, so that $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$, and $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
 <h2 id="the-equation-and-its-operator">The Equation and Its Operator</h2>
 <p>The equation of the introduction, kept in view and boxed here, is</p>
 <p>$$
@@ -96,7 +96,7 @@ $$</p>
 \left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- k_m^{2}\right)\tilde{Ξ} = 0,
 \qquad \tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z\;}.
 $$</p>
-<p>The operator $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$ is a <strong>central scalar</strong> differential operator with real coefficients. Because $\Box$ is central and scalar, it acts on a biquaternion-valued field component by component:</p>
+<p>The operator $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$ is a <strong>central scalar</strong> differential operator with real coefficients. Because $\Box$ is central and scalar, it acts on a biquaternion-valued field component by component:</p>
 <p>$$
 \Box\tilde{Ξ} = \sum_{\mu\in\{t,x,y,z\}}(\BoxΞ_\mu)\,e_\mu .
 $$</p>
@@ -110,7 +110,7 @@ $$</p>
 <p>The equivalence runs both ways: the four hold if and only if the biquaternion one holds, and any four complex scalar solutions assemble into a $\mathbb{B}$-valued one. Consequently the biquaternion Klein–Gordon equation on $\mathbb{B}$-valued $\tilde{Ξ}$ is <strong>four decoupled copies</strong> of the complex scalar Klein–Gordon equation, one per coefficient. If the intended field is a single Lorentz scalar, the right host is the centre $\mathbb{B}_{C}$, and then the biquaternion form and the ordinary complex form say the same thing.</p>
 <p>The operator is nevertheless the natural object to name, because it is the composition of $\tilde\nabla_\Phi$ with its quaternion conjugate,</p>
 <p>$$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box ,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi ,
 $$</p>
 <p>The mixed products cancel in pairs. For two spatial directions the two orderings contribute $-\vec e_\mu\vec e_\nu$ and $-\vec e_\nu\vec e_\mu = +\vec e_\mu\vec e_\nu$, which sum to zero. For one temporal and one spatial direction they contribute $-\vec e_\nu$ and $+\vec e_\nu$, which also sum to zero. The four diagonal products return $+e_t$. That is a genuine algebraic statement: the d'Alembertian is the <strong>biquaternion norm</strong> of the gradient biquaternion, exactly as $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the biquaternion norm of a biquaternion. The wave operator is the square of an element of the algebra, and the mass-shell condition below is the same biquaternion norm evaluated on the four-wavevector. That is the structural content the biquaternion writing makes visible.</p>
 <h2 id="the-lanczos-family-and-the-spin-0-member">The Lanczos Family and the Spin-0 Member</h2>
@@ -132,14 +132,14 @@ $$</p>
 <p>An equation second order in $r'_t$ does not determine the field from its value alone: two data, $\tilde{Ξ}$ and $\partial/\partial r'_t\tilde{Ξ}$, are required. Equivalently, the operator $\Box - k_m^{2}$ has no first-order scalar square root inside the algebra, and the obstruction is elementary. Attempt the factorisation</p>
 <p>$$
 \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\left(\tilde\nabla_\Phi - k_m\right)
-= \Box - k_m(\tilde\nabla_\Phi)^{\natural}+ k_m\tilde\nabla_\Phi - k_m^{2}
-= \Box + 2k_m\,\vec\nabla - k_m^{2},
+= \Box_\Phi - k_m(\tilde\nabla_\Phi)^{\natural}+ k_m\tilde\nabla_\Phi - k_m^{2}
+= \Box_\Phi + 2k_m\,\vec\nabla - k_m^{2},
 \qquad k_m=\dfrac{mc}{\hbar},
 $$</p>
 <p>where $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ is the vector part of the gradient. The cross term $2k_m\vec\nabla$ is a first-order differential operator and does not vanish, and general constant biquaternion coefficients do not remove it. For constant $A$ and $B$,</p>
 <p>$$
 \left((\tilde\nabla_\Phi)^{\natural}+ A\right)\left(\tilde\nabla_\Phi + B\right)
-= \Box + (A + B)\,\partial/\partial R_t + \sum_{\mu=1}^{3}\left(A \vec e_\mu - \vec e_\mu B\right)\partial/\partial R_\mu + AB,
+= \Box_\Phi + (A + B)\,\partial/\partial R_t + \sum_{\mu=1}^{3}\left(A \vec e_\mu - \vec e_\mu B\right)\partial/\partial R_\mu + AB,
 $$</p>
 <p>so cancellation of the first-order terms requires $B = -A$ together with $A\vec e_\mu + \vec e_\mu A = 0$ for $\mu = 1, 2, 3$. An element that anticommutes with all three units $\vec e_\mu$ must vanish: the condition for $\mu=1$ forces the $e_t$ and $\vec e_x$ coefficients of $A$ to zero, and the conditions for $\mu=2$ and $\mu=3$ remove the remaining two coefficients. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-k_m^{2}$ for a finite mass, $k_m\neq0$. Hence the scalar Klein–Gordon operator does not factor into first-order scalar operators in $\mathbb{B}$.</p>
 <p>The physical counterpart of this algebraic obstruction is the conjugate pair. The equation has real coefficients, so whenever $\tilde{Ξ}$ is a solution, so is its complex conjugate $\tilde{Ξ}^{*}$:</p>
@@ -336,7 +336,7 @@ $$</p>
 <p>Three things are genuinely rearranged rather than renamed.</p>
 <ol>
 <li>
-<p><strong>The wave operator is a biquaternion norm.</strong> $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The equation and its on-shell condition are both statements about $\langle \cdot\rangle_{\natural}$.</p>
+<p><strong>The wave operator is a biquaternion norm.</strong> $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the biquaternion norm of the gradient biquaternion, and the mass-shell condition is the same biquaternion norm on the four-wavevector, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$. The equation and its on-shell condition are both statements about $\langle \cdot\rangle_{\natural}$.</p>
 </li>
 <li>
 <p><strong>The current's home is explicit.</strong> The conserved four-current lies in $\mathbb{B}_{\Phi}$, and conservation is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, the same scalar pairing that appears in the framework's $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ trace formula. The continuity equation is a scalar projection of a stronger biquaternion equation.</p>
@@ -372,7 +372,7 @@ $$</p>
 <p>$$
 \left(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- k_m^{2}\right)\tilde{Ξ} = 0,
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box = \partial^2/\partial R_t^2 + \Delta_\Phi,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi,
 $$</p>
 <p>with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.</p>
 <p>Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2k_\Phi^{2} + c^2k_m^{2}$, that is $k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2}$, which is the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\hbar^{2}= -m^{2}c^{2}/\hbar^{2}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.</p>
@@ -428,7 +428,7 @@ $$</p>
 <td>Quaternion-conjugate gradient</td>
 </tr>
 <tr>
-<td>$\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta_\Phi$</td>
+<td>$\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \Delta_\Phi$</td>
 <td>d'Alembertian</td>
 </tr>
 <tr>

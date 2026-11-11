@@ -77,7 +77,7 @@
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
-<p>with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ one element of $\mathbb{B}$ and $k_m$ the mass wave number. The gradient, its conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$ are those of <em>Operator and Calculus Conventions</em>, and the coordinates, the frame and the four-position are those of <em>Frame and Metric Conventions</em>. Nothing of the three is repeated.</p>
+<p>with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ one element of $\mathbb{B}$ and $k_m$ the mass wave number. The gradient, its conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ are those of <em>Operator and Calculus Conventions</em>, and the coordinates, the frame and the four-position are those of <em>Frame and Metric Conventions</em>. Nothing of the three is repeated.</p>
 <p><strong>The frame, and what it costs.</strong> One frame is declared for the article, because the value of a part is read by the frame's third direction. The plane waves use it, the spherical and cylindrical families use it, and no second choice is made anywhere. The cost is visible in one place and nowhere else: a solution of definite value is a solution in a frame, and the helicity reading of the massless case is the frame-free statement, because there the third direction is the momentum's.</p>
 <p><strong>The order.</strong> Plane waves first, the massless before the massive, because the massless kernel fixes the shape of the massive one. The scalar-potential reading follows, since it is where the shift appears and where the nullness of the elementary field is read. The spherical and cylindrical families close the sequence, and they are built by the same completion.</p>
 <p><strong>Two readings of one equation.</strong> Every section below reads one equation in one of two ways: as an equation for an element, and as the same equation for its plane-wave coefficients in momentum space. Both are kept, because the kernel statement — a polarization biquaternion annihilated by the wave biquaternion — is visible only in the second, while nullness and the cone are visible only in the first.</p>
@@ -119,11 +119,11 @@ $$</p>
 <h2 id="the-field-as-the-gradient-of-a-scalar-potential">The Field as the Gradient of a Scalar Potential</h2>
 <p>The completion of the next section has a shifted form, and the shift is the operator of the companion <em>The Biquaternion D'Alembertian and Its Green's Functions</em>. With the <strong>shifted gradient</strong> $\tilde{\nabla}_\kappa = \tilde\nabla_\Phi + \kappa$,
 $$
-\tilde{\nabla}_\kappa(\tilde\nabla_\Phi)^{\natural}_\kappa = \Box + 2\kappa\,\partial/\partial R_t + \kappa^2 ,
+\tilde{\nabla}_\kappa(\tilde\nabla_\Phi)^{\natural}_\kappa = \Box_\Phi + 2\kappa\,\partial/\partial R_t + \kappa^2 ,
 $$
 because the two spatial parts cancel in the sum of the operator and its conjugate, $\tilde\nabla_\Phi+(\tilde\nabla_\Phi)^{\natural}=2e_t\,\partial/\partial R_t=2\,\partial/\partial R_t$, since $e_t=1$. A <strong>scalar</strong> solution of that operator therefore produces a field of the algebra,
 $$
-\left(\Box + 2\kappa\,\partial/\partial R_t + \kappa^2\right) u = 0
+\left(\Box_\Phi + 2\kappa\,\partial/\partial R_t + \kappa^2\right) u = 0
 \quad\Longrightarrow\quad
 \tilde{\nabla}_\kappa\left((\tilde\nabla_\Phi)^{\natural}_\kappa u\right) = 0 ,
 $$
@@ -144,7 +144,7 @@ The two lines are one statement in two languages: the norm of the field vanishes
 \tilde{Ξ}_{\mathrm{sp},R}=1/k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} ,
 $$</p>
 <p>so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde{Ξ}_{\mathrm{sp},R}\,k_m^{2}$ of <em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em>. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $2\kappa\,\partial/\partial R_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of <em>The Massive Case</em> — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.</p>
-<p><strong>The potential is defined only up to a constrained shift.</strong> The map $u\mapsto(\tilde\nabla_\Phi)^{\natural}_\kappa u$ is not injective. Any $u'$ with $(\tilde\nabla_\Phi)^{\natural}_\kappa u'=0$ leaves the field unchanged, and such $u'$ are supplied by the scalars: every $\zeta$ solving the shifted scalar equation gives one, $u'=\tilde{\nabla}_\kappa\zeta$, because $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{\nabla}_\kappa=\Box+2\kappa\,\partial/\partial R_t+\kappa^2$. The potential is therefore fixed only up to</p>
+<p><strong>The potential is defined only up to a constrained shift.</strong> The map $u\mapsto(\tilde\nabla_\Phi)^{\natural}_\kappa u$ is not injective. Any $u'$ with $(\tilde\nabla_\Phi)^{\natural}_\kappa u'=0$ leaves the field unchanged, and such $u'$ are supplied by the scalars: every $\zeta$ solving the shifted scalar equation gives one, $u'=\tilde{\nabla}_\kappa\zeta$, because $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{\nabla}_\kappa=\Box_\Phi+2\kappa\,\partial/\partial R_t+\kappa^2$. The potential is therefore fixed only up to</p>
 <p>$$
 u\longmapsto u+\tilde{\nabla}_\kappa\zeta ,
 \qquad
@@ -158,9 +158,9 @@ $$</p>
 <p>$$
 \tilde{\nabla}^2 = \frac{\partial^2}{\partial R_t^2} - \Delta + 2\,\frac{\partial}{\partial R_t}\,\vec\nabla ,
 $$</p>
-<p>a derived form, whose first-order cross term does not vanish, so $\tilde{\nabla}^2 \neq \Box$. It is the <strong>conjugate</strong> gradient that squares to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$, so the completion operator is $(\tilde\nabla_\Phi)^{\natural}$: for every harmonic scalar function $\tilde{Ξ}_{\mathrm{sp}}$ with $\Box\tilde{Ξ}_{\mathrm{sp}} = 0$, the function $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ satisfies</p>
+<p>a derived form, whose first-order cross term does not vanish, so $\tilde{\nabla}^2 \neq \Box$. It is the <strong>conjugate</strong> gradient that squares to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, so the completion operator is $(\tilde\nabla_\Phi)^{\natural}$: for every harmonic scalar function $\tilde{Ξ}_{\mathrm{sp}}$ with $\Box\tilde{Ξ}_{\mathrm{sp}} = 0$, the function $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ satisfies</p>
 <p>$$
-\tilde\nabla_\Phi\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}\right) = \Box\tilde{Ξ}_{\mathrm{sp}} = 0
+\tilde\nabla_\Phi\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}\right) = \Box_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0
 $$</p>
 <p>and is a solution of the massless Dirac equation. This is the biquaternion form of the completion of the scalar harmonic functions, and it is the reason the spherical solutions are indexed by the scalar spherical harmonics.</p>
 <p>For the massless case, the spherical solutions of the biquaternionic Dirac equation are the <strong>completed spherical harmonics</strong>, and they form a basis of the solution space. For the massive case, the construction is more involved: the solution is a combination of the completed spherical harmonics and their anti-Hermitian conjugates, with coefficients determined by the mass-shell condition.</p>
@@ -169,7 +169,7 @@ $$</p>
 <p>Cylindrical solutions are similarly constructed from cylindrical harmonics by the same completion technique. They describe <strong>waveguide modes</strong> of a fermion field in a cylindrical geometry, with the transverse-electric and transverse-magnetic modes corresponding to the two spin states.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>Plane waves.</strong> A plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp(i\,\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural}))$ turns the gradient into left multiplication by $i\tilde K_\Phi$, so the massless member becomes $\tilde K_\Phi\tilde{Ξ}_{\mathrm{sp},0}=0$. A nonzero polarization exists only for null $\tilde K_\Phi$, that is on the light cone $k_t^{\prime\,2}=k_\Phi^{2}$, and the kernel is then two-dimensional with one state of each value. The massive case becomes the momentum-space pair $i\tilde K_\Phi\tilde{Ξ}_{\mathrm{sp},0}^{R}=k_m\tilde{Ξ}_{\mathrm{sp},0}^{L}$, $i\tilde K_\Phi^{\natural}\tilde{Ξ}_{\mathrm{sp},0}^{L}=k_m\tilde{Ξ}_{\mathrm{sp},0}^{R}$, whose solvability is the mass shell $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$, that is $k_t^{\prime\,2}=\|\vec k_\Phi\|^{2}+k_m^{2}$. The two signs of $k_t^{\prime}$ are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.</p>
-<p><strong>Completion.</strong> The operator whose square is the d'Alembertian is the conjugate gradient, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box$, so $\tilde{Ξ}_{\mathrm{sp}}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ carries every harmonic scalar into a solution. The spherical and cylindrical families are the completed harmonics, and the constancy of the construction is why they are indexed by the scalar harmonics of the same geometry.</p>
+<p><strong>Completion.</strong> The operator whose square is the d'Alembertian is the conjugate gradient, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so $\tilde{Ξ}_{\mathrm{sp}}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ carries every harmonic scalar into a solution. The spherical and cylindrical families are the completed harmonics, and the constancy of the construction is why they are indexed by the scalar harmonics of the same geometry.</p>
 <p><strong>The field as a gradient.</strong> With the shifted gradient $\tilde\nabla_\kappa=\tilde\nabla_\Phi+\kappa$ one has $\tilde\nabla_\kappa\tilde\nabla_\kappa^{\natural}=\Box+2\kappa\,\partial/\partial R_t+\kappa^{2}$, so a scalar solving the shifted equation produces the field $\tilde\nabla_\kappa^{\natural}u$. For a plane-wave potential the field is null exactly when the potential solves that equation, so the field is a zero divisor on the shifted cone; at $\kappa=0$ the cone is the light cone. In the massive pair the same shape holds with the mass in place of the shift, each half being the completion of the other, but the mass contributes a constant and leaves the cone where it is.</p>
 <p><strong>The gauge freedom is constrained.</strong> The potential is fixed only up to $u\mapsto u+\tilde\nabla_\kappa\zeta$ with $\zeta$ a solution of the shifted scalar equation. The gauge function obeys the same equation as the potential, and that is what separates the freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -206,7 +206,7 @@ $$</p>
 <td>The propagation wave number of the medium, equal to $k_t^{\prime}$ on the light cone</td>
 </tr>
 <tr>
-<td>$\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$</td>
+<td>$\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$</td>
 <td>The d'Alembertian, a central scalar</td>
 </tr>
 <tr>

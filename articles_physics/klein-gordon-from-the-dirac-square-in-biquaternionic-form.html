@@ -88,7 +88,7 @@ $$</p>
 <p>Three boundaries are respected. The Klein–Gordon <strong>propagator</strong> and the <strong>scalar path integral</strong> are the subject of the spin-$0$ companions and are not treated here. The d'Alembertian and its Green's functions are the subject of <em>The Biquaternion D'Alembertian and Its Green's Functions</em>, and the involution lattice is not reopened. What is treated here is the algebraic transfer from the first-order pair to the second-order equation, the kernel it produces, and the sense in which the transfer is irreversible.</p>
 <p>Two conventions are load-bearing and are stated once. The d'Alembertian is the series convention,</p>
 <p>$$
-\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta ,
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta ,
 $$</p>
 <p>with $Q_t=i q'_t$, so that each time derivative carries the factor $(ic)^{-1} = -i/c$ when it is written in $r'_t$ and the time part is $-c^{-2}$ times the second derivative in $r'_t$. The imaginary unit satisfies $i^2 = -1$, and every product of two of them is reduced before a display is written: the collapse is what turns $(i\omega/c)^2$ into $-\omega^2/c^2$, and what makes $i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})$ a purely imaginary exponent whose exponential has unit modulus. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength</p>
 <p>$$
@@ -98,7 +98,7 @@ $$</p>
 <h2 id="the-gradient-and-its-square">The Gradient and Its Square</h2>
 <p>Left multiplication by $\tilde\nabla_\Phi$ is the first-order operator, and $(\tilde\nabla_\Phi)^{\natural}$ is the quaternion conjugate of that same element, acting the same way, by multiplication on the left. The two products of the pair are the central scalar</p>
 <p>$$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box .
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi .
 $$</p>
 <p>Neither equality is a square, and the distinction is the first thing the algebra contributes. Writing $\tilde\nabla = e_t\partial/\partial R_t + \vec\nabla$,</p>
 <p>$$
@@ -116,7 +116,7 @@ $$</p>
 <p>$$
 (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = (\tilde\nabla_\Phi)^{\natural}\!\left(k_m\tilde{Ξ}_{\mathrm{sp},L}\right) = k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
-<p>where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$ is central,</p>
+<p>where the middle equality uses that $m$ is a scalar and the last uses the second member. Since $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$ is central,</p>
 <p>$$
 \boxed{\;\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0\;}.
 $$</p>
@@ -139,7 +139,7 @@ $$</p>
 <p>Both operators act by multiplication, $\tilde\nabla_\Phi\tilde{Ξ}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$, and two multiplications compose as the multiplication by the product: $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ is a single multiplication, by the element $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, whose value on $\tilde{Ξ}$ is read off once that element is scalar — which it is, and that is what the next display shows.</p>
 <p>Their product is central and scalar:</p>
 <p>$$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2 = \Box .
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2 = \Box_\Phi .
 $$</p>
 <p>The cancellation of the mixed terms uses the quaternion multiplication table twice: the spacelike ones cancel because $\{\vec e_j,\vec e_\eta\} = 0$ for $j\neq k$, the timelike ones because the scalar part commutes with the vector part. This is why $\Box$ is scalar and central, and why it acts on a biquaternion field coefficient by coefficient,</p>
 <p>$$
@@ -148,11 +148,11 @@ $$</p>
 <p>with no mixing of components. The spin-$0$ article records this as the reason its equation decouples into four complex scalars; here the same centrality is what lets the square of the Dirac pair produce a single second-order equation rather than a system.</p>
 <p>The mass is a <strong>central scalar</strong> too: $m$ commutes with $\Box$ and with the chirality of each half alike, and that is exactly why it passes through the gradient and lets the substitution above go through. Its coupling is not a property of $m$ but of the pair: the mass multiplies within a chiral half, the gradient maps one half into the other, and it is that mismatch that makes the pair two coupled equations rather than two separate ones. Squaring moves the mass across one gradient, and because $m$ is central the two orders agree. What the square then loses is the coupling — which half the mass connects — not its value, which survives as $m^2$. In the algebra the reduction is therefore</p>
 <p>$$
-(\tilde\nabla_\Phi)^{\natural}\!\left(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}\right) = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = \Box\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla_\Phi)^{\natural}\!\left(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}\right) = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = \Box_\Phi\tilde{Ξ}_{\mathrm{sp},R} ,
 \qquad
 k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
-<p>and the equality of the two expressions is the equation $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$. Nothing in this step needs an array, a basis or a frame: it is the quaternion identity $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box$ applied to the pair.</p>
+<p>and the equality of the two expressions is the equation $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0$. Nothing in this step needs an array, a basis or a frame: it is the quaternion identity $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$ applied to the pair.</p>
 <h3 id="the-square-in-the-reduced-theory">The Square in the Reduced Theory</h3>
 <p>The reduction to one spatial dimension isolates the mechanism without the bookkeeping of three. Take</p>
 <p>$$
@@ -173,7 +173,7 @@ $$</p>
 <p>The companion article on the Klein–Gordon equation proves an obstruction that appears, at first sight, to contradict the reduction just performed. Its theorem is that the scalar operator $\Box - k_m^{2}$ does not factor into first-order <strong>scalar</strong> operators inside $\mathbb{B}$. For constant biquaternion coefficients,</p>
 <p>$$
 ((\tilde\nabla_\Phi)^{\natural}+ A)(\tilde\nabla_\Phi + B)
-= \Box + (A + B)\,\partial/\partial R_t + \sum_{\eta=x,y,z}\left(A\vec e_\eta - \vec e_\eta B\right)\partial/\partial R_\eta + AB,
+= \Box_\Phi + (A + B)\,\partial/\partial R_t + \sum_{\eta=x,y,z}\left(A\vec e_\eta - \vec e_\eta B\right)\partial/\partial R_\eta + AB,
 $$</p>
 <p>so cancelling the first-order terms requires $B = -A$ together with $A\vec e_\eta + \vec e_\eta A = 0$ for $\eta = x,y,z$. An element that anticommutes with all three quaternion units must vanish, and the reason is visible one unit at a time: the condition for $\vec e_\eta$ removes the scalar coefficient together with the coefficient of $\vec e_\eta$, so the three conditions hold together only on the zero element. With $A = 0$ the constant term is $AB = -A^2 = 0$, which cannot equal $-k_m^{2}$ for a finite mass, $k_m\neq0$, and no scalar factorisation exists.</p>
 <p>The two results are consistent, and their consistency is the whole point. The Dirac square root is <strong>not</strong> a scalar factor of the form $\tilde\nabla_\Phi + A$ multiplying another scalar factor. It is an operator on the pair of chiral halves. On the pair the equation is two equations for two halves,</p>
@@ -197,11 +197,11 @@ $$</p>
 $$</p>
 <p>and compose each with the conjugate of the other,</p>
 <p>$$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},L},
 $$</p>
-<p>because each half is acted on by one product of the gradient with its conjugate, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$ being central. The pair is two lines and not a new object: it holds no element beyond the two gradients, and the mass acts on each half as the same scalar.</p>
+<p>because each half is acted on by one product of the gradient with its conjugate, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$ being central. The pair is two lines and not a new object: it holds no element beyond the two gradients, and the mass acts on each half as the same scalar.</p>
 <p>The pair is one member per chiral half:</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},
@@ -233,7 +233,7 @@ $$</p>
 <p>$$
 \tilde\nabla_\Phi \longmapsto -\frac{\omega}{c}e_t + i\vec k_\Phi, \qquad
 (\tilde\nabla_\Phi)^{\natural}\longmapsto -\frac{\omega}{c}e_t - i\vec k_\Phi, \qquad
-\Box \longmapsto \frac{\omega^2}{c^2} - \vec k_\Phi^2 .
+\Box_\Phi \longmapsto \frac{\omega^2}{c^2} - \vec k_\Phi^2 .
 $$</p>
 <p>The biquaternion norm of the wave biquaternion is</p>
 <p>$$
@@ -262,7 +262,7 @@ $$</p>
 <p><strong>Not carried.</strong> The sign of the mass, the chirality of each half, the amplitude carried by each half, and the relation between the halves at each frequency branch. The square is even in $m$ and chirality-blind; it cannot distinguish a solution of the pair from a second-order solution that violates the pair. The passage is therefore one-way: every solution of the first-order pair is a solution of the second-order equation, and not conversely.</p>
 <p><strong>Not claimed.</strong> The square does not turn the spin-$\tfrac12$ field into a spin-$0$ field. The Klein–Gordon equation is obeyed by each <strong>component</strong>, but the object that obeys it is a pair of biquaternion fields: the reduction is a statement about the operator, not about what the field is. The genuine spin-$0$ field of the companion article lives in the centre $\mathbb{B}_{C}$, where the Klein–Gordon equation is the whole of the dynamics; the spin-$\tfrac12$ field lives in the pair, where the Klein–Gordon equation is the square's shadow and the first-order pair is the dynamics. The two share the operator and the mass shell, and nothing else. That is the precise sense in which this subcategory closes the loop to the spin-$0$ subcategory without absorbing it: the second-order equation is recovered, and what is recovered is exactly the part of the spin-$\tfrac12$ theory that the spin-$0$ theory already contained.</p>
 <p>There is a final structural remark. The passage from the pair to the square is the passage from an operator that exchanges the halves to one that acts in each. In the two lines the gradient exchanges the halves and the mass acts in each; composing the two mass-shifted maps cancels the exchange and leaves $\Box-k_m^{2}$ in each half, so what has been traced out is exactly the exchange. The sign attached to each half is the one the supersymmetric structure of the first-order operator exploits, and <em>Supersymmetric Quantum Physics in the Biquaternion Framework</em> develops it. The Klein–Gordon equation is the bosonic shadow of the fermionic square root: it is what remains of a first-order operator once the exchange of the two halves is cancelled.</p>
-<p>In the algebra the only identities used are $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$, which is exact, and the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: the composition is $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ on one half and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ on the other. No array enters that reading either.</p>
+<p>In the algebra the only identities used are $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$, which is exact, and the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$, which is the definition of the on-shell four-momentum; no array enters. The pair reading uses the same identity twice, once for each half: the composition is $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ on one half and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ on the other. No array enters that reading either.</p>
 <h2 id="the-converse-direction">The Converse Direction</h2>
 <p><em>The Kernel and the Solution Space</em> measured what the square loses. The mirror question is what the <strong>split</strong> loses, and its answer is stronger: the second chiral half is a derivative of the first, and not independent data. Read the first member of the pair as a definition,</p>
 <p>$$
@@ -275,7 +275,7 @@ $$</p>
 <p>The substitution is therefore exact in both directions:</p>
 <p>$$
 \begin{aligned}
-&(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0 \\
+&(\Box_\Phi-k_m^{2})\tilde{Ξ}_{\mathrm{sp},R} = 0 \\
 &\quad\Longleftrightarrow\quad
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad  (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad \tilde{Ξ}_{\mathrm{sp},L} =\frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} .
@@ -286,9 +286,9 @@ $$</p>
 \tilde{Ξ}_{\mathrm{sp},R} \longmapsto \left(\tilde{Ξ}_{\mathrm{sp},R},\ \frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}\right)
 $$</p>
 <p>is $\mathbb{C}$-linear and injective and is onto the solution space of the pair, so the free Dirac solutions stand in bijection with the free Klein–Gordon solutions of <strong>one chiral half</strong>: the same data, described twice. The second member is not a second equation: it is what the definition of the second half turns into once the first half is on shell.</p>
-<p>The device is older than this algebra. The second-order form of the Dirac equation in two halves, with the other chiral half restored by differentiation, is Feynman and Gell-Mann's rewriting of the Dirac equation for the theory of the Fermi interaction. The algebra's contribution is not the device but the form it takes here: the restoring operator is the algebra's own gradient, and the exactness in both directions follows from the single identity $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$.</p>
-<p>Nothing in the display is a property of plane waves; the only identity used is $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box$, which is central. The equivalence was checked on plane waves at both frequency signs, with residual at the floating-point floor, and <strong>off</strong> the mass shell the same substitution leaves exactly</p>
-<p>$$\frac{1}{k_m}(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} - k_m\tilde{Ξ}_{\mathrm{sp},R} =\frac{1}{k_m}\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
+<p>The device is older than this algebra. The second-order form of the Dirac equation in two halves, with the other chiral half restored by differentiation, is Feynman and Gell-Mann's rewriting of the Dirac equation for the theory of the Fermi interaction. The algebra's contribution is not the device but the form it takes here: the restoring operator is the algebra's own gradient, and the exactness in both directions follows from the single identity $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$.</p>
+<p>Nothing in the display is a property of plane waves; the only identity used is $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi$, which is central. The equivalence was checked on plane waves at both frequency signs, with residual at the floating-point floor, and <strong>off</strong> the mass shell the same substitution leaves exactly</p>
+<p>$$\frac{1}{k_m}(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} - k_m\tilde{Ξ}_{\mathrm{sp},R} =\frac{1}{k_m}\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
 <p>which is the second member's defect, so the mass shell is the exact condition and not an approximation.</p>
 <p>This does not contradict the one-way statement of <em>What the Square Carries and What It Does Not</em>. That statement is about the pair, whose second-order space is twice its first-order space; the present one is about a single chiral half, of which the pair takes all. The counts agree: at fixed momentum the on-shell half has complex dimension eight, four coefficients at each of the two frequency signs; the pair's solution space has the same dimension eight; and the second-order space of the pair has dimension sixteen.</p>
@@ -385,7 +385,7 @@ $$</p>
 <td>Square of the gradient alone; non-central, with a vector remainder</td>
 </tr>
 <tr>
-<td>$\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$</td>
+<td>$\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta$</td>
 <td>d'Alembertian, series convention</td>
 </tr>
 <tr>
