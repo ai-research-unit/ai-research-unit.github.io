@@ -9,7 +9,7 @@ The two readings are linked by one operation. Multiplication by the central $i$ 
 $$
 \boxed{\;\tilde Q_\Phi\in\mathbb{B}_{\Phi}\ \Longrightarrow\ \tilde Q_\Psi=i\,\tilde Q_\Phi\in\mathbb{B}_{\Psi},
 \qquad\qquad
-\tilde Q_\Phi=-i\,\tilde Q_\Psi\;}
+\tilde Q_\Phi=-i\,\tilde Q_\Psi\;}.
 $$
 
 That single line is the whole article. An anti-Hermitian element is rewritten as a Hermitian one by multiplying it by $i$, and the same substitution, applied to an element, an operator, an equation or a coefficient, produces a second exact statement in the other reading. The algebra of the substitution is the identity
@@ -85,17 +85,17 @@ The map is bijective in each direction, with inverse $i^{-1}=-i$, and it is real
 The switched element is a second element, and the numbers attached to it say so. For a general element and its image,
 
 $$
-\operatorname{Tr}(i\tilde Q)=i\,\operatorname{Tr}\tilde Q,
+\boxed{\;\operatorname{Tr}(i\tilde Q)=i\,\operatorname{Tr}\tilde Q,
 \qquad
 \langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural},
 \qquad
-\det(i\tilde Q)=-\det\tilde Q,
+\det(i\tilde Q)=-\det\tilde Q\;},
 $$
 
 since the determinant of the $2\times2$ image is the quaternionic norm and the image is multiplied by the scalar $i$. The spectrum turns a quarter turn in the complex plane,
 
 $$
-\sigma(i\tilde Q)=i\,\sigma(\tilde Q).
+\boxed{\;\sigma(i\tilde Q)=i\,\sigma(\tilde Q)\;}.
 $$
 
 Each eigenvalue is multiplied by $i$, so a real pair becomes an imaginary pair and an imaginary pair becomes a real one, and the two travel as a pair. All four lines are checked on a hundred random elements, with residual zero.
@@ -109,7 +109,7 @@ The pair itself is canonical up to an overall sign. The switch has order four, $
 Because $i$ is central, the switch passes through a product:
 
 $$
-i\,(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X\,(i\tilde Y).
+\boxed{\;i\,(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X\,(i\tilde Y)\;}.
 $$
 
 The proof is one line: $i$ commutes with every element, so it may be placed in front, in the middle or at the end of a product. Two consequences follow, and they are what makes the switch usable on physics.
@@ -119,7 +119,7 @@ First, an equation survives multiplication. If an equation is written as an equa
 Second, the Hermitian form is invariant. For any element,
 
 $$
-(i\tilde Q)(i\tilde Q)^{*}=(i\tilde Q)\bigl(-i\tilde Q^{*}\bigr)=\tilde Q\tilde Q^{*},
+\boxed{\;(i\tilde Q)(i\tilde Q)^{*}=(i\tilde Q)\bigl(-i\tilde Q^{*}\bigr)=\tilde Q\tilde Q^{*}\;}, 
 $$
 
 so $\langle i\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*}$. The form that is positive on the informational sector is the one form the switch leaves alone, and that is why probabilities are the same on both sides of the dictionary.
@@ -210,7 +210,7 @@ The material element is the object and the informational element is the operator
 Take the four-momentum. Material, it is $\tilde P_\Phi=i(E/c)e_t+\vec p$: the energy sits on the imaginary central line and the momentum on the real vector part. Switched, it is
 
 $$
-i\tilde P_\Phi=-\frac{E}{c}e_t+i\vec p,
+\boxed{\;i\tilde P_\Phi=-\frac{E}{c}e_t+i\vec p\;},
 $$
 
 whose trace is $-2E/c$, real, and whose vector part is imaginary. The energy has become the real scalar coefficient and the momentum the imaginary vector part, and the sign of the whole element is the sign of the material one: $\operatorname{Tr}\tilde P_\Psi=-2E/c$, so $E=-\frac{c}{2}\operatorname{Tr}\tilde P_\Psi$. The reading is now the informational one: the element has a real spectrum.
@@ -239,69 +239,93 @@ A real rescaling applied after the switch sets the trace of the state to one; th
 
 ### The Gradient
 
-The gradient is the first object where the switch acts on an operator rather than on an element, and the exact statement is worth separating from the claim about its action.
-
-Write the gradient with the four partial derivatives along the coordinates of the chart,
+The gradient is the first object where the switch acts on an operator rather than on an element. Write it on the material chart, where $R_t=i r'_t$ and $R_\eta=r_\eta$ and therefore $\partial/\partial R_t=-i\,\partial/\partial r'_t$. It carries constant coefficients, and the article names it by its sector alone:
 
 $$
-\tilde\nabla=e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
-$$
-
-and read it on the material chart, where $R_t=i r'_t$ and $R_\eta=r_\eta$. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the operator has constant coefficients,
-
-$$
-\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\,\frac{\partial}{\partial r'_t}+\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z},
-$$
-
-and those coefficients are $(-i,1,1,1)$: an imaginary time slot and three real space slots. The operator is anti-Hermitian, $\tilde\nabla^{*}|_{\mathbb{B}_{\Phi}}=-\tilde\nabla|_{\mathbb{B}_{\Phi}}$, and its switch has coefficients $(1,i,i,i)$,
-
-$$
-i\,\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=e_t\frac{\partial}{\partial r'_t}+i\Bigl(\vec e_x\frac{\partial}{\partial r_x}+\vec e_y\frac{\partial}{\partial r_y}+\vec e_z\frac{\partial}{\partial r_z}\Bigr),
-$$
-
-which is Hermitian, $(i\tilde\nabla)^{*}=+i\tilde\nabla$. At the level of the coefficients the switch is confirmed with no qualification: the $i$ leaves the time slot and arrives on the three space slots, the coefficients change class, and the operator changes sector, by the same one-line proof that applies to an element.
-
-The quaternion conjugate behaves in the same way, with the three space signs reversed. Its material restriction has coefficients $(-i,-1,-1,-1)$, also anti-Hermitian, and its switch has $(1,-i,-i,-i)$, also Hermitian. Those last four numbers are worth a second look, because they are the coefficients of the gradient read on the *informational* chart, where $R_t=r_t$ and $R_\eta=i r'_\eta$ and therefore $\partial/\partial R_\eta=-i\,\partial/\partial r'_\eta$. So the two charts give
-
-$$
-i\,\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Phi}}=\tilde\nabla\big|_{\mathbb{B}_{\Psi}},
+\boxed{\;\tilde\nabla_\Phi=-i\,e_t\,\partial_{r'_t}+\vec e_x\partial_{r_x}+\vec e_y\partial_{r_y}+\vec e_z\partial_{r_z},
 \qquad\qquad
-i\,\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=\tilde\nabla^{\natural}\big|_{\mathbb{B}_{\Psi}},
+\tilde\nabla_\Psi:=i\,\tilde\nabla_\Phi\;}.
 $$
 
-both exact, both with residual zero on a hundred evaluations. The plain gradient of one chart is the switch of the *conjugate* gradient of the other. The reason is the one the coordinate form already gave: the switch moves the $i$ from the time slot to the three space slots, and the two charts are exactly the two assignments of the $i$ to those slots. A reader who expects $\tilde\nabla|_{\mathbb{B}_{\Psi}}=i\tilde\nabla|_{\mathbb{B}_{\Phi}}$ is off by $2i$ on each of the three space slots and by nothing on the time slot, and the missing factor is the chart change, not a failure of the switch.
-
-**The d'Alembertian.** The series' operator is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^{2}/\partial R_\mu^{2}$, and it is central. Its value on the two charts is read at once from the coefficients: on the material chart $R_t=i r'_t$ gives $-\partial^{2}/\partial{r'_{t}}^{2}$ and the three real space coordinates give $+\Delta$, while on the informational chart $R_t=r_t$ gives $+\partial^{2}/\partial r_t^{2}$ and the three imaginary space coordinates give $-\Delta$. Hence
+The subscripts $\Phi$ and $\Psi$ are the whole of the notation: $\tilde\nabla_\Phi$ is the gradient with the material coefficients $(-i,1,1,1)$, and $\tilde\nabla_\Psi$ is the gradient with the informational coefficients $(1,i,i,i)$. The switch relates them by definition, and the definition is the same one-line multiplication that applies to an element:
 
 $$
-\Box\big|_{\mathbb{B}_{\Psi}}=-\Box\big|_{\mathbb{B}_{\Phi}},
+\tilde\nabla_\Phi=-i\,e_t\,\partial_{r'_t}+\sum_\eta\vec e_\eta\,\partial_{r_\eta}
+\ \xrightarrow{\ i\ }\
+\tilde\nabla_\Psi=e_t\,\partial_{r'_t}+i\sum_\eta\vec e_\eta\,\partial_{r_\eta},
+\qquad
+\tilde\nabla_\Psi=i\,\tilde\nabla_\Phi,\quad \tilde\nabla_\Phi=-i\,\tilde\nabla_\Psi .
 $$
 
-which is the operator form of the norm's sign flip, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, read on the gradient as an element with four coefficients. Both operators are hyperbolic. The switch never produces an elliptic one, and that is the sharpest single difference from the Wick rotation.
+The classes follow with no computation: $\tilde\nabla_\Phi^{*}=-\tilde\nabla_\Phi$ and $\tilde\nabla_\Psi^{*}=+\tilde\nabla_\Psi$, because $i^{*}=-i$ and because the four partial derivatives are real. The switch is therefore exact at the operator level, with no qualification: the $i$ leaves the time slot and arrives on the three space slots, the coefficients change class, and the operator changes sector.
 
-**The exact qualification.** The claim above is about the operator's coefficients. It is not a claim about the operator's action on an arbitrary element, and the difference is one line. Since ${}^{*}$ is an antiautomorphism, $(\tilde\nabla\tilde X)^{*}=\tilde X^{*}\tilde\nabla^{*}$, and with $\tilde\nabla$ anti-Hermitian,
+The quaternion conjugate behaves in the same way, with the three space signs reversed. It too is named by its sector,
 
 $$
-(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla .
+\boxed{\;(\tilde\nabla^{\natural})_\Phi=-i\,e_t\,\partial_{r'_t}-\sum_\eta\vec e_\eta\,\partial_{r_\eta},
+\qquad
+(\tilde\nabla^{\natural})_\Psi:=i\,(\tilde\nabla^{\natural})_\Phi\;},
 $$
 
-That equals $-\tilde X\tilde\nabla$ exactly when $\tilde X$ is Hermitian, and it equals $-\tilde\nabla\tilde X$ exactly when $\tilde X$ is Hermitian and commutes with $\tilde\nabla$. For a random Hermitian element the second equality fails on all hundred tests, with a residual of the same size as the element itself, and for a random element of the whole algebra both fail. So $\tilde\nabla\tilde X$ is anti-Hermitian only under those conditions, and a reader who wants the class of a differentiated element must compute it rather than inherit it. The operator-level statement is exact; the action-level statement needs the hypothesis. The article keeps the two apart, and the separation is the honest part of this section.
+with coefficients $(-i,-1,-1,-1)$ and $(1,-i,-i,-i)$, and the second is Hermitian.
+
+**The two charts.** The four names are the four ways the generic gradient and its conjugate land on the two charts. Writing $\tilde\nabla=e_t\partial_{R_t}+\sum_\eta\vec e_\eta\partial_{R_\eta}$ and $\tilde\nabla^{\natural}=e_t\partial_{R_t}-\sum_\eta\vec e_\eta\partial_{R_\eta}$, and using $R_t=i r'_t$, $R_\eta=r_\eta$ on the material chart and $R_t=r_t$, $R_\eta=i r'_\eta$ on the informational one,
+
+$$
+\tilde\nabla\ \text{on}\ \Phi=\tilde\nabla_\Phi,
+\qquad
+\tilde\nabla^{\natural}\ \text{on}\ \Phi=(\tilde\nabla^{\natural})_\Phi,
+\qquad
+\tilde\nabla^{\natural}\ \text{on}\ \Psi=\tilde\nabla_\Psi,
+\qquad
+\tilde\nabla\ \text{on}\ \Psi=(\tilde\nabla^{\natural})_\Psi .
+$$
+
+The two plain readings are conjugate to each other, $(1,-i,-i,-i)$ against $(-i,1,1,1)$, and it is the *conjugate* gradient that crosses to $\tilde\nabla_\Psi$. That is why the passage from one chart to the other is not the switch: a reader who expects $\tilde\nabla$ on $\Psi$ to be $\tilde\nabla_\Psi$ is off by $2i$ on each of the three space slots and by nothing on the time slot, and the missing factor is the chart change. The switch proper relates the two sectors, not the two charts.
+
+**The d'Alembertian.** The series' operator is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\sum_\mu\partial^{2}/\partial R_\mu^{2}$, and it is central. Its two readings use the two charts, and each sector carries its own spatial Laplacian:
+
+$$
+\Delta_\Phi=\sum_\eta\partial^{2}_{r_\eta},
+\qquad\qquad
+\Delta_\Psi=-\sum_\eta\partial^{2}_{r'_\eta}=-\Delta_\Phi .
+$$
+
+The sign is the second power of the $i$ that sits on the informational space coordinate: $\partial_{R_\eta}=-i\,\partial_{r'_\eta}$ gives $\partial^{2}_{R_\eta}=-\partial^{2}_{r'_\eta}$, so the three space slots contribute $-\Delta_\Phi$ in the informational reading and $+\Delta_\Phi$ in the material one. The time slot does the same, with the roles exchanged: $R_t=i r'_t$ gives $-\partial^{2}_{r'_t}$ materially and $+\partial^{2}_{r_t}$ informationally. Hence
+
+$$
+\boxed{\;\Box_\Phi=-\partial^{2}_{r'_t}+\Delta_\Phi,
+\qquad
+\Box_\Psi=+\partial^{2}_{r_t}+\Delta_\Psi=-\Box_\Phi\;}.
+$$
+
+The subscript on $\Delta$ is not decoration. The bare $\Delta$ would be ambiguous between $+\sum_\eta\partial^{2}_{r_\eta}$ and $-\sum_\eta\partial^{2}_{r'_\eta}$, and it is exactly the ambiguity the switch resolves: each reading has its own Laplacian, and the two are negatives of each other, as the two d'Alembertians are. The relation is the norm's sign flip, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, read on a second-order operator. Both $\Box$ operators are hyperbolic. The switch never produces an elliptic one, and that is the sharpest single difference from the Wick rotation.
+
+**The exact qualification.** The claim above is about the operator's coefficients. It is not a claim about the operator's action on an arbitrary element, and the difference is one line. Since ${}^{*}$ is an antiautomorphism, $(\tilde\nabla\tilde X)^{*}=\tilde X^{*}\tilde\nabla^{*}$, and with $\tilde\nabla_\Phi$ anti-Hermitian,
+
+$$
+(\tilde\nabla_\Phi\tilde X)^{*}=-\tilde X^{*}\tilde\nabla_\Phi .
+$$
+
+That equals $-\tilde X\tilde\nabla_\Phi$ exactly when $\tilde X$ is Hermitian, and it equals $-\tilde\nabla_\Phi\tilde X$ exactly when $\tilde X$ is Hermitian and commutes with $\tilde\nabla_\Phi$. For a random Hermitian element the second equality fails on all hundred tests, with a residual of the size of the element itself, and for a random element of the whole algebra both fail. So $\tilde\nabla_\Phi\tilde X$ is anti-Hermitian only under those conditions, and a reader who wants the class of a differentiated element must compute it rather than inherit it. The operator-level statement is exact; the action-level statement needs the hypothesis. The article keeps the two apart, and the separation is the honest part of this section.
 
 ### The Schrödinger Equation
 
 The equation has two writings, and the switch is what relates them. In biquaternionic form, with $\tilde\Xi_{\mathrm{sp}}$ the spinor-valued field and $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ the observable,
 
 $$
-i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde R_\Psi\,\tilde\Xi_{\mathrm{sp}} .
+\boxed{\;i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde R_\Psi\,\tilde\Xi_{\mathrm{sp}}\;}.
 $$
 
 Multiply on the left by $-i$ and divide by the real central scalar $\hbar c$, which keeps every element in its sector,
 
 $$
-\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde G_\Phi\,\tilde\Xi_{\mathrm{sp}},
+\boxed{\;\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde G_\Phi\,\tilde\Xi_{\mathrm{sp}},
 \qquad\qquad
-\tilde G_\Phi=-\frac{i}{\hbar c}\,\tilde R_\Psi\in\mathbb{B}_{\Phi}.
+\tilde G_\Phi=-\frac{i}{\hbar c}\,\tilde R_\Psi\;},
 $$
+
+with $\tilde G_\Phi\in\mathbb{B}_{\Phi}$: the generator is the switch of the observable, times one real scalar.
 
 The two writings are not two equations. The first names the observable and reads the dynamics through the switch, which stands in the coefficient as the explicit $i$; the second names the generator and places it in the material sector, the sector of the four-vectors. The multiplicativity of the switch is what allows the second form: every term of the first is multiplied by the same central scalar, so the equality survives, and the derivative is not touched because $-i$ is a constant.
 
@@ -328,7 +352,7 @@ so the discriminant that is non-negative on the state is non-positive on the gen
 For two Hermitian elements the commutator is anti-Hermitian and the anticommutator is Hermitian,
 
 $$
-[\tilde A,\tilde B]^{*}=\tilde B^{*}\tilde A^{*}-\tilde A^{*}\tilde B^{*}=\tilde B\tilde A-\tilde A\tilde B=-[\tilde A,\tilde B],
+[\tilde A,\tilde B]^{*}=-[\tilde A,\tilde B],
 \qquad
 \{\tilde A,\tilde B\}^{*}=+\{\tilde A,\tilde B\},
 $$
@@ -336,7 +360,7 @@ $$
 both checked on a hundred pairs. So the informational sector closes under the anticommutator and not under the commutator: it is a Jordan algebra, which is the algebra of observables. The commutator lands in the material sector, which is the Lie algebra of the $*$-unitary group, and one switch returns it to the observables:
 
 $$
-\tilde A,\tilde B\in\mathbb{B}_{\Psi}\ \Longrightarrow\ [\tilde A,\tilde B]\in\mathbb{B}_{\Phi}\ \Longrightarrow\ i[\tilde A,\tilde B]\in\mathbb{B}_{\Psi}.
+\boxed{\;\tilde A,\tilde B\in\mathbb{B}_{\Psi}\ \Longrightarrow\ [\tilde A,\tilde B]\in\mathbb{B}_{\Phi}\ \Longrightarrow\ i[\tilde A,\tilde B]\in\mathbb{B}_{\Psi}\;}.
 $$
 
 That is the exact content of the quantum commutator, and it is the second example of the switch doing physical work. In the angular-momentum relations $[\tilde S_j,\tilde S_k]=i\hbar\,\epsilon_{jk\eta}\tilde S_\eta$ the left side is anti-Hermitian and the right side carries the switch in its coefficient: $i$ times a Hermitian generator is anti-Hermitian, so the two sides agree, and the structure constants $\epsilon_{jk\eta}$ stay real. The canonical commutator shows the same thing from the other side: the space derivative is anti-Hermitian on the material chart, so the momentum operator $-i\hbar\,\partial_{r_\eta}$ is Hermitian, and $[\hat r_j,\hat p_k]=i\hbar\,\delta_{jk}e_t$ is Hermitian with an imaginary scalar coefficient. The switch, not a convention about $i$, is what turns the anti-Hermitian derivative into the observable momentum.
@@ -350,7 +374,7 @@ A real coupling constant cannot multiply an anti-Hermitian unit and remain Hermi
 The last example is a case where the switch is *not* needed, and it is instructive for that reason. The Matsubara wave element is a material one, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the Euclidean weight the thermal construction needs is its Hermitian form,
 
 $$
-\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^{2}+\lvert\vec p\rvert^{2}\ \ge 0,
+\boxed{\;\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^{2}+\lvert\vec p\rvert^{2}\ \ge 0\;},
 $$
 
 which is an identity and not a hypothesis. The quaternionic norm of the same element is $-\omega_n^{2}+\lvert\vec p\rvert^{2}$, indefinite, and it cannot supply the positivity: it is the interval, not the weight. So the positivity of the thermal weight comes from the form the switch preserves, evaluated on a material element, and the thermal circle needs no rotation of the time axis. What the example shows is the division of labour: the switch supplies the sector, the Hermitian form supplies the positivity, and the thermal construction uses the second without needing the first.
@@ -411,7 +435,7 @@ The article is one substitution, $\tilde Q_\Psi=i\tilde Q_\Phi$ for $\tilde Q_\P
 
 The switch is multiplication by the central $i$ on the whole element. Since $i^{*}=-i$ and $i$ is central, $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two sectors exchange. Since $i$ is central, the switch passes through products, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so an equation may be carried across it. Since $(i\tilde Q)(i\tilde Q)^{*}=\tilde Q\tilde Q^{*}$, the Hermitian form is preserved; and since the image carries a factor $i$ in every coefficient, the trace is multiplied by $i$, the quaternionic norm and the determinant change sign, the spectrum turns a quarter turn, and the signature is reversed. The two readings read two different elements, and that is why the switch is a construction and not a relabel.
 
-The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients the switch is exact for the gradient, with $\tilde\nabla|_{\mathbb{B}_{\Phi}}$ anti-Hermitian and $i\tilde\nabla|_{\mathbb{B}_{\Phi}}$ Hermitian, and the two charts' gradients are related through the quaternion conjugate, $i\tilde\nabla^{\natural}|_{\mathbb{B}_{\Phi}}=\tilde\nabla|_{\mathbb{B}_{\Psi}}$. The d'Alembertian negates, $\Box|_{\mathbb{B}_{\Psi}}=-\Box|_{\mathbb{B}_{\Phi}}$, and both operators stay hyperbolic. At the level of an action the class is not inherited: $(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla$, which is $-\tilde\nabla\tilde X$ only for a Hermitian element that commutes with the operator.
+The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients the switch is exact for the gradient, with $\tilde\nabla_\Phi$ anti-Hermitian and $\tilde\nabla_\Psi=i\tilde\nabla_\Phi$ Hermitian; on the quaternion conjugate $\Box_\Psi=-\Box_\Phi$; and the gradient written on the informational chart is $(\tilde\nabla^{\natural})_\Psi$, not $\tilde\nabla_\Psi$. The d'Alembertian negates, $\Box_\Psi=-\Box_\Phi$, with $\Delta_\Psi=-\Delta_\Phi$ inside it, and both operators stay hyperbolic. At the level of an action the class is not inherited: $(\tilde\nabla\tilde X)^{*}=-\tilde X^{*}\tilde\nabla$, which is $-\tilde\nabla\tilde X$ only for a Hermitian element that commutes with the operator.
 
 The three instances promised in the introduction are the element and its observable, where the switched four-momentum has a real energy coefficient and a real spectrum; the gradient, where the coefficients change class; and the Schrödinger equation, whose two writings name an observable and a generator and differ by the switch and one real rescaling. The quantum commutator, the interaction insertion and the thermal weight are three further instances, and each shows the switch supplying a real structure that a real coefficient needs.
 
@@ -432,7 +456,11 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the determinant, the interval |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |
 | $\lambda_{\pm}$ | the eigenvalue pair, imaginary on $\mathbb{B}_{\Phi}$ and real on $\mathbb{B}_{\Psi}$ |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | the gradient, its quaternion conjugate, and $\Box=\tilde\nabla\tilde\nabla^{\natural}$ |
+| $\tilde\nabla_\Phi$ | the gradient in the material reading, coefficients $(-i,1,1,1)$, anti-Hermitian |
+| $\tilde\nabla_\Psi=i\tilde\nabla_\Phi$ | the gradient in the informational reading, coefficients $(1,i,i,i)$, Hermitian |
+| $(\tilde\nabla^{\natural})_\Phi$, $(\tilde\nabla^{\natural})_\Psi$ | the quaternion conjugates, coefficients $(-i,-1,-1,-1)$ and $(1,-i,-i,-i)$ |
+| $\Delta_\Phi$, $\Delta_\Psi$ | the spatial Laplacians, $\Delta_\Phi=\sum_\eta\partial^{2}_{r_\eta}=-\Delta_\Psi$ |
+| $\Box_\Phi$, $\Box_\Psi$ | the d'Alembertians, $\Box_\Phi=-\partial^{2}_{r'_t}+\Delta_\Phi$ and $\Box_\Psi=-\Box_\Phi$ |
 | $\tilde G_\Phi=-\frac{i}{\hbar c}\tilde R_\Psi$ | the generator, the switched observable of the Schrödinger equation |
 | $\tilde P_\Phi=i(E/c)e_t+\vec p$ | the four-momentum, material reading |
 | $\Rho=imc$ | the mass as a central element, imaginary in the material reading and real after the switch |
