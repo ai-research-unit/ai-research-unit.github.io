@@ -121,7 +121,7 @@ The first is the equation of the $R$ part and the second of the $L$ part. They a
 The mass term is **linear** in the field and it **pairs the two values**, one part of each. The same equation, read on the whole algebra, has the two-sided form
 
 $$
-\tilde{\nabla}^{\natural}F=m\,\xi(\bar F)=-im\,\bar F\,\vec e_z ,
+(\tilde{\nabla}_\Phi)^{\natural}F=m\,\xi(\bar F)=-im\,\bar F\,\vec e_z ,
 $$
 
 in which the derivative acts from the left and the mass from the right through the chirality operator, the conjugation supplying the antilinear part (Kravchenko's dictionary; the companion *The Dirac Equation in Biquaternionic Form*). The pair is linear in the field and the two-sided equation is antilinear in its mass term, so they are different operators, and the pair is the definition.
@@ -292,7 +292,7 @@ Two gaps are left visible. Without a non-central gauge structure the framework h
 | $\bar Q$ | Coefficient conjugation; exchanges the two values |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}$ | Dirac mass bilinear; pairs one part of each value; odd in the value |
 | $\natural$ | Quaternion conjugation; the conjugation that separates the two lines of the pair |
-| $\tilde{\nabla},\ \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\tilde{\nabla}_\Phi,\ (\tilde{\nabla}_\Phi)^{\natural}$ | The biquaternionic gradient and its quaternion conjugate, read on the material chart |
 | $ϙ_L,\ ϙ_R$ | The two charges (parameters) |
 | $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Charge element; central if and only if $ϙ_L=ϙ_R$ |
 | $Q\mapsto Qe^{\frac{i}{\hbar}\Gamma b}$ | Chiral gauge transformation, a right multiplication |

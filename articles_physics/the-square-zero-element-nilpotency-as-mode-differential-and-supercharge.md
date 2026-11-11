@@ -324,9 +324,9 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 Both gradients act from the left on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
 
 $$
-\tilde\nabla^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
 \qquad
-\tilde\nabla(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
 $$
 
 The two members of the chiral pair are one equation per chirality, not two different equations.
@@ -334,7 +334,7 @@ The two members of the chiral pair are one equation per chirality, not two diffe
 **The two-sided equation.** The corpus carries a second form of the Dirac equation, Kravchenko's single equation on an algebra-valued field $F\in\mathbb{B}$:
 
 $$
-\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z,
+(\tilde\nabla_\Phi)^{\natural}F=-i\,m\,\bar F\,\vec e_z,
 $$
 
 where $\bar F$ is the coefficient conjugation. The derivative acts from the left. The mass acts from the right, by the unit $\vec e_z$ together with the conjugation $\bar{\cdot}$, so the two sides commute; the conjugation is the antilinear part. This is the form in which an element acts on both sides at once. It is not the same operator as the one-sided pair: the price of the single equation is the antilinear conjugation. The two forms are compared in *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*.
@@ -345,18 +345,18 @@ The two forms are set side by side once:
 
 | | one-sided form | two-sided form |
 |---|---|---|
-| equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde\nabla^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
+| equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
 | field | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ | $F\in\mathbb{B}$ |
-| multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $\tilde\nabla^{\natural}$, right by $\vec e_z$, with the antilinear $\bar{\cdot}$ |
+| multiplication | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left by $(\tilde\nabla_\Phi)^{\natural}$, right by $\vec e_z$, with the antilinear $\bar{\cdot}$ |
 | mass | exchange of the two chirality parts | the right-multiplied unit, with the conjugation |
 | chirality | the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ | the right multiplication by $\vec e_z$ with a phase, which carries the label |
-| second order | $\Box$ on each part | $\tilde\nabla(\tilde\nabla^{\natural}F)=\Box F$ |
+| second order | $\Box$ on each part | $\tilde\nabla_\Phi\bigl((\tilde\nabla_\Phi)^{\natural}F\bigr)=\Box F$ |
 
 Neither column needs an array: the field is an element of the algebra in both forms, and the two differ in the side on which the mass acts.
 
 The free theory has $H_+=H_-=\Box$; a position-dependent mass $m\to W(x)$ splits the partners, and the superpotential is the mass. The 1+1-dimensional reduction reproduces the standard partner potentials $V_\pm=W^2\mp dW/dx$, and the Witten index is the chirality imbalance of the Dirac zero modes.
 
-Two senses of "supercharge" are in play in the corpus. The SUSY article calls the first-order gradient $\tilde\nabla$ a supercharge: it is an element of $\mathbb{B}$, and its product with its quaternion conjugate is the scalar $\Box$. It is not a nilpotent — its square is $\Box$, not zero — so it is a supercharge in the sense of a first-order root of the Laplacian, and the square-zero of the taxonomy is not yet in play. The superalgebra article calls the odd generator $Q$ a supercharge: it is not an element of $\mathbb{B}$, and its anticommutator with its adjoint is $2H$. The two are related by the sum $\mathcal{D}=Q+Q^\dagger$: the Hermitian combination is the Dirac operator, and the odd $Q$ is the part of it that exchanges the two values of the chirality.
+Two senses of "supercharge" are in play in the corpus. The SUSY article calls the first-order gradient a supercharge: it is an element of $\mathbb{B}$, and its product with its quaternion conjugate is the scalar $\Box$. It is not a nilpotent — its square is $\Box$, not zero — so it is a supercharge in the sense of a first-order root of the Laplacian, and the square-zero of the taxonomy is not yet in play. The superalgebra article calls the odd generator $Q$ a supercharge: it is not an element of $\mathbb{B}$, and its anticommutator with its adjoint is $2H$. The two are related by the sum $\mathcal{D}=Q+Q^\dagger$: the Hermitian combination is the Dirac operator, and the odd $Q$ is the part of it that exchanges the two values of the chirality.
 
 The taxonomy uses the second sense, because it is the one in which the square-zero is an odd element. In the biquaternion realization the odd supercharge is the part of the Dirac action that exchanges the two values of the chirality, and it is not an element of $\mathbb{B}$. The superalgebra-reading article states the point in the sharpest form: a supercharge is an odd element paired with its adjoint by $\{Q,Q^\dagger\}=2H$, and it is therefore never an element of the four-dimensional algebra. The odd part is not a second copy of the algebra.
 
@@ -700,7 +700,7 @@ The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes
 
 The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the basis operator $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.
 
-The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $\tilde\nabla^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
+The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $(\tilde\nabla_\Phi)^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
 
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $c_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 

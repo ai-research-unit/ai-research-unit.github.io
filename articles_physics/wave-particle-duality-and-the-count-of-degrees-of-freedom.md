@@ -23,9 +23,9 @@ Read against the published spectrum, that line gives the eigenvalues $-k_{t}^{\p
 **The conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, so $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$. On a plane wave *Derivatives, Fields and Transforms* gives the symbols
 
 $$
-\tilde\nabla\longmapsto i\tilde K_{\Phi},
+\tilde\nabla_\Phi\longmapsto i\tilde K_{\Phi},
 \qquad
-\tilde\nabla^{\natural}\longmapsto i\tilde K_{\Phi}^{\natural},
+(\tilde\nabla_\Phi)^{\natural}\longmapsto i\tilde K_{\Phi}^{\natural},
 \qquad
 \tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_{\Phi},
 \qquad
@@ -227,7 +227,7 @@ $$
 
 the mirror of the display for $i\tilde K_{\Phi}$: the conjugate annihilates the other direction and scales the one the first symbol annihilated. The residual is $3.6\times10^{-16}$ over the hundred sample points.
 
-**The reading.** The two conjugate symbols have complementary one-dimensional kernels on the cone, and their direct sum is the transverse plane. An equation written with $\tilde\nabla$ and one written with $\tilde\nabla^{\natural}$ do not select the same circular direction, and the pair of them exhausts the transverse amplitudes.
+**The reading.** The two conjugate symbols have complementary one-dimensional kernels on the cone, and their direct sum is the transverse plane. An equation written with $\tilde\nabla_\Phi$ and one written with $(\tilde\nabla_\Phi)^{\natural}$ do not select the same circular direction, and the pair of them exhausts the transverse amplitudes.
 
 **This is a statement about the algebra, not a convention of handedness.** Which of the two the corpus's helicity articles label $\lambda=+1$ is a matter of the operator's sign, and this article does not need it. What is claimed is only that the two conjugate symbols annihilate opposite circular directions, and that the pair is complete.
 

@@ -96,11 +96,11 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}&=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 \end{aligned}
 $$
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, both fixed in *Operator and Calculus Conventions*, §*The Gradient*. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line multiplies the field from the left. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair". Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\tilde\nabla_\Phi$ the biquaternionic gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate, both fixed in *Operator and Calculus Conventions*, §*The Gradient*. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line multiplies the field from the left. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair". Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The two-sided single equation.** Read on the algebra rather than on a field, the same content is one equation whose two sides are the two multiplications,
 $$
-\tilde\nabla^{\natural}F=m\,(-iR_{\vec e_z})\bar F=-i\,m\,\bar F\,\vec e_z ,
+(\tilde\nabla_\Phi)^{\natural}F=m\,(-iR_{\vec e_z})\bar F=-i\,m\,\bar F\,\vec e_z ,
 $$
 where $F\in\mathbb{B}$, $\bar F$ is the coefficient conjugate, and $(-iR_{\vec e_z})\bar F=-i\,\bar F\,\vec e_z$ is the fifth basis operator of the frame applied to the conjugate. The derivative is a left multiplier and occupies the left slot; the mass is a right multiplier and occupies the right slot, and it squares to the identity for that reason,
 $$
@@ -311,7 +311,7 @@ The first fact is the doubling. The central volume element of each algebra is an
 
 The interpretations are the identification of the two summands with the two chiralities and of the two quaternion actions with $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$, the identification of the neutral state of the right-handed summand with the sterile right-handed neutrino, the assignment of the states to the Pati–Salam multiplets, and the interpretation of the volume element $\omega$ as the Higgs.
 
-The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, one equation per chirality, together with the single two-sided equation $\tilde\nabla^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's fifth basis operator to $\bar F$ as a right multiplication, and that basis operator squares to $e_t$.
+The equation side is written on the algebra and not on arrays: the chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, one equation per chirality, together with the single two-sided equation $(\tilde\nabla_\Phi)^{\natural}F=m(-iR_{\vec e_z})\bar F$, in which the mass applies the frame's fifth basis operator to $\bar F$ as a right multiplication, and that basis operator squares to $e_t$.
 
 The construction's contact with the framework's ledger is that the second chirality and the sterile state are supplied by the algebra rather than added by hand, and that a sterile fermion is unconstrained by the anomaly conditions. Its open end is the same as that of the undoubled construction: the three commutator computations that would decide whether the abelian charge is a physical gauge charge, together with the choice of the supercharge sector that would fix which states carry which weak quantum numbers.
 
@@ -342,7 +342,7 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 | $i\,(iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x})(iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y})(iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y})=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Four-factor fifth basis operator of the first rung, $\mathrm{Cl}(4)$; it equals the chirality basis operator, and squares to $I_4$ |
 | $-i\vec e_z$ | The right multiplier that the fifth basis operator applies, $-iR_{\vec e_z}\tilde X=-i\tilde X\vec e_z$; it squares to $e_t$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chirality-off-diagonal pair of Dirac equations |
-| $\tilde\nabla^{\natural}F=-im\,\bar F\,\vec e_z$ | The same content as one two-sided equation |
+| $(\tilde\nabla_\Phi)^{\natural}F=-im\,\bar F\,\vec e_z$ | The same content as one two-sided equation |
 | $L_\omega R_{\mathrm{axf},-\vec e_z}$ (one ordering) | Coxeter element of the second rung, $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\mathrm{Cl}(5)$; squares to $-I_8$ |
 | $M_4(\mathbb{C})\cong\mathrm{Cl}(4)$ | First rung: the sixteen basis operators $L_aR_b$ with both factors in $\mathbb{B}$, acting on the four-dimensional $\mathbb{B}$; contains $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$ |
 | $\mathrm{Cl}(3)\otimes_{\mathbb{C}}(\mathbb{C}\otimes\mathbb{H})_{\mathrm{opp}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+$ | Algebra generated by left $\mathrm{Cl}(3)$ and right $\mathbb{C}\otimes\mathbb{H}$; dimension $32$, centre $2$ |

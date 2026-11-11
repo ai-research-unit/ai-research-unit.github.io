@@ -280,7 +280,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $v$ | Vacuum expectation value; the gauge-invariant record of the breaking |
 | $h,\ \vartheta_{\mathrm{fld}}$ | Radial and angular (would-be Goldstone) fields |
 | $m_h^2 = 2\beta v^2$ | Radial-mode mass |
-| $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}\Gamma$ | Connection and gauge law |
+| $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde{\nabla}_\Phi\Gamma$ | Connection and gauge law |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$, $\kappa =\frac{ϙ}{\hbar}$ | Covariant derivative and coupling |
 | $\varepsilon=(1,-1,-1,-1)$ | Coordinate signs for contractions |
 | $\Gamma = -(\frac{\hbar}{ϙ\,v})\vartheta_{\mathrm{fld}}$ | Gauge function of the unitary gauge |

@@ -42,7 +42,7 @@ The article writes the Dirac equation once, as the pair of two first-order equat
 
 **The one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality basis operator and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (*Special Element Conventions*, §*The Chirality Convention*, the paragraph *What the word does not name*).
 
-**The reading on one element** writes the same pair on the same element. The gradient $\tilde{\nabla}^{\natural}$ carries the L value to the R value and $\tilde{\nabla}$ carries the R value to the L value,
+**The reading on one element** writes the same pair on the same element. The gradient $(\tilde{\nabla}_\Phi)^{\natural}$ carries the L value to the R value and $\tilde{\nabla}_\Phi$ carries the R value to the L value,
 
 $$
 \tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},
@@ -59,7 +59,7 @@ The two lines act on the element and contain no matrix generator. What the readi
 | Equation | $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ | the same two lines |
 | Field | $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$, two elements | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values |
 | Mass | the off-diagonal coupling of the two entries | the same coefficient, off-diagonal in the two values |
-| Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, one on each entry | the same two, $\Box$ on each value after the two lines are composed |
+| Operator | left multiplication by the gradient and its quaternion conjugate, one on each entry | the same two, $\Box$ on each value after the two lines are composed |
 | Chirality | the entry | the value carried by each part |
 | Use | the definition, the mass term, the mass shell | the charge, the charge value, the bilinears |
 
@@ -170,7 +170,7 @@ Three further distinctions belong here, because the framework has several conser
 The equation of this article carries one field, and the proton–neutron near-degeneracy is nowhere in it. There is a second way to place a spin-$\tfrac12$ fermion in the algebra, however, and there the pair *is* structural. In Lanczos's doubled system
 
 $$
-\tilde{\nabla}\tilde Q_1=m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2=m\tilde Q_1,
+\tilde{\nabla}_\Phi\tilde Q_1=m\tilde Q_2, \qquad \tilde{\nabla}_\Phi\tilde Q_2=m\tilde Q_1,
 $$
 
 one takes the two superpositions of the companion articles. With $\sigma=\tfrac12(e_t+i\vec{\nu})$ the state along a unit direction $\vec{\nu}$, so that $\sigma^2=\sigma$ because $(i\vec{\nu})^2=i^2\vec{\nu}^2=(-e_t)(-e_t)=e_t$, with $\bar{\sigma}=e_t-\sigma=\tfrac12(e_t-i\vec{\nu})$ its complementary state, of zero product $\sigma\bar{\sigma}=0$, and with $\vec{\tau}$ any unit direction orthogonal to $\vec{\nu}$:
@@ -193,7 +193,7 @@ $$
 
 The two superpositions therefore carry two independent abelian phases, and with them two independent charges, while the single mass parameter $m$ gives them equal mass. The source's interpretation is that Lanczos's "doubling" of the spin-$\tfrac12$ field was isospin in 1929, three decades early.
 
-**The price of that reading.** The two phases are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{\mathrm{sp},p}$ and $\tilde{Ξ}_{\mathrm{sp},n}$. The first Lanczos equation then becomes $\tilde{\nabla}\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. The doubled system with $m\neq0$ is therefore invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass stand together only as a kinematic statement, which is the same phenomenon the charge section records: a mass term, being a link between the two values, breaks the relative phase.
+**The price of that reading.** The two phases are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{\mathrm{sp},p}$ and $\tilde{Ξ}_{\mathrm{sp},n}$. The first Lanczos equation then becomes $\tilde{\nabla}_\Phi\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. The doubled system with $m\neq0$ is therefore invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass stand together only as a kinematic statement, which is the same phenomenon the charge section records: a mass term, being a link between the two values, breaks the relative phase.
 
 The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde Q_1$, $\tilde Q_2$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
 
@@ -345,7 +345,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian (electric-charge) factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator), acting on the left |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
+| $\Box = \tilde{\nabla}_\Phi(\tilde{\nabla}_\Phi)^{\natural}$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
@@ -355,7 +355,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The two gradients of the pair; $\tilde\nabla^{\natural}$ carries the L value to the R and $\tilde\nabla$ the R to the L, and each line composed with the other returns $\Box$ |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The two gradients of the pair; $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R and $\tilde\nabla_\Phi$ the R to the L, and each line composed with the other returns $\Box$ |
 | $\Gamma=-iR_{\vec e_z}$ | The chirality basis operator, the basis operator that reads the two values; the legacy section writes it $\gamma_5$ |
 | $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |

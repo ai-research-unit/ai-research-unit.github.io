@@ -170,7 +170,7 @@ D_{3\pm\alpha}=D_3\pm\alpha,
 \Delta+\alpha^2=-(D_3+\alpha)(D_3-\alpha),
 $$
 
-the factorisation being the same computation as $\Box=\tilde\nabla\tilde\nabla^{\natural}$ one dimension lower. The family $D_{3\pm\alpha}$ is the classical **Helmholtz–Dirac** family of Clifford analysis — the splitting, the shifted kernel and the radiation condition are set up in *Clifford Analysis*, and this article only uses them — and its four standard facts, which the authors use and attribute to Kravchenko and Shapiro [1996], are the following.
+the factorisation being the same computation as the four-dimensional $\Box$, one dimension lower. The family $D_{3\pm\alpha}$ is the classical **Helmholtz–Dirac** family of Clifford analysis — the splitting, the shifted kernel and the radiation condition are set up in *Clifford Analysis*, and this article only uses them — and its four standard facts, which the authors use and attribute to Kravchenko and Shapiro [1996], are the following.
 
 **The kernel.** With $\mathrm{Sd}_\alpha$ the fundamental solution of the Helmholtz operator, $(\Delta+\alpha^2)\mathrm{Sd}_\alpha=\delta$, chosen as
 

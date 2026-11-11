@@ -16,7 +16,7 @@ $$
 S=\frac{1}{2g^2}\int\mathrm{Tr}\bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\bigr)\ge\frac{8\pi^2}{g^2}|Ϙ| ,
 $$
 
-with equality for self-dual or anti-self-dual fields. The Lorentzian signature appears only where the continuation is discussed, and there $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta$ is the series d'Alembertian. As throughout the corpus, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
+with equality for self-dual or anti-self-dual fields. The Lorentzian signature appears only where the continuation is discussed, and there $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta$ is the series d'Alembertian. As throughout the corpus, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
 
 - Companion article *The ADHM Construction and Biquaternion Instanton Data*, for the moduli space and its collective coordinates.
 - Companion article *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*, for the fermion zero modes and the 't Hooft vertex.

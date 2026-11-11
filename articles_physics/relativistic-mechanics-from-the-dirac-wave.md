@@ -24,7 +24,7 @@ $$
 k_{m}=\frac{m\,c}{\hbar}.
 $$
 
-The product $\tilde\nabla^{\natural}\tilde\nabla$ is the central scalar $\Box=\partial^{2}/\partial R_{t}^{2}+\Delta$, which with $R_{t}=ict$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
+The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the central scalar $\Box=\partial^{2}/\partial R_{t}^{2}+\Delta$, which with $R_{t}=ict$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
 
 **The expansion.** Write $\tilde\Xi_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then
 
@@ -62,7 +62,7 @@ which is the mass shell and the relativistic Hamilton–Jacobi equation: the pha
 
 ## The Gauge Field, and the Lorentz Force
 
-**Minimal coupling replaces the gradient.** The corpus's prescription of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is $\tilde\nabla\mapsto\tilde\nabla_{\mathrm{gco}}$ with
+**Minimal coupling replaces the gradient.** The corpus's prescription of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is $\tilde\nabla_\Phi\mapsto\tilde\nabla_{\mathrm{gco}}$ with
 
 $$
 \tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_{\mu}}+\frac{i\,ϙ}{\hbar}A_{\mu},

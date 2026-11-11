@@ -22,7 +22,7 @@ The article is organised as follows. The next section fixes the field, the pairi
 
 ## The Field, the Pairing and the Two Equations
 
-The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla$, the d'Alembertian $\Box$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
+The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla_\Phi$, read on the material chart $x_t=r'_t$ and $x_\eta=r_\eta$, the d'Alembertian $\Box$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
 $$\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr),$$
 where $X$ is the element the bilinear reads. The fixed element $i\vec e_x$ is the only datum the pairing adds to the field, and it is the same one for every bilinear below. The **slot action** of the index $\mu$ is the action
 $$\tilde Q\longmapsto ie_\mu\tilde Q\vec e_{\nu(\mu)},$$

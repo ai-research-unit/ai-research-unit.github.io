@@ -13,7 +13,7 @@ $$
 an element of the material sector with a real temporal coefficient and a real vector part, and the second law reads
 
 $$
-\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)\ge 0 .
+\mathrm{Sc}\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)\ge 0 .
 $$
 
 **Everything in this article follows from those two displays plus one declaration: the current is Hermitian.** The declaration is what makes the inequality *real* — the scalar part of the divergence of a Hermitian element is a real number, and the scalar part of the divergence of an anti-Hermitian one is imaginary — and it is made once, here, and inherited by every article of the category that writes an entropy inequality, in particular [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html), which does not write a fresh $\mathrm{Re}$.
@@ -59,7 +59,7 @@ $$
 
 **Why the corpus does not instead write $\mathrm{Re}$ everywhere.** The two spellings are equivalent — a fresh $\mathrm{Re}$ on every inequality gives the same set of true statements — and the corpus chooses the declaration because it is made once and inherited, whereas a $\mathrm{Re}$ has to be repeated at every display and can be silently dropped at one of them. **The rule for the reader is therefore: an entropy inequality in this corpus comes with one of two marks, a declared-Hermitian current or a written $\mathrm{Re}$, and never with neither.**
 
-**The divergence's spelling.** The article uses $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})$, which is one of the two live spellings in the corpus, the other being $\langle\tilde\nabla,\tilde J\rangle_{\natural}$. **No $\otimes$ appears in a divergence**: the tensor product is for algebra products, and the divergence is the algebra's own $\natural$-graded derivative contracted with the element. No raised star on the gradient either; the corpus has zero uses of that spelling.
+**The divergence's spelling.** The article uses $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}})$, which is one of the two live spellings in the corpus, the other being $\langle\tilde\nabla_\Phi,\tilde J\rangle_{\natural}$. **No $\otimes$ appears in a divergence**: the tensor product is for algebra products, and the divergence is the algebra's own $\natural$-graded derivative contracted with the element. No raised star on the gradient either; the corpus has zero uses of that spelling.
 
 ### The contraction is the proper entropy density
 
@@ -86,7 +86,7 @@ using $\gamma^{2}(1-\beta_{\mathrm{vel}}^{2})=1$. **The contraction is boost inv
 **The second law is the statement that the scalar part of the divergence is non-negative, and written out it is the continuity equation with a source.** With the components above and the derivative $\partial_\mu=\partial/\partial R_\mu$,
 
 $$
-\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
+\mathrm{Sc}\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
 =\partial_t\left(s_{\mathrm{ent}}\gamma\right)
 +\partial_\eta\left(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta}\right)
 =\sigma_{\mathrm{ent}}\ \ge 0,
@@ -107,7 +107,7 @@ $$
 \quad\text{and}\quad
 s_{\mathrm{ent}}=\sigma_{\mathrm{spc}}\,n_{\mathrm{num}}
 \ \Longrightarrow\
-\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
+\mathrm{Sc}\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}}\right)
 =n_{\mathrm{num}}\gamma\,\frac{d\sigma_{\mathrm{spc}}}{dR}
 =0
 $$
@@ -140,7 +140,7 @@ with $\zeta$ the bulk viscosity, $\eta_{\mathrm{sh}}$ the shear viscosity and $\
 **The precise form of the statement, because it is easy to overstate.** The conservation of the stress is a separate equation from the second law. With $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ and with the quantum part of the stress included, the conservation law is
 
 $$
-\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde\Sigma_\Psi\right)=0
+\mathrm{Sc}\left((\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_\Psi\right)=0
 $$
 
 on the fields that solve the equation of motion, and it holds *because* the flow obeys the mass shell that $Q_{\mathrm{qnt}}$ modifies,
@@ -201,7 +201,7 @@ The entropy current is $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+
 
 The self-contraction is the proper entropy density squared, $J_{\Phi,\mathrm{ent},t}^{2}-\lvert\vec J_{\Phi,\mathrm{ent}}\rvert^{2}=\gamma^{2}s_{\mathrm{ent}}^{2}(1-\beta_{\mathrm{vel}}^{2})=s_{\mathrm{ent}}^{2}$, checked at three velocities with $s_{\mathrm{ent}}=3$ where the value is $9$ in every frame; the quaternionic norm of the same element is $\gamma^{2}s_{\mathrm{ent}}^{2}(1+\beta_{\mathrm{vel}}^{2})$ and is not the invariant, the two coinciding only when the temporal slot carries an $i$. The thermal element of the moving-frame article has the quaternionic norm $-\beta^{2}$, the sign difference being exactly that $i$.
 
-The second law is one divergence, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_{\Phi,\mathrm{ent}})=\partial_t(s_{\mathrm{ent}}\gamma)+\partial_\eta(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta})=\sigma_{\mathrm{ent}}\ge0$. An ideal fluid has $\sigma_{\mathrm{ent}}=0$ because $\sigma_{\mathrm{spc}}$ is constant along the flow; off equilibrium the production is $\sigma_{\mathrm{ent}}=T^{-1}(\zeta\theta^{2}+2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}+\kappa_{\mathrm{th}}\partial_\eta T\,\partial_\eta T/T)$ plus relaxation terms, a sum of squares whose sign is the non-negativity of the transport coefficients. Evaluated once at $T=2$, the three terms of the bracket are $\zeta\theta^{2}=0.025\,000$, $2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}=0.120\,000$ and $\kappa_{\mathrm{th}}\partial_\eta T\,\partial_\eta T/T=0.010\,000$, which is $\sigma_{\mathrm{ent}}=0.077\,500$ after the division by $T$.
+The second law is one divergence, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}})=\partial_t(s_{\mathrm{ent}}\gamma)+\partial_\eta(s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta})=\sigma_{\mathrm{ent}}\ge0$. An ideal fluid has $\sigma_{\mathrm{ent}}=0$ because $\sigma_{\mathrm{spc}}$ is constant along the flow; off equilibrium the production is $\sigma_{\mathrm{ent}}=T^{-1}(\zeta\theta^{2}+2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}+\kappa_{\mathrm{th}}\partial_\eta T\,\partial_\eta T/T)$ plus relaxation terms, a sum of squares whose sign is the non-negativity of the transport coefficients. Evaluated once at $T=2$, the three terms of the bracket are $\zeta\theta^{2}=0.025\,000$, $2\eta_{\mathrm{sh}}\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}=0.120\,000$ and $\kappa_{\mathrm{th}}\partial_\eta T\,\partial_\eta T/T=0.010\,000$, which is $\sigma_{\mathrm{ent}}=0.077\,500$ after the division by $T$.
 
 The quantum part does not enter the production. It enters the mass shell, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the stress is conserved on the flows that obey it; the pure state has no entropy, so its current vanishes and the second law is saturated. Entropy from a quantum fluid comes from friction between the component that carries the quantum stress and the component that carries the entropy, which is [The Two-Fluid Model in Biquaternionic Form](the-two-fluid-model-in-biquaternionic-form.html)'s subject and is not derived here.
 

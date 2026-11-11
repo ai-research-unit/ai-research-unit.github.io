@@ -94,12 +94,12 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$
 
-with $\tilde\nabla$ the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value read by the test. The mass is the only term that relates the two parts. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\tilde\nabla_\Phi$ the biquaternionic gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value read by the test. The mass is the only term that relates the two parts. Both gradients act from the left, so this pair is **one-sided**. The electron state is the element $\tilde u(p)$ and the positron state the element $\tilde v(k)$; charge conjugation $\mathcal C$ pairs each with its conjugate. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The two-sided form.** Read on the whole algebra rather than one-sidedly, the same physics is the single equation
 
 $$
-\tilde\nabla^{\natural}F=m\,\bar F\,(-i\vec e_z),
+(\tilde\nabla_\Phi)^{\natural}F=m\,\bar F\,(-i\vec e_z),
 $$
 
 with $\bar F$ the coefficient conjugate. The derivative acts on the left, the mass acts on the right by the unit $-i\vec e_z$, and the conjugation supplies the antilinear part. The two forms are different operators: the pair is linear in the field, the two-sided form is antilinear in $F$ because the mass term carries $\bar F$.

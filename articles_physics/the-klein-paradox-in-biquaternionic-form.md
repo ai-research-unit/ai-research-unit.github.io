@@ -8,7 +8,7 @@ This article treats the Klein step in the biquaternion framework. The framework 
 
 The article is organised as follows. The next section writes the Dirac equation at a step and reduces it along one axis. The third section does the standard matching and gives the reflection and transmission coefficients, with the exact current conservation checked. The fourth states the paradox and its quantum-field-theoretic resolution. The fifth gives the biquaternion interpretation and separates what the algebra supplies from what it only transcribes. The sixth reports a worked numerical case and the massless limit. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla$ by $D = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, acting by left multiplication.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, acting by left multiplication.
 
 ## The Dirac Equation at a Potential Step
 
@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 A static electrostatic potential $\xi(x)$ is the time component of the four-potential, $\tilde{A}_{\Phi} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
 
 $$
-D = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi} = \tilde\nabla +\frac{i\,ϙ}{\hbar}\cdoti\,a'_te_t = \tilde\nabla -\frac{ϙ\,a'_{t}}{\hbar}e_t .
+D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\cdoti\,a'_te_t = \tilde\nabla_\Phi -\frac{ϙ\,a'_{t}}{\hbar}e_t .
 $$
 
 The added term is a **central scalar multiple of $e_t$**. This is the algebraic statement that an electrostatic potential couples to the scalar slot and not to the state module: it cannot rotate, mix or relatively phase the two chiral components of the field. The one-dimensional-scattering article makes the same point for the Schrödinger case, and the mechanism is identical here.
@@ -217,7 +217,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $\tilde\nabla = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $D = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Covariant derivative (minimal coupling) |
+| $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Covariant derivative (minimal coupling) |
 | $\tilde{A}_{\Phi} = i\,a'_te_t$ | Electrostatic potential biquaternion |
 | $V_0$, $ϙ\xi(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ | Step height and potential energy |
 | $E$, $k_\Phi$, $k_{\Phi,2}$ | Energy, incident momentum, transmitted momentum |

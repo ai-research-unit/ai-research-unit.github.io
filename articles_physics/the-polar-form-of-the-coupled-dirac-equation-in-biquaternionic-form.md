@@ -9,7 +9,7 @@ $$
 \qquad
 \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_{L}=k_m\,\tilde\Xi_{R},
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
 $$
 
 with $\tilde A_{\Phi}$ the potential biquaternion and $ϙ$ the charge. *The Polar Form of the Dirac Equation in Biquaternionic Form* substitutes the polar word into the uncoupled pair. This article substitutes the same word into the coupled one, and reads what the connection does to it.
@@ -130,7 +130,7 @@ The four brackets, with the second now shifted, are the following.
 The second bracket is a four-vector, and with the connection it is the **covariant wavevector**:
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.
+\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.
 $$
 
 *Proposition.* $\tilde K_{\Phi,\mathrm{gco}}$ lies in the material sector $\mathbb{B}_{\Phi}$, and for a plane wave, where the frame and the density are constant and the angle is linear,
@@ -159,7 +159,7 @@ Two elements now carry the name of momentum, and they differ by the potential's 
 
 | element | definition | gauge | what it is |
 | --- | --- | --- | --- |
-| $\tilde K_{\Phi}$ | $\tilde\nabla\alpha$ | shifts by $+\frac{ϙ}{\hbar}\tilde\nabla\Gamma$ | the gradient of the word's angle; the canonical wavevector |
+| $\tilde K_{\Phi}$ | $\tilde\nabla_\Phi\alpha$ | shifts by $+\frac{ϙ}{\hbar}\tilde\nabla_\Phi\Gamma$ | the gradient of the word's angle; the canonical wavevector |
 | $\tilde K_{\Phi,\mathrm{gco}}$ | $\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}$ | invariant | the wavevector of the coupled pair; the kinetic one |
 
 The free article's sentence is therefore amended, and not weakened: *the momentum is the gradient of the angle* becomes *the kinetic momentum is the gradient of the angle plus the potential's share*. The two coincide when the potential vanishes, which is why the free sentence was right in its own case.
@@ -193,7 +193,7 @@ $$
 \qquad
 \lambda=\exp\Bigl(\frac{i\,ϙ\,\Gamma}{\hbar}\Bigr),
 \qquad
-\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla\Gamma,
+\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma,
 \qquad \Gamma\ \text{real},
 $$
 
@@ -272,7 +272,7 @@ i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_0^{L}=k_m\tilde\Xi_0^{R},
 \tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}.
 $$
 
-*Proof.* The derivative is left multiplication by $i\tilde K_{\Phi,\mathrm{gco}}$ by §*The Covariant Wavevector*, and the pair is the parent's with that operator in place of $\tilde\nabla$. The third relation follows from the first two as in the free case: eliminate $\tilde\Xi_0^{L}$ between them.
+*Proof.* The derivative is left multiplication by $i\tilde K_{\Phi,\mathrm{gco}}$ by §*The Covariant Wavevector*, and the pair is the parent's with that operator in place of the gradient. The third relation follows from the first two as in the free case: eliminate $\tilde\Xi_0^{L}$ between them.
 
 **What the display says.** The connection has not changed the form of the system. It has changed the element that appears in it, from the gradient of the angle to the covariant wavevector. A reader who knows the free polar system knows the coupled one, provided he reads the momentum as the kinetic momentum.
 
@@ -492,7 +492,7 @@ $$
 
 There is no fifth bracket. The interaction is inside the second, and none of the other three can hold it, because each is of a type a central scalar is not.
 
-The shift is the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}$, an element of the material sector, and for a plane wave $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi$. The momentum-space system of the coupled pair is the free one with $\tilde K_{\Phi}$ replaced by $\tilde K_{\Phi,\mathrm{gco}}$, including the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$.
+The shift is the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}$, an element of the material sector, and for a plane wave $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi$. The momentum-space system of the coupled pair is the free one with $\tilde K_{\Phi}$ replaced by $\tilde K_{\Phi,\mathrm{gco}}$, including the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$.
 
 The velocity is read from the covariant wavevector: $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\frac{\hbar}{m}\tilde K_{\Phi,\mathrm{gco}}$, so $\tilde P_{\Phi,\mathrm{gco}}=m\tilde V_{\Phi}$, and the canonical momentum is $\tilde P_{\Phi}=m\tilde V_{\Phi}-ϙ\tilde A_{\Phi}$. The mass term remains a frame factor, $\tilde\Xi_0^{L}=-\mathcal B_{\Psi}\tilde\Xi_0^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}=\tilde K_{\Phi,\mathrm{gco}}/(ik_m)$, and the relation carries neither $k_m$ nor the potential.
 
@@ -513,13 +513,13 @@ The second-order equation carries the curvature, $\bigl(\sum_\mu\tilde\nabla_{\m
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
 | $\mathrm{sp}$ | The Dirac-field label of *Algebra and Element Conventions*; kept in $\tilde S_{\Psi,\mathrm{sp}}$ |
-| $\tilde\nabla,\ \tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $\tilde\nabla^{\natural}\tilde\nabla=\Box$ |
+| $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | The material gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$ |
 | $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position; $\partial/\partial R_t=-i\partial/\partial r'_t$ |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
 | $\tilde A_{\Phi}=A_te_t+\sum_\eta A_\eta\vec e_\eta=i a'_te_t+\vec A$ | Potential biquaternion, an element of $\mathbb{B}_{\Phi}$; $A_t=ia'_t$, $a'_t=\phi/c$ |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative, left action |
+| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative, left action |
 | $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$ | Its components; central scalars |
-| $\tilde\nabla_{\mathrm{gco}}^{\natural}=\tilde\nabla^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
+| $\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
 | $ϙ$ | Charge; the algebra fixes neither its value nor its sign |
 | $\frac{ϙ}{\hbar}$ | The coupling coefficient; the mass does not enter |
 | $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
@@ -528,7 +528,7 @@ The second-order equation carries the curvature, $\bigl(\sum_\mu\tilde\nabla_{\m
 | $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | Boost; Hermitian positive, $N=1$; $\tilde U_{\Psi,\mathrm b}^{2}=\mathcal B_{\Psi}^{-1}$ |
 | $\tilde u_{\mathrm r}$ | Rotor; real unit quaternion, $N=1$ |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\cosh\theta_{\mathrm{rpd}}e_t-i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ |
-| $\tilde K_{\Phi}=\tilde\nabla\alpha$ | Canonical wavevector; shifts under the gauge group |
+| $\tilde K_{\Phi}=\tilde\nabla_\Phi\alpha$ | Canonical wavevector; shifts under the gauge group |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
 | $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$ | The mass shell, as the frame's unitarity |
 | $\tilde P_{\Phi}=\hbar\tilde K_{\Phi}$ | Canonical momentum; $\tilde P_{\Phi}=m\tilde V_{\Phi}-ϙ\tilde A_{\Phi}$ |

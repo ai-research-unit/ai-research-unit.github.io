@@ -184,7 +184,7 @@ Neither column is refuted by the other, and this article does not choose between
 
 Three agreements are worth naming, because they are what makes the derivation worth pursuing inside this corpus rather than beside it.
 
-**The same cone.** The characteristic set of the corpus's operator $\tilde\nabla$ is the zero-divisor cone, since the determinant of its symbol matrix is the norm, and the primary equation says the gradient lies on that cone. The two frameworks are built on the same quadratic form; they differ in degree, not in cone.
+**The same cone.** The characteristic set of the corpus's four-dimensional gradient is the zero-divisor cone, since the determinant of its symbol matrix is the norm, and the primary equation says the gradient lies on that cone. The two frameworks are built on the same quadratic form; they differ in degree, not in cone.
 
 **The same twistor.** The general solution of the primary equation is generated, on the programme's account, by an arbitrary function of three components of a twistor, with the coordinate resolved from the incidence relation. *Twistor Theory and Biquaternions* writes that relation for a different purpose, the representation of massless fields. The object is shared; only its role differs.
 

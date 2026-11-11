@@ -505,7 +505,7 @@ $$
 k_{\Phi} =\frac{p_{\Phi}}{\hbar}=\frac{p_{\Phi}}{\hbar} .
 $$
 
-That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla$ carries an inverse length, and on a plane wave it returns $i\vec k_{\Phi}$. The biquaternionic gradient $\tilde\nabla$ does the same, and on a plane wave it returns $i$ times the four-wave-number.
+That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla$ carries an inverse length, and on a plane wave it returns $i\vec k_{\Phi}$. The biquaternionic gradient $\tilde\nabla_\Phi$ does the same, and on a plane wave it returns $i$ times the four-wave-number.
 
 ### The Phase Winding
 
