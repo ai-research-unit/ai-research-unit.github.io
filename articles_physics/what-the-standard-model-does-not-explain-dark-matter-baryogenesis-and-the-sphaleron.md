@@ -150,7 +150,7 @@ that is **one baryon per $1.6\times10^{9}$ photons**. Every annihilation that co
 
 | Property | Requires |
 |---|---|
-| $B$ must be violated | A process with $\Delta B\neq0$ |
+| $B$ must be violated | A process with $\delta B\neq0$ |
 | $C$ and $CP$ must be violated | Different rates for particles and antiparticles |
 | The process must be out of equilibrium | Otherwise the inverse reaction erases the asymmetry |
 
@@ -170,7 +170,7 @@ computed from $\lambda=0.22650$, $A=0.826$, $\bar\rho=0.1591$, $\bar\eta=0.3523$
 
 | Condition | Statement | Needed because |
 |---|---|---|
-| 1. $B$ violation | Some process with $\Delta B\neq0$ | Otherwise $B$ is conserved and any initial zero stays zero |
+| 1. $B$ violation | Some process with $\delta B\neq0$ | Otherwise $B$ is conserved and any initial zero stays zero |
 | 2. $C$ and $CP$ violation | The rates for $X\to Y$ and $\bar X\to\bar Y$ differ | Otherwise equal numbers of baryons and antibaryons are made |
 | 3. Out of equilibrium | The inverse process is suppressed | Otherwise the asymmetry is undone |
 
@@ -201,9 +201,9 @@ $$
 
 **The three readings of it.**
 
-- **$B$ and $L$ are each violated**, by an amount proportional to the topological density. So the divergence is a total derivative of a topological object and integrates to an integer, which is why $\Delta B$ is quantised.
+- **$B$ and $L$ are each violated**, by an amount proportional to the topological density. So the divergence is a total derivative of a topological object and integrates to an integer, which is why $\delta B$ is quantised.
 - **$B-L$ is conserved exactly.** The combination is anomaly-free, so no process — perturbative or not — changes it.
-- **$\Delta B=\delta L=N_g=3$** for a transition of unit winding number. One unit per generation, all three generations at once, which is why the process is called *sphaleron* and couples only to the generation-universal sector.
+- **$\delta B=\delta L=N_g=3$** for a transition of unit winding number. One unit per generation, all three generations at once, which is why the process is called *sphaleron* and couples only to the generation-universal sector.
 
 **The consequence that makes the model unable to do baryogenesis.** If the universe starts with $B=L=0$, so does $B-L=0$, and since $B-L$ is conserved the final state has $B-L=0$. A sphaleron transition moves $B$ and $L$ together, so it moves $B$ from zero and back to zero. **The Standard Model therefore generates no net baryon number at all, from any initial condition with $B-L=0$.** This is a stronger statement than "too little CP violation", and it is the correct one.
 
@@ -273,7 +273,7 @@ Two objects describe the same topological transition, in two different signature
 
 **What the corpus does supply of the sphaleron's physics.** Three things, and they are not nothing:
 
-- **The quantisation of $\Delta B$.** [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) derives the integer-valued winding number from the central integer of the biquaternion index, which is what makes $\Delta B=3$ a discrete statement rather than a continuous one.
+- **The quantisation of $\delta B$.** [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) derives the integer-valued winding number from the central integer of the biquaternion index, which is what makes $\delta B=3$ a discrete statement rather than a continuous one.
 - **The $\theta$ dependence.** The energy of a $\theta$ vacuum depends on $\theta$ through the instanton gas, and the sphaleron's rate inherits that dependence. [The semiclassical article](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) supplies the gas.
 - **The axial anomaly's identity**, as above, from the Fujikawa construction.
 
@@ -332,7 +332,7 @@ and the observed $\eta=6.1\times10^{-10}$ requires $L\sim1.7\times10^{-9}$ in th
 **Supplied.**
 
 - **The anomaly identity.** The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\partial_\mu j^\mu_B\propto F\tilde F$.
-- **The quantisation.** [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) supplies the integer winding number from the biquaternion index, which is what makes $\Delta B=3$ discrete.
+- **The quantisation.** [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) supplies the integer winding number from the biquaternion index, which is what makes $\delta B=3$ discrete.
 - **The instanton gas.** [The semiclassical article](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) supplies the Euclidean sum over sectors, which gives the $\theta$ dependence of the vacuum energy.
 - **The Majorana condition**, which is the only $B-L$ violation available here, and therefore the only route to leptogenesis.
 
@@ -355,7 +355,7 @@ and the observed $\eta=6.1\times10^{-10}$ requires $L\sim1.7\times10^{-9}$ in th
 | $J=3.13\times10^{-5}$ | **Computed** here from $\lambda$, $A$, $\bar\rho$, $\bar\eta$, $\delta$ |
 | $\eta\sim10^{-20}$ from $J$, eleven orders short | **Imported** estimate; the gap computed here |
 | $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$ | **Imported**; derived in the corpus's anomaly articles |
-| $\Delta B=\delta L=3$, $\Delta(B-L)=0$ | **Imported**; the integer from the $\theta$-vacuum article |
+| $\delta B=\delta L=3$, $\delta(B-L)=0$ | **Imported**; the integer from the $\theta$-vacuum article |
 | $E_{\mathrm{sph}}=9.0$ TeV, $B=1.90$ | **Imported** energy; $B$ recomputed here |
 | $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $100$ GeV | **Computed** here |
 | $\tau_p>10^{160}$ yr | **Imported** ('t Hooft) |
@@ -398,7 +398,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 
 ## Further Reading
 
-- [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The integer winding number, the central phase, and why $\Delta B$ is quantised.
+- [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html). The integer winding number, the central phase, and why $\delta B$ is quantised.
 - [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html). The self-dual object the framework does host, and the reason the sphaleron is not one.
 - [The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html). The Euclidean sum that gives the $\theta$ dependence of the vacuum energy.
 - [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The anomalous divergence, which is the only Sakharov ingredient the model has.

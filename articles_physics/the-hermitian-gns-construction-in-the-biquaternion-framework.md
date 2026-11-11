@@ -343,7 +343,7 @@ The Hermitian GNS construction supplies the bridge from the vacuum state of *The
 | $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ | Modular flow (Hermitian pair) |
 | $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=L_{e^{-H_{\mathrm{modular}}}}R_{e^{H_{\mathrm{modular}}}}$ | Modular operator (positive, self-adjoint) |
 | $S_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)=\tilde Q_3^{*}$ | Tomita operator |
-| $J_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)=e^{-H_{\mathrm{modular}}/2}\tilde Q_3^{*}e^{K/2}$ | Modular conjugation, $J^2=1$, $J\Delta J\Delta=1$ |
+| $J_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)=e^{-H_{\mathrm{modular}}/2}\tilde Q_3^{*}e^{K/2}$ | Modular conjugation, $J^2=1$, $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator (in the radical of the vacuum state) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

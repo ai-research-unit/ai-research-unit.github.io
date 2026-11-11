@@ -213,7 +213,7 @@ $$
 per revolution. For small $\kappa^2/(c^2L^2)$ the advance is
 
 $$
-\Delta\simeq\frac{\pi\kappa^2}{c^2L^2},
+\mathcal{A}_{\mathrm{adv}}\simeq\frac{\pi\kappa^2}{c^2L^2},
 $$
 
 and the sign is a **prograde** advance: since $\omega<1$, the particle must sweep more than $2\pi$ to return to periapsis, so the perihelion moves in the direction of the motion.
@@ -269,7 +269,7 @@ $$
 p\longrightarrow\frac{L^2}{m\kappa}, \qquad
 e^2\longrightarrow1+\frac{2\varepsilon L^2}{m\kappa^2},
 \qquad
-\Delta\longrightarrow0 .
+\mathcal{A}_{\mathrm{adv}}\longrightarrow0 .
 $$
 
 The last limit is the statement that the precession is a relativistic effect of order $1/c^2$. The circular-orbit results become $r_c\to L^2/(m\kappa)$ and $E_c\to mc^2$, and the barrier condition $L>\kappa/c$ becomes vacuous for every fixed $L>0$, which is the non-relativistic statement that the centrifugal barrier is unconditional.

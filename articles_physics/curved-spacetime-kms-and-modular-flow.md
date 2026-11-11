@@ -65,7 +65,7 @@ The corpus writes its metric as $\delta_{\mu\nu}$ with every coefficient $+1$, a
 
 ### The modular parameter is the Killing time in units of the flow's width
 
-**The modular parameter and the Killing time differ by a constant, and the constant is the flow's inverse temperature.** The Bisognano–Wichmann theorem, in the form the corpus states it, says that the modular flow of a wedge is the boost and that the modular operator is $\Delta=\exp(-2\pi H_{\mathrm{modular,boost}})$, so the modular flow $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$ acts as the boost by rapidity $2\pi s$. A boost is a translation in rapidity, and on a horizon the rapidity per unit Killing time is the surface gravity in the frequency normalization. Hence
+**The modular parameter and the Killing time differ by a constant, and the constant is the flow's inverse temperature.** The Bisognano–Wichmann theorem, in the form the corpus states it, says that the modular flow of a wedge is the boost and that the modular operator is $\mathcal{M}_{\mathrm{mod}}=\exp(-2\pi H_{\mathrm{modular,boost}})$, so the modular flow $\sigma_s(A)=\mathcal{M}_{\mathrm{mod}}^{is}A\mathcal{M}_{\mathrm{mod}}^{-is}$ acts as the boost by rapidity $2\pi s$. A boost is a translation in rapidity, and on a horizon the rapidity per unit Killing time is the surface gravity in the frequency normalization. Hence
 
 $$
 2\pi s=\kappa_\omega\,r'_t
@@ -84,10 +84,10 @@ where the last equality uses $\kappa_\omega=\kappa/c$ with $\kappa$ the surface 
 **The generator of the flow is Hermitian, and in the corpus's sectors it is an element of the informational one.** The modular Hamiltonian is
 
 $$
-H_{\mathrm{modular}}=-\log\Delta,
+H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}},
 $$
 
-which is Hermitian because $\Delta$ is positive, so it lies in $\mathbb{B}_{\Psi}$ and not in the material sector, as [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) records. The thermal state is the exponential of it,
+which is Hermitian because $\mathcal{M}_{\mathrm{mod}}$ is positive, so it lies in $\mathbb{B}_{\Psi}$ and not in the material sector, as [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) records. The thermal state is the exponential of it,
 
 $$
 \omega_\beta\bigl(\,\cdot\,\bigr)=\frac{\mathrm{Tr}\bigl(e^{-\beta_H H_{\mathrm{modular}}}\,\cdot\,\bigr)}{Z},
@@ -157,7 +157,7 @@ and the regularity of the Euclidean section is the same statement as the KMS per
 
 - **The width is a function.** $\beta(x)=\beta_H\,\ell(x)$ is written with the same symbol as the flat width and differs only in bearing an argument. This is the whole of the "$\beta=\beta(x)$" bookkeeping: the letter keeps its meaning and gains a dependence.
 - **The lapse is a scalar, not a coefficient.** It enters as an imported number per event and never as a component of $\delta_{\mu\nu}$. The consequence is that every display in this article is a relation among scalars, and none of them needs an index.
-- **The generator is Hermitian and informational.** $H_{\mathrm{modular}}=-\log\Delta$ lies in $\mathbb{B}_{\Psi}$, while the imaginary direction of the strip is the material sector's. The split is the same one the local-thermal-structure article makes, and it is the corpus's way of saying that a thermal state has an informational generator and a material direction.
+- **The generator is Hermitian and informational.** $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ lies in $\mathbb{B}_{\Psi}$, while the imaginary direction of the strip is the material sector's. The split is the same one the local-thermal-structure article makes, and it is the corpus's way of saying that a thermal state has an informational generator and a material direction.
 - **The modular parameter is a Killing time divided by the width.** $s=r'_t/\beta_H$ is the one equation that connects the operator formalism's parameter to the geometry's coordinate, and it is a ratio of two lengths, as the corpus's units require.
 
 ### The import
@@ -218,7 +218,7 @@ and the Euclidean period $8\pi GM/c^{3}=8\pi\cdot0.5=4\pi$ agrees with $\beta_H$
 
 On a Killing horizon the KMS condition has two widths. The flow's width is $\beta_H=2\pi c/\kappa=2\pi/\kappa_\omega$, a single number fixed by the surface gravity and normalised by the Killing time at infinity. The observer's width is $\beta(x)=\beta_H\ell(x)$, the flow's width multiplied by the lapse, so the observer's local temperature is $T(x)=T_H/\ell(x)$: Tolman's law with the lapse in place of the light speed, quoted from the local-thermal-structure article and not re-derived. The lapse vanishes at the horizon, so the observer's thermal circle collapses and the observer's temperature diverges, while the flow's width stays finite because the surface gravity is the redshifted acceleration.
 
-The modular flow supplies the parameter. From the Bisognano–Wichmann statement that the modular flow is the boost by rapidity $2\pi s$, and from the horizon's rapidity per unit Killing time being $\kappa_\omega$, the modular parameter is $s=r'_t/\beta_H$: one turn of the modular flow is one turn of the thermal circle, and the KMS periodicity $\sigma_{s+1}=\sigma_s$ is the compactness of the imaginary direction with circumference $\beta_H$. The modular Hamiltonian $-\log\Delta$ is Hermitian and therefore lies in the informational sector, while the strip extends along the material sector's own imaginary time. The Euclidean regularity period $8\pi GM/c^3$ equals $\beta_H$; with $r_s=1$ both are $4\pi=12.566\,370\,614$, and the table of the lapse at four radii gives $\beta(r)/\beta_H=\ell(r)$ and $T(r)/T_H=1/\ell(r)$ with the product constant to every digit printed.
+The modular flow supplies the parameter. From the Bisognano–Wichmann statement that the modular flow is the boost by rapidity $2\pi s$, and from the horizon's rapidity per unit Killing time being $\kappa_\omega$, the modular parameter is $s=r'_t/\beta_H$: one turn of the modular flow is one turn of the thermal circle, and the KMS periodicity $\sigma_{s+1}=\sigma_s$ is the compactness of the imaginary direction with circumference $\beta_H$. The modular Hamiltonian $-\log\mathcal{M}_{\mathrm{mod}}$ is Hermitian and therefore lies in the informational sector, while the strip extends along the material sector's own imaginary time. The Euclidean regularity period $8\pi GM/c^3$ equals $\beta_H$; with $r_s=1$ both are $4\pi=12.566\,370\,614$, and the table of the lapse at four radii gives $\beta(r)/\beta_H=\ell(r)$ and $T(r)/T_H=1/\ell(r)$ with the product constant to every digit printed.
 
 **This is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.**
 
@@ -241,9 +241,9 @@ The modular flow supplies the parameter. From the Bisognano–Wichmann statement
 | $\omega_\beta$ | Thermal state |
 | $\alpha_{r'_t}$ | Time-translation automorphism group |
 | $F_{AB}(r'_t)=\omega_\beta(A\alpha_{r'_t}(B))$ | Thermal correlation function |
-| $\Delta$ | Modular operator |
-| $H_{\mathrm{modular}}=-\log\Delta$ | Modular Hamiltonian, Hermitian, in $\mathbb{B}_{\Psi}$ |
-| $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$ | Modular flow |
+| $\mathcal{M}_{\mathrm{mod}}$ | Modular operator |
+| $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ | Modular Hamiltonian, Hermitian, in $\mathbb{B}_{\Psi}$ |
+| $\sigma_s(A)=\mathcal{M}_{\mathrm{mod}}^{is}A\mathcal{M}_{\mathrm{mod}}^{-is}$ | Modular flow |
 | $s=r'_t/\beta_H$ | Modular parameter |
 | $2\pi s=\kappa_\omega r'_t$ | Rapidity carried by the modular flow |
 | $Z=\mathrm{Tr}e^{-\beta_H H_{\mathrm{modular}}}$ | Partition function of the horizon state |

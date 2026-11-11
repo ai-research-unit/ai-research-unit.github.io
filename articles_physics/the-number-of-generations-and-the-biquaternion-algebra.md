@@ -6,7 +6,7 @@ The Standard Model's fermions come in **three generations** (families), each an 
 
 This article asks what the biquaternion framework says about the number. The answer is short and is stated at the outset.
 
-- **Established.** The framework carries a generation index as a **multiplicity factor**: a spectrum of $N_g$ generations is a module $\Delta\otimes\mathbb{C}^{N_g}$ (or a direct sum of $N_g$ copies of $\Delta$), on which the algebra acts as $\mathbb{B}$ on the module factor and trivially on the multiplicity factor. The algebra's invariants — its dimension, its centre, its trace, its sectors — are independent of $N_g$, and so are the anomaly cancellation conditions.
+- **Established.** The framework carries a generation index as a **multiplicity factor**: a spectrum of $N_g$ generations is a module $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ (or a direct sum of $N_g$ copies of $\Delta$), on which the algebra acts as $\mathbb{B}$ on the module factor and trivially on the multiplicity factor. The algebra's invariants — its dimension, its centre, its trace, its sectors — are independent of $N_g$, and so are the anomaly cancellation conditions.
 - **Not established.** The algebra does not fix $N_g$. Its representation theory has no room for a preferred integer; the number appears only as the dimension of a multiplicity space on which the algebra acts trivially, and nothing in $\mathbb{B}$, in its modules, or in its real structure selects $3$. The framework accommodates the three generations; it does not explain them.
 - **A false lead, addressed.** The algebra has three imaginary units $\vec e_x,\vec e_y,\vec e_z$, and it is tempting to identify them with the three generations. The article explains why that identification is not available: the $\vec e_\eta$ are the spatial directions (and the $\mathrm{SU}(2)$ generators), they transform under the Lorentz and gauge groups, and a generation label must be inert under them. The three units and the three generations are different threes.
 
@@ -47,7 +47,7 @@ The pattern is that the theory is consistent with a range of $N_g$ and experimen
 **The multiplicity factor.** The framework can accommodate any number of generations without changing its algebra. The $N_g$-generation fermion space is
 
 $$
-\boxed{\;\mathcal{V} = \Delta\otimes\mathcal{F} = \Delta\otimes\mathbb{C}^{N_g},
+\boxed{\;\mathcal{V} = \mathcal{S}_{\mathrm{rep}}\otimes\mathcal{F} = \mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g},
 \qquad
 \dim_{\mathbb{C}}\mathcal{V} = 4N_g\;},
 $$
@@ -61,7 +61,7 @@ $$
 
 i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicity factor. Equivalently the same structure is the direct sum of $N_g$ copies of $\Delta$, and the two descriptions are unitarily equivalent. The generation index is a label on a factor on which the algebra does nothing.
 
-**The flavour space and its algebra.** The operators that distinguish generations act on $\mathcal{F}$ alone, i.e. as $I_{\Delta}\otimes M$ with $M\in\mathrm{End}(\mathcal{F})=M_{N_g}(\mathbb{C})$. The framework's mass matrices, Yukawa couplings, and mixing matrices are of this form: they are flavour operators tensored with the identity on the module, and their framework content is carried by the module factor. The companion article on the CKM matrix treats the quark mixing matrix as exactly such an operator, and the seesaw article treats the lepton mass matrices the same way. In the language of representations, the full algebra of the $N_g$-generation system is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ acting on $\Delta\otimes\mathbb{C}^{N_g}$, and the generation number is the dimension of the second factor.
+**The flavour space and its algebra.** The operators that distinguish generations act on $\mathcal{F}$ alone, i.e. as $I_{\mathcal{S}_{\mathrm{rep}}}\otimes M$ with $M\in\mathrm{End}(\mathcal{F})=M_{N_g}(\mathbb{C})$. The framework's mass matrices, Yukawa couplings, and mixing matrices are of this form: they are flavour operators tensored with the identity on the module, and their framework content is carried by the module factor. The companion article on the CKM matrix treats the quark mixing matrix as exactly such an operator, and the seesaw article treats the lepton mass matrices the same way. In the language of representations, the full algebra of the $N_g$-generation system is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ acting on $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$, and the generation number is the dimension of the second factor.
 
 **The commutant.** The generation index is exactly the dimension of the **commutant** of the algebra's action: the operators commuting with every $\tilde Q\otimes I$ are the $I\otimes M$ with $M\in M_{N_g}(\mathbb{C})$, and the multiplicity of the module in $N_g$ copies of itself is $N_g$. This is the representation-theoretic home of the generation number. It is a standard fact of semisimple algebras, and it says precisely that $N_g$ is a multiplicity and not a structural constant: any multiplicity is allowed, and the module's own properties are silent about it. The framework's contribution is to make the multiplicity factor explicit and to identify the flavour matrices as its operators.
 
@@ -77,14 +77,14 @@ i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicit
 | $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=\dim_{\mathbb{R}}\mathbb{B}_{\Phi}$ | $4$ | none |
 | $\dim_{\mathbb{C}}\mathbb{B}_{C}$ | $1$ | none |
 | $\dim_{\mathbb{C}}S$ | $2$ | none |
-| $\dim_{\mathbb{C}}\Delta$ | $4$ | none |
+| $\dim_{\mathbb{C}}\mathcal{S}_{\mathrm{rep}}$ | $4$ | none |
 | Trace formula | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | none |
 | Real structure $\flat=-{}^{*}$, fixed spaces | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | none |
 | Anomaly conditions (per generation) | all zero | none |
 
 Every entry is fixed by the algebra alone, and none contains $N_g$. A framework that derived the generation number would have to produce the integer from one of these quantities or from a relation among them; no such relation exists, because the multiplicities do not enter any of them.
 
-**The representation theory has no preferred multiplicity.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and its complex irreducible representation is unique up to equivalence, of dimension two. Decomposing a fermion space into irreducible modules therefore gives a multiplicity that is free: the space $\Delta\otimes\mathbb{C}^{N_g}$ is a direct sum of $N_g$ copies of the (reducible) module $\Delta$, and any $N_g$ is equally allowed. There is no index, no anomaly, and no positivity condition that constrains the multiplicity, because the algebra is finite-dimensional and its modules are finite-dimensional. The only way an integer can be forced is by a mathematical consistency condition on the *whole* spectrum, and the framework's such conditions are the anomaly sums of the companion article, which are identically $N_g$-independent.
+**The representation theory has no preferred multiplicity.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and its complex irreducible representation is unique up to equivalence, of dimension two. Decomposing a fermion space into irreducible modules therefore gives a multiplicity that is free: the space $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ is a direct sum of $N_g$ copies of the (reducible) module $\Delta$, and any $N_g$ is equally allowed. There is no index, no anomaly, and no positivity condition that constrains the multiplicity, because the algebra is finite-dimensional and its modules are finite-dimensional. The only way an integer can be forced is by a mathematical consistency condition on the *whole* spectrum, and the framework's such conditions are the anomaly sums of the companion article, which are identically $N_g$-independent.
 
 **The anomaly conditions again.** The four conditions of the companion article — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and $\sum_{\mathrm{colour}}Y=0$ — are each sums over one generation, and each vanishes generation by generation. Multiplying the spectrum by $N_g$ multiplies each sum by $N_g$, leaving it zero. The conditions therefore cannot count the generations; a framework whose only consistency conditions are these cannot derive the number. This is the sharpest form of the negative result, and it is inherited unchanged from the Standard Model.
 
@@ -92,7 +92,7 @@ Every entry is fixed by the algebra alone, and none contains $N_g$. A framework 
 
 ## The Tensor Structure and the Trace
 
-**The full algebra and its centre.** With $N_g$ generations the algebra acting on $\mathcal{V}=\Delta\otimes\mathcal{F}$ is
+**The full algebra and its centre.** With $N_g$ generations the algebra acting on $\mathcal{V}=\mathcal{S}_{\mathrm{rep}}\otimes\mathcal{F}$ is
 
 $$\boxed{\;\mathbb{B}\otimes M_{N_g}(\mathbb{C}) \;\cong\; M_2(\mathbb{C})\otimes M_{N_g}(\mathbb{C})
 \;\cong\; M_{2N_g}(\mathbb{C})\;},$$
@@ -103,7 +103,7 @@ $$
 \boxed{\;Z\big(\mathbb{B}\otimes M_{N_g}(\mathbb{C})\big) = \mathbb{B}_{C}\otimes I_{N_g} \;\cong\; \mathbb{C}\;}.
 $$
 
-A single copy of the centre therefore survives: the algebra's central phase acts on every generation in the same way, and there is no central phase that distinguishes one generation from another. A generation-dependent phase would have to live in $I_\Delta\otimes M_{N_g}(\mathbb{C})$, i.e. in a broken flavour symmetry, not in the centre. This is the algebraic statement of the neutrality of the framework's central structure with respect to generations, and it is the reason the companion article on the CKM matrix must put the CP-violating phase in the flavour factor rather than in the centre.
+A single copy of the centre therefore survives: the algebra's central phase acts on every generation in the same way, and there is no central phase that distinguishes one generation from another. A generation-dependent phase would have to live in $I_{\\mathcal{S}_{\\mathrm{rep}}}\otimes M_{N_g}(\mathbb{C})$, i.e. in a broken flavour symmetry, not in the centre. This is the algebraic statement of the neutrality of the framework's central structure with respect to generations, and it is the reason the companion article on the CKM matrix must put the CP-violating phase in the flavour factor rather than in the centre.
 
 **The trace.** The framework's trace formula applies to the enlarged space by factorisation. For $\tilde{Q}_1\otimes M$ and $\tilde{Q}_2\otimes N$,
 
@@ -115,7 +115,7 @@ $$
 
 so the single-generation trace is multiplied by the flavour trace $\mathrm{tr}(MN)$. The factorisation is exact and shows again that the generation number enters every trace only as a multiplicative factor through the flavour trace: setting $M=N=I_{N_g}$ multiplies the single-generation trace by $N_g$. Nothing in the trace distinguishes one generation from another unless a flavour operator does, which is the precise sense in which the spectrum is $N_g$ identical copies.
 
-**The Hilbert-space structure.** The $N_g$-generation space $\Delta\otimes\mathbb{C}^{N_g}$ is a direct sum of $N_g$ copies of $\Delta$, and any $*$-unitary mixing of the copies is an automorphism of the framework's structure: the framework's symmetries do not act on the multiplicity factor, so the $\mathrm{U}(N_g)$ rotation of the copies is a symmetry of the free theory and is broken only by the mass and Yukawa matrices. This is the standard statement of flavour universality, and it is the representation-theoretic form of the observation that the generations are identical in all gauge interactions.
+**The Hilbert-space structure.** The $N_g$-generation space $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ is a direct sum of $N_g$ copies of $\Delta$, and any $*$-unitary mixing of the copies is an automorphism of the framework's structure: the framework's symmetries do not act on the multiplicity factor, so the $\mathrm{U}(N_g)$ rotation of the copies is a symmetry of the free theory and is broken only by the mass and Yukawa matrices. This is the standard statement of flavour universality, and it is the representation-theoretic form of the observation that the generations are identical in all gauge interactions.
 
 ## Flavour Symmetry and Its Breaking
 
@@ -142,7 +142,7 @@ acting on the multiplicity factor of each chirality. The gauge interactions are 
 | Total mixing parameters | $0$ | $1$ | $4$ | $(N_g-1)^2$ |
 | Flavour-group dimension | $2$ | $8$ | $18$ | $2N_g^2$ |
 | Anomaly sums $\sum Y$, $\sum Y^3$, $\sum YT_3^2$ | $0$ | $0$ | $0$ | none |
-| $\dim_{\mathbb{C}}\Delta\otimes\mathbb{C}^{N_g}$ | $4$ | $8$ | $12$ | $4N_g$ |
+| $\dim_{\mathbb{C}}\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ | $4$ | $8$ | $12$ | $4N_g$ |
 | $Z$-width count $N_\nu$ | — | — | $2.984\pm0.008$ | measurement |
 
 The anomaly rows are zero for every $N_g$, and no row contains a condition that selects three. The only entries that single out the physical value are the measured ones: the $Z$ width and the observation of the top quark.
@@ -165,7 +165,7 @@ and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$
 
 **The $Z$ width fixes the light count.** The invisible width of the $Z$ counts the light neutrino species; the measured value $N_\nu=2.984\pm0.008$ fixes the number of light generations to three. The framework records this as the empirical determination, with the qualification that a fourth generation with a heavy neutrino would evade the $Z$ width and is constrained instead by the Higgs-boson measurements and direct searches. The framework supplies no value for the number and no reason for the count to be three; it states the two experimental facts.
 
-**The unitarity of the mixing matrix.** The mixing matrix of the flavour sector is $*$-unitary by the framework's structure as well as by gauge invariance: the flavour transformation on $\mathcal{F}$ is a $*$-unitary $N_g\times N_g$ matrix, and its unitarity is what the companion article on the CKM matrix uses to count the parameters. The framework's flavour operators are $I_\Delta\otimes \tilde Q$ with $\tilde Q$ $*$-unitary, and the counting of angles and phases above is the counting of the $*$-unitary group of $\mathcal{F}$. The generation number enters the flavour predictions only through the dimension of this group.
+**The unitarity of the mixing matrix.** The mixing matrix of the flavour sector is $*$-unitary by the framework's structure as well as by gauge invariance: the flavour transformation on $\mathcal{F}$ is a $*$-unitary $N_g\times N_g$ matrix, and its unitarity is what the companion article on the CKM matrix uses to count the parameters. The framework's flavour operators are $I_{\\mathcal{S}_{\\mathrm{rep}}}\otimes \tilde Q$ with $\tilde Q$ $*$-unitary, and the counting of angles and phases above is the counting of the $*$-unitary group of $\mathcal{F}$. The generation number enters the flavour predictions only through the dimension of this group.
 
 **What the number of generations does not affect.** The masses of the fermions, their gauge quantum numbers, the anomaly cancellation, the structure of the Lorentz and gauge representations, and the framework's algebra are all independent of $N_g$. The number affects only the flavour sector's parameters and the spectrum's multiplicity. This is the precise content of the statement that the framework accommodates but does not explain the three generations.
 
@@ -183,7 +183,7 @@ and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$
 
 ## Discrete Symmetries and the Number Three
 
-**A family symmetry would be discrete or continuous.** If the generations are related by symmetry, that symmetry is an operator on the multiplicity factor. Continuous flavour symmetries are constrained by the observed mixing (the smallest mixing angles are not zero, so any continuous family symmetry is broken and its gaugeable versions are few), and the surviving candidates are usually **discrete**: a group $G_f$ acting on the three-dimensional flavour space $\mathbb{C}^3$, with $A_4$, $S_4$, $2T$, and $\Delta(27)$ the most studied. The observed leptonic mixing, which is close to the tri-bimaximal pattern, is the usual motivation.
+**A family symmetry would be discrete or continuous.** If the generations are related by symmetry, that symmetry is an operator on the multiplicity factor. Continuous flavour symmetries are constrained by the observed mixing (the smallest mixing angles are not zero, so any continuous family symmetry is broken and its gaugeable versions are few), and the surviving candidates are usually **discrete**: a group $G_f$ acting on the three-dimensional flavour space $\mathbb{C}^3$, with $A_4$, $S_4$, $2T$, and $\mathcal{G}(27)$ the most studied. The observed leptonic mixing, which is close to the tri-bimaximal pattern, is the usual motivation.
 
 **What the framework can say about a discrete family group.** A discrete group acting on $\mathcal{F}=\mathbb{C}^{N_g}$ is a subgroup of $\mathrm{U}(N_g)$, and it is not part of the framework's algebra. The framework's own discrete structures — the sign choices in the real structure, the central $i$, the conjugation $\flat$ — act on the module factor or on the centre, not on the multiplicity factor; none of them is a family symmetry, and none of them has an action that permutes generation labels. A discrete family group can therefore be **imposed** on the framework as an additional structure on $\mathcal{F}$, exactly as it is imposed on the Standard Model, but it is not derived from $\mathbb{B}$. In particular, the existence of a family group with a three-dimensional representation is a statement about the group, not about the algebra, and it does not derive $N_g$.
 
@@ -215,7 +215,7 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 
 **The hierarchy problem of the flavour sector.** The three generations have the same gauge quantum numbers and wildly different masses: the ratios span five orders of magnitude within the up-quark sector alone, $m_t/m_{\mathrm u}\sim10^{5}$, with the charged leptons spanning three and the quarks and leptons interleaving. The mass matrix on the flavour factor is a general $N_g\times N_g$ complex matrix, and its eigenvalues are the observed masses; nothing in the framework fixes its entries, its eigenvalues, or their ratios.
 
-**The hierarchy is a property of the flavour factor.** In the framework's tensor language, the mass matrix is $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$, and the hierarchy is entirely a property of $M$. The module factor carries the Lorentz and chirality structure and the same mass mechanism applies to each generation; the generation-dependent size is on the multiplicity factor, where the framework's algebra acts trivially. This is the sharpest statement of what the framework does not address: the algebra's action is generation-blind, so every generation would have the same mass if the mass matrix were the identity in flavour space, and the observed hierarchy is a departure from that identity that the framework cannot predict.
+**The hierarchy is a property of the flavour factor.** In the framework's tensor language, the mass matrix is $I_{\\mathcal{S}_{\\mathrm{rep}}}\otimes M$ with $M\in M_{N_g}(\mathbb{C})$, and the hierarchy is entirely a property of $M$. The module factor carries the Lorentz and chirality structure and the same mass mechanism applies to each generation; the generation-dependent size is on the multiplicity factor, where the framework's algebra acts trivially. This is the sharpest statement of what the framework does not address: the algebra's action is generation-blind, so every generation would have the same mass if the mass matrix were the identity in flavour space, and the observed hierarchy is a departure from that identity that the framework cannot predict.
 
 **The mixing follows the hierarchies.** The same flavour matrix controls the mixing: the $*$-unitary rotation that diagonalises the charged-lepton and quark mass matrices is the mixing matrix, and its angles and phase are the flavour data. The companion article on the CKM matrix treats the quark matrix and its CP-violating phase; the present article's point is that the number of generations and the pattern of masses and mixings are both properties of the multiplicity factor, and the framework supplies the factor and not its contents.
 
@@ -223,7 +223,7 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 
 ## The Multiplicity and the Real Structure
 
-**Extending the reality structure.** The framework's module carries the antilinear real structure $\mathcal{C}$ (charge conjugation, $\mathcal{C}^2=1$), and the companion articles on the neutrino and the seesaw use it. On the enlarged space $\Delta\otimes\mathbb{C}^{N_g}$ the real structure can be extended either as $\mathcal{C}\otimes I_{N_g}$ or as $\mathcal{C}\otimes J$ with $J$ an antilinear involution on the flavour factor; the two give physically different Majorana sectors. The first makes every generation's Majorana structure identical and leaves the flavour factor complex; the second allows the generations to differ in their reality properties — for instance a Dirac neutrino in one generation and a Majorana neutrino in another.
+**Extending the reality structure.** The framework's module carries the antilinear real structure $\mathcal{C}$ (charge conjugation, $\mathcal{C}^2=1$), and the companion articles on the neutrino and the seesaw use it. On the enlarged space $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ the real structure can be extended either as $\mathcal{C}\otimes I_{N_g}$ or as $\mathcal{C}\otimes J$ with $J$ an antilinear involution on the flavour factor; the two give physically different Majorana sectors. The first makes every generation's Majorana structure identical and leaves the flavour factor complex; the second allows the generations to differ in their reality properties — for instance a Dirac neutrino in one generation and a Majorana neutrino in another.
 
 **What this shows about the multiplicity.** The freedom in extending $\mathcal{C}$ is another expression of the multiplicity's independence: the algebra's real structure acts on the module factor, and the flavour factor carries its own, unconstrained, complex structure. The framework supplies the module's $\mathcal{C}$ and leaves the flavour factor's reality structure open, exactly as it leaves its mass matrix open. For the physical spectrum the choice is fixed by the observed neutrino sector — the companion articles on the neutrino and the seesaw take $\mathcal{C}\otimes I$ and the standard $\nu_R$ singlet per generation — but the fixing is empirical.
 
@@ -233,8 +233,8 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 
 | Item | Status |
 |---|---|
-| The generation index as a multiplicity factor $\mathbb{C}^{N_g}$ | **Supplied**; the module $\Delta\otimes\mathbb{C}^{N_g}$ and the algebra acting trivially on the second factor |
-| The flavour space and its operators $I_\Delta\otimes M$ | **Supplied**; the home of the mass and mixing matrices |
+| The generation index as a multiplicity factor $\mathbb{C}^{N_g}$ | **Supplied**; the module $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ and the algebra acting trivially on the second factor |
+| The flavour space and its operators $I_{\\mathcal{S}_{\\mathrm{rep}}}\otimes M$ | **Supplied**; the home of the mass and mixing matrices |
 | The commutant identification of $N_g$ as a multiplicity | **Supplied**; standard semisimple representation theory |
 | The independence of the invariants from $N_g$ | **Supplied**, listed explicitly |
 | The generation-independence of the anomaly conditions | **Supplied** by the anomaly article's per-generation cancellation |
@@ -256,7 +256,7 @@ is the left-right symmetric gauge group, with the two weak factors sitting insid
 
 ## Summary
 
-The biquaternion framework carries the generation index of the Standard Model as a **multiplicity factor**: an $N_g$-generation spectrum is the module $\Delta\otimes\mathbb{C}^{N_g}$, on which the algebra $\mathbb{B}$ acts on the module factor and trivially on the multiplicity factor, and the flavour matrices are the operators $I_\Delta\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The generation number is the dimension of the multiplicity space, equivalently the commutant of the algebra's action. Every structural quantity of the framework is independent of it — $\dim_{\mathbb{R}}\mathbb{B}=8$, $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=\dim_{\mathbb{R}}\mathbb{B}_{\Phi}=4$, $\dim_{\mathbb{C}}\Delta=4$, the trace formula, the real structure, and the sectors all have fixed values — and the anomaly cancellation conditions of the companion article vanish generation by generation, so $N_g$ copies contribute $N_g$ times zero. **The algebra does not fix the number of generations**, because it has no index, no internal space, and no dynamics, and its modules admit any multiplicity.
+The biquaternion framework carries the generation index of the Standard Model as a **multiplicity factor**: an $N_g$-generation spectrum is the module $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$, on which the algebra $\mathbb{B}$ acts on the module factor and trivially on the multiplicity factor, and the flavour matrices are the operators $I_{\\mathcal{S}_{\\mathrm{rep}}}\otimes M$ with $M\in M_{N_g}(\mathbb{C})$. The generation number is the dimension of the multiplicity space, equivalently the commutant of the algebra's action. Every structural quantity of the framework is independent of it — $\dim_{\mathbb{R}}\mathbb{B}=8$, $\dim_{\mathbb{R}}\mathbb{B}_{\Psi}=\dim_{\mathbb{R}}\mathbb{B}_{\Phi}=4$, $\dim_{\mathbb{C}}\mathcal{S}_{\mathrm{rep}}=4$, the trace formula, the real structure, and the sectors all have fixed values — and the anomaly cancellation conditions of the companion article vanish generation by generation, so $N_g$ copies contribute $N_g$ times zero. **The algebra does not fix the number of generations**, because it has no index, no internal space, and no dynamics, and its modules admit any multiplicity.
 
 The constraints that do touch the number are inherited from the Standard Model: the $Z$-boson invisible width measures $N_\nu=2.984\pm0.008$, giving three light generations, and the existence of a CP-violating Kobayashi–Maskawa phase requires $N_g\ge3$, since the number of physical mixing phases is $(N_g-1)(N_g-2)/2$ and vanishes for $N_g\le2$; the total number of mixing parameters is $(N_g-1)^2$. The framework's three imaginary units $\vec e_x,\vec e_y,\vec e_z$ are the spatial and $\mathrm{SU}(2)$ directions and transform as a Lorentz vector; they cannot be identified with the three generations, whose labels must be inert under the Lorentz group. Two constructions outside the algebra do produce a three, and neither derives it: the octonionic chain algebra gives three colour-multiplet pairs in a decomposition of a larger carrier, and the exceptional groups give either three $SU(3)$ gauge factors (trinification) or three copies of the $\mathbf{27}$ in the decomposition of the $E_8$ adjoint, with the generation content inserted by hand and the chiral embedding closed by Distler and Garibaldi. In both cases the three is read from, or chosen within, a larger structure. The framework accommodates the three observed generations; it does not explain them, and stating that clearly is the article's result.
 
@@ -271,9 +271,9 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $S=\mathbb{C}^2=(\tfrac12,0)$ | The algebra's irrep; left-handed Weyl module |
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) space |
-| $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
+| $\mathcal{S}_{\mathrm{rep}}\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $\tilde Q\cdot(\tilde{Ξ}_{\mathrm{sp}}\otimes f)=(\tilde Q\tilde{Ξ}_{\mathrm{sp}})\otimes f$ | Algebra acts trivially on $\mathcal{F}$ |
-| $I_\Delta\otimes M$, $M\in M_{N_g}(\mathbb{C})$ | Flavour operators (masses, mixing) |
+| $I_{\\mathcal{S}_{\\mathrm{rep}}}\otimes M$, $M\in M_{N_g}(\mathbb{C})$ | Flavour operators (masses, mixing) |
 | $N_g$ | Number of generations; the multiplicity of $\Delta$ |
 | $\sum Y=0,\ \sum Y^3=0,\ \sum YT_3^2=0$ | Anomaly conditions, each generation-independent |
 | $\frac{N_g(N_g-1)}{2}$, $\frac{(N_g-1)(N_g-2)}{2}$ | Mixing angles; CP-violating phases |

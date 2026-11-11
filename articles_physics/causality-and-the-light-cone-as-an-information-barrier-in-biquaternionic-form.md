@@ -32,15 +32,15 @@ $$
 with $r'_t, r_x, r_y, r_z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde R_\Phi \in \mathbb{B}_{\Phi}$. The displacement from an event $p$ to an event $q$ is
 
 $$
-\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\delta r'_t\,e_t + \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad
-\delta r'_t = r'_{t,q} - r'_{t,p}, \quad \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z - (x_p\,\vec e_x+y_p\,\vec e_y+z_p\,\vec e_z),
+\delta r'_t = r'_{t,q} - r'_{t,p}, \quad \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z - (x_p\,\vec e_x+y_p\,\vec e_y+z_p\,\vec e_z),
 $$
 
 and its biquaternion norm is the invariant interval
 
 $$
-\boxed{\;\langle\tilde{Q}_{qp}\rangle_{\natural} = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\delta r'_t)^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2 = -c^2(\delta r'_t)^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2\;}
+\boxed{\;\langle\tilde{Q}_{qp}\rangle_{\natural} = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\delta r'_t)^2 + |\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2 = -c^2(\delta r'_t)^2 + |\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2\;}
 $$
 
 The minus sign in the time–time term is the algebraic consequence of $i^2 = -1$; it is not an independent postulate of the metric. The time orientation of the displacement is carried by the scalar projection,
@@ -168,7 +168,7 @@ $$
 
 while the scalar coefficient has $\alpha_1 + \alpha_2 > 0$, so the sum is future-directed. Hence the sum of two future-directed nonspacelike displacements is future-directed nonspacelike: if $p \preceq q$ and $q \preceq r$, then $p \preceq r$ and the causal order is transitive. Equality $\langle\tilde{Q}_1+\tilde{Q}_2\rangle_{\natural} = 0$ occurs only when both displacements are null and their spatial parts are parallel and equally oriented, so that the relay is itself a light signal; two null displacements in non-parallel or oppositely oriented directions sum to a strictly timelike one.
 
-The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\delta r'_t \ge 0$ and $\delta r'_t \le 0$, so $\delta r'_t = 0$, and $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ then gives $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| \le 0$, hence $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
+The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\delta r'_t \ge 0$ and $\delta r'_t \le 0$, so $\delta r'_t = 0$, and $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ then gives $|\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| \le 0$, hence $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
 
 ## The Relative-Velocity Barrier
 
@@ -355,7 +355,7 @@ $J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and 
 
 The information-theoretic content is the following pair of statements.
 
-**What can be exchanged.** A signal emitted at $p$ can be received exactly at the events of $J^+(p)$. Within that set the delay is bounded below by the straight-line light travel time, $\delta r'_t \ge |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|/c$, with equality exactly for a null displacement. For two events in $J^+(p)$ the relay of the transitivity section shows that a chain of causal segments is again a causal segment, so the reachable set is closed under relays. Nothing in this statement distinguishes one interaction from another: the reachable set is fixed by the causal order alone.
+**What can be exchanged.** A signal emitted at $p$ can be received exactly at the events of $J^+(p)$. Within that set the delay is bounded below by the straight-line light travel time, $\delta r'_t \ge |\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|/c$, with equality exactly for a null displacement. For two events in $J^+(p)$ the relay of the transitivity section shows that a chain of causal segments is again a causal segment, so the reachable set is closed under relays. Nothing in this statement distinguishes one interaction from another: the reachable set is fixed by the causal order alone.
 
 **What cannot be exchanged.** No admissible signal connects $p$ to any event of $E(p)$. A process that starts inside the cone and is built from continuous causal steps remains inside the cone, as the connectivity and invariance arguments of the preceding sections show, so it cannot arrive at a spacelike-separated event. Equivalently, an influence that reached $E(p)$ would have to leave the cone at some intermediate event, which is the negation of the causal postulate.
 
@@ -381,7 +381,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The causal structure of the material sector $\mathbb{B}_{\Phi}$ is the structure of the biquaternion norm $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ and of its vanishing set, the light cone.
 
-1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the interval is $\langle\tilde{Q}_{qp}\rangle_{\natural} = -c^2(\delta r'_t)^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
+1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\delta r'_t\,e_t + \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the interval is $\langle\tilde{Q}_{qp}\rangle_{\natural} = -c^2(\delta r'_t)^2 + |\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
 
 2. **The causal order.** The relation $p \preceq q$, defined by $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ with $\delta r'_t \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $\langle\cdot\rangle_{\natural}$ only for null segments that are parallel and equally oriented.
 

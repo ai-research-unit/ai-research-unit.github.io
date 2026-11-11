@@ -214,14 +214,14 @@ Two things are easily confused: an element that is anti-Hermitian, and a probabi
 **The fall is real, and the exponential is only a window on it.** *The Unstable State and the Complex Energy Pole* states the exact short-time law,
 
 $$
-P(r'_t)=1-\frac{\Delta^{2}\,\tilde{H}_{\Psi}^{2}}{\hbar^{2}}{r'_{t}}^{2}+O({r'_{t}}^{4}),
+P(r'_t)=1-\frac{\delta^{2}\,\tilde{H}_{\Psi}^{2}}{\hbar^{2}}{r'_{t}}^{2}+O({r'_{t}}^{4}),
 $$
 
 so the survival probability starts from one with zero slope, and no exponential can reproduce that: $\exp(-\gamma r'_t)$ starts with slope $-\gamma$. The fall has three regimes, and only the middle one is exponential.
 
 | regime | law | where it holds |
 | --- | --- | --- |
-| early | $P=1-(\Delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$ | ${r'_t}\ll\frac{\hbar}{\Delta\,\tilde{H}_{\Psi}}$ |
+| early | $P=1-(\delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$ | ${r'_t}\ll\frac{\hbar}{\Delta\,\tilde{H}_{\Psi}}$ |
 | intermediate | $\exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c})$, as a fit | long against the inverse spectral width of the continuum, short against the onset of the long-time deviation |
 | late | a power law set by the density of states at the band edge, slower than exponential | beyond the window |
 
@@ -274,7 +274,7 @@ $$
 and when the eliminated slot holds a continuum the self-energy is complex,
 
 $$
-\Sigma_{\mathrm{nc}}(E+i0^{+})=\Delta(E)-\tfrac{i}{2}\,\Gamma(E),
+\Sigma_{\mathrm{nc}}(E+i0^{+})=\mathcal{E}_{\mathrm{shift}}(E)-\tfrac{i}{2}\,\Gamma(E),
 \qquad
 \Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)\ge0 .
 $$
@@ -771,7 +771,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | the norm of the exponential is fixed by three numbers | established | the law of *Relations between the Biquaternion Exponential and the Fourier Kernel*; checked to $1.4\times10^{-15}$ |
 | the two sectors meet the discriminant locus only diabolically | corpus result | $B^2=\sum_\eta Q_\eta^2\ge0$ for a real vector part, $-\sum_\eta q_\eta^2\le0$ for a Hermitian element; 100 draws, $\operatorname{Im}B^2=0$ |
 | a survival probability can fall while the total is conserved | established | band model, 2000 levels: $P_0$ falls $1\to0.135$, total norm $1.000000000$; checked |
-| the survival probability leaves one quadratically | corpus result | $P=1-\frac{\Delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r_t^{\prime 2}=0.800$ vs $g^2N=0.8$ |
+| the survival probability leaves one quadratically | corpus result | $P=1-\frac{\delta^{2}\,\tilde{H}_{\Psi}^{2}\,{r'_{t}}^{2}}{\hbar^{2}}+O(r'^4_t)$; band model $(1-P)/r_t^{\prime 2}=0.800$ vs $g^2N=0.8$ |
 | the exponential is an intermediate-time fit, not the law | corpus result | quadratic start, power-law tail; deficit ratio $6287$ at $r'_t=10^{-4}$ |
 | the width is the imaginary part of the central self-energy | corpus result | *The Unstable State and the Complex Energy Pole* |
 | in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde H_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde H_\Psi$; checked |

@@ -234,7 +234,7 @@ The masses follow from the differences alone once the lightest is fixed, which i
 | Tritium $\beta$ decay (KATRIN) | $m_\beta=\sqrt{\sum\lvert U_{ei}\rvert^2m_i^2}$ | $<0.8$ eV | The absolute scale, if degenerate |
 | Neutrinoless $\beta\beta$ | $m_{\beta\beta}=\lvert\sum U_{ei}^2m_i\rvert$ | $<0.03$–$0.16$ eV (isotope dependent) | **Majorana nature**, and the ordering |
 
-**Why the ordering matters to the corpus.** It is the difference between two theories' predictions for a number the framework does not contain. Neither ordering is preferred by any principle in the algebra, and the weak current preference for the normal ordering ($\Delta\chi^2\approx2.7$) is a fit result and not a discovery. The article states the preference and states its weakness, because a $2.7$ is not evidence.
+**Why the ordering matters to the corpus.** It is the difference between two theories' predictions for a number the framework does not contain. Neither ordering is preferred by any principle in the algebra, and the weak current preference for the normal ordering ($\delta\chi^2\approx2.7$) is a fit result and not a discovery. The article states the preference and states its weakness, because a $2.7$ is not evidence.
 
 **Why the absolute scale is a separate question.** Neutrino oscillation determines differences to a few per cent and the absolute scale not at all. The cosmological bound is now within a factor of two of the normal-ordering sum, so the next generation of surveys will either measure the sum or exclude the inverted ordering, and that is the most consequential near-term test in the sector.
 

@@ -91,7 +91,7 @@ $$
 \tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar},
 $$
 
-because $\hbar\,\mathrm{Sc}(\tilde K_{\Phi}\,d\tilde R_{\Phi}^{\natural})=\hbar\left(-k_{t}^{\prime}\,dr'_t+\vec k_\Phi\cdot d\vec r\right)=-E\,dr'_t/c+\vec p\cdot d\vec r=\vec p\cdot d\vec r-E\,dt$, which is the Lagrangian reading of the action. One step of the path therefore contributes $\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\,\Delta\tilde R_{\Phi}^{\natural})\big)$, the same central phase the plane-wave articles write, and the division by $\hbar$ is spent once — in the definition of $\tilde K_{\Phi}$ — so no $\hbar$ survives in the exponent.
+because $\hbar\,\mathrm{Sc}(\tilde K_{\Phi}\,d\tilde R_{\Phi}^{\natural})=\hbar\left(-k_{t}^{\prime}\,dr'_t+\vec k_\Phi\cdot d\vec r\right)=-E\,dr'_t/c+\vec p\cdot d\vec r=\vec p\cdot d\vec r-E\,dt$, which is the Lagrangian reading of the action. One step of the path therefore contributes $\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\,\delta\tilde R_{\Phi}^{\natural})\big)$, the same central phase the plane-wave articles write, and the division by $\hbar$ is spent once — in the definition of $\tilde K_{\Phi}$ — so no $\hbar$ survives in the exponent.
 
 It lies along the imaginary-scalar direction that the framework writes as $i r'_t$. This is the same direction in which the companion article on the Feynman propagator locates the deformation $-i\epsilon\,e_t$, and it is the direction the companion article on the Wick rotation relabels as real. The three are the same algebraic object seen in three problems.
 

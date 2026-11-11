@@ -171,7 +171,7 @@ $$
 \mathcal{E}_{\vec u} : \tilde{Ϛ}_{\Psi,D} \longmapsto \tilde\Pi_1(\vec u),
 $$
 
-the non-unital channel of the companion article *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*, whose entropy debit on the memory is $\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi,D})$ and whose material cost is at least $k_BT\,\mathcal{S}(\tilde{Ϛ}_{\Psi,D})$. For the ideal demon the record is a full bit, $\mathcal{S}(\tilde{Ϛ}_{\Psi,D}) = \log 2$, so
+the non-unital channel of the companion article *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*, whose entropy debit on the memory is $\delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi,D})$ and whose material cost is at least $k_BT\,\mathcal{S}(\tilde{Ϛ}_{\Psi,D})$. For the ideal demon the record is a full bit, $\mathcal{S}(\tilde{Ϛ}_{\Psi,D}) = \log 2$, so
 
 $$
 \boxed{\;W_{\rm erase} \;\ge\; k_BT\log 2\;}.

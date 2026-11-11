@@ -25,7 +25,7 @@ The quark $\psi_f$ is a colour triplet, one per flavour $f$; the gluon $G^a_\mu$
 | $R=\sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)$ | $N_c\sum_fQ_f^2$ | $11/3$ above the bottom threshold, against $3.9$ measured |
 | $\Gamma(\pi^0\to\gamma\gamma)$ | $N_c^2$ | $7.8$ eV, against $7.6$ eV predicted for $N_c=3$ |
 | $\Gamma(Z\to\text{hadrons})/\Gamma(Z\to\ell^+\ell^-)$ | $N_c$ | $20.77$, the factor three times the coupling ratio |
-| Existence of $\Delta^{++}$ and $\Omega^-$ | rank of the antisymmetric invariant | three quarks in a totally antisymmetric colour state |
+| Existence of $\mathcal{B}^{++}$ and $\Omega^-$ | rank of the antisymmetric invariant | three quarks in a totally antisymmetric colour state |
 
 **The $R$ ratio, written out.** The cross section into hadrons is the cross section into quarks, and each quark flavour contributes its charge squared times the number of colour states,
 
@@ -35,7 +35,7 @@ $$
 
 so that $R=2$ below the charm threshold, $10/3$ below the bottom, $11/3$ below the top and $5$ above it. The measured values follow this staircase, with a residual excess of order $\alpha_s/\pi$: at $34$ GeV the parton-model $11/3=3.67$ becomes $3.8$ once the first-order correction is included, against $3.9$ measured.
 
-**Counting versus structure.** The first three measurements count colour states, and each would move if the count were four: $R$ would be $4\sum_fQ_f^2$ and the $Z$ hadronic width larger by a third, and both are excluded. The fourth measurement does something different. A baryon is a colour singlet, and the only invariant tensor available to build one from $N_c$ triplets is the totally antisymmetric $\epsilon$ of rank $N_c$. The $\Delta^{++}$ is $uuu$ with $J=3/2$ and zero orbital angular momentum, so its spin–flavour wavefunction is totally symmetric, and Fermi statistics forces its colour wavefunction to be totally antisymmetric. A totally antisymmetric three-index invariant exists only for $N_c=3$. The particle's existence is therefore the statement that the antisymmetriser has exactly three slots.
+**Counting versus structure.** The first three measurements count colour states, and each would move if the count were four: $R$ would be $4\sum_fQ_f^2$ and the $Z$ hadronic width larger by a third, and both are excluded. The fourth measurement does something different. A baryon is a colour singlet, and the only invariant tensor available to build one from $N_c$ triplets is the totally antisymmetric $\epsilon$ of rank $N_c$. The $\mathcal{B}^{++}$ is $uuu$ with $J=3/2$ and zero orbital angular momentum, so its spin–flavour wavefunction is totally symmetric, and Fermi statistics forces its colour wavefunction to be totally antisymmetric. A totally antisymmetric three-index invariant exists only for $N_c=3$. The particle's existence is therefore the statement that the antisymmetriser has exactly three slots.
 
 **The empirical status.** $N_c=3$ is measured. No argument in this corpus produces the number, and [the QCD agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) records it as a *no route yet* item, not as a derivation with a missing step.
 
@@ -381,7 +381,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $Q_f$ | Electric charge of flavour $f$, in units of $e$ |
 | $b_0$ | One-loop coefficient of the beta function, $b_0=\frac{11}{3}C_A-\frac43T_RN_f$ |
 | $\epsilon_{abc}$ | The totally antisymmetric rank-$N_c$ invariant; the only colour singlet in $\mathbf{3}^{\otimes N_c}$ |
-| $J$ | Spin of a hadron, $J=3/2$ for the $\Delta^{++}$ and the $\Omega^-$ |
+| $J$ | Spin of a hadron, $J=3/2$ for the $\mathcal{B}^{++}$ and the $\Omega^-$ |
 | $\kappa$ | Generator rescaling $T^a\to\kappa T^a$, under which $T_R\to\kappa^2T_R$ |
 | $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{L}_{cG}$ | Gauge-fixing term and ghost–gluon interaction of the Lagrangian display |
 

@@ -249,7 +249,7 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 | 1, the algebra | $\flat=-{}^{*}$ | $\mathbb{B}$, real dim $8$ | the algebra's real structure, fixed space $\mathbb{B}_{\Phi}$; the **shape** of a charge-conjugation pairing |
 | 2, the operators | $F\mapsto\eta_C F^{\dagger}\eta_C^{-1}$ | $\operatorname{End}(\mathbb{B})$ | the charge-conjugation **pseudoautomorphism**: an antiautomorphism of the operator algebra, twisted by the inner conjugation by $\eta_C$; it acts on the slots of an operator and not on a field |
 | 3, the field | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$ | $\Delta$ | **charge conjugation**; the particle–antiparticle operation, $\mathcal{C}^{2}=1$, built on the basis operator that exchanges the two values |
-| 4, the module real structure | $\bar{\cdot}$ | $\Delta\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{B}_{H}$ |
+| 4, the module real structure | $\bar{\cdot}$ | $\mathcal{S}_{\mathrm{rep}}\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{B}_{H}$ |
 
 The squares are where the signs live, and the two signs belong to two *realizations* of one operation. The corpus keeps the name $\eta$ for the transposed realization and $\mathcal{C}$ for the operation, and that is the naming used here. The **transposed** realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, read with the multiplier on the right; its square is read off in one line, using $\vec e_x^{2}=-e_t$:
 

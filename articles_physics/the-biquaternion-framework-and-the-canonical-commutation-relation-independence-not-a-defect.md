@@ -95,13 +95,13 @@ the bracket of internal rotations, verified on the matrix model. The algebra the
 
 **Rotation, not translation.** The bracket of $\mathbb{B}_{\Psi}$ closes on the rotation generators because internal structure rotates. It does not close on translation generators because internal structure has no space in which to translate. This is the sharpest way to put the distinction: **the framework holds the bracket of the compact group and not the bracket of the non-compact one.** The canonical relation is the algebra of the translation group, and the translation group is where the continuum enters.
 
-**The uncertainty relation the bracket implies.** A commutator that does not vanish is not a bookkeeping fact: it bounds how sharp two observables can be at once, and the bound is available inside a finite algebra. For Hermitian $A$ and $B$ in $\mathbb{B}_{\Psi}$ and any state, with $\delta A=A-\langle A\rangle$ and $(\Delta A)^2=\langle\delta A^2\rangle$, the Robertson–Schrödinger inequality reads
+**The uncertainty relation the bracket implies.** A commutator that does not vanish is not a bookkeeping fact: it bounds how sharp two observables can be at once, and the bound is available inside a finite algebra. For Hermitian $A$ and $B$ in $\mathbb{B}_{\Psi}$ and any state, with $\delta A=A-\langle A\rangle$ and $(\delta A)^2=\langle\delta A^2\rangle$, the Robertson–Schrödinger inequality reads
 $$
-(\Delta A)^2(\Delta B)^2\ \ge\ \tfrac14\bigl\lvert\langle[A,B]\rangle\bigr\rvert^2+\tfrac14\bigl\lvert\langle\{\delta A,\delta B\}\rangle\bigr\rvert^2 .
+(\delta A)^2(\delta B)^2\ \ge\ \tfrac14\bigl\lvert\langle[A,B]\rangle\bigr\rvert^2+\tfrac14\bigl\lvert\langle\{\delta A,\delta B\}\rangle\bigr\rvert^2 .
 $$
 The proof is Cauchy–Schwarz and it is two lines. Cauchy–Schwarz gives $\lVert\delta A\psi\rVert^2\lVert\delta B\psi\rVert^2\ge\lvert\langle\delta A\psi\,|\,\delta B\psi\rangle\rvert^2$, and the splitting $\delta A\,\delta B=\tfrac12\{\delta A,\delta B\}+\tfrac12[\delta A,\delta B]$ separates that inner product into a real part and an imaginary part. Each squared part is dominated by the modulus, and the inequality follows. The commutator term is fixed by the algebra alone; the anticommutator term depends on the state and vanishes on the eigenstates of the third observable of the pair.
 
-**The spin pair satisfies it exactly.** On an eigenstate of $\tilde S_{\Psi,3}$ one has $\langle\tilde S_{\Psi,1}\rangle=\langle\tilde S_{\Psi,2}\rangle=0$ and, from the Casimir $\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2=\hbar^{2}\,s\,(s+1)\,e_{t}$, the variance $(\Delta\tilde S_{\Psi,1})^2=(\Delta\tilde S_{\Psi,2})^2=\frac{\hbar^{2}}{2}\bigl(s(s+1)-m^2\bigr)$. The commutator has expectation $\langle[\tilde S_{\Psi,1},\tilde S_{\Psi,2}]\rangle=i\,\hbar^{2}\,m$, and the anticommutator vanishes: $\tilde S_{\Psi,1}\tilde S_{\Psi,2}+\tilde S_{\Psi,2}\tilde S_{\Psi,1}=0$ for distinct indices, because $i\vec e_x$ and $i\vec e_y$ anticommute. The inequality becomes
+**The spin pair satisfies it exactly.** On an eigenstate of $\tilde S_{\Psi,3}$ one has $\langle\tilde S_{\Psi,1}\rangle=\langle\tilde S_{\Psi,2}\rangle=0$ and, from the Casimir $\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2=\hbar^{2}\,s\,(s+1)\,e_{t}$, the variance $(\delta\tilde S_{\Psi,1})^2=(\delta\tilde S_{\Psi,2})^2=\frac{\hbar^{2}}{2}\bigl(s(s+1)-m^2\bigr)$. The commutator has expectation $\langle[\tilde S_{\Psi,1},\tilde S_{\Psi,2}]\rangle=i\,\hbar^{2}\,m$, and the anticommutator vanishes: $\tilde S_{\Psi,1}\tilde S_{\Psi,2}+\tilde S_{\Psi,2}\tilde S_{\Psi,1}=0$ for distinct indices, because $i\vec e_x$ and $i\vec e_y$ anticommute. The inequality becomes
 $$
 \bigl(s(s+1)-m^2\bigr)^2\ \ge\ m^2 ,
 $$
@@ -245,8 +245,8 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\,\hbar\,\alpha\,\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $[Q,P^n]=i\,\hbar\,nP^{n-1}$ | the identity behind the boundedness obstruction; the case $m=1$ of McCoy's formula |
 | $\lVert Q\rVert$, $\lVert P\rVert$ | operator norms |
-| $\delta A=A-\langle A\rangle$, $(\Delta A)^2=\langle\delta A^2\rangle$ | centred observable and its variance in a state |
-| $(\Delta A)^2(\Delta B)^2\ge\tfrac14\lvert\langle[A,B]\rangle\rvert^2+\tfrac14\lvert\langle\{\delta A,\delta B\}\rangle\rvert^2$ | Robertson–Schrödinger inequality |
+| $\delta A=A-\langle A\rangle$, $(\delta A)^2=\langle\delta A^2\rangle$ | centred observable and its variance in a state |
+| $(\delta A)^2(\delta B)^2\ge\tfrac14\lvert\langle[A,B]\rangle\rvert^2+\tfrac14\lvert\langle\{\delta A,\delta B\}\rangle\rvert^2$ | Robertson–Schrödinger inequality |
 | $s$, $m$, $\hbar^{2}\,s\,(s+1)$ | spin label, magnetic label, and the value of the Casimir $\tilde S_{\Psi,1}^2+\tilde S_{\Psi,2}^2+\tilde S_{\Psi,3}^2$ |
 | $|x\rangle$, $\langle x|x_2\rangle=\delta(x-x_2)$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
 | $\tilde{S}_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | Spin (rotation) generators in $\mathbb{B}_{\Psi}$ |

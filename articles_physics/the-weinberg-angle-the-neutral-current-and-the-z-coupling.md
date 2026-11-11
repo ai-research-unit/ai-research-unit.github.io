@@ -239,7 +239,7 @@ $$
 | $\overline{\mathrm{MS}}$ at $M_Z$ | the coupling ratio in modified minimal subtraction | $0.23122$ |
 | effective leptonic | from $A_{FB}^{0,\ell}$ and $A_{LR}$ | $0.23148$ |
 
-**Why the on-shell one is smallest, and by how much.** The on-shell angle is built from two masses, and the relation that ties those masses to the couplings — $\sin^2\theta_W\cos^2\theta_W=\pi\alpha/(\sqrt2\,G_FM_Z^2)\cdot1/(1-\Delta r)$, the next paragraph's equation — carries the electric charge at zero momentum transfer, $\alpha(0)=1/137.036$, with the hadronic vacuum polarisation pushed into $\Delta r$. The $\overline{\mathrm{MS}}$ angle instead absorbs that polarisation into a running coupling, $\alpha(M_Z)=1/127.95$. The ratio is
+**Why the on-shell one is smallest, and by how much.** The on-shell angle is built from two masses, and the relation that ties those masses to the couplings — $\sin^2\theta_W\cos^2\theta_W=\pi\alpha/(\sqrt2\,G_FM_Z^2)\cdot1/(1-\delta r)$, the next paragraph's equation — carries the electric charge at zero momentum transfer, $\alpha(0)=1/137.036$, with the hadronic vacuum polarisation pushed into $\delta r$. The $\overline{\mathrm{MS}}$ angle instead absorbs that polarisation into a running coupling, $\alpha(M_Z)=1/127.95$. The ratio is
 
 $$
 \kappa_{\mathrm{OS}}\equiv\frac{\sin^2\theta_{\mathrm{OS}}}{\sin^2\theta_{\overline{\mathrm{MS}}}}=\frac{0.22305}{0.23122}=0.9647 ,
@@ -249,15 +249,15 @@ so the on-shell angle is $3.5$ per cent smaller. The quantity to compare is not 
 
 **The two effects, and why their sum is smaller than either.** The two definitions sit on different couplings, the on-shell one on $\alpha(0)$ and the $\overline{\mathrm{MS}}$ one on $\alpha(M_Z)$; the running of $\alpha$ is the obvious suspect, and it is not the whole story. Its ratio is $0.9337$, so running alone would give a product ratio of $0.9337$ and an on-shell angle of $0.2101$, nine per cent below the $\overline{\mathrm{MS}}$ value. The observed product ratio is $0.97492$, which is $0.9337\times1.0441$: the corrections that differ between the two schemes push the other way and recover four and a half per cent of the nine. What survives is the $3.5$ per cent of $\kappa_{\mathrm{OS}}$, and the honest description of $\kappa_{\mathrm{OS}}$ is a cancellation of a nine per cent effect against a four per cent one, not the size of either.
 
-**And the running is not mostly hadronic.** Within $\Delta\alpha=\Delta\alpha_{\mathrm{lep}}+\Delta\alpha_{\mathrm{had}}^{(5)}+\cdots$, the leptonic piece is $0.0315$ and the hadronic $0.0277$, so the hadronic vacuum polarisation is the *smaller* of the two large terms; what distinguishes it is not its size but its uncertainty, which is what limits the prediction of $M_W$ and what makes $\alpha(M_Z)$ the least sharp of the three inputs to $\Delta r$. The phrase to keep is therefore not *dominated by* but *limited by*: the running is the largest effect on $\kappa_{\mathrm{OS}}$, and its hadronic part is the least known.
+**And the running is not mostly hadronic.** Within $\delta\alpha=\delta\alpha_{\mathrm{lep}}+\delta\alpha_{\mathrm{had}}^{(5)}+\cdots$, the leptonic piece is $0.0315$ and the hadronic $0.0277$, so the hadronic vacuum polarisation is the *smaller* of the two large terms; what distinguishes it is not its size but its uncertainty, which is what limits the prediction of $M_W$ and what makes $\alpha(M_Z)$ the least sharp of the three inputs to $\delta r$. The phrase to keep is therefore not *dominated by* but *limited by*: the running is the largest effect on $\kappa_{\mathrm{OS}}$, and its hadronic part is the least known.
 
 **The relation, written once and labelled as a rewriting.** The two definitions are connected by
 
 $$
-\sin^2\theta_{\mathrm{OS}}\cos^2\theta_{\mathrm{OS}}=\frac{\pi\,\alpha(0)}{\sqrt2\,G_F\,M_Z^2}\cdot\frac{1}{1-\Delta r} ,
+\sin^2\theta_{\mathrm{OS}}\cos^2\theta_{\mathrm{OS}}=\frac{\pi\,\alpha(0)}{\sqrt2\,G_F\,M_Z^2}\cdot\frac{1}{1-\delta r} ,
 $$
 
-with $\Delta r=0.0355$ of article 4. This is not an independent prediction: $\Delta r$ was defined through the same three quantities, so the equation is the definition rearranged. Its value is that it shows how the angle's value and $\Delta r$ are two views of one number, and it shows which input carries the difference. Solving it gives $0.22305$, which is the on-shell value by construction.
+with $\delta r=0.0355$ of article 4. This is not an independent prediction: $\delta r$ was defined through the same three quantities, so the equation is the definition rearranged. Its value is that it shows how the angle's value and $\delta r$ are two views of one number, and it shows which input carries the difference. Solving it gives $0.22305$, which is the on-shell value by construction.
 
 **Why the effective one is the largest, and by very little.** The effective leptonic angle is extracted from asymmetries at the $Z$ pole, and the extraction folds in the vertex corrections and the photon–$Z$ mixing that the asymmetries actually contain. Its ratio to the $\overline{\mathrm{MS}}$ value is
 
@@ -271,7 +271,7 @@ one part in a thousand, and the sign is positive because the corrections the asy
 
 **What each is good for.** The on-shell angle is the one a tree-level calculation wants, because it is built from the masses that enter the tree Lagrangian. The $\overline{\mathrm{MS}}$ angle is the one a running coupling wants, because it is defined at a scale. The effective angle is the one an asymmetry wants, because it is what the asymmetry measures. Quoting one and comparing it with a measurement of another is a comparison of two different objects, and it is the commonest error in the literature of this sector.
 
-**The lesson for the corpus.** Every number of this sector must carry its scheme, which is why the parameter table of article 1 has a scheme column and why article 4's $\Delta r$ could not be stated without naming which $\alpha$ it used. A bare $\sin^2\theta_W=0.23$ is not a value; it is a rounding of three values.
+**The lesson for the corpus.** Every number of this sector must carry its scheme, which is why the parameter table of article 1 has a scheme column and why article 4's $\delta r$ could not be stated without naming which $\alpha$ it used. A bare $\sin^2\theta_W=0.23$ is not a value; it is a rounding of three values.
 
 ## The $Z$ Pole
 
@@ -353,7 +353,7 @@ against the measured $20.767$, $0.21629$ and $0.1721$. The $R_b$ value is the mo
 
 Twenty measurements against four parameters is five to one, and the ratio is not where the argument lives — a factor of five would not by itself be remarkable. What matters is that *any* four of the twenty fix the four parameters, and the remaining sixteen are then predictions, each with an error smaller than the effect it would have to absorb. Four parameters cannot be tuned obligingly in sixteen independent directions at once, and that is the content of the consistency: the sector is not merely over-determined but over-determined by measurements whose errors are too small to hide a change of the Lagrangian. The strongest evidence the Standard Model has is not the size of the over-determination but the impossibility of satisfying it if any of the couplings were different.
 
-**The one place the over-determination bites hardest.** The relation $M_W=M_Z\cos\theta_W$ at tree level, corrected by $\Delta r$, ties the angle to the masses. A precision measurement of $M_W$ is therefore a measurement of the radiative corrections, and a discrepancy in $M_W$ is a discrepancy in the quantum sector rather than in the tree Lagrangian. That is why the $W$ mass remains the most sensitive single number in the sector and why its measurement at the LHC and at a future $e^+e^-$ collider is a search for new physics rather than a confirmation of the old.
+**The one place the over-determination bites hardest.** The relation $M_W=M_Z\cos\theta_W$ at tree level, corrected by $\delta r$, ties the angle to the masses. A precision measurement of $M_W$ is therefore a measurement of the radiative corrections, and a discrepancy in $M_W$ is a discrepancy in the quantum sector rather than in the tree Lagrangian. That is why the $W$ mass remains the most sensitive single number in the sector and why its measurement at the LHC and at a future $e^+e^-$ collider is a search for new physics rather than a confirmation of the old.
 
 ## What the Framework Supplies
 
@@ -414,8 +414,8 @@ The framework has no route to the angle, and the corpus's agenda says so. The ob
 | $R_\ell$, $R_b$, $R_c$ | Ratios of $Z$ partial widths |
 | $R^-$ | $\tfrac12-\sin^2\theta_W$, the Paschos–Wolfenstein ratio of differences |
 | $\kappa_{\mathrm{OS}}$, $\kappa_{\mathrm{eff}}$ | $0.9647$ and $1.0011$, the ratios to the $\overline{\mathrm{MS}}$ angle |
-| $\Delta r$ | $0.0355$, the correction relating $\alpha(0)$, $G_F$, $M_W$ and the angle |
-| $\Delta\alpha$ | $1-\alpha(0)/\alpha(M_Z)=0.0663$, the running; $0.0315$ leptonic, $0.0277$ hadronic |
+| $\delta r$ | $0.0355$, the correction relating $\alpha(0)$, $G_F$, $M_W$ and the angle |
+| $\delta\alpha$ | $1-\alpha(0)/\alpha(M_Z)=0.0663$, the running; $0.0315$ leptonic, $0.0277$ hadronic |
 | $\sin^2\theta_{\mathrm{eff}}$ | The effective leptonic angle, $0.23148$ |
 | $N_\nu$ | The number of light neutrinos from the invisible width: $2.984$ published, $3.008$ from this article's tree widths |
 

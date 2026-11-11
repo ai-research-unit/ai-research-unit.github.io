@@ -152,7 +152,7 @@ where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kra
 The entropy change of the memory is the difference between the entropies of the image and the state:
 
 $$
-\Delta\mathcal{S} = \mathcal{S}\!\left(\tilde\Pi_1(\vec u)\right) - \mathcal{S}(\tilde{Ϛ}_{\Psi}) = 0 - \mathcal{S}(\tilde{Ϛ}_{\Psi}) = -\mathcal{S}(\tilde{Ϛ}_{\Psi}),
+\delta\mathcal{S} = \mathcal{S}\!\left(\tilde\Pi_1(\vec u)\right) - \mathcal{S}(\tilde{Ϛ}_{\Psi}) = 0 - \mathcal{S}(\tilde{Ϛ}_{\Psi}) = -\mathcal{S}(\tilde{Ϛ}_{\Psi}),
 $$
 
 because the erased state is pure, hence a zero divisor, hence of zero entropy. Erasure therefore removes exactly the state's entropy and nothing else. Three cases are worth isolating.
@@ -160,17 +160,17 @@ because the erased state is pure, hence a zero divisor, hence of zero entropy. E
 **A full bit.** For the maximally ignorant pointer state, $p_\pm = \tfrac{1}{2}$,
 
 $$
-\Delta\mathcal{S} = -\log 2 = -0.6931471806 ,
+\delta\mathcal{S} = -\log 2 = -0.6931471806 ,
 $$
 
 using $h(0) = \log 2$.
 
-**A biased bit.** For a classical bit with $|\vec r| = |p_+ - p_-| \ne 0$, the removal is $\Delta\mathcal{S} = -h(|\vec r|)$, less than a full bit.
+**A biased bit.** For a classical bit with $|\vec r| = |p_+ - p_-| \ne 0$, the removal is $\delta\mathcal{S} = -h(|\vec r|)$, less than a full bit.
 
 **A superposition.** For the interior state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y))$, with $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ and $|\vec r| = 1/\sqrt{2}$, the functional gives $\mathcal{S} = 0.4164955307$ and erasure to any idempotent gives
 
 $$
-\Delta\mathcal{S} = -0.4164955307 .
+\delta\mathcal{S} = -0.4164955307 .
 $$
 
 The entropy removed is the state's own, whether the state is a classical mixture or a superposition; the erasure map does not care which. Note the direction: the entropy **falls**, which is the opposite of the behavior of a coarse-graining in the companion article, where the functional is monotone increasing under the map. The difference is the non-unitality. A unital trace-preserving map cannot lower the entropy of its input; a non-unital one can, and the deficit is exported to whatever the map is coupled to. Erasure is the extreme case, in which the whole entropy of the state is removed and the whole of it must appear elsewhere.
@@ -186,19 +186,19 @@ The erasure map is a contraction with an empty spectrum: its linear part on the 
 The memory is not isolated. Its entropy change is compensated by the environment, and the second law for the pair is
 
 $$
-\Delta\mathcal{S}_{\rm info} + \Delta\mathcal{S}_{\rm env} \ge 0 ,
+\delta\mathcal{S}_{\rm info} + \delta\mathcal{S}_{\rm env} \ge 0 ,
 $$
 
-both entropies measured in nats. For erasure of a full bit, $\Delta\mathcal{S}_{\rm info} = -\log 2$, so
+both entropies measured in nats. For erasure of a full bit, $\delta\mathcal{S}_{\rm info} = -\log 2$, so
 
 $$
-\Delta\mathcal{S}_{\rm env} \ge \log 2 .
+\delta\mathcal{S}_{\rm env} \ge \log 2 .
 $$
 
 Multiplying by $k_B$ to pass to thermodynamic entropy and using the Clausius relation $\delta S_{\rm th,env} = Q/T$ gives the heat delivered to the bath,
 
 $$
-Q = k_B T\,\Delta\mathcal{S}_{\rm env} \ge k_B T \log 2 ,
+Q = k_B T\,\delta\mathcal{S}_{\rm env} \ge k_B T \log 2 ,
 $$
 
 which is Landauer's principle. The **exchange rate** is therefore $k_B T$ per nat of erased information, or $k_B T \log 2$ per bit; the heat is the material ledger's entry corresponding to the informational ledger's debit.
@@ -247,7 +247,7 @@ It is worth stating what is not claimed. The framework does not derive the Landa
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The representation of a classical bit as a diagonal state $\tilde{Ϛ}_{\Psi} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ and the identification of its entropy with the Shannon entropy of the pointer distribution; the erasure map, its idempotent and non-unital character, and its minimal Kraus rank two, with the completeness and reset identities checked in the $2\times2$ representation; the entropy debit $\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi})$ and its contrast with the monotonicity of a unital coarse-graining; the value $-\log 2$ for a full bit and the superposition value $-0.4164955307$ for the interior state $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$; the energy-carrying role of the material sector; and the sector exchange $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.
+**Derived from the algebra.** The representation of a classical bit as a diagonal state $\tilde{Ϛ}_{\Psi} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ and the identification of its entropy with the Shannon entropy of the pointer distribution; the erasure map, its idempotent and non-unital character, and its minimal Kraus rank two, with the completeness and reset identities checked in the $2\times2$ representation; the entropy debit $\delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi})$ and its contrast with the monotonicity of a unital coarse-graining; the value $-\log 2$ for a full bit and the superposition value $-0.4164955307$ for the interior state $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$; the energy-carrying role of the material sector; and the sector exchange $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$.
 
 **Imported from standard thermodynamics.** Landauer's principle and its derivation from the second law; the tightness of the bound and the refinements for correlated memories; the Clausius relation and the ideal-gas isothermal work; and the ideal-gas equation of state. These are copied from the standard literature.
 
@@ -260,10 +260,10 @@ The informational and material sectors of the framework are the two ledgers of L
 **Erasure** is the reset $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi_1(\vec u)$, a rank-two completely positive trace-preserving map and the extreme case of the irreversible class. Its entropy debit is
 
 $$
-\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi}) \qquad (\text{a full bit: } -\log 2),
+\delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi}) \qquad (\text{a full bit: } -\log 2),
 $$
 
-and the second law forces a compensating environment entropy $\Delta\mathcal{S}_{\rm env}\ge\mathcal{S}(\tilde{Ϛ}_{\Psi})$, hence a heat
+and the second law forces a compensating environment entropy $\delta\mathcal{S}_{\rm env}\ge\mathcal{S}(\tilde{Ϛ}_{\Psi})$, hence a heat
 
 $$
 \boxed{\;Q \ge k_B T\,\mathcal{S}(\tilde{Ϛ}_{\Psi}) \qquad (\text{a full bit: } k_BT\log 2)\;}.
@@ -291,7 +291,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |
 | $\mathcal{E}_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$ | Erasure map (non-unital reset) |
 | $M_{\mathrm{kraus},1}, M_{\mathrm{kraus},2}$ | Kraus operators of erasure, $\sum_a K_a^\dagger K_a = e_t$ |
-| $\Delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi})$ | Entropy debit of erasure |
+| $\delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi})$ | Entropy debit of erasure |
 | $\tilde{P}_{\Phi} = i(E/c)e_t + \vec p$ | Material four-momentum (energy-momentum) |
 | $E = -i\,c\,\mathrm{Sc}(\tilde{P}_{\Phi})$ | Energy (timelike component) |
 | $Q$, $T$, $k_B$ | Heat, temperature, Boltzmann constant |

@@ -96,7 +96,7 @@ The masses obey the tree-level relation
 $$
 \rho\equiv\frac{M_W^2}{M_Z^2\cos^2\theta_W}=1 ,
 $$
-which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\Delta r$, which is standard.
+which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\delta r$, which is standard.
 
 The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-\sum_{\mu,\nu}g_{\mu\nu}(D_\mu\xi_{\mathrm{scl}})^*(D_\nu\xi_{\mathrm{scl}})$ with $D_\mu=\partial/\partial R_\mu+i\kappa A_\mu$ and $\langle|\xi_{\mathrm{scl}}|\rangle=v/\sqrt2$, is
 $$
@@ -420,4 +420,4 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 - P. W. Higgs, "Broken symmetries and the masses of gauge bosons," *Physical Review Letters* **13** (1964) 508–509, for the mass generation mechanism.
 - G. 't Hooft, "Renormalizable Lagrangians for massive Yang–Mills fields," *Nuclear Physics B* **35** (1971) 167–188, for the renormalizability of the massive non-abelian theory.
 - Particle Data Group, R. L. Workman *et al.*, "Review of Particle Physics," *Progress of Theoretical and Experimental Physics* **2022** (2022) 083C01, for the measured masses, the mixing angle and the electroweak precision parameters.
-- W. J. Marciano and A. Sirlin, "Precise $SU(2)\times \mathrm{U}(1)$ parameters and the $Z$ mass," *Physical Review D* **22** (1980) 2695–2700, for the relation between $G_F$, $v$ and the W mass and for the radiative correction $\Delta r$.
+- W. J. Marciano and A. Sirlin, "Precise $SU(2)\times \mathrm{U}(1)$ parameters and the $Z$ mass," *Physical Review D* **22** (1980) 2695–2700, for the relation between $G_F$, $v$ and the W mass and for the radiative correction $\delta r$.

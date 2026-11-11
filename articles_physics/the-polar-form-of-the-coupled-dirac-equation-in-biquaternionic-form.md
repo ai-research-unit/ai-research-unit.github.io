@@ -251,10 +251,10 @@ One gauge-invariant number survives the shift. It is the loop integral, and it i
 
 $$
 \oint\sum_\mu\bigl(\tilde K_{\Phi,\mathrm{gco}}\bigr)_\mu\,dR_\mu
-=\Delta\alpha+\frac{ϙ}{\hbar}\oint\sum_\mu A_\mu\,dR_\mu .
+=\delta\alpha+\frac{ϙ}{\hbar}\oint\sum_\mu A_\mu\,dR_\mu .
 $$
 
-**The winding is quantised by single-valuedness.** The field returns to itself around the loop, so the word returns to itself. The scale and the boost are single-valued, and the rotor is single-valued up to sign, so the only factor that can return with an offset is the central phase: $e^{i\Delta\alpha}=1$, and $\Delta\alpha$ is a multiple of $2\pi$ for a closed path on which the rotor also returns, and a multiple of $\pi$ when it returns with the opposite sign. That parity is the rotor's sign, recorded in the preceding section. The potential's circulation is then the gauge-invariant integral less a multiple of $\pi$, which is the Aharonov–Bohm phase in the chart's language: a flux, read as the mismatch between a loop integral and a winding.
+**The winding is quantised by single-valuedness.** The field returns to itself around the loop, so the word returns to itself. The scale and the boost are single-valued, and the rotor is single-valued up to sign, so the only factor that can return with an offset is the central phase: $e^{i\delta\alpha}=1$, and $\delta\alpha$ is a multiple of $2\pi$ for a closed path on which the rotor also returns, and a multiple of $\pi$ when it returns with the opposite sign. That parity is the rotor's sign, recorded in the preceding section. The potential's circulation is then the gauge-invariant integral less a multiple of $\pi$, which is the Aharonov–Bohm phase in the chart's language: a flux, read as the mismatch between a loop integral and a winding.
 
 ## The Equation in Polar Variables
 
@@ -464,7 +464,7 @@ What the polar form does **not** add is the point of this article. It adjoins no
 
 1. **The conserved current.** The current the word supplies is $\rho\tilde V_{\Phi}$, and it is gauge invariant by construction. Whether it is conserved on solutions of the coupled pair is not settled here: its divergence is the transport equation the chart leaves open, exactly as in the free article. The algebra's own bilinear is not the current, and the exact solution that shows it lies on the cone.
 
-2. **The angle's status.** The free article asks whether the angle is observable through an interference of two branches. The coupled article settles half of it: under the local symmetry the angle is a gauge function, and only the covariant wavevector is physical. What remains is the holonomy of §*The Loop and the Angle*: whether the winding $\Delta\alpha$ has a gauge-invariant residue beyond the loop integral written there, and whether the half-turn range and the rotor's sign carry a topological reading.
+2. **The angle's status.** The free article asks whether the angle is observable through an interference of two branches. The coupled article settles half of it: under the local symmetry the angle is a gauge function, and only the covariant wavevector is physical. What remains is the holonomy of §*The Loop and the Angle*: whether the winding $\delta\alpha$ has a gauge-invariant residue beyond the loop integral written there, and whether the half-turn range and the rotor's sign carry a topological reading.
 
 3. **The connection terms.** The covariant logarithmic derivative carries a boost connection and a rotor connection, and the coupling has shifted the phase term and neither of the other two. Whether the pair of frame connections has a geometric reading — a connection on the frame bundle of the algebra, with the curvature term of the second-order equation as its field strength — is not attempted here.
 

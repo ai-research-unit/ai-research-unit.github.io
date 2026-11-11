@@ -66,7 +66,7 @@ G^{Z}=\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\xi^{0} ,
 G^{A}=\sum_\mu\frac{\partial A_\mu}{\partial R_\mu} .
 $$
 
-**What the identity does with it.** The Faddeev–Popov identity inserts unity as $1=\Delta[A]\int\mathcal{D}U\,\delta(G[A^{U}])$, and the $\delta$-functional is then traded for a Gaussian weight $-\frac{1}{2\zeta}\sum_a(G^a)^2$, which is the term displayed in the introduction. The determinant $\Delta$ that the identity produces is the ghost sector, and §*The Ghost Sector and Its Weights* writes it.
+**What the identity does with it.** The Faddeev–Popov identity inserts unity as $1=\mathcal{J}_{\mathrm{FP}}[A]\int\mathcal{D}U\,\delta(G[A^{U}])$, and the $\delta$-functional is then traded for a Gaussian weight $-\frac{1}{2\zeta}\sum_a(G^a)^2$, which is the term displayed in the introduction. The determinant $\Delta$ that the identity produces is the ghost sector, and §*The Ghost Sector and Its Weights* writes it.
 
 **Why each entry has the shape it has.** The first two are chosen, and the third is the ordinary Lorenz condition. The $-\zeta M_W\xi^a$ insertion is the one addition that the electroweak theory makes to the Yang–Mills functional of *The Yang–Mills Path Integral and the Faddeev–Popov Procedure*, and it is the whole of the difference: in the pure-gauge theory the functional is $\partial\cdot A$ alone.
 
@@ -394,7 +394,7 @@ The framework discharges the gauge-fixing row of the standard-model agenda at th
 | $M_{\xi}$ | $\sqrt{\zeta}\,M$, the Goldstone mass |
 | $M_{\mathrm{gh}}$ | The ghost mass, equal to $M_\xi$ |
 | $M_a$ | The Goldstone mass of direction $a$, entering the ghost operator |
-| $\Delta[A]$, $\det M$ | The Faddeev–Popov determinant |
+| $\mathcal{J}_{\mathrm{FP}}[A]$, $\det M$ | The Faddeev–Popov determinant |
 | $c^a$, $\bar c^{\,a}$ | Ghost and antighost, ghost numbers $+1$ and $-1$ |
 | $\Lambda$ | The Grassmann envelope's odd part |
 | $s$ | The nilpotent odd derivation, $s^2=0$ |

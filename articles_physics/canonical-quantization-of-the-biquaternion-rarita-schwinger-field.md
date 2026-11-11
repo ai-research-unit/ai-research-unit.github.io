@@ -175,7 +175,7 @@ $$
 It is antisymmetric in its three indices and vanishes when two of them coincide. The basis operators anticommute, so the six terms of the sum are one and the same element, and the display is the definition that shows the antisymmetry; when two indices coincide the terms come in cancelling pairs. Its factors are plain basis operators rather than frame basis operators, so it carries no imaginary unit: the only one in the momentum is the $i$ of the adjoint, the same single $i$ that the Dirac article's momentum carries. The canonical analysis gives the primary constraint $\pi_0\approx0$ — automatic here, since $T_{\lambda h_t\mu}$ carries the time index in its middle slot, and $\mu=t$ puts it in the last slot too — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
-\{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\xi_a\}_P\,(\Delta^{-1})_{ab}\,\{\xi_b,B\}_P ,
+\{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\xi_a\}_P\,(\mathcal{J}_{\mathrm{FP}}^{-1})_{ab}\,\{\xi_b,B\}_P ,
 \qquad
 C_{ab}=\{\xi_a,\xi_b\}_P ,
 $$

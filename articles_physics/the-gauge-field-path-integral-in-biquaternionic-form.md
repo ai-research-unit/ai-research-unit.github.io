@@ -63,19 +63,19 @@ with $A_0$ and $A_\eta$ the real component fields, the coefficients being $Q_t=i
 The Faddeev–Popov trick inserts unity into the integral in the form
 
 $$
-1 = \Delta[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\;\delta\!\left(G[\tilde{A}_{\Phi}^{\Gamma}]\right),
+1 = \mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\;\delta\!\left(G[\tilde{A}_{\Phi}^{\Gamma}]\right),
 $$
 
-where $G[\tilde{A}_{\Phi}]=0$ is the gauge-fixing condition and $\Delta[\tilde{A}_{\Phi}]$ is the Faddeev–Popov determinant, defined by this identity. The determinant depends on $\tilde{A}_{\Phi}$ in general. The crucial simplification is that it is **gauge invariant**,
+where $G[\tilde{A}_{\Phi}]=0$ is the gauge-fixing condition and $\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]$ is the Faddeev–Popov determinant, defined by this identity. The determinant depends on $\tilde{A}_{\Phi}$ in general. The crucial simplification is that it is **gauge invariant**,
 
 $$
-\Delta[\tilde{A}_{\Phi}^{\Gamma}] = \Delta[\tilde{A}_{\Phi}],
+\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}^{\Gamma}] = \mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}],
 $$
 
 because the composition of two gauge transformations is a gauge transformation. One may therefore shift the integration variable $\tilde{A}_{\Phi}\to\tilde{A}_{\Phi}^{\Gamma^{-1}}$ at fixed $\Gamma$, use the invariance of the measure and of $\Delta$ and of $S$, and obtain
 
 $$
-\boxed{\;Z = \int\mathcal{D}\tilde{A}_{\Phi}\;\Delta[\tilde{A}_{\Phi}]\;\delta\!\left(G[\tilde{A}_{\Phi}]\right)\;\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])\;},
+\boxed{\;Z = \int\mathcal{D}\tilde{A}_{\Phi}\;\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\;\delta\!\left(G[\tilde{A}_{\Phi}]\right)\;\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])\;},
 $$
 
 in which the gauge-group integral has been absorbed and only the gauge-fixed configurations contribute. This is the content of the construction: the infinite factor has been traded for a delta functional and a determinant, both of which depend on the gauge-fixing condition but neither of which depends on the volume of the gauge group.
@@ -90,10 +90,10 @@ G[\tilde{A}_{\Phi}] = \langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}
 S=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural} ,
 $$
 
-with $\omega$ a fixed function. Under a gauge transformation $S\mapsto S-\Box\Gamma$, so the condition $G[\tilde{A}_{\Phi}^\Gamma]=0$ is $S-\Box\Gamma-\omega=0$, i.e., $\Box\Gamma=S-\omega$. The Faddeev–Popov determinant is the Jacobian of the map $\Gamma\mapsto G[\tilde{A}_{\Phi}^\Gamma]$, which is the operator $-\Box$ acting on $\Gamma$; the identity $1=\Delta[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ fixes it to be the determinant of that variation, the reciprocal of the factor the delta functional alone would contribute:
+with $\omega$ a fixed function. Under a gauge transformation $S\mapsto S-\Box\Gamma$, so the condition $G[\tilde{A}_{\Phi}^\Gamma]=0$ is $S-\Box\Gamma-\omega=0$, i.e., $\Box\Gamma=S-\omega$. The Faddeev–Popov determinant is the Jacobian of the map $\Gamma\mapsto G[\tilde{A}_{\Phi}^\Gamma]$, which is the operator $-\Box$ acting on $\Gamma$; the identity $1=\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ fixes it to be the determinant of that variation, the reciprocal of the factor the delta functional alone would contribute:
 
 $$
-\boxed{\;\Delta[\tilde{A}_{\Phi}] = \det\left(\frac{\delta G[\tilde{A}_{\Phi}^\Gamma]}{\delta\Gamma}\right)
+\boxed{\;\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}] = \det\left(\frac{\delta G[\tilde{A}_{\Phi}^\Gamma]}{\delta\Gamma}\right)
 = \det\left(-\Box\right)\;},
 $$
 
@@ -133,7 +133,7 @@ $$
 so the determinant is a functional of the potential through the structure constants,
 
 $$
-\Delta[\tilde{A}_{\Phi}] = \det\left(\sum_\mu\partial/\partial R_\mu D_\mu\right),
+\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}] = \det\left(\sum_\mu\partial/\partial R_\mu D_\mu\right),
 $$
 
 and it must be represented by ghost fields: the Gaussian representation of the determinant as an integral over anticommuting $c,\bar{c}$ gives the ghost Lagrangian $-\sum_{\mu,a}\bar{c}_a\partial/\partial R_\mu(D_\mu c)_a$ of the BRST construction. The gauge algebra here is realized in the biquaternion framework by the commutator on a subspace of $\mathbb{B}_{\Psi}$, so the structure constants are those of that realization, and the field-dependence of the determinant is the statement that the gauge algebra is non-abelian. The detailed non-abelian construction — the loop expansion of the determinant, the ghost loops, the renormalization — is the subject of the companion subcategory on gauge fields, and is not repeated here.
@@ -267,7 +267,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 ## Summary
 
-The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\Delta[\tilde{A}_{\Phi}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}_{\Phi}\,\Delta[\tilde{A}_{\Phi}]\,\delta(G[\tilde{A}_{\Phi}])\,\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])$, finite and normalized.
+The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}_{\Phi}\,\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\,\delta(G[\tilde{A}_{\Phi}])\,\exp(\frac{i}{\hbar}S[\tilde{A}_{\Phi}])$, finite and normalized.
 
 In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{B}_{\Phi}$, and the gauge transformation is the gradient shift $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\Delta=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\Delta=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{B}_{\Psi}$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.
 
@@ -282,8 +282,8 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $\tilde{A}_{\Phi}^\Gamma=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, $S[\tilde{A}_{\Phi}^\Gamma]=S[\tilde{A}_{\Phi}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |
 | $G[\tilde{A}_{\Phi}]=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\omega$ | Gauge-fixing condition |
-| $1=\Delta[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ | Faddeev–Popov identity |
-| $\Delta[\tilde{A}_{\Phi}]$ | Faddeev–Popov determinant; gauge invariant |
+| $1=\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}_{\Phi}^\Gamma])$ | Faddeev–Popov identity |
+| $\mathcal{J}_{\mathrm{FP}}[\tilde{A}_{\Phi}]$ | Faddeev–Popov determinant; gauge invariant |
 | $\Delta=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |
 | $\Delta=\det(\partial\cdot D)$ (non-abelian) | Field-dependent determinant; ghosts required |
 | $(D_\mu)_{ab}=\partial/\partial R_\mu\delta_{ab}+g\sum_c f_{abc}A_{\mu c}$ | Covariant derivative in the adjoint representation |

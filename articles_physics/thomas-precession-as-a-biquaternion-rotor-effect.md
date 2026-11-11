@@ -240,7 +240,7 @@ $$
 using $\gamma^2v^{2}/c^{2}=\gamma^2-1=(\gamma-1)(\gamma+1)$. The precession is therefore **retrograde**: it is opposite in sense to the orbital motion. Over one orbit the laboratory time is $T=2\pi/\Omega$, and the frame turns through
 
 $$
-\Delta\theta_T=-(\gamma-1)\,\Omega\,T=-2\pi(\gamma-1),
+\delta\theta_T=-(\gamma-1)\,\Omega\,T=-2\pi(\gamma-1),
 $$
 
 so a full turn of the orbit advances the rest frame by $-2\pi(\gamma-1)$ radians, i.e. by $-(\gamma-1)$ of a full turn. In the non-relativistic limit $\gamma-1\approx v^{2}/2c^{2}$, and the precession is $-v^{2}/2c^{2}$ of the orbital rate: **half of the orbital rate times $v^{2}/c^{2}$, opposite in sense**. This is the kinematic content of the Thomas half, now in its exact circular form.

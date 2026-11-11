@@ -89,7 +89,7 @@ $$
 \mu^{-1}(0)/\mathrm{U}(k),
 $$
 
-realised by an explicit linear-algebra construction: from the data one forms a matrix $\Delta(x)$, linear in the quaternionic coordinate $x$, whose kernel is the relevant space; a normalised basis $v(x)$ of that kernel gives the connection through
+realised by an explicit linear-algebra construction: from the data one forms a matrix $\mathcal{A}_{\mathrm{ADHM}}(x)$, linear in the quaternionic coordinate $x$, whose kernel is the relevant space; a normalised basis $v(x)$ of that kernel gives the connection through
 
 $$
 \mathcal A_\mu \;=\; \bar v\,\partial/\partial x_\mu v ,
@@ -160,7 +160,7 @@ $$
 \mathcal A_{\mu a}(x)=2\sum_\nu\eta_{\mu\nu a}\,\frac{x_\nu}{r^2+\rho^2} ,
 $$
 
-which that article verified to be self-dual and to satisfy the equation of motion. The five moduli of the physical $k=1$ solution are recovered as the four translations of the origin, which are not part of the ADHM data at all but appear in the reconstruction from $\Delta(x)$, and the scale $\rho$, which is the datum; the three global $SU(2)$ orientations are the quotient by the global symmetry. For $k>1$ the matrices $B_1,B_2$ carry the relative positions and orientations of the individual instantons, and their non-commutativity $[B_1,B_2]$ is what the complex equation constrains.
+which that article verified to be self-dual and to satisfy the equation of motion. The five moduli of the physical $k=1$ solution are recovered as the four translations of the origin, which are not part of the ADHM data at all but appear in the reconstruction from $\mathcal{A}_{\mathrm{ADHM}}(x)$, and the scale $\rho$, which is the datum; the three global $SU(2)$ orientations are the quotient by the global symmetry. For $k>1$ the matrices $B_1,B_2$ carry the relative positions and orientations of the individual instantons, and their non-commutativity $[B_1,B_2]$ is what the complex equation constrains.
 
 This is the point at which the ADHM data and the framework meet. The relative-position matrix $B_1+iB_2$ is a complex matrix; its commutator $[B_1,B_2]$, whose vanishing would make the data simultaneously diagonalisable and the instantons independent, is precisely the quantity that a single quaternion cannot carry as a scalar. The complex equation $[B_1,B_2]+IJ=0$ is the statement that the obstruction to independence is cancelled by the boundary vectors $I$ and $J$, and it is the algebraic origin of the interaction between instantons. The biquaternion algebra accommodates the $k=1$ datum as a single $\rho$ and accommodates each $B_a$ as a complex number; the $k>1$ data require the matrix algebra $M_k(\mathbb C)\subset M_k(\mathbb B)$, which is the enlarged carrier discussed in *Grand Unification and the Biquaternion Algebra Ceiling*.
 
@@ -192,7 +192,7 @@ The ADHM construction uses three structures, and all three are the framework's.
 - **The moment map.** The ADHM equations are the vanishing of a moment map for the quaternionic action, with values in $\mathrm{U}(k)\otimes\mathrm{Im}\,\mathbb H_{\mathbb B}$. The imaginary quaternions are the pure-imaginary, anti-Hermitian part of $\mathbb H_{\mathbb B}$, i.e. exactly $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ in the framework's decomposition $\mathbb{B}_{\Phi}=\mathbb R(ie_t)\oplus\mathrm{SU}(2)$. The three real ADHM equations are therefore $\mathrm{SU}(2)$-valued, and the complex one is the complexified combination.
 - **The quotient.** The hyperkähler quotient by $\mathrm{U}(k)$ is the quotient by the compact group that the framework identifies as the maximal compact subgroup of the algebra of $k\times k$ biquaternion matrices. For $k=1$ this is the $\mathrm{U}(1)$ of the centre; for $k>1$ it is the $*$-unitary group of the enlarged carrier.
 
-What is standard and imported is equally clear. The ADHM theorem itself — existence and completeness, the bijection between the quotient and the self-dual connections, the freeness of the $\mathrm{U}(k)$ action on irreducible data, and the smoothness of the moduli space away from the reducible locus — is a theorem of analysis and algebraic geometry, cited here and not re-derived. The explicit form of the matrix $\Delta(x)$ and the proof that the reconstructed connection is self-dual are likewise standard. The physical identification of the instanton number with a tunnelling amplitude, and the semiclassical use of the moduli, belong to *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*. The framework's contribution is that the equation and its solution space are quaternionic-linear, and that the quaternion algebra of the construction is the real-quaternion subspace of $\mathbb B$ rather than an auxiliary device.
+What is standard and imported is equally clear. The ADHM theorem itself — existence and completeness, the bijection between the quotient and the self-dual connections, the freeness of the $\mathrm{U}(k)$ action on irreducible data, and the smoothness of the moduli space away from the reducible locus — is a theorem of analysis and algebraic geometry, cited here and not re-derived. The explicit form of the matrix $\mathcal{A}_{\mathrm{ADHM}}(x)$ and the proof that the reconstructed connection is self-dual are likewise standard. The physical identification of the instanton number with a tunnelling amplitude, and the semiclassical use of the moduli, belong to *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*. The framework's contribution is that the equation and its solution space are quaternionic-linear, and that the quaternion algebra of the construction is the real-quaternion subspace of $\mathbb B$ rather than an auxiliary device.
 
 ## Summary
 
@@ -226,7 +226,7 @@ Counting data, constraints and gauge redundancy gives $\dim_{\mathbb R}\mathcal 
 | $\mu_{\mathbb C}=[B_1,B_2]+IJ$ | Complex ADHM equation |
 | $\mathcal M_k=\mu^{-1}(0)/\mathrm{U}(k)$ | Instanton moduli space (hyperkähler quotient) |
 | $\dim_{\mathbb R}\mathcal M_k=8k$ | Moduli dimension; physical $8k-3$ |
-| $\Delta(x)$ | ADHM linear operator; kernel gives the connection |
+| $\mathcal{A}_{\mathrm{ADHM}}(x)$ | ADHM linear operator; kernel gives the connection |
 | $\mathcal A_\mu=\bar v\,\partial/\partial x_\mu v$ | Reconstruction of the self-dual connection |
 | $\eta_{\mu\nu a}$ | Self-dual 't Hooft symbols |
 | $a$ | colour index of the instanton connection, written low |

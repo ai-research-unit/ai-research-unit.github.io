@@ -68,7 +68,7 @@ The quarks and the gluons are established elementary particles, although they ar
 No observed elementary particle carries another spin. Four boundaries keep the table from overclaiming.
 
 - **The graviton is not observed.** Spin $2$ is the quantum of the metric deviation, constructed from the symmetric traceless square of $V$. It belongs to the tensor construction, not to $\mathbb{B}$ alone.
-- **Hadrons are composites.** The $\Delta(1232)$ and the $\Omega^-$ have spin $\tfrac32$, the tensor mesons have spin $2$, and the $N(1680)$ has spin $\tfrac52$; all are bound states of quarks and gluons, not elementary particles.
+- **Hadrons are composites.** The $\mathcal{B}(1232)$ and the $\Omega^-$ have spin $\tfrac32$, the tensor mesons have spin $2$, and the $N(1680)$ has spin $\tfrac52$; all are bound states of quarks and gluons, not elementary particles.
 - **The match is not a prediction.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and says nothing about which particle carries which spin, nor about masses, generations, charges or colours.
 - **The spin is the rotation spin.** The number $s$ is the highest weight of the spin element $\vec u\cdot\vec S=\vec{Ζ}/2$ on the carrier, the rotation generator for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(s_L,s_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
 

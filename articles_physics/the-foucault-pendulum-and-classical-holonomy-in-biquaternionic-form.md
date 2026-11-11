@@ -131,7 +131,7 @@ $$
 to machine precision, which is the statement that the ellipse of the motion returns after one fast period but rotated by the angle $-\Omega\sin\theta_{\mathrm{foc}}\,T/c$. Over one sidereal day, $T_{\text{day}} = 2\pi c/\Omega$ in the coordinate, the accumulated precession is
 
 $$
-\boxed{\;\Delta\theta = \frac{\Omega\sin\theta_{\mathrm{foc}}}{c}\cdot\frac{2\pi c}{\Omega} = 2\pi\sin\theta_{\mathrm{foc}}\;},
+\boxed{\;\delta\theta = \frac{\Omega\sin\theta_{\mathrm{foc}}}{c}\cdot\frac{2\pi c}{\Omega} = 2\pi\sin\theta_{\mathrm{foc}}\;},
 $$
 
 the Foucault angle.
@@ -314,7 +314,7 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $z = x + iy$ | Complex horizontal coordinate |
 | $r_z(r'_t) = \exp(-i\Omega\sin\theta_{\mathrm{foc}}\,r'_t/c)(A\exp(i\theta_{\mathrm{rat}})+B\exp(-i\theta_{\mathrm{rat}}))$ | Solution; envelope rotation $-\Omega\sin\theta_{\mathrm{foc}}$ |
 | $\omega^2 = \omega_0^2 + \Omega^2\sin^2\theta_{\mathrm{foc}}$ | Modified oscillation frequency |
-| $\Delta\theta = 2\pi\sin\theta_{\mathrm{foc}}$ | Foucault angle per sidereal day |
+| $\delta\theta = 2\pi\sin\theta_{\mathrm{foc}}$ | Foucault angle per sidereal day |
 | $\boldsymbol\gamma(r'_t)$ | Latitude circle on the unit sphere |
 | $\kappa_g$ | Geodesic curvature; $\oint\kappa_g\,ds = 2\pi\sin\theta_{\mathrm{foc}}$ |
 | $2\pi(1-\sin\theta_{\mathrm{foc}})$ | Enclosed solid angle; parallel-transport holonomy |

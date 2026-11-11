@@ -74,15 +74,15 @@ with $\mathrm{Vol}(\mathcal{G})$ the infinite volume of the group of gauge trans
 
 Let $G_a[\mathcal{A}]=0$ be a gauge-fixing condition, one equation for each generator, and let $\mathcal{A}^{\tilde U}$ denote the gauge transform of $\mathcal{A}$ by $\tilde U$. The Faddeev–Popov identity is
 $$
-\boxed{\;1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right)\;},
+\boxed{\;1=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\int\mathcal{D}\tilde U\;\delta\!\left(G[\mathcal{A}^{\tilde U}]\right)\;},
 $$
-which defines the determinant $\Delta[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
+which defines the determinant $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$: it is the inverse of the volume, in the space of gauge transformations, of the set that satisfies the condition, and it therefore compensates the infinite factor. The determinant is gauge invariant,
 $$
-\Delta[\mathcal{A}^{\tilde U}]=\Delta[\mathcal{A}],
+\mathcal{J}_{\mathrm{FP}}[\mathcal{A}^{\tilde U}]=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}],
 $$
 because the composition of two gauge transformations is a gauge transformation. Shifting the integration variable at fixed $\tilde U$ and using the invariance of the measure, of the action and of $\Delta$, the identity turns the integral into
 $$
-Z=\int\mathcal{D}\mathcal{A}\;\Delta[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
+Z=\int\mathcal{D}\mathcal{A}\;\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\,\delta\!\left(G[\mathcal{A}]\right)\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
 $$
 in which the orbit is represented once and the volume factor is gone. The construction is the same as the abelian one in the companion article; what changes is the value of $\Delta$.
 
@@ -94,7 +94,7 @@ $$
 \qquad
 M_{ab}=\frac{\delta G_a}{\delta\Gamma_b},
 $$
-and the determinant is $\Delta[\mathcal{A}]=\det M$. For the **Lorenz gauge** $G_a=\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}-\omega_a$, the variation is
+and the determinant is $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det M$. For the **Lorenz gauge** $G_a=\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}-\omega_a$, the variation is
 $$
 \mathcal{A}_{\mu a}\longmapsto\mathcal{A}_{\mu a}-(D_\mu\Gamma)_a ,
 \qquad
@@ -113,7 +113,7 @@ f_{abc}=2\varepsilon_{abc},
 $$
 which was verified on the defining representation, $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$ with $T_a=\tfrac12 \vec e_a$.
 
-The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\Delta[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.
+The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f_{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa \sum_c f_{abc}\partial/\partial R_\mu\,\mathcal{A}_{\mu c}$ is present, and $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M_{ab}=\delta G_a/\delta\Gamma_b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial R_\mu D_\mu)$ is this same determinant with the opposite overall sign, not a different operator.
 
 ### The Jacobi Identity and Associativity
 
@@ -131,9 +131,9 @@ The determinant that the gauge-fixing identity produces can be written as a func
 $$
 \det M=\int\prod_a d\bar c_a\,dc_a\;\exp\big(-\sum_{a,b}\bar c_a M_{ab}c_b\big),
 $$
-with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\Delta[\mathcal{A}]=\det(-\sum_\mu\partial/\partial R_\mu D_{\mu ab})$, it gives
+with $c_a,\bar c_a$ odd, $c_ac_b=-c_bc_a$, and the Gaussian integral evaluated by the same pairing that the bosonic integral uses. This is the standard device that converts a determinant into a local action, and it is the origin of the Faddeev–Popov ghosts. Applied to $\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det(-\sum_\mu\partial/\partial R_\mu D_{\mu ab})$, it gives
 $$
-\Delta[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4r\,\sum_{a,b}\bar c_a\,M_{ab}c_b\right)
+\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(i\int d^4r\,\sum_{a,b}\bar c_a\,M_{ab}c_b\right)
 =\int\mathcal{D}c\,\mathcal{D}\bar c\;\exp\!\left(iS_{\mathrm{gh}}\right),
 $$
 $$
@@ -250,9 +250,9 @@ In the framework's terms the ambiguity is a statement about the adjoint action, 
 
 ## Summary
 
-The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
+The Yang–Mills path integral is the functional integral of the companion article specialised to the non-abelian connection, and the Faddeev–Popov procedure is what makes it finite. The gauge-fixing identity $1=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ defines a determinant that is gauge invariant, and in the non-abelian theory the determinant depends on the connection through the commutator term of the adjoint covariant derivative,
 $$
-\Delta[\mathcal{A}]=\det\big(-\sum_\mu\partial/\partial R_\mu D_{\mu ab}\big),
+\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]=\det\big(-\sum_\mu\partial/\partial R_\mu D_{\mu ab}\big),
 \qquad
 D_{\mu ab}=\partial/\partial R_\mu\,\delta_{ab}-i\kappa\sum_c f_{abc}\mathcal{A}_{\mu c} ,
 $$
@@ -293,7 +293,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |
 | $\mathcal{D}\mathcal{A}=\prod_\mu\prod_a\mathcal{D}\mathcal{A}_{\mu a}$ | Measure on $\mathrm{SU}(2)$-valued configurations |
 | $G_a[\mathcal{A}]=\sum_\mu\partial/\partial R_\mu\,\mathcal{A}_{\mu a}-\omega_a$ | Lorenz gauge-fixing condition |
-| $1=\Delta[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ | Faddeev–Popov identity |
+| $1=\mathcal{J}_{\mathrm{FP}}[\mathcal{A}]\int\mathcal{D}\tilde U\,\delta(G[\mathcal{A}^{\tilde U}])$ | Faddeev–Popov identity |
 | $M_{ab}=-\sum_\mu\partial/\partial R_\mu D_{\mu ab}$ | Faddeev–Popov operator (field-dependent) |
 | $D_{\mu ab}=\partial/\partial R_\mu\,\delta_{ab}-i\kappa\sum_c f_{abc}\mathcal{A}_{\mu c}$ | Covariant derivative in the adjoint representation |
 | $c_a,\bar c_a$ | Faddeev–Popov ghost and antighost, Grassmann-odd |

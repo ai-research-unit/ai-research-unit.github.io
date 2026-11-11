@@ -8,7 +8,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 
 The article develops the following.
 
-- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $r'_{\mathrm{ret},t} = r'_t - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
+- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\delta r'_t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $r'_{\mathrm{ret},t} = r'_t - \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$, $r'_{\mathrm{adv},t} = r'_t + \vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V}_{\Phi} = d\tilde R_\Phi/d\tau$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $r'_{t,2} = (r'_{t,1}+r'_{t,3})/2$, and the distance is $L = c(r'_{t,3}-r'_{t,1})/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
@@ -25,14 +25,14 @@ The exchange discussed here is the classical exchange of signals. It is not the 
 Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = i r'_{t,A\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = i r'_{t,B\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
 
 $$
-\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\delta r'_t\,e_t + \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
-\qquad \delta r'_t = r'_{t,B} - r'_{t,A}, \quad \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z - (x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z),
+\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\delta r'_t\,e_t + \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\qquad \delta r'_t = r'_{t,B} - r'_{t,A}, \quad \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z - (x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z),
 $$
 
-with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\delta r'_t)^2 + |\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
+with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\delta r'_t)^2 + |\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
 
 $$
-\boxed{\;|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\delta r'_t,
+\boxed{\;|\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\delta r'_t,
 \qquad
 \langle\tilde{Q}_{BA}\rangle_{\natural} = 0\;}
 $$
@@ -42,7 +42,7 @@ $$
 Writing the propagation direction as the real unit vector $\vec u_{\mathrm s}$, the null condition becomes the vector equation
 
 $$
-\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\delta r'_t\,\vec u_{\mathrm s},
+\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\delta r'_t\,\vec u_{\mathrm s},
 $$
 
 the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\mathrm s}$ or along $-\vec u_{\mathrm s}$. The two directional solutions are the two sheets of the local cone, and the sign is the time orientation: with $\delta r'_t > 0$ the displacement is future-directed.
@@ -248,7 +248,7 @@ $$
 \tanh\theta_{\mathrm{rpd}} = \frac{v_b}{c},
 $$
 
-of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A}_{\Phi} = i a\,e_t + \vec A$ of $\mathbb{B}_{\Phi}$, with $a = c\,\delta r'_t$ and $\vec A = \Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
+of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A}_{\Phi} = i a\,e_t + \vec A$ of $\mathbb{B}_{\Phi}$, with $a = c\,\delta r'_t$ and $\vec A = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
 
 $$
 a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
@@ -341,7 +341,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}/c$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)| = c\,\delta r'_t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \pm c\,\delta r'_t\,\vec u_{\mathrm s}$, and the retarded coordinate $r'_{\mathrm{ret},t} = r'_t-\vec u_{\mathrm s}\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $Ξ = -\omega r'_{\mathrm{ret},t}/c$.
 
 2. **Clocks read proper time.** The proper time is $\delta\tau = \int\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dr'_t$, and the clock four-velocity is $\tilde{V}_{\Phi} = d\tilde R_\Phi/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$.
 

@@ -43,13 +43,13 @@ $$
 Now let the parameters vary slowly and periodically: $R=R(\epsilon r'_t)$ with $\epsilon\ll1$ and $R(T)=R(0)$ after a period $T$. For a time-independent $H_0$, $I$ is exactly conserved; for slowly varying parameters, the **adiabatic theorem for classical systems** states that $I$ is conserved to all orders in $\epsilon$, and the angle evolves as
 
 $$
-\theta_k(r'_t)=\theta_k(0)+\int_0^{r'_{t}}\frac{\omega_k\!\left(I,R(\epsilon\tau)\right)}{c}\,d\tau+\Delta\theta_k .
+\theta_k(r'_t)=\theta_k(0)+\int_0^{r'_{t}}\frac{\omega_k\!\left(I,R(\epsilon\tau)\right)}{c}\,d\tau+\delta\theta_k .
 $$
 
 The first two terms are dynamical: they are the phase accumulated at the instantaneous frequency. The third term is the **Hannay angle**. It is independent of the speed of the cycle to leading order, depends only on the geometric cycle of $R$, and is the classical geometric phase. Its general expression, derived by Hannay and confirmed in the examples, is
 
 $$
-\boxed{\;\Delta\theta_k=-\frac{\partial}{\partial I_k}\oint\sum_\mu\mathcal A_\mu(R)\,dR_\mu\;}
+\boxed{\;\delta\theta_k=-\frac{\partial}{\partial I_k}\oint\sum_\mu\mathcal A_\mu(R)\,dR_\mu\;}
 $$
 
 where $\mathcal A_\mu$ is the **Berry connection** of the quantum system obtained by quantising the same classical problem, and $\gamma=\oint\sum_\mu\mathcal A_\mu dR_\mu$ is the Berry phase. Hannay's angle is thus the derivative of the Berry phase with respect to the action. This is the precise sense in which the classical geometric phase is the classical counterpart of the quantum one: the classical angle is the action-derivative of the quantum phase.
@@ -140,7 +140,7 @@ $$
 It is the rate at which the geodesic frame turns about the direction relative to the frame that is carried parallel; integrating around the cycle,
 
 $$
-\boxed{\;\Delta\theta_{\mathrm{Hannay}}=-\oint\omega_b^{\parallel}\,dr'_t
+\boxed{\;\delta\theta_{\mathrm{Hannay}}=-\oint\omega_b^{\parallel}\,dr'_t
 =\oint(1-\cos\theta_0)\,d\theta_{\mathrm{azm}}
 =2\pi(1-\cos\theta_0)=\theta_{\mathrm{sol}}\;},
 $$
@@ -182,7 +182,7 @@ $$
 the area form of the unit sphere. By Stokes' theorem the holonomy of any loop is the integral of $\mathcal F$ over the enclosed region,
 
 $$
-\Delta\theta_{\mathrm{Hannay}}=\int\!\!\int_{\text{enclosed}}\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}
+\delta\theta_{\mathrm{Hannay}}=\int\!\!\int_{\text{enclosed}}\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}
 =\Omega_{\text{enclosed}} ,
 $$
 
@@ -239,7 +239,7 @@ $$
 The first term is the dynamical precession; the second is the geometric remainder. Adding the $2\pi$ by which the frame itself returns (the angle variable's natural advance over the closed parameter cycle) gives the Hannay angle
 
 $$
-\Delta\theta_{\mathrm{Hannay}}=-2\pi\cos\theta_0+2\pi=2\pi(1-\cos\theta_0)=\theta_{\mathrm{sol}} ,
+\delta\theta_{\mathrm{Hannay}}=-2\pi\cos\theta_0+2\pi=2\pi(1-\cos\theta_0)=\theta_{\mathrm{sol}} ,
 $$
 
 in agreement with the twist computation. The two computations use different methods — the exact rotating-frame solution and the holonomy of the rotor — and give the same answer.
@@ -255,7 +255,7 @@ $$
 with the sign fixed by the orientation convention; the classical vector angle is $\theta_{\mathrm{sol}}$. The two are related by the standard correspondence: the spin-$S$ coherent state has Berry phase $-S\theta_{\mathrm{sol}}$, and Hannay's angle is the derivative with respect to the action,
 
 $$
-\Delta\theta_{\mathrm{Hannay}}=-\frac{\partial}{\partial S}\left(-S\theta_{\mathrm{sol}}\right)=\theta_{\mathrm{sol}} .
+\delta\theta_{\mathrm{Hannay}}=-\frac{\partial}{\partial S}\left(-S\theta_{\mathrm{sol}}\right)=\theta_{\mathrm{sol}} .
 $$
 
 For $S=\tfrac12$ the Berry phase is $-\theta_{\mathrm{sol}}/2$, matching the companion article on the Berry phase, and the classical Hannay angle is the derivative that removes the $\tfrac12$: the classical spin knows the full solid angle, and the spinor knows half of it. This is the same factor of $2$ that appears in the rotor article as the sign $\tilde u\to-\tilde u$ at a $2\pi$ rotation.
@@ -276,18 +276,18 @@ For the adiabatic transport of a general rotor — a rigid body carried around a
 
 Hannay's angle is a property of a classical trajectory. It is measured by observing the orientation of the motion after a cycle — the plane of a pendulum's swing, the phase of a spin precessing in a slowly turned field — and it requires no measurement postulate and no state space. The connection and curvature used to compute it are the same objects that appear in the quantum theory, but that is a statement about the mathematical form of the two theories, not about their physical content: the classical angle is the integral of a one-form on the parameter space, and it is classical because the trajectory is.
 
-The one place where the quantum counterpart enters the discussion is the formula $\Delta\theta=-\partial\gamma/\partial I$, which relates the classical angle to the Berry phase of the quantised system. The formula is used as a standard result that organises the two phases; the quantum side is developed in the companion article on the Berry phase and is not repeated here.
+The one place where the quantum counterpart enters the discussion is the formula $\delta\theta=-\partial\gamma/\partial I$, which relates the classical angle to the Berry phase of the quantised system. The formula is used as a standard result that organises the two phases; the quantum side is developed in the companion article on the Berry phase and is not repeated here.
 
 ## Summary
 
 Hannay's angle is the classical geometric phase of an adiabatically cycled system, and in the biquaternion algebra it is the holonomy of the rotor that carries a fixed axis to the slowly varying direction.
 
-- Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$, the action-derivative of the Berry phase.
+- Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$, the action-derivative of the Berry phase.
 - The classical spin vector is a point of the coadjoint orbit $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dr'_t=\frac{1}{c}\,\vec\omega\times\vec S$.
 - The direction $\vec u_x=\tilde u\vec e_z\tilde u^{*}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde u_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\vec u_y$ with $\vec u_y$ in the plane perpendicular to $\vec e_z$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)d\theta_{\mathrm{azm}}/dr'_t$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dr'_t=\theta_{\mathrm{sol}}$.
-- Integrating the twist around a cycle of solid angle $\theta_{\mathrm{sol}}$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\theta_{\mathrm{sol}}$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\theta_{\mathrm{azm}}$ with curvature $\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$.
+- Integrating the twist around a cycle of solid angle $\theta_{\mathrm{sol}}$ gives Hannay's angle $\delta\theta_{\mathrm{Hannay}}=\theta_{\mathrm{sol}}$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\theta_{\mathrm{azm}}$ with curvature $\sin\theta\,d\theta\wedge d\theta_{\mathrm{azm}}$.
 - The exact rotating-frame solution of the uniformly precessing field gives the same $\theta_{\mathrm{sol}}$.
-- The spinor phase is half the classical angle, $\gamma=-\theta_{\mathrm{sol}}/2$ for spin-$\tfrac12$, the factor $2$ being the double cover $\tilde u\to-\tilde u$; the general relation is $\gamma=-S\theta_{\mathrm{sol}}$ and $\Delta\theta=-\partial/\partial S\,\gamma=\theta_{\mathrm{sol}}$.
+- The spinor phase is half the classical angle, $\gamma=-\theta_{\mathrm{sol}}/2$ for spin-$\tfrac12$, the factor $2$ being the double cover $\tilde u\to-\tilde u$; the general relation is $\gamma=-S\theta_{\mathrm{sol}}$ and $\delta\theta=-\partial/\partial S\,\gamma=\theta_{\mathrm{sol}}$.
 - The adiabatic invariant is the biquaternion norm, $S=\sqrt{\langle\tilde S_{\Psi}\rangle_{\natural}}$; the Hannay angle is the derivative of the phase with respect to it.
 
 The phase is classical: it is the holonomy of a transport on the space of directions, computed from the classical trajectory, and it needs no quantum postulate.
@@ -299,7 +299,7 @@ The phase is classical: it is the holonomy of a transport on the space of direct
 | $(\theta_k,I_k)$ | Action-angle variables |
 | $R$ | Slowly cycled parameters |
 | $\omega_k=\partial H_0/\partial I_k$ | Instantaneous frequencies |
-| $\Delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$ | Hannay's angle |
+| $\delta\theta_k=-\partial/\partial I_k\,\oint\sum_\mu\mathcal A_\mu dR_\mu$ | Hannay's angle |
 | $\mathcal A_\mu$ | Berry connection of the quantised problem |
 | $\gamma=\oint\sum_\mu\mathcal A_\mu dR_\mu$ | Berry phase (quantum counterpart) |
 | $\tilde S_{\Psi}\in\mathbb{B}_{H}\cap\mathbb{B}_{\Phi}$, $\langle\tilde S_{\Psi}\rangle_{\natural}=S^2$ | Classical spin on its coadjoint orbit |

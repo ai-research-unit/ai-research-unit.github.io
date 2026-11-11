@@ -47,7 +47,7 @@ The theorem is not an isolated statement; its consequences are the reasons it is
 - **The vacuum is entangled across every region partition.** If $\Omega$ were a product $\Omega_1\otimes\Omega_2$ across a partition $O\,|\,O_{\mathrm c}$, then a local operator supported in $O$ annihilating $\Omega_1$ would annihilate $\Omega$, contradicting separating. Applied to the split of a region from its complement, the theorem is the field-theoretic statement that the vacuum carries entanglement across every boundary.
 - **No local operator has the vacuum as an eigenstate.** If $\tilde Q_3\in\mathcal A(O)$ had $\tilde Q_3\Omega=\lambda\Omega$ with $\lambda\ne0$, then $(\tilde Q_3-\lambda)\Omega=0$ with $\tilde Q_3-\lambda\in\mathcal A(O)$, contradicting separating. No sharp local particle number, no sharp local charge, and no local projection onto the vacuum exists.
 - **Local operations cannot prepare the vacuum exactly.** By cyclicity, any vector can be approximated by $\tilde Q_3\Omega$ with $\tilde Q_3\in\mathcal A(O)$; by separating, the preparation cannot be exact for a proper region. There are states of arbitrarily large particle number in any bounded region that are not orthogonal to the vacuum.
-- **The hypothesis of modular theory.** A cyclic and separating vector is exactly what the Tomita–Takesaki theorem requires. The Reeh–Schlieder theorem therefore supplies the modular operator $\Delta$, the modular conjugation $J$, and the modular flow of a local algebra, and it is the entry point to the modular structure the companion articles treat. That the modular flow of a wedge is the boost is the Bisognano–Wichmann theorem, which is referred to here and not re-derived.
+- **The hypothesis of modular theory.** A cyclic and separating vector is exactly what the Tomita–Takesaki theorem requires. The Reeh–Schlieder theorem therefore supplies the modular operator $\mathcal{M}_{\mathrm{mod}}$, the modular conjugation $J$, and the modular flow of a local algebra, and it is the entry point to the modular structure the companion articles treat. That the modular flow of a wedge is the boost is the Bisognano–Wichmann theorem, which is referred to here and not re-derived.
 
 ## Cyclicity and Separating in the Hermitian GNS Construction
 
@@ -130,13 +130,13 @@ $$
 $$
 and the cyclic vector $\Omega_{\tilde{Ϛ}_{\Psi}}=[e_t]$ is separating as well. The Tomita–Takesaki theorem therefore applies in finite dimension, and the framework has an exact model of the Reeh–Schlieder hypothesis in which the distinguished vector is the GNS vector of a **mixed** state. The modular data are those of the modular-theory companion article, written for the state:
 $$
-\Delta\big(\tilde Q_3\big)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}},
+\mathcal{M}_{\mathrm{mod}}\big(\tilde Q_3\big)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}},
 \qquad
 J\big(\tilde Q_3\big)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde Q_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2},
 \qquad
-\Delta=S^*S,
+\mathcal{M}_{\mathrm{mod}}=S^*S,
 $$
-with $J\Delta J\Delta=1$ and $\Delta>0$, and with the modular Hamiltonian
+with $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$ and $\mathcal{M}_{\mathrm{mod}}>0$, and with the modular Hamiltonian
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}
 =-\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t-i\,\mathrm{artanh}\big(|\vec r|\big)\vec u_r
@@ -258,7 +258,7 @@ The separating property is recovered where the theorem actually lives: on the in
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ | Number operator (occupied idempotent) |
 | $a_{\mathrm{fop}}(f)=f\vec\Upsilon_x$ | Smeared annihilation operator |
 | $\{a_{\mathrm{fop}}(f),a_{\mathrm{fop}}^{\dagger}(g)\}=\langle f,g\rangle e_t$ | CAR relations |
-| $\Delta,J,\sigma_{r'_{t}}$ | Modular operator, conjugation, flow |
+| $\mathcal{M}_{\mathrm{mod}},J,\sigma_{r'_{t}}$ | Modular operator, conjugation, flow |
 | $\tilde U(x)$ | Translation operator; $\tilde Q_3(x)=\tilde U(x)\tilde Q_3 \tilde U(x)^{-1}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

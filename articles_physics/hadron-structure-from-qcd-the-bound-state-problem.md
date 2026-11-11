@@ -11,7 +11,7 @@
 - **The mass is not a sum of masses.** The current masses of the two up quarks and the down quark in the proton total $9.0$ MeV. The proton weighs $938.3$ MeV. The difference is not a correction; it is the whole phenomenon, and no accounting in terms of the Lagrangian's parameters reaches it.
 - **The mass is the trace anomaly.** A classical theory with no dimensionful parameter has a traceless energy–momentum tensor. The quantum theory does not: the trace is proportional to the beta function, and the proton's mass is the matrix element of that trace in the proton state. The coefficient that makes the coupling run is the coefficient that makes the proton heavy.
 - **The mass is therefore non-perturbative in a precise sense.** $\Lambda_{\mathrm{QCD}}$ depends on the coupling as $e^{-2\pi/b_0\alpha_s}$, which has an essential singularity at $\alpha_s=0$. No finite order, and no sum of finitely many orders, can produce it. This is why an article about the bound-state problem cannot be an article about Feynman diagrams.
-- **What "the spin of the proton" means is a decomposition, not a fact.** $\tfrac12=\tfrac12\Delta\Sigma+L_q+J_g$, and the measured $\Delta\Sigma$ is about $0.32$, so two thirds of the proton's spin is not carried by quark spin. That is a measurement, not a paradox, and the article states it as one.
+- **What "the spin of the proton" means is a decomposition, not a fact.** $\tfrac12=\tfrac12\delta\Sigma+L_q+J_g$, and the measured $\delta\Sigma$ is about $0.32$, so two thirds of the proton's spin is not carried by quark spin. That is a measurement, not a paradox, and the article states it as one.
 
 **The order.** The counting problem, then the trace anomaly and the decomposition of the mass, then the non-analyticity, then the chiral limit, then the routes to the number and which of them predict, then how the lattice computation works, then the spin decomposition, then the Bjorken sum rule as the spin analogue of the previous article's coupling determination, then what "solving" would mean, then the ledger.
 
@@ -200,21 +200,21 @@ is an identity rather than an estimate. A movement of $60$ MeV therefore says $\
 **The sum rule.** The proton has spin $\tfrac12$, and the angular momentum sum rule partitions it:
 
 $$
-\frac12=\frac12\Delta\Sigma+L_q+J_g ,
+\frac12=\frac12\delta\Sigma+L_q+J_g ,
 $$
 
-where $\Delta\Sigma=\sum_f(\Delta u_f+\Delta d_f+\delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
+where $\delta\Sigma=\sum_f(\delta u_f+\Delta d_f+\delta s_f)$ is the fraction of the proton's spin carried by quark spin, $L_q$ is the quarks' orbital angular momentum, and $J_g$ is the total angular momentum of the gluons, spin plus orbital.
 
 **The numbers.**
 
 | Quantity | Value at $Q^2\approx3$ GeV$^2$ | Share of $\tfrac12$ |
 |---|---|---|
-| $\Delta\Sigma$ | $0.32\pm0.02$ | $32\%$ |
+| $\delta\Sigma$ | $0.32\pm0.02$ | $32\%$ |
 | $J_g$ | $\approx0.25$ (DVCS and lattice) | $50\%$ |
 | $L_q$ | $\approx0.09$ (by subtraction) | $18\%$ |
 | Sum | $0.50$ | $100\%$ |
 
-**What was surprising, and what was not.** The 1988 EMC measurement found $\Delta\Sigma=0.12\pm0.09\pm0.14$, consistent with zero, which would have said that essentially none of the proton's spin is quark spin. The modern value is $0.32$: the quark spin carries about a third, the gluon and the orbital motion carry the rest. The historical episode is worth recording because the reaction to it was a category error — the sum rule was never in doubt, only the value of one of its terms, and a term of a sum rule cannot "violate" the sum rule.
+**What was surprising, and what was not.** The 1988 EMC measurement found $\delta\Sigma=0.12\pm0.09\pm0.14$, consistent with zero, which would have said that essentially none of the proton's spin is quark spin. The modern value is $0.32$: the quark spin carries about a third, the gluon and the orbital motion carry the rest. The historical episode is worth recording because the reaction to it was a category error — the sum rule was never in doubt, only the value of one of its terms, and a term of a sum rule cannot "violate" the sum rule.
 
 **Why the decomposition is hard.** $L_q$ is not directly measurable. It is defined by a matrix element of an operator whose quark–gluon separation depends on the scheme, and different decompositions — Ji's, Jaffe–Manohar's — attribute different pieces to "orbital" and "spin". The sum, $\tfrac12$, is scheme-independent; the split is not. An article that quoted $L_q=0.09$ without saying so would be over-claiming, and the number above is marked as a subtraction rather than a measurement.
 
@@ -297,7 +297,7 @@ against the predicted $0.184$. The difference of $0.008$ is the size of the high
 | $m_\pi^2f_\pi^2=-(m_u+m_d)\langle\bar qq\rangle$ | **Imported**; the numerical check in the pion article |
 | $m_N(m_\pi\to0)\approx0.88$ GeV | **Imported** lattice extrapolation |
 | The lattice computation and its error budget | **Imported**; the framework hosts the formulation |
-| $\tfrac12=\tfrac12\Delta\Sigma+L_q+J_g$ and the values | **Imported** measurements |
+| $\tfrac12=\tfrac12\delta\Sigma+L_q+J_g$ and the values | **Imported** measurements |
 | $g_A=1.2754$ and the axial charges | **Imported** |
 | The Bjorken sum rule and its series | **Imported**; the three-term table computed here |
 | The proton as an effective $\mathbb{B}$ field | **Framework**: represented, not composed |
@@ -338,7 +338,7 @@ The framework represents the proton, the condensate, the anomaly and the winding
 | $m_\pi$, $f_\pi$ | Pion mass and decay constant |
 | $\langle\bar qq\rangle$ | Chiral condensate |
 | $B_0=-\langle\bar qq\rangle/f_\pi^2$ | Condensate scale, $2.783$ GeV |
-| $\Delta\Sigma$ | Quark spin fraction, $0.32$ |
+| $\delta\Sigma$ | Quark spin fraction, $0.32$ |
 | $L_q$, $J_g$ | Quark orbital and gluon total angular momentum |
 | $g_A$ | Axial charge, $1.2754$ |
 | $\Gamma_1^{p-n}$ | First moment of $g_1^p-g_1^n$ |

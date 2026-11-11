@@ -20,7 +20,7 @@ with $v=246.22$ GeV. This article writes the mass matrix, diagonalises it, count
 
 - **The mass matrix and its trace.** In the basis $(W^1,W^2,W^3,B)$ the squared-mass matrix is one $4\times4$ object with three non-zero eigenvalues, and it obeys the trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$.
 - **Why the photon is massless, structurally.** Not because of a tuning: the eigenvalue is zero because the generator $Q=T_3+Y$ annihilates the vacuum. The zero is a consequence of the alignment of the vacuum with the charge, and it is the only reason the electromagnetic group survives.
-- **The numbers, from three independent sets of inputs.** From $g$, $g_{\mathrm Y}$ and $v$ at $M_Z$ the values are $80.24$ and $91.51$ GeV. From $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV with $\alpha$ at the Z pole and $80.94$ GeV with $\alpha$ at zero momentum, against the measured $80.377$. The two brackets miss in opposite directions by about half a GeV, and $\Delta r=0.0355$ reconciles them.
+- **The numbers, from three independent sets of inputs.** From $g$, $g_{\mathrm Y}$ and $v$ at $M_Z$ the values are $80.24$ and $91.51$ GeV. From $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV with $\alpha$ at the Z pole and $80.94$ GeV with $\alpha$ at zero momentum, against the measured $80.377$. The two brackets miss in opposite directions by about half a GeV, and $\delta r=0.0355$ reconciles them.
 
 **The order.** What the doublet must do; the potential and its minimum; the covariant derivative at the vacuum; the mass matrix; its eigenvalues and the two structural zeros; the counting of degrees of freedom; the unitary gauge and the physical spectrum; the scalar's own mass and couplings; the numbers; the $\rho$ parameter and custodial symmetry; the equivalence theorem; and the framework's position.
 
@@ -199,7 +199,7 @@ $$
 2M_W^2+M_Z^2=\frac{v^2}{4}\left(3g^2+g_{\mathrm Y}^2\right).
 $$
 
-Checked against the numbers of §*The Numbers*, the left side is $21249$ GeV$^2$ and the right side $21249$ GeV$^2$ — equal because they are the same expression rearranged, so the check is one on the arithmetic and not on the physics. The load-bearing comparison is with the measured masses: $2(80.377)^2+(91.1876)^2=21236$ GeV$^2$, so the tree sum rule overshoots the measured sum by $13$ GeV$^2$, or $0.06$ per cent, which is the size of the correction that §*The Numbers* calls $\Delta r$. The sum rule is exact at tree level and is the cheapest check on any computation of the two masses.
+Checked against the numbers of §*The Numbers*, the left side is $21249$ GeV$^2$ and the right side $21249$ GeV$^2$ — equal because they are the same expression rearranged, so the check is one on the arithmetic and not on the physics. The load-bearing comparison is with the measured masses: $2(80.377)^2+(91.1876)^2=21236$ GeV$^2$, so the tree sum rule overshoots the measured sum by $13$ GeV$^2$, or $0.06$ per cent, which is the size of the correction that §*The Numbers* calls $\delta r$. The sum rule is exact at tree level and is the cheapest check on any computation of the two masses.
 
 **The two masses in terms of one another.** With $\tan\theta_W=g_{\mathrm Y}/g$,
 
@@ -370,20 +370,20 @@ which sits $0.56$ GeV *above* the measured value. So the tree-level prediction m
 **The correction has a name and a size.** The quantity that reconciles the routes is
 
 $$
-\Delta r=1-\frac{\pi\alpha(0)}{\sqrt2\,G_F\,M_W^2\sin^2\theta_W} ,
+\delta r=1-\frac{\pi\alpha(0)}{\sqrt2\,G_F\,M_W^2\sin^2\theta_W} ,
 $$
 
 evaluated with the measured $M_W$, the on-shell $\sin^2\theta_W=1-M_W^2/M_Z^2=0.22305$ and $\alpha(0)$. It equals
 
 $$
-\Delta r=0.0355 ,
+\delta r=0.0355 ,
 $$
 
 and the two pieces of it are as large as the total. The running of the electromagnetic coupling from zero momentum to $M_Z$ contributes $+0.071$, the largest single term, and it is the piece that route B absorbs into its input. The top-quark and scalar loops contribute about $-0.033$, through $\delta\rho$ in the combination $-\tfrac{\cos^2\theta_W}{\sin^2\theta_W}\delta\rho$ with $\cos^2/\sin^2=3.48$ and $\delta\rho\approx0.0095$. The sum, $0.071-0.033=0.038$, is the $0.0355$ quoted. Neither piece is a small correction, and their near-cancellation is why the tree-level prediction is as good as it is.
 
 **Why route A lands between them.** Route A uses measured $g$, $g_{\mathrm Y}$ and $v$, all three of which are themselves extracted with radiative corrections already folded in, so its tree values $80.24$ and $91.51$ are not a pure tree-level statement. It is a consistency check on the relations $M_W=gv/2$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$, and it passes at the level of the differences between the schemes in which its inputs are defined.
 
-**The lesson, stated once.** A tree-level prediction in this sector is only as good as the definition of the couplings used to make it, and the standard practice is to quote $\Delta r$ rather than to quote a discrepancy. A reader who compares a tree-level mass with a measured one without saying which $\alpha$ was used has compared two different statements.
+**The lesson, stated once.** A tree-level prediction in this sector is only as good as the definition of the couplings used to make it, and the standard practice is to quote $\delta r$ rather than to quote a discrepancy. A reader who compares a tree-level mass with a measured one without saying which $\alpha$ was used has compared two different statements.
 
 **The scale of the breaking, from the muon lifetime.** The most precise input is $G_F$, and it fixes $v$ through
 
@@ -425,7 +425,7 @@ For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left
 
 **Why $\rho=1$ is structural.** The doublet, written as a $2\times2$ matrix $\Phi=(\tilde\varphi,\varphi)$ whose columns are the doublet and its conjugate, has a potential that depends only on $\mathrm{tr}(\Phi^\dagger\Phi)$. The potential therefore has an $SU(2)_L\times SU(2)_R$ symmetry larger than the gauged one, and the vacuum $\langle\Phi\rangle\propto\mathrm I$ breaks it to the diagonal $SU(2)_V$. That residual symmetry is **custodial**, and it is what makes the three gauge bosons' masses related.
 
-**The hypercharge breaks custodial symmetry explicitly.** The gauged hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\Delta r$.
+**The hypercharge breaks custodial symmetry explicitly.** The gauged hypercharge is the third generator of $SU(2)_R$, so switching it on distinguishes the third direction from the other two. The tree-level $\rho=1$ survives because the vacuum is custodially invariant; the breaking appears at one loop, in the difference between the $W$ and $Z$ self-energies, and it is one of the corrections inside $\delta r$.
 
 **The empirical bound, in the form that matters here.** The measured $\rho$ is unity to about four parts in $10^4$, and that number bounds any additional multiplet's vacuum expectation value. A triplet at the electroweak scale would move $\rho$ by an amount of order $v_t^2/v^2$, so the bound is a bound on $v_t/v$ of a few per cent. The doublet is not merely the simplest choice; it is the one the measurement allows at the scale of the breaking.
 
@@ -469,7 +469,7 @@ The mass matrix in the basis $(W^1,W^2,W^3,B)$ is $\tfrac{v^2}{4}$ times a block
 
 The counting balances at twelve. Before the breaking, four massless vectors give eight polarisations and the four real scalar components give four. After, the photon gives two, the three massive vectors nine and the physical scalar one. Three scalar components ceased to be independent fields and three gauge polarisations were gained, and the two events are one. In the unitary gauge the spectrum is a massless photon, a $W$ pair, a $Z$ and one scalar, with couplings $g_{hWW}=2M_W^2/v$, $g_{hZZ}=2M_Z^2/v$, $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, all fixed by the masses.
 
-Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $91.51$ GeV; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV against the measured $80.377$. Both routes miss by about half a GeV, in opposite directions, and the discrepancy is the one-loop correction: $\Delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=246.2197$ GeV, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\nu)=227$ MeV at tree level against $223$ measured.
+Numerically the sector is over-determined and the over-determination is the test. From $g$, $g_{\mathrm Y}$ and $v$ the tree masses are $80.24$ and $91.51$ GeV; from $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV against the measured $80.377$. Both routes miss by about half a GeV, in opposite directions, and the discrepancy is the one-loop correction: $\delta r=0.0355$, of which $+0.071$ is the running of $\alpha$ from zero momentum to $M_Z$ and about $-0.033$ is the top-quark and scalar loop contribution. The scale itself comes from the muon lifetime, $v=(\sqrt2G_F)^{-1/2}=246.2197$ GeV, which is the electroweak counterpart of a pion decay constant. The same three inputs give $\Gamma(W\to e\nu)=227$ MeV at tree level against $223$ measured.
 
 The $\rho$ parameter is unity by identity for a doublet and deviates for larger multiplets, through the general formula $\rho=\sum v_i^2[T_i(T_i+1)-T_{3i}^2]/\sum 2v_i^2T_{3i}^2$, which gives one half for a triplet. The identity is the visible sign of a custodial $SU(2)$ symmetry of the potential that the vacuum preserves and the hypercharge gauging breaks. The measurement of $\rho$ to four parts in $10^4$ is therefore a bound on any additional multiplet's vacuum expectation value.
 
@@ -494,7 +494,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $e$ | $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ |
 | $g_{hWW}$, $g_{hZZ}$, $g_{hhh}$, $g_{hhhh}$ | Scalar couplings, fixed by the masses |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$, identically one for a doublet |
-| $\Delta r$ | The correction to the tree-level mass relation, $0.0355$, computed from $\alpha(0)$ |
+| $\delta r$ | The correction to the tree-level mass relation, $0.0355$, computed from $\alpha(0)$ |
 | $G_F$ | $1.1663787\times10^{-5}$ GeV$^{-2}$, fixing $v$ |
 | $\xi_a$ | The three would-be Goldstone fields |
 
@@ -509,4 +509,4 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why the framework's central scalar is a singlet, and why a singlet breaks nothing.
 - [The Standard Model under the Biquaternion Framework — A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The sector in agenda form, with this article's three items marked imported.
 
-The two companions that §*The Numbers* leans on — [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html), for the sector at the other end of the mass ladder, and [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html), for the $\Delta r$ and $\rho$ statements used above — are both in the corpus.
+The two companions that §*The Numbers* leans on — [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html), for the sector at the other end of the mass ladder, and [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html), for the $\delta r$ and $\rho$ statements used above — are both in the corpus.

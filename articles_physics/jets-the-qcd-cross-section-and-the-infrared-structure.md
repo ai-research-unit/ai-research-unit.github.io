@@ -73,7 +73,7 @@ d_{ij}=\min\left(k_{Ti}^{2p},k_{Tj}^{2p}\right)\frac{\Delta R_{ij}^2}{R^2} ,
 d_{iB}=k_{Ti}^{2p} ,
 $$
 
-with $\Delta R_{ij}^2=\Delta\eta_{ij}^2+\Delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.
+with $\Delta R_{ij}^2=\delta\eta_{ij}^2+\delta\phi_{ij}^2$. The exponent $p$ selects the algorithm: $p=1$ is $k_T$, $p=0$ is Cambridge–Aachen, $p=-1$ is anti-$k_T$, and the last is the default at the LHC because it produces geometrically regular jets.
 
 **Why the definition is part of the prediction.** The number of jets in an event is not a property of the event. It is a property of the event and the resolution: at a coarse resolution any event is two-jet, at a fine one every event is many-jet. So a cross section "for three jets" is meaningless until the resolution is given, and the resolution is a number that must be stated and, ideally, varied to show that the dependence is under control. This is not a technicality of experimental practice. It is the same statement as [the confinement article's](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) that the parton picture is a description at a resolution, made quantitative.
 
@@ -193,7 +193,7 @@ $W$ is of order one. That is the whole reason the truncation fails: the expansio
 **The exponentiation.** The probability of no emission above the resolution is the exponential of minus the mean number,
 
 $$
-\Delta(Q,Q_0)=\exp\left[-\frac{2\alpha_sC_F}{\pi}\ln^2\frac{Q}{Q_0}\right] ,
+\mathcal{R}_{\mathrm{ev}}(Q,Q_0)=\exp\left[-\frac{2\alpha_sC_F}{\pi}\ln^2\frac{Q}{Q_0}\right] ,
 $$
 
 the Sudakov form factor. It is not an approximation to a sum; it *is* the sum of the leading double logarithms to all orders, and the reason the sum exponentiates is that independent emissions multiply probabilities.
@@ -226,10 +226,10 @@ the Sudakov form factor. It is not an approximation to a sum; it *is* the sum of
 **The one structure that makes it work.** The no-branching probability between two scales is
 
 $$
-\Delta(t_1,t_2)=\exp\left[-\int_{t_2}^{t_1}\frac{dt}{t}\int dz\,\frac{\alpha_s}{2\pi}P(z)\right] ,
+\mathcal{R}_{\mathrm{ev}}(t_1,t_2)=\exp\left[-\int_{t_2}^{t_1}\frac{dt}{t}\int dz\,\frac{\alpha_s}{2\pi}P(z)\right] ,
 $$
 
-and the shower's step is: draw a random number, solve $\Delta(t,t_1)=r$ for the next scale $t$, and if $t$ is above the cutoff, branch. The exponent is the integral of the splitting function, so the shower is the splitting functions plus a random number generator, and nothing else.
+and the shower's step is: draw a random number, solve $\mathcal{R}_{\mathrm{ev}}(t,t_1)=r$ for the next scale $t$, and if $t$ is above the cutoff, branch. The exponent is the integral of the splitting function, so the shower is the splitting functions plus a random number generator, and nothing else.
 
 **Why the ordering variable is not optional.** A shower must order its emissions in a variable that is monotonic along the branching, or it will double-count. The candidates are the virtuality, the transverse momentum, and the angle; the last is the one that gets the coherence right, because a soft gluon emitted at a large angle cannot resolve the individual partons of a collinear pair. That coherence is the angular ordering, and it is what turns the naive double log into the correct one. It is also where the algebra's own structure is closest to the physics: the coherence is an interference effect between amplitudes, and the interference is the same one that [the photon article](the-photon-in-biquaternionic-form.html) found in the two helicity halves of a null field.
 
@@ -338,7 +338,7 @@ The framework supplies the null direction and the form of the interference, and 
 | $z$ | Momentum fraction in a splitting |
 | $P_{qq}=C_F[(1+z^2)/(1-z)]_+$ | Quark kernel, plus on the whole kernel |
 | $W$ | $\frac{2\alpha_sC_F}{\pi}\ln^2(Q/Q_0)$, the double-log exponent |
-| $\Delta(Q,Q_0)$ | Sudakov form factor, $e^{-W}$ |
+| $\mathcal{R}_{\mathrm{ev}}(Q,Q_0)$ | Sudakov form factor, $e^{-W}$ |
 | $Q_0$ | Resolution or cutoff scale |
 | $\Lambda_{\mathrm{eff}}$ | Effective scale of the MLLA logarithm, $0.2$ GeV; not $\Lambda_{N_f}$ |
 | $C_F=4/3$ | Quadratic Casimir of the triplet; the quark's colour charge |

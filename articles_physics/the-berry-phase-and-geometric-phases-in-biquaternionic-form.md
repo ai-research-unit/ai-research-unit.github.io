@@ -23,7 +23,7 @@ The article's findings are stated here in advance, so that the reader can hold t
 Let the Hamiltonian depend on a set of real parameters $R = (R^1, R^2, \dots)$ taking values in a parameter space $\mathcal{P}$, and let $\tilde H_\Psi(R) \in \mathbb{B}_{\Psi}$ be Hermitian with instantaneous eigenvalues $E_n(R)$ and eigenvectors $|n(R)\rangle$. The **adiabatic theorem** states that if the gap
 
 $$
-\Delta(R) = \min_{m \neq n}\bigl|E_m(R) - E_n(R)\bigr|
+\mathcal{G}_{\mathrm{gap}}(R) = \min_{m \neq n}\bigl|E_m(R) - E_n(R)\bigr|
 $$
 
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:

@@ -403,10 +403,10 @@ $$
 
 ## The Framework's Position
 
-**The framework supplies the home of the matrices, and that is a real statement.** In the framework the fermion space is $\Delta\otimes\mathbb{C}^{N_g}$ with the algebra acting on $\Delta$ and trivially on the multiplicity factor. The operators that can appear as mass or Yukawa matrices are therefore exactly
+**The framework supplies the home of the matrices, and that is a real statement.** In the framework the fermion space is $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting on $\Delta$ and trivially on the multiplicity factor. The operators that can appear as mass or Yukawa matrices are therefore exactly
 
 $$
-Y\in\mathrm I_{\Delta}\otimes M_{N_g}(\mathbb{C}) ,
+Y\in\mathrm I_{\mathcal{S}_{\mathrm{rep}}}\otimes M_{N_g}(\mathbb{C}) ,
 $$
 
 that is, the commutant of the algebra's action. So the framework says something precise and non-trivial about this sector: **the Yukawa matrices are the operators on the factor the algebra does not act on.** Their arbitrariness is structural. An algebra cannot constrain an operator that lives in its commutant, so a framework with a multiplicity factor must have arbitrary Yukawa couplings. The commutant's parameter space is $6N_g^{2}=54$ real numbers at $N_g=3$, and the thirteen of §*The Count of Thirteen* are that space reduced by the flavour symmetry.
@@ -435,7 +435,7 @@ The count of thirteen is $54-41$: three matrices give fifty-four real parameters
 
 The couplings span five and a half orders of magnitude, with $y_t=0.992$ at the top and $y_e=2.9\times10^{-6}$ at the bottom. The top's nearness to one reflects an infrared fixed point of its renormalisation-group equation; the other eight numbers, the hierarchy, the three mixing angles and the Koide relation, which holds to $9\times10^{-6}$, have no derivation. The Higgs coupling to each fermion is $m_f/v$, so the sector is tested by the Higgs widths: $0.259$ MeV into $\tau^{+}\tau^{-}$ against a reference $0.257$, and into $b\bar b$ about $2.49$ MeV against $2.37$ once the mass is run to the Higgs scale, the $4.28$ MeV obtained with $m_b(m_b)$ being a different scheme and not a different physics.
 
-The framework supplies the home of the matrices and not their entries. Its fermion space is $\Delta\otimes\mathbb{C}^{N_g}$ with the algebra acting trivially on the second factor, so the Yukawa matrices are precisely the commutant of the algebra's action and their arbitrariness is structural. What it does not supply is the coupling: the mass selection rule $ϙ_L=ϙ_R$ says the compensating scalar must be non-central, and the framework's scalar is central. Its abelian mechanism masses the gauge boson and leaves the fermion alone, so it is a different mechanism and not half of the missing one; the missing link is the Yukawa coupling of a non-central scalar, and it is open.
+The framework supplies the home of the matrices and not their entries. Its fermion space is $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting trivially on the second factor, so the Yukawa matrices are precisely the commutant of the algebra's action and their arbitrariness is structural. What it does not supply is the coupling: the mass selection rule $ϙ_L=ϙ_R$ says the compensating scalar must be non-central, and the framework's scalar is central. Its abelian mechanism masses the gauge boson and leaves the fermion alone, so it is a different mechanism and not half of the missing one; the missing link is the Yukawa coupling of a non-central scalar, and it is open.
 
 ## Summary of Notation
 

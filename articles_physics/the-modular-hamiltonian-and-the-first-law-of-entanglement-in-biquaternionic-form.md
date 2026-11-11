@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **modular Hamiltonian** of a state is the negative logarithm of its modular operator, $H_{\mathrm{modular}}=-\log\Delta$; in finite dimension, where the state is a density matrix, it is $H_{\mathrm{modular}}=-\log\rho$. It is the generator of the modular flow of the preceding article, and in the entanglement literature it is called the **entanglement Hamiltonian**, because for a reduced state it is the operator whose correlations reproduce the entanglement of the region. The **first law of entanglement** is the statement that a small perturbation of a state changes its entropy and its modular energy by equal amounts:
+The **modular Hamiltonian** of a state is the negative logarithm of its modular operator, $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$; in finite dimension, where the state is a density matrix, it is $H_{\mathrm{modular}}=-\log\rho$. It is the generator of the modular flow of the preceding article, and in the entanglement literature it is called the **entanglement Hamiltonian**, because for a reduced state it is the operator whose correlations reproduce the entanglement of the region. The **first law of entanglement** is the statement that a small perturbation of a state changes its entropy and its modular energy by equal amounts:
 $$
 \delta S=\delta\langle H_{\mathrm{modular},0}\rangle
 $$
@@ -228,7 +228,7 @@ The biquaternion framework's role is to make the finite-dimensional prototype of
 
 ## Summary
 
-The modular Hamiltonian is $H_{\mathrm{modular}}=-\log\Delta$, the generator of the modular flow; in finite dimension it is $H_{\mathrm{modular}}=-\log\rho$, the logarithm of the state, and its expectation is the state's modular energy. The first law of entanglement states that a small perturbation of a state changes its entropy and its modular energy by equal amounts, $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle$, to first order.
+The modular Hamiltonian is $H_{\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$, the generator of the modular flow; in finite dimension it is $H_{\mathrm{modular}}=-\log\rho$, the logarithm of the state, and its expectation is the state's modular energy. The first law of entanglement states that a small perturbation of a state changes its entropy and its modular energy by equal amounts, $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle$, to first order.
 
 In the biquaternion framework the modular Hamiltonian of a faithful state is the closed-form informational-sector element $H_{\mathrm{modular},0}=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\,\gamma_0$, with $b=\mathrm{artanh}(r_0)$, and its expectation in any state is $-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$. The first law is the first-order shadow of the exact identity
 $$

@@ -30,7 +30,7 @@ with $M_{12}$ and $\Gamma_{12}$ the dispersive and absorptive mixing amplitudes.
 $$
 \delta m=m_H-m_L=2\lvert M_{12}\rvert ,
 \qquad
-\Delta\Gamma=\Gamma_H-\Gamma_L=2\lvert\Gamma_{12}\rvert\cos\phi ,
+\delta\Gamma=\Gamma_H-\Gamma_L=2\lvert\Gamma_{12}\rvert\cos\phi ,
 $$
 
 where $\phi=\arg(M_{12}/\Gamma_{12})$. The two parameters that experiments quote are $\delta m$ and the decay-width difference, and the relevant dimensionless ratios are
@@ -38,7 +38,7 @@ where $\phi=\arg(M_{12}/\Gamma_{12})$. The two parameters that experiments quote
 $$
 x=\frac{\delta m}{\Gamma},
 \qquad
-y=\frac{\Delta\Gamma}{2\Gamma} .
+y=\frac{\delta\Gamma}{2\Gamma} .
 $$
 
 **The three systems, with numbers.**
@@ -179,7 +179,7 @@ Read down the table: the kaon's small splitting is charm's, the $B$'s large spli
 
 **Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\eta$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
 
-**The $B_s$ and the width difference.** $\Delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
+**The $B_s$ and the width difference.** $\delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
 
 ## Rare Decays
 
@@ -369,8 +369,8 @@ Closure proves self-consistency, not uniqueness, and it does not explain the fou
 | Symbol | Meaning |
 |---|---|
 | $M_{12}$, $\Gamma_{12}$ | Dispersive and absorptive mixing amplitudes |
-| $\delta m$, $\Delta\Gamma$ | Mass and width differences of the two eigenstates |
-| $x$, $y$ | $\delta m/\Gamma$ and $\Delta\Gamma/(2\Gamma)$ |
+| $\delta m$, $\delta\Gamma$ | Mass and width differences of the two eigenstates |
+| $x$, $y$ | $\delta m/\Gamma$ and $\delta\Gamma/(2\Gamma)$ |
 | $\chi$ | Time-integrated wrong-sign fraction, $x^2/2(1+x^2)$ |
 | $K_S$, $K_L$ | The two kaon mass eigenstates |
 | $\varepsilon_K$ | CP violation in kaon mixing, $2.228\times10^{-3}$ |

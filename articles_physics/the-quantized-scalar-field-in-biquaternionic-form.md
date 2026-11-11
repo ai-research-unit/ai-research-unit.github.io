@@ -111,7 +111,7 @@ $$
 \boxed{\;\big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]
 =\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}
 \left(\exp(-ip\cdot(x-y)/\hbar)-\exp(+ip\cdot(x-y)/\hbar)\right)
-\equiv i\Delta(x-y)\;},
+\equiv i\mathcal{P}_{\mathrm{PJ}}(x-y)\;},
 $$
 
 while
@@ -235,7 +235,7 @@ The quantized scalar field of the framework is an operator-valued distribution w
 The defining property of the field is that its commutator is a c-number,
 
 $$
-\big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]=i\Delta(x-y),
+\big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]=i\mathcal{P}_{\mathrm{PJ}}(x-y),
 \qquad
 \big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}(y)\big]=0,
 $$
@@ -260,7 +260,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |
 | $Ϙ_{\mathrm{fop}}$ | Conserved $\mathrm{U}(1)$ charge; $[Ϙ_{\mathrm{fop}},\xi_{\mathrm{fop}}]=-\xi_{\mathrm{fop}}$ |
 | $\mathcal{C}:\xi_{\mathrm{fop}}\mapsto\xi_{\mathrm{fop}}^{\dagger}$ | Charge conjugation, $a_{\mathrm{fop}}\leftrightarrow b_{\mathrm{fop}}$, $Ϙ_{\mathrm{fop}}\mapsto-Ϙ_{\mathrm{fop}}$ |
-| $i\Delta(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator function (c-number) |
+| $i\mathcal{P}_{\mathrm{PJ}}(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator function (c-number) |
 | $W(x-y)=\langle0|\xi_{\mathrm{fop}}(x)\xi_{\mathrm{fop}}^{\dagger}(y)|0\rangle$ | Wightman function (positive frequency) |
 | $\mathcal{G}_F=\mathrm{J}(x_0-y_0)W(x-y)+\mathrm{J}(y_0-x_0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
 | $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$ |

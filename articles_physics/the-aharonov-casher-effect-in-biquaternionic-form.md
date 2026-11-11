@@ -52,7 +52,7 @@ $$
 the phase accumulated along the path is
 
 $$
-\Delta\theta_{\mathrm{pha}} =\frac{1}{\hbar}\int  L_{AC}\,dr'_t
+\delta\theta_{\mathrm{pha}} =\frac{1}{\hbar}\int  L_{AC}\,dr'_t
 =\frac{1}{\hbar\,c^{2}}\int_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot  d\vec r,
 $$
 
@@ -231,10 +231,10 @@ The AC phase has been observed in several systems. The neutron experiment of Cim
 
 ### Spin-Dependent Interference
 
-The AC phase is not an overall phase of the beam; it is a **spin-dependent** phase, and it is measured by interfering the two spin components. In a two-path interferometer an arm that reverses the spin relative to the other converts the AC phase into a relative phase between the two paths, and the fringes shift by $\Delta\theta_{\mathrm{pha}}/2\pi$ periods. Because reversing the spin reverses the sign of $\vec\mu$ and hence of $\theta_{\mathrm{pha},AC}$, the spin-flip phase difference is twice the single-spin phase,
+The AC phase is not an overall phase of the beam; it is a **spin-dependent** phase, and it is measured by interfering the two spin components. In a two-path interferometer an arm that reverses the spin relative to the other converts the AC phase into a relative phase between the two paths, and the fringes shift by $\delta\theta_{\mathrm{pha}}/2\pi$ periods. Because reversing the spin reverses the sign of $\vec\mu$ and hence of $\theta_{\mathrm{pha},AC}$, the spin-flip phase difference is twice the single-spin phase,
 
 $$
-\Delta\theta_{\mathrm{pha},\uparrow\downarrow} = 2\theta_{\mathrm{pha},AC}
+\delta\theta_{\mathrm{pha},\uparrow\downarrow} = 2\theta_{\mathrm{pha},AC}
 =\frac{2}{\hbar\,c^{2}}\oint\left(\vec E\times\vec\mu\right)\cdot  d\vec r.
 $$
 

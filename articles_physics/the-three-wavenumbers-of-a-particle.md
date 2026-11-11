@@ -444,7 +444,7 @@ using $mc^2=m\,c^{2}$. For the electron the number is $1.323\times10^{18}\ \math
 **The shift is the mass wave number measured with a spectrometer.** A photon of wavelength $\lambda$ scattered by a particle of mass $m$ emerges with a shift
 
 $$
-\Delta\lambda = \lambda_C\,(1-\cos\theta),
+\delta\lambda = \lambda_C\,(1-\cos\theta),
 \qquad
 \lambda_C = \dfrac{h}{mc} = \dfrac{2\pi}{k_m} .
 $$

@@ -8,15 +8,15 @@ S_0(A\Omega) := A^*\Omega .
 $$
 It is closable, and its closure $S$ has the polar decomposition
 $$
-S = J\,\Delta^{1/2},
+S = J\,\mathcal{M}_{\mathrm{mod}}^{1/2},
 $$
-with $\Delta=S^*S\geq 0$ self-adjoint and $J$ anti-unitary. The theory then delivers the structural facts
+with $\mathcal{M}_{\mathrm{mod}}=S^*S\geq 0$ self-adjoint and $J$ anti-unitary. The theory then delivers the structural facts
 $$
-J M J = M_{\mathrm c}, \qquad \Delta^{ir'_t}M\Delta^{ir'_t*}=M, \qquad \sigma_{r'_{t}}(A):=\Delta^{ir'_t}A\Delta^{ir'_t*},
+J M J = M_{\mathrm c}, \qquad \mathcal{M}_{\mathrm{mod}}^{ir'_t}M\mathcal{M}_{\mathrm{mod}}^{ir'_t*}=M, \qquad \sigma_{r'_{t}}(A):=\mathcal{M}_{\mathrm{mod}}^{ir'_t}A\mathcal{M}_{\mathrm{mod}}^{ir'_t*},
 $$
 so that $J$ identifies $M$ with its commutant and $r'_t\mapsto\sigma_{r'_{t}}$ is a one-parameter group of automorphisms of $M$, the **modular automorphism group** of the pair $(M,\Omega)$.
 
-The article writes the construction in its **Hermitian form**, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$; the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is a Hermitian element of $\mathbb{B}_{\Psi}$; the modular flow is the inner automorphism by the $*$-unitary $e^{-it\'H_{\mathrm{modular}}}$; and the modular operator is built from the Hermitian exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$. The parameters are Hermitian ($H_{\mathrm{modular}}$) or $*$-unitary ($U_{r'_{t}}=e^{-it\'H_{\mathrm{modular}}}$ and $\Delta^{ir'_t}$), so their inverses are their adjoints; the two exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$ are both Hermitian functions of $H_{\mathrm{modular}}$.
+The article writes the construction in its **Hermitian form**, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$; the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is a Hermitian element of $\mathbb{B}_{\Psi}$; the modular flow is the inner automorphism by the $*$-unitary $e^{-it\'H_{\mathrm{modular}}}$; and the modular operator is built from the Hermitian exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$. The parameters are Hermitian ($H_{\mathrm{modular}}$) or $*$-unitary ($U_{r'_{t}}=e^{-it\'H_{\mathrm{modular}}}$ and $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$), so their inverses are their adjoints; the two exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$ are both Hermitian functions of $H_{\mathrm{modular}}$.
 
 This article is the companion of *The KMS Condition and the Biquaternion Framework*. That article stated the KMS condition and located the modular Hamiltonian $H_{\mathrm{modular}}=-\log\rho$ in the informational sector $\mathbb{B}_{\Psi}$. It used, but did not construct, the operator $S$ whose polar decomposition produces the modular flow. The present article constructs $S$ explicitly in the finite-dimensional biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, takes its polar decomposition in closed form, and verifies the resulting identities by recomputation. The KMS condition is the parent's subject and is not restated here; the one thing imported from it is the result that the modular flow is the flow for which the thermal state satisfies the KMS boundary relation.
 
@@ -59,15 +59,15 @@ S := \overline{S_0},
 $$
 and its polar decomposition is written
 $$
-S = J\,\Delta^{1/2}, \qquad \Delta := S^*S \geq 0 .
+S = J\,\mathcal{M}_{\mathrm{mod}}^{1/2}, \qquad \mathcal{M}_{\mathrm{mod}} := S^*S \geq 0 .
 $$
-Here $\Delta$ is the **modular operator** and $J$ the **modular conjugation**. The structural identities are
+Here $\mathcal{M}_{\mathrm{mod}}$ is the **modular operator** and $J$ the **modular conjugation**. The structural identities are
 $$
-S^2 = 1, \qquad J^2 = 1, \qquad J\Delta J\Delta=1, \qquad \Delta^{ir'_t}M\Delta^{ir'_t*}=M \quad (r'_t\in\mathbb{R}).
+S^2 = 1, \qquad J^2 = 1, \qquad J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1, \qquad \mathcal{M}_{\mathrm{mod}}^{ir'_t}M\mathcal{M}_{\mathrm{mod}}^{ir'_t*}=M \quad (r'_t\in\mathbb{R}).
 $$
 The last of these is Tomita's theorem. Define
 $$
-\sigma_{r'_{t}}(A) := \Delta^{ir'_t}A\Delta^{ir'_t*}, \qquad r'_t\in\mathbb{R}.
+\sigma_{r'_{t}}(A) := \mathcal{M}_{\mathrm{mod}}^{ir'_t}A\mathcal{M}_{\mathrm{mod}}^{ir'_t*}, \qquad r'_t\in\mathbb{R}.
 $$
 Then $\sigma_{r'_{t}}$ is an automorphism of $M$, and
 $$
@@ -77,11 +77,11 @@ so $r'_t\mapsto\sigma_{r'_{t}}$ is a one-parameter group: the **modular automorp
 $$
 J M J = M_{\mathrm c},
 $$
-says that the modular conjugation identifies the algebra with its commutant. The content of the theory is that $S$ — hence $\Delta$ and $J$ — is constructed from the pair $(M,\Omega)$, and that from the state it recovers both a canonical flow and a canonical anti-isomorphism $M\cong M_{\mathrm c}$.
+says that the modular conjugation identifies the algebra with its commutant. The content of the theory is that $S$ — hence $\mathcal{M}_{\mathrm{mod}}$ and $J$ — is constructed from the pair $(M,\Omega)$, and that from the state it recovers both a canonical flow and a canonical anti-isomorphism $M\cong M_{\mathrm c}$.
 
 ### Anti-Linearity and the Conjugation of the Scalar Imaginary
 
-The defining anti-linearity of $S_0$ is inherited by $S$ and, through $S=J\Delta^{1/2}$, by $J$, which is anti-unitary:
+The defining anti-linearity of $S_0$ is inherited by $S$ and, through $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$, by $J$, which is anti-unitary:
 $$
 J(z\zeta) = \bar z\,J(\zeta), \qquad z\in\mathbb{C},\ \zeta\in\mathcal{H}.
 $$
@@ -163,16 +163,16 @@ S_0^*(\tilde Q_1) = e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde Q_1^{*}\,e^{\t
 $$
 whence
 $$
-\boxed{\;\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde{Q}_3\,e^{\tilde H_{\Psi,\mathrm{modular}}}, \qquad
-\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}/2}\;}.
+\boxed{\;\mathcal{M}_{\mathrm{mod}}(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = e^{-\tilde H_{\Psi,\mathrm{modular}}}\,\tilde{Q}_3\,e^{\tilde H_{\Psi,\mathrm{modular}}}, \qquad
+\mathcal{M}_{\mathrm{mod}}^{1/2}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}/2}\;}.
 $$
-The polar decomposition $S_0=J\Delta^{1/2}$ then gives
+The polar decomposition $S_0=J\mathcal{M}_{\mathrm{mod}}^{1/2}$ then gives
 $$
 J(\tilde{Q}_3) = e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2}.
 $$
 The **modular flow** is
 $$
-\boxed{\;\sigma_{r'_{t}}(\tilde{Q}_3) = \Delta^{ir'_t}\tilde{Q}_3\Delta^{ir'_t*} = e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}\;},
+\boxed{\;\sigma_{r'_{t}}(\tilde{Q}_3) = \mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde{Q}_3\mathcal{M}_{\mathrm{mod}}^{ir'_t*} = e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}\;},
 $$
 which is an **inner** automorphism of $\mathbb{B}$, implemented by the $*$-unitary $\tilde{Ϛ}_{\Psi}^{ir'_t}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_{r'_{t}}(\tilde{Q}_3^{*})=\sigma_{r'_{t}}(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ separately. With
 $$
@@ -185,7 +185,7 @@ $$
 
 ### The Identities, Verified
 
-The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, the group law $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
+The identities $S_0=J\mathcal{M}_{\mathrm{mod}}^{1/2}$, $J^2=1$, $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$, $J\,i\,J=-i$, the group law $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
 
 ### An Explicit Case
 
@@ -217,13 +217,13 @@ This is not a choice made to fit the theory; it is the involution that defines t
 
 **The candidate satisfies the hypotheses.** With $\Omega=e_t$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde{Ϛ}_{\Psi}>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
 
-**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{Q}_3\mapsto\tilde{Q}_3^{*}$ for every $\tilde{Ϛ}_{\Psi}$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde{Ϛ}_{\Psi}$, through the inner product. And the framework's most distinguished state is the tracial one,
+**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{Q}_3\mapsto\tilde{Q}_3^{*}$ for every $\tilde{Ϛ}_{\Psi}$ — but the polar decomposition is not: $\mathcal{M}_{\mathrm{mod}}$ and $J$ depend on $\tilde{Ϛ}_{\Psi}$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
 \tilde{Ϛ}_{\Psi}=\tfrac12 e_t \qquad(\vec r=0),
 $$
 for which
 $$
-\Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_{r'_{t}}=\mathrm{id} :
+\mathcal{M}_{\mathrm{mod}}=1, \qquad J=S_0={}^{*}, \qquad \sigma_{r'_{t}}=\mathrm{id} :
 $$
 the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/\mathrm{Tr}(\exp(-\beta H))$ with $\tilde H_\Psi\in\mathbb{B}_{\Psi}$, and for those $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
 
@@ -256,7 +256,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (theorem).**
 
-- The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J\Delta=1$, $JMJ=M_{\mathrm c}$, and the modular group $\sigma_{r'_{t}}$.
+- The Tomita–Takesaki construction: $S$, $\mathcal{M}_{\mathrm{mod}}$, $J$, the identities $S^2=1$, $J^2=1$, $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$, $JMJ=M_{\mathrm c}$, and the modular group $\sigma_{r'_{t}}$.
 - The equivalence, in a GNS representation, of "cyclic and separating" with "faithful".
 - The Takesaki–Winnink theorem: the modular flow is the KMS flow, normalized to $\beta=1$, which is the link to the parent article.
 - Connes' classification of factors by the kernel of $\delta$, and the inner/outer behavior of the modular flow.
@@ -264,8 +264,8 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 **Established (recomputed here).**
 
 - $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
-- $\Delta(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}}$, $\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}/2}$, $J(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2}$, $\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}$.
-- $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
+- $\mathcal{M}_{\mathrm{mod}}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}}$, $\mathcal{M}_{\mathrm{mod}}^{1/2}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}/2}$, $J(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2}$, $\sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}$.
+- $J^2=1$, $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$, $J\,i\,J=-i$, $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
 - $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, and for the thermal single mode $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}_{\Psi}^{ir'_t}\in\mathbb{B}$.
 
@@ -282,7 +282,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 ## Summary
 
-The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M_{\mathrm c}$, and a modular automorphism group $\sigma_{r'_{t}}(A)=\Delta^{ir'_t}A\Delta^{ir'_t*}$.
+The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$ into a positive modular operator $\mathcal{M}_{\mathrm{mod}}$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M_{\mathrm c}$, and a modular automorphism group $\sigma_{r'_{t}}(A)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}A\mathcal{M}_{\mathrm{mod}}^{ir'_t*}$.
 
 In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde{Q}_3^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
@@ -290,11 +290,11 @@ S_0:\tilde{Q}_3\mapsto\tilde{Q}_3^{*},
 $$
 and the polar decomposition is
 $$
-\boxed{\;\Delta(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}},\qquad
+\boxed{\;\mathcal{M}_{\mathrm{mod}}(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3e^{\tilde H_{\Psi,\mathrm{modular}}},\qquad
 J(\tilde{Q}_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}/2}\tilde{Q}_3^{*}e^{\tilde H_{\Psi,\mathrm{modular}}/2},\qquad
 \sigma_{r'_{t}}(\tilde{Q}_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde{Q}_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}\;}.
 $$
-The identities $J^2=1$, $J\Delta J\Delta=1$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
+The identities $J^2=1$, $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 
 The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-r'_t}$, and the parent article's modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ generates it, $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[H_{\mathrm{modular}},A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
 
@@ -312,9 +312,9 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathcal{H},M,\Omega$ | Hilbert space, von Neumann algebra, cyclic separating vector |
 | $S_0,S$ | Tomita operator $A\Omega\mapsto A^*\Omega$ and its closure |
-| $\Delta=S^*S$ | Modular operator |
+| $\mathcal{M}_{\mathrm{mod}}=S^*S$ | Modular operator |
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$ |
-| $\sigma_{r'_{t}}(A)=\Delta^{ir'_t}A\Delta^{ir'_t*}$ | Modular automorphism group |
+| $\sigma_{r'_{t}}(A)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}A\mathcal{M}_{\mathrm{mod}}^{ir'_t*}$ | Modular automorphism group |
 | $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Faithful state (positive definite, trace one) |
 | $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde{Q}_3^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
 | $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ | Modular Hamiltonian, in $\mathbb{B}_{\Psi}$ |

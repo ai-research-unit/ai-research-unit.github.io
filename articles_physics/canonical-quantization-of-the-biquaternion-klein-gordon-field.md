@@ -219,11 +219,11 @@ The commutator of two field operators is not an operator but a multiple of the i
 $$
 \big[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)\big]
 =\int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}
-\left(\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\Delta\tilde{R}_\Phi^{\natural})\big)-\exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\Delta\tilde{R}_\Phi^{\natural})\big)\right)
-\equiv i\Delta(x-y),
+\left(\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\delta\tilde{R}_\Phi^{\natural})\big)-\exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\delta\tilde{R}_\Phi^{\natural})\big)\right)
+\equiv i\mathcal{P}_{\mathrm{PJ}}(x-y),
 $$
 
-a c-number, the **commutator function** (Pauli–Jordan function) times a central unit, with $\Delta\tilde R_{\Phi}=\tilde R_{\Phi,2}-\tilde R_{\Phi,1}$ the element joining the two events; the commutators $[\xi_{\mathrm{fop}},\xi_{\mathrm{fop}}]$ and $[\xi_{\mathrm{fop}}^{\dagger},\xi_{\mathrm{fop}}^{\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a **classical** field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.
+a c-number, the **commutator function** (Pauli–Jordan function) times a central unit, with $\delta\tilde R_{\Phi}=\tilde R_{\Phi,2}-\tilde R_{\Phi,1}$ the element joining the two events; the commutators $[\xi_{\mathrm{fop}},\xi_{\mathrm{fop}}]$ and $[\xi_{\mathrm{fop}}^{\dagger},\xi_{\mathrm{fop}}^{\dagger}]$ vanish identically. This c-number character is the precise sense in which a bosonic field is a **classical** field with operator coefficients: the non-commutativity of the field at two events is a fixed function, not a dynamical operator. For the Dirac field the corresponding object is an operator-valued matrix, and the difference is the difference between the bosonic and fermionic cases.
 
 Two properties of $\Delta$ are the physical content. At equal times it vanishes,
 
@@ -295,14 +295,14 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $1/k_m$ | The mass length, $\hbar/(mc)$ |
 | $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$, $\pi^\dagger=\partial\xi/\partial r'_t$ | Conjugate momenta; Legendre transform regular |
 | $\tilde K_{\Phi}=i\,k_{t}^{\prime}e_t+\vec k_\Phi=\tilde P_{\Phi}/\hbar$, $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_t^{\prime\,2}+k_\Phi^{2}=-k_m^{2}$ | Material four-wavevector and its norm, the mass shell |
-| $\exp(\pm i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))$, $\Delta\tilde R_{\Phi}$ | Central plane-wave phase; the separation element of the commutator |
+| $\exp(\pm i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))$, $\delta\tilde R_{\Phi}$ | Central plane-wave phase; the separation element of the commutator |
 | $E_{\vec p}=c\sqrt{\vec p^{\,2}+m^{2}c^{2}}$, $p\cdot x=\hbar\left(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\right)$ | On-shell energy, and the action $\hbar$ times the phase |
 | $a_{\mathrm{fop},\vec p},b_{\mathrm{fop},\vec p}$ | Particle and antiparticle annihilation operators |
 | $[a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p^{\,\prime}}}^\dagger]=(2\pi\hbar)^3\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Mode commutators |
 | $\mathcal{F}=\bigoplus_n(\mathcal{H}_1^{\otimes n})_+$ | Bosonic Fock space (symmetric algebra) |
 | $:\!H\!:=\int\frac{d^3p}{(2\pi\hbar)^3}E_{\vec p}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Normal-ordered Hamiltonian |
 | $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved charge |
-| $i\Delta(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
+| $i\mathcal{P}_{\mathrm{PJ}}(x-y)=[\xi_{\mathrm{fop}}(x),\xi_{\mathrm{fop}}^{\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 

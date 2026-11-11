@@ -397,7 +397,7 @@ Their evidentiary problem is upstream of them. Each number is computed from a co
 
 Appendix D carries its own dimensional gap, in an equation of two terms. Its phase is
 $$
-\Delta\theta=\frac{qΞ_{B}}{\hbar}+\frac{\beta\,Ξ_{T}}{\hbar}\bigl(\delta s_z\bigr),
+\delta\theta=\frac{qΞ_{B}}{\hbar}+\frac{\beta\,Ξ_{T}}{\hbar}\bigl(\delta s_z\bigr),
 \qquad \beta=\tfrac12 ,
 $$
 with $\delta s_z$ the difference of the two spin projections, B minus A, and $Ξ_T$ called "the torsion flux" and never defined. The magnetic term is dimensionally complete: a flux times a charge is an action, and an action over $\hbar$ is a phase. The torsion term cannot be, whatever $Ξ_T$ is taken to be. If it is the flux of the torsion, $\int T\cdot dA$, its dimension is a length; the ratio to $\hbar$ is then length over action, which is not a phase, and the dimensionless $\beta=\tfrac12$ supplies nothing. If instead $Ξ_T$ is given units of action, the appendix never says so, and no display connects it to the torsion that the rest of the paper computes. The coefficient that the term needs is a coupling with the dimension of $\hbar$ per unit torsion flux, and that is exactly the slot where the missing power of $\hbar$ of Eq. (26) sits. The tables are recorded here as the source's claims, with the observation that none of them survives the recomputations above, and therefore that their numerical agreement with current sensitivities should not be read as evidence for the framework.
