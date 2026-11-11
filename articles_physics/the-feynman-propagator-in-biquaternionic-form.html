@@ -164,7 +164,7 @@ $$</p>
 \qquad \epsilon\to0^+\;}.
 $$</p>
 <p>The action is written by what it does, so the display carries the test element and no second symbol. The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p_0$ integral reproduce the two branches, with the normalization of the time-ordered product and the fermionic relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.</p>
-<p>Write the $p_0$ integral at fixed $\vec p$, and put $\Delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec y$. Since</p>
+<p>Write the $p_0$ integral at fixed $\vec p$, and put $\delta t=x_0-y_0$ and $\Delta\vec r=\vec r-\vec y$. Since</p>
 <p>$$
 p^2-m^{2}\,c^{2}=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-\frac{E_{\vec p}^2}{c^{2}},
 $$</p>
@@ -176,10 +176,10 @@ p_0=\pm\sqrt{\frac{E_{\vec p}^2}{c^{2}}-i\epsilon}
 =\pm\Big(\frac{E_{\vec p}}{c}-\frac{i\epsilon\,c}{2E_{\vec p}}\Big)+O(\epsilon^2)\;}.
 $$</p>
 <p>The sign is worth fixing once explicitly. Let $p_0=E_{\vec p}/c+\delta$. Then the denominator is $2(E_{\vec p}/c)\,\delta+i\epsilon$, and it vanishes at $\delta=-i\epsilon\,c/(2E_{\vec p})$, which is <strong>below</strong> the axis. At $p_0=-E_{\vec p}/c+\delta$ the denominator is $-2(E_{\vec p}/c)\,\delta+i\epsilon$, and it vanishes at $\delta=+i\epsilon\,c/(2E_{\vec p})$, which is <strong>above</strong> it.</p>
-<p>This is the whole content of the prescription: the two poles are displaced in <em>opposite</em> directions. The decay of $\exp(-ip_0\Delta t)$ then selects one pole or the other:</p>
+<p>This is the whole content of the prescription: the two poles are displaced in <em>opposite</em> directions. The decay of $\exp(-ip_0\delta t)$ then selects one pole or the other:</p>
 <ul>
-<li>for $\Delta t>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}/c$;</li>
-<li>for $\Delta t<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}/c$.</li>
+<li>for $\delta t>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}/c$;</li>
+<li>for $\delta t<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}/c$.</li>
 </ul>
 <p>Write $p_+=(E_{\vec p}/c,\vec p)$ and $p_-=(-E_{\vec p}/c,\vec p)$. The residues are</p>
 <p>$$
@@ -191,15 +191,15 @@ $$</p>
 $$</p>
 <p>The contour contributes $-2\pi i$ when it closes below and $+2\pi i$ when it closes above. With the residues above and the overall factor $i$ of $S_F$, the two cases are</p>
 <p>$$
-\Delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}
+\delta t>0:\quad i\,(-2\pi i)\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}
 =2\pi\,\frac{\mathcal{A}_{p_+}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 $$</p>
 <p>$$
-\Delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}/c}
+\delta t<0:\quad i\,(+2\pi i)\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{-2E_{\vec p}/c}
 =2\pi\,\frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c},
 $$</p>
 <p>in both lines the product of the two imaginary units being $i^2=-1$.</p>
-<p>Both carry the same <strong>positive</strong> weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is</p>
+<p>Both carry the same <strong>positive</strong> weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $c/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\delta t<0$ it is</p>
 <p>$$
 \frac{\mathcal{A}_{p_-}(\tilde Q)+mc\tilde Q}{2E_{\vec p}/c}\,\exp\!\big(+iE_{\vec p}\Delta h_t/(\hbar c)+i\vec p\cdot\Delta\vec r/\hbar\big).
 $$</p>

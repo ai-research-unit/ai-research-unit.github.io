@@ -93,13 +93,13 @@ $$</p>
 <h3 id="the-standard-derivation">The Standard Derivation</h3>
 <p>The derivation uses only the second law. Before erasure the memory is maximally ignorant of its bit, so its entropy is $\log 2$ in nats; after erasure the bit is known, so the entropy is zero. The information lost by the memory is</p>
 <p>$$
-\Delta S_{\rm info} = -\log 2 .
+\delta S_{\rm info} = -\log 2 .
 $$</p>
 <p>The memory and the environment together form a closed system, whose entropy cannot decrease:</p>
 <p>$$
-\Delta S_{\rm info} + \Delta S_{\rm env} \ge 0 \qquad\Longrightarrow\qquad \Delta S_{\rm env} \ge \log 2 .
+\delta S_{\rm info} + \delta S_{\rm env} \ge 0 \qquad\Longrightarrow\qquad \delta S_{\rm env} \ge \log 2 .
 $$</p>
-<p>If the environment is a heat bath at temperature $T$ and the process is reversible for the bath itself, then the heat delivered to it is $Q = T\,\Delta S_{\rm th,env}$ with $\Delta S_{\rm th,env} = k_B\,\Delta S_{\rm env}$ in thermodynamic units, so</p>
+<p>If the environment is a heat bath at temperature $T$ and the process is reversible for the bath itself, then the heat delivered to it is $Q = T\,\delta S_{\rm th,env}$ with $\delta S_{\rm th,env} = k_B\,\delta S_{\rm env}$ in thermodynamic units, so</p>
 <p>$$
 Q \ge k_B T \log 2 .
 $$</p>
@@ -124,11 +124,11 @@ $$</p>
 $$</p>
 <p>an element of $\mathbb{B}_{\Phi}$: an imaginary scalar component $iE/c$ and a real vector component. The energy is the timelike component, $E = -i\,c\,\mathrm{Sc}(\tilde{P}_{\Phi})$, and heat is a change of it. The material ledger of a thermodynamic process is the energy account</p>
 <p>$$
-\Delta E_{\rm env} = Q ,
+\delta E_{\rm env} = Q ,
 $$</p>
 <p>with the entropy of a bath at temperature $T$ related to the heat it receives by the Clausius relation</p>
 <p>$$
-\Delta S_{\rm th,env} = \frac{Q}{T} .
+\delta S_{\rm th,env} = \frac{Q}{T} .
 $$</p>
 <p>The temperature is the conversion factor between the two ledgers: it converts energy in $\mathbb{B}_{\Phi}$ into entropy in the informational currency.</p>
 <h3 id="the-sector-exchange">The Sector Exchange</h3>
@@ -188,7 +188,7 @@ $$</p>
 <p>$$
 \Delta\mathcal{S}_{\rm env} \ge \log 2 .
 $$</p>
-<p>Multiplying by $k_B$ to pass to thermodynamic entropy and using the Clausius relation $\Delta S_{\rm th,env} = Q/T$ gives the heat delivered to the bath,</p>
+<p>Multiplying by $k_B$ to pass to thermodynamic entropy and using the Clausius relation $\delta S_{\rm th,env} = Q/T$ gives the heat delivered to the bath,</p>
 <p>$$
 Q = k_B T\,\Delta\mathcal{S}_{\rm env} \ge k_B T \log 2 ,
 $$</p>
@@ -342,7 +342,7 @@ $$</p>
 <td>Heat, temperature, Boltzmann constant</td>
 </tr>
 <tr>
-<td>$\Delta S_{\rm th,env} = Q/T$</td>
+<td>$\delta S_{\rm th,env} = Q/T$</td>
 <td>Clausius relation</td>
 </tr>
 <tr>
