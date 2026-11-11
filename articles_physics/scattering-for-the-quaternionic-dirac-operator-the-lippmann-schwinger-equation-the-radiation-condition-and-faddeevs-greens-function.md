@@ -96,14 +96,14 @@ Maxwell's equations reduce to second-order equations, and the reduction is a fac
 The four-dimensional identity is
 
 $$
-\frac{\partial^2}{\partial {r'_{t}}^2} - \Delta
+\frac{\partial^2}{\partial {r\'_{t}}^2} - \Delta_\Phi
 = \left(\frac{\partial}{\partial r'_t} + iD_3\right)\left(\frac{\partial}{\partial r'_t} - iD_3\right),
 $$
 
-the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta+2i\partial/\partial r'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega r'_t/c)$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
+the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta_Q + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r\'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega r'_t/c)$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
 
 $$
--\Delta - \frac{\omega^2}{c^2} = (D_3+k_\Phi)(D_3-k_\Phi), \qquad k_\Phi=\frac{\omega}{c},
+-\Delta_\Phi - \frac{\omega^2}{c^2} = (D_3+k_\Phi)(D_3-k_\Phi), \qquad k_\Phi=\frac{\omega}{c},
 $$
 
 the scalar shift of *Biquaternion Regular Functions* with its two branches $D_{3\pm k_\Phi}$ and their fundamental solutions $\mathcal V_{\mathrm{vek},\pm k_\Phi}$; the kernel of the whole lies in the union of the two half-kernels, which is the decomposition used in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. This second form is the source's and is correct as printed, with $k_\Phi$ the scalar wavenumber.
@@ -276,7 +276,7 @@ The last construction of the source is the one that points at the inverse proble
 Three substitution identities are computed. For the Laplacian,
 
 $$
-(\Delta+k_\Phi^2)\bigl(\exp(i\vec k_\Phi\cdot r_x)b\bigr) = \exp(i\vec k_\Phi\cdot r_x)\bigl(\Delta+2i\vec k_\Phi\cdot\nabla\bigr)b ,
+(\Delta_\Phi+k_\Phi^2)\bigl(\exp(i\vec k_\Phi\cdot r_x)b\bigr) = \exp(i\vec k_\Phi\cdot r_x)\bigl(\Delta+2i\vec k_\Phi\cdot\nabla\bigr)b ,
 $$
 
 so that the Helmholtz operator becomes the **conjugate** operator $-\Delta-2ik\cdot\nabla-\lambda^2$ below. For the unshifted Dirac operator,
@@ -310,7 +310,7 @@ For a general quaternion-valued $b$ the two products do not combine and the subs
 Faddeev's decomposition is to write the wave vector as $\vec k_\Phi=\eta+t\gamma$ with $\gamma\in S^2$ a direction, $\eta\cdot\gamma=0$, and to conjugate by the plane wave along $\gamma$. Applied to $\exp(it\gamma\cdot x)w(x)$ the Helmholtz operator gives
 
 $$
-(\Delta+k_\Phi^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-h_t^2+k_\Phi^2+2it\gamma\cdot\nabla+\Delta\bigr)w ,
+(\Delta_\Phi+k_\Phi^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-h_t^2+k_\Phi^2+2it\gamma\cdot\nabla+\Delta_\Phi\bigr)w ,
 $$
 
 so the operator to invert is $-\Delta-2it\gamma\cdot\nabla-\lambda^2$ with

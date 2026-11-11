@@ -306,7 +306,7 @@ $$
 \qquad
 \tilde{\nabla}^{\natural} = e_t\,\partial/\partial R_{1t} - \nabla,
 \qquad
-\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2 + \Delta = \Delta + \partial^2/\partial R_{1t}^2,
+\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2 + \Delta_Q,
 $$
 
 the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = -\omega r'_t/c + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
@@ -425,7 +425,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=\beta$ | Rapidity |
 | $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate |
-| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta$ | d'Alembertian, series convention |
+| $\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta_Q$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$ | Restricted Lorentz group |
 
 ## Further Reading

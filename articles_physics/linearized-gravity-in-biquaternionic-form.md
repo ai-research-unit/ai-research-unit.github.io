@@ -36,7 +36,7 @@ The framework's conventions are used here and are not restated. The material bas
 One derived form is needed repeatedly, and it is recorded once. The framework's imaginary time is $Q_t=i q'_t$, so $\partial/\partial R_t=-i\,\partial/\partial x_0$ and the biquaternionic d'Alembertian is the tensorial wave operator,
 
 $$
-\Box = \partial^2/\partial R_t^2 + \Delta = -\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
+\Box_\Phi = -\frac{\partial^2}{\partial {r'_t}^2}+\frac{\partial^2}{\partial r_x^2}+\frac{\partial^2}{\partial r_y^2}+\frac{\partial^2}{\partial r_z^2} .
 $$
 
 A product $k_{\Phi,\lambda}x_\lambda$ below is the invariant contraction $-k_{t}^{\prime}x_0+k_{\Phi x}r_x+k_{\Phi y}r_y+k_{\Phi z}r_z$, not a sum of like components; its one minus is the square of the $i$ in $Q_t=i q'_t$.

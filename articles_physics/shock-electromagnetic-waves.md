@@ -33,7 +33,7 @@ $$
 Applying $(\tilde\nabla_\Phi)^{\natural}$ to both sides and using $\Box = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ gives the wave equation
 
 $$
-\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
+\Box_\Phi \tilde{F} = 0, \qquad \Box_\Phi = \Delta_\Phi - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
 $$
 
 This is a **linear, constant-coefficient, hyperbolic** equation. Two structural features follow.

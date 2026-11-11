@@ -17,7 +17,7 @@ The article is organized as follows. The operator, its convention and its defini
 Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$, $\vec e_j \vec e_\eta=-\delta_{j\eta}e_t+\varepsilon_{j\eta l}\vec e_l$; central $i$; $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$; $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta \vec e_\eta\partial/\partial R_\eta$; and the series d'Alembertian
 
 $$
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\partial^2/\partial R_t^2+\Delta=\Delta+ \partial^2/\partial R_t^2 .
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2 .
 $$
 
 The mass parameter is $k_m=mc/\hbar$, so that $k_m^{2}$ is the quantity that multiplies the field in the c-explicit equation; as the companion article *The Feynman Propagator in Biquaternionic Form* does, the kernels are quoted with $c$ restored. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and its material reading, $Q_t=i q'_t$. No second metric is used anywhere in this article.

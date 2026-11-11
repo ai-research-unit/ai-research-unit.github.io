@@ -313,7 +313,7 @@ and the last term is exactly the mass term of $\Box - k_m^{2}$. The two cancel, 
 $$
 \boxed{\;
 \left(\Box_\Phi-k_m^{2}\right)\left(f\chi\right)
-= f\left(-\frac{\partial^{2}}{\partial {r'_{t}}^{2}} + 2 i k_m\,\frac{\partial}{\partial r'_t} + \Delta\right)\chi\;}.
+= f\left(-\frac{\partial^{2}}{\partial {r'_{t}}^{2}} + 2 i k_m\,\frac{\partial}{\partial r'_t} + \Delta_\Phi\right)\chi\;}.
 $$
 
 The cancellation is identical, not asymptotic, and no solution is lost: $f$ has unit modulus, so the substitution $\tilde{Ξ}\mapsto\chi = f^{-1}\tilde{Ξ}$ is invertible. What it costs is order, not accuracy — the second derivative in $r'_t$ is still there, and $k_m$ has moved from a constant term to a coefficient on the first derivative.
@@ -359,7 +359,7 @@ which is the non-relativistic kinetic energy. That is the entire use of the gene
 **From a number to an operator.** The truncated $\Omega$ is a number on each mode, and a number becomes an operator when $k_\Phi^{2}\to-\Delta_\Phi$. On a plane wave the two agree by construction,
 
 $$
--\frac{1}{2k_m}\,\Delta\chi
+-\frac{1}{2k_m}\,\Delta_\Phi\chi
 = -\frac{1}{2k_m}\left(-k_\Phi^{2}\right)\chi
 = \frac{k_\Phi^{2}}{2k_m}\,\chi
 = \Omega\chi ,
@@ -368,7 +368,7 @@ $$
 and the plane waves are complete, so the first-order relation $\frac{\partial\chi}{\partial r'_t}=-i\Omega\chi$ of the wavenumbers article holds between operators:
 
 $$
-i\,\frac{\partial\chi}{\partial r'_t} = -\frac{1}{2k_m}\,\Delta\chi .
+i\,\frac{\partial\chi}{\partial r'_t} = -\frac{1}{2k_m}\,\Delta_\Phi\chi .
 $$
 
 The two sides were compared on the case of §*Plane Waves and the Dispersion Relation* and match to machine precision, at the one-term accuracy of the expansion, which is $1.5\times10^{-3}$ there.
@@ -384,7 +384,7 @@ The two sides were compared on the case of §*Plane Waves and the Dispersion Rel
 $$
 \boxed{\;
 i\hbar\,\frac{\partial\chi}{\partial t'}
-= -\frac{\hbar^{2}}{2m}\,\Delta\chi\;}
+= -\frac{\hbar^{2}}{2m}\,\Delta_\Phi\chi\;}
 $$
 
 ## What the Form Adds and What It Relabels
@@ -429,7 +429,7 @@ with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and sca
 
 Being second order in time, the equation has two frequency branches and requires both $\tilde{Ξ}$ and $\tilde{Ξ}^{*}$. Its dispersion relation is $\omega^2 = c^2k_\Phi^{2} + c^2k_m^{2}$, that is $k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2}$, which is the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\hbar^{2}= -m^{2}c^{2}/\hbar^{2}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
-The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde\nabla_\Phi$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i k_m r'_t)$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\frac{\partial\chi}{\partial t'} = -\frac{\hbar^{2}}{2m}\Delta\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
+The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde\nabla_\Phi$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i k_m r'_t)$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\frac{\partial\chi}{\partial t'} = -\frac{\hbar^{2}}{2m}\Delta_\Phi\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
 
 One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\vec F$ the second-order operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\vec F,\vec F)$ and $2i(\vec F,\nabla)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
 

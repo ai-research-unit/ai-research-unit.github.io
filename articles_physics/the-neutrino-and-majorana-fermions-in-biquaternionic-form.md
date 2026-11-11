@@ -382,7 +382,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
 | $c_0:\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; $c_k:\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
 | $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
-| $\Box=\sum_\mu\partial^2/\partial R_\mu^2=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta$ is the spatial Laplacian |
+| $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta$ is the spatial Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\mathcal{C}:\tilde{Ξ}_{\mathrm{sp}}\mapsto i\bar{\tilde{Ξ}}_{\mathrm{sp}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |
 | $\tilde{Ξ}_{\mathrm{sp}}^c=\mathcal{C}\tilde{Ξ}_{\mathrm{sp}}$ | Charge conjugate; $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ defines Majorana |

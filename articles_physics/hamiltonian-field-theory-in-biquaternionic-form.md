@@ -14,7 +14,7 @@ $$
 \qquad k_m=\dfrac{mc}{\hbar},
 $$
 
-and the equation of motion is $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$, that is $\partial^2\xi/\partial {r'_{t}}^2=c^2(\Delta\xi-k_m^{2}\xi)$.
+and the equation of motion is $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0$, that is $\partial^2\xi/\partial {r'_{t}}^2=c^2(\Delta_\Phi\xi-k_m^{2}\xi)$.
 
 The companion articles are:
 
@@ -61,10 +61,10 @@ Hamilton's equations for the field are the pair
 $$
 \partial\xi/\partial r'_t=\frac{\delta H}{\delta\pi^\dagger}=c^2\pi^\dagger,
 \qquad
-\partial\pi/\partial r'_t=-\frac{\delta H}{\delta\xi^\dagger}=-c^2(\Delta\xi-k_m^{2}\xi),
+\partial\pi/\partial r'_t=-\frac{\delta H}{\delta\xi^\dagger}=-c^2(\Delta_\Phi\xi-k_m^{2}\xi),
 $$
 
-where $\delta/\delta$ is the variational derivative and the second equation uses the first to eliminate $\pi$. Eliminating $\pi$ between them returns $\partial^2\xi/\partial {r'_{t}}^2=c^2(\Delta\xi-k_m^{2}\xi)$, the Klein–Gordon equation: the Hamiltonian field equations and the Euler–Lagrange equation are the same equations, exactly as in the finite-dimensional case. The only new feature is that the conjugate equation is a *PDE for a density* rather than an ODE for a number, and the variational derivative is what makes the pairing between them work.
+where $\delta/\delta$ is the variational derivative and the second equation uses the first to eliminate $\pi$. Eliminating $\pi$ between them returns $\partial^2\xi/\partial {r'_{t}}^2=c^2(\Delta_\Phi\xi-k_m^{2}\xi)$, the Klein–Gordon equation: the Hamiltonian field equations and the Euler–Lagrange equation are the same equations, exactly as in the finite-dimensional case. The only new feature is that the conjugate equation is a *PDE for a density* rather than an ODE for a number, and the variational derivative is what makes the pairing between them work.
 
 ### The Field Poisson Bracket
 

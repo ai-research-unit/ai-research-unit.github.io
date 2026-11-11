@@ -133,11 +133,11 @@ The corpus's media article develops the **linear** case in full: for a homogeneo
 The source's second-order equations are obtained by eliminating D and H. Applying the curl to the first sourced equation, substituting rot E from the source-free pair, and using the constitutive relations, gives
 
 $$
-\Delta\vec B - \frac{\partial^2}{\partial {r'_{t}}^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial r'_t}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
+\Delta_\Phi\vec B - \frac{\partial^2}{\partial {r'_{t}}^2}\vec B + \Delta_\Phi\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial r'_t}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
 $$
 
 $$
-\Delta\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial r'_t}\mathrm{rot}\,\vec h = \frac{\partial}{\partial r'_t}\vec J + \mathrm{grad}\,\rho .
+\Delta_\Phi\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec E - \frac{\partial^2}{\partial {r'_{t}}^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial r'_t}\mathrm{rot}\,\vec h = \frac{\partial}{\partial r'_t}\vec J + \mathrm{grad}\,\rho .
 $$
 
 The time derivative in front of the two rotation terms belongs there: it is what makes the deformed terms cancel for a plane wave, and it is easily lost in the two-column layout of the source. At $\vec\kappa=0$ these are the ordinary wave equations. At $\vec\kappa\ne0$ they are **non-linear**, because $\vec d$ and $\vec h$ are quadratic in the fields.

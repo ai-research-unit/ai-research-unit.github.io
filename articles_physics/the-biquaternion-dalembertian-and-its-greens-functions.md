@@ -4,7 +4,7 @@
 
 Every relativistic equation of this series is built from a single operator. The Klein–Gordon equation writes it with a scalar mass term, the Dirac equation uses its first-order square root, Maxwell's equations use the same square root on a bivector-valued field, and the retarded potentials use its inverse. That operator is the **biquaternion d'Alembertian**
 $$
-\Box = \tilde\nabla_\Phi\,(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\,\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi ,
+\Box = \tilde\nabla_\Phi\,(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\,\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_Q ,
 $$
 built from the biquaternionic gradient $\tilde\nabla_\Phi$ and its quaternion conjugate. The purpose of this article is to establish the operator itself, its adjoint structure, and the collection of distributions that invert it — its **Green's functions** — once and for all, so that the spin-specific articles can cite the result instead of rebuilding it.
 
@@ -12,7 +12,7 @@ The article is deliberately not about a particle. The Klein–Gordon equation an
 
 First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde\nabla_\Phi\rangle_{\natural}$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \vec k_\Phi^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-(\tilde\nabla_\Phi)^{\natural}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Algebra and Element Conventions*,
 $$
-\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
+\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
 $$
 and it is the one used by the Klein–Gordon and Dirac companions and by every article of the series. The Weyl-spinor exercise writes the same operator in real time as $-\partial^2/\partial {r'_{t}}^2 + \nabla^2$.
 
@@ -70,7 +70,7 @@ $$
 The same computation with the factors exchanged gives $(\tilde\nabla_\Phi)^{\natural} \tilde{\nabla}_\Phi = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
 \boxed{\;
-\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.
 $$
 
 The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde\nabla_\Phi\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
@@ -395,7 +395,7 @@ A last structural remark ties the kernel theory to the algebra's null cone. The 
 
 The biquaternion d'Alembertian is the biquaternion norm of the gradient,
 $$
-\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 ,
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 ,
 $$
 a central scalar operator whose symbol is $\omega^2/c^2 - \vec k_\Phi^2$ and whose sign is the series convention. Its adjoint is the gradient's adjoint composed with itself; the gradient obeys $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, so
 $$

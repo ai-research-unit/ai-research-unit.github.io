@@ -468,7 +468,7 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\mathbb{B}_{C}$ | Centre, $\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$; the scalar's home |
 | $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $\Box=\partial^{2}/\partial R_t^{2}+\Delta=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | d'Alembertian on the material sector |
+| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ | d'Alembertian on the material sector |
 | $r'_t=c\,t'$ | Material time, a length in the same unit as $r_\eta$ |
 | $R_t=h_t+i r'_t$ | Complex time; $h_t$ informational, $r'_t$ material |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |

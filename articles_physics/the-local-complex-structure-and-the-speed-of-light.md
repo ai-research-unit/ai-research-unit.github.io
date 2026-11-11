@@ -139,8 +139,7 @@ so the aperture of the light cone in seconds is exactly $c$. The requirement is 
 
 **Route 2: the characteristics of the wave operator.** The biquaternionic gradient and its quaternion conjugate multiply to the d'Alembertian,
 $$
-\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta
-=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2 ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2 ,
 $$
 since $\partial/\partial R_t=-i\,\partial/\partial r'_t$. Its characteristics in the length coordinate are the same $45^\circ$ cone. Maxwell's equations in a linear medium reduce to the same operator,
 $$
@@ -179,7 +178,7 @@ A **global** complex structure on spacetime, in the sense the question requires 
 
 A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with no factor in the map, $r'_t\mapsto i r'_t e_t$, and the *unit* of the temporal coordinate is local, $r'_t=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the unit varies, and because $c$ is real and positive the variation is a rescaling of the time axis and not a rotation of it. At each point the induced quadratic form is the unit form $-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; read in seconds it is $-c^2dt'^2+dr_x^2+dr_y^2+dr_z^2$, the local Minkowski metric with $c$ as its one varying entry.
 
-The number $c$ is read in two places and the two agree. In the length coordinate the null cone of the biquaternion norm is the $45^\circ$ cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=1$; in seconds it has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial^2/\partial R_t^2+\Delta=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, read in seconds, must equal $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. Neither reading derives the number; together they show that one number serves as the temporal unit and as the characteristic speed. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
+The number $c$ is read in two places and the two agree. In the length coordinate the null cone of the biquaternion norm is the $45^\circ$ cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=1$; in seconds it has aperture $c$. The characteristic speed of the local wave operator $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, read in seconds, must equal $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. Neither reading derives the number; together they show that one number serves as the temporal unit and as the characteristic speed. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
 
 The interpretation closes no empirical gap and claims no global structure. Its content is that the signature is algebra, the unit of the temporal axis is local, and the one conversion is the speed of light.
 
@@ -203,7 +202,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $t'=r'_t/c$, $g_{tt}=-c^2$ | The temporal slot in seconds; the interval there is $-c^2dt'^2+d\vec r^2$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed (the local temporal conversion), vacuum speed |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian |
 | $x_0=i r'_t$ | Complex time coordinate |
 
 ## Further Reading

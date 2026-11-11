@@ -121,14 +121,14 @@ The wave speed is frequency-dependent and exceeds $c$ for every finite $\hbar/(m
 A static field obeys
 
 $$
-\left(\Delta-(k_m)^{2}\right)\xi=-g\rho .
+\left(\Delta_\Phi-(k_m)^{2}\right)\xi=-g\rho .
 $$
 
 The operator $\Delta-(k_m)^{2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:
 
 $$
 G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/\hbar/(mc))}{4\pi r}, \qquad
-\left(\Delta-(mc/\hbar)^{2}\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
+\left(\Delta_\Phi-(mc/\hbar)^{2}\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
 $$
 
 with $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$. The scale $\hbar/(mc)$ is the **range** of the field: beyond a few $\hbar/(mc)$ the field is exponentially suppressed, while in the massless case $mc/\hbar=0$ the decay is only $1/r$ and the range is infinite. This is the classical reason a massive scalar exchange produces a short-range force and a massless one a long-range force, and it is why the inverse-square law is singled out by the massless central scalar.
@@ -374,7 +374,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
 | $\omega^2=c^2k^2+c^2(k_m)^{2}$ | Dispersion relation of the free field |
-| $G_{\hbar/(mc)}=\exp(-r/\hbar/(mc))/(4\pi r)$ | Screened Green's function; $(\Delta-(k_m)^{2})G_\mu=-\delta^{(3)}$ |
+| $G_{\hbar/(mc)}=\exp(-r/\hbar/(mc))/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(k_m)^{2})G_\mu=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{Ξ}=gQ\exp(-r/\hbar/(mc))/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $mc/\hbar=0$ |
 | $\vec\beta$, $R$, $r'_{\mathrm{ret},t}$ | Source velocity over $c$, retarded distance, retarded time |
