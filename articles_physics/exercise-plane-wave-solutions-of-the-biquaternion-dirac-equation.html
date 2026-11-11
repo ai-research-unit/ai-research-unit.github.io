@@ -73,9 +73,9 @@
 <p>This is a worked exercise on the biquaternion Dirac equation, written in the biquaternion algebra and on its elements. The field is one biquaternion, the derivative is the corpus gradient $\tilde\nabla_\Phi$, and every result below is a statement about elements and their products. The parent article, <em>The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit</em>, supplies the equation, the field, the two frequency branches and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the solutions written as elements, the normalisation in the biquaternion pairing, the spin sums as products of elements, the massless limit, the change of the reading of the two parts, and the helicity pieces with their determinant.</p>
 <p><strong>One operator, two members.</strong> The gradient is the one first-order operator of the equation, and the mass couples two members,</p>
 <p>$$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
-<p>which is the dynamics of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$, and only that product is the wave operator.</p>
+<p>which is the dynamics of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and only that product is the wave operator.</p>
 <p><strong>The two parts.</strong> The field carries the chirality subscript of <em>Special Element Conventions</em>, §<em>The Chirality Convention</em>, and its two parts are read by the right action $\tilde Q\mapsto-i\tilde Q\vec e_z$: the value $-1$ written $L$ and the value $+1$ written $R$. A left multiplication keeps the value, a product takes the value of its right factor, a scalar multiple keeps the value, and a right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two values. The gradient multiplies on the left and the reading on the right, so no derivative moves the value; the mass is a central coefficient multiplying on the left, and it moves none either. What the mass does is relate the two parts, and the pair is the statement of that relation.</p>
 <p><strong>The seven problems</strong> are: <strong>(1)</strong> the solutions at rest and at general momentum; <strong>(2)</strong> the covariant normalisation and the orthogonality; <strong>(3)</strong> the spin sums; <strong>(4)</strong> the massless limit and the locking of helicity to the member; <strong>(5)</strong> the two parts and the change of the reading; <strong>(6)</strong> the biquaternionic mass shell; <strong>(7)</strong> the helicity pieces and the piece determinant. Problems 1, 2, 4 and 6 use the action on elements, Problems 3 and 7 the wave element read with it, and Problem 5 the two parts themselves.</p>
 <h2 id="the-gradient-and-the-two-parts">The Gradient and the Two Parts</h2>
@@ -91,7 +91,7 @@ $$</p>
 \qquad \varepsilon=(1,-1,-1,-1),
 $$</p>
 <p>$$
-\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 \qquad \Delta_Q=\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}.
 $$</p>
 <p>On the material sector $Q_t=i r'_t$ the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta-\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla_\Phi$ names the gradient.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p>$$
 \tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$</p>
-<p>because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.</p>
+<p>because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.</p>
 <p><strong>The wave element.</strong> A plane wave is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{\mathrm{sp},0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by</p>
 <p>$$
 \tilde P_{\Phi}=\hbar\tilde K_{\Phi},\qquad
@@ -142,7 +142,7 @@ $$</p>
 <p><strong>Conventions.</strong> The solutions carry $\hbar$ and $c$ explicitly; Problem 6 collects the same expressions in the mass-length form. The frame is the $\mathbb{B}_{\Phi}$ frame of <em>Frame and Metric Conventions</em>, §<em>The $\mathbb{B}_{\Phi}$ Frame</em>, and the values are read on its third direction, $\vec e_z$. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde{Ζ}=i\vec u_p$, a root of the central value $+1$, $\tilde{Ζ}^2=e_t$. The Hermitian conjugation $^{*}$ is the one of <em>Algebra and Element Conventions</em>, §<em>The Conjugations</em>, and the contraction of the gradient with a momentum is written out rather than slashed, as <em>Index Notation and Corpus Conventions</em> requires: hence the element $i\tilde P_{\Phi}$ for the symbol and no slash anywhere in the article.</p>
 <h2 id="problem-1-the-solutions-at-rest-and-at-general-momentum">Problem 1: The solutions at rest and at general momentum</h2>
 <p><strong>Statement.</strong> Solve the pair for the positive-frequency branch $\tilde w$ and for the negative-frequency branch $\tilde v$, explicitly at rest and at general momentum, in the two readings.</p>
-<p><strong>Solution.</strong> Eliminating the second part gives $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell</p>
+<p><strong>Solution.</strong> Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell</p>
 <p>$$
 E^2=\vec p^{\,2}+m^2 .
 $$</p>
@@ -214,7 +214,7 @@ $$</p>
 <p><strong>Solution.</strong> The left-hand side is a sum of two products of elements, one per helicity, and read as an operator it has rank two: each term is the solution multiplied by the number its pairing with $\tilde{Ξ}$ returns. The two solutions at fixed momentum are the two helicity eigenstates, and their parts $\tilde{Ξ}_{\mathrm{sp},R}$ span the part of value $R$, so the sum reproduces $\tilde{Ξ}$ on the right and, through the action, on the left. The right-hand side is the element $i\tilde P_{\Phi}+m$ multiplying $\tilde{Ξ}$ on the left, which is the gradient plus the mass read on a plane wave of the momentum: $\tilde\nabla_\Phi\tilde{Ξ}+k_m\tilde{Ξ}$. The negative-frequency sum is identical in structure with the roles of the two values interchanged, and gives the gradient minus the mass. Both hold for every element and not only on the solutions, and both were checked on a basis of $\mathbb B$.</p>
 <p><strong>The second-order closure.</strong> The two sums are complementary, and eliminating between the members gives the closure</p>
 <p>$$
-(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
 $$</p>
 <p>The scalar square is the interval, and the collapse is two lines:</p>
 <p>$$
@@ -226,14 +226,14 @@ $$</p>
 <p><strong>Statement.</strong> Take $m=0$ and exhibit the locking of helicity to the member.</p>
 <p><strong>Solution.</strong> At $m=0$ the mass term is gone and the pair decouples into two independent equations, one on each part:</p>
 <p>$$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,\qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=0 .
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0 .
 $$</p>
 <p>For $m=0$ the dispersion is $E=\lvert\vec p\rvert$ and the wave element is null, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=0$, so the left multiplication by $\tilde P_{\Phi}$ loses rank and its kernel is of two complex dimensions. Every element of that kernel carries helicity $+1$:</p>
 <p>$$
 \tilde P_{\Phi}\,\tilde F=0\ \Longrightarrow\ \tilde{Ζ}\,\tilde F=+\tilde F,\qquad
 \tilde P_{\Phi}^{\natural}\,\tilde F=0\ \Longrightarrow\ \tilde{Ζ}\,\tilde F=-\tilde F .
 $$</p>
-<p>So the labels are locked to the members: <strong>the field annihilated by $\tilde\nabla_\Phi$ carries positive helicity and the field annihilated by $(\tilde\nabla^{\natural})_\Phi$ negative helicity.</strong> The mass is the only term that couples the two members, and setting it to zero decouples them; the two kernels are of two complex dimensions each and meet only at zero, so together they account for the four complex dimensions of the carrier.</p>
+<p>So the labels are locked to the members: <strong>the field annihilated by $\tilde\nabla_\Phi$ carries positive helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ negative helicity.</strong> The mass is the only term that couples the two members, and setting it to zero decouples them; the two kernels are of two complex dimensions each and meet only at zero, so together they account for the four complex dimensions of the carrier.</p>
 <p><strong>The position-space reading.</strong> On the material sector the free member reads</p>
 <p>$$
 -i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}=0 .
@@ -315,8 +315,8 @@ $$</p>
 <ol>
 <li><strong>The solutions.</strong> Eliminating the second part gives the mass shell $E^2=\vec p^{\,2}+m^2$; on it the second part is free and the first is $\frac1m\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}$, the two parts standing in the norm ratio $(E\mp\lvert\vec p\rvert):(E\pm\lvert\vec p\rvert)$ for helicity $\pm1$. At rest $\tilde w_L(0)=-\tilde w_R(0)$, with basis $e_t-i\vec e_z$ and $\vec e_x+i\vec e_y$ for the part of value $R$; in the other reading the same elements are read on $\vec e_x$.</li>
 <li><strong>Normalisation.</strong> The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$ and from the geometric mean $\sqrt{E^2-\vec p^{\,2}}=m$; the Hermitian products are $2E$.</li>
-<li><strong>Spin sums.</strong> For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}-m)\tilde{Ξ}$ read as products of elements; the closure $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi=\Box$ gives $\Box=k_m^{2}$ on the shell, and $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}$.</li>
-<li><strong>Massless limit.</strong> The pair decouples, the field annihilated by $\tilde\nabla_\Phi$ keeps one helicity and the field annihilated by $(\tilde\nabla^{\natural})_\Phi$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.</li>
+<li><strong>Spin sums.</strong> For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}-m)\tilde{Ξ}$ read as products of elements; the closure $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$ gives $\Box=k_m^{2}$ on the shell, and $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}$.</li>
+<li><strong>Massless limit.</strong> The pair decouples, the field annihilated by $\tilde\nabla_\Phi$ keeps one helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.</li>
 <li><strong>The two parts.</strong> The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.</li>
 <li><strong>Mass shell.</strong> The condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ is the quaternionic-norm statement $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.</li>
 <li><strong>Helicity pieces.</strong> The scalar square of the wave is $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^{2}\,c^{2}-p^2$; the pieces are isospectral, the determinant of the pair is $(m^{2}\,c^{2}-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.</li>
@@ -329,8 +329,8 @@ $$</p>
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial R_\mu$, four components |
-| $(\tilde\nabla^{\natural})_\Phi$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
-| $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
+| $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
+| $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
 | $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |

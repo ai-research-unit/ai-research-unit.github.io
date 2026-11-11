@@ -83,7 +83,7 @@ $$</p>
 <ol>
 <li><strong>The coupled equation.</strong> Replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives the pair $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$. The second operator is the $\natural$-image of the first, so it carries the quaternion-conjugate gradient and the conjugate connection.</li>
 <li><strong>Exact gauge covariance, massive as well as massless.</strong> The pair holds in every gauge when it holds in one, because the parent's mass term is linear in the field and the local phase is one central scalar multiplying the field from the left, so the mass term acquires the same factor as the derivative term. The mass breaks the <em>relative</em> phase of the two parts, not the common one.</li>
-<li><strong>A negative result on the current.</strong> The bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is a material-sector object and is gauge invariant, but it is <strong>not conserved</strong> on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</li>
+<li><strong>A negative result on the current.</strong> The bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is a material-sector object and is gauge invariant, but it is <strong>not conserved</strong> on solutions of the massless equation: the exact solution written in the section on the current gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. The electromagnetic current of the coupled system is therefore not a product of the field with its conjugate inside the algebra. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</li>
 </ol>
 <p>The division between what is established and what is interpretation is stated at the outset and kept explicit.</p>
 <ul>
@@ -95,11 +95,11 @@ $$</p>
 <h2 id="the-dirac-field-and-its-phase-symmetry">The Dirac Field and Its Phase Symmetry</h2>
 <p>The <strong>biquaternion Dirac field</strong> is an element $\tilde{Ξ}_{\mathrm{sp}}(\tilde{Q}) \in \mathbb{B}$ satisfying the free equation</p>
 <p>$$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R} .
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R} .
 $$</p>
 <p>The two members are the <strong>chiral pair</strong>. The first acts on the $R$ part of the field by the gradient, the second on the $L$ part by the quaternion conjugate of the gradient. When $m = 0$ they decouple,</p>
 <p>$$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = 0 .
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0 .
 $$</p>
 <p>The first member is then identical in form to the source-free biquaternion Maxwell equation obeyed by the field-strength biquaternion $\tilde{F}$; the difference is the carrier, the Maxwell field being an element of the vector part and the Dirac field a general element.</p>
 <p><strong>The two components of the pair.</strong> The field is an element, and it is written as the sum of its two parts,</p>
@@ -125,7 +125,7 @@ $$</p>
 <p>is a symmetry of the equation, massive or massless, because a central constant commutes with the units and with the derivatives and therefore passes through both members of the pair:</p>
 <p>$$
 \tilde\nabla_\Phi\!\left(\lambda\tilde{Ξ}_{\mathrm{sp},R}\right) = \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}, \qquad
-(\tilde\nabla^{\natural})_\Phi\!\left(\lambda\tilde{Ξ}_{\mathrm{sp},L}\right) = \lambda\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} .
+(\tilde\nabla_\Phi)^{\natural}\!\left(\lambda\tilde{Ξ}_{\mathrm{sp},L}\right) = \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
 $$</p>
 <p>One and the same $\lambda$ multiplies both members. The pair therefore scales uniformly, and the mass term, which is linear in the field, is invariant.</p>
 <p><strong>What the mass breaks is the relative phase.</strong> With $\varsigma$ a nonzero central constant, the massless pair is invariant under</p>
@@ -144,9 +144,9 @@ $$</p>
 <p>$$
 \boxed{\ \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R}\ }
 $$</p>
-<p>with $\tilde\nabla_{\mathrm{gco}}^{\natural} := (\tilde\nabla^{\natural})_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}$ — the quaternion conjugate of the operator, not the operator of the opposite charge — that is,</p>
+<p>with $\tilde\nabla_{\mathrm{gco}}^{\natural} := (\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}$ — the quaternion conjugate of the operator, not the operator of the opposite charge — that is,</p>
 <p>$$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>and in the massless case the two members decouple separately,</p>
 <p>$$
@@ -186,12 +186,12 @@ $$</p>
 <p>is covariant for the reason computed in the next section: $\lambda$ is central, so it passes through both gradients and through the mass.</p>
 <p><strong>The two-sided form.</strong> The parent also carries Kravchenko's equation, a single equation on a general element $F$ in which the derivative acts on the left and the mass term on the right (<em>The Dirac Equation in Biquaternionic Form</em>, §<em>The One-Sided and the Two-Sided Equation</em>), with $\vec u$ the declared unit of the frame:</p>
 <p>$$
-\mathcal{N}F = -(\tilde\nabla^{\natural})_\PhiF - k_m\,i\,\overline{F}\,\vec u = 0 ,
+\mathcal{N}F = -(\tilde\nabla_\Phi)^{\natural}F - k_m\,i\,\overline{F}\,\vec u = 0 ,
 $$</p>
 <p>the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a conjugation, the central $i$ and a right multiplication by $\vec u$, and it is not a scalar multiple of the field.</p>
 <p><strong>Why the prescription attaches to the pair.</strong> Under a constant central phase $F\mapsto\lambda F$ the two terms of the two-sided form scale differently,</p>
 <p>$$
--(\tilde\nabla^{\natural})_\Phi\left(\lambda F\right) = \lambda\left(-(\tilde\nabla^{\natural})_\PhiF\right),
+-(\tilde\nabla_\Phi)^{\natural}\left(\lambda F\right) = \lambda\left(-(\tilde\nabla_\Phi)^{\natural}F\right),
 \qquad
 -k_m\,i\,\overline{\lambda F}\,\vec u = \bar\lambda\left(-k_m\,i\,\overline{F}\,\vec u\right),
 $$</p>
@@ -206,7 +206,7 @@ $$</p>
 <p>$$
 \tilde\nabla_\Phi\lambda =\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda ,
 \qquad
-(\tilde\nabla^{\natural})_\Phi\lambda =\frac{i\,ϙ}{\hbar}\left((\tilde\nabla^{\natural})_\Phi\Gamma\right)\lambda ,
+(\tilde\nabla_\Phi)^{\natural}\lambda =\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda ,
 $$</p>
 <p>because $\lambda$ is a central scalar function and each derivative acts on it coefficient by coefficient. The first member then gives</p>
 <p>$$
@@ -217,12 +217,12 @@ $$</p>
 &= \lambda\left[\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp},R}\right] = \lambda\,\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} .
 \end{aligned}
 $$</p>
-<p>The two $\tilde\nabla_\Phi\Gamma$ terms cancel, and the central $\lambda$ moves to the left, past $\tilde{A}_{\Phi}$ and past the field. The second member repeats the computation with $\natural$ throughout, using $\tilde{A}_{\Phi,2}^{\natural} = \tilde{A}_{\Phi}^{\natural} - (\tilde\nabla^{\natural})_\Phi\Gamma$:</p>
+<p>The two $\tilde\nabla_\Phi\Gamma$ terms cancel, and the central $\lambda$ moves to the left, past $\tilde{A}_{\Phi}$ and past the field. The second member repeats the computation with $\natural$ throughout, using $\tilde{A}_{\Phi,2}^{\natural} = \tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma$:</p>
 <p>$$
 \begin{aligned}
 \tilde\nabla_{\mathrm{gco},2}^{\natural}(\lambda\tilde{Ξ}_{\mathrm{sp},L})
-&= (\tilde\nabla^{\natural})_\Phi(\lambda\tilde{Ξ}_{\mathrm{sp},L}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla^{\natural})_\Phi\Gamma\right)(\lambda\tilde{Ξ}_{\mathrm{sp},L}) \\
-&= \lambda\,(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\left((\tilde\nabla^{\natural})_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} -\frac{i\,ϙ}{\hbar}\left((\tilde\nabla^{\natural})_\Phi\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} \\
+&= (\tilde\nabla_\Phi)^{\natural}(\lambda\tilde{Ξ}_{\mathrm{sp},L}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\lambda\tilde{Ξ}_{\mathrm{sp},L}) \\
+&= \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L} -\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{\mathrm{sp},L} \\
 &= \lambda\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} .
 \end{aligned}
 $$</p>
@@ -272,7 +272,7 @@ $$</p>
 <p><strong>What it is not.</strong> The article does not declare the standard minimal coupling deficient, and with the linear mass term it does not need to: the massive sector is gauge covariant on the same footing as the massless one. What the biquaternion form adds is the location of the coupling in the algebra — the covariant derivative acting by left multiplication, with the central phase passing through the linear mass and the relative phase broken instead. The residual question of the left-versus-right matter representation is the parent's, and is collected in the open questions below.</p>
 <p><strong>The interpretation that is taken.</strong> The parent's linear mass term is read here as the expression of an ordinary Dirac mass: a term that pairs the two parts of one element, and therefore carries the charge. The alternative reading — a mass term built on the real structure $\flat$, with no continuously charged massive field — remains available, but only for a different equation, one genuinely built on $\flat$; it is a statement about the algebra's real structure rather than about the parent, and it is where the companion articles on the neutrino and on the two kinds of mass continue the discussion.</p>
 <h2 id="the-interaction-current-and-the-maxwell-source">The Interaction Current and the Maxwell Source</h2>
-<p>Minimal coupling has a second half: the coupled field must <strong>source</strong> the electromagnetic field. In the biquaternion framework the sourced Maxwell equation is $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and the four-current $\tilde J_{\Phi}$ satisfies the integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$, the biquaternionic form of charge conservation.</p>
+<p>Minimal coupling has a second half: the coupled field must <strong>source</strong> the electromagnetic field. In the biquaternion framework the sourced Maxwell equation is $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and the four-current $\tilde J_{\Phi}$ satisfies the integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$, the biquaternionic form of charge conservation.</p>
 <p>The natural candidate for the current of the Dirac field is the bilinear</p>
 <p>$$
 \tilde J_{\Phi,\mathrm{sp}} = i\,\tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^* .
@@ -286,9 +286,9 @@ $$</p>
 \mathrm{Sc}\!\left(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*\right) = \|\tilde{Ξ}_{\mathrm{sp}}\|^2 \ \ge 0 ,
 $$</p>
 <p>the square of the topological norm, so the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ itself is $i\,\|\tilde{Ξ}_{\mathrm{sp}}\|^2$ — a positive imaginary number, of the $ic\rho$ form of a positive density with $c\rho = \|\tilde{Ξ}_{\mathrm{sp}}\|^2$. By these three tests it is a plausible current.</p>
-<p><strong>It is not conserved.</strong> The divergence of $\tilde J_{\Phi,\mathrm{sp}}$ in the $i r'_t$ convention is the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,\mathrm{sp}}$,</p>
+<p><strong>It is not conserved.</strong> The divergence of $\tilde J_{\Phi,\mathrm{sp}}$ in the $i r'_t$ convention is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}$,</p>
 <p>$$
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,\mathrm{sp}}\right) = \frac{\partial}{\partial R_t}\mathrm{Sc}\left(\tilde J_{\Phi,\mathrm{sp}}\right) + \mathrm{div}\,\vec J,
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}\right) = \frac{\partial}{\partial R_t}\mathrm{Sc}\left(\tilde J_{\Phi,\mathrm{sp}}\right) + \mathrm{div}\,\vec J,
 $$</p>
 <p>where $\vec J$ is the vector part of $\tilde J_{\Phi,\mathrm{sp}}$ — the quantity that would have to vanish on solutions. It does not, and one exact solution is enough to show it. Take</p>
 <p>$$
@@ -299,11 +299,11 @@ $$</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\left(-e_t + i\vec e_x\right)\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right) = 0 ,
 $$</p>
-<p>the left factor $(-e_t+i\vec e_x)$ annihilating the right one term by term. The field is therefore a solution of the first member of the massless pair; its $L$ part is zero, so the second member holds as well, and it is a solution of the massless biquaternion Dirac equation. It is the $R$ part of $(\tilde\nabla^{\natural})_\Phi\xi$ for this $\xi$. On it,</p>
+<p>the left factor $(-e_t+i\vec e_x)$ annihilating the right one term by term. The field is therefore a solution of the first member of the massless pair; its $L$ part is zero, so the second member holds as well, and it is a solution of the massless biquaternion Dirac equation. It is the $R$ part of $(\tilde\nabla_\Phi)^{\natural}\xi$ for this $\xi$. On it,</p>
 <p>$$
 \tilde J_{\Phi,\mathrm{sp}} = i\,\tilde{Ξ}_{\mathrm{sp},R}\tilde{Ξ}_{\mathrm{sp},R}^* = i\,e^{-2Q_t}\left(e_t + i\vec e_x\right),
 \qquad
-\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,\mathrm{sp}}\right) = -2\,e^{-2Q_t},
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}\right) = -2\,e^{-2Q_t},
 $$</p>
 <p>the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ being $i\,e^{-2Q_t}$, of the required $ic\rho$ form. The divergence is non-zero everywhere and equals $-2$ at the origin. The naive biquaternion product is therefore <strong>not</strong> the conserved electromagnetic current of the Dirac field. The sign of the bilinear does not help: $\tilde J_{\Phi,\mathrm{sp}}^{*} = -\tilde J_{\Phi,\mathrm{sp}}$, so passing to the conjugate flips the divergence to $+2\,e^{-2Q_t}$.</p>
 <p><strong>What the algebra does not supply.</strong> The field, its conjugate and the two products of the algebra are the only ingredients the algebra offers for a bilinear of this kind, and the one product of this form that is gauge invariant and of the density sign fails the conservation test on an exact solution. The failure is therefore not an accident of the sign or of the normalization. Whether some other construction inside the algebra — a restriction to a subspace, a further factor of the field, a second field — gives a conserved object is not settled here; the question is open question 3. What can be said without a further construction is that the conserved current of the older literature is not a product of the field with its conjugate inside the algebra, and needs an ingredient outside it; that statement is made in the closing section, where the frame is written.</p>
@@ -354,10 +354,10 @@ $$</p>
 <p><strong>The matter representation.</strong> The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which side is the physical Dirac field multiplied from? The second member of the pair is the $\natural$-image of the first, so the algebra relates the two sides without choosing between them, and the choice is made where the field is placed, not by the equation. What fixes it inside the algebra?</p>
 </li>
 <li>
-<p><strong>The interaction current.</strong> The gauge-invariant bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{B}_{\Phi}$ but is not conserved: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.</p>
+<p><strong>The interaction current.</strong> The gauge-invariant bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{B}_{\Phi}$ but is not conserved: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$, with $\xi = \exp(iQ_x-Q_t)$, gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$. Is there a construction on the algebra, on a restricted subspace or with a further factor of the field, that is conserved? Or is the current irreducibly an object of a larger structure, as the older literature's construction suggests? Not settled here.</p>
 </li>
 <li>
-<p><strong>The sourced system.</strong> How does the Dirac current feed the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}_{\mathrm{sp}}$, so it does not by itself close the corpus's system.</p>
+<p><strong>The sourced system.</strong> How does the Dirac current feed the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}_{\mathrm{sp}}$, so it does not by itself close the corpus's system.</p>
 </li>
 <li>
 <p><strong>The shared generator.</strong> The internal phase $\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)</p>
@@ -424,7 +424,7 @@ $$</p>
 <p>that is,</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>with the interaction term $\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$ that the localized central phase forces. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp},R} = 0$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0$.</p>
 <p>The <strong>massless</strong> and the <strong>massive</strong> coupled equations are both exactly gauge covariant: with $\tilde{Ξ}_{\mathrm{sp},2} = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$,</p>
@@ -436,7 +436,7 @@ $$</p>
 \left(\sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\mu}^{2} +\frac{i\,ϙ}{\hbar}\tilde{F} - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0 .
 $$</p>
 <p>The prescription attaches to the one-sided pair and not to the parent's two-sided form, because the two-sided form's mass term is a conjugation and a right multiplication and carries no continuous central phase to localize.</p>
-<p>The interaction current is not a product of the field with its conjugate inside the algebra. The gauge-invariant, material-sector bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is not conserved on solutions of the massless equation: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$ with $\xi = \exp(iQ_x-Q_t)$ gives $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$, while the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ has the required density form $i\,c\rho$. The conserved current of the older literature is not of this kind: it carries an adjoint built on a one-sided basis operator outside the algebra, and its form is recorded in the closing section with the other gamma-display statements. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the gauging of the relative phase of the two parts.</p>
+<p>The interaction current is not a product of the field with its conjugate inside the algebra. The gauge-invariant, material-sector bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is not conserved on solutions of the massless equation: the exact solution $\tilde{Ξ}_{\mathrm{sp},R} = \tfrac12\xi\left(-e_t - i\vec e_x + \vec e_y + i\vec e_z\right)$ with $\xi = \exp(iQ_x-Q_t)$ gives $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{sp}}) = -2\,e^{-2Q_t}$, while the scalar part of $\tilde J_{\Phi,\mathrm{sp}}$ has the required density form $i\,c\rho$. The conserved current of the older literature is not of this kind: it carries an adjoint built on a one-sided basis operator outside the algebra, and its form is recorded in the closing section with the other gamma-display statements. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the gauging of the relative phase of the two parts.</p>
 <p>One external result is recorded on the source side, and it is not a development of the framework: the identity of A. I. Arbab (arXiv:1708.06230v2), by which the mixed invariant of the two coupled field strengths is fixed by the pairing of the potential with the four-current. It is a constraint following from that source's own four equations, and the residual form in that section exhibits that dependence; it is not re-derived here, and its other claims are not adopted. It is recorded because it has the shape that Open Question 4 asks for, and because the corpus has no statement of that shape.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -484,7 +484,7 @@ $$</p>
 <td>The declared unit of the frame, in the parent's two-sided form</td>
 </tr>
 <tr>
-<td>$\Box = \tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$</td>
+<td>$\Box = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$</td>
 <td>d'Alembertian</td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ $$</p>
 <td>Anti-Hermitian conjugate of the field (the algebra's real structure; <strong>not</strong> the mass)</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>Free biquaternion Dirac equation (massive chiral pair)</td>
 </tr>
 <tr>
@@ -528,7 +528,7 @@ $$</p>
 <td>Covariant derivative (left action)</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}^{\natural} = (\tilde\nabla^{\natural})_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}$</td>
+<td>$\tilde\nabla_{\mathrm{gco}}^{\natural} = (\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}^{\natural}$</td>
 <td>Its $\natural$-image; the operator of the second member of the pair</td>
 </tr>
 <tr>

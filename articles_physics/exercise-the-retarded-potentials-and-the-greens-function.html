@@ -248,13 +248,13 @@ where $\rho_{\mathrm{ret}} = \rho(\vec y, r'_t - R)$ and $\vec J_{\mathrm{ret}} 
 <p>A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(r'_t - R)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a <em>second</em> Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec r_q(s)|/c - r'_t$ has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.</p>
 <p><strong>(c) The Lorenz gauge is automatic.</strong> Write the gauge scalar
 $$
-S = \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
+S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
-which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box = (\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$, applying $(\tilde\nabla^{\natural})_\Phi$ and taking the scalar part gives
+which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
 $$
-\Box S = \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\,\Box\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
+\Box S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$
-where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla^{\natural})_\Phi$ would have produced $\Box S \neq 0$.</p>
+where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla_\Phi)^{\natural}$ would have produced $\Box S \neq 0$.</p>
 <h2 id="problem-5-the-static-limit-and-the-coulombbiotsavart-check">Problem 5: The Static Limit and the Coulomb–Biot–Savart Check</h2>
 <p><strong>Statement.</strong> (a) For time-independent sources, show that the retarded potentials reduce to the static kernels. (b) Verify that these satisfy the static potential equation, and recover the Coulomb field of a point charge and the Biot–Savart field of a steady current, reconciling the first with the parent's static solution.</p>
 <p><strong>Solution. (a) The static reduction.</strong> If $\partial/\partial r'_t\,\rho = 0$ and $\partial/\partial r'_t\,\vec J = 0$, then $\rho(\vec y, r'_t - R) = \rho(\vec y)$ and $\vec J(\vec y, r'_t - R) = \vec J(\vec y)$, and the retarded time drops out of the integrand:
@@ -371,7 +371,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 <td>Real-quaternion subspace, scalar subspace</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi$</td>
+<td>$\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$</td>
 <td>Biquaternionic gradient and its quaternion conjugate</td>
 </tr>
 <tr>
@@ -435,7 +435,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 <td>Retarded time</td>
 </tr>
 <tr>
-<td>$S = \mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$</td>
+<td>$S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$</td>
 <td>Gauge scalar; $S = 0$ is the Lorenz gauge</td>
 </tr>
 <tr>

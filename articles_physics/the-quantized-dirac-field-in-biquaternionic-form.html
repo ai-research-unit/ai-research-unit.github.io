@@ -79,7 +79,7 @@
 <li><strong>The operator-valued observables.</strong> The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{B}_{\Phi}$, the charge in the centre $\mathbb{B}_{C}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.</li>
 <li><strong>The two-point function as an operator-valued distribution.</strong> The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.</li>
 </ul>
-<p>The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla^{\natural})_\Phi$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.</p>
+<p>The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.</p>
 <h2 id="the-operator-valued-field">The Operator-Valued Field</h2>
 <p>The classical field is an element-valued map $\tilde{Ξ}_{\mathrm{sp}}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators,</p>
 <p>$$
@@ -151,7 +151,7 @@ $$</p>
 <p>$$
 \boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$</p>
 <p>the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is two lines and no third object: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathcal{D}-k_m)$, with $\mathcal{D}$ the two-sided contraction of the next paragraph and not the retired pair glyph, and the contraction adds nothing to the algebra form. It is named here because the two-point function below is stated with it.</p>
 <p>Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:</p>
@@ -381,19 +381,19 @@ $$</p>
 <td>Scalar part; every bilinear of the article is the scalar part of an element product</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi$</td>
+<td>$\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$</td>
 <td>Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian</td>
 </tr>
 <tr>
 <td>$\mathcal{D}$</td>
-<td>Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$</td>
+<td>Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$</td>
 </tr>
 <tr>
 <td>$\mathcal{D}_p$</td>
 <td>Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=p^2$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>Massive biquaternion Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>

@@ -92,11 +92,11 @@ $$</p>
 $$</p>
 <p>so $\tilde{F}$ is a <strong>pure-vector</strong> biquaternion. Its three complex components $F_\eta$ each combine an electric and a magnetic piece: the electric contribution $i\sqrt{\epsilon}\,E_\eta$ is <strong>purely imaginary</strong> and the magnetic contribution $-\sqrt{\mu}\,H_\eta$ is <strong>real</strong>. The factor of $i$ on the electric part is the same factor that appears in the complex time coordinate $i r'_t$. In the $i r'_t$ convention the time direction is the imaginary direction, and the electric field carries the time index of the field tensor, so it is the electric part that acquires the factor $i$ while the magnetic part remains real. This is the algebraic reason for the asymmetric appearance of $\tilde{F}$.</p>
 <p>The normalization factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural ones for a medium. Each term has the dimension of the square root of an energy density, since $\epsilon E^2$ and $\mu H^2$ are both energy densities; consequently $\tilde{F}$ has dimension $\sqrt{\text{energy density}}$, and the biquaternion norm calculated below has the dimension of an energy density. With the constitutive relation $\vec B = \mu\vec H$ the magnetic term may also be written $\sqrt{\mu}\,\vec H = \vec B/\sqrt{\mu}$, so the field strength can equally be regarded as the pair $(\sqrt{\epsilon}\,\vec E, \vec B/\sqrt{\mu})$.</p>
-<p>The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A}_{\Phi} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde\nabla_\Phi$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, whose conjugate is $(\tilde\nabla^{\natural})_\Phi$ and whose d'Alembertian is $\Box=\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta_Q$. The construction is</p>
+<p>The field strength is not an independent object: it is obtained from the potential biquaternion $\tilde{A}_{\Phi} = i\,a'_t + \vec A$ by differentiation with the gradient $\tilde\nabla_\Phi$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, whose conjugate is $(\tilde\nabla_\Phi)^{\natural}$ and whose d'Alembertian is $\Box=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$. The construction is</p>
 <p>$$
-\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}\right)\Bigr).
+\tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right)\Bigr).
 $$</p>
-<p>This is the vector part of $(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}$ divided by $\sqrt\mu$. The gradient stands to the left of the potential. The product is the algebra product, and no operator beyond the gradient and its conjugate enters. With the two medium parameters at their relative values one, $\epsilon_r=\mu_r=1$, this is the familiar $\tilde{F}=(\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ of the companion articles. In a medium whose relative permeability is not one the division is not optional, because $\tilde{F}$ and $\mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})$ then differ in dimension.</p>
+<p>This is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ divided by $\sqrt\mu$. The gradient stands to the left of the potential. The product is the algebra product, and no operator beyond the gradient and its conjugate enters. With the two medium parameters at their relative values one, $\epsilon_r=\mu_r=1$, this is the familiar $\tilde{F}=(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}-\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ of the companion articles. In a medium whose relative permeability is not one the division is not optional, because $\tilde{F}$ and $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ then differ in dimension.</p>
 <p>In tensor language the same object is the antisymmetric rank-two tensor</p>
 <p>$$
 F_{\mu\nu} = \frac{\partial A_\nu}{\partial R_\mu} - \frac{\partial A_\mu}{\partial R_\nu},
@@ -105,7 +105,7 @@ F_{0\eta} = \frac{iE_\eta}{c},
 \qquad
 F_{j\eta} = \epsilon_{j\eta l}B_l .
 $$</p>
-<p>It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\eta$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0\eta}$ sit on the planes that contain the time direction and the three $F_{j\eta}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\nabla\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}((\tilde\nabla^{\natural})_\Phi\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\eta = i\sqrt{\epsilon}E_\eta - \sqrt{\mu}H_\eta$ are then the same statement read component by component.</p>
+<p>It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\eta$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0\eta}$ sit on the planes that contain the time direction and the three $F_{j\eta}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\nabla\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\eta = i\sqrt{\epsilon}E_\eta - \sqrt{\mu}H_\eta$ are then the same statement read component by component.</p>
 <h2 id="the-place-of-the-field-strength-in-the-algebra">The Place of the Field Strength in the Algebra</h2>
 <p>The biquaternion algebra decomposes in several ways, and it is worth locating $\tilde{F}$ precisely in these decompositions, because its peculiar properties are consequences of its position.</p>
 <p><strong>The vector part.</strong> The pure-vector biquaternions form the complex three-dimensional subspace</p>
@@ -513,12 +513,12 @@ $$</p>
 <td>Hermitian and anti-Hermitian subspaces</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi, (\tilde\nabla^{\natural})_\Phi$</td>
+<td>$\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$</td>
 <td>Biquaternionic gradient and its quaternion conjugate</td>
 </tr>
 <tr>
 <td>$\Box$</td>
-<td>The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla^{\natural})_\Phi=\partial^2/\partial R_t^2+\Delta_Q$, that of <em>Operator and Calculus Conventions</em></td>
+<td>The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$, that of <em>Operator and Calculus Conventions</em></td>
 </tr>
 <tr>
 <td>$\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$</td>

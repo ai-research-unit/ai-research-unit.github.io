@@ -98,7 +98,7 @@ $$</p>
 <p>$$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\Box=\mathrm{Sc}\bigl((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi\bigr)
+\Box=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)
 =\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
 \qquad
 \varepsilon=(1,-1,-1,-1).
@@ -119,12 +119,12 @@ $$</p>
 \Bigl(\sum_\mu\zeta_\mu e_\mu\Bigr)^2=\zeta_t^2-\sum_\eta\zeta_k^2+2\zeta_t\sum_\eta\zeta_k\vec e_\eta ,
 $$</p>
 <p>because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.</p>
-<p>The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)=\Box$, and on the material sector that reads $\Delta-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.</p>
+<p>The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box$, and on the material sector that reads $\Delta-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.</p>
 <p><strong>The first order, and the mass.</strong> The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-(\tilde\nabla^{\natural})_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
 <p>and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The first-order form of the d'Alembertian is the pair of <em>Operator and Calculus Conventions</em>, §<em>The Two First-Order Equations and Their Symbol</em>, and each line composed with the conjugate of the other returns $\Box$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p><strong>The chirality.</strong> Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (<em>Special Element Conventions</em>, §<em>The Chirality Convention</em> and §<em>The Spinor Convention</em>). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 n_+=\dim\ker\tilde D_R^{+},\qquad n_-=\dim\ker\tilde D_R^{-}.
 $$</p>
-<p>The two are adjoints of one another in the Hermitian form, because the conjugate of the gradient is the operator that form pairs with it, $\tilde\nabla^{*}=(\tilde\nabla^{\natural})_\Phi$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, the conjugates of the gradient); the integration by parts carries a sign, and a sign moves no kernel. Nothing forces the two dimensions to agree, and that asymmetry is what the index measures.</p>
+<p>The two are adjoints of one another in the Hermitian form, because the conjugate of the gradient is the operator that form pairs with it, $\tilde\nabla^{*}=(\tilde\nabla_\Phi)^{\natural}$ (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, the conjugates of the gradient); the integration by parts carries a sign, and a sign moves no kernel. Nothing forces the two dimensions to agree, and that asymmetry is what the index measures.</p>
 <p><strong>The two Dirac equations.</strong> The framework's equation is the chiral pair of <em>Operator and Calculus Conventions</em>, §<em>The Two First-Order Equations and Their Symbol</em>, each member acting from the left and the mass coupling the two parts; the pair operator that the same article once wrote for them is retired. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of the twisted operator, and the gauge-covariant gradient $\tilde D_R$ of the section above is its derivative.</p>
 <p><strong>The index.</strong> The index is the difference</p>
 <p>$$
@@ -270,8 +270,8 @@ $$</p>
 <td>Normalised generators</td>
 </tr>
 <tr>
-<td>$\Box=\mathrm{Sc}((\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi)=\partial^2/\partial R_t^2+\Delta$</td>
-<td>d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla^{\natural})_\Phi\tilde\nabla_\Phi$</td>
+<td>$\Box=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\partial^2/\partial R_t^2+\Delta$</td>
+<td>d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$</td>
 </tr>
 <tr>
 <td>$\Delta=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$</td>
