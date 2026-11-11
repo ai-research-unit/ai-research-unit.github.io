@@ -10,7 +10,7 @@ The biquaternion content of the Schrödinger path integral is therefore a statem
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^{2}}{2\,m}\nabla^2+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)]e_t$, central. The coordinate $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ is the argument of the field.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The step variables $\varepsilon$ and $T$ are lengths along the material coordinate $r'_t$, so the corresponding duration is $\varepsilon/c$; and $\mathrm{Lag}$ is the Lagrangian per unit $r'_t$, that is $L/c$ with $L$ the Lagrangian per unit time $t'=r'_t/c$, so that $\int\mathrm{Lag}\,dr'_t$ is the action in its usual units.
 
@@ -326,7 +326,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{iHr'_{t}}{\hbar\,c})$ with $H=[-\frac{\hbar^{2}}{2\,m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{iHr'_{t}}{\hbar\,c})$ with $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
@@ -357,7 +357,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{B}_{C}$ | Centre; home of the phase and the kernel |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $H=[-\frac{\hbar^{2}}{2\,m}\nabla^2+V]e_t$ | Central Hamiltonian |
+| $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V]e_t$ | Central Hamiltonian |
 | $\tilde Q(r'_t)=\exp(-\frac{iHr'_{t}}{\hbar\,c})$ | Evolution operator; central $*$-unitary, semigroup |
 | $G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$ | Position kernel; central |
 | $G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}\mathrm{Lag}\,\varepsilon$, with $\varepsilon$ a step in $r'_t$ |

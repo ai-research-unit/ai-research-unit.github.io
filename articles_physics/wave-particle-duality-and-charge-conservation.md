@@ -256,7 +256,7 @@ Charge conservation still holds, because $\varepsilon_{\mathrm{fop},+}$ is trans
 
 **The complementarity is the content of this article's half of the duality.** The companion article established that one integer reports the freedom of the field. This article establishes that the same integer reports the freedom of the source, and that the conditions are the complement. **One rank, two spaces of dimension $r$, and a budget of four.** Charge conservation is the name of one member of the complement off the cone, and of one of two members on it.
 
-**What the transform does.** It turns $\tilde\nabla$ into $i\tilde K_\Phi$, so it turns the integrability condition of the field equation into an element of the cokernel, and it turns the conservation law of the source into the component form of that element. Without the transform the statement is that the divergence of the source vanishes. With it the statement is a functional on a four-dimensional space, and the functional can be counted, identified, and on the cone supplemented.
+**What the transform does.** It turns $\tilde\nabla_\Phi$ into $i\tilde K_\Phi$, so it turns the integrability condition of the field equation into an element of the cokernel, and it turns the conservation law of the source into the component form of that element. Without the transform the statement is that the divergence of the source vanishes. With it the statement is a functional on a four-dimensional space, and the functional can be counted, identified, and on the cone supplemented.
 
 ## Limits
 

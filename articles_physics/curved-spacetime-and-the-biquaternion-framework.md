@@ -408,9 +408,9 @@ which is the inhomogeneous transformation expected of a connection on the field.
 
 ### The Curved Dirac Operator and the Equation
 
-The biquaternion gradient $\tilde\nabla$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, all four in metres, it is
+The biquaternion gradient $\tilde\nabla_\Phi$ is the operator of *Operator and Calculus Conventions*, §*The Gradient*; read on the material sector in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, all four in metres, it is
 $$
-\tilde\nabla = -i\,e_t\,\partial/\partial r'_t + \sum_\eta\,\vec e_\eta\,\partial/\partial x_\eta,
+\tilde\nabla_\Phi = -i\,e_t\,\partial/\partial r'_t + \sum_\eta\,\vec e_\eta\,\partial/\partial x_\eta,
 $$
 because $\partial/\partial r'_t=i\partial/\partial R_t$, and the two imaginary units multiply to a sign, $(-i)\cdot i=+1$. Its curved replacement substitutes the frame field for the **rigid material frame** and the one-sided derivative for the partial derivative. The rigid material frame is not the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, which is not contained in $\mathbb{B}_{\Phi}$; it is
 $$
@@ -460,9 +460,9 @@ The **flat limit** is exact. Take the rigid material frame $\tilde E_{\Phi,0}=ie
 $$
 \tilde F_{\mu} D_{\mu}=\tilde F_{\mu}\partial/\partial x_\mu
 =-i\,e_t\,\partial/\partial r'_t+\sum_\eta\,\vec e_\eta\,\partial/\partial x_\eta
-=e_t\,\partial/\partial R_t+\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta=\tilde\nabla,
+=e_t\,\partial/\partial R_t+\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta=\tilde\nabla_\Phi,
 $$
-where the last equality uses $Q_t=i r'_t$ and $\partial/\partial r'_t=i\partial/\partial R_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{B}_{\Phi}$, and a term-by-term replacement of $\tilde E_{\Phi,\mu}$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $F_{\mathrm{inf},\mu}\partial/\partial x_\mu=e_t\partial/\partial r'_t+i\sum_\eta\,\vec e_\eta\partial/\partial x_\eta=i\tilde\nabla$; the biquaternion object that represents the source's differential operator is therefore $i\tilde\nabla$, not $\tilde\nabla$, and the basis operator transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
+where the last equality uses $Q_t=i r'_t$ and $\partial/\partial r'_t=i\partial/\partial R_t$, and the pair reduces to the flat pair of the parent article. The rigid frame is **not** $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$: $e_t$ is not in $\mathbb{B}_{\Phi}$, and a term-by-term replacement of $\tilde E_{\Phi,\mu}$ by $e_\mu$ is invalid. Nor is it the informational frame: in the same limit $F_{\mathrm{inf},\mu}\partial/\partial x_\mu=e_t\partial/\partial r'_t+i\sum_\eta\,\vec e_\eta\partial/\partial x_\eta=i\tilde\nabla_\Phi$; the biquaternion object that represents the source's differential operator is therefore $i\tilde\nabla_\Phi$, not $\tilde\nabla_\Phi$, and the basis operator transcription is not the gradient. The curved material operator is a strict generalisation: nothing is added at flatness, and nothing of the flat structure is lost.
 
 The **square** is the Lichnerowicz formula. Squaring the basis operator of the Dirac operator gives
 

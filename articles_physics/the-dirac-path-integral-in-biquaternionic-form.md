@@ -115,7 +115,7 @@ $$
 for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box$ acts on the exponential as multiplication by $p^2/\hbar^2$, the difference is exactly that operator, and formally
 
 $$
-\boxed{\;\mathcal S_L = \left(\tilde\nabla + k_m\right)\Delta_F,
+\boxed{\;\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\Delta_F,
 \qquad
 \mathcal S_R = \left(\tilde\nabla^{\natural} + k_m\right)\Delta_F\;}
 $$
@@ -179,7 +179,7 @@ with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whos
 
 - The **proper time $T$ is the Schwinger parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\hbar^{2}k_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
 - The **mass is a constant in the exponent**. There is no spin and no algebra-valued weight: $\Delta_F$ is a scalar, and it obeys $(\Box - k_m^{2})\Delta_F = i\delta^{(4)}$ up to the measure convention.
-- The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $\left(\tilde\nabla + k_m\right)$ to $\Delta_F$, which is why the spin is invisible until that operation is performed.
+- The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $\left(\tilde\nabla_\Phi + k_m\right)$ to $\Delta_F$, which is why the spin is invisible until that operation is performed.
 
 The same proper-time integral is the bridge to the worldline of the next section: replacing the constant mass by a general worldline interaction, and adding the odd variables, converts this scalar kernel into the algebra-valued kernel of the pair.
 
@@ -329,7 +329,7 @@ a sum over paths being a sum over intermediate points, and $\mathcal S$ is the t
 
 $$
 \left(\Box - k_m^{2}\right)\mathcal S_L
-= \left(\tilde\nabla + k_m\right)i\,\delta^{(4)} ,
+= \left(\tilde\nabla_\Phi + k_m\right)i\,\delta^{(4)} ,
 \qquad
 \left(\Box - k_m^{2}\right)\mathcal S_R
 = \left(\tilde\nabla^{\natural} + k_m\right)i\,\delta^{(4)} ,

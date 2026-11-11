@@ -558,7 +558,7 @@ $$
 
 The label is written **before** the conjugation, in the order the operator is built: the family first, the involution second. The conjugate is not a second operator; it is the same sum with $\natural$ read on the units, and its coefficients are the same scalars.
 
-**On the material part $\tilde\nabla_{\mathrm{gco},\Phi}$** the covariant coefficients are read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, which is $\tilde\nabla_{\mathrm{gco},\Phi}$ is defined in, so no bar is needed:
+**On the material part $\tilde\nabla_{\mathrm{gco},\Phi}$** the covariant coefficients are read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, which is the slice the definition $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$ is written in, so no bar is needed on $A_\mu$:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{i\,ϙ}{\hbar}A_t\Bigr)+\sum_\eta\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{i\,ϙ}{\hbar}A_\eta\Bigr),

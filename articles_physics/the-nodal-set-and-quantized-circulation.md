@@ -17,7 +17,7 @@ This article closes open question 2 of [The Polar Form of the Klein–Gordon Equ
 **The velocity one-form is closed wherever the action is twice differentiable.** The scalar velocity is
 
 $$
-\tilde V_{\Phi}=\frac{\tilde\nabla S_{\tilde\Xi}}{m},
+\tilde V_{\Phi}=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m},
 \qquad
 v_{\Phi,\mu}=\frac{1}{m}\frac{\partial S_{\tilde\Xi}}{\partial R_\mu},
 \qquad
@@ -269,7 +269,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $S_{\tilde\Xi}$ | The action, in $\mathrm{J\,s}$ |
 | $\theta_{\mathrm{phs}}=S_{\tilde\Xi}/\hbar$ | The phase angle, dimensionless |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | Quaternionic norm, vanishing on the cone |
-| $\tilde V_{\Phi}=\tilde\nabla S_{\tilde\Xi}/m$ | Four-velocity of the scalar flow |
+| $\tilde V_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | Four-velocity of the scalar flow |
 | $v_{\Phi,\mu}$ | Its components, index low |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
 | $\tilde J_{\Phi}$ | Number current |

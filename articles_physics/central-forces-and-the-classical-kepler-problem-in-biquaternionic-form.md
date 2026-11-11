@@ -27,7 +27,7 @@ so that the angular momentum is $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\
 The Kepler problem is a central force with the power-law potential
 
 $$
-V(r) = -\frac{\kappa}{r}, \qquad \vec F = -\nabla V = -\frac{\kappa}{r^2}\,\vec u_r .
+V(r) = -\frac{\kappa}{r}, \qquad \vec F = -\vec\nabla_\Phi V = -\frac{\kappa}{r^2}\,\vec u_r .
 $$
 
 The potential is a central scalar, $\tilde{Ξ} = V(r)e_t \in \mathbb{B}_{\Psi}$, and the force is a real vector in $\mathbb{B}_{\Phi}$ commuting with the position, $[\vec r,\vec F] = 0$, so the angular momentum is conserved by the mechanism of the central-scalar limit. The parameter $\kappa > 0$ for attraction; the same mathematics with $\kappa < 0$ describes repulsion, and the general conic classification below covers both signs through the energy.

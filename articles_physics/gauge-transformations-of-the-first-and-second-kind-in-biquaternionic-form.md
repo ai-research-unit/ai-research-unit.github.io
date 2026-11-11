@@ -181,7 +181,7 @@ Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ wi
 | Symbol | Source | Corpus |
 |---|---|---|
 | $F$ | Electromagnetic bivector $\vec E+i\vec B$ | Riemann–Silberstein $\vec N=\vec E+ic\vec B$, with $\vec B$ in units of $\vec E/c$; $\tilde F = i\sqrt\epsilon\,\vec N$ |
-| $\nabla$ | Biquaternion gradient $i\partial/\partial r'_t\,e_t+\partial/\partial R_x\,\vec e_x+\partial/\partial R_y\,\vec e_y+\partial/\partial R_z\,\vec e_z$ | $\tilde\nabla = e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ |
+| $\nabla$ | Biquaternion gradient $i\partial/\partial r'_t\,e_t+\partial/\partial R_x\,\vec e_x+\partial/\partial R_y\,\vec e_y+\partial/\partial R_z\,\vec e_z$ | $\tilde\nabla_\Phi = e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ |
 | $\nabla F=0$ | Source-free Maxwell equations | $\tilde\nabla\tilde F=0$, the homogeneous pair |
 | $\mathrm{Lag}=F^*\cdot\nabla F$ | First-order density | No direct equivalent; no real local Lagrangian gives the first-order system |
 | $c$ | Set to $1$ | $c=1/\sqrt{\epsilon\mu}$ |

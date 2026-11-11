@@ -45,7 +45,7 @@ $$
 F_z = -\frac{\partial V_{\mathrm{pot}}}{\partial r_z} = \gamma\,\frac{\partial B}{\partial r_z}\,S_z = \gamma (dB/dz)\,S_z .
 $$
 
-Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial r_z = -\partial B_x/\partial r_x - \partial B_y/\partial r_y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
+Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\vec\nabla_\Phi\cdot\vec B = 0$ requires $\partial B_z/\partial r_z = -\partial B_x/\partial r_x - \partial B_y/\partial r_y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
 
 This is the standard result, and it is standard in a second sense: $S_z$ is an operator, so the force is an operator. Its eigenvalues are $\pm\frac{\hbar}{2}\gamma (dB/dz)$, and a beam with its spin in an eigenstate of $S_z$ is deflected by an amount proportional to that eigenvalue.
 

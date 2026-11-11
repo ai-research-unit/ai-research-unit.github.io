@@ -92,7 +92,7 @@ $$
 
 **The three terms are one statement written three ways.** The first is the rate of change at a fixed phase-space point; the second is the transport of the density by the flow's velocity $\vec p/m$; the third is the change produced by the force. Their sum being zero says that the density at a point moving with the flow does not change — the statement that the flow of a collisionless fluid in phase space is incompressible.
 
-**Why incompressible, in one line.** The phase-space velocity is $(\vec p/m,-\nabla V)$, and its divergence is $\partial_\eta(p_\eta/m)+\partial(-\partial_\eta V)/\partial p_\eta=0$ because the first term has no $r_\eta$ and the second no $p_\eta$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\mu\nu}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.
+**Why incompressible, in one line.** The phase-space velocity is $(\vec p/m,-\vec\nabla_\Phi V)$, and its divergence is $\partial_\eta(p_\eta/m)+\partial(-\partial_\eta V)/\partial p_\eta=0$ because the first term has no $r_\eta$ and the second no $p_\eta$. So Liouville's theorem is not an extra assumption; it is the observation that the drift vector field is divergenceless, which the corpus's $\delta_{\mu\nu}$ with all coefficients $+1$ makes manifest: the phase-space metric is flat and the flow is a rotation of it.
 
 ### The characteristics, and the corpus's flow
 
@@ -155,7 +155,7 @@ with the sum over the spatial index $\eta$, every index low, and the sign as it 
 
 - It is a third derivative in momentum, so it is a *spreading* term: it redistributes the density among momenta without creating or destroying any.
 - It is weighted by the third derivative of the potential, so it vanishes wherever the potential is locally quadratic. This is the exactness statement of the next subsection.
-- It is the phase-space form of the quantum force: the Bohm force $-\nabla Q_{\mathrm{qnt}}$ and this term are the same $\hbar^{2}$, seen on the shell and off it. The identification is stated as an interpretation and the on-shell statement is the corpus's polar form; the mapping between them is a computation this article does not carry out.
+- It is the phase-space form of the quantum force: the Bohm force $-\vec\nabla_\Phi Q_{\mathrm{qnt}}$ and this term are the same $\hbar^{2}$, seen on the shell and off it. The identification is stated as an interpretation and the on-shell statement is the corpus's polar form; the mapping between them is a computation this article does not carry out.
 
 ### The moments the correction does not touch
 
@@ -285,7 +285,7 @@ and taking the branch with the positive energy, $p_{\Phi,t}=imc\sqrt{1+\lvert\ve
 
 **Established.** The Moyal-bracket equation for the Wigner element, and the exact identity $\Lambda^{3}(H,W)=V'''\partial_{p}^{3}W$ for a Hamiltonian at most quadratic in momentum, verified in a computer algebra system. The expansion $\tfrac{2}{\hbar}\sin(\hbar\Lambda/2)=\Lambda-\tfrac{\hbar^{2}}{24}\Lambda^{3}+\cdots$ and the resulting kinetic equation with its order-$\hbar^{2}$ term. The vanishing of the zeroth, first and second moments of that term, hence the exactness of the continuity equation, and the value $-6\rho_{\mathrm{num}}$ of its third moment. The exactness of the classical drift equation for a quadratic potential, checked analytically on the oscillator ground state with the numbers $\sigma^{2}=\sigma_{p}^{2}=1/2$, $1/(m\sigma^{2})=2$, $m\omega^{2}/\sigma_{p}^{2}=2$. The relativistic drift as a contraction with the flow element, and the shell relation $p_{\Phi,\nu}p_{\Phi,\nu}+m^{2}c^{2}+2mQ_{\mathrm{qnt}}=0$ with every index low.
 
-**Interpretation.** That the $\hbar^{2}$ term is the phase-space form of the quantum force. The term is a fact of the expansion; its identification with $-\nabla Q_{\mathrm{qnt}}$ is a reading of it in the hydrodynamic variables, and the two are related by the moments — precisely, by the third moment and beyond, since the lower ones vanish. The article states the reading and marks it as one.
+**Interpretation.** That the $\hbar^{2}$ term is the phase-space form of the quantum force. The term is a fact of the expansion; its identification with $-\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is a reading of it in the hydrodynamic variables, and the two are related by the moments — precisely, by the third moment and beyond, since the lower ones vanish. The article states the reading and marks it as one.
 
 **Not claimed.** That the correction term is enough for a quantum kinetic theory of an interacting system. That the gradient expansion is the correct expansion at all densities and all coupling strengths. That the entropy production of a collisionless quantum fluid is nonzero — it is zero at this order, because there is no collision integral, and the entropy production of the interacting theory lives in the Schwinger–Keldysh article's collision term. That the Bohm force has been derived here from the kinetic equation.
 

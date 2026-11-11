@@ -66,7 +66,7 @@ where $\tilde\Xi^{*}$ is the conjugate the polar-form article uses, and the prod
 
 ### Why this ordering, in these letters
 
-**The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum.** The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{iS_{\tilde\Xi}/\hbar}$ with $\nabla S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\nabla\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\vec p\cdot\vec s/\hbar}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\vec p\cdot\vec s/\hbar}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
+**The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum.** The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{iS_{\tilde\Xi}/\hbar}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\vec p\cdot\vec s/\hbar}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\vec p\cdot\vec s/\hbar}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
 
 **The half-offset is fixed by the requirement that the first moment be the current and not twice it.** With the full offset, the transform reproduces the density after a rescaling but the first moment comes out with the wrong coefficient, and the wrong coefficient is a factor of two that no normalisation can repair. The half-offset is the standard choice and the corpus adopts it for the standard reason.
 
@@ -215,18 +215,18 @@ so the two quadratures are the amplitude split by the phase into a cosine and a 
 
 $$
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)
-=\rho_{\mathrm{num}}(r)\,e^{i\,\vec s\cdot\nabla S_{\tilde\Xi}/\hbar}
+=\rho_{\mathrm{num}}(r)\,e^{i\,\vec s\cdot\vec\nabla_\Phi S_{\tilde\Xi}/\hbar}
 \left(1+\mathcal{O}(s^{2})\right),
 $$
 
 where the amplitude's two offsets combine to $\rho_{\mathrm{num}}$ to this order because the correction is a derivative of a symmetric combination. Substituting,
 
 $$
-\tilde W_\Xi\;\longrightarrow\;\rho_{\mathrm{num}}(r)\,\delta^{3}\!\left(\vec p-\nabla S_{\tilde\Xi}\right)
+\tilde W_\Xi\;\longrightarrow\;\rho_{\mathrm{num}}(r)\,\delta^{3}\!\left(\vec p-\vec\nabla_\Phi S_{\tilde\Xi}\right)
 \qquad\left(\hbar\to0\ \text{at fixed}\ r,\ \vec p\right),
 $$
 
-which is the statement that the fluid's phase-space density is supported on the momentum the flow carries. **The support is the mass shell** — the flow momentum is $\vec p=\nabla S_{\tilde\Xi}$ and the energy is fixed by the mass-shell relation of the polar-form article — so the classical limit of the Wigner element is a shell-supported density and not a diffuse one.
+which is the statement that the fluid's phase-space density is supported on the momentum the flow carries. **The support is the mass shell** — the flow momentum is $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and the energy is fixed by the mass-shell relation of the polar-form article — so the classical limit of the Wigner element is a shell-supported density and not a diffuse one.
 
 **Two things the limit says.** First, the fluid picture is the $\hbar\to0$ limit of the Wigner picture and not an independent description: density and velocity are the two moments of a distribution, and the limit is what makes the higher moments disappear. Second, the limit is a *limit*, and the parameter that controls the correction is the width of the distribution divided by the scale on which the potential varies — which is what the next two subsections measure.
 
@@ -299,7 +299,7 @@ The two numerical values agree to about $2\times10^{-3}$, which is the accuracy 
 
 ## What Is Established and What Is Interpretation
 
-**Established.** The definition of the biquaternionic Wigner element, and its reduction to the standard transform in the fixed-unit case. The zeroth and first moments as density and current, the first stated on the scalar part and justified by the vanishing of the commutator's scalar part. The temporal moment with the element's $i$ restored. The quadrature decomposition, exact in the fixed-unit case. The classical limit $\rho_{\mathrm{num}}\delta^{3}(\vec p-\nabla S_{\tilde\Xi})$ to leading order in the offset. The Gaussian identity $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The numerical checks: marginal residuals $7.1\times10^{-7}$ and $4.0\times10^{-6}$, the peak value $1/(\pi\hbar)$ to the last digit a double holds, $\mathrm{Var}(p)=0.999\,978\,2$ against $\hbar^{2}/(4\sigma^{2})=1$, $Q_{\mathrm{qnt}}(r_0)=0.997\,781\,1$, and the negativity minimum $-0.113\,359\,879\,579\,893\,8$ with $1.89\%$ of the grid negative.
+**Established.** The definition of the biquaternionic Wigner element, and its reduction to the standard transform in the fixed-unit case. The zeroth and first moments as density and current, the first stated on the scalar part and justified by the vanishing of the commutator's scalar part. The temporal moment with the element's $i$ restored. The quadrature decomposition, exact in the fixed-unit case. The classical limit $\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$ to leading order in the offset. The Gaussian identity $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m$. The numerical checks: marginal residuals $7.1\times10^{-7}$ and $4.0\times10^{-6}$, the peak value $1/(\pi\hbar)$ to the last digit a double holds, $\mathrm{Var}(p)=0.999\,978\,2$ against $\hbar^{2}/(4\sigma^{2})=1$, $Q_{\mathrm{qnt}}(r_0)=0.997\,781\,1$, and the negativity minimum $-0.113\,359\,879\,579\,893\,8$ with $1.89\%$ of the grid negative.
 
 **Interpretation.** That the Wigner element is the object that mediates between the quantum state and the fluid, and that the fluid description is the $\hbar\to0$ projection of it. Both are standard readings; the article's contribution is the letters in which they are written and the explicit separation of what is imported from what is supplied.
 
@@ -321,7 +321,7 @@ by the polar form's identity for the bracket; the scalar part is taken because t
 
 In a fixed unit element the element splits exactly, $\tilde W_\Xi=\bigl(W[a]+W[b]\bigr)+i\bigl(W[a,b]-W[b,a]\bigr)$ with $a=\lVert\tilde\Xi\rVert\cos(S_{\tilde\Xi}/\hbar)$ and $b=\lVert\tilde\Xi\rVert\sin(S_{\tilde\Xi}/\hbar)$ the two quadratures, so the real part is the phase-space image of the density and the imaginary part the phase-space image of the quadrature correlation. A rotating unit adds rotor gradients at first order in the offset, which is the Wigner picture of the spin-fluid article's statement that the vorticity is sourced by rotor gradients.
 
-The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(\vec p-\nabla S_{\tilde\Xi})$, shell-supported, so the fluid picture is a projection of the Wigner picture and not an independent description. The width the projection discards is the quantum potential for a Gaussian, $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m=\hbar^{2}/(4m\sigma^{2})$, and the part the projection cannot make positive is measured on a two-level superposition at $-0.113\,359\,879\,579\,893\,8$, with $1.89\%$ of the sampled phase space negative.
+The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(\vec p-\vec\nabla_\Phi S_{\tilde\Xi})$, shell-supported, so the fluid picture is a projection of the Wigner picture and not an independent description. The width the projection discards is the quantum potential for a Gaussian, $Q_{\mathrm{qnt}}(r_0)=\mathrm{Var}(p)/m=\hbar^{2}/(4m\sigma^{2})$, and the part the projection cannot make positive is measured on a two-level superposition at $-0.113\,359\,879\,579\,893\,8$, with $1.89\%$ of the sampled phase space negative.
 
 ## Summary of Notation
 
@@ -333,7 +333,7 @@ The classical limit is the fluid: $\tilde W_\Xi\to\rho_{\mathrm{num}}\delta^{3}(
 | $\Xi$ | The central case of the field: complex-valued, vector part zero |
 | $\lVert\tilde\Xi\rVert^{2}$ | Amplitude squared; never a bare letter |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
-| $S_{\tilde\Xi}$ | Action of the polar form, with $\nabla S_{\tilde\Xi}=\vec p$ |
+| $S_{\tilde\Xi}$ | Action of the polar form, with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$ |
 | $\tilde W_\Xi(r,\vec p)$ | Biquaternionic Wigner element |
 | $r$, $\vec s$ | Position and relative coordinate; the offsets are $\pm\vec s/2$ |
 | $\vec p$, $p_\eta$ | Momentum, the transform variable, and its components |

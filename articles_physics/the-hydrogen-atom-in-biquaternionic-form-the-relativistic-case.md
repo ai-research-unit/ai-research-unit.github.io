@@ -259,7 +259,7 @@ The Coulomb field is an electromagnetic field, and in a gauge theory it is intro
 Let $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ be a central phase, and let $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla\Gamma$ be the transformed connection. The covariant derivative
 
 $$
-\tilde\nabla_{\mathrm{gco}} = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}
+\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}
 $$
 
 transforms homogeneously,
@@ -267,7 +267,7 @@ transforms homogeneously,
 $$
 \tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda\, \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}} ,
 \qquad
-\tilde\nabla_{\mathrm{gco},2} = \tilde\nabla +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2} ,
+\tilde\nabla_{\mathrm{gco},2} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2} ,
 $$
 
 with the connection transformation that the abelian gauge structure of the framework provides. This covariance, together with the Leibniz rule it needs, was machine-checked by finite differences at a point not used to fix the conventions. The mass term of *The Dirac Equation in Biquaternionic Form* is linear, so it carries the same factor. For the pair
@@ -349,10 +349,10 @@ The framework's contribution is one identification and no more. The operator is 
 
 ### The field, and the phase of the basis
 
-With a field present the derivative in that action cannot be the ordinary one, and the reason is the covariance identity this article has already used. The minimal-coupling article replaces $\tilde\nabla$ by the covariant derivative
+With a field present the derivative in that action cannot be the ordinary one, and the reason is the covariance identity this article has already used. The minimal-coupling article replaces $\tilde\nabla_\Phi$ by the covariant derivative
 
 $$
-\tilde\nabla_{\mathrm{gco}} = \tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi} ,
+\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi} ,
 $$
 
 and the replacement is not optional for the basis. The sign is the corpus's, which the minimal-coupling article records as the opposite of the standard $\partial_\mu-\frac{iϙA_{\mu}}{\hbar}$; the kinetic momentum written $\vec\pi=\vec p-ϙ\vec A$ above is in the standard convention, so the two are one coupling with the opposite sign of $ϙ$, and every statement below carries $\vec A=0$, where no sign can differ. Write
@@ -367,7 +367,7 @@ $$
 \mathrm{Vect}(\tilde\nabla_{\mathrm{gco},2})\!\left(\lambda f\right) = \lambda\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}})f ,
 $$
 
-which is the vector-part form of the covariance identity $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $\tilde\nabla_{\mathrm{gco}}$ and not from $\tilde\nabla$. Second, the basis functions themselves carry the phase: if the large function is $\lambda f_\mu$ rather than $f_\mu$, then its balanced partner is $\lambda$ times the partner of $f_\mu$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.
+which is the vector-part form of the covariance identity $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$. Two consequences follow, and both are forced rather than chosen. First, the balancing action is built from $\tilde\nabla_{\mathrm{gco}}$ and not from $\tilde\nabla_\Phi$. Second, the basis functions themselves carry the phase: if the large function is $\lambda f_\mu$ rather than $f_\mu$, then its balanced partner is $\lambda$ times the partner of $f_\mu$, so that the pair transforms homogeneously. A finite basis built in this way is gauge covariant term by term, which is what the gauge invariance of the computed magnetic properties requires.
 
 The two replacements are the ones the literature makes under the names **restricted magnetic balance**, for the use of the covariant momentum in the balancing operator, and **London atomic orbitals**, for the phase-carrying basis functions (London 1937; Aucar, Saue, Jensen and Visscher 1999; Repisky, Komorovsky, Malkina and Malkin 2009; Komorovsky, Repisky, Malkina and Malkin 2010). Both were checked here at machine precision in the algebra's own notation: on a grid of $64$ points with random bandlimited fields, the identity $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}_{\mathrm{sp}}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{\mathrm{sp}}$ and its vector-part form $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},2})(\lambda f) = \lambda\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}})f$ hold to $8\times10^{-14}$, and the two operator identities above are exact. The covariance could not have failed: $\lambda$ is central, so it passes through every left multiplication, and $\partial  \lambda/\partial x_\mu =\frac{i\,ϙ}{\hbar}\lambda\,\partial  \Gamma/\partial x_\mu$ holds exactly, which makes $(\tilde\nabla\lambda)\tilde{Ξ}_{\mathrm{sp}}$ cancel the $-\frac{i\,ϙ}{\hbar}(\tilde\nabla\Gamma)\lambda\tilde{Ξ}_{\mathrm{sp}}$ term line by line. The numerical check verifies the implementation, not a delicate cancellation.
 
@@ -552,7 +552,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\beta$, $\alpha_\eta$ | Basis operators of the frame: $\beta$ acts as $\tilde Q\mapsto i\tilde Q\vec e_x$, $\alpha_\eta$ as $\tilde Q\mapsto\vec e_\eta\tilde Q\vec e_z$; $\alpha$ without a subscript is the fine-structure constant |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the field by the chirality basis operator $-iR_{\mathrm{axf},\vec e_z}$ |
 | $Q_t = i r'_t$, $Q_\eta = x_\eta$ | Coordinates; $r'_t$ the material temporal coordinate, a length |
-| $\tilde\nabla = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde\nabla_\Phi = -i\,e_t\partial/\partial r'_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial r_\eta$, the material part of $\tilde\nabla$ | Biquaternionic gradient (Dirac operator), read at $Q_t=ir'_t$, $Q_\eta=x_\eta$ |
 | $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$ | d'Alembertian |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde Q^\natural$ | Conjugate under the anti-automorphism $\natural$, which fixes the central $i$ and negates the spatial units; $\tilde\nabla^\natural$, $\tilde A_{\Phi}^\natural$, $\tilde\nabla_{\mathrm{gco}}^{\natural}$ are its images |
@@ -570,7 +570,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\lvert n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Coupled relativistic basis |
 | $E_{n s_{\mathrm{tot}}}$, $\delta_{s_{\mathrm{tot}}}$ | Exact Sommerfeld–Dirac energy and the Sommerfeld parameter |
 | $\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\bigl(\frac{1}{s_{\mathrm{tot}}+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
-| $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative (minimal-coupling article) |
+| $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative (minimal-coupling article) |
 | $\tilde\nabla_{\mathrm{gco}}^{\natural} = \tilde\nabla^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | $\natural$-image of the covariant derivative; operator of the second chiral member |
 | $j_{5\mu}=\tilde{Ξ}_{\mathrm{sp}}^{\natural}G_\mu(-iR_{\mathrm{axf},\vec e_z})\tilde{Ξ}_{\mathrm{sp}}$ | Axial current; $G_\mu$ the four basis operator generators, the vector current omitting the chirality basis operator |
 | $\tilde{Ξ}_{\mathrm{sp},\mathrm{lar}}$, $\tilde{Ξ}_{\mathrm{sp},\mathrm{sml}}$ | Large and small parts of the field: the eigenspaces of $\beta$ for $+1$ and $-1$ (companion Pauli exercise; not the chiral pair) |

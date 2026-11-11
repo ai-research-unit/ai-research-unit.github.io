@@ -36,7 +36,7 @@ and it fails on every $N$-degenerate element. There is no third case and no exte
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i\hbar c\,\partial/\partial r'_t$ is $i\hbar\,\partial/\partial t'$; the two forms are used interchangeably and $\hbar$ is written explicitly in both.
 
-**No wave number is used in this article, and that is deliberate.** A letter $k$ earns its place only where a mass, a momentum or an energy is absorbed by it, as $k_m=mc/\hbar$ absorbs the mass in the Dirac and Klein–Gordon equations. Here nothing is absorbed: the constant that multiplies the time derivative is $\hbar$, and the mass enters only through the operator $\tilde H_\Psi$ and, in the central case, through the kinetic term $|\nabla S|^{2}/2m$. Writing $k_m$ would require the composite $mc^{2}/k_m$, in which $m$ cancels and only $\hbar c$ survives, so the letter would hide the constant instead of naming a physical wave number. Every $\hbar$ below is therefore the reduced Planck constant and nothing else.
+**No wave number is used in this article, and that is deliberate.** A letter $k$ earns its place only where a mass, a momentum or an energy is absorbed by it, as $k_m=mc/\hbar$ absorbs the mass in the Dirac and Klein–Gordon equations. Here nothing is absorbed: the constant that multiplies the time derivative is $\hbar$, and the mass enters only through the operator $\tilde H_\Psi$ and, in the central case, through the kinetic term $|\vec\nabla_\Phi S|^{2}/2m$. Writing $k_m$ would require the composite $mc^{2}/k_m$, in which $m$ cancels and only $\hbar c$ survives, so the letter would hide the constant instead of naming a physical wave number. Every $\hbar$ below is therefore the reduced Planck constant and nothing else.
 
 Two points of discipline come first, because both are ways of losing the alignment.
 
@@ -218,19 +218,19 @@ the sign of the rotor carrying the half-turn branch of the angle. A central fiel
 For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi_{\mathrm{sp}}=A\,e^{iS/\hbar}e_t$ and $\tilde H_\Psi=V\,e_t$; substituting into the equation and separating the real and the imaginary parts gives
 
 $$
-\boxed{\;\frac{\partial S}{\partial t'}+\frac{|\nabla S|^{2}}{2m}+V+Q=0,\qquad
-\frac{\partial A^{2}}{\partial t'}+\nabla\cdot\Bigl(A^{2}\frac{\nabla S}{m}\Bigr)=0,\;}
+\boxed{\;\frac{\partial S}{\partial t'}+\frac{|\vec\nabla_\Phi S|^{2}}{2m}+V+Q=0,\qquad
+\frac{\partial A^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(A^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0,\;}
 $$
 
 with the quantum potential
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\nabla^{2}A}{A}.
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi A}{A}.
 $$
 
 The first is a Hamilton–Jacobi equation with one extra term; the second is a continuity equation. Both were checked on exact solutions rather than on random functions: the free Gaussian packet at three carrier momenta gave a relative residual of $10^{-7}$, and generic amplitudes and actions gave $10^{-8}$.
 
-**The operator is the Laplacian and not the d'Alembertian.** This is the one place where the Schrödinger case differs from the Dirac and Klein–Gordon companions: the equation is first order in time and second order in space, so the quantum potential carries $\nabla^{2}$ and not $\Box$. The polar identity is otherwise the same identity.
+**The operator is the Laplacian and not the d'Alembertian.** This is the one place where the Schrödinger case differs from the Dirac and Klein–Gordon companions: the equation is first order in time and second order in space, so the quantum potential carries $\Delta_\Phi$ and not $\Box$. The polar identity is otherwise the same identity.
 
 **The pair is equivalent to the equation, and neither half is an approximation.** The real part says that the phase's gradient is the momentum; the imaginary part says that the density is conserved. Together they are the equation, with nothing dropped.
 
@@ -240,12 +240,12 @@ The density and the current are the two halves of the continuity equation:
 
 $$
 \rho=A^{2},\qquad
-\vec j=A^{2}\frac{\nabla S}{m}=\rho\,\vec v,
+\vec j=A^{2}\frac{\vec\nabla_\Phi S}{m}=\rho\,\vec v,
 \qquad
-\frac{\partial\rho}{\partial t'}+\nabla\cdot\vec j=0.
+\frac{\partial\rho}{\partial t'}+\vec\nabla_\Phi\cdot\vec j=0.
 $$
 
-The velocity is the boost's content in the central case, where the boost has collapsed: $\vec v=\nabla S/m$ is the field's phase gradient over the mass. In the general field the current reads the scale and the boost, and the rotor contributes nothing, exactly as the two norms say.
+The velocity is the boost's content in the central case, where the boost has collapsed: $\vec v=\vec\nabla_\Phi S/m$ is the field's phase gradient over the mass. In the general field the current reads the scale and the boost, and the rotor contributes nothing, exactly as the two norms say.
 
 **The density is a probability density and the current is its flux.** $\rho$ is positive by construction, because it is $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ and $\tilde\Xi^{\dagger}\tilde\Xi$ is positive in the Hermitian form; the equation preserves it, as checked to $10^{-8}$ in a hundred random evolutions of a general field.
 
@@ -289,7 +289,7 @@ The propagator's word is a central phase times a rotor, with scale $1$ and boost
 
 The two norms read different factors: the quaternionic norm is $r^{2}e^{2i\alpha}$ and reads the scale and the phase, and the Hermitian norm is $2r^{2}\cosh\theta_{\mathrm{rpd},w}$ and reads the scale and the boost. Neither reads the rotor.
 
-A central field's word collapses to a scale, a phase and a sign, and that case is exactly Madelung's: the Hamilton–Jacobi equation with the quantum potential $Q=-\hbar^{2}\nabla^{2}A/(2mA)$ and the continuity equation for $A^{2}$. The pair is exact, the operator is the Laplacian, and there is no mass shell, because the equation is first order in time.
+A central field's word collapses to a scale, a phase and a sign, and that case is exactly Madelung's: the Hamilton–Jacobi equation with the quantum potential $Q=-\hbar^{2}\Delta_\Phi A/(2mA)$ and the continuity equation for $A^{2}$. The pair is exact, the operator is the Laplacian, and there is no mass shell, because the equation is first order in time.
 
 ## Summary of Notation
 
@@ -315,7 +315,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $\theta=\lvert\vec r_\Psi\rvert t'/\hbar$ | The parent's angle; the rotor's half-angle |
 | $\tilde u_Q=\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ | The propagator's rotor |
 | $\rho=\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ | Density (Hermitian norm) |
-| $Q=-\hbar^{2}\nabla^{2}A/(2mA)$ | Quantum potential |
+| $Q=-\hbar^{2}\Delta_\Phi A/(2mA)$ | Quantum potential |
 | $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Axis-free $4\times4$ array of the symbol |
 
 ## Further Reading

@@ -46,7 +46,7 @@ $$
 \boxed{\;\pm\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega\pmϙA\,\tilde{Ξ}_{\mathrm{sp}}+i\,k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega=0\;}
 $$
 
-the derivative acting on everything to its right, $\omega$ multiplying on the right, and **two independent signs**, one on the derivative term and one on the coupling term. Parra's derivative, written with a frame element in each term, is this gradient: the frame elements of his terms are the units of $\tilde\nabla$, and his imaginary unit $e_{21}$ is $\omega$. The four options are the four combinations of the signs, and the last entry of the table is Parra's identification of each with a "particle".
+the derivative acting on everything to its right, $\omega$ multiplying on the right, and **two independent signs**, one on the derivative term and one on the coupling term. Parra's derivative, written with a frame element in each term, is this gradient: the frame elements of his terms are the units of $\tilde\nabla_\Phi$, and his imaginary unit $e_{21}$ is $\omega$. The four options are the four combinations of the signs, and the last entry of the table is Parra's identification of each with a "particle".
 
 | option | derivative term | coupling term | Parra's label |
 |---|---|---|---|

@@ -61,15 +61,15 @@ The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}
 **Write the state and apply the momentum.** Take $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\nabla S_{\tilde\Xi}-i\,\hbar\nabla\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
+\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\vec\nabla_\Phi S_{\tilde\Xi}-i\,\hbar\vec\nabla_\Phi\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
 $$
 
 The real part keeps its leading term and the imaginary part carries the first correction. The two ratios are
 
 $$
-\frac{\lvert\nabla\ln A\rvert}{k_{\Phi}}\sim\epsilon ,
+\frac{\lvert\vec\nabla_\Phi\ln A\rvert}{k_{\Phi}}\sim\epsilon ,
 \qquad
-\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\nabla^{2}A}{A}\right\rvert\sim\epsilon^{2} .
+\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert\sim\epsilon^{2} .
 $$
 
 The second is the quantum potential over the kinetic energy.
@@ -81,7 +81,7 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 | | the $\beta$ limit | this limit |
 |---|---|---|
 | the object limited | the element $\tilde V_{\Phi}$ | the solution $\tilde{Ξ}_{\mathrm{sp}}$ |
-| the parts compared | $\gamma c$ against $\gamma v$ | $\nabla S_{\tilde\Xi}$ against $\hbar\nabla\ln A$ |
+| the parts compared | $\gamma c$ against $\gamma v$ | $\vec\nabla_\Phi S_{\tilde\Xi}$ against $\hbar\vec\nabla_\Phi\ln A$ |
 | the parameter | internal to the element | external to the algebra |
 | the dropped pieces | $\frac{3}{8}\beta^{4}$ temporal, $\frac{1}{2}\beta^{2}$ vector | order $\epsilon^{2}$ in the amplitude |
 | the error | a number, in closed form | an operator, with changing sign |
@@ -91,41 +91,41 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 **Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{r_t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, which with $r_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
-i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi .
+i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V\psi .
 $$
 
 **Substitute the amplitude and the phase,** $\tilde{Ξ}_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:
 
 $$
-\partial_t S_{\tilde\Xi}+\frac{\lvert\nabla S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\nabla^{2}A}{A}=0 ,
+\partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}=0 ,
 \qquad
-\partial_t A^{2}+\nabla\cdot\left(\frac{A^{2}\nabla S_{\tilde\Xi}}{m}\right)=0 .
+\partial_t A^{2}+\vec\nabla_\Phi\cdot\left(\frac{A^{2}\vec\nabla_\Phi S_{\tilde\Xi}}{m}\right)=0 .
 $$
 
 **Drop the third term of the first.** It is the quantum potential $Q$, and its size against the kinetic term is the criterion:
 
 $$
-\frac{\lvert Q\rvert}{\lvert\nabla S_{\tilde\Xi}\rvert^{2}/2m}=\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2} .
+\frac{\lvert Q\rvert}{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}/2m}=\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2} .
 $$
 
 When it is small the phase equation is Hamilton–Jacobi and the continuity equation is untouched, because it never contained $Q$:
 
 $$
-\partial_t S_{\tilde\Xi}+\frac{\lvert\nabla S_{\tilde\Xi}\rvert^{2}}{2m}+V=0 ,
+\partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V=0 ,
 \qquad
-\partial_t A^{2}+\nabla\cdot\left(\frac{A^{2}\nabla S_{\tilde\Xi}}{m}\right)=0 .
+\partial_t A^{2}+\vec\nabla_\Phi\cdot\left(\frac{A^{2}\vec\nabla_\Phi S_{\tilde\Xi}}{m}\right)=0 .
 $$
 
-**Read off the equations of motion.** Put $\vec p=\nabla S_{\tilde\Xi}$ and $\vec v=\vec p/m$. The gradient of the first equation gives
+**Read off the equations of motion.** Put $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $\vec v=\vec p/m$. The gradient of the first equation gives
 
 $$
-\partial_t\vec p+(\vec v\cdot\nabla)\vec p=-\nabla V ,
+\partial_t\vec p+(\vec v\cdot\vec\nabla_\Phi)\vec p=-\vec\nabla_\Phi V ,
 $$
 
 so along the flow,
 
 $$
-\frac{d\vec r}{dt}=\frac{\vec p}{m},\qquad \frac{d\vec p}{dt}=-\nabla V,\qquad m\frac{d^{2}\vec r}{dt^{2}}=-\nabla V .
+\frac{d\vec r}{dt}=\frac{\vec p}{m},\qquad \frac{d\vec p}{dt}=-\vec\nabla_\Phi V,\qquad m\frac{d^{2}\vec r}{dt^{2}}=-\vec\nabla_\Phi V .
 $$
 
 The force is the gradient of the same $V$ that stood in the Hamiltonian, and the energy is not a parameter of the limit: it is $E=-\partial_t S_{\tilde\Xi}$, read off the phase.
@@ -170,7 +170,7 @@ and the difference is the interference term. Read against the count, that is the
 | $1\ \mathrm{nm}$ | $3.861\times10^{-2}$ | $3.862\times10^{-4}$ | holds to $7.5\times10^{-4}$ |
 | $1\ \mathrm{\mu m}$ | $3.861\times10^{-5}$ | $3.862\times10^{-7}$ | holds to $7.5\times10^{-10}$ |
 
-**The checks.** The Gaussian ratio agrees with a fourth-order difference of $\frac{1}{k_{\Phi}^{2}}\lvert\frac{\nabla^{2}A}{A}\rvert$ at one hundred values of $x/\sigma$ to $1.4\times10^{-6}$, the sign change included. The tables follow from $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$.
+**The checks.** The Gaussian ratio agrees with a fourth-order difference of $\frac{1}{k_{\Phi}^{2}}\lvert\frac{\Delta_\Phi A}{A}\rvert$ at one hundred values of $x/\sigma$ to $1.4\times10^{-6}$, the sign change included. The tables follow from $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$.
 
 **The macroscopic end is true and empty.** For the Earth in its orbit, over $L=1\ \mathrm{AU}$, the parameter is $4.0\times10^{-75}$; the phase length reaches the Planck length at $6.52\ \mathrm{kg\,m\,s^{-1}}$, beyond which the criterion holds where the model cannot resolve.
 
@@ -178,7 +178,7 @@ and the difference is the interference term. Read against the count, that is the
 
 The non-quantum limit cannot truncate an element, because the algebra holds no quantum constant. $\hbar$ enters only as $\hbar$. Lowered at fixed mass it stiffens the mass term while it softens the bracket; at fixed wavelength it brings the particle to rest.
 
-What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\nabla S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\nabla V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
+What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is small the phase obeys Hamilton–Jacobi and the amplitude obeys transport, so $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$, $\vec v=\vec p/m$ and $m\ddot{\vec r}=-\vec\nabla_\Phi V$. The error is an operator that changes sign, so the limit acts on solutions: it does not commute with superposition, does not select a subalgebra and does not produce a state. Those three refusals are one, since it takes a wave to its rays and the second partition with it, and that is why it needs no new constant.
 
 ## Summary of Notation
 
@@ -187,8 +187,8 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 | $\epsilon=\frac{1}{k_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
 | $L$ | The length over which the amplitude varies; supplied by the problem |
 | $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
-| $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\nabla^{2}A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
-| $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\nabla^{2}A}{A}$ | The quantum potential; central, real, and the term the limit drops |
+| $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
+| $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\hbar$ |
 | $\beta=\lvert\vec v\rvert/c$ | The parameter of the other limit, internal to $\tilde V_{\Phi}$ |
 

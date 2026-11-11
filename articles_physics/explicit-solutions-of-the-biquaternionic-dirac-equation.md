@@ -169,7 +169,7 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |
 | $k_\Phi=\omega\sqrt{\epsilon\mu}$ | The propagation wave number of the medium, equal to $k_t^{\prime}$ on the light cone |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | The d'Alembertian, a central scalar |
-| $\tilde\nabla_\kappa=\tilde\nabla+\kappa$ | The shifted gradient, with $\kappa\in\mathbb{C}$ central |
+| $\tilde\nabla_\kappa=\tilde\nabla_\Phi+\kappa$ | The shifted gradient, with $\kappa\in\mathbb{C}$ central |
 | $\xi_{\mathrm{scl}}$ | The scalar (pseudoscalar-potential) coefficient, the potential of the elementary field |
 | $u$, $\zeta$ | The scalar potential of the field and the gauge function of the constrained shift |
 | $\vec\nabla$, $\Delta$ | The spatial gradient and the Laplacian; $\tilde\nabla^{2}=\partial_t^{2}-\Delta+2\,\partial_t\vec\nabla$ |

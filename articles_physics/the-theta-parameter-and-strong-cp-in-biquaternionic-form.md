@@ -211,7 +211,7 @@ The field content is carried by the gradient and by the chirality subscript: the
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix in flavour space (imported); not a display of the algebra |
-| $\tilde\nabla$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
+| $\tilde\nabla_\Phi$ | The biquaternionic gradient of *Operator and Calculus Conventions*; an element with derivative coefficients, acting from the left |
 | $\tilde\nabla^{\natural}$ | Its quaternion conjugate |
 | $\Box$ | The d'Alembertian of the same article, the quaternionic norm of the gradient; scalar |
 | $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb B$, and its two parts: $L$ is the value $-1$, $R$ the value $+1$ |

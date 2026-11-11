@@ -10,7 +10,7 @@ Three results follow, one sharp, one limiting, one clarifying. The scalar family
 
 Three conventions are load-bearing, and the second is the one the source's displayed equations turn on.
 
-- The field strength is $\vec E=-\partial\vec C/\partial r_t-\nabla\Pi$, $\vec H=\nabla\times\vec C$ with complex $\Pi$ and $\vec C$, and the entries $C_u,C_v,C_w,C_{\bar w}$ below are the **covariant** components, as in the source's own display of the potential matrix. With these definitions the Coulomb solution has $\vec H$ purely imaginary with $\vec H=i\vec E$, so the duality condition reads $\vec E+i\vec H=0$: the residual of that combination is of order $10^{-11}$ at a generic point, while the opposite combination does not vanish: because $\vec H=i\vec E$ it equals $2\vec E$ identically, here $1.21$ at the test point, where $\lvert\vec E\rvert=0.60$.
+- The field strength is $\vec E=-\partial\vec C/\partial r_t-\vec\nabla_\Phi\Pi$, $\vec H=\vec\nabla_\Phi\times\vec C$ with complex $\Pi$ and $\vec C$, and the entries $C_u,C_v,C_w,C_{\bar w}$ below are the **covariant** components, as in the source's own display of the potential matrix. With these definitions the Coulomb solution has $\vec H$ purely imaginary with $\vec H=i\vec E$, so the duality condition reads $\vec E+i\vec H=0$: the residual of that combination is of order $10^{-11}$ at a generic point, while the opposite combination does not vanish: because $\vec H=i\vec E$ it equals $2\vec E$ identically, here $1.21$ at the test point, where $\lvert\vec E\rvert=0.60$.
 - The sign of $i$ in the source's printed equations is the opposite one, for a reason it flags in passing: the spatial potential in its field-strength definition is the contravariant vector, $C_a=-C^a$. Flipping the sign of the spatial potential flips $\vec H$ and leaves the gradient term of $\vec E$ alone, so the two readings are one equation.
 - In the corpus's naming, with $\vec H$ read as $c\vec B$, the condition $\vec E+i\vec H=0$ is the **anti-self-dual** sign, since the corpus calls $\vec E-ic\vec B=0$ self-dual. The source's adjectives are not uniform — its section title says complex self-dual, its text at (11) says antiself-duality — so formulas rather than adjectives are what is carried over.
 
@@ -23,9 +23,9 @@ The coordinate $z$ below is the Cartesian $z$, in the source's notation $z=(u-v)
 Let $\Pi$ and $\vec C$ be complex functions on complexified Minkowski space, and define
 
 $$
-\vec E=-\frac{\partial \vec C}{\partial r_t}-\nabla\Pi,
+\vec E=-\frac{\partial \vec C}{\partial r_t}-\vec\nabla_\Phi\Pi,
 \qquad
-\vec H=\nabla\times\vec C,
+\vec H=\vec\nabla_\Phi\times\vec C,
 \qquad
 \vec N:=\vec E+i\vec H .
 $$
@@ -33,7 +33,7 @@ $$
 The homogeneous Maxwell equations for a complex field are equivalent to the single complex vector equation
 
 $$
-\boxed{\;\frac{\partial \vec C}{\partial r_t}+\nabla\Pi-i\nabla\times\vec C=0\;},
+\boxed{\;\frac{\partial \vec C}{\partial r_t}+\vec\nabla_\Phi\Pi-i\vec\nabla_\Phi\times\vec C=0\;},
 $$
 
 which is three complex conditions on four complex unknowns, and they are equivalent again to
@@ -45,7 +45,7 @@ $$
 the **duality-purity** condition of the complex field, the anti-self-dual sign in the corpus's naming. The system is gauge invariant, with an arbitrary smooth complex gauge function, so one further condition may be imposed; the useful one is the complex Lorentz gauge
 
 $$
-\frac{\partial \Pi}{\partial r_t}+\nabla\cdot\vec C=0 .
+\frac{\partial \Pi}{\partial r_t}+\vec\nabla_\Phi\cdot\vec C=0 .
 $$
 
 **The Cartesian split of the entries.** The four matrix entries are the covariant components in the null frame, and the passage to a Cartesian potential is fixed by the two components that were gauged away: $C_u=\Pi+C_z=0$ and $C_w=C_x-iC_y=0$ give
@@ -247,7 +247,7 @@ This is the linear face of induced nonlinearity. The linear equations of the pot
 
 ## Summary
 
-The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec E+i\vec H=0$ with $\vec E=-\partial\vec C/\partial r_t-\nabla\Pi$ and $\vec H=\nabla\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
+The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec E+i\vec H=0$ with $\vec E=-\partial\vec C/\partial r_t-\vec\nabla_\Phi\Pi$ and $\vec H=\vec\nabla_\Phi\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
 
 The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\vec r/(4r^3)$, the Coulomb field of a charge $\tfrac14$ with a magnetic partner of the same modulus. The family $G_{\mathrm{ϙ}}=\mathrm{ϙ}\bar w/(z+r)$ satisfies the wave equation and the eikonal for every $\mathrm{ϙ}$ and the programme's two first-order constraints only at $\mathrm{ϙ}=1$, because those constraints are linear on one side and quadratic on the other; that mismatch is the mechanism of charge quantisation, and it fixes $|ϙ|=\tfrac14$. The constraints admit $\bar w/(z+r)$ and $\bar w/(z-r)$ but not the programme's second eikonal solution $f^-=w/(r-z)$, which the quadratic eikonal cannot distinguish from its conjugate. The reduced system is strictly weaker than duality purity — a plane-wave scalar satisfies it and produces a field that is not duality pure — so the linear construction does not by itself characterise the physical class; the nonlinear condition does. One printed component of the source, $C_{\bar w}=-2ϙ\bar w/(z+r)$, is missing a factor $1/r$.
 
@@ -258,10 +258,10 @@ The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\v
 | Symbol | Meaning |
 |---|---|
 | $\Pi$, $\vec C$ | Complex scalar and vector potentials, four complex components |
-| $\vec E=-\partial\vec C/\partial r_t-\nabla\Pi$ | Complex electric field |
-| $\vec H=\nabla\times\vec C$ | Complex magnetic field; opposite in sign to the source's printed definition, see the Introduction |
+| $\vec E=-\partial\vec C/\partial r_t-\vec\nabla_\Phi\Pi$ | Complex electric field |
+| $\vec H=\vec\nabla_\Phi\times\vec C$ | Complex magnetic field; opposite in sign to the source's printed definition, see the Introduction |
 | $\vec N=\vec E+i\vec H$, $\vec N=0$ | The complex field as one vector and its duality purity; the corpus's anti-self-dual sign |
-| $\partial\Pi/\partial r_t+\nabla\cdot\vec C=0$ | Complex Lorentz gauge |
+| $\partial\Pi/\partial r_t+\vec\nabla_\Phi\cdot\vec C=0$ | Complex Lorentz gauge |
 | $u,v,w,\bar w$ | $u=t+z$, $v=t-z$, $w=x-iy$, $\bar w=x+iy$ |
 | $C_u,C_v,C_w,C_{\bar w}$ | $\Pi+C_z$, $\Pi-C_z$, $C_x-iC_y$, $C_x+iC_y$; entries of the potential matrix |
 | $\Box=4(\partial^2/\partial u\,\partial v-\partial^2/\partial w\,\partial\bar w)$ | Wave operator in these coordinates |

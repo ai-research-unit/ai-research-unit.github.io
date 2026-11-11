@@ -4,7 +4,7 @@
 
 Every relativistic equation of this series is built from a single operator. The Klein–Gordon equation writes it with a scalar mass term, the Dirac equation uses its first-order square root, Maxwell's equations use the same square root on a bivector-valued field, and the retarded potentials use its inverse. That operator is the **biquaternion d'Alembertian**
 $$
-\Box = \tilde{\nabla}\,\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\,\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta ,
+\Box = \tilde{\nabla}\,\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\,\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta_\Phi ,
 $$
 built from the biquaternionic gradient $\tilde{\nabla}$ and its quaternion conjugate. The purpose of this article is to establish the operator itself, its adjoint structure, and the collection of distributions that invert it — its **Green's functions** — once and for all, so that the spin-specific articles can cite the result instead of rebuilding it.
 
@@ -12,7 +12,7 @@ The article is deliberately not about a particle. The Klein–Gordon equation an
 
 First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde{\nabla}\rangle_{\natural}$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \vec k_\Phi^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-\tilde{\nabla}^{\natural}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Algebra and Element Conventions*,
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \partial^2/\partial R_t^2 + \Delta = \Delta - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \frac{\partial^2}{\partial R_t^2} + \Delta_Q = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 \quad \text{on } \mathbb{B}_{\Phi} ,
 $$
 and it is the one used by the Klein–Gordon and Dirac companions and by every article of the series. The Weyl-spinor exercise writes the same operator in real time as $-\partial^2/\partial {r'_{t}}^2 + \nabla^2$.
 
@@ -67,10 +67,10 @@ On the diagonal $e_\mu e_\mu^{*} = e_t$ for every $\mu$: for $\mu = 0$ this is $
 $$
 \tilde{\nabla}\tilde{\nabla}^{\natural} = e_t\sum_{\mu}\partial^2/\partial R_\mu^2 = e_t\left(\partial^2/\partial R_t^2 + \Delta\right).
 $$
-The same computation with the factors exchanged gives $\tilde{\nabla}^{\natural}\tilde{\nabla} = e_t(\partial^2/\partial R_t^2 + \Delta)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
+The same computation with the factors exchanged gives $\tilde{\nabla}^{\natural}\tilde{\nabla} = e_t(\partial^2/\partial R_t^2 + \Delta_\Phi)$, so the two orders agree. Writing $e_t$ as the identity and dropping it, the series convention is
 $$
 \boxed{\;
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta = \Delta - \partial^2/\partial {r'_{t}}^2\;}.
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2\;}.
 $$
 
 The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde{\nabla}\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
@@ -89,13 +89,13 @@ $$
 $$
 the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to i k_{\Phi\eta}$, so
 $$
-\partial^2/\partial R_t^2 \to \frac{\omega^2}{c^2}, \qquad \Delta \to -\vec k_\Phi^2,
+\partial^2/\partial R_t^2 \to \frac{\omega^2}{c^2}, \qquad \Delta_\Phi \to -\vec k_\Phi^2,
 \qquad
 \Box \to \frac{\omega^2}{c^2} - \vec k_\Phi^2 .
 $$
 The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k_\Phi^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k_\Phi^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to k_m^{2}$ is the shifted cone. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -i\partial/\partial r'_t$, the operator above is $\Box = \Delta - \partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
+The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -i\partial/\partial r'_t$, the operator above is $\Box = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$
 \left(\Box - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
 $$
@@ -164,7 +164,7 @@ With $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, 
 $$
 \rho^2 := \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 +r_x^2+r_y^2+r_z^2 = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 ,
 $$
-the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box = \partial^2/\partial R_t^2 + \Delta$ is *exactly* the four-dimensional Laplacian,
+the Minkowski interval continued to imaginary time. Read as a quadratic form in the four coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = i r'_t$ and $x_\eta = r_\eta$, the operator $\Box = \partial^2/\partial R_t^2 + \Delta_\Phi$ is *exactly* the four-dimensional Laplacian,
 $$
 \Box = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial R_\mu^2 = \Delta_4 ,
 $$
@@ -204,11 +204,11 @@ $$
 G_{\mathrm{adv}}(\tilde R_\Phi) = \frac{1}{4\pi R}\,\delta\!\left(r'_t + R\right) = \frac{1}{2\pi}\,\mathrm{H}_{\mathrm{hvs}}(-r'_t)\,\delta(\rho^2) .
 $$
 
-The retarded kernel inverts the operator. Applying $\Box = \partial^2/\partial R_t^2 + \Delta$ to $\frac{u(r'_t - R)}{4\pi R}$ and using the two radial identities
+The retarded kernel inverts the operator. Applying $\Box = \partial^2/\partial R_t^2 + \Delta_\Phi$ to $\frac{u(r'_t - R)}{4\pi R}$ and using the two radial identities
 $$
 (\nabla g)^2 = 1 ,
 \qquad
-2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\,\Delta g = 0 ,
+2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\,\Delta_\Phi g = 0 ,
 \qquad g = r'_t - R ,
 $$
 which hold off the origin and were verified to machine precision, the operator annihilates every such function where $R \neq 0$. The whole of $\Box G_{\mathrm{ret}}$ is therefore concentrated at the origin, and the standard computation gives
@@ -313,7 +313,7 @@ with $\kappa$ a central scalar; because $\kappa$ commutes with the whole algebra
 $$
 \tilde{\nabla}_\kappa \tilde{\nabla}^{\natural}_\kappa = \tilde{\nabla}^{\natural}_\kappa \tilde{\nabla}_\kappa
 = \Box + 2\kappa\,\partial/\partial R_t + \kappa^2
-= \left(\partial/\partial R_t + \kappa\right)^2 + \Delta ,
+= \left(\partial/\partial R_t + \kappa\right)^2 + \Delta_\Phi ,
 $$
 which is central. On the plane wave $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ its symbol is
 $$
@@ -349,12 +349,12 @@ The converse is the shifted form of the **monogenic completion** the companion D
 
 The shift above is central: $\kappa$ is one complex number, it commutes with the whole algebra, and the operator it shifts is a single gradient. In the 2021 paper the shift is a full **constant biquaternion**, $f + F$ with $f$ a scalar and $F$ a constant vector, and what it shifts is the pair of **mutual bigradients** used by the electro-gravimagnetic programme,
 $$
-\nabla^\pm = \partial/\partial\tau \pm i\nabla , \qquad
-D^\pm_F = \nabla^\pm + f \pm F , \qquad \tau = r'_{t} ,
+\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla , \qquad
+D^\pm_F = \vec\nabla^{\pm}_\Phi + f \pm F , \qquad \tau = r'_{t} ,
 $$
-so that $D^+_F$ carries the coefficient and $D^-_F$ its mutual partner $f - F$. The dictionary of the section above extends without change: $\nabla^+ = i\tilde{\nabla}$ and $\nabla^- = i\tilde{\nabla}^{\natural}$, and the paper's structural coefficient is the corpus shift $\kappa = -i(f+F)$. The corpus's central shift is therefore the case $F = 0$, and the whole of the new content is the non-central part.
+so that $D^+_F$ carries the coefficient and $D^-_F$ its mutual partner $f - F$. The dictionary of the section above extends without change: $\vec\nabla^{+}_\Phi = i\tilde{\nabla}$ and $\vec\nabla^{-}_\Phi = i\tilde{\nabla}^{\natural}$, and the paper's structural coefficient is the corpus shift $\kappa = -i(f+F)$. The corpus's central shift is therefore the case $F = 0$, and the whole of the new content is the non-central part.
 
-**The composition.** The mutual bigradients compose to the wave operator, $\nabla^+\nabla^- = \nabla^-\nabla^+ = \Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta$ — the massless composition of the section above, re-read in the source's variables — and so do the mutual MD-operators,
+**The composition.** The mutual bigradients compose to the wave operator, $\vec\nabla^{+}_\Phi\vec\nabla^{-}_\Phi = \vec\nabla^{-}_\Phi\vec\nabla^{+}_\Phi = \Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi$ — the massless composition of the section above, re-read in the source's variables — and so do the mutual MD-operators,
 $$
 D^+_F D^-_F = D^-_F D^+_F = \Box_{\text{s}} + 2f\,\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F) .
 $$
@@ -395,13 +395,13 @@ A last structural remark ties the kernel theory to the algebra's null cone. The 
 
 The biquaternion d'Alembertian is the biquaternion norm of the gradient,
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta = \Delta - \partial^2/\partial {r'_{t}}^2 ,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2 ,
 $$
 a central scalar operator whose symbol is $\omega^2/c^2 - \vec k_\Phi^2$ and whose sign is the series convention. Its adjoint is the gradient's adjoint composed with itself; the gradient obeys $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, so
 $$
 \Box^{*} = \Box ,
 $$
-the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = (\tilde{\nabla}^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta$ was verified exactly on a random symbol.
+the two minus signs cancelling. The adjoint statement was verified through the algebraic identity $\sum_\mu(\partial/\partial R_\mu\,\tilde{F})^\dagger e_\mu = (\tilde{\nabla}^{\natural}\tilde{F})^\dagger$ on random complex coefficients, and the composition $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial R_t^2 + \Delta_\Phi$ was verified exactly on a random symbol.
 
 The Green's functions are the boundary conditions on one equation, $-\Box G = \delta^{(4)}$. The invariant kernel is
 $$
@@ -437,7 +437,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 |---|---|
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial R_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta_\Phi$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
 | $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_{\Phi,\tilde{\nabla}}^\flat = \tilde{G}_{\Phi,\tilde{\nabla}}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde{\nabla}} \in \mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
@@ -451,15 +451,15 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\tilde{G}_{\Phi,\tilde{\nabla}} = \tilde{\nabla}^{\natural}G_\Box \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde{\nabla}\tilde{G}_{\Phi,\tilde{\nabla}} = -\delta$ |
 | $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, $\kappa \in \mathbb{C}$ | Shifted gradient (central shift) |
 | $\tilde{\nabla}_\kappa\tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\partial/\partial R_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$ |
-| $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \nabla^\pm + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
-| $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta = -\Box$ |
+| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \vec\nabla^{\pm}_\Phi + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\vec\nabla^{+}_\Phi = i\tilde{\nabla}$, $\vec\nabla^{-}_\Phi = i\tilde{\nabla}^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
+| $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box$ |
 | $\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\exp(\pm i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\delta(\tau-r)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t)$ | Step function selecting the future cone |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i r'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ (not used in $\Box$) |
 
 ## Further Reading
 
-- George B. Arfken, Hans J. Weber, and Frank E. Harris, *Mathematical Methods for Physicists* (Elsevier, 2013), for the fundamental solutions of the Laplacian and the Helmholtz operator and the distributional identity $\Delta r^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$.
+- George B. Arfken, Hans J. Weber, and Frank E. Harris, *Mathematical Methods for Physicists* (Elsevier, 2013), for the fundamental solutions of the Laplacian and the Helmholtz operator and the distributional identity $\Delta_\Phi r^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$.
 - N. N. Bogoliubov and D. V. Shirkov, *Introduction to the Theory of Quantized Fields* (Interscience, 1959), for the causal, retarded and advanced Green's functions of the Klein–Gordon operator and the Pauli–Jordan commutator function.
 - James D. Bjorken and Sidney D. Drell, *Relativistic Quantum Fields* (McGraw–Hill, 1965), for the four Green's functions of the wave operator, their contour prescriptions, and the Feynman propagator.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the propagators of the scalar, Dirac and Maxwell fields as inverses of their wave operators.

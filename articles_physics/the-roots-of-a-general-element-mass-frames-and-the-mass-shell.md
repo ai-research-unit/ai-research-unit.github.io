@@ -319,7 +319,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\mathbb{B}_{\Phi}$ | the material sector, the anti-Hermitian subspace |
 | $\mathbb{B}_{\Psi}$ | the informational sector, the Hermitian subspace |
 | $\tilde E_{\Psi}$ | the mass field, a biquaternion |
-| $\tilde\nabla$ | the biquaternionic gradient, with d'Alembertian $\Box$, of *Operator and Calculus Conventions* |
+| $\tilde\nabla_\Phi$ | the biquaternionic gradient, with d'Alembertian $\Box$, of *Operator and Calculus Conventions* |
 | $\tilde{Ξ}_{\mathrm{sp},L,R}$ | the two chiral components of the gradient equation |
 | $\tilde{Ξ}_{\mathrm{sp}}$ | the Dirac field; its bilinear is $\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
 | $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | the pair, as two first-order lines; each line composed with its partner is $\Box I$ |

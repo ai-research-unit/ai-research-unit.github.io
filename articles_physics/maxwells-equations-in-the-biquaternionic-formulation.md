@@ -332,7 +332,7 @@ $$
 \vec\nabla \tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}, \qquad \vec\nabla = \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z,
 $$
 
-where $\vec\nabla$ is the vector part of the biquaternionic gradient, the three spatial terms of $\tilde\nabla$ alone. The equation is purely spatial, and the time coordinate plays no role.
+where $\vec\nabla$ is the vector part of the biquaternionic gradient, the three spatial terms of $\tilde\nabla_\Phi$ alone. The equation is purely spatial, and the time coordinate plays no role.
 
 The static solution is given by the **gradient of the Newton kernel**, not by the Newton kernel itself, because the static equation is first order. Write $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the field point and $\vec y$ for the source point. Then
 

@@ -54,7 +54,7 @@ $$
 
 and it is the frame's fifth basis operator: four generators plus this one, declared together with the frame. Three consequences follow, and each is a statement about the slot rather than a computation about phases.
 
-*It commutes with every left multiplication.* A left multiplier and a right multiplier never fail to commute, $L_aR_b=R_bL_a$, so $\xi$ commutes with the gradient $\tilde\nabla$, which multiplies on the left; and it commutes with the mass $m$, which is central and therefore occupies both slots. The value of a field is stable under every left multiplication, and hence under both members of the gradient equation; the reason is the side, and no computation about phases is needed.
+*It commutes with every left multiplication.* A left multiplier and a right multiplier never fail to commute, $L_aR_b=R_bL_a$, so $\xi$ commutes with the gradient $\tilde\nabla_\Phi$, which multiplies on the left; and it commutes with the mass $m$, which is central and therefore occupies both slots. The value of a field is stable under every left multiplication, and hence under both members of the gradient equation; the reason is the side, and no computation about phases is needed.
 
 *Its sign comes from the right slot alone.* Conjugating by $\xi$ does not touch a left multiplier at all, and on the right it reverses the multiplier, because right multiplications compose in reverse, $R_aR_b=R_{ba}$: it sends $R_{\vec e_x}$ and $R_{\vec e_y}$ to their negatives and leaves $R_{\vec e_z}$ alone. The right slot of every one of the four generators is $\vec e_x$ or $\vec e_y$, so
 

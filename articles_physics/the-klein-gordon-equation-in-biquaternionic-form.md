@@ -9,7 +9,7 @@ $$
 \qquad
 \tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z,
 \qquad
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = + \partial^2/\partial R_t^2 + \Delta,
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = + \partial^2/\partial R_t^2 + \Delta_\Phi,
 $$
 
 one equation for the **biquaternion-valued** field $\tilde{Ξ}$, whose value at each event is an element of $\mathbb{B}$ and not a single number. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**.
@@ -29,7 +29,7 @@ Two facts about the equation drive everything below. The first is structural: be
 
 The framework's central algebraic fact is the decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$. The parent article, *The Schrödinger Equation in Biquaternionic Form*, showed that the first-order-in-time Schrödinger equation is organized by the **scalar imaginary** $i$: the Hermitian observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ generates a flow whose generator $-\frac{i\,H}{\hbar}$ lies in the material sector $\mathbb{B}_{\Phi}$, and the same central $i$ supplies the complex structure of the state module. This article asks the corresponding question for the second-order equation: **does the second-order structure fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally, or does it require a doubling that the split does not supply?** The answer worked out below is that it requires a doubling, and that the doubling is *not* $\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$; the sector split gives two $i$-related copies of the same equation, not the particle–antiparticle pair. The closing sections treat the non-relativistic limit. The rest-mass phase $\exp(-i k_m r'_t)$ is divided out exactly, and the limit itself is then the leading term of an expansion of the dispersion relation about the rest point, $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\ldots$.
 
-The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector), $\mathbb{B}_{H}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the complex scalar line, which is the centre). The gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ with $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial^2/\partial R_t^2 + \Delta$, and $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector), $\mathbb{B}_{H}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the complex scalar line, which is the centre). The gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ with $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial^2/\partial R_t^2 + \Delta_\Phi$, and $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 ## The Equation and Its Operator
 
@@ -74,7 +74,7 @@ $$
 \tilde{\nabla}\tilde Q_1 = k_m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2 = k_m\tilde Q_1
 $$
 
-is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model under the Biquaternion Framework — A Research Agenda*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields. The coefficient on the right is the reciprocal mass wave number, $k_m=mc/\hbar$, because $\tilde\nabla$ carries an inverse length; writing $m$ in place of that reciprocal means the same thing, since $m=m$.
+is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model under the Biquaternion Framework — A Research Agenda*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields. The coefficient on the right is the reciprocal mass wave number, $k_m=mc/\hbar$, because $\tilde\nabla_\Phi$ carries an inverse length; writing $m$ in place of that reciprocal means the same thing, since $m=m$.
 
 **The scalar restriction.** Take $\tilde Q_1=A_0e_t$ and $\tilde Q_2=be_t$ with $A_0$ and $b$ complex scalars. The first equation forces $\tilde{\nabla}A_0$ to have no vector part, hence $A_0$, and with it $b$, to depend on $i r'_t$ alone; the pair then collapses to
 
@@ -143,16 +143,16 @@ The trap here is the sharper version of the trap in the parent article. There, t
 The obstruction above is for a **scalar** coefficient. A vector coefficient fares differently, and the exception is instructive. In the fourth paper of her series on the differential algebra of biquaternions, L. A. Alexeyeva studies the first-order system
 
 $$
-\left(\nabla^+ + \vec F\right) B = G,
+\left(\vec\nabla^{+}_\Phi + \vec F\right) B = G,
 \qquad
-\nabla^\pm = \partial/\partial \tau \pm i\,\nabla ,
+\vec\nabla^{\pm}_\Phi = \partial/\partial \tau \pm i\,\vec\nabla_\Phi ,
 $$
 
 with $B$ and $G$ biquaternion-valued and $\vec F$ a **constant complex vector** — a structural coefficient carrying no scalar part [Alexeyeva 2014]. The two mutual operators compose into one second-order operator,
 
 $$
 \boxed{\;
-\left(\nabla^- - \vec F\right)\circ\left(\nabla^+ + \vec F\right)
+\left(\vec\nabla^{-}_\Phi - \vec F\right)\circ\left(\vec\nabla^{+}_\Phi + \vec F\right)
 = \Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla),
 \qquad
 \Box_A = \partial^2_\tau - \Delta\;},
@@ -167,13 +167,13 @@ $$
 \qquad a \in \mathbb{C},
 $$
 
-with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\nabla^- - \vec F)(\tilde{Ξ}_{\mathrm{sp}} * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
+with $\tilde{Ξ}_{\mathrm{sp}}^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\vec\nabla^{-}_\Phi - \vec F)(\tilde{Ξ}_{\mathrm{sp}} * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
 
 **Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_A + k_m^{2}$ has Fourier symbol $\omega^2 - |\vec\zeta|^2 - k_m^{2}$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + k_m^{2}$ but $\Box_A + k_m^{2}$ *together with* the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\nabla)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
 
 **Reading the two parts of the coefficient.** Write $\vec F = -E - iH$ with $E, H$ real vectors. The real part enters the kernel as the phase weight $\exp(-i(E,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, which is a constant shift of the wave vector — a drift of the wave pattern, not a change of the dispersion relation, since the symbol depends on $\vec\zeta + \vec F$ — and the imaginary part enters as the exponential $\exp(-(H,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, a growth or decay with distance that makes a complex coefficient the mark of a driven or dissipative medium. The mass is the norm $m^2 = (\vec F,\vec F) = |E|^2 - |H|^2 + 2i(E,H)$: real and positive for a real coefficient, negative for a purely imaginary one, and complex in general. The plane-wave solutions, and the standing waves with exponentially growing or decaying amplitude that appear when the coefficient is imaginary, are catalogued in *Twistor Theory and Biquaternions*, where the same operator generates the algebraic twistors.
 
-**Convention.** Alexeyeva's $\Box_A = \partial^2_\tau - \Delta$, with $\tau$ measured in units of length, is **minus** this article's $\Box = \partial^2_{i r'_t} + \Delta$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.
+**Convention.** Alexeyeva's $\Box_A = \partial^2_\tau - \Delta_\Phi$, with $\tau$ measured in units of length, is **minus** this article's $\Box = \partial^2_{i r'_t} + \Delta_\Phi$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.
 
 ## Plane Waves and the Dispersion Relation
 
@@ -356,7 +356,7 @@ $$
 
 which is the non-relativistic kinetic energy. That is the entire use of the general result. Nothing is re-derived here, and no further expansion is made.
 
-**From a number to an operator.** The truncated $\Omega$ is a number on each mode, and a number becomes an operator when $k_\Phi^{2}\to-\Delta$. On a plane wave the two agree by construction,
+**From a number to an operator.** The truncated $\Omega$ is a number on each mode, and a number becomes an operator when $k_\Phi^{2}\to-\Delta_\Phi$. On a plane wave the two agree by construction,
 
 $$
 -\frac{1}{2k_m}\,\Delta\chi
@@ -422,7 +422,7 @@ The Klein–Gordon equation in biquaternionic form is
 $$
 \left(\tilde{\nabla}\tilde{\nabla}^{\natural} - k_m^{2}\right)\tilde{Ξ} = 0,
 \qquad
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial^2/\partial R_t^2 + \Delta,
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box = \partial^2/\partial R_t^2 + \Delta_\Phi,
 $$
 
 with $\tilde{Ξ}$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.
@@ -447,7 +447,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | ${}^{\natural},\;\bar{\cdot},\;{}^{*},\;{}^\flat$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta_\Phi$ | d'Alembertian |
 | $\tilde{Ξ} = Ξ_t e_t + Ξ_x \vec e_x + Ξ_y \vec e_y + Ξ_z \vec e_z$ | Biquaternion-valued Klein–Gordon field; each coefficient $Ξ_\mu$ complex |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde K_{\Phi} = i\,k_{t}^{\prime}e_t + \vec k_\Phi = \tilde P_{\Phi}/\hbar$, $k_{t}^{\prime}=\omega/c$, $k_\Phi=\lvert\vec k_\Phi\rvert$ | Four-wavevector biquaternion and its two coordinates |
@@ -463,8 +463,8 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\Omega = k_{t}^{\prime}-k_m$ | Excess time wave number; $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\cdots$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $\vec F$, $\nabla^\pm = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta$ | Constant complex-vector structural coefficient of the biwave system (Alexeyeva) and its operators; $\Box_A$ is minus this article's $\Box$ |
-| $\Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla) = (\nabla^- - \vec F)(\nabla^+ + \vec F)$ | The factorable operator of the vector-coefficient case |
+| $\vec F$, $\vec\nabla^{\pm}_\Phi = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta_\Phi$ | Constant complex-vector structural coefficient of the biwave system (Alexeyeva) and its operators; $\Box_A$ is minus this article's $\Box$ |
+| $\Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla) = (\vec\nabla^{-}_\Phi - \vec F)(\vec\nabla^{+}_\Phi + \vec F)$ | The factorable operator of the vector-coefficient case |
 
 ## Further Reading
 

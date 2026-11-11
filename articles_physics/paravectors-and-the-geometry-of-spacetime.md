@@ -366,7 +366,7 @@ The paravector calculus is therefore the calculus of *one-sided* basis operators
 **The two Dirac equations.** The corpus carries two, and the paravector reading sits against both. The first is **one-sided** and chiral,
 
 $$
-L_{\tilde\nabla}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+L_{\tilde\nabla_\Phi}\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
 L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
 $$

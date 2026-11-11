@@ -97,7 +97,7 @@ For the fluid this is the statement that the density times the frame element is 
 **The scalar field's velocity is the gradient of its action at every event, so its velocity one-form is closed identically.** In the polar form of the Klein–Gordon equation the momentum is
 
 $$
-\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi},
+\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi},
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
 \qquad
@@ -244,7 +244,7 @@ The accounting explains why the Dirac fluid needs one more equation than the sca
 
 ## What Is Established and What Is Interpretation
 
-**Established.** The polar data of the Dirac field — the frame element, its square as the velocity, the rotor's image as the spin, the current as the density times the frame — imported from the polar article. The Gordon split into convection and magnetisation parts, imported from the Gordon article. The closure of the scalar velocity one-form, which is exact and follows from $\tilde P_\Phi=\tilde\nabla S_{\tilde\Xi}$. The non-closure of the Dirac velocity, with the counting and the closure conditions displayed. The vorticity as the antisymmetrised frame gradient, with the shear-flow check. The frozen-frame sector and the four losses.
+**Established.** The polar data of the Dirac field — the frame element, its square as the velocity, the rotor's image as the spin, the current as the density times the frame — imported from the polar article. The Gordon split into convection and magnetisation parts, imported from the Gordon article. The closure of the scalar velocity one-form, which is exact and follows from $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$. The non-closure of the Dirac velocity, with the counting and the closure conditions displayed. The vorticity as the antisymmetrised frame gradient, with the shear-flow check. The frozen-frame sector and the four losses.
 
 **Interpretation.** That the Dirac fluid is *a* spin fluid in the sense of the non-relativistic spin-hydrodynamics literature. The correspondence is by structure — a density, a velocity and an independent spin direction, with the spin entering the current as a bound current — and not by derivation: nothing here shows that the corpus's spin direction obeys the literature's transport equation. What the corpus supplies is the exact kinematic triple and its algebra; the transport equation is a closure that the later articles add.
 
@@ -254,7 +254,7 @@ The accounting explains why the Dirac fluid needs one more equation than the sca
 
 The Dirac field's fluid is a triple at each event: the proper density $\rho_{\mathrm{num}}$, the frame element $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic e_t+\vec v)$ with $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The current is the density times the frame element, the spin is the density's square root times $(\hbar/2)i\hat s$, and the central angle is read by neither. The Gordon decomposition splits the current into a convection part and a bound spin part, which is a magnetisation current and contributes nothing to the total charge.
 
-The flow is not a gradient. The scalar field's velocity is $\tilde\nabla S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.
+The flow is not a gradient. The scalar field's velocity is $\tilde\nabla_\Phi S_{\tilde\Xi}/m$, so its one-form is closed identically; the Dirac field's velocity is a unit element squared, so its one-form is closed only when the frame is constant. The counting makes the obstruction visible: a unit timelike element carries three functions of the coordinates and a gradient carries one, so two functions at each event are unaccounted for, and those two are the frame's variation. The vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ is the antisymmetrised gradient of the frame element, read through the velocity; it vanishes for the scalar flow, it is non-zero for a shear flow with a varying rapidity, and the check gave a circulation of $0.434\,555\,977\,568\,337$ against the same closed form to fifteen digits.
 
 The scalar case is the frozen-frame sector: with no frame element there is nothing whose gradient could open the one-form, and with a constant frame the flow is rigid and a rigid one-form is exact. Freezing the frame loses the vorticity, the spin part of the current, the magnetisation current and the antisymmetric stress. What remains is a dust with a constant spin direction, which is the scalar fluid of the polar-form article up to the phase.
 
@@ -284,7 +284,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Number current |
 | $v_{\Phi,\mu}$ | Components of $\tilde V_\Phi$, index low |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
-| $\tilde P_{\Phi}=\tilde\nabla S_{\tilde\Xi}$ | Four-momentum of the scalar field |
+| $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$ | Four-momentum of the scalar field |
 | $S_{\tilde\Xi}$ | Action of the scalar field |
 | $\theta_{\mathrm{phs}}$ | Unused here; the scalar phase is $S_{\tilde\Xi}/\hbar$ |
 | $k_m=mc/\hbar$ | Mass wave number |

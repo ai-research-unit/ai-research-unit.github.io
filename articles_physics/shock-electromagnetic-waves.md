@@ -12,7 +12,7 @@ The question naturally arises whether electromagnetic waves can form shocks. Thi
 
 This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.
 
-The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
+The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box\tilde{F} = -\sqrt{\mu}\,\tilde{\nabla}^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial R_t^2 + \Delta_\Phi$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
 
 ## Why Linear Vacuum Maxwell Has No Shocks
 
@@ -33,7 +33,7 @@ $$
 Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation
 
 $$
-\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial R_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
+\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial R_t^2 + \Delta_\Phi = \Delta_\Phi - \frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2}.
 $$
 
 This is a **linear, constant-coefficient, hyperbolic** equation. Two structural features follow.
@@ -120,10 +120,10 @@ The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific st
 
 ### A Constant Zeroth-Order Term Does Not Change the Jump Condition
 
-The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \nabla^+ + f + F$, $\nabla^+ = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
+The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \vec\nabla^{+}_\Phi + f + F$, $\vec\nabla^{+}_\Phi = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
 
 $$
-\nabla^+B = \{\nabla^+B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
+\vec\nabla^{+}_\Phi B = \{\vec\nabla^{+}_\Phi B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
 \qquad
 (f+F)\circ B = \{(f+F)\circ B\} ,
 $$
@@ -405,7 +405,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
-| $\Box = \partial^2/\partial R_t^2 + \Delta$ | d'Alembertian |
+| $\Box = \partial^2/\partial R_t^2 + \Delta_\Phi$ | d'Alembertian |
 | $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |

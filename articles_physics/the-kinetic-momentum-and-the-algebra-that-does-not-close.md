@@ -33,12 +33,12 @@ The two differ by a function of position. The canonical momentum differentiates 
 
 The distinction is not a choice of notation. The two momenta transform differently under a gauge transformation, and the difference is the whole content of the next section.
 
-Under $\vec A\to\vec A+\nabla\lambda$ the canonical momentum is unchanged, the mechanical momentum shifts, and the field strength is unchanged.
+Under $\vec A\to\vec A+\vec\nabla_\Phi\lambda$ the canonical momentum is unchanged, the mechanical momentum shifts, and the field strength is unchanged.
 
-| object | under $\vec A\to\vec A+\nabla\lambda$ |
+| object | under $\vec A\to\vec A+\vec\nabla_\Phi\lambda$ |
 |---|---|
 | $\vec p$ | unchanged |
-| $\vec\pi$ | $\vec\pi-ϙ\nabla\lambda$ |
+| $\vec\pi$ | $\vec\pi-ϙ\vec\nabla_\Phi\lambda$ |
 | $\vec B$ | unchanged |
 | $[\pi_j,\pi_\eta]$ | unchanged |
 
@@ -265,7 +265,7 @@ The conserved angular momentum of the Landau problem is the canonical one. The k
 | $p_\eta=-i\hbar\,\partial/\partial r_\eta$ | Canonical momentum |
 | $\pi_\eta=p_\eta-ϙA_\eta$ | Mechanical momentum |
 | $\tilde\pi_\eta=\pi_\eta\,e_t$ | Mechanical momentum as an algebra element |
-| $\vec A$ | Vector potential; $\vec B=\nabla\times\vec A$ |
+| $\vec A$ | Vector potential; $\vec B=\vec\nabla_\Phi\times\vec A$ |
 | $[r_j,\pi_\eta]=i\hbar\,\delta_{j\eta}$ | Position–momentum bracket; holds for both momenta |
 | $[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ | Field-strength commutator; central |
 | $\tilde L_{\mathrm{orb},i}=\varepsilon_{ij\eta}r_jp_\eta e_t$ | Canonical angular momentum |

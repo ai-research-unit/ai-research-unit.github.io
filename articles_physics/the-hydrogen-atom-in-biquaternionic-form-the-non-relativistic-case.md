@@ -25,7 +25,7 @@ The title covers the non-relativistic case only. The relativistic case begins fr
 The momentum operator of the framework is
 
 $$
-\tilde p = -i\,\hbar\nabla  = \sum_\eta  \vec e_\eta p_\eta, \qquad \nabla  = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z, \qquad p_\eta = -i\,\hbar\partial/\partial R_\eta .
+\tilde p = -i\,\hbar\vec\nabla_\Phi  = \sum_\eta  \vec e_\eta p_\eta, \qquad \vec\nabla_\Phi  = \vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z, \qquad p_\eta = -i\,\hbar\partial/\partial R_\eta .
 $$
 
 Since $\tilde p$ has a purely imaginary vector part, it is Hermitian and lies in $\mathbb{B}_{\Psi}$: it is an observable, not a generator. It is the same element that the companion articles use to build the orbital angular momentum, $\vec r\tilde p\in\mathbb{B}$ for the material-sector position $\vec r\in\mathbb{B}_{H}$.
@@ -39,10 +39,10 @@ $$
 = -p^{\,2}e_t ,
 $$
 
-because $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu=0$ for $\mu\neq\nu$. Here $p^{\,2}=p\cdot p=-\hbar^{2}\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
+because $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu=0$ for $\mu\neq\nu$. Here $p^{\,2}=p\cdot p=-\hbar^{2}\Delta_\Phi$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
 
 $$
-\tilde p\,\tilde p^{\natural} = \langle\tilde p\rangle_{\natural}  = -\tilde p^{\,2} = p^{\,2}e_t = -\hbar^{2}\nabla^2\,e_t .
+\tilde p\,\tilde p^{\natural} = \langle\tilde p\rangle_{\natural}  = -\tilde p^{\,2} = p^{\,2}e_t = -\hbar^{2}\Delta_\Phi\,e_t .
 $$
 
 The two natural transcriptions therefore agree, and the kinetic energy is
@@ -69,8 +69,8 @@ Adding the two terms,
 
 $$
 \boxed{\;H = T+\tilde{Ξ}
-= \left[-\frac{\hbar^{2}}{2\,m}\nabla^2-\frac{\kappa}{r}\right]e_t
-= r_t\,e_t, \qquad r_t = -\frac{\hbar^{2}}{2\,m}\nabla^2-\frac{\kappa}{r}\;}.
+= \left[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi-\frac{\kappa}{r}\right]e_t
+= r_t\,e_t, \qquad r_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi-\frac{\kappa}{r}\;}.
 $$
 
 The Hamiltonian is Hermitian and lies in $\mathbb{B}_{\Psi}$, and its vector part is zero: $\vec r_\Psi=0$ in the general form $\tilde H_\Psi=r_t\,e_t+i\vec r_\Psi$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
@@ -79,7 +79,7 @@ The generator of the Schrödinger equation is
 
 $$
 -\frac{i}{\hbar}H
-= i\left(\frac{\hbar}{2\,m}\nabla^2+\frac{\kappa}{\hbar\,r}\right)e_t \in  \mathbb{B}_{\Phi} ,
+= i\left(\frac{\hbar}{2\,m}\Delta_\Phi+\frac{\kappa}{\hbar\,r}\right)e_t \in  \mathbb{B}_{\Phi} ,
 $$
 
 and it lies along the time-like direction $ie_t$ of the material sector, as the companion article on the Schrödinger equation requires of a time-translation generator. Both the observable and the generator are scalar multiples of $e_t$. The framework's sector split is thus realised here in its simplest possible form: the entire Hamiltonian content of the non-relativistic Coulomb problem sits in the scalar slot, and the vector slots are empty.
@@ -156,7 +156,7 @@ $$
 with $\xi_{s_z}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ and using the spherical decomposition of the Laplacian,
 
 $$
--\hbar^{2}\nabla^2  = \frac{L^2}{r^2} -\frac{\hbar^{2}}{r^{2}}\partial/\partial r\,\bigl(r^2\partial/\partial r\,\bigr),
+-\hbar^{2}\Delta_\Phi  = \frac{L^2}{r^2} -\frac{\hbar^{2}}{r^{2}}\partial/\partial r\,\bigl(r^2\partial/\partial r\,\bigr),
 $$
 
 the angular factor is an eigenfunction of $L^2$ with eigenvalue $\hbar^{2}\,l\,(l+1)$, and the equation reduces to the radial equation for $u_{nl}=rR_{nl}$:
@@ -226,7 +226,7 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
-| Hamiltonian $-\frac{\hbar^{2}}{2\,m}\nabla^2-\frac{\kappa}{r}$ | $H = \bigl[-\frac{\hbar^{2}}{2\,m}\nabla^2-\frac{\kappa}{r}\bigr]e_t\in\mathbb{B}_{\Psi}$ | scalar |
+| Hamiltonian $-\frac{\hbar^{2}}{2\,m}\Delta_\Phi-\frac{\kappa}{r}$ | $H = \bigl[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi-\frac{\kappa}{r}\bigr]e_t\in\mathbb{B}_{\Psi}$ | scalar |
 | Kinetic term $p^2 c/(2\,m\,c)$ | $-\frac{1}{2\,m}\tilde p^{\,2}=\frac{1}{2\,m}\tilde p\tilde p^{\natural}$ | scalar |
 | $L_{\mathrm{orb},\eta}$ | $L_{\mathrm{orb},\eta} e_t$ | scalar |
 | Spin $S_\eta=\frac{\hbar}{2}\sigma_\eta$ | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | vector |
@@ -289,12 +289,12 @@ at the next order. The Darwin term, the relativistic kinetic correction and the 
 
 ## Summary
 
-The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\,\hbar\nabla$ is Hermitian in $\mathbb{B}_{\Psi}$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_t=\hbar^{2}\nabla^2 e_t$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_t$. Adding the central scalar potential $-\kappa/r$ gives
+The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem for a spinor field. The momentum $\tilde p=-i\,\hbar\vec\nabla_\Phi$ is Hermitian in $\mathbb{B}_{\Psi}$; its quaternion square is minus the Euclidean square, $\tilde p^{\,2}=-p^{\,2}e_t=\hbar^{2}\Delta_\Phi e_t$, so the kinetic energy is $-\tilde p^{\,2}/(2m)=\tilde p\tilde p^{\natural}/(2m)=p^{\,2}/(2m)e_t$. Adding the central scalar potential $-\kappa/r$ gives
 
 $$
-H = \left[-\frac{\hbar^{2}}{2\,m}\nabla^2-\frac{\kappa}{r}\right]e_t = r_t\,e_t \in  \mathbb{B}_{\Psi},
+H = \left[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi-\frac{\kappa}{r}\right]e_t = r_t\,e_t \in  \mathbb{B}_{\Psi},
 \qquad
--\frac{i}{\hbar}H = i\left(\frac{\hbar}{2\,m}\nabla^2+\frac{\kappa}{\hbar\,r}\right)e_t \in  \mathbb{B}_{\Phi} .
+-\frac{i}{\hbar}H = i\left(\frac{\hbar}{2\,m}\Delta_\Phi+\frac{\kappa}{\hbar\,r}\right)e_t \in  \mathbb{B}_{\Phi} .
 $$
 
 The Hamiltonian is central, so the spin is a spectator, the total-angular-momentum coupling is not needed, and the spinor equation reduces componentwise to the standard scalar Schrödinger equation. Separation in the framework's operators, with orbital operators in the scalar slot and spin operators in the vector slots, gives the standard radial equation with the angular coupling $\hbar^{2}\,l\,(l+1)$, the standard spectrum
@@ -319,10 +319,10 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\mathbb{B}_{H}$ | Real quaternion subspace; $\vec r=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ the material position |
 | $\mathbb{B}_{C}$ | Centre, $\operatorname{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i\vec e_\eta)=\sigma_\eta$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $\tilde p=-i\,\hbar\nabla=\sum_\eta  \vec e_\eta p_\eta$, $p_\eta=-i\,\hbar\partial/\partial R_\eta$ | Momentum, Hermitian, in $\mathbb{B}_{\Psi}$ |
+| $\tilde p=-i\,\hbar\vec\nabla_\Phi=\sum_\eta  \vec e_\eta p_\eta$, $p_\eta=-i\,\hbar\partial/\partial R_\eta$ | Momentum, Hermitian, in $\mathbb{B}_{\Psi}$ |
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
-| $H=r_t\,e_t$, $r_t=-\frac{\hbar^{2}}{2\,m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
+| $H=r_t\,e_t$, $r_t=-\frac{\hbar^{2}}{2\,m}\Delta_\Phi-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{B}_{\Psi}$ |
 | $-\frac{i\,H}{\hbar\,\in\,\mathbb{B}}_{\Phi}$ | Time-translation generator, $H$ read through $i$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\frac{\hbar^{2}}{m\,\kappa}$ | Bohr radius |

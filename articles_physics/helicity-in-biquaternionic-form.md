@@ -53,7 +53,7 @@ $$
 \vec L\cdot\vec p=(\vec r\times\vec p)\cdot\vec p=0 .
 $$
 
-In the algebra this is one line. The orbital operator is the vector part of the quaternionic product of position and momentum, $\vec L=\mathrm{Vect}(\vec r\,\tilde p)$ with $\tilde p=-i\,\hbar\nabla$ (*Angular Momentum and Spin in Biquaternionic Form*, §*The Orbital Angular Momentum Operator*), and the scalar triple product carrying $\vec p$ twice vanishes identically. The projection of $\vec J$ on $\vec u_p$ is therefore the projection of $\vec S$, which is why the quantity has a name of its own and is not called one component of the total angular momentum.
+In the algebra this is one line. The orbital operator is the vector part of the quaternionic product of position and momentum, $\vec L=\mathrm{Vect}(\vec r\,\tilde p)$ with $\tilde p=-i\,\hbar\vec\nabla_\Phi$ (*Angular Momentum and Spin in Biquaternionic Form*, §*The Orbital Angular Momentum Operator*), and the scalar triple product carrying $\vec p$ twice vanishes identically. The projection of $\vec J$ on $\vec u_p$ is therefore the projection of $\vec S$, which is why the quantity has a name of its own and is not called one component of the total angular momentum.
 
 **The consequence for the slots.** The orbital part occupies the central scalar slot $e_t$ and the spin part the vector slots $i\vec e_\eta$, the asymmetry that article records. The vanishing above is what makes the asymmetry harmless for this one projection: the orbital slot contributes nothing to it, so the projection of $\vec J$ on $\vec u_p$ is the projection of $\vec S$ alone.
 

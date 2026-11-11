@@ -50,7 +50,7 @@ The framework results used here are those of the companion articles:
 $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0 ,
 $$
-one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla$ with $\partial/\partial R_t=-i\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_\eta\,\partial/\partial R_\eta$. Nothing is added and nothing is dropped. The translated form is the only form used below.
+one operator, one field, first order. This is the source's own equation translated once. The source writes its derivative with one frame object per coordinate; the translation of the time term is the $e_t\,\partial/\partial R_t$ term of $\tilde\nabla_\Phi$ with $\partial/\partial R_t=-i\partial/\partial r'_t$, and the translation of each spatial term is the corresponding $\vec e_\eta\,\partial/\partial R_\eta$. Nothing is added and nothing is dropped. The translated form is the only form used below.
 
 **The square of the gradient is not scalar.** The two products of the gradient with its conjugate are exact and scalar,
 $$
@@ -128,7 +128,7 @@ $$
 =\tilde{Ξ}_{\mathrm{sp}}^{\dagger}e^{\alpha\omega}\,\tilde D\,(\tilde{Ξ}_{\mathrm{sp}} e^{\alpha\omega})
 =\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\tilde D\,\tilde{Ξ}_{\mathrm{sp}}\,e^{2\alpha\omega},
 $$
-and the last factor is a constant element of the algebra. For the *global* rotation the equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ is invariant exactly and not to first order, since $\tilde\nabla(\tilde{Ξ}_{\mathrm{sp}} e^{\alpha\omega})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})e^{\alpha\omega}$. That is the sharpest form of the statement that the axial rotation is a symmetry of the massless action, and it uses no anticommutator of frame objects, only the associativity of the algebra and the commutation of the two sides.
+and the last factor is a constant element of the algebra. For the *global* rotation the equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ is invariant exactly and not to first order, since $\tilde\nabla_\Phi(\tilde{Ξ}_{\mathrm{sp}} e^{\alpha\omega})=(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})e^{\alpha\omega}$. That is the sharpest form of the statement that the axial rotation is a symmetry of the massless action, and it uses no anticommutator of frame objects, only the associativity of the algebra and the commutation of the two sides.
 
 **The local rotation produces the current.** When $\alpha$ depends on position the derivative falls on it,
 $$

@@ -14,7 +14,7 @@ This article treats the continuum of the same central potential whose bound stat
 
 The article is organised as follows. The next section states the Coulomb problem in the biquaternion framework and fixes the Coulomb parameter. The third section carries out the partial-wave decomposition, writes the radial equation, and exhibits the regular Coulomb function and the Coulomb phase. The fourth obtains the scattering amplitude and Rutherford's formula. The fifth gives the Born approximation, evaluates the first Born amplitude, and explains why its modulus is already exact. The sixth treats the long-range tail and the energy dependence of the Coulomb phase. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar^{2}}{2\,m}\nabla^2+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $r$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian sectors; $\mathbb{B}_{C}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; the Hamiltonian is $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V(r)]e_t$, central; and $\mathrm{Tr}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$. The coordinate $r$ is the argument of the field.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -33,7 +33,7 @@ $$
 attractive for opposite charges ($\alpha<0$) and repulsive for like charges ($\alpha>0$). The Hamiltonian
 
 $$
-H=\left[-\frac{\hbar^{2}}{2\,m}\nabla^2+\frac{\alpha}{r}\right]e_t
+H=\left[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+\frac{\alpha}{r}\right]e_t
 $$
 
 is central, so the stationary equation $H\tilde{Ξ}_{\mathrm{sp}}=E\tilde{Ξ}_{\mathrm{sp}}$ reduces to the scalar equation for the envelope, and every stationary state is $\tilde{Ξ}_{\mathrm{sp}}=\xi_{\mathrm{scl}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a constant module element. The potential is spherically symmetric, so the envelope separates in spherical coordinates and the angular dependence is carried by the spherical harmonics, which are scalar functions. In the module there is no angular structure at all: the spin-0 state has no orientation, and the entire angular dependence of the problem is the scalar angular dependence of $\xi_{\mathrm{scl}}$. The comparison with the sibling spin subcategories is exact: there, a spin-orbit coupling would make the Hamiltonian non-central and the partial-wave decomposition would carry a spin index; here it does not.
@@ -285,7 +285,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 
 ## Summary
 
-The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{\hbar^{2}}{2\,m}\nabla^2+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{m\,\alpha}{\hbar^{2}\,k_\Phi}=\frac{\alpha}{\hbar\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
+The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=\frac{m\,\alpha}{\hbar^{2}\,k_\Phi}=\frac{\alpha}{\hbar\,v}$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
 
 $$
 \frac{d^2u_l}{dr^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,

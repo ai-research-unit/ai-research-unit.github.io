@@ -49,7 +49,7 @@ which is the ordinary Euclidean quadratic form in the four coordinates. Three co
 **2. The wave equation becomes the Laplacian.** The d'Alembertian
 
 $$
-\Box = -\frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \nabla^2
+\Box = -\frac{1}{c_0^2}\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta_\Phi
 $$
 
 becomes, with $Q_t = i r'_t$,
@@ -133,7 +133,7 @@ This is the local version of the $i r'_t$ convention. It makes the complex struc
 The d'Alembertian argument supports this interpretation. In a medium with speed of light $c$, the wave operator is
 
 $$
-\Box = -\frac{\partial^2}{\partial {r'_{t}}^2} + \nabla^2,
+\Box = -\frac{\partial^2}{\partial {r'_{t}}^2} + \Delta_\Phi,
 $$
 
 which becomes the ordinary Euclidean Laplacian in four dimensions when written in terms of the local complex coordinate $i r'_t$. The Euclidean form is preserved in **any** medium, not just in vacuum. This is a structural argument in favor of the local complex structure: the Euclidean character of the wave operator is a medium-independent fact, and it is captured precisely by the local complex coordinate.

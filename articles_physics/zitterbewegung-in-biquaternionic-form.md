@@ -256,7 +256,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k_\Phi=\vec p\,\frac{1}{\hbar}$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |
 | $\flat$ | The anti-Hermitian conjugation (the algebra's real structure, not the mass term), *Algebra and Element Conventions* |
-| $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
+| $\tilde\nabla_\Phi$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
 | $L_{a}R_{b}$ | A two-sided basis operator; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |
 | $\mathrm{id}$ | The identity map |
 | $\beta:\tilde Q\mapsto i\tilde Q\vec e_x$ | The time map, one right multiplication |

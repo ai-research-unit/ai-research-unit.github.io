@@ -8,7 +8,7 @@ $$
 \tilde\nabla\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0 ,
 $$
 
-where $\tilde\nabla$ is the corpus gradient, $\tilde{Ξ}_{\mathrm{sp}}$ is an **even element**, $\omega=-\vec e_z$ is the source's imaginary unit with $\omega^2=-e_t$, and $v_0$ is a fixed timelike vector with $v_0^2=+1$. The equation is real: no complex number is introduced beyond the coefficients, no array is used, and the imaginary unit of the four-component equation of the older literature is replaced, on the field, by right multiplication by the fixed element $\omega$. Hestenes reads $\tilde{Ξ}_{\mathrm{sp}}$ as a rotation times a density, so the eight real components of the field are the six parameters of a rotation plus a density and an angle. The electron's spin is then a geometric rotation, and the current is a geometric vector. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+where $\tilde\nabla_\Phi$ is the corpus gradient, $\tilde{Ξ}_{\mathrm{sp}}$ is an **even element**, $\omega=-\vec e_z$ is the source's imaginary unit with $\omega^2=-e_t$, and $v_0$ is a fixed timelike vector with $v_0^2=+1$. The equation is real: no complex number is introduced beyond the coefficients, no array is used, and the imaginary unit of the four-component equation of the older literature is replaced, on the field, by right multiplication by the fixed element $\omega$. Hestenes reads $\tilde{Ξ}_{\mathrm{sp}}$ as a rotation times a density, so the eight real components of the field are the six parameters of a rotation plus a density and an angle. The electron's spin is then a geometric rotation, and the current is a geometric vector. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **Every derivative in this article is the corpus gradient**, cited and not restated. The gradient, its conjugate and its scalar square $\Box$ are fixed once for the series in *Operator and Calculus Conventions*, §*The Gradient*, and the article adds no second derivative of its own. A free equation is therefore first order in one field, $\tilde\nabla\tilde F=0$; a mass is carried by the chiral pair
 
@@ -204,7 +204,7 @@ $$
 a **right** multiplication by the phase factor, accompanied by the gauge transformation of the potential, with $e$ the charge coupling constant of the equation. The side is forced by the equation: the phase must reach the derivative on the same side as the spin plane. The derivative term produces
 
 $$
-\tilde\nabla(\tilde{Ξ}_{\mathrm{sp}} E)\,\omega
+\tilde\nabla_\Phi(\tilde{Ξ}_{\mathrm{sp}} E)\,\omega
 =(\tilde\nabla\tilde{Ξ}_{\mathrm{sp}})\,\omega E-e(\tilde\nabla\alpha)\,\tilde{Ξ}_{\mathrm{sp}} E ,
 $$
 

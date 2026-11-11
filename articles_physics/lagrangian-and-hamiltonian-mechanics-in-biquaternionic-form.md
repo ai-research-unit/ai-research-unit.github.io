@@ -329,7 +329,7 @@ in the source's notation, with $ϙ_n$ the charge of the $n$-th particle and $A$ 
 The reason to introduce the object is the action. The source's **action postulate** is
 
 $$
-\tilde\nabla S = i\Pi ,
+\tilde\nabla_\Phi S = i\Pi ,
 $$
 
 that is, the four-Hamiltonian derives from a single invariant scalar $S$, the action. In the corpus's vocabulary the content of the postulate is that $\Pi$ is, up to the central factor $-i$, a gradient: the components satisfy $\partial/\partial R_\mu\Pi_\nu=\partial/\partial R_\nu\Pi_\mu$, which is the statement that the one-form $\Pi$ is **closed** and therefore locally exact. The source writes the same condition as $\tilde\nabla\wedge\Pi=0$, and reads it as $d\Pi$ being a total differential, equivalently
@@ -342,7 +342,7 @@ which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} d
 
 **Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Q_3$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Q_3$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
 
-**The Hamilton–Jacobi rewriting.** With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the **relativistic Hamilton–Jacobi equation** for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla S+ϙ\tilde A_{\Phi}$ equal to $m^2$, the sign of the $ϙ\tilde A_{\Phi}$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm interpretation are the subject of the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.
+**The Hamilton–Jacobi rewriting.** With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the **relativistic Hamilton–Jacobi equation** for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla_\Phi S+ϙ\tilde A_{\Phi}$ equal to $m^2$, the sign of the $ϙ\tilde A_{\Phi}$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm interpretation are the subject of the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.
 
 ## The Poisson Bracket
 
@@ -505,5 +505,5 @@ The formulation is a transcription, exact for configurations that fit in a real 
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of rotors, rigid bodies, and mechanics.
 - David Hestenes, *New Foundations for Classical Mechanics* (Reidel, 1986), for a treatment of classical mechanics in a real Clifford algebra closely related to the quaternion one.
 - [Hamiltonian Field Theory in Biquaternionic Form](hamiltonian-field-theory-in-biquaternionic-form.html), companion article, for the extension of the Legendre transform, the bracket and the conservation law to a field, where the conjugate momentum is a field and the density and flux are one Hermitian biquaternion.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §5, for the four-Hamiltonian $\Pi=[H;-i\vec\pi]$, the action postulate $\tilde\nabla S=i\Pi$, and the interpretation of Hamilton's principle as the exactness of the one-form $dX\circ\Pi$.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §5, for the four-Hamiltonian $\Pi=[H;-i\vec\pi]$, the action postulate $\tilde\nabla_\Phi S=i\Pi$, and the interpretation of Hamilton's principle as the exactness of the one-form $dX\circ\Pi$.
 - W. R. Hamilton, *Elements of Quaternions*, Vol. II, art. 419 (2nd ed., enlarged by C. J. Joly, 1899–1901), for the quaternion resolution of the Kepler problem and the conservation of the angular-momentum and Runge–Lenz vectors.

@@ -169,7 +169,7 @@ The construction is not tied to the basis dyad. For any dyad with $\varepsilon(o
 
 ## Spin Coefficients
 
-The tetrad is a frame, and a connection is expressed in a frame through its coefficients. Suppose a linear connection $\nabla$ on the material sector is given, metric-compatible with $\langle\cdot,\cdot\rangle_{\natural}$; the parent article records that the algebra carries such a connection but does not select one. For tetrad legs $e_a,e_b,e_c$ define
+The tetrad is a frame, and a connection is expressed in a frame through its coefficients. Suppose a linear connection $\vec\nabla_\Phi$ on the material sector is given, metric-compatible with $\langle\cdot,\cdot\rangle_{\natural}$; the parent article records that the algebra carries such a connection but does not select one. For tetrad legs $e_a,e_b,e_c$ define
 
 $$
 \Gamma_{abc} := (\nabla_a e_b)\cdot e_c, \qquad \nabla_a := \nabla_{e_a}.
@@ -181,13 +181,13 @@ $$
 \kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \nu; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
 $$
 
-The first four are the contractions of $\nabla l$ with the tetrad legs,
+The first four are the contractions of $\vec\nabla_\Phi l$ with the tetrad legs,
 
 $$
 \kappa = \sum_a m_a D l_a, \qquad \sigma = \sum_a m_a \delta l_a, \qquad \rho = \sum_a m_a \bar\delta l_a, \qquad \tau = \sum_a m_a \Delta l_a,
 $$
 
-where $D=\sum_a l_a\nabla_a$, $\Delta=\sum_a n_a\nabla_a$, $\delta=\sum_a m_a\nabla_a$ and $\bar\delta=\sum_a \bar m_a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\nabla n$, and the last four complete the components of $\nabla l$ and $\nabla n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
+where $D=\sum_a l_a\nabla_a$, $\Delta=\sum_a n_a\nabla_a$, $\delta=\sum_a m_a\nabla_a$ and $\bar\delta=\sum_a \bar m_a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\vec\nabla_\Phi n$, and the last four complete the components of $\vec\nabla_\Phi l$ and $\vec\nabla_\Phi n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
 
 In the framework the connection is valued in the bivector subspace. The parent article identifies the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ with the six-dimensional subspace $\{\vec G : \mathrm{Sc}(\vec G)=0\}$ — equivalently, under $Ξ$, the traceless $2\times2$ matrices — spanned by $\vec e_x,\vec e_y,\vec e_z$ and $i\vec e_x,i\vec e_y,i\vec e_z$, which is the complex-pure-vector subspace of $\mathbb{B}$. A connection 1-form takes values in that subspace and has one component per tetrad direction, giving
 
@@ -195,7 +195,7 @@ $$
 \underbrace{6}_{\text{real dim } \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}} \ \times\ \underbrace{4}_{\text{tetrad directions}} \ =\ 24 \ \text{real}\ =\ 12 \ \text{complex},
 $$
 
-the same count as the antisymmetry of $\Gamma_{abc}$ gave. The biquaternionic statement of the spin coefficients is therefore: **they are the components, in the null tetrad, of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued 1-form** — a $\mathbb{B}$-valued connection, since the bivectors sit inside $\mathbb{B}$. In flat spacetime with the constant tetrad (2), every $\nabla e_a$ vanishes and all twelve coefficients are zero; in general they measure the failure of the tetrad to be covariantly constant.
+the same count as the antisymmetry of $\Gamma_{abc}$ gave. The biquaternionic statement of the spin coefficients is therefore: **they are the components, in the null tetrad, of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued 1-form** — a $\mathbb{B}$-valued connection, since the bivectors sit inside $\mathbb{B}$. In flat spacetime with the constant tetrad (2), every $\vec\nabla_\Phi e_a$ vanishes and all twelve coefficients are zero; in general they measure the failure of the tetrad to be covariantly constant.
 
 The framework's contribution here is a home, not a construction. It supplies the six-dimensional traceless subspace in which the connection values live, and it supplies the tetrad in which they are resolved; it does not supply the connection itself, exactly as the parent article found for the frame.
 

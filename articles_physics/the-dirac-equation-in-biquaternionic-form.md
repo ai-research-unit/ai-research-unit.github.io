@@ -12,7 +12,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R} ,
 $$
 
-which is the pair of *Operator and Calculus Conventions*. Every derivative in $\tilde\nabla$ carries an inverse length, so the coefficient on the right must carry one too, and it is written as the reciprocal of a length:
+which is the pair of *Operator and Calculus Conventions*. Every derivative in $\tilde\nabla_\Phi$ carries an inverse length, so the coefficient on the right must carry one too, and it is written as the reciprocal of a length:
 
 $$
 k_m=\dfrac{mc}{\hbar}.
@@ -125,7 +125,7 @@ $$
 \lvert\vec\nabla\rvert^2 = \Delta ,
 $$
 
-the spatial gradient of *Operator and Calculus Conventions*, §*The Gradient*, which is the vector part of $\tilde\nabla$ and is therefore pure and arrowed, with real quaternion coefficients on the material sector. The equation is
+the spatial gradient of *Operator and Calculus Conventions*, §*The Gradient*, which is the vector part of $\tilde\nabla_\Phi$ and is therefore pure and arrowed, with real quaternion coefficients on the material sector. The equation is
 
 $$
 \mathcal{N}F := \Bigl(i\frac{\partial}{\partial r'_t} + \vec\nabla\Bigr)F - i\,\overline{F}\,\vec e_z\,k_m = 0,

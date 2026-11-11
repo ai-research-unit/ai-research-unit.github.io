@@ -31,11 +31,11 @@ $$
 
 where each $\tilde\pi_\eta$ is a central Hermitian operator (a multiple of $e_t$) and the sum is over the three spatial directions. Because $A_\eta$ and $\xi_{\mathrm{scp}}$ are ordinary real functions of position, they multiply the central element $e_t$, and the Hamiltonian is central. The mechanical momentum components act on the envelope and multiply by $e_t$, so they commute with the module. The magnetic field changes the Hamiltonian's spectrum by changing the operator algebra of the envelope; it does not touch the module.
 
-For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many gauges, all related by $\vec A\to\vec A+\nabla\lambda$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\nabla\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.
+For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in many gauges, all related by $\vec A\to\vec A+\vec\nabla_\Phi\lambda$, and the spectrum is gauge invariant. In the biquaternion interpretation the gauge freedom is a freedom in the central part of the operator algebra: $\lambda$ is a real scalar and $\vec\nabla_\Phi\lambda$ is a real quaternion, so the gauge transformation shifts $\tilde\pi$ by a real-vector multiple of $e_t$ and leaves the central structure untouched. The field strength, which is gauge invariant, is the object with algebraic meaning.
 
 ### The field strength as a central commutator
 
-The components of the mechanical momentum do not commute. With the convention $\vec B=\nabla\times\vec A$, a direct computation gives
+The components of the mechanical momentum do not commute. With the convention $\vec B=\vec\nabla_\Phi\times\vec A$, a direct computation gives
 
 $$
 \boxed{\;[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\,\varepsilon_{\eta lm}B_m\,e_t\;},

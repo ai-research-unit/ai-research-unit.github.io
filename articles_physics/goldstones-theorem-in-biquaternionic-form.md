@@ -143,7 +143,7 @@ which in the real components is
 $$
 \tilde J_{\Phi}=-\left(\xi_1\tilde\nabla\xi_2-\xi_2\tilde\nabla\xi_1\right)
 \;\xrightarrow{\ \text{expansion}\ } \;
-\tilde J_{\Phi}=-\sqrt2\,v\,\tilde\nabla\vartheta_{\mathrm{fld}}+\vartheta_{\mathrm{fld}}\,\tilde\nabla h-h\,\tilde\nabla\vartheta_{\mathrm{fld}} ,
+\tilde J_{\Phi}=-\sqrt2\,v\,\tilde\nabla\vartheta_{\mathrm{fld}}+\vartheta_{\mathrm{fld}}\,\tilde\nabla_\Phi h-h\,\tilde\nabla\vartheta_{\mathrm{fld}} ,
 $$
 
 where the second line is the expansion about the minimum with $\xi_1=\sqrt2v+h$, $\xi_2=\vartheta_{\mathrm{fld}}$. To leading order in the fluctuations,

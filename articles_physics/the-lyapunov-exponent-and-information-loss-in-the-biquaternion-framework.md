@@ -51,7 +51,7 @@ Three facts are used below, and each is transcribed from the standard theory rat
 **Divergence and volume.** The sum of the exponents is the average rate of change of the volume element,
 
 $$
-\sum_k \lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\left|\det D\xi_{\mathrm{flw},r'_{t}}\right| = \left\langle \nabla\cdot f\right\rangle ,
+\sum_k \lambda_k = \lim_{r'_t\to\infty}\frac{1}{r'_{t}}\log\left|\det D\xi_{\mathrm{flw},r'_{t}}\right| = \left\langle \vec\nabla_\Phi\cdot f\right\rangle ,
 $$
 
 where $f$ is the vector field of the flow. For a Hamiltonian flow the divergence vanishes, the flow is volume-preserving, and the exponents come in pairs $\pm\lambda$ with the total zero. For a dissipative flow the sum is negative and the volume contracts.
@@ -241,7 +241,7 @@ The last point locates the boundary precisely. Positive Lyapunov exponents are a
 
 **Derived from the algebra.** The invariance of the biquaternion norm and the trace pairing under rotor conjugation, and therefore the vanishing of every Lyapunov exponent of a reversible flow — this is proved directly from the multiplicativity of the biquaternion norm, not assumed; the affine Bloch action of a channel semigroup and the identification of its exponents with the singular values of $L(r'_t)$; the dephasing spectrum $\{0,-\Gamma,-\Gamma\}$ and the volume contraction rate $2\Gamma$; the relation between the decay of the quadratic biquaternion norm and the vector exponent, including the exact factor of two between them; the identity $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$; and the entropy production rate of the dephasing semigroup. The numerical checks use the four-complex-coefficient representation of $\mathbb{B}$ and a transverse tangent vector, that is, a superposition-level object rather than a single plane wave.
 
-**Imported from standard dynamical-systems theory.** The definition of the Lyapunov exponent and the multiplicative ergodic theorem; the divergence identity $\sum_k\lambda_k = \langle\nabla\cdot f\rangle_{*}$; Pesin's formula $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$; the integrability of two-dimensional Hamiltonian flows; and the trace-distance contractivity of completely positive trace-preserving maps. These are transcribed as standard.
+**Imported from standard dynamical-systems theory.** The definition of the Lyapunov exponent and the multiplicative ergodic theorem; the divergence identity $\sum_k\lambda_k = \langle\vec\nabla_\Phi\cdot f\rangle_{*}$; Pesin's formula $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$; the integrability of two-dimensional Hamiltonian flows; and the trace-distance contractivity of completely positive trace-preserving maps. These are transcribed as standard.
 
 **Not supplied.** The framework does not derive the dephasing rate $\Gamma$; it does not select which channel is realised; it has no positive exponent and therefore no chaos in its linear sector; and it makes no prediction that differs from the standard Lyapunov analysis of a two-level system. What it supplies is the geometric quantity — the biquaternion norm — in terms of which the exponents and the entropy production are one accounting.
 

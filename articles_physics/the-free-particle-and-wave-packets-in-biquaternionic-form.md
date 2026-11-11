@@ -23,7 +23,7 @@ The conventions are those of the companion articles and of `Conventions in the B
 The momentum operator is
 
 $$
-\tilde p = -i\,\hbar\nabla  = \sum_{\eta=1}^{3}  \vec e_\eta p_\eta, \qquad p_\eta = -i\,\hbar\partial/\partial R_\eta.
+\tilde p = -i\,\hbar\vec\nabla_\Phi  = \sum_{\eta=1}^{3}  \vec e_\eta p_\eta, \qquad p_\eta = -i\,\hbar\partial/\partial R_\eta.
 $$
 
 Each coefficient $p_\eta$ is purely imaginary as a complex scalar, and each is paired with a real quaternion unit, so $\tilde p$ has a purely imaginary vector part: it is **Hermitian**,
@@ -63,12 +63,12 @@ The free biquaternion Schrödinger equation is
 $$
 \boxed{\;i\,\hbar\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = H \tilde{Ξ}_{\mathrm{sp}},
 \qquad
-H =\frac{p^{2}}{2\,m}\,e_t = -\frac{\hbar^{2}}{2\,m}\nabla^2  e_t\;},
+H =\frac{p^{2}}{2\,m}\,e_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi  e_t\;},
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = r_t e_t$ with $r_t = -\frac{\hbar^{2}}{2\,m}\nabla^2$, the equation reads
+with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = r_t e_t$ with $r_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi$, the equation reads
 
 $$i\,\hbar\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = r_t e_t \tilde{Ξ}_{\mathrm{sp}} = r_t \tilde{Ξ}_{\mathrm{sp}},
 $$
@@ -76,7 +76,7 @@ $$
 and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = r_t I_2$. The generator of the free evolution,
 
 $$
--iH/\hbar = \frac{i\,\hbar}{2\,m}\nabla^2 e_t \in \mathbb{B}_{\Phi},
+-iH/\hbar = \frac{i\,\hbar}{2\,m}\Delta_\Phi e_t \in \mathbb{B}_{\Phi},
 $$
 
 lies in the **material sector**, as every generator of a $*$-unitary flow does in this framework: it is imaginary in the scalar direction and real in the vector direction, with vanishing vector part here.
@@ -240,7 +240,7 @@ $$
 one obtains the continuity equation
 
 $$
-\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0,
+\partial/\partial r'_t\,\rho + \vec\nabla_\Phi\cdot\vec J = 0,
 \qquad
 \rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}).
 $$
@@ -419,12 +419,12 @@ The free biquaternion Schrödinger equation is $i\,\hbar\partial/\partial r'_t\,
 $$
 H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\frac{\tilde{p}^{2}}{2\,m} \in  \mathbb{R}e_t \subset  \mathbb{B}_{\Psi},
 \qquad
-\tilde p = -i\,\hbar\nabla,
+\tilde p = -i\,\hbar\vec\nabla_\Phi,
 $$
 
 and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ have the dispersion $\omega =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{i\,H}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.
 
-The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
+The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \vec\nabla_\Phi\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
 A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{\hbar\,k_{0}}{m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
@@ -445,7 +445,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector; observables and the kinetic term |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; generator and current |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | State module, $\tilde\Pi = \tfrac12(e_t + i\vec u)$ |
-| $\tilde p = -i\,\hbar\nabla  = \sum_\eta  \vec e_\eta p_\eta$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{B}_{\Psi}$ |
+| $\tilde p = -i\,\hbar\vec\nabla_\Phi  = \sum_\eta  \vec e_\eta p_\eta$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{B}_{\Psi}$ |
 | $p_\eta = -i\,\hbar\partial/\partial R_\eta$ | Momentum component |
 | $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $H = p^{2} e_t/2m$ | Free Hamiltonian; central |
