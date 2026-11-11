@@ -221,21 +221,37 @@ $$
 
 Reading the two gradient displays term by term, the fourth-coordinate slot loses its $-i$ and gains a $1$ while the three space slots lose their $1$ and gain a $-i$, and no other difference exists. The $i$ sits on the time coefficient on $\mathbb{B}_{\Phi}$ and on the three space coefficients on $\mathbb{B}_{\Psi}$, so its square is $(-i)^2=-1$ once on the first slice and three times on the second, which is why the two slices carry opposite signature. That sign is a property of the slice and not of the operator: it is read on the operator only after a sector is named, and it is the reason the d'Alembertian below carries the time term positive on one sector and negative on the other.
 
-**The sector mark, and the one place the bar survives.** A low subscript names the **sector of the coefficients**: the four parameters the article has fixed are kept, and the passage from one sector to the other is multiplication by the central $i$ and nothing else,
+**The sector mark names the sector of the coefficients.** A low subscript keeps the four parameters the article has fixed, which are $r'_t$ and $r_k$, and moves the four coefficients from one class to the other, by the central $i$ and nothing else. The gradient and its conjugate read
 
 $$
 \tilde\nabla_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
 \qquad
-\tilde\nabla_{\Psi}=i\,\tilde\nabla_{\Phi},
-\qquad
-\tilde\nabla_{\Phi}^{*}=-\tilde\nabla_{\Phi},
-\qquad
-\tilde\nabla_{\Psi}^{*}=+\tilde\nabla_{\Psi},
+(\tilde\nabla^{\natural})_{\Phi}=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
 $$
 
-so $\tilde\nabla_{\Psi}=e_t\partial/\partial r'_t+i\sum_k\vec e_k\,\partial/\partial r_k$, the four material parameters with the four coefficients moved one class each. The subscript is a label and not a second operator: the four coefficient sets are $(-i,1,1,1)$ for $\tilde\nabla_{\Phi}$, $(1,i,i,i)$ for $\tilde\nabla_{\Psi}$, $(-i,-1,-1,-1)$ for $(\tilde\nabla^{\natural})_{\Phi}$ and $(1,-i,-i,-i)$ for $(\tilde\nabla^{\natural})_{\Psi}$.
+$$
+\tilde\nabla_{\Psi}=i\,\tilde\nabla_{\Phi}=e_t\frac{\partial}{\partial r'_t}+i\sum_k\vec e_k\frac{\partial}{\partial r_k},
+\qquad
+(\tilde\nabla^{\natural})_{\Psi}=i\,(\tilde\nabla^{\natural})_{\Phi}=e_t\frac{\partial}{\partial r'_t}-i\sum_k\vec e_k\frac{\partial}{\partial r_k}.
+$$
 
-**The bar names the slice, and on the material sector the two marks coincide.** On a slice the four parameters change as well as the four coefficients. The material slice keeps $r'_t$ and $r_k$, which is the parameter set of $\tilde\nabla_{\Phi}$, so the material gradient is written with the subscript and never with the bar. The bar survives for $\mathbb{B}_{\Psi}$ and only there. The last coefficient set above, $(1,-i,-i,-i)$, is also the coefficient set of the gradient read on the informational slice, so $\tilde\nabla|_{\mathbb{B}_{\Psi}}$ is the switch of the **conjugate** of the material gradient and not the switch of the gradient itself, and a reader who expects it to be $\tilde\nabla_{\Psi}$ is off by $2i$ on each of the three space slots. The reason is one line: multiplying a coefficient by $i$ moves it one class, while moving a parameter from the real part of a coefficient to the imaginary part also flips the sign of its derivative, $\partial/\partial R_k=\partial/\partial r_k-i\,\partial/\partial r'_k$. The same two marks serve the d'Alembertian: $\Box_{\Phi}=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ and $\Box_{\Psi}=\partial^2/\partial r_t^2-\Delta_{\Psi}$, with $\Delta_{\Phi}=\sum_k\partial^2/\partial r_k^2$ and $\Delta_{\Psi}=\sum_k\partial^2/\partial {r'_k}^2$, so the two readings of the second-order operator carry opposite overall signs.
+The two material tuples are $(-i,1,1,1)$ and $(-i,-1,-1,-1)$; the two informational ones are $(1,i,i,i)$ and $(1,-i,-i,-i)$. The conjugate reverses the three space signs and keeps the temporal coefficient, and the switch multiplies all four coefficients by $i$. The subscript is a label and not a second operator, and it fixes the two classes. With the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, which conjugates the coefficients and reverses the three space units, $\tilde\nabla_{\Phi}^{*}=-\tilde\nabla_{\Phi}$, $(\tilde\nabla^{\natural})_{\Phi}^{*}=-(\tilde\nabla^{\natural})_{\Phi}$, $\tilde\nabla_{\Psi}^{*}=+\tilde\nabla_{\Psi}$ and $(\tilde\nabla^{\natural})_{\Psi}^{*}=+(\tilde\nabla^{\natural})_{\Psi}$, so the two material lines are anti-Hermitian and the two informational lines Hermitian.
+
+**The bar names the slice, and it carries that slice's parameters.** A slice keeps one of the two real coordinates in each slot, so the derivative in a slot is the derivative in the coordinate the slice keeps. The material slice keeps $r'_t$ and $r_k$, so $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_k=\partial/\partial r_k$; the informational slice keeps $r_t$ and $r'_k$, so $\partial/\partial R_t=\partial/\partial r_t$ and $\partial/\partial R_k=-i\,\partial/\partial r'_k$. Read on the two slices, the gradient and its conjugate are
+
+$$
+\tilde\nabla\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\frac{\partial}{\partial r'_t}+\sum_k\vec e_k\frac{\partial}{\partial r_k},
+\qquad
+(\tilde\nabla^{\natural})\big|_{\mathbb{B}_{\Phi}}=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_k\vec e_k\frac{\partial}{\partial r_k},
+$$
+
+$$
+\tilde\nabla\big|_{\mathbb{B}_{\Psi}}=e_t\frac{\partial}{\partial r_t}-i\sum_k\vec e_k\frac{\partial}{\partial r'_k},
+\qquad
+(\tilde\nabla^{\natural})\big|_{\mathbb{B}_{\Psi}}=e_t\frac{\partial}{\partial r_t}+i\sum_k\vec e_k\frac{\partial}{\partial r'_k}.
+$$
+
+On the material sector the two marks name one operator, $\tilde\nabla|_{\mathbb{B}_{\Phi}}=\tilde\nabla_{\Phi}$ and $(\tilde\nabla^{\natural})|_{\mathbb{B}_{\Phi}}=(\tilde\nabla^{\natural})_{\Phi}$, because the slice and the sector keep the same parameters; a display may use either, as the action formulas below do, where the bar records the parameters the derivatives are taken at. On the informational sector the two marks differ: the slice keeps $r_t$ and $r'_k$ where the sector keeps $r'_t$ and $r_k$, so the slice carries the tuple $(1,-i,-i,-i)$ where $\tilde\nabla_{\Psi}$ carries $(1,i,i,i)$. The two agree on the temporal slot and differ by $2i$ on each of the three space slots, and $\tilde\nabla|_{\mathbb{B}_{\Psi}}$ carries the tuple of $(\tilde\nabla^{\natural})_{\Psi}$ read at the other parameters. The reason is one line: $\partial/\partial R_k=\partial/\partial r_k-i\,\partial/\partial r'_k$, so moving a parameter from the real part of a coefficient to the imaginary part also flips the sign of its derivative. On $r'_t e_t+r_x\vec e_x$ the material gradient returns $-1-i$; on $r_t e_t+r'_x\vec e_x$ the informational slice gradient returns $+1+i$ where $\tilde\nabla_{\Psi}$ returns $+1-i$. The same two marks serve the d'Alembertian: $\Box_{\Phi}=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ and $\Box_{\Psi}=\partial^2/\partial r_t^2-\Delta_{\Psi}$, with $\Delta_{\Phi}=\sum_k\partial^2/\partial r_k^2$ and $\Delta_{\Psi}=\sum_k\partial^2/\partial {r'_k}^2$, so the two readings of the second-order operator carry opposite overall signs.
 
 ### The Plain Bilinear Product, Its Form and Its Norm
 
@@ -598,9 +614,9 @@ The four products are read on the gradient: the plain bilinear product holds the
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient |
 | $\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$ | The pure spatial gradient |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $\tilde\nabla_{\Phi}$ | The gradient in the material sector, coefficients $(-i,1,1,1)$ on $r'_t$ and $r_k$, anti-Hermitian, $\tilde\nabla_{\Phi}^{*}=-\tilde\nabla_{\Phi}$ |
-| $\tilde\nabla_{\Psi}$ | The gradient in the informational sector, $\tilde\nabla_{\Psi}=i\tilde\nabla_{\Phi}$ with coefficients $(1,i,i,i)$ on the same parameters, Hermitian, $\tilde\nabla_{\Psi}^{*}=+\tilde\nabla_{\Psi}$ |
-| $\tilde\nabla$ with a bar | The **slice** mark, written for $\mathbb{B}_{\Psi}$ only: $\tilde\nabla$ on that slice carries the coefficients of $(\tilde\nabla^{\natural})_{\Psi}$, not of $\tilde\nabla_{\Psi}$ |
+| $\tilde\nabla_{\Phi}$, $(\tilde\nabla^{\natural})_{\Phi}$ | The gradient and its conjugate in the material sector, $\tilde\nabla_{\Phi}=-i\,e_t\partial_{r'_t}+\sum_k\vec e_k\partial_{r_k}$ and $(\tilde\nabla^{\natural})_{\Phi}=-i\,e_t\partial_{r'_t}-\sum_k\vec e_k\partial_{r_k}$, with the tuples $(-i,1,1,1)$ and $(-i,-1,-1,-1)$ on $r'_t$ and $r_k$; both anti-Hermitian |
+| $\tilde\nabla_{\Psi}$, $(\tilde\nabla^{\natural})_{\Psi}$ | Their switches, $\tilde\nabla_{\Psi}=i\tilde\nabla_{\Phi}$ and $(\tilde\nabla^{\natural})_{\Psi}=i(\tilde\nabla^{\natural})_{\Phi}$, with the tuples $(1,i,i,i)$ and $(1,-i,-i,-i)$ at the same parameters; both Hermitian, $\tilde\nabla_{\Psi}^{*}=+\tilde\nabla_{\Psi}$ |
+| $\tilde\nabla$ with a bar | The **slice** mark, at the slice's own parameters: $\tilde\nabla\vert_{\mathbb{B}_{\Phi}}=-i\,e_t\partial_{r'_t}+\sum_k\vec e_k\partial_{r_k}$, which is $\tilde\nabla_{\Phi}$ itself, and $\tilde\nabla\vert_{\mathbb{B}_{\Psi}}=e_t\partial_{r_t}-i\sum_k\vec e_k\partial_{r'_k}$, tuple $(1,-i,-i,-i)$. The informational slice keeps $r_t$ and $r'_k$ where the sector keeps $r'_t$ and $r_k$, so the two differ by $2i$ on each space slot; the conjugate lines reverse the three space signs |
 | $\Delta_{\Phi}$, $\Delta_{\Psi}$, $\Box_{\Phi}$, $\Box_{\Psi}$ | The spatial Laplacians and the d'Alembertians of the two sectors, $\Box_{\Phi}=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ and $\Box_{\Psi}=\partial^2/\partial r_t^2-\Delta_{\Psi}$ |
 | $\mathrm{fop}$ | The Fock-operator mark, the one exception to the element rule |
 | $^{\natural}$ | The quaternion conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |

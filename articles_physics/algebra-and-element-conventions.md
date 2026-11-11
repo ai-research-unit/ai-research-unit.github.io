@@ -334,7 +334,7 @@ $$
 
 **The switch multiplies the whole element.** It is never applied to one coefficient, and a map that multiplies the time coefficient alone is the Wick coefficient map $W$ of *Interpretation of the Wick Rotation in the Biquaternion Universe*, not the switch. It is multiplicative in the sense $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, which is what lets it be applied to an equation; it is not an algebra homomorphism, since $(i\tilde X)(i\tilde Y)=-\tilde X\tilde Y$, and neither sector is a subalgebra.
 
-**The direction of the switch is a convention.** Multiplication by $+i$ and by $-i$ give the same pair of readings with the labels exchanged, and the series uses $-i$ for the direction from an object to its observable, as in the preparation dictionary $\tilde R_\Psi=-\tfrac{i}{2}\tilde R_\Phi$, the sign that makes the trace of a four-momentum positive. The article that develops the switch, the readings, the gradient and the comparison with the Wick rotation is *The Two Readings and the Phy–Psy Switch*.
+**The direction of the switch is a convention.** Multiplication by $+i$ and by $-i$ give the same pair of readings with the labels exchanged, and the series uses $-i$ for the direction from an object to its observable, as in the preparation dictionary $\tilde R_\Psi=-\tfrac{i}{2}\tilde R_\Phi$, the sign that makes the trace of a four-momentum positive. The article that develops the switch, the mirror pair, the mirror biquaternion that carries the pair and the comparison with the Wick rotation is *Mirror Biquaternions and the Phy–Psy Switch*; the gradient and its slices are in *Operator and Calculus Conventions*.
 
 <!-- retired notation, kept for reference -->
 **The operator reading is retired.** Earlier versions of this series wrote the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters were named $h_t, h_x, h_y, h_z$ in place of $r_t, r'_x, r'_y, r'_z$, and the element was written
@@ -343,7 +343,7 @@ $$
 H = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R}.
 $$
 
-That second name is gone. It was the licence to write one number two ways, and a pair of names for one number is a defect, not a notation. The element has one name on each side of the split: $\tilde R_\Psi$ for the informational half and $\tilde R_\Phi$ for the material half. The parameters are the position letters,
+That second name is gone as a name for the coordinate. It was the licence to write one number two ways, and a pair of names for one number is a defect, not a notation. The letters return in one place only, the observable reading of the paragraph after next, where they name a reading and not a second element. The element has one name on each side of the split: $\tilde R_\Psi$ for the informational half and $\tilde R_\Phi$ for the material half. The parameters are the position letters,
 
 $$
 \tilde R_\Psi = r_t\,e_t + i\vec r_\Psi, \qquad \vec r_\Psi = r'_x\vec e_x + r'_y\vec e_y + r'_z\vec e_z ,
@@ -351,13 +351,7 @@ $$
 
 with $r'_t$ and $r_t$ the material and informational temporal coordinates, both lengths. Under the unit images of *Matrix Representations Conventions*, §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), the matrix image is the general Hermitian $2\times2$ matrix $r_t I_2 + r'_x\sigma_1 + r'_y\sigma_2 + r'_z\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The readable part of the old convention survives: the coefficient of $e_t$ is a length, $r_t$, and it is read as an energy only when $\hbar\,c$ is carried in the reading, in the exponent $\exp(-\frac{i\,\tilde{R}_{\Psi}\,r'_{t}}{\hbar\,c})$ and not in the coefficient.
 
-**One abbreviation is allowed.** In an article that does evolution, $H$ may be written for $\tilde R_\Psi$ in its energy reading, and it must be declared at first use as
-
-$$
-H := \tilde R_\Psi, \qquad H = r_t\,e_t + i\vec r_\Psi ,
-$$
-
-with the $\hbar$ in the exponent and not in the coefficient. The tilde is not carried, because $H$ is not a second element. A bare $h$ without a subscript remains the Planck constant, and $\vec r_\Psi$ stays distinct from the Bloch vector $\vec r$ of the state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$.
+**An element read as an observable keeps its sector and changes its letter.** The informational reading is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, with $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$ and $h_t,h'_x,h'_y,h'_z\in\mathbb{R}$, and the material reading of the same four numbers is its mirror, $\tilde H_\Phi=-i\tilde H_\Psi=i\,h'_t\,e_t+\vec h_\Psi$ with $h'_t=-h_t$, so $\tilde H_\Psi=i\tilde H_\Phi$. The subscript carries the sector and the letter the reading: $r$ for the coordinate and $h$ for the observable. A bare $h$ without a subscript remains the Planck constant, and $\vec h_\Psi$ stays distinct from the Bloch vector $\vec r$ of the state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$.
 
 ## The Conjugations
 

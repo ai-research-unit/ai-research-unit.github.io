@@ -1,0 +1,734 @@
+# __Mirror Biquaternions and the Phy–Psy Switch__
+
+## Introduction
+
+**The split is fixed, and it is a split into parts.** The algebra is the direct sum of two real four-dimensional subspaces, $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$, the anti-Hermitian one and the Hermitian one, and every element is the sum of one member of each:
+
+$$
+\tilde Q=\tilde Q_\Phi+\tilde Q_\Psi,
+\qquad
+\tilde Q_\Phi=\tfrac12\bigl(\tilde Q-\tilde Q^{*}\bigr)\in\mathbb{B}_{\Phi},
+\qquad
+\tilde Q_\Psi=\tfrac12\bigl(\tilde Q+\tilde Q^{*}\bigr)\in\mathbb{B}_{\Psi}.
+$$
+
+The split is not a cut an article may make differently: it is the eigenspace decomposition of the Hermitian conjugation, it holds for every element of the algebra, and it is fixed in *Introduction to the Biquaternion Universe*, §*Two Sectors: Material and Informational*, and in *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*. The two subscripts $\Phi$ and $\Psi$ name those two parts throughout the series, and the two sector letters are reserved for them.
+
+**What the split does not give.** A general element has two parts, and the two parts are different elements. The material part carries an imaginary temporal coefficient with three real spatial ones, the informational part a real temporal coefficient with three imaginary spatial ones, and the eight real numbers of the element divide four and four between them. Nothing relates one part to the other. So a relation between the parts, such as $\tilde Q_\Psi=i\tilde Q_\Phi$, is never a theorem about an arbitrary element: it is a **constraint** that selects a subclass of elements, and that subclass is the subject of this article.
+
+**The mirror.** A biquaternion that lies wholly in one sector is a **sector element**: a material sector element when it is anti-Hermitian, an informational one when it is Hermitian. A sector element is not called pure: in this series a pure element is one with no scalar part, *Algebra and Element Conventions*, §*The Arrow*, and a sector element usually has one. On a sector element the multiplication by the central $i$ is available and produces a second sector element:
+
+$$
+\boxed{\;\tilde X_\Phi\in\mathbb{B}_{\Phi}\ \Longrightarrow\ \tilde X_\Psi:=i\,\tilde X_\Phi\in\mathbb{B}_{\Psi},
+\qquad\qquad
+\tilde X_\Phi=-i\,\tilde X_\Psi\;}.
+$$
+
+The image is the **mirror** of the source, the two together are a **mirror pair**, and the image is also called the **sibling** of the source, which is the name the catalogue of glyphs uses for it. The mirror is exact and costs nothing: the four real numbers of the source are kept, the $i$ moves off the temporal slot onto the three spatial ones, and the element changes sector. The definition reads the same in the other direction, which is why the two arrows carry one name and not two.
+
+**The mirror biquaternion.** One multiplication of a material element by the complex scalar $1+i$ produces a single element, and that element carries both readings:
+
+$$
+\boxed{\;\tilde X_{\mathrm{mir}}:=(1+i)\,\tilde X_\Phi=(i-1)x'_t\,e_t+(1+i)\bigl(x_x\vec e_x+x_y\vec e_y+x_z\vec e_z\bigr)\;},
+\qquad
+x'_t,\ x_x,\ x_y,\ x_z\in\mathbb{R}.
+$$
+
+It is not assembled from two elements and it is not a sum: it is one element, written once, whose four real numbers are each multiplied by the fixed factor of their slot, $i(1+i)=i-1$ on the temporal slot and $1\cdot(1+i)=1+i$ on the three spatial ones. The two readings are then read off it by projection,
+
+$$
+\bigl(\tilde X_{\mathrm{mir}}\bigr)_\Phi=\tfrac{1-i}{2}\,\tilde X_{\mathrm{mir}}=\tilde X_\Phi,
+\qquad
+\bigl(\tilde X_{\mathrm{mir}}\bigr)_\Psi=\tfrac{1+i}{2}\,\tilde X_{\mathrm{mir}}=i\,\tilde X_\Phi ,
+$$
+
+so the pair appears when the element is split, and not before. This is the **mirror biquaternion** of the material element $\tilde X_\Phi$. It is not a new algebra, not a new sector and not a fifth operation: it is the one element of $\mathbb{B}$ whose two parts are the object and the mirror of the object, so the object and its observable sit in one element, in the two sectors the split provides. The construction is one line, and the rest of the article is what follows from it.
+
+**The class, and the test.** Write $\mathbb{M}$ for the set of mirror biquaternions, that is, for the elements whose two parts are mirrors of one another:
+
+$$
+\mathbb{M}=\Bigl\{\tilde Q\in\mathbb{B}\ :\ \tilde Q_\Psi=i\,\tilde Q_\Phi\Bigr\}
+=\Bigl\{(1+i)\,\tilde X_\Phi\ :\ \tilde X_\Phi\in\mathbb{B}_{\Phi}\Bigr\}.
+$$
+
+The set is a real four-dimensional subspace of the eight-dimensional real algebra, the image of the material sector under the real-linear injection $\tilde X_\Phi\mapsto(1+i)\tilde X_\Phi$, and membership in it is decidable from the element alone by one line, $\tilde Q^{*}=i\tilde Q$, which §*The Mirror Biquaternion* proves and checks. A general element is not in $\mathbb{M}$: its parts are independent, and the constraint that would put it there is exactly the one it fails.
+
+**What the article establishes.** The switch is one substitution applied to a sector element, an equation or a coefficient, and each application produces an exact second statement in the other sector. The mirror biquaternion is the object that holds the two statements at once. The article gives the algebra of both, recomputed on random elements; the four-vectors, the Schrödinger equation and five further cases of the construction at work; and the comparison with the Wick rotation, which is the neighbouring map and is not this one. It adds no dynamics and no prediction.
+
+**Written in full coordinates.** A material element carries four real numbers, on the imaginary temporal slot and the three real spatial slots:
+
+$$
+\tilde X_\Phi=i x'_t\,e_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z .
+$$
+
+Its mirror multiplies the four coefficients by $i$, and the temporal slot is the only one that meets an $i$ already present:
+
+$$
+i\tilde X_\Phi=i\bigl(i x'_t\bigr)e_t+i x_x\vec e_x+i x_y\vec e_y+i x_z\vec e_z=-x'_t\,e_t+i x_x\vec e_x+i x_y\vec e_y+i x_z\vec e_z=\tilde X_\Psi .
+$$
+
+Read slot by slot, the image is fixed by four correspondences, one per coefficient:
+
+$$
+\boxed{\;
+\begin{aligned}
+x_t&=-x'_t,&\quad&\text{time},\\
+x'_x&=+x_x,&\quad&\text{space }x,\\
+x'_y&=+x_y,&\quad&\text{space }y,\\
+x'_z&=+x_z,&\quad&\text{space }z,
+\end{aligned}}
+$$
+
+with $x_t,x'_x,x'_y,x'_z$ the four real numbers of the image. The three space numbers pass across unchanged and the time number passes with its sign reversed, and what has moved is the $i$: off the temporal coefficient and onto the three spatial ones. The converse multiplication by $-i$ undoes it, and there each space slot meets one $-i$ against one $i$:
+
+$$
+-i\tilde X_\Psi=-i\bigl(-x'_t\bigr)e_t-i\bigl(i x_x\bigr)\vec e_x-i\bigl(i x_y\bigr)\vec e_y-i\bigl(i x_z\bigr)\vec e_z=i x'_t\,e_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z=\tilde X_\Phi .
+$$
+
+The three space lines are their own converses; the time line is the one that reverses, and that reversal is what makes the mirror a different element rather than the same one relabelled. The trace says it at sight: $2i x'_t$ on the source and $2x_t=-2x'_t$ on the image. The mirror biquaternion carries all eight numbers at once, four in each part,
+
+$$
+\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi=\bigl(i x'_t-x'_t\bigr)e_t+(1+i)\bigl(x_x\vec e_x+x_y\vec e_y+x_z\vec e_z\bigr),
+$$
+
+and it is determined by the four numbers of its material part, from which its informational part follows by the rule above.
+
+**The name.** This article calls the multiplication by $i$ the **Phy–Psy switch**. The name follows the corpus's own mnemonic for the two sector letters: $\Phi$ opens the word *physics* and marks the material side, and $\Psi$ is the letter a quantum state is written with and marks the informational side. The name takes its *Phy* from the first and its *Psy* from the second. The switch runs in both directions, since $i$ is invertible with inverse $-i$. Both the name and the two readings are fixed as conventions in *Algebra and Element Conventions*, §*The Hermitian and Anti-Hermitian Subspaces*, and this article uses them as fixed.
+
+**Status.** The algebra below is established and is recomputed on a hundred random elements: the exchange of the two parts under the switch, the projections of a mirror biquaternion onto its two members, the test $\tilde Q^{*}=i\tilde Q$, the square of the factor, $(1+i)^{2}=2i$, the sign of the norm, the invariance of the Hermitian form, the multiplication of the trace, the sign of the determinant, and the quarter turn of the spectrum. The identification of $\mathbb{B}_{\Phi}$ with a material sector and of $\mathbb{B}_{\Psi}$ with an informational one is the corpus's **hypothesis**, and the article inherits it and does not argue for it. What the article adds is the construction of the mirror pair and of the mirror biquaternion, the exact statement of what the switch preserves and what it changes, and the comparison with the Wick rotation.
+
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$, central $i$ with $i^{2}=-1$, Hermitian conjugation ${}^{*}$, quaternion conjugation ${}^{\natural}$ and the trace $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$. The two forms are the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and the Hermitian form $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$. The interval is written in the length unit $c=1$: with $c$ restored the temporal coordinate is $cr'_{t}$ and the four-momentum is $i(E/c)e_t+\vec p$, as in the corpus's own writing.
+
+## The Parts
+
+**The projections.** The two parts of an element are its two projections, and each is idempotent:
+
+$$
+\tilde Q_\Phi=\tfrac12\bigl(\tilde Q-\tilde Q^{*}\bigr),
+\qquad
+\tilde Q_\Psi=\tfrac12\bigl(\tilde Q+\tilde Q^{*}\bigr),
+\qquad
+(\tilde Q_\Phi)_\Phi=\tilde Q_\Phi,
+\qquad
+(\tilde Q_\Psi)_\Psi=\tilde Q_\Psi .
+$$
+
+The first is anti-Hermitian, since $\bigl(\tfrac12(\tilde Q-\tilde Q^{*})\bigr)^{*}=\tfrac12(\tilde Q^{*}-\tilde Q)=-\tilde Q_\Phi$, and the second is Hermitian by the same line with the sign kept. The projection onto a sector therefore does nothing to an element already in that sector, which is the statement that a sector element *is* its own part.
+
+**Two sector cases and the mixed case.** Three cases exhaust the elements, and the article uses all three.
+
+| Case | Condition | What the split gives | What the switch does |
+| --- | --- | --- | --- |
+| material sector element | $\tilde Q^{*}=-\tilde Q$ | $\tilde Q=\tilde Q_\Phi$ and $\tilde Q_\Psi=0$ | its mirror, informational |
+| informational sector element | $\tilde Q^{*}=+\tilde Q$ | $\tilde Q=\tilde Q_\Psi$ and $\tilde Q_\Phi=0$ | its mirror, material |
+| mixed | $\tilde Q^{*}\neq\pm\tilde Q$ | two nonzero parts | exchanges the parts |
+
+**The switch exchanges the parts of any element.** The third row is an exact statement and it is worth having before the construction, because it says what the switch does when the element lies in neither sector. Since $i$ is central and $i^{*}=-i$, the product $i\tilde Q$ has the parts of $\tilde Q$ exchanged and multiplied:
+
+$$
+\bigl(i\tilde Q\bigr)_\Phi=i\,\tilde Q_\Psi,
+\qquad
+\bigl(i\tilde Q\bigr)_\Psi=i\,\tilde Q_\Phi,
+$$
+
+which follows in one line from $\tfrac12\bigl(i\tilde Q\mp(i\tilde Q)^{*}\bigr)=\tfrac12\bigl(i\tilde Q\pm i\tilde Q^{*}\bigr)=i\cdot\tfrac12\bigl(\tilde Q\pm\tilde Q^{*}\bigr)$, with the two signs read in the two orders. For a sector element one of the two parts vanishes, so the exchange degenerates into the map of the first two rows: the mirror. For a mixed element the switch gives a different mixed element, and neither part of the original is recovered from the image as a reading; the two parts simply trade places. That is the exact sense in which the switch is a construction on sector elements and only an exchange on mixed ones.
+
+**No element carries two readings.** A reading belongs to an element and not to a writer: an element of $\mathbb{B}_{\Phi}$ is read materially, an element of $\mathbb{B}_{\Psi}$ informationally, and a mixed element is read in neither sector until it is split into its two parts, which are two elements. So the article reads no element twice. What it constructs is a pair, and then one element that holds the pair.
+## The Switch
+
+### The Operation
+
+The switch acts on one element and produces one element. Its input is an element of $\mathbb{B}_{\Phi}$, with an imaginary time coefficient and three real space coefficients; its output is an element of $\mathbb{B}_{\Psi}$, with a real time coefficient and three imaginary space coefficients, or the reverse. Written out in the two coefficient sets, with all parameters real,
+
+$$
+\tilde X_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z
+\ \xrightarrow{\ i\ }\
+\tilde X_\Psi=-r'_t\,e_t+i\bigl(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\bigr),
+$$
+
+and the reverse arrow is multiplication by $-i$. No element of one sector is turned into a pair, and no pair is turned into an element: the switch is a map from one sector to the other and back, element to element.
+
+The central $i$ is anti-Hermitian, $i^{*}=-i$, and it is central, so the conjugation of a product by $i$ reverses:
+
+$$
+(i\tilde Q)^{*}=\tilde Q^{*}\,i^{*}=-i\,\tilde Q^{*}.
+$$
+
+Applied to an element of one sector, that line is the whole of the switch. If $\tilde Q^{*}=-\tilde Q$ then $(i\tilde Q)^{*}=+i\tilde Q$, and if $\tilde Q^{*}=+\tilde Q$ then $(i\tilde Q)^{*}=-i\tilde Q$. In symbols,
+
+$$
+\tilde X_\Phi\in\mathbb{B}_{\Phi}\ \Longrightarrow\ i\tilde X_\Phi\in\mathbb{B}_{\Psi},
+\qquad\qquad
+\tilde X_\Psi\in\mathbb{B}_{\Psi}\ \Longrightarrow\ i\tilde X_\Psi\in\mathbb{B}_{\Phi}.
+$$
+
+The map is bijective in each direction, with inverse $i^{-1}=-i$, and it is real-linear on the two real four-dimensional spaces it relates: it carries real combinations to real combinations, and it is a bijection of real vector spaces. It is not a map between complex subspaces, because neither sector is one. The central scalars that are not imaginary do not switch sectors: with $u=a+bi$ and $a$, $b$ real, the image $u\tilde X_\Phi=a\tilde X_\Phi+ib\tilde X_\Phi$ is not in either sector unless $a$ or $b$ vanishes. The switch is the imaginary case, and the real central scalars are the scalars that keep an element in its sector.
+
+**The coordinate form.** In words: **the switch negates the material time and hands the three material space coordinates to the imaginary space slots.** The single factor $i$ leaves the time slot and appears on the three space slots, and the four real parameters pass through unchanged in magnitude. That one sentence is the whole of the operation, and every exact statement below is a consequence of it.
+
+### The Image Is a Second Element
+
+The mirror is a second element, and the numbers attached to it say so. For any element and its switch image,
+
+$$
+\boxed{\;\operatorname{Tr}(i\tilde Q)=i\,\operatorname{Tr}\tilde Q,
+\qquad
+\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural},
+\qquad
+\det(i\tilde Q)=-\det\tilde Q\;},
+$$
+
+since the determinant of the $2\times2$ image is the quaternionic norm and the image is multiplied by the scalar $i$. The spectrum turns a quarter turn in the complex plane,
+
+$$
+\boxed{\;\sigma(i\tilde Q)=i\,\sigma(\tilde Q)\;}.
+$$
+
+Each eigenvalue is multiplied by $i$, so a real pair becomes an imaginary pair and an imaginary pair becomes a real one, and the two travel as a pair. All four lines are checked on a hundred random elements, with residual zero.
+
+The four numbers are not small print. On a material four-momentum the trace is $2iE/c$ and the norm is $-m^{2}c^{2}$; on the mirror the trace is $-2iE/c$ and the norm is $+m^{2}c^{2}$. A change of notation does not move the trace from the imaginary central line to the real one, does not change the sign of the determinant and does not make an imaginary spectrum real. The pair is a pair of two elements.
+
+**The pair is canonical up to an overall sign.** The switch has order four, $i^{4}=+\mathrm{id}$, and its square is minus the identity, $i^{2}=-\mathrm{id}$. So the orbit of a sector element is the quadruple $\{\tilde X_\Phi,i\tilde X_\Phi,-\tilde X_\Phi,-i\tilde X_\Phi\}$, and the mirror pair is that orbit up to the overall sign: $\{\tilde X_\Phi,i\tilde X_\Phi\}$ and its negative are the same pair of sectors with the same two elements negated. The subsection on order and the orbit fixes what the corpus does with the sign.
+
+### What the Switch Preserves
+
+Because $i$ is central, the switch passes through a product:
+
+$$
+\boxed{\;i\,(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X\,(i\tilde Y)\;}.
+$$
+
+The proof is one line: $i$ commutes with every element, so it may be placed in front, in the middle or at the end of a product. Two consequences follow, and they are what makes the switch usable on physics.
+
+First, an equation survives multiplication. If an equation is written as an equality of products, sums and real coefficients, both sides may be multiplied by the same central scalar $i$, and the equality is preserved; each product is switched in one factor, because $i$ may be placed anywhere inside it. An equation $P(\tilde X)=0$ keeps its solutions, since $i$ is invertible. This is the licence to apply the switch to an equation, and the Schrödinger equation is the case worked below.
+
+Second, the Hermitian form is invariant. For any element,
+
+$$
+\boxed{\;(i\tilde Q)(i\tilde Q)^{*}=(i\tilde Q)\bigl(-i\tilde Q^{*}\bigr)=\tilde Q\tilde Q^{*}\;},
+$$
+
+so $\langle i\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{*}$. The form that is positive on the informational sector is the one form the switch leaves alone, and that is why probabilities are the same on both sides of the dictionary.
+
+What the switch does not preserve is composition. Two switches do not make one switch:
+
+$$
+(i\tilde X)(i\tilde Y)=-\tilde X\tilde Y .
+$$
+
+The map $\tilde Q\mapsto i\tilde Q$ is therefore not an algebra homomorphism, since a homomorphism would carry a product to the product of the images and this carries it to minus the product. The two statements are exact and they are not in conflict. *Multiplicative*, in the sense the article uses, means that a product may be switched by switching one factor and leaving the other; it does not mean that the image of a product is the product of the images. The first is what an equation needs. The second is what a symmetry needs.
+
+Since $(\tilde A\tilde B)^{*}=\tilde B\tilde A$, a product of two Hermitian elements is Hermitian exactly when the two commute; the commutator of two Hermitian elements is anti-Hermitian, so it leaves the informational sector, and the switch is what returns it. That is the closure the two sectors have, and it is the subject of the commutator example below.
+
+### What the Switch Changes
+
+The table collects the invariants. The first five rows hold for any element; the last two record which congruence preserves which form.
+
+| Object | On $\tilde Q$ | On $i\tilde Q$ | Relation |
+| --- | --- | --- | --- |
+| trace $\operatorname{Tr}=2\,\mathrm{Sc}$ | $2Q_t$ | $2iQ_t$ | multiplied by $i$ |
+| quaternionic norm $\langle\cdot\rangle_{\natural}$ | interval, signature $(3,1)$ | its negative, signature $(1,3)$ | sign reversed |
+| determinant of the $2\times2$ image | $\langle\tilde Q\rangle_{\natural}$ | $-\langle\tilde Q\rangle_{\natural}$ | sign reversed |
+| spectrum | $\lambda_{\pm}$ | $i\lambda_{\pm}$ | quarter turn |
+| Hermitian form $\langle\cdot\rangle_{*}$ | positive definite, $(4,0)$ | positive definite, $(4,0)$ | preserved |
+| Lorentz congruence, $U\tilde QU^{*}$ with $UU^{\natural}=e_t$ | preserves the interval | preserves it, and moves the Hermitian form | the material actor |
+| $*$-unitary congruence, $V\tilde QV^{*}$ with $VV^{*}=e_t$ | preserves the Hermitian form, and the interval too, being a similarity | same | the informational actor |
+
+The last two rows are the two actors, and they say what separates the readings. Each congruence acts on both sectors, because a congruence preserves the sector for every invertible multiplier. What differs is the form each leaves alone. The Lorentz congruence leaves the interval and moves the Hermitian form; the $*$-unitary congruence leaves both, since with $VV^{*}=e_t$ the map is a similarity and a similarity fixes the determinant. The rotations are the overlap of the two groups: a rotor that is also $*$-unitary has $U^{\natural}=U^{-1}=U^{*}$, hence is real, hence is a rotation. A boost lies in the first group and not the second, and it is exactly the element that moves the Hermitian form while leaving the interval fixed. So each reading has its own actor, and the two actors are not the same group.
+
+**A worked element.** Take $E=2.3$, $\vec p=(0.4,0.5,0.6)$ and $\tilde P_\Phi=iE\,e_t+\vec p$, in the length unit and with $c=1$. The mirror is $i\tilde P_\Phi=-E\,e_t+i\vec p$, and the numbers run as follows.
+
+| Number | $\tilde P_\Phi$ | $i\tilde P_\Phi$ |
+| --- | --- | --- |
+| trace | $4.6\,i$ | $-4.6$ |
+| quaternionic norm | $-4.52$ | $+4.52$ |
+| Hermitian form | $6.06$ | $6.06$ |
+| spectrum | $3.1775\,i$, $1.4225\,i$ | $-3.1775$, $-1.4225$ |
+
+The checksum is the spectral one: the sum of the spectrum is the trace and the product is the determinant, on both sides. On the left $4.6i$ is the sum and $-4.52$ the product, on the right $-4.6$ and $+4.52$. Nothing has been relabelled; two different elements have been computed.
+
+### Order Four and the Orbit
+
+The switch is a real-linear bijection of order four, and its powers are worth naming once. The square is minus the identity, so it keeps each sector and reverses it; the fourth power is the identity; and the odd powers exchange the sectors. Applied to a material element,
+
+$$
+\tilde X_\Phi\ \xrightarrow{\,i\,}\ i\tilde X_\Phi\ \xrightarrow{\,i\,}\ -\tilde X_\Phi\ \xrightarrow{\,i\,}\ -i\tilde X_\Phi\ \xrightarrow{\,i\,}\ \tilde X_\Phi .
+$$
+
+The two-element orbit of the construction is $\{\tilde X_\Phi,i\tilde X_\Phi\}$ up to sign, and it is the pair the article reads. The fourth power returning the element itself is what makes the construction repeatable: a mirror biquaternion is built out of one material element, and no further application of the switch produces a third member.
+
+## The Mirror Biquaternion
+
+### The Construction
+
+The construction takes four real numbers in and puts eight out, four in each sector, and it does so in one multiplication. Its input is a material element, its output one element:
+
+$$
+\tilde X_\Phi\in\mathbb{B}_{\Phi}
+\ \longmapsto\
+\tilde X_{\mathrm{mir}}:=(1+i)\tilde X_\Phi=(i-1)x'_t\,e_t+(1+i)\vec x_\Phi .
+$$
+
+No intermediate element is formed and nothing is added. The output is written once, with its four coefficients already complex, and the two readings are obtained from it afterward by the projections of §*The Parts*,
+
+$$
+\bigl(\tilde X_{\mathrm{mir}}\bigr)_\Phi=\tfrac{1-i}{2}\tilde X_{\mathrm{mir}}=\tilde X_\Phi,
+\qquad
+\bigl(\tilde X_{\mathrm{mir}}\bigr)_\Psi=\tfrac{1+i}{2}\tilde X_{\mathrm{mir}}=i\tilde X_\Phi ,
+$$
+
+both exact on a hundred random material elements, with residual zero. The construction is therefore a section of the projection onto $\mathbb{B}_{\Phi}$: it picks, for each material element, the unique mirror biquaternion whose material part it is. The material member is recovered from the mirror biquaternion by one projection, or in closed form by
+
+$$
+\tilde X_\Phi=\tfrac{1-i}{2}\,\tilde X_{\mathrm{mir}},
+\qquad
+\tfrac{1-i}{2}\cdot(1+i)=1,
+$$
+
+so the two directions are inverse and no information is added or lost, only a second sector's worth of it.
+
+**The factor is $(1+i)$.** Its square is $2i$, its modulus is $\sqrt2$, and it is neither real nor imaginary. So a mirror biquaternion is in neither sector: its two parts are nonzero whenever the source is, and $\mathbb{M}\cap\mathbb{B}_{\Phi}=\{0\}$ with $\mathbb{M}\cap\mathbb{B}_{\Psi}=\{0\}$. The consequence is worth stating plainly, because it is the reason the construction is needed: **a nonzero mirror biquaternion cannot be read in either reading until it is split.** The split is one projection, and it returns the object and its observable.
+
+**The invariants.** Both forms of the algebra take a fixed factor on $\mathbb{M}$, and the factors differ:
+
+$$
+\bigl\langle\tilde X_{\mathrm{mir}}\bigr\rangle_{\natural}
+=(1+i)^{2}\bigl\langle\tilde X_\Phi\bigr\rangle_{\natural}
+=2i\,\bigl\langle\tilde X_\Phi\bigr\rangle_{\natural},
+\qquad\qquad
+\bigl\langle\tilde X_{\mathrm{mir}}\bigr\rangle_{*}
+=(1+i)(1-i)\bigl\langle\tilde X_\Phi\bigr\rangle_{*}
+=2\,\bigl\langle\tilde X_\Phi\bigr\rangle_{*} .
+$$
+
+The quaternionic norm is multiplied by $2i$, so the interval of a mirror biquaternion is imaginary whatever the source is, and it is imaginary because the interval of the material source is real; and its magnitude is twice the interval of the source. The Hermitian form is multiplied by the real $2$, so it is real, and it is positive exactly when the source is causal. The two members of the pair keep the sharper statement of §*The Image Is a Second Element*: they share the Hermitian form and carry opposite intervals,
+
+$$
+\bigl\langle\tilde X_\Psi\bigr\rangle_{*}=\bigl\langle\tilde X_\Phi\bigr\rangle_{*},
+\qquad\qquad
+\bigl\langle\tilde X_\Psi\bigr\rangle_{\natural}=-\bigl\langle\tilde X_\Phi\bigr\rangle_{\natural},
+$$
+
+so what is timelike on the material side is spacelike on the informational one, and the number that stays fixed is the one the Born rule uses.
+
+**The trace and the spectrum.** The trace is multiplied by the same $(1+i)$ as the element, so
+
+$$
+\operatorname{Tr}\tilde X_{\mathrm{mir}}=(1+i)\operatorname{Tr}\tilde X_\Phi,
+\qquad
+\sigma\bigl(\tilde X_{\mathrm{mir}}\bigr)=(1+i)\,\sigma\bigl(\tilde X_\Phi\bigr),
+$$
+
+and the spectrum of a mirror biquaternion is the spectrum of the material member rotated by $\pi/4$ and scaled by $\sqrt2$, whether that spectrum is imaginary or real. Neither member's spectrum is the spectrum of the sum: the sum has the two, rotated and added.
+
+### The Class
+
+**The test.** Membership in $\mathbb{M}$ is decided from the element alone. Two tests, and they agree:
+
+$$
+\tilde Q_\Psi=i\,\tilde Q_\Phi
+\qquad\Longleftrightarrow\qquad
+\tilde Q^{*}=i\,\tilde Q .
+$$
+
+The second is the one to remember, because it uses no projection. Its proof is one line either way. If $\tilde Q=(1+i)\tilde X_\Phi$ then $\tilde Q^{*}=(1-i)\tilde X_\Phi^{*}=-(1-i)\tilde X_\Phi=i(1+i)\tilde X_\Phi=i\tilde Q$. If $\tilde Q^{*}=i\tilde Q$ then the two projections read $\tilde Q_\Phi=\tfrac12(\tilde Q-i\tilde Q)=\tfrac12(1-i)\tilde Q$ and $\tilde Q_\Psi=\tfrac12(\tilde Q+i\tilde Q)=\tfrac12(1+i)\tilde Q$, and $i\tilde Q_\Phi=\tfrac12(i+1)\tilde Q=\tilde Q_\Psi$. Both tests are run on a hundred random elements of the whole algebra, and they agree on every one.
+
+**The class is a real four-dimensional subspace.** $\mathbb{M}$ is closed under real linear combinations, since $(1+i)(a\tilde X_\Phi+b\tilde Y_\Phi)=a(1+i)\tilde X_\Phi+b(1+i)\tilde Y_\Phi$ for real $a$ and $b$, and it is the image of $\mathbb{B}_{\Phi}$ under the injection $\tilde X_\Phi\mapsto(1+i)\tilde X_\Phi$. It is therefore a real four-dimensional subspace of the eight-dimensional real algebra, isomorphic to the material sector, and a reader may use it as a copy of $\mathbb{B}_{\Phi}$ with the informational reading attached: every element of $\mathbb{M}$ is one material element, known twice.
+
+**The class is not a subalgebra.** The product of two mirror biquaternions is not one. The factor squares to $2i$, so
+
+$$
+(1+i)\tilde X_\Phi\cdot(1+i)\tilde Y_\Phi=(1+i)^{2}\tilde X_\Phi\tilde Y_\Phi=2i\,\tilde X_\Phi\tilde Y_\Phi,
+$$
+
+and the right side is a mirror biquaternion only when the product $\tilde X_\Phi\tilde Y_\Phi$ is anti-Hermitian, which is not the general case. The witness is exact and small: with $\tilde X_\Phi=e_t$ and $\tilde Y_\Phi=\vec e_x$, the two commute and
+
+$$
+(1+i)e_t\cdot(1+i)\vec e_x=2i\,\vec e_x,
+$$
+
+which lies wholly in $\mathbb{B}_{\Psi}$, so its material part is zero and its informational part is not the mirror of zero. The product of two mirror biquaternions is therefore generically a mixed element, and the class is a subspace and not an algebra. That is expected: a pair of an object and its observable is not itself an object, and multiplying two pairs is not multiplying two objects.
+
+**The class is not a real form, and the involution leaves it.** The ${}^{*}$-conjugation does not preserve $\mathbb{M}$ either. On a mirror biquaternion the test gives $\tilde Q^{*}=i\tilde Q$, so the conjugate and the switch image are the same element: **on $\mathbb{M}$ the switch and the Hermitian conjugation coincide.** Written on the members,
+
+$$
+\tilde X_{\mathrm{mir}}^{*}=i\,\tilde X_{\mathrm{mir}},
+\qquad
+\bigl(\tilde X_{\mathrm{mir}}^{*}\bigr)_\Phi=-\tilde X_\Phi,
+\qquad
+\bigl(\tilde X_{\mathrm{mir}}^{*}\bigr)_\Psi=i\tilde X_\Phi,
+$$
+
+so the conjugate negates the material member and keeps the informational one, and the result is not a mirror biquaternion: it satisfies $\tilde Q^{*}=-i\tilde Q$ instead, and its two parts are no longer mirrors. The two diagonal classes $\tilde Q^{*}=\pm i\tilde Q$ are therefore exchanged, each is a real four-dimensional subspace, and neither is stable under either operation. The real form of the algebra, the set fixed by ${}^{*}$, is the quaternion subspace $\mathbb{B}_{H}$, and $\mathbb{M}$ is not it: the mirror biquaternion is a complex structure, not a reality condition.
+
+**The switch on the class.** Applied to a mirror biquaternion, the switch negates the material member and keeps the informational one:
+
+$$
+i\,\tilde X_{\mathrm{mir}}=i\tilde X_\Phi+i^{2}\tilde X_\Phi=i\tilde X_\Phi-\tilde X_\Phi,
+\qquad
+\bigl(i\tilde X_{\mathrm{mir}}\bigr)_\Phi=-\tilde X_\Phi,
+\qquad
+\bigl(i\tilde X_{\mathrm{mir}}\bigr)_\Psi=i\tilde X_\Phi .
+$$
+
+So the switch does not preserve the class either, and its orbit on $\mathbb{M}$ is the quadruple $\{\tilde X_{\mathrm{mir}},i\tilde X_{\mathrm{mir}},-\tilde X_{\mathrm{mir}},-i\tilde X_{\mathrm{mir}}\}$, whose members alternate between $\mathbb{M}$ and its partner class: the first and the third are mirror biquaternions, the second and the fourth are not. Nothing is lost by that, and it is the honest picture: the switch is the tool that *makes* a mirror, not a symmetry that preserves the object made.
+
+### What the Class Is For
+
+**The object and its observable in one element.** The corpus's hypothesis is that $\mathbb{B}_{\Phi}$ carries what is there and $\mathbb{B}_{\Psi}$ what is recorded. Under it, a mirror biquaternion is the natural element that carries both: its material part is a four-vector, its informational part the same four-vector read as an observable, and neither is optional. A reader who wants the pair writes one glyph, $\tilde X_{\mathrm{mir}}$, and a reader who wants one member projects.
+
+**What the class does not do.** It does not make the two readings one reading. The parts stay in their sectors, the sectors stay disjoint, and the element that holds them is in neither. It does not give a dynamics: the constraint is algebraic, and a field of mirror biquaternions is a field of pairs and carries no equation of motion of its own. And it does not multiply, as the witness above shows.
+
+**Where the constraint is met in the corpus.** The cases of §*The Switch at Work* are the places where a material object and its mirror are both needed, and each of them is a mirror biquaternion written in two pieces. The four-momentum and its mirror, the connection and its mirror, the generator and the observable of the Schrödinger equation: in each case the two pieces are the two parts of one element of $\mathbb{M}$, and the article writes them in two pieces only because the two pieces are read differently. §*The Mirror Biquaternions, Built* writes out the four-vectors in full.
+## The Mirror Biquaternions, Built
+
+**One formula for all of them.** Every material glyph of the catalogue is a material sector element, so the construction applies to each of them and returns one element of $\mathbb{M}$. With $\tilde X_\Phi=i x'_t\,e_t+\vec x_\Phi$ and $\vec x_\Phi=x_x\vec e_x+x_y\vec e_y+x_z\vec e_z$,
+
+$$
+\boxed{\;\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi=(i-1)x'_t\,e_t+(1+i)\,\vec x_\Phi\;}.
+$$
+
+The two complex factors are fixed by the slot and not by the object, since the temporal coefficient is multiplied by $i(1+i)=i-1$ and each spatial coefficient by $1\cdot(1+i)=1+i$:
+
+| Slot | Coefficient in $\tilde X_\Phi$ | Coefficient in $\tilde X_{\mathrm{mir}}$ | Modulus and argument |
+| --- | --- | --- | --- |
+| temporal $e_t$ | $i x'_t$ | $(i-1)x'_t$ | $\sqrt2\,\lvert x'_t\rvert$ at $3\pi/4$ |
+| each spatial $\vec e_\eta$ | $x_\eta$ | $(1+i)x_\eta$ | $\sqrt2\,\lvert x_\eta\rvert$ at $\pi/4$ |
+
+So the construction multiplies the modulus of every coefficient by $\sqrt2$ and turns each one by $\pi/4$: the temporal coefficient leaves the imaginary axis for the second quadrant, and the three spatial coefficients leave the real axis for the first. That is the whole of the arithmetic, and it is one multiplication of the four coefficients by two fixed complex numbers.
+
+**The catalogue, built.** Each row has three objects, and the columns follow the order in which they are defined. The first is the material glyph $\tilde X_\Phi$. The second is its **sibling**, the switch image $\tilde X_\Psi=i\tilde X_\Phi$, a sector element of the informational sector. The third is the **mirror biquaternion** $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi$, one element built by one multiplication, whose two projections are the first and the second. The fourth column says what the sibling's reading makes of it.
+
+The third column is not assembled from the first two and is not their sum: it is written once, with its temporal coefficient multiplied by $i(1+i)=i-1$ and its three spatial coefficients by $1\cdot(1+i)=1+i$. Five material glyphs are built, the four four-vectors of the catalogue whose sibling is the glyph catalogued beside them, and the observable $\tilde H_\Psi$, whose material member is derived rather than catalogued.
+
+| Material glyph $\tilde X_\Phi$ | Sibling $\tilde X_\Psi=i\tilde X_\Phi$ | Mirror biquaternion, built | What the sibling's reading makes of it |
+| --- | --- | --- | --- |
+| $\tilde P_\Phi=i(E/c)e_t+\vec p_\Phi$ | $\tilde P_\Psi=-(E/c)e_t+i\vec p_\Phi$ | $\tilde P_{\mathrm{mir}}=(i-1)(E/c)e_t+(1+i)\vec p_\Phi$ | real spectrum $\{-(E/c\pm\lvert\vec p_\Phi\rvert)\}$, norm $+m^{2}c^{2}$ |
+| $\tilde K_\Phi=ik'_te_t+\vec k_\Phi$ | $\tilde K_\Psi=-k'_te_t+i\vec k_\Phi$ | $\tilde K_{\mathrm{mir}}=(i-1)k'_te_t+(1+i)\vec k_\Phi=\tilde P_{\mathrm{mir}}/\hbar$ | the same reading in inverse lengths |
+| $\tilde J_\Phi=ic\rho\,e_t+\vec J_\Phi$ | $\tilde J_\Psi=-c\rho\,e_t+i\vec J_\Phi$ | $\tilde J_{\mathrm{mir}}=(i-1)c\rho\,e_t+(1+i)\vec J_\Phi$ | form $c^{2}\rho^{2}+\lvert\vec J_\Phi\rvert^{2}>0$, density real, current imaginary |
+| $\tilde A_\Phi=ia'_te_t+\vec A_\Phi$ | $\tilde A_\Psi=-a'_te_t+i\vec A_\Phi$ | $\tilde A_{\mathrm{mir}}=(i-1)a'_te_t+(1+i)\vec A_\Phi$ | a Hermitian connection, minimal coupling preserved |
+| $\tilde H_\Phi=ih'_te_t+\vec h_\Psi$ | $\tilde H_\Psi=-h'_te_t+i\vec h_\Psi$ | $\tilde H_{\mathrm{mir}}=(i-1)h'_te_t+(1+i)\vec h_\Psi$ | the observable itself, of real spectrum; its scalar coefficient is $h_t=-h'_t$ |
+
+The five rows are one switch applied to five objects, and each sibling is the glyph catalogued on its own. The observable is the one row written from the informational side: its material member $\tilde H_\Phi=-i\tilde H_\Psi$ carries the time coefficient $ih'_t$ with $h'_t=-h_t$, so the sign of the material time coefficient is the one the switch has already given it, and the four numbers of the row are the four of $\tilde H_\Psi$. The position is the one material glyph not built here: its sibling $i\tilde R_\Phi=-r'_te_t+i\vec r_\Phi$ is not the catalogued $\tilde R_\Psi$, which is the general Hermitian observable, so the two are different objects that share a letter and the table has no row for it.
+
+The construction is real-linear in its source, $(1+i)(\lambda\tilde X_\Phi)=\lambda\tilde X_{\mathrm{mir}}$ for real $\lambda$, so a change of units and a change of $\hbar$ cost nothing: the wave number's mirror biquaternion is the four-momentum's divided by $\hbar$, and no new formula is needed. It is also insensitive to the object: the rows differ in their coefficients, not in their arithmetic, and a reader who has built one has built them all.
+
+**The four-momentum, built in numbers.** With $E=2.3$, $\vec p_\Phi=(0.4,0.5,0.6)$ and $c=1$, the material element is $\tilde P_\Phi=2.3i\,e_t+0.4\vec e_x+0.5\vec e_y+0.6\vec e_z$, and the construction gives
+
+$$
+\tilde P_{\mathrm{mir}}=(-2.3+2.3i)\,e_t+(0.4+0.4i)\vec e_x+(0.5+0.5i)\vec e_y+(0.6+0.6i)\vec e_z ,
+$$
+
+whose two projections are $\tilde P_\Phi$ and $\tilde P_\Psi=-2.3e_t+0.4i\vec e_x+0.5i\vec e_y+0.6i\vec e_z$, both recovered to zero residual. The material member, the informational member and the element that holds them then read as follows.
+
+| Number | $\tilde P_{\mathrm{mir}}=(1+i)\tilde P_\Phi$, built | $\bigl(\tilde P_{\mathrm{mir}}\bigr)_\Phi=\tilde P_\Phi$, material | $\bigl(\tilde P_{\mathrm{mir}}\bigr)_\Psi=i\tilde P_\Phi$, sibling |
+| --- | --- | --- | --- |
+| trace | $-4.6+4.6i$ | $4.6\,i$ | $-4.6$ |
+| quaternionic norm, determinant | $-9.04\,i$ | $-4.52$ | $+4.52$ |
+| Hermitian form | $12.12$ | $6.06$ | $6.06$ |
+| spectrum | $-3.1775+3.1775i$, $-1.4225+1.4225i$ | $3.1775\,i$, $1.4225\,i$ | $-3.1775$, $-1.4225$ |
+
+The first numeric column is the built element, and its third and fourth columns are what the split returns from it, the material glyph and its sibling. Each entry of the first column is the material entry multiplied by a fixed factor: the trace and the spectrum by $(1+i)$, the norm by $2i$, the form by $2$. The two columns to its right are read from it and are not assembled into it. The built column is also the only one whose every entry is complex, and that is what an element of $\mathbb{M}$ is: one element that holds the pair, in neither sector, with no reading of its own until it is projected.
+
+**The central case, and where the construction stops.** The source must be material, and a central element is material exactly when it is imaginary, because the conjugation reverses $i$ and fixes every real number. The mass is the case:
+
+$$
+\Rho_{\mathrm{mir}}=(1+i)\Rho=(i-1)mc,
+\qquad
+\bigl(\Rho_{\mathrm{mir}}\bigr)_\Phi=imc,
+\qquad
+\bigl(\Rho_{\mathrm{mir}}\bigr)_\Psi=-mc ,
+$$
+
+and nothing is moved, because a central element has no vector part for the $i$ to arrive on. The construction degenerates into the multiplication of a number by $(1+i)$, and the two projections are the two central scalars. A real central element is already informational, so it has no material part to build from and the construction on it returns zero. The case marks the boundary of the construction: it needs an imaginary temporal coefficient, and every material element has one.
+
+## The Material Reading
+
+The material reading is the reading of an element of $\mathbb{B}_{\Phi}$,
+
+$$
+\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z,
+$$
+
+with the imaginary time coefficient and the three real space coefficients. Its norm is the interval, $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+r_x^{2}+r_y^{2}+r_z^{2}$, of signature $(3,1)$; its zero set is the light cone; its unit group acts by rotor conjugation and gives the Lorentz group, boosts included. The trace is twice the temporal coefficient, and on the four-momentum it reads $\operatorname{Tr}\tilde P_\Phi=2iE/c$, an imaginary central number; the norm reads $-m^{2}c^{2}$. The spectrum is imaginary, $\lambda_{\pm}=i(E/c\pm\lvert\vec p\rvert)$: the two light-cone combinations, each of which rescales by the Doppler factor under a boost, and not a pair of energies. The element is what an observer meets: a position, a velocity, a momentum, a wavevector, a potential, a current, a force. This reading names what is there.
+
+## The Informational Reading
+
+The informational reading is the reading of an element of $\mathbb{B}_{\Psi}$,
+
+$$
+\tilde R_\Psi=r_t\,e_t+i\bigl(r'_x\vec e_x+r'_y\vec e_y+r'_z\vec e_z\bigr),
+$$
+
+with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Its trace is the temporal coefficient, and on a state normalised to one it reads $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the trace pairing $\operatorname{Tr}(\tilde{Ϛ}_\Psi\tilde R_\Psi^{*})=2\langle\tilde{Ϛ}_\Psi,\tilde R_\Psi\rangle_{*}$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.
+
+## The Switch at Work
+
+Each of the cases below states a claim in one reading, takes the mirror, and reads the result in the other. They are ordered by increasing distance from the element: an element, a glyph, a dictionary, an equation, a bracket, an interaction, a weight.
+
+### The Element and Its Mirror
+
+The material element is the object and the informational element is the operator that reads it, and the two are a mirror pair. The corpus records the map in the companion article on the material sector: the observable representative of a material element is $i\tilde Q\in\mathbb{B}_{\Psi}$, and the factor $i$ is the map from the object to the operator. That sentence is the switch, and it is the first case.
+
+Take the four-momentum. Material, it is $\tilde P_\Phi=i(E/c)e_t+\vec p$: the energy sits on the imaginary central line and the momentum on the real vector part. Its mirror is
+
+$$
+\boxed{\;i\tilde P_\Phi=-\frac{E}{c}e_t+i\vec p=\tilde P_\Psi\;},
+$$
+
+whose trace is $-2E/c$, real, and whose vector part is imaginary. The energy has become the real scalar coefficient and the momentum the imaginary vector part, and the sign of the whole element is the sign of the material one: $\operatorname{Tr}\tilde P_\Psi=-2E/c$, so $E=-\frac{c}{2}\operatorname{Tr}\tilde P_\Psi$. The reading is now the informational one: the element has a real spectrum. The pair $(\tilde P_\Phi,\tilde P_\Psi)$ is a mirror pair, and $\tilde P_{\mathrm{mir}}=\tilde P_\Phi+\tilde P_\Psi$ is one element whose parts are the two members.
+
+The same pattern holds for the other four-vectors. The four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ carries the charge density on the imaginary time slot and the current on the real space slots; its mirror is $i\tilde J_\Phi=-c\rho\,e_t+i\vec J$, with the density real and the current imaginary. The four-potential, the four-velocity and the wavevector follow the same rule, and the rule is one line: the temporal coefficient changes from imaginary to real and the three space coefficients from real to imaginary. What separates the four-vectors from one another is therefore not the switch, which does the same thing to all of them, but what the informational reading makes of the result.
+
+**The central scalar.** The mass is the useful case because it is central and carries no index. Material, it is $\Rho=imc$, an imaginary central number, and the norm of the four-momentum is its square, $-m^{2}c^{2}$. Its mirror is $i\Rho=-mc$, a real central number, and the norm of the mirrored four-momentum is $+m^{2}c^{2}$. The same length is imaginary in one reading and real in the other, and neither is a mistake: the two are the two central scalars of the algebra, and the switch is what carries one to the other.
+
+What the reading buys is a real spectrum. What it trades is the interval for the discriminant: the norm is still there, with its sign turned round, so what was timelike in the material reading is spacelike in the informational one. The two readings are not two views of one object; they are the two faces a physics needs, and no single sector holds both. The mirror biquaternion holds both, in its two parts.
+
+### The Mirror Glyphs
+
+The four four-vector siblings listed in §*The Mirror Biquaternions, Built* are catalogued as glyphs of their own, in *Physics Units and Common Elements Conventions*, §*The Four-Vectors and the Currents*, each mirror row beside its material partner. They earn a row for one reason: the informational reading gives them a real spectrum, so they are observables and not merely elements with the $i$ moved.
+
+The connection is the one that switches a glyph inside another object rather than a quantity, and it is the sharpest of the four. Its mirror is the other connection, $i\tilde A_\Phi=\tilde A_\Psi$, and the switch of a product that contains it moves that glyph and leaves every real scalar coefficient where it stands, since
+
+$$
+\boxed{\;i\Bigl(\frac{i\,ϙ}{\hbar}\tilde A_\Phi\Bigr)=\frac{i\,ϙ}{\hbar}\,i\tilde A_\Phi=\frac{i\,ϙ}{\hbar}\tilde A_\Psi\;}.
+$$
+
+The coupling $ϙ$ and the $\hbar$ are untouched, and minimal coupling does not know which reading it is written in. The empirical content is that $\tilde A_\Phi$ is anti-Hermitian and its mirror $\tilde A_\Psi$ is Hermitian, so the first term of a covariant derivative is Hermitian in the reading where the second is anti-Hermitian: the two classes swap together, and the sum is in neither sector either way. The phase $\exp(\theta\tilde A_\Phi)$ carries a real parameter in the material reading and an imaginary one in the informational reading, as the energy does.
+
+Two mirrors need no glyph, because the object they give already has a name. The four-velocity is one:
+
+$$
+i\tilde V_\Phi=i\gamma c\bigl(ie_t+\vec\beta\bigr)=-\gamma c\bigl(e_t-i\vec\beta\bigr)=-c\,\mathcal B_\Psi ,
+$$
+
+which is the boost factor of the four-vector, dimensionless because $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ and the switch reverses that sign without changing its size. The other is the null four-vector of a state:
+
+$$
+i\tilde{\mathcal L}_\Phi=i\Bigl(\tfrac{i}{2}e_t-\tfrac12\vec r\Bigr)=-\tfrac12e_t-\tfrac{i}{2}\vec r=-\tilde\Pi ,
+$$
+
+so the light cone of the material sector is the mirror of the boundary of the Bloch ball, and the two objects the series treats as two geometries are one up to the multiplication. The pair is worth stating in that direction, $i\tilde{\mathcal L}_\Phi=-\tilde\Pi$, because it is the only place where a null element of the material sector is an idempotent of the informational one.
+
+**The field, and the one place the two constructions must not be confused.** A field splits as an element does, $\tilde\Xi=\tilde\Xi_\Phi+\tilde\Xi_\Psi$, with $\tilde\Xi_\Phi$ anti-Hermitian at every point and $\tilde\Xi_\Psi$ Hermitian at every point; the first is a field of four-vectors and the second a field of observables. That decomposition is not the mirror. The mirror of $\tilde\Xi_\Phi$ is the different field $i\tilde\Xi_\Phi$, and $i\tilde\Xi_\Phi\neq\tilde\Xi_\Psi$ as soon as the field has both parts, because the split divides one field while the switch maps a field to another. The two agree only when $\tilde\Xi$ is material, and that case is the one the article uses. The mirror biquaternion of a field is the field $\tilde\Xi_\Phi+i\tilde\Xi_\Phi$, and it is a field of pairs, not the field $\tilde\Xi$.
+
+### The Preparation Dictionary
+
+The mirror of the reversed four-vector is a state. For a material four-vector $\tilde R_\Phi=i r'_t\,e_t+\vec r$,
+
+$$
+i\,(-\tilde R_\Phi)=r'_t\,e_t-i\,\vec r\in\mathbb{B}_{\Psi},
+\qquad\qquad
+\langle i\tilde R_\Phi\rangle_{\natural}=-\langle\tilde R_\Phi\rangle_{\natural}.
+$$
+
+The multiplier is $i$, as everywhere in the article; the only choice is which material element enters, the four-vector or its reverse, and the reverse is the one whose image has the positive scalar part. That is the whole of the preparation: a switch and a choice of sign in the argument.
+
+The causal condition of the material side is $r'_t\ge\lvert\vec r\rvert$, that is, $\langle\tilde R_\Phi\rangle_{\natural}\le0$; the switch turns the norm round, so the image has norm $r'^{2}_t-\lvert\vec r\rvert^{2}\ge0$. One inequality, one cone: the future light cone of $\mathbb{B}_{\Phi}$ lands in the positive cone of $\mathbb{B}_{\Psi}$, and the null cone lands on the elements of zero norm, which are the null ones.
+
+A real rescaling applied after the switch sets the trace of the state to one; that rescaling is the trace convention and it belongs to *The Bloch Ball as the Normalised Slice of the Future Light Cone*, which owns the normalised form of the dictionary.
+
+### The Schrödinger Equation
+
+The equation has two writings, and the members of a mirror pair stand in them. In biquaternionic form, with $\tilde\Xi_{\mathrm{sp}}$ the spinor-valued field and $\tilde R_\Psi\in\mathbb{B}_{\Psi}$ the observable,
+
+$$
+\boxed{\;i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde R_\Psi\,\tilde\Xi_{\mathrm{sp}}\;}.
+$$
+
+Multiply on the left by $-i$ and divide by the real central scalar $\hbar c$, which keeps every element in its sector,
+
+$$
+\boxed{\;\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde G_\Phi\,\tilde\Xi_{\mathrm{sp}},
+\qquad\qquad
+\tilde G_\Phi=-\frac{i}{\hbar c}\,\tilde R_\Psi\;},
+$$
+
+with $\tilde G_\Phi\in\mathbb{B}_{\Phi}$: the generator is the mirror of the observable, times one real scalar. Written as a mirror pair, the two writings name the two members,
+
+$$
+i\,\bigl(\hbar c\,\tilde G_\Phi\bigr)=\tilde R_\Psi,
+\qquad\qquad
+\hbar c\,\tilde G_\Phi\in\mathbb{B}_{\Phi},\qquad \tilde R_\Psi\in\mathbb{B}_{\Psi},
+$$
+
+and the mirror biquaternion $\hbar c\,\tilde G_\Phi+\tilde R_\Psi$ is one element whose two parts are the two writings. That is the clearest case in the corpus of what the class is for: the equation is one, its two sides are read in the two sectors, and the pair that carries them is a mirror pair.
+
+The two writings are not two equations. The first names the observable and reads the dynamics through the $i$ that stands in the coefficient; the second names the generator and places it in the material sector, the sector of the four-vectors. The multiplicativity of the switch is what allows the second form: every term of the first is multiplied by the same central scalar, so the equality survives, and the derivative is not touched because $-i$ is a constant.
+
+**The two members of the pair take their own glyphs.** When the informational element is read as an observable, the corpus writes it with the letter of the observable, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$, and its image under the switch is the second glyph,
+
+$$
+\tilde H_\Phi=-i\,\tilde H_\Psi=-i\,h_t\,e_t+h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z=i\,h'_t\,e_t+\vec h_\Psi,
+\qquad h'_t:=-h_t .
+$$
+
+The switch moves the $i$ from the three space slots onto the time slot and renames nothing: the four numbers are the same four, and the primes stay where the informational reading puts them. In these letters the two writings of the equation are $\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Phi\tilde\Xi_{\mathrm{sp}}$ and $i\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, the second being the first multiplied by $-i$. The present article writes the same pair as $\tilde R_\Psi$ and $\tilde G_\Phi$, with $\tilde H_\Psi=\tilde R_\Psi$ and $\hbar c\,\tilde G_\Phi=\tilde H_\Phi$, so the two namings differ only in the letter of the reading, $r$ for the coordinate and $h$ for the observable, and in the position of the real scale $\hbar c$, which the second writing carries inside the glyph. The pair is not the split: $\tilde H_\Phi$ is not the material part of $\tilde H_\Psi$ but the image of the whole of it, and the two share four numbers where $\tilde R_\Phi$ and $\tilde R_\Psi$ share a letter and nothing else. Their sum is one element of $\mathbb{M}$, $\tilde H_\Phi+\tilde H_\Psi=(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$, the mirror biquaternion of the pair.
+
+The two readings of the one equation are exact mirror statements. The observable is Hermitian and its spectrum is real, and its eigenvalues are frequencies. The generator is anti-Hermitian and its spectrum is imaginary, and its eigenvalues are rates,
+
+$$
+\lambda(\tilde G_\Phi)=-\frac{i}{\hbar c}\,\lambda(\tilde R_\Psi),
+$$
+
+so a frequency $\omega_n$ is read as the rate $-i\omega_n$ in the second writing. The trace is multiplied by $-i/\hbar c$ and the norm changes sign,
+
+$$
+\operatorname{Tr}\tilde G_\Phi=-\frac{i}{\hbar c}\operatorname{Tr}\tilde R_\Psi,
+\qquad\qquad
+\langle\tilde G_\Phi\rangle_{\natural}=-\frac{1}{(\hbar c)^{2}}\langle\tilde R_\Psi\rangle_{\natural},
+$$
+
+so the discriminant that is non-negative on the state is non-positive on the generator. That is the corpus's pair of discriminants, reached here from the switch rather than assumed. The derivation of the equation, the uniqueness of the scalar imaginary and the missing transformation law of the generator are owned by *The Schrödinger Equation in Biquaternionic Form*, and the article cites them.
+
+**The density-matrix companion.** The same construction applies to the state operator. The von Neumann equation has the observable inside a commutator, $\partial_{r'_t}\tilde\varrho_\Psi=-i[\tilde R_\Psi,\tilde\varrho_\Psi]/(\hbar c)$, and the $i$ in front is again the switch: it carries the anti-Hermitian commutator of two Hermitian elements back into the informational sector. Written with the generator it is $\partial_{r'_t}\tilde\varrho_\Psi=[\tilde G_\Phi,\tilde\varrho_\Psi]$, and the bracket of an anti-Hermitian element with a Hermitian one is Hermitian, so the flow stays in the sector of states. The companion article on the density-matrix form treats the same equation; the two members of the pair apply to that version as well.
+
+### The Commutator of Two Observables
+
+For two Hermitian elements the commutator is anti-Hermitian and the anticommutator is Hermitian,
+
+$$
+[\tilde A,\tilde B]^{*}=-[\tilde A,\tilde B],
+\qquad
+\{\tilde A,\tilde B\}^{*}=+\{\tilde A,\tilde B\},
+$$
+
+both checked on a hundred pairs. So the informational sector closes under the anticommutator and not under the commutator: it is a Jordan algebra, which is the algebra of observables. The commutator lands in the material sector, which is the Lie algebra of the $*$-unitary group, and one switch returns it to the observables:
+
+$$
+\boxed{\;\tilde A,\tilde B\in\mathbb{B}_{\Psi}\ \Longrightarrow\ [\tilde A,\tilde B]\in\mathbb{B}_{\Phi}\ \Longrightarrow\ i[\tilde A,\tilde B]\in\mathbb{B}_{\Psi}\;}.
+$$
+
+That is the exact content of the quantum commutator, and it is the second case of the switch doing physical work. In the angular-momentum relations $[\tilde S_j,\tilde S_k]=i\hbar\,\epsilon_{jk\eta}\tilde S_\eta$ the left side is anti-Hermitian and the right side carries the switch in its coefficient: $i$ times a Hermitian generator is anti-Hermitian, so the two sides agree, and the structure constants $\epsilon_{jk\eta}$ stay real. The canonical commutator shows the same thing from the other side: the space derivative is anti-Hermitian on the material chart, so the momentum operator $-i\hbar\,\partial_{r_\eta}$ is Hermitian, and $[\hat r_j,\hat p_k]=i\hbar\,\delta_{jk}e_t$ is Hermitian with an imaginary scalar coefficient. The switch, not a convention about $i$, is what turns the anti-Hermitian derivative into the observable momentum.
+
+### The Interaction Insertion
+
+A real coupling constant cannot multiply an anti-Hermitian unit and remain Hermitian; the switch supplies the missing factor. The corpus's electric-dipole insertion multiplies the field by $-d\,\vec e_\eta$, and $\vec e_\eta$ is anti-Hermitian, so the insertion is material and the Lagrangian term is not Hermitian. The magnetic insertion multiplies by $i\mu\,\vec e_\eta$, which is Hermitian, so that one is informational and its term is Hermitian. The explicit $i$ in the second is the switch, and it is required exactly because the coefficient $\mu$ is real. The two insertions are Hodge duals, and the duality carries one to the other. The switch produces the same change by multiplication, $i(-\vec e_\eta)=-i\vec e_\eta$, which is Hermitian, and it is the one-line reason a real coupling can sit on a Hermitian term. The structural statement is that a nonzero dipole moment is a real coefficient sitting on a material insertion, and the switch is what an observable reading of it needs. The article on the electric dipole moment owns the computation and the CP-odd reading.
+
+### The Thermal Weight
+
+The last case is one where the switch is *not* needed, and it is instructive for that reason. The Matsubara wave element is a material one, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the Euclidean weight the thermal construction needs is its Hermitian form,
+
+$$
+\boxed{\;\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^{2}+\lvert\vec p\rvert^{2}\ \ge 0\;},
+$$
+
+which is an identity and not a hypothesis. The quaternionic norm of the same element is $-\omega_n^{2}+\lvert\vec p\rvert^{2}$, indefinite, and it cannot supply the positivity: it is the interval, not the weight. So the positivity of the thermal weight comes from the form the switch preserves, evaluated on a material element, and the thermal circle needs no rotation of the time axis. What the case shows is the division of labour: the switch supplies the sector, the Hermitian form supplies the positivity, and the thermal construction uses the second without needing the first.
+## The Switch Against the Wick Rotation
+
+### Three Maps With One Generator
+
+Three different maps of the algebra are built from the central $i$, and only one of them is the coefficient map the series calls the Wick rotation. The table separates them.
+
+| Map | Domain and image | What it multiplies | Signature of the image | Multiplicative | Order |
+| --- | --- | --- | --- | --- | --- |
+| Phy–Psy switch, $i\,\cdot$ | $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ | all four coefficients | $(1,3)$ | yes | $4$ |
+| restriction of the switch to the quaternion subspace, $i\,\cdot$ | $\mathbb{B}_{H}\to\mathbb{B}_{iH}$ | all four coefficients | $(0,4)$ | yes | $4$ |
+| Wick rotation $W$ | $\mathbb{B}_{\Phi}\to\mathbb{B}_{H}$ | the time coefficient, by $-i$ | $(4,0)$ | no | $4$, with $W^{2}=T$ |
+
+The second row is the restriction of the first to the quaternion subspace, and the corpus names the quaternion and antiquaternion subspaces in its discussion of the central map. The third row is the coefficient map $W=\mathrm{diag}(-i,1,1,1)$ of *Interpretation of the Wick Rotation in the Biquaternion Universe*, whose square is the time reflection $T$ and which is a square root of that reflection. All three are built from the single central unit, and they are three different maps.
+
+### The Slot Count
+
+The difference between the first row and the third is a count of slots, and the count decides everything else. The switch multiplies four coefficients by $i$: the time slot's $i$ becomes a real coefficient and the three space slots acquire one. The Wick map multiplies one coefficient by $-i$: the time slot's $i$ is removed and the three space slots are untouched. In the material chart the two images are
+
+$$
+\tilde R_\Phi=i r'_t\,e_t+\vec r
+\ \xrightarrow{\ \text{switch}\ }\
+-r'_t\,e_t+i\vec r,
+\qquad\qquad
+\tilde R_\Phi=i r'_t\,e_t+\vec r
+\ \xrightarrow{\ W\ }\
+r'_t\,e_t+\vec r .
+$$
+
+The first image carries one factor of $i$, now on the space slots, and its quadratic form is $r_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signature to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of signature $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
+
+### Why the One-Slot Map Cannot Be Multiplicative
+
+The multiplicativity difference is not a technicality; it is forced by the slot count. The product of two elements mixes slots: the scalar coefficient of $\tilde X\tilde Y$ is built from the scalar coefficients and from the three vector coefficients of both factors, and the vector coefficients of the product are built from both. A coefficient map that touches one slot therefore cannot commute with the product, and the failure is not caused by non-commutativity.
+
+The witness is a commuting pair. Take $\tilde X=i e_t$ and $\tilde Y=\vec e_x$, which commute. Their product is $\tilde X\tilde Y=i\vec e_x$, so $W(\tilde X\tilde Y)=i\vec e_x$ because $W$ does not touch the space slots. But $W(\tilde X)=e_t$ and $W(\tilde Y)=\vec e_x$, so $W(\tilde X)W(\tilde Y)=\vec e_x$. The two differ by $\sqrt2$ in modulus; the difference is $i\vec e_x-\vec e_x$, whose modulus is $\sqrt2$. The switch, on the same pair, satisfies $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y$ with residual zero. So a one-slot coefficient map is a map of coordinates, and a four-slot multiplication is a map of elements.
+
+### What Each Map Buys
+
+Each map is good at one thing and useless at the other. The Wick rotation makes a Lorentzian integral converge, turns an oscillating weight into a decaying one, and puts the thermal circle on a compact direction; it does so by changing the object, and it is available only where the continued quantity is analytic in the strip. It buys tractability and it changes the physics. The switch changes nothing that can be computed more easily: it maps the indefinite sector to the other indefinite sector, so it cannot make anything elliptic, and every quantity it touches is as hard to evaluate after it as before. It buys a second exact reading of the same equation, and it changes nothing that a physical prediction depends on. That is the exact sense in which the Wick rotation is a trick and the switch is not: the trick is a map that is not available for every object and that alters the object, and the switch is a multiplication that is available for every object and alters only the reading.
+
+## What the Switch Does Not Do
+
+- **It is not a congruence.** A congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ preserves both sectors for every invertible parameter, because it commutes with the conjugation. The switch is not of that form: a central element acts trivially by conjugation, so no $\tilde U$ gives $\tilde U\tilde Q\tilde U^{*}=i\tilde Q$. The switch is therefore not an inner automorphism, not a channel, and not a measurement. The superselection boundary that no congruence crosses is untouched by it, and the article on the four bridges owns that boundary.
+- **It is not a symmetry.** A symmetry is a map that leaves the numbers of a theory fixed and yields a conserved charge. The switch changes the trace, the determinant and the spectrum, so nothing is invariant under it and no charge follows. It is a dictionary and not a transformation group acting on a theory.
+- **It supplies no dynamics.** No element of either sector carries a rate; the switch moves the rate from one sector to the other and does not generate one. The two writings of the Schrödinger equation are one equation, and the article adds no equation to the corpus.
+- **It does not turn a solution into a particle–antiparticle pair.** The switch carries one solution of an equation to the solution of the same equation in the other sector, and the pair it produces is a mirror pair, not a conjugate pair. The particle–antiparticle map is complex conjugation, which preserves the sector. The companion article on the Klein–Gordon equation reaches that conclusion and this one does not overturn it.
+- **It is not a Wick rotation.** The comparison above fixes the difference: four coefficients against one, indefinite against definite, multiplicative against not.
+- **It does not make every element a mirror biquaternion.** The constraint $\tilde Q_\Psi=i\tilde Q_\Phi$ selects a real four-dimensional subspace, and a general element fails it. The article constructs mirror pairs and the elements that carry them; it does not claim that an arbitrary biquaternion is one, and the split remains the authority on what the two parts of an arbitrary element are.
+- **It claims nothing at the level of an action.** The class of a product is not inherited from the classes of its factors: the switch is multiplicative, so $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, and which factor carries the $i$ is a choice that no equation makes for the reader. The article states element identities and refuses product identities that need a hypothesis.
+- **There is one direction.** The multiplier is $i$ throughout, with inverse $-i$. A sign that differs between a four-vector and its prepared state is the sign of the element that enters the switch, not a second convention.
+
+## Summary
+
+The article is one construction and its consequences. The split of the algebra is fixed: every element is the sum of a material part and an informational part, the two are independent, and a relation between them is a constraint. On a **sector element** the switch is available and gives its **mirror**, $\tilde X_\Psi=i\tilde X_\Phi$, a sector element of the other sector with the same four real numbers. One multiplication of a sector element by $1+i$ gives the **mirror biquaternion**, $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi=(i-1)x'_t\,e_t+(1+i)\vec x_\Phi$, one element whose two projections are exactly the pair, and it is built before the projections are taken; the set $\mathbb{M}$ of such elements is a real four-dimensional subspace, tested by $\tilde Q_\Psi=i\tilde Q_\Phi$, or by one line without projections, $\tilde Q^{*}=i\tilde Q$.
+
+The switch is multiplication by the central $i$ on the whole element. Since $i^{*}=-i$ and $i$ is central, $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two sectors exchange; on a mixed element the two parts exchange as well, $\bigl(i\tilde Q\bigr)_\Phi=i\tilde Q_\Psi$ and $\bigl(i\tilde Q\bigr)_\Psi=i\tilde Q_\Phi$. Since $i$ is central, the switch passes through products, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so an equation may be carried across it. Since $(i\tilde Q)(i\tilde Q)^{*}=\tilde Q\tilde Q^{*}$, the Hermitian form is preserved; and since the image carries a factor $i$ in every coefficient, the trace is multiplied by $i$, the quaternionic norm and the determinant change sign, the spectrum turns a quarter turn, and the signature is reversed. The two members of the pair are two different elements, and that is why the switch is a construction and not a relabel.
+
+On the mirror biquaternion the two invariants take fixed factors, $\langle\tilde X_{\mathrm{mir}}\rangle_{\natural}=2i\langle\tilde X_\Phi\rangle_{\natural}$ and $\langle\tilde X_{\mathrm{mir}}\rangle_{*}=2\langle\tilde X_\Phi\rangle_{*}$, so the interval of a mirror biquaternion is imaginary and its Hermitian form is real and positive exactly when the material member is causal. The class is a subspace and not an algebra, its product being $2i\tilde X_\Phi\tilde Y_\Phi$; it is not a real form, the conjugation carrying it to the partner class $\tilde Q^{*}=-i\tilde Q$; and the switch does not preserve it either, since it negates the material member and keeps the informational one. What the class does is hold the object and its observable in one element, in the two sectors the split provides, and that is why every case of §*The Switch at Work* is one element of it written in two pieces.
+
+The coordinate form is one line: the switch negates the material time and moves the $i$ from the time slot to the three space slots. At the level of coefficients it is exact for every glyph of the catalogue, with the material coefficient imaginary on the temporal slot and real on the three spatial ones, and the mirror coefficient real on the temporal slot and imaginary on the three spatial ones. At the level of an operator the article claims nothing: the differentiation operators of the corpus, their slices and their conjugates are defined and read in *Operator and Calculus Conventions*, §*The Gradient*, and this article does not rebuild them.
+
+The construction is applied to the catalogue, and five objects are built: $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$ and $\tilde H_{\mathrm{mir}}=\tilde H_\Phi+\tilde H_\Psi=(1-i)\tilde H_\Psi$, the last read from the informational side. Each is $(1+i)$ times a material glyph, built in one multiplication, with the temporal coefficient multiplied by $i-1$ and the three spatial coefficients by $1+i$; the split of each then returns the material glyph and that glyph's mirror. The position is left out, its sibling not being the catalogued $\tilde R_\Psi$, and the mass $\Rho=imc$ is the central case, $\Rho_{\mathrm{mir}}=(i-1)mc$, in which nothing is moved because there is no vector part for the $i$ to arrive on.
+
+Two instances are worked in full. The element and its mirror come first, where the mirrored four-momentum has a real energy coefficient and a real spectrum. The Schrödinger equation comes second, and its two writings name an observable and a generator that are themselves a mirror pair up to the real factor $\hbar c$. The mirror glyphs, the preparation dictionary, the quantum commutator, the interaction insertion and the thermal weight are five further instances, and each shows the switch supplying a structure that a real coefficient needs.
+
+The Wick rotation is the neighbouring map and it is not this one. It multiplies one coefficient by $-i$, its image is the definite slice, it is not multiplicative, and it is available only where the continued quantity is analytic. The switch multiplies four coefficients, its image is the indefinite sector, it is multiplicative, and it is available always. The Wick rotation buys a convergent integral and changes the object; the switch buys a second exact reading and changes nothing a prediction depends on.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+| --- | --- |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | anti-Hermitian material sector and Hermitian informational sector |
+| $\tilde Q_\Phi$, $\tilde Q_\Psi$ | the two **parts** of an element, $\tfrac12(\tilde Q\mp\tilde Q^{*})$, independent and fixed by the split |
+| sector element | an element lying wholly in one sector: $\tilde X_\Phi$ or $\tilde X_\Psi$ |
+| material reading | the reading of an element of $\mathbb{B}_{\Phi}$ |
+| informational reading | the reading of an element of $\mathbb{B}_{\Psi}$ |
+| Phy–Psy switch | multiplication of the whole element by the central $i$, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ |
+| mirror, also called **sibling** | the image of a sector element, $\tilde X_\Psi=i\tilde X_\Phi$; a **mirror pair** is $\tilde X_\Phi$ and $\tilde X_\Psi$ |
+| $\tilde X_{\mathrm{mir}}$ | the **mirror biquaternion**, $(1+i)\tilde X_\Phi$, one element whose coefficients are $(i-1)x'_t$ on the temporal slot and $(1+i)x_\eta$ on the three spatial ones; its two projections are the pair |
+| $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$, $\tilde H_{\mathrm{mir}}$ | the mirror biquaternions of the catalogue, $(1+i)$ times the material glyph: temporal coefficient times $i-1$, each spatial coefficient times $1+i$; for the observable, $(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$ |
+| $\mathbb{M}$ | the class of mirror biquaternions, a real four-dimensional subspace, $\tilde Q_\Psi=i\tilde Q_\Phi$ or $\tilde Q^{*}=i\tilde Q$ |
+| $\tilde R_\Phi=i r'_t\,e_t+\vec r$ | a material element, imaginary time and real space; its sibling is not the catalogued $\tilde R_\Psi$ |
+| $\tilde R_\Psi=r_t\,e_t+i\vec r$ | an informational element, real time and imaginary space; the general Hermitian observable, not the sibling of $\tilde R_\Phi$ |
+| $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\tilde Q$ | the trace, twice the scalar part |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the determinant, the interval |
+| $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |
+| $\lambda_{\pm}$ | the eigenvalue pair, imaginary on $\mathbb{B}_{\Phi}$ and real on $\mathbb{B}_{\Psi}$ |
+| $\tilde G_\Phi=-\frac{i}{\hbar c}\tilde R_\Psi$ | the generator, the mirror of the observable of the Schrödinger equation, $i(\hbar c\tilde G_\Phi)=\tilde R_\Psi$ |
+| $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | the informational element read as an observable, $\vec h_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$; the same element as $\tilde R_\Psi$, with the coefficient letters of the reading |
+| $\tilde H_\Phi=-i\,\tilde H_\Psi=i\,h'_t\,e_t+\vec h_\Psi$ | its mirror in $\mathbb{B}_{\Phi}$, $h'_t=-h_t$; equal to $\hbar c\,\tilde G_\Phi$, and $\tilde H_\Psi=i\,\tilde H_\Phi$ |
+| $\tilde P_\Phi=i(E/c)e_t+\vec p$ | the four-momentum, material reading |
+| $\tilde P_\Psi=i\tilde P_\Phi$ | the mirror of the four-momentum, Hermitian, real spectrum $\{-(p'_t\pm\lvert\vec p_\Phi\rvert)\}$ |
+| $\tilde K_\Psi=i\tilde K_\Phi=\tilde P_\Psi/\hbar$, $\tilde J_\Psi=i\tilde J_\Phi$, $\tilde A_\Psi=i\tilde A_\Phi$ | the mirrors of the wave number, the current and the connection; the connection's mirror carries the real coefficients of the coupling untouched, $i(\frac{i\,ϙ}{\hbar}\tilde A_\Phi)=\frac{i\,ϙ}{\hbar}\tilde A_\Psi$ |
+| $\tilde\Xi_\Phi$, $\tilde\Xi_\Psi$ | the two parts of a field, $\tilde\Xi=\tilde\Xi_\Phi+\tilde\Xi_\Psi$; the mirror of $\tilde\Xi_\Phi$ is the different field $i\tilde\Xi_\Phi$ |
+| $i\tilde V_\Phi=-c\,\mathcal B_\Psi$, $i\tilde{\mathcal L}_\Phi=-\tilde\Pi$ | two mirrors that need no glyph: the boost factor, and minus the idempotent of a state |
+| $\Rho=imc$ | the mass as a central element, imaginary in the material reading and real after the switch |
+| $\tilde{Ϛ}_\Psi$ | a state, informational reading, the corpus's trace-one normalisation |
+| $W=\mathrm{diag}(-i,1,1,1)$ | the Wick coefficient map, on the time slot only |
+
+## Further Reading
+
+- [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), §*Two Sectors: Material and Informational*, for the split into the two parts, which this article inherits and never redefines.
+- [The Two Sectors: Split and the Four Bridges](the-two-sectors-split-and-the-four-bridges.html), for the split, the four conjugations, the central $i$ as a bijection and a relational clock, and the boundary that no congruence crosses.
+- [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the interval, the Lorentz action and the observable representative $i\tilde Q$.
+- [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the positive cone, the real spectrum and the Born pairing.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the positive cone as the image of the causal cone and the two faces of one quadratic space.
+- [Energy and Information: Four Conservation Laws from One Identity](energy-and-information-four-conservation-laws-from-one-identity.html), for the trace and the norm read in the two sectors, and for the pair of discriminants.
+- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the two writings, the uniqueness of the scalar imaginary and the missing transformation law.
+- [The Polar Form of the Schrödinger Equation in Biquaternionic Form](the-polar-form-of-the-schrodinger-equation-in-biquaternionic-form.html), for the state in the minimal left ideal and the density as the Hermitian norm.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the negative result that the sector split gives two $i$-related copies and not a particle–antiparticle pair.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the commutator of two observables as a rotation generator and the real structure constants.
+- [The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure](the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html), for the two insertions on opposite sides of the split and the explicit $i$ of the Hermitian Lagrangian.
+- [The Local Thermal Structure: $k_B$ as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), and [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the wave element $i\omega_n e_t+\vec p$ and the Hermitian weight.
+- [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for $W=\mathrm{diag}(-i,1,1,1)$, its square as the time reflection, and the two reality conditions.
+- [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), for $e_t=1$ and the two temporal coefficients.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), §*The Hermitian and Anti-Hermitian Subspaces*, for the split, the switch and the two readings as conventions.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), §*The Gradient*, for the gradient and its conjugates, which are defined there and are not rebuilt here.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the sectors, the conjugations and the trace.
