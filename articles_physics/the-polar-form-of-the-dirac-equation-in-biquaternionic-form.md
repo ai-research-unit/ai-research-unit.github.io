@@ -122,7 +122,7 @@ The two norms read different things, and the whole of the physics of the density
 
 ### The Pair
 
-The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}h_t^{\prime}$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system
+The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system
 
 $$
 i\tilde K_{\Phi}\tilde\Xi_{0}^{R}=k_m\tilde\Xi_{0}^{L},
@@ -165,17 +165,17 @@ Note what the first bracket is not. The scale enters the derivative only through
 
 ### The Phase Gradient Is the Four-Momentum
 
-The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial h_t^{\prime}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
+The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
 
 $$
 \tilde\nabla_\Phi\alpha
 =e_t\frac{\partial\alpha}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\alpha}{\partial R_\eta}
-=-i\frac{\partial\alpha}{\partial h_t^{\prime}}e_t+\nabla\alpha
+=-i\frac{\partial\alpha}{\partial r'_t}e_t+\nabla\alpha
 =i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
 =\tilde K_{\Phi},
 $$
 
-with $\vec p=\hbar\nabla\alpha$ and $E=-\hbar c\,\partial\alpha/\partial h_t^{\prime}$. The temporal slot of the gradient is $-i\partial\alpha/\partial h_t^{\prime}$ and the temporal slot of the wavevector is $iE/(\hbar c)$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $h_t^{\prime}$ is a length, so a derivative in $h_t^{\prime}$ is a rate over a length, and an energy is a rate times an action.
+with $\vec p=\hbar\nabla\alpha$ and $E=-\hbar c\,\partial\alpha/\partial r'_t$. The temporal slot of the gradient is $-i\partial\alpha/\partial r'_t$ and the temporal slot of the wavevector is $iE/(\hbar c)$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $r'_t$ is a length, so a derivative in $r'_t$ is a rate over a length, and an energy is a rate times an action.
 
 The reading is exact for a plane wave, where the angle is linear and the gradient is the wavevector. For a general field it is the eikonal reading, and it defines the momentum at each event. The proof uses only that the angle is real and that the gradient is the algebra's derivative, so it applies to a general field unchanged.
 
@@ -364,9 +364,9 @@ Two things follow, and the second is the important one. The element has a limit,
 A slow state is one whose boost is small and whose angle is dominated by the rest phase. Write
 
 $$
-\alpha=-k_m h_t^{\prime}+\sigma,
+\alpha=-k_m r'_t+\sigma,
 \qquad
-k_m h_t^{\prime}=\frac{mc^{2}}{\hbar}\,t,
+k_m r'_t=\frac{mc^{2}}{\hbar}\,t,
 $$
 
 so that the field's own phase advances at $mc^{2}/\hbar$ and the norm's angle at $2mc^{2}/\hbar$. The angle is a number of radians and not an energy; $\hbar$ is what makes it so, and the same $\hbar$ makes $\sigma$ dimensionless.
@@ -450,8 +450,8 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $\tilde\Xi=\tilde\Xi_{L}+\tilde\Xi_{R}$ | The field, one element of $\mathbb{B}$; the letters name the two parts |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box$ |
-| $\tilde R_\Phi=i h_t^{\prime}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
-| $h_t^{\prime}=c\,t^{\prime}$ | Material time, a length |
+| $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
+| $r'_t=c\,t^{\prime}$ | Material time, a length |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
 | $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
 | $r>0$, $\rho=r^{2}$ | Scale and density; real and central |

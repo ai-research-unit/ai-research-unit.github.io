@@ -88,7 +88,7 @@ since a momentum carries $\mathsf{M}\mathsf{L}\mathsf{T}^{-1}$ and $\hbar$ carri
 
 **The reduced form is the angle per unit length.** That is what the missing $2\pi$ means, and it is why the readings below are phrased per radian rather than per turn: a phase advances by one radian over a distance $1/k_{\Phi}$, and by a full turn over $2\pi/k_{\Phi}$. Every comparison with a measured fringe spacing, a spectrometer reading or a quoted wavelength carries the $2\pi$ back.
 
-**Which is which.** Three labels, and no bare $k$. Two of the labels name the slot the coefficient fills in $\tilde K_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec k_{\Phi}$, and the primed $t$ on the temporal one, $k_{t}^{\prime}$. The third names the norm, $k_m$ from the mass. The sector letter is written rather than the letter of the quantity because the momentum already writes its components $p_\eta$, and $k_p$ beside $p_\eta$ would be one transposition apart in running text. The prime on the temporal coefficient is the mark the corpus puts on a temporal slot, as on $p_{t}^{\prime}$ and $h_t^{\prime}$, and it is kept because the division by $\hbar\,c$ converts a quantity and not a coordinate.
+**Which is which.** Three labels, and no bare $k$. Two of the labels name the slot the coefficient fills in $\tilde K_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec k_{\Phi}$, and the primed $t$ on the temporal one, $k_{t}^{\prime}$. The third names the norm, $k_m$ from the mass. The sector letter is written rather than the letter of the quantity because the momentum already writes its components $p_\eta$, and $k_p$ beside $p_\eta$ would be one transposition apart in running text. The prime on the temporal coefficient is the mark the corpus puts on a temporal slot, as on $p_{t}^{\prime}$ and $r'_t$, and it is kept because the division by $\hbar\,c$ converts a quantity and not a coordinate.
 
 **The particle enters through its mass.** A wave number is never labelled by the name of a particle. The species enters as a subscript on the mass itself, $k_{m_e}$ for the electron and $k_{m_p}$ for the proton, so that the family reads as one scheme: the subscript names the input, and the input of one species is the mass of that species.
 
@@ -155,7 +155,7 @@ which is the box, and it is the only numerical check the identity needs.
 
 **What the element is good for.** Three lines, each a place where the three wave numbers enter at once.
 
-- On the plane wave $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\bigl(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\bigr)$ the exponent is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})=\vec k_{\Phi}\cdot\vec r_{\Phi}-k_{t}^{\prime}\,h_t^{\prime}$, the phase in inverse lengths and in no other unit.
+- On the plane wave $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\bigl(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\bigr)$ the exponent is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})=\vec k_{\Phi}\cdot\vec r_{\Phi}-k_{t}^{\prime}\,r'_t$, the phase in inverse lengths and in no other unit.
 - The gradient acts by left multiplication by $i\tilde K_{\Phi}$, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=i\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp}}$, and the d'Alembertian by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, $\Box\tilde{Ξ}_{\mathrm{sp}}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, which is why the massive operator of the series is written $\Box-k_m^{2}$.
 - On the null cone, where $k_m=0$ and $k_{t}^{\prime}=k_{\Phi}$, the element is null and therefore a zero divisor, and the equation $\tilde K_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}=0$ has a two-dimensional kernel there. That is the massless case of §*The Massless Case*, and it exists because the norm has vanished, not because a limit was taken.
 
@@ -811,20 +811,20 @@ so the truncated $\Omega$ is high by the fraction $\frac{1}{4}k_{\Phi}^{2}/k_m^{
 **The equation.** The exponent of the rung separates exactly, because $\Omega$ is a definition and not a series:
 
 $$
-e^{i\left(\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}h_t^{\prime}\right)}
-=\underbrace{e^{-i\,k_m\,h_t^{\prime}}}_{f}\,
-\underbrace{e^{i\left(\vec k_{\Phi}\cdot\vec r-\Omega\,h_t^{\prime}\right)}}_{\chi},
+e^{i\left(\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r'_t\right)}
+=\underbrace{e^{-i\,k_m\,r'_t}}_{f}\,
+\underbrace{e^{i\left(\vec k_{\Phi}\cdot\vec r-\Omega\,r'_t\right)}}_{\chi},
 $$
 
-with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{h_t^{\prime}}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta$:
+with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta$:
 
 $$
-i\,\frac{\partial\chi}{\partial h_t^{\prime}}=-\frac{1}{2k_m}\,\Delta\,\chi
+i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{2k_m}\,\Delta\,\chi
 \qquad\longrightarrow\qquad
 i\hbar\,\frac{\partial\chi}{\partial t}=-\frac{\hbar^{2}}{2m}\,\Delta\,\chi ,
 $$
 
-the last step multiplying by $\hbar c$ with $h_t^{\prime}=c\,t$ and $\hbar c/2k_m=\hbar^{2}/2m$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $k_m$ is the constant, $k_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.
+the last step multiplying by $\hbar c$ with $r'_t=c\,t$ and $\hbar c/2k_m=\hbar^{2}/2m$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $k_m$ is the constant, $k_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.
 
 ## The Massless Case
 
@@ -876,7 +876,7 @@ If the inverse mass wave number were the radius, the product would be one; it is
 
 **Why a subscript at all.** Four wave numbers share the letter $k$: the mass one, the momentum one, the temporal one and the Euclidean one. A bare $k$ therefore names none of them, and every wave number of this article carries a subscript. A different letter, $\eta$, is the space index in $\vec e_\eta$ and $\sum_\eta$; it is not a wave number, and the migration that keeps the two apart is recorded in *Wavenumber Migration*.
 
-**Which subscripts.** The labels come in two kinds, and neither names a particle. Two of them name a slot of $\tilde K_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec k_{\Phi}$ and its modulus $k_{\Phi}$, and the primed $t$ on the temporal coefficient, $k_{t}^{\prime}$, which is the corpus's mark for a temporal slot and matches $p_{t}^{\prime}$ of the four-momentum and $h_t^{\prime}$ of the four-position; the prime stays because the division by $\hbar\,c$ converts a quantity and not a coordinate. The third names the norm of the element, $k_m$, and with it the species, $k_{m_e}$ and $k_{m_p}$. The letter of the momentum is not used: the momentum already writes its components $p_\eta$, and $k_p$ beside $p_\eta$ would be one transposition apart in running text. The sector letter is not open to that confusion, and it carries a fact the letter of the quantity would not — it says to which subspace the element belongs.
+**Which subscripts.** The labels come in two kinds, and neither names a particle. Two of them name a slot of $\tilde K_{\Phi}$: the sector letter $\Phi$ on the vector part, $\vec k_{\Phi}$ and its modulus $k_{\Phi}$, and the primed $t$ on the temporal coefficient, $k_{t}^{\prime}$, which is the corpus's mark for a temporal slot and matches $p_{t}^{\prime}$ of the four-momentum and $r'_t$ of the four-position; the prime stays because the division by $\hbar\,c$ converts a quantity and not a coordinate. The third names the norm of the element, $k_m$, and with it the species, $k_{m_e}$ and $k_{m_p}$. The letter of the momentum is not used: the momentum already writes its components $p_\eta$, and $k_p$ beside $p_\eta$ would be one transposition apart in running text. The sector letter is not open to that confusion, and it carries a fact the letter of the quantity would not — it says to which subspace the element belongs.
 
 **The species enters on the mass.** A wave number of a named particle is written $k_{m_e}$ for the electron and $k_{m_p}$ for the proton, which is the rule of the series that the label names the input: the input of one species is the mass of that species. No wave number is ever labelled by the name of a particle alone.
 

@@ -77,17 +77,17 @@ $$
 The pair satisfies
 
 $$
-c\,\partial_{h_t^{\prime}}\rho+\vec\nabla\cdot\vec J=0 ,
+c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0 ,
 $$
 
-with $h_t^{\prime}=c\,t$ a length, as the corpus's phase $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega h_t^{\prime}/c)\bigr)$ requires. The factor $c$ in front of the time derivative is not decoration: $h_t^{\prime}$ is a length, so $c\,\partial_{h_t^{\prime}}$ is a time derivative, and with $\vec J$ carrying a velocity beside $\rho$ both terms come out as $\lvert\tilde\Xi\rvert^{2}$ per unit time. Articles that absorb the $c$ into $\vec J$ write the law without it in front of the derivative; the identity in the next section is the same either way, because it is the statement that the current is orthogonal to the four-wave-number and does not depend on how the current is normalised.
+with $r'_t=c\,t$ a length, as the corpus's phase $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r'_t/c)\bigr)$ requires. The factor $c$ in front of the time derivative is not decoration: $r'_t$ is a length, so $c\,\partial_{r'_t}$ is a time derivative, and with $\vec J$ carrying a velocity beside $\rho$ both terms come out as $\lvert\tilde\Xi\rvert^{2}$ per unit time. Articles that absorb the $c$ into $\vec J$ write the law without it in front of the derivative; the identity in the next section is the same either way, because it is the statement that the current is orthogonal to the four-wave-number and does not depend on how the current is normalised.
 
 **It cannot be the quaternion norm, because the quaternion norm vanishes on the state module.** The state module lies on the zero-divisor cone, so $\langle\tilde\Xi\rangle_{\natural}=0$ for every state while $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)>0$. Checked on the idempotent $\tilde\Pi_1$ and on $\tilde\Pi_1(1+a\tilde e_x)$: the determinant, which is the quaternion norm, is $0$ in both cases, while the trace is $1.000000$, $1.090000$ and $3.890000$ at $a=0,\ 0.3,\ 1.7$. **A count built on the quaternion norm would count nothing**, and that is the precise sense in which the two arms of the duality rest on two different forms.
 
 **The number of derivatives in the density is the order of the equation in time, minus one.** The Schrödinger and Dirac densities carry none and their currents carry one. The Klein–Gordon density carries one,
 
 $$
-\rho=\frac{i}{2\,k_{m}}\left(\tilde\Xi^{*}\partial_{h_t^{\prime}}\tilde\Xi-\tilde\Xi\,\partial_{h_t^{\prime}}\tilde\Xi^{*}\right),
+\rho=\frac{i}{2\,k_{m}}\left(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-\tilde\Xi\,\partial_{r'_t}\tilde\Xi^{*}\right),
 $$
 
 and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{\hbar\,\omega}{m\,c^{2}}\lvert N\rvert^{2}$.
@@ -127,7 +127,7 @@ $$
 | object | $ \tilde\Xi^{\dagger}\tilde\Xi $ | $ \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} $ |
 | what it is | the Hermitian form | the quaternion norm |
 | on the state module | positive definite | identically zero |
-| differential statement | $ c\,\partial_{h_t^{\prime}}\rho+\vec\nabla\cdot\vec J=0 $ | $ \left(\Box-k_{m}^{2}\right)\tilde F=0 $ |
+| differential statement | $ c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0 $ | $ \left(\Box-k_{m}^{2}\right)\tilde F=0 $ |
 | transformed statement | $ \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 $ | $ \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2} $ |
 | what it names | a conserved count | a fixed surface |
 | what it counts | particles | wave crests |
@@ -142,16 +142,16 @@ $$
 **The transform carries one row of the table to the other in one step.** Take the continuity equation and transform in space and time together. In the kernel of *Derivatives, Fields and Transforms*, the derivatives become $-i\omega$ and $+i\vec k_{\Phi}$, so
 
 $$
-c\,\partial_{h_t^{\prime}}\rho+\vec\nabla\cdot\vec J=0
+c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0
 \quad\longmapsto\quad
 -i\omega\,\tilde\rho+i\vec k_{\Phi}\cdot\tilde{\vec J}=0
 \quad\Longleftrightarrow\quad
 \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 .
 $$
 
-**The sign is the corpus's phase, and it is worth naming because the other choice is common.** A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega h_t^{\prime}/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\omega t)$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; *Derivatives, Fields and Transforms* states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.
+**The sign is the corpus's phase, and it is worth naming because the other choice is common.** A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r'_t/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\omega t)$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; *Derivatives, Fields and Transforms* states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.
 
-**The image carries the frequency $\omega$, not $k_{t}^{\prime}$.** The conjugate of $h_t^{\prime}$ is $k_{t}^{\prime}=\omega/c$, and the $c$ in front of the derivative is what turns it into $\omega$; the intermediate display above keeps both factors so that the bookkeeping is visible. In four-vector form the statement is that the current is orthogonal to $(\omega,\vec k_{\Phi})$, the four-wave-number written with each component in its own units.
+**The image carries the frequency $\omega$, not $k_{t}^{\prime}$.** The conjugate of $r'_t$ is $k_{t}^{\prime}=\omega/c$, and the $c$ in front of the derivative is what turns it into $\omega$; the intermediate display above keeps both factors so that the bookkeeping is visible. In four-vector form the statement is that the current is orthogonal to $(\omega,\vec k_{\Phi})$, the four-wave-number written with each component in its own units.
 
 **The derivative has become a dot product.** The transformed continuity equation says that the four-current $(\tilde\rho,\tilde{\vec J})$ is orthogonal to the four-wave-number $(\omega,\vec k_{\Phi})$ in the metric of signature $(+1,-1,-1,-1)$, at each point of the wave-number plane separately. Written as a ratio it is $\omega\tilde\rho=\vec k_{\Phi}\cdot\tilde{\vec J}$, or $\tilde{\vec J}=\tilde\rho\,(\omega/\lvert\vec k_{\Phi}\rvert^{2})\vec k_{\Phi}$ on a single mode, which is the statement that the current follows the wave at the phase velocity. There is no derivative left and no integral left. Take the wave equation and transform it, and
 
@@ -174,10 +174,10 @@ $$
 **One substitution turns the quantum equation into the classical relation.** In the corpus's form the equation is
 
 $$
-i\,\hbar\,c\partial_{h_t^{\prime}}\tilde\Xi_{\mathrm{sp}}=\tilde H_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
+i\,\hbar\,c\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
 $$
 
-which with $h_t^{\prime}=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
+which with $r'_t=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
 
 $$
 i\hbar\,\partial_{t}\psi=-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi
@@ -199,7 +199,7 @@ k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
 E-m\,c^{2}=\frac{p^{2}}{2m}+V ,
 $$
 
-the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-ik_{m}h_t^{\prime}}\chi$. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
+the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-ik_{m}r'_t}\chi$. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
 
 **This is the one place in the corpus where the wave arm is not a level set of a norm.** The symbol above is affine: one term linear in $k_{t}^{\prime}$ beside a term quadratic in $k_{\Phi}$. Every quaternion norm is homogeneous of degree two in all four slots, so no element of $\mathbb{B}$ has that symbol as its norm, and the Schrödinger operator cannot be written as $\tilde K\tilde K^{\natural}$ for any single $\tilde K$. The exact root of the relativistic condition is $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$, and the parabola touches the hyperbola to second order with the quartic error $-k_{\Phi}^{4}/(8k_{m}^{3})$: at $k_{\Phi}/k_{m}=0.01$ the exact difference is $-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$ from the leading term, a relative agreement of $5\times10^{-5}$. The surface is therefore strictly timelike and touches the light cone nowhere. **The particle arm survives untouched; the wave arm becomes a level set of an affine symbol, and reading that level set as a mass shell is an approximation whose first correction is quartic.**
 

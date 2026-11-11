@@ -27,7 +27,7 @@ For every complex frequency there is exactly one complex number $k_{\Phi}^{2}$. 
 **A mode is a character, and the symbol says whether it solves the equation.** Write the mode
 
 $$
-\tilde\Xi=\xi\,e^{-i\bigl(k_{t}^{\prime}h_t^{\prime}-\vec k_\Phi\cdot\vec r\bigr)},
+\tilde\Xi=\xi\,e^{-i\bigl(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r\bigr)},
 $$
 
 with $\xi$ a fixed element of the state module. The gradient brings down $i\tilde K_\Phi$, and the Klein–Gordon operator brings down its norm, so the equation $\mathcal{P}\tilde\Xi=0$ holds on the mode exactly when
@@ -92,7 +92,7 @@ $$
 k_{\Phi}^{2}=-\bigl(\zeta^{2}+k_m^{2}\bigr)<-k_m^{2},
 $$
 
-so the momentum is imaginary with $\kappa=\sqrt{-k_{\Phi}^{2}}=\sqrt{\zeta^{2}+k_m^{2}}$, which exceeds $k_m$ strictly. The mode is $e^{\pm\vec\kappa\cdot\vec r}e^{\pm\zeta h_t^{\prime}}$, and the two signs are independent. One choice of the spatial sign decays in the half-space $\vec\kappa\cdot\vec r>0$ and grows in the other, so the mode is square-integrable in neither half-space; one of the two temporal signs grows without bound. **This is the position a bound state takes when the localisation asked of it would need $\kappa>k_m$.** It is not a fourth position, because nothing is stationary in it; it is where the second position goes when it is pushed past its ceiling, and the next section shows the ceiling is the edge of the gap.
+so the momentum is imaginary with $\kappa=\sqrt{-k_{\Phi}^{2}}=\sqrt{\zeta^{2}+k_m^{2}}$, which exceeds $k_m$ strictly. The mode is $e^{\pm\vec\kappa\cdot\vec r}e^{\pm\zeta r'_t}$, and the two signs are independent. One choice of the spatial sign decays in the half-space $\vec\kappa\cdot\vec r>0$ and grows in the other, so the mode is square-integrable in neither half-space; one of the two temporal signs grows without bound. **This is the position a bound state takes when the localisation asked of it would need $\kappa>k_m$.** It is not a fourth position, because nothing is stationary in it; it is where the second position goes when it is pushed past its ceiling, and the next section shows the ceiling is the edge of the gap.
 
 **So the count is three, and the three are the first, second and fourth rows.** The third row is the failure of the second, and the fifth is empty. **That is the sense in which there are three positions of one zero:** three rows hold a mode that can be called a state, with the word degrading from one row to the next.
 
@@ -100,7 +100,7 @@ so the momentum is imaginary with $\kappa=\sqrt{-k_{\Phi}^{2}}=\sqrt{\zeta^{2}+k
 
 ### The propagating mode, and why it is not a state
 
-**The first position has both numbers real and the frequency outside the gap.** Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{i(\vec k_\Phi\cdot\vec r-k_{t}^{\prime}h_t^{\prime})}$. **It is a solution everywhere and a state nowhere**, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.
+**The first position has both numbers real and the frequency outside the gap.** Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{i(\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t)}$. **It is a solution everywhere and a state nowhere**, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.
 
 **The particle arm of the duality therefore needs a second operation here, and the operation is the packet.** *The Free Particle and Wave Packets in Biquaternionic Form* superposes modes of this position over a range of wave numbers, and the superposition is what is normalisable. The single zero is the building block and not the object. **This is the only position at which the duality demands a superposition before it has anything to be dual to**, and the reason is exactly the modulus: a plane wave's two arms are both delocalised, and neither is a particle until the packet localises it.
 
@@ -122,7 +122,7 @@ $$
 k_{t}^{\prime\,2}+\kappa^{2}=k_m^{2},
 $$
 
-so **the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant**, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-ik_{t}^{\prime}h_t^{\prime}}$: exponential in space, oscillatory in time, normalisable in both. **This is the only position at which a mode is a state in the strict sense.**
+so **the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant**, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-ik_{t}^{\prime}r'_t}$: exponential in space, oscillatory in time, normalisable in both. **This is the only position at which a mode is a state in the strict sense.**
 
 **The circle is exact, and it is not a dispersion relation in disguise.** It is the graph restricted to the imaginary-momentum line, which is to say it is nothing but $\sigma_{\mathcal{P}}=0$ with two substitutions. Its exactness is checkable: for a Klein–Gordon square well of width $2/k_m$ in units where $k_m=1$, the ground-state frequency was computed at twelve depths from $v=-0.05\,k_m$ to $v=-1.6\,k_m$ by bisection on the matching condition, and the quantity $k_{t}^{\prime\,2}+\kappa^{2}$ deviated from $k_m^{2}$ by at most $2.2\times10^{-16}$ over the twelve, which is round-off. **The circle is not an approximation that the well spoils; the well only chooses the point.**
 
@@ -218,7 +218,7 @@ which is the reciprocal of the transmission amplitude up to a phase, and whose z
 
 ### Two expressions, one identity
 
-**The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.** The pole contributes the amplitude $e^{-ik_{t}^{\prime}h_t^{\prime}}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ih_t^{\prime}}$. Since $h_t^{\prime}=ct$ and the probability is $e^{-\Gamma t/\hbar}$,
+**The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.** The pole contributes the amplitude $e^{-ik_{t}^{\prime}r'_t}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\Gamma t/\hbar}$,
 
 $$
 \boxed{\;\Gamma=2\hbar c\,\lvert\Im k_{t}^{\prime}\rvert\;}
@@ -256,10 +256,10 @@ Over one period $2\pi/\Re k_{\mathrm{s}}$ the amplitude falls by $e^{-\pi/Q}$, s
 
 ### The two exponentials, and why they cancel
 
-**The third position produces one exponential in time and one in space, and the identity of the previous section makes them cancel along the outgoing ray.** The mode is $e^{i(k_\Phi x-k_{t}^{\prime}h_t^{\prime})}$ with $k_\Phi=k_R-i\alpha$ and $k_{t}^{\prime}=k_R^{\prime}-ik_I$. Its squared modulus is
+**The third position produces one exponential in time and one in space, and the identity of the previous section makes them cancel along the outgoing ray.** The mode is $e^{i(k_\Phi x-k_{t}^{\prime}r'_t)}$ with $k_\Phi=k_R-i\alpha$ and $k_{t}^{\prime}=k_R^{\prime}-ik_I$. Its squared modulus is
 
 $$
-\bigl\lvert e^{i(k_\Phi x-k_{t}^{\prime}h_t^{\prime})}\bigr\rvert^{2}=e^{2\alpha x}\,e^{-2k_Ih_t^{\prime}} .
+\bigl\lvert e^{i(k_\Phi x-k_{t}^{\prime}r'_t)}\bigr\rvert^{2}=e^{2\alpha x}\,e^{-2k_Ir'_t} .
 $$
 
 Along the ray $x=v_gt$ the exponent is $\bigl(2\alpha v_g-2k_Ic\bigr)t$, and $\Gamma=2\hbar v_g\alpha$ says exactly that the bracket vanishes. **So the probability density of a resonance mode is constant along the outgoing ray, and falls only at fixed position.** That is what a decaying source looks like from outside: a steady flux whose amplitude is set by the source's remaining probability, and not a wave that fades as it travels.
