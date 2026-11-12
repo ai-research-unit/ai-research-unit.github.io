@@ -185,13 +185,13 @@ $$</p>
 <p>of components $(q_t,q_x,q_y,q_z) = \left(\tfrac{i}{2},0,0,-\tfrac12\right)$ and norm $\langle V\rangle_{\natural} = \left(\tfrac{i}{2}\right)^2+\tfrac14 = 0$ (residual $<10^{-15}$).</p>
 <p><strong>Why the two elements must share a value.</strong> For $w$ and $v$ of one value the product $wv^{*}$ is of rank one; for two general elements of the algebra it is of rank two. The shared value is what makes the product rank one, and the symmetrisation above is what the general pair needs before a four-vector is read from it.</p>
 <h2 id="problem-6-the-double-cover-on-a-concrete-rotation">Problem 6: The Double Cover on a Concrete Rotation</h2>
-<p>Take a rotation about $\vec e_z$ by angle $\theta$, with rotor $\tilde u_{\mathrm r}(\theta)$.</p>
-<p><strong>On the field.</strong> At $\theta = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}\mapsto-\tilde{Ξ}$, which is not the identity. At $\theta = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.</p>
-<p><strong>On the four-vector.</strong> The four-vector action is the two-sided operator with the rotor. At $\theta = 2\pi$,</p>
+<p>Take a rotation about $\vec e_z$ by angle $\theta_{\mathrm{axr}}$, with rotor $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})$.</p>
+<p><strong>On the field.</strong> At $\theta_{\mathrm{axr}} = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}\mapsto-\tilde{Ξ}$, which is not the identity. At $\theta_{\mathrm{axr}} = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.</p>
+<p><strong>On the four-vector.</strong> The four-vector action is the two-sided operator with the rotor. At $\theta_{\mathrm{axr}} = 2\pi$,</p>
 <p>$$
 (-e_t)\,V\,(-e_t)^{*} = (-e_t)\,V\,(-e_t) = e_t\,V\,e_t = V,
 $$</p>
-<p>using $(-e_t)^{*} = -e_t$. So a $2\pi$ rotation acts as the identity on every four-vector, identically and not approximately. At $\theta = 4\pi$ the rotor is $e_t$ and both actions are the identity.</p>
+<p>using $(-e_t)^{*} = -e_t$. So a $2\pi$ rotation acts as the identity on every four-vector, identically and not approximately. At $\theta_{\mathrm{axr}} = 4\pi$ the rotor is $e_t$ and both actions are the identity.</p>
 <p><strong>The general statement.</strong> The two behaviours are the two entries of the parent's table:</p>
 <p>$$
 \pi:\;SL(2,\mathbb{C})\longrightarrow SO^{+}(1,3), \qquad
@@ -224,7 +224,7 @@ $$</p>
 <ul>
 <li><strong>Rapidity limits.</strong> As $\theta_{\mathrm{rpd}}\to0$ both parts become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\theta_{\mathrm{rpd}}$ the parts diverge exponentially, one part stretched by $\exp(\theta_{\mathrm{rpd}}/2)$ and the other contracted by $\exp(-\theta_{\mathrm{rpd}}/2)$.</li>
 <li><strong>$v = \pm w$ (one element):</strong> $H = \pm ww^{*}$ has vanishing norm, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_t^2+\vec h_\Psi^2$.</li>
-<li><strong>$\theta = 2\pi$ versus $4\pi$:</strong> the field picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.</li>
+<li><strong>$\theta_{\mathrm{axr}} = 2\pi$ versus $4\pi$:</strong> the field picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.</li>
 </ul>
 <h2 id="what-the-solutions-illustrate">What the Solutions Illustrate</h2>
 <p><strong>1. The parent's structures are sufficient, once the field is one element.</strong> All seven problems use only the algebra, the declared direction, the two values, and the forms. The only extra structure is the declared direction of the frame, which is a property of the frame and not of the algebra.</p>
@@ -361,7 +361,7 @@ $$</p>
 <td>Boost rotor ($\mathbb{B}_{\Psi}$)</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$</td>
+<td>$\tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$</td>
 <td>Rotation rotor ($\mathbb{B}_{H}$)</td>
 </tr>
 <tr>

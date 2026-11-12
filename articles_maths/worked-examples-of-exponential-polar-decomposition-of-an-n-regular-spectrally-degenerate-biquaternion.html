@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
-\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
 $$</p>
 <p>The cases are chosen to display the rigidity of the word: the scalar line, where the unit factor is $\pm e_t$, and the Jordan part, where the unit factor is $\pm(e_t+\vec\Upsilon)$ with $\vec\Upsilon\neq0$, the two axes are orthogonal, and the rapidity is a function of the rotor angle. The article is independent of the main article of the same title; it repeats the recipe and the checks.</p>
 <p>The numbers are rounded to eight or nine significant digits; the computations were carried to double precision.</p>
@@ -121,7 +121,7 @@ $$</p>
 <li>Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.</li>
 <li>Check the constraints $c_{\mathrm b}c_{\mathrm r}=\varepsilon$ and $s_{\mathrm b}s_{\mathrm r}c=0$, with $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$.</li>
 <li>Compute the exact logarithm $\log Q_t+\vec\Upsilon$ and check its exponential against $\tilde Q$.</li>
-<li>Compute the formal exponent $\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ and its defect.</li>
+<li>Compute the formal exponent $\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ and its defect.</li>
 </ol>
 <p>The <strong>defect</strong> of a case is</p>
 <p>$$
@@ -159,11 +159,11 @@ $$</p>
 <td>the rotor is $*$-unitary of norm one</td>
 </tr>
 <tr>
-<td>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$</td>
+<td>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$</td>
 <td>the scalar constraint</td>
 </tr>
 <tr>
-<td>$\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,c=0$</td>
+<td>$\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,c=0$</td>
 <td>the axis constraint</td>
 </tr>
 <tr>
@@ -199,7 +199,7 @@ $$</p>
 \qquad
 \tilde u_{\mathrm r}=e_t.
 $$</p>
-<p>The boost and the rotor are both the identity, with $\theta_{\mathrm{rpd}}=0$ and $\theta=0$; the two axes are undefined.</p>
+<p>The boost and the rotor are both the identity, with $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$; the two axes are undefined.</p>
 <h4 id="the-logarithm">The Logarithm</h4>
 <p>$$
 \operatorname{Log}\tilde Q=0,
@@ -235,7 +235,7 @@ $$</p>
 \qquad
 \tilde u_{\mathrm r}=-e_t.
 $$</p>
-<p>The boost is the identity, with $\theta_{\mathrm{rpd}}=0$. The rotor is the central element $-e_t$, which is $\exp(\pi\vec u_{\mathrm r})$ for every unit axis; in the range $\theta\in[0,2\pi]$ the angle is $\theta=2\pi$ and the axis is undefined.</p>
+<p>The boost is the identity, with $\theta_{\mathrm{rpd}}=0$. The rotor is the central element $-e_t$, which is $\exp(\pi\vec u_{\mathrm r})$ for every unit axis; in the range $\theta_{\mathrm{axr}}\in[0,2\pi]$ the angle is $\theta_{\mathrm{axr}}=2\pi$ and the axis is undefined.</p>
 <h4 id="the-logarithm_1">The Logarithm</h4>
 <p>$$
 \operatorname{Log}\tilde Q=\ln2+i\pi,
@@ -271,7 +271,7 @@ $$</p>
 \qquad
 \tilde u_{\mathrm r}=e_t.
 $$</p>
-<p>The word is pure scale and phase, with $\theta_{\mathrm{rpd}}=0$ and $\theta=0$.</p>
+<p>The word is pure scale and phase, with $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$.</p>
 <h4 id="the-logarithm_2">The Logarithm</h4>
 <p>$$
 \operatorname{Log}\tilde Q=\ln2+i\frac{\pi}{2},
@@ -320,11 +320,11 @@ $$</p>
 $$</p>
 <p>and the rotor has</p>
 <p>$$
-\theta=\frac{\pi}{2},
+\theta_{\mathrm{axr}}=\frac{\pi}{2},
 \qquad
 \vec u_{\mathrm r}=\vec e_x.
 $$</p>
-<p>The axes are orthogonal: $c=0$. The scalar constraint is $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\sqrt2\cdot\frac{1}{\sqrt2}=1=\varepsilon$.</p>
+<p>The axes are orthogonal: $c=0$. The scalar constraint is $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\sqrt2\cdot\frac{1}{\sqrt2}=1=\varepsilon$.</p>
 <h4 id="the-word">The Word</h4>
 <p>$$
 \tilde Q=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\frac{\vec e_y+\vec e_z}{\sqrt2}\Bigr)
@@ -346,7 +346,7 @@ $$</p>
 <p>$$
 \delta=0.63997478.
 $$</p>
-<p>The formal exponent is not the logarithm: the cross term $i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is present.</p>
+<p>The formal exponent is not the logarithm: the cross term $i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is present.</p>
 <h3 id="case-5-the-second-jordan-element">Case 5: The Second Jordan Element</h3>
 <h4 id="the-element_4">The Element</h4>
 <p>$$
@@ -386,7 +386,7 @@ $$</p>
 $$</p>
 <p>and the rotor has</p>
 <p>$$
-\theta=\frac{\pi}{2},
+\theta_{\mathrm{axr}}=\frac{\pi}{2},
 \qquad
 \vec u_{\mathrm r}=\vec e_y.
 $$</p>
@@ -453,15 +453,15 @@ $$</p>
 $$</p>
 <p>and the rotor has</p>
 <p>$$
-\theta=\arccos\frac13=1.230959417,
+\theta_{\mathrm{axr}}=\arccos\frac13=1.230959417,
 \qquad
 \vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}.
 $$</p>
-<p>The axes are orthogonal: $c=0$. The scalar constraint is $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\sqrt{1.5}\cdot\sqrt{2/3}=1$.</p>
+<p>The axes are orthogonal: $c=0$. The scalar constraint is $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\sqrt{1.5}\cdot\sqrt{2/3}=1$.</p>
 <h4 id="the-word_2">The Word</h4>
 <p>$$
 \tilde Q=(1+i)\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\frac{-\vec e_x+\vec e_y+\vec e_z}{\sqrt3}\Bigr)
-\exp\Bigl(\frac{\theta}{2}\frac{\vec e_x+\vec e_y}{\sqrt2}\Bigr).
+\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\frac{\vec e_x+\vec e_y}{\sqrt2}\Bigr).
 $$</p>
 <h4 id="the-exact-logarithm_2">The Exact Logarithm</h4>
 <p>$$
@@ -512,7 +512,7 @@ $$</p>
 $$</p>
 <p>The boost is the one of case 4, with $\theta_{\mathrm{rpd}}=1.762747174$ and the same axis. The rotor has</p>
 <p>$$
-\theta=\frac{3\pi}{2},
+\theta_{\mathrm{axr}}=\frac{3\pi}{2},
 \qquad
 \vec u_{\mathrm r}=-\vec e_x.
 $$</p>
@@ -575,7 +575,7 @@ $$</p>
 \qquad
 \vec u_{\mathrm b}=\frac{\vec e_y+\vec e_z}{\sqrt2},
 \qquad
-\theta=\frac{\pi}{2},
+\theta_{\mathrm{axr}}=\frac{\pi}{2},
 \qquad
 \vec u_{\mathrm r}=\vec e_x.
 $$</p>
@@ -605,7 +605,7 @@ $$</p>
 <th>$Q_t$</th>
 <th>$\Rho$</th>
 <th>$\varepsilon$</th>
-<th>$\theta$</th>
+<th>$\theta_{\mathrm{axr}}$</th>
 <th>$\operatorname{Log}\tilde Q$</th>
 <th>$\delta$</th>
 </tr>
@@ -652,7 +652,7 @@ $$</p>
 <th>$Q_t$</th>
 <th>$\varepsilon$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
-<th>$\theta$</th>
+<th>$\theta_{\mathrm{axr}}$</th>
 <th>$\vec u_{\mathrm b}$</th>
 <th>$\vec u_{\mathrm r}$</th>
 <th>$\delta$</th>
@@ -713,7 +713,7 @@ $$</p>
 </table></div>
 <p>In every Jordan case $c=0$, the axes are orthogonal, and the rapidity is a function of the angle:</p>
 <p>$$
-\lvert\cos\frac{\theta}{2}\rvert=\frac{1}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}.
+\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\rvert=\frac{1}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}.
 $$</p>
 <h3 id="the-constraints">The Constraints</h3>
 <div class="table-scroll"><table>
@@ -723,7 +723,7 @@ $$</p>
 <th>$(\tilde U-\varepsilon e_t)^2$</th>
 <th>$\vec\Upsilon^2$</th>
 <th>$c$</th>
-<th>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}$</th>
+<th>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}$</th>
 </tr>
 </thead>
 <tbody>
@@ -980,7 +980,7 @@ $$</p>
 <th>$r$</th>
 <th>$\theta_{\mathrm{pha}}$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
-<th>$\theta$</th>
+<th>$\theta_{\mathrm{axr}}$</th>
 <th>$\vec u_{\mathrm b}$</th>
 <th>$\vec u_{\mathrm r}$</th>
 <th>$c$</th>
@@ -1073,9 +1073,9 @@ $$</p>
 <ul>
 <li>Every case has $B^2=0$ and $N\neq0$, and every element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$.</li>
 <li>The unit factor is $\pm(e_t+\vec\Upsilon)$: its scalar part is $\pm1$ and its square is the identity on the scalar line, a nontrivial unipotent on the Jordan part.</li>
-<li>On the Jordan part the axes are orthogonal, $c=0$, and the rapidity is tied to the rotor angle by $|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$.</li>
+<li>On the Jordan part the axes are orthogonal, $c=0$, and the rapidity is tied to the rotor angle by $|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$.</li>
 <li>The exact logarithm is $\log Q_t+\vec\Upsilon$, with no series and no correction. The scalar logarithm carries the sign and the phase; the nilpotent part is fixed.</li>
-<li>The formal exponent is a logarithm on the scalar line and not on the Jordan part. The defect is the cross term $i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ plus the nonlinear terms.</li>
+<li>The formal exponent is a logarithm on the scalar line and not on the Jordan part. The defect is the cross term $i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ plus the nonlinear terms.</li>
 <li>The defect scales with the element: case 8 is twice case 4, and its defect is twice as large.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -1136,7 +1136,7 @@ $$</p>
 <td>the rapidity and the boost axis</td>
 </tr>
 <tr>
-<td>$\theta,\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{axr}},\vec u_{\mathrm r}$</td>
 <td>the rotor angle and the rotor axis</td>
 </tr>
 <tr>

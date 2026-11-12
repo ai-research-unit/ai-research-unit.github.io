@@ -98,7 +98,7 @@ d\gamma_{n}/dr'_t = i\,\langle n(R(r'_t))|\frac{d}{dr'_t}|n(R(r'_t))\rangle ,
 \gamma_n = i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\cdot dR .
 $$</p>
 <p>The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(r'_t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{1}{\hbar}\int  E_n\,dr'_t$ scales with the duration. This is the precise sense in which the second phase is <strong>geometric</strong> and the first is not; the speed-independence is checked explicitly on the example below.</p>
-<p>The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\alpha(R))|n\rangle$ for a real function $\alpha$ whose phase factor $\exp(i\alpha)$ is single-valued, the phase acquired around a <strong>closed</strong> loop shifts by</p>
+<p>The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\theta_{\mathrm{gau}}(R))|n\rangle$ for a real function $\theta_{\mathrm{gau}}$ whose phase factor $\exp(i\theta_{\mathrm{gau}})$ is single-valued, the phase acquired around a <strong>closed</strong> loop shifts by</p>
 <p>$$
 \oint \nabla_R\alpha\cdot dR = 2\pi k , \qquad k \in \mathbb{Z},
 $$</p>
@@ -160,22 +160,22 @@ $$</p>
 \mathrm{Tr}\!\left(\partial/\partial R_\mu\tilde{Ξ}^{\dagger}\,\tilde{Ξ}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}\right) = 0 .
 $$</p>
 <p>The first term is the conjugate of the second (complex conjugation in $\mathbb{B}_{C}$ reverses the order under the trace), so $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\partial/\partial R_\mu\tilde{Ξ})$ is purely imaginary and $i$ times it is real. The connection is therefore a <strong>real one-form</strong> on parameter space. It is not an element of $\mathbb{B}_{\Phi}$ and not a biquaternion: it is a real number attached to each direction in parameter space.</p>
-<p><strong>Gauge transformation.</strong> Let $\alpha(R)$ be a real function and let $\tilde{Ξ} \mapsto \tilde{Ξ}_{2} = \exp(i\alpha)\tilde{Ξ}$. Because $\exp(i\alpha)$ is central and $*$-unitary, it multiplies $\tilde{Ξ}$ from the left without ordering ambiguity, and</p>
+<p><strong>Gauge transformation.</strong> Let $\theta_{\mathrm{gau}}(R)$ be a real function and let $\tilde{Ξ} \mapsto \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$. Because $\exp(i\theta_{\mathrm{gau}})$ is central and $*$-unitary, it multiplies $\tilde{Ξ}$ from the left without ordering ambiguity, and</p>
 <p>$$
 \begin{aligned}
 \mathrm{Tr}\!\left(\tilde{Ξ}_{2}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{2}\right)
-&= \mathrm{Tr}\!\left(\exp(-i\alpha)\tilde{Ξ}^{\dagger}\left(i\,\partial/\partial R_\mu\alpha\,\exp(i\alpha)\tilde{Ξ} + \exp(i\alpha)\partial/\partial R_\mu\tilde{Ξ}\right)\right) \
+&= \mathrm{Tr}\!\left(\exp(-i\theta_{\mathrm{gau}})\tilde{Ξ}^{\dagger}\left(i\,\partial/\partial R_\mu\theta_{\mathrm{gau}}\,\exp(i\theta_{\mathrm{gau}})\tilde{Ξ} + \exp(i\theta_{\mathrm{gau}})\partial/\partial R_\mu\tilde{Ξ}\right)\right) \
 &= i\,\partial/\partial R_\mu\alpha\;\mathrm{Tr}\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right) + \mathrm{Tr}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}\right).
 \end{aligned}
 $$</p>
 <p>Dividing by the norm and multiplying by $i$ gives</p>
 <p>$$
 \boxed{\;\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha\;}
-\qquad\text{for}\qquad \tilde{Ξ}_{2} = \exp(i\alpha)\tilde{Ξ} .
+\qquad\text{for}\qquad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ} .
 $$</p>
 <p>This is the transformation law of an <strong>abelian gauge connection</strong>. It is the same law as the electromagnetic gauge transformation $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ of <em>The Gauge Principle in Biquaternionic Form</em>, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.</p>
 <h3 id="why-the-analogy-is-structural-and-not-decorative">Why the Analogy Is Structural and Not Decorative</h3>
-<p>The gauge-principle article derives its abelian connection from a precise algebraic object: the <strong>centre</strong> $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ it localizes is a <strong>central $*$-unitary element</strong>. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,</p>
+<p>The gauge-principle article derives its abelian connection from a precise algebraic object: the <strong>centre</strong> $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$, with $\theta_{\mathrm{cen}}$ the real central angle. The phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ it localizes is a <strong>central $*$-unitary element</strong>. The rephasing $\exp(i\theta_{\mathrm{gau}})$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,</p>
 <p>$$
 \mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
 $$</p>
@@ -231,7 +231,7 @@ $$</p>
 \gamma - \oint_{\mathcal{C}}\sum_\mu\partial/\partial R_\mu\alpha\,dR_\mu
 = \gamma - \oint_{\mathcal{C}} d\alpha .
 $$</p>
-<p>If $\exp(i\alpha)$ is single-valued on the loop, the last integral is $2\pi k$ for some integer $k$, the winding number of $\exp(i\alpha)$ around the loop. A single-valued rephasing of the eigenstate therefore shifts the closed-loop phase by $2\pi k$ and nothing more, so the <strong>gauge-invariant content is the phase modulo $2\pi$</strong>. This is the first of the article's traps, and it is now a statement about the transition functions of a $\mathrm{U}(1)$ bundle rather than about the arbitrariness of a wave function. The curvature below is the object that removes the ambiguity at the level of the integrand.</p>
+<p>If $\exp(i\theta_{\mathrm{gau}})$ is single-valued on the loop, the last integral is $2\pi k$ for some integer $k$, the winding number of $\exp(i\theta_{\mathrm{gau}})$ around the loop. A single-valued rephasing of the eigenstate therefore shifts the closed-loop phase by $2\pi k$ and nothing more, so the <strong>gauge-invariant content is the phase modulo $2\pi$</strong>. This is the first of the article's traps, and it is now a statement about the transition functions of a $\mathrm{U}(1)$ bundle rather than about the arbitrariness of a wave function. The curvature below is the object that removes the ambiguity at the level of the integrand.</p>
 <h2 id="the-berry-curvature">The Berry Curvature</h2>
 <p>The <strong>Berry curvature</strong> is the exterior derivative of the connection,</p>
 <p>$$
@@ -428,7 +428,7 @@ $$</p>
 \mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}\right)}{\mathrm{Tr}\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right)} ,
 \qquad
 \mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial/\partial R_\mu\alpha
-\quad\text{for}\quad \tilde{Ξ}_{2} = \exp(i\alpha)\tilde{Ξ} ,
+\quad\text{for}\quad \tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ} ,
 \qquad
 \mathcal{F}_{\mu\nu} = \partial/\partial R_\mu\mathcal{A}_\nu - \partial/\partial R_\nu\mathcal{A}_\mu .
 $$</p>

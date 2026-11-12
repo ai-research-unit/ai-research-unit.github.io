@@ -82,7 +82,7 @@ $$</p>
 <p><strong>The result, in one sentence.</strong> The four exponents of a generic polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of them, and the polar word fails on a subspace exactly on the origin or its nonzero zero divisors.</p>
 <p>Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$.</p>
 <p>The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.</p>
-<p>The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article <em>The Polar Decomposition of an N-Regular Biquaternion</em>. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of <em>Subspaces and Decompositions</em>, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.</p>
+<p>The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article <em>The Polar Decomposition of an N-Regular Biquaternion</em>. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of <em>Subspaces and Decompositions</em>, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.</p>
 <p>No physics is invoked; the physical interpretation is cited where it clarifies the algebra.</p>
 <h2 id="the-four-exponents-of-the-word">The Four Exponents of the Word</h2>
 <p>Each of the four factors has a single <strong>exponent</strong>, one real parameter times one <strong>root</strong> of the algebra; the phase angle is $\theta_{\mathrm{pha}}=\arg\omega$, and the square of the root decides the character of the factor. The four factors and their exponents are</p>
@@ -91,7 +91,7 @@ $$</p>
 \qquad
 \bigl(r,\omega,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
 \longleftrightarrow
-\bigl(\ln r,\,i\theta_{\mathrm{pha}},\,i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\,\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr) \;}.
+\bigl(\ln r,\,i\theta_{\mathrm{pha}},\,i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\,\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr) \;}.
 $$</p>
 <div class="table-scroll"><table>
 <thead>
@@ -127,7 +127,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde u_{\mathrm r}$</td>
-<td>$\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>$\vec u_{\mathrm r}$</td>
 <td>$-e_t$</td>
 <td>trigonometric</td>
@@ -166,7 +166,7 @@ $$</p>
 <td>the central phase</td>
 </tr>
 <tr>
-<td>$\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>$B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
 <td>the real vector block</td>
 <td>the rotor</td>
@@ -180,7 +180,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Theorem (the block reading of the polar word).</strong> For a generic polar word, each one of the four exponents lies in exactly one of the four coordinate blocks, and every one of the four blocks carries exactly one exponent.</p>
-<p><strong>Proof.</strong> The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\theta_{\mathrm{pha}}$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.</p>
+<p><strong>Proof.</strong> The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\theta_{\mathrm{pha}}$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.</p>
 <p>The additivity of the dimensions of the blocks is the block form of the count of the four factors,</p>
 <p>$$
 1+1+3+3 = 8 = \dim_{\mathbb{R}}\mathbb{B} ,
@@ -218,7 +218,7 @@ $$</p>
 <td>exponent it carries</td>
 <td>$\ln r$</td>
 <td>$i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$</td>
-<td>$\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>$i\theta_{\mathrm{pha}}$</td>
 </tr>
 <tr>
@@ -237,7 +237,7 @@ i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b} = \tfrac{\theta_{\mathrm{rpd
 $$</p>
 <p>because the three generators are $i\vec e_x,i\vec e_y,i\vec e_z$. The rotor exponent is the Clifford <strong>bivector</strong></p>
 <p>$$
-\tfrac{\theta}{2}\vec u_{\mathrm r} = -\tfrac{\theta}{2}\bigl(\vec u_{\mathrm r,1}\,(i\vec e_y)(i\vec e_z)+\vec u_{\mathrm r,2}\,(i\vec e_z)(i\vec e_x)+\vec u_{\mathrm r,3}\,(i\vec e_x)(i\vec e_y)\bigr) ,
+\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r} = -\tfrac{\theta_{\mathrm{axr}}}{2}\bigl(\vec u_{\mathrm r,1}\,(i\vec e_y)(i\vec e_z)+\vec u_{\mathrm r,2}\,(i\vec e_z)(i\vec e_x)+\vec u_{\mathrm r,3}\,(i\vec e_x)(i\vec e_y)\bigr) ,
 $$</p>
 <p>because $\vec e_x = -(i\vec e_y)(i\vec e_z)$, $\vec e_y = -(i\vec e_z)(i\vec e_x)$ and $\vec e_z = -(i\vec e_x)(i\vec e_y)$. The scale exponent is the scalar and the phase exponent the pseudoscalar,</p>
 <p>$$
@@ -324,7 +324,7 @@ $$</p>
 <td>$\mathbb{B}_{V}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
-<td>$\tfrac{\theta}{2}\vec u_{\mathrm r}$ (rotor)</td>
+<td>$\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ (rotor)</td>
 <td>$B_1$</td>
 <td>$\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Phi}$</td>
 </tr>
@@ -349,12 +349,12 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}_{V}$</td>
-<td>$i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>the two axes</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{H}$</td>
-<td>$\ln r$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\ln r$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>the scale and the rotor</td>
 </tr>
 <tr>
@@ -369,7 +369,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Phi}$</td>
-<td>$i\theta_{\mathrm{pha}}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$i\theta_{\mathrm{pha}}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>the trigonometric pair</td>
 </tr>
 </tbody>
@@ -521,7 +521,7 @@ $$</p>
 <p>The rotor set is a <strong>group</strong>: the product of two unit real quaternions is a unit real quaternion. The phase set is a group as well, and the scale set is a group under multiplication; these three are the groups the word carries.</p>
 <p>The boost set is <strong>not</strong> a group: the product of two Hermitian positive elements is not Hermitian in general, so the product of two boosts does not stay in the boost set. The product of two boosts is a boost times a rotor,</p>
 <p>$$
-\boxed{\; \tilde U_{\mathrm b}(a,\vec u_1)\,\tilde U_{\mathrm b}(b,\vec u_2) = \tilde U_{\mathrm b}(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})\,\tilde u_{\mathrm r}(\theta,\vec u_{\mathrm r}) \;},
+\boxed{\; \tilde U_{\mathrm b}(a,\vec u_1)\,\tilde U_{\mathrm b}(b,\vec u_2) = \tilde U_{\mathrm b}(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})\,\tilde u_{\mathrm r}(\theta_{\mathrm{axr}},\vec u_{\mathrm r}) \;},
 $$</p>
 <p>and the parameters are the classical ones. The rapidity of the product is fixed by the axes through their scalar and vector products,</p>
 <p>$$
@@ -529,20 +529,20 @@ $$</p>
 $$</p>
 <p>and the residual rotor by</p>
 <p>$$
-\tan\frac{\theta}{2} = \frac{\sinh\frac{a}{2}\sinh\frac{b}{2}\,\lvert\vec u_1\times\vec u_2\rvert}{\cosh\frac{a}{2}\cosh\frac{b}{2}+\sinh\frac{a}{2}\sinh\frac{b}{2}\,(\vec u_1\cdot\vec u_2)} .
+\tan\frac{\theta_{\mathrm{axr}}}{2} = \frac{\sinh\frac{a}{2}\sinh\frac{b}{2}\,\lvert\vec u_1\times\vec u_2\rvert}{\cosh\frac{a}{2}\cosh\frac{b}{2}+\sinh\frac{a}{2}\sinh\frac{b}{2}\,(\vec u_1\cdot\vec u_2)} .
 $$</p>
 <p>Both identities were verified in double precision over $300$ random pairs, the first to $9.8\times10^{-13}$ and the second to $2.8\times10^{-13}$. The residual rotor is the Thomas-Wigner rotation of the physics articles, <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>; the algebra records it as the statement that the boost set is a symmetric space and not a group, and the word records it as the escape into the rotor factor.</p>
 <p>The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. With both factors nontrivial, they commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; if one factor is central, the word is already order-free. The bracket is developed in <em>The Hamilton Root Pairing of the Polar Decomposition of Biquaternions</em>, §<em>The Two Exponents</em>.</p>
 <h2 id="the-vector-subspace-is-rigid">The Vector Subspace Is Rigid</h2>
 <p>The vector subspace is the one subspace on which the polar data of every element is fixed in shape. The block table gives the reason: the vector subspace is the sum $B_1\oplus B_2$ of the two blocks that carry the two non-central exponents, and nothing else. The two central coordinates vanish, and their vanishing is a condition on the two non-central factors.</p>
-<p><strong>Proposition (the half-turn rotor of a pure vector).</strong> Let $\vec Q$ be an element of the vector subspace with $\langle\vec Q\rangle_{\natural}\neq0$, and let $\vec Q = \Rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta = \pi$; either the boost is trivial, $\theta_{\mathrm{rpd}}=0$, or its axis is orthogonal to the rotor axis.</p>
+<p><strong>Proposition (the half-turn rotor of a pure vector).</strong> Let $\vec Q$ be an element of the vector subspace with $\langle\vec Q\rangle_{\natural}\neq0$, and let $\vec Q = \Rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta_{\mathrm{axr}} = \pi$; either the boost is trivial, $\theta_{\mathrm{rpd}}=0$, or its axis is orthogonal to the rotor axis.</p>
 <p><strong>Proof.</strong> Write the two non-central factors in their closed forms,</p>
 <p>$$
-\tilde U_{\mathrm b} = \cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} , \qquad \tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r} ,
+\tilde U_{\mathrm b} = \cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} , \qquad \tilde u_{\mathrm r} = \cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r} ,
 $$</p>
 <p>and compute the scalar part of their product. Only the scalar part is needed, and it splits into two terms, because the cross terms of a scalar factor with a pure factor have vanishing scalar part:</p>
 <p>$$
-\operatorname{Sc}\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr) = \cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\cos\tfrac{\theta}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta}{2}\operatorname{Sc}\bigl(\vec u_{\mathrm b}\vec u_{\mathrm r}\bigr) .
+\operatorname{Sc}\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr) = \cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\cos\tfrac{\theta_{\mathrm{axr}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta_{\mathrm{axr}}}{2}\operatorname{Sc}\bigl(\vec u_{\mathrm b}\vec u_{\mathrm r}\bigr) .
 $$</p>
 <p>Now $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ are real pure quaternions, so the scalar part of their product is minus their dot product,</p>
 <p>$$
@@ -550,9 +550,9 @@ $$</p>
 $$</p>
 <p>The element $\vec Q$ is pure, so $\operatorname{Sc}(\vec Q) = 0$, and the modulus $\Rho$ is central, so $\operatorname{Sc}(\tilde U_{\mathrm b}\tilde u_{\mathrm r}) = 0$ as well. The right-hand side is the sum of a real number and a purely imaginary one, so both vanish:</p>
 <p>$$
-\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\cos\tfrac{\theta}{2} = 0 , \qquad \sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta}{2}\,(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0 .
+\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\cos\tfrac{\theta_{\mathrm{axr}}}{2} = 0 , \qquad \sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0 .
 $$</p>
-<p>The first gives $\cos\tfrac{\theta}{2} = 0$, that is $\theta = \pi$, since $\theta\in[0,2\pi]$ and the other factor is positive. The second, with $\sin\tfrac{\theta}{2} = 1$, gives either $\theta_{\mathrm{rpd}} = 0$ or $(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0$: the boost is trivial or the two axes are orthogonal.</p>
+<p>The first gives $\cos\tfrac{\theta_{\mathrm{axr}}}{2} = 0$, that is $\theta_{\mathrm{axr}} = \pi$, since $\theta_{\mathrm{axr}}\in[0,2\pi]$ and the other factor is positive. The second, with $\sin\tfrac{\theta_{\mathrm{axr}}}{2} = 1$, gives either $\theta_{\mathrm{rpd}} = 0$ or $(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0$: the boost is trivial or the two axes are orthogonal.</p>
 <p><strong>Corollary (the normalised piece of a pure vector is a root of $-1$).</strong> With the notation of the proposition, the unit-norm part $\vec Q/\Rho$ satisfies</p>
 <p>$$
 \boxed{\; \left(\frac{\vec Q}{\Rho}\right)^{\natural} = -\frac{\vec Q}{\Rho} , \qquad \left(\frac{\vec Q}{\Rho}\right)^{2} = -e_t \;},
@@ -649,9 +649,9 @@ a'=a\cosh\theta_{\mathrm{rpd}}-b_\parallel\sinh\theta_{\mathrm{rpd}},\qquad
 b_\parallel'=b_\parallel\cosh\theta_{\mathrm{rpd}}-a\sinh\theta_{\mathrm{rpd}},\qquad
 \vec b_\perp'=\vec b_\perp,
 $$</p>
-<p>and the rotor fixes the time direction and applies the spatial rotation of angle $\theta$ about its axis to $\vec b$. A general norm-one element gives</p>
+<p>and the rotor fixes the time direction and applies the spatial rotation of angle $\theta_{\mathrm{axr}}$ about its axis to $\vec b$. A general norm-one element gives</p>
 <p>$$
-\Lambda_-(\theta_{\mathrm{rpd}},\theta)=B_-(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta,\vec u_{\mathrm r})),
+\Lambda_-(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}})=B_-(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})),
 $$</p>
 <p>with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $r^{2}\Lambda_-$: a linear conformal transformation, of determinant $r^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The Lorentz group and its double cover are in <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
 <h3 id="the-hermitian-half-as-a-congruence">The Hermitian Half as a Congruence</h3>
@@ -838,12 +838,12 @@ $$</p>
 <p>$$
 \tilde u_{\mathrm r} = 0.428393043\,e_t+0.673189067\,\vec e_x-0.244796025\,\vec e_y+0.550791055\,\vec e_z ,
 $$</p>
-<p>of angle $\theta = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.609556915)$, with $r = 1.634013464$.</p>
+<p>of angle $\theta_{\mathrm{axr}} = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.609556915)$, with $r = 1.634013464$.</p>
 <p><strong>The anti-quaternion subspace.</strong> The same element multiplied by $i$ has norm $-2.67$, so $\theta_{\mathrm{pha}} = \pi/2$, the boost is again $e_t$, and the rotor is the same unit real quaternion; only the phase has moved, by the quarter turn.</p>
 <p><strong>The real vector block.</strong> For $\vec\Rho = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $r = 1$, $\theta_{\mathrm{pha}} = 0$, the boost is $e_t$, and the rotor is the direction $\vec\Rho$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\theta_{\mathrm{pha}} = \pi/2$, the same boost and the same rotor.</p>
-<p><strong>A generic complex vector.</strong> For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\theta_{\mathrm{pha}} = 0.387081341$. The boost has rapidity $\theta_{\mathrm{rpd}} = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.</p>
+<p><strong>A generic complex vector.</strong> For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\theta_{\mathrm{pha}} = 0.387081341$. The boost has rapidity $\theta_{\mathrm{rpd}} = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta_{\mathrm{axr}} = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.</p>
 <p><strong>A definite Hermitian element.</strong> For $\tilde U_{\mathrm b} = \cosh0.9\,e_t+i\sinh0.9\,\vec u$ with $\vec u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $r = 1$, $\theta_{\mathrm{pha}} = 0$, the boost equal to the element and the rotor $e_t$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_t$.</p>
-<p><strong>The product of two boosts.</strong> For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $r = 1$ and $\theta_{\mathrm{pha}} = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\theta_{\mathrm{rpd}} = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.</p>
+<p><strong>The product of two boosts.</strong> For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $r = 1$ and $\theta_{\mathrm{pha}} = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\theta_{\mathrm{rpd}} = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta_{\mathrm{axr}}}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
@@ -885,7 +885,7 @@ $$</p>
 <td>the phase angle, $\theta_{\mathrm{pha}}=\arg\omega\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
 </tr>
 <tr>
-<td>$\ln r$, $i\theta_{\mathrm{pha}}$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\ln r$, $i\theta_{\mathrm{pha}}$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 <td>the four exponents of the word</td>
 </tr>
 <tr>
@@ -945,7 +945,7 @@ $$</p>
 <td>rapidity and unit axis of the boost</td>
 </tr>
 <tr>
-<td>$\theta$, $\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$</td>
 <td>rotation angle and unit axis of the rotor</td>
 </tr>
 <tr>

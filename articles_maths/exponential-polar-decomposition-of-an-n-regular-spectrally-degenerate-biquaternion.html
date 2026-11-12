@@ -82,18 +82,18 @@ $$</p>
 \qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
-<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition and computes the shape that the word takes in this sector.</p>
+<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition and computes the shape that the word takes in this sector.</p>
 <p>The shape is rigid. The unit factor is $\pm$unipotent: it is $\varepsilon(e_t+\vec\Upsilon)$ with $\varepsilon=\pm1$ and $\vec\Upsilon^2=0$. Its two eigenvalues coincide, its minimal polynomial is a square, and it has no eigenbasis. The two angles of the word are not independent: the scalar part of the unit factor forces</p>
 <p>$$
-\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon,
 $$</p>
 <p>and on the Jordan part the two axes are orthogonal. The whole element is the scalar part times a unipotent written in the orthogonal frame,</p>
 <p>$$
 \tilde Q=Q_t\Bigl(e_t+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}
-+\tan\frac{\theta}{2}\vec u_{\mathrm r}
-+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}\Bigr),
++\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}
++i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}\Bigr),
 $$</p>
 <p>so the four word parameters reduce to the single complex number $Q_t$, one angle and a frame. The true logarithm is exact and truncated,</p>
 <p>$$
@@ -117,12 +117,12 @@ $$</p>
 <p><strong>Theorem (the word and its seven data).</strong> On the Jordan part $a>0$, every $\tilde Q$ of the sector is</p>
 <p>$$
 \boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
+=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$</p>
 <p>with the two unit factors</p>
 <p>$$
 \boxed{\;\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},\qquad
-\tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\;}
+\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}\;}
 $$</p>
 <p>and with the seven data determined by $Q_t,Q_x,Q_y,Q_z$. Here $\Rho$ is the principal square root of $Q_t^2$, that is, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part.</p>
 <p>$$
@@ -137,7 +137,7 @@ $$</p>
 \boxed{\;\theta_{\mathrm{rpd}}=2\operatorname{arsinh}a\;}
 $$</p>
 <p>$$
-\boxed{\;\theta=\begin{cases}2\arctan a,&\varepsilon=+1,\\[2pt]2\pi-2\arctan a,&\varepsilon=-1.\end{cases}\;}
+\boxed{\;\theta_{\mathrm{axr}}=\begin{cases}2\arctan a,&\varepsilon=+1,\\[2pt]2\pi-2\arctan a,&\varepsilon=-1.\end{cases}\;}
 $$</p>
 <p>$$
 \boxed{\;\vec u_{\mathrm b}=\frac{\vec B+\vec A\times\vec B}{a\sqrt{1+a^2}},\qquad
@@ -147,7 +147,7 @@ $$</p>
 \boxed{\;\tilde u_{\mathrm r}=\varepsilon\,\frac{e_t+\vec A}{\sqrt{1+a^2}},\qquad
 \tilde U_{\mathrm b}=\sqrt{1+a^2}\,e_t+\frac{i}{\sqrt{1+a^2}}\bigl(\vec B+\vec A\times\vec B\bigr)\;}
 $$</p>
-<p>On the scalar line $a=0$ one has $\vec\Upsilon=0$, $\theta_{\mathrm{rpd}}=0$, and $\theta=0$ if $\varepsilon=+1$, $\theta=2\pi$ if $\varepsilon=-1$; both axes are arbitrary.</p>
+<p>On the scalar line $a=0$ one has $\vec\Upsilon=0$, $\theta_{\mathrm{rpd}}=0$, and $\theta_{\mathrm{axr}}=0$ if $\varepsilon=+1$, $\theta_{\mathrm{axr}}=2\pi$ if $\varepsilon=-1$; both axes are arbitrary.</p>
 <p><em>Proof.</em></p>
 <p><strong>The modulus and the sign.</strong> Since $N=Q_t^2$, the modulus satisfies $\Rho^2=Q_t^2$, hence $\Rho=\pm Q_t$. The principal branch selects the sign displayed, and $r=|\Rho|=|Q_t|$, $\varepsilon=Q_t/\Rho=\pm1$. Writing $\Rho=re^{i\theta_{\mathrm{pha}}}$ gives $\theta_{\mathrm{pha}}=\arg\Rho$, with the principal argument in $(-\pi,\pi]$; since $\Rho=\varepsilon Q_t$, this is the box for $\theta_{\mathrm{pha}}$.</p>
 <p><strong>The structure of $\vec\Upsilon$.</strong> With $\vec\Upsilon=\vec A+i\vec B$,</p>
@@ -196,12 +196,12 @@ $$</p>
 =\varepsilon(e_t+\vec\Upsilon)=\tilde U.
 $$</p>
 <p>By the uniqueness of the polar decomposition, this is the rotor, and the box for $\tilde u_{\mathrm r}$ follows.</p>
-<p><strong>The angles.</strong> From the box, $\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon/c$ and $\mathrm{Vect}\tilde u_{\mathrm r}=\varepsilon\vec A/c$. With $\theta\in[0,2\pi]$, $\cos\frac{\theta}{2}=\varepsilon/c$ and $\sin\frac{\theta}{2}=a/c\ge0$. For $\varepsilon=+1$ this gives $\frac{\theta}{2}=\arctan a$; for $\varepsilon=-1$ it gives $\frac{\theta}{2}=\pi-\arctan a$. Hence the box for $\theta$, and</p>
+<p><strong>The angles.</strong> From the box, $\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon/c$ and $\mathrm{Vect}\tilde u_{\mathrm r}=\varepsilon\vec A/c$. With $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon/c$ and $\sin\frac{\theta_{\mathrm{axr}}}{2}=a/c\ge0$. For $\varepsilon=+1$ this gives $\frac{\theta_{\mathrm{axr}}}{2}=\arctan a$; for $\varepsilon=-1$ it gives $\frac{\theta_{\mathrm{axr}}}{2}=\pi-\arctan a$. Hence the box for $\theta_{\mathrm{axr}}$, and</p>
 <p>$$
-\vec u_{\mathrm r}=\frac{\mathrm{Vect}\tilde u_{\mathrm r}}{\sin\frac{\theta}{2}}
+\vec u_{\mathrm r}=\frac{\mathrm{Vect}\tilde u_{\mathrm r}}{\sin\frac{\theta_{\mathrm{axr}}}{2}}
 =\varepsilon\,\frac{\vec A}{a}.
 $$</p>
-<p><strong>The scalar line.</strong> If $a=0$ then $\vec B=0$ and $\vec A=0$, so $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. Then $\theta_{\mathrm{rpd}}=0$, and the rotor is $\varepsilon e_t$, that is, $\theta=0$ for $\varepsilon=+1$ and $\theta=2\pi$ for $\varepsilon=-1$. Both axes are arbitrary.</p>
+<p><strong>The scalar line.</strong> If $a=0$ then $\vec B=0$ and $\vec A=0$, so $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. Then $\theta_{\mathrm{rpd}}=0$, and the rotor is $\varepsilon e_t$, that is, $\theta_{\mathrm{axr}}=0$ for $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=2\pi$ for $\varepsilon=-1$. Both axes are arbitrary.</p>
 <p><strong>Check.</strong> For</p>
 <p>$$
 \tilde Q=e_t+\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z,
@@ -209,7 +209,7 @@ $$</p>
 <p>one has $\vec A=\vec e_y$, $\vec B=(\vec e_x+\vec e_z)/\sqrt2$, $a=1$, $Q_t=1$, $\varepsilon=1$. The boxes give</p>
 <p>$$
 \theta_{\mathrm{rpd}}=1.762747174,\qquad
-\theta=\frac{\pi}{2},\qquad
+\theta_{\mathrm{axr}}=\frac{\pi}{2},\qquad
 \vec u_{\mathrm b}=\vec e_x,\qquad
 \vec u_{\mathrm r}=\vec e_y,\qquad
 \tilde u_{\mathrm r}=\frac{e_t+\vec e_y}{\sqrt2},\qquad
@@ -296,10 +296,10 @@ $$</p>
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 =r\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
-\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 \qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\quad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
 \;}
 $$</p>
 <p>with</p>
@@ -307,7 +307,7 @@ $$</p>
 r>0,\qquad
 \theta_{\mathrm{pha}}\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\qquad
 \theta_{\mathrm{rpd}}\ge0,\qquad
-\theta\in[0,2\pi],
+\theta_{\mathrm{axr}}\in[0,2\pi],
 $$</p>
 <p>and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors, called the <strong>boost axis</strong> and the <strong>rotor axis</strong>. The four factors are the <strong>scale</strong> $r$, the <strong>phase</strong> $e^{i\theta_{\mathrm{pha}}}$, the <strong>boost</strong> $\tilde U_{\mathrm b}$ and the <strong>rotor</strong> $\tilde u_{\mathrm r}$, both written in the box.</p>
 <p>The scalars are central; the two exponentials are not. The order of the factors is part of the definition: the boost stands to the left of the rotor.</p>
@@ -342,9 +342,9 @@ $$</p>
 </tr>
 <tr>
 <td>rotor</td>
-<td>$\frac{\theta}{2}\vec u_{\mathrm r}$</td>
-<td>$\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$</td>
-<td>$\theta\in[0,2\pi]$</td>
+<td>$\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
+<td>$\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi]$</td>
 </tr>
 </tbody>
 </table></div>
@@ -356,9 +356,9 @@ c_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2},
 \qquad
 s_{\mathrm b}=\sinh\frac{\theta_{\mathrm{rpd}}}{2},
 \qquad
-c_{\mathrm r}=\cos\frac{\theta}{2},
+c_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2},
 \qquad
-s_{\mathrm r}=\sin\frac{\theta}{2},
+s_{\mathrm r}=\sin\frac{\theta_{\mathrm{axr}}}{2},
 \qquad
 c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}.
 $$</p>
@@ -389,9 +389,9 @@ $$</p>
 $$</p>
 <p>and the parameters satisfy</p>
 <p>$$
-\boxed{\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon},
+\boxed{\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon},
 \qquad
-\boxed{\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0}.
+\boxed{\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0}.
 $$</p>
 <p><em>Proof.</em> By the normal form, $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. Its scalar part is $\varepsilon$, and</p>
 <p>$$
@@ -405,19 +405,19 @@ $$</p>
 <p>$$
 \theta_{\mathrm{rpd}}>0,
 \qquad
-\theta\notin\{0,\pi,2\pi\},
+\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\},
 \qquad
 \vec u_{\mathrm b}\perp\vec u_{\mathrm r},
 $$</p>
 <p>and the two angles are tied by</p>
 <p>$$
-\boxed{\Bigl\lvert\cos\frac{\theta}{2}\Bigr\rvert=\frac{1}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}},
+\boxed{\Bigl\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\Bigr\rvert=\frac{1}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}},
 \qquad
-\varepsilon=\operatorname{sgn}\cos\frac{\theta}{2}.
+\varepsilon=\operatorname{sgn}\cos\frac{\theta_{\mathrm{axr}}}{2}.
 $$</p>
-<p>Conversely, every choice of $\theta\in(0,\pi)\cup(\pi,2\pi)$, of $\vec u_{\mathrm b}\in S^2$ and of $\vec u_{\mathrm r}$ in the great circle orthogonal to $\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ defined by the displayed relation, gives a word of an element of the Jordan part.</p>
-<p><em>Proof.</em> On the Jordan part $\vec\Upsilon\neq0$, so $\tilde U\neq\varepsilon e_t$. If $\theta_{\mathrm{rpd}}=0$ then $c_{\mathrm b}=1$ and the first constraint gives $c_{\mathrm r}=\pm1$, so $\theta\in\{0,2\pi\}$ and the component form is $\tilde U=\pm e_t$, a contradiction. Hence $\theta_{\mathrm{rpd}}>0$ and $s_{\mathrm b}>0$. If $\theta=0$ or $2\pi$ then $s_{\mathrm r}=0$ and the component form is again scalar. If $\theta=\pi$ then $c_{\mathrm r}=0$, and the first constraint gives $0=\pm1$, impossible. Hence $\theta\notin\{0,\pi,2\pi\}$ and $s_{\mathrm r}>0$. The second constraint then forces $c=0$. The first gives $|c_{\mathrm b}c_{\mathrm r}|=1$, which is the displayed relation, and the sign of $c_{\mathrm r}$ is the sign of $\varepsilon$. The converse is a direct substitution: with orthogonal axes and the relation, the scalar part is $\varepsilon$ and the vector part is null, so the unit factor is unipotent and the element lies in the Jordan part.</p>
-<p>The frame is therefore orthogonal, and one of the two angles is a function of the other. The independent data of the unipotent factor are one angle and a frame: $\theta$ (one real number), $\vec u_{\mathrm b}$ (two), and $\vec u_{\mathrm r}$ in the orthogonal circle (one), which is four real dimensions, the dimension of the punctured nilpotent cone.</p>
+<p>Conversely, every choice of $\theta_{\mathrm{axr}}\in(0,\pi)\cup(\pi,2\pi)$, of $\vec u_{\mathrm b}\in S^2$ and of $\vec u_{\mathrm r}$ in the great circle orthogonal to $\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ defined by the displayed relation, gives a word of an element of the Jordan part.</p>
+<p><em>Proof.</em> On the Jordan part $\vec\Upsilon\neq0$, so $\tilde U\neq\varepsilon e_t$. If $\theta_{\mathrm{rpd}}=0$ then $c_{\mathrm b}=1$ and the first constraint gives $c_{\mathrm r}=\pm1$, so $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ and the component form is $\tilde U=\pm e_t$, a contradiction. Hence $\theta_{\mathrm{rpd}}>0$ and $s_{\mathrm b}>0$. If $\theta_{\mathrm{axr}}=0$ or $2\pi$ then $s_{\mathrm r}=0$ and the component form is again scalar. If $\theta_{\mathrm{axr}}=\pi$ then $c_{\mathrm r}=0$, and the first constraint gives $0=\pm1$, impossible. Hence $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$ and $s_{\mathrm r}>0$. The second constraint then forces $c=0$. The first gives $|c_{\mathrm b}c_{\mathrm r}|=1$, which is the displayed relation, and the sign of $c_{\mathrm r}$ is the sign of $\varepsilon$. The converse is a direct substitution: with orthogonal axes and the relation, the scalar part is $\varepsilon$ and the vector part is null, so the unit factor is unipotent and the element lies in the Jordan part.</p>
+<p>The frame is therefore orthogonal, and one of the two angles is a function of the other. The independent data of the unipotent factor are one angle and a frame: $\theta_{\mathrm{axr}}$ (one real number), $\vec u_{\mathrm b}$ (two), and $\vec u_{\mathrm r}$ in the orthogonal circle (one), which is four real dimensions, the dimension of the punctured nilpotent cone.</p>
 <h3 id="the-closed-form">The Closed Form</h3>
 <p>Substituting the constraints into the component form gives the shape of the whole sector.</p>
 <p><strong>Theorem (the closed form).</strong> Every $\tilde Q\in\Sigma_{10}$ is</p>
@@ -425,46 +425,46 @@ $$</p>
 \boxed{\;
 \tilde Q=Q_t\Bigl(e_t+
 i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
-+\tan\frac{\theta}{2}\,\vec u_{\mathrm r}
-+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}\Bigr)
++\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}
++i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}\Bigr)
 \;}
 $$</p>
-<p>with $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$; on the Jordan part the two axes are orthogonal. Equivalently,</p>
+<p>with $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$; on the Jordan part the two axes are orthogonal. Equivalently,</p>
 <p>$$
 \boxed{\;
 \tilde Q=Q_t\Bigl(e_t+\vec\Upsilon\Bigr),
 \qquad
 \vec\Upsilon=i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
-+\tan\frac{\theta}{2}\,\vec u_{\mathrm r}
-+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
++\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}
++i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
 \;}
 $$</p>
-<p><em>Proof.</em> The scalar part of the unit factor is $\varepsilon$, so $c_{\mathrm r}=\varepsilon/c_{\mathrm b}$. On the Jordan part $s_{\mathrm r}>0$, and $\tan\frac{\theta}{2}=s_{\mathrm r}/c_{\mathrm r}=\varepsilon c_{\mathrm b}s_{\mathrm r}$, hence $s_{\mathrm r}=\varepsilon\tan\frac{\theta}{2}/c_{\mathrm b}$. The component form then gives</p>
+<p><em>Proof.</em> The scalar part of the unit factor is $\varepsilon$, so $c_{\mathrm r}=\varepsilon/c_{\mathrm b}$. On the Jordan part $s_{\mathrm r}>0$, and $\tan\frac{\theta_{\mathrm{axr}}}{2}=s_{\mathrm r}/c_{\mathrm r}=\varepsilon c_{\mathrm b}s_{\mathrm r}$, hence $s_{\mathrm r}=\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}/c_{\mathrm b}$. The component form then gives</p>
 <p>$$
 i s_{\mathrm b}c_{\mathrm r}
 =i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2},
 \qquad
 c_{\mathrm b}s_{\mathrm r}
-=\varepsilon\tan\frac{\theta}{2},
+=\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2},
 \qquad
 i s_{\mathrm b}s_{\mathrm r}
-=i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}.
+=i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}.
 $$</p>
-<p>The vector part of the unit factor is $\varepsilon$ times the bracket, and $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, so the bracket is $\vec\Upsilon$; hence $\tilde Q=Q_t(e_t+\vec\Upsilon)$. On the scalar line $\tan\frac{\theta}{2}=\tanh\frac{\theta_{\mathrm{rpd}}}{2}=0$, and the same display reduces to $Q_te_t$.</p>
+<p>The vector part of the unit factor is $\varepsilon$ times the bracket, and $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, so the bracket is $\vec\Upsilon$; hence $\tilde Q=Q_t(e_t+\vec\Upsilon)$. On the scalar line $\tan\frac{\theta_{\mathrm{axr}}}{2}=\tanh\frac{\theta_{\mathrm{rpd}}}{2}=0$, and the same display reduces to $Q_te_t$.</p>
 <p>The formula is the exact shape of the sector. The complex number $Q_t$ carries the scale and the phase; the rest is a unipotent written in the frame. The vector part is automatically null: with the three orthogonal directions, its square is</p>
 <p>$$
-\vec\Upsilon^2=\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}-\tan^2\frac{\theta}{2}
-+\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}\tan^2\frac{\theta}{2},
+\vec\Upsilon^2=\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}-\tan^2\frac{\theta_{\mathrm{axr}}}{2}
++\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}\tan^2\frac{\theta_{\mathrm{axr}}}{2},
 $$</p>
-<p>which vanishes by $|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. The cross term carries the plus sign because its coefficient is imaginary.</p>
-<p><strong>Remark (the scalar factor).</strong> The unit factor depends only on $\theta$ and the frame, not on $Q_t$. Changing $Q_t$ by a nonzero complex number changes the scale and the phase, and possibly the sign $\varepsilon$, but leaves $\vec\Upsilon$ unchanged. The sector is the product of the scalar line $\mathbb{C}^{\times}$ with the punctured nilpotent cone; the frame and the two angles are functions of the second factor alone, and the sign is carried by the first.</p>
+<p>which vanishes by $|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. The cross term carries the plus sign because its coefficient is imaginary.</p>
+<p><strong>Remark (the scalar factor).</strong> The unit factor depends only on $\theta_{\mathrm{axr}}$ and the frame, not on $Q_t$. Changing $Q_t$ by a nonzero complex number changes the scale and the phase, and possibly the sign $\varepsilon$, but leaves $\vec\Upsilon$ unchanged. The sector is the product of the scalar line $\mathbb{C}^{\times}$ with the punctured nilpotent cone; the frame and the two angles are functions of the second factor alone, and the sign is carried by the first.</p>
 <h2 id="the-two-strata_1">The Two Strata</h2>
 <h3 id="the-scalar-line">The Scalar Line</h3>
 <p>On the scalar line $\vec\Upsilon=0$, the element is $Q_te_t$, the unit factor is $\varepsilon e_t$, and</p>
 <p>$$
 \theta_{\mathrm{rpd}}=0,
 \qquad
-\theta\in\{0,2\pi\},
+\theta_{\mathrm{axr}}\in\{0,2\pi\},
 \qquad
 \vec u_{\mathrm b},\vec u_{\mathrm r}\ \text{free}.
 $$</p>
@@ -473,36 +473,36 @@ $$</p>
 \tilde Q=r e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t
 =Q_te_t.
 $$</p>
-<p>The sign $\varepsilon$ is fixed by the branch: if $\Rho=Q_t$ then $\varepsilon=+1$ and $\theta=0$; if $\Rho=-Q_t$ then $\varepsilon=-1$ and $\theta=2\pi$. The axes are undefined, because the boost and the rotor are central. The scalar line is the normal locus of the sector: a normal element with a single eigenvalue is a scalar, and every scalar is normal.</p>
+<p>The sign $\varepsilon$ is fixed by the branch: if $\Rho=Q_t$ then $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=0$; if $\Rho=-Q_t$ then $\varepsilon=-1$ and $\theta_{\mathrm{axr}}=2\pi$. The axes are undefined, because the boost and the rotor are central. The scalar line is the normal locus of the sector: a normal element with a single eigenvalue is a scalar, and every scalar is normal.</p>
 <h3 id="the-jordan-part">The Jordan Part</h3>
 <p>On the Jordan part $\vec\Upsilon\neq0$, the element is defective: its minimal polynomial is $(X-Q_t)^2$, its geometric multiplicity is one, and it has no eigenbasis. The word has</p>
 <p>$$
 \theta_{\mathrm{rpd}}>0,
 \qquad
-\theta\in(0,\pi)\cup(\pi,2\pi),
+\theta_{\mathrm{axr}}\in(0,\pi)\cup(\pi,2\pi),
 \qquad
 \vec u_{\mathrm b}\perp\vec u_{\mathrm r},
 $$</p>
-<p>and the two possible signs of $\cos\frac{\theta}{2}$ are the two values of $\varepsilon$. The word is</p>
+<p>and the two possible signs of $\cos\frac{\theta_{\mathrm{axr}}}{2}$ are the two values of $\varepsilon$. The word is</p>
 <p>$$
-\tilde Q=Q_t\Bigl(e_t+\vec\Upsilon(\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
+\tilde Q=Q_t\Bigl(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
 $$</p>
-<p>with $\vec\Upsilon$ as in the closed form and $\theta_{\mathrm{rpd}}$ determined by $\theta$. The data are</p>
+<p>with $\vec\Upsilon$ as in the closed form and $\theta_{\mathrm{rpd}}$ determined by $\theta_{\mathrm{axr}}$. The data are</p>
 <p>$$
 \underbrace{2}_{Q_t}
-+\underbrace{1}_{\theta}
++\underbrace{1}_{\theta_{\mathrm{axr}}}
 +\underbrace{2}_{\vec u_{\mathrm b}}
 +\underbrace{1}_{\vec u_{\mathrm r}\perp\vec u_{\mathrm b}}
 =6,
 $$</p>
 <p>the real dimension of the sector. The rapidity and the sign are functions of the angle.</p>
-<p>The Jordan part is unbounded: as $\theta\to\pi$, $\theta_{\mathrm{rpd}}\to\infty$ and $|\vec\Upsilon|\to\infty$. The value $\theta=\pi$ is not attained, because it would force $c_{\mathrm r}=0$ and violate the scalar constraint.</p>
+<p>The Jordan part is unbounded: as $\theta_{\mathrm{axr}}\to\pi$, $\theta_{\mathrm{rpd}}\to\infty$ and $|\vec\Upsilon|\to\infty$. The value $\theta_{\mathrm{axr}}=\pi$ is not attained, because it would force $c_{\mathrm r}=0$ and violate the scalar constraint.</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
 <p><strong>Theorem (the exponential polar decomposition).</strong> Every $\tilde Q\in\Sigma_{10}$ has a unique writing</p>
 <p>$$
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$</p>
-<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta_{\mathrm{rpd}}>0$ and $\theta\notin\{0,2\pi\}$.</p>
+<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta_{\mathrm{rpd}}>0$ and $\theta_{\mathrm{axr}}\notin\{0,2\pi\}$.</p>
 <p><em>Proof.</em> The modulus $\Rho$ is the principal square root of $N$, and $\tilde U=\tilde Q/\Rho$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$. The global Cartan decomposition</p>
 <p>$$
 SL(2,\mathbb{C})=P\cdot K,
@@ -511,9 +511,9 @@ P=\{\text{positive Hermitian of determinant }1\},
 \qquad
 K=SU(2),
 $$</p>
-<p>gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ with $\theta_{\mathrm{rpd}}\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.</p>
+<p>gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ with $\theta_{\mathrm{rpd}}\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\theta_{\mathrm{axr}}\in[0,2\pi]$. The endpoint $\theta_{\mathrm{axr}}=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.</p>
 <p>The proof uses only the invertibility of $\tilde Q$; the degeneracy $B^2=0$ enters only through the domain. This is why the companion article can repeat the same theorem verbatim.</p>
-<p><strong>The degeneracies.</strong> The boost axis is undefined at $\theta_{\mathrm{rpd}}=0$; the rotor axis is undefined at $\theta=0$ and $\theta=2\pi$. In this sector the first case is the scalar line and the second contains it; on the Jordan part both angles are nonzero and both axes are defined and orthogonal.</p>
+<p><strong>The degeneracies.</strong> The boost axis is undefined at $\theta_{\mathrm{rpd}}=0$; the rotor axis is undefined at $\theta_{\mathrm{axr}}=0$ and $\theta_{\mathrm{axr}}=2\pi$. In this sector the first case is the scalar line and the second contains it; on the Jordan part both angles are nonzero and both axes are defined and orthogonal.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -544,14 +544,14 @@ $$</p>
 <td>no: undefined at $\theta_{\mathrm{rpd}}=0$</td>
 </tr>
 <tr>
-<td>$\theta$</td>
+<td>$\theta_{\mathrm{axr}}$</td>
 <td>$[0,2\pi]$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td>$\vec u_{\mathrm r}$</td>
 <td>$S^2$</td>
-<td>no: undefined at $\theta\in\{0,2\pi\}$</td>
+<td>no: undefined at $\theta_{\mathrm{axr}}\in\{0,2\pi\}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -561,7 +561,7 @@ $$</p>
 <p>$$
 \tilde H=\operatorname{Log}\tilde U_{\mathrm b}=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
 \qquad
-\tilde K=\operatorname{Log}\tilde u_{\mathrm r}=\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde K=\operatorname{Log}\tilde u_{\mathrm r}=\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
 $$</p>
 <p>The pair $(\tilde H,\tilde K)$ is the <strong>Cartan logarithm</strong> of $\tilde U$. It is unique with the ranges of the theorem, except at the central rotor, and it satisfies</p>
 <p>$$
@@ -596,7 +596,7 @@ $$</p>
 <h3 id="the-formal-exponent-and-the-defect">The Formal Exponent and the Defect</h3>
 <p>The <strong>formal exponent</strong> is the sum of the four exponents,</p>
 <p>$$
-\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
 $$</p>
 <p>It is not the logarithm. The true logarithm is</p>
 <p>$$
@@ -608,26 +608,26 @@ $$</p>
 \operatorname{Log}\tilde Q-\tilde Q_{\log}
 =i\pi\frac{1-\varepsilon}{2}
 +i\Bigl(\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}\Bigr)\vec u_{\mathrm b}
-+\Bigl(\varepsilon\tan\frac{\theta}{2}-\frac{\theta}{2}\Bigr)\vec u_{\mathrm r}
-+i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
++\Bigl(\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}\Bigr)\vec u_{\mathrm r}
++i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
 \;}
 $$</p>
-<p>The <strong>defect</strong> is the norm of $\exp(\tilde Q_{\log})-\tilde Q$, not the norm of the log defect, because the exponential is not linear. The log defect shows the three corrections: the scalar period, the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta}{2}-\frac{\theta}{2}$, and the cross term. The numerical defect is computed in the worked examples.</p>
-<p>On the Jordan part the cross term is nonzero, because $\theta_{\mathrm{rpd}}>0$, $\theta\notin\{0,\pi,2\pi\}$ and the axes are orthogonal. The formal exponent is therefore not the logarithm. The cross term has the shape of the first correction of the Baker–Campbell–Hausdorff series,</p>
+<p>The <strong>defect</strong> is the norm of $\exp(\tilde Q_{\log})-\tilde Q$, not the norm of the log defect, because the exponential is not linear. The log defect shows the three corrections: the scalar period, the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}$, and the cross term. The numerical defect is computed in the worked examples.</p>
+<p>On the Jordan part the cross term is nonzero, because $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$ and the axes are orthogonal. The formal exponent is therefore not the logarithm. The cross term has the shape of the first correction of the Baker–Campbell–Hausdorff series,</p>
 <p>$$
 \frac12[\tilde H,\tilde K]
-=\frac{i\theta_{\mathrm{rpd}}\theta}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
+=\frac{i\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
 $$</p>
-<p>with the sign of $\varepsilon$; the exact log defect also contains the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta}{2}-\frac{\theta}{2}$.</p>
+<p>with the sign of $\varepsilon$; the exact log defect also contains the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}$.</p>
 <p>On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln r+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every unit $\vec u_{\mathrm r}$.</p>
 <h3 id="the-fibre">The Fibre</h3>
 <p>The exponential is not injective. Its kernel contains the central periods $2\pi ik\,e_t$, the pure periods $2\pi\vec U$ for real unit vectors, and the mixed elements $\pi i\,e_t+\pi\vec U$. The fibre over an element is not a coset of the kernel, because the exponential is not a homomorphism.</p>
 <p>On the Jordan part the fibre is cut to one point, up to the axis degeneracies, by the word map</p>
 <p>$$
-(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})
+(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})
 \longmapsto
 r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
-\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
 $$</p>
 <p>The word is a section of that map, not of the exponential. The exact logarithm $\log Q_t+\vec\Upsilon$ is a section of the exponential modulo the central periods; it is not the formal exponent.</p>
 <h2 id="the-group-law">The Group Law</h2>
@@ -714,28 +714,28 @@ $$</p>
 <p>The data of the sector are</p>
 <p>$$
 \underbrace{2}_{Q_t}
-+\underbrace{1}_{\theta}
++\underbrace{1}_{\theta_{\mathrm{axr}}}
 +\underbrace{2}_{\vec u_{\mathrm b}}
 +\underbrace{1}_{\vec u_{\mathrm r}\perp\vec u_{\mathrm b}}
 =6,
 $$</p>
 <p>the real dimension of $\Sigma_{10}$. The rapidity and the sign are determined by</p>
 <p>$$
-\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{1}{\lvert\cos\frac{\theta}{2}\rvert},
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{1}{\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\rvert},
 \qquad
-\varepsilon=\operatorname{sgn}\cos\frac{\theta}{2}.
+\varepsilon=\operatorname{sgn}\cos\frac{\theta_{\mathrm{axr}}}{2}.
 $$</p>
 <p>The coordinate map is</p>
 <p>$$
-(Q_t,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})
+(Q_t,\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})
 \longmapsto
-Q_t\Bigl(e_t+\vec\Upsilon(\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
+Q_t\Bigl(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
 $$</p>
-<p>from $\mathbb{C}^{\times}\times\bigl((0,\pi)\cup(\pi,2\pi)\bigr)\times US^2$ to the Jordan part, where $US^2=\{(\vec u_{\mathrm b},\vec u_{\mathrm r}):\lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1,\ \vec u_{\mathrm b}\perp\vec u_{\mathrm r}\}$ is the unit tangent bundle of the sphere. It is a bijection onto the Jordan part; the scalar line is the common limit $\theta\to0$ and $\theta\to2\pi$, where the frame is free.</p>
+<p>from $\mathbb{C}^{\times}\times\bigl((0,\pi)\cup(\pi,2\pi)\bigr)\times US^2$ to the Jordan part, where $US^2=\{(\vec u_{\mathrm b},\vec u_{\mathrm r}):\lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1,\ \vec u_{\mathrm b}\perp\vec u_{\mathrm r}\}$ is the unit tangent bundle of the sphere. It is a bijection onto the Jordan part; the scalar line is the common limit $\theta_{\mathrm{axr}}\to0$ and $\theta_{\mathrm{axr}}\to2\pi$, where the frame is free.</p>
 <p>The coordinate lines are three families:</p>
 <ul>
 <li>the <strong>scalar line</strong> $Q_t\mapsto Q_t(e_t+\vec\Upsilon)$, a complex plane with the origin removed;</li>
-<li>the <strong>angle line</strong> $\theta\mapsto Q_t(e_t+\vec\Upsilon(\theta,\ldots))$, a non-compact curve from the scalar line to infinity, with $\theta_{\mathrm{rpd}}$ growing as $\theta\to\pi$;</li>
+<li>the <strong>angle line</strong> $\theta_{\mathrm{axr}}\mapsto Q_t(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\ldots))$, a non-compact curve from the scalar line to infinity, with $\theta_{\mathrm{rpd}}$ growing as $\theta_{\mathrm{axr}}\to\pi$;</li>
 <li>the <strong>frame sphere</strong> $(\vec u_{\mathrm b},\vec u_{\mathrm r})\mapsto Q_t(e_t+\vec\Upsilon)$, a circle bundle over $S^2$.</li>
 </ul>
 <p>The sector retracts onto the scalar line, because the nilpotent part can be contracted to zero along $\vec\Upsilon\mapsto(1-t)\vec\Upsilon$, which stays null. Hence $\Sigma_{10}$ is connected and $\pi_1(\Sigma_{10})=\mathbb{Z}$, carried by the phase of $Q_t$.</p>
@@ -752,7 +752,7 @@ $$</p>
 \tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr)
 $$</p>
 <p>is independent of $Q_t$. The scale collapses, the phase follows the argument of $Q_t$, and the unipotent shape survives. This is the structural difference from the regular sector, where the rapidity diverges as the modulus vanishes. In $\Sigma_{10}$ the modulus is the scalar part, and the only thing that vanishes is the scalar.</p>
-<p>A nonzero nilpotent of $\Sigma_{00}$ is reached by letting $Q_t\to0$ and $\vec\Upsilon\to\infty$ at the rate $Q_t\vec\Upsilon\to\vec N$ with $\vec N^2=0$. The unit factor diverges, the word parameters leave every bounded set, and the limit is the nilpotent. The sector is not compact, and the angle $\theta\to\pi$ is the direction in which it is unbounded.</p>
+<p>A nonzero nilpotent of $\Sigma_{00}$ is reached by letting $Q_t\to0$ and $\vec\Upsilon\to\infty$ at the rate $Q_t\vec\Upsilon\to\vec N$ with $\vec N^2=0$. The unit factor diverges, the word parameters leave every bounded set, and the limit is the nilpotent. The sector is not compact, and the angle $\theta_{\mathrm{axr}}\to\pi$ is the direction in which it is unbounded.</p>
 <h3 id="the-spectral-wall">The Spectral Wall</h3>
 <p>Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the word of the limit, as the companion article proves, while the eigenbasis diverges and the spectral decomposition disappears. Seen from $\Sigma_{10}$, the same locus is the ambient space. The two descriptions are the two sides of one hypersurface: defective elements, no eigenbasis, and a polar word that is still defined.</p>
 <div class="table-scroll"><table>
@@ -796,7 +796,7 @@ $$</p>
 </tr>
 <tr>
 <td>word</td>
-<td>$\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$</td>
+<td>$\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$</td>
 </tr>
 <tr>
 <td>unit factor</td>
@@ -804,23 +804,23 @@ $$</p>
 </tr>
 <tr>
 <td>scalar constraint</td>
-<td>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$</td>
+<td>$\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$</td>
 </tr>
 <tr>
 <td>axis constraint</td>
-<td>$\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$</td>
+<td>$\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$</td>
 </tr>
 <tr>
 <td>Jordan part</td>
-<td>$\theta_{\mathrm{rpd}}>0$, $\theta\notin\{0,\pi,2\pi\}$, $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$, $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>angle relation</td>
-<td>$|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$</td>
+<td>$|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$</td>
 </tr>
 <tr>
 <td>closed form</td>
-<td>$\tilde Q=Q_t\bigl(e_t+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\tan\frac{\theta}{2}\vec u_{\mathrm r}+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr)$</td>
+<td>$\tilde Q=Q_t\bigl(e_t+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr)$</td>
 </tr>
 <tr>
 <td>exact logarithm</td>
@@ -828,7 +828,7 @@ $$</p>
 </tr>
 <tr>
 <td>formal exponent</td>
-<td>$\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>log defect</td>
@@ -840,7 +840,7 @@ $$</p>
 </tr>
 <tr>
 <td>explicit data</td>
-<td>§<em>The Result in Terms of the Coordinates</em>: boxes for $r,\Rho,\varepsilon,\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r},\tilde u_{\mathrm r},\tilde U_{\mathrm b}$</td>
+<td>§<em>The Result in Terms of the Coordinates</em>: boxes for $r,\Rho,\varepsilon,\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r},\tilde u_{\mathrm r},\tilde U_{\mathrm b}$</td>
 </tr>
 <tr>
 <td>product criterion</td>
@@ -856,7 +856,7 @@ $$</p>
 <ul>
 <li>The word exists for every element of the sector, and it is unique up to the axis degeneracies.</li>
 <li>The unit factor is $\pm$unipotent. Its two eigenvalues coincide, its minimal polynomial is a square, and it has no eigenbasis.</li>
-<li>The scalar part of the unit factor is $\pm1$. This is one complex equation, and it forces the two angles to satisfy $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\pm1$.</li>
+<li>The scalar part of the unit factor is $\pm1$. This is one complex equation, and it forces the two angles to satisfy $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\pm1$.</li>
 <li>On the Jordan part the two axes are orthogonal, and the rapidity is a function of the rotor angle. The word has four real data, not six.</li>
 <li>The true logarithm is exact and truncated, $\log Q_t+\vec\Upsilon$; the formal exponent is not a logarithm, and the log defect is the cross term plus the nonlinear terms.</li>
 <li>The sector is inverse-closed but not product-closed: the product of two elements stays in it exactly on $s(2-s)=0$.</li>
@@ -940,7 +940,7 @@ $$</p>
 <td>the rapidity</td>
 </tr>
 <tr>
-<td>$\theta$</td>
+<td>$\theta_{\mathrm{axr}}$</td>
 <td>the rotor angle</td>
 </tr>
 <tr>

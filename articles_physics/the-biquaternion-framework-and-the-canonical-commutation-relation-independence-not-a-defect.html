@@ -85,7 +85,7 @@ is the axiom that ties a quantum theory to a <strong>continuum of configurations
 <p>The canonical commutation relation is not a statement about quantumness. It is a statement about the <strong>shape of the configuration space</strong>, and it is the algebraic fingerprint of a continuum.</p>
 <p><strong>The relation.</strong> For self-adjoint $Q$ and $P$ on a Hilbert space $\mathcal{H}$, the relation and its bounded form are
 $$
-[Q,P]=i\,\hbar\,I,\qquad  \exp(i\alpha Q)\exp(i\beta P)=\exp(-i\,\hbar\,\alpha\,\beta)\exp(i\beta P)\exp(i\alpha Q).
+[Q,P]=i\,\hbar\,I,\qquad  \exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\,\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q).
 $$
 The second is the <strong>Weyl form</strong>, and it is not a rewriting of the first. The passage from one to the other is exponentiation, which for operators needs the Baker–Campbell–Hausdorff formula, and that formula needs bounded arguments. The relation forces unbounded ones, as shown below, so the exponentiated form is reached only under extra domain assumptions, and pairs exist that satisfy the first relation and not the second. The Stone–von Neumann theorem is therefore a theorem about the <strong>Weyl</strong> form: uniqueness is stated where the condition is well posed, and it is not a statement about the commutator form at all.</p>
 <p><strong>Why a continuum is required.</strong> The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x_2\rangle=\delta(x-x_2)$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.</p>
@@ -162,7 +162,7 @@ The commutator is an <strong>operator</strong>, not a scalar: this is the Weyl (
 $$
 X^jZ^k=\omega^{jk}Z^kX^j,\qquad \omega=\exp(2\pi i/N),
 $$
-which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi jk/N$ replaces the scalar phase $-\hbar\,\alpha\,\beta$ that the real parameters $\alpha$ and $\beta$ supply. The distinction is not pedantry, because the real Weyl form already differs from the commutator form, as the second section showed; the discrete form differs again. The discrete relation is not the real one sampled on a lattice: the parameter group is finite, the phase is a root of unity rather than a real number, and the resulting structure is the finite Heisenberg group, whose representation theory is a different subject from the Stone–von Neumann classification of the real case.</p>
+which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi jk/N$ replaces the scalar phase $-\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P}$ that the real parameters $\theta_{\mathrm{wyl},Q}$ and $\theta_{\mathrm{wyl},P}$ supply. The distinction is not pedantry, because the real Weyl form already differs from the commutator form, as the second section showed; the discrete form differs again. The discrete relation is not the real one sampled on a lattice: the parameter group is finite, the phase is a root of unity rather than a real number, and the resulting structure is the finite Heisenberg group, whose representation theory is a different subject from the Stone–von Neumann classification of the real case.</p>
 <p><strong>What it is not.</strong> The finite pair does not satisfy the canonical relation and does not approach it in norm: the spectrum of the clock lies on the unit circle and stays of modulus one for every $N$, so no strong limit to an unbounded position exists without a rescaling that the algebra does not supply. The passage from the pair to the relation is a deformation, not a limit in the topology of the algebra. The finite pair is therefore not evidence that the framework nearly satisfies the relation; it is a <strong>different relation</strong>, available on a finite carrier, with a phase in place of the scalar.</p>
 <p><strong>Why this matters for independence.</strong> The existence of the finite pair shows that a finite theory need not be silent about conjugation: it can carry the shadow of the relation without carrying the relation. What it does not do is make the framework dependent on the canonical relation, because the shadow is a distinct algebraic relation with a distinct right-hand side. The framework's contents are unchanged by it, exactly as they are unchanged by the relation itself.</p>
 <h2 id="no-theory-was-ever-rejected-by-the-relation">No Theory Was Ever Rejected by the Relation</h2>
@@ -358,7 +358,7 @@ which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi 
 <td>Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\,\hbar\,\alpha\,\beta)\exp(i\beta P)\exp(i\alpha Q)$</td>
+<td>$\exp(i\theta_{\mathrm{wyl},Q} Q)\exp(i\theta_{\mathrm{wyl},P} P)=\exp(-i\,\hbar\,\theta_{\mathrm{wyl},Q}\,\theta_{\mathrm{wyl},P})\exp(i\theta_{\mathrm{wyl},P} P)\exp(i\theta_{\mathrm{wyl},Q} Q)$</td>
 <td>Weyl form of the relation</td>
 </tr>
 <tr>

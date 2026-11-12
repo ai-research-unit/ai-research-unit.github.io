@@ -78,7 +78,7 @@
 \qquad
 \tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
 $$</p>
-<p>with $\tilde A_{\Phi}$ the potential biquaternion and $ϙ$ the charge. <em>The Polar Form of the Dirac Equation in Biquaternionic Form</em> substitutes the polar word into the uncoupled pair. This article substitutes the same word into the coupled one, and reads what the connection does to it.</p>
+<p>with $\tilde A_{\Phi}$ the potential biquaternion and $ϙ$ the charge. <em>The Dirac Equation in Biquaternionic Polar Variables</em> substitutes the polar word into the uncoupled pair. This article substitutes the same word into the coupled one, and reads what the connection does to it.</p>
 <p><strong>The claim, stated first.</strong> The covariant derivative enters the word at one place and at one place only: it is added to the phase gradient. The other seven parameters are untouched, by the coupling and by the gauge group alike. That is the whole of the article, and the rest is its warrant and its consequences.</p>
 <p>The word is the one the polar article uses, in the exponential form of <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>:</p>
 <p>$$
@@ -86,7 +86,7 @@ $$</p>
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
 <p>with $r>0$ a real scale, $\theta_{\mathrm{pha}}$ a central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The field is the element $\tilde\Xi$ of the minimal-coupling article; the present article writes $\tilde\Xi$ for it, as the polar article does, because the subscript would carry no information here. The label $\mathrm{sp}$ is the corpus's Dirac-field label, fixed in <em>Algebra and Element Conventions</em>, and it survives below in $\tilde S_{\Psi,\mathrm{sp}}$, which names the spin element of that field.</p>
 <p><strong>The domain has two halves, and both are stated at the outset.</strong> The first is the polar article's: the word is a parametrisation of the group of units, so it exists exactly where $N(\tilde\Xi)\neq0$, and it fails on every $N$-degenerate field. The second is new here: the connection must have <strong>central</strong> component coefficients. Central components are the abelian case, and the abelian case is electromagnetism; a $\mathbb{B}$-valued connection is the non-abelian extension, and it lies outside this article. The corpus states the restriction in <em>Operator and Calculus Conventions</em>, where $\tilde\nabla_{\mathrm{gco},\mu}$ is called a central scalar that commutes with every element, and the minimal-coupling article works in the same abelian case. Every theorem below is conditional on both halves. §<em>The Connection Is Central</em> says what the second costs, and Open Question 4 says what happens without it.</p>
@@ -138,8 +138,8 @@ $$</p>
 </tr>
 <tr>
 <td>4</td>
-<td>$\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
-<td>$\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a real unit vector</td>
+<td>$\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ a real unit vector</td>
 <td>real unit quaternion, $N=1$</td>
 </tr>
 </tbody>
@@ -294,13 +294,13 @@ $$</p>
 <td>the gauge parameter's seat</td>
 </tr>
 <tr>
-<td>$r$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta$, $\vec u_{\mathrm r}$</td>
+<td>$r$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$</td>
 <td>unchanged</td>
 <td>invariant, seven in number</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The half-turn, and the rotor's sign.</strong> The angle's declared range is half a turn, so a shift of the angle is a shift modulo $\pi$. Take a representative with $\theta_{\mathrm{pha}}$ shifted by an odd multiple of $\pi$. The factor $e^{i\theta_{\mathrm{pha}}}$ changes sign, so the element is recovered only if another factor changes sign with it, and the only candidate is the rotor: $\tilde u_{\mathrm r}\mapsto-\tilde u_{\mathrm r}$, that is, $\theta\mapsto\theta+2\pi$ on the same axis. That is the double cover and nothing else, and it is invisible to the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, because the sign cancels between the rotor and its conjugate. No observable of this article feels the reduction.</p>
+<p><strong>The half-turn, and the rotor's sign.</strong> The angle's declared range is half a turn, so a shift of the angle is a shift modulo $\pi$. Take a representative with $\theta_{\mathrm{pha}}$ shifted by an odd multiple of $\pi$. The factor $e^{i\theta_{\mathrm{pha}}}$ changes sign, so the element is recovered only if another factor changes sign with it, and the only candidate is the rotor: $\tilde u_{\mathrm r}\mapsto-\tilde u_{\mathrm r}$, that is, $\theta_{\mathrm{axr}}\mapsto\theta_{\mathrm{axr}}+2\pi$ on the same axis. That is the double cover and nothing else, and it is invisible to the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, because the sign cancels between the rotor and its conjugate. No observable of this article feels the reduction.</p>
 <h3 id="the-density-is-the-gauge-invariant-part-of-the-norm">The Density Is the Gauge-Invariant Part of the Norm</h3>
 <p>The two norms of the polar article separate further under the gauge group.</p>
 <p>$$
@@ -332,7 +332,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$</td>
-<td>$r$, $\theta$, $\vec u_{\mathrm r}$</td>
+<td>$r$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$</td>
 <td>invariant</td>
 </tr>
 <tr>
@@ -679,7 +679,7 @@ $$</p>
 <li>Hermann Weyl, "Elektron und Gravitation," <em>Zeitschrift für Physik</em> <strong>56</strong> (1929) 330–352, for the origin of the local phase that the coupling localizes.</li>
 <li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Mechanics</em> (McGraw-Hill, 1964), for minimal coupling, gauge invariance and the non-relativistic limit.</li>
 <li>Claude Itzykson and Jean-Bernard Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), for the fermion-number symmetry and the relative phase of the two chiral parts.</li>
-<li>Companion articles: <a href="the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a>; <a href="the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a>; <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>; <a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>; <a href="relativistic-mechanics-from-the-dirac-wave.html">Relativistic Mechanics from the Dirac Wave</a>; <a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>; <a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>; <a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>; <a href="../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</a>; <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a>.</li>
+<li>Companion articles: <a href="the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a>; <a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>; <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>; <a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>; <a href="relativistic-mechanics-from-the-dirac-wave.html">Relativistic Mechanics from the Dirac Wave</a>; <a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>; <a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>; <a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>; <a href="../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</a>; <a href="the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a>.</li>
 </ul>
       </div>
     </main>

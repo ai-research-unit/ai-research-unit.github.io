@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Coulomb scattering is the non-relativistic scattering of a charged particle by a fixed Coulomb potential, $V(r)=Z_1Z_2e^2/r$, and its answer is Rutherford's formula,</p>
 <p>$$
-\frac{d\sigma}{d\Omega}=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)},
+\frac{d\sigma}{d\Omega}=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)},
 $$</p>
 <p>the differential cross section that Rutherford obtained from classical mechanics and that non-relativistic quantum physics reproduces exactly. It is the one scattering problem of the subcategory with a long-range potential, and it is the problem in which the partial-wave expansion and the Born approximation can be compared on a case in which both are available: the first Born amplitude already has the modulus that Rutherford's formula requires, and the exact amplitude differs from it only by a phase — the Coulomb phase.</p>
 <p>This article treats the continuum of the same central potential whose bound states the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em> solves. It does not repeat the bound-state derivation. The biquaternion content is the by-now-familiar consequence of centrality: the potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, the scattering amplitude is a scalar function of the angle and the energy, and the phase shifts are central. The radial problem is the same scalar radial problem as in the bound case, continued to positive energy. The framework's contribution is the algebraic location of the amplitude and the phases, and the sector interpretation of the flux; it is not a new solution of the Coulomb equation.</p>
@@ -153,25 +153,25 @@ $$</p>
 <p>with $\gamma_E$ the Euler–Mascheroni constant and $\zeta$ the Riemann zeta function: at $\eta=0.2$ the numerical $\sigma_0$ was $-0.11230222$ against the series value $-0.11230223$, and at $\eta=0.4$, $-0.20715583$ against $-0.20715583$, the agreement limited only by the truncation of the zeta series. The Coulomb phase is a central real scalar; both checks are checks of a scalar function.</p>
 <h2 id="the-scattering-amplitude">The Scattering Amplitude</h2>
 <h3 id="the-amplitude-and-the-cross-section">The amplitude and the cross section</h3>
-<p>For a central potential with phase shifts $\delta_l$ the scattering amplitude is</p>
+<p>For a central potential with phase shifts $\theta_{\mathrm{sct},l}$ the scattering amplitude is</p>
 <p>$$
-f(\theta)=-\frac{1}{2ik}\sum_{l=0}^{\infty}(2l+1)\left(\exp(2i\delta_l)-1\right)P_l(\cos\theta),
+f(\theta_{\mathrm{sct}})=-\frac{1}{2ik}\sum_{l=0}^{\infty}(2l+1)\left(\exp(2i\theta_{\mathrm{sct},l})-1\right)P_l(\cos\theta_{\mathrm{sct}}),
 $$</p>
-<p>where $P_l$ are the Legendre polynomials and $\theta$ the scattering angle. For the Coulomb problem the phase shifts are the Coulomb phases, $\delta_l=\sigma_l$, and the amplitude is</p>
+<p>where $P_l$ are the Legendre polynomials and $\theta_{\mathrm{sct}}$ the scattering angle. For the Coulomb problem the phase shifts are the Coulomb phases, $\theta_{\mathrm{sct},l}=\sigma_l$, and the amplitude is</p>
 <p>$$
-f_C(\theta)=-\frac{1}{2ik}\sum_{l=0}^{\infty}(2l+1)\left(\exp(2i\sigma_l)-1\right)P_l(\cos\theta).
+f_C(\theta_{\mathrm{sct}})=-\frac{1}{2ik}\sum_{l=0}^{\infty}(2l+1)\left(\exp(2i\theta_{\mathrm{sct},l})-1\right)P_l(\cos\theta_{\mathrm{sct}}).
 $$</p>
 <p>This series can be summed in closed form. The standard result, obtained from the generating function of the Coulomb phases and the Legendre expansion, is</p>
 <p>$$
-\boxed{\;f_C(\theta)=-\frac{\eta}{2k_\Phi\,\sin^2(\theta/2)}
-\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right]\;},
+\boxed{\;f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{2k_\Phi\,\sin^2(\theta_{\mathrm{sct}}/2)}
+\,\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right]\;},
 $$</p>
 <p>whose squared modulus is</p>
 <p>$$
-\left|f_C(\theta)\right|^2=\frac{\eta^2}{4k_\Phi^2\sin^4(\theta/2)},
+\left|f_C(\theta_{\mathrm{sct}})\right|^2=\frac{\eta^2}{4k_\Phi^2\sin^4(\theta_{\mathrm{sct}}/2)},
 $$</p>
 <p>independent of the phases. The differential cross section is $d\sigma/d\Omega=|f|^2$, and the flux factors are the standard ones for a central potential.</p>
-<p>In the biquaternion interpretation, the amplitude $f(\theta)$ is a complex scalar, hence a central element; the partial-wave decomposition is a decomposition of the scalar envelope's asymptotics; and no module index appears in the sum. The Legendre polynomials are scalar functions of the angle, and the phase shifts are central scalars. The scattering of a spin-0 particle by a central potential is thus a scalar problem, and the framework's statement of that fact is that the amplitude and all the phases lie in $\mathbb{B}_{C}$.</p>
+<p>In the biquaternion interpretation, the amplitude $f(\theta_{\mathrm{sct}})$ is a complex scalar, hence a central element; the partial-wave decomposition is a decomposition of the scalar envelope's asymptotics; and no module index appears in the sum. The Legendre polynomials are scalar functions of the angle, and the phase shifts are central scalars. The scattering of a spin-0 particle by a central potential is thus a scalar problem, and the framework's statement of that fact is that the amplitude and all the phases lie in $\mathbb{B}_{C}$.</p>
 <h3 id="rutherfords-formula">Rutherford's formula</h3>
 <p>The Coulomb parameter and the wave vector combine as</p>
 <p>$$
@@ -179,40 +179,40 @@ $$</p>
 $$</p>
 <p>and therefore</p>
 <p>$$
-\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k_\Phi^2\sin^4(\theta/2)}
-=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)}\;},
+\boxed{\;\frac{d\sigma}{d\Omega}=\frac{\eta^2}{4k_\Phi^2\sin^4(\theta_{\mathrm{sct}}/2)}
+=\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)}\;},
 $$</p>
 <p>which is <strong>Rutherford's formula</strong>. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of classical Rutherford scattering, and the quantum cross section coincides with it for the Coulomb potential.</p>
 <p>The classical route to the same formula is worth recording because it is available here in the elementary form. For a Coulomb potential the orbit is a Kepler hyperbola, and the impact parameter is related to the scattering angle by</p>
 <p>$$
-b=\frac{\alpha}{2E}\cot\!\left(\frac{\theta}{2}\right),
+b=\frac{\alpha}{2E}\cot\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right),
 \qquad
 \frac{d\sigma}{d\Omega}
-=\frac{b}{\sin\theta}\left|\frac{db}{d\theta}\right|
-=\frac{\alpha^2}{16E^2\sin^4(\theta/2)} .
+=\frac{b}{\sin\theta_{\mathrm{sct}}}\left|\frac{db}{d\theta_{\mathrm{sct}}}\right|
+=\frac{\alpha^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)} .
 $$</p>
-<p>The classical and quantum expressions were compared numerically at $E=1,2,5$ and $\theta=30^\circ,60^\circ,90^\circ$ and agreed to relative error below $2\times10^{-16}$. The equality of the classical and quantum results is a special feature of the $1/r$ potential; for any potential with a length scale the two differ by quantum corrections.</p>
+<p>The classical and quantum expressions were compared numerically at $E=1,2,5$ and $\theta_{\mathrm{sct}}=30^\circ,60^\circ,90^\circ$ and agreed to relative error below $2\times10^{-16}$. The equality of the classical and quantum results is a special feature of the $1/r$ potential; for any potential with a length scale the two differ by quantum corrections.</p>
 <h3 id="the-phase-only-difference-from-the-born-amplitude">The phase-only difference from the Born amplitude</h3>
 <p>The first Born amplitude for the same potential is (next section)</p>
 <p>$$
-f_B(\theta)=-\frac{2\alpha\,k_m}{\hbar\,c\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}
-=-\frac{m\,\alpha}{2\,\hbar^{2}\,k_\Phi^{2}\sin^2(\theta/2)}
-=-\frac{\eta}{2k_\Phi\sin^2(\theta/2)},
+f_B(\theta_{\mathrm{sct}})=-\frac{2\alpha\,k_m}{\hbar\,c\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}
+=-\frac{m\,\alpha}{2\,\hbar^{2}\,k_\Phi^{2}\sin^2(\theta_{\mathrm{sct}}/2)}
+=-\frac{\eta}{2k_\Phi\sin^2(\theta_{\mathrm{sct}}/2)},
 \qquad
-\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta/2),
+\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2),
 $$</p>
 <p>whose modulus is exactly the modulus of $f_C$. The two amplitudes therefore differ by a <strong>pure phase</strong>:</p>
 <p>$$
-f_C(\theta)=f_B(\theta)\;\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right].
+f_C(\theta_{\mathrm{sct}})=f_B(\theta_{\mathrm{sct}})\;\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right].
 $$</p>
 <p>This is the sharpest statement of the Coulomb problem's special character: the Born approximation is wrong about the phase and right about the magnitude, and the discrepancy is confined to the Coulomb phase and the logarithmic phase. The equality of the moduli was verified numerically at several angles and energies, and the phase factor was evaluated from the $\Gamma$-function $\sigma_0$ and the logarithm.</p>
 <h2 id="the-born-approximation-and-the-momentum-space-route">The Born Approximation and the Momentum-Space Route</h2>
 <h3 id="the-first-born-amplitude">The first Born amplitude</h3>
 <p>The first Born amplitude is the Fourier transform of the potential at the momentum transfer,</p>
 <p>$$
-f_B(\theta)=-\frac{2\,m}{\hbar^{2}}\frac{1}{4\pi}\int  d^3r\;\exp(-i(\vec k_{\Phi,2}-\vec k_\Phi)\cdot\vec r)\,V(r),
+f_B(\theta_{\mathrm{sct}})=-\frac{2\,m}{\hbar^{2}}\frac{1}{4\pi}\int  d^3r\;\exp(-i(\vec k_{\Phi,2}-\vec k_\Phi)\cdot\vec r)\,V(r),
 \qquad
-\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta/2),
+\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2),
 $$</p>
 <p>where $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,</p>
 <p>$$
@@ -220,17 +220,17 @@ $$</p>
 $$</p>
 <p>so</p>
 <p>$$
-f_B(\theta)=-\frac{2\,m}{\hbar^{2}}\,\frac{\alpha}{\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}
+f_B(\theta_{\mathrm{sct}})=-\frac{2\,m}{\hbar^{2}}\,\frac{\alpha}{\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2}
 =-\frac{2\alpha\,k_m}{\hbar\,c\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2},
 $$</p>
-<p>and squaring with $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2=4k_\Phi^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.</p>
+<p>and squaring with $\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2=4k_\Phi^2\sin^2(\theta_{\mathrm{sct}}/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.</p>
 <h3 id="why-the-first-born-amplitude-is-already-exact-in-modulus">Why the first Born amplitude is already exact in modulus</h3>
 <p>The first Born amplitude is the leading term of the Born series in powers of the potential. That its modulus is already exact for the Coulomb potential is a consequence of the structure of the Coulomb problem: the exact amplitude's only deviation from the Born amplitude is a phase, and a phase does not change the cross section. The reason is that the Coulomb potential is scale-free — it has no length parameter, only the coupling — so the ratio of the exact amplitude to the Born amplitude must be a function of the dimensionless combination $\eta$ and the angle alone, and the partial-wave sum shows that function to be the pure phase above. For any potential with a length scale, such as a screened Coulomb potential, the first Born amplitude is only approximate, and the cross section is corrected by terms in the Born series.</p>
 <p>The biquaternion framework has nothing to add to this argument except the observation that it is an argument about scalars: the amplitude is central, the phase is central, and the scale-free property of the $1/r$ potential is a property of the central potential, not of the module. The spin-0 state module plays no role.</p>
 <h2 id="the-long-range-tail-and-the-coulomb-phase">The Long-Range Tail and the Coulomb Phase</h2>
 <h3 id="the-logarithm-and-the-energy-dependence">The logarithm and the energy dependence</h3>
-<p>The phase $\exp(-i\eta\ln\sin^2(\theta/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\frac{\alpha}{\hbar\,v}$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.</p>
-<p>In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.</p>
+<p>The phase $\exp(-i\eta\ln\sin^2(\theta_{\mathrm{sct}}/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\frac{\alpha}{\hbar\,v}$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.</p>
+<p>In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta_{\mathrm{sct}}/2))$ and $\exp(2i\theta_{\mathrm{sct},0})$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{B}_{C}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.</p>
 <h3 id="the-scattering-length-and-the-infrared-analogy">The scattering length and the infrared analogy</h3>
 <p>The logarithmic phase is the non-relativistic analogue of an infrared divergence: the long-range tail produces a phase that grows without bound with the distance, so the asymptotic form of the wave function never becomes a pure plane wave plus a scattered wave with a constant phase. The cure in practice is to define the cross section from the flux, which is insensitive to the divergent phase, and to use the Coulomb-modified asymptotic form consistently in any interference problem. The algebra records the same fact as the centrality of a phase that cannot be removed by a module transformation.</p>
 <h2 id="what-the-biquaternion-form-adds">What the Biquaternion Form Adds</h2>
@@ -238,7 +238,7 @@ $$</p>
 <p><strong>What the biquaternion notation provides.</strong></p>
 <ul>
 <li><strong>Centrality of the whole problem.</strong> The potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, and the amplitude and every phase are elements of $\mathbb{B}_{C}$. No module index appears anywhere, which is the precise statement that the problem is spin-0.</li>
-<li><strong>The phases as central $*$-unitary elements.</strong> The Coulomb phase $\sigma_l$, the logarithmic phase $-i\eta\ln\sin^2(\theta/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's $*$-unitary-versus-rotor distinction applies unchanged.</li>
+<li><strong>The phases as central $*$-unitary elements.</strong> The Coulomb phase $\sigma_l$, the logarithmic phase $-i\eta\ln\sin^2(\theta_{\mathrm{sct}}/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's $*$-unitary-versus-rotor distinction applies unchanged.</li>
 <li><strong>The momentum transfer as a real quaternion.</strong> The Born amplitude is the Fourier transform of a central scalar at a momentum transfer that is a real quaternion, the difference of two real wave vectors; the Fourier integral produces a central scalar.</li>
 <li><strong>Continuity with the bound problem.</strong> The radial equation is the same central scalar equation as in the hydrogen article, at positive energy. The framework exhibits the bound and continuum problems as one central problem.</li>
 </ul>
@@ -262,9 +262,9 @@ $$</p>
 <p>whose regular solution is $F_l=C_l\rho^{l+1}\exp(-i\rho)M(l+1-i\eta,2l+2,2i\rho)$, verified to solve the equation to $10^{-8}$ and to have the normalisation $C_l=2^l\exp(-\pi\eta/2)|\Gamma(l+1+i\eta)|/\Gamma(2l+2)$. The asymptotic form is the Coulomb-modified sine $\sin(\rho-\eta\ln2\rho-l\pi/2+\sigma_l)$ with the Coulomb phase $\sigma_l=\arg\Gamma(l+1+i\eta)$, verified by the recurrence $\sigma_{l+1}-\sigma_l=\arctan(\eta/(l+1))$ to machine precision and by the Weierstrass series for $\sigma_0$ to $10^{-8}$.</p>
 <p>The partial-wave sum gives the closed-form amplitude</p>
 <p>$$
-f_C(\theta)=-\frac{\eta}{2k_\Phi\sin^2(\theta/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
+f_C(\theta_{\mathrm{sct}})=-\frac{\eta}{2k_\Phi\sin^2(\theta_{\mathrm{sct}}/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta_{\mathrm{sct}}}{2}\right)+2i\theta_{\mathrm{sct},0}\right],
 $$</p>
-<p>whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^{2}\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.</p>
+<p>whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta_{\mathrm{sct}}/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^{2}\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.</p>
 <p>The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central $*$-unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -336,15 +336,15 @@ $$</p>
 <td>Coulomb phase</td>
 </tr>
 <tr>
-<td>$f(\theta)=-\frac{1}{2ik}\sum_l(2l+1)(\exp(2i\delta_l)-1)P_l$</td>
+<td>$f(\theta_{\mathrm{sct}})=-\frac{1}{2ik}\sum_l(2l+1)(\exp(2i\theta_{\mathrm{sct},l})-1)P_l$</td>
 <td>Partial-wave amplitude</td>
 </tr>
 <tr>
-<td>$f_C(\theta)$</td>
+<td>$f_C(\theta_{\mathrm{sct}})$</td>
 <td>Closed-form Coulomb amplitude</td>
 </tr>
 <tr>
-<td>$\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta/2)$</td>
+<td>$\lvert\vec k_{\Phi,2}-\vec k_\Phi\rvert=2k_\Phi\sin(\theta_{\mathrm{sct}}/2)$</td>
 <td>Momentum transfer</td>
 </tr>
 <tr>
@@ -352,7 +352,7 @@ $$</p>
 <td>First Born amplitude</td>
 </tr>
 <tr>
-<td>$\frac{d\sigma}{d\Omega}=\frac{\alpha^2}{16E^2\sin^4(\theta/2)}$</td>
+<td>$\frac{d\sigma}{d\Omega}=\frac{\alpha^2}{16E^2\sin^4(\theta_{\mathrm{sct}}/2)}$</td>
 <td>Rutherford cross section</td>
 </tr>
 <tr>

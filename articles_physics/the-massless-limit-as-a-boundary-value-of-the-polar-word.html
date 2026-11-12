@@ -77,15 +77,15 @@
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
-\tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
+\tilde u_{\mathrm r}=\exp\left(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\right),
 $$</p>
 <p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
-<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$
+<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$
 <strong>The boost factor is not a phase, and the evaluation shows why.</strong> With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair</p>
 <p>$$
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} .
 $$</p>
-<p>The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta\vec u)$ as an imaginary quantity is the error the two signs separate.
+<p>The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta_{\mathrm{axr}}\vec u)$ as an imaginary quantity is the error the two signs separate.
 , and the element is a unit exactly when $r\neq0$. The material four-momentum is</p>
 <p>$$
 \tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p,
@@ -176,8 +176,8 @@ $$</p>
 <td>4</td>
 <td>$\tilde u_{\mathrm r}$</td>
 <td>rotor</td>
-<td>$\frac{\theta}{2}\vec u_{\mathrm r}$</td>
-<td>$\theta\in[0,2\pi]$</td>
+<td>$\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi]$</td>
 <td>$3$</td>
 </tr>
 </tbody>
@@ -371,7 +371,7 @@ $$</p>
 <h2 id="what-the-limit-inherits">What the Limit Inherits</h2>
 <p>The element has a limit and the generator does not. The formal exponent of the word is</p>
 <p>$$
-\tilde Q_{\log}(\theta_{\mathrm{rpd}})=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
+\tilde Q_{\log}(\theta_{\mathrm{rpd}})=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
 $$</p>
 <p>with $\ln r=\ln R-\theta_{\mathrm{rpd}}/2\to-\infty$ and $\theta_{\mathrm{rpd}}/2\to+\infty$. The true logarithm differs from it by the BCH correction, a boost of order $\theta_{\mathrm{rpd}}$ that changes the coefficient of the divergence and not its presence (<em>The Exponential Word and Its Boundary</em>). The two divergent terms cancel in the element, because the boost's growth and the scale's collapse are the same exponential, but they do not cancel in the exponent. The generator of the boundary value does not exist.</p>
 <div class="table-scroll"><table>
@@ -460,8 +460,8 @@ $$</p>
 <td>the boost factor at word rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$</td>
-<td>the rotor of angle $\theta$</td>
+<td>$\tilde u_{\mathrm r}=e^{\theta_{\mathrm{axr}}\vec u_{\mathrm r}/2}$</td>
+<td>the rotor of angle $\theta_{\mathrm{axr}}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$</td>

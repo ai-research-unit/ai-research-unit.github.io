@@ -88,8 +88,8 @@ $$</p>
 <p>$$
 \tilde{Ξ}(\tilde{Q}) = \xi(\tilde{Q})\,e_t \;\in\; \mathbb{B}_{C}, \qquad \xi \in \mathbb{C},
 $$</p>
-<p>which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\alpha)\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is <strong>complex</strong>, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.</p>
-<p><strong>The symmetry.</strong> The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with $\Gamma$ a real scalar function, and it forces the connection,</p>
+<p>which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is <strong>complex</strong>, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.</p>
+<p><strong>The symmetry.</strong> The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\theta_{\mathrm{cen}})$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with $\Gamma$ a real scalar function, and it forces the connection,</p>
 <p>$$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma, \qquad
 D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu, \qquad
@@ -117,7 +117,7 @@ $$</p>
 |\xi| = \frac{v}{\sqrt{2}}, \qquad v > 0 .
 $$</p>
 <p>Two features of this minimum are the whole content of "spontaneous" symmetry breaking.</p>
-<p><strong>1. The vacuum is not unique.</strong> Every point of the circle $|\xi| = v/\sqrt{2}$ minimizes $V$. The action is invariant under the central phase $\xi\mapsto \exp(i\alpha)\xi$, but no single minimum is: the phase rotates the vacuum into a different, equally good vacuum. A symmetry that is a symmetry of the action but not of the chosen vacuum is said to be <strong>spontaneously broken</strong>. This is a statement about the pair (action, vacuum), not about the action alone.</p>
+<p><strong>1. The vacuum is not unique.</strong> Every point of the circle $|\xi| = v/\sqrt{2}$ minimizes $V$. The action is invariant under the central phase $\xi\mapsto \exp(i\theta_{\mathrm{cen}})\xi$, but no single minimum is: the phase rotates the vacuum into a different, equally good vacuum. A symmetry that is a symmetry of the action but not of the chosen vacuum is said to be <strong>spontaneously broken</strong>. This is a statement about the pair (action, vacuum), not about the action alone.</p>
 <p><strong>2. The vacuum is a scalar with a constant magnitude.</strong> Write</p>
 <p>$$
 \xi(\tilde{Q}) = \frac{1}{\sqrt{2}}\bigl(v + h(\tilde{Q})\bigr)\,\exp(\,i\vartheta_{\mathrm{fld}}(\tilde{Q})/v),
@@ -174,12 +174,12 @@ $$</p>
 <p>the middle expression being the $i r'_t$ form of the biquaternion norm and the last the corpus's packaging. The standard cross-check $\langle|\xi|\rangle = v/\sqrt{2}$ is what fixes the factor $1/2$ and gives the textbook $M_A^2 =\frac{ϙ^{2}\,v^{2}}{\hbar^{2}}$. Because a coefficient can be checked on the case that suggested it — here, the single component $A_0$ — the coefficient was <em>also</em> checked on a <strong>generic</strong>, non-axis-aligned connection direction and on a <strong>second, independent</strong> parameter set $(q_2, v_2)$: in both cases the induced quadratic form divided by $\mathrm{Sc}(\tilde{A}_{\Phi}^{\natural}\tilde{A}_{\Phi}) = \langle\tilde{A}_{\Phi},\tilde{A}_{\Phi}\rangle_{\natural}$ equals $-\frac{ϙ^{2}\,v^{2}}{2\,\hbar^{2}}$ to a relative error below $10^{-15}$. The gauge invariance of the kinetic density was checked with a non-constant gauge function on a generic connection, with residuals at the level of the floating-point round-off ($\sim 10^{-17}$), while the put-in mass term $A_1^2$ was found to change by a nonzero amount well above round-off under the same transformation, confirming that it is the symmetry that forbids it.</p>
 <h2 id="the-would-be-goldstone-mode-and-the-count">The Would-Be Goldstone Mode and the Count</h2>
 <p>The mass term above was obtained in the gauge in which $\xi$ is real and constant — the tree-level vacuum. In a generic gauge the scalar still has its angular mode $\vartheta_{\mathrm{fld}}$, and it is worth seeing where it goes. The answer is the second half of the mechanism.</p>
-<p><strong>The phase is a gauge direction.</strong> The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing</p>
+<p><strong>The phase is a gauge direction.</strong> The parametrization $\xi = \frac{1}{\sqrt{2}}(v+h)\exp(i\theta_{\mathrm{fld}}/v)$ exhibits the phase as a field. But a phase rotation is precisely a gauge transformation: choosing</p>
 <p>$$
-\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta(\tilde{Q})
+\Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta_{\mathrm{fld}}(\tilde{Q})
 $$</p>
 <p>gives $\xi\mapsto  \exp(i\theta_{\mathrm{gau}})\xi = \exp(-i\vartheta_{\mathrm{fld}}/v)\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the <strong>unitary gauge</strong> for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.</p>
-<p><strong>Where the phase went.</strong> The gauge transformation that removes $\theta$ also shifts the connection,</p>
+<p><strong>Where the phase went.</strong> The gauge transformation that removes $\theta_{\mathrm{fld}}$ also shifts the connection,</p>
 <p>$$
 A_{2,\mu} = A_\mu - \partial/\partial R_\mu\,\Gamma = A_\mu +\frac{\hbar}{ϙ\,v}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}} ,
 $$</p>
@@ -194,7 +194,7 @@ $$</p>
 <p><em>After (broken phase, $\langle|\xi|\rangle = v/\sqrt{2}$):</em></p>
 <ul>
 <li>The scalar has $1$ real physical component, the radial mode $h$, which is massive.</li>
-<li>The phase mode $\theta$ is not an independent physical field; it is the longitudinal polarization of the gauge field.</li>
+<li>The phase mode $\theta_{\mathrm{fld}}$ is not an independent physical field; it is the longitudinal polarization of the gauge field.</li>
 <li>The gauge field is massive. A massive vector has no residual gauge symmetry, so its $4$ components are all physical up to the equation of motion, giving $3$ polarizations: $2$ transverse and $1$ longitudinal.</li>
 <li>Total: $1 + 3 = 4$.</li>
 </ul>
@@ -363,8 +363,8 @@ $$</p>
 <td>Radial (Higgs) mode, $m_h^2 = 2\beta v^2$</td>
 </tr>
 <tr>
-<td>$\theta$</td>
-<td>Angular (would-be Goldstone) mode</td>
+<td>$\theta_{\mathrm{fld}}$</td>
+<td>Angular (would-be Goldstone) mode, the phase $\theta_{\mathrm{fld}}/v$</td>
 </tr>
 <tr>
 <td>$\varepsilon=(1,-1,-1,-1)$</td>

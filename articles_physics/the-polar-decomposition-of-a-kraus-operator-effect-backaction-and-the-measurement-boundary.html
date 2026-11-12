@@ -242,7 +242,7 @@ $$</p>
 <p>Trace preservation of a one-Kraus channel is not the same as trace preservation of an instrument. An instrument satisfies $\sum_y\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y}=e_t$; a single term need not. A term with $\tilde M_{\mathrm{kraus},H}\neq e_t$ is a legitimate outcome, and its effect is not the identity. The one-Kraus statement applies only when there is one term and no other outcome. The dephasing channel of §<em>Channels and Kraus Rank</em> is the witness: one Kraus operator is a scalar multiple of the identity, with $\tilde M_{\mathrm{kraus},0}=e_t$, and the channel is still irreversible because there is a second term.</p>
 <h2 id="the-four-factors-of-the-amplitude">The Four Factors of the Amplitude</h2>
 <h3 id="the-word-off-the-cone">The Word Off the Cone</h3>
-<p>Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,</p>
+<p>Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,</p>
 <p>$$
 \tilde M_{\mathrm{kraus}}=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
@@ -287,7 +287,7 @@ $$</p>
 <tr>
 <td>rotor</td>
 <td>$\tilde u_{\mathrm r}$</td>
-<td>$\theta\in[0,2\pi)$, unit $\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi)$, unit $\vec u_{\mathrm r}$</td>
 <td>$3$</td>
 <td>$\tilde M_{\mathrm{kraus},0}$</td>
 </tr>
@@ -306,7 +306,7 @@ r^{2}e^{+\theta_{\mathrm{rpd},w}}\quad\text{and}\quad r^{2}e^{-\theta_{\mathrm{r
 $$</p>
 <p>Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\theta_{\mathrm{rpd},w}>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.</p>
 <h3 id="the-boost-as-a-bias">The Boost as a Bias</h3>
-<p>The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.</p>
+<p>The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.</p>
 <p>The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}_{\Psi}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$,</p>
 <p>$$
 a_2=a\cosh\theta_{\mathrm{rpd},w}+b_\parallel\sinh\theta_{\mathrm{rpd},w},
@@ -428,7 +428,7 @@ $$</p>
 $$</p>
 <p>The order is fixed by the word: the $*$-unitary factor acts first, then the positive filter. The backaction is the rotation $\tilde M_{\mathrm{kraus},0}$; the filter is the strength $\tilde M_{\mathrm{kraus},H}$ in the output basis. A weak measurement is the regime in which the $\sigma_i$ are close to $1$; the outcome then disturbs the state only slightly, and the effect is close to $e_t$.</p>
 <h3 id="a-worked-unsharp-outcome">A Worked Unsharp Outcome</h3>
-<p>Take the strength $\tilde{H}_{\Psi,0}=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta=\pi/3$. Set $\tilde M_{\mathrm{kraus}}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}$. The polar factors are</p>
+<p>Take the strength $\tilde{H}_{\Psi,0}=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta_{\mathrm{axr}}=\pi/3$. Set $\tilde M_{\mathrm{kraus}}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}$. The polar factors are</p>
 <p>$$
 \tilde M_{\mathrm{kraus},H}=\tilde Q_{\mathrm{ba}}\tilde{H}_{\Psi,0}\tilde Q_{\mathrm{ba}}^{*}=0.8e_t+0.173205081i\vec e_y-0.1i\vec e_z,\qquad
 \tilde M_{\mathrm{kraus},0}=\tilde Q_{\mathrm{ba}},
@@ -581,7 +581,7 @@ $$</p>
 <td>effect of the outcome</td>
 </tr>
 <tr>
-<td>$r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta$</td>
+<td>$r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta_{\mathrm{axr}}$</td>
 <td>scale, central phase, word rapidity, rotor angle</td>
 </tr>
 <tr>
