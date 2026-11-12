@@ -176,11 +176,13 @@ The same element carries five descriptions, and they are worth setting side by s
 
 | reading | form | value | what it carries |
 | --- | --- | --- | --- |
-| word | $r\,e^{i\alpha}$ | $r=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}$, $\alpha=-\frac{E_{R}\,r'_{t}}{\hbar\,c}$ | the scale is the survival amplitude, the phase the oscillation |
+| word | $r\,e^{i\theta_{\mathrm{pha}}}$ | $r=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}$, $\theta_{\mathrm{pha}}=-\frac{E_{R}\,r'_{t}}{\hbar\,c}$ | the scale is the survival amplitude, the phase the oscillation |
 | central exponent | $e^{\Theta}$ | $\Theta=-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}$ | the complex angle |
 | Cartan | $\tilde A_{\Phi}\tilde Q$ | $\tilde A_{\Phi}=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}\,e_{t}$, $\tilde Q=e^{-\frac{iE_{R}\,r'_{t}}{\hbar\,c}}\,e_{t}$ | the amplitude and the phase |
 | generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |
 | mass-unit angle | $\theta_\star=z_\star/(mc^2)$ | $\epsilon_\star-i\gamma_\star$, $\epsilon_\star=E_R/(mc^2)$, $\gamma_\star=\Gamma/(2mc^2)$ | the half-width is $\gamma_\star$ |
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 **The complex angle.** The element is central, so the Hamilton pairing does not apply. Its vector part is zero, $B=0$, while the pairing's domain is $B\neq0$ (*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, §*The Domain*); a central element has no axis and no Hamilton angle. The angle that remains is the exponent of the central evolution,
 

@@ -71,10 +71,12 @@ is an antilinear involution whose fixed space is the material sector $\mathbb{B}
 **The phase symmetry to be localized.** The symmetry that minimal coupling localizes is the algebra's central $\mathrm{U}(1)$, established in the gauge principle article. A **constant** central phase
 
 $$
-\tilde{Ξ} \;\longmapsto\; \exp(i\theta)\tilde{Ξ}, \qquad \theta \ \text{constant},
+\tilde{Ξ} \;\longmapsto\; \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}, \qquad \theta_{\mathrm{cen}} \ \text{constant},
 $$
 
 is a symmetry of the equation, massive or massless, because a central constant commutes with the units and with the derivatives and therefore passes through both members of the pair:
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
 \tilde\nabla_\Phi\!\left(\lambda\tilde{Ξ}_{R}\right) = \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{R}, \qquad
@@ -151,7 +153,9 @@ $$
 
 since $\tilde{A}_{\Phi}^{*} = -\tilde{A}_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling. This is inherited, not rederived.
 
-**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ with the phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iϙA_{\mu}}{\hbar}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
+**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ and $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ with the phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iϙA_{\mu}}{\hbar}$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}_{\Phi}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 **Left action, and the mirror read through $\natural$.** Every coupling used in this article acts on the left. The mirror construction — derivative and connection both inserted on the right — is not a second prescription: it is the same one applied to the conjugate field. The renaming theorem of *Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*, gives $(\tilde{Ξ}\tilde\nabla_{\mathrm{gco}})^{\natural} = \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}^{\natural}$; the right-action equation on $\tilde{Ξ}$ is the left-action equation on $\tilde{Ξ}^{\natural}$, with the operator $\tilde\nabla_{\mathrm{gco}}^{\natural}$ that the second member of the pair already carries. Nothing needs a right arrow: the side is given by position, and $\natural$ is what changes it.
 
@@ -199,7 +203,7 @@ The two forms carry the same operator content and are not the same statement: th
 The gauge transformation is
 
 $$
-\tilde{Ξ}_{2} = \lambda\,\tilde{Ξ}, \qquad \lambda = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar}), \qquad \Gamma \ \text{real},
+\tilde{Ξ}_{2} = \lambda\,\tilde{Ξ}, \qquad \lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad \Gamma \ \text{real},
 $$
 
 together with $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The covariance is the same computation as in the gauge principle article, repeated here because it is the justification of the prescription. The pair needs one Leibniz rule per member and one chain rule per member. The chain rules are
@@ -423,7 +427,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$, and does the coupled system close on the algebra? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{Ξ}$, so it does not by itself close the corpus's system.
 
-5. **The shared generator.** The internal phase $\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
+5. **The shared generator.** The internal phase $\exp(i\theta_{\mathrm{gau}})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
 
 6. **The non-abelian extension.** When the connection becomes $\mathbb{B}$-valued it is no longer central, so it no longer commutes with the field, and the left/right question becomes sharp: the order of the factors is then part of the statement. The companions on the covariant derivative, on non-abelian fields and on the Yang–Mills equation place the field, but the choice is made there rather than forced.
 
@@ -510,7 +514,7 @@ $$
 
 with the interaction term $\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}$ that the localized central phase forces. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{R} = 0$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{L} = 0$.
 
-The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{Ξ}_{2} = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})\tilde{Ξ}$ and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$,
+The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{Ξ}_{2} = \exp(i\theta_{\mathrm{gau}})\tilde{Ξ}$ and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$,
 
 $$
 \tilde\nabla_{\mathrm{gco},2}\tilde{Ξ}_{R,2} = \lambda\,\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{R}, \qquad \tilde\nabla_{\mathrm{gco},2}^{\natural}\tilde{Ξ}_{L,2} = \lambda\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{L},
@@ -548,7 +552,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{B}_{\Phi}$) |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
-| $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase; $\Gamma$ real scalar |
+| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\Gamma$ real scalar |
 | $\varsigma$ | A second central constant, in the relative phase $\tilde{Ξ}_{R}\mapsto\varsigma\tilde{Ξ}_{R}$, $\tilde{Ξ}_{L}\mapsto\varsigma^{-1}\tilde{Ξ}_{L}$ |
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $\tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ | Covariant derivative (left action) |

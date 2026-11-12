@@ -16,13 +16,13 @@ The polar decomposition writes an element of non-vanishing norm as four factors,
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\alpha)\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
-\qquad \Rho=r\exp(i\alpha),
+=r\exp(i\theta_{\mathrm{pha}})\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\qquad \Rho=r\exp(i\theta_{\mathrm{pha}}),
 $$
 
-the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the two-sided operator one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
+the four being the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the two-sided operator one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
-The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *N-Regular, Spectrally Regular Operators Acting on One Side*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *N-Regular, Spectrally Regular Operators Acting on One Side*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\theta_{\mathrm{pha}}=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
 The plan is the following. §*The Two-Sided Operator of the Word* proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the two-sided operator as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
 
@@ -54,12 +54,12 @@ and the **domain** of the polar word is $\langle\tilde Q\rangle_{\natural}\neq0$
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
-\Rho=r\exp(i\alpha),\qquad
+\Rho=r\exp(i\theta_{\mathrm{pha}}),\qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
+with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
 \Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
@@ -115,7 +115,7 @@ $$
 \boxed{\;\mathrm{Sd}_{\tilde Q}(\tilde X)=r^{2}\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b}\;},
 $$
 
-and $\mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}$.
+and $\mathrm{Sd}_{\exp(i\theta_{\mathrm{pha}})}=\mathrm{id}$.
 
 *Proof.* The Hermitian conjugate of the word is
 
@@ -162,23 +162,23 @@ $$
 
 ### The Factor
 
-The phase is $P=\exp(i\alpha)$, central and $*$-unitary,
+The phase is $P=\exp(i\theta_{\mathrm{pha}})$, central and $*$-unitary,
 
 $$
-P^{*}=P^{-1}=\exp(-i\alpha),\qquad \langle P\rangle_{\natural}=\exp(2i\alpha).
+P^{*}=P^{-1}=\exp(-i\theta_{\mathrm{pha}}),\qquad \langle P\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}}).
 $$
 
-Its exponent is $i\alpha$, purely imaginary and central.
+Its exponent is $i\theta_{\mathrm{pha}}$, purely imaginary and central.
 
 ### The Two-Sided Operator
 
 $$
-\mathrm{Sd}_P(\tilde X)=\exp(i\alpha)\,\tilde X\,\exp(-i\alpha)=\tilde X .
+\mathrm{Sd}_P(\tilde X)=\exp(i\theta_{\mathrm{pha}})\,\tilde X\,\exp(-i\theta_{\mathrm{pha}})=\tilde X .
 $$
 
 The two scalars commute with $\tilde X$ and with each other, and the second is the inverse of the first, so the product is the identity operator.
 
-**The phase is not a half-angle of the two-sided operator.** The exponent $i\alpha$ is the full generator of the multiplication by $\exp(i\alpha)$ on the module; the two-sided operator cancels it. It is already half of the argument of the norm, $\langle\tilde Q\rangle_{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$, and that is the only doubling in which it takes part. Writing $\exp(i\alpha/2)$ in the word would not change the two-sided operator, which is the identity either way; it would only change the meaning of the letter $\alpha$, and it would break $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ unless $\alpha$ were redefined as $\arg\langle\tilde Q\rangle_{\natural}$.
+**The phase is not a half-angle of the two-sided operator.** The exponent $i\theta_{\mathrm{pha}}$ is the full generator of the multiplication by $\exp(i\theta_{\mathrm{pha}})$ on the module; the two-sided operator cancels it. It is already half of the argument of the norm, $\langle\tilde Q\rangle_{\natural}=\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$, and that is the only doubling in which it takes part. Writing $\exp(i\theta_{\mathrm{pha}}/2)$ in the word would not change the two-sided operator, which is the identity either way; it would only change the meaning of the letter $\theta_{\mathrm{pha}}$, and it would break $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ unless $\theta_{\mathrm{pha}}$ were redefined as $\arg\langle\tilde Q\rangle_{\natural}$.
 
 ### Remark (the Cancelled Phase)
 
@@ -200,13 +200,13 @@ On the unit circle $|\lambda|=1$ the two such operators are equal, so the whole 
 
 **Third, the phase is absent from this action but not from the algebra.** It reappears in three places, and the list is the reason the polar word needs it:
 
-- the norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$;
-- the determinant, $\det\mathsf M_2(\tilde Q)=\Rho^{2}=r^{2}\exp(2i\alpha)$;
-- the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\alpha)$, the twist $\chi(\Rho)=\Rho$ of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*.
+- the norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$;
+- the determinant, $\det\mathsf M_2(\tilde Q)=\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$;
+- the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\theta_{\mathrm{pha}})$, the twist $\chi(\Rho)=\Rho$ of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*.
 
-The first two are quadratic in $\Rho$ and see $2\alpha$; the third is linear and sees $\alpha$; the two-sided operator multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.
+The first two are quadratic in $\Rho$ and see $2\theta_{\mathrm{pha}}$; the third is linear and sees $\theta_{\mathrm{pha}}$; the two-sided operator multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.
 
-**Fourth, the spectral reading confirms it.** The eigenvalues of $\mathrm{Sd}_{\tilde Q}$ are the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $\mathsf M_2(\tilde Q)$, as in §*The Spectrum of the Two-Sided Operator*. A phase multiplies every $\lambda_i$ by $\exp(i\alpha)$ and every $\bar\lambda_j$ by $\exp(-i\alpha)$, so every product is unchanged. The cancellation is visible in the spectrum without any computation in coordinates.
+**Fourth, the spectral reading confirms it.** The eigenvalues of $\mathrm{Sd}_{\tilde Q}$ are the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $\mathsf M_2(\tilde Q)$, as in §*The Spectrum of the Two-Sided Operator*. A phase multiplies every $\lambda_i$ by $\exp(i\theta_{\mathrm{pha}})$ and every $\bar\lambda_j$ by $\exp(-i\theta_{\mathrm{pha}})$, so every product is unchanged. The cancellation is visible in the spectrum without any computation in coordinates.
 
 ## The Boost
 
@@ -429,7 +429,7 @@ $$
 \operatorname{im}\Theta\cong\mathbb{R}_{>0}\times SO^{+}(1,3)=CO^{+}(1,3).
 $$
 
-(c) At $r=1$ the element is $\exp(i\alpha)U$ with $U\in SL(2,\mathbb{C})$, the pair unique up to $(\alpha,U)\mapsto(\alpha+\pi,-U)$. The kernel is still $U(1)$, and the quotient is $SO^{+}(1,3)$.
+(c) At $r=1$ the element is $\exp(i\theta_{\mathrm{pha}})U$ with $U\in SL(2,\mathbb{C})$, the pair unique up to $(\theta_{\mathrm{pha}},U)\mapsto(\theta_{\mathrm{pha}}+\pi,-U)$. The kernel is still $U(1)$, and the quotient is $SO^{+}(1,3)$.
 
 (d) At $\langle\tilde Q\rangle_{\natural}=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{B}_{\Phi}$ is $\{\pm e_t\}$.
 
@@ -473,7 +473,7 @@ The Hermitian pair of the polar word is read factor by factor. The closed form i
 $$
 \mathrm{Sd}_{\tilde Q}=r^{2}\,\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}},
 \qquad
-\mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}.
+\mathrm{Sd}_{\exp(i\theta_{\mathrm{pha}})}=\mathrm{id}.
 $$
 
 The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one two-sided operator, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\theta_{\mathrm{rpd}}$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the two-sided operator is an isometry on the unit-norm slice.
@@ -502,9 +502,9 @@ The phase is the one factor that the two-sided operator does not see. It is visi
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian pair |
 | $\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}$ | the scaling of the norm; an isometry on the unit-norm slice |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm of the polar series |
-| $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
-| $P=\exp(i\alpha)$ | the central phase factor |
-| $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
+| $\Rho=r\exp(i\theta_{\mathrm{pha}})$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
+| $P=\exp(i\theta_{\mathrm{pha}})$ | the central phase factor |
+| $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$, and of $R_{\tilde Q}$ |

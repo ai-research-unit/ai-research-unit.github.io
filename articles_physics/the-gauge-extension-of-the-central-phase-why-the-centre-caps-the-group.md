@@ -3,7 +3,7 @@
 ## Introduction
 
 The framework's continuous symmetry is the **central phase**, the group of central unitaries
-$\exp(i\theta)e_t\cong \mathrm{U}(1)$. It is exact and it is global: being central, it multiplies every subspace and
+$\exp(i\theta_{\mathrm{cen}})e_t\cong \mathrm{U}(1)$. It is exact and it is global: being central, it multiplies every subspace and
 every element by the same factor, so it acts the same way at every point, and the corpus records the fact as
 the interpretation "centrality is globality". A gauge theory needs the opposite — a phase that may differ from
 point to point, and a compensating connection that makes the difference covariant — and the question this
@@ -19,17 +19,17 @@ of the Framework: Which Physics Hangs on Which Product*.
 
 ## The Central Phase and the Gauge Principle
 
-The central phase is the one-parameter subgroup $\theta\mapsto \exp(i\theta)e_t$ of the centre. Three of its
+The central phase is the one-parameter subgroup $\theta_{\mathrm{cen}}\mapsto \exp(i\theta_{\mathrm{cen}})e_t$ of the centre. Three of its
 properties are the whole of its relevance.
 
-- It is **central**: $\exp(i\theta)e_t$ commutes with every element, so it acts by the same scalar at every
+- It is **central**: $\exp(i\theta_{\mathrm{cen}})e_t$ commutes with every element, so it acts by the same scalar at every
   element and in every subspace.
 - It is **compact**: the parameter is an angle and the group is a circle, so its irreducible labels are
   integers and the internal charge it carries is **discrete**.
 - It is **the whole continuous symmetry of the algebra that acts uniformly**, because the centre is
   one-dimensional and every uniform continuous symmetry must be central.
 
-The gauge principle asks for the local version: a phase $\theta(x)$ that depends on the point, and a
+The gauge principle asks for the local version: a phase $\theta_{\mathrm{cen}}(x)$ that depends on the point, and a
 connection $\tilde{A}_{\Phi,\mu}$ that transforms so that the covariant derivative
 $\partial/\partial x_\mu - iϙ\tilde{A}_{\Phi,\mu}$ is phase-covariant. **The framework has the phase and not the connection**,
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
@@ -48,7 +48,7 @@ the group is the structure of the centre:
 
 | piece of the group | where it lives | what it does |
 |---|---|---|
-| $\mathrm{U}(1)$ | the centre, $\{\exp(i\theta)e_t\}$ | the global phase, the discrete charge label |
+| $\mathrm{U}(1)$ | the centre, $\{\exp(i\theta_{\mathrm{cen}})e_t\}$ | the global phase, the discrete charge label |
 | $SU(2)$ | the unit quaternions, the real slice | the internal rotations acting on the module |
 | $\mathbb{Z}_2$ | $\{\pm e_t\}$ | the identification, the spin double cover |
 
@@ -126,7 +126,7 @@ question is being asked.
 
 ## Summary
 
-The framework's continuous symmetry is the central phase $\exp(i\theta)e_t\cong \mathrm{U}(1)$, central, compact and
+The framework's continuous symmetry is the central phase $\exp(i\theta_{\mathrm{cen}})e_t\cong \mathrm{U}(1)$, central, compact and
 global, and it is the whole of the algebra's uniform symmetry. Its gauge extension is blocked by centrality:
 a local phase needs a connection valued in a non-central generator, the algebra's only uniform generator is
 the central $ie_t$, and a central connection couples to nothing. The intrinsic gauge group is the $*$-unitary
@@ -140,7 +140,7 @@ does not contain.
 
 | Symbol | Meaning |
 |---|---|
-| $\exp(i\theta)e_t$ | the central phase, the group $\mathrm{U}(1)$ of central unitaries |
+| $\exp(i\theta_{\mathrm{cen}})e_t$ | the central phase, the group $\mathrm{U}(1)$ of central unitaries |
 | $ie_t$ | the generator of the central phase, central and of one real dimension |
 | $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the $*$-unitary slice, the algebra's intrinsic gauge group |
 | $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |

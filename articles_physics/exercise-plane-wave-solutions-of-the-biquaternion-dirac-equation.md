@@ -48,7 +48,9 @@ $$
 
 because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
-**The wave element.** A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
+**The wave element.** A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
+
+Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec k_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
 
 $$
 \tilde P_{\Phi}=\hbar\tilde K_{\Phi},\qquad

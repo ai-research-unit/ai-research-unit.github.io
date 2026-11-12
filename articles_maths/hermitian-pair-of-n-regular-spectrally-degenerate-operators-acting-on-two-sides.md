@@ -40,7 +40,7 @@ $$
 =r^{2}\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b},
 $$
 
-and the central phase cancels, $\mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}$.
+and the central phase cancels, $\mathrm{Sd}_{\exp(i\theta_{\mathrm{pha}})}=\mathrm{id}$.
 
 On the sector,
 
@@ -98,7 +98,7 @@ The fixed subspace of $\mathrm{Sd}_{\tilde U}$ is two-dimensional. It is not the
 
 ## The Polar Decomposition of the Two-Sided Operator
 
-Write the Cartan pairing of the element as $\tilde Q=\tilde H\tilde V$ with $\tilde H=r\tilde U_{\mathrm b}$ positive and $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ $*$-unitary. Then
+Write the Cartan pairing of the element as $\tilde Q=\tilde H\tilde V$ with $\tilde H=r\tilde U_{\mathrm b}$ positive and $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ $*$-unitary. Then
 
 $$
 \mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde H}\circ\mathrm{Sd}_{\tilde V},
@@ -116,7 +116,7 @@ The product $\mathrm{Sd}_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent
 
 In the regular sector the two-sided operator has two spinor slots, and the rotor angle and the rapidity are doubled on them. On the wall the slots do not disappear; they coalesce into the Jordan chain. The $3\times3$ block and the $1\times1$ block are the remnants of the two slots: one slot keeps a fixed vector, and the other carries the nilpotent chain of length three.
 
-The central phase is invisible in the two-sided operator, as in the regular sector: $\mathrm{Sd}_{e^{i\alpha}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/two-sided operator contrast: the phase is a one-sided datum, and the two-sided operator sees only the scale, the boost and the rotor.
+The central phase is invisible in the two-sided operator, as in the regular sector: $\mathrm{Sd}_{e^{i\theta_{\mathrm{pha}}}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/two-sided operator contrast: the phase is a one-sided datum, and the two-sided operator sees only the scale, the boost and the rotor.
 
 ## The Fixed Directions
 
@@ -212,7 +212,7 @@ and the two-sided operator is the composition of the positive operator $\mathrm{
 | eigenvalue | $\lvert Q_t\rvert^{2}$ |
 | determinant | $\lvert Q_t\rvert^{8}$ |
 | polar factors | $\mathrm{Sd}_{\tilde H}$ positive, $\mathrm{Sd}_{\tilde V}$ $*$-unitary |
-| phase | invisible, $\mathrm{Sd}_{e^{i\alpha}}=\mathrm{id}$ |
+| phase | invisible, $\mathrm{Sd}_{e^{i\theta_{\mathrm{pha}}}}=\mathrm{id}$ |
 | fixed subspace | the span of $\vec A$ and $e_t+i\vec c$, $\vec c=\vec A\times\vec B/a^2$ |
 
 On the scalar line $\vec\Upsilon=0$ the two-sided operator is $\lvert Q_t\rvert^{2}I_4$: rank four, spectrum $\lvert Q_t\rvert^{2}$ with geometric multiplicity four, Jordan type $1+1+1+1$, and $\mathsf N=0$. The Jordan data in the table are those of the Jordan part. The exponential of the operator is the companion *The Two-Sided Exponential of an N-Regular, Spectrally Degenerate Biquaternion*.

@@ -125,7 +125,7 @@ and the last form exhibits the group as a central non-compact factor times a com
 $$
 \mathbb{C}_{\mathrm{spl},>0}\times\left(\mathrm{Sp}(1)\times\mathrm{Sp}(1)\right)\longrightarrow{\mathbb{B}_{\mathrm{spl}}}^{\times} ,
 $$
-and it is a bijection, not merely a factorisation of manifolds: if $\rho\tilde{U} = \rho'\tilde{U}'$ then $\rho^{-1}\rho' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2$ has norm $\rho_+^2\tilde\Pi_1 + \rho_-^2\tilde\Pi_2$, equal to $e_t$ with non-negative components only when $\rho_+ = \rho_- = 1$ — so that $\rho = \rho'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\alpha\in(-\pi/2,\pi/2]$ is what removes the doubling.
+and it is a bijection, not merely a factorisation of manifolds: if $\rho\tilde{U} = \rho'\tilde{U}'$ then $\rho^{-1}\rho' = \tilde{U}\tilde{U}'^{-1}$ lies in the intersection of $\mathbb{C}_{\mathrm{spl},>0}$ with the unit sphere, which is $\{e_t\}$ — a central element $\rho_+\tilde\Pi_1 + \rho_-\tilde\Pi_2$ has norm $\rho_+^2\tilde\Pi_1 + \rho_-^2\tilde\Pi_2$, equal to $e_t$ with non-negative components only when $\rho_+ = \rho_- = 1$ — so that $\rho = \rho'$ and $\tilde{U} = \tilde{U}'$. This is the point at which the split biquaternion case is simpler than the biquaternion case, where the corresponding multiplication map on $\mathbb{C}^*\times SL(2,\mathbb{C})$ is two-to-one, the two preimages differing by the sign of the modulus and of the $*$-unitary factor, and the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ is what removes the doubling.
 
 The Lie algebra of the unit group is $\mathbb{R}^2\oplus\mathrm{SU}(2)\oplus\mathrm{SU}(2)$: the abelian summand $\mathbb{R}^2$ is central and non-compact, and the two $\mathrm{SU}(2)$ summands are compact, one for each half. The correct statement of what the centrality of $\mathbb{R}^2$ implies is not that every non-compact one-parameter subgroup is central, which is false: the generator $e_t + \vec e_x$ of the unit group's Lie algebra has a central component and a non-central one, and the subgroup it generates,
 $$
@@ -228,7 +228,7 @@ $$
 
 because $(\lambda \exp(j\tau))(\lambda' \exp(j\tau')) = \lambda\lambda' \exp(j(\tau+\tau'))$. The scale is the geometric mean of the two component moduli and the hyperbolic phase is half the logarithm of their ratio.
 
-This is the exact analogue of the factorisation $R = r\exp(i\alpha)$ of the biquaternion modulus, with the compact unit circle $\exp(i\alpha)$ replaced by the hyperbola $\exp(j\tau)$. The replacement is not cosmetic: $\exp(j\tau)$ is not bounded, so the phase factor here is a non-compact factor and carries a non-compact direction of the algebra.
+This is the exact analogue of the factorisation $R = r\exp(i\theta_{\mathrm{pha}})$ of the biquaternion modulus, with the compact unit circle $\exp(i\theta_{\mathrm{pha}})$ replaced by the hyperbola $\exp(j\tau)$. The replacement is not cosmetic: $\exp(j\tau)$ is not bounded, so the phase factor here is a non-compact factor and carries a non-compact direction of the algebra.
 
 ### The Phase Is Central and Hyperbolic
 
@@ -649,7 +649,7 @@ The four algebras of the series decompose in the same four slots, with the follo
 |---|---|---|---|---|---|
 | $\mathbb{H}$ | $1$ | $0$ | $0$ | $3$ | $4$ |
 | $\mathbb{H}_{\mathrm{spl}}$ | $1$ | $0$ | $2$ | $1$ plus a discrete reflection | $4$ |
-| $\mathbb{B}$ | $1$ | $1$, elliptic: $\exp(i\alpha)$ | $3$ | $3$ | $8$ |
+| $\mathbb{B}$ | $1$ | $1$, elliptic: $\exp(i\theta_{\mathrm{pha}})$ | $3$ | $3$ | $8$ |
 | $\mathbb{B}_{\mathrm{spl}}$ | $1$ | $1$, hyperbolic: $\exp(j\tau)$ | $0$ | $6$ | $8$ |
 
 The split biquaternion is the case in which the phase slot is non-compact, the boost slot is empty and the rotor slot is the largest. The pattern is not accidental.

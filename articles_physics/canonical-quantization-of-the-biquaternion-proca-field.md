@@ -95,10 +95,12 @@ three copies of the Klein–Gordon equation, one for each independent polarizati
 A plane-wave solution is
 
 $$
-A_\mu(x) = \varepsilon_\mu(\vec p)\,\exp(-ip\cdot x/\hbar),
+A_\mu(x) = \varepsilon_\mu(\vec p)\,\exp(-i\theta_{\mathrm{pwp}}),
 \qquad p^2 \equiv \omega_{\vec p}^2-\vec p^2 = \mu^2,
 \qquad \sum_\mu p_\mu\varepsilon_\mu = 0,
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and the invariant phase $\sum_\mu p_\mu x_\mu=\omega_{\vec p}r'_t/c-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ of the series convention, the material four-wavevector being $\tilde P_{\Phi}=i\omega_{\vec p}e_t+\vec p$, with $p_t^2=-\omega_{\vec p}^2$, and its biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=(\vec p^2-\omega_{\vec p}^2)e_t$, so that $p^2=-\langle\tilde P_{\Phi}\rangle_{\natural}$ as in the scalar companion. The Lorenz condition is the transversality condition $\sum_\mu p_\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\vec p}\varepsilon_0+\vec p\cdot\vec\varepsilon$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\vec\varepsilon_T)$ and $\vec p\cdot\vec\varepsilon_T=0$, and the longitudinal one,
 

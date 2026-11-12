@@ -15,7 +15,7 @@ $$
 and each is written as
 
 $$
-\tilde Q=r\,e^{i\alpha}\,
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$
@@ -57,11 +57,11 @@ The notation is the one of *Algebra and Element Conventions*.
 Given $\tilde Q$:
 
 1. Compute $N$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. The sector requires $N\neq0$ and $B^2\neq0$.
-2. Compute the modulus $\Rho$, the principal square root of $N$, and write $\Rho=r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$.
+2. Compute the modulus $\Rho$, the principal square root of $N$, and write $\Rho=r e^{i\theta_{\mathrm{pha}}}$ with $r>0$ and $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$.
 3. Compute the unit factor $\tilde U=\tilde Q/\Rho$.
 4. Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.
 5. Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.
-6. Check $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.
+6. Check $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.
 7. Compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$, and $\mu_\pm=\lambda_\pm/\Rho$.
 8. Compute the true logarithm by the matrix logarithm, and compare its exponential with $\tilde Q$.
 
@@ -70,7 +70,7 @@ The **defect** of a case is
 $$
 \delta=\bigl\lVert\exp(\tilde Q_{\log})-\tilde Q\bigr\rVert,
 \qquad
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
+\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
 $$
 
 where the norm is the maximum modulus of the four coordinates. It is zero exactly in the normal cases and positive in the non-normal ones.
@@ -106,7 +106,7 @@ B^2=1,
 \qquad
 r=1,
 \qquad
-\alpha=0.
+\theta_{\mathrm{pha}}=0.
 $$
 
 ### The Polar Factors
@@ -133,7 +133,7 @@ $$
 \tilde Q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr).
 $$
 
-The word has $r=1$, $\alpha=0$, $\theta_{\mathrm{rpd}}=0$, $\theta=\pi$, $\vec u_{\mathrm r}=\vec e_x$.
+The word has $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0$, $\theta=\pi$, $\vec u_{\mathrm r}=\vec e_x$.
 
 ### The Spectral Data
 
@@ -178,7 +178,7 @@ B^2=-1,
 \qquad
 r=1,
 \qquad
-\alpha=0.
+\theta_{\mathrm{pha}}=0.
 $$
 
 ### The Polar Factors
@@ -253,7 +253,7 @@ B^2=\frac12+i=0.5+1i,
 \qquad
 r=1,
 \qquad
-\alpha=0.
+\theta_{\mathrm{pha}}=0.
 $$
 
 ### The Polar Factors
@@ -333,7 +333,7 @@ B^2=\frac12,
 \qquad
 r=1,
 \qquad
-\alpha=0.
+\theta_{\mathrm{pha}}=0.
 $$
 
 ### The Polar Factors
@@ -382,7 +382,7 @@ B^2=\frac14+i=0.25+1i,
 \qquad
 r=1,
 \qquad
-\alpha=0.
+\theta_{\mathrm{pha}}=0.
 $$
 
 ### The Polar Factors
@@ -494,7 +494,7 @@ B^2=1.25+2i,
 \qquad
 r=2.047135475,
 \qquad
-\alpha=0.6339557292.
+\theta_{\mathrm{pha}}=0.6339557292.
 $$
 
 ### The Polar Factors
@@ -605,7 +605,7 @@ B^2=2i,
 \qquad
 r=2,
 \qquad
-\alpha=\frac{\pi}{4}.
+\theta_{\mathrm{pha}}=\frac{\pi}{4}.
 $$
 
 ### The Polar Factors
@@ -662,7 +662,7 @@ B^2=2,
 \qquad
 r=\sqrt2,
 \qquad
-\alpha=0.
+\theta_{\mathrm{pha}}=0.
 $$
 
 ### The Polar Factors
@@ -758,7 +758,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 
 ### The Word Data
 
-| Case | $r$ | $\alpha$ | $\theta_{\mathrm{rpd}}$ | $\vec u_{\mathrm b}$ | $\theta$ | $\vec u_{\mathrm r}$ |
+| Case | $r$ | $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{rpd}}$ | $\vec u_{\mathrm b}$ | $\theta$ | $\vec u_{\mathrm r}$ |
 |---|---|---|---|---|---|---|
 | 1 | $1$ | $0$ | $0$ | -- | $\pi$ | $\vec e_x$ |
 | 2 | $1$ | $0$ | $1.762747174$ | $\vec e_x$ | $0$ | -- |
@@ -785,7 +785,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 | $N$ | the reduced product |
 | $B^2$ | the vector form |
 | $\Rho$ | the modulus, principal square root of $N$ |
-| $r,\alpha$ | the polar coordinates of $\Rho$ |
+| $r,\theta_{\mathrm{pha}}$ | the polar coordinates of $\Rho$ |
 | $\tilde U$ | the unit factor |
 | $\tilde U_{\mathrm b}$ | the Hermitian positive factor |
 | $\tilde u_{\mathrm r}$ | the rotor |

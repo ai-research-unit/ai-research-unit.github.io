@@ -124,11 +124,13 @@ The displacement was checked explicitly. Writing $\delta=\epsilon\,c/(2\Omega_{\
 
 ### The contour integral
 
-The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $r'_t>0$ the exponential $\exp(-i\omega r'_t/c)$ forces the contour to close below, and the two residues combine into
+The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $r'_t>0$ the exponential $\exp(-i\theta_{\mathrm{pwt}})$ forces the contour to close below, and the two residues combine into
+
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega r'_t/c)}{\vec p^2/\hbar^{2}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}}
+\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}}
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\,c\,\frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}},
 \qquad
 \Omega_{\vec p}=\sqrt{\vec p^2/\hbar^{2}+k_m^{2}},
@@ -138,7 +140,7 @@ while for $r'_t<0$ the contour closes above and the integral vanishes. The resul
 
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega r'_t/c)}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
+\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
 =\frac{i\,c}{2\Omega_{\vec p}}\,\exp(-i\Omega_{\vec p}|r'_t|),
 $$
 

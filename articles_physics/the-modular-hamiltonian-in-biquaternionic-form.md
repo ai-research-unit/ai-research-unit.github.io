@@ -10,11 +10,13 @@ built from the modular operator $\mathcal{M}_{\mathrm{mod}}=S^*S$ of the Tomita 
 
 Writing $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ — equivalently $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ — the modular flow is Hamiltonian evolution under $\tilde H_{\Psi,\mathrm{modular}}$,
 $$
-\sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\,\tilde Q_3\,\exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t),
+\sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\,\tilde Q_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),
 \qquad
 \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3],
 $$
 and the KMS state of *The KMS Condition and the Biquaternion Framework* is the **thermal state of $\tilde H_{\Psi,\mathrm{modular}}$**: the state is Gibbs with respect to the modular Hamiltonian. This is the content of the Takesaki–Winnink theorem, quoted by the modular-theory parent and used here unchanged. The modular Hamiltonian is therefore to the modular flow what the Hamiltonian is to ordinary time evolution, and the two roles can be separated: the physical Hamiltonian $\tilde H_\Psi$ is what appears in the Gibbs weight, while $\tilde H_{\Psi,\mathrm{modular}}$ is the shifted and rescaled operator whose flow the state is KMS with respect to, $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ for a Gibbs state.
+
+Throughout, $\theta_{\mathrm{evo}}:=r'_t$ is the elapsed coordinate time, a real number: the generator $\tilde H_{\Psi,\mathrm{modular}}$ is Hermitian, its eigenvalues are real, and the flow it generates is $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, a unitary whose exponent is $i$ times a real spectrum.
 
 The article is deliberately narrow. It is the companion of one theorem and three article parents: the modular-theory article supplies $S$, $\mathcal{M}_{\mathrm{mod}}$ and the flow; the KMS article supplies the boundary relation whose generator $\tilde H_{\Psi,\mathrm{modular}}$ is; the partition-function article supplies the Gibbs form that ties $\tilde H_{\Psi,\mathrm{modular}}$ to $\tilde H_\Psi$. This article does three things the parents do not. It defines $\tilde H_{\Psi,\mathrm{modular}}$ from $\mathcal{M}_{\mathrm{mod}}$ and checks the two hypotheses on which that definition rests — the cyclic-and-separating hypothesis, inherited from the construction of $\mathcal{M}_{\mathrm{mod}}$, and the **strict positivity** of $\mathcal{M}_{\mathrm{mod}}$, without which $-\log\mathcal{M}_{\mathrm{mod}}$ does not exist. It fixes the **sign convention** in $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and holds it, because the sign of $\tilde H_{\Psi,\mathrm{modular}}$ is the standard error in this subject and the opposite convention reverses which flow is KMS. And it isolates the structural question that the finite-dimensional model cannot settle: whether $\tilde H_{\Psi,\mathrm{modular}}$ is a **local** operator, which it is not in general, the exceptional cases being exactly the ones in which the modular flow is a geometric symmetry flow (Bisognano–Wichmann).
 
@@ -42,9 +44,9 @@ $$
 $$
 Since the logarithm is taken on a positive operator, $\tilde H_{\Psi,\mathrm{modular}}$ is self-adjoint, and it is the generator of the modular group in the following precise sense:
 $$
-\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t),
+\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),
 \qquad
-\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3 \exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t),
+\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),
 \qquad
 \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3].
 $$
@@ -62,14 +64,14 @@ $$
 $$
 The kernel of $\mathcal{M}_{\mathrm{mod}}$ equals the kernel of $S$, so $\mathcal{M}_{\mathrm{mod}}>0$ is again the faithfulness hypothesis: a non-faithful state gives $\mathcal{M}_{\mathrm{mod}}$ a zero eigenvalue, and at that eigenvalue $-\log\mathcal{M}_{\mathrm{mod}}$ diverges. This is the sense in which positivity is not a technicality. It is the same hypothesis as cyclic and separating, read off the spectrum of $\mathcal{M}_{\mathrm{mod}}$ rather than off the vector. Section "Verification: $\tilde H_{\Psi,\mathrm{modular}}$ Generates the Modular Flow" exhibits the failure explicitly.
 
-**Self-adjointness and unitarity.** Because $\mathcal{M}_{\mathrm{mod}}>0$, the spectral theorem gives a self-adjoint $\log\mathcal{M}_{\mathrm{mod}}$ and hence a self-adjoint $\tilde H_{\Psi,\mathrm{modular}}$; the $*$-unitary group $\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is then well defined for all real $r'_t$, and $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is $*$-unitary. The flow $\sigma_{r'_{t}}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde H_{\Psi,\mathrm{modular}}$ is the self-adjoint generator of the $*$-unitary group that implements it.
+**Self-adjointness and unitarity.** Because $\mathcal{M}_{\mathrm{mod}}>0$, the spectral theorem gives a self-adjoint $\log\mathcal{M}_{\mathrm{mod}}$ and hence a self-adjoint $\tilde H_{\Psi,\mathrm{modular}}$; the $*$-unitary group $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})=\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is then well defined for all real $r'_t$, and $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$ is $*$-unitary. The flow $\sigma_{r'_{t}}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde H_{\Psi,\mathrm{modular}}$ is the self-adjoint generator of the $*$-unitary group that implements it.
 
 ### The Sign Convention, Fixed and Held
 
 The relation between $\mathcal{M}_{\mathrm{mod}}$ and $\tilde H_{\Psi,\mathrm{modular}}$ is a convention, and the two choices are inequivalent. This article uses
 $$
-\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}}),\qquad \mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t),\qquad
-\sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3 \exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t).
+\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}}),\qquad \mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),\qquad
+\sigma_{r'_{t}}(\tilde Q_3)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}).
 $$
 The opposite choice, $\mathcal{M}_{\mathrm{mod}}=\exp(+\tilde H_{\Psi,\mathrm{modular}})$ with $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(+i\tilde H_{\Psi,\mathrm{modular}}r'_t)$, is the same equation with $\tilde H_{\Psi,\mathrm{modular}}\mapsto-\tilde H_{\Psi,\mathrm{modular}}$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-r'_t}$, not $\sigma_{r'_{t}}$, and reversing the sign of $\tilde H_{\Psi,\mathrm{modular}}$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$, which is the parent's convention; the generator identity $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ follows from it and is the form used throughout. A displayed formula that writes $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(+i\tilde H_{\Psi,\mathrm{modular}}r'_t)$ together with $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is internally inconsistent — it would give $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\mathcal{M}_{\mathrm{mod}}^{-ir'_t}$ — and the sign is fixed here once, in the direction above, and held.
 
@@ -120,7 +122,7 @@ $$
 $$
 is a Hermitian element of the algebra. The two displays are the same $\tilde H_{\Psi,\mathrm{modular}}$ seen twice: as an algebra element, $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; as the modular operator on the Hilbert space, $\mathcal{M}_{\mathrm{mod}}(\tilde Q_3)=\exp(-\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3\,\exp(\tilde H_{\Psi,\mathrm{modular}})$, so that
 $$
-\mathcal{M}_{\mathrm{mod}}^{ir'_t}(\tilde Q_3)=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3\,\exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t).
+\mathcal{M}_{\mathrm{mod}}^{ir'_t}(\tilde Q_3)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}).
 $$
 That $\tilde H_{\Psi,\mathrm{modular}}$ lies in $\mathbb{B}_{\Psi}$ is the parent's algebraic fact, and it is the reason the corpus says the modular Hamiltonian is an object of the informational sector: the state $\tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ and the generator $\tilde H_{\Psi,\mathrm{modular}}$ are both Hermitian, while the material sector $\mathbb{B}_{\Phi}$ supplies the imaginary-time direction in which the KMS analyticity takes place.
 
@@ -153,7 +155,7 @@ the last term being the central constant that a modular Hamiltonian always carri
 **The flow.** The modular flow is generated by $\tilde H_{\Psi,\mathrm{modular}}$,
 
 $$
-\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)=\tilde Q_{\mathrm n}^{2ir'_t},
+\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})=\tilde Q_{\mathrm n}^{2ir'_t},
 $$
 
 which is the same conjugation as before. The amplitude is the operator whose logarithm generates the flow; the state has no Cartan phase, so the flow is the flow of the amplitude alone.
@@ -199,12 +201,12 @@ The two displays are equal, not merely analogous. From $\tilde{Ϛ}_{\Psi}=\exp(-
 $$
 \mathcal{M}_{\mathrm{mod}}^{ir'_t}(\tilde Q_3)=e^{-ir'_t\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{ir'_t\tilde H_{\Psi,\mathrm{modular}}}
 =\big(\exp(-\tilde H_{\Psi,\mathrm{modular}})\big)^{ir'_t}\tilde Q_3\big(\exp(-\tilde H_{\Psi,\mathrm{modular}})\big)^{-ir'_t}
-=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3\,\exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t),
+=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),
 $$
-using $(\exp(-\tilde H_{\Psi,\mathrm{modular}}))^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)$. Differentiating at $r'_t=0$,
+using $(\exp(-\tilde H_{\Psi,\mathrm{modular}}))^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$. Differentiating at $r'_t=0$,
 $$
 \frac{d}{dr'_t}\mathcal{M}_{\mathrm{mod}}^{ir'_t}(\tilde Q_3)\Big|_{r'_t=0}
-=\frac{d}{dr'_t}\Big(\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3\,\exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t)\Big)\Big|_{r'_t=0}
+=\frac{d}{dr'_t}\Big(\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\Big)\Big|_{r'_t=0}
 =-i\tilde H_{\Psi,\mathrm{modular}}\tilde Q_3+i\tilde Q_3\tilde H_{\Psi,\mathrm{modular}}
 =-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3],
 $$
@@ -226,7 +228,7 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | $\mathcal{M}_{\mathrm{mod}}$ eigenvalues $\lambda_+/\lambda_-$, $\lambda_-/\lambda_+$ | $3.333849$, $0.299954$, both $>0$ |
 | $\tilde H_{\Psi,\mathrm{modular}}$ Hermitian, components real | $a_0=0.864392$, $\vec a=(-0.335401,-0.447202,0.223601)$ |
 | $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | agreement to $10^{-15}$ |
-| $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$ equals $\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3 \exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t)$, 12 random $(\tilde Q_3,r'_t)$ | max error $0$ |
+| $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$ equals $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, 12 random $(\tilde Q_3,r'_t)$ | max error $0$ |
 | $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ | $1.0$ to $10^{-39}$ |
 
@@ -371,7 +373,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 
 **Established (recomputed here).**
 
-- $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is defined by $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
+- $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is defined by $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
 - In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\mathcal{M}_{\mathrm{mod}}>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.
 - $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$: verified symbolically and numerically on a generic rotated state and a thermal state.
 - $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
@@ -396,7 +398,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 
 The modular Hamiltonian is the operator that generates the modular flow. Writing $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$, equivalently $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$, the flow is Hamiltonian evolution,
 $$
-\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3\,\exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t),
+\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}),
 \qquad
 \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3],
 $$
@@ -429,7 +431,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$ | Tomita operator and its polar decomposition |
 | $\mathcal{M}_{\mathrm{mod}}=S^*S\ge0$ | Modular operator; $\mathcal{M}_{\mathrm{mod}}>0$ iff the state is faithful |
 | $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ | Modular Hamiltonian; $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ |
-| $\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)\tilde Q_3 \exp(i\tilde H_{\Psi,\mathrm{modular}}r'_t)$ | Modular flow |
+| $\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ | Modular flow |
 | $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ | Generator identity (sign convention fixed here) |
 | $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Faithful state, positive definite, trace one |
 | $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$ | Bracket-normalised Cartan amplitude of the state, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_*=\tfrac12$ |

@@ -157,11 +157,13 @@ This is the transformation law of an **abelian gauge connection**. It is the sam
 
 ### Why the Analogy Is Structural and Not Decorative
 
-The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
+The gauge-principle article derives its abelian connection from a precise algebraic object: the **centre** $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ it localizes is a **central $*$-unitary element**. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central $*$-unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,
 
 $$
 \mathrm{U}(1) = \mathrm{U}(\mathbb{B}_{C}) \subset \mathbb{B}_{C} \subset \mathbb{B} ,
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 and the same additive transformation law. In this precise sense the Berry connection is a gauge connection **of the same type** as the one the framework supplies for electromagnetism. What differs is everything else:
 
@@ -397,7 +399,7 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})$ and $\mathcal{A}_\mu$ are built from the Hermitian form of the state module, read through the trace; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the $*$-unitary part of the centre $\mathbb{B}_{C}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
-- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}|d\tilde{Ξ}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the gauge phase $\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
+- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\tilde{Ξ}|d\tilde{Ξ}\rangle$ is the central scalar imaginary that also appears in $i r'_t$, in the gauge phase $\exp(i\theta_{\mathrm{gau}})$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
 **What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\hbar$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
 

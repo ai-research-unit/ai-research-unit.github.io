@@ -233,7 +233,7 @@ $$
 
 The norm of the amplitude is real and non-negative even though the norm of the field is complex. $\tilde F_H$ is a Hermitian element and carries two real weights; they are fixed by $W$ and by $\lvert\langle\tilde F\rangle_{\natural}\rvert$: the energy density gives their sum of squares and the invariant modulus gives their product. The amplitude is therefore the part of the field that the invariants determine, and the phase is the part they leave free.
 
-**The phase is the duality angle and the polarization.** The $*$-unitary factor is $\tilde F_0=\exp(i\alpha)\tilde u_{\mathrm r}$, whose central phase is the duality angle, $\alpha=\tfrac12\arg\langle\tilde F\rangle_{\natural}$ up to the branch, and whose unit factor $\tilde u_{\mathrm r}$ carries the polarization state of the field. A duality rotation $\tilde F\mapsto\exp(-i\theta)\tilde F$ leaves $\tilde F_H$ unchanged and multiplies $\tilde F_0$ by $\exp(-i\theta)$, so it shifts $\alpha$ by $-\theta$; it is a motion along the phase fibre, not a change of amplitude. This is the polar form of the statement that $I_1$ and $I_2$ rotate into one another while $I_1^{2}+4c^{2}I_2^{2}$ is fixed.
+**The phase is the duality angle and the polarization.** The $*$-unitary factor is $\tilde F_0=\exp(i\alpha)\tilde u_{\mathrm r}$, whose central phase is the duality angle, $\alpha=\tfrac12\arg\langle\tilde F\rangle_{\natural}$ up to the branch, and whose unit factor $\tilde u_{\mathrm r}$ carries the polarization state of the field. A duality rotation $\tilde F\mapsto\exp(-i\theta_{\mathrm{dua}})\tilde F$ leaves $\tilde F_H$ unchanged and multiplies $\tilde F_0$ by $\exp(-i\theta_{\mathrm{dua}})$, so it shifts $\alpha$ by $-\theta_{\mathrm{dua}}$; it is a motion along the phase fibre, not a change of amplitude. This is the polar form of the statement that $I_1$ and $I_2$ rotate into one another while $I_1^{2}+4c^{2}I_2^{2}$ is fixed.
 
 **The null field is a pure state.** On the cone, $I_1=I_2=0$, the amplitude is a scaled idempotent and the phase is a partial isometry, so the state $\tilde F\tilde F^{*}/\bigl(2\langle\tilde F,\tilde F\rangle_{*}\bigr)$ is pure. The radiative field is the zero divisor of the field space, and the operator-to-state map sends it to the boundary of the Bloch ball. This is the same cone that the massless spectrum article reads as the lightlike limit.
 
@@ -337,7 +337,7 @@ $$
 \star^2 = -1.
 $$
 
-This is the $\theta = \pi/2$ case of the duality rotation below. On the Riemann–Silberstein vector the dual is multiplication by $-i$: the dual field carries $\vec N\mapsto-i\vec N$ and $\vec N^*\mapsto+i\vec N^*$. The two combinations $F \pm i\star F$ are therefore the two parts,
+This is the $\theta_{\mathrm{dua}} = \pi/2$ case of the duality rotation below. On the Riemann–Silberstein vector the dual is multiplication by $-i$: the dual field carries $\vec N\mapsto-i\vec N$ and $\vec N^*\mapsto+i\vec N^*$. The two combinations $F \pm i\star F$ are therefore the two parts,
 
 $$
 F + i\,\star F \ \longleftrightarrow\ 2\vec N = 2(\vec E + ic\vec B),
@@ -347,27 +347,27 @@ $$
 
 with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\vec N$ part ($\star F = -iF$) is the **self-dual** half and the $\vec N^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\vec N^*$ adds no new data: $\vec N$ alone already carries the six real field components of $(\vec E,\vec B)$. On the complexified field space they are instead independent, and each carries one of the two three-dimensional complex representations of the Lorentz group, one at each value read by the test of an element, $L$ and $R$. The biquaternion proof uses the antisymmetric-tensor action of the Lorentz group, not the four-vector rotor conjugation.
 
-*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\mu\nu\rho\sigma}\mapsto-\epsilon_{\mu\nu\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0\eta}=B_\eta$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
+*Convention.* The dual is defined here by its action on $(\vec E,\vec B)$, with $\star^2=-1$. This is the real-time convention, and it is the $\theta_{\mathrm{dua}}=\pi/2$ case of the duality rotation below, $\star\vec N=-i\vec N$. With this definition the **self-dual** half is $F+i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half is $F-i\star F$ ($\star$-eigenvalue $+i$). Reversing the orientation density, $\epsilon_{\mu\nu\rho\sigma}\mapsto-\epsilon_{\mu\nu\rho\sigma}$, exchanges the two names and changes nothing else. The component-wise dual read off from the $i r'_t$ tensor, $(\star_{i r'_t}F)_{0\eta}=B_\eta$, is $-i\star$ and has $\star_{i r'_t}^2=+1$; it is the same decomposition, with the two parts appearing as the eigenfields $F\pm\star_{i r'_t}F$ of eigenvalue $\pm1$ instead of the eigenfields $F\pm i\star F$ of eigenvalue $\mp i$.
 
 ## Duality Rotation
 
-Maxwell's equations in a homogeneous medium possess a continuous symmetry that rotates the electric and magnetic parts into one another. For a real angle $\theta$, define
+Maxwell's equations in a homogeneous medium possess a continuous symmetry that rotates the electric and magnetic parts into one another. For a real angle $\theta_{\mathrm{dua}}$, define
 
 $$
-\vec E \mapsto \vec E\cos\theta + c\,\vec B\sin\theta,
+\vec E \mapsto \vec E\cos\theta_{\mathrm{dua}} + c\,\vec B\sin\theta_{\mathrm{dua}},
 \qquad
-\vec B \mapsto \vec B\cos\theta - \frac{1}{c}\,\vec E\sin\theta .
+\vec B \mapsto \vec B\cos\theta_{\mathrm{dua}} - \frac{1}{c}\,\vec E\sin\theta_{\mathrm{dua}} .
 $$
 
 In terms of the Riemann–Silberstein vector this is a phase rotation,
 
 $$
-\vec N \mapsto \exp(-i\theta)\,\vec N,
+\vec N \mapsto \exp(-i\theta_{\mathrm{dua}})\,\vec N,
 \qquad
-\vec N^* \mapsto \exp(+i\theta)\,\vec N^*,
+\vec N^* \mapsto \exp(+i\theta_{\mathrm{dua}})\,\vec N^*,
 $$
 
-as one checks by expanding $\exp(-i\theta)(\vec E + ic\vec B)$. The object that transforms with $\exp(+i\theta)$ is the complex conjugate $\vec N^* = \vec E - ic\vec B$, not the quaternion conjugate $\vec N^{\natural}$, which for a pure vector is $\vec N^{\natural} = -\vec N$ and therefore transforms with $\exp(-i\theta)$; the two symbols are distinct, ${}^{*}$ conjugating the coefficients of the complex vector and ${}^{\natural}$ negating it. The special case $\theta = \pi/2$,
+as one checks by expanding $\exp(-i\theta_{\mathrm{dua}})(\vec E + ic\vec B)$. The object that transforms with $\exp(+i\theta_{\mathrm{dua}})$ is the complex conjugate $\vec N^* = \vec E - ic\vec B$, not the quaternion conjugate $\vec N^{\natural}$, which for a pure vector is $\vec N^{\natural} = -\vec N$ and therefore transforms with $\exp(-i\theta_{\mathrm{dua}})$; the two symbols are distinct, ${}^{*}$ conjugating the coefficients of the complex vector and ${}^{\natural}$ negating it. The special case $\theta_{\mathrm{dua}} = \pi/2$,
 
 $$
 \vec E \mapsto c\,\vec B,
@@ -377,23 +377,23 @@ $$
 
 is the classical **electric–magnetic duality** transformation.
 
-The transformation is a symmetry of the **source-free** Maxwell equations. Writing $\vec E_\theta,\vec B_\theta$ for the rotated fields, the two equations are preserved, $\nabla\times\vec E_\theta = -c\,\partial\vec B_\theta/\partial r'_t$ and $\nabla\times\vec B_\theta = c^{-1}\partial\vec E_\theta/\partial r'_t$, the two terms of each matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
+The transformation is a symmetry of the **source-free** Maxwell equations. Writing $\vec E_\theta_{\mathrm{dua}},\vec B_\theta_{\mathrm{dua}}$ for the rotated fields, the two equations are preserved, $\nabla\times\vec E_\theta_{\mathrm{dua}} = -c\,\partial\vec B_\theta_{\mathrm{dua}}/\partial r'_t$ and $\nabla\times\vec B_\theta_{\mathrm{dua}} = c^{-1}\partial\vec E_\theta_{\mathrm{dua}}/\partial r'_t$, the two terms of each matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
 
 The effect of the duality rotation on the invariants is clean. Writing $\vec N\cdot\vec N = I_1 + 2icI_2$, the phase rotation gives
 
 $$
-\vec N\cdot\vec N \mapsto \exp(-2i\theta)\,\vec N\cdot\vec N,
+\vec N\cdot\vec N \mapsto \exp(-2i\theta_{\mathrm{dua}})\,\vec N\cdot\vec N,
 $$
 
 so that
 
 $$
-I_1 \mapsto I_1\cos 2\theta + 2c\,I_2\sin 2\theta,
+I_1 \mapsto I_1\cos 2\theta_{\mathrm{dua}} + 2c\,I_2\sin 2\theta_{\mathrm{dua}},
 \qquad
-2c\,I_2 \mapsto 2c\,I_2\cos 2\theta - I_1\sin 2\theta .
+2c\,I_2 \mapsto 2c\,I_2\cos 2\theta_{\mathrm{dua}} - I_1\sin 2\theta_{\mathrm{dua}} .
 $$
 
-In other words, the pair $(I_1,\,2cI_2)$ rotates by the angle $-2\theta$; the quantity
+In other words, the pair $(I_1,\,2cI_2)$ rotates by the angle $-2\theta_{\mathrm{dua}}$; the quantity
 
 $$
 I_1^2 + 4c^2 I_2^2 = \left|\vec N\cdot\vec N\right|^2 = \frac{1}{\epsilon^2}\left|\langle\tilde{F}\rangle_{\natural}\right|^2
@@ -402,10 +402,10 @@ $$
 is invariant under duality as well as under Lorentz transformations. Each of $I_1$ and $I_2$ is separately Lorentz invariant, but duality mixes them; only the combination above is invariant under both. Equivalently, in biquaternion language,
 
 $$
-\langle\tilde{F}\rangle_{\natural} \mapsto \exp(-2i\theta)\,\langle\tilde{F}\rangle_{\natural},
+\langle\tilde{F}\rangle_{\natural} \mapsto \exp(-2i\theta_{\mathrm{dua}})\,\langle\tilde{F}\rangle_{\natural},
 $$
 
-since the scalar $\exp(-i\theta)$ is central and therefore commutes with quaternion conjugation. Duality is not a Lorentz transformation: it is an independent $\mathrm{U}(1)$ symmetry of the source-free equations that rotates the complex biquaternion norm.
+since the scalar $\exp(-i\theta_{\mathrm{dua}})$ is central and therefore commutes with quaternion conjugation. Duality is not a Lorentz transformation: it is an independent $\mathrm{U}(1)$ symmetry of the source-free equations that rotates the complex biquaternion norm.
 
 ## How the Invariants Constrain the Field
 
@@ -496,9 +496,9 @@ so that $\tilde u$ is a unit pure element, $\tilde u^2=-e_t$, the axis of the fl
 **The two rates.** The rotor is the cosine and the sine of one complex angle,
 
 $$
-U(t)=\cos\theta\,e_t+\tilde u\,\sin\theta,
+U(t)=\cos\theta_{\mathrm{dua}}\,e_t+\tilde u\,\sin\theta_{\mathrm{dua}},
 \qquad
-\theta=\tfrac12\,t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
+\theta_{\mathrm{dua}}=\tfrac12\,t\,i\sqrt{\epsilon}\,(\sigma+i\omega),
 $$
 
 one formula for both regimes, since $\tilde u^2=-e_t$ makes the exponential the cosine and sine of a scalar angle: at $\omega=0$ the angle is imaginary and the flow is a boost at the rate $\sigma/c$, at $\sigma=0$ it is real and the flow is a rotation at the rate $\omega/c$, and in general the two are carried together. Read on the display of the congruence, the same statement is
@@ -551,7 +551,7 @@ Its real and imaginary parts are the two invariants of the field; the biquaterni
 
 The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$, whose self-product $\vec N\cdot\vec N = I_1 + 2icI_2$ carries the two invariants, and which obeys the source-free equation $i\,c\,\partial\vec N/\partial r'_t = c\,\nabla\times\vec N$ with $\nabla\cdot\vec N = 0$.
 
-Duality is the rotation $\vec N\mapsto \exp(-i\theta)\vec N$; at $\theta = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $-2\theta$, leaving $I_1^2 + 4c^2I_2^2$ invariant.
+Duality is the rotation $\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N$; at $\theta_{\mathrm{dua}} = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $-2\theta_{\mathrm{dua}}$, leaving $I_1^2 + 4c^2I_2^2$ invariant.
 
 The field also has a polar reading, $\tilde F=\tilde F_H\tilde F_0$: the amplitude carries the intensity and the invariant modulus, and the phase carries the duality angle and the polarization.
 

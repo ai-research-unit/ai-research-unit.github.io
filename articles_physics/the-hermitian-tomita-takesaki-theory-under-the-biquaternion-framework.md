@@ -178,10 +178,12 @@ which is an **inner** automorphism of $\mathbb{B}$, implemented by the $*$-unita
 $$
 \tilde H_{\Psi,\mathrm{modular}} := -\log\tilde{Ϛ}_{\Psi} \ \in\mathbb{B}_{\Psi},
 $$
-one has $\tilde{Ϛ}_{\Psi}^{ir'_t}=\exp(-ir'_t\tilde H_{\Psi,\mathrm{modular}})$ and
+one has $\tilde{Ϛ}_{\Psi}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and
 $$
-\sigma_{r'_{t}}(\tilde{Q}_3)=\exp(-ir'_t\tilde H_{\Psi,\mathrm{modular}})\tilde{Q}_3\,\exp(ir'_t\tilde H_{\Psi,\mathrm{modular}}), \qquad \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde{Q}_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3].
+\sigma_{r'_{t}}(\tilde{Q}_3)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde{Q}_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}), \qquad \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde{Q}_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3].
 $$
+
+Throughout, $\theta_{\mathrm{evo}}:=r'_t$ is the elapsed coordinate time, a real number: the generator $\tilde H_{\Psi,\mathrm{modular}}$ is Hermitian, its eigenvalues are real, and the flow it generates is $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, a unitary whose exponent is $i$ times a real spectrum.
 
 ### The Identities, Verified
 

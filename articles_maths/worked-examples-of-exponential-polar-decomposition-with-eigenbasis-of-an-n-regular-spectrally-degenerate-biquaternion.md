@@ -18,7 +18,7 @@ e_t+\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z,
 2e_t+2\vec e_x+2i\vec e_y.
 $$
 
-Each element is written as $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, and as $\tilde Q=r e^{i\alpha}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$.
+Each element is written as $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, and as $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$.
 
 ## The Chain, the Block and the Factors
 

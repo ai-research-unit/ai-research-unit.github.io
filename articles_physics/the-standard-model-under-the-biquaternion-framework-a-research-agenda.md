@@ -31,10 +31,12 @@ The read-list article *The Gauge Principle in Biquaternionic Form* derives the f
 The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its $*$-unitary part is
 
 $$
-\mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta) : \theta \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
+\mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta_{\mathrm{cen}}) : \theta_{\mathrm{cen}} \in \mathbb{R}\} \;\subset\; \mathbb{B}_{C} .
 $$
 
-Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is invariant under the global phase $\tilde{Ξ}\mapsto \exp(i\theta)\tilde{Ξ}$. Making the phase local, $\lambda = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$, forces a connection with the transformation law
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
+
+Because $\lambda$ is central and constant, it passes through the gradient, so the massless biquaternion equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is invariant under the global phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. Making the phase local, $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, forces a connection with the transformation law
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
@@ -44,9 +46,11 @@ D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi},
 D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
+
 under which $D\tilde{Ξ}$ transforms by the phase factor. The field strength is the vector part of $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}$ and satisfies the curvature identity $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$. The abelian gauge group is **canonically attached to the algebra**: the only phase that commutes with the whole algebra must lie in the centre, and the centre is one complex dimension, so no choice of representation is made in selecting it.
 
-Two properties of this factor are as important for the agenda as the factor itself. First, the charge $ϙ$ is a **parameter**; the algebra does not fix it. Second, a central element acts as a **scalar** on the algebra: left multiplication by $\lambda = \exp(i\theta)$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is **vector-like** and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
+Two properties of this factor are as important for the agenda as the factor itself. First, the charge $ϙ$ is a **parameter**; the algebra does not fix it. Second, a central element acts as a **scalar** on the algebra: left multiplication by $\lambda = \exp(i\theta_{\mathrm{cen}})$ multiplies every element by the same factor. A gauge group drawn from the centre therefore assigns every element the same charge — it is **vector-like** and cannot distinguish left from right. This is established in *Chiral Fermions in the Biquaternion Framework*, and it is the reason the abelian factor as it stands cannot be weak hypercharge, which is chiral.
 
 ### The compact algebra inside the material sector
 
@@ -136,7 +140,7 @@ $$
 
 The derivative is gauge covariant for arbitrary $ϙ_L,ϙ_R$, and the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**. This **mass selection rule** is the framework's form of the Standard Model's requirement that a chiral fermion acquire mass only through a compensating scalar. The maps are the chiral article's, written with the charge element $b$.
 
-**The centre gives one charge, not two.** The framework's **own** gauge group, drawn from the centre, is vector-like: a central element multiplies every element by the same scalar, so the two parts receive the same charge, and it cannot be a chiral gauge group. (The article records a qualification: under the alternative real-structure reading the central phase would act axially, with $\exp(i\theta)$ on the $L$ part and $\exp(-i\theta)$ on the $R$ part, and which reading is physical is not settled. Under neither reading does the centre supply independent left and right charges, so a derived chiral gauge group remains out of reach either way.)
+**The centre gives one charge, not two.** The framework's **own** gauge group, drawn from the centre, is vector-like: a central element multiplies every element by the same scalar, so the two parts receive the same charge, and it cannot be a chiral gauge group. (The article records a qualification: under the alternative real-structure reading the central phase would act axially, with $\exp(i\theta_{\mathrm{cen}})$ on the $L$ part and $\exp(-i\theta_{\mathrm{cen}})$ on the $R$ part, and which reading is physical is not settled. Under neither reading does the centre supply independent left and right charges, so a derived chiral gauge group remains out of reach either way.)
 
 **The mass term is the linear pair.** The framework's **mass term** is the linear chiral pair
 
@@ -289,7 +293,7 @@ so that the pair no longer shares one mass: the second-order equations become ei
 - **Unified spins.** The quaternionic equation is said to describe, in one framework, particles of spin $0$, $\tfrac12$, $1$ and $\tfrac32$.
 - **Two classes of solutions.** Point-like **partons** in two families, **quarks and leptons**; and **extended hadrons**.
 - **Quantum numbers from the equations.** The electric charges come out correct and fractional or integral as required, and **baryonic charge** is carried; the **neutrino and the u-quark masses are zero by eigenvalue equations** — a claim the same authors partly withdraw in the 1996 note recorded below.
-- **Electroweak sector.** Claimed **identical to the Standard Model's, with the same two free parameters $e$ and $\sin^2\theta$**, and **no Higgs symmetry-breaking mechanism**.
+- **Electroweak sector.** Claimed **identical to the Standard Model's, with the same two free parameters $e$ and $\sin^2\theta_{\mathrm{cen}}$**, and **no Higgs symmetry-breaking mechanism**.
 - **The paper's own concession.** For the extended-hadron class, no simple mass eigenvalue equation is claimed and the **strong interaction is essentially non-local**.
 
 This bears on the agenda in two places, and in opposite directions.

@@ -66,7 +66,9 @@ where $\tilde\Xi^{*}$ is the conjugate the polar-form article uses, and the prod
 
 ### Why this ordering, in these letters
 
-**The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum.** The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{iS_{\tilde\Xi}/\hbar}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\vec p\cdot\vec s/\hbar}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\vec p\cdot\vec s/\hbar}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
+**The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum.** The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\vec p\cdot\vec s/\hbar}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\vec p\cdot\vec s/\hbar}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
+
+Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 **The half-offset is fixed by the requirement that the first moment be the current and not twice it.** With the full offset, the transform reproduces the density after a rescaling but the first moment comes out with the wrong coefficient, and the wrong coefficient is a factor of two that no normalisation can repair. The half-offset is the standard choice and the corpus adopts it for the standard reason.
 
@@ -211,7 +213,7 @@ so the two quadratures are the amplitude split by the phase into a cosine and a 
 
 ### The limit, in one line
 
-**In the limit in which the phase varies slowly the Wigner element collapses onto the mass shell and becomes the fluid's phase-space density.** Write the field in the polar form's variables, $\tilde\Xi=\lVert\tilde\Xi\rVert\,e^{iS_{\tilde\Xi}/\hbar}u$ with $u$ a fixed unit element, and expand the two offsets to first order:
+**In the limit in which the phase varies slowly the Wigner element collapses onto the mass shell and becomes the fluid's phase-space density.** Write the field in the polar form's variables, $\tilde\Xi=\lVert\tilde\Xi\rVert\,e^{i\theta_{\mathrm{phs}}}u$ with $u$ a fixed unit element, and expand the two offsets to first order:
 
 $$
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)

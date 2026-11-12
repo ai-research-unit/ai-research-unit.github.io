@@ -61,9 +61,11 @@ We collect the mode operators that the parents supply, because the rest of the a
 
 $$
 \tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_{r=1}^{2}
-\Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)\Big],
+\Big[a_{\mathrm{fop},r}(\vec p)w^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}^{\dagger}(\vec p)v^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $a_{\mathrm{fop},r}$ annihilating particles and $b_{\mathrm{fop},r}$ annihilating antiparticles. The mode algebra is
 

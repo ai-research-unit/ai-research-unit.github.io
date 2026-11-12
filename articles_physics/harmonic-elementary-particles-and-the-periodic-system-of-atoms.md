@@ -35,10 +35,12 @@ with the paper's pure-vector $\nabla$. Its scalar part is the conservation law $
 A **monochromatic** field is one whose time dependence is a single exponential,
 
 $$
-\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\theta_{\mathrm{mat}}),
 \qquad
 \omega > 0 .
 $$
+
+Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.
 
 Substituting, $\partial/\partial\tau \to -i\omega$, so the inertia equation becomes
 
@@ -361,7 +363,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\mathcal{Q}_{\mathrm{h}} = k + \vec K$ | Structural biquaternion; any biquaternion function used as a convolution kernel |
 | $\tilde J_{\Phi,\mathrm{eg}} * K$ | Biquaternion convolution, with component convolutions; preserves solutions of the free equation |
 | $\delta(x_j - n h_j)$ | Lattice of shifted $\delta$-functions; the crystal structural biquaternion |
-| $\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
+| $\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\theta_{\mathrm{mat}})$ |
 | $\tilde{Ξ}$ | Helmholtz potential, $\Delta_\Phi\tilde{Ξ} + \omega^2\tilde{Ξ} = 0$ |
 | $\tilde{Ξ}_{nm} = j_n(\omega r)P_{nm}(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |

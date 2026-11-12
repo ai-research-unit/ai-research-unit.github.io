@@ -19,14 +19,14 @@ with $\tilde A_{\Phi}$ the potential biquaternion and $ϙ$ the charge. *The Pola
 The word is the one the polar article uses, in the exponential form of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*:
 
 $$
-\tilde\Xi=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$ a real scale, $\alpha$ a central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The field is the element $\tilde\Xi$ of the minimal-coupling article; the present article writes $\tilde\Xi$ for it, as the polar article does, because the subscript would carry no information here. The label $\mathrm{sp}$ is the corpus's Dirac-field label, fixed in *Algebra and Element Conventions*, and it survives below in $\tilde S_{\Psi,\mathrm{sp}}$, which names the spin element of that field.
+with $r>0$ a real scale, $\theta_{\mathrm{pha}}$ a central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The field is the element $\tilde\Xi$ of the minimal-coupling article; the present article writes $\tilde\Xi$ for it, as the polar article does, because the subscript would carry no information here. The label $\mathrm{sp}$ is the corpus's Dirac-field label, fixed in *Algebra and Element Conventions*, and it survives below in $\tilde S_{\Psi,\mathrm{sp}}$, which names the spin element of that field.
 
 **The domain has two halves, and both are stated at the outset.** The first is the polar article's: the word is a parametrisation of the group of units, so it exists exactly where $N(\tilde\Xi)\neq0$, and it fails on every $N$-degenerate field. The second is new here: the connection must have **central** component coefficients. Central components are the abelian case, and the abelian case is electromagnetism; a $\mathbb{B}$-valued connection is the non-abelian extension, and it lies outside this article. The corpus states the restriction in *Operator and Calculus Conventions*, where $\tilde\nabla_{\mathrm{gco},\mu}$ is called a central scalar that commutes with every element, and the minimal-coupling article works in the same abelian case. Every theorem below is conditional on both halves. §*The Connection Is Central* says what the second costs, and Open Question 4 says what happens without it.
 
@@ -60,7 +60,7 @@ The four factors and their types are those of the polar article, and this articl
 | # | factor | range | type |
 | --- | --- | --- | --- |
 | 1 | $r$ | $r>0$ | real central scale |
-| 2 | $e^{i\alpha}$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central phase |
+| 2 | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central phase |
 | 3 | $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ a real unit vector | Hermitian positive, $N=1$ |
 | 4 | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a real unit vector | real unit quaternion, $N=1$ |
 
@@ -96,12 +96,12 @@ $$
 
 ### The Shifted Bracket
 
-*Proposition.* Let the connection have central component coefficients, and let $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$. Then
+*Proposition.* Let the connection have central component coefficients, and let $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$. Then
 
 $$
 \tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
 =\tilde\Xi\left[\frac{1}{2}\frac{\partial_\mu\rho}{\rho}
-+i\Bigl(\partial_\mu\alpha+\frac{ϙ}{\hbar}A_\mu\Bigr)
++i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu\Bigr)
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}\right],
 $$
@@ -117,11 +117,11 @@ The four brackets, with the second now shifted, are the following.
 | term | type | zero when |
 | --- | --- | --- |
 | $\tfrac12\partial_\mu\rho/\rho$ | real central scalar | the density is constant |
-| $i\bigl(\partial_\mu\alpha+\frac{ϙ}{\hbar}A_\mu\bigr)$ | central imaginary | the covariant phase gradient vanishes |
+| $i\bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu\bigr)$ | central imaginary | the covariant phase gradient vanishes |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
 
-**The second row is a gradient and the other three are parameters.** The third and fourth brackets vanish when a factor is constant, and the first when a factor is constant in scale. The second vanishes when the covariant phase gradient vanishes, which is not the same condition: a constant angle with $A_\mu\neq0$ gives $\partial_\mu\alpha+\frac{ϙ}{\hbar}A_\mu\neq0$, and a linear angle can make the sum vanish on a nonzero potential. The row records the condition that the coupled equation actually uses.
+**The second row is a gradient and the other three are parameters.** The third and fourth brackets vanish when a factor is constant, and the first when a factor is constant in scale. The second vanishes when the covariant phase gradient vanishes, which is not the same condition: a constant angle with $A_\mu\neq0$ gives $\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu\neq0$, and a linear angle can make the sum vanish on a nonzero potential. The row records the condition that the coupled equation actually uses.
 
 **The objection, and its answer.** A coupling is expected to add a term, and the display appears to have absorbed it. The absorption is exact, and it is the content: the phase bracket collects every central imaginary contribution there is, and the connection's component coefficient is one. A reader who looks for the interaction term as a separate summand is looking for it in the wrong decomposition. It sits in the second bracket, in the company of the gradient it corrects.
 
@@ -130,7 +130,7 @@ The four brackets, with the second now shifted, are the following.
 The second bracket is a four-vector, and with the connection it is the **covariant wavevector**:
 
 $$
-\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.
+\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\tilde A_{\Phi}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}.
 $$
 
 *Proposition.* $\tilde K_{\Phi,\mathrm{gco}}$ lies in the material sector $\mathbb{B}_{\Phi}$, and for a plane wave, where the frame and the density are constant and the angle is linear,
@@ -159,7 +159,7 @@ Two elements now carry the name of momentum, and they differ by the potential's 
 
 | element | definition | gauge | what it is |
 | --- | --- | --- | --- |
-| $\tilde K_{\Phi}$ | $\tilde\nabla_\Phi\alpha$ | shifts by $+\frac{ϙ}{\hbar}\tilde\nabla_\Phi\Gamma$ | the gradient of the word's angle; the canonical wavevector |
+| $\tilde K_{\Phi}$ | $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | shifts by $+\frac{ϙ}{\hbar}\tilde\nabla_\Phi\Gamma$ | the gradient of the word's angle; the canonical wavevector |
 | $\tilde K_{\Phi,\mathrm{gco}}$ | $\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}$ | invariant | the wavevector of the coupled pair; the kinetic one |
 
 The free article's sentence is therefore amended, and not weakened: *the momentum is the gradient of the angle* becomes *the kinetic momentum is the gradient of the angle plus the potential's share*. The two coincide when the potential vanishes, which is why the free sentence was right in its own case.
@@ -199,32 +199,32 @@ $$
 
 with $\lambda$ central and of unit modulus.
 
-*Proposition.* Let $\tilde\Xi_2=\lambda\tilde\Xi$ with $\lambda=e^{i\beta}$, $\beta$ real. Then the word's scale, rapidity, boost axis, rotor angle and rotor axis are unchanged, and its angle becomes $\alpha+\beta$.
+*Proposition.* Let $\tilde\Xi_2=\lambda\tilde\Xi$ with $\lambda=e^{i\theta_{\mathrm{gau}}}$, $\theta_{\mathrm{gau}}$ real. Then the word's scale, rapidity, boost axis, rotor angle and rotor axis are unchanged, and its angle becomes $\theta_{\mathrm{pha}}+\theta_{\mathrm{gau}}$.
 
-*Proof.* A central unimodular factor multiplies the element and passes through every factor. The element $\tilde Q'=\tilde\Xi/(re^{i\alpha})$ is therefore unchanged, and $\tilde Q'$ is what the polar decomposition reads for the boost and the rotor. The quaternionic norm multiplies by $\lambda^{2}$, so its modulus is unchanged and its argument gains $2\beta$; the scale is the square root of the modulus and the angle is half the argument.
+*Proof.* A central unimodular factor multiplies the element and passes through every factor. The element $\tilde Q'=\tilde\Xi/(re^{i\theta_{\mathrm{pha}}})$ is therefore unchanged, and $\tilde Q'$ is what the polar decomposition reads for the boost and the rotor. The quaternionic norm multiplies by $\lambda^{2}$, so its modulus is unchanged and its argument gains $2\theta_{\mathrm{gau}}$; the scale is the square root of the modulus and the angle is half the argument.
 
 **The eight parameters split one and seven.** The gauge group moves exactly the factor it is built from, and it leaves the frame, the density and the spin direction alone. That is the sharpest statement the chart makes about minimal coupling, and it is a statement of count.
 
-| parameter | under $\tilde\Xi\mapsto e^{i\beta}\tilde\Xi$ | status |
+| parameter | under $\tilde\Xi\mapsto e^{i\theta_{\mathrm{gau}}}\tilde\Xi$ | status |
 | --- | --- | --- |
-| $\alpha$ | $\alpha+\beta$ | the gauge parameter's seat |
+| $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}+\theta_{\mathrm{gau}}$ | the gauge parameter's seat |
 | $r$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta$, $\vec u_{\mathrm r}$ | unchanged | invariant, seven in number |
 
-**The half-turn, and the rotor's sign.** The angle's declared range is half a turn, so a shift of the angle is a shift modulo $\pi$. Take a representative with $\alpha$ shifted by an odd multiple of $\pi$. The factor $e^{i\alpha}$ changes sign, so the element is recovered only if another factor changes sign with it, and the only candidate is the rotor: $\tilde u_{\mathrm r}\mapsto-\tilde u_{\mathrm r}$, that is, $\theta\mapsto\theta+2\pi$ on the same axis. That is the double cover and nothing else, and it is invisible to the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, because the sign cancels between the rotor and its conjugate. No observable of this article feels the reduction.
+**The half-turn, and the rotor's sign.** The angle's declared range is half a turn, so a shift of the angle is a shift modulo $\pi$. Take a representative with $\theta_{\mathrm{pha}}$ shifted by an odd multiple of $\pi$. The factor $e^{i\theta_{\mathrm{pha}}}$ changes sign, so the element is recovered only if another factor changes sign with it, and the only candidate is the rotor: $\tilde u_{\mathrm r}\mapsto-\tilde u_{\mathrm r}$, that is, $\theta\mapsto\theta+2\pi$ on the same axis. That is the double cover and nothing else, and it is invisible to the spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, because the sign cancels between the rotor and its conjugate. No observable of this article feels the reduction.
 
 ### The Density Is the Gauge-Invariant Part of the Norm
 
 The two norms of the polar article separate further under the gauge group.
 
 $$
-\langle\tilde\Xi_2\rangle_{\natural}=\rho\,e^{2i(\alpha+\beta)}=\lambda^{2}\langle\tilde\Xi\rangle_{\natural},
+\langle\tilde\Xi_2\rangle_{\natural}=\rho\,e^{2i(\theta_{\mathrm{pha}}+\theta_{\mathrm{gau}})}=\lambda^{2}\langle\tilde\Xi\rangle_{\natural},
 \qquad
 \langle\tilde\Xi_2\rangle_{*}=\gamma\rho=\langle\tilde\Xi\rangle_{*},
 $$
 
 with $\rho=r^{2}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$.
 
-**The quaternionic norm is not gauge invariant, and its modulus is.** The whole of the invariance sits in $\rho$; the argument $2\alpha$ is shifted by twice the gauge function. That is the polar article's observation that no bilinear reads the angle, sharpened: the reason is now visible, since the shift doubles because the norm is built from two factors of the field, each carrying $e^{i\alpha}$.
+**The quaternionic norm is not gauge invariant, and its modulus is.** The whole of the invariance sits in $\rho$; the argument $2\theta_{\mathrm{pha}}$ is shifted by twice the gauge function. That is the polar article's observation that no bilinear reads the angle, sharpened: the reason is now visible, since the shift doubles because the norm is built from two factors of the field, each carrying $e^{i\theta_{\mathrm{pha}}}$.
 
 **The density, the velocity and the spin are the invariant readings.** The polar article's table of what each bilinear reads keeps its rows and gains a column.
 
@@ -233,7 +233,7 @@ with $\rho=r^{2}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$.
 | $\rho$ | $r$ | invariant |
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | $r$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | invariant |
 | $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | $r$, $\theta$, $\vec u_{\mathrm r}$ | invariant |
-| $\langle\tilde\Xi\rangle_{\natural}$ | $\rho$, $2\alpha$ | shifts by $\lambda^{2}$ |
+| $\langle\tilde\Xi\rangle_{\natural}$ | $\rho$, $2\theta_{\mathrm{pha}}$ | shifts by $\lambda^{2}$ |
 
 ### Why the Common Phase Is the Gauged One
 
@@ -251,10 +251,10 @@ One gauge-invariant number survives the shift. It is the loop integral, and it i
 
 $$
 \oint\sum_\mu\bigl(\tilde K_{\Phi,\mathrm{gco}}\bigr)_\mu\,dR_\mu
-=\delta\alpha+\frac{ϙ}{\hbar}\oint\sum_\mu A_\mu\,dR_\mu .
+=\delta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\oint\sum_\mu A_\mu\,dR_\mu .
 $$
 
-**The winding is quantised by single-valuedness.** The field returns to itself around the loop, so the word returns to itself. The scale and the boost are single-valued, and the rotor is single-valued up to sign, so the only factor that can return with an offset is the central phase: $e^{i\delta\alpha}=1$, and $\delta\alpha$ is a multiple of $2\pi$ for a closed path on which the rotor also returns, and a multiple of $\pi$ when it returns with the opposite sign. That parity is the rotor's sign, recorded in the preceding section. The potential's circulation is then the gauge-invariant integral less a multiple of $\pi$, which is the Aharonov–Bohm phase in the chart's language: a flux, read as the mismatch between a loop integral and a winding.
+**The winding is quantised by single-valuedness.** The field returns to itself around the loop, so the word returns to itself. The scale and the boost are single-valued, and the rotor is single-valued up to sign, so the only factor that can return with an offset is the central phase: $e^{i\delta\theta_{\mathrm{pha}}}=1$, and $\delta\theta_{\mathrm{pha}}$ is a multiple of $2\pi$ for a closed path on which the rotor also returns, and a multiple of $\pi$ when it returns with the opposite sign. That parity is the rotor's sign, recorded in the preceding section. The potential's circulation is then the gauge-invariant integral less a multiple of $\pi$, which is the Aharonov–Bohm phase in the chart's language: a flux, read as the mismatch between a loop integral and a winding.
 
 ## The Equation in Polar Variables
 
@@ -262,7 +262,7 @@ $$
 
 The pair in momentum space is the free one with the canonical wavevector replaced.
 
-*Proposition.* Let $\tilde\Xi=\tilde\Xi_0\exp(i\alpha)$ with $\alpha$ linear in $\tilde R_\Phi$ and $\tilde\Xi_0$ constant. Then the coupled pair is equivalent to
+*Proposition.* Let $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}$ linear in $\tilde R_\Phi$ and $\tilde\Xi_0$ constant. Then the coupled pair is equivalent to
 
 $$
 i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_0^{R}=k_m\tilde\Xi_0^{L},
@@ -427,7 +427,7 @@ with $\tilde F$ the field-strength biquaternion and $\tilde\nabla_{\mathrm{gco}}
 A slow state is one whose boost is small and whose angle is dominated by the rest phase. Write
 
 $$
-\alpha=-k_m r'_t+\sigma,
+\theta_{\mathrm{pha}}=-k_m r'_t+\sigma,
 \qquad
 k_m r'_t=\frac{mc^{2}}{\hbar}\,t,
 $$
@@ -464,7 +464,7 @@ What the polar form does **not** add is the point of this article. It adjoins no
 
 1. **The conserved current.** The current the word supplies is $\rho\tilde V_{\Phi}$, and it is gauge invariant by construction. Whether it is conserved on solutions of the coupled pair is not settled here: its divergence is the transport equation the chart leaves open, exactly as in the free article. The algebra's own bilinear is not the current, and the exact solution that shows it lies on the cone.
 
-2. **The angle's status.** The free article asks whether the angle is observable through an interference of two branches. The coupled article settles half of it: under the local symmetry the angle is a gauge function, and only the covariant wavevector is physical. What remains is the holonomy of §*The Loop and the Angle*: whether the winding $\delta\alpha$ has a gauge-invariant residue beyond the loop integral written there, and whether the half-turn range and the rotor's sign carry a topological reading.
+2. **The angle's status.** The free article asks whether the angle is observable through an interference of two branches. The coupled article settles half of it: under the local symmetry the angle is a gauge function, and only the covariant wavevector is physical. What remains is the holonomy of §*The Loop and the Angle*: whether the winding $\delta\theta_{\mathrm{pha}}$ has a gauge-invariant residue beyond the loop integral written there, and whether the half-turn range and the rotor's sign carry a topological reading.
 
 3. **The connection terms.** The covariant logarithmic derivative carries a boost connection and a rotor connection, and the coupling has shifted the phase term and neither of the other two. Whether the pair of frame connections has a geometric reading — a connection on the frame bundle of the algebra, with the curvature term of the second-order equation as its field strength — is not attempted here.
 
@@ -482,23 +482,23 @@ the potential read in the field's own frame. Whether that object has a reading �
 
 ## Summary
 
-The polar form of the coupled Dirac field of this corpus is the polar form of the free field with the canonical wavevector replaced by the covariant one. The word is $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, with $r>0$ the scale, $\alpha$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor, and it exists exactly where $N(\tilde\Xi)\neq0$.
+The polar form of the coupled Dirac field of this corpus is the polar form of the free field with the canonical wavevector replaced by the covariant one. The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor, and it exists exactly where $N(\tilde\Xi)\neq0$.
 
 The covariant derivative enters at one place. The logarithmic derivative of the word has the free article's four brackets, with the second shifted:
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi\left[\frac{1}{2}\frac{\partial_\mu\rho}{\rho}+i\Bigl(\partial_\mu\alpha+\frac{ϙ}{\hbar}A_\mu\Bigr)+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}\right].
+\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi\left[\frac{1}{2}\frac{\partial_\mu\rho}{\rho}+i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu\Bigr)+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}\right].
 $$
 
 There is no fifth bracket. The interaction is inside the second, and none of the other three can hold it, because each is of a type a central scalar is not.
 
-The shift is the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\alpha+\frac{ϙ}{\hbar}\tilde A_{\Phi}$, an element of the material sector, and for a plane wave $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi$. The momentum-space system of the coupled pair is the free one with $\tilde K_{\Phi}$ replaced by $\tilde K_{\Phi,\mathrm{gco}}$, including the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$.
+The shift is the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\tilde A_{\Phi}$, an element of the material sector, and for a plane wave $\tilde\nabla_{\mathrm{gco}}\tilde\Xi=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi$. The momentum-space system of the coupled pair is the free one with $\tilde K_{\Phi}$ replaced by $\tilde K_{\Phi,\mathrm{gco}}$, including the mass shell $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$.
 
 The velocity is read from the covariant wavevector: $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\frac{\hbar}{m}\tilde K_{\Phi,\mathrm{gco}}$, so $\tilde P_{\Phi,\mathrm{gco}}=m\tilde V_{\Phi}$, and the canonical momentum is $\tilde P_{\Phi}=m\tilde V_{\Phi}-ϙ\tilde A_{\Phi}$. The mass term remains a frame factor, $\tilde\Xi_0^{L}=-\mathcal B_{\Psi}\tilde\Xi_0^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}=\tilde K_{\Phi,\mathrm{gco}}/(ik_m)$, and the relation carries neither $k_m$ nor the potential.
 
 The mass shell is one hyperboloid shape with one radius and two centres: $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ for the covariant components, and $(\pi_t+\frac{ϙ}{\hbar}a'_t)^{2}-|\vec\pi+\frac{ϙ}{\hbar}\vec A|^{2}=k_m^{2}$ for the canonical ones. The covariant surface is the one the algebra draws. The canonical surface is its translate, congruent to it and displaced by $-ϙ\tilde A_{\Phi}$. A constant potential translates the surface and leaves the radius, which is why no potential opens a gap.
 
-The gauge group moves one parameter of the eight. With $\lambda=\exp(\frac{ iϙ\Gamma}{\hbar})=e^{i\beta}$ the scale, the rapidity, the boost axis, the rotor angle and the rotor axis are unchanged, the angle becomes $\alpha+\beta$, and the quaternionic norm becomes $\lambda^{2}\langle\tilde\Xi\rangle_{\natural}$; the density, the current, the velocity and the spin direction are invariant. The relative phase of the two parts is not a multiplication by a central scalar, so the chart has no parameter for it, and the common phase is the only one that can be localized.
+The gauge group moves one parameter of the eight. With $\lambda=e^{i\theta_{\mathrm{gau}}}=\exp(\frac{iϙ\Gamma}{\hbar})$ the scale, the rapidity, the boost axis, the rotor angle and the rotor axis are unchanged, the angle becomes $\theta_{\mathrm{pha}}+\theta_{\mathrm{gau}}$, and the quaternionic norm becomes $\lambda^{2}\langle\tilde\Xi\rangle_{\natural}$; the density, the current, the velocity and the spin direction are invariant. The relative phase of the two parts is not a multiplication by a central scalar, so the chart has no parameter for it, and the common phase is the only one that can be localized.
 
 The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$, the density times the kinetic four-velocity, and it is gauge invariant because both factors are. The bilinear $i\tilde\Xi\tilde\Xi^{*}$ remains the mirror of the current and not the current, and the exact solution on which the minimal-coupling article exhibits its failure is a zero divisor: the chart is silent there. The spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and the connection cannot touch it, being central in each component.
 
@@ -522,19 +522,19 @@ The second-order equation carries the curvature, $\bigl(\sum_\mu\tilde\nabla_{\m
 | $\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
 | $ϙ$ | Charge; the algebra fixes neither its value nor its sign |
 | $\frac{ϙ}{\hbar}$ | The coupling coefficient; the mass does not enter |
-| $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
+| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
 | $r>0$, $\rho=r^{2}$ | Scale and density; real, central, gauge invariant |
-| $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The word's angle; the gauge parameter's seat; the norm's argument is $2\alpha$ |
+| $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The word's angle; the gauge parameter's seat; the norm's argument is $2\theta_{\mathrm{pha}}$ |
 | $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | Boost; Hermitian positive, $N=1$; $\tilde U_{\Psi,\mathrm b}^{2}=\mathcal B_{\Psi}^{-1}$ |
 | $\tilde u_{\mathrm r}$ | Rotor; real unit quaternion, $N=1$ |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor; $\cosh\theta_{\mathrm{rpd}}e_t-i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ |
-| $\tilde K_{\Phi}=\tilde\nabla_\Phi\alpha$ | Canonical wavevector; shifts under the gauge group |
+| $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | Canonical wavevector; shifts under the gauge group |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_{\Phi}+\frac{ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
 | $\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=-k_m^{2}$ | The mass shell, as the frame's unitarity |
 | $\tilde P_{\Phi}=\hbar\tilde K_{\Phi}$ | Canonical momentum; $\tilde P_{\Phi}=m\tilde V_{\Phi}-ϙ\tilde A_{\Phi}$ |
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity of the word; $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$; $\tilde P_{\Phi,\mathrm{gco}}=m\tilde V_{\Phi}$ |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ | Lorentz factor and velocity of the frame |
-| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; on the field $\rho e^{2i\alpha}$ |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; on the field $\rho e^{2i\theta_{\mathrm{pha}}}$ |
 | $\langle\tilde Q\rangle_{*}=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm; on the field $\gamma\rho$ |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, $\hat s^{2}=-e_t$ | Spin direction |
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}=\frac{\hbar}{m}\rho\tilde K_{\Phi,\mathrm{gco}}$ | Current |
@@ -542,13 +542,15 @@ The second-order equation carries the curvature, $\bigl(\sum_\mu\tilde\nabla_{\m
 | $i\tilde\Xi\tilde\Xi^{*}=\rho(i\cosh\theta_{\mathrm{rpd}}e_t-\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b})$ | The bilinear that is the mirror of the current |
 | $\tilde F$ | Field-strength biquaternion; $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{ iϙ}{\hbar}\tilde F$ |
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | Norm; zero exactly on the zero divisors |
-| $\lambda=\exp(\frac{i\,ϙ\,\Gamma}{\hbar})=e^{i\beta}$ | Local central phase; $\Gamma$ real; $\beta=\frac{ϙ\Gamma}{\hbar}$ |
+| $\lambda=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\Gamma$ real; $\theta_{\mathrm{gau}}=\frac{ϙ\Gamma}{\hbar}$ |
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 ## Further Reading
 
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the eight-parameter polar variables of the spin-$\tfrac12$ field and for the transport equations the coupling leaves open.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the decomposition of the field into density, angle and rotor and for the reading of the covariant derivative in that decomposition.
-- Jacques Yvon, "Équations matricielles du champ spinoriel," *Journal de Physique et le Radium* **1** (1940) 18–26, for the bilinears whose argument is the angle this article writes $2\alpha$.
+- Jacques Yvon, "Équations matricielles du champ spinoriel," *Journal de Physique et le Radium* **1** (1940) 18–26, for the bilinears whose argument is the angle this article writes $2\theta_{\mathrm{pha}}$.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the relativistic polar variables and for the covariant derivative written in them.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the Dirac equation, its minimal coupling and the standard conserved current.
 - Hermann Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330–352, for the origin of the local phase that the coupling localizes.

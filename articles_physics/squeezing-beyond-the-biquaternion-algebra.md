@@ -37,10 +37,12 @@ Both $x$ and $p=-i\,\hbar\partial/\partial r_x$ are central operators: $x$ multi
 $$
 S(\zeta)=\exp\left[\tfrac12\left(\bar\zeta\,a^2-\zeta\,a^{\dagger 2}\right)\right],
 \qquad
-\zeta=r\exp(\,i\theta),
+\zeta=r\exp(\,i\theta_{\mathrm{sqz}}),
 $$
 
 is a central element of $\mathbb{B}$. Its generator $\tfrac12(\bar\zeta a^2-\zeta a^{\dagger2})$ is anti-Hermitian, so $S$ is $*$-unitary in the framework's sense,
+
+Here $\theta_{\mathrm{sqz}}$ is the squeeze angle: it is the argument of the complex squeeze parameter, so it is real.
 
 $$
 S\,S^{*}=e_t ,
@@ -57,18 +59,18 @@ so it changes the envelope and leaves the module orientation exactly as it was. 
 The standard Bogoliubov transformation follows from the central algebra,
 
 $$
-\boxed{\;S^{*}\,a\,S=a\cosh r-\exp(\,i\theta)\sinh r\,a^\dagger ,
+\boxed{\;S^{*}\,a\,S=a\cosh r-\exp(\,i\theta_{\mathrm{sqz}})\sinh r\,a^\dagger ,
 \qquad
-S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta)\sinh r\,a\;},
+S^{*}\,a^\dagger\,S=a^\dagger\cosh r-\exp(-i\theta_{\mathrm{sqz}})\sinh r\,a\;},
 $$
 
 and in terms of quadratures it is the general Bogoliubov dilation. Writing $x$ and $p$ in terms of $a$ and $a^\dagger$ and using their transformation,
 
 $$
-S^{*}xS=\sqrt{\frac{\hbar}{2\omega\,m}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(\exp(\,i\theta)a^\dagger+\exp(-i\theta)a\big)\Big],
+S^{*}xS=\sqrt{\frac{\hbar}{2\omega\,m}}\Big[(a+a^\dagger)\cosh r-\sinh r\big(\exp(\,i\theta_{\mathrm{sqz}})a^\dagger+\exp(-i\theta_{\mathrm{sqz}})a\big)\Big],
 $$
 
-which for real $\zeta$ ($\theta=0$) reduces to the pure dilation $S^{*}xS=\exp(-r)x$ and $S^{*}pS=\exp(r)p$, while for $\theta=\pi/2$ it becomes a rotation–dilation mixing $x$ and $p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
+which for real $\zeta$ ($\theta_{\mathrm{sqz}}=0$) reduces to the pure dilation $S^{*}xS=\exp(-r)x$ and $S^{*}pS=\exp(r)p$, while for $\theta_{\mathrm{sqz}}=\pi/2$ it becomes a rotation–dilation mixing $x$ and $p$. The transformation is a central Bogoliubov rotation; in the biquaternion interpretation it is a central automorphism of the oscillator algebra, and it never touches the module. The transformation is standard; the framework's statement is that its generator is central.
 
 ### The squeezed vacuum and the uncertainty product
 
@@ -277,8 +279,8 @@ q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $
 | $\langle x\rangle_{\natural}=x x^{\natural}$ | Biquaternion norm |
 | $a,a^\dagger$ | Central oscillator operators, $[a,a^\dagger]=e_t$ |
 | $S(\zeta)=\exp[\frac12(\bar\zeta a^2-\zeta a^{\dagger2})]$ | Squeeze operator; central $*$-unitary |
-| $\zeta=r\exp(i\theta)$ | Squeeze parameter |
-| $S^{*} aS=a\cosh r-\exp(i\theta)\sinh r\,a^\dagger$ | Bogoliubov transformation |
+| $\zeta=r\exp(i\theta_{\mathrm{sqz}})$ | Squeeze parameter |
+| $S^{*} aS=a\cosh r-\exp(i\theta_{\mathrm{sqz}})\sinh r\,a^\dagger$ | Bogoliubov transformation |
 | $\delta x^2=\frac{\hbar}{2\omega\,m}\exp(-2r)$, $\delta p^2=\frac{\hbar\,m\,\omega}{2}\exp(2r)$ | Squeezed-vacuum variances |
 | $E_\mu=\epsilon \vec e_\mu$ | Contracting basis |
 | $\mathrm{Cl}_{n,m}$, $\mathbb{O}$ | Clifford algebras; octonions (non-associative) |

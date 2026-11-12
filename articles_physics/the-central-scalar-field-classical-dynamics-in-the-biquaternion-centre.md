@@ -105,10 +105,12 @@ the biquaternionic Klein–Gordon equation of the companion article, here read a
 In the absence of sources, write a plane wave
 
 $$
-\tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)), \qquad \tilde{Ξ}_0\in\mathbb{C},
+\tilde{Ξ}(r_x)=\tilde{Ξ}_0\,\exp(i\theta_{\mathrm{pwp}}), \qquad \tilde{Ξ}_0\in\mathbb{C},
 $$
 
-with the central phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ understood as multiplication by a central element. Because $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
+
+with the central phase $\exp(i\theta_{\mathrm{pwp}})$ understood as multiplication by a central element. Because $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2(k_m)^{2}=c^2k^2+c^2(k_m)^{2} .

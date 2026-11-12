@@ -23,15 +23,17 @@ The article is organized as follows. The next section identifies the global symm
 The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its **centre** — the set of elements that commute with every biquaternion — is the complex scalar subspace $\mathbb{B}_{C}$ of *Algebra and Element Conventions*: the complex line through the identity $e_t$, with $i$ the single scalar imaginary of the algebra, $i^2=-1$. The centre is the largest set of elements that can multiply a biquaternion-valued field from either side without any ambiguity of order. Its **$*$-unitary** elements are the phases
 
 $$
-\lambda = \exp(i\theta), \qquad \theta \in \mathbb{R},
+\lambda = \exp(i\theta_{\mathrm{cen}}), \qquad \theta_{\mathrm{cen}} \in \mathbb{R},
 $$
 
-since $|\exp(i\theta)| = 1$. They form the group $\mathrm{U}(1)$, the $*$-unitary part of the centre.
+since $|\exp(i\theta_{\mathrm{cen}})| = 1$. They form the group $\mathrm{U}(1)$, the $*$-unitary part of the centre.
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 Let $\tilde{Ξ}(\tilde{Q})$ be a biquaternion-valued field. The **global phase transformation** is
 
 $$
-\tilde{Ξ} \;\longmapsto\; \lambda\,\tilde{Ξ}, \qquad \lambda=\exp(i\theta),\quad \theta \ \text{constant}.
+\tilde{Ξ} \;\longmapsto\; \lambda\,\tilde{Ξ}, \qquad \lambda=\exp(i\theta_{\mathrm{cen}}),\quad \theta_{\mathrm{cen}} \ \text{constant}.
 $$
 
 Because $\lambda$ is central and constant it passes through the gradient, and the product rule for the gradient gives
@@ -64,14 +66,14 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 Now let the phase depend on the point. Write
 
 $$
-\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar}),
+\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q}),
 $$
-
-where $\Gamma = \Gamma(\tilde{Q})$ is a real scalar function and $ϙ$ is a real coupling constant. Two elementary facts govern it. The product rule for the gradient, applied to a field,
 
 $$
 \tilde\nabla_\Phi(\lambda\tilde{Ξ})=(\tilde\nabla_\Phi\lambda)\tilde{Ξ}+\lambda\,\tilde\nabla_\Phi\tilde{Ξ},
 $$
+
+where $\Gamma = \Gamma(\tilde{Q})$ is a real scalar function and $ϙ$ is a real coupling constant. Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one. Two elementary facts govern it. The product rule for the gradient, applied to a field,
 
 and the chain rule
 
@@ -150,7 +152,7 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 
 **2. It is not an element of the algebra.** $D$ is a first-order differential operator, not a biquaternion. Only its components $D_\mu$ are scalar operators, and $D$ acts on fields, not on the algebra.
 
-**3. Its gauge group is the $*$-unitary part of the centre, so the theory is abelian.** The phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ is central, so multiplication by it on the left and on the right agree and there is no ordering ambiguity anywhere in the derivation above. This is what makes the construction abelian, and it is a consequence of selecting the gauge group from the centre.
+**3. Its gauge group is the $*$-unitary part of the centre, so the theory is abelian.** The phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ is central, so multiplication by it on the left and on the right agree and there is no ordering ambiguity anywhere in the derivation above. This is what makes the construction abelian, and it is a consequence of selecting the gauge group from the centre.
 
 **4. Gauge transformations preserve the material sector.** As shown in the preceding section, a real $\Gamma$ keeps $\tilde{A}_{\Phi}$ in $\mathbb{B}_{\Phi}$; the connection is a material-sector object.
 
@@ -229,7 +231,7 @@ It is worth separating the two, because they are easily conflated.
 - *A canonical abelian gauge group.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a *central* phase can live. The $\mathrm{U}(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
 - *A home for the curvature.* The field strength is a 2-form, with six independent components in four dimensions, and the vector part of $\mathbb{B}$ has exactly six real dimensions. The identification "field strength $=$ curvature" is thus structural rather than accidental.
 - *Preservation of the material sector.* Real gauge functions keep the connection in $\mathbb{B}_{\Phi}$, so the gauge structure respects the sector decomposition that the framework is built on.
-- *The same scalar imaginary.* The phase $\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $i r'_t$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
+- *The same scalar imaginary.* The phase $\exp(i\theta_{\mathrm{gau}})$ and the complex time coordinate $i r'_t$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $i r'_t$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
 
 **What it only transcribes.**
 
@@ -310,7 +312,7 @@ $$
 \tilde{Ξ}_{R,2} = \exp(-i\theta_{\mathrm{pha}})\tilde{Ξ}_{R}, \qquad \xi_{\mathrm{gau}} = \xi_{\mathrm{gau}}(x_\mu) \in \mathbb{R},
 $$
 
-and it leaves the covariant derivatives covariant, $(D_{2,\mu}\tilde{Ξ}_{L,2}) = \exp(+i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{L}$ and $(D_{2,\mu}\tilde{Ξ}_{R,2}) = \exp(-i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{R}$, exactly as the local phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ of this article leaves $D_\mu\tilde{Ξ}$ covariant. With the central phase identified as $\xi_{\mathrm{gau}} =\frac{ϙ\,\Gamma}{\hbar}$ and the dictionary $\omega_\mu = i(\frac{ϙ}{\hbar})A_\mu$ — so that $-i\omega_\mu = (\frac{ϙ}{\hbar})A_\mu$ is the potential, and the shift $-i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}$ is the gradient term — the source's transformation is this article's $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$, component by component. The source's $\mathrm{U}(1)$ is thus the central direction of $\mathbb{B}$, its generator the same scalar imaginary $i$, and the phase on $\tilde{Ξ}_{L}$ carries the same sign as the multiplication on the left that this article's parent uses for the charged massive field. The opposite phase on $\tilde{Ξ}_{R}$ is consistent with $\tilde{Ξ}_{R}$ being the conjugate half of the pair: a central phase read through the algebra's real structure is $\lambda^{\flat}=-\bar\lambda$, the antilinear half recorded in §*The Mass Term and the Axial Symmetry*. In that reading the source's pair of phases is one central phase, not two symmetries.
+and it leaves the covariant derivatives covariant, $(D_{2,\mu}\tilde{Ξ}_{L,2}) = \exp(+i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{L}$ and $(D_{2,\mu}\tilde{Ξ}_{R,2}) = \exp(-i\theta_{\mathrm{pha}})D_\mu\tilde{Ξ}_{R}$, exactly as the local phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ of this article leaves $D_\mu\tilde{Ξ}$ covariant. With the central phase identified as $\xi_{\mathrm{gau}} =\frac{ϙ\,\Gamma}{\hbar}$ and the dictionary $\omega_\mu = i(\frac{ϙ}{\hbar})A_\mu$ — so that $-i\omega_\mu = (\frac{ϙ}{\hbar})A_\mu$ is the potential, and the shift $-i\partial/\partial R_\mu\,\xi_{\mathrm{gau}}$ is the gradient term — the source's transformation is this article's $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$, component by component. The source's $\mathrm{U}(1)$ is thus the central direction of $\mathbb{B}$, its generator the same scalar imaginary $i$, and the phase on $\tilde{Ξ}_{L}$ carries the same sign as the multiplication on the left that this article's parent uses for the charged massive field. The opposite phase on $\tilde{Ξ}_{R}$ is consistent with $\tilde{Ξ}_{R}$ being the conjugate half of the pair: a central phase read through the algebra's real structure is $\lambda^{\flat}=-\bar\lambda$, the antilinear half recorded in §*The Mass Term and the Axial Symmetry*. In that reading the source's pair of phases is one central phase, not two symmetries.
 
 The construction bears on Open Question 3. In the source, the shared generator $i$ is **content-bearing rather than vacuous**: the imaginary-scalar direction of $\omega_\mu$ *is* the $\mathrm{U}(1)$ direction, and the same $i$ is what lets the two-sided vector derivative $\partial/\partial R_\mu V + \omega_\mu V + V\bar\omega_\mu^\ast$ reduce to a one-sided one on the central piece. The source makes the point explicitly in a note added to the paper: the local Lorentz transformations, which obey $\bar\Lambda = \Lambda^{-1}$, and the local $\mathrm{U}(1)$ transformations, $\Lambda = \exp(i\xi_{\mathrm{gau}})$, are two cases of the single law $\omega_{2,\mu} = \Lambda\omega_\mu\Lambda^{-1} - (\partial/\partial R_\mu\,\Lambda)\Lambda^{-1}$. So there the internal phase and the local frame are not merely neighbours in one algebra; they are two subgroups of one local symmetry, and the connection is one object.
 
@@ -384,7 +386,7 @@ The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ 
 
 The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. The centre is the complex scalar subspace $\mathbb{B}_{C}$, whose $*$-unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ is a symmetry of the one-sided chiral pair, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
-Making the phase local, $\lambda = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$, adds the term $\frac{i\,ϙ}{\hbar}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}$, and cancelling it forces a connection $\tilde{A}_{\Phi}$ with the transformation law
+Making the phase local, $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$, adds the term $\frac{i\,ϙ}{\hbar}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}$, and cancelling it forces a connection $\tilde{A}_{\Phi}$ with the transformation law
 
 $$
 \boxed{\;\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\;},
@@ -432,7 +434,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\mathbb{B}_{C}$ | the complex scalar subspace, the centre of the algebra |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | the biquaternionic gradient, its quaternion conjugate, the d'Alembertian |
 | $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_\eta = -\vec e_\eta$ |
-| $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | the local central phase; $\Gamma$ a real scalar |
+| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | the local central phase; $\Gamma$ a real scalar |
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu$ | the connection, the potential biquaternion of $\mathbb{B}_{\Phi}$ |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | the gauge transformation of the connection |

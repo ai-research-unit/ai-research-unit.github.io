@@ -114,7 +114,9 @@ P(p)\,\tilde u(p)=m\,\tilde u(p),
 P(k)\,\tilde v(k)=-m\,\tilde v(k),
 $$
 
-with the momentum basis operator acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-i(p\cdot x)/\hbar}$ and $\tilde v$ the negative-frequency factor $e^{+i(p\cdot x)/\hbar}$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
+with the momentum basis operator acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $\exp(-i\theta_{\mathrm{pwp}})$ and $\tilde v$ the negative-frequency factor $\exp(+i\theta_{\mathrm{pwp}})$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 ### The two amplitudes
 

@@ -153,16 +153,18 @@ The series writes one polar word and reads it in three bracketings. The word, it
 **The word.** Every element off the cone is the ordered product
 
 $$
-\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
-\qquad r>0,\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \theta_{\mathrm{rpd},w}\ge0,\qquad \theta\in[0,2\pi],
+\tilde Q=r\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\qquad r>0,\qquad \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \theta_{\mathrm{rpd},w}\ge0,\qquad \theta\in[0,2\pi],
 $$
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 with the factors of the table. The order is forced: the scale and the phase are central, the Hermitian positive boost stands on the left of the real rotor, and the rotor is what remains after the Hermitian part is divided out.
 
 | # | factor | glyph | range | type | action on the algebra |
 | --- | --- | --- | --- | --- | --- |
 | 1 | scale | $r$ | $r>0$ | real central scalar | dilation by $r^2$ |
-| 2 | central phase | $\exp(i\alpha)$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central unit | scalar multiplication |
+| 2 | central phase | $\exp(i\theta_{\mathrm{pha}})$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central unit | scalar multiplication |
 | 3 | boost | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})=\cosh\frac{\theta_{\mathrm{rpd},w}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd},w}\ge0$, $\vec u_{\mathrm b}$ a unit real vector | Hermitian positive, $\det=1$ | congruence $X\mapsto\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})X\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})^{*}$ |
 | 4 | rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a unit real vector | real unit quaternion | conjugation $X\mapsto\tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
@@ -243,7 +245,7 @@ The three pairings are three bracketings of the same word, and their domains dif
 
 | pairing | factorisation | factorisation exists | construction exists | witness of failure |
 | --- | --- | --- | --- | --- |
-| word | $r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | any element of the cone |
+| word | $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | any element of the cone |
 | quaternion | $\tilde q\,e^{i\theta_{\mathrm{rpd}}}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | $\tilde q_r\neq0$ (on this domain) | $i\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=-2$ but $\tilde q_r=0$ |
 | Hamilton | $\Rho\,e^{\vec U\Theta}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | same | $e_t+\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=1$ but $\langle\vec Q,\vec Q\rangle_{\natural}=0$ |
 | Cartan | $\tilde Q_H\tilde Q_0$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | $e_t+i\vec e_x$: on the cone; the generalized form gives a partial isometry |
@@ -256,7 +258,7 @@ The three pairings are three bracketings of the same word, and their domains dif
 
 Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $\mathrm{Kr}$, used with two arguments for the form and with one for the norm. Regular and degenerate are qualified by the letter, because only the $N$ pair gives the unit partition, and the unqualified word regular is spectral. Norm one is fixed layer by layer by the unitary convention, and for the biquaternion layer it is $N$ and no other; the star-unitary condition is a different condition, and only $N$ decides invertibility. The letter $u$ names a unit element and nothing else.
 
-The polar word is $\tilde Q=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and the word parameter is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$.
+The polar word is $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and the word parameter is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$.
 
 The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$, and the factor two is forced and cancels in the Born ratio; a normalised state has trace one. The three pairings are three bracketings of one word, and their domains are not nested: the quaternion construction can fail where the word exists, the Hamilton pairing can fail where both exist, and the Cartan pairing is the widest off the cone.
 

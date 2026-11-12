@@ -29,9 +29,11 @@ The fields of the expansion are
 
 $$
 \tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are
 
@@ -47,8 +49,8 @@ all others vanishing.
 
 $$
 \tilde{Ξ}_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{+}^{(r)*}(\vec p)\,\exp(+ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{-}^{(r)*}(\vec p)\,\exp(-ip\cdot x/\hbar)\Big],
+\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{+}^{(r)*}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{-}^{(r)*}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})\Big],
 $$
 
 and the Dirac adjoint of the field is the Hermitian conjugate followed by right multiplication by $i\vec e_x$,
@@ -56,8 +58,8 @@ and the Dirac adjoint of the field is the Hermitian conjugate followed by right 
 $$
 \tilde{Ξ}_{\mathrm{fop}}^{\dagger}(x)\,i\vec e_x
 =\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{+}^{(r)*}(\vec p)\,i\vec e_x\,\exp(+ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{-}^{(r)*}(\vec p)\,i\vec e_x\,\exp(-ip\cdot x/\hbar)\Big].
+\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{+}^{(r)*}(\vec p)\,i\vec e_x\,\exp(+i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{-}^{(r)*}(\vec p)\,i\vec e_x\,\exp(-i\theta_{\mathrm{pwp}})\Big].
 $$
 
 The factor $i\vec e_x$ is the timelike member of the frame, and it is what makes the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x\tilde{Ξ}_{\mathrm{fop}}\big)$ a Lorentz scalar. It is an element of the algebra and not a conjugation: the Dirac adjoint is an element product followed by the scalar part, and no conjugation by an element produces it.

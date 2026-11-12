@@ -30,11 +30,15 @@ The four obstacles the agenda treats are the **chiral-fermion obstacle** (the fr
 
 The read-list article *The Gauge Principle in Biquaternionic Form* derives the abelian gauge structure from the centre of the algebra. Its results are established and are used here unchanged.
 
-The centre is $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and its $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. A constant central phase is a symmetry of the massless biquaternion field equation, because a central constant passes through the gradient. Localizing it, $\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$ with real $\Gamma$, forces a connection $\tilde{A}_{\Phi}$ with the transformation law
+The centre is $\mathbb{B}_{C} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and its $*$-unitary part is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$. A constant central phase is a symmetry of the massless biquaternion field equation, because a central constant passes through the gradient. Localizing it, $\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with real $\Gamma$, forces a connection $\tilde{A}_{\Phi}$ with the transformation law
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma,
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 under which the field equation is gauge covariant. Its covariant derivative is the $\tilde D$ of *Algebra and Element Conventions*, read with $\tilde A_{\Phi}$ for its connection, and it acts on the left as $\tilde\nabla_\Phi$ does, so the abelian structure is one-sided throughout and no side hides in its letters. Its component is $D_\mu$, the curvature is the abelian $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, with $[D_\mu,D_\nu] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$, and a real gauge function keeps $\tilde{A}_{\Phi}$ in the material sector $\mathbb{B}_{\Phi}$. The coupling $ϙ$ is a parameter: the algebra does not fix its value.
 
@@ -131,7 +135,7 @@ $$
 
 That is one action and not a two-sided one, and it coincides with a left multiplication — and hence with the framework's $\mathbb{B}$-valued connection — only when $ϙ_L=ϙ_R$, where $b$ is central. The basis operator is not central, and it is a right multiplier rather than a member of the centre; the central form of the chirality — the sign $\xi$ of the double, which is central and lies in the complexification rather than in $\mathbb{B}$ — is a different object in a different space (*Special Element Conventions*, §*The Chirality Convention*). The chiral structure therefore does not fit the form of the covariant derivative $\tilde D$ of *Algebra and Element Conventions*, taken with a $\mathbb{B}$-valued connection: it is a connection valued in the two-sided actions, not in $\mathbb{B}$.
 
-A qualification recorded in that article is carried here because it bears on hypercharge. The corpus does not settle how the element is read on the four-dimensional carrier of the Dirac equation. Read one way, both parts carry the defining action of the group, and a central phase multiplies both by $\exp(i\theta)$: the vector-like reading. Read the other way, the two parts carry conjugate actions, and the same phase multiplies the $L$ part by $\exp(i\theta)$ and the $R$ part by $\exp(-i\theta)$: an **axial**, not vector-like, action. Which reading is physical is the unresolved "two-$i$" question, the same one that fixes the embedding of the chirality in the carrier. It matters here because it decides whether the framework's abelian factor is vector-like or axial.
+A qualification recorded in that article is carried here because it bears on hypercharge. The corpus does not settle how the element is read on the four-dimensional carrier of the Dirac equation. Read one way, both parts carry the defining action of the group, and a central phase multiplies both by $\exp(i\theta_{\mathrm{cen}})$: the vector-like reading. Read the other way, the two parts carry conjugate actions, and the same phase multiplies the $L$ part by $\exp(i\theta_{\mathrm{cen}})$ and the $R$ part by $\exp(-i\theta_{\mathrm{cen}})$: an **axial**, not vector-like, action. Which reading is physical is the unresolved "two-$i$" question, the same one that fixes the embedding of the chirality in the carrier. It matters here because it decides whether the framework's abelian factor is vector-like or axial.
 
 ### The mass term and the real structure
 

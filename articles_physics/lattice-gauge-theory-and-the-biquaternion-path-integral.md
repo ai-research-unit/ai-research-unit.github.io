@@ -28,11 +28,13 @@ We use the conventions of the companion articles: the algebra, the units, the se
 
 The continuum object,
 $$
-Z=\int\mathcal{D}\mathcal{A}\;\exp(\frac{i}{\hbar}S_{\mathrm{YM}}[\mathcal{A}]),
+Z=\int\mathcal{D}\mathcal{A}\;\exp(i\theta_{\mathrm{ym}}),
 \qquad
 S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
 $$
 is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathcal{A}$ denotes a limit of products of finitely many ordinary integrals, and the limit is not known to exist without a regulator; the perturbative expansion assumes that a regulator has been chosen and that the counterterms remove its dependence. Three properties are needed of the regulator: it must make the measure finite, it must preserve the gauge invariance of the action, and it must admit a limit in which the regulator dependence is absorbed into the parameters of the theory.
+
+Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]/\hbar$ is real: the Yang--Mills action is $-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
 
 A spacetime lattice supplies all three. The lattice has finitely many sites in a finite box, so the field has finitely many components; the group-valued variable on each link is drawn from a compact group, so each integral is finite; the lattice action is built from closed loops and is therefore gauge invariant; and the limit in which the lattice spacing $a$ is taken to zero is controlled by the renormalization group, which absorbs the dependence into the coupling. The lattice regularization is the standard non-perturbative construction of a gauge theory, and it is used here because it is the construction that makes the biquaternion path integral well defined.
 

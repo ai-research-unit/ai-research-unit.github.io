@@ -59,7 +59,7 @@ The exponent is $\tfrac{\theta}{2}\vec u_{\mathrm r}$ and the output is the rota
 
 ## The Pure Factors and the Full Rotor
 
-For each pure factor, read with the other factors absent, the products are elementary. The scale $r$ has $\lambda_\pm=r$ and products $r^{2}$. The central phase has $\lambda_\pm=\exp(i\alpha)$ and products $\exp(i\alpha)\exp(-i\alpha)=1$. The boost has
+For each pure factor, read with the other factors absent, the products are elementary. The scale $r$ has $\lambda_\pm=r$ and products $r^{2}$. The central phase has $\lambda_\pm=\exp(i\theta_{\mathrm{pha}})$ and products $\exp(i\theta_{\mathrm{pha}})\exp(-i\theta_{\mathrm{pha}})=1$. The boost has
 $$
 \lambda_+=e^{-\theta_{\mathrm{rpd}}/2},\qquad \lambda_-=e^{\theta_{\mathrm{rpd}}/2},
 $$
@@ -82,7 +82,7 @@ The two-sided operator therefore carries the full rapidity $\theta_{\mathrm{rpd}
 | factor | one-slot pair $(\lambda_+,\lambda_-)$ | two-slot products | output |
 |---|---|---|---|
 | scale $r$ | $(r,r)$ | $r^{2},r^{2},r^{2},r^{2}$ | dilation $r^{2}$ |
-| phase $\exp(i\alpha)$ | $(e^{i\alpha},e^{i\alpha})$ | $1,1,1,1$ | identity |
+| phase $\exp(i\theta_{\mathrm{pha}})$ | $(e^{i\theta_{\mathrm{pha}}},e^{i\theta_{\mathrm{pha}}})$ | $1,1,1,1$ | identity |
 | boost $\tilde U_{\mathrm b}$ | $(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ | $e^{-\theta_{\mathrm{rpd}}},1,1,e^{\theta_{\mathrm{rpd}}}$ | rapidity $\theta_{\mathrm{rpd}}$ |
 | rotor $\tilde u_{\mathrm r}$ | $(e^{i\theta/2},e^{-i\theta/2})$ | $e^{i\theta},1,1,e^{-i\theta}$ | angle $\theta$ |
 
@@ -121,7 +121,7 @@ The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$
 | factor | exponent | kind of exponent | two-sided operator | output parameter | angle |
 |---|---|---|---|---|---|
 | scale $r$ | $\ln r$ | real scalar | $r^{2}\tilde X$ | $2\ln r$ | none |
-| phase $\exp(i\alpha)$ | $i\alpha$ | imaginary scalar | $\tilde X$ | $0$ | none |
+| phase $\exp(i\theta_{\mathrm{pha}})$ | $i\theta_{\mathrm{pha}}$ | imaginary scalar | $\tilde X$ | $0$ | none |
 | boost $\tilde U_{\mathrm b}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | imaginary vector | congruence | rapidity $\theta_{\mathrm{rpd}}$ | rapidity |
 | rotor $\tilde u_{\mathrm r}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | real vector | automorphism | angle $\theta$ | rotation |
 
@@ -160,7 +160,7 @@ The doubling is therefore a property of the non-central factors, and of the Herm
 
 The one-parameter group of the two-sided operator is read on the spectrum. On $\Sigma_{11}$ the two-sided operator has the four eigenvalues $\lambda_i\bar\lambda_j$, and its exponential has their exponentials; its determinant is $\exp(4t\lvert Q_t\rvert^{2})$. There is no element identity $\exp(t\mathrm{Sd}_{\tilde Q})=\mathrm{Sd}_{\exp(t\tilde Q)}$, because the two-sided operator is quadratic; for a central element the two sides differ by the square of the modulus against twice its real part.
 
-The four factors give the table of exponents. The scale doubles $\ln r$ to $2\ln r$; the phase cancels $i\alpha$ to $0$; the boost doubles $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ to the rapidity $\theta_{\mathrm{rpd}}$; the rotor doubles $\tfrac{\theta}{2}\vec u_{\mathrm r}$ to the angle $\theta$. The rule is the number of slots: the Hermitian factors carry the same exponent twice, the $*$-unitary non-central factor carries opposite exponents whose conjugation produces the angle, and the central $*$-unitary factor cancels.
+The four factors give the table of exponents. The scale doubles $\ln r$ to $2\ln r$; the phase cancels $i\theta_{\mathrm{pha}}$ to $0$; the boost doubles $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ to the rapidity $\theta_{\mathrm{rpd}}$; the rotor doubles $\tfrac{\theta}{2}\vec u_{\mathrm r}$ to the angle $\theta$. The rule is the number of slots: the Hermitian factors carry the same exponent twice, the $*$-unitary non-central factor carries opposite exponents whose conjugation produces the angle, and the central $*$-unitary factor cancels.
 
 The spectral reading is the product formula. The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-slot products are $e^{\pm i\theta}$; the one-slot pair of the boost is $(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ and the products are $e^{\pm\theta_{\mathrm{rpd}}}$; the scale gives $r^{2}$ and the phase gives $1$. In representation-theoretic terms the two-sided operator is $\rho\otimes\bar\rho$, the complexified vector representation, and the vector weights are the sums of the two spinor weights. The one-sided operator is the spinor action, and the two-sided operator is its double.
 
@@ -171,7 +171,7 @@ The spectral reading is the product formula. The one-slot pair of the rotor is $
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the Hermitian pair |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $\tilde Q$ |
 | $\lambda_i\bar\lambda_j$ | the four eigenvalues of the two-sided operator |
-| $\Rho=r\exp(i\alpha)$ | the complex modulus |
+| $\Rho=r\exp(i\theta_{\mathrm{pha}})$ | the complex modulus |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the rotor |
 | $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotation angle |

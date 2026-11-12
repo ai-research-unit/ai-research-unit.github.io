@@ -28,13 +28,15 @@ The worldline parameter is $\tau$ and the proper time $T$. The material position
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two letters of the pair, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}(x) = \tilde{Ξ}_{\mathrm{amp}}\exp(-ip\cdot x/\hbar)=\tilde{Ξ}_{\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}(x) = \tilde{Ξ}_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})=\tilde{Ξ}_{\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -p^2,
 \qquad
 p^2 = p_0^2 - p_1^2 - p_2^2 - p_3^2 .
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 

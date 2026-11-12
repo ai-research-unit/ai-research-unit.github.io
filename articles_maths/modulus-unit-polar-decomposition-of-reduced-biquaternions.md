@@ -272,24 +272,24 @@ is continuous, fixes $T^2$ at every $t$, is the identity at $t=0$, and lands in 
 The torus contains the two circles
 
 $$
-S_i=\{\exp(i\alpha):\alpha\in\mathbb{R}\},\qquad
-S_{ij}=\{\exp(ij\beta):\beta\in\mathbb{R}\},
+S_i=\{\exp(i\theta_{\mathrm{pha}}):\theta_{\mathrm{pha}}\in\mathbb{R}\},\qquad
+S_{ij}=\{\exp(ij\theta_{\mathrm{phb}}):\theta_{\mathrm{phb}}\in\mathbb{R}\},
 $$
 
 the **scalar circle** and the **$ij$-circle**. Their elements are
 
 $$
-\exp(i\alpha)=\cos\alpha+i\sin\alpha,\qquad
-\exp(ij\beta)=\cos\beta+ij\sin\beta.
+\exp(i\theta_{\mathrm{pha}})=\cos\theta_{\mathrm{pha}}+i\sin\theta_{\mathrm{pha}},\qquad
+\exp(ij\theta_{\mathrm{phb}})=\cos\theta_{\mathrm{phb}}+ij\sin\theta_{\mathrm{phb}}.
 $$
 
-Every element of $T^2$ is a product $\exp(i\alpha)\exp(ij\beta)=\exp(i\alpha+ij\beta)$, and the parametrisation is a group homomorphism from $\mathbb{R}^2$ onto $T^2$ whose kernel is the lattice
+Every element of $T^2$ is a product $\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})=\exp(i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}})$, and the parametrisation is a group homomorphism from $\mathbb{R}^2$ onto $T^2$ whose kernel is the lattice
 
 $$
 2\pi\mathbb{Z}^2+\pi\mathbb{Z}(1,1).
 $$
 
-The two circles intersect at $\exp(i\alpha)=\exp(ij\beta)$, that is at $\alpha,\beta\in\pi\mathbb{Z}$ with the same parity, which gives the two points $1$ and $-1$. The product map $S_i\times S_{ij}\to T^2$ is therefore not injective: it is a two-to-one covering, and $T^2$ is the quotient of $S^1\times S^1$ by the involution $(z,w)\mapsto(-z,-w)$.
+The two circles intersect at $\exp(i\theta_{\mathrm{pha}})=\exp(ij\theta_{\mathrm{phb}})$, that is at $\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}\in\pi\mathbb{Z}$ with the same parity, which gives the two points $1$ and $-1$. The product map $S_i\times S_{ij}\to T^2$ is therefore not injective: it is a two-to-one covering, and $T^2$ is the quotient of $S^1\times S^1$ by the involution $(z,w)\mapsto(-z,-w)$.
 
 The genuine splitting of the torus is the map $u\mapsto(u_{+},u_{-})$ of §*The Unit Factor and the Torus*, which is a bijection onto $S^1\times S^1$. The two circles $S_i$ and $S_{ij}$ generate the torus, but they are not independent; the two circular components $u_{+}$ and $u_{-}$ are.
 
@@ -346,7 +346,7 @@ The unit group in polar form is the product of the cone and the torus, and the p
 
 The bar fixes $1$ and $j$ and negates $i$ and $ij$, so its fixed space is the **scale plane** $\mathbb{R}\{1,j\}$ and its anti-fixed space is the **angle plane** $\mathbb{R}\{i,ij\}$.
 
-The algebra is the direct sum $\mathbb{B}_{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of *Exponential Polar Decomposition of Reduced Biquaternions* is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}\in\mathbb{R}\{1,j\}$ and $i\Theta=i\alpha+ij\beta\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.
+The algebra is the direct sum $\mathbb{B}_{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of *Exponential Polar Decomposition of Reduced Biquaternions* is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}\in\mathbb{R}\{1,j\}$ and $i\Theta=i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.
 
 ### The Roots of Plus One, Zero and Minus One
 
@@ -366,7 +366,7 @@ The three scalar equations are solved directly.
 
 For $\breve R^2=-1$ the equations are $R_{\blacktriangle}^2+R_{\blacktriangledown}^2=-1$ and $R_{\blacktriangle}R_{\blacktriangledown}=0$. If $R_{\blacktriangle}=0$ then $R_{\blacktriangledown}^2=-1$, so $R_{\blacktriangledown}=\pm i$ and $\breve R=\pm ij$; if $R_{\blacktriangledown}=0$ then $R_{\blacktriangle}=\pm i$ and $\breve R=\pm i$. The four roots are the two scalar imaginary units and the two $ij$ directions. For $\breve R^2=+1$ the same computation with $R_{\blacktriangle}^2+R_{\blacktriangledown}^2=1$ gives $R_{\blacktriangle}=\pm1$ or $R_{\blacktriangledown}=\pm1$, that is $\breve R=\pm1$ or $\breve R=\pm j$. For $\breve R^2=0$ the equations $R_{\blacktriangle}^2+R_{\blacktriangledown}^2=0$ and $R_{\blacktriangle}R_{\blacktriangledown}=0$ force $R_{\blacktriangle}=R_{\blacktriangledown}=0$, so the algebra has no nilpotent direction.
 
-The unit factor uses the roots of $-1$: $\exp(i\alpha)$ and $\exp(ij\beta)$ are the two circles. The modulus uses the roots of $+1$: the one-parameter subgroups $\exp(t)$ and $\exp(jt)$ give the two positive directions of the plane $\mathbb{R}\{1,j\}$, and their product is the cone $P$. This is the exact doubling of the complex case: the two roots $\pm i$ of $-1$ give one circle there and two circles here, and the two roots $\pm1$ of $+1$ give one ray there and a two-dimensional cone here.
+The unit factor uses the roots of $-1$: $\exp(i\theta_{\mathrm{pha}})$ and $\exp(ij\theta_{\mathrm{phb}})$ are the two circles. The modulus uses the roots of $+1$: the one-parameter subgroups $\exp(t)$ and $\exp(jt)$ give the two positive directions of the plane $\mathbb{R}\{1,j\}$, and their product is the cone $P$. This is the exact doubling of the complex case: the two roots $\pm i$ of $-1$ give one circle there and two circles here, and the two roots $\pm1$ of $+1$ give one ray there and a two-dimensional cone here.
 
 ### Position and Signature
 

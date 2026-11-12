@@ -201,7 +201,9 @@ The degeneration is not a physical limit in which interesting physics is lost. I
 
 ### The scalar field is the sector with no frame to freeze
 
-**The scalar polar form has a scale and a phase and nothing else, so its velocity is a gradient by construction.** The word is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$, and the two parameters are the amplitude and the action. There is no third factor, so there is no frame element, so there is nothing whose gradient could make the flow non-closed. The scalar field is therefore the frozen-frame sector in the precise sense that it is the sector with no frame: a frame that does not exist cannot vary.
+**The scalar polar form has a scale and a phase and nothing else, so its velocity is a gradient by construction.** The word is $\tilde\Xi=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}e_t$, and the two parameters are the amplitude and the action. There is no third factor, so there is no frame element, so there is nothing whose gradient could make the flow non-closed. The scalar field is therefore the frozen-frame sector in the precise sense that it is the sector with no frame: a frame that does not exist cannot vary.
+
+Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 The identification is worth stating as an inclusion rather than as an analogy. Every scalar solution, read through the Dirac polar form, has a velocity that is a gradient and a spin direction that is a constant — and the constant is not arbitrary, since the axis is the declared one. Conversely, a Dirac solution whose frame is constant and whose central angle carries the phase gradient is a scalar solution up to the spin direction. So the scalar sector is the intersection of two conditions, and the Dirac sector is what the second condition removes.
 
@@ -286,7 +288,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
 | $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$ | Four-momentum of the scalar field |
 | $S_{\tilde\Xi}$ | Action of the scalar field |
-| $\theta_{\mathrm{phs}}$ | Unused here; the scalar phase is $S_{\tilde\Xi}/\hbar$ |
+| $\theta_{\mathrm{phs}}$ | $S_{\tilde\Xi}/\hbar$, the spinor phase that the exponential carries |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\Sigma_{\mu\nu}$ | Spin generator of the Gordon decomposition |
 | $\varepsilon_\mu$ | Signature weight, $+1$ temporal and $-1$ spatial |

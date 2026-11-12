@@ -81,8 +81,10 @@ $$
 \qquad
 \tilde{Ξ}_{2} = \lambda\tilde{Ξ},
 \qquad
-\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar}).
+\lambda = \exp(i\theta_{\mathrm{gau}}).
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:
 
@@ -175,7 +177,7 @@ The claim that the orbit carries no state information can be made exact with the
 Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}_{\Phi}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,
 
 $$
-\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar}), \qquad
+\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad
 \omega_2 = \omega \circ  \mathrm{Ad}_{\lambda^{-1}} .
 $$
 
@@ -193,7 +195,9 @@ Three consequences of the invariance spell out the redundancy.
 
 **The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under $*$-unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}_{\Psi}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local $*$-unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
 
-**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ its action is
+**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta_{\mathrm{cen}})$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ its action is
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
 \tilde{Ϛ}_{\Psi} \longmapsto \lambda\,\tilde{Ϛ}_{\Psi}\,\lambda^\dagger = |\lambda|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi},
@@ -243,7 +247,7 @@ The middle row is the subject of the companion article on confinement, and the b
 
 ## Gauge Redundancy and the Informational Sector
 
-The framework's gauge group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta)\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.
+The framework's gauge group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.
 
 **The orbit is a material-sector structure.** The connection lies in $\mathbb{B}_{\Phi}$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{B}_{\Phi}$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{B}_{\Phi}$ is a shift by the identity direction.
 
@@ -291,7 +295,7 @@ The boundary is drawn as in the companion articles.
 
 The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
 
-Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
+Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
 $$
 S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi,2}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1}).
@@ -315,7 +319,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
-| $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase |
+| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
 | $\kappa =\frac{ϙ}{\hbar}$ | Coupling |
 | $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ | The gauge orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real gauge functions modulo constants; the orbit's torsor group |

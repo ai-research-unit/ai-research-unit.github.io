@@ -30,13 +30,15 @@ $$
 
 which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\xi\mapsto \exp(i\alpha)\xi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is **complex**, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
 
-**The symmetry.** The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$ with $\Gamma$ a real scalar function, and it forces the connection,
+**The symmetry.** The global symmetry is the $*$-unitary part of the centre, $\xi\mapsto\lambda\xi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ with $\Gamma$ a real scalar function, and it forces the connection,
 
 $$
 \tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma, \qquad
 D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu, \qquad
 D_\mu\tilde{Ξ} = \partial/\partial R_\mu\,\tilde{Ξ} +\frac{i\,ϙ}{\hbar}A_\mu\tilde{Ξ}.
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 The covariant derivative is inherited unchanged from the read list; nothing about it is rederived here.
 
@@ -161,7 +163,7 @@ $$
 \Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta(\tilde{Q})
 $$
 
-gives $\xi\mapsto  \exp(\frac{i\,ϙ\,\Gamma}{\hbar})\xi = \exp(-i\vartheta_{\mathrm{fld}}/v)\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
+gives $\xi\mapsto  \exp(i\theta_{\mathrm{gau}})\xi = \exp(-i\vartheta_{\mathrm{fld}}/v)\xi = \frac{1}{\sqrt{2}}(v+h)$, which is real — the angular field is removed. This choice is the **unitary gauge** for this abelian model. In it the scalar is a single real field $h$, and the potential gives it the mass $m_h^2 = 2\beta v^2$.
 
 **Where the phase went.** The gauge transformation that removes $\theta$ also shifts the connection,
 
@@ -292,7 +294,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A \in \mathbb{B}_{\Phi}$ | Connection; $A_0$ imaginary, $\vec A$ real |
 | $A_\mu$ | Complex connection coefficients (central, abelian) |
 | $\Gamma$ | Real scalar gauge function |
-| $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase |
+| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase |
 | $ϙ,\hbar, \kappa =\frac{ϙ}{\hbar}$ | Charge, reduced Planck constant, coupling |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
 | $D_\mu = \partial/\partial R_\mu + i\kappa A_\mu$ | Covariant derivative |

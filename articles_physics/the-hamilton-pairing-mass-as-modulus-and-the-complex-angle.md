@@ -26,11 +26,13 @@ The conventions are those of *Norm and Pairing Conventions*, §*The Polar Word a
 |---|---|---|
 | the Hamilton pairing, its theorem and its domain | **The Hamilton Root Pairing of the Polar Decomposition of Biquaternions**, §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
 | the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
-| the four factors and the branch of the modulus | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$ |
+| the four factors and the branch of the modulus | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\theta_{\mathrm{pha}}}$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ |
 | the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$ |
 | the four objects called a boost and the factor of two | [*Norm and Pairing Conventions*](norm-and-pairing-conventions.html), §*The Four Objects Called a Boost* | the $\theta_{\mathrm{rpd}}/2$ versus $\theta_{\mathrm{rpd}}$ warning |
 | multiplicativity of the norm | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Two Factors* | the modulus of a product |
 | the generalized pairing on the null cone | [*The Polar Decomposition of an N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Vanishing of the Modulus* | the massless limit |
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 ## The Pairing
 
@@ -39,7 +41,7 @@ The pairing is the grouping of the scale and the phase against the boost and the
 $$
 \tilde Q=\Rho\,\exp(\vec U\Theta),
 \qquad
-\Rho=r\,e^{i\alpha},
+\Rho=r\,e^{i\theta_{\mathrm{pha}}},
 \qquad
 \exp(\vec U\Theta)=\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}.
 $$
@@ -63,7 +65,7 @@ The representation is a statement about $\tilde Q$, not about $\exp\tilde Q$. Th
 The modulus is
 
 $$
-\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r\,e^{i\alpha},\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
+\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r\,e^{i\theta_{\mathrm{pha}}},\qquad \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}] .
 $$
 
 It is central, so it commutes with every element and is unchanged by a change of frame implemented by conjugation. It is the only one of the three first factors with that property. The quaternion factor $r\tilde u_{\mathrm r}$ and the Cartan factor $r\tilde U_{\Psi,\mathrm b}$ both carry frame data and both change under conjugation; $\Rho$ does not.
@@ -217,7 +219,7 @@ The reading that changes the theory most is the identification of the modulus wi
 ## Summary
 
 - The Hamilton pairing is $\tilde Q=\Rho\exp(\vec U\Theta)=\Rho(\cos\Theta+\vec U\sin\Theta)$.
-- The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$ is central and complex; it is the only scalar first factor of the three pairings.
+- The modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\theta_{\mathrm{pha}}}$ is central and complex; it is the only scalar first factor of the three pairings.
 - The eigenvalues are $\lambda_\pm=Q_t\pm iB=\Rho e^{\pm i\Theta}$, and their product is the norm.
 - For a four-momentum, $\Rho=i mc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, and the eigenvalues are $i mc\,e^{\pm\theta_{\mathrm{rpd}}}$.
 - The energy is $mc^{2}\cosh\theta_{\mathrm{rpd}}$ and depends on the frame; the modulus is the invariant and does not.
@@ -231,8 +233,8 @@ The reading that changes the theory most is the identification of the modulus wi
 | symbol | meaning |
 |---|---|
 | $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the biquaternion norm |
-| $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\alpha}$ | the Hamilton modulus, central and complex |
-| $r$, $\alpha$ | the scale and the central phase, $\alpha\in(-\pi/2,\pi/2]$ |
+| $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=r e^{i\theta_{\mathrm{pha}}}$ | the Hamilton modulus, central and complex |
+| $r$, $\theta_{\mathrm{pha}}$ | the scale and the central phase, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ |
 | $\vec U=\vec Q/B$ | the Hamilton axis, a unit pure element, $\vec U^{2}=-e_t$ |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part square root (not the boost factor $\mathcal B_{\Psi}$) |
 | $\Theta$ | the complex angle, $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$ |

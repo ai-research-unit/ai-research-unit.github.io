@@ -208,7 +208,9 @@ The quantisation itself is kinematic and exact: it follows from the degree of a 
 
 ### The phase is a coordinate and the class is the object
 
-**A shift of the action that is constant on the loop changes nothing, and a shift that is not constant is a different winding.** The phase enters the field only through $e^{iS_{\tilde\Xi}/\hbar}$, so the field is unchanged by $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+2\pi\hbar m$ for any integer $m$, and the winding changes by $m$ under such a shift. Two readings are possible and only one is right.
+**A shift of the action that is constant on the loop changes nothing, and a shift that is not constant is a different winding.** The phase enters the field only through $e^{i\theta_{\mathrm{phs}}}$, so the field is unchanged by $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+2\pi\hbar m$ for any integer $m$, and the winding changes by $m$ under such a shift. Two readings are possible and only one is right.
+
+Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 - **The wrong reading** treats the phase as a physical field with a physical value at each point, so that $\theta_{\mathrm{phs}}(r_0)=0$ and $\theta_{\mathrm{phs}}(r_0)=2\pi$ are different states. Under this reading the node is a place where the phase has a definite but unknown value, and the winding is a statement about a function's branch cut.
 - **The right reading** treats the phase as a coordinate on the central unit circle, so that the only gauge-invariant statements are those about the field's values. The winding is then the degree of the map and the integer is the charge; a branch cut is a choice of atlas and not a physical object.

@@ -13,14 +13,14 @@ $$
 The word is the four-factor product
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition and computes the shape that the word takes in this sector.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition and computes the shape that the word takes in this sector.
 
 The shape is rigid. The unit factor is $\pm$unipotent: it is $\varepsilon(e_t+\vec\Upsilon)$ with $\varepsilon=\pm1$ and $\vec\Upsilon^2=0$. Its two eigenvalues coincide, its minimal polynomial is a square, and it has no eigenbasis. The two angles of the word are not independent: the scalar part of the unit factor forces
 
@@ -71,8 +71,8 @@ since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'^2)$ and $\vec\Upsilon=\vec Q\,Q_t^{-1}$.
 **Theorem (the word and its seven data).** On the Jordan part $a>0$, every $\tilde Q$ of the sector is
 
 $$
-\boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
+\boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
 with the two unit factors
@@ -91,7 +91,7 @@ $$
 $$
 
 $$
-\boxed{\;\alpha=\arg\Rho=\begin{cases}\arg Q_t,&\varepsilon=+1,\\[2pt]\arg(-Q_t),&\varepsilon=-1,\end{cases}\;}
+\boxed{\;\theta_{\mathrm{pha}}=\arg\Rho=\begin{cases}\arg Q_t,&\varepsilon=+1,\\[2pt]\arg(-Q_t),&\varepsilon=-1,\end{cases}\;}
 $$
 
 $$
@@ -116,7 +116,7 @@ On the scalar line $a=0$ one has $\vec\Upsilon=0$, $\theta_{\mathrm{rpd}}=0$, an
 
 *Proof.*
 
-**The modulus and the sign.** Since $N=Q_t^2$, the modulus satisfies $\Rho^2=Q_t^2$, hence $\Rho=\pm Q_t$. The principal branch selects the sign displayed, and $r=|\Rho|=|Q_t|$, $\varepsilon=Q_t/\Rho=\pm1$. Writing $\Rho=re^{i\alpha}$ gives $\alpha=\arg\Rho$, with the principal argument in $(-\pi,\pi]$; since $\Rho=\varepsilon Q_t$, this is the box for $\alpha$.
+**The modulus and the sign.** Since $N=Q_t^2$, the modulus satisfies $\Rho^2=Q_t^2$, hence $\Rho=\pm Q_t$. The principal branch selects the sign displayed, and $r=|\Rho|=|Q_t|$, $\varepsilon=Q_t/\Rho=\pm1$. Writing $\Rho=re^{i\theta_{\mathrm{pha}}}$ gives $\theta_{\mathrm{pha}}=\arg\Rho$, with the principal argument in $(-\pi,\pi]$; since $\Rho=\varepsilon Q_t$, this is the box for $\theta_{\mathrm{pha}}$.
 
 **The structure of $\vec\Upsilon$.** With $\vec\Upsilon=\vec A+i\vec B$,
 
@@ -298,8 +298,8 @@ The sign $\varepsilon$ is fixed by the branch of the modulus. It is $+1$ when $\
 
 $$
 \boxed{\;
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,e^{i\alpha}\,
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 \qquad
@@ -312,12 +312,12 @@ with
 
 $$
 r>0,\qquad
-\alpha\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\qquad
+\theta_{\mathrm{pha}}\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\qquad
 \theta_{\mathrm{rpd}}\ge0,\qquad
 \theta\in[0,2\pi],
 $$
 
-and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors, called the **boost axis** and the **rotor axis**. The four factors are the **scale** $r$, the **phase** $e^{i\alpha}$, the **boost** $\tilde U_{\mathrm b}$ and the **rotor** $\tilde u_{\mathrm r}$, both written in the box.
+and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors, called the **boost axis** and the **rotor axis**. The four factors are the **scale** $r$, the **phase** $e^{i\theta_{\mathrm{pha}}}$, the **boost** $\tilde U_{\mathrm b}$ and the **rotor** $\tilde u_{\mathrm r}$, both written in the box.
 
 The scalars are central; the two exponentials are not. The order of the factors is part of the definition: the boost stands to the left of the rotor.
 
@@ -326,11 +326,11 @@ The scalars are central; the two exponentials are not. The order of the factors 
 | Factor | Exponent | Closed form | Range |
 |---|---|---|---|
 | scale | $\ln r$ | $r$ | $r>0$ |
-| phase | $i\alpha$ | $e^{i\alpha}$ | $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$ |
+| phase | $i\theta_{\mathrm{pha}}$ | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$ |
 | boost | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$ |
 | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\cos\frac{\theta}{2}\,e_t+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ |
 
-The boost is Hermitian positive of norm one; the rotor is a unit real quaternion. The product is the unit factor $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and $\tilde Q=\Rho\tilde U$ with $\Rho=r e^{i\alpha}$.
+The boost is Hermitian positive of norm one; the rotor is a unit real quaternion. The product is the unit factor $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and $\tilde Q=\Rho\tilde U$ with $\Rho=r e^{i\theta_{\mathrm{pha}}}$.
 
 ### The Component Form
 
@@ -498,7 +498,7 @@ $$
 The word is
 
 $$
-\tilde Q=r e^{i\alpha}\,\varepsilon e_t
+\tilde Q=r e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t
 =Q_te_t.
 $$
 
@@ -541,10 +541,10 @@ The Jordan part is unbounded: as $\theta\to\pi$, $\theta_{\mathrm{rpd}}\to\infty
 **Theorem (the exponential polar decomposition).** Every $\tilde Q\in\Sigma_{10}$ has a unique writing
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta_{\mathrm{rpd}}>0$ and $\theta\notin\{0,2\pi\}$.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta_{\mathrm{rpd}}>0$ and $\theta\notin\{0,2\pi\}$.
 
 *Proof.* The modulus $\Rho$ is the principal square root of $N$, and $\tilde U=\tilde Q/\Rho$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$. The global Cartan decomposition
 
@@ -565,7 +565,7 @@ The proof uses only the invertibility of $\tilde Q$; the degeneracy $B^2=0$ ente
 | Parameter | Range | Unique? |
 |---|---|---|
 | $r$ | $(0,\infty)$ | yes |
-| $\alpha$ | $(-\frac{\pi}{2},\frac{\pi}{2}]$ | yes: the branch |
+| $\theta_{\mathrm{pha}}$ | $(-\frac{\pi}{2},\frac{\pi}{2}]$ | yes: the branch |
 | $\theta_{\mathrm{rpd}}$ | $[0,\infty)$ | yes |
 | $\vec u_{\mathrm b}$ | $S^2$ | no: undefined at $\theta_{\mathrm{rpd}}=0$ |
 | $\theta$ | $[0,2\pi]$ | yes |
@@ -636,13 +636,13 @@ The operator form of this single exponent is in §*The Exponential at the Wall* 
 The **formal exponent** is the sum of the four exponents,
 
 $$
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
 $$
 
 It is not the logarithm. The true logarithm is
 
 $$
-\operatorname{Log}\tilde Q=\ln r+i\alpha+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
+\operatorname{Log}\tilde Q=\ln r+i\theta_{\mathrm{pha}}+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
 $$
 
 because $Q=\Rho\tilde U$ with $\operatorname{Log}\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\Rho+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\Rho+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
@@ -668,7 +668,7 @@ $$
 
 with the sign of $\varepsilon$; the exact log defect also contains the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta}{2}-\frac{\theta}{2}$.
 
-On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\alpha$, and for $\varepsilon=-1$ it is $\ln r+i\alpha+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every unit $\vec u_{\mathrm r}$.
+On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln r+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every unit $\vec u_{\mathrm r}$.
 
 ### The Fibre
 
@@ -677,9 +677,9 @@ The exponential is not injective. Its kernel contains the central periods $2\pi 
 On the Jordan part the fibre is cut to one point, up to the axis degeneracies, by the word map
 
 $$
-(r,\alpha,\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})
+(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta,\vec u_{\mathrm r})
 \longmapsto
-r e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
@@ -752,7 +752,7 @@ $$
 It is a $\mathbb{C}$-algebra homomorphism, so $\mathsf M(\exp\tilde X)=\exp(\mathsf M(\tilde X))$, and the polar word becomes the polar decomposition of $\mathrm{GL}_2(\mathbb{C})$,
 
 $$
-\mathsf M(\tilde Q)=r e^{i\alpha}\,\mathsf M(\tilde U_{\mathrm b})\,\mathsf M(\tilde u_{\mathrm r}),
+\mathsf M(\tilde Q)=r e^{i\theta_{\mathrm{pha}}}\,\mathsf M(\tilde U_{\mathrm b})\,\mathsf M(\tilde u_{\mathrm r}),
 $$
 
 with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ $*$-unitary of determinant one.
@@ -852,7 +852,7 @@ Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the 
 |---|---|
 | domain | $N\neq0$, $B^2=0$ |
 | normal form | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ |
-| word | $\tilde Q=r e^{i\alpha}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$ |
+| word | $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta}{2}\vec u_{\mathrm r})$ |
 | unit factor | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $\varepsilon=Q_t/\Rho=\pm1$ |
 | scalar constraint | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$ |
 | axis constraint | $\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ |
@@ -860,7 +860,7 @@ Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the 
 | angle relation | $|\cos\frac{\theta}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
 | closed form | $\tilde Q=Q_t\bigl(e_t+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\tan\frac{\theta}{2}\vec u_{\mathrm r}+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr)$ |
 | exact logarithm | $\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon$ |
-| formal exponent | $\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ |
+| formal exponent | $\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ |
 | log defect | the five-term difference of §*The Formal Exponent and the Defect* |
 | defect | $\lVert\exp(\tilde Q_{\log})-\tilde Q\rVert$, computed in the worked examples |
 | explicit data | §*The Result in Terms of the Coordinates*: boxes for $r,\Rho,\varepsilon,\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r},\tilde u_{\mathrm r},\tilde U_{\mathrm b}$ |
@@ -892,7 +892,7 @@ Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the 
 | $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction, $\vec\Upsilon^2=0$ |
 | $\vec A=\operatorname{Re}\vec\Upsilon$, $\vec B=\operatorname{Im}\vec\Upsilon$ | the real and imaginary parts, $\vec A\cdot\vec B=0$ |
 | $a=\lVert\vec A\rVert=\lVert\vec B\rVert$ | the common length |
-| $\Rho=r e^{i\alpha}$ | the modulus, principal square root of $N$ |
+| $\Rho=r e^{i\theta_{\mathrm{pha}}}$ | the modulus, principal square root of $N$ |
 | $\varepsilon=Q_t/\Rho=\pm1$ | the sign of the unit factor |
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde U_{\mathrm b}$ | the Hermitian positive factor |

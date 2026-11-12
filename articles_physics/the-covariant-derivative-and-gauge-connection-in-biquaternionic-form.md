@@ -110,11 +110,13 @@ and this is the precise sense in which the connection "compensates" for the ordi
 
 ## Gauge Covariance and What It Forces
 
-The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies
+The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies
 
 $$
 \tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda\,\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.
 
 for every field $\tilde{Ξ}$, so the equation $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the gauge principle article did not state: **covariance determines $\tilde\nabla_{\mathrm{gco}}$; the connection is forced, not chosen.**
 
@@ -363,7 +365,7 @@ $$
 
 with $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu \in \mathbb{B}_{\Phi}$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla_{\mathrm{gco}}(f\tilde{Ξ}) = f\tilde\nabla_{\mathrm{gco}}\tilde{Ξ} + (\tilde\nabla_\Phi f)\tilde{Ξ}$ and commutator $[\tilde\nabla_{\mathrm{gco},\mu},f] = \partial/\partial R_\mu f$, so that the connection is exactly the difference $\tilde\nabla_{\mathrm{gco},\mu} - \partial/\partial R_\mu =\frac{i\,ϙ}{\hbar}A_\mu$.
 
-Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde\nabla_\Phi\lambda)\lambda^{-1}$, which for $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
+Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde\nabla_\Phi\lambda)\lambda^{-1}$, which for $\lambda = \exp(i\theta_{\mathrm{gau}})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.
 
 The curvature is the commutator of covariant derivatives, $[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$, and contracts to the field strength $\tilde{F} =\frac{\hbar}{2\,i\,ϙ}\sum_{\mu\nu}[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}]e_\mu^{\natural} e_\nu$. Unlike $\tilde\nabla_{\mathrm{gco},\mu}$, the commutator is an element of the algebra. The covariant square separates cleanly,
 
@@ -394,7 +396,7 @@ The identity is the square of the chiral pair $\tilde\nabla_{\mathrm{gco}}\tilde
 | $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ | Laplacian in the three vector coordinates |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu = i\,a'_t\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\Gamma$ | Real scalar gauge function |
-| $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ | Local central phase (abelian) |
+| $\lambda = \exp(i\theta_{\mathrm{gau}})$ | Local central phase (abelian) |
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | Gauge transformation of the connection |
 | $m$ | Mass of the parent's Dirac field |

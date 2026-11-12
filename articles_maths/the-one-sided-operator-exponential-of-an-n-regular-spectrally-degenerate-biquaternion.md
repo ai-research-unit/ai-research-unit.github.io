@@ -11,7 +11,7 @@ The algebra of the operator — the two Jordan blocks, the determinant and the t
 **One null exponent.** On the sector the element is a scalar times a unipotent element, so its exponential is polynomial. Since $\vec\Upsilon^2=0$,
 
 $$
-\boxed{\;\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr)=r e^{i\alpha}\varepsilon\,e^{\vec\Upsilon},\qquad
+\boxed{\;\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr)=r e^{i\theta_{\mathrm{pha}}}\varepsilon\,e^{\vec\Upsilon},\qquad
 e^{\vec\Upsilon}=e_t+\vec\Upsilon,\qquad
 \varepsilon=\frac{Q_t}{\Rho}=\pm1.\;}
 $$
@@ -67,7 +67,7 @@ The example displays the general form: $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\v
 The element is a scalar times a unipotent element, so its exponential is polynomial:
 
 $$
-\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\alpha}\varepsilon\,e^{\vec\Upsilon},
+\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\theta_{\mathrm{pha}}}\varepsilon\,e^{\vec\Upsilon},
 \qquad
 e^{\vec\Upsilon}=e_t+\vec\Upsilon,
 \qquad \varepsilon=\frac{Q_t}{\Rho}=\pm1 .
@@ -99,7 +99,7 @@ The two angles leave a single trace in the spectrum, the null parameter $a$. The
 | $\vec\Upsilon=\vec A+i\vec B$ | the null vector, with $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
 | $L_{\vec\Upsilon}$ | the left multiplication by the null vector, $L_{\vec\Upsilon}^{2}=0$ |
-| $\Rho=r e^{i\alpha}$ | the complex modulus |
+| $\Rho=r e^{i\theta_{\mathrm{pha}}}$ | the complex modulus |
 | $\varepsilon=Q_t/\Rho=\pm1$ | the sign of the scalar part |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the positive factor and the rotor |
 | $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |

@@ -153,7 +153,7 @@ $$
 =\tfrac12 I_2\;}.
 $$
 
-The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\tilde{Ξ},\xi_{\mathrm{alt}})=\tfrac12\tilde{Ξ}^{\dagger}\xi_{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
+The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta_{\mathrm{cen}}}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\tilde{Ξ},\xi_{\mathrm{alt}})=\tfrac12\tilde{Ξ}^{\dagger}\xi_{\mathrm{alt}}$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
 
 $$
 \operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=2\operatorname{Sc}(\tilde\Pi\tilde H_\Psi),
@@ -161,7 +161,9 @@ $$
 
 which pairs a state idempotent with a Hermitian observable, the star being inert on $\mathbb{B}_{\Psi}$. The normalisation is a condition on the Hilbert structure alone: $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{*}=1$ for a state vector, and $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ for the corresponding idempotent.
 
-The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\tilde{Ξ}$ and $e^{i\alpha}\tilde{Ξ}$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
+The physical reading of the second structure is the one the informational sector has built. A **state** is a Hilbert vector, an **observable** is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\tilde{Ξ}$ and $e^{i\theta_{\mathrm{pha}}}\tilde{Ξ}$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 The sharpest way to see that this is a second structure and not a second view is the behaviour of the **algebra's own form** on the same carrier. The symmetric bilinear form
 
@@ -369,7 +371,7 @@ The physics corpus states the same three values through different constructions.
 
 | reading | construction | carrier | value |
 |---|---|---|---|
-| the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
+| the half-angle | the rotor $\exp(\tfrac{\theta_{\mathrm{cen}}}{2}\vec u)$ acts on a spinor, and the half-angle $\theta_{\mathrm{cen}}/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
 | the adjoint integer | the halved inner derivations $\tilde S_{\Psi,\mathrm{adj},\eta}=\tfrac12\mathrm{ad}_{i\vec e_\eta}a$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
 | the scalar | the rotations act trivially on the centre | $\mathbb{B}_{C}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |

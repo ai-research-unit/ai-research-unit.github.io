@@ -131,19 +131,21 @@ Trace preservation of a one-Kraus channel is not the same as trace preservation 
 Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
 
 $$
-\tilde M_{\mathrm{kraus}}=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde M_{\mathrm{kraus}}=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde M_{\mathrm{kraus},H}=r\tilde U_{\Psi,\mathrm b},
 \qquad
-\tilde M_{\mathrm{kraus},0}=e^{i\alpha}\tilde u_{\mathrm r}.
+\tilde M_{\mathrm{kraus},0}=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}.
 $$
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 The grouping is the Cartan one: the scale sits with the boost and the phase with the rotor. The four factors are a change of coordinates on the invertible elements, not a further hypothesis, and they carry the eight real parameters of $\tilde M_{\mathrm{kraus}}$.
 
 | factor | symbol | range | parameters | factor of the pair |
 | --- | --- | --- | --- | --- |
 | scale | $r$ | $r>0$ | $1$ | $\tilde M_{\mathrm{kraus},H}$ |
-| phase | $e^{i\alpha}$ | $\alpha\in[0,2\pi)$ | $1$ | $\tilde M_{\mathrm{kraus},0}$ |
+| phase | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in[0,2\pi)$ | $1$ | $\tilde M_{\mathrm{kraus},0}$ |
 | boost | $\tilde U_{\Psi,\mathrm b}$ | $\theta_{\mathrm{rpd},w}\ge0$, unit $\vec u_{\mathrm b}$ | $3$ | $\tilde M_{\mathrm{kraus},H}$ |
 | rotor | $\tilde u_{\mathrm r}$ | $\theta\in[0,2\pi)$, unit $\vec u_{\mathrm r}$ | $3$ | $\tilde M_{\mathrm{kraus},0}$ |
 
@@ -380,7 +382,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | strength | the singular values $\sigma_i$, the eigenvalues of $\tilde M_{\mathrm{kraus},H}$ |
 | backaction | the partial isometry $\tilde M_{\mathrm{kraus},0}$, $*$-unitary off the cone, rank one on it |
 | effect | $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$, eigenvalues $\sigma_i^{2}$ |
-| four factors | $\tilde M_{\mathrm{kraus}}=r e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, $\tilde M_{\mathrm{kraus},H}=r\tilde U_{\Psi,\mathrm b}$, $\tilde M_{\mathrm{kraus},0}=e^{i\alpha}\tilde u_{\mathrm r}$ |
+| four factors | $\tilde M_{\mathrm{kraus}}=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, $\tilde M_{\mathrm{kraus},H}=r\tilde U_{\Psi,\mathrm b}$, $\tilde M_{\mathrm{kraus},0}=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
 | effect in the word | eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd},w}}$; admissible iff $r^{2}e^{\theta_{\mathrm{rpd},w}}\le1$ |
 | one-Kraus channel | $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=e_t$ iff $\tilde M_{\mathrm{kraus},H}=e_t$ and $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus}}$ $*$-unitary |
 | sharp outcome | $\tilde M_{\mathrm{kraus}}=\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde E_{\Psi}=\tilde\Pi$, on the null cone |
@@ -401,7 +403,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus},H}^{+}\tilde M_{\mathrm{kraus}}$ | partial-isometry (backaction) factor |
 | $\tilde M_{\mathrm{kraus},H}^{+}$ | Moore–Penrose inverse |
 | $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$ | effect of the outcome |
-| $r,\alpha,\theta_{\mathrm{rpd},w},\theta$ | scale, central phase, word rapidity, rotor angle |
+| $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta$ | scale, central phase, word rapidity, rotor angle |
 | $\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | positive Hermitian boost, unit real quaternion rotor |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$ | rank-one Hermitian idempotent, $\vec u$ a real unit vector |
 | $\tilde\Pi_{\mathrm i}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},0}$, $\tilde\Pi_{\mathrm f}=\tilde M_{\mathrm{kraus},0}\tilde M_{\mathrm{kraus},0}^{*}$ | initial and final projections of $\tilde M_{\mathrm{kraus},0}$ |

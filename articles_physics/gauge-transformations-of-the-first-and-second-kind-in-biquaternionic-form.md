@@ -95,10 +95,12 @@ The transformation the paper uses is the corpus's **electric–magnetic duality 
 The corpus's field-strength article fixes the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$ and the invariance of the source-free equations under
 
 $$
-\vec N\mapsto \exp(-i\theta)\vec N ,
+\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N ,
 $$
 
-the duality rotation, which at $\theta=\pi/2$ is the classical exchange of electricity and magnetism. With the magnetic field quoted in units of $\vec E/c$, the source's $F = \vec E+i\vec B$ is precisely $\vec N=\vec E+ic\vec B$, and the source's transformation $F\to \exp(i\alpha)F$ is $\vec N\to \exp(i\alpha)\vec N$, that is, the duality rotation with $\theta=-\alpha$. The rotation mixes the two Lorentz invariants $\vec E\cdot\vec B$ and $\vec E^2-c^2\vec B^2$, leaving the energy density invariant; the corpus's field-strength article computes exactly this, and the computation is reproduced here as a check on the identification.
+the duality rotation, which at $\theta_{\mathrm{dua}}=\pi/2$ is the classical exchange of electricity and magnetism. With the magnetic field quoted in units of $\vec E/c$, the source's $F = \vec E+i\vec B$ is precisely $\vec N=\vec E+ic\vec B$, and the source's transformation $F\to \exp(i\alpha)F$ is $\vec N\to \exp(i\alpha)\vec N$, that is, the duality rotation with $\theta_{\mathrm{dua}}=-\alpha$. The rotation mixes the two Lorentz invariants $\vec E\cdot\vec B$ and $\vec E^2-c^2\vec B^2$, leaving the energy density invariant; the corpus's field-strength article computes exactly this, and the computation is reproduced here as a check on the identification.
+
+Here $\theta_{\mathrm{dua}}$ is the duality angle: the Riemann--Silberstein vector $\vec E+i\,c\vec B$ is complex, and the angle is its argument, so it is real.
 
 **The rotation of the invariants.** With $I_1 = \vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, the rotation by $\alpha$ sends
 

@@ -280,7 +280,7 @@ $$
 =4a^{2}\mathrm{Sd}_{\tilde Q_0}.
 $$
 
-The one-sided operator of the companion article keeps the phase in its eigenvalue $c$; the two-sided operator keeps only the modulus $\lvert c\rvert^{2}$ and the Hermitian projection $P$. When $\tilde\Pi$ is Hermitian and $c=r e^{i\alpha}$, the polar pair is $\tilde Q_H=r\tilde\Pi$ and $\tilde Q_0=e^{i\alpha}\tilde\Pi$, and the two-sided operator is $r^{2}\mathrm{Sd}_{\tilde\Pi}$: the phase has cancelled between $\tilde Q_0$ and $\tilde Q_0^{*}$.
+The one-sided operator of the companion article keeps the phase in its eigenvalue $c$; the two-sided operator keeps only the modulus $\lvert c\rvert^{2}$ and the Hermitian projection $P$. When $\tilde\Pi$ is Hermitian and $c=r e^{i\theta_{\mathrm{pha}}}$, the polar pair is $\tilde Q_H=r\tilde\Pi$ and $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde\Pi$, and the two-sided operator is $r^{2}\mathrm{Sd}_{\tilde\Pi}$: the phase has cancelled between $\tilde Q_0$ and $\tilde Q_0^{*}$.
 
 ### The polar pair of the element and of the operator
 

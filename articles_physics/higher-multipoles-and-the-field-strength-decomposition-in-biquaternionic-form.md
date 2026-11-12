@@ -242,7 +242,9 @@ $$
 
 The field-strength biquaternion of a radiation field is a **zero divisor**: a radiation field is null, whether it is an electric or a magnetic multipole, and the null property is shared by the whole far-zone tower.
 
-A further simplification occurs for definite helicity. With the corpus's $\exp(-i\omega r'_t/c)$ convention, for which a positive-frequency plane wave has $\vec B = \vec u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
+A further simplification occurs for definite helicity. With the corpus's $\exp(-i\theta_{\mathrm{pwt}})$ convention, for which a positive-frequency plane wave has $\vec B = \vec u\times\vec E/c$, a circularly polarised wave of one handedness satisfies $\vec B = -i\,\vec E/c$ as a complex amplitude and the other handedness satisfies $\vec B = +i\,\vec E/c$. For the first,
+
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 $$
 \vec N^* = \vec E - ic\,\vec B = 0 ,

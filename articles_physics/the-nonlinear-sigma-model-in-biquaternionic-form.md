@@ -233,13 +233,15 @@ and the two statements together are the content of the model: flatness is what d
 
 The other target the framework supplies is the centre.
 
-The central phase group is $\mathrm{U}(1) = \{\exp(i\alpha)e_t\}$, and its group-valued field is the exponential of a central Goldstone field,
+The central phase group is $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{pha}})e_t\}$, and its group-valued field is the exponential of a central Goldstone field,
 
 $$
 \tilde U = \exp\!\left(\frac{i\,\pi}{f}\right)e_t \in \mathbb{B}_{C} ,
 \qquad
 \tilde U\tilde U^{\natural} = e_t ,
 $$
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 with $\pi$ a real central-valued scalar. The two-derivative Lagrangian is again the biquaternion norm,
 

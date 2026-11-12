@@ -42,7 +42,9 @@ The sections follow that order: the ansatz and its domain, the two real equation
 
 ### The field in amplitude and phase
 
-The ansatz is the boxed form of the introduction, read once more with its two variables separated. The amplitude is real and positive, the action is real, and the exponential is central, so both factors commute with everything in the algebra. The symbol $\Xi_t$ stays available for the coefficient, and on the centre it is the amplitude times the exponential, $\Xi_t=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)$. The two real functions $(\lVert\tilde\Xi\rVert,S_{\tilde\Xi})$ and the one complex function $\Xi_t$ carry the same information.
+The ansatz is the boxed form of the introduction, read once more with its two variables separated. The amplitude is real and positive, the action is real, and the exponential is central, so both factors commute with everything in the algebra. The symbol $\Xi_t$ stays available for the coefficient, and on the centre it is the amplitude times the exponential, $\Xi_t=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}$. The two real functions $(\lVert\tilde\Xi\rVert,S_{\tilde\Xi})$ and the one complex function $\Xi_t$ carry the same information.
+
+Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 **The choice of a real, positive amplitude is a gauge.** A complex amplitude would also represent the field, since its modulus and its argument can be reabsorbed into the two real functions. The corpus fixes the amplitude real and positive because that is what makes the transport equation of §*The Two Real Equations* take its divergence form; the reason is given there. Nothing is lost and one ambiguity is removed.
 
@@ -68,9 +70,11 @@ The failure costs nothing observable. $S_{\tilde\Xi}$ is undefined at a node bec
 
 ### The algebra's polar word degenerates here
 
-The corpus's polar word, $\tilde Q=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with a scale, a central phase, a frame rotor and a rotor, is the four-factor decomposition of an $N$-regular element, stated in *The Polar Decomposition of an N-Regular Biquaternion* and fixed in *Norm and Pairing Conventions*. On a nonzero central field it collapses to the two factors of this article. The Hermitian norm of a central element is $\Xi_t\Xi_t^{*}=\rho_{\mathrm{num}}e_t$, whose positive square root is $\lVert\tilde\Xi\rVert e_t$, so the scale is the amplitude. The remaining factor is a central element of modulus one, and the only real unit quaternions in the centre are $\pm e_t$, so the frame rotor is $e_t$ and the rotor is $\pm e_t$. Six of the word's eight parameters are frozen at the identity on every scalar field, at every event.
+The corpus's polar word, $\tilde Q=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with a scale, a central phase, a frame rotor and a rotor, is the four-factor decomposition of an $N$-regular element, stated in *The Polar Decomposition of an N-Regular Biquaternion* and fixed in *Norm and Pairing Conventions*. On a nonzero central field it collapses to the two factors of this article. The Hermitian norm of a central element is $\Xi_t\Xi_t^{*}=\rho_{\mathrm{num}}e_t$, whose positive square root is $\lVert\tilde\Xi\rVert e_t$, so the scale is the amplitude. The remaining factor is a central element of modulus one, and the only real unit quaternions in the centre are $\pm e_t$, so the frame rotor is $e_t$ and the rotor is $\pm e_t$. Six of the word's eight parameters are frozen at the identity on every scalar field, at every event.
 
-**The word's angle runs over a half-turn and the physics angle over a full turn.** The word keeps $\alpha$ in $(-\pi/2,\pi/2]$ and deposits the excess in the sign of the rotor, while the polar form above lets $\theta_{\mathrm{phs}}$ run over $(-\pi,\pi]$. The two agree pointwise, $\theta_{\mathrm{phs}}=\alpha$ when $\tilde u_{\mathrm r}=e_t$ and $\theta_{\mathrm{phs}}=\alpha+\pi$ when $\tilde u_{\mathrm r}=-e_t$, and the half-turn is invisible to $\lVert\tilde\Xi\rVert$, to $\partial S_{\tilde\Xi}/\partial r'_t$ and to every observable here. The degeneracy is a statement about the algebra and not a defect of the field: a spin-$0$ wave has no frame for the word to carry, and the two coordinates of the polar form are the whole of the word on it.
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
+
+**The word's angle runs over a half-turn and the physics angle over a full turn.** The word keeps $\theta_{\mathrm{pha}}$ in $(-\pi/2,\pi/2]$ and deposits the excess in the sign of the rotor, while the polar form above lets $\theta_{\mathrm{phs}}$ run over $(-\pi,\pi]$. The two agree pointwise, $\theta_{\mathrm{phs}}=\theta_{\mathrm{pha}}$ when $\tilde u_{\mathrm r}=e_t$ and $\theta_{\mathrm{phs}}=\theta_{\mathrm{pha}}+\pi$ when $\tilde u_{\mathrm r}=-e_t$, and the half-turn is invisible to $\lVert\tilde\Xi\rVert$, to $\partial S_{\tilde\Xi}/\partial r'_t$ and to every observable here. The degeneracy is a statement about the algebra and not a defect of the field: a spin-$0$ wave has no frame for the word to carry, and the two coordinates of the polar form are the whole of the word on it.
 
 **The amplitude is not the polar modulus.** The polar modulus is $\Rho=\bigl(\langle\tilde\Xi\rangle_{\natural}\bigr)^{1/2}$, which is complex, and on the centre $\lvert\Rho\rvert=\lVert\tilde\Xi\rVert$. The four norms and their collapse on the centre are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the distinction matters here only at the nodes, where both vanish.
 
@@ -81,13 +85,13 @@ The corpus's polar word, $\tilde Q=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde
 The d'Alembertian of the ansatz separates into a real and an imaginary part with no remainder, because the amplitude and the action are real and the exponential is central. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector,
 
 $$
-\Box_\Phi\!\left(\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}\right)
-=e^{iS_{\tilde\Xi}/\hbar}\left\{\Box_\Phi\lVert\tilde\Xi\rVert+\frac{\lVert\tilde\Xi\rVert}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{\lVert\tilde\Xi\rVert}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
+\Box_\Phi\!\left(\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}\right)
+=e^{i\theta_{\mathrm{phs}}}\left\{\Box_\Phi\lVert\tilde\Xi\rVert+\frac{\lVert\tilde\Xi\rVert}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{\lVert\tilde\Xi\rVert}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
 $$
 
 The first two terms are real and the third is purely imaginary. The verification is one differentiation of a product: each derivative of the field returns a real term, an imaginary term and a cross term carrying both functions once, and the temporal second derivative enters with the sign that $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ gives it.
 
-Dividing by $\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}$ and using $\hbar k_m=mc$, the equation $\left(\Box-k_m^{2}\right)\Xi_t=0$ becomes the pair
+Dividing by $\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}$ and using $\hbar k_m=mc$, the equation $\left(\Box-k_m^{2}\right)\Xi_t=0$ becomes the pair
 
 $$
 \boxed{\;\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}\;}
@@ -125,7 +129,7 @@ $$
 
 which is the companion's $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ with one term added. The added term vanishes exactly when $\Box\lVert\tilde\Xi\rVert=0$: a plane wave of constant amplitude satisfies that, and a wave packet, a bound state, or any field whose amplitude is not annihilated by $\Box$ does not.
 
-**The quantum potential is the WKB one with the Laplacian promoted.** The WKB article writes $Q=-\frac{\hbar^{2}}{2\,m}\frac{\nabla^{2}A}{A}$ for the stationary state, with $A$ its real amplitude and $\nabla^{2}$ the Laplacian. Since $mc^{2}/(2k_m^{2})=\hbar^{2}/(2m)$, the coefficient is the same and $\Box$ replaces the Laplacian: $Q_{\mathrm{qnt}}$ is the static quantum potential with the second derivative taken in four coordinates instead of three. The term appears only because the operator is second order: a first-order operator applied to $\lVert\tilde\Xi\rVert e^{iS_{\tilde\Xi}/\hbar}$ returns one derivative of the amplitude and no curvature, which is why the polar form of the Dirac wave stops at the eikonal and the four-momentum (*Relativistic Mechanics from the Dirac Wave*).
+**The quantum potential is the WKB one with the Laplacian promoted.** The WKB article writes $Q=-\frac{\hbar^{2}}{2\,m}\frac{\nabla^{2}A}{A}$ for the stationary state, with $A$ its real amplitude and $\nabla^{2}$ the Laplacian. Since $mc^{2}/(2k_m^{2})=\hbar^{2}/(2m)$, the coefficient is the same and $\Box$ replaces the Laplacian: $Q_{\mathrm{qnt}}$ is the static quantum potential with the second derivative taken in four coordinates instead of three. The term appears only because the operator is second order: a first-order operator applied to $\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}$ returns one derivative of the amplitude and no curvature, which is why the polar form of the Dirac wave stops at the eikonal and the four-momentum (*Relativistic Mechanics from the Dirac Wave*).
 
 ### The quantum potential depends on the density alone
 
@@ -369,7 +373,7 @@ $$
 
 so a general polarization enters the density through one positive number and nothing else. The scalar case is the member $\tilde Q_{\mathrm{amp}}=Q_{\mathrm{amp},t}e_t$, and the pair of §*The Two Real Equations* returns unchanged on $\lVert\tilde\Xi\rVert=\langle\tilde Q_{\mathrm{amp}}\rangle_{*}^{1/2}\lvert g\rvert$.
 
-**A varying frame is not available.** The algebra's polar word applies to any $N$-regular element, so $\tilde\Xi=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists for a general field; but the frame rotor and the rotor are then fields, their derivatives do not vanish, and substituting the word into the Klein–Gordon equation gives eight equations for the eight real parameters, with the derivatives of the frame entering to the same order as those of the amplitude. Two parameters are what a pair can describe, so the other six have to be constants. That is the condition $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$, and it is why the one-phase case is the polarized case.
+**A varying frame is not available.** The algebra's polar word applies to any $N$-regular element, so $\tilde\Xi=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists for a general field; but the frame rotor and the rotor are then fields, their derivatives do not vanish, and substituting the word into the Klein–Gordon equation gives eight equations for the eight real parameters, with the derivatives of the frame entering to the same order as those of the amplitude. Two parameters are what a pair can describe, so the other six have to be constants. That is the condition $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$, and it is why the one-phase case is the polarized case.
 
 ### The charge density adds up, and the spatial current has two readings
 
@@ -440,7 +444,7 @@ Both coefficients are nonzero, and $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}
 
 ## Summary
 
-The scalar case comes first: the field is central and is the one complex scalar $\Xi_t$. Its polar form is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real and $S_{\tilde\Xi}$ the action, so the angle $S_{\tilde\Xi}/\hbar$ is a pure number and the amplitude squared is the proper density $\rho_{\mathrm{num}}$. Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ gives two exact real equations,
+The scalar case comes first: the field is central and is the one complex scalar $\Xi_t$. Its polar form is $\tilde\Xi=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}e_t$ with $\lVert\tilde\Xi\rVert>0$ real and $S_{\tilde\Xi}$ the action, so the angle $S_{\tilde\Xi}/\hbar$ is a pure number and the amplitude squared is the proper density $\rho_{\mathrm{num}}$. Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ gives two exact real equations,
 
 $$
 \left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
@@ -474,7 +478,7 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
 | $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ | The biquaternion Klein–Gordon field, four complex coefficients |
 | $\Xi_\mu$ | The coefficient of $e_\mu$, a complex scalar; the scalar case is $\Xi_t$ alone |
-| $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ | The polar form of the scalar case, $\lVert\tilde\Xi\rVert>0$ real and $S_{\tilde\Xi}$ real |
+| $\tilde\Xi=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}e_t$ | The polar form of the scalar case, $\lVert\tilde\Xi\rVert>0$ real and $S_{\tilde\Xi}$ real |
 | $\lVert\tilde\Xi\rVert$ | The amplitude, positive; the topological norm $\bigl(\langle\tilde\Xi\rangle_{*}\bigr)^{1/2}$; the word's scale $r$ |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density; the amplitude squared, never a letter |
 | $S_{\tilde\Xi}$ | The action, in $\mathrm{J\,s}$, defined modulo $2\pi\hbar$ |
@@ -489,7 +493,7 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; on $\tilde\Xi$ it is $\Xi_t^{2}$ |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm; on $\tilde\Xi$ it is $\rho_{\mathrm{num}}$ |
 | $\Rho=\bigl(\langle\tilde\Xi\rangle_{\natural}\bigr)^{1/2}$ | Polar modulus, complex; $\lvert\Rho\rvert=\lVert\tilde\Xi\rVert$ on the centre |
-| $\tilde Q=r\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The algebra's polar word; here $r=\lVert\tilde\Xi\rVert$, $\alpha=\theta_{\mathrm{phs}}$ up to a half-turn, $\tilde U_{\Psi,\mathrm b}=e_t$ and $\tilde u_{\mathrm r}=\pm e_t$ |
+| $\tilde Q=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The algebra's polar word; here $r=\lVert\tilde\Xi\rVert$, $\theta_{\mathrm{pha}}=\theta_{\mathrm{phs}}$ up to a half-turn, $\tilde U_{\Psi,\mathrm b}=e_t$ and $\tilde u_{\mathrm r}=\pm e_t$ |
 | $\tilde J_{\Phi}=ic\rho_{\mathrm{chg}}\,e_t+\vec j=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Conserved four-current |
 | $\tilde V_{\Phi}=\tilde P_{\Phi}/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | Four-velocity; unit timelike for a plane wave only |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2}),\ \vec j=\rho_{\mathrm{num}}\vec p/m$ | Charge density and current density; $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ on shell |

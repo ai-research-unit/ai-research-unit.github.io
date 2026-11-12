@@ -107,11 +107,13 @@ $$
 \Gamma(\tilde{Q}) = -\,\frac{\hbar}{ϙ\,v}\,\theta(\tilde{Q}),
 $$
 
-so that the covariant phase factor is $\exp(\frac{i\,ϙ\,\Gamma}{\hbar}) = \exp(-i\theta/v)$ and
+so that the covariant phase factor is $\exp(i\theta_{\mathrm{gau}}) = \exp(-i\theta/v)$ and
 
 $$
-\xi \;\longmapsto\; \exp(\frac{i\,ϙ\,\Gamma}{\hbar})\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)\exp(-i\theta/v) = \tfrac{1}{\sqrt{2}}(v+h),
+\xi \;\longmapsto\; \exp(i\theta_{\mathrm{gau}})\xi = \tfrac{1}{\sqrt{2}}(v+h)\exp(i\theta/v)\exp(-i\theta/v) = \tfrac{1}{\sqrt{2}}(v+h),
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 real. This is the **unitary gauge** of the abelian model. In it the scalar is a single real field $h$, and the angular field $\vartheta_{\mathrm{fld}}$ has been removed from the scalar. The removal is effected entirely by a gauge transformation, which is what makes the erased object a redundant label: it is the coordinate along the gauge orbit of the vacuum, and the orbit's information content was fixed in the companion article to be nil.
 
@@ -178,7 +180,7 @@ The informational interpretation is that the mass is the **record** of the break
 
 ### $*$-Unitary on the Full Degrees of Freedom
 
-On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\theta$ is implemented by a $*$-unitary (the central phase $\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
+On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\theta$ is implemented by a $*$-unitary (the central phase $\exp(i\theta_{\mathrm{gau}})$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
 
 $$
 \boxed{\;S\bigl(U\tilde{Ϛ}_{\Psi,1}\,U^\dagger \,\big\|\, U\tilde{Ϛ}_{\Psi,2}\,U^\dagger\bigr) = S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})\;},

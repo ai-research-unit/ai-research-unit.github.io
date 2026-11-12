@@ -82,9 +82,11 @@ Two things must be said about the name, and the corpus says them rather than let
 A **monochromatic** field is one whose time dependence is a single exponential,
 
 $$
-\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\theta_{\mathrm{mat}}),
 \qquad \omega > 0 ,
 $$
+
+Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.
 
 so that $\partial/\partial \tau \to -i\omega$. Substituting into the postulate gives the programme's **photon
 equation**,
@@ -253,7 +255,7 @@ from a charge–current distribution to its field. Over a band of frequencies th
 contributions into what it calls light,
 
 $$
-\Lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau)\,d\omega ,
+\Lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\theta_{\mathrm{mat}})\,d\omega ,
 \qquad
 \tilde{\Sigma}_{\Psi,\Lambda} = \Lambda\Lambda^{*} ,
 $$
@@ -261,7 +263,7 @@ $$
 and the free-photon cloud is the same construction with the four plane modes weighted and summed,
 
 $$
-\mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\omega\tau)
+\mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\theta_{\mathrm{mat}})
 \left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k_\Phi\|=\omega} b_{j}(\vec k_\Phi,\omega)\,
 \tilde{Ξ}_{\vec k_\Phi,j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k_\Phi)\right\} d\omega ,
 \qquad
@@ -412,7 +414,7 @@ clearest statement of what the programme assumes.
 | $\vec\nabla_\Phi = \vec e_x\,\partial/\partial r_x+\vec e_y\,\partial/\partial r_y+\vec e_z\,\partial/\partial r_z$ | Pure-vector gradient, left quaternion multiplication |
 | $\vec\nabla_\Phi\circ\vec\nabla_\Phi = -\Delta_\Phi$ | The square of $\vec\nabla_\Phi$ |
 | $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$ | The paper's $\omega$-gradients; $\vec\nabla^{\pm}_{\Phi,\omega} = iD_{\mp}$ at fixed frequency |
-| $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
+| $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\theta_{\mathrm{mat}})$ |
 | $\vec\nabla^{-}_{\Phi,\omega}\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$ | The photon equation |
 | $\vec\nabla^{-}_{\Phi,\omega}\circ\vec\nabla^{+}_{\Phi,\omega} = \omega^{2} + \Delta_\Phi$ | Helmholtz factorisation of the photon equation |
 | $\tilde{Ξ} = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta_\Phi+\omega^{2})\tilde{Ξ} = \delta$ |

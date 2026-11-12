@@ -140,16 +140,16 @@ $$
 $$
 This is the Jacobian the exercise warns about: the factor $1/(2R)$ is what turns the invariant coefficient $1/(2\pi)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi}\delta(r'_t-R)$, or as $\frac{1}{2\pi R}\delta(r'_t-R)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $\frac{du}{dg}$ term does not cancel, except for the middle form, whose $\frac{du}{dg}$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.
 
-**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k_\Phi}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
+**(c) The coefficient from the Fourier representation.** The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k_\Phi}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i\theta_{\mathrm{pwp}})$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
 $$
 G(\vec k_\Phi,\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
 \qquad
 G(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \int\frac{d^3k_\Phi}{(2\pi)^3}\frac{d\omega}{2\pi}\,
-\frac{c^2\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))}{c^2 k^2 - \omega^2},
+\frac{c^2\,\exp(i\theta_{\mathrm{pwp}})}{c^2 k^2 - \omega^2},
 $$
 where the inversion contour is not yet specified — this is exactly the ambiguity of Problem 3. The retarded choice shifts both $\omega$-poles below the real axis, $\omega \to \omega + i\epsilon$, i.e. the poles sit at $\omega = \pm ck - i\epsilon$. Closing the contour in the lower half-plane for $r'_t>0$ (and in the upper half-plane, with no poles, for $r'_t<0$) gives
 $$
-\int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\omega r'_t/c)}{c^2 k^2 - \omega^2}
+\int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\theta_{\mathrm{pwt}})}{c^2 k^2 - \omega^2}
 = \frac{c}{k}\,\sin(kr'_t)\,\mathrm{H}_{\mathrm{hvs}}(r'_t).
 $$
 The angular integral of $\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ over the directions of $\vec k_\Phi$ introduces $\sin(kR)/(kR)$, so
@@ -159,6 +159,10 @@ G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
 = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right),
 $$
 using $\int_0^\infty \sin(kR)\sin(kr'_t)\,dk = \frac{\pi}{2}\bigl[\delta(r'_t - R) - \delta(r'_t + R)\bigr]$ and discarding the past-cone term because $r'_t>0$. The Fourier route and the light-cone route agree, coefficient included. The contour computation was also checked numerically: for fixed $k,c,r'_t>0$ the retarded contour reproduces $\frac{c}{k}\sin(kr'_t)$ and the advanced contour gives zero, and conversely for $r'_t<0$.
+
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
+
+Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
 ## Problem 3: Retarded, Advanced, and the Boundary Condition
 

@@ -212,7 +212,7 @@ The category is twenty-five articles in four layers: the field's stress and flow
 |---|---|
 | $\tilde\Xi$ | The scalar field, one element of $\mathbb{B}$ |
 | $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$ | Proper density |
-| $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
+| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
 | $\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$ | Boost, rotor |
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |
 | $\tilde V_{\Phi,\mathrm{sup}}$, $\tilde V_{\Phi,\mathrm{nrm}}$ | Condensate and normal flows |
@@ -238,6 +238,8 @@ The category is twenty-five articles in four layers: the field's stress and flow
 | $k_B$ | Boltzmann's constant |
 | $\mathrm{Sc}$, $\langle\ \rangle_{\natural}$ | Scalar part, quaternionic norm |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra and its two sectors |
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 ## Further Reading
 

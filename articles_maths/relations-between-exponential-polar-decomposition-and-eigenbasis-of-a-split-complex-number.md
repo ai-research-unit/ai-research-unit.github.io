@@ -495,16 +495,16 @@ The table collects the formulas in one place.
 
 ### The Dictionary Across the Three Algebras
 
-The table compares the three relation articles; in the split-complex column, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$; in the biquaternion column, $\tilde U=U_te_t+\vec U=\tilde Q/(re^{i\alpha})$ is the unit factor and $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$.
+The table compares the three relation articles; in the split-complex column, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$; in the biquaternion column, $\tilde U=U_te_t+\vec U=\tilde Q/(re^{i\theta_{\mathrm{pha}}})$ is the unit factor and $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$.
 
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
 | Eigenvalues | $\lambda_\pm=q\pm q'$ | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | $\lambda_\pm=Q_t\pm i\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{1/2}$ |
 | Eigenprojections | fixed $\Pi_\pm$ | fixed $\Pi_\pm$ | variable $\tilde\Pi_\pm$ |
-| Polar parameters | $r,\theta_{\mathrm{hpa}},\epsilon$ | $\rho,\theta_{\mathrm{hpa}},\alpha,\beta$ | $r,\alpha,\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$ |
-| Eigenvalues from polar data | $\sigma_\pm r e^{\pm\theta_{\mathrm{hpa}}}$ | $\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{hpa}}+i\beta)}$ | $r e^{i\alpha}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$ |
-| Polar factors from spectrum | $r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ | $\breve r=\rho_+\Pi_++\rho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ | $\tilde U=\dfrac{\lambda_+}{r e^{i\alpha}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\alpha}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
-| Discrete data | $\epsilon\in(\mathbb{Z}/2)^2$ | lattice $\Lambda$ in $(\alpha,\beta)$ | none |
+| Polar parameters | $r,\theta_{\mathrm{hpa}},\epsilon$ | $\rho,\theta_{\mathrm{hpa}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ | $r,\theta_{\mathrm{pha}},\psi,\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$ |
+| Eigenvalues from polar data | $\sigma_\pm r e^{\pm\theta_{\mathrm{hpa}}}$ | $\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{hpa}}+i\theta_{\mathrm{phb}})}$ | $r e^{i\theta_{\mathrm{pha}}}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$ |
+| Polar factors from spectrum | $r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ | $\breve r=\rho_+\Pi_++\rho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ | $\tilde U=\dfrac{\lambda_+}{r e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ |
+| Discrete data | $\epsilon\in(\mathbb{Z}/2)^2$ | lattice $\Lambda$ in $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ | none |
 | Polar domain | $q^2-q'^2\neq0$ | $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0$ |
 | Spectral domain | all $Q$ | all $\breve Q$ | $Q_x^2+Q_y^2+Q_z^2\neq0$, or $\vec Q=0$ |
 | Zero divisors | spectral, no polar word | spectral, no polar word | spectral, no polar word |

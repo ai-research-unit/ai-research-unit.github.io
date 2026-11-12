@@ -446,7 +446,9 @@ $$
 S=-mc^2\tau,\qquad \tau=\int\frac{dt}{\gamma},\qquad \gamma=\cosh\theta_{\mathrm{rpd}} .
 $$
 
-The mass is the invariant coefficient and the frame factor is the conversion between coordinate time and proper time. The phase $e^{\frac{i\,S}{\hbar}}$ therefore carries the mass in its amplitude and the frame in its clock. This is the sharpest form of the split on the material side: **the action is the mass times the proper time, and the frame information is the rate at which proper time is spent.**
+The mass is the invariant coefficient and the frame factor is the conversion between coordinate time and proper time. The phase $\exp(i\theta_{\mathrm{act}})$ therefore carries the mass in its amplitude and the frame in its clock. This is the sharpest form of the split on the material side: **the action is the mass times the proper time, and the frame information is the rate at which proper time is spent.**
+
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 ### Mass Conservation Is Norm Conservation of the Total
 
@@ -728,7 +730,7 @@ The corpus contains three constants and one unit, and none of them is an informa
 | object | value or origin | status |
 | --- | --- | --- |
 | $c$ | the unit conversion of the temporal slot; it sets the null cone at $\lvert\vec p\rvert=E/c$ | with the units |
-| $\hbar$ | the phase $e^{\frac{i\,S}{\hbar}}$ and the spin generators | imported |
+| $\hbar$ | the phase $\exp(i\theta_{\mathrm{act}})$ and the spin generators | imported |
 | $k_B$ | the thermodynamic entropy, $S_{\mathrm{th}}=k_BS$ | imported |
 | the bit | $\log2$, the capacity of the two-dimensional carrier | algebraic, from $\dim S=2$ |
 

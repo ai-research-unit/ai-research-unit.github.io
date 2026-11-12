@@ -15,13 +15,13 @@ The article is organised as follows. The standard mean-field theory of the spin-
 The condensate is described by a macroscopic wave function with three internal components,
 
 $$
-\tilde{Ξ}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta(\vec r))\,
+\tilde{Ξ}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta_{\mathrm{pha}}(\vec r))\,
 \vec\varkappa_{\mathrm{ord}}(\vec r),\qquad
 \vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\ \varkappa_{\mathrm{ord},0}\ \varkappa_{\mathrm{ord},-}\end{pmatrix},\qquad
 {\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1 ,
 $$
 
-where $n$ is the density, $\theta$ the global phase, and $\vec\varkappa_{\mathrm{ord}}$ the *spinor order parameter*, a unit vector in $\mathbb{C}^3$ whose components multiply the states of spin projection $m=+1,0,-1$ along the quantisation axis. The spin operators are the dimensionless three-dimensional matrices
+where $n$ is the density, $\theta_{\mathrm{pha}}$ the global phase, and $\vec\varkappa_{\mathrm{ord}}$ the *spinor order parameter*, a unit vector in $\mathbb{C}^3$ whose components multiply the states of spin projection $m=+1,0,-1$ along the quantisation axis. The spin operators are the dimensionless three-dimensional matrices
 
 $$
 F_x=\frac{1}{\sqrt2}\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix},\quad
@@ -38,9 +38,11 @@ $$
 is the magnetic order parameter, a real three-vector with $|\langle\vec F\rangle|\le1$. The atomic Hamiltonian is invariant under the three-parameter family of transformations
 
 $$
-\vec\varkappa_{\mathrm{ord}}\;\longmapsto\;\exp(i\alpha)\,\exp(-i\beta\,\vec u\cdot\vec F)\,\vec\varkappa_{\mathrm{ord}} ,
-\qquad \alpha\in\mathbb{R},\quad \beta\in\mathbb{R},\quad \vec u\in S^2 ,
+\vec\varkappa_{\mathrm{ord}}\;\longmapsto\;\exp(i\theta_{\mathrm{pha}})\,\exp(-i\beta\,\vec u\cdot\vec F)\,\vec\varkappa_{\mathrm{ord}} ,
+\qquad \theta_{\mathrm{pha}}\in\mathbb{R},\quad \beta\in\mathbb{R},\quad \vec u\in S^2 ,
 $$
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; the two factors commute, because the first is a phase on all three components and the second rotates them among themselves. This symmetry, and its breaking in the ground state, organises everything that follows.
 
@@ -186,7 +188,7 @@ The two families exhaust the two extreme values of the magnetic invariant, and t
 
 ### The order-parameter manifolds
 
-The symmetry group of the problem acts on the symmetric sector as $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$, and the order-parameter manifolds are the orbits. In the framework both factors have an algebraic description: the phase $\exp(i\alpha)$ is multiplication by the central element $\exp(i\alpha)e_t$ of $\mathbb{B}$, and the spin rotation $\exp(-i\beta\vec u\cdot\vec F)$ is the adjoint action on the triplet.
+The symmetry group of the problem acts on the symmetric sector as $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$, and the order-parameter manifolds are the orbits. In the framework both factors have an algebraic description: the phase $\exp(i\theta_{\mathrm{pha}})$ is multiplication by the central element $\exp(i\theta_{\mathrm{pha}})e_t$ of $\mathbb{B}$, and the spin rotation $\exp(-i\beta\vec u\cdot\vec F)$ is the adjoint action on the triplet.
 
 For the ferromagnetic state $\vec\varkappa_{\mathrm{ord}}=(1,0,0)^T$ the stabiliser in $G$ is the diagonal $\mathrm{U}(1)$: the rotation about the ferromagnetic axis multiplies the state by a phase, since $\exp(-i\beta F_z)(1,0,0)^T=\exp(-i\beta)(1,0,0)^T$, which the phase factor can absorb. Hence
 
@@ -250,7 +252,7 @@ The division of labour in the preceding sections can be tabulated.
 |---|---|
 | Three-component spinor, unit normalisation | vector in $\mathrm{sym}^2V$; the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
 | Spin-one operators, $\vec F^2=2I$ | restrictions of $\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ |
-| Phase symmetry $\mathrm{U}(1)$ | multiplication by the centre $\exp(i\alpha)e_t$ of $\mathbb{B}$ |
+| Phase symmetry $\mathrm{U}(1)$ | multiplication by the centre $\exp(i\theta_{\mathrm{pha}})e_t$ of $\mathbb{B}$ |
 | Spin symmetry $SU(2)$ | the adjoint action on the triplet |
 | Magnetic order $\langle\vec F\rangle$ | linear (rank-one) tensor expectation |
 | Nematic order $\mathcal{Q}_{ij}$ | rank-two tensor expectation, traceless part |
@@ -266,7 +268,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 ## Summary
 
 - The order parameter of a spin-one condensate is a unit spinor $\vec\varkappa_{\mathrm{ord}}\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $\tilde\Pi_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.
-- The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\alpha)e_t$, and the spin rotation is the adjoint action on the triplet.
+- The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\theta_{\mathrm{pha}})e_t$, and the spin rotation is the adjoint action on the triplet.
 - The standard mean-field energy is a function of the spinor only through the three invariants $\lvert\langle\vec F\rangle\rvert^2$, $\langle F_z\rangle$ and $\langle F_z^2\rangle$. In the framework these are the rank-one tensor expectation, the quadratic $F_z^2$ expectation, and the $z$-component of the magnetic order; the alignment was verified to be $\langle F_z^2\rangle=\tfrac23+n_3/\sqrt3-n_8/3$ on random pure states, and the magnetic order components are $s_1=\sqrt{2/3}(n_1+n_6)$, $s_2=\sqrt{2/3}(n_2+n_7)$, $s_3=n_3/\sqrt3+n_8$.
 - The nematic (quadrupolar) order parameter is the traceless symmetric tensor $\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac23\delta_{ij}$; for the polar state along $\vec u$ it is $\tfrac13\delta_{ij}-\vec u_i\vec u_j$, invariant under $\vec u\to-\vec u$. The polar state $\vec\varkappa_{\mathrm{ord}}=(0,1,0)^T$ has $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$, both verified.
 - Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}$, symmetrised products of *identical* fundamental idempotents, with $\lvert\langle\vec F\rangle\rvert=1$; the polar states are $\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}=\tfrac12\lvert\vec{\varkappa_{\mathrm{ord}}}_{\mathrm{pol},\vec u}\rangle\langle\vec{\varkappa_{\mathrm{ord}}}_{\mathrm{pol},\vec u}\rvert$, symmetrised products of *antipodal* idempotents, with $\langle\vec F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.
@@ -277,7 +279,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Ξ}=\sqrt n\,\exp(i\theta)\vec\varkappa_{\mathrm{ord}}$ | Condensate wave function; $n$ density, $\theta$ phase |
+| $\tilde{Ξ}=\sqrt n\,\exp(i\theta_{\mathrm{pha}})\vec\varkappa_{\mathrm{ord}}$ | Condensate wave function; $n$ density, $\theta_{\mathrm{pha}}$ phase |
 | $\vec\varkappa_{\mathrm{ord}}=(\varkappa_{\mathrm{ord},+},\varkappa_{\mathrm{ord},0},\varkappa_{\mathrm{ord},-})^T$ | Spinor order parameter, ${\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1$ |
 | $F_\eta$ | Dimensionless spin-one operators, eigenvalues $\pm1,0$; $\vec F^2=2I_3$ |
 | $\langle\vec F\rangle$ | Magnetic (vector) order parameter |

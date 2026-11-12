@@ -169,7 +169,9 @@ The passage from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{H}$ therefore replaces a pr
 
 ## Why the Change Sometimes Fails
 
-The same passage also removes part of the structure. The Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering of events, the phase $\exp(\frac{i\,S}{\hbar})$ with its specific oscillation — is not preserved by the passage to $\mathbb{B}_{H}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears, because there are no zero divisors on $\mathbb{B}_{H}$.
+The same passage also removes part of the structure. The Lorentzian structure of $\mathbb{B}_{\Phi}$ — the light cone, the causal ordering of events, the phase $\exp(i\theta_{\mathrm{act}})$ with its specific oscillation — is not preserved by the passage to $\mathbb{B}_{H}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears, because there are no zero divisors on $\mathbb{B}_{H}$.
+
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The two slices carry different reality conditions on one complexified quantity, so a quantity must be continued and not carried over. The continuation exists exactly when the deformation of the coefficient crosses no singularity of the continued quantity: no pole and no branch cut in the strip it sweeps. This is the reason the Wick rotation sometimes fails, and the failure is a statement about the analyticity of the quantity, not about the difficulty of the calculation. A free field is continued exactly, and interacting theories fail where the deformation meets the singularities of the continued Green function.
 

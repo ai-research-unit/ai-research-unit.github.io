@@ -327,7 +327,9 @@ which is maximally entangled in the product basis and is therefore not a product
 
 Second, the local transformations form a proper subgroup. The elements $\tilde Q_1\otimes\tilde Q_2$ with $\tilde Q_a\in\mathbb{B}$ $*$-unitary constitute $\mathrm{U}(2)\times \mathrm{U}(2)$, of real dimension $8$, inside the $\mathrm{U}(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.
 
-The transformation is not unique as a matrix. Only the coupled *idempotents* are canonical: the decomposition $\mathbb{C}^4=\mathrm{sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_{\Psi,3}$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_t$, and the relative phases of a multiplet are a convention.
+The transformation is not unique as a matrix. Only the coupled *idempotents* are canonical: the decomposition $\mathbb{C}^4=\mathrm{sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_{\Psi,3}$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\theta_{\mathrm{pha}})e_t$, and the relative phases of a multiplet are a convention.
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 ## The Coupling of Two Triplets
 
@@ -393,7 +395,7 @@ $$
 \langle 1,1;1,-1|0,0\rangle=+\tfrac{1}{\sqrt3},
 $$
 
-and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $\exp(i\alpha)e_t$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_{\Psi,\pm}$ of the algebra, act with the positive square-root coefficients above.
+and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $\exp(i\theta_{\mathrm{pha}})e_t$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_{\Psi,\pm}$ of the algebra, act with the positive square-root coefficients above.
 
 Two consistency checks are worth recording. First, the recursion relations reproduce the closed form of Wigner's formula for $s_1=s_2=1$ in all nine product entries. Second, the recursion is compatible with the orthogonality and completeness relations, as it must be: the recursion is the ladder action in the coupled basis, and the ladder operators are Hermitian conjugates of one another.
 

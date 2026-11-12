@@ -195,10 +195,12 @@ the naive $\delta_{\mu\nu}$ replaced by the entries of the projector of the prec
 $$
 \tilde{Ξ}_{\mu}(x) = \int\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_p}}
 \sum_{r=1}^{4}\left[
-a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-ip\cdot x/\hbar)
-+ b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,\exp(+ip\cdot x/\hbar)
+a_r(\vec p)\,\zeta_{\mu,r}(p)\,\exp(-i\theta_{\mathrm{pwp}})
++ b_r^\dagger(\vec p)\,v_{\mu,r}(p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right] ,
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $E_p=\sqrt{\vec p^2+m^2}$, $p\cdot x=E_p r'_t-\vec p\cdot\vec r$, and with the Rarita–Schwinger polarization spinors satisfying
 

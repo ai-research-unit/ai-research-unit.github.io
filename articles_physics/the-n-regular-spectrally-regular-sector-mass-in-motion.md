@@ -171,8 +171,10 @@ $$
 and the inverse lies in the region. The polar word
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
 $$
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 exists on the whole region, with $r=\lvert N\rvert^{1/2}$ and the three factors a scale, a central phase, a Hermitian boost and a real rotor. The region is therefore contained in the domain of the polar decomposition: every element of the region has a frame, an amplitude and a phase.
 
@@ -227,7 +229,7 @@ No dynamics is supplied. The region is a property of one element at one instant;
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the normalised Peirce basis |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
-| $r,\alpha,\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
+| $r,\theta_{\mathrm{pha}},\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | the polar factors |
 
 ## Further Reading
 

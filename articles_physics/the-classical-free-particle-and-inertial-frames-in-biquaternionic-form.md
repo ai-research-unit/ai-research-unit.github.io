@@ -229,7 +229,9 @@ Three structures survive intact, and it is worth naming them because they are th
 
 **The time coordinate survives as a scalar parameter.** In the limit the scalar direction $ie_t$ of $\mathbb{B}_{\Phi}$ is inert: the shear fixes it, and it can be treated as a real parameter $r'_t$ multiplying the constant $ic$. The non-relativistic world is therefore $\mathbb{R} \times \mathbb{R}^3$, realized in the algebra as $ie_t\mathbb{R} \oplus \mathrm{span}\{\vec e_x, \vec e_y, \vec e_z\}$, which is exactly the material sector read as one scalar direction plus three vector directions.
 
-**The centrality of the scalar imaginary survives.** The scalar $i$ commutes with every element at every order in $V/c$, so the central phase $\exp(i\alpha)$ and the sector exchange $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ are untouched by the contraction. The limit is a limit of the action on $\mathbb{B}_{\Phi}$, not of the algebra.
+**The centrality of the scalar imaginary survives.** The scalar $i$ commutes with every element at every order in $V/c$, so the central phase $\exp(i\theta_{\mathrm{pha}})$ and the sector exchange $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ are untouched by the contraction. The limit is a limit of the action on $\mathbb{B}_{\Phi}$, not of the algebra.
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 ## The Free Particle as the Spin-Zero Benchmark
 

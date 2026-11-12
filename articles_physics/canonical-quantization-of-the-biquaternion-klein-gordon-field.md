@@ -121,14 +121,16 @@ The field equation is linear, so the general solution is a superposition of plan
 
 $$
 \boxed{\;\xi_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\left(a_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x/\hbar)+{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x/\hbar)\right)\;},
+\left(a_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}})+{b_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}})\right)\;},
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 and its adjoint as
 
 $$
 \xi_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\left(b_{\mathrm{fop},\vec p}\,\exp(-ip\cdot x/\hbar)+{a_{\mathrm{fop},\vec p}}^\dagger\,\exp(+ip\cdot x/\hbar)\right).
+\left(b_{\mathrm{fop},\vec p}\,\exp(-i\theta_{\mathrm{pwp}})+{a_{\mathrm{fop},\vec p}}^\dagger\,\exp(+i\theta_{\mathrm{pwp}})\right).
 $$
 
 The operator $a_{\mathrm{fop},\vec p}$ annihilates a particle of momentum $\vec p$ and $b_{\mathrm{fop},\vec p}$ annihilates an antiparticle; the two branches of the parent equation, distinguished by the sign of the frequency, become the particle and antiparticle branches.
@@ -138,9 +140,9 @@ The biquaternion form of the expansion is the replacement of the scalar phase $\
 $$
 \mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}\right)=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\frac{p\cdot x}{\hbar},
 \qquad
-\exp(-ip\cdot x/\hbar)=\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})\big),
+\exp(-i\theta_{\mathrm{pwp}})=\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})\big),
 \qquad
-\exp(+ip\cdot x/\hbar)=\exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})\big) .
+\exp(+i\theta_{\mathrm{pwp}})=\exp\!\big(-i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})\big) .
 $$
 
 The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\vec p}}$ and the measure $d^3p/(2\pi\hbar)^3$ are the standard Lorentz-invariant ones and are inherited.

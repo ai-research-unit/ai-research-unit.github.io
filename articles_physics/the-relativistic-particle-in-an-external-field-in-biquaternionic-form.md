@@ -322,7 +322,9 @@ With that convention the four-velocity, the four-momentum, and the four-force al
 
 4. **Gauge choice and integrability.** In the uniform magnetic field the Landau gauge makes two canonical components conserved. Is there a biquaternion-natural gauge criterion — a condition on $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ or on the field strength — that selects the separable gauge for a given field, and is it the same as the standard one?
 
-5. **The sign of the charge and the corpus's conventions.** The classical relation $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi,\mathrm{kin}} + ϙ\tilde{A}_{\Phi}$ and the corpus's covariant derivative $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ have been aligned here by the standard classical signs. Is there a corpus-wide convention that fixes the relative sign of the phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ and the classical canonical momentum once and for all, or is it irreducibly a choice of the sign of $ϙ$?
+5. **The sign of the charge and the corpus's conventions.** The classical relation $\tilde P_{\Phi,\mathrm{can}} = \tilde{P}_{\Phi,\mathrm{kin}} + ϙ\tilde{A}_{\Phi}$ and the corpus's covariant derivative $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$ have been aligned here by the standard classical signs. Is there a corpus-wide convention that fixes the relative sign of the phase $\lambda = \exp(i\theta_{\mathrm{gau}})$ and the classical canonical momentum once and for all, or is it irreducibly a choice of the sign of $ϙ$?
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 6. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard relativistic electrodynamics. The construction as presented is a reformulation.
 

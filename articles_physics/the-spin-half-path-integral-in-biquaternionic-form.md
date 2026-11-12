@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The path integral expresses the propagator of a quantum system as a sum over histories, each weighted by $\exp(\frac{i\,S}{\hbar})$. For a particle with position degrees of freedom the histories are trajectories, and the action is the integral of a Lagrangian. For a **spin**, there is no position; the histories must be built from the state space itself, and the natural choice is the space of **spin coherent states** — the sphere of directions of the spin. The resulting path integral is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
+The path integral expresses the propagator of a quantum system as a sum over histories, each weighted by $\exp(i\theta_{\mathrm{act}})$. For a particle with position degrees of freedom the histories are trajectories, and the action is the integral of a Lagrangian. For a **spin**, there is no position; the histories must be built from the state space itself, and the natural choice is the space of **spin coherent states** — the sphere of directions of the spin. The resulting path integral is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
+
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The spin path integral has one feature that distinguishes it from the particle path integral and that ties it to the geometric phase: the kinetic term of the action is not a total derivative. It is the **Wess–Zumino term**
 

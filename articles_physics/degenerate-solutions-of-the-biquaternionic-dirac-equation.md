@@ -108,7 +108,9 @@ The third object cannot be the second, and the reason is one associativity step.
 
 ### The Polarization and the Split
 
-For a plane wave $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot\vec r-k'_tr'_t$ and $\tilde K_{\Phi}=ik'_te_t+\vec k_\Phi$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$. The pair becomes
+For a plane wave $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot\vec r-k'_tr'_t$ and $\tilde K_{\Phi}=ik'_te_t+\vec k_\Phi$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$. The pair becomes
+
+Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec k_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
 
 $$
 i\tilde K_{\Phi}\tilde\Xi_{0,R}=k_m\tilde\Xi_{0,L},
@@ -226,7 +228,9 @@ Both components are real multiples of the same idempotent, both have vanishing n
 
 ### What Survives and What Does Not
 
-**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\rho e^{2i\alpha}$ with $\rho=r^{2}$. On the cone $N=0$, so $r=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
+**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\rho e^{2i\theta_{\mathrm{pha}}}$ with $\rho=r^{2}$. On the cone $N=0$, so $r=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 **The two numbers are the trace.** The two numbers that the word would have called amplitude and phase are the modulus and the argument of $\lambda$,
 
@@ -236,7 +240,7 @@ $$
 \arg\lambda=\arg Q_t .
 $$
 
-The polar companion's density is $\rho=r^{2}$, a quadratic object, and its angle is half the argument of the norm. Here the norm is gone and the reading drops to the trace, which is linear. The factor of two that the companion carries in $N=\rho e^{2i\alpha}$ has no counterpart, which is the algebraic reason the polar word does not extend to this sector.
+The polar companion's density is $\rho=r^{2}$, a quadratic object, and its angle is half the argument of the norm. Here the norm is gone and the reading drops to the trace, which is linear. The factor of two that the companion carries in $N=\rho e^{2i\theta_{\mathrm{pha}}}$ has no counterpart, which is the algebraic reason the polar word does not extend to this sector.
 
 ### The Physical Interpretation
 

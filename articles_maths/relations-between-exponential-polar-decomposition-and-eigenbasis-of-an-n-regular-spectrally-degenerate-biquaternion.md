@@ -25,7 +25,7 @@ $$
 The polar word of *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion* is
 
 $$
-\tilde Q=r e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
 with $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon$ and $\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$. The two decompositions are compared below.
@@ -119,8 +119,8 @@ The spectral data and the polar data carry different real information.
 | factors | $Q_te_t+\vec\Upsilon$, a scalar and a nilpotent | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, positive times $*$-unitary |
 | eigenvalues | $Q_t$, double | $\varepsilon$, double for $\tilde U$; $e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{\pm i\theta/2}$ for the factors |
 | basis | a Jordan chain, not unique | an orthogonal frame $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$, up to degeneracies |
-| real data | $Q_t$ (2) and $\vec\Upsilon$ (4) | $r,\alpha$ (2), $\theta_{\mathrm{rpd}},\theta$ (2), frame (2), relation (1) |
-| what the spectrum fixes | $Q_t$ and $\varepsilon$ | $r,\alpha,\varepsilon$ |
+| real data | $Q_t$ (2) and $\vec\Upsilon$ (4) | $r,\theta_{\mathrm{pha}}$ (2), $\theta_{\mathrm{rpd}},\theta$ (2), frame (2), relation (1) |
+| what the spectrum fixes | $Q_t$ and $\varepsilon$ | $r,\theta_{\mathrm{pha}},\varepsilon$ |
 | survives $B^2\to0$ | the Jordan chain does | the word does |
 
 The spectrum fixes only the scalar $Q_t$ and the sign $\varepsilon$. It does not fix the rapidity, the rotor angle or the two axes. The nilpotent $\vec\Upsilon$ fixes the word, because the element is fixed and the word is unique up to the axis degeneracies; but the passage from $\vec\Upsilon$ to $(\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r})$ is nonlinear. The Jordan chain and the polar frame are two different bases of the same two-dimensional complex space, and neither is determined by the other without extra choices.
@@ -145,7 +145,7 @@ $$
 \tilde Q=e_t+\vec e_x+i\vec e_y.
 $$
 
-Then $Q_t=1$, $\vec\Upsilon=\vec e_x+i\vec e_y$, $\vec\Upsilon^2=0$, $N=1$, $\Rho=1$, $r=1$, $\alpha=0$ and $\varepsilon=1$. The word is
+Then $Q_t=1$, $\vec\Upsilon=\vec e_x+i\vec e_y$, $\vec\Upsilon^2=0$, $N=1$, $\Rho=1$, $r=1$, $\theta_{\mathrm{pha}}=0$ and $\varepsilon=1$. The word is
 
 $$
 \theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2,

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two statements are joined in this article. The first is the **action principle**: the physical trajectory of a classical system is the trajectory at which the action $S=\int \mathrm{Lag}\,dt'$ is stationary, and the stationarity condition is the Euler–Lagrange equation. The second is the **classical limit as stationary phase**: when a sum over trajectories is weighted by the phase $\exp(\frac{i\,S}{\hbar})$, the sum is dominated, as $\hbar\to0$, by the trajectories near the stationary ones, so that the classical paths are exactly the critical points of the action. The first statement is the classical theory; the second is the statement that the classical theory is the critical-point theory of an oscillatory integral.
+Two statements are joined in this article. The first is the **action principle**: the physical trajectory of a classical system is the trajectory at which the action $S=\int \mathrm{Lag}\,dt'$ is stationary, and the stationarity condition is the Euler–Lagrange equation. The second is the **classical limit as stationary phase**: when a sum over trajectories is weighted by the phase $\exp(i\theta_{\mathrm{act}})$, the sum is dominated, as $\hbar\to0$, by the trajectories near the stationary ones, so that the classical paths are exactly the critical points of the action. The first statement is the classical theory; the second is the statement that the classical theory is the critical-point theory of an oscillatory integral.
 
 This article develops both in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The second statement is not a quantisation. An oscillatory integral with a real phase and a large parameter is a classical object, and its asymptotic evaluation is a theorem of analysis (the stationary-phase lemma of Kelvin, developed by many hands). What the classical limit adds is an identification: the critical-point equations of the action are the equations of motion. This article stays on that side of the line. No state space, no operators, and no commutator appear; the symbol $\hbar$ enters only as the inverse scale of the phase, as the parameter of an asymptotic expansion, and nowhere as a quantum of action attributed to a physical system. The companion articles of the sibling quantum category own the quantisation; here the phase is a bookkeeping device for a classical sum.
 
@@ -29,7 +29,11 @@ $$
 S[\tilde q]=\int_{t'_1}^{t'_2}\mathrm{Lag}(\tilde q,d\tilde q/dt',r'_t)\,dt' .
 $$
 
-Because $\mathrm{Lag}$ takes values in the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(\frac{i\,S}{\hbar})$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
+Because $\mathrm{Lag}$ takes values in the centre $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar. Write the phase as one angle and one weight,
+
+$$\exp\!\left(\frac{i\,S}{\hbar}\right)=\exp\!\left(i\theta_{\mathrm{act}}\right)\exp\!\left(-\kappa_{\mathrm{act}}\right),\qquad \theta_{\mathrm{act}}=\frac{\mathrm{Re}\,S}{\hbar},\qquad \kappa_{\mathrm{act}}=-\frac{\mathrm{Im}\,S}{\hbar}.$$
+
+Both symbols are real. $\theta_{\mathrm{act}}$ is the classical phase: it is the real part of the action over $\hbar$, and it is the only factor that oscillates. $\kappa_{\mathrm{act}}$ is a weight: a positive imaginary part of the action damps the trajectory, and the damped trajectories do not contribute to the stationary-phase limit. For a real Lagrangian the second factor is one, the action is real, $\kappa_{\mathrm{act}}=0$, and the weight is a pure phase. The split matters for a complex Lagrangian, and it is the reason the centre is named here: a complex scalar action is the general case, and the phase alone would hide the decay.
 
 ### The Domain of the Principle: Discrete and Continuous
 

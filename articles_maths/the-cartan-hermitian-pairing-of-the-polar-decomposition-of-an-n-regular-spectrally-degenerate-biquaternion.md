@@ -25,12 +25,12 @@ $$
 \qquad
 \tilde H=r\tilde U_{\mathrm b},
 \qquad
-\tilde V=e^{i\alpha}\tilde u_{\mathrm r},
+\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r},
 $$
 
 with $\tilde H$ positive Hermitian of determinant $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
 
-*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\alpha}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion*.
+*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion*.
 
 The pairing groups the scale with the boost and the phase with the rotor. This is the opposite grouping to the Hamilton root pairing, which puts the scale and the phase in the modulus. The Cartan grouping is the one that makes both factors lie in groups: $\tilde H$ in the positive Hermitian space and $\tilde V$ in the $*$-unitary group.
 
@@ -70,9 +70,9 @@ $$
 
 which is $Q_t$ times a unipotent element. This is the sector condition in the pairing.
 
-**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\theta_{\mathrm{rpd}}/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\alpha\pm\theta/2)}$. Their product has the double eigenvalue $\varepsilon$.
+**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\theta_{\mathrm{rpd}}/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\theta_{\mathrm{pha}}\pm\theta/2)}$. Their product has the double eigenvalue $\varepsilon$.
 
-*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\alpha}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
+*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\theta_{\mathrm{pha}}}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
 
 The factors are diagonalizable, and the product is not. They cannot commute: if they did, their product would be normal and hence diagonalizable, contradicting the non-scalar Jordan block. The non-commutativity of $\tilde H$ and $\tilde V$ is therefore exactly the defect of the element, read in the Cartan pairing.
 
@@ -82,8 +82,8 @@ The sign $\varepsilon$ is the scalar part of the unit factor. It is the only dis
 
 | Case | $\operatorname{Sc}\tilde U$ | $\tilde H$ | $\tilde V$ | $\tilde H\tilde V$ |
 |---|---|---|---|---|
-| positive | $+1$ | $r\tilde U_{\mathrm b}$ | $e^{i\alpha}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
-| negative | $-1$ | $r\tilde U_{\mathrm b}$ | $e^{i\alpha}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
+| positive | $+1$ | $r\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
+| negative | $-1$ | $r\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
 
 The factors have the same shape in both cases; the sign is carried by the scalar $Q_t$ and by the branch of $\Rho$. The pairing does not need a separate sign convention.
 
@@ -140,9 +140,9 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 |---|---|
 | factorization | $\tilde Q=\tilde H\tilde V$ |
 | positive factor | $\tilde H=r\tilde U_{\mathrm b}$, determinant $r^2$ |
-| $*$-unitary factor | $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$, determinant $e^{2i\alpha}$ |
+| $*$-unitary factor | $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, determinant $e^{2i\theta_{\mathrm{pha}}}$ |
 | product | $\tilde H\tilde V=Q_t(e_t+\vec\Upsilon)$, unipotent up to $Q_t$ |
-| factor eigenvalues | $r e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{i(\alpha\pm\theta/2)}$ |
+| factor eigenvalues | $r e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{i(\theta_{\mathrm{pha}}\pm\theta/2)}$ |
 | product eigenvalue | $\varepsilon$, double |
 | commutator | nonzero on the Jordan part |
 | availability | all of $\Sigma_{10}$ |
@@ -162,10 +162,10 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 | $N=\langle\tilde Q\rangle_{\natural}$ | the reduced product |
 | $B^2=\langle\vec Q,\vec Q\rangle_{\natural}$ | the vector form |
 | $\Sigma_{10}$ | the N-regular, spectrally degenerate sector |
-| $\Rho=r e^{i\alpha}$ | the modulus |
+| $\Rho=r e^{i\theta_{\mathrm{pha}}}$ | the modulus |
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde H=r\tilde U_{\mathrm b}$ | the positive Hermitian factor |
-| $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ | the $*$-unitary factor |
+| $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | the $*$-unitary factor |
 | $\theta_{\mathrm{rpd}},\theta$ | the rapidity and the rotor angle |
 | $\varepsilon=\pm1$ | the sign of the scalar part of the unit factor |
 

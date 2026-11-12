@@ -32,7 +32,9 @@ $$
 z = h_t + i r'_{t},
 $$
 
-the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta)e_t$, and its action on $z$ is the rotation of the plane.
+the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta_{\mathrm{cen}})e_t$, and its action on $z$ is the rotation of the plane.
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 ## The Exchange as a Quarter Turn
 
@@ -62,19 +64,21 @@ $$
 \boxed{\;z \ \longrightarrow\ iz \ \longrightarrow\ -z \ \longrightarrow\ -iz \ \longrightarrow\ z\;}
 $$
 
-The second is invertibility: the generator is a rotation, so both senses are available, $\exp(i\theta)$ and $\exp(-i\theta)$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in *Algebra and Element Conventions*.
+The second is invertibility: the generator is a rotation, so both senses are available, $\exp(i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in *Algebra and Element Conventions*.
 
 ## The Clock Hand and Its Two Projections
 
 A clock assigns a coordinate to an event by a repeatable motion. The framework's clock is the central coordinate itself, and its interpretation is a phase.
 
-**The hand.** The hand of the clock is the complex number $z = h_t + i r'_{t}$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
+**The hand.** The hand of the clock is the complex number $z = h_t + i r'_{t}$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta_{\mathrm{cen}} = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
 
 $$
-\boxed{\;h_t = \lvert z\rvert\cos\theta, \qquad r'_{t} = \lvert z\rvert\sin\theta\;}
+\boxed{\;h_t = \lvert z\rvert\cos\theta_{\mathrm{cen}}, \qquad r'_{t} = \lvert z\rvert\sin\theta_{\mathrm{cen}}\;}
 $$
 
-The one-parameter group $\exp(i\theta)e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(\frac{i\,S}{\hbar})$ of the action articles is the same central phase read on a dynamics.
+The one-parameter group $\exp(i\theta_{\mathrm{cen}})e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(i\theta_{\mathrm{act}})$ of the action articles is the same central phase read on a dynamics.
+
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 **The tick.** A tick of the clock is a quarter turn of the hand, the application of the generator. The four quarter turns are the identity, the exchange, the antipodal map and the inverse exchange,
 
@@ -93,8 +97,8 @@ A clock, whether mechanical or algebraic, needs four things, and the framework's
 | What a clock needs | What the framework supplies |
 |---|---|
 | A **reference**: a direction or a subsystem against which the interpretation is defined | Supplied. The other sector: the material time is read against the informational axis and the reverse |
-| A **period**: a repeatable tick | Supplied up to scale. The central rotation, $\exp(i\theta)e_t$ with $\theta = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration |
-| An **arrow**: an orientation of the tick | Not supplied. The generator is invertible of order four, and $\exp(i\theta)$ and $\exp(-i\theta)$ are both in the algebra |
+| A **period**: a repeatable tick | Supplied up to scale. The central rotation, $\exp(i\theta_{\mathrm{cen}})e_t$ with $\theta_{\mathrm{cen}} = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration |
+| An **arrow**: an orientation of the tick | Not supplied. The generator is invertible of order four, and $\exp(i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$ are both in the algebra |
 | A **rate**: a duration per tick | Not supplied. The algebra carries the phase, which is dimensionless, and no second |
 
 **The missing arrow.** The generator is a rotation, so it is invertible, and the inverse rotation is as much an element of the algebra as the rotation itself. The exchange therefore carries no orientation: it identifies the two times and does not order them. This is the same statement that *Algebra and Element Conventions* makes in the form that the algebra offers the rotation between the two times and no rule that selects one, and it is the framework's problem of time in its kinematic form. The selection of a slice is a choice of frame, and the framework says so rather than deriving it.
@@ -139,7 +143,7 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | the centre, the complex time plane |
 | $z = h_t + i r'_{t}$ | the clock hand; the central coordinate of an element |
 | $h_t$, $i r'_t$ | the informational and the material time, the two projections of the hand |
-| $\exp(i\theta)e_t$ | the one-parameter group of the centre, the motion of the hand |
+| $\exp(i\theta_{\mathrm{cen}})e_t$ | the one-parameter group of the centre, the motion of the hand |
 | $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | the sector exchange, the quarter turn, the tick |
 
 ## Further Reading

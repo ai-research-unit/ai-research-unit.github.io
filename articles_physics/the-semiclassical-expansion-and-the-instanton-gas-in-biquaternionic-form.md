@@ -90,29 +90,31 @@ $$
 A local action cannot mix sectors, since $Ϙ$ is topological, but the vacuum need not be a definite-$Ϙ$ state. The theta vacuum is the superposition
 
 $$
-\boxed{\;|\theta_{\mathrm{vac}}\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta)\,|Ϙ\rangle ,
+\boxed{\;|\theta_{\mathrm{vac}}\rangle \;=\; \sum_{Ϙ\in\mathbb Z} \exp(+iϘ\theta_{\mathrm{vac}})\,|Ϙ\rangle ,
 \qquad
-Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ\;},
+Z(\theta_{\mathrm{vac}}) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta_{\mathrm{vac}})\,Z_Ϙ\;},
 $$
 
-the sign in the ket being the one for which the topological charge operator acts as $Ϙ_{\mathrm{fop}}|\theta_{\mathrm{vac}}\rangle=-i\partial/\partial\theta|\theta_{\mathrm{vac}}\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta_{\mathrm{vac}}\rangle$ superposition is the unique one that is, up to the standard subtleties.
+the sign in the ket being the one for which the topological charge operator acts as $Ϙ_{\mathrm{fop}}|\theta_{\mathrm{vac}}\rangle=-i\partial/\partial\theta_{\mathrm{vac}}|\theta_{\mathrm{vac}}\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta_{\mathrm{vac}}\rangle$ superposition is the unique one that is, up to the standard subtleties.
+
+Here $\theta_{\mathrm{vac}}$ is the vacuum angle: it multiplies the integer topological charge, so it is real.
 
 The theta dependence enters through the combination
 
 $$
-\exp(iϘ\theta)Z_Ϙ = \exp(iϘ\theta)\bigl(\text{positive}\bigr)\exp(-8\pi^2|Ϙ|/g^2),
+\exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ = \exp(iϘ\theta_{\mathrm{vac}})\bigl(\text{positive}\bigr)\exp(-8\pi^2|Ϙ|/g^2),
 $$
 
 so the partition function is a sum of contributions suppressed by $\exp(-8\pi^2|Ϙ|/g^2)$. The two properties that matter for the sequel are the **periodicity**
 
 $$
-Z(\theta+2\pi)=\sum_Ϙ \exp(iϘ(\theta+2\pi))Z_Ϙ=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ=Z(\theta),
+Z(\theta_{\mathrm{vac}}+2\pi)=\sum_Ϙ \exp(iϘ(\theta_{\mathrm{vac}}+2\pi))Z_Ϙ=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ=Z(\theta_{\mathrm{vac}}),
 $$
 
 since $\exp(2\pi iϘ)=1$ for integer $Ϙ$, and the **small-angle behaviour**. Expanding the one-instanton–anti-instanton sector at leading order gives the vacuum energy density
 
 $$
-\mathcal E(\theta) \;=\; \mathcal E_0 - 2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots ,
+\mathcal E(\theta_{\mathrm{vac}}) \;=\; \mathcal E_0 - 2K\cos\theta_{\mathrm{vac}}\,\exp(-8\pi^2/g^2)+\cdots ,
 \qquad
 K>0 ,
 $$
@@ -120,18 +122,18 @@ $$
 so that the topological susceptibility is
 
 $$
-\boxed{\;\xi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots\;}.
+\boxed{\;\xi_t \;=\; \frac{d^2\mathcal E}{d\theta^2}\Big|_{\theta_{\mathrm{vac}}=0} \;=\; 2K\,\exp(-8\pi^2/g^2)+\cdots\;}.
 $$
 
-Both were checked on a model instanton sum $Z(\theta)=\sum_{Ϙ=-2}^{2}\exp(iϘ\theta)Z_Ϙ$ with symmetric weights: the periodicity residual $|Z(\theta)-Z(\theta+2\pi)|$ was zero to machine precision, and the numerical second derivative of $2K\cos\theta$ at $\theta=0$ returned $2K$ to six digits, confirming the identification of the susceptibility with the instanton density. The periodicity is a property of the integer charge and not of the framework; the susceptibility is the physical content of the semiclassical sum.
+Both were checked on a model instanton sum $Z(\theta_{\mathrm{vac}})=\sum_{Ϙ=-2}^{2}\exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$ with symmetric weights: the periodicity residual $|Z(\theta_{\mathrm{vac}})-Z(\theta_{\mathrm{vac}}+2\pi)|$ was zero to machine precision, and the numerical second derivative of $2K\cos\theta_{\mathrm{vac}}$ at $\theta_{\mathrm{vac}}=0$ returned $2K$ to six digits, confirming the identification of the susceptibility with the instanton density. The periodicity is a property of the integer charge and not of the framework; the susceptibility is the physical content of the semiclassical sum.
 
 ## The Dilute Instanton Gas
 
 The **instanton gas** approximation treats the configuration as a dilute medium of well-separated instantons and anti-instantons of typical size $\rho_c$, whose density is small when $\exp(-8\pi^2/g^2)\ll1$. In this regime each topological sector is built from a product of independent single-instanton contributions, the interactions between them are neglected, and the partition function exponentiates into the pressure of a gas of charged objects,
 
 $$
-Z(\theta) \;\approx\; \exp\!\Bigl[VT\,\bigl(\text{instanton density}\bigr)\bigl(\exp(i\theta)+\exp(-i\theta)\bigr)\Bigr]
-\;=\;\exp\!\Bigl[2\,VT\,K\,\exp(-S_I)\cos\theta\Bigr],
+Z(\theta_{\mathrm{vac}}) \;\approx\; \exp\!\Bigl[VT\,\bigl(\text{instanton density}\bigr)\bigl(\exp(i\theta_{\mathrm{vac}})+\exp(-i\theta_{\mathrm{vac}})\bigr)\Bigr]
+\;=\;\exp\!\Bigl[2\,VT\,K\,\exp(-S_I)\cos\theta_{\mathrm{vac}}\Bigr],
 $$
 
 which reproduces the vacuum energy above and exhibits the exponentiation that the cluster decomposition requires. The gas is the semiclassical counterpart of a plasma of electric and magnetic charges in two dimensions: the instantons are the charged objects, the theta angle is a chemical potential conjugate to the charge, and the Debye screening of the topological charge is the exponentiation.
@@ -201,7 +203,7 @@ $$
 Z_{\mathrm{cl},1}\propto VT\int_0^\infty\frac{d\rho}{\rho^5}\,\exp(-8\pi^2/g^2),
 $$
 
-with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ and the partition function $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$, which is periodic, $Z(\theta+2\pi)=Z(\theta)$, and has vacuum energy $\mathcal E(\theta)=\mathcal E_0-2K\cos\theta\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
+with the one-loop determinant supplying the powers of the running coupling and realising dimensional transmutation. The sum over topological sectors produces the theta vacuum $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})|Ϙ\rangle$ and the partition function $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$, which is periodic, $Z(\theta_{\mathrm{vac}}+2\pi)=Z(\theta_{\mathrm{vac}})$, and has vacuum energy $\mathcal E(\theta_{\mathrm{vac}})=\mathcal E_0-2K\cos\theta_{\mathrm{vac}}\,\exp(-8\pi^2/g^2)+\cdots$ and topological susceptibility $\xi_t=2K \exp(-8\pi^2/g^2)+\cdots$. Both were verified on an explicit finite instanton sum.
 
 The dilute instanton gas exponentiates the one-instanton weight into a pressure of charged objects and reproduces the vacuum energy and cluster decomposition, but its size integral is infrared divergent in the pure gauge theory and the approximation holds only for instantons small compared with the strong-coupling scale. The framework supplies the saddle, its action, its moduli and the abelian form of its topological density; the measure, the determinants, the running coupling and the physical identification are imported from the standard quantum field theory of the companion path-integral and renormalisation-group articles.
 
@@ -217,9 +219,9 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | $S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ|$ | Saturated (Bogomolny) classical action |
 | $Z=\int\mathcal D\mathcal A\,\exp(-S)$ | Euclidean partition function |
 | $Z_Ϙ$ | Contribution of the topological sector of charge $Ϙ$ |
-| $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta)|Ϙ\rangle$ | Theta vacuum |
-| $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function |
-| $\mathcal E(\theta)$, $\xi_t$ | Vacuum energy density and topological susceptibility |
+| $|\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(+iϘ\theta_{\mathrm{vac}})|Ϙ\rangle$ | Theta vacuum |
+| $Z(\theta_{\mathrm{vac}})=\sum_Ϙ \exp(iϘ\theta_{\mathrm{vac}})Z_Ϙ$ | Theta-dependent partition function |
+| $\mathcal E(\theta_{\mathrm{vac}})$, $\xi_t$ | Vacuum energy density and topological susceptibility |
 | $x_{0\mu}$, $\rho$ | Instanton collective coordinates (translation, scale) |
 | $8k$, $8k-3$ | ADHM moduli dimensions; collective-coordinate count |
 | $I_2=\vec E\cdot\vec B$ | Abelian topological density (framework invariant) |

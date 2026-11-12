@@ -9,14 +9,16 @@ The parametrization fails in two ways, and they are different. The four exponent
 The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of *Exponential Polar Decomposition of Biquaternions* and *The Polar Decomposition of an N-Regular Biquaternion*. The article owns the physical reading and its limits.
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde B\,\tilde u_{\mathrm r},
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde B\,\tilde u_{\mathrm r},
 \qquad
 \tilde B=\exp\left(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\right),
 \qquad
 \tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
 $$
 
-with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$.
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
+
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions, the roots of $-e_t$. The axis sphere is the set of such $\vec u$.
 **The boost factor is not a phase, and the evaluation shows why.** With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair
 
 $$
@@ -24,7 +26,7 @@ $$
 $$
 
 The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta\vec u)$ as an imaginary quantity is the error the two signs separate.
- The norm is $\langle\tilde Q\rangle_{\natural}=r^2e^{2i\alpha}$, and the element is a unit exactly when $r\neq0$.
+ The norm is $\langle\tilde Q\rangle_{\natural}=r^2e^{2i\theta_{\mathrm{pha}}}$, and the element is a unit exactly when $r\neq0$.
 
 ## The Results It Uses
 
@@ -44,7 +46,7 @@ The four factors and their ranges are collected in one table.
 | # | Factor | Name | Exponent | Range | Real dimension | Action |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | $r$ | scale | — | $r>0$ | $1$ | dilation by $r^2$ |
-| 2 | $e^{i\alpha}$ | central phase | $i\alpha$ | $\alpha\in(-\pi/2,\pi/2]$ | $1$ | multiplication by a scalar |
+| 2 | $e^{i\theta_{\mathrm{pha}}}$ | central phase | $i\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | $1$ | multiplication by a scalar |
 | 3 | $\tilde B=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | boost | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$ | $3$ | congruence by $\tilde B$ |
 | 4 | $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | rotor | $\frac{\theta}{2}\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$ | $3$ | conjugation by $\tilde u_{\mathrm r}$ |
 
@@ -63,7 +65,7 @@ The word carries two exponential factors, and they have opposite characters.
 
 The rotor is compact: its angle is real, its exponential is periodic, and its trace oscillates between $-2$ and $2$. The boost is non-compact: its angle is imaginary, its exponential is monotone, and its trace grows. The two are the compact rotations and the non-compact boosts inside the complex group of units.
 
-The product is a general unit, and the two regimes coexist in it. The central phase $e^{i\alpha}$ is compact as well, but it is central and does not mix with the others; the scale $r$ is neither.
+The product is a general unit, and the two regimes coexist in it. The central phase $e^{i\theta_{\mathrm{pha}}}$ is compact as well, but it is central and does not mix with the others; the scale $r$ is neither.
 
 **The boundary.** The table classifies the factors, not the elements. A general element is a product of a scale, a compact central phase, a non-compact boost and a compact rotor. The element itself is neither compact nor non-compact: compactness is a property of a one-parameter subgroup, and an element generates a family of them. The algebra's own splits are different again: the closed form of the exponential separates $B\neq0$ from $B=0$, and the polar word separates the interior from the cone. The three splits answer three questions and must not be identified.
 
@@ -72,7 +74,7 @@ The product is a general unit, and the two regimes coexist in it. The central ph
 The formal exponent is the sum of the four exponents,
 
 $$
-\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}.
 $$
 
 It is the element that the quaternion case would call the logarithm. Here it is not one:
@@ -114,7 +116,7 @@ The defect is not a rounding effect. It is the statement that the word is not a 
 When the two axes coincide, the exponents commute and the defect vanishes. The word is then a single exponential,
 
 $$
-\tilde Q=r e^{i\alpha}\exp\left(\vec u\left(\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\right)\right),
+\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp\left(\vec u\left(\frac{\theta}{2}+i\frac{\theta_{\mathrm{rpd}}}{2}\right)\right),
 \qquad
 \vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec u,
 $$
@@ -242,13 +244,13 @@ The boundary value is not a value. The word has no continuous extension to the c
 
 The word is defined off the cone and nowhere on it. The failure is the absence of a rest frame, not a singularity of the algebra.
 
-The branch $\alpha\in(-\pi/2,\pi/2]$ is a convention. The other square root of the norm is the same element with the other branch, and the choice is not physical.
+The branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ is a convention. The other square root of the norm is the same element with the other branch, and the choice is not physical.
 
 The algebra supplies no rate, no dynamics and no massless particle. It supplies the parametrization, the defect, the two strata and the boundary values. The rate, the path and the identification of a stratum with a physical particle are supplied by the model, not by the algebra.
 
 ## Summary
 
-- Every unit is $r e^{i\alpha}\tilde B\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
+- Every unit is $r e^{i\theta_{\mathrm{pha}}}\tilde B\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
 - The word is surjective onto the units and not injective at the degenerate axes; it is a section of the word map, not of the exponential.
 - The formal exponent is the sum of the four exponents, and its exponential is not the element; the defect is the Baker–Campbell–Hausdorff correction, whose first term is a boost.
 - The defect vanishes when the boost and rotor axes commute or when one of the two parameters vanishes.
@@ -267,7 +269,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 | Symbol | Meaning |
 | --- | --- |
 | $r$ | the positive scale, $r=\lvert N\rvert^{1/2}$ |
-| $\alpha$ | the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$ |
+| $\theta_{\mathrm{pha}}$ | the central phase, $\theta_{\mathrm{pha}}=\tfrac12\arg N\in(-\pi/2,\pi/2]$ |
 | $\tilde B=e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$ | the Hermitian positive boost factor |
 | $\tilde u_{\mathrm r}=e^{\theta\vec u_{\mathrm r}/2}$ | the unit real quaternion rotor |
 | $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ | the boost and rotor axes, unit real pure quaternions |

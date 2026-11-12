@@ -34,13 +34,15 @@ $$
 
 ### The connection
 
-**The rotor's logarithmic derivative is a real vector part, and the polar decomposition's structure is what makes it so.** In the word $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — **the algebra's own statement that a rotation's generator is a spatial direction**, and the property that lets the rotor's derivative be read as an angular velocity.
+**The rotor's logarithmic derivative is a real vector part, and the polar decomposition's structure is what makes it so.** In the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — **the algebra's own statement that a rotation's generator is a spatial direction**, and the property that lets the rotor's derivative be read as an angular velocity.
 
 $$
 \tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta,
 \qquad
 \vec\Omega_\eta\in\mathbb{R}^{3},
 $$
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 **the subscript $\eta$ labelling the direction and not an index slot**, following the frame and metric conventions. **The object is a connection**: it transports the spin frame from point to point, and the spin's precession is what the transport does to a direction.
 
@@ -277,8 +279,8 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\rho$ | The scale, $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$, which the polar article writes as $r$; $\rho^{2}=\rho_{\mathrm{num}}$ is the proper density, the polar article's $\rho$ |
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element, four components |
 | $w_{\mathrm{fl}}$, $\vec S_{\mathrm P}$ | Energy density, momentum density |
-| $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
-| $r$, $\alpha$, $\tilde U_{\Psi,\mathrm b}$ | Scale, central angle, boost |
+| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
+| $r$, $\theta_{\mathrm{pha}}$, $\tilde U_{\Psi,\mathrm b}$ | Scale, central angle, boost |
 | $\vec e_z$ | Frame's third direction, used by the value test |
 | $\beta_{\mathrm{vel}}=\vec v/c$, $\gamma$ | Velocity and boost factor |
 | $\gamma^{2}/(\gamma+1)$ | Thomas factor |

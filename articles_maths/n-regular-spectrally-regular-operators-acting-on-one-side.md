@@ -14,11 +14,11 @@ The two-sided operator of the polar decomposition is the product of the left act
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\alpha)\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
-\qquad \Rho=r\exp(i\alpha),
+=r\exp(i\theta_{\mathrm{pha}})\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\qquad \Rho=r\exp(i\theta_{\mathrm{pha}}),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
+with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
 
 The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided operator pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
@@ -79,12 +79,12 @@ and it is multiplicative, $\langle\tilde Q\tilde Q'\rangle_{\natural}=\langle\ti
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
-\Rho=r\exp(i\alpha),\qquad
+\Rho=r\exp(i\theta_{\mathrm{pha}}),\qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
+with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
 \Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
@@ -143,14 +143,14 @@ $$
 
 **Remark (the order).** In the left reading the rightmost factor of the word acts first: the rotor, then the boost, then the modulus. In the right reading the order is reversed: the modulus, then the boost, then the rotor, because the parameter sits on the right. The two-sided operator uses both readings: the left action of the word and the right action of its conjugate.
 
-**Remark (the complex exponent).** The modulus is a single complex scalar, $\Rho=r\exp(i\alpha)$. Its left multiplication is the operator $\exp(\ln r+i\alpha)\,\mathrm{id}$. The exponent is the complex number $\ln\Rho=\ln r+i\alpha$; the real part is the scale and the imaginary part is the phase. The one-sided operator keeps both. The two-sided operator keeps only $2\ln r$ and cancels the imaginary part.
+**Remark (the complex exponent).** The modulus is a single complex scalar, $\Rho=r\exp(i\theta_{\mathrm{pha}})$. Its left multiplication is the operator $\exp(\ln r+i\theta_{\mathrm{pha}})\,\mathrm{id}$. The exponent is the complex number $\ln\Rho=\ln r+i\theta_{\mathrm{pha}}$; the real part is the scale and the imaginary part is the phase. The one-sided operator keeps both. The two-sided operator keeps only $2\ln r$ and cancels the imaginary part.
 
 The four factors are collected in the following table. A factor **preserves** a sector when it maps the sector into itself, **exchanges** the two sectors when it maps one onto the other, and **mixes** them when some element of a sector has a nonzero component in both sectors after the multiplication.
 
 | factor | one-sided operator | sector action | factor on $\langle\tilde Q\rangle_{\natural}$ |
 |---|---|---|---|
 | scale $r$ | $r\,\mathrm{id}$ | preserves both | $r^{2}$ |
-| phase $\exp(i\alpha)$ | $\exp(i\alpha)\,\mathrm{id}$ | preserves at $\alpha\equiv0\pmod{\pi}$, exchanges at $\alpha\equiv\tfrac{\pi}{2}\pmod{\pi}$, mixed otherwise | $\exp(2i\alpha)$ |
+| phase $\exp(i\theta_{\mathrm{pha}})$ | $\exp(i\theta_{\mathrm{pha}})\,\mathrm{id}$ | preserves at $\theta_{\mathrm{pha}}\equiv0\pmod{\pi}$, exchanges at $\theta_{\mathrm{pha}}\equiv\tfrac{\pi}{2}\pmod{\pi}$, mixed otherwise | $\exp(2i\theta_{\mathrm{pha}})$ |
 | boost $\tilde U_{\mathrm b}$ | $L_{\tilde U_{\mathrm b}}$ | mixes for $\theta_{\mathrm{rpd}}>0$ | $1$ |
 | rotor $\tilde u_{\mathrm r}$ | $L_{\tilde u_{\mathrm r}}$ | mixes for $\theta\not\equiv0\pmod{2\pi}$ | $1$ |
 
@@ -377,7 +377,7 @@ $$
 J=L_i=R_i,\qquad J(\tilde X)=i\tilde X .
 $$
 
-The phase of $-\pi/2$ is $-i$ and its operator is $J^{-1}=L_{-i}$. On the principal branch of the polar word only $\alpha=\pi/2$ occurs; the sign $-i$ is the other square root and the inverse operator.
+The phase of $-\pi/2$ is $-i$ and its operator is $J^{-1}=L_{-i}$. On the principal branch of the polar word only $\theta_{\mathrm{pha}}=\pi/2$ occurs; the sign $-i$ is the other square root and the inverse operator.
 
 **Proposition.** The operator $J$ is $\mathbb{C}$-linear, exchanges the two real forms,
 
@@ -460,33 +460,33 @@ On $\mathbb{B}_{\Phi}$ one has $\langle\tilde X\rangle_{\natural}=-g$, and on $\
 
 ### The General Phase
 
-**Proposition.** For the phase $P_\alpha=\exp(i\alpha)$ the one-sided operator is
+**Proposition.** For the phase $P_{\mathrm{pha}}=\exp(i\theta_{\mathrm{pha}})$ the one-sided operator is
 
 $$
-L_{P_\alpha}=R_{P_\alpha}=\exp(i\alpha)\,\mathrm{id},
+L_{P_{\mathrm{pha}}}=R_{P_{\mathrm{pha}}}=\exp(i\theta_{\mathrm{pha}})\,\mathrm{id},
 $$
 
 and in the splitting $(\mathbb{B}_{\Psi},\mathbb{B}_{\Phi})$ its block matrix is
 
 $$
-L_{P_\alpha}=
+L_{P_{\mathrm{pha}}}=
 \begin{pmatrix}
-\cos\alpha & i\sin\alpha\\
-i\sin\alpha & \cos\alpha
+\cos\theta_{\mathrm{pha}} & i\sin\theta_{\mathrm{pha}}\\
+i\sin\theta_{\mathrm{pha}} & \cos\theta_{\mathrm{pha}}
 \end{pmatrix}.
 $$
 
-For $\tilde X\in\mathbb{B}_{\Phi}$ the image $\tilde Y=\exp(i\alpha)\tilde X$ satisfies
+For $\tilde X\in\mathbb{B}_{\Phi}$ the image $\tilde Y=\exp(i\theta_{\mathrm{pha}})\tilde X$ satisfies
 
 $$
-\tilde Y^{*}=-\exp(-2i\alpha)\,\tilde Y .
+\tilde Y^{*}=-\exp(-2i\theta_{\mathrm{pha}})\,\tilde Y .
 $$
 
-Hence $\tilde Y\in\mathbb{B}_{\Psi}$ exactly when $\alpha\equiv\tfrac{\pi}{2}\pmod{\pi}$, and $\tilde Y\in\mathbb{B}_{\Phi}$ exactly when $\alpha\equiv0\pmod{\pi}$. For every other $\alpha$ the image lies in the real four-dimensional subspace $\exp(i\alpha)\mathbb{B}_{\Phi}$, on which $*$ acts by the scalar $-\exp(-2i\alpha)$; that subspace is neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$.
+Hence $\tilde Y\in\mathbb{B}_{\Psi}$ exactly when $\theta_{\mathrm{pha}}\equiv\tfrac{\pi}{2}\pmod{\pi}$, and $\tilde Y\in\mathbb{B}_{\Phi}$ exactly when $\theta_{\mathrm{pha}}\equiv0\pmod{\pi}$. For every other $\theta_{\mathrm{pha}}$ the image lies in the real four-dimensional subspace $\exp(i\theta_{\mathrm{pha}})\mathbb{B}_{\Phi}$, on which $*$ acts by the scalar $-\exp(-2i\theta_{\mathrm{pha}})$; that subspace is neither $\mathbb{B}_{\Psi}$ nor $\mathbb{B}_{\Phi}$.
 
-*Proof.* The scalar is central, so $L_{P_\alpha}=R_{P_\alpha}=\exp(i\alpha)\mathrm{id}$. The block matrix is the corollary of the block decomposition with $c=\exp(i\alpha)$. For the eigenvalue, $\tilde Y^{*}=\exp(-i\alpha)\tilde X^{*}=-\exp(-i\alpha)\tilde X=-\exp(-2i\alpha)\tilde Y$. The two sector values are the two solutions of $-\exp(-2i\alpha)=\pm1$.
+*Proof.* The scalar is central, so $L_{P_{\mathrm{pha}}}=R_{P_{\mathrm{pha}}}=\exp(i\theta_{\mathrm{pha}})\mathrm{id}$. The block matrix is the corollary of the block decomposition with $c=\exp(i\theta_{\mathrm{pha}})$. For the eigenvalue, $\tilde Y^{*}=\exp(-i\theta_{\mathrm{pha}})\tilde X^{*}=-\exp(-i\theta_{\mathrm{pha}})\tilde X=-\exp(-2i\theta_{\mathrm{pha}})\tilde Y$. The two sector values are the two solutions of $-\exp(-2i\theta_{\mathrm{pha}})=\pm1$.
 
-**Corollary (the special angles).** The phase preserves each sector at $\alpha=0$ and $\alpha=\pi$, where it is $+\mathrm{id}$ and $-\mathrm{id}$. It exchanges the two sectors at $\alpha=\pi/2$ and $\alpha=3\pi/2$, where it is $i$ and $-i$. At $\alpha=\pi/4$ it is a square root of the exchange,
+**Corollary (the special angles).** The phase preserves each sector at $\theta_{\mathrm{pha}}=0$ and $\theta_{\mathrm{pha}}=\pi$, where it is $+\mathrm{id}$ and $-\mathrm{id}$. It exchanges the two sectors at $\theta_{\mathrm{pha}}=\pi/2$ and $\theta_{\mathrm{pha}}=3\pi/2$, where it is $i$ and $-i$. At $\theta_{\mathrm{pha}}=\pi/4$ it is a square root of the exchange,
 
 $$
 L_{\exp(i\pi/4)}^{2}=L_i,
@@ -496,9 +496,9 @@ and the image of $\mathbb{B}_{\Phi}$ is the mixed real four-dimensional subspace
 
 *Proof.* The values at the four angles are immediate from the block matrix. The square is $L_{\exp(i\pi/2)}=L_i$ by the composition law.
 
-**Remark (the period).** The operator $L_{P_\alpha}$ has period $2\pi$ in $\alpha$. The sector behaviour has period $\pi$, because $\exp(i(\alpha+\pi))=-\exp(i\alpha)$ multiplies the operator by $-1$ and leaves the eigenvalue $-\exp(-2i\alpha)$ unchanged. The exchange therefore occurs on the two classes $\alpha\equiv\pi/2\pmod{\pi}$, and the preservation on the two classes $\alpha\equiv0\pmod{\pi}$.
+**Remark (the period).** The operator $L_{P_{\mathrm{pha}}}$ has period $2\pi$ in $\theta_{\mathrm{pha}}$. The sector behaviour has period $\pi$, because $\exp(i(\theta_{\mathrm{pha}}+\pi))=-\exp(i\theta_{\mathrm{pha}})$ multiplies the operator by $-1$ and leaves the eigenvalue $-\exp(-2i\theta_{\mathrm{pha}})$ unchanged. The exchange therefore occurs on the two classes $\theta_{\mathrm{pha}}\equiv\pi/2\pmod{\pi}$, and the preservation on the two classes $\theta_{\mathrm{pha}}\equiv0\pmod{\pi}$.
 
-**Remark (not a half-angle).** The polar word stores the phase as $\exp(i\alpha)$, with $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The pure phase of $\pi/2$ is therefore $i=\exp(i\pi/2)$, not $\exp(i\pi/4)$. The half-angle $\exp(i\pi/4)$ is the square root of the exchange, not the exchange itself. A half-angle convention would rename the angle of the exchange to $\pi$; it would not change the operator, only the name of its parameter.
+**Remark (not a half-angle).** The polar word stores the phase as $\exp(i\theta_{\mathrm{pha}})$, with $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The pure phase of $\pi/2$ is therefore $i=\exp(i\pi/2)$, not $\exp(i\pi/4)$. The half-angle $\exp(i\pi/4)$ is the square root of the exchange, not the exchange itself. A half-angle convention would rename the angle of the exchange to $\pi$; it would not change the operator, only the name of its parameter.
 
 ### The Cancellation in the Two-Sided Operator
 
@@ -506,7 +506,7 @@ and the image of $\mathbb{B}_{\Phi}$ is the mixed real four-dimensional subspace
 
 $$
 \mathrm{Sd}_i(\tilde X)=i\tilde X(-i)=\tilde X,\qquad
-\mathrm{Sd}_{\exp(i\alpha)}=\mathrm{id}.
+\mathrm{Sd}_{\exp(i\theta_{\mathrm{pha}})}=\mathrm{id}.
 $$
 
 In the block matrices,
@@ -529,7 +529,7 @@ $$
 
 *Proof.* The scalar $i$ is central, so the two factors commute with $\tilde X$ and with each other, and $i(-i)=1$. The block product is the same computation with the two off-diagonal exchanges.
 
-**Remark (the two readings of the same word).** The one-sided operator of the phase is $\exp(i\alpha)\mathrm{id}$; the two-sided operator is the identity. The one-sided operator sees the whole complex modulus $\Rho=r\exp(i\alpha)$; the two-sided operator sees only its modulus $r$ and the two non-central factors. The cancellation is the product of the left factor $\exp(i\alpha)$ and the right factor $\exp(-i\alpha)$; it is exact because the two scalars are central and inverse. The phase is not halved in either reading; it is either kept whole, one-sided, or cancelled whole, two-sided.
+**Remark (the two readings of the same word).** The one-sided operator of the phase is $\exp(i\theta_{\mathrm{pha}})\mathrm{id}$; the two-sided operator is the identity. The one-sided operator sees the whole complex modulus $\Rho=r\exp(i\theta_{\mathrm{pha}})$; the two-sided operator sees only its modulus $r$ and the two non-central factors. The cancellation is the product of the left factor $\exp(i\theta_{\mathrm{pha}})$ and the right factor $\exp(-i\theta_{\mathrm{pha}})$; it is exact because the two scalars are central and inverse. The phase is not halved in either reading; it is either kept whole, one-sided, or cancelled whole, two-sided.
 
 ## The Four Factors, One-Sided
 
@@ -619,7 +619,7 @@ The following table collects the comparison. The rank is the complex rank of the
 |---|---|---|
 | parameter map | linear, faithful | quadratic; kernel $U(1)$ on the units |
 | scale | $r$ | $r^{2}$ |
-| phase | $\exp(i\alpha)$, exchange at $\pi/2$ | $1$ |
+| phase | $\exp(i\theta_{\mathrm{pha}})$, exchange at $\pi/2$ | $1$ |
 | norm of the image | $\Rho^{2}\langle \tilde X\rangle_{\natural}$ | $r^{4}\langle \tilde X\rangle_{\natural}$ |
 | complex determinant | $\Rho^{4}$ | $r^{8}$ |
 | image on the units | $\cong GL(2,\mathbb{C})$, real dimension $8$ | $\cong CO^{+}(1,3)$, real dimension $7$ |
@@ -682,14 +682,14 @@ In coordinates, $\tilde X=ia\,e_t+\vec b$ is sent to $-a\,e_t+i\vec b$: the time
 
 $$
 \begin{pmatrix}
-\cos\alpha & i\sin\alpha\\
-i\sin\alpha & \cos\alpha
+\cos\theta_{\mathrm{pha}} & i\sin\theta_{\mathrm{pha}}\\
+i\sin\theta_{\mathrm{pha}} & \cos\theta_{\mathrm{pha}}
 \end{pmatrix},
 $$
 
-the image of $\mathbb{B}_{\Phi}$ has $*$-eigenvalue $-\exp(-2i\alpha)$, and the sectors are reached exactly at $\alpha\equiv0$ and $\alpha\equiv\pi/2$ modulo $\pi$.
+the image of $\mathbb{B}_{\Phi}$ has $*$-eigenvalue $-\exp(-2i\theta_{\mathrm{pha}})$, and the sectors are reached exactly at $\theta_{\mathrm{pha}}\equiv0$ and $\theta_{\mathrm{pha}}\equiv\pi/2$ modulo $\pi$.
 
-The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\alpha)$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
 
 In the eigenbasis the left multiplication is diagonal,
 $$
@@ -720,8 +720,8 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
 | $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian pair |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
-| $\Rho=r\exp(i\alpha)$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
-| $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
+| $\Rho=r\exp(i\theta_{\mathrm{pha}})$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
+| $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |

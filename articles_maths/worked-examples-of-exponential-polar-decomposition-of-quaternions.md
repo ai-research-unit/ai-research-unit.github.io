@@ -32,7 +32,7 @@ $$
 
 The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of *Exponential Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
 
-The quaternion case has no phase $\alpha$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
+The quaternion case has no phase $\theta_{\mathrm{pha}}$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
 **The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data and its check. The boundary is treated separately (§*The Real Axis Family*). The summary collects the results in four tables, reads the patterns across the cases, and compares the quaternion and biquaternion architectures (§*Summary*).
 
@@ -54,7 +54,7 @@ $$
 
 The radicand is positive for every nonzero quaternion, so there is no branch choice and no null cone. The element lies on the unit sphere exactly when $r=1$. The four real dimensions split as $1+3$: one for the scale and three for the sphere $S^3$ of unit factors.
 
-The biquaternion modulus is the principal square root of the complex number $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and carries a phase $\alpha$; here the radicand is a positive real, so the modulus is a positive real and the phase is absent. This is the first structural difference between the two articles.
+The biquaternion modulus is the principal square root of the complex number $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and carries a phase $\theta_{\mathrm{pha}}$; here the radicand is a positive real, so the modulus is a positive real and the phase is absent. This is the first structural difference between the two articles.
 
 ### The Unit Factor
 
@@ -706,10 +706,10 @@ The two architectures compare as follows.
 | feature | biquaternion case | quaternion case |
 |---|---|---|
 | coordinates | $Q_t,Q_x,Q_y,Q_z\in\mathbb{C}$ | $q_t,q_x,q_y,q_z\in\mathbb{R}$ |
-| modulus | $re^{i\alpha}$, principal square root | $r>0$ |
+| modulus | $re^{i\theta_{\mathrm{pha}}}$, principal square root | $r>0$ |
 | unit factor | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, Hermitian times $*$-unitary | $\tilde u_{\mathrm r}$, a rotor |
 | angles and axes | $\theta_{\mathrm{rpd}},\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | $\theta$; $\vec n$ |
-| polar word | $re^{i\alpha}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln r+\theta\vec n)$ |
+| polar word | $re^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln r+\theta\vec n)$ |
 | defect of one element's polar word | the cross term when the axes are non-parallel | zero |
 | boundary | the null cone, where no polar word exists | the open negative real axis, where no principal exponent exists |
 | matrix scales | $re^{\pm\theta_{\mathrm{rpd}}/2}$ | $r,r$ |

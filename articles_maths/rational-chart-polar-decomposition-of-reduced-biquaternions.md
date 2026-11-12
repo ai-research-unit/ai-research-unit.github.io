@@ -405,13 +405,13 @@ $$
 
 and the decomposition is the complex rational-chart decomposition of the two equal circular components.
 
-The $ij$-circle is the locus $s_2=-s_1$. In terms of the angles, the unit $u=e^{i\alpha}e^{ij\beta}$ has circular components $e^{i(\alpha+\beta)}$ and $e^{i(\alpha-\beta)}$, so
+The $ij$-circle is the locus $s_2=-s_1$. In terms of the angles, the unit $u=e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}$ has circular components $e^{i(\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}})}$ and $e^{i(\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}})}$, so
 
 $$
-s_1=-\tan\frac{\alpha+\beta}{2},\qquad s_2=-\tan\frac{\alpha-\beta}{2}.
+s_1=-\tan\frac{\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}}}{2},\qquad s_2=-\tan\frac{\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}}}{2}.
 $$
 
-The scalar circle is $\beta=0$, where $s_1=s_2$; the $ij$-circle is $\alpha=0$, where $s_2=-s_1$.
+The scalar circle is $\theta_{\mathrm{phb}}=0$, where $s_1=s_2$; the $ij$-circle is $\theta_{\mathrm{pha}}=0$, where $s_2=-s_1$.
 
 The values of the chart at the small integers are
 

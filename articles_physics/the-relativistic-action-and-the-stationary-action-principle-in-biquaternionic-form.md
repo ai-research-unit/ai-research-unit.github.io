@@ -195,7 +195,7 @@ The centrality of the mass is the structural point to carry forward. The compani
 
 ### The dispersion relation
 
-On a plane-wave field $\tilde{Ξ} = \tilde{Ξ}_0\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
+On a plane-wave field $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\theta_{\mathrm{pwp}})$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
 $$
 \Box \to  \frac{\omega^2}{c^2} - \vec k_\Phi^2 = (k_m)^{2} ,
 \qquad
@@ -206,6 +206,8 @@ $$
 \langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2} , \qquad \tilde P_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k_\Phi ,
 $$
 which is the field-theoretic counterpart of the particle's $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$ and was verified on a random on-shell momentum. The particle and the field therefore sit on the same biquaternion-norm shell, one for the four-momentum and one for the wave four-vector, and the action is what puts them there.
+
+Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
 Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^2\vec k_\Phi^2 + (k_m)^{2}c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the biquaternion norm. Changing the relative sign of the two terms would change the equation to $(\Box + (k_m)^{2})\tilde{Ξ} = 0$, a different equation, whose mass shell would be $\omega^2 = c^2\vec k_\Phi^2 - (k_m)^{2}c^2$ rather than the physical one.
 

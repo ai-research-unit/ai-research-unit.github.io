@@ -203,7 +203,9 @@ the last step because every generator of $SU(2)$ is traceless. No array enters t
 
 The same conclusion holds for every $SU(2)$ representation: each is real or pseudoreal, the cubic invariant does not exist, and the triangle coefficient vanishes — verified on the spins $\tfrac12$, $1$, $\tfrac32$ and $2$. The step that makes this useful is the sign rule: because a left-handed doublet and a right-handed doublet contribute with opposite signs, and because each is separately anomalous only through a coefficient that is already zero, **$SU(2)$ is anomaly-free whatever its fermion content.** This is a property of the group, not of the model.
 
-**The abelian factor.** For the central $\mathrm{U}(1)$ the coefficient is the cubic charge sum. The framework's own central phase acts as a **scalar** on the algebra: multiplication by $\exp(i\theta)$ multiplies every coefficient of a state by the same factor, so a state and its partner of the opposite chirality carry the *same* charge $ϙ$. The two contributions to the cubic sum are therefore $+ϙ^3$ and $-ϙ^3$, the sign being the left-minus-right rule and not a difference of charges,
+**The abelian factor.** For the central $\mathrm{U}(1)$ the coefficient is the cubic charge sum. The framework's own central phase acts as a **scalar** on the algebra: multiplication by $\exp(i\theta_{\mathrm{cen}})$ multiplies every coefficient of a state by the same factor, so a state and its partner of the opposite chirality carry the *same* charge $ϙ$. The two contributions to the cubic sum are therefore $+ϙ^3$ and $-ϙ^3$, the sign being the left-minus-right rule and not a difference of charges,
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
 \boxed{\;\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0\;},

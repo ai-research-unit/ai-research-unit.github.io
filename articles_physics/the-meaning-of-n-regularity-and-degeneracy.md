@@ -658,14 +658,14 @@ The exponential has the group of units as its image and the cone as its compleme
 The four-factor word is
 
 $$
-\tilde Q=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 and it exists on the complement of the cone and on no larger set. The reason is one line of multiplicativity:
 
 $$
-N\bigl(r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}\bigr)
-=r^{2}e^{2i\alpha}\cdot1\cdot1=r^{2}e^{2i\alpha}\neq0,
+N\bigl(r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}\bigr)
+=r^{2}e^{2i\theta_{\mathrm{pha}}}\cdot1\cdot1=r^{2}e^{2i\theta_{\mathrm{pha}}}\neq0,
 $$
 
 because the boost has $N$-norm one and the rotor is a unit. **Every value of the word is a unit.** The cone is not a bad point of the chart; it is outside the chart's range. No branch, no extension of the parameter range and no change of order puts a zero divisor in the image.
@@ -703,13 +703,13 @@ $$
 \qquad
 r=\lvert\Rho\rvert>0,
 \qquad
-e^{i\alpha}=\Rho/r,
+e^{i\theta_{\mathrm{pha}}}=\Rho/r,
 $$
 
 and the unit factor as $\tilde U=\tilde Q/\Rho$, of norm one. Then
 
 $$
-\tilde Q=\Rho\,\tilde U=r\,e^{i\alpha}\,\tilde U,
+\tilde Q=\Rho\,\tilde U=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U,
 $$
 
 and the unit factor splits into a Hermitian positive factor and a real rotor,
@@ -725,7 +725,7 @@ $$
 Four properties of the pair are used below. The boost is Hermitian positive definite of norm one, and the set of such elements is the hyperbolic space $H^{3}$ of real dimension three. The rotor is a unit real quaternion, because $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$ together with $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ forces its imaginary part to vanish; it is a point of $SU(2)=S^{3}$. The two factors do not commute, and their order is part of the definition. And the dimensions add:
 
 $$
-8=\underbrace{1}_{r}+\underbrace{1}_{\alpha}+\underbrace{3}_{\text{boost}}+\underbrace{3}_{\text{rotor}},
+8=\underbrace{1}_{r}+\underbrace{1}_{\theta_{\mathrm{pha}}}+\underbrace{3}_{\text{boost}}+\underbrace{3}_{\text{rotor}},
 $$
 
 which is the count of the algebra, and the reason the word is a bijection onto the units rather than a description with a spare parameter.
@@ -790,7 +790,7 @@ The word has boundary values on the cone. A family with $r=Re^{-\psi/2}$ and $\p
 $$
 L=\frac{R\varkappa_{\mathrm{phs}}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 \qquad
-\varkappa_{\mathrm{phs}}=e^{i\alpha},
+\varkappa_{\mathrm{phs}}=e^{i\theta_{\mathrm{pha}}},
 $$
 
 a non-zero rank-one null element, with the idempotent stratum for $\operatorname{Sc}L\neq0$ and the nilpotent stratum for $\operatorname{Sc}L=0$ (*The Massless Limit as a Boundary Value of the Polar Word*). Two things follow.
@@ -925,7 +925,7 @@ The table is the shortest statement in the article of what degeneracy costs, and
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$, $S_+^{\vee}=\tilde\Pi_+\mathbb{B}$ | the minimal left ideals and the co-spinor row space |
 | $\varepsilon(\chi,\psi)$ | the contraction of a co-spinor with a spinor, $2Q_t$ |
 | $c\tilde\Pi$ | the normal form on $\Sigma_{01}$, $c=2Q_t$ |
-| $\Rho$, $r$, $\alpha$ | the modulus, the scale and the central phase of the word |
+| $\Rho$, $r$, $\theta_{\mathrm{pha}}$ | the modulus, the scale and the central phase of the word |
 | $\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$ | the Hermitian boost and the real rotor |
 | $\tilde Q_H$, $\tilde Q_0$ | the two-factor decomposition, defined on every element |
 

@@ -88,7 +88,9 @@ $$
 \star(\vec E,\vec B) = \left(c\vec B, -\frac{\vec E}{c}\right), \qquad \star^2 = -1 ,
 $$
 
-which is the $\theta = \pi/2$ case of the duality rotation used in the companion article on the field-strength biquaternion and its invariants. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
+which is the $\theta_{\mathrm{dua}} = \pi/2$ case of the duality rotation used in the companion article on the field-strength biquaternion and its invariants. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
+
+Here $\theta_{\mathrm{dua}}$ is the duality angle: the Riemann--Silberstein vector $\vec E+i\,c\vec B$ is complex, and the angle is its argument, so it is real.
 
 $$
 \star\vec N = -i\vec N,
@@ -239,10 +241,10 @@ and the symmetric square of the conjugate module is $(0,1)$. The self-dual half 
 The duality rotation of the field-strength article is
 
 $$
-\vec N \mapsto \exp(-i\theta)\,\vec N,
+\vec N \mapsto \exp(-i\theta_{\mathrm{dua}})\,\vec N,
 $$
 
-and at $\theta = \pi/2$ it is the classical electric–magnetic duality. On the biquaternion side the rotation is multiplication of the field strength by a central phase, $\tilde{F}\mapsto \exp(-i\theta)\tilde{F}$, and it acts on the two halves by opposite phases: because $\star = -i$ on the self-dual coordinate and $+i$ on the anti-self-dual one, the two acquire the phases $\exp(-i\theta)$ and $\exp(+i\theta)$ respectively, so each half is carried into itself while the relative phase between them runs through the circle. The invariants of the field are the two scalars of the companion articles, $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$, which are the real and imaginary parts of $\vec N\cdot\vec N = I_1 + 2ic\,I_2$; under the duality rotation they mix, $I_1\mapsto I_1\cos2\theta+2cI_2\sin2\theta$ and $2cI_2\mapsto 2cI_2\cos2\theta-I_1\sin2\theta$, so that the modulus $I_1^2 + 4c^2I_2^2$ is invariant under duality while each of $I_1$ and $I_2$ separately is not.
+and at $\theta_{\mathrm{dua}} = \pi/2$ it is the classical electric–magnetic duality. On the biquaternion side the rotation is multiplication of the field strength by a central phase, $\tilde{F}\mapsto \exp(-i\theta_{\mathrm{dua}})\tilde{F}$, and it acts on the two halves by opposite phases: because $\star = -i$ on the self-dual coordinate and $+i$ on the anti-self-dual one, the two acquire the phases $\exp(-i\theta_{\mathrm{dua}})$ and $\exp(+i\theta_{\mathrm{dua}})$ respectively, so each half is carried into itself while the relative phase between them runs through the circle. The invariants of the field are the two scalars of the companion articles, $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$, which are the real and imaginary parts of $\vec N\cdot\vec N = I_1 + 2ic\,I_2$; under the duality rotation they mix, $I_1\mapsto I_1\cos2\theta_{\mathrm{dua}}+2cI_2\sin2\theta_{\mathrm{dua}}$ and $2cI_2\mapsto 2cI_2\cos2\theta_{\mathrm{dua}}-I_1\sin2\theta_{\mathrm{dua}}$, so that the modulus $I_1^2 + 4c^2I_2^2$ is invariant under duality while each of $I_1$ and $I_2$ separately is not.
 
 ### Helicity
 

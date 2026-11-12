@@ -275,7 +275,9 @@ The mixedness is the spread of the singular values. The boundary is that the sin
 
 ### The Central Phase
 
-The central element $e^{i\alpha}e_t$ maps to the scalar matrix $e^{i\alpha}\mathrm I_2$. It multiplies the element matrix by a phase, multiplies the determinant by $e^{2i\alpha}$, multiplies a state by $e^{i\alpha}$ and therefore does not preserve the trace-one slice, and acts trivially in the two-sided operator. A pure state is a ray, not a vector: the spinor $\zeta$ and $e^{i\alpha}\zeta$ give the same $\rho$, and the circle of phases over each pure state is the fibre of the Hopf bundle.
+The central element $e^{i\theta_{\mathrm{pha}}}e_t$ maps to the scalar matrix $e^{i\theta_{\mathrm{pha}}}\mathrm I_2$. It multiplies the element matrix by a phase, multiplies the determinant by $e^{2i\theta_{\mathrm{pha}}}$, multiplies a state by $e^{i\theta_{\mathrm{pha}}}$ and therefore does not preserve the trace-one slice, and acts trivially in the two-sided operator. A pure state is a ray, not a vector: the spinor $\zeta$ and $e^{i\theta_{\mathrm{pha}}}\zeta$ give the same $\rho$, and the circle of phases over each pure state is the fibre of the Hopf bundle.
+
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
 ### The Hopf Map
 

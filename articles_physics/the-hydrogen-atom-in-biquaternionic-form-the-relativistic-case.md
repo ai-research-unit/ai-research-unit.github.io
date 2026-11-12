@@ -256,11 +256,13 @@ which was verified for $n \le 6$. So the framework's state space is not enlarged
 
 The Coulomb field is an electromagnetic field, and in a gauge theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation carries a linear, chirality-off-diagonal mass pair, and the coupling is available at the algebra level: in the algebra reading the central phase passes through the mass term.
 
-Let $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ be a central phase, and let $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$ be the transformed connection. The covariant derivative
+Let $\lambda = \exp(i\theta_{\mathrm{gau}})$ be a central phase, and let $\tilde A_{\Phi,2} = \tilde A_{\Phi} - \tilde\nabla_\Phi\Gamma$ be the transformed connection. The covariant derivative
 
 $$
 \tilde\nabla_{\mathrm{gco}} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}
 $$
+
+Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one.
 
 transforms homogeneously,
 
@@ -361,7 +363,7 @@ $$
 \mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}) = \mathrm{Vect}\!\left(\tilde\nabla_\Phi\right)+\frac{i\,ϙ}{\hbar}\,\mathrm{Vect}\!\left(\tilde A_{\Phi}\right)
 $$
 
-for the part of the covariant derivative that carries the spatial derivatives. Then, with the connection $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ and the central phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$,
+for the part of the covariant derivative that carries the spatial derivatives. Then, with the connection $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ and the central phase $\lambda = \exp(i\theta_{\mathrm{gau}})$,
 
 $$
 \mathrm{Vect}(\tilde\nabla_{\mathrm{gco},2})\!\left(\lambda f\right) = \lambda\,\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}})f ,
@@ -577,7 +579,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\{f_\mu\}$ | Large-part functions of the finite basis; the small-part functions are their image under the balancing action |
 | $\tilde Q\mapsto\frac{1}{2\,m\,c}\vec p\,\tilde Q\,\vec e_z$ | Balancing action; the image of the large basis is the small basis (kinetic balance) |
 | $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}})$ | Vector part of the covariant derivative; balancing operator with a field present (magnetic balance) |
-| $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Central phase and connection transformation (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*); the phase a basis function carries |
+| $\lambda = \exp(i\theta_{\mathrm{gau}})$, $\tilde A_{\Phi,2} = \tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Central phase and connection transformation (*The Covariant Derivative and Gauge Connection in Biquaternionic Form*); the phase a basis function carries |
 
 ## Further Reading
 

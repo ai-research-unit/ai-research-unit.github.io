@@ -245,12 +245,15 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\theta_{\mathrm{dua}}$ | the duality-rotation angle of an electromagnetic wave |
 | $\theta_{\mathrm{eul}}$ | the spin angle of a symmetric top |
 | $\theta_{\mathrm{foc}}$ | the colatitude of a point on the sphere |
+| $\theta_{\mathrm{gau}}$ | the gauge angle of a local central phase |
 | $\theta_{\mathrm{hpa}}$ | the hyperbolic angle of a split-complex number |
 | $\theta_{\mathrm{intr}}$ | the rotation angle of the internal clock |
 | $\theta_{\mathrm{lna}}$ | the angle of the line $a$ |
 | $\theta_{\mathrm{lnb}}$ | the angle of the line $b$ |
 | $\theta_{\mathrm{mgn}}$ | the angle between a magnetic moment and the field |
 | $\theta_{\mathrm{pha}}$ | the phase angle of a complex number or of a gate, $\theta_{\mathrm{pha}}=\arg\omega$ |
+| $\theta_{\mathrm{phb}}$ | the second phase angle, the split-complex phase of a reduced biquaternion |
+| $\theta_{\mathrm{phs}}$ | the phase of a scalar field, $\theta_{\mathrm{phs}}=S/\hbar$, a full-turn angle |
 | $\theta_{\mathrm{pla}}$ | the angle in the first invariant plane |
 | $\theta_{\mathrm{plb}}$ | the angle in the second invariant plane |
 | $\theta_{\mathrm{prc}}$ | the precession angle of a gyroscope |
@@ -264,9 +267,9 @@ The table is an index of labels and not a list of tokens: a label names an objec
 | $\theta_{\mathrm{wav}}$ | the angle between a wave vector and a boost |
 | $\theta_{\mathrm{wgn}}$ | the Wigner angle of a boost product |
 
-**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty rows stand for thirty roles and 1,457 occurrences in the two corpora; the largest, $\theta_{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.
+**An angle label enters with the article that spends it, and it enters this table and not the other.** The thirty-three rows stand for thirty-three roles and 3,446 occurrences in the two corpora; the largest, $\theta_{\mathrm{pha}}$, names the phase angle, because every polar word and every gate spends it.
 
-**A phase is written here and not in a letter of its own.** The 91 occurrences that $\phi$ carried as a phase are $\theta_{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.
+**A phase is written here and not in a letter of its own.** The 91 occurrences that $\phi$ carried as a phase are $\theta_{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. The $\alpha$ that the polar-word articles carried for that angle is the same row, and the $\beta$ that paired with it is $\theta_{\mathrm{phb}}$: a reduced biquaternion spends two phases, one on the complex unit and one on the split unit, and they are $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.
 
 **A label is read with its article.** The word names the object the glyph denotes, a part of it or a role of it, and the word and the article separate the three, since one slot carries all of them: $L_{\mathrm{axf}}$ names a frame, $S_{\mathrm{int}}$ a part, $s_{\mathrm{tot}}$ a role, and §*The Subscripts* rules on the slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot, and it is not ambiguous either: $\mathrm{cov}$ names the universal cover in one article and the covariant fundamental solution in another, $\mathrm{res}$ names the residual part and the residue field, and the article that writes a label says which object it names. Where one spelling would name two objects that a reader must tell apart at a glance, the rarer reading takes a code of its own rather than a second height: $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ stand beside $\mathrm{reg}$, $\mathrm{top}$, $\mathrm{per}$, $\mathrm{def}$, $\mathrm{orb}$, $\mathrm{adj}$, and each of the twelve names one word only.
 

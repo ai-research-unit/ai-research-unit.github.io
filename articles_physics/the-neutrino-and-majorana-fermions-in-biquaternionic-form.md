@@ -108,11 +108,13 @@ $$
 
 because every coefficient of $D$ is real and the central $i$ passes through the operator. The fourth line is the whole reason the construction works, and it is a statement about where the $i$ sits: the operator is built from multipliers the conjugation fixes, so the conjugation passes through it, and the phase $i$ is carried by the field and not by the frame.
 
-**What the conjugation reverses.** The operator is real, and its symbol at fixed momentum is not. On a plane wave $e^{-i(p\cdot x)/\hbar}$ the operator acts as the multiplier
+**What the conjugation reverses.** The operator is real, and its symbol at fixed momentum is not. On a plane wave $\exp(-i\theta_{\mathrm{pwp}})$ the operator acts as the multiplier
 
 $$
 D_p=-i\sum_\mu\varepsilon_\mu\,p_\mu\,c_\mu ,
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 whose coefficients are purely imaginary, so $\overline{D_p}=-D_p$. The conjugation therefore **anticommutes with the symbol** while it commutes with the operator, and the two statements are one: the conjugate of a wave of momentum $p$ is a wave of momentum $-p$, and the symbol changes sign with the momentum. That is why the conjugate of a positive-frequency amplitude is a negative-frequency one, and it is why the space of solutions is closed under conjugation without any single mode being its own conjugate.
 

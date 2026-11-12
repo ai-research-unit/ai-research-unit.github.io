@@ -148,10 +148,12 @@ In the transverse-traceless gauge the field carries only the two physical modes,
 $$
 h_{ij}^{\mathrm{TT}}(x) = \int\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_p}}
 \sum_{r=+,\times}\left[
-a_r(\vec p)\,\varepsilon_{r ij}(\vec u_p)\,\exp(-ip\cdot x/\hbar)
-+ a_r^\dagger(\vec p)\,\varepsilon_{r ij}^{*}(\vec u_p)\,\exp(+ip\cdot x/\hbar)
+a_r(\vec p)\,\varepsilon_{r ij}(\vec u_p)\,\exp(-i\theta_{\mathrm{pwp}})
++ a_r^\dagger(\vec p)\,\varepsilon_{r ij}^{*}(\vec u_p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right] ,
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $E_p=|\vec p|$ for the massless field, $\varepsilon_{r ij}$ the two transverse-traceless polarization tensors normalized by $\sum_{i,j}\varepsilon_{r ij}\varepsilon_{s ij}^{*}=\delta_{rs}$, and the polarizations orthogonal to the momentum and traceless. The two polarizations are the two helicities $\pm2$, related by a rotation of $45^\circ$, and the sum over $r$ is the sum over them.
 

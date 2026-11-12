@@ -138,10 +138,12 @@ $$
 Its solution is the phase rotation
 
 $$
-\tilde{A}_{\Phi}(r'_t) = \exp(-i\omega r'_t/c)\tilde{A}_{\Phi}(0), \qquad a(r'_t) = \exp(-i\omega r'_t/c)a(0),
+\tilde{A}_{\Phi}(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\tilde{A}_{\Phi}(0), \qquad a(r'_t) = \exp(-i\theta_{\mathrm{pwt}})a(0),
 $$
 
-so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A}_{\Phi} = r_x\,e_t + i\varpi\,e_t$ by $\exp(-i\omega r'_t/c)$ and using the centrality of $i$ gives
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
+
+so that the trajectory in the centre is a circle of radius $|a|$ traversed at angular rate $\omega$. Multiplying the decomposition $\tilde{A}_{\Phi} = r_x\,e_t + i\varpi\,e_t$ by $\exp(-i\theta_{\mathrm{pwt}})$ and using the centrality of $i$ gives
 
 $$
 r_x(r'_t) = r_{0x}\cos(\omega r'_t/c) + \varpi_0\sin(\omega r'_t/c), \qquad \varpi(r'_t) = \varpi_0\cos(\omega r'_t/c) - r_{0x}\sin(\omega r'_t/c) ,
@@ -225,7 +227,7 @@ The bracket shows how the sector split interacts with the flow. The energy is a 
 
 ### Numerical Checks
 
-The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $r_x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\omega r'_t/c)a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}_{\Phi}\tilde{A}_{\Phi}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec h_\Psi\times\vec k_\Phi$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{B}_{\Psi}$.
+The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $r_x\,e_t$ and $i(p/m\omega)e_t$ respectively; the phase rotation $a\mapsto \exp(-i\theta_{\mathrm{pwt}})a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}_{\Phi}\tilde{A}_{\Phi}^{*}$; and the biquaternion norm was found to be $a^2e_t$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec h_\Psi\times\vec k_\Phi$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{B}_{\Psi}$.
 
 ## One Oscillator or Two?
 
@@ -251,7 +253,7 @@ $$
 
 so that the two conjugate quadratures occupy the two sectors, along the two real directions of the centre $\mathbb{B}_{C} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$. The assignment of which quadrature occupies which sector is a phase convention; the fact that they occupy different sectors is not.
 
-The equation of motion is $d\tilde{A}_{\Phi}/dt' = -i\omega\tilde{A}_{\Phi}$, whose solution is the phase rotation $\tilde{A}_{\Phi}(r'_t) = \exp(-i\omega r'_t/c)\tilde{A}_{\Phi}(0)$. The generator $-i\omega\,e_t$ lies in $\mathbb{B}_{\Phi}$ along the timelike direction $ie_t$, and the rotation it generates is the **sector exchange restricted to the centre**: the $\mathbb{B}_{\Psi}$ quadrature is carried into the $\mathbb{B}_{\Phi}$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.
+The equation of motion is $d\tilde{A}_{\Phi}/dt' = -i\omega\tilde{A}_{\Phi}$, whose solution is the phase rotation $\tilde{A}_{\Phi}(r'_t) = \exp(-i\theta_{\mathrm{pwt}})\tilde{A}_{\Phi}(0)$. The generator $-i\omega\,e_t$ lies in $\mathbb{B}_{\Phi}$ along the timelike direction $ie_t$, and the rotation it generates is the **sector exchange restricted to the centre**: the $\mathbb{B}_{\Psi}$ quadrature is carried into the $\mathbb{B}_{\Phi}$ quadrature and back. The oscillator is therefore the system in which the sector exchange is a classical mechanical motion.
 
 The energy is the Hermitian form,
 
@@ -281,7 +283,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $\tilde{A}_{\Phi} = a\,e_t \in \mathbb{B}_{C}$ | Central embedding of the amplitude |
 | $\tilde{A}_{\Phi,\mathbb{B}_{\Psi}} = \tfrac12(\tilde{A}_{\Phi} + \tilde{A}_{\Phi}^{*})$, $\tilde{A}_{\Phi,\mathbb{B}_{\Phi}} = \tfrac12(\tilde{A}_{\Phi} - \tilde{A}_{\Phi}^{*})$ | Sector components: $r_x\,e_t$ and $i\varpi\,e_t$ |
 | $d\tilde{A}_{\Phi}/dt' = -i\omega\tilde{A}_{\Phi}$ | Amplitude equation; generator $-i\omega\,e_t \in \mathbb{B}_{\Phi}$ |
-| $\exp(-i\omega r'_t/c)$ | Phase rotation; sector exchange on the centre |
+| $\exp(-i\theta_{\mathrm{pwt}})$ | Phase rotation; sector exchange on the centre |
 | $E = \tfrac12 m\omega^2|a|^2$ | Energy; the Hermitian form of the amplitude |
 | $\tilde{A}_{\Phi}\tilde{A}_{\Phi}^{*} = |a|^2e_t$ | Hermitian form (positive definite) |
 | $\langle\tilde{A}_{\Phi}\rangle_{\natural} = a^2e_t$ | Biquaternion norm (indefinite) |

@@ -53,7 +53,9 @@ The band has a right identity and no left one: $\tilde Q\star e_t=\tilde Q$, whi
 
 ### The Two Neighbours
 
-The **composition band** is the plain product $\tilde Q_1\tilde Q_2$. It is bilinear and associative, and its central imaginary is a root of $-1$: $(ie_t)^2=-e_t$. It carries the clock, the phase $e^{i\theta}$ and the differential calculus.
+The **composition band** is the plain product $\tilde Q_1\tilde Q_2$. It is bilinear and associative, and its central imaginary is a root of $-1$: $(ie_t)^2=-e_t$. It carries the clock, the phase $e^{i\theta_{\mathrm{cen}}}$ and the differential calculus.
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 The **causality band** is the general quaternionic algebra $\tilde Q_1^{\natural}\tilde Q_2$, whose norm is the indefinite interval $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ and whose null set is the causal cone. It carries the Lorentz action and the interval.
 
@@ -75,7 +77,7 @@ $$
 \boxed{\;(ie_t)\star(ie_t)=ie_t\,\overline{ie_t}=i(-i)e_t=e_t\;}.
 $$
 
-The element that generates the phase in the composition band squares to $+e_t$ here. It is not a root of $-e_t$; it is a $*$-unitary. The central phase $e^{i\theta}e_t$ is likewise a $*$-unitary, and its logarithm $i\theta e_t$ is a coefficient, not a band element with a negative square.
+The element that generates the phase in the composition band squares to $+e_t$ here. It is not a root of $-e_t$; it is a $*$-unitary. The central phase $e^{i\theta_{\mathrm{cen}}}e_t$ is likewise a $*$-unitary, and its logarithm $i\theta_{\mathrm{cen}} e_t$ is a coefficient, not a band element with a negative square.
 
 **Theorem (no clock element).** The band has no element $\tilde{Ζ}$ with $\tilde{Ζ}\star\tilde{Ζ}=-e_t$. The central values with a root in the band are exactly the non-negative real numbers.
 
@@ -89,7 +91,7 @@ $$
 (ie_t)^{2}=-e_t,
 $$
 
-so $ie_t$ is a root of $-e_t$, the exponential $e^{i\theta}$ has an algebraic generator, and the phase is a one-parameter group inside the band. The composition band owns the clock in the strict sense.
+so $ie_t$ is a root of $-e_t$, the exponential $e^{i\theta_{\mathrm{cen}}}$ has an algebraic generator, and the phase is a one-parameter group inside the band. The composition band owns the clock in the strict sense.
 
 The probability band owns the same centre but reads it as a modulus: it has the clock's values and not the clock's generator.
 
@@ -427,7 +429,7 @@ $$
 
 The axis $\vec u_{r,1}\times\vec u_{r,2}$ is perpendicular to both Bloch vectors and is the pole of the great circle that joins them. The amplitude is a complex number and has no vector part; the axis belongs to the pair of states.
 
-For unit spinors the modulus of the amplitude is $\cos(\theta/2)$, where $\theta$ is the angle between the two Bloch vectors, twice the angle between the rays. The argument is the phase about the axis, and the half-angle is the double cover: a rotation of the ray by $2\pi$ returns the spinor to minus itself.
+For unit spinors the modulus of the amplitude is $\cos(\theta_{\mathrm{cen}}/2)$, where $\theta_{\mathrm{cen}}$ is the angle between the two Bloch vectors, twice the angle between the rays. The argument is the phase about the axis, and the half-angle is the double cover: a rotation of the ray by $2\pi$ returns the spinor to minus itself.
 
 **The interpretation.** The argument of the amplitude is the local phase of the pair, and the axis of the pair is the axis of the rotation carrying one ray to the other. The pair's phase is not the geometric phase: it is gauge dependent. The geometric phase is the gauge-invariant part, and it lives on a closed circuit.
 

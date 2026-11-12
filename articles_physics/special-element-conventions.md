@@ -8,7 +8,9 @@ The article assumes the base and the subspaces of *Algebra and Element Conventio
 
 ## The Central Map and Its Restrictions
 
-The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb{C}$-linear map of the algebra, and the movements the series reads in four places are its restrictions to the subspaces. The generator satisfies $(ie_t)^2=-e_t$, so its powers close on four values and the group $\exp(i\theta)e_t$ of the centre interpolates between them. The remarkable subspaces carry the restrictions.
+The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb{C}$-linear map of the algebra, and the movements the series reads in four places are its restrictions to the subspaces. The generator satisfies $(ie_t)^2=-e_t$, so its powers close on four values and the group $\exp(i\theta_{\mathrm{cen}})e_t$ of the centre interpolates between them. The remarkable subspaces carry the restrictions.
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 | Subspace | $i\,\cdot$ | The name |
 |---|---|---|
@@ -134,7 +136,7 @@ a scalar label and not a vector. The two sentences agree on every carrier the co
 
 ### The Spinor Convention
 
-**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $\exp(-\frac{i\,\theta\,\vec u\,\vec S}{\hbar})$. In $\mathbb{B}$ the carrier is a minimal left ideal,
+**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta_{\mathrm{cen}}$ about $\vec u$ multiplies it by $\exp(-\frac{i\,\theta_{\mathrm{cen}}\,\vec u\,\vec S}{\hbar})$. In $\mathbb{B}$ the carrier is a minimal left ideal,
 $$
 S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
 $$
@@ -152,7 +154,7 @@ for a declared unit imaginary direction $\vec u$, and each part is an elementary
 
 ## Summary
 
-Multiplication by $i$ is one map. On the centre it is the global phase; on the complex space sector it is the duality rotation; on the real and imaginary halves it is the Wick rotation, and on the two sectors it is the material–informational exchange. The generator satisfies $(ie_t)^2=-e_t$, and the group $\exp(i\theta)e_t$ of the centre interpolates between the four values. The map is a rotation and not a projection, a collapse or a measurement, and it acts through the centre rather than through the quaternion directions.
+Multiplication by $i$ is one map. On the centre it is the global phase; on the complex space sector it is the duality rotation; on the real and imaginary halves it is the Wick rotation, and on the two sectors it is the material–informational exchange. The generator satisfies $(ie_t)^2=-e_t$, and the group $\exp(i\theta_{\mathrm{cen}})e_t$ of the centre interpolates between the four values. The map is a rotation and not a projection, a collapse or a measurement, and it acts through the centre rather than through the quaternion directions.
 
 The special glyphs are notational: a root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
 

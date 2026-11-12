@@ -102,9 +102,9 @@ so the orthogonal group of the family is the **four-group** $\{\pm1,\pm j\}$, of
 
 **The polar word in the model.** Every element has the modulus–unit form
 $$
-\breve Q=\rho\,e^{\theta_{\mathrm{rpd}} j}e^{i\alpha}e^{ij\beta}=\rho\,\breve r\,\breve u,
+\breve Q=\rho\,e^{\theta_{\mathrm{rpd}} j}e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}=\rho\,\breve r\,\breve u,
 $$
-with $\breve r=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ and $\breve u=e^{i\alpha}e^{ij\beta}$, and the model multiplies the three factors because it is multiplicative:
+with $\breve r=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ and $\breve u=e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}$, and the model multiplies the three factors because it is multiplicative:
 $$
 \mathsf M(\breve Q)=\rho\,\mathsf M(\breve r)\,\mathsf M(\breve u).
 $$
@@ -114,7 +114,7 @@ $$
 $$
 and the unit factor is the **unitary** matrix
 $$
-\mathsf M(\breve u)\ \text{of eigenvalues}\ e^{i(\alpha+\beta)}\ \text{and}\ e^{i(\alpha-\beta)},
+\mathsf M(\breve u)\ \text{of eigenvalues}\ e^{i(\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}})}\ \text{and}\ e^{i(\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}})},
 $$
 so the two circular components of the unit are the sum and the difference of the two phases. The display is the polar decomposition of the matrix, realised inside the family and not by a theorem about general matrices: the symmetric positive factor and the unitary factor are the models of two elements, and their product is the model of the product.
 

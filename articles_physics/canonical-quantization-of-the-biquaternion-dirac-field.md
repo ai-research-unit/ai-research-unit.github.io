@@ -97,7 +97,9 @@ $$
 \qquad\text{whose square is } p^{2} ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $e^{-i(p\cdot x)/\hbar}$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_\eta/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box$ and to $p^2$ respectively, the second equal to $m^{2}c^{2}$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_\eta/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box$ and to $p^2$ respectively, the second equal to $m^{2}c^{2}$ on the mass shell.
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 ### The Lagrangian
 
@@ -210,7 +212,7 @@ The three reasons are aspects of one theorem. We note only that they all point t
 
 ## Field Expansion in the Plane-Wave Solutions
 
-The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the amplitudes $\tilde{Ξ}_{+}^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)$ and the negative-frequency branch spanned by $\tilde{Ξ}_{-}^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)$, with $r=1,2$ and
+The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the amplitudes $\tilde{Ξ}_{+}^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})$ and the negative-frequency branch spanned by $\tilde{Ξ}_{-}^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})$, with $r=1,2$ and
 
 $$
 E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}},\qquad  p\cdot x:=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot X,
@@ -248,8 +250,8 @@ Quantization consists in replacing the constant coefficients of the classical ex
 
 $$
 \boxed{\;\tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big]\;}.
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big]\;}.
 $$
 
 The field and its adjoint,
@@ -522,7 +524,7 @@ The field expands in the plane-wave solutions established by the parent article,
 
 $$
 \tilde{Ξ}_{\mathrm{fop}}(X,r'_t)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_r
-\Big[a_{\mathrm{fop},r}(\vec p)\tilde{Ξ}_{+}^{(r)}(\vec p)\exp(-ip\cdot x/\hbar)+b_{\mathrm{fop},r}^{\dagger}(\vec p)\tilde{Ξ}_{-}^{(r)}(\vec p)\exp(+ip\cdot x/\hbar)\Big],
+\Big[a_{\mathrm{fop},r}(\vec p)\tilde{Ξ}_{+}^{(r)}(\vec p)\exp(-i\theta_{\mathrm{pwp}})+b_{\mathrm{fop},r}^{\dagger}(\vec p)\tilde{Ξ}_{-}^{(r)}(\vec p)\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 
 with the mode anticommutators $\{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec p^{\,\prime})\}=\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ and all others zero. These reproduce the equal-time relation: the positive- and negative-frequency branches enter with opposite phases, the even part of the spin sums integrates to the delta function, and the odd parts cancel. The resulting Fock space carries Pauli exclusion as the algebraic identity $(a_{\mathrm{fop},r}^{\dagger})^2=0$.

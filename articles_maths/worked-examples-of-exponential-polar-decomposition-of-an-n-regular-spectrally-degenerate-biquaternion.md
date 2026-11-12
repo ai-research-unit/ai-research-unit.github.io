@@ -23,7 +23,7 @@ $$
 and as
 
 $$
-\tilde Q=r\,e^{i\alpha}\,
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$
@@ -66,13 +66,13 @@ Given $\tilde Q$:
 
 1. Compute $N$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. The sector requires $N\neq0$ and $B^2=0$.
 2. Compute the scalar part $Q_t$ and the nilpotent direction $\vec\Upsilon=\vec Q/Q_t$. Check $\vec\Upsilon^2=0$.
-3. Compute the modulus $\Rho$, the principal square root of $N=Q_t^2$, and write $\Rho=r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$.
+3. Compute the modulus $\Rho$, the principal square root of $N=Q_t^2$, and write $\Rho=r e^{i\theta_{\mathrm{pha}}}$ with $r>0$ and $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$.
 4. Compute the sign $\varepsilon=Q_t/\Rho=\pm1$ and the unit factor $\tilde U=\varepsilon(e_t+\vec\Upsilon)$.
 5. Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.
 6. Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.
 7. Check the constraints $c_{\mathrm b}c_{\mathrm r}=\varepsilon$ and $s_{\mathrm b}s_{\mathrm r}c=0$, with $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$.
 8. Compute the exact logarithm $\log Q_t+\vec\Upsilon$ and check its exponential against $\tilde Q$.
-9. Compute the formal exponent $\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ and its defect.
+9. Compute the formal exponent $\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ and its defect.
 
 The **defect** of a case is
 
@@ -116,7 +116,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1.
 $$
@@ -162,7 +162,7 @@ B^2=0,
 \qquad
 r=2,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=-1.
 $$
@@ -208,7 +208,7 @@ B^2=0,
 \qquad
 r=2,
 \qquad
-\alpha=\frac{\pi}{2},
+\theta_{\mathrm{pha}}=\frac{\pi}{2},
 \qquad
 \varepsilon=1.
 $$
@@ -256,7 +256,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1,
 \qquad
@@ -341,7 +341,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1,
 \qquad
@@ -425,7 +425,7 @@ B^2=0,
 \qquad
 r=\sqrt2,
 \qquad
-\alpha=\frac{\pi}{4},
+\theta_{\mathrm{pha}}=\frac{\pi}{4},
 \qquad
 \varepsilon=1,
 \qquad
@@ -513,7 +513,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=-1,
 \qquad
@@ -571,7 +571,7 @@ $$
 \delta=1.2330607.
 $$
 
-The formal exponent has no scalar part, because $\ln r+i\alpha=0$; the true logarithm has $i\pi$, the period that the word does not see.
+The formal exponent has no scalar part, because $\ln r+i\theta_{\mathrm{pha}}=0$; the true logarithm has $i\pi$, the period that the word does not see.
 
 ### Case 8: A Scaled Jordan Element
 
@@ -590,7 +590,7 @@ B^2=0,
 \qquad
 r=2,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1,
 \qquad
@@ -733,7 +733,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 
 ### The Word Data
 
-| Case | $r$ | $\alpha$ | $\theta_{\mathrm{rpd}}$ | $\theta$ | $\vec u_{\mathrm b}$ | $\vec u_{\mathrm r}$ | $c$ |
+| Case | $r$ | $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{rpd}}$ | $\theta$ | $\vec u_{\mathrm b}$ | $\vec u_{\mathrm r}$ | $c$ |
 |---|---|---|---|---|---|---|---|
 | 1 | $1$ | $0$ | $0$ | $0$ | -- | -- | -- |
 | 2 | $2$ | $0$ | $0$ | $2\pi$ | -- | -- | -- |
@@ -763,7 +763,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 | $Q_t$ | the scalar part |
 | $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction |
 | $\Rho$ | the modulus, principal square root of $N$ |
-| $r,\alpha$ | the polar coordinates of $\Rho$ |
+| $r,\theta_{\mathrm{pha}}$ | the polar coordinates of $\Rho$ |
 | $\varepsilon=Q_t/\Rho$ | the sign of the unit factor, $\pm1$ |
 | $\tilde U$ | the unit factor |
 | $\tilde U_{\mathrm b}$ | the Hermitian positive factor |

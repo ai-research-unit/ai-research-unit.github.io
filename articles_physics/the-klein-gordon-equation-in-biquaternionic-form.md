@@ -248,7 +248,9 @@ $$
 
 Verifying the equivalence is a one-line computation: $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ has scalar part $\partial/\partial R_t(ic\rho) - \mathrm{Sc}(\vec\nabla\vec j) = c\,\partial/\partial r'_t\rho + \nabla\cdot\vec j$, and the vector part is not set to zero. So the continuity equation is the scalar projection of the biquaternion conservation law, and it holds; numerically, on the plane wave used above the combination $c\,\partial/\partial r'_t\rho + \nabla\cdot\vec j$ vanishes to finite-difference accuracy ($\sim10^{-6}$).
 
-The current is conserved, but its time component $\rho$ is **not positive definite**. For the positive-frequency plane wave $\tilde{Ξ}=N \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ with $\omega>0$, direct substitution gives
+The current is conserved, but its time component $\rho$ is **not positive definite**. For the positive-frequency plane wave $\tilde{Ξ}=N \exp(i\theta_{\mathrm{pwp}})$ with $\omega>0$, direct substitution gives
+
+Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
 $$
 \rho =\frac{\hbar\,\omega}{m\,c^{2}}\,|N|^2 > 0 ,

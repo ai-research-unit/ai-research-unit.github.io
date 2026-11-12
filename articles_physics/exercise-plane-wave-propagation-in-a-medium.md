@@ -18,9 +18,15 @@ and the Hermitian form with its trace reading is that of *Norm and Pairing Conve
 
 **The result.** For a source-free monochromatic plane wave
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
 \tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0,
+with the single phase angle
+$$
+\theta_{\mathrm{pwp}} := \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c \;\in\; \mathbb{R},
+$$
+a real number: $\omega$ is real for a monochromatic wave and $\vec k_\Phi$ is real in a non-dissipative medium. The field is then $\tilde{F}=\tilde{F}_0\exp(i\theta_{\mathrm{pwp}})$, an exponent that is $i$ times a real angle wherever the medium is transparent. Every later exponential in this article is written $\exp(i\theta_{\mathrm{pwp}})$ for that same angle.
+
 $$
 the equation $\tilde\nabla_\Phi\tilde{F} = 0$ reduces to
 $$
@@ -48,17 +54,17 @@ Two points of discipline are kept in view. First, the field strength is a pure v
 
 ## Problem 1: The Plane-Wave Conditions and the Dispersion Relation
 
-**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde\nabla_\Phi\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k_\Phi = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
+**Statement.** (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i\theta_{\mathrm{pwp}})$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde\nabla_\Phi\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k_\Phi = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.
 
 **Solution (a).** The partial derivatives act on the exponential by
 $$
-\partial/\partial R_t\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = -\frac{\omega}{c}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\partial/\partial R_t\,\exp(\,i\theta_{\mathrm{pwp}}) = -\frac{\omega}{c}\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
-\partial/\partial R_j\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = i k_j\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\partial/\partial R_j\,\exp(\,i\theta_{\mathrm{pwp}}) = i k_j\,\exp(\,i\theta_{\mathrm{pwp}}),
 $$
 using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega/c$. Hence
 $$
-\tilde\nabla_\Phi\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k_\Phi\right)\tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\tilde\nabla_\Phi\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k_\Phi\right)\tilde{F}_0\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
 \vec k_\Phi = k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z .
 $$
@@ -204,7 +210,7 @@ $$
 $$
 using $\epsilon Z = \epsilon\sqrt{\mu/\epsilon} = \sqrt{\epsilon\mu} = 1/c$. So the energy flows along the wavevector with speed $c$, and $|\vec S| = cW$ at every instant.
 
-**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))]$, the time averages over a period are
+**Solution (b).** With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i\theta_{\mathrm{pwp}})]$, the time averages over a period are
 $$
 \langle W\rangle = \frac{1}{4}\left(\epsilon\,|\vec E_0|^2 + \mu\,|\vec H_0|^2\right),
 \qquad
@@ -278,7 +284,9 @@ an envelope $\cos(\delta k_\Phi\,r_z-\delta\omega\,r'_t/c)$ modulating the carri
 
 ## Problem 5: The Monochromatic and Stationary Field
 
-**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega r'_t/c)$ and wave number $k_\Phi = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
+**Statement.** (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\theta_{\mathrm{pwt}})$ and wave number $k_\Phi = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.
+
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 **Solution (a).** In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-i\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k_\Phi$, so
 
@@ -346,7 +354,7 @@ The gap that the exercise most wants to flag is the first: a reader of the paren
 
 ## Summary
 
-For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i\theta_{\mathrm{pwp}})$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
 \vec k_\Phi\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad

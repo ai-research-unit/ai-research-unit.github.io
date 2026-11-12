@@ -32,7 +32,9 @@ Tomita's theorem states that $\sigma_{r'_{t}}$ maps $M$ to itself for every $r'_
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\ \in\mathbb{B}_{\Psi},
 $$
-so that $\sigma_{r'_{t}}(\tilde Q_2)=\exp(-ir'_t\tilde H_{\Psi,\mathrm{modular}})\tilde Q_2\,\exp(ir'_t\tilde H_{\Psi,\mathrm{modular}})$ and the modular operator acts as $\mathcal{M}_{\mathrm{mod}}(\tilde Q_2)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_2\,e^{\tilde H_{\Psi,\mathrm{modular}}}$.
+so that $\sigma_{r'_{t}}(\tilde Q_2)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_2\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and the modular operator acts as $\mathcal{M}_{\mathrm{mod}}(\tilde Q_2)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_2\,e^{\tilde H_{\Psi,\mathrm{modular}}}$.
+
+Throughout, $\theta_{\mathrm{evo}}:=r'_t$ is the elapsed coordinate time, a real number: the generator $\tilde H_{\Psi,\mathrm{modular}}$ is Hermitian, its eigenvalues are real, and the flow it generates is $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, a unitary whose exponent is $i$ times a real spectrum.
 
 Three properties of the flow are used below.
 

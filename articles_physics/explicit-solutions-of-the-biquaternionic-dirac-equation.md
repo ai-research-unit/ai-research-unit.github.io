@@ -52,10 +52,12 @@ Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tild
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{0}\,\exp(i\theta), \qquad \theta = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
+\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{0}\,\exp(i\theta_{\mathrm{pwp}}), \qquad \theta_{\mathrm{pwp}} = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
 $$
 
-does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{0} = \tilde{Ξ}_{0}^L + \tilde{Ξ}_{0}^R$. Differentiating as in the massless case, $\tilde\nabla_\Phi$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{K}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
+Here $\theta_{\mathrm{pwp}}$ is the plane-wave angle: it is $\vec k_\Phi\cdot\vec r-\omega r'_t/c$ with a real wave vector and a real frequency, so it is real.
+
+does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{0} = \tilde{Ξ}_{0}^L + \tilde{Ξ}_{0}^R$. Differentiating as in the massless case, $\tilde\nabla_\Phi$ acts on $\exp(i\theta_{\mathrm{pwp}})$ as left multiplication by $i\tilde{K}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
 
 $$
 i\tilde{K}_{\Phi}\,\tilde{Ξ}_{0}^{R}= k_m\,\tilde{Ξ}_{0}^L,

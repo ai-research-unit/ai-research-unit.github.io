@@ -12,7 +12,9 @@ Three claims organise the discussion.
 
 **Second, the spin coefficients and the Weyl scalars are hosted but not generated.** The twelve spin coefficients are the components in the null basis of a connection valued in $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — the six-dimensional bivector subspace of $\mathbb{B}$ that the parent article identifies — and the five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{ABCD} \in \mathrm{sym}^4 S$, where $S$ is the framework's spinor module. The algebra supplies the tetrad, the dyad, and the home of both objects; it supplies neither the connection nor the Weyl tensor.
 
-**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\tilde{Ξ}_{k} \mapsto A^{2-k} \exp(\,i(2-k)\theta)\,\tilde{Ξ}_{k}$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\sum_{A,B,C,D}\tilde{Ξ}_{ABCD}k_Ak_Bk_Ck_D$.
+**Third, the weights and the classification are representation-theoretic.** Under the boost–spin subgroup of the tetrad rotations the scalars scale with definite **boost weights**, $\tilde{Ξ}_{k} \mapsto A^{2-k} \exp(\,i(2-k)\theta_{\mathrm{cen}})\,\tilde{Ξ}_{k}$; the Petrov types are the multiplicity patterns of the principal null directions, equivalently the multiplicity patterns of the roots of the binary quartic $\sum_{A,B,C,D}\tilde{Ξ}_{ABCD}k_Ak_Bk_Ck_D$.
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
@@ -238,20 +240,20 @@ The tetrad is defined up to the six-parameter local Lorentz group, and the five 
 A boost–spin transformation rescales the legs as
 
 $$
-l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto \exp(i\theta)m, \qquad \bar m \mapsto \exp(-i\theta)\bar m, \qquad A>0,\ \theta\in\mathbb{R},
+l \mapsto A\,l, \qquad n \mapsto A^{-1}n, \qquad m \mapsto \exp(i\theta_{\mathrm{cen}})m, \qquad \bar m \mapsto \exp(-i\theta_{\mathrm{cen}})\bar m, \qquad A>0,\ \theta_{\mathrm{cen}}\in\mathbb{R},
 \tag{11}
 $$
 
-which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta/2)o$, $o'\mapsto A^{-1/2}\exp(-i\theta/2)o'$. Substituting (11) into (9), each scalar picks up a monomial:
+which preserves every entry of (1). In spinor terms it is $o\mapsto A^{1/2}\exp(i\theta_{\mathrm{cen}}/2)o$, $o'\mapsto A^{-1/2}\exp(-i\theta_{\mathrm{cen}}/2)o'$. Substituting (11) into (9), each scalar picks up a monomial:
 
 $$
-\boxed{\;\tilde{Ξ}_{k} \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta)\,\tilde{Ξ}_{k}, \qquad k=0,\dots,4\;}.
+\boxed{\;\tilde{Ξ}_{k} \;\longmapsto\; A^{\,2-k}\,\exp(\,i(2-k)\theta_{\mathrm{cen}})\,\tilde{Ξ}_{k}, \qquad k=0,\dots,4\;}.
 \tag{12}
 $$
 
 The exponent $2-k$ is the **boost weight** of $\tilde{Ξ}_{k}$; it is also its spin weight, so the two coincide for the Weyl scalars. The five weights are $2,1,0,-1,-2$ as $k$ runs from $0$ to $4$.
 
-Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\tilde{Ξ}_{k,2}/\tilde{Ξ}_{k}$ came out equal to $A^{2-k}\exp(i(2-k)\theta)$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\tilde{Ξ}_{k}$ carries $4-k$ dyad indices of type $o$ and $k$ of type $o'$, while $o$ and $o'$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\tilde{Ξ}_{k}$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
+Taking a general Weyl tensor and the explicit tetrad (2), the ratio $\tilde{Ξ}_{k,2}/\tilde{Ξ}_{k}$ came out equal to $A^{2-k}\exp(i(2-k)\theta_{\mathrm{cen}})$ for every $k$ from $0$ to $4$; the check is multilinear in the Weyl tensor and therefore does not depend on the particular tensor chosen. The same weights are visible directly in the spinor form (10): $\tilde{Ξ}_{k}$ carries $4-k$ dyad indices of type $o$ and $k$ of type $o'$, while $o$ and $o'$ carry boost weights $+\tfrac12$ and $-\tfrac12$, so the weight of $\tilde{Ξ}_{k}$ is $(4-k)\tfrac12 + k(-\tfrac12) = 2-k$.
 
 The weights make the word "definite" precise: the group acts on the five scalars diagonally in the boost direction, and the weight is the exponent of that diagonal action. They also explain why a statement that a scalar vanishes is frame-independent while a statement about the relative size of two scalars is graded: the vanishing of $\tilde{Ξ}_{k}$ is preserved by every boost–spin because $A^{2-k}\neq0$, and the five scalars sit in five distinct weight spaces.
 
@@ -316,7 +318,7 @@ The construction separates cleanly into what is native to $\mathbb{B}$ and what 
 
 The Newman–Penrose formalism and the biquaternion framework meet at the null vector. This article has shown that the meeting is exact at the level of the tetrad: the four legs of a null tetrad are the four zero divisors that the algebra already distinguishes, and up to the common factor $\sqrt2\,i$ they are the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$, with the two real null directions equal to the two primitive idempotents. The inner products $l\cdot n=-1$ and $m\cdot\bar m=+1$, the off-diagonal tetrad metric, and the reconstruction of the interval $-c^2(r'_t)^2+r_x^2+r_y^2+r_z^2$ from the tetrad were all recomputed, and the construction was checked on a dyad chosen for the check rather than on the basis dyad that suggested it.
 
-The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\tilde{Ξ}_{k}\mapsto A^{2-k}\exp(i(2-k)\theta)\tilde{Ξ}_{k}$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
+The two objects the tetrad is used to express are hosted but not generated. The twelve spin coefficients are the components in the null basis of an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-valued — hence $\mathbb{B}$-valued — connection; the count $4\times6=24$ real $=12$ complex was derived twice, once from the antisymmetry of the connection coefficients and once from the dimension of the traceless subspace. The five Weyl scalars are the components of the self-dual Weyl spinor $\tilde{Ξ}_{ABCD}\in\mathrm{sym}^4 S$; the count $10=5$ complex was verified by exhibiting the ten-dimensional space of Weyl tensors and computing the rank of the map to the five scalars to be ten over $\mathbb{R}$. The boost weights $\tilde{Ξ}_{k}\mapsto A^{2-k}\exp(i(2-k)\theta_{\mathrm{cen}})\tilde{Ξ}_{k}$ were recomputed for all five scalars, and the Petrov classification was exhibited as the multiplicity pattern of the roots of the binary quartic in $\mathrm{sym}^4 S$, with the canonical vanishing patterns stated together with the convention on which they depend.
 
 The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the connection's home, and the spinor module that carries the Weyl spinor; it does not supply the connection, the Weyl tensor, or the dynamics that would select one. The two-sector decomposition does not organise the Weyl scalars, because $\mathrm{sym}^4 S$ is five complex dimensional and $\mathbb{B}$ is four. That is a negative structural finding, reported as such rather than closed.
 
@@ -345,7 +347,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $C_{abcd}$ | Weyl tensor |
 | $\tilde{Ξ}_{0},\dots,\tilde{Ξ}_{4}$ | Weyl scalars, (9) |
 | $\tilde{Ξ}_{ABCD}$ | self-dual Weyl spinor in $\mathrm{sym}^4 S$ |
-| $A,\theta$ | boost and spin parameters of the tetrad rotation |
+| $A,\theta_{\mathrm{cen}}$ | boost and spin parameters of the tetrad rotation |
 | $z$ | complex parameter of a null rotation |
 
 ## Further Reading

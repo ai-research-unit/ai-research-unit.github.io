@@ -311,9 +311,9 @@ in agreement with the imaginary-time route. The two computations are independent
 The boost is a unit for every finite rapidity, so its polar word has scale one and no phase:
 
 $$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-r=1,\quad \alpha=0,\quad \tilde u_{\mathrm r}=e_t,
+r=1,\quad \theta_{\mathrm{pha}}=0,\quad \tilde u_{\mathrm r}=e_t,
 $$
 
 with the boost factor equal to the element itself. The rapidity is twice the Hamilton angle of that factor, and the word has no other content. The horizon is not a value of this word; it is the boundary of the chart in which the word is written.

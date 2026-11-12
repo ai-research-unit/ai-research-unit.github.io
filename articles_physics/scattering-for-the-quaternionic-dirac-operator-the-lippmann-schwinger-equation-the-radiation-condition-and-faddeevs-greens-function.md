@@ -44,7 +44,9 @@ Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scal
 
 The source's second and third sections are the corpus's electromagnetic material seen from the scattering side, and they are recalled here because the scattering problem is posed for Maxwell's equations and only then transported to the algebra.
 
-In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(r_x,r'_t)=\mathrm{Re}(\vec E(r_x)\exp(-i\omega r'_t/c))$ and likewise for $\vec H$,
+In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(r_x,r'_t)=\mathrm{Re}(\vec E(r_x)\exp(-i\theta_{\mathrm{pwt}}))$ and likewise for $\vec H$,
+
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 $$
 \operatorname{curl}\vec E=i\omega\mu\vec H, \qquad

@@ -224,10 +224,12 @@ An integer-spin field is quantized with commutators, not anticommutators. The mo
 $$
 Ξ_{\mathrm{fop}}(x) = \int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{c}{2\omega_{\vec p}}}
 \sum_{r=1}^{2s+1}\left[
-\xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-ip\cdot x/\hbar)
-+ \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+ip\cdot x/\hbar)
+\xi_r(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
++ \xi_{r}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right],
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with polarization labels $\xi_r$ and mode operators satisfying
 

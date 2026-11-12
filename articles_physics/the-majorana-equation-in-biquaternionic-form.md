@@ -139,10 +139,12 @@ so $e^{i\alpha}\tilde{Ξ}$ lies in the fixed space only when $\alpha$ is a multi
 
 ## Solutions and the Counting of States
 
-**A single plane wave is never a solution.** The corpus's ansatz is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta)$ with $\theta=\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and $\tilde P_{\Phi}=ik_{t}^{\prime}e_t+\vec k_\Phi$ (*The Dirac Equation in Biquaternionic Form*). On it the derivative of the display is the left multiplication by the element $k_{t}^{\prime}e_t+i\vec k_\Phi$, and the coefficient conjugation conjugates the phase, so the two sides of an antilinear equation carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The solutions are therefore two-frequency superpositions,
+**A single plane wave is never a solution.** The corpus's ansatz is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{cen}})$ with $\theta_{\mathrm{cen}}=\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and $\tilde P_{\Phi}=ik_{t}^{\prime}e_t+\vec k_\Phi$ (*The Dirac Equation in Biquaternionic Form*). On it the derivative of the display is the left multiplication by the element $k_{t}^{\prime}e_t+i\vec k_\Phi$, and the coefficient conjugation conjugates the phase, so the two sides of an antilinear equation carry $\exp(+i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$ and cannot match. The solutions are therefore two-frequency superpositions,
+
+Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
 $$
-\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta)+\tilde{Ξ}_{1}\exp(-i\theta) ,
+\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{cen}})+\tilde{Ξ}_{1}\exp(-i\theta_{\mathrm{cen}}) ,
 $$
 
 and the equation becomes a real linear system for the pair $(\tilde{Ξ}_{0},\tilde{Ξ}_{1})$ of amplitudes.
@@ -258,9 +260,9 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 | ${}^{*}$ | The Hermitian conjugation: an anti-automorphism, antilinear, an involution |
 | $\tilde\nabla_\Phi$, $\Box_\Phi$ | The gradient and the d'Alembertian in the material reading, as the series fixes them |
 | $\mathbb{B}_{\Phi}$ | The frame with $Q_t=i q'_t$ and $g_{tt}=-c^{2}$ |
-| $\theta$, $\tilde P_{\Phi}$ | The phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and the momentum element $ik_{t}^{\prime}e_t+\vec k_\Phi$ |
-| $k_{t}^{\prime}e_t+i\vec k_\Phi$ | The derivative of the display on $\exp(i\theta)$, as a left multiplication |
-| $\tilde{Ξ}_{0}$, $\tilde{Ξ}_{1}$ | The amplitudes of $\exp(i\theta)$ and $\exp(-i\theta)$ |
+| $\theta_{\mathrm{cen}}$, $\tilde P_{\Phi}$ | The phase $\mathrm{Sc}(\tilde P_{\Phi}\tilde Q^{\natural})$ and the momentum element $ik_{t}^{\prime}e_t+\vec k_\Phi$ |
+| $k_{t}^{\prime}e_t+i\vec k_\Phi$ | The derivative of the display on $\exp(i\theta_{\mathrm{cen}})$, as a left multiplication |
+| $\tilde{Ξ}_{0}$, $\tilde{Ξ}_{1}$ | The amplitudes of $\exp(i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$ |
 | $\mathcal{C}(\tilde{Ξ})=\bar{\tilde{Ξ}}\vec e_z$ | The conjugation of the mass term; $\mathcal{C}^{2}=-1$ |
 | $a\,\bar{\tilde{Ξ}}\,b$ | The unit-conjugated conjugations; ten of the sixteen are involutions |
 | four real dimensions | The fixed space of every antilinear involution on $\mathbb{B}$ |

@@ -58,10 +58,12 @@ Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do no
 The two appear side by side in the polar word of the field,
 
 $$
-\tilde\Xi=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-and this expression is precisely where the conflation happens. The $i$ in $e^{i\alpha}$ is the central scalar imaginary, and the angle $\alpha$ is a number; the rotor $\tilde u_{\mathrm r}$ is built from a non-central root $\vec u$, and $\vec u$ is an axis the field carries. One is the complex structure, the other a direction the field has turned, and they must be read separately.
+Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
+
+and this expression is precisely where the conflation happens. The $i$ in $e^{i\theta_{\mathrm{pha}}}$ is the central scalar imaginary, and the angle $\theta_{\mathrm{pha}}$ is a number; the rotor $\tilde u_{\mathrm r}$ is built from a non-central root $\vec u$, and $\vec u$ is an axis the field carries. One is the complex structure, the other a direction the field has turned, and they must be read separately.
 
 ### The complex structure of the carrier
 
@@ -75,7 +77,7 @@ i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi},
 i\,\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi},
 $$
 
-so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mathbb{B}_{\Psi}$. The phrase "the complex structure of $\mathbb{B}_{\Psi}$", if used at all, can only mean the complex structure of the carrier: as a real vector space $\mathbb{B}_{\Psi}$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the polar word $r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ contains both an $i$, inside the central factor, and a non-central root inside the rotor; the $i$ does not act on $\mathbb{B}_{\Psi}$, it maps it to its complement.
+so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mathbb{B}_{\Psi}$. The phrase "the complex structure of $\mathbb{B}_{\Psi}$", if used at all, can only mean the complex structure of the carrier: as a real vector space $\mathbb{B}_{\Psi}$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the polar word $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ contains both an $i$, inside the central factor, and a non-central root inside the rotor; the $i$ does not act on $\mathbb{B}_{\Psi}$, it maps it to its complement.
 
 | Object | Where it lives | Central? | Role |
 |---|---|---|---|

@@ -24,7 +24,7 @@ Every factor of every column is the exponential of an element of its algebra, an
 
 $$
 \boxed{\;
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)
+\tilde{Q} = \exp(\ln r)\,\exp(i\theta_{\mathrm{pha}})\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)
 \;},
 $$
 
@@ -53,7 +53,7 @@ The following table writes the word of each algebra as a product of exponentials
 | $\mathbb{C}_{\mathrm{dln}}$ | $Q = \exp(\ln\lvert q\rvert)\,\bigl(\pm\exp(\varepsilon s)\bigr)$ | the nilpotent root $\varepsilon$, parabolic; the sign is the component of the unit group |
 | $\mathbb{H}$ | $\tilde q = \exp(\ln\sqrt{N})\,\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | the cosine root $\mu$, a unit pure quaternion, trigonometric |
 | $\mathbb{H}_{\mathrm{spl}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta}{2} \vec e_x)\bigr)\cdot(\text{optional } \vec e_y)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{\vec e_y,\vec e_z\}$ and the cosine root $\vec e_x$; the reflection $\vec e_y$ is discrete |
-| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
+| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\theta_{\mathrm{pha}})\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
 | $\mathbb{B}_{\mathrm{spl}}$ | $\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | the hyperbolic roots $e_t$ and $j$, the cosine roots $\mu_+\tilde\Pi_1$ and $\mu_-\tilde\Pi_2$ |
 
 The table is the exponential reading of the two parametrisation tables. Three features of it are worth separating.
@@ -103,7 +103,7 @@ The table shows how the four slots of the family are occupied.
 
 - **The positive scale $\mathbb{R}_{>0}$ is present in every column**, and the factors that carry the compact topology are the phases and the rotors.
 - **In the definite series the rotor is compact**: the discrete sign group $\{\pm1\}$ in $\mathbb{R}$, the circle $\mathrm{U}(1)$ in $\mathbb{C}$, and the sphere $Sp(1)=\{\tilde q\in\mathbb{H}:\tilde q\tilde q^{\natural}=1\}$ of unit real quaternions in $\mathbb{H}$.
-- **$\mathbb{B}$ adds a non-compact factor.** Besides its compact central phase $\exp(i\alpha)$ and its compact rotor $Sp(1)$, it carries a non-compact **hyperbolic rotation** in the Hermitian subspace $\mathbb{B}_{\Psi}$ of real dimension three, so that its four factors have dimensions $1+1+3+3=8$ (*Real Polar Decomposition*, §*What the Two Factors Are*; *Modulus–Unit Polar Decomposition of Complex Numbers*, §*The Two Factors*; *Modulus–Unit Polar Decomposition of Quaternions*, §*The Unit Factor and the Unit Sphere*; *The Polar Decomposition of an N-Regular Biquaternion*, §*The split of the modulus*).
+- **$\mathbb{B}$ adds a non-compact factor.** Besides its compact central phase $\exp(i\theta_{\mathrm{pha}})$ and its compact rotor $Sp(1)$, it carries a non-compact **hyperbolic rotation** in the Hermitian subspace $\mathbb{B}_{\Psi}$ of real dimension three, so that its four factors have dimensions $1+1+3+3=8$ (*Real Polar Decomposition*, §*What the Two Factors Are*; *Modulus–Unit Polar Decomposition of Complex Numbers*, §*The Two Factors*; *Modulus–Unit Polar Decomposition of Quaternions*, §*The Unit Factor and the Unit Sphere*; *The Polar Decomposition of an N-Regular Biquaternion*, §*The split of the modulus*).
 
 The hyperbolic rotation of $\mathbb{B}$ is the one occurrence of a hyperbolic rotation in the definite series, and it is present because the complex norm of $\mathbb{B}$ is indefinite while its Hermitian scalar part is positive definite.
 

@@ -12,7 +12,9 @@ with $w_{\mathrm{fl}}$ the energy density and $\vec S_{\mathrm P}$ the energy fl
 
 The derivation of the tensor is not repeated here. The canonical energy–momentum tensor of the translation current is derived in [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), and the field-theoretic tensor with its positive energy density, its improvement and its conservation is derived in [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html). Both are cited and neither is reproduced. What this article adds is the element, its $\natural$ reading, its polar decomposition, and the negative claim of the closing sections: the quantum stress is not a thermal pressure.
 
-The polar variables are those of [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html). The field is $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ with $\lVert\tilde\Xi\rVert>0$ real, the four-momentum is $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, the four-velocity is $\tilde V_{\Phi}=\tilde P_{\Phi}/m$, and the quantum potential is
+The polar variables are those of [The Polar Form of the Klein–Gordon Equation in Biquaternionic Form](the-polar-form-of-the-klein-gordon-equation-in-biquaternionic-form.html). The field is $\tilde\Xi=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}e_t$ with $\lVert\tilde\Xi\rVert>0$ real, the four-momentum is $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, the four-velocity is $\tilde V_{\Phi}=\tilde P_{\Phi}/m$, and the quantum potential is
+
+Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 $$
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
@@ -350,7 +352,7 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient, $e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian; $\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ on the material sector |
 | $r'_t$ | Material time, a length |
-| $\tilde\Xi=\lVert\tilde\Xi\rVert\exp(iS_{\tilde\Xi}/\hbar)e_t$ | The central scalar field in polar form |
+| $\tilde\Xi=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}e_t$ | The central scalar field in polar form |
 | $\lVert\tilde\Xi\rVert$ | The amplitude, positive real |
 | $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$ | Proper density |
 | $S_{\tilde\Xi}$ | Action of the field |

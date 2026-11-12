@@ -126,7 +126,9 @@ $$
 \tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}.
 $$
 
-The operator $\hbar\,\vec k_\Phi$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
+The operator $\hbar\,\vec k_\Phi$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i\theta_{\mathrm{pwp}})$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
+
+Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
 ### Dispersion and the location of the wave vector
 
@@ -162,7 +164,7 @@ For the non-relativistic dispersion the wave four-vector is **spacelike** for ev
 On a box of side $L$ with periodic boundary conditions, the normalised plane waves are
 
 $$
-\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\,\xi,
+\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i\theta_{\mathrm{pwp}})\,\xi,
 \qquad
 \mathrm{Tr}(\xi^\dagger\xi) = 1,
 $$
@@ -391,7 +393,7 @@ Two further structural points belong to this section.
 
 - **Centrality of the free Hamiltonian, made manifest.** The free Hamiltonian is literally a scalar multiple of $e_t$: $H = h_t e_t \in \mathbb{B}_{C}$. The free evolution is therefore a central phase, the free propagator is a central element, and the module factor is frozen. In a representation in which the two components were written as an arbitrary pair, this would have to be checked by hand; here it is a one-line consequence of $H \in \mathbb{B}_{C}$.
 - **The kinetic term as a biquaternion norm.** $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
-- **A canonical complex structure.** The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
+- **A canonical complex structure.** The phase $\exp(i\theta_{\mathrm{pwp}})$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
 - **A material-sector location for the dispersion.** The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1 -\frac{k_\Phi^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
 - **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
 
@@ -422,7 +424,7 @@ H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\fra
 \tilde p = -i\,\hbar\vec\nabla_\Phi,
 $$
 
-and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ have the dispersion $\omega =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{i\,H}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.
+and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i\theta_{\mathrm{pwp}})$ have the dispersion $\omega =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{i\,H}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.
 
 The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \vec\nabla_\Phi\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ} - (\partial/\partial R_\eta\,\tilde{Ξ})^\dagger\tilde{Ξ})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.
 
@@ -450,7 +452,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $H = p^{2} e_t/2m$ | Free Hamiltonian; central |
 | $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
-| $\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
+| $\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i\theta_{\mathrm{pwp}})$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
 | $\omega(\vec k_\Phi) =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ | Dispersion relation |
 | $\vec v_g = \partial\omega/\partial\vec k_\Phi =\frac{\hbar\,\vec k_\Phi}{m}$ | Group velocity; classical velocity |
 | $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ | Wave four-vector in $\mathbb{B}_{\Phi}$ |

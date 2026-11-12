@@ -56,9 +56,11 @@ The companion article quantizes the field on its module; here the same modes are
 
 $$
 \tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde W_{\Psi}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V_{\Phi}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde W_{\Psi}^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V_{\Phi}^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
+
+Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
 with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde W_{\Psi}^{(r)}$ and $\tilde V_{\Phi}^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no basis operator survives in the amplitude.
 

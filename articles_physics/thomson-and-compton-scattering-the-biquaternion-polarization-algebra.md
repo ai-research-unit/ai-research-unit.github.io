@@ -118,7 +118,7 @@ where $\vec N_+$ is the self-dual half and $\vec N_-$ the anti-self-dual one, co
 
 ### The classical cross-section
 
-A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega r'_t/c)$, so $\partial/\partial r'_t \to -i\omega/c$ and the equation $m\,d\vec v/dr'_t = -e\vec E$ gives that velocity. The driven displacement has the amplitude $x_0 = eE_0/(m\omega^2)$, one power of $\omega$ below the velocity's, so the dipole moment $\vec p = -e\vec r$ has $\ddot{\vec p} = -e\ddot{\vec r} = +e^2\vec E_0/m$, independent of the frequency. One power of $\omega$ cancels against the $\omega^2$ of the second derivative, and that cancellation is the whole of the frequency independence at this level. The electron radiates as that dipole, and the Larmor formula gives the time-averaged power per unit solid angle,
+A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\theta_{\mathrm{pwt}})$, so $\partial/\partial r'_t \to -i\omega/c$ and the equation $m\,d\vec v/dr'_t = -e\vec E$ gives that velocity. The driven displacement has the amplitude $x_0 = eE_0/(m\omega^2)$, one power of $\omega$ below the velocity's, so the dipole moment $\vec p = -e\vec r$ has $\ddot{\vec p} = -e\ddot{\vec r} = +e^2\vec E_0/m$, independent of the frequency. One power of $\omega$ cancels against the $\omega^2$ of the second derivative, and that cancellation is the whole of the frequency independence at this level. The electron radiates as that dipole, and the Larmor formula gives the time-averaged power per unit solid angle,
 $$
 \Bigl\langle\frac{dP}{d\Omega}\Bigr\rangle
 = \frac{1}{16\pi^2\epsilon_0 c^3}\,\bigl\langle|\ddot{\vec p}_{\perp}|^2\bigr\rangle
@@ -149,6 +149,8 @@ $$
 = 1 - \bigl(\varepsilon_{\mathrm{fop}}\cdot\vec u_{\mathrm{out},\eta}\bigr)^2 = \sin^2\theta_{\mathrm{sct}} ,
 $$
 where $\theta_{\mathrm{sct}}$ is the angle between the incident polarization and the outgoing propagation direction; this was verified on one hundred random geometries to $10^{-15}$. For an incident beam polarized **in** the scattering plane, $\theta_{\mathrm{sct}}$ is the complement of the scattering angle, the sum is $\cos^2\theta$, and it vanishes at $90^\circ$ — no light is scattered along the direction of the incident polarization, which is the dipole's null axis. For an incident beam polarized **perpendicular** to the plane, $\theta_{\mathrm{sct}} = \pi/2$ and the sum is one at every angle, so the scattered light stays fully polarized in that direction.
+
+Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.
 
 ### The helicity amplitudes
 
