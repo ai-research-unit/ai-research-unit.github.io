@@ -526,8 +526,8 @@
 <tr>
 <td>20</td>
 <td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
-<td>$\exp(i\theta_{\mathrm{pha}})$, $\exp(-k[a_0-i(r_z\cos\theta_{\mathrm{axc}}-r'_t)])$</td>
-<td>a pure phase in one case, a real damping in the other</td>
+<td>$\exp(i\theta_{\mathrm{pha}})$, $\exp(ik(r_z\cos\theta_{\mathrm{axc}}-r'_t))$, $\exp(-k a_0)$</td>
+<td>a pure phase, and in the other case a phase with its damping as a second factor</td>
 </tr>
 <tr>
 <td>21</td>
@@ -778,8 +778,8 @@
 <tr>
 <td>9</td>
 <td><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
-<td>the weight with a source coupled to the field</td>
+<td>$\exp(\frac{i\,S}{\hbar})$, $\exp(\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
+<td>the weight, with the source as a second factor</td>
 </tr>
 <tr>
 <td>10</td>
@@ -808,8 +808,8 @@
 <tr>
 <td>14</td>
 <td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
-<td>$\exp(\,\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
-<td>the weight whose derivative gives the identity</td>
+<td>$\exp(\,\frac{i\,S}{\hbar})$, $\exp(\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
+<td>the weight, with the source as a second factor, whose derivative gives the identity</td>
 </tr>
 <tr>
 <td>15</td>
@@ -895,8 +895,8 @@
 <tr>
 <td>8</td>
 <td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
-<td>$\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$, $\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)$</td>
-<td>the mode of the kernel and the retarded damping factor</td>
+<td>$\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$, $\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, $\exp(-rf)$</td>
+<td>the mode of the kernel and its retarded damping, as two factors</td>
 </tr>
 <tr>
 <td>9</td>
@@ -943,8 +943,8 @@
 <tr>
 <td>16</td>
 <td><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a></td>
-<td>$\exp(-i\omega\tau)$, $\exp(\pm i\tau\varpi - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$, $\exp(\pm\tau\sqrt{\|H\|^2-\|\vec\zeta-E\|^2} - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$</td>
-<td>the twistor kernel: one phase, one real damping</td>
+<td>$\exp(-i\omega\tau)$, $\exp(\pm i\tau\varpi)$, $\exp(-i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$, $\exp(\pm\tau\sqrt{\|H\|^2-\|\vec\zeta-E\|^2})$</td>
+<td>the twistor kernel: two phases, each written as its own factor</td>
 </tr>
 </tbody>
 </table></div>
@@ -1774,7 +1774,7 @@
 </tbody>
 </table></div>
 <p>28 articles in this table.</p>
-<h2 id="the-articles-that-put-math426-in-the-exponent">The Articles That Put $\Xi$ in the Exponent</h2>
+<h2 id="the-articles-that-put-math431-in-the-exponent">The Articles That Put $\Xi$ in the Exponent</h2>
 <p>Five articles exponentiate the invariant phase $\Xi$ itself, and three exponentiate the spinor phase $\tilde\Xi_{\mathrm{sp}}$. The rows below are an index across the tables above, not a new classification; each article appears again under its own section.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1838,53 +1838,8 @@
 </table></div>
 <p>Eight articles in this table, all quoted verbatim from their files.</p>
 <h2 id="exponents-that-are-not-purely-imaginary">Exponents That Are Not Purely Imaginary</h2>
-<p>Every form in the thirteen tables carries the factor $i$. In 50 rows of this article the exponent is still not a pure imaginary number, for one of four reasons. The reason matters: a real part added to a phase is damping or growth, an operator in the exponent is a transformation rather than a phase, and $\Xi$-like elements in the exponent are group elements.</p>
-<h3 id="1-a-real-part-added-beside-the-math442">1. A real part added beside the $i$</h3>
-<p>Here the exponent is $i$ times a phase plus a real term, so the state is damped or weighted. 5 articles do this.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>#</th>
-<th>Article</th>
-<th>The exponential as written</th>
-<th>What makes it not purely imaginary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a></td>
-<td>$\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)$</td>
-<td>the mode of the retarded kernel; $-rf$ multiplies nothing imaginary</td>
-</tr>
-<tr>
-<td>2</td>
-<td><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
-<td>the weight plus a real source term $\langle\tilde J_\Phi,\tilde\Xi\rangle$</td>
-</tr>
-<tr>
-<td>3</td>
-<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
-<td>$\exp(\,\frac{i\,S}{\hbar}+\langle\tilde J_{\Phi},\tilde{Ξ}\rangle)$</td>
-<td>the same weight, differentiated with respect to the source</td>
-</tr>
-<tr>
-<td>4</td>
-<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
-<td>$\exp(-k[a_0-i(r_z\cos\theta_{\mathrm{axc}}-r'_t)])$</td>
-<td>the whole bracket is real and multiplied by $-k$: decay, with the phase inside</td>
-</tr>
-<tr>
-<td>5</td>
-<td><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a></td>
-<td>$\exp(\pm i\tau\varpi - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$</td>
-<td>the kernel's two helicities; $\pm\tau\varpi$ is real damping</td>
-</tr>
-</tbody>
-</table></div>
-<p>5 articles.</p>
-<h3 id="2-no-math453-at-all">2. No $i$ at all</h3>
+<p>Every form in the thirteen tables carries the factor $i$. Each exponent is quoted one component per exponential: a real damping stands in an exponential of its own beside the phase, so every quoted exponential is either a pure phase or a real weight. Eleven rows carry a real part, and the $i$ alone does not identify them: the argument is evaluated, not read. Eight are boosts, whose argument squares positive, so the exponential has a real $\cosh$ and grows. One article writes a real weight with no $i$ at all. Two write a phase that is real on their own convention. The 226 purely imaginary articles are in the thirteen tables above and are not repeated here; a unitary phase, a Hermitian generator and a centred rotation all stay in those tables, because their exponential does not grow.</p>
+<h3 id="1-no-math449-at-all">1. No $i$ at all</h3>
 <p>One article writes a real exponential and no phase. It is named in the exclusion list at the end of this article and repeated here so the count is in one place.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -1905,274 +1860,84 @@
 </tbody>
 </table></div>
 <p>1 article.</p>
-<h3 id="3-the-exponent-is-not-a-number">3. The exponent is not a number</h3>
-<p>In these rows the exponential is defined by its series, so the question of an imaginary part does not apply. The argument is a generator, an operator, or a bivector of the algebra. This is the largest group: 42 articles.</p>
+<h3 id="2-the-boost-rows-a-real-math452-part">2. The boost rows: a real $\cosh$ part</h3>
+<p>An $i$ at the front of an exponent decides nothing. The sign of the square of the argument decides. In this algebra a unit pure quaternion satisfies $\vec u^2=-e_t$, so</p>
+<p>$$
+X^2=-\alpha^2e_t\ \Longrightarrow\ \exp X=\cos\alpha\,e_t+\sin\alpha\,\vec u,\qquad
+X^2=+\alpha^2e_t\ \Longrightarrow\ \exp X=\cosh\alpha\,e_t+i\sinh\alpha\,\vec u .
+$$</p>
+<p>The first is a turn: bounded, modulus one, no real growth. The second is a boost: a real scalar part of at least one, and the $i$ confined to the bivector term. Putting an $i$ in front of a real multiple of $\vec u$ flips the sign, so it converts the turn into the growth. An $i$ in front of a central element, or in front of a Hermitian operator, does not: there the exponential stays unitary, and those articles stay in the thirteen tables above. Only the eight boosts are listed here, because only they carry a real part.</p>
+<h4 id="eight-articles-all-a-boost">Eight articles, all a boost</h4>
+<p>These eight rows are not imaginary exponentials. Their argument squares positive, and the exponential carries a real scalar part that grows. The articles now write the pair at the exponential.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>#</th>
 <th>Article</th>
-<th>The exponential as written</th>
-<th>What sits in the exponent</th>
+<th>The exponential, evaluated</th>
+<th>The square that decides</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
 <td><a href="../articles_physics/the-exponential-word-and-its-boundary.html">The Exponential Word and Its Boundary</a></td>
-<td>$e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
-<td>a bivector generator, a rapidity over two</td>
+<td>$\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$</td>
+<td>$\vec u_{\mathrm b}^2=-e_t$, so the square is $+\theta_{\mathrm{rpd}}^2/4$</td>
 </tr>
 <tr>
 <td>2</td>
 <td><a href="../articles_physics/the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a></td>
-<td>$e^{i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2}$</td>
-<td>the same rotor at the massless boundary</td>
+<td>$\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$</td>
+<td>the same square at the massless boundary</td>
 </tr>
 <tr>
 <td>3</td>
 <td><a href="../articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a></td>
-<td>$\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
-<td>the boost factor of the polar word</td>
+<td>$\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$</td>
+<td>the same square, the boost factor of the polar word</td>
 </tr>
 <tr>
 <td>4</td>
 <td><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a></td>
-<td>$e^{-i\theta_{\mathrm{rpd}}\vec u_p}$</td>
-<td>a rotor about the pairing axis</td>
+<td>$\mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p$</td>
+<td>the full rapidity, not the half; the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}}$ are this scalar part read on the axis</td>
 </tr>
 <tr>
 <td>5</td>
 <td><a href="../articles_physics/the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a></td>
-<td>$\exp(i\tfrac{\tilde{Ξ}_{\mathrm{sp},w}}{2}\vec u_{\mathrm b})$</td>
-<td>a weighted spinor phase as the rotor angle</td>
+<td>$\exp(i\tfrac{\tilde{Ξ}_{w}}{2}\vec u_{\mathrm b})=\cosh\tfrac{\tilde{Ξ}_{w}}{2}\,e_t+i\sinh\tfrac{\tilde{Ξ}_{w}}{2}\,\vec u_{\mathrm b}$</td>
+<td>$\vec u_{\mathrm b}^2=-e_t$ with $\tilde{Ξ}_{w}$ real</td>
 </tr>
 <tr>
 <td>6</td>
-<td><a href="../articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a></td>
-<td>$e^{i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}/2}$</td>
-<td>the spinor phase turned into a rotor</td>
+<td><a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a></td>
+<td>$\exp(\tfrac{\theta_{\mathrm{rpd}}}{2}i\vec u)=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec U$</td>
+<td>the exponent set is $i\mathbb{R}^3$, so every argument squares positive</td>
 </tr>
 <tr>
 <td>7</td>
-<td><a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html">The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</a></td>
-<td>$\exp(\tfrac{\theta_{\mathrm{rpd}}}{2}i\vec u)$</td>
-<td>the half-angle written before the $i$</td>
+<td><a href="../articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.html">The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</a></td>
+<td>$\exp(\tfrac{\tilde{Ξ}}{2}i\vec u_{\mathrm b})=\cosh\tfrac{\tilde{Ξ}}{2}\,e_t+\sinh\tfrac{\tilde{Ξ}}{2}\,\vec U$</td>
+<td>the Hermitian axis $\vec U=i\vec u_{\mathrm b}$ has $\vec U^2=+e_t$</td>
 </tr>
 <tr>
 <td>8</td>
-<td><a href="../articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.html">The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</a></td>
-<td>$\exp((\tilde{Ξ}_{\mathrm{sp}}/2)\,i\vec u_{\mathrm b})$</td>
-<td>the Wigner angle as a rotor argument</td>
-</tr>
-<tr>
-<td>9</td>
 <td><a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a></td>
-<td>$\exp((\theta_{\mathrm{rpd}}/2)\,i\vec u)$</td>
-<td>rapidity over two along a direction</td>
-</tr>
-<tr>
-<td>10</td>
-<td><a href="../articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a></td>
-<td>$\exp(i\vec u\theta_{\mathrm{stk}}/2)$</td>
-<td>the Stokes angle on the polarization sphere</td>
-</tr>
-<tr>
-<td>11</td>
-<td><a href="../articles_physics/the-polar-form-of-the-coupled-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Coupled Dirac Equation in Biquaternionic Form</a></td>
-<td>$\exp(\frac{ iϙ\Gamma}{\hbar})$</td>
-<td>the gauge function $\Gamma$, a bivector, not a number</td>
-</tr>
-<tr>
-<td>12</td>
-<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
-<td>$e^{\frac{i}{\hbar}\Gamma b}$</td>
-<td>the axial parameter times the gauge bivector</td>
-</tr>
-<tr>
-<td>13</td>
-<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$</td>
-<td>the gauge bivector times the charge operator</td>
-</tr>
-<tr>
-<td>14</td>
-<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the group element of the orbit</td>
-</tr>
-<tr>
-<td>15</td>
-<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></td>
-<td>$\exp(i\kappa\Gamma)$</td>
-<td>the non-abelian element, algebra in the exponent</td>
-</tr>
-<tr>
-<td>16</td>
-<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the element whose derivative is the connection</td>
-</tr>
-<tr>
-<td>17</td>
-<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the local element, and its charged form</td>
-</tr>
-<tr>
-<td>18</td>
-<td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the element that absorbs the Goldstone phase</td>
-</tr>
-<tr>
-<td>19</td>
-<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the same element in the mechanism's own article</td>
-</tr>
-<tr>
-<td>20</td>
-<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the gauge element of the bound-state problem</td>
-</tr>
-<tr>
-<td>21</td>
-<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
-<td>$\exp(\frac{2\,i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the element and its double on the bilinear</td>
-</tr>
-<tr>
-<td>22</td>
-<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
-<td>the element dressed on the external field</td>
-</tr>
-<tr>
-<td>23</td>
-<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
-<td>$\exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$</td>
-<td>the element of the assembled model</td>
-</tr>
-<tr>
-<td>24</td>
-<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the Rho Parameter in Biquaternionic Form</a></td>
-<td>$\exp(\,i\beta T_3^{R})$</td>
-<td>a generator of the custodial rotation</td>
-</tr>
-<tr>
-<td>25</td>
-<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
-<td>$\exp(i\alpha\Gamma)$</td>
-<td>the chirality $\Gamma$, a right action of the algebra, not a scalar</td>
-</tr>
-<tr>
-<td>26</td>
-<td><a href="../articles_physics/the-polar-form-of-the-schrodinger-equation-in-biquaternionic-form.html">The Polar Form of the Schrödinger Equation in Biquaternionic Form</a></td>
-<td>$\exp(-i\tilde H_\Psi t'/\hbar)$</td>
-<td>the Hamiltonian biquaternion times the interval</td>
-</tr>
-<tr>
-<td>27</td>
-<td><a href="../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a></td>
-<td>$e^{-i\tilde H_\Psi t}$</td>
-<td>the operator, not one of its eigenvalues</td>
-</tr>
-<tr>
-<td>28</td>
-<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
-<td>$\exp(-i\tilde H_\Psi r'_t/\hbar\,c)$</td>
-<td>the central Hamiltonian over $\hbar c$</td>
-</tr>
-<tr>
-<td>29</td>
-<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
-<td>$\exp(-i\tilde H_\Psi\tau)$</td>
-<td>the interaction-time evolution</td>
-</tr>
-<tr>
-<td>30</td>
-<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a></td>
-<td>$\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)$</td>
-<td>the modular operator along the flow</td>
-</tr>
-<tr>
-<td>31</td>
-<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a></td>
-<td>$\exp(-i\tilde H_{\Psi,\mathrm{modular}}r'_t)$</td>
-<td>the same flow, defined here</td>
-</tr>
-<tr>
-<td>32</td>
-<td><a href="../articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a></td>
-<td>$\exp(-i\theta\tilde H_\Psi)$</td>
-<td>the operator at an angle, inside the trace</td>
-</tr>
-<tr>
-<td>33</td>
-<td><a href="../articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-independence-not-a-defect.html">The Biquaternion Framework and the Canonical Commutation Relation: Independence, Not a Defect</a></td>
-<td>$\exp(i\alpha Q)$</td>
-<td>the displacement generator $Q$</td>
-</tr>
-<tr>
-<td>34</td>
-<td><a href="../articles_physics/bogoliubov-transformations-in-biquaternionic-form.html">Bogoliubov Transformations in Biquaternionic Form</a></td>
-<td>$\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_-)$</td>
-<td>a projector, $\tilde\Pi_-^2=\tilde\Pi_-$, not a generator</td>
-</tr>
-<tr>
-<td>35</td>
-<td><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a></td>
-<td>$\exp(-\frac{i\,\xi\,r'_{t}\,\tilde{S}_{\Psi,\mathrm{tot},3}^{2}}{\hbar^{2}})$</td>
-<td>the squared total spin</td>
-</tr>
-<tr>
-<td>36</td>
-<td><a href="../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a></td>
-<td>$\exp(-\frac{i\,\theta\,\vec u_{\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}}{\hbar})$</td>
-<td>a spin operator along an axis</td>
-</tr>
-<tr>
-<td>37</td>
-<td><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a></td>
-<td>$\exp(-\frac{i\,\theta\,\vec u\,\vec S}{\hbar})$</td>
-<td>the spin operator projected on a direction</td>
-</tr>
-<tr>
-<td>38</td>
-<td><a href="../articles_physics/spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form.html">Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</a></td>
-<td>$\exp(-i\beta\,\vec u\cdot\vec F)$</td>
-<td>a spin-1 generator along the direction</td>
-</tr>
-<tr>
-<td>39</td>
-<td><a href="../articles_physics/kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html">Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form</a></td>
-<td>$\exp(i\theta\,\vec u\cdot\boldsymbol\sigma/2)$</td>
-<td>the Pauli vector, half-angle</td>
-</tr>
-<tr>
-<td>40</td>
-<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html">Squeezing Beyond the Biquaternion Algebra</a></td>
-<td>$\exp(\,i\alpha\sigma_1/2)$</td>
-<td>a Pauli matrix in the exponent</td>
-</tr>
-<tr>
-<td>41</td>
-<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
-<td>$\exp(i\theta J)$</td>
-<td>the generator $J$, the versor convention</td>
-</tr>
-<tr>
-<td>42</td>
-<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html">Maxwell's Theory on Non-Commutative Spaces and Quaternions</a></td>
-<td>$\exp(\tfrac{i}{2}\kappa_{\mu\nu}\partial/\partial x_\mu\,\partial/\partial x_{2\nu})$</td>
-<td>a differential operator in the Moyal factor</td>
+<td>$\exp(\tfrac{\theta_{\mathrm{rpd}}}{2}i\vec u)=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec U$</td>
+<td>rapidity over two, along a direction, on the same Hermitian axis</td>
 </tr>
 </tbody>
 </table></div>
-<p>42 articles.</p>
-<h3 id="4-written-with-math505-real-on-the-articles-own-convention">4. Written with $i$, real on the article's own convention</h3>
+<p>In each of them the earlier gloss, "a bivector generator, a rapidity over two", named the argument and never evaluated it. The evaluation is a growth, and the articles now state it. The rotor beside the boost is the opposite case and stays in the main tables: it has no $i$ in front, its argument squares negative, and its exponential turns.</p>
+<h4 id="three-quotations-corrected-one-row-removed">Three quotations corrected, one row removed</h4>
+<p>Four entries of the earlier version were wrong, and none of them was wrong about the arithmetic.</p>
+<ul>
+<li>Rows 5, 6 and 8 quoted $\tilde{Ξ}_{\mathrm{sp}}$, a subscript the corpus no longer carries. Row 5 is re-quoted from the article's current text as $\tilde{Ξ}_{w}$, and row 8 as $\tilde{Ξ}$.</li>
+<li><em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> has no boost exponential at all. It writes $\exp(iS/\hbar)$ and its continued form $\exp(-S_E/\hbar)$, which is a real weight and belongs with the real exponentials. The row is removed from this section.</li>
+</ul>
+<p>Eight rows remain in this section, and every one is a boost. The removed row is the Wick rotation, whose exponential is a real weight.</p>
+<h3 id="3-written-with-math482-real-on-the-articles-own-convention">3. Written with $i$, real on the article's own convention</h3>
 <p>The Matsubara factor is written $\exp(i\omega_n\tau)$ with $\tau$ the imaginary time, so the exponent is real in the convention the article uses and imaginary if $\tau$ is read as a real interval. The 2 articles that lean on this reading are listed, with the caveat that they depend on it.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -2199,7 +1964,7 @@
 </tbody>
 </table></div>
 <p>2 articles.</p>
-<p>The remaining 186 articles of the main tables write a scalar phase, $i$ times a real number, and the exponent is purely imaginary there.</p>
+<p>The remaining 192 articles of the main tables write a scalar phase, $i$ times a real number, and the exponent is purely imaginary there.</p>
 <h2 id="expressions-reviewed">Expressions Reviewed</h2>
 <p>Six forms were held up for inspection. Three were repaired in the article, and the tables quote the repaired text. Three were checked and left alone. The repair is a correction of the corpus, so this file and the corpus agree.</p>
 <h3 id="repaired-in-the-article">Repaired in the article</h3>
@@ -2238,6 +2003,57 @@
 </tbody>
 </table></div>
 <p>The <em>Before</em> column quotes text the article no longer contains. It is kept so the change is visible. Every other quoted form in this file is the article's current text, and the table rows of the thirteen categories were regenerated from the repaired files.</p>
+<h3 id="the-boost-factors-written-out">The boost factors written out</h3>
+<p>Six articles wrote the boost as a bare exponential and left the reader to expand it. The eight rows of the boost table are evaluated there; these six have the evaluation in the text as well. No value changed, and no exponent changed. What the text adds is the pair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Article</th>
+<th>What the exponential holds</th>
+<th>What the text now states</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="../articles_physics/the-exponential-word-and-its-boundary.html">The Exponential Word and Its Boundary</a></td>
+<td>$\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
+<td>$\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$, with the square $+\theta_{\mathrm{rpd}}^2/4$</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="../articles_physics/the-massless-limit-as-a-boundary-value-of-the-polar-word.html">The Massless Limit as a Boundary Value of the Polar Word</a></td>
+<td>$\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
+<td>the same pair, and the statement that the factor grows</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="../articles_physics/the-polar-form-of-the-dirac-equation-in-biquaternionic-form.html">The Polar Form of the Dirac Equation in Biquaternionic Form</a></td>
+<td>$\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
+<td>the same pair, beside the rotor that turns instead</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a></td>
+<td>$e^{-i\theta_{\mathrm{rpd}}\vec u_p}$</td>
+<td>$\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p$, tied to the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="../articles_physics/the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a></td>
+<td>$\exp(i\tfrac{\tilde{Ξ}_{w}}{2}\vec u_{\mathrm b})$</td>
+<td>the pair, and that the same glyph covers a growth and a turn</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="../articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.html">The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</a></td>
+<td>$\exp(\tfrac{\tilde{Ξ}}{2}i\vec u_{\mathrm b})$</td>
+<td>the pair on the Hermitian axis $\vec U^2=+e_t$, and that the scalar part is $\cosh(\tilde{Ξ}/2)$, not one</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two articles of the eight needed no patch. <em>The Two-Sheeted Cover</em> and <em>Velocity Space</em> already carry $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u$ at the display that defines the boost.</p>
 <h3 id="checked-and-left-as-written">Checked and left as written</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -2343,11 +2159,11 @@
 </table></div>
 <p>The total equals the number of files in <code>articles_physics</code> that contain at least one imaginary exponential. Every such file appears exactly once. The section on exponents that are not purely imaginary reuses these articles, with one exception: the replica-trick article has a real exponential only and appears in that section alone.</p>
 <h2 id="what-is-not-in-the-list">What Is Not in the List</h2>
-<p>Three exclusions, each deliberate.</p>
+<p>Two exclusions, each deliberate, and one treatment that keeps a row in the list.</p>
 <ul>
 <li><strong>No imaginary exponential at all.</strong> 235 of the 471 files contain none. Examples are the quantum stress tensor, the spin fluid, one-dimensional scattering, and gravitational waves, which are written with derivatives and pairings only. An article with no exponential has no wave form to tabulate.</li>
 <li><strong>A real exponential only.</strong> One article, <em>Entanglement Entropy and the Replica Trick</em>, writes $\exp(-\varepsilon_i)$ with a real argument. It is a Boltzmann-like weight, not a phase, and it is the only exponential in the file.</li>
-<li><strong>A real damping inside an imaginary phase.</strong> Several rows show an exponent with both parts. The audit quotes them where they stand, under the section of their imaginary part, because the real part is what makes the imaginary part readable. The superluminal case writes $\exp(-k[a_0-i(r_z\cos\theta_{\mathrm{axc}}-r'_t)])$. The twistor article writes $\exp(\pm\tau\sqrt{\|H\|^2-\|\vec\zeta-E\|^2} - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$, with the norm bars as the article writes them.</li>
+<li><strong>A real damping beside an imaginary phase, kept and split.</strong> Some articles write one exponential whose exponent carries both parts. The audit separates it into one exponential per component, the imaginary factor first and the real factor just after, so no quoted exponential mixes the two. The superluminal case is written $\exp(-k[a_0-i(r_z\cos\theta_{\mathrm{axc}}-r'_t)])$ in the article and quoted as $\exp(ik(r_z\cos\theta_{\mathrm{axc}}-r'_t))$, $\exp(-k a_0)$; the twistor kernel is written $\exp(\pm i\tau\varpi - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec\zeta))$ and quoted as two factors.</li>
 </ul>
 <p>A fourth class is included rather than excluded: articles where the exponential multiplies a state and cancels from every bilinear. Their phases are still written in the exponent, and the last table keeps them visible.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

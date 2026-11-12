@@ -241,19 +241,15 @@ Q_1+Q_2=(Q_{1\blacktriangle}+Q_{2\blacktriangle},\,Q_{1\blacktriangledown}+Q_{2\
 $$
 and a form on two points is written with two arguments, $H(Q_1,Q_2)$, as <em>Product and Form Conventions</em>, §<em>The Form Convention</em> requires.</p>
 <p><strong>A point of the space is not written $z$.</strong> The articles of the Duo-Complex Numbers category write a point as $Q$ and do not use $z$ for it, in agreement with <em>Several Complex Variables</em>, which writes a point of $\mathbb{C}^n$ as $Q$. The glyph of the point and the glyph of the complex element are the same, and the pair tells them apart: a bare $Q$ with no triangle is the complex number $Q=q+iq'$, and a point is always written as the pair.</p>
-<h2 id="the-angle-and-its-two-cases">The Angle and Its Two Cases</h2>
-<p><strong>The case names the field of the angle, as it names the scalar sector of an element.</strong> A real angle is $\theta$ and a complex angle is $\Theta$: one letter, two cases, the same rule that writes $q$ real and $Q$ complex.</p>
+<h2 id="the-angle">The Angle</h2>
+<p><strong>An angle is real, and it is written $\theta$.</strong> A rotation enters the algebra as $\exp(i\theta)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ therefore carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.</p>
+<p><strong>An imaginary angle is written $i\theta$ where it is used.</strong> A boost is the rotation at an imaginary argument: the same $\exp(i\theta)$ at $\theta=i\theta_{\mathrm{rpd}}$ is $\exp(-\theta_{\mathrm{rpd}})$. The $i$ stands at the point of substitution and $\theta_{\mathrm{rpd}}$ stays real and subscripted. A purely imaginary angle is never a glyph of its own; it is $i$ times a real one.</p>
+<p><strong>The circle and the hyperbola are one formula at two arguments.</strong></p>
 <p>$$
-\Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
+\cos(i\theta)=\cosh\theta,\qquad \sin(i\theta)=i\sinh\theta .
 $$</p>
-<p><strong>The prime marks the slot that carries the $i$</strong>, exactly as in $Q=q+iq'$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are the same angle read at a real and at an imaginary argument, and neither is a new kind of object.</p>
-<p><strong>The circle and the hyperbola are the two cases.</strong> With $\Theta=\theta+i\theta'$,</p>
-<p>$$
-\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad
-\sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.
-$$</p>
-<p>At $\theta'=0$ the pair reduces to $\cos\theta$ and $\sin\theta$, the rotation; at $\theta=0$ it reduces to $\cosh\theta'$ and $i\sinh\theta'$, the boost. A rotation is the real case and a boost is the pure imaginary case, and the letter keeps its case through the analytic continuation.</p>
-<p><strong>Neither glyph carries a second role.</strong> The uses that once shared the letter have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.</p>
+<p>At the real argument the pair is the rotation and at the imaginary argument the boost. The formula does not change; only the value put in the slot changes.</p>
+<p><strong>The letter carries no second role.</strong> The uses that once shared it have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.</p>
 <h2 id="the-remarkable-subspaces-of-biquaternions">The Remarkable Subspaces of Biquaternions</h2>
 <p>The eight real parameters of a general element group into <strong>remarkable subspaces</strong>: the centre, the vector subspace, the quaternion and antiquaternion halves, and the Hermitian and anti-Hermitian halves. Each is cut out by a conjugation:</p>
 <div class="table-scroll"><table>
@@ -449,7 +445,7 @@ $$</p>
 <p>The base is written with the letter $e$, one unit to a direction: the scalar unit $e_t=1$ and the three vector units $\vec e_x,\vec e_y,\vec e_z$. A generic element is $\tilde Q=\sum_{\mu}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, a coefficient carrying the name of the direction it multiplies and an element a number. The <strong>case</strong> records whether the scalar sector is larger than the reals and the <strong>tilde</strong> the presence of the quaternionic factor, and the two are read independently: $q$ is real, $Q$ complex, split-complex or dual, $\breve Q$ reduced biquaternion, $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion. A matrix and an array carry no tilde.</p>
 <p>The biquaternion algebra splits into the centre $\mathbb{B}_{C}$ and the vector subspace $\mathbb{B}_{V}$, the fixed and anti-fixed spaces of the intrinsic conjugate; into the quaternion and antiquaternion subspaces $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$, the real and imaginary halves; and into the Hermitian and anti-Hermitian subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the fixed and anti-fixed spaces of the star. A pure element carries the arrow and no tilde, and the arrow takes priority where the two marks could fall on one glyph.</p>
 <p>The biquaternion algebra carries three involutions — the coefficient bar, the quaternion sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ — and the reversal ${}^{\flat}=-{}^{*}$ beside them. Which of the marks has a sense depends on the layer, since a mark degenerates wherever the structure it conjugates is absent: the complex, split-complex and dual layers keep the bar, the quaternion and split-quaternion layers the quaternion sign, and the reduced biquaternion layer the bar, the tessarine sign and the star.</p>
-<p>The angle follows the same rule as the element: one letter in two cases, $\theta$ real and $\Theta=\theta+i\theta'$ complex, so that a rotation and a boost are the real and the pure imaginary readings of one symbol. This article is the reference for the element, the subspaces and the marks. The products and forms, the norms, the special elements, the frames, the representations, the calculus, the operator families and the indices are the subjects of the eight companions, and the table below is the index of the glyphs they share.</p>
+<p>The angle follows its own rule rather than the element's: it is real, $\theta$, and the $i$ of a rotation sits in the exponential, so a rotation and a boost are the same formula at a real and at an imaginary argument. This article is the reference for the element, the subspaces and the marks. The products and forms, the norms, the special elements, the frames, the representations, the calculus, the operator families and the indices are the subjects of the eight companions, and the table below is the index of the glyphs they share.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <p>The conventions below are those used throughout the corpus.</p>
 <div class="table-scroll"><table>
@@ -505,8 +501,8 @@ $$</p>
 <td>The scalar sector is the reals, or larger than the reals</td>
 </tr>
 <tr>
-<td>$\theta$; $\Theta=\theta+i\theta'$</td>
-<td>The generic real angle, and the generic complex angle with real part $\theta$ and imaginary part $\theta'$; the case is the field of the angle (§<em>The Angle and Its Two Cases</em>)</td>
+<td>$\theta$; $i\theta_{\mathrm{rpd}}$</td>
+<td>The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use, and the $\theta$ inside stays real (§<em>The Angle</em>)</td>
 </tr>
 <tr>
 <td>Tilde</td>
