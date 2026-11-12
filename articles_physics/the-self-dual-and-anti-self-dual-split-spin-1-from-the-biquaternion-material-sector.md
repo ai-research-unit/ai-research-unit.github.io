@@ -21,7 +21,15 @@ $$
 \tilde{F} = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.
+with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}_{\Phi}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}_{\mathrm{lor}}\tilde{Q}\tilde{U}_{\mathrm{lor}}^{*}$, and the material interval is $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$.
+
+The companion articles, and what each supplies, are the following.
+
+- *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants.
+- *Maxwell's Equations in the Biquaternionic Formulation*, for the potential biquaternion, the field strength and the gauge structure of the massless case.
+- *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its conjugate and the Lorentz action on the defining module.
+- *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, for the explicit construction of the spin-one triplet from the adjoint action: the generators, the commutators, the Casimir and the weight basis.
+- *The Photon in Biquaternionic Form*, for the massless helicity states and the circular polarization basis.
 
 ## Integer Spin and the Representation It Needs
 
@@ -58,7 +66,7 @@ $$
 a complex vector space of dimension three, equivalently a real vector space of dimension six with basis $\{\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z\}$. The same six real basis elements are the six bivectors of the Clifford algebra $\mathrm{Cl}_{1,3}$: the three spatial rotation generators are the images of $\vec e_\eta$, and the three boost generators are the images of $i\vec e_\eta$. The real vector part is therefore at once
 
 - the space of real antisymmetric tensors, that is, of bivectors and of field strengths, through the identification of a complex three-vector with the pair $(\vec E,\vec B)$; and
-- the Lorentz Lie algebra $\mathrm{SO}(1,3)$ of rotations and boosts, with the commutator bracket.
+- the Lorentz Lie algebra $\mathfrak{so}(1,3)$ of rotations and boosts, with the commutator bracket.
 
 That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $i r'_t$ convention the four-vector space is the material sector. The material sector $\mathbb{B}_{\Phi}$ is the four-dimensional real subspace spanned by $ie_t, \vec e_x, \vec e_y, \vec e_z$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.
 
@@ -88,9 +96,7 @@ $$
 \star(\vec E,\vec B) = \left(c\vec B, -\frac{\vec E}{c}\right), \qquad \star^2 = -1 ,
 $$
 
-which is the $\theta_{\mathrm{dua}} = \pi/2$ case of the duality rotation used in the companion article on the field-strength biquaternion and its invariants. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
-
-Here $\theta_{\mathrm{dua}}$ is the duality angle: the Riemann--Silberstein vector $\vec E+i\,c\vec B$ is complex, and the angle is its argument, so it is real.
+which is the $\theta_{\mathrm{dua}} = \pi/2$ case of the duality rotation used in the companion article on the field-strength biquaternion and its invariants, at the real duality angle $\theta_{\mathrm{dua}}$. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
 
 $$
 \star\vec N = -i\vec N,
@@ -160,7 +166,7 @@ $$
 
 and they decompose the complexified vector part into two three-dimensional complex spaces. Following the companion article's convention, the $\tilde\Pi_{sd}$ space, on which $\star = -i$, is the **self-dual** half, and the $\tilde\Pi_{asd}$ space, on which $\star = +i$, is the **anti-self-dual** half. Each is a copy of the representation $(1,0)$, respectively $(0,1)$, of the Lorentz group.
 
-The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{V}$, of complex dimension six. On it, $\star$ has the two three-dimensional eigenspaces above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
+The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, the $i$ of the projectors, which is distinct from the algebra's $i$ in $\star\tilde{F}=-i\tilde{F}$, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{V}$, of complex dimension six. On it, $\star$ has the two three-dimensional eigenspaces above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
 
 $$
 \vec N = \vec E+ic\,\vec B, \qquad \vec N^* = \vec E-ic\,\vec B,
@@ -232,7 +238,7 @@ $$
 \mathrm{sym}^2(S) \cong (1,0), \qquad \dim_{\mathbb{C}}\mathrm{sym}^2(S) = 3,
 $$
 
-and the symmetric square of the conjugate module is $(0,1)$. The self-dual half of the field strength is therefore a symmetric two-spinor, and the anti-self-dual half is a symmetric two-spinor of the conjugate type. The carrier of the split is the symmetric square of the defining module, which is a representation of the Lorentz group but **not** a module over $\mathbb{B}$ — a point taken up in the closing section.
+and the symmetric square of the conjugate module is $(0,1)$. The self-dual half of the field strength is therefore a symmetric two-spinor, and the anti-self-dual half is a symmetric two-spinor of the conjugate type. The carrier of the split is the pair of symmetric squares, which are representations of the Lorentz group but **not** modules over $\mathbb{B}$ — a point taken up in the closing section.
 
 ## Duality, Helicity, and the Two Halves
 
@@ -261,13 +267,15 @@ so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $
 
 The split has been constructed on the vector part of the algebra, and the closing observation is that this is the correct location and not an accident. Three statements hold.
 
-First, the carrier of the split is **not a module** over $\mathbb{B}$. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its only simple module is the two-dimensional spinor module $S$, and every finite-dimensional module over it is a direct sum of copies of $S$. The vector part is not such a sum: it is not closed under left multiplication by a general element of $\mathbb{B}$, only under multiplication by central scalars and by the adjoint action. The self-dual half is the symmetric square of the defining module, of complex dimension three, and no module over a full matrix algebra has odd complex dimension. The split therefore lives in the **tensor** category generated by the defining module and its conjugate, not in the module category of the algebra.
+First, the carrier of the split is **not a module** over $\mathbb{B}$. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its only simple module is the two-dimensional spinor module $S$, and every finite-dimensional module over it is a direct sum of copies of $S$. The vector part is not such a sum: it is not closed under left multiplication by a general element of $\mathbb{B}$, only under multiplication by central scalars and by the adjoint action. The self-dual half is the symmetric square of the defining module, of complex dimension three, and no module over $M_2(\mathbb{C})$ has odd complex dimension. The split therefore lives in the **tensor** category generated by the defining module and its conjugate, not in the module category of the algebra.
 
 Second, the four-vector representation from which the two-form was built is itself carried by the algebra by **conjugation**, not by multiplication, and the same remark applies to it: $\mathbb{B}_{\Phi}$ is a real form of the $(\tfrac12,\tfrac12)$ representation, and it is not a module over $\mathbb{B}$ either. The integer-spin representations of the framework are all of this kind.
 
-Third, the adjoint action of the algebra on itself exhibits the spin-one algebra directly. The inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}a$, with $\mathrm{ad}_{\vec e_\eta}a(\tilde{Q}) = [\vec e_\eta,\tilde{Q}]$, are a basis of the rotation algebra inside the traceless part, and they preserve the two real triples $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, acting on each as an irreducible three-dimensional angular momentum: for instance $D_1(\vec e_y)=\vec e_z$ and $D_1(\vec e_z)=-\vec e_y$, and the same relations hold with $\vec e_\eta$ replaced by $i\vec e_\eta$ throughout. The six-dimensional real vector part, read as a Lie algebra rather than as a field-strength space, therefore splits under its own rotation subalgebra into two spin-one triples, one per chirality. That is the Lie-algebra form of the same statement that the Hodge dual makes about the field strength, and the structural reason the two descriptions agree is that both are the antisymmetric square of the material sector.
+Third, the adjoint action of the algebra on itself exhibits the spin-one algebra directly. The inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}a$, with $\mathrm{ad}_{\vec e_\eta}a(\tilde{Q}) = [\vec e_\eta,\tilde{Q}]$, are the adjoint action of a basis of the rotation algebra, which sits inside the traceless part, and they preserve the two real triples $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, acting on each as an irreducible three-dimensional angular momentum: for instance $D_1(\vec e_y)=\vec e_z$ and $D_1(\vec e_z)=-\vec e_y$, and the same relations hold with $\vec e_\eta$ replaced by $i\vec e_\eta$ throughout. The six-dimensional real vector part, read as a Lie algebra rather than as a field-strength space, therefore splits under its own rotation subalgebra into the compact rotation triple and the hyperbolic boost triple, each a real three-dimensional irreducible. These are the rotation and boost generators, not the self-dual and anti-self-dual halves: the chiral halves are the complex eigenspaces of the Hodge dual, they mix the two triples, and they appear only after the external complexification that the projectors require. The structural reason the same space carries both descriptions is that the field-strength space and the Lorentz Lie algebra are both the antisymmetric square of the material sector.
 
-The general statement that these observations point to — that the algebra's own module category contains only spin one-half, with the scalar carried by the centre and the vector by the adjoint, and that spin above one arrives through tensor products of the defining module — is the subject of the final article of this subcategory, which uses the explicit spin-one and spin-$\tfrac32$ cases constructed here and in its two companions.
+The explicit construction of the triplet, with the commutators, the Casimir and the weight basis, is in *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*. The module-theoretic form, with the adjoint module split into its scalar and spin-one summands and with the nilpotent highest-weight vector, is in *Angular Momentum and Spin in the Biquaternion Algebra*.
+
+The general statement that these observations point to — that the algebra's own module category contains only spin one-half, with the scalar carried by the centre and the vector by the adjoint, and that spin above one arrives through tensor products of the defining module — is the subject of the final article of this subcategory, which uses the explicit spin-one case constructed here and the spin-$\tfrac32$ case constructed in *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*.
 
 ### The reality obstruction
 
@@ -276,12 +284,6 @@ A real field strength is never an eigenform of the dual, and the reason is a cou
 The consequence for the split is a statement about what has been decomposed. The projectors $\tilde\Pi_{sd,asd}$ act on the complexified vector part, so the two halves are the halves of a **complex** field. A real field strength lies in neither half, and the two halves appear separately only after complexification, as the two circular polarizations of a plane wave. The split is therefore a decomposition and never a condition that a real field could be asked to satisfy.
 
 Any scheme that imposes self-duality as an equation must consequently take its field outside the material sector $\mathbb{B}_{\Phi}$. The external algebrodynamical programme does exactly this: its field is $\mathbb{C}$-valued throughout, the duality-purity condition $\vec N=0$ — the anti-self-dual sign in this article's naming — is imposed on that complex field, and the ordinary real field is read off from it by $\Im\vec H=\Re\vec E$, $\Im\vec E=-\Re\vec H$. The Coulomb solution of *The Algebrodynamical Programme* shows the pattern ($\vec E$ real, $\vec H$ purely imaginary) and *The Complex Potential of a Self-Dual Maxwell Field* states the general relation with the potential that generates it. No result of that programme transfers to the corpus's real Maxwell field without this step, and the step is a change of carrier, not a gauge choice.
-
-The conventions of the construction are those of three companion articles:
-
-- Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants.
-- Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential biquaternion, the field strength, and the gauge structure of the massless case.
-- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its conjugate, and the Lorentz action on the defining module.
 
 ## Summary
 
@@ -318,10 +320,15 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\vec E\pm ic\vec B=0$ | Duality-purity; unavailable to a real field, where it forces $\vec E=\vec B=0$ |
 | $(1,0)$, $(0,1)$ | The two three-dimensional complex Lorentz representations |
 | $S$ | Defining (spinor) module, $\mathrm{sym}^2(S)\cong(1,0)$ |
-| $\tilde{U}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{U}\tilde{U}^{\natural}=e_t$ |
+| $\tilde{U}_{\mathrm{lor}}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{U}_{\mathrm{lor}}\tilde{U}_{\mathrm{lor}}^{\natural}=e_t$ |
 
 ## Further Reading
 
+- [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the adjoint module, the spins zero and one, the Casimir and the nilpotent highest-weight vector.
+- [The Tensor Square of $\mathbb{C}^2$](../articles_maths/the-tensor-square-of-c2.html), for $\mathrm{sym}^2\mathbb{C}^2$ as the spin-one representation of dimension three and $\Lambda^2\mathbb{C}^2$ as the scalar.
+- [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the $(m,n)$ classification, the adjoint representation $(1,0)\oplus(0,1)$, and the split of the trace-free part into compact rotation and hyperbolic boost directions.
+- [The Volume Element, Duality and the Hodge Star](../articles_maths/the-volume-element-duality-and-the-hodge-star.html), for $\star A=-iA$ in the biquaternion algebra and the split of the bivectors in the two signatures.
+- [The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$](../articles_maths/the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html), for $\Lambda^2\mathbb{C}^4$ as the Lorentz Lie algebra and its self-dual and anti-self-dual three-spaces.
 - Alexandre Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs", *Journal de Physique et le Radium* 7 (1936) 347–353, for the original massive vector field equation and the third polarization it carries.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field tensor and the two three-dimensional complex representations of the Lorentz group.
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for the complex-vector description of the field and its duality structure.

@@ -904,7 +904,7 @@
 ### Particles of spin 1 and above
 
 <a href="articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a>
-<!-- integer spin and the representation it needs; the carrier inside the algebra; the Hodge dual on the vector part; the self-dual and anti-self-dual split; the spin content of the two halves; duality, helicity and the two halves. -->
+<!-- integer spin and the representation it needs; the carrier inside the algebra; the Hodge dual on the vector part; the self-dual and anti-self-dual split; the spin content of the two halves; duality, helicity and the two halves; where the split lives in the module category, and the reality obstruction that keeps it off a real field. -->
 
 <a href="articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>
 <!-- the standard Proca theory; the biquaternion Proca equation; the Lorenz condition is implied; reduction to the Klein–Gordon equation; plane waves and the three polarizations; the massive field strength and the self-dual split. -->
