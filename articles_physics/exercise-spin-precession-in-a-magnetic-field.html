@@ -100,12 +100,14 @@ $$</p>
 <h3 id="step-3-the-evolution">Step 3: The evolution</h3>
 <p>The evolution operator is</p>
 <p>$$
-T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/(2c)) & 0 \ 0 & \exp(-i\omega_L r'_t/(2c)) \end{pmatrix}.
+T(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(i\theta_{\mathrm{pwt}}/2) & 0 \ 0 & \exp(-i\theta_{\mathrm{pwt}}/2) \end{pmatrix}.
 $$</p>
 <p>The evolved state is</p>
 <p>$$
-|\tilde{Ξ}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/(2c)) \ \exp(-i\omega_L r'_t/(2c)) \end{pmatrix}.
+|\tilde{Ξ}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(i\theta_{\mathrm{pwt}}/2) \ \exp(-i\theta_{\mathrm{pwt}}/2) \end{pmatrix}.
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{pwt}}=\omega r'_t/c$: a real frequency times a real interval over $c$, so the angle is real.</p>
 <h3 id="step-4-the-expectation-value">Step 4: The expectation value</h3>
 <p>The expectation value of $S_x =\frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}(r'_t)\rangle$ is</p>
 <p>$$
@@ -113,7 +115,7 @@ $$</p>
 $$</p>
 <p>Computing the matrix element,</p>
 <p>$$
-\langle\tilde{Ξ}(r'_t)|\sigma_1|\tilde{Ξ}(r'_t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L r'_t/(2c)) \cdot \exp(-i\omega_L r'_t/(2c)) + \exp(\,i\omega_L r'_t/(2c)) \cdot \exp(\,i\omega_L r'_t/(2c))\right) = \frac{1}{2}\left(\exp(-i\omega_L r'_t/c) + \exp(\,i\omega_L r'_t/c)\right) = \cos(\omega_L r'_t/c).
+\langle\tilde{Ξ}(r'_t)|\sigma_1|\tilde{Ξ}(r'_t)\rangle = \frac{1}{2}\left(\exp(-i\theta_{\mathrm{pwt}}/2) \cdot \exp(-i\theta_{\mathrm{pwt}}/2) + \exp(i\theta_{\mathrm{pwt}}/2) \cdot \exp(i\theta_{\mathrm{pwt}}/2)\right) = \frac{1}{2}\left(\exp(-i\theta_{\mathrm{pwt}}) + \exp(i\theta_{\mathrm{pwt}})\right) = \cos(\omega_L r'_t/c).
 $$</p>
 <p>Therefore</p>
 <p>$$
@@ -175,7 +177,8 @@ $$</p>
 <p>The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expected for Larmor precession.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
 <p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.</strong> The observable $\tilde{S}_{\Psi,z} =\frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde H_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z}$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
-<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde H_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
+<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde H_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
+<p>The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.</p>
 <p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.</p>
 <p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec r(r'_t))$ with</p>
 <p>$$
@@ -187,7 +190,7 @@ $$</p>
 \langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$</p>
 <p>whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.</p>
-<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c})$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
+<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
 <h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -280,7 +283,7 @@ $$</p>
 <td>Hamiltonian</td>
 </tr>
 <tr>
-<td>$\tilde{U}(r'_t) = \exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$</td>
+<td>$\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}})$</td>
 <td>Evolution biquaternion</td>
 </tr>
 <tr>

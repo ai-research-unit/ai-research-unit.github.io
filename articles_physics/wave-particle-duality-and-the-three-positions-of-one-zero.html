@@ -84,12 +84,14 @@ $$</p>
 <h3 id="the-symbol-solved-once">The symbol, solved once</h3>
 <p><strong>A mode is a character, and the symbol says whether it solves the equation.</strong> Write the mode</p>
 <p>$$
-\tilde\Xi=\xi\,e^{-i\bigl(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r\bigr)},
+\tilde\Xi=\xi\,e^{-i\theta_{\mathrm{pwp}}},
 $$</p>
 <p>with $\xi$ a fixed element of the state module. The gradient brings down $i\tilde K_\Phi$, and the Klein–Gordon operator brings down its norm, so the equation $\mathcal{P}\tilde\Xi=0$ holds on the mode exactly when</p>
 <p>$$
 \sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}=0 .
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.</p>
 <p>That is the whole of the equation's content on a mode, and the article needs nothing else. The function $\sigma_{\mathcal{P}}$ is a complex number, not an element, because the norm of a quaternion is central; <em>Wave–Particle Duality and the Galilean Limit</em> uses that fact for the degree argument, and this article uses it for a different purpose: <strong>a central symbol has a zero set that is a locus of complex numbers, and a locus of complex numbers can be drawn on a plane.</strong></p>
 <p><strong>Solving for the invariant turns the surface into a graph.</strong> The symbol depends on the momentum only through $k_{\Phi}^{2}$, so the equation determines $k_{\Phi}^{2}$ as a function of the frequency and stops:</p>
 <p>$$
@@ -163,21 +165,22 @@ $$</p>
 <p><strong>So the count is three, and the three are the first, second and fourth rows.</strong> The third row is the failure of the second, and the fifth is empty. <strong>That is the sense in which there are three positions of one zero:</strong> three rows hold a mode that can be called a state, with the word degrading from one row to the next.</p>
 <h2 id="position-one-on-the-real-axis">Position One: On the Real Axis</h2>
 <h3 id="the-propagating-mode-and-why-it-is-not-a-state">The propagating mode, and why it is not a state</h3>
-<p><strong>The first position has both numbers real and the frequency outside the gap.</strong> Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{i(\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t)}$. <strong>It is a solution everywhere and a state nowhere</strong>, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.</p>
+<p><strong>The first position has both numbers real and the frequency outside the gap.</strong> Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{-i\theta_{\mathrm{pwp}}}$. <strong>It is a solution everywhere and a state nowhere</strong>, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.</p>
 <p><strong>The particle arm of the duality therefore needs a second operation here, and the operation is the packet.</strong> <em>The Free Particle and Wave Packets in Biquaternionic Form</em> superposes modes of this position over a range of wave numbers, and the superposition is what is normalisable. The single zero is the building block and not the object. <strong>This is the only position at which the duality demands a superposition before it has anything to be dual to</strong>, and the reason is exactly the modulus: a plane wave's two arms are both delocalised, and neither is a particle until the packet localises it.</p>
 <p><strong>The boundary of the position is the rest point.</strong> At $\lvert k_{t}^{\prime}\rvert=k_m$ the momentum squared vanishes and the mode is uniform in space: the particle at rest, with its phase turning at the rest frequency. <strong>That point is the edge of this row and the limit of the next</strong>, and it is the only point that is both. It is the threshold at which a state is born and at which a level is absorbed, and the two descriptions meet there.</p>
 <h3 id="two-branches-and-the-label-on-each">Two branches, and the label on each</h3>
 <p><strong>The equation is quadratic in the frequency, so every position on the real axis comes twice.</strong> $k_{t}^{\prime}=\pm\sqrt{k_{\Phi}^{2}+k_m^{2}}$, and the two signs are the two branches of the hyperbola. The symbol is even in $k_{t}^{\prime}$, so the pair is a symmetry of the equation and not an accident of the solution.</p>
 <p><strong>The corpus reads the two branches as the particle and the antiparticle, and the reading is a labelling and not a second object.</strong> The mode with $k_{t}^{\prime}<0$ has the same momentum and the opposite frequency; it is the same zero of the same symbol on the other branch. A real field contains both, which is why a real field is not a particle. <strong>The label is fixed by the sign of the frequency and by nothing else</strong>, and the position does not distinguish the branches: both are propagating, both are non-normalisable, and both sit on the real axis.</p>
 <h2 id="position-two-on-the-imaginary-line">Position Two: On the Imaginary Line</h2>
-<h3 id="the-circle-of-radius-math75">The circle of radius $k_m$</h3>
+<h3 id="the-circle-of-radius-math77">The circle of radius $k_m$</h3>
 <p><strong>Real frequency inside the gap forces an imaginary momentum, and the two are tied to a circle.</strong> Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert<k_m$ and write $\vec k_\Phi=i\vec\kappa$ with $\kappa=\sqrt{-k_{\Phi}^{2}}>0$. The graph gives</p>
 <p>$$
 k_{t}^{\prime\,2}+\kappa^{2}=k_m^{2},
 $$</p>
-<p>so <strong>the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant</strong>, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-ik_{t}^{\prime}r'_t}$: exponential in space, oscillatory in time, normalisable in both. <strong>This is the only position at which a mode is a state in the strict sense.</strong></p>
+<p>so <strong>the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant</strong>, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-i\theta_{\mathrm{pwt}}}$: exponential in space, oscillatory in time, normalisable in both. <strong>This is the only position at which a mode is a state in the strict sense.</strong></p>
 <p><strong>The circle is exact, and it is not a dispersion relation in disguise.</strong> It is the graph restricted to the imaginary-momentum line, which is to say it is nothing but $\sigma_{\mathcal{P}}=0$ with two substitutions. Its exactness is checkable: for a Klein–Gordon square well of width $2/k_m$ in units where $k_m=1$, the ground-state frequency was computed at twelve depths from $v=-0.05\,k_m$ to $v=-1.6\,k_m$ by bisection on the matching condition, and the quantity $k_{t}^{\prime\,2}+\kappa^{2}$ deviated from $k_m^{2}$ by at most $2.2\times10^{-16}$ over the twelve, which is round-off. <strong>The circle is not an approximation that the well spoils; the well only chooses the point.</strong></p>
 <p><strong>The two halves of the arc are the two halves of the gap.</strong> Deepening the well moves the point along the arc: the frequency falls and the decay constant rises, reaches its maximum $k_m$ at $k_{t}^{\prime}=0$, and then falls again as the frequency goes negative. <strong>The midpoint of the gap is where the tail falls off fastest</strong>, and a reader who expects the fastest fall-off at the deepest binding will find it at zero energy instead.</p>
+<p>The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.</p>
 <h3 id="the-ceiling-is-the-compton-wavelength">The ceiling is the Compton wavelength</h3>
 <p><strong>Since $\kappa^{2}=k_m^{2}-k_{t}^{\prime\,2}$, the decay constant cannot exceed the mass wave number.</strong> Therefore</p>
 <p>$$
@@ -233,7 +236,7 @@ $$</p>
 <p><strong>Two checks that the table is not a coincidence.</strong> First, every bound entry satisfies $\kappa a<\eta$, which is the statement that the binding cannot exceed the depth; the deepest is $9.65$ against a depth of $10$, so the well's own edge is what stops it, and no relativistic ceiling is in play here because this determinant is non-relativistic. Second, the resonance frequencies are all above the continuum edge: $\Re E>0$ for each, so no resonance in the table is below threshold. <strong>Both facts are identities of the same graph</strong> — the graph in the non-relativistic variable is $k_{\mathrm{s}}=k_{\Phi}^{2}/(2k_m)$, so $\Re k_{\mathrm{s}}>0$ is $\lvert\Re\vec k_\Phi\rvert^{2}>\lvert\Im\vec k_\Phi\rvert^{2}$, and that inequality is what the table's resonances satisfy.</p>
 <h2 id="the-width-is-a-coordinate">The Width Is a Coordinate</h2>
 <h3 id="two-expressions-one-identity">Two expressions, one identity</h3>
-<p><strong>The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.</strong> The pole contributes the amplitude $e^{-ik_{t}^{\prime}r'_t}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\Gamma t/\hbar}$,</p>
+<p><strong>The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.</strong> The pole contributes the amplitude $e^{-i\theta_{\mathrm{pwt}}}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\Gamma t/\hbar}$,</p>
 <p>$$
 \boxed{\;\Gamma=2\hbar c\,\lvert\Im k_{t}^{\prime}\rvert\;}
 $$</p>

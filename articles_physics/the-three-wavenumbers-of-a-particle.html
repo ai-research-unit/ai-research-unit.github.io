@@ -174,13 +174,14 @@ $$</p>
 <p>which is the box, and it is the only numerical check the identity needs.</p>
 <p><strong>What the element is good for.</strong> Three lines, each a place where the three wave numbers enter at once.</p>
 <ul>
-<li>On the plane wave $\tilde{Ξ}=\tilde{Ξ}_{0}\exp\bigl(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\bigr)$ the exponent is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})=\vec k_{\Phi}\cdot\vec r_{\Phi}-k_{t}^{\prime}\,r'_t$, the phase in inverse lengths and in no other unit.</li>
+<li>On the plane wave $\tilde{Ξ}=\tilde{Ξ}_{0}\exp\bigl(-i\theta_{\mathrm{pwp}})$ the exponent is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})=\vec k_{\Phi}\cdot\vec r_{\Phi}-k_{t}^{\prime}\,r'_t$, the phase in inverse lengths and in no other unit.</li>
 <li>The gradient acts by left multiplication by $i\tilde K_{\Phi}$, $\tilde\nabla_\Phi\tilde{Ξ}=i\tilde K_{\Phi}\tilde{Ξ}$, and the d'Alembertian by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, $\Box\tilde{Ξ}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\tilde{Ξ}=k_m^{2}\tilde{Ξ}$, which is why the massive operator of the series is written $\Box-k_m^{2}$.</li>
 <li>On the null cone, where $k_m=0$ and $k_{t}^{\prime}=k_{\Phi}$, the element is null and therefore a zero divisor, and the equation $\tilde K_{\Phi}\tilde{Ξ}_{0}=0$ has a two-dimensional kernel there. That is the massless case of §<em>The Massless Case</em>, and it exists because the norm has vanished, not because a limit was taken.</li>
 </ul>
+<p>The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.</p>
 <p><strong>The two objects differ by a division.</strong> $\tilde P_{\Phi}$ is the momentum, in the dimension of a momentum; $\tilde K_{\Phi}$ is the same element in inverse lengths. Every statement in one is a statement in the other after multiplication by $\hbar$, and both are kept because the dynamics is written in the first and the derivative returns the second.</p>
 <h2 id="what-a-wave-number-is">What a Wave Number Is</h2>
-<p><strong>It is the gradient of the phase.</strong> Write a plane wave as $e^{i(\vec k_{\Phi}\cdot\vec r_{\Phi}-\omega\,t)}$. The spatial entry is the gradient of the phase, $\vec k_{\Phi}=\vec\nabla\phi$, and the temporal entry is the rate of the phase divided by the speed of light, $k_{t}^{\prime}=-(1/c)\,\partial\phi/\partial t$. The two are the same derivative read in space and in time, which is why the single element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$ carries both and why neither entry needs a constant inside the equation.</p>
+<p><strong>It is the gradient of the phase.</strong> Write a plane wave as $e^{-i\theta_{\mathrm{pwp}}}$. The spatial entry is the gradient of the phase, $\vec k_{\Phi}=\vec\nabla\phi$, and the temporal entry is the rate of the phase divided by the speed of light, $k_{t}^{\prime}=-(1/c)\,\partial\phi/\partial t$. The two are the same derivative read in space and in time, which is why the single element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$ carries both and why neither entry needs a constant inside the equation.</p>
 <p><strong>It counts radians per unit length.</strong> The phase turns by one radian over a distance $1/k_{\Phi}$ and by a full turn over $2\pi/k_{\Phi}$. So a wave number is an angle per unit length, and the ordinary wave number, the count of turns per metre, is $k_{\Phi}/(2\pi)$. The same counting gives the nodes: consecutive nodal surfaces are $\pi/k_{\Phi}$ apart, so $k_{\Phi}/\pi$ of them fit in a metre, and a wave of wave number $k_{\Phi}$ crossing a chamber of length $L$ puts $k_{\Phi}L/\pi$ nodes in it.</p>
 <p><strong>It is a momentum measured in quanta of action.</strong> Since $\vec p_{\Phi}=\hbar\,\vec k_{\Phi}$ and $E=\hbar\,c\,k_{t}^{\prime}$, a wave number is the momentum, or the energy, with the unit of action divided out. The information is the same and the arithmetic is easier: a sum of momenta becomes a sum of inverse lengths, and no conversion stands between the derivative and its eigenvalue. That is what makes the wave number the natural variable of a quantum field, and the energy the natural variable of a classical one.</p>
 <p><strong>It is what a derivative returns.</strong> The spatial gradient carries an inverse length, so on a plane wave it multiplies by $i\vec k_{\Phi}$; the biquaternionic gradient multiplies by $i\tilde K_{\Phi}$; the d'Alembertian multiplies by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=k_{t}^{\prime\,2}-\vec k_{\Phi}^{\,2}$, which is $k_m^{2}$ on shell. A wave number is the eigenvalue of an operator that differentiates, and every coefficient in the field equations of this series is one. A mass term $k_m$ in the two first-order equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, is the statement that the operator carries the wave number of the particle at rest, and nothing else.</p>
@@ -469,10 +470,12 @@ $$</p>
 <p><strong>The crossing, said three ways.</strong> It is the point where the Compton wave number is resolved, the point where a probe photon carries the rest energy, and the point where the pair threshold is reached. The three are one number. For the electron the probe photon is $511\ \mathrm{keV}$, which is a hard gamma ray, and the corresponding length is $386\ \mathrm{fm}$, which is why no microscope resolves a free electron's own scale: the photon that would resolve it would create pairs instead.</p>
 <p><strong>The same statement for any mass.</strong> Since $k_m$ is proportional to $m$, the crossing is at a higher energy and a higher wave number for a heavier particle. A proton needs $938\ \mathrm{MeV}$ and $k_m=4.75\ \mathrm{fm^{-1}}$; a top quark needs $173\ \mathrm{GeV}$ and $875\ \mathrm{fm^{-1}}$. The rest energy per unit of mass wave number is $mc^2/k_m=\hbar c$, a constant, which is why the ladder of the last section has one slope for every species.</p>
 <h3 id="the-rest-frame-clock">The Rest-Frame Clock</h3>
-<p><strong>The field at rest still oscillates.</strong> A field of mass $m$ at rest has a time dependence $e^{-i\omega_C t}$ with</p>
+<p><strong>The field at rest still oscillates.</strong> A field of mass $m$ at rest has a time dependence $e^{-i\theta_{\mathrm{pwt}}}$ with</p>
 <p>$$
 \omega_C =c\,k_m .
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.</p>
 <p>For the electron this is $7.763\times10^{20}\ \mathrm{rad\,s^{-1}}$, that is $1.236\times10^{20}\ \mathrm{Hz}$. The number is not a curiosity: it is the rest energy divided by $\hbar$, and it is the rate at which the phase of the field turns in the frame where the particle is at rest.</p>
 <p><strong>The period is a light-travel distance.</strong> One full turn of that phase takes $T_C=2\pi/\omega_C=h/(mc^2)$, and light covers $cT_C=2\pi/k_m$ in that time. So the rest-frame clock and the mass wave number are one fact: the wave number is the angle turned per unit distance, and the clock is that angle divided by $c$.</p>
 <p><strong>The two are measured by different means.</strong> The mass wave number is measured by scattering, in the Compton shift and in the falling cross-section; the rest-frame frequency is measured by interference between a particle and its antiparticle, in the oscillation of a neutral meson. Both return $mc^2$, and neither needs a particle at rest in the laboratory: the frequency is read as an energy difference and the wave number as a momentum transfer.</p>
@@ -586,10 +589,12 @@ $$</p>
 <h2 id="the-momentum-wave-number">The Momentum Wave Number</h2>
 <h3 id="it-belongs-to-the-state">It Belongs to the State</h3>
 <p><strong>It is the wave number of the preparation.</strong> Two electrons of the same mass, one at $1\ \mathrm{MeV}$ and one at $1\ \mathrm{TeV}$, have the same $k_m$ and momentum wave numbers that differ by six orders of magnitude. Nothing about $k_{\Phi}$ can be tabulated for a species. It is quoted for a beam, a trap, a thermal ensemble or a bound orbit, and it changes when any of those changes.</p>
-<p><strong>It is the reciprocal of the momentum wavelength, exactly.</strong> A plane wave of momentum $\vec p_{\Phi}$ has the spatial phase $e^{i\vec k_{\Phi}\cdot\vec r_{\Phi}}$, so its wave vector is the vector part of the element, $\vec k_{\Phi}=\frac{\vec p_{\Phi}}{\hbar}$, and its magnitude is the momentum wave number:</p>
+<p><strong>It is the reciprocal of the momentum wavelength, exactly.</strong> A plane wave of momentum $\vec p_{\Phi}$ has the spatial phase $e^{i\theta_{\mathrm{spa}}}$, so its wave vector is the vector part of the element, $\vec k_{\Phi}=\frac{\vec p_{\Phi}}{\hbar}$, and its magnitude is the momentum wave number:</p>
 <p>$$
 k_{\Phi} =\frac{p_{\Phi}}{\hbar}=\frac{p_{\Phi}}{\hbar} .
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.</p>
 <p>That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla$ carries an inverse length, and on a plane wave it returns $i\vec k_{\Phi}$. The biquaternionic gradient $\tilde\nabla_\Phi$ does the same, and on a plane wave it returns $i$ times the four-wave-number.</p>
 <h3 id="the-phase-winding">The Phase Winding</h3>
 <p><strong>One radian per inverse wave number.</strong> Walk along the direction of motion. The phase turns by one radian for every distance $1/k_{\Phi}$ travelled, and by a full turn for every $2\pi/k_{\Phi}$. The reduced wave number counts radians per unit length and the ordinary one counts turns per unit length.</p>
@@ -817,9 +822,9 @@ $$</p>
 <p>so the truncated $\Omega$ is high by the fraction $\frac{1}{4}k_{\Phi}^{2}/k_m^{2}=\frac{1}{4}\beta^{2}$. At $k_{\Phi}/k_m=0.1$ the error is $0.25$ per cent and the limit is usable; at $k_{\Phi}/k_m=1$ the exact figure is $21$ per cent and the limit has ended. The single parameter of the whole section is $k_{\Phi}/k_m$.</p>
 <p><strong>The equation.</strong> The exponent of the rung separates exactly, because $\Omega$ is a definition and not a series:</p>
 <p>$$
-e^{i\left(\vec k_{\Phi}\cdot\vec r-k_{t}^{\prime}r'_t\right)}
-=\underbrace{e^{-i\,k_m\,r'_t}}_{f}\,
-\underbrace{e^{i\left(\vec k_{\Phi}\cdot\vec r-\Omega\,r'_t\right)}}_{\chi},
+e^{-i\theta_{\mathrm{pwp}}}
+=\underbrace{e^{-i\theta_{\mathrm{rst}}}}_{f}\,
+\underbrace{e^{-i\theta_{\mathrm{pwp}}}}_{\chi},
 $$</p>
 <p>with $f$ the rest-frame clock of §<em>The Rest-Frame Clock</em>. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta$:</p>
 <p>$$
@@ -828,6 +833,7 @@ i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{2k_m}\,\Delta_\Phi\,\chi
 i\hbar\,\frac{\partial\chi}{\partial t}=-\frac{\hbar^{2}}{2m}\,\Delta_\Phi\,\chi ,
 $$</p>
 <p>the last step multiplying by $\hbar c$ with $r'_t=c\,t$ and $\hbar c/2k_m=\hbar^{2}/2m$. This is the free Schrödinger equation, and it is the limit of the three wave numbers: $k_m$ is the constant, $k_{\Phi}$ the variable, and the box has been turned into an operator by dropping one term.</p>
+<p>The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.</p>
 <h2 id="the-massless-case">The Massless Case</h2>
 <p><strong>The degenerate triangle.</strong> As $m\to0$ the mass side vanishes and the box loses that term:</p>
 <p>$$

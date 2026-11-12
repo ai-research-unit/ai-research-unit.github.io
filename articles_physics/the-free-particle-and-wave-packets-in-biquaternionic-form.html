@@ -125,7 +125,7 @@ $$</p>
 <h3 id="the-central-phase-and-the-spinor-factor">The central phase and the spinor factor</h3>
 <p>Take the plane-wave ansatz</p>
 <p>$$
-\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c)),
+\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(-i\theta_{\mathrm{pwp}}),
 \qquad
 \xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k_\Phi \in \mathbb{R}^3,
 $$</p>
@@ -141,7 +141,7 @@ $$</p>
 \omega(\vec k_\Phi) = \frac{c k_\Phi^2}{2\,k_m}\;}.
 $$</p>
 <p>Two features of the solution are the whole content of the plane-wave section. First, the <strong>energy does not depend on $\xi$</strong>: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.</p>
-<p>The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_\eta \exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) =\hbar\,k_\Phi\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$,</p>
+<p>The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_\eta \exp(i\theta_{\mathrm{spa}}) =\hbar\,k_\Phi\exp(i\theta_{\mathrm{spa}})$,</p>
 <p>$$
 \tilde p\,\tilde{Ξ}_{\vec k_\Phi} = \sum_\eta  \vec e_\eta p_\eta \tilde{Ξ}_{\vec k_\Phi}
 =\hbar\sum_\eta  k_{\Phi\eta} \vec e_\eta\, \tilde{Ξ}_{\vec k_\Phi}
@@ -152,7 +152,9 @@ $$</p>
 \tilde p^{\,2}\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,\vec k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}= -\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi},
 \qquad
 \tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}.
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.</p>
 <p>The operator $\hbar\,\vec k_\Phi$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i\theta_{\mathrm{pwp}})$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the <strong>imaginary unit in it is the canonical central one</strong>, not a chosen complex structure.</p>
 <p>Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.</p>
 <h3 id="dispersion-and-the-location-of-the-wave-vector">Dispersion and the location of the wave vector</h3>
@@ -204,7 +206,7 @@ $$</p>
 <h3 id="superposition-and-the-frozen-module-factor">Superposition and the frozen module factor</h3>
 <p>The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:</p>
 <p>$$
-\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
 \qquad
 \tilde{Ξ}_{0}(\vec k_\Phi) \in \mathbb{B}\tilde\Pi .
 $$</p>
@@ -251,7 +253,7 @@ $$</p>
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,k_m},
 \qquad
-v_0 = c\,k_\Phi/k_m_0,
+v_0 = c\,k_\Phi/k_{m,0},
 $$</p>
 <p>and its density is again a normalised Gaussian,</p>
 <p>$$
@@ -282,7 +284,7 @@ $$</p>
 <h3 id="the-kernel-from-the-momentum-integral">The kernel from the momentum integral</h3>
 <p>The free propagator is the inverse Fourier transform of the free phase,</p>
 <p>$$
-\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\,
+\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k_\Phi}{(2\pi)^3}\,
 \exp(\,i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) -\frac{i\,\hbar\,k_\Phi^{2}\,r'_{t}}{2\,m})
 = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)\;},
@@ -309,16 +311,19 @@ $$</p>
 \tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3r_0\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), r'_t)\,\tilde{Ξ}(0,r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z),
 $$</p>
 <p>in which the kernel acts on the body of the field and multiplies the module factor by a scalar. The module orientation of the initial condition is propagated unchanged.</p>
-<h3 id="the-free-evolution-operator-as-a-central-math168-unitary">The free evolution operator as a central $*$-unitary</h3>
+<h3 id="the-free-evolution-operator-as-a-central-math169-unitary">The free evolution operator as a central $*$-unitary</h3>
 <p>The evolution operator is the exponential of the generator,</p>
 <p>$$
-\tilde Q(r'_t) = \exp(-\frac{i\,H\,r'_{t}}{\hbar}) = \exp(-\frac{i\,p^{2}\,r'_{t}}{2\,\hbar\,m})\,e_t \in  \mathbb{B}_{C},
+\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(-\frac{i\,p^{2}\,r'_{t}}{2\,\hbar\,m})\,e_t \in  \mathbb{B}_{C},
 $$</p>
 <p>a central $*$-unitary element in the framework's sense,</p>
 <p>$$
 \tilde U\tilde U^{*} = e_t .
+
 $$</p>
-<p>It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm{lor}}$ satisfies $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-\frac{i\,E\,r'_{t}}{\hbar})$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the $*$-unitary group and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ and preserves the sector assignment of a field that begins in $\mathbb{B}_{\Psi}$.</p>
+<p>The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.</p>
+<p>It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm{lor}}$ satisfies $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-i\theta_{\mathrm{pwt}})$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the $*$-unitary group and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ and preserves the sector assignment of a field that begins in $\mathbb{B}_{\Psi}$.</p>
+<p>The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.</p>
 <h2 id="the-module-factor-and-the-meaning-of-a-spin-0-field">The Module Factor and the Meaning of a Spin-0 Field</h2>
 <p>The free problem displays the subcategory's central convention most clearly, so it is worth stating in full.</p>
 <p>The framework's state module $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ is the algebra's generic two-state module. The free Hamiltonian is central, so the free dynamics acts on it as the identity; the two components are exactly degenerate and no relative phase accumulates. For a spin-0 problem the module factor can therefore be fixed once and for all, and the physical content is carried by the scalar envelope. The vector-slot elements $\tilde S_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, which the companion articles on angular momentum and on the hydrogen atom use as the algebra's spin operators, are conserved by the free evolution and generate no motion; a spin orientation, if one is attached to the module, is a spectator of the free dynamics. The genuinely spinorial effects — precession in a magnetic field, Stern–Gerlach splitting, resonance — require a Hamiltonian that is <strong>not</strong> central, and they belong to the sibling spin subcategories, not here.</p>
@@ -360,7 +365,7 @@ $$</p>
 <p>$$
 G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)
 $$</p>
-<p>is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-\frac{iHr'_{t}}{\hbar})$ is a central $*$-unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.</p>
+<p>is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-i\theta_{\mathrm{evo}})$ is a central $*$-unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -463,7 +468,7 @@ $$</p>
 <td>Free propagator; central</td>
 </tr>
 <tr>
-<td>$\tilde Q(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar})$</td>
+<td>$\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})$</td>
 <td>Free evolution; central $*$-unitary</td>
 </tr>
 <tr>

@@ -105,12 +105,14 @@ $$</p>
 <p>Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the <strong>Rabi frequency</strong>, the rate set by the transverse amplitude; with $\mathcal{G}_{\mathrm{gap}}$ the detuning and $\Omega$ the Rabi rate they are all angular frequencies in $\mathrm{rad\,s^{-1}}$, the clock is the material length $r'_t=c\,t$, and every phase below is $\omega r'_t/c$. Each of the three terms lies in $\mathbb{B}_{\Psi}$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.</p>
 <p>The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise <em>Exercise: Spin Precession in a Magnetic Field</em>, where the Bloch vector of a spin in a static field precesses as $\vec r(r'_t) = (\cos(\omega_0 r'_t/c), -\sin(\omega_0 r'_t/c), 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.</p>
 <h3 id="the-larmor-precession-as-a-rotor">The Larmor Precession as a Rotor</h3>
-<p>With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-\frac{i\,H_{0}\,r'_{t}}{\hbar\,c})$ with $\tilde{H}_{\Psi,0} = -\frac{\hbar\,\omega_{0}}{2}i\vec e_z$. Since $-i H_{0}/\hbar = \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,</p>
+<p>With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ with $\tilde{H}_{\Psi,0} = -\frac{\hbar\,\omega_{0}}{2}i\vec e_z$. Since $-i H_{0}/\hbar = \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,</p>
 <p>$$
 \tilde u_0(r'_t) = \exp\!\left(-\frac{\omega_0 r'_t}{2\,c}\vec e_z\right)
 = \cos\frac{\omega_0 r'_t}{2\,c}\,e_t - \sin\frac{\omega_0 r'_t}{2\,c}\,\vec e_z
 \;\in \mathbb{B}_{H} .
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.</p>
 <p>This is a unit real quaternion, a rotor; it acts on states and observables by conjugation and generates the Larmor precession. The key algebraic point is the one the Schrödinger article makes: the generator of the <em>physical</em> rotation is a real quaternion $\vec e_z$, obtained from the Hermitian observable $i\vec e_z$ by multiplication by the central $i$. The imaginary unit that makes the observable Hermitian is the same one that converts its exponential into a rotation rather than a boost.</p>
 <h3 id="the-formal-solution">The Formal Solution</h3>
 <p>Because $\tilde H_\Psi(r'_t)$ at different times need not commute, the propagator is the time-ordered exponential</p>
@@ -189,7 +191,7 @@ $$</p>
 \vec B_1(r'_t) = 2B_1\cos(\omega r'_t/c)\;\vec u_x,
 $$</p>
 <p>which is the sum of the corotating component $B_1(\cos(\omega r'_t/c)\,\vec u_x-\sin(\omega r'_t/c)\,\vec u_y)$ considered above and the counter-rotating component $B_1(\cos(\omega r'_t/c)\,\vec u_x+\sin(\omega r'_t/c)\,\vec u_y)$. The corotating component is static in the rotating frame; the counter-rotating component rotates at $2\omega$ and contributes rapidly oscillating terms. The <strong>rotating-wave approximation</strong> (RWA) drops the counter-rotating terms, and it is accurate when $\omega_1\ll\omega_0$; the neglected terms produce the Bloch–Siegert shift, of order $\omega_1^2/\omega_0$. In the biquaternion algebra the split is the decomposition of the linear drive into the two circular components $i\vec e_x\cos(\omega r'_t/c)\mp i\vec e_y\sin(\omega r'_t/c)$, each a Hermitian combination; the RWA keeps the component that corotates with the Larmor rotor $\tilde u_0$ and discards its conjugate. The approximation is thus a statement about which rotor the drive is in phase with, and it has no special algebraic status.</p>
-<h3 id="math117-and-math118-pulses">$\pi$ and $\pi/2$ Pulses</h3>
+<h3 id="math120-and-math121-pulses">$\pi$ and $\pi/2$ Pulses</h3>
 <p>Two pulse durations have a distinguished role. At resonance, $\Omega = \omega_1$, and</p>
 <p>$$
 r'_t = \frac{\pi c}{\omega_1}:\quad P_\downarrow = \sin^2\frac{\pi}{2} = 1,

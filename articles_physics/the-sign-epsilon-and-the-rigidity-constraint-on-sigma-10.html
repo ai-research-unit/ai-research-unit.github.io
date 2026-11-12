@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sign ε and the Rigidity Constraint on Σ₁₀ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sign-and-the-rigidity-constraint-on-10"><strong>The Sign ε and the Rigidity Constraint on Σ₁₀</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The sign $\varepsilon$ is a derived number and not a label, and the sector $\Sigma_{10}$ is exactly the locus where it is $\pm1$.</strong> The number is the scalar part of the element of <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a> divided by the modulus of its norm. It is complex in general, it vanishes on a set of its own, and it takes the values $\pm1$ precisely on the spectrally degenerate sector. The second statement is a theorem and this article proves it.</p>
+<p><strong>The level set $\lvert\varepsilon\rvert=1$ is strictly larger than the sector, and that is where a careless reading goes wrong.</strong> $\lvert\varepsilon\rvert=1$ is one real equation and selects a seven-dimensional set; the sector is six-dimensional. The difference is a phase: on the level set $\varepsilon$ may be any point of the unit circle, and the sector is the two points of that circle where the phase is a multiple of $\pi$.</p>
+<p><strong>The bridge between the two is one closed form.</strong> The square of the element's vector part, divided by the square of the modulus, is</p>
+<p>$$
+\frac{B^{2}}{\Rho^{2}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
+\qquad
+\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r},
+$$</p>
+<p>so $\lvert\varepsilon\rvert=1$ kills the real part and leaves the imaginary part standing. The sector needs both to vanish. That single display is the article's technical core and every other statement here is its consequence.</p>
+<p><strong>The constraint has a name and the name is earned.</strong> On the sector the two angles are tied by $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$. This is the rigidity constraint: the rapidity is a function of the rotor's angle and not an independent variable. What follows for the fluid — a speed locked to a spin angle — is the next article's subject, <a href="spin-velocity-locking-on-the-degenerate-sector.html">Spin-Velocity Locking on the Degenerate Sector</a>; this article treats the algebraic side, the range of the sign, and the sense in which the constraint <em>defines</em> the sector rather than following from it.</p>
+<h2 id="the-definition">The Definition</h2>
+<h3 id="the-number">The Number</h3>
+<p><strong>The sign is the scalar part of the element divided by the modulus of its norm.</strong> With $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ and $\Rho$ the principal square root of the quaternionic norm,</p>
+<p>$$
+\varepsilon:=\frac{\Xi_t}{\Rho},
+\qquad
+N(\tilde\Xi)=\Rho^{2}=r^{2}e^{2i\theta_{\mathrm{pha}}}.
+$$</p>
+<p><strong>It is computed from the word and it is not a parameter of the word.</strong> The word has eight parameters; $\varepsilon$ is a function of four of them, the rapidity, the rotor's angle and the two axes' mutual orientation. So a reader who met $\varepsilon$ in the spinor literature as a branch index chosen by a representation should note the difference: here nothing is chosen.</p>
+<h3 id="the-display">The Display</h3>
+<p><strong>Only the dot product of the two axes survives beside the two cosines, because the cross product cannot reach the centre.</strong> With $\vec u_{\mathrm b}\vec u_{\mathrm r}=-\kappa+\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ and $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$,</p>
+<p>$$
+\varepsilon
+=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}
+-i\,\kappa\,\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2},
+$$</p>
+<p><em>Proof.</em> Multiply $\tilde U_{\Psi,\mathrm b}=(c_b,is_b\vec u_{\mathrm b})$ by $\tilde u_{\mathrm r}=(c_a,s_a\vec u_{\mathrm r})$ and read the scalar slot. The product of the two vector parts is $is_bs_a(-\kappa+\vec u_{\mathrm b}\times\vec u_{\mathrm r})$, whose scalar term is $-i\kappa s_bs_a$; the cross product is a vector and contributes nothing to the centre. The two scalar products give $c_bc_a$. The modulus is central and does not affect the ratio.</p>
+<p><strong>The paper's convention has been changed here, and the change is deliberate.</strong> Earlier statements of the display used the letter $c$ for the dot product, which collided with the speed of light in the same article. The letter $\kappa$ is used from here on, in <a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a> and in this article alike.</p>
+<h3 id="the-range">The Range</h3>
+<p><strong>The number is complex, it is real on the orthogonal locus, and it vanishes on a set of its own.</strong> Three statements and each needs its condition.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>locus</th>
+<th>$\varepsilon$</th>
+<th>$\lvert\varepsilon\rvert$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>generic</td>
+<td>complex</td>
+<td>not one</td>
+</tr>
+<tr>
+<td>$\kappa=0$</td>
+<td>real, $c_bc_a$</td>
+<td>$\lvert c_bc_a\rvert$</td>
+</tr>
+<tr>
+<td>$\kappa=0$, $\theta_{\mathrm{axr}}=\pi$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\kappa=0$, $c_bc_a=\pm1$</td>
+<td>$\pm1$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The zeros are the sharpest of the three and they are usually missed.</strong> At $\theta_{\mathrm{axr}}=\pi$ the rotor is a pure vector, $c_a=0$, and with orthogonal axes the imaginary term also vanishes, so $\varepsilon=0$ at every rapidity. Checked: at $\theta_{\mathrm{rpd}}=0.5$, $2$ and $5$ with $\theta_{\mathrm{axr}}=\pi$ and $\kappa=0$ the modulus is $6.3\times10^{-17}$, $9.5\times10^{-17}$ and $3.8\times10^{-16}$, and $B^{2}=+1$ in all three cases.</p>
+<p><strong>So $\varepsilon$ is not a sign and cannot be one.</strong> A quantity that vanishes cannot be a label with two values. It is a complex coordinate of the word, and the two values $\pm1$ are a locus inside its range and not the range itself. The corpus's phrase "the sign $\varepsilon$" is a name kept from the spinor literature and the article records the mismatch.</p>
+<h2 id="the-closed-form">The Closed Form</h2>
+<p><strong>The square of the vector part is the object that decides the sector, and it splits into the modulus of $\varepsilon$ and a phase term.</strong></p>
+<p><em>Proposition.</em> With $\vec Q$ the vector part of $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and $c_b,s_b,c_a,s_a$ the half-angle sines and cosines,</p>
+<p>$$
+\frac{B^{2}}{\Rho^{2}}
+=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
+\qquad
+\lvert\varepsilon\rvert^{2}=c_b^{2}c_a^{2}+\kappa^{2}s_b^{2}s_a^{2}.
+$$</p>
+<p><em>Proof.</em> The product is $\varepsilon e_t+c_bs_a\vec u_{\mathrm r}+is_bc_a\vec u_{\mathrm b}+is_bs_a\vec u_{\mathrm b}\times\vec u_{\mathrm r}$, so</p>
+<p>$$
+\vec Q\cdot\vec Q
+=c_b^{2}s_a^{2}-s_b^{2}c_a^{2}-s_b^{2}s_a^{2}\lvert\vec u_{\mathrm b}\times\vec u_{\mathrm r}\rvert^{2}+2i\kappa\,c_bs_as_bc_a,
+$$</p>
+<p>with $\lvert\vec u_{\mathrm b}\times\vec u_{\mathrm r}\rvert^{2}=1-\kappa^{2}$. The first three terms are $c_b^{2}s_a^{2}-s_b^{2}+\kappa^{2}s_b^{2}s_a^{2}$, and replacing $s_a^{2}$ by $1-c_a^{2}$ in the first two gives $1-c_b^{2}c_a^{2}$. So the real part is $1-c_b^{2}c_a^{2}+\kappa^{2}s_b^{2}s_a^{2}$, which is $1-\lvert\varepsilon\rvert^{2}$ by the second display.</p>
+<p><strong>Checked on six random configurations.</strong> With $\vec u_{\mathrm b}=\vec e_x$ and the rotor axis at cosine $\kappa$, the computed $B^{2}$ matches the display to every printed digit at all six triples of $(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\kappa)$. Two of them: $0.004741+0.137403i$ at $(0.971,0.935,0.302)$ and $0.992595+0.005292i$ at $(0.217,3.322,-0.269)$.</p>
+<p><strong>The display reads as a two-step criterion.</strong> The real part sees only $\lvert\varepsilon\rvert$; the imaginary part sees the orientation of the frames and the two angles' sines. So the sector's condition factors into a condition on the modulus and a condition on the phase, and that factoring is what separates the two loci.</p>
+<h2 id="the-theorem">The Theorem</h2>
+<p><strong>The sector is the locus $\varepsilon=\pm1$.</strong></p>
+<p><em>Theorem.</em> For a word with $r>0$, $\tilde\Xi$ lies on $\Sigma_{10}$ if and only if $\kappa=0$ and $c_b^{2}c_a^{2}=1$.</p>
+<p><em>Proof.</em> $B^{2}=0$ needs the real and imaginary parts of the proposition's display to vanish separately.</p>
+<ul>
+<li>The imaginary part is $2\kappa c_bc_as_bs_a$. Since $c_b>0$, it vanishes when $\kappa=0$, when $s_a=0$ (that is $\theta_{\mathrm{axr}}\in\{0,\pi\}$), or when $s_b=0$ (that is $\theta_{\mathrm{rpd}}=0$).</li>
+<li>With $\theta_{\mathrm{axr}}\in\{0,\pi\}$ the modulus is $\lvert\varepsilon\rvert=c_b\lvert c_a\rvert=c_b$, so the real part is $1-c_b^{2}=-s_b^{2}$, vanishing only at $\theta_{\mathrm{rpd}}=0$.</li>
+<li>With $\theta_{\mathrm{rpd}}=0$ the modulus is $\lvert c_a\rvert$, so the real part is $1-c_a^{2}=s_a^{2}$, vanishing only at $\theta_{\mathrm{axr}}=0$.</li>
+<li>Those two cases meet at $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{axr}}=0$, which is the scalar line and belongs to the first case with $c_bc_a=1$.</li>
+</ul>
+<p>So off the scalar line the imaginary part forces $\kappa=0$, and then the real part is $1-c_b^{2}c_a^{2}$ and the identity follows. Conversely, $\kappa=0$ with $c_b^{2}c_a^{2}=1$ makes both parts vanish.</p>
+<p><strong>The theorem's two halves are one statement about $\varepsilon$.</strong> With $\kappa=0$ the number is real and equals $c_bc_a$, so the condition is exactly $\varepsilon=\pm1$; and $\varepsilon=\pm1$ forces $\kappa=0$ by the imaginary part. Hence</p>
+<p>$$
+\Sigma_{10}=\{\tilde\Xi:N\neq0,\ \varepsilon=\pm1\},
+$$</p>
+<p>and the sector's name and the sign's two values are the same object.</p>
+<p><strong>The scalar line is where the statement needs care and it is not an exception.</strong> At $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$ the element is central, the two axes are free, and $\varepsilon=1$ for every choice of them. So the locus $\varepsilon=1$ contains points with $\kappa\neq0$, all of them on the scalar line, and the theorem's hypothesis $N\neq0$ is satisfied there. The restriction to $\kappa=0$ in the display above is therefore a restriction <em>off</em> the scalar line, and the article says so rather than excluding the line.</p>
+<h2 id="why-math120-is-not-the-sector">Why $\lvert\varepsilon\rvert=1$ Is Not the Sector</h2>
+<p><strong>The modulus's condition is one real equation and the sector needs two.</strong> $\lvert\varepsilon\rvert=1$ is one equation; the sector is two. The difference is visible in the proposition: $\lvert\varepsilon\rvert=1$ kills the real part of $B^{2}$ and leaves the imaginary part, so the level set is the locus where the vector part's square is purely imaginary.</p>
+<p><strong>The counterexample, with numbers.</strong> At $\theta_{\mathrm{rpd}}=2$, $\kappa=\tfrac12$ and $\theta_{\mathrm{axr}}=1.935631$, the display gives</p>
+<p>$$
+\lvert\varepsilon\rvert=1.000000,
+\qquad
+\frac{B^{2}}{\Rho^{2}}=0.468467+0.847037i,
+$$</p>
+<p>so the element is on the level set and off the sector by the whole imaginary part. The check is the article's, recomputed from the word, and it agrees with the polar article's $0.468+0.847i$ to the digits printed there.</p>
+<p><strong>The dimension count says the same thing.</strong> The level set has seven real dimensions, since it is one equation on the eight parameters; the sector has six. So the level set contains the sector as a codimension-one subset, and the subset is where the sign's phase is a multiple of $\pi$.</p>
+<p><strong>The reading of the extra dimension is a phase.</strong> On the level set $\lvert\varepsilon\rvert=1$ the number is a point of the unit circle; the sector is the two points $\pm1$. So the extra dimension is the circle's own, and the sector is the circle's intersection with the real axis.</p>
+<p><strong>This is the correction that a naive reading of the polar form invites.</strong> A reader who sees "$\varepsilon=\pm1$" and remembers "$\lvert\varepsilon\rvert=1$" will conflate them. The polar article states the distinction, the earlier literature on the corpus's own summary did not, and this article's theorem makes the distinction exact: the real values $\pm1$ are the sector, the unit modulus is only the sector's containing surface.</p>
+<h2 id="the-rigidity-constraint">The Rigidity Constraint</h2>
+<h3 id="what-the-constraint-is">What the Constraint Is</h3>
+<p><strong>The constraint is the identity, and its content is that the rapidity is not free.</strong> On the sector</p>
+<p>$$
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon,
+\qquad \varepsilon=\pm1,
+$$</p>
+<p>so for every rotor angle there are at most two rapidities and for every rapidity at most two rotor angles. The word's two angles become one.</p>
+<p><strong>The constraint is a definition of the sector and not a consequence of an equation.</strong> It is equivalent to $B^{2}=0$ with $N\neq0$, which is the sector's definition. So a sentence that derives the locking from the field equation would be wrong: the locking is what it means for the element to be spectrally degenerate.</p>
+<h3 id="what-it-leaves-free">What It Leaves Free</h3>
+<p><strong>Six parameters survive of eight, and four of them matter for the motion.</strong> The scale and the phase are untouched. The boost axis is free. The rotor axis is free up to orthogonality to the boost axis, so two of its components survive. The rotor angle is free and the rapidity is its function.</p>
+<p><strong>The count is the sector's dimension and the constraint's cost.</strong> Two conditions removed and no more, so the locking is exactly the rigidity the sector can afford and not more.</p>
+<h3 id="the-two-branches">The Two Branches</h3>
+<p><strong>The identity has two branches, $c_a>0$ and $c_a<0$, and they cover the two halves of the rotor angle's range.</strong> The corpus's range is $\theta_{\mathrm{axr}}\in[0,2\pi]$, so the branch with $c_a>0$ is $[0,\pi)$ and the branch with $c_a<0$ is $(\pi,2\pi]$; both reach the same rapidity, and the sign of $\varepsilon$ is the branch's label.</p>
+<p><strong>The sheets are not related by any symmetry of the algebra that the article can exhibit.</strong> They are two solutions of the same identity with opposite signs, and the section on what $\varepsilon$ is not returns to this.</p>
+<h3 id="at-the-antipodes">At the Antipodes</h3>
+<p><strong>At $\theta_{\mathrm{axr}}=\pi$ the identity has no solution and the sector's chart degenerates.</strong> The cosine of the half angle vanishes while the hyperbolic cosine is at least one, so no rapidity satisfies the identity. The approach is a divergence: at that rotor angle the vector part's square is $1-c_b^{2}c_a^{2}=1$ at every rapidity, so the element moves further from the sector as the rapidity grows without bound.</p>
+<p><strong>The antipode is where $\varepsilon$ vanishes and the sector ends.</strong> The zero of $\varepsilon$ and the failure of the lock are the same locus seen from the two sides: the lock's equation has $\varepsilon$ on its right and a vanishing right-hand side is no lock at all.</p>
+<h2 id="the-defective-unit">The Defective Unit</h2>
+<p><strong>The sector is the defective unit, and the rigidity constraint is the defect's cost.</strong> On $\Sigma_{10}$ the two eigenvalues of left multiplication coincide while the element remains invertible, so the operator has no basis of eigenvectors: the action of $\vec Q$ has square $-B^{2}\mathrm{id}=0$, so it is a nilpotent shift and not a complex structure, and the one-parameter group is a scalar rate times a unipotent translation.</p>
+<p><strong>The three readings of the defect are one reading.</strong> No mode basis means no splitting into two propagation directions; a double eigenvalue of nonzero value means a reversible unit; a nilpotent vector part means the rate is all there is. The rigidity constraint is the statement that in the word the defect shows up as a tie between the two frame angles rather than as a degeneracy of an eigenvalue.</p>
+<p><strong>What the scalar line is in this language.</strong> At $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$ the element is central: a pure rate with no frame at all. It is the sector's one point where the word's two frames both collapse, and the sector encloses it as the point where the two branches of the identity meet.</p>
+<p><strong>What the sector is not.</strong> It is not a set of small elements, not a neighbourhood of the centre, and not a surface of constant density. It is a six-dimensional locus of units, and the constraint is its equation.</p>
+<h2 id="what-math157-is-not">What $\varepsilon$ Is Not</h2>
+<p><strong>It is not the sign of the energy.</strong> In the standard spinor treatment the sign of the frequency is the sign of the eigenvalue of the Hamiltonian, and it is a property of a mode. Here the element is one object with no mode decomposition at a point; the sign's two values are the sector's two sheets, and they are not a particle–antiparticle label.</p>
+<p><strong>It is not a conserved quantity.</strong> It is a function of the word's parameters at an event, and the flow does not preserve the parameters: the rapidity and the rotor angle evolve, so $\varepsilon$ evolves. Only on the sector is it pinned to $\pm1$, and only because the sector itself is a locus.</p>
+<p><strong>It is not a sign, as the zeros show.</strong> A quantity that vanishes at $\theta_{\mathrm{axr}}=\pi$ with orthogonal axes has no two-valued range. The name is inherited and the article keeps it for the corpus's consistency while stating that the object is a complex coordinate.</p>
+<p><strong>What it is.</strong> The scalar part of the element relative to the modulus of its norm: the one number in the word that mixes the two frames, and therefore the one that detects a degeneracy of the spectrum.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> That $\varepsilon$ is the scalar part over the modulus and is a function of four parameters, displayed as two cosines and a dot product. That it is complex off the orthogonal locus, real on it, and zero at $\theta_{\mathrm{axr}}=\pi$ with $\kappa=0$, checked at three rapidities. That $B^{2}/\Rho^{2}=1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$, checked at six random configurations. That the sector is exactly the locus $\varepsilon=\pm1$, proved from that display. That $\lvert\varepsilon\rvert=1$ is a seven-dimensional level set containing the six-dimensional sector, with the numerical counterexample $0.468467+0.847037i$. That the rigidity constraint is the sector's defining identity and has two branches.</p>
+<p><strong>Interpretation.</strong> That the defect shows up as a tie between the frame angles. That the two sheets are not related by a symmetry. That $\varepsilon$'s inheritance from the spinor literature is a name and not a content. Each is argued here and none is proved.</p>
+<p><strong>Not claimed.</strong> It is not claimed that the sector is realised by a solution of the Dirac equation. It is not claimed that the two branches are physically distinct. It is not claimed that $\varepsilon$ is the only invariant that detects the degeneracy; it is the one the word supplies.</p>
+<h2 id="summary">Summary</h2>
+<p>The sign $\varepsilon$ is the element's scalar part divided by the modulus of its norm, a complex coordinate of the word and not a label. It is real on the orthogonal locus, complex off it, and it vanishes at a rotor angle of a half turn with orthogonal axes.</p>
+<p>The square of the vector part obeys $B^{2}/\Rho^{2}=1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$, so the modulus of the sign controls the real part and the frames' orientation controls the imaginary part.</p>
+<p>The sector $\Sigma_{10}$ is exactly the locus $\varepsilon=\pm1$, equivalently the orthogonal locus with $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\pm1$. The surface $\lvert\varepsilon\rvert=1$ is strictly larger: it is seven-dimensional against the sector's six, and on it the sign's phase is free while the sector is where that phase is a multiple of $\pi$.</p>
+<p>The rigidity constraint is therefore the sector's definition and not a consequence of an equation: the sector is the defective unit, and the tie between the rapidity and the rotor angle is what the defect looks like in the word.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varepsilon=\Xi_t/\Rho$</td>
+<td>Sign: scalar part over the modulus of the norm</td>
+</tr>
+<tr>
+<td>$\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$</td>
+<td>Cosine between the boost and rotor axes</td>
+</tr>
+<tr>
+<td>$c_b,s_b$</td>
+<td>Half-angle hyperbolic cosine and sine of the rapidity</td>
+</tr>
+<tr>
+<td>$c_a,s_a$</td>
+<td>Half-angle cosine and sine of the rotor angle</td>
+</tr>
+<tr>
+<td>$B^{2}=\vec Q\cdot\vec Q$</td>
+<td>Square of the vector part</td>
+</tr>
+<tr>
+<td>$\Rho=r\,e^{i\theta_{\mathrm{pha}}}$</td>
+<td>Modulus of the norm, $\Rho^{2}=N$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$N\neq0$, $B^{2}=0$: the defective unit</td>
+</tr>
+<tr>
+<td>$\lvert\varepsilon\rvert=1$</td>
+<td>Seven-dimensional level set containing the sector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Paul A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the sign of the frequency in the spinor treatment that the name inherits.</li>
+<li>David Hestenes, "Space–time structure of the Dirac theory," in <em>Clifford Algebras and their Applications in Mathematical Physics</em> (Reidel, 1986), for the spinor as a rotor and the role of the scalar part.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, vol. 1 (Cambridge University Press, 1984), for the two-component spinor and its flag, whose degeneracies are the sector's kin.</li>
+<li>The companion articles: <a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>, <a href="physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, <a href="spin-velocity-locking-on-the-degenerate-sector.html">Spin-Velocity Locking on the Degenerate Sector</a>, <a href="the-non-uniqueness-of-the-spin-fluid.html">The Non-Uniqueness of the Spin Fluid</a>, <a href="the-current-algebra.html">The Current Algebra</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coupled Dirac Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coupled-dirac-equation-in-biquaternionic-polar-variables"><strong>The Coupled Dirac Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article substitutes the polar word into the coupled Dirac equation and reads what the substitution makes visible. It is the polar companion of <em>The Coupled Dirac Equation in Biquaternionic Form</em>, and it depends on three articles: the element form of the coupled equation for the equation, <em>The Dirac Equation in Biquaternionic Polar Variables</em> for the word and the four brackets, and <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> for the connection.</p>
+<p><strong>The substitution.</strong> Write</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+$$</p>
+<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the units and no constraint is lost or added. The parent states this and the article uses it.</p>
+<p><strong>The equation.</strong> The coupled pair is</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\qquad
+\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+\qquad
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
+$$</p>
+<p>Here $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.</p>
+<p><strong>Three things are established, and they are local statements.</strong></p>
+<p><em>First, the coupling enters the logarithmic derivative as one added four-vector.</em> Because each component of the connection is a central scalar, $\frac{iϙ}{\hbar}\tilde A_\Phi$ passes through $\tilde\Xi^{-1}$ and joins the four brackets without disturbing their types. It lands in the phase bracket and in the boost bracket and in neither of the other two.</p>
+<p><em>Second, the shift is the classical substitution, in one object.</em> The scalar potential and the vector potential are the temporal and spatial slots of one element, so $E\mapsto E+ϙ\phi$ and $\vec p\mapsto\vec p+ϙ\vec A$ are not two substitutions. They are the addition of $\frac{ϙ}{\hbar}\tilde A_\Phi$ to the covariant wavevector, and the algebra states them with one sign.</p>
+<p><em>Third, the spin transport is what the chart does and does not show.</em> The connection is central per component, so it multiplies the word and cannot rotate either frame factor. The rotor's own rate is the mass term's and the coupling leaves it alone. What the background does to the spin is indirect and is recorded as the chart's limit.</p>
+<p><strong>Where the polar equation is closed, and where it is not.</strong> The polar equation is the free pair rewritten in variables. It is exact, it is equivalent to the element form, and it closes for a plane wave in a constant background, where the frame is constant and the equation becomes algebraic in it. It does not close for a general field: the four brackets are coupled and the equation constrains them without fixing them. That underdetermination is the spin-fluid underdetermination of the parent and not a defect introduced by the coupling. The constraint structure proper enters when the <em>action</em> is asked for, and that is the variational polar companion.</p>
+<p><strong>What is not here.</strong> The action, the Euler–Lagrange equations and the constraint analysis are not in this article. The current is not derived here; the element-form companion settles it and this article states the polar reading of the same numbers in one paragraph. The article's subject is the equation and its variables.</p>
+<h2 id="the-coupling-in-polar-variables">The Coupling in Polar Variables</h2>
+<p>Differentiate the word and divide by it, as the parent does, and add the connection. Because $\tilde A_\Phi$ is central per component, the two operations commute with the split.</p>
+<p><strong>The logarithmic derivative, coupled.</strong></p>
+<p>$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+=\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
++\frac{i\,ϙ}{\hbar}A_\mu
++\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
++\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}.
+$$</p>
+<p>The added term is one central complex number per component, and the four terms after it are the parent's four brackets unchanged in form.</p>
+<p><strong>Which brackets the connection touches.</strong> Decompose the added term with $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$. Its temporal slot is $\frac{iϙ}{\hbar}A_t$, a central imaginary number; its spatial slots are $\frac{iϙ}{\hbar}A_\eta\vec e_\eta$, which are Hermitian vector parts because $i$ times a real vector is Hermitian. Hence</p>
+<p>$$
+\frac{i\,ϙ}{\hbar}\tilde A_\Phi
+=\underbrace{\frac{i\,ϙ}{\hbar}A_t}_{\text{central imaginary}}
++\underbrace{\frac{i\,ϙ}{\hbar}\sum_\eta A_\eta\vec e_\eta}_{\text{Hermitian vector}} .
+$$</p>
+<p>The connection therefore adds to the <strong>phase bracket</strong> and to the <strong>boost bracket</strong> and to nothing else. The scale bracket and the rotor bracket are untouched, and that is a statement of type and not of size: a central scalar cannot produce a real vector part, and it cannot produce a scale.</p>
+<p><strong>The type table, with the coupling in place.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>type</th>
+<th>the connection's share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tfrac12\partial_\mu\ln r^{2}$</td>
+<td>real central scalar</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$</td>
+<td>central imaginary</td>
+<td>the whole temporal slot of $\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
+<td>Hermitian</td>
+<td>the whole spatial slot of $\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$</td>
+<td>real vector part</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-line reason.</strong> The connection is a material-sector element, and the material sector is the central imaginary plus the real vector; multiplying by $i$ carries it into the central imaginary plus the Hermitian vector, which are brackets two and three. The scale and the rotor are the two brackets a multiplication by a central scalar cannot reach.</p>
+<p><strong>What that buys, and what it costs.</strong> It buys a clean statement of where the potential can act: on the momentum and on the velocity, never on the density and never on the spin direction. It costs the expectation that the potential could turn the spin: in this chart it cannot, and §<em>The Spin Transport</em> records the consequence.</p>
+<h2 id="the-kinetic-momentum">The Kinetic Momentum</h2>
+<p>The phase gradient is the four-momentum, and the coupling shifts it.</p>
+<p><strong>The gradient, with the connection.</strong> Adding the temporal slot of $\frac{iϙ}{\hbar}\tilde A_\Phi$ to the phase bracket gives</p>
+<p>$$
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr)
+\qquad\text{whenever}\qquad A_\mu=\frac{\partial\Lambda}{\partial R_\mu},
+$$</p>
+<p>so a pure-gauge potential is absorbed by a reparameterisation of the angle and by nothing else. That is the polar statement of gauge invariance, and it is a statement about the <em>angle</em> and not about the field.</p>
+<p><strong>The momentum.</strong> With $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ the free reading, the coupled reading is</p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi,
+\qquad
+\tilde K_\Phi=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}.
+$$</p>
+<p>Slot by slot this is</p>
+<p>$$
+\hbar c\,\kappa_t=E+ϙ cA_t,
+\qquad
+\hbar\vec\kappa=\vec p+ϙ\vec A,
+$$</p>
+<p>where $\kappa_t$ and $\vec\kappa$ are the components of the covariant wavevector. <strong>The whole of the classical substitution is one addition</strong>, because the scalar and vector potentials are the temporal and spatial slots of one element of $\mathbb{B}_\Phi$. No second rule is needed and no sign can be chosen independently.</p>
+<p><strong>Which of the two is the momentum.</strong> The chart does not by itself decide whether $\tilde K_\Phi$ or $\tilde K_{\Phi,\mathrm{gco}}$ is "the" momentum; it states both and states their relation. The physical momentum is the one the velocity is built from, and the velocity is the boost's, which is §<em>The Kinetic Velocity</em>. The naming is settled there and not here.</p>
+<p><strong>The local character of the statement.</strong> The gradient of the angle is defined at each event, so the shift is a local statement and not an integrated one. This is the polar form's genuine addition over the element form: in the element form the potential appears as a term in the operator; here it appears as a shift of a gradient that can be read off at a point. The two are the same content and they are not the same display.</p>
+<p><strong>What the polar statement does not say.</strong> It does not say that the phase is observable. The angle is a coordinate of the word and the gauge transformation moves it; only differences of the covariant wavevector along a path, and the curvature, are invariant. §<em>The Gauge-Invariant Reparameterisation</em> states which combinations survive.</p>
+<h2 id="the-kinetic-velocity">The Kinetic Velocity</h2>
+<p>The boost is the velocity, and the coupling does not touch the boost.</p>
+<p><strong>The velocity is read from the covariant wavevector.</strong> The parent's mass-shell proposition says that a field whose wavevector satisfies $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ has $\tilde K_\Phi=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ for a boost. With the coupling the same proposition applies to the covariant wavevector:</p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}=ik_m\,\tilde U_{\Psi,\mathrm b}^{-2},
+\qquad
+\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
+\qquad
+\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
+\qquad
+\gamma=\cosh\theta_{\mathrm{rpd}}.
+$$</p>
+<p>The boost in the word is therefore the one the <em>covariant</em> wavevector names. The canonical wavevector is the covariant one less the potential:</p>
+<p>$$
+\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
+$$</p>
+<p><strong>What that says in one sentence.</strong> The velocity is kinetic: it is built from the wavevector the background leaves, and the potential sits entirely in the canonical wavevector. This is the classical statement $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-ϙ\vec A$, and the chart states it as a property of which wavevector names the boost.</p>
+<p><strong>Why the radius does not move.</strong> The added term is central per component and of first degree in the field. It cannot rescale $r$, and it cannot change the magnitude of the boost's rapidity by itself: it shifts the wavevector, and the rapidity is then read from the shifted wavevector by the same mass-shell identity. The invariant is</p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2},
+$$</p>
+<p>and in canonical components it is</p>
+<p>$$
+\Bigl(\frac{E+ϙcA_t}{\hbar c}\Bigr)^{2}-\Bigl|\frac{\vec p+ϙ\vec A}{\hbar}\Bigr|^{2}=-k_m^{2}.
+$$</p>
+<p><strong>The same translated hyperboloid as in the element form.</strong> The radius is $k_m$ and the potential moves the centre. A constant potential therefore shifts every level and opens no gap, and the polar reason is the one-line reason of the element form: a shift of a variable cannot change a radius.</p>
+<p><strong>The velocity is a unit for every field.</strong> $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ holds whatever the coupling, because the boost is a unit by construction and the density is a separate factor. The coupling does not enter that line at all, which is the chart's way of saying that the four-velocity is kinematical.</p>
+<p><strong>The strongest objection, and the answer.</strong> The objection is that the chart has merely renamed: the covariant wavevector is defined as the canonical one plus the potential, so saying that "the boost is carried by the covariant wavevector" is a definition and not a result. The objection is correct as far as it goes, and the answer is the one the parent gives for the mass shell: what the proposition fixes is the <em>direction of the reading</em>. Read from the potential to the frame, the coupling changes the boost, hence the velocity; read from the frame to the potential, the velocity is what survives when the potential is removed. The chart states the identity, and the physical naming is the corpus's convention and not a consequence of the algebra.</p>
+<h2 id="the-gauge-invariant-reparameterisation">The Gauge-Invariant Reparameterisation</h2>
+<p>The angle is a coordinate, so the gauge transformation is a change of coordinate on the same field. The invariant content is what survives it.</p>
+<p><strong>The transformation in the chart.</strong></p>
+<p>$$
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda,
+\qquad
+\tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda,
+\qquad
+r,\ \tilde U_{\Psi,\mathrm b},\ \tilde u_{\mathrm r}\ \text{fixed}.
+$$</p>
+<p>Only the angle moves. The scale, the boost and the rotor are gauge invariant by inspection, because a central scalar phase cannot change a modulus, cannot change a rapidity and cannot turn a rotor.</p>
+<p><strong>The covariant wavevector is invariant.</strong></p>
+<p>$$
+\tilde K_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr)+\frac{ϙ}{\hbar}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde K_{\Phi,\mathrm{gco}} .
+$$</p>
+<p><strong>The invariant is the curvature.</strong> Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco}}$ restricted to its vector part; the operator identity of the covariant-derivative article gives</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
+$$</p>
+<p>and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of <em>Maxwell's Equations in the Biquaternionic Formulation</em>.</p>
+<p><strong>What the chart's invariants are, in one list.</strong> The radius $r$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.</p>
+<p><strong>The field's frame factor is gauge invariant and this is the chart's cleanest sentence.</strong> Since the gauge transformation multiplies the word by a central scalar, the frame factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are untouched. The three things the chart calls frame — the boost, the rotor, and their product — are therefore exactly the gauge-invariant part of the field's decomposition, and the phase is exactly the gauge-dependent part. That is a sharper statement than the element form can make, and it is the reason the polar chart is worth having.</p>
+<p><strong>One qualification.</strong> The word is a bijection onto the N-regular set and the transformation preserves the set, so the transformed field is again N-regular and again has a word. No chart breaks under the transformation. What can break is the <em>smoothness</em>: a transformation with a singularity in $\Lambda$ gives a word that leaves the chart's range at a point, and the parent records the range restrictions for that reason.</p>
+<h2 id="the-spin-transport">The Spin Transport</h2>
+<p>The rotor is the spin and the coupling does not turn it.</p>
+<p><strong>The parent's statement.</strong> The spin direction is $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, the rotor's bracket is the fourth of the four, and the rotor's own rate is set by the mass term: in a moving frame the rotor precesses relative to the boost, and at rest it does not. The parent states the precession, its rate, and the frame in which it is canonical.</p>
+<p><strong>What the connection can do to it.</strong> Nothing direct. The connection is central per component, and a central multiplication acts on the word as a whole; it cannot reach inside the product $e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ to change one factor and not the others. The fourth bracket is therefore untouched by the coupling, as the type table of §<em>The Coupling in Polar Variables</em> records.</p>
+<p><strong>The consequence, stated plainly.</strong> In this chart the magnetic moment is not a rotor rotation. The coupling enters the momentum bracket and the boost bracket; the spin's own transport is the free one. A reader who expects the chart to show Larmor precession as a rotor equation will not find it, and the absence is structural rather than an oversight.</p>
+<p><strong>What the background does to the spin is indirect.</strong> It curves the boost, and the spin's transport follows the boost's. Where the trajectory bends, the frame in which the rotor's rate is zero bends with it, and the observed precession is the composition of the rotor's own rate with the transport of the frame. That composition is what the standard theory calls Thomas precession, and the biquaternionic account of it is <em>The Classical Origin of $g=2$ in Biquaternionic Form</em>, where the expansion is carried out and the two contributions are shown to combine to the Larmor rate with the ratio two.</p>
+<p><strong>Why the chart cannot do more.</strong> The chart's variables are four brackets of four types, and the coupling is confined to two of them by type. A precession of the spin direction would have to be a term in the fourth bracket, and no central element can produce one. The polar chart therefore does not derive the spin's dynamics in a background; it locates the spin and the momentum in different brackets and leaves the coupling to the momentum. That is a real limit on what the polar equation says, and the article prefers to state it rather than to dress it up.</p>
+<p><strong>What survives exactly.</strong> The spin's <em>kinematics</em> is exact and gauge invariant: $\hat s$ is a function of the rotor alone, the rotor is gauge invariant, and the spin direction is therefore an observable of the chart with no gauge ambiguity at all. That is more than the element form states, and it is the polar form's contribution to the spin question.</p>
+<h2 id="what-the-polar-form-adds-and-what-it-does-not">What the Polar Form Adds, and What It Does Not</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>A local reading of the kinetic momentum: the potential shifts the phase gradient, and the shift is visible at each event (§<em>The Kinetic Momentum</em>).</li>
+<li>One object for the whole classical substitution: $\frac{ϙ}{\hbar}\tilde A_\Phi$ carries the scalar and the vector potential together, and the two signs cannot be chosen independently (§<em>The Kinetic Momentum</em>).</li>
+<li>A direct statement of the kinetic velocity: the boost is named by the covariant wavevector, and the canonical one is the covariant one less the potential (§<em>The Kinetic Velocity</em>).</li>
+<li>The gauge-invariant split of the field: the phase is the gauge-dependent part, the three frame factors are the gauge-invariant part (§<em>The Gauge-Invariant Reparameterisation</em>).</li>
+<li>The type table, which says in advance where a central connection can act and where it cannot (§<em>The Coupling in Polar Variables</em>).</li>
+</ul>
+<p><strong>Does not add.</strong></p>
+<ul>
+<li>No new solution. The field is the element form's and the word is a re-coordinatisation of it.</li>
+<li>No new prediction. The equation is the coupled equation of the element form, written in eight real coordinates.</li>
+<li>No derivation of the current beyond the element form's: the chart's current is $J^t=\rho\cosh\theta_{\mathrm{rpd}}$, $J^\eta=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, which is the same object in the chart's letters.</li>
+<li>No spin dynamics in a background, as §<em>The Spin Transport</em> states.</li>
+<li>No closure of the general case: the four brackets are coupled and the chart does not close them.</li>
+</ul>
+<p><strong>The ledger in one paragraph.</strong> The polar coupled equation is the element coupled equation with the word substituted, and the substitution buys three things: the potential as a shift of a gradient, the velocity as the kinetic one, and the field's split into a gauge part and a gauge-invariant part. It buys nothing else. In particular it does not buy a spin equation in the background, and it does not buy any statement about the constraint structure of the field, which is a property of the action and not of the equation. The article that follows this one in the coupled quartet substitutes the word into the <em>action</em> instead, and the constraint structure appears there.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>The spin in the background.</strong> Whether a polar formulation exists in which the fourth bracket carries a coupling term is not settled. The obstacle is stated here as a fact of type: a central connection cannot produce a real-vector contribution, so any such term would need a non-central connection or a different arrangement of the word, and both are beyond the abelian construction. Whether the arrangement exists is open.</p>
+<p><strong>The general field.</strong> The four brackets are coupled and the equation does not close them. The parent records the same underdetermination in the free case. Whether a closure condition can be added — a spin-transport equation chosen on principle rather than by convenience — is the parent's open question and the coupling does not settle it.</p>
+<p><strong>The word's range under gauge transformations.</strong> A gauge transformation with a singular $\Lambda$ carries the word out of its chart's range at the singular set. Whether the range restrictions have a physical reading, or whether they are an artefact of the chart, is not settled here.</p>
+<p><strong>The relative phase and the chart's parameter count.</strong> The mass breaks the relative phase of the two parts (§<em>The Field and Its Phase Symmetry</em> of the element companion), and the word has no parameter for that phase. Whether the absence is a genuine statement — that the relative phase is not a degree of freedom of the N-regular set — or a limitation of the chosen bijection is open.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.</p>
+<p>The coupling enters the logarithmic derivative as one added element, $\frac{iϙ}{\hbar}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.</p>
+<p>The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p+ϙ\vec A$ in the slots. One element, one sign, no independent choice.</p>
+<p>The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.</p>
+<p>The gauge transformation moves the angle and nothing else, so the covariant wavevector and the frame factors are gauge invariant and the phase is not. The invariant is the curvature.</p>
+<p>The spin is the rotor, the rotor is gauge invariant, and the connection cannot turn it. The spin's transport in a background is indirect, through the boost, and the polar chart does not derive it; that is the chart's honest limit and the g=2 article's subject.</p>
+<p>The polar equation is the free pair in variables. It closes for a plane wave in a constant background and it does not close for a general field. The constraint structure enters when the action is asked for, in <em>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The word: scale, central phase, boost, rotor</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>Scale; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ is the density</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
+<td>Central phase; <strong>the gauge-dependent coordinate</strong></td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$</td>
+<td>Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi)$</td>
+<td>Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$</td>
+<td>Potential biquaternion; material sector; coefficients central in the abelian case</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>Covariant derivative, left action</td>
+</tr>
+<tr>
+<td>$\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>The added element: central imaginary slot plus Hermitian vector slot</td>
+</tr>
+<tr>
+<td>$\tilde K_\Phi=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$</td>
+<td>Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$</td>
+<td>Covariant wavevector; gauge invariant; names the boost</td>
+</tr>
+<tr>
+<td>$\kappa_t,\vec\kappa$</td>
+<td>Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=ic\,\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$</td>
+<td>Four-velocity; kinetic</td>
+</tr>
+<tr>
+<td>$\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>Four-vector factor; $\tilde K_{\Phi,\mathrm{gco}}=ik_m\mathcal B_\Psi$</td>
+</tr>
+<tr>
+<td>$i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$</td>
+<td>The coupled phase bracket</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$</td>
+<td>The boost bracket; receives the Hermitian slot</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>Curvature; the gauge invariant</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>Gauge function; $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coupled-dirac-equation-in-biquaternionic-form.html">The Coupled Dirac Equation in Biquaternionic Form</a>, the element form this article re-coordinatises.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>, for the word, the four brackets and the mass-shell proposition.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the operator identity with the curvature.</li>
+<li><a href="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html">The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form</a>, for the action and the current.</li>
+<li><a href="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, where the constraint structure appears.</li>
+<li><a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>, for the current as a pairing.</li>
+<li><a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>, for the spin's transport in a background.</li>
+<li><a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>, for the spin-fluid reading of the four brackets.</li>
+<li><a href="the-gauge-extension-of-the-central-phase-why-the-centre-caps-the-group.html">The Gauge Extension of the Central Phase: Why the Centre Caps the Group</a>, for the localization that produces the coupling.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the covariant derivative in geometric algebra.</li>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the spin-fluid variables and their underdetermination.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

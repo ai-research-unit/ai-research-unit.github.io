@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="superfluids-and-becs-the-grosspitaevskii-equation-as-the-nonlinear-reverse-map"><strong>Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Gross–Pitaevskii equation is the one case in which the reverse map's output is an equation that is written down, solved and measured.</strong> The previous articles argued that a fluid with a pressure maps to a nonlinear wave equation; this one exhibits the fluid, the equation and the measurement. A dilute Bose gas at zero temperature has an order parameter, the order parameter obeys the Gross–Pitaevskii equation, and the fluid's density and phase obey the Madelung pair with a quadratic pressure.</p>
+<p><strong>The direction of the map is the one the section has been arguing.</strong> The order parameter is the fundamental object: it is what the theory is written in and what the experiment measures. The fluid is derived from it. The linear Schrödinger equation is the non-interacting limit of the Gross–Pitaevskii equation, and it is reached by setting the coupling to zero, which is also the limit in which the fluid loses its pressure.</p>
+<p><strong>The constant is written $\hbar$ here because the medium is a condensate, and the same slot is written $\sigma_{\mathrm{dsp}}$ in the map's general form.</strong> The two are the same object at two values of the physics: it is a length squared over a time in the classical dispersion case and an action per particle here, and the second-gradient term is $Q_{\mathrm{qnt}}$ in this article's notation and $Q_{\mathrm{kor}}$ in <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>.</p>
+<p><strong>The article's most useful content is the pair of exact solutions.</strong> A uniform condensate with repulsive interaction gives the chemical potential and the healing length; a trapped condensate gives the Thomas–Fermi profile and its radius; an attractive condensate gives a bright soliton whose amplitude and width are fixed by its chemical potential. Each is exact, each is checked by substitution, and each is a place where the fluid's variables can be read off the order parameter.</p>
+<p><strong>The article closes with the caveat that the block's denial requires.</strong> The vocabulary of superfluidity agrees with the block's and the objects do not: the block's field is one element with no condensate, no broken symmetry and no many-body state. The agreement of formulas is real and the difference of objects is real, and the article states both.</p>
+<h2 id="the-order-parameter-and-the-fluid">The Order Parameter and the Fluid</h2>
+<p><strong>The condensate is described by one complex function and its modulus squared is the density.</strong> Write</p>
+<p>$$
+\psi=\sqrt{\rho_{\mathrm{num}}}\,e^{iS/\hbar},
+\qquad
+\vec v=\frac{1}{m}\nabla S ,
+$$</p>
+<p>with $\rho_{\mathrm{num}}$ the number density of condensed particles and $\vec v$ the velocity of the condensate's flow. The Gross–Pitaevskii equation is</p>
+<p>$$
+i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta\psi+g\lvert\psi\rvert^{2}\psi ,
+$$</p>
+<p>with $g$ the contact coupling, positive for a repulsive interaction and negative for an attractive one.</p>
+<p><strong>Its Madelung pair is the pair of the reverse map with a quadratic pressure.</strong> The imaginary part is the continuity equation, and the real part is the Hamilton–Jacobi equation with the quantum potential and with $V=g\rho_{\mathrm{num}}$. Comparing with the reverse map's relation $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{num}}\mathrm{d}V$ gives</p>
+<p>$$
+p_{\mathrm{th}}=\frac{g}{2}\rho_{\mathrm{num}}^{2},
+$$</p>
+<p>which is the polytrope of exponent $2$ in <a href="the-equation-of-state-and-the-barotropic-condition.html">The Equation of State and the Barotropic Condition</a>. So the contact interaction and the quadratic pressure are one datum, and the article's fluid is the map's fourth row.</p>
+<p><strong>The coupling has a microscopic reading and it is measured.</strong> For a dilute gas of hard spheres, $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ with $a_{\mathrm{sc}}$ the s-wave scattering length. So the nonlinear term of the wave equation is fixed by a two-body scattering measurement, and the fluid's pressure is fixed by the same number.</p>
+<h2 id="two-exact-solutions">Two Exact Solutions</h2>
+<p><strong>The uniform condensate fixes the chemical potential and the healing length.</strong> With $\psi=\sqrt{\rho_0}\exp(-i\mu_{\mathrm{chm}}t'/\hbar)$ and $\mu_{\mathrm{chm}}=g\rho_0$, the equation is satisfied identically: the kinetic term vanishes and the two remaining terms cancel. The chemical potential is the interaction energy per particle, and it is the energy cost of adding one particle to the condensate.</p>
+<p><strong>A disturbance of the uniform state has two scales.</strong> A long-wavelength disturbance propagates at the sound speed</p>
+<p>$$
+c_{\mathrm{s}}^{2}=\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{mass}}}=\frac{g\rho_0}{m},
+$$</p>
+<p>and a short-wavelength disturbance is cut off at the healing length</p>
+<p>$$
+\xi=\frac{\hbar}{\sqrt{2mg\rho_0}}=\frac{\hbar}{\sqrt{2}\,m\,c_{\mathrm{s}}} .
+$$</p>
+<p>The healing length is the distance over which the density recovers from a boundary value, and the two scales are one: their ratio is the only dimensionless combination the uniform state has.</p>
+<p><strong>A trapped condensate gives the Thomas–Fermi profile.</strong> In a harmonic trap $V_{\mathrm{tr}}=\frac12m\omega_{\mathrm{tr}}^{2}r^{2}$, the quantum potential is negligible where the density is large, and the balance of the trap against the interaction gives</p>
+<p>$$
+g\rho_{\mathrm{num}}(r)=\mu_{\mathrm{chm}}-\tfrac12m\omega_{\mathrm{tr}}^{2}r^{2},
+\qquad
+R_{\mathrm{TF}}=\sqrt{\frac{2\mu_{\mathrm{chm}}}{m\omega_{\mathrm{tr}}^{2}}} .
+$$</p>
+<p>The radius is where the density vanishes, and the profile is an inverted parabola. The approximation is the neglect of $Q_{\mathrm{qnt}}$, which is legitimate when $R_{\mathrm{TF}}\gg\xi$ and fails at the edge.</p>
+<p><strong>An attractive condensate gives a bright soliton.</strong> With $g=-g_{\mathrm{att}}<0$ the equation admits</p>
+<p>$$
+\psi=\sqrt{\frac{2\mu_{\mathrm{chm}}}{g_{\mathrm{att}}}}\;\mathrm{sech}\!\left(\frac{\sqrt{2m\mu_{\mathrm{chm}}}}{\hbar}\,x\right)e^{i\mu_{\mathrm{chm}}t'/\hbar},
+$$</p>
+<p>which is checked by substitution: the three terms cancel identically for every $\mu_{\mathrm{chm}}>0$. The phase advances as $+\mu_{\mathrm{chm}}t'/\hbar$, so the state's energy is $-\mu_{\mathrm{chm}}$ and the soliton is bound. Its amplitude and its width are both fixed by $\mu_{\mathrm{chm}}$, so the pulse has one parameter and not two.</p>
+<p><strong>The soliton is the fluid at its most nonlinear and its most rigid.</strong> Its density is a sech squared, its velocity is zero, and its shape is preserved because the dispersion of the kinetic term and the steepening of the interaction cancel exactly. That is the same balance as the Korteweg–de Vries soliton, in a different equation, and it is the reason the two are often mentioned together.</p>
+<h2 id="the-linear-limit">The Linear Limit</h2>
+<p><strong>Setting the coupling to zero gives the free Schrödinger equation.</strong> With $g=0$ the Gross–Pitaevskii equation is $i\hbar\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.</p>
+<p><strong>So the linear equation is the non-interacting limit and not the fundamental law.</strong> The order parameter is the same object in both cases; what changes is whether the interaction is present. A condensate with $g=0$ is a gas of non-interacting bosons, which is the case in which the condensate is a single-particle state and the fluid has nothing to carry but the quantum potential.</p>
+<p><strong>This is the article's contribution to the section's thesis, and it is a physical fact rather than a formal one.</strong> In the one condensed-matter system where a Schrödinger-like equation is fundamental, the equation that is fundamental is the nonlinear one. The linear equation is the idealisation obtained by turning the interaction off, and the interaction is what the experiment measures.</p>
+<h2 id="the-direction">The Direction</h2>
+<p><strong>The order parameter is written first, and the fluid is read from it.</strong> The theory's variable is $\psi$; the density and the velocity are defined from it by the polar decomposition; the pressure is not an independent datum but the interaction written in fluid variables. A reader who wanted to start from the fluid would have to invent $\hbar$, $m$ and $g$, and the three together are the theory.</p>
+<p><strong>The measurement confirms the direction.</strong> The condensate fraction, the healing length around a defect, the Thomas–Fermi radius and the soliton's width are all measured, and each is a measurement of the order parameter's parameters. None of them is a measurement of a pressure in a fluid that was known beforehand.</p>
+<p><strong>The two-fluid model of helium is the historical case, and it is the fluid description of the same direction.</strong> Superfluid helium is described by a normal component and a superfluid component, with the superfluid component's flow irrotational and its circulation quantised in units of $h/m$. The description is derived from the condensate's order parameter, and <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a> is the block's account of the two-fluid construction. The circulation's unit is the same $h/m$ that the field's nodal set gives, and the agreement is an agreement of formulas with two different objects behind them.</p>
+<h2 id="the-caveat">The Caveat</h2>
+<p><strong>The block's denial is about the object and not about the formulas.</strong> <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a> denies that its reading is a superfluid. The denial is exact and it is worth restating in this article's terms: a superfluid is a many-body state with a broken symmetry, an order parameter and a spectrum of excitations; the block's field is one element at each event, with no many-body state, no symmetry to break and no excitations of its own.</p>
+<p><strong>What the two share is the algebra of the polar decomposition and the quantum of circulation.</strong> Both write a complex function as a modulus times a phase, both read the phase's gradient as a velocity, and both find the circulation quantised when the phase winds. That sharing is why the vocabulary transfers, and it is not evidence that the objects are the same.</p>
+<p><strong>The distinction has a testable face.</strong> A condensate's healing length is a physical length set by $g$ and $\rho_0$; the block's field has no healing length, because it has no interaction and no density to heal to. So the two descriptions agree in the formulas that use only $\hbar$ and $m$ and diverge in the formulas that use $g$.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> That the Gross–Pitaevskii equation's Madelung pair is the reverse map's pair with $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$, by comparison of the two. That the uniform state, the sound speed, the healing length, the Thomas–Fermi profile and the bright soliton are exact solutions of the stated equations, each checked by substitution. That $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ for a dilute gas. That the linear Schrödinger equation is the $g=0$ limit.</p>
+<p><strong>Interpretation.</strong> That the direction of explanation is the order parameter to the fluid, and that this is the section's thesis in a physical case. That the agreement of the quantum of circulation with the field's is an agreement of formulas and not of objects is the block's reading, and the healing-length test is what makes it more than a preference.</p>
+<p><strong>Not claimed.</strong> It is not claimed that every superfluid is a dilute Bose gas; helium is strongly interacting and its two-fluid model is not the Gross–Pitaevskii equation. It is not claimed that the block's field is a condensate in any limit; it is not, and the section's thesis does not need it to be. It is not claimed that the bright soliton is stable in three dimensions without a trap; in three dimensions an attractive condensate collapses, and the soliton is a one-dimensional object.</p>
+<h2 id="summary">Summary</h2>
+<p>A dilute Bose gas at zero temperature has one order parameter, and its modulus squared is the density and its phase's gradient over the mass is the velocity.</p>
+<p>The order parameter obeys the Gross–Pitaevskii equation, and its Madelung pair is the reverse map's pair with the quadratic pressure $p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$. The contact coupling $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ is measured by two-body scattering.</p>
+<p>The uniform state fixes the chemical potential $\mu_{\mathrm{chm}}=g\rho_0$, the sound speed $c_{\mathrm{s}}=\sqrt{g\rho_0/m}$ and the healing length $\xi=\hbar/(\sqrt2mc_{\mathrm{s}})$. A trapped condensate has the Thomas–Fermi profile and radius. An attractive condensate has a bright soliton whose amplitude and width are both fixed by $\mu_{\mathrm{chm}}$.</p>
+<p>The linear Schrödinger equation is the $g=0$ limit, and the fluid's pressure vanishes in the same limit. So in the one case where a Schrödinger-like equation is fundamental the equation is the nonlinear one.</p>
+<p>The direction is the order parameter to the fluid. The historical two-fluid model of helium is the same direction, and its quantum of circulation is the $h/m$ that the block's nodal set also gives.</p>
+<p>The block's denial stands: the sharing is of formulas, not of objects, and the healing length is the formula where the two part company.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\psi=\sqrt{\rho_{\mathrm{num}}}e^{iS/\hbar}$</td>
+<td>Order parameter</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}},\ \rho_0$</td>
+<td>Number density and its uniform value</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>Action; the phase is $S/\hbar$</td>
+</tr>
+<tr>
+<td>$\vec v=\nabla S/m$</td>
+<td>Condensate velocity</td>
+</tr>
+<tr>
+<td>$g$</td>
+<td>Contact coupling; $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$</td>
+</tr>
+<tr>
+<td>$a_{\mathrm{sc}}$</td>
+<td>s-wave scattering length</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{chm}}$</td>
+<td>Chemical potential</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{th}}=\frac12g\rho_{\mathrm{num}}^{2}$</td>
+<td>Pressure of the condensate</td>
+</tr>
+<tr>
+<td>$c_{\mathrm{s}}=\sqrt{g\rho_0/m}$</td>
+<td>Sound speed</td>
+</tr>
+<tr>
+<td>$\xi=\hbar/\sqrt{2mg\rho_0}$</td>
+<td>Healing length</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{tr}}=\frac12m\omega_{\mathrm{tr}}^{2}r^{2}$</td>
+<td>Harmonic trap</td>
+</tr>
+<tr>
+<td>$\omega_{\mathrm{tr}}$</td>
+<td>Trap frequency</td>
+</tr>
+<tr>
+<td>$R_{\mathrm{TF}}=\sqrt{2\mu_{\mathrm{chm}}/(m\omega_{\mathrm{tr}}^{2})}$</td>
+<td>Thomas–Fermi radius</td>
+</tr>
+<tr>
+<td>$g_{\mathrm{att}}=-g>0$</td>
+<td>Attractive coupling</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}$</td>
+<td>Quantum potential</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Eugene P. Gross, "Structure of a quantized vortex in boson systems," <em>Nuovo Cimento</em> <strong>20</strong> (1961) 454–477, and Lev P. Pitaevskii, "Vortex lines in an imperfect Bose gas," <em>Soviet Physics JETP</em> <strong>13</strong> (1961) 451–454, for the equation.</li>
+<li>Vitaly L. Ginzburg and Lev P. Pitaevskii, "On the theory of superfluidity," <em>Soviet Physics JETP</em> <strong>7</strong> (1958) 858–861, for the order parameter and the healing length.</li>
+<li>Nikolay N. Bogoliubov, "On the theory of superfluidity," <em>Journal of Physics USSR</em> <strong>11</strong> (1947) 23–32, for the sound speed and the microscopic reading of the coupling.</li>
+<li>Franco Dalfovo, Stefano Giorgini, Lev P. Pitaevskii and Sandro Stringari, "Theory of Bose–Einstein condensation in trapped gases," <em>Reviews of Modern Physics</em> <strong>71</strong> (1999) 463–512, for the Thomas–Fermi profile, the healing length and the solitons.</li>
+<li>Christopher J. Pethick and Henrik Smith, <em>Bose–Einstein Condensation in Dilute Gases</em> (Cambridge University Press, 2002), ch. 6 and 7, for the Gross–Pitaevskii equation and its exact solutions.</li>
+<li>Lev D. Landau and Evgeny M. Lifshitz, <em>Fluid Mechanics</em>, 2nd ed. (Pergamon, 1987), §141, for the two-fluid model of superfluid helium and the criterion for superfluidity.</li>
+<li>The companion articles: <a href="the-equation-of-state-and-the-barotropic-condition.html">The Equation of State and the Barotropic Condition</a>, <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>, <a href="the-direction-of-the-fluid-wave-correspondence-field-by-field.html">The Direction of the Fluid-Wave Correspondence, Field by Field</a>, <a href="the-two-fluid-model-in-biquaternionic-form.html">The Two-Fluid Model in Biquaternionic Form</a>.</li>
+<li><a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>, for the same $h/m$ in the field, and <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>, for the denial this article restates.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin-Velocity Locking on the Degenerate Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-velocity-locking-on-the-degenerate-sector"><strong>Spin-Velocity Locking on the Degenerate Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>On the spectrally degenerate sector the fluid's speed is a function of its spin angle, and the function is fixed by the algebra.</strong> That is the article's whole result. The sector is defined by $B^{2}=0$ with $N\neq0$; on it the two axes of the two frames are orthogonal and the two angles satisfy</p>
+<p>$$
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon,
+\qquad \varepsilon=\pm1,
+$$</p>
+<p>so a field that fixes its spin angle has no freedom left in its rapidity. The velocity is locked to the spin and the lock is not a choice: it is the condition that the element be spectrally degenerate.</p>
+<p><strong>The consequence for the fluid is a one-parameter family of states.</strong> A generic element has eight parameters, four of them angles and axes. On the sector the two angles collapse to one and the two axes are constrained to be orthogonal, so the fluid has a single angle and a single direction to play with besides its scale and phase. Speed, Lorentz factor and helicity are then all functions of that one angle, and the table below is the whole kinematics.</p>
+<p><strong>The lock has two ends and one of them is singular.</strong> At a vanishing spin angle the field is at rest and its spin is along the declared axis. At a spin angle of a half turn the constraint has no finite solution: the rapidity diverges, the velocity tends to the speed of light, and the sector's chart degenerates. Between the two ends the speed is monotonically increasing, and the fully helical state sits at a Lorentz factor of exactly three.</p>
+<p><strong>What the article does not claim.</strong> It does not claim that the sector is realised by any solution of the Dirac equation; it describes the sector and leaves the question of which fields lie on it to the corpus's dynamics. It does not claim that the lock extends off the sector; it holds only where $B^{2}=0$. It does not claim that the lock is a consequence of the field equation; it is a consequence of the algebraic condition.</p>
+<p><strong>The lemma it uses is proved in the companion.</strong> The closed form of $B^{2}$ on the word is <a href="the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html">The Sign ε and the Rigidity Constraint on Σ₁₀</a>'s, and this article quotes it. What this article adds is what the lemma does to the fluid.</p>
+<h2 id="the-sector">The Sector</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>The sector is the set of elements that are invertible and spectrally degenerate.</strong> In the corpus's notation $\Sigma_{10}$ is the set with $N\neq0$ and $B^{2}=0$: the norm does not vanish and the two eigenvalues coincide. <a href="physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a> defines it and gives its physical reading as the defective unit, the element that is reversible without a mode basis.</p>
+<p><strong>The two conditions are independent and both are needed.</strong> $N=Q_t^{2}+B^{2}$ so a vanishing $B^{2}$ with a non-vanishing $N$ requires a non-vanishing $Q_t$: the element is a unit whose vector part is nilpotent. A vanishing $N$ with a vanishing $B^{2}$ is the origin, which is the doubly degenerate sector and a different object.</p>
+<h3 id="two-conditions-on-eight-parameters">Two Conditions on Eight Parameters</h3>
+<p><strong>The sector is the intersection of two real conditions and therefore has six dimensions.</strong> The first condition is that the two axes be orthogonal, $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$, and it is one real equation on the pair of unit vectors. The second is the locking identity, and it is one real equation on the two angles. Both are proved in the next section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>parameter</th>
+<th>generic element</th>
+<th>on $\Sigma_{10}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale $r$</td>
+<td>free</td>
+<td>free</td>
+</tr>
+<tr>
+<td>phase $\theta_{\mathrm{pha}}$</td>
+<td>free</td>
+<td>free</td>
+</tr>
+<tr>
+<td>rapidity $\theta_{\mathrm{rpd}}$</td>
+<td>free</td>
+<td>a function of $\theta_{\mathrm{axr}}$</td>
+</tr>
+<tr>
+<td>boost axis $\vec u_{\mathrm b}$</td>
+<td>free unit vector</td>
+<td>free unit vector</td>
+</tr>
+<tr>
+<td>rotor angle $\theta_{\mathrm{axr}}$</td>
+<td>free</td>
+<td>the independent one</td>
+</tr>
+<tr>
+<td>rotor axis $\vec u_{\mathrm r}$</td>
+<td>free unit vector</td>
+<td>orthogonal to $\vec u_{\mathrm b}$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>8</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count is the sector's dimension and the fluid's degrees of freedom at once.</strong> Six real parameters, of which two are the scale and the phase that no motion uses, leave four for the motion: one angle, one direction, and the two components of the transverse rotor axis that the orthogonality leaves.</p>
+<h2 id="the-locking-identity">The Locking Identity</h2>
+<h3 id="the-lemma">The Lemma</h3>
+<p><strong>The closed form of $B^{2}$ on the word contains the sign $\varepsilon$ and a term that is purely imaginary.</strong></p>
+<p><em>Lemma.</em> With $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ and the shorthand $c_b=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, $s_b=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, $c_a=\cos\frac{\theta_{\mathrm{axr}}}{2}$, $s_a=\sin\frac{\theta_{\mathrm{axr}}}{2}$,</p>
+<p>$$
+\frac{B^{2}}{\Rho^{2}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
+\qquad
+\lvert\varepsilon\rvert^{2}=c_b^{2}c_a^{2}+\kappa^{2}s_b^{2}s_a^{2}.
+$$</p>
+<p><em>Proof.</em> Write $\tilde\Xi=\Rho\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and multiply the two units out. With $\vec u_{\mathrm b}=\vec u$, $\vec u_{\mathrm r}=\vec v$ and $\vec w=\vec u\times\vec v$,</p>
+<p>$$
+\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}
+=\bigl(c_bc_a-i\kappa s_bs_a\bigr)e_t
++c_bs_a\,\vec v+is_bc_a\,\vec u+is_bs_a\,\vec w,
+$$</p>
+<p>so the scalar part is $\varepsilon$ and the vector part is $\vec Q=c_bs_a\vec v+is_bc_a\vec u+is_bs_a\vec w$. Then</p>
+<p>$$
+\vec Q\cdot\vec Q
+=c_b^{2}s_a^{2}-s_b^{2}c_a^{2}-s_b^{2}s_a^{2}\lvert\vec u\times\vec v\rvert^{2}+2i\kappa\,c_bs_as_bc_a,
+$$</p>
+<p>and $\lvert\vec u\times\vec v\rvert^{2}=1-\kappa^{2}$. Replacing $s_a^{2}$ by $1-c_a^{2}$ in the first term turns $c_b^{2}s_a^{2}-s_b^{2}$ into $1-c_b^{2}c_a^{2}$, and the $\kappa^{2}$ term absorbs into $\lvert\varepsilon\rvert^{2}$ as written.</p>
+<p><strong>Checked on six random configurations.</strong> With $\vec u_{\mathrm b}=\vec e_x$, $\vec u_{\mathrm r}$ at cosine $\kappa$, and six random triples of $(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\kappa)$, the computed $B^{2}$ agrees with the display to every printed digit. Two of the six: at $\theta_{\mathrm{rpd}}=0.971$, $\theta_{\mathrm{axr}}=0.935$, $\kappa=0.302$ the value is $0.004741+0.137403i$; at $\theta_{\mathrm{rpd}}=0.217$, $\theta_{\mathrm{axr}}=3.322$, $\kappa=-0.269$ it is $0.992595+0.005292i$.</p>
+<h3 id="the-theorem">The Theorem</h3>
+<p><strong>The sector is exactly the orthogonal locus with the identity's two solutions.</strong></p>
+<p><em>Theorem.</em> $\tilde\Xi$ lies on $\Sigma_{10}$ if and only if $\kappa=0$ and $c_b^{2}c_a^{2}=1$.</p>
+<p><em>Proof.</em> By the lemma, $B^{2}=0$ needs both the real and the imaginary parts of $1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$ to vanish. The imaginary part is $2\kappa c_bc_as_bs_a$, and $c_b>0$ always, so it vanishes exactly when $\kappa=0$ or $s_a=0$ or $s_b=0$. Take the three cases.</p>
+<ul>
+<li>$\kappa=0$: the imaginary part vanishes identically and the real part is $1-c_b^{2}c_a^{2}$, so $B^{2}=0$ is the identity $c_b^{2}c_a^{2}=1$.</li>
+<li>$s_a=0$, that is $\theta_{\mathrm{axr}}=0$ or $\pi$: the imaginary part vanishes, and the real part is $1-c_b^{2}c_a^{2}$ with $c_a^{2}=1$, which is $1-c_b^{2}=-s_b^{2}$, vanishing only at $\theta_{\mathrm{rpd}}=0$. That is the scalar line, which is one point of the first case.</li>
+<li>$s_b=0$, that is $\theta_{\mathrm{rpd}}=0$: the imaginary part vanishes, the real part is $1-c_a^{2}=s_a^{2}$, vanishing only at $\theta_{\mathrm{axr}}=0$. That is again the scalar line.</li>
+</ul>
+<p>So on the complement of the scalar line the imaginary part forces $\kappa=0$, and then the real part forces the identity. The scalar line itself is contained in the first case.</p>
+<p><strong>The theorem's content is that the sector has no skew configurations.</strong> A spectrally degenerate unit cannot have two frames whose axes are at any angle other than a right angle. That is a strong statement and it is what makes the sector a two-parameter family rather than a four-parameter one.</p>
+<h3 id="the-identitys-two-branches">The Identity's Two Branches</h3>
+<p><strong>The identity $c_bc_a=\pm1$ has one branch per sign, and the branches are the two sheets of the sector.</strong> Since $c_b\ge1$ and $\lvert c_a\rvert\le1$, the identity forces $\lvert c_a\rvert\le1$ to be exactly $1/c_b$, so the spin angle and the rapidity are tied monotonically on each sheet.</p>
+<ul>
+<li><strong>The branch with $c_a>0$</strong> is $\theta_{\mathrm{axr}}\in[0,\pi)$, and the spin angle runs through the forward half turn.</li>
+<li><strong>The branch with $c_a<0$</strong> is $\theta_{\mathrm{axr}}\in(\pi,2\pi]$, and the same rapidity is reached by the spin angle on the other side of $\pi$.</li>
+</ul>
+<p><strong>The two sheets are the two signs of $\varepsilon$ and they are not related by a symmetry of the algebra.</strong> <a href="the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html">The Sign ε and the Rigidity Constraint on Σ₁₀</a> treats the sign's range and its complex extension; here only the consequence matters, that the two sheets cover different halves of the spin angle and give the same speed.</p>
+<h2 id="the-kinematics">The Kinematics</h2>
+<h3 id="speed-is-a-function-of-the-spin-angle">Speed Is a Function of the Spin Angle</h3>
+<p><strong>Eliminating the rapidity gives the Lorentz factor directly in the spin angle.</strong> From $c_bc_a=\pm1$, $c_b=1/\lvert c_a\rvert$ and $\cosh\theta_{\mathrm{rpd}}=2c_b^{2}-1$, so</p>
+<p>$$
+\gamma=2\sec^{2}\frac{\theta_{\mathrm{axr}}}{2}-1,
+\qquad
+\frac{v}{c}=\tanh\theta_{\mathrm{rpd}},
+\qquad
+\beta=\sqrt{1-\frac{1}{\gamma^{2}}}.
+$$</p>
+<p><strong>The table is the kinematics of the sector.</strong> Each row is a spin angle, and the speed is not a free entry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\theta_{\mathrm{axr}}$</th>
+<th>$\cos\frac{\theta_{\mathrm{axr}}}{2}$</th>
+<th>$\theta_{\mathrm{rpd}}$</th>
+<th>$\gamma$</th>
+<th>$v/c$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi/2$</td>
+<td>$0.707107$</td>
+<td>$1.76275$</td>
+<td>$3$</td>
+<td>$0.942809$</td>
+</tr>
+<tr>
+<td>$2\pi/3$</td>
+<td>$0.5$</td>
+<td>$2.63392$</td>
+<td>$7$</td>
+<td>$0.989743$</td>
+</tr>
+<tr>
+<td>$5\pi/6$</td>
+<td>$0.258819$</td>
+<td>$4.05518$</td>
+<td>$28.8564$</td>
+<td>$0.999399$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>$0$</td>
+<td>$\infty$</td>
+<td>$\infty$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The numbers are exact where they look exact.</strong> The Lorentz factors $1$, $3$ and $7$ are $2\sec^{2}-1$ at cosines $1$, $2^{-1/2}$ and $1/2$, and the corresponding speeds are $0$, $2\sqrt{2}/3$ and $10\sqrt{2}/7$. Checked against the word: at $\theta_{\mathrm{axr}}=\pi/2$ the computed $B^{2}$ is $4.4\times10^{-16}$ and $\varepsilon=1.000000$, and at $\theta_{\mathrm{axr}}=2\pi/3$ they are $2.2\times10^{-16}$ and $1.000000$, so the locking identity holds to machine zero.</p>
+<p><strong>The monotonicity is the theorem's second face.</strong> Speed rises with the spin's rotation angle, from rest at zero to the speed of light at the half turn, and it does so without bound in the rapidity. A sector field cannot be fast and slowly spinning.</p>
+<h3 id="helicity-in-the-aligned-configuration">Helicity in the Aligned Configuration</h3>
+<p><strong>With the declared axis orthogonal to the rotor axis, the spin direction is a fixed combination of the declared axis and the direction of motion.</strong> Write $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ and take $\vec e_z\perp\vec u_{\mathrm r}$. Then</p>
+<p>$$
+\hat s=\cos\theta_{\mathrm{axr}}\,\vec e_z+\sin\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}\times\vec e_z,
+$$</p>
+<p>and with $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$ the second vector is along $\vec u_{\mathrm b}$ up to the sign of the triple product. In the configuration where $\vec u_{\mathrm r}\times\vec e_z=\vec u_{\mathrm b}$,</p>
+<p>$$
+\frac{\hat s\cdot\vec v}{\lvert\vec v\rvert}=\sin\theta_{\mathrm{axr}},
+\qquad
+\lvert\hat s_{\perp}\rvert=\lvert\cos\theta_{\mathrm{axr}}\rvert.
+$$</p>
+<p><strong>Checked on three sector elements.</strong> At $\theta_{\mathrm{axr}}=0.5$ the spin is $(0.4794,0,0.8776)$ and $\hat s\cdot\hat v=+0.479426$; at $\pi/2$ it is $(1,0,0)$ and $+1.000000$; at $2.0$ it is $(0.9093,0,-0.4161)$ and $+0.909297$. The values are $\sin\theta_{\mathrm{axr}}$ in each case.</p>
+<p><strong>So the sector's fully helical state is at $\gamma=3$ and not at the speed of light.</strong> At $\theta_{\mathrm{axr}}=\pi/2$ the spin is entirely along the motion and the speed is $0.9428c$. That is the article's sharpest physical statement: on this sector the maximum helicity is attained at a definite subluminal speed, because higher speeds belong to larger spin angles whose spin is turning back out of alignment.</p>
+<p><strong>The general configuration has the same structure with a different projection.</strong> Without $\vec e_z\perp\vec u_{\mathrm r}$ the helicity is $\cos\theta_{\mathrm{axr}}(\vec e_z\cdot\hat v)+\sin\theta_{\mathrm{axr}}((\vec u_{\mathrm r}\times\vec e_z)\cdot\hat v)$, so the two terms are weighted by the frame's orientation and the maximum is not attained at $\pi/2$. The lock on the speed is unaffected, because it does not involve the declared axis.</p>
+<h2 id="the-antipode">The Antipode</h2>
+<p><strong>At a spin angle of a half turn the constraint has no finite solution.</strong> The identity reads $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\pm1$, and at $\theta_{\mathrm{axr}}=\pi$ the second factor is zero while the first is at least one, so no rapidity satisfies it.</p>
+<p><strong>The failure is a divergence and not a jump.</strong> As the spin angle approaches $\pi$, the rapidity grows without bound and the velocity tends to $c$. Checked directly on $B^{2}$: at $\theta_{\mathrm{axr}}=\pi$ and $\vec u_{\mathrm r}\perp\vec u_{\mathrm b}$, the value is $+1$ at $\theta_{\mathrm{rpd}}=2$, $+1$ at $8$ and $+1$ at $20$ — the element moves further and further from the sector as the rapidity grows, and $B^{2}$ stays at the value $1-c_b^{2}c_a^{2}=1$ that the theorem predicts.</p>
+<p><strong>The limit is null in the motion and not in the element.</strong> The norm of the element is $\Rho^{2}$ for every rapidity, so the element stays a unit at the antipode's approach: it is the <em>velocity</em> that becomes null, not the field. That distinction matters for the reading, because it says that the sector's far end is a massless limit of the motion at a fixed element and not a massless element.</p>
+<p><strong>What sits at the far end is a transverse spin at the speed of light.</strong> At $\theta_{\mathrm{axr}}=\pi$ the spin direction is $-\vec e_z$, orthogonal to the motion, and the helicity is zero. A massless particle of the standard theory has helicity $\pm1$; this limit has helicity zero, so the sector's far end is not the standard massless state. It is the chart's degeneracy, and the article records it as such.</p>
+<h2 id="what-the-locking-does-not-give">What the Locking Does Not Give</h2>
+<h3 id="it-does-not-impose-the-frenkel-condition">It Does Not Impose the Frenkel Condition</h3>
+<p><strong>The lock says nothing about the spin's transversality to the flow, and on this sector the spin is generally not transverse.</strong> The corpus's Frenkel condition is a statement about the spin tensor, $S^{\mu\nu}v_{\Phi,\nu}=0$, and it is automatic for a spin carried by a real vector: it constrains the tensor and not the vector. A different condition, that the spin vector be orthogonal to the four-velocity, is sometimes given the same name, and it is not the corpus's condition.</p>
+<p><strong>Under that other condition the sector would be almost empty.</strong> With the spin along the motion at $\theta_{\mathrm{axr}}=\pi/2$ the vector is parallel to the velocity and the orthogonality would fail, so the other condition would exclude every sector element except $\theta_{\mathrm{axr}}=0$ and $\pi$. The sector's existence therefore depends on which condition is meant, and <a href="spin-conservation-and-the-frenkel-condition.html">Spin Conservation and the Frenkel Condition</a> fixes which one the corpus uses.</p>
+<h3 id="it-does-not-supply-the-connection">It Does Not Supply the Connection</h3>
+<p><strong>The lock fixes the values of the rapidity and the spin angle and leaves their gradients free.</strong> The four brackets of the polar derivative are still four, and the field equation still constrains them jointly without closing them. On the sector they collapse by one, because the rapidity's gradient is the spin angle's gradient times $\pm\sec(\theta_{\mathrm{axr}}/2)$,</p>
+<p>$$
+\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}
+=\pm\sec\frac{\theta_{\mathrm{axr}}}{2}\,\frac{\partial\theta_{\mathrm{axr}}}{\partial R_\mu},
+$$</p>
+<p>with the sign the branch's, so the velocity's transport is tied to the spin's — but the spin's transport equation is still missing, and the sector does not supply it.</p>
+<p><strong>That is the honest limit of the article's result.</strong> The lock is a constraint on the state and not a dynamics. It reduces the number of independent fields and it does not close the system.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> The closed form of $B^{2}/\Rho^{2}$, checked on six configurations. The theorem that $\Sigma_{10}$ is exactly the orthogonal locus with $c_b^{2}c_a^{2}=1$, proved from that form. The dimension count of six. The kinematic table, checked against the word at three spin angles. The absence of a finite rapidity at the antipode, checked at three rapidities. The helicity formula in the aligned configuration, checked at three angles.</p>
+<p><strong>Interpretation.</strong> That the sector is a fluid with one internal angle. That the fully helical state's speed of $0.9428c$ is a property of the sector rather than an artefact of the coordinates. It is not a prediction, because no solution of the Dirac equation is known to lie on the sector. That the antipode's null velocity is the chart's degeneracy rather than a massless particle. Each is argued here and none is proved.</p>
+<p><strong>Not claimed.</strong> It is not claimed that any solution of the Dirac equation lies on the sector; the corpus has not constructed one. It is not claimed that the sector is stable or reachable. It is not claimed that the helicity statement is frame independent; it is stated in the aligned configuration and the general formula is given.</p>
+<h2 id="summary">Summary</h2>
+<p>On the spectrally degenerate sector $B^{2}=0$ with $N\neq0$ the two frames' axes are necessarily orthogonal, and the two angles satisfy $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\pm1$. The sector therefore has six real parameters against the generic eight, and its motion has one independent angle.</p>
+<p>The Lorentz factor is $2\sec^{2}(\theta_{\mathrm{axr}}/2)-1$, so the speed is a function of the spin angle: rest at zero, $\gamma=3$ at a quarter turn, $\gamma=7$ at a third of a turn, and the speed of light at a half turn, where no finite rapidity solves the identity.</p>
+<p>In the aligned configuration the spin's component along the motion is $\sin\theta_{\mathrm{axr}}$, so the fully helical state sits at $\gamma=3$ and $0.9428c$, and the maximally transverse states sit at the two ends.</p>
+<p>The lock is a constraint on the state and not a dynamics: it ties the velocity's gradient to the spin's and leaves the spin's transport equation open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>The sector $N\neq0$, $B^{2}=0$</td>
+</tr>
+<tr>
+<td>$B^{2}=-\vec Q\cdot\vec Q$</td>
+<td>Square of the element's vector part</td>
+</tr>
+<tr>
+<td>$\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$</td>
+<td>Cosine between the boost and rotor axes</td>
+</tr>
+<tr>
+<td>$c_b,s_b$</td>
+<td>$\cosh$, $\sinh$ of half the rapidity</td>
+</tr>
+<tr>
+<td>$c_a,s_a$</td>
+<td>$\cos$, $\sin$ of half the rotor angle</td>
+</tr>
+<tr>
+<td>$\varepsilon=\Xi_t/\Rho$</td>
+<td>Scalar part relative to the modulus</td>
+</tr>
+<tr>
+<td>$\Rho=r\,e^{i\theta_{\mathrm{pha}}}$</td>
+<td>Modulus of the norm</td>
+</tr>
+<tr>
+<td>$\gamma=\cosh\theta_{\mathrm{rpd}}$</td>
+<td>Lorentz factor</td>
+</tr>
+<tr>
+<td>$\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>Spin direction</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the spin fluid and the role of the spin angle.</li>
+<li>David Hestenes, "Space–time structure of the Dirac theory," in <em>Clifford Algebras and their Applications in Mathematical Physics</em> (Reidel, 1986), for the rotor reading of the spin and the velocity.</li>
+<li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), for the relativistic spin fluid's kinematics.</li>
+<li>The companion articles: <a href="the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html">The Sign ε and the Rigidity Constraint on Σ₁₀</a>, <a href="physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, <a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>, <a href="the-non-uniqueness-of-the-spin-fluid.html">The Non-Uniqueness of the Spin Fluid</a>, <a href="the-current-algebra.html">The Current Algebra</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

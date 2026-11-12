@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables"><strong>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article substitutes the polar word into the coupled action of <em>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form</em> and reads what the substitution gives. It is the fourth member of the coupled quartet: the element equation, the polar equation, the element action, and this one.</p>
+<p><strong>The substitution.</strong> The word</p>
+<p>$$
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
+$$</p>
+<p>is a bijection onto the N-regular set, with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi)$. The action is a functional of the pair $(\tilde\Xi_L,\tilde\Xi_R)$; the word is one word for the whole element; and the substitution is therefore a change of variables on the functional and not a new functional. <strong>That much is bookkeeping, and this article says so at the start.</strong></p>
+<p><strong>What is not bookkeeping.</strong> A change of variables can be invertible on the fields and still change what the variation <em>does</em>, because the action's derivatives are taken before the substitution. Substitute a word with eight parameters into a first-order functional and the functional becomes first order in eight parameters — and first order in eight parameters is a <strong>constrained system</strong>. Some of the eight velocities do not appear. Some of the eight conjugate momenta vanish identically. The Euler–Lagrange equations are then not eight evolution equations; they are two evolution equations and six constraints, and a variational principle of that shape requires a constraint analysis before its content can be read.</p>
+<p><strong>Three things are established.</strong></p>
+<p><em>First, the action in the word.</em> The kinetic term becomes the phase's term and nothing else: the scale, the boost and the rotor contribute to it only through the density, and the density is a canonical function of the parameters. The potential term becomes the potential as a function of the six non-scale, non-phase parameters. The action is</p>
+<p>$$
+S=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho\,V\Bigr]
+$$</p>
+<p>with $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the potential's scalar part in the frame, and it carries no velocity for any parameter other than the phase.</p>
+<p><em>Second, the constraint structure.</em> Six of the eight Euler–Lagrange equations contain no time derivative and are constraints on the parameters; the two that do are the evolution of $r$ and of $\theta_{\mathrm{pha}}$. The constraints are not optional and they are not multipliers: the parameterisation is exact, so no Lagrange multiplier is needed for the unit conditions, and the constraints are <em>equations of motion</em> of the constrained system. Getting this distinction right is the article's main technical point.</p>
+<p><em>Third, the honest limit.</em> Whether the constrained system's solutions are the coupled pair's solutions is <strong>not established here</strong>. The equivalence is formal — the word is a bijection, so the variation of the action in the eight parameters and the variation in the element are the same variation — but the <em>flow</em> that the constrained system generates has not been shown to be the pair's flow. That is the article's open question and it is stated as such, not concealed.</p>
+<p><strong>The two settings.</strong> The connection is taken constant, with constant coefficients, because that is the setting in which the parameters are coordinates on a fixed frame. In the operator setting the word's rapidity and rotor angle become fields and the action acquires gradient terms for them; the structure is the standard one of the quantum hydrodynamics of a spin fluid, and the article states it in §<em>The Operator Setting</em> without deriving it.</p>
+<h2 id="the-action-in-the-word">The Action in the Word</h2>
+<p>Substituting the word into the coupled action is a computation in three parts: the kinetic terms, the mass terms and the potential. The first two are the parent polar article's and the third is the coupling's.</p>
+<p><strong>The kinetic terms.</strong> The parent's identity is</p>
+<p>$$
+\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R\Bigr]
+=\tilde\Xi\text{-bilinear}\;\Longrightarrow\;
+-\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}+\text{a total divergence},
+$$</p>
+<p>and its content is a statement about types. Differentiate the word, divide by it, and the four brackets appear: the scale bracket, the phase bracket, the boost bracket and the rotor bracket. The pairing takes the scalar part, and the scalar part of a product of brackets vanishes unless the types match. The scale bracket is a real scalar and contributes with the phase bracket's central imaginary part; the boost bracket is Hermitian and the rotor bracket is a real vector, and the two of them pair with each other. What survives the temporal slot is the phase's derivative times the density, and the rest is a divergence.</p>
+<p><strong>The statement, in the chart's letters.</strong></p>
+<p>$$
+\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R\Bigr]
+=-\hbar c\int\mathrm{d}^{4}r\;\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}+\text{boundary},
+$$</p>
+<p>with $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$. <strong>The coefficient is $\cosh\theta_{\mathrm{rpd}}$ and not one</strong>, and the reason is the one the element article's Noether current already gives: the density of this field is not $r^{2}$ but $r^{2}\cosh\theta_{\mathrm{rpd}}$, because the four-velocity's temporal slot is $\cosh\theta_{\mathrm{rpd}}$ and the density is the temporal slot of the current. The boost's rapidity is therefore in the kinetic term, and the article writes it out rather than absorbing it, because the absorption would hide the only place where the boost enters the action.</p>
+<p><strong>Why the rotor contributes nothing to the kinetic term.</strong> The rotor's bracket is a real vector and its only partner in the scalar part is the boost bracket, which is Hermitian; the product of a Hermitian and a real vector is a material-sector element whose scalar part vanishes in the temporal slot. The rotor's dynamics therefore enters the action only through the potential term's dependence on $\theta_{\mathrm{axr}}$, and that is a fact about the pairing and not a choice.</p>
+<p><strong>The mass terms.</strong> The mass term is $\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L$, and in the chart it is a function of the parameters with no derivative. The parent polar article's mass-term proposition gives the relation between the parts, $\tilde\Xi_0^{L}=-\mathcal B_\Psi\tilde\Xi_0^{R}$ with $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and the scalar part of the mass term is therefore a fixed multiple of $r^{2}$. The mass enters the action as an algebraic term and never as a velocity; that is the reason the action has one velocity and not four.</p>
+<p><strong>The potential.</strong> The coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}$, and because $\tilde A_\Phi$ is central per component it passes through $\tilde\Xi^{-1}$:</p>
+<p>$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=\tilde\Xi^{-1}\tilde\nabla_\Phi\tilde\Xi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
+$$</p>
+<p>So the potential adds one algebraic term and no derivative, and the action's potential term is</p>
+<p>$$
+-\rho\,V,\qquad
+V=\text{the scalar part of the frame's image of }\tfrac{ϙ}{\hbar}\tilde A_\Phi,
+$$</p>
+<p>with $V$ a real function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$ and independent of $r$ and $\theta_{\mathrm{pha}}$. <strong>The independence of $r$ is what makes the scale's momentum vanish</strong> and it is §<em>The Constraint Structure</em>'s first fact.</p>
+<p><strong>Which slots of the potential reach which bracket.</strong> Decompose as in the polar companion: the temporal slot $\frac{iϙ}{\hbar}A_t$ is central imaginary, the spatial slots $\frac{iϙ}{\hbar}A_\eta\vec e_\eta$ are Hermitian. The potential therefore adds to the <em>phase bracket</em> and to the <em>boost bracket</em>, and it cannot reach the scale bracket or the rotor bracket. In the action that shows up as the structure of $V$: it depends on the boost's rapidity and axis through the Hermitian slot, and it depends on $\theta_{\mathrm{pha}}$ not at all.</p>
+<p><strong>The action, written once.</strong></p>
+<p>$$
+\boxed{\;S=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho\,V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})-m c^{2}\,r^{2}\Bigr]\;}
+$$</p>
+<p>with $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$. The third term is the mass's, written in the chart's letters; the second is the potential's; the first is the only term with a velocity.</p>
+<p><strong>One caution about the first term's coefficient.</strong> The coefficient $\hbar c\rho$ contains the rapidity, so the action is <em>not</em> linear in the velocities in the naive sense: $\rho$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.</p>
+<h2 id="the-constraint-structure">The Constraint Structure</h2>
+<p>The action is first order in eight parameters, one of which has its velocity in the action. That single fact fixes the whole constraint structure.</p>
+<p><strong>The conjugate momenta.</strong> With $\mathcal{L}$ the integrand,</p>
+<p>$$
+\pi_{r}=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}r)}=0,
+\qquad
+\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho,
+\qquad
+\pi_{\theta_{\mathrm{rpd}}}=\pi_{\theta_{\mathrm{axr}}}=\pi_{u_{\mathrm b}}=\pi_{u_{\mathrm r}}=0 .
+$$</p>
+<p><strong>Seven of the eight momenta either vanish or are fixed functions of the coordinates.</strong> Only $\pi_{\theta_{\mathrm{pha}}}$ is a genuine momentum, and even it is not independent: it is $-\hbar c\rho$, a function of $r$ and $\theta_{\mathrm{rpd}}$.</p>
+<p><strong>The count.</strong> Eight parameters, eight Euler–Lagrange equations, of which two carry a time derivative — the equation of $r$ and the equation of $\theta_{\mathrm{pha}}$ — and six do not. The six without a time derivative are <strong>constraints</strong>, and their number is the number of parameters whose velocity the action does not contain.</p>
+<p><strong>The constraint equations.</strong> Varying the six parameters whose velocities are absent gives</p>
+<p>$$
+\frac{\partial}{\partial p}\bigl(\rho V\bigr)=0
+\qquad\text{for}\qquad p\in\{\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r}\},
+$$</p>
+<p>which is six equations on six parameters because the two axes are unit vectors and are counted with their own conditions. The content is that the potential's frame-dependence must be stationary: the frame sits where the potential is extremal in the frame variables.</p>
+<p><strong>The two evolution equations.</strong> Varying $r$ and $\theta_{\mathrm{pha}}$ gives</p>
+<p>$$
+-\hbar c\cosh\theta_{\mathrm{rpd}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-V-mc^{2}=0,
+\qquad
+\partial_{r'_t}\bigl(r^{2}\cosh\theta_{\mathrm{rpd}}\bigr)=0 .
+$$</p>
+<p>The second is the continuity equation with the density $\rho$; the first is the guidance equation with the potential and the mass added. In the chart's letters these are the Madelung pair with a boost factor, and the boost factor is the density's.</p>
+<p><strong>No Lagrange multipliers for the unit conditions.</strong> This is the point on which the polar parameterisation earns its place. The boost $\tilde U_{\Psi,\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ are units <em>by construction</em>, because they are exponentials of a rapidity times an axis and of an angle times an axis; the axes are unit vectors and the parameterisation respects that. No condition $\tilde U\tilde U^{\natural}=e_t$ has to be imposed, so no multiplier is needed for it. <strong>The tensor formulations of the spin fluid need three multipliers for exactly these conditions</strong>, and the article's contribution is to record that the exact parameterisation removes them.</p>
+<p><strong>No multipliers is not no constraints.</strong> The six equations above are constraints, and they are Euler–Lagrange equations of the same functional; they are not multipliers and they are not optional. A reader who takes "no multipliers" for "no constraints" has the wrong picture, and the distinction is the article's main technical point.</p>
+<p><strong>What kind of constraints.</strong> They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate gauge transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §<em>Open Questions</em> says so.</p>
+<h2 id="which-currents-the-word-produces">Which Currents the Word Produces</h2>
+<p>The word has a phase, and a phase has a current. The current the word produces is not the current the element action produces, and the difference is the subject of this section.</p>
+<p><strong>The phase current.</strong> Because the action depends on $\theta_{\mathrm{pha}}$ only through its derivative, the phase is a cyclic coordinate and the conjugate momentum is conserved:</p>
+<p>$$
+\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho=\text{constant},
+\qquad
+\partial_{r'_t}\rho=0 .
+$$</p>
+<p>This is the Noether current of the word's phase symmetry, and it is the statement that the density is conserved along the flow.</p>
+<p><strong>What the element action produces.</strong> The element action's local-phase Noether current is the display of the element companion: a sum over the parts in the temporal slot and a difference in the spatial slots, which is the Gordon pairing and which equals the chart's $\rho\cosh\theta_{\mathrm{rpd}}$ and $\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$.</p>
+<p><strong>The two are not the same object, and the difference is a spatial slot.</strong> The word's phase current is the temporal slot of the element current and nothing else. The element current's spatial slots come from the boost, not from the phase, and the word's parameterisation does not produce them from the phase's symmetry: it produces them from the boost's. A variational principle in the word therefore has <em>two</em> symmetries where the element action has one — the phase's and the boost's — and the element action's current is the combination of the two.</p>
+<p><strong>Why this matters, stated plainly.</strong> The element companion's desired transformation is a phase rotating at one rate and a boost at another. In the word, that transformation is available as two independent one-parameter flows, because the phase and the rapidity are independent parameters. In the element action it is not: the action's symmetry is the phase alone, and the boost is not a symmetry of the action but a coordinate of the field.</p>
+<p><strong>The consequence for the reconstruction question.</strong> If the polar variational principle is to reproduce the element action's current — the one the equation needs — then the boost's flow must be the second half of it, and the two flows must combine with the two rates. The word supplies both flows; the action supplies one symmetry. Whether the constrained system's Dirac analysis supplies the second is exactly the reconstruction question, and the article states it as a conjecture in the next section and does not prove it.</p>
+<p><strong>What is not claimed.</strong> Nothing in this section says the word's phase current is wrong. It is the correct current of the current that the word's phase generates. What it is not is the element action's current, and the article declines to identify the two.</p>
+<h2 id="the-reconstruction-conjecture">The Reconstruction Conjecture</h2>
+<p><strong>The statement.</strong> Suppose the coupled equation, written for a general element, has a conserved current; suppose further that the current is the one the field's own parameters define, that is, the phase current together with the boost current; then the local symmetry that the current generates is a local phase flow combined with a local boost, and the flow's operator is the word's boost and rotor. <strong>The conjecture is that the constrained system of §<em>The Constraint Structure</em>, once its Dirac brackets are computed, generates exactly this flow.</strong></p>
+<p><strong>Why it is a conjecture and not a theorem.</strong> The equivalence of the two functionals is formal and follows from the bijection. What does not follow is that the <em>flow</em> generated by the constrained system's brackets is the flow the equation defines. A degenerate action can be equivalent to a non-degenerate one as a functional and still fail to reproduce its flow, because the constraint surface can be too small or the brackets can differ from the Poisson brackets by terms that do not vanish on it.</p>
+<p><strong>The strongest objection.</strong> Any conserved current can be presented as the current of <em>some</em> symmetry: given a current, one can always write down a transformation that generates it. So the conjecture's hypothesis — "the current is the one the field's own parameters define" — does not single out a current from all possible currents, and a construction that does not single out its object has not derived anything.</p>
+<p><strong>The partial answer, and its limit.</strong> The objection is correct, and the partial answer is the one the element companion gives: the requirement is not merely that the current be conserved but that it be the <em>pairing</em> the algebra supplies, with the two parts entering with opposite signs. In the word, that requirement is the requirement that the phase flow and the boost flow combine at the two rates. The partial answer's limit is that it replaces one selection problem by another: the pairing is the algebra's, but the choice of frame units inside the pairing is the frame's (§<em>The Current</em> of the element companion). So the conjecture is well posed only relative to a frame.</p>
+<p><strong>What would settle it.</strong> The Dirac brackets of the six constraints, computed with the four-bracket structure in place of the parameter structure, and the verification that the resulting flow reproduces $\partial_{r'_t}\tilde\Xi=-i\tilde K_\Phi\tilde\Xi$ up to the gauge factor. This is a finite computation on a system with eight parameters and six constraints, and it is not attempted here.</p>
+<p><strong>What the article claims without the conjecture.</strong> Everything in §<em>The Action in the Word</em> and §<em>The Constraint Structure</em> stands without the conjecture: the action, the momenta, the two evolution equations, the six constraints, and the absence of multipliers for the unit conditions. The conjecture is what would connect them to the equation, and the connection is what is missing.</p>
+<h2 id="the-bracket-expansion">The Bracket Expansion</h2>
+<p>The four brackets are the decomposition of the logarithmic derivative, and the coupling acts on two of them. That statement is exact, it does not depend on the conjecture, and it is the article's clearest structural result.</p>
+<p><strong>The four brackets, with the coupling.</strong> For each component,</p>
+<p>$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+=\frac{1}{2}\partial_\mu\ln\rho
++i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu^{\,t}\Bigr)
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\frac{i\,ϙ}{\hbar}A_\mu^{\,\eta}\vec e_\eta
++\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r},
+$$</p>
+<p>where $A_\mu^{\,t}$ and $A_\mu^{\,\eta}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.</p>
+<p><strong>The type table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>type</th>
+<th>coupling's share</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale</td>
+<td>real central scalar</td>
+<td>none</td>
+<td>continuity</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>central imaginary</td>
+<td>temporal slot</td>
+<td>guidance</td>
+</tr>
+<tr>
+<td>boost</td>
+<td>Hermitian</td>
+<td>spatial slots</td>
+<td>velocity transport</td>
+</tr>
+<tr>
+<td>rotor</td>
+<td>real vector</td>
+<td>none</td>
+<td>spin transport</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of four, and the two are the momentum and the velocity.</strong> The potential joins the phase bracket, where the momentum is read, and the boost bracket, where the velocity is read. It cannot join the scale bracket, where the density is read, and it cannot join the rotor bracket, where the spin is read. That is the polar statement of what a central connection can and cannot do, and it is a statement of algebraic type: a central scalar times a field cannot produce a real vector part.</p>
+<p><strong>Why the two-bracket structure is the one to read the coupling from.</strong> It says in advance which physical quantities the potential can shift and which it must leave alone. The density is untouched because the potential is central; the spin direction is untouched for the same reason. The momentum and the velocity are shifted because the potential's two slots have exactly the two types those brackets carry. No computation of the potential's effect on the field is needed beyond the type table.</p>
+<p><strong>The limit of the statement.</strong> The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a gauge phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to <em>Relativistic Mechanics from the Dirac Wave</em>.</p>
+<h2 id="the-operator-setting">The Operator Setting</h2>
+<p>The chart's parameters become fields, and the action acquires gradient terms.</p>
+<p><strong>What changes.</strong> In the operator setting the rapidity $\theta_{\mathrm{rpd}}$ and the rotor angle $\theta_{\mathrm{axr}}$ are functions of position, so the boost bracket and the rotor bracket contribute to the spatial slots of the kinetic term and not only to the temporal one. The action becomes</p>
+<p>$$
+S=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V-mc^{2}r^{2}+\text{terms in }\nabla r,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
+$$</p>
+<p>and the gradient terms are the quantum potential's, in the spin-fluid form.</p>
+<p><strong>The standard counterpart.</strong> The scalar case of this structure is Madelung's variational principle, and the spin case is the Takabayasi–Bohm–Holland hydrodynamics with the spin's own transport law. Both are established in the literature and this article does not derive them: the scalar case is the central-field limit of the parent polar article, and the spin case is the subject of <em>Spin Hydrodynamics in Biquaternionic Form</em>.</p>
+<p><strong>The one thing this article adds to the standard account.</strong> The standard derivations impose the unit conditions with Lagrange multipliers and then impose the spin-transport law as an additional equation, chosen from a family. Here the parameterisation imposes the unit conditions exactly, so the multipliers are absent, and the spin-transport law is the rotor bracket's equation and not an addition. That is a genuine simplification of the <em>presentation</em> and not of the <em>physics</em>: the family of admissible spin-transport laws is still there, in the choice of which parameter is taken as the spin's phase.</p>
+<p><strong>The step that is not taken.</strong> The article does not show that the operator setting's action reduces to the standard one in every case, and it does not show that the constraints close in the operator setting any better than in the constant one. Both are open.</p>
+<h2 id="what-the-polar-variational-principle-adds">What the Polar Variational Principle Adds</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The action in eight real coordinates, with the coupling in the two brackets it can reach and in no others.</li>
+<li>The constraint structure: seven momenta vanishing or fixed, two evolution equations, six constraints.</li>
+<li>The statement that the parameterisation is exact, so no multiplier is needed for the unit conditions — in contrast with the tensor formulations, which need three.</li>
+<li>The distinction, stated sharply, between <em>no multipliers</em> and <em>no constraints</em>.</li>
+<li>The type table, which says in advance where the potential can act.</li>
+</ul>
+<p><strong>Does not add.</strong></p>
+<ul>
+<li>No new solution. The fields are the element companion's, and the word is a change of variables.</li>
+<li>No new prediction. The functional is the element companion's.</li>
+<li>No proof that the constrained system's flow is the coupled equation's flow. That is the conjecture of §<em>The Reconstruction Conjecture</em> and it is not settled.</li>
+<li>No second current from the action. The word has two flows and the action has one symmetry; the combination is the conjecture's business.</li>
+<li>No resolution of the constraint algebra: first class or second class is not determined.</li>
+</ul>
+<p><strong>The ledger in one paragraph.</strong> The polar variational principle is the element variational principle in eight coordinates, and the substitution buys one thing that the element form cannot state as cleanly: the constraints are visible, they are Euler–Lagrange equations, and the exact parameterisation removes the multipliers that the tensor formulations need. It buys nothing else, and in particular it does not buy a derivation of the equation's flow, because that derivation needs the Dirac brackets and they are not computed.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>The constraint algebra.</strong> Whether the six constraints are first class or second class, and what brackets they obey, is the article's central open question. The computation is finite and is not attempted here. Until it is done, the reconstruction conjecture cannot be tested.</p>
+<p><strong>The reconstruction conjecture.</strong> §<em>The Reconstruction Conjecture</em> states it, states the strongest objection to it, and states what would settle it. The objection — that a conserved current can always be presented as some symmetry's current — is not answered in general, and the partial answer relative to a frame is the most the article can say.</p>
+<p><strong>The two flows and the one symmetry.</strong> The word has a phase flow and a boost flow; the action has one symmetry. Whether the constrained system supplies the second flow is the same question as the conjecture's, approached from the other side. A computation of the boost's Noether charge in the constrained system, and its comparison with the pairing's spatial slots, would settle it.</p>
+<p><strong>The frame's role.</strong> The pairing needs fixed frame units and the word's parameters are read in a fixed frame. Whether the frame's choice is a gauge freedom of the polar formulation, or a genuine datum, is not settled and is the same question the element companion's open questions record.</p>
+<p><strong>The operator setting's closure.</strong> Whether the constraint structure closes in the operator setting, where the rapidity and the rotor angle are fields, is not attempted. The standard spin-fluid literature suggests it does not close without an additional transport law, and the corpus has not settled which law the biquaternionic arrangement selects.</p>
+<h2 id="summary">Summary</h2>
+<p>The polar coupled action is the coupled action with the word substituted, and in the chart it is</p>
+<p>$$
+S=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V-mc^{2}r^{2}\Bigr],
+\qquad
+\rho=r^{2}\cosh\theta_{\mathrm{rpd}},
+$$</p>
+<p>with one velocity, the phase's, and a coefficient that carries the boost's rapidity.</p>
+<p>The action is a constrained system. Seven of the eight conjugate momenta vanish or are fixed functions of the coordinates; two Euler–Lagrange equations carry time derivatives, the continuity equation for $\rho$ and the guidance equation, and six are constraints on the frame variables.</p>
+<p>The parameterisation is exact, so the unit conditions need no Lagrange multiplier. The six constraints are nonetheless there and they are Euler–Lagrange equations. The absence of multipliers is not the absence of constraints, and the distinction is the article's main technical point.</p>
+<p>The word's phase current is the temporal slot of the element action's current and not the whole of it. The element current's spatial slots come from the boost, so the word has two flows where the action has one symmetry, and combining them at two rates is the reconstruction conjecture.</p>
+<p>The conjecture is stated, its strongest objection is stated, and it is not proved. What would prove it is the Dirac analysis of the six constraints, and that analysis is not carried out here.</p>
+<p>The coupling's place is exact and independent of the conjecture: the potential joins the phase bracket and the boost bracket and neither of the other two, by algebraic type alone. The density and the spin direction are what a central connection cannot touch.</p>
+<p>The polar variational principle's genuine gain is therefore structural and not dynamical: the constraints are visible, the multipliers are gone, and the coupling's reach is read off a table of types.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The word; a bijection onto the N-regular set</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>Scale; the density is not $r^{2}$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{pha}}$</td>
+<td>Phase; the only parameter with a velocity in the action</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$</td>
+<td>Rapidity and axis of the boost</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi)$</td>
+<td>Rotor angle</td>
+</tr>
+<tr>
+<td>$\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>Density; the temporal slot of the current</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>Potential's scalar part in the frame; independent of $r$ and $\theta_{\mathrm{pha}}$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>The polar action; one velocity, six constraints</td>
+</tr>
+<tr>
+<td>$\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho$</td>
+<td>The only genuine momentum; conserved</td>
+</tr>
+<tr>
+<td>$\pi_{r},\pi_{\theta_{\mathrm{rpd}}},\pi_{\theta_{\mathrm{axr}}},\pi_{u_{\mathrm b}},\pi_{u_{\mathrm r}}$</td>
+<td>Zero; the primary constraints' origin</td>
+</tr>
+<tr>
+<td>$\partial(\rho V)/\partial p=0$</td>
+<td>The six constraint equations</td>
+</tr>
+<tr>
+<td>$\partial_{r'_t}(r^{2}\cosh\theta_{\mathrm{rpd}})=0$</td>
+<td>Continuity</td>
+</tr>
+<tr>
+<td>$-\hbar c\cosh\theta_{\mathrm{rpd}}\partial_{r'_t}\theta_{\mathrm{pha}}-V-mc^{2}=0$</td>
+<td>Guidance</td>
+</tr>
+<tr>
+<td>scale, phase, boost, rotor</td>
+<td>The four brackets; real scalar, central imaginary, Hermitian, real vector</td>
+</tr>
+<tr>
+<td>$\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>Four-vector factor; the mass term's operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html">The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form</a>, the action this article re-coordinatises.</li>
+<li><a href="the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Coupled Dirac Equation in Biquaternionic Polar Variables</a>, the equation in the chart, without the action.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>, for the word, the four brackets and the mass-term proposition.</li>
+<li><a href="the-variational-principle-and-the-dirac-equation-in-biquaternionic-form.html">The Variational Principle and the Dirac Equation in Biquaternionic Form</a>, for the free action's structure and the count of the pair.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the localization that produces the coupling.</li>
+<li><a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>, for the four brackets as the spin fluid's transport laws.</li>
+<li><a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>, for the scalar limit in which the brackets collapse to two.</li>
+<li><a href="the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of $g=2$ in Biquaternionic Form</a>, for the spin's transport in a background.</li>
+<li><a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>, for the pairing's two frame units.</li>
+<li>Erwin Madelung, "Quantentheorie in hydrodynamischer Form," <em>Zeitschrift für Physik</em> <strong>40</strong> (1927) 322–326, for the scalar variational principle.</li>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the tensor formulation and its three multipliers.</li>
+<li>David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," <em>Physical Review</em> <strong>85</strong> (1952) 166–193, for the quantum potential.</li>
+<li>Paul A. M. Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for constraint analysis and the classification of constraints.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

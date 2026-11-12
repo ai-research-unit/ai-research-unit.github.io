@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Equation of State and the Barotropic Condition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-equation-of-state-and-the-barotropic-condition"><strong>The Equation of State and the Barotropic Condition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The law of state is the datum the equations of motion do not supply.</strong> Euler's equation and the continuity equation carry a pressure and never say what it is; the law of state is the extra relation that closes them, and the choice of that relation is the choice of a fluid. Without it the system is one equation short and the pressure is an independent unknown.</p>
+<p><strong>The condition that removes it is barotropicity.</strong> A fluid is barotropic when its pressure is a function of the density alone, so the entropy is not an independent datum and the count falls from five to four. That is the best an ordinary fluid can do, and this article states what it buys, what it costs and where it fails.</p>
+<p><strong>The cost is that the condition creates the previous obstruction.</strong> A baroclinic fluid — one whose pressure depends on a second variable — generates vorticity from rest, by the Bjerknes torque. So the two conditions are not independent: baroclinicity produces exactly the vorticity that <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a> removes. The coupling is stated below with its identity.</p>
+<p><strong>The article also separates two things that a careless reading fuses.</strong> A fluid's force is a pressure force plus whatever else the medium supplies — a body force, a capillary term, a second-gradient stress. Barotropicity is a condition on the pressure alone. It says nothing about the rest, and the rest need not be a local function of the density. That separation is what allows the later article to say that a barotropic fluid is necessary for the reverse map and still not in the map's image.</p>
+<h2 id="the-two-variables">The Two Variables</h2>
+<p><strong>The pressure of a general fluid depends on the density and on the entropy.</strong> Write</p>
+<p>$$
+p_{\mathrm{th}}=p_{\mathrm{th}}\bigl(\rho_{\mathrm{mass}},s_{\mathrm{spc}}\bigr),
+$$</p>
+<p>with $\rho_{\mathrm{mass}}$ the mass density and $s_{\mathrm{spc}}$ the specific entropy. The partial derivatives have names: the square of the sound speed is</p>
+<p>$$
+c_{\mathrm{s}}^{2}=\left(\frac{\partial p_{\mathrm{th}}}{\partial\rho_{\mathrm{mass}}}\right)_{s_{\mathrm{spc}}},
+$$</p>
+<p>the derivative at fixed entropy, and the second derivative is the one that couples the pressure to the thermal variable.</p>
+<p><strong>The count falls by one when the second derivative is dropped.</strong> A general fluid has five continuous data at a point: the density, the three velocity components and the specific entropy. A barotropic fluid has four, because the entropy is no longer independent. That is the whole of the condition's content, and it is the reason the later article can speak of the count closing.</p>
+<p><strong>The barotropic condition is a restriction on the fluid and not on its flow.</strong> It does not say that the flow is isentropic; it says that the pressure does not care. A flow can be barotropic and still change its entropy locally through dissipation, and then the pressure is the same function of the density as before. The condition is about the constitutive law, not about the history.</p>
+<h2 id="the-baroclinic-torque">The Baroclinic Torque</h2>
+<p><strong>A baroclinic fluid generates vorticity from rest.</strong> The vorticity equation of an inviscid fluid is</p>
+<p>$$
+\partial_{t'}\vec\omega_{\mathrm{vrt}}
+=\nabla\times\bigl(\vec v\times\vec\omega_{\mathrm{vrt}}\bigr)
++\frac{\nabla\rho_{\mathrm{mass}}\times\nabla p_{\mathrm{th}}}{\rho_{\mathrm{mass}}^{2}} .
+$$</p>
+<p>The last term is the baroclinic torque, and it is the only source of vorticity in a flow that starts from rest. It vanishes exactly when the two gradients are parallel, which is the case for a barotropic fluid whose pressure is a function of the density: then $\nabla p_{\mathrm{th}}=(\mathrm{d}p_{\mathrm{th}}/\mathrm{d}\rho_{\mathrm{mass}})\nabla\rho_{\mathrm{mass}}$ and the cross product is zero.</p>
+<p><strong>The exact condition is the Gibbs–Duhem relation, and barotropicity is the strong form of it.</strong> The pressure force per unit mass is</p>
+<p>$$
+\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}=\nabla h-T\nabla s_{\mathrm{spc}} ,
+$$</p>
+<p>with $h$ the specific enthalpy, $\mathrm{d}h=T\,\mathrm{d}s_{\mathrm{spc}}+\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$. So the pressure force is a gradient exactly when the flow is isentropic, $\nabla s_{\mathrm{spc}}=\vec 0$; and a barotropic law makes it a gradient whatever the entropy field does, because then $h=h(\rho_{\mathrm{mass}})$ and $\nabla h$ is a function of the density alone. That is why the condition is stated on the law and not on the flow: a barotropic fluid needs no knowledge of its entropy field to be gradient-forced. <a href="the-direction-of-the-fluid-wave-correspondence-field-by-field.html">The Direction of the Fluid-Wave Correspondence, Field by Field</a> uses this form as the force half of its criterion.</p>
+<p><strong>The identity is exact and it is checked by expansion.</strong> Substituting Euler's equation into the curl of the velocity, in two dimensions for definiteness, gives the two terms on the right and nothing else: the pressure gradient contributes the baroclinic term, and the convective term contributes the vorticity transport. No term is dropped and the coefficient of the cross product is $1/\rho_{\mathrm{mass}}^{2}$.</p>
+<p><strong>So the two obstructions are coupled and the coupling runs one way.</strong> A baroclinic flow started from rest becomes rotational, so barotropicity is a sufficient condition for a flow to stay irrotational if it starts irrotational. The converse fails: a barotropic flow can be rotational, because vorticity can be given at the initial time or by a boundary. So barotropicity does not imply irrotationality, and the two conditions are not one condition.</p>
+<p><strong>This is the first place the section's conditions are seen to be a system.</strong> The three obstructions are usually stated as three independent hypotheses. They are not: baroclinicity manufactures vorticity, and viscosity manufactures entropy. A fluid that fails one of them tends to fail another, and the clean case — inviscid, barotropic, irrotational — is a case that has to be maintained rather than assumed.</p>
+<h2 id="the-barotropic-families">The Barotropic Families</h2>
+<p><strong>Four families cover the physics, and each has a name and an exponent.</strong> Write the polytropic law as $p_{\mathrm{th}}=\kappa\rho_{\mathrm{mass}}^{\gamma}$ with $\kappa$ a constant. Then the sound speed follows from the exponent alone, $c_{\mathrm{s}}^{2}=\kappa\gamma\rho_{\mathrm{mass}}^{\gamma-1}$, and the families differ in $\gamma$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Fluid</th>
+<th>$\gamma$</th>
+<th>$p_{\mathrm{th}}$</th>
+<th>$c_{\mathrm{s}}^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Isothermal gas</td>
+<td>$1$</td>
+<td>$\kappa\rho_{\mathrm{mass}}$</td>
+<td>$\kappa$</td>
+</tr>
+<tr>
+<td>Degenerate electron gas, relativistic</td>
+<td>$4/3$</td>
+<td>$\kappa\rho_{\mathrm{mass}}^{4/3}$</td>
+<td>$\frac43\kappa\rho_{\mathrm{mass}}^{1/3}$</td>
+</tr>
+<tr>
+<td>Degenerate electron gas, non-relativistic</td>
+<td>$5/3$</td>
+<td>$\kappa\rho_{\mathrm{mass}}^{5/3}$</td>
+<td>$\frac53\kappa\rho_{\mathrm{mass}}^{2/3}$</td>
+</tr>
+<tr>
+<td>Quadratic law</td>
+<td>$2$</td>
+<td>$\kappa\rho_{\mathrm{mass}}^{2}$</td>
+<td>$2\kappa\rho_{\mathrm{mass}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The isothermal case is the one with a constant sound speed.</strong> A gas held at one temperature has $p_{\mathrm{th}}=\rho_{\mathrm{mass}}k_BT/(\mu_{\mathrm{mol}}m_u)$ with $\mu_{\mathrm{mol}}$ the molar mass in atomic units, so $\gamma=1$ and $c_{\mathrm{s}}^{2}=k_BT/(\mu_{\mathrm{mol}}m_u)$. The constant sound speed is what makes the linear wave equation exact for small disturbances, and the later article returns to it.</p>
+<p><strong>The two middle cases are the ones a stellar interior supplies.</strong> Degeneracy pressure in a dense core has $\gamma=5/3$ when the electrons are non-relativistic and $\gamma=4/3$ when they are ultra-relativistic, and the two exponents give the Chandrasekhar mass its value: the star is stable at $5/3$ and marginal at $4/3$. The pressure is barotropic to excellent accuracy because the temperature is negligible against the degeneracy energy, so the entropy does not enter.</p>
+<p><strong>The quadratic case is the law of a medium with a pairwise interaction.</strong> A contact interaction gives $p_{\mathrm{th}}=\frac{g}{2}\rho_{\mathrm{num}}^{2}$, which is $p_{\mathrm{th}}=\frac{g}{2m_{\mathrm{mrk}}^{2}}\rho_{\mathrm{mass}}^{2}$, so $\gamma=2$ with $\kappa=g/(2m_{\mathrm{mrk}}^{2})$. It is the case in which the later article's nonlinear wave equation is the cubic one, and <a href="superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html">Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map</a> works it out.</p>
+<p><strong>The four rows are one family with one parameter, and the physics is in which parameter nature picks.</strong> That is why the later article can write the nonlinear wave equation with a single function $V(\rho_{\mathrm{num}})$: the exponent is the only thing that changes from one fluid to another.</p>
+<h2 id="where-the-condition-fails">Where the Condition Fails</h2>
+<p><strong>Barotropicity fails wherever a second thermodynamic variable is carried and matters.</strong> Combustion carries the mixture fraction, and the pressure depends on the composition as well as on the density. A stellar interior carries the radiative flux, and the pressure depends on the temperature gradient, which is not a function of the density. The ocean carries salinity and temperature, and the pressure depends on both.</p>
+<p><strong>Each failure has the same shape: an extra advected scalar.</strong> The failing fluid carries a quantity $\chi$ with its own equation $\partial_{t'}\chi+\vec v\cdot\nabla\chi=\text{(source)}$, and the pressure is $p_{\mathrm{th}}(\rho_{\mathrm{mass}},\chi)$. The count is five again, and the fluid is outside the barotropic class for as long as the source does not drive $\chi$ to a function of $\rho_{\mathrm{mass}}$.</p>
+<p><strong>So the condition is a statement about closure, not about thermodynamics.</strong> A fluid is barotropic when its state is one-dimensional. A fluid whose state needs two variables is a fluid with one more degree of freedom than the count of the previous article allows, and the extra degree of freedom has no target in the field.</p>
+<h2 id="the-two-terms-of-the-force">The Two Terms of the Force</h2>
+<p><strong>A medium can supply a force that is not a pressure.</strong> A fluid's force per unit mass is the pressure's gradient plus whatever else acts. Three cases are classical and worth naming. A body force, such as gravity, is a function of position and not of the density. A capillary stress, such as Korteweg's, depends on the gradients of the density and gives a force with two derivatives in it. A viscous stress depends on the strain rate and gives a force with one derivative in it. None of the three is a function of the density's value.</p>
+<p><strong>So barotropicity constrains one term and not the force.</strong> It says the pressure is a function of the density alone; it says nothing about the other terms. The separation is exact and it is what makes the later article's caveat necessary: the reverse map needs the pressure to be local in the density because its nonlinear term is local in the modulus, and it needs the second-gradient term because that term is what the Laplacian becomes. A fluid with the first and not the second is a first-order fluid and lies outside the image; a fluid with the second and not the first is a medium without a law of state.</p>
+<p>$$
+-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}-\nabla Q_{\mathrm{kor}} ,
+$$</p>
+<p>with $Q_{\mathrm{kor}}$ the second-gradient term of <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>. The first term is the pressure's and the second is the medium's, and barotropicity is a statement about the first alone.</p>
+<p><strong>The distinction is also why a barotropic fluid can fail the map and still be a fluid.</strong> A pressureless medium is barotropic in the strongest sense, with $p_{\mathrm{th}}=0$ everywhere, and it can still carry a force that is not local in the density. Barotropicity is therefore a necessary condition of the image and not a sufficient one, and the gap between the two is the second-gradient term.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The ladder from five to two has three rungs and two conditions.</strong> Each rung removes data, and each removal is one article of this section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rung</th>
+<th>Data</th>
+<th>Removed by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General fluid</td>
+<td>$5$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Barotropic fluid</td>
+<td>$4$</td>
+<td>this article: no independent entropy</td>
+</tr>
+<tr>
+<td>Barotropic irrotational fluid</td>
+<td>$2$</td>
+<td>the vorticity article: velocity is a gradient</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two rungs and not one, because neither condition implies the other.</strong> A barotropic fluid can be rotational; an irrotational fluid can be baroclinic. The ladder is a conjunction, and the later article's map is defined on the bottom rung only.</p>
+<p><strong>The bottom rung is the count of a complex amplitude.</strong> An amplitude has two real data, a modulus and an argument, and the bottom rung has the density and the potential. The correspondence of counts is the whole of the reverse map's scope, and the articles of the next blocks are where the amplitude's other components are given names.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> That the pressure force per unit mass is $\nabla h-T\nabla s_{\mathrm{spc}}$ by Gibbs–Duhem, so it is a gradient exactly when the flow is isentropic, and that barotropicity is the sufficient form of that condition. That a general fluid's state needs two variables and a barotropic fluid's needs one, with the count falling from five to four. That the baroclinic torque is $\nabla\rho_{\mathrm{mass}}\times\nabla p_{\mathrm{th}}/\rho_{\mathrm{mass}}^{2}$ and vanishes for a barotropic fluid, by expansion. That the polytropic exponent fixes the sound speed, and that the four families of the table are the ones the physics supplies. That the field's fluid has no thermodynamic pressure and a quantum force that is not local in the density.</p>
+<p><strong>Interpretation.</strong> That the barotropic condition is a <em>closure</em> condition rather than a thermodynamic one, and that it is the fluid's best approximation to having no thermodynamics at all. That the coupling of the obstructions should be read as evidence that the clean case is fragile is a reading of the Bjerknes identity, not a theorem about fluids.</p>
+<p><strong>Not claimed.</strong> It is not claimed that barotropic fluids are rare. They are the norm in the applications that use them, and the table is short because the physics is short. It is not claimed that a baroclinic fluid has no wave equivalent; it is claimed that it is outside the class on which the map of the next article is defined. It is not claimed that the second-gradient term is a pressure: it is the divergence of a stress, which is a different object, and the stress is computed where the medium that carries it is treated.</p>
+<h2 id="summary">Summary</h2>
+<p>A fluid's pressure depends on two variables in general, the density and the specific entropy, and a barotropic fluid's depends on the density alone. The count falls from five to four.</p>
+<p>The baroclinic torque is the source of vorticity in a fluid started from rest, and it vanishes exactly when the pressure is a function of the density. So barotropicity keeps an irrotational flow irrotational, and the converse does not hold.</p>
+<p>By Gibbs–Duhem the pressure force is $\nabla h-T\nabla s_{\mathrm{spc}}$, a gradient exactly when the flow is isentropic. Barotropicity is the stronger hypothesis that makes it a gradient without any knowledge of the entropy field.</p>
+<p>The barotropic families are the polytropes, and the exponent is the whole of the difference between them: $\gamma=1$ isothermal, $\gamma=4/3$ and $\gamma=5/3$ for the degenerate electron gas, $\gamma=2$ for a pairwise interaction.</p>
+<p>The condition fails wherever a second advected scalar matters: combustion, a stellar interior, the ocean. The failure has one shape, an extra variable with its own equation.</p>
+<p>Barotropicity is a condition on the pressure alone, and a medium can carry a force that is not a pressure: a body force, a capillary stress, a viscous stress. The capillary stress is the one the map's image needs, so barotropicity and the second-gradient term are conditions on two different terms of one force, and the map of the next article needs both.</p>
+<p>The ladder from five data to two has two rungs, and neither condition implies the other.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p_{\mathrm{th}}$</td>
+<td>Thermodynamic pressure</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{mass}},\ \rho_{\mathrm{num}}$</td>
+<td>Mass density and number density</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{spc}}$</td>
+<td>Specific entropy</td>
+</tr>
+<tr>
+<td>$c_{\mathrm{s}}^{2}=(\partial p_{\mathrm{th}}/\partial\rho_{\mathrm{mass}})_{s_{\mathrm{spc}}}$</td>
+<td>Square of the sound speed</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>Polytropic constant</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>Polytropic exponent</td>
+</tr>
+<tr>
+<td>$\mu_{\mathrm{mol}}$</td>
+<td>Molar mass in atomic units</td>
+</tr>
+<tr>
+<td>$m_u$</td>
+<td>Atomic mass constant</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td>$\vec\omega_{\mathrm{vrt}}$</td>
+<td>Vorticity, the curl of the velocity</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{kor}}$</td>
+<td>Second-gradient term; the Korteweg term of the map's image</td>
+</tr>
+<tr>
+<td>$g$</td>
+<td>Pairwise-interaction coupling of the quadratic law</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>The second thermodynamic variable of a baroclinic fluid</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>Specific enthalpy; $\mathrm{d}h=T\,\mathrm{d}s_{\mathrm{spc}}+\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Vilhelm Bjerknes, <em>Vorlesungen über hydrodynamische Fernkräfte nach C. A. Bjerknes' Theorie</em> (Barth, Leipzig, 1900–1902), for the circulation theorem and the torque that a baroclinic fluid exerts.</li>
+<li>Subrahmanyan Chandrasekhar, <em>An Introduction to the Study of Stellar Structure</em> (University of Chicago Press, 1939), ch. X, for the polytropes and for the degenerate electron gas at $\gamma=4/3$ and $\gamma=5/3$.</li>
+<li>Lev D. Landau and Evgeny M. Lifshitz, <em>Fluid Mechanics</em>, 2nd ed. (Pergamon, 1987), §§2, 4 and 7, for the law of state, the sound speed and the isentropic conditions.</li>
+<li>George K. Batchelor, <em>An Introduction to Fluid Dynamics</em> (Cambridge University Press, 1967), §3.5, for barotropic and baroclinic flows.</li>
+<li>François Golse, "The Boltzmann equation and its hydrodynamic limits," in <em>Handbook of Mathematical Fluid Dynamics</em>, vol. II (North-Holland, 2003), for the closure problem that barotropicity short-circuits.</li>
+<li>The companion articles: <a href="the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a>, <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a>, <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a>, <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>.</li>
+<li>The application of both terms to a quantum medium is in the spin-zero block of the index, where the second-gradient term is the quantum potential and its stress is computed.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

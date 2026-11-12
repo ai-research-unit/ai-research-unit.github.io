@@ -213,9 +213,10 @@ $$</p>
 <h3 id="every-plane-wave-null-or-not">Every Plane Wave, Null or Not</h3>
 <p>The free directions have a visible consequence.</p>
 <p>$$
-F = \vec A\,\exp(i(\omega r'_t/c - \vec k_\Phi\cdot\vec r)), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k_\Phi \in \mathbb{R}^3,
+F = \vec A\,\exp(i\theta_{\mathrm{pwp}}), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k_\Phi \in \mathbb{R}^3,
 $$</p>
 <p>solves the nonlinear equation for <strong>every</strong> $(\omega, \vec k_\Phi)$, to $5.3 \times 10^{-15}$, and $99$ of the $100$ samplings were <strong>non-null</strong>, $|\vec k_\Phi|^2 \ne \omega^2$. This is the constant-background case of the paper's section 9 theorem, which is stated and verified in <em>Associated Fields</em> below, and it is a genuine and clean statement: the equation is so weak that a constant-amplitude plane wave of any frequency and direction is a solution. But it is the opposite of a dispersion relation. The paper's section 10 supplies $\omega^2 = k^2$ by a separate argument, from the requirement that the phase speed be the speed of light, and that argument is external to the field equation. A reader who takes the abstract literally will be misled; a reader who takes section 10 will not. The paper's own conclusions read the same fact positively, and consistently: the nonlinear free-field equations admit plane waves with a <strong>longitudinal</strong> component, the criterion being a non-zero regular current, and the paper suggests that this can account for light's angular momentum without a purely transverse wave. That interpretation is the one the computation supports — the amplitude is free, hence not forced transverse — and it is the abstract's promise of a <em>dispersion relation</em> that the computation does not support.</p>
+<p>The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.</p>
 <h3 id="superposition">Superposition</h3>
 <p>The equation is not linear, so solutions do not add. Two plane waves of different frequency and direction are each solutions, and their sum is not: over $100$ random sums the residual $\mathrm{Re}\{(F_1 + F_2)^{*}D(F_1 + F_2)\}$ was nonzero in all $100$ cases, by $4.4 \times 10^{1}$ at worst. The failure is the cross term $(F_1^{*}DF_2 + F_2^{*}DF_1)$ and is not a defect; it is the mechanism the paper's sections 13 and 14 work with, where the interaction of two singularities is read as the non-additivity of their fields.</p>
 <p>One case must be separated from that, or the counting misleads. A sum of two <strong>Maxwell</strong> plane waves <em>is</em> a solution, and trivially so, because such a sum is itself a Maxwell field and every Maxwell field is a solution. What fails is the sum of two arbitrary plane waves, where the amplitudes have no reason to be transverse or null: the residual was $4.8 \times 10^{1}$ for arbitrary amplitudes and $2.5 \times 10^{1}$ for amplitudes that are null but otherwise arbitrary, while for the Maxwell pair it was zero. So the non-additivity is genuine, and the one case where it appears to fail is the embedding rather than superposition.</p>
@@ -235,7 +236,7 @@ $$</p>
 <h3 id="associated-fields">Associated Fields</h3>
 <p>The paper's section 9 gives the general way to make solutions, and it is the strongest positive result in the paper. Its statement: if $F_0$ is any solution of the <strong>linear</strong> Maxwell system, and $f$ is the phase factor of a plane wave,</p>
 <p>$$
-f(r'_t,\vec r) = \exp(i(\omega_1 r'_t/c - \vec k_1\cdot\vec r)),
+f(r'_t,\vec r) = \exp(i\theta_{\mathrm{pwp}}),
 \tag{9.1}
 $$</p>
 <p>then the product</p>

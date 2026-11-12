@@ -267,9 +267,10 @@ $$</p>
 <h3 id="the-linear-bag-model">The Linear Bag Model</h3>
 <p>Let $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,</p>
 <p>$$
-Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega r'_t/c},
+Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{i\theta_{\mathrm{pwt}}},
 $$</p>
-<p>obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla_\Phi$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-(\tilde\nabla_\Phi)^{\natural}$. The spatial derivative is the sum $\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ that $\tilde\nabla_\Phi$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t/c}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t/c}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.</p>
+<p>obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla_\Phi$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-(\tilde\nabla_\Phi)^{\natural}$. The spatial derivative is the sum $\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ that $\tilde\nabla_\Phi$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\theta_{\mathrm{pwt}}}}=\overline{Ξ_\omega}\,e^{-i\theta_{\mathrm{pwt}}}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.</p>
+<p>The angle is $\theta_{\mathrm{pwt}}=\omega r'_t/c$: a real frequency times a real interval over $c$, so the angle is real.</p>
 <p>The confinement of the field to $\Omega$ is a <strong>linear boundary condition</strong>: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_\eta u_\eta\vec e_\eta$,</p>
 <p>$$
 \left(\sum_{\eta=1}^{3}u_\eta\,\vec e_\eta\right)Ξ_\omega(\vec q)=i\,Ξ_\omega(\vec q)
@@ -423,7 +424,7 @@ $$</p>
 <td>Generators realized in the informational sector</td>
 </tr>
 <tr>
-<td>$U(C) = \mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$</td>
+<td>$U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$</td>
 <td>Holonomy</td>
 </tr>
 <tr>
@@ -555,22 +556,23 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Kenneth G. Wilson, "Confinement of Quarks," <em>Physical Review D</em> <strong>10</strong> (1974) 2445–2459, for the Wilson loop, the area law, and confinement as a criterion.</li>
-<li>V. V. Kravchenko, "On a Biquaternionic Bag Model," <em>Zeitschrift für Analysis und ihre Anwendungen</em> <strong>14</strong> (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the real-linear dictionary from the source's four-component fields to biquaternions, the removal of the conjugation operator in the mass term, the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$, and the invertibility and Fredholm questions for the shifted operator $D_\alpha$.</li>
-<li>V. V. Kravchenko and M. V. Shapiro, <em>Integral Representations for Spatial Models of Mathematical Physics</em> (Pitman Research Notes in Mathematics 351, Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the operator of singular integration with a biquaternionic parameter, and the boundary-value criteria the bag reduction uses.</li>
-<li>A. W. Thomas, "Chiral Symmetry and the Bag Model: A New Starting Point for Nuclear Physics," <em>Advances in Nuclear Physics</em> <strong>13</strong> (1984) 1–137, for the bag model itself, the confining region and its linear boundary condition.</li>
-<li>John B. Kogut, "An Introduction to Lattice Gauge Theory and Spin Systems," <em>Reviews of Modern Physics</em> <strong>51</strong> (1979) 659–713, for the lattice formulation and the strong-coupling derivation of the area law.</li>
-<li>K. Osterwalder and E. Seiler, "Gauge Field Theories on a Lattice," <em>Annals of Physics</em> <strong>110</strong> (1978) 440–471, for the statement that the area law implies a mass gap.</li>
-<li>Alexander M. Polyakov, <em>Gauge Fields and Strings</em> (Harwood, 1987), for the flux tube, the string picture, and the large-distance behaviour of the loop.</li>
-<li>Gerard 't Hooft, "On the Phase Transition Towards Permanent Quark Confinement," <em>Nuclear Physics B</em> <strong>138</strong> (1978) 1–25, for the confinement criterion and the behaviour of the loop in the two phases.</li>
-<li>Yu. M. Makeenko and A. A. Migdal, "Exact Equation for the Loop Average in Multicolor QCD," <em>Physics Letters B</em> <strong>88</strong> (1979) 135–137, for the loop equation and its large-$N$ closure.</li>
-<li>J. D. Bjorken and E. A. Paschos, "Inelastic Electron–Proton and Gamma–Proton Scattering and the Structure of the Nucleon," <em>Physical Review</em> <strong>185</strong> (1969) 1975–1982, for the parton picture and its scale dependence.</li>
-<li>H. David Politzer, "Reliable Perturbative Results for Strong Interactions?", <em>Physical Review Letters</em> <strong>30</strong> (1973) 1346–1349, for asymptotic freedom and the running of the colour coupling.</li>
-<li>David J. Gross and Frank Wilczek, "Ultraviolet Behavior of Non-Abelian Gauge Theories," <em>Physical Review Letters</em> <strong>30</strong> (1973) 1343–1346, for asymptotic freedom.</li>
-<li>Roman W. Jackiw and Claudio Rebbi, "Vacuum Periodicity in a Yang–Mills Quantum Theory," <em>Physical Review Letters</em> <strong>37</strong> (1976) 172–175, for the topological vacuum structure of the confined phase.</li>
-<li>Huzihiro Araki, "Relative entropy of states of von Neumann algebras," <em>Publications of the Research Institute for Mathematical Sciences</em> <strong>11</strong> (1976) 809–833, for relative entropy, monotonicity, and its behaviour under conditional expectations.</li>
-<li>M. Ohya and D. Petz, <em>Quantum Entropy and Its Use</em> (Springer, 1993), for the monotonicity of relative entropy under completely positive maps and the structure of channels that fix their image.</li>
-<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the channel formalism and the distinguishability measures used here.</li>
 </ul>
+<p>The angle is $\theta_{\mathrm{gau}}$, the integrated gauge function: the charge and the potential are real, so the angle is real.
+- V. V. Kravchenko, "On a Biquaternionic Bag Model," <em>Zeitschrift für Analysis und ihre Anwendungen</em> <strong>14</strong> (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the real-linear dictionary from the source's four-component fields to biquaternions, the removal of the conjugation operator in the mass term, the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$, and the invertibility and Fredholm questions for the shifted operator $D_\alpha$.
+- V. V. Kravchenko and M. V. Shapiro, <em>Integral Representations for Spatial Models of Mathematical Physics</em> (Pitman Research Notes in Mathematics 351, Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the operator of singular integration with a biquaternionic parameter, and the boundary-value criteria the bag reduction uses.
+- A. W. Thomas, "Chiral Symmetry and the Bag Model: A New Starting Point for Nuclear Physics," <em>Advances in Nuclear Physics</em> <strong>13</strong> (1984) 1–137, for the bag model itself, the confining region and its linear boundary condition.
+- John B. Kogut, "An Introduction to Lattice Gauge Theory and Spin Systems," <em>Reviews of Modern Physics</em> <strong>51</strong> (1979) 659–713, for the lattice formulation and the strong-coupling derivation of the area law.
+- K. Osterwalder and E. Seiler, "Gauge Field Theories on a Lattice," <em>Annals of Physics</em> <strong>110</strong> (1978) 440–471, for the statement that the area law implies a mass gap.
+- Alexander M. Polyakov, <em>Gauge Fields and Strings</em> (Harwood, 1987), for the flux tube, the string picture, and the large-distance behaviour of the loop.
+- Gerard 't Hooft, "On the Phase Transition Towards Permanent Quark Confinement," <em>Nuclear Physics B</em> <strong>138</strong> (1978) 1–25, for the confinement criterion and the behaviour of the loop in the two phases.
+- Yu. M. Makeenko and A. A. Migdal, "Exact Equation for the Loop Average in Multicolor QCD," <em>Physics Letters B</em> <strong>88</strong> (1979) 135–137, for the loop equation and its large-$N$ closure.
+- J. D. Bjorken and E. A. Paschos, "Inelastic Electron–Proton and Gamma–Proton Scattering and the Structure of the Nucleon," <em>Physical Review</em> <strong>185</strong> (1969) 1975–1982, for the parton picture and its scale dependence.
+- H. David Politzer, "Reliable Perturbative Results for Strong Interactions?", <em>Physical Review Letters</em> <strong>30</strong> (1973) 1346–1349, for asymptotic freedom and the running of the colour coupling.
+- David J. Gross and Frank Wilczek, "Ultraviolet Behavior of Non-Abelian Gauge Theories," <em>Physical Review Letters</em> <strong>30</strong> (1973) 1343–1346, for asymptotic freedom.
+- Roman W. Jackiw and Claudio Rebbi, "Vacuum Periodicity in a Yang–Mills Quantum Theory," <em>Physical Review Letters</em> <strong>37</strong> (1976) 172–175, for the topological vacuum structure of the confined phase.
+- Huzihiro Araki, "Relative entropy of states of von Neumann algebras," <em>Publications of the Research Institute for Mathematical Sciences</em> <strong>11</strong> (1976) 809–833, for relative entropy, monotonicity, and its behaviour under conditional expectations.
+- M. Ohya and D. Petz, <em>Quantum Entropy and Its Use</em> (Springer, 1993), for the monotonicity of relative entropy under completely positive maps and the structure of channels that fix their image.
+- Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the channel formalism and the distinguishability measures used here.</p>
       </div>
     </main>
   </div>

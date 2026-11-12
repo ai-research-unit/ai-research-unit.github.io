@@ -71,7 +71,7 @@
         <h1 id="the-spin-half-path-integral-in-biquaternionic-form"><strong>The Spin-Half Path Integral in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The path integral expresses the propagator of a quantum system as a sum over histories, each weighted by $\exp(i\theta_{\mathrm{act}})$. For a particle with position degrees of freedom the histories are trajectories, and the action is the integral of a Lagrangian. For a <strong>spin</strong>, there is no position; the histories must be built from the state space itself, and the natural choice is the space of <strong>spin coherent states</strong> — the sphere of directions of the spin. The resulting path integral is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.</p>
-<p>Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.</p>
+<p>Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.</p>
 <p>The spin path integral has one feature that distinguishes it from the particle path integral and that ties it to the geometric phase: the kinetic term of the action is not a total derivative. It is the <strong>Wess–Zumino term</strong></p>
 <p>$$
 S_{WZ} =i\,\hbar\int_0^T\langle  z(r'_t)|\,\partial/\partial r'_t\,|z(r'_t)\rangle\,dr'_t,
@@ -135,7 +135,7 @@ $$</p>
 <p>$$
 S[z] = \int_0^T\left(i\,\hbar\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde H_\Psi(r'_t)|z\rangle\right)dr'_t,
 $$</p>
-<p>and the propagator is $G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(iS[z]/\hbar)$ with the measure inherited from the resolution of the identity.</p>
+<p>and the propagator is $G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(i\theta_{\mathrm{act}})$ with the measure inherited from the resolution of the identity.</p>
 <h3 id="the-wesszumino-term">The Wess–Zumino Term</h3>
 <p>For the spin-1/2 coherent state the integrand is elementary. With $\varkappa_{\mathrm{stg}} = r \exp(i\theta_{\mathrm{azm}})$ at fixed $r$,</p>
 <p>$$
@@ -189,7 +189,7 @@ $$</p>
 <h3 id="grassmann-formulation">Grassmann Formulation</h3>
 <p>The same propagator admits a second path integral, over a two-component spinor with anticommuting (Grassmann) coefficients,</p>
 <p>$$
-G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\; \exp(\frac{i}{\hbar}S[\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}]),
+G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\; \exp(i\theta_{\mathrm{act}}),
 \qquad
 S = \int\left(\frac{i\,\hbar\,\tilde{Ξ}^{\dagger}\,iR_{\mathrm{axf},\vec e_x}\,d\,\tilde{Ξ}}{dr'_{t}}- \langle\tilde{Ξ}|\tilde H_\Psi|\tilde{Ξ}\rangle\right)dr'_t,
 $$</p>
@@ -242,7 +242,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\varkappa_{\mathrm{stg}}\rangle$ on $\mathbb{CP}^1$:</p>
 <p>$$
-G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(\frac{i}{\hbar}S[z]),
+G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(i\theta_{\mathrm{act}}),
 \qquad
 S[z] = \int_0^T\left(i\,\hbar\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde H_\Psi|z\rangle\right)dr'_t,
 $$</p>

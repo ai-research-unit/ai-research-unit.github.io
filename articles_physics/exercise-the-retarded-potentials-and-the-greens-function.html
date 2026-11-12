@@ -106,7 +106,7 @@ $$
 \qquad\text{so}\qquad
 \Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2} .
 $$
-The temporal term is negative and the spatial terms positive: $\Box$ is <em>hyperbolic</em>, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))$, the operator has symbol
+The temporal term is negative and the spatial terms positive: $\Box$ is <em>hyperbolic</em>, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(-i\theta_{\mathrm{pwp}})$, the operator has symbol
 $$
 \Box \;\longmapsto\; -k^2 + \frac{\omega^2}{c^2} = \frac{\omega^2}{c^2} - k^2 .
 $$</p>
@@ -200,13 +200,14 @@ $$
 \int_{-\infty}^{\infty}\frac{d\omega}{2\pi}\,\frac{c^2\,\exp(-i\theta_{\mathrm{pwt}})}{c^2 k^2 - \omega^2}
 = \frac{c}{k}\,\sin(kr'_t)\,\mathrm{H}_{\mathrm{hvs}}(r'_t).
 $$
-The angular integral of $\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ over the directions of $\vec k_\Phi$ introduces $\sin(kR)/(kR)$, so
+The angular integral of $\exp(i\theta_{\mathrm{spa}})$ over the directions of $\vec k_\Phi$ introduces $\sin(kR)/(kR)$, so
 $$
 G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t)
 = \frac{c}{2\pi^2 R}\int_0^\infty \sin(kR)\,\sin(kr'_t)\,dk
 = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right),
 $$
 using $\int_0^\infty \sin(kR)\sin(kr'_t)\,dk = \frac{\pi}{2}\bigl[\delta(r'_t - R) - \delta(r'_t + R)\bigr]$ and discarding the past-cone term because $r'_t>0$. The Fourier route and the light-cone route agree, coefficient included. The contour computation was also checked numerically: for fixed $k,c,r'_t>0$ the retarded contour reproduces $\frac{c}{k}\sin(kr'_t)$ and the advanced contour gives zero, and conversely for $r'_t<0$.</p>
+<p>The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.</p>
 <p>Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.</p>
 <p>Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.</p>
 <h2 id="problem-3-retarded-advanced-and-the-boundary-condition">Problem 3: Retarded, Advanced, and the Boundary Condition</h2>

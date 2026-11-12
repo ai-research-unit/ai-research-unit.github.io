@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Domain of the Fluid Reading — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-domain-of-the-fluid-reading"><strong>The Domain of the Fluid Reading</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The polar word exists exactly on the elements of nonzero norm, and that set is not the whole algebra.</strong> The word is a parametrisation of the units, so it is defined where the element is invertible and nowhere else. The complement is the zero-divisor cone: the set of elements whose quaternionic norm vanishes. On the cone the field is not zero, the density is usually not zero, and the chart nevertheless fails. That is the article's subject.</p>
+<p><strong>The cone is a complex hypersurface and not a real one.</strong> The norm is a complex number, so its vanishing is two real conditions on eight real parameters and the cone has six real dimensions. It is the set of singular matrices in the algebra's matrix representation, and its real codimension is two. The word "cone" is exact: the set is invariant under multiplication by any central scalar.</p>
+<p><strong>The fluid is not empty where the chart fails.</strong> Two families of fields lie on the cone with a density that is nowhere zero: the elements of definite value, and the one-sided plane waves. So the failure of the chart is not a failure of the field, and a fluid reading that identified the two would report a vacuum where the field is at its loudest.</p>
+<p><strong>What the article is and is not.</strong> It states the domain, proves its geometry, exhibits the two families, and lists the three places where the reading is a limit rather than an identity. It adds no dynamics: the domain is a condition on the field at an event, and the field can leave the domain without leaving the equation. The boundary of the reading is the article's whole content, and the closing section states it as a boundary and not as a defect.</p>
+<h2 id="the-domain">The Domain</h2>
+<h3 id="the-statement">The Statement</h3>
+<p><strong>The word exists if and only if the norm does not vanish.</strong></p>
+<p><em>Theorem.</em> The polar word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists on $\tilde\Xi$ if and only if $N(\tilde\Xi)\neq0$.</p>
+<p><em>Proof.</em> The word divides by the modulus $\Rho$, and $\Rho^{2}=N(\tilde\Xi)$. A division by $\Rho$ is a division by zero exactly where $N$ vanishes. Conversely, where $N\neq0$ the modulus is a nonzero central number and the element $\tilde\Xi/\Rho$ is a unit; the polar decomposition of a unit into a Hermitian boost and a real rotor is <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>'s proposition, and it applies to every unit.</p>
+<p><strong>The word's existence is therefore a property of the element and not of the field's equation.</strong> Nothing in the field equation enters the statement. The equation decides which elements occur; the algebra decides which occur in the chart.</p>
+<h3 id="the-extractions-that-need-it">The Extractions That Need It</h3>
+<p><strong>All four of the word's extractions divide by the modulus, and each fails with it.</strong> The density is $r^{2}=\lvert N\rvert$, the velocity is the inverse square of the boost, the spin direction is the rotor's image of the declared axis, and the phase is $\tfrac12\arg N$. None is defined where $N=0$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>extraction</th>
+<th>formula</th>
+<th>fails because</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>density</td>
+<td>$\rho=r^{2}$</td>
+<td>$r=0$ on the cone</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>$\theta_{\mathrm{pha}}=\tfrac12\arg N$</td>
+<td>$\arg0$ is undefined</td>
+</tr>
+<tr>
+<td>velocity</td>
+<td>$\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$</td>
+<td>the boost is not extracted</td>
+</tr>
+<tr>
+<td>spin</td>
+<td>$\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$</td>
+<td>the rotor is not extracted</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The failure is a single failure and not four.</strong> The three frames are read from one unit, and the unit is what the modulus normalises. So the chart either exists whole or not at all, and there is no partial word that keeps the density and drops the velocity.</p>
+<p><strong>This is the sharp form of the difference between a chart and a field.</strong> A field has a value at every event; a chart has a value only where its coordinates exist. The two are identified in the interior of the domain and must not be identified on its boundary.</p>
+<h2 id="the-geometry-of-the-cone">The Geometry of the Cone</h2>
+<h3 id="codimension-two">Codimension Two</h3>
+<p><strong>The norm is complex, so its vanishing is two real conditions.</strong> For $\tilde Q=Q_t e_t+\vec Q$,</p>
+<p>$$
+N(\tilde Q)=Q_t^{2}+\vec Q\cdot\vec Q,
+$$</p>
+<p>and both $Q_t$ and $\vec Q$ are complex. The right-hand side is complex, so $N=0$ is two real equations on the eight real parameters of the element, and the solution set has six real dimensions.</p>
+<p><strong>Checked by perturbing a zero divisor along each of the eight real coordinate directions.</strong> The element $e_t+i\vec e_z$ has $N=0$. Adding $0.1$ to one coefficient at a time gives $\lvert N\rvert=0.21$, $0.2002$, $0.01$, $0.01$, $0.01$, $0.01$, $0.2002$, $0.21$ for the perturbations of $\mathrm{Re}\,Q_t$, $\mathrm{Im}\,Q_t$, $\mathrm{Re}\,Q_x$, $\mathrm{Im}\,Q_x$, $\mathrm{Re}\,Q_y$, $\mathrm{Im}\,Q_y$, $\mathrm{Re}\,Q_z$ and $\mathrm{Im}\,Q_z$. Every direction leaves the element off the cone, so the cone has no open neighbourhood anywhere.</p>
+<p><strong>The two small values are the tangent plane, and they confirm the count.</strong> The $x$ and $y$ directions displace $N$ quadratically, $\lvert N\rvert=d^{2}=0.01$ at $d=0.1$, while the temporal and $z$ directions displace it linearly, $\lvert N\rvert=2d+d^{2}=0.21$. So the tangent space of the cone at this element contains the $x$ and $y$ directions and the other six are transverse: two directions are flat and six are not, which is real codimension two measured at a point.</p>
+<p><strong>The matrix picture gives the same count.</strong> The algebra is the complex $2\times2$ matrices in its standard representation, and $N$ is the determinant up to a factor. The cone is the singular matrices, a complex hypersurface of complex dimension three and real dimension six.</p>
+<p><strong>The word "hypersurface" therefore needs its qualifier.</strong> It is a hypersurface over $\mathbb{C}$ and a codimension-two set over $\mathbb{R}$. A sentence that calls it a real hypersurface is off by one dimension, and the difference matters in the perturbation check above: a real hypersurface would be left by a generic perturbation in one direction and a codimension-two set is left by every direction.</p>
+<h3 id="it-is-a-cone">It Is a Cone</h3>
+<p><strong>The set is invariant under multiplication by any central scalar.</strong> $N(c\tilde Q)=c^{2}N(\tilde Q)$, so if $\tilde Q$ is a zero divisor then so is $c\tilde Q$ for every central $c$. The set is therefore a union of complex lines through the origin, which is what makes the name exact and what makes the failure uniform in amplitude: a zero divisor is a zero divisor at every scale.</p>
+<p><strong>Checked on a family.</strong> For the element $\tilde X=e_t+i\vec e_z$ scaled by $0.3$, $1$ and $5$, the norm is $0$ in all three cases and the Hermitian norm is $0.18$, $2$ and $50$. The field grows and the chart never returns.</p>
+<h2 id="two-families-on-the-cone">Two Families on the Cone</h2>
+<h3 id="elements-of-definite-value">Elements of Definite Value</h3>
+<p><strong>An element that is an eigenvector of right multiplication by $\vec e_z$ is a zero divisor, and it is one at every amplitude.</strong> For $\tilde X$ with $\tilde X\vec e_z=\pm i\tilde X$,</p>
+<p>$$
+\tilde X\bigl(\vec e_z\mp ie_t\bigr)=0,
+\qquad
+\vec e_z\mp ie_t\neq0,
+$$</p>
+<p>so $\tilde X$ annihilates a nonzero element and is a zero divisor. The annihilation is the algebra's own statement and it does not depend on the size of $\tilde X$.</p>
+<p><strong>This family is the field of definite chirality.</strong> The eigenvalue equation is the projection onto one chiral piece, so the family is the set of fields carrying a single chirality, and the theorem says that such a field has no word at any amplitude. That is not a statement about small fields: a chiral field of any strength is outside the chart.</p>
+<p><strong>The density on this family is not zero.</strong> The Hermitian norm of the scaled element is $0.18$, $2$ and $50$ above, so the density grows with the amplitude while the word stays undefined. A reader who equated "no word" with "no field" would be wrong by the whole amplitude.</p>
+<h3 id="one-sided-plane-waves">One-Sided Plane Waves</h3>
+<p><strong>A null wavevector produces a field that is a zero divisor everywhere and is nowhere zero.</strong> With $\tilde K_{\Phi}$ null, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$, the plane wave $\tilde\Xi=\tilde\Xi_{0}e^{i\tilde K_{\Phi}\cdot\tilde X}$ satisfies the field equation with $\tilde\Xi_{0}$ a nonzero zero divisor, and</p>
+<p>$$
+N(\tilde\Xi)=N(\tilde\Xi_{0})\,e^{2i\tilde K_{\Phi}\cdot\tilde X}=0
+$$</p>
+<p>at every event, because a nonzero zero divisor multiplied by anything is a zero divisor.</p>
+<p><strong>This is the massless one-sided wave and it is the second family.</strong> It differs from the first in kind: the first is a pointwise condition on the value and the second is a condition on the wavevector that holds at every event of a solution. Both are on the cone and both have non-vanishing density.</p>
+<p><strong>The two families are the answer to the obvious objection.</strong> The objection says that the cone is a set of measure zero and can be ignored. The answer is that two physically named families live on it, one of them the chiral fields and the other the one-sided massless waves, so the set is not a curiosity of the parameter space but a place where standard fields sit.</p>
+<h2 id="the-cone-against-the-nodal-set">The Cone Against the Nodal Set</h2>
+<p><strong>The nodal set is where the field vanishes and the cone is where its norm vanishes, and the second contains the first and is strictly larger.</strong> For the scalar field the two coincide, because the centre's norm is $\Xi_t^{2}$ and a vanishing norm is a vanishing field. For the spinor field they do not.</p>
+<p><strong>The scalar case is the exception and it is worth stating why.</strong> On the centre the element is a single complex number, the norm is its square, and the norm vanishes exactly when the number does. So the scalar fluid's chart fails exactly at the wave's nodes, and there the density vanishes too, which is why the scalar fluid can be read as a fluid with vortices rather than as a chart with holes. <a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a> works that case and the difference is its subject.</p>
+<p><strong>In the spinor case the chart fails where the fluid is loudest.</strong> Both families above have a non-vanishing density on part of their extent, so the chart's boundary cuts through the region where a fluid reading would be most confident. That is a structural fact about the algebra and it is the reason this article exists.</p>
+<h2 id="the-two-factor-decomposition">The Two-Factor Decomposition</h2>
+<p><strong>What survives on the cone is the two-factor decomposition, and it is defined on the whole algebra.</strong> Every element factors as</p>
+<p>$$
+\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0},
+$$</p>
+<p>with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry. The factorisation is defined where the four-factor word is not, because it divides by the <em>nonzero</em> singular values of the element rather than by its norm.</p>
+<p><strong>What the two factors carry and what they do not.</strong> The Hermitian factor carries the scale, and the partial isometry carries the direction; the split between the velocity and the spin is not made, because it needs the modulus to normalise two frames against each other.</p>
+<p><strong>So the loss is specific.</strong> The chart loses the separation of the two frames and keeps the separation of scale from direction. A fluid needs the first separation and not only the second, which is why the two-factor form is a fallback for the algebra and not a substitute for the fluid.</p>
+<p><strong>The count says the same thing.</strong> The two-factor form has the scale and the partial isometry's parameters; the four-factor word has those plus two independent frames. On the cone the extra parameters are what the division by the modulus would have given, and the division is what fails.</p>
+<h2 id="the-flow-does-not-preserve-the-cone">The Flow Does Not Preserve the Cone</h2>
+<p><strong>The domain is a condition at each event and is not conserved by any of the corpus's flows except the Schrödinger one.</strong> The Klein–Gordon flow does not preserve it because the equation is second order; the Dirac flow does not preserve it because the mass couples the two chiral pieces.</p>
+<p><strong>The Klein–Gordon check.</strong> With $\Xi_t(0,x)=0$ and $\partial_{t'}\Xi_t(0,x)$ a unit packet of width $2$, $k_m=1$, and a $1+1$ evolution on a periodic grid of $4000$ points spanning $60$ with step $10^{-4}$, the field starts on the cone and its maximum modulus is $0.0500$ at $t=0.05$ and $0.1983$ at $t=0.2$. So the field leaves the cone immediately and returns to it only at isolated events.</p>
+<p><strong>The Dirac check.</strong> A field carrying one chiral piece alone is on the cone; after evolution the modulus of the determinant rises from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$, because the mass couples the pieces and a field carrying one piece alone does not keep one piece alone. <a href="why-biquaternions.html">Why Biquaternions?</a> records the check.</p>
+<p><strong>The Schrödinger flow is the exception and the reason is multiplicative.</strong> That flow is left multiplication by a unit, so it preserves the norm exactly: $N(\tilde U\tilde\Xi)=N(\tilde U)N(\tilde\Xi)$ and $N(\tilde U)\neq0$. A cone preserved by a flow is a cone preserved by a group of units, and the relativistic flows are not of that kind.</p>
+<p><strong>The consequence for the reading is that the chart is local in time as well as in space.</strong> A field's word at one event says nothing about the word at a nearby event: the chart can fail between two events at which it exists. A fluid reading is therefore a family of chart patches and not a global chart.</p>
+<h2 id="the-limits-of-the-reading">The Limits of the Reading</h2>
+<h3 id="the-non-relativistic-limit">The Non-Relativistic Limit</h3>
+<p><strong>The word degenerates to a scale, a phase and a sign, and the fluid to a Madelung fluid.</strong> With the boost at $e_t$ and the rotor at $\varepsilon e_t$ the velocity is zero and the spin is the declared axis; the brackets reduce to the scale and the phase, and the equation to a continuity equation and a Hamilton–Jacobi equation with the quantum potential. That limit is a limit of the reading and not of the field: a slow field still has a spin, and the reading drops it because the rotor's angle has no effect on the remaining brackets.</p>
+<p><strong>The limit's error is of order the velocity squared over $c^{2}$ and is not uniform in the spin angle.</strong> A sector field at a small spin angle has a small velocity and the non-relativistic reading is accurate; the same field at a large spin angle has a large velocity and the reading fails. The limit is therefore not a limit in the field's amplitude but in its motion.</p>
+<h3 id="zitterbewegung">Zitterbewegung</h3>
+<p><strong>The reading's bilinears run at twice the field's phase, and the doubling does not disappear in any limit.</strong> The norm's argument is $2\theta_{\mathrm{pha}}$ and the current is built from the boost, so the fluid's own variables oscillate at the doubled rate. A fluid description that resolves the motion finer than $1/(2\omega)$ sees the doubling; one that averages over it sees the mean.</p>
+<p><strong>The limit is a coarse-graining and its scale is the Compton frequency.</strong> That is why the fluid reading is a description of the field at scales long compared with the Compton wavelength, and why its transport coefficients are the ones a coarse-grained theory has.</p>
+<h3 id="rotor-precession">Rotor Precession</h3>
+<p><strong>The spin's precession is a motion of the chart's fourth factor and it has no counterpart in the scale and phase.</strong> A reading that used only the two central brackets would see a fluid with no spin; the rotor's precession would be invisible. So the third limit is that the reading is a reading of <em>all four</em> brackets or it is not the spin fluid.</p>
+<p><strong>The three limits are the article's honest accounting.</strong> The non-relativistic limit drops the spin; the coarse-graining drops the doubling; the central-only reading drops the precession. Each is a limit of the reading and none is a limit of the field.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>No dynamics is added by anything in this article.</strong> The domain is the set where the chart exists, the two families are fields that lie outside it, and the non-preservation is a property of flows already given. The article's statements are one theorem, one count, and a list of checks.</p>
+<p><strong>What a reader should not conclude.</strong> That the chart's failure is a failure of the theory. The field equation is defined on the whole algebra, and only the reading is not. A formulation that took the chart for the theory would have to add a condition excluding the cone, and no such condition is in the corpus.</p>
+<p><strong>What a reader should conclude.</strong> That the fluid reading is exact on the interior of the domain, that its boundary is populated, and that the population is physically named. That is the precise sense in which the reading is a chart.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> That the word exists exactly on the elements of nonzero norm. That the cone is a complex hypersurface of real codimension two, checked along all eight coordinate directions at a zero divisor. That it is a cone, checked at three scales. That the two families lie on it with non-vanishing density. That the scalar case's cone is the nodal set and the spinor case's is strictly larger. That the Klein–Gordon and Dirac flows do not preserve the cone, checked at two times each. That the Schrödinger flow does.</p>
+<p><strong>Interpretation.</strong> That the two families are the chiral fields and the one-sided massless waves and are therefore physical. That the two-factor decomposition is a fallback rather than a substitute. That the three limits are coarse-grainings. Each is argued here and none is proved.</p>
+<p><strong>Not claimed.</strong> It is not claimed that the cone's complement is connected; only the two families are exhibited. It is not claimed that the chart can be extended to the cone by any limiting procedure; the corpus has none. It is not claimed that the non-preservation is a difficulty for the theory; it is a difficulty for a reader who treats a chart as a field.</p>
+<h2 id="summary">Summary</h2>
+<p>The polar word exists exactly on the elements of nonzero quaternionic norm. The complement is the zero-divisor cone, a complex hypersurface of real codimension two, invariant under central scaling.</p>
+<p>Two families of fields lie on the cone with a non-vanishing density: the elements of definite value, which are the chiral fields at any amplitude, and the one-sided plane waves with a null wavevector. For the scalar field the cone coincides with the nodal set; for the spinor field it is strictly larger.</p>
+<p>What survives on the cone is the two-factor decomposition into a Hermitian factor and a partial isometry, which separates the scale from the direction and not the velocity from the spin.</p>
+<p>The domain is a condition at each event. The Klein–Gordon flow and the Dirac flow do not preserve it, checked at two times each; only the Schrödinger flow, being left multiplication by a unit, does. The reading is therefore a family of chart patches, exact on the interior and populated on the boundary, and it adds no dynamics of its own.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+\vec Q\cdot\vec Q$</td>
+<td>Quaternionic norm</td>
+</tr>
+<tr>
+<td>$\Rho$</td>
+<td>Modulus, $\Rho^{2}=N$</td>
+</tr>
+<tr>
+<td>$\rho=r^{2}$</td>
+<td>Density</td>
+</tr>
+<tr>
+<td>$\tilde X\vec e_z=\pm i\tilde X$</td>
+<td>Element of definite value</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$</td>
+<td>Null wavevector</td>
+</tr>
+<tr>
+<td>$\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$</td>
+<td>Two-factor decomposition</td>
+</tr>
+<tr>
+<td>$\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$</td>
+<td>Boost and rotor of the four-factor word</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>David Hestenes, "Space–time structure of the Dirac theory," in <em>Clifford Algebras and their Applications in Mathematical Physics</em> (Reidel, 1986), for the spinor as a frame and the extent of the frame description.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, vol. 1 (Cambridge University Press, 1984), for the null flag and the two-component spinor as a degenerate direction.</li>
+<li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), for the nodal set of the non-relativistic fluid and the limits of the reading.</li>
+<li>The companion articles: <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>, <a href="the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>, <a href="the-klein-gordon-fluid.html">The Klein–Gordon Fluid</a>, <a href="the-dirac-fluid-and-the-takabayasi-correspondence.html">The Dirac Fluid and the Takabayasi Correspondence</a>, <a href="physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

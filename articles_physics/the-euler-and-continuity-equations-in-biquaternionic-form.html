@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Euler and Continuity Equations in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-euler-and-continuity-equations-in-biquaternionic-form"><strong>The Euler and Continuity Equations in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>An ordinary fluid carries five real numbers at each point, and none of them is a wave function's amplitude or phase.</strong> The five are a density, a velocity with three components, and a thermodynamic state. The equations that close them are the continuity equation, the Euler equation and a law of state. This article writes that system in the notation of the algebra, and the writing is exact: each equation below is the classical equation with no term added, dropped or rescaled.</p>
+<p><strong>The objection is that the writing is empty.</strong> Euler's equation is a vector equation, the algebra has a vector part, and any notation that can write a vector can write Euler. A translation that changes nothing has explained nothing.</p>
+<p><strong>The answer is that the translation buys a count, and the count is what the rest of this section spends.</strong> The field of the block is one element of $\mathbb{B}$ at each event, and that element carries eight real data. The fluid carries five. The difference is not a defect of the writing; it is the distance between a fluid and a wave equation, and it is the subject of the eight articles that follow this one. The count is exact, it is stated here once, and every later article names which of the five data it discards and why.</p>
+<p><strong>The algebra's complex structure is not used anywhere in this article.</strong> That absence is the first measurement. The fluid's equations are one real scalar equation and one real vector equation; a wave equation is one complex equation whose unknown occupies all four slots of the element. A reader who expects the second will not find it here, and the reason is structural: the temporal slot of the flow element is the constant $ic$, so the scalar slot carries no unknown for an equation to act on.</p>
+<p><strong>Nothing in this article is quantum and nothing is relativistic.</strong> There is no $\hbar$, no mass shell and no Lorentz transformation. The flow element introduced in §<em>The Flow Element</em> is the Galilean one, and the relativistic normalisation is one factor away, a factor that no equation written here reads.</p>
+<h2 id="the-data">The Data</h2>
+<p><strong>The fluid at a point is a density, a velocity, a pressure and an entropy per unit mass.</strong> The density is the number density $\rho_{\mathrm{num}}$, the count of markers per unit volume, and the mass density is $\rho_{\mathrm{mass}}=m\rho_{\mathrm{num}}$ with $m$ the mass of one marker. The velocity is $\vec v$, a vector of $\mathbb{B}_V$ with three real components. The pressure is $p_{\mathrm{th}}$, the thermodynamic pressure, and the entropy is the specific entropy $s_{\mathrm{spc}}$, entropy per unit mass, with the entropy density $s_{\mathrm{ent}}=\rho_{\mathrm{mass}}s_{\mathrm{spc}}$.</p>
+<p><strong>The pressure is not an independent datum once a law of state is given.</strong> The law of state is the relation</p>
+<p>$$
+p_{\mathrm{th}}=p_{\mathrm{th}}\bigl(\rho_{\mathrm{mass}},s_{\mathrm{spc}}\bigr),
+$$</p>
+<p>and it is data of the fluid, not a consequence of the other equations. A fluid without a law of state is not a fluid but a family of fluids. The distinction is the whole of §<em>The Count</em>, and it returns in <a href="the-equation-of-state-and-the-barotropic-condition.html">The Equation of State and the Barotropic Condition</a>.</p>
+<p><strong>The three equations are these.</strong> In the flat coordinates and with $t'=r'_t/c$ the time in seconds,</p>
+<p>$$
+\partial_{t'}\rho_{\mathrm{mass}}+\nabla\cdot\bigl(\rho_{\mathrm{mass}}\vec v\bigr)=0,
+$$</p>
+<p>$$
+\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}+\vec f_{\mathrm{ext}},
+$$</p>
+<p>$$
+\partial_{t'}s_{\mathrm{spc}}+\vec v\cdot\nabla s_{\mathrm{spc}}=0 .
+$$</p>
+<p>The first is the continuity equation, the second is Euler's equation with an external force per unit mass $\vec f_{\mathrm{ext}}$, and the third says that the specific entropy is carried by the flow. A barotropic fluid drops the third equation and the entropy with it, and the pressure becomes a function of the density alone.</p>
+<p><strong>The dissipation is absent, and its absence is a hypothesis.</strong> The Euler equation has no term that turns kinetic energy into heat. A fluid with such a term obeys the Navier–Stokes equation instead, and the difference is the subject of <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a>. Here the flow is inviscid, and that is a choice made at the start rather than a result.</p>
+<h2 id="the-flow-element">The Flow Element</h2>
+<p><strong>The flow assembles into one element of $\mathbb{B}_{\Phi}$ with the speed as its unit.</strong> The four coefficients of an element share one unit, so the temporal slot must carry a speed and not a length, and the element is</p>
+<p>$$
+\tilde V_\Phi=i c\,e_t+\vec v,
+\qquad
+\vec v=v_x\,\vec e_x+v_y\,\vec e_y+v_z\,\vec e_z .
+$$</p>
+<p>The $i$ on the temporal slot is the one the corpus puts on every material element: the temporal coefficient of $\tilde R_\Phi$ is $i r'_t$, and the derivative with respect to that coefficient is $-i\partial_{r'_t}$. The flow element is the displacement over a unit of material time, and the $c$ is what makes its four coefficients commensurable.</p>
+<p><strong>The element's norm is the Lorentz factor, in the inverse.</strong> The quaternionic norm of the flow element is</p>
+<p>$$
+\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}+\lvert\vec v\rvert^{2}=-\frac{c^{2}}{\gamma^{2}},
+\qquad
+\gamma=\frac{1}{\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}} .
+$$</p>
+<p>So the Galilean flow element is not a unit element, and its norm is the reciprocal square of the Lorentz factor rather than $-c^{2}$. The block's relativistic articles normalise the flow to $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the element they use is</p>
+<p>$$
+\tilde V_{\Phi,\mathrm{rel}}=\gamma\,\tilde V_\Phi=i c\gamma\,e_t+\gamma\vec v .
+$$</p>
+<p><strong>The two differ by one factor on the whole element, and no equation in this article reads it.</strong> Multiplying an element by a central real scalar multiplies all four coefficients, so the difference between the two writings is a single number at each point. Euler's equation below is Galilean, so it is written on the unnormalised element; the block's relativistic articles write it on the normalised one. An article that mixed the two would carry a factor $\gamma$ that no term accounts for, and this one does not mix them.</p>
+<p><strong>The velocity is the vector part and not the spatial part of a four-vector.</strong> This is the distinction that the block's relativistic articles make and that a classical fluid does not have. For the Galilean element, $\vec v$ is the vector part; for the normalised one, $\gamma\vec v$ is. The two are not related by a relabelling, because $\gamma$ is a function of position, and §<em>The Vorticity</em> of <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a> draws the consequence for the curl.</p>
+<h2 id="the-material-derivative-is-a-pairing">The Material Derivative Is a Pairing</h2>
+<p><strong>The material derivative is the scalar product of the flow with the gradient.</strong> With the material gradient $\tilde\nabla_\Phi=-i e_t\,\partial_{r'_t}+\vec\nabla$ and the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$, the identity is</p>
+<p>$$
+\bigl\langle\tilde V_\Phi,\tilde\nabla_\Phi f\bigr\rangle_{\natural}=c\,\partial_{r'_t}f+\vec v\cdot\nabla f
+$$</p>
+<p>for every differentiable scalar $f$. The right-hand side is the derivative along the flow, $\mathrm{D}_{\mathrm{mat}}f$ with $\mathrm{D}_{\mathrm{mat}}=c\,\partial_{r'_t}+\vec v\cdot\nabla=\partial_{t'}+\vec v\cdot\nabla$.</p>
+<p><strong>The identity is exact and it is checked by expansion.</strong> The temporal slot contributes $ic\cdot(-i\partial_{r'_t}f)=+c\partial_{r'_t}f$, because $(-i)(i)=+1$; the three spatial slots contribute $v_\eta\partial_\eta f$ each, and the sum is the convective term. No term is dropped and no sign is chosen: the $+1$ of the temporal slot and the $+1$ of each spatial slot are the same $+1$, the one of the pairing.</p>
+<p><strong>The pairing is not the product, and the difference is the sign that a fluid cannot afford.</strong> In the quaternion product the scalar part is $a_tb_t-\vec a\cdot\vec b$, because $\vec e_\eta^{2}=-e_t$, so the product of the flow with the gradient gives $c\partial_{r'_t}f-\vec v\cdot\nabla f$, the material derivative with the convective term reversed. The pairing gives the sum. A fluid's convective term is a sum and not a difference, so the fluid's natural bilinear in this algebra is $\langle\cdot,\cdot\rangle_{\natural}$, and the product is reserved for the object that will replace the fluid, in <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>.</p>
+<h2 id="continuity-is-one-pairing">Continuity Is One Pairing</h2>
+<p><strong>The current element is the flow weighted by the density.</strong> It is</p>
+<p>$$
+\tilde J_\Phi=\rho_{\mathrm{num}}\,\tilde V_\Phi=i c\rho_{\mathrm{num}}\,e_t+\rho_{\mathrm{num}}\vec v,
+$$</p>
+<p>the four-current of the markers, with the temporal slot carrying $c\rho_{\mathrm{num}}$ and the vector part carrying the flux $\rho_{\mathrm{num}}\vec v$.</p>
+<p><strong>The continuity equation is the vanishing of one pairing.</strong> The identity</p>
+<p>$$
+\bigl\langle\tilde\nabla_\Phi,\tilde J_\Phi\bigr\rangle_{\natural}
+=c\,\partial_{r'_t}\rho_{\mathrm{num}}+\nabla\cdot\bigl(\rho_{\mathrm{num}}\vec v\bigr)
+$$</p>
+<p>holds, and the continuity equation is its vanishing. The check is the same expansion: the temporal slot gives $(-i\partial_{r'_t})(ic\rho_{\mathrm{num}})=+c\partial_{r'_t}\rho_{\mathrm{num}}$, and the three spatial slots give the divergence.</p>
+<p><strong>The rest of the product is not an equation of the fluid, and it is worth naming so that nobody imposes it.</strong> The element $\tilde\nabla_\Phi\tilde J_\Phi$ has a vector part as well as a scalar part, and its vanishing would be the statement that the current is harmonic in a stronger sense than conservation. A fluid conserves markers; it does not require its current to be harmonic. So the continuity equation is one component of one element identity, and the block never writes the other three as a law.</p>
+<h2 id="euler-is-one-element-equation">Euler Is One Element Equation</h2>
+<p><strong>The material derivative of the flow element is a pure vector, and Euler is the statement of what it equals.</strong> Since the temporal coefficient $ic$ is a constant, $\mathrm{D}_{\mathrm{mat}}\tilde V_\Phi$ has no scalar part and</p>
+<p>$$
+\mathrm{D}_{\mathrm{mat}}\tilde V_\Phi
+=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}+\vec f_{\mathrm{ext}} .
+$$</p>
+<p>The left-hand side is the element whose vector part is $\mathrm{D}_{\mathrm{mat}}\vec v$ and whose scalar part is zero; the right-hand side is a pure vector because both terms are gradients and forces. The equation is therefore three real equations, one per spatial slot, and the temporal slot reads $0=0$.</p>
+<p><strong>The equation is one element equation and the fluid is two.</strong> Continuity is one pairing, a scalar; Euler is one element equation carrying three. Together they are four real equations, and §<em>The Count</em> says what they close.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The count is the article's content, and it is stated as a table.</strong> The element of the field and the fluid are counted in the same currency, the real numbers each carries at a point.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Continuous data at a point</th>
+<th>What they are</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The field element $\tilde\Xi$</td>
+<td>$8$</td>
+<td>scale, phase, boost $(3)$, rotor $(3)$</td>
+</tr>
+<tr>
+<td>The scalar field in its word</td>
+<td>$2$</td>
+<td>scale, phase</td>
+</tr>
+<tr>
+<td>A general fluid</td>
+<td>$5$</td>
+<td>$\rho_{\mathrm{num}}$, $\vec v$, $s_{\mathrm{spc}}$</td>
+</tr>
+<tr>
+<td>A barotropic fluid</td>
+<td>$4$</td>
+<td>$\rho_{\mathrm{num}}$, $\vec v$</td>
+</tr>
+<tr>
+<td>A barotropic irrotational fluid</td>
+<td>$2$</td>
+<td>$\rho_{\mathrm{num}}$, the potential $S$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The field's eight are the block's own count, and the fluid's five are the classical count.</strong> The first row is the count of <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>, $1+1+3+3=8$. The third row is the count of this article: one density, three velocity components, one thermodynamic datum, with the pressure a function of the last two.</p>
+<p><strong>The difference is three data, and each of them is a datum the field does not have.</strong> The fluid's velocity has three components where the field's phase has one, and that excess is the vorticity, removed in <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a>. The fluid's entropy is a second thermodynamic datum, and the field has no thermodynamic datum at all; that excess is removed in <a href="the-equation-of-state-and-the-barotropic-condition.html">The Equation of State and the Barotropic Condition</a>. The pressure itself is the third, and it is not a datum that can be removed by counting: it is a <em>term</em>, and its removal is the subject of <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>.</p>
+<p><strong>The last two rows are the same two numbers, and that coincidence is not one.</strong> A barotropic irrotational fluid carries $\rho_{\mathrm{num}}$ and the potential $S$; a scalar wave function carries a modulus and an argument. The two counts agree at two, and the agreement is exact rather than approximate: the map between them is a bijection wherever both exist. What the agreement does not give is a linear equation, and the reason is in the next section.</p>
+<h2 id="what-the-algebra-does-not-do">What the Algebra Does Not Do</h2>
+<p><strong>The complex structure is unused, and the reason is the constant on the temporal slot.</strong> A wave equation is one equation for one unknown that occupies all four slots of an element. The fluid's pair is not: the unknown $\vec v$ occupies three slots, the unknown $\rho_{\mathrm{num}}$ occupies none of them, and the temporal slot is occupied by the constant $ic$. So no multiplication by $i$ of an unknown, no second-order operator and no phase appear in the two equations.</p>
+<p><strong>This is why the pair cannot be fused into one complex equation.</strong> A fusion would require the two real equations to be the real and imaginary parts of one equation, which requires the two unknowns to be the two parts of one complex number. The fluid's unknowns are a scalar and a vector, and the vector is three-dimensional, so there is no complex number whose parts they are. The fusion exists for the field, not for the fluid, and the map that performs it is the reverse map of the later article.</p>
+<p><strong>What the algebra does supply is the count and the signs.</strong> The two identities of this article are exact statements about the algebra's bilinear form, they fix the sign of the convective term, and they exhibit the temporal slot as the slot the fluid does not use. A reader who wants the algebra to add something to Euler will be disappointed; a reader who wants the reason the fluid is not a wave equation will find it in the empty slot.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> That the continuity equation is the vanishing of the pairing $\langle\tilde\nabla_\Phi,\tilde J_\Phi\rangle_{\natural}$, and that the material derivative is the pairing $\langle\tilde V_\Phi,\tilde\nabla_\Phi\,\cdot\,\rangle_{\natural}$, both by expansion. That the flow element's norm is $-c^{2}/\gamma^{2}$ in the Galilean writing and $-c^{2}$ in the normalised one, the two differing by the factor $\gamma$ on the whole element. That the fluid closes on five data in general and on four in the barotropic case, and that the field carries eight.</p>
+<p><strong>Interpretation.</strong> That the count is the right measure of the distance between the fluid and the field. The count is exact; that it <em>should</em> decide whether a wave equivalent exists is the programme's step, and the later articles take it and find that the count is necessary and not sufficient. That the bilinear form used for the fluid is the natural one is also a reading: the algebra supplies the pairing, and the fluid's convective term singles it out.</p>
+<p><strong>Not claimed.</strong> It is not claimed that the fluid's equations are approximations of the field's. They are the classical equations, exact in their own domain, and the field's equations are a different system. It is not claimed that the algebra improves the classical theory: every identity here is a rewriting, and a rewriting that adds no prediction is what it is.</p>
+<h2 id="summary">Summary</h2>
+<p>An ordinary fluid carries five real data at each point — a number density, a velocity, a specific entropy — and the pressure is fixed by a law of state. Continuity, Euler and the advection of entropy close them.</p>
+<p>In the algebra the flow is one element, $\tilde V_\Phi=i c\,e_t+\vec v$, with the speed as the unit of its four coefficients and the norm $-c^{2}/\gamma^{2}$. The relativistic normalisation multiplies the whole element by $\gamma$ and changes no equation written here.</p>
+<p>The material derivative is the pairing $\langle\tilde V_\Phi,\tilde\nabla_\Phi f\rangle_{\natural}=c\partial_{r'_t}f+\vec v\cdot\nabla f$. The product would reverse the sign of the convective term, because $\vec e_\eta^{2}=-e_t$, so the fluid's bilinear is the pairing and not the product.</p>
+<p>Continuity is the vanishing of one pairing, $\langle\tilde\nabla_\Phi,\tilde J_\Phi\rangle_{\natural}=0$ with $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$. Euler is one element equation whose scalar slot reads $0=0$ and whose three vector slots are the three components of the acceleration law.</p>
+<p>The count is five against eight. A barotropic fluid has four, an irrotational barotropic fluid two, and a scalar wave function two. The two at the end agree, and the agreement is a bijection of states and not a linearity of equations.</p>
+<p>The complex structure is unused. The temporal slot holds the constant $ic$, so no unknown occupies it, and the pair cannot be the real and imaginary parts of one complex equation. That empty slot is the structural difference between a fluid and a wave equation, and it is what the reverse map has to fill.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho_{\mathrm{num}}$</td>
+<td>Number density of markers</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{mass}}=m\rho_{\mathrm{num}}$</td>
+<td>Mass density</td>
+</tr>
+<tr>
+<td>$\vec v$</td>
+<td>Three-velocity, the vector part of $\tilde V_\Phi$</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{th}}$</td>
+<td>Thermodynamic pressure</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{spc}}$</td>
+<td>Specific entropy, entropy per unit mass</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}=\rho_{\mathrm{mass}}s_{\mathrm{spc}}$</td>
+<td>Entropy density</td>
+</tr>
+<tr>
+<td>$\vec f_{\mathrm{ext}}$</td>
+<td>External force per unit mass</td>
+</tr>
+<tr>
+<td>$\tilde V_\Phi=i c\,e_t+\vec v$</td>
+<td>Galilean flow element</td>
+</tr>
+<tr>
+<td>$\tilde V_{\Phi,\mathrm{rel}}=\gamma\tilde V_\Phi$</td>
+<td>Normalised, relativistic flow element</td>
+</tr>
+<tr>
+<td>$\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}/\gamma^{2}$</td>
+<td>Its quaternionic norm</td>
+</tr>
+<tr>
+<td>$\gamma=1/\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}$</td>
+<td>Lorentz factor</td>
+</tr>
+<tr>
+<td>$\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$</td>
+<td>Current element</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_\Phi=-i e_t\partial_{r'_t}+\vec\nabla$</td>
+<td>Material gradient</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$</td>
+<td>General quaternionic bilinear form</td>
+</tr>
+<tr>
+<td>$\mathrm{D}_{\mathrm{mat}}=c\partial_{r'_t}+\vec v\cdot\nabla$</td>
+<td>Material derivative</td>
+</tr>
+<tr>
+<td>$r'_t=c t'$</td>
+<td>Material time coordinate, a length</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>Mass of one marker</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Limiting speed of the frame structure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Leonhard Euler, "Principes généraux du mouvement des fluides," <em>Mémoires de l'Académie des Sciences de Berlin</em> <strong>11</strong> (1757) 274–315, for the equation that carries his name and for the pressure as the gradient of a scalar.</li>
+<li>Claude-Louis Navier, "Mémoire sur les lois du mouvement des fluides," <em>Mémoires de l'Académie Royale des Sciences</em> <strong>6</strong> (1822) 389–440, and George Gabriel Stokes, "On the theories of the internal friction of fluids in motion," <em>Transactions of the Cambridge Philosophical Society</em> <strong>8</strong> (1845) 287–305, for the viscous term whose absence this article assumes.</li>
+<li>Hermann von Helmholtz, "Über Integrale der hydrodynamischen Gleichungen, welche den Wirbelbewegungen entsprechen," <em>Journal für die reine und angewandte Mathematik</em> <strong>55</strong> (1858) 25–55, for the vorticity theorems that the next article reads as an obstruction.</li>
+<li>Lev D. Landau and Evgeny M. Lifshitz, <em>Fluid Mechanics</em>, 2nd ed. (Pergamon, 1987), §§2, 4 and 15, for the system of this article and for the counting of its data.</li>
+<li>George K. Batchelor, <em>An Introduction to Fluid Dynamics</em> (Cambridge University Press, 1967), ch. 3, for the stress and the equations of motion.</li>
+<li>The companion articles: <a href="the-relativistic-quantum-space-as-a-fluid.html">The Relativistic Quantum Space as a Fluid</a>, <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a>, <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a>, <a href="the-equation-of-state-and-the-barotropic-condition.html">The Equation of State and the Barotropic Condition</a>, <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map: Fluid to Nonlinear Wave</a>.</li>
+<li><a href="lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a>, for the classical formalism whose fluid limit this system is, and <a href="the-klein-gordon-fluid.html">The Klein–Gordon Fluid</a>, for the same variables read from the field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -217,12 +217,14 @@ $$</p>
 <h2 id="the-momentum-space-form">The Momentum-Space Form</h2>
 <p>For plane-wave solutions the position-space identity becomes the form used in scattering amplitudes. Write the field of momentum $p$ as</p>
 <p>$$
-\tilde{Ξ}=\tilde w(p)\,\exp\Big(-i\sum_\mu p_\mu x_\mu\Big),
+\tilde{Ξ}=\tilde w(p)\,\exp\Big(-i\theta_{\mathrm{pwp}}),
 $$</p>
 <p>so that $\partial_\mu\tilde{Ξ}=-ip_\mu\tilde{Ξ}$, and the field equation becomes the on-shell condition</p>
 <p>$$
 \sum_\mu\varepsilon_\mu\,p_\mu\,i\,e_\mu\,\tilde w(p)\,\vec e_{\nu(\mu)}=m\,\tilde w(p).
+
 $$</p>
+<p>The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.</p>
 <p>The exponent carries no weight $\varepsilon_\mu$. The weight belongs to the contraction of the generator with the momentum, where it raises the generator's index, and the derivative returns $p_\mu$ with the same sign for all four components. A weight in the exponent would flip the sign of the three spatial derivatives and would make the position-space and the momentum-space identities disagree on the sign of the spatial convection current.</p>
 <p>Write $\bar w_2$ for the pairing of <em>The Pairing</em> read at the on-shell momentum $p_2$. It obeys the same condition on the other side,</p>
 <p>$$
@@ -280,7 +282,7 @@ $$</p>
 <p>The <strong>convection term</strong> is $\frac{(p+p_2)_\mu}{2\,m\,c}\bar w_2w$. It is the current of a charged scalar of mass $m$ and momentum $\tfrac12(p+p_2)$: the orbital part. It depends on the average four-momentum, it reduces to $\bar w_2w\,v_\mu$ in the non-relativistic limit, and it is the piece protected by gauge invariance.</p>
 <p>The <strong>spin term</strong> is $\frac{i}{m\,c}\sum_\nu\varepsilon_\nu(p_2-p)_\nu\bar w_2\Sigma_{\mu\nu}w$. It depends on the momentum <strong>transfer</strong> and on the tensor bilinear, and it is the piece that carries the magnetic moment: a spin density produces a current only where its density varies, and the variation is what the transfer measures.</p>
 <p>The identification of the second term with the spin density is not a metaphor. In position space it is $\frac1{k_m}\sum_\nu\varepsilon_\nu\partial_\nu(\bar{\tilde{Ξ}}\Sigma_{\mu\nu}\tilde{Ξ})$, a total divergence of an antisymmetric bilinear, and in three dimensions the spatial indices of that bilinear pair into the spin three-vector. The bilinear $\bar{\tilde{Ξ}}\Sigma_{\mu\nu}\tilde{Ξ}$ is the density whose integral is the spin of the state.</p>
-<h3 id="the-magnetic-moment-and-math171">The magnetic moment and $g=2$</h3>
+<h3 id="the-magnetic-moment-and-math173">The magnetic moment and $g=2$</h3>
 <p>Contract the spin term with the photon field. The interaction is $-\sum_\mu\varepsilon_\mu A_\mu j_\mu$, and the spin-dependent part contributes, up to a total divergence,</p>
 <p>$$
 -\frac{e}{2\,k_m}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\partial_\nu  A_\mu\,\bar{\tilde{Ξ}}\,\Sigma_{\nu\mu}\tilde{Ξ}

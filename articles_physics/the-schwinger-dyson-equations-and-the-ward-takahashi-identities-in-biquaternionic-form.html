@@ -85,11 +85,11 @@
 <p>Both relations come from one identity, and it is worth having it before either is named.</p>
 <p>Let $\tilde{Ξ}$ be a biquaternion field, $\mathcal{D}\tilde{Ξ}$ the functional measure, and $F[\tilde{Ξ}]$ any functional of the field for which the objects below exist. Consider the integral of a total derivative in field space,
 $$
-\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(\,iS[\tilde{Ξ}]/\hbar)\Big).
+\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(i\theta_{\mathrm{act}})\Big).
 $$
 If the measure is <strong>translation invariant</strong> — if $\mathcal{D}(\tilde{Ξ}+\delta\tilde{Ξ})=\mathcal{D}\tilde{Ξ}$ for every shift $\delta\tilde{Ξ}$ vanishing at the boundary — then this integral is a shift of integration variable and vanishes:
 $$
-0=\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(\,iS[\tilde{Ξ}]/\hbar)\Big).
+0=\int\mathcal{D}\tilde{Ξ}\;\frac{\delta}{\delta\tilde{Ξ}(x)}\Big(F[\tilde{Ξ}]\;\exp(i\theta_{\mathrm{act}})\Big).
 $$</p>
 <p>Performing the derivative and taking the expectation value in the presence of a module-valued source $\tilde J_{\Phi}$ gives the <strong>working identity</strong>
 $$
@@ -182,8 +182,8 @@ Q S=\int d^4r\;\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}(r_x)
 $$
 for some current $\tilde J_{\Phi}$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
 $$
-0=\int\mathcal{D}\tilde{Ξ}\;Q\Big(F\,\exp(\,\frac{i\,S}{\hbar})\Big)
-=\int\mathcal{D}\tilde{Ξ}\;\exp(\,\frac{i\,S}{\hbar})\Big(QF+\frac{i}{\hbar}F\,QS\Big),
+0=\int\mathcal{D}\tilde{Ξ}\;Q\Big(F\,\exp(i\theta_{\mathrm{act}})\Big)
+=\int\mathcal{D}\tilde{Ξ}\;\exp(i\theta_{\mathrm{act}})\Big(QF+\frac{i}{\hbar}F\,QS\Big),
 $$
 where the second equality uses the <strong>invariance of the measure</strong>, $\int\mathcal{D}\tilde{Ξ}\,Q(\;\cdot\;)=0$ — the assumption that the measure, and not only the action, is invariant. Then
 $$
@@ -199,6 +199,7 @@ $$
 =-\big\langle q(r_x)F\big\rangle+\text{contact terms}\;},
 $$
 the <strong>Ward–Takahashi identity</strong>. The contact terms are the variation of the inserted fields, exactly as in the Schwinger–Dyson case, and they are distributional at coincident points.</p>
+<p>The angle is $\theta_{\mathrm{act}}=\mathrm{Re}\,S/\hbar$: the real part of the action is taken before dividing by $\hbar$, so the angle is real.</p>
 <p><strong>The premise is measure invariance.</strong> The step from the action's invariance to the identity is the invariance of the measure, and it is the step that can fail. Where the measure is not invariant, $QS$ need not vanish inside correlators and the divergence carries an extra term — the anomaly. The algebra does not supply the measure, so this is the premise the framework cannot check; what it supplies is the generator $Q$, the current's home, and the form of the symmetry.</p>
 <h3 id="the-central-phase">The Central Phase</h3>
 <p>The framework's canonical one-parameter symmetry is the <strong>central phase</strong>,

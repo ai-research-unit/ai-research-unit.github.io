@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viscosity and the Rayleigh Dissipation Function — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="viscosity-and-the-rayleigh-dissipation-function"><strong>Viscosity and the Rayleigh Dissipation Function</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Viscosity is the one obstruction of the section that counting does not see.</strong> The vorticity of the previous article removes two data and the law of state removes one; viscosity removes none. A viscous fluid at a point carries the same density and the same three velocity components as an inviscid one. So the count of <a href="the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a> closes for both, and the obstruction that viscosity raises has to be found somewhere else.</p>
+<p><strong>It is found in the action.</strong> The viscous force is not the variation of a functional of the flow, so there is no action to vary and no phase to read off it. The energy falls at a rate the Rayleigh dissipation function fixes, the fall has a sign in time, and a term with a sign in time has no place in an action that is even in the velocities. That is the obstruction, and it is structural rather than numerical.</p>
+<p><strong>The sharpest test of the thesis is that a linear equivalent nevertheless exists.</strong> In one dimension, Burgers' equation is carried by the Hopf–Cole transformation into the heat equation, which is linear. So the claim that a viscous flow has no linear equivalent is false as stated. What is true is narrower and stronger: the linear equation it reaches is a diffusion equation, not a wave equation. That distinction is the reason the section's thesis is worded "no linear <em>wave</em> equivalent" throughout.</p>
+<p><strong>The article therefore does two things.</strong> It states the viscous stress and its dissipation exactly, and it shows what the linearisation that does exist gives. The second half is not a complication; it is what makes the first half's claim precise.</p>
+<h2 id="the-stress">The Stress</h2>
+<p><strong>The Newtonian stress is a symmetric tensor linear in the strain rate.</strong> The strain rate is the symmetric part of the velocity gradient,</p>
+<p>$$
+S_{ij}=\tfrac12\bigl(\partial_iv_j+\partial_jv_i\bigr),
+$$</p>
+<p>and its trace is the divergence, $\delta_{ij}S_{ij}=\nabla\cdot\vec v$. The stress is</p>
+<p>$$
+\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\nabla\cdot\vec v ,
+$$</p>
+<p>with $\eta_{\mathrm{shr}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bulk viscosity. The first term is the pressure of the inviscid case; the second is the shear stress, which opposes the shearing of the flow; the third is the resistance to compression.</p>
+<p><strong>The stress has three parts and each has a different status.</strong> The pressure is a datum fixed by the law of state. The shear term is what makes a fluid stick to a wall, and it is the term that carries the fluid's viscosity in ordinary language. The bulk term is the one that survives in a purely compressive flow, and it vanishes for a monatomic ideal gas at the level of the kinetic theory.</p>
+<p><strong>The equation of motion is the divergence of the stress.</strong> Euler's equation gains one term,</p>
+<p>$$
+\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}+\frac{1}{\rho_{\mathrm{mass}}}\partial_j\sigma_{\mathrm{vsc},ij}+\vec f_{\mathrm{ext}},
+$$</p>
+<p>with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\nabla\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\nu_{\mathrm{kin}}\Delta\vec v$ with the kinematic viscosity</p>
+<p>$$
+\nu_{\mathrm{kin}}=\frac{\eta_{\mathrm{shr}}}{\rho_{\mathrm{mass}}},
+$$</p>
+<p>and with that term the equation is the Navier–Stokes equation.</p>
+<h2 id="the-dissipation-function">The Dissipation Function</h2>
+<p><strong>The rate at which the stress does work on the flow is twice the dissipation function.</strong> Define</p>
+<p>$$
+F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\nabla\cdot\vec v\bigr)^{2},
+$$</p>
+<p>the continuum form of Rayleigh's dissipation function. Then</p>
+<p>$$
+\sigma_{\mathrm{vsc},ij}\,\partial_jv_i=2F_{\mathrm{rlh}},
+$$</p>
+<p>by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\nabla\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in <a href="lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a>.</p>
+<p><strong>The energy of an isolated viscous flow decreases.</strong> With no external force and no flux through the boundary,</p>
+<p>$$
+\frac{\mathrm{d}E}{\mathrm{d}t'}=-2\int F_{\mathrm{rlh}}\,\mathrm{d}^{3}r\le0,
+$$</p>
+<p>and the equality holds only at rest. The functional $F_{\mathrm{rlh}}$ is a sum of squares, so it is non-negative, and it vanishes exactly when the strain rate and the divergence vanish together.</p>
+<p><strong>The same quantity is the entropy production.</strong> With no heat conduction, the internal energy balance is $\rho_{\mathrm{mass}}T\,\mathrm{d}s_{\mathrm{spc}}/\mathrm{d}t'=2F_{\mathrm{rlh}}$, so</p>
+<p>$$
+\partial_{t'}s_{\mathrm{ent}}+\nabla\cdot\bigl(s_{\mathrm{ent}}\vec v\bigr)=\frac{2F_{\mathrm{rlh}}}{T}\ge0 .
+$$</p>
+<p>The sign is fixed and it is the sign of the second law. A term with a fixed sign cannot be the variation of a functional that is even in the velocities, and that is the obstruction in one sentence.</p>
+<h2 id="why-there-is-no-action">Why There Is No Action</h2>
+<p><strong>Rayleigh's device inserts the force; it does not derive it.</strong> The classical device keeps the equations in Lagrangian form by putting the viscous force on the right-hand side,</p>
+<p>$$
+\frac{\mathrm{d}}{\mathrm{d}t'}\frac{\partial\mathrm{Lag}}{\partial(\mathrm{d}q_i/\mathrm{d}t')}-\frac{\partial\mathrm{Lag}}{\partial q_i}=-\frac{\partial F}{\partial(\mathrm{d}q_i/\mathrm{d}t')},
+$$</p>
+<p>and <a href="lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a> states what this costs: the force is added by hand, the energy stops being conserved, and the formalism's symmetry is not restored. The equation is Lagrange's equation plus a term, not the variation of one functional.</p>
+<p><strong>A variational formulation exists and it is not the one that matters.</strong> Doubling the variables, adding an auxiliary field, or using a principle with a dissipation functional all reproduce the viscous equations. They do so at a price: the action is not a function of the flow alone, and its conjugate momentum is not the flow's momentum. An action that needs an auxiliary field describes a larger system, and whatever is read from its phase belongs to the larger system. The viscous fluid is then a projection of that system and not its solution.</p>
+<p><strong>The time-reversal argument is the cleanest statement.</strong> The viscous term is odd under $t'\mapsto-t'$, and it has a fixed sign. An action built from the flow alone is even in the time derivatives, because the Lagrangian is a function of positions and velocities and a reversal of time reverses the velocities twice. So no action of the flow alone can produce a term whose sign is fixed under reversal. This is not a failure of ingenuity; it is a parity mismatch.</p>
+<p><strong>So viscosity removes the phase and not a datum.</strong> The four data of the barotropic fluid are untouched, and the count of the section is unchanged. What is gone is the object whose gradient would be the velocity: the phase exists when the flow extremises an action, and a dissipative flow does not.</p>
+<h2 id="the-one-dimensional-exception">The One-Dimensional Exception</h2>
+<p><strong>In one dimension the viscosity obstruction is removable, and the equation it reaches is linear.</strong> Burgers' equation is</p>
+<p>$$
+\partial_{t'}u+u\,\partial_xu=\nu_{\mathrm{kin}}\,\partial_{xx}u ,
+$$</p>
+<p>the one-dimensional Navier–Stokes equation for a flow with no pressure. The Hopf–Cole transformation</p>
+<p>$$
+u=-2\nu_{\mathrm{kin}}\,\partial_x\ln\psi
+$$</p>
+<p>carries it into the heat equation</p>
+<p>$$
+\partial_{t'}\psi=\nu_{\mathrm{kin}}\,\partial_{xx}\psi ,
+$$</p>
+<p>which is linear. The check is a differentiation: with $\psi$ solving the heat equation, $u$ as defined solves Burgers' equation identically, and the check is exact for every positive $\nu_{\mathrm{kin}}$.</p>
+<p><strong>The check is worth writing on a case.</strong> Take the heat kernel $\psi=(t')^{-1/2}\exp(-x^{2}/(4\nu_{\mathrm{kin}}t'))$. Then</p>
+<p>$$
+u=-2\nu_{\mathrm{kin}}\,\partial_x\ln\psi=\frac{x}{t'},
+$$</p>
+<p>which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'^{2}$, $u\partial_xu=x/t'^{2}$, and $\nu_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.</p>
+<p><strong>In three dimensions the transformation survives only for potential flow.</strong> With $\vec v=-2\nu_{\mathrm{kin}}\nabla\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\nu_{\mathrm{kin}}\Delta\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a> is untouched.</p>
+<h2 id="why-the-heat-equation-is-not-a-wave-equation">Why the Heat Equation Is Not a Wave Equation</h2>
+<p><strong>The dispersion relation decides it.</strong> A mode of the heat equation is $\exp(i(kx-\omega t'))$ with</p>
+<p>$$
+-i\omega=-\nu_{\mathrm{kin}}k^{2},
+\qquad
+\omega=-i\nu_{\mathrm{kin}}k^{2},
+$$</p>
+<p>a purely imaginary frequency. A mode of a wave equation is $\omega=\pm ck$, real. The first decays at a rate proportional to $k^{2}$ and does not oscillate; the second oscillates and does not decay. No solution of the heat equation interferes in the sense a wave interferes, because interference is the addition of two phases and a decaying amplitude has no phase to add.</p>
+<p><strong>The kernel shows the same thing from the other side.</strong> The heat kernel is positive everywhere for $t'>0$, so a disturbance at one point is felt everywhere immediately, with an amplitude that decays. A wave equation's kernel is supported on the cone: a disturbance is felt at a point only after the wave has had time to arrive. The two kernels are different objects and no change of variables turns one into the other.</p>
+<p><strong>The heat equation is the overdamped limit of a damped wave equation.</strong> Take</p>
+<p>$$
+\partial_{t'}^{2}u+\frac{1}{\tau_{\mathrm{dmp}}}\partial_{t'}u=c^{2}\Delta u ,
+$$</p>
+<p>a wave equation with a friction term of relaxation time $\tau_{\mathrm{dmp}}$. For disturbances slow on the scale $\tau_{\mathrm{dmp}}$ the second derivative is negligible against the first and the equation closes to $\partial_{t'}u=\tau_{\mathrm{dmp}}c^{2}\Delta u$, which is the heat equation with $\nu_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.</p>
+<p><strong>The limit is a statement about spectra, and it is why the exception is real but narrow.</strong> A damped wave equation has complex frequencies, $\omega=-i/(2\tau_{\mathrm{dmp}})\pm\sqrt{c^{2}k^{2}-1/(4\tau_{\mathrm{dmp}}^{2})}$, so it oscillates while it decays and its over-damped branch does not. At long wavelength the branch that survives is the diffusive one, and at short wavelength the two branches are the two waves. So the heat equation is the long-wavelength face of a wave equation, not a different equation reached from a different fluid.</p>
+<p><strong>So the exception confirms the thesis instead of breaking it.</strong> A viscous flow does have a linear equivalent, and the equivalent is a diffusion equation, which is the overdamped face of a damped wave equation. What viscosity removes is the sustained oscillation, and with it the phase that a wave reading needs. The claim the section needs is therefore the one it has been making: no linear <em>wave</em> equivalent that stays oscillatory.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong> That the Newtonian stress is linear in the strain rate and has three parts of different status. That $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ and $\mathrm{d}E/\mathrm{d}t'=-2\int F_{\mathrm{rlh}}$, both by expansion, and that the entropy production equals $2F_{\mathrm{rlh}}/T$. That the Hopf–Cole transformation carries Burgers' equation into the heat equation exactly, in one dimension always and in three dimensions for potential flow. That the heat equation's dispersion relation is imaginary while a wave equation's is real.</p>
+<p><strong>Interpretation.</strong> That the absence of an action is <em>the</em> obstruction, rather than a symptom of one. The parity argument is exact; that parity is the property an oscillatory reading requires is the programme's reading of what a phase is. That the heat equation should count as "not a wave equation" is a definition, and this article takes the oscillatory spectrum and the cone-supported kernel as the two marks that make it.</p>
+<p><strong>Not claimed.</strong> It is not claimed that no variational principle exists for a viscous fluid. Several do, and §<em>Why There Is No Action</em> names the price they pay. It is not claimed that the Hopf–Cole transformation is available for a general three-dimensional flow; it is available for potential flow and it is not available for a rotational one. It is not claimed that viscosity is the only source of dissipation in a fluid; heat conduction produces entropy too, and the article's entropy balance assumes it away.</p>
+<h2 id="summary">Summary</h2>
+<p>The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\nabla\cdot\vec v$, and the Navier–Stokes equation is its divergence.</p>
+<p>Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\nabla\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.</p>
+<p>The obstruction is the absence of an action. The viscous term is odd under reversal of time and has a fixed sign, so no functional of the flow alone varies to it. Rayleigh's device inserts the force on the right-hand side of Lagrange's equation, which is the statement that it is inserted and not derived. Doubling the variables restores a variational principle for a larger system, and the phase then belongs to the larger system.</p>
+<p>The count does not see viscosity. A viscous fluid carries the same four data as an inviscid one, and what viscosity removes is the phase rather than a datum.</p>
+<p>In one dimension the obstruction is removable and the result is linear: the Hopf–Cole transformation carries Burgers' equation into the heat equation, exactly, with the kernel giving $u=x/t'$. In three dimensions it does so only for potential flow.</p>
+<p>The heat equation is not a wave equation. Its frequency is $-i\nu_{\mathrm{kin}}k^{2}$, purely imaginary; its kernel is positive rather than cone-supported; and it is the long-wavelength branch of a damped wave equation, $\nu_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sigma_{ij}$</td>
+<td>Stress tensor</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{vsc},ij}$</td>
+<td>Its viscous part</td>
+</tr>
+<tr>
+<td>$S_{ij}=\frac12(\partial_iv_j+\partial_jv_i)$</td>
+<td>Strain rate</td>
+</tr>
+<tr>
+<td>$\eta_{\mathrm{shr}}$</td>
+<td>Shear viscosity</td>
+</tr>
+<tr>
+<td>$\tau_{\mathrm{dmp}}$</td>
+<td>Relaxation time of the damping term in the damped wave equation</td>
+</tr>
+<tr>
+<td>$\zeta_{\mathrm{blk}}$</td>
+<td>Bulk viscosity</td>
+</tr>
+<tr>
+<td>$\nu_{\mathrm{kin}}=\eta_{\mathrm{shr}}/\rho_{\mathrm{mass}}$</td>
+<td>Kinematic viscosity</td>
+</tr>
+<tr>
+<td>$F_{\mathrm{rlh}}$</td>
+<td>Rayleigh dissipation function</td>
+</tr>
+<tr>
+<td>$p_{\mathrm{th}}$</td>
+<td>Thermodynamic pressure</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{spc}},\ s_{\mathrm{ent}}$</td>
+<td>Specific entropy and entropy density</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td>$u$</td>
+<td>Velocity of the one-dimensional flow</td>
+</tr>
+<tr>
+<td>$\psi$</td>
+<td>Hopf–Cole potential</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>Kinetic energy of the flow</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{mass}}$</td>
+<td>Mass density</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Lord Rayleigh, <em>The Theory of Sound</em>, 2nd ed. (Macmillan, 1894), vol. I, ch. IV, for the dissipation function and for the statement that it is half the rate at which the energy falls.</li>
+<li>Claude-Louis Navier, "Mémoire sur les lois du mouvement des fluides," <em>Mémoires de l'Académie Royale des Sciences</em> <strong>6</strong> (1822) 389–440, and George Gabriel Stokes, "On the theories of the internal friction of fluids in motion," <em>Transactions of the Cambridge Philosophical Society</em> <strong>8</strong> (1845) 287–305, for the stress of this article.</li>
+<li>Johannes M. Burgers, "A mathematical model illustrating the theory of turbulence," <em>Advances in Applied Mechanics</em> <strong>1</strong> (1948) 171–199, for the equation that carries his name.</li>
+<li>Eberhard Hopf, "The partial differential equation $u_t+uu_x=\mu u_{xx}$," <em>Communications on Pure and Applied Mathematics</em> <strong>3</strong> (1950) 201–230, and Julian D. Cole, "On a quasi-linear parabolic equation occurring in aerodynamics," <em>Quarterly of Applied Mathematics</em> <strong>9</strong> (1951) 225–236, for the transformation that linearises it.</li>
+<li>Carl Eckart, "The thermodynamics of irreversible processes III: relativistic theory of the simple fluid," <em>Physical Review</em> <strong>58</strong> (1940) 919–924, for the entropy production of a viscous fluid.</li>
+<li>Lev D. Landau and Evgeny M. Lifshitz, <em>Fluid Mechanics</em>, 2nd ed. (Pergamon, 1987), §§16, 49, for the dissipation function and the entropy balance.</li>
+<li>The companion articles: <a href="the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a>, <a href="the-vorticity-form-and-the-irrotational-condition.html">The Vorticity Form and the Irrotational Condition</a>, <a href="the-equation-of-state-and-the-barotropic-condition.html">The Equation of State and the Barotropic Condition</a>, <a href="the-one-dimensional-reverse-map-characteristics-kdv-hopf.html">The One-Dimensional Reverse Map: Characteristics, KdV, Hopf</a>.</li>
+<li><a href="lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a>, for Rayleigh's device; <a href="interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>, for the continuation that turns the wave equation into the heat equation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
