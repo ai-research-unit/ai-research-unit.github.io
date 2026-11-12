@@ -122,8 +122,9 @@ $$</p>
 \qquad
 \tilde{Ξ}_{2} = \lambda\tilde{Ξ},
 \qquad
-\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar}).
+\lambda = \exp(i\theta_{\mathrm{gau}}).
 $$</p>
+<p>Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.</p>
 <p>The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:</p>
 <p>$$
 D_2\tilde{Ξ}_{2} = \left(\tilde\nabla_\Phi + i\kappa\tilde{A}_{\Phi} - i\kappa\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}
@@ -184,7 +185,7 @@ $$</p>
 <p>The claim that the orbit carries no state information can be made exact with the relative entropy, the basic monotone quantity of the informational sector.</p>
 <p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}_{\Phi}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
 <p>$$
-\lambda(\tilde{Q}) = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar}), \qquad
+\lambda(\tilde{Q}) = \exp(i\theta_{\mathrm{gau}}\tilde{Q}), \qquad
 \omega_2 = \omega \circ  \mathrm{Ad}_{\lambda^{-1}} .
 $$</p>
 <p>Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a $*$-unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}_{\Phi}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:</p>
@@ -195,7 +196,8 @@ $$</p>
 <p>Three consequences of the invariance spell out the redundancy.</p>
 <p><strong>No information measure can detect the orbit.</strong> Relative entropy is the sharpest distinguishability measure of the theory, and it is constant along the orbit. Whatever else the orbit is, it is not a difference of states.</p>
 <p><strong>The invariance is not confined to the relative entropy.</strong> Every functional of the state that is invariant under $*$-unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}_{\Psi}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local $*$-unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.</p>
-<p><strong>The abelian orbit is invisible to the informational sector.</strong> This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ its action is</p>
+<p><strong>The abelian orbit is invisible to the informational sector.</strong> This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta_{\mathrm{cen}})$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ its action is</p>
+<p>Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.</p>
 <p>$$
 \tilde{Ϛ}_{\Psi} \longmapsto \lambda\,\tilde{Ϛ}_{\Psi}\,\lambda^\dagger = |\lambda|^2\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi},
 $$</p>
@@ -256,7 +258,7 @@ $$</p>
 </table></div>
 <p>The middle row is the subject of the companion article on confinement, and the bottom row of the companion article on the Higgs mechanism. What the table is meant to make visible is that the three are not variants of one another. Redundancy has an <em>informationally empty</em> fibre — the orbit is what a gauge choice quotients away, and choosing a gauge recovers the configuration. Loss has a fibre that is informationally non-empty — distinct partonic configurations yield the same asymptotic record, and no gauge choice recovers them. Relocation has a gauge orbit as its fibre as well — so the fibre carries no state information either — but the mechanism's action on the orbit leaves a record, the mass, and conserves the count of local degrees of freedom. The biquaternion framework houses all three in the same algebra, and the algebra's sector split is what keeps them distinct.</p>
 <h2 id="gauge-redundancy-and-the-informational-sector">Gauge Redundancy and the Informational Sector</h2>
-<p>The framework's gauge group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta)\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.</p>
+<p>The framework's gauge group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta_{\mathrm{cen}})\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.</p>
 <p><strong>The orbit is a material-sector structure.</strong> The connection lies in $\mathbb{B}_{\Phi}$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{B}_{\Phi}$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{B}_{\Phi}$ is a shift by the identity direction.</p>
 <p><strong>The informational sector is blind to the orbit.</strong> As established above, a central phase acts trivially on $\mathbb{B}_{\Psi}$. The informational sector — states, observables, measurements — carries no variable conjugate to the gauge orbit. In the operational interpretation of <em>The Informational Sector: States, Observables and Probability</em>, the gauge orbit is not an unmeasured variable; it is a <strong>non-variable</strong>. There is no observable whose outcome distribution differs across the orbit, so the orbit cannot appear in any information-theoretic accounting of the sector.</p>
 <p><strong>The one place the two sectors meet is the holonomy.</strong> The Wilson loop is the trace of the holonomy — a material connection integrated along a curve and exponentiated into the informational realization of the group — and its gauge invariance is the invariance of the scalar part under the adjoint action. It is the single object in which the orbit's global structure is paired with an informational trace. The interpretation of that pairing is the open question the Wilson-loop article records; here it is enough to note that the pairing is where the redundancy stops being invisible and starts being a physical number.</p>
@@ -300,7 +302,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}_{\Phi}) = \{\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.</p>
-<p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
+<p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(i\theta_{\mathrm{gau}})$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
 <p>$$
 S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi,2}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1}).
 $$</p>
@@ -356,7 +358,7 @@ $$</p>
 <td>Real scalar gauge function</td>
 </tr>
 <tr>
-<td>$\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
+<td>$\lambda = \exp(i\theta_{\mathrm{gau}})$</td>
 <td>Local central phase</td>
 </tr>
 <tr>

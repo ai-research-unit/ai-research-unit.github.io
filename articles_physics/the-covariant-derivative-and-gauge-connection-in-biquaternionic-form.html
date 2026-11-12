@@ -174,10 +174,11 @@ $$</p>
 <p>and this is the precise sense in which the connection "compensates" for the ordinary derivative's failure to be gauge covariant.</p>
 <p><strong>4. $\tilde\nabla_{\mathrm{gco}}$ is not closed under multiplication, but its commutator is.</strong> The composition $\tilde\nabla_{\mathrm{gco},\mu} \tilde\nabla_{\mathrm{gco},\nu}$ is a second-order operator and is not an algebra element. The <em>commutator</em> $[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}]$, on the other hand, is first order and in fact has no derivative at all: it is multiplication by an element of $\mathbb{B}$. That element is the curvature, treated in its own section below. This is the structural reason the gauge field strength is the commutator of covariant derivatives rather than any single $\tilde\nabla_{\mathrm{gco},\mu}$.</p>
 <h2 id="gauge-covariance-and-what-it-forces">Gauge Covariance and What It Forces</h2>
-<p>The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = \exp(\frac{i\,ϙ\,\Gamma\,\tilde{Q}}{\hbar})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies</p>
+<p>The gauge principle article proves the covariance of the construction (inherited here, not rederived): with $\lambda = \exp(i\theta_{\mathrm{gau}}\tilde{Q})$ a central phase and $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, the covariant derivative built from $\tilde{A}_{\Phi,2}$ satisfies</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda\,\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}
 $$</p>
+<p>Here $\theta_{\mathrm{gau}}:=ϙ\,\Gamma/\hbar$ is the gauge angle: the charge $ϙ$ and the gauge function $\Gamma$ are real, so the exponent is $i$ times a real number and the link is a phase of modulus one. Where the point $\tilde{Q}$ stands beside the angle, it is a real coordinate and the phase keeps modulus one.</p>
 <p>for every field $\tilde{Ξ}$, so the equation $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ} = 0$ holds in every gauge when it holds in one. For the present article the important point is the converse direction, which the gauge principle article did not state: <strong>covariance determines $\tilde\nabla_{\mathrm{gco}}$; the connection is forced, not chosen.</strong></p>
 <p>To see this, suppose only that the field transforms as $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ and that a derivative of the form $\tilde\nabla_{\mathrm{gco},2} = \tilde\nabla_\Phi + \Omega_2$ is required to be covariant, $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}$ for all $\tilde{Ξ}$, where $\Omega_2$ denotes multiplication by an element of $\mathbb{B}$. Expanding the left-hand side with the Leibniz rule,</p>
 <p>$$
@@ -349,7 +350,7 @@ $$</p>
 \tilde\nabla_{\mathrm{gco},\mu} = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu,
 $$</p>
 <p>with $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu \in \mathbb{B}_{\Phi}$ the connection. It is not an element of the algebra; it is a derivation on fields, with Leibniz rule $\tilde\nabla_{\mathrm{gco}}(f\tilde{Ξ}) = f\tilde\nabla_{\mathrm{gco}}\tilde{Ξ} + (\tilde\nabla_\Phi f)\tilde{Ξ}$ and commutator $[\tilde\nabla_{\mathrm{gco},\mu},f] = \partial/\partial R_\mu f$, so that the connection is exactly the difference $\tilde\nabla_{\mathrm{gco},\mu} - \partial/\partial R_\mu =\frac{i\,ϙ}{\hbar}A_\mu$.</p>
-<p>Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde\nabla_\Phi\lambda)\lambda^{-1}$, which for $\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.</p>
+<p>Covariance determines the connection rather than merely holding for it: the requirement $\tilde\nabla_{\mathrm{gco},2}(\lambda\tilde{Ξ}) = \lambda \tilde\nabla_{\mathrm{gco}}\tilde{Ξ}$ forces $\Omega_2 = \lambda\Omega\lambda^{-1} - (\tilde\nabla_\Phi\lambda)\lambda^{-1}$, which for $\lambda = \exp(i\theta_{\mathrm{gau}})$ is the inherited law $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$. The connection is a gauge orbit, not a value: it can be gauged to zero at any single point, a gradient connection is flat, and the curvature $\tilde{F}$ is exactly the obstruction to removing it on a neighbourhood. The one-form $\sum_\mu A_\mu\,dx_\mu$ lies in the real-quaternion subspace and has a gauge-invariant loop integral.</p>
 <p>The curvature is the commutator of covariant derivatives, $[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}] =\frac{i\,ϙ}{\hbar}F_{\mu\nu}$, and contracts to the field strength $\tilde{F} =\frac{\hbar}{2\,i\,ϙ}\sum_{\mu\nu}[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}]e_\mu^{\natural} e_\nu$. Unlike $\tilde\nabla_{\mathrm{gco},\mu}$, the commutator is an element of the algebra. The covariant square separates cleanly,</p>
 <p>$$
 \boxed{\;\tilde\nabla_{\mathrm{gco}}^{\natural} \tilde\nabla_{\mathrm{gco}} = \sum_{\mu\in\{t,x,y,z\}}  \tilde\nabla_{\mathrm{gco},\mu}^{2} +\frac{i\,ϙ}{\hbar}\tilde{F},
@@ -420,7 +421,7 @@ $$</p>
 <td>Real scalar gauge function</td>
 </tr>
 <tr>
-<td>$\lambda = \exp(\frac{i\,ϙ\,\Gamma}{\hbar})$</td>
+<td>$\lambda = \exp(i\theta_{\mathrm{gau}})$</td>
 <td>Local central phase (abelian)</td>
 </tr>
 <tr>

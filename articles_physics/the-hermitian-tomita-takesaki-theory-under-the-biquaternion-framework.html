@@ -220,10 +220,11 @@ which is an <strong>inner</strong> automorphism of $\mathbb{B}$, implemented by 
 $$
 \tilde H_{\Psi,\mathrm{modular}} := -\log\tilde{Ϛ}_{\Psi} \ \in\mathbb{B}_{\Psi},
 $$
-one has $\tilde{Ϛ}_{\Psi}^{ir'_t}=\exp(-ir'_t\tilde H_{\Psi,\mathrm{modular}})$ and
+one has $\tilde{Ϛ}_{\Psi}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and
 $$
-\sigma_{r'_{t}}(\tilde{Q}_3)=\exp(-ir'_t\tilde H_{\Psi,\mathrm{modular}})\tilde{Q}_3\,\exp(ir'_t\tilde H_{\Psi,\mathrm{modular}}), \qquad \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde{Q}_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3].
+\sigma_{r'_{t}}(\tilde{Q}_3)=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde{Q}_3\,\exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}}), \qquad \frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde{Q}_3)\Big|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde{Q}_3].
 $$</p>
+<p>Throughout, $\theta_{\mathrm{evo}}:=r'_t$ is the elapsed coordinate time, a real number: the generator $\tilde H_{\Psi,\mathrm{modular}}$ is Hermitian, its eigenvalues are real, and the flow it generates is $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, a unitary whose exponent is $i$ times a real spectrum.</p>
 <h3 id="the-identities-verified">The Identities, Verified</h3>
 <p>The identities $S_0=J\mathcal{M}_{\mathrm{mod}}^{1/2}$, $J^2=1$, $J\mathcal{M}_{\mathrm{mod}} J\mathcal{M}_{\mathrm{mod}}=1$, $J\,i\,J=-i$, the group law $\sigma_{r'_{t}}\circ\sigma_s=\sigma_{r'_t+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.</p>
 <h3 id="an-explicit-case">An Explicit Case</h3>
@@ -243,7 +244,7 @@ $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H_\Psi+(\log Z)e_t,
 $$
 with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $H_{\mathrm{modular}}=\beta H+\log Z\,e_t$ and with that article's partition function.</p>
-<h2 id="the-biquaternion-candidate-for-math220">The Biquaternion Candidate for $S$</h2>
+<h2 id="the-biquaternion-candidate-for-math224">The Biquaternion Candidate for $S$</h2>
 <p>The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation ${}^{*}$ itself:
 $$
 S_0:\ \tilde{Q}_3\mapsto\tilde{Q}_3^{*} .

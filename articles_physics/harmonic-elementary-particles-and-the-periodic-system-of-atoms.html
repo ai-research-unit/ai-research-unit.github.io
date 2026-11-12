@@ -91,10 +91,11 @@ $$</p>
 <p>with the paper's pure-vector $\nabla$. Its scalar part is the conservation law $\partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0$ and its vector part the first-order inertia equation for the current; both are in the companion article, and nothing here changes them.</p>
 <p>A <strong>monochromatic</strong> field is one whose time dependence is a single exponential,</p>
 <p>$$
-\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\theta_{\mathrm{mat}}),
 \qquad
 \omega > 0 .
 $$</p>
+<p>Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.</p>
 <p>Substituting, $\partial/\partial\tau \to -i\omega$, so the inertia equation becomes</p>
 <p>$$
 -i\left(\omega + \nabla\right)\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) = 0,
@@ -378,7 +379,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$</td>
-<td>Biamplitude, $\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$</td>
+<td>Biamplitude, $\tilde J_{\Phi,\mathrm{eg}}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\theta_{\mathrm{mat}})$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}$</td>

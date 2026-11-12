@@ -133,7 +133,7 @@ $$</p>
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$</p>
 <p>The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the <strong>exponent angle</strong>, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of <em>Exponential Polar Decomposition of Quaternions</em>. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.</p>
-<p>The quaternion case has no phase $\alpha$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
+<p>The quaternion case has no phase $\theta_{\mathrm{pha}}$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
 <p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its coordinates, its polar data and its check. The boundary is treated separately (§<em>The Real Axis Family</em>). The summary collects the results in four tables, reads the patterns across the cases, and compares the quaternion and biquaternion architectures (§<em>Summary</em>).</p>
 <h2 id="the-method">The Method</h2>
 <h3 id="the-coordinates">The Coordinates</h3>
@@ -146,7 +146,7 @@ $$</p>
 \tilde u_{\mathrm r}=\frac{\tilde q}{r}.
 $$</p>
 <p>The radicand is positive for every nonzero quaternion, so there is no branch choice and no null cone. The element lies on the unit sphere exactly when $r=1$. The four real dimensions split as $1+3$: one for the scale and three for the sphere $S^3$ of unit factors.</p>
-<p>The biquaternion modulus is the principal square root of the complex number $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and carries a phase $\alpha$; here the radicand is a positive real, so the modulus is a positive real and the phase is absent. This is the first structural difference between the two articles.</p>
+<p>The biquaternion modulus is the principal square root of the complex number $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and carries a phase $\theta_{\mathrm{pha}}$; here the radicand is a positive real, so the modulus is a positive real and the phase is absent. This is the first structural difference between the two articles.</p>
 <h3 id="the-unit-factor">The Unit Factor</h3>
 <p>The unit factor is written</p>
 <p>$$
@@ -993,7 +993,7 @@ $$</p>
 </tr>
 <tr>
 <td>modulus</td>
-<td>$re^{i\alpha}$, principal square root</td>
+<td>$re^{i\theta_{\mathrm{pha}}}$, principal square root</td>
 <td>$r>0$</td>
 </tr>
 <tr>
@@ -1008,7 +1008,7 @@ $$</p>
 </tr>
 <tr>
 <td>polar word</td>
-<td>$re^{i\alpha}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$</td>
+<td>$re^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$</td>
 <td>$\exp(\ln r+\theta\vec n)$</td>
 </tr>
 <tr>

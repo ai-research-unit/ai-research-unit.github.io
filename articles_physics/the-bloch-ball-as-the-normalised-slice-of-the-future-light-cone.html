@@ -240,10 +240,11 @@ $$</p>
 \frac{\langle\tilde\Pi(\vec u),\tilde\Pi(\vec v)\rangle_{*}}{\langle\tilde\Pi(\vec v),e_t\rangle_{*}}
 = 2\,\langle\tilde\Pi(\vec u),\tilde\Pi(\vec v)\rangle_{*}
 = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr)
-= \cos^2\frac{\theta}{2}
+= \cos^2\frac{\theta_{\mathrm{cen}}}{2}
 \;},
 $$</p>
-<p>where $\theta$ is the angle between $\vec u$ and $\vec v$. In the $2\times2$ image the same number is $\mathrm{Tr}(\tilde\Pi(\vec u)\tilde\Pi(\vec v))$. It equals $1$ for $\vec u = \vec v$ and $0$ for $\vec u = -\vec v$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the plain form is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.</p>
+<p>where $\theta_{\mathrm{cen}}$ is the angle between $\vec u$ and $\vec v$. In the $2\times2$ image the same number is $\mathrm{Tr}(\tilde\Pi(\vec u)\tilde\Pi(\vec v))$. It equals $1$ for $\vec u = \vec v$ and $0$ for $\vec u = -\vec v$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the plain form is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.</p>
+<p>Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.</p>
 <h2 id="mixed-states-the-interior-of-the-ball">Mixed States: The Interior of the Ball</h2>
 <p>The interior $|\vec r| < 1$ consists of the states that lie strictly inside the future cone. For these, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} > 0$ and $\tilde{Ϛ}_{\Psi}$ is invertible, with eigenvalues</p>
 <p>$$
@@ -332,7 +333,7 @@ $$</p>
 2\,\langle\tilde\Pi(\vec u),\tilde\Pi(\vec v)\rangle_{*}
 = \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr)
 = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr)
-= \cos^2\frac{\theta}{2},
+= \cos^2\frac{\theta_{\mathrm{cen}}}{2},
 $$</p>
 <p>a function of the angle between the Bloch directions alone. In terms of the boundary of the ball, it is a function of the chordal separation of two points of the sphere.</p>
 <p>For two general states the Uhlmann transition probability is</p>
@@ -477,8 +478,9 @@ h_t \ \text{fixed},
 \qquad
 R \in SO(3).
 $$</p>
-<p>That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2)e_t + i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$ has unit norm and is far from $*$-unitary, while $\exp(i\theta)e_t$ is $*$-unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.</p>
-<p>The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde U_{\Psi,\mathrm b}$ and a unit real quaternion rotor $\tilde{q}$ (<em>The Polar Decomposition in Subspaces</em>, <em>The Polar Decomposition of Biquaternions</em>). The two classes above are exactly the two ways of keeping two of those four factors:</p>
+<p>That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2)e_t + i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$ has unit norm and is far from $*$-unitary, while $\exp(i\theta_{\mathrm{cen}})e_t$ is $*$-unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta_{\mathrm{cen}})$, equal to $1$ only when $\theta_{\mathrm{cen}}$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.</p>
+<p>The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde U_{\Psi,\mathrm b}$ and a unit real quaternion rotor $\tilde{q}$ (<em>The Polar Decomposition in Subspaces</em>, <em>The Polar Decomposition of Biquaternions</em>). The two classes above are exactly the two ways of keeping two of those four factors:</p>
+<p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -497,8 +499,8 @@ $$</p>
 </tr>
 <tr>
 <td>$*$-unitary</td>
-<td>$\exp(i\alpha)\tilde{q}$</td>
-<td>the central phase $\exp(i\alpha)$</td>
+<td>$\exp(i\theta_{\mathrm{pha}})\tilde{q}$</td>
+<td>the central phase $\exp(i\theta_{\mathrm{pha}})$</td>
 <td>$\mathrm{U}(2)$</td>
 </tr>
 <tr>
@@ -509,7 +511,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>So it is not merely that the two groups differ: <strong>the boost factor is what a Lorentz transformation has and a $*$-unitary does not, and the central phase is what a $*$-unitary has and a boost does not.</strong> The polar article states the first as its criterion for a trivial boost factor — $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_t$ exactly when $\tilde U_{\Psi,\mathrm b} = e_t$ — which in the matrix picture is the statement that the element is $*$-unitary up to a scale. The second is the same statement read the other way: unit norm forces $r = 1$ and $\exp(2i\alpha) = 1$, so the phase has no room and the boost factor has all of it. And the boost factor is not an outside object. It is $\tilde U_{\Psi,\mathrm b} = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$, a positive definite element of $\mathbb{B}_{\Psi}$ itself, so the factor that carries a state off the normalised slice belongs to the sector whose states they are. The twisted spinor article records the division on the other action: of the two, the unit-norm case is the Lorentz transformation on the material sector, while the $*$-unitary case is a rotation with no dilatation.</p>
+<p>So it is not merely that the two groups differ: <strong>the boost factor is what a Lorentz transformation has and a $*$-unitary does not, and the central phase is what a $*$-unitary has and a boost does not.</strong> The polar article states the first as its criterion for a trivial boost factor — $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_t$ exactly when $\tilde U_{\Psi,\mathrm b} = e_t$ — which in the matrix picture is the statement that the element is $*$-unitary up to a scale. The second is the same statement read the other way: unit norm forces $r = 1$ and $\exp(2i\theta_{\mathrm{pha}}) = 1$, so the phase has no room and the boost factor has all of it. And the boost factor is not an outside object. It is $\tilde U_{\Psi,\mathrm b} = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$, a positive definite element of $\mathbb{B}_{\Psi}$ itself, so the factor that carries a state off the normalised slice belongs to the sector whose states they are. The twisted spinor article records the division on the other action: of the two, the unit-norm case is the Lorentz transformation on the material sector, while the $*$-unitary case is a rotation with no dilatation.</p>
 <p>The dividing line is sharper than a statement about groups, and the corpus draws it. <em>The Operators: One-Sided, Two-Sided, Two-Sided Operator</em> records that the action is an inner automorphism exactly in the $*$-unitary sector, where $\tilde{U}^{*} = \tilde{U}^{-1}$, and not elsewhere; for a unit-norm rotor that equation means $\tilde U$ is a real quaternion — the pure-rotation case — while a boost has $\tilde U^{*} = \tilde U$, so $\tilde U^{*}\tilde U = \tilde U^{2} \neq e_t$ and the map is not multiplicative. That same equation, $\tilde U\tilde U^{*} = e_t$, is exactly unitarity. So one condition wears five faces:</p>
 <p>$$
 \tilde{U}\tilde{U}^{*} = e_t
@@ -560,7 +562,7 @@ $$</p>
 $$</p>
 <p>the intersection is the closed unit ball $|\vec r| \leq 1$, the <strong>Bloch ball</strong>, whose boundary is the intersection with the null cone.</p>
 <p>The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ on the normalised hyperplane; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\vec r|)$; the maximally mixed state is the centre $\vec r = 0$.</p>
-<p>Purity is $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = \tfrac{1}{2}(1 + |\vec r|^2)$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$, so the Bloch radius is a measure of purity; the linear entropy is $1 - P(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(1-|\vec r|^2) = 2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, twice the biquaternion norm. The von Neumann entropy depends only on $|\vec r|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the Hermitian form on $\mathbb{B}_{\Psi}$, without additional postulates.</p>
+<p>Purity is $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = \tfrac{1}{2}(1 + |\vec r|^2)$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$, so the Bloch radius is a measure of purity; the linear entropy is $1 - P(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}(1-|\vec r|^2) = 2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, twice the biquaternion norm. The von Neumann entropy depends only on $|\vec r|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta_{\mathrm{cen}}/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the Hermitian form on $\mathbb{B}_{\Psi}$, without additional postulates.</p>
 <p>The ball has a mirror interpretation in the material sector. The map $\tilde H_\Psi = -\tfrac{i}{2}\tilde R_\Phi$ carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{\Psi}$, sends the material four-vector $i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ to $\tfrac{1}{2}(r'_{t}\,e_t - i(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, and satisfies $\mathrm{Sc}(\tilde H_\Psi) = \tfrac{1}{2}c r'_{t}$ and $\langle\tilde H_\Psi\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde R_\Phi\rangle_{\natural}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde H_\Psi) = r'_{t}$. The image is a state exactly at $r'_{t} = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with $\vec r = -(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$. The map turns the positivity of the state into the causal condition $r'_{t} \geq |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, which on the normalised slice is $\lvert\vec r\rvert\le1$: the ball is the normalised slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the sign of the scalar part, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U}^{*}$, with a unit-norm rotor as actor on the material side and a $*$-unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the $*$-unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the scalar part and the normalised slice is the state space. What the map is not is an algebra isomorphism: $i$ carries a product to the product of one switched factor and one unswitched one, $i(\tilde{Q}_1\tilde{Q}_2)=(i\tilde{Q}_1)\tilde{Q}_2$, but not to the product of the two images, so $(i\tilde{Q}_1)(i\tilde{Q}_2) = -\tilde{Q}_1\tilde{Q}_2 \neq i(\tilde{Q}_1\tilde{Q}_2)$; within a sector the product reverses the order, $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{B}_{\Phi}$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -668,7 +670,7 @@ $$</p>
 <td>Product rule within a sector; $[\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}] \subseteq \mathbb{B}_{\Phi}$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = r \exp(i\alpha)\tilde U_{\Psi,\mathrm b}\tilde{q}$</td>
+<td>$\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde{q}$</td>
 <td>Polar word: scale, central phase, boost factor, rotor</td>
 </tr>
 <tr>
@@ -676,7 +678,7 @@ $$</p>
 <td>Boost factor, in $\mathbb{B}_{\Psi}$ positive definite; rotor, in $Sp(1)$</td>
 </tr>
 <tr>
-<td>$\tilde U_{\Psi,\mathrm b}\tilde{q}$, $\exp(i\alpha)\tilde{q}$</td>
+<td>$\tilde U_{\Psi,\mathrm b}\tilde{q}$, $\exp(i\theta_{\mathrm{pha}})\tilde{q}$</td>
 <td>The two actors: $SL(2,\mathbb{C})$ on the cone, $\mathrm{U}(2)$ on the slice; both meet at $Sp(1) = SU(2)$</td>
 </tr>
 <tr>

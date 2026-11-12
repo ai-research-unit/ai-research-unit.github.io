@@ -86,7 +86,7 @@ $$</p>
 $$</p>
 <p>and as</p>
 <p>$$
-\tilde Q=r\,e^{i\alpha}\,
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$</p>
@@ -115,13 +115,13 @@ $$</p>
 <ol>
 <li>Compute $N$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. The sector requires $N\neq0$ and $B^2=0$.</li>
 <li>Compute the scalar part $Q_t$ and the nilpotent direction $\vec\Upsilon=\vec Q/Q_t$. Check $\vec\Upsilon^2=0$.</li>
-<li>Compute the modulus $\Rho$, the principal square root of $N=Q_t^2$, and write $\Rho=r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$.</li>
+<li>Compute the modulus $\Rho$, the principal square root of $N=Q_t^2$, and write $\Rho=r e^{i\theta_{\mathrm{pha}}}$ with $r>0$ and $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$.</li>
 <li>Compute the sign $\varepsilon=Q_t/\Rho=\pm1$ and the unit factor $\tilde U=\varepsilon(e_t+\vec\Upsilon)$.</li>
 <li>Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.</li>
 <li>Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.</li>
 <li>Check the constraints $c_{\mathrm b}c_{\mathrm r}=\varepsilon$ and $s_{\mathrm b}s_{\mathrm r}c=0$, with $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$.</li>
 <li>Compute the exact logarithm $\log Q_t+\vec\Upsilon$ and check its exponential against $\tilde Q$.</li>
-<li>Compute the formal exponent $\tilde Q_{\log}=\ln r+i\alpha+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ and its defect.</li>
+<li>Compute the formal exponent $\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ and its defect.</li>
 </ol>
 <p>The <strong>defect</strong> of a case is</p>
 <p>$$
@@ -187,7 +187,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1.
 $$</p>
@@ -223,7 +223,7 @@ B^2=0,
 \qquad
 r=2,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=-1.
 $$</p>
@@ -259,7 +259,7 @@ B^2=0,
 \qquad
 r=2,
 \qquad
-\alpha=\frac{\pi}{2},
+\theta_{\mathrm{pha}}=\frac{\pi}{2},
 \qquad
 \varepsilon=1.
 $$</p>
@@ -296,7 +296,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1,
 \qquad
@@ -362,7 +362,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1,
 \qquad
@@ -427,7 +427,7 @@ B^2=0,
 \qquad
 r=\sqrt2,
 \qquad
-\alpha=\frac{\pi}{4},
+\theta_{\mathrm{pha}}=\frac{\pi}{4},
 \qquad
 \varepsilon=1,
 \qquad
@@ -494,7 +494,7 @@ B^2=0,
 \qquad
 r=1,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=-1,
 \qquad
@@ -538,7 +538,7 @@ $$</p>
 <p>$$
 \delta=1.2330607.
 $$</p>
-<p>The formal exponent has no scalar part, because $\ln r+i\alpha=0$; the true logarithm has $i\pi$, the period that the word does not see.</p>
+<p>The formal exponent has no scalar part, because $\ln r+i\theta_{\mathrm{pha}}=0$; the true logarithm has $i\pi$, the period that the word does not see.</p>
 <h3 id="case-8-a-scaled-jordan-element">Case 8: A Scaled Jordan Element</h3>
 <h4 id="the-element_7">The Element</h4>
 <p>$$
@@ -553,7 +553,7 @@ B^2=0,
 \qquad
 r=2,
 \qquad
-\alpha=0,
+\theta_{\mathrm{pha}}=0,
 \qquad
 \varepsilon=1,
 \qquad
@@ -978,7 +978,7 @@ $$</p>
 <tr>
 <th>Case</th>
 <th>$r$</th>
-<th>$\alpha$</th>
+<th>$\theta_{\mathrm{pha}}$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
 <th>$\theta$</th>
 <th>$\vec u_{\mathrm b}$</th>
@@ -1112,7 +1112,7 @@ $$</p>
 <td>the modulus, principal square root of $N$</td>
 </tr>
 <tr>
-<td>$r,\alpha$</td>
+<td>$r,\theta_{\mathrm{pha}}$</td>
 <td>the polar coordinates of $\Rho$</td>
 </tr>
 <tr>

@@ -77,12 +77,12 @@
 <h3 id="the-spinor-order-parameter">The spinor order parameter</h3>
 <p>The condensate is described by a macroscopic wave function with three internal components,</p>
 <p>$$
-\tilde{Ξ}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta(\vec r))\,
+\tilde{Ξ}(\vec r)=\sqrt{n(\vec r)}\,\exp(i\theta_{\mathrm{pha}}(\vec r))\,
 \vec\varkappa_{\mathrm{ord}}(\vec r),\qquad
 \vec\varkappa_{\mathrm{ord}}=\begin{pmatrix}\varkappa_{\mathrm{ord},+}\ \varkappa_{\mathrm{ord},0}\ \varkappa_{\mathrm{ord},-}\end{pmatrix},\qquad
 {\vec\varkappa_{\mathrm{ord}}}^{\dagger}\vec\varkappa_{\mathrm{ord}}=1 ,
 $$</p>
-<p>where $n$ is the density, $\theta$ the global phase, and $\vec\varkappa_{\mathrm{ord}}$ the <em>spinor order parameter</em>, a unit vector in $\mathbb{C}^3$ whose components multiply the states of spin projection $m=+1,0,-1$ along the quantisation axis. The spin operators are the dimensionless three-dimensional matrices</p>
+<p>where $n$ is the density, $\theta_{\mathrm{pha}}$ the global phase, and $\vec\varkappa_{\mathrm{ord}}$ the <em>spinor order parameter</em>, a unit vector in $\mathbb{C}^3$ whose components multiply the states of spin projection $m=+1,0,-1$ along the quantisation axis. The spin operators are the dimensionless three-dimensional matrices</p>
 <p>$$
 F_x=\frac{1}{\sqrt2}\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix},\quad
 F_y=\frac{i}{\sqrt2}\begin{pmatrix}0&-1&0\\1&0&-1\\0&1&0\end{pmatrix},\quad
@@ -94,9 +94,10 @@ $$</p>
 $$</p>
 <p>is the magnetic order parameter, a real three-vector with $|\langle\vec F\rangle|\le1$. The atomic Hamiltonian is invariant under the three-parameter family of transformations</p>
 <p>$$
-\vec\varkappa_{\mathrm{ord}}\;\longmapsto\;\exp(i\alpha)\,\exp(-i\beta\,\vec u\cdot\vec F)\,\vec\varkappa_{\mathrm{ord}} ,
-\qquad \alpha\in\mathbb{R},\quad \beta\in\mathbb{R},\quad \vec u\in S^2 ,
+\vec\varkappa_{\mathrm{ord}}\;\longmapsto\;\exp(i\theta_{\mathrm{pha}})\,\exp(-i\beta\,\vec u\cdot\vec F)\,\vec\varkappa_{\mathrm{ord}} ,
+\qquad \theta_{\mathrm{pha}}\in\mathbb{R},\quad \beta\in\mathbb{R},\quad \vec u\in S^2 ,
 $$</p>
+<p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
 <p>that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; the two factors commute, because the first is a phase on all three components and the second rotates them among themselves. This symmetry, and its breaking in the ground state, organises everything that follows.</p>
 <h3 id="the-interaction-energy-and-the-phase-diagram">The interaction energy and the phase diagram</h3>
 <p>For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,</p>
@@ -190,7 +191,7 @@ $$</p>
 <p>with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is proportional to the polar-state idempotent, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are <em>antiparallel</em>: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.</p>
 <p>The two families exhaust the two extreme values of the magnetic invariant, and they are distinguished by a single algebraic choice — whether the two fundamental idempotents that are symmetrised are the same or orthogonal. The broken-axisymmetric family, which interpolates between them when $q<0$, corresponds to symmetrising two fundamental idempotents that are neither identical nor orthogonal; the angle between the two fundamental spin directions parameterises the departure from the two extremes.</p>
 <h3 id="the-order-parameter-manifolds">The order-parameter manifolds</h3>
-<p>The symmetry group of the problem acts on the symmetric sector as $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$, and the order-parameter manifolds are the orbits. In the framework both factors have an algebraic description: the phase $\exp(i\alpha)$ is multiplication by the central element $\exp(i\alpha)e_t$ of $\mathbb{B}$, and the spin rotation $\exp(-i\beta\vec u\cdot\vec F)$ is the adjoint action on the triplet.</p>
+<p>The symmetry group of the problem acts on the symmetric sector as $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$, and the order-parameter manifolds are the orbits. In the framework both factors have an algebraic description: the phase $\exp(i\theta_{\mathrm{pha}})$ is multiplication by the central element $\exp(i\theta_{\mathrm{pha}})e_t$ of $\mathbb{B}$, and the spin rotation $\exp(-i\beta\vec u\cdot\vec F)$ is the adjoint action on the triplet.</p>
 <p>For the ferromagnetic state $\vec\varkappa_{\mathrm{ord}}=(1,0,0)^T$ the stabiliser in $G$ is the diagonal $\mathrm{U}(1)$: the rotation about the ferromagnetic axis multiplies the state by a phase, since $\exp(-i\beta F_z)(1,0,0)^T=\exp(-i\beta)(1,0,0)^T$, which the phase factor can absorb. Hence</p>
 <p>$$
 M_{\mathrm{FM}}=G/\mathrm{U}(1)_{\mathrm{diag}}\;\cong\;S^2\times S^1 ,
@@ -282,7 +283,7 @@ $$</p>
 </tr>
 <tr>
 <td>Phase symmetry $\mathrm{U}(1)$</td>
-<td>multiplication by the centre $\exp(i\alpha)e_t$ of $\mathbb{B}$</td>
+<td>multiplication by the centre $\exp(i\theta_{\mathrm{pha}})e_t$ of $\mathbb{B}$</td>
 </tr>
 <tr>
 <td>Spin symmetry $SU(2)$</td>
@@ -326,7 +327,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The order parameter of a spin-one condensate is a unit spinor $\vec\varkappa_{\mathrm{ord}}\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $\tilde\Pi_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.</li>
-<li>The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\alpha)e_t$, and the spin rotation is the adjoint action on the triplet.</li>
+<li>The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\theta_{\mathrm{pha}})e_t$, and the spin rotation is the adjoint action on the triplet.</li>
 <li>The standard mean-field energy is a function of the spinor only through the three invariants $\lvert\langle\vec F\rangle\rvert^2$, $\langle F_z\rangle$ and $\langle F_z^2\rangle$. In the framework these are the rank-one tensor expectation, the quadratic $F_z^2$ expectation, and the $z$-component of the magnetic order; the alignment was verified to be $\langle F_z^2\rangle=\tfrac23+n_3/\sqrt3-n_8/3$ on random pure states, and the magnetic order components are $s_1=\sqrt{2/3}(n_1+n_6)$, $s_2=\sqrt{2/3}(n_2+n_7)$, $s_3=n_3/\sqrt3+n_8$.</li>
 <li>The nematic (quadrupolar) order parameter is the traceless symmetric tensor $\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac23\delta_{ij}$; for the polar state along $\vec u$ it is $\tfrac13\delta_{ij}-\vec u_i\vec u_j$, invariant under $\vec u\to-\vec u$. The polar state $\vec\varkappa_{\mathrm{ord}}=(0,1,0)^T$ has $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$, both verified.</li>
 <li>Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}$, symmetrised products of <em>identical</em> fundamental idempotents, with $\lvert\langle\vec F\rangle\rvert=1$; the polar states are $\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}=\tfrac12\lvert\vec{\varkappa_{\mathrm{ord}}}_{\mathrm{pol},\vec u}\rangle\langle\vec{\varkappa_{\mathrm{ord}}}_{\mathrm{pol},\vec u}\rvert$, symmetrised products of <em>antipodal</em> idempotents, with $\langle\vec F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.</li>
@@ -343,8 +344,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{Ξ}=\sqrt n\,\exp(i\theta)\vec\varkappa_{\mathrm{ord}}$</td>
-<td>Condensate wave function; $n$ density, $\theta$ phase</td>
+<td>$\tilde{Ξ}=\sqrt n\,\exp(i\theta_{\mathrm{pha}})\vec\varkappa_{\mathrm{ord}}$</td>
+<td>Condensate wave function; $n$ density, $\theta_{\mathrm{pha}}$ phase</td>
 </tr>
 <tr>
 <td>$\vec\varkappa_{\mathrm{ord}}=(\varkappa_{\mathrm{ord},+},\varkappa_{\mathrm{ord},0},\varkappa_{\mathrm{ord},-})^T$</td>

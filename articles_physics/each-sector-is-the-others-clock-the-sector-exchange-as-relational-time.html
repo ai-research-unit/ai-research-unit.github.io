@@ -88,7 +88,8 @@ $$</p>
 <p>$$
 z = h_t + i r'_{t},
 $$</p>
-<p>the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta)e_t$, and its action on $z$ is the rotation of the plane.</p>
+<p>the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta_{\mathrm{cen}})e_t$, and its action on $z$ is the rotation of the plane.</p>
+<p>Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.</p>
 <h2 id="the-exchange-as-a-quarter-turn">The Exchange as a Quarter Turn</h2>
 <p>Multiplication by the central imaginary is the map of the algebra that exchanges the two sectors. On a material element, using $\bar{i} = -i$ and $\tilde{Q}_-^{*} = -\tilde{Q}_-$,</p>
 <p>$$
@@ -107,14 +108,15 @@ $$</p>
 <p>$$
 \boxed{\;z \ \longrightarrow\ iz \ \longrightarrow\ -z \ \longrightarrow\ -iz \ \longrightarrow\ z\;}
 $$</p>
-<p>The second is invertibility: the generator is a rotation, so both senses are available, $\exp(i\theta)$ and $\exp(-i\theta)$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in <em>Algebra and Element Conventions</em>.</p>
+<p>The second is invertibility: the generator is a rotation, so both senses are available, $\exp(i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$, and the algebra contains no element that prefers one. Both properties are stated, with the other five restrictions of the same map, in <em>Algebra and Element Conventions</em>.</p>
 <h2 id="the-clock-hand-and-its-two-projections">The Clock Hand and Its Two Projections</h2>
 <p>A clock assigns a coordinate to an event by a repeatable motion. The framework's clock is the central coordinate itself, and its interpretation is a phase.</p>
-<p><strong>The hand.</strong> The hand of the clock is the complex number $z = h_t + i r'_{t}$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,</p>
+<p><strong>The hand.</strong> The hand of the clock is the complex number $z = h_t + i r'_{t}$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta_{\mathrm{cen}} = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,</p>
 <p>$$
-\boxed{\;h_t = \lvert z\rvert\cos\theta, \qquad r'_{t} = \lvert z\rvert\sin\theta\;}
+\boxed{\;h_t = \lvert z\rvert\cos\theta_{\mathrm{cen}}, \qquad r'_{t} = \lvert z\rvert\sin\theta_{\mathrm{cen}}\;}
 $$</p>
-<p>The one-parameter group $\exp(i\theta)e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(\frac{i\,S}{\hbar})$ of the action articles is the same central phase read on a dynamics.</p>
+<p>The one-parameter group $\exp(i\theta_{\mathrm{cen}})e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(i\theta_{\mathrm{act}})$ of the action articles is the same central phase read on a dynamics.</p>
+<p>Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.</p>
 <p><strong>The tick.</strong> A tick of the clock is a quarter turn of the hand, the application of the generator. The four quarter turns are the identity, the exchange, the antipodal map and the inverse exchange,</p>
 <p>$$
 e_t \ \text{(no tick)}, \qquad i e_t \ \text{(the exchange)}, \qquad -e_t \ \text{(the antipodal map)}, \qquad -i e_t \ \text{(the inverse exchange)} ,
@@ -137,11 +139,11 @@ $$</p>
 </tr>
 <tr>
 <td>A <strong>period</strong>: a repeatable tick</td>
-<td>Supplied up to scale. The central rotation, $\exp(i\theta)e_t$ with $\theta = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration</td>
+<td>Supplied up to scale. The central rotation, $\exp(i\theta_{\mathrm{cen}})e_t$ with $\theta_{\mathrm{cen}} = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration</td>
 </tr>
 <tr>
 <td>An <strong>arrow</strong>: an orientation of the tick</td>
-<td>Not supplied. The generator is invertible of order four, and $\exp(i\theta)$ and $\exp(-i\theta)$ are both in the algebra</td>
+<td>Not supplied. The generator is invertible of order four, and $\exp(i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$ are both in the algebra</td>
 </tr>
 <tr>
 <td>A <strong>rate</strong>: a duration per tick</td>
@@ -210,7 +212,7 @@ $$</p>
 <td>the informational and the material time, the two projections of the hand</td>
 </tr>
 <tr>
-<td>$\exp(i\theta)e_t$</td>
+<td>$\exp(i\theta_{\mathrm{cen}})e_t$</td>
 <td>the one-parameter group of the centre, the motion of the hand</td>
 </tr>
 <tr>

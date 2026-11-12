@@ -83,9 +83,15 @@ and the Hermitian form with its trace reading is that of <em>Norm and Pairing Co
 <p><strong>What is to be shown.</strong> Five things. (1) The four algebraic plane-wave conditions the parent states, and the dispersion relation $k_\Phi = \omega/c$, follow from the single biquaternionic equation $\tilde\nabla_\Phi\tilde{F} = 0$. (2) The amplitude $\tilde{F}_0$ is a null field, hence a zero divisor, and it is annihilated by the (null) four-wavevector biquaternion. (3) The impedance relation and the balance of the two normalised halves of $\tilde{F}_0$. (4) The energy density, the energy flux, their time averages, and the energy–momentum biquaternion of the wave. (5) The dispersive case: phase velocity, group velocity, the spectral complex structure, and the vacuum limit. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.</p>
 <p><strong>The result.</strong> For a source-free monochromatic plane wave
 $$
-\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
 \tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0,
+with the single phase angle
+$$
+\theta_{\mathrm{pwp}} := \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c \;\in\; \mathbb{R},
+$$
+a real number: $\omega$ is real for a monochromatic wave and $\vec k_\Phi$ is real in a non-dissipative medium. The field is then $\tilde{F}=\tilde{F}_0\exp(i\theta_{\mathrm{pwp}})$, an exponent that is $i$ times a real angle wherever the medium is transparent. Every later exponential in this article is written $\exp(i\theta_{\mathrm{pwp}})$ for that same angle.
+
 $$
 the equation $\tilde\nabla_\Phi\tilde{F} = 0$ reduces to
 $$
@@ -106,16 +112,16 @@ so a free plane wave in a medium is $N$-degenerate, a zero divisor of $\mathbb{B
 <p>The calculation is an eigenvalue problem. A plane wave is an eigenfunction of every $\partial/\partial R_\mu$, so $\tilde\nabla_\Phi$ acts on it by left multiplication by a constant biquaternion, and $\tilde\nabla_\Phi\tilde{F} = 0$ becomes a purely algebraic annihilation condition. That condition is what the exercise solves, and the four conditions and the dispersion relation fall out of its scalar and vector parts.</p>
 <p>Two points of discipline are kept in view. First, the field strength is a pure vector with <strong>complex</strong> amplitude components, so every condition must be read as a complex equation and every amplitude relation as a modulus relation; checking only a linearly polarised real wave would test a case narrower than the algebra. Second, the parent is treated as a source of assertions until the computation has been done, and the computation is run on a case other than the one that suggested the statement.</p>
 <h2 id="problem-1-the-plane-wave-conditions-and-the-dispersion-relation">Problem 1: The Plane-Wave Conditions and the Dispersion Relation</h2>
-<p><strong>Statement.</strong> (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde\nabla_\Phi\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k_\Phi = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.</p>
+<p><strong>Statement.</strong> (a) With the ansatz $\tilde{F} = \tilde{F}_0\,\exp(i\theta_{\mathrm{pwp}})$ and $\tilde{F}_0$ a pure vector, show that the gradient acts by left multiplication by a constant biquaternion, and identify it. (b) Show that $\tilde\nabla_\Phi\tilde{F} = 0$ is equivalent to the four conditions of the parent and to the dispersion relation $k_\Phi = \omega/c$. (c) Derive the impedance relation and the amplitude relations $|\vec E_0| = Z|\vec H_0| = c|\vec B_0|$.</p>
 <p><strong>Solution (a).</strong> The partial derivatives act on the exponential by
 $$
-\partial/\partial R_t\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = -\frac{\omega}{c}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\partial/\partial R_t\,\exp(\,i\theta_{\mathrm{pwp}}) = -\frac{\omega}{c}\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
-\partial/\partial R_j\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) = i k_j\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\partial/\partial R_j\,\exp(\,i\theta_{\mathrm{pwp}}) = i k_j\,\exp(\,i\theta_{\mathrm{pwp}}),
 $$
 using $\partial/\partial R_t = -i\partial/\partial r'_t$ and $\partial/\partial r'_t \to -i\omega/c$. Hence
 $$
-\tilde\nabla_\Phi\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k_\Phi\right)\tilde{F}_0\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\tilde\nabla_\Phi\tilde{F} = \left(-\frac{\omega}{c}\,e_t + i\vec k_\Phi\right)\tilde{F}_0\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
 \vec k_\Phi = k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z .
 $$
@@ -248,7 +254,7 @@ $$
 = \frac{\vec E^2}{Z}\,\vec u_\Phi = \frac{W}{\epsilon Z}\,\vec u_\Phi = cW\,\vec u_\Phi,
 $$
 using $\epsilon Z = \epsilon\sqrt{\mu/\epsilon} = \sqrt{\epsilon\mu} = 1/c$. So the energy flows along the wavevector with speed $c$, and $|\vec S| = cW$ at every instant.</p>
-<p><strong>Solution (b).</strong> With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))]$, the time averages over a period are
+<p><strong>Solution (b).</strong> With the complex amplitudes of the parent's convention, $\vec E(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \mathrm{Re}[\vec E_0 \exp(i\theta_{\mathrm{pwp}})]$, the time averages over a period are
 $$
 \langle W\rangle = \frac{1}{4}\left(\epsilon\,|\vec E_0|^2 + \mu\,|\vec H_0|^2\right),
 \qquad
@@ -313,7 +319,8 @@ $$
 an envelope $\cos(\delta k_\Phi\,r_z-\delta\omega\,r'_t/c)$ modulating the carrier. The envelope's speed is $\delta\omega/\delta k_\Phi$, which tends to $v_g = d\omega/dk_\Phi$ as $\delta\omega\to0$. This shows that in a dispersive medium the physically transported energy moves at the group velocity, while the phase of the carrier moves at the phase velocity — a distinction the single-frequency statements of Problems 1–3 cannot display.</p>
 <p><strong>Solution (c).</strong> In vacuum $\epsilon = \epsilon_0$, $\mu = \mu_0$, so $c = c_0$, $Z = Z_0$, $n = 1$, and $dn/d\omega = 0$. Then the dispersion relation becomes $k_\Phi^2 = \omega^2/c_0^2$, the impedance relation becomes $\vec H_0 = Z_0^{-1}\vec u_\Phi\times\vec E_0$, the amplitude relation becomes $|\vec E_0| = Z_0|\vec H_0| = c_0|\vec B_0|$, the nullness $\langle\tilde{F}_0\rangle_{\natural} = 0$ is unchanged, $v_p = v_g = c_0$, and the gradient's temporal eigenvalue becomes $-\omega/c_0$. Every relation reduces to the vacuum statement of the parent articles by the substitution $c\to c_0$, $Z\to Z_0$, as it must.</p>
 <h2 id="problem-5-the-monochromatic-and-stationary-field">Problem 5: The Monochromatic and Stationary Field</h2>
-<p><strong>Statement.</strong> (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\omega r'_t/c)$ and wave number $k_\Phi = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.</p>
+<p><strong>Statement.</strong> (a) With the harmonic time dependence $\tilde F = \tilde F_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\theta_{\mathrm{pwt}})$ and wave number $k_\Phi = \omega/c$, derive the equation satisfied by the complex amplitude and its radiating solution. (b) Take the time-independent limit, recover the Poisson equation and the Newton-potential solution, and exhibit the scalar and vector potentials of the stationary field.</p>
+<p>Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.</p>
 <p><strong>Solution (a).</strong> In the corpus's three-vector form the field satisfies $\partial/\partial R_t\tilde F+\mathrm{rot}\,\tilde F=-\vec j$, with $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ and $\partial/\partial R_t=-i\partial/\partial r'_t$. For the harmonic dependence $\partial/\partial R_t=-k_\Phi$, so</p>
 <p>$$
 \mathrm{rot}\,\tilde F - k_\Phi\,\tilde F = -\vec j,
@@ -354,7 +361,7 @@ $$</p>
 <p><strong>6. A wave packet and the group velocity.</strong> Construct a normalised Gaussian superposition of plane waves around $\omega_0$ in a medium with a prescribed $n(\omega)$, compute the envelope motion to first order in the bandwidth, and check that it travels at $v_g$. Then ask whether the spectral family of embeddings $r'_t \mapsto i\,c(\omega)\,r'_t$ has any content beyond the bookkeeping of a family of distinct monochromatic problems.</p>
 <p><strong>7. The chiral medium and the two wavenumbers.</strong> Replace the constitutive relations of Problem 1 by the Drude–Born–Fedorov form $\vec D=\epsilon(\vec E+\beta\,\mathrm{rot}\,\vec E)$, $\vec B=\mu(\vec H+\beta\,\mathrm{rot}\,\vec H)$ of the parent's section <em>A Chiral Medium</em>. Show that a circularly polarized plane wave with $\vec u\times\vec E_0=-is\,\vec E_0$, $s=\pm1$, satisfies the two curl equations for the single wavenumber $k_\Phi^{s}=k_\Phi/(1-s k_\Phi\beta)$, so that the two handednesses carry the two refractive indices $n_s=1/(1-s\beta\omega/c)$, that is $k_\Phi^{s}=n_s\,\omega/c$, with $s=+1$ the branch $k_\Phi^-$ and $s=-1$ the branch $k_\Phi^+$ of <em>Maxwell’s Equations in Chiral Media</em>; the medium is then circularly birefringent; check that at $\beta=0$ the two branches collapse to Problem 1. Then diagonalize the system by setting $Ξ=\vec E/\sqrt{\mu}+i\vec H/\sqrt{\epsilon}$ and $\tilde{Ξ}=\vec E/\sqrt{\mu}-i\vec H/\sqrt{\epsilon}$: show that $Ξ$ and $\tilde{Ξ}$ are the field strength $\tilde F$ and its complex conjugate $\tilde F^{*}$ up to one constant, that they solve $(D_3-k_\Phi^-)Ξ=0$ and $(D_3+k_\Phi^+)\tilde{Ξ}=0$ with $k_\Phi^+=k_\Phi/(1+k_\Phi\beta)$, $k_\Phi^-=k_\Phi/(1-k_\Phi\beta)$, and that each is divergence-free and an eigenvector of the curl. Finally determine which of the plane-wave conclusions of Problems 1–3 survive the change of constitutive relations: the transversality conditions are unchanged, the nullness $\langle\tilde F_0\rangle_{\natural}=0$ survives for each circular polarization, and the impedance relation $\vec H_0=Z^{-1}\vec u_\Phi\times\vec E_0$ is replaced by a handedness-dependent one.</p>
 <h2 id="summary">Summary</h2>
-<p>For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
+<p>For a source-free monochromatic plane wave $\tilde{F} = \tilde{F}_0\,\exp(i\theta_{\mathrm{pwp}})$ in a homogeneous medium, the biquaternionic Maxwell equation reduces to the algebraic annihilation $\tilde P_{\Phi}\tilde{F}_0 = 0$, where $\tilde P_{\Phi} = \frac{i\omega}{c}e_t + \vec k_\Phi \in \mathbb{B}_{\Phi}$ is the four-wavevector. Its scalar and vector parts give the two curl conditions
 $$
 \vec k_\Phi\times\vec E_0 = \omega\mu\,\vec H_0,
 \qquad

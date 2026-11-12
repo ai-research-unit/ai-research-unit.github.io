@@ -79,12 +79,13 @@ $$</p>
 <p>and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no minimal left ideal, no Peirce decomposition, no chiral projector, no Clifford algebra. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript <code>sp</code> is the corpus's caret for the spinor role, beside <code>scl</code> for the scalar role and <code>fop</code> for the field operator, as the caret table of <em>Algebra and Element Conventions</em> fixes it.</p>
 <p>This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the polar word of <em>The Polar Decomposition of an N-Regular Biquaternion</em>, in the exponential form it takes in <em>Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</em>:</p>
 <p>$$
-\tilde\Xi=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
+<p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
 <p>The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor.
 <strong>The boost factor is not a phase, and the evaluation shows why.</strong> With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair</p>
 <p>$$
@@ -138,8 +139,8 @@ $$</p>
 </tr>
 <tr>
 <td>2</td>
-<td>$e^{i\alpha}$</td>
-<td>$\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
+<td>$e^{i\theta_{\mathrm{pha}}}$</td>
+<td>$\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
 <td>central phase</td>
 </tr>
 <tr>
@@ -165,9 +166,9 @@ $$</p>
 <p>so the exponent inside the boost is half the rapidity of the frame it produces. The rapidity $\theta_{\mathrm{rpd}}$ is the kinematic one throughout: $\gamma=\cosh\theta_{\mathrm{rpd}}$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ are read from $\tilde U_{\Psi,\mathrm b}^{2}$ and never from $\tilde U_{\Psi,\mathrm b}$ itself. Every factor of two in this article comes from that square and from nowhere else.</p>
 <p>Two factors have norm one and two are central, and that sentence carries the whole of the next section. The two norms of the word are not a property of the four factors taken together: they are the statement that two of them are units and two are central, and the split of the four into those two pairs is where the two norms come from.</p>
 <h3 id="the-two-norms">The Two Norms</h3>
-<p><em>Proposition.</em> For $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the factors as above,</p>
+<p><em>Proposition.</em> For $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the factors as above,</p>
 <p>$$
-\langle\tilde\Xi\rangle_{\natural}=\rho\,e^{2i\alpha},
+\langle\tilde\Xi\rangle_{\natural}=\rho\,e^{2i\theta_{\mathrm{pha}}},
 \qquad
 \tilde\Xi\tilde\Xi^{*}=\rho\,\tilde U_{\Psi,\mathrm b}^{2},
 \qquad
@@ -175,7 +176,7 @@ $$</p>
 \qquad
 \rho=r^{2},\quad \gamma=\cosh\theta_{\mathrm{rpd}}.
 $$</p>
-<p><em>Proof.</em> The quaternion conjugation $\natural$ acts on the $\mathbb{H}$ factor, so it leaves the central $i$ alone, inverts the real rotor and inverts the Hermitian boost. The rotor and the boost cancel against their own inverses, the central part squares, and $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\alpha}$. The star conjugation is the coefficient conjugation composed with $\natural$; it fixes a Hermitian factor, conjugates the central $i$ and inverts the rotor, so the phases cancel, the rotors cancel, and $\tilde\Xi\tilde\Xi^{*}=r^{2}\tilde U_{\Psi,\mathrm b}^{2}$. Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose scalar part is $\cosh\theta_{\mathrm{rpd}}$.</p>
+<p><em>Proof.</em> The quaternion conjugation $\natural$ acts on the $\mathbb{H}$ factor, so it leaves the central $i$ alone, inverts the real rotor and inverts the Hermitian boost. The rotor and the boost cancel against their own inverses, the central part squares, and $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$. The star conjugation is the coefficient conjugation composed with $\natural$; it fixes a Hermitian factor, conjugates the central $i$ and inverts the rotor, so the phases cancel, the rotors cancel, and $\tilde\Xi\tilde\Xi^{*}=r^{2}\tilde U_{\Psi,\mathrm b}^{2}$. Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose scalar part is $\cosh\theta_{\mathrm{rpd}}$.</p>
 <p>The two norms read different things, and the whole of the physics of the density is in which one is used.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -195,7 +196,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde\Xi\rangle_{\natural}$</td>
-<td>$\rho\,e^{2i\alpha}$</td>
+<td>$\rho\,e^{2i\theta_{\mathrm{pha}}}$</td>
 <td>complex</td>
 <td>the density and twice the angle</td>
 </tr>
@@ -214,10 +215,10 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The density is the modulus of the quaternionic norm and not the square root of the Hermitian one.</strong> The Hermitian norm is $\gamma$ times the density, so it is the density with the motion's time dilation applied. Under a Lorentz transformation, that is $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $\tilde M$ a unit, the quaternionic norm is carried into itself, because it is central, while the Hermitian norm of the transformed field is $\operatorname{Sc}(\tilde M\tilde\Xi\tilde\Xi^{*}\tilde M^{*})$, which is not the original. That is the standard situation of a field of this type: the Hermitian square is the time component of a four-vector, and only the quaternionic norm is a scalar. The word says which of the two is the scalar, and the answer is $\rho$, the modulus of the quaternionic norm.</p>
-<p><strong>The factor of two in the angle is not decoration.</strong> The field carries $e^{i\alpha}$ and the norm carries $e^{2i\alpha}$, so every bilinear built from the norm runs at twice the rate of the field's own phase. Two consequences follow and both are used below: the density is insensitive to the sign of $\alpha$, and a superposition of two branches beats at twice the difference of their angles.</p>
+<p><strong>The factor of two in the angle is not decoration.</strong> The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$, so every bilinear built from the norm runs at twice the rate of the field's own phase. Two consequences follow and both are used below: the density is insensitive to the sign of $\theta_{\mathrm{pha}}$, and a superposition of two branches beats at twice the difference of their angles.</p>
 <h2 id="the-equation-in-polar-variables">The Equation in Polar Variables</h2>
 <h3 id="the-pair">The Pair</h3>
-<p>The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system</p>
+<p>The equation is the chiral pair of the introduction. For a plane wave the field is $\tilde\Xi=\tilde\Xi_{0}\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t$, the gradient acts as left multiplication by $i\tilde K_{\Phi}$ and its conjugate as left multiplication by $i\tilde K_{\Phi}^{\natural}$, and the pair becomes the momentum-space system</p>
 <p>$$
 i\tilde K_{\Phi}\tilde\Xi_{0}^{R}=k_m\tilde\Xi_{0}^{L},
 \qquad
@@ -228,11 +229,11 @@ $$</p>
 <p>which the parent derives. Nothing in this section is new: the three relations are the parent's, and the polar form says only what the quantities in them are.</p>
 <h3 id="the-logarithmic-derivative">The Logarithmic Derivative</h3>
 <p>Substituting the word into a first-order equation means differentiating it, and the derivative separates into four terms with no remainder.</p>
-<p><em>Proposition.</em> For $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,</p>
+<p><em>Proposition.</em> For $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,</p>
 <p>$$
 \frac{\partial\tilde\Xi}{\partial R_\mu}
 =\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
-+i\frac{\partial\alpha}{\partial R_\mu}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}\right].
 $$</p>
@@ -253,7 +254,7 @@ $$</p>
 <td>the density is constant</td>
 </tr>
 <tr>
-<td>$i\partial_\mu\alpha$</td>
+<td>$i\partial_\mu\theta_{\mathrm{pha}}$</td>
 <td>central imaginary</td>
 <td>the angle is constant</td>
 </tr>
@@ -269,18 +270,18 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>A plane wave is the case in which the last three vanish: the frame is constant and the density is constant, so the derivative is the phase term alone. Then $\partial_\mu\tilde\Xi=i(\partial_\mu\alpha)\tilde\Xi$, and the equation becomes algebraic in the frame. That is why a plane wave can be solved exactly and why the general case cannot be read off it.</p>
+<p>A plane wave is the case in which the last three vanish: the frame is constant and the density is constant, so the derivative is the phase term alone. Then $\partial_\mu\tilde\Xi=i(\partial_\mu\theta_{\mathrm{pha}})\tilde\Xi$, and the equation becomes algebraic in the frame. That is why a plane wave can be solved exactly and why the general case cannot be read off it.</p>
 <p>Note what the first bracket is not. The scale enters the derivative only through $\ln\rho$, so a constant density contributes nothing and a field of uniform density carries no scale term at all. The scale is a multiplier, not a source.</p>
 <h3 id="the-phase-gradient-is-the-four-momentum">The Phase Gradient Is the Four-Momentum</h3>
 <p>The second bracket is the momentum, and the algebra states it without a rule. Since $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,</p>
 <p>$$
-\tilde\nabla_\Phi\alpha
-=e_t\frac{\partial\alpha}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\alpha}{\partial R_\eta}
-=-i\frac{\partial\alpha}{\partial r'_t}e_t+\nabla\alpha
+\tilde\nabla_\Phi\theta_{\mathrm{pha}}
+=e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\eta}
+=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}e_t+\nabla\theta_{\mathrm{pha}}
 =i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
 =\tilde K_{\Phi},
 $$</p>
-<p>with $\vec p=\hbar\nabla\alpha$ and $E=-\hbar c\,\partial\alpha/\partial r'_t$. The temporal slot of the gradient is $-i\partial\alpha/\partial r'_t$ and the temporal slot of the wavevector is $iE/(\hbar c)$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $r'_t$ is a length, so a derivative in $r'_t$ is a rate over a length, and an energy is a rate times an action.</p>
+<p>with $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$. The temporal slot of the gradient is $-i\partial\theta_{\mathrm{pha}}/\partial r'_t$ and the temporal slot of the wavevector is $iE/(\hbar c)$, so the two match slot by slot and no factor is inserted by hand. The factor $c$ is the algebra's own statement: $r'_t$ is a length, so a derivative in $r'_t$ is a rate over a length, and an energy is a rate times an action.</p>
 <p>The reading is exact for a plane wave, where the angle is linear and the gradient is the wavevector. For a general field it is the eikonal reading, and it defines the momentum at each event. The proof uses only that the angle is real and that the gradient is the algebra's derivative, so it applies to a general field unchanged.</p>
 <h3 id="the-boost-is-the-four-velocity">The Boost Is the Four-Velocity</h3>
 <p>The third factor is the velocity.</p>
@@ -356,7 +357,7 @@ $$</p>
 <p><strong>The axis is not a new choice.</strong> The direction $\vec e_z$ is the frame's third direction and it is already declared: it is the direction the value test uses, $\tilde X\vec e_z=\pm i\tilde X$. The spin therefore costs no declaration the equation did not already make, and this is the honest answer to the objection that a spin axis singles out a direction the physics does not contain. The algebra declares one direction in order to read the value; the spin is the image of that same direction under the field's own rotor. What is physical is $\hat s$, and $\hat s$ is not $\vec e_z$: it is where the field has carried it.</p>
 <p><strong>The spin is a direction and not a plane.</strong> The element is a multiple of one real unit vector. A reader who expects the word to carry the spin plane will not find it there: the plane is what the algebra supplies once the vector is named, and it is the same plane for every field. What the word carries is which direction in that plane is the field's.</p>
 <h3 id="what-the-frame-separates">What the Frame Separates</h3>
-<p>Three absences are exact and they are the point of the section. The angle $\alpha$ is absent from the current and from the spin. The boost is absent from the spin, because a boost does not change a direction transverse to itself in the rest frame, and the word respects that by putting the spin in the factor the boost leaves alone. The rotor is absent from the current, because a rotation does not change a velocity.</p>
+<p>Three absences are exact and they are the point of the section. The angle $\theta_{\mathrm{pha}}$ is absent from the current and from the spin. The boost is absent from the spin, because a boost does not change a direction transverse to itself in the rest frame, and the word respects that by putting the spin in the factor the boost leaves alone. The rotor is absent from the current, because a rotation does not change a velocity.</p>
 <p>So the frame separates the eight parameters into two triples with a shared scale:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -370,16 +371,16 @@ $$</p>
 <tr>
 <td>$\tilde J_{\Phi}$</td>
 <td>$\rho$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$</td>
-<td>$\alpha$, $\theta$, $\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{pha}}$, $\theta_{\mathrm{pha}}$, $\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>$\tilde S_{\Psi,\mathrm{sp}}$</td>
-<td>$\rho$, $\theta$, $\vec u_{\mathrm r}$</td>
-<td>$\alpha$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$</td>
+<td>$\rho$, $\theta_{\mathrm{pha}}$, $\vec u_{\mathrm r}$</td>
+<td>$\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde\Xi\rangle_{\natural}$</td>
-<td>$\rho$, $2\alpha$</td>
+<td>$\rho$, $2\theta_{\mathrm{pha}}$</td>
 <td>the two frames</td>
 </tr>
 </tbody>
@@ -393,7 +394,7 @@ $$</p>
 <p>The $N$-degenerate set would be a curiosity if nothing physical lay on it. Two families do, and both take one line. They are the Dirac fields for which the polar form does not exist.</p>
 <p><strong>A part of definite value.</strong> By the proposition of §<em>One Element, Two Parts</em>, an element with $\tilde X\vec e_z=\pm i\tilde X$ is a zero divisor and has $N=0$. A definite-value part therefore lies on the cone at every amplitude and at every point of space and time.</p>
 <p><strong>A plane-wave part.</strong> A one-sided plane wave satisfies $\tilde K_{\Phi}\tilde\Xi_{0}=0$ with $\tilde K_{\Phi}$ null, and then $\tilde\Xi_{0}$ is a zero divisor, so $N(\tilde\Xi_{0})=0$. The argument is the same line: a nonzero element annihilated by a nonzero element is a zero divisor, and the zero divisors are the elements of vanishing norm.</p>
-<p><strong>Why this is not the nodal set.</strong> For a central field the two sets coincide: with $B^{2}=0$ identically, $\langle\tilde\Xi\rangle_{\natural}=A^{2}e^{2i\theta}$ and the norm vanishes exactly where the amplitude does. Here they separate, and the separation is the whole difference between the scalar companion and this article. A one-sided plane wave is nowhere zero and has $N=0$ everywhere, so the word fails on a field of uniform, nonzero density. The failure is a failure of the chart's range and not of the field's size.</p>
+<p><strong>Why this is not the nodal set.</strong> For a central field the two sets coincide: with $B^{2}=0$ identically, $\langle\tilde\Xi\rangle_{\natural}=A^{2}e^{2i\theta_{\mathrm{pha}}}$ and the norm vanishes exactly where the amplitude does. Here they separate, and the separation is the whole difference between the scalar companion and this article. A one-sided plane wave is nowhere zero and has $N=0$ everywhere, so the word fails on a field of uniform, nonzero density. The failure is a failure of the chart's range and not of the field's size.</p>
 <h3 id="what-the-failure-does-not-mean">What the Failure Does Not Mean</h3>
 <p>Three statements are worth separating, because they are easily run together.</p>
 <p><strong>The field is not zero.</strong> $N=0$ says nothing about the density. Measured on the cone, the Hermitian norm $\operatorname{Sc}(\tilde\Xi\tilde\Xi^{*})$ is positive and of order one. What vanishes is the quaternionic norm, and with it the scale of the word.</p>
@@ -410,7 +411,7 @@ $$</p>
 <h3 id="the-rest-phase">The Rest Phase</h3>
 <p>A slow state is one whose boost is small and whose angle is dominated by the rest phase. Write</p>
 <p>$$
-\alpha=-k_m r'_t+\sigma,
+\theta_{\mathrm{pha}}=-k_m r'_t+\sigma,
 \qquad
 k_m r'_t=\frac{mc^{2}}{\hbar}\,t,
 $$</p>
@@ -424,7 +425,7 @@ $$</p>
 \qquad
 \tilde V_{\Phi}=ic\,e_t+\vec v+\cdots,
 $$</p>
-<p>so the word becomes $r\,e^{i\alpha}\tilde u_{\mathrm r}$: a scale, a phase and a rotor. That is the non-relativistic word, and it is the whole polar content of the two-component description.</p>
+<p>so the word becomes $r\,e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$: a scale, a phase and a rotor. That is the non-relativistic word, and it is the whole polar content of the two-component description.</p>
 <p>The velocity's first correction is second order, since $\cosh\theta_{\mathrm{rpd}}=1+\theta_{\mathrm{rpd}}^{2}/2$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}=c\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$; the temporal slot therefore departs from $ic$ at order $\theta_{\mathrm{rpd}}^{2}/2$, which is the kinetic energy over $mc^{2}$. The boost is the relativistic correction and the rotor is the part that survives at every speed.</p>
 <p>The mass term follows the same pattern. In the word its factor is $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, and at small rapidity $\mathcal B_{\Psi}=e_t-i\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\cdots$, so the relation becomes $\tilde\Xi_{0}^{L}=-\tilde\Xi_{0}^{R}$ at leading order and the corrections are the boost. The limit keeps its leading term.</p>
 <h3 id="the-rotor-precesses">The Rotor Precesses</h3>
@@ -433,7 +434,7 @@ $$</p>
 <h2 id="what-the-polar-form-does-and-does-not-add">What the Polar Form Does and Does Not Add</h2>
 <p>The objection has to be stated before it is answered. The decomposition is not new. It is the Yvon–Takabayasi–Hestenes decomposition of a field of this type into a density, an angle and a Lorentz frame, and the split of the frame into a boost and a rotation is the polar decomposition of a Lorentz transformation. No solution is added and no number changes.</p>
 <p>Four things are nevertheless not a relabelling.</p>
-<p><strong>The two norms are separated and the density is identified.</strong> $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\alpha}$ and $\langle\tilde\Xi\rangle_{*}=\gamma\rho$ are two different objects, and for a central field they coincide. The identification of $\rho$ as the modulus of the quaternionic norm, and of the Hermitian norm as its time-dilated image, is a statement about which quantity a density is built from.</p>
+<p><strong>The two norms are separated and the density is identified.</strong> $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\theta_{\mathrm{pha}}}$ and $\langle\tilde\Xi\rangle_{*}=\gamma\rho$ are two different objects, and for a central field they coincide. The identification of $\rho$ as the modulus of the quaternionic norm, and of the Hermitian norm as its time-dilated image, is a statement about which quantity a density is built from.</p>
 <p><strong>The count closes.</strong> Eight slots against eight components, with a bijection and no spare parameter. A decomposition whose parameters can vary is a description of the field; one whose parameters cannot is a description of a subspace.</p>
 <p><strong>The equation's content is named.</strong> The momentum is the phase gradient, the velocity is the boost, the mass term is the four-vector factor with its scale in $k_m$, and the mass shell is the frame's unitarity. The last is the sharpest: the solvability condition on the momentum is the statement that the boost is a boost. Each of the four is a reading of the chart and not a new equation, and the chart's domain is the $N$-regular field.</p>
 <p><strong>The failing bilinear is explained in one line.</strong> The algebra's $i\tilde\Xi\tilde\Xi^{*}$ is the current with its direction reversed, because the star conjugation fixes the boost and cancels the rotor. That is a fact about the two conjugations, and it is why the conserved current needs the odd element.</p>
@@ -457,10 +458,10 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The polar form of the Dirac field of this corpus is $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ the scale, $\alpha$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The parameters are eight and the components are eight, so the word is a bijection, and its domain is the $N$-regular set: the polar form exists exactly where $N\neq0$ and fails on every $N$-degenerate field.</p>
+<p>The polar form of the Dirac field of this corpus is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The parameters are eight and the components are eight, so the word is a bijection, and its domain is the $N$-regular set: the polar form exists exactly where $N\neq0$ and fails on every $N$-degenerate field.</p>
 <p>The field is one element and the two letters of the pair name its two parts. They are not two values, and the polar form gives the reason: an element of definite value satisfies $\tilde X(\vec e_z\pm ie_t)=0$, so it is a zero divisor and has $N=0$, which places it outside the word's domain. A split into definite-value parts would be a split into two objects on which the word is undefined.</p>
-<p>The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\alpha}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.</p>
-<p>The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla_\Phi\alpha=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.</p>
+<p>The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\theta_{\mathrm{pha}}}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.</p>
+<p>The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.</p>
 <p>The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.</p>
 <p>The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.</p>
 <p>The word fails on the zero divisors and nowhere else, that is on the $N$-degenerate elements and on no others. Two families lie there: the parts of definite value, and the one-sided plane waves, each by the one line that a nonzero element annihilated by, or annihilating, a nonzero element is a zero divisor. This is not the nodal set: a one-sided plane wave is nowhere zero and has $N=0$ everywhere. Masslessness does not put the field on the cone, because the sum of two one-sided parts is generally a unit and the cross term carries the norm. What survives on the cone is the two-factor decomposition, not the four-factor word.</p>
@@ -506,7 +507,7 @@ $$</p>
 <td>Mass wave number; the reciprocal reduced Compton length</td>
 </tr>
 <tr>
-<td>$\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
 <td>The polar word</td>
 </tr>
 <tr>
@@ -514,8 +515,8 @@ $$</p>
 <td>Scale and density; real and central</td>
 </tr>
 <tr>
-<td>$\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
-<td>The word's angle; the norm's argument is $2\alpha$</td>
+<td>$\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
+<td>The word's angle; the norm's argument is $2\theta_{\mathrm{pha}}$</td>
 </tr>
 <tr>
 <td>$\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
@@ -527,7 +528,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
-<td>Quaternionic norm; on the field $\rho e^{2i\alpha}$</td>
+<td>Quaternionic norm; on the field $\rho e^{2i\theta_{\mathrm{pha}}}$</td>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{*}=\operatorname{Sc}(\tilde Q\tilde Q^{*})$</td>
@@ -550,7 +551,7 @@ $$</p>
 <td>Four-velocity of the word; $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$</td>
 </tr>
 <tr>
-<td>$\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi\alpha$</td>
+<td>$\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$</td>
 <td>Four-momentum and four-wavevector; $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$</td>
 </tr>
 <tr>
@@ -579,7 +580,7 @@ $$</p>
 <ul>
 <li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the eight-parameter polar variables of the spin-$\tfrac12$ field, which this article reads as the word of the algebra. The scalar companion's pair is the spin-$0$ case of the same programme.</li>
 <li>David Hestenes, <em>Space-Time Algebra</em> (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the decomposition of the field into density, angle and rotor, and for the reading of the Dirac equation as a condition on that rotor.</li>
-<li>Jacques Yvon, "Équations matricielles du champ spinoriel," <em>Journal de Physique et le Radium</em> <strong>1</strong> (1940) 18–26, for the bilinears whose argument is the angle this article writes $2\alpha$.</li>
+<li>Jacques Yvon, "Équations matricielles du champ spinoriel," <em>Journal de Physique et le Radium</em> <strong>1</strong> (1940) 18–26, for the bilinears whose argument is the angle this article writes $2\theta_{\mathrm{pha}}$.</li>
 <li>Peter R. Holland, <em>The Quantum Theory of Motion</em> (Cambridge University Press, 1993), for the relativistic polar variables, the spin transport they carry, and the difficulties recorded in §<em>Open Questions</em>.</li>
 <li>Walter Greiner, <em>Relativistic Quantum Mechanics: Wave Equations</em> (Springer, 1990), for the Dirac equation, its current and the structure the pair reproduces.</li>
 <li>Claude Daviau, "Équations de Dirac et de Maxwell en algèbre de Clifford," <em>Annales de la Fondation Louis de Broglie</em> <strong>39</strong> (2014), for a field read as an element with eight real parameters, which is the count this article uses.</li>

@@ -186,10 +186,11 @@ $$</p>
 </table></div>
 <p>The displacement was checked explicitly. Writing $\delta=\epsilon\,c/(2\Omega_{\vec p})$ for the imaginary part of the Feynman pole in $\omega$, the four displacements are: both poles at $\mathrm{Im}\,\omega=-\epsilon$ (retarded), both at $+\epsilon$ (advanced), and one on each side with imaginary parts $\pm\delta$ (Feynman). The Feynman prescription is the only one that treats the two poles asymmetrically, and it is exactly this asymmetry that makes the resulting kernel a boundary value rather than a solution selected by a cone support.</p>
 <h3 id="the-contour-integral">The contour integral</h3>
-<p>The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $r'_t>0$ the exponential $\exp(-i\omega r'_t/c)$ forces the contour to close below, and the two residues combine into</p>
+<p>The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $r'_t>0$ the exponential $\exp(-i\theta_{\mathrm{pwt}})$ forces the contour to close below, and the two residues combine into</p>
+<p>Throughout, $\theta_{\mathrm{pwt}}:=\omega r'_t/c$ is the plane-wave time angle: $\omega$ is real for a monochromatic wave, so the factor $\exp(-i\theta_{\mathrm{pwt}})$ is a phase of modulus one and it is the time part of the plane-wave angle of the full wave form.</p>
 <p>$$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega r'_t/c)}{\vec p^2/\hbar^{2}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}}
+\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-(\omega+i\epsilon)^2/c^{2}}
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\,c\,\frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}},
 \qquad
 \Omega_{\vec p}=\sqrt{\vec p^2/\hbar^{2}+k_m^{2}},
@@ -197,7 +198,7 @@ $$</p>
 <p>while for $r'_t<0$ the contour closes above and the integral vanishes. The result is the statement that the retarded kernel has support only in the future. For the advanced displacement the same computation with $r'_t\to-r'_t$ gives $-c\,\mathrm{H}_{\mathrm{hvs}}(-r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$, supported only in the past. For the Feynman displacement the two poles sit on opposite sides, both contribute at $r'_t>0$ and at $r'_t<0$, and the result is the symmetric combination</p>
 <p>$$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega r'_t/c)}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
+\frac{\exp(-i\theta_{\mathrm{pwt}})}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}-i\epsilon}
 =\frac{i\,c}{2\Omega_{\vec p}}\,\exp(-i\Omega_{\vec p}|r'_t|),
 $$</p>
 <p>which is the frequency-space form of the time-ordered two-point function: the two poles are displaced to opposite sides, both contribute, and the result is even in $r'_t$ and built from the positive-frequency phase $\exp(-i\Omega_{\vec p}|r'_t|)$. The three results were confirmed by evaluating the contour sums directly.</p>

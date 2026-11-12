@@ -667,6 +667,10 @@ $$</p>
 <td>the colatitude of a point on the sphere</td>
 </tr>
 <tr>
+<td>$\theta_{\mathrm{gau}}$</td>
+<td>the gauge angle of a local central phase</td>
+</tr>
+<tr>
 <td>$\theta_{\mathrm{hpa}}$</td>
 <td>the hyperbolic angle of a split-complex number</td>
 </tr>
@@ -689,6 +693,14 @@ $$</p>
 <tr>
 <td>$\theta_{\mathrm{pha}}$</td>
 <td>the phase angle of a complex number or of a gate, $\theta_{\mathrm{pha}}=\arg\omega$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{phb}}$</td>
+<td>the second phase angle, the split-complex phase of a reduced biquaternion</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{phs}}$</td>
+<td>the phase of a scalar field, $\theta_{\mathrm{phs}}=S/\hbar$, a full-turn angle</td>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{pla}}$</td>
@@ -740,8 +752,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>An angle label enters with the article that spends it, and it enters this table and not the other.</strong> The thirty rows stand for thirty roles and 1,457 occurrences in the two corpora; the largest, $\theta_{\mathrm{hpa}}$, names the hyperbolic angle, because the exponential polar decomposition of a split-complex number recurs across a family of articles.</p>
-<p><strong>A phase is written here and not in a letter of its own.</strong> The 91 occurrences that $\phi$ carried as a phase are $\theta_{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.</p>
+<p><strong>An angle label enters with the article that spends it, and it enters this table and not the other.</strong> The thirty-three rows stand for thirty-three roles and 3,446 occurrences in the two corpora; the largest, $\theta_{\mathrm{pha}}$, names the phase angle, because every polar word and every gate spends it.</p>
+<p><strong>A phase is written here and not in a letter of its own.</strong> The 91 occurrences that $\phi$ carried as a phase are $\theta_{\mathrm{pha}}$, the row that already named the phase angle in the polar decomposition, so the phase cost no new label. The $\alpha$ that the polar-word articles carried for that angle is the same row, and the $\beta$ that paired with it is $\theta_{\mathrm{phb}}$: a reduced biquaternion spends two phases, one on the complex unit and one on the split unit, and they are $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$. Where a phase is a geometric phase the row is the same one: a Berry or a Pancharatnam phase is an angle read modulo $2\pi$, and the article that spends it says so in its own words.</p>
 <p><strong>A label is read with its article.</strong> The word names the object the glyph denotes, a part of it or a role of it, and the word and the article separate the three, since one slot carries all of them: $L_{\mathrm{axf}}$ names a frame, $S_{\mathrm{int}}$ a part, $s_{\mathrm{tot}}$ a role, and §<em>The Subscripts</em> rules on the slot. One word is carried by four uses and is read with its argument: $\operatorname{sym}(P)$ the symmetric group, $\operatorname{sym}^2(E)$ the symmetric square, $\gamma_n^{\operatorname{sym}}$ the divided-power structure, $f^{\operatorname{sym}}$ the symmetrised part. The word is one and it is lowercase in all four; the argument says which. The vocabulary is not private to a slot, and it is not ambiguous either: $\mathrm{cov}$ names the universal cover in one article and the covariant fundamental solution in another, $\mathrm{res}$ names the residual part and the residue field, and the article that writes a label says which object it names. Where one spelling would name two objects that a reader must tell apart at a glance, the rarer reading takes a code of its own rather than a second height: $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ stand beside $\mathrm{reg}$, $\mathrm{top}$, $\mathrm{per}$, $\mathrm{def}$, $\mathrm{orb}$, $\mathrm{adj}$, and each of the twelve names one word only.</p>
 <h2 id="the-subscripts">The Subscripts</h2>
 <p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{red}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the labels, and the two lists are read together (§<em>The Three-Letter Labels</em>). The family letters $L$ and $R$ of a regular matrix are labels of that kind, and they are written italic as the letters of the operators rather than upright as a word; they follow the size in the same subscript, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.</p>
@@ -864,8 +876,8 @@ ${}_{\~{n}}$, ${}_{\H{n}}$, ${}_{\vec{n}}$</p>
 <li>Tables are Markdown tables. A LaTeX array is never used for a table.</li>
 <li>Every heading that introduces a comparison or a classification is a real <code>###</code> heading, and the objects are defined before they are tabulated.</li>
 <li><strong>Bold marks the result.</strong> In a Remark that states a verdict, the clause carrying the outcome is
-  set in bold, <code>**...**</code>, the object of the sentence staying in plain roman: <em>the subspace </em><em>is a
-  commutative Jordan algebra over $\mathbb{R}$ of degree two</em>**. A statement already displayed as a
+  set in bold, <code>**...**</code>, the object of the sentence staying in plain roman: <em>the subspace <strong>is a
+  commutative Jordan algebra over $\mathbb{R}$ of degree two</strong></em>. A statement already displayed as a
   Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
   to the lead sentence of a section that states an outcome.</li>
 <li>The third derivative is written <code>d^3/dt^3</code>. The macro <code>\slashed</code> is retired and is not used; a gamma contraction is written out, as <em>Matrix Representations Conventions</em> states. The characters <code>|</code>, <code>{</code>, <code>}</code>, <code>&lt;</code> and <code>&gt;</code> inside mathematics need no escaping.</li>

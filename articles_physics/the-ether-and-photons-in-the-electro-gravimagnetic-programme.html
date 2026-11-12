@@ -139,9 +139,10 @@ ether, and its vector part is the tension of the electric and gravimagnetic fiel
 <h2 id="the-time-harmonic-reduction-and-the-photon-equation">The Time-Harmonic Reduction and the Photon Equation</h2>
 <p>A <strong>monochromatic</strong> field is one whose time dependence is a single exponential,</p>
 <p>$$
-\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau),
+\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\theta_{\mathrm{mat}}),
 \qquad \omega > 0 ,
 $$</p>
+<p>Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.</p>
 <p>so that $\partial/\partial \tau \to -i\omega$. Substituting into the postulate gives the programme's <strong>photon
 equation</strong>,</p>
 <p>$$
@@ -284,13 +285,13 @@ $$</p>
 from a charge–current distribution to its field. Over a band of frequencies the paper sums these
 contributions into what it calls light,</p>
 <p>$$
-\Lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\omega\tau)\,d\omega ,
+\Lambda(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,\exp(-i\theta_{\mathrm{mat}})\,d\omega ,
 \qquad
 \tilde{\Sigma}_{\Psi,\Lambda} = \Lambda\Lambda^{*} ,
 $$</p>
 <p>and the free-photon cloud is the same construction with the four plane modes weighted and summed,</p>
 <p>$$
-\mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\omega\tau)
+\mathrm{O}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} \exp(-i\theta_{\mathrm{mat}})
 \left\{\Omega_{j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \int_{\|\vec k_\Phi\|=\omega} b_{j}(\vec k_\Phi,\omega)\,
 \tilde{Ξ}_{\vec k_\Phi,j}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\,dS(\vec k_\Phi)\right\} d\omega ,
 \qquad
@@ -453,7 +454,7 @@ clearest statement of what the programme assumes.</p>
 </tr>
 <tr>
 <td>$\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$</td>
-<td>Biamplitude, $\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\omega\tau)$</td>
+<td>Biamplitude, $\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\theta_{\mathrm{mat}})$</td>
 </tr>
 <tr>
 <td>$\vec\nabla^{-}_{\Phi,\omega}\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$</td>

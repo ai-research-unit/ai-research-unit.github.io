@@ -105,9 +105,10 @@ $$</p>
 <p>Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the <strong>unit pure real quaternions</strong> $\vec u \in \mathbb{B}_{H}$ (the real quaternion subalgebra $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$), with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^{*} = -\vec u \in \mathbb{B}_{\Phi}$. They are the roots of $-1$ that the algebra itself carries, and each is the axis a rotor turns about. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.</p>
 <p>The two appear side by side in the polar word of the field,</p>
 <p>$$
-\tilde\Xi=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$</p>
-<p>and this expression is precisely where the conflation happens. The $i$ in $e^{i\alpha}$ is the central scalar imaginary, and the angle $\alpha$ is a number; the rotor $\tilde u_{\mathrm r}$ is built from a non-central root $\vec u$, and $\vec u$ is an axis the field carries. One is the complex structure, the other a direction the field has turned, and they must be read separately.</p>
+<p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
+<p>and this expression is precisely where the conflation happens. The $i$ in $e^{i\theta_{\mathrm{pha}}}$ is the central scalar imaginary, and the angle $\theta_{\mathrm{pha}}$ is a number; the rotor $\tilde u_{\mathrm r}$ is built from a non-central root $\vec u$, and $\vec u$ is an axis the field carries. One is the complex structure, the other a direction the field has turned, and they must be read separately.</p>
 <h3 id="the-complex-structure-of-the-carrier">The complex structure of the carrier</h3>
 <p>A Schrödinger equation presupposes a complex vector space of states. In the biquaternion framework that space is $\mathbb{B}$ itself, read as a complex vector space of dimension four, and its complex structure is left multiplication by the central $i$. Because $i$ is central, this action commutes with the left action of $\mathbb{B}$, so the module is genuinely complex-linear.</p>
 <p>It is important that the complex structure does <strong>not</strong> live on $\mathbb{B}_{\Psi}$. Multiplication by $i$ is a real-linear isomorphism</p>
@@ -116,7 +117,7 @@ i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi},
 \qquad
 i\,\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi},
 $$</p>
-<p>so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mathbb{B}_{\Psi}$. The phrase "the complex structure of $\mathbb{B}_{\Psi}$", if used at all, can only mean the complex structure of the carrier: as a real vector space $\mathbb{B}_{\Psi}$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the polar word $r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ contains both an $i$, inside the central factor, and a non-central root inside the rotor; the $i$ does not act on $\mathbb{B}_{\Psi}$, it maps it to its complement.</p>
+<p>so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mathbb{B}_{\Psi}$. The phrase "the complex structure of $\mathbb{B}_{\Psi}$", if used at all, can only mean the complex structure of the carrier: as a real vector space $\mathbb{B}_{\Psi}$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the polar word $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ contains both an $i$, inside the central factor, and a non-central root inside the rotor; the $i$ does not act on $\mathbb{B}_{\Psi}$, it maps it to its complement.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -204,7 +205,7 @@ $$</p>
 \tilde{Ϛ}_{\Psi}=\frac{\tilde\Xi\tilde\Xi^{*}}{\rho}\in\mathbb{B}_{\Psi},
 $$</p>
 <p>which is Hermitian, positive and of unit trace, so $\tilde{Ϛ}_{\Psi}$ is a state in the sense of the companion article. The field and that state are not the same object; they are related by $\tilde\Xi\mapsto\tilde\Xi\tilde\Xi^{*}$, and the same central $i$ acts as the complex structure on the field while exchanging the sectors in which the operator is expressed. The expectation of the Hamiltonian in a field is $\mathrm{Sc}(\tilde H_\Psi\tilde{Ϛ}_{\Psi})$, which is real by the Hermiticity above.</p>
-<h2 id="the-equation-written-in-math194-and-its-solution">The Equation Written in $\mathbb{B}_{\Psi}$, and Its Solution</h2>
+<h2 id="the-equation-written-in-math196-and-its-solution">The Equation Written in $\mathbb{B}_{\Psi}$, and Its Solution</h2>
 <p>With the objects separated, the first writing reads</p>
 <p>$$
 \boxed{\;i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}(r'_t) = \tilde H_\Psi\,\tilde{Ξ}(r'_t),
@@ -243,7 +244,7 @@ $$</p>
 \langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \frac{\mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})}{\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})} = \mathrm{Sc}\bigl(\tilde H_\Psi\tilde{Ϛ}_{\Psi}\bigr)\in\mathbb{R},
 $$</p>
 <p>which is real because the symbol is Hermitian, and which reduces in the matrix picture to $\operatorname{Tr}(H\mathsf{M}_2(\tilde{Ϛ}_{\Psi}))$, with $H$ the energy reading of $\tilde H_\Psi$. Questions of the form "is the field on this axis" belong to the corpus's measurement articles and are not needed here; no projector enters this article.</p>
-<h2 id="the-equation-written-in-math242">The Equation Written in $\mathbb{B}_{\Phi}$</h2>
+<h2 id="the-equation-written-in-math244">The Equation Written in $\mathbb{B}_{\Phi}$</h2>
 <p>The second writing puts the derivative alone on the left and the generator on the right,</p>
 <p>$$
 \partial/\partial r'_t\,\tilde{Ξ} = \frac{1}{\hbar\,c}\tilde H_\Phi\,\tilde{Ξ},

@@ -81,23 +81,23 @@ $$</p>
 <p>with $\lambda_\pm$ the complex eigenvalues and $\Pi_\pm$ the fixed central idempotents. The <strong>exponential polar decomposition</strong> of <em>Exponential Polar Decomposition of Reduced Biquaternions</em> writes a unit $\breve Q$ as</p>
 <p>$$
 \breve Q=\exp(\breve Q_{\log})
-=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\alpha)\exp(ij\beta),
+=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}),
 \qquad
-\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
+\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}},
 $$</p>
-<p>with $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$ and $(\alpha,\beta)$ modulo the lattice $\Lambda$. This article states the dictionary between the two writings. It repeats no proof from the three source articles: the spectrum and the idempotents are those of the eigenvalue article, and the exponential, the logarithm and the polar word are those of the elementary and polar articles.</p>
-<p>The two decompositions answer different questions. The spectral writing separates $\breve Q$ into its two complex components $\lambda_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with fixed directions $\Pi_\pm$. The polar writing separates it into a modulus $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ and a torus factor $u=\exp(i\alpha)\exp(ij\beta)$, which carry the two real scales $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$ and the two phases $\theta_\pm=\alpha\pm\beta$. The dictionary is a change of coordinates on the unit group: the two complex numbers $\lambda_\pm$ are replaced by the four real numbers $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$, and the product and ratio of the eigenvalues give the sum and difference of the two phases.</p>
+<p>with $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$ and $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ modulo the lattice $\Lambda$. This article states the dictionary between the two writings. It repeats no proof from the three source articles: the spectrum and the idempotents are those of the eigenvalue article, and the exponential, the logarithm and the polar word are those of the elementary and polar articles.</p>
+<p>The two decompositions answer different questions. The spectral writing separates $\breve Q$ into its two complex components $\lambda_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with fixed directions $\Pi_\pm$. The polar writing separates it into a modulus $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ and a torus factor $u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$, which carry the two real scales $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$ and the two phases $\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$. The dictionary is a change of coordinates on the unit group: the two complex numbers $\lambda_\pm$ are replaced by the four real numbers $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$, and the product and ratio of the eigenvalues give the sum and difference of the two phases.</p>
 <p><strong>The results.</strong> The eigenvalues are recovered from the polar data by</p>
 <p>$$
-\lambda_+=\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta},
+\lambda_+=\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}},
 \qquad
-\lambda_-=\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta},
+\lambda_-=\rho e^{i\theta_{\mathrm{pha}}}e^{-\theta_{\mathrm{rpd}}-i\theta_{\mathrm{phb}}},
 $$</p>
 <p>so that</p>
 <p>$$
-\lambda_+\lambda_-=\rho^2e^{2i\alpha}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2,
+\lambda_+\lambda_-=\rho^2e^{2i\theta_{\mathrm{pha}}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2,
 \qquad
-\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}e^{2i\beta}.
+\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}.
 $$</p>
 <p>The polar data are recovered from the eigenvalues by</p>
 <p>$$
@@ -105,9 +105,9 @@ $$</p>
 \qquad
 \theta_{\mathrm{rpd}}=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert,
 \qquad
-\alpha=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),
+\theta_{\mathrm{pha}}=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),
 \qquad
-\beta=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
+\theta_{\mathrm{phb}}=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
 $$</p>
 <p>with $\operatorname{Arg}$ the principal argument in $(-\pi,\pi]$. The first two formulas give the modulus and the boost; the last two give the two phases, and the principal diamond selects the representative. The dictionary is a bijection on the unit group, and the exponential's lattice is the spectral ambiguity of the two complex logarithms.</p>
 <div class="table-scroll"><table>
@@ -132,11 +132,11 @@ $$</p>
 </tr>
 <tr>
 <td>Polar parameters</td>
-<td>$\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$</td>
+<td>$\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})\in\mathbb{R}^2/\Lambda$</td>
 </tr>
 <tr>
 <td>Eigenvalues from polar data</td>
-<td>$\lambda_\pm=\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
+<td>$\lambda_\pm=\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}$</td>
 </tr>
 <tr>
 <td>Polar data from eigenvalues</td>
@@ -144,11 +144,11 @@ $$</p>
 </tr>
 <tr>
 <td>Phases from eigenvalues</td>
-<td>$\alpha=\tfrac12(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-)$, $\beta=\tfrac12(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-)$</td>
+<td>$\theta_{\mathrm{pha}}=\tfrac12(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-)$, $\theta_{\mathrm{phb}}=\tfrac12(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-)$</td>
 </tr>
 <tr>
 <td>Factor decompositions</td>
-<td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$ with $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$; $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ with $\theta_\pm=\alpha\pm\beta$</td>
+<td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$ with $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$; $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ with $\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$</td>
 </tr>
 <tr>
 <td>Exponential on idempotents</td>
@@ -160,7 +160,7 @@ $$</p>
 </tr>
 <tr>
 <td>Ratio</td>
-<td>$\lambda_+/\lambda_-=e^{2\theta_{\mathrm{rpd}}}e^{2i\beta}$</td>
+<td>$\lambda_+/\lambda_-=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}$</td>
 </tr>
 <tr>
 <td>Common domain</td>
@@ -233,16 +233,16 @@ $$</p>
 \breve Q=\exp(\breve Q_{\log})
 =\breve r\,u,
 \qquad
-\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta
+\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}
 \;},
 $$</p>
 <p>with</p>
 <p>$$
 \breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}),
 \qquad
-u=\exp(i\alpha)\exp(ij\beta),
+u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}),
 $$</p>
-<p>and $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)$ in the principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ (boundary half-open). The factor $\breve r$ is the modulus, $u$ the unit factor, $\theta_{\mathrm{rpd}}$ the boost, and $\alpha,\beta$ the two phases. These are the statements of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, §<em>The Decomposition</em>, §<em>Existence and Uniqueness</em> and §<em>The Exponential Coordinates</em>.</p>
+<p>and $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ in the principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$ (boundary half-open). The factor $\breve r$ is the modulus, $u$ the unit factor, $\theta_{\mathrm{rpd}}$ the boost, and $\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ the two phases. These are the statements of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, §<em>The Decomposition</em>, §<em>Existence and Uniqueness</em> and §<em>The Exponential Coordinates</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -257,7 +257,7 @@ $$</p>
 </tr>
 <tr>
 <td>Decomposition</td>
-<td>$\breve Q=\breve r\,u=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta)$</td>
+<td>$\breve Q=\breve r\,u=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$</td>
 </tr>
 <tr>
 <td>Modulus</td>
@@ -265,15 +265,15 @@ $$</p>
 </tr>
 <tr>
 <td>Unit factor</td>
-<td>$u=\exp(i\alpha)\exp(ij\beta)$</td>
+<td>$u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$</td>
 </tr>
 <tr>
 <td>Parameters</td>
-<td>$\ln\rho,\theta_{\mathrm{rpd}}\in\mathbb{R}$; $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$</td>
+<td>$\ln\rho,\theta_{\mathrm{rpd}}\in\mathbb{R}$; $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})\in\mathbb{R}^2/\Lambda$</td>
 </tr>
 <tr>
 <td>Principal domain</td>
-<td>$\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$</td>
+<td>$\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$</td>
 </tr>
 <tr>
 <td>Kernel</td>
@@ -315,7 +315,7 @@ $$</p>
 <tr>
 <td>$Q_{\blacktriangledown}=0$, $Q_{\blacktriangle}^2\neq0$</td>
 <td>one repeated nonzero eigenvalue</td>
-<td>exists with $\theta_{\mathrm{rpd}}=\beta=0$ and $u=\exp(i\alpha)$</td>
+<td>exists with $\theta_{\mathrm{rpd}}=\theta_{\mathrm{phb}}=0$ and $u=\exp(i\theta_{\mathrm{pha}})$</td>
 </tr>
 <tr>
 <td>$Q_{\blacktriangledown}=0$, $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$</td>
@@ -327,18 +327,18 @@ $$</p>
 <p>The spectral domain is strictly larger than the polar domain. The gap is exactly the null set $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$: the nonzero zero divisors and the zero element, on which the eigenvalue decomposition survives and the logarithm does not.</p>
 <h2 id="the-dictionary">The Dictionary</h2>
 <h3 id="the-eigenvalues-from-the-polar-parameters">The Eigenvalues from the Polar Parameters</h3>
-<p>Let $\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta)$ be a unit. Since $\breve Q\Pi_\pm=\lambda_\pm\Pi_\pm$, $j\Pi_+=\Pi_+$ and $j\Pi_-=-\Pi_-$, the eigenvalue on $\Pi_+$ is the coefficient of $\Pi_+$:</p>
+<p>Let $\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$ be a unit. Since $\breve Q\Pi_\pm=\lambda_\pm\Pi_\pm$, $j\Pi_+=\Pi_+$ and $j\Pi_-=-\Pi_-$, the eigenvalue on $\Pi_+$ is the coefficient of $\Pi_+$:</p>
 <p>$$
-\lambda_+=\rho e^{i\alpha}\bigl(\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\beta+i\sin\beta\bigr)
-=\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}}e^{i\beta}
-=\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta},
+\lambda_+=\rho e^{i\theta_{\mathrm{pha}}}\bigl(\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\theta_{\mathrm{phb}}+i\sin\theta_{\mathrm{phb}}\bigr)
+=\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}}e^{i\theta_{\mathrm{phb}}}
+=\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}},
 $$</p>
-<p>and on $\Pi_-$ the signs of $\theta_{\mathrm{rpd}}$ and $\beta$ are reversed:</p>
+<p>and on $\Pi_-$ the signs of $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{phb}}$ are reversed:</p>
 <p>$$
-\lambda_-=\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}}e^{-i\beta}
-=\rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta}.
+\lambda_-=\rho e^{i\theta_{\mathrm{pha}}}e^{-\theta_{\mathrm{rpd}}}e^{-i\theta_{\mathrm{phb}}}
+=\rho e^{i\theta_{\mathrm{pha}}}e^{-\theta_{\mathrm{rpd}}-i\theta_{\mathrm{phb}}}.
 $$</p>
-<p>The two formulas are the componentwise reading of the closed form: the scalar factor $\rho e^{i\alpha}$ multiplies both eigenvalues, and the split factor $\theta_{\mathrm{rpd}}+i\beta$ enters with opposite signs. The table collects the data.</p>
+<p>The two formulas are the componentwise reading of the closed form: the scalar factor $\rho e^{i\theta_{\mathrm{pha}}}$ multiplies both eigenvalues, and the split factor $\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}$ enters with opposite signs. The table collects the data.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -349,15 +349,15 @@ $$</p>
 <tbody>
 <tr>
 <td>Eigenvalues</td>
-<td>$\lambda_\pm=\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
+<td>$\lambda_\pm=\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}$</td>
 </tr>
 <tr>
 <td>Product</td>
-<td>$\lambda_+\lambda_-=\rho^2e^{2i\alpha}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$</td>
+<td>$\lambda_+\lambda_-=\rho^2e^{2i\theta_{\mathrm{pha}}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$</td>
 </tr>
 <tr>
 <td>Ratio</td>
-<td>$\lambda_+/\lambda_-=e^{2(\theta_{\mathrm{rpd}}+i\beta)}=e^{2\theta_{\mathrm{rpd}}}e^{2i\beta}$</td>
+<td>$\lambda_+/\lambda_-=e^{2(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}$</td>
 </tr>
 <tr>
 <td>Moduli</td>
@@ -365,23 +365,23 @@ $$</p>
 </tr>
 <tr>
 <td>Arguments</td>
-<td>$\operatorname{Arg}\lambda_\pm=\alpha\pm\beta$ (mod $2\pi$)</td>
+<td>$\operatorname{Arg}\lambda_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$ (mod $2\pi$)</td>
 </tr>
 <tr>
 <td>Sum of arguments</td>
-<td>$\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-=2\alpha$ (mod $2\pi$)</td>
+<td>$\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-=2\theta_{\mathrm{pha}}$ (mod $2\pi$)</td>
 </tr>
 <tr>
 <td>Difference of arguments</td>
-<td>$\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-=2\beta$ (mod $2\pi$)</td>
+<td>$\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-=2\theta_{\mathrm{phb}}$ (mod $2\pi$)</td>
 </tr>
 </tbody>
 </table></div>
 <p>The product gives the modulus and the total phase; the ratio gives the boost and the relative phase:</p>
 <p>$$
-Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\rho^2e^{2i\alpha},
+Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\rho^2e^{2i\theta_{\mathrm{pha}}},
 \qquad
-\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}e^{2i\beta}.
+\frac{\lambda_+}{\lambda_-}=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}.
 $$</p>
 <p>The polar parameters are therefore the polar coordinates of the product and the ratio, with the branch fixed by the principal diamond. This is the exact structural difference from the split-complex case: the modulus of the ratio is a positive real number and carries only the boost; here it is a nonzero complex number and carries the boost and one phase.</p>
 <h3 id="the-polar-parameters-from-the-eigenvalues">The Polar Parameters from the Eigenvalues</h3>
@@ -393,20 +393,20 @@ $$</p>
 $$</p>
 <p>The phases are read from the principal arguments:</p>
 <p>$$
-\alpha=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),
+\theta_{\mathrm{pha}}=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),
 \qquad
-\beta=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
+\theta_{\mathrm{phb}}=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
 $$</p>
-<p>so that $\alpha+\beta=\operatorname{Arg}\lambda_+$ and $\alpha-\beta=\operatorname{Arg}\lambda_-$. The principal diamond contains the pair: $\lvert\alpha\rvert+\lvert\beta\rvert=\max(\lvert\operatorname{Arg}\lambda_+\rvert,\lvert\operatorname{Arg}\lambda_-\rvert)\le\pi$. The formulas for $\alpha$ and $\beta$ use the individual arguments, not the argument of the product or of the ratio: the latter are defined only modulo $2\pi$ and their halves only modulo $\pi$, which is the lattice ambiguity.</p>
+<p>so that $\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}}=\operatorname{Arg}\lambda_+$ and $\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}}=\operatorname{Arg}\lambda_-$. The principal diamond contains the pair: $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert=\max(\lvert\operatorname{Arg}\lambda_+\rvert,\lvert\operatorname{Arg}\lambda_-\rvert)\le\pi$. The formulas for $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$ use the individual arguments, not the argument of the product or of the ratio: the latter are defined only modulo $2\pi$ and their halves only modulo $\pi$, which is the lattice ambiguity.</p>
 <p><strong>Proposition (the dictionary).</strong> On the unit group, the map</p>
 <p>$$
 \boxed{\;
-(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)\longmapsto
+(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})\longmapsto
 (\lambda_+,\lambda_-)
-=\bigl(\rho e^{i\alpha}e^{\theta_{\mathrm{rpd}}+i\beta},\ \rho e^{i\alpha}e^{-\theta_{\mathrm{rpd}}-i\beta}\bigr)
+=\bigl(\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}},\ \rho e^{i\theta_{\mathrm{pha}}}e^{-\theta_{\mathrm{rpd}}-i\theta_{\mathrm{phb}}}\bigr)
 \;}
 $$</p>
-<p>is a bijection from $\{\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R},\ \lvert\alpha\rvert+\lvert\beta\rvert\le\pi\}$, with the boundary half-open, onto the set of pairs of nonzero complex numbers. Its inverse is the formula above.</p>
+<p>is a bijection from $\{\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R},\ \lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi\}$, with the boundary half-open, onto the set of pairs of nonzero complex numbers. Its inverse is the formula above.</p>
 <p><em>Proof.</em> The map is the coordinate change of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>, §<em>The Four Real Coordinates</em>, with $C_\pm=\lambda_\pm$; its inverse and its lattice ambiguity are established there. The only new point is the identification $C_\pm=\lambda_\pm$, which is the eigenvalue formula of <em>Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion</em>.</p>
 <p>The inverse formulas are collected in the table.</p>
 <div class="table-scroll"><table>
@@ -429,14 +429,14 @@ $$</p>
 <td>$\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\alpha$</td>
+<td>$\theta_{\mathrm{pha}}$</td>
 <td>$\tfrac12(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-)$</td>
-<td>$\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$</td>
+<td>$\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$</td>
 </tr>
 <tr>
-<td>$\beta$</td>
+<td>$\theta_{\mathrm{phb}}$</td>
 <td>$\tfrac12(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-)$</td>
-<td>$\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$</td>
+<td>$\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$</td>
 </tr>
 </tbody>
 </table></div>
@@ -452,9 +452,9 @@ $$</p>
 <p>$$
 \rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}},
 \qquad
-\theta_+=\alpha+\beta,
+\theta_+=\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}},
 \quad
-\theta_-=\alpha-\beta.
+\theta_-=\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}}.
 $$</p>
 <p>The modulus has eigenvalues $\rho_\pm$, the unit factor has eigenvalues $e^{i\theta_\pm}$, and the product has eigenvalues $\lambda_\pm=\rho_\pm e^{i\theta_\pm}$. The exponent has eigenvalues $\ln\rho_\pm+i\theta_\pm$, which are logarithms of $\lambda_\pm$. The table records the three levels.</p>
 <div class="table-scroll"><table>
@@ -479,12 +479,12 @@ $$</p>
 <tr>
 <td>Unit factor $u$</td>
 <td>$e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$</td>
-<td>$\exp(i\alpha)\exp(ij\beta)$</td>
+<td>$\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$</td>
 </tr>
 <tr>
 <td>Exponent $\breve Q_{\log}$</td>
 <td>$(\ln\rho_++i\theta_+)\Pi_++(\ln\rho_-+i\theta_-)\Pi_-$</td>
-<td>$\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta$</td>
+<td>$\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -497,9 +497,9 @@ $$</p>
 \cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}=e^{\theta_{\mathrm{rpd}}}\Pi_++e^{-\theta_{\mathrm{rpd}}}\Pi_-,
 $$</p>
 <p>$$
-e^{i\alpha}=e^{i\alpha}\Pi_++e^{i\alpha}\Pi_-,
+e^{i\theta_{\mathrm{pha}}}=e^{i\theta_{\mathrm{pha}}}\Pi_++e^{i\theta_{\mathrm{pha}}}\Pi_-,
 \qquad
-e^{ij\beta}=e^{i\beta}\Pi_++e^{-i\beta}\Pi_-.
+e^{ij\theta_{\mathrm{phb}}}=e^{i\theta_{\mathrm{phb}}}\Pi_++e^{-i\theta_{\mathrm{phb}}}\Pi_-.
 $$</p>
 <p>The modulus, the unit factor and the element follow:</p>
 <p>$$
@@ -507,8 +507,8 @@ $$</p>
 =\rho e^{\theta_{\mathrm{rpd}}}\Pi_++\rho e^{-\theta_{\mathrm{rpd}}}\Pi_-,
 $$</p>
 <p>$$
-u=e^{i\alpha}e^{ij\beta}
-=e^{i(\alpha+\beta)}\Pi_++e^{i(\alpha-\beta)}\Pi_-,
+u=e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}
+=e^{i(\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}})}\Pi_++e^{i(\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}})}\Pi_-,
 \qquad
 \breve Q=\breve r u
 =\lambda_+\Pi_++\lambda_-\Pi_-.
@@ -538,15 +538,15 @@ $$</p>
 </tr>
 <tr>
 <td>Central phase</td>
-<td>$e^{i\alpha}$</td>
-<td>$e^{i\alpha}\Pi_++e^{i\alpha}\Pi_-$</td>
-<td>$e^{i\alpha},e^{i\alpha}$</td>
+<td>$e^{i\theta_{\mathrm{pha}}}$</td>
+<td>$e^{i\theta_{\mathrm{pha}}}\Pi_++e^{i\theta_{\mathrm{pha}}}\Pi_-$</td>
+<td>$e^{i\theta_{\mathrm{pha}}},e^{i\theta_{\mathrm{pha}}}$</td>
 </tr>
 <tr>
 <td>Relative phase</td>
-<td>$e^{ij\beta}$</td>
-<td>$e^{i\beta}\Pi_++e^{-i\beta}\Pi_-$</td>
-<td>$e^{i\beta},e^{-i\beta}$</td>
+<td>$e^{ij\theta_{\mathrm{phb}}}$</td>
+<td>$e^{i\theta_{\mathrm{phb}}}\Pi_++e^{-i\theta_{\mathrm{phb}}}\Pi_-$</td>
+<td>$e^{i\theta_{\mathrm{phb}}},e^{-i\theta_{\mathrm{phb}}}$</td>
 </tr>
 <tr>
 <td>Modulus</td>
@@ -556,7 +556,7 @@ $$</p>
 </tr>
 <tr>
 <td>Unit factor</td>
-<td>$u=e^{i\alpha}e^{ij\beta}$</td>
+<td>$u=e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}$</td>
 <td>$e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$</td>
 <td>$e^{i\theta_\pm}$</td>
 </tr>
@@ -564,18 +564,18 @@ $$</p>
 <td>Element</td>
 <td>$\breve Q=\breve r u$</td>
 <td>$\lambda_+\Pi_++\lambda_-\Pi_-$</td>
-<td>$\lambda_\pm=\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
+<td>$\lambda_\pm=\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The central phase has the same eigenvalue on both idempotents; the relative phase is the factor that distinguishes them. This is the reduced-biquaternion analogue of the boost and rotor split: the boost $\theta_{\mathrm{rpd}}$ and the relative phase $\beta$ act with opposite signs, while the total phase $\alpha$ acts with the same sign.</p>
+<p>The central phase has the same eigenvalue on both idempotents; the relative phase is the factor that distinguishes them. This is the reduced-biquaternion analogue of the boost and rotor split: the boost $\theta_{\mathrm{rpd}}$ and the relative phase $\theta_{\mathrm{phb}}$ act with opposite signs, while the total phase $\theta_{\mathrm{pha}}$ acts with the same sign.</p>
 <h3 id="the-exponential-on-the-idempotents">The Exponential on the Idempotents</h3>
 <p>The exponent splits as</p>
 <p>$$
-\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta
+\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}
 =(\ln\rho+\theta_{\mathrm{rpd}}+i\theta_+)\Pi_++(\ln\rho-\theta_{\mathrm{rpd}}+i\theta_-)\Pi_-,
 $$</p>
-<p>with $\theta_\pm=\alpha\pm\beta$. Its exponential acts on the two idempotents by</p>
+<p>with $\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$. Its exponential acts on the two idempotents by</p>
 <p>$$
 \exp(\breve Q_{\log})
 =e^{\ln\rho+\theta_{\mathrm{rpd}}+i\theta_+}\Pi_++e^{\ln\rho-\theta_{\mathrm{rpd}}+i\theta_-}\Pi_-
@@ -597,19 +597,19 @@ $$</p>
 <tr>
 <td>$\lambda_+\lambda_-$</td>
 <td>radius and total phase</td>
-<td>$\rho=\lvert\lambda_+\lambda_-\rvert^{1/2}$, $2\alpha=\arg(\lambda_+\lambda_-)$</td>
-<td>$\alpha$ modulo $\pi$</td>
+<td>$\rho=\lvert\lambda_+\lambda_-\rvert^{1/2}$, $2\theta_{\mathrm{pha}}=\arg(\lambda_+\lambda_-)$</td>
+<td>$\theta_{\mathrm{pha}}$ modulo $\pi$</td>
 </tr>
 <tr>
 <td>$\lambda_+/\lambda_-$</td>
 <td>boost and relative phase</td>
-<td>$\theta_{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$, $2\beta=\arg(\lambda_+/\lambda_-)$</td>
-<td>$\beta$ modulo $\pi$</td>
+<td>$\theta_{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$, $2\theta_{\mathrm{phb}}=\arg(\lambda_+/\lambda_-)$</td>
+<td>$\theta_{\mathrm{phb}}$ modulo $\pi$</td>
 </tr>
 <tr>
 <td>Individual arguments</td>
 <td>the representative</td>
-<td>$\theta_\pm=\operatorname{Arg}\lambda_\pm$, $\alpha=\tfrac12(\theta_++\theta_-)$, $\beta=\tfrac12(\theta_+-\theta_-)$</td>
+<td>$\theta_\pm=\operatorname{Arg}\lambda_\pm$, $\theta_{\mathrm{pha}}=\tfrac12(\theta_++\theta_-)$, $\theta_{\mathrm{phb}}=\tfrac12(\theta_+-\theta_-)$</td>
 <td>— (the representative is fixed)</td>
 </tr>
 <tr>
@@ -619,9 +619,9 @@ $$</p>
 <td>—</td>
 </tr>
 <tr>
-<td>$\rho,\theta_{\mathrm{rpd}},\alpha,\beta$</td>
+<td>$\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$</td>
 <td>the element</td>
-<td>$\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})e^{i\alpha}e^{ij\beta}$</td>
+<td>$\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}$</td>
 <td>the lattice</td>
 </tr>
 <tr>
@@ -632,7 +632,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The product and the ratio determine $\alpha$ and $\beta$ only modulo $\pi$; the individual arguments fix the representative in the principal diamond, and then the dictionary is a bijection. There is no continuous free direction once the individual arguments are used: the eigenprojections are fixed, so the four polar parameters are coordinates on the unit group, not a section of a larger word map.</p>
+<p>The product and the ratio determine $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$ only modulo $\pi$; the individual arguments fix the representative in the principal diamond, and then the dictionary is a bijection. There is no continuous free direction once the individual arguments are used: the eigenprojections are fixed, so the four polar parameters are coordinates on the unit group, not a section of a larger word map.</p>
 <h2 id="the-regimes">The Regimes</h2>
 <p>The spectral regimes of the eigenvalue article and the polar coordinates fit together as follows.</p>
 <div class="table-scroll"><table>
@@ -649,7 +649,7 @@ $$</p>
 <td>Distinct interior</td>
 <td>$Q_{\blacktriangledown}\neq0$, $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$</td>
 <td>$\lambda_+\neq\lambda_-$, both nonzero</td>
-<td>$\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\alpha,\beta)$ in the diamond</td>
+<td>$\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ in the diamond</td>
 </tr>
 <tr>
 <td>Zero divisor</td>
@@ -661,7 +661,7 @@ $$</p>
 <td>Scalar nonzero</td>
 <td>$Q_{\blacktriangledown}=0$, $Q_{\blacktriangle}\neq0$</td>
 <td>$\lambda_+=\lambda_-=Q_{\blacktriangle}$</td>
-<td>$\rho=\lvert Q_{\blacktriangle}\rvert$, $\theta_{\mathrm{rpd}}=0$, $\beta=0$, $\alpha=\operatorname{Arg}Q_{\blacktriangle}$</td>
+<td>$\rho=\lvert Q_{\blacktriangle}\rvert$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{phb}}=0$, $\theta_{\mathrm{pha}}=\operatorname{Arg}Q_{\blacktriangle}$</td>
 </tr>
 <tr>
 <td>Zero</td>
@@ -692,7 +692,7 @@ $$</p>
 $$</p>
 <p>Its spectrum is distinct, and the eigenvalue decomposition exists. The polar decomposition does not: the boost formula diverges, $\theta_{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert\to\pm\infty$, when one eigenvalue is zero, and the complex logarithm of the zero eigenvalue does not exist. The zero-divisor set is the boundary of the polar domain, not a spectral degeneration.</p>
 <h3 id="the-scalar-regime">The Scalar Regime</h3>
-<p>For $\breve Q=Q_{\blacktriangle}$ with $Q_{\blacktriangle}\neq0$, the two eigenvalues coincide at $Q_{\blacktriangle}$. The polar data are $\rho=\lvert Q_{\blacktriangle}\rvert$, $\theta_{\mathrm{rpd}}=0$, $\beta=0$ and $\alpha=\operatorname{Arg}Q_{\blacktriangle}$; the unit factor is $e^{i\alpha}$, the complex phase of $Q_{\blacktriangle}$. The repeated eigenvalue is therefore not a repeated polar datum: the boost and the relative phase vanish, and the two-term spectral writing collapses to $\breve Q=Q_{\blacktriangle}\Pi_++Q_{\blacktriangle}\Pi_-$, while the polar writing keeps the modulus and the single phase.</p>
+<p>For $\breve Q=Q_{\blacktriangle}$ with $Q_{\blacktriangle}\neq0$, the two eigenvalues coincide at $Q_{\blacktriangle}$. The polar data are $\rho=\lvert Q_{\blacktriangle}\rvert$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{phb}}=0$ and $\theta_{\mathrm{pha}}=\operatorname{Arg}Q_{\blacktriangle}$; the unit factor is $e^{i\theta_{\mathrm{pha}}}$, the complex phase of $Q_{\blacktriangle}$. The repeated eigenvalue is therefore not a repeated polar datum: the boost and the relative phase vanish, and the two-term spectral writing collapses to $\breve Q=Q_{\blacktriangle}\Pi_++Q_{\blacktriangle}\Pi_-$, while the polar writing keeps the modulus and the single phase.</p>
 <h3 id="the-absence-of-the-jordan-and-nilpotent-regimes">The Absence of the Jordan and Nilpotent Regimes</h3>
 <p>The algebra is $\mathbb{C}\times\mathbb{C}$, hence reduced. There is no nonzero nilpotent, so there is no Jordan-block regime and no nilpotent boundary. Every element is semisimple; the only spectral degeneracy is the scalar case, and the only polar boundary is the zero-divisor set. This is the structural difference from the biquaternion dictionary, where the Jordan and nilpotent regimes are nonempty and the eigenprojections vary.</p>
 <h2 id="the-exponential-and-the-logarithm">The Exponential and the Logarithm</h2>
@@ -704,15 +704,15 @@ $$</p>
 $$</p>
 <p>generated by $2\pi i$ and $\pi i(1+j)$ (<em>Reduced Biquaternion Elementary Functions</em>, §<em>The Kernel and the Image</em>). In spectral terms, a logarithm is a pair $(\log\lambda_+,\log\lambda_-)$, and adding $2\pi i k$ to the first and $2\pi i l$ to the second gives the same element. In the phases this is</p>
 <p>$$
-(\alpha,\beta)\longmapsto\bigl(\alpha+\pi(k+l),\ \beta+\pi(k-l)\bigr),
+(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})\longmapsto\bigl(\theta_{\mathrm{pha}}+\pi(k+l),\ \theta_{\mathrm{phb}}+\pi(k-l)\bigr),
 $$</p>
-<p>which is the lattice $\Lambda=\langle(2\pi,0),(\pi,\pi)\rangle$. The scalar period $2\pi i$ shifts $(\alpha,\beta)$ by $(2\pi,0)$; the split period $\pi i(1+j)$ shifts it by $(\pi,\pi)$. The period $\pi i(1-j)$ shifts it by $(\pi,-\pi)$ and is the difference of the other two modulo $2\pi$.</p>
+<p>which is the lattice $\Lambda=\langle(2\pi,0),(\pi,\pi)\rangle$. The scalar period $2\pi i$ shifts $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ by $(2\pi,0)$; the split period $\pi i(1+j)$ shifts it by $(\pi,\pi)$. The period $\pi i(1-j)$ shifts it by $(\pi,-\pi)$ and is the difference of the other two modulo $2\pi$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Kernel element</th>
 <th>Shift in $(\log\lambda_+,\log\lambda_-)$</th>
-<th>Shift in $(\alpha,\beta)$</th>
+<th>Shift in $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$</th>
 </tr>
 </thead>
 <tbody>
@@ -738,7 +738,7 @@ $$</p>
 <p>$$
 \exp^{-1}(\breve Q)=\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^2.
 $$</p>
-<p>In the principal diamond exactly one point of the fibre lies, so the polar data $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$ are unique in the diamond and unique modulo $\Lambda$ in general. This is the spectral content of the uniqueness theorem of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>: the ambiguity is one integer for each eigenvalue, and the diamond is a fundamental domain for the two integers.</p>
+<p>In the principal diamond exactly one point of the fibre lies, so the polar data $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are unique in the diamond and unique modulo $\Lambda$ in general. This is the spectral content of the uniqueness theorem of <em>Exponential Polar Decomposition of Reduced Biquaternions</em>: the ambiguity is one integer for each eigenvalue, and the diamond is a fundamental domain for the two integers.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -757,7 +757,7 @@ $$</p>
 </tr>
 <tr>
 <td>Fundamental domain</td>
-<td>$\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$, area $2\pi^2$</td>
+<td>$\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$, area $2\pi^2$</td>
 </tr>
 <tr>
 <td>Spectral coordinates of the exponent</td>
@@ -765,7 +765,7 @@ $$</p>
 </tr>
 <tr>
 <td>Polar coordinates</td>
-<td>$(\ln\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$ with $(\alpha,\beta)$ modulo $\Lambda$</td>
+<td>$(\ln\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ with $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ modulo $\Lambda$</td>
 </tr>
 </tbody>
 </table></div>
@@ -788,9 +788,9 @@ $$</p>
 <p>$$
 \mathsf M(\breve r)=\begin{pmatrix}\rho\cosh\theta_{\mathrm{rpd}}&\rho\sinh\theta_{\mathrm{rpd}}\\\rho\sinh\theta_{\mathrm{rpd}}&\rho\cosh\theta_{\mathrm{rpd}}\end{pmatrix},
 \qquad
-\mathsf M(u)=\begin{pmatrix}e^{i\alpha}\cos\beta&ie^{i\alpha}\sin\beta\\ie^{i\alpha}\sin\beta&e^{i\alpha}\cos\beta\end{pmatrix}.
+\mathsf M(u)=\begin{pmatrix}e^{i\theta_{\mathrm{pha}}}\cos\theta_{\mathrm{phb}}&ie^{i\theta_{\mathrm{pha}}}\sin\theta_{\mathrm{phb}}\\ie^{i\theta_{\mathrm{pha}}}\sin\theta_{\mathrm{phb}}&e^{i\theta_{\mathrm{pha}}}\cos\theta_{\mathrm{phb}}\end{pmatrix}.
 $$</p>
-<p>The first has eigenvalues $\rho e^{\pm\theta_{\mathrm{rpd}}}=\rho_\pm$; the second has eigenvalues $e^{i(\alpha\pm\beta)}=e^{i\theta_\pm}$; the product has eigenvalues $\lambda_\pm=\rho_\pm e^{i\theta_\pm}$. The diagonalisation by $S$ is the matrix form of the dictionary.</p>
+<p>The first has eigenvalues $\rho e^{\pm\theta_{\mathrm{rpd}}}=\rho_\pm$; the second has eigenvalues $e^{i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}})}=e^{i\theta_\pm}$; the product has eigenvalues $\lambda_\pm=\rho_\pm e^{i\theta_\pm}$. The diagonalisation by $S$ is the matrix form of the dictionary.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -812,7 +812,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf M(u)$</td>
-<td>$e^{i(\alpha+\beta)},e^{i(\alpha-\beta)}$</td>
+<td>$e^{i(\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}})},e^{i(\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}})}$</td>
 <td>the two phases</td>
 </tr>
 <tr>
@@ -822,7 +822,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The matrix picture shows that the polar decomposition is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a positive real diagonal factor $\operatorname{diag}(\rho e^\theta_{\mathrm{rpd}},\rho e^{-\theta_{\mathrm{rpd}}})$ and a $*$-unitary diagonal factor $\operatorname{diag}(e^{i\theta_+},e^{i\theta_-})$. The boost is the logarithm of the ratio of the two positive scales; the phases are the arguments.</p>
+<p>The matrix picture shows that the polar decomposition is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a positive real diagonal factor $\operatorname{diag}(\rho e^{\theta_{\mathrm{rpd}}},\rho e^{-\theta_{\mathrm{rpd}}})$ and a $*$-unitary diagonal factor $\operatorname{diag}(e^{i\theta_+},e^{i\theta_-})$. The boost is the logarithm of the ratio of the two positive scales; the phases are the arguments.</p>
 <p>The full case-by-case computation is in <em>Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</em>; the examples here isolate the dictionary.</p>
 <h3 id="a-generic-element">A Generic Element</h3>
 <p>Take $\breve Q=3+4i+j(1-i)$, with $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. The eigenvalues are</p>
@@ -843,10 +843,10 @@ $$</p>
 $$</p>
 <p>and</p>
 <p>$$
-\alpha=\tfrac12\bigl(\operatorname{Arg}(4+3i)+\operatorname{Arg}(2+5i)\bigr)=0.916895529237908,
+\theta_{\mathrm{pha}}=\tfrac12\bigl(\operatorname{Arg}(4+3i)+\operatorname{Arg}(2+5i)\bigr)=0.916895529237908,
 $$</p>
 <p>$$
-\beta=\tfrac12\bigl(\operatorname{Arg}(4+3i)-\operatorname{Arg}(2+5i)\bigr)=-0.27339442044462364.
+\theta_{\mathrm{phb}}=\tfrac12\bigl(\operatorname{Arg}(4+3i)-\operatorname{Arg}(2+5i)\bigr)=-0.27339442044462364.
 $$</p>
 <p>The exponent is</p>
 <p>$$
@@ -863,7 +863,7 @@ $$</p>
 \qquad
 \frac{\lambda_+}{\lambda_-}=\frac{23-14i}{29},
 $$</p>
-<p>whose modulus and arguments give $\rho^2=5\sqrt{29}$ and $2\alpha,2\beta$.</p>
+<p>whose modulus and arguments give $\rho^2=5\sqrt{29}$ and $2\theta_{\mathrm{pha}},2\theta_{\mathrm{phb}}$.</p>
 <h3 id="a-table-of-examples">A Table of Examples</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -873,8 +873,8 @@ $$</p>
 <th>$\lambda_-$</th>
 <th>$\rho$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
-<th>$\alpha$</th>
-<th>$\beta$</th>
+<th>$\theta_{\mathrm{pha}}$</th>
+<th>$\theta_{\mathrm{phb}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -945,22 +945,22 @@ $$</p>
 </table></div>
 <p>The scalar rows $1+i$, $i$ and $-1$ have $Q_{\blacktriangledown}=0$ and repeated eigenvalues; the row $ij$ has $Q_{\blacktriangle}=0$ and $Q_{\blacktriangledown}=i$, so $\lambda_+=i$ and $\lambda_-=-i$ are distinct; the row $j$ has $\lambda_+=1$ and $\lambda_-=-1$. The zero divisor $1+j$ has $\lambda_+=2$, $\lambda_-=0$ and no polar row.</p>
 <h3 id="the-hyperbolic-line-and-the-phases">The Hyperbolic Line and the Phases</h3>
-<p>For $\breve Q=\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ the eigenvalues are $e^{\theta_{\mathrm{rpd}}}$ and $e^{-\theta_{\mathrm{rpd}}}$, both positive real; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=\theta_{\mathrm{rpd}}$, $\alpha=\beta=0$. For $\breve Q=i$ the two eigenvalues are both $i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\alpha=\pi/2$, $\beta=0$. For $\breve Q=ij$ the eigenvalues are $i$ and $-i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\alpha=0$, $\beta=\pi/2$. For $\breve Q=j$ the eigenvalues are $1$ and $-1$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\alpha=\pi/2$, $\beta=-\pi/2$, on the boundary of the principal diamond. These are the same four cases as in <em>Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</em>, cases 3 to 6, read through the spectrum.</p>
+<p>For $\breve Q=\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ the eigenvalues are $e^{\theta_{\mathrm{rpd}}}$ and $e^{-\theta_{\mathrm{rpd}}}$, both positive real; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{pha}}=\theta_{\mathrm{phb}}=0$. For $\breve Q=i$ the two eigenvalues are both $i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=0$. For $\breve Q=ij$ the eigenvalues are $i$ and $-i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{phb}}=\pi/2$. For $\breve Q=j$ the eigenvalues are $1$ and $-1$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=-\pi/2$, on the boundary of the principal diamond. These are the same four cases as in <em>Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions</em>, cases 3 to 6, read through the spectrum.</p>
 <h3 id="the-kernel-and-the-branch">The Kernel and the Branch</h3>
 <p>The element $-1$ has the four corner logarithms</p>
 <p>$$
 i\pi,\qquad -i\pi,\qquad i\pi j,\qquad -i\pi j,
 $$</p>
-<p>with exponents $(\alpha,\beta)=(\pi,0),(-\pi,0),(0,\pi),(0,-\pi)$, all with exponential $-1$. The differences are generated by the kernel elements $2\pi i$, $\pi i(1+j)$ and $\pi i(1-j)$. In spectral terms, the two eigenvalues of $-1$ are both $-1$, and the four logarithms are the four choices of the argument $\pm\pi$ in each eigenvalue; the principal choice $(\theta_+,\theta_-)=(\pi,\pi)$, that is $(\alpha,\beta)=(\pi,0)$, gives $i\pi$, and the other three are obtained by adding kernel elements. This is the rank-two non-uniqueness in its simplest form.</p>
+<p>with exponents $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})=(\pi,0),(-\pi,0),(0,\pi),(0,-\pi)$, all with exponential $-1$. The differences are generated by the kernel elements $2\pi i$, $\pi i(1+j)$ and $\pi i(1-j)$. In spectral terms, the two eigenvalues of $-1$ are both $-1$, and the four logarithms are the four choices of the argument $\pm\pi$ in each eigenvalue; the principal choice $(\theta_+,\theta_-)=(\pi,\pi)$, that is $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})=(\pi,0)$, gives $i\pi$, and the other three are obtained by adding kernel elements. This is the rank-two non-uniqueness in its simplest form.</p>
 <h2 id="summary">Summary</h2>
 <p>For a reduced biquaternion unit $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, the eigenvalue decomposition and the exponential polar decomposition are related by</p>
 <p>$$
 \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-
-=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\alpha)\exp(ij\beta),
+=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}),
 $$</p>
 <p>with</p>
 <p>$$
-\lambda_\pm=\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)},
+\lambda_\pm=\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})},
 \qquad
 \rho=\sqrt{\lvert\lambda_+\lambda_-\rvert},
 \qquad
@@ -968,9 +968,9 @@ $$</p>
 $$</p>
 <p>and</p>
 <p>$$
-\alpha=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),
+\theta_{\mathrm{pha}}=\tfrac12\bigl(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-\bigr),
 \qquad
-\beta=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr).
+\theta_{\mathrm{phb}}=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr).
 $$</p>
 <p>The polar parameters are unique in the principal diamond and unique modulo the lattice $\Lambda$ in general. The zero divisors have a spectrum but no polar word; the scalar elements have a repeated eigenvalue and a vanishing boost and relative phase.</p>
 <h3 id="main-results">Main Results</h3>
@@ -985,7 +985,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Eigenvalues from polar data</td>
-<td>$\lambda_\pm=\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
+<td>$\lambda_\pm=\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}$</td>
 </tr>
 <tr>
 <td>Polar data from eigenvalues</td>
@@ -993,11 +993,11 @@ $$</p>
 </tr>
 <tr>
 <td>Phases from eigenvalues</td>
-<td>$\alpha=\tfrac12(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-)$, $\beta=\tfrac12(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-)$</td>
+<td>$\theta_{\mathrm{pha}}=\tfrac12(\operatorname{Arg}\lambda_++\operatorname{Arg}\lambda_-)$, $\theta_{\mathrm{phb}}=\tfrac12(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-)$</td>
 </tr>
 <tr>
 <td>Factor decompositions</td>
-<td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$ with $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$; $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ with $\theta_\pm=\alpha\pm\beta$</td>
+<td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$ with $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$; $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$ with $\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$</td>
 </tr>
 <tr>
 <td>Exponential on idempotents</td>
@@ -1005,15 +1005,15 @@ $$</p>
 </tr>
 <tr>
 <td>Product</td>
-<td>$\lambda_+\lambda_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\rho^2e^{2i\alpha}$</td>
+<td>$\lambda_+\lambda_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\rho^2e^{2i\theta_{\mathrm{pha}}}$</td>
 </tr>
 <tr>
 <td>Ratio</td>
-<td>$\lambda_+/\lambda_-=e^{2\theta_{\mathrm{rpd}}}e^{2i\beta}$</td>
+<td>$\lambda_+/\lambda_-=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}$</td>
 </tr>
 <tr>
 <td>Exponent eigenvalues</td>
-<td>$\log\lambda_\pm=\ln\rho\pm\theta_{\mathrm{rpd}}+i(\alpha\pm\beta)$</td>
+<td>$\log\lambda_\pm=\ln\rho\pm\theta_{\mathrm{rpd}}+i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}})$</td>
 </tr>
 <tr>
 <td>Kernel of $\exp$</td>
@@ -1025,7 +1025,7 @@ $$</p>
 </tr>
 <tr>
 <td>Principal domain</td>
-<td>$\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$</td>
+<td>$\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$</td>
 </tr>
 <tr>
 <td>Zero divisors</td>
@@ -1033,12 +1033,12 @@ $$</p>
 </tr>
 <tr>
 <td>Scalars</td>
-<td>repeated eigenvalue, $\theta_{\mathrm{rpd}}=\beta=0$</td>
+<td>repeated eigenvalue, $\theta_{\mathrm{rpd}}=\theta_{\mathrm{phb}}=0$</td>
 </tr>
 </tbody>
 </table></div>
 <h3 id="the-dictionary-across-the-three-algebras">The Dictionary Across the Three Algebras</h3>
-<p>The table compares the three relation articles; in the split-complex column, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$; in the biquaternion column, $\tilde U=U_te_t+\vec U=\tilde Q/(re^{i\alpha})$ is the unit factor and $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$.</p>
+<p>The table compares the three relation articles; in the split-complex column, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$; in the biquaternion column, $\tilde U=U_te_t+\vec U=\tilde Q/(re^{i\theta_{\mathrm{pha}}})$ is the unit factor and $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1064,25 +1064,25 @@ $$</p>
 <tr>
 <td>Polar parameters</td>
 <td>$r,\theta_{\mathrm{rpd}},\epsilon$</td>
-<td>$\rho,\theta_{\mathrm{rpd}},\alpha,\beta$</td>
-<td>$r,\alpha,\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
+<td>$\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$</td>
+<td>$r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta,\vec u_{\mathrm b},\vec u_{\mathrm r}$</td>
 </tr>
 <tr>
 <td>Eigenvalues from polar data</td>
 <td>$\sigma_\pm r e^{\pm\theta_{\mathrm{rpd}}}$</td>
-<td>$\rho e^{i\alpha}e^{\pm(\theta_{\mathrm{rpd}}+i\beta)}$</td>
-<td>$r e^{i\alpha}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$</td>
+<td>$\rho e^{i\theta_{\mathrm{pha}}}e^{\pm(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})}$</td>
+<td>$r e^{i\theta_{\mathrm{pha}}}\bigl(U_t\pm i(\vec U\cdot\vec U)^{1/2}\bigr)$</td>
 </tr>
 <tr>
 <td>Polar factors from spectrum</td>
 <td>$r$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{rpd}} j}=e^{\theta_{\mathrm{rpd}}}\Pi_++e^{-\theta_{\mathrm{rpd}}}\Pi_-$</td>
 <td>$\breve r=\rho_+\Pi_++\rho_-\Pi_-$, $u=e^{i\theta_+}\Pi_++e^{i\theta_-}\Pi_-$</td>
-<td>$\tilde U=\dfrac{\lambda_+}{r e^{i\alpha}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\alpha}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$</td>
+<td>$\tilde U=\dfrac{\lambda_+}{r e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_++\dfrac{\lambda_-}{r e^{i\theta_{\mathrm{pha}}}}\tilde\Pi_-$, $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$</td>
 </tr>
 <tr>
 <td>Discrete data</td>
 <td>$\epsilon\in(\mathbb{Z}/2)^2$</td>
-<td>lattice $\Lambda$ in $(\alpha,\beta)$</td>
+<td>lattice $\Lambda$ in $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$</td>
 <td>none</td>
 </tr>
 <tr>
@@ -1162,7 +1162,7 @@ $$</p>
 <td>the boost</td>
 </tr>
 <tr>
-<td>$\alpha,\beta$</td>
+<td>$\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$</td>
 <td>the two phases</td>
 </tr>
 <tr>
@@ -1170,7 +1170,7 @@ $$</p>
 <td>the lattice of the phases</td>
 </tr>
 <tr>
-<td>$\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$</td>
+<td>$\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$</td>
 <td>the principal diamond</td>
 </tr>
 <tr>
@@ -1178,11 +1178,11 @@ $$</p>
 <td>the modulus</td>
 </tr>
 <tr>
-<td>$u=\exp(i\alpha)\exp(ij\beta)$</td>
+<td>$u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$</td>
 <td>the unit factor</td>
 </tr>
 <tr>
-<td>$\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta$</td>
+<td>$\breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}$</td>
 <td>the exponent</td>
 </tr>
 <tr>
@@ -1190,7 +1190,7 @@ $$</p>
 <td>the two scales</td>
 </tr>
 <tr>
-<td>$\theta_\pm=\alpha\pm\beta$</td>
+<td>$\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$</td>
 <td>the two phase arguments</td>
 </tr>
 <tr>
