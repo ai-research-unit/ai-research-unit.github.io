@@ -81,7 +81,7 @@
 </ul>
 <p>The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c$ is carried and no display sets it to one: an energy is written $E_{\vec p}$, a phase is $p\cdot x/\hbar$ with $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$, and the mass enters as $m\,c$ beside a momentum and as $k_m=m\,c/\hbar$ beside an inverse length. Every derivative of the field is the corpus gradient $\tilde\nabla_\Phi$ with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.</p>
 <h2 id="the-operator-valued-field">The Operator-Valued Field</h2>
-<p>The classical field is an element-valued map $\tilde{Ξ}_{\mathrm{sp}}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators,</p>
+<p>The classical field is an element-valued map $\tilde{Ξ}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators,</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{fop}}:\mathbb{R}^{1,3}\longrightarrow \mathcal{A}\otimes\mathbb{B},
 $$</p>
@@ -89,10 +89,10 @@ $$</p>
 <p>The fields of the expansion are</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{+}^{(r)}(\vec p)\,\exp(-ip\cdot x/\hbar)
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{-}^{(r)}(\vec p)\,\exp(+ip\cdot x/\hbar)\Big],
 $$</p>
-<p>with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are</p>
+<p>with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, $x=(r'_t,\vec r)$ and $p\cdot x=\frac{E_{\vec p}}{c}r'_t-\vec p\cdot\vec r$. The amplitudes $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ are elements of $\mathbb{B}$: they are the two branches of the biquaternion plane wave of the solutions article, the two $+$ amplitudes solving the amplitude equation there at the positive root of $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ and the two $-$ amplitudes at the negative root, with $r=1,2$ counting the two solutions at each root. The mode anticommutators are</p>
 <p>$$
 \{a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},s}^{\dagger}(\vec q)\}
 =\{b_{\mathrm{fop},r}(\vec p),b_{\mathrm{fop},s}^{\dagger}(\vec q)\}
@@ -102,15 +102,15 @@ $$</p>
 <p><strong>The Hermitian conjugate and the Dirac adjoint.</strong> The dagger on the field carries every mode operator to its adjoint and the algebra factor through the star of the algebra,</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{fop}}^{\dagger}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}(\vec p)\,\exp(+ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}(\vec p)\,\exp(-ip\cdot x/\hbar)\Big],
+\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{+}^{(r)*}(\vec p)\,\exp(+ip\cdot x/\hbar)
++b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{-}^{(r)*}(\vec p)\,\exp(-ip\cdot x/\hbar)\Big],
 $$</p>
 <p>and the Dirac adjoint of the field is the Hermitian conjugate followed by right multiplication by $i\vec e_x$,</p>
 <p>$$
 \tilde{Ξ}_{\mathrm{fop}}^{\dagger}(x)\,i\vec e_x
 =\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}(\vec p)\,i\vec e_x\,\exp(+ip\cdot x/\hbar)
-+b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}(\vec p)\,i\vec e_x\,\exp(-ip\cdot x/\hbar)\Big].
+\sum_{r}\Big[a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde{Ξ}_{+}^{(r)*}(\vec p)\,i\vec e_x\,\exp(+ip\cdot x/\hbar)
++b_{\mathrm{fop},r}(\vec p)\,\tilde{Ξ}_{-}^{(r)*}(\vec p)\,i\vec e_x\,\exp(-ip\cdot x/\hbar)\Big].
 $$</p>
 <p>The factor $i\vec e_x$ is the timelike member of the frame, and it is what makes the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x\tilde{Ξ}_{\mathrm{fop}}\big)$ a Lorentz scalar. It is an element of the algebra and not a conjugation: the Dirac adjoint is an element product followed by the scalar part, and no conjugation by an element produces it.</p>
 <p><strong>How a bilinear is read.</strong> Throughout this article a bilinear of the field is the scalar part of a product of elements: an element standing on each side of the field, and the scalar part taken of the whole. The scalar part of $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}A\tilde{Ξ}_{\mathrm{fop}}B$ is a number for any two elements $A$ and $B$, and every observable below is a normal-ordered integral of such a scalar part. No other reading of the product is used.</p>
@@ -130,17 +130,17 @@ $$</p>
 <tr>
 <td>$\tilde{Ξ}_{\mathrm{fop}}$</td>
 <td>$a_{\mathrm{fop}}$, $b_{\mathrm{fop}}^{\dagger}$</td>
-<td>$\tilde{Ξ}_{\mathrm{sp},+}^{(r)}$, $\tilde{Ξ}_{\mathrm{sp},-}^{(r)}$</td>
+<td>$\tilde{Ξ}_{+}^{(r)}$, $\tilde{Ξ}_{-}^{(r)}$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$</td>
 <td>$a_{\mathrm{fop}}^{\dagger}$, $b_{\mathrm{fop}}$</td>
-<td>$\tilde{Ξ}_{\mathrm{sp},+}^{(r)*}$, $\tilde{Ξ}_{\mathrm{sp},-}^{(r)*}$</td>
+<td>$\tilde{Ξ}_{+}^{(r)*}$, $\tilde{Ξ}_{-}^{(r)*}$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}_{\mathrm{fop}}^*$</td>
 <td>$a_{\mathrm{fop}}$, $b_{\mathrm{fop}}^{\dagger}$</td>
-<td>$\overline{\tilde{Ξ}_{\mathrm{sp},+}^{(r)}}$, $\overline{\tilde{Ξ}_{\mathrm{sp},-}^{(r)}}$</td>
+<td>$\overline{\tilde{Ξ}_{+}^{(r)}}$, $\overline{\tilde{Ξ}_{-}^{(r)}}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -258,11 +258,11 @@ $$</p>
 <p>on account of the field equation. The operator statement is inherited from the classical identity term by term, since each term of the normal-ordered bilinear is a $c$-number coefficient times a mode-operator monomial and the divergence acts on the coefficient only.</p>
 <p>The check below is made on the classical bilinear, which is the $c$-number coefficient the operator statement descends from. Taking an element-valued field</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp}}(x)=c_1\tilde{Ξ}_{\mathrm{sp},+}^{(1)}(\vec p_1)\exp(-ip_1\cdot x)+c_2\tilde{Ξ}_{\mathrm{sp},+}^{(2)}(\vec p_1)\exp(-ip_1\cdot x)
-+d_1\tilde{Ξ}_{\mathrm{sp},-}^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
+\tilde{Ξ}(x)=c_1\tilde{Ξ}_{+}^{(1)}(\vec p_1)\exp(-ip_1\cdot x)+c_2\tilde{Ξ}_{+}^{(2)}(\vec p_1)\exp(-ip_1\cdot x)
++d_1\tilde{Ξ}_{-}^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
 $$</p>
 <p>with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$ and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $5.3\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.2\times10^{-10}$; a single plane wave gives $1.2\times10^{-11}$, the same error floor. A single plane wave tests only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.</p>
-<p>In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is <em>not</em> conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.</p>
+<p>In biquaternion terms the current is an element product read through the scalar part, and what keeps it conserved is the fixed frame element it carries. The minimal-coupling companion shows that the naive element-valued bilinear $i\tilde{Ξ}\tilde{Ξ}^*$ is gauge invariant and in $\mathbb{B}_{\Phi}$ but is <em>not</em> conserved — its divergence does not vanish — and that the physical current needs the fixed right factor that the collapse above leaves, $\vec e_z$. The quantized current inherits that: its conservation is the operator statement $\langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural}=0$ displayed above.</p>
 <h3 id="spin">Spin</h3>
 <p>The spin operator is the spatial integral of the bilinear with the informational-sector element multiplying the field from the left,</p>
 <p>$$
@@ -323,7 +323,7 @@ $$</p>
 <h2 id="companion-articles">Companion Articles</h2>
 <ul>
 <li>Companion article <em>Canonical Quantization of the Biquaternion Dirac Field</em>, for the mode expansion, the anticommutation relations and the normal-ordered observables whose quantization this article continues.</li>
-<li>Companion article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>, for the biquaternion plane waves $\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$ and the spin sums.</li>
+<li>Companion article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>, for the biquaternion plane waves $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ and the spin sums.</li>
 <li>Companion article <em>The Spin–Statistics Theorem in Biquaternionic Form</em>, for the spin–statistics connection and the $2\pi$ sign that the grading and the anticommutator share.</li>
 <li>Companion article <em>The Feynman Propagator in Biquaternionic Form</em>, for the momentum-space two-point function and the deformation of the mass shell.</li>
 <li>Companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, for the gauge-invariant current and the fixed units its bilinear carries.</li>
@@ -393,7 +393,7 @@ $$</p>
 <td>Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=p^2$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$</td>
 <td>Massive biquaternion Dirac equation (linear chiral pair)</td>
 </tr>
 <tr>
@@ -409,7 +409,7 @@ $$</p>
 <td>Hermitian conjugate of the field; Dirac adjoint</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}_{\mathrm{sp},\pm}^{(r)}(\vec p)$</td>
+<td>$\tilde{Ξ}_{\pm}^{(r)}(\vec p)$</td>
 <td>The two branches of the biquaternion plane wave (solutions article)</td>
 </tr>
 <tr>

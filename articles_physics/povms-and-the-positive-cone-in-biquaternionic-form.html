@@ -204,13 +204,13 @@ P_{\mathrm{succ}} = \frac{1}{3}\sum_{\eta=1}^{3}2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,
 $$</p>
 <p>since $\tilde{Ϛ}_{\Psi,\eta}^2 = \tilde{Ϛ}_{\Psi,\eta}$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\eta}) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.</p>
 <h3 id="unambiguous-discrimination">Unambiguous discrimination</h3>
-<p>Let two non-orthogonal pure states have overlap $c = |\langle\tilde{Ξ}_{\mathrm{sp},0}|\tilde{Ξ}_{\mathrm{sp},1}\rangle|\in(0,1)$. A <strong>projective</strong> measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:</p>
+<p>Let two non-orthogonal pure states have overlap $c = |\langle\tilde{Ξ}_{0}|\tilde{Ξ}_{1}\rangle|\in(0,1)$. A <strong>projective</strong> measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:</p>
 <p>$$
-\tilde{E}_{\Psi}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{\mathrm{sp},1}^{\perp}\bigr), \qquad
-\tilde{E}_{\Psi}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{\mathrm{sp},0}^{\perp}\bigr), \qquad
+\tilde{E}_{\Psi}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{1}^{\perp}\bigr), \qquad
+\tilde{E}_{\Psi}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{0}^{\perp}\bigr), \qquad
 \tilde{E}_{\Psi}_? = e_t-\tilde{E}_{\Psi}_0-\tilde{E}_{\Psi}_1 ,
 $$</p>
-<p>where $\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}}^{\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}_{\mathrm{sp}}\rangle$. The effect $\tilde{E}_{\Psi}_0$ annihilates $|\tilde{Ξ}_{\mathrm{sp},1}\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}_{\mathrm{sp},0}\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_{\Psi}_0+\tilde{E}_{\Psi}_1$ is $1$ at this normalization, and the success probability for equal priors is</p>
+<p>where $\tilde\Pi(\tilde{Ξ}^{\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}\rangle$. The effect $\tilde{E}_{\Psi}_0$ annihilates $|\tilde{Ξ}_{1}\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}_{0}\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_{\Psi}_0+\tilde{E}_{\Psi}_1$ is $1$ at this normalization, and the success probability for equal priors is</p>
 <p>$$
 P_{\mathrm{succ}} = \mathrm{Sc}(\tilde{Ϛ}_{\Psi,0}\tilde{E}_{\Psi}_0^{*}) + \mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\tilde{E}_{\Psi}_1^{*})
 = \tfrac12(1-c)+\tfrac12(1-c) = 1-c ,

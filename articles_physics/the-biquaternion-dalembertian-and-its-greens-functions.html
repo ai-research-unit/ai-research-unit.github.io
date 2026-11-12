@@ -150,9 +150,9 @@ $$
 The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k_\Phi^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k_\Phi^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to k_m^{2}$ is the shifted cone. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -i\partial/\partial r'_t$, the operator above is $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$
-\left(\Box - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
+\left(\Box - k_m^{2}\right)\tilde{Ξ} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companion article <em>Exercise: Chirality and the Weyl Spinors</em> carries $\hbar$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.</p>
+whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companion article <em>Exercise: Chirality and the Weyl Spinors</em> carries $\hbar$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-k_m^{2})\tilde{Ξ} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.</p>
 <h3 id="self-adjointness">Self-adjointness</h3>
 <p>The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
@@ -378,11 +378,11 @@ $$
 The cross terms cancel for the same reason as before — $[\,\partial/\partial\tau + f,\, i\nabla + F\,] = 0$ for a coefficient independent of $\tau$ — and the square acquires a <strong>first-order directional derivative</strong> $2i(F,\nabla)$ along the vector part of the coefficient, which no central shift can produce. The term has the shape of the KGFSh operator's first-order piece with the single number $\kappa$ replaced by a vector the operator differentiates along: the scalar part $f$ enters as a mass and the vector part $F$ enters as a direction, and the two are not interchangeable. The two identities and both candidate signs for the $2i(F,\nabla)$ term were checked on random fields: residual $2.5\times10^{-10}$ for the two identities and $3.6\times10^{-11}$ for their equality, against $7.5\times10^{-1}$ for the opposite sign.</p>
 <p><strong>The weighted kernel, and a sign to pair correctly.</strong> The fundamental solution of the scalar equation to which the square reduces is carried by the light cone with an exponential weight,
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\,\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| ,
+\tilde{Ξ} = \frac{1}{4\pi r}\,\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| ,
 $$
 as the paper prints it; on a plane wave the symbol becomes a shifted four-momentum and the transform of the kernel is its reciprocal. The exponent's <strong>sign must match the sign of the $(F,\nabla)$ coefficient</strong>, and this is the one place where the paper is not self-consistent. Substituting $\exp(\lambda(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - f\tau)\xi$ into the operator leaves the residual $\bigl(\mu - 2\lambda\bigr)(F,\nabla\xi) + \bigl(1 + \lambda^2 - \mu\lambda\bigr)(F,F)\xi$; it vanishes for $\mu = 2\lambda$ with $\lambda = \pm i$ and for no other pairing. The coefficient and the exponent therefore carry the <strong>same</strong> sign: the coefficient $\mu = +2i(F,\nabla)$ is paired with
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\,\exp(+i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad
+\tilde{Ξ} = \frac{1}{4\pi r}\,\exp(+i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad
 \text{symbol} \quad (\zeta - F)^2 - (\omega + if)^2 ,
 $$
 and $\mu = -2i(F,\nabla)$ with the mirror in which every sign of $F$ is reversed. The printed $\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $(\zeta + F)^2 - (\omega + if)^2$ is that mirror; what the paper does not do is print it with the coefficient it uses. Its scalar equation, its KGFS equation and its theorem all carry the coefficient $+2i(F,\nabla)$ — its own derivation of the composition gives $+2i$ where its statement of the same lemma gives $-2i$ — while its kernel, its Fourier transform and the integral representations of its last three sections carry the opposite exponent. The two groups are therefore consistent only after $F \to -F$ in one of them, and the corpus records the pairing above, together with the discrepancy, rather than one of the printed halves.</p>
@@ -517,7 +517,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 <td>Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box_\Phi$</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\exp(\pm i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\delta(\tau-r)$</td>
+<td>$\tilde{Ξ} = \frac{1}{4\pi r}\exp(\pm i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\delta(\tau-r)$</td>
 <td>Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient</td>
 </tr>
 <tr>

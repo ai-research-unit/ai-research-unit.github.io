@@ -108,13 +108,13 @@ $$</p>
 <h3 id="the-equation">The equation</h3>
 <p>The free biquaternion Schrödinger equation is</p>
 <p>$$
-\boxed{\;i\,\hbar\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = H \tilde{Ξ}_{\mathrm{sp}},
+\boxed{\;i\,\hbar\partial/\partial r'_t \tilde{Ξ} = H \tilde{Ξ},
 \qquad
 H =\frac{p^{2}}{2\,m}\,e_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi  e_t\;},
 $$</p>
 <p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
-<p>with $\tilde{Ξ}_{\mathrm{sp}}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi$, the equation reads</p>
-<p>$$i\,\hbar\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp}} = h_t e_t \tilde{Ξ}_{\mathrm{sp}} = h_t \tilde{Ξ}_{\mathrm{sp}},
+<p>with $\tilde{Ξ}$ a field on space taking values in the state module $\mathbb{B}\tilde\Pi$. The Hamiltonian is central. Writing $H = h_t e_t$ with $h_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi$, the equation reads</p>
+<p>$$i\,\hbar\partial/\partial r'_t \tilde{Ξ} = h_t e_t \tilde{Ξ} = h_t \tilde{Ξ},
 $$</p>
 <p>and because $e_t$ acts as the identity on every module, the biquaternion equation is componentwise the ordinary scalar Schrödinger equation. Under the isomorphism $\mathsf{M}_2$, the Hamiltonian is $\mathsf{M}_2(H) = h_t I_2$. The generator of the free evolution,</p>
 <p>$$
@@ -125,14 +125,14 @@ $$</p>
 <h3 id="the-central-phase-and-the-spinor-factor">The central phase and the spinor factor</h3>
 <p>Take the plane-wave ansatz</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c)),
+\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c)),
 \qquad
 \xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k_\Phi \in \mathbb{R}^3,
 $$</p>
 <p>so that $\vec k_\Phi = k_{\Phi x} \vec e_x + k_{\Phi y} \vec e_y + k_{\Phi z} \vec e_z$ is a real quaternion. The exponential is a central element of $\mathbb{B}$, because its exponent is a purely imaginary scalar. Substitution gives</p>
-<p>$$i\,\hbar\,c\partial/\partial r'_t \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\hbar\,\omega\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi},
+<p>$$i\,\hbar\,c\partial/\partial r'_t \tilde{Ξ}_{\vec k_\Phi} =\hbar\,\omega\,\tilde{Ξ}_{\vec k_\Phi},
 \qquad
-H \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\frac{\hbar^{2}\,k_\Phi^{2}}{2\,m}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi},
+H \tilde{Ξ}_{\vec k_\Phi} =\frac{\hbar^{2}\,k_\Phi^{2}}{2\,m}\,\tilde{Ξ}_{\vec k_\Phi},
 $$</p>
 <p>so the equation is satisfied for every constant $\xi$ provided</p>
 <p>$$
@@ -143,15 +143,15 @@ $$</p>
 <p>Two features of the solution are the whole content of the plane-wave section. First, the <strong>energy does not depend on $\xi$</strong>: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.</p>
 <p>The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_\eta \exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) =\hbar\,k_\Phi\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$,</p>
 <p>$$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \sum_\eta  \vec e_\eta p_\eta \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
-=\hbar\sum_\eta  k_{\Phi\eta} \vec e_\eta\, \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}
-=\hbar\,\vec k_\Phi\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi},
+\tilde p\,\tilde{Ξ}_{\vec k_\Phi} = \sum_\eta  \vec e_\eta p_\eta \tilde{Ξ}_{\vec k_\Phi}
+=\hbar\sum_\eta  k_{\Phi\eta} \vec e_\eta\, \tilde{Ξ}_{\vec k_\Phi}
+=\hbar\,\vec k_\Phi\,\tilde{Ξ}_{\vec k_\Phi},
 $$</p>
 <p>and therefore</p>
 <p>$$
-\tilde p^{\,2}\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\hbar^{2}\,\vec k_\Phi^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}= -\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi},
+\tilde p^{\,2}\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,\vec k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}= -\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi},
 \qquad
-\tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} =\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}.
+\tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}.
 $$</p>
 <p>The operator $\hbar\,\vec k_\Phi$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the <strong>imaginary unit in it is the canonical central one</strong>, not a chosen complex structure.</p>
 <h3 id="dispersion-and-the-location-of-the-wave-vector">Dispersion and the location of the wave vector</h3>
@@ -176,62 +176,62 @@ $$</p>
 <h3 id="normalisation">Normalisation</h3>
 <p>On a box of side $L$ with periodic boundary conditions, the normalised plane waves are</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\,\xi,
+\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{L^3}}\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))\,\xi,
 \qquad
 \mathrm{Tr}(\xi^\dagger\xi) = 1,
 $$</p>
 <p>and the density integrated over the box is one,</p>
 <p>$$
-\int_{L^3} d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}\right) = 1 .
+\int_{L^3} d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\vec k_\Phi}\right) = 1 .
 $$</p>
 <p>In the continuum, with the normalisation factor $(2\pi)^{-3/2}$,</p>
 <p>$$
-\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\mathrm{sp},\vec k_2}\right) = (2\pi\hbar)^3 \delta^{(3)}(\vec k_\Phi - \vec k_2).
+\int d^3r\;\mathrm{Tr}\!\left(\tilde{Ξ}_{\vec k_\Phi}^{\dagger} \tilde{Ξ}_{\vec k_2}\right) = (2\pi\hbar)^3 \delta^{(3)}(\vec k_\Phi - \vec k_2).
 $$</p>
 <p>Two norms must be kept apart here. The <strong>probability density</strong> of a spinor field is</p>
 <p>$$
-\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}),
+\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ}),
 $$</p>
-<p>which is real and positive definite, and which equals $2\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ by the trace convention. The <strong>biquaternion norm</strong> $\langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\natural}$ is a different object. For a spinor in a left ideal it vanishes identically, because a state-module element is a zero divisor of $\mathbb{B}$:</p>
+<p>which is real and positive definite, and which equals $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ by the trace convention. The <strong>biquaternion norm</strong> $\langle \tilde{Ξ}\rangle_{\natural} = \tilde{Ξ}\tilde{Ξ}^{\natural}$ is a different object. For a spinor in a left ideal it vanishes identically, because a state-module element is a zero divisor of $\mathbb{B}$:</p>
 <p>$$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}\tilde\Pi,\ \tilde{Ξ}_{\mathrm{sp}} \neq 0
+\boxed{\;\tilde{Ξ} \in \mathbb{B}\tilde\Pi,\ \tilde{Ξ} \neq 0
 \qquad\Longrightarrow\qquad
-\langle \tilde{Ξ}_{\mathrm{sp}}\rangle_{\natural} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\natural} = 0\;}.
+\langle \tilde{Ξ}\rangle_{\natural} = \tilde{Ξ}\tilde{Ξ}^{\natural} = 0\;}.
 $$</p>
 <p>The zero divisor cone therefore carries the states, while the positive trace form carries the probabilities. This distinction is not a defect of the states; it is the algebraic statement that the algebra is not a division algebra, and it is the structural reason that probabilities are read from the normalised Hermitian form, read through the trace rather than from the biquaternion norm.</p>
 <h2 id="wave-packets">Wave Packets</h2>
 <h3 id="superposition-and-the-frozen-module-factor">Superposition and the frozen module factor</h3>
 <p>The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
 \qquad
-\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi) \in \mathbb{B}\tilde\Pi .
+\tilde{Ξ}_{0}(\vec k_\Phi) \in \mathbb{B}\tilde\Pi .
 $$</p>
-<p>The amplitudes $\tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)$ may depend on $\vec k_\Phi$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:</p>
+<p>The amplitudes $\tilde{Ξ}_{0}(\vec k_\Phi)$ may depend on $\vec k_\Phi$ and may be general module elements, so in principle the spinor orientation could vary with momentum. The free evolution does not act on that orientation:</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp}}(\vec k_\Phi, r'_t) = \tilde{Ξ}_{\mathrm{sp},0}(\vec k_\Phi)\,\exp(-i\omega(\vec k_\Phi)r'_t/c),
+\tilde{Ξ}(\vec k_\Phi, r'_t) = \tilde{Ξ}_{0}(\vec k_\Phi)\,\exp(-i\omega(\vec k_\Phi)r'_t/c),
 $$</p>
-<p>because the phase is central and commutes with the module element. In particular, if the initial condition factorises as $\tilde{Ξ}_{\mathrm{sp}}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a fixed constant spinor, then</p>
+<p>because the phase is central and commutes with the module element. In particular, if the initial condition factorises as $\tilde{Ξ}(0,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ_0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\xi$ with $\xi$ a fixed constant spinor, then</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\xi
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = Ξ(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\xi
 $$</p>
-<p>for all times, where $Ξ$ solves the <strong>scalar</strong> free Schrödinger equation. The module factor is frozen: the free particle carries its spinor orientation unchanged, and the two components of $\tilde{Ξ}_{\mathrm{sp}}$ satisfy identical scalar equations. This is the precise sense in which the free problem is spin-0 scalar mechanics in this framework.</p>
+<p>for all times, where $Ξ$ solves the <strong>scalar</strong> free Schrödinger equation. The module factor is frozen: the free particle carries its spinor orientation unchanged, and the two components of $\tilde{Ξ}$ satisfy identical scalar equations. This is the precise sense in which the free problem is spin-0 scalar mechanics in this framework.</p>
 <h3 id="the-continuity-equation-and-the-current">The continuity equation and the current</h3>
-<p>The probability current is obtained from the equation and its adjoint. Since $H$ is Hermitian and central, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$ obeys $i\,\hbar\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger} = -\tilde{Ξ}_{\mathrm{sp}}^{\dagger} H$, and combining the two equations gives</p>
+<p>The probability current is obtained from the equation and its adjoint. Since $H$ is Hermitian and central, $\tilde{Ξ}^{\dagger}$ obeys $i\,\hbar\partial/\partial r'_t\,\tilde{Ξ}^{\dagger} = -\tilde{Ξ}^{\dagger} H$, and combining the two equations gives</p>
 <p>$$
-\partial/\partial r'_t\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\right)
-=\frac{1}{i\,\hbar}\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger} H\tilde{Ξ}_{\mathrm{sp}} - (H\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}}\right)
-=\frac{\hbar}{2\,i\,m}\sum_\eta\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \partial^2/\partial R_\eta^2\,\tilde{Ξ}_{\mathrm{sp}} - (\partial^2/\partial R_\eta^2\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}}\right).
+\partial/\partial r'_t\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right)
+=\frac{1}{i\,\hbar}\left(\tilde{Ξ}^{\dagger} H\tilde{Ξ} - (H\tilde{Ξ})^\dagger\tilde{Ξ}\right)
+=\frac{\hbar}{2\,i\,m}\sum_\eta\left(\tilde{Ξ}^{\dagger} \partial^2/\partial R_\eta^2\,\tilde{Ξ} - (\partial^2/\partial R_\eta^2\,\tilde{Ξ})^\dagger\tilde{Ξ}\right).
 $$</p>
 <p>Each term is a divergence. Defining the <strong>current vector</strong></p>
 <p>$$
-J_\eta =\frac{\hbar}{2\,i\,m}\,\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger} \partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}}\right),
+J_\eta =\frac{\hbar}{2\,i\,m}\,\mathrm{Tr}\!\left(\tilde{Ξ}^{\dagger} \partial/\partial R_\eta\,\tilde{Ξ} - (\partial/\partial R_\eta\,\tilde{Ξ})^\dagger\tilde{Ξ}\right),
 $$</p>
 <p>one obtains the continuity equation</p>
 <p>$$
 \partial/\partial r'_t\,\rho + \vec\nabla_\Phi\cdot\vec J = 0,
 \qquad
-\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}).
+\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ}).
 $$</p>
 <p>For a plane wave of momentum $\hbar\,\vec k_\Phi$ the current is $\vec J =\frac{\hbar\,\rho\,\vec k_\Phi}{m}= \rho\,\vec v_g$, as it must be. For a general packet, $\vec J = \rho\,\vec v_g$ holds only where the packet is locally monochromatic, which is the usual situation for a broad packet.</p>
 <p>The current is a <strong>material-sector</strong> object in the following sense: it is built from the plain form of the spinor with its gradient, read as the trace pairing, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{B}_{\Phi}$; the density is the trace of a Hermitian element of $\mathbb{B}_{\Psi}$. The continuity equation thus pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current, exactly as the sector assignment of the framework requires.</p>
@@ -263,7 +263,7 @@ $$</p>
 <p>$$
 \tau = \dfrac{2s_0^2\,k_m}{c}
 $$</p>
-<p>is the spreading time. The biquaternion form of the packet is $\tilde{Ξ}_{\mathrm{sp}} = Ξ\,\xi$: the scalar envelope $Ξ$ carries all of the dynamics, and the module factor $\xi$ is a constant.</p>
+<p>is the spreading time. The biquaternion form of the packet is $\tilde{Ξ} = Ξ\,\xi$: the scalar envelope $Ξ$ carries all of the dynamics, and the module factor $\xi$ is a constant.</p>
 <p>The closed forms above were checked numerically. Using the density-width normalisation, with every wave number quoted in units of $k_m$ (so that $k_m=1$), every length in units of $1/k_m$, and $s_0 = 0.5$, the analytic density agrees with the Gaussian $|Ξ(r_x,r'_t)|^2$ to a relative error below $6\times 10^{-16}$ at $r'_t = 0, 1.4, 2.7$, and the variance computed by direct quadrature of $|Ξ(r_x,r'_t)|^2$ equals $s(r'_t)^2$ to six decimal places at each time, with the mean equal to $v_0 r'_t$. The analytic envelope itself was checked against a direct momentum-space quadrature of $Ξ(r_x,r'_t) = \int  \frac{dk_\Phi}{2\pi}\tilde{Ξ}_0(k_\Phi)\exp(ik_\Phi x -\frac{i\,k_\Phi^{2}\,r'_{t}}{2\,k_m})$, evaluated on a rotated contour, with agreement at the $10^{-13}$ level on three sampled points. In every case the quantity checked is a superposition — a packet is a superposition of plane waves — and never a single plane wave.</p>
 <h3 id="stationary-phase-and-the-classical-trajectory">Stationary phase and the classical trajectory</h3>
 <p>The packet integral is dominated, for large $r'_t$ or small $\hbar$, by the stationary points of its phase. Writing the exponent for the free case,</p>
@@ -305,7 +305,7 @@ $$</p>
 <p>which gives $A + B =\frac{i\,m}{2\,\hbar}\frac{T_1+T_2}{T_1T_2}$ and $\frac{AB}{A+B} =\frac{i\,m}{2\,\hbar\,(T_1+T_2)}$, reproducing the kernel of the longer flight including its prefactor. The composition was verified numerically on a <strong>superposition of two Gaussian packets</strong>, in one dimension, by evaluating the convolution with the free kernel against the exact evolution of the superposition; for $(T_1,T_2) = (0.4,0.7)$, $(1.1,0.6)$, $(0.15,0.35)$ the relative error was $4.6\times10^{-15}$, $2.1\times10^{-14}$, and $4.1\times10^{-15}$ respectively, at sample points away from the origin. The quadrature was performed on the rotated contour $y = \exp(i\pi/4)s$, which makes the quadratic phases decay.</p>
 <p>Because the kernel is central, it commutes with every biquaternion. The evolution of an arbitrary initial spinor field is therefore</p>
 <p>$$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3r_0\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0,r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z),
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int d^3r_0\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z), r'_t)\,\tilde{Ξ}(0,r_{0x}\,\vec e_x+r_{0y}\,\vec e_y+r_{0z}\,\vec e_z),
 $$</p>
 <p>in which the kernel acts on the body of the field and multiplies the module factor by a scalar. The module orientation of the initial condition is propagated unchanged.</p>
 <h3 id="the-free-evolution-operator-as-a-central-math163-unitary">The free evolution operator as a central $*$-unitary</h3>
@@ -317,13 +317,13 @@ $$</p>
 <p>$$
 \tilde U\tilde U^{*} = e_t .
 $$</p>
-<p>It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm{lor}}$ satisfies $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-\frac{i\,E\,r'_{t}}{\hbar})$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the $*$-unitary group and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ and preserves the sector assignment of a field that begins in $\mathbb{B}_{\Psi}$.</p>
+<p>It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm{lor}}$ satisfies $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-\frac{i\,E\,r'_{t}}{\hbar})$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the $*$-unitary group and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ and preserves the sector assignment of a field that begins in $\mathbb{B}_{\Psi}$.</p>
 <h2 id="the-module-factor-and-the-meaning-of-a-spin-0-field">The Module Factor and the Meaning of a Spin-0 Field</h2>
 <p>The free problem displays the subcategory's central convention most clearly, so it is worth stating in full.</p>
 <p>The framework's state module $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ is the algebra's generic two-state module. The free Hamiltonian is central, so the free dynamics acts on it as the identity; the two components are exactly degenerate and no relative phase accumulates. For a spin-0 problem the module factor can therefore be fixed once and for all, and the physical content is carried by the scalar envelope. The vector-slot elements $\tilde S_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, which the companion articles on angular momentum and on the hydrogen atom use as the algebra's spin operators, are conserved by the free evolution and generate no motion; a spin orientation, if one is attached to the module, is a spectator of the free dynamics. The genuinely spinorial effects — precession in a magnetic field, Stern–Gerlach splitting, resonance — require a Hamiltonian that is <strong>not</strong> central, and they belong to the sibling spin subcategories, not here.</p>
 <p>Two further structural points belong to this section.</p>
-<p><strong>The position is not an algebraic observable.</strong> The field $\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a function on the material sector's configuration space; $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ labels points of that space. There is no pair $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2} \in \mathbb{B}_{\Psi}$ whose commutator is $i\,\hbar\,e_{t}$: the companion article on the harmonic oscillator shows that the equation $[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] =i\,\hbar\,e_{t}$ has no solution for Hermitian $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ in the finite-dimensional algebra. The position-space description is thus an extension of the framework — the algebra supplies the fiber and the phase, and the configuration space supplies the base. This is the same status that the position has in the hydrogen article, and the same gap that the path-integral article records for the space of paths.</p>
-<p><strong>The module is not the spin.</strong> The two components of $\tilde{Ξ}_{\mathrm{sp}}$ are a kinematic doubling of the scalar amplitude. A spin-0 particle has one amplitude; the framework's module has two components because the algebra acts on a two-dimensional space. The reduction from the module to a single scalar is effected by fixing a constant spinor $\xi$, and the free dynamics does not distinguish the resulting one-component descriptions. This is why the free problem, and every problem with a central Hamiltonian treated in this subcategory, has a scalar read-off: the module is present but idle.</p>
+<p><strong>The position is not an algebraic observable.</strong> The field $\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is a function on the material sector's configuration space; $r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ labels points of that space. There is no pair $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2} \in \mathbb{B}_{\Psi}$ whose commutator is $i\,\hbar\,e_{t}$: the companion article on the harmonic oscillator shows that the equation $[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] =i\,\hbar\,e_{t}$ has no solution for Hermitian $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ in the finite-dimensional algebra. The position-space description is thus an extension of the framework — the algebra supplies the fiber and the phase, and the configuration space supplies the base. This is the same status that the position has in the hydrogen article, and the same gap that the path-integral article records for the space of paths.</p>
+<p><strong>The module is not the spin.</strong> The two components of $\tilde{Ξ}$ are a kinematic doubling of the scalar amplitude. A spin-0 particle has one amplitude; the framework's module has two components because the algebra acts on a two-dimensional space. The reduction from the module to a single scalar is effected by fixing a constant spinor $\xi$, and the free dynamics does not distinguish the resulting one-component descriptions. This is why the free problem, and every problem with a central Hamiltonian treated in this subcategory, has a scalar read-off: the module is present but idle.</p>
 <h2 id="what-the-biquaternion-form-adds">What the Biquaternion Form Adds</h2>
 <p><strong>Standard quantum physics, transcribed.</strong> The dispersion relation, the phase and group velocities, the plane-wave normalisation, the continuity equation, the Gaussian packet, its spreading time, the free propagator, its Fresnel evaluation, and its composition law are all standard. None of them is new here, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.</p>
 <p><strong>What the biquaternion notation provides.</strong></p>
@@ -332,7 +332,7 @@ $$</p>
 <li><strong>The kinetic term as a biquaternion norm.</strong> $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.</li>
 <li><strong>A canonical complex structure.</strong> The phase $\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.</li>
 <li><strong>A material-sector location for the dispersion.</strong> The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ is an element of $\mathbb{B}_{\Phi}$, and its biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1 -\frac{k_\Phi^{2}}{4\,k_m^{2}})$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.</li>
-<li><strong>The probability from the trace, not from the biquaternion norm.</strong> The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.</li>
+<li><strong>The probability from the trace, not from the biquaternion norm.</strong> The positivity of $\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ is a property of the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.</li>
 </ul>
 <p><strong>What remains open.</strong></p>
 <ul>
@@ -347,14 +347,14 @@ $$</p>
 <p><strong>3. Does the free particle define a distinguished cone in configuration space?</strong> The packet spreads and its support grows; whether the framework singles out a characteristic cone for the non-relativistic equation, as the material sector does for the wave equation, is not addressed here.</p>
 <p><strong>4. Empirical content.</strong> As elsewhere in the framework, whether the free-particle reformulation yields any prediction distinguishing it from scalar Schrödinger mechanics is open. Nothing in this article changes that.</p>
 <h2 id="summary">Summary</h2>
-<p>The free biquaternion Schrödinger equation is $i\,\hbar\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}} = H\tilde{Ξ}_{\mathrm{sp}}$ with</p>
+<p>The free biquaternion Schrödinger equation is $i\,\hbar\partial/\partial r'_t\,\tilde{Ξ} = H\tilde{Ξ}$ with</p>
 <p>$$
 H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\frac{\tilde{p}^{2}}{2\,m} \in  \mathbb{R}e_t \subset  \mathbb{B}_{\Psi},
 \qquad
 \tilde p = -i\,\hbar\vec\nabla_\Phi,
 $$</p>
-<p>and the kinetic energy is the <strong>biquaternion norm of the momentum</strong>. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ have the dispersion $\omega =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{i\,H}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.</p>
-<p>The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \vec\nabla_\Phi\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.</p>
+<p>and the kinetic energy is the <strong>biquaternion norm of the momentum</strong>. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$ have the dispersion $\omega =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ for every constant module element $\xi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-\frac{i\,H}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$.</p>
+<p>The wave four-vector $\tilde K_{\Phi} = i\omega/c\,e_t + \vec k_\Phi$ has biquaternion norm $\langle\tilde K_{\Phi}\rangle_{\natural}  = k_\Phi^2(1-\frac{k_\Phi^{2}}{4\,k_m^{2}})$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised Hermitian form, read through the trace, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial r'_t\,\rho + \vec\nabla_\Phi\cdot\vec J = 0$ holds with $J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ} - (\partial/\partial R_\eta\,\tilde{Ξ})^\dagger\tilde{Ξ})$, pairing an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current.</p>
 <p>A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$ whose centre moves at the group velocity $\frac{\hbar\,k_{0}}{m}$, with spreading time $\tau = 2s_0^2/(c/k_m)$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel</p>
 <p>$$
 G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)
@@ -418,7 +418,7 @@ $$</p>
 <td>Kinetic energy as a biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}_{\mathrm{sp},\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$</td>
+<td>$\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$</td>
 <td>Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant</td>
 </tr>
 <tr>
@@ -438,11 +438,11 @@ $$</p>
 <td>Biquaternion norm of the wave four-vector; spacelike</td>
 </tr>
 <tr>
-<td>$\rho = \mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$</td>
+<td>$\rho = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$</td>
 <td>Probability density, from the trace reading of the Hermitian form</td>
 </tr>
 <tr>
-<td>$J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}} - (\partial/\partial R_\eta\,\tilde{Ξ}_{\mathrm{sp}})^\dagger\tilde{Ξ}_{\mathrm{sp}})$</td>
+<td>$J_\eta =\frac{\hbar}{2\,i\,m}\mathrm{Tr}(\tilde{Ξ}^{\dagger}\partial/\partial R_\eta\,\tilde{Ξ} - (\partial/\partial R_\eta\,\tilde{Ξ})^\dagger\tilde{Ξ})$</td>
 <td>Probability current</td>
 </tr>
 <tr>

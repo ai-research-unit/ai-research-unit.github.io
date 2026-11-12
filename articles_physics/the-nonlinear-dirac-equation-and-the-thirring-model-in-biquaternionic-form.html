@@ -71,49 +71,49 @@
         <h1 id="the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form"><strong>The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A <strong>nonlinear Dirac equation</strong> is a Dirac equation with a self-interaction term. The free equation is linear in the field, so that solutions superpose; a term built from the field itself destroys that superposability and makes the equation describe a fermion that acts on itself. The best-motivated case is geometric. In the <strong>Einstein–Cartan–Sciama–Kibble</strong> extension of general relativity, the spin of matter is the source of the antisymmetric part of the connection, the torsion; that torsion couples to the axial current of the field, and when it is eliminated from the field equations it leaves an effective <strong>axial-axial spin–spin self-interaction</strong> that is cubic in the field. The resulting equation is the standard example of a nonlinearly self-interacting Dirac field, and it is a toy model for the idea that the self-interaction of the fermion regulates its own short-distance behaviour.</p>
-<p>The field of this article is an element $\tilde{Ξ}_{\mathrm{sp}}$ of the biquaternion algebra $\mathbb{B}$. Its two parts are the two components that the subscripts name, $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$; the mass is the central coefficient that couples them, and every interaction below is read on these two parts.</p>
+<p>The field of this article is an element $\tilde{Ξ}$ of the biquaternion algebra $\mathbb{B}$. Its two parts are the two components that the subscripts name, $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$; the mass is the central coefficient that couples them, and every interaction below is read on these two parts.</p>
 <p>Two models dominate the literature, and they fill the two channels other than the axial one. The <strong>Thirring model</strong> (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, contracted with the metric, $-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu$; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The <strong>Soler model</strong> (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\frac{g}{2}S_{\mathrm d}^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.</p>
 <p>Here $S_{\mathrm d}$ and $V_\mu$ are the two scalar parts
-$$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr),
+$$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr),
 \qquad
-V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\bigr),$$
+V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})\vec e_x\bigr),$$
 with $\nu(t)=x$ and $\nu(\eta)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.</p>
 <p>This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the bilinears they use, and gives the biquaternion interpretation. Its contribution is a <strong>placement of the channels</strong>. The scalar density $S_{\mathrm d}$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. The vector current $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. The axial current $A_\mu$ is the channel the linear mass breaks, so an axial-axial self-interaction is a coupling conjugate to the mass. A quartic interaction is also <strong>bosonic</strong>: it is even in the field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.</p>
 <p>What the framework does <strong>not</strong> supply is equally definite. A bilinear here is a <em>pairing</em>, the scalar part of a product that carries the fixed element $i\vec e_x$; it is not a product of two elements of $\mathbb{B}$ alone. The free equation of the framework is a left multiplication by the gradient together with a mass that relates the two parts, and it contains no such fixed element. The framework names the channels and places them in its sectors; it does not derive the self-interaction from a product in the algebra, and it adds no solution, coupling or prediction of its own.</p>
 <p>The article is organised as follows. The next section fixes the field, the pairing and the two writings of the free equation. A section then explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section writes the Hehl–Datta equation and fixes its coefficient. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A section records the two-dimensional relations verified here in exact arithmetic. A later section states the same objects in the matrix notation of the sources, so that the two can be compared term by term. The closing sections are the open questions, the summary, the notation table and the literature.</p>
 <h2 id="the-field-the-pairing-and-the-two-equations">The Field, the Pairing and the Two Equations</h2>
 <p>The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla_\Phi$, read on the material chart $x_t=r'_t$ and $x_\eta=r_\eta$, the d'Alembertian $\Box$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a <strong>pairing</strong> and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
-$$\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr),$$
+$$\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr),$$
 where $X$ is the element the bilinear reads. The fixed element $i\vec e_x$ is the only datum the pairing adds to the field, and it is the same one for every bilinear below. The <strong>slot action</strong> of the index $\mu$ is the action
 $$\tilde Q\longmapsto ie_\mu\tilde Q\vec e_{\nu(\mu)},$$
 in the element language; it is the derived form of the corresponding frame basis operator and it is the object every bilinear below is built from. The second line is a derived form again: the sources write the Dirac adjoint as an operator, and the scalar part written here is the same object with the operator spent.</p>
 <h3 id="the-bilinear-pairing">The Bilinear Pairing</h3>
 <p>The four densities are four elements at which the pairing is read:
-$$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr),
+$$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr),
 \qquad
-P_5=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x\bigr),$$
-$$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})\vec e_x\bigr),
+P_5=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x\bigr),$$
+$$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})\vec e_x\bigr),
 \qquad
-A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr),$$
+A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr),$$
 with $\nu(t)=x$ and $\nu(\eta)=y$. The scalar density carries the role subscript because the bare letter is the action of the corpus.</p>
 <p>The four are real, and the reality is a computation and not a convention: over 100 generic elements the largest imaginary part of each is below $10^{-15}$. Each is worth a sentence.</p>
 <p>The scalar density $S_{\mathrm d}$ pairs the two values and never a value with itself: an element of a single value gives $S_{\mathrm d}=0$.</p>
 <p>The time component of the current is the Hermitian norm of the field. The two factors of $i$ multiply to $-1$, the two units $\vec e_x\vec e_x$ multiply to $-e_t$, and the two signs cancel:
-$$V_0=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}\bigr),$$
+$$V_0=\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\bigr),$$
 so the current is a density of the field and not a derivative of it.</p>
 <p>The axial bilinear is the vector bilinear with the right unit displaced. Where the vector reads $\vec e_{\nu(\mu)}$ in the right slot, the axial reads the product $\vec e_z\vec e_{\nu(\mu)}$ and drops the factor $i$.</p>
 <p>The tensor bilinear completes the list. Its element is the antisymmetric composite of two slot actions, which is a derived form of the two actions above and is written here in the element language of the body:
-$$T_{0\eta}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x\bigr),
+$$T_{0\eta}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,i\vec e_\eta\tilde{Ξ}\vec e_z\vec e_x\bigr),
 \qquad
-T_{j\eta}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\quad(j\ne k),
+T_{j\eta}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}\vec e_x\bigr)\quad(j\ne k),
 \qquad
 T_{\mu\mu}=0 .$$
 The composite of the time slot action with the $k$-th space slot action is the left multiplication by $\vec e_\eta$ followed by the right multiplication by $\vec e_z$, and the composite of the $j$-th with the $k$-th is the left multiplication by the product $\vec e_j\vec e_\eta$. The two orders of each pair are opposite, so the antisymmetrised product is the composite itself, and the element of $T_{\mu\nu}$ is $i$ times that composite. The factor $i$ is what makes the entries real: with it the entries are real on the 100 elements, and without it the same pairing returns purely imaginary values. Every independent entry is real on that run: the three $T_{0\eta}$ and the three $T_{j\eta}$. The diagonal vanishes because the antisymmetrised product takes the same index twice.</p>
 <h3 id="the-two-writings-of-the-free-equation">The Two Writings of the Free Equation</h3>
 <p>The free field obeys the linear chiral pair
-$$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+$$\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},$$
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},$$
 in which the gradient acts by left multiplication on the field and the mass relates the two parts. This is the <strong>one-sided</strong> writing. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>The <strong>two-sided</strong> writing is the action
 $$\tilde Q\longmapsto \sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
@@ -122,7 +122,7 @@ and it is the one this article needs, because every bilinear above carries a rig
 $$\tilde Q\longmapsto\Box\tilde Q,
 \qquad
 \Box=\sum_\eta\frac{\partial^2}{\partial x_\eta^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,$$
-which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}_{\mathrm{sp}}$ squares to $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.</p>
+which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}$ squares to $(\Box-k_m^{2})\tilde{Ξ}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.</p>
 <h3 id="the-two-values-and-the-axial-bilinear">The Two Values and the Axial Bilinear</h3>
 <p>The subscript names one of two components: the element is $L$ when the test returns the minus one and $R$ when it returns the plus one, and only the zero element carries both values. The value is decided by the right slot: a left multiplication keeps the value, and a product takes the value of its right factor. These two facts are stated in words because every sentence below uses them and none computes them.</p>
 <p>The mass multiplies the scalar density, and the density is the object that pairs the two values: $S_{\mathrm d}$ pairs one value with the other and vanishes on an element of a single value, so a field of one value alone carries no mass term.</p>
@@ -131,7 +131,7 @@ which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\pa
 <h3 id="self-interaction-and-the-cubic-form">Self-Interaction and the Cubic Form</h3>
 <p>The free equation is first order in space and in time, and every bilinear above is quadratic in the field. A Lagrangian term that is a product of two bilinears is therefore quartic in the field, and the field equation obtained from it is cubic: a bilinear coefficient multiplying one more power of the field. That is the whole origin of the name, and the alternative name <strong>cubic Dirac equation</strong> says the same thing.</p>
 <p>The generic equation is
-$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,Ξ(\tilde{Ξ}_{\mathrm{sp}})=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}+g\,Ξ(\tilde{Ξ})=0,$$
 with $Ξ$ cubic. The three standard models differ only in which bilinear builds $Ξ$, and a table is the clearest statement of the difference.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -147,19 +147,19 @@ with $Ξ$ cubic. The three standard models differ only in which bilinear builds 
 <td>Thirring</td>
 <td>$V_\mu$</td>
 <td>$-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu$</td>
-<td>$-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})$</td>
+<td>$-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})$</td>
 </tr>
 <tr>
 <td>Soler</td>
 <td>$S_{\mathrm d}$</td>
 <td>$\frac{g}{2}S_{\mathrm d}^2$</td>
-<td>$g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>$g\,S_{\mathrm d}\,\tilde{Ξ}$</td>
 </tr>
 <tr>
 <td>Hehl–Datta</td>
 <td>$A_\mu$</td>
 <td>$+\frac{3\kappa}{16}\sum_\mu\varepsilon_\mu A_\mu A_\mu$</td>
-<td>$+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,(e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)})$</td>
+<td>$+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,(e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)})$</td>
 </tr>
 </tbody>
 </table></div>
@@ -172,18 +172,18 @@ with $Ξ$ cubic. The three standard models differ only in which bilinear builds 
 <p>The models below are the two the literature names, and the article records them in the form the sources state, so that the coefficients can be checked against them.</p>
 <h3 id="the-thirring-model">The Thirring Model</h3>
 <p>The <strong>Thirring model</strong> (Thirring 1958) is the $1+1$-dimensional theory of a self-interacting fermion whose interaction is the square of the vector current. In the notation of this article the Lagrangian density is
-$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
-with the sums running over the two indices $t$ and $x$ of the plane. The field is an element of $\mathbb{B}$; its two values $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ are the two components the two-dimensional dynamics uses, and the mass term is the scalar density $S_{\mathrm d}$, which pairs the two values and vanishes when only one is present.</p>
+$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr)-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
+with the sums running over the two indices $t$ and $x$ of the plane. The field is an element of $\mathbb{B}$; its two values $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ are the two components the two-dimensional dynamics uses, and the mass term is the scalar density $S_{\mathrm d}$, which pairs the two values and vanishes when only one is present.</p>
 <p>The integral $\int dt\,dx\,\mathcal{L}$ is the action, and the field equation is
-$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)})=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}-g\sum_\mu\varepsilon_\mu V_\mu\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})=0,$$
 with $\mu$ running over $t$ and $x$. The interaction is a <strong>current–current</strong> interaction: the field at a point multiplies the current at the same point.</p>
 <p><strong>The model is exactly solvable.</strong> The massless Thirring model was solved by Hagen (1964) and by Klaiber (1968): the spectrum is a free boson, and the fermion Green functions are explicit powers of the free ones. The model satisfies the Osterwalder–Schrader axioms with a suitable choice of the coupling (Carey and Ruijsenaars 1984), and the massive model is integrable by Bethe ansatz (Bergknoff and Thacker 1979). The exact solubility is the reason the model is used as a testing ground for approximation schemes: a method that cannot reproduce the Thirring model exactly is known to be wrong before it is applied to QCD.</p>
 <p><strong>Bosonisation.</strong> In $1+1$ dimensions the massless Thirring model is equivalent to a free massless scalar field. With a mass term the equivalence is the <strong>sine-Gordon</strong> correspondence, and the fermion mass is the cosine coupling (Coleman 1975, Mandelstam 1975). The correspondence is the prototype of the statement that a fermion in one space dimension can be traded for a boson, and it is the reason the model appears in the biquaternion literature beside the bosonisation article.</p>
 <h3 id="the-soler-model">The Soler Model</h3>
 <p>The <strong>Soler model</strong> (Soler 1970) is the $3+1$-dimensional theory whose interaction is the square of the scalar bilinear:
-$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x\bigr)\Bigr)^{2},$$
+$$\mathcal{L}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)})\vec e_x\bigr)-m\,\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr)+\frac{g}{2}\Bigl(\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr)\Bigr)^{2},$$
 that is, with $S_{\mathrm d}$ for the scalar density, $\frac{g}{2}S_{\mathrm d}^2$. The interaction is a <strong>scalar–scalar</strong> interaction, and the field equation is
-$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+g\,S_{\mathrm d}\,\tilde{Ξ}_{\mathrm{sp}}=0,$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}+g\,S_{\mathrm d}\,\tilde{Ξ}=0,$$
 with the sum over the four indices $t,x,y,z$.</p>
 <p><strong>The pseudoscalar variant.</strong> The same construction with $P_5$ in place of $S_{\mathrm d}$ gives the pseudoscalar–pseudoscalar interaction $\frac{g}{2}P_5^2$. The two variants are not independent under the axial rotation $Q\mapsto Q\exp(\alpha\vec e_z)$: the pair $(S_{\mathrm d},P_5)$ rotates as a two-component object,
 $$S_{\mathrm d}\longmapsto \cos 2\alpha\,S_{\mathrm d}+\sin 2\alpha\,P_5,
@@ -194,10 +194,10 @@ so that $S_{\mathrm d}^2+P_5^2$ is invariant and $S_{\mathrm d}^2$ alone is not.
 <p><strong>Relation to Nambu–Jona-Lasinio.</strong> The scalar–scalar interaction is the mean-field approximation of the Nambu–Jona-Lasinio four-fermion interaction, and the closed-form solutions of the Soler model (Soler 1970; see also the review of Thaller 1992) are the standard testing ground for the mean-field treatment of dynamical mass generation. The scalar channel is the one the mass uses, so a scalar–scalar self-interaction is the self-consistent mass term.</p>
 <h2 id="the-hehldatta-interaction-from-torsion">The Hehl–Datta Interaction from Torsion</h2>
 <p>With the torsion eliminated, the equation of the field is the Dirac equation plus the axial term, and it is the one model of the three whose coefficient is not fitted but fixed:
-$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}_{\mathrm{sp}}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}=0.$$
+$$\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}-k_m\tilde{Ξ}+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}=0.$$
 The term is the axial current multiplying the axial slot action on the field. Its coefficient is $3\kappa/8$, twice the $3\kappa/16$ of the Lagrangian, and the factor of two is the one that varying a square supplies.</p>
 <p><strong>The spacelike case.</strong> Where only the spacelike components of the current are nonzero, the equation separates into a time part and a space part,
-$$\Bigl((\nabla_t\tilde{Ξ}_{\mathrm{sp}})\vec e_x+\sum_\eta\vec e_\eta(\nabla_\eta\tilde{Ξ}_{\mathrm{sp}})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_y=k_m\tilde{Ξ}_{\mathrm{sp}},$$
+$$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_\eta\vec e_\eta(\nabla_\eta\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}\vec e_z\vec e_y=k_m\tilde{Ξ},$$
 with $A_0=0$, and the two parts are read separately.</p>
 <p><strong>Why the square is the d'Alembertian.</strong> The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_k^2=\Delta_\Phi$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.</p>
 <h2 id="the-local-channels-and-their-sectors">The Local Channels and Their Sectors</h2>
@@ -214,32 +214,32 @@ with $A_0=0$, and the two parts are read separately.</p>
 </thead>
 <tbody>
 <tr>
-<td>$S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$</td>
-<td>$\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>$S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$</td>
+<td>$\tilde{Ξ}$</td>
 <td>scalar</td>
 <td>even</td>
 </tr>
 <tr>
-<td>$P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$</td>
-<td>$\tilde{Ξ}_{\mathrm{sp}}\vec e_z$</td>
+<td>$P_5=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x)$</td>
+<td>$\tilde{Ξ}\vec e_z$</td>
 <td>pseudoscalar</td>
 <td>odd</td>
 </tr>
 <tr>
-<td>$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
-<td>$ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}$</td>
+<td>$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
+<td>$ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)}$</td>
 <td>vector</td>
 <td>$V_0$ even, $V_\eta$ odd</td>
 </tr>
 <tr>
-<td>$A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
-<td>$e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$</td>
+<td>$A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
+<td>$e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}$</td>
 <td>axial vector</td>
 <td>$A_0$ odd, $A_\eta$ even</td>
 </tr>
 <tr>
 <td>$T_{\mu\nu}$</td>
-<td>the antisymmetric composite of two slot actions, read on $\tilde{Ξ}_{\mathrm{sp}}$</td>
+<td>the antisymmetric composite of two slot actions, read on $\tilde{Ξ}$</td>
 <td>antisymmetric tensor</td>
 <td>$T_{0\eta}$ odd, $T_{j\eta}$ even</td>
 </tr>
@@ -291,11 +291,11 @@ with $A_0=0$, and the two parts are read separately.</p>
 <p>The axial rotation is the one that does not pass. Under $Q\mapsto Q\exp(\alpha\vec e_z)$ the scalar and pseudoscalar densities rotate into one another, and the mass term, which is a single density, is not invariant. The interaction terms that are invariant under it are the ones built from the invariant combination $S_{\mathrm d}^2+P_5^2$.</p>
 <h3 id="the-three-channels-in-the-frameworks-sectors">The Three Channels in the Framework's Sectors</h3>
 <p>The framework's own equation is the chiral pair, and its two-sided form is the one the models use. The three channels then sit in three places.</p>
-<p><strong>The scalar channel is the mass channel.</strong> The mass term of the framework pairs $\tilde{Ξ}_{\mathrm{sp},L}$ with $\tilde{Ξ}_{\mathrm{sp},R}$ through a coefficient, and the scalar density $S_{\mathrm d}$ is exactly the object that pairing multiplies. A scalar–scalar interaction is therefore a coefficient of the same linear chiral pair: the Soler model and the framework's mass term use one channel, and a strong coupling in it produces a mass of the same kind.</p>
+<p><strong>The scalar channel is the mass channel.</strong> The mass term of the framework pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ through a coefficient, and the scalar density $S_{\mathrm d}$ is exactly the object that pairing multiplies. A scalar–scalar interaction is therefore a coefficient of the same linear chiral pair: the Soler model and the framework's mass term use one channel, and a strong coupling in it produces a mass of the same kind.</p>
 <p><strong>The vector channel is the material-sector current.</strong> The vector current is the object minimal coupling differentiates against and the Gordon decomposition splits into its spin and orbital parts. It is the channel of the electromagnetic interaction, and the Thirring model is its self-interacting version.</p>
 <p><strong>The axial channel is the one the mass breaks.</strong> The linear mass term is the object whose divergence the axial current acquires, and the axial–axial interaction is therefore the coupling conjugate to the mass. The geometric route puts its interaction precisely there.</p>
 <h3 id="what-the-framework-does-not-supply">What the Framework Does Not Supply</h3>
-<p>The identification above is a placement, not a derivation. A bilinear here is a pairing, and every pairing of this article carries the fixed element $i\vec e_x$; it is not a product of two elements of $\mathbb{B}$ alone, and the free equation of the framework contains no such fixed element. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}}^*$ inside $\mathbb{B}$ cannot supply these objects on its own, and the self-interaction, like the current, is a statement about a pairing and not about a product. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum and no prediction.</p>
+<p>The identification above is a placement, not a derivation. A bilinear here is a pairing, and every pairing of this article carries the fixed element $i\vec e_x$; it is not a product of two elements of $\mathbb{B}$ alone, and the free equation of the framework contains no such fixed element. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde{Ξ}$ and $\tilde{Ξ}^*$ inside $\mathbb{B}$ cannot supply these objects on its own, and the self-interaction, like the current, is a statement about a pairing and not about a product. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum and no prediction.</p>
 <p>Two further limits are inherited from other gaps. The Einstein–Cartan route needs a torsionful connection with a field equation; the companion article on curved spacetime records that the framework can carry the connection as an object of its own Lie subspace but generates no dynamics for it, so a biquaternion torsion belongs to that agenda and not to the constructed part. And the exact solubility of the massless Thirring model is a property of two-dimensional quantum field theory with no biquaternion counterpart: the framework can write the two-dimensional reduction in its own objects, and it does not reproduce the solution.</p>
 <h2 id="verified-two-dimensional-relations">Verified Two-Dimensional Relations</h2>
 <p>The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{B}_{\Phi}$ frame of the conventions article, whose metric is $g_{tt}=-c^{2}$ and $g_{xx}=+1$, so that $\varepsilon_t=-g_{tt}=+1$ on the time index and $\varepsilon_\eta=-g_{\eta\eta}=-1$ on the spatial ones.</p>
@@ -307,7 +307,7 @@ $$\tilde Q\longmapsto ie_t\tilde Q\vec e_x,
 Each composed with itself returns the element in the first case and minus the element in the second. Composed in the two orders the two are opposite, and the composite in one order is the action $\tilde Q\mapsto\vec e_x\tilde Q\vec e_z$, whose square is the identity. The four statements are exact, and they are the two-dimensional content of the signs that the four-dimensional section reads slot by slot.</p>
 <h3 id="the-current-duality">The Current Duality</h3>
 <p>The axial current of the two-dimensional theory inserts the plane's own value element, $\vec e_x$ on the left and $\vec e_z$ on the right, and reads
-$$A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,(ie_\mu\vec e_x\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)})\vec e_x\bigr);$$
+$$A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(ie_\mu\vec e_x\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)})\vec e_x\bigr);$$
 that is not the four-dimensional axial bilinear of the earlier section, and the difference is one factor $i$. The four-dimensional chirality is $-i$ on the right, so the $i$ of the slot action is spent there; the plane's insertion is the product of the two slot actions and carries no factor $i$ of its own, so the $i$ survives in the plane. The difference is a property of the dimension and not of the field. With the two-dimensional one the duality is an identity, with no free constant:
 $$A_0=V_1,\qquad A_1=V_0,
 \qquad\text{that is}\qquad
@@ -339,7 +339,7 @@ so the vector–vector and axial–axial quartic terms differ only by sign and a
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
 <p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.</p>
 <p>This section writes the same basis operators in the $\gamma$ notation, so that each formula the sources state can be checked against the basis operator it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$.</p>
 <p>$$
 \begin{aligned}
 \gamma_0 &= iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}, &\gamma_1 &= iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\\[2pt]
@@ -356,7 +356,7 @@ $$</p>
 \end{aligned}
 $$</p>
 <p>A single product $L_{a}R_{b}$ is a pure tensor $a\otimes b$; the single products form a seven-dimensional cone, of rank at most one, and a general element of the algebra is a sum of at most four of them.</p>
-<p>The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article <strong>is</strong> the $\left(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}_{\mathrm{sp}}\right)\gamma^\mu\gamma_5\tilde{Ξ}_{\mathrm{sp}}$ of the torsion literature.</p>
+<p>The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article <strong>is</strong> the $\left(\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}\right)\gamma^\mu\gamma_5\tilde{Ξ}$ of the torsion literature.</p>
 <p>$\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The basis operator dictionary is complex-linear. With the central $i$ dropped, the four basis operators are real $4\times4$ matrices, and they square to $-g=(-1,+1,+1,+1)$: the timelike one to $-I_4$ and the three spacelike ones to $+I_4$. They span the full algebra $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ of real $4\times4$ matrices. Restoring the $i$ flips every square, because $i^2=-1$, and the basis operators then square to $+g$ and span $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, which is the algebra the $\gamma$ notation uses. The whole difference between the real and the complex reading is that single factor of $-1$.</p>
 <h3 id="the-identities-the-sources-cite">The Identities the Sources Cite</h3>
@@ -393,9 +393,9 @@ $$</p>
 <p>In each of the four the contracted generator is the same one on both sides, so it is never moved past another generator and no reordering sign enters. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the weights become signs and the sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the second is $4\gamma_\alpha$ on the time index and $0$ on each spatial one, so the unweighted form is a signature statement and not an identity of four dimensions alone.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
-<p>A nonlinear Dirac equation adds a self-interaction built from the field's bilinears to the free equation. The physically motivated case is geometric: in Einstein–Cartan theory the torsion sourced by the field's own spin, eliminated through its field equation, leaves the axial-axial Hehl–Datta term $+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$ with a coefficient fixed by the gravitational constant. The two standard models use the other two channels: the Thirring model in $1+1$ dimensions uses the square of the vector current and is exactly solvable, with the massive case equivalent to sine-Gordon; the Soler model in $3+1$ dimensions uses the square of the scalar bilinear and is the mean-field relative of the NJL interaction.</p>
+<p>A nonlinear Dirac equation adds a self-interaction built from the field's bilinears to the free equation. The physically motivated case is geometric: in Einstein–Cartan theory the torsion sourced by the field's own spin, eliminated through its field equation, leaves the axial-axial Hehl–Datta term $+\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}$ with a coefficient fixed by the gravitational constant. The two standard models use the other two channels: the Thirring model in $1+1$ dimensions uses the square of the vector current and is exactly solvable, with the massive case equivalent to sine-Gordon; the Soler model in $3+1$ dimensions uses the square of the scalar bilinear and is the mean-field relative of the NJL interaction.</p>
 <p>The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction couples in the channel conjugate to the mass; the interaction the geometry supplies is repulsive, and the dynamical mass itself is generated in the scalar channel, where the mass term lives. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact.</p>
-<p>Each bilinear, however, is a pairing and not a product: it is the scalar part of $\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x$, and the fixed element $i\vec e_x$ is not supplied by the free equation of the framework, which is a left multiplication by the gradient with a mass that relates the two parts. The framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact about the models that the article verifies is two-dimensional: the axial current is the dual of the vector current, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-\sum_\mu\varepsilon_\mu V_\mu V_\mu$ and the Thirring model has a single coupling.</p>
+<p>Each bilinear, however, is a pairing and not a product: it is the scalar part of $\tilde{Ξ}^*iX\vec e_x$, and the fixed element $i\vec e_x$ is not supplied by the free equation of the framework, which is a left multiplication by the gradient with a mass that relates the two parts. The framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact about the models that the article verifies is two-dimensional: the axial current is the dual of the vector current, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-\sum_\mu\varepsilon_\mu V_\mu V_\mu$ and the Thirring model has a single coupling.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -418,28 +418,28 @@ $$</p>
 <td>Two-sided Dirac action; composed with itself it is $\Box$</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*iX\vec e_x\bigr)$</td>
+<td>$\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr)$</td>
 <td>The bilinear form; every density below is this scalar part read at one element $X$</td>
 </tr>
 <tr>
-<td>$S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$</td>
+<td>$S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$</td>
 <td>Scalar density (mass channel)</td>
 </tr>
 <tr>
-<td>$P_5=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$</td>
+<td>$P_5=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x)$</td>
 <td>Pseudoscalar density, the parity-odd partner of $S_{\mathrm d}$; the quaternion representative $P=S_{\mathrm d}\vec e_z$ has $P\cdot P=-S_{\mathrm d}^2$, a different object from the density square $P_5^2$</td>
 </tr>
 <tr>
-<td>$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,ie_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
-<td>Vector current (material sector in the framework); $V_0=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}})$</td>
+<td>$V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
+<td>Vector current (material sector in the framework); $V_0=\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$</td>
 </tr>
 <tr>
-<td>$A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
+<td>$A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$</td>
 <td>Axial current (channel broken by the mass); in two dimensions built with the plane's insertions and the factor $i$ kept</td>
 </tr>
 <tr>
 <td>$T_{\mu\nu}$</td>
-<td>Tensor bilinear; $T_{0\eta}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_x)$, $T_{j\eta}=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$</td>
+<td>Tensor bilinear; $T_{0\eta}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_\eta\tilde{Ξ}\vec e_z\vec e_x)$, $T_{j\eta}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$</td>
 </tr>
 <tr>
 <td>$\varepsilon_\mu = -g_{\mu\mu}$</td>
@@ -454,7 +454,7 @@ $$</p>
 <td>Einstein gravitational constant</td>
 </tr>
 <tr>
-<td>$\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}_{\mathrm{sp}}\vec e_z\vec e_{\nu(\mu)}$</td>
+<td>$\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}$</td>
 <td>Hehl–Datta term in the equation ($\frac{3\kappa}{16}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ as a Lagrangian term)</td>
 </tr>
 <tr>

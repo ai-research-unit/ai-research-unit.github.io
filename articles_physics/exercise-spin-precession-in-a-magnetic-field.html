@@ -100,20 +100,20 @@ $$</p>
 <h3 id="step-3-the-evolution">Step 3: The evolution</h3>
 <p>The evolution operator is</p>
 <p>$$
-T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) & 0 \ 0 & \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
+T(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar\,c}) = \exp(\,i\omega_L r'_t/c\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L r'_t/(2c)) & 0 \ 0 & \exp(-i\omega_L r'_t/(2c)) \end{pmatrix}.
 $$</p>
 <p>The evolved state is</p>
 <p>$$
-|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/c/2) \ \exp(-i\omega_L r'_t/c/2) \end{pmatrix}.
+|\tilde{Ξ}(r'_t)\rangle = T(r'_t)\,|+r_x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L r'_t/(2c)) \ \exp(-i\omega_L r'_t/(2c)) \end{pmatrix}.
 $$</p>
 <h3 id="step-4-the-expectation-value">Step 4: The expectation value</h3>
-<p>The expectation value of $S_x =\frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle$ is</p>
+<p>The expectation value of $S_x =\frac{\hbar}{2}\sigma_1$ in the state $|\tilde{Ξ}(r'_t)\rangle$ is</p>
 <p>$$
-\langle S_x\rangle(r'_t) = \langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|S_x|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle.
+\langle S_x\rangle(r'_t) = \langle\tilde{Ξ}(r'_t)|S_x|\tilde{Ξ}(r'_t)\rangle.
 $$</p>
 <p>Computing the matrix element,</p>
 <p>$$
-\langle\tilde{Ξ}_{\mathrm{sp}}(r'_t)|\sigma_1|\tilde{Ξ}_{\mathrm{sp}}(r'_t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L r'_t/c/2) \cdot \exp(-i\omega_L r'_t/c/2) + \exp(\,i\omega_L r'_t/c/2) \cdot \exp(\,i\omega_L r'_t/c/2)\right) = \frac{1}{2}\left(\exp(-i\omega_L r'_t/c) + \exp(\,i\omega_L r'_t/c)\right) = \cos(\omega_L r'_t/c).
+\langle\tilde{Ξ}(r'_t)|\sigma_1|\tilde{Ξ}(r'_t)\rangle = \frac{1}{2}\left(\exp(-i\omega_L r'_t/(2c)) \cdot \exp(-i\omega_L r'_t/(2c)) + \exp(\,i\omega_L r'_t/(2c)) \cdot \exp(\,i\omega_L r'_t/(2c))\right) = \frac{1}{2}\left(\exp(-i\omega_L r'_t/c) + \exp(\,i\omega_L r'_t/c)\right) = \cos(\omega_L r'_t/c).
 $$</p>
 <p>Therefore</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 <p>$$
 \tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\,\tilde\Pi_x\,\tilde{U}(r'_t)^{*}.
 $$</p>
-<p>Computing the product, using $\tilde{U}(r'_t)^{*} = \tilde{U}^{\natural}(r'_t) = \cos(\omega_L r'_t/c/2)\,e_t + \sin(\omega_L r'_t/c/2)\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives</p>
+<p>Computing the product, using $\tilde{U}(r'_t)^{*} = \tilde{U}^{\natural}(r'_t) = \cos(\omega_L r'_t/(2c))\,e_t + \sin(\omega_L r'_t/(2c))\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives</p>
 <p>$$
 \tilde{Ϛ}_{\Psi}(r'_t) = \tfrac{1}{2}\left(e_t + i\cos(\omega_L r'_t/c)\,\vec e_x - i\sin(\omega_L r'_t/c)\,\vec e_y\right).
 $$</p>
