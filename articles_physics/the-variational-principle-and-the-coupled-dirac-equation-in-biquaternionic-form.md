@@ -254,7 +254,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$ | Integration measure; $r'_t=ct'$ the material time |
 | $\tilde\nabla_{\mathrm{gco}},\ \tilde\nabla_{\mathrm{gco}}^{\natural}$ | Covariant derivative and its $\natural$-image |
 | $\tilde A_\Phi,\ \tilde F$ | Potential biquaternion and curvature |
-| $\lambda=e^{i\varkappa\Gamma/\hbar}$ | Local central phase; $\Gamma$ real |
+| $\lambda=e^{iϙ\Gamma/\hbar}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
 | $J^{t},J^{\eta}$ | Noether current of the local phase; sum over parts, difference over parts |
