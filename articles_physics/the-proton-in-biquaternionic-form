@@ -136,7 +136,7 @@ The framework's abelian gauge group is the $*$-unitary part of the centre,
 $$
 \mathrm{U}(1)\subset\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\},
 \qquad
-\mathrm{U}(1)=\{\exp(i\theta e_t):\ \theta\in\mathbb{R}\},
+\mathrm{U}(1)=\{\exp(i\theta_{\mathrm{cen}} e_t):\ \theta_{\mathrm{cen}}\in\mathbb{R}\},
 $$
 
 and the infinitesimal generator of the gauge transformation is the central element $ie_t\in\mathbb{B}_{\Phi}$, anti-Hermitian as a Lie-algebra generator must be. The corresponding Hermitian charge is the central $Ϙ=ϙe_t$, whose generator is $e_t$ itself, the unit of the algebra. The two differ by the factor $\pm i$, $e_t=-i(ie_t)$, and that factor is the convention which turns an anti-Hermitian algebra element into a Hermitian observable. The electric charge is therefore carried by the **abelian factor** of the algebra — the central line — and not by the non-abelian factor.

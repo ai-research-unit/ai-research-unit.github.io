@@ -1,4 +1,4 @@
-\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi\tilde\Xi$ | The Schrödinger field, one element of $\mathbb{B}$ |
+| $\tilde\Xi$ | The Schrödinger field, one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian symbol |
 | $\mathrm{Lag}=L/c$ | Lagrangian per unit $r'_t$ |
 | $S_{\mathrm A}$ | The action of this article, with no exponential |

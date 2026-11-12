@@ -98,8 +98,7 @@ $$
 (\tilde H_\Phi)^{*}=(-i\tilde H_\Psi)^{*}=\tilde H_\Psi^{*}(-i)^{*}=\tilde H_\Psi\,i=i\tilde H_\Psi=-\tilde H_\Phi.
 $$
 
-So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi}
-\to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one
+So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one
 the mirror convention fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
 $(i\vec e_x)^{*} = i\vec e_x$), one has $\tilde H_\Phi=-i\,(i\vec e_x)=\vec e_x$, and $\vec e_x$ is anti-Hermitian because $(\vec e_x)^{*} = -\vec e_x$.
 
