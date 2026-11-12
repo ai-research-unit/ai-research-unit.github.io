@@ -74,7 +74,9 @@ $$
 
 so $\xi_{\mathrm{fop}}^{(+)}$ is the **annihilation part** and $\xi_{\mathrm{fop}}^{(-)}$ the **creation part**. The same statement in the biquaternion notation is that the annihilation part is the transport of the vacuum by the positive-frequency central phase.
 
-**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-iE_{\vec p}r'_t/(\hbar c))$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar)$ is the phase in which the statement is made.
+**The frequency split is Lorentz invariant.** The split is defined by the sign of the energy, and the sign of the energy is preserved by orthochronous Lorentz transformations; equivalently, the positive-frequency part continues analytically in the upper half of the complex time plane when the phase is written $\exp(-i\theta_{\mathrm{evo}})$. This is the standard statement that the Wightman function is the boundary value of an analytic function, and the framework's central phase $\exp(-i\theta_{\mathrm{pwp}})$ is the phase in which the statement is made.
+
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 ## Real and Complex Scalar Fields
 

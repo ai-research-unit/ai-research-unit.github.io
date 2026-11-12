@@ -270,10 +270,12 @@ The programme's hydrogen atom is the spherically symmetric pulsar of §III at a 
 
 $$
 \tilde{H}_{\Psi,0}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
-= \omega_0\left(j_0(\omega_0 r) + j_1(\omega_0 r)\vec u_x\right)\exp(-i\omega_0\tau).
+= \omega_0\left(j_0(\omega_0 r) + j_1(\omega_0 r)\vec u_x\right)\exp(-i\theta_{\mathrm{pwt}}).
 $$
 
 Everything in the preceding sections applies to it without change: the charge density at the centre is $\omega_0$, the density falls as $r^{-1}$, the energy density as $r^{-2}$, the energy density has no nodal spheres, the charge density has them at $r_\eta = \pi k_\Phi/\omega_0$, and the energy flux vanishes identically — which the paper reads as the statement that the atom does not radiate.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 Two comparisons must be made, and both are about what the object is not. It is **not** the hydrogen atom of the corpus. *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* and its relativistic companion solve the Coulomb two-body problem: a potential is inserted, the bound-state eigenvalue problem is set up, separated in spherical coordinates, and solved for the Rydberg spectrum. Here no potential is inserted, no two-body problem is posed, and no eigenvalue problem is solved: the object is a single monochromatic standing wave of the charge–current field, and its frequency is a free parameter. The two constructions share the spherical harmonics and the letter $\omega$ and nothing else. The programme's atom has no proton, no electron, no Coulomb field and no Rydberg series.
 

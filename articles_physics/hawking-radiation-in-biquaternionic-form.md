@@ -311,14 +311,17 @@ $$
 where $\kappa$ is the surface gravity, an inverse length. A positive-frequency out mode of frequency $\omega$ is proportional to
 
 $$
-\exp(-i\omega u)=\left(-U\right)^{i\omega/\kappa},
+\exp(-i\theta_{\mathrm{pwt}})=\left(-U\right)^{i\omega/\kappa},
 $$
 
 which has a **logarithmic phase** at the horizon: the phase diverges as $U\to0$. Now continue $U$ around the branch point at the horizon, $U\to \exp(\pm i\pi)U$ (so that $(-U)\to \exp(\pm i\pi)(-U)$); the logarithm shifts by $\pm i\pi$, so
 
 $$
-\exp(-i\omega u)\;\longmapsto\;\exp(\mp\pi\omega/\kappa)\,\exp(-i\omega u).
+\exp(-i\theta_{\mathrm{pwt}})\;\longmapsto\;\exp(\mp\pi\omega/\kappa)\,\exp(-i\theta_{\mathrm{pwt}}).
+
 $$
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 The two branches of the continuation differ by the factor $\exp(2\pi\omega/\kappa)$, and the combination that is positive-frequency with respect to Kruskal time — the one that defines the vacuum — has its negative-frequency component suppressed relative to its positive-frequency component by
 
@@ -530,7 +533,7 @@ The Unruh effect and Hawking radiation are the **same KMS statement seen in diff
 
 The trap of confusing the proper acceleration with the surface gravity is stated and avoided: the static observer's proper acceleration $a(r)=c^2\frac{df}{dr}/(2\sqrt f)$ diverges at the horizon, while the redshifted product $a(r)\sqrt f=c^2\frac{df}{dr}/2=GM/r^2$ is finite and equals $\kappa$ at the horizon. The local Unruh temperature diverges; the redshift cancels it; the surface gravity is what remains.
 
-The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\beta_{ji}$ gives the particle number $\sum_i|\beta_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\omega u)=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\beta/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
+The trap of asserting the thermal spectrum is avoided by deriving it. The in and out modes are related by a Bogoliubov transformation; the negative-frequency coefficient $\beta_{ji}$ gives the particle number $\sum_i|\beta_{ji}|^2$; the horizon's branch point at $U=0$ produces the logarithmic phase $\exp(-i\theta_{\mathrm{pwt}})=(-U)^{i\omega/\kappa}$ and the exponential ratio $|\beta/\alpha|=\exp(-\pi\omega/\kappa)$; the in-vacuum is a two-mode squeezed state with that squeeze parameter; and the resulting geometric sums are exactly the Bose–Einstein and Fermi–Dirac distributions at temperature $\frac{\hbar\,\kappa}{2\,\pi\,c\,k_{B}}$. The temperature is checked independently against the Euclidean period $\beta=8\pi GM/c^3=2\pi c/\kappa$ and against the $M^{-1}$ scaling.
 
 The biquaternion framework supplies the algebraic home for the effect — the material sector $\mathbb{B}_{\Phi}$ for the field and its intrinsic imaginary time, the informational sector $\mathbb{B}_{\Psi}$ for the Hermitian modular generator, the zero-divisor cone for the local light cone — and it transcribes the Hawking calculation rather than deriving it. It contains no black-hole geometry and no dynamics, and it gives no correction to the standard temperature. Hawking radiation has never been observed; no claim of observation is made.
 

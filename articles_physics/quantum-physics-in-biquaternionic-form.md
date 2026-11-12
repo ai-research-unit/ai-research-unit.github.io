@@ -340,20 +340,22 @@ with $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ the Hamilton
 **The solution.** We have $-i\tilde H_\Psi = -i h_t e_t + \vec h_\Psi$. The scalar part and the vector part commute, so
 
 $$
-\boxed{\;\tilde Q(r'_t) = \exp(-\frac{i\,H\,r'_{t}}{\hbar\,c}) = \exp(-\frac{i\,h_t\,r'_{t}}{\hbar\,c})\left(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,\vec u_\Psi\right)\;},
+\boxed{\;\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(-i\theta_{\mathrm{evo}})\left(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,\vec u_\Psi\right)\;},
 $$
 
 where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$ (for $\vec h_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.
 
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+
 The element $\tilde Q(r'_t)$ is **$*$-unitary**: $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h_\Psi|\frac{r'_{t}}{\hbar\,c}$, $\tilde Q(r'_t)$ is Hermitian exactly when $\tilde Q(r'_t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $\frac{h_t\,r'_{t}}{\hbar\,c}\in\pi\,\mathbb{Z}$, or $\cos\theta = 0$ together with $\frac{2\,h_t\,r'_{t}}{\hbar\,c}\in\pi + \pi\mathbb{Z}$. For $h_t = 0$ only the first case survives, at the isolated times $r'_t =\pi\,\hbar\,n|\vec h_\Psi|$. For $h_t \neq 0$ and $\vec h_\Psi \neq 0$, apart from $r'_t=0$, the first case gives Hermitian times exactly when $h_t/|\vec h_\Psi|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the $*$-unitary group $\mathrm{U}(2) \subset \mathbb{B}$.
 
-**The trace part of the Hamiltonian does not affect the state.** Since $\exp(-\frac{i\,h_t\,r'_{t}}{\hbar\,c})$ is a central complex scalar, and since the conjugation
+**The trace part of the Hamiltonian does not affect the state.** Since $\exp(-i\theta_{\mathrm{evo}})$ is a central complex scalar, and since the conjugation
 
 $$
-\tilde Q(r'_t)\,\tilde\Pi\,\tilde Q(r'_t)^{*} = \exp(-\frac{i\,h_t\,r'_{t}}{\hbar\,c})\tilde u\,\tilde\Pi\,\exp(+\frac{i\,h_t\,r'_{t}}{\hbar\,c})\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
+\tilde Q(r'_t)\,\tilde\Pi\,\tilde Q(r'_t)^{*} = \exp(-i\theta_{\mathrm{evo}})\tilde u\,\tilde\Pi\,\exp(+i\theta_{\mathrm{evo}})\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
 $$
 
-(with $\tilde u = \cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi$ a unit real quaternion), the phase $\exp(-\frac{i\,h_t\,r'_{t}}{\hbar\,c})$ cancels out. So only the traceless part $\vec h_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
+(with $\tilde u = \cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi$ a unit real quaternion), the phase $\exp(-i\theta_{\mathrm{evo}})$ cancels out. So only the traceless part $\vec h_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
 
 **Time evolution of a mixed state.** A general state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:
 
@@ -390,7 +392,7 @@ where $\tilde H_\Psi$ is the Hamiltonian.
 $$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde H_{\Psi,\mathrm{Heis}} =i\,\hbar\,c\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde H_\Psi\tilde Q + \tilde Q^{*}\tilde H_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}H\tilde H_\Psi\tilde Q + \tilde Q^{*}\tilde H_\Psi H\tilde Q = \tilde Q^{*}[\tilde H_\Psi, H]\tilde Q.
 $$
 
-Since $\tilde Q(r'_t) = \exp(-\frac{i\,\tilde H_\Psi\,r'_{t}}{\hbar\,c})$ is a function of $\tilde H_\Psi$, it **commutes with $\tilde H_\Psi$**. This is what makes the last expression equal to $[\tilde H_{\Psi,\mathrm{Heis}}, \tilde Q^{*}H\tilde Q] = [\tilde H_{\Psi,\mathrm{Heis}}, H]$. So
+Since $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ is a function of $\tilde H_\Psi$, it **commutes with $\tilde H_\Psi$**. This is what makes the last expression equal to $[\tilde H_{\Psi,\mathrm{Heis}}, \tilde Q^{*}H\tilde Q] = [\tilde H_{\Psi,\mathrm{Heis}}, H]$. So
 
 $$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde H_{\Psi,\mathrm{Heis}}(r'_t) = [\tilde H_{\Psi,\mathrm{Heis}}(r'_t), H].
 $$
@@ -520,7 +522,7 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 **8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{B}_{\Phi}$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in *The Dirac Equation in Biquaternionic Form*, and its quantization in *Canonical Quantization of the Biquaternion Dirac Field*.
 
-**9. Classical limit.** The classical limit of the qubit formalism is the classical spin vector, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article; they are the subject of *Decoherence as Idempotent Projection* and of *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*.
+**9. Classical limit.** The classical limit of the qubit formalism is the classical spin vector, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article; they are the subject of *Decoherence as Idempotent Projection* and of *The Action Principle and the Classical Limit in Biquaternionic Form*.
 
 **10. Interpretation.** The biquaternion framework admits several interpretations. The most natural is **algebraic**: the states and observables of a quantum system are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$, and the quantum structure is a consequence of the algebra. This is a structural interpretation, not a metaphysical one, and it is compatible with several of the standard interpretations (Copenhagen, relational, informational) without committing to any of them.
 
@@ -570,7 +572,7 @@ This form does **not**, however, separate the two groups, and the point is worth
 
 **One space, several structures.** The two forms that define the groups are the forms of two different structures of the twelve, read over the one space (*The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The indefinite form is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, the form of the structure $\tilde Q_1^{\natural}\tilde Q_2$, an algebra over $\mathbb{C}$, whose diagonal is the interval. The positive form is the general plain sesquilinear form (the Hermitian form), the form of the structure $\tilde Q_1\tilde Q_2^{*}$, a sesqualgebra over $(\mathbb{C},\bar{\cdot})$, the pairing on which the Born rule rests. The Lorentz group is defined by the bilinear structure and the $*$-unitary group by the sesquilinear one. That one space carries both is the whole of the compatibility, and it is why the two theories can be written side by side without being one theory. On $\mathbb{B}_{\Psi}$ the four forms collapse pairwise — the Hermitian form coincides with the general plain bilinear form, and $\langle\cdot,\cdot\rangle_{\natural}$ with $\langle\cdot,\cdot\rangle_{\natural*}$ (§*The Forms on $\mathbb{B}_{\Psi}$*, above) — so the distinction is a statement about the full space, not about the Hermitian sector.
 
-**A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{B}_{\Psi}$ itself, the subspace that carries the states and observables:
+**A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{B}_{\Psi}$ itself, the subspace that carries the states and observables. Here $\theta_{\mathrm{rpd}}$ is the rapidity, $\tanh\theta_{\mathrm{rpd}}=v/c$, real at every speed below $c$:
 
 $$
 \tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural} = \cosh^2\frac{\theta_{\mathrm{rpd}}}{2} - \sinh^2\frac{\theta_{\mathrm{rpd}}}{2} = 1 .
@@ -592,7 +594,7 @@ $$
 
 separates a $*$-unitary factor $\tilde{W}_{\Psi}$ — the **Thomas–Wigner rotation** — from a positive-definite Hermitian boost factor $\tilde U_{\Psi,\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
-**The shared imaginary unit.** The $i$ of the Schrödinger equation $\frac{i\,\hbar\,c\,d\,\tilde{Q}}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-\frac{i\,H\,r'_{t}}{\hbar\,c})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
+**The shared imaginary unit.** The $i$ of the Schrödinger equation $\frac{i\,\hbar\,c\,d\,\tilde{Q}}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
 
 **What the compatibility does and does not provide.** The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
 
@@ -671,7 +673,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | Polarization of the biquaternion norm |
 | $[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Commutator |
 | $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ | Projective measurement |
-| $\tilde Q(r'_t) = \exp(-\frac{i\,h_t\,r'_{t}}{\hbar\,c})(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi)$ | $*$-Unitary evolution |
+| $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi)$ | $*$-Unitary evolution |
 | $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}\tilde Q(r'_t)^{*}$ | Von Neumann evolution |
 | $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$, $\tilde Q$ invertible | Conjugation; quantum if $\tilde Q\tilde Q^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |

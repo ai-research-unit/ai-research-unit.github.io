@@ -185,7 +185,7 @@ where $i$ is the scalar imaginary and $\hbar$ is the reduced Planck constant. Be
 $$
 \boxed{\;\tilde Q(r'_t) = \exp\!\left(\frac{\tilde H_\Phi\,r'_{t}}{\hbar\,c}\right)
 = \exp\!\left(-i\frac{\tilde H_\Psi\,r'_{t}}{\hbar\,c}\right)
-= \exp(-i\frac{h_t\,r'_t}{\hbar\,c})\left(\cos\theta\,e_t + \sin\theta\,\vec u_\Psi\right),
+= \exp(-i\theta_{\mathrm{evo}})\left(\cos\theta\,e_t + \sin\theta\,\vec u_\Psi\right),
 \qquad
 \theta =\frac{|\vec h_\Psi|r'_t}{\hbar\,c}\;},
 $$
@@ -321,7 +321,9 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 
 One equation carries two writings. The first is $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, with $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ Hermitian and $\tilde{Ξ}$ one element of $\mathbb{B}$ with four complex coefficients. The second is $\partial/\partial r'_t\tilde{Ξ} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde{Ξ}$, whose generator $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$. They are one equation: the scalar imaginary $i$ is central, so $i\tilde H_\Psi$ is anti-Hermitian, and the two writings differ by the central constant $i\hbar\,c$.
 
-The $\mathbb{B}_{\Psi}$ writing is the physical one. It names the observable, and its solution $\tilde Q(r'_t)=\exp(\tilde H_\Phi r'_t/\hbar\,c)=\exp(-i\tilde H_\Psi r'_t/\hbar\,c)$ is $*$-unitary. That $*$-unitarity is exactly the anti-Hermiticity of the generator, so the conservation of $\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the second writing read back in the first.
+The $\mathbb{B}_{\Psi}$ writing is the physical one. It names the observable, and its solution $\tilde Q(r'_t)=\exp(\tilde H_\Phi r'_t/\hbar\,c)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ is $*$-unitary. That $*$-unitarity is exactly the anti-Hermiticity of the generator, so the conservation of $\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the second writing read back in the first.
+
+Two angles appear in the closed form, and they must not be conflated. The central phase is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the generator times the interval; the rotor angle is $\theta=|\vec h_\Psi|\,r'_t/(\hbar c)$. The generator $\tilde H_\Phi/(\hbar c)$ is **anti-Hermitian**, not Hermitian: its scalar part $-i h_t/(\hbar c)$ is purely imaginary and its vector part $\vec h_\Psi/(\hbar c)$ is real, which is exactly membership in $\mathbb{B}_{\Phi}$. Anti-Hermiticity is what makes $\tilde Q$ $*$-unitary, and it is what makes the phase a real angle: a purely imaginary scalar generator exponentiates to a phase, and a real vector generator exponentiates to the unit rotor $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$.
 
 The $\mathbb{B}_{\Phi}$ writing locates the generator in the material sector, the four-dimensional real space that carries the four-vectors. Multiplying the generator by $i\hbar\,c$ returns the observable. What the article does not show is that the generator transforms as a four-vector; the label names the space and not yet the transformation law.
 
@@ -347,7 +349,7 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $\tilde{Ξ}$ | The field: one element of $\mathbb{B}$; `sp` marks the spinor role |
 | $L_{\tilde H_\Psi}$, $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Left multiplication by $\tilde H_\Psi$; its $4\times4$ axis-free array in the coefficient basis |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ | Density matrix associated to the field |
-| $\tilde Q(r'_t) = \exp(-i\tilde H_\Psi r'_{t}/(\hbar\,c))$ | $*$-Unitary evolution, $\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}(0)$ |
+| $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ | $*$-Unitary evolution, $\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}(0)$; $\theta_{\mathrm{evo}}=h_t r'_t/(\hbar c)$, $\theta=\lvert\vec h_\Psi\rvert r'_t/(\hbar c)$ |
 | $\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})/\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})$ | Mean of the observable in the field |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

@@ -149,7 +149,9 @@ c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0
 \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 .
 $$
 
-**The sign is the corpus's phase, and it is worth naming because the other choice is common.** A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r'_t/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\omega t)$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; *Derivatives, Fields and Transforms* states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.
+**The sign is the corpus's phase, and it is worth naming because the other choice is common.** A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r'_t/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\theta_{\mathrm{pwt}})$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; *Derivatives, Fields and Transforms* states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 **The image carries the frequency $\omega$, not $k_{t}^{\prime}$.** The conjugate of $r'_t$ is $k_{t}^{\prime}=\omega/c$, and the $c$ in front of the derivative is what turns it into $\omega$; the intermediate display above keeps both factors so that the bookkeeping is visible. In four-vector form the statement is that the current is orthogonal to $(\omega,\vec k_{\Phi})$, the four-wave-number written with each component in its own units.
 
@@ -199,7 +201,9 @@ k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
 E-m\,c^{2}=\frac{p^{2}}{2m}+V ,
 $$
 
-the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-ik_{m}r'_t}\chi$. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
+the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\phi}=e^{-i\theta_{\mathrm{rst}}}\chi$. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
+
+The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
 
 **This is the one place in the corpus where the wave arm is not a level set of a norm.** The symbol above is affine: one term linear in $k_{t}^{\prime}$ beside a term quadratic in $k_{\Phi}$. Every quaternion norm is homogeneous of degree two in all four slots, so no element of $\mathbb{B}$ has that symbol as its norm, and the Schrödinger operator cannot be written as $\tilde K\tilde K^{\natural}$ for any single $\tilde K$. The exact root of the relativistic condition is $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$, and the parabola touches the hyperbola to second order with the quartic error $-k_{\Phi}^{4}/(8k_{m}^{3})$: at $k_{\Phi}/k_{m}=0.01$ the exact difference is $-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$ from the leading term, a relative agreement of $5\times10^{-5}$. The surface is therefore strictly timelike and touches the light cone nowhere. **The particle arm survives untouched; the wave arm becomes a level set of an affine symbol, and reading that level set as a mass shell is an approximation whose first correction is quartic.**
 

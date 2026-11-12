@@ -93,7 +93,7 @@ $$
 
 because each member acquires the product $\varsigma\varsigma^{-1} = 1$. The massive pair is not: its two sides acquire $\varsigma$ and $\varsigma^{-1}$, so it is form-invariant only for $\varsigma^2 = 1$, and for a central constant that is $\varsigma = \pm 1$. A local $\varsigma$ fails already in the massless case, because the derivative acts on $\varsigma$ and the two members acquire derivative terms that do not cancel. The mass therefore keeps the common phase and breaks the relative one. Whether the relative one can be gauged is open question 1.
 
-A mass term that *paired the field with its conjugate* would be a different object: $\flat$ is antilinear, $(\lambda\tilde{Ξ})^\flat = \lambda^{*}\tilde{Ξ}^{\flat}$ for a central phase, so such a term would acquire the factor $\exp(\frac{2\,i\,ϙ\,\Gamma}{\hbar})$ under a local phase and would be form-invariant only for $\lambda = \pm 1$. That obstruction belongs to the real structure and is treated in the companion articles on the neutrino and on the two kinds of mass; it is not a property of the parent's mass term, which pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$.
+A mass term that *paired the field with its conjugate* would be a different object: $\flat$ is antilinear, $(\lambda\tilde{Ξ})^\flat = \lambda^{*}\tilde{Ξ}^{\flat}$ for a central phase, so such a term would acquire the factor $\exp(2i\theta_{\mathrm{gau}})$ under a local phase and would be form-invariant only for $\lambda = \pm 1$. That obstruction belongs to the real structure and is treated in the companion articles on the neutrino and on the two kinds of mass; it is not a property of the parent's mass term, which pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$.
 
 The **charge** $ϙ$ is the coupling constant of the field, introduced by the gauge principle. It is a parameter: the algebra does not fix its value, its sign, or its quantization. For the electron $ϙ = -e$; the value and the sign are inserted, as *The Electron in Biquaternionic Form* records.
 
@@ -561,7 +561,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\tilde{F}$ | Field-strength biquaternion; $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}} = \sum_\mu  \tilde\nabla_{\mathrm{gco},\mu}^2 +\frac{i\,ϙ}{\hbar}\tilde{F}$ |
 | $\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Minimally coupled Dirac equation |
 | $\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}$ | Interaction term |
-| $\exp(\frac{2\,i\,ϙ\,\Gamma}{\hbar})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
+| $\exp(2i\theta_{\mathrm{gau}})$ | Phase that an antilinear mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\|\tilde{Ξ}\|^2 = \mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^*)$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
 | $\tilde J_{\Phi,\mathrm{sp}} = i\tilde{Ξ}\tilde{Ξ}^*$ | Naive bilinear; gauge invariant, in $\mathbb{B}_{\Phi}$, **not conserved** |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J_{\Phi}$ |

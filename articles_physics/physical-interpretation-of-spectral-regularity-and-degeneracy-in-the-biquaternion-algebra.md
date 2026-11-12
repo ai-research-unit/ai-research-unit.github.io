@@ -444,7 +444,9 @@ $$
 
 The element is a unit. It has the repeated eigenvalue $Q_t$, the minimal polynomial $(X-Q_t)^2$, a two-dimensional eigenspace $\ker L_{\vec\Upsilon}$, and no eigenbasis. The exponential is a phase and a scale at rate $Q_t$, multiplied by a drift linear in $\theta$.
 
-**Interpretation 1: a defective resonance and a secular drift.** The exponential $e^{\theta Q_t}(e_t+\theta\vec Q)$ is the algebraic form of a **double pole in the mode sum**: a mode whose amplitude grows linearly in the flow parameter on top of its phase. In the non-Hermitian language it is the Jordan-block dynamics of an exceptional point, the $t e^{-i\omega t}$ term that appears when two resonances coalesce. The physical interpretation is a **defective resonance**: one frequency, one eigenline, and a secular term.
+**Interpretation 1: a defective resonance and a secular drift.** The exponential $e^{\theta Q_t}(e_t+\theta\vec Q)$ is the algebraic form of a **double pole in the mode sum**: a mode whose amplitude grows linearly in the flow parameter on top of its phase. In the non-Hermitian language it is the Jordan-block dynamics of an exceptional point, the $t e^{-i\theta_{\mathrm{pwt}}}$ term that appears when two resonances coalesce. The physical interpretation is a **defective resonance**: one frequency, one eigenline, and a secular term.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 **Boundary.** The flow is the exponential of the element, not a solution of a specified equation of motion. The linear growth is algebraic; a physical secular term needs a driving, an initial condition or a non-Hermitian Hamiltonian, and the algebra supplies none of them.
 

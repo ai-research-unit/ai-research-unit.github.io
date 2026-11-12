@@ -4,7 +4,7 @@
 
 A quantum field theory admits three formulations: the equation of motion, the operator algebra, and the functional integral. For the scalar field of this framework the first two are the subjects of the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Canonical Quantization of the Biquaternion Klein–Gordon Field*; the third is the subject of this article. The functional integral writes the theory as a sum over field configurations weighted by the central phase $\exp(i\theta_{\mathrm{act}})$, and in doing so it makes the correlation functions of the quantized field the moments of a distribution on the space of classical configurations.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The division of labour among the path-integral articles of the corpus must be stated at once. The algebraic status of the phase — that the $i$ of $\exp(i\theta_{\mathrm{act}})$ is the central scalar imaginary, that the exponent lies in the material sector, and that the phase is a central $*$-unitary element — is a general statement about the functional integral and belongs to the companion article *The Functional Integral in Biquaternionic Form*, not here; it is taken as established. The functional integral of the **one-particle** Klein–Gordon theory, with its free Gaussian and its lattice regulator, is a statement in the relativistic quantum-theory category, given by the companion article *The Klein–Gordon Path Integral in Biquaternionic Form*, and is likewise not repeated. What is treated here is the complementary object: the functional integral of the **quantized** scalar field, its derivation from the operator formalism of the companion articles, its correlation functions, and its relation to the vacuum persistence amplitude and to pair creation.
 
@@ -54,9 +54,9 @@ S[\tilde{Ξ}]=\int d^4r\left[-\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}
 $$
 
 $$
-Z=\int\mathcal{D}\tilde{Ξ}\;\exp(\,iS[\tilde{Ξ}]/\hbar),
+Z=\int\mathcal{D}\tilde{Ξ}\;\exp(i\theta_{\mathrm{act}}),
 \qquad
-\exp(\,\frac{i\,S}{\hbar})\ \text{a central }{}^{*}\text{-unitary} .
+\exp(i\theta_{\mathrm{act}})\ \text{a central }{}^{*}\text{-unitary} .
 $$
 
 Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$ is

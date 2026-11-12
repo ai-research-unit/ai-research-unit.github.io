@@ -41,9 +41,9 @@ Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec 
 The gradient and its conjugate act on the plane wave by left multiplication by the two symbols,
 
 $$
-\tilde\nabla_\Phi\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})} = i\tilde K_{\Phi}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})},
+\tilde\nabla_\Phi\,e^{-i\theta_{\mathrm{pwp}}} = i\tilde K_{\Phi}\,e^{-i\theta_{\mathrm{pwp}}},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})} = i\tilde K_{\Phi}^{\natural}\,e^{\,i\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})},
+(\tilde\nabla_\Phi)^{\natural}\,e^{-i\theta_{\mathrm{pwp}}} = i\tilde K_{\Phi}^{\natural}\,e^{-i\theta_{\mathrm{pwp}}},
 $$
 
 a derived form: the time derivative of the phase is $-ik_{t}^{\prime}$ and the spatial derivative $+ik_k$, the two coordinates of $\tilde K_{\Phi}$ and nothing else, with $k_{t}^{\prime}=p_0/\hbar=E/(\hbar c)$ and $k_{\Phi\eta}=p_\eta/\hbar$; on the material sector the time derivative of the gradient is read with $\partial/\partial R_t = -i\,\partial/\partial x_0$ (*Operator and Calculus Conventions*, §*The Gradient*). The product of the two symbols is the symbol of the d'Alembertian,
@@ -143,7 +143,7 @@ the scalar propagator is the integral over a proper time $T$ of a kernel $\langl
 
 $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
-\exp(\frac{i}{\hbar}S_0[x]),
+\exp(i\theta_{\mathrm{act}}),
 \qquad
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau} - \hbar^{2}k_m^{2}\right),
 \qquad \hbar^{2}k_m^{2}=m^{2}c^{2},
@@ -158,6 +158,8 @@ $$
 $$
 
 writing $\vec r = r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ for the vector part of the position, and the phase reduces to $\exp\left(-\frac{i}{\hbar}\left[\frac{(x-x_2)^2}{4T} + \hbar^{2}k_m^{2} T\right]\right)$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then $\left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ in the first component and $\left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$ in the second. The worldline is a curve in the material sector $\mathbb{B}_{\Phi}$: its tangent is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+
+The angle is $\theta_{\mathrm{act}}=\mathrm{Re}\,S/\hbar$: the real part of the action is taken before dividing by $\hbar$, so the angle is real.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -212,7 +214,7 @@ with the unit $e_t$ of the algebra in place of the identity of the older display
 The path integral over the odd variables, with the boundary condition appropriate to the object computed, is a **spin factor** $Ξ[x]$ multiplying the scalar measure:
 
 $$
-\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(\frac{i}{\hbar}S_0[x])\;}
+\boxed{\;\mathcal S(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\;Ξ[x]\,\exp(i\theta_{\mathrm{act}})\;}
 $$
 
 with the spin factor

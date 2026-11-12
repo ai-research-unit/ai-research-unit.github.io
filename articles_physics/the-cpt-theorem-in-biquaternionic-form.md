@@ -90,7 +90,7 @@ $$
 $$
 and nothing else is meant by a paired operator in this article. Each line is first order, and the second-order form is obtained by composing the two, since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ are both the same scalar. The glyph the corpus once wrote for the two lines is retired: it carried no matrix generator and no chart, its only content was which gradient acted on which member, and it hid the adjoint and the metric that the two lines show.
 
-**The plane wave.** The wave numbers of the particle are $k_{t}^{\prime}=E_{\vec p}/(\hbar\,c)$, $\vec k_\Phi=\vec p/\hbar$ and $k_m=mc/\hbar$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$ the gradient acts by left multiplication by its symbol
+**The plane wave.** The wave numbers of the particle are $k_{t}^{\prime}=E_{\vec p}/(\hbar\,c)$, $\vec k_\Phi=\vec p/\hbar$ and $k_m=mc/\hbar$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts by left multiplication by its symbol
 $$
 i\tilde K_{\Phi}=-k_{t}^{\prime}\,e_t+i\vec k_\Phi,\qquad
 i\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
@@ -98,6 +98,8 @@ i\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime}\,e_t-i\vec k_\Phi,\qquad
 $$
 
 the last on the mass shell. The symbol is an element of the algebra, its square is not scalar, and its quaternion norm is the mass shell. This is the amplitude used in the verification below.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 ### The Two Entries, the Sides, and What No Element Does
 
@@ -113,7 +115,7 @@ Let $\tilde{Ξ}$ solve the pair, with $m$ the mass. A discrete operation is a ma
 
 The test is a substitution, and one convention must be fixed before it can be made. **The conjugation here is applied to the field value at each point**, $J[\tilde{Ξ}](x)=\overline{\tilde{Ξ}(x)}$, and every check below is made on the differential equation. That choice is what makes the factors of $C$ and $T$ determinate; read instead on the amplitudes with the plane-wave basis held fixed, the two factors change places, which is the convention trap this article records rather than hides. The composition is the same under either reading, and the next sections verify it as a composition.
 
-Under the pointwise reading the arithmetic is short. On $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$ the gradient acts as $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$. Conjugating the phase reverses the sign of both $k_{t}^{\prime}$ and $\vec k_\Phi$, so the conjugate branch carries the symbol of $i\tilde K_{\Phi}$ at the reversed four-momentum, namely $-i\tilde K_{\Phi}$; reflecting $r'_t$ alone reverses $k_{t}^{\prime}$ and leaves $\vec k_\Phi$, so that branch carries $-i\tilde K_{\Phi}^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.
+Under the pointwise reading the arithmetic is short. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts as $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$. Conjugating the phase reverses the sign of both $k_{t}^{\prime}$ and $\vec k_\Phi$, so the conjugate branch carries the symbol of $i\tilde K_{\Phi}$ at the reversed four-momentum, namely $-i\tilde K_{\Phi}$; reflecting $r'_t$ alone reverses $k_{t}^{\prime}$ and leaves $\vec k_\Phi$, so that branch carries $-i\tilde K_{\Phi}^{\natural}$. These two signs are the whole of the difference between $C$ and $T$, and they are computed below rather than asserted.
 
 ### Charge conjugation
 
@@ -124,7 +126,7 @@ $$
 
 with $J=\bar{\cdot}$ the conjugation of the coefficients, applied pointwise. The equation is conjugated and the two entries are exchanged, and one sign rides on the entry that came from $\tilde{Ξ}_{R}$. The sign is computed, not chosen.
 
-**Why the sign is there.** On $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$ the first member reads $\tilde\nabla_\Phi\tilde{Ξ}_{R}=i\tilde K_{\Phi}\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, so $\tilde{Ξ}_{L}=i\tilde K_{\Phi}\tilde{Ξ}_{R}/k_m$. Conjugating gives $\overline{\tilde{Ξ}_{L}}=i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}/k_m$ on the conjugate branch, and that branch carries $-i\tilde K_{\Phi}$ rather than $i\tilde K_{\Phi}^{\natural}$, because the frequency change reverses the sign of the $e_t$ term. The conjugated first member therefore comes out as
+**Why the sign is there.** On $e^{-i\theta_{\mathrm{pwp}}}$ the first member reads $\tilde\nabla_\Phi\tilde{Ξ}_{R}=i\tilde K_{\Phi}\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, so $\tilde{Ξ}_{L}=i\tilde K_{\Phi}\tilde{Ξ}_{R}/k_m$. Conjugating gives $\overline{\tilde{Ξ}_{L}}=i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}/k_m$ on the conjugate branch, and that branch carries $-i\tilde K_{\Phi}$ rather than $i\tilde K_{\Phi}^{\natural}$, because the frequency change reverses the sign of the $e_t$ term. The conjugated first member therefore comes out as
 $$
 (-i\tilde K_{\Phi})\,\frac{i\tilde K_{\Phi}^{\natural}\overline{\tilde{Ξ}_{R}}}{k_m}=-k_m\,\overline{\tilde{Ξ}_{R}},
 $$
@@ -193,9 +195,9 @@ Two remarks on conventions. First, an overall scalar multiplying both entries is
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one entry, the other being its completion,
 $$
-\tilde{Ξ}_{R}=\xi\,e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}+\xi_2\,e^{+i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)},\qquad
+\tilde{Ξ}_{R}=\xi\,e^{-i\theta_{\mathrm{pwp}}}+\xi_2\,e^{+i\theta_{\mathrm{pwp}}},\qquad
 \tilde{Ξ}_{L}=\frac{1}{k_m}\tilde\nabla_\Phi\tilde{Ξ}_{R}
-=\frac{1}{k_m}\bigl(i\tilde K_{\Phi}\xi\,e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}+\tilde K_{\Phi,+}\xi_2\,e^{+i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}\bigr),
+=\frac{1}{k_m}\bigl(i\tilde K_{\Phi}\xi\,e^{-i\theta_{\mathrm{pwp}}}+\tilde K_{\Phi,+}\xi_2\,e^{+i\theta_{\mathrm{pwp}}}\bigr),
 $$
 
 with
@@ -365,7 +367,7 @@ The classification supplies a second reading of the same eight operations: they 
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ |
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, written as two first-order equations; the pair operator is retired |
-| $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$ | Symbol of $\tilde\nabla_\Phi$ on $e^{-i(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r)}$; $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$ |
+| $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$ | Symbol of $\tilde\nabla_\Phi$ on $e^{-i\theta_{\mathrm{pwp}}}$; $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$ |
 | $J=\bar{\cdot}$, $\tilde{Ζ}^{J}$ | The conjugation of the field: the coefficient conjugation applied at each point, anti-linear and an automorphism |
 | $C[\tilde{Ξ}]=(-\tilde{Ξ}_{R}^J,\tilde{Ξ}_{L}^J)$ | Charge conjugation (anti-linear, exchanges the entries, internal factor $\Gamma$, $C^2=-e_t$) |
 | $P[\tilde{Ξ}](r'_t,\vec r)=(\tilde{Ξ}_{R},\tilde{Ξ}_{L})(r'_t,-\vec r)$ | Parity (linear, exchanges the entries, no internal factor, $P^2=\mathrm{id}$) |

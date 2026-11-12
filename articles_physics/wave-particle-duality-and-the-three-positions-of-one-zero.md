@@ -27,14 +27,17 @@ For every complex frequency there is exactly one complex number $k_{\Phi}^{2}$. 
 **A mode is a character, and the symbol says whether it solves the equation.** Write the mode
 
 $$
-\tilde\Xi=\xi\,e^{-i\bigl(k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r\bigr)},
+\tilde\Xi=\xi\,e^{-i\theta_{\mathrm{pwp}}},
 $$
 
 with $\xi$ a fixed element of the state module. The gradient brings down $i\tilde K_\Phi$, and the Klein–Gordon operator brings down its norm, so the equation $\mathcal{P}\tilde\Xi=0$ holds on the mode exactly when
 
 $$
 \sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}=0 .
+
 $$
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 That is the whole of the equation's content on a mode, and the article needs nothing else. The function $\sigma_{\mathcal{P}}$ is a complex number, not an element, because the norm of a quaternion is central; *Wave–Particle Duality and the Galilean Limit* uses that fact for the degree argument, and this article uses it for a different purpose: **a central symbol has a zero set that is a locus of complex numbers, and a locus of complex numbers can be drawn on a plane.**
 
@@ -100,7 +103,7 @@ so the momentum is imaginary with $\kappa=\sqrt{-k_{\Phi}^{2}}=\sqrt{\zeta^{2}+k
 
 ### The propagating mode, and why it is not a state
 
-**The first position has both numbers real and the frequency outside the gap.** Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{i(\vec k_\Phi\cdot\vec r-k_{t}^{\prime}r'_t)}$. **It is a solution everywhere and a state nowhere**, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.
+**The first position has both numbers real and the frequency outside the gap.** Put $k_{t}^{\prime}$ real with $\lvert k_{t}^{\prime}\rvert\ge k_m$. Then $k_{\Phi}^{2}\ge0$, the momentum can be taken real, and the mode is a plane wave $e^{-i\theta_{\mathrm{pwp}}}$. **It is a solution everywhere and a state nowhere**, because its modulus is one at every point and at every time: neither the spatial integral nor the temporal one converges. The position holds a flux, not a state.
 
 **The particle arm of the duality therefore needs a second operation here, and the operation is the packet.** *The Free Particle and Wave Packets in Biquaternionic Form* superposes modes of this position over a range of wave numbers, and the superposition is what is normalisable. The single zero is the building block and not the object. **This is the only position at which the duality demands a superposition before it has anything to be dual to**, and the reason is exactly the modulus: a plane wave's two arms are both delocalised, and neither is a particle until the packet localises it.
 
@@ -122,11 +125,13 @@ $$
 k_{t}^{\prime\,2}+\kappa^{2}=k_m^{2},
 $$
 
-so **the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant**, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-ik_{t}^{\prime}r'_t}$: exponential in space, oscillatory in time, normalisable in both. **This is the only position at which a mode is a state in the strict sense.**
+so **the bound positions are the circle of radius $k_m$ in the plane of frequency against decay constant**, and the frequency runs over the gap $(-k_m,k_m)$ as the decay constant runs over $(0,k_m)$. The mode is $e^{-\vec\kappa\cdot\vec r}e^{-i\theta_{\mathrm{pwt}}}$: exponential in space, oscillatory in time, normalisable in both. **This is the only position at which a mode is a state in the strict sense.**
 
 **The circle is exact, and it is not a dispersion relation in disguise.** It is the graph restricted to the imaginary-momentum line, which is to say it is nothing but $\sigma_{\mathcal{P}}=0$ with two substitutions. Its exactness is checkable: for a Klein–Gordon square well of width $2/k_m$ in units where $k_m=1$, the ground-state frequency was computed at twelve depths from $v=-0.05\,k_m$ to $v=-1.6\,k_m$ by bisection on the matching condition, and the quantity $k_{t}^{\prime\,2}+\kappa^{2}$ deviated from $k_m^{2}$ by at most $2.2\times10^{-16}$ over the twelve, which is round-off. **The circle is not an approximation that the well spoils; the well only chooses the point.**
 
 **The two halves of the arc are the two halves of the gap.** Deepening the well moves the point along the arc: the frequency falls and the decay constant rises, reaches its maximum $k_m$ at $k_{t}^{\prime}=0$, and then falls again as the frequency goes negative. **The midpoint of the gap is where the tail falls off fastest**, and a reader who expects the fastest fall-off at the deepest binding will find it at zero energy instead.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 ### The ceiling is the Compton wavelength
 
@@ -218,7 +223,7 @@ which is the reciprocal of the transmission amplitude up to a phase, and whose z
 
 ### Two expressions, one identity
 
-**The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.** The pole contributes the amplitude $e^{-ik_{t}^{\prime}r'_t}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\Gamma t/\hbar}$,
+**The width is twice the imaginary part of the frequency, and this is a definition rather than a formula.** The pole contributes the amplitude $e^{-i\theta_{\mathrm{pwt}}}$, so with $k_{t}^{\prime}=k_R-ik_I$ and $k_I>0$ the probability falls as $e^{-2k_Ir'_t}$. Since $r'_t=ct$ and the probability is $e^{-\Gamma t/\hbar}$,
 
 $$
 \boxed{\;\Gamma=2\hbar c\,\lvert\Im k_{t}^{\prime}\rvert\;}

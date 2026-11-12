@@ -452,13 +452,13 @@ $$
 \mathbb{C}\ (\text{degree }0),\qquad S\ (\text{degree }1),\qquad S\otimes S\ (\text{degree }2),
 $$
 
-of dimensions $1$, $2$ and $4$. The trace form identifies $S^{*}$ with $S$, so $S\otimes S\cong\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$, and under $G$ it splits as
+of dimensions $1$, $2$ and $4$. The module $S$ is self-dual, the invariant alternating form $\varepsilon$ identifying $S^{*}$ with $S$, so $S\otimes S\cong\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$, and under $G$ it splits as
 
 $$
 S\otimes S=\Lambda^2S\oplus\operatorname{sym}^2S\cong\mathbf{1}\oplus\mathbf{3}.
 $$
 
-The trivial summand is $\Lambda^2S$, spanned under the identification by the identity endomorphism; the traceless symmetric part is the adjoint $V$. The dimensions $1$, $2$, $3$ are those of the degree-$0$ object, the degree-$1$ object, and the traceless part of the degree-$2$ object.
+The trivial summand is $\Lambda^2S$, the line of $\varepsilon$, and the identification carries it to the line of the identity endomorphism; the traceless symmetric part is the adjoint $V$. The dimensions $1$, $2$, $3$ are those of the degree-$0$ object, the degree-$1$ object, and the traceless part of the degree-$2$ object.
 
 The truncation is the same fact from the other side. The algebra is the endomorphism object of $S$, of dimension $4$, and it splits as $\mathbf{1}\oplus\mathbf{3}$; degree $3$ is $S^{\otimes3}$, of dimension $8$, and it is not a subspace of $\mathbb{B}$. Spin above one is a carrier but not a subcarrier, which is the remark that closes §*The Subcarriers of the Regular Module*.
 

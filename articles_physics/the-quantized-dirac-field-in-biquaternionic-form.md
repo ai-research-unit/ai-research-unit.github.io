@@ -280,7 +280,7 @@ $$
 \mathcal{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_\eta p_\eta\,\vec e_\eta\tilde X\vec e_y ,
 $$
 
-the first the operator and the second its value on the plane wave $\exp(-iE_{\vec p}r'_t/(\hbar c)+i\vec p\cdot\vec r/\hbar)$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathcal{D}^2=\Box$ and $\mathcal{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.
+the first the operator and the second its value on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathcal{D}^2=\Box$ and $\mathcal{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.
 
 The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.
 

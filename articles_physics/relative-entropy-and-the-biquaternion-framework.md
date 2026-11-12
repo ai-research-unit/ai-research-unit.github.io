@@ -78,7 +78,7 @@ The parameter is a genuine superposition coordinate: $\vec r$ is the Bloch vecto
 
 ### The Logarithm of a Biquaternion State
 
-The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction: for a unit pure quaternion $\vec u_r$ one has $(i\vec u_r)^2=e_t$, so
+The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction, with $\theta_{\mathrm{rpd}}$ the rapidity of the boost, real below $c$: for a unit pure quaternion $\vec u_r$ one has $(i\vec u_r)^2=e_t$, so
 $$
 \exp\big(\theta_{\mathrm{rpd}}\,i\vec u_r\big)=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_r.
 $$

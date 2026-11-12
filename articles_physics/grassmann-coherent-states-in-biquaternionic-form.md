@@ -230,7 +230,9 @@ $$
 \tilde{Ξ}(\tau+\beta)=-\tilde{Ξ}(\tau) ,
 $$
 
-which is the statement that the Matsubara frequencies of a fermion are the half-integer ones $\omega_n=(2n+1)\pi/\beta$. The antiperiodicity was checked directly: for $n=0,1,2$ and $\beta=2.7$, $\tau=0.83$, the ratio $\exp(i\omega_n(\tau+\beta))/\exp(i\omega_n\tau)$ equals $-1$ to nine decimal places. The sign is the fermionic one and is the same sign as the anticommutator; the companion article *The KMS Condition and the Biquaternion Framework* treats the analytic structure that the antiperiodicity generates.
+which is the statement that the Matsubara frequencies of a fermion are the half-integer ones $\omega_n=(2n+1)\pi/\beta$. The antiperiodicity was checked directly: for $n=0,1,2$ and $\beta=2.7$, $\tau=0.83$, the ratio $\exp(i\theta_{\mathrm{mat}})/\exp(i\theta_{\mathrm{mat}})$ equals $-1$ to nine decimal places. The sign is the fermionic one and is the same sign as the anticommutator; the companion article *The KMS Condition and the Biquaternion Framework* treats the analytic structure that the antiperiodicity generates.
+
+The angle is $\theta_{\mathrm{mat}}=\omega_n\tau$: the Matsubara frequency $\omega_n=2\pi n/\mathcal B$ is real and the interval $\tau$ is real, so the angle is real.
 
 ## What Is Standard and What the Algebra's
 

@@ -290,6 +290,7 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 
 ## Further Reading
 
+- [The Superalgebra Reading and the Odd Extension in Biquaternionic Form](the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html), which takes this grading, adds the odd slot as a superalgebra with the graded bracket, and states the sign the adjoint puts on it.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the parity grading, the volume element and the two conjugations.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the grade involution, the reflection count and the split of the orthogonal group.

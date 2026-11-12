@@ -245,7 +245,7 @@ where $\beta$ is the **chirality measure** of the medium, a real scalar of the d
 
 **A name collision.** Everywhere else in this framework the same word labels the two halves of a Dirac field: the element carries the subscript $L$ or $R$, that label takes those two values and no third, and it is read off the element rather than computed; for that sense see *Chiral Fermions in the Biquaternion Framework*. "Chiral medium" is the older use of the same word for an optically active material. The two senses are unrelated and are distinguished by context alone; the medium sense occurs only in this section and its two companions below. The physical motivation for the medium sense — organic molecules such as DNA at some frequencies, the pupil of the eye, and manufactured chiral materials — is recorded by the authors of the time-harmonic treatment cited below.
 
-**The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial r'_t=ic\,\partial/\partial R_t$, so that $\partial/\partial r'_t$ and $ic\,\partial/\partial R_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial r'_t$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial R_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\omega r'_t/c)$, so that $\partial/\partial r'_t\to i\omega/c$.
+**The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial r'_t=ic\,\partial/\partial R_t$, so that $\partial/\partial r'_t$ and $ic\,\partial/\partial R_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial r'_t$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial R_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\theta_{\mathrm{pwt}})$, so that $\partial/\partial r'_t\to i\omega/c$.
 
 **The reduction, and why it is not the same reduction.** Substituting the two relations into Faraday's and Ampère–Maxwell's laws and keeping the two divergence equations gives the chiral system
 $$
@@ -286,7 +286,7 @@ $$
 $$
 which is the parent article's factorization read with the opposite overall sign for $\Box$. The source cites the same identity as the factorization of the non-chiral wave operator on which the earlier quaternionic reformulation rests. Read together, the two statements say that the parent's reduction is the $\beta=0$ member of a one-parameter family, and the member whose single equation is *first* order.
 
-**A degenerate frequency in the frequency domain.** A Fourier transform in $r'_t$ in the $\exp(i\omega r'_t/c)$ convention replaces $\partial/\partial r'_t$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
+**A degenerate frequency in the frequency domain.** A Fourier transform in $r'_t$ in the $\exp(i\theta_{\mathrm{pwt}})$ convention replaces $\partial/\partial r'_t$ by $i\omega$ and turns $\mathcal{M}$ into $\beta\sqrt{\epsilon\mu}\,i\omega D+\sqrt{\epsilon\mu}\,i\omega-iD$, which factors exactly:
 $$
 \mathcal{M}(\omega)=i\left(\beta\sqrt{\epsilon\mu}\,\omega-1\right)\bigl(D+\alpha(\omega)\bigr),
 \qquad
@@ -327,7 +327,7 @@ which the source identifies as the quaternionic form of the Silver–Müller con
 
 Causality is then imposed, not assumed: among the regularisations of the inverse transform the source selects the one that vanishes for $r'_t<0$, by displacing the frequency into the upper half-plane, $\omega\mapsto\omega-i0$, "in agreement with the condition $\mathrm{Im}\,\alpha\geq0$". For a simple pole this gives the retarded factor
 $$
-\frac{1}{2\pi i}\oint\frac{\exp(i\omega r'_t/c)\,d\omega}{\omega-a_y}
+\frac{1}{2\pi i}\oint\frac{\exp(i\theta_{\mathrm{pwt}})\,d\omega}{\omega-a_y}
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\exp(i a_y r'_t),
 $$
 with $a_y=a+iy$ and $\mathrm{H}_{\mathrm{hvs}}$ the Heaviside function, and the higher-order poles give $\mathrm{H}_{\mathrm{hvs}}(r'_t)\,\exp(ia_yr'_t)(ir'_t)^{n}/n!$; the residue formula was checked to $3.2\times10^{-9}$ for pole orders 1–3. For $r'_t<0$ the same integrand must be closed in the lower half-plane, where the displaced pole is not enclosed, so the contour integral vanishes: that is the content of the causality principle here, and it is exactly the statement that the displaced pole lies in the upper half-plane. Convolution of the resulting kernel with the quaternionic source then solves the inhomogeneous chiral system in whole space.
@@ -452,7 +452,7 @@ D\,\vec{\mathcal H}+\vec{\mathcal H}\,\vec{\mu}
 =\frac{1}{c}\,\partial/\partial r'_t\,\vec{\mathcal E}+\sqrt{\mu}\,\vec J,
 $$
 
-the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\omega r'_t/c)$ used by the source of this section — the dispersion section above uses $\exp(-i\theta_{\mathrm{pwt}})$ and the two must not be mixed — with $k_\Phi=\omega\sqrt{\epsilon\mu}$,
+the corrections now being right products, as the dots record. In the time-harmonic convention $\exp(i\theta_{\mathrm{pwt}})$ used by the source of this section — the dispersion section above uses $\exp(-i\theta_{\mathrm{pwt}})$ and the two must not be mixed — with $k_\Phi=\omega\sqrt{\epsilon\mu}$,
 
 $$
 D\,\vec{\mathcal E}+\vec{\mathcal E}\,\vec{\epsilon}=-ik_\Phi\,\vec{\mathcal H}-\frac{\rho}{\sqrt{\epsilon}},

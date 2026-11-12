@@ -95,7 +95,9 @@ so $ie_t$ is a root of $-e_t$, the exponential $e^{i\theta_{\mathrm{cen}}}$ has 
 
 The probability band owns the same centre but reads it as a modulus: it has the clock's values and not the clock's generator.
 
-**The clock is imported as a material element.** A reversible family of the band is a family of unitaries $U(r'_t)=e^{iHr'_t/(\hbar\,c)}$ with $H$ Hermitian. The family lies in the band, since $U(r'_t)U(r'_t)^{*}=e_t$, but its generator is $iH$, which is anti-Hermitian, that is, material. The band contains the clock's action and not the clock's element: time is the parameter of a family whose generator is material.
+**The clock is imported as a material element.** A reversible family of the band is a family of unitaries $U(r'_t)=e^{i\theta_{\mathrm{evo}}}$ with $H$ Hermitian. The family lies in the band, since $U(r'_t)U(r'_t)^{*}=e_t$, but its generator is $iH$, which is anti-Hermitian, that is, material. The band contains the clock's action and not the clock's element: time is the parameter of a family whose generator is material.
+
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 ### The Interval Is a Clock and the Square a Ruler
 

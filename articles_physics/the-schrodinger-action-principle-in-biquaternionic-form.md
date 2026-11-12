@@ -1,3 +1,11 @@
+# __The Schrödinger Action Principle in Biquaternionic Form__
+
+The action principle of the Schrödinger field, written in the biquaternion algebra.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+| --- | --- |
 | $\tilde\Xi$ | The Schrödinger field, one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian symbol |
 | $\mathrm{Lag}=L/c$ | Lagrangian per unit $r'_t$ |
@@ -19,7 +27,7 @@
 - *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Legendre transform and the phase-space biquaternion in the non-quantum setting.
 - *The Symplectic Form and the Biquaternion Norm Cone*, for the symplectic structure that A's boundary term reproduces on the space of fields.
 - *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*, for the stress tensor and the field-action conventions used in the last section.
-- *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*, for the classical action principle and for the stationary-phase statement that belongs to B and not to A.
+- *The Action Principle and the Classical Limit in Biquaternionic Form*, for the classical action principle and for the stationary-phase statement that belongs to B and not to A.
 - P. A. M. Dirac, "The Lagrangian in Quantum Mechanics," *Physikalische Zeitschrift der Sowjetunion* **3** (1933) 64–72. The first-order Lagrangian and the transformation function.
 - R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* **20** (1948) 367–387. The sum over path phases, for contrast with a variational principle.
 - E. Noether, "Invariante Variationsprobleme," *Nachrichten von der Gesellschaft der Wissenschaften zu Göttingen* (1918) 235–257. The construction that produces the density and the current from the phase rotation.

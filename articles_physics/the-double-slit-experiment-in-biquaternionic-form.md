@@ -6,7 +6,7 @@ The double-slit experiment is the minimal experiment in which a quantum amplitud
 
 This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ says about the double slit, and what it does not. The read list has already settled the three objects the question depends on. *The Path Integral in Biquaternionic Form* identifies the symbol $i$ of the phase $\exp(i\theta_{\mathrm{act}})$ with the **central scalar imaginary**, places the exponent $\frac{i\,S}{\hbar}$ in the material sector $\mathbb{B}_{\Phi}$, and records that only *relative* phases of paths are observable. *The Schrödinger Equation in Biquaternionic Form* identifies the wave function not with an element of $\mathbb{B}_{\Psi}$ but with a **spinor in a Peirce carrier**, a minimal left ideal here, $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and shows that the same central $i$ is the complex structure of that module. *Quantum Physics in Biquaternionic Form* supplies the states, observables, Born rule, and measurement rule for the corresponding qubit. Two further articles of the series carry the geometry the double slit turns out to use: *The Bloch Ball as the Normalised Slice of the Future Light Cone* identifies the state space with a slice of the biquaternion-norm cone, and *Decoherence as Idempotent Projection* describes the destruction of coherence as an algebraic channel. This article assembles these into the canonical interference experiment.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The division between what is established and what is interpretation is stated here and kept explicit.
 
@@ -194,7 +194,7 @@ $$
 which is $*$-unitary, $(\exp(\frac{\vec u\,S}{\hbar}))(\exp(\frac{\vec u\,S}{\hbar}))^\dagger = e_t$, and whose exponent $\frac{\vec u\,S}{\hbar}$ also lies in $\mathbb{B}_{\Phi}$. Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
-\exp(\frac{\vec e_{z}\,S}{\hbar}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-\frac{i\,S}{\hbar}),\, \exp(+\frac{i\,S}{\hbar})\bigr),
+\exp(\frac{\vec e_{z}\,S}{\hbar}) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-i\theta_{\mathrm{act}}),\, \exp(+i\theta_{\mathrm{act}})\bigr),
 $$
 
 verified directly in the matrix representation. It is a **relative** phase between the two spin components — a spin rotation — not a global phase shared by both.

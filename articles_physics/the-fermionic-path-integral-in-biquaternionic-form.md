@@ -4,7 +4,7 @@
 
 The companion article *The Path Integral in Biquaternionic Form* settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(i\theta_{\mathrm{act}})$ is a *central* $*$-unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $i r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article *The Feynman Propagator in Biquaternionic Form* adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* adds that $r'_t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 **Units.** Throughout, a four-momentum is $(p_0,\vec p)$ with $p_0=E/c$, the mass shell is $E^2=\vec p^{\,2}c^2+m^{2}\,c^{4}$, and every mass enters through the mass wave number $k_m=mc/\hbar$.
 
@@ -288,7 +288,9 @@ $$
 \tilde{Ξ}(\tau+\beta)=-\tilde{Ξ}(\tau) ,
 $$
 
-which is the same statement as the Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, and the same sign as the anticommutator. The identity $e^{i\omega_n\beta}=-1$ holds exactly for every integer $n$; it was checked for $n=0,1,2$. The boundary condition is what makes the Euclidean determinant a product over half-integer Matsubara modes rather than integer ones, and it is the path-integral statement of the spin–statistics pairing.
+which is the same statement as the Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, and the same sign as the anticommutator. The identity $e^{i\theta_{\mathrm{pwt}}}=-1$ holds exactly for every integer $n$; it was checked for $n=0,1,2$. The boundary condition is what makes the Euclidean determinant a product over half-integer Matsubara modes rather than integer ones, and it is the path-integral statement of the spin–statistics pairing.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 **The partition function.** On the Euclidean circle the free integral is a determinant,
 
@@ -356,7 +358,7 @@ $$
 
 with the two imaginary units of the numerator multiplied to $-1$. The determinant of the pair is $(p^2-m^{2}\,c^{2})^4$, which is $\det(\Box-k_m^{2})$ on the same carrier, because each line composed with its partner is $p^2$, so the eigenvalues are $\pm\mu$ in four opposite pairs and each pair contributes $m^2-\mu^2$.
 
-For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\tilde{Ξ}\,\exp(-\frac12\tilde{Ξ} A\tilde{Ξ})=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ makes available the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\tilde{Ξ}(\tau+\beta)=-\tilde{Ξ}(\tau)$; the identity $e^{i\omega_n\beta}=-1$ is exact for every integer $n$ and equivalent to $\omega_n=(2n+1)\pi/\beta$.
+For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\tilde{Ξ}\,\exp(-\frac12\tilde{Ξ} A\tilde{Ξ})=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ makes available the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\tilde{Ξ}(\tau+\beta)=-\tilde{Ξ}(\tau)$; the identity $e^{i\theta_{\mathrm{pwt}}}=-1$ is exact for every integer $n$ and equivalent to $\omega_n=(2n+1)\pi/\beta$.
 
 The algebra contributes the centrality of the phase, the sector location of the deformation, and the existence of the pairing. It does not supply the measure, the evaluation of the determinant, or the phase, and the article says so.
 

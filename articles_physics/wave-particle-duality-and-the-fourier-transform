@@ -149,7 +149,9 @@ c\,\partial_{r_{t}^{\prime}}\rho+\vec\nabla\cdot\vec J=0
 \omega\,\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0 .
 $$
 
-**The sign is the corpus's phase, and it is worth naming because the other choice is common.** A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r_{t}^{\prime}/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\omega t)$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; *Derivatives, Fields and Transforms* states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.
+**The sign is the corpus's phase, and it is worth naming because the other choice is common.** A plane wave is written $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r_{t}^{\prime}/c)\bigr)$ throughout the corpus, so the time derivative brings $-i\omega$ and each spatial derivative $+ik$. A reader who uses $\exp(i\theta_{\mathrm{pwt}})$ time dependence gets $+i\omega$ and the opposite sign in every display below, with no change in content; *Derivatives, Fields and Transforms* states the same thing of the symbol, that its constant and its sign are fixed by the convention and that neither is claimed.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 **The image carries the frequency $\omega$, not $k_{t}^{\prime}$.** The conjugate of $r_{t}^{\prime}$ is $k_{t}^{\prime}=\omega/c$, and the $c$ in front of the derivative is what turns it into $\omega$; the intermediate display above keeps both factors so that the bookkeeping is visible. In four-vector form the statement is that the current is orthogonal to $(\omega,\vec k_{\Phi})$, the four-wave-number written with each component in its own units.
 

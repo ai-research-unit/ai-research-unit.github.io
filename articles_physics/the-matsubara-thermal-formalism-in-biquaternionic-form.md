@@ -79,11 +79,11 @@ The framework's grading is the even/odd decomposition of the algebra and of the 
 
 The periodicity fixes the spectrum of the compactified time derivative, and hence the propagator.
 
-**Frequencies.** A function on the circle of circumference $\beta$ has Fourier modes $\exp(i\omega_n\tau)$, and the boundary condition selects the frequencies
+**Frequencies.** A function on the circle of circumference $\beta$ has Fourier modes $\exp(i\theta_{\mathrm{mat}})$, and the boundary condition selects the frequencies
 $$
-\exp(i\omega_n(\tau+\beta))=+\exp(i\omega_n\tau) \Rightarrow \omega_n=\frac{2\pi n}{\beta},
+\exp(i\theta_{\mathrm{mat}})=+\exp(i\theta_{\mathrm{mat}}) \Rightarrow \omega_n=\frac{2\pi n}{\beta},
 \qquad
-\exp(i\omega_n(\tau+\beta))=-\exp(i\omega_n\tau) \Rightarrow \omega_n=\frac{(2n+1)\pi}{\beta},
+\exp(i\theta_{\mathrm{mat}})=-\exp(i\theta_{\mathrm{mat}}) \Rightarrow \omega_n=\frac{(2n+1)\pi}{\beta},
 \qquad n\in\mathbb{Z},
 $$
 which are the **bosonic** and **fermionic Matsubara frequencies**. The discrete spectrum replaces the continuous $p_0$ integral of the vacuum theory by a sum:
@@ -91,6 +91,8 @@ $$
 \int\frac{dp^0}{2\pi}\,f(p_0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
 $$
 and the corresponding thermal wave biquaternion is the material element $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$.
+
+The angle is $\theta_{\mathrm{mat}}=\omega_n\tau$: the Matsubara frequency $\omega_n=2\pi n/\mathcal B$ is real and the interval $\tau$ is real, so the angle is real.
 
 **The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=-p^2+m^2$ at the material wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
 $$
@@ -201,7 +203,7 @@ A(\omega)\ \ge 0 ,
 $$
 in which $A$ is the spectral function and the discrete frequencies $\omega_n$ are the points at which the function is known. This is the finite-temperature form of the H_{\mathrm{modular}}ällen–Lehmann representation of the LSZ article, and its positivity has the same origin, the positivity of the inner product of the state space. The analytic structure of $G$ in the complex frequency plane is therefore fixed by $A$: $G$ is analytic off the real axis and its discontinuity across the cut is $A$.
 
-**The positivity is the Bochner theorem at the central root.** The thermal two-point function is a positive-definite function on the compactified time: $F_{\tilde Q_1\tilde Q_1}(r'_t)=\langle\tilde Q_1(r'_t)\tilde Q_1\rangle_\beta$ is positive definite by the positivity of the state-space inner product. That is the hypothesis of Bochner's theorem, and the conclusion is that $F$ is the transform of a positive measure on the circle — the discrete measure with weights $A(\omega_n)\ge0$. So the spectral function's positivity is not an extra assumption of the thermal theory; it is the classical Bochner statement, and in the framework it is the central-root case of the biquaternion Bochner theorem, quoted here in the form the companion article proves it. With the general plain sesquilinear form $\langle\tilde Q_3,\tilde Q_4\rangle_{*}=\mathrm{Sc}(\tilde Q_3\tilde Q_4^{*})$, the quadratic form $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ factorises as the integral $\int ZZ^{*}\,d\mu$ of a positive element, and the transform of a positive measure is positive definite **exactly** for the degenerate roots — the central imaginary $\rho=\pm i$ and the unit pure real quaternions $\rho=\pm\mu$ — while the non-degenerate roots $\rho=b\mu+d\nu i$ fail; at the central root the transform is $G=\xi e_t$ with $\xi$ the classical positive-definite function, *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*. The Matsubara kernel is the **central-root** character: $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, the central scalar imaginary, and the central root is degenerate. The thermal correlator's positivity is therefore the central-root case of the theorem, found by the same form $\langle\cdot,\cdot\rangle_{*}$ that the propagator uses. No passage to another sector is involved: the kernel is central, the root is degenerate, and the measure is the one the state supplies.
+**The positivity is the Bochner theorem at the central root.** The thermal two-point function is a positive-definite function on the compactified time: $F_{\tilde Q_1\tilde Q_1}(r'_t)=\langle\tilde Q_1(r'_t)\tilde Q_1\rangle_\beta$ is positive definite by the positivity of the state-space inner product. That is the hypothesis of Bochner's theorem, and the conclusion is that $F$ is the transform of a positive measure on the circle — the discrete measure with weights $A(\omega_n)\ge0$. So the spectral function's positivity is not an extra assumption of the thermal theory; it is the classical Bochner statement, and in the framework it is the central-root case of the biquaternion Bochner theorem, quoted here in the form the companion article proves it. With the general plain sesquilinear form $\langle\tilde Q_3,\tilde Q_4\rangle_{*}=\mathrm{Sc}(\tilde Q_3\tilde Q_4^{*})$, the quadratic form $Q=\sum_{k,l}A_kG(\omega_k-\omega_l)A_l^{*}$ factorises as the integral $\int ZZ^{*}\,d\mu$ of a positive element, and the transform of a positive measure is positive definite **exactly** for the degenerate roots — the central imaginary $\rho=\pm i$ and the unit pure real quaternions $\rho=\pm\mu$ — while the non-degenerate roots $\rho=b\mu+d\nu i$ fail; at the central root the transform is $G=\xi e_t$ with $\xi$ the classical positive-definite function, *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*. The Matsubara kernel is the **central-root** character: $\exp(i\theta_{\mathrm{mat}})$ is the exponential of $\rho=i$, the central scalar imaginary, and the central root is degenerate. The thermal correlator's positivity is therefore the central-root case of the theorem, found by the same form $\langle\cdot,\cdot\rangle_{*}$ that the propagator uses. No passage to another sector is involved: the kernel is central, the root is degenerate, and the measure is the one the state supplies.
 
 **Continuation.** The retarded and advanced functions are the boundary values
 $$
@@ -226,7 +228,7 @@ The interaction theory is the vacuum perturbation theory with the discrete sums 
 **Established (framework).**
 - The Matsubara circle is a compactified material-sector direction; its circumference is the KMS width $\beta$, and the KMS strip and the circle are the same complexified material time.
 - The Euclidean mass-shell operator is the Hermitian form of the material wave biquaternion, $\mathcal{M}_E=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2$ with $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p\in\mathbb{B}_{\Phi}$, central and positive, with no real pole; the norm $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$ is indefinite; the Lorentzian mass shell maps to complex momentum.
-- The thermal correlator's positivity is the Bochner theorem at the central root, $\rho=i$, the root of the kernel $\exp(i\omega_n\tau)$.
+- The thermal correlator's positivity is the Bochner theorem at the central root, $\rho=i$, the root of the kernel $\exp(i\theta_{\mathrm{mat}})$.
 - The two frequency sets are the two grading classes' Fourier spectra; the periodic/antiperiodic split is the even/odd split.
 - The free energy carries the multiplicity of the module trace; the one-loop free energy is $\log Z=-\tfrac12\mathrm{Tr}\log\mathcal{M}_E$.
 
@@ -260,7 +262,7 @@ and the Euclidean mass-shell operator is the Hermitian form of that element,
 $$
 \mathcal{M}_E(\tilde P_{\Phi,E})=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2=k_{\mathrm{eu}}^2+m^2>0 ,
 $$
-positive because the Hermitian form is positive definite and not because the axes are rotated, so the propagator has no real pole and the Lorentzian mass shell maps to complex momentum. The positivity of the thermal correlator is the Bochner theorem at the central root, $\rho=i$, the root of the kernel $\exp(i\omega_n\tau)$. The frequencies are $\omega_n=2\pi n/\beta$ (bosonic) and $\omega_n=(2n+1)\pi/\beta$ (fermionic), the two grading classes' Fourier spectra. The sum rules
+positive because the Hermitian form is positive definite and not because the axes are rotated, so the propagator has no real pole and the Lorentzian mass shell maps to complex momentum. The positivity of the thermal correlator is the Bochner theorem at the central root, $\rho=i$, the root of the kernel $\exp(i\theta_{\mathrm{mat}})$. The frequencies are $\omega_n=2\pi n/\beta$ (bosonic) and $\omega_n=(2n+1)\pi/\beta$ (fermionic), the two grading classes' Fourier spectra. The sum rules
 $$
 \frac{1}{\beta}\sum_n\frac{1}{\omega_n^2+E^2}=\frac{\coth(\beta E/2)}{2E},
 \qquad

@@ -170,10 +170,12 @@ This is the sharpest statement the corpus can make about the paper, and it is th
 The free directions have a visible consequence.
 
 $$
-F = \vec A\,\exp(i(\omega r'_t/c - \vec k_\Phi\cdot\vec r)), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k_\Phi \in \mathbb{R}^3,
+F = \vec A\,\exp(i\theta_{\mathrm{pwp}}), \qquad \vec A \in \mathbb{C}^3, \quad \omega \in \mathbb{R}, \quad \vec k_\Phi \in \mathbb{R}^3,
 $$
 
 solves the nonlinear equation for **every** $(\omega, \vec k_\Phi)$, to $5.3 \times 10^{-15}$, and $99$ of the $100$ samplings were **non-null**, $|\vec k_\Phi|^2 \ne \omega^2$. This is the constant-background case of the paper's section 9 theorem, which is stated and verified in *Associated Fields* below, and it is a genuine and clean statement: the equation is so weak that a constant-amplitude plane wave of any frequency and direction is a solution. But it is the opposite of a dispersion relation. The paper's section 10 supplies $\omega^2 = k^2$ by a separate argument, from the requirement that the phase speed be the speed of light, and that argument is external to the field equation. A reader who takes the abstract literally will be misled; a reader who takes section 10 will not. The paper's own conclusions read the same fact positively, and consistently: the nonlinear free-field equations admit plane waves with a **longitudinal** component, the criterion being a non-zero regular current, and the paper suggests that this can account for light's angular momentum without a purely transverse wave. That interpretation is the one the computation supports — the amplitude is free, hence not forced transverse — and it is the abstract's promise of a *dispersion relation* that the computation does not support.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 ### Superposition
 
@@ -208,7 +210,7 @@ and the printed sum is not zero but twice $\partial/\partial r'_t\nabla\cdot\vec
 The paper's section 9 gives the general way to make solutions, and it is the strongest positive result in the paper. Its statement: if $F_0$ is any solution of the **linear** Maxwell system, and $f$ is the phase factor of a plane wave,
 
 $$
-f(r'_t,\vec r) = \exp(i(\omega_1 r'_t/c - \vec k_1\cdot\vec r)),
+f(r'_t,\vec r) = \exp(i\theta_{\mathrm{pwp}}),
 \tag{9.1}
 $$
 

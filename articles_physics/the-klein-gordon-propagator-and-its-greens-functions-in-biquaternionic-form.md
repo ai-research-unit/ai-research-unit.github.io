@@ -81,11 +81,11 @@ $$
 
 with the physical measure $d^3y\,dr'_{t,2}$ over the source point $\tilde{R}_{\Phi,2}$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-k_m^{2})G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $k_m=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(r'_t-R)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
 
-A second convention is fixed at the same time: the whole article works with the operator $\Box-k_m^{2}$ and never with $-\Box+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d(\omega/c)$, whose fourth component is $p_0=\omega/c$, and the phase $\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))$, the defining equation becomes
+A second convention is fixed at the same time: the whole article works with the operator $\Box-k_m^{2}$ and never with $-\Box+k_m^{2}$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d(\omega/c)$, whose fourth component is $p_0=\omega/c$, and the phase $\exp(-i\theta_{\mathrm{pwp}})$, the defining equation becomes
 
 $$
-\int\frac{d^4p}{(2\pi\hbar)^4}\left(\frac{\omega^2}{c^{2}}-\frac{\vec p^2}{\hbar^{2}}-k_m^{2}\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c))
-=-\int\frac{d^4p}{(2\pi\hbar)^4}\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)),
+\int\frac{d^4p}{(2\pi\hbar)^4}\left(\frac{\omega^2}{c^{2}}-\frac{\vec p^2}{\hbar^{2}}-k_m^{2}\right)G(\omega,\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
+=-\int\frac{d^4p}{(2\pi\hbar)^4}\exp(-i\theta_{\mathrm{pwp}}),
 $$
 
 so the amplitude is
@@ -98,6 +98,8 @@ p^2\equiv\frac{\omega^2}{c^{2}}-\frac{\vec p^2}{\hbar^{2}} ,
 $$
 
 Here $p^2$ is the wave-number squared of the four-momentum, an inverse length squared, and the letter $p$ is also the one that indexes the momentum in the measure; the two readings of the letter are separated by the context, the measure always written with $d^3p$ and the scalar always written with a squared symbol.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 The prescription that deforms the real axis is the whole of the difference between the four kernels. With the constants carried the amplitude above reduces at $k_m=0$ to $\frac{1}{\vec p^2/\hbar^{2}-\omega^2/c^{2}}$, whose contour integral is the exercise's retarded kernel.
 
@@ -155,7 +157,7 @@ Assembling the frequency integral with the spatial measure gives the retarded ke
 $$
 G_R(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
 =\mathrm{H}_{\mathrm{hvs}}(r'_t)\int\frac{d^3p}{(2\pi\hbar)^3}\,
-\frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}}\,\exp(i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)),
+\frac{\sin(\Omega_{\vec p}r'_t)}{\Omega_{\vec p}}\,\exp(i\theta_{\mathrm{spa}}),
 $$
 
 a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde{R}_{\Phi,2})$ the convolution
@@ -166,12 +168,14 @@ $$
 
 then solves $(\Box-k_m^{2})\tilde{Ξ}=-J$, by the same translation-invariance argument as in the massless exercise.
 
+The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
+
 ### The angular integral and its Bessel reduction
 
 Because the kernel is spherically symmetric, the angular integral can be done. Writing $r=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ and using
 
 $$
-\int\frac{d^3p}{(2\pi\hbar)^3}F(|\vec p|)\,\exp(i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))
+\int\frac{d^3p}{(2\pi\hbar)^3}F(|\vec p|)\,\exp(i\theta_{\mathrm{spa}})
 =\frac{1}{2\pi^2 r}\int_0^\infty dp\,p\,F(p)\,\sin(pr),
 $$
 
@@ -336,7 +340,7 @@ $$
 G_F(\omega,\vec p)=\frac{1}{\vec p^2+k_m^{2}-\omega^2-i\epsilon}
 =\frac{-1}{p^2-k_m^{2}+i\epsilon},
 \qquad
-G_F(\tilde R_\Phi)=\int\frac{d^4p}{(2\pi\hbar)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c)) .
+G_F(\tilde R_\Phi)=\int\frac{d^4p}{(2\pi\hbar)^4}\,G_F(\omega,\vec p)\,\exp(-i\theta_{\mathrm{pwp}}) .
 $$
 
 Its frequency integral was given above; its position-space content is the time-ordered correlation function,

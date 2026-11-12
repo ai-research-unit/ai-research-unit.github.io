@@ -4,7 +4,7 @@
 
 The path integral expresses the propagator of a quantum system as a sum over histories, each weighted by $\exp(i\theta_{\mathrm{act}})$. For a particle with position degrees of freedom the histories are trajectories, and the action is the integral of a Lagrangian. For a **spin**, there is no position; the histories must be built from the state space itself, and the natural choice is the space of **spin coherent states** — the sphere of directions of the spin. The resulting path integral is the subject of this article, in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The spin path integral has one feature that distinguishes it from the particle path integral and that ties it to the geometric phase: the kinetic term of the action is not a total derivative. It is the **Wess–Zumino term**
 
@@ -97,7 +97,7 @@ $$
 S[z] = \int_0^T\left(i\,\hbar\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde H_\Psi(r'_t)|z\rangle\right)dr'_t,
 $$
 
-and the propagator is $G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(iS[z]/\hbar)$ with the measure inherited from the resolution of the identity.
+and the propagator is $G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(i\theta_{\mathrm{act}})$ with the measure inherited from the resolution of the identity.
 
 ### The Wess–Zumino Term
 
@@ -181,7 +181,7 @@ The pair (symplectic form $\omega$, energy $\langle H\rangle$) makes the sphere 
 The same propagator admits a second path integral, over a two-component spinor with anticommuting (Grassmann) coefficients,
 
 $$
-G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\; \exp(\frac{i}{\hbar}S[\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}]),
+G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\; \exp(i\theta_{\mathrm{act}}),
 \qquad
 S = \int\left(\frac{i\,\hbar\,\tilde{Ξ}^{\dagger}\,iR_{\mathrm{axf},\vec e_x}\,d\,\tilde{Ξ}}{dr'_{t}}- \langle\tilde{Ξ}|\tilde H_\Psi|\tilde{Ξ}\rangle\right)dr'_t,
 $$
@@ -248,7 +248,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 The path integral for a spin-1/2 is an integral over histories in the space of coherent states $|\varkappa_{\mathrm{stg}}\rangle$ on $\mathbb{CP}^1$:
 
 $$
-G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(\frac{i}{\hbar}S[z]),
+G_{\mathrm{prop}} = \int\mathcal{D}[z]\,\exp(i\theta_{\mathrm{act}}),
 \qquad
 S[z] = \int_0^T\left(i\,\hbar\langle  z|\partial/\partial r'_t|z\rangle  - \langle  z|\tilde H_\Psi|z\rangle\right)dr'_t,
 $$

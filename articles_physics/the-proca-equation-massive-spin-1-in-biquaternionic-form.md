@@ -174,7 +174,7 @@ The Proca equation equates the first to $k_m^{2}A_t$ and the second to $k_m^{2}\
 Write a plane-wave potential
 
 $$
-\tilde{A}_{\Phi} = \tilde{A}_{\Phi,0}\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})/\hbar), \qquad
+\tilde{A}_{\Phi} = \tilde{A}_{\Phi,0}\,\exp(-i\theta_{\mathrm{pwp}}), \qquad
 \tilde{A}_{\Phi,0} = A_te_t + \vec a, \qquad
 \tilde P_{\Phi} = i\frac{\omega}{c}\,e_t + \vec k_\Phi,
 $$
@@ -182,7 +182,7 @@ $$
 where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde\nabla_\Phi\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
 
 $$
-\Box\,\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})/\hbar) = \left(\frac{\omega^2}{c^2} - \vec k_\Phi^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})/\hbar),
+\Box\,\exp(-i\theta_{\mathrm{pwp}}) = \left(\frac{\omega^2}{c^2} - \vec k_\Phi^2\right)\exp(-i\theta_{\mathrm{pwp}}),
 $$
 
 as in the companion Klein–Gordon article. The Klein–Gordon equation therefore requires
@@ -194,6 +194,8 @@ $$
 $$
 
 the physical relativistic dispersion relation.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 ### The Lorenz condition on a plane wave
 

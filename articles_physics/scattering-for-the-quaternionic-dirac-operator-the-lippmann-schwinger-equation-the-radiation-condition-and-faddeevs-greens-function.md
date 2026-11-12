@@ -102,7 +102,7 @@ $$
 = \left(\frac{\partial}{\partial r'_t} + iD_3\right)\left(\frac{\partial}{\partial r'_t} - iD_3\right),
 $$
 
-the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta_Q + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega r'_t/c)$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
+the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta_Q + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\theta_{\mathrm{pwt}})$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
 
 $$
 -\Delta_\Phi - \frac{\omega^2}{c^2} = (D_3+k_\Phi)(D_3-k_\Phi), \qquad k_\Phi=\frac{\omega}{c},
@@ -278,7 +278,7 @@ The last construction of the source is the one that points at the inverse proble
 Three substitution identities are computed. For the Laplacian,
 
 $$
-(\Delta_\Phi+k_\Phi^2)\bigl(\exp(i\vec k_\Phi\cdot r_x)b\bigr) = \exp(i\vec k_\Phi\cdot r_x)\bigl(\Delta+2i\vec k_\Phi\cdot\nabla\bigr)b ,
+(\Delta_\Phi+k_\Phi^2)\bigl(\exp(i\theta_{\mathrm{spa}})b\bigr) = \exp(i\theta_{\mathrm{spa}})\bigl(\Delta+2i\vec k_\Phi\cdot\nabla\bigr)b ,
 $$
 
 so that the Helmholtz operator becomes the **conjugate** operator $-\Delta-2ik\cdot\nabla-\lambda^2$ below. For the unshifted Dirac operator,
@@ -302,8 +302,11 @@ $$
 the cross terms cancelling and the sum being a pure scalar, so that the first and third terms collapse to $-2i(\vec k_\Phi\cdot b)$ and
 
 $$
-(D_3+R_{i\vec k_\Phi})\bigl(\exp(i\vec k_\Phi\cdot x)b\bigr) = \exp(i\vec k_\Phi\cdot x)\bigl(D_3b-2i\,\vec k_\Phi\cdot b\bigr) .
+(D_3+R_{i\vec k_\Phi})\bigl(\exp(i\theta_{\mathrm{spa}})b\bigr) = \exp(i\theta_{\mathrm{spa}})\bigl(D_3b-2i\,\vec k_\Phi\cdot b\bigr) .
+
 $$
+
+The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 For a general quaternion-valued $b$ the two products do not combine and the substitution is not the plain transport of the vector case. This is the asymmetry announced in the factorisation section, and it is the reason the source poses its scattering problem on the vector operator and restricts, as noted above, to vector fields.
 
@@ -375,7 +378,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Established, in the sense that it was recomputed here.**
 
-- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta+\lvert\vec k_\Phi\rvert^2$ and the same with $i\vec k_\Phi$, both orderings; $(D_3-L_{i\vec k_\Phi})(\exp(i\vec k_\Phi\cdot x)b)=\exp(i\vec k_\Phi\cdot x)D_3b$; and $\vec k_\Phi b+b\vec k_\Phi=-2\vec k_\Phi\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
+- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta+\lvert\vec k_\Phi\rvert^2$ and the same with $i\vec k_\Phi$, both orderings; $(D_3-L_{i\vec k_\Phi})(\exp(i\theta_{\mathrm{spa}})b)=\exp(i\theta_{\mathrm{spa}})D_3b$; and $\vec k_\Phi b+b\vec k_\Phi=-2\vec k_\Phi\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
 - The identification $C_\eta=\mathcal{V}_{\mathrm{vek},+k_\Phi}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.
 
 **Not established, and left visible.**

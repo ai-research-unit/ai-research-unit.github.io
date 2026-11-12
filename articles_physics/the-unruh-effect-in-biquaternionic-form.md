@@ -236,7 +236,7 @@ Two remarks keep the derivation honest.
 The KMS relation is equivalent, in frequency space, to a **detailed-balance** relation. Writing the Wightman function in terms of the Rindler frequency $\omega$ conjugate to $\eta$,
 
 $$
-W(\delta\eta)=\int\frac{d\omega}{2\pi}\,W^{\wedge}(\omega)\,\exp(-i\omega\,\delta\eta),
+W(\delta\eta)=\int\frac{d\omega}{2\pi}\,W^{\wedge}(\omega)\,\exp(-i\theta_{\mathrm{pwt}}),
 $$
 
 the boundary relation $W(\delta\eta+2\pi i)=W(-\delta\eta)$ is equivalent, for the boundary values selected by the $i\epsilon$ of the displayed two-point function, to a **detailed-balance** relation among the spectral weights,
@@ -245,13 +245,15 @@ $$
 W^{\wedge}(-\omega) = \exp(-2\pi\omega)\,W^{\wedge}(\omega) \qquad (\omega>0),
 $$
 
-where we have written the transform in the convention $W^{\wedge}(\omega)=\int d\eta\,\exp(i\omega\eta)W(\eta)$ inverse to the display above. The two boundary edges of the strip differ by exactly the Boltzmann factor, so the exponent's sign is fixed by which edge is called $W$; we state it with the same $i\epsilon$ as the two-point function and do not read it off independently of that convention. This is the **Planck factor**: the ratio of the excitation and de-excitation weights of a detector of gap $\omega$ is $\exp(-2\pi\omega)$ rather than $1$, which is the signature of a thermal bath at inverse temperature $\beta_\eta=2\pi$ in the Rindler time. Computing the Fourier transform of the displayed function explicitly — the poles of $\coth$ at $2\pi i n+i\epsilon$ are enclosed in the upper half plane for $\omega>0$, and the $n=0$ pole must be included — gives
+where we have written the transform in the convention $W^{\wedge}(\omega)=\int d\eta\,\exp(i\theta_{\mathrm{pwt}})W(\eta)$ inverse to the display above. The two boundary edges of the strip differ by exactly the Boltzmann factor, so the exponent's sign is fixed by which edge is called $W$; we state it with the same $i\epsilon$ as the two-point function and do not read it off independently of that convention. This is the **Planck factor**: the ratio of the excitation and de-excitation weights of a detector of gap $\omega$ is $\exp(-2\pi\omega)$ rather than $1$, which is the signature of a thermal bath at inverse temperature $\beta_\eta=2\pi$ in the Rindler time. Computing the Fourier transform of the displayed function explicitly — the poles of $\coth$ at $2\pi i n+i\epsilon$ are enclosed in the upper half plane for $\omega>0$, and the $n=0$ pole must be included — gives
 
 $$
 W^{\wedge}(\omega) = \frac{1}{16\pi^2\rho^2}\cdot\frac{8\pi\omega}{1-\exp(-2\pi\omega)}\quad(\omega>0),
 $$
 
 whose ratio at $\pm\omega$ is $\exp(-2\pi\omega)$. The transform has been checked numerically at two frequencies ($\omega=0.5$ and $\omega=1$), where the measured ratios $4.3\times10^{-2}$ and $1.87\times10^{-3}$ agree with $\exp(-\pi)$ and $\exp(-2\pi)$ to the accuracy of the regulator; this is recorded in the companion, together with the first attempt that omitted the $n=0$ pole and returned a ratio of $1$.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 ## The Temperature from the Imaginary-Time Period
 

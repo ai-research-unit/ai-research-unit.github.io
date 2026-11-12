@@ -195,8 +195,8 @@ The field operator is expanded in the three positive-norm polarizations,
 $$
 A_\mu(x) = \int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{c}{2\omega_{\vec p}}}
 \sum_{r=1}^{3}\left[
-\varepsilon_{r\mu}(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-i\sum_\mu p_\mu x_\mu)
-+ \varepsilon_{r\mu}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+i\sum_\mu p_\mu x_\mu)
+\varepsilon_{r\mu}(\vec p)\,a_{\mathrm{fop},r}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
++ \varepsilon_{r\mu}^{*}(\vec p)\,a_{\mathrm{fop},r}^{\dagger}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})
 \right],
 $$
 

@@ -302,18 +302,21 @@ It is worth verifying that these relations reproduce the boxed equal-time relati
 $$
 \{\tilde{Ξ}_{\mathrm{fop},\mu}(X,r'_t),\tilde{Ξ}_{\mathrm{fop},\nu}^{\dagger}(Y,r'_t)\}
 =\int\!\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{2E_{\vec p}}
-\Big[\sum_r\big(\tilde{Ξ}_{+}^{(r)}\big)_\mu\big(\tilde{Ξ}_{+}^{(r)*}\big)_\nu\,e^{+i\vec p\cdot\vec r_{12}}
-+\sum_r\big(\tilde{Ξ}_{-}^{(r)}\big)_\mu\big(\tilde{Ξ}_{-}^{(r)*}\big)_\nu\,e^{-i\vec p\cdot\vec r_{12}}\Big].
+\Big[\sum_r\big(\tilde{Ξ}_{+}^{(r)}\big)_\mu\big(\tilde{Ξ}_{+}^{(r)*}\big)_\nu\,e^{+i\theta_{\mathrm{spa}}}
++\sum_r\big(\tilde{Ξ}_{-}^{(r)}\big)_\mu\big(\tilde{Ξ}_{-}^{(r)*}\big)_\nu\,e^{-i\theta_{\mathrm{spa}}}\Big].
 $$
 
-The two phases are **opposite**: the positive-frequency term carries $e^{+i\vec p\cdot\vec r_{12}}$ and the negative-frequency term $e^{-i\vec p\cdot\vec r_{12}}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read
+The two phases are **opposite**: the positive-frequency term carries $e^{+i\theta_{\mathrm{spa}}}$ and the negative-frequency term $e^{-i\theta_{\mathrm{spa}}}$. The bracket carries untwisted outer products, while the spin sums of the preceding section are statements about the pairing; moving the right multiplication by $i\vec e_x$ that the pairing carries onto the argument, the same operator identities read
 
 $$
 \sum_r\tilde{Ξ}_{+}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{+}^{(r)*}\tilde{Ξ}\big)
 =i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y+mc\,\big(\tilde{Ξ}i\vec e_x\big),\qquad
 \sum_r\tilde{Ξ}_{-}^{(r)}\,\mathrm{Sc}\big(\tilde{Ξ}_{-}^{(r)*}\tilde{Ξ}\big)
 =i\frac{E_{\vec p}}{c}\big(\tilde{Ξ}i\vec e_x\big)\vec e_x-i\sum_\eta p_\eta\vec e_\eta\big(\tilde{Ξ}i\vec e_x\big)\vec e_y-mc\,\big(\tilde{Ξ}i\vec e_x\big).
+
 $$
+
+The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 Multiplying by the two phases and adding, with $\theta_{\mathrm{pwp}}=\vec p\cdot\vec r_{12}$,
 

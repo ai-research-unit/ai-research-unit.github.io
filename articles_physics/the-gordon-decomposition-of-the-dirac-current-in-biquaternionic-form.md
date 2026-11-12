@@ -179,14 +179,17 @@ The spin term is a total divergence, and its own divergence vanishes identically
 For plane-wave solutions the position-space identity becomes the form used in scattering amplitudes. Write the field of momentum $p$ as
 
 $$
-\tilde{Ξ}=\tilde w(p)\,\exp\Big(-i\sum_\mu p_\mu x_\mu\Big),
+\tilde{Ξ}=\tilde w(p)\,\exp\Big(-i\theta_{\mathrm{pwp}}),
 $$
 
 so that $\partial_\mu\tilde{Ξ}=-ip_\mu\tilde{Ξ}$, and the field equation becomes the on-shell condition
 
 $$
 \sum_\mu\varepsilon_\mu\,p_\mu\,i\,e_\mu\,\tilde w(p)\,\vec e_{\nu(\mu)}=m\,\tilde w(p).
+
 $$
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 The exponent carries no weight $\varepsilon_\mu$. The weight belongs to the contraction of the generator with the momentum, where it raises the generator's index, and the derivative returns $p_\mu$ with the same sign for all four components. A weight in the exponent would flip the sign of the three spatial derivatives and would make the position-space and the momentum-space identities disagree on the sign of the spatial convection current.
 

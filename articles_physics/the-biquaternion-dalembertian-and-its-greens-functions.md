@@ -85,7 +85,7 @@ The verification of the composition was made on a random real symbol vector $s$,
 
 On a plane wave
 $$
-\tilde{Ξ} = \tilde{Ξ}_0\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c))
+\tilde{Ξ} = \tilde{Ξ}_0\,\exp(-i\theta_{\mathrm{pwp}})
 $$
 the derivatives act as numbers: $\partial/\partial R_t \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial/\partial R_\eta \to i k_{\Phi\eta}$, so
 $$

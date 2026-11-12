@@ -253,7 +253,7 @@ left multiplication by the element of $\mathbb{B}$ tabulated in §*The Field in 
 
 **Because each component satisfies the Dirac equation, each component satisfies the Klein–Gordon equation on squaring**, exactly as in the spin-$\tfrac12$ case. For a biquaternion plane wave of the component,
 $$
-\tilde{Ξ}_{\mu} = \tilde{Ξ}_{\mu,0}\,\exp(\,i\,\mathrm{Sc}\frac{\tilde{P}_{\Phi}\,\tilde{Q}^{\natural}}{\hbar}),
+\tilde{Ξ}_{\mu} = \tilde{Ξ}_{\mu,0}\,\exp(-i\theta_{\mathrm{pwp}}),
 $$
 with $\tilde Q=x_0e_t+\sum_\eta x_\eta\vec e_\eta$ the coordinate element and $\tilde P_{\Phi}=p_0e_t+\sum_\eta p_\eta\vec e_\eta$ its conjugate momentum, the Dirac equation on the component requires $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ in the normalization of the companion Dirac article, that is,
 $$
@@ -262,6 +262,8 @@ $$
 \varpi^2 = c^2\vec k_\Phi^2 + c^2k_m^{2},
 $$
 the same physical massive shell as the Proca field. The trace constraint and the subsidiary conditions then reduce the sixteen components to the four states of the quartet, with the three-momentum on the shell. The dispersion relation is therefore common to the massive spin-one and spin-$\tfrac32$ fields, as it must be: the mass shell is a property of the representation's Casimir and not of the index structure. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 ## Comparison with Spin One and Spin One-Half
 

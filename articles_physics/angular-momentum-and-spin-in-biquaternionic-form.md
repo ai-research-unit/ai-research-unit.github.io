@@ -138,7 +138,7 @@ $$
 
 and the representatives inherit the relation because $e_t$ is central.
 
-In spherical coordinates the operators take their standard forms,
+In spherical coordinates, with $\theta_{\mathrm{azm}}$ the azimuth, a real angle of the coordinate chart, the operators take their standard forms,
 
 $$
 L_{\mathrm{orb},z} = -i\,\hbar\partial/\partial\theta_{\mathrm{azm}}, \qquad

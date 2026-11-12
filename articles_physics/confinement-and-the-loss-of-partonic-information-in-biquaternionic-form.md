@@ -303,10 +303,12 @@ The derivative part acts from the left, the mass part from the right through $\v
 Let $\vec q=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, and let $Ξ$ be the source's four-component field, taken time-harmonic,
 
 $$
-Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{\,i\omega r'_t/c},
+Ξ(r'_t,\vec q)=Ξ_\omega(\vec q)\,e^{i\theta_{\mathrm{pwt}}},
 $$
 
-obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla_\Phi$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-(\tilde\nabla_\Phi)^{\natural}$. The spatial derivative is the sum $\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ that $\tilde\nabla_\Phi$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\omega r'_t/c}}=\overline{Ξ_\omega}\,e^{-i\omega r'_t/c}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla_\Phi$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial r'_t=-\partial/\partial R_t$ and the free part is $-(\tilde\nabla_\Phi)^{\natural}$. The spatial derivative is the sum $\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ that $\tilde\nabla_\Phi$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{Ξ_\omega e^{i\theta_{\mathrm{pwt}}}}=\overline{Ξ_\omega}\,e^{-i\theta_{\mathrm{pwt}}}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+
+The angle is $\theta_{\mathrm{pwt}}=\omega r'_t/c$: a real frequency times a real interval over $c$, so the angle is real.
 
 The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_\eta u_\eta\vec e_\eta$,
 
@@ -472,7 +474,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Informational and material sectors |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{B}_{\Psi}$ | Generators realized in the informational sector |
-| $U(C) = \mathcal{P}\exp(i\oint_C \sum_\mu\varepsilon_\mu A_\mu dx_\mu)$ | Holonomy |
+| $U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy |
 | $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; order parameter |
 | $\langle W(C)\rangle \sim \exp(-\mu_{\mathrm{prm}}\,\mathrm{perim})$ | Perimeter law (screening) |
 | $\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area})$ | Area law (confinement) |
@@ -508,6 +510,8 @@ What the framework supplies here is the function theory, the reduction and the F
 ## Further Reading
 
 - Kenneth G. Wilson, "Confinement of Quarks," *Physical Review D* **10** (1974) 2445–2459, for the Wilson loop, the area law, and confinement as a criterion.
+
+The angle is $\theta_{\mathrm{gau}}$, the integrated gauge function: the charge and the potential are real, so the angle is real.
 - V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the real-linear dictionary from the source's four-component fields to biquaternions, the removal of the conjugation operator in the mass term, the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$, and the invertibility and Fredholm questions for the shifted operator $D_\alpha$.
 - V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics* (Pitman Research Notes in Mathematics 351, Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the operator of singular integration with a biquaternionic parameter, and the boundary-value criteria the bag reduction uses.
 - A. W. Thomas, "Chiral Symmetry and the Bag Model: A New Starting Point for Nuclear Physics," *Advances in Nuclear Physics* **13** (1984) 1–137, for the bag model itself, the confining region and its linear boundary condition.

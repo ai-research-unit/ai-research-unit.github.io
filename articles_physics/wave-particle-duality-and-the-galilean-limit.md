@@ -111,7 +111,9 @@ $$
 \mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r'_t}-k_m+\frac{1}{2k_m}\Delta_\Phi ,
 $$
 
-with $\Delta=\vec\nabla^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-ik_mr'_t}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
+with $\Delta=\vec\nabla^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-i\theta_{\mathrm{rst}}}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
+
+The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
 
 **The dropped term is one named quantity, and its size is exact.** The residue is $k_{\mathrm{s}}^{2}$ and nothing else. Its size relative to the retained linear term is
 
@@ -278,9 +280,9 @@ $$
 \vec k_\Phi\cdot\vec J=k_mc\rho+k_{\mathrm{s}}c\rho .
 $$
 
-**The second term is not an offset in the condition; it is the rest frequency of the field the current belongs to.** $\rho$ and $\vec J$ are bilinear in the field, and a phase cancels between the two factors, so factoring the rest clock $e^{-ik_mr'_t}$ out of the field leaves the current unchanged. A field written with the rest clock oscillates at $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and its condition is the line above; the same field written without it oscillates at $k_{\mathrm{s}}$ and its condition is $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$. **The two lines are one equation with one current, read at two frequencies.** The term $k_mc\rho$ appears only when the current of the unfactored field is paired with the frequency of the factored one, and that pairing is a mixing of conventions and not a physical term.
+**The second term is not an offset in the condition; it is the rest frequency of the field the current belongs to.** $\rho$ and $\vec J$ are bilinear in the field, and a phase cancels between the two factors, so factoring the rest clock $e^{-i\theta_{\mathrm{rst}}}$ out of the field leaves the current unchanged. A field written with the rest clock oscillates at $k_{t}^{\prime}=k_m+k_{\mathrm{s}}$ and its condition is the line above; the same field written without it oscillates at $k_{\mathrm{s}}$ and its condition is $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$. **The two lines are one equation with one current, read at two frequencies.** The term $k_mc\rho$ appears only when the current of the unfactored field is paired with the frequency of the factored one, and that pairing is a mixing of conventions and not a physical term.
 
-**The convention is the one the rest clock fixes: the phase is factored out of the field, so the density is $|\psi|^2$ of the factored field and the frequency written for it is $k_{\mathrm{s}}$.** Writing $\rho=e^{-ik_mr'_t}\rho_{\mathrm{s}}$ instead, with the phase attached to the density and not to the field, would move the term to the other side with the opposite sign. **The sign is a convention; the identity of the two lines is not.**
+**The convention is the one the rest clock fixes: the phase is factored out of the field, so the density is $|\psi|^2$ of the factored field and the frequency written for it is $k_{\mathrm{s}}$.** Writing $\rho=e^{-i\theta_{\mathrm{rst}}}\rho_{\mathrm{s}}$ instead, with the phase attached to the density and not to the field, would move the term to the other side with the opposite sign. **The sign is a convention; the identity of the two lines is not.**
 
 | Variable | The symbol | The condition $\mathrm{Sc}(\tilde K_\Phi^{\natural}\tilde J_\Phi)=0$ |
 |---|---|---|

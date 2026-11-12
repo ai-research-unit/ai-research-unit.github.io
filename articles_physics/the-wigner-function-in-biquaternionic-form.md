@@ -5,11 +5,13 @@
 **The biquaternionic Wigner function is the standard $x$–$p$ Wigner transform of the field taken in the algebra, and its two marginal moments are the density and the current.** The definition is
 
 $$
-\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\vec p\cdot\vec s/\hbar}\;
+\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\;
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right),
 $$
 
 an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth moment in $\vec p$ is $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, its first moment is the current density times the mass, and its $\hbar\to0$ limit is the phase-space density of the polar-form fluid on the mass shell.
+
+The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 **The article's claim is a claim about what is written in the letters, not about new physics.** The transform, its normalisation, its marginals, its negativity and its $\hbar$-expansion are all standard. What the corpus supplies is a definition in which the Wigner object is an element and not a matrix, and a reading of its two parts as the two quadratures of one angle. The article states both and is explicit about which is which.
 
@@ -22,18 +24,18 @@ an element of $\mathbb{B}$ at each point of the $(r,\vec p)$ space. Its zeroth m
 **The Wigner function of a wave function is the Fourier transform of the density matrix in the relative coordinate.** For a complex-valued field $\Xi$ on $\mathbb{R}^{3}$ — the central case of the corpus's field, in which the vector part is zero —
 
 $$
-W(\vec r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\vec p\cdot\vec s/\hbar}\,
+W(\vec r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\,
 \Xi^{*}\!\left(\vec r-\frac{\vec s}{2}\right)\Xi\!\left(\vec r+\frac{\vec s}{2}\right),
 $$
 
 and the conventions are worth stating because three of them are in circulation and they differ by signs and factors of two. This article takes:
 
 - the relative coordinate $\vec s$ enters with a **half** offset, so that the two field arguments are symmetric about $\vec r$;
-- the kernel is $e^{-i\vec p\cdot\vec s/\hbar}$ with the **momentum** $\vec p$ as the transform variable, so that a plane wave of momentum $\vec p_0$ is concentrated at $\vec p=\vec p_0$ and not at $-\vec p_0$;
+- the kernel is $e^{-i\theta_{\mathrm{spa}}}$ with the **momentum** $\vec p$ as the transform variable, so that a plane wave of momentum $\vec p_0$ is concentrated at $\vec p=\vec p_0$ and not at $-\vec p_0$;
 - the conjugate field is the one at $\vec r-\vec s/2$, so that the ordering of the two arguments is fixed once and for all;
 - the normalisation is $(2\pi\hbar)^{-3}$, so that $\int d^{3}p\,W=\Xi^{*}\Xi$ and $\int d^{3}r\,d^{3}p\,W=1$.
 
-**The third and second conventions must be consistent, and the cost of getting them wrong is a sign in the momentum.** A definition that pairs $e^{-i\vec p\cdot\vec s/\hbar}$ with $\Xi^{*}(\vec r+\vec s/2)\Xi(\vec r-\vec s/2)$ is internally consistent but concentrates a plane wave of momentum $\vec p_0$ at $\vec p=-\vec p_0$; the error is invisible for a real wave function, which is exactly the case that cannot catch it. The check is the plane wave, and it is the first thing to run on any implementation. **This article's definition was checked this way**: with the convention above, a packet of mean momentum $p_0$ has its Wigner distribution centred at $p_0$, and the reverse convention puts it at $-p_0$.
+**The third and second conventions must be consistent, and the cost of getting them wrong is a sign in the momentum.** A definition that pairs $e^{-i\theta_{\mathrm{spa}}}$ with $\Xi^{*}(\vec r+\vec s/2)\Xi(\vec r-\vec s/2)$ is internally consistent but concentrates a plane wave of momentum $\vec p_0$ at $\vec p=-\vec p_0$; the error is invisible for a real wave function, which is exactly the case that cannot catch it. The check is the plane wave, and it is the first thing to run on any implementation. **This article's definition was checked this way**: with the convention above, a packet of mean momentum $p_0$ has its Wigner distribution centred at $p_0$, and the reverse convention puts it at $-p_0$.
 
 ### What it is, and what it is not
 
@@ -52,7 +54,7 @@ and the conventions are worth stating because three of them are in circulation a
 **The biquaternionic Wigner function is the same transform applied to the element, with the element's own conjugation.** Define
 
 $$
-\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\vec p\cdot\vec s/\hbar}\;
+\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\;e^{-i\theta_{\mathrm{spa}}}\;
 \tilde\Xi^{*}\!\left(r-\frac{\vec s}{2}\right)\tilde\Xi\!\left(r+\frac{\vec s}{2}\right)\;}
 $$
 
@@ -66,7 +68,7 @@ where $\tilde\Xi^{*}$ is the conjugate the polar-form article uses, and the prod
 
 ### Why this ordering, in these letters
 
-**The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum.** The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\vec p\cdot\vec s/\hbar}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\vec p\cdot\vec s/\hbar}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
+**The ordering is fixed by the requirement that the momentum marginal reproduce the polar form's momentum.** The corpus writes the plane-wave phase as $\tilde\Xi\propto e^{i\theta_{\mathrm{phs}}}$ with $\vec\nabla_\Phi S_{\tilde\Xi}=\vec p$, because the derivative on the material sector is $\partial/\partial R_\eta=\partial/\partial r_\eta$ and $\vec\nabla_\Phi\tilde\Xi=(i/\hbar)\vec p\,\tilde\Xi$. So the combination whose $s$-dependence is $e^{+i\theta_{\mathrm{spa}}}$ is $\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, and it is that combination that the kernel $e^{-i\theta_{\mathrm{spa}}}$ must multiply. Pairing the kernel with the other ordering puts the momentum at its negative, which is the sign error described above in its corpus form.
 
 Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
@@ -85,7 +87,7 @@ Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a 
 **Integrating the Wigner element over momentum gives the norm of the field.** The delta identity in the corpus's Fourier convention is
 
 $$
-\int d^{3}p\;e^{-i\vec p\cdot\vec s/\hbar}=(2\pi\hbar)^{3}\,\delta^{3}(\vec s),
+\int d^{3}p\;e^{-i\theta_{\mathrm{spa}}}=(2\pi\hbar)^{3}\,\delta^{3}(\vec s),
 $$
 
 so that
@@ -102,7 +104,7 @@ $$
 
 ### The first moment, and the current
 
-**The first moment of the Wigner element in momentum is the mass times the current density.** From $\int d^{3}p\,p_\eta\,e^{-i\vec p\cdot\vec s/\hbar}=i\hbar(2\pi\hbar)^{3}\partial_{\eta}\delta^{3}(\vec s)$ and one integration by parts,
+**The first moment of the Wigner element in momentum is the mass times the current density.** From $\int d^{3}p\,p_\eta\,e^{-i\theta_{\mathrm{spa}}}=i\hbar(2\pi\hbar)^{3}\partial_{\eta}\delta^{3}(\vec s)$ and one integration by parts,
 
 $$
 \int d^{3}p\;p_\eta\,\tilde W_\Xi
@@ -309,7 +311,7 @@ The two numerical values agree to about $2\times10^{-3}$, which is the accuracy 
 
 ## Summary
 
-The biquaternionic Wigner function is the standard $x$–$p$ transform of the field taken in the algebra, $\tilde W_\Xi(r,\vec p)=(2\pi\hbar)^{-3}\int d^{3}s\,e^{-i\vec p\cdot\vec s/\hbar}\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, with the conjugate at the lower offset and the momentum kernel of the corpus's Fourier convention. Both choices are fixed by the requirement that a plane wave of momentum $\vec p_0$ sit at $\vec p=\vec p_0$, which is the check that catches the sign error a real wave function cannot catch.
+The biquaternionic Wigner function is the standard $x$–$p$ transform of the field taken in the algebra, $\tilde W_\Xi(r,\vec p)=(2\pi\hbar)^{-3}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\tilde\Xi^{*}(r-\vec s/2)\tilde\Xi(r+\vec s/2)$, with the conjugate at the lower offset and the momentum kernel of the corpus's Fourier convention. Both choices are fixed by the requirement that a plane wave of momentum $\vec p_0$ sit at $\vec p=\vec p_0$, which is the check that catches the sign error a real wave function cannot catch.
 
 Its zeroth moment in momentum is the norm, $\int d^{3}p\,\tilde W_\Xi=\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$, exactly. Its first moment is the mass times the current,
 

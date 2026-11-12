@@ -4,7 +4,7 @@
 
 The path integral is the third formulation of the same quantum dynamics, alongside the state-vector equation and the operator algebra. It represents the transition amplitude as a sum over histories weighted by the phase $\exp(i\theta_{\mathrm{act}})$, and it makes the classical limit, the semiclassical expansion, and the fluctuation determinants visible in a way the operator formalism does not. This article derives the **Schrödinger path integral** from the biquaternion state-vector equation and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(i\theta_{\mathrm{act}})$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{B}_{\Phi}$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
 
@@ -23,20 +23,24 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The
 The biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=H\tilde{Ξ}$ is solved formally by
 
 $$
-\tilde Q(r'_t) = \exp(-\frac{i\,H\,r'_{t}}{\hbar\,c}),
+\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}),
 \qquad
 \tilde{Ξ}(r'_t) = \tilde Q(r'_t)\,\tilde{Ξ}(0),
 $$
 
 and because $H$ is central, $\tilde Q(r'_t)$ is a central $*$-unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$.
 
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+
 **The exponent is one wave number times one coordinate.** Since the division is by the action times a speed, $\hbar\,c$, and since $k_{t}^{\prime}=\frac{H}{\hbar\,c}$ is the temporal coefficient of the wave biquaternion $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, the evolution operator is
 
 $$
-\tilde Q(r'_t)=\exp(-i\,k_{t}^{\prime}\,r'_t)\,e_t,
+\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{pwt}})\,e_t,
 $$
 
 one coefficient of $\tilde K_{\Phi}$ multiplying one coordinate of $\tilde R_{\Phi}$: no $\hbar$ is left, because the division by $\hbar$ is what $\tilde K_{\Phi}$ is. The path phase below is the same statement summed along a trajectory, $\exp(i\theta_{\mathrm{act}})=\exp\!\big(i\int\mathrm{Sc}(\tilde K_{\Phi}\,d\tilde R_{\Phi}^{\natural})\big)$, the identity of the companion article *The Path Integral in Biquaternionic Form*.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 The evolution operator is a semigroup in time,
 
@@ -130,7 +134,7 @@ with $\varepsilon=r'_t/N$, $\vec r_0=\vec r_i$, $\vec r_N=\vec r_f$. In the cont
 
 $$
 \boxed{\;G_{\mathrm{prop}}(\vec r_f,r'_t;\vec r_i,0)
-=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\;\exp(\,iS[\vec r]/\hbar)\,e_t\;}.
+=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\;\exp(i\theta_{\mathrm{act}})\,e_t\;}.
 $$
 
 The measure $\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z$ is defined by the limit above; it is the product of the position integrations, including the Gaussian normalisation factors. The kernel is central term by term, hence in the limit: the path integral for a spin-0 particle is a complex scalar, and the module factor is untouched. The measure is not supplied by the algebra — the paths are trajectories in the material sector's configuration space, and the algebra labels their endpoints and supplies the phase — and this is one of the gaps the companion article records.
@@ -288,7 +292,7 @@ $$
 \ \approx\
 \left(\frac{1}{2\,\pi\,i\,\hbar}\right)^{3/2}
 \left|\det\left(\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_{i,\eta}\,\partial x_{f,l}}\right)_{k,l=1}^{3}\right|^{1/2}
-\exp\left(\frac{i}{\hbar}S_{\mathrm{cl}}\right)
+\exp\left(i\theta_{\mathrm{act}})
 \ =\ A_{\mathrm{wkb}}\,\exp(\,\frac{iS_{\mathrm{cl}}}{\hbar})\;},
 $$
 
@@ -328,7 +332,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-\frac{iHr'_{t}}{\hbar\,c})$ with $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ with $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)
@@ -336,7 +340,7 @@ G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z
 \exp\left[\,i\,k_m\left(\frac{|r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z-(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|^2}{2\varepsilon}-\frac{\varepsilon\,V(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{m\,c^{2}}\right)\right]e_t+O(\varepsilon^2),
 $$
 
-and the Trotter product of these kernels gives the sum over paths $G_{\mathrm{prop}}=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\,\exp(iS[r_x,r_y,r_z]/\hbar)e_t$.
+and the Trotter product of these kernels gives the sum over paths $G_{\mathrm{prop}}=\int\mathcal{D}r_x\,\mathcal{D}r_y\,\mathcal{D}r_z\,\exp(i\theta_{\mathrm{act}})e_t$.
 
 The free kernel is $K_0=(\frac{k_m}{2\,\pi\,i\,r'_{t}})^{3/2}\exp(\frac{i\,k_m|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^{2}}{2\,r'_{t}})$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
@@ -360,7 +364,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $H=[-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V]e_t$ | Central Hamiltonian |
-| $\tilde Q(r'_t)=\exp(-\frac{iHr'_{t}}{\hbar\,c})$ | Evolution operator; central $*$-unitary, semigroup |
+| $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ | Evolution operator; central $*$-unitary, semigroup |
 | $G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})=Ke_t$ | Position kernel; central |
 | $G_{\mathrm{prop},\varepsilon}(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}\mathrm{Lag}\,\varepsilon$, with $\varepsilon$ a step in $r'_t$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |

@@ -72,7 +72,7 @@ $$
 \tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
 $$
 
-is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$, and has unit norm, $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$. Hence $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}^2 \neq e_t$, and conjugation by $\tilde U_{\Psi,\mathrm b}$ does not preserve the trace:
+is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$, and has unit norm, $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$. Here $\theta_{\mathrm{rpd}}$ is the rapidity, $\tanh\theta_{\mathrm{rpd}}=v/c$, real at every speed below $c$. Hence $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}^2 \neq e_t$, and conjugation by $\tilde U_{\Psi,\mathrm b}$ does not preserve the trace:
 
 $$
 \mathrm{Tr}\!\left(\tilde U_{\Psi,\mathrm b}\tilde{Ϛ}_{\Psi}\tilde U_{\Psi,\mathrm b}^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}_{\Psi}) \quad \text{in general}.

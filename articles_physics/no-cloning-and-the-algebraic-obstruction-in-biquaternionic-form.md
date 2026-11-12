@@ -163,7 +163,7 @@ $$
 \end{aligned}
 $$
 
-The two images are orthonormal, so $\tilde Q$ extends to a $*$-unitary on the three-qubit space. For a general input $|\tilde{Ξ}\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
+The two images are orthonormal, so $\tilde Q$ extends to a $*$-unitary on the three-qubit space. For a general input $|\tilde{Ξ}\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs, with $\theta$ and $\theta_{\mathrm{azm}}$ the polar and azimuthal angles of the Bloch sphere,
 
 $$
 |\tilde{Ξ}(\theta,\theta_{\mathrm{azm}})\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\theta_{\mathrm{azm}})\sin\tfrac{\theta}{2}\,|1\rangle ,

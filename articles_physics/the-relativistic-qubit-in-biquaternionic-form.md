@@ -49,7 +49,7 @@ The statement is exact and is worth one paragraph, because it is what makes the 
 
 ### The two actions of the unit-norm group
 
-A unit-norm biquaternion is a Lorentz rotor. The general Lorentz rotor is $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; its two factors are the boost and the rotation,
+A unit-norm biquaternion is a Lorentz rotor. The general Lorentz rotor is $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; its two factors are the boost, with the rapidity $\theta_{\mathrm{rpd}}$ real below $c$, and the rotation, with $\theta_{\mathrm{axr}}$ the rotation angle,
 $$
 \tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
 \tilde u_{\mathrm r} = \cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t + \sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),

@@ -2,33 +2,27 @@
 
 ## Introduction
 
-**The category's question is whether a quantum field has a thermodynamics, and its answer is a ledger: four of its twenty-five articles transcribe standard relativistic thermodynamics into the corpus's letters, and the remaining twenty-one add something the letters make available and the standard formulation does not.**
+**The category's question is whether a quantum field has a thermodynamics, and its answer is a ledger: four of its twenty-two articles transcribe standard relativistic thermodynamics into the corpus's letters, and the remaining eighteen add something the letters make available and the standard formulation does not.**
 
 $$
-\text{category}=\underbrace{\text{framework content}}_{21\ \text{articles}}\ \cup\ \underbrace{\text{transcription}}_{9,\ 16,\ 17,\ 24},
+\text{category}=\underbrace{\text{framework content}}_{17\ \text{articles}}\ \cup\ \underbrace{\text{transcription}}_{6,\ 13,\ 14,\ 21},
 $$
 
-**the division the brief's instructions fixed, and the division this article audits.** The number is not a score. **A transcription article is not a weaker article**: a transcription is what makes the framework's claims comparable with the literature, and a category of twenty-one articles that are not transcriptions would be unreadable to anyone who wanted to check it.
+**the division the brief's instructions fixed, and the division this article audits.** The number is not a score. **A transcription article is not a weaker article**: a transcription is what makes the framework's claims comparable with the literature, and a category of eighteen articles that are not transcriptions would be unreadable to anyone who wanted to check it.
 
 **What the ledger can and cannot do.** It can state, article by article, which claims are established within the category, which are quoted from the standard theory, and which are interpretations that the category offers and does not prove. **It cannot state that the framework is right**, because no article in the category makes that claim either.
 
-**The one convention that binds the category.** The entropy inequalities are real. [The Local Entropy Current](the-local-entropy-current.html) declares the entropy current Hermitian once, and every later inequality — the spin diffusion of [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), the positivity form of [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) — inherits that declaration and writes no fresh $\mathrm{Re}$. **One declaration, twenty-five articles.** The ledger records that as the category's single most load-bearing convention, because a reader who misses it will read every inequality as unproven.
+**The one convention that binds the category.** The entropy inequalities are real. [The Local Entropy Current](the-local-entropy-current.html) declares the entropy current Hermitian once, and every later inequality — the spin diffusion of [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), the positivity form of [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html) — inherits that declaration and writes no fresh $\mathrm{Re}$. **One declaration, twenty-two articles.** The ledger records that as the category's single most load-bearing convention, because a reader who misses it will read every inequality as unproven.
 
-## The Category's Four Layers
+## The Category's Three Layers
 
-**The category is ordered, and the order is a dependency chain rather than a sequence of topics.** Each layer uses the layer above it and adds one object.
+**The category is ordered, and the order is a dependency chain rather than a sequence of topics.** Each layer uses the layer above it and adds one object. **The field's own stress and flow, which used to be the first of those layers, now form a separate category** — *Biquaternion Relativistic Quantum Hydrodynamics* — and the chain here begins where a state is put on the field.
 
-### The field layer: articles 1 to 3
+**The three articles that no longer open it are the whole of that block**: [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), which writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence; [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html), which assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient; and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), which proves that the flow is irrotational except on the zero-divisor cone and that the circulation there is $2\pi\hbar n/m$.
 
-**Three articles take the field's own stress and flow apart before any temperature is mentioned.**
+**What they establish, and what they leave to this category.** The fluid's variables are read from the field's polar word and not postulated; **the density is the scale, the velocity the boost, the spin the rotor**, and the quantum potential is a second-derivative functional of the density that enters the mass shell and not a pressure. **A triple of functions is not a state**: for that, a temperature is needed, and the temperature is this category's first object. **The ledger counts them where they live**, so the twenty-two rows below do not include them, and their article-by-article audit is not this ledger's.
 
-[The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence. [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient. [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) closes the scalar polar form's second open question: the flow is irrotational except on the zero-divisor cone, where the circulation is $2\pi\hbar n/m$.
-
-**What the layer establishes, in one sentence.** The fluid's variables are read from the field's polar word and not postulated; **the density is the scale, the velocity the boost, the spin the rotor**, and the quantum potential is a second-derivative functional of the density that enters the mass shell and not a pressure.
-
-**What the layer does not establish.** That the fluid exists as a thermodynamic object. **A triple of functions is not a state**: for that, a temperature is needed, and the temperature is the next layer's.
-
-### The state layer: articles 4 to 10
+### The state layer: articles 1 to 7
 
 **Seven articles put a state on the field: a Wigner function, a partition function, a thermal formalism.**
 
@@ -38,17 +32,17 @@ $$
 
 **What the layer establishes.** That the corpus's temperature is a length, $\beta=mc/(k_mk_BT)$, computed once at $T=2.725$, $300$ and $1000\,\mathrm{K}$: $2.803\,021\times10^{-12}$, $2.546\,078\times10^{-14}$ and $7.638\,233\times10^{-15}$ metres. **That $Z$ is a scalar while the thermal element $\tilde\beta_\Phi$ is a vector** — so a moving frame tilts the thermal circle and does not change the trace.
 
-### The locality layer: articles 11 to 17
+### The locality layer: articles 8 to 14
 
 **Seven articles put the temperature at a point, or refuse to.**
 
-[The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) is the layer's foundation and the category's most consequential single result: **the thermal structure lives on the field of states, as a pointwise period, and not on the manifold as a metric.** [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) states the condition; [Thermal Time and the Modular Flow in the Biquaternion Framework](thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html) and [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) give the modular side; [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html) gives the construction.
+[The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) states the condition, and it opens the layer because it is the structural statement that every later article reads; [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) applies it, and carries the category's most consequential single result: **the thermal structure lives on the field of states, as a pointwise period, and not on the manifold as a metric.** [Thermal Time and the Modular Flow in the Biquaternion Framework](thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html) and [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) give the modular side; [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html) gives the construction.
 
 **The layer's last two are transcriptions**, and they are the ones the fluid layer stands on: [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html) writes the rigidity condition and quotes Tolman's law; [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html) writes $\beta=\beta(x)$ on a Killing horizon and quotes Bisognano–Wichmann, Unruh and Hawking as the flat and near-horizon cases.
 
 **What the layer establishes.** That a local temperature is available, and that what is local is the period and not the metric. **Everything in the next layer depends on that sentence**, and the next layer does not reopen it.
 
-### The fluid layer: articles 18 to 24
+### The fluid layer: articles 15 to 21
 
 **Seven articles turn the triple into a fluid with an equation of state, an entropy current, two components, spin and dissipation.**
 
@@ -76,13 +70,13 @@ $$
 
 **The flow is an element with a low index.** $\tilde V_\Phi=\tilde P_\Phi/m$, components $v_{\Phi,\mu}$ only where a component is unavoidable. **The metric is $\delta_{\mu\nu}$ and the index labels a direction and not a tensor slot**, which is why no display in the category raises one.
 
-**Five identifications, one declaration, one sign, one length.** That is what the twenty-one framework articles add to the standard theory, and the list is the ledger's answer to the question the category was built to ask.
+**Five identifications, one declaration, one sign, one length.** That is what the framework adds to the standard theory — the flow identifications among them made in the hydrodynamics block, the thermal ones here — and the list is the ledger's answer to the question the category was built to ask.
 
 ## The Four Transcription Articles
 
 **A transcription article is one whose equations are the standard theory's and whose sentences say so.** The category has four, and the ledger states for each what is transcribed and what the letters add.
 
-### Article 9: the partition function in a moving frame
+### Article 6: the partition function in a moving frame
 
 **Transcribed: that $Z$ is a trace and that the thermal state is specified by a four-vector.** The article's thermal element is $\tilde\beta_\Phi=(\beta/c)\tilde V_\Phi=\beta\gamma(ie_t+\vec\beta_{\mathrm{vel}})$ with norm $-\beta^{2}$, and the exponent is the contraction $-\beta_{\Phi,\nu}p_{\Phi,\nu}/\hbar$, which is $\beta k_m$ and is independent of $\gamma$ and of $\vec v$.
 
@@ -90,7 +84,7 @@ $$
 
 **Not added: any framework interpretation.** The article's closing sentence says so.
 
-### Article 16: curved-spacetime KMS and modular flow
+### Article 13: curved-spacetime KMS and modular flow
 
 **Transcribed: that the KMS condition on a Killing horizon has a flow width and an observer width**, $\beta_H=2\pi c/\kappa$ and $\beta(x)=\beta_H\ell(x)$, so the observer's temperature is $T(x)=T_H/\ell(x)$. **Transcribed: that the modular flow's parameter is $s=r'_t/\beta_H$**, so one turn of the modular flow is one turn of the thermal circle.
 
@@ -98,15 +92,15 @@ $$
 
 **Not added: a curved-spacetime extension of the algebra.** The article says plainly that the algebra does not carry curvature; **what is covariant here is the bookkeeping of a number that varies, and the article does not pretend otherwise.**
 
-### Article 17: covariant local equilibrium and Tolman temperature
+### Article 14: covariant local equilibrium and Tolman temperature
 
 **Transcribed: the rigidity condition**, $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}=0$, written on the velocity's components on the pattern of $k_{\Phi,\mu}$, with its three consequences — constant Lorentz factor in time, no expansion or shear in the current, acceleration locked to the rapidity gradient.
 
-**Added: the check that the corpus's pointwise temperature satisfies it**, and the quotation of Tolman's law from [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) rather than its re-derivation. **Added: the answer to whether a local temperature is available here** — yes, as a pointwise period on the field of states, and this article adopts that answer and does not reopen it. **The article is the category's gate**: articles 18 to 24 stand on it, and it was written before them for that reason.
+**Added: the check that the corpus's pointwise temperature satisfies it**, and the quotation of Tolman's law from [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html) rather than its re-derivation. **Added: the answer to whether a local temperature is available here** — yes, as a pointwise period on the field of states, and this article adopts that answer and does not reopen it. **The article is the category's gate**: articles 15 to 21 stand on it, and it was written before them for that reason.
 
 **Not added: a framework interpretation.** The article carries the sentence; **this is standard relativistic thermodynamics in the corpus's letters, with no framework interpretation.**
 
-### Article 24: causal dissipative hydrodynamics
+### Article 21: causal dissipative hydrodynamics
 
 **Transcribed: Israel–Stewart theory.** Three relaxation equations, six transport coefficients, the dispersion relation $\omega^{2}+(i/\tau_q)\omega-(D_{\mathrm{th}}/\tau_q)k^{2}=0$, the front speed $v_{\mathrm{frt}}=\sqrt{D_{\mathrm{th}}/\tau_q}$, the causality condition $D_{\mathrm{th}}\le\tau_qc^{2}$, and the quadratic form for stability.
 
@@ -124,43 +118,40 @@ $$
 
 **Why the split matters for the ledger.** The first law of entanglement is the thermal statement closest to the fluid layer's Gibbs–Duhem relation, and a reader who follows the category's chain from the modular Hamiltonian to the equation of state will not find it. **The gap is a shelf arrangement and not a mathematical one**, and the ledger records it as the category's one structural debt.
 
-**What the modular sector establishes for the rest.** That the thermal circle is the modular flow's period when the state is the vacuum of a wedge; that the modular Hamiltonian is $-\log\tilde{Ϛ}_{\Psi}$, an element of $\mathbb{B}_\Psi$; and that the trace formula $\mathrm{Tr}(\tilde Q\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde Q\tilde H_\Psi)$ makes the trace a scalar part. **That last identity is what makes the partition function of article 6 a scalar and the thermal element of article 9 a vector** — the category's two thermal articles are consistent because the trace is scalar and the state is not.
+**What the modular sector establishes for the rest.** That the thermal circle is the modular flow's period when the state is the vacuum of a wedge; that the modular Hamiltonian is $-\log\tilde{Ϛ}_{\Psi}$, an element of $\mathbb{B}_\Psi$; and that the trace formula $\mathrm{Tr}(\tilde Q\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde Q\tilde H_\Psi)$ makes the trace a scalar part. **That last identity is what makes the partition function of article 3 a scalar and the thermal element of article 6 a vector** — the category's two thermal articles are consistent because the trace is scalar and the state is not.
 
 **What it does not establish, and the ledger's warning.** The framework's modular operator is finite-dimensional, of type I$_2$, and **a type I algebra cannot host the outer modular flow of a type III wedge**. The wedge identification $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ is therefore an identification of the generator on a finite model with the boost, **not a derivation of the Hawking temperature**; the geometry, the surface gravity, the state and the identification of the flows are all imported. **The category's modular sector is a route to the temperature's meaning, not a computation of its value.**
 
 ## The Ledger
 
-**Twenty-five entries: four transcriptions and twenty-one articles that are not transcriptions, of which twenty are framework content and the twenty-first is this ledger, which declares and does not derive.** The arithmetic is $4+20+1=25$, and the table is the article's answer in its shortest form.
+**Twenty-two entries: four transcriptions and eighteen articles that are not transcriptions, of which seventeen are framework content and the eighteenth is this ledger, which declares and does not derive.** The arithmetic is $4+17+1=22$, and the table is the article's answer in its shortest form.
 
 | # | Article | Status | The claim it carries |
 |---|---|---|---|
-| 1 | The Quantum Stress Tensor of the Biquaternion Scalar Field | framework | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$; $Q_{\mathrm{qnt}}$ is its divergence; the quantum stress is not a thermal pressure |
-| 2 | The Spin Fluid of the Biquaternion Dirac Field | framework | the triple $(\rho_{\mathrm{num}},\tilde V_\Phi,\hat s)$; the flow is not a gradient |
-| 3 | The Nodal Set and Quantized Circulation | framework | irrotational except on the zero-divisor cone; circulation $2\pi\hbar n/m$ |
-| 4 | The Wigner Function in Biquaternionic Form | framework | $\tilde W_\Xi$ with density and current as its two moments |
-| 5 | Relativistic Wigner Function and Quantum Kinetics | framework | the $\hbar$-expansion; drift at order zero, $-\tfrac{\hbar^{2}}{24}V'''\partial_p^{3}W$ at order two |
-| 6 | The Partition Function in Biquaternionic Form | framework | $Z$ in the rest frame |
-| 7 | Quantum Thermodynamics in Biquaternionic Form | framework | the Gibbs state as a point of the Bloch ball |
-| 8 | The Matsubara Thermal Formalism in Biquaternionic Form | framework | the imaginary-time sum |
-| 9 | Equilibrium Partition Function in a Moving Frame | **transcription** | $Z$ is a scalar; the boost tilts the thermal element |
-| 10 | The Schwinger–Keldysh Formalism in Biquaternionic Form | framework | the non-equilibrium contour |
-| 11 | The Local Thermal Structure: k_B as the Scale of Imaginary Time | framework | a pointwise period, not a pointwise metric |
-| 12 | The KMS Condition and the Biquaternion Framework | framework | the condition on the material sector |
-| 13 | Thermal Time and the Modular Flow in the Biquaternion Framework | framework | the modular flow and the thermal time hypothesis |
-| 14 | The Modular Hamiltonian in Biquaternionic Form | framework | $\tilde K$ generates the flow; the trace is a scalar part |
-| 15 | The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework | framework | the construction in Hermitian data |
-| 16 | Curved-Spacetime KMS and Modular Flow | **transcription** | $\beta=\beta(x)$ on a Killing horizon |
-| 17 | Covariant Local Equilibrium and Tolman Temperature | **transcription** | the rigidity condition; Tolman quoted |
-| 18 | The Local Thermal State of a Fluid | framework | the triple at $\beta(x)$; what a local equation of state requires |
-| 19 | The Equation of State in Biquaternion Form | framework | $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ |
-| 20 | The Local Entropy Current | framework | Hermiticity declared; the second law as one divergence |
-| 21 | The Two-Fluid Model in Biquaternionic Form | framework | two flows, one entropy, mutual friction, the $T\to0$ limit |
-| 22 | Spin Hydrodynamics in Biquaternionic Form | framework | $\mu_{\mathrm{spn}}$, spin diffusion, the closure failure |
-| 23 | Spin Conservation and the Frenkel Condition | framework | the rotor's equation is the spin's conservation; $\mathcal{F}$ is automatic |
-| 24 | Causal Dissipative Hydrodynamics in Biquaternionic Form | **transcription** | Israel–Stewart; causality and stability |
-| 25 | The Thermodynamics of a Quantum Fluid: What Is Established | ledger | this article |
+| 1 | The Wigner Function in Biquaternionic Form | framework | $\tilde W_\Xi$ with density and current as its two moments |
+| 2 | Relativistic Wigner Function and Quantum Kinetics | framework | the $\hbar$-expansion; drift at order zero, $-\tfrac{\hbar^{2}}{24}V'''\partial_p^{3}W$ at order two |
+| 3 | The Partition Function in Biquaternionic Form | framework | $Z$ in the rest frame |
+| 4 | Quantum Thermodynamics in Biquaternionic Form | framework | the Gibbs state as a point of the Bloch ball |
+| 5 | The Matsubara Thermal Formalism in Biquaternionic Form | framework | the imaginary-time sum |
+| 6 | Equilibrium Partition Function in a Moving Frame | **transcription** | $Z$ is a scalar; the boost tilts the thermal element |
+| 7 | The Schwinger–Keldysh Formalism in Biquaternionic Form | framework | the non-equilibrium contour |
+| 8 | The KMS Condition and the Biquaternion Framework | framework | the condition on the material sector |
+| 9 | The Local Thermal Structure: k_B as the Scale of Imaginary Time | framework | a pointwise period, not a pointwise metric |
+| 10 | Thermal Time and the Modular Flow in the Biquaternion Framework | framework | the modular flow and the thermal time hypothesis |
+| 11 | The Modular Hamiltonian in Biquaternionic Form | framework | $\tilde K$ generates the flow; the trace is a scalar part |
+| 12 | The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework | framework | the construction in Hermitian data |
+| 13 | Curved-Spacetime KMS and Modular Flow | **transcription** | $\beta=\beta(x)$ on a Killing horizon |
+| 14 | Covariant Local Equilibrium and Tolman Temperature | **transcription** | the rigidity condition; Tolman quoted |
+| 15 | The Local Thermal State of a Fluid | framework | the triple at $\beta(x)$; what a local equation of state requires |
+| 16 | The Equation of State in Biquaternion Form | framework | $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ |
+| 17 | The Local Entropy Current | framework | Hermiticity declared; the second law as one divergence |
+| 18 | The Two-Fluid Model in Biquaternionic Form | framework | two flows, one entropy, mutual friction, the $T\to0$ limit |
+| 19 | Spin Hydrodynamics in Biquaternionic Form | framework | $\mu_{\mathrm{spn}}$, spin diffusion, the closure failure |
+| 20 | Spin Conservation and the Frenkel Condition | framework | the rotor's equation is the spin's conservation; $\mathcal{F}$ is automatic |
+| 21 | Causal Dissipative Hydrodynamics in Biquaternionic Form | **transcription** | Israel–Stewart; causality and stability |
+| 22 | The Thermodynamics of a Quantum Fluid: What Is Established | ledger | this article |
 
-**What the table shows at a glance.** The transcriptions are 9, 16, 17 and 24 — **one in the state layer and three in the locality and fluid layers**, and none in the field layer, which is where the framework content is densest. **The field layer's three articles are the ones no standard treatment contains**, and they are the articles with the largest claim-to-length ratio in the category.
+**What the table shows at a glance.** The transcriptions are 6, 13, 14 and 21 — **one in the state layer and three in the locality and fluid layers**. **The three articles no standard treatment contains are now the whole of the hydrodynamics category**, and they are the articles with the largest claim-to-length ratio in the pair of categories.
 
 ## Open Questions
 
@@ -186,7 +177,7 @@ $$
 
 ## What Is Established and What Is Interpretation
 
-**Established, and checkable from the category's own displays.** That the fluid's variables are the polar word's factors; that the quantum potential is the mass shell's correction with the minus sign and is the quantum stress's divergence; that the flow is not a gradient in the Dirac case and is one in the scalar case; that circulation is quantised on the nodal set; that the Wigner element's first two moments are the density and the current; that $Z$ is a scalar, $\beta$ a length and the thermal element a vector; that a local temperature exists as a pointwise period; that the rigidity condition is the vanishing of the symmetric part of the velocity's gradient and that the corpus's pointwise temperature satisfies it; that the entropy current is Hermitian and the second law one divergence; that the pure state produces no entropy; that the two-fluid model's $T\to0$ limit is the single fluid; that the Frenkel condition is automatic; that Israel–Stewart restores causality and stability.
+**Established, and checkable from the category's own displays.** That the Wigner element's first two moments are the density and the current; that $Z$ is a scalar, $\beta$ a length and the thermal element a vector; that a local temperature exists as a pointwise period; that the rigidity condition is the vanishing of the symmetric part of the velocity's gradient and that the corpus's pointwise temperature satisfies it; that the entropy current is Hermitian and the second law one divergence; that the pure state produces no entropy; that the two-fluid model's $T\to0$ limit is the single fluid; that the Frenkel condition is automatic; that Israel–Stewart restores causality and stability. **The four field-level claims that this ledger used to carry — the polar word's factors, the quantum potential's minus sign and its identity as the quantum stress's divergence, the Dirac flow's non-gradient character against the scalar flow's closure, and the quantisation of circulation — are established in the hydrodynamics category and are not re-audited here.**
 
 **Interpretation, and marked as such in the articles that offer it.** That the corpus has no Belinfante ambiguity; that the thermal structure's belonging to the state and not to the manifold is a *reading* of $k_B$'s role rather than a theorem; that the algebra, and not the phase, carries the charge because the nodal set is the zero-divisor cone. **Each of these is a reading the framework supports and none is proved.**
 
@@ -196,7 +187,7 @@ $$
 
 ## Summary
 
-The category is twenty-five articles in four layers: the field's stress and flow (1 to 3), the state (4 to 10), locality (11 to 17) and the fluid (18 to 24), with this article as the ledger. **Four of the twenty-five are transcriptions — 9, 16, 17 and 24** — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other twenty-one add identifications the algebra makes available: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
+The category is twenty-two articles in three layers and a ledger: the state (1 to 7), locality (8 to 14) and the fluid (15 to 21), with this article as the ledger. **Four of the twenty-two are transcriptions — 6, 13, 14 and 21** — and each carries the sentence that it is standard physics in the corpus's letters with no framework interpretation. The other eighteen add identifications the algebra makes available, several of them inherited from the hydrodynamics block: the velocity is a boost, the spin a rotor, the spin's conservation the rotor's equation, the Frenkel condition automatic, the quantum potential the mass shell's correction, the second law one divergence, the temperature a length.
 
 **The numbers that anchor the category.** $\beta$ is $2.803\,021\times10^{-12}\,\mathrm{m}$ at $2.725\,\mathrm{K}$, $2.546\,078\times10^{-14}\,\mathrm{m}$ at $300\,\mathrm{K}$ and $7.638\,233\times10^{-15}\,\mathrm{m}$ at $1000\,\mathrm{K}$, where $c\beta=mc^{2}/(k_mk_BT)$ is the same circumference in the material sector's units and not an independent number: the two displays differ by the factor $c$, so agreement between them tests the constants and not the physics. Circulation is $2\pi\hbar n/m$, checked at three radii for three windings. The Josephson frequency is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ per meV of chemical-potential difference. The second variation of the energy density in a three-channel example is $0.033$, split $0.0125+0.0125+0.008$ across the bulk, shear and heat channels. The front speed is $\sqrt{D_{\mathrm{th}}/\tau_q}$, which is $0.4472\,c$ for $(0.1,0.5)$ and $1.4142\,c$ — acausal — for $(1.0,0.5)$. The Thomas factor is $0.503\,782$ at $\beta_{\mathrm{vel}}=0.1$.
 
@@ -245,13 +236,13 @@ Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument 
 
 - T. Takabayasi, "Relativistic Hydrodynamics of the Dirac Matter," *Progress of Theoretical Physics Supplement* **4** (1957) 2–80, for the spin fluid and the Frenkel condition's place in it.
 - W. Israel, "Relativistic Thermodynamics, Thermofield Statistics and Superfluids," *Journal of Non-Equilibrium Thermodynamics* **11** (1986) 295, for the two-fluid and causal structures read thermodynamically.
-- W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," *Annals of Physics* **118** (1979) 341–372, for the relaxation equations and the stability form transcribed in article 24.
-- E. Wigner, "On the quantum correction for thermodynamic equilibrium," *Physical Review* **40** (1932) 749–759, for the $x$–$p$ function against which article 4 is written.
-- L. P. Kadanoff and G. Baym, *Quantum Statistical Mechanics* (Benjamin, 1962), for the kinetic structure that article 5 expands.
+- W. Israel and J. M. Stewart, "Transient relativistic thermodynamics and kinetic theory," *Annals of Physics* **118** (1979) 341–372, for the relaxation equations and the stability form transcribed in article 21.
+- E. Wigner, "On the quantum correction for thermodynamic equilibrium," *Physical Review* **40** (1932) 749–759, for the $x$–$p$ function against which article 1 is written.
+- L. P. Kadanoff and G. Baym, *Quantum Statistical Mechanics* (Benjamin, 1962), for the kinetic structure that article 2 expands.
 - R. Haag, N. M. Hugenholtz and M. Winnink, "On the equilibrium states in quantum statistical mechanics," *Communications in Mathematical Physics* **5** (1967) 215–236, for the KMS condition as a characterisation of equilibrium.
 - J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," *Journal of Mathematical Physics* **16** (1975) 985–1007, for the modular flow as the boost.
 - W. G. Unruh, "Notes on black-hole evaporation," *Physical Review D* **14** (1976) 870–892, for the detector temperature on an accelerated worldline.
-- R. C. Tolman, *Relativity, Thermodynamics and Cosmology* (Oxford, 1934), for the law that article 17 quotes.
+- R. C. Tolman, *Relativity, Thermodynamics and Cosmology* (Oxford, 1934), for the law that article 14 quotes.
 - L. D. Landau and E. M. Lifshitz, *Fluid Mechanics* (Pergamon, 1987), for the two-fluid model's non-relativistic form and the mutual friction.
 - S. Weinberg, *Gravitation and Cosmology* (Wiley, 1972), for the perfect fluid's stress and the entropy current in a background geometry.
 - The category's four transcriptions, which a reader new to it should read first: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html), [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), [Covariant Local Equilibrium and Tolman Temperature](covariant-local-equilibrium-and-tolman-temperature.html), and [Causal Dissipative Hydrodynamics in Biquaternionic Form](causal-dissipative-hydrodynamics-in-biquaternionic-form.html).

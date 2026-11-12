@@ -313,13 +313,15 @@ $$
 
 using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.
 
-Take the central-phase plane-wave ansatz of the parent article, with $\tilde{Ξ} = \tilde{Ξ}_{0}\exp(i\,\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{Q}^{\natural})/\hbar) = \tilde{Ξ}_{0}\exp(i\theta_{\mathrm{cen}})$ and $\tilde{P}_{\Phi} = ik_{t}^{\prime}e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_{t}^{\prime} = \omega/c$. The computation is one of elements: the field is an element of $\mathbb{B}$, the gradient acts by left multiplication, and on the plane wave that multiplication is by $i\tilde{P}_{\Phi}$. A single phase cannot satisfy the equation: the gradient multiplies the phase by $i\tilde{P}_{\Phi}$, while $\flat$ conjugates it, so the two sides carry $\exp(+i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
+Take the central-phase plane-wave ansatz of the parent article, with $\tilde{Ξ} = \tilde{Ξ}_{0}\exp(-i\theta_{\mathrm{pwp}}) = \tilde{Ξ}_{0}\exp(i\theta_{\mathrm{cen}})$ and $\tilde{P}_{\Phi} = ik_{t}^{\prime}e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_{t}^{\prime} = \omega/c$. The computation is one of elements: the field is an element of $\mathbb{B}$, the gradient acts by left multiplication, and on the plane wave that multiplication is by $i\tilde{P}_{\Phi}$. A single phase cannot satisfy the equation: the gradient multiplies the phase by $i\tilde{P}_{\Phi}$, while $\flat$ conjugates it, so the two sides carry $\exp(+i\theta_{\mathrm{cen}})$ and $\exp(-i\theta_{\mathrm{cen}})$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
 
 $$
 \tilde{Ξ} = \tilde{Ξ}_{0}\,\exp(i\theta_{\mathrm{cen}}) + \tilde{Ξ}_{1}\,\exp(-i\theta_{\mathrm{cen}}),
 $$
 
 and the equation becomes a linear system for the pair $(\tilde{Ξ}_{0},\tilde{Ξ}_{1})$. Its solvability depends on $\tilde{P}_{\Phi}$, and the dependence is the whole story.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 Since $\flat$ is antilinear, it conjugates the phase: $(\tilde{Ξ}_{0}e^{i\theta_{\mathrm{cen}}})^\flat=\tilde{Ξ}_{0}^{\flat} e^{-i\theta_{\mathrm{cen}}}$. The value of $i^\flat$ is not what does the work here — $\flat$ fixes $i$, and what conjugates the exponential is the antilinearity, $(\lambda\tilde{Ξ})^\flat=\bar{\lambda}\tilde{Ξ}^{\flat}$ for $\lambda\in\mathbb{C}$. With $\tilde{Ξ}_{0}^{\flat}=-\tilde{Ξ}_{0}^*$ the two modes act as
 

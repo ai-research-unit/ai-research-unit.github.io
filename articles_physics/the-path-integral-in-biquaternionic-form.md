@@ -5,12 +5,12 @@
 The Feynman path integral writes the transition amplitude of a quantum system as a sum over histories,
 
 $$
-G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(iS[r_x]/\hbar),
+G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int\mathcal{D}r_x(r'_t)\;\exp(i\theta_{\mathrm{act}}),
 \qquad
 S[r_x]=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Lag}(r_x,dr_x/dr'_t)\,dr'_t,
 $$
 
-in which every path from $(r_{ix},r'_{t,i})$ to $(r_{fx},r'_{t,f})$ contributes the phase $\exp(iS[x]/\hbar)$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
+in which every path from $(r_{ix},r'_{t,i})$ to $(r_{fx},r'_{t,f})$ contributes the phase $\exp(i\theta_{\mathrm{act}})$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
 
 This article asks of the phase the question that the read-list articles have already asked twice. The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a unique **central** root of $-1$ up to sign — the scalar imaginary $i$ — and it also contains **real non-central** roots: the unit pure real quaternions $\vec u$ that name spin directions, of which the quaternion units $\vec e_x,\vec e_y,\vec e_z$ are the coordinate cases. The companion article *The Schrödinger Equation in Biquaternionic Form* settled which of these is the $i$ of the state-vector equation, and showed that a non-central root breaks norm preservation. The companion article *The Feynman Propagator in Biquaternionic Form* settled where the $i\epsilon$ lives — along the $i r'_t$ axis of the material sector $\mathbb{B}_{\Phi}$ — and argued that the algebra names that axis without choosing its orientation. The companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* settled that $r'_t\mapsto-i\tau$ is, in this framework, the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, obtained by relabeling the imaginary time coefficient as a real one. The path integral's phase is the object on which all three of these results bear at once.
 
@@ -26,9 +26,9 @@ $$
 
 with $S=S(\zeta,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \zeta_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(i\theta_{\mathrm{act}})$.
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
-The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle  \zeta_f|\eta_f\rangle=\exp(\frac{i\,U}{\hbar})$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\eta)$ — every $\zeta$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
+The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle  \zeta_f|\eta_f\rangle=\exp(i\theta_{\mathrm{act}})$. For any function expressed as a well-ordered sum of products $f(\zeta)g(\eta)$ — every $\zeta$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
 
 $$
 \langle \zeta_f|f(\zeta)g(\eta)|\eta_f\rangle=f(\zeta_f)g(\eta_f)\,\langle \zeta_f|\eta_f\rangle ,
@@ -63,7 +63,7 @@ $$G_{\mathrm{prop}}(x_f,r'_{t,f};x_i,r'_{t,i})=\int dx\;G_{\mathrm{prop}}(x_f,r'
 This is the statement that the sum over paths is a sum over the intermediate point at which a path crosses time $r'_t$; it is the same completeness relation that any representation of the evolution operator must satisfy.
 
 **Interference.** Two classes of paths whose actions differ by $\delta S$ contribute
-$$\exp(\frac{iS_{1}}{\hbar})+\exp(\frac{iS_{2}}{\hbar})=2\cos\!\Big(\frac{\delta S}{2\,\hbar}\Big)\exp(\frac{i\,\bar{S}}{\hbar}),
+$$\exp(\frac{iS_{1}}{\hbar})+\exp(\frac{iS_{2}}{\hbar})=2\cos\!\Big(\frac{\delta S}{2\,\hbar}\Big)\exp(i\theta_{\mathrm{act}}),
 \qquad \bar S=\tfrac12(S_1+S_2),$$
 so the intensity has fringes with complete destructive nodes at $\delta S=\pi\,\hbar\,(2n+1)$. More generally, $N$ equal-amplitude paths with successive phase $\delta$ sum to
 $$\Big|\sum_{k=0}^{N-1}\exp(ik\delta)\Big|=\Big|\frac{\sin(N\delta/2)}{\sin(\delta/2)}\Big|.$$
@@ -107,7 +107,7 @@ $$
 \boxed{\;\exp(i\theta_{\mathrm{act}})=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)\,i e_t\;\in\;\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}\;}.
 $$
 
-Its Hermitian conjugate is its inverse, $(\exp(i\theta_{\mathrm{act}}))^\dagger=\exp(-\frac{i\,S}{\hbar})$, so it is **$*$-unitary** in the sense of the framework's $*$-unitary group $\mathrm{U}(2)$:
+Its Hermitian conjugate is its inverse, $(\exp(i\theta_{\mathrm{act}}))^\dagger=\exp(-i\theta_{\mathrm{act}})$, so it is **$*$-unitary** in the sense of the framework's $*$-unitary group $\mathrm{U}(2)$:
 
 $$
 \exp(i\theta_{\mathrm{act}})\,\big(\exp(i\theta_{\mathrm{act}})\big)^\dagger=e_t.
@@ -116,7 +116,7 @@ $$
 It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
-\exp(i\theta_{\mathrm{act}})\,\overline{\big(\exp(i\theta_{\mathrm{act}})\big)}=\exp(\frac{2\,i\,S}{\hbar})\neq  e_t
+\exp(i\theta_{\mathrm{act}})\,\overline{\big(\exp(i\theta_{\mathrm{act}})\big)}=\exp(2i\theta_{\mathrm{act}})\neq  e_t
 \qquad\text{unless }\frac{S}{\hbar}\in\pi\,\mathbb{Z}.
 $$
 
@@ -133,7 +133,7 @@ a complex number times the identity. It is not a general biquaternion.
 2. **The phase multiplies every spinor component equally.** In the state module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ of the Schrödinger article, a central phase acts as the same scalar on both components, $\exp(i\theta_{\mathrm{act}})\tilde{Ξ}$. A non-central phase would mix or relatively phase the components; a central one does not.
 
 3. **The overall phase cancels in the state.** With $\tilde{Ξ}\mapsto  \exp(i\theta_{\mathrm{act}})\tilde{Ξ}$ and $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}\tilde{Ξ}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})\in\mathbb{B}_{\Psi}$, centrality gives
-$$\tilde{Ϛ}_{\Psi}\,\longmapsto\frac{\exp(i\theta_{\mathrm{act}})\tilde{Ξ}\,\tilde{Ξ}^{\dagger} \exp(-\frac{i\,S}{\hbar})}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})}=\tilde{Ϛ}_{\Psi},$$
+$$\tilde{Ϛ}_{\Psi}\,\longmapsto\frac{\exp(i\theta_{\mathrm{act}})\tilde{Ξ}\,\tilde{Ξ}^{\dagger} \exp(-i\theta_{\mathrm{act}})}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})}=\tilde{Ϛ}_{\Psi},$$
 so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde H_\Psi\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
@@ -347,7 +347,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 
 ## Summary
 
-The path integral $K=\int\mathcal{D}x\,\exp(iS[x]/\hbar)$ is a sum over paths weighted by the phase $\exp(i\theta_{\mathrm{act}})$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $\frac{i\,S}{\hbar}$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{B}_{\Phi}$, along the $i r'_t$ direction; and the phase factor $\exp(i\theta_{\mathrm{act}})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, satisfying $(\exp(i\theta_{\mathrm{act}}))(\exp(i\theta_{\mathrm{act}}))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(i\theta_{\mathrm{act}})\overline{\exp(i\theta_{\mathrm{act}})}=\exp(\frac{2\,i\,S}{\hbar})$.
+The path integral $K=\int\mathcal{D}x\,\exp(i\theta_{\mathrm{act}})$ is a sum over paths weighted by the phase $\exp(i\theta_{\mathrm{act}})$. In the biquaternion framework the symbol $i$ in that phase is the **central scalar imaginary**, the unique central root of $-1$ in $\mathbb{B}$ up to sign; the phase exponent $\frac{i\,S}{\hbar}$ is a purely imaginary scalar and therefore lies in the **material sector** $\mathbb{B}_{\Phi}$, along the $i r'_t$ direction; and the phase factor $\exp(i\theta_{\mathrm{act}})$ is a **central $*$-unitary** element of $\mathbb{B}_{C}$, satisfying $(\exp(i\theta_{\mathrm{act}}))(\exp(i\theta_{\mathrm{act}}))^\dagger=e_t$ but not the unit-norm condition of the Lorentz group, since $\exp(i\theta_{\mathrm{act}})\overline{\exp(i\theta_{\mathrm{act}})}=\exp(2i\theta_{\mathrm{act}})$.
 
 Centrality has three consequences: the amplitude is a complex scalar times $e_t$; the phase multiplies every spinor component of the state module equally; and the global phase cancels in the density matrix $\tilde{Ϛ}_{\Psi}=\tilde{Ξ}\tilde{Ξ}^{\dagger}$, so only relative phases — the differences of actions between paths — are observable. These relative phases produce the standard interference, $|\exp(\frac{iS_{1}}{\hbar})+\exp(\frac{iS_{2}}{\hbar})|=2|\cos(\frac{\delta S}{2\,\hbar})|$, with nodes at $\delta S=\pi\,\hbar\,(2n+1)$.
 

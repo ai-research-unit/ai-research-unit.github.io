@@ -16,7 +16,7 @@ The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C
 
 The companion articles are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the phase-space biquaternion and the Poisson bracket.
-- Companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*, for the symplectic potential as the boundary term of the action.
+- Companion article *The Action Principle and the Classical Limit in Biquaternionic Form*, for the symplectic potential as the boundary term of the action.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the coadjoint orbit and the Souriau form.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the biquaternion norm, the four-vector, and the light cone.
 
@@ -274,7 +274,7 @@ $$
 \boxed{\;\langle\tilde R_\Phi\rangle_{\natural}=(i r'_t)^2+r_x^2+r_y^2+r_z^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2\;},
 $$
 
-which is the Minkowski interval; its zero set $\langle\tilde R_\Phi\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
+which is the Minkowski interval; its zero set $\langle\tilde R_\Phi\rangle_{\natural}=0$ is the **light cone**. The indefinite signature is not a convention of the conjugation. $\natural$ fixes the centre and reverses the vector part, so $\tilde R_\Phi^{\natural}=i r'_t\,e_t-\vec r\neq-\tilde R_\Phi$ although $\tilde R_\Phi$ is anti-Hermitian; the sign comes from the single factor $i^2=-e_t$ in the scalar coefficient, and from nothing else. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
 
 The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$, the biquaternion norm is
 

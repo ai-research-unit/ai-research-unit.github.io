@@ -241,7 +241,9 @@ The minimal-idempotent interpretation is not a diminution of the field vacuum. I
 
 **Open.**
 - Whether a dynamics inside the framework selects a particular minimal idempotent, and by what mechanism, is not addressed by the algebra.
-- Whether the zero-divisor property of the vacuum has consequences for the framework's treatment of superselection sectors or of the theta vacuum is taken up in the companion articles on those subjects.
+- Whether the zero-divisor property of the vacuum has consequences for the framework's treatment of superselection sectors or of the theta vacuum is taken up in the companion articles on those subjects. What the zero-divisor property does to the *classical* reading of the field — the polar word fails on exactly this set, and the
+fields of definite value are the ones that sit on it with a density that never vanishes — is [The Domain of the Fluid Reading](the-domain-of-the-fluid-reading.html), in
+the hydrodynamics block.
 
 ## Summary
 

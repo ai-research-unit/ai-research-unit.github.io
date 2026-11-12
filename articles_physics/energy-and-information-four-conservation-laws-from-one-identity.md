@@ -448,7 +448,7 @@ $$
 
 The mass is the invariant coefficient and the frame factor is the conversion between coordinate time and proper time. The phase $\exp(i\theta_{\mathrm{act}})$ therefore carries the mass in its amplitude and the frame in its clock. This is the sharpest form of the split on the material side: **the action is the mass times the proper time, and the frame information is the rate at which proper time is spent.**
 
-Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(iS/\hbar)=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
+Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the angle of the action: it is real whenever the action is real, and it is the angle the wave form carries. The weight $\kappa_{\mathrm{act}}:=-\mathrm{Im}\,S/\hbar$ accompanies it, zero for a real action and positive for a decaying amplitude, so that $\exp(i\theta_{\mathrm{act}})=\exp(i\theta_{\mathrm{act}})\exp(-\kappa_{\mathrm{act}})$. A complex action carries both factors; a real action carries the angle alone.
 
 ### Mass Conservation Is Norm Conservation of the Total
 
@@ -778,7 +778,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | the width is the imaginary part of the central self-energy | corpus result | *The Unstable State and the Complex Energy Pole* |
 | in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde H_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde H_\Psi$; checked |
 | the effective anti-Hermitian part decays the norm at rate $\tilde\Gamma$ | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*$; checked on 100 elements |
-| the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-i(w/(\hbar c))r'_t}v\rVert^2=e^{2\operatorname{Im}(w)r'_t/(\hbar c)}$; checked to $7.8\times10^{-16}$ |
+| the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-i\theta_{\mathrm{pwt}}}v\rVert^2=e^{2\operatorname{Im}(w)r'_t/(\hbar c)}$; checked to $7.8\times10^{-16}$ |
 | the Lindblad flow preserves the trace | established | cyclicity; checked to $1.8\times10^{-15}$ |
 | the norm lost on the no-jump branch is the total jump probability | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked |
 | the commutator $-i[\tilde H_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form | established | the adjoint is its negative; residual $0$ |
@@ -788,6 +788,8 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | $h_0$ | proposal | not in the corpus |
 
 **The first objection is that the sectors are not conserved charges.** The superselection article shows that the split is a grading of the operations and not a central decomposition of the state space, and that there is no additive label counting material against informational content. The objection is correct and the article accepts it. The duality does not need such a charge: it is a statement about two readings of the trace and the norm, and both readings are available on every element. What the split does not give is a conserved quantum number, and the article does not claim one.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 **The second objection is that mass is not additive.** The objection is correct, and it is the reason the article states mass conservation as norm conservation of the total. The norm is multiplicative under composition and the four-momenta add; the mass of a sum carries the cross term. A conservation law that adds masses is not the algebra's law.
 

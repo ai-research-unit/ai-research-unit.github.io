@@ -49,13 +49,16 @@ The choice of the $-\vec u_y$ sense for the second transverse component is the o
 
 ### The Larmor Precession as a Rotor
 
-With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-\frac{i\,H_{0}\,r'_{t}}{\hbar\,c})$ with $\tilde{H}_{\Psi,0} = -\frac{\hbar\,\omega_{0}}{2}i\vec e_z$. Since $-i H_{0}/\hbar = \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,
+With $B_1 = 0$ the propagator is $\tilde u_0(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ with $\tilde{H}_{\Psi,0} = -\frac{\hbar\,\omega_{0}}{2}i\vec e_z$. Since $-i H_{0}/\hbar = \tfrac{\omega_0}{2}(i\cdot i\vec e_z) = -\tfrac{\omega_0}{2}\vec e_z$ and $\vec e_z^2 = -e_t$,
 
 $$
 \tilde u_0(r'_t) = \exp\!\left(-\frac{\omega_0 r'_t}{2\,c}\vec e_z\right)
 = \cos\frac{\omega_0 r'_t}{2\,c}\,e_t - \sin\frac{\omega_0 r'_t}{2\,c}\,\vec e_z
 \;\in \mathbb{B}_{H} .
+
 $$
+
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 This is a unit real quaternion, a rotor; it acts on states and observables by conjugation and generates the Larmor precession. The key algebraic point is the one the Schrödinger article makes: the generator of the *physical* rotation is a real quaternion $\vec e_z$, obtained from the Hermitian observable $i\vec e_z$ by multiplication by the central $i$. The imaginary unit that makes the observable Hermitian is the same one that converts its exponential into a rotation rather than a boost.
 

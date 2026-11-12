@@ -102,7 +102,7 @@ $$
 \left(d^2a_{lm}/d{t'}^2\right)(r'_t) + \omega_l^2\,a_{lm}(r'_t) = 0 ,
 $$
 
-with $t'=r'_t/c$, a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
+with $t'=r'_t/c$, a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(r'_t) = A_{lm}\cos(\omega_l r'_t/c + \theta_{\mathrm{pha},lm})$, with $\theta_{\mathrm{pha},lm}$ a real phase constant; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
 
 The classic and exactly solvable case is **Rayleigh's vibrating liquid drop**, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result
 

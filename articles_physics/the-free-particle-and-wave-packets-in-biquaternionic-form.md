@@ -88,7 +88,7 @@ lies in the **material sector**, as every generator of a $*$-unitary flow does i
 Take the plane-wave ansatz
 
 $$
-\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c)),
+\tilde{Ξ}_{\vec k_\Phi}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \xi\, \exp(-i\theta_{\mathrm{pwp}}),
 \qquad
 \xi \in \mathbb{B}\tilde\Pi \ \text{constant}, \qquad \vec k_\Phi \in \mathbb{R}^3,
 $$
@@ -110,7 +110,7 @@ $$
 
 Two features of the solution are the whole content of the plane-wave section. First, the **energy does not depend on $\xi$**: the two components of the spinor are degenerate, because the Hamiltonian is central. Second, the phase is central, so it multiplies both components equally and generates no relative phase. Neither of these is an assumption; both follow from $H \in \mathbb{B}_{C}$.
 
-The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_\eta \exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)) =\hbar\,k_\Phi\exp(i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$,
+The momentum acts on the plane wave as a left multiplication by a fixed algebra element. Using $p_\eta \exp(i\theta_{\mathrm{spa}}) =\hbar\,k_\Phi\exp(i\theta_{\mathrm{spa}})$,
 
 $$
 \tilde p\,\tilde{Ξ}_{\vec k_\Phi} = \sum_\eta  \vec e_\eta p_\eta \tilde{Ξ}_{\vec k_\Phi}
@@ -124,7 +124,10 @@ $$
 \tilde p^{\,2}\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,\vec k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}= -\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi},
 \qquad
 \tilde p\,\tilde p^{\natural}\,\tilde{Ξ}_{\vec k_\Phi} =\hbar^{2}\,k_\Phi^{2}\,\tilde{Ξ}_{\vec k_\Phi}.
+
 $$
+
+The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 The operator $\hbar\,\vec k_\Phi$ is a real quaternion, so $\tilde p$ is diagonalised on the plane waves by left multiplication in the vector slots; the two spinor components share the same eigenvalue. The phase $\exp(i\theta_{\mathrm{pwp}})$ is the standard Schrödinger phase; what the biquaternion interpretation adds is that the **imaginary unit in it is the canonical central one**, not a chosen complex structure.
 
@@ -204,7 +207,7 @@ The zero divisor cone therefore carries the states, while the positive trace for
 The free equation is linear over $\mathbb{C}$, and its coefficients are central, so superpositions of plane waves are solutions:
 
 $$
-\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \int \frac{d^3k_\Phi}{(2\pi)^3}\;\tilde{Ξ}_{0}(\vec k_\Phi)\,\exp(\,i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega(\vec k_\Phi) r'_t/c)),
 \qquad
 \tilde{Ξ}_{0}(\vec k_\Phi) \in \mathbb{B}\tilde\Pi .
 $$
@@ -270,7 +273,7 @@ $$
 \qquad
 A(r'_t) = 1 + \frac{i r'_t}{2s_0^2\,k_m},
 \qquad
-v_0 = c\,k_\Phi/k_m_0,
+v_0 = c\,k_\Phi/k_{m,0},
 $$
 
 and its density is again a normalised Gaussian,
@@ -317,7 +320,7 @@ The stationary wave vector is the one whose group velocity carries it to the obs
 The free propagator is the inverse Fourier transform of the free phase,
 
 $$
-\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k_\Phi_\Phi}{(2\pi)^3}\,
+\boxed{\;G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z, r'_t) = \int  \frac{d^3k_\Phi}{(2\pi)^3}\,
 \exp(\,i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) -\frac{i\,\hbar\,k_\Phi^{2}\,r'_{t}}{2\,m})
 = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}
 \exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)\;},
@@ -362,16 +365,21 @@ in which the kernel acts on the body of the field and multiplies the module fact
 The evolution operator is the exponential of the generator,
 
 $$
-\tilde Q(r'_t) = \exp(-\frac{i\,H\,r'_{t}}{\hbar}) = \exp(-\frac{i\,p^{2}\,r'_{t}}{2\,\hbar\,m})\,e_t \in  \mathbb{B}_{C},
+\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(-\frac{i\,p^{2}\,r'_{t}}{2\,\hbar\,m})\,e_t \in  \mathbb{B}_{C},
 $$
 
 a central $*$-unitary element in the framework's sense,
 
 $$
 \tilde U\tilde U^{*} = e_t .
+
 $$
 
-It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm{lor}}$ satisfies $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-\frac{i\,E\,r'_{t}}{\hbar})$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the $*$-unitary group and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ and preserves the sector assignment of a field that begins in $\mathbb{B}_{\Psi}$.
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+
+It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm{lor}}$ satisfies $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-i\theta_{\mathrm{pwt}})$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the $*$-unitary group and $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ and preserves the sector assignment of a field that begins in $\mathbb{B}_{\Psi}$.
+
+The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 ## The Module Factor and the Meaning of a Spin-0 Field
 
@@ -434,7 +442,7 @@ $$
 G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \left(\frac{k_m}{2\pi i r'_t}\right)^{3/2}\exp\!\left(\frac{im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^2}{\frac{2\,\hbar\,r'_{t}}{c}}\right)
 $$
 
-is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-\frac{iHr'_{t}}{\hbar})$ is a central $*$-unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.
+is central, is a complex scalar times $e_t$, and satisfies the composition law, verified numerically on a two-packet superposition to a relative error of order $10^{-14}$. The free evolution operator $\tilde U = \exp(-i\theta_{\mathrm{evo}})$ is a central $*$-unitary, $\tilde U\tilde U^{*} = e_t$, but not a unit-norm rotor. The framework thus supplies the phase, its canonical imaginary unit, the sector location, and the trace-based probability; it does not supply the position operator, the module's dynamics, or any non-central correction, none of which the free problem requires.
 
 ## Summary of Notation
 
@@ -463,7 +471,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $s_0$, $s(r'_t) = s_0\sqrt{1+(\frac{\hbar\,r'_{t}}{2\,m\,c\,s_{0}^{2}})^2}$ | Initial and time-dependent density width |
 | $\tau = 2s_0^2/(c/k_m)$ | Spreading time |
 | $G_{\mathrm{prop},0}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = (\frac{m}{2\,\pi\,i\,\hbar\,r'_{t}})^{3/2}\exp(im|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|^\frac{c}{\hbar\,r'_{t}})$ | Free propagator; central |
-| $\tilde Q(r'_t) = \exp(-\frac{iHr'_{t}}{\hbar})$ | Free evolution; central $*$-unitary |
+| $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ | Free evolution; central $*$-unitary |
 | $\mathrm{Tr}(\tilde H_\Psi) = 2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

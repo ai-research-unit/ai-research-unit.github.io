@@ -7,7 +7,7 @@ discipline is the discrete lattice: the integral structures of the algebra, the 
 and the finite groups of units attached to them — the quaternion group of order eight, the binary tetrahedral
 group of order twenty-four and the binary polyhedral groups — all owned by *Quaternion Orders and Finite
 Groups of Units*. The **analytic** discipline is the thermal circle: the imaginary-time compactification and
-the discrete Matsubara frequencies, owned by *The Matsubara Thermal Formalism in Biquaternionic Form*. The lattice is
+the discrete Matsubara frequencies, owned by [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html). The lattice is
 static and algebraic, the circle is thermal and analytic, and this article states the one principle that
 produces both.
 

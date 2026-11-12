@@ -416,7 +416,7 @@ The open questions are concrete.
 
 ## Examples
 
-**The boost biquaternion.** $\tilde U_{\Psi,\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{B}_{\Psi}$. It acts on $\mathbb{B}_{\Phi}$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.
+**The boost biquaternion.** $\tilde U_{\Psi,\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)+i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{B}_{\Psi}$. It acts on $\mathbb{B}_{\Phi}$ by rotor conjugation and implements a Lorentz boost; $\theta_{\mathrm{rpd}}$ is the rapidity, $\tanh\theta_{\mathrm{rpd}}=v/c$, real below $c$. It is not matrix-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.
 
 **A pure state.** $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is Hermitian, idempotent, with $2\,\mathrm{Sc}(\tilde\Pi_+)=1$ (trace one), and a zero divisor. It is the pure state along $+z$, the Bloch vector $\vec r=\vec e_z$, and the north pole of the Bloch sphere. The orthogonal idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is the south pole.
 

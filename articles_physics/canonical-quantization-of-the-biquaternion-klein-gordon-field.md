@@ -86,7 +86,7 @@ k_{t}^{\prime}=\frac{\omega}{c},
 =-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2} .
 $$
 
-Here $k_{\Phi}=|\vec k_\Phi|=\frac{p}{\hbar}$ is the momentum wave number, and the norm is a central **scalar** of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(i\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_{\Phi}^{\natural}))e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.
+Here $k_{\Phi}=|\vec k_\Phi|=\frac{p}{\hbar}$ is the momentum wave number, and the norm is a central **scalar** of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.
 
 ## Equal-Time Commutation Relations
 
@@ -165,7 +165,7 @@ with all other commutators vanishing. The equal-time canonical relation is recov
 
 $$
 \big[\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t),\pi_{\mathrm{fop}}(\vec y,r'_t)\big]
-=i\,\hbar\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\exp(\,i\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y))
+=i\,\hbar\int\!\frac{d^3p}{(2\pi\hbar)^3}\,\exp(i\theta_{\mathrm{spa}})
 =i\,\hbar\,\delta^{(3)}\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y).
 $$
 
@@ -178,6 +178,8 @@ $$
 $$
 
 with the occupation basis $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$ and the vacuum $|0\rangle$ annihilated by every $a_{\mathrm{fop},\vec p}$ and $b_{\mathrm{fop},\vec p}$. The symmetric projection is the standard bosonic construction and is carried by the commutator, exactly as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records. The scalar Fock space is standard and imported; the biquaternion framework contributes the central phase and the biquaternion-norm interpretation of the dispersion, and nothing algebraic.
+
+The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
 The obstruction to anything more is worth stating precisely, because it distinguishes the scalar case from the Dirac case. The mode operators $a_{\mathrm{fop},\vec p},{a_{\mathrm{fop},\vec p}}^\dagger$ are **not** elements of $\mathbb{B}$. They are elements of the Weyl algebra of the one-particle space, which is infinite-dimensional, and no finite-dimensional algebra can contain them: if $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ held for $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$, the trace would give $0=\mathrm{Tr}([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}])=c\,\mathrm{Tr}(e_t)=2c$, hence $c=0$. The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* draws the consequence for the algebra: $\mathbb{B}\cong M_2(\mathbb{C})$ hosts exactly one **fermionic** mode and no bosonic mode at all. The scalar field, being bosonic, has no native one-mode core in $\mathbb{B}$; its ladder is a construction on an imported module. The contrast with the Dirac quantization is exact: there the algebra at least carried the one-mode anticommutator and the fermion-parity grading; here it carries neither the commutator nor any scalar analog of the grading.
 

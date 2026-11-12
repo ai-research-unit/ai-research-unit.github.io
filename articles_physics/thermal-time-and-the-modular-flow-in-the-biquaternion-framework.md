@@ -4,7 +4,8 @@
 
 The **modular flow** of a state is the one-parameter group of automorphisms that the state defines on its algebra through the Tomita–Takesaki construction. The **thermal time hypothesis** of Connes and Rovelli is the proposal that this flow *is* the physical flow of time: that a state, not a Hamiltonian, is what specifies time, and that the modular flow of the state is the time evolution an observer in that state would measure. The proposal is radical where it is nontrivial: on a type III algebra there is no Hamiltonian and no density matrix, so the modular flow is the only canonical flow available, and it is outer.
 
-This article is the dynamical continuation of the modular programme of the three preceding articles. It asks what thermal time and the modular flow are in the biquaternion framework, and the answer is a definite computation with a definite limitation.
+This article is the dynamical continuation of the two preceding articles, the Tomita–Takesaki construction and the modular Hamiltonian, which supply the flow and its
+generator. It asks what thermal time and the modular flow are in the biquaternion framework, and the answer is a definite computation with a definite limitation.
 
 1. **The modular flow is explicit.** For a faithful biquaternion state $\tilde{Ϛ}_{\Psi}$ the modular flow is
 $$

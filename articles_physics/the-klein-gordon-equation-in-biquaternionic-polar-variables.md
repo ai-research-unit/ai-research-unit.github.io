@@ -57,7 +57,7 @@ Substituting this word into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating re
 
 The sections follow that order: the field and its word, the equation in polar variables, the momentum and the current, the non-relativistic limit, the general field, and what the word does and does not add.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
 
 ## The Field and Its Word
 
@@ -210,9 +210,23 @@ $$
 \boxed{\;\tilde J_{\Phi}=\frac{\rho_{\mathrm{num}}}{m}\tilde P_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}\;}
 $$
 
-The current is the density times the four-velocity, and the coefficient $\rho_{\mathrm{num}}/m$ is a positive real scalar. The charge density and the proper density differ by the factor $\gamma$: with $v'_t=\gamma c$ the temporal slot gives $\rho_{\mathrm{chg}}=(v'_t/c)\rho_{\mathrm{num}}$, which is the conventions' $\rho_{\mathrm{chg}}=ϙ\gamma\rho_{\mathrm{num}}$ at unit charge $ϙ$. The two minus signs of the two conversions, the one in $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and the one in the temporal slot of $\tilde P_{\Phi}$, cancel, so the charge density is positive exactly when the energy is.
+**The normalisation is one chain.** With $\rho_{\mathrm{num}}=r^{2}$ and $E=-c\,\partial_{r'_t}S_{\tilde\Xi}$,
 
-**The check on a plane wave.** With $\Xi_t=\tilde Q_{\mathrm{amp}}\exp(i\,\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural}))$ for a complex constant $\tilde Q_{\mathrm{amp}}$, the amplitude is $r=\lvert\tilde Q_{\mathrm{amp}}\rvert$ and the energy is $E=\hbar\omega$, so $\rho_{\mathrm{chg}}=r^{2}\omega/(ck_m)$, which is the companion's value. The general formula reproduces it with no separate computation.
+$$
+j_{r'_t}=2r^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}
+=\frac{2r^{2}}{\hbar}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}
+=-\frac{2r^{2}E}{\hbar c}
+=-2k_m\frac{r^{2}E}{mc^{2}}
+=-2k_m\,\rho_{\mathrm{chg}},
+$$
+
+so the factor $2k_m$ converts a phase rate into a charge density, and the prefactor $i/(2k_m)$ of the companion's bilinear is the inverse of it. The sign is the sign of $E$ and of nothing else.
+
+The current is the density times the four-velocity, and the coefficient $\rho_{\mathrm{num}}/m$ is a positive real scalar. The charge density and the proper density differ by the factor $\gamma$: with $v'_t=\gamma c$ the temporal slot gives $\rho_{\mathrm{chg}}=(v'_t/c)\rho_{\mathrm{num}}=\gamma\rho_{\mathrm{num}}$, which is the conventions' $\rho_{\mathrm{chg}}=ϙ\gamma\rho_{\mathrm{num}}$ at $ϙ=1$. The two minus signs of the two conversions, the one in $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and the one in the temporal slot of $\tilde P_{\Phi}$, cancel, so the charge density is positive exactly when the energy is.
+
+**The check on a plane wave.** With $\Xi_t=\tilde Q_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})$ for a complex constant $\tilde Q_{\mathrm{amp}}$, the amplitude is $r=\lvert\tilde Q_{\mathrm{amp}}\rvert$ and the energy is $E=\hbar\omega$, so $\rho_{\mathrm{chg}}=r^{2}\omega/(ck_m)$, which is the companion's value. The general formula reproduces it with no separate computation.
+
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
 ### Conservation is the transport equation
 
@@ -290,7 +304,7 @@ The second term is the whole of the quantum content. With it the fluid is not du
 
 ### The action carries the rest energy
 
-The companion divides out the rest-mass phase $f=\exp(-ik_m r'_t)$ and expands what is left. In polar variables that step is a statement about the action: it is dominated by a term linear in the material time,
+The companion divides out the rest-mass phase $f=\exp(-i\theta_{\mathrm{rst}})$ and expands what is left. In polar variables that step is a statement about the action: it is dominated by a term linear in the material time,
 
 $$
 S_{\tilde\Xi}=-mc\,r'_t+\sigma,
@@ -301,6 +315,8 @@ T_{\mathrm{kin}}=-c\,\frac{\partial\sigma}{\partial r'_t},
 $$
 
 with $\sigma$ the action of the envelope and $T_{\mathrm{kin}}$ the kinetic energy. The coefficient of $r'_t$ is $mc$ and not $mc^{2}$, because $r'_t$ is a length and $mc^{2}t'=mc\,r'_t$. Dividing out $f$ and adding the rest term to the action are one operation: the companion's $f$ is the leading term of the action, and the companion's envelope $\chi$ is $r\exp(i\theta_{\mathrm{act}}/\hbar)e_t$ in these variables.
+
+The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
 
 ### The quantum potential becomes the WKB one
 
@@ -352,7 +368,7 @@ $$
 \qquad\text{for each }\mu\in\{t,x,y,z\}.
 $$
 
-No equation relates $\Xi_t$ to $\Xi_x$. The solution space is a tensor product: writing $S$ for the set of complex scalar solutions, $\{\tilde\Xi:(\Box-k_m^{2})\tilde\Xi=0\}=\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, because the equation is linear with scalar coefficients and the four units are a basis. Each coefficient carries its own amplitude $\lvert\Xi_\mu\rvert>0$ and its own action $S_\mu$, and the pair of §*The Equation in Polar Variables* Real Equations* returns for each of them with $r$ replaced by $\lvert\Xi_\mu\rvert$ and $S_{\tilde\Xi}$ by $S_\mu$. Four complex coefficients are eight real functions, and the four complex equations are eight real equations, one pair per coefficient: nothing is missing and nothing is overdetermined.
+No equation relates $\Xi_t$ to $\Xi_x$. The solution space is a tensor product: writing $S$ for the set of complex scalar solutions, $\{\tilde\Xi:(\Box-k_m^{2})\tilde\Xi=0\}=\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, because the equation is linear with scalar coefficients and the four units are a basis. Each coefficient carries its own amplitude $\lvert\Xi_\mu\rvert>0$ and its own action $S_\mu$, and the pair of §*The Equation in Polar Variables* returns for each of them with $r$ replaced by $\lvert\Xi_\mu\rvert$ and $S_{\tilde\Xi}$ by $S_\mu$. Four complex coefficients are eight real functions, and the four complex equations are eight real equations, one pair per coefficient: nothing is missing and nothing is overdetermined.
 
 **The four pairs share no content.** The four actions are unrelated, so the four momenta $\tilde P_{\Phi,\mu}=\tilde\nabla_\Phi S_\mu$ are unrelated, and a superposition may carry four different wavevectors. Within a single plane wave the four coefficients share one $\vec k$, because there is one phase and a phase has one gradient at each event; the four-way freedom lives in superpositions and not in modes.
 
@@ -374,7 +390,7 @@ $$
 \langle\tilde Q_{\mathrm{amp}}\rangle_{*}=\mathrm{Sc}\!\left(\tilde Q_{\mathrm{amp}}\tilde Q_{\mathrm{amp}}^{*}\right)=\sum_{\mu}\lvert Q_{\mathrm{amp},\mu}\rvert^{2},
 $$
 
-so a general polarization enters the density through one positive number and nothing else. The scalar case is the member $\tilde Q_{\mathrm{amp}}=Q_{\mathrm{amp},t}e_t$, and the pair of §*The Equation in Polar Variables* Real Equations* returns unchanged on $r=\langle\tilde Q_{\mathrm{amp}}\rangle_{*}^{1/2}\lvert g\rvert$.
+so a general polarization enters the density through one positive number and nothing else. The scalar case is the member $\tilde Q_{\mathrm{amp}}=Q_{\mathrm{amp},t}e_t$, and the pair of §*The Equation in Polar Variables* returns unchanged on $r=\langle\tilde Q_{\mathrm{amp}}\rangle_{*}^{1/2}\lvert g\rvert$.
 
 **A varying frame is not available.** The algebra's polar word applies to any $N$-regular element, so $\tilde\Xi=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists for a general field; but the frame rotor and the rotor are then fields, their derivatives do not vanish, and substituting the word into the Klein–Gordon equation gives eight equations for the eight real parameters, with the derivatives of the frame entering to the same order as those of the amplitude. Two parameters are what a pair can describe, so the other six have to be constants. That is the condition $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$, and it is why the one-phase case is the polarized case.
 
@@ -391,14 +407,7 @@ So the companion's charge density, extended to a general field, is the sum of th
 
 The extension is a reading and not a quotation. The companion defines the current for $\tilde\Xi=\Xi_t e_t\in\mathbb{B}_{C}$ and for nothing else, so the display above is the same bilinear read on a larger domain. What it shows is that the additivity of the temporal slot belongs to the bilinear and not to the central restriction, and the mechanism of §*The two defects, and one mechanism* therefore survives without the centre: the sign of the charge is the sign of the energy for each coefficient separately. Two coefficients on opposite branches carry opposite charge, so a field with $\Xi_t$ on the positive branch and $\Xi_x$ on the negative one has a density that can vanish identically without either coefficient vanishing. The vanishing of the density is then not the vanishing of the field, and it is not even a nodal condition.
 
-**The same sum holds in each spatial direction.** With the same conjugation, $\vec e_\eta^*=-\vec e_\eta$ and $\vec e_\eta^{2}=-e_t$,
-
-$$
-\mathrm{Sc}\!\left(\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}\right)
-=\sum_{\mu}\Xi_\mu^{*}\frac{\partial\Xi_\mu}{\partial r_\eta},
-$$
-
-because every diagonal term $\Xi_\mu^{*}\partial_\eta\Xi_\mu\,\vec e_\mu^{*}\vec e_\mu$ lands in the scalar slot with a plus, whatever $\mu$ is, and every off-diagonal term $\vec e_\mu^{*}\vec e_\nu$ with $\mu\neq\nu$ is a spatial unit and contributes nothing to the scalar slot. Read direction by direction, the companion's $\vec j$ is therefore additive as well,
+**The spatial current adds up the same way.** With $\vec e_\eta^{*}=-\vec e_\eta$ and $\vec e_\eta^{2}=-e_t$, every diagonal term $\Xi_\mu^{*}\partial_\eta\Xi_\mu\,\vec e_\mu^{*}\vec e_\mu$ lands in the scalar slot with a plus, whatever $\mu$ is, and every off-diagonal term $\vec e_\mu^{*}\vec e_\nu$ with $\mu\neq\nu$ is a spatial unit and contributes nothing there. Direction by direction, the companion's $\vec j$ is therefore additive as well,
 
 $$
 \vec j=\sum_{\mu}\frac{\rho_\mu}{m}\nabla S_\mu,
@@ -406,21 +415,19 @@ $$
 \rho_\mu=\lvert\Xi_\mu\rvert^{2},
 $$
 
-with the plus sign for all four coefficients: a general field carries a current that is the sum of its four scalar currents, and no coefficient enters with a minus.
+with the plus sign for all four coefficients.
 
-**The reading that puts the current in the vector slots gives a different object.** An element of $\mathbb{B}_{\Phi}$ carries its current in the vector slots and its charge in the temporal slot, and there the same product is not the one just summed. It vanishes identically for a central field and for a field with one active coefficient, temporal or spatial, because $\vec e_\mu^{*}\vec e_\mu=+e_t$ sends every diagonal term to the scalar slot. What survives in the vector slots is purely off-diagonal. Take $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x$ and one spatial direction $\eta$: then
+**The reading that puts the current in the vector slots gives another object.** An element of $\mathbb{B}_{\Phi}$ carries its current in the vector slots and its charge in the temporal slot, and there the same product is not the one just summed: it vanishes identically for a field with one active coefficient, temporal or spatial, because $\vec e_\mu^{*}\vec e_\mu=+e_t$ sends every diagonal term to the scalar slot. What survives in the vector slots is off-diagonal. The smallest case is $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x$ with the direction $\eta=x$,
 
 $$
-\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_\eta}
-=\left[\bar\Xi_t\frac{\partial\Xi_t}{\partial r_\eta}+\bar\Xi_x\frac{\partial\Xi_x}{\partial r_\eta}\right]e_t
-+\left[\bar\Xi_t\frac{\partial\Xi_x}{\partial r_\eta}-\bar\Xi_x\frac{\partial\Xi_t}{\partial r_\eta}\right]\vec e_x ,
+\tilde\Xi^{*}\frac{\partial\tilde\Xi}{\partial r_x}
+=\Bigl[\bar\Xi_t\frac{\partial\Xi_t}{\partial r_x}+\bar\Xi_x\frac{\partial\Xi_x}{\partial r_x}\Bigr]e_t
++\Bigl[\bar\Xi_t\frac{\partial\Xi_x}{\partial r_x}-\bar\Xi_x\frac{\partial\Xi_t}{\partial r_x}\Bigr]\vec e_x .
 $$
 
-whose scalar slot is the additive piece and whose vector slot is bilinear in two different coefficients. It contains no term of the form $\lvert\Xi_\mu\rvert^{2}\partial_\eta S_\mu$: the vector slot measures the interference of the two coefficients and not the flow of either.
+The scalar slot is the additive piece. The $\vec e_x$ slot is $2i\,\mathrm{Im}(\bar\Xi_t\,\partial_{r_x}\Xi_x)$, an interference term between the two coefficients: it vanishes when they share a phase, and it contains no term of the form $\lvert\Xi_\mu\rvert^{2}\partial_\eta S_\mu$. The vector slot measures interference and not flow.
 
-**Which reading is the current is not decided here.** The companion's $\vec j$ is the scalar-slot coefficient of the product, taken one spatial direction at a time, and that is what "for a complex scalar field" licenses and what its plane-wave value requires; on a central field the two readings coincide in the temporal slot and the vector slots are empty in either case. The additive reading is the one that extends, and the vector-slot reading is the one the sector membership of $\tilde J_{\Phi}$ demands. Two readings of one formula, and §*Open Questions* records the choice as open.
-
-The algebra does not pick between them, and the wave equation does not either: the equation constrains the coefficients separately and imposes no relation that would make one reading of the bilinear the conserved one. What is settled is that neither reading gives a current that is both in the sector and additive, and that the obstruction is visible in three slots of four: the sector wants the vector slots, and the vector slots hold no diagonal term at all.
+**Which reading is the current is not decided here.** The companion's $\vec j$ is the scalar-slot coefficient of the product taken one direction at a time, which is what "for a complex scalar field" licenses and what its plane-wave value requires. The additive reading is the one that extends, and the vector-slot reading is the one that the sector membership of $\tilde J_{\Phi}$ demands; on a central field the two coincide in the temporal slot and the vector slots are empty either way. The algebra does not pick between them and the wave equation does not either, since it constrains the coefficients separately and imposes no relation that would make one reading the conserved one. §*Open Questions* records the choice as open.
 
 ### The domain is larger than the nodal set
 
@@ -522,7 +529,7 @@ The general field is not a harder version of this one; it is four copies of it. 
 | $g$ | The complex scalar of the polarized field $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$ |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})=0$ | Conservation; identical to the transport equation |
 | $\sigma,\ T_{\mathrm{kin}}=-c\,\partial\sigma/\partial r'_t$ | Envelope action and kinetic energy; $S_{\tilde\Xi}=-mc\,r'_t+\sigma$, $E=mc^{2}+T_{\mathrm{kin}}$ |
-| $f=\exp(-ik_m r'_t)$ | The rest-mass phase divided out by the companion |
+| $f=\exp(-i\theta_{\mathrm{rst}})$ | The rest-mass phase divided out by the companion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 
 ## Further Reading

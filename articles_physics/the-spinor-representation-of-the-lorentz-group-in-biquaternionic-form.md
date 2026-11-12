@@ -41,7 +41,7 @@ $$
 
 so $\rho(B_{\mathrm{boost},\eta})$ is Hermitian; skew-adjointness then forces $\rho(B_{\mathrm{boost},\eta})=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
 
-The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ},\xi_{\mathrm{alt}})=\tilde{Ξ}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\Psi,\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
+The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ},\xi_{\mathrm{alt}})=\tilde{Ξ}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost, with $\theta_{\mathrm{rpd}}$ the rapidity $\tanh\theta_{\mathrm{rpd}}=v/c$, $\tilde U_{\Psi,\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
 
 $$
 h(\tilde U_{\Psi,\mathrm b}\tilde{Ξ},\tilde U_{\Psi,\mathrm b}\xi_{\mathrm{alt}})=\tilde{Ξ}^{\dagger}\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\,\xi_{\mathrm{alt}},

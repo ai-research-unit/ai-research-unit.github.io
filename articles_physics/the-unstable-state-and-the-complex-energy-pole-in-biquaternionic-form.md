@@ -15,7 +15,9 @@ $$
 \tilde H_\Psi = h_t\,e_t + i\,\vec h_\Psi, \qquad h_t\in\mathbb{R},\quad \vec h_\Psi\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\,\omega$.
+and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\,\omega$.
+
+The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H_\Psi)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -33,7 +35,7 @@ $$
 Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde Q\tilde\Pi_0 = A(r'_t)\,\tilde\Pi_0$ with
 
 $$
-A(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-\frac{i\,Hr'_{t}}{\hbar\,c})\bigr),
+A(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\theta_{\mathrm{evo}})\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
@@ -178,7 +180,7 @@ The same element carries five descriptions, and they are worth setting side by s
 | --- | --- | --- | --- |
 | word | $r\,e^{i\theta_{\mathrm{pha}}}$ | $r=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}$, $\theta_{\mathrm{pha}}=-\frac{E_{R}\,r'_{t}}{\hbar\,c}$ | the scale is the survival amplitude, the phase the oscillation |
 | central exponent | $e^{\Theta}$ | $\Theta=-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}$ | the complex angle |
-| Cartan | $\tilde A_{\Phi}\tilde Q$ | $\tilde A_{\Phi}=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}\,e_{t}$, $\tilde Q=e^{-\frac{iE_{R}\,r'_{t}}{\hbar\,c}}\,e_{t}$ | the amplitude and the phase |
+| Cartan | $\tilde A_{\Phi}\tilde Q$ | $\tilde A_{\Phi}=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}\,e_{t}$, $\tilde Q=e^{-i\theta_{\mathrm{evo}}}\,e_{t}$ | the amplitude and the phase |
 | generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |
 | mass-unit angle | $\theta_\star=z_\star/(mc^2)$ | $\epsilon_\star-i\gamma_\star$, $\epsilon_\star=E_R/(mc^2)$, $\gamma_\star=\Gamma/(2mc^2)$ | the half-width is $\gamma_\star$ |
 
@@ -206,7 +208,7 @@ $$
 \tilde A_{\Phi}(r'_t)=\sqrt{\tilde U_\star(r'_t)\tilde U_\star(r'_t)^{*}}=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}\,e_{t},
 $$
 
-and the $*$-unitary factor is the phase $e^{-\frac{iE_{R}\,r'_{t}}{\hbar\,c}}\,e_{t}$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(r'_t)\rangle_{*}=e^{-\frac{\Gamma\,r'_{t}}{\hbar\,c}}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(r'_t)\rangle_{\natural}=e^{-\frac{2\,iE_{R}\,r'_{t}}{\hbar\,c}}\,e^{-\frac{\Gamma\,r'_{t}}{\hbar\,c}}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
+and the $*$-unitary factor is the phase $e^{-i\theta_{\mathrm{evo}}}\,e_{t}$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(r'_t)\rangle_{*}=e^{-\frac{\Gamma\,r'_{t}}{\hbar\,c}}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(r'_t)\rangle_{\natural}=e^{-2i\theta_{\mathrm{evo}}}\,e^{-\frac{\Gamma\,r'_{t}}{\hbar\,c}}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
 
 **The generator.** With the action measured in units of $\hbar$, the generator $G_\star=-iz_\star$ splits into a Hermitian and an anti-Hermitian part,
 
@@ -289,7 +291,7 @@ and the whole analytic structure of the model is the logarithm: a cut on the ban
 The pole fixes the intermediate-time survival amplitude. Since the pole is at $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$,
 
 $$
-A(r'_t)\simeq  \exp(-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}) = \exp(-\frac{i\,(E_0+\mathcal{E}_{\mathrm{shift}})\,r'_{t}}{\hbar\,c})\,\exp(-\Gamma r'_t/(2\,\hbar)),
+A(r'_t)\simeq  \exp(-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}) = \exp(-i\theta_{\mathrm{evo}})\,\exp(-\Gamma r'_t/(2\,\hbar)),
 \qquad
 P(r'_t)\simeq  \exp(-\frac{\Gamma\,r'_{t}}{\hbar\,c}),
 $$
@@ -355,7 +357,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hamiltonian, Hermitian, $h_t\in\mathbb{R}$, $\vec h_\Psi\in\mathbb{R}^3$ |
 | $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde Q(r'_t)=\exp(-\frac{i\,Hr'_{t}}{\hbar\,c})$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
+| $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
 | $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$ | Survival amplitude; $P(r'_t)=\lvert A(r'_t)\rvert^{2}$ |
 | $(\delta\tilde H_\Psi)^{2}$ | Variance of $\tilde H_\Psi$ in the initial state |
 | $G(z)=(z-\tilde H_\Psi)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
