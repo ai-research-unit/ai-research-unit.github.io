@@ -208,6 +208,14 @@ $$
 \lambda_\pm=Q_t\pm iB=imc\,e^{\pm\theta_{\mathrm{rpd}}}=\Rho\,e^{\pm i\Theta}.
 $$
 
+The factor $\mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ is not a phase either, and the eigenvalues just written say so: with $\vec u_p^2=-e_t$ the argument squares to $+\theta_{\mathrm{rpd}}^2e_t$, so
+
+$$
+\mathcal B_{\Psi}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_p .
+$$
+
+Its scalar part is $\cosh\theta_{\mathrm{rpd}}$, real and at least one, and the magnitude $e^{\pm\theta_{\mathrm{rpd}}}$ of the two eigenvalues is that scalar part read on the axis. The $i$ sits only on the bivector term.
+
 The word's parameter here is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$, and the third factor of the word is $\mathcal B_{\Psi}$, whose axis is $-\vec u_p$. The frame rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ has the axis $+\vec u_p$.
 
 **Three errors to avoid.** Writing $\Theta=+i\theta_{\mathrm{rpd}}$ swaps the two eigenvalues. Writing $\theta_{\mathrm{rpd}}$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$. Taking the frame rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$ for the four-vector factor gives $imc\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})$, a four-vector of rapidity $\theta_{\mathrm{rpd}}/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B_{\Psi}$ points opposite it, because $\mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $-\vec u_p$.

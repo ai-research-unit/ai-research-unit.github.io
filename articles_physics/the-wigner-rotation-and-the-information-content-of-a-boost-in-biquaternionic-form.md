@@ -106,6 +106,14 @@ $$
 $$
 
 and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\tilde{Ξ}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\tilde{Ξ}\vec u_{\mathrm b}/2$.
+The last expression is the reason the word *amplitude* needs care here. On the Hermitian axis $\vec U^{2}=+e_t$, so
+
+$$
+\exp\Big(\frac{\tilde{Ξ}}{2}i\vec u_{\mathrm b}\Big)=\cosh\frac{\tilde{Ξ}}{2}\,e_t+\sinh\frac{\tilde{Ξ}}{2}\,\vec U,
+$$
+
+a real scalar part that grows with $\tilde{Ξ}$ and a real bivector part. The scalar part is not one, so the factor is not a phase of unit modulus; calling it $\Rho e^{\vec U\Theta}$ with $\Rho=e_t$ names the scale of the axis and hides the growth in the scalar coordinate, which is $\cosh(\tilde{Ξ}/2)$.
+
 
 **The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,\eta}=\frac{\tilde{Ξ}_{k}}{2}i\vec u_\Phi$,
 

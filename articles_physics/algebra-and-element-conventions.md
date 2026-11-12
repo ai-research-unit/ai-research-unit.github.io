@@ -161,30 +161,23 @@ with the four coefficients in one unit, $R_t = h_t + ir'_t$, so $r_\mu$ multipli
 
 **A logarithm carries the glyph of its element and the subscript $\log$.** The logarithm is a solution of the exponential equation in the same algebra, not an object of a new kind, so it carries the glyph of the element and the subscript, and the definition reads $\exp(\tilde Q_{\log}) = \tilde Q$. The glyph is $\tilde Q_{\log}$ in this algebra, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\breve Q_{\log}$ in the reduced biquaternions, and $Q_{\log}$ in the complex, split-complex and dual ones. The subscript is a word, so it competes neither with the direction labels, $Q_t$ and $Q_x$, nor with the counts, $Q_1$; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$. The subscript is dropped when the logarithm is written as an operator, $\log\tilde Q$ or $\operatorname{Log}\tilde Q$. The coordinates of a logarithm follow the coefficient rule: in the complex, split-complex and dual layers, $Q_{\log}=q_{\log}+iq'_{\log}$ has real part $q_{\log}$ and imaginary part $q'_{\log}$, with $j$ in place of $i$ in the split-complex case, and the prime marks the imaginary coordinate alone. The logarithm of a real number is the ordinary real logarithm, written $\log q$; the glyph $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$.
 
-## The Angle and Its Two Cases
+## The Angle
 
-**A real angle is $\theta$ and a complex angle is $\Theta$, and the case is the field.** The rule is the one the case already states for an element: an upper-case glyph has a sector larger than the reals, a lower-case one has the reals. For the angle the sector is the field of the argument.
+**An angle is real, and it is written $\theta$.** The central phase is $\exp(i\theta J)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
 
-$$
-\Theta=\theta+i\theta',\qquad \theta\in\mathbb{R},\quad\theta'\in\mathbb{R}.
-$$
+**The central phase is the real argument.** $\lambda e_t=\exp(i\theta J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same argument at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
 
-**The prime marks the slot that carries the $i$**, as it does in a coefficient, $R_t=h_t+ir'_t$. The real part $\theta$ is an angle and the imaginary part $\theta'$ is a real number; the two are one angle read at a real and at an imaginary argument.
+**The boost factor is the imaginary argument.** The four-vector element carries $\mathcal B_{\Psi}$ with $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $\exp(\vec U\theta)$ at the imaginary argument $\theta=-i\theta_{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret `rpd`, so that no second letter is spent on it. The sign carries the direction of the boost and the magnitude is the rapidity. A purely imaginary angle is written $i\theta_{\mathrm{rpd}}$ where it is used, and the $\theta_{\mathrm{rpd}}$ inside stays real.
 
-**The central phase is the real case.** $\lambda e_t=\exp(i\theta J)$ with $\theta$ real and $J=L_{ie_t}$: the phase turns the centre by a real angle, and the rotor of a rotation is the same case at half the angle, $\tilde u_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u_{\mathrm r}$.
-
-**The boost factor is the pure imaginary case.** The four-vector element carries $\mathcal B_{\Psi}$ with $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}\,e_t-i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, which is $e^{\vec U\Theta}$ at $\Theta=-i\theta_{\mathrm{rpd}}$: in the two-parameter form $\theta=0$ and $\theta'=\theta_{\mathrm{rpd}}$. The rapidity takes the angle's letter with the caret `rpd`, so that no second letter is spent on it. The sign is the article's and it carries the direction of the boost; the magnitude of the imaginary part is the rapidity.
-
-**The circle and the hyperbola are one formula.** With $\Theta=\theta+i\theta'$,
+**The circle and the hyperbola are one formula.** At the imaginary argument $i\theta$,
 
 $$
-\cos\Theta=\cos\theta\cosh\theta'-i\sin\theta\sinh\theta',\qquad
-\sin\Theta=\sin\theta\cosh\theta'+i\cos\theta\sinh\theta'.
+\cos(i\theta)=\cosh\theta,\qquad \sin(i\theta)=i\sinh\theta .
 $$
 
-At $\theta'=0$ this is $\cos\theta$ and $\sin\theta$; at $\theta=0$ it is $\cosh\theta'$ and $i\sinh\theta'$. A rotation, a boost and the intermediate case are three readings of one letter, and the case of the letter states which of them is meant.
+The formula does not change between the rotation and the boost; only the value put in the slot changes.
 
-**Neither glyph carries a second role.** The roles that once shared the letter have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
+**The letter carries no second role.** The roles that once shared it have glyphs of their own: the involution and the orbit map are $\mathrm{J}$; the curvature is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the Heaviside step is $\mathrm{H}_{\mathrm{hvs}}$; the generalised angle of a congruence is $\vartheta_{\mathrm{cng}}$. A subscript on $\theta$ names the angular coordinate itself: $p_\theta$ is the momentum conjugate to it.
 
 ## The Remarkable Subspaces of Biquaternions
 
@@ -406,7 +399,7 @@ The base conventions are one object read in order. The algebra is $\mathbb{B}=\m
 
 The conjugations cut the algebra into the remarkable subspaces, and the subspaces carry the two sector names. Multiplication by $i$ is the bijection between the two sectors, the Phy–Psy switch, and it fixes the names of the two readings, the material reading on $\mathbb{B}_{\Phi}$ and the informational reading on $\mathbb{B}_{\Psi}$. **There is no dictionary**, because there is nothing to map: the parameters are the coordinates, $(h_t,\ i r'_t)$ on the time slot and $(r_x,r_y,r_z)$ with $(i h'_x,i h'_y,i h'_z)$ on the space slots, and the only conversion in the scheme is $c$, between the length coordinate and the second. The pure elements — those with no scalar part — are written with the arrow and without the tilde, $\vec Q$. A duo-complex number is written $Q=(Q_{\blacktriangle},Q_{\blacktriangledown})$, a pair of complex coordinates with no product, and the reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is that pair together with the multiplication by $j$.
 
-The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\theta+i\theta'$ a complex one, with the central phase the real case and the boost $\Theta=-i\theta_{\mathrm{rpd}}$ the pure imaginary case. The rest of the conventions is in the eight companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, indices and notation, and physical units and common elements — each stated after the one it depends on.
+The angle is real and is one letter: $\theta$, with a subscript naming it, the $i$ of a rotation sitting in the exponential; the central phase is the real argument and the boost is the imaginary one, $i\theta_{\mathrm{rpd}}$. The rest of the conventions is in the eight companion articles — products and forms, norms and pairings, special elements, frames, matrix models, operators and calculus, indices and notation, and physical units and common elements — each stated after the one it depends on.
 
 ## Summary of Notation
 
@@ -416,7 +409,7 @@ The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\thet
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\lambda e_t=\exp(i\theta J)$ | The central phase, carried by the first coordinate $Q_t$ and extended to the four by $\mathbb{C}$-linearity |
-| $\theta$; $\Theta=\theta+i\theta'$ | The generic real angle and the generic complex angle, with real part $\theta$ and imaginary part $\theta'$; the case is the field of the angle — the central phase is the real case and the boost $\Theta=-i\theta_{\mathrm{rpd}}$ the pure imaginary one (§*The Angle and Its Two Cases*) |
+| $\theta$; $i\theta_{\mathrm{rpd}}$ | The angle, real, with a subscript naming it; a purely imaginary angle is written $i\theta$ at the point of use and the $\theta$ inside stays real — the central phase is the real argument and the boost the imaginary one (§*The Angle*) |
 | $J=L_{ie_t}$ | The one complex structure of $\mathbb{B}$, of which the phase is the exponential |
 | $S_+(\vec u)\oplus S_-(\vec u)$ | The polarization, the two planes; a frame datum, not a pair of halves |
 | $\tilde Q = \tilde q + i\tilde q'$ | The element and its split into a quaternion part and an antiquaternion part |
@@ -432,7 +425,7 @@ The angle is one letter in two cases: $\theta$ is a real angle and $\Theta=\thet
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | The reduced biquaternion, a duo-complex pair with the multiplication by $j$ |
 | $\xi$; $Ξ$ | The generic field, real and complex: $\xi$ a real scalar field, $Ξ$ a complex one, the case following the coefficient, §*The Elements and their Coefficients* |
 | $\tilde\xi$; $\tilde{Ξ}$ | The generic field as an element, quaternion layer and biquaternion layer, $\tilde{Ξ}=Ξ e_t$ when central; the caret names the role, `scl` the scalar, `sp` the spinor, `fop` the field operator |
-| $\theta_{\mathrm{rpd}}$ | The rapidity, the imaginary part of the angle, $\Theta=-i\theta_{\mathrm{rpd}}$ |
+| $\theta_{\mathrm{rpd}}$ | The rapidity, the real angle whose imaginary value $i\theta_{\mathrm{rpd}}$ is the boost's argument |
 
 ## Further Reading
 

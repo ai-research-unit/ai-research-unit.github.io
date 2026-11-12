@@ -221,7 +221,7 @@ As a check, for $M = 100$, $(m_1,m_2,m_3) = (20,30,40)$ the right-hand side is $
 
 ## Problem 4: Threshold and the Opening Angle
 
-**Statement.** (a) State the threshold condition and show that it follows from $p^{*2} \ge 0$. (b) Show that the opening angle between the daughters in the COM frame is $\pi$. (c) Derive the laboratory angle of a daughter. (d) For two massless daughters, derive the minimum opening angle $\Theta_{\min} = \arccos(1 - 2/\gamma^2)$ and its beamed limit.
+**Statement.** (a) State the threshold condition and show that it follows from $p^{*2} \ge 0$. (b) Show that the opening angle between the daughters in the COM frame is $\pi$. (c) Derive the laboratory angle of a daughter. (d) For two massless daughters, derive the minimum opening angle $\theta_{\min} = \arccos(1 - 2/\gamma^2)$ and its beamed limit.
 
 **Solution (a).** Problem 1 gives
 $$
@@ -233,10 +233,10 @@ M \ge m_1 + m_2 \iff Q \ge 0 .
 $$
 At threshold $Q = 0$, $p^* = 0$, and the daughters emerge with no relative motion. Below threshold there is no solution of $\tilde{P}_{\Phi,A} = \tilde{P}_{\Phi,1} + \tilde{P}_{\Phi,2}$ with all four-momenta on the future mass shell and real momenta.
 
-**Solution (b).** In the COM frame the momenta are back to back, $\vec p_1^* = -\vec p_2^*$, so the opening angle $\Theta^*$ between them satisfies
+**Solution (b).** In the COM frame the momenta are back to back, $\vec p_1^* = -\vec p_2^*$, so the opening angle $\theta$ between them satisfies
 $$
-\cos\Theta^* = \frac{\vec p_1^*\cdot\vec p_2^*}{p^{*2}} = -1,
-\qquad \Theta^* = \pi .
+\cos\theta = \frac{\vec p_1^*\cdot\vec p_2^*}{p^{*2}} = -1,
+\qquad \theta = \pi .
 $$
 The daughters are collinear and oppositely directed.
 
@@ -256,19 +256,19 @@ $$
 \tan\theta_a = \frac{\sin\theta^*}{\gamma\left(\cos\theta^* + \beta\right)} .
 $$
 
-**Solution (d).** For two massless daughters (for example $\pi^0 \to \gamma\gamma$) one has $E_1^* = E_2^* = Mc^2/2$ and $p^* = Mc/2$, so $\beta_a^* = 1$. Emit the two photons at COM angles $\theta^*$ and $\pi - \theta^*$ relative to $\vec V$; their lab angles $\theta_1, \theta_2$ measured from $\vec V$ obey the formula of part (c), and the opening angle is $\Theta = \theta_1 + \theta_2$. A direct calculation gives
+**Solution (d).** For two massless daughters (for example $\pi^0 \to \gamma\gamma$) one has $E_1^* = E_2^* = Mc^2/2$ and $p^* = Mc/2$, so $\beta_a^* = 1$. Emit the two photons at COM angles $\theta^*$ and $\pi - \theta^*$ relative to $\vec V$; their lab angles $\theta_1, \theta_2$ measured from $\vec V$ obey the formula of part (c), and the opening angle is $\theta = \theta_1 + \theta_2$. A direct calculation gives
 $$
-\cos\Theta = \frac{\gamma^2 - 2 - \gamma^2\beta^2\cos^2\theta^*}{\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)} .
+\cos\theta = \frac{\gamma^2 - 2 - \gamma^2\beta^2\cos^2\theta^*}{\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)} .
 $$
-As $\cos^2\theta^*$ runs from $0$ to $1$ this expression decreases monotonically, its derivative with respect to $\cos^2\theta^*$ being $-\,2\beta^2/\left[\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)^2\right]$, which is negative for $\gamma > 1$. Hence $\cos\Theta$ is largest at $\cos\theta^* = 0$ (symmetric emission) and smallest at $\cos^2\theta^* = 1$ (collinear emission). The **minimum** opening angle is therefore
+As $\cos^2\theta^*$ runs from $0$ to $1$ this expression decreases monotonically, its derivative with respect to $\cos^2\theta^*$ being $-\,2\beta^2/\left[\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)^2\right]$, which is negative for $\gamma > 1$. Hence $\cos\theta$ is largest at $\cos\theta^* = 0$ (symmetric emission) and smallest at $\cos^2\theta^* = 1$ (collinear emission). The **minimum** opening angle is therefore
 $$
-\cos\Theta_{\min} = 1 - \frac{2}{\gamma^2},
+\cos\theta_{\min} = 1 - \frac{2}{\gamma^2},
 \qquad
-\Theta_{\min} = \arccos\!\left(1 - \frac{2}{\gamma^2}\right),
+\theta_{\min} = \arccos\!\left(1 - \frac{2}{\gamma^2}\right),
 \qquad
-\tan\frac{\Theta_{\min}}{2} = \frac{1}{\gamma\beta},
+\tan\frac{\theta_{\min}}{2} = \frac{1}{\gamma\beta},
 $$
-and the **maximum** is $\Theta = \pi$. For $\gamma \gg 1$, $\Theta_{\min} \approx 2/\gamma$, the familiar collimation of the decay products into a cone of half-angle $1/\gamma$ about the parent's direction. Numerically $\Theta_{\min} = 60.00^\circ$ at $\gamma = 2$ and $23.07^\circ$ at $\gamma = 5$, the latter within $0.7\%$ of $2/\gamma$ radians. For massive daughters the single-daughter formula of part (c) still holds (with $\beta_a^* < 1$), but the opening angle is then a more complicated function of $\theta^*$.
+and the **maximum** is $\theta = \pi$. For $\gamma \gg 1$, $\theta_{\min} \approx 2/\gamma$, the familiar collimation of the decay products into a cone of half-angle $1/\gamma$ about the parent's direction. Numerically $\theta_{\min} = 60.00^\circ$ at $\gamma = 2$ and $23.07^\circ$ at $\gamma = 5$, the latter within $0.7\%$ of $2/\gamma$ radians. For massive daughters the single-daughter formula of part (c) still holds (with $\beta_a^* < 1$), but the opening angle is then a more complicated function of $\theta^*$.
 
 ## Problem 5: A Numerical Instance
 
@@ -400,7 +400,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 
 3. **Three-body decay.** The pair mass is $M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle\tilde{P}_{\Phi,i},\tilde{P}_{\Phi,j}\rangle$; equivalently $M_{12}^2c^4 = (Mc^2 - E_3^*)^2 - p_3^{*2}c^2$, with $(m_1+m_2) \le M_{12} \le M - m_3$ and $\sum_{i<j}M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2$.
 
-4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\Theta_{\min} = \arccos(1 - 2/\gamma^2) \approx 2/\gamma$ at symmetric emission.
+4. **Threshold and opening angle.** The threshold is $M \ge m_1+m_2$; in the COM frame the opening angle is $\pi$, and for two massless daughters the lab opening angle has minimum $\theta_{\min} = \arccos(1 - 2/\gamma^2) \approx 2/\gamma$ at symmetric emission.
 
 5. **Numbers.** For $K^+ \to \pi^+\pi^0$ the exact values are $p^*c = 205.1379$ MeV and $T_{\mathrm{kin},\pi^{+}} = 108.5454$ MeV, $T_{\mathrm{kin},\pi^{0}} = 110.5844$ MeV; for $\Lambda \to p\pi^-$, $p^*c = 100.5797$ MeV. The massless limits $\pi^0 \to \gamma\gamma$ and $\pi^+ \to \mu^+\nu_\mu$ reproduce $E_\gamma^* = Mc^2/2$ and the standard pion-decay energies.
 
@@ -428,7 +428,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 | $v_a^* = p^*c^2/E_a^*$ | COM daughter speeds |
 | $\beta = V/c$, $\beta_a^* = v_a^*/c$ | Dimensionless speeds |
 | $M_{ij}$ | Invariant mass of pair $(i,j)$ |
-| $\Theta$, $\Theta_{\min}$ | Lab opening angle and its minimum |
+| $\theta$, $\theta_{\min}$ | Lab opening angle and its minimum |
 | $\mu = m_1m_2/(m_1+m_2)$ | Non-relativistic reduced mass |
 | $\gamma = \cosh\theta_{\mathrm{rpd}}$ | Lorentz factor of the parent in the lab |
 

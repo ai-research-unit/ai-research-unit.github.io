@@ -14,7 +14,15 @@ $$
 \tilde u_{\mathrm r}=\exp\left(\frac{\theta}{2}\vec u_{\mathrm r}\right),
 $$
 
-with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the element is a unit exactly when $r\neq0$. The material four-momentum is
+with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real pure quaternions. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$
+**The boost factor is not a phase, and the evaluation shows why.** With $\vec u_{\mathrm b}^2=-e_t$ the argument squares to $\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\theta_{\mathrm{rpd}}^2}{4}\,e_t$, positive, so the series sums to the hyperbolic pair
+
+$$
+\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} .
+$$
+
+The scalar part is real and at least one, so the factor grows instead of turning; only the bivector part carries the $i$. The rotor is the opposite case: no $i$ stands in front of it, $\vec u_{\mathrm r}^2=-e_t$ makes the argument square negative, and $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. Reading $\exp(i\theta\vec u)$ as an imaginary quantity is the error the two signs separate.
+, and the element is a unit exactly when $r\neq0$. The material four-momentum is
 
 $$
 \tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p,

@@ -12,6 +12,14 @@ $$
 The word is the **N-norm** refinement. The general **H-norm** decomposition is the two-factor pair $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}\ge0$ and $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ a partial isometry on the cone; it is defined for every nonzero element and is read in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*. The four-factor word below exists only where $\langle\tilde Q\rangle_{\natural}\neq0$.
 
 The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.
+**Two of the four factors are a pair of exponentials with opposite signs of the argument squared.** The boost factor has $\vec u_{\mathrm b}^2=-e_t$, so $\bigl(i\tfrac{\tilde{Ξ}_{w}}{2}\vec u_{\mathrm b}\bigr)^2=+\tfrac{\tilde{Ξ}_{w}^2}{4}e_t$ and
+
+$$
+\exp\Bigl(i\tfrac{\tilde{Ξ}_{w}}{2}\vec u_{\mathrm b}\Bigr)=\cosh\frac{\tilde{Ξ}_{w}}{2}\,e_t+i\sinh\frac{\tilde{Ξ}_{w}}{2}\,\vec u_{\mathrm b},
+$$
+
+with a real scalar part of at least one and the $i$ confined to the bivector part. The rotor has $\vec u_{\mathrm r}^2=-e_t$ and no $i$ in front, so its argument squares negative and $\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ has modulus one. The same glyph $\exp$ covers a growth and a turn; the square of the argument decides which.
+
 
 The article is the hub of the polar programme. It fixes the word, brackets it in the three ways the corpus uses, compares the bracketings, and records what each factor does to the remarkable subspaces. The detail now lives in two synthesis articles: *The General Polar Decomposition, the Amplitude and the Operator-to-State Map* develops the amplitude–phase reading, and *The Hamilton Pairing: Mass as Modulus and the Complex Angle* develops the invariant and the complex angle. The comparison of the three first factors is stated below, in §*The Three Factors Compared*.
 
