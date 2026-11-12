@@ -72,7 +72,7 @@ The three polarizations are easiest to see in the rest frame, $\vec k_\Phi = \ma
 
 ### Statement
 
-The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The single equation is
+The Proca system is transcribed into the framework by replacing the four-vector by the material-sector biquaternion and the gradient by the biquaternionic gradient. The replacement is a change of kind, not of notation: $\tilde A_\Phi\in\mathbb{B}_\Phi$ is an **anti-Hermitian** element of the algebra, whereas the "real four-vector" of the section above names the component field $A_\mu$ of the standard theory. Under $\mathbb{B}=\mathbb{B}_\Psi\oplus\mathbb{B}_\Phi$ the potential sits in the material summand and the field strength $\tilde F$ in its vector part, and every statement below is a statement about those summands. The single equation is
 
 $$
 \boxed{\;\tilde\nabla_\Phi\tilde{F} = k_m^{2}\,\tilde{A}_{\Phi},
@@ -179,7 +179,7 @@ $$
 \tilde P_{\Phi} = i\frac{\omega}{c}\,e_t + \vec k_\Phi,
 $$
 
-where $\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - \omega r'_t/c$ and $\tilde{A}_{\Phi,0}$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde\nabla_\Phi\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
+where $\tilde{A}_{\Phi,0}$ is a constant element of the material sector $\mathbb{B}_\Phi$, so that $A_t$ is purely imaginary and $\vec a$ is real, and $\theta_{\mathrm{pwp}}=\omega r'_t/c-\vec k_\Phi\cdot\vec r$ is the phase. Differentiation gives $\tilde\nabla_\Phi\tilde{A}_{\Phi} = i\tilde P_{\Phi}\tilde{A}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = i\tilde P_{\Phi}^{\natural}\tilde{A}_{\Phi}$, and the Klein–Gordon operator acts as
 
 $$
 \Box\,\exp(-i\theta_{\mathrm{pwp}}) = \left(\frac{\omega^2}{c^2} - \vec k_\Phi^2\right)\exp(-i\theta_{\mathrm{pwp}}),
@@ -195,7 +195,7 @@ $$
 
 the physical relativistic dispersion relation.
 
-The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
+The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=(\omega/c)r'_t-\vec k_\Phi\cdot\vec r$: the material four-wave-number paired with the material position. It is real, so the exponent is a phase and not a decay, and the plane wave is the corpus's $i r'_t$ convention applied to a free mode.
 
 ### The Lorenz condition on a plane wave
 

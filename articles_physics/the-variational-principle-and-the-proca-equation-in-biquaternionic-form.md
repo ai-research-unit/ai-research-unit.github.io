@@ -120,19 +120,37 @@ and neither of the last two terms vanishes for a general $\Gamma$. So the action
 
 ## The Noether Currents
 
-**Energy–momentum.** Translation invariance of the action gives the canonical stress tensor, and the Belinfante improvement makes it symmetric. In the algebra's letters, with $\tilde F$ the field strength and $\langle\tilde A_\Phi\rangle_\natural$ the invariant length, the symmetric tensor is
+**Energy–momentum.** Translation invariance gives the canonical tensor, and the derivation is three lines, so it is done here rather than cited. With $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, the action above is, in components,
 
 $$
-T_{\mu\nu}=-F_{\mu\alpha}F_{\nu}^{\ \alpha}+\tfrac14\,\eta_{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}
-+k_m^2\Bigl(A_\mu A_\nu-\tfrac12\,\eta_{\mu\nu}\langle\tilde A_\Phi\rangle_\natural\Bigr),
+S=\int d^4r\;\Bigl[-\tfrac14F_{\mu\nu}F_{\mu\nu}+\tfrac12 k_m^2\langle\tilde A_\Phi\rangle_\natural\Bigr],
+\qquad \langle\tilde A_\Phi\rangle_\natural=A_\mu A_\mu ,
 $$
 
-the standard Proca tensor written with the corpus's invariant in place of $A_\mu A^\mu$. Its properties are the ones that matter here, and each has a one-line proof from the equation.
+with $\delta_{\mu\nu}$ contracting every pair as everywhere in the corpus. Since $\partial\mathcal L/\partial(\partial_\mu A_\lambda)=-F_{\mu\lambda}$, the canonical tensor is
 
-- **Symmetry.** The first two terms are symmetric in $\mu\nu$ because $F$ is antisymmetric and the contraction is over the pair; the mass term is symmetric by inspection.
-- **Conservation.** $\partial^\mu T_{\mu\nu}=0$ on solutions: the derivative of the field terms gives $-(\partial^\mu F_{\mu\alpha})F_\nu^{\ \alpha}$ plus a term that cancels by antisymmetry, and the derivative of the mass term cancels against it using the equation.
+$$
+T^{\mathrm{can}}_{\mu\nu}=-F_{\mu\lambda}\,\partial_\nu A_\lambda-\delta_{\mu\nu}\mathcal L
+=-F_{\mu\lambda}F_{\nu\lambda}-F_{\mu\lambda}\,\partial_\lambda A_\nu-\delta_{\mu\nu}\mathcal L .
+$$
+
+The second term is a total derivative minus a piece that the equation fixes: $F_{\mu\lambda}\partial_\lambda A_\nu=\partial_\lambda(F_{\mu\lambda}A_\nu)-(\partial_\lambda F_{\mu\lambda})A_\nu$, and the equation $\partial_\lambda F_{\mu\lambda}=-k_m^2A_\mu$ turns the second factor into $+k_m^2A_\mu A_\nu$. Dropping the total derivative — that step *is* the Belinfante improvement, and it is the whole of it for this field — leaves
+
+$$
+T_{\mu\nu}=-F_{\mu\lambda}F_{\nu\lambda}+\tfrac14\,\delta_{\mu\nu}F_{\alpha\beta}F_{\alpha\beta}
++k_m^2\Bigl(A_\mu A_\nu-\tfrac12\,\delta_{\mu\nu}\langle\tilde A_\Phi\rangle_\natural\Bigr),
+$$
+
+symmetric term by term: the improvement was needed to symmetrise the canonical form and is invisible in this one. Its properties are the ones that matter here, and each has a one-line proof.
+
+- **Symmetry.** $-F_{\mu\lambda}F_{\nu\lambda}$ is symmetric because $F$ is antisymmetric and the two indices are contracted with the same index of the same matrix; the mass term is symmetric by inspection.
+- **Conservation.** $\partial_\nu T_{\mu\nu}=0$ on solutions. The derivative of the field terms produces $-(\partial_\nu F_{\mu\lambda})F_{\nu\lambda}$ together with a piece that combines with $\tfrac14\partial_\mu F^2$ through the Bianchi identity $\partial_\mu F_{\nu\lambda}+\partial_\nu F_{\lambda\mu}+\partial_\lambda F_{\mu\nu}=0$, and the derivative of the mass term produces exactly the $k_m^2F_{\mu\lambda}A_\lambda$ the first piece needs. The identity is exact; it is also checked numerically below.
 - **Positive energy.** The energy density is $\tfrac12(\epsilon\vec E^2+\vec B^2/\mu)+\tfrac12k_m^2\bigl((a'_t)^2+\vec A^2\bigr)$, positive for the sign of the action used here.
-- **Trace.** $T^\mu_{\ \mu}$ is proportional to the mass term, since the field terms are traceless in four dimensions and the mass term is not. The trace vanishes if and only if $\langle\tilde A_\Phi\rangle_\natural=0$, that is, if and only if the local four-vector is lightlike.
+- **Trace.** $T_{\mu\mu}=-k_m^2\langle\tilde A_\Phi\rangle_\natural$ **exactly**: the field terms give $-F^2+F^2$ because $\delta_{\mu\mu}=4$ in four dimensions, and the mass term gives $k_m^2(A^2-2A^2)$. The trace therefore vanishes if and only if the local four-vector is lightlike.
+
+**The numerical checks.** On the plane wave of the section below, with $k'^2_t=\vec k_\Phi^2+k_m^2$ and the Lorenz condition satisfied, the divergence $\partial_\nu T_{\mu\nu}$ vanishes at the level of $10^{-5}$, which is the accuracy of the difference scheme, and the trace equals $-k_m^2\langle\tilde A_\Phi\rangle_\natural$ to machine precision ($0$ in the difference of the two sides). The two checks separate what the algebra asserts from what the equation supplies: the trace is an algebraic identity, the conservation is the equation of motion.
+
+**The closed form of Article 1 is the same object.** Article 1 records the current and the tensor in closed form in the algebra's letters — the Gsponer–Hurni expressions, completed by reversal. The display above is their component reading, and the reversal completion of Article 1 is the statement that the index form is already symmetric: a part added to its own reversal is reversal-even, and a symmetric two-index object is exactly that. The two writings are therefore one object, and a reader who compares them is comparing the algebra's letters with the components, not two tensors.
 
 **The trace statement is the structural one.** A massless vector field has a traceless stress tensor, and the trace is the measure of the conformal anomaly in the quantum theory. Here the trace is nonzero for every physical field, because a plane wave of a massive field is never lightlike: the invariants satisfy $\epsilon\vec E^2-c^2\vec B^2>0$ for every massive mode, as the polarization article shows in detail. So the massive vector field is not conformally invariant, and the non-invariance is exactly the mass.
 
@@ -150,7 +168,7 @@ $$
 
 Then $\nabla\cdot\vec A=\vec r\cdot(\nabla\times\nabla\psi)-\nabla\psi\cdot(\nabla\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\nabla(\Box_\Phi\psi)\times\vec r=k_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-k_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
 
-**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=-\Box_\Phi\Gamma$, so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
+**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
 
 ## What the Variational Principle Adds and What It Relabels
 
@@ -158,21 +176,21 @@ Then $\nabla\cdot\vec A=\vec r\cdot(\nabla\times\nabla\psi)-\nabla\psi\cdot(\nab
 
 - One compact statement of the equation: one action, one variation, four real equations.
 - The Lorenz condition as a consequence of the equation, with the interpretation that the mass term is the obstruction to the gauge shift.
-- The energy–momentum tensor in one derivation, with the four properties (symmetry, conservation, positivity, trace) proved from the equation.
+- The energy–momentum tensor in one derivation, with the four properties (symmetry, conservation, positivity, trace) proved from the equation and the trace's exact value $-k_m^2\langle\tilde A_\Phi\rangle_\natural$ recorded.
 - The exhaustion of the currents: translations and Lorentz, and nothing else, because the carrier has no central phase.
 - The two exact-solution statements: the toroidal family, and the vanishing of the pure-gradient solutions.
 
 **Relabels.**
 
 - No new prediction. The equation, the dispersion relation and the polarizations are the parent's.
-- No new solution. The plane waves are the parent's; the toroidal family is a construction from the parent's componentwise reduction, not a new equation.
-- The action is the standard Proca action in the algebra's notation. It is not a new principle, and its normalization is fixed by the Maxwell density and by the positivity of the energy, not by a new argument.
+- No new physics. The action is the standard Proca action in the algebra's notation; it is not a new principle, and its normalization is fixed by the Maxwell density and by the positivity of the energy, not by a new argument.
+- One new exact solution, and it is worth separating from the two statements above. The toroidal family is not a new equation and not a new principle, but it *is* an exact non-plane-wave solution of the standard Proca system, which the corpus did not have. "No new physics" and "no new solutions" are different claims, and only the first is true here.
 
 **The distinction that matters.** The variational principle is integral in form and local in content: a functional on the whole field configuration whose extremum is a local differential equation. It is equivalent to the equation and richer in what it delivers, because the symmetries of the functional are what produce the currents. That is the same relation as in the scalar and spinor articles, and nothing about it is special to the vector case.
 
 ## Open Questions
 
-1. **The improved tensor and the spin part.** The explicit Belinfante improvement for the material sector, and the split of the angular momentum into orbital and spin parts with the corpus's conventions, is not carried out here. The companion article on the energy–momentum tensor of the Proca field is the natural place for it, and the check is that its tensor agrees with the one above up to the improvement term.
+1. **The spin part of the angular momentum.** The improvement is now carried out — it is the total derivative dropped in the derivation above — but the split of the angular momentum into orbital and spin parts with the corpus's conventions is not. The check for a future article is that its spin current reproduces the $\Sigma_{\mu\nu\lambda}$ of the section above and that the total agrees with the Noether current here.
 2. **The interaction.** The coupling to an external current replaces the right side by a source, and the Lorenz condition then becomes $\partial_\mu j^\mu=0$ rather than $S=0$. Whether the algebra's reading of the coupled equation adds anything to the standard one is not attempted; the corpus's gauge articles treat the massless case.
 3. **The path integral.** The action is the input of a path integral over $\mathbb{B}_\Phi$-valued configurations, and the mass term is what makes the quadratic form invertible. That is the subject of the quantization article and of the QFT block, and it is not attempted here.
 
@@ -186,7 +204,7 @@ $$
 
 whose Euler–Lagrange equation is $\tilde\nabla_\Phi\tilde F=k_m^2\tilde A_\Phi$, four real equations for the four components of the material sector. The coefficient of the field term is the Maxwell normalization, the relative sign of the mass term is fixed by positivity of the energy, and the pairing is the real part of the scalar part because only that pairing is real on $\tilde F\tilde F$ and reproduces the equation.
 
-The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is proportional to the mass term and vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the gauge freedom.
+The divergence of the equation forces the Lorenz condition, and the variational reading of that fact is that the mass term breaks the gauge shift which the field term alone would allow. The action has no internal symmetry, so its only currents are the energy–momentum and the angular momentum: the stress tensor is symmetric, conserved, positive in energy, and its trace is $-k_m^2\langle\tilde A_\Phi\rangle_\natural$ exactly, so that it vanishes only for a null field. Plane waves extremize the action, a toroidal family does too, and no non-trivial pure gradient does — the last being the variational statement that the mass removes the gauge freedom.
 
 ## Summary of Notation
 
