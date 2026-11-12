@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Variational Principle and the Proca Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables"><strong>The Variational Principle and the Proca Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article substitutes the polar word of the material sector into the Proca action and reads the result. It is the polar companion of <em>The Variational Principle and the Proca Equation in Biquaternionic Form</em>, and it depends on three articles: <em>The Proca Equation in Biquaternionic Polar Variables</em> for the word and the equation in the chart, that element-form variational article for the action, and <em>The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</em> for the carrier.</p>
+<p><strong>The substitution.</strong> The element-form action is</p>
+<p>$$
+S[\tilde A_\Phi]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^2\,\langle\tilde A_\Phi\rangle_\natural\Bigr],
+$$</p>
+<p>and the word of the material sector is piecewise,</p>
+<p>$$
+\tilde A_\Phi=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}\ \ (\langle\tilde A_\Phi\rangle_\natural<0),
+\qquad
+\tilde A_\Phi=r\,\tilde U_{\Psi,\mathrm b}\,\hat u\ \ (\langle\tilde A_\Phi\rangle_\natural>0),
+$$</p>
+<p>with $r>0$, $\varepsilon=\pm1$, and $\tilde U_{\Psi,\mathrm b}$ the boost of rapidity $\theta_{\mathrm{rpd}}$ and axis $\hat u_{\mathrm b}$. On the timelike branch the parameters are $r$ and the boost's three; on the spacelike branch they are $r$, the signed rapidity and the direction $\hat u$. Two branches, four parameters each.</p>
+<p><strong>Three things are established, and their status differs.</strong></p>
+<p><em>First, the action in the chart has a compact form.</em> Because the scalar part of the conjugate gradient splits additively from its vector part, the field term is the full quadratic minus its scalar square,</p>
+<p>$$
+\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)
+=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12 S^2,
+\qquad
+S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
+$$</p>
+<p>and the mass term is a pure power of the modulus,</p>
+<p>$$
+-\tfrac12\,k_m^2\langle\tilde A_\Phi\rangle_\natural=
+\begin{cases}+\tfrac12\,k_m^2\,r^2, & \text{timelike},\\[2pt] -\tfrac12\,k_m^2\,r^2, & \text{spacelike}.\end{cases}
+$$</p>
+<p>The sign of the mass term in the chart <strong>is</strong> the branch: it is the causal character of the four-vector, read as the sign of the term. This is the article's cleanest new statement.</p>
+<p><em>Second, the Euler–Lagrange equations in the chart are the transformed field equation.</em> The word is a diffeomorphism from its parameter set onto the branch, so a change of variables carries the variational problem into the chart without any loss: four parameters, four equations, and the equations are the two displays of the polar article — the scale equation with the frame's quadratic source, and the frame transport. Nothing has to be re-derived, and nothing can differ.</p>
+<p><em>Third, the count of multipliers is not the count of constraints.</em> The parametrization absorbs the unit conditions of the boost exactly, so no Lagrange multiplier is needed for the normalization of the frame — in contrast with the tensor formulation of Takabayasi, whose unit vector requires three multipliers and whose phase requires a fourth. But the Proca system still has its own constraint: the Hessian of the chart's Lagrangian has rank three and not four, and the missing direction is the one that changes the scalar potential at fixed vector potential. That is the primary constraint of the vector field, and the Lorenz condition is its secondary partner. The chart relabels them; it does not remove them.</p>
+<p><strong>What is at stake in the contrast.</strong> The Schrödinger polar article's action is first order in the time derivative, and its momenta vanish identically, so six of the eight are constraints and the closure needs Dirac analysis. The Proca action is second order, its Hessian has rank three out of four, and its single constraint is the standard one of a massive vector field. So the two polar variational principles are not the same kind of object, and the difference is the order of the Lagrangian, not the algebra.</p>
+<p>The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$; the material sector $\mathbb{B}_\Phi$ anti-Hermitian; $\mathrm{Sc}$ the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ the quaternionic norm, real on $\mathbb{B}_\Phi$; $\partial/\partial R_t=-i\,\partial/\partial r'_t$; $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; $k_m=mc/\hbar$.</p>
+<h2 id="the-action-in-the-chart">The Action in the Chart</h2>
+<p><strong>The field term.</strong> Write $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ and $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$, so that the conjugate gradient is the sum of a scalar and a pure vector,</p>
+<p>$$
+(\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi=S+\tilde F .
+$$</p>
+<p>Squaring, the cross term is $2S\tilde F$, whose scalar part vanishes because $\mathrm{Sc}(\tilde F)=0$; hence</p>
+<p>$$
+\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]=S^2+\mathrm{Sc}\bigl(\tilde F\tilde F\bigr),
+$$</p>
+<p>and the field term is the full quadratic minus the scalar square. The subtraction is the projection that the element form performs silently: $\tilde F$ is the antisymmetric part, and $\mathrm{Sc}(\tilde F^2)$ is the part of the full square that survives it. The identity is exact, holds for every element of $\mathbb{B}$ and not only on shell, and is verified by direct multiplication.</p>
+<p><strong>The mass term.</strong> On the timelike branch the norm is $-r^2$, because $(\varepsilon ir\tilde U)(\varepsilon ir\tilde U)^{\natural}=\varepsilon^2i^2r^2\tilde U\tilde U^{\natural}=-r^2$; on the spacelike branch it is $+r^2$, because $(r\tilde U\hat u)(r\tilde U\hat u)^{\natural}=r^2\tilde U\hat u\hat u^{\natural}\tilde U^{\natural}=r^2\tilde U(-\hat u)(-\hat u)\tilde U^{\natural}=r^2$. Hence</p>
+<p>$$
+-\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural=
+\begin{cases}+\tfrac12k_m^2r^2, & \text{timelike},\\[2pt]-\tfrac12k_m^2r^2, & \text{spacelike}.\end{cases}
+$$</p>
+<p><strong>The sign is the branch.</strong> In the element form the mass term is indefinite, because $\langle\tilde A_\Phi\rangle_\natural$ is indefinite. In the chart it becomes a definite power of one positive parameter, and its sign is a property of the branch. For a timelike field the scale enters the Lagrangian with the sign of a positive mass term and the scale equation has the standard massive form; for a spacelike field the sign is reversed. Nothing in the element form displays this, because nothing in the element form distinguishes the two branches.</p>
+<p><strong>The polar Lagrangian.</strong> Collecting the two pieces,</p>
+<p>$$
+\boxed{\;\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural\;}
+$$</p>
+<p>with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a gauge-fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.</p>
+<p><strong>The parameters.</strong> On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(r,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(r,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.</p>
+<h2 id="the-eulerlagrange-equations">The Euler–Lagrange Equations</h2>
+<p><strong>The change-of-variables argument.</strong> The word is a bijection from the parameter set onto the branch, and both are open subsets of four-dimensional spaces; it is smooth with smooth inverse away from the coordinate singularity at the pure scalar-potential line. A diffeomorphism carries a variational problem to a variational problem: if $\tilde A_\Phi=\Phi(q)$ and $S=\int\mathcal{L}(\Phi(q),\partial\Phi(q))$, then</p>
+<p>$$
+\frac{\delta S}{\delta q^i}=\Bigl(\frac{\delta S}{\delta\tilde A_\Phi}\Bigr)\Big|_{\tilde A_\Phi=\Phi(q)}\cdot\frac{\partial\Phi}{\partial q^i},
+$$</p>
+<p>and the Jacobian $\partial\Phi/\partial q^i$ is invertible on the branch. So the Euler–Lagrange equations in the chart vanish if and only if the element-form equation holds, and their content is the field equation and nothing else. This is an identity of the calculus, not a claim about the algebra, and it is what makes the polar variational principle exact.</p>
+<p><strong>The explicit form.</strong> Performing the differentiation gives the two displays of the polar article. The scalar part of the transformed equation is</p>
+<p>$$
+\bigl(\Box_\Phi-k_m^2\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
+\qquad
+\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu},
+$$</p>
+<p>and the traceless part is</p>
+<p>$$
+\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2\Bigr)
++2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0 .
+$$</p>
+<p>Both are exactly the equations that the direct substitution of the word into the field equation gives, which is the content of the change-of-variables argument: the variational route and the substitution route are the same route. For a fixed boost axis the pair reduces to</p>
+<p>$$
+\bigl(\Box_\Phi-k_m^2\bigr)r+\tfrac14r\sum_\mu\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)^2=0,
+\qquad
+\sum_\mu\frac{\partial}{\partial R_\mu}\Bigl(r^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)=0 ,
+$$</p>
+<p>which is the form the polar article verifies numerically. The mass term enters the first with the sign $+k_m^2r$ on the timelike branch, as the branch's sign of the mass term requires.</p>
+<p><strong>What the variation of the middle piece does.</strong> The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.</p>
+<h2 id="the-mass-term-the-branch-and-the-constraint">The Mass Term, the Branch, and the Constraint</h2>
+<p><strong>The Hessian has rank three.</strong> The kinetic part of the chart's Lagrangian is $\tfrac12\epsilon\vec E^2$ with $\vec E=-\nabla a'_t-\partial_{t'}\vec A$, so only $\vec A$ carries velocities, and</p>
+<p>$$
+\frac{\partial^2\mathcal{L}}{\partial\dot q^i\partial\dot q^j}
+=\epsilon\,\frac{\partial\vec A}{\partial q^i}\cdot\frac{\partial\vec A}{\partial q^j},
+$$</p>
+<p>an outer product of four vectors in three dimensions. Its rank is therefore at most three, and it is exactly three wherever the four vectors $\partial\vec A/\partial q^i$ span $\mathbb{R}^3$, which they do at a generic point of the branch. So there is one null direction, and the chart has one primary constraint.</p>
+<p><strong>The null direction is the scalar potential.</strong> The four derivatives of $\vec A=-r\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ along the branch are not independent: the combination that changes $r$ and $\theta_{\mathrm{rpd}}$ while holding the product $r\sinh\frac{\theta_{\mathrm{rpd}}}{2}$ fixed leaves $\vec A$ unchanged and changes $a'_t=r\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. That combination is the null vector, and it is exactly the direction in which the field changes by the gradient of a function of time — the primary constraint $\pi^0=0$ of the vector field, written in the chart's letters.</p>
+<p><strong>The Lorenz condition is the secondary constraint.</strong> Preserving the primary constraint in time produces the Lorenz condition, which in the chart is the single scalar equation displayed in the polar article. So the pair is second class, the physical count is three, and the chart's four parameters lose one on shell. That is the same count as the polarizations, and the same count as the element form's.</p>
+<p><strong>No multipliers for the units, and no escape from the constraint.</strong> The two statements must be kept apart.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what is counted</th>
+<th>element form</th>
+<th>chart</th>
+<th>Takabayasi's tensor form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>normalization of the frame</td>
+<td>automatic</td>
+<td>automatic, by the word</td>
+<td>three multipliers $A_1,A_2,A_3$</td>
+</tr>
+<tr>
+<td>phase</td>
+<td>none</td>
+<td>none</td>
+<td>one multiplier</td>
+</tr>
+<tr>
+<td>primary constraint</td>
+<td>$\pi^0=0$</td>
+<td>rank-three Hessian</td>
+<td>rank-three Hessian</td>
+</tr>
+<tr>
+<td>secondary constraint</td>
+<td>Lorenz</td>
+<td>Lorenz</td>
+<td>Lorenz</td>
+</tr>
+</tbody>
+</table></div>
+<p>The chart's gain is the first row: the boost is parametrized, not constrained, so its unit condition costs nothing. The chart's non-gain is the third and fourth rows: the vector field's own constraints are untouched, and any claim that the polar form removes them would be false. This is the honest ledger, and it is the opposite of the Schrödinger case, where the <em>action</em> is first order and the constraints are the momenta's vanishing.</p>
+<p><strong>Why the Schrödinger case differs.</strong> There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $r$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.</p>
+<h2 id="the-lorenz-condition-in-the-chart">The Lorenz Condition in the Chart</h2>
+<p><strong>One equation on four parameters.</strong> The chart's form of the condition is</p>
+<p>$$
+S=\varepsilon\Bigl[c\,\partial_{r'_t}r-s\,\hat u_{\mathrm b}\cdot\nabla r
++\tfrac12rs\,\partial_{r'_t}\theta_{\mathrm{rpd}}-\tfrac12rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0,
+$$</p>
+<p>with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. It is the divergence of the four-vector in the chart's variables, and it is the secondary constraint. On shell it removes one of the four parameters and leaves three.</p>
+<p><strong>It is implied, and the variational reading says why.</strong> In the element form the condition follows from the divergence of the equation. In the chart it follows from the variation of the $-\tfrac12S^2$ term together with the rest, and it is the statement that the longitudinal part of the field is not free. There is no multiplier attached to it, and there is no gauge orbit along which it could be reached: it is one equation among the four.</p>
+<p><strong>What it is not.</strong> It is not the continuity equation of a fluid and it is not a guidance equation, because the material sector has no phase and therefore no phase current to conserve. The scalar Madelung pair is a pair because the field is one complex function; here the field is a real four-vector, and the condition is a single divergence. The variational principle does not manufacture the missing half.</p>
+<h2 id="what-the-polar-variational-principle-adds-and-what-it-does-not">What the Polar Variational Principle Adds and What It Does Not</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The action in the chart, with the mass term reduced to a definite power of the modulus. Its sign is the branch, and that is a statement the element form cannot make.</li>
+<li>The explicit separation of the element-form Lagrangian into curl, scalar square and mass, with the middle piece identified as what the projection removes and as the term whose variation carries the Lorenz condition.</li>
+<li>The exactness of the chart's variational principle, with the change-of-variables argument making the equivalence a matter of calculus.</li>
+<li>The correct count: no multipliers for the unit conditions, one primary and one secondary constraint for the vector field, three physical parameters on shell.</li>
+<li>The fixed-axis reduction of the two Euler–Lagrange equations to a massive scale equation with a rapidity-gradient source and a conservation law with density $r^2$.</li>
+</ul>
+<p><strong>Does not add.</strong></p>
+<ul>
+<li>No new prediction and no new solution. The solutions are the element form's, and the chart only re-reads them.</li>
+<li>No removal of the constraints. The rank-three Hessian is the vector field's, and the chart displays it rather than dissolving it.</li>
+<li>No second current. The action's symmetries are the element form's, and the absence of a central phase is inherited unchanged.</li>
+<li>No simplification of the equations. The chart's equations are nonlinear in the parameters, and they are longer than the field equation they encode.</li>
+</ul>
+<p><strong>The distinction that matters.</strong> The polar variational principle is a coordinate change of a standard variational problem, and its value is entirely in what the coordinates display: the sign of the mass term as the branch, the three jobs of the three pieces, and the constraint's exact location. It is not a new principle, and the article claims nothing of the kind.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li><strong>The spacelike branch's equations.</strong> The scale equation and the transport equation are displayed here for the timelike branch, where the frame is the only object differentiated. On the spacelike branch the direction $\hat u$ is differentiated as well, and the two are locked; the explicit Euler–Lagrange equations of that branch are not written out, and the polar article records the same gap.</li>
+<li><strong>The crossing set.</strong> The chart is a diffeomorphism on each branch and fails on the lightlike set of field values. What the variational problem does across the crossing — whether the action can be continued, and whether the continuation is stationary — is not settled.</li>
+<li><strong>The constraint analysis in the chart.</strong> The rank-three Hessian and the second-class pair are identified here but not carried through the Dirac bracket. The canonical quantization article performs the analysis in the component variables; whether the chart's variables simplify the bracket, or merely obscure it, is open.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Substituting the polar word of the material sector into the Proca action gives</p>
+<p>$$
+\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural ,
+$$</p>
+<p>with the mass term $+\tfrac12k_m^2r^2$ on the timelike branch and $-\tfrac12k_m^2r^2$ on the spacelike one: the sign of the mass term is the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass; the middle piece is what the element form's projection removes, and its variation carries the Lorenz condition.</p>
+<p>The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations are the transformed field equation: the scale equation with the frame's quadratic source and the frame transport, which is what the polar article's direct substitution gives. The chart needs no Lagrange multiplier for the normalization of the boost, in contrast with the tensor formulation — but it does not remove the vector field's own constraints: the Hessian has rank three, its null direction is the scalar potential at fixed vector potential, and the Lorenz condition is the secondary constraint. Four parameters, four equations, three physical parameters on shell.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_t=1,\ \vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_\eta^2=-e_t$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$</td>
+<td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\mathrm{Vect}$, ${}^{\natural}$, ${}^{*}$</td>
+<td>Scalar part, vector part, quaternion and Hermitian conjugations</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$</td>
+<td>Quaternionic norm; real on $\mathbb{B}_\Phi$</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=\varepsilon ir\tilde U_{\Psi,\mathrm b}$</td>
+<td>Timelike branch of the word</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=r\tilde U_{\Psi,\mathrm b}\hat u$</td>
+<td>Spacelike branch, boost axis locked to $\hat u$</td>
+</tr>
+<tr>
+<td>$r>0$, $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$, $\hat u$</td>
+<td>Modulus, rapidity, boost axis, direction</td>
+</tr>
+<tr>
+<td>$\varepsilon=\pm1$</td>
+<td>Sign of the scalar potential, timelike branch</td>
+</tr>
+<tr>
+<td>$\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$</td>
+<td>Frame bracket (Maurer–Cartan form)</td>
+</tr>
+<tr>
+<td>$S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$</td>
+<td>Lorenz scalar</td>
+</tr>
+<tr>
+<td>$\mathcal{L}$</td>
+<td>Lagrangian density in the chart</td>
+</tr>
+<tr>
+<td>$\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$</td>
+<td>d'Alembertian of the corpus</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-proca-equation-in-biquaternionic-polar-variables.html">The Proca Equation in Biquaternionic Polar Variables</a>, for the word and the equation in the chart.</li>
+<li><a href="the-variational-principle-and-the-proca-equation-in-biquaternionic-form.html">The Variational Principle and the Proca Equation in Biquaternionic Form</a>, for the element-form action, its variation and the currents.</li>
+<li><a href="the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>, for the equation, the Lorenz condition and the polarizations.</li>
+<li><a href="canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>, for the Legendre transform and the constraint structure in the component variables.</li>
+<li><a href="the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables</a>, for the first-order case, whose constrained structure is the contrast used here.</li>
+<li><a href="the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a>, for the carrier and the reality obstruction.</li>
+<li><a href="the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html">The Third Polarization and the Self-Dual Split of the Massive Field Strength</a>, for the three on-shell parameters.</li>
+<li>Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter", <em>Progress of Theoretical Physics Supplement</em> <strong>4</strong> (1957) 1–80, for the tensor formulation with unit-vector multipliers.</li>
+<li>Paul Adrien Maurice Dirac, <em>Lectures on Quantum Mechanics</em> (Yeshiva University, 1964), for the constraint analysis and the classification of constraints.</li>
+<li>Alexandre Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs", <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353, for the equation and its mass.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
