@@ -7,10 +7,10 @@ This is a worked exercise on the biquaternion Dirac equation, written in the biq
 **One operator, two members.** The gradient is the one first-order operator of the equation, and the mass couples two members,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
 $$
 
-which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and only that product is the wave operator.
+which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and only that product is the wave operator.
 
 **The two parts.** The field carries the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*, and its two parts are read by the right action $\tilde Q\mapsto-i\tilde Q\vec e_z$: the value $-1$ written $L$ and the value $+1$ written $R$. A left multiplication keeps the value, a product takes the value of its right factor, a scalar multiple keeps the value, and a right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two values. The gradient multiplies on the left and the reading on the right, so no derivative moves the value; the mass is a central coefficient multiplying on the left, and it moves none either. What the mass does is relate the two parts, and the pair is the statement of that relation.
 
@@ -48,7 +48,7 @@ $$
 
 because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
-**The wave element.** A plane wave is $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{\mathrm{sp},0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
+**The wave element.** A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta)$ with $\theta=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
 $$
 \tilde P_{\Phi}=\hbar\tilde K_{\Phi},\qquad
@@ -81,28 +81,28 @@ $$
 \tilde Q_{\mathrm{disp}}^{-1}\vec e_y\tilde Q_{\mathrm{disp}}=\vec e_y .
 $$
 
-Right multiplication of the field by $\tilde Q_{\mathrm{disp}}$ therefore moves the reading from $\vec e_z$ to $\vec e_x$: for $\tilde{Ξ}=\tilde{Ξ}_{\mathrm{sp}}\tilde Q_{\mathrm{disp}}$ the identity $\tilde Q_{\mathrm{disp}}\vec e_x=\vec e_z\tilde Q_{\mathrm{disp}}$ gives
+Right multiplication of the field by $\tilde Q_{\mathrm{disp}}$ therefore moves the reading from $\vec e_z$ to $\vec e_x$: for $\tilde{Ξ}=\tilde{Ξ}\tilde Q_{\mathrm{disp}}$ the identity $\tilde Q_{\mathrm{disp}}\vec e_x=\vec e_z\tilde Q_{\mathrm{disp}}$ gives
 
 $$
--i\tilde{Ξ}\vec e_x=(-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z)\tilde Q_{\mathrm{disp}},
+-i\tilde{Ξ}\vec e_x=(-i\tilde{Ξ}\vec e_z)\tilde Q_{\mathrm{disp}},
 $$
 
 so the value read on $\vec e_x$ after the change is the value read on $\vec e_z$ before it. The change is a right multiplication and every derivative is a left multiplication, so it commutes with $\tilde\nabla_\Phi$: the change of the reading moves the labels and touches no derivative.
 
 ## The Field and the Equation
 
-**The field.** The field is one element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb B$ with its two parts $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ (§*The Chirality Convention*). Nothing further is needed to state the field: the two parts are the two values of one element, and the field is the element itself.
+**The field.** The field is one element $\tilde{Ξ}$ of $\mathbb B$ with its two parts $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ (§*The Chirality Convention*). Nothing further is needed to state the field: the two parts are the two values of one element, and the field is the element itself.
 
 **The equation.** For a plane wave of four-momentum $(E,\vec p)$ the two members become the momentum-space system
 
 $$
-i\tilde P_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R}=m\,\tilde{Ξ}_{\mathrm{sp},L},\qquad i\tilde P_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},L}=m\,\tilde{Ξ}_{\mathrm{sp},R} ,
+i\tilde P_{\Phi}\,\tilde{Ξ}_{R}=m\,\tilde{Ξ}_{L},\qquad i\tilde P_{\Phi}^{\natural}\,\tilde{Ξ}_{L}=m\,\tilde{Ξ}_{R} ,
 $$
 
 one equation on each part, and the two are one statement: the second is the first with the gradient replaced by its conjugate and the two parts exchanged, so the mass stands with the same sign on both sides. Eliminating the second part gives
 
 $$
-\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R}=-k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}\,\tilde{Ξ}_{R}=-k_m^{2}\tilde{Ξ}_{R} ,
 $$
 
 which is the mass shell of Problem 6 and the Klein–Gordon equation of the first part.
@@ -113,7 +113,7 @@ which is the mass shell of Problem 6 and the Klein–Gordon equation of the firs
 
 **Statement.** Solve the pair for the positive-frequency branch $\tilde w$ and for the negative-frequency branch $\tilde v$, explicitly at rest and at general momentum, in the two readings.
 
-**Solution.** Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell
+**Solution.** Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell
 
 $$
 E^2=\vec p^{\,2}+m^2 .
@@ -122,15 +122,15 @@ $$
 On the shell the second part is free and the first is determined by the gradient:
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp},L}=\frac1m\,\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\frac{i}{m}\,\tilde P_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R}\;}
+\boxed{\;\tilde{Ξ}_{L}=\frac1m\,\tilde\nabla_\Phi\tilde{Ξ}_{R}=\frac{i}{m}\,\tilde P_{\Phi}\,\tilde{Ξ}_{R}\;}
 $$
 
-The part $\tilde{Ξ}_{\mathrm{sp},R}$ is two-complex-dimensional, so the space of positive-frequency solutions at fixed momentum is two-dimensional, and it carries no further label. The label is the helicity, and it is the two values of the helicity element: left multiplication by $\tilde{Ζ}$ commutes with left multiplication by $\tilde P_{\Phi}$, as it does with every left multiplication by an element that commutes with $\tilde{Ζ}$, so its two eigenspaces cut the space into two one-dimensional pieces, one for each value.
+The part $\tilde{Ξ}_{R}$ is two-complex-dimensional, so the space of positive-frequency solutions at fixed momentum is two-dimensional, and it carries no further label. The label is the helicity, and it is the two values of the helicity element: left multiplication by $\tilde{Ζ}$ commutes with left multiplication by $\tilde P_{\Phi}$, as it does with every left multiplication by an element that commutes with $\tilde{Ζ}$, so its two eigenspaces cut the space into two one-dimensional pieces, one for each value.
 
 **The amplitudes.** Along a helicity eigenstate the two parts have unequal size, and the ratio is fixed. Writing $\langle\tilde Q\rangle_{*}$ for the Hermitian norm,
 
 $$
-\frac{\langle\tilde{Ξ}_{\mathrm{sp},L}\rangle_{*}}{\langle\tilde{Ξ}_{\mathrm{sp},R}\rangle_{*}}=\frac{E\mp\lvert\vec p\rvert}{E\pm\lvert\vec p\rvert},
+\frac{\langle\tilde{Ξ}_{L}\rangle_{*}}{\langle\tilde{Ξ}_{R}\rangle_{*}}=\frac{E\mp\lvert\vec p\rvert}{E\pm\lvert\vec p\rvert},
 $$
 
 with the upper sign for helicity $+1$ and the lower for helicity $-1$: the left part dominates for the negative helicity and the right part for the positive one, and at the massless point one of the two vanishes. The squared amplitudes are the two factors whose product is $m^2$, and that product is what makes the covariant normalisation of Problem 2 come out at $2m$.
@@ -157,7 +157,7 @@ $$
 
 with the two signs exchanged for the negative-frequency space. The rest frame supplies no direction to the operator: at $\vec p=0$ the gradient is $e_t\,\partial/\partial R_t$ alone and its symbol is a central scalar, so the two dimensions are the two dimensions of the part and not two directions of a spin. The axis enters through the reading, as in the next paragraph.
 
-**The other reading.** Right multiplication by $\tilde Q_{\mathrm{disp}}$ carries a solution of one reading to a solution of the other, because the change of the reading touches no derivative: if the pair holds for $\tilde{Ξ}_{\mathrm{sp}}$, then right multiplication by the unit element carries it to a pair that holds for $\tilde{Ξ}_{\mathrm{sp}}\tilde Q_{\mathrm{disp}}$. In that reading the unit on which the value is read is $\vec e_x$, whose part of value $+1$ has the basis
+**The other reading.** Right multiplication by $\tilde Q_{\mathrm{disp}}$ carries a solution of one reading to a solution of the other, because the change of the reading touches no derivative: if the pair holds for $\tilde{Ξ}$, then right multiplication by the unit element carries it to a pair that holds for $\tilde{Ξ}\tilde Q_{\mathrm{disp}}$. In that reading the unit on which the value is read is $\vec e_x$, whose part of value $+1$ has the basis
 
 $$
 e_t-i\vec e_x,\qquad \vec e_z+i\vec e_y ,
@@ -172,10 +172,10 @@ and the rest solutions are the same elements with the reading moved. The two par
 **Solution.** The Dirac pairing is the Hermitian one twisted by the timelike unit,
 
 $$
-\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x\bigr),
+\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr),
 $$
 
-the pairing of the parent, with the trace of *Norm and Unitary Conventions*. The twist is the time direction of the frame, and it is what makes the pairing a Lorentz scalar; the twist exchanges the two values, so the pairing couples the two parts crossed, $\tilde{Ξ}_{\mathrm{sp},L}$ with $\tilde{Ξ}_R$ and $\tilde{Ξ}_{\mathrm{sp},R}$ with $\tilde{Ξ}_L$, and the two diagonal terms vanish in the trace, so only the crossed terms remain. The single algebraic input of the section is the unit-vector identity
+the pairing of the parent, with the trace of *Norm and Unitary Conventions*. The twist is the time direction of the frame, and it is what makes the pairing a Lorentz scalar; the twist exchanges the two values, so the pairing couples the two parts crossed, $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_R$ and $\tilde{Ξ}_{R}$ with $\tilde{Ξ}_L$, and the two diagonal terms vanish in the trace, so only the crossed terms remain. The single algebraic input of the section is the unit-vector identity
 
 $$
 (i\vec u_p)^2=i^2\,\vec u_p^{\,2}=(-1)(-e_t)=e_t,
@@ -221,12 +221,12 @@ $$
 \sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=i\tilde P_{\Phi}\,\tilde{Ξ}-m\,\tilde{Ξ} .
 $$
 
-**Solution.** The left-hand side is a sum of two products of elements, one per helicity, and read as an operator it has rank two: each term is the solution multiplied by the number its pairing with $\tilde{Ξ}$ returns. The two solutions at fixed momentum are the two helicity eigenstates, and their parts $\tilde{Ξ}_{\mathrm{sp},R}$ span the part of value $R$, so the sum reproduces $\tilde{Ξ}$ on the right and, through the action, on the left. The right-hand side is the element $i\tilde P_{\Phi}+m$ multiplying $\tilde{Ξ}$ on the left, which is the gradient plus the mass read on a plane wave of the momentum: $\tilde\nabla_\Phi\tilde{Ξ}+k_m\tilde{Ξ}$. The negative-frequency sum is identical in structure with the roles of the two values interchanged, and gives the gradient minus the mass. Both hold for every element and not only on the solutions, and both were checked on a basis of $\mathbb B$.
+**Solution.** The left-hand side is a sum of two products of elements, one per helicity, and read as an operator it has rank two: each term is the solution multiplied by the number its pairing with $\tilde{Ξ}$ returns. The two solutions at fixed momentum are the two helicity eigenstates, and their parts $\tilde{Ξ}_{R}$ span the part of value $R$, so the sum reproduces $\tilde{Ξ}$ on the right and, through the action, on the left. The right-hand side is the element $i\tilde P_{\Phi}+m$ multiplying $\tilde{Ξ}$ on the left, which is the gradient plus the mass read on a plane wave of the momentum: $\tilde\nabla_\Phi\tilde{Ξ}+k_m\tilde{Ξ}$. The negative-frequency sum is identical in structure with the roles of the two values interchanged, and gives the gradient minus the mass. Both hold for every element and not only on the solutions, and both were checked on a basis of $\mathbb B$.
 
 **The second-order closure.** The two sums are complementary, and eliminating between the members gives the closure
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R} .
 $$
 
 The scalar square is the interval, and the collapse is two lines:
@@ -246,7 +246,7 @@ with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\
 **Solution.** At $m=0$ the mass term is gone and the pair decouples into two independent equations, one on each part:
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0 .
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=0,\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0 .
 $$
 
 For $m=0$ the dispersion is $E=\lvert\vec p\rvert$ and the wave element is null, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=0$, so the left multiplication by $\tilde P_{\Phi}$ loses rank and its kernel is of two complex dimensions. Every element of that kernel carries helicity $+1$:
@@ -261,13 +261,13 @@ So the labels are locked to the members: **the field annihilated by $\tilde\nabl
 **The position-space reading.** On the material sector the free member reads
 
 $$
--i\,e_t\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta}=0 .
+-i\,e_t\frac{\partial\tilde{Ξ}}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}}{\partial R_\eta}=0 .
 $$
 
-The same line is read for $\partial\tilde{Ξ}_{\mathrm{sp}}/\partial r'_t$:
+The same line is read for $\partial\tilde{Ξ}/\partial r'_t$:
 
 $$
-\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial r'_t}=-i\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\eta},
+\frac{\partial\tilde{Ξ}}{\partial r'_t}=-i\sum_\eta\vec e_\eta\frac{\partial\tilde{Ξ}}{\partial R_\eta},
 $$
 
 one equation on the element, whose two solutions are the two locked states above. The magnitude $\lvert\vec p\rvert$, which the energy carries at $m=0$, is part of the right-hand side and cannot be dropped.
@@ -297,8 +297,8 @@ the first because a left multiplication keeps the value, the second and the thir
 **The change of the reading.** Right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ is a unit element, and it moves the reading from $\vec e_z$ to $\vec e_x$:
 
 $$
-\tilde{Ξ}_{\mathrm{sp},d}=\tilde{Ξ}_{\mathrm{sp},c}\,\tilde Q_{\mathrm{disp}},\qquad
--i\tilde{Ξ}_{\mathrm{sp},d}\vec e_x=(-i\tilde{Ξ}_{\mathrm{sp},c}\vec e_z)\tilde Q_{\mathrm{disp}} .
+\tilde{Ξ}_{d}=\tilde{Ξ}_{c}\,\tilde Q_{\mathrm{disp}},\qquad
+-i\tilde{Ξ}_{d}\vec e_x=(-i\tilde{Ξ}_{c}\vec e_z)\tilde Q_{\mathrm{disp}} .
 $$
 
 The two values are unchanged, the two bases move with the reading, and no derivative changes: a left multiplication passes through a right multiplication, so $\tilde\nabla_\Phi$ applied before or after the change gives the same result. The change is a right multiplication of the element and not a linear map of something other than the element: it moves the reading, and the element is the same element.
@@ -379,13 +379,13 @@ the square of the Klein–Gordon symbol. The two pieces carry the same pair of e
 
 **Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ and $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ departed from $\pm p^2$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{p^2}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^{2}\,c^{2}-p^2)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
 
-**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues are complex and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
+**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues are complex and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
 
 ## Summary
 
 The seven problems test the parent's plane-wave solutions and confirm them in the algebra.
 
-1. **The solutions.** Eliminating the second part gives the mass shell $E^2=\vec p^{\,2}+m^2$; on it the second part is free and the first is $\frac1m\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}$, the two parts standing in the norm ratio $(E\mp\lvert\vec p\rvert):(E\pm\lvert\vec p\rvert)$ for helicity $\pm1$. At rest $\tilde w_L(0)=-\tilde w_R(0)$, with basis $e_t-i\vec e_z$ and $\vec e_x+i\vec e_y$ for the part of value $R$; in the other reading the same elements are read on $\vec e_x$.
+1. **The solutions.** Eliminating the second part gives the mass shell $E^2=\vec p^{\,2}+m^2$; on it the second part is free and the first is $\frac1m\tilde\nabla_\Phi\tilde{Ξ}_{R}$, the two parts standing in the norm ratio $(E\mp\lvert\vec p\rvert):(E\pm\lvert\vec p\rvert)$ for helicity $\pm1$. At rest $\tilde w_L(0)=-\tilde w_R(0)$, with basis $e_t-i\vec e_z$ and $\vec e_x+i\vec e_y$ for the part of value $R$; in the other reading the same elements are read on $\vec e_x$.
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$ and from the geometric mean $\sqrt{E^2-\vec p^{\,2}}=m$; the Hermitian products are $2E$.
 3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}-m)\tilde{Ξ}$ read as products of elements; the closure $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ gives $\Box=k_m^{2}$ on the shell, and $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}$.
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla_\Phi$ keeps one helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
@@ -406,11 +406,11 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
-| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
+| $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
 | $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |
 | $-i\hbar\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$ |
-| $i\tilde P_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$ and $i\tilde P_{\Phi}^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair: the gradient and the mass, momentum space |
-| $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
+| $i\tilde P_{\Phi}\,\tilde{Ξ}_{R}=m\tilde{Ξ}_{L}$ and $i\tilde P_{\Phi}^{\natural}\tilde{Ξ}_{L}=m\tilde{Ξ}_{R}$ | The pair: the gradient and the mass, momentum space |
+| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
 | $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the reading, $\vec e_z$ to $\vec e_x$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
 | $p^2=E^2/c^2-\vec p^{\,2}$ | Interval of the four-momentum |

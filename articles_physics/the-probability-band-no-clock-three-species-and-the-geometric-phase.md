@@ -391,11 +391,11 @@ The sign is the sector. On the material sector the plain square is negative semi
 
 ### The Amplitude and Its Two Parts
 
-Let $\tilde{Ξ}_{\mathrm{sp},1}$ and $\tilde{Ξ}_{\mathrm{sp},2}$ be two spinors of the module, and let the amplitude be the band's pairing,
+Let $\tilde{Ξ}_{1}$ and $\tilde{Ξ}_{2}$ be two spinors of the module, and let the amplitude be the band's pairing,
 
 $$
-A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}
-=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}^*\bigr).
+A=\langle\tilde{Ξ}_{1},\tilde{Ξ}_{2}\rangle_{*}
+=\mathrm{Sc}\bigl(\tilde{Ξ}_{1}\tilde{Ξ}_{2}^*\bigr).
 $$
 
 The squared modulus is the probability of the transition, and the argument is the phase. The amplitude is a complex number; the phase is its argument, and the axis about which it turns is a property of the two rays, not of the amplitude.
@@ -403,9 +403,9 @@ The squared modulus is the probability of the transition, and the argument is th
 Under a central phase on each spinor,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},1}\mapsto e^{i\alpha_1}\tilde{Ξ}_{\mathrm{sp},1},
+\tilde{Ξ}_{1}\mapsto e^{i\alpha_1}\tilde{Ξ}_{1},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},2}\mapsto e^{i\alpha_2}\tilde{Ξ}_{\mathrm{sp},2},
+\tilde{Ξ}_{2}\mapsto e^{i\alpha_2}\tilde{Ξ}_{2},
 $$
 
 the amplitude transforms as
@@ -433,12 +433,12 @@ For unit spinors the modulus of the amplitude is $\cos(\theta/2)$, where $\theta
 
 ### The Loop Is the Gauge-Invariant Phase
 
-Take a closed sequence of states $\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2},\dots,\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}$ and the product of the overlaps around the loop,
+Take a closed sequence of states $\tilde{Ξ}_{1},\tilde{Ξ}_{2},\dots,\tilde{Ξ}_{n},\tilde{Ξ}_{1}$ and the product of the overlaps around the loop,
 
 $$
-\Gamma=\arg\Bigl(\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}
-\langle\tilde{Ξ}_{\mathrm{sp},2},\tilde{Ξ}_{\mathrm{sp},3}\rangle_{*}\cdots
-\langle\tilde{Ξ}_{\mathrm{sp},n},\tilde{Ξ}_{\mathrm{sp},1}\rangle_{*}\Bigr).
+\Gamma=\arg\Bigl(\langle\tilde{Ξ}_{1},\tilde{Ξ}_{2}\rangle_{*}
+\langle\tilde{Ξ}_{2},\tilde{Ξ}_{3}\rangle_{*}\cdots
+\langle\tilde{Ξ}_{n},\tilde{Ξ}_{1}\rangle_{*}\Bigr).
 $$
 
 Under a change of representative the factors shift by the telescoping phases $\alpha_{\eta}-\alpha_{k+1}$, and the product is unchanged. The loop phase is gauge invariant, and it is the Pancharatnam phase of the circuit. The connection is the imaginary part of the overlap with the derivative, its curvature is minus half the area form of the sphere, and the holonomy is minus one half of the enclosed solid angle:
@@ -488,7 +488,7 @@ The three grades of coefficient reality are the complex, central and real specie
 | $\{Q_1,Q_2,Q_3\}=Q_1Q_2^{*}Q_3$ | the ternary product of the band |
 | $\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}(e_t+i\vec r)$ | a trace-one state in the Bloch form |
 | $P$, $I$ | the probability norm and the interval norm on the state slice |
-| $A=\langle\tilde{Ξ}_{\mathrm{sp},1},\tilde{Ξ}_{\mathrm{sp},2}\rangle_{*}$ | the amplitude |
+| $A=\langle\tilde{Ξ}_{1},\tilde{Ξ}_{2}\rangle_{*}$ | the amplitude |
 | $\Gamma$ | the Pancharatnam phase of a closed circuit |
 
 ## Further Reading

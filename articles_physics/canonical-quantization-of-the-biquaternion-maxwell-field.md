@@ -111,7 +111,7 @@ are **first class**: their Poisson bracket with each other vanishes, and each ge
 
 Counting degrees of freedom makes the point. The phase space of the four components of $A_\mu$ has $4\times2=8$ dimensions. A first-class constraint removes two phase-space dimensions — the constraint itself and the gauge direction it generates — so two first-class constraints remove four, leaving $8-4=4$ phase-space dimensions, that is, **two field degrees of freedom** at each point. These are the two transverse polarizations.
 
-The contrast with the Dirac field is exact and should be set beside it. There the conjugate momentum was $\pi=i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}$, algebraically tied to the field by the **second-class** constraint $\xi=\pi-i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\approx0$; the momentum was not independent, and the gauge freedom was absent, but the bracketing had to become anticommutation. Here the momentum is independent in its spatial components, one entire component of it vanishes, and a divergence constraint appears; the constraint is first class, gauge freedom is present, and the bracketing stays commutation. Both theories have singular Legendre transforms. The singularity of the Dirac case forces a different bracket; the singularity of the Maxwell case forces a choice of gauge.
+The contrast with the Dirac field is exact and should be set beside it. There the conjugate momentum was $\pi=i\tilde{Ξ}^{\dagger}$, algebraically tied to the field by the **second-class** constraint $\xi=\pi-i\tilde{Ξ}^{\dagger}\approx0$; the momentum was not independent, and the gauge freedom was absent, but the bracketing had to become anticommutation. Here the momentum is independent in its spatial components, one entire component of it vanishes, and a divergence constraint appears; the constraint is first class, gauge freedom is present, and the bracketing stays commutation. Both theories have singular Legendre transforms. The singularity of the Dirac case forces a different bracket; the singularity of the Maxwell case forces a choice of gauge.
 
 ## The Constraints in Biquaternion Notation
 
@@ -171,13 +171,13 @@ with all other commutators vanishing. The signs are not optional: the timelike m
 The negative-norm states are removed by a **subsidiary condition**. The Lorenz gauge condition $S=0$ is imposed on the positive-frequency part of the field,
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}A\right)^{(+)}|\tilde{Ξ}_{\mathrm{sp}}\rangle=0,
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}A\right)^{(+)}|\tilde{Ξ}\rangle=0,
 $$
 
 which for a mode with momentum along $\vec e_z$ reduces to
 
 $$
-\boxed{\;\big(a_{\mathrm{fop},0}(\vec k_\Phi)-a_{\mathrm{fop},3}(\vec k_\Phi)\big)|\tilde{Ξ}_{\mathrm{sp}}\rangle=0\;}.
+\boxed{\;\big(a_{\mathrm{fop},0}(\vec k_\Phi)-a_{\mathrm{fop},3}(\vec k_\Phi)\big)|\tilde{Ξ}\rangle=0\;}.
 $$
 
 This condition does not set the timelike and longitudinal excitations to zero individually; it leaves the combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$. That combination is annihilated by the condition,
@@ -221,7 +221,7 @@ with dispersion $\omega_k=c\sqrt{\vec k_\Phi^2+k_m^{2}}$. Its Fock space has pos
 
 The two quantizations may now be set side by side.
 
-- **The constraint.** The Dirac field carries a **second-class** constraint $\pi-i\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\approx0$: the momentum is algebraically tied to the field. The Maxwell field carries two **first-class** constraints, $\pi_0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$: the momentum is largely independent, one component of it vanishes, and the constraints generate gauge transformations.
+- **The constraint.** The Dirac field carries a **second-class** constraint $\pi-i\tilde{Ξ}^{\dagger}\approx0$: the momentum is algebraically tied to the field. The Maxwell field carries two **first-class** constraints, $\pi_0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$: the momentum is largely independent, one component of it vanishes, and the constraints generate gauge transformations.
 - **The bracket.** Second-class constraints force the bracket to be changed, and positivity forces the change to be to **anticommutators**; the Dirac field is fermionic. First-class constraints leave the bracket a **commutator** and instead require a gauge choice; the Maxwell field is bosonic.
 - **The added structure.** The Dirac quantization required a $\mathbb{Z}/2$ grading that the algebra does not supply and had to impose it on the mode algebra. The Maxwell quantization requires no new algebraic structure at all: the scalar imaginary already supplies the phase, the modes commute, and the indefinite inner product needed for the covariant treatment is the framework's own, its one minus the square of the $i$ in $Q_t=i q'_t$.
 - **The natural variable.** In the Dirac case the natural variable of the biquaternion equation is the field that is quantized. In the Maxwell case it is not: $\tilde{F}$ is gauge invariant and first order, and the passage to canonical variables reintroduces the potential and its redundancy.
@@ -248,7 +248,7 @@ The biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tild
 
 The Legendre transform is singular. The conjugate momenta are $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$.
 
-Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}_{\mathrm{sp}}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
+Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})|\tilde{Ξ}\rangle=0$ leaves the zero-norm combination $a_{\mathrm{fop},0}^{\dagger}-a_{\mathrm{fop},3}^{\dagger}$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
 
 The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.
 
@@ -277,7 +277,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\mathrm{Sc}(\tilde{\pi})\approx0$, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{\pi})\approx0$ | Primary and Gauss-law constraints, both first class |
 | $A_\mu$, $\epsilon^{(r)}_\mu$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Quantized potential, polarization vectors, mode operators |
 | $[a_{\mathrm{fop},r}(\vec k_\Phi),a_{\mathrm{fop},s}^{\dagger}(\vec k_2)]=\sigma_{\mathrm{met},r}\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ | Mode commutator, $\sigma_{\mathrm{met}}=(-1,+1,+1,+1)$ |
-| $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})\lvert\tilde{Ξ}_{\mathrm{sp}}\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |
+| $(a_{\mathrm{fop},0}-a_{\mathrm{fop},3})\lvert\tilde{Ξ}\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |
 | $\sum_{\lambda=1}^2\epsilon_i^{(\lambda)}\epsilon_j^{(\lambda)}=\delta_{ij}-\vec u_{\Phi,i}\vec u_{\Phi,j}$ | Transverse polarization sum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |
 

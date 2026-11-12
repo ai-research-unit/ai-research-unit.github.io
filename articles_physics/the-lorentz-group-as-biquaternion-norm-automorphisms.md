@@ -336,7 +336,7 @@ $$
 T \longmapsto T , \qquad \vec X \longmapsto R\,\vec X ,
 $$
 
-a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}_{\mathrm{sp}}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
+a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
 
 $$
 T \longmapsto \cosh 2\theta_{\mathrm{rpd}}\,T + \sinh 2\theta_{\mathrm{rpd}}\,X_3 , \qquad

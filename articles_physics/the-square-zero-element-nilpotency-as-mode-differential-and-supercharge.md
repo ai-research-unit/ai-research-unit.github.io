@@ -223,7 +223,7 @@ $$
 
 This is a genuine $\mathbb{Z}/2$ grading of $\mathbb{B}$ as an associative algebra, and it is the grading the Fock-space article calls the parity grading. It is inner: the parity is conjugation by an element of the algebra, and its odd part is a two-dimensional subspace of the algebra itself. The mode's fermionic character is carried by that inner automorphism, and it is carried by nothing else.
 
-**The chirality.** The other parity is a label on the field and not an element of the algebra. The chirality takes two values, $L$ and $R$; an element is written $\tilde{Ξ}_{\mathrm{sp},L}$ or $\tilde{Ξ}_{\mathrm{sp},R}$; a product takes the value of its right factor, and left multiplication keeps the value of its argument; and only the zero element carries both values. On an action the label is a basis operator, and the chirality basis operator of the reference frame is the right multiplication by the unit with the phase,
+**The chirality.** The other parity is a label on the field and not an element of the algebra. The chirality takes two values, $L$ and $R$; an element is written $\tilde{Ξ}_{L}$ or $\tilde{Ξ}_{R}$; a product takes the value of its right factor, and left multiplication keeps the value of its argument; and only the zero element carries both values. On an action the label is a basis operator, and the chirality basis operator of the reference frame is the right multiplication by the unit with the phase,
 
 $$
 \Gamma=-iR_{\vec e_z}:\ \tilde Q\longmapsto-i\,\tilde Q\,\vec e_z ,
@@ -314,19 +314,19 @@ with $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\B
 **The one-sided pair.** The chiral pair is the definition:
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} .
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-Both gradients act from the left on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
+Both gradients act from the left on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$, an element of $\mathbb{B}$ read in its two chirality parts, and the mass exchanges the two parts. The two equations compose to the second-order form, one equation per part, because the two gradients compose to the d'Alembertian:
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R},
 \qquad
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box_\Phi\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} .
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\Box_\Phi\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{L} .
 $$
 
 The two members of the chiral pair are one equation per chirality, not two different equations.
@@ -345,11 +345,11 @@ The two forms are set side by side once:
 
 | | one-sided form | two-sided form |
 |---|---|---|
-| equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
-| field | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ | $F\in\mathbb{B}$ |
+| equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-i\,m\,\bar F\,\vec e_z$ |
+| field | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B}$ | $F\in\mathbb{B}$ |
 | multiplication | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left by $(\tilde\nabla_\Phi)^{\natural}$, right by $\vec e_z$, with the antilinear $\bar{\cdot}$ |
 | mass | exchange of the two chirality parts | the right-multiplied unit, with the conjugation |
-| chirality | the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ | the right multiplication by $\vec e_z$ with a phase, which carries the label |
+| chirality | the two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ | the right multiplication by $\vec e_z$ with a phase, which carries the label |
 | second order | $\Box$ on each part | $\tilde\nabla_\Phi\bigl((\tilde\nabla_\Phi)^{\natural}F\bigr)=\Box_\Phi F$ |
 
 Neither column needs an array: the field is an element of the algebra in both forms, and the two differ in the side on which the mass acts.
@@ -610,7 +610,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in basis operators.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$. The basis operators compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{\mathrm{pau},e_t}$ and $R_{\mathrm{pau},e_t}$ are the identities of the left and right factors, two of the five basis operators collapse to one-sided multipliers: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$. The basis operators compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Since $L_{\mathrm{pau},e_t}$ and $R_{\mathrm{pau},e_t}$ are the identities of the left and right factors, two of the five basis operators collapse to one-sided multipliers: $\gamma_0=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_5=-iR_{\mathrm{pau},\vec e_z}$.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -700,7 +700,7 @@ The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes
 
 The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its parity is the chirality. In the framework it is the part of the Dirac action that exchanges the two values of the chirality, with $\mathcal{D}=Q+Q^\dagger$ and $\mathcal{D}^2=\Box$, and it is never an element of $\mathbb{B}$: the chirality is carried by a label and by the basis operator $\Gamma=-iR_{\vec e_z}$, and no element of the algebra carries it.
 
-The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^\natural\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $(\tilde\nabla_\Phi)^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
+The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^\natural\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, with both gradients acting from the left on the two chirality parts of an element. The two-sided form is Kravchenko's single equation $(\tilde\nabla_\Phi)^\natural F=-i\,m\,\bar F\,\vec e_z$ on $F\in\mathbb{B}$, in which the derivative acts from the left and the mass from the right, through the unit $\vec e_z$ and the conjugation. The two are different operators, and the price of the single equation is the antilinear conjugation.
 
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $c_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 
@@ -731,7 +731,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H^0=\ker X$, $H^1=M/\mathrm{im}\,X$ | its cohomology |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | Clifford algebra and its degree grading |
 | $\mathbb{B}=\mathrm{Cl}^0_{1,3}$ | the biquaternion algebra as the even part of the real $\mathrm{Cl}_{1,3}$; real dimension eight |
-| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$, $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$; $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$; basis operators compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
+| $L_a,R_b$, $L_{a}R_{b}$ | $L_a\tilde{Ξ}=a\tilde{Ξ}$, $R_b\tilde{Ξ}=\tilde{Ξ} b$; $L_{a}R_{b}\tilde{Ξ}=a\tilde{Ξ} b$; basis operators compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
 | $\mathrm{Cl}^1=\mathbb{B}_Lu$ | the odd slot, a rank-one left module; $u$ the odd unit of the reference frame |
 | $Q_{\mathrm{BRST}}$ | the BRST charge, an operator on the Fock space |
 | $s$ | the BRST derivation, $s^2=0$ |
@@ -747,7 +747,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\Gamma=-iR_{\vec e_z}$ | the chirality basis operator of the reference frame |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its basis operator is $\xi_{\mathrm{basis operator}}=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
 | $F$ | the algebra-valued field of the two-sided Dirac equation |
-| $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | the two chirality parts of the field element |
+| $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | the two chirality parts of the field element |
 | $\tilde P_{\Phi}=iP_t e_t+\vec p$ | the physical four-momentum |
 | $\langle\tilde P_{\Phi}\rangle_{\natural}$ | the quaternionic norm, the interval |
 | $h(k)$ | the chiral part of a symbol |

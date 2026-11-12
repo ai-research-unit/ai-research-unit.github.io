@@ -257,11 +257,11 @@ The two routes are distinguished by their fields, and the distinction is checkab
 
 The spin-half field completes the pattern, and its conformal weight is the other standard value. In four dimensions the massless Dirac equation is conformally invariant with weight $\mathcal{W}_{\mathrm{dim}} = 3/2$,
 $$
-\tilde{Ξ}_{\mathrm{sp},2}(\tilde{Q}) = \Omega(\tilde{Q})^{3/2}\,\tilde{Ξ}_{\mathrm{sp}}\bigl(\tilde{Q}_2\bigr) ,
+\tilde{Ξ}_{2}(\tilde{Q}) = \Omega(\tilde{Q})^{3/2}\,\tilde{Ξ}\bigl(\tilde{Q}_2\bigr) ,
 $$
 the exponent being the standard one for a spinor in four dimensions, fixed by the conformal covariance of the first-order operator: the standard identity is
 $$
-(\tilde\nabla_\Phi)^{\natural}\Bigl[\Omega^{\frac{d-1}{2}}\,\tilde{Ξ}_{\mathrm{sp}}\circ I\Bigr] = \Omega^{\frac{d+1}{2}}\,\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}\bigr)\circ I ,
+(\tilde\nabla_\Phi)^{\natural}\Bigl[\Omega^{\frac{d-1}{2}}\,\tilde{Ξ}\circ I\Bigr] = \Omega^{\frac{d+1}{2}}\,\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}\bigr)\circ I ,
 \qquad \frac{d-1}{2} = \frac32 ,\ \ \frac{d+1}{2} = \frac52 \ \ (d=4),
 $$
 which the references supply. The mass term of the framework — the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*, not the central term of the scalar — breaks the symmetry for exactly the reason the scalar mass does, and the breaking is again measured by the trace of the stress tensor. The companion *The Dirac Equation in Biquaternionic Form* fixes the equation and its mass term; what belongs here is the weight and the fact that, in the massless limit, the Dirac field joins the scalar and the Maxwell field in the same conformal multiplet of equations. The three weights — $1$ for the scalar, $3/2$ for the spinor, $2$ for the field strength — are the three canonical values of four-dimensional conformal field theory, and the massless limit of each theory restores its weight.

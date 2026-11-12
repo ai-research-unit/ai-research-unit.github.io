@@ -7,12 +7,12 @@
 **What is used.** The boxed pair of that article,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\,\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\,\tilde{Ξ}_{R},
 $$
 
-with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ one element of $\mathbb{B}$ and $k_m$ the mass wave number. The gradient, its conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ are those of *Operator and Calculus Conventions*, and the coordinates, the frame and the four-position are those of *Frame and Metric Conventions*. Nothing of the three is repeated.
+with $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ one element of $\mathbb{B}$ and $k_m$ the mass wave number. The gradient, its conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ are those of *Operator and Calculus Conventions*, and the coordinates, the frame and the four-position are those of *Frame and Metric Conventions*. Nothing of the three is repeated.
 
 **The frame, and what it costs.** One frame is declared for the article, because the value of a part is read by the frame's third direction. The plane waves use it, the spherical and cylindrical families use it, and no second choice is made anywhere. The cost is visible in one place and nowhere else: a solution of definite value is a solution in a frame, and the helicity reading of the massless case is the frame-free statement, because there the third direction is the momentum's.
 
@@ -27,45 +27,45 @@ with $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp
 Plane-wave solutions of the massless member written $R$ are
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
-= \tilde{Ξ}_{\mathrm{sp},0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)\;},
+\boxed{\;\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
+= \tilde{Ξ}_{0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)\;},
 $$
 
-where $\tilde{Ξ}_{\mathrm{sp},0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{\tilde{P}_{\Phi}}{\hbar}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{\mathrm{sp},0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,
+where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{\tilde{P}_{\Phi}}{\hbar}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = i\tilde{K}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp}},
+\tilde\nabla_\Phi\tilde{Ξ} = i\tilde{K}_{\Phi}\,\tilde{Ξ},
 $$
 
-so the equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$ becomes
+so the equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ becomes
 
 $$
-\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0,
+\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, and the basis operator acts on it with the two eigenvalues $+1$ and $-1$, one state each. Those two states are the two helicities in the frame whose third direction is the momentum's, one of each value, so the full massless field is the pair of this equation and its conjugate.
+i.e., the polarization biquaternion $\tilde{Ξ}_{0}$ is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, and the basis operator acts on it with the two eigenvalues $+1$ and $-1$, one state each. Those two states are the two helicities in the frame whose third direction is the momentum's, one of each value, so the full massless field is the pair of this equation and its conjugate.
 
-Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\hbar^{2}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.
+Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\hbar^{2}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.
 
 ### Massive Plane Waves
 
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(\tilde R_\Phi) = \tilde{Ξ}_{\mathrm{sp},0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta), \qquad \theta = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
+\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right) = \tilde{Ξ}_{0}\,\exp(i\theta), \qquad \theta = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t,
 $$
 
-does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{\mathrm{sp},0} = \tilde{Ξ}_{\mathrm{sp},0}^L + \tilde{Ξ}_{\mathrm{sp},0}^R$. Differentiating as in the massless case, $\tilde\nabla_\Phi$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{K}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
+does solve the pair, with one polarization biquaternion for each part, $\tilde{Ξ}_{0} = \tilde{Ξ}_{0}^L + \tilde{Ξ}_{0}^R$. Differentiating as in the massless case, $\tilde\nabla_\Phi$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{K}_{\Phi}$ and $(\tilde\nabla_\Phi)^{\natural}$ as left multiplication by $i\tilde{K}_{\Phi}^{\natural}$, so the chiral pair becomes the momentum-space system
 
 $$
-i\tilde{K}_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},0}^{R}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^L,
+i\tilde{K}_{\Phi}\,\tilde{Ξ}_{0}^{R}= k_m\,\tilde{Ξ}_{0}^L,
 \qquad
-i\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^{L}= k_m\,\tilde{Ξ}_{\mathrm{sp},0}^R .
+i\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{0}^{L}= k_m\,\tilde{Ξ}_{0}^R .
 $$
 
-Eliminating $\tilde{Ξ}_{\mathrm{sp},0}^L$ gives
+Eliminating $\tilde{Ξ}_{0}^L$ gives
 
-$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},0}^R = -k_m^{2}\,\tilde{Ξ}_{\mathrm{sp},0}^R ,
+$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}\,\tilde{Ξ}_{0}^R = -k_m^{2}\,\tilde{Ξ}_{0}^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
@@ -87,7 +87,7 @@ $$
 \quad\Longrightarrow\quad
 \tilde{\nabla}_\kappa\left((\tilde\nabla_\Phi)^{\natural}_\kappa u\right) = 0 ,
 $$
-and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}_{\mathrm{sp}}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{Ξ}_{\mathrm{sp},0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
+and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{Ξ}_{0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
 
 **Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(i(\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c))$, and the field is read off by differentiating it. In the coordinate $Q_t=i q'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
 $$
@@ -102,12 +102,12 @@ The two lines are one statement in two languages: the norm of the field vanishes
 **The completion is exhaustive, and the mass takes the place of the shift.** The construction above is not only a way to manufacture examples. In the massive chiral pair the second half is the completion of the first,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L}=1/k_m\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde{Ξ}_{L}=1/k_m\tilde\nabla_\Phi\tilde{Ξ}_{R} ,
 \qquad
-\tilde{Ξ}_{\mathrm{sp},R}=1/k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde{Ξ}_{R}=1/k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} ,
 $$
 
-so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box\tilde{Ξ}_{\mathrm{sp},R}=\tilde{Ξ}_{\mathrm{sp},R}\,k_m^{2}$ of *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $2\kappa\,\partial/\partial R_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of *The Massive Case* — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.
+so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box\tilde{Ξ}_{R}=\tilde{Ξ}_{R}\,k_m^{2}$ of *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $2\kappa\,\partial/\partial R_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of *The Massive Case* — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.
 
 **The potential is defined only up to a constrained shift.** The map $u\mapsto(\tilde\nabla_\Phi)^{\natural}_\kappa u$ is not injective. Any $u'$ with $(\tilde\nabla_\Phi)^{\natural}_\kappa u'=0$ leaves the field unchanged, and such $u'$ are supplied by the scalars: every $\zeta$ solving the shifted scalar equation gives one, $u'=\tilde{\nabla}_\kappa\zeta$, because $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{\nabla}_\kappa=\Box_\Phi+2\kappa\,\partial/\partial R_t+\kappa^2$. The potential is therefore fixed only up to
 
@@ -132,10 +132,10 @@ $$
 \tilde{\nabla}^2 = \frac{\partial^2}{\partial R_t^2} - \Delta + 2\,\frac{\partial}{\partial R_t}\,\vec\nabla ,
 $$
 
-a derived form, whose first-order cross term does not vanish, so $\tilde{\nabla}^2 \neq \Box$. It is the **conjugate** gradient that squares to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, so the completion operator is $(\tilde\nabla_\Phi)^{\natural}$: for every harmonic scalar function $\tilde{Ξ}_{\mathrm{sp}}$ with $\Box\tilde{Ξ}_{\mathrm{sp}} = 0$, the function $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ satisfies
+a derived form, whose first-order cross term does not vanish, so $\tilde{\nabla}^2 \neq \Box$. It is the **conjugate** gradient that squares to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, so the completion operator is $(\tilde\nabla_\Phi)^{\natural}$: for every harmonic scalar function $\tilde{Ξ}$ with $\Box\tilde{Ξ} = 0$, the function $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ satisfies
 
 $$
-\tilde\nabla_\Phi\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}\right) = \Box_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0
+\tilde\nabla_\Phi\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}\right) = \Box_\Phi\tilde{Ξ} = 0
 $$
 
 and is a solution of the massless Dirac equation. This is the biquaternion form of the completion of the scalar harmonic functions, and it is the reason the spherical solutions are indexed by the scalar spherical harmonics.
@@ -150,9 +150,9 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 
 ## Summary
 
-**Plane waves.** A plane wave $\tilde{Ξ}_{\mathrm{sp},0}\exp(i\,\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural}))$ turns the gradient into left multiplication by $i\tilde K_\Phi$, so the massless member becomes $\tilde K_\Phi\tilde{Ξ}_{\mathrm{sp},0}=0$. A nonzero polarization exists only for null $\tilde K_\Phi$, that is on the light cone $k_t^{\prime\,2}=k_\Phi^{2}$, and the kernel is then two-dimensional with one state of each value. The massive case becomes the momentum-space pair $i\tilde K_\Phi\tilde{Ξ}_{\mathrm{sp},0}^{R}=k_m\tilde{Ξ}_{\mathrm{sp},0}^{L}$, $i\tilde K_\Phi^{\natural}\tilde{Ξ}_{\mathrm{sp},0}^{L}=k_m\tilde{Ξ}_{\mathrm{sp},0}^{R}$, whose solvability is the mass shell $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$, that is $k_t^{\prime\,2}=\|\vec k_\Phi\|^{2}+k_m^{2}$. The two signs of $k_t^{\prime}$ are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
+**Plane waves.** A plane wave $\tilde{Ξ}_{0}\exp(i\,\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^{\natural}))$ turns the gradient into left multiplication by $i\tilde K_\Phi$, so the massless member becomes $\tilde K_\Phi\tilde{Ξ}_{0}=0$. A nonzero polarization exists only for null $\tilde K_\Phi$, that is on the light cone $k_t^{\prime\,2}=k_\Phi^{2}$, and the kernel is then two-dimensional with one state of each value. The massive case becomes the momentum-space pair $i\tilde K_\Phi\tilde{Ξ}_{0}^{R}=k_m\tilde{Ξ}_{0}^{L}$, $i\tilde K_\Phi^{\natural}\tilde{Ξ}_{0}^{L}=k_m\tilde{Ξ}_{0}^{R}$, whose solvability is the mass shell $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$, that is $k_t^{\prime\,2}=\|\vec k_\Phi\|^{2}+k_m^{2}$. The two signs of $k_t^{\prime}$ are the particle and the antiparticle, and with the two spin states they give the four solutions the field carries.
 
-**Completion.** The operator whose square is the d'Alembertian is the conjugate gradient, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so $\tilde{Ξ}_{\mathrm{sp}}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$ carries every harmonic scalar into a solution. The spherical and cylindrical families are the completed harmonics, and the constancy of the construction is why they are indexed by the scalar harmonics of the same geometry.
+**Completion.** The operator whose square is the d'Alembertian is the conjugate gradient, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ carries every harmonic scalar into a solution. The spherical and cylindrical families are the completed harmonics, and the constancy of the construction is why they are indexed by the scalar harmonics of the same geometry.
 
 **The field as a gradient.** With the shifted gradient $\tilde\nabla_\kappa=\tilde\nabla_\Phi+\kappa$ one has $\tilde\nabla_\kappa\tilde\nabla_\kappa^{\natural}=\Box+2\kappa\,\partial/\partial R_t+\kappa^{2}$, so a scalar solving the shifted equation produces the field $\tilde\nabla_\kappa^{\natural}u$. For a plane-wave potential the field is null exactly when the potential solves that equation, so the field is a zero divisor on the shifted cone; at $\kappa=0$ the cone is the light cone. In the massive pair the same shape holds with the mass in place of the shift, each half being the completion of the other, but the mass contributes a constant and leaves the cone where it is.
 
@@ -163,7 +163,7 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L,R}$ | The field and its two components, as in *The Dirac Equation in Biquaternionic Form* |
+| $\tilde{Ξ}$, $\tilde{Ξ}_{L,R}$ | The field and its two components, as in *The Dirac Equation in Biquaternionic Form* |
 | $\tilde K_\Phi=i k_t^{\prime}e_t+\vec k_\Phi=\tilde P_\Phi/\hbar$ | The wave biquaternion; $k_t^{\prime}=\omega/c$ |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | The four-position biquaternion |
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |

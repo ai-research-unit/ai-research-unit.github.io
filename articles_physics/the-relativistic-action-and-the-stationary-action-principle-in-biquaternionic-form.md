@@ -226,11 +226,11 @@ so that the real and imaginary parts of the single complex invariant carry the t
 
 ### The first-order actions
 
-The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian: the massless first-order Lagrangian is the Hermitian pairing of $\tilde{Ξ}_{\mathrm{sp}}$ with $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}$,
+The Dirac and massless Maxwell actions are first order, and their Lagrangians are built from the gradient rather than from the d'Alembertian: the massless first-order Lagrangian is the Hermitian pairing of $\tilde{Ξ}$ with $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$,
 $$
-\mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}_{\mathrm{sp}}^*\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp}}\bigr)\right] + \text{the conjugate term} ,
+\mathcal{L}_{\text{first order}} = \mathrm{Sc}\!\left[\tilde{Ξ}^*\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}\bigr)\right] + \text{the conjugate term} ,
 $$
-with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde\nabla_\Phi$, the second-order action inverts $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
+with the mass entering as the chirality-off-diagonal coupling of the companion *The Dirac Equation in Biquaternionic Form*. Varying gives the first-order equation $\tilde\nabla_\Phi\tilde{Ξ} = \ldots$, whose kernel is the biquaternion-valued Green's function of the operator article: the first-order action inverts $\tilde\nabla_\Phi$, the second-order action inverts $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and the two are related by one application of the conjugate gradient. The explicit Dirac Lagrangian, with its spinor pairing and its off-diagonal mass, is the subject of the companion *The Dirac Equation in Biquaternionic Form*; what belongs here is the structural statement that the first-order actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ and that their Euler–Lagrange operators are the first-order kernels.
 
 ## Symmetries of the Action
 

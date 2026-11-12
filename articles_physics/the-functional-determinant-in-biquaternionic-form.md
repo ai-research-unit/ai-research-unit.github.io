@@ -171,9 +171,9 @@ and the small-$r'_t$ expansion $G_{\mathrm{prop}}(r'_t)\sim(4\pi r'_t)^{-d/2}\su
 
 The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.
 
-**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, written as the two-by-two array of its two lines; the algebra-level determinant is an open point.
+**The Grassmann integral.** Integrating out a fermion gives a determinant rather than an inverse square root. The operator below is the module representative of the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, written as the two-by-two array of its two lines; the algebra-level determinant is an open point.
 $$
-\int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\natural}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;\exp\big(\,\tilde{Ξ}_{\mathrm{sp}}^{\natural}\mathcal{F}\tilde{Ξ}_{\mathrm{sp}}\big) = \det\mathcal{F},
+\int\mathcal{D}\tilde{Ξ}^{\natural}\,\mathcal{D}\tilde{Ξ}\;\exp\big(\,\tilde{Ξ}^{\natural}\mathcal{F}\tilde{Ξ}\big) = \det\mathcal{F},
 \qquad
 \mathcal{F} = \begin{pmatrix} -k_m & \mathcal{F}_R \ \mathcal{F}_L & -k_m \end{pmatrix},
 $$

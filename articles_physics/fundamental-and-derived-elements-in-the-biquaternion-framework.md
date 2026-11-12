@@ -288,13 +288,13 @@ $$
 
 which also shows that the construction is not merely formal. The domain condition $B\ne0$ and the uniqueness up to the correlated sign $(R,\Theta)\mapsto(-R,\Theta+\pi)$ are properties of the construction, hence derived.
 
-**The complex polar form.** For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\tilde{Ξ}_{\mathrm{sp}}=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\tilde{Ξ}_{\mathrm{sp}})^{-1}$, so that $\tilde Q_1=Q\exp(i\tilde{Ξ}_{\mathrm{sp}})$ with $i$ the central root. Again every ingredient is derived, and the reconstruction
+**The complex polar form.** For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\tilde{Ξ}=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\tilde{Ξ})^{-1}$, so that $\tilde Q_1=Q\exp(i\tilde{Ξ})$ with $i$ the central root. Again every ingredient is derived, and the reconstruction
 
 $$
-Q\exp(i\tilde{Ξ}_{\mathrm{sp}})=Q\cos\tilde{Ξ}_{\mathrm{sp}}+iQ\sin\tilde{Ξ}_{\mathrm{sp}}=Q_r+iQ_i=\tilde Q_1
+Q\exp(i\tilde{Ξ})=Q\cos\tilde{Ξ}+iQ\sin\tilde{Ξ}=Q_r+iQ_i=\tilde Q_1
 $$
 
-uses the commutativity of the functions of $\tilde{Ξ}_{\mathrm{sp}}$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.
+uses the commutativity of the functions of $\tilde{Ξ}$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.
 
 **No new posit.** The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar decompositions therefore leave the base unchanged.
 

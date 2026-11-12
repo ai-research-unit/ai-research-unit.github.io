@@ -5,7 +5,7 @@
 **The observation.** In the biquaternion algebra the massless Dirac equation of the member written $R$ and the source-free Maxwell equation are one equation,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0,
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=0,
 \qquad
 \tilde\nabla_\Phi\tilde F=0,
 $$
@@ -25,19 +25,19 @@ written for two different objects. The operator is the same element, it multipli
 The massless biquaternionic Dirac equation in the member written $R$ and the homogeneous biquaternion Maxwell equation have the same form:
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0 .
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 0 .
 $$
 
-The member written $L$ has the conjugate form, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0$, which is the same equation for the conjugate field. The difference is the object:
+The member written $L$ has the conjugate form, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0$, which is the same equation for the conjugate field. The difference is the object:
 
 - In the Maxwell case, the field is the field-strength biquaternion $\tilde{F}$, which lives in the vector part of the algebra and describes the electromagnetic field.
-- In the Dirac case, the field is the fermion field $\tilde{Ξ}_{\mathrm{sp},R}$, and it is a general element carrying the plus letter of the pair and describes the spin-$\frac{1}{2}$ particle.
+- In the Dirac case, the field is the fermion field $\tilde{Ξ}_{R}$, and it is a general element carrying the plus letter of the pair and describes the spin-$\frac{1}{2}$ particle.
 
 The structural identity is the algebraic content of the statement that both fields are read in the same algebra. The two fields differ in **what they are**: the photon field is a vector of the algebra (spin-1), and the electron field is a general element with a value (spin-$\frac{1}{2}$).
 
 ## The Mass Term
 
-The **mass term** is the term that distinguishes the massive Dirac equation from the massless case, and it does not appear in the Maxwell equation. In the biquaternion formulation it is the linear pairing of the pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ of §*The Massive Case* of *The Dirac Equation in Biquaternionic Form*: its coefficient $k_m$ is central and multiplies on the left, so it relates the two components and moves no value across. What is neither central nor a left multiplication is the two-sided mass term, $-i\,\overline{F}\,\vec e_z\,k_m$: it conjugates the coefficients and multiplies on the right, and those are what carry a letter across. The two forms are one mass term written in two variables, and the change of variable between them is the dictionary. In the Standard Model the mass term arises from the **Higgs mechanism**: the fermion couples to the Higgs field, and the coupling generates an effective mass term.
+The **mass term** is the term that distinguishes the massive Dirac equation from the massless case, and it does not appear in the Maxwell equation. In the biquaternion formulation it is the linear pairing of the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ of §*The Massive Case* of *The Dirac Equation in Biquaternionic Form*: its coefficient $k_m$ is central and multiplies on the left, so it relates the two components and moves no value across. What is neither central nor a left multiplication is the two-sided mass term, $-i\,\overline{F}\,\vec e_z\,k_m$: it conjugates the coefficients and multiplies on the right, and those are what carry a letter across. The two forms are one mass term written in two variables, and the change of variable between them is the dictionary. In the Standard Model the mass term arises from the **Higgs mechanism**: the fermion couples to the Higgs field, and the coupling generates an effective mass term.
 
 The biquaternion framework does not derive the Higgs mechanism; it simply provides a compact notation for the mass term once the mechanism is assumed. The conjugation $\flat$ is a separate object — the algebra's real structure, discussed in §*The Massive Case* of *The Dirac Equation in Biquaternionic Form* — and is not the mass term.
 
@@ -117,7 +117,7 @@ $$
 
 comparing it with the biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -4\pi\tilde{J}_{\Phi}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde{Q}_2$ acts back on the object that generates it, with the strength $k_m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde\nabla_\Phi$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
-The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\,\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\,\tilde{Ξ}_{\mathrm{sp},R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
+The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
 
 $$
 D = \tilde{Q}_1\tilde{\Pi} + \tilde{Q}_2^{*}\bar{\tilde{\Pi}},
@@ -143,7 +143,7 @@ These questions are open.
 
 ## Summary
 
-**The operator is shared; the objects are not.** The massless Dirac member and the source-free Maxwell equation are $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla_\Phi\tilde F=0$, one operator acting on the left, and the fields differ: $\tilde F$ lives in the vector part of the algebra and carries spin $1$, while $\tilde{Ξ}_{\mathrm{sp},R}$ is a general element carrying a value and spin $\frac12$. The identity of form is a statement about the multiplication and not about the objects.
+**The operator is shared; the objects are not.** The massless Dirac member and the source-free Maxwell equation are $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $\tilde\nabla_\Phi\tilde F=0$, one operator acting on the left, and the fields differ: $\tilde F$ lives in the vector part of the algebra and carries spin $1$, while $\tilde{Ξ}_{R}$ is a general element carrying a value and spin $\frac12$. The identity of form is a statement about the multiplication and not about the objects.
 
 **The mass is the term that has no Maxwell counterpart.** It is central and multiplies on the left, so it relates the two components of the Dirac pair and moves no value across; written with the direction on the right, $-i\overline{F}\,\vec e_z\,k_m$, it conjugates the coefficients and multiplies on the right, and those are the operations that carry a letter across. The two writings are one term in two variables, and the change of variable between them is the dictionary of the main article.
 
@@ -157,7 +157,7 @@ These questions are open.
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two components of the Dirac field, named by the letters of the pair |
+| $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two components of the Dirac field, named by the letters of the pair |
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |
 | $\tilde F$ | The field-strength biquaternion, the vector part of $\mathbb{B}$ |
 | $\tilde J_\Phi$ | The source biquaternion of the inhomogeneous Maxwell equation |

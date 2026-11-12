@@ -197,14 +197,14 @@ The horizon is a null surface, and in the polar chart of the boost it is the loc
 **The collapse.** A static observer near a non-extremal Killing horizon is, in the near-horizon Rindler chart, related to the horizon's generator by a boost whose rapidity diverges as the horizon is approached. Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$:
 
 $$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\tilde{Ξ}_{\mathrm{sp}}/2}\,\tilde\Pi_- .
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\,\tilde\Pi_+ + e^{-\tilde{Ξ}/2}\,\tilde\Pi_- .
 $$
 
 The component along $\tilde\Pi_-$ vanishes and the component along $\tilde\Pi_+$ diverges, so the rotor has no limit. The renormalised rotor does:
 
 $$
-e^{-\tilde{Ξ}_{\mathrm{sp}}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
-\qquad \tilde{Ξ}_{\mathrm{sp}}\to\infty,
+e^{-\tilde{Ξ}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarrow\tilde\Pi_+,
+\qquad \tilde{Ξ}\to\infty,
 $$
 
 a Hermitian idempotent on the zero-divisor cone. The horizon is therefore the boundary of the polar chart, not a value of the word: no finite Lorentz transformation is null, and the limit is a null element. The frame at the horizon is lightlike, and the transformation that would carry a static frame to it does not exist as a unit.
@@ -444,7 +444,7 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 - The sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the quaternion subspace $\mathbb{B}_{H}$, the complex scalars $\mathbb{B}_{C}$, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and the plain form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, read as the trace pairing $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
 - The intrinsic imaginary time $i r'_t$ of $\mathbb{B}_{\Phi}$, whose compactification period is the inverse temperature, and the KMS condition of the parent.
 - The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ of the horizon flow as a Hermitian element of $\mathbb{B}_{\Psi}$.
-- The boost word in the two-term form $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}_{\mathrm{sp}}/2}\tilde\Pi_-$, whose renormalised limit $\tilde{Ξ}_{\mathrm{sp}}\to\infty$ is the null idempotent $\tilde\Pi_+$.
+- The boost word in the two-term form $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}/2}\tilde\Pi_-$, whose renormalised limit $\tilde{Ξ}\to\infty$ is the null idempotent $\tilde\Pi_+$.
 - The charges $(M,J,Ϙ)$ as material-sector Noether quantities: energy–momentum is an $\mathbb{B}_{\Phi}$ four-vector, angular momentum the associated bivector, and charge the time component of the conserved current.
 
 **Interpretation.**
@@ -515,7 +515,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 | $S=k_B c^3A/(4\,\hbar\,G)=k_B A/(4\ell_P^2)$ | Bekenstein–Hawking entropy |
 | $\ell_P^2=\frac{\hbar\,G}{c^{3}}$ | Planck area |
 | $\beta=\frac{\hbar}{k_{B}\,T}=2\pi c/\kappa$ | Inverse temperature, Euclidean period |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}_{\mathrm{sp}}/2}\tilde\Pi_-$ | Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u_\zeta)$, $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=e^{\theta_{\mathrm{rpd}}/2}\tilde\Pi_+ + e^{-\tilde{Ξ}/2}\tilde\Pi_-$ | Idempotents of the boost axis and the boost rotor; the horizon limit of the renormalised rotor is $\tilde\Pi_+$ |
 | $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+Ξ\,dϘ$ | First law (units $c=\hbar=k_B=1$) |
 | $M=2TS+2\Omega J+Ξ Ϙ$ | Smarr relation |
 | $\Lambda$, $P=-\Lambda/(8\pi G)$, $V$ | Cosmological constant, pressure, thermodynamic volume |

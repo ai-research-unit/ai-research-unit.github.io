@@ -13,12 +13,12 @@ Three boundaries are respected. The Klein–Gordon **path integral** and the sca
 **The dynamics is the chiral pair.**
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}, \qquad
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}, \qquad
 k_m=\dfrac{mc}{\hbar},
 $$
 
-with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each letter of the pair, and the mass is the central coefficient that relates them; it takes no part into the other, since a coefficient multiplying on the left keeps the value.
+with massless limit $\tilde\nabla_\Phi\tilde{Ξ} = 0$. Both lines act from the left, the conjugation $\natural$ separates them, and no glyph names a side (*Operator and Calculus Conventions*, §*The Two Sides and the Renaming Theorem*). Every coordinate form of the pair is the standard Dirac equation and is not a second dynamics. The field is one element of $\mathbb{B}$ with two parts, one for each letter of the pair, and the mass is the central coefficient that relates them; it takes no part into the other, since a coefficient multiplying on the left keeps the value.
 
 **Two different equations carry the name of Dirac, and this article uses one of them.** The first is the one-sided pair displayed above: both gradients act by left multiplication and keep the value, and the mass is the central coefficient $k_m$ that relates the two components; it is off-diagonal in the pair, since each line joins a component of one letter to a component of the other, and it moves no value across, since a central coefficient multiplying on the left keeps it. The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$ in which the derivative acts from the left and the mass by right multiplication through the fixed direction $\vec e_z$. The two are the same field read through the dictionary of that article, and they are not the same operator; the difference is exactly the difference between a one-sided and a two-sided action. Every statement below is about the one-sided pair, and the path integral is built for it.
 
@@ -28,7 +28,7 @@ The worldline parameter is $\tau$ and the proper time $T$. The material position
 
 The object the path integral must compute is the Feynman propagator of the pair. Its two components are the amplitudes for the two letters of the pair, and each component is an element of the algebra: no array enters, and the pair is what the algebra's own product acts on.
 
-**The two symbols.** A plane wave of the pair is $\tilde{Ξ}_{\mathrm{sp}}(x) = \tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp(-ip\cdot x/\hbar)=\tilde{Ξ}_{\mathrm{sp},\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
+**The two symbols.** A plane wave of the pair is $\tilde{Ξ}(x) = \tilde{Ξ}_{\mathrm{amp}}\exp(-ip\cdot x/\hbar)=\tilde{Ξ}_{\mathrm{amp}}\exp\!\big(i\,\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})\big)$, with $p\cdot x = p_0x_0 - \vec p\cdot\vec r$, $p_0 = E/c$ and $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$; the two exponents are one number, since $p\cdot x/\hbar=-\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})$. The momentum element is $\tilde{P}_{\Phi}$, and its norm is the mass-shell scalar,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -p^2,
@@ -55,9 +55,9 @@ The sign bookkeeping is the whole of that line. The two factors of $i$ multiply 
 **The pair on a plane wave.** Substituting the symbols into the two lines gives
 
 $$
-i\tilde K_{\Phi}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L},
+i\tilde K_{\Phi}\,\tilde{Ξ}_{\mathrm{amp},R} = k_m\tilde{Ξ}_{\mathrm{amp},L},
 \qquad
-i\tilde K_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{sp},\mathrm{amp},R} ,
+i\tilde K_{\Phi}^{\natural}\,\tilde{Ξ}_{\mathrm{amp},L} = k_m\tilde{Ξ}_{\mathrm{amp},R} ,
 $$
 
 and eliminating one part returns the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, that is $p^2=m^{2}c^{2}$, since $\tilde K_{\Phi}^{\natural}\tilde K_{\Phi} = \langle\tilde K_{\Phi}\rangle_{\natural}$.
@@ -185,12 +185,12 @@ The same proper-time integral is the bridge to the worldline of the next section
 
 ## The Spinning Worldline and the Spin Factor
 
-The worldline that generates the Dirac propagator itself, rather than the Klein–Gordon kernel it acts on, carries an additional **odd** (Grassmann) degree of freedom $\tilde{Ξ}_{\mathrm{sp},\mu}(\tau)$ at each point. The standard supersymmetric worldline action is
+The worldline that generates the Dirac propagator itself, rather than the Klein–Gordon kernel it acts on, carries an additional **odd** (Grassmann) degree of freedom $\tilde{Ξ}_{\mu}(\tau)$ at each point. The standard supersymmetric worldline action is
 
 $$
-S[x,\tilde{Ξ}_{\mathrm{sp}}] = \int_0^T d\tau\left[
+S[x,\tilde{Ξ}] = \int_0^T d\tau\left[
 \frac{1}{4}\sum_\mu\frac{dR_\mu}{d\tau}\frac{dR_\mu}{d\tau}
-+ \frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}
++ \frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}
 - k_m^{2}
 \right],
 $$
@@ -200,7 +200,7 @@ with both quadratic terms read on the same four slots and carrying the same sign
 **The odd pair carries the anticommutation of the worldline.** The odd variables are fixed by the symmetric pairing of the worldline action,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\tfrac12 \varepsilon_\mu\delta_{\mu\nu}\,e_t ,
+\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\tfrac12 \varepsilon_\mu\delta_{\mu\nu}\,e_t ,
 $$
 
 with the unit $e_t$ of the algebra in place of the identity of the older display, and this is the whole of their definition: the right-hand side carries the weight and the unit and nothing else. The central $i$ sits in the kinetic term of the worldline action and not in this relation, so the odd sector carries the signs of the bosonic sector, the time slot negative and the three spatial slots positive, written as the negative of the plain weight.
@@ -216,11 +216,11 @@ $$
 with the spin factor
 
 $$
-Ξ[x] = \int_{\text{b.c.}}\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\;
-\exp\left(-\frac{1}{2}\int_0^T d\tau\;\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}\right).
+Ξ[x] = \int_{\text{b.c.}}\mathcal{D}\tilde{Ξ}\;
+\exp\left(-\frac{1}{2}\int_0^T d\tau\;\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right).
 $$
 
-The exponent of $Ξ$ carries no $i$, and the reason is the product of two of them: the action contributes $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$, the weight is the exponential of $i$ times the action, and $i\cdot i = -1$. Written with the two $i$'s kept apart, the spin factor is $\exp\left(i\int_0^T d\tau\,\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}\right)$; multiplied out, it is $\exp\left(-\frac{1}{2}\int_0^T d\tau\,\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}\right)$, which is real. It is bilinear in the odd variables, so its expansion is a sum of products of pairs, and a pair corresponds to an element of the algebra, a product of two units being a unit up to sign: the weight the odd integral produces is an element of $\mathbb{B}$.
+The exponent of $Ξ$ carries no $i$, and the reason is the product of two of them: the action contributes $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$, the weight is the exponential of $i$ times the action, and $i\cdot i = -1$. Written with the two $i$'s kept apart, the spin factor is $\exp\left(i\int_0^T d\tau\,\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$; multiplied out, it is $\exp\left(-\frac{1}{2}\int_0^T d\tau\,\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}\right)$, which is real. It is bilinear in the odd variables, so its expansion is a sum of products of pairs, and a pair corresponds to an element of the algebra, a product of two units being a unit up to sign: the weight the odd integral produces is an element of $\mathbb{B}$.
 
 The complete worldline path integral, with the correct measure, reproduces the propagator $\mathcal S$; this is the Berezin–Marinov / Brink–Di Vecchia–Howe construction, and it is standard. The same construction in a background electromagnetic field replaces the free kinetic term by the minimally coupled one and produces the spin factor quoted in the literature, with the sign conventions of the cited works; the trace of the same object is the closed-worldline weight and belongs to the next section.
 
@@ -287,7 +287,7 @@ The reason is the one on which this whole article turns. In 1+1 dimensions the f
 
 The continuum limit is the two-part Dirac propagator in 1+1 dimensions, whose small-$\epsilon$ expansion satisfies the two-dimensional Dirac equation with the corner weight as its mass term; the standard derivations of the checkerboard (see the Further Reading) give the explicit form. The two directions are the two parts, and the mass is the corner that exchanges them.
 
-The biquaternion interpretation is then immediate, and it needs no second algebra. In 1+1 dimensions the two retained units are $e_t$ and $\vec e_x$, and their products close on themselves; the two components of the pair are the two directions, and each corner is one application of the **off-diagonal mass** of the pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$. The checkerboard is the discrete, real-time picture of the mass pair: the free propagation is diagonal in the value — each part propagates on its own — and the mass is the reversal that connects them, one application of the second line of the pair per corner. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space propagator of the pair.
+The biquaternion interpretation is then immediate, and it needs no second algebra. In 1+1 dimensions the two retained units are $e_t$ and $\vec e_x$, and their products close on themselves; the two components of the pair are the two directions, and each corner is one application of the **off-diagonal mass** of the pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$. The checkerboard is the discrete, real-time picture of the mass pair: the free propagation is diagonal in the value — each part propagates on its own — and the mass is the reversal that connects them, one application of the second line of the pair per corner. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space propagator of the pair.
 
 ### The Recurrence and Its Limit
 
@@ -311,7 +311,7 @@ $$
 \frac{\partial A_-}{\partial r'_t} = +\frac{\partial A_-}{\partial r_x} +k_m\,i\,A_+,
 $$
 
-the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon\,k_m$ becomes the mass term $i\,k_m$, the step $\epsilon$ dividing it out and leaving an inverse length that matches the derivative on the left, and the two directions become the two components of the pair. Squaring either line with the other substituted gives $\partial^2 A_+/\partial {r'_t}^2-\partial^2 A_+/\partial r_x^2 = -A_+\,k_m^{2}$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\,k_m$ into the real $-k_m$; that is why the biquaternion pair can carry the real $k_m$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$: the checkerboard is that pair before the continuum limit has identified the directions with the two components of the pair. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ in the continuum.
+the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon\,k_m$ becomes the mass term $i\,k_m$, the step $\epsilon$ dividing it out and leaving an inverse length that matches the derivative on the left, and the two directions become the two components of the pair. Squaring either line with the other substituted gives $\partial^2 A_+/\partial {r'_t}^2-\partial^2 A_+/\partial r_x^2 = -A_+\,k_m^{2}$: the cross terms cancel and the two corner factors meet as $i\cdot i=-1$, which is why the mass enters the squared equation with a minus sign. The $i$ of the corner is a relative phase of the two parts, since the rotation $A_+\mapsto e^{i\pi/4}A_+$, $A_-\mapsto e^{-i\pi/4}A_-$ turns the mass term $i\,k_m$ into the real $-k_m$; that is why the biquaternion pair can carry the real $k_m$, and why the corner weight is a convention rather than a sign. This is the Klein–Gordon equation of the series' d'Alembertian, so the discrete model carries the Dirac square as well as the Dirac equation. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$: the checkerboard is that pair before the continuum limit has identified the directions with the two components of the pair. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ in the continuum.
 
 ## Composition, the Propagator Equation, and the Scalar Reduction
 
@@ -361,11 +361,11 @@ The algebraic interpretation is a statement about the two sectors. The einbein i
 
 The two constructions of the Dirac path integral can be expressed in one biquaternionic statement, and it is worth writing it explicitly because it is the point at which this article meets the rest of the subcategory.
 
-A worldline carries two structures at once: a **material** trajectory $x_\mu(\tau)$, whose tangent is a four-velocity in $\mathbb{B}_{\Phi}$, and a **spin** transport, whose generator is the odd variable $\tilde{Ξ}_{\mathrm{sp},\mu}$. The material trajectory is the object the scalar path integral sums over; the spin transport is the object the spin factor sums over. Squaring the first-order operator pairs them: the square of the Dirac operator is central and acts only on the material trajectory, while the spin is carried along by the element that multiplies the field. The chiral pair
+A worldline carries two structures at once: a **material** trajectory $x_\mu(\tau)$, whose tangent is a four-velocity in $\mathbb{B}_{\Phi}$, and a **spin** transport, whose generator is the odd variable $\tilde{Ξ}_{\mu}$. The material trajectory is the object the scalar path integral sums over; the spin transport is the object the spin factor sums over. Squaring the first-order operator pairs them: the square of the Dirac operator is central and acts only on the material trajectory, while the spin is carried along by the element that multiplies the field. The chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}
 $$
 
 is the operator statement of the same split: the two gradients act on the two parts, the material trajectory is common to both, and the mass is the off-diagonal corner that turns one into the other. In the worldline language the two parts are the two ways the transport can hand the field at the boundary to the mass term, and the mass term is the reversal; in the checkerboard the same reversal is the lattice corner. The three descriptions — the operator pair, the discretised checkerboard, and the continuous spinning worldline — are the same off-diagonal mass structure in three registers.
@@ -376,7 +376,7 @@ There is a further consistency check that ties this article to *Klein–Gordon f
 
 The Feynman propagator, the proper-time representation, the worldline supersymmetric action, the spin factor and the checkerboard limit are all standard results, transcribed here and cited. The biquaternion interpretation contributes three placements:
 
-- The **spin variable is the odd variable** $\tilde{Ξ}_{\mathrm{sp},\mu}$, whose pairs are elements of $\mathbb{B}$: the even products of odd variables span an algebra of real dimension eight, and that algebra is the biquaternion algebra. The biquaternion algebra is not an auxiliary description of spin; it is the algebra the pairs generate.
+- The **spin variable is the odd variable** $\tilde{Ξ}_{\mu}$, whose pairs are elements of $\mathbb{B}$: the even products of odd variables span an algebra of real dimension eight, and that algebra is the biquaternion algebra. The biquaternion algebra is not an auxiliary description of spin; it is the algebra the pairs generate.
 - The **Dirac propagator is the Dirac operator applied to the scalar propagator**, and the reason is the Dirac square: the first-order operator's square is the central Klein–Gordon operator, whose path integral is the spin-0 object of the companion subcategory. The first-order path integral is thus a "square root" of the scalar one, in the same sense as the Dirac equation itself.
 - The **checkerboard is the chiral pair on a lattice**. Its two directions are the two components of the pair, and its corners are the mass insertions that join them; the continuum limit is the biquaternion mass pair.
 
@@ -386,7 +386,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$. The five are the frame basis operators under the gammas' own letters, so that the dictionary between the two writings is the identity on the operators:
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\tilde{Ξ}\mapsto a\tilde{Ξ} b$. The five are the frame basis operators under the gammas' own letters, so that the dictionary between the two writings is the identity on the operators:
 
 $$
 \gamma_0 = iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad
@@ -459,7 +459,7 @@ so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mathrm{sp},\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mathrm{sp},\mu}\frac{d\tilde{Ξ}_{\mathrm{sp},\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu} + \tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}_{\mathrm{sp}}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $Ξ[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
 In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is a unit up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (i\,mc-\tilde{P}_{\Phi})/(p^2-m^{2}c^{2})$ and $\mathcal S_R = (i\,mc-\tilde{P}_{\Phi}^{\natural})/(p^2-m^{2}c^{2})$, and the identity that the two lines compose to $\Box-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two components of the pair, the corners carry the weight $i\epsilon\,k_m$ and are the mass insertions that join them, and the continuum limit is the two-dimensional propagator.
 
@@ -480,21 +480,21 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $p^2 = p_0^2-p_1^2-p_2^2-p_3^2$ | Mass-shell scalar of the momentum, with $p_0 = E/c$ |
 | $i\tilde{P}_{\Phi}$, $i\tilde{P}_{\Phi}^{\natural}$ | Symbols of $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ on a plane wave |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
-| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field and its two parts, one per letter of the pair |
+| $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two parts, one per letter of the pair |
 | $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, the two lines with a source |
 | $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-k_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |
 | $\mathcal S_L = \left(\tilde\nabla_\Phi+k_m\right)\mathcal{G}_F$, $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+k_m\right)\mathcal{G}_F$ | Dirac propagator as the scalar kernel acted on |
 | $T$ | Proper time (Schwinger parameter) |
 | $x(\tau)$, $dR_\mu/d\tau$ | Worldline and its tangent, summed over the four slots |
 | $S_0[x]$ | Scalar worldline action |
-| $\tilde{Ξ}_{\mathrm{sp},\mu}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
-| $\tilde{Ξ}_{\mathrm{sp},\mu}\tilde{Ξ}_{\mathrm{sp},\nu}+\tilde{Ξ}_{\mathrm{sp},\nu}\tilde{Ξ}_{\mathrm{sp},\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
+| $\tilde{Ξ}_{\mu}(\tau)$ | Odd (Grassmann) worldline variable; a single one is not an element of the algebra |
+| $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu}+\tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\tfrac12\varepsilon_\mu\delta_{\mu\nu}e_t$ | The pair of odd variables, an element of the algebra |
 | $Ξ[x]$ | Spin factor, the algebra-valued path-ordered weight |
 | $\tilde\Sigma_{\Psi,0\eta}=i\vec e_\eta$, $\tilde\Sigma_{\Psi,jk}=\vec e_j\vec e_\eta$ | The six Lorentz generators, boosts in $\mathbb{B}_{\Psi}$ and rotations in the real quaternion sector |
 | $G_{\mathrm{ctp},++}$, $G_{\mathrm{ctp},+-}$, $G_{\mathrm{ctp},-+}$, $G_{\mathrm{ctp},--}$ | Checkerboard propagator amplitudes |
 | $i\epsilon\,k_m$ per corner | Checkerboard corner weight |
 | $A_+$, $A_-$ | Checkerboard amplitudes by direction of motion |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The chiral mass pair, the one-sided Dirac dynamics |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | The chiral mass pair, the one-sided Dirac dynamics |
 
 ## Further Reading
 

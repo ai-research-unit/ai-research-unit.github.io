@@ -23,15 +23,15 @@ This is a deliberately modest accounting, and it is the honest one. The sharpest
 The proton enters the framework the way any massive spin-$\tfrac12$ fermion does: as an element of the algebra,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B},
+\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B},
 $$
 
-whose two parts are the two eigenvalues of one basis operator, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The basis operator is a choice and the values are not: another traceless $u$ with $u^2=-e_t$ gives another basis operator with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality basis operator is the fifth basis operator of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
+whose two parts are the two eigenvalues of one basis operator, $\tilde{Ξ}_{L}$ the value L and $\tilde{Ξ}_{R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The basis operator is a choice and the values are not: another traceless $u$ with $u^2=-e_t$ gives another basis operator with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality basis operator is the fifth basis operator of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
 
 $$
-\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_{m_p}\,\tilde{Ξ}_{L},
 \qquad
-(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\,\tilde{Ξ}_{R} .
 $$
 
 In this section we record what is structural about placing it there and what is not.
@@ -45,27 +45,27 @@ The article writes the Dirac equation once, as the pair of two first-order equat
 **The reading on one element** writes the same pair on the same element. The gradient $(\tilde{\nabla}_\Phi)^{\natural}$ carries the L value to the R value and $\tilde{\nabla}_\Phi$ carries the R value to the L value,
 
 $$
-\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_{m_p}\,\tilde{Ξ}_{L},
 \qquad
-(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\,\tilde{Ξ}_{R},
 $$
 
-and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{\mathrm{sp},R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
+and composing the two lines gives $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{L}=0$ and $(\Box_\Phi-k_{m_p}^{2})\tilde{Ξ}_{R}=0$. Here $1/k_{m_p}=\hbar/(m_pc)$ is the mass length.
 
 The two lines act on the element and contain no matrix generator. What the reading on one element adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of carrier, not by a change of physics.
 
 | | On a pair of elements | On one element |
 |---|---|---|
-| Equation | $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ | the same two lines |
-| Field | $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})\in\mathbb{B}\oplus\mathbb{B}$, two elements | $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$, two values |
+| Equation | $\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\tilde{Ξ}_{R}$ | the same two lines |
+| Field | $(\tilde{Ξ}_{L},\tilde{Ξ}_{R})\in\mathbb{B}\oplus\mathbb{B}$, two elements | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B}$, two values |
 | Mass | the off-diagonal coupling of the two entries | the same coefficient, off-diagonal in the two values |
 | Operator | left multiplication by the gradient and its quaternion conjugate, one on each entry | the same two, $\Box_\Phi$ on each value after the two lines are composed |
 | Chirality | the entry | the value carried by each part |
 | Use | the definition, the mass term, the mass shell | the charge, the charge value, the bilinears |
 
-**The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}_{\mathrm{sp}}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V_{\Phi}\mapsto\tilde U\tilde V_{\Phi}\tilde U^{-1}$, returns $+\tilde V_{\Phi}$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
+**The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde{Ξ}$, while the conjugation action of the same element on the four-vectors of $\mathbb{B}_{\Phi}$, $\tilde V_{\Phi}\mapsto\tilde U\tilde V_{\Phi}\tilde U^{-1}$, returns $+\tilde V_{\Phi}$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
 
-**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the reciprocal length $k_{m_p}$ in the linear term that relates the two parts, $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ with $\tilde{Ξ}_{\mathrm{sp},\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
+**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the reciprocal length $k_{m_p}$ in the linear term that relates the two parts, $\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\tilde{Ξ}_{R}$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{Ξ}=\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$ with $\tilde{Ξ}_{\pm}\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi}$ one has $\tilde{Ξ}^{\flat}=-\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
 The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
 
@@ -84,14 +84,14 @@ Charge enters only when the field is coupled to a four-potential, through minima
 The charge of the framework multiplies each value of the field by its own number,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L}\mapsto ϙ_L\tilde{Ξ}_{\mathrm{sp},L},
+\tilde{Ξ}_{L}\mapsto ϙ_L\tilde{Ξ}_{L},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},R}\mapsto ϙ_R\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{Ξ}_{R}\mapsto ϙ_R\tilde{Ξ}_{R},
 $$
 
 with independent couplings $ϙ_L,ϙ_R\in\mathbb{R}$ that the algebra does not fix (*Chiral Fermions in the Biquaternion Framework*).
 
-**The two rules are one right multiplication.** The action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}Ϙ$, by the element
+**The two rules are one right multiplication.** The action is $\tilde{Ξ}\mapsto\tilde{Ξ}Ϙ$, by the element
 
 $$
 Ϙ=\tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z\;\in\;\mathbb{B}_{\Psi} ,
@@ -100,12 +100,12 @@ $$
 a derived form: $Ϙ=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
 
 $$
-D_\mu\tilde{Ξ}_{\mathrm{sp}}=\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}_{\mathrm{sp}}Ϙ .
+D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}Ϙ .
 $$
 
 The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{B}_{C}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
 
-Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(\frac{iϙ_{L}\,\lambda}{\hbar})$ and the R value the phase $\exp(\frac{iϙ_{R}\,\lambda}{\hbar})$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
+Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality basis operator $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(\frac{iϙ_{L}\,\lambda}{\hbar})$ and the R value the phase $\exp(\frac{iϙ_{R}\,\lambda}{\hbar})$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
 
 $$
 \boxed{\;ϙ_L=ϙ_R=ϙ
@@ -176,7 +176,7 @@ $$
 one takes the two superpositions of the companion articles. With $\sigma=\tfrac12(e_t+i\vec{\nu})$ the state along a unit direction $\vec{\nu}$, so that $\sigma^2=\sigma$ because $(i\vec{\nu})^2=i^2\vec{\nu}^2=(-e_t)(-e_t)=e_t$, with $\bar{\sigma}=e_t-\sigma=\tfrac12(e_t-i\vec{\nu})$ its complementary state, of zero product $\sigma\bar{\sigma}=0$, and with $\vec{\tau}$ any unit direction orthogonal to $\vec{\nu}$:
 
 $$
-\tilde{Ξ}_{\mathrm{sp},p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{\mathrm{sp},n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau}.
+\tilde{Ξ}_{p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau}.
 $$
 
 These are Gürsey's proton and neutron. Both descend from the one system with the one mass parameter $m$, so they have **equal mass by construction**; the relative sign and the factor $i\vec{\tau}$ place them in orthogonal isospin directions. The transformations that preserve both superpositions form a two-parameter group, found by Nishijima in a different context,
@@ -188,12 +188,12 @@ $$
 which acts by right multiplication, multiplies each state by its own phase and annihilates the other,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},p}\,G_N=e^{i\alpha}\tilde{Q}_1\sigma+e^{i\beta}\tilde{Q}_2^{*}\bar{\sigma}.
+\tilde{Ξ}_{p}\,G_N=e^{i\alpha}\tilde{Q}_1\sigma+e^{i\beta}\tilde{Q}_2^{*}\bar{\sigma}.
 $$
 
 The two superpositions therefore carry two independent abelian phases, and with them two independent charges, while the single mass parameter $m$ gives them equal mass. The source's interpretation is that Lanczos's "doubling" of the spin-$\tfrac12$ field was isospin in 1929, three decades early.
 
-**The price of that reading.** The two phases are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{\mathrm{sp},p}$ and $\tilde{Ξ}_{\mathrm{sp},n}$. The first Lanczos equation then becomes $\tilde{\nabla}_\Phi\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. The doubled system with $m\neq0$ is therefore invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass stand together only as a kinematic statement, which is the same phenomenon the charge section records: a mass term, being a link between the two values, breaks the relative phase.
+**The price of that reading.** The two phases are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{p}$ and $\tilde{Ξ}_{n}$. The first Lanczos equation then becomes $\tilde{\nabla}_\Phi\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. The doubled system with $m\neq0$ is therefore invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass stand together only as a kinematic statement, which is the same phenomenon the charge section records: a mass term, being a link between the two values, breaks the relative phase.
 
 The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde Q_1$, $\tilde Q_2$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
 
@@ -227,9 +227,9 @@ The table sorts the proton's properties by the status they have in the framework
 |---|---|---|
 | Spin-$\tfrac12$ content | Represented (forced once modelled) | the algebra's single simple carrier; the left multiplications act on each value with weights $\pm\tfrac12$ |
 | Spin states, observables, Born rule | Derived | the states of $\mathbb{B}_{\Psi}$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
-| Mass term is off-diagonal in the two values; real structure acts $+1/-1$ on $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ | Derived | the linear pair of the two values; $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},+}+\tilde{Ξ}_{\mathrm{sp},-}$ |
+| Mass term is off-diagonal in the two values; real structure acts $+1/-1$ on $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ | Derived | the linear pair of the two values; $\tilde{Ξ}^{\flat}=-\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$ |
 | Vector-like charge element $Ϙ=ϙ\,e_t$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$, from the covariance of the mass term |
-| Conserved current, an element of $\mathbb{B}_{\Phi}$ | Quoted (framework) | the sesquilinear commutator of *Product and Form Conventions*, §*The Twelve Products and Their Names*: $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ |
+| Conserved current, an element of $\mathbb{B}_{\Phi}$ | Quoted (framework) | the sesquilinear commutator of *Product and Form Conventions*, §*The Twelve Products and Their Names*: $\tilde J_{\Phi}=i[\tilde{Ξ}^*(\tilde\nabla_\Phi\tilde{Ξ})-(\tilde\nabla_\Phi\tilde{Ξ}^*)\tilde{Ξ}]$ |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{B}_{C}$ central; the $\mathrm{SU}(2)$ generators have imaginary or half-integer values |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $\lvert ϙ_p\rvert=\lvert ϙ_e\rvert$, opposite signs | Outside | no framework structure; independent parameters |
@@ -263,7 +263,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same basis operators their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Each gamma is a single basis operator $L_aR_b$, the operator $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$. The frame is
+Each gamma is a single basis operator $L_aR_b$, the operator $\tilde{Ξ}\mapsto a\tilde{Ξ} b$. The frame is
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -321,7 +321,7 @@ With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_p}\tilde{Ξ}_{\mathrm{sp},R}$ and as the same pair on one element, where composing the two lines returns $\Box_\Phi$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_{m_p}\tilde{Ξ}_{L}$, $(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_p}\tilde{Ξ}_{R}$ and as the same pair on one element, where composing the two lines returns $\Box_\Phi$ on each value. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
 
 $$
 \boxed{\;Ϙ=ϙ_p\,e_t\;},
@@ -346,18 +346,18 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian (electric-charge) factor |
 | $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_{\eta=x,y,z}\vec e_\eta\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator), acting on the left |
 | $\Box_\Phi = \tilde{\nabla}_\Phi(\tilde{\nabla}_\Phi)^{\natural}$ | The d'Alembertian in the material reading |
-| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |
-| $\tilde{Ξ}_{\mathrm{sp}}^{\flat}=-\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
+| $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{L}$ the value L, $\tilde{Ξ}_{R}$ the value R, at the axis $\vec e_z$ |
+| $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
 | $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by it |
-| $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial\tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ}_{\mathrm{sp}}Ϙ$ | Covariant derivative of the chiral charge |
+| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ}Ϙ$ | Covariant derivative of the chiral charge |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
 | $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The two gradients of the pair; $(\tilde\nabla_\Phi)^{\natural}$ carries the L value to the R and $\tilde\nabla_\Phi$ the R to the L, and each line composed with the other returns $\Box_\Phi$ |
 | $\Gamma=-iR_{\vec e_z}$ | The chirality basis operator, the basis operator that reads the two values; the legacy section writes it $\gamma_5$ |
-| $\tilde J_{\Phi}=i[\tilde{Ξ}_{\mathrm{sp}}^*(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}})-(\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}^*)\tilde{Ξ}_{\mathrm{sp}}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
+| $\tilde J_{\Phi}=i[\tilde{Ξ}^*(\tilde\nabla_\Phi\tilde{Ξ})-(\tilde\nabla_\Phi\tilde{Ξ}^*)\tilde{Ξ}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
 | $iT_a=\tfrac12 i e_a\in\mathbb{B}_{\Psi}$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited informational trace reading |

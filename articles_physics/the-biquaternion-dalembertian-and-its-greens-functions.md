@@ -97,9 +97,9 @@ The symbol was checked by finite differences on such a wave, with the numerical 
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -i\partial/\partial r'_t$, the operator above is $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$
-\left(\Box - k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp}} = 0 ,
+\left(\Box - k_m^{2}\right)\tilde{Ξ} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companion article *Exercise: Chirality and the Weyl Spinors* carries $\hbar$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.
+whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companion article *Exercise: Chirality and the Weyl Spinors* carries $\hbar$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \nabla^2$; its mass equation is $(\Box-k_m^{2})\tilde{Ξ} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.
 
 ### Self-adjointness
 
@@ -362,11 +362,11 @@ The cross terms cancel for the same reason as before — $[\,\partial/\partial\t
 
 **The weighted kernel, and a sign to pair correctly.** The fundamental solution of the scalar equation to which the square reduces is carried by the light cone with an exponential weight,
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\,\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| ,
+\tilde{Ξ} = \frac{1}{4\pi r}\,\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad r = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| ,
 $$
 as the paper prints it; on a plane wave the symbol becomes a shifted four-momentum and the transform of the kernel is its reciprocal. The exponent's **sign must match the sign of the $(F,\nabla)$ coefficient**, and this is the one place where the paper is not self-consistent. Substituting $\exp(\lambda(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - f\tau)\xi$ into the operator leaves the residual $\bigl(\mu - 2\lambda\bigr)(F,\nabla\xi) + \bigl(1 + \lambda^2 - \mu\lambda\bigr)(F,F)\xi$; it vanishes for $\mu = 2\lambda$ with $\lambda = \pm i$ and for no other pairing. The coefficient and the exponent therefore carry the **same** sign: the coefficient $\mu = +2i(F,\nabla)$ is paired with
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\,\exp(+i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad
+\tilde{Ξ} = \frac{1}{4\pi r}\,\exp(+i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\,\delta(\tau - r) , \qquad
 \text{symbol} \quad (\zeta - F)^2 - (\omega + if)^2 ,
 $$
 and $\mu = -2i(F,\nabla)$ with the mirror in which every sign of $F$ is reversed. The printed $\exp(-i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $(\zeta + F)^2 - (\omega + if)^2$ is that mirror; what the paper does not do is print it with the coefficient it uses. Its scalar equation, its KGFS equation and its theorem all carry the coefficient $+2i(F,\nabla)$ — its own derivation of the composition gives $+2i$ where its statement of the same lemma gives $-2i$ — while its kernel, its Fourier transform and the integral representations of its last three sections carry the opposite exponent. The two groups are therefore consistent only after $F \to -F$ in one of them, and the corpus records the pairing above, together with the discrepancy, rather than one of the printed halves.
@@ -453,7 +453,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\tilde{\nabla}_\kappa(\tilde\nabla_\Phi)^{\natural}_\kappa = \Box_\Phi + 2\kappa\partial/\partial R_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$ |
 | $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $D^\pm_F = \vec\nabla^{\pm}_\Phi + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
 | $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box_\Phi$ |
-| $\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{4\pi r}\exp(\pm i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\delta(\tau-r)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
+| $\tilde{Ξ} = \frac{1}{4\pi r}\exp(\pm i(F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - rf)\delta(\tau-r)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t)$ | Step function selecting the future cone |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ (not used in $\Box$) |
 

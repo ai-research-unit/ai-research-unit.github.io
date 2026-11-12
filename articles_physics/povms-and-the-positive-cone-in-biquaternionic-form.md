@@ -215,15 +215,15 @@ since $\tilde{Ϛ}_{\Psi,\eta}^2 = \tilde{Ϛ}_{\Psi,\eta}$ and $2\,\mathrm{Sc}(\t
 
 ### Unambiguous discrimination
 
-Let two non-orthogonal pure states have overlap $c = |\langle\tilde{Ξ}_{\mathrm{sp},0}|\tilde{Ξ}_{\mathrm{sp},1}\rangle|\in(0,1)$. A **projective** measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:
+Let two non-orthogonal pure states have overlap $c = |\langle\tilde{Ξ}_{0}|\tilde{Ξ}_{1}\rangle|\in(0,1)$. A **projective** measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:
 
 $$
-\tilde{E}_{\Psi}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{\mathrm{sp},1}^{\perp}\bigr), \qquad
-\tilde{E}_{\Psi}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{\mathrm{sp},0}^{\perp}\bigr), \qquad
+\tilde{E}_{\Psi}_0 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{1}^{\perp}\bigr), \qquad
+\tilde{E}_{\Psi}_1 = \frac{1}{1+c}\,\tilde\Pi\bigl(\tilde{Ξ}_{0}^{\perp}\bigr), \qquad
 \tilde{E}_{\Psi}_? = e_t-\tilde{E}_{\Psi}_0-\tilde{E}_{\Psi}_1 ,
 $$
 
-where $\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}}^{\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}_{\mathrm{sp}}\rangle$. The effect $\tilde{E}_{\Psi}_0$ annihilates $|\tilde{Ξ}_{\mathrm{sp},1}\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}_{\mathrm{sp},0}\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_{\Psi}_0+\tilde{E}_{\Psi}_1$ is $1$ at this normalization, and the success probability for equal priors is
+where $\tilde\Pi(\tilde{Ξ}^{\perp})$ is the idempotent orthogonal to $|\tilde{Ξ}\rangle$. The effect $\tilde{E}_{\Psi}_0$ annihilates $|\tilde{Ξ}_{1}\rangle$, so the outcome $0$ certifies $|\tilde{Ξ}_{0}\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_{\Psi}_0+\tilde{E}_{\Psi}_1$ is $1$ at this normalization, and the success probability for equal priors is
 
 $$
 P_{\mathrm{succ}} = \mathrm{Sc}(\tilde{Ϛ}_{\Psi,0}\tilde{E}_{\Psi}_0^{*}) + \mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\tilde{E}_{\Psi}_1^{*})

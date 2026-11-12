@@ -16,7 +16,7 @@ The findings are stated in advance.
 
 The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{B}_{\Psi}$, anti-Hermitian sector $\mathbb{B}_{\Phi}$, and the matrix model $\mathsf M_2$ with $\vec e_\eta\mapsto-i\sigma_\eta$, $i\mapsto iI_2$. The boost rotor is
 $$
-\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = \exp((\tilde{Ξ}_{\mathrm{sp}}/2)\,i\vec u_{\mathrm b}), \qquad \langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural} = 1 ,
+\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = \exp((\tilde{Ξ}/2)\,i\vec u_{\mathrm b}), \qquad \langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural} = 1 ,
 $$
 with $\theta_{\mathrm{rpd}}$ the rapidity and $\vec u_{\mathrm b}$ the boost direction; the four-velocity of a particle boosted from rest is $\tilde{V}_{\Phi} = ic\,\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\Psi,\mathrm b}^{-1{}^{*}}$. The Wigner rotation is $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi}) = \tilde U_{\tilde{V}_{\Phi,2}}\tilde U_{\Psi,\mathrm b}\tilde U_{\tilde{V}_{\Phi}}^{-1}\in SU(2)$ with $\tilde{V}_{\Phi,2} = \tilde U_{\Psi,\mathrm b}\tilde{V}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}$.
 
@@ -40,7 +40,7 @@ $$
 $$
 The first bracket closes the rotation subalgebra, the second says that the boosts form a representation of the rotations, and the third — the decisive one — says that the **boosts do not close**: the commutator of two boosts is a rotation. This is the algebraic origin of everything that follows. A boost is the exponential of the pure element $\tfrac12 i\vec u_{\mathrm b}$ along its unit direction,
 $$
-\tilde U_{\Psi,\mathrm b} = \exp\!\bigl(\tilde{Ξ}_{\mathrm{sp}}\,\vec u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
+\tilde U_{\Psi,\mathrm b} = \exp\!\bigl(\tilde{Ξ}\,\vec u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
 = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} ,
 $$
 which is Hermitian because $(\tfrac12 i\vec u_{\mathrm b})^2=+\tfrac14 e_t$, so the exponential is the hyperbolic sum written, not a phase. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket. The correction is the BCH defect of the four-factor word, computed in *The Exponential Word and Its Boundary*: the formal exponents do not add, and the difference is the rotation.
@@ -99,31 +99,31 @@ a rotation about the axis normal to the plane of the two boost directions, by an
 Each boost is a Hamilton word of a degenerate kind. On the Hermitian axis $\vec U=i\vec u_{\mathrm b}$, which satisfies $\vec U^{2}=e_t$, the rotor is
 
 $$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp\!\Big(\frac{\tilde{Ξ}_{\mathrm{sp}}}{2}i\vec u_{\mathrm b}\Big)
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp\!\Big(\frac{\tilde{Ξ}}{2}i\vec u_{\mathrm b}\Big)
 =\Rho\,e^{\vec U\Theta},
 \qquad
-\Rho=e_t,\quad \Theta=\frac{\tilde{Ξ}_{\mathrm{sp}}}{2}\in\mathbb{R},
+\Rho=e_t,\quad \Theta=\frac{\tilde{Ξ}}{2}\in\mathbb{R},
 $$
 
-and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\tilde{Ξ}_{\mathrm{sp}}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\tilde{Ξ}_{\mathrm{sp}}\vec u_{\mathrm b}/2$.
+and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\tilde{Ξ}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\tilde{Ξ}\vec u_{\mathrm b}/2$.
 
-**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,\eta}=\frac{\tilde{Ξ}_{\mathrm{sp},k}}{2}i\vec u_\Phi$,
+**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,\eta}=\frac{\tilde{Ξ}_{k}}{2}i\vec u_\Phi$,
 
 $$
 \operatorname{Log}\bigl(\exp\tilde{H}_{\Psi,2}\exp\tilde{H}_{\Psi,1}\bigr)
 =\tilde{H}_{\Psi,2}+\tilde{H}_{\Psi,1}+\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]+\cdots,
 \qquad
 \frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]
-=\frac{\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}}{4}\,\vec u_1\times\vec u_2 .
+=\frac{\tilde{Ξ}_{1}\tilde{Ξ}_{2}}{4}\,\vec u_1\times\vec u_2 .
 $$
 
 The commutator is a real pure quaternion, hence a rotation generator, and its magnitude is the half-angle of the leading Wigner rotation. The leading angle is therefore
 
 $$
-\theta_{\mathrm{wgn}}\simeq\frac{\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}}{2}\sin\theta_{\mathrm{wgn}},
+\theta_{\mathrm{wgn}}\simeq\frac{\tilde{Ξ}_{1}\tilde{Ξ}_{2}}{2}\sin\theta_{\mathrm{wgn}},
 $$
 
-where $\theta_{\mathrm{wgn}}$ is the angle between the two boost directions. For small rapidities this is the $\theta_{\mathrm{wgn}}\approx\frac12\tilde{Ξ}_{\mathrm{sp}}\xi\sin\theta$ recorded in the summary, and for right angles and $\tilde{Ξ}_{\mathrm{sp},1}=1,\tilde{Ξ}_{\mathrm{sp},2}=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
+where $\theta_{\mathrm{wgn}}$ is the angle between the two boost directions. For small rapidities this is the $\theta_{\mathrm{wgn}}\approx\frac12\tilde{Ξ}\xi\sin\theta$ recorded in the summary, and for right angles and $\tilde{Ξ}_{1}=1,\tilde{Ξ}_{2}=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
 
 **The exact factor.** The Cartan decomposition of the product is the exact statement,
 
@@ -165,7 +165,7 @@ The cocycle is the source of the momentum dependence, and therefore of every fra
 
 On a state with definite momentum, the boost acts on the spin by the single $*$-unitary $\tilde U_{\mathrm{Wig}}$. On a superposition of momentum eigenstates it acts by a rotation on each branch,
 $$
-\boxed{\ |\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_i\sqrt{w_i}\,|p_i\rangle\otimes|\xi_i\rangle
+\boxed{\ |\tilde{Ξ}\rangle = \sum_i\sqrt{w_i}\,|p_i\rangle\otimes|\xi_i\rangle
 \ \longmapsto\
 \sum_i\sqrt{w_i}\,|p_{i,2}\rangle\otimes\bigl(\tilde U_{\mathrm{Wig},i}|\xi_i\rangle\bigr)\ },
 \qquad \tilde U_{\mathrm{Wig},i} = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi,i}),
@@ -190,7 +190,7 @@ $$
 $$
 For a particle of speed $0.5c$ this gives the following values, with the dephasing factor $\cos\theta_{\mathrm{wgn}}$ and the entropy $h((1+\cos\theta_{\mathrm{wgn}})/2)$ that the boost imprints on a transverse spin:
 
-| $\tilde{Ξ}_{\mathrm{sp}}$ | $\theta_{\mathrm{wgn}}$ | $\cos\theta_{\mathrm{wgn}}$ | $h\!\left(\frac{1+\cos\theta_{\mathrm{wgn}}}{2}\right)$ |
+| $\tilde{Ξ}$ | $\theta_{\mathrm{wgn}}$ | $\cos\theta_{\mathrm{wgn}}$ | $h\!\left(\frac{1+\cos\theta_{\mathrm{wgn}}}{2}\right)$ |
 |---:|---:|---:|---:|
 | $0.25$ | $3.81681^\circ$ | $0.997782$ | $0.012486$ |
 | $0.50$ | $7.50939^\circ$ | $0.991423$ | $0.039902$ |
@@ -308,8 +308,8 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi})$ | Wigner rotation, $\in SU(2)$ |
 | $\theta_{\mathrm{wgn}}$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
-| $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\tilde{Ξ}_{\mathrm{sp}}/2$ | Hamilton data of a boost on the Hermitian axis |
-| $\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=\frac{\tilde{Ξ}_{\mathrm{sp},1}\tilde{Ξ}_{\mathrm{sp},2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
+| $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\tilde{Ξ}/2$ | Hamilton data of a boost on the Hermitian axis |
+| $\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=\frac{\tilde{Ξ}_{1}\tilde{Ξ}_{2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2},\tilde U_{\Psi,\mathrm b,1}\tilde{V}_{\Phi})\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi})$ | Cocycle condition |
 | $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde U_{\mathrm{Wig},i}$ | Boost as a controlled rotation |
 | $\tan\theta_{\mathrm{wgn}} = \sinh\theta_{\mathrm{rpd}}\sinh\xi/(\cosh\theta_{\mathrm{rpd}}+\cosh\xi)$ | Exact angle at $\theta = \pi/2$ |

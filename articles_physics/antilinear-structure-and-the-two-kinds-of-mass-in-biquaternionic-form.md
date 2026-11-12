@@ -7,8 +7,8 @@ A mass term is the only term of a field equation that carries no derivative, and
 The framework carries several conjugations, and they are easy to conflate because two of them are antilinear and both are called a real structure: the algebra's $\flat$ and the **charge conjugation** $\mathcal{C}$ that acts on the module $\mathcal{S}_{\mathrm{rep}}$. This article separates them and settles what each is for. Its claims:
 
 - **Established, and recomputed below.** The biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}=\overline{\cdot^{\natural}}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation ${}^{\natural}$. Their fixed spaces are four distinct subspaces, of real dimensions $2, 4, 4$ and $4$, and only the last two of them are the framework's sectors. In particular the one involution that is **linear**, quaternion conjugation, is the one whose fixed space is *not* a sector.
-- **Established, and recomputed below.** The **Dirac mass** is linear and relates the two parts of the subscript, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; it pairs no field with its own conjugate. The **Majorana mass** is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.
-- **Established, and recomputed below.** The retired single-field equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ fails, and it fails **on the dispersion**: its central-phase plane waves have nullity $0$ on the timelike shell and nullity $4$ on the spacelike shell, so its solutions lie on the spacelike locus. This is reproduced here on the eight real coordinates, by pure real arithmetic.
+- **Established, and recomputed below.** The **Dirac mass** is linear and relates the two parts of the subscript, $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$; it pairs no field with its own conjugate. The **Majorana mass** is antilinear and pairs a field with its own conjugate, and it is physical: its reality condition has a four-real-dimensional solution space and it preserves the mass shell $p^2 = m^2$.
+- **Established, and recomputed below.** The retired single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ fails, and it fails **on the dispersion**: its central-phase plane waves have nullity $0$ on the timelike shell and nullity $4$ on the spacelike shell, so its solutions lie on the spacelike locus. This is reproduced here on the eight real coordinates, by pure real arithmetic.
 - **The distinction the whole article turns on.** The diagnosis of that failure is the *pairing*, not the antilinearity. A Majorana mass is also antilinear and is perfectly physical. What the retired equation did was use the **algebra's** real structure $\flat$ as though it were the mass of a field on the **module** — and the two are different real structures on different spaces.
 - **Gap, left visible.** The framework does not derive the values of either mass, and it does not decide which kind a given fermion carries; that is empirical input, as the neutrino companion states. What the framework supplies is the algebraic distinction and the reality structure each kind is built on. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -65,8 +65,8 @@ Four involutions, four distinct fixed spaces, of real dimensions $2, 4, 4, 4$. T
 On the two sectors $\flat$ acts by a sign, and this is the fact the rest of the article uses:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}^{\flat} = +\tilde{Ξ}_{\mathrm{sp}}\ \ (\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}_{\Phi}), \qquad
-\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}\ \ (\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}_{\Psi}).
+\tilde{Ξ}^{\flat} = +\tilde{Ξ}\ \ (\tilde{Ξ}\in\mathbb{B}_{\Phi}), \qquad
+\tilde{Ξ}^{\flat} = -\tilde{Ξ}\ \ (\tilde{Ξ}\in\mathbb{B}_{\Psi}).
 $$
 
 $\mathbb{B}_{\Psi}$ is the Hermitian sector and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, and $\mathbb{B}_{\Phi} = i\,\mathbb{B}_{\Psi}$: multiplication by the central $i$ carries one sector onto the other, because $(i\tilde{Q})^{*} = \bar{i}\,\tilde{Q}^{*} = i^2\tilde{Q}^{*} = -i\tilde{Q}^{*}$. That is a *linear* map between the sectors, and it is not a map of either into itself, since $i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$. The antilinear map $\flat$ does not move them: it fixes one and negates the other, and the sign it carries is the same $i^2=-1$, read where the central unit meets the conjugation.
@@ -78,24 +78,24 @@ The argument is short and it is the reason the two topics of this article are on
 Write the free equation of a field as
 
 $$
-\mathcal{D}\tilde{Ξ}_{\mathrm{sp}} = \text{(mass term)},
+\mathcal{D}\tilde{Ξ} = \text{(mass term)},
 $$
 
-where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial R_\mu\tilde{Ξ}_{\mathrm{sp}}$; being bilinear and built from a single field, it must pair $\tilde{Ξ}_{\mathrm{sp}}$ with something constructed from $\tilde{Ξ}_{\mathrm{sp}}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
+where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial R_\mu\tilde{Ξ}$; being bilinear and built from a single field, it must pair $\tilde{Ξ}$ with something constructed from $\tilde{Ξ}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
 
 So a mass term has the shape
 
 $$
-\text{mass} \;\sim\; \tilde{Ξ}_{\mathrm{sp}}^{\bullet}\,\tilde{Ξ}_{\mathrm{sp}} \quad\text{or}\quad \tilde{Ξ}_{\mathrm{sp}}\,\tilde{Ξ}_{\mathrm{sp}}^{\bullet},
+\text{mass} \;\sim\; \tilde{Ξ}^{\bullet}\,\tilde{Ξ} \quad\text{or}\quad \tilde{Ξ}\,\tilde{Ξ}^{\bullet},
 $$
 
 with $\bullet$ one of ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, $\flat$. The involutions are not interchangeable — they have different fixed spaces — so **each choice of involution is a different kind of mass**. That is the whole content of the phrase "the two kinds of mass": the kinds are indexed by the conjugation, or by its absence, and not by a numerical value. One qualification matters for the count: $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the fixed spaces of two maps that differ only by the central sign, so their pairings are sign variants of one another and admit the same momenta, as the dispersion table below confirms. Up to that sign there are three distinct choices, not four.
 
 Two kinds are realised in physics. One of them is not in the list at all, because it needs no involution; the other is the last entry, the conjugation.
 
-**The pairing of the two values gives the Dirac mass.** It pairs the two parts named by the subscript rather than a conjugate, $\tilde{Ξ}_{\mathrm{sp},L}$ with $\tilde{Ξ}_{\mathrm{sp},R}$, two independent parts of one field. It is linear, and it is the mass term of the Dirac equation.
+**The pairing of the two values gives the Dirac mass.** It pairs the two parts named by the subscript rather than a conjugate, $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$, two independent parts of one field. It is linear, and it is the mass term of the Dirac equation.
 
-**The conjugation choice gives the Majorana mass.** The pairing that uses the field's own conjugate, $\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^{\bullet}$, requires the field to *equal* its conjugate — a **reality condition** that halves the field's independent components. The map that produces that conjugate is antilinear, and the term it builds is the mass term of a Majorana fermion.
+**The conjugation choice gives the Majorana mass.** The pairing that uses the field's own conjugate, $\tilde{Ξ}$ with $\tilde{Ξ}^{\bullet}$, requires the field to *equal* its conjugate — a **reality condition** that halves the field's independent components. The map that produces that conjugate is antilinear, and the term it builds is the mass term of a Majorana fermion.
 
 The distinction is visible in the component count before any dynamics is imposed, and the count is decisive. The field is an element of $\mathbb{B}$, of real dimension $8$: four complex components. An antilinear involution of the algebra has a fixed space of real dimension $4$ — half, because multiplication by $i$ exchanges its $+1$ and $-1$ eigenspaces, so the two have equal dimension. So
 
@@ -122,16 +122,16 @@ The framework's module is $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar{S}$, the two
 
 ## The Two Conjugates and the Two Masses
 
-The two mass terms of a single fermion species, written on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ and on its charge conjugate $\tilde{Ξ}_{\mathrm{sp}}^c$, are
+The two mass terms of a single fermion species, written on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$ and on its charge conjugate $\tilde{Ξ}^c$, are
 
 $$
-\mathcal{L}_{\text{Dirac}} = -m_D\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}^*\,i\,\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\big) ,
+\mathcal{L}_{\text{Dirac}} = -m_D\,\mathrm{Sc}\big(\tilde{Ξ}^*\,i\,\tilde{Ξ}\,\vec e_x\big) ,
 $$
 
 where the unit multiplies on the right: the value of an element is what the subscript $L$ or $R$ reads, and right multiplication by $\vec e_x$ reverses it, because $\vec e_x$ anticommutes with the $\vec e_z$ that defines the value, so the term pairs each part with the other and never a part with itself.
 
 $$
-\boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\,\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp},L}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp},L}\big) + \text{h.c.}\;}
+\boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\,\mathrm{Sc}\big(\tilde{Ξ}_{L}\,\vec e_x\,\tilde{Ξ}_{L}\big) + \text{h.c.}\;}
 $$
 
 The bracket carries no sign of conjugation: the part stands in both slots, and the only structure between them is the unit on the right. That is the transposed realization of the operation, and the multiplier squares to minus the identity, because $\vec e_x^{2}=-e_t$:
@@ -145,22 +145,22 @@ $$
 so the multiplier carries the division-ring sign that the companion article records, and the bracket is a transposition pairing rather than a scalar product — which is why the term needs its h.c. to be real. The untransposed realization is the operation on the field that produces the conjugate, and it squares to $+1$:
 
 $$
-\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y ,
+\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y ,
 \qquad
-\mathcal{C}\big(\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]\big)=\tilde{Ξ}_{\mathrm{sp}} ,
+\mathcal{C}\big(\mathcal{C}[\tilde{Ξ}]\big)=\tilde{Ξ} ,
 $$
 
 the second line because $\vec e_y^{*}=-\vec e_y$ and $\vec e_y^{2}=-e_t$, so the two conjugations and the two units cancel in pairs. The section *Two Real Structures, on Two Different Spaces* keeps the operation apart from the algebra's $\flat$.
 
-The first pairs $\tilde{Ξ}_{\mathrm{sp},L}$ with $\tilde{Ξ}_{\mathrm{sp},R}$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$. The second pairs $\tilde{Ξ}_{\mathrm{sp},L}$ with its charge conjugate $\tilde{Ξ}_{\mathrm{sp},L}^c$, a field produced from $\tilde{Ξ}_{\mathrm{sp},L}$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
+The first pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$. The second pairs $\tilde{Ξ}_{L}$ with its charge conjugate $\tilde{Ξ}_{L}^c$, a field produced from $\tilde{Ξ}_{L}$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
 
 | | Dirac mass | Majorana mass |
 |---|---|---|
-| pairs | $\tilde{Ξ}_{\mathrm{sp},L}$ with $\tilde{Ξ}_{\mathrm{sp},R}$ | $\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}^c$ |
+| pairs | $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ | $\tilde{Ξ}$ with $\tilde{Ξ}^c$ |
 | the map it is built on | the identity, linear | charge conjugation $\mathcal{C}$, antilinear |
 | fermion number | conserved | violated by $2$ |
 | continuous phase | invariant | not invariant |
-| needs a reality condition | no | yes, $\tilde{Ξ}_{\mathrm{sp}}^c=\tilde{Ξ}_{\mathrm{sp}}$ |
+| needs a reality condition | no | yes, $\tilde{Ξ}^c=\tilde{Ξ}$ |
 | independent real components | $8$ | $4$ |
 | framework structure | the two parts named by the subscript | an antilinear real structure |
 
@@ -169,16 +169,16 @@ Both are masses; neither is a mistake. The two columns of the table are what the
 In biquaternionic form the Dirac mass is the linear pair of the parent article. It is **two equations, one per value read by the test**, and not one equation with two halves:
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L} ,
 $$
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R} .
 $$
 
-The first acts on the right-handed half, the second on the left-handed one, and the second is the quaternion conjugate of the first. The massless case is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$, which is the right-handed member alone; the full massless field is the pair, not either member.
+The first acts on the right-handed half, the second on the left-handed one, and the second is the quaternion conjugate of the first. The massless case is $\tilde\nabla_\Phi\tilde{Ξ} = 0$, which is the right-handed member alone; the full massless field is the pair, not either member.
 
-**The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $k_m$ is central, so $k_m\tilde{Ξ}_{\mathrm{sp},L}=\tilde{Ξ}_{\mathrm{sp},L}\,k_m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $r'_t$ the imaginary time and $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
+**The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $k_m$ is central, so $k_m\tilde{Ξ}_{L}=\tilde{Ξ}_{L}\,k_m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $r'_t$ the imaginary time and $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
 
 $$
 (i\partial/\partial r'_t + D_3)F - mi\,\bar{F}\,\vec e_z = 0 ,
@@ -189,16 +189,16 @@ a left multiplication by the derivative, an antilinear coefficient conjugation $
 Applying $\tilde\nabla_\Phi$ from the left to the second member and substituting the first, with $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, gives the Klein–Gordon equation for each part,
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},L} = k_m^{2}\tilde{Ξ}_{\mathrm{sp},L} ,
+\Box\tilde{Ξ}_{L} = k_m^{2}\tilde{Ξ}_{L} ,
 $$
 
-and likewise for $\tilde{Ξ}_{\mathrm{sp},R}$ from the first member, so the pair sits on the physical mass shell. The order matters, and it is exactly what *one-sided* means: both gradients act from the left, $\tilde\nabla_\Phi$ and then $(\tilde\nabla_\Phi)^{\natural}$, so that their product is the scalar $\Box$ and the two members combine. This is the form every article in the series uses, and it is the sense in which the mass is off-diagonal in the value: it is a coupling *between* the two parts, not a conjugation of either.
+and likewise for $\tilde{Ξ}_{R}$ from the first member, so the pair sits on the physical mass shell. The order matters, and it is exactly what *one-sided* means: both gradients act from the left, $\tilde\nabla_\Phi$ and then $(\tilde\nabla_\Phi)^{\natural}$, so that their product is the scalar $\Box$ and the two members combine. This is the form every article in the series uses, and it is the sense in which the mass is off-diagonal in the value: it is a coupling *between* the two parts, not a conjugation of either.
 
 ### Why the Dirac Mass Is Not a Self-Pairing
 
 That the mass must be a pairing with a conjugate does not make it a *self*-pairing, and the algebra forces the difference.
 
-Left multiplication by an element of $\mathbb{B}$ leaves the value of the field alone: a product takes the letter of its right factor, and the left multiplier does not touch it. So no left multiplication, and no sum $a\tilde{Ξ}_{\mathrm{sp},L}+b\tilde{Ξ}_{\mathrm{sp},R}$ of them, carries one value into the other. A mass that relates the two parts is therefore not a one-sided operation at all: it is the *pair* of equations displayed above, the derivative on one half and the other half on the right-hand side.
+Left multiplication by an element of $\mathbb{B}$ leaves the value of the field alone: a product takes the letter of its right factor, and the left multiplier does not touch it. So no left multiplication, and no sum $a\tilde{Ξ}_{L}+b\tilde{Ξ}_{R}$ of them, carries one value into the other. A mass that relates the two parts is therefore not a one-sided operation at all: it is the *pair* of equations displayed above, the derivative on one half and the other half on the right-hand side.
 
 The corpus's two-sided form states the same thing in a single equation, and it shows what "two-sided" means concretely. Three different actions sit in one operator:
 
@@ -213,24 +213,24 @@ Two consequences follow, and they are the point of this section:
 - the **Dirac mass** pairs two different fields, so it needs no involution of a single field and it is linear;
 - the **conjugation** in a mass term need not be the algebra's real structure $\flat$. In the two-sided form it is $\bar{\cdot}$, the coefficient conjugation, which is an automorphism and fixes $\mathbb{B}_{H}$, not $\mathbb{B}_{\Phi}$.
 
-So the phrase "the mass is a pairing with a conjugate" asks two questions — *which* conjugate, and *on which side* — and the Dirac and Majorana masses answer them differently. A single equation with a single field and a single mass term can realise the self-pairing. It cannot realise the pair of two values, which needs two independent parts and hence two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$.
+So the phrase "the mass is a pairing with a conjugate" asks two questions — *which* conjugate, and *on which side* — and the Dirac and Majorana masses answer them differently. A single equation with a single field and a single mass term can realise the self-pairing. It cannot realise the pair of two values, which needs two independent parts and hence two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$.
 
 ## Two Real Structures, on Two Different Spaces
 
 This is the section on which the retired equation's diagnosis turns, and it separates two objects that the word "conjugation" hides.
 
-The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the module $\mathcal{S}_{\mathrm{rep}}$ and calls it a real structure too. Both are antilinear, both are involutions, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. The side of an action is carried by position and never by a mark: a two-sided action is written $a\tilde{Ξ}_{\mathrm{sp}} b$, and a field is written with its two parts, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. The two maps are then:
+The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the module $\mathcal{S}_{\mathrm{rep}}$ and calls it a real structure too. Both are antilinear, both are involutions, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. The side of an action is carried by position and never by a mark: a two-sided action is written $a\tilde{Ξ} b$, and a field is written with its two parts, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$. The two maps are then:
 
 | | algebra real structure $\flat$ | module charge conjugation $\mathcal{C}$ |
 |---|---|---|
 | acts on | the algebra $\mathbb{B}$, real dim $8$ | the module $\mathcal{S}_{\mathrm{rep}}$, real dim $8$ |
-| defined by | the generators: $e_t\mapsto -e_t$, $\vec e_\eta\mapsto \vec e_\eta$, $i\mapsto i$ | the conjugation by $\vec e_y$ composed with the field's star, $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, with $\mathcal{C}^{2}=+1$ |
+| defined by | the generators: $e_t\mapsto -e_t$, $\vec e_\eta\mapsto \vec e_\eta$, $i\mapsto i$ | the conjugation by $\vec e_y$ composed with the field's star, $\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y$, with $\mathcal{C}^{2}=+1$ |
 | fixed space | $\mathbb{B}_{\Phi}$, the anti-Hermitian sector, real dim $4$ | the Majorana space, real dim $4$ |
 | respected by the kinetic operator | **no** | **yes**; the CPT companion verifies on the free equation that $\mathcal{C}$ carries solutions to solutions |
 | exchanges the two values | no — it preserves the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split | yes, through the basis operator under it |
 | role | the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split, traces, bilinears | the Majorana reality condition |
 
-The third row and the fourth row are the substance. The fixed spaces have the *same real dimension four*, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: **the Dirac operator does not preserve $\mathbb{B}_{\Phi}$.** The reason is one line of the twist in $\flat$. Because $\flat$ is an anti-automorphism with a sign, $(\vec e_\eta\tilde{Ξ}_{\mathrm{sp}})^\flat=-\tilde{Ξ}_{\mathrm{sp}}^{\flat}\vec e_\eta$; on the fixed space $\mathbb{B}_{\Phi}$ this is $-\tilde{Ξ}_{\mathrm{sp}}\vec e_\eta$, which equals $\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}$ only when $\vec e_\eta$ anticommutes with $\tilde{Ξ}_{\mathrm{sp}}$. It does not in general: for $\tilde{Ξ}_{\mathrm{sp}}=ie_t$ one gets $\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}=i\vec e_\eta$, which is Hermitian, hence in $\mathbb{B}_{\Psi}$. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{B}_{\Phi}$ is a perfectly good real form *of the algebra* — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ — and simultaneously not the Majorana reality condition *of the module*, despite the matching dimension count.
+The third row and the fourth row are the substance. The fixed spaces have the *same real dimension four*, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: **the Dirac operator does not preserve $\mathbb{B}_{\Phi}$.** The reason is one line of the twist in $\flat$. Because $\flat$ is an anti-automorphism with a sign, $(\vec e_\eta\tilde{Ξ})^\flat=-\tilde{Ξ}^{\flat}\vec e_\eta$; on the fixed space $\mathbb{B}_{\Phi}$ this is $-\tilde{Ξ}\vec e_\eta$, which equals $\vec e_\eta\tilde{Ξ}$ only when $\vec e_\eta$ anticommutes with $\tilde{Ξ}$. It does not in general: for $\tilde{Ξ}=ie_t$ one gets $\vec e_\eta\tilde{Ξ}=i\vec e_\eta$, which is Hermitian, hence in $\mathbb{B}_{\Psi}$. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{B}_{\Phi}$ is a perfectly good real form *of the algebra* — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ — and simultaneously not the Majorana reality condition *of the module*, despite the matching dimension count.
 
 The moral is the one this article exists to record:
 
@@ -248,10 +248,10 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 |---|---|---|---|
 | 1, the algebra | $\flat=-{}^{*}$ | $\mathbb{B}$, real dim $8$ | the algebra's real structure, fixed space $\mathbb{B}_{\Phi}$; the **shape** of a charge-conjugation pairing |
 | 2, the operators | $F\mapsto\eta_C F^{\dagger}\eta_C^{-1}$ | $\operatorname{End}(\mathbb{B})$ | the charge-conjugation **pseudoautomorphism**: an antiautomorphism of the operator algebra, twisted by the inner conjugation by $\eta_C$; it acts on the slots of an operator and not on a field |
-| 3, the field | $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$ | $\mathcal{S}_{\mathrm{rep}}$ | **charge conjugation**; the particle–antiparticle operation, $\mathcal{C}^{2}=1$, built on the basis operator that exchanges the two values |
+| 3, the field | $\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y$ | $\mathcal{S}_{\mathrm{rep}}$ | **charge conjugation**; the particle–antiparticle operation, $\mathcal{C}^{2}=1$, built on the basis operator that exchanges the two values |
 | 4, the module real structure | $\bar{\cdot}$ | $\mathcal{S}_{\mathrm{rep}}\cong S\oplus\bar{S}$ | the fixed-point real structure transported to the module; fixed points $\mathbb{B}_{H}$ |
 
-The squares are where the signs live, and the two signs belong to two *realizations* of one operation. The corpus keeps the name $\eta$ for the transposed realization and $\mathcal{C}$ for the operation, and that is the naming used here. The **transposed** realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, read with the multiplier on the right; its square is read off in one line, using $\vec e_x^{2}=-e_t$:
+The squares are where the signs live, and the two signs belong to two *realizations* of one operation. The corpus keeps the name $\eta$ for the transposed realization and $\mathcal{C}$ for the operation, and that is the naming used here. The **transposed** realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}\,\vec e_x\,\tilde{Ξ}\big)$, read with the multiplier on the right; its square is read off in one line, using $\vec e_x^{2}=-e_t$:
 
 $$
 \eta(\tilde X)=\tilde X\vec e_x ,
@@ -259,10 +259,10 @@ $$
 \eta^{2}(\tilde X)=\tilde X\vec e_x^{2}=-\tilde X .
 $$
 
-So the multiplier of the bilinear squares to minus the identity and is not itself an involution — that is the division-ring sign the companion article records. The **untransposed** realization is the operation, $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, with $\tilde{Ξ}_{\mathrm{sp}}^*$ the Hermitian conjugation read on the field, and its square takes the same relation twice:
+So the multiplier of the bilinear squares to minus the identity and is not itself an involution — that is the division-ring sign the companion article records. The **untransposed** realization is the operation, $\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y$, with $\tilde{Ξ}^*$ the Hermitian conjugation read on the field, and its square takes the same relation twice:
 
 $$
-\mathcal{C}\big(\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]\big)=-\vec e_y\big(-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y\big)^{*}\vec e_y=\tilde{Ξ}_{\mathrm{sp}} ,
+\mathcal{C}\big(\mathcal{C}[\tilde{Ξ}]\big)=-\vec e_y\big(-\vec e_y\tilde{Ξ}^*\vec e_y\big)^{*}\vec e_y=\tilde{Ξ} ,
 $$
 
 because $\vec e_y^{*}=-\vec e_y$, so the two conjugations cancel the two units and the two signs with them. The two squares differ only in how many times the relation $\vec e_\eta^{2}=-e_t$ is used: the bilinear uses it once, on its right-hand factor, and carries one minus; the operation uses it on both factors, and the two minuses cancel. What makes the operation exchange the two values is the basis operator under it: multiplication on the right by $\vec e_y$ anticommutes with multiplication on the right by $\vec e_z$, which is the basis operator that defines the value, so the basis operator carries $L$ to $R$ and $R$ to $L$, while a basis operator that commuted with it would leave the two parts in place. Neither formula may be carried across the change of realization — the multiplier of the bilinear against the star, or the basis operator of the operation against the transpose — and that is why the two squares appear to disagree.
@@ -285,12 +285,12 @@ a double cover of $SO(1,3)\times \mathrm{U}(1)$: the spin group extended by a ce
 
 **The framework's central $\mathrm{U}(1)$ is that factor.** The gauge principle article localizes the $*$-unitary part of the centre — the complex scalar subspace $\mathbb{B}_{C}$, of real dimension $2$ — whose $*$-unitary elements are the phases $\lambda = \exp(i\theta)e_t$, and the minimal-coupling article writes the covariant derivative $D = \tilde\nabla_\Phi + (\frac{i\,ϙ}{\hbar})\tilde{A}_{\Phi}$ for exactly that phase. The phase is central in $\mathbb{B}$, so it multiplies every element alike, and it therefore commutes with the chirality basis operator of the frame, the multiplication on the right by $-i\vec e_z$. The basis operator is not itself central; it is what separates the two parts named by the subscript. What matters here is only that the central phase commutes with it, which gives that phase the same factor on the two parts. The framework's $\mathrm{U}(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $\mathrm{U}(1)$.
 
-**Which fields can carry it.** A field can be rotated by the central phase and remain a field of its own type only when its defining condition survives the rotation. The module imposes no condition, and $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ is a symmetry of the free equation, so the Dirac field — with linearly independent parts of the two values — carries the $\mathrm{U}(1)$ and is charged. The Majorana field is the fixed-point set of the module's antilinear real structure, $\tilde{Ξ}_{\mathrm{sp}} = \mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]$, and $\mathcal{C}$ is conjugate-linear, so
+**Which fields can carry it.** A field can be rotated by the central phase and remain a field of its own type only when its defining condition survives the rotation. The module imposes no condition, and $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ is a symmetry of the free equation, so the Dirac field — with linearly independent parts of the two values — carries the $\mathrm{U}(1)$ and is charged. The Majorana field is the fixed-point set of the module's antilinear real structure, $\tilde{Ξ} = \mathcal{C}[\tilde{Ξ}]$, and $\mathcal{C}$ is conjugate-linear, so
 
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]
+\tilde{Ξ} = \mathcal{C}[\tilde{Ξ}]
 \quad\Longrightarrow\quad
-\exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}} = \exp(-i\alpha)\,\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}].
+\exp(i\alpha)\tilde{Ξ} = \exp(-i\alpha)\,\mathcal{C}[\tilde{Ξ}].
 $$
 
 The condition is preserved only for $\exp(2i\alpha) = 1$, that is $\alpha = 0,\pi$: the continuous phase does not act, and the Majorana field is **blind to the central $\mathrm{U}(1)$** — electrically neutral. The **ELKO** field, of Lounesto class $5$, is neutral for the same reason: it is an eigenvector of the same antilinear operator, with eigenvalue $+1$ or $-1$, so the phase acts on it only as a sign at best. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
@@ -306,34 +306,34 @@ It matters for the previous section *which* of the article's two real structures
 The series previously wrote the massive equation as a single **antilinear** equation in one field,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat} , \qquad \tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^* ,
+\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat} , \qquad \tilde{Ξ}^{\flat} = -\tilde{Ξ}^* ,
 $$
 
 using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.
 
-Take the central-phase plane-wave ansatz of the parent article, with $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\exp(i\,\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{Q}^{\natural})/\hbar) = \tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta)$ and $\tilde{P}_{\Phi} = ik_{t}^{\prime}e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_{t}^{\prime} = \omega/c$. The computation is one of elements: the field is an element of $\mathbb{B}$, the gradient acts by left multiplication, and on the plane wave that multiplication is by $i\tilde{P}_{\Phi}$. A single phase cannot satisfy the equation: the gradient multiplies the phase by $i\tilde{P}_{\Phi}$, while $\flat$ conjugates it, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
+Take the central-phase plane-wave ansatz of the parent article, with $\tilde{Ξ} = \tilde{Ξ}_{0}\exp(i\,\mathrm{Sc}(\tilde{P}_{\Phi}\tilde{Q}^{\natural})/\hbar) = \tilde{Ξ}_{0}\exp(i\theta)$ and $\tilde{P}_{\Phi} = ik_{t}^{\prime}e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_{t}^{\prime} = \omega/c$. The computation is one of elements: the field is an element of $\mathbb{B}$, the gradient acts by left multiplication, and on the plane wave that multiplication is by $i\tilde{P}_{\Phi}$. A single phase cannot satisfy the equation: the gradient multiplies the phase by $i\tilde{P}_{\Phi}$, while $\flat$ conjugates it, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},0}\,\exp(i\theta) + \tilde{Ξ}_{\mathrm{sp},1}\,\exp(-i\theta),
+\tilde{Ξ} = \tilde{Ξ}_{0}\,\exp(i\theta) + \tilde{Ξ}_{1}\,\exp(-i\theta),
 $$
 
-and the equation becomes a linear system for the pair $(\tilde{Ξ}_{\mathrm{sp},0},\tilde{Ξ}_{\mathrm{sp},1})$. Its solvability depends on $\tilde{P}_{\Phi}$, and the dependence is the whole story.
+and the equation becomes a linear system for the pair $(\tilde{Ξ}_{0},\tilde{Ξ}_{1})$. Its solvability depends on $\tilde{P}_{\Phi}$, and the dependence is the whole story.
 
-Since $\flat$ is antilinear, it conjugates the phase: $(\tilde{Ξ}_{\mathrm{sp},0}e^{i\theta})^\flat=\tilde{Ξ}_{\mathrm{sp},0}^{\flat} e^{-i\theta}$. The value of $i^\flat$ is not what does the work here — $\flat$ fixes $i$, and what conjugates the exponential is the antilinearity, $(\lambda\tilde{Ξ}_{\mathrm{sp}})^\flat=\bar{\lambda}\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ for $\lambda\in\mathbb{C}$. With $\tilde{Ξ}_{\mathrm{sp},0}^{\flat}=-\tilde{Ξ}_{\mathrm{sp},0}^*$ the two modes act as
+Since $\flat$ is antilinear, it conjugates the phase: $(\tilde{Ξ}_{0}e^{i\theta})^\flat=\tilde{Ξ}_{0}^{\flat} e^{-i\theta}$. The value of $i^\flat$ is not what does the work here — $\flat$ fixes $i$, and what conjugates the exponential is the antilinearity, $(\lambda\tilde{Ξ})^\flat=\bar{\lambda}\tilde{Ξ}^{\flat}$ for $\lambda\in\mathbb{C}$. With $\tilde{Ξ}_{0}^{\flat}=-\tilde{Ξ}_{0}^*$ the two modes act as
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = i\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0}\exp(i\theta) - i\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},1}\exp(-i\theta), \qquad
-\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp},0}^* \exp(-i\theta) - \tilde{Ξ}_{\mathrm{sp},1}^* \exp(i\theta) ,
+\tilde\nabla_\Phi\tilde{Ξ} = i\tilde{P}_{\Phi}\tilde{Ξ}_{0}\exp(i\theta) - i\tilde{P}_{\Phi}\tilde{Ξ}_{1}\exp(-i\theta), \qquad
+\tilde{Ξ}^{\flat} = -\tilde{Ξ}_{0}^* \exp(-i\theta) - \tilde{Ξ}_{1}^* \exp(i\theta) ,
 $$
 
 and matching exponentials gives the two equations of elements
 
 $$
-i\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},0} + m\tilde{Ξ}_{\mathrm{sp},1}^* = 0, \qquad
-i\tilde{P}_{\Phi}\tilde{Ξ}_{\mathrm{sp},1} - m\tilde{Ξ}_{\mathrm{sp},0}^* = 0 .
+i\tilde{P}_{\Phi}\tilde{Ξ}_{0} + m\tilde{Ξ}_{1}^* = 0, \qquad
+i\tilde{P}_{\Phi}\tilde{Ξ}_{1} - m\tilde{Ξ}_{0}^* = 0 .
 $$
 
-These are $16$ real linear equations in the $16$ real unknowns $(\tilde{Ξ}_{\mathrm{sp},0},\tilde{Ξ}_{\mathrm{sp},1})$. Their nullity, computed by exact elimination over the integers and independent of the momentum within each row, is
+These are $16$ real linear equations in the $16$ real unknowns $(\tilde{Ξ}_{0},\tilde{Ξ}_{1})$. Their nullity, computed by exact elimination over the integers and independent of the momentum within each row, is
 
 | locus | shell condition | nullity |
 |---|---|---|
@@ -347,7 +347,7 @@ The nullity vanishes on the physical shell and jumps to four on the spacelike lo
 
 The nullity table is easy to misread in two opposite ways, and both errors are worth naming.
 
-**It does not say that antilinear equations are unphysical.** A Majorana mass is antilinear and physical. Its equation is nevertheless not a single-field self-pairing: the Majorana field is the Dirac field subject to the reality condition $\tilde{Ξ}_{\mathrm{sp}}=\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]$, and since $\mathcal{C}$ carries solutions of the pair to solutions, the condition is imposed on a space the kinetic operator preserves. It halves the eight real components to four and leaves the frequency untouched, so the solutions sit on the ordinary shell $k_{t}^{\prime\,2}=\vec k_\Phi^2+m^2$. What differs between the two cases is not the linearity but the **space the conjugate lives on**:
+**It does not say that antilinear equations are unphysical.** A Majorana mass is antilinear and physical. Its equation is nevertheless not a single-field self-pairing: the Majorana field is the Dirac field subject to the reality condition $\tilde{Ξ}=\mathcal{C}[\tilde{Ξ}]$, and since $\mathcal{C}$ carries solutions of the pair to solutions, the condition is imposed on a space the kinetic operator preserves. It halves the eight real components to four and leaves the frequency untouched, so the solutions sit on the ordinary shell $k_{t}^{\prime\,2}=\vec k_\Phi^2+m^2$. What differs between the two cases is not the linearity but the **space the conjugate lives on**:
 
 - a **Majorana mass** pairs the field with a conjugate defined *on the same space as the field*, and its reality condition reduces the field to a real form on which the kinetic operator acts consistently; its mass shell is the ordinary $p^2 = m^2$, and its solution space is the four-real-dimensional Majorana space of the previous sections.
 - the **retired equation** paired a field with the *algebra's* conjugate $\flat$, an involution of $\mathbb{B}$ that the field's own kinetic operator does not respect — left multiplication by a spatial generator carries $\mathbb{B}_{\Phi}$ out of itself. The mismatch between the space of the pairing and the space of the dynamics is what the spacelike dispersion is measuring.
@@ -361,7 +361,7 @@ So the correct statement is narrower than "the antilinear equation was wrong", a
 The retired equation is one of four. For each involution $J$ of the algebra the single-field equation
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = m\,J(\tilde{Ξ}_{\mathrm{sp}})
+\tilde\nabla_\Phi\tilde{Ξ} = m\,J(\tilde{Ξ})
 $$
 
 is formed with the same gradient and the same mass. The three antilinear involutions conjugate the phase, so as in the equation above the minimal ansatz is the two-frequency superposition, a system of $16$ real unknowns; the linear involution leaves the phase alone, a single frequency suffices there, and the count is that of an $8$-unknown system. The table gives the dimension of the solution space in each case, at a representative momentum of each locus. The three antilinear rows are constant there, as the elimination shows at every momentum tested; the control row is not, and its exceptions are listed below.
@@ -373,7 +373,7 @@ is formed with the same gradient and the same mass. The three antilinear involut
 | Hermitian conjugation ${}^{*}$ | antilinear | $\mathbb{B}_{\Psi}$, real dim $4$ | $0$ | $4$ |
 | anti-Hermitian conjugation $\flat=-{}^{*}$ | antilinear | $\mathbb{B}_{\Phi}$, real dim $4$ | $0$ | $4$ |
 
-The fourth row is the retired equation, and its $0$ and $4$ reproduce the table of the previous section. The third row is the same system with $m$ replaced by $-m$, because $\flat=-{}^{*}$, so the two sector fixed spaces share their nullities: a Hermitian self-pairing and an anti-Hermitian one fail in the same way, with the same four-real-dimensional spacelike family. The second row is worse still, with a spacelike family of eight. The first row is the one linear involution of the four, and it is not a candidate mass: as the first point of the summary records, it is the one whose fixed space is not a sector, and it supplies no reality condition. It is listed as a **control**, since it is the only transformation in the table that is *not* antilinear, and it is the only row with a solution on the timelike shell. Its row is also the one row that is not constant: $2$ on the timelike shell away from rest and $6$ at the rest point $k_{t}^{\prime}=k_m$, $\vec k_\Phi=0$, where $i\tilde P_{\Phi}=-m$ is central and the equation reduces to $\tilde{Ξ}_{\mathrm{sp}}=-\tilde{Ξ}_{\mathrm{sp}}^{\natural}$, solved by the six-dimensional space of elements with no scalar part; $2$ at $k_{t}^{\prime}=0$, $|\vec k_\Phi|=m$ and $0$ elsewhere on the spacelike shell; and $2$ on the cones $k_{t}^{\prime}=k_m\pm|\vec k_\Phi|$, which lie on neither shell. These exceptions belong to the control and not to the diagnosis: what the three antilinear rows share, and what the control fails to share, is the vanishing on the timelike shell.
+The fourth row is the retired equation, and its $0$ and $4$ reproduce the table of the previous section. The third row is the same system with $m$ replaced by $-m$, because $\flat=-{}^{*}$, so the two sector fixed spaces share their nullities: a Hermitian self-pairing and an anti-Hermitian one fail in the same way, with the same four-real-dimensional spacelike family. The second row is worse still, with a spacelike family of eight. The first row is the one linear involution of the four, and it is not a candidate mass: as the first point of the summary records, it is the one whose fixed space is not a sector, and it supplies no reality condition. It is listed as a **control**, since it is the only transformation in the table that is *not* antilinear, and it is the only row with a solution on the timelike shell. Its row is also the one row that is not constant: $2$ on the timelike shell away from rest and $6$ at the rest point $k_{t}^{\prime}=k_m$, $\vec k_\Phi=0$, where $i\tilde P_{\Phi}=-m$ is central and the equation reduces to $\tilde{Ξ}=-\tilde{Ξ}^{\natural}$, solved by the six-dimensional space of elements with no scalar part; $2$ at $k_{t}^{\prime}=0$, $|\vec k_\Phi|=m$ and $0$ elsewhere on the spacelike shell; and $2$ on the cones $k_{t}^{\prime}=k_m\pm|\vec k_\Phi|$, which lie on neither shell. These exceptions belong to the control and not to the diagnosis: what the three antilinear rows share, and what the control fails to share, is the vanishing on the timelike shell.
 
 The four rows are the reason the diagnosis can be stated exactly. The failure is **not** a property of $\flat$ alone, nor of the choice among the three antilinear involutions: it is a property of **every antilinear self-pairing of the algebra**, which is why the retired equation could be rewritten with ${}^{*}$ or with $\bar{\cdot}$ and fail identically. And the failure is **not** forced by the *form* of a self-pairing either: the lone linear involution is the only one of the four with a solution on the timelike shell, so linearity alone does not save a self-pairing. The discriminator is therefore neither the linearity of the pair nor the particular involution; it is the one the article has isolated all along: **the space on which the pairing is defined**. A pairing built on the algebra's own involutions, antilinear or not, is a pairing on $\mathbb{B}$; the physical antilinear mass is built on the *module*'s real structure $\mathcal{C}$, and its mass shell is the ordinary one. The spacelike locus is the signature of an algebra-level pairing, and reading the table with that in mind turns the retired equation from a mistake into the fourth line of a classification.
 
@@ -405,7 +405,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \begin{aligned}
@@ -461,7 +461,7 @@ $$
 \eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}=i\gamma_2 .
 $$
 
-Their squares are then the frame signs at once: $(-i\gamma_0)^{2}=-\gamma_0^{2}=-I_4$, and $(i\gamma_2)^{2}=-\gamma_2^{2}=+I_4$. So the division-ring sign of the bilinear, $\eta^{2}=-I_4$, and the cancellation that makes $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]$ an involution, $\eta_C^{2}=+I_4$, are one line of the frame: the timelike generator squares to $+I_4$ and the spatial one to $-I_4$, and each square is read with the extra minus of $i^2=-1$.
+Their squares are then the frame signs at once: $(-i\gamma_0)^{2}=-\gamma_0^{2}=-I_4$, and $(i\gamma_2)^{2}=-\gamma_2^{2}=+I_4$. So the division-ring sign of the bilinear, $\eta^{2}=-I_4$, and the cancellation that makes $\mathcal{C}[\tilde{Ξ}]$ an involution, $\eta_C^{2}=+I_4$, are one line of the frame: the timelike generator squares to $+I_4$ and the spatial one to $-I_4$, and each square is read with the extra minus of $i^2=-1$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the gammas span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the real basis operators $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -535,12 +535,12 @@ With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are 
 | $\mathbb{B}_{C} = \{\tilde{Q} : \tilde{Q}^{\natural} = \tilde{Q}\}$ | Centre, real dim $2$ |
 | $\mathrm{Sc}\,\tilde{Q}$ | Scalar part, the coefficient of $e_t$; $\mathrm{Sc}\big(\tilde{Q}^\flat\tilde{Q}\big) = -\lvert\tilde{Q}\rvert^2$, $\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{Q}\big) = +\lvert\tilde{Q}\rvert^2$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate; $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$ |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The Dirac mass: linear, relating the two parts |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ | The retired equation; spacelike dispersion, not a mass term |
-| $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=-\vec e_y\tilde{Ξ}_{\mathrm{sp}}^*\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}_{\mathrm{sp}}\,\vec e_x\,\tilde{Ξ}_{\mathrm{sp}}\big)$, whose multiplier satisfies $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | The Dirac mass: linear, relating the two parts |
+| $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ | The retired equation; spacelike dispersion, not a mass term |
+| $\mathcal{C}[\tilde{Ξ}]=-\vec e_y\tilde{Ξ}^*\vec e_y$, $\mathcal{C}^{2}=1$ | Charge conjugation on the module; the Majorana reality condition. Its transposed realization is the bilinear $\mathrm{Sc}\big(\tilde{Ξ}\,\vec e_x\,\tilde{Ξ}\big)$, whose multiplier satisfies $\eta(\tilde X)=\tilde X\vec e_x$, $\eta^{2}=-I$ |
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged field is one on which that factor acts non-trivially |
 | $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
-| $a\tilde{Ξ}_{\mathrm{sp}} b$ | The two-sided action; the side is carried by position and never by a mark |
+| $a\tilde{Ξ} b$ | The two-sided action; the side is carried by position and never by a mark |
 | $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; $r'_t$ | Three-dimensional Cauchy–Riemann operator; imaginary time, in the two-sided form only |
 | $m_D$, $m_M$ | Dirac and Majorana masses |
 | $\flat$ acts $+$ on $\mathbb{B}_{\Phi}$, $-$ on $\mathbb{B}_{\Psi}$ | The sector sign; the same convention as the material identification |
@@ -549,7 +549,7 @@ With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are 
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Foundational articles: [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html); [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) (the mass-term convention, the real structure $\flat$, and the dispersion failure this article expands).
-- The Dirac mass in biquaternionic form: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) (the linear chiral pair and the massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0$); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html).
+- The Dirac mass in biquaternionic form: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) (the linear chiral pair and the massless limit $\tilde\nabla_\Phi\tilde{Ξ} = 0$); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html).
 - The Majorana side: [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) (charge conjugation on the module, the Majorana condition, and the obstruction by which $\mathbb{B}_{\Phi}$ fails to be a reality condition); [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) (why a chiral fermion cannot carry a bare Dirac mass).
 - The antilinear discrete symmetries: [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html) ($C$ and $T$ antilinear, and why a linear $T$ is not a symmetry).
 - On the reflection parity that antilinearity shifts: [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html).

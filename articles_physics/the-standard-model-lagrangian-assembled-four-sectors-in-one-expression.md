@@ -84,22 +84,22 @@ The three coefficients are equal because each factor's gauge field is normalised
 **The term.** One term per Weyl field, in the form
 
 $$
-\mathcal{L}_{\mathrm{ferm}}=\sum_{\psi}\bar{\tilde\Xi}_{\mathrm{sp},\psi}\,i\,\tilde\nabla_{\psi}\,\tilde\Xi_{\mathrm{sp},\psi} ,
+\mathcal{L}_{\mathrm{ferm}}=\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\psi}\,\tilde\Xi_{\psi} ,
 $$
 
-with $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_\psi$ the covariant gradient carrying the three connections in the representation of $\psi$. The display states the structure; the component form of $\tilde\nabla_\psi$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=0$.
+with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, and $\tilde\nabla_\psi$ the covariant gradient carrying the three connections in the representation of $\psi$. The display states the structure; the component form of $\tilde\nabla_\psi$ and the sign of the bilinear are the Dirac article's, where the massless pair is $\tilde\nabla_\Phi\tilde\Xi_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=0$.
 
 **The covariant gradient.** Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is
 
 $$
-\tilde\nabla_{\psi}\tilde\Xi_{\mathrm{sp},\psi}=\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\mathrm{sp},\psi} ,
+\tilde\nabla_{\psi}\tilde\Xi_{\psi}=\tilde\nabla_\Phi\tilde\Xi_{\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\psi} ,
 $$
 
 with $T^a_\psi$ the colour generators in the representation of $\psi$ and $\tau^a_\psi$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
 
 **Why the term is one term and not fifteen.** The fifteen Weyl fields of a generation carry fifteen different connections and fifteen different hypercharges, so the display above is fifteen terms in one line. That is the whole of the fermion sector: a kinetic term per field, and no mass term.
 
-**No mass term.** The reason is recorded in article 1 and repeated here because it is the hinge of the assembly. A term $m\bar{\tilde\Xi}_{\mathrm{sp}}\tilde\Xi_{\mathrm{sp}}$ couples a left-handed field to a right-handed one, and the two carry different $SU(2)_L$ representations and different hypercharges, so no invariant contraction exists. The mass must wait for the scalar, and it arrives through the Yukawa sector.
+**No mass term.** The reason is recorded in article 1 and repeated here because it is the hinge of the assembly. A term $m\bar{\tilde\Xi}\tilde\Xi$ couples a left-handed field to a right-handed one, and the two carry different $SU(2)_L$ representations and different hypercharges, so no invariant contraction exists. The mass must wait for the scalar, and it arrives through the Yukawa sector.
 
 ## The Scalar Sector
 
@@ -187,7 +187,7 @@ $$
 \boxed{\;
 \begin{aligned}
 \mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W^a_{\mu\nu}W^a_{\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}\\[2pt]
-&+\sum_{\psi}\bar{\tilde\Xi}_{\mathrm{sp},\psi}\,i\,\tilde\nabla_{\psi}\,\tilde\Xi_{\mathrm{sp},\psi}\\[2pt]
+&+\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\psi}\,\tilde\Xi_{\psi}\\[2pt]
 &-\sum_\mu\left(D_\mu\varphi\right)^{\dagger}\left(D_\mu\varphi\right)+\mu^2\varphi^{\dagger}\varphi-\lambda\left(\varphi^{\dagger}\varphi\right)^2\\[2pt]
 &-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y^{d}_{ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y^{u}_{ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y^{e}_{ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
 &+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\mu,\nu,a}G^a_{\mu\nu}G^a_{\mathrm{dual},\mu\nu} .
@@ -231,7 +231,7 @@ and the analogous laws for $W_\mu$ with $U_L$ and for $B_\mu$ with the phase alo
 - **The up-type Yukawa needs the conjugate doublet.** With $\varphi$ in place of $\tilde\varphi$, the total hypercharge would be $-1/6+1/2+2/3=+1$, and the term would not be invariant. The conjugate is forced.
 - **The potential needs the modulus squared and nothing else.** A term $\varphi^T\varphi$ or $\varphi^\dagger\tau_a\varphi$ would fail; only $\varphi^\dagger\varphi$ is a singlet. That is why the potential has two parameters and not more.
 
-**The one term that is not invariant, and must not be there.** A bare mass $m\bar{\tilde\Xi}_{\mathrm{sp}}\tilde\Xi_{\mathrm{sp}}$ fails the audit: the left factor transforms as a doublet and the right as a singlet, so the product carries an $SU(2)_L$ index that nothing contracts. A bare mass for the neutrino fails for the same reason. Their absence is a result of the audit and not an omission from it.
+**The one term that is not invariant, and must not be there.** A bare mass $m\bar{\tilde\Xi}\tilde\Xi$ fails the audit: the left factor transforms as a doublet and the right as a singlet, so the product carries an $SU(2)_L$ index that nothing contracts. A bare mass for the neutrino fails for the same reason. Their absence is a result of the audit and not an omission from it.
 
 **The audit is complete.** Every term of the sum has been checked, and no term of dimension four compatible with the symmetries has been left out. The last claim is the one that needs the count of the next section, and the count is of operators and not of terms: the renormalisable operators are the ones built from at most four fields and at most one derivative each, and the list above exhausts them once the field content of article 1 is fixed.
 
@@ -292,7 +292,7 @@ Each $3\times3$ complex matrix carries nine complex entries, that is eighteen re
 | $-\tfrac14F_{\mu\nu}F^{\mu\nu}$ | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | the same, by §*The Dictionary* |
 | $+\tfrac12\partial_\mu\xi\partial^\mu\xi$ | $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$ | the same, by §*The Dictionary* |
 | $\lvert D_\mu\varphi\rvert^2$ | $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)$ | the same |
-| the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}_{\mathrm{sp}}\,i\tilde\nabla_\kappa\tilde\Xi_{\mathrm{sp}}$ | the Dirac article's pair |
+| the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\kappa\tilde\Xi$ | the Dirac article's pair |
 | $\varphi^\dagger\varphi$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
 
 **The dictionary is a dictionary and not a theory.** Each row is an identity between two writings of one object, and none of them is a derivation. The corpus's contribution is that the objects have homes: the connection is a material-sector element, the curvature is its vector part under $\natural$, the scalar is an element and its modulus squared is the norm.
@@ -322,7 +322,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | $G^a_{\mu\nu}$, $W^a_{\mu\nu}$, $B_{\mu\nu}$ | Their field strengths |
 | $f_{abc}$, $\varepsilon_{abc}$ | Colour and weak structure constants |
 | $\tilde\nabla_\psi$ | The covariant gradient in the representation of $\psi$ |
-| $\bar{\tilde\Xi}_{\mathrm{sp}}=\tilde\Xi_{\mathrm{sp}}^{*}i\vec e_x$ | The Dirac adjoint |
+| $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ | The Dirac adjoint |
 | $\varphi$, $\tilde\varphi$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
 | $Y^{u}$, $Y^{d}$, $Y^{e}$ | The three Yukawa matrices, general complex $3\times3$ |
 | $M_f=vY^{f}/\sqrt2$ | The mass matrix of the fermion type $f$ |

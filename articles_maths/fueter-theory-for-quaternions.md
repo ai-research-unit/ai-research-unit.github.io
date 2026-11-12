@@ -205,11 +205,11 @@ Eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmon
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n\geq1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$. Then $\tilde F = \Delta^{(n-1)/2}f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the operator $\partial/\partial q_0+\sum_{j=1}^{n}e_j\,\partial/\partial q_j$, on the ball where the extension is defined. For $n = 3$ the exponent is one, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n\geq1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$. Then $\tilde F = \mathcal{L}_{\mathrm{iter}}^{(n-1)/2}f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the operator $\partial/\partial q_0+\sum_{j=1}^{n}e_j\,\partial/\partial q_j$, on the ball where the extension is defined. For $n = 3$ the exponent is one, recovering Fueter's construction.
 
-*Proof.* The power $(n-1)/2$ is a non-negative integer because $n$ is odd, so the operator is ordinary iteration of the Laplacian; the argument of Fueter's theorem generalizes to each odd $n$, the radial computation with $-3$ replaced by $-n$.
+*Proof.* The power $(n-1)/2$ is a non-negative integer because $n$ is odd, so the operator $\mathcal{L}_{\mathrm{iter}}$ is ordinary iteration of the Laplacian, written with its own letter because an iterate is not the operator it iterates and $\Delta$ is reserved for the Laplacian itself; the argument of Fueter's theorem generalizes to each odd $n$, the radial computation with $-3$ replaced by $-n$.
 
-**Remark.** Three hypotheses are needed. The function $f_0$ must be holomorphic on $D(0,R)$, so that $\Delta^{(n-1)/2}(\tilde q^n)$ is a homogeneous polynomial of degree $n-1-(n-1)/2$ with at most polynomial growth in $n$ and the induced series converges on $B(0,R)$; the parity exponent $(n-1)/2$ must be a non-negative integer, so $n$ is odd; and the affine kernel $az+b$ remains, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two. None of the three can be dropped.
+**Remark.** Three hypotheses are needed. The function $f_0$ must be holomorphic on $D(0,R)$, so that $\mathcal{L}_{\mathrm{iter}}^{(n-1)/2}(\tilde q^n)$ is a homogeneous polynomial of degree $n-1-(n-1)/2$ with at most polynomial growth in $n$ and the induced series converges on $B(0,R)$; the parity exponent $(n-1)/2$ must be a non-negative integer, so $n$ is odd; and the affine kernel $az+b$ remains, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two. None of the three can be dropped.
 
 ## Power Series Representations
 

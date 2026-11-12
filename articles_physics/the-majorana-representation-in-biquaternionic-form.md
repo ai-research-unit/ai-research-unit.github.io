@@ -7,7 +7,7 @@ A spin-$s$ state has $2s+1$ complex amplitudes, and up to normalization and an o
 This article treats the Majorana representation in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The construction is standard and is reproduced exactly; what the framework contributes is the placement of the star map within the algebra of idempotents and spinors, and the unification of three objects that the framework treats separately:
 
 1. **The idempotent.** For spin-1/2 the Majorana star is the unit vector $\vec u_x$ of the idempotent $\tilde\Pi_1(\vec u_x) = \tfrac12(e_t+i\vec u_x)$; the Bloch vector and the single Majorana star are the same object.
-2. **The spinor and its stereographic coordinate.** The star is the image of the ratio $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$ of the two spinor components under inverse stereographic projection. The map from spinor to star is two-to-one, and the lost phase is exactly the geometric phase of the preceding articles.
+2. **The spinor and its stereographic coordinate.** The star is the image of the ratio $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$ of the two spinor components under inverse stereographic projection. The map from spinor to star is two-to-one, and the lost phase is exactly the geometric phase of the preceding articles.
 3. **The rotor.** The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\varkappa_{\mathrm{stg}}$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{B}_{H}$.
 
 The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
@@ -27,14 +27,14 @@ The companion articles supply the pieces:
 A spin-1/2 state is a spinor
 
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \begin{pmatrix}\tilde{Ξ}_{\mathrm{sp},1}\ \tilde{Ξ}_{\mathrm{sp},2}\end{pmatrix}
+\tilde{Ξ} = \begin{pmatrix}\tilde{Ξ}_{1}\ \tilde{Ξ}_{2}\end{pmatrix}
 = \begin{pmatrix}\cos\tfrac{\theta}{2}\\[2pt] \sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\end{pmatrix},
 $$
 
-normalized to $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}) = 1$, up to an overall phase. The **stereographic coordinate** of the state is the ratio
+normalized to $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 1$, up to an overall phase. The **stereographic coordinate** of the state is the ratio
 
 $$
-\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{\mathrm{sp},2}}{\tilde{Ξ}_{\mathrm{sp},1}} = \tan\frac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}}),
+\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}} = \tan\frac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}}),
 $$
 
 a complex number (or $\infty$ at the south pole). It is invariant under the overall phase of the spinor, so it is the coordinate of the state in projective space; for spin-1/2 the projective space is $\mathbb{CP}^1$, which is the Bloch sphere.
@@ -44,7 +44,7 @@ a complex number (or $\infty$ at the south pole). It is invariant under the over
 The idempotent of the state is
 
 $$
-\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})},
+\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 \qquad
 \vec u_x = \frac{1}{1+|\varkappa_{\mathrm{stg}}|^2}\left(2\,\mathrm{Re}\,\varkappa_{\mathrm{stg}},\;2\,\mathrm{Im}\,\varkappa_{\mathrm{stg}},\;1-|\varkappa_{\mathrm{stg}}|^2\right)\;},
 $$
@@ -55,32 +55,32 @@ The relation was checked numerically: for $(\theta,\theta_{\mathrm{azm}}) = (0.7
 
 ### The Two-to-One Map
 
-The passage from spinor to star discards the overall phase: $\tilde{Ξ}_{\mathrm{sp}}\mapsto \exp(i\alpha)\tilde{Ξ}_{\mathrm{sp}}$ leaves $\varkappa_{\mathrm{stg}}$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.
+The passage from spinor to star discards the overall phase: $\tilde{Ξ}\mapsto \exp(i\alpha)\tilde{Ξ}$ leaves $\varkappa_{\mathrm{stg}}$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.
 
 ## The Majorana Polynomial
 
 ### The General Construction
 
-For spin $s$ the state $|\tilde{Ξ}_{\mathrm{sp}}\rangle = \sum_{s_z=-s}^{s}c_m|s,s_z\rangle$ is represented by the degree-$2s$ polynomial
+For spin $s$ the state $|\tilde{Ξ}\rangle = \sum_{s_z=-s}^{s}c_m|s,s_z\rangle$ is represented by the degree-$2s$ polynomial
 
 $$
 \boxed{\;P_{\mathrm{sp}}(z) = \sum_{s_z=-s}^{s}(-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2} c_m\,z^{\,s+s_z}\;},
 $$
 
-whose $2s$ complex roots are the stereographic coordinates of the $2s$ Majorana stars. A global phase of $|\tilde{Ξ}_{\mathrm{sp}}\rangle$ multiplies $P_{\mathrm{sp}}$ by a constant and does not move the roots; a rotation reparametrises them by a Möbius transformation and rotates the sphere rigidly. The construction is standard, is reviewed in the further reading, and is quoted here because it is the general setting of which the spin-1/2 case is the simplest instance.
+whose $2s$ complex roots are the stereographic coordinates of the $2s$ Majorana stars. A global phase of $|\tilde{Ξ}\rangle$ multiplies $P_{\mathrm{sp}}$ by a constant and does not move the roots; a rotation reparametrises them by a Möbius transformation and rotates the sphere rigidly. The construction is standard, is reviewed in the further reading, and is quoted here because it is the general setting of which the spin-1/2 case is the simplest instance.
 
 ### The Spin-1/2 Case: a Single Star
 
 For $s = \tfrac{1}{2}$ the polynomial is linear,
 
 $$
-P_{\mathrm{sp}}(z) = c_{1/2}\,z - c_{-1/2} = \tilde{Ξ}_{\mathrm{sp},1}\,z - \tilde{Ξ}_{\mathrm{sp},2},
+P_{\mathrm{sp}}(z) = c_{1/2}\,z - c_{-1/2} = \tilde{Ξ}_{1}\,z - \tilde{Ξ}_{2},
 $$
 
 with the single root
 
 $$
-z = \frac{c_{-1/2}}{c_{1/2}} = \frac{\tilde{Ξ}_{\mathrm{sp},2}}{\tilde{Ξ}_{\mathrm{sp},1}} = \varkappa_{\mathrm{stg}},
+z = \frac{c_{-1/2}}{c_{1/2}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}} = \varkappa_{\mathrm{stg}},
 $$
 
 which is exactly the stereographic coordinate of the star. The state is a single point on the sphere. The Majorana representation of a spin-1/2 is therefore the Bloch sphere, and the two are not merely analogous: the star **is** the Bloch vector, and the idempotent $\tilde\Pi_1(\vec u_x)$ is the state itself.
@@ -167,13 +167,13 @@ Because the star is the idempotent's axis, it cannot see the phase; the connecti
 The spinor is not an element of $\mathbb{B}$ itself: as the companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{B}_{\Psi}$:
 
 $$
-\tilde\Pi(\tilde{Ξ}_{\mathrm{sp}}) = \frac{\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
+\tilde\Pi(\tilde{Ξ}) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
 $$
 
-with $\vec u_x(\varkappa_{\mathrm{stg}})$ the inverse stereographic image of $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$. The Majorana star is thus the vector part of the idempotent, and the map
+with $\vec u_x(\varkappa_{\mathrm{stg}})$ the inverse stereographic image of $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$. The Majorana star is thus the vector part of the idempotent, and the map
 
 $$
-\text{spinor module} \longrightarrow \mathbb{CP}^1 \longrightarrow \{\text{unit vectors}\}, \qquad \tilde{Ξ}_{\mathrm{sp}} \longmapsto \varkappa_{\mathrm{stg}} \longmapsto \vec u_x,
+\text{spinor module} \longrightarrow \mathbb{CP}^1 \longrightarrow \{\text{unit vectors}\}, \qquad \tilde{Ξ} \longmapsto \varkappa_{\mathrm{stg}} \longmapsto \vec u_x,
 $$
 
 passes from the module to the sphere of idempotents. The first arrow is the projectivisation that discards the phase; the second is the inverse stereographic projection. The whole construction is the statement that the physical state space of a spin-1/2 is $\mathbb{CP}^1$, and the star is its coordinate.
@@ -185,13 +185,13 @@ passes from the module to the sphere of idempotents. The first arrow is the proj
 The natural metric on the projective state space is the Fubini–Study metric, whose distance between two states is
 
 $$
-d(\tilde{Ξ}_{\mathrm{sp}},\theta_{\mathrm{azm}}) = \arccos\bigl|\langle\tilde{Ξ}_{\mathrm{sp}}|\theta_{\mathrm{azm}}\rangle\bigr| .
+d(\tilde{Ξ},\theta_{\mathrm{azm}}) = \arccos\bigl|\langle\tilde{Ξ}|\theta_{\mathrm{azm}}\rangle\bigr| .
 $$
 
 For two spin-1/2 states with stars $\vec u_x$ and $\vec u_y$ at angle $\Theta$ (so $\cos\Theta = \vec u_x\cdot\vec u_y$), the overlap is
 
 $$
-\bigl|\langle\tilde{Ξ}_{\mathrm{sp},\vec u_x}|\tilde{Ξ}_{\mathrm{sp},\vec u_y}\rangle\bigr| = \left|\cos\frac{\Theta}{2}\right|,
+\bigl|\langle\tilde{Ξ}_{\vec u_x}|\tilde{Ξ}_{\vec u_y}\rangle\bigr| = \left|\cos\frac{\Theta}{2}\right|,
 $$
 
 so the Fubini–Study distance is
@@ -207,7 +207,7 @@ one half the angle between the stars. This is the round-sphere metric of the Blo
 The same overlap is the measurement probability. If a spin is prepared with star $\vec u_x$ and then measured along the direction $\vec u_y$, the probability of the outcome $+$ is
 
 $$
-P(+|\vec u_x,\vec u_y) = \bigl|\langle\tilde{Ξ}_{\mathrm{sp},\vec u_y}|\tilde{Ξ}_{\mathrm{sp},\vec u_x}\rangle\bigr|^2 = \cos^2\frac{\Theta}{2}
+P(+|\vec u_x,\vec u_y) = \bigl|\langle\tilde{Ξ}_{\vec u_y}|\tilde{Ξ}_{\vec u_x}\rangle\bigr|^2 = \cos^2\frac{\Theta}{2}
 = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_y)\,\tilde\Pi_1(\vec u_x)\right),
 $$
 
@@ -217,7 +217,7 @@ The angle $\Theta$ between the stars also fixes the relative geometric phase of 
 
 ### Orthogonality and the Antipode
 
-Two spin-1/2 states are orthogonal precisely when their stars are antipodal: $\Theta = \pi$ gives $\cos^2(\Theta/2) = 0$. The antipodal map is not a rotation of the sphere — it reverses orientation — so it is not induced by any rotor; it is realised by the antiunitary spin flip $\tilde{Ξ}_{\mathrm{sp}}\mapsto -i\sigma_y\tilde{Ξ}_{\mathrm{sp}}^*$, which acts on the stereographic coordinate as $\varkappa_{\mathrm{stg}}\mapsto -1/\bar{\varkappa_{\mathrm{stg}}}$ and carries the state to its orthogonal partner. A genuine rotation reaches the antipode only exceptionally: $\sigma_z$ is a rotation through $\pi$ about $\vec u_z$ and sends $\vec u_x$ to $(-u_x,-u_y,u_z)$, which is the antipode only for a star on the equator. A measurement along $\vec u_y = -\vec u_x$ has unit probability of the opposite outcome, and the two orthogonal states whose stars are antipodal form a basis. In the algebra the antipode of $\vec u_x$ is the other idempotent, $\tilde\Pi_2(\vec u_x) = \tilde\Pi_1(-\vec u_x) = e_t - \tilde\Pi_1(\vec u_x)$, so the two orthogonal states are the complementary idempotents of a single axis.
+Two spin-1/2 states are orthogonal precisely when their stars are antipodal: $\Theta = \pi$ gives $\cos^2(\Theta/2) = 0$. The antipodal map is not a rotation of the sphere — it reverses orientation — so it is not induced by any rotor; it is realised by the antiunitary spin flip $\tilde{Ξ}\mapsto -i\sigma_y\tilde{Ξ}^*$, which acts on the stereographic coordinate as $\varkappa_{\mathrm{stg}}\mapsto -1/\bar{\varkappa_{\mathrm{stg}}}$ and carries the state to its orthogonal partner. A genuine rotation reaches the antipode only exceptionally: $\sigma_z$ is a rotation through $\pi$ about $\vec u_z$ and sends $\vec u_x$ to $(-u_x,-u_y,u_z)$, which is the antipode only for a star on the equator. A measurement along $\vec u_y = -\vec u_x$ has unit probability of the opposite outcome, and the two orthogonal states whose stars are antipodal form a basis. In the algebra the antipode of $\vec u_x$ is the other idempotent, $\tilde\Pi_2(\vec u_x) = \tilde\Pi_1(-\vec u_x) = e_t - \tilde\Pi_1(\vec u_x)$, so the two orthogonal states are the complementary idempotents of a single axis.
 
 ### Mixed States Have No Constellation
 
@@ -253,7 +253,7 @@ The Majorana representation is a representation of **pure** states; a mixed stat
 The **Majorana representation** of a spin-$s$ state assigns $2s$ points on the unit sphere — the **stars** — to the state, as the roots of the degree-$2s$ polynomial $P_{\mathrm{sp}}(z) = \sum_m (-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2}c_m z^{s+s_z}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is
 
 $$
-\boxed{\;\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{\mathrm{sp},2}}{\tilde{Ξ}_{\mathrm{sp},1}} = \tan\frac{\theta}{2}\exp(i\theta_{\mathrm{azm}}),
+\boxed{\;\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}} = \tan\frac{\theta}{2}\exp(i\theta_{\mathrm{azm}}),
 \qquad
 \vec u_x = \frac{1}{1+|\varkappa_{\mathrm{stg}}|^2}\left(2\,\mathrm{Re}\,\varkappa_{\mathrm{stg}},\,2\,\mathrm{Im}\,\varkappa_{\mathrm{stg}},\,1-|\varkappa_{\mathrm{stg}}|^2\right)\;}.
 $$
@@ -276,7 +276,7 @@ For $N$ spin-1/2 particles in the symmetric subspace the constellation has $N$ s
 | $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ | Spin-1/2 operator |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Idempotent; the state of a spin-1/2 |
 | $\vec u_x = \vec r$ | Bloch vector; the single Majorana star |
-| $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}})$ | Stereographic coordinate |
+| $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}})$ | Stereographic coordinate |
 | $P_{\mathrm{sp}}(z)$ | Majorana polynomial of degree $2s$ |
 | $2s$ | Number of Majorana stars; $1$ for spin-1/2 |
 | $g = \begin{pmatrix}a&b\\-b^*&a^*\end{pmatrix}\in SU(2)$ | Rotation acting on the spinor |

@@ -17,7 +17,7 @@ This article establishes:
 1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\,\hbar\langle  z|dz/dr'_t\rangle - \langle  z|\tilde H_\Psi|z\rangle)dr'_t$, and the measure.
 2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dr'_t\rangle\,dr'_t = -\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
 3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
-4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}} = 1$; the two forms are related by the change of variables $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$.
+4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ} = 1$; the two forms are related by the change of variables $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
@@ -179,22 +179,22 @@ The pair (symplectic form $\omega$, energy $\langle H\rangle$) makes the sphere 
 The same propagator admits a second path integral, over a two-component spinor with anticommuting (Grassmann) coefficients,
 
 $$
-G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,\mathcal{D}\tilde{Ξ}_{\mathrm{sp}}\; \exp(\frac{i}{\hbar}S[\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}]),
+G_{\mathrm{prop}} = \int\mathcal{D}\tilde{Ξ}^{\dagger}\,\mathcal{D}\tilde{Ξ}\; \exp(\frac{i}{\hbar}S[\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}]),
 \qquad
-S = \int\left(\frac{i\,\hbar\,\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iR_{\mathrm{axf},\vec e_x}\,d\,\tilde{Ξ}_{\mathrm{sp}}}{dr'_{t}}- \langle\tilde{Ξ}_{\mathrm{sp}}|\tilde H_\Psi|\tilde{Ξ}_{\mathrm{sp}}\rangle\right)dr'_t,
+S = \int\left(\frac{i\,\hbar\,\tilde{Ξ}^{\dagger}\,iR_{\mathrm{axf},\vec e_x}\,d\,\tilde{Ξ}}{dr'_{t}}- \langle\tilde{Ξ}|\tilde H_\Psi|\tilde{Ξ}\rangle\right)dr'_t,
 $$
 
-subject to the constraint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}} = 1$, which fixes the norm of the spinor. The constraint is the statement that the state is pure; without it the integral would describe a mixed or a many-component system. The Grassmann variables are the algebraic expression of the spinor's anticommuting nature, and the integral over them is the standard fermionic path integral of a two-level system.
+subject to the constraint $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ} = 1$, which fixes the norm of the spinor. The constraint is the statement that the state is pure; without it the integral would describe a mixed or a many-component system. The Grassmann variables are the algebraic expression of the spinor's anticommuting nature, and the integral over them is the standard fermionic path integral of a two-level system.
 
 ### Relation to the Coherent-State Form
 
 The two path integrals are related by the change of variables
 
 $$
-\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{\mathrm{sp},2}}{\tilde{Ξ}_{\mathrm{sp},1}},
+\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}},
 $$
 
-which is precisely the stereographic coordinate of the Majorana construction. The coherent-state integral is the projection of the spinor integral onto $\mathbb{CP}^1$: the spinor carries four real parameters, the constraint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=1$ removes one, and the remaining three split into two for the direction and one for the overall phase, the coordinate along the fibres of the double cover. The coherent-state integral forgets the phase, and the Wess–Zumino term is what remains of it in the action. This is the precise sense in which the double cover is visible in the path integral: the two formulations differ by the fibre, and the fibre integral reproduces the Wess–Zumino term.
+which is precisely the stereographic coordinate of the Majorana construction. The coherent-state integral is the projection of the spinor integral onto $\mathbb{CP}^1$: the spinor carries four real parameters, the constraint $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$ removes one, and the remaining three split into two for the direction and one for the overall phase, the coordinate along the fibres of the double cover. The coherent-state integral forgets the phase, and the Wess–Zumino term is what remains of it in the action. This is the precise sense in which the double cover is visible in the path integral: the two formulations differ by the fibre, and the fibre integral reproduces the Wess–Zumino term.
 
 ### The Biquaternion Reading
 
@@ -260,7 +260,7 @@ $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
 
-The saddle point of $S$ is the classical Larmor precession $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\frac{\hbar}{2}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde H_\Psi\rangle  = -\frac{\hbar\,\omega_{L}}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$.
+The saddle point of $S$ is the classical Larmor precession $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\frac{\hbar}{2}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde H_\Psi\rangle  = -\frac{\hbar\,\omega_{L}}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
 
 In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\,\pi\,\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
@@ -275,13 +275,13 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\mathbb{B}_{H}$ | Unit real quaternions; the classical rotors |
 | $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ | Spin-1/2 operator |
 | $|\varkappa_{\mathrm{stg}}\rangle$ | Spin coherent state with Bloch vector $\vec u(\varkappa_{\mathrm{stg}})$ |
-| $\varkappa_{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}}) = \tilde{Ξ}_{\mathrm{sp},2}/\tilde{Ξ}_{\mathrm{sp},1}$ | Stereographic coordinate |
+| $\varkappa_{\mathrm{stg}} = \tan\tfrac{\theta}{2}\exp(i\theta_{\mathrm{azm}}) = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$ | Stereographic coordinate |
 | $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
 | $S_{WZ} =i\,\hbar\,\oint\langle  z|\partial/\partial r'_t|z\rangle  dr'_t = -\frac{\hbar\,\theta_{\mathrm{sol}}}{2}$ | Wess–Zumino term |
 | $\omega = -\frac{\hbar}{2}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ | Symplectic form of the sphere |
 | $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$ | Classical Larmor precession |
-| $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}_{\mathrm{sp}}$ | Grassmann spinor variables, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}_{\mathrm{sp}}=1$ |
+| $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}$ | Grassmann spinor variables, $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$ |
 | $\left|\int_{S^2}\omega\right| =2\,\pi\,\hbar$ | Unit-charge flux; non-exactness of $\omega$ |
 
 ## Further Reading

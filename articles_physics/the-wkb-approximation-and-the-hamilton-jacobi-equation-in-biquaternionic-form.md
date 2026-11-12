@@ -4,7 +4,7 @@
 
 The WKB approximation is the semiclassical expansion of the wave function in powers of $\hbar$. Its leading order is the classical Hamilton–Jacobi equation for the action, and its next order is a transport equation for the amplitude. It is the bridge between the quantum problem and the classical trajectories, and it is the method by which barrier penetration, quantisation conditions, and the correspondence principle are usually obtained. This article develops both the WKB approximation and the Hamilton–Jacobi equation in the biquaternion framework, for a spin-0 particle in an external scalar potential.
 
-The biquaternion content of the semiclassical limit is unusually clean, because the approximation is organised by the **phase**. In the biquaternion algebra the phase $\exp(\frac{i\,S}{\hbar})$ is a central element — its exponent is a real scalar times the central imaginary — so the WKB ansatz $\tilde{Ξ}_{\mathrm{sp}} = A\,\exp(\frac{i\,S}{\hbar})$ places the amplitude in the centre and the action in the centre, and the leading-order momentum is the real quaternion $\vec\nabla_\Phi S$, the algebra's spatial vector. The Hamilton–Jacobi equation then turns out to be nothing but the **biquaternion norm of the momentum** equated to twice the kinetic energy,
+The biquaternion content of the semiclassical limit is unusually clean, because the approximation is organised by the **phase**. In the biquaternion algebra the phase $\exp(\frac{i\,S}{\hbar})$ is a central element — its exponent is a real scalar times the central imaginary — so the WKB ansatz $\tilde{Ξ} = A\,\exp(\frac{i\,S}{\hbar})$ places the amplitude in the centre and the action in the centre, and the leading-order momentum is the real quaternion $\vec\nabla_\Phi S$, the algebra's spatial vector. The Hamilton–Jacobi equation then turns out to be nothing but the **biquaternion norm of the momentum** equated to twice the kinetic energy,
 
 $$\frac{1}{2\,m}\langle  \vec\nabla_\Phi  S\rangle_{\natural}  = E - V ,
 $$
@@ -24,7 +24,7 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 Write the stationary state as
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;\exp(\,\frac{i\,S\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\hbar})\;\xi,
+\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;\exp(\,\frac{i\,S\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\hbar})\;\xi,
 \qquad
 A(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) > 0, \quad S(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \in  \mathbb{R}, \quad \xi \in  \mathbb{B}\tilde\Pi,
 $$
@@ -44,14 +44,14 @@ the second fixed by the eigenvalue because the state is stationary, and its norm
 The momentum acts on the phase in a fixed way. Since $\partial/\partial R_\mu \exp(\frac{i\,S}{\hbar}) = (\frac{i}{\hbar})(\partial S/\partial R_\mu)\exp(\frac{i\,S}{\hbar})$,
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp}} = \sum_\mu  \vec e_\mu p_\mu \tilde{Ξ}_{\mathrm{sp}}
-= \sum_\mu  \vec e_\mu\left(\partial  S/\partial R_\mu -i\,\hbar\partial/\partial R_\mu \ln A\right)\tilde{Ξ}_{\mathrm{sp}} ,
+\tilde p\,\tilde{Ξ} = \sum_\mu  \vec e_\mu p_\mu \tilde{Ξ}
+= \sum_\mu  \vec e_\mu\left(\partial  S/\partial R_\mu -i\,\hbar\partial/\partial R_\mu \ln A\right)\tilde{Ξ} ,
 $$
 
 so, separating the real phase gradient from the $\hbar$-suppressed amplitude term,
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp}} = \Big[\,\vec\nabla_\Phi  S -i\,\hbar\vec\nabla_\Phi\ln  A\,\Big]\tilde{Ξ}_{\mathrm{sp}},
+\tilde p\,\tilde{Ξ} = \Big[\,\vec\nabla_\Phi  S -i\,\hbar\vec\nabla_\Phi\ln  A\,\Big]\tilde{Ξ},
 \qquad
 \vec\nabla_\Phi  S = \sum_\eta  (\partial S/\partial R_\eta)\,\vec e_\eta .
 $$
@@ -60,7 +60,7 @@ The leading term $\vec\nabla_\Phi S$ is a **real quaternion**, an element of the
 
 ### The two real equations
 
-Apply the Hamiltonian to the ansatz and separate powers of $\hbar$. From $H\tilde{Ξ}_{\mathrm{sp}} = E\tilde{Ξ}_{\mathrm{sp}}$ with $H = (-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V)e_t$,
+Apply the Hamiltonian to the ansatz and separate powers of $\hbar$. From $H\tilde{Ξ} = E\tilde{Ξ}$ with $H = (-\frac{\hbar^{2}}{2\,m}\Delta_\Phi+V)e_t$,
 
 $$
 -\frac{\hbar^{2}}{2\,m}\Delta_\Phi\!\left(A \exp(\frac{i\,S}{\hbar})\right) + \left(V - E\right)A \exp(\frac{i\,S}{\hbar}) = 0 ,
@@ -193,7 +193,7 @@ which measures the focusing of the ray congruence: $A^2$ is the density of traje
 The transport equation involves only the real amplitude and the real phase gradient, so it lives in the real-quaternion and central parts of the algebra. There is no non-central element anywhere in the leading semiclassical state:
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\mathrm{wkb}} = A\,\exp(\frac{i\,S}{\hbar})\,\xi,
+\tilde{Ξ}_{\mathrm{wkb}} = A\,\exp(\frac{i\,S}{\hbar})\,\xi,
 \qquad
 A\in\mathbb{B}_{C}|_{\mathbb{R}}=\mathbb{R}e_t,
 \quad
@@ -295,7 +295,7 @@ The reality of $A$ is not an assumption but a choice of gauge. Any state can be 
 
 ## Summary
 
-The WKB ansatz in the biquaternion framework is $\tilde{Ξ}_{\mathrm{sp}}=A\,\exp(\frac{i\,S}{\hbar})\,\xi$ with a central phase, a real central amplitude, and a constant module element $\xi$. The momentum acts on it as $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\vec\nabla_\Phi  S -i\,\hbar\vec\nabla_\Phi\ln  A]\tilde{Ξ}_{\mathrm{sp}}$, with the leading term the real quaternion $\vec\nabla_\Phi S$ in the spatial-vector subspace $\mathbb{B}_{H}$. Separating the Schrödinger equation into real and imaginary parts gives the exact pair
+The WKB ansatz in the biquaternion framework is $\tilde{Ξ}=A\,\exp(\frac{i\,S}{\hbar})\,\xi$ with a central phase, a real central amplitude, and a constant module element $\xi$. The momentum acts on it as $\tilde p\tilde{Ξ}=[\vec\nabla_\Phi  S -i\,\hbar\vec\nabla_\Phi\ln  A]\tilde{Ξ}$, with the leading term the real quaternion $\vec\nabla_\Phi S$ in the spatial-vector subspace $\mathbb{B}_{H}$. Separating the Schrödinger equation into real and imaginary parts gives the exact pair
 
 $$
 \vec\nabla_\Phi\cdot(A^2\vec\nabla_\Phi S) = 0,\frac{|\vec\nabla_\Phi  S|^2 c}{2\,m\,c} + V + Q = E,
@@ -325,9 +325,9 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; home of the phase gradient |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $\tilde{Ξ}_{\mathrm{sp}}=A\exp(\frac{i\,S}{\hbar})\xi=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
+| $\tilde{Ξ}=A\exp(\frac{i\,S}{\hbar})\xi=A\exp(iS/\hbar)\xi$ | WKB state; central phase, real central amplitude, constant $\xi$ |
 | $\tilde p=-i\hbar\vec\nabla_\Phi$ | Momentum operator, Hermitian; $\tilde K_{\Phi}=\tilde p/\hbar$ on a plane wave |
-| $\tilde p\tilde{Ξ}_{\mathrm{sp}}=[\vec\nabla_\Phi  S-i\,\hbar\vec\nabla_\Phi\ln  A]\tilde{Ξ}_{\mathrm{sp}}$ | Action of the momentum on the WKB state |
+| $\tilde p\tilde{Ξ}=[\vec\nabla_\Phi  S-i\,\hbar\vec\nabla_\Phi\ln  A]\tilde{Ξ}$ | Action of the momentum on the WKB state |
 | $\vec\nabla_\Phi S=\sum_\mu(\partial S/\partial R_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{B}_{H}$ |
 | $\langle \vec\nabla_\Phi S\rangle_{\natural}=\lvert\vec\nabla_\Phi S\rvert^2$ | Biquaternion norm of the phase gradient; $\vec\nabla_\Phi S\,\vec\nabla_\Phi S^{\natural}=\lvert\vec\nabla_\Phi S\rvert^2e_t$ |
 | $\frac{1}{2\,m}\langle  \vec\nabla_\Phi  S\rangle_{\natural}=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |

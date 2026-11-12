@@ -337,14 +337,14 @@ The mathematics of the sector and its action on the material sector is structura
 | --- | --- |
 | State space $\mathbb{C}^2$ | spinor module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ |
 | Density matrix $\rho$ (Hermitian, positive, trace one) | element $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ (Hermitian, positive, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; trace one in the image) |
-| Pure state $\lvert\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}\langle\tilde{Ξ}_{\mathrm{sp}}\rvert$ | idempotent $\tfrac12(e_t+i\vec u)$ |
+| Pure state $\lvert\tilde{Ξ}\rangle_{*}\langle\tilde{Ξ}\rvert$ | idempotent $\tfrac12(e_t+i\vec u)$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ |
 | $*$-Unitary gate $U$ | matrix-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
 | Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as $2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$; the trace enters only at normalisation |
 | Reversible evolution $U\rho U^{\dagger}$ | rotor conjugation $\tilde U\tilde{Ϛ}_{\Psi}\tilde U^{*}$ |
 | Projective measurement $\rho\mapsto P\rho P$ | Hermitian idempotent projection $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ |
 
-The basis of the module is one idempotent and one nilpotent: $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$, with $\tilde\Pi_+^2=\tilde\Pi_+$, $\vec\Upsilon_2^2=0$ and Gram matrix $\tfrac12 I_2$. A general spinor is $s_1\tilde\Pi_++s_2\vec\Upsilon_2$ with complex coefficients; the two states are carried by the coefficients, not by the two basis elements. The module is a genuine Hilbert space, with $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_{*}=\tfrac12(\lvert s_1\rvert^2+\lvert s_2\rvert^2)$ positive definite.
+The basis of the module is one idempotent and one nilpotent: $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$, with $\tilde\Pi_+^2=\tilde\Pi_+$, $\vec\Upsilon_2^2=0$ and Gram matrix $\tfrac12 I_2$. A general spinor is $s_1\tilde\Pi_++s_2\vec\Upsilon_2$ with complex coefficients; the two states are carried by the coefficients, not by the two basis elements. The module is a genuine Hilbert space, with $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{*}=\tfrac12(\lvert s_1\rvert^2+\lvert s_2\rvert^2)$ positive definite.
 
 **What the correspondence is.** A structural fact about the algebra. The Hermitian elements are operators on the spinor module, and the algebra they generate is the algebra of observables of a two-state system.
 

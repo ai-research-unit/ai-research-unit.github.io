@@ -56,7 +56,7 @@ $$
 
 The bar is an automorphism of the algebra, it conjugates the norm, and on an element of norm one its value is again of norm one; the assignment $\tilde U_{\mathrm{lor}}\mapsto\bar{\tilde U}_{\mathrm{lor}}$ is therefore an automorphism of the group, and the action is a genuine representation. The bar is the coefficient conjugation of *Algebra and Element Conventions*, and it is not the Hermitian conjugation: the star composes the bar with the quaternion sign.
 
-**The two halves are not the two values.** The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, and its two parts are the two values. Both parts carry the same action of the group: a left multiplication multiplies both by $\tilde U_{\mathrm{lor}}$, so the two parts are two copies of one module. The inequivalence of the two labels belongs to the pair of modules $(S,\bar S)$ and not to the two values of one element.
+**The two halves are not the two values.** The field is one element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$, and its two parts are the two values. Both parts carry the same action of the group: a left multiplication multiplies both by $\tilde U_{\mathrm{lor}}$, so the two parts are two copies of one module. The inequivalence of the two labels belongs to the pair of modules $(S,\bar S)$ and not to the two values of one element.
 
 **The algebra cannot see the difference.** The algebra is simple and has one simple module, so both values are copies of it; a difference between the two halves is not a property of the algebra and no subspace of the algebra carries it. The conjugate module is not a module for the algebra at all: the assignment $\tilde U_{\mathrm{lor}}\mapsto\bar{\tilde U}_{\mathrm{lor}}$ conjugates the scalar $i$, so it is not $\mathbb{C}$-linear in the algebra element, and the action is not the restriction of a $\mathbb{C}$-linear action of the algebra.
 
@@ -299,18 +299,18 @@ The one-sided action is not a device of this article. It is the multiplication o
 2. **The covariance of the biquaternion Dirac equation.** The companion article [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) carries two equations, and they are not the same operator. The corpus's own equation is the **one-sided chiral pair**
 
     $$
-    \tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+    \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
     \qquad
-    (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+    (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
     $$
 
-    in which the gradient acts by left multiplication on the field $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B}$ and the mass is the term that carries one value to the other. Kravchenko's equation is the **two-sided** single equation on $\mathbb{B}$,
+    in which the gradient acts by left multiplication on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B}$ and the mass is the term that carries one value to the other. Kravchenko's equation is the **two-sided** single equation on $\mathbb{B}$,
 
     $$
     \mathcal{N}F=\left(i\frac{\partial}{\partial r'_t}+D_3\right)F-k_mi\,\overline{F}\,\vec e_z=0,
     $$
 
-    in which the derivative acts on the left, the mass acts on the right through $\vec e_z$, and the conjugation supplies the antilinear part. The two are related by the dictionary, but the transformation law of the biquaternion-valued field $\tilde{Ξ}_{\mathrm{sp}}$ is still open. A natural candidate is the one-sided action defined here; its compatibility with the mass term requires the relation between that action and the conjugate module to be fixed by a convention. The one-sided pair is the definition; the two-sided form is a representation in which the mass is a right multiplication. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+    in which the derivative acts on the left, the mass acts on the right through $\vec e_z$, and the conjugation supplies the antilinear part. The two are related by the dictionary, but the transformation law of the biquaternion-valued field $\tilde{Ξ}$ is still open. A natural candidate is the one-sided action defined here; its compatibility with the mass term requires the relation between that action and the conjugate module to be fixed by a convention. The one-sided pair is the definition; the two-sided form is a representation in which the mass is a right multiplication. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 3. **The alternating pairing within a value.** The quaternionic form vanishes on each value and pairs the two values; an alternating scalar built from two fields of one value, the $\varepsilon$ of the older display, is not among the four forms of *Product and Form Conventions* and is not constructed here. Its expression in elements of the algebra is a matter of convention.
 

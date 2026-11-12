@@ -15,12 +15,12 @@ The article is organised as follows. The next section recalls the standard pictu
 The dynamics in the algebra is the pair of the parent,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}
 $$
 
 (*The Dirac Equation in Biquaternionic Form*, §*Statement*). The standard picture, which this section follows, reads the equation first order in time,
 
-$$i\,\hbar\,c\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  r'_t} = H\tilde{Ξ}_{\mathrm{sp}}, \qquad H = c\sum_{\eta=x,y,z} p_\eta\,\alpha_\eta + \beta\,mc^2,
+$$i\,\hbar\,c\frac{\partial\tilde{Ξ}}{\partial  r'_t} = H\tilde{Ξ}, \qquad H = c\sum_{\eta=x,y,z} p_\eta\,\alpha_\eta + \beta\,mc^2,
 $$
 
 with $p_\eta=-i\,\hbar\partial/\partial r_\eta$ and the two maps
@@ -67,24 +67,24 @@ The biquaternionic Dirac equation is the parent's linear pair, off-diagonal in t
 
 $$
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_m\tilde{Ξ}_{\mathrm{sp},L},\\[2pt]
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} &= k_m\tilde{Ξ}_{L},\\[2pt]
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} &= k_m\tilde{Ξ}_{R},
 \end{aligned}
 $$
 
-for a field of mass $m$. The field is one element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$, and its two parts are the two components that the subscripts name. Each line applies the gradient to one component and equates it to $k_m$ times the other, so $k_m$ is the coefficient of that exchange. The gradient multiplies on the left and keeps the value, and $k_m$ is central and keeps it too, so no term of the pair moves a value across: the letters name the two components, and the pair relates them. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each component.
+for a field of mass $m$. The field is one element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$, and its two parts are the two components that the subscripts name. Each line applies the gradient to one component and equates it to $k_m$ times the other, so $k_m$ is the coefficient of that exchange. The gradient multiplies on the left and keeps the value, and $k_m$ is central and keeps it too, so no term of the pair moves a value across: the letters name the two components, and the pair relates them. At $m=0$ the pair decouples into the two one-sided equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$, one for each component.
 
 The conjugation $\flat$ is the algebra's real structure, not the mass term (§*The Conjugations* of the conventions article cited above). The corpus also carries a **two-sided** form of the same physics — Kravchenko's single equation on $\mathbb{B}$, in which the mass acts by right multiplication through $\vec e_z$ and a conjugation supplies the antilinear part — but the two forms are related by a dictionary and are not the same operator (parent, §*The One-Sided and the Two-Sided Equation*). The Zitterbewegung derivation below uses the pair.
 
 The plane-wave solutions are
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\big)/\hbar\Big),\frac{\tilde{P}_{\Phi}}{\hbar}=\frac{i\,e_{t}\,E}{\hbar\,c}+\vec k_\Phi,
+\tilde{Ξ}=\tilde{Ξ}_{0}\exp\!\Big(i\,\mathrm{Sc}\big(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}\big)/\hbar\Big),\frac{\tilde{P}_{\Phi}}{\hbar}=\frac{i\,e_{t}\,E}{\hbar\,c}+\vec k_\Phi,
 \qquad
 \tilde R_\Phi=e_t(i r'_t)+\vec r,
 $$
 
-with $\tilde{Ξ}_{\mathrm{sp},0}$ a constant element and $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The single mass-shell condition is
+with $\tilde{Ξ}_{0}$ a constant element and $\vec r=r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$. The single mass-shell condition is
 
 $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}.
@@ -93,12 +93,12 @@ $$
 The two roots of that condition — positive and negative frequency — are the two branches
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}^{(+)}=\tilde{Ξ}_{\mathrm{sp},0}^{(+)}\exp\!\Big(-i\frac{Er'_t/c-\vec p\cdot\vec r}{\hbar}\Big),
+\tilde{Ξ}^{(+)}=\tilde{Ξ}_{0}^{(+)}\exp\!\Big(-i\frac{Er'_t/c-\vec p\cdot\vec r}{\hbar}\Big),
 \qquad
-\tilde{Ξ}_{\mathrm{sp}}^{(-)}=\tilde{Ξ}_{\mathrm{sp},0}^{(-)}\exp\!\Big(+i\frac{Er'_t/c-\vec p\cdot\vec r}{\hbar}\Big),
+\tilde{Ξ}^{(-)}=\tilde{Ξ}_{0}^{(-)}\exp\!\Big(+i\frac{Er'_t/c-\vec p\cdot\vec r}{\hbar}\Big),
 $$
 
-constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$ and constant elements $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$. The normalisation and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
+constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$ and constant elements $\tilde{Ξ}_{0}^{(\pm)}$. The normalisation and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
 
 One fact about the field will be needed throughout, and it is the sector action of the real structure: $\flat$ acts as $-1$ on the $\mathbb{B}_{\Psi}$ part of the field and $+1$ on its $\mathbb{B}_{\Phi}$ part, so its fixed space is $\mathbb{B}_{\Phi}$ (§*The Conjugations*). The physical Majorana mass is a different object: it is built on charge conjugation, not on the algebra's $\flat$ (see *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*). What the diagonal action of the real structure, the mass coupling of the two values, and the rest-energy phase do to the sectors is the subject of the section *The Complexification and the Rest-Energy Phase*.
 
@@ -204,7 +204,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of the basis operator algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the basis operators $\beta$ and $\alpha_\eta$.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \begin{aligned}
@@ -250,8 +250,8 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | Its four units, the coefficient basis |
 | $i$ | The central scalar imaginary |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | The anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\tilde{Ξ}_{\mathrm{sp}}$, $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per letter of the pair |
-| $\tilde{Ξ}_{\mathrm{sp}}^{(+)}, \tilde{Ξ}_{\mathrm{sp}}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{\mathrm{sp},0}^{(\pm)}$ their constant elements |
+| $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field, one element of $\mathbb{B}$, and its two parts, one per letter of the pair |
+| $\tilde{Ξ}^{(+)}, \tilde{Ξ}^{(-)}$ | The two frequency branches; $\tilde{Ξ}_{0}^{(\pm)}$ their constant elements |
 | $\tilde R_\Phi$ | The four-position biquaternion of the parent |
 | $\tilde K_{\Phi}$ | The wave biquaternion of the parent, $\vec k_\Phi=\vec p\,\frac{1}{\hbar}$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |

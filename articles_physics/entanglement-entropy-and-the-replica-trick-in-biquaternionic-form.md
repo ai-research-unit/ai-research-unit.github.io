@@ -108,13 +108,13 @@ $$
 Z_2=\mathrm{Tr}\big(\rho_A^2\big)
 =\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A_{\mathrm r}B_{\mathrm r}}\big)\,\mathbb F_{AA_{\mathrm r}}\Big],
 $$
-where the factors carrying the replica subscript are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle\langle\tilde{Ξ}_{\mathrm{sp},\theta}|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.
+where the factors carrying the replica subscript are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.
 
 ## The Schmidt Decomposition and the Entanglement Spectrum
 
-For a **pure** bipartite state the reduced spectra of the two sides coincide, and the reason is the Schmidt decomposition. Every $|\tilde{Ξ}_{\mathrm{sp}}\rangle\in\mathcal H_A\otimes\mathcal H_B$ can be written
+For a **pure** bipartite state the reduced spectra of the two sides coincide, and the reason is the Schmidt decomposition. Every $|\tilde{Ξ}\rangle\in\mathcal H_A\otimes\mathcal H_B$ can be written
 $$
-|\tilde{Ξ}_{\mathrm{sp}}\rangle=\sum_i\sqrt{\lambda_i}\,|a_i\rangle\otimes|b_i\rangle,
+|\tilde{Ξ}\rangle=\sum_i\sqrt{\lambda_i}\,|a_i\rangle\otimes|b_i\rangle,
 \qquad \lambda_i\ge0,\quad \sum_i\lambda_i=1,
 $$
 with orthonormal sets $\{|a_i\rangle\}$ and $\{|b_i\rangle\}$; then
@@ -133,9 +133,9 @@ The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of t
 
 Take the pure two-qubit state
 $$
-|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle_{*}=\cos\theta\,|00\rangle+\sin\theta\,|11\rangle,
+|\tilde{Ξ}_{\theta}\rangle_{*}=\cos\theta\,|00\rangle+\sin\theta\,|11\rangle,
 \qquad
-\rho_{AB}=|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle\langle\tilde{Ξ}_{\mathrm{sp},\theta}|.
+\rho_{AB}=|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|.
 $$
 Tracing out $B$ in the biquaternion tensor product — equivalently, using the partial trace of the strong-subadditivity companion article — gives the reduced state
 $$
@@ -226,7 +226,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 Entanglement entropy is the von Neumann entropy of a reduced state, $S_A=-\mathrm{Tr}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\rho_{AB}$, and the replica trick computes it from the moments $Z_n=\mathrm{Tr}\rho_A^n$ by continuation to $n\to1$: $S_A=-d\log Z_n/dn|_1$. In quantum field theory the moments are partition functions on $n$-sheeted covers; in finite dimension they are power sums of the reduced state's eigenvalues.
 
-In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\mathsf{C}_n$ of the factors, and the moment is the shift expectation $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
+In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\mathsf{C}_n$ of the factors, and the moment is the shift expectation $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
 
 The framework thus reproduces the replica method exactly in finite dimension, with the entanglement entropy of a bipartition equal to the entropy of a reduced biquaternion state. What it cannot reproduce is the field-theoretic content: the branched cover, the ultraviolet divergence, and the geometric scaling that the area-law companion article treats.
 
@@ -248,7 +248,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $\mathsf{C}_n$ | Cyclic shift of the $n$ replicas |
 | $\mathbb F_{AA_{\mathrm r}}$ | Swap operator; $n=2$ replica shift |
 | $\vec r_A$, $r_A=|\vec r_A|$ | Bloch vector and radius of a single-mode reduced state |
-| $\cos^2\theta,\sin^2\theta$ | Eigenvalues of $\rho_A$ for $|\tilde{Ξ}_{\mathrm{sp},\theta}\rangle$ |
+| $\cos^2\theta,\sin^2\theta$ | Eigenvalues of $\rho_A$ for $|\tilde{Ξ}_{\theta}\rangle$ |
 | $h(p)$ | Binary entropy $-p\log p-(1-p)\log(1-p)$ |
 
 ## Further Reading

@@ -5,11 +5,11 @@
 The Schrödinger equation in biquaternionic form is
 
 $$
-i\hbar\,c\,\partial/\partial r'_t\,\tilde\Xi_{\mathrm{sp}} = \tilde H_\Psi\,\tilde\Xi_{\mathrm{sp}},
+i\hbar\,c\,\partial/\partial r'_t\,\tilde\Xi = \tilde H_\Psi\,\tilde\Xi,
 \qquad
 \tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi},
 \qquad
-\tilde\Xi_{\mathrm{sp}} \in \mathbb{B}.
+\tilde\Xi \in \mathbb{B}.
 $$
 
 The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an element of the algebra and not a differential operator, so the equation is an ordinary differential equation in $r'_t$ and describes a finite-dimensional system. The differential case, in which those coefficients contain $\nabla$, is *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, and every statement below holds there coefficient by coefficient.
@@ -17,7 +17,7 @@ The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an
 Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable's mirror over one real scale,
 
 $$
-\partial/\partial r'_t\,\tilde\Xi_{\mathrm{sp}} = \frac{1}{\hbar\,c}\,\tilde H_\Phi\,\tilde\Xi_{\mathrm{sp}},
+\partial/\partial r'_t\,\tilde\Xi = \frac{1}{\hbar\,c}\,\tilde H_\Phi\,\tilde\Xi,
 \qquad
 \tilde H_\Phi = -i\,\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$
@@ -31,7 +31,7 @@ carries. This article uses the pair and does not rebuild it; what it adds is the
 
 Three things in and around $\mathbb{B}$ play the role of $i$, and only one of them is the $i$ of the two writings above. Confusing them produces equations that look like the Schrödinger equation and do not preserve the trace. The first section separates them by role and decides which one the writings use.
 
-The companion article *Quantum Physics in Biquaternionic Form* takes the density matrix for its object. It exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $i\hbar\,c\,d\tilde{Q}/dr'_{t}= \tilde H_\Psi\tilde Q$, and the state equation $i\hbar\,c\,d\tilde{Ϛ}_{\Psi}/dr'_{t}= [\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]$ for $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$. This article takes the field for its object and writes $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$ for $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{B}$. The difference is the object and not the equation: both writings apply to both objects, and the field equation is shown to imply the density-matrix equation. The subscript `sp` carried by the field is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it; it names a role and not a sector.
+The companion article *Quantum Physics in Biquaternionic Form* takes the density matrix for its object. It exhibits the $*$-unitary biquaternion $\tilde Q(r'_t)$ obeying $i\hbar\,c\,d\tilde{Q}/dr'_{t}= \tilde H_\Psi\tilde Q$, and the state equation $i\hbar\,c\,d\tilde{Ϛ}_{\Psi}/dr'_{t}= [\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]$ for $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$. This article takes the field for its object and writes $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$ for $\tilde{Ξ} \in \mathbb{B}$. The difference is the object and not the equation: both writings apply to both objects, and the field equation is shown to imply the density-matrix equation. The subscript `sp` carried by the field is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it; it names a role and not a sector.
 
 The article is organised as the two writings demand. The three objects that square to minus one are separated. The central $i$ is shown to be the intertwiner that produces the second writing. The carrier is shown to be $\mathbb{B}$ and not one of its sectors, because both writings must hold in it. The equation is solved in the $\mathbb{B}_{\Psi}$ writing and read in the $\mathbb{B}_{\Phi}$ writing. The unit is shown to be $\pm i$ and nothing else. The closing sections separate what the form adds from what it merely relabels.
 
@@ -107,7 +107,7 @@ $(i\vec e_x)^{*} = i\vec e_x$), one has $\tilde H_\Phi=-i\,(i\vec e_x)=\vec e_x$
 
 ### The carrier
 
-The field is one element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$, with four complex coefficients, that is eight real numbers. The equation is left multiplication by $\tilde H_\Psi$, and $\mathbb{B}$ is an algebra, so a product of two elements is an element: if the right-hand side is in the carrier, so is the left-hand side, and the equation restricts nothing.
+The field is one element $\tilde{Ξ}$ of $\mathbb{B}$, with four complex coefficients, that is eight real numbers. The equation is left multiplication by $\tilde H_\Psi$, and $\mathbb{B}$ is an algebra, so a product of two elements is an element: if the right-hand side is in the carrier, so is the left-hand side, and the equation restricts nothing.
 
 **Nothing stands behind the field.** No column, no ideal, no projector, no idempotent and no declared axis is needed to write the equation or to solve it. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: a field is an element, the operator is left multiplication, and the display, when one is wanted, is the axis-free array of the multiplication table.
 
@@ -132,10 +132,10 @@ so the symbol $L_{\tilde H_\Psi}$ is Hermitian for that form, and the flow it ge
 The field carries one complex coefficient of $e_t$ and three of $\vec e_\mu$, that is $2+6$ real numbers. A field with only the scalar coefficient nonzero,
 
 $$
-\tilde\Xi_{\mathrm{sp}}(r'_t)=\Xi_t(r'_t)\,e_t,
+\tilde\Xi(r'_t)=\Xi_t(r'_t)\,e_t,
 $$
 
-is called **central**, and for it $\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}=h_t\Xi_t\,e_t$ exactly when $\vec h_\Psi=0$: the equation then reduces to the ordinary one-component equation for $\Xi_t$. The remaining six real parameters are the field's rotor and boost, and *The Polar Form of the Schrödinger Equation in Biquaternionic Form* reads them.
+is called **central**, and for it $\tilde H_\Psi\tilde\Xi=h_t\Xi_t\,e_t$ exactly when $\vec h_\Psi=0$: the equation then reduces to the ordinary one-component equation for $\Xi_t$. The remaining six real parameters are the field's rotor and boost, and *The Polar Form of the Schrödinger Equation in Biquaternionic Form* reads them.
 
 **Why not $\mathbb{B}_{\Psi}$.** The temptation is to let the state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ of the companion article serve as the field. The equation rules it out, and the reason is closure. The field is multiplied on the left by every Hermitian element, because the Hamiltonian is arbitrary, so the carrier must be closed under left multiplication by $\mathbb{B}_{\Psi}$. The sector is not closed under its own products: $(i\vec e_x)(i\vec e_y)=-\vec e_z\in\mathbb{B}_{\Phi}$, so a field confined to $\mathbb{B}_{\Psi}$ is multiplied out of it by its own equation. Every element of $\mathbb{B}$ is a sum of a Hermitian and an anti-Hermitian part,
 
@@ -143,41 +143,41 @@ $$
 \tilde Q=\tfrac12(\tilde Q+\tilde Q^{*})+\tfrac12(\tilde Q-\tilde Q^{*}),
 $$
 
-and the second part is $-i$ times a Hermitian element. Closure under $\mathbb{B}_{\Psi}$ is therefore closure under all of $\mathbb{B}$, and the smallest such carrier containing $e_t$ is $\mathbb{B}$ itself. The second writing shows the same from the other side: its multiplier $-i\tilde H_\Psi/\hbar\,c$ ranges over $\mathbb{B}_{\Phi}$ as $\tilde H_\Psi$ ranges over $\mathbb{B}_{\Psi}$, so the multipliers named by the two writings together span $\mathbb{B}$. A Hermitian-valued solution exists — with $\tilde H_\Psi=i\vec e_x$ and $\tilde\Xi_{\mathrm{sp}}(r'_t)=i(\cos\theta\,\vec e_y+\sin\theta\,\vec e_z)$, $\theta=r'_t/(\hbar\,c)$, both sides equal $\sin\theta\,\vec e_y-\cos\theta\,\vec e_z$ — but its being a solution is a coincidence of that sector and not a structure of the equation. The carrier of the flow is $\mathbb{B}$.
+and the second part is $-i$ times a Hermitian element. Closure under $\mathbb{B}_{\Psi}$ is therefore closure under all of $\mathbb{B}$, and the smallest such carrier containing $e_t$ is $\mathbb{B}$ itself. The second writing shows the same from the other side: its multiplier $-i\tilde H_\Psi/\hbar\,c$ ranges over $\mathbb{B}_{\Phi}$ as $\tilde H_\Psi$ ranges over $\mathbb{B}_{\Psi}$, so the multipliers named by the two writings together span $\mathbb{B}$. A Hermitian-valued solution exists — with $\tilde H_\Psi=i\vec e_x$ and $\tilde\Xi(r'_t)=i(\cos\theta\,\vec e_y+\sin\theta\,\vec e_z)$, $\theta=r'_t/(\hbar\,c)$, both sides equal $\sin\theta\,\vec e_y-\cos\theta\,\vec e_z$ — but its being a solution is a coincidence of that sector and not a structure of the equation. The carrier of the flow is $\mathbb{B}$.
 
 ### Vanishing, the cone, and the density
 
 The ordinary wave function may vanish, and the vanishing is a point at which the polar parametrisation of the companion article is undefined. Here the analogous locus is larger and it is algebraic: the field is a zero divisor exactly when its quaternionic norm vanishes,
 
 $$
-\langle\tilde\Xi_{\mathrm{sp}}\rangle_{\natural}=\tilde\Xi_{\mathrm{sp}}\tilde\Xi_{\mathrm{sp}}^{\natural}=0,
+\langle\tilde\Xi\rangle_{\natural}=\tilde\Xi\tilde\Xi^{\natural}=0,
 $$
 
-which is the zero-divisor cone of the algebra. A generic element is off it — a random element has $\langle\tilde\Xi_{\mathrm{sp}}\rangle_{\natural}\neq0$ with probability one — and the flow keeps it there, because $\langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural}$ and $\langle\tilde Q\rangle_{\natural}$ is a central unit. So the field of this equation is a unit of the algebra at almost every point of space and time, and it stays one.
+which is the zero-divisor cone of the algebra. A generic element is off it — a random element has $\langle\tilde\Xi\rangle_{\natural}\neq0$ with probability one — and the flow keeps it there, because $\langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural}$ and $\langle\tilde Q\rangle_{\natural}$ is a central unit. So the field of this equation is a unit of the algebra at almost every point of space and time, and it stays one.
 
 **The density is the Hermitian norm.** Put
 
 $$
-\rho=\mathrm{Tr}\bigl(\tilde\Xi_{\mathrm{sp}}^{*}\tilde\Xi_{\mathrm{sp}}\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi_{\mathrm{sp}}\tilde\Xi_{\mathrm{sp}}^{*}\bigr)\ge0,
+\rho=\mathrm{Tr}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)\ge0,
 \qquad
-\tilde{Ϛ}_{\Psi}=\frac{\tilde\Xi_{\mathrm{sp}}\tilde\Xi_{\mathrm{sp}}^{*}}{\rho}\in\mathbb{B}_{\Psi},
+\tilde{Ϛ}_{\Psi}=\frac{\tilde\Xi\tilde\Xi^{*}}{\rho}\in\mathbb{B}_{\Psi},
 $$
 
-which is Hermitian, positive and of unit trace, so $\tilde{Ϛ}_{\Psi}$ is a state in the sense of the companion article. The field and that state are not the same object; they are related by $\tilde\Xi_{\mathrm{sp}}\mapsto\tilde\Xi_{\mathrm{sp}}\tilde\Xi_{\mathrm{sp}}^{*}$, and the same central $i$ acts as the complex structure on the field while exchanging the sectors in which the operator is expressed. The expectation of the Hamiltonian in a field is $\mathrm{Sc}(\tilde H_\Psi\tilde{Ϛ}_{\Psi})$, which is real by the Hermiticity above.
+which is Hermitian, positive and of unit trace, so $\tilde{Ϛ}_{\Psi}$ is a state in the sense of the companion article. The field and that state are not the same object; they are related by $\tilde\Xi\mapsto\tilde\Xi\tilde\Xi^{*}$, and the same central $i$ acts as the complex structure on the field while exchanging the sectors in which the operator is expressed. The expectation of the Hamiltonian in a field is $\mathrm{Sc}(\tilde H_\Psi\tilde{Ϛ}_{\Psi})$, which is real by the Hermiticity above.
 
 ## The Equation Written in $\mathbb{B}_{\Psi}$, and Its Solution
 
 With the objects separated, the first writing reads
 
 $$
-\boxed{\;i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde H_\Psi\,\tilde{Ξ}_{\mathrm{sp}}(r'_t),
+\boxed{\;i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}(r'_t) = \tilde H_\Psi\,\tilde{Ξ}(r'_t),
 \qquad
 \tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi},
 \qquad
-\tilde{Ξ}_{\mathrm{sp}}(r'_t) \in \mathbb{B}\;},
+\tilde{Ξ}(r'_t) \in \mathbb{B}\;},
 $$
 
-where $i$ is the scalar imaginary and $\hbar$ is the reduced Planck constant. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\nabla$ differentiates the coefficients of $\tilde{Ξ}_{\mathrm{sp}}$ and multiplies no element on the left, so it changes nothing about the carrier.
+where $i$ is the scalar imaginary and $\hbar$ is the reduced Planck constant. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\nabla$ differentiates the coefficients of $\tilde{Ξ}$ and multiplies no element on the left, so it changes nothing about the carrier.
 
 **Solution.** Since $\tilde H_\Phi=-i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi$ and the scalar and vector parts commute,
 
@@ -189,21 +189,21 @@ $$
 \theta =\frac{|\vec h_\Psi|r'_t}{\hbar\,c}\;},
 $$
 
-with $\vec u_\Psi=\vec h_\Psi/|\vec h_\Psi|$, and $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels, and the real factor $\cos\theta\,e_t + \sin\theta\,\vec u_\Psi$ is a unit real quaternion. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{*}\tilde{Ξ}_{\mathrm{sp}})$ is preserved: with $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q\tilde{Ξ}_{\mathrm{sp}}(0)$,
+with $\vec u_\Psi=\vec h_\Psi/|\vec h_\Psi|$, and $\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}(0)$. The element $\tilde Q$ is $*$-unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels, and the real factor $\cos\theta\,e_t + \sin\theta\,\vec u_\Psi$ is a unit real quaternion. Consequently the Hermitian norm $\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is preserved: with $\tilde{Ξ}(r'_t) = \tilde Q\tilde{Ξ}(0)$,
 
 $$
-\mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}(r'_t)^{*}\tilde{Ξ}_{\mathrm{sp}}(r'_t)\right)
-= \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}(0)^{*} \tilde Q^{*}\tilde Q\,\tilde{Ξ}_{\mathrm{sp}}(0)\right)
-= \mathrm{Tr}\!\left(\tilde{Ξ}_{\mathrm{sp}}(0)^{*}\tilde{Ξ}_{\mathrm{sp}}(0)\right).
+\mathrm{Tr}\!\left(\tilde{Ξ}(r'_t)^{*}\tilde{Ξ}(r'_t)\right)
+= \mathrm{Tr}\!\left(\tilde{Ξ}(0)^{*} \tilde Q^{*}\tilde Q\,\tilde{Ξ}(0)\right)
+= \mathrm{Tr}\!\left(\tilde{Ξ}(0)^{*}\tilde{Ξ}(0)\right).
 $$
 
-Differentiating the solution gives $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} =i\hbar\,c(\frac{\tilde H_\Phi}{\hbar\,c})\tilde{Ξ}_{\mathrm{sp}} = i\tilde H_\Phi\tilde{Ξ}_{\mathrm{sp}} = i(-i\tilde H_\Psi)\tilde{Ξ}_{\mathrm{sp}} = \tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$, so it is the required solution.
+Differentiating the solution gives $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} =i\hbar\,c(\frac{\tilde H_\Phi}{\hbar\,c})\tilde{Ξ} = i\tilde H_\Phi\tilde{Ξ} = i(-i\tilde H_\Psi)\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, so it is the required solution.
 
-**This is the second writing.** The exponent of the solution is $\frac{\tilde H_\Phi}{\hbar\,c}r'_t$, and its coefficient is the generator of the second writing; the equivalent form $-\frac{i}{\hbar\,c}\tilde H_\Psi r'_t$ is the same coefficient written with the switch undone. The $*$-unitarity of $\tilde Q$ is the statement that this coefficient is anti-Hermitian. The conservation of $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{*}\tilde{Ξ}_{\mathrm{sp}})$ is therefore not an extra postulate about $\tilde Q$; it is the anti-Hermiticity of the material-sector element, which is what the second writing displays.
+**This is the second writing.** The exponent of the solution is $\frac{\tilde H_\Phi}{\hbar\,c}r'_t$, and its coefficient is the generator of the second writing; the equivalent form $-\frac{i}{\hbar\,c}\tilde H_\Psi r'_t$ is the same coefficient written with the switch undone. The $*$-unitarity of $\tilde Q$ is the statement that this coefficient is anti-Hermitian. The conservation of $\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is therefore not an extra postulate about $\tilde Q$; it is the anti-Hermiticity of the material-sector element, which is what the second writing displays.
 
 **Case checked.** For $\tilde H_\Psi = i\,\vec e_x$ one has $h_t = 0$, $\vec h_\Psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(\frac{r'_t}{\hbar\,c})e_t + \sin(\frac{r'_t}{\hbar\,c})\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde H_\Psi\tilde Q = i \vec e_x(\cos(\frac{r'_t}{\hbar\,c})e_t + \sin(\frac{r'_t}{\hbar\,c})\vec e_x) = i\cos(\frac{r'_t}{\hbar\,c})\vec e_x - i\sin(\frac{r'_t}{\hbar\,c})e_t$ equals $i\hbar\,c\,\frac{d\tilde{Q}}{dr'_{t}}= i(-\sin(\frac{r'_t}{\hbar\,c})e_t + \cos(\frac{r'_t}{\hbar\,c})\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation follows from the field equation. For $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*}$, differentiating and using $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde\Xi_{\mathrm{sp}}$ and $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}^{*} =\frac{i}{\hbar\,c}\tilde\Xi_{\mathrm{sp}}^{*}\tilde H_\Psi$ (valid because $\tilde H_\Psi^{*} = \tilde H_\Psi$) gives
+**Consistency with the density matrix.** The companion article's equation follows from the field equation. For $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}$, differentiating and using $\partial/\partial r'_t\tilde{Ξ} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde\Xi$ and $\partial/\partial r'_t\tilde{Ξ}^{*} =\frac{i}{\hbar\,c}\tilde\Xi^{*}\tilde H_\Psi$ (valid because $\tilde H_\Psi^{*} = \tilde H_\Psi$) gives
 
 $$
 \boxed{\;\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = \frac{1}{\hbar\,c}\tilde H_\Phi\tilde{Ϛ}_{\Psi} -\frac{1}{\hbar\,c}\tilde{Ϛ}_{\Psi}\tilde H_\Phi
@@ -215,7 +215,7 @@ $$
 which is the von Neumann equation of the companion article. The normalisation by $\rho$ is a constant scalar and passes through the derivative, so the same equation holds for the unit-trace state. The mean of an observable in the field is read from the same object and needs nothing further: for Hermitian $\tilde H_\Psi$,
 
 $$
-\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \frac{\mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*})}{\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*})} = \mathrm{Sc}\bigl(\tilde H_\Psi\tilde{Ϛ}_{\Psi}\bigr)\in\mathbb{R},
+\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \frac{\mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})}{\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})} = \mathrm{Sc}\bigl(\tilde H_\Psi\tilde{Ϛ}_{\Psi}\bigr)\in\mathbb{R},
 $$
 
 which is real because the symbol is Hermitian, and which reduces in the matrix picture to $\operatorname{Tr}(H\mathsf{M}_2(\tilde{Ϛ}_{\Psi}))$, with $H$ the energy reading of $\tilde H_\Psi$. Questions of the form "is the field on this axis" belong to the corpus's measurement articles and are not needed here; no projector enters this article.
@@ -225,7 +225,7 @@ which is real because the symbol is Hermitian, and which reduces in the matrix p
 The second writing puts the derivative alone on the left and the generator on the right,
 
 $$
-\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{sp}} = \frac{1}{\hbar\,c}\tilde H_\Phi\,\tilde{Ξ}_{\mathrm{sp}},
+\partial/\partial r'_t\,\tilde{Ξ} = \frac{1}{\hbar\,c}\tilde H_\Phi\,\tilde{Ξ},
 \qquad
 \tilde H_\Phi = -i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$
@@ -246,16 +246,16 @@ $$
 
 so $[\tilde H_\Psi,\tilde{Ϛ}_{\Psi}] \in \mathbb{B}_{\Phi}$; and since $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$, the term $i\hbar\,c\,\partial/\partial r'_t\tilde{Ϛ}_{\Psi}$ is also in $\mathbb{B}_{\Phi}$. The von Neumann equation is an identity in a single sector, while its solution returns to the complementary one. Both of its sides are elements of the material sector, and the state they act on is in the informational one.
 
-**The sectors label operators, not states.** The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, and the field $\tilde{Ξ}_{\mathrm{sp}}$, being one general element of $\mathbb{B}$, carries no such label. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*}$, not $\tilde{Ξ}_{\mathrm{sp}}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
+**The sectors label operators, not states.** The decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$ classifies Hermitian observables and anti-Hermitian generators, and the field $\tilde{Ξ}$, being one general element of $\mathbb{B}$, carries no such label. What returns to $\mathbb{B}_{\Psi}$ is the bilinear object $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}$, not $\tilde{Ξ}$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## Why the Unit Must Be Central
 
 It remains to show that among the roots of $-e_t$, $i$ is the only one that keeps both writings available at once. Suppose a root $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$ is used in place of $i$:
 
 $$
-\hbar\,c\,\tilde{Ζ}\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}
+\hbar\,c\,\tilde{Ζ}\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}
 \qquad\Longrightarrow\qquad
-\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = -\frac{\tilde{Ζ}\tilde H_\Psi}{\hbar\,c}\,\tilde{Ξ}_{\mathrm{sp}},
+\partial/\partial r'_t\tilde{Ξ} = -\frac{\tilde{Ζ}\tilde H_\Psi}{\hbar\,c}\,\tilde{Ξ},
 $$
 
 so the generator of the flow is $-\frac{\tilde{Ζ}\tilde H_\Psi}{\hbar\,c}$. The first writing needs no condition on $\tilde{Ζ}$: its coefficient is the Hermitian $\tilde H_\Psi$ by hypothesis. The second writing needs its generator anti-Hermitian, for every Hermitian $\tilde H_\Psi$, because the Hamiltonian is arbitrary. The flow preserves the Hermitian form, i.e. $\exp(-\frac{\tilde{Ζ}\tilde H_\Psi\,r'_t}{\hbar\,c})$ is $*$-unitary, exactly when $-\frac{\tilde{Ζ}\tilde H_\Psi}{\hbar\,c}$ is anti-Hermitian, which is the condition
@@ -284,7 +284,7 @@ $$
 
 so the norm is not preserved by this "Schrödinger equation". The failure is generic: after the necessary condition $\tilde{Ζ}^{*}=-\tilde{Ζ}$ is met, the requirement is $\tilde H_\Psi\tilde{Ζ}=\tilde{Ζ}\tilde H_\Psi$, so a non-central root fails for every Hermitian Hamiltonian that does not commute with it, and every non-central root has such Hamiltonians.
 
-There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde{Ξ}_{\mathrm{sp}} \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.
+There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\tilde{Ξ}$ and $\tilde{Ξ} \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.
 
 **A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde H_\Psi$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde H_\Psi$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde H_\Psi = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde H_\Psi = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation, which claims no preferred direction. The caveat survives in the summary: the uniqueness is a uniqueness *for all Hermitian Hamiltonians*, and it is that uniformity, not the sign, that the algebra forces.
 
@@ -318,13 +318,13 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 
 ## Summary
 
-One equation carries two writings. The first is $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$, with $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ Hermitian and $\tilde{Ξ}_{\mathrm{sp}}$ one element of $\mathbb{B}$ with four complex coefficients. The second is $\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde{Ξ}_{\mathrm{sp}}$, whose generator $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$. They are one equation: the scalar imaginary $i$ is central, so $i\tilde H_\Psi$ is anti-Hermitian, and the two writings differ by the central constant $i\hbar\,c$.
+One equation carries two writings. The first is $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, with $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ Hermitian and $\tilde{Ξ}$ one element of $\mathbb{B}$ with four complex coefficients. The second is $\partial/\partial r'_t\tilde{Ξ} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde{Ξ}$, whose generator $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$. They are one equation: the scalar imaginary $i$ is central, so $i\tilde H_\Psi$ is anti-Hermitian, and the two writings differ by the central constant $i\hbar\,c$.
 
-The $\mathbb{B}_{\Psi}$ writing is the physical one. It names the observable, and its solution $\tilde Q(r'_t)=\exp(\tilde H_\Phi r'_t/\hbar\,c)=\exp(-i\tilde H_\Psi r'_t/\hbar\,c)$ is $*$-unitary. That $*$-unitarity is exactly the anti-Hermiticity of the generator, so the conservation of $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{*}\tilde{Ξ}_{\mathrm{sp}})$ is the second writing read back in the first.
+The $\mathbb{B}_{\Psi}$ writing is the physical one. It names the observable, and its solution $\tilde Q(r'_t)=\exp(\tilde H_\Phi r'_t/\hbar\,c)=\exp(-i\tilde H_\Psi r'_t/\hbar\,c)$ is $*$-unitary. That $*$-unitarity is exactly the anti-Hermiticity of the generator, so the conservation of $\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the second writing read back in the first.
 
 The $\mathbb{B}_{\Phi}$ writing locates the generator in the material sector, the four-dimensional real space that carries the four-vectors. Multiplying the generator by $i\hbar\,c$ returns the observable. What the article does not show is that the generator transforms as a four-vector; the label names the space and not yet the transformation law.
 
-The field is a general element of $\mathbb{B}$, not an element of $\mathbb{B}_{\Psi}$, because both writings must hold in the carrier for every Hermitian Hamiltonian, and only $\mathbb{B}$ is closed under left multiplication by both sectors. The density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{*}\tilde{Ξ}_{\mathrm{sp}}) \in \mathbb{B}_{\Psi}$, and the field equation implies the companion article's von Neumann equation $i\hbar\,c\,\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]$.
+The field is a general element of $\mathbb{B}$, not an element of $\mathbb{B}_{\Psi}$, because both writings must hold in the carrier for every Hermitian Hamiltonian, and only $\mathbb{B}$ is closed under left multiplication by both sectors. The density matrix is recovered as $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ}) \in \mathbb{B}_{\Psi}$, and the field equation implies the companion article's von Neumann equation $i\hbar\,c\,\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]$.
 
 The uniqueness of $i$ up to sign is what makes both writings available simultaneously. Using a non-central root $\tilde{Ζ}$ in place of $i$ fails generically: the generator $-\frac{\tilde{Ζ}\tilde H_\Psi}{\hbar\,c}$ need not be anti-Hermitian, so it need not lie in $\mathbb{B}_{\Phi}$, and the norm is not preserved (explicitly for $\vec{Ζ} = \vec e_z$, $\tilde H_\Psi = i\vec e_x$). The scalar imaginary is the only root of $-e_t$, up to sign, that works for every Hermitian Hamiltonian; a real multiple $\lambda\,i$ is the same choice with the time unit rescaled, not a rival to it.
 
@@ -337,17 +337,17 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\hbar$ | Reduced Planck constant; the constant of the equation, $i\hbar\,c\,\partial/\partial r'_t\tilde\Xi=\tilde H_\Psi\tilde\Xi$ |
 | $\mathbb{B}_{C}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
-| $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}} = \tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$ has $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ |
+| $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$ has $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators, the material sector): the generator is $\tilde H_\Phi/\hbar\,c\in\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | Hermitian element; the Hamiltonian, and the observable named by the first writing |
 | $\tilde H_\Phi = -i\tilde H_\Psi = -i h_t\,e_t+\vec h_\Psi$ | The switch image of the Hamiltonian: anti-Hermitian, in $\mathbb{B}_{\Phi}$, the same four numbers with the $i$ moved onto the time slot |
 | $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ | The generator named by the second writing: the switch image over one real scale, anti-Hermitian, in $\mathbb{B}_{\Phi}$ |
-| $\tilde{Ξ}_{\mathrm{sp}}$ | The field: one element of $\mathbb{B}$; `sp` marks the spinor role |
+| $\tilde{Ξ}$ | The field: one element of $\mathbb{B}$; `sp` marks the spinor role |
 | $L_{\tilde H_\Psi}$, $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Left multiplication by $\tilde H_\Psi$; its $4\times4$ axis-free array in the coefficient basis |
-| $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*}/\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{*}\tilde{Ξ}_{\mathrm{sp}})$ | Density matrix associated to the field |
-| $\tilde Q(r'_t) = \exp(-i\tilde H_\Psi r'_{t}/(\hbar\,c))$ | $*$-Unitary evolution, $\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}_{\mathrm{sp}}(0)$ |
-| $\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*})/\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^{*})$ | Mean of the observable in the field |
+| $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ | Density matrix associated to the field |
+| $\tilde Q(r'_t) = \exp(-i\tilde H_\Psi r'_{t}/(\hbar\,c))$ | $*$-Unitary evolution, $\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\tilde{Ξ}(0)$ |
+| $\langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})/\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})$ | Mean of the observable in the field |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

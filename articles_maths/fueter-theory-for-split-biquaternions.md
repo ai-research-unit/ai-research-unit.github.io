@@ -127,7 +127,7 @@ eliminating $B$ gives $\Delta_4A = 0$, so the scalar axial coefficient is harmon
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n \geq 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$. Then $F_{\mathrm{fn}} = \Delta^{(n-1)/2}f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n \geq 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1,\dots,e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$. Then $F_{\mathrm{fn}} = \mathcal{L}_{\mathrm{iter}}^{(n-1)/2}f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator on the ball where the extension is defined. Here $\mathcal{L}_{\mathrm{iter}}$ is the ordinary iteration of the Laplacian — the power $(n-1)/2$ is a non-negative integer because $n$ is odd — written with its own letter because an iterate is not the Laplacian it iterates. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
 
 Three hypotheses are needed and none can be dropped: $f_0$ must be **holomorphic** on the disc, so its Taylor series converges there; the construction has the **affine kernel** $aC+b$, so injectivity requires the Taylor coefficients to vanish to order two; and the **parity** $(n-1)/2$ must be a non-negative integer, so $n$ must be odd.
 

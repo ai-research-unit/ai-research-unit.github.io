@@ -58,10 +58,10 @@ The last row is not independent: $\frac{\Omega}{k_{m}}=\gamma-1=\frac{\beta^{2}}
 
 ## The Rule
 
-**Write the state and apply the momentum.** Take $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
+**Write the state and apply the momentum.** Take $\tilde{Ξ}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ with $A>0$ real and central, $S_{\tilde\Xi}$ real and central, and $\xi$ constant. The action carries the subscript of the field it belongs to, the spelling the companion limit article uses, so that the two articles of the pair write one symbol. Then
 
 $$
-\tilde p\,\tilde{Ξ}_{\mathrm{sp}}=\left(\vec\nabla_\Phi S_{\tilde\Xi}-i\,\hbar\vec\nabla_\Phi\ln A\right)\tilde{Ξ}_{\mathrm{sp}} .
+\tilde p\,\tilde{Ξ}=\left(\vec\nabla_\Phi S_{\tilde\Xi}-i\,\hbar\vec\nabla_\Phi\ln A\right)\tilde{Ξ} .
 $$
 
 The real part keeps its leading term and the imaginary part carries the first correction. The two ratios are
@@ -80,7 +80,7 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 
 | | the $\beta$ limit | this limit |
 |---|---|---|
-| the object limited | the element $\tilde V_{\Phi}$ | the solution $\tilde{Ξ}_{\mathrm{sp}}$ |
+| the object limited | the element $\tilde V_{\Phi}$ | the solution $\tilde{Ξ}$ |
 | the parts compared | $\gamma c$ against $\gamma v$ | $\vec\nabla_\Phi S_{\tilde\Xi}$ against $\hbar\vec\nabla_\Phi\ln A$ |
 | the parameter | internal to the element | external to the algebra |
 | the dropped pieces | $\frac{3}{8}\beta^{4}$ temporal, $\frac{1}{2}\beta^{2}$ vector | order $\epsilon^{2}$ in the amplitude |
@@ -88,13 +88,13 @@ The rule is written for the scalar problem; the criterion does not depend on tha
 
 ## The Classical Equations
 
-**Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{h_t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, which with $h_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
+**Start from the Schrödinger equation.** In the corpus's biquaternionic form it is $i\,\hbar\,c\partial_{h_t'}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, which with $h_t'=c\,t$ reads $i\hbar\,\partial_t\psi=H\psi$. Take the scalar case $H=\frac{\vec p^{\,2}}{2m}+V$, so that
 
 $$
 i\hbar\,\partial_t\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V\psi .
 $$
 
-**Substitute the amplitude and the phase,** $\tilde{Ξ}_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:
+**Substitute the amplitude and the phase,** $\tilde{Ξ}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ and $S_{\tilde\Xi}$ real. Two real equations follow, and neither is an approximation:
 
 $$
 \partial_t S_{\tilde\Xi}+\frac{\lvert\vec\nabla_\Phi S_{\tilde\Xi}\rvert^{2}}{2m}+V-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}=0 ,
@@ -186,7 +186,7 @@ What remains is one external number, $\epsilon=\frac{1}{k_{\Phi}L}$. When it is 
 |---|---|
 | $\epsilon=\frac{1}{k_{\Phi}L}$ | The parameter of the limit; the only dimensionless combination the model offers |
 | $L$ | The length over which the amplitude varies; supplied by the problem |
-| $\tilde{Ξ}_{\mathrm{sp}}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
+| $\tilde{Ξ}=A\exp\!\left(\frac{i\,S_{\tilde\Xi}}{\hbar}\right)\xi$ | The state in amplitude and phase; $A>0$ real and central, $S_{\tilde\Xi}$ the action of the state, real and central |
 | $\rho=\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi A}{A}\right\rvert$ | The quantum potential over the kinetic energy; the error of the limit |
 | $Q=-\frac{m\,c^{2}}{2k_{m}^{2}}\frac{\Delta_\Phi A}{A}$ | The quantum potential; central, real, and the term the limit drops |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$, $k_{m}=\frac{m\,c}{\hbar}$ | The momentum and mass wave numbers; $\hbar$ is the product $\hbar$ |

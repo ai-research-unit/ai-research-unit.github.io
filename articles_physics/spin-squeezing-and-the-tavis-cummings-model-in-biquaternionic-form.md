@@ -173,7 +173,7 @@ $$
 which is diagonal in the Dicke basis and therefore exactly solvable. Starting from the coherent state along $+x$, the evolution
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}(\xi r'_t)\rangle  = \exp(-\frac{i\,\xi\,r'_{t}\,\tilde{S}_{\Psi,\mathrm{tot},3}^{2}}{\hbar^{2}})|\theta=\tfrac{\pi}{2},\theta_{\mathrm{azm}}=0\rangle
+|\tilde{Ξ}(\xi r'_t)\rangle  = \exp(-\frac{i\,\xi\,r'_{t}\,\tilde{S}_{\Psi,\mathrm{tot},3}^{2}}{\hbar^{2}})|\theta=\tfrac{\pi}{2},\theta_{\mathrm{azm}}=0\rangle
 $$
 
 shears the noise ellipse: the variance in the $y$–$z$ plane develops an off-diagonal covariance, the smaller principal variance drops below $\frac{\hbar^{2}\,N}{4}$, and $\zeta_R^2$ falls below $1$. The mean spin also decreases, since the twisting rotates different Dicke components at different rates; the competition between the shrinking variance and the shrinking mean spin fixes an optimal twisting time.

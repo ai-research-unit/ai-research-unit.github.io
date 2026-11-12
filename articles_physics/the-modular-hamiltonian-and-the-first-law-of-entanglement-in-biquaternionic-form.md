@@ -182,7 +182,7 @@ The framework's terms make the mechanism transparent, and it is worth stating be
 
 ## The Entanglement Hamiltonian of a Subsystem
 
-The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}_{\mathrm{sp}}$ is the reduced state of a subsystem $A$ of a larger system. Then $H_{\mathrm{modular},A}=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
+The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}$ is the reduced state of a subsystem $A$ of a larger system. Then $H_{\mathrm{modular},A}=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
 $$
 \sigma_A=\frac{\exp(-H_{\mathrm{modular},A})}{\mathrm{Tr}\,\exp(-H_{\mathrm{modular},A})},
 $$

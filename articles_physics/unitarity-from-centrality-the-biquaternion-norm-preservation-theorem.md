@@ -39,7 +39,7 @@ $$
 \|\tilde Q_1\|_{\dagger}^2
 =2\bigl(|Q_{1t}|^2+|Q_{1x}|^2+|Q_{1y}|^2+|Q_{1z}|^2\bigr)>0\quad(\tilde Q_1\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde H_\Psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde Q_1,\tilde Q_1\rangle_{*}=\mathrm{tr}(M(\tilde Q_1)^\dagger M(\tilde Q_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde Q_1\tilde H_\Psi^{*})$, and the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
@@ -268,21 +268,21 @@ which grows without bound, so the Hermitian norm of a state is not preserved. It
 The norm-preservation theorem of the preceding sections is algebraic: it is about the conjugation action on the algebra. Its dynamical counterpart is the statement that the unit of the Schrödinger equation is forced to be central if the norm is to be preserved for every generator.
 
 **The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
-$$i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}} ,
+$$i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=\tilde{Ζ}\tilde H_\Psi\tilde{Ξ} ,
 \qquad
 \tilde{Ζ}^2=-e_t,\quad  \tilde H_\Psi\in\mathbb{B}_{\Psi},
 $$
 with $\tilde{Ζ}$ a root of $-e_t$ and $\tilde H_\Psi$ Hermitian. The solution, for constant $\tilde H_\Psi$, is
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t)=\exp\bigl(Gr'_t\bigr)\tilde{Ξ}_{\mathrm{sp}}(0),
+\tilde{Ξ}(r'_t)=\exp\bigl(Gr'_t\bigr)\tilde{Ξ}(0),
 \qquad
 G=-\frac{\tilde{Ζ}\,\tilde{H}_{\Psi}}{\hbar\,c}.
 $$
-The norm $\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}})$ is preserved for all $r'_t$ and all $\tilde{Ξ}_{\mathrm{sp}}(0)$ exactly when $G$ is anti-Hermitian,
+The norm $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ is preserved for all $r'_t$ and all $\tilde{Ξ}(0)$ exactly when $G$ is anti-Hermitian,
 $$
-\frac{d}{dr'_t}\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\bigr)
-=\mathrm{Tr}\bigl(\tilde{Ξ}_{\mathrm{sp}}^{\dagger}(G^{*}+G)\tilde{Ξ}_{\mathrm{sp}}\bigr)
-=0\ \ \text{for all }\tilde{Ξ}_{\mathrm{sp}}
+\frac{d}{dr'_t}\mathrm{Tr}\bigl(\tilde{Ξ}^{\dagger}\tilde{Ξ}\bigr)
+=\mathrm{Tr}\bigl(\tilde{Ξ}^{\dagger}(G^{*}+G)\tilde{Ξ}\bigr)
+=0\ \ \text{for all }\tilde{Ξ}
 \iff G^{*}=-G .
 $$
 

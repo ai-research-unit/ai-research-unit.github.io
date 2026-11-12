@@ -14,7 +14,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 
 ### The singlet as one algebraic object
 
-In the standard formulation, the singlet state is a single vector $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ in $\mathbb{C}^2\otimes\mathbb{C}^2$. In the biquaternion formulation, it is a single idempotent of the tensor product:
+In the standard formulation, the singlet state is a single vector $|\tilde{Ξ}^-\rangle$ in $\mathbb{C}^2\otimes\mathbb{C}^2$. In the biquaternion formulation, it is a single idempotent of the tensor product:
 
 $$
 \boxed{\;\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right)\;}.
@@ -22,7 +22,7 @@ $$
 
 This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
 
-The same is true in Hilbert-space language, since $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the algebraic operation that carries the state. In the biquaternion interpretation, the entanglement is a fact about the *pairing structure* of the algebra, not about a dynamical influence passing between two systems.
+The same is true in Hilbert-space language, since $|\tilde{Ξ}^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the algebraic operation that carries the state. In the biquaternion interpretation, the entanglement is a fact about the *pairing structure* of the algebra, not about a dynamical influence passing between two systems.
 
 ### The singlet as one whole
 
@@ -43,7 +43,7 @@ First, the integer-quotient rule is an **assumption**, not a consequence of the 
 Second, the exhaustiveness claim that comes with the rule does not survive the test. If the rule were complete, the maximally entangled states would be the twelve patterns; but the family
 
 $$
-\lvert\tilde{Ξ}_{\mathrm{sp},\theta_{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\theta_{\mathrm{pha}})\lvert11\rangle\right)
+\lvert\tilde{Ξ}_{\theta_{\mathrm{pha}}}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\theta_{\mathrm{pha}})\lvert11\rangle\right)
 $$
 
 is maximally entangled for every $\theta_{\mathrm{pha}}$, whereas the twelve patterns fix the relative phase to the discrete set $\{0,\pm\pi/2,\pi\}$. The rule therefore selects a proper subset, not the whole. The computation and the reason are in *The Bell Basis as the Idempotent Basis of B⊗B*, in the section *A Claimed Enumeration of the Maximally Entangled States*; the point for the present article is that the mereological interpretation of the singlet is a language, and that turning it into a selection rule requires a hypothesis that the division relation itself does not supply and that the continuum of maximally entangled states does not confirm.

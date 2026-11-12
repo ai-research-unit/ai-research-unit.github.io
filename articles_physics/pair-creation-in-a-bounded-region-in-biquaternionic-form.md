@@ -14,7 +14,7 @@ Three statements organise the article.
 
 The article derives the matching, the threshold and the two tables of numbers. It does not derive the second-quantized statements: the pair number, the Bogoliubov mixing and the vacuum persistence amplitude are those of *Scalar Pair Creation in Biquaternionic Form*, the operator content of the sea is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*, and the mode count of a cavity is that of *The Vacuum State and the Casimir Effect in Biquaternionic Form*. What the framework supplies is the location of the threshold on the mass shell, and the criterion that separates a confining model which can create pairs from one which cannot.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$. No array and no column is written below.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$. No array and no column is written below.
 
 ## The Well and the Gap
 
@@ -33,9 +33,9 @@ $$
 a one-dimensional well of depth $V_0$ and width $L$, constant on each of its three regions and discontinuous at the two walls. The particle moves along $r_x$ and is taken to be in a spin state along the direction of motion, so the reduction of the companion article applies unchanged and the same two-component pair results:
 
 $$
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},1}}{\partial r_x}=\bigl(E-V(r_x)+mc^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},2},
+i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{1}}{\partial r_x}=\bigl(E-V(r_x)+mc^{2}\bigr)\tilde{Ξ}_{2},
 \qquad
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},2}}{\partial r_x}=\bigl(E-V(r_x)-mc^{2}\bigr)\tilde{Ξ}_{\mathrm{sp},1},
+i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{2}}{\partial r_x}=\bigl(E-V(r_x)-mc^{2}\bigr)\tilde{Ξ}_{1},
 $$
 
 with $V(r_x)=ϙ\xi(r_x)$ and $E$ the total energy. The pair is the reduced equation of the parent, and the biquaternion field is recovered from it by the standing dictionary of *The Dirac Equation in Biquaternionic Form*. Nothing below uses a second reduction.
@@ -62,13 +62,13 @@ $$
 
 which is real in the gap and is the inverse of the decay length. Both are inverse lengths: the first is a wave number and the second a decay constant, and it is the second that vanishes at the threshold.
 
-Take the even solution, $\tilde{Ξ}_{\mathrm{sp},1}=\cos(k_{\Phi,\mathrm{w}}r_x)$ inside and $\tilde{Ξ}_{\mathrm{sp},1}=\exp(-k_{\Phi,\mathrm{ev}} r_x)$ outside. The second line of the pair fixes the other component in each region, and continuity of the ratio $\tilde{Ξ}_{\mathrm{sp},1}/\tilde{Ξ}_{\mathrm{sp},2}$ at the wall $r_x=a=L/2$ gives
+Take the even solution, $\tilde{Ξ}_{1}=\cos(k_{\Phi,\mathrm{w}}r_x)$ inside and $\tilde{Ξ}_{1}=\exp(-k_{\Phi,\mathrm{ev}} r_x)$ outside. The second line of the pair fixes the other component in each region, and continuity of the ratio $\tilde{Ξ}_{1}/\tilde{Ξ}_{2}$ at the wall $r_x=a=L/2$ gives
 
 $$
 \frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=\frac{k_{\Phi,\mathrm{w}}\tan\bigl(k_{\Phi,\mathrm{w}}a\bigr)}{E+V_0+mc^{2}},
 $$
 
-and the same statement for the odd solution, $\tilde{Ξ}_{\mathrm{sp},1}=\sin(k_{\Phi,\mathrm{w}}r_x)$ inside, gives
+and the same statement for the odd solution, $\tilde{Ξ}_{1}=\sin(k_{\Phi,\mathrm{w}}r_x)$ inside, gives
 
 $$
 \frac{k_{\Phi,\mathrm{ev}}}{E+mc^{2}}=-\frac{k_{\Phi,\mathrm{w}}\cot\bigl(k_{\Phi,\mathrm{w}}a\bigr)}{E+V_0+mc^{2}}.
@@ -308,7 +308,7 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | Quaternion units, $\vec e_\eta^{2}=-e_t$ |
 | $\mathbb{B}_{\Phi}$ | Material sector, with $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$ |
 | $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
-| $\tilde{Ξ}_{\mathrm{sp},1}$, $\tilde{Ξ}_{\mathrm{sp},2}$ | The two components of the reduced spinor |
+| $\tilde{Ξ}_{1}$, $\tilde{Ξ}_{2}$ | The two components of the reduced spinor |
 | $V_0$, $L$, $a=L/2$ | Well depth, width, and half-width |
 | $ϙ\xi(r_x)=-V_0$ inside the well | Electrostatic potential energy |
 | $E$, $mc^{2}$, $(-mc^{2},mc^{2})$ | Total energy, rest energy, and the gap |

@@ -77,7 +77,7 @@ $$
 **The BRST reading.** The same object is the gauge-fixing fermion of *BRST Symmetry in Biquaternionic Form*,
 
 $$
-\tilde\Xi_{\mathrm{sp}}=\sum_a\bar c^{\,a}\left(\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\xi^a+\frac{\zeta}{2}B^a\right),
+\tilde\Xi=\sum_a\bar c^{\,a}\left(\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\xi^a+\frac{\zeta}{2}B^a\right),
 $$
 
 with $B^a$ the Nakanishi–Lautrup field. Eliminating $B^a$ by its own equation of motion reproduces the $-\frac{1}{2\zeta}(G^a)^2$ term, so the two formulations differ only in whether the auxiliary field is kept. The one addition to the companion article's fermion is the $-\zeta M_W\xi^a$ insertion, and it is the same addition as before.
@@ -386,7 +386,7 @@ The framework discharges the gauge-fixing row of the standard-model agenda at th
 | $M_Y$ | $g_{\mathrm Y}v/2$, the hypercharge partner in the unbroken-basis functional |
 | $G^a$, $G^Z$, $G^A$ | The gauge-fixing functionals |
 | $B^a$ | The Nakanishi–Lautrup auxiliary field |
-| $\tilde\Xi_{\mathrm{sp}}$ | The gauge-fixing fermion, $s$-exact |
+| $\tilde\Xi$ | The gauge-fixing fermion, $s$-exact |
 | $\Pi$ | $-\sum_\mu p_\mu p_\mu$, positive, equal to $M^2$ on shell |
 | $P_{\mu\nu}$, $L_{\mu\nu}$ | Transverse and longitudinal projectors, traces $3$ and $1$ |
 | $D_{\mu\nu}(p)$ | The gauge-field propagator |

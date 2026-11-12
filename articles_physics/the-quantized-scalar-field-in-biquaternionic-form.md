@@ -197,12 +197,12 @@ Two statements must be kept apart, because the corpus uses both. The phase $\exp
 
 ## The Schrödinger Functional and the Field Basis
 
-The field operator's representation on states can be made explicit with the field-basis wave functionals, and the connection to the functional-integral formulation of the scalar sector becomes transparent. A state is a functional $\tilde{Ξ}_{\mathrm{sp}}[\xi]$ of configurations; the field acts by multiplication and the momentum by differentiation,
+The field operator's representation on states can be made explicit with the field-basis wave functionals, and the connection to the functional-integral formulation of the scalar sector becomes transparent. A state is a functional $\tilde{Ξ}[\xi]$ of configurations; the field acts by multiplication and the momentum by differentiation,
 
 $$
-\langle\xi|\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}_{\mathrm{sp}}\rangle=\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\tilde{Ξ}_{\mathrm{sp}}[\xi],
+\langle\xi|\xi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}\rangle=\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,\tilde{Ξ}[\xi],
 \qquad
-\langle\xi|\pi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}_{\mathrm{sp}}\rangle=-\frac{i\,\hbar\,\tilde{Ξ}_{\mathrm{sp}}}{\xi\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)},
+\langle\xi|\pi_{\mathrm{fop}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)|\tilde{Ξ}\rangle=-\frac{i\,\hbar\,\tilde{Ξ}}{\xi\,(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)},
 $$
 
 so the canonical commutator is the identity $\delta\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/\delta\xi(\vec y)=\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ and the field-basis representation is the functional analogue of the coordinate representation of quantum physics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.
@@ -210,11 +210,11 @@ so the canonical commutator is the identity $\delta\xi(r_x\,\vec e_x+r_y\,\vec e
 For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
+\tilde{Ξ}_{0}[\xi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi\hbar)^3}\,E_{\vec p}\,\big|\xi(\vec p)\big|^2\right)
 =\exp\!\left(-\frac{1}{2}\int d^3r\,d^3y\;\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,K(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,\xi(\vec y)\right),
 $$
 
-where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the energy $E_{\vec p}$. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\tilde{Ξ}_{\mathrm{sp}}[\xi_f,r'_{t,f}]=\int\mathcal{D}\xi_i\,K(\xi_f,r'_{t,f};\xi_i,r'_{t,i})\tilde{Ξ}_{\mathrm{sp}}[\xi_i,r'_{t,i}]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\tilde{Ξ}_{\mathrm{sp}}[\xi]=\tilde{Ξ}_{\mathrm{sp}}[\xi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
+where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the energy $E_{\vec p}$. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\tilde{Ξ}[\xi_f,r'_{t,f}]=\int\mathcal{D}\xi_i\,K(\xi_f,r'_{t,f};\xi_i,r'_{t,i})\tilde{Ξ}[\xi_i,r'_{t,i}]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\tilde{Ξ}[\xi]=\tilde{Ξ}[\xi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
 
 ## What Is Standard and What Is Open
 

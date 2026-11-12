@@ -205,19 +205,19 @@ which is the standard Klein–Gordon equation $(\Box-k_m^{2})\tilde{Ξ}=0$, with
 
 ## The Dirac Equation
 
-The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}_{\mathrm{sp}}$ of mass $m$ is the linear, chirality-off-diagonal pair
+The **Dirac equation** for a relativistic spinor field $\tilde{Ξ}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R},
 $$
 
-where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ carries one component per chirality. In the massless case ($m = 0$), the pair decouples into the two one-sided equations
+where $\tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R}$ carries one component per chirality. In the massless case ($m = 0$), the pair decouples into the two one-sided equations
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0,
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0,
 $$
 
-the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $k_m\tilde{Ξ}_{\mathrm{sp},L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}} = k_m\tilde{Ξ}_{\mathrm{sp}}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus; the series records it as retired. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $k_m\tilde{Ξ}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus; the series records it as retired. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 
@@ -232,7 +232,7 @@ the first of which is identical in form to the source-free biquaternion Maxwell 
 | Action | $S = -mc\int\sqrt{-\,d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}}$ | — |
 | Current | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ |
 | Klein–Gordon | $(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}- (k_m)^{2})\tilde{Ξ} = 0$ | — |
-| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | — |
+| Dirac | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | — |
 
 Here $\hbar/(mc)$ is the mass length.
 

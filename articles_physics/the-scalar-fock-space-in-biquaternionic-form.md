@@ -171,8 +171,8 @@ the density in which every creation operator stands to the left of every annihil
 $$
 N_{\vec p}={a_{\mathrm{fop},\vec p}}^\dagger a_{\mathrm{fop},\vec p} ,
 \qquad
-\langle\tilde{Ξ}_{\mathrm{sp}}|N_{\vec p}|\tilde{Ξ}_{\mathrm{sp}}\rangle
-=\big\|a_{\mathrm{fop},\vec p}\tilde{Ξ}_{\mathrm{sp}}\big\|^2\ge0 ,
+\langle\tilde{Ξ}|N_{\vec p}|\tilde{Ξ}\rangle
+=\big\|a_{\mathrm{fop},\vec p}\tilde{Ξ}\big\|^2\ge0 ,
 $$
 
 so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.

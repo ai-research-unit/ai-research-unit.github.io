@@ -13,15 +13,15 @@ A second honest point belongs here. The series takes the standing position that 
 The framework's carrier for any spin-$\tfrac12$ fermion is the algebra itself. The neutron field is an element
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}\in\mathbb{B},
+\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B},
 $$
 
-whose two parts carry the two values of the chirality, $\tilde{Ξ}_{\mathrm{sp},L}$ the value L and $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the declared axis $\vec u$ (*Special Element Conventions*, §*The Chirality Convention*); every element of the algebra is such a field, and only the zero element has both parts zero. This article takes the axis $\vec u=\vec e_z$, the unit that the two-sided equation below multiplies the field by on the right. The free propagation of the field is the biquaternion Dirac equation. Two objects carry that name, and the companion article keeps them apart; the neutron uses the first. The **one-sided equation** is the chiral pair
+whose two parts carry the two values of the chirality, $\tilde{Ξ}_{L}$ the value L and $\tilde{Ξ}_{R}$ the value R, at the declared axis $\vec u$ (*Special Element Conventions*, §*The Chirality Convention*); every element of the algebra is such a field, and only the zero element has both parts zero. This article takes the axis $\vec u=\vec e_z$, the unit that the two-sided equation below multiplies the field by on the right. The free propagation of the field is the biquaternion Dirac equation. Two objects carry that name, and the companion article keeps them apart; the neutron uses the first. The **one-sided equation** is the chiral pair
 
 $$
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},L},\\[4pt]
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} &= k_{m_n}\,\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R} &= k_{m_n}\,\tilde{Ξ}_{L},\\[4pt]
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} &= k_{m_n}\,\tilde{Ξ}_{R},
 \end{aligned}
 $$
 
@@ -36,7 +36,7 @@ with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is 
 **Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it. The doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: from the Lanczos pair $\tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2$, $\tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1$, one forms the two superpositions
 
 $$
-\tilde{Ξ}_{\mathrm{sp},p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{\mathrm{sp},n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau},
+\tilde{Ξ}_{p}=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde{Ξ}_{n}=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau},
 $$
 
 with $\sigma=\tilde\Pi_+(\vec\nu)$ and $\bar\sigma=\tilde\Pi_-(\vec\nu)=e_t-\tilde\Pi_+(\vec\nu)$ the two complementary states along the unit direction $\vec\nu$, of zero product, $\sigma\bar\sigma=0$, and $\vec{\tau}$ a unit direction orthogonal to $\vec{\nu}$.
@@ -44,14 +44,14 @@ with $\sigma=\tilde\Pi_+(\vec\nu)$ and $\bar\sigma=\tilde\Pi_-(\vec\nu)=e_t-\til
 The group that preserves both forms is Nishijima's two-parameter group $G_N=\sigma\exp(i\alpha)+\bar\sigma\exp(i\beta)$, acting by right multiplication. Because the two states are complementary and of zero product, each term picks up its own phase and the other term dies,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},p}\,G_N=e^{i\alpha}\tilde Q_1\sigma+e^{i\beta}\tilde Q_2^{*}\bar{\sigma},
+\tilde{Ξ}_{p}\,G_N=e^{i\alpha}\tilde Q_1\sigma+e^{i\beta}\tilde Q_2^{*}\bar{\sigma},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},n}\,G_N=e^{i\beta}\tilde Q_1\bar{\sigma}-e^{i\alpha}\tilde Q_2^{*}\sigma ,
+\tilde{Ξ}_{n}\,G_N=e^{i\beta}\tilde Q_1\bar{\sigma}-e^{i\alpha}\tilde Q_2^{*}\sigma ,
 $$
 
 so the second superposition is preserved up to the same two phases before the trailing $i\vec{\tau}$ is applied. Equivalently, $\exp(-\vec{\nu}\alpha)\sigma=\sigma\exp(i\alpha)$ and $\exp(+\vec{\nu}\beta)\bar{\sigma}=\bar{\sigma}\exp(i\beta)$, since $\vec{\nu}^{2}=-e_t$ gives $\exp(\pm\vec{\nu}\theta)=\cos\theta\pm\vec{\nu}\sin\theta$. Each of the two states therefore carries its own abelian phase, and with it its own charge, while the form of both superpositions is unchanged.
 
-A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{\mathrm{sp},p}$ and $\tilde{Ξ}_{\mathrm{sp},n}$. The first Lanczos equation then becomes $\tilde\nabla_\Phi\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
+A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde{Ξ}_{p}$ and $\tilde{Ξ}_{n}$. The first Lanczos equation then becomes $\tilde\nabla_\Phi\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
 
 Two qualifications keep this from overturning the paragraph above. First, the isospin of that construction acts by **right** multiplication on $\tilde Q_1$, $\tilde Q_2$ of the doubled field, not by the left multiplication and commutator of the material sector's $\mathrm{SU}(2)$, so the two groups remain different objects. Second, the route doubles the field and still does not fix $m$. The precise statement is that the near-degeneracy is an **import in this equation** and a **structural feature of the doubled one**: this article uses the single-field equation, and that choice is why $m_n$ is a parameter here.
 
@@ -59,7 +59,7 @@ Two qualifications keep this from overturning the paragraph above. First, the is
 
 The companion article separates two objects that both carry the name *Dirac equation*, and they must not be read as one. The neutron needs the separation stated once, because the two differ in which side of the field the derivative and the mass act.
 
-**The one-sided equation** is the chiral pair displayed at the head of this section: the definition. The gradient acts by left multiplication on the element $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, and the mass is the off-diagonal pair: each equation of the pair carries one value into the other. Chirality is the subscript, with the two values fixed above.
+**The one-sided equation** is the chiral pair displayed at the head of this section: the definition. The gradient acts by left multiplication on the element $\tilde{Ξ}\in\mathbb{B}$, and the mass is the off-diagonal pair: each equation of the pair carries one value into the other. Chirality is the subscript, with the two values fixed above.
 
 **The two-sided equation** is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, with the constants carried,
 
@@ -67,12 +67,12 @@ $$
 \Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{\mathrm{sp},L}=F$ and $\tilde{Ξ}_{\mathrm{sp},R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{L}=F$ and $\tilde{Ξ}_{R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$ |
-| Field | $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
+| Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$ |
+| Field | $\tilde{Ξ}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
 | Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
 | Mass | the off-diagonal pair of the two values | right multiplication by $\vec e_z$, with $\bar F$ |
 | Chirality | the value carried by each part | the unit $\vec e_z$ of the mass term |
@@ -85,12 +85,12 @@ The article uses the one-sided pair, because the spin content, the mass-shell re
 The neutron's charge is zero. Of the neutron's properties, neutrality looks like the one the framework might own, because the framework does have a charge. The chiral-fermion article gives each value its own charge: the L part is multiplied by $ϙ_L$ and the R part by $ϙ_R$,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},L}\mapsto ϙ_L\tilde{Ξ}_{\mathrm{sp},L},\qquad \tilde{Ξ}_{\mathrm{sp},R}\mapsto ϙ_R\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{Ξ}_{L}\mapsto ϙ_L\tilde{Ξ}_{L},\qquad \tilde{Ξ}_{R}\mapsto ϙ_R\tilde{Ξ}_{R},
 $$
 
 with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$.
 
-**The two rules are one right multiplication.** The action is $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$, by the element
+**The two rules are one right multiplication.** The action is $\tilde{Ξ}\mapsto\tilde{Ξ} b$, by the element
 
 $$
 b \;=\; \tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z \;\in\; \mathbb{B}_{\Psi} ,
@@ -99,21 +99,21 @@ $$
 a derived form: $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
 
 $$
-D_\mu\tilde{Ξ}_{\mathrm{sp}}=\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ}_{\mathrm{sp}} b,
+D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+\frac{i}{\hbar}A_\mu\,\tilde{Ξ} b,
 \qquad
-[D_\mu,D_\nu]\tilde{Ξ}_{\mathrm{sp}}=\frac{i}{\hbar}F_{\mu\nu}\,\tilde{Ξ}_{\mathrm{sp}} b
+[D_\mu,D_\nu]\tilde{Ξ}=\frac{i}{\hbar}F_{\mu\nu}\,\tilde{Ξ} b
 $$
 
 for commuting potentials.
 
-A single-particle state is an element of $\mathbb{B}$, and it is **neutral** when the charge gives it zero, $\tilde{Ξ}_{\mathrm{sp}} b=0$. The kernel is elementary and was recomputed exactly:
+A single-particle state is an element of $\mathbb{B}$, and it is **neutral** when the charge gives it zero, $\tilde{Ξ} b=0$. The kernel is elementary and was recomputed exactly:
 
-- If **both** $ϙ_L$ and $ϙ_R$ are nonzero, then $\tilde{Ξ}_{\mathrm{sp}} b=0$ only for $\tilde{Ξ}_{\mathrm{sp}}=0$: there is no nonzero neutral element.
-- If $ϙ_L=0$ and $ϙ_R\neq0$, the neutral elements are those whose R part vanishes, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}$.
-- If $ϙ_R=0$ and $ϙ_L\neq0$, the neutral elements are those whose L part vanishes, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},R}$.
+- If **both** $ϙ_L$ and $ϙ_R$ are nonzero, then $\tilde{Ξ} b=0$ only for $\tilde{Ξ}=0$: there is no nonzero neutral element.
+- If $ϙ_L=0$ and $ϙ_R\neq0$, the neutral elements are those whose R part vanishes, $\tilde{Ξ}=\tilde{Ξ}_{L}$.
+- If $ϙ_R=0$ and $ϙ_L\neq0$, the neutral elements are those whose L part vanishes, $\tilde{Ξ}=\tilde{Ξ}_{R}$.
 - If $ϙ_L=ϙ_R=0$ every element is neutral (the trivially uncoupled case).
 
-Neutrality is therefore not a generic property: it requires one of the two values to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone. On such an element the massive pair collapses: for $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}$ the first equation reads $0=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, so no nonzero neutral element solves it. The neutral single-particle state of the algebra therefore carries no Dirac mass in the pair. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite value, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality is therefore not a generic property: it requires one of the two values to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone. On such an element the massive pair collapses: for $\tilde{Ξ}=\tilde{Ξ}_{L}$ the first equation reads $0=k_{m_n}\tilde{Ξ}_{L}$, so no nonzero neutral element solves it. The neutral single-particle state of the algebra therefore carries no Dirac mass in the pair. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite value, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: in the algebra, neutrality and the massive Dirac interpretation pull in opposite directions.
 
@@ -125,7 +125,7 @@ $$
 
 which has solutions for special charge ratios (for instance $(n_L,n_R)=(1,2)$ requires $ϙ_R=-\tfrac12 ϙ_L$), but nothing in the framework fixes $ϙ_L$ or $ϙ_R$, and the standard quark charges are not framework objects. Reading the quark charges $\tfrac23,-\tfrac13,-\tfrac13$ into the three constituents would be exactly the manufacture of the neutrality from an imported quark model, and this article does not do it.
 
-**Verdict.** The framework's charge operator can *state* the neutron's neutrality as the constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$, and it classifies the single-particle solutions of that constraint; a neutral many-particle **state** is not ruled out in principle once a Fock space and an additive total charge are granted. But the neutron as a **bound colour-singlet composite** is not expressible: colour, confinement, and the selection rule that fixes three constituents are all absent. And the neutrality is not *derived*, because the framework contains no constituents whose charges could sum to zero. The honest sentence is: **neutrality is expressible as a constraint on unfixed charges, a neutral bound composite is not expressible, and the neutrality itself is imported from standard physics.** That is a negative result, and it is reported as one.
+**Verdict.** The framework's charge operator can *state* the neutron's neutrality as the constraint $\tilde{Ξ} b=0$, and it classifies the single-particle solutions of that constraint; a neutral many-particle **state** is not ruled out in principle once a Fock space and an additive total charge are granted. But the neutron as a **bound colour-singlet composite** is not expressible: colour, confinement, and the selection rule that fixes three constituents are all absent. And the neutrality is not *derived*, because the framework contains no constituents whose charges could sum to zero. The honest sentence is: **neutrality is expressible as a constraint on unfixed charges, a neutral bound composite is not expressible, and the neutrality itself is imported from standard physics.** That is a negative result, and it is reported as one.
 
 ## Composite Character: No Colour, No Confinement, No Constituents
 
@@ -165,9 +165,9 @@ The article's finding is best stated as a ledger, in the manner of the electron 
 
 | Neutron property | Status | Object or reason |
 |---|---|---|
-| Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | the element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$; the left multiplications act on each part with weights $\pm\tfrac12$ |
-| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$ |
-| Neutrality constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
+| Spin-$\tfrac12$ representation content (generic) | Derived (framework), not neutron-specific | the element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$; the left multiplications act on each part with weights $\pm\tfrac12$ |
+| Free Dirac kinematics, mass-shell relation | Derived (framework) | biquaternion Dirac equation, one-sided chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$ |
+| Neutrality constraint $\tilde{Ξ} b=0$ and its kernel | Derived (framework) | the charge $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$; no nonzero neutral element unless one charge vanishes |
 | Mass value $m_n$ | Represented | parameter of the equation; not derived |
 | Charge value $0$ | Represented | a constraint/parameter; not derived from quark charges |
 | The identification "*this* field is the neutron" | Represented | the inserted mass and charge |
@@ -195,7 +195,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame basis operators of the body written as letters, and this section is the only place in the article where they appear: every section above is written in basis operators.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -239,7 +239,7 @@ $$
 
 the chirality basis operator of the neutrality section.
 
-**The charge operator in gammas.** With $\gamma_5=P_R-P_L$ the two projectors read $P_L=\tfrac12(I_4-\gamma_5)$ and $P_R=\tfrac12(I_4+\gamma_5)$, so $Ϙ=ϙ_LP_L+ϙ_RP_R$ is diagonal in the gamma grading and the neutrality constraint $Ϙ\tilde{Ξ}_{\mathrm{sp}}=0$ is the statement that the neutral state lies in one chirality eigenspace of $\gamma_5$.
+**The charge operator in gammas.** With $\gamma_5=P_R-P_L$ the two projectors read $P_L=\tfrac12(I_4-\gamma_5)$ and $P_R=\tfrac12(I_4+\gamma_5)$, so $Ϙ=ϙ_LP_L+ϙ_RP_R$ is diagonal in the gamma grading and the neutrality constraint $Ϙ\tilde{Ξ}=0$ is the statement that the neutral state lies in one chirality eigenspace of $\gamma_5$.
 
 Two objects must not be confused here. $\gamma_5$ is the reference-frame basis operator of the chirality $\Gamma=-iR_{\mathrm{pau},\vec e_z}$. The central grading is $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, with $\tilde{Ζ}_{\mathrm{ad}}$ the central root of $-e_t$, so that $\xi^{2}=i^{2}\tilde{Ζ}_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\xi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5$ is only its representative on the Dirac module.
 
@@ -251,11 +251,11 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Summary
 
-The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_{m_n}\tilde{Ξ}_{\mathrm{sp},R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
+The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$ satisfying the linear chiral mass pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
 
 That representation is generic: the algebra carries any structureless spin-$\tfrac12$ field by the same two values, and the spin-$\tfrac12$ it supplies is a representation, not a construction from constituents.
 
-The charge multiplies the two values by $ϙ_L$ and $ϙ_R$; the two rules are one right multiplication by the element $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)\in\mathbb{B}_{\Psi}$. The neutrality constraint $\tilde{Ξ}_{\mathrm{sp}} b=0$ has a nonzero solution only if one value is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone; the massive pair then forces it to vanish, so it is massless in the Dirac pair, and whether it can carry a mass depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
+The charge multiplies the two values by $ϙ_L$ and $ϙ_R$; the two rules are one right multiplication by the element $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)\in\mathbb{B}_{\Psi}$. The neutrality constraint $\tilde{Ξ} b=0$ has a nonzero solution only if one value is uncoupled ($ϙ_L=0$ or $ϙ_R=0$), and, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the neutral element carries one value alone; the massive pair then forces it to vanish, so it is massless in the Dirac pair, and whether it can carry a mass depends on a Majorana-type coupling on the algebra's real structure $\flat$, whose interpretation is open.
 
 The framework does have a Fock space, so a neutral many-particle **state** is not ruled out in principle. But no neutral **bound composite** is expressible: there is no colour, no confinement, no binding, and no selection rule fixing three constituents. The neutrality is therefore stateable as a constraint on unfixed charges but not derived, and manufacturing it from the standard quark charges would be an import.
 
@@ -272,12 +272,12 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient, the Dirac operator, acting on the left |
 | $\nabla$, $Q_t=i q'_t$ | Spatial gradient; imaginary time of the material sector |
 | $\Box_\Phi$ | The d'Alembertian in the material reading, the quaternionic norm of the gradient |
-| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{\mathrm{sp},L}$ the value L, $\tilde{Ξ}_{\mathrm{sp},R}$ the value R, at the axis $\vec e_z$ |
-| $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ | The algebra's real structure |
+| $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{L}$ the value L, $\tilde{Ξ}_{R}$ the value R, at the axis $\vec e_z$ |
+| $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ | The algebra's real structure |
 | $\tilde\Pi_\pm(\vec e_z)$ | The two states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
 | $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
-| $D_\mu\tilde{Ξ}_{\mathrm{sp}}=\partial\tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ}_{\mathrm{sp}} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{i}{\hbar}F_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}} b$ |
-| $\tilde{Ξ}_{\mathrm{sp}} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
+| $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{i}{\hbar}F_{\mu\nu}\tilde{Ξ} b$ |
+| $\tilde{Ξ} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $(i\partial/\partial r'_t+\nabla)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
@@ -305,4 +305,4 @@ The neutron's composite character is not reached. The framework has no colour gr
 - [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html) — the equal-time anticommutators, the mode expansion, and the field's quantization, the fermionic setting in which the neutron would have to be a state.
 - V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, for the two-sided biquaternionic Dirac equation with the conjugation in the mass term, the form quoted in *The Two Dirac Equations, and Which One the Neutron Uses*.
 - F. Gürsey, "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, and K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the neutron as the second superposition of Lanczos's doubled system, and for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ under which the proton and neutron superpositions keep their form while the two states take independent phases.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the relation of the doubled Lanczos system to isospin and for the neutron construction $\tilde{Ξ}_{\mathrm{sp},n}=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$, written $N$ there.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the relation of the doubled Lanczos system to isospin and for the neutron construction $\tilde{Ξ}_{n}=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$, written $N$ there.

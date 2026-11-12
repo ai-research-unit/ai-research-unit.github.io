@@ -82,7 +82,7 @@ $$
 $$
 This is the $n=1$ instance of the general parametrization, and both $\vec b$ and $\vec b^{*}$ are elements of $\mathbb{B}$ for every $\alpha,\beta$.
 
-**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},\eta},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
+**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},\eta},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}=a\tilde{Ξ}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
 
 **The first anticommutator.** Using $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\{\vec\Upsilon_x,\vec\Upsilon_x\}=\{\vec\Upsilon_y,\vec\Upsilon_y\}=0$,
 $$

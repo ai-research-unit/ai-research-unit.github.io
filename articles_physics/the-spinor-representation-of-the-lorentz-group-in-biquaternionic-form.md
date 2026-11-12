@@ -21,8 +21,8 @@ $$
 which acts on it by **left multiplication**,
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp}} \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm{lor}})\,\tilde{Ξ}_{\mathrm{sp}},
-\qquad \tilde U_{\mathrm{lor}}\in SL(2,\mathbb{C}),\quad \tilde{Ξ}_{\mathrm{sp}}\in S\;}.
+\boxed{\;\tilde{Ξ} \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm{lor}})\,\tilde{Ξ},
+\qquad \tilde U_{\mathrm{lor}}\in SL(2,\mathbb{C}),\quad \tilde{Ξ}\in S\;}.
 $$
 
 This is the **spinor representation** of the Lorentz group. Its carrier $S$ is the unique simple module of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, realized inside $\mathbb{B}$ as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here because $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is primitive; the detailed construction, together with the bilinear pairings on $S$, belongs to the companion article on the spinor module and is used here without repetition. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
@@ -41,14 +41,14 @@ $$
 
 so $\rho(B_{\mathrm{boost},\eta})$ is Hermitian; skew-adjointness then forces $\rho(B_{\mathrm{boost},\eta})=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
 
-The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\Psi,\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
+The obstruction is visible concretely on $S$. The standard Hermitian form $h(\tilde{Ξ},\xi_{\mathrm{alt}})=\tilde{Ξ}^{\dagger}\xi_{\mathrm{alt}}$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\Psi,\mathrm b}=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u$, because
 
 $$
-h(\tilde U_{\Psi,\mathrm b}\tilde{Ξ}_{\mathrm{sp}},\tilde U_{\Psi,\mathrm b}\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\,\xi_{\mathrm{alt}},
+h(\tilde U_{\Psi,\mathrm b}\tilde{Ξ},\tilde U_{\Psi,\mathrm b}\xi_{\mathrm{alt}})=\tilde{Ξ}^{\dagger}\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\,\xi_{\mathrm{alt}},
 \qquad \tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\,\vec u\neq e_t .
 $$
 
-For example, on a boost along $\vec e_z$ the operator $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}$ is $\mathrm{diag}(\exp(\tilde{Ξ}_{\mathrm{sp}}),\exp(-\tilde{Ξ}_{\mathrm{sp}}))$, which differs from the identity for every $\tilde{Ξ}_{\mathrm{sp}}\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\tilde{Ξ}_{\mathrm{sp}},\xi_{\mathrm{alt}})=\tilde{Ξ}_{\mathrm{sp}}^T\epsilon\xi_{\mathrm{alt}}$, which is symplectic rather than Hermitian.
+For example, on a boost along $\vec e_z$ the operator $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}$ is $\mathrm{diag}(\exp(\tilde{Ξ}),\exp(-\tilde{Ξ}))$, which differs from the identity for every $\tilde{Ξ}\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\tilde{Ξ},\xi_{\mathrm{alt}})=\tilde{Ξ}^T\epsilon\xi_{\mathrm{alt}}$, which is symplectic rather than Hermitian.
 
 ## The Two Fundamental Representations Are the Two Chiralities
 
@@ -95,7 +95,7 @@ $$
 \qquad \tilde{Q}\in\mathbb{B},
 $$
 
-and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\tilde{Ξ}_{\mathrm{sp}}\otimes\bar{\xi}\mapsto \tilde{Q}=\tilde{Ξ}_{\mathrm{sp}}\,\xi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\tilde{Ξ}_{\mathrm{sp}}\xi^{\dagger}+\xi\tilde{Ξ}_{\mathrm{sp}}^{\dagger})$ is the element of $\mathbb{B}_{\Psi}$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself. On $S\otimes\bar{S}$ the corresponding rotation generator has eigenvalues
+and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\tilde{Ξ}\otimes\bar{\xi}\mapsto \tilde{Q}=\tilde{Ξ}\,\xi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\tilde{Ξ}\xi^{\dagger}+\xi\tilde{Ξ}^{\dagger})$ is the element of $\mathbb{B}_{\Psi}$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself. On $S\otimes\bar{S}$ the corresponding rotation generator has eigenvalues
 $$
 -i s_a + i s_b, \qquad s_a,s_b\in\{+1,-1\},
 \qquad\text{i.e.}\qquad \{0,\,0,\,+2i,\,-2i\}.
@@ -133,7 +133,7 @@ V_{s_2} \cong \operatorname{sym}^{2s_2}(\bar{S}),
 (s,s_2)\cong \operatorname{sym}^{2s}(S)\otimes\operatorname{sym}^{2s_2}(\bar{S}),
 $$
 
-with the **diagonal** action of the group on the tensor product, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$ on each factor of $S$ and $\xi\mapsto\overline{\mathsf{M}_2(\tilde U_{\mathrm{lor}})}\xi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(s,s_2)$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
+with the **diagonal** action of the group on the tensor product, $\tilde{Ξ}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}$ on each factor of $S$ and $\xi\mapsto\overline{\mathsf{M}_2(\tilde U_{\mathrm{lor}})}\xi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(s,s_2)$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
 
 | Representation | $\dim_{\mathbb{C}}$ | Object | Carrier |
 |---|---|---|---|
@@ -197,13 +197,13 @@ This is the boundary of the biquaternion form of the spinor representation, and 
 
 Everything in this article is about the representations the algebra $\mathbb{B}$ carries, and its spinor module $S = \mathbb{C}^2$ carries the defining representation with a **Lorentz spinor index**. An external source shows that the kind of index a spinor field carries is a choice rather than a necessity: a spinor field can carry a **world (coordinate) index** instead, and then no Lorentz indices appear at all, neither vector nor spinor.
 
-J. Fredsted (*Obtaining consistent Lorentz gauging for a gravitationally coupled fermion*, arXiv:1906.12200v3 [physics.gen-ph], 2019) constructs such a field $\tilde{Ξ}_{\mathrm{sp},\rho}$ for exactly the purpose this article's conventions do not consider. The Lorentz group still acts on the field, but through the spinor generators, $\delta\tilde{Ξ}_{\mathrm{sp},\mu} = \tfrac12\sum_{\alpha,\beta,\nu}(d\theta_{\alpha\beta})S_{\alpha\beta\mu\nu}\tilde{Ξ}_{\mathrm{sp},\nu}$, and the Dirac matrices are replaced by two families of matrices built from the frame — $M_{\mu\rho\sigma}$ from the timelike frame vector and $N_{i\rho\sigma}$ from the spacelike ones — obeying the Dirac-like algebra $M_\mu M_\nu^* + M_\nu M_\mu^* = 2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1}$ with $\varepsilon=(1,-1,-1,-1)$, $M_\mu N_i^* + N_i M_\mu = 0$ and $N_iN_j = \delta_{ij}\mathbf{1} + i\varepsilon_{ij\eta}N_\eta$, and $S_{\mu\nu}$ is defined from the $M_\mu$ by $4S_{\mu\nu} = M_\mu M_\nu^* - M_\nu M_\mu^*$. In this all-low notation the generator $S_{\alpha\beta\mu\nu}$ carries the Lorentz pair $\alpha\beta$ first and the matrix row and column last; the same row-before-column order is used for $M_{\mu\rho\sigma}$ and $N_{i\rho\sigma}$. The generators $S_{\mu\nu}$ satisfy the Lorentz algebra, so the **spinor representation of the Lorentz group is still the one being carried**; what has been traded away is the Lorentz index of its carrier, and the price is that the covariant derivative must contain the Levi-Civita connection explicitly, because the field's index is a world index.
+J. Fredsted (*Obtaining consistent Lorentz gauging for a gravitationally coupled fermion*, arXiv:1906.12200v3 [physics.gen-ph], 2019) constructs such a field $\tilde{Ξ}_{\rho}$ for exactly the purpose this article's conventions do not consider. The Lorentz group still acts on the field, but through the spinor generators, $\delta\tilde{Ξ}_{\mu} = \tfrac12\sum_{\alpha,\beta,\nu}(d\theta_{\alpha\beta})S_{\alpha\beta\mu\nu}\tilde{Ξ}_{\nu}$, and the Dirac matrices are replaced by two families of matrices built from the frame — $M_{\mu\rho\sigma}$ from the timelike frame vector and $N_{i\rho\sigma}$ from the spacelike ones — obeying the Dirac-like algebra $M_\mu M_\nu^* + M_\nu M_\mu^* = 2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1}$ with $\varepsilon=(1,-1,-1,-1)$, $M_\mu N_i^* + N_i M_\mu = 0$ and $N_iN_j = \delta_{ij}\mathbf{1} + i\varepsilon_{ij\eta}N_\eta$, and $S_{\mu\nu}$ is defined from the $M_\mu$ by $4S_{\mu\nu} = M_\mu M_\nu^* - M_\nu M_\mu^*$. In this all-low notation the generator $S_{\alpha\beta\mu\nu}$ carries the Lorentz pair $\alpha\beta$ first and the matrix row and column last; the same row-before-column order is used for $M_{\mu\rho\sigma}$ and $N_{i\rho\sigma}$. The generators $S_{\mu\nu}$ satisfy the Lorentz algebra, so the **spinor representation of the Lorentz group is still the one being carried**; what has been traded away is the Lorentz index of its carrier, and the price is that the covariant derivative must contain the Levi-Civita connection explicitly, because the field's index is a world index.
 
 Two things should be kept apart here, because the construction can be misread as a statement about this article's subject. The representation theory of this article — which $(s,s_2)$ the algebra $\mathbb{B}$ carries as a module, and which it does not — is untouched by the construction, and no module over $\mathbb{B}$ is involved: the world-indexed field is a field on the manifold taking values in a four-dimensional space on which the Lorentz group acts through $S_{\mu\nu}$, and the algebra's own module structure plays no role in it. What the construction does show is that the identification of the Dirac field with a **Lorentz-indexed** spinor is a convention of the vierbein formalism rather than a consequence of the Lorentz group's representation theory. The equations and the covariance are recorded in *Curved Spacetime and the Biquaternion Framework*, where the framework's own spinor derivative is one-sided and Lorentz-indexed; this article records only the index alternative, as an external claim that the corpus does not adopt.
 
 ## Summary
 
-The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-$*$-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and, for a boost $\tilde U_{\Psi,\mathrm b}$, $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^2\neq e_t$.
+The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\tilde{Ξ}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-$*$-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and, for a boost $\tilde U_{\Psi,\mathrm b}$, $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^2\neq e_t$.
 
 Its complex conjugate $\bar{S}$ is the other chiral half. One basis operator carries the split, $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$; it is a pure right multiplier, so its side is the right slot, and on $\mathbb{B}$ its two eigenspaces are two copies of $S$. The inequivalence belongs one level up: on the Dirac module $\mathcal{S}_{\mathrm{rep}}=S\oplus S^{\mathrm{c}}$ the same array separates $(\tfrac12,0)$ from $(0,\tfrac12)$ and the two chiral Casimirs take the values $(0,-3)$ and $(-3,0)$ on them. The two eigenspaces on $\mathbb{B}$ are not the two minimal left ideals, since both carry $S$, and the second module is not reached by right multiplication, because $S^{*}\cong S$; it requires the real structure.
 
@@ -226,7 +226,7 @@ The higher representations are $(s,s_2)=V_s\boxtimes V_{s_2}$, $\dim=(2s+1)(2s_2
 | $S=\mathbb{C}^2$ | Spinor module, the defining representation $(\tfrac12,0)$ |
 | $\bar{S}$ | Conjugate spinor module, the right-handed chirality $(0,\tfrac12)$ |
 | $\mathcal{S}_{\mathrm{rep}}=S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}=4$ |
-| $\tilde{Ξ}_{\mathrm{sp}}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}_{\mathrm{sp}}$ | Lorentz action on the spinor module (left multiplication) |
+| $\tilde{Ξ}\mapsto\mathsf{M}_2(\tilde U_{\mathrm{lor}})\tilde{Ξ}$ | Lorentz action on the spinor module (left multiplication) |
 | $g^{T}\epsilon g=\epsilon$ | Invariance of the symplectic form; $S^{*}\cong S$ |
 | $N_\eta^{\pm}=\tfrac12(\vec e_\eta\pm\mathsf{i}\,i\vec e_\eta)$ | Generators of the two $\mathrm{SU}(2)$ halves ($\mathsf{i}$ = complexification unit) |
 | $\Omega_\pm=\sum_k(N_\eta^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |

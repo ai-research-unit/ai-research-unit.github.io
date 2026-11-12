@@ -192,7 +192,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame basis operators, the factor $i$ included, so the dictionary below carries no extra phase.
 
-With $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, the dictionary is:
+With $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, the dictionary is:
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad
@@ -288,7 +288,7 @@ The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so
 | $Q\mapsto-e_yQe_y$ | The two-sided multiplier; reverses the value; its square is the identity |
 | $Q\mapsto Qe_x$ | The one-sided form; its square is $-e_t$, its order is four |
 | $Q_L$, $Q_R$ | The two components of the pair, of value minus one and plus one |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two lines of the free equation, one per value |
+| $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two lines of the free equation, one per value |
 | $\mathbb{B}_{H}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
 | the fixed set of $Q^{\mathrm c}$ | Time and $y$ real, $x$ and $z$ imaginary; a real subalgebra of real dimension four, not a division ring |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |

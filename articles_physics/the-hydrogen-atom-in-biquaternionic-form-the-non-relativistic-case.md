@@ -89,12 +89,12 @@ and it lies along the time-like direction $ie_t$ of the material sector, as the 
 The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, a minimal left ideal here. A position-space treatment requires a spinor **field**,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
+\tilde{Ξ}(r'_t, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
 $$
 
 a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the **argument** of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.
 
-Under the isomorphism $\mathsf{M}_2$ the field $\tilde{Ξ}_{\mathrm{sp}}$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ act on its two components as $\frac{\hbar}{2}\sigma_\eta$, and the orbital operators $L_{\mathrm{orb},\eta} e_t$ act on the argument as $L_{\mathrm{orb},\eta}$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the **scalar** slot $e_t$; the spin operators occupy the **vector** slots $i\vec e_\eta$. Because a scalar multiple of $e_t$ is central, the two families commute:
+Under the isomorphism $\mathsf{M}_2$ the field $\tilde{Ξ}$ is a column vector in $\mathbb{C}^2$, the spin operators $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ act on its two components as $\frac{\hbar}{2}\sigma_\eta$, and the orbital operators $L_{\mathrm{orb},\eta} e_t$ act on the argument as $L_{\mathrm{orb},\eta}$ times the identity. The framework expresses the distinction between these two kinds of action algebraically. The orbital operators occupy the **scalar** slot $e_t$; the spin operators occupy the **vector** slots $i\vec e_\eta$. Because a scalar multiple of $e_t$ is central, the two families commute:
 
 $$
 [L_{\mathrm{orb},i},\tilde S_{\Psi,j}]=0 .
@@ -149,11 +149,11 @@ which is the standard spin-1/2 expectation value, written as the plain form of $
 Separate the field as
 
 $$
-\boxed{\;\tilde{Ξ}_{\mathrm{sp},n l l_z s_z}(r,\theta,\theta_{\mathrm{azm}}) = R_{nl}(r)\,Y_l^{l_z}(\theta,\theta_{\mathrm{azm}})\,\xi_{s_z}\;},
+\boxed{\;\tilde{Ξ}_{n l l_z s_z}(r,\theta,\theta_{\mathrm{azm}}) = R_{nl}(r)\,Y_l^{l_z}(\theta,\theta_{\mathrm{azm}})\,\xi_{s_z}\;},
 \qquad \xi_{s_z}\in\mathbb{B}\tilde\Pi ,
 $$
 
-with $\xi_{s_z}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ and using the spherical decomposition of the Laplacian,
+with $\xi_{s_z}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=H\tilde{Ξ}$ and using the spherical decomposition of the Laplacian,
 
 $$
 -\hbar^{2}\Delta_\Phi  = \frac{L^2}{r^2} -\frac{\hbar^{2}}{r^{2}}\partial/\partial r\,\bigl(r^2\partial/\partial r\,\bigr),
@@ -214,7 +214,7 @@ $$
 The ground state is therefore
 
 $$
-\tilde{Ξ}_{\mathrm{sp},100}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\xi_{s_z},
+\tilde{Ξ}_{100}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{\sqrt{\pi a_0^3}}\,\exp(-r/a_0)\,\xi_{s_z},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$
 
@@ -222,7 +222,7 @@ a spinor field whose orbital factor is the familiar exponential and whose spin f
 
 ## Correspondence with the Standard Solution
 
-Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}_{\mathrm{sp}}$ is a two-component column, the central Hamiltonian acts as $h_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.
+Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field $\tilde{Ξ}$ is a two-component column, the central Hamiltonian acts as $h_t I_2$, and the biquaternion Schrödinger equation becomes two identical copies of the standard Schrödinger equation for the Coulomb problem. The correspondence is collected here.
 
 | Standard object | Biquaternion object | Slot |
 |---|---|---|
@@ -230,7 +230,7 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 | Kinetic term $p^2 c/(2\,m\,c)$ | $-\frac{1}{2\,m}\tilde p^{\,2}=\frac{1}{2\,m}\tilde p\tilde p^{\natural}$ | scalar |
 | $L_{\mathrm{orb},\eta}$ | $L_{\mathrm{orb},\eta} e_t$ | scalar |
 | Spin $S_\eta=\frac{\hbar}{2}\sigma_\eta$ | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | vector |
-| Wavefunction $\tilde{Ξ}_{\mathrm{sp}}\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\tilde{Ξ}_{\mathrm{sp}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi$ | module |
+| Wavefunction $\tilde{Ξ}\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\in\mathbb{B}\tilde\Pi$ | module |
 | Spectrum $E_n=-\frac{m\,\kappa^{2}}{2\,\hbar^{2}\,n^{2}}$ | identical | — |
 | Degeneracy $2n^2$ | identical, spin factor from $\dim\mathbb{B}\tilde\Pi=2$ | — |
 
@@ -329,7 +329,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $L_{\mathrm{orb},\eta} e_t$, $L^2e_t$ | Orbital operators, scalar slot |
 | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$, $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$ | Spin operators, vector slots |
 | $\tilde S_{\Psi,\mathrm{tot},\eta}=L_{\mathrm{orb},\eta}+\tilde S_{\Psi,\eta}$ | Total angular momentum (needed only relativistically) |
-| $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module of spinors $\tilde{Ξ}_{\mathrm{sp}}$ |
+| $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module of spinors $\tilde{Ξ}$ |
 | $\tilde{\Pi}(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Spin eigenstates (idempotents) |
 | $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Trace reading at normalisation (Born rule) |
 | $E_n=-\frac{m\,\kappa^{2}}{2\,\hbar^{2}\,n^{2}}$ | Bound-state spectrum, $n=n_r+l+1$ |

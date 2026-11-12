@@ -6,7 +6,7 @@ The biquaternionic Dirac equation is first order and its solutions are waves. At
 
 **The claim, stated narrowly.** The mass shell is the leading term of a short-wavelength expansion of the Dirac wave. It is not predicted by the algebra nor created by the limit: $k_{m}=\frac{m\,c}{\hbar}$ is already there. What the limit supplies is the reading of the phase gradient as the mechanical momentum, and with it the flow.
 
-**The parameter is the companion's.** With $\tilde\Xi_{\mathrm{sp}}=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$, the small quantity is $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, $L$ the length over which $A$ varies. The criterion and the error operator are established in *The Non-Quantum Limit of the Biquaternion Model* and are used here, not restated.
+**The parameter is the companion's.** With $\tilde\Xi=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$, the small quantity is $\epsilon=1/(k_{\Phi}L)=\hbar/(pL)$, $L$ the length over which $A$ varies. The criterion and the error operator are established in *The Non-Quantum Limit of the Biquaternion Model* and are used here, not restated.
 
 **What this is not.** It is not the $\beta\ll1$ limit of *The Dirac Equation in Biquaternionic Form: Solutions and the Non-Relativistic Limit*, which subtracts the rest phase and yields a non-relativistic wave; this yields a relativistic flow. The two compose, as §*Where the Two Limits Meet* says.
 
@@ -17,19 +17,19 @@ The biquaternionic Dirac equation is first order and its solutions are waves. At
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$. The field is an element, the operator is an element multiplying on the left, and the dynamics is the pair
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_{m}\tilde\Xi_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde\Xi_{R}=k_{m}\tilde\Xi_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_{m}\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_{m}\tilde\Xi_{R},
 \qquad
 k_{m}=\frac{m\,c}{\hbar}.
 $$
 
-The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the central scalar $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, which with $r'_{t}=ct$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
+The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the central scalar $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, which with $r'_{t}=ct$ is $-\frac{1}{c^{2}}\partial_{t}^{2}+\nabla^{2}$, so each half obeys $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi=0$. The passage from the first-order pair to that second-order equation is the subject of *Klein–Gordon from the Dirac Square*; what matters here is that the operator is scalar, so the expansion never has to choose a chiral half.
 
-**The expansion.** Write $\tilde\Xi_{\mathrm{sp}}=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then
+**The expansion.** Write $\tilde\Xi=Ae^{iS_{\tilde\Xi}/\hbar}\xi$ with $A>0$ real, $S_{\tilde\Xi}$ real and $\xi$ slowly varying. The action carries the subscript of the field it belongs to because this article also carries the spin $\tilde S_{\Psi,\eta}$, and the bare letter would be read for either. Then
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp}}=\frac{1}{\hbar}\left(\frac{\partial_{t}S_{\tilde\Xi}}{c}e_{t}+i\nabla S_{\tilde\Xi}\right)\tilde\Xi_{\mathrm{sp}}+\mathcal{O}(\epsilon),
+\tilde\nabla_\Phi\tilde\Xi=\frac{1}{\hbar}\left(\frac{\partial_{t}S_{\tilde\Xi}}{c}e_{t}+i\nabla S_{\tilde\Xi}\right)\tilde\Xi+\mathcal{O}(\epsilon),
 $$
 
 so the gradient acts, to leading order, as multiplication by $i\tilde K_{\Phi}$, with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ the element of *The Three Wavenumbers of a Particle*. Its $e_{t}$ entry is real and its vector part imaginary, as the display shows. The limit is the statement that this term dominates.
@@ -38,7 +38,7 @@ so the gradient acts, to leading order, as multiplication by $i\tilde K_{\Phi}$,
 
 ## Order Zero: the Mass Shell
 
-**Substitute and separate.** Multiplying $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi_{\mathrm{sp}}=0$ by $-\hbar^{2}$ and dividing by $\tilde\Xi_{\mathrm{sp}}$ gives, exactly,
+**Substitute and separate.** Multiplying $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi=0$ by $-\hbar^{2}$ and dividing by $\tilde\Xi$ gives, exactly,
 
 $$
 -\left[\frac{(\partial_{t}S_{\tilde\Xi})^{2}}{c^{2}}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}-m^{2}c^{2}\right]
@@ -152,7 +152,7 @@ The first row is exact at every $\beta$, since $\vec p\,c^{2}/E=\gamma m\vec v\,
 
 **The checks.** The identity of §*Order Zero* was tested at five hundred values of $(x,t)$: its real line to $4.3\times10^{-14}$, its imaginary line to $3.6\times10^{-15}$, the latter equal to the continuity equation to $2.7\times10^{-15}$. The Lorentz force was derived symbolically for arbitrary $S_{\tilde\Xi}$, $\phi$, $\vec A$, with zero residual.
 
-**A plane wave is already there.** For $\tilde\Xi_{\mathrm{sp}}=\xi e^{i(\vec k_\Phi\cdot\vec r-\omega t)}$ the amplitude is constant and $\epsilon=0$, so the eikonal is the dispersion relation $\frac{\omega^{2}}{c^{2}}-\lvert\vec k_\Phi\rvert^{2}=k_{m}^{2}$ exactly. At the other end a caustic makes $A$ diverge, $\epsilon$ large, the expansion void.
+**A plane wave is already there.** For $\tilde\Xi=\xi e^{i(\vec k_\Phi\cdot\vec r-\omega t)}$ the amplitude is constant and $\epsilon=0$, so the eikonal is the dispersion relation $\frac{\omega^{2}}{c^{2}}-\lvert\vec k_\Phi\rvert^{2}=k_{m}^{2}$ exactly. At the other end a caustic makes $A$ diverge, $\epsilon$ large, the expansion void.
 
 ## Summary
 
@@ -164,7 +164,7 @@ The mass is recovered rather than derived: $k_{m}$ carried it. The spin is absen
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi_{\mathrm{sp}}=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$ | The wave in amplitude and phase; $A>0$ real, $S_{\tilde\Xi}$ the action of the field, $\xi$ slowly varying; the companion writes the exponent $\frac{k_{m}iS_{\tilde\Xi}}{m\,c}$, which is the same number |
+| $\tilde\Xi=A\exp\!\left(\frac{iS_{\tilde\Xi}}{\hbar}\right)\xi$ | The wave in amplitude and phase; $A>0$ real, $S_{\tilde\Xi}$ the action of the field, $\xi$ slowly varying; the companion writes the exponent $\frac{k_{m}iS_{\tilde\Xi}}{m\,c}$, which is the same number |
 | $\epsilon=\frac{1}{k_{\Phi}L}=\frac{\hbar}{pL}$ | The parameter of the limit; $L$ the length over which $A$ varies |
 | $k_{m}=\frac{m\,c}{\hbar}$ | The mass wave number; the reciprocal of the reduced Compton wavelength |
 | $E=-\partial_{t}S_{\tilde\Xi}$, $\vec p=\nabla S_{\tilde\Xi}$ | Energy and momentum read off the phase |

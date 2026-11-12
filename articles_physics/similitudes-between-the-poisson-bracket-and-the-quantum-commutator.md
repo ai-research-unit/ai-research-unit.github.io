@@ -86,7 +86,7 @@ Second, the normalization is not free. The factor $1/(i\,\hbar)$ — with the $i
 In the position representation, for a system with coordinates $q_i$, the operators are
 
 $$
-q_i\,\tilde{Ξ}_{\mathrm{sp}} = q_i\,\tilde{Ξ}_{\mathrm{sp}}, \qquad p_j\,\tilde{Ξ}_{\mathrm{sp}} = -i\,\hbar\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial  q_j}.
+q_i\,\tilde{Ξ} = q_i\,\tilde{Ξ}, \qquad p_j\,\tilde{Ξ} = -i\,\hbar\frac{\partial\tilde{Ξ}}{\partial  q_j}.
 $$
 
 From these definitions,

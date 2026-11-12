@@ -84,7 +84,7 @@ the gradient included. A left multiplier and a right multiplier never fail to co
 
 **The equation.** The biquaternion Dirac equation is the chiral pair
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 in which both operators act by left multiplication: the first by $\tilde\nabla_\Phi$, the second by its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$. The conjugation is what relates the two, and its identity is the one of the mathematics article,
 $$
@@ -104,7 +104,7 @@ $$
 $$
 the gradient included. The derivative therefore carries each value into itself: if $\tilde\Xi$ has a value then so does $\tilde\nabla_\Phi\tilde\Xi$, and a field of definite value stays of definite value under differentiation. The basis operator and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides and not a computation about arrays.
 
-**The massless case, and the split.** At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $-iR_u$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each value**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under the basis operator, so a solution of definite value may be chosen.
+**The massless case, and the split.** At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $-iR_u$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each value**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under the basis operator, so a solution of definite value may be chosen.
 
 **The mass of the pair is a number, and a number has both slots.** In the pair the mass enters as $k_m$, and $k_m$ is central: it is a left multiplier and a right multiplier at once, so it holds both slots and has no single side. That is where its physical reading comes from, and it is also where the reading stops. Being in both slots, it acts on the two values alike, and a term that acts on them alike does not move a field from one to the other. In the projectors of the basis operator the statement is one equation, with $P_\pm=\tfrac12(\mathrm I\mp iR_u)$,
 $$
@@ -114,10 +114,10 @@ which holds for every $k_m$: a central scalar is diagonal in the basis operator'
 
 | Term | Multiplier | Slot | What it does to the value |
 | --- | --- | --- | --- |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}$ | left by $\tilde\nabla_\Phi$ | left | keeps it |
-| $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}$ | left by the conjugate | left | keeps it |
-| $k_m\tilde{Ξ}_{\mathrm{sp}}$ | central scalar | both slots, hence no single side | keeps it |
-| $\tilde{Ξ}_{\mathrm{sp}}v$, $uv+vu=0$ | right by $v$ | right | exchanges it |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}$ | left by $\tilde\nabla_\Phi$ | left | keeps it |
+| $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}$ | left by the conjugate | left | keeps it |
+| $k_m\tilde{Ξ}$ | central scalar | both slots, hence no single side | keeps it |
+| $\tilde{Ξ}v$, $uv+vu=0$ | right by $v$ | right | exchanges it |
 
 **What carries a field from one value to the other.** The exchange is a right-slot operation, and its condition is anticommutation with $u$:
 $$
@@ -129,7 +129,7 @@ since $R_vR_u=R_{uv}$ and $R_uR_v=R_{vu}$. Then $R_v$ carries one half into the 
 
 **Two readings of one word, kept apart.** The pair and the operator statement are both in the corpus, and they are not the same statement: the first uses the mass as a number and leaves the value alone, the second uses it as a right multiplier and moves the value. Which one a computation needs depends on the question. A mass shell, a dispersion relation, a plane wave: the pair, because the value plays no part in them. A chiral current, an axial rotation, a condensate, an anomaly coefficient: the right multiplier, because there the value is the whole subject. The corpus keeps the two apart in the same words in *The Roots of a General Element, Mass Frames and the Mass Shell*: the mass shell is a statement of the gradient equation, and the chirality, the axial current and the condensate are statements of the field's right multiplication.
 
-**Commutation, and the anticommutation a reader will expect.** On $\mathbb{B}$ the basis operator multiplies on the right and the derivative on the left, so the two commute, and the commutation says that the basis operator preserves each of its own eigenspaces. In a matrix display the basis operator is diagonal and the derivative is off-diagonal, and the anticommutation of the two is that display's way of saying the derivative carries one eigenspace into the other. The anticommutation is therefore a statement about the derivative, and it is true of the display's derivative and not of the algebra's left multiplier. The display's four frame basis operators are $iL_{e_a}R_{e_{\nu(a)}}$, and each of the four anticommutes with the basis operator: that is the standard chiral structure, and it is a property of those four operators rather than of the basis operator. The conclusion for a solution is the same in either account and needs no display: if $\tilde{Ξ}_{\mathrm{sp}}$ is massless then $-iR_u\tilde{Ξ}_{\mathrm{sp}}$ is massless too.
+**Commutation, and the anticommutation a reader will expect.** On $\mathbb{B}$ the basis operator multiplies on the right and the derivative on the left, so the two commute, and the commutation says that the basis operator preserves each of its own eigenspaces. In a matrix display the basis operator is diagonal and the derivative is off-diagonal, and the anticommutation of the two is that display's way of saying the derivative carries one eigenspace into the other. The anticommutation is therefore a statement about the derivative, and it is true of the display's derivative and not of the algebra's left multiplier. The display's four frame basis operators are $iL_{e_a}R_{e_{\nu(a)}}$, and each of the four anticommutes with the basis operator: that is the standard chiral structure, and it is a property of those four operators rather than of the basis operator. The conclusion for a solution is the same in either account and needs no display: if $\tilde{Ξ}$ is massless then $-iR_u\tilde{Ξ}$ is massless too.
 
 ## The Eleven Objects the Physics Does Not Need
 

@@ -74,7 +74,7 @@ an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ with $\tilde\Pi_{Ξ^+}
 
 $$
 \tilde\Pi_\epsilon^{(12)}=\tilde\Pi_\epsilon\otimes e_t^{(3)},
-\qquad \epsilon\in\{Ξ^{+},Ξ^{-},\tilde{Ξ}_{\mathrm{sp}}^+,\tilde{Ξ}_{\mathrm{sp}}^-\} ,
+\qquad \epsilon\in\{Ξ^{+},Ξ^{-},\tilde{Ξ}^+,\tilde{Ξ}^-\} ,
 $$
 
 where $\tilde\Pi_\epsilon$ is the Bell idempotent on factors $(1,2)$ and $e_t$ acts as the identity on Bob's qubit. The four projectors inherit from the Bell idempotent basis the four properties that make them a projective measurement:
@@ -107,35 +107,35 @@ Both labels are used below. Note again the type: $S_1,S_3$ are Hermitian **obser
 
 The whole protocol rests on one algebraic fact, which says how the shared resource factors when the unknown qubit is grouped with Alice's half of the pair.
 
-**Lemma (Bell decomposition).** Let $|\tilde{Ξ}_{\mathrm{sp}}\rangle_1$ be any single-qubit vector and let $|Ξ^{+}\rangle_{23}$ be the shared pair. Then
+**Lemma (Bell decomposition).** Let $|\tilde{Ξ}\rangle_1$ be any single-qubit vector and let $|Ξ^{+}\rangle_{23}$ be the shared pair. Then
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}\rangle_1|Ξ^{+}\rangle_{23}
-=\tfrac12\Bigl[\,|Ξ^{+}\rangle_{12}|\tilde{Ξ}_{\mathrm{sp}}\rangle_3
-+|Ξ^{-}\rangle_{12}\,Z|\tilde{Ξ}_{\mathrm{sp}}\rangle_3
-+|\tilde{Ξ}_{\mathrm{sp}}^+\rangle_{12}\,X|\tilde{Ξ}_{\mathrm{sp}}\rangle_3
-+|\tilde{Ξ}_{\mathrm{sp}}^-\rangle_{12}\,(XZ)|\tilde{Ξ}_{\mathrm{sp}}\rangle_3\,\Bigr] .
+|\tilde{Ξ}\rangle_1|Ξ^{+}\rangle_{23}
+=\tfrac12\Bigl[\,|Ξ^{+}\rangle_{12}|\tilde{Ξ}\rangle_3
++|Ξ^{-}\rangle_{12}\,Z|\tilde{Ξ}\rangle_3
++|\tilde{Ξ}^+\rangle_{12}\,X|\tilde{Ξ}\rangle_3
++|\tilde{Ξ}^-\rangle_{12}\,(XZ)|\tilde{Ξ}\rangle_3\,\Bigr] .
 $$
 
-*Proof.* Write $|\tilde{Ξ}_{\mathrm{sp}}\rangle=\alpha|0\rangle+\beta|1\rangle$ and expand the left-hand side in the computational basis:
+*Proof.* Write $|\tilde{Ξ}\rangle=\alpha|0\rangle+\beta|1\rangle$ and expand the left-hand side in the computational basis:
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}\rangle_1|Ξ^{+}\rangle_{23}
+|\tilde{Ξ}\rangle_1|Ξ^{+}\rangle_{23}
 =\tfrac{1}{\sqrt2}\Bigl(\alpha|000\rangle+\alpha|011\rangle+\beta|100\rangle+\beta|111\rangle\Bigr).
 $$
 
 Grouping the first two tensor slots and projecting onto the four Bell vectors of the pair $(1,2)$ gives the four coefficients
 
 $$
-|Ξ^{+}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle+\beta|1\rangle\right)=\tfrac12|\tilde{Ξ}_{\mathrm{sp}}\rangle_3,
+|Ξ^{+}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle+\beta|1\rangle\right)=\tfrac12|\tilde{Ξ}\rangle_3,
 \qquad
-|Ξ^{-}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle-\beta|1\rangle\right)=\tfrac12 Z|\tilde{Ξ}_{\mathrm{sp}}\rangle_3,
+|Ξ^{-}\rangle_{12}:\ \tfrac12\left(\alpha|0\rangle-\beta|1\rangle\right)=\tfrac12 Z|\tilde{Ξ}\rangle_3,
 $$
 
 $$
-|\tilde{Ξ}_{\mathrm{sp}}^+\rangle_{12}:\ \tfrac12\left(\beta|0\rangle+\alpha|1\rangle\right)=\tfrac12 X|\tilde{Ξ}_{\mathrm{sp}}\rangle_3,
+|\tilde{Ξ}^+\rangle_{12}:\ \tfrac12\left(\beta|0\rangle+\alpha|1\rangle\right)=\tfrac12 X|\tilde{Ξ}\rangle_3,
 \qquad
-|\tilde{Ξ}_{\mathrm{sp}}^-\rangle_{12}:\ \tfrac12\left(\alpha|1\rangle-\beta|0\rangle\right)=\tfrac12 (XZ)|\tilde{Ξ}_{\mathrm{sp}}\rangle_3 .
+|\tilde{Ξ}^-\rangle_{12}:\ \tfrac12\left(\alpha|1\rangle-\beta|0\rangle\right)=\tfrac12 (XZ)|\tilde{Ξ}\rangle_3 .
 $$
 
 Collecting the four terms gives the stated identity.
@@ -218,7 +218,7 @@ $$
 
 that is, $i\vec e_z$ if the $S_1$ outcome is $-1$ and $i\vec e_x$ if the $S_3$ outcome is $-1$; when both are $-1$ the product is $\tilde Q_z\tilde Q_x=-\tilde Q_x\tilde Q_z\sim\tilde Q_y$, the fourth Pauli. The four corrections are precisely the Pauli gates modulo phase; they lie in the Pauli group, hence in the Clifford group, of the companion article on gates and circuits. The protocol consumes only these four gates and a Bell-basis measurement.
 
-Two remarks about the table. First, the fourth row is the one where the naive correspondence is easiest to get wrong: the standard decomposition produces $XZ$ for the outcome $|\tilde{Ξ}_{\mathrm{sp}}^-\rangle$, and $XZ=-i\sigma_y$ is *not* the element $\tilde Q_y=i\vec e_y$ but differs from it by the central phase $-i$. As a **gate** the two agree, and the row is written with the Hermitian representative; it was checked by conjugating a state by both, which gives the same result. Second, the table is not symmetric between $Ξ$ and $\tilde{Ξ}_{\mathrm{sp}}$ outcomes: the $Ξ^{+}$ row is the identity, and the others are the three non-identity Paulis, but the assignment of which Pauli goes with which outcome depends on the shared resource. It is a statement about the pair (resource, outcome), not about the outcome alone.
+Two remarks about the table. First, the fourth row is the one where the naive correspondence is easiest to get wrong: the standard decomposition produces $XZ$ for the outcome $|\tilde{Ξ}^-\rangle$, and $XZ=-i\sigma_y$ is *not* the element $\tilde Q_y=i\vec e_y$ but differs from it by the central phase $-i$. As a **gate** the two agree, and the row is written with the Hermitian representative; it was checked by conjugating a state by both, which gives the same result. Second, the table is not symmetric between $Ξ$ and $\tilde{Ξ}$ outcomes: the $Ξ^{+}$ row is the identity, and the others are the three non-identity Paulis, but the assignment of which Pauli goes with which outcome depends on the shared resource. It is a statement about the pair (resource, outcome), not about the outcome alone.
 
 **A general Bell resource.** The choice $\tilde\Pi_{Ξ^+}$ is a convention; any resource of the form $(e_t\otimes\tilde U_{\mathrm{cor}})\tilde\Pi_{Ξ^+}(e_t\otimes\tilde U_{\mathrm{cor}}^{*})$ with $\tilde U_{\mathrm{cor}}$ a single-qubit $*$-unitary on Bob's factor works, and Bob's uncorrected state becomes $\tilde U_{\mathrm{cor}}\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}\tilde U_{\mathrm{cor}}^{*}$, so that the correction is $\tilde Q_\epsilon^{*}\tilde U_{\mathrm{cor}}^{*}$. For $\tilde U_{\mathrm{cor}}=\tilde Q_x$ — which conjugates the resource to another Bell idempotent — this was verified outcome by outcome: the probabilities are still $\tfrac14$, Bob's state is the stated conjugation, and the stated correction restores $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$. The general statement is the standard local-$*$-unitary covariance of the protocol; it is recorded here as an inherited fact, with the one case checked.
 

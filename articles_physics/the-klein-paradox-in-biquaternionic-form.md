@@ -8,7 +8,7 @@ This article treats the Klein step in the biquaternion framework. The framework 
 
 The article is organised as follows. The next section writes the Dirac equation at a step and reduces it along one axis. The third section does the standard matching and gives the reflection and transmission coefficients, with the exact current conservation checked. The fourth states the paradox and its quantum-field-theoretic resolution. The fifth gives the biquaternion interpretation and separates what the algebra supplies from what it only transcribes. The sixth reports a worked numerical case and the massless limit. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, acting by left multiplication.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\eta^2 = -e_t$, central scalar imaginary $i$; $\mathbb{B}_{\Psi}$ is the Hermitian and $\mathbb{B}_{\Phi}$ the anti-Hermitian subspace; the gradient is $\tilde\nabla = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$; the biquaternion Dirac equation is the linear chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, acting by left multiplication.
 
 ## The Dirac Equation at a Potential Step
 
@@ -35,12 +35,12 @@ constant on each half-line and discontinuous at $x = 0$, with $V_0 > 0$ for a ba
 Take the particle to move along $x$ and to be in a spin state along the direction of motion. The spinor-module transcription of the biquaternion equation then reduces, as in the standard treatment of the step, to the two-component system
 
 $$
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},2}}{\partial x}=\left[E - mc^2 - V(x)\right]\tilde{Ξ}_{\mathrm{sp},1},
+i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{2}}{\partial x}=\left[E - mc^2 - V(x)\right]\tilde{Ξ}_{1},
 \qquad
-i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{\mathrm{sp},1}}{\partial x}=\left[E + mc^2 - V(x)\right]\tilde{Ξ}_{\mathrm{sp},2},
+i\,\hbar\,c\,\frac{\partial\tilde{Ξ}_{1}}{\partial x}=\left[E + mc^2 - V(x)\right]\tilde{Ξ}_{2},
 $$
 
-in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the potential energy, and the pair $(\tilde{Ξ}_{\mathrm{sp},1}, \tilde{Ξ}_{\mathrm{sp},2})$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.
+in which $E$ is the total energy, $V(x) = V_0\mathrm{H}_{\mathrm{hvs}}(x)$ the potential energy, and the pair $(\tilde{Ξ}_{1}, \tilde{Ξ}_{2})$ is the two-component spinor of the reduced equation. This is the same two-component form the Klein paradox is usually solved in; the reduction is the one-dimensional instance of the parent's spinor-module picture, and the biquaternion field is recovered from the pair by the standing dictionary. The essential feature is already visible: the potential appears as the combination $E - V(x)$ multiplying the mass term, so a large $V$ drives that combination through zero and past $-m$.
 
 ## The Matching Problem
 
@@ -55,7 +55,7 @@ $$
 which is real for $E > mc^2$. The solution is an incident wave plus a reflected wave,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\mathrm{I}} = \exp(ikx)\begin{pmatrix}1\ \alpha\end{pmatrix} + r\,\exp(-ikx)\begin{pmatrix}1\ -\alpha\end{pmatrix},
+\tilde{Ξ}_{\mathrm{I}} = \exp(ikx)\begin{pmatrix}1\ \alpha\end{pmatrix} + r\,\exp(-ikx)\begin{pmatrix}1\ -\alpha\end{pmatrix},
 \qquad
 \alpha = \sqrt{\frac{E - mc^2}{E + mc^2}},
 $$
@@ -65,7 +65,7 @@ so $0 < \alpha < 1$ for a massive particle, and $\alpha \to 1$ in the massless l
 $$
 k_2 = -\frac{\sqrt{(V_0 - E)^2 -m^{2}\,c^{4}}}{\hbar\,c},
 \qquad
-\tilde{Ξ}_{\mathrm{sp},\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\ 1/\beta\end{pmatrix},
+\tilde{Ξ}_{\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\ 1/\beta\end{pmatrix},
 \qquad
 \beta = \sqrt{\frac{V_0 - E - mc^2}{V_0 - E + mc^2}} .
 $$
@@ -90,7 +90,7 @@ R = r^2 = \left(\frac{\alpha\beta - 1}{\alpha\beta + 1}\right)^2,
 T = 1 - R = \frac{4\alpha\beta}{(\alpha\beta + 1)^2}\;}.
 $$
 
-The current of the reduced equation is $j^x \propto \mathrm{Re}(\tilde{Ξ}_{\mathrm{sp},1}^*\tilde{Ξ}_{\mathrm{sp},2})$, so the incident flux is $2\alpha$, the reflected flux $2\alpha r^2$ and the transmitted flux $2t^2/\beta$. The matching conditions make current conservation an identity,
+The current of the reduced equation is $j^x \propto \mathrm{Re}(\tilde{Ξ}_{1}^*\tilde{Ξ}_{2})$, so the incident flux is $2\alpha$, the reflected flux $2\alpha r^2$ and the transmitted flux $2t^2/\beta$. The matching conditions make current conservation an identity,
 
 $$
 2\alpha\left(1 - r^2\right) = \frac{2}{\beta}\,t^2 ,
@@ -115,7 +115,7 @@ The resolution of the apparent paradox is a matter of particle number, not of th
 
 ### The potential acts on the centre, the mass on the chiralities
 
-Two algebraic facts organise the problem, and they were established in the companion articles. The potential term is central — a scalar multiple of $e_t$ — so it acts trivially on the state module and only shifts the mass shell. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, the one term of the equation that relates its two components. The two ingredients of the Klein problem therefore act in orthogonal places: the potential is a central shift, the mass is a chirality mixing. The paradox is not caused by either alone but by the fact that the central shift can move the frequency past the mass gap, into the region where the two mass-shell roots exchange their roles.
+Two algebraic facts organise the problem, and they were established in the companion articles. The potential term is central — a scalar multiple of $e_t$ — so it acts trivially on the state module and only shifts the mass shell. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$, the one term of the equation that relates its two components. The two ingredients of the Klein problem therefore act in orthogonal places: the potential is a central shift, the mass is a chirality mixing. The paradox is not caused by either alone but by the fact that the central shift can move the frequency past the mass gap, into the region where the two mass-shell roots exchange their roles.
 
 **The converse step.** A step in the mass is the other case: the mass is the chirality-mixing term of the pair, so a position-dependent mass shifts no frequency and cannot exchange the two mass-shell roots. When the local mass exceeds the energy the transmitted wave is evanescent rather than negative-frequency, the reflection is total, and the field penetrates the region of large mass only to a depth $1/\sqrt{M^2c^4-E^2}$, an inverse length. That is the confinement mechanism of the bag models of Bardeen, Chanowitz, Drell, Weinstein and Yan (1975), which use a scalar mass step rather than an electrostatic one for exactly this reason: a scalar step has no Klein threshold.
 

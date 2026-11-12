@@ -5,7 +5,7 @@
 The Schrödinger equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Schrödinger Equation in Biquaternionic Form* writes it as
 
 $$
-i\hbar\,\frac{\partial}{\partial t'}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\,\tilde\Xi_{\mathrm{sp}},
+i\hbar\,\frac{\partial}{\partial t'}\tilde\Xi=\tilde H_\Psi\,\tilde\Xi,
 \qquad
 \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi},
 $$
@@ -57,7 +57,7 @@ What the article establishes is short, and each item is one sentence:
 
 ### One element, eight real numbers
 
-The field is one element $\tilde\Xi_{\mathrm{sp}}$ of $\mathbb{B}$, with four complex coefficients and therefore eight real components. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it; once the field is named, the body writes $\tilde\Xi$ for the same element. Nothing else is needed: $\mathbb{B}$ is an algebra, so a product of two elements is an element, and the equation restricts no subspace.
+The field is one element $\tilde\Xi$ of $\mathbb{B}$, with four complex coefficients and therefore eight real components. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it; once the field is named, the body writes $\tilde\Xi$ for the same element. Nothing else is needed: $\mathbb{B}$ is an algebra, so a product of two elements is an element, and the equation restricts no subspace.
 
 **The equation is complex-linear, and its symbol is Hermitian.** Because $i$ is central, left multiplication $L_{\tilde H_\Psi}$ satisfies $L_{\tilde H_\Psi}(i\tilde X)=iL_{\tilde H_\Psi}\tilde X$, so the equation is complex-linear on $\mathbb{B}$ read as a complex vector space of dimension four. Because $\tilde H_\Psi^{*}=\tilde H_\Psi$, it also satisfies
 
@@ -201,7 +201,7 @@ checked to $10^{-6}$ in a hundred random cases. The field returns to minus itsel
 
 ### The degeneration of the word
 
-A field is **central** when it is a complex multiple of $e_t$, $\tilde\Xi_{\mathrm{sp}}=\Xi_t\,e_t$. Its word degenerates, and the degeneration was checked on a hundred random central fields:
+A field is **central** when it is a complex multiple of $e_t$, $\tilde\Xi=\Xi_t\,e_t$. Its word degenerates, and the degeneration was checked on a hundred random central fields:
 
 $$
 r=|\Xi_t|,\qquad \tilde U_{\Psi,\mathrm b}=e_t,\qquad \tilde u_{\mathrm r}=\pm e_t,\qquad 2\alpha\equiv\arg\Xi_t\ (\mathrm{mod}\ \pi),
@@ -209,13 +209,13 @@ $$
 
 the sign of the rotor carrying the half-turn branch of the angle. A central field's word is therefore a scale, a phase and a sign, and three of the four factors have collapsed. This is exactly Madelung's pair, with $A=r$ and $S=\hbar\alpha$.
 
-**The central class is not invariant under a general Hamiltonian.** If $\vec h_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
+**The central class is not invariant under a general Hamiltonian.** If $\vec h_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi$ has a vector part, so a central field is carried off the centre at once; the class is invariant exactly when the Hamiltonian is central. Checked in a hundred random cases, with no exception.
 
 **No gauge defect is left over.** The field has eight real components, the word has eight real parameters, and the equation is first order in time with one complex equation per coefficient, that is eight real equations. The word is therefore exactly determined by the field, with no free function: there is no gauge to fix and no sector to choose. The four parameters that Madelung's form does not show are the boost's three and the rotor's angle, and they are not dropped by a choice; they are zero because the field is central.
 
 ### The exact pair
 
-For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi_{\mathrm{sp}}=A\,e^{iS/\hbar}e_t$ and $\tilde H_\Psi=V\,e_t$; substituting into the equation and separating the real and the imaginary parts gives
+For a central field the equation is the ordinary one-component equation, and the word's two real functions satisfy a pair that is exact and not an approximation. Write $\tilde\Xi=A\,e^{iS/\hbar}e_t$ and $\tilde H_\Psi=V\,e_t$; substituting into the equation and separating the real and the imaginary parts gives
 
 $$
 \boxed{\;\frac{\partial S}{\partial t'}+\frac{|\vec\nabla_\Phi S|^{2}}{2m}+V+Q=0,\qquad
@@ -298,7 +298,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\tilde\Xi_{\mathrm{sp}}$ | The field: one element of $\mathbb{B}$ |
+| $\tilde\Xi$ | The field: one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian |
 | $h_t,\ \vec h_\Psi$ | Its scalar part and its vector part |
 | $\vec u_\Psi=\vec h_\Psi/\lvert\vec h_\Psi\rvert$ | Its axis, when $\vec h_\Psi\neq0$ |

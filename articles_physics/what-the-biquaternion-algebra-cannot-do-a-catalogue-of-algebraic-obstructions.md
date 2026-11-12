@@ -202,7 +202,7 @@ and the dimension of the tensor square is the product of the two dimensions.
 
 ### O14. The norm-preserving unit is forced into the centre
 
-**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$ preserves the Hermitian norm for every Hermitian $\tilde H_\Psi$ only if $\tilde{Ζ}=\pm i e_t$.
+**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=\tilde{Ζ}\tilde H_\Psi\tilde{Ξ}$ preserves the Hermitian norm for every Hermitian $\tilde H_\Psi$ only if $\tilde{Ζ}=\pm i e_t$.
 
 **Proof.** The generator is $-\frac{\tilde{Ζ}\,\tilde{H}_{\Psi}}{\hbar\,c}$, so its Hermitian conjugate is $-\frac{\tilde{H}_{\Psi}\,\tilde{Ζ}^{\dagger}}{\hbar\,c}$; anti-Hermiticity of the generator for all Hermitian $\tilde H_\Psi$ therefore reads $-\tilde H_\Psi\tilde{Ζ}^\dagger=\tilde{Ζ}\tilde H_\Psi$ for all Hermitian $\tilde H_\Psi$, which at $\tilde H_\Psi=e_t$ forces $\tilde{Ζ}^\dagger=-\tilde{Ζ}$ (so a general root of $-e_t$, which need not be anti-Hermitian, is excluded) and then requires $\tilde H_\Psi\tilde{Ζ}=\tilde{Ζ}\tilde H_\Psi$ for all Hermitian $\tilde H_\Psi$, hence $\tilde{Ζ}$ central. The central roots of $-e_t$ are $\pm i e_t$. The non-central root $\vec{Ζ}=\vec e_z$ with $\tilde H_\Psi=i\vec e_x$ gives the generator $-\frac{i\,\vec e_{y}}{\hbar\,c}$, which is Hermitian and generates a non-$*$-unitary flow.
 
@@ -265,7 +265,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no element or operation of $\mathbb{B}$ that represents the time derivative or selects a Hamiltonian. The dynamics must be supplied from outside.
 
-**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ζ}\tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$ therefore introduces both $\partial/\partial r'_t$ and $\tilde H_\Psi$ as external data.
+**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=\tilde{Ζ}\tilde H_\Psi\tilde{Ξ}$ therefore introduces both $\partial/\partial r'_t$ and $\tilde H_\Psi$ as external data.
 
 **Consequence.** The framework derives no arrow of time and no equation of motion from its algebra; the dynamical law is a posit, and so is the identification of the central parameters that accompany it.
 
@@ -386,7 +386,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the basis operators directly.
 
-Here $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ are the left and right multiplications, and $L_{a}R_{b}$ is a basis operator.
+Here $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$ are the left and right multiplications, and $L_{a}R_{b}$ is a basis operator.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.

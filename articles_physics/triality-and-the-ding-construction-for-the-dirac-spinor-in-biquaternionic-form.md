@@ -28,9 +28,9 @@ The three actions are written out: $S_1(\tilde U):Q\mapsto\tilde UQ$, $S_2(\tild
 
 The two four-vectors $B_\mu$ and $N_\mu$ are the real and the imaginary coefficient four-vectors of one element of $\mathbb{B}$: the field is
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde B+i\tilde N,\qquad \tilde B=\sum_\mu B_\mu a_\mu,\qquad \tilde N=\sum_\mu N_\mu a_\mu,
+\tilde{Ξ}=\tilde B+i\tilde N,\qquad \tilde B=\sum_\mu B_\mu a_\mu,\qquad \tilde N=\sum_\mu N_\mu a_\mu,
 $$
-with $\tilde B$ and $\tilde N$ real quaternions and $a_\mu$ the four units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$. The complex four-vector $G_\mu=B_\mu+iN_\mu$ is the **s-vector**, the coefficient vector of $\tilde{Ξ}_{\mathrm{sp}}$ in those units. The neutral vector is timelike, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=1$; in the source's frame $k=(1,0,0,0)$.
+with $\tilde B$ and $\tilde N$ real quaternions and $a_\mu$ the four units in the order $e_t,\vec e_x,\vec e_y,\vec e_z$. The complex four-vector $G_\mu=B_\mu+iN_\mu$ is the **s-vector**, the coefficient vector of $\tilde{Ξ}$ in those units. The neutral vector is timelike, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=1$; in the source's frame $k=(1,0,0,0)$.
 
 ### The Generator Operators
 Each four-vector index carries a left unit and a right unit, $a_0=e_t$, $a_\eta=\vec e_\eta$ and $b_0=\vec e_x$, $b_k=\vec e_y$. A **basis operator** is a pair of multipliers, acting by $Q\mapsto cQd$, and the four **generator basis operators** are the four maps
@@ -108,19 +108,19 @@ The right multiplier of the symbol is the unit $\vec e_z$: the choice is declare
 
 The two quadratic forms are read on the same basis operators, and they are the two parts of one scalar,
 $$
-\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^2) = \sum_\mu\varepsilon_\mu G_\mu G_\mu ,
+\mathrm{Sc}(\tilde{Ξ}^2) = \sum_\mu\varepsilon_\mu G_\mu G_\mu ,
 $$
 a derived form: the scalar part of the square of the field keeps the $t$ coefficient and reverses the three spatial ones, so it is the s-vector contracted with the sign weight. Its real part is minus the quadratic form and its imaginary part is minus $i$ times the pseudoscalar:
 $$
-\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^2) = \sum_\mu\varepsilon_\mu\bigl(B_\mu B_\mu - N_\mu N_\mu\bigr) + 2i\sum_\mu\varepsilon_\mu B_\mu N_\mu ,
+\mathrm{Sc}(\tilde{Ξ}^2) = \sum_\mu\varepsilon_\mu\bigl(B_\mu B_\mu - N_\mu N_\mu\bigr) + 2i\sum_\mu\varepsilon_\mu B_\mu N_\mu ,
 $$
 $$
-\sum_\mu\varepsilon_\mu\bigl(N_\mu N_\mu - B_\mu B_\mu\bigr) = -\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^2),
+\sum_\mu\varepsilon_\mu\bigl(N_\mu N_\mu - B_\mu B_\mu\bigr) = -\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^2),
 \qquad
--2i\sum_\mu\varepsilon_\mu B_\mu N_\mu = -i\,\mathrm{Im}\,\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^2).
+-2i\sum_\mu\varepsilon_\mu B_\mu N_\mu = -i\,\mathrm{Im}\,\mathrm{Sc}(\tilde{Ξ}^2).
 $$
 
-The quadratic form is real, of indefinite sign; the pseudoscalar is purely imaginary. Written in the s-vector $G_\mu = B_\mu + iN_\mu$, with $G^{*}_\mu = B_\mu - iN_\mu$, the single scalar $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^2)=\sum_\mu\varepsilon_\mu G_\mu G_\mu$ carries both, and $\mathrm{Sc}\bigl((\tilde{Ξ}_{\mathrm{sp}}^*)^2\bigr)=\sum_\mu\varepsilon_\mu G^{*}_\mu G^{*}_\mu$ is its conjugate: the quadratic form is minus its real part and the pseudoscalar is minus $i$ times its imaginary part. With the trilinear form and the two quadratic forms, $C$ is the complete invariant content of the algebra: the quadratic forms define the metric on the two four-vector spaces, and $C$ is the triality-invariant coupling of the vector to the pair. The dictionary of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* exhibits all of these as $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$.
+The quadratic form is real, of indefinite sign; the pseudoscalar is purely imaginary. Written in the s-vector $G_\mu = B_\mu + iN_\mu$, with $G^{*}_\mu = B_\mu - iN_\mu$, the single scalar $\mathrm{Sc}(\tilde{Ξ}^2)=\sum_\mu\varepsilon_\mu G_\mu G_\mu$ carries both, and $\mathrm{Sc}\bigl((\tilde{Ξ}^*)^2\bigr)=\sum_\mu\varepsilon_\mu G^{*}_\mu G^{*}_\mu$ is its conjugate: the quadratic form is minus its real part and the pseudoscalar is minus $i$ times its imaginary part. With the trilinear form and the two quadratic forms, $C$ is the complete invariant content of the algebra: the quadratic forms define the metric on the two four-vector spaces, and $C$ is the triality-invariant coupling of the vector to the pair. The dictionary of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* exhibits all of these as $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$.
 
 ## The Ding Map
 
@@ -205,7 +205,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}.
 $$
 
-Here $L_{c}R_{d}$ multiplies on the left by $c$ and on the right by $d$: $L_{c}R_{d}\tilde{Ξ}_{\mathrm{sp}}=c\tilde{Ξ}_{\mathrm{sp}} d$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
+Here $L_{c}R_{d}$ multiplies on the left by $c$ and on the right by $d$: $L_{c}R_{d}\tilde{Ξ}=c\tilde{Ξ} d$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
 The frame obeys the anticommutation relations $\{\gamma_\mu,\gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu\} = 0$, with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} = \gamma_5$. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
@@ -235,7 +235,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $M$, $S_1$, $S_2$ | Lorentz-vector space and the two four-vector spaces, each real dimension 4 |
 | $A_\mu$ | Element of $M$ (a Lorentz vector) |
 | $B_\mu$, $N_\mu$ | The real and the imaginary coefficient four-vectors of the field |
-| $\tilde{Ξ}_{\mathrm{sp}}=\tilde B+i\tilde N$ | The field, an element of $\mathbb{B}$ |
+| $\tilde{Ξ}=\tilde B+i\tilde N$ | The field, an element of $\mathbb{B}$ |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector |
 | $u_\mu$ | Timelike neutral vector, $\sum_\mu\varepsilon_\mu u_\mu u_\mu = 1$; $k=(1,0,0,0)$ in the source's frame |
 | $\tilde U$ | Unit biquaternion of the Lorentz group |

@@ -143,7 +143,7 @@ Both are reflections, with determinant $-1$; the identity component is the even 
 $$
 \eta_C=-L_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\qquad \eta_P=iR_{\mathrm{axf},\vec e_x},\qquad \eta_T=-L_{\mathrm{axf},\vec e_y} ,
 $$
-acting as $C[\tilde{Ξ}_{\mathrm{sp}}]=\eta_C\tilde{Ξ}_{\mathrm{sp}}^*$, $P[\tilde{Ξ}_{\mathrm{sp}}]=\eta_P\tilde{Ξ}_{\mathrm{sp}}(-\vec r)$ and $T[\tilde{Ξ}_{\mathrm{sp}}]=\eta_T\tilde{Ξ}_{\mathrm{sp}}^*(-r'_t)$, with $\tilde{Ξ}_{\mathrm{sp}}^*$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
+acting as $C[\tilde{Ξ}]=\eta_C\tilde{Ξ}^*$, $P[\tilde{Ξ}]=\eta_P\tilde{Ξ}(-\vec r)$ and $T[\tilde{Ξ}]=\eta_T\tilde{Ξ}^*(-r'_t)$, with $\tilde{Ξ}^*$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
 
 | operation | internal factor | its generator factors | coordinates reversed | determinant | induced map |
 |---|---|---|---|---|---|
@@ -213,7 +213,7 @@ $$
 $$
 where the four scalar factors of $\omega$ multiply to $i^4=1$, so that $\omega$ is a pure product of basis operators. That product is the pseudoscalar of the frame, $\omega^2=-I_4$, and the chirality basis operator is a single right multiplication whose square is $I_4$.
 
-**The letter.** An element is $L$ when the chirality basis operator gives it the value $-1$, and $R$ when it gives $+1$. That is the whole definition. The two values are exactly two, and only the zero element is both. The letter belongs to the object and not to a state, so a product, a unit and a field carry it as well, and the two parts of a field are written $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$.
+**The letter.** An element is $L$ when the chirality basis operator gives it the value $-1$, and $R$ when it gives $+1$. That is the whole definition. The two values are exactly two, and only the zero element is both. The letter belongs to the object and not to a state, so a product, a unit and a field carry it as well, and the two parts of a field are written $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$.
 
 **Which basis operators keep it and which exchange it.** A basis operator acts through its right multiplier: a product takes the letter of its right factor, and left multiplication keeps the letter of its operand. Every even basis operator has right multiplier $e_t$ or $\vec e_z$ and keeps the letter. Every generator has right multiplier $\vec e_x$ or $\vec e_y$ and exchanges it, so a generator carries the $R$ part into the $L$ part and the $L$ part into the $R$ part.
 
@@ -221,17 +221,17 @@ Combined with the split established above, the statement is: **rotations keep th
 
 The mass is where the two parts are coupled, and the coupling is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} , \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L} , \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R} ,
 $$
 in which every derivative is the gradient and acts by left multiplication. The pair stays two lines and is never written as one operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$. Each line is **off-diagonal in the two slots**: the first slot of the output is filled from the second slot of the input and the second from the first, and no slot is filled from itself. The subscripts name the two slots, not a value that the operator computes: the gradient acts by left multiplication, a left multiplier does not touch the letter, and the term that carries a field from one letter to the other is therefore the mass, which is the only such term. The mass is a multiple of the identity on the sum, central and even, and it moves nothing by itself. The composition of the two lines is scalar because each is a gradient followed by the conjugate of the other,
 $$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\Box_\Phi\,\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\Box_\Phi\,\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=\Box_\Phi\,\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\,\tilde{Ξ}_{R},
 $$
-with $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}=k_m^{2}\tilde{Ξ}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The consequence is immediate. Set $\tilde{Ξ}_{\mathrm{sp},R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{\mathrm{sp},L}$, so $\tilde{Ξ}_{\mathrm{sp},L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
+The consequence is immediate. Set $\tilde{Ξ}_{R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{L}$, so $\tilde{Ξ}_{L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 
 The representation-theoretic form of the same fact is the split of the complexified Lorentz algebra into two copies of $\mathfrak{sl}(2,\mathbb{C})$, each of them the complexification of an $\mathfrak{su}(2)$,
 $$
@@ -242,8 +242,8 @@ under which a finite-dimensional representation is labelled by a pair $(j_1,j_2)
 | object | label | letter |
 |---|---|---|
 | a scalar | $(0,0)$ | in neither copy; no letter exists |
-| $\tilde{Ξ}_{\mathrm{sp},L}$ | $(\tfrac12,0)$ | in the first copy alone |
-| $\tilde{Ξ}_{\mathrm{sp},R}$ | $(0,\tfrac12)$ | in the second copy alone |
+| $\tilde{Ξ}_{L}$ | $(\tfrac12,0)$ | in the first copy alone |
+| $\tilde{Ξ}_{R}$ | $(0,\tfrac12)$ | in the second copy alone |
 | a vector | $(\tfrac12,\tfrac12)$ | in both copies equally |
 
 This is the precise sense in which the letter is tied to spin $\tfrac12$: the two parts are the two smallest nontrivial representations of the two copies, and $L$ *means* $(\tfrac12,0)$. A scalar has no letter because it sits in neither copy, and a vector is blind to it because it sits in both equally. The link is not a coincidence to be explained: each part is a minimal representation of one copy, and the basis operator is what tells the two copies apart.
@@ -298,15 +298,15 @@ The claims of this article, in order.
 | even half, odd half | The basis operators with an even and with an odd number of generator factors; the even half is the image of $\mathbb{B}$ |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the four generators: the biquaternion norm on the Hermitian basis |
 | $\langle\tilde Q\rangle_\natural$, $Q_t=i q'_t$ | Minkowski interval of the material coordinates, signature $(3,1)$ |
-| $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ}_{\mathrm{sp}} = a\tilde{Ξ}_{\mathrm{sp}} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
+| $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\tilde{Ξ} = a\tilde{Ξ} b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | image of $\tilde Q$ | The $\mathbb{R}$-linear comparison with the even half, per *Matrix Representations Conventions*; named, never written as a symbol |
 | the four frame basis operators | The generator basis operators: $iR_{\mathrm{axf},\vec e_x}$, and $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ for $\eta = 1, 2, 3$ |
 | $\omega = iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y} = -L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Pseudoscalar, $\omega^2 = -I_4$; its four factors of $i$ multiply to $i^4=1$ |
 | $-iR_{\mathrm{axf},\vec e_z} = i\omega = -iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ | Chirality basis operator, $(-iR_{\mathrm{axf},\vec e_z})^{2} = I_4$ |
 | the $L$ part, the $R$ part | The two parts of an element: the value $-1$ and the value $+1$ of the chirality basis operator |
-| $\tilde{Ξ}_{\mathrm{sp},L,R}$ | The two parts of a field |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose subscripts name the two members |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two lines, off-diagonal in the two slots |
+| $\tilde{Ξ}_{L,R}$ | The two parts of a field |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | The biquaternion gradient $\sum_\mu e_\mu\partial/\partial R_\mu$ and its quaternion conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$; $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$; the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, whose subscripts name the two members |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair as two lines, off-diagonal in the two slots |
 | $iR_{\mathrm{axf},\vec e_x}$ | The frame basis operator; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Action of an odd element on the vectors; $u^2=\epsilon(u)I_4$ |
 | Reversal $\mathrm{rev}$ | The anti-automorphism that reverses the order of the factors; on an array it is the transpose, and on the biquaternions it is quaternion conjugation |

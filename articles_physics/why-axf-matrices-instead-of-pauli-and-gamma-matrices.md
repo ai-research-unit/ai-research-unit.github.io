@@ -129,7 +129,7 @@ The two-component column, and the spinor. A column of two components is an eleme
 
 The gamma frame. In the five gammas the unit $\vec e_y$ is the common right multiplier of the spatial three, and $\vec e_z$ is the axis of the fifth basis operator. Neither fact is stated anywhere on a page that prints the five matrices.
 
-The Dirac adjoint. The adjoint $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\gamma_0[\mathbb{B}_{\Phi}]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
+The Dirac adjoint. The adjoint $\tilde{Ξ}^{\dagger}\gamma_0[\mathbb{B}_{\Phi}]$ needs a chosen time generator. It is a statement about a pairing, and the pairing imports the frame.
 
 The charge conjugation. The basis operator $C=L_{e_t}R_{\vec e_x}$ serves as the charge conjugation of the reference frame, with $C^2=-1$. That this one basis operator serves is a fact of the frame; which basis operator it is, is a choice.
 
@@ -403,7 +403,7 @@ That trade is the whole content of the choice between the two displays. The Paul
 A matrix display is already a compromise. The object an equation of the corpus names is not an array but an action on an element:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}_{\mathrm{sp}}\,b.
+\tilde{Ξ}\longmapsto a\,\tilde{Ξ}\,b.
 $$
 
 The pair $(a,b)$ is the operator, written $L_aR_b$ when a name is needed. It carries seven effective parameters rather than eight, because $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same action for any nonzero scalar $\lambda$. No basis appears in the definition, and none appears in the result.
@@ -480,10 +480,10 @@ During this pass an array may stay only where the array is the object: a compari
 Replace every basis operator by what it does. The rule is one line, and it is the whole pass:
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}\longmapsto a\,\tilde{Ξ}_{\mathrm{sp}}\,b.
+\tilde{Ξ}\longmapsto a\,\tilde{Ξ}\,b.
 $$
 
-The pass removes the operator symbol as well. A mass term is $k_m\tilde{Ξ}_{\mathrm{sp}}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+The pass removes the operator symbol as well. A mass term is $k_m\tilde{Ξ}$; a derivative term is a term of the Dirac operator written out; a product is a product of elements. The composition law of §*Composition and Invariants* replaces every matrix multiplication. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 An article that reaches this pass has no arrays and no ideals in its body, and reads its operators off the formula itself.
 
@@ -499,13 +499,13 @@ The three passes need a table, and one table serves all three. Each row gives th
 
 | Pauli or gamma name | object | $\mathrm{axf}$ array | action |
 |---|---|---|---|
-| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}$ |
+| the identity $\mathrm I_4$ | $L_{e_t}R_{e_t}$ | $\mathrm I_4$ | $\tilde{Ξ}\mapsto\tilde{Ξ}$ |
 | the image $\mathsf M_2(\tilde Q)$ | the left action on $\mathbb{B}\tilde\Pi_+$ | $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ | the action read on one ideal |
-| $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$ |
-| $\gamma_\eta[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_\eta}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto i\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ |
-| $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$ |
-| the mass term | $k_mL_{e_t}R_{e_t}$ | $k_m\mathrm I_4$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto k_m\tilde{Ξ}_{\mathrm{sp}}$ |
-| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12\bigl(\tilde{Ξ}_{\mathrm{sp}}-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z\bigr)$ |
+| $\gamma_0[\mathbb{B}_{\Phi}]$ | $iR_{\vec e_x}$ | $iR_{\mathrm{axf},\vec e_x}$ | $\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$ |
+| $\gamma_\eta[\mathbb{B}_{\Phi}]$ | $iL_{\vec e_\eta}R_{\vec e_y}$ | $iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}$ | $\tilde{Ξ}\mapsto i\vec e_\eta\tilde{Ξ}\vec e_y$ |
+| $\gamma_5[\mathbb{B}_{\Phi}]$ | $-iR_{\vec e_z}$ | $-iR_{\mathrm{axf},\vec e_z}$ | $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$ |
+| the mass term | $k_mL_{e_t}R_{e_t}$ | $k_m\mathrm I_4$ | $\tilde{Ξ}\mapsto k_m\tilde{Ξ}$ |
+| the Peirce projector $\tfrac12(\mathrm I-\gamma_5[\mathbb{B}_{\Phi}])$ | $\tfrac12\bigl(L_{e_t}R_{e_t}+iR_{\vec e_z}\bigr)$ | $\tfrac12\bigl(\mathrm I_4-iR_{\mathrm{axf},\vec e_z}\bigr)$ | $\tilde{Ξ}\mapsto\tfrac12\bigl(\tilde{Ξ}-i\tilde{Ξ}\vec e_z\bigr)$ |
 | the Dirac adjoint | a pairing, not an action | — | needs the frame that declares the pairing |
 
 The last row is the one that has no action, and that is the honest answer: the adjoint is not an operator on the element but a pairing of two elements.
@@ -551,7 +551,7 @@ The link test. Every cited title must resolve, and a rewritten section must not 
 
 ### The Rules of Use
 
-Write the action first, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$, and name the operator only when the operator is the subject.
+Write the action first, $\tilde{Ξ}\mapsto a\tilde{Ξ} b$, and name the operator only when the operator is the subject.
 
 Write one term per line. A sum is a sum of terms, and each term is a pair.
 
@@ -579,7 +579,7 @@ The defect is a formal defect, and its source is physical. Physical space has no
 
 The $\mathrm{axf}$ display writes no direction. Its diagonal basis operators are the four squares, one per unit, and the set is unchanged by any permutation of the three spatial units. Every basis operator is a real signed permutation of determinant one, the trace is $4Q_t$, the determinant is the square of the quaternion norm, and the transpose is the quaternion conjugation.
 
-The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$, with no basis in the definition.
+The preferred form of a physical equation is not a matrix at all. The operator is a pair of multipliers acting on an element, $\tilde{Ξ}\mapsto a\tilde{Ξ} b$, with no basis in the definition.
 
 The migration has three passes — arrays to basis operators, basis operators to actions, keep the axis-free array where an array is required — a dictionary, four traps and five checks.
 
@@ -599,8 +599,8 @@ The migration has three passes — arrays to basis operators, basis operators to
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, complex dimension four |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the units, $e_t^2=e_t$ and $\vec e_\eta^2=-e_t$ |
 | the four squares | $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$; the diagonal basis operators of the coefficient basis, a set unchanged by a permutation of the three spatial units |
-| $L_a$, $R_b$ | left and right multiplication, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$ |
-| $L_aR_b$ | the two-sided operator, $L_aR_b\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}} b$ |
+| $L_a$, $R_b$ | left and right multiplication, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$ |
+| $L_aR_b$ | the two-sided operator, $L_aR_b\tilde{Ξ}=a\tilde{Ξ} b$ |
 | $L_{\mathrm{axf}}(\tilde Q)$, $L_{\mathrm{pau}}(\tilde Q)$ | the left array of $\tilde Q$ in the axis-free and in the Pauli display; the label is a name, not an exponent |
 | $L_{\mathrm{axf},e_\mu}$, $R_{\mathrm{axf},e_\mu}$ | the arrays of the units in the axis-free display |
 | $C_{\Pi}$ | the change of basis from the coefficient basis to the Peirce frame, $\det C_{\Pi}=-\tfrac14$ |

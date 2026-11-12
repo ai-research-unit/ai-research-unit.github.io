@@ -5,9 +5,9 @@
 The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Dirac Equation in Biquaternionic Form* writes it as the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=k_m\,\tilde\Xi_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\,\tilde\Xi_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=k_m\,\tilde\Xi_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\,\tilde\Xi_{R},
 $$
 
 and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no minimal left ideal, no Peirce decomposition, no chiral projector, no Clifford algebra. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it.

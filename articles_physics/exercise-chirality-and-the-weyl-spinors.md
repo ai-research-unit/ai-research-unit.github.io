@@ -7,9 +7,9 @@ This is one of the articles of the Dirac exercise series accompanying the biquat
 The following are assumed.
 
 - The algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions*; the two parts named by the subscript are those of *Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*; the biquaternionic gradient and the d'Alembertian are those of *Operator and Calculus Conventions*; and the four forms are those of *Product and Form Conventions*. None of them is restated here.
-- The field is one element $\tilde{Ξ}_{\mathrm{sp}}$ of $\mathbb{B}$. Its two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$ carry the two parts named by the subscript, and they are named in Problem 1.
+- The field is one element $\tilde{Ξ}$ of $\mathbb{B}$. Its two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ carry the two parts named by the subscript, and they are named in Problem 1.
 - The group $SL(2,\mathbb{C})$ is the set of unit elements, and $\pi$ is its double cover of $SO^{+}(1,3)$, acting on $\mathbb{B}_{\Phi}$ (*Norm and Unitary Conventions*, §*The Unitary Convention*; the parent article).
-- The two actions. On one part the group acts by left multiplication, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$; on the other by left multiplication with the coefficient conjugate, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\bar{\tilde U}\,\tilde{Ξ}_{\mathrm{sp}}$ (the parent article, §*The Two Halves*).
+- The two actions. On one part the group acts by left multiplication, $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$; on the other by left multiplication with the coefficient conjugate, $\tilde{Ξ}\mapsto\bar{\tilde U}\,\tilde{Ξ}$ (the parent article, §*The Two Halves*).
 - The forms. The quaternionic form $\langle X,Y\rangle_{\natural}$, the Hermitian form $\langle X,Y\rangle_{*}$ and the biquaternion norm $\langle X\rangle_{\natural}$ (*Product and Form Conventions*, §*The Form Convention*; *Norm and Unitary Conventions*, §*The Norm Convention*). Their formulas are theirs and are not restated here.
 
 Seven problems are worked below, one per section.
@@ -18,7 +18,7 @@ Seven problems are worked below, one per section.
 
 **One declared direction, and nothing else.** A frame is declared once, by a unit vector $\vec u$ of the algebra, real and of square $\vec u^2=-e_t$. It is the only datum the exercise adds to the algebra, it is a property of the frame, and no element of any problem carries it.
 
-**The value is the subscript.** The subscript takes two values and there are exactly two. The part of the minus value is written $\tilde{Ξ}_{\mathrm{sp},L}$ and the part of the plus value is written $\tilde{Ξ}_{\mathrm{sp},R}$, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*; the basis operator that carries it is the right multiplication $-iR_{\vec u}$, named once here as the conventions name it (*Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*). The side is the chirality; the basis operator is an example of the right slot, and its value is what the subscript records. **That is the whole definition, and no formula is written for it**: the value is named, not computed.
+**The value is the subscript.** The subscript takes two values and there are exactly two. The part of the minus value is written $\tilde{Ξ}_{L}$ and the part of the plus value is written $\tilde{Ξ}_{R}$, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*; the basis operator that carries it is the right multiplication $-iR_{\vec u}$, named once here as the conventions name it (*Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*). The side is the chirality; the basis operator is an example of the right slot, and its value is what the subscript records. **That is the whole definition, and no formula is written for it**: the value is named, not computed.
 
 **Three facts, in words.** Every element is the sum of one part of each value, and only the zero element is both. A product takes the letter of its right factor. Left multiplication keeps the letter, whatever the left factor.
 
@@ -37,19 +37,19 @@ This problem writes every mass through $k_m=m\,c/\hbar$ and every phase through 
 **The chiral pair.** The dynamics is the one-sided chiral pair of the parent article: two equations, one per value,
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L} ,
 $$
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R} .
 $$
 
-The first acts on the part $\tilde{Ξ}_{\mathrm{sp},R}$, the second on the part $\tilde{Ξ}_{\mathrm{sp},L}$, and the second is the quaternion conjugate of the first. The mass is the term that carries one value to the other; it is the only such term, because a left multiplication preserves each value.
+The first acts on the part $\tilde{Ξ}_{R}$, the second on the part $\tilde{Ξ}_{L}$, and the second is the quaternion conjugate of the first. The mass is the term that carries one value to the other; it is the only such term, because a left multiplication preserves each value.
 
 **The massless case.** Setting $m=0$, the two equations decouple:
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = 0 .
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0 .
 $$
 
 Each is a one-sided equation for one value, and neither contains the other part. Each is a **Weyl equation**, one per value, and the massless field is two independent one-sided fields.
@@ -57,18 +57,18 @@ Each is a one-sided equation for one value, and neither contains the other part.
 **The massive case.** Apply $(\tilde\nabla_\Phi)^{\natural}$ to the first equation and use the second:
 
 $$
-(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=m\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{R} .
 $$
 
 The product $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ is the d'Alembertian $\Box$, the quaternionic norm of the gradient, an operator of the algebra and not of a sector (*Operator and Calculus Conventions*, §*The Quaternionic Bilinear Product, Its Form and Its Norm*, where it is defined and where the uniqueness of the operator is stated). Hence
 
 $$
-\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R} = 0, \qquad \left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},L} = 0,
+\left(\Box-k_m^{2}\right)\tilde{Ξ}_{R} = 0, \qquad \left(\Box-k_m^{2}\right)\tilde{Ξ}_{L} = 0,
 $$
 
-and with $\hbar$ and $c$ restored the same statement is $(\Box - k_m^{2})\tilde{Ξ}_{\mathrm{sp}}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, relates the two parts: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+and with $\hbar$ and $c$ restored the same statement is $(\Box - k_m^{2})\tilde{Ξ}=0$. The sign on the time term of $\Box$ is the series convention of the material sector, and the article uses that one operator and no second one. Thus the mass term, and only the mass term, relates the two parts: when $m=0$ each part separately obeys a one-sided equation; for $m\neq0$ it obeys the Klein–Gordon equation. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Mass shell.** For a plane wave $\tilde{Ξ}_{\mathrm{sp}}\propto\exp(-ik_{t}^{\prime}x_0+i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = r'_{t}$, the Klein–Gordon equation gives $k_{t}^{\prime\,2} = \vec k_\Phi^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{P}{\hbar}$,
+**Mass shell.** For a plane wave $\tilde{Ξ}\propto\exp(-ik_{t}^{\prime}x_0+i\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$ with $x_0 = r'_{t}$, the Klein–Gordon equation gives $k_{t}^{\prime\,2} = \vec k_\Phi^2 + k_m^{2}$. Equivalently, with the four-momentum $\tilde{P}_{\Phi} = iE/c\,e_t + \vec p\in\mathbb{B}_{\Phi}$ and $k =\frac{P}{\hbar}$,
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \qquad(\vec p^2=|\vec p|^2),
@@ -84,7 +84,7 @@ $$
 
 in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by the declared unit $\vec u$. At $\vec u=\vec e_z$ this is the form the parent article prints. The two equations are related by the dictionary and are not the same operator: the mass of the pair is the coupling of one value to the other; the mass of the two-sided equation is a conjugation together with a direction. Chirality is why the second side is needed at all: left multiplication preserves each value, so no left multiplication, and no sum of left multiplications, carries one value into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression.
 
-Three conjugations must not be confused. The coefficient conjugation $\tilde{Ξ}_{\mathrm{sp}}\mapsto\bar{\tilde{Ξ}}_{\mathrm{sp}}$ is the antilinear map that relates the defining action to its conjugate; the Hermitian star $\tilde{Ξ}_{\mathrm{sp}}^*=\bar{\tilde{Ξ}}_{\mathrm{sp}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ is the algebra's real structure, with fixed space $\mathbb{B}_{\Phi}$. None of the three is the mass. The exercise therefore treats the mass term in the explicit pair, where it is unambiguous.
+Three conjugations must not be confused. The coefficient conjugation $\tilde{Ξ}\mapsto\bar{\tilde{Ξ}}$ is the antilinear map that relates the defining action to its conjugate; the Hermitian star $\tilde{Ξ}^*=\bar{\tilde{Ξ}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, with fixed space $\mathbb{B}_{\Phi}$. None of the three is the mass. The exercise therefore treats the mass term in the explicit pair, where it is unambiguous.
 
 ## Problem 3: A Boost and a Rotation of Each Half
 
@@ -189,7 +189,7 @@ of components $(q_t,q_x,q_y,q_z) = \left(\tfrac{i}{2},0,0,-\tfrac12\right)$ and 
 
 Take a rotation about $\vec e_z$ by angle $\theta$, with rotor $\tilde u_{\mathrm r}(\theta)$.
 
-**On the field.** At $\theta = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}_{\mathrm{sp}}\mapsto-\tilde{Ξ}_{\mathrm{sp}}$, which is not the identity. At $\theta = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.
+**On the field.** At $\theta = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, so the left multiplication sends every field to its negative, $\tilde{Ξ}\mapsto-\tilde{Ξ}$, which is not the identity. At $\theta = 4\pi$ the rotor is $\tilde u_{\mathrm r}(4\pi) = \cos 2\pi\,e_t = e_t$, and the field returns to itself.
 
 **On the four-vector.** The four-vector action is the two-sided operator with the rotor. At $\theta = 2\pi$,
 
@@ -206,7 +206,7 @@ $$
 \ker\pi = \{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
 
-while the field action $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$ has trivial kernel, since $-e_t$ is not $e_t$. Hence
+while the field action $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ has trivial kernel, since $-e_t$ is not $e_t$. Hence
 
 $$
 \boxed{\;SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}\;},
@@ -222,23 +222,23 @@ $$
 V \;\longmapsto\; U\,V\,U^{*},
 $$
 
-which is exactly the two-sided operator of the material sector. One element of the field contributes one factor, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$ (linear, one-sided); the four-vector is built from two of them and therefore carries two factors, $UVU^{*}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a *pair* of elements.
+which is exactly the two-sided operator of the material sector. One element of the field contributes one factor, $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ (linear, one-sided); the four-vector is built from two of them and therefore carries two factors, $UVU^{*}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a *pair* of elements.
 
-**The sign that cancels and the sign that does not.** Replace $\tilde U$ by $-\tilde U$. On four-vectors $(-U)V(-U)^{*} = UVU^{*}$, because the two signs cancel; on the field $(-U)\tilde{Ξ}_{\mathrm{sp}} = -U\tilde{Ξ}_{\mathrm{sp}}\neq U\tilde{Ξ}_{\mathrm{sp}}$ for every nonzero field. Hence $\ker\pi = \{\pm e_t\}$ on $\mathbb{B}_{\Phi}$ but the kernel of the field action is trivial: the field action does not descend to $SO^{+}(1,3)$.
+**The sign that cancels and the sign that does not.** Replace $\tilde U$ by $-\tilde U$. On four-vectors $(-U)V(-U)^{*} = UVU^{*}$, because the two signs cancel; on the field $(-U)\tilde{Ξ} = -U\tilde{Ξ}\neq U\tilde{Ξ}$ for every nonzero field. Hence $\ker\pi = \{\pm e_t\}$ on $\mathbb{B}_{\Phi}$ but the kernel of the field action is trivial: the field action does not descend to $SO^{+}(1,3)$.
 
-**Composition.** Successive rotors compose by multiplication in both pictures: $\tilde U_2(\tilde U_1\tilde{Ξ}_{\mathrm{sp}}) = (\tilde U_2\tilde U_1)\tilde{Ξ}_{\mathrm{sp}}$ and $\tilde U_2(\tilde U_1V\tilde U_1^{*})\tilde U_2^{*} = (\tilde U_2\tilde U_1)V(\tilde U_2\tilde U_1)^{*}$. The difference is only the doubled factor, and hence the cancelling sign, in the four-vector formula.
+**Composition.** Successive rotors compose by multiplication in both pictures: $\tilde U_2(\tilde U_1\tilde{Ξ}) = (\tilde U_2\tilde U_1)\tilde{Ξ}$ and $\tilde U_2(\tilde U_1V\tilde U_1^{*})\tilde U_2^{*} = (\tilde U_2\tilde U_1)V(\tilde U_2\tilde U_1)^{*}$. The difference is only the doubled factor, and hence the cancelling sign, in the four-vector formula.
 
-**The mixed pairing.** Finally, the Hermitian form on one value and the other, with $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde U\tilde{Ξ}_{\mathrm{sp}}$ and $\xi\mapsto\bar{\tilde U}\xi$, is invariant:
+**The mixed pairing.** Finally, the Hermitian form on one value and the other, with $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$ and $\xi\mapsto\bar{\tilde U}\xi$, is invariant:
 
 $$
-\boxed{\;\langle\tilde U\tilde{Ξ}_{\mathrm{sp}},\;\bar{\tilde U}\xi\rangle_{*}
-= \mathrm{Sc}\bigl(\tilde U\tilde{Ξ}_{\mathrm{sp}}\,(\bar{\tilde U}\xi)^{*}\bigr)
-= \mathrm{Sc}\bigl(\tilde U\,\tilde{Ξ}_{\mathrm{sp}}\xi^{*}\,\bar{\tilde U}^{\,*}\bigr)
-= \mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}\xi^{*}\bigr)
-= \langle\tilde{Ξ}_{\mathrm{sp}},\xi\rangle_{*}\;},
+\boxed{\;\langle\tilde U\tilde{Ξ},\;\bar{\tilde U}\xi\rangle_{*}
+= \mathrm{Sc}\bigl(\tilde U\tilde{Ξ}\,(\bar{\tilde U}\xi)^{*}\bigr)
+= \mathrm{Sc}\bigl(\tilde U\,\tilde{Ξ}\xi^{*}\,\bar{\tilde U}^{\,*}\bigr)
+= \mathrm{Sc}\bigl(\tilde{Ξ}\xi^{*}\bigr)
+= \langle\tilde{Ξ},\xi\rangle_{*}\;},
 $$
 
-at residual $5\times10^{-15}$, because $\bar{\tilde U}^{\,*} = \tilde U^{-1}$ by the identity of Problem 3, and because the scalar part of a product is unchanged when the product is conjugated by an element and its inverse. The action is **not** the Hermitian-star one, $\xi\mapsto\tilde U^{*}\xi$: with $\tilde U^{*}$ in place of $\bar{\tilde U}$ the element would be conjugated by $\tilde U$ on both sides, $\mathrm{Sc}(\tilde U\,\tilde{Ξ}_{\mathrm{sp}}\xi^{*}\,\tilde U)$, which is not $\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}\xi^{*})$ in general, and the pairing would be invariant only for the elements of the compact subgroup, where the two conjugations agree. This is the Dirac scalar bilinear.
+at residual $5\times10^{-15}$, because $\bar{\tilde U}^{\,*} = \tilde U^{-1}$ by the identity of Problem 3, and because the scalar part of a product is unchanged when the product is conjugated by an element and its inverse. The action is **not** the Hermitian-star one, $\xi\mapsto\tilde U^{*}\xi$: with $\tilde U^{*}$ in place of $\bar{\tilde U}$ the element would be conjugated by $\tilde U$ on both sides, $\mathrm{Sc}(\tilde U\,\tilde{Ξ}\xi^{*}\,\tilde U)$, which is not $\mathrm{Sc}(\tilde{Ξ}\xi^{*})$ in general, and the pairing would be invariant only for the elements of the compact subgroup, where the two conjugations agree. This is the Dirac scalar bilinear.
 
 ## Limiting Cases
 
@@ -266,7 +266,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 2. **The field-to-vector map for a general pair.** The parent writes $\tilde{Q} = uv^{*}$ (its $u,v$ are the $w,v$ used here) and warns that for a generic pair $iuv^{*}$ does not lie in $\mathbb{B}_{\Phi}$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Psi}$, with four-vector image $V = iH\in\mathbb{B}_{\Phi}$. The exercise uses that symmetrised map. The shorthand $\tilde{Q} = wv^{*}$ is general, but the identification of $i\tilde{Q}$ with a four-vector is not, and neither is the rank-one property, which needs the two elements to share a value.
 
-3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$, whose mass term relates the two parts, with the anti-Hermitian conjugation $\tilde{Ξ}_{\mathrm{sp}}^{\flat} = -\tilde{Ξ}_{\mathrm{sp}}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
+3. **The biquaternion mass term and the conjugate action.** The parent's massive equation is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$, whose mass term relates the two parts, with the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ the algebra's real structure rather than the mass. The exercise keeps its mass term in the explicit pair, where it is unambiguous. The parent exhibits the conjugate action neither as an action on $\mathbb{B}$ nor as an isomorphism between the two readings of the field.
 
 A fourth point, the form of the invariant pairing inside the algebra, is the parent's open question 3; Problem 4 answers it, and the answer is the quaternionic form.
 
@@ -274,7 +274,7 @@ A fourth point, the form of the invariant pairing inside the algebra, is the par
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. The five frame basis operators are, in the Peirce display,
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. The five frame basis operators are, in the Peirce display,
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -286,7 +286,7 @@ $$
 \gamma_0=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x},\quad \gamma_1=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y},\quad \gamma_2=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\quad \gamma_3=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y},\quad \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-On the chiral pair $(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$, with the left-handed block first, the same five objects are the matrices
+On the chiral pair $(\tilde{Ξ}_{L},\tilde{Ξ}_{R})$, with the left-handed block first, the same five objects are the matrices
 
 $$
 \gamma_0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix},\qquad
@@ -343,7 +343,7 @@ The four contraction sums are fixed by the metric, because a basis operator's sq
 
 ## Summary
 
-Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ}_{\mathrm{sp}} = 0$, with mass shell $k_{t}^{\prime\,2} = \vec k_\Phi^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the two-sided operator $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The two-sided operator is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
+Seven problems were solved. (1) The subscript takes two values and there are exactly two; every element is the sum of one part of each, and only the zero element is both; a product takes the letter of its right factor, and left multiplication keeps it, so the value of a part is Lorentz invariant. (2) The massless pair decouples into two independent one-sided equations, one per value; the mass term couples the values, and each part obeys $(\Box-k_m^{2})\tilde{Ξ} = 0$, with mass shell $k_{t}^{\prime\,2} = \vec k_\Phi^2+k_m^{2}$. The one-sided chiral pair is one of the two Dirac equations of the corpus; the two-sided form carries the same chirality coupling in a single equation, with the mass term a conjugation together with a right multiplication by the declared unit. (3) Under a boost the two parts transform by inverse elements, because $\bar{\tilde U}_{\Psi,\mathrm b}=\tilde U_{\Psi,\mathrm b}^{-1}$; under a rotation they transform by the same element, because a rotation rotor is real; in general $\bar{\tilde U}=(\tilde U^{*})^{-1}$. (4) The quaternionic form is invariant, symmetric and nondegenerate, vanishes on each value and pairs one value with the other, so each value is self-dual without being self-conjugate. (5) The bilinear gives $V = i\cdot\tfrac12(wv^{*}+vw^{*})\in\mathbb{B}_{\Phi}$, transforming by the two-sided operator $UVU^{*}$; one element gives a null four-vector, and the vector action is the product of two field factors. (6) A $2\pi$ rotation acts as $-e_t$ on the field and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$. (7) The two-sided operator is the bilinear shadow of the one-sided action; the sign cancels in the former but not in the latter, and the Hermitian form on one value and the other is invariant.
 
 ## Summary of Notation
 
@@ -357,7 +357,7 @@ Seven problems were solved. (1) The subscript takes two values and there are exa
 | $\langle X,Y\rangle_{*} = \mathrm{Sc}(XY^{*})$ | Hermitian form |
 | $\vec u$ | The declared unit vector of the frame, $\vec u^2=-e_t$ |
 | $-iR_{\vec u}$ | The chirality basis operator of the declared frame |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of the field, of values $-1$ and $+1$ |
+| $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two parts of the field, of values $-1$ and $+1$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |

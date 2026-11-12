@@ -244,7 +244,7 @@ $$
 
 **which is the same pair the source's matrix route prints**, $k$ the Dirac–Coulomb quantum number and $za_0$ the Coulomb coupling in units of $\hbar\,c$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions.
 
-**Its closed-form solution is given by the source as Laguerre polynomials** in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar\,c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}_{\mathrm{sp}}$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is
+**Its closed-form solution is given by the source as Laguerre polynomials** in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar\,c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular elements multiplied by $F(\rho)$ and $G(\rho)$, written first as an ordered pair and then as the single element of its equations (25) and (26), with the dual in (27). The scalar part of $\tilde{Ξ}^*\tilde{Ξ}$, its (28), is $1/r^2$ times the sum of the squared moduli of the two angular parts with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is
 
 $$
 \begin{aligned}
@@ -332,7 +332,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -349,8 +349,8 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 **The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
 two fields, both equations acting from the left, the chirality carried by the two fields and exchanged by $\natural$. The **two-sided** form writes a single field and puts the second slot on the right of the algebra element,

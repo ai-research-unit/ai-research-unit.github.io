@@ -76,13 +76,13 @@ which in the algebra is a product of unitaries in the limit of infinitesimal ste
 Define the rotating-frame state and observable by
 
 $$
-\tilde{Ξ}_{\mathrm{sp},R}(r'_t) = \tilde u_{\mathrm r}(r'_t)^{*}\,\tilde{Ξ}_{\mathrm{sp}}(r'_t),
+\tilde{Ξ}_{R}(r'_t) = \tilde u_{\mathrm r}(r'_t)^{*}\,\tilde{Ξ}(r'_t),
 \qquad
 \tilde u_{\mathrm r}(r'_t) = \exp\!\left(-\frac{\omega r'_t}{2\,c}\vec e_z\right)
 = \cos\frac{\omega r'_t}{2\,c}\,e_t - \sin\frac{\omega r'_t}{2\,c}\,\vec e_z .
 $$
 
-The rotor $\tilde u_{\mathrm r}$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $\frac{i\,\hbar\,d\,\tilde{Ξ}_{\mathrm{sp}}}{dr'_{t}}= \tilde H_\Psi\tilde{Ξ}_{\mathrm{sp}}$ becomes $\frac{i\,\hbar\,d\,\tilde{Ξ}_{\mathrm{sp},R}}{dr'_{t}}= \tilde{H}_{\Psi,R}\tilde{Ξ}_{\mathrm{sp},R}$ with
+The rotor $\tilde u_{\mathrm r}$ is the Larmor rotor taken at the drive frequency $\omega$ rather than at $\omega_0$; it rotates the reference frame at the drive frequency. The Schrödinger equation $\frac{i\,\hbar\,d\,\tilde{Ξ}}{dr'_{t}}= \tilde H_\Psi\tilde{Ξ}$ becomes $\frac{i\,\hbar\,d\,\tilde{Ξ}_{R}}{dr'_{t}}= \tilde{H}_{\Psi,R}\tilde{Ξ}_{R}$ with
 
 $$
 \tilde{H}_{\Psi,R} = \tilde u_{\mathrm r}^{*}\,\tilde H_\Psi\,\tilde u_{\mathrm r} -i\,\hbar\,c\,\tilde{u}_{\mathrm r}^{*}\partial/\partial r'_t\tilde u_{\mathrm r} .
@@ -255,7 +255,7 @@ $$
 P_\downarrow(r'_t) = \frac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\,\sin^2\!\left(\frac{\Omega r'_t}{2\,c}\right),
 $$
 
-which reduces to $\sin^2(\omega_1r'_t/c/2)$ on resonance. The $\pi$-pulse $r'_t = \pi c/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi c/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\mathcal{G}_{\mathrm{gap}})$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
+which reduces to $\sin^2(\omega_1r'_t/(2c))$ on resonance. The $\pi$-pulse $r'_t = \pi c/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi c/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\mathcal{G}_{\mathrm{gap}})$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
 
 ## Summary of Notation
 

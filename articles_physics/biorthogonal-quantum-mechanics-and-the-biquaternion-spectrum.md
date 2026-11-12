@@ -153,12 +153,12 @@ so the divergence is at the rate $1/\lvert B^2\rvert$, not merely "divergent".
 
 ## The Biorthogonal Probability Rule
 
-The spectral writing gives the decomposition of a vector, but not yet a probability. For a vector $\tilde{Ξ}_{\mathrm{sp}}\in\mathbb{C}^2$, expand it in the right basis,
+The spectral writing gives the decomposition of a vector, but not yet a probability. For a vector $\tilde{Ξ}\in\mathbb{C}^2$, expand it in the right basis,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}=c_+r_++c_-r_-,
+\tilde{Ξ}=c_+r_++c_-r_-,
 \qquad
-c_\pm=\ell_\pm^{\dagger}\tilde{Ξ}_{\mathrm{sp}}.
+c_\pm=\ell_\pm^{\dagger}\tilde{Ξ}.
 $$
 
 The coefficient is the left pairing, not the orthogonal projection. The norm is computed with the metric built from the left basis,
@@ -166,17 +166,17 @@ The coefficient is the left pairing, not the orthogonal projection. The norm is 
 $$
 \eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger},
 \qquad
-\langle\tilde{Ξ}_{\mathrm{sp}},\eta\tilde{Ξ}_{\mathrm{sp}}\rangle=\lvert c_+\rvert^{2}+\lvert c_-\rvert^{2},
+\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle=\lvert c_+\rvert^{2}+\lvert c_-\rvert^{2},
 $$
 
 and the normalized weights are
 
 $$
 \boxed{\;p_\pm=\frac{\lvert c_\pm\rvert^{2}}{\lvert c_+\rvert^{2}+\lvert c_-\rvert^{2}}
-=\frac{\lvert\ell_\pm^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\rvert^{2}}{\langle\tilde{Ξ}_{\mathrm{sp}},\eta\tilde{Ξ}_{\mathrm{sp}}\rangle}\;}.
+=\frac{\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}}{\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle}\;}.
 $$
 
-The weights are positive and sum to one for every $\tilde{Ξ}_{\mathrm{sp}}$, because $\eta$ is a sum of rank-one positive operators and the left eigenvectors form a basis. The rule is therefore available for every diagonalizable element with distinct eigenvalues, normal or not. What it is not is the Born rule: the denominator is not one in the original Hilbert norm, and the coefficients are not the orthogonal projections.
+The weights are positive and sum to one for every $\tilde{Ξ}$, because $\eta$ is a sum of rank-one positive operators and the left eigenvectors form a basis. The rule is therefore available for every diagonalizable element with distinct eigenvalues, normal or not. What it is not is the Born rule: the denominator is not one in the original Hilbert norm, and the coefficients are not the orthogonal projections.
 
 The rule has a price. The metric $\eta$ depends on the element, because the left eigenvectors do. Two different observables therefore define two different inner products on the same vector space, and a state has no element-independent norm. That is the sense in which the biorthogonal formulation is a formulation per observable, not a replacement for the Hilbert-space formulation.
 
@@ -197,7 +197,7 @@ The contrast is the conceptual content of the article. The spectral decompositio
 | --- | --- | --- | --- |
 | quantum state | $\tilde{Ϛ}_{\Psi}$ Hermitian, positive, trace one | $\eta=I$ | $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\pm)$ |
 | normal observable | $\tilde H_\Psi$ normal, distinct spectrum | $\eta=I$ on the eigenbasis | $p_\pm=\lvert c_\pm\rvert^{2}$ |
-| non-normal operator | $\tilde Q$ with $B\neq0$ | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | $p_\pm=\lvert c_\pm\rvert^{2}/\langle\tilde{Ξ}_{\mathrm{sp}},\eta\tilde{Ξ}_{\mathrm{sp}}\rangle$ |
+| non-normal operator | $\tilde Q$ with $B\neq0$ | $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$ | $p_\pm=\lvert c_\pm\rvert^{2}/\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle$ |
 | exceptional point | $B=0$, $\vec Q\neq0$ | no eigenbasis | no rule |
 
 The last row is the boundary of the whole construction. At an exceptional point the two right eigenvectors coalesce, the left eigenvectors coalesce, and the metric degenerates; the biorthogonal rule has no limit. The exceptional point is treated in *Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum*, and the two articles meet exactly at that row.
@@ -230,7 +230,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 - The two eigendirections are orthogonal as idempotents and non-orthogonal in the Hilbert space; the cross inner product $2\operatorname{Sc}(\tilde\Pi_+^{*}\tilde\Pi_-)$ measures the failure.
 - The Petermann factor $\kappa=2\operatorname{Sc}(\tilde\Pi_\pm^{*}\tilde\Pi_\pm)$ is at least one and equals one exactly when the element is normal.
 - The Petermann factor is the norm deficit, $\kappa=(1+\lVert\rho\rVert^2)/2=(\lVert\vec Q\rVert^2+\lvert B^2\rvert)/(2\lvert B^2\rvert)$ with $\rho=\vec Q/B$: the excess $\kappa-1$ is half the deficit $\lVert\rho\rVert^2-1$ of the flow, and the Gram form of the two projectors has eigenvalues $1$ and $\lVert\rho\rVert^2$.
-- The biorthogonal probability rule is $p_\pm=\lvert\ell_\pm^{\dagger}\tilde{Ξ}_{\mathrm{sp}}\rvert^{2}/\langle\tilde{Ξ}_{\mathrm{sp}},\eta\tilde{Ξ}_{\mathrm{sp}}\rangle$ with $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$; it is not the Born rule unless $\eta=I$.
+- The biorthogonal probability rule is $p_\pm=\lvert\ell_\pm^{\dagger}\tilde{Ξ}\rvert^{2}/\langle\tilde{Ξ},\eta\tilde{Ξ}\rangle$ with $\eta=\ell_+\ell_+^{\dagger}+\ell_-\ell_-^{\dagger}$; it is not the Born rule unless $\eta=I$.
 - A density matrix is normal, so its eigenprojections are Hermitian and the biorthogonal rule reduces to the Born rule $p_\pm=2\operatorname{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\pm)$.
 - At an exceptional point the two bases coalesce and the metric degenerates; the probability rule has no limit there.
 - The algebra supplies the decomposition and the projectors, not the metric, the dynamics or the arrow of time.

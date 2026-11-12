@@ -8,7 +8,7 @@ The four options are not four theories. They are four **inequivalent rewritings*
 
 Three things are fixed here once and used without repetition below.
 
-- **The field is an element.** Every field of the article is an element of $\mathbb{B}$, written $\tilde{Ξ}_{\mathrm{sp}}$, and every product is a product of elements. The four options differ in how the eight real coordinates of that one element are read, not in the size of the object that carries them. The field is never written as a list of components anywhere in this article.
+- **The field is an element.** Every field of the article is an element of $\mathbb{B}$, written $\tilde{Ξ}$, and every product is a product of elements. The four options differ in how the eight real coordinates of that one element are read, not in the size of the object that carries them. The field is never written as a list of components anywhere in this article.
 - **The derivative is the corpus's gradient.** The only derivative is the biquaternionic gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and its d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$. Parra's derivative, written with a frame element in each term, is translated into it once, in *The Four Options*.
 - **Parra's right multipliers.** Parra's imaginary unit is the element $\omega:=-\vec e_z$, his spin bivector $e_{21}$; it multiplies the field **on the right**, and it is not the central $i$. The article uses that one element read with and without the central $i$,
   $$
@@ -25,7 +25,7 @@ The article is an **equivalent rewriting**, as everywhere in this series: the fo
 **Parra's assumption.** Parra starts from the four complex coefficients of the field and inspects the eight real equations. His assumption is that the **real part of the first coefficient** transforms as a scalar; under that assumption the eight equations acquire a vector character once the **spin vector** $\vec s$ is introduced, an imaginary spatial vector — a real three-vector multiplied by $i$. It has no material part, and the star fixes the informational space and negates the material blocks, so $\vec s=\vec s^{*}$ and $\vec s$ lies in $X_{\mathrm i}$ of the block table below. Two scalars and two vectors remain. Writing the scalars as $\alpha$ and $\lambda$ and the vectors as $\vec E=(E_1,E_2,E_3)$ and $\vec B=(B_1,B_2,B_3)$, the option-$\{0\}$ field is
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\{0\}}=(\alpha+iB_3)\,e_t+(-B_2+iB_1)\,\vec e_x+(E_3+i\lambda)\,\vec e_y+(E_1+iE_2)\,\vec e_z .
+\tilde{Ξ}_{\{0\}}=(\alpha+iB_3)\,e_t+(-B_2+iB_1)\,\vec e_x+(E_3+i\lambda)\,\vec e_y+(E_1+iE_2)\,\vec e_z .
 $$
 
 The eight real fields are the eight real coordinates of one element, and the option decides which coordinate carries which.
@@ -33,9 +33,9 @@ The eight real fields are the eight real coordinates of one element, and the opt
 **The four fields.** The assumption "the real part of the first coefficient is a scalar" can be made, after a suitable renaming, for **any of the four coefficients**, and this is the origin of the four options. Three fixed real-linear maps carry the option-$\{0\}$ field to the other three,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\{3\}}=\Pi\,\tilde{Ξ}_{\mathrm{sp},\{0\}},\qquad
-\tilde{Ξ}_{\mathrm{sp},\{2\}}=J_2\,\overline{\tilde{Ξ}_{\mathrm{sp},\{0\}}},\qquad
-\tilde{Ξ}_{\mathrm{sp},\{1\}}=J_1\,\overline{\tilde{Ξ}_{\mathrm{sp},\{0\}}},
+\tilde{Ξ}_{\{3\}}=\Pi\,\tilde{Ξ}_{\{0\}},\qquad
+\tilde{Ξ}_{\{2\}}=J_2\,\overline{\tilde{Ξ}_{\{0\}}},\qquad
+\tilde{Ξ}_{\{1\}}=J_1\,\overline{\tilde{Ξ}_{\{0\}}},
 $$
 
 where the bar is the coefficient conjugation of *Algebra and Element Conventions*, $\Pi$ replaces the four coefficients $(Q_t,Q_x,Q_y,Q_z)$ by $(Q_y,Q_z,Q_t,Q_x)$, and the two signed exchanges $J_2$ and $J_1$ replace them by $(-Q_x,Q_t,Q_z,-Q_y)$ and $(Q_z,-Q_y,-Q_x,Q_t)$. Two of the three maps are therefore **antilinear** and the third, $\Pi$, is **complex-linear**. The options fall into two classes under the complex-linear maps, $\{0\}\sim\{3\}$ and $\{2\}\sim\{1\}$, and all four transitions between the classes are the conjugation. The three relations were recomputed on generic real fields.
@@ -43,7 +43,7 @@ where the bar is the coefficient conjugation of *Algebra and Element Conventions
 **The four equations.** Parra's equation multiplies the field by the derivative on the left and by the spin bivector on the right. Read in this algebra, with $ϙ$ the charge and $A$ the potential,
 
 $$
-\boxed{\;\pm\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\,\omega\pmϙA\,\tilde{Ξ}_{\mathrm{sp}}+i\,k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega=0\;}
+\boxed{\;\pm\tilde\nabla_\Phi\tilde{Ξ}\,\omega\pmϙA\,\tilde{Ξ}+i\,k_m\overline{\tilde{Ξ}}\,\omega=0\;}
 $$
 
 the derivative acting on everything to its right, $\omega$ multiplying on the right, and **two independent signs**, one on the derivative term and one on the coupling term. Parra's derivative, written with a frame element in each term, is this gradient: the frame elements of his terms are the units of $\tilde\nabla_\Phi$, and his imaginary unit $e_{21}$ is $\omega$. The four options are the four combinations of the signs, and the last entry of the table is Parra's identification of each with a "particle".
@@ -61,13 +61,13 @@ The sign of the coupling term distinguishes electron from positron, and the sign
 
 **Proposition (the options are one theory in four sign conventions).** The four equations differ only in the **sign of the derivative term** and the **sign of the coupling term**, each of them $+$ or $-$, while the spin bivector and the mass term are the same in all four. Consequently each option is the Dirac equation of the corpus in its own sign conventions: reading the sign of the derivative as defining the orientation of the frame and the sign of the coupling as the charge convention, the four options become one equation.
 
-*Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $i\,k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega$ and the right factor $\omega$ are common to all four, and the derivative term is the same up to its overall sign.
+*Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $i\,k_m\overline{\tilde{Ξ}}\,\omega$ and the right factor $\omega$ are common to all four, and the derivative term is the same up to its overall sign.
 
-**The free equation, once.** Set $m=0$ and $A=0$. The right multiplier $\omega$ is invertible, $\omega^{-1}=-\omega$, so the two options whose derivative sign is $+$ hold exactly when $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$, and the two whose derivative sign is $-$ likewise. The four options therefore share one free equation, first order and in one field, and they are distinguished by the relative signs of the two terms and not by the propagation.
+**The free equation, once.** Set $m=0$ and $A=0$. The right multiplier $\omega$ is invertible, $\omega^{-1}=-\omega$, so the two options whose derivative sign is $+$ hold exactly when $\tilde\nabla_\Phi\tilde{Ξ}=0$, and the two whose derivative sign is $-$ likewise. The four options therefore share one free equation, first order and in one field, and they are distinguished by the relative signs of the two terms and not by the propagation.
 
-**Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation. The source writes it $\nabla\tilde{Ξ}_{\mathrm{sp}} e_{21}+ϙA\tilde{Ξ}_{\mathrm{sp}}+k_m\tilde{Ξ}_{\mathrm{sp}} e_0=0$ in his own letters, and *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form* writes the same equation as $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}\,\omega-eA\tilde{Ξ}_{\mathrm{sp}}=k_m\tilde{Ξ}_{\mathrm{sp}} v_0$: the derivative on the left, and the two multipliers on the right, the spin plane $\omega$ and the fixed timelike velocity $v_0$. The two differ only in the two sign conventions of the charge and of the mass: with $ϙ=-e$ both coupling terms read $-eA\tilde{Ξ}_{\mathrm{sp}}$, and with $m\to-m$ both mass terms read $-m$ times the field, so they coincide term by term, the source's $e_{21}$ being the corpus's $\omega$, as Fauser states. Option $\{1\}$ **is** the Daviau equation of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation* — the charge is written $q$ there, and the generator of his space algebra is not the one of this article — upon the passage between the two formulations described in that article. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural result. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+**Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation. The source writes it $\nabla\tilde{Ξ} e_{21}+ϙA\tilde{Ξ}+k_m\tilde{Ξ} e_0=0$ in his own letters, and *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form* writes the same equation as $\tilde\nabla_\Phi\tilde{Ξ}\,\omega-eA\tilde{Ξ}=k_m\tilde{Ξ} v_0$: the derivative on the left, and the two multipliers on the right, the spin plane $\omega$ and the fixed timelike velocity $v_0$. The two differ only in the two sign conventions of the charge and of the mass: with $ϙ=-e$ both coupling terms read $-eA\tilde{Ξ}$, and with $m\to-m$ both mass terms read $-m$ times the field, so they coincide term by term, the source's $e_{21}$ being the corpus's $\omega$, as Fauser states. Option $\{1\}$ **is** the Daviau equation of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation* — the charge is written $q$ there, and the generator of his space algebra is not the one of this article — upon the passage between the two formulations described in that article. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural result. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**Remark (the right action is common to all four).** In every option the spin bivector $\omega$ multiplies $\tilde{Ξ}_{\mathrm{sp}}$ on the right and $i\omega$ multiplies $\overline{\tilde{Ξ}_{\mathrm{sp}}}$ on the right, while the derivative and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
+**Remark (the right action is common to all four).** In every option the spin bivector $\omega$ multiplies $\tilde{Ξ}$ on the right and $i\omega$ multiplies $\overline{\tilde{Ξ}}$ on the right, while the derivative and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
 
 ## The Two Dirac Equations
 
@@ -76,10 +76,10 @@ The corpus writes the massive Dirac equation twice: once on the two parts of the
 **The pair on the two parts.** The biquaternion Dirac field is an element of $\mathbb{B}$, and its equation is the pair
 
 $$
-\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}\;}
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}\;}
 $$
 
-of *Operator and Calculus Conventions*, with $\tilde\nabla_\Phi$ the gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate. **Two equations, one per component of the pair.** Both act on the left, so the pair is one-sided; at $m=0$ the two lines decouple, and at $m\ne0$ the mass couples them off the diagonal. The pair is also what carries the mass: composing the two lines gives $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$, that is $\Box\tilde{Ξ}_{\mathrm{sp},L}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},L}$, while neither line alone squares to a scalar operator. The reason is a derived form: the two squares carry the time–space cross terms with opposite signs, and only the mixed product cancels them.
+of *Operator and Calculus Conventions*, with $\tilde\nabla_\Phi$ the gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate. **Two equations, one per component of the pair.** Both act on the left, so the pair is one-sided; at $m=0$ the two lines decouple, and at $m\ne0$ the mass couples them off the diagonal. The pair is also what carries the mass: composing the two lines gives $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{L}$, that is $\Box\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{L}$, while neither line alone squares to a scalar operator. The reason is a derived form: the two squares carry the time–space cross terms with opposite signs, and only the mixed product cancels them.
 
 **The same pair on one field.** Read on one element, the pair is one display whose two sides are the two actions,
 
@@ -140,9 +140,9 @@ The first four rows are the Klein four $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}\c
 - **The full reflection $PT$ is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$**, negating both material blocks, that is $x_\mu\mapsto-x_\mu$ on the material sector.
 - **Charge conjugation is read on $\flat=-{}^{*}$, the real structure.** It fixes the material sector and negates the informational one, and it is anti-linear. It is level 1 of the four levels at which the corpus uses the name (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*): at the algebra level $\flat$ carries the **shape** of the pairing, whereas the operation itself is level 3 and lives on the carrier,
   $$
-  \mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=\eta_C\,\tilde{Ξ}_{\mathrm{sp}}^*,\qquad \eta_C:\ \tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_y,\qquad \eta_C^2=e_t ,
+  \mathcal{C}[\tilde{Ξ}]=\eta_C\,\tilde{Ξ}^*,\qquad \eta_C:\ \tilde{Ξ}\mapsto-\vec e_y\tilde{Ξ}\vec e_y,\qquad \eta_C^2=e_t ,
   $$
-  with $\eta_C$ the fixed element of the map (*Charge Conjugation and the Division Ring*). The bilinear is its second realization, $\tilde{Ξ}_{\mathrm{sp}}^{\mathsf T}\eta\tilde{Ξ}_{\mathrm{sp}}$, with the element $\eta:=\vec e_x$ acting on the right, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}\vec e_x$, whose square is $\vec e_x^2=-e_t$; the sign that separates the two squares is the division-ring sign the companion article records. That the shape is a pattern and not a group element is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
+  with $\eta_C$ the fixed element of the map (*Charge Conjugation and the Division Ring*). The bilinear is its second realization, $\tilde{Ξ}^{\mathsf T}\eta\tilde{Ξ}$, with the element $\eta:=\vec e_x$ acting on the right, $\tilde{Ξ}\mapsto\tilde{Ξ}\vec e_x$, whose square is $\vec e_x^2=-e_t$; the sign that separates the two squares is the division-ring sign the companion article records. That the shape is a pattern and not a group element is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
 
 **Caution (the second dictionary).** The literature of the source attaches the names differently: with the generators $i\vec e_\eta$ read as the generators of the spatial algebra, it reads $P$, $T$ and $PT$ as the three operations which, in the corpus's letters, are $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ (*The CPT Theorem in Biquaternionic Form*, quoting the literature). That dictionary reads $P=\bar{\cdot}$, $T={}^{*}$, $PT={}^{\natural}$ — the transpose of the interpretation above. Both dictionaries are labelled and neither is proved in the corpus; the difference is the choice of which structure is called space inversion, and the interpretation above is the one whose parity fixes time and negates space. The table is the fact, the naming is the interpretation, and the article keeps the two apart.
 
@@ -165,12 +165,12 @@ This is the algebraic content of a familiar physical fact. In passing from the D
 Parra's four fields have a compact quaternion form. Each of them is an element of $\mathbb{B}$, and every element splits into its two quaternion halves,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},\{r\}}=\tilde q_{r1}+i\,\tilde q_{r2},
+\tilde{Ξ}_{\{r\}}=\tilde q_{r1}+i\,\tilde q_{r2},
 $$
 
 the sum of a real quaternion $\tilde q_{r1}\in\mathbb{B}_{H}$ and the central $i$ times a real quaternion $\tilde q_{r2}$ — the decomposition of an element into the two halves $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ fixed in *Algebra and Element Conventions*. (Parra writes the second quaternion through its quaternion conjugation, which is the quaternion sign on the real quaternions and names the same four real coefficients.)
 
-**Proposition (the Parra field is the corpus's field).** The map $q_{r1}+i\bar q_{r2}\mapsto\tilde{Ξ}_{\mathrm{sp},\{r\}}$ sends the Parra field of each option into the algebra $\mathbb{B}$, and a general element of $\mathbb{B}$ has eight real parameters — exactly the eight real fields of the source.
+**Proposition (the Parra field is the corpus's field).** The map $q_{r1}+i\bar q_{r2}\mapsto\tilde{Ξ}_{\{r\}}$ sends the Parra field of each option into the algebra $\mathbb{B}$, and a general element of $\mathbb{B}$ has eight real parameters — exactly the eight real fields of the source.
 
 *Proof.* A real quaternion has four real parameters and $i$ times a real quaternion has four more, so the sum ranges over the eight-dimensional real algebra, and every element of $\mathbb{B}$ is of that form. No further structure is used.
 
@@ -194,7 +194,7 @@ Fauser draws a structural conclusion from the four options. The literature of th
 
 3. **The discrete symmetries as a permutation group.** The corpus has each of $P$, $C$, $T$ acting on one field. Does the extension to a group acting on the set of four equations reproduce the corpus's $C$ (the $\flat$ real structure and the right multiplication by a bivector) and its $P$, $T$ (the reflections of the article on reflection and rotation) with the correct permutation, and which of the three maps between the options is the charge conjugation? Two of the three are antilinear, so the question is a sharp one.
 
-4. **The mass term.** The mass term $i\,k_m\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\omega$ replaces Parra's right multiplication by the fixed velocity with a conjugation together with a right multiplication by $i\omega$. Is that replacement unique, or is it one of several representatives of the same structure, and does the choice leave the four options' orbit intact?
+4. **The mass term.** The mass term $i\,k_m\overline{\tilde{Ξ}}\,\omega$ replaces Parra's right multiplication by the fixed velocity with a conjugation together with a right multiplication by $i\omega$. Is that replacement unique, or is it one of several representatives of the same structure, and does the choice leave the four options' orbit intact?
 
 5. **Spin polarisation and second quantisation.** The four options are four first-quantised equations. Is there a sense in which the four creation and annihilation operator pairs of the second quantised theory — one per type — are the four Fourier components of the option orbit, and does the corpus's path-integral formalism see them?
 
@@ -212,7 +212,7 @@ The options are permuted by the quotient of the group of units by its identity c
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{Ξ}_{\mathrm{sp},\{r\}}$, $r=0,1,2,3$ | The Parra field of option $\{r\}$, an element of $\mathbb{B}$ on eight real parameters |
+| $\tilde{Ξ}_{\{r\}}$, $r=0,1,2,3$ | The Parra field of option $\{r\}$, an element of $\mathbb{B}$ on eight real parameters |
 | $\alpha,\lambda$ | The two scalars of the vector interpretation |
 | $\vec E=(E_1,E_2,E_3)$, $\vec B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
 | $\vec s$ | The spin vector, an imaginary spatial vector; $\vec s=\vec s^{*}$ under the star, and $\vec s$ lies in $X_{\mathrm i}$ |
@@ -227,8 +227,8 @@ The options are permuted by the quotient of the group of units by its identity c
 | $\Pi$, $J_2$, $J_1$ | The three maps relating the four fields, in the source's letters; $\Pi$ is the permutation of the four coordinates and not an element of the algebra, and it acts complex-linearly, $(Q_t,Q_x,Q_y,Q_z)\mapsto(Q_y,Q_z,Q_t,Q_x)$; $J_2$ and $J_1$ after the coefficient conjugation, by $(-Q_x,Q_t,Q_z,-Q_y)$ and $(Q_z,-Q_y,-Q_x,Q_t)$ |
 | $\tilde q_{r1}+i\tilde q_{r2}$ | The two quaternion halves of the Parra field, $\mathbb{B}_{H}$ and $\mathbb{B}_{iH}$ |
 | $T_{\mathrm m},T_{\mathrm i},X_{\mathrm m},X_{\mathrm i}$ | The four blocks: material time $\mathbb R(ie_t)$, informational time $\mathbb R(e_t)$, material space, informational space $iX_{\mathrm m}$ |
-| $\eta=\vec e_x$ | The element of the charge-conjugation bilinear, $\tilde{Ξ}_{\mathrm{sp}}^{\mathsf T}\eta\tilde{Ξ}_{\mathrm{sp}}$, a right multiplier; $\eta^2=-e_t$ |
-| $\eta_C:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | The element of the operation $\mathcal{C}[\tilde{Ξ}_{\mathrm{sp}}]=\eta_C\tilde{Ξ}_{\mathrm{sp}}^*$; $\eta_C^2=e_t$ |
+| $\eta=\vec e_x$ | The element of the charge-conjugation bilinear, $\tilde{Ξ}^{\mathsf T}\eta\tilde{Ξ}$, a right multiplier; $\eta^2=-e_t$ |
+| $\eta_C:\tilde{Ξ}\mapsto-\vec e_y\tilde{Ξ}\vec e_y$ | The element of the operation $\mathcal{C}[\tilde{Ξ}]=\eta_C\tilde{Ξ}^*$; $\eta_C^2=e_t$ |
 | $\mathbb B$ | The biquaternion algebra; the corpus's Dirac field on eight real parameters |
 
 ## Further Reading

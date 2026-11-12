@@ -32,7 +32,7 @@ Three results:
 
 - **The root is a pair, not an operator.** The product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is $\Box$, and each factor alone is not a root: on the material sector the square of the gradient is $\Box_\Phi-2\Delta_\Phi-\frac{2i}{c}\sum_\eta\vec e_\eta\partial^2/\partial r'_t\,\partial q_\eta$. No first-order operator with constant coefficients in the algebra has a scalar square, because a scalar square needs four elements that anticommute pairwise with squares $+1,-1,-1,-1$, and the algebra contains no such quadruple.
 - **The free equation is first order in one field.** $\tilde\nabla_\Phi\tilde{Ξ}=0$ implies $\Box\tilde{Ξ}=0$, and at a null momentum it selects a two-dimensional subspace of the four-dimensional solution space of the second-order equation.
-- **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp}}=k_m^{2}\tilde{Ξ}_{\mathrm{sp}}$.
+- **The mass needs the two parts.** A scalar mass commutes with the gradient, so it cannot be the zero-order term of a first-order factor. It is the coupling of the two members of the pair, and eliminating one member returns $\Box\tilde{Ξ}=k_m^{2}\tilde{Ξ}$.
 
 The four components are the four coefficients of a biquaternion. The count of sixteen maps is elementary linear algebra, and the identification of the field with an element of the algebra is the corpus's dictionary. Nothing in the article predicts a mass or a coupling.
 
@@ -132,7 +132,7 @@ The corpus's calculus has one side: every equation is written on the left, and a
 
 ### The carrier is four-dimensional
 
-The four terms of the gradient multiply by four different units, and a field that carries them is an element of the algebra. Every complex-linear map of the algebra into itself is a sum of the sixteen $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$, and those sixteen span $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, so sixteen independent maps act on the four complex coefficients. A complex space of dimension $n$ carries $n^2$ independent complex-linear maps, so sixteen maps need $n\ge4$, and the algebra attains the bound with $n=4$.
+The four terms of the gradient multiply by four different units, and a field that carries them is an element of the algebra. Every complex-linear map of the algebra into itself is a sum of the sixteen $\tilde{Ξ}\mapsto e_\mu\tilde{Ξ} e_\nu$, and those sixteen span $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, so sixteen independent maps act on the four complex coefficients. A complex space of dimension $n$ carries $n^2$ independent complex-linear maps, so sixteen maps need $n\ge4$, and the algebra attains the bound with $n=4$.
 
 The four components are therefore the four coefficients of a biquaternion, and they are not an added multiplicity. The root does not enlarge the field space relative to a biquaternion field. It changes the action, not the carrier.
 
@@ -162,7 +162,7 @@ and setting it to zero imposes four independent complex conditions, one per unit
 |+-|+-|+-|
 | One complex number | $\tilde\nabla_\Phi\xi=0$, which forces $\partial\xi/\partial R_\mu=0$ | no, it has no solution that propagates |
 | Element of $\mathbb{B}$, massless | $\tilde\nabla_\Phi\tilde{Ξ}=0$ | yes, one factor of $\Box$ |
-| Element of $\mathbb{B}$, massive | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | yes, the pair |
+| Element of $\mathbb{B}$, massive | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | yes, the pair |
 
 ## The Mass and the Chiral Pair
 
@@ -174,21 +174,21 @@ The scalar mass therefore fails as the shift of a single operator, and the facto
 
 ### The pair
 
-Write the field as one element with two parts, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$. The first-order equation of the series is the chiral pair
+Write the field as one element with two parts, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$. The first-order equation of the series is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-with the same coefficient $k_m=m\,c/\hbar$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, that is
+with the same coefficient $k_m=m\,c/\hbar$ as above. Substituting the first into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, that is
 
 $$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R} ,
+\Box\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R} ,
 $$
 
-and the first member then defines $\tilde{Ξ}_{\mathrm{sp},L}$. Each part therefore satisfies Klein–Gordon, and the pair is a bijection with the second-order solutions of one part, not a new restriction.
+and the first member then defines $\tilde{Ξ}_{L}$. Each part therefore satisfies Klein–Gordon, and the pair is a bijection with the second-order solutions of one part, not a new restriction.
 
 The factorisation is not available on one field, and the reason is the same vector remainder. With the mass as a shift,
 
@@ -202,15 +202,15 @@ which is not scalar. The two cross terms do not cancel, because they are differe
 
 ### The two lines
 
-The two equations are two lines on two elements, and no single letter is written for them (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*). Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$ and
+The two equations are two lines on two elements, and no single letter is written for them (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*). Write $\tilde{Ξ}=(\tilde{Ξ}_{L},\tilde{Ξ}_{R})$ and
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}.
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}.
 $$
 
-Composing each line with the conjugate of the other gives $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},L}=0$ and $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{\mathrm{sp},R}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
+Composing each line with the conjugate of the other gives $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{L}=0$ and $\left(\Box-k_m^{2}\right)\tilde{Ξ}_{R}=0$. This is the precise sense in which a mass needs a pair: the doubling is the carrier of the factorisation, not a doubling of particles, and the two parts are the two labelled halves of one field.
 
 The mass term is a multiple of the identity on the two slots and cannot move between them; the gradient is the off-diagonal block, and it is the gradient that carries the mass across. A scalar mass cannot sit in a single factor, for the reason of §*No single square*; the pair supplies the second slot that the mass needs in order to appear as an equality.
 
@@ -231,7 +231,7 @@ The determinant is a product of eigenvalues, and it is not a square root. A dete
 
 The classification is a statement of form, and its boundaries are part of the result.
 
-1. **It is stronger than Klein–Gordon.** The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla_\Phi\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $-i\tilde K_{\Phi}$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.
+1. **It is stronger than Klein–Gordon.** The massless first-order equation selects a subspace of the second-order solution space. At a null momentum the second-order equation admits every element, four complex dimensions, while $\tilde\nabla_\Phi\tilde{Ξ}=0$ admits two: at $k=(1,1,0,0)$ left multiplication by $-i\tilde K_{\Phi}$ has rank two and kernel two, and the kernel carries one state of each value of the chirality, the right action $\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$. What the root halves is the room for the field at that momentum, not the spectrum.
 2. **No mass and no coupling are predicted.** The classification says which first-order structures have the Klein–Gordon second order; it does not say which one nature uses, and it does not determine $1/k_m$. The sign of the mass carries no content either: the pair at $k_m$ and the pair at $-k_m$ are the same equations with the sign of one part flipped.
 3. **The coefficients are constant and the background flat.** A position-dependent coefficient adds a term in which the derivative acts on the coefficient, and a gauged derivative adds a field strength; the constant-coefficient classification is then the starting point rather than the answer. On a curved background the derivatives become covariant, and the classification applies in the tangent space at each point. The $x$ coordinates are flat; the algebra coordinates give the same operator and not a different root.
 4. **The real structure is open.** The article works over $\mathbb{C}$. Whether the gradient can be given a real structure, and which sign that structure carries, is the charge-conjugation question, and the article does not settle it. The index question is a different one again, and the massless kernel of §*The symbol and the mass shell* splits by the chirality without the gradient separating the two values.
@@ -252,7 +252,7 @@ The identities were recomputed before they were written. The algebra multiplicat
 |+-|+-|
 | $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})-(k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2)e_t$ on $100$ random wave covectors | $8.9\times10^{-16}$ |
 | the symbol of the square, $\tilde K_{\Phi}^2+\left(k_{t}^{\prime\,2}+\lvert\vec k_\Phi\rvert^2\right)e_t-2ik_{t}^{\prime}\vec k_\Phi$, on $100$ random wave covectors | $1.8\times10^{-15}$ |
-| the sixteen maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$ are independent | rank $16$ |
+| the sixteen maps $\tilde{Ξ}\mapsto e_\mu\tilde{Ξ} e_\nu$ are independent | rank $16$ |
 | no element anticommutes with the three spatial units | kernel dimension $0$ |
 | no map anticommutes with the four left multiplications | dimension $0$ |
 | the same for a generic quaternionic triple, over $100$ conjugates | kernel dimension $0$ |
@@ -262,7 +262,7 @@ The identities were recomputed before they were written. The algebra multiplicat
 | the chirality on the null kernel, the eigenvalues of the right action by $\vec e_z$ | $\pm i$, one of each |
 | $\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-\Box$ on the eight slots | $1.8\times10^{-15}$ |
 | $\det\left(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{i\tilde K_{\Phi}}-k_m^{2}\right)-(\Box-k_m^{2})^4$ on $100$ random wave covectors | $2.5\times10^{-11}$ |
-| the elimination, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}/k_m^{2}-\tilde{Ξ}_{\mathrm{sp},R}$ on shell | $3.6\times10^{-15}$ |
+| the elimination, $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}/k_m^{2}-\tilde{Ξ}_{R}$ on shell | $3.6\times10^{-15}$ |
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription. Two exact values are quoted in the text: at $k=(2,1,0,0)$ the norm $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ is $3$, the determinant $\det\ell_{-i\tilde K_{\Phi}}$ is $9$, and at $k_m=1$ the determinant of the two lines, $\det(\ell_{i\tilde K_{\Phi}^{\natural}}\ell_{-i\tilde K_{\Phi}}-k_m^{2})$, is $16$.
 
@@ -272,7 +272,7 @@ The first-order root of the biquaternion Klein–Gordon operator exists, and it 
 
 The free equation is first order in one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$, and it implies the massless Klein–Gordon equation. At a null momentum it selects two of the four complex dimensions of the second-order solution space, one state of each value of the chirality.
 
-The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the two lines carry it, composing to $\Box-k_m^{2}$ on each part. Eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=k_m^{2}\tilde{Ξ}_{\mathrm{sp},R}$, so the pair and the second-order equation on one part are equivalent.
+The mass is scalar and central. It commutes with the gradient, so it cannot be the zero-order term of a first-order factor; it is the coupling of the two parts of one element, and the two lines carry it, composing to $\Box-k_m^{2}$ on each part. Eliminating one member returns $\Box\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, so the pair and the second-order equation on one part are equivalent.
 
 A field whose value is one complex number has no first-order equation: the four terms of the gradient impose four independent conditions on one function. The results are a classification of form. No mass, no coupling and no dynamics are predicted. The open questions are the gauged, curved, position-dependent and real-structure extensions.
 
@@ -295,8 +295,8 @@ A field whose value is one complex number has no first-order equation: the four 
 | $-i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi$ | The symbol of the gradient, an element of $\mathbb{B}$ |
 | $\ell_M$ | Left multiplication by $M$ |
 | $\tilde{Ξ}$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
-| $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two parts of an element, the two values of the label |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box$ per part |
+| $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two parts of an element, the two values of the label |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair as two first-order lines; each composed with the conjugate of the other is $\Box$ per part |
 | the label | $L$ or $R$, two values, carried by the parts of an element |
 
 ## Further Reading

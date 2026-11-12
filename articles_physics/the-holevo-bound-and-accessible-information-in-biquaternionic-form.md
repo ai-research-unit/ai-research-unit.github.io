@@ -211,7 +211,7 @@ The projective measurement in the basis $\{\tilde\Pi_{1,2}(\vec u_z)\}$ gives $p
 Let the ensemble be two pure states with equal weights and overlap
 
 $$
-c = \bigl|\langle \tilde{Ξ}_{\mathrm{sp},0}|\tilde{Ξ}_{\mathrm{sp},1}\rangle\bigr| \in [0,1] .
+c = \bigl|\langle \tilde{Ξ}_{0}|\tilde{Ξ}_{1}\rangle\bigr| \in [0,1] .
 $$
 
 The average state has Bloch vector of length $c$, so its biquaternion norm is $\tfrac14(1-c^2)e_t$ and
@@ -316,7 +316,7 @@ its proof being the data-processing inequality applied to the measurement channe
 | $\xi = H(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural})$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
 | $\rho_{XQ} = \sum_x p_x|x\rangle_{*}\langle x|\otimes\tilde{Ϛ}_{\Psi,x}$ | Classical-quantum state, $I(X:Q)=\xi$ |
 | $I(X:Y)\leq\xi\leq\log2$ | Holevo bound and qubit ceiling |
-| $c = |\langle\tilde{Ξ}_{\mathrm{sp},0}|\tilde{Ξ}_{\mathrm{sp},1}\rangle_{*}|$ | Overlap of two pure states |
+| $c = |\langle\tilde{Ξ}_{0}|\tilde{Ξ}_{1}\rangle_{*}|$ | Overlap of two pure states |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading

@@ -14,7 +14,7 @@ The order is from the mark to the label. The marks come first, which say what a 
 
 - a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;
 - a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
-- a transposition, $L^T$, $\tilde{Ξ}_{\mathrm{sp}}^T$;
+- a transposition, $L^T$, $\tilde{Ξ}^T$;
 - a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ (degree).
 
 **A subscript carries one of two things: an index or a label.**
@@ -32,7 +32,7 @@ The order is from the mark to the label. The marks come first, which say what a 
 
 ## The Caret
 
-**The caret carries a power, a conjugation, a transposition and a construction.** Those four are the whole of its list, and they are read at a glance because each is italic or a symbol: $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$ are powers; $a^{*}$, $a^{\dagger}$, $a^{\natural}$ conjugations; $L^T$, $\tilde{Ξ}_{\mathrm{sp}}^T$ transpositions; $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ constructions.
+**The caret carries a power, a conjugation, a transposition and a construction.** Those four are the whole of its list, and they are read at a glance because each is italic or a symbol: $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$ are powers; $a^{*}$, $a^{\dagger}$, $a^{\natural}$ conjugations; $L^T$, $\tilde{Ξ}^T$ transpositions; $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{sym}^l$, $\Lambda^kTM$ constructions.
 
 **An operator name written with its argument is the one word that stands there.** $\operatorname{sym}(V)$ names the symmetric algebra of a space, $\operatorname{sym}^2(E)$ the symmetric square of a bundle. The word names a structure of the glyph rather than a variant of it, it carries its argument with it and never stands bare, and it is therefore not a label: it takes no entry in §*The Labels*. It is written lowercase, as a label is, and a capital in that position is a defect.
 
@@ -62,9 +62,9 @@ The label says exactly one thing — the glyph is not an element, it is an opera
 
 **The bar is the coefficient conjugation, and it is never the Dirac adjoint.** It is the involution of *Algebra and Element Conventions*, $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and it conjugates the coefficients of an element. The Dirac adjoint is not an involution of the algebra and takes no mark of its own: it is the adjoint of the column followed by the timelike frame basis operator, written as the two multipliers of that basis operator,
 $$
-\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x} \;=\; \tilde{Ξ}_{\mathrm{sp}}^{\dagger}\,iR_{\mathrm{axf},\vec e_x} .
+\tilde{Ξ}^{\dagger}\,iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x} \;=\; \tilde{Ξ}^{\dagger}\,iR_{\mathrm{axf},\vec e_x} .
 $$
-In a bilinear the basis operator multiplies the one that follows, $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}\bigl(iR_{\mathrm{axf},\vec e_x}\Gamma\bigr)\tilde{Ξ}_{\mathrm{sp}}$. No letter stands for the basis operator (*Matrix Representations Conventions*, §*The Clifford Structure*), and the bar is not reused for the composite: a display that writes $\tilde{Ξ}_{\mathrm{sp}}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ and reads it as the adjoint puts a conjugation and a frame basis operator under one mark. A display already written that way is read as the expression above, and the bar itself stays the conjugation, as in $\bar{\tilde Q}$.
+In a bilinear the basis operator multiplies the one that follows, $\tilde{Ξ}^{\dagger}\bigl(iR_{\mathrm{axf},\vec e_x}\Gamma\bigr)\tilde{Ξ}$. No letter stands for the basis operator (*Matrix Representations Conventions*, §*The Clifford Structure*), and the bar is not reused for the composite: a display that writes $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}$ and reads it as the adjoint puts a conjugation and a frame basis operator under one mark. A display already written that way is read as the expression above, and the bar itself stays the conjugation, as in $\bar{\tilde Q}$.
 
 **$\mathrm{opp}$ marks the opposite algebra.** The reversed-product algebra, $a\cdot b=ba$, takes the label $\mathrm{opp}$ — $\mathbb{B}_{\mathrm{opp}}$, $A_{\mathrm{opp}}$, $M_n(D)_{\mathrm{opp}}$ — and it is the **algebra name** that takes it, where $\mathrm{fop}$ marks a **Fock-operator glyph**. The two labels are distinct and neither is read for the other: $a_{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}_{\mathrm{opp}}$ is never an operator.
 
@@ -72,7 +72,7 @@ In a bilinear the basis operator multiplies the one that follows, $\tilde{Ξ}_{\
 
 **Three qualifiers name a variant of an algebra.** They stand low, three lowercase letters each: $\mathrm{spl}$ on a split variant, $\mathbb{C}_{\mathrm{spl}}$ the split-complex numbers, $\mathbb{H}_{\mathrm{spl}}$ the split-quaternions and $\mathbb{B}_{\mathrm{spl}}$ the split-biquaternions; $\mathrm{red}$ on the reduced biquaternions, $\mathbb{B}_{\mathrm{red}}$; $\mathrm{dln}$ on the dual numbers, $\mathbb{C}_{\mathrm{dln}}=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$. The label is the first thing in the field, so $\mathbb{C}_{\mathrm{spl}}$ is never a power of $\mathbb{C}$. **$\mathrm{dln}$ is not $\mathrm{dual}$**: $\mathrm{dual}$ marks the Hodge dual of a field, $F_{\mathrm{dual}}$, and the two labels are never exchanged. **$\mathbb{B}_{\mathrm{red}}$ is not a part of $\mathbb{B}$.** The reduced biquaternions are $\mathbb{C}\oplus\mathbb{C}$, of real dimension four, and the biquaternions are of real dimension eight; the qualifier names a different algebra and not a subalgebra of $\mathbb{B}$.
 
-**The physical corpus writes labels of its own.** $\mathrm{orb}$ on the orbital part, $\mathrm{inc}$ on the incident field, $\mathrm{out}$ on the outgoing solution, $\mathrm{ret}$ on the retarded field, $\mathrm{reg}$ on the regular representation, $\mathrm{can}$ on the canonical tensor, $\mathrm{pol}$ on the polarisation vector, $\mathrm{lor}$ on the Lorentz object, $\mathrm{wkb}$ on the approximation, $\mathrm{mhv}$ on the amplitude, $\mathrm{epr}$ on the steering value, $\mathrm{sp}$ on the spinor, $\mathrm{em}$ on the electromagnetic part, and $\mathrm{axf}$ and $\mathrm{pau}$ on the two displays of the regular matrices, axis-free and Pauli, which the gamma sections keep. Each stands low on the glyph it qualifies, and the word names the part or the role it marks.
+**The physical corpus writes labels of its own.** $\mathrm{orb}$ on the orbital part, $\mathrm{inc}$ on the incident field, $\mathrm{out}$ on the outgoing solution, $\mathrm{ret}$ on the retarded field, $\mathrm{reg}$ on the regular representation, $\mathrm{can}$ on the canonical tensor, $\mathrm{pol}$ on the polarisation vector, $\mathrm{lor}$ on the Lorentz object, $\mathrm{wkb}$ on the approximation, $\mathrm{mhv}$ on the amplitude, $\mathrm{epr}$ on the steering value, $\mathrm{em}$ on the electromagnetic part, and $\mathrm{axf}$ and $\mathrm{pau}$ on the two displays of the regular matrices, axis-free and Pauli, which the gamma sections keep. Each stands low on the glyph it qualifies, and the word names the part or the role it marks.
 
 **Six codes separate two spellings.** $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$, each separating the rarer of two words that share three letters — regularised from regular, topological from top, perimeter from periodic, defective from defining, orbifold from orbital, adjugate from adjoint. A code is a label and stands low with the rest, on the object it qualifies: $h_{\mathrm{tpl}}$ the topological entropy.
 

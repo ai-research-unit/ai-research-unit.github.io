@@ -75,12 +75,12 @@ The external elements satisfy the massive Dirac equation, but in the biquaternio
 **The chiral pair.** It is first a pair of one-sided equations
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-where $\tilde\nabla_\Phi$ is the biquaternionic gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of value $L$, the minus one, and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+where $\tilde\nabla_\Phi$ is the biquaternionic gradient and $(\tilde\nabla_\Phi)^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde{Ξ}_{L}$ is the part of value $L$, the minus one, and $\tilde{Ξ}_{R}$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The mass on the right.** Read on the whole algebra rather than on the carrier of the field, the same physics is the single equation
 
@@ -93,22 +93,22 @@ with $\bar F$ the coefficient conjugate. The derivative acts on the left, the ma
 **The momentum-space form.** In momentum space the pair is the single action equation
 
 $$
-P(p)\tilde{Ξ}_{\mathrm{sp}}=m\tilde{Ξ}_{\mathrm{sp}}
+P(p)\tilde{Ξ}=m\tilde{Ξ}
 $$
 
-on an element of momentum $p$: the insertion $P(p)$ applied to $\tilde{Ξ}_{\mathrm{sp}}$ gives back $m\tilde{Ξ}_{\mathrm{sp}}$. It is the pair written once, its two lines being the two parts $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, and the mass is here the scalar $m$ and not a right multiplication. The two positive-frequency elements of a momentum are written $\tilde{Ξ}_{\mathrm{sp}}^{(1)}$ and $\tilde{Ξ}_{\mathrm{sp}}^{(2)}$, and their spin sum is the action $D(p)$ of §*The Spin-Summed Matrix Element*.
+on an element of momentum $p$: the insertion $P(p)$ applied to $\tilde{Ξ}$ gives back $m\tilde{Ξ}$. It is the pair written once, its two lines being the two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$, and the mass is here the scalar $m$ and not a right multiplication. The two positive-frequency elements of a momentum are written $\tilde{Ξ}^{(1)}$ and $\tilde{Ξ}^{(2)}$, and their spin sum is the action $D(p)$ of §*The Spin-Summed Matrix Element*.
 
 ### The two amplitudes and the minus sign
 
 The vertex current of an electron of incoming momentum $p_{\mathrm{in}}$ and outgoing momentum $p_{\mathrm{out}}$ is the scalar
 
 $$
-J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar{\tilde{Ξ}}_{\mathrm{sp}}(p_{\mathrm{out}})\,Ξ_\mu\tilde{Ξ}_{\mathrm{sp}}(p_{\mathrm{in}})\bigr),
+J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar{\tilde{Ξ}}(p_{\mathrm{out}})\,Ξ_\mu\tilde{Ξ}(p_{\mathrm{in}})\bigr),
 \qquad
-\bar{\tilde{Ξ}}_{\mathrm{sp}}:=\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x,
+\bar{\tilde{Ξ}}:=\tilde{Ξ}^*i\vec e_x,
 $$
 
-with $Ξ_\mu$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}_{\mathrm{sp}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}_{\mathrm{sp}}\,Ξ_\mu\tilde{Ξ}_{\mathrm{sp}}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
+with $Ξ_\mu$ the insertion of the Lorentz index $\mu$ and $\bar{\tilde{Ξ}}$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar{\tilde{Ξ}}\,Ξ_\mu\tilde{Ξ}$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
 \mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{\eta=1}^3 J_\eta(p_3,p_1)J_\eta(p_4,p_2)\Bigr],
@@ -133,7 +133,7 @@ Squaring and averaging over the two initial spins and summing over the two final
 **The spin sum.** The two positive-frequency elements of a momentum $p$ satisfy the operator identity
 
 $$
-\sum_{r=1}^{2}\tilde{Ξ}_{\mathrm{sp}}^{(r)}(p)\,\bar{\tilde{Ξ}}_{\mathrm{sp}}^{(r)}(p)=D(p),
+\sum_{r=1}^{2}\tilde{Ξ}^{(r)}(p)\,\bar{\tilde{Ξ}}^{(r)}(p)=D(p),
 $$
 
 the sum of the two rank-one products being the action
@@ -273,12 +273,12 @@ It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ par
 The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the pairing
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x\,Ξ_\mu\tilde{Ξ}_{\mathrm{sp}}\bigr),
+j_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\vec e_x\,Ξ_\mu\tilde{Ξ}\bigr),
 \qquad
-\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x,
+\bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x,
 $$
 
-where $Ξ_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}_{\mathrm{sp}}\tilde{Ξ}_{\mathrm{sp}}^*$ is in $\mathbb{B}_{\Phi}$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $Ξ_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde{Ξ}\tilde{Ξ}^*$ is in $\mathbb{B}_{\Phi}$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -314,7 +314,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section fixes the dictionary that the traces above use, and nothing here is needed outside it.
 
-The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the insertions, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the insertions, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x},\quad \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\quad \gamma_2=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\quad \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\quad \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
@@ -397,9 +397,9 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $Q\mapsto-iQ\vec e_z$ | Chirality action |
 | $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_\eta p_ki\vec e_\eta Q\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
 | $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |
-| $\tilde{Ξ}_{\mathrm{sp}}^{(r)}(p)$, $\bar{\tilde{Ξ}}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}}^*i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
-| $\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |
-| $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{sp},\mathrm{out}}Ξ_\mu\tilde{Ξ}_{\mathrm{sp},\mathrm{in}})$ | Vertex current |
+| $\tilde{Ξ}^{(r)}(p)$, $\bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
+| $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |
+| $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar{\tilde{Ξ}}_{\mathrm{out}}Ξ_\mu\tilde{Ξ}_{\mathrm{in}})$ | Vertex current |
 | $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
 | $\mathcal M=\mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |

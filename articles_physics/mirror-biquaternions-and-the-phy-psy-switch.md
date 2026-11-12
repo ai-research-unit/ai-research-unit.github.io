@@ -642,16 +642,16 @@ A real rescaling applied after the switch sets the trace of the state to one; th
 
 ### The Schrödinger Equation
 
-The equation has two writings, and the members of a mirror pair stand in them. In biquaternionic form, with $\tilde\Xi_{\mathrm{sp}}$ the spinor-valued field and $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ the observable,
+The equation has two writings, and the members of a mirror pair stand in them. In biquaternionic form, with $\tilde\Xi$ the spinor-valued field and $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ the observable,
 
 $$
-\boxed{\;i\hbar c\,\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\tilde H_\Psi\,\tilde\Xi_{\mathrm{sp}}\;}.
+\boxed{\;i\hbar c\,\frac{\partial\tilde\Xi}{\partial r'_t}=\tilde H_\Psi\,\tilde\Xi\;}.
 $$
 
 Multiply on the left by $-i$ and divide by the real central scalar $\hbar c$, which keeps every element in its sector,
 
 $$
-\boxed{\;\frac{\partial\tilde\Xi_{\mathrm{sp}}}{\partial r'_t}=\frac{1}{\hbar c}\,\tilde H_\Phi\,\tilde\Xi_{\mathrm{sp}},
+\boxed{\;\frac{\partial\tilde\Xi}{\partial r'_t}=\frac{1}{\hbar c}\,\tilde H_\Phi\,\tilde\Xi,
 \qquad\qquad
 \tilde H_\Phi=-i\,\tilde H_\Psi\;},
 $$
@@ -681,7 +681,7 @@ $$
 with $h'_t:=-h_t$, and with $\vec h_\Phi=h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ equal to $\vec h'_\Psi=h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z$ component
 by component. The switch moves the $i$ from the three space slots onto the time slot and renames nothing: the four numbers are the same four, and the
 primes stay where the informational reading puts them. Where the observable stands alone in the other articles the same space part is written
-$\vec h_\Psi$ with the primed components; here the prime is carried by the symbol, so that the two readings of one row can be told apart. In these letters the two writings of the equation are $\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Phi\tilde\Xi_{\mathrm{sp}}$ and $i\hbar c\,\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_\Psi\tilde\Xi_{\mathrm{sp}}$, the second being the first multiplied by $-i$. The Schrödinger article writes the same pair: $\tilde H_\Psi$ is the same element in both, and the generator is $\tilde H_\Phi/\hbar c$ with $\tilde H_\Phi=-i\tilde H_\Psi$, the mirror of the observable over one real scale. The pair is not the split: $\tilde H_\Phi$ is not the material part of $\tilde H_\Psi$ but the image of the whole of it, and the two share all four numbers, where $\tilde X_\Phi$ and $\tilde H_\Psi$ are two different objects: the material position and the observable. Their sum is one element of $\mathbb{M}$, $\tilde H_\Phi+\tilde H_\Psi=(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$, the mirror biquaternion of the pair.
+$\vec h_\Psi$ with the primed components; here the prime is carried by the symbol, so that the two readings of one row can be told apart. In these letters the two writings of the equation are $\hbar c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Phi\tilde\Xi$ and $i\hbar c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$, the second being the first multiplied by $-i$. The Schrödinger article writes the same pair: $\tilde H_\Psi$ is the same element in both, and the generator is $\tilde H_\Phi/\hbar c$ with $\tilde H_\Phi=-i\tilde H_\Psi$, the mirror of the observable over one real scale. The pair is not the split: $\tilde H_\Phi$ is not the material part of $\tilde H_\Psi$ but the image of the whole of it, and the two share all four numbers, where $\tilde X_\Phi$ and $\tilde H_\Psi$ are two different objects: the material position and the observable. Their sum is one element of $\mathbb{M}$, $\tilde H_\Phi+\tilde H_\Psi=(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$, the mirror biquaternion of the pair.
 
 The two readings of the one equation are exact mirror statements. The observable is Hermitian and its spectrum is real, and its eigenvalues are frequencies. The generator is anti-Hermitian and its spectrum is imaginary, and its eigenvalues are rates,
 

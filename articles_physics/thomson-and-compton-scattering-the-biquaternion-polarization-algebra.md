@@ -4,7 +4,7 @@
 
 Photon–electron scattering is the simplest process in which light, charge, and spin meet, and it is the process in which the polarization of the photon is an observable rather than a label. In its classical limit it is **Thomson scattering**: a free charge driven by a plane wave radiates at the same frequency, and the cross-section depends on the incident and outgoing polarization through the single geometric factor $|\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}|^2$. In its quantum form it is **Compton scattering**: a photon of four-momentum $\tilde P_{\Phi,\mathrm{ph}}$ scatters off an electron of four-momentum $\tilde P_{\Phi,e}$ into $\tilde P_{\Phi,\mathrm{ph},\mathrm{out}}$ and $\tilde P_{\Phi,\mathrm{out},e}$, the frequency changes by the Compton shift, and the cross-section is the Klein–Nishina formula. The two are one process in two limits. The Thomson limit is $x =\frac{\omega}{0\,c\,k_m\,\to}$, the regime in which the recoil is negligible and the electron stays effectively at rest, so it is the limit in which the electron is **heavy**; it is not the massless limit, which is the opposite regime and belongs to the conformal article. This article develops the **polarization algebra** of the process in biquaternion form — the encoding of the photon's polarization states as elements of the algebra, the coherence biquaternion that carries the Stokes parameters, and the helicity operator — and uses it to organise the Thomson cross-section, its polarization transfer, and the Klein–Nishina generalisation.
 
-Four results are established. First, the **polarization states are native to the material sector**. The transverse polarizations of a plane wave are the two real directions of the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction $\vec u_\eta$, and the two circular polarizations are the complex combinations that diagonalise left multiplication by $\vec u_\eta$, with eigenvalues $\mp i$; this is the companion photon article's characterisation, restated here because every formula below uses it. Second, the **coherence biquaternion** $\tilde{Ϛ}_{\Psi}$ is the state element of $\mathbb{B}_{\Psi}$ whose direction is the normalised Stokes vector and whose scale is the intensity $S_0$, so it carries the Stokes parameters; its biquaternion norm $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \frac14(S_0^2 - |\vec S|^2)$ measures the degree of polarization: the fully polarized states lie on the biquaternion-norm cone of $\mathbb{B}_{\Psi}$, whose section at $S_0=1$ is the Poincaré sphere, and the interior is the partially polarized ball. Third, the **Thomson cross-section is a pairing of two material-sector vectors**. Its polarization dependence is $|\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}|^2 = |\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon)|^2$, and the sum over the outgoing polarizations is the algebra's transverse projector; the magnitude $r_e^2$ is not supplied by the algebra. The unpolarized Thomson cross-section integrates to $8\pi r_e^2/3$, which is $0.66524587$ barn with the CODATA classical electron radius; the polarization sum over the two physical states was verified to reproduce the transverse projector $\delta_{ij}-\vec u_\Phi_i\vec u_\Phi_j$; the Compton shift was verified to put the recoil electron on its mass shell; and the Klein–Nishina differential cross-section was integrated numerically, agreed with the standard analytic total to a relative error below $10^{-9}$, and reduced to the Thomson value as $x\to0$. Fourth, the **electron-spin sums are one action, not a matrix**. The completeness relation sends a biquaternion $\tilde{Ξ}_{\mathrm{sp}}$ to $ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$, and resolving the spin replaces that action by half of itself applied to the two parts that the target's spin four-vector $s$ separates. The two halves were verified to be projections of rank one, orthogonal to each other, and summing to the unresolved action; the spin asymmetry of the quantum cross-section is the part that changes sign with $s$, the same axial direction through which the photon's circular polarization enters.
+Four results are established. First, the **polarization states are native to the material sector**. The transverse polarizations of a plane wave are the two real directions of the vector part of $\mathbb{B}_{\Phi}$ orthogonal to the propagation direction $\vec u_\eta$, and the two circular polarizations are the complex combinations that diagonalise left multiplication by $\vec u_\eta$, with eigenvalues $\mp i$; this is the companion photon article's characterisation, restated here because every formula below uses it. Second, the **coherence biquaternion** $\tilde{Ϛ}_{\Psi}$ is the state element of $\mathbb{B}_{\Psi}$ whose direction is the normalised Stokes vector and whose scale is the intensity $S_0$, so it carries the Stokes parameters; its biquaternion norm $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \frac14(S_0^2 - |\vec S|^2)$ measures the degree of polarization: the fully polarized states lie on the biquaternion-norm cone of $\mathbb{B}_{\Psi}$, whose section at $S_0=1$ is the Poincaré sphere, and the interior is the partially polarized ball. Third, the **Thomson cross-section is a pairing of two material-sector vectors**. Its polarization dependence is $|\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}|^2 = |\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon)|^2$, and the sum over the outgoing polarizations is the algebra's transverse projector; the magnitude $r_e^2$ is not supplied by the algebra. The unpolarized Thomson cross-section integrates to $8\pi r_e^2/3$, which is $0.66524587$ barn with the CODATA classical electron radius; the polarization sum over the two physical states was verified to reproduce the transverse projector $\delta_{ij}-\vec u_\Phi_i\vec u_\Phi_j$; the Compton shift was verified to put the recoil electron on its mass shell; and the Klein–Nishina differential cross-section was integrated numerically, agreed with the standard analytic total to a relative error below $10^{-9}$, and reduced to the Thomson value as $x\to0$. Fourth, the **electron-spin sums are one action, not a matrix**. The completeness relation sends a biquaternion $\tilde{Ξ}$ to $ip_0\tilde{Ξ}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}\vec e_y+k_m\tilde{Ξ}$, and resolving the spin replaces that action by half of itself applied to the two parts that the target's spin four-vector $s$ separates. The two halves were verified to be projections of rank one, orthogonal to each other, and summing to the unresolved action; the spin asymmetry of the quantum cross-section is the part that changes sign with $s$, the same axial direction through which the photon's circular polarization enters.
 
 The scope is relativistic and quantum, and it is the worked application that closes the subcategory. The electron is treated as a Dirac particle whose free equation belongs to the spin-1/2 companions, and the photon as the massless Maxwell field of the spin-1 companions; what this article supplies is the algebra of the **polarizations** and the way the cross-sections are built from it. The classical relativistic particle and the Lorentz group belong to the non-quantum theory. The only approximation taken from outside is the Thomson limit itself, in which the recoil is neglected and the electron's motion in the wave is non-relativistic.
 
@@ -90,9 +90,9 @@ so the one number the norm carries is the degree of polarization, read against t
 
 ### The polarization ellipse and the invariants
 
-The Stokes parameters are not an arbitrary labelling: they are the coefficients of the beam's polarization ellipse and of its handedness, and the algebra's two invariants organise them. The ellipse's orientation $\tilde{Ξ}_{\mathrm{sp},\mathrm p}$ and ellipticity $\xi_{\mathrm p}$ are
+The Stokes parameters are not an arbitrary labelling: they are the coefficients of the beam's polarization ellipse and of its handedness, and the algebra's two invariants organise them. The ellipse's orientation $\tilde{Ξ}_{\mathrm p}$ and ellipticity $\xi_{\mathrm p}$ are
 $$
-\tan 2\tilde{Ξ}_{\mathrm{sp},\mathrm p} = \frac{S_2}{S_1} ,
+\tan 2\tilde{Ξ}_{\mathrm p} = \frac{S_2}{S_1} ,
 \qquad
 \sin 2\xi_{\mathrm p} = \frac{S_3}{\sqrt{S_1^2+S_2^2+S_3^2}} ,
 $$
@@ -320,21 +320,21 @@ the $i$ being what puts the vector part in the imaginary-vector direction that m
 
 Averaging over the electron spin replaces the spin biquaternion by its trace part, $\tilde{Ϛ}_{\Psi,e}\to\tfrac12 e_t$ for the unpolarized ensemble, so the spin-dependent terms of the amplitude integrate to zero. The corresponding statement on the state side is the completeness relation of the plane waves, and written out it is one action on a biquaternion.
 
-Write $D(p)$ for the action that sends a biquaternion $\tilde{Ξ}_{\mathrm{sp}}$ to
+Write $D(p)$ for the action that sends a biquaternion $\tilde{Ξ}$ to
 $$
-\tilde{Ξ}_{\mathrm{sp}}\longmapsto i p_{0}\,\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta i p_{\eta}\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\,\tilde{Ξ}_{\mathrm{sp}} ,
+\tilde{Ξ}\longmapsto i p_{0}\,\tilde{Ξ}\vec e_x-\sum_\eta i p_{\eta}\,\vec e_\eta\tilde{Ξ}\vec e_y+k_m\,\tilde{Ξ} ,
 $$
 with $p_0 = E/c$ and $k$ running over $x,y,z$, and read it as three terms. The first carries the energy: it multiplies the state on its right side by $\vec e_x$, with coefficient $ip_0$. The second carries the momentum: three components, each multiplying on the left by $\vec e_\eta$ and on the right by $\vec e_y$, with coefficient $-ip_\eta$. The third carries the mass, and no unit stands between its coefficient and the state. The completeness relation is the statement that this one action is the spin sum:
 $$
-\sum_{r=1}^{2}\tilde w^{(r)}(\vec p)\,\bigl\langle \tilde w^{(r)}(\vec p),\tilde{Ξ}_{\mathrm{sp}}\bigr\rangle_{\mathrm D}=D(p)\tilde{Ξ}_{\mathrm{sp}} .
+\sum_{r=1}^{2}\tilde w^{(r)}(\vec p)\,\bigl\langle \tilde w^{(r)}(\vec p),\tilde{Ξ}\bigr\rangle_{\mathrm D}=D(p)\tilde{Ξ} .
 $$
-The left side is a sum of two pairings, each multiplied by the solution it pairs, and the two sides agree for every $\tilde{Ξ}_{\mathrm{sp}}$; the equality is therefore a statement about one action on the algebra, and it can be checked term by term.
+The left side is a sum of two pairings, each multiplied by the solution it pairs, and the two sides agree for every $\tilde{Ξ}$; the equality is therefore a statement about one action on the algebra, and it can be checked term by term.
 
-Here $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ is the covariant normalisation, and $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ is the Dirac pairing of the companion Solutions article. This is the **momentum-space** completeness relation: it sends every state into the two-dimensional space of the positive-frequency solutions of the one-sided pair, on which $D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\tilde{Ξ}_{\mathrm{sp}}$, and applying it twice returns $2m\,c$ times itself,
+Here $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ is the covariant normalisation, and $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ is the Dirac pairing of the companion Solutions article. This is the **momentum-space** completeness relation: it sends every state into the two-dimensional space of the positive-frequency solutions of the one-sided pair, on which $D(p)\tilde{Ξ} = 2m\,c\tilde{Ξ}$, and applying it twice returns $2m\,c$ times itself,
 $$
-D(p)\bigl(D(p)\tilde{Ξ}_{\mathrm{sp}}\bigr)=2m\,c\,D(p)\tilde{Ξ}_{\mathrm{sp}} \qquad\text{on shell}.
+D(p)\bigl(D(p)\tilde{Ξ}\bigr)=2m\,c\,D(p)\tilde{Ξ} \qquad\text{on shell}.
 $$
-It is not the two-sided dictionary equation of *The Dirac Equation in Biquaternionic Form*; the two are separated in the Gamma Formulation below. Divided by $2m\,c$ the action is a projection of rank two, and its complement $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}-\frac{1}{2\,m}D(p)\tilde{Ξ}_{\mathrm{sp}}$ is the negative-frequency projection; the two sum to the identity action. The averaged spin is therefore one projection, and its three terms are the whole of it.
+It is not the two-sided dictionary equation of *The Dirac Equation in Biquaternionic Form*; the two are separated in the Gamma Formulation below. Divided by $2m\,c$ the action is a projection of rank two, and its complement $\tilde{Ξ}\mapsto\tilde{Ξ}-\frac{1}{2\,m}D(p)\tilde{Ξ}$ is the negative-frequency projection; the two sum to the identity action. The averaged spin is therefore one projection, and its three terms are the whole of it.
 
 ### The resolved spin
 
@@ -342,19 +342,19 @@ Resolving the spin replaces that one action by two, one for each sign of the tar
 
 Two actions carry the split. The first is the spin action, the shell's pattern with $s$ in place of $p$ and with the mass term dropped,
 $$
-\Sigma_s:\qquad \tilde{Ξ}_{\mathrm{sp}}\longmapsto i s_{0}\,\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta i s_{\eta}\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y ,
+\Sigma_s:\qquad \tilde{Ξ}\longmapsto i s_{0}\,\tilde{Ξ}\vec e_x-\sum_\eta i s_{\eta}\,\vec e_\eta\tilde{Ξ}\vec e_y ,
 $$
 and its square is $s\cdot s$ times the identity, which is $-1$: the cross terms cancel, because the coefficients are symmetric where the two units anticommute, and what remains is $s\cdot s$. The second is the bracket
 $$
-B_s:\qquad \tilde{Ξ}_{\mathrm{sp}}\longmapsto \tilde{Ξ}_{\mathrm{sp}}+s_{0}\,\tilde{Ξ}_{\mathrm{sp}}\vec e_y+\sum_\eta s_{\eta}\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x ,
+B_s:\qquad \tilde{Ξ}\longmapsto \tilde{Ξ}+s_{0}\,\tilde{Ξ}\vec e_y+\sum_\eta s_{\eta}\,\vec e_\eta\tilde{Ξ}\vec e_x ,
 $$
 half of which is a projection, because applying the bracket twice and halving twice returns the same bracket; and the brackets of $s$ and of $-s$ add to twice the identity, so the two halves are complementary projections. The resolved sums are the two compositions
 $$
-D_s(p):\quad \tilde{Ξ}_{\mathrm{sp}}\longmapsto \tfrac12\,D(p)\bigl(B_s\tilde{Ξ}_{\mathrm{sp}}\bigr),
+D_s(p):\quad \tilde{Ξ}\longmapsto \tfrac12\,D(p)\bigl(B_s\tilde{Ξ}\bigr),
 \qquad
-D_{-s}(p):\quad \tilde{Ξ}_{\mathrm{sp}}\longmapsto \tfrac12\,D(p)\bigl(B_{-s}\tilde{Ξ}_{\mathrm{sp}}\bigr),
+D_{-s}(p):\quad \tilde{Ξ}\longmapsto \tfrac12\,D(p)\bigl(B_{-s}\tilde{Ξ}\bigr),
 $$
-and they add term by term to $D(p)\tilde{Ξ}_{\mathrm{sp}}$, because $B_s\tilde{Ξ}_{\mathrm{sp}}+B_{-s}\tilde{Ξ}_{\mathrm{sp}}=2\tilde{Ξ}_{\mathrm{sp}}$. The spin enters the bracket in all four slots, so the split names the target's spin direction: the axial direction it uses is $s$ itself, no unit of the coefficient basis is singled out as its axis, and writing $-s$ for $s$ exchanges the two sums and changes nothing else.
+and they add term by term to $D(p)\tilde{Ξ}$, because $B_s\tilde{Ξ}+B_{-s}\tilde{Ξ}=2\tilde{Ξ}$. The spin enters the bracket in all four slots, so the split names the target's spin direction: the axial direction it uses is $s$ itself, no unit of the coefficient basis is singled out as its axis, and writing $-s$ for $s$ exchanges the two sums and changes nothing else.
 
 The identity was verified at $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$, with $s$ a unit spacelike four-vector orthogonal to $p$. Each of the two, divided by $2m\,c$, is a projection of rank one and trace one; the two are mutually orthogonal; and they sum to $D(p)$ to below $10^{-15}$. Spin resolution is therefore a decomposition of the shell into two orthogonal projections, and the unpolarized average is the trace part of the spin biquaternion, exactly as before.
 
@@ -399,7 +399,7 @@ What the framework does **not** supply is the dynamics. The Thomson cross-sectio
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}_{\mathrm{sp}}=a\tilde{Ξ}_{\mathrm{sp}}$ and $R_b\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp}} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one basis operator,
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one basis operator,
 $$
 \gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x},\qquad
 \gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y},\qquad
@@ -496,14 +496,14 @@ verified for the four directions. The covariant forms are recovered by raising o
 
 **The two Dirac equations.** Two equations carry the name in this series, and the frame is what separates them. The first is the corpus's **one-sided** chiral pair,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L} ,\qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L} ,\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R} ,
 $$
 in which the gradient acts by left multiplication only, the field is a section of $\mathcal{S}_{\mathrm{rep}} = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol basis operator of the spin section,
 $$
 D(p) = p_{0}\,\gamma_0-\sum_\eta p_{\eta}\,\gamma_\eta+m\,L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t} ,
 \qquad
-D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
+D(p)\tilde{Ξ} = 2m\,c\,\tilde{Ξ} \ \ \text{on the positive-frequency solutions},
 $$
 
 The same expressions, in the axis-free display:
@@ -511,7 +511,7 @@ The same expressions, in the axis-free display:
 $$
 D(p) = p_{0}\,\gamma_0-\sum_\eta p_{\eta}\,\gamma_\eta+m\,L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t} ,
 \qquad
-D(p)\tilde{Ξ}_{\mathrm{sp}} = 2m\,c\,\tilde{Ξ}_{\mathrm{sp}} \ \ \text{on the positive-frequency solutions},
+D(p)\tilde{Ξ} = 2m\,c\,\tilde{Ξ} \ \ \text{on the positive-frequency solutions},
 $$
 
 and the basis operator obeys $D(p)^2 = 2m\,c\,D(p)$ on shell, so $D(p)/2m\,c$ is the projector of rank two that the previous section uses. The basis operator that carries its chirality is $\gamma_5=-iR_{\mathrm{axf},\vec e_z}$, a pure right multiplier, and its projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\xi)$ are its central idempotents.
@@ -526,7 +526,7 @@ where $D_3=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ is the three-dimensio
 
 | Aspect | One-sided equation | Two-sided equation |
 |---|---|---|
-| Form | $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R}$ | $\mathcal{N}F=0$, that is $-(\tilde\nabla_\Phi)^{\natural}F-k_mi\,\overline{F}\,\vec e_z=0$ |
+| Form | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | $\mathcal{N}F=0$, that is $-(\tilde\nabla_\Phi)^{\natural}F-k_mi\,\overline{F}\,\vec e_z=0$ |
 | Multiplication | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-k_mi\,\overline{F}\,\vec e_z$ |
 | Chirality | the side: the right slot for a right multiplier, both slots for a central scalar | the basis operator that realises the split is $\gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$; in the axis-free display $\gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}=i\omega$, with $\omega=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$ |
@@ -542,11 +542,11 @@ The polarization algebra of photon–electron scattering in the biquaternion fra
 
 Thomson scattering has the differential cross-section $d\sigma_T/d\Omega = r_e^2|\varepsilon_{\mathrm{fop},\mathrm{out}}\cdot\varepsilon_{\mathrm{fop}}|^2 = r_e^2|\mathrm{Sc}(\vec\varepsilon_{\mathrm{out}}^{*}\vec\varepsilon)|^2$, whose outgoing-polarization sum is $r_e^2\sin^2Ζ$ (verified to $10^{-15}$) and whose unpolarized average is $r_e^2(1+\cos^2\theta)/2$, integrating to $\sigma_T = 8\pi r_e^2/3$, which is $0.66524587$ barn with the CODATA classical electron radius. The Mueller matrix transfers linear polarization with degree $P(\theta) = \sin^2\theta/(1+\cos^2\theta)$, equal to one at $90^\circ$ (verified at six angles), carries circular polarization with degree $P_c(\theta) = 2\cos\theta/(1+\cos^2\theta)$, which vanishes at $90^\circ$ and reverses sign beyond it, and does not convert circular to linear polarization.
 
-Compton scattering shifts the frequency to $\omega_{\mathrm{out}} = \omega/[1+(\frac{\hbar\,\omega}{m\,c^{2}})(1-\cos\theta)]$, verified to put the recoil electron on its mass shell to $3\times10^{-14}$ MeV$^2$; the Klein–Nishina differential cross-section integrates to the standard analytic total to a relative error below $10^{-9}$ at five energies and reduces to the Thomson value as $x\to0$ ($8.3760\,r_e^2$ at $x=10^{-4}$ against $8.3776\,r_e^2$). The polarized cross-section carries an azimuthal $\cos2\theta_{\mathrm{azm}}$ modulation and an electron-spin asymmetry $\propto\vec s\cdot(\vec u_\eta\times\vec u_{\mathrm{out},\eta})$, standard results cited rather than re-derived. In the framework the electron's spin sum is one action on a biquaternion, $D(p)$ sending $\tilde{Ξ}_{\mathrm{sp}}$ to $ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$, and its spin-resolved form is the pair of orthogonal projections
+Compton scattering shifts the frequency to $\omega_{\mathrm{out}} = \omega/[1+(\frac{\hbar\,\omega}{m\,c^{2}})(1-\cos\theta)]$, verified to put the recoil electron on its mass shell to $3\times10^{-14}$ MeV$^2$; the Klein–Nishina differential cross-section integrates to the standard analytic total to a relative error below $10^{-9}$ at five energies and reduces to the Thomson value as $x\to0$ ($8.3760\,r_e^2$ at $x=10^{-4}$ against $8.3776\,r_e^2$). The polarized cross-section carries an azimuthal $\cos2\theta_{\mathrm{azm}}$ modulation and an electron-spin asymmetry $\propto\vec s\cdot(\vec u_\eta\times\vec u_{\mathrm{out},\eta})$, standard results cited rather than re-derived. In the framework the electron's spin sum is one action on a biquaternion, $D(p)$ sending $\tilde{Ξ}$ to $ip_0\tilde{Ξ}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}\vec e_y+k_m\tilde{Ξ}$, and its spin-resolved form is the pair of orthogonal projections
 $$
-D_{\pm s}(p):\quad \tilde{Ξ}_{\mathrm{sp}}\longmapsto \tfrac12\,D(p)\bigl(B_{\pm s}\tilde{Ξ}_{\mathrm{sp}}\bigr),
+D_{\pm s}(p):\quad \tilde{Ξ}\longmapsto \tfrac12\,D(p)\bigl(B_{\pm s}\tilde{Ξ}\bigr),
 \qquad
-B_{\pm s}:\quad \tilde{Ξ}_{\mathrm{sp}}\longmapsto \tilde{Ξ}_{\mathrm{sp}}\pm s_{0}\,\tilde{Ξ}_{\mathrm{sp}}\vec e_y\pm\sum_\eta s_{\eta}\,\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x ,
+B_{\pm s}:\quad \tilde{Ξ}\longmapsto \tilde{Ξ}\pm s_{0}\,\tilde{Ξ}\vec e_y\pm\sum_\eta s_{\eta}\,\vec e_\eta\tilde{Ξ}\vec e_x ,
 $$
 which sum back to $D(p)$, each being a projection of rank one; the asymmetry is the part of the cross-section that changes sign with $s$, the same axial direction that carries the photon's circular polarization. The electron's spin biquaternion is a Hermitian element with the same cone structure as the beam's coherence biquaternion. The Legacy Pauli Gamma Formulation names the frame in which all of this is written, and separates the two Dirac equations of the series: the one-sided chiral pair that the scattering uses, and the two-sided equation that belongs to the dictionary.
 
@@ -577,12 +577,12 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $A(\omega,\theta)+B(\omega,\theta)\cos2\theta_{\mathrm{azm}}$ | Azimuthal modulation for a linearly polarized incident beam; $\lvert B/A\rvert$ is the analysing power |
 | $\vec s\cdot(\vec u_\Phi\times\vec u_{\mathrm{out},\eta})$ | Electron-spin asymmetry (magnetic Compton) |
 | $\tilde{Ϛ}_{\Psi,e} = \frac12(e_t+i\vec s)\in\mathbb{B}_{\Psi}$ | Electron spin biquaternion; $\langle\tilde{Ϛ}_{\Psi,e}\rangle_{\natural} = \frac14(1-\lvert\vec s\rvert^2)$ |
-| $D(p)$ | The shell action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto ip_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y+k_m\tilde{Ξ}_{\mathrm{sp}}$; the spin sum $\sum_r\tilde w^{(r)}\langle\tilde w^{(r)},\cdot\rangle_{\mathrm D}$, a projection of rank two when divided by $2m\,c$ |
-| $\Sigma_s$ | Spin action, $\tilde{Ξ}_{\mathrm{sp}}\mapsto is_0\tilde{Ξ}_{\mathrm{sp}}\vec e_x-\sum_\eta is_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$; the shell's pattern with $s$ in place of $p$ and no mass term |
-| $B_s$ | The bracket of the split, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}}+s_0\tilde{Ξ}_{\mathrm{sp}}\vec e_y+\sum_\eta s_\eta\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_x$; half of it is a projection, and $B_s+B_{-s}$ is twice the identity action |
-| $D_s(p)$ | The resolved shell, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tfrac12 D(p)(B_s\tilde{Ξ}_{\mathrm{sp}})$; $\frac{1}{2\,m}D_s$ is a projection of rank one, and $D_s+D_{-s}=D(p)$ |
+| $D(p)$ | The shell action, $\tilde{Ξ}\mapsto ip_0\tilde{Ξ}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}\vec e_y+k_m\tilde{Ξ}$; the spin sum $\sum_r\tilde w^{(r)}\langle\tilde w^{(r)},\cdot\rangle_{\mathrm D}$, a projection of rank two when divided by $2m\,c$ |
+| $\Sigma_s$ | Spin action, $\tilde{Ξ}\mapsto is_0\tilde{Ξ}\vec e_x-\sum_\eta is_\eta\vec e_\eta\tilde{Ξ}\vec e_y$; the shell's pattern with $s$ in place of $p$ and no mass term |
+| $B_s$ | The bracket of the split, $\tilde{Ξ}\mapsto\tilde{Ξ}+s_0\tilde{Ξ}\vec e_y+\sum_\eta s_\eta\vec e_\eta\tilde{Ξ}\vec e_x$; half of it is a projection, and $B_s+B_{-s}$ is twice the identity action |
+| $D_s(p)$ | The resolved shell, $\tilde{Ξ}\mapsto\tfrac12 D(p)(B_s\tilde{Ξ})$; $\frac{1}{2\,m}D_s$ is a projection of rank one, and $D_s+D_{-s}=D(p)$ |
 | $s$, $s\cdot p=0$, $s^2=-1$ | Spin four-vector of the target; rest frame $(0,\vec s)$, with $\vec s$ the Bloch vector of the state |
-| $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ |
+| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ |
 
 ## Further Reading
 

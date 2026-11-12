@@ -174,7 +174,7 @@ $$
 **One substitution turns the quantum equation into the classical relation.** In the corpus's form the equation is
 
 $$
-i\,\hbar\,c\partial_{r'_t}\tilde\Xi_{\mathrm{sp}}=\tilde H_{\Psi}\tilde\Xi_{\mathrm{sp}} ,
+i\,\hbar\,c\partial_{r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi ,
 $$
 
 which with $r'_t=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,
@@ -261,7 +261,7 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 
 ## When the Wave Dies
 
-**If the gradient description is switched off, the element description is left intact, and that is a derivation of particle conservation from the other side.** *The Non-Quantum Limit of the Biquaternion Model* writes the state as an amplitude and a phase, $\tilde\Xi_{\mathrm{sp}}=A\exp\left(k_{m}iS/(m\,c)\right)\xi$, and substitutes. Two real equations follow and the article states their status plainly: neither is an approximation. The first is the Hamilton–Jacobi equation once its quantum term is dropped. The second is the continuity equation, and the article says of it that it was never approximated.
+**If the gradient description is switched off, the element description is left intact, and that is a derivation of particle conservation from the other side.** *The Non-Quantum Limit of the Biquaternion Model* writes the state as an amplitude and a phase, $\tilde\Xi=A\exp\left(k_{m}iS/(m\,c)\right)\xi$, and substitutes. Two real equations follow and the article states their status plainly: neither is an approximation. The first is the Hamilton–Jacobi equation once its quantum term is dropped. The second is the continuity equation, and the article says of it that it was never approximated.
 
 **That asymmetry is the point of this article.** The wave equation degrades: dropping the quantum potential $Q$ turns a second-order equation into a first-order one, and the parameter that measures the degradation is $\epsilon=1/(k_{\Phi}L)$. The conservation law does not degrade at all. It was not an approximation of the wave description; it was the element description, and the element description does not depend on the phase.
 

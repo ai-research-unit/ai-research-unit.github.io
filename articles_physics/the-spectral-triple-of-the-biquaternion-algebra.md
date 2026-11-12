@@ -6,17 +6,17 @@ A spectral triple is a triple $(\mathcal{A},\mathcal{H},D)$ consisting of an alg
 
 This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a triple, and what the framework's structures contribute to it. The scalar imaginary of the algebra satisfies $i^2=-1$ throughout; it is the central unit of the complexification, not a quaternion unit. The findings are the following.
 
-1. **The algebra, the Hilbert space and the Dirac operator are already present.** The framework's algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The field is an element $\tilde{Ξ}_{\mathrm{sp}}$ of the algebra, and its chirality is a subscript with two values, $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$; only the zero element has both parts zero, so the notation costs nothing. The Hilbert space is the algebra completed in the Hermitian form $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_*=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ})$, and in the field-theoretic setting it is the square-integrable fields on spacetime. The operator is the framework's Dirac operator,
+1. **The algebra, the Hilbert space and the Dirac operator are already present.** The framework's algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The field is an element $\tilde{Ξ}$ of the algebra, and its chirality is a subscript with two values, $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$; only the zero element has both parts zero, so the notation costs nothing. The Hilbert space is the algebra completed in the Hermitian form $\langle\tilde{Ξ},\tilde{Ξ}\rangle_*=\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$, and in the field-theoretic setting it is the square-integrable fields on spacetime. The operator is the framework's Dirac operator,
     $$
     \mathcal{D}=i\tilde\nabla_\Phi+D_F,
     $$
-    with $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ the biquaternion gradient, acting on the left, and $D_F$ the chirality-odd mass, which couples the two parts of the field through the conjugation. Self-adjointness for the Hermitian form is not automatic, $(i\tilde\nabla_\Phi)^{\dagger}=i(\tilde\nabla_\Phi)^{\natural}$, and the candidate fails it: the coefficient $ie_t$ is anti-Hermitian, as the criterion requires, and the three $i\vec e_\eta$ are Hermitian, so the operator is self-adjoint in the time direction and skew in the spatial ones. It is self-adjoint for the indefinite Dirac form instead. The algebra acts through its real form $\mathbb{B}_{\mathbb{R}}$, by the left action $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}}$; the conjugate of a field is reached by the conjugation, and the conjugation is the only route to it. A candidate triple therefore exists: $(\mathbb{B}_{\mathbb{R}},L^2(\mathbb{B}),\mathcal{D})$, or its almost-commutative generalisation $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$. Three of the axioms fail: the boundedness of the commutators with the non-central elements under the left action, the first-order condition wherever one of the two multipliers is not fixed by the conjugation, and the oddness of the operator under a grading of its own carrier. Self-adjointness fails as well, and it fails for a reason of the same kind: the gradient's coefficients are the four units, and the units are elements of the algebra.
+    with $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ the biquaternion gradient, acting on the left, and $D_F$ the chirality-odd mass, which couples the two parts of the field through the conjugation. Self-adjointness for the Hermitian form is not automatic, $(i\tilde\nabla_\Phi)^{\dagger}=i(\tilde\nabla_\Phi)^{\natural}$, and the candidate fails it: the coefficient $ie_t$ is anti-Hermitian, as the criterion requires, and the three $i\vec e_\eta$ are Hermitian, so the operator is self-adjoint in the time direction and skew in the spatial ones. It is self-adjoint for the indefinite Dirac form instead. The algebra acts through its real form $\mathbb{B}_{\mathbb{R}}$, by the left action $\tilde{Ξ}\mapsto a\tilde{Ξ}$; the conjugate of a field is reached by the conjugation, and the conjugation is the only route to it. A candidate triple therefore exists: $(\mathbb{B}_{\mathbb{R}},L^2(\mathbb{B}),\mathcal{D})$, or its almost-commutative generalisation $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$. Three of the axioms fail: the boundedness of the commutators with the non-central elements under the left action, the first-order condition wherever one of the two multipliers is not fixed by the conjugation, and the oddness of the operator under a grading of its own carrier. Self-adjointness fails as well, and it fails for a reason of the same kind: the gradient's coefficients are the four units, and the units are elements of the algebra.
 
 2. **The framework's real-form involution $\flat$ is an antilinear involution, and this is the article's sharpest algebraic point.** The spectral triple's real structure $J$ is an antilinear operator whose sign $J^2=\pm1$, together with the two signs of its commutation with $D$ and with the chirality, gives the triple's **KO-dimension**. The framework's real-form involution is $\flat=-{}^{*}$, and it was verified explicitly that
     $$
     \flat^2 = +1
     $$
-    on the algebra. The Euclidean frame's candidate charge conjugation is the left action $C:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_z\tilde{Ξ}_{\mathrm{sp}}$; it is skew for the Hermitian form, squares to $-1$, and commutes with the chirality, so the associated antilinear operator $J_C=CK$ has $J_C^2=-1$ and $J_C\xi=-\xi J_C$. That pair is the quaternionic class of Connes' table, $n\equiv2$ with $(\epsilon,\epsilon'')=(-1,-1)$, and it is the class the Standard-Model finite geometry uses at $n\equiv6$; four-dimensional Euclidean geometry is the real class $n\equiv4$ with $(\epsilon,\epsilon',\epsilon'')=(+1,+1,+1)$. So $\flat$ supplies the sign of the square that four-dimensional geometry has, and what it cannot supply is the quaternionic sign the Standard-Model finite geometry needs: the minus is carried by an antilinear operator of square $-1$, which the algebra carries as the composition of $C$ with the conjugation, and a central phase cannot supply it, because $(\lambda\flat)^2=|\lambda|^2\flat^2=+1$. Two further signs are worth separating from this one: $\flat$ composed with the chirality gives neither $+\xi$ nor $-\xi$, so the sign $\epsilon''$ is not defined for it at all, while $C$ gives $\epsilon''=-1$ outright. Stating this precisely is the article's main contribution, and it is a genuine, checkable statement about the algebra rather than a re-description.
+    on the algebra. The Euclidean frame's candidate charge conjugation is the left action $C:\tilde{Ξ}\mapsto-\vec e_z\tilde{Ξ}$; it is skew for the Hermitian form, squares to $-1$, and commutes with the chirality, so the associated antilinear operator $J_C=CK$ has $J_C^2=-1$ and $J_C\xi=-\xi J_C$. That pair is the quaternionic class of Connes' table, $n\equiv2$ with $(\epsilon,\epsilon'')=(-1,-1)$, and it is the class the Standard-Model finite geometry uses at $n\equiv6$; four-dimensional Euclidean geometry is the real class $n\equiv4$ with $(\epsilon,\epsilon',\epsilon'')=(+1,+1,+1)$. So $\flat$ supplies the sign of the square that four-dimensional geometry has, and what it cannot supply is the quaternionic sign the Standard-Model finite geometry needs: the minus is carried by an antilinear operator of square $-1$, which the algebra carries as the composition of $C$ with the conjugation, and a central phase cannot supply it, because $(\lambda\flat)^2=|\lambda|^2\flat^2=+1$. Two further signs are worth separating from this one: $\flat$ composed with the chirality gives neither $+\xi$ nor $-\xi$, so the sign $\epsilon''$ is not defined for it at all, while $C$ gives $\epsilon''=-1$ outright. Stating this precisely is the article's main contribution, and it is a genuine, checkable statement about the algebra rather than a re-description.
 
 3. **The spectral dimension is four, and the framework's metric-as-output is the spectral triple's distance formula read backwards.** The triple's dimension is read from the eigenvalue growth of $D$: if the eigenvalues grow like $n^{1/d}$, the triple has dimension $d$. For the biquaternion Dirac operator on four-dimensional spacetime — that is, for the almost-commutative triple, the finite factor alone having spectral dimension zero — the eigenvalues grow like $n^{1/4}$ and the spectral dimension is four. The same Seeley–DeWitt data that control the heat-kernel coefficients of *The Functional Determinant in Biquaternionic Form* and *The Trace Anomaly in Biquaternionic Form* control this growth: the exponent $d$ of the small-$r'_t$ expansion is the spectral dimension, and the coefficient that expansion marks as divergent is $a_{d/2}$, which at $d=4$ is $a_2$. The framework's claim that the Minkowski signature is an *output* of the level-1 form read on the material sector is the same shape of statement as the spectral triple's claim that the distance is an output of $D$: in both cases the geometric data is extracted from the algebraic one.
 
@@ -50,25 +50,25 @@ whose signs give the **KO-dimension** of the triple, with $\xi$ the chirality op
 
 The candidate is assembled from objects the rest of the series already uses, and the assembly is checked before any axiom is asserted.
 
-**The three actions and what decides the grading.** An element $a$ acts on a field in three ways: on the left, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}}$; on the right, $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; and on both sides at once, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$. The left and right actions commute, $(a\tilde{Ξ}_{\mathrm{sp}})b=a(\tilde{Ξ}_{\mathrm{sp}} b)$. Below, $a\cdot$ denotes the left action and $\cdot b$ the right action, and $K$ denotes the coefficient conjugation. The sixteen maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$, one for each pair of units, are the elementary two-sided actions, and every product action this article writes is one of them or a sum.
+**The three actions and what decides the grading.** An element $a$ acts on a field in three ways: on the left, $\tilde{Ξ}\mapsto a\tilde{Ξ}$; on the right, $\tilde{Ξ}\mapsto\tilde{Ξ} b$; and on both sides at once, $\tilde{Ξ}\mapsto a\tilde{Ξ} b$. The left and right actions commute, $(a\tilde{Ξ})b=a(\tilde{Ξ} b)$. Below, $a\cdot$ denotes the left action and $\cdot b$ the right action, and $K$ denotes the coefficient conjugation. The sixteen maps $\tilde{Ξ}\mapsto e_\mu\tilde{Ξ} e_\nu$, one for each pair of units, are the elementary two-sided actions, and every product action this article writes is one of them or a sum.
 
-The grading then decides what a product can be. Because $\xi$ is a right action, every left action is even under it, and a two-sided action is even or odd according to its right factor alone: $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$ is odd exactly when $b$ anticommutes with $\vec e_z$, that is, exactly when $b$ lies in the span of $\vec e_x$ and $\vec e_y$. In words, $\cdot e_t$ and $\cdot\vec e_z$ keep each part of a field and $\cdot\vec e_x$, $\cdot\vec e_y$ exchange the two parts. The framework's mass is odd as well, and it is not a two-sided action: it is the conjugation composed with the mass scale, and its oddness is the conjugation's own, $\mathcal{Q}_{\mathrm{op}}\xi=-\xi\mathcal{Q}_{\mathrm{op}}$. That is the structural reason the mass sits apart from the gradient, and it is checked below on explicit elements.
+The grading then decides what a product can be. Because $\xi$ is a right action, every left action is even under it, and a two-sided action is even or odd according to its right factor alone: $\tilde{Ξ}\mapsto a\tilde{Ξ} b$ is odd exactly when $b$ anticommutes with $\vec e_z$, that is, exactly when $b$ lies in the span of $\vec e_x$ and $\vec e_y$. In words, $\cdot e_t$ and $\cdot\vec e_z$ keep each part of a field and $\cdot\vec e_x$, $\cdot\vec e_y$ exchange the two parts. The framework's mass is odd as well, and it is not a two-sided action: it is the conjugation composed with the mass scale, and its oddness is the conjugation's own, $\mathcal{Q}_{\mathrm{op}}\xi=-\xi\mathcal{Q}_{\mathrm{op}}$. That is the structural reason the mass sits apart from the gradient, and it is checked below on explicit elements.
 
 **The algebra and the field.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ as a complex algebra, and its real form is $\mathbb{B}_{\mathbb{R}}$. The field is an element of the algebra,
 $$
-\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R},
+\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R},
 $$
-the two terms being its two chirality parts: $\tilde{Ξ}_{\mathrm{sp},L}$ is the part of value $-1$ under the chirality and $\tilde{Ξ}_{\mathrm{sp},R}$ the part of value $+1$, in the letters of the Dirac literature. The subscript is the whole of the definition, and the letters are not names of two carriers. The algebra acts on the left, $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}}$, and the left action keeps the letter of the part it acts on; the conjugation exchanges the two letters.
+the two terms being its two chirality parts: $\tilde{Ξ}_{L}$ is the part of value $-1$ under the chirality and $\tilde{Ξ}_{R}$ the part of value $+1$, in the letters of the Dirac literature. The subscript is the whole of the definition, and the letters are not names of two carriers. The algebra acts on the left, $\tilde{Ξ}\mapsto a\tilde{Ξ}$, and the left action keeps the letter of the part it acts on; the conjugation exchanges the two letters.
 
 **The Hilbert space.** The inner product is the Hermitian one,
 $$
-\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_*
-=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\bigr),
+\langle\tilde{Ξ},\tilde{Ξ}\rangle_*
+=\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\bigr),
 $$
 which is positive definite,
 $$
-\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\rangle_*=\sum_{\mu}\lvert\tilde{Ξ}_{\mathrm{sp},\mu}\rvert^2>0
-\quad(\tilde{Ξ}_{\mathrm{sp}}\neq0).
+\langle\tilde{Ξ},\tilde{Ξ}\rangle_*=\sum_{\mu}\lvert\tilde{Ξ}_{\mu}\rvert^2>0
+\quad(\tilde{Ξ}\neq0).
 $$
 It is the Hermitian form of *Norm and Pairing Conventions*, not the plain bilinear form: the plain form is indefinite, and it cannot be the Hilbert-space inner product. The completion of $\mathbb{B}$ in this form is the candidate $\mathcal{H}$, four-complex-dimensional in the finite case.
 
@@ -78,7 +78,7 @@ $$
 \qquad
 \tilde\nabla=\sum_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
 $$
-with $D_F$ the mass of the next paragraph. The gradient is an element with derivative coefficients, and $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}$ means its left action on $\tilde{Ξ}_{\mathrm{sp}}$; no other action is meant anywhere below. With respect to the Hermitian form the gradient's adjoint reverses its units,
+with $D_F$ the mass of the next paragraph. The gradient is an element with derivative coefficients, and $\tilde\nabla_\Phi\tilde{Ξ}$ means its left action on $\tilde{Ξ}$; no other action is meant anywhere below. With respect to the Hermitian form the gradient's adjoint reverses its units,
 $$
 \tilde\nabla^{\dagger}=-(\tilde\nabla_\Phi)^{\natural},
 \qquad
@@ -88,19 +88,19 @@ so $i\tilde\nabla_\Phi$ is not self-adjoint for that form. The criterion is fixe
 
 **The Dirac equation in two forms.** The framework writes the Dirac equation in two forms, and the displays should be kept separate because they answer different questions. The defining form is the chiral pair,
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 with the gradient acting on the right-chirality part and its conjugate on the left-chirality part, and the mass coupling the two. The pair is two lines and no third object, and each line composed with the conjugate of the other is $\Box$ acting on that part; the massive equation is the pair itself, one line per part. The two-sided form, from the two-sided operator theory of *The Feynman Propagator in Biquaternionic Form*, is
 $$
-\mathcal{N}\tilde{Ξ}_{\mathrm{sp}}=\Bigl(-(\tilde\nabla_\Phi)^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}_{\mathrm{sp}}=0,
+\mathcal{N}\tilde{Ξ}=\Bigl(-(\tilde\nabla_\Phi)^{\natural}-k_mi\,\overline{\,\cdot}\,\vec e_z\Bigr)\tilde{Ξ}=0,
 $$
 with the mass acting on the right through conjugation. The three displays describe one physics: the first is the chirality form, the second the two lines written once each, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla_\Phi+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** The chirality is the right action by the element $-i\vec e_z$,
 $$
-\xi:\tilde{Ξ}_{\mathrm{sp}}\longmapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z=\tilde{Ξ}_{\mathrm{sp}}\,(-i\vec e_z),
+\xi:\tilde{Ξ}\longmapsto-i\tilde{Ξ}\vec e_z=\tilde{Ξ}\,(-i\vec e_z),
 $$
 the second form holding because $i$ is central. It is self-adjoint for the Hermitian form, its square is $e_t$, and its spectrum is $+1,+1,-1,-1$: two values, which are the two letters. Its central form is the sign of the double,
 $$
@@ -114,9 +114,9 @@ and the two forms are one operator read in two ways — the right action on the 
 
 **The mass.** The mass couples the two letters, and the framework writes it through the conjugation:
 $$
-D_F:\tilde{Ξ}_{\mathrm{sp}}\longmapsto m\,\overline{\tilde{Ξ}_{\mathrm{sp}}},
+D_F:\tilde{Ξ}\longmapsto m\,\overline{\tilde{Ξ}},
 $$
-equivalently $\xi D_F:\tilde{Ξ}_{\mathrm{sp}}\mapsto-k_mi\,\overline{\tilde{Ξ}_{\mathrm{sp}}}\,\vec e_z$, the chirality being a fixed right action. This is the framework's own mass, the one the two-sided Dirac equation carries. It is antilinear, it is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$, and its square is the scalar
+equivalently $\xi D_F:\tilde{Ξ}\mapsto-k_mi\,\overline{\tilde{Ξ}}\,\vec e_z$, the chirality being a fixed right action. This is the framework's own mass, the one the two-sided Dirac equation carries. It is antilinear, it is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$, and its square is the scalar
 $$
 D_F^2=\lvert m\rvert^2e_t,
 \qquad
@@ -124,19 +124,19 @@ D_F^2=\lvert m\rvert^2e_t,
 $$
 Because it is antilinear it has no eigenvalues, and the spectrum statement of a finite Dirac operator has to be replaced by the square: the mass scale is $\lvert m\rvert$, and both parts of the field carry it. What the mass does to the Hermitian norm is fixed in the same way,
 $$
-\bigl\langle D_F\tilde{Ξ}_{\mathrm{sp}},D_F\tilde{Ξ}_{\mathrm{sp}}\bigr\rangle_*=\lvert m\rvert^2\bigl\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}_{\mathrm{sp}}\bigr\rangle_* .
+\bigl\langle D_F\tilde{Ξ},D_F\tilde{Ξ}\bigr\rangle_*=\lvert m\rvert^2\bigl\langle\tilde{Ξ},\tilde{Ξ}\bigr\rangle_* .
 $$
 
 **The commutator with the algebra.** For $a\in\mathbb{B}_{\mathbb{R}}$ the mass term of the commutator is explicit and needs no array:
 $$
-[D_F,a\cdot]\tilde{Ξ}_{\mathrm{sp}}
-=\bigl(m\bar a-am\bigr)\bar{\tilde{Ξ}}_{\mathrm{sp}},
+[D_F,a\cdot]\tilde{Ξ}
+=\bigl(m\bar a-am\bigr)\bar{\tilde{Ξ}},
 $$
 where $\bar a$ is the coefficient conjugate. The asymmetry between $a$ and $\bar a$ is the whole content: the left action carries $a$ and the mass carries the conjugate, and it is because the two differ that the mass fails to commute with the algebra. The commutator vanishes exactly when $m\bar a=am$, that is, for $m\neq0$, exactly when $\bar a=a$. The elements fixed by the coefficient conjugation are those of the real sector $\mathbb{B}_{H}$, the elements whose four coefficients are real, and that set is not commutative: what the mass tolerates here is the real quaternion subalgebra and not an abelian one. The count differs from the one an array-based reading gives, where a dressed conjugation fixes a smaller set, and the difference is a property of the conjugation and not of the mass; the statement above is computed with the coefficient conjugation, which is the one the element formulation carries.
 
-**The order of the gradient commutator.** The gradient term is *not* zeroth order, and this is the first place where the algebra meets its own coefficients. Because $a$ is a constant of the finite algebra, $\partial/\partial R_\mu(a\tilde{Ξ}_{\mathrm{sp}})=a\,\partial \tilde{Ξ}_{\mathrm{sp}}/\partial R_\mu$, so
+**The order of the gradient commutator.** The gradient term is *not* zeroth order, and this is the first place where the algebra meets its own coefficients. Because $a$ is a constant of the finite algebra, $\partial/\partial R_\mu(a\tilde{Ξ})=a\,\partial \tilde{Ξ}/\partial R_\mu$, so
 $$
-[i\tilde\nabla_\Phi,a\cdot]\tilde{Ξ}_{\mathrm{sp}}=i\sum_\mu[e_\mu,a]\,\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\mu},
+[i\tilde\nabla_\Phi,a\cdot]\tilde{Ξ}=i\sum_\mu[e_\mu,a]\,\frac{\partial\tilde{Ξ}}{\partial R_\mu},
 $$
 which carries a derivative whenever $a$ fails to commute with the units. The principal symbol states the criterion exactly: the symbol of $\tilde\nabla_\Phi$ is multiplication by the element $\sum_\mu\zeta_\mu e_\mu$, so the commutator is bounded precisely when
 $$
@@ -146,7 +146,7 @@ that is, precisely when $a$ commutes with all four units. The centralizer of the
 
 - A scalar multiplier $f$ commutes with the units, and the commutator is the zeroth-order $[i\tilde\nabla_\Phi,f\cdot]=i\,(\tilde\nabla_\Phi f)\cdot$, hence bounded. This is the classical statement for functions, and it is the reason the naive formula $[i\tilde\nabla_\Phi,a\cdot]=i\,(\tilde\nabla_\Phi a)\cdot$ holds for them and fails for the rest of the algebra.
 - A non-central element $a\in\mathbb{B}_{\mathbb{R}}$ gives a first-order commutator, hence an unbounded one on the field-theoretic Hilbert space: the **bounded-commutator condition fails for the left action of the non-central elements**. On the finite carrier the condition is vacuous — every operator on a finite-dimensional space is bounded — so the failure is a statement about the square-integrable fields over spacetime, and not about the finite algebra. Note what makes it fail: in Connes' almost-commutative triple the continuum operator is $D_M\otimes I_F$ and carries no element of the finite algebra, so its commutators with the finite factor vanish. Here the coefficients of the gradient are themselves elements of the algebra and are four of them, and that is what turns the commutator first order.
-- The right action passes: for a constant factor $[\tilde\nabla_\Phi,\cdot a]=0$ identically, and for a function the commutator is the bounded two-sided action $[\tilde\nabla_\Phi,\cdot f]\tilde{Ξ}_{\mathrm{sp}}=\sum_\mu e_\mu\tilde{Ξ}_{\mathrm{sp}}\,\partial f/\partial R_\mu$.
+- The right action passes: for a constant factor $[\tilde\nabla_\Phi,\cdot a]=0$ identically, and for a function the commutator is the bounded two-sided action $[\tilde\nabla_\Phi,\cdot f]\tilde{Ξ}=\sum_\mu e_\mu\tilde{Ξ}\,\partial f/\partial R_\mu$.
 
 The asymmetry is the structural point. The four units are the coefficients of the gradient and elements of the algebra at once, so an action on the same side as the units is seen by them; the side they do not see is the right one. The symbol check is exact and is read on the elements themselves: at $\zeta=(0.3,-0.7,1.1,0.4)$ the quaternionic norm of $[\sum_\mu\zeta_\mu e_\mu,a]$ is $2.34$ for $a=\vec e_x$, $1.61$ for $a=\vec e_y$, and $2.61$ for $a=\vec e_z$, and exactly $0$ for $a=e_t$ and for the central scalars such as $ie_t$. The commutator is bilinear, so a general $a$ scales these numbers by its own coefficients; the units are the meaningful comparison, and none of the three non-central units gives zero.
 
@@ -160,8 +160,8 @@ $$
 $$
 identically. The condition is decided by the mass, and the mass gives one line,
 $$
-\bigl[[D_F,a\cdot],\cdot b\bigr]\tilde{Ξ}_{\mathrm{sp}}
-=\bigl(m\bar a-am\bigr)\bar{\tilde{Ξ}}_{\mathrm{sp}}\,\bigl(\bar b-b\bigr),
+\bigl[[D_F,a\cdot],\cdot b\bigr]\tilde{Ξ}
+=\bigl(m\bar a-am\bigr)\bar{\tilde{Ξ}}\,\bigl(\bar b-b\bigr),
 $$
 so it holds exactly when one of the two multipliers is fixed by the conjugation — when $a$ or $b$ lies in the real sector $\mathbb{B}_{H}$. This is the element-level form of the axiom, and it differs from the array-based count in the size of the set and not in the shape of the failure: the condition isolates a proper subalgebra, and the subalgebra is the one the conjugation fixes.
 
@@ -210,7 +210,7 @@ $$
 (\tilde Q_1\tilde Q_2)^\flat
 =-\tilde Q_2^\flat\tilde Q_1^\flat.
 $$
-On the field that involution is the antilinear operator $J_{\flat}(\tilde{Ξ}_{\mathrm{sp}})=-\tilde{Ξ}_{\mathrm{sp}}^*$, of square $+1$, and the two minus signs cancel in the order-one combination:
+On the field that involution is the antilinear operator $J_{\flat}(\tilde{Ξ})=-\tilde{Ξ}^*$, of square $+1$, and the two minus signs cancel in the order-one combination:
 $$
 J_{\flat}b^{*}J_{\flat}^{-1}=\cdot b,
 $$
@@ -220,9 +220,9 @@ the right action. The global minus is therefore immaterial for the first-order c
 
 **The Euclidean candidate.** The Euclidean frame's four actions are
 $$
-E_4:\tilde{Ξ}_{\mathrm{sp}}\longmapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x,
+E_4:\tilde{Ξ}\longmapsto i\tilde{Ξ}\vec e_x,
 \qquad
-E_\eta:\tilde{Ξ}_{\mathrm{sp}}\longmapsto-\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y
+E_\eta:\tilde{Ξ}\longmapsto-\vec e_\eta\tilde{Ξ}\vec e_y
 \quad(\eta=1,2,3),
 $$
 and the four are not of one kind: $E_4$ is a right action, while the three $E_\eta$ act on both sides. All four are Hermitian, square to $+e_t$, and pairwise anticommute. Their product is the chirality,
@@ -233,7 +233,7 @@ E_1E_2E_3E_4=\xi,
 $$
 a right action; the same four actions taken in the cyclic order $E_4E_1E_2E_3$ give $-\xi$, because moving $E_4$ past three anticommuting actions costs three signs. The sign of the product is the order and nothing else. The candidate for the charge conjugation is the left action
 $$
-C:\tilde{Ξ}_{\mathrm{sp}}\longmapsto-\vec e_z\tilde{Ξ}_{\mathrm{sp}}=E_1E_2,
+C:\tilde{Ξ}\longmapsto-\vec e_z\tilde{Ξ}=E_1E_2,
 \qquad
 C^2=-e_t,
 \qquad
@@ -351,7 +351,7 @@ with $D_M$ the Dirac operator of the manifold, $G_M$ the chirality of its manifo
 
 **The finite operator is the framework's mass term.** For the biquaternion candidate, $\mathcal{A}_F=\mathbb{B}_{\mathbb{R}}$ and $\mathcal{H}_F=\mathbb{B}$, and the finite operator is the mass of the section *The Biquaternion Candidate*,
 $$
-D_F:\tilde{Ξ}_{\mathrm{sp}}\longmapsto m\,\overline{\tilde{Ξ}_{\mathrm{sp}}},
+D_F:\tilde{Ξ}\longmapsto m\,\overline{\tilde{Ξ}},
 \qquad
 \xi D_F+D_F\xi=0 .
 $$
@@ -371,11 +371,11 @@ The requirement that $D_F$ be odd under the chirality — that it anticommute wi
 
 - The biquaternion candidate triple: algebra $\mathbb{B}_{\mathbb{R}}$ (or $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$), Hilbert space the completion of $\mathbb{B}$ in the Hermitian form, operator $\mathcal{D}=i\tilde\nabla_\Phi+D_F$. The Hilbert space and the operator are the series' own objects, and no new structure is introduced; $\tilde\nabla^{\dagger}=-(\tilde\nabla_\Phi)^{\natural}$, so $i\tilde\nabla_\Phi$ has adjoint $i(\tilde\nabla_\Phi)^{\natural}$, and $i\tilde\nabla_\Phi$ is not self-adjoint for the Hermitian form: the criterion asks for anti-Hermitian coefficients, which $ie_t$ is and the three $i\vec e_\eta$ are not.
 - The framework's real-form involution satisfies $\flat^2=+1$ exactly: $\flat(\tilde Q)=-\tilde Q^{*}$ gives $\flat(\flat(\tilde Q))=\tilde Q$; verified on explicit elements, so the candidate real structure $J_{\flat}$ has $\epsilon=+1$. The product rule is $(\tilde Q_1\tilde Q_2)^\flat=-\tilde Q_2^\flat\tilde Q_1^\flat$, and on the field the two minus signs cancel in $J_{\flat}b^{*}J_{\flat}^{-1}=\cdot b$, the right action. The chirality sign is not defined for $J_{\flat}$: $J_{\flat}\xi$ is neither $+\xi J_{\flat}$ nor $-\xi J_{\flat}$.
-- The Euclidean frame's antisymmetric operator of square $-1$ is $C:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_z\tilde{Ξ}_{\mathrm{sp}}=E_1E_2$ in the frame $E_4:\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$, $E_\eta:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$. The four frame actions are Hermitian, square to $+e_t$, and pairwise anticommute; their product is the chirality, $E_1E_2E_3E_4=\xi$, while the other cyclic order gives $-\xi$, $E_4E_1E_2E_3=-\xi$; $C$ is skew for the Hermitian form, $C^2=-e_t$, and $[C,\xi]=0$. $C$ conjugates each frame action to itself up to sign, and the signs are not uniform in this frame: $-,-,+,+$. The antilinear operator $J_C=CK$ therefore has $J_C^2=C^2=-1$ and $J_C\xi=-\xi J_C$, the quaternionic pattern $(\epsilon,\epsilon'')=(-1,-1)$. Both signs are fixed by the pair $(C,\xi)$ alone: they are invariant under a rescaling of $J$ and under a change of frame, so neither is a normalisation. $\epsilon'$ is not reached, because it involves $D$. The pattern is Connes' $n\equiv2$ (equivalently $n\equiv6$), while four-dimensional Euclidean geometry is $n\equiv4$ with $(+1,+1,+1)$; the table of *Spectral Triples and Noncommutative Geometry* has these two rows exchanged, and that disagreement is reported at the end of the section. The framework's own sign is $+1$: it agrees with the four-dimensional Euclidean sign and is not the quaternionic one, and the quaternionic sign can come only from an antilinear operator of square $-1$, which the algebra carries as $C$ composed with the conjugation, not from a central phase, since composition with a central phase leaves $\epsilon=+1$.
+- The Euclidean frame's antisymmetric operator of square $-1$ is $C:\tilde{Ξ}\mapsto-\vec e_z\tilde{Ξ}=E_1E_2$ in the frame $E_4:\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$, $E_\eta:\tilde{Ξ}\mapsto-\vec e_\eta\tilde{Ξ}\vec e_y$. The four frame actions are Hermitian, square to $+e_t$, and pairwise anticommute; their product is the chirality, $E_1E_2E_3E_4=\xi$, while the other cyclic order gives $-\xi$, $E_4E_1E_2E_3=-\xi$; $C$ is skew for the Hermitian form, $C^2=-e_t$, and $[C,\xi]=0$. $C$ conjugates each frame action to itself up to sign, and the signs are not uniform in this frame: $-,-,+,+$. The antilinear operator $J_C=CK$ therefore has $J_C^2=C^2=-1$ and $J_C\xi=-\xi J_C$, the quaternionic pattern $(\epsilon,\epsilon'')=(-1,-1)$. Both signs are fixed by the pair $(C,\xi)$ alone: they are invariant under a rescaling of $J$ and under a change of frame, so neither is a normalisation. $\epsilon'$ is not reached, because it involves $D$. The pattern is Connes' $n\equiv2$ (equivalently $n\equiv6$), while four-dimensional Euclidean geometry is $n\equiv4$ with $(+1,+1,+1)$; the table of *Spectral Triples and Noncommutative Geometry* has these two rows exchanged, and that disagreement is reported at the end of the section. The framework's own sign is $+1$: it agrees with the four-dimensional Euclidean sign and is not the quaternionic one, and the quaternionic sign can come only from an antilinear operator of square $-1$, which the algebra carries as $C$ composed with the conjugation, not from a central phase, since composition with a central phase leaves $\epsilon=+1$.
 - The order of the gradient commutator is decided by the algebra's own coefficients: $[i\tilde\nabla_\Phi,a\cdot]=i\sum_\mu[e_\mu,a]\partial/\partial R_\mu$ is zeroth order exactly when $a$ commutes with all four units, so the left action of the non-central elements fails the bounded-commutator condition and only the central scalars and the functions pass it. The right action passes it identically for a constant factor and by a two-sided action for functions. The symbol check is exact: at $\zeta=(0.3,-0.7,1.1,0.4)$ the quaternionic norm of $[\sum_\mu\zeta_\mu e_\mu,a]$ is $2.34$ for $\vec e_x$, $1.61$ for $\vec e_y$, $2.61$ for $\vec e_z$, and exactly $0$ for $e_t$ and $ie_t$. Being bilinear in $a$, the commutator scales with the coefficients of $a$, so only the units give a scale-free comparison.
-- The first-order condition is decided by the mass, and the mass gives one line. The gradient contributes nothing, because its commutator is a left action and a left action commutes with a right one: $[[i\tilde\nabla_\Phi,a\cdot],\cdot b]=0$ identically. The mass contributes $[[D_F,a\cdot],\cdot b]\tilde{Ξ}_{\mathrm{sp}}=(m\bar a-am)\bar{\tilde{Ξ}}_{\mathrm{sp}}(\bar b-b)$, so the condition holds exactly when $a$ or $b$ is fixed by the conjugation, that is, when one of the two lies in the real sector $\mathbb{B}_{H}$. The set is a subalgebra and it is not commutative; the array-based reading fixes a smaller set, and the difference is the conjugation, not the mass.
+- The first-order condition is decided by the mass, and the mass gives one line. The gradient contributes nothing, because its commutator is a left action and a left action commutes with a right one: $[[i\tilde\nabla_\Phi,a\cdot],\cdot b]=0$ identically. The mass contributes $[[D_F,a\cdot],\cdot b]\tilde{Ξ}=(m\bar a-am)\bar{\tilde{Ξ}}(\bar b-b)$, so the condition holds exactly when $a$ or $b$ is fixed by the conjugation, that is, when one of the two lies in the real sector $\mathbb{B}_{H}$. The set is a subalgebra and it is not commutative; the array-based reading fixes a smaller set, and the difference is the conjugation, not the mass.
 - The mass, being the conjugation composed with the mass scale, is odd under the chirality: $\{\xi,D_F\}=0$ (verified, residual $0$); $\mathcal{D}$ on $\mathbb{B}$ is neither even nor odd under $\xi$, since the gradient is even and the mass odd. The finite triple $(\mathbb{B}_{\mathbb{R}},D_F)$ is graded and odd; the grading of a full triple is $G_M\otimes\xi$ with $G_M$ the manifold chirality. The oddness of a two-sided action is decided by its right factor: $\xi$ commutes with $\cdot e_t$ and $\cdot\vec e_z$ and anticommutes with $\cdot\vec e_x$ and $\cdot\vec e_y$, while every left action is even. The framework's odd mass is not a two-sided action but the conjugation, and its oddness is $\mathcal{Q}_{\mathrm{op}}\xi=-\xi\mathcal{Q}_{\mathrm{op}}$.
-- The series' off-diagonal mass is a finite Dirac operator: $D_F:\tilde{Ξ}_{\mathrm{sp}}\mapsto m\overline{\tilde{Ξ}_{\mathrm{sp}}}$ on $\mathbb{B}$ anticommutes with the chirality $\xi$ and satisfies $D_F^2=\lvert m\rvert^2e_t$, with the single mass scale $\lvert m\rvert$ carried by both parts, both by inspection in the element form. As an antilinear operator it has no eigenvalues, and the square is the invariant statement. The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
+- The series' off-diagonal mass is a finite Dirac operator: $D_F:\tilde{Ξ}\mapsto m\overline{\tilde{Ξ}}$ on $\mathbb{B}$ anticommutes with the chirality $\xi$ and satisfies $D_F^2=\lvert m\rvert^2e_t$, with the single mass scale $\lvert m\rvert$ carried by both parts, both by inspection in the element form. As an antilinear operator it has no eigenvalues, and the square is the invariant statement. The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
 - The finite carrier is four-complex-dimensional and its finite triple has spectral dimension zero; a dimension-four triple requires the almost-commutative algebra and a first-order elliptic operator. The spectral dimension is the exponent of the growth and $a_{d/2}$ the coefficient of the logarithmic divergence in one and the same small-$r'_t$ expansion.
 - The framework's metric-as-output (a signature from the level-1 form on the material sector) and the triple's distance formula (a distance from $D$) are similar in shape and different in content; the framework derives a signature, not a distance.
 
@@ -410,11 +410,11 @@ This article needs no gamma matrix, and they are collected here only for compari
 Each gamma is the array, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the algebra over $\mathbb{C}$, of one two-sided action:
 
 $$
-\gamma_0:\tilde{Ξ}_{\mathrm{sp}}\longmapsto ie_t\tilde{Ξ}_{\mathrm{sp}}\vec e_x,\qquad
-\gamma_1:\tilde{Ξ}_{\mathrm{sp}}\longmapsto i\vec e_x\tilde{Ξ}_{\mathrm{sp}}\vec e_y,\qquad
-\gamma_2:\tilde{Ξ}_{\mathrm{sp}}\longmapsto i\vec e_y\tilde{Ξ}_{\mathrm{sp}}\vec e_y,\qquad
-\gamma_3:\tilde{Ξ}_{\mathrm{sp}}\longmapsto i\vec e_z\tilde{Ξ}_{\mathrm{sp}}\vec e_y,\qquad
-\gamma_5:\tilde{Ξ}_{\mathrm{sp}}\longmapsto-ie_t\tilde{Ξ}_{\mathrm{sp}}\vec e_z.
+\gamma_0:\tilde{Ξ}\longmapsto ie_t\tilde{Ξ}\vec e_x,\qquad
+\gamma_1:\tilde{Ξ}\longmapsto i\vec e_x\tilde{Ξ}\vec e_y,\qquad
+\gamma_2:\tilde{Ξ}\longmapsto i\vec e_y\tilde{Ξ}\vec e_y,\qquad
+\gamma_3:\tilde{Ξ}\longmapsto i\vec e_z\tilde{Ξ}\vec e_y,\qquad
+\gamma_5:\tilde{Ξ}\longmapsto-ie_t\tilde{Ξ}\vec e_z.
 $$
 
 They satisfy $\gamma_0^2=I_4$, $\gamma_\eta^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus. All of it was checked on the arrays.
@@ -423,19 +423,19 @@ $\gamma_5$ is the chiral right action written as an array. The chirality of the 
 
 The dictionary is complex-linear. Writing $c(M)$ for the coefficient array of $M$ in the basis of the sixteen products, a single product is a pure tensor, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real operators of *The Majorana Equation in Biquaternionic Form* are right multiplication by $\vec e_x$ and the three maps $\tilde{Ξ}_{\mathrm{sp}}\mapsto\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is that frame with the first multiplied by $i$ and the three spatial operators negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $i$ times those, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same operators with the powers of $i$ collected — $\gamma_0$ is $E_4$ and $\gamma_\eta$ is $-iE_\eta$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\xi$, not a second algebra.
+The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real operators of *The Majorana Equation in Biquaternionic Form* are right multiplication by $\vec e_x$ and the three maps $\tilde{Ξ}\mapsto\vec e_\eta\tilde{Ξ}\vec e_y$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is that frame with the first multiplied by $i$ and the three spatial operators negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $i$ times those, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same operators with the powers of $i$ collected — $\gamma_0$ is $E_4$ and $\gamma_\eta$ is $-iE_\eta$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\xi$, not a second algebra.
 
 ## Summary
 
 The spectral triple of the biquaternion algebra is the candidate $(\mathbb{B}_{\mathbb{R}},\mathcal{H},\mathcal{D})$, with $\mathcal{H}$ the completion of the algebra under the Hermitian form
 $$
-\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_*=\mathrm{Sc}\bigl(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ}\bigr),
+\langle\tilde{Ξ},\tilde{Ξ}\rangle_*=\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\bigr),
 $$
 and the operator is the framework's Dirac operator,
 $$
 \mathcal{D}=i\tilde\nabla_\Phi+D_F,
 $$
-with the mass $D_F:\tilde{Ξ}_{\mathrm{sp}}\mapsto m\overline{\tilde{Ξ}_{\mathrm{sp}}}$, which couples the two chirality parts through the conjugation. The field is an element $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$, and the two letters are the whole of the chirality. The algebra's real-form involution is $\flat=-{}^{*}$, with
+with the mass $D_F:\tilde{Ξ}\mapsto m\overline{\tilde{Ξ}}$, which couples the two chirality parts through the conjugation. The field is an element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$, and the two letters are the whole of the chirality. The algebra's real-form involution is $\flat=-{}^{*}$, with
 $$
 \flat^2=+1,
 $$
@@ -453,18 +453,18 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r
 |---|---|
 | $(\mathcal{A},\mathcal{H},D)$ | Spectral triple: algebra, Hilbert space, Dirac operator |
 | $\mathbb{B}_{\mathbb{R}}$ | Biquaternion algebra as a real algebra, the candidate $\mathcal{A}$ |
-| $\tilde{Ξ}_{\mathrm{sp}}=\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$ | The field, an element of the algebra, and its two chirality parts; $L$ is the $-1$ part |
+| $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element of the algebra, and its two chirality parts; $L$ is the $-1$ part |
 | $\mathcal{D}=i\tilde\nabla_\Phi+D_F$ | Biquaternion Dirac operator, the candidate $D$; not self-adjoint for the Hermitian form |
-| $\langle\tilde{Ξ}_{\mathrm{sp}},\tilde{Ξ}\rangle_*=\mathrm{Sc}(\tilde{Ξ}_{\mathrm{sp}}^*\tilde{Ξ})$ | Hermitian inner product; positive definite, $\sum_\mu\lvert\tilde{Ξ}_{\mathrm{sp},\mu}\rvert^2$ |
+| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_*=\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ | Hermitian inner product; positive definite, $\sum_\mu\lvert\tilde{Ξ}_{\mu}\rvert^2$ |
 | $J$ | Real structure of a spectral triple; antilinear, with $J^2=\epsilon I$ |
-| $J_{\flat}$ | The framework's real structure, $J_{\flat}(\tilde{Ξ}_{\mathrm{sp}})=-\tilde{Ξ}_{\mathrm{sp}}^*$; $J_{\flat}^2=+1$ |
+| $J_{\flat}$ | The framework's real structure, $J_{\flat}(\tilde{Ξ})=-\tilde{Ξ}^*$; $J_{\flat}^2=+1$ |
 | $J_C$ | The Euclidean frame's real structure, $J_C=CK$; $J_C^2=-1$ |
 | $\epsilon,\epsilon',\epsilon''$ | Signs $J^2=\epsilon$, $JD=\epsilon'DJ$, $J\xi=\epsilon''\xi J$; they fix the KO-dimension |
-| $\xi:\tilde{Ξ}_{\mathrm{sp}}\mapsto-i\tilde{Ξ}_{\mathrm{sp}}\vec e_z$, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ | Chirality, a right action of spectrum $+1,+1,-1,-1$; $\chi^2=e_t$ |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the chirality subscript, $-1$ and $+1$; left multiplication keeps the letter, right multiplication by $\vec e_x$ or $\vec e_y$ exchanges the two |
+| $\xi:\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$, $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ | Chirality, a right action of spectrum $+1,+1,-1,-1$; $\chi^2=e_t$ |
+| $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two values of the chirality subscript, $-1$ and $+1$; left multiplication keeps the letter, right multiplication by $\vec e_x$ or $\vec e_y$ exchanges the two |
 | $\flat=-{}^{*}$ | The framework's real-form involution; $\flat^2=+1$ |
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternion gradient; symbol the element $\sum_\mu\zeta_\mu e_\mu$ of quaternionic norm $\lvert\zeta\rvert^2$ |
-| $D_F:\tilde{Ξ}_{\mathrm{sp}}\mapsto m\overline{\tilde{Ξ}_{\mathrm{sp}}}$ | The mass, the finite Dirac operator; antilinear, $D_F^2=\lvert m\rvert^2e_t$, $\{\xi,D_F\}=0$ |
+| $D_F:\tilde{Ξ}\mapsto m\overline{\tilde{Ξ}}$ | The mass, the finite Dirac operator; antilinear, $D_F^2=\lvert m\rvert^2e_t$, $\{\xi,D_F\}=0$ |
 | $\mathbb{B}_{H}$ | The real sector, the elements with real coefficients; the fixed set of the coefficient conjugation, and the set on which the mass commutes with the left action |
 | $d(\xi_{\mathrm{alt}},\omega)=\sup_{a\in\mathcal{A}}\{\lvert\xi_{\mathrm{alt}}(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
 | $\mathrm{Tr}\,\exp(-r'_t D^2)\sim {r'_{t}}^{-d/2}$ | Heat-kernel growth; the spectral dimension |
@@ -473,10 +473,10 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r
 | $\mathcal{A}_F,\mathcal{H}_F,D_F$ | Finite algebra $\mathbb{B}_{\mathbb{R}}$, finite Hilbert space $\mathbb{B}$, finite Dirac operator (the mass) |
 | $D=D_M\otimes I_F+G_M\otimes D_F$ | Product geometry of an almost-commutative triple; $G_M$ the manifold chirality |
 | $\Gamma=G_M\otimes\xi$ | Grading of a full triple; $D$ odd in it, while $\mathcal{D}$ alone is odd in neither factor |
-| $a\cdot$, $\cdot b$ | Left action $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}}$ and right action $\tilde{Ξ}_{\mathrm{sp}}\mapsto\tilde{Ξ}_{\mathrm{sp}} b$; they commute |
-| $a\,\cdot\,b$ | Two-sided action $\tilde{Ξ}_{\mathrm{sp}}\mapsto a\tilde{Ξ}_{\mathrm{sp}} b$; the sixteen $\tilde{Ξ}_{\mathrm{sp}}\mapsto e_\mu\tilde{Ξ}_{\mathrm{sp}} e_\nu$ span the endomorphisms |
-| $E_4:\tilde{Ξ}_{\mathrm{sp}}\mapsto i\tilde{Ξ}_{\mathrm{sp}}\vec e_x$, $E_\eta:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_\eta\tilde{Ξ}_{\mathrm{sp}}\vec e_y$ | Euclidean frame, four Hermitian actions with $E_\mu^2=e_t$ and $E_1E_2E_3E_4=\xi$ |
-| $C:\tilde{Ξ}_{\mathrm{sp}}\mapsto-\vec e_z\tilde{Ξ}_{\mathrm{sp}}=E_1E_2$ | Euclidean candidate charge conjugation; skew for the Hermitian form, $C^2=-e_t$, $[C,\xi]=0$ |
+| $a\cdot$, $\cdot b$ | Left action $\tilde{Ξ}\mapsto a\tilde{Ξ}$ and right action $\tilde{Ξ}\mapsto\tilde{Ξ} b$; they commute |
+| $a\,\cdot\,b$ | Two-sided action $\tilde{Ξ}\mapsto a\tilde{Ξ} b$; the sixteen $\tilde{Ξ}\mapsto e_\mu\tilde{Ξ} e_\nu$ span the endomorphisms |
+| $E_4:\tilde{Ξ}\mapsto i\tilde{Ξ}\vec e_x$, $E_\eta:\tilde{Ξ}\mapsto-\vec e_\eta\tilde{Ξ}\vec e_y$ | Euclidean frame, four Hermitian actions with $E_\mu^2=e_t$ and $E_1E_2E_3E_4=\xi$ |
+| $C:\tilde{Ξ}\mapsto-\vec e_z\tilde{Ξ}=E_1E_2$ | Euclidean candidate charge conjugation; skew for the Hermitian form, $C^2=-e_t$, $[C,\xi]=0$ |
 
 ## Further Reading
 

@@ -158,17 +158,17 @@ Therefore, to the extent that the gauge algebra is realized inside the biquatern
 The gauge-fixing and ghost terms are not merely invariant under $s$; they are $s$-exact. Define the **gauge-fixing fermion**
 
 $$
-\tilde{Ξ}_{\mathrm{sp}} = \bar{c}\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+\tilde{Ξ} = \bar{c}\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
-\tilde{Ξ}_{\mathrm{sp}} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
+\tilde{Ξ} = \sum_a\bar{c}_a\left(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a\right)
 \qquad\text{(non-abelian)} .
 $$
 
 Then a direct computation with the graded Leibniz rule gives, in the abelian case,
 
 $$
-s\tilde{Ξ}_{\mathrm{sp}} = (s\bar{c})\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
+s\tilde{Ξ} = (s\bar{c})\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 - \bar{c}\,s\!\left(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B\right)
 = B\,\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B^2-\bar{c}\,\Box_\Phi\,c,
 $$
@@ -176,18 +176,18 @@ $$
 where the minus sign on the second term is the sign $(-1)^{| \bar{c}|}=-1$ that the oddness of $\bar{c}$ requires. This is exactly $\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$, so
 
 $$
-\boxed{\;\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\tilde{Ξ}_{\mathrm{sp}}\;}.
+\boxed{\;\mathcal{L} = \mathcal{L}_{\mathrm{gauge}} + s\tilde{Ξ}\;}.
 $$
 
 Since $\mathcal{L}_{\mathrm{gauge}}$ is gauge invariant and hence $s$-invariant (the gauge transformation is $sA_{\mu a}=(D_\mu c)_a$ with $c$ the ghost), the whole gauge-fixed Lagrangian is $s$-invariant, and the invariance is automatic once $s^2=0$:
 
 $$
-s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ}_{\mathrm{sp}} = 0 .
+s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\tilde{Ξ} = 0 .
 $$
 
-The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}_{\mathrm{sp}}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.
+The non-abelian case is the same computation with the covariant derivative, $s\tilde{Ξ}=\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$, so that the ghost Lagrangian is $-\sum_a\bar{c}_a\sum_\mu\partial(D_\mu c)_a/\partial R_\mu$ and the gauge-fixing Lagrangian is $\sum_a B_a\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}\sum_a B_aB_a$.
 
-The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}_{\mathrm{sp}}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}_{\mathrm{sp}}$ is its image, and the physical states are the cohomology of $s$, as below.
+The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\tilde{Ξ}$ is a Grassmann-odd element of the envelope, $s\tilde{Ξ}$ is its image, and the physical states are the cohomology of $s$, as below.
 
 ## Ghost Number, the BRST Charge, and Cohomology
 
@@ -211,7 +211,7 @@ $$
 \mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1,
 $$
 
-so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ makes the pair $(\mathbb{B}\otimes\Lambda,s)$ into a **cochain complex**, the BRST complex. The gauge-fixing fermion has ghost number $-1$, consistent with $s\tilde{Ξ}_{\mathrm{sp}}$ having ghost number $0$.
+so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ makes the pair $(\mathbb{B}\otimes\Lambda,s)$ into a **cochain complex**, the BRST complex. The gauge-fixing fermion has ghost number $-1$, consistent with $s\tilde{Ξ}$ having ghost number $0$.
 
 ### The BRST Charge
 
@@ -257,7 +257,7 @@ The Proca field of the preceding article has no gauge freedom, and the BRST cons
 
 3. **Which gauge algebras are realized.** The Jacobi identity holds for any gauge algebra realized by a commutator inside $\mathbb{B}$, but the algebras so realized are constrained by the finite dimension of the algebra. Is the constraint physical — does it select a subclass of gauge groups — or is it an artifact of using a single copy of the algebra?
 
-4. **The gauge-fixing fermion and the sector split.** The fermion $\tilde{Ξ}_{\mathrm{sp}}$ is built from the antighost, which is odd, and the gauge-fixing function, which is even and material. Does the sector split $\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ organize the BRST complex into a double complex, with the two differentials corresponding to the two sectors?
+4. **The gauge-fixing fermion and the sector split.** The fermion $\tilde{Ξ}$ is built from the antighost, which is odd, and the gauge-fixing function, which is even and material. Does the sector split $\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ organize the BRST complex into a double complex, with the two differentials corresponding to the two sectors?
 
 5. **The massive limit and the disappearance of the ghosts.** The ghosts disappear when the mass appears and the constraints become second class. Is there a deformation of the BRST complex in which the mass is a deformation parameter and the cohomology jumps from two to three dimensions at $\mu=0$, and is the jump visible algebraically?
 
@@ -265,7 +265,7 @@ The Proca field of the preceding article has no gauge freedom, and the BRST cons
 
 ## Summary
 
-The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$ with $\tilde{Ξ}_{\mathrm{sp}}=\bar{c}(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
+The BRST symmetry of a gauge theory promotes the gauge parameter to an anticommuting ghost field and introduces a nilpotent odd derivation $s$ under which the gauge field, the ghost, the antighost and the Nakanishi–Lautrup field transform. The gauge-fixed Lagrangian is BRST-exact, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}$ with $\tilde{Ξ}=\bar{c}(\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}+\tfrac{\zeta}{2}B)$, and the physical states are the ghost-number-zero cohomology of the BRST charge, $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$. The unphysical content — the timelike and longitudinal components of the gauge field together with the ghost pair — forms the Kugo–Ojima quartet of zero-norm states.
 
 In the biquaternion framework two things are added to the standard transcription. The first is the natural realization of the gauge algebra inside the algebra: the generators lie in the informational sector $\mathbb{B}_{\Psi}$, the gauge field in the material sector $\mathbb{B}_{\Phi}$, and the structure constants are those of the commutator. The second, and the substantive one, is the origin of nilpotency. The Jacobi identity that makes the non-abelian BRST transformation nilpotent is a consequence of the associativity of quaternion multiplication, so that $s^2=0$ is inherited from associativity and not postulated. The nilpotency was verified explicitly on the Grassmann envelope with $\mathrm{SU}(2)$ structure constants and random gauge fields, and the Jacobi combination was verified to vanish.
 
@@ -289,7 +289,7 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $s$ | BRST operator: Grassmann-odd derivation, $\mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1$ |
 | $sA_{\mu a}=(D_\mu c)_a$, $sc_a=-\tfrac{g}{2}\sum_{b,c}f_{abc}c_bc_c$, $s\bar{c}_a=B_a$, $sB_a=0$ | Non-abelian BRST transformations |
 | $s^2=0$ | Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$ |
-| $\tilde{Ξ}_{\mathrm{sp}}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}_{\mathrm{sp}}$ |
+| $\tilde{Ξ}=\sum_a\bar{c}_a(\sum_\mu\partial A_{\mu a}/\partial R_\mu+\tfrac{\zeta}{2}B_a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\tilde{Ξ}$ |
 | $\mathrm{gh}(\tilde{A}_{\Phi})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
 | $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}_1=[i\mathcal{Q},\tilde{Q}_1]_\pm$ | BRST charge |
 | $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |

@@ -18,12 +18,12 @@ Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The
 
 ### The evolution operator and the position kernel
 
-The biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}_{\mathrm{sp}}=H\tilde{Ξ}_{\mathrm{sp}}$ is solved formally by
+The biquaternion Schrödinger equation $i\,\hbar\,c\partial/\partial r'_t\tilde{Ξ}=H\tilde{Ξ}$ is solved formally by
 
 $$
 \tilde Q(r'_t) = \exp(-\frac{i\,H\,r'_{t}}{\hbar\,c}),
 \qquad
-\tilde{Ξ}_{\mathrm{sp}}(r'_t) = \tilde Q(r'_t)\,\tilde{Ξ}_{\mathrm{sp}}(0),
+\tilde{Ξ}(r'_t) = \tilde Q(r'_t)\,\tilde{Ξ}(0),
 $$
 
 and because $H$ is central, $\tilde Q(r'_t)$ is a central $*$-unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$.
@@ -59,7 +59,7 @@ $$
 and the state at time $r'_{t,f}$ is obtained by the scalar convolution
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f}) = \int d^3r_i\;G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})\,\tilde{Ξ}_{\mathrm{sp}}(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i}),
+\tilde{Ξ}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f}) = \int d^3r_i\;G_{\mathrm{prop}}(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,r'_{t,f};x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i})\,\tilde{Ξ}(x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,r'_{t,i}),
 $$
 
 in which the kernel multiplies the module factor by a scalar. Whatever the initial module orientation, it is propagated unchanged. This is the same statement as in the free-particle article, now promoted to the general kernel of any central Hamiltonian.
@@ -224,7 +224,7 @@ $$
 which is the Boltzmann-weighted oscillator kernel at inverse temperature $\beta=\frac{\tau}{\hbar}$,
 
 $$
-G_{\mathrm{osc},\omega}^E(r_x,\tau;r_{0x},0) = \sum_n \tilde{Ξ}_{\mathrm{sp},n}(r_x)\tilde{Ξ}_{\mathrm{sp},n}(r_{0x})\,\exp(-\omega\tau(n+\frac12)) ,
+G_{\mathrm{osc},\omega}^E(r_x,\tau;r_{0x},0) = \sum_n \tilde{Ξ}_{n}(r_x)\tilde{Ξ}_{n}(r_{0x})\,\exp(-\omega\tau(n+\frac12)) ,
 $$
 
 so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than removed: the trace is the partition function $1/2\sinh(\omega\tau/2)$, and for large $\tau$ the kernel reduces to $\exp(-\omega\tau/2)$ times the ground-state projector. In the interpretation of the companion article on the path integral, the Wick rotation is the identification of the material sector $\mathbb{B}_{\Phi}$ with the quaternion subspace $\mathbb{B}_{H}$, and it is the operation that turns the central phase into a central decaying weight. The oscillator kernel is the cleanest example: the oscillatory Fresnel factor becomes a real Gaussian, and the caustic poles move to the imaginary axis.
@@ -234,17 +234,17 @@ so that the zero-point factor $\exp(-\omega\tau/2)$ is present rather than remov
 The kernel determines the dynamics, so it must contain the Schrödinger equation. The derivation is the infinitesimal-time version of the composition law. For an infinitesimal step,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\int dy\;G_{\mathrm{prop},\varepsilon}(r_x,r_y)\,\tilde{Ξ}_{\mathrm{sp}}(r_y,r'_t),
+\tilde{Ξ}(r_x,r'_t+\varepsilon)=\int dy\;G_{\mathrm{prop},\varepsilon}(r_x,r_y)\,\tilde{Ξ}(r_y,r'_t),
 $$
 
 and inserting the short-time kernel and expanding the smooth wave function about $y=x$,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)
+\tilde{Ξ}(r_x,r'_t+\varepsilon)
 =\left(\frac{k_m}{2\pi i\varepsilon}\right)^{1/2}
 \int  dy\;\exp(\,\frac{i\,k_m\,(r_y-r_x)^{2}}{2\,\varepsilon})
 \exp\left(-\,\frac{i\,\varepsilon\,V\,r_{y}}{\hbar\,c}\right)
-\left[\tilde{Ξ}_{\mathrm{sp}}(r_x)+(r_y-r_x)\frac{d\tilde{Ξ}_{\mathrm{sp}}}{dx}(r_x)+\tfrac12(r_y-r_x)^2\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+\cdots\right].
+\left[\tilde{Ξ}(r_x)+(r_y-r_x)\frac{d\tilde{Ξ}}{dx}(r_x)+\tfrac12(r_y-r_x)^2\frac{\partial^2\tilde{Ξ}}{\partial r_x^2}(r_x)+\cdots\right].
 $$
 
 The Gaussian moments are
@@ -258,16 +258,16 @@ $$
 and the linear term vanishes by symmetry. Collecting,
 
 $$
-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}(r_x)-\frac{i\,\varepsilon\,V(r_x)}{\hbar\,c}\tilde{Ξ}_{\mathrm{sp}}(r_x)+\frac{i\,\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}(r_x)+O(\varepsilon^2),
+\tilde{Ξ}(r_x,r'_t+\varepsilon)=\tilde{Ξ}(r_x)-\frac{i\,\varepsilon\,V(r_x)}{\hbar\,c}\tilde{Ξ}(r_x)+\frac{i\,\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}}{\partial r_x^2}(r_x)+O(\varepsilon^2),
 $$
 
 which rearranges to
 
-$$i\,\hbar\,c\frac{\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)-\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t)}{\varepsilon}
-=\left(-\frac{\hbar^{2}}{2\,m}\partial^2/\partial R_x^2+V(r_x)\right)\tilde{Ξ}_{\mathrm{sp}}+O(\varepsilon),
+$$i\,\hbar\,c\frac{\tilde{Ξ}(r_x,r'_t+\varepsilon)-\tilde{Ξ}(r_x,r'_t)}{\varepsilon}
+=\left(-\frac{\hbar^{2}}{2\,m}\partial^2/\partial R_x^2+V(r_x)\right)\tilde{Ξ}+O(\varepsilon),
 $$
 
-that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
+that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\tilde{Ξ}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}}{\partial r_x^2}$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
 
 ## The Semiclassical Kernel
 
@@ -343,7 +343,7 @@ G_{\mathrm{osc},\omega}=\left(\frac{\omega\,k_m}{2\pi i c\sin(\omega r'_t/c)}\ri
 \exp\left[\frac{im\omega}{2\,\hbar\sin(\omega r'_t/c)}\Big((r_x^2+r_{0x}^2)\cos(\omega r'_t/c)-2r_xr_{0x}\Big)\right],
 $$
 
-central, with caustic poles at $\omega r'_t/c=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}_{\mathrm{sp}}(r_x,r'_t+\varepsilon)=\tilde{Ξ}_{\mathrm{sp}}-\frac{i\,\varepsilon}{\hbar}V\tilde{Ξ}_{\mathrm{sp}}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}_{\mathrm{sp}}}{\partial r_x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
+central, with caustic poles at $\omega r'_t/c=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\tilde{Ξ}(r_x,r'_t+\varepsilon)=\tilde{Ξ}-\frac{i\,\varepsilon}{\hbar}V\tilde{Ξ}+\frac{i c\varepsilon}{2\,k_m}\frac{\partial^2\tilde{Ξ}}{\partial r_x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
 
 The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2\,\pi\,i\,\hbar)^{-3/2}|\det\partial^2 S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}\exp(\frac{iS_{\mathrm{cl}}}{\hbar})$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
 

@@ -21,7 +21,7 @@ The article states the theorem as the standard result it is, derives the special
 
 ## The Dirac Operator and Its Index
 
-**Notation.** The imaginary unit has $i^2=-1$, and it is the only imaginary unit in the article. Where two of them meet in a product they are reduced before the formula is read. A field is an element of $\mathbb{B}$, and an action on it is a multiplication, written $a\tilde{Ξ}_{\mathrm{sp}}$ when it acts from the left and $\tilde{Ξ}_{\mathrm{sp}} b$ when it acts from the right; the side is read from the position, and no letter names it. The letter $R$ labels a representation, on $\tilde D_R$, $T(R)$ and $\mathrm{Tr}_R$; the same letter as a subscript on a field is the chirality value of the section below.
+**Notation.** The imaginary unit has $i^2=-1$, and it is the only imaginary unit in the article. Where two of them meet in a product they are reduced before the formula is read. A field is an element of $\mathbb{B}$, and an action on it is a multiplication, written $a\tilde{Ξ}$ when it acts from the left and $\tilde{Ξ} b$ when it acts from the right; the side is read from the position, and no letter names it. The letter $R$ labels a representation, on $\tilde D_R$, $T(R)$ and $\mathrm{Tr}_R$; the same letter as a subscript on a field is the chirality value of the section below.
 
 **Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame and Metric Conventions*, with the four complex coordinates $Q_\mu$ and the positive-definite metric that frame carries. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.
 
@@ -49,13 +49,13 @@ Each term is a left multiplication by one frame unit. The symbol is the same sum
 
 $$
 \tilde D_R=\sum_{\mu}e_\mu D_\mu,\qquad
-D_\mu\tilde{Ξ}_{\mathrm{sp}}=\frac{\partial\tilde{Ξ}_{\mathrm{sp}}}{\partial R_\mu}+i\kappa\,\mathcal A_\mu\tilde{Ξ}_{\mathrm{sp}},
+D_\mu\tilde{Ξ}=\frac{\partial\tilde{Ξ}}{\partial R_\mu}+i\kappa\,\mathcal A_\mu\tilde{Ξ},
 $$
 
 with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_\mu$ valued in the gauge algebra, multiplying the field from the left. The components are those of the gauge-covariant derivative of *Algebra and Element Conventions*, and
 
 $$
-[D_\mu,D_\nu]\tilde{Ξ}_{\mathrm{sp}}=i\kappa\,F_{\mu\nu}\tilde{Ξ}_{\mathrm{sp}},\qquad
+[D_\mu,D_\nu]\tilde{Ξ}=i\kappa\,F_{\mu\nu}\tilde{Ξ},\qquad
 F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial R_\mu}-\frac{\partial\mathcal A_\mu}{\partial R_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
 $$
 
@@ -67,19 +67,19 @@ $$
 
 because $e_t$ commutes with the three spatial units, so the mixed time–space terms add; the three spatial units anticommute, so their mixed terms vanish; and each spatial square is $-e_t$, which gives the negative sum. Ellipticity needs the invertibility of the symbol and not of its square, so the vector term changes nothing.
 
-The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}_{\mathrm{sp}}=u^{-1}\partial(u\tilde{Ξ}_{\mathrm{sp}})/\partial R_\mu$.
+The square of the operator is not scalar either. What is scalar is the composition with the conjugate, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Box_\Phi$, and on the material sector that reads $\Delta_\Phi-\partial^2/\partial {r'_t}^2$. The connection enters through the commutator $[D_\mu,D_\nu]$, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial R_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\tilde{Ξ}=u^{-1}\partial(u\tilde{Ξ})/\partial R_\mu$.
 
-**The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair
+**The first order, and the mass.** The free equation is first order and carries one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the chiral pair
 
 $$
-\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=k_m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=k_m\tilde{Ξ}_{\mathrm{sp},R} ,
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
 $$
 
 and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The first-order form of the d'Alembertian is the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, and each line composed with the conjugate of the other returns $\Box$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-**The chirality.** Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{\mathrm{sp},L}+\tilde{Ξ}_{\mathrm{sp},R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (*Special Element Conventions*, §*The Chirality Convention* and §*The Spinor Convention*). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.
+**The chirality.** Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (*Special Element Conventions*, §*The Chirality Convention* and §*The Spinor Convention*). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.
 
 **The grading.** An index compares two kernel dimensions across a grading that the operator reverses, and this grading is not the algebra's. It belongs to the spinor factor of the twisted operator and is written $G_M$, with a capital to distinguish it from the frame's $\xi$; it anticommutes with the manifold Dirac operator, while the algebra acts on the fibre and commutes with $G_M$. On the two sides of $G_M$ the twisted operator is $\tilde D_R^{+}$ on the plus side and $\tilde D_R^{-}$ on the minus side, and
 
@@ -200,10 +200,10 @@ $$
 
 since the A-roof genus of a surface is $1$. The count of zero modes is therefore $\lvert n\rvert$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a charge-$n$ background binds one fermion mode per unit charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
 
-The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ of the Hopf article the field equation $\tilde D\tilde{Ξ}_{\mathrm{sp}}=0$ separates, and for $n>0$ the $R$ solutions are the lowest monopole harmonics of the field,
+The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\theta_{\mathrm{azm}}$ of the Hopf article the field equation $\tilde D\tilde{Ξ}=0$ separates, and for $n>0$ the $R$ solutions are the lowest monopole harmonics of the field,
 
 $$
-\tilde{Ξ}_{\mathrm{sp},n}^{(m)}=f_n(\theta)\,\exp(im\theta_{\mathrm{azm}}),
+\tilde{Ξ}_{n}^{(m)}=f_n(\theta)\,\exp(im\theta_{\mathrm{azm}}),
 \qquad
 m=-j,\dots,j,
 \qquad
@@ -261,7 +261,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient, acting from the left; $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
 | $\tilde D_R=\sum_\mu e_\mu D_\mu$ | Twisted Dirac operator in the representation $R$; the gauge-covariant gradient |
 | $D_\mu=\partial/\partial R_\mu+i\kappa\,\mathcal A_\mu$ | Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
-| $\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde{Ξ}_{\mathrm{sp},R}$ | The two values of the chirality subscript; $R$ is the plus value |
+| $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two values of the chirality subscript; $R$ is the plus value |
 | $\xi$ | Chirality of the frame: right multiplication by $-i\vec e_z$, whose two eigenspaces are $\mathbb B_L$ and $\mathbb B_R$ |
 | $G_M$ | Chirality of the manifold's spinor factor; the grading the twisted operator reverses |
 | $\tilde D_R^{\pm}$ | The twisted operator on the $G_M=\pm1$ side; the two are adjoint |

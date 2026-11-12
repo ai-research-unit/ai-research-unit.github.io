@@ -91,7 +91,7 @@ is Fueter-regular, and conversely every reduced-analytic function is induced fro
 
 *Proof.* Each coordinate of $F$ is a holomorphic function of its own complex variable, hence annihilated by the corresponding Cauchy–Riemann operator, and the operator acts coefficientwise; the converse is the characterisation of the reduced-analytic class.
 
-**Corollary (why the construction degenerates).** In the quaternion and biquaternion cases the Fueter construction must apply a power of the Laplacian, $\Delta^{(n-1)/2}$ in odd dimension $n$, because the slice variable encodes only one complex direction and the regularity conditions of the remaining directions are not automatic. In the reduced biquaternion case the two directions of each factor are exactly the two directions of one complex variable, so no surplus direction remains and the construction needs no correction.
+**Corollary (why the construction degenerates).** In the quaternion and biquaternion cases the Fueter construction must apply a power of the Laplacian, $\mathcal{L}_{\mathrm{iter}}^{(n-1)/2}$ in odd dimension $n$, because the slice variable encodes only one complex direction and the regularity conditions of the remaining directions are not automatic. In the reduced biquaternion case the two directions of each factor are exactly the two directions of one complex variable, so no surplus direction remains and the construction needs no correction.
 
 *Proof.* The slice variable of the classical construction is one complex coordinate $q_{0}+Iq_{1}$ inside a space of dimension $n$, and the remaining $n-2$ directions must be supplied by the Laplacian power; here the two directions of the factor exhaust the two-dimensional complex plane, and there is no surplus.
 
@@ -131,7 +131,7 @@ a copy of the complex plane inside the algebra, and a function is **slice-regula
 
 ## Relation to the Biquaternion and Split-Quaternion Theories
 
-The biquaternion and quaternion theories rest on the anticommutation of the units, which makes $\tilde{\nabla}=\sum_\mu e_\mu\partial/\partial Q_\mu$ a square root of the Laplacian and produces the Fueter construction with the Laplacian power $\Delta^{(n-1)/2}$ in odd dimension; the split biquaternion theory keeps the quaternion units in each of its two halves and inherits the same structure half by half. The reduced biquaternion theory removes the anticommutation: the units commute, the single operator splits, and the Fueter theory reduces to the pair of the complex one-variable theories. The structural difference is exactly the passage from a Clifford algebra with anticommuting generators to the commutative algebra $\mathrm{Cl}_{1,0}\otimes\mathrm{Cl}_{0,1}$, whose generators $i$ and $j$ commute.
+The biquaternion and quaternion theories rest on the anticommutation of the units, which makes $\tilde{\nabla}=\sum_\mu e_\mu\partial/\partial Q_\mu$ a square root of the Laplacian and produces the Fueter construction with the Laplacian power $\mathcal{L}_{\mathrm{iter}}^{(n-1)/2}$ in odd dimension; the split biquaternion theory keeps the quaternion units in each of its two halves and inherits the same structure half by half. The reduced biquaternion theory removes the anticommutation: the units commute, the single operator splits, and the Fueter theory reduces to the pair of the complex one-variable theories. The structural difference is exactly the passage from a Clifford algebra with anticommuting generators to the commutative algebra $\mathrm{Cl}_{1,0}\otimes\mathrm{Cl}_{0,1}$, whose generators $i$ and $j$ commute.
 
 ## Summary
 

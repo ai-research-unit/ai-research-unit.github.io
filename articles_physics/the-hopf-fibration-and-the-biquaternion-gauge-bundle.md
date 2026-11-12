@@ -223,7 +223,7 @@ $$
 For the compact factor $SU(2)\subset\mathbb H_{\mathbb B}$ the fundamental representation is the defining two-dimensional module $S\cong\mathbb C^2$ of the algebra, and by *The Element and Operator Representations* the algebra acts on $S$ as $\mathbb B\cong M_2(\mathbb C)=\mathrm{End}(S)$. The associated bundle is therefore the **spinor bundle** of the framework, whose sections are the two-component objects of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The gauge connection is a connection on $P$; it induces a covariant derivative on sections of the associated bundle by
 
 $$
-D_\mu \tilde{Ξ}_{\mathrm{sp}} = \partial/\partial x_\mu\tilde{Ξ}_{\mathrm{sp}} + i\kappa\,\mathcal A_\mu\tilde{Ξ}_{\mathrm{sp}} ,
+D_\mu \tilde{Ξ} = \partial/\partial x_\mu\tilde{Ξ} + i\kappa\,\mathcal A_\mu\tilde{Ξ} ,
 $$
 
 which is the covariant derivative of *Non-Abelian Gauge Fields in Biquaternionic Form*. The bundle-theoretic derivation of the covariant derivative — a connection is needed so that the comparison of neighbouring fibres is meaningful — is the geometric form of the gauge principle, and the algebra supplies the module on which it acts.

@@ -234,10 +234,10 @@ The polar decomposition is defined off the cone and has no value on it. It has a
 **The boundary-value theorem.** Let $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ be unit real vectors, $\varkappa_{\mathrm{phs}}$ a unit complex number and $R>0$, and set
 
 $$
-\tilde Q(\tilde{Ξ}_{\mathrm{sp}})=R\exp\left(-\frac{\tilde{Ξ}_{\mathrm{sp}}}{2}\right)\varkappa_{\mathrm{phs}}\exp\left(i\frac{\tilde{Ξ}_{\mathrm{sp}}}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}_{\mathrm{sp}}>0.
+\tilde Q(\tilde{Ξ})=R\exp\left(-\frac{\tilde{Ξ}}{2}\right)\varkappa_{\mathrm{phs}}\exp\left(i\frac{\tilde{Ξ}}{2}\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},\qquad \tilde{Ξ}>0.
 $$
 
-Every $\tilde Q(\tilde{Ξ}_{\mathrm{sp}})$ is a unit, and as $\tilde{Ξ}_{\mathrm{sp}}\to\infty$ it converges to
+Every $\tilde Q(\tilde{Ξ})$ is a unit, and as $\tilde{Ξ}\to\infty$ it converges to
 
 $$
 \boxed{\;\frac{R\varkappa_{\mathrm{phs}}}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r}\;},

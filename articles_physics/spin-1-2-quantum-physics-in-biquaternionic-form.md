@@ -24,10 +24,10 @@ A **two-state quantum system** is a quantum system whose state space is a two-di
 
 ### States
 
-A **pure state** is a unit vector $\tilde{Ξ}_{\mathrm{sp}} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector
+A **pure state** is a unit vector $\tilde{Ξ} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector
 
 $$
-\rho_{\mathrm{sp}} = |\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|,
+\rho_{\mathrm{sp}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}|,
 $$
 
 which satisfies $\rho_{\mathrm{sp}}^2 = \rho_{\mathrm{sp}}$ (idempotent), $\rho_{\mathrm{sp}}^\dagger = \rho_{\mathrm{sp}}$ (Hermitian), and $\mathrm{Tr}(\rho_{\mathrm{sp}}) = 1$.
@@ -58,7 +58,7 @@ $$
 \langle A \rangle_\rho = \mathrm{Tr}(\rho A).
 $$
 
-For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|$ and an observable $A$, this reduces to $\langle \tilde{Ξ}_{\mathrm{sp}} | A | \tilde{Ξ}_{\mathrm{sp}} \rangle$.
+For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and an observable $A$, this reduces to $\langle \tilde{Ξ} | A | \tilde{Ξ} \rangle$.
 
 ### Spin-1/2
 
@@ -195,7 +195,7 @@ $$
 
 is **real** and is the **Born-rule expectation value** of $\tilde H_\Psi$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
 
-**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}|$ and $\tilde H_\Psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ maps to $\tfrac12\mathrm{Tr}(|\tilde{Ξ}_{\mathrm{sp}}\rangle\langle\tilde{Ξ}_{\mathrm{sp}}| H) = \tfrac12\langle\tilde{Ξ}_{\mathrm{sp}}|H|\tilde{Ξ}_{\mathrm{sp}}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}_{\mathrm{sp}}|H|\tilde{Ξ}_{\mathrm{sp}}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.
+**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and $\tilde H_\Psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ maps to $\tfrac12\mathrm{Tr}(|\tilde{Ξ}\rangle\langle\tilde{Ξ}| H) = \tfrac12\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.
 
 ### Example
 
@@ -300,20 +300,20 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\boxed{\;\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L}, \qquad (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}\;},
+\boxed{\;\tilde{\nabla}_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}\;},
 $$
 
-where $\tilde{Ξ}_{\mathrm{sp}} = \tilde{Ξ}_{\mathrm{sp},L} + \tilde{Ξ}_{\mathrm{sp},R}$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
+where $\tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R}$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
 
 $$
-\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp}} = 0,
+\tilde{\nabla}_\Phi\tilde{Ξ} = 0,
 $$
 
-which is a first-order equation for the field $\tilde{Ξ}_{\mathrm{sp}}$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+which is a first-order equation for the field $\tilde{Ξ}$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 ### The Interpretation as a Spinor Field
 
-The biquaternion field $\tilde{Ξ}_{\mathrm{sp}}$ is a **spinor field** on the four-dimensional material space $\mathbb{B}_{\Phi}$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a **pair of Weyl spinors** (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
+The biquaternion field $\tilde{Ξ}$ is a **spinor field** on the four-dimensional material space $\mathbb{B}_{\Phi}$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a **pair of Weyl spinors** (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
 
 The Dirac equation is the equation of motion for a single spin-1/2 field. Its solutions describe relativistic spin-1/2 particles: electrons, muons, quarks, and other fermions.
 
@@ -322,14 +322,14 @@ The Dirac equation is the equation of motion for a single spin-1/2 field. Its so
 The biquaternionic Dirac equation contains:
 
 - The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ for plane-wave solutions.
-- The **spin structure**: the polarization biquaternion $\tilde{Ξ}_{\mathrm{sp},0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The **mass term**: the linear, chirality-off-diagonal mass term $k_m\tilde{Ξ}_{\mathrm{sp},L,R}$, which couples the two chiral components of the spinor.
+- The **spin structure**: the polarization biquaternion $\tilde{Ξ}_{0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
+- The **mass term**: the linear, chirality-off-diagonal mass term $k_m\tilde{Ξ}_{L,R}$, which couples the two chiral components of the spinor.
 
 ### What the Dirac Equation Does Not Contain
 
 The biquaternionic Dirac equation, as presented, does not contain:
 
-- **Quantization**: the promotion of the classical field $\tilde{Ξ}_{\mathrm{sp}}$ to an operator-valued field $\tilde{Ξ}_{\mathrm{fop}}$ on Fock space.
+- **Quantization**: the promotion of the classical field $\tilde{Ξ}$ to an operator-valued field $\tilde{Ξ}_{\mathrm{fop}}$ on Fock space.
 - **The full four-component Dirac spinor**: the biquaternion formulation describes the field as a pair of Weyl spinors (left-handed and right-handed). The four-component Dirac spinor, including the antiparticle components, is obtained by taking the direct sum of this pair with its complex conjugate.
 - **Many-body structure**: a single Dirac field describes a single particle (or a single field mode); many-particle states require tensor products.
 - **Interactions beyond electromagnetism**: the weak and strong interactions require additional structure beyond the biquaternion algebra.
@@ -417,7 +417,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born-rule expectation value; trace image $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde{\nabla}_\Phi\tilde{Ξ}_{\mathrm{sp},R} = k_m\tilde{Ξ}_{\mathrm{sp},L},\ (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L} = k_m\tilde{Ξ}_{\mathrm{sp},R}$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\tilde{\nabla}_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},\ (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
