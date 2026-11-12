@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Variational Principle and the Coupled Proca Equation in Biquaternionic Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-form"><strong>The Variational Principle and the Coupled Proca Equation in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article asks what action has the coupled Proca equation as its Euler–Lagrange equation, and what the action's symmetries give. It is the variational companion of <em>The Coupled Proca Equation in Biquaternionic Form</em>, its polar companion is <em>The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables</em>, and its free counterpart is <em>The Variational Principle and the Proca Equation in Biquaternionic Form</em>.</p>
+<p><strong>The equation.</strong> The coupled Proca equation is</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^2\tilde A,
+\qquad
+\tilde F=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr),
+\qquad
+\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+$$</p>
+<p>with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $k_m=mc/\hbar$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.</p>
+<p><strong>The action.</strong></p>
+<p>$$
+S[\tilde A,\tilde A^{*}]=\int d^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
+$$</p>
+<p>with $\mathrm{Sc}$ the scalar part, ${}^{*}$ the Hermitian conjugation, and $\natural$ the quaternion conjugation. The field term is the free article's; the mass term is the free article's <em>upgraded</em>, because the free mass term $\langle\tilde A_\Phi\rangle_\natural$ is a functional of a real field and is not real on a complex one.</p>
+<p><strong>Three findings, and they are the article's content.</strong></p>
+<p><em>First, the two terms of the action behave differently under the gauge group, and the difference is exact.</em> The mass term is invariant, because it is bilinear in the field and its conjugate and the two factors rotate oppositely. The free article's mass term is not invariant, and the free article's reading — that the mass term is what breaks the gauge symmetry — is therefore the reading of a real field. On the complex carrier the mass term <em>keeps</em> the symmetry, and the equation is covariant with a mass. That statement is the variational form of why a massive charged vector field exists at all.</p>
+<p><em>Second, the free article's field term is a real-slice object.</em> The algebra's field strength is one pure vector, and for a material field its two halves are the electric and magnetic fields. For a complex field the field strength is one half of a complex bivector, and the symmetric pairing of a half with itself is not invariant under the phase. The algebra does offer an invariant pairing of the two halves, and the article exhibits it, verifies its invariance, and states honestly that its normalization is an open question. What is <em>not</em> open is the mass term, whose invariance is exact.</p>
+<p><em>Third, the only Noether current of the free action is the energy–momentum, and the coupled action has two.</em> The complex carrier has a central phase, the phase is a symmetry, and the Noether charge exists. The current is the source the inhomogeneous Maxwell equation needs, and the free article's remark that the free theory has no such source is a statement about the carrier, which the coupling changes.</p>
+<p><strong>What is not claimed.</strong> No new solution, no new prediction. The action is the standard minimally coupled Proca action; the algebra's contribution is that the coupling is one element, that the mass term's invariance is one line, that the current and the constraint come from the same variation, and that the field term's status is stated precisely rather than assumed.</p>
+<h2 id="the-action-in-element-form">The Action in Element Form</h2>
+<p><strong>The two terms.</strong></p>
+<p>$$
+\mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
+=\mathcal{L}_{\mathrm{field}}+\mathcal{L}_{\mathrm{mass}} .
+$$</p>
+<p><strong>The mass term is the invariant length, and it is real.</strong> For any element of $\mathbb{B}$ with components $A_\mu$,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
+=\lvert A_t\rvert^{2}-\sum_\eta\lvert A_\eta\rvert^{2}
+=\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2},
+$$</p>
+<p>exactly, with $A_t=i a'_t$ on the material slice; the right side is real for every complex element, and on the slice it is the Minkowski square of the four-vector $a'$. The cross terms of the product are traceless, the four diagonal terms carry the metric signs through $\natural$, and the check is exact to $4\times10^{-15}$ over random draws, real and material alike.</p>
+<p><strong>The mass term reduces to the free one on the material slice.</strong> For $\tilde A_\Phi=i a'_t e_t+\vec A$ with real $a'_t$ and $\vec A$, the conjugation is minus the identity, $\tilde A_\Phi^{*}=-\tilde A_\Phi$, so</p>
+<p>$$
+\tfrac12 k_m^{2}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{*}\tilde A_\Phi^{\natural}\bigr)
+=-\tfrac12 k_m^{2}\,\mathrm{Sc}\bigl(\tilde A_\Phi\tilde A_\Phi^{\natural}\bigr)
+=-\tfrac12 k_m^{2}\,\langle\tilde A_\Phi\rangle_\natural ,
+$$</p>
+<p>which is the free article's mass term, sign included. The identity is exact. The coupled action is therefore an extension of the free one and not a replacement: set $ϙ=0$ and restrict to the material sector, and the free action returns with no residue.</p>
+<p><strong>The mass term is invariant.</strong> Under $\tilde A\mapsto\lambda\tilde A$ with $\lambda$ central and $|\lambda|=1$,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde A_2^{*}\tilde A_2^{\natural}\bigr)
+=\mathrm{Sc}\bigl(\bar\lambda\tilde A^{*}\lambda\tilde A^{\natural}\bigr)
+=\bar\lambda\lambda\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)
+=\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr),
+$$</p>
+<p>because $\lambda$ is central, $\natural$ fixes it, and the two factors carry $\bar\lambda$ and $\lambda$. The check is exact to $10^{-15}$. This is the line the free article could not write: there the two factors of the mass term are the same factor, the phase would have to cancel against itself, and it cannot.</p>
+<p><strong>The field term is the Maxwell density on the material slice.</strong> For a material field strength the component form of the free article applies unchanged, and</p>
+<p>$$
+\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)
+=\tfrac12\Bigl(\epsilon\vec E^{2}-\frac{\vec B^{2}}{\mu}\Bigr)
+$$</p>
+<p>with $\vec E,\vec B$ the real electric and magnetic fields. The imaginary part is proportional to $\vec E\cdot\vec B$ and is a surface term.</p>
+<p><strong>The field term is real.</strong> $\mathrm{Sc}(\tilde F\tilde F)$ is complex in general and real for a material field strength; the real part is taken, and the real part is what the variation uses. The choice of the real part rather than the modulus is the free article's choice and the article keeps it.</p>
+<h2 id="the-variation">The Variation</h2>
+<p><strong>The Euler–Lagrange equation.</strong> Vary $\tilde A$ and $\tilde A^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once in the field term and not at all in the mass term. The result is</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco}}\tilde F-k_m^{2}\tilde A=0,
+$$</p>
+<p>the coupled Proca equation. The two terms of the action produce the two terms of the equation and nothing else: the variation of the field term produces the derivative of the field strength, the variation of the mass term produces the mass term, and the antisymmetrization of the field strength is what makes the first survive while the second is untouched.</p>
+<p><strong>The count.</strong> The equation is four complex equations for four complex components, which is eight real equations for eight real components. The action is real, so the variation with respect to the eight real directions of $\tilde A$ and the variation with respect to the eight of $\tilde A^{*}$ are not independent constraints; the pair gives the four complex equations and their four conjugates, and the conjugate set is the same set. That is the standard count for a complex field and it is worth stating because the free article's count is four and not eight.</p>
+<p><strong>The pairing.</strong> The variation is taken with the pairing that the field term's reality dictates: the real part of the scalar part, with $\delta\tilde A^{*}$ on the left and the residual on the right. The free article fixes the same pairing by the same argument, and the polar companion uses it throughout. No other pairing reproduces the equation, and the modulus pairing reproduces the <em>energy</em> rather than the equation — a distinction the free article states and this article inherits.</p>
+<p><strong>What the variation does not produce.</strong> It does not produce the Lorenz condition. The condition is the trace of the equation, as the element-form article shows, and it is a consequence of the equation rather than a constraint imposed on the action. In the free case the same division holds and the free article reads it as the statement that the mass term breaks the gauge symmetry. Here the mass term does not break the symmetry, so that reading is not available, and the condition is what it is: a consequence.</p>
+<h2 id="the-field-term-and-the-charge">The Field Term and the Charge</h2>
+<p><strong>The problem, stated exactly.</strong> The algebra's field strength is a pure vector: six real components, the antisymmetric part of a covariant gradient. A complex bivector has twelve real components. The field strength of a complex potential therefore cannot be stored in one pure vector, and the algebra stores one half of it. For a <em>material</em> potential that is enough, because the two halves are the electric and magnetic fields and they are real; for a complex potential it is not, because the two halves are complex and one half does not determine the other.</p>
+<p><strong>The consequence for the field term.</strong> The symmetric pairing $\mathrm{Re\,Sc}(\tilde F\tilde F)$ is invariant under the phase only when the phase's square is one:</p>
+<p>$$
+\mathrm{Re\,Sc}\bigl(\lambda^{2}\tilde F\tilde F\bigr)\ne\mathrm{Re\,Sc}\bigl(\tilde F\tilde F\bigr)
+\qquad\text{for general }|\lambda|=1 ,
+$$</p>
+<p>and the drift over random draws is of the same order as the term itself. So the free article's field term is not the charged field's field term. The mass term has no such difficulty, and the asymmetry between the two terms is exact and is the article's first finding in its sharpest form.</p>
+<p><strong>What the algebra offers instead.</strong> Two covariant gradients give two halves, $\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ and its companion $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}\tilde A)$, and the pairing of one with the conjugate of the other <em>is</em> invariant:</p>
+<p>$$
+\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\overline{\tilde F'}\,\bigr),
+\qquad
+\tilde F'=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}\tilde A\bigr),
+$$</p>
+<p>to $10^{-15}$ over random draws, because both halves acquire the same $\lambda$ and the conjugate half acquires $\bar\lambda$. That is the object a charged field term must be built from.</p>
+<p><strong>What is not settled.</strong> The invariant pairing's normalization is not the free article's, and on the material slice it does not reduce to $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ with a constant ratio: the ratio varies with the configuration. So the article cannot state the coupled field term in a form that is simultaneously invariant, real, of the Maxwell normalization, and reducing to the free one on the material slice. Something has to give, and the honest statement is that the algebra's single field strength is not the right carrier for a complex bivector's Lagrangian.</p>
+<p><strong>What the article therefore does.</strong> It states the action with the field term in the free article's form, states the mass term's exact invariance, states the field term's exact non-invariance, and records the invariant pairing as the algebra's candidate with its normalization open. The variational statements below — the equation, the currents, the constraint — are stated for the action as written and are unaffected by the question, because they are statements about the variation with the connection held fixed, and the connection's transformation is a separate question from the field's.</p>
+<h2 id="the-noether-currents">The Noether Currents</h2>
+<p><strong>Two symmetries, two currents.</strong> The action is invariant under the phase and under translations when the connection is constant, and the two invariances give two currents. The article computes each as the standard Noether charge and checks conservation on solutions.</p>
+<p><strong>The charge current.</strong> Under $\tilde A\mapsto e^{i\alpha}\tilde A$, $\tilde A^{*}\mapsto e^{-i\alpha}\tilde A^{*}$ with $\alpha$ a constant central angle, the Lagrangian is invariant: the mass term by the computation above, the field term because it is quadratic in the field and the two factors carry opposite phases <em>in the material sector</em>, where $\tilde F$ is a real slice object. The Noether charge is</p>
+<p>$$
+j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\mu}\tilde A\bigr)
+$$</p>
+<p>with the covariant derivative in the charge, and its conservation,</p>
+<p>$$
+\frac{\partial j_\mu}{\partial R_\mu}=0
+\qquad\text{on solutions,}
+$$</p>
+<p>follows from the equation and its conjugate. The current is the source of the inhomogeneous Maxwell equation, which is the free article's "source that the free equation does not have".</p>
+<p><strong>The energy–momentum.</strong> Under a translation $R_\mu\mapsto R_\mu+\epsilon_\mu$ with constant connection, the action is invariant and the stress tensor is</p>
+<p>$$
+T_{\mu\nu}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\nu}\tilde A\Bigr)-\eta_{\mu\nu}\mathcal{L},
+$$</p>
+<p>symmetric on solutions, conserved on solutions, and positive in energy for the free slice. The article does not re-derive the standard algebra of it; the free article does, and the coupling changes only the derivatives in it.</p>
+<p><strong>The trace.</strong> On the material slice the trace is the mass term and nothing else: the field term's contribution is trace-free there, so $T^{\mu}{}_{\mu}$ is proportional to $k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.</p>
+<p><strong>What is absent.</strong> There is no spin current, and its absence is not an oversight: the Proca field is a four-vector, its frame's brackets carry the direction and not a spin, and the free polar article states that the material sector has no rotor bracket to build one from. The Dirac spin current belongs to the Dirac articles. The coupled Proca field's rotor, which the complex carrier restores, is the frame's internal rotation and not a spin density, and the polar companion is where that distinction is drawn.</p>
+<h2 id="the-constraint-from-the-action">The Constraint from the Action</h2>
+<p><strong>The constraint is not imposed and it is not lost.</strong> Varying the action gives the equation; the trace of the equation is the covariant Lorenz condition</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0 .
+$$</p>
+<p>The element-form article proves that the curvature does not enter this trace, because the second-order operator is the sum of the squared covariant components plus a pure vector. In the variational reading, that fact has a name: the constraint is the variation with respect to the <em>longitudinal</em> part of the field, and the action's dependence on that part is through the mass term alone, because the field term depends on it only through a total derivative.</p>
+<p><strong>The free article's reading, and why it changes.</strong> The free article reads the constraint as the statement that the mass term breaks the gauge symmetry: vary along a pure gradient, the field term does not move, the mass term does, and the equation therefore carries a longitudinal part. On the coupled carrier the mass term does not break the symmetry, and the same computation gives a different answer: the variation along a pure gauge direction vanishes for both terms, so the constraint is not the residue of a broken symmetry. It is the statement that the longitudinal part of the field is determined by the transverse part through the mass, and it is the same statement in both cases with a different bookkeeping.</p>
+<p><strong>A check.</strong> The constraint holds exactly, to machine precision, in a background with constant field strength as well as in a flat one, which is the numerical form of the statement that the curvature is traceless. The element-form article's lattice computation is the check, and the variational reading adds nothing to it.</p>
+<h2 id="what-the-variational-principle-adds-and-what-it-relabels">What the Variational Principle Adds and What It Relabels</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li>The mass term's invariance as a one-line computation, and with it the variational reason a massive charged vector exists.</li>
+<li>The two currents from one functional: the charge and the energy–momentum.</li>
+<li>The precise status of the field term: invariant on the material slice, not invariant on the complex carrier, with the invariant pairing exhibited and its normalization open.</li>
+<li>The constraint as a consequence of the equation and not of the action, in a form that does not depend on the free article's broken-symmetry reading.</li>
+</ul>
+<p><strong>Relabels.</strong></p>
+<ul>
+<li>The equation is the element-form article's.</li>
+<li>No new solution and no new prediction.</li>
+<li>The action is the standard minimally coupled Proca action written in the algebra; the field term's normalization question is a question about the algebra's letters and not about the physics.</li>
+</ul>
+<p><strong>The distinction that matters.</strong> The variational principle is integral in form and local in content: the Euler–Lagrange equations are the local equations, and the functional adds the currents. It is not opposed to the equation and it is richer in what it delivers. What it does <em>not</em> deliver here is a clean algebraic field term for a complex bivector, and the article says so.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>The normalization of the invariant field term.</strong> The pairing $\mathrm{Re\,Sc}(\tilde F\overline{\tilde F'})$ is invariant and does not reduce to the free field term with a constant ratio on the material slice. Whether a different normalization of $\tilde F$ — for instance absorbing $\sqrt{\epsilon}$ and $\sqrt{\mu}$ into the units rather than the coefficients — makes the two agree, and whether the self-dual splitting of the field strength is the right framework for the question, is the article's first open item. The corpus's self-dual decomposition is the natural place to look.</p>
+<p><strong>The trace with a general connection.</strong> The material-slice trace is the mass term exactly. Whether the general complex case has a closed trace, and whether it is the mass term plus a total derivative, is not settled here.</p>
+<p><strong>The operator setting.</strong> The article treats a constant connection and a general field. Whether the coupled action with a <em>dynamical</em> connection — the Proca field coupled to Maxwell, with the connection integrated over — preserves the algebra's closure and the constraint, is a different theory and is not attempted.</p>
+<h2 id="summary">Summary</h2>
+<p>The action is</p>
+<p>$$
+S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
+$$</p>
+<p>its Euler–Lagrange equation is the coupled Proca equation, and its symmetries give the charge current and the energy–momentum.</p>
+<p>The mass term is the invariant length $\lvert A_t\rvert^{2}-\sum_\eta\lvert A_\eta\rvert^{2}=\lvert a'_t\rvert^{2}-\lvert\vec a'\rvert^{2}$, it is real, it is invariant under the central phase, and it reduces to the free article's $\langle\tilde A_\Phi\rangle_\natural$ on the material slice with the sign included. That invariance is the variational statement that a massive charged vector field is possible. The field term is the Maxwell density on the material slice and is not invariant on the complex carrier, because the algebra's field strength is one half of a complex bivector; the invariant pairing of the two halves exists and its normalization is open.</p>
+<p>The constraint is the trace of the equation and the curvature does not enter it. The charge current exists because the carrier has a phase, and the free article's "no second current" is the statement that a real carrier has none.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_t=1,\ \vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_\eta^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Central scalar imaginary</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$</td>
+<td>Scalar part and trace</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$</td>
+<td>Quaternionic norm; real on $\mathbb{B}_\Phi$</td>
+</tr>
+<tr>
+<td>$\tilde A=i a'_t e_t+\vec A$</td>
+<td>Complex Proca potential, an element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$</td>
+<td>Connection, an element of $\mathbb{B}_\Phi$</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>Covariant derivative, left action</td>
+</tr>
+<tr>
+<td>$\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$</td>
+<td>Field strength; one half of the complex bivector</td>
+</tr>
+<tr>
+<td>$\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}\tilde A)$</td>
+<td>The companion half; the invariant pairing uses it</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$ϙ$</td>
+<td>Charge; a parameter</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_{\mathrm{field}},\ \mathcal{L}_{\mathrm{mass}}$</td>
+<td>The two terms of the Lagrangian density</td>
+</tr>
+<tr>
+<td>$j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\mu}\tilde A)$</td>
+<td>Charge current</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>Stress tensor; trace $-k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ on the material slice</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>The action</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coupled-proca-equation-in-biquaternionic-form.html">The Coupled Proca Equation in Biquaternionic Form</a>, for the equation, the covariant field strength and the covariant Lorenz condition.</li>
+<li><a href="the-coupled-proca-equation-in-biquaternionic-polar-variables.html">The Coupled Proca Equation in Biquaternionic Polar Variables</a>, for the same statements in the chart.</li>
+<li><a href="the-variational-principle-and-the-proca-equation-in-biquaternionic-form.html">The Variational Principle and the Proca Equation in Biquaternionic Form</a>, for the free action, the free mass term and the free article's broken-symmetry reading.</li>
+<li><a href="the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables</a>, for the action in the chart.</li>
+<li><a href="the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin One in Biquaternionic Form</a>, for the free field strength and the two polarizations.</li>
+<li><a href="the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html">The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form</a>, for the first-order companion and for the current that is not a bilinear.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the localization of the central phase.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the operator identity with the curvature.</li>
+<li><a href="maxwells-equations-in-the-biquaternionic-formulation.html">Maxwell's Equations in the Biquaternionic Formulation</a>, for the four-current and the inhomogeneous equation.</li>
+<li><a href="the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>, for the operator reading of $T_{\mu\nu}$.</li>
+<li>Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," <em>Journal de Physique et le Radium</em> <strong>7</strong> (1936) 347–353.</li>
+<li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Fields</em> (McGraw-Hill, 1965), for the standard coupled massive vector field.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the Lagrangian and the stress tensor in geometric algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

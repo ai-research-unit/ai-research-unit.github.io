@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coupled Proca Equation in Biquaternionic Polar Variables — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coupled-proca-equation-in-biquaternionic-polar-variables"><strong>The Coupled Proca Equation in Biquaternionic Polar Variables</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article substitutes the polar word into the coupled Proca equation and reads what the substitution makes visible. It is the polar companion of <em>The Coupled Proca Equation in Biquaternionic Form</em>, and it depends on three articles: the element form of the coupled equation for the equation, <em>The Proca Equation in Biquaternionic Polar Variables</em> for the free word and the two brackets, and <em>The Polar Decomposition of an N-Regular Biquaternion</em> for the word that the complex carrier requires.</p>
+<p><strong>The substitution.</strong></p>
+<p>$$
+\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+$$</p>
+<p>with $r>0$, $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the units and no constraint is lost or added.</p>
+<p><strong>The word is not the free article's word, and the difference is the article's first point.</strong> The free Proca field is real, its word has two factors and four parameters, and it splits into two branches according to the sign of the Minkowski square. The coupled field is complex, its square is not a sign, the branch split has nothing to split, and the word that replaces it has four factors and eight parameters. The two factors the free word had to drop — the central phase and the rotor — return with the charge, and §<em>The Word</em> proves that in the algebra rather than asserting it.</p>
+<p><strong>Three things are established.</strong></p>
+<p><em>First, the coupling enters the logarithmic derivative as one central scalar per slot.</em> Because each component of the connection is a central scalar, $\frac{iϙ}{\hbar}A_\mu$ passes through $\tilde A^{-1}$ and joins the logarithmic derivative without disturbing its types. It merges with the two central brackets — the scale and the phase — and it cannot reach either of the two frame brackets. That is a statement of type and not of size: a central scalar cannot produce a real vector part and cannot produce a Hermitian vector.</p>
+<p><em>Second, the gauge transformation is a translation of one parameter.</em> Multiplication of the field by a central unit multiplies the word and acts on $\vartheta_{\mathrm{pha}}$ alone. Infinitesimally that is exact with every other parameter fixed; the check is exact to machine precision. The chart therefore linearises the gauge group, and the connection's whole content in the chart is that one coordinate is not physical.</p>
+<p><em>Third, the equation in the chart is second order and not first order, and that is where this article parts company with the Dirac and Schrödinger companions.</em> Those fields are first order in the material time, their actions are first order, and the chart exposes a constrained system whose momenta partly vanish. The Proca field is second order in the material time, its action is second order, and no momentum vanishes identically. The chart therefore has no primary constraint to exhibit, and the honest statement of this article is that the polar form of the coupled Proca theory is a change of coordinates on a second-order problem and not a constraint analysis.</p>
+<p><strong>What is not here.</strong> The action, the Noether currents and the Euler–Lagrange equations are the variational companion's subject. This article's subject is the equation and its variables, and it states the polar reading of the same numbers in the places where the chart is sharper.</p>
+<h2 id="the-word">The Word</h2>
+<p><strong>The free word had two factors.</strong> The free article's result is</p>
+<p>$$
+\tilde A_\Phi=
+\begin{cases}
+\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}), & \langle\tilde A_\Phi\rangle_\natural=-r^{2}<0,\\[2pt]
+r\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u)\,, & \langle\tilde A_\Phi\rangle_\natural=+r^{2}>0,
+\end{cases}
+$$</p>
+<p>with the rapidity signed on the spacelike branch and the axis locked to the direction of $\vec A$ there. Four parameters on each branch, and the two branches keyed to the sign of a real norm.</p>
+<p><strong>Why the free word had to drop the phase.</strong> The central phase factor $e^{i\vartheta}$ maps the material sector off itself: $i$ times an anti-Hermitian element is Hermitian, so a phase-rotated material element is not a material element. The phase is therefore not available to a real field, and the free word's missing factor is missing for that reason and no other. The free article states the same fact as the absence of a central bracket in the logarithmic derivative.</p>
+<p><strong>Why the free word had to drop the rotor's axis.</strong> The real field's frame has one vector in it, the boost's, and the direction of $\vec A$ is that vector; the rotor has nothing left to rotate, so it collapses to the direction on one branch and to a sign on the other. The count is exact: four components, four parameters.</p>
+<p><strong>The coupled word restores both.</strong> On the complex carrier the phase is available, because $\mathbb{B}$ is closed under multiplication by $i$; and the frame is a full unit rather than a boost, so the rotor keeps its axis. The count is exact again: eight real components, eight parameters. The two restorations are one restoration, and the statement of it is a norm computation.</p>
+<p><strong>The norm of the word.</strong> The quaternionic norm of the coupled word is the phase squared times the scale squared:</p>
+<p>$$
+\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}},
+$$</p>
+<p>exactly, for every value of the other six parameters. The check is exact to machine precision on random draws. Two consequences follow and they are the article's structural core.</p>
+<p><strong>The N-regular set is $r>0$ and nothing else.</strong> The norm vanishes only at $r=0$, so the chart's domain is the open half-line in $r$ times the six angular parameters, and the zero-divisor cone is the boundary $r=0$. The free article's cone was reached by a lightlike four-vector and it was a genuine boundary of the field; here it is the origin of the polar chart and only that.</p>
+<p><strong>The phase is the argument of the norm, and that is why the charge exists.</strong> For a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$. For a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\vartheta_{\mathrm{pha}}$, a continuous coordinate. The free field's discrete sign and the coupled field's continuous phase are the same slot of the same word, read on the two carriers; the charge is what that slot becomes when it can move continuously.</p>
+<p><strong>The two branches are gone and nothing replaces them.</strong> The free article's branch split is the sign of the norm, and the coupled norm has no sign. There is no third word and no second chart: the four-factor word covers the whole N-regular set of $\mathbb{B}$, both the elements whose Minkowski square is positive and those whose square is negative and those whose square is neither, because the square is now a complex number and complex numbers have no sign.</p>
+<h2 id="the-covariant-logarithmic-derivative">The Covariant Logarithmic Derivative</h2>
+<p><strong>The identity.</strong> Differentiate the word and divide by it, and add the connection:</p>
+<p>$$
+\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde A
+=\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=\frac{\partial\ln r}{\partial R_\mu}
++i\frac{\partial\vartheta_{\mathrm{pha}}}{\partial R_\mu}
++\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}\Big|_{\text{frame}}
++\frac{i\,ϙ}{\hbar}A_\mu .
+$$</p>
+<p>The last written term is the frame's share, and the point of the display is that the connection's term is separable: it is one central scalar per component, added after the word has been differentiated, with no factor of $\tilde A$ or $\tilde A^{-1}$ attached to it. That separability is not an approximation. It follows from $\tilde A_\Phi$ having central scalar coefficients, which is the abelian case, and it fails the moment the connection's coefficients are elements rather than scalars.</p>
+<p><strong>The frame's share in the four-factor word.</strong> Write $\tilde U$ for the boost and $\tilde u$ for the rotor, and $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, $\rho_\mu=\tilde u^{-1}\partial_\mu\tilde u$. Then</p>
+<p>$$
+\tilde A^{-1}\partial_\mu\tilde A
+=\frac{\partial_\mu r}{r}+i\partial_\mu\vartheta_{\mathrm{pha}}
++\tilde u^{-1}\Gamma_\mu\tilde u+\rho_\mu .
+$$</p>
+<p>The four terms have four different algebraic types: a real central scalar; a central imaginary number; a Hermitian vector conjugated by the rotor; a real vector part. Those are the four brackets of the polar corpus, and the word's four factors produce them one for one.</p>
+<p><strong>The connection touches two of the four.</strong> The added term's temporal slot is $\frac{iϙ}{\hbar}A_t=-\frac{ϙ}{\hbar}a'_t$ for a material connection $A_t=i a'_t$, a <em>real</em> central number; its spatial slots are $\frac{iϙ}{\hbar}A_\eta$, central imaginary numbers because $A_\eta$ is real. So in every slot the connection is central, real in the temporal one and imaginary in the spatial ones, and the central scalars are spanned by the scale bracket and the phase bracket. The connection therefore merges with those two and with nothing else. In particular it cannot produce a Hermitian vector, so it cannot reach the boost bracket, and it cannot produce a real vector part, so it cannot reach the rotor bracket.</p>
+<p><strong>The physical reading of that type statement.</strong> The connection shifts the four-momentum and does nothing else at this order. Slot by slot,</p>
+<p>$$
+\hbar c\,\kappa_t=E+ϙ c\,a'_t,
+\qquad
+\hbar\vec\kappa=\vec p+ϙ\vec A,
+$$</p>
+<p>with $E=-\hbar c\,\partial\vartheta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\vartheta_{\mathrm{pha}}$ the free readings. The scalar and vector potentials are the two slots of one element, so the two classical substitutions are one substitution and no relative sign can be chosen. That is the coupled Dirac article's statement in the bosonic case, and it holds here for the same reason: the connection is one element and its slots are the algebra's.</p>
+<p><strong>What the type statement does not say.</strong> It does not say that the potential cannot affect the frame. It says that the potential cannot affect the frame <em>at the level of the logarithmic derivative</em>, that is, not through the additive term. The frame responds to the potential through the equation, because the equation relates the brackets to each other and a shift in one moves the others. The distinction is the difference between the coupling's location and its consequences, and the free Dirac polar article makes the same distinction for the spin.</p>
+<p><strong>A warning about the types.</strong> The central scalars of the temporal slot and of the spatial slots are not the same type: the temporal slot's share is real and the spatial slots' share is imaginary, because the material connection's temporal coefficient is imaginary and its spatial coefficients are real. A table that assigns the connection to "the central imaginary bracket" is therefore right for the spatial slots and wrong for the temporal one, and the article does not draw such a table.</p>
+<h2 id="the-gauge-transformation-is-a-phase-translation">The Gauge Transformation Is a Phase Translation</h2>
+<p><strong>The exact infinitesimal statement.</strong> Let $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\lambda\tilde A$. Then</p>
+<p>$$
+\tilde A_2=r\,e^{i(\vartheta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
+\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,
+\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+$$</p>
+<p>so the gauge transformation is the translation of $\vartheta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.</p>
+<p><strong>Why it is exact.</strong> $\lambda$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.</p>
+<p><strong>What it says about the connection.</strong> For a pure-gauge connection, $A_\mu=\partial_\mu\Lambda$, the added term is $\frac{iϙ}{\hbar}\partial_\mu\Lambda$, so</p>
+<p>$$
+i\frac{\partial\vartheta_{\mathrm{pha}}}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=i\frac{\partial}{\partial R_\mu}\Bigl(\vartheta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr),
+$$</p>
+<p>and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance, and it is a statement about the angle and not about the field.</p>
+<p><strong>The finite statement and its one caveat.</strong> For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{gau}})}$ with the sum outside the range is a unit whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the gauge group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.</p>
+<p><strong>The contrast with the element form.</strong> In the element form the gauge transformation multiplies the field by a central unit and that is that. In the chart the same operation is the motion of one coordinate, and the coordinate is the argument of the norm. The two statements are the same statement, and the second is the reason the operation is called a phase transformation.</p>
+<h2 id="the-equation-in-the-chart">The Equation in the Chart</h2>
+<p><strong>The second-order operator.</strong> The coupled equation is second order once the field strength is eliminated, and in the chart the elimination reads</p>
+<p>$$
+\tilde A^{-1}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde A
+=\sum_\mu\bigl(\tilde A^{-1}e_\mu^{\natural}\tilde A\bigr)\,
+\tilde\nabla_{\mathrm{gco},\mu}\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco}}\tilde A\Bigr)
++\text{(the frame's derivative terms)} ,
+$$</p>
+<p>that is: the second-order operator becomes the first-order brackets contracted with the units as the field's own frame sees them, $\tilde A^{-1}e_\mu^{\natural}\tilde A$. The identity is exact and it is the chart's version of the element form's statement that the covariant derivatives are central: the units are conjugated by the field, the derivatives are not.</p>
+<p><strong>What the frame conjugation does.</strong> The four units conjugated by $\tilde A$ are the field's own tetrad. The contraction is therefore a contraction with a <em>field-dependent</em> frame, and that is the chart's real content: the equation is the free one written in the field's frame, with the connection shifted. The free article's two displays — one real equation for the modulus and one traceless equation for the frame — are the two halves of that contraction, and the coupling shifts both.</p>
+<p><strong>The mass term in the chart.</strong> The invariant length is a function of the scale and of the four frame angles, and the chart makes two facts about it exact.</p>
+<p><em>The rotor is what costs.</em> With the rotor trivial the length is the square of the scale,</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=r^{2}
+\qquad\text{whenever } \theta_{\mathrm{axr}}=0,
+$$</p>
+<p>for every rapidity and every boost axis, to $10^{-14}$ over random draws. The reason is that the boost is a Lorentz transformation of the four-vector and the invariant length is Lorentz invariant, so the rapidity cannot enter.</p>
+<p><em>The rapidity costs nothing when the two axes are collinear.</em> With the rotor engaged and its axis parallel or antiparallel to the boost's axis, the ratio $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/r^{2}$ is independent of the rapidity: it is $0.7648$ at rapidity $0$, $2$, and $5$ alike for $\theta_{\mathrm{axr}}=0.7$. With the axes perpendicular the same angle gives $0.7648$ at zero rapidity, $0.7010$ at rapidity $1$, and $0.4401$ at rapidity $2$.</p>
+<p><strong>What the chart does not give.</strong> The general value is not displayed here as a closed expression in the six angles: it is the scalar part of a product of four units, and its interpolation between the two limits above is the frame's business rather than the scale's. What the chart does give is the division: the mass term is the one object in the action that sees the frame's non-Lorentz part, and it sees it only through the angle between the rotor's axis and the boost's.</p>
+<p><strong>The constraint in the chart.</strong> The trace of the equation is the covariant Lorenz condition, and in the chart it is one real equation among the eight:</p>
+<p>$$
+\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0,
+$$</p>
+<p>which is the statement that the covariant divergence of the word vanishes. The element form computes it; the chart's contribution is the reading: the divergence is built from the scale and phase brackets and from the connection's temporal slot, so the constraint is a relation among the three central objects and the modulus, and the frame's brackets do not enter it. That is why the constraint is exactly the one the element form finds: the curvature is traceless, and the trace is blind to the frame.</p>
+<h2 id="what-the-chart-shows-and-what-it-hides">What the Chart Shows and What It Hides</h2>
+<p><strong>Shows.</strong></p>
+<ul>
+<li>The count: eight parameters, eight components, and the four-factor word matching the four types of the logarithmic derivative.</li>
+<li>The phase as the argument of the norm, and the free article's discrete sign as the real slice of it.</li>
+<li>The connection's location: two central slots and no others, with the temporal slot real and the spatial ones imaginary.</li>
+<li>The gauge transformation as one coordinate's translation, infinitesimally exact.</li>
+<li>The mass term's dependence on the frame's non-Lorentz part, and its independence of the rapidity when the rotor's axis lies along the boost's.</li>
+</ul>
+<p><strong>Hides.</strong></p>
+<ul>
+<li>The constraint structure. The Proca field is second order in the material time and no momentum vanishes identically, so the chart has no primary constraint to exhibit. The Schrödinger and Dirac companions' constrained systems have no analogue here, and the difference is the order of the equation and not the choice of variables.</li>
+<li>The field strength. $\tilde F$ is a derived object in the chart, built from the brackets and the frame's conjugation, and the chart does not simplify its bilinear dependence on the connection.</li>
+<li>The current. The charge current is a bilinear in the field and its conjugate, and the chart's expression for it is longer than the element form's without being more informative.</li>
+</ul>
+<p><strong>The honest ledger.</strong> The chart is a coordinate system, and its virtue is that the gauge group becomes one visible coordinate and the coupling becomes four visible slots. Its cost is that the equation becomes a contraction with a field-dependent frame, and every statement about the field strength becomes a statement about that frame. Neither form is simpler; the chart is <em>sharper about the coupling</em> and the element form is <em>sharper about the algebra</em>.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Whether the chart's mass-term formula has a closed form in all six angular parameters.</strong> The article states the exact reduction to $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ and the exact value $r^{2}$ on the trivial-rotor slice. The general expression is a product of two unit elements' squares and it is not displayed; whether it factorises into a rapidity part and an angle part is not settled here.</p>
+<p><strong>Whether the constraint is the whole constraint.</strong> The trace of the equation is one real equation. Whether the traceless part of the equation, together with it, is equivalent to the four real equations of the element form in every configuration — and not merely on the Lorenz surface — is the chart's version of the free article's question about the two displays, and it is not answered here.</p>
+<p><strong>The operator setting.</strong> The article treats a constant connection and a general field. The operator setting, in which the connection is a function and the field strength has curvature, is the variational companion's subject, and the chart's treatment of a general connection is not attempted.</p>
+<h2 id="summary">Summary</h2>
+<p>The coupled Proca field is written</p>
+<p>$$
+\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+$$</p>
+<p>with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is the single line that shows it.</p>
+<p>The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$ is one substitution in one element. The gauge transformation is the translation of $\vartheta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $r^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>The word: scale, central phase, boost, rotor</td>
+</tr>
+<tr>
+<td>$r>0$</td>
+<td>Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$</td>
+</tr>
+<tr>
+<td>$\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
+<td>Central phase; the gauge-dependent coordinate</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}\in S^{2}$</td>
+<td>Rapidity and axis of the boost</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}\in S^{2}$</td>
+<td>Angle and axis of the rotor</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$</td>
+<td>The algebra, its material and informational sectors</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$</td>
+<td>The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$</td>
+<td>The central per-component covariant derivative</td>
+</tr>
+<tr>
+<td>$\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, $\rho_\mu=\tilde u^{-1}\partial_\mu\tilde u$</td>
+<td>The frame's two logarithmic derivatives</td>
+</tr>
+<tr>
+<td>$\tilde A^{-1}\partial_\mu\tilde A$</td>
+<td>The four brackets: scale, phase, boost, rotor</td>
+</tr>
+<tr>
+<td>$\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$</td>
+<td>Covariant wavevector; the one substitution</td>
+</tr>
+<tr>
+<td>$\kappa_t,\vec\kappa$</td>
+<td>Its components; $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p+ϙ\vec A$</td>
+</tr>
+<tr>
+<td>$\lambda=\exp(i\vartheta_{\mathrm{gau}})$</td>
+<td>Central gauge unit; $\vartheta_{\mathrm{gau}}=ϙ\Lambda/\hbar$</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>Curvature of the connection; traceless, so blind to the constraint</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coupled-proca-equation-in-biquaternionic-form.html">The Coupled Proca Equation in Biquaternionic Form</a>, the element form this article re-coordinatises.</li>
+<li><a href="the-proca-equation-in-biquaternionic-polar-variables.html">The Proca Equation in Biquaternionic Polar Variables</a>, for the free two-factor word, the two branches and the two brackets.</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the four-factor word and its parameter count.</li>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the localization of the central phase.</li>
+<li><a href="the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a>, for the operator identity with the curvature.</li>
+<li><a href="the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Coupled Dirac Equation in Biquaternionic Polar Variables</a>, for the same type statement in the first-order sector.</li>
+<li><a href="the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-form.html">The Variational Principle and the Coupled Proca Equation in Biquaternionic Form</a>, for the action and the currents in the element form.</li>
+<li><a href="the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables</a>, for the action in the chart.</li>
+<li><a href="the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables.html">The Variational Principle and the Proca Equation in Biquaternionic Polar Variables</a>, for the free action in the chart.</li>
+<li><a href="spin-hydrodynamics-in-biquaternionic-form.html">Spin Hydrodynamics in Biquaternionic Form</a>, for the frame's brackets as fluid variables.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the rotor and the frame in geometric algebra.</li>
+<li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Fields</em> (McGraw-Hill, 1965), for the standard coupled massive vector field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
