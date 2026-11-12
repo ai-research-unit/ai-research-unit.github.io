@@ -14,7 +14,7 @@ carries eight real parameters, and it is a bijection onto the N-regular set. The
 
 **Three things are established.**
 
-*First, the word is piecewise.* The central angle $\theta_{\mathrm{pha}}$ is not a parameter of the material sector. Anti-Hermiticity pins it to $\pi/2$ on timelike field values and to $0$ on spacelike ones, and it kills the rotor, leaving its sign as a discrete label. The two branches are
+*First, the word is piecewise.* The central angle $\theta_{\mathrm{pha}}$ is not a parameter of the material sector: a real four-vector has no phase to carry one. The word is the polar decomposition of a real four-vector, and its two branches are the two signs of the Minkowski form. On the timelike branch the frame is a boost and the sign of the scalar potential is a discrete label; on the spacelike branch the frame is a boost whose axis is locked to the direction of $\vec A$, and the direction replaces the rotor. The two branches are
 
 $$
 \tilde A_\Phi=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}\quad(\langle\tilde A_\Phi\rangle_\natural<0),
@@ -40,7 +40,7 @@ and for a spacelike one the same expression with the frame conjugated by $\hat u
 $$
 \bigl(\Box_\Phi-k_m^2\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
 \qquad
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0,
+\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}(\Gamma_\mu^2)\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0,
 $$
 
 the second in the traceless part. The first is a Klein–Gordon equation for the scale with a source built from the frame's Maurer–Cartan form; the second is the transport of the frame. For a fixed boost axis they reduce to a pair with a conservation-law structure, $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$.
@@ -59,50 +59,59 @@ the Minkowski square in the corpus's signature. The derivatives are $\partial/\p
 
 **A count first.** A general element of $\mathbb{B}$ has eight real components, and the four factors of the Schrödinger word supply exactly eight parameters: the scale, the central angle, the three of the boost (a rapidity and two angles) and the three of the rotor. That is why the Schrödinger word is a bijection. An element of $\mathbb{B}_{\Phi}$ has four real components, and the same eight parameters would be four redundant.
 
-**The redundancy is not a gauge freedom, and it is not resolved by discarding parameters by hand.** Anti-Hermiticity is four real conditions. Imposing them on the eight-parameter word leaves a four-parameter family, and the family is what has to be found. Two of the four conditions annihilate the central angle and the rotor angle; the remaining two tie the rotor's axis to the boost's and fix the sign. The result is the two-branch word of the next section, and its derivation is a chain of four short steps.
+**The redundancy is four real conditions, and they are the easy half.** Anti-Hermiticity is the four conditions $\tilde A_\Phi^{*}=-\tilde A_\Phi$, and imposing them on the eight-parameter word leaves a four-parameter family. But on $\mathbb{B}_\Phi$ the conditions hold identically: every element $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $a'_t$ and real $\vec A$ satisfies $\tilde A_\Phi^{*}=\overline{\tilde A_\Phi}^{\natural}=(-i\,a'_t+\vec A)^{\natural}=-i\,a'_t-\vec A=-\tilde A_\Phi$. So the type equation is not where the work is. The work is the **polar decomposition of a real four-vector**, and the branches of the word are the signs of its Minkowski form. Two plausible short arguments reach the branches the hard way and both are worth recording, because each fails for a reason that matters.
 
-**Step one: the central angle is fixed, not free.** Write the general element as $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U\tilde u_{\mathrm r}$ with $\tilde U$ Hermitian positive of unit norm and $\tilde u_{\mathrm r}$ a real unit quaternion. The type of $\tilde\Xi$ under ${}^{*}$ is decided by the two central factors: $e^{i\theta_{\mathrm{pha}}}$ is a complex number and $\tilde U$ is Hermitian, so $\tilde\Xi$ is anti-Hermitian only if the product $e^{i\theta_{\mathrm{pha}}}\tilde U\tilde u_{\mathrm r}$ has no Hermitian part. Since $\tilde u_{\mathrm r}$ is anti-Hermitian and $\tilde U$ Hermitian, the product $\tilde U\tilde u_{\mathrm r}$ is neither; the only central phase that makes $e^{i\theta}\tilde U\tilde u_{\mathrm r}$ anti-Hermitian for every $\tilde U$ and every $\tilde u_{\mathrm r}$ is $\theta=\pi/2$, where the factor is $i$ and the conjugation of $i\tilde U\tilde u_{\mathrm r}$ is $\overline{i\tilde U\tilde u_{\mathrm r}}^{\natural}=(-i)(\tilde U)(-\tilde u_{\mathrm r})=i\tilde U\tilde u_{\mathrm r}$, which is the identity only for the rotor that commutes with $\tilde U$. The commuting rotor is $\pm e_t$. So
-
-$$
-\tilde\Xi=r\,e^{i\pi/2}\,\tilde U(\pm e_t)=\pm\,i\,r\,\tilde U ,
-$$
-
-and that is the timelike branch. The two signs are the rotor's, not the phase's.
-
-**Step two: the timelike branch is the positive Hermitian sector multiplied by $i$.** The element $i\tilde A_\Phi$ is Hermitian whenever $\tilde A_\Phi$ is anti-Hermitian, and
+**First trap: the norm changes sign under multiplication by $i$.** The quaternion conjugation $\natural$ acts on the quaternion factor and leaves the central $i$ alone, $(i\tilde Q)^{\natural}=i\tilde Q^{\natural}$, so
 
 $$
-\langle i\tilde A_\Phi\rangle_\natural=i\tilde A_\Phi\,(i\tilde A_\Phi)^{\natural}=i\tilde A_\Phi\,(-i)\tilde A_\Phi^{\natural}=\tilde A_\Phi\tilde A_\Phi^{\natural}=\langle\tilde A_\Phi\rangle_\natural ,
+\langle i\tilde A_\Phi\rangle_\natural=i\tilde A_\Phi\,(i\tilde A_\Phi)^{\natural}=i\tilde A_\Phi\,i\tilde A_\Phi^{\natural}=i^{2}\langle\tilde A_\Phi\rangle_\natural=-\langle\tilde A_\Phi\rangle_\natural .
 $$
 
-so the norm is unchanged. A Hermitian element of positive norm is $r$ times a boost, $i\tilde A_\Phi=r\tilde U_{\Psi,\mathrm b}$ with $r>0$, and multiplying by $-i$ returns
+The norm of $i\tilde A_\Phi$ is the negative of the norm of $\tilde A_\Phi$. On timelike field values, where $\langle\tilde A_\Phi\rangle_\natural=-r^{2}$, the element $i\tilde A_\Phi$ is Hermitian with norm $+r^{2}$; on spacelike ones it is Hermitian with norm $-r^{2}$. Writing $(i\tilde A_\Phi)^{\natural}=-i\tilde A_\Phi^{\natural}$ instead — the natural guess, and the wrong one — reverses the branches.
+
+**Second trap: the rotor is unitary, not anti-Hermitian.** A real unit quaternion satisfies $\tilde u_{\mathrm r}^{*}=\overline{\tilde u_{\mathrm r}}^{\natural}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$, so it is unitary, neither Hermitian nor anti-Hermitian, and $\tilde u_{\mathrm r}^{*}=-\tilde u_{\mathrm r}$ only for $\tilde u_{\mathrm r}=\pm e_t$ and $\pm\hat u$. With this in hand the counting can be done honestly, and it is worse than awkward: for a generic boost and a generic rotor **no** central angle makes $e^{i\theta}\tilde U\tilde u_{\mathrm r}$ anti-Hermitian. On a sample with rapidity $0.9$ and rotor angle $0.6$ the least residual $\sup\lvert\tilde Q^{*}+\tilde Q\rvert$ over $\theta$ is $0.56$. The only rotor for which a phase works is $\pm e_t$, and then $\theta=\pm\pi/2$ exactly — the endpoints of the Schrödinger word's phase range, not interior points of it. The material sector's word is therefore a chart of its own: the timelike branch sits on the boundary of the Schrödinger phase range, and the spacelike branch is not in that range at all.
+
+**The route that works: the Minkowski polar decomposition.** Write $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ and read it as the real four-vector $(a'_t,\vec A)$. The quaternionic norm is the Minkowski form,
 
 $$
-\tilde A_\Phi=-i\,r\,\tilde U_{\Psi,\mathrm b}=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b},\qquad \varepsilon=\pm1 .
+\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^{2}+\vec A^{2},
 $$
 
-The sign $\varepsilon$ appears because a Hermitian element of positive norm is $r\tilde U$ or $-r\tilde U$ according to the sign of its scalar part, and the scalar part of $i\tilde A_\Phi$ is $-a'_t$.
+real and indefinite, and it is the only invariant the field carries. The two branches of the word are the two signs of this form, and each branch is the polar decomposition of a real four-vector of that character.
 
-**Step three: the spacelike branch is a boost acting on a real direction.** For a spacelike field value the Hermitian element $i\tilde A_\Phi$ has negative norm and is not of the form $r\tilde U$. Write instead $\tilde A_\Phi=r\tilde U\hat u$ with $\hat u$ a real unit vector. Then
-
-$$
-(\tilde A_\Phi)^{*}=\overline{\tilde A_\Phi}^{\natural}=r\,\hat u^{\natural}\tilde U^{\natural}=r(-\hat u)\tilde U ,
-$$
-
-and this equals $-\tilde A_\Phi=-r\tilde U\hat u$ precisely when $\hat u$ commutes with $\tilde U$. That is the locking: the boost axis is parallel to the direction $\hat u$. With $\tilde U=\cosh\frac{\theta}{2}+i\sinh\frac{\theta}{2}\hat u$,
+**Timelike branch.** Let $\langle\tilde A_\Phi\rangle_\natural=-r^{2}$ with $r>0$. Then $i\tilde A_\Phi$ is Hermitian and, by the sign identity above, of norm $+r^{2}$. A Hermitian element $\tilde H=h_0+i\vec h$ has $\langle\tilde H\rangle_\natural=h_0^{2}-\vec h^{2}$, so a Hermitian element of positive norm has $\lvert h_0\rvert>\lvert\vec h\rvert$, and $\tilde H/\sqrt{\langle\tilde H\rangle_\natural}$ is Hermitian and unitary — a boost. Hence $i\tilde A_\Phi=\pm r\tilde U_{\Psi,\mathrm b}$, and
 
 $$
-\tilde A_\Phi=r\Bigl(\cosh\frac{\theta}{2}\,\hat u+i\sinh\frac{\theta}{2}\,\hat u\hat u\Bigr)
-=-i\,r\sinh\frac{\theta}{2}\,e_t+r\cosh\frac{\theta}{2}\,\hat u ,
+\tilde A_\Phi=\mp\,i\,r\,\tilde U_{\Psi,\mathrm b}=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b},
 $$
 
-so $a'_t=-r\sinh\frac{\theta}{2}$ and $\vec A=r\cosh\frac{\theta}{2}\hat u$. The norm is $\langle\tilde A_\Phi\rangle_\natural=r^2(\cosh^2-\sinh^2)=r^2>0$, and the scalar potential carries the sign of $-\theta$, so the rapidity is signed on this branch.
+the two signs being one pair written twice. The scalar potential is $a'_t=\varepsilon r\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, so $\varepsilon=\mathrm{sign}\,a'_t$; the continuous parameters are $r$, the rapidity and the two angles of $\hat u_{\mathrm b}$, and $\varepsilon$ is a label.
 
-**Step four: no third branch.** The two branches exhaust the non-null elements by the sign of the norm, and the lightlike set has no branch. A lightlike element is a zero divisor: its norm vanishes, $r=0$, and the factors $r$ and $\tilde U$ of the word degenerate together. There is no limit of either branch that reaches it with a finite, non-zero four-vector, and the next section states this as the excluded set.
+**Spacelike branch.** Let $\langle\tilde A_\Phi\rangle_\natural=+r^{2}$. The first form is excluded by its norm, which is $-r^{2}$ whatever the boost, so the decomposition has to be built from the direction. Write $\tilde A_\Phi=r\tilde U\hat u$ with $\hat u$ a real unit vector. The boost of axis $\hat u$ is built from $e_t$ and $i\hat u$, both of which commute with $\hat u$, so $\tilde U\hat u=\hat u\tilde U$, and
+
+$$
+\tilde A_\Phi^{*}=\overline{\tilde A_\Phi}^{\natural}
+=r\cosh\frac{\theta_{\mathrm{rpd}}}{2}\hat u^{\natural}+i\,r\sinh\frac{\theta_{\mathrm{rpd}}}{2}
+=-r\cosh\frac{\theta_{\mathrm{rpd}}}{2}\hat u+i\,r\sinh\frac{\theta_{\mathrm{rpd}}}{2}
+=-\tilde A_\Phi ,
+$$
+
+so the element is anti-Hermitian with no condition left over. In components,
+
+$$
+\tilde A_\Phi=r\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u\hat u\Bigr)
+=-i\,r\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+r\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u ,
+$$
+
+so $a'_t=-r\sinh\frac{\theta_{\mathrm{rpd}}}{2}$ and $\vec A=r\cosh\frac{\theta_{\mathrm{rpd}}}{2}\hat u$. The norm is $r^{2}(\cosh^{2}-\sinh^{2})=r^{2}$, and the rapidity is signed on this branch, because $\vec A$ points along $+\hat u$ and the sign of $a'_t$ must be carried by the rapidity.
+
+**The locking is a consequence, not an extra condition.** The axis appears in the boost as $i\hat u$ and in the field as $\hat u$; it is one vector, so the boost axis and the direction of $\vec A$ are one parameter pair and not two. That is the whole content of the locking, and it is why the spacelike branch has four parameters — $r$, one signed rapidity, two angles — and not five. Geometrically the branch is the hyperboloid $\vec A^{2}-(a'_t)^{2}=r^{2}$, which is $\mathbb{R}_{+}\times S^{2}\times\mathbb{R}$ with the coordinates $r$, $\hat u$ and the signed rapidity, and the reconstruction is everywhere smooth because a spacelike four-vector has $\vec A\neq0$.
+
+**No third branch.** The two branches exhaust the non-null elements by the sign of the norm, and the lightlike set has no branch. A lightlike element is a zero divisor: its norm vanishes, $r=0$, and the scale degenerates. There is no limit of either branch that reaches a lightlike four-vector with a finite non-zero $r$, and the next section states this as the excluded set.
 
 ## The Word for the Material Sector
 
-The result of the four steps is the word.
+The result of the two decompositions is the word.
 
 $$
 \boxed{\;
@@ -132,7 +141,7 @@ $$
 
 **Uniqueness.** On the timelike branch $r=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $\varepsilon=\mathrm{sign}\,a'_t$; the boost is recovered from $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\lvert a'_t\rvert/r$ and $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=\lvert\vec A\rvert/r$, and $\hat u_{\mathrm b}=-\varepsilon\vec A/\lvert\vec A\rvert$. The reconstruction fails only at $\vec A=0$, where the axis is undefined: that is the coordinate singularity of the branch, at the pure scalar-potential line, and it is a property of the chart and not of the field. On the spacelike branch $\hat u=\vec A/\lvert\vec A\rvert$ is determined by the field, and so is $r=\sqrt{\langle\tilde A_\Phi\rangle_\natural}$ and $\theta_{\mathrm{rpd}}=2\,\mathrm{arsinh}(-a'_t/r)$; the reconstruction is unique with no singularity, because a spacelike four-vector always has $\vec A\neq0$.
 
-**Compared with the Schrödinger word, two of the four factors are gone.** The central phase is fixed and the rotor has collapsed to a sign on the timelike branch and to the direction $\hat u$ on the spacelike one. The word has two brackets, not four, and the missing two are exactly the phase and the rotor angle. The next section proves that in the algebra, and it is the local statement of the difference.
+**Compared with the Schrödinger word, two of the four factors are gone.** A real four-vector has no phase to endow with a parameter, so the central factor has nothing to carry; and the rotor has collapsed, to a sign on the timelike branch and to the direction $\hat u$ on the spacelike one. The word has two brackets, not four, and the missing two are exactly the phase and the rotor angle. The next section proves that in the algebra, and it is the local statement of the difference.
 
 ## The Logarithmic Derivative and the Two Brackets
 
@@ -210,10 +219,14 @@ $$
 and taking the traceless part,
 
 $$
-\boxed{\;\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0\;}
+\boxed{\;\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0\;}
 $$
 
 where the second display is an equation in the traceless part of $\mathbb{B}$, that is, a Hermitian-vector equation with three real components, and the first is one real equation. Four real equations in all, for four parameters: the count is exact, and that is the sense in which the polar form of the material sector is a chart and not a reduction.
+
+**Why the traceless equation subtracts a trace.** The Maurer–Cartan term $\sum_\mu(\partial_\mu\Gamma_\mu+\Gamma_\mu^2)$ is not traceless: its scalar part is $\sum_\mu\mathrm{Sc}(\Gamma_\mu^2)$, and that piece is already the source of the first equation. Splitting the identity into scalar and traceless parts therefore requires the subtraction, and the second display without it would carry a scalar component that duplicates the first. The cross term needs no correction, because $\mathrm{Sc}(\Gamma_\mu)=0$ identically. The two displays together are the identity, and neither alone is.
+
+**The subtraction is empty on a fixed axis.** For $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ the square is $\Gamma_\mu^2=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^{2}(i\hat u_{\mathrm b})^{2}=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^{2}$, a central element, so $\mathrm{Sc}(\Gamma_\mu^2)=\Gamma_\mu^2$ and the subtraction removes nothing. That is why the fixed-axis reduction below is unaffected, and why a form derived only on a fixed axis cannot reveal the missing term.
 
 **The first equation is a Klein–Gordon equation with a source.** The source is $\sum_\mu\mathrm{Sc}(\Gamma_\mu^2)$, the trace of the square of the frame's Maurer–Cartan form. It vanishes when the frame is constant, and it is positive for a pure rapidity gradient, because $\Gamma_\mu=\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ gives $\Gamma_\mu^2=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^2(i\hat u_{\mathrm b})^2=\tfrac14(\partial_\mu\theta_{\mathrm{rpd}})^2$ using $(i\hat u_{\mathrm b})^2=+e_t$. So
 
@@ -234,7 +247,7 @@ $$
 
 The rapidity flows with density $r^2$, and the conservation is exact. This is the polar form of the statement that the boost is the velocity: in the spinor case the velocity is the boost, $\tilde V_\Phi=ic\tilde U^{-2}$, and its transport is the third bracket; here the same object appears as a conserved flux with the modulus as its density. The identity is verified on a smooth configuration at the level of $10^{-9}$.
 
-**The spacelike branch.** The same three steps apply with $\tilde A_\Phi=r\tilde U\hat u$, and they are longer because the direction $\hat u$ is differentiated as well as the frame. The result has the same shape: one scalar equation for $r$ with a source quadratic in the frame's connection, and one traceless equation for the frame and the direction together. This article does not display the second in full; it states the structure and records the explicit form as an open item, because the branch is the one where the direction and the boost axis are locked and the two cannot be varied independently.
+**The spacelike branch.** The same three steps apply with $\tilde A_\Phi=r\tilde U\hat u$, and they are longer because the direction $\hat u$ is differentiated as well as the frame. The result has the same shape: one real equation for $r$ with a source quadratic in the frame's connection, and one equation in the traceless part — three real equations — for the frame and the direction together. This article does not display the second in full; it states the structure and records the explicit form as an open item, because the branch is the one where the direction and the boost axis are locked and the two cannot be varied independently.
 
 ## The Lorenz Condition in Polar Variables
 
@@ -290,7 +303,7 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 - No new solution. The solutions are the element form's, and the plane-wave reading is a re-reading of the source's modes.
 - No new prediction and no new degree of freedom. The count of three polarizations is the source's.
 - No closure problem: unlike the constrained systems, the count here is exact.
-- No simplification of the field equation. The Proca equation is second order in both branches, and the polar form replaces four linear equations by one scalar and one traceless equation that are nonlinear in the word's parameters.
+- No simplification of the field equation. The Proca equation is second order in both branches, and the polar form replaces four linear equations by one real equation and one Hermitian-vector equation of three real components, both of them nonlinear in the word's parameters.
 
 **The distinction that matters.** The spinor polar form is a chart on an eight-parameter group of units, and its four brackets are four transport laws. The material polar form is a chart on a four-parameter set, and its two brackets are one transport law and one scale. The difference in the number of brackets is the difference between a complex field and a real one, and it is not a convention.
 
@@ -302,14 +315,14 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 
 ## Summary
 
-The Proca potential is an element of the material sector, and the material sector's polar word is piecewise. On timelike field values $\tilde A_\Phi=\varepsilon ir\tilde U_{\Psi,\mathrm b}$ with four parameters and a sign; on spacelike ones $\tilde A_\Phi=r\tilde U_{\Psi,\mathrm b}\hat u$ with four parameters, the boost axis locked to $\hat u$; on lightlike values there is no word. The central angle of the Schrödinger word is fixed at $\pi/2$ or $0$ by anti-Hermiticity, and the rotor collapses to a sign or to $\hat u$.
+The Proca potential is an element of the material sector, and the material sector's polar word is piecewise. On timelike field values $\tilde A_\Phi=\varepsilon ir\tilde U_{\Psi,\mathrm b}$ with four parameters and a sign; on spacelike ones $\tilde A_\Phi=r\tilde U_{\Psi,\mathrm b}\hat u$ with four parameters, the boost axis locked to $\hat u$; on lightlike values there is no word. The branches are the two signs of the Minkowski form of the real four-vector, obtained by polar decomposition and not by restricting the eight-parameter Schrödinger word: no central angle makes that word anti-Hermitian except for the rotor $\pm e_t$, at the excluded endpoint of the phase range.
 
 The logarithmic derivative is $\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi=\partial_\mu\ln r+\Gamma_\mu$ with $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, and the central bracket vanishes identically. The Proca equation separates into
 
 $$
 \bigl(\Box_\Phi-k_m^2\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
 \qquad
-\sum_\mu\Bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^2\Bigr)+2\sum_\mu\partial_\mu\ln r\,\Gamma_\mu=0
+\sum_\mu\Bigl(\partial_\mu\Gamma_\mu+\Gamma_\mu^2-\mathrm{Sc}(\Gamma_\mu^2)\Bigr)+2\sum_\mu\partial_\mu\ln r\,\Gamma_\mu=0
 $$
 
 with the second in the traceless part; for a fixed axis they reduce to a massive scale equation with a rapidity-gradient source and to $\partial_\mu(r^2\partial_\mu\theta_{\mathrm{rpd}})=0$. The Lorenz condition is one divergence, and there is no Madelung pair because there is no phase. For a solution the branch is a spacetime region, bounded by the set where the local four-vector is lightlike.

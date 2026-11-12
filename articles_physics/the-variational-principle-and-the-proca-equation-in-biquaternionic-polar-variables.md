@@ -42,7 +42,7 @@ The sign of the mass term in the chart **is** the branch: it is the causal chara
 
 *Second, the Euler–Lagrange equations in the chart are the transformed field equation.* The word is a diffeomorphism from its parameter set onto the branch, so a change of variables carries the variational problem into the chart without any loss: four parameters, four equations, and the equations are the two displays of the polar article — the scale equation with the frame's quadratic source, and the frame transport. Nothing has to be re-derived, and nothing can differ.
 
-*Third, the count of multipliers is not the count of constraints.* The parametrization absorbs the unit conditions of the boost exactly, so no Lagrange multiplier is needed for the normalization of the frame — in contrast with the tensor formulation of Takabayasi, whose unit vector requires three multipliers and whose phase requires a fourth. But the Proca system still has its own constraint: the Hessian of the chart's Lagrangian has rank three and not four, and the missing direction is the one that changes the scalar potential at fixed vector potential. That is the primary constraint of the vector field, and the Lorenz condition is its secondary partner. The chart relabels them; it does not remove them.
+*Third, the count of multipliers is not the count of constraints.* The parametrization absorbs the unit condition of the boost exactly, so no Lagrange multiplier is needed for the normalization of the frame. The comparison with Takabayasi's tensor formulation has to be drawn on the right row, because that formulation is of the spin-$\tfrac12$ field: its multipliers $A_1,A_2,A_3$ carry the unit spin direction and the spin's transport, and its velocity's unit condition carries one more. The material sector has no spin direction of that kind — the boost axis is the velocity's, not a spin's — so the only row that compares is the velocity's, where the multiplier count would be one and not three. The chart pays none of it, because the angles are coordinates. But the Proca system still has its own constraint: the Hessian of the chart's Lagrangian has rank three and not four, and the missing direction is the one that changes the scalar potential at fixed vector potential. That is the primary constraint of the vector field, and the Lorenz condition is its secondary partner. The chart relabels them; it does not remove them.
 
 **What is at stake in the contrast.** The Schrödinger polar article's action is first order in the time derivative, and its momenta vanish identically, so six of the eight are constraints and the closure needs Dirac analysis. The Proca action is second order, its Hessian has rank three out of four, and its single constraint is the standard one of a massive vector field. So the two polar variational principles are not the same kind of object, and the difference is the order of the Lagrangian, not the algebra.
 
@@ -93,6 +93,8 @@ $$
 
 and the Jacobian $\partial\Phi/\partial q^i$ is invertible on the branch. So the Euler–Lagrange equations in the chart vanish if and only if the element-form equation holds, and their content is the field equation and nothing else. This is an identity of the calculus, not a claim about the algebra, and it is what makes the polar variational principle exact.
 
+**The singularity bounds the argument, and it is the chart's.** On the timelike branch $r=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $\varepsilon=\mathrm{sign}\,a'_t$ are single-valued, but $\hat u_{\mathrm b}$ is not: it is $\vec A$ divided by its length, and at $\vec A=0$ — the pure scalar-potential line — the axis is undefined and the Jacobian degenerates. The field is perfectly regular there; the coordinates are not. So the change-of-variables identity holds on the branch minus that line, and a solution that crosses it needs a patching of the frame rather than a continuation of the chart. On the spacelike branch there is no such line, because a spacelike four-vector has $\vec A\neq0$, and the chart's only failure there is the light cone of field values, where the branch itself ends.
+
 **The explicit form.** Performing the differentiation gives the two displays of the polar article. The scalar part of the transformed equation is
 
 $$
@@ -104,9 +106,11 @@ $$
 and the traceless part is
 
 $$
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2\Bigr)
-+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0 .
+\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)
++2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0 ,
 $$
+
+the subtraction of $\mathrm{Sc}(\Gamma_\mu^2)$ being what makes the display traceless: without it the term $\sum_\mu\Gamma_\mu^2$ would repeat the source of the scalar equation.
 
 Both are exactly the equations that the direct substitution of the word into the field equation gives, which is the content of the change-of-variables argument: the variational route and the substitution route are the same route. For a fixed boost axis the pair reduces to
 
@@ -137,14 +141,14 @@ an outer product of four vectors in three dimensions. Its rank is therefore at m
 
 **No multipliers for the units, and no escape from the constraint.** The two statements must be kept apart.
 
-| what is counted | element form | chart | Takabayasi's tensor form |
+| what is counted | element form | chart | Takabayasi's tensor form (spin-$\tfrac12$) |
 | --- | --- | --- | --- |
-| normalization of the frame | automatic | automatic, by the word | three multipliers $A_1,A_2,A_3$ |
-| phase | none | none | one multiplier |
+| unit condition of the frame (velocity) | automatic | automatic, by the word | one multiplier |
+| unit spin direction | absent | absent | three multipliers $A_1,A_2,A_3$ |
 | primary constraint | $\pi^0=0$ | rank-three Hessian | rank-three Hessian |
 | secondary constraint | Lorenz | Lorenz | Lorenz |
 
-The chart's gain is the first row: the boost is parametrized, not constrained, so its unit condition costs nothing. The chart's non-gain is the third and fourth rows: the vector field's own constraints are untouched, and any claim that the polar form removes them would be false. This is the honest ledger, and it is the opposite of the Schrödinger case, where the *action* is first order and the constraints are the momenta's vanishing.
+The chart's gain is the first row: the boost is parametrized, not constrained, so its unit condition costs nothing, and the count it saves is one, not three. The second row is not a comparison at all — the material sector has no spin direction — and it is there exactly to say that the three multipliers usually quoted for Takabayasi are the price of a spin, not the price of a frame. The chart's non-gain is the third and fourth rows: the vector field's own constraints are untouched, and any claim that the polar form removes them would be false. This is the honest ledger, and it is the opposite of the Schrödinger case, where the *action* is first order and the constraints are the momenta's vanishing.
 
 **Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $r$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
 
@@ -178,13 +182,13 @@ with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{
 - No new prediction and no new solution. The solutions are the element form's, and the chart only re-reads them.
 - No removal of the constraints. The rank-three Hessian is the vector field's, and the chart displays it rather than dissolving it.
 - No second current. The action's symmetries are the element form's, and the absence of a central phase is inherited unchanged.
-- No simplification of the equations. The chart's equations are nonlinear in the parameters, and they are longer than the field equation they encode.
+- No simplification of the equations themselves. The chart's equations are nonlinear in the parameters, and they are longer than the field equation they encode. What the chart does simplify is the *identification* of the three jobs, and that is the gain recorded above and not a gain in brevity.
 
 **The distinction that matters.** The polar variational principle is a coordinate change of a standard variational problem, and its value is entirely in what the coordinates display: the sign of the mass term as the branch, the three jobs of the three pieces, and the constraint's exact location. It is not a new principle, and the article claims nothing of the kind.
 
 ## Open Questions
 
-1. **The spacelike branch's equations.** The scale equation and the transport equation are displayed here for the timelike branch, where the frame is the only object differentiated. On the spacelike branch the direction $\hat u$ is differentiated as well, and the two are locked; the explicit Euler–Lagrange equations of that branch are not written out, and the polar article records the same gap.
+1. **The spacelike branch's equations.** The scale equation and the transport equation are displayed here for the timelike branch, where the frame is the only object differentiated. On the spacelike branch the direction $\hat u$ is differentiated as well, and it is locked to the boost axis, so the transport acquires a real-vector bracket that the timelike branch does not have; the explicit Euler–Lagrange equations of that branch are not written out. This is the article's largest gap and not a detail: the branch with the extra bracket is the branch where the chart differs most from a boosted scalar, and the polar article records the same gap in the same words.
 2. **The crossing set.** The chart is a diffeomorphism on each branch and fails on the lightlike set of field values. What the variational problem does across the crossing — whether the action can be continued, and whether the continuation is stationary — is not settled.
 3. **The constraint analysis in the chart.** The rank-three Hessian and the second-class pair are identified here but not carried through the Dirac bracket. The canonical quantization article performs the analysis in the component variables; whether the chart's variables simplify the bracket, or merely obscure it, is open.
 
@@ -198,7 +202,7 @@ $$
 
 with the mass term $+\tfrac12k_m^2r^2$ on the timelike branch and $-\tfrac12k_m^2r^2$ on the spacelike one: the sign of the mass term is the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass; the middle piece is what the element form's projection removes, and its variation carries the Lorenz condition.
 
-The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations are the transformed field equation: the scale equation with the frame's quadratic source and the frame transport, which is what the polar article's direct substitution gives. The chart needs no Lagrange multiplier for the normalization of the boost, in contrast with the tensor formulation — but it does not remove the vector field's own constraints: the Hessian has rank three, its null direction is the scalar potential at fixed vector potential, and the Lorenz condition is the secondary constraint. Four parameters, four equations, three physical parameters on shell.
+The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations are the transformed field equation: the scale equation with the frame's quadratic source and the frame transport, which is what the polar article's direct substitution gives. The chart needs no Lagrange multiplier for the normalization of the boost, in contrast with the tensor formulation of the spin-$\tfrac12$ field, whose multipliers belong to its unit spin direction and its unit velocity — but it does not remove the vector field's own constraints: the Hessian has rank three, its null direction is the scalar potential at fixed vector potential, and the Lorenz condition is the secondary constraint. Four parameters, four equations, three physical parameters on shell.
 
 ## Summary of Notation
 
